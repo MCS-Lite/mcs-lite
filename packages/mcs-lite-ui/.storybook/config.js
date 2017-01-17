@@ -1,12 +1,10 @@
-import { configure, addDecorator } from '@kadira/storybook'
-// import centered from './decorator-centered'
+import { configure } from '@kadira/storybook';
 
-const context = require.context('../src/', true, /\.example\.js$/)
+const context = require.context('../src/', true, /\.example\.js$/);
 
-// addDecorator(centered)
 
 function loadStories() {
-  context.keys().forEach(context)
+  context.keys().forEach(context);
 }
 
-configure(loadStories, module)
+configure(loadStories, module);
