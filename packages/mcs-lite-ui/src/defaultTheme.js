@@ -1,3 +1,4 @@
+// mcs style
 const defaultTheme = {
   color: {
     primary: '#00A1DE',
