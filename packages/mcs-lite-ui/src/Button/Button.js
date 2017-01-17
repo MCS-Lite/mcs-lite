@@ -1,3 +1,4 @@
+// @flow
 import { PropTypes } from 'react';
 import styled from 'styled-components';
 import defaultTheme from '../defaultTheme';
