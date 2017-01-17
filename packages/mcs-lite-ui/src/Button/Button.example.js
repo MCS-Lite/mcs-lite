@@ -3,9 +3,9 @@ import { storiesOf, action } from '@kadira/storybook';
 import Button from './Button';
 
 storiesOf('Button', module)
-  .add('with text', () => (
+  .add('Default button (primary)', () => (
     <Button onClick={action('clicked')}>Hello Button</Button>
   ))
-  .add('with some emoji', () => (
-    <Button onClick={action('clicked')}>😀 😎 👍 💯</Button>
+  .add('Cancel Button', () => (
+    <Button onClick={action('clicked')} kind="cancel">cancel</Button>
   ));
