@@ -1,7 +1,8 @@
 {
   "name": "mcs-lite",
   "scripts": {
-    "postinstall": "lerna bootstrap"
+    "postinstall": "lerna bootstrap",
+    "clean": "rm -rf node_modules && lerna exec -- rm -rf node_modules"
   },
   "devDependencies": {
     "lerna": "2.0.0-beta.32"

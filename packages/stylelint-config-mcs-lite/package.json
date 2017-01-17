@@ -3,15 +3,16 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "eslint": "eslint index.js",
-    "lint": "npm run eslint"
-  },
   "author": "",
   "license": "ISC",
   "scripts": {
     "eslint": "eslint index.js",
     "lint": "npm run eslint"
+  },
+  "eslintConfig": {
+    "extends": [
+      "mcs-lite"
+    ]
   },
   "dependencies": {
     "stylelint-processor-styled-components": "0.0.4",
@@ -28,10 +29,5 @@
   },
   "peerDependencies": {
     "stylelint": "^7.7.1"
-  },
-  "eslintConfig": {
-    "extends": [
-      "mcs-lite"
-    ]
   }
 }
