@@ -1,0 +1,37 @@
+{
+  "name": "stylelint-config-mcs-lite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "eslint": "eslint index.js",
+    "lint": "npm run eslint"
+  },
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "eslint": "eslint index.js",
+    "lint": "npm run eslint"
+  },
+  "dependencies": {
+    "stylelint-processor-styled-components": "0.0.4",
+    "stylelint-config-suitcss": "^8.0.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.1.1",
+    "eslint": "^3.13.1",
+    "eslint-config-airbnb": "^14.0.0",
+    "eslint-config-mcs-lite": "^1.0.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^3.0.2",
+    "eslint-plugin-react": "^6.9.0"
+  },
+  "peerDependencies": {
+    "stylelint": "^7.7.1"
+  },
+  "eslintConfig": {
+    "extends": [
+      "mcs-lite"
+    ]
+  }
+}

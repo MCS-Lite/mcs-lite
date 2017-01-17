@@ -1,27 +1,14 @@
-import React from 'react';
+import styled from 'styled-components';
 
-const buttonStyles = {
-  border: '1px solid #eee',
-  borderRadius: 3,
-  backgroundColor: '#FFFFFF',
-  cursor: 'pointer',
-  fontSize: 15,
-  padding: '3px 10px',
-  margin: 10,
-};
+const Button = styled.button`
+  background: ${props => props.theme.main};
+  border: 2px solid ${props => props.theme.main};
+`;
 
-const Button = ({ children, onClick }) => (
-  <button
-    style={buttonStyles}
-    onClick={onClick}
-  >
-    {children}
-  </button>
-);
-
-Button.propTypes = {
-  children: React.PropTypes.string.isRequired,
-  onClick: React.PropTypes.func.isRequired,
+Button.defaultProps = {
+  theme: {
+    main: 'blue',
+  },
 };
 
 export default Button;
