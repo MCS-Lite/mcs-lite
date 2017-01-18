@@ -3,39 +3,37 @@ import styled from 'styled-components';
 import { storiesOf, action } from '@kadira/storybook';
 import Switch from './index';
 
-class SwitchWithState extends React.Component {
-  state = { checked: false }
-  onClick = () => {
-    action('click');
-    this.setState({ checked: !this.state.checked });
-  }
-  render() {
-    return (
-      <Switch
-        {...this.props}
-        onClick={this.onClick}
-        checked={this.state.checked}
-      />
-    );
-  }
-}
+const withState = Component =>
+  class WithStateComponent extends React.Component {
+    state = { checked: false }
+    onClick = () => {
+      action('click');
+      this.setState({ checked: !this.state.checked });
+    }
+    render() {
+      return (
+        <Component
+          {...this.props}
+          onClick={this.onClick}
+          checked={this.state.checked}
+        />
+      );
+    }
+  };
 
-const StyledSwitch = styled(Switch)`
+const Simple = withState(Switch);
+const StyledSwitch = withState(styled(Switch)`
+  background-color: ${props => props.checked ? 'steelblue' : 'aliceblue'};
 
   &::after {
-    background-color: aliceblue;
+    background-color: ${props => props.checked ? 'aliceblue' : 'cornflowerblue'};
   }
-`;
+`);
+
 
 storiesOf('Switch', module)
   .add('Simple', () =>
-    <SwitchWithState />,
-  )
-  .add('Custom color props', () =>
-    <SwitchWithState
-      onColor="steelblue"
-      offColor="aliceblue"
-    />,
+    <Simple />,
   )
   .add('Overriding style', () =>
     <StyledSwitch />,

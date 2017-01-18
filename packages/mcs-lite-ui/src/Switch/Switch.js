@@ -7,7 +7,7 @@ const Switch = styled.div`
   height: 50px;
   width: 82px;
   box-sizing: border-box;
-  background-color: ${props => props.checked ? props.onColor : props.offColor};
+  background-color: ${props => props.checked ? color.success : color.grayBase};
   border-radius: 24px;
   align-items: center;
   transition: background-color cubic-bezier(0.47, 0, 0.75, 0.72) 0.2s;
@@ -30,8 +30,6 @@ const Switch = styled.div`
 `;
 
 Switch.defaultProps = {
-  onColor: color.success,
-  offColor: color.grayBase,
   checked: false,
 };
 
