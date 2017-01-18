@@ -10,6 +10,13 @@ const defaultTheme = {
     secondary: '#FFFFFF',
     cancel: '#999A94',
   },
+  fontSize: {
+    p: '14px',
+    h4: '16px',
+    h3: '20px',
+    h2: '24px',
+    h1: '34px',
+  },
 };
 
 export default defaultTheme;

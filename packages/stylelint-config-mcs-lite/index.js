@@ -6,5 +6,6 @@ module.exports = {
     'declaration-block-properties-order': null,
     'color-hex-length': 'long',
     'selector-list-comma-newline-after': null,
+    'rule-non-nested-empty-line-before': 'never-multi-line',
   },
 };

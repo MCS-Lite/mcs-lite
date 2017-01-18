@@ -12,3 +12,23 @@ $ npm install # Install all external dependencies of each package.
 ```
 $ tasks/test.sh
 ```
+
+
+## mcs-lite-ui
+
+### Theme api
+
+```
+{
+  backgroundColor: {
+    primary: '#00A1DE',
+    secondary: '#F39A1E',
+    cancel: '#FAFAFA',
+  },
+  color: {
+    primary: '#FFFFFF',
+    secondary: '#FFFFFF',
+    cancel: '#999A94',
+  },
+}
+```
