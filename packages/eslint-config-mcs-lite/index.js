@@ -66,5 +66,6 @@ module.exports = {
       },
     ],
     'jsx-a11y/no-static-element-interactions': 0,
+    'no-confusing-arrow': 0,
   },
 };
