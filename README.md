@@ -3,8 +3,8 @@
 ## Getting Started
 
 ```
-# Install all external dependencies of each package.
-$ npm install
+$ npm run clean # Remove all node_modules
+$ npm install # Install all external dependencies of each package.
 ```
 
 ## Testing
