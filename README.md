@@ -7,8 +7,8 @@
 $ npm install
 ```
 
-## eslint all packages
+## Testing
 
 ```
-$ npm run eslint
+$ tasks/test.sh
 ```
