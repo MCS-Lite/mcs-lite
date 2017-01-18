@@ -7,6 +7,7 @@
   "scripts": {
     "start": "start-storybook -p 6006 --dont-track",
     "build-storybook": "build-storybook",
+    "build": "NODE_ENV=production babel src --out-dir lib",
     "stylelint": "stylelint './src/**/*.js'",
     "flow": "flow check",
     "lint": "npm run stylelint && npm run flow"
@@ -16,6 +17,7 @@
   },
   "devDependencies": {
     "@kadira/storybook": "^2.21.0",
+    "babel-cli": "^6.18.0",
     "babel-preset-mcs-lite": "^1.0.0",
     "flow-bin": "^0.37.4",
     "react": "^15.4.2",

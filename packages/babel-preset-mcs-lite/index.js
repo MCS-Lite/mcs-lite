@@ -6,5 +6,13 @@ module.exports = {
   ],
   plugins: [
     require.resolve('babel-plugin-add-module-exports'),
+    [
+      require.resolve('babel-plugin-lodash'),
+      {
+        id: [
+          'ramda',
+        ],
+      },
+    ],
   ],
 };

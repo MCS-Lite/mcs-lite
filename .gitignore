@@ -2,3 +2,5 @@ node_modules/
 npm-debug.log
 lerna-debug.log
 .DS_Store
+lib/
+storybook-static/

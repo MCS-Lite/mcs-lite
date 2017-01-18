@@ -1,7 +1,7 @@
 import React from 'react';
 import styled, { ThemeProvider } from 'styled-components';
 import { storiesOf, action } from '@kadira/storybook';
-import Button from './Button';
+import Button from './index';
 import { darken1, darken2, darken3 } from '../utils/darken';
 
 const Container = styled.div`
