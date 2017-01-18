@@ -23,11 +23,11 @@ const KindContainer = () =>
 const customTheme = {
   color: {
     default: '#FAFAFA',
-    primary: '#00A1DE',
-    success: '#69BE28',
-    error: '#F5364E',
-    warning: '#F39A1E',
-    black: '#353630',
+    primary: '#2196F3',
+    success: '#4CAF50',
+    error: '#F44336',
+    warning: '#FF9800',
+    black: '#000000',
     grayBase: '#999A94',
     grayDark: '#D1D2D3',
     grayLight: '#FAFAFA',
@@ -66,7 +66,7 @@ storiesOf('Button', module)
   .add('With kind props', () =>
     <KindContainer />,
   )
-  .add('With theme provider', () =>
+  .add('With theme provider (Material)', () =>
     <ThemeProvider theme={customTheme}>
       <KindContainer />
     </ThemeProvider>,
