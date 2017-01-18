@@ -13,21 +13,29 @@ const Container = styled.div`
 
 const KindContainer = () =>
   <Container>
-    <Button onClick={action('clicked')}>primary (default)</Button>
-    <Button onClick={action('clicked')} kind="secondary">secondary</Button>
-    <Button onClick={action('clicked')} kind="cancel">cancel</Button>
+    <Button onClick={action('clicked')} kind="default">default</Button>
+    <Button onClick={action('clicked')} kind="primary">primary</Button>
+    <Button onClick={action('clicked')} kind="success">success</Button>
+    <Button onClick={action('clicked')} kind="error">error</Button>
+    <Button onClick={action('clicked')} kind="warning">warning</Button>
   </Container>;
 
 const customTheme = {
-  backgroundColor: {
-    primary: '#F39A1E',
-    secondary: '#00A1DE',
-    cancel: '#69BE28',
-  },
   color: {
-    primary: '#FFFFFF',
-    secondary: '#FFFFFF',
-    cancel: '#FFFFFF',
+    default: '#FAFAFA',
+    primary: '#00A1DE',
+    success: '#69BE28',
+    error: '#F5364E',
+    warning: '#F39A1E',
+    black: '#353630',
+    grayBase: '#999A94',
+    grayDark: '#D1D2D3',
+    grayLight: '#FAFAFA',
+    white: '#FFFFFF',
+  },
+  base: {
+    bodyBackground: '#F1F2F7',
+    textColor: '#353630',
   },
   fontSize: {
     p: '16px',
