@@ -1,6 +1,7 @@
 // @flow
 import { PropTypes } from 'react';
 import styled from 'styled-components';
+import { darken1 } from '../utils/darken';
 import defaultTheme from '../defaultTheme';
 
 const Button = styled.button`
@@ -13,8 +14,9 @@ const Button = styled.button`
   min-width: 80px;
   box-sizing: border-box;
 
-  background: ${props => props.theme.color[props.kind]};
-  border: 2px solid ${props => props.theme.color[props.kind]};
+  background: ${props => props.theme.backgroundColor[props.kind]};
+  border: 2px solid ${props => darken1(props.theme.backgroundColor[props.kind])};
+  color: ${props => props.theme.color[props.kind]};
 `;
 
 Button.propTypes = {
