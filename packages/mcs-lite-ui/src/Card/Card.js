@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import R from 'ramda';
-import defaultTheme from '../defaultTheme';
 
 const Card = styled.div`
   display: inline-block;
@@ -10,9 +9,5 @@ const Card = styled.div`
   background-color: ${R.path(['theme', 'color', 'white'])};
   border: 1px solid ${R.path(['theme', 'color', 'grayDark'])};
 `;
-
-Card.defaultProps = {
-  theme: defaultTheme,
-};
 
 export default Card;

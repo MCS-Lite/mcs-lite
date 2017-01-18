@@ -30,7 +30,6 @@ const StyledSwitch = withState(styled(Switch)`
   }
 `);
 
-
 storiesOf('Switch', module)
   .add('Simple', () =>
     <Simple />,

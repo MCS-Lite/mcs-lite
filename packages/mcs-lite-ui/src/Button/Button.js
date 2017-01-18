@@ -1,7 +1,6 @@
 // @flow
 import styled from 'styled-components';
 import R from 'ramda';
-import defaultTheme from '../defaultTheme';
 import { darken1, darken2, darken3 } from '../utils/darken';
 
 const mapColorByKind = props => R.pipe(
@@ -36,7 +35,6 @@ const Button = styled.button`
 `;
 
 Button.defaultProps = {
-  theme: defaultTheme,
   kind: 'primary',
 };
 

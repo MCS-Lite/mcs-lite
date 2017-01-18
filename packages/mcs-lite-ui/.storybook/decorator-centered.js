@@ -1,5 +1,6 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { ThemeProvider } from 'styled-components';
+import theme from '../src/themes/default';
 
 const Center = styled.div`
   height: 100vh;
@@ -10,8 +11,10 @@ const Center = styled.div`
 
 export default function (renderStory) {
   return (
-    <Center>
-      {renderStory()}
-    </Center>
+    <ThemeProvider theme={theme}>
+      <Center>
+        {renderStory()}
+      </Center>
+    </ThemeProvider>
   );
 }

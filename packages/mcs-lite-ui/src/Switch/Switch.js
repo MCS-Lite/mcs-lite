@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { color } from '../defaultTheme';
 
 const Switch = styled.div`
   position: relative;
@@ -7,7 +6,7 @@ const Switch = styled.div`
   height: 50px;
   width: 82px;
   box-sizing: border-box;
-  background-color: ${props => props.checked ? color.success : color.grayBase};
+  background-color: ${props => props.checked ? props.theme.color.success : props.theme.color.grayBase};
   border-radius: 24px;
   align-items: center;
   transition: background-color cubic-bezier(0.47, 0, 0.75, 0.72) 0.2s;
@@ -19,7 +18,7 @@ const Switch = styled.div`
     width: 42px;
     height: 42px;
     border-radius: 50%;
-    background-color: ${color.white};
+    background-color: ${props => props.theme.color.white};
     cursor: pointer;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.17);
     left: ${props => props.checked ? '32px' : 0};
