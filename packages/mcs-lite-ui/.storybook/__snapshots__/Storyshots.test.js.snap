@@ -341,6 +341,39 @@ exports[`Storyshots P With color props 1`] = `
 </div>
 `;
 
+exports[`Storyshots Small API 1`] = `
+<small
+  className="eIljqN">
+  Small content
+</small>
+`;
+
+exports[`Storyshots Small With color 1`] = `
+<p
+  className="dlDdTl"
+  color="primary">
+  Nisi eu eiusmod cupidatat aute laboris commodo excepteur
+  <small
+    className="eIljqN">
+     Small content 
+  </small>
+  incididunt incididunt aliquip pariatur est minim officia sit.
+</p>
+`;
+
+exports[`Storyshots Small Within <P> 1`] = `
+<p
+  className="eSOTAI"
+  color="black">
+  Nisi eu eiusmod cupidatat aute laboris commodo excepteur
+  <small
+    className="eIljqN">
+     Small content 
+  </small>
+  incididunt incididunt aliquip pariatur est minim officia sit.
+</p>
+`;
+
 exports[`Storyshots Switch API 1`] = `
 <div>
   <div
