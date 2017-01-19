@@ -9,6 +9,7 @@ const Heading = styled(H)`
   font-weight: normal;
   font-size: ${props => props.theme.fontSize[`h${props.level}`]};
   color: ${props => props.theme.color[props.color]};
+  line-height: 1.1;
 `;
 
 Heading.displayName = 'Heading';

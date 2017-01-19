@@ -17,16 +17,19 @@ export const kind = {
 
 const base = {
   bodyBackground: '#F1F2F7',
-  textColor: gray.black,
+  // textColor: gray.black,
+  fontSize: '14px',
 };
 
 const fontSize = {
-  small: '12px',
-  p: '14px',
-  h4: '16px',
-  h3: '20px',
-  h2: '24px',
-  h1: '34px',
+  small: '86%',
+  p: '1rem',
+  h6: '1rem',
+  h5: '1rem',
+  h4: '1.14rem',
+  h3: '1.43rem',
+  h2: '1.71rem',
+  h1: '2.43rem',
 };
 
 export default {

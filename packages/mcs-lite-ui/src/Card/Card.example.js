@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@kadira/storybook';
-import Card from './index';
+import Card from '.';
 
 storiesOf('Card', module)
   .addWithInfo(

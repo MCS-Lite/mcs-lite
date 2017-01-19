@@ -33,15 +33,17 @@ exports[`Storyshots API [JSON] theme 1`] = `
         },
         \"base\": {
           \"bodyBackground\": \"#F1F2F7\",
-          \"textColor\": \"#353630\"
+          \"fontSize\": \"14px\"
         },
         \"fontSize\": {
-          \"small\": \"12px\",
-          \"p\": \"14px\",
-          \"h4\": \"16px\",
-          \"h3\": \"20px\",
-          \"h2\": \"24px\",
-          \"h1\": \"34px\"
+          \"small\": \"86%\",
+          \"p\": \"1rem\",
+          \"h6\": \"1rem\",
+          \"h5\": \"1rem\",
+          \"h4\": \"1.14rem\",
+          \"h3\": \"1.43rem\",
+          \"h2\": \"1.71rem\",
+          \"h1\": \"2.43rem\"
         }
       }
     }
@@ -51,7 +53,7 @@ exports[`Storyshots API [JSON] theme 1`] = `
 
 exports[`Storyshots Button API 1`] = `
 <button
-  className="hkjKTu"
+  className="jRTTze"
   kind="primary">
   Simple button
 </button>
@@ -59,7 +61,7 @@ exports[`Storyshots Button API 1`] = `
 
 exports[`Storyshots Button Overriding style 1`] = `
 <button
-  className="WzsJi"
+  className="cqoeNx"
   kind="primary"
   onClick={[Function]}>
   Overriding style
@@ -70,31 +72,31 @@ exports[`Storyshots Button With kind props 1`] = `
 <div
   className="ekbxOp">
   <button
-    className="gWKTnI"
+    className="fQCDqY"
     kind="default"
     onClick={[Function]}>
     default
   </button>
   <button
-    className="hkjKTu"
+    className="jRTTze"
     kind="primary"
     onClick={[Function]}>
     primary
   </button>
   <button
-    className="kCvXCW"
+    className="dKIIwG"
     kind="success"
     onClick={[Function]}>
     success
   </button>
   <button
-    className="hHCdSJ"
+    className="cbvlGV"
     kind="error"
     onClick={[Function]}>
     error
   </button>
   <button
-    className="ePRgCQ"
+    className="caiLV"
     kind="warning"
     onClick={[Function]}>
     warning
@@ -154,7 +156,7 @@ exports[`Storyshots DataChannelCard API 1`] = `
 
 exports[`Storyshots Heading API 1`] = `
 <h1
-  className="hbhShN"
+  className="fVtTCn"
   color="black">
   Level 1
 </h1>
@@ -163,61 +165,61 @@ exports[`Storyshots Heading API 1`] = `
 exports[`Storyshots Heading With color props 1`] = `
 <div>
   <h2
-    className="kpVSEK"
+    className="yHLyb"
     color="black">
     Level 2 
     black
   </h2>
   <h2
-    className="kmbAxM"
+    className="dKqSmo"
     color="grayBase">
     Level 2 
     grayBase
   </h2>
   <h2
-    className="eKgIrP"
+    className="ciUZCF"
     color="grayDark">
     Level 2 
     grayDark
   </h2>
   <h2
-    className="ewuSco"
+    className="eOEYXe"
     color="grayLight">
     Level 2 
     grayLight
   </h2>
   <h2
-    className="bXeicf"
+    className="gLUCQb"
     color="white">
     Level 2 
     white
   </h2>
   <h2
-    className="ewuSco"
+    className="eOEYXe"
     color="default">
     Level 2 
     default
   </h2>
   <h2
-    className="bJkAQM"
+    className="fsfMJE"
     color="primary">
     Level 2 
     primary
   </h2>
   <h2
-    className="jEPjBg"
+    className="dsFKDb"
     color="success">
     Level 2 
     success
   </h2>
   <h2
-    className="edheTq"
+    className="fzlnFI"
     color="error">
     Level 2 
     error
   </h2>
   <h2
-    className="iJMMrA"
+    className="dEVvxg"
     color="warning">
     Level 2 
     warning
@@ -228,25 +230,114 @@ exports[`Storyshots Heading With color props 1`] = `
 exports[`Storyshots Heading With level props 1`] = `
 <div>
   <h1
-    className="hbhShN"
+    className="fVtTCn"
     color="black">
-    Level 1
+    Level 
+    1
   </h1>
   <h2
-    className="kpVSEK"
+    className="yHLyb"
     color="black">
-    Level 2
+    Level 
+    2
   </h2>
   <h3
-    className="fJtQWf"
+    className="jpmjeD"
     color="black">
-    Level 3
+    Level 
+    3
   </h3>
   <h4
-    className="cDDiS"
+    className="egURlk"
     color="black">
-    Level 4
+    Level 
+    4
   </h4>
+  <h5
+    className="ljcViA"
+    color="black">
+    Level 
+    5
+  </h5>
+  <h6
+    className="ljcViA"
+    color="black">
+    Level 
+    6
+  </h6>
+</div>
+`;
+
+exports[`Storyshots P API 1`] = `
+<p
+  className="eSOTAI"
+  color="black">
+  Nisi eu eiusmod cupidatat aute laboris commodo excepteur esse dolore incididunt incididunt aliquip pariatur est minim officia sit. Nulla pariatur duis duis quis commodo cupidatat voluptate enim culpa elit adipisicing do cupidatat sint anim. Cillum elit magna occaecat proident sit cupidatat ad quis sunt id culpa culpa. Ad duis nulla in incididunt amet consequat officia ad voluptate voluptate. Pariatur eiusmod ullamco cupidatat non magna officia aute magna deserunt qui aute dolor eu. Qui amet non ex cillum sunt ad velit consequat ipsum velit.
+</p>
+`;
+
+exports[`Storyshots P With color props 1`] = `
+<div>
+  <p
+    className="eSOTAI"
+    color="black">
+    Paragraph 
+    black
+  </p>
+  <p
+    className="WEOUa"
+    color="grayBase">
+    Paragraph 
+    grayBase
+  </p>
+  <p
+    className="jAIFMf"
+    color="grayDark">
+    Paragraph 
+    grayDark
+  </p>
+  <p
+    className="kXKPlg"
+    color="grayLight">
+    Paragraph 
+    grayLight
+  </p>
+  <p
+    className="grYLXw"
+    color="white">
+    Paragraph 
+    white
+  </p>
+  <p
+    className="kXKPlg"
+    color="default">
+    Paragraph 
+    default
+  </p>
+  <p
+    className="dlDdTl"
+    color="primary">
+    Paragraph 
+    primary
+  </p>
+  <p
+    className="dkpTNT"
+    color="success">
+    Paragraph 
+    success
+  </p>
+  <p
+    className="cXfdto"
+    color="error">
+    Paragraph 
+    error
+  </p>
+  <p
+    className="ipWZDW"
+    color="warning">
+    Paragraph 
+    warning
+  </p>
 </div>
 `;
 

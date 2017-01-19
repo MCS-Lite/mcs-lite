@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@kadira/storybook';
-import DataChannelCard from './index';
+import DataChannelCard from '.';
 
 storiesOf('DataChannelCard', module)
   .addWithInfo(

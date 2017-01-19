@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { storiesOf, action } from '@kadira/storybook';
-import Switch from './index';
+import Switch from '.';
 
 const withState = Component =>
   class WithStateComponent extends React.Component {
