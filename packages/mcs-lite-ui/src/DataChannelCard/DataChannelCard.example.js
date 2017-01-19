@@ -3,8 +3,9 @@ import { storiesOf } from '@kadira/storybook';
 import DataChannelCard from './index';
 
 storiesOf('DataChannelCard', module)
-  .add('Simple', () =>
-    <DataChannelCard>
-      DataChannelCard Content
-    </DataChannelCard>,
+  .addWithInfo(
+    'API',
+    'MCS data channel 的卡片。',
+    () => <DataChannelCard>Content</DataChannelCard>,
+    { inline: true },
   );

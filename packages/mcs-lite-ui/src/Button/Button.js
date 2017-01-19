@@ -1,4 +1,5 @@
 // @flow
+import { PropTypes } from 'react';
 import styled from 'styled-components';
 import R from 'ramda';
 import { darken1, darken2, darken3 } from '../utils/darken';
@@ -33,6 +34,12 @@ const Button = styled.button`
     background-color: ${props => darken2(props.theme.color[props.kind])};
   }
 `;
+
+Button.displayName = 'Button';
+
+Button.propTypes = {
+  kind: PropTypes.string,
+};
 
 Button.defaultProps = {
   kind: 'primary',

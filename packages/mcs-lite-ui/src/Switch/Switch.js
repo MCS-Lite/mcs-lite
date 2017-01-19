@@ -1,3 +1,4 @@
+import { PropTypes } from 'react';
 import styled from 'styled-components';
 
 const Switch = styled.div`
@@ -28,6 +29,10 @@ const Switch = styled.div`
   }
 `;
 
+Switch.displayName = 'Switch';
+Switch.propTypes = {
+  checked: PropTypes.bool,
+};
 Switch.defaultProps = {
   checked: false,
 };

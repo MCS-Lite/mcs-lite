@@ -63,14 +63,30 @@ const TomatoButton = styled(Button)`
 `;
 
 storiesOf('Button', module)
-  .add('With kind props', () =>
-    <KindContainer />,
+  .addWithInfo(
+    'API',
+    '',
+    () => <Button>Simple button</Button>,
+    { inline: true },
   )
-  .add('With theme provider (Material)', () =>
-    <ThemeProvider theme={customTheme}>
-      <KindContainer />
-    </ThemeProvider>,
+  .addWithInfo(
+    'With kind props',
+    '使用內建 kind props 樣式。',
+    () => <KindContainer />,
+    { inline: true, propTables: false },
   )
-  .add('Overriding style', () =>
-    <TomatoButton onClick={action('clicked')}>Overriding style</TomatoButton>,
+  .addWithInfo(
+    'With theme provider (Material)',
+    '使用全局的 theme 來調整色調。',
+    () =>
+      <ThemeProvider theme={customTheme}>
+        <KindContainer />
+      </ThemeProvider>,
+    { inline: true, propTables: false },
+  )
+  .addWithInfo(
+    'Overriding style',
+    '使用 styled-components 來覆蓋 css。',
+    () => <TomatoButton onClick={action('clicked')}>Overriding style</TomatoButton>,
+    { inline: true, propTables: false },
   );

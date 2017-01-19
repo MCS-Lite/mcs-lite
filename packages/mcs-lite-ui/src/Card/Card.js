@@ -10,4 +10,6 @@ const Card = styled.div`
   border: 1px solid ${R.path(['theme', 'color', 'grayDark'])};
 `;
 
+Card.displayName = 'Card';
+
 export default Card;

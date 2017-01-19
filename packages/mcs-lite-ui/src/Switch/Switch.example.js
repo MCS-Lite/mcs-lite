@@ -31,9 +31,25 @@ const StyledSwitch = withState(styled(Switch)`
 `);
 
 storiesOf('Switch', module)
-  .add('Simple', () =>
-    <Simple />,
+  .addWithInfo(
+    'API',
+    'Switch is a controlled component.',
+    () =>
+      <div>
+        <Switch />
+        <Switch checked />
+      </div>,
+    { inline: true },
   )
-  .add('Overriding style', () =>
-    <StyledSwitch />,
+  .addWithInfo(
+    'Stateful switch',
+    '使用 state 來控制狀態。',
+    () => <Simple />,
+    { inline: true, propTables: false },
+  )
+  .addWithInfo(
+    'Overriding style',
+    '使用 styled-components 來覆蓋 css。',
+    () => <StyledSwitch />,
+    { inline: true, propTables: false },
   );

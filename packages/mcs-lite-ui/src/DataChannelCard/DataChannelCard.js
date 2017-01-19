@@ -7,4 +7,6 @@ const DataChannelCard = styled(Card)`
   padding: 10px 20px;
 `;
 
+DataChannelCard.displayName = 'DataChannelCard';
+
 export default DataChannelCard;
