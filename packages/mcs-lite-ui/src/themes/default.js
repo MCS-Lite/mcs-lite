@@ -1,10 +1,5 @@
 // Default as mcs style
-export const color = {
-  default: '#FAFAFA',
-  primary: '#00A1DE',
-  success: '#69BE28',
-  error: '#F5364E',
-  warning: '#F39A1E',
+const gray = {
   black: '#353630',
   grayBase: '#999A94',
   grayDark: '#D1D2D3',
@@ -12,12 +7,20 @@ export const color = {
   white: '#FFFFFF',
 };
 
-export const base = {
-  bodyBackground: '#F1F2F7',
-  textColor: color.black,
+export const kind = {
+  default: gray.grayLight,
+  primary: '#00A1DE',
+  success: '#69BE28',
+  error: '#F5364E',
+  warning: '#F39A1E',
 };
 
-export const fontSize = {
+const base = {
+  bodyBackground: '#F1F2F7',
+  textColor: gray.black,
+};
+
+const fontSize = {
   small: '12px',
   p: '14px',
   h4: '16px',
@@ -27,7 +30,10 @@ export const fontSize = {
 };
 
 export default {
-  color,
+  color: {
+    ...gray,
+    ...kind,
+  },
   base,
   fontSize,
 };

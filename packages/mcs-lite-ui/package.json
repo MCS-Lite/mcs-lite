@@ -42,6 +42,7 @@
     "react": "^15.4.2",
     "react-addons-test-utils": "^15.4.2",
     "react-dom": "^15.4.2",
+    "react-json-tree": "^0.10.1",
     "storyshots": "^3.2.0",
     "stylelint": "^7.7.1",
     "stylelint-config-mcs-lite": "^1.0.0"

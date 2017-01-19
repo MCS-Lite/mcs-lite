@@ -101,6 +101,104 @@ exports[`Storyshots DataChannelCard API 1`] = `
 </div>
 `;
 
+exports[`Storyshots Heading API 1`] = `
+<h1
+  className="hbhShN"
+  color="black">
+  Level 1
+</h1>
+`;
+
+exports[`Storyshots Heading With color props 1`] = `
+<div>
+  <h2
+    className="kpVSEK"
+    color="black">
+    Level 2 
+    black
+  </h2>
+  <h2
+    className="kmbAxM"
+    color="grayBase">
+    Level 2 
+    grayBase
+  </h2>
+  <h2
+    className="eKgIrP"
+    color="grayDark">
+    Level 2 
+    grayDark
+  </h2>
+  <h2
+    className="ewuSco"
+    color="grayLight">
+    Level 2 
+    grayLight
+  </h2>
+  <h2
+    className="bXeicf"
+    color="white">
+    Level 2 
+    white
+  </h2>
+  <h2
+    className="ewuSco"
+    color="default">
+    Level 2 
+    default
+  </h2>
+  <h2
+    className="bJkAQM"
+    color="primary">
+    Level 2 
+    primary
+  </h2>
+  <h2
+    className="jEPjBg"
+    color="success">
+    Level 2 
+    success
+  </h2>
+  <h2
+    className="edheTq"
+    color="error">
+    Level 2 
+    error
+  </h2>
+  <h2
+    className="iJMMrA"
+    color="warning">
+    Level 2 
+    warning
+  </h2>
+</div>
+`;
+
+exports[`Storyshots Heading With level props 1`] = `
+<div>
+  <h1
+    className="hbhShN"
+    color="black">
+    Level 1
+  </h1>
+  <h2
+    className="kpVSEK"
+    color="black">
+    Level 2
+  </h2>
+  <h3
+    className="fJtQWf"
+    color="black">
+    Level 3
+  </h3>
+  <h4
+    className="cDDiS"
+    color="black">
+    Level 4
+  </h4>
+</div>
+`;
+
 exports[`Storyshots Switch API 1`] = `
 <div>
   <div

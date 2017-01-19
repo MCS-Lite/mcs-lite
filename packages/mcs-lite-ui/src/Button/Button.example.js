@@ -3,6 +3,8 @@ import styled, { ThemeProvider } from 'styled-components';
 import { storiesOf, action } from '@kadira/storybook';
 import Button from './index';
 import { darken1, darken2, darken3 } from '../utils/darken';
+import { kind } from '../themes/default';
+
 
 const Container = styled.div`
 
@@ -13,11 +15,11 @@ const Container = styled.div`
 
 const KindContainer = () =>
   <Container>
-    <Button onClick={action('clicked')} kind="default">default</Button>
-    <Button onClick={action('clicked')} kind="primary">primary</Button>
-    <Button onClick={action('clicked')} kind="success">success</Button>
-    <Button onClick={action('clicked')} kind="error">error</Button>
-    <Button onClick={action('clicked')} kind="warning">warning</Button>
+    {
+      Object.keys(kind).map(key =>
+        <Button key={key} kind={key} onClick={action(key)}>{key}</Button>,
+      )
+    }
   </Container>;
 
 const customTheme = {

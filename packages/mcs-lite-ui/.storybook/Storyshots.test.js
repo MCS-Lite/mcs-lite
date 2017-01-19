@@ -1,3 +1,5 @@
 import initStoryshots from 'storyshots';
 
-initStoryshots();
+initStoryshots({
+  storyRegex: /^((?!\[JSON\]).)*$/, // 不要跑 JSON example
+});
