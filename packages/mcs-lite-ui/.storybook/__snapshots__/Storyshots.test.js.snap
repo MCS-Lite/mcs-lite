@@ -177,6 +177,38 @@ exports[`Storyshots DataChannelCard API 1`] = `
 </div>
 `;
 
+exports[`Storyshots DataChannelCard Switch data channel 1`] = `
+<div
+  className="dlpniv">
+  <div>
+    <div
+      checked={false}
+      className="cICTqL" />
+  </div>
+  <div>
+    <h4
+      className="egURlk"
+      color="black">
+      Title
+    </h4>
+    <small
+      className="fvWQpx">
+      Last data point time : 2015-06-12 12:00
+    </small>
+    <hr
+      className="fMhFwp" />
+    <div
+      className="eSOTAI"
+      color="black">
+      <MockReactTextTruncate
+        line={2}
+        text="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
+        truncateText="…" />
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Heading API 1`] = `
 <h1
   className="fVtTCn"
