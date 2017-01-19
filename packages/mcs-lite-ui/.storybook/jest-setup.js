@@ -10,3 +10,6 @@ const mockInfoAddon = {
 
 setAddon(mockInfoAddon);
 addDecorator(centered);
+
+// For DataChannelCard
+jest.mock('react-text-truncate', () => 'MockReactTextTruncate');

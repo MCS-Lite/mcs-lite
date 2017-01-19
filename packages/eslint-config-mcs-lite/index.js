@@ -3,6 +3,9 @@ module.exports = {
   extends: [
     'airbnb',
   ],
+  globals: {
+    jest: true,
+  },
   rules: {
     'react/prop-types': 0,
     'react/sort-comp': [
@@ -67,5 +70,6 @@ module.exports = {
     ],
     'jsx-a11y/no-static-element-interactions': 0,
     'no-confusing-arrow': 0,
+    'react/forbid-prop-types': 0,
   },
 };

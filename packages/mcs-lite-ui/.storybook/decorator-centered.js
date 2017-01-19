@@ -10,6 +10,7 @@ injectGlobal`
   }
 
   body {
+    ${''/* font-family: 'Courier New', sans-serif; */}
     background-color: ${theme.base.bodyBackground};
   }
 `;

@@ -149,8 +149,31 @@ exports[`Storyshots Card API 1`] = `
 
 exports[`Storyshots DataChannelCard API 1`] = `
 <div
-  className="jFlOlG">
-  Content
+  className="dlpniv">
+  <div>
+    Children
+  </div>
+  <div>
+    <h4
+      className="egURlk"
+      color="black">
+      Title
+    </h4>
+    <small
+      className="fvWQpx">
+      Last data point time : 2015-06-12 12:00
+    </small>
+    <hr
+      className="fMhFwp" />
+    <div
+      className="eSOTAI"
+      color="black">
+      <MockReactTextTruncate
+        line={2}
+        text="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
+        truncateText="…" />
+    </div>
+  </div>
 </div>
 `;
 
@@ -274,6 +297,14 @@ exports[`Storyshots P API 1`] = `
   color="black">
   Nisi eu eiusmod cupidatat aute laboris commodo excepteur esse dolore incididunt incididunt aliquip pariatur est minim officia sit. Nulla pariatur duis duis quis commodo cupidatat voluptate enim culpa elit adipisicing do cupidatat sint anim. Cillum elit magna occaecat proident sit cupidatat ad quis sunt id culpa culpa. Ad duis nulla in incididunt amet consequat officia ad voluptate voluptate. Pariatur eiusmod ullamco cupidatat non magna officia aute magna deserunt qui aute dolor eu. Qui amet non ex cillum sunt ad velit consequat ipsum velit.
 </p>
+`;
+
+exports[`Storyshots P Use different base component 1`] = `
+<div
+  className="eSOTAI"
+  color="black">
+  Nisi eu eiusmod cupidatat aute laboris commodo excepteur esse dolore incididunt incididunt aliquip pariatur est minim officia sit. Nulla pariatur duis duis quis commodo cupidatat voluptate enim culpa elit adipisicing do cupidatat sint anim. Cillum elit magna occaecat proident sit cupidatat ad quis sunt id culpa culpa. Ad duis nulla in incididunt amet consequat officia ad voluptate voluptate. Pariatur eiusmod ullamco cupidatat non magna officia aute magna deserunt qui aute dolor eu. Qui amet non ex cillum sunt ad velit consequat ipsum velit.
+</div>
 `;
 
 exports[`Storyshots P With color props 1`] = `

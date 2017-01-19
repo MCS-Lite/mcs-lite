@@ -1,7 +1,10 @@
-import { PropTypes } from 'react';
+import React, { PropTypes } from 'react';
 import styled from 'styled-components';
 
-const P = styled.p`
+const Component = ({ component, children, ...otherProps }) =>
+  React.createElement(component, otherProps, children);
+
+const P = styled(Component)`
   margin: 0;
   font-size: ${props => props.theme.fontSize.p};
   color: ${props => props.theme.color[props.color]};
@@ -12,10 +15,12 @@ P.displayName = 'P';
 
 P.propTypes = {
   color: PropTypes.string,
+  component: PropTypes.any,
 };
 
 P.defaultProps = {
   color: 'black',
+  component: 'p',
 };
 
 export default P;
