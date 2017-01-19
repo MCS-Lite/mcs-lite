@@ -1,0 +1,129 @@
+exports[`Storyshots Button Overriding style 1`] = `
+<div
+  className="gwQGzb">
+  <button
+    className="WzsJi"
+    kind="primary"
+    onClick={[Function]}>
+    Overriding style
+  </button>
+</div>
+`;
+
+exports[`Storyshots Button With kind props 1`] = `
+<div
+  className="gwQGzb">
+  <div
+    className="ekbxOp">
+    <button
+      className="gWKTnI"
+      kind="default"
+      onClick={[Function]}>
+      default
+    </button>
+    <button
+      className="hkjKTu"
+      kind="primary"
+      onClick={[Function]}>
+      primary
+    </button>
+    <button
+      className="kCvXCW"
+      kind="success"
+      onClick={[Function]}>
+      success
+    </button>
+    <button
+      className="hHCdSJ"
+      kind="error"
+      onClick={[Function]}>
+      error
+    </button>
+    <button
+      className="ePRgCQ"
+      kind="warning"
+      onClick={[Function]}>
+      warning
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Button With theme provider (Material) 1`] = `
+<div
+  className="gwQGzb">
+  <div
+    className="ekbxOp">
+    <button
+      className="fLAIJr"
+      kind="default"
+      onClick={[Function]}>
+      default
+    </button>
+    <button
+      className="jBPAeu"
+      kind="primary"
+      onClick={[Function]}>
+      primary
+    </button>
+    <button
+      className="ddoWjI"
+      kind="success"
+      onClick={[Function]}>
+      success
+    </button>
+    <button
+      className="gGdFcO"
+      kind="error"
+      onClick={[Function]}>
+      error
+    </button>
+    <button
+      className="hYHCGC"
+      kind="warning"
+      onClick={[Function]}>
+      warning
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Card Simple 1`] = `
+<div
+  className="gwQGzb">
+  <div
+    className="dVFvPA">
+    Card Content
+  </div>
+</div>
+`;
+
+exports[`Storyshots DataChannelCard Simple 1`] = `
+<div
+  className="gwQGzb">
+  <div
+    className="jFlOlG">
+    DataChannelCard Content
+  </div>
+</div>
+`;
+
+exports[`Storyshots Switch Overriding style 1`] = `
+<div
+  className="gwQGzb">
+  <div
+    checked={false}
+    className="hZJZFY"
+    onClick={[Function]} />
+</div>
+`;
+
+exports[`Storyshots Switch Simple 1`] = `
+<div
+  className="gwQGzb">
+  <div
+    checked={false}
+    className="cICTqL"
+    onClick={[Function]} />
+</div>
+`;

@@ -13,8 +13,13 @@ $ npm install # Install all external dependencies of each package.
 $ tasks/test.sh
 ```
 
-
 ## mcs-lite-ui
+
+### Testing
+
+```
+$ npm run test --watch --coverage
+```
 
 ### Theme api
 

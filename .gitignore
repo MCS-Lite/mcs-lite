@@ -2,5 +2,12 @@ node_modules/
 npm-debug.log
 lerna-debug.log
 .DS_Store
+
+# babel build
 lib/
+
+# storybook
 storybook-static/
+
+# jest
+coverage/
