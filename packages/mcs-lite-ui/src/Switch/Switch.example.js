@@ -21,6 +21,14 @@ const withState = Component =>
     }
   };
 
+const StyledSwitch = withState(styled(Switch)`
+  background-color: ${props => props.checked ? 'steelblue' : 'aliceblue'};
+
+  &::after {
+    background-color: ${props => props.checked ? 'aliceblue' : 'cornflowerblue'};
+  }
+`);
+
 storiesOf('Switch', module)
   .addWithInfo(
     'API',
@@ -44,16 +52,6 @@ storiesOf('Switch', module)
   .addWithInfo(
     'Overriding style',
     '使用 styled-components 來覆蓋 css。',
-    () => {
-      const StyledSwitch = withState(styled(Switch)`
-        background-color: ${props => props.checked ? 'steelblue' : 'aliceblue'};
-
-        &::after {
-          background-color: ${props => props.checked ? 'aliceblue' : 'cornflowerblue'};
-        }
-      `);
-
-      return <StyledSwitch />;
-    },
+    () => <StyledSwitch />,
     { inline: true, propTables: false },
   );

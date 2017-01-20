@@ -566,7 +566,7 @@ exports[`Storyshots Switch API 1`] = `
 exports[`Storyshots Switch Overriding style 1`] = `
 <div
   checked={false}
-  className="bTyEhn"
+  className="hZJZFY"
   onClick={[Function]} />
 `;
 
