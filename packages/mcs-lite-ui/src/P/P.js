@@ -1,26 +1,28 @@
 import React, { PropTypes } from 'react';
 import styled from 'styled-components';
+import R from 'ramda';
 
-const Component = ({ component, children, ...otherProps }) =>
-  React.createElement(component, otherProps, children);
+const getBaseComponent = R.ifElse(
+  R.is(String),
+  R.always('p'),
+  R.always('div'),
+);
+
+const Component = ({ children, ...otherProps }) =>
+  React.createElement(getBaseComponent(children), otherProps, children);
 
 const P = styled(Component)`
   margin: 0;
   font-size: ${props => props.theme.fontSize.p};
   color: ${props => props.theme.color[props.color]};
-  line-height: 1.5;
 `;
 
 P.displayName = 'P';
-
 P.propTypes = {
   color: PropTypes.string,
-  component: PropTypes.any,
 };
-
 P.defaultProps = {
   color: 'black',
-  component: 'p',
 };
 
 export default P;

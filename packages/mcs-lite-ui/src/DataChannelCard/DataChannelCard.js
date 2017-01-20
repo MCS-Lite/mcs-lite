@@ -6,49 +6,53 @@ import Heading from '../Heading';
 import Small from '../Small';
 import P from '../P';
 
-const Subtitle = styled(Small)`
-  color: ${props => props.theme.color.grayBase};
+const Header = styled.div`
+  flex-basis: 24px;
+  align-items: center;
+  justify-content: flex-end;
+  display: flex;
+  margin-bottom: 5px;
+`;
+
+const Body = styled.div`
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-basis: 165px;
+`;
+
+const Description = styled(P)`
+  min-height: 42px;
 `;
 
 const Hr = styled.hr`
   border: 0;
   border-top: 1px solid ${props => props.theme.color.grayDark};
-  margin: 5px 0;
+  margin: 2px 0;
 `;
 
 const Wrapper = styled(Card)`
-  height: 300px;
-  width: 280px;
   padding: 10px 20px;
   display: flex;
   flex-direction: column;
-
-  > div:nth-child(1) {
-    flex-grow: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
 `;
 
-const DataChannelCard = ({ children, title, subtitle, description }) =>
-  <Wrapper>
-    <div>
-      {children}
-    </div>
-
+const DataChannelCard = ({ header, children, title, subtitle, description, ...otherProps }) =>
+  <Wrapper {...otherProps}>
+    <Header>{header}</Header>
+    <Body>{children}</Body>
     <div>
       <Heading level={4}>{title}</Heading>
-      <Subtitle>{subtitle}</Subtitle>
+      <P color="grayBase"><Small>{subtitle}</Small></P>
       <Hr />
-      <P component="div">
-        <TextTruncate line={2} truncateText="…" text={description} />
-      </P>
+      <Description><TextTruncate line={2} truncateText=" ..." text={description} /></Description>
     </div>
   </Wrapper>;
 
 DataChannelCard.displayName = 'DataChannelCard';
 DataChannelCard.propTypes = {
+  header: PropTypes.any.isRequired,
   children: PropTypes.any.isRequired,
   title: PropTypes.string.isRequired,
   subtitle: PropTypes.string.isRequired,

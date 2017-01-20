@@ -6,7 +6,7 @@ import theme from '../themes/default';
 storiesOf('P', module)
   .addWithInfo(
     'API',
-    '段落使用。',
+    `段落使用。 (${theme.fontSize.p})`,
     () =>
       <P>
         Nisi eu eiusmod cupidatat aute laboris commodo excepteur esse dolore
@@ -31,21 +31,16 @@ storiesOf('P', module)
           )
         }
       </div>,
-    { inline: true, propTables: false },
+    { inline: true },
   )
   .addWithInfo(
-    'Use different base component',
-    '使用 div。',
+    'Nested children with div',
+    'p 裡面不能有 div，會自動換成 div。',
     () =>
-      <P component="div">
-        Nisi eu eiusmod cupidatat aute laboris commodo excepteur esse dolore
-        incididunt incididunt aliquip pariatur est minim officia sit. Nulla
-        pariatur duis duis quis commodo cupidatat voluptate enim culpa elit
-        adipisicing do cupidatat sint anim. Cillum elit magna occaecat proident
-        sit cupidatat ad quis sunt id culpa culpa. Ad duis nulla in incididunt
-        amet consequat officia ad voluptate voluptate. Pariatur eiusmod ullamco
-        cupidatat non magna officia aute magna deserunt qui aute dolor eu.
-        Qui amet non ex cillum sunt ad velit consequat ipsum velit.
+      <P>
+        <div>
+          <span>Qui amet non ex cillum sunt ad velit consequat ipsum velit.</span>
+        </div>
       </P>,
-    { inline: true, propTables: false },
+    { inline: true },
   );

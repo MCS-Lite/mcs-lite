@@ -1,6 +1,7 @@
 /* eslint no-unused-expressions:0 */
 import React from 'react';
 import { ThemeProvider, injectGlobal } from 'styled-components';
+import 'normalize.css';
 import theme from '../src/themes/default';
 
 injectGlobal`
@@ -23,6 +24,7 @@ injectGlobal`
 
   html {
     font-size: ${theme.base.fontSize};
+    line-height: ${theme.base.lineHeight};
   }
 
   body {

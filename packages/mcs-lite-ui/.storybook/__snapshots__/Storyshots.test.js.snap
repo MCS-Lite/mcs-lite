@@ -33,7 +33,8 @@ exports[`Storyshots API [JSON] theme 1`] = `
         },
         \"base\": {
           \"bodyBackground\": \"#F1F2F7\",
-          \"fontSize\": \"14px\"
+          \"fontSize\": \"14px\",
+          \"lineHeight\": 1.5
         },
         \"fontSize\": {
           \"small\": \"86%\",
@@ -48,6 +49,53 @@ exports[`Storyshots API [JSON] theme 1`] = `
       }
     }
   </pre>
+</div>
+`;
+
+exports[`Storyshots B API 1`] = `
+<b
+  className="dXWQID">
+  Bold content
+</b>
+`;
+
+exports[`Storyshots B CJK 1`] = `
+<h4
+  className="fNDHSu"
+  color="black">
+  <b
+    className="dXWQID">
+    控制開關粗體字
+  </b>
+</h4>
+`;
+
+exports[`Storyshots B With color 1`] = `
+<div
+  className="zTBZX"
+  color="primary">
+  Nisi eu eiusmod cupidatat aute laboris commodo excepteur
+  <b
+    className="dXWQID">
+     Bold content 
+  </b>
+  incididunt incididunt aliquip pariatur est minim officia sit.
+</div>
+`;
+
+exports[`Storyshots B Within <P> 1`] = `
+<div
+  className="kISpry"
+  color="black">
+  Nisi eu eiusmod cupidatat aute laboris commodo excepteur
+  <small
+    className="eIljqN">
+    <b
+      className="dXWQID">
+       Bold content 
+    </b>
+  </small>
+  incididunt incididunt aliquip pariatur est minim officia sit.
 </div>
 `;
 
@@ -142,68 +190,89 @@ exports[`Storyshots Button With theme provider (Material) 1`] = `
 
 exports[`Storyshots Card API 1`] = `
 <div
-  className="dVFvPA">
+  className="lbjwQK">
   Card Content
 </div>
 `;
 
 exports[`Storyshots DataChannelCard API 1`] = `
 <div
-  className="dlpniv">
-  <div>
+  className="jerMqv">
+  <div
+    className="lguxPP">
+    <a
+      href="">
+      Link
+    </a>
+  </div>
+  <div
+    className="bouzDW">
     Children
   </div>
   <div>
     <h4
-      className="egURlk"
+      className="fNDHSu"
       color="black">
       Title
     </h4>
-    <small
-      className="fvWQpx">
-      Last data point time : 2015-06-12 12:00
-    </small>
-    <hr
-      className="fMhFwp" />
     <div
-      className="eSOTAI"
+      className="dcrOYj"
+      color="grayBase">
+      <small
+        className="eIljqN">
+        Last data point time : 2015-06-12 12:00
+      </small>
+    </div>
+    <hr
+      className="kAIFmf" />
+    <div
+      className="eVDNmh"
       color="black">
       <MockReactTextTruncate
         line={2}
         text="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
-        truncateText="…" />
+        truncateText=" ..." />
     </div>
   </div>
 </div>
 `;
 
-exports[`Storyshots DataChannelCard Switch data channel 1`] = `
+exports[`Storyshots DataChannelCard Fixed width 1`] = `
 <div
-  className="dlpniv">
-  <div>
+  className="iDvoso jerMqv">
+  <div
+    className="lguxPP">
+    V
+  </div>
+  <div
+    className="bouzDW">
     <div
       checked={false}
       className="cICTqL" />
   </div>
   <div>
     <h4
-      className="egURlk"
+      className="fNDHSu"
       color="black">
       Title
     </h4>
-    <small
-      className="fvWQpx">
-      Last data point time : 2015-06-12 12:00
-    </small>
-    <hr
-      className="fMhFwp" />
     <div
-      className="eSOTAI"
+      className="dcrOYj"
+      color="grayBase">
+      <small
+        className="eIljqN">
+        Last data point time : 2015-06-12 12:00
+      </small>
+    </div>
+    <hr
+      className="kAIFmf" />
+    <div
+      className="eVDNmh"
       color="black">
       <MockReactTextTruncate
         line={2}
         text="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
-        truncateText="…" />
+        truncateText=" ..." />
     </div>
   </div>
 </div>
@@ -211,7 +280,7 @@ exports[`Storyshots DataChannelCard Switch data channel 1`] = `
 
 exports[`Storyshots Heading API 1`] = `
 <h1
-  className="fVtTCn"
+  className="jHmIHy"
   color="black">
   Level 1
 </h1>
@@ -220,61 +289,61 @@ exports[`Storyshots Heading API 1`] = `
 exports[`Storyshots Heading With color props 1`] = `
 <div>
   <h2
-    className="yHLyb"
+    className="kPrakD"
     color="black">
     Level 2 
     black
   </h2>
   <h2
-    className="dKqSmo"
+    className="gAvEFR"
     color="grayBase">
     Level 2 
     grayBase
   </h2>
   <h2
-    className="ciUZCF"
+    className="dlFtbQ"
     color="grayDark">
     Level 2 
     grayDark
   </h2>
   <h2
-    className="eOEYXe"
+    className="faUXNq"
     color="grayLight">
     Level 2 
     grayLight
   </h2>
   <h2
-    className="gLUCQb"
+    className="hVRjXS"
     color="white">
     Level 2 
     white
   </h2>
   <h2
-    className="eOEYXe"
+    className="faUXNq"
     color="default">
     Level 2 
     default
   </h2>
   <h2
-    className="fsfMJE"
+    className="jEpKVo"
     color="primary">
     Level 2 
     primary
   </h2>
   <h2
-    className="dsFKDb"
+    className="sGkNP"
     color="success">
     Level 2 
     success
   </h2>
   <h2
-    className="fzlnFI"
+    className="ecVAoE"
     color="error">
     Level 2 
     error
   </h2>
   <h2
-    className="dEVvxg"
+    className="kJhjYD"
     color="warning">
     Level 2 
     warning
@@ -285,122 +354,168 @@ exports[`Storyshots Heading With color props 1`] = `
 exports[`Storyshots Heading With level props 1`] = `
 <div>
   <h1
-    className="fVtTCn"
+    className="jHmIHy"
     color="black">
-    Level 
+    h
     1
+     - Level 
+    1
+       (
+    2.43rem
+     = 
+    34.02px
+    )
   </h1>
   <h2
-    className="yHLyb"
+    className="kPrakD"
     color="black">
-    Level 
+    h
     2
+     - Level 
+    2
+       (
+    1.71rem
+     = 
+    23.939999999999998px
+    )
   </h2>
   <h3
-    className="jpmjeD"
+    className="dbwMFa"
     color="black">
-    Level 
+    h
     3
+     - Level 
+    3
+       (
+    1.43rem
+     = 
+    20.02px
+    )
   </h3>
   <h4
-    className="egURlk"
+    className="fNDHSu"
     color="black">
-    Level 
+    h
     4
+     - Level 
+    4
+       (
+    1.14rem
+     = 
+    15.959999999999999px
+    )
   </h4>
   <h5
-    className="ljcViA"
+    className="heMyAM"
     color="black">
-    Level 
+    h
     5
+     - Level 
+    5
+       (
+    1rem
+     = 
+    14px
+    )
   </h5>
   <h6
-    className="ljcViA"
+    className="heMyAM"
     color="black">
-    Level 
+    h
     6
+     - Level 
+    6
+       (
+    1rem
+     = 
+    14px
+    )
   </h6>
 </div>
 `;
 
 exports[`Storyshots P API 1`] = `
 <p
-  className="eSOTAI"
+  className="kISpry"
   color="black">
   Nisi eu eiusmod cupidatat aute laboris commodo excepteur esse dolore incididunt incididunt aliquip pariatur est minim officia sit. Nulla pariatur duis duis quis commodo cupidatat voluptate enim culpa elit adipisicing do cupidatat sint anim. Cillum elit magna occaecat proident sit cupidatat ad quis sunt id culpa culpa. Ad duis nulla in incididunt amet consequat officia ad voluptate voluptate. Pariatur eiusmod ullamco cupidatat non magna officia aute magna deserunt qui aute dolor eu. Qui amet non ex cillum sunt ad velit consequat ipsum velit.
 </p>
 `;
 
-exports[`Storyshots P Use different base component 1`] = `
+exports[`Storyshots P Nested children with div 1`] = `
 <div
-  className="eSOTAI"
+  className="kISpry"
   color="black">
-  Nisi eu eiusmod cupidatat aute laboris commodo excepteur esse dolore incididunt incididunt aliquip pariatur est minim officia sit. Nulla pariatur duis duis quis commodo cupidatat voluptate enim culpa elit adipisicing do cupidatat sint anim. Cillum elit magna occaecat proident sit cupidatat ad quis sunt id culpa culpa. Ad duis nulla in incididunt amet consequat officia ad voluptate voluptate. Pariatur eiusmod ullamco cupidatat non magna officia aute magna deserunt qui aute dolor eu. Qui amet non ex cillum sunt ad velit consequat ipsum velit.
+  <div>
+    <span>
+      Qui amet non ex cillum sunt ad velit consequat ipsum velit.
+    </span>
+  </div>
 </div>
 `;
 
 exports[`Storyshots P With color props 1`] = `
 <div>
-  <p
-    className="eSOTAI"
+  <div
+    className="kISpry"
     color="black">
     Paragraph 
     black
-  </p>
-  <p
-    className="WEOUa"
+  </div>
+  <div
+    className="dcrOYj"
     color="grayBase">
     Paragraph 
     grayBase
-  </p>
-  <p
-    className="jAIFMf"
+  </div>
+  <div
+    className="isCSrn"
     color="grayDark">
     Paragraph 
     grayDark
-  </p>
-  <p
-    className="kXKPlg"
+  </div>
+  <div
+    className="gKeIpy"
     color="grayLight">
     Paragraph 
     grayLight
-  </p>
-  <p
-    className="grYLXw"
+  </div>
+  <div
+    className="eofFXh"
     color="white">
     Paragraph 
     white
-  </p>
-  <p
-    className="kXKPlg"
+  </div>
+  <div
+    className="gKeIpy"
     color="default">
     Paragraph 
     default
-  </p>
-  <p
-    className="dlDdTl"
+  </div>
+  <div
+    className="zTBZX"
     color="primary">
     Paragraph 
     primary
-  </p>
-  <p
-    className="dkpTNT"
+  </div>
+  <div
+    className="bRFRvJ"
     color="success">
     Paragraph 
     success
-  </p>
-  <p
-    className="cXfdto"
+  </div>
+  <div
+    className="foqfyt"
     color="error">
     Paragraph 
     error
-  </p>
-  <p
-    className="ipWZDW"
+  </div>
+  <div
+    className="dxpNWh"
     color="warning">
     Paragraph 
     warning
-  </p>
+  </div>
 </div>
 `;
 
@@ -412,8 +527,8 @@ exports[`Storyshots Small API 1`] = `
 `;
 
 exports[`Storyshots Small With color 1`] = `
-<p
-  className="dlDdTl"
+<div
+  className="zTBZX"
   color="primary">
   Nisi eu eiusmod cupidatat aute laboris commodo excepteur
   <small
@@ -421,12 +536,12 @@ exports[`Storyshots Small With color 1`] = `
      Small content 
   </small>
   incididunt incididunt aliquip pariatur est minim officia sit.
-</p>
+</div>
 `;
 
 exports[`Storyshots Small Within <P> 1`] = `
-<p
-  className="eSOTAI"
+<div
+  className="kISpry"
   color="black">
   Nisi eu eiusmod cupidatat aute laboris commodo excepteur
   <small
@@ -434,7 +549,7 @@ exports[`Storyshots Small Within <P> 1`] = `
      Small content 
   </small>
   incididunt incididunt aliquip pariatur est minim officia sit.
-</p>
+</div>
 `;
 
 exports[`Storyshots Switch API 1`] = `
@@ -451,7 +566,7 @@ exports[`Storyshots Switch API 1`] = `
 exports[`Storyshots Switch Overriding style 1`] = `
 <div
   checked={false}
-  className="hZJZFY"
+  className="bTyEhn"
   onClick={[Function]} />
 `;
 

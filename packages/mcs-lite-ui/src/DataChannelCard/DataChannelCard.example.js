@@ -1,4 +1,5 @@
 import React from 'react';
+import styled from 'styled-components';
 import { storiesOf } from '@kadira/storybook';
 import DataChannelCard from '.';
 import Switch from '../Switch';
@@ -12,21 +13,30 @@ storiesOf('DataChannelCard', module)
         title="Title"
         subtitle="Last data point time : 2015-06-12 12:00"
         description="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
+        header={<a href="">Link</a>}
       >
         Children
       </DataChannelCard>,
     { inline: true },
   )
   .addWithInfo(
-    'Switch data channel',
-    '套用 Switch component。',
-    () =>
-      <DataChannelCard
-        title="Title"
-        subtitle="Last data point time : 2015-06-12 12:00"
-        description="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
-      >
-        <Switch />
-      </DataChannelCard>,
+    'Fixed width',
+    '固定寬度。',
+    () => {
+      const MCSSyledCard = styled(DataChannelCard)`
+        width: 300px;
+      `;
+
+      return (
+        <MCSSyledCard
+          header="V"
+          title="Title"
+          subtitle="Last data point time : 2015-06-12 12:00"
+          description="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
+        >
+          <Switch />
+        </MCSSyledCard>
+      );
+    },
     { inline: true },
   );

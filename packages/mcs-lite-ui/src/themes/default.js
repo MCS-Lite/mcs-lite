@@ -19,6 +19,7 @@ const base = {
   bodyBackground: '#F1F2F7',
   // textColor: gray.black,
   fontSize: '14px',
+  lineHeight: 1.5,
 };
 
 const fontSize = {

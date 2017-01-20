@@ -21,7 +21,7 @@ storiesOf('Heading', module)
         {
           R.range(1, 7).map(key =>
             <Heading key={key} level={key}>
-              Level {key} &nbsp;
+              h{key} - Level {key} &nbsp;
               ({theme.fontSize[`h${key}`]} = {remToPx(theme.fontSize[`h${key}`])})
             </Heading>,
           )
