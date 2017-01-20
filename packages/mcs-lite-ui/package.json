@@ -1,7 +1,7 @@
 {
   "name": "mcs-lite-ui",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "lib/index.js",
   "repository": {},
   "license": "MIT",
   "scripts": {
