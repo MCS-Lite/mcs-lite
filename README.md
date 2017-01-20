@@ -15,6 +15,12 @@ $ tasks/test.sh
 
 ## mcs-lite-ui
 
+### Development
+
+```
+$ npm start
+```
+
 ### Testing
 
 ```
