@@ -4,6 +4,8 @@ import { storiesOf } from '@kadira/storybook';
 import Heading from '.';
 import theme from '../themes/default';
 
+const remToPx = rem => `${Number(theme.base.fontSize.split('px')[0]) * Number(rem.split('rem')[0])}px`;
+
 storiesOf('Heading', module)
   .addWithInfo(
     'API',
@@ -18,7 +20,10 @@ storiesOf('Heading', module)
       <div>
         {
           R.range(1, 7).map(key =>
-            <Heading key={key} level={key}>Level {key}</Heading>,
+            <Heading key={key} level={key}>
+              Level {key} &nbsp;
+              ({theme.fontSize[`h${key}`]} = {remToPx(theme.fontSize[`h${key}`])})
+            </Heading>,
           )
         }
       </div>,
