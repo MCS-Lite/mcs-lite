@@ -21,15 +21,6 @@ const withState = Component =>
     }
   };
 
-const Simple = withState(Switch);
-const StyledSwitch = withState(styled(Switch)`
-  background-color: ${props => props.checked ? 'steelblue' : 'aliceblue'};
-
-  &::after {
-    background-color: ${props => props.checked ? 'aliceblue' : 'cornflowerblue'};
-  }
-`);
-
 storiesOf('Switch', module)
   .addWithInfo(
     'API',
@@ -44,12 +35,25 @@ storiesOf('Switch', module)
   .addWithInfo(
     'Stateful switch',
     '使用 state 來控制狀態。',
-    () => <Simple />,
+    () => {
+      const Simple = withState(Switch);
+      return <Simple />;
+    },
     { inline: true, propTables: false },
   )
   .addWithInfo(
     'Overriding style',
     '使用 styled-components 來覆蓋 css。',
-    () => <StyledSwitch />,
+    () => {
+      const StyledSwitch = withState(styled(Switch)`
+        background-color: ${props => props.checked ? 'steelblue' : 'aliceblue'};
+
+        &::after {
+          background-color: ${props => props.checked ? 'aliceblue' : 'cornflowerblue'};
+        }
+      `);
+
+      return <StyledSwitch />;
+    },
     { inline: true, propTables: false },
   );
