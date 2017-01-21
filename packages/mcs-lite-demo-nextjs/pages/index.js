@@ -1,7 +1,6 @@
 import React from 'react';
 import { ThemeProvider } from 'styled-components';
-import Button from 'mcs-lite-ui/lib/Button';
-import DataChannelCard from 'mcs-lite-ui/lib/DataChannelCard';
+import { Button, DataChannelCard } from 'mcs-lite-ui';
 import theme from 'mcs-lite-ui/lib/themes/default';
 
 export default () =>

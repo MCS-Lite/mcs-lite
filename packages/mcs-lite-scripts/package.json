@@ -1,0 +1,10 @@
+{
+  "name": "mcs-lite-scripts",
+  "version": "1.0.0",
+  "description": "",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "glob": "^7.1.1"
+  }
+}
