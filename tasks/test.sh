@@ -2,9 +2,10 @@
 
 set -e
 
+# global linting
 npm run eslint
 
-## Interface of projects
+## Interface for each project
 lerna run lint
 lerna run test
 lerna run clean
