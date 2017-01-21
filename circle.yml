@@ -1,0 +1,7 @@
+machine:
+  node:
+    version: 7.4.0
+
+test:
+  override:
+    - ./tasks/test.sh
