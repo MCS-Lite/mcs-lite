@@ -1,7 +1,7 @@
 {
   "name": "mcs-lite",
   "scripts": {
-    "postinstall": "lerna bootstrap",
+    "postinstall": "lerna bootstrap && lerna run build",
     "clean": "rm -rf node_modules && lerna exec -- rm -rf node_modules",
     "eslint": "eslint ./"
   },

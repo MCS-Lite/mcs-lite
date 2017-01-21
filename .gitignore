@@ -11,3 +11,6 @@ storybook-static/
 
 # jest
 coverage/
+
+# next
+.next/
