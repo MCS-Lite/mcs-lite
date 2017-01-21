@@ -4,7 +4,6 @@ set -e
 
 npm run eslint
 
-
 ## Interface of projects
 lerna run lint
 lerna run test
