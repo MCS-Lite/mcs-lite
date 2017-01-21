@@ -5,7 +5,10 @@ machine:
 dependencies:
   cache_directories:
     - node_modules
-    - packages/*/node_modules
+    - packages/babel-preset-mcs-lite/node_modules
+    - packages/eslint-config-mcs-lite/node_modules
+    - packages/mcs-lite-ui/node_modules
+    - packages/stylelint-config-mcs-lite/node_modules
 
 test:
   override:
