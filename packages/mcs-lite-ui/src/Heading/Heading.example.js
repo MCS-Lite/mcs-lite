@@ -1,8 +1,8 @@
 import React from 'react';
 import R from 'ramda';
 import { storiesOf } from '@kadira/storybook';
+import { theme } from 'mcs-lite-theme';
 import Heading from '.';
-import theme from '../themes/default';
 
 const remToPx = rem => `${Number(theme.base.fontSize.split('px')[0]) * Number(rem.split('rem')[0])}px`;
 

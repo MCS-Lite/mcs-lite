@@ -2,7 +2,7 @@
 import { PropTypes } from 'react';
 import styled from 'styled-components';
 import R from 'ramda';
-import { darken1, darken2, darken3 } from '../utils/darken';
+import { darken1, darken2, darken3 } from 'mcs-lite-theme';
 
 const mapColorByKind = props => R.pipe(
   R.path(['kind']),

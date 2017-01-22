@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@kadira/storybook';
+import { theme } from 'mcs-lite-theme';
 import P from '.';
-import theme from '../themes/default';
 
 storiesOf('P', module)
   .addWithInfo(
