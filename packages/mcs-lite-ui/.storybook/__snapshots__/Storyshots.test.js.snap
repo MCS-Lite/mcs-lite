@@ -195,6 +195,162 @@ exports[`Storyshots Card API 1`] = `
 </div>
 `;
 
+exports[`Storyshots DataChannel DataChannel.ControlFloat 1`] = `
+<div
+  className="hPwCMI"
+  onChange={[Function]}>
+  <div
+    className="fROLJM">
+    <a
+      href="">
+      Link
+    </a>
+  </div>
+  <div
+    className="dJSrbi">
+    <div>
+      <input
+        onChange={[Function]}
+        step="any"
+        type="number"
+        value={undefined} />
+      <button
+        className="kZUKef"
+        kind="primary"
+        onClick={[Function]}>
+        Submit
+      </button>
+    </div>
+  </div>
+  <div>
+    <h4
+      className="kqHMIM"
+      color="black">
+      Title
+    </h4>
+    <div
+      className="jyQfel"
+      color="grayBase">
+      <small
+        className="gAkaPt">
+        123125125125125
+      </small>
+    </div>
+    <hr
+      className="jKIGsL" />
+    <div
+      className="ePRywc"
+      color="black">
+      <MockReactTextTruncate
+        line={2}
+        text="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
+        truncateText=" ..." />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots DataChannel DataChannel.ControlInteger 1`] = `
+<div
+  className="hPwCMI"
+  onChange={[Function]}>
+  <div
+    className="fROLJM">
+    <a
+      href="">
+      Link
+    </a>
+  </div>
+  <div
+    className="dJSrbi">
+    <div>
+      <input
+        onChange={[Function]}
+        step="1"
+        type="number"
+        value={undefined} />
+      <button
+        className="kZUKef"
+        kind="primary"
+        onClick={[Function]}>
+        Submit
+      </button>
+    </div>
+  </div>
+  <div>
+    <h4
+      className="kqHMIM"
+      color="black">
+      Title
+    </h4>
+    <div
+      className="jyQfel"
+      color="grayBase">
+      <small
+        className="gAkaPt">
+        123125125125125
+      </small>
+    </div>
+    <hr
+      className="jKIGsL" />
+    <div
+      className="ePRywc"
+      color="black">
+      <MockReactTextTruncate
+        line={2}
+        text="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
+        truncateText=" ..." />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots DataChannel DataChannel.ControlSwitch 1`] = `
+<div
+  className="hPwCMI"
+  onChange={[Function]}>
+  <div
+    className="fROLJM">
+    <a
+      href="">
+      Link
+    </a>
+  </div>
+  <div
+    className="dJSrbi">
+    <div
+      checked={false}
+      className="hBmCMm"
+      onClick={[Function]} />
+  </div>
+  <div>
+    <h4
+      className="kqHMIM"
+      color="black">
+      Title
+    </h4>
+    <div
+      className="jyQfel"
+      color="grayBase">
+      <small
+        className="gAkaPt">
+        123125125125125
+      </small>
+    </div>
+    <hr
+      className="jKIGsL" />
+    <div
+      className="ePRywc"
+      color="black">
+      <MockReactTextTruncate
+        line={2}
+        text="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
+        truncateText=" ..." />
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots DataChannelCard API 1`] = `
 <div
   className="hPwCMI">
