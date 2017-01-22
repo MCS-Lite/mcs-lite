@@ -195,7 +195,7 @@ exports[`Storyshots Card API 1`] = `
 </div>
 `;
 
-exports[`Storyshots DataChannel ControlFloat 1`] = `
+exports[`Storyshots DataChannel DataChannel.ControlFloat 1`] = `
 <div
   className="hPwCMI"
   onChange={[Function]}>
@@ -250,7 +250,7 @@ exports[`Storyshots DataChannel ControlFloat 1`] = `
 </div>
 `;
 
-exports[`Storyshots DataChannel ControlInteger 1`] = `
+exports[`Storyshots DataChannel DataChannel.ControlInteger 1`] = `
 <div
   className="hPwCMI"
   onChange={[Function]}>
@@ -305,7 +305,7 @@ exports[`Storyshots DataChannel ControlInteger 1`] = `
 </div>
 `;
 
-exports[`Storyshots DataChannel ControlSwitch 1`] = `
+exports[`Storyshots DataChannel DataChannel.ControlSwitch 1`] = `
 <div
   className="hPwCMI"
   onChange={[Function]}>
