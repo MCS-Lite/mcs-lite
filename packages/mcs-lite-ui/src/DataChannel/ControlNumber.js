@@ -1,5 +1,4 @@
 import React, { PropTypes } from 'react';
-import styled from 'styled-components';
 import DataChannelCard from '../DataChannelCard';
 import Button from '../Button';
 

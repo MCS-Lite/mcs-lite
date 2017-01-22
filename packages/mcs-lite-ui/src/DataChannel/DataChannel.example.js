@@ -1,18 +1,13 @@
 import React from 'react';
-import styled from 'styled-components';
 import { storiesOf, action } from '@kadira/storybook';
-import {
-  ControlSwitch,
-  ControlInteger,
-  ControlFloat,
- } from '.';
+import DataChannel from '.';
 
 storiesOf('DataChannel', module)
   .addWithInfo(
-    'ControlSwitch',
+    'DataChannel.ControlSwitch',
     '',
     () =>
-      <ControlSwitch
+      <DataChannel.ControlSwitch
         title="Title"
         description="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
         header={<a href="">Link</a>}
@@ -27,10 +22,10 @@ storiesOf('DataChannel', module)
     { inline: true },
   )
   .addWithInfo(
-    'ControlInteger',
+    'DataChannel.ControlInteger',
     '',
     () =>
-      <ControlInteger
+      <DataChannel.ControlInteger
         title="Title"
         description="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
         header={<a href="">Link</a>}
@@ -46,10 +41,10 @@ storiesOf('DataChannel', module)
   )
 
   .addWithInfo(
-    'ControlFloat',
+    'DataChannel.ControlFloat',
     '',
     () =>
-      <ControlFloat
+      <DataChannel.ControlFloat
         title="Title"
         description="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
         header={<a href="">Link</a>}
