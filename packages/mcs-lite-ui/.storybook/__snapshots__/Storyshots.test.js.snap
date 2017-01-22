@@ -1,4 +1,4 @@
-exports[`Storyshots API [JSON] kind 1`] = `
+exports[`Storyshots API [mcs-lite-theme] [JSON] kind 1`] = `
 <div>
   <pre>
     {
@@ -14,7 +14,7 @@ exports[`Storyshots API [JSON] kind 1`] = `
 </div>
 `;
 
-exports[`Storyshots API [JSON] theme 1`] = `
+exports[`Storyshots API [mcs-lite-theme] [JSON] theme 1`] = `
 <div>
   <pre>
     {

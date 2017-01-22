@@ -1,8 +1,8 @@
 /* eslint no-unused-expressions:0 */
 import React from 'react';
 import { ThemeProvider, injectGlobal } from 'styled-components';
+import { theme } from 'mcs-lite-theme';
 import 'normalize.css';
-import theme from '../src/themes/default';
 
 injectGlobal`
   @font-face {

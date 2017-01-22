@@ -1,10 +1,8 @@
 import React from 'react';
 import styled, { ThemeProvider } from 'styled-components';
 import { storiesOf, action } from '@kadira/storybook';
+import { kindList, darken1, darken2, darken3 } from 'mcs-lite-theme';
 import Button from '.';
-import { darken1, darken2, darken3 } from '../utils/darken';
-import { kind } from '../themes/default';
-
 
 const Container = styled.div`
 
@@ -16,7 +14,7 @@ const Container = styled.div`
 const KindContainer = () =>
   <Container>
     {
-      Object.keys(kind).map(key =>
+      kindList.map(key =>
         <Button key={key} kind={key} onClick={action(key)}>{key}</Button>,
       )
     }
