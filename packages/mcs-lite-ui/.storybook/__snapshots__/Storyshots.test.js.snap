@@ -700,6 +700,39 @@ exports[`Storyshots Input With type props 1`] = `
 </div>
 `;
 
+exports[`Storyshots InputRange API 1`] = `
+<input
+  className="hdhnFx"
+  kind="primary"
+  type="range" />
+`;
+
+exports[`Storyshots InputRange With kind props 1`] = `
+<div
+  className="cZlPqe">
+  <input
+    className="kBSwKq"
+    kind="default"
+    type="range" />
+  <input
+    className="hdhnFx"
+    kind="primary"
+    type="range" />
+  <input
+    className="jXdUnH"
+    kind="success"
+    type="range" />
+  <input
+    className="ilYUjW"
+    kind="error"
+    type="range" />
+  <input
+    className="jfqTuL"
+    kind="warning"
+    type="range" />
+</div>
+`;
+
 exports[`Storyshots P API 1`] = `
 <p
   className="cqMgnG"
