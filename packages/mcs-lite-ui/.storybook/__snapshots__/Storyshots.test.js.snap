@@ -192,67 +192,7 @@ exports[`Storyshots Card API 1`] = `
 </div>
 `;
 
-exports[`Storyshots DataChannel DataChannel.ControlFloat 1`] = `
-<div
-  className="hPwCMI">
-  <div
-    className="fROLJM">
-    <a
-      href="">
-      Link
-    </a>
-  </div>
-  <div
-    className="dJSrbi">
-    <div
-      className="kdCvHd">
-      <input
-        className="QbwlJ"
-        kind="primary"
-        onChange={undefined}
-        type="number"
-        value={undefined} />
-      <div
-        className="dFpjFs">
-        Clear
-        <button
-          className="hhGxPY"
-          kind="primary"
-          onClick={[Function]}>
-          Ok
-        </button>
-      </div>
-    </div>
-  </div>
-  <div>
-    <h4
-      className="kqHMIM"
-      color="black">
-      Title
-    </h4>
-    <div
-      className="jyQfel"
-      color="grayBase">
-      <small
-        className="gAkaPt">
-        123125125125125
-      </small>
-    </div>
-    <hr
-      className="jKIGsL" />
-    <div
-      className="ePRywc"
-      color="black">
-      <MockReactTextTruncate
-        line={2}
-        text="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
-        truncateText=" ..." />
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots DataChannel DataChannel.ControlInteger 1`] = `
+exports[`Storyshots DataChannel DataChannel.ControlNumber 1`] = `
 <div
   className="hPwCMI">
   <div
@@ -328,6 +268,66 @@ exports[`Storyshots DataChannel DataChannel.ControlSwitch 1`] = `
       checked={false}
       className="hBmCMm"
       onClick={[Function]} />
+  </div>
+  <div>
+    <h4
+      className="kqHMIM"
+      color="black">
+      Title
+    </h4>
+    <div
+      className="jyQfel"
+      color="grayBase">
+      <small
+        className="gAkaPt">
+        123125125125125
+      </small>
+    </div>
+    <hr
+      className="jKIGsL" />
+    <div
+      className="ePRywc"
+      color="black">
+      <MockReactTextTruncate
+        line={2}
+        text="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
+        truncateText=" ..." />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots DataChannel Fixed width 1`] = `
+<div
+  className="hVuYrW hPwCMI">
+  <div
+    className="fROLJM">
+    <a
+      href="">
+      Link
+    </a>
+  </div>
+  <div
+    className="dJSrbi">
+    <div
+      className="kdCvHd">
+      <input
+        className="QbwlJ"
+        kind="primary"
+        onChange={undefined}
+        type="number"
+        value={undefined} />
+      <div
+        className="dFpjFs">
+        Clear
+        <button
+          className="hhGxPY"
+          kind="primary"
+          onClick={[Function]}>
+          Ok
+        </button>
+      </div>
+    </div>
   </div>
   <div>
     <h4

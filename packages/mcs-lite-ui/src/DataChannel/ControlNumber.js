@@ -1,4 +1,4 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import withDataChannelCard from './withDataChannelCard';
 import Button from '../Button';
@@ -25,12 +25,10 @@ const BaseComponent = ({ value, onChange, onSubmit, ...otherProps }) =>
     </ButtonWrapper>
   </Container>;
 
-const ControlFloat = withDataChannelCard(BaseComponent, 'ControlFloat');
-
-// ControlFloat.propTypes = {
+// BaseComponent.propTypes = {
 //   value: PropTypes.number,
 //   onChange: PropTypes.func,
 //   onSubmit: PropTypes.func,
 // };
 
-export default ControlFloat;
+export default withDataChannelCard(BaseComponent, 'ControlNumber');

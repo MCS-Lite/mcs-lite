@@ -1,9 +1,7 @@
 import ControlSwitch from './ControlSwitch';
-import ControlInteger from './ControlInteger';
-import ControlFloat from './ControlFloat';
+import ControlNumber from './ControlNumber';
 
 export default {
   ControlSwitch,
-  ControlInteger,
-  ControlFloat,
+  ControlNumber,
 };
