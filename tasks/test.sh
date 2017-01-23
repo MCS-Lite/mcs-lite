@@ -8,5 +8,4 @@ npm run eslint
 ## Interface for each project
 lerna run lint
 lerna run test
-lerna run clean
 lerna run build
