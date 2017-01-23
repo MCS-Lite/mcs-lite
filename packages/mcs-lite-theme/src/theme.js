@@ -20,6 +20,7 @@ const base = {
   // textColor: gray.black,
   fontSize: '14px',
   lineHeight: 1.5,
+  inputHeight: '32px',
 };
 
 const fontSize = {

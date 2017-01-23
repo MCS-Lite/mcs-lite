@@ -1,54 +1,34 @@
-import React, { PropTypes } from 'react';
-import DataChannelCard from '../DataChannelCard';
+import React from 'react';
+import styled from 'styled-components';
+import withDataChannelCard from './withDataChannelCard';
 import Button from '../Button';
+import Input from '../Input';
 
-class ControlNumber extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      value: props.defaultDataPoint.vaue,
-    };
-  }
-  onClick = () => {
-    this.props.onChange(this.state.value);
-  }
+const Container = styled.div`
+  width: 100%;
+`;
 
-  onChange = (e) => {
-    this.setState({ value: e.target.value });
-  }
+const ButtonWrapper = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+`;
 
-  render() {
-    const { defaultDataPoint, step, ...otherProps } = this.props;
-    const { value } = this.state;
-    const { onChange, onClick } = this;
+const BaseComponent = ({ value, onChange, onSubmit, ...otherProps }) =>
+  <Container {...otherProps} >
+    <Input type="number" value={value} onChange={onChange} />
 
-    return (
-      <DataChannelCard
-        {...otherProps}
-        subtitle={defaultDataPoint.recordedAt}
-      >
-        <div>
-          <input type="number" value={value} onChange={onChange} step={step} />
-          <Button onClick={onClick}>Submit</Button>
-        </div>
-      </DataChannelCard>
-    );
-  }
-}
+    <ButtonWrapper>
+      Clear
+      <Button onClick={onSubmit}>Ok</Button>
+    </ButtonWrapper>
+  </Container>;
 
-ControlNumber.displayName = 'ControlNumber';
-ControlNumber.propTypes = {
-  defaultDataPoint: PropTypes.object,
-  onChange: PropTypes.func,
-  step: PropTypes.any.isRequired,
-};
+// BaseComponent.propTypes = {
+//   value: PropTypes.number,
+//   onChange: PropTypes.func,
+//   onSubmit: PropTypes.func,
+// };
 
-ControlNumber.defaultProps = {
-  defaultDataPoint: {
-    value: false,
-    recordedAt: '',
-  },
-  onChange: () => {},
-};
-
-export default ControlNumber;
+export default withDataChannelCard(BaseComponent, 'ControlNumber');

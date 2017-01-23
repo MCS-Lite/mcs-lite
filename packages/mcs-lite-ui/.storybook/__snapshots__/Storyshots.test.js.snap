@@ -31,7 +31,8 @@ exports[`Storyshots API [mcs-lite-theme] [JSON] theme 1`] = `
       \"base\": {
         \"bodyBackground\": \"#F1F2F7\",
         \"fontSize\": \"14px\",
-        \"lineHeight\": 1.5
+        \"lineHeight\": 1.5,
+        \"inputHeight\": \"32px\"
       },
       \"fontSize\": {
         \"small\": \"86%\",
@@ -97,7 +98,7 @@ exports[`Storyshots B Within <P> 1`] = `
 
 exports[`Storyshots Button API 1`] = `
 <button
-  className="kZUKef"
+  className="hhGxPY"
   kind="primary">
   Simple button
 </button>
@@ -105,7 +106,7 @@ exports[`Storyshots Button API 1`] = `
 
 exports[`Storyshots Button Overriding style 1`] = `
 <button
-  className="cGHGHW"
+  className="iVccwG"
   kind="primary"
   onClick={[Function]}>
   Overriding style
@@ -116,31 +117,31 @@ exports[`Storyshots Button With kind props 1`] = `
 <div
   className="epDjBm">
   <button
-    className="jcNvPR"
+    className="eKAgHO"
     kind="default"
     onClick={[Function]}>
     default
   </button>
   <button
-    className="kZUKef"
+    className="hhGxPY"
     kind="primary"
     onClick={[Function]}>
     primary
   </button>
   <button
-    className="bLDkry"
+    className="dIKOWb"
     kind="success"
     onClick={[Function]}>
     success
   </button>
   <button
-    className="RoXxk"
+    className="gMVhkr"
     kind="error"
     onClick={[Function]}>
     error
   </button>
   <button
-    className="geeLNp"
+    className="joofWL"
     kind="warning"
     onClick={[Function]}>
     warning
@@ -152,31 +153,31 @@ exports[`Storyshots Button With theme provider (Material) 1`] = `
 <div
   className="epDjBm">
   <button
-    className="kvvfAI"
+    className="cADtOQ"
     kind="default"
     onClick={[Function]}>
     default
   </button>
   <button
-    className="fxzMxK"
+    className="jfRLRd"
     kind="primary"
     onClick={[Function]}>
     primary
   </button>
   <button
-    className="gohZrY"
+    className="bXnLIP"
     kind="success"
     onClick={[Function]}>
     success
   </button>
   <button
-    className="jLrOaK"
+    className="kexEwl"
     kind="error"
     onClick={[Function]}>
     error
   </button>
   <button
-    className="dlxLVY"
+    className="iQTyOW"
     kind="warning"
     onClick={[Function]}>
     warning
@@ -191,10 +192,9 @@ exports[`Storyshots Card API 1`] = `
 </div>
 `;
 
-exports[`Storyshots DataChannel DataChannel.ControlFloat 1`] = `
+exports[`Storyshots DataChannel DataChannel.ControlNumber 1`] = `
 <div
-  className="hPwCMI"
-  onChange={[Function]}>
+  className="hPwCMI">
   <div
     className="fROLJM">
     <a
@@ -204,73 +204,24 @@ exports[`Storyshots DataChannel DataChannel.ControlFloat 1`] = `
   </div>
   <div
     className="dJSrbi">
-    <div>
+    <div
+      className="kdCvHd">
       <input
-        onChange={[Function]}
-        step="any"
+        className="QbwlJ"
+        kind="primary"
+        onChange={undefined}
         type="number"
         value={undefined} />
-      <button
-        className="kZUKef"
-        kind="primary"
-        onClick={[Function]}>
-        Submit
-      </button>
-    </div>
-  </div>
-  <div>
-    <h4
-      className="kqHMIM"
-      color="black">
-      Title
-    </h4>
-    <div
-      className="jyQfel"
-      color="grayBase">
-      <small
-        className="gAkaPt">
-        123125125125125
-      </small>
-    </div>
-    <hr
-      className="jKIGsL" />
-    <div
-      className="ePRywc"
-      color="black">
-      <MockReactTextTruncate
-        line={2}
-        text="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
-        truncateText=" ..." />
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots DataChannel DataChannel.ControlInteger 1`] = `
-<div
-  className="hPwCMI"
-  onChange={[Function]}>
-  <div
-    className="fROLJM">
-    <a
-      href="">
-      Link
-    </a>
-  </div>
-  <div
-    className="dJSrbi">
-    <div>
-      <input
-        onChange={[Function]}
-        step="1"
-        type="number"
-        value={undefined} />
-      <button
-        className="kZUKef"
-        kind="primary"
-        onClick={[Function]}>
-        Submit
-      </button>
+      <div
+        className="dFpjFs">
+        Clear
+        <button
+          className="hhGxPY"
+          kind="primary"
+          onClick={[Function]}>
+          Ok
+        </button>
+      </div>
     </div>
   </div>
   <div>
@@ -303,8 +254,7 @@ exports[`Storyshots DataChannel DataChannel.ControlInteger 1`] = `
 
 exports[`Storyshots DataChannel DataChannel.ControlSwitch 1`] = `
 <div
-  className="hPwCMI"
-  onChange={[Function]}>
+  className="hPwCMI">
   <div
     className="fROLJM">
     <a
@@ -318,6 +268,66 @@ exports[`Storyshots DataChannel DataChannel.ControlSwitch 1`] = `
       checked={false}
       className="hBmCMm"
       onClick={[Function]} />
+  </div>
+  <div>
+    <h4
+      className="kqHMIM"
+      color="black">
+      Title
+    </h4>
+    <div
+      className="jyQfel"
+      color="grayBase">
+      <small
+        className="gAkaPt">
+        123125125125125
+      </small>
+    </div>
+    <hr
+      className="jKIGsL" />
+    <div
+      className="ePRywc"
+      color="black">
+      <MockReactTextTruncate
+        line={2}
+        text="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
+        truncateText=" ..." />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots DataChannel Fixed width 1`] = `
+<div
+  className="hVuYrW hPwCMI">
+  <div
+    className="fROLJM">
+    <a
+      href="">
+      Link
+    </a>
+  </div>
+  <div
+    className="dJSrbi">
+    <div
+      className="kdCvHd">
+      <input
+        className="QbwlJ"
+        kind="primary"
+        onChange={undefined}
+        type="number"
+        value={undefined} />
+      <div
+        className="dFpjFs">
+        Clear
+        <button
+          className="hhGxPY"
+          kind="primary"
+          onClick={[Function]}>
+          Ok
+        </button>
+      </div>
+    </div>
   </div>
   <div>
     <h4
@@ -588,7 +598,7 @@ exports[`Storyshots Heading With level props 1`] = `
 
 exports[`Storyshots Input API 1`] = `
 <input
-  className="dhFqvS"
+  className="QbwlJ"
   kind="primary"
   placeholder="placeholder" />
 `;
@@ -597,23 +607,23 @@ exports[`Storyshots Input With kind props 1`] = `
 <div
   className="cZlPqe">
   <input
-    className="ftDMGG"
+    className="jcKvDH"
     kind="default"
     placeholder="default" />
   <input
-    className="dhFqvS"
+    className="QbwlJ"
     kind="primary"
     placeholder="primary" />
   <input
-    className="fYzSEL"
+    className="cQVsYe"
     kind="success"
     placeholder="success" />
   <input
-    className="bczKrL"
+    className="cCmFiG"
     kind="error"
     placeholder="error" />
   <input
-    className="lnUjqD"
+    className="ctBKec"
     kind="warning"
     placeholder="warning" />
 </div>
@@ -623,77 +633,77 @@ exports[`Storyshots Input With type props 1`] = `
 <div
   className="cZlPqe">
   <input
-    className="dhFqvS"
+    className="QbwlJ"
     kind="primary"
     placeholder="text"
     type="text" />
   <input
-    className="dhFqvS"
+    className="QbwlJ"
     kind="primary"
     placeholder="email"
     type="email" />
   <input
-    className="dhFqvS"
+    className="QbwlJ"
     kind="primary"
     placeholder="number"
     type="number" />
   <input
-    className="dhFqvS"
+    className="QbwlJ"
     kind="primary"
     placeholder="password"
     type="password" />
   <input
-    className="dhFqvS"
+    className="QbwlJ"
     kind="primary"
     placeholder="tel"
     type="tel" />
   <input
-    className="dhFqvS"
+    className="QbwlJ"
     kind="primary"
     placeholder="search"
     type="search" />
   <input
-    className="dhFqvS"
+    className="QbwlJ"
     kind="primary"
     placeholder="month"
     type="month" />
   <input
-    className="dhFqvS"
+    className="QbwlJ"
     kind="primary"
     placeholder="week"
     type="week" />
   <input
-    className="dhFqvS"
+    className="QbwlJ"
     kind="primary"
     placeholder="date"
     type="date" />
   <input
-    className="dhFqvS"
+    className="QbwlJ"
     kind="primary"
     placeholder="color"
     type="color" />
   <input
-    className="dhFqvS"
+    className="QbwlJ"
     kind="primary"
     placeholder="file"
     type="file" />
   <input
-    className="dhFqvS"
+    className="QbwlJ"
     kind="primary"
     placeholder="radio"
     type="radio" />
   <input
-    className="dhFqvS"
+    className="QbwlJ"
     kind="primary"
     placeholder="time"
     type="time" />
   <input
-    className="dhFqvS"
+    className="QbwlJ"
     kind="primary"
     placeholder="url"
     type="url" />
   <input
-    className="dhFqvS"
+    className="QbwlJ"
     kind="primary"
     placeholder="range"
     type="range" />
