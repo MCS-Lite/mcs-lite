@@ -30,6 +30,28 @@ storiesOf('DataChannel', module)
         header={<a href="">Link</a>}
         childrenProps={{
           onSubmit: action('ControlNumber onSubmit'),
+          onChange: action('ControlNumber onChange'),
+          onClear: action('ControlNumber onClear'),
+          placeholder: 'placeholder',
+          unit: '攝氏',
+        }}
+      />,
+    { inline: true },
+  )
+  .addWithInfo(
+    'DataChannel.ControlString',
+    '',
+    () =>
+      <DataChannel.ControlString
+        title="Title"
+        subtitle="123125125125125"
+        description="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
+        header={<a href="">Link</a>}
+        childrenProps={{
+          onSubmit: action('ControlString onSubmit'),
+          onChange: action('ControlString onChange'),
+          onClear: action('ControlString onClear'),
+          placeholder: 'placeholder',
         }}
       />,
     { inline: true },

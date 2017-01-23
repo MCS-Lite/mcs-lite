@@ -1,3 +1,92 @@
+exports[`Storyshots A API 1`] = `
+<a
+  className="DvAuM"
+  color="primary">
+  Link
+</a>
+`;
+
+exports[`Storyshots A Nested children with Heading 1`] = `
+<h1
+  className="fwDbfe"
+  color="black">
+  Heading Level 1 
+  <b
+    className="dbJQUp">
+    <a
+      className="DvAuM"
+      color="primary">
+      Link
+    </a>
+  </b>
+</h1>
+`;
+
+exports[`Storyshots A With color props 1`] = `
+<div>
+  <a
+    className="jLdAuJ"
+    color="black">
+    A link 
+    black
+  </a>
+  <a
+    className="kyNyjl"
+    color="grayBase">
+    A link 
+    grayBase
+  </a>
+  <a
+    className="ehnQkl"
+    color="grayDark">
+    A link 
+    grayDark
+  </a>
+  <a
+    className="gWZiGp"
+    color="grayLight">
+    A link 
+    grayLight
+  </a>
+  <a
+    className="dJsIUd"
+    color="white">
+    A link 
+    white
+  </a>
+  <a
+    className="gWZiGp"
+    color="default">
+    A link 
+    default
+  </a>
+  <a
+    className="DvAuM"
+    color="primary">
+    A link 
+    primary
+  </a>
+  <a
+    className="keSCqy"
+    color="success">
+    A link 
+    success
+  </a>
+  <a
+    className="gaOGFo"
+    color="error">
+    A link 
+    error
+  </a>
+  <a
+    className="kuEqBk"
+    color="warning">
+    A link 
+    warning
+  </a>
+</div>
+`;
+
 exports[`Storyshots API [mcs-lite-theme] [JSON] kind 1`] = `
 <div>
   <pre>
@@ -206,15 +295,102 @@ exports[`Storyshots DataChannel DataChannel.ControlNumber 1`] = `
     className="dJSrbi">
     <div
       className="kdCvHd">
-      <input
-        className="QbwlJ"
+      <div
+        className="jniDxR">
+        <p
+          className="fKBvcf"
+          color="grayBase">
+          攝氏
+        </p>
+        <input
+          className="dFmTJq"
+          kind="primary"
+          onChange={[Function]}
+          placeholder="placeholder"
+          type="number"
+          value={undefined} />
+      </div>
+      <div
+        className="kGGPNo">
+        <div
+          className="cqMgnG"
+          color="black">
+          <a
+            className="DvAuM"
+            color="primary"
+            onClick={[Function]}>
+            Clear
+          </a>
+        </div>
+        <button
+          className="hhGxPY"
+          kind="primary"
+          onClick={[Function]}>
+          Ok
+        </button>
+      </div>
+    </div>
+  </div>
+  <div>
+    <h4
+      className="kqHMIM"
+      color="black">
+      Title
+    </h4>
+    <div
+      className="jyQfel"
+      color="grayBase">
+      <small
+        className="gAkaPt">
+        123125125125125
+      </small>
+    </div>
+    <hr
+      className="jKIGsL" />
+    <div
+      className="ePRywc"
+      color="black">
+      <MockReactTextTruncate
+        line={2}
+        text="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
+        truncateText=" ..." />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots DataChannel DataChannel.ControlString 1`] = `
+<div
+  className="hPwCMI">
+  <div
+    className="fROLJM">
+    <a
+      href="">
+      Link
+    </a>
+  </div>
+  <div
+    className="dJSrbi">
+    <div
+      className="lkjDmd">
+      <textarea
+        className="XYvdH"
         kind="primary"
-        onChange={undefined}
-        type="number"
+        onChange={[Function]}
+        placeholder="placeholder"
         value={undefined} />
       <div
-        className="dFpjFs">
-        Clear
+        className="hMOXMn">
+        <div
+          className="cqMgnG"
+          color="black">
+          <a
+            className="DvAuM"
+            color="primary"
+            onClick={[Function]}>
+            Clear
+          </a>
+        </div>
         <button
           className="hhGxPY"
           kind="primary"
@@ -266,7 +442,7 @@ exports[`Storyshots DataChannel DataChannel.ControlSwitch 1`] = `
     className="dJSrbi">
     <div
       checked={false}
-      className="hBmCMm"
+      className="hKkhHI"
       onClick={[Function]} />
   </div>
   <div>
@@ -311,15 +487,28 @@ exports[`Storyshots DataChannel Fixed width 1`] = `
     className="dJSrbi">
     <div
       className="kdCvHd">
-      <input
-        className="QbwlJ"
-        kind="primary"
-        onChange={undefined}
-        type="number"
-        value={undefined} />
       <div
-        className="dFpjFs">
-        Clear
+        className="jniDxR">
+        <input
+          className="dFmTJq"
+          kind="primary"
+          onChange={undefined}
+          placeholder={undefined}
+          type="number"
+          value={undefined} />
+      </div>
+      <div
+        className="kGGPNo">
+        <div
+          className="cqMgnG"
+          color="black">
+          <a
+            className="DvAuM"
+            color="primary"
+            onClick={undefined}>
+            Clear
+          </a>
+        </div>
         <button
           className="hhGxPY"
           kind="primary"
@@ -410,7 +599,7 @@ exports[`Storyshots DataChannelCard Fixed width 1`] = `
     className="dJSrbi">
     <div
       checked={false}
-      className="hBmCMm" />
+      className="hKkhHI" />
   </div>
   <div>
     <h4
@@ -865,24 +1054,24 @@ exports[`Storyshots Switch API 1`] = `
 <div>
   <div
     checked={false}
-    className="hBmCMm" />
+    className="hKkhHI" />
   <div
     checked={true}
-    className="ihmkZm" />
+    className="gJGPrQ" />
 </div>
 `;
 
 exports[`Storyshots Switch Overriding style 1`] = `
 <div
   checked={false}
-  className="YBIqr"
+  className="mzyXg"
   onClick={[Function]} />
 `;
 
 exports[`Storyshots Switch Stateful switch 1`] = `
 <div
   checked={false}
-  className="hBmCMm"
+  className="hKkhHI"
   onClick={[Function]} />
 `;
 
