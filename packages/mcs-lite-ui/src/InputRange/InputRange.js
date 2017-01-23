@@ -1,6 +1,8 @@
-// @flow
-import React from 'react';
+import React, { PropTypes } from 'react';
 import styled from 'styled-components';
+import { darken } from 'mcs-lite-theme';
+
+const lighten = darken(-0.5);
 
 const InputRange = styled(props => <input type="range" {...props} />)`
 
@@ -60,8 +62,8 @@ const InputRange = styled(props => <input type="range" {...props} />)`
     box-shadow:
       1px 1px 4px 0 rgba(0, 0, 0, 0.25),
       inset 0 1px 3px 0 rgba(255, 255, 255, 0.3),
-      inset 0 -2px 2px 0 #00A1DE,
-      inset 0 0 0 3px #79D5F8;
+      inset 0 -2px 2px 0 ${props => props.theme.color[props.kind]},
+      inset 0 0 0 3px ${props => lighten(props.theme.color[props.kind])};
   }
 
   &::-moz-range-thumb {
@@ -76,8 +78,8 @@ const InputRange = styled(props => <input type="range" {...props} />)`
     box-shadow:
       1px 1px 4px 0 rgba(0, 0, 0, 0.25),
       inset 0 1px 3px 0 rgba(255, 255, 255, 0.3),
-      inset 0 -2px 2px 0 #00A1DE,
-      inset 0 0 0 3px #79D5F8;
+      inset 0 -2px 2px 0 ${props => props.theme.color[props.kind]},
+      inset 0 0 0 3px ${props => lighten(props.theme.color[props.kind])};
   }
 
   &::-ms-thumb {
@@ -91,8 +93,8 @@ const InputRange = styled(props => <input type="range" {...props} />)`
     box-shadow:
       1px 1px 4px 0 rgba(0, 0, 0, 0.25),
       inset 0 1px 3px 0 rgba(255, 255, 255, 0.3),
-      inset 0 -2px 2px 0 #00A1DE,
-      inset 0 0 0 3px #79D5F8;
+      inset 0 -2px 2px 0 ${props => props.theme.color[props.kind]},
+      inset 0 0 0 3px ${props => lighten(props.theme.color[props.kind])};
   }
 
   &::-webkit-slider-thumb:hover {
@@ -111,5 +113,11 @@ const InputRange = styled(props => <input type="range" {...props} />)`
 `;
 
 InputRange.displayName = 'InputRange';
+InputRange.propTypes = {
+  kind: PropTypes.string,
+};
 
+InputRange.defaultProps = {
+  kind: 'primary',
+};
 export default InputRange;
