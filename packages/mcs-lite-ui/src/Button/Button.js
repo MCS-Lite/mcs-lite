@@ -20,6 +20,8 @@ const Button = styled.button`
   cursor: pointer;
   min-width: 80px;
   box-sizing: border-box;
+  padding: 6px 10px;
+  min-height: ${props => props.theme.base.inputHeight};
   transition: background-color cubic-bezier(0.47, 0, 0.75, 0.72) 0.3s;
   font-size: ${R.path(['theme', 'fontSize', 'p'])};
   color: ${mapColorByKind};

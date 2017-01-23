@@ -9,15 +9,12 @@ storiesOf('DataChannel', module)
     () =>
       <DataChannel.ControlSwitch
         title="Title"
+        subtitle="123125125125125"
         description="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
         header={<a href="">Link</a>}
-        onChange={action('onChange')}
-        // value={false}
-        defaultDataPoint={{
-          value: true,
-          recordedAt: '123125125125125',
+        childrenProps={{
+          onClick: action('ControlSwitch onSubmit'),
         }}
-        // socketConfig="/devices/deviceId/dataChannels/dataChnId"
       />,
     { inline: true },
   )
@@ -27,15 +24,12 @@ storiesOf('DataChannel', module)
     () =>
       <DataChannel.ControlInteger
         title="Title"
+        subtitle="123125125125125"
         description="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
         header={<a href="">Link</a>}
-        onChange={action('onChange')}
-        // value={false}
-        defaultDataPoint={{
-          value: true,
-          recordedAt: '123125125125125',
+        childrenProps={{
+          onSubmit: action('ControlInteger onSubmit'),
         }}
-        // socketConfig="/devices/deviceId/dataChannels/dataChnId"
       />,
     { inline: true },
   )
@@ -46,15 +40,12 @@ storiesOf('DataChannel', module)
     () =>
       <DataChannel.ControlFloat
         title="Title"
+        subtitle="123125125125125"
         description="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
         header={<a href="">Link</a>}
-        onChange={action('onChange')}
-        // value={false}
-        defaultDataPoint={{
-          value: true,
-          recordedAt: '123125125125125',
+        childrenProps={{
+          onSubmit: action('ControlFloat onSubmit'),
         }}
-        // socketConfig="/devices/deviceId/dataChannels/dataChnId"
       />,
     { inline: true },
   );

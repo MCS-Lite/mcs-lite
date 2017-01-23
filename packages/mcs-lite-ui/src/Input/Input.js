@@ -11,8 +11,8 @@ const Input = styled.input`
   border-style: solid;
   border-radius: 3px;
   outline: 0;
-  height: 32px;
   padding: 0 10px;
+  min-height: ${props => props.theme.base.inputHeight};
   color: ${props => props.theme.color.black};
   border-color: ${props => props.theme.color.grayDark};
   font-size: ${props => props.theme.fontSize.p};
