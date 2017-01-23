@@ -700,6 +700,12 @@ exports[`Storyshots Input With type props 1`] = `
 </div>
 `;
 
+exports[`Storyshots InputRange API 1`] = `
+<input
+  className="hpSTGw"
+  type="range" />
+`;
+
 exports[`Storyshots P API 1`] = `
 <p
   className="cqMgnG"
