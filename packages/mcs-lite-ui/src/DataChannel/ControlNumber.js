@@ -14,12 +14,36 @@ const ButtonWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   margin-top: 10px;
 `;
 
-const BaseComponent = ({ value, onChange, onSubmit, onClear, placeholder, ...otherProps }) =>
+const InputWrapper = styled.div`
+  position: relative;
+`;
+
+const StyledInput = styled(Input)`
+  padding-right: 40px;
+`;
+
+const Unixtype = styled(P)`
+  position: absolute;
+  width: 100%;
+  padding-right: 10px;
+  box-sizing: border-box;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: ${props => props.theme.base.inputHeight};
+`;
+
+const BaseComponent = ({ value, onChange, onSubmit, onClear, placeholder, unit, ...otherProps }) =>
   <Container {...otherProps} >
-    <Input type="number" value={value} onChange={onChange} placeholder={placeholder} />
+    <InputWrapper>
+      {unit && <Unixtype color="grayBase">{unit}</Unixtype>}
+      <StyledInput type="number" value={value} onChange={onChange} placeholder={placeholder} />
+    </InputWrapper>
 
     <ButtonWrapper>
       <P><A onClick={onClear}>Clear</A></P>

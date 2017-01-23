@@ -33,6 +33,7 @@ storiesOf('DataChannel', module)
           onChange: action('ControlNumber onChange'),
           onClear: action('ControlNumber onClear'),
           placeholder: 'placeholder',
+          unit: '攝氏',
         }}
       />,
     { inline: true },
