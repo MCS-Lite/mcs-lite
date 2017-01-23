@@ -30,6 +30,9 @@ storiesOf('DataChannel', module)
         header={<a href="">Link</a>}
         childrenProps={{
           onSubmit: action('ControlNumber onSubmit'),
+          onChange: action('ControlNumber onChange'),
+          onClear: action('ControlNumber onClear'),
+          placeholder: 'placeholder',
         }}
       />,
     { inline: true },
