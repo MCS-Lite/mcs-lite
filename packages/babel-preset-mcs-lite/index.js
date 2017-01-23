@@ -7,16 +7,6 @@ module.exports = {
   plugins: [
     require.resolve('babel-plugin-add-module-exports'),
 
-    // minify styled-components css
-    [
-      require.resolve('babel-plugin-styled-components'),
-      {
-        ssr: false,
-        displayName: false,
-        transpileTemplateLiterals: false,
-      },
-    ],
-
     [
       require.resolve('babel-plugin-lodash'),
       {
@@ -27,4 +17,20 @@ module.exports = {
       },
     ],
   ],
+
+  env: {
+    production: {
+      plugins: [
+        // minify styled-components css
+        [
+          require.resolve('babel-plugin-styled-components'),
+          {
+            ssr: false,
+            displayName: false,
+            transpileTemplateLiterals: false,
+          },
+        ],
+      ],
+    },
+  },
 };
