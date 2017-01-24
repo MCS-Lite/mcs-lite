@@ -7,10 +7,9 @@ import Small from '../Small';
 import P from '../P';
 
 const setHeightByLine = line => props => `${
-  Number(props.theme.fontSize.p.split('rem')[0]) *
-  Number(props.theme.base.fontSize.split('px')[0]) *
-  props.theme.base.lineHeight *
-  line
+  parseFloat(props.theme.fontSize.p, 10) *
+  parseFloat(props.theme.base.fontSize, 10) *
+  props.theme.base.lineHeight * line
 }px`;
 
 const Header = styled.div`

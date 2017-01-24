@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
 import styled from 'styled-components';
 import withDataChannelCard from './withDataChannelCard';
 import Button from '../Button';
@@ -35,10 +35,13 @@ const BaseComponent = ({ value, onChange, onSubmit, onClear, placeholder, unit, 
     </ButtonWrapper>
   </Container>;
 
-// BaseComponent.propTypes = {
-//   value: PropTypes.number,
-//   onChange: PropTypes.func,
-//   onSubmit: PropTypes.func,
-// };
+BaseComponent.propTypes = {
+  value: PropTypes.number,
+  onChange: PropTypes.func,
+  onSubmit: PropTypes.func,
+  onClear: PropTypes.func,
+  placeholder: PropTypes.string,
+  unit: PropTypes.string,
+};
 
 export default withDataChannelCard(BaseComponent, 'ControlNumber');
