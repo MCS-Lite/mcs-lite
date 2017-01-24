@@ -39,6 +39,7 @@ const Hr = styled.hr`
 `;
 
 const Wrapper = styled(Card)`
+  height: 300px;
   padding: 10px 20px;
   display: flex;
   flex-direction: column;
