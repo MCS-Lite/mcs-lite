@@ -4,7 +4,7 @@ import { storiesOf } from '@kadira/storybook';
 import { theme } from 'mcs-lite-theme';
 import Heading from '.';
 
-const remToPx = rem => `${Number(theme.base.fontSize.split('px')[0]) * Number(rem.split('rem')[0])}px`;
+const remToPx = rem => `${parseFloat(theme.base.fontSize, 10) * parseFloat(rem, 10)}px`;
 
 storiesOf('Heading', module)
   .addWithInfo(

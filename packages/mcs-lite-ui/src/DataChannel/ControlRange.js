@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
 import styled from 'styled-components';
 import R from 'ramda';
 import withDataChannelCard from './withDataChannelCard';
@@ -15,7 +15,14 @@ const Container = styled.div`
 
 const LabelWrapper = styled.div`
   display: flex;
-  justify-content: space-between;
+
+  > *:first-child {
+    align-items: ${props => props.labels.length <= 2 ? 'flex-start' : 'center'};
+  }
+
+  > *:last-child {
+    align-items: ${props => props.labels.length <= 2 ? 'flex-end' : 'center'};
+  }
 `;
 
 const LabelItem = styled.div`
@@ -25,7 +32,6 @@ const LabelItem = styled.div`
   margin: 0 4px;
   flex-grow: 1;
   flex-basis: 0;
-  min-width: 0;
   overflow: hidden;
 
   &::before {
@@ -39,43 +45,53 @@ const LabelItem = styled.div`
   }
 `;
 
-const CurrentValue = styled(P)`
-  display: flex;
+const ValueWrapper = styled(P)`
   margin-bottom: 15px;
 `;
 
-const InputWrapper = styled.div`
-  padding: 0 ${props => `${(100 / props.labels.length / 2) - 3}%`};
+const Value = styled(P)`
+  display: inline-block;
 `;
 
-const BaseComponent = ({ value, onChange, labels, valueMapper, ...otherProps }) => {
+const InputWrapper = styled.div`
+  padding: 0 ${props => `${props.labels.length <= 2 ? 0 : (100 / props.labels.length / 2) - 3}%`};
+`;
+
+const BaseComponent = ({ value, onChange, labels, valueMapper, children, ...otherProps }) => {
   const min = isNumber(labels[0]) ? labels[0] : 0;
   const max = isNumber(labels[1]) ? labels[1] : labels.length - 1;
 
   return (
     <Container {...otherProps} >
-      <LabelWrapper>
+      <LabelWrapper labels={labels}>
         {labels.map(e => <LabelItem key={e}><P color="grayBase">{e}</P></LabelItem>)}
       </LabelWrapper>
 
       <InputWrapper labels={labels}>
-        <CurrentValue color="grayBase">Current value:&nbsp;
-          <P color="primary">{valueMapper(value)}</P>
-        </CurrentValue>
+        {children}
+
+        <ValueWrapper color="grayBase">Current value:&nbsp;
+          <Value color="primary">{valueMapper(value)}</Value>
+        </ValueWrapper>
         <InputRange min={min} max={max} step={1} value={value} onChange={onChange} />
       </InputWrapper>
     </Container>
   );
 };
 
-// BaseComponent.propTypes = {
-//   value: PropTypes.number,
-//   onChange: PropTypes.func,
-//   onSubmit: PropTypes.func,
-// };
+BaseComponent.propTypes = {
+  value: PropTypes.number,
+  onChange: PropTypes.func,
+  labels: PropTypes.array.isRequired,
+  valueMapper: PropTypes.func, // index: number => string
+  children: PropTypes.any,
+};
 
 BaseComponent.defaultProps = {
+  value: undefined,
+  onChange: undefined,
   valueMapper: R.identity,
+  children: undefined,
 };
 
 export default withDataChannelCard(BaseComponent, 'ControlRange');

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
 import styled from 'styled-components';
 import withDataChannelCard from './withDataChannelCard';
 import Button from '../Button';
@@ -20,6 +20,7 @@ const ButtonWrapper = styled.div`
   flex-wrap: wrap;
   margin-top: 10px;
   margin-bottom: 5px;
+  flex-shrink: 0;
 `;
 
 const StyledTextarea = styled(Textarea)`
@@ -37,10 +38,20 @@ const BaseComponent = ({ value, onChange, onSubmit, onClear, placeholder, ...oth
     </ButtonWrapper>
   </Container>;
 
-// BaseComponent.propTypes = {
-//   value: PropTypes.number,
-//   onChange: PropTypes.func,
-//   onSubmit: PropTypes.func,
-// };
+BaseComponent.propTypes = {
+  value: PropTypes.number,
+  onChange: PropTypes.func,
+  onSubmit: PropTypes.func,
+  onClear: PropTypes.func,
+  placeholder: PropTypes.string,
+};
+
+BaseComponent.defaultProps = {
+  value: undefined,
+  onChange: undefined,
+  onSubmit: undefined,
+  onClear: undefined,
+  placeholder: undefined,
+};
 
 export default withDataChannelCard(BaseComponent, 'ControlString');

@@ -6,6 +6,12 @@ import Heading from '../Heading';
 import Small from '../Small';
 import P from '../P';
 
+const setHeightByLine = line => props => `${
+  parseFloat(props.theme.fontSize.p, 10) *
+  parseFloat(props.theme.base.fontSize, 10) *
+  props.theme.base.lineHeight * line
+}px`;
+
 const Header = styled.div`
   flex-basis: 24px;
   align-items: center;
@@ -23,16 +29,17 @@ const Body = styled.div`
 `;
 
 const Description = styled(P)`
-  min-height: 42px;
+  height: ${setHeightByLine(2)};
 `;
 
 const Hr = styled.hr`
   border: 0;
   border-top: 1px solid ${props => props.theme.color.grayDark};
-  margin: 2px 0;
+  margin: 5px 0;
 `;
 
 const Wrapper = styled(Card)`
+  height: 300px;
   padding: 10px 20px;
   display: flex;
   flex-direction: column;

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
 import styled from 'styled-components';
 import withDataChannelCard from './withDataChannelCard';
 import Button from '../Button';
@@ -18,32 +18,16 @@ const ButtonWrapper = styled.div`
   margin-top: 10px;
 `;
 
-const InputWrapper = styled.div`
-  position: relative;
-`;
-
-const StyledInput = styled(Input)`
-  padding-right: 40px;
-`;
-
 const Unixtype = styled(P)`
-  position: absolute;
-  width: 100%;
-  padding-right: 10px;
-  box-sizing: border-box;
-  pointer-events: none;
+  margin-bottom: 5px;
   display: flex;
-  align-items: center;
   justify-content: flex-end;
-  height: ${props => props.theme.base.inputHeight};
 `;
 
 const BaseComponent = ({ value, onChange, onSubmit, onClear, placeholder, unit, ...otherProps }) =>
   <Container {...otherProps} >
-    <InputWrapper>
-      {unit && <Unixtype color="grayBase">{unit}</Unixtype>}
-      <StyledInput type="number" value={value} onChange={onChange} placeholder={placeholder} />
-    </InputWrapper>
+    {unit && <Unixtype color="grayBase">單位：{unit}</Unixtype>}
+    <Input type="number" value={value} onChange={onChange} placeholder={placeholder} />
 
     <ButtonWrapper>
       <P><A onClick={onClear}>Clear</A></P>
@@ -51,10 +35,22 @@ const BaseComponent = ({ value, onChange, onSubmit, onClear, placeholder, unit, 
     </ButtonWrapper>
   </Container>;
 
-// BaseComponent.propTypes = {
-//   value: PropTypes.number,
-//   onChange: PropTypes.func,
-//   onSubmit: PropTypes.func,
-// };
+BaseComponent.propTypes = {
+  value: PropTypes.number,
+  onChange: PropTypes.func,
+  onSubmit: PropTypes.func,
+  onClear: PropTypes.func,
+  placeholder: PropTypes.string,
+  unit: PropTypes.string,
+};
+
+BaseComponent.defaultProps = {
+  value: undefined,
+  onChange: undefined,
+  onSubmit: undefined,
+  onClear: undefined,
+  placeholder: undefined,
+  unit: undefined,
+};
 
 export default withDataChannelCard(BaseComponent, 'ControlNumber');

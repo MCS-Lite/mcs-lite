@@ -9,11 +9,11 @@ const withDataChannelCard = (BaseComponent, displayName) => {
 
   WrapperComponent.displayName = displayName || `withDataChannelCard(${BaseComponent.displayName})`;
   WrapperComponent.propTypes = {
-    childrenProps: PropTypes.any,
+    childrenProps: PropTypes.shape(BaseComponent.propTypes),
   };
 
   WrapperComponent.defaultProps = {
-    childrenProps: {},
+    childrenProps: BaseComponent.defaultProps,
   };
 
   return WrapperComponent;
