@@ -196,10 +196,10 @@ storiesOf('DataChannel', module)
   )
   .addWithInfo(
     'Fixed width',
-    '',
+    '280px for MCS',
     () => {
-      const StyledComponent = styled(DataChannel.ControlNumber)`
-        width: 300px;
+      const StyledComponent = styled(DataChannel.ControlSwitch)`
+        width: 280px;
       `;
 
       return (
