@@ -18,7 +18,8 @@
     "lint": "npm run stylelint && npm run flow"
   },
   "stylelint": {
-    "extends": "stylelint-config-mcs-lite"
+    "extends": "stylelint-config-mcs-lite",
+    "ignoreFiles": "**/*.example.js"
   },
   "jest": {
     "setupFiles": [
