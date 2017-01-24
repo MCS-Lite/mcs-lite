@@ -284,9 +284,9 @@ exports[`Storyshots Card API 1`] = `
 
 exports[`Storyshots DataChannel ControlRange - Category, GPIO and Analog 1`] = `
 <div
-  className="wtHIP">
+  className="bnxHrL">
   <div
-    className="hPwCMI">
+    className="cVdXxp">
     <div
       className="fROLJM">
       <a
@@ -299,9 +299,9 @@ exports[`Storyshots DataChannel ControlRange - Category, GPIO and Analog 1`] = `
       <div
         className="ciDLcE">
         <div
-          className="dhGIaz">
+          className="bXqjbv">
           <div
-            className="gboopT">
+            className="kRwEkq">
             <p
               className="jyQfel"
               color="grayBase">
@@ -309,7 +309,7 @@ exports[`Storyshots DataChannel ControlRange - Category, GPIO and Analog 1`] = `
             </p>
           </div>
           <div
-            className="gboopT">
+            className="kRwEkq">
             <p
               className="jyQfel"
               color="grayBase">
@@ -317,7 +317,7 @@ exports[`Storyshots DataChannel ControlRange - Category, GPIO and Analog 1`] = `
             </p>
           </div>
           <div
-            className="gboopT">
+            className="kRwEkq">
             <p
               className="jyQfel"
               color="grayBase">
@@ -325,7 +325,7 @@ exports[`Storyshots DataChannel ControlRange - Category, GPIO and Analog 1`] = `
             </p>
           </div>
           <div
-            className="gboopT">
+            className="kRwEkq">
             <p
               className="jyQfel"
               color="grayBase">
@@ -333,7 +333,7 @@ exports[`Storyshots DataChannel ControlRange - Category, GPIO and Analog 1`] = `
             </p>
           </div>
           <div
-            className="gboopT">
+            className="kRwEkq">
             <p
               className="jyQfel"
               color="grayBase">
@@ -376,7 +376,7 @@ exports[`Storyshots DataChannel ControlRange - Category, GPIO and Analog 1`] = `
         color="grayBase">
         <small
           className="gPtzLl">
-          123125125125125
+          Category
         </small>
       </div>
       <hr
@@ -392,7 +392,7 @@ exports[`Storyshots DataChannel ControlRange - Category, GPIO and Analog 1`] = `
     </div>
   </div>
   <div
-    className="hPwCMI">
+    className="cVdXxp">
     <div
       className="fROLJM">
       <a
@@ -405,9 +405,9 @@ exports[`Storyshots DataChannel ControlRange - Category, GPIO and Analog 1`] = `
       <div
         className="ciDLcE">
         <div
-          className="dhGIaz">
+          className="dndiqt">
           <div
-            className="gboopT">
+            className="kRwEkq">
             <p
               className="jyQfel"
               color="grayBase">
@@ -415,7 +415,7 @@ exports[`Storyshots DataChannel ControlRange - Category, GPIO and Analog 1`] = `
             </p>
           </div>
           <div
-            className="gboopT">
+            className="kRwEkq">
             <p
               className="jyQfel"
               color="grayBase">
@@ -424,7 +424,7 @@ exports[`Storyshots DataChannel ControlRange - Category, GPIO and Analog 1`] = `
           </div>
         </div>
         <div
-          className="kiMUJg">
+          className="glLEWf">
           <div
             className="chvbqM"
             color="grayBase">
@@ -451,14 +451,14 @@ exports[`Storyshots DataChannel ControlRange - Category, GPIO and Analog 1`] = `
       <h4
         className="ezDjUV"
         color="black">
-        Title
+        GPIO
       </h4>
       <div
         className="jyQfel"
         color="grayBase">
         <small
           className="gPtzLl">
-          GPIO
+          123125125125125
         </small>
       </div>
       <hr
@@ -474,7 +474,7 @@ exports[`Storyshots DataChannel ControlRange - Category, GPIO and Analog 1`] = `
     </div>
   </div>
   <div
-    className="hPwCMI">
+    className="cVdXxp">
     <div
       className="fROLJM">
       <a
@@ -487,9 +487,9 @@ exports[`Storyshots DataChannel ControlRange - Category, GPIO and Analog 1`] = `
       <div
         className="ciDLcE">
         <div
-          className="dhGIaz">
+          className="dndiqt">
           <div
-            className="gboopT">
+            className="kRwEkq">
             <div
               className="jyQfel"
               color="grayBase">
@@ -497,7 +497,7 @@ exports[`Storyshots DataChannel ControlRange - Category, GPIO and Analog 1`] = `
             </div>
           </div>
           <div
-            className="gboopT">
+            className="kRwEkq">
             <div
               className="jyQfel"
               color="grayBase">
@@ -506,7 +506,7 @@ exports[`Storyshots DataChannel ControlRange - Category, GPIO and Analog 1`] = `
           </div>
         </div>
         <div
-          className="kiMUJg">
+          className="glLEWf">
           <div
             className="chvbqM"
             color="grayBase">
@@ -533,7 +533,7 @@ exports[`Storyshots DataChannel ControlRange - Category, GPIO and Analog 1`] = `
       <h4
         className="ezDjUV"
         color="black">
-        Title
+        Analog
       </h4>
       <div
         className="jyQfel"
@@ -558,9 +558,9 @@ exports[`Storyshots DataChannel ControlRange - Category, GPIO and Analog 1`] = `
 </div>
 `;
 
-exports[`Storyshots DataChannel ControlRange - Stateful PPAP 1`] = `
+exports[`Storyshots DataChannel ControlRange - PWM 1`] = `
 <div
-  className="hPwCMI">
+  className="cVdXxp">
   <div
     className="fROLJM">
     <a
@@ -573,9 +573,117 @@ exports[`Storyshots DataChannel ControlRange - Stateful PPAP 1`] = `
     <div
       className="ciDLcE">
       <div
-        className="dhGIaz">
+        className="dndiqt">
         <div
-          className="gboopT">
+          className="kRwEkq">
+          <div
+            className="jyQfel"
+            color="grayBase">
+            0
+          </div>
+        </div>
+        <div
+          className="kRwEkq">
+          <div
+            className="jyQfel"
+            color="grayBase">
+            100
+          </div>
+        </div>
+      </div>
+      <div
+        className="glLEWf">
+        <div
+          className="korPeA">
+          <label
+            htmlFor="input">
+            <p
+              className="jyQfel"
+              color="grayBase">
+              Period
+            </p>
+          </label>
+          <div
+            className="fystPB">
+            <input
+              className="jXdcCC"
+              id="input"
+              kind="primary"
+              placeholder="Integer only"
+              type="number" />
+            <button
+              className="hhGxPY"
+              kind="primary">
+              OK
+            </button>
+          </div>
+        </div>
+        <div
+          className="chvbqM"
+          color="grayBase">
+          Current value: 
+          <div
+            className="eBMqlM"
+            color="primary" />
+        </div>
+        <input
+          className="hdhnFx"
+          kind="primary"
+          max={100}
+          min={0}
+          onChange={[Function]}
+          step={1}
+          type="range"
+          value={undefined} />
+      </div>
+    </div>
+  </div>
+  <div>
+    <h4
+      className="ezDjUV"
+      color="black">
+      ControlPWM
+    </h4>
+    <div
+      className="jyQfel"
+      color="grayBase">
+      <small
+        className="gPtzLl">
+        123125125125125
+      </small>
+    </div>
+    <hr
+      className="grCtyw" />
+    <div
+      className="bMkgFU"
+      color="black">
+      <MockReactTextTruncate
+        line={2}
+        text="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
+        truncateText=" ..." />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots DataChannel ControlRange - Stateful PPAP 1`] = `
+<div
+  className="cVdXxp">
+  <div
+    className="fROLJM">
+    <a
+      href="">
+      Link
+    </a>
+  </div>
+  <div
+    className="dJSrbi">
+    <div
+      className="ciDLcE">
+      <div
+        className="bXqjbv">
+        <div
+          className="kRwEkq">
           <p
             className="jyQfel"
             color="grayBase">
@@ -583,7 +691,7 @@ exports[`Storyshots DataChannel ControlRange - Stateful PPAP 1`] = `
           </p>
         </div>
         <div
-          className="gboopT">
+          className="kRwEkq">
           <p
             className="jyQfel"
             color="grayBase">
@@ -591,7 +699,7 @@ exports[`Storyshots DataChannel ControlRange - Stateful PPAP 1`] = `
           </p>
         </div>
         <div
-          className="gboopT">
+          className="kRwEkq">
           <p
             className="jyQfel"
             color="grayBase">
@@ -653,7 +761,7 @@ exports[`Storyshots DataChannel ControlRange - Stateful PPAP 1`] = `
 
 exports[`Storyshots DataChannel ControlRange - Stateful number 1`] = `
 <div
-  className="hPwCMI">
+  className="cVdXxp">
   <div
     className="fROLJM">
     <a
@@ -666,9 +774,9 @@ exports[`Storyshots DataChannel ControlRange - Stateful number 1`] = `
     <div
       className="ciDLcE">
       <div
-        className="dhGIaz">
+        className="dndiqt">
         <div
-          className="gboopT">
+          className="kRwEkq">
           <div
             className="jyQfel"
             color="grayBase">
@@ -676,7 +784,7 @@ exports[`Storyshots DataChannel ControlRange - Stateful number 1`] = `
           </div>
         </div>
         <div
-          className="gboopT">
+          className="kRwEkq">
           <div
             className="jyQfel"
             color="grayBase">
@@ -685,7 +793,7 @@ exports[`Storyshots DataChannel ControlRange - Stateful number 1`] = `
         </div>
       </div>
       <div
-        className="kiMUJg">
+        className="glLEWf">
         <div
           className="chvbqM"
           color="grayBase">
@@ -738,7 +846,7 @@ exports[`Storyshots DataChannel ControlRange - Stateful number 1`] = `
 
 exports[`Storyshots DataChannel DataChannel.ControlNumber 1`] = `
 <div
-  className="hPwCMI">
+  className="cVdXxp">
   <div
     className="fROLJM">
     <a
@@ -814,7 +922,7 @@ exports[`Storyshots DataChannel DataChannel.ControlNumber 1`] = `
 
 exports[`Storyshots DataChannel DataChannel.ControlRange 1`] = `
 <div
-  className="hPwCMI">
+  className="cVdXxp">
   <div
     className="fROLJM">
     <a
@@ -827,9 +935,9 @@ exports[`Storyshots DataChannel DataChannel.ControlRange 1`] = `
     <div
       className="ciDLcE">
       <div
-        className="dhGIaz">
+        className="bXqjbv">
         <div
-          className="gboopT">
+          className="kRwEkq">
           <p
             className="jyQfel"
             color="grayBase">
@@ -837,7 +945,7 @@ exports[`Storyshots DataChannel DataChannel.ControlRange 1`] = `
           </p>
         </div>
         <div
-          className="gboopT">
+          className="kRwEkq">
           <p
             className="jyQfel"
             color="grayBase">
@@ -845,7 +953,7 @@ exports[`Storyshots DataChannel DataChannel.ControlRange 1`] = `
           </p>
         </div>
         <div
-          className="gboopT">
+          className="kRwEkq">
           <p
             className="jyQfel"
             color="grayBase">
@@ -853,7 +961,7 @@ exports[`Storyshots DataChannel DataChannel.ControlRange 1`] = `
           </p>
         </div>
         <div
-          className="gboopT">
+          className="kRwEkq">
           <p
             className="jyQfel"
             color="grayBase">
@@ -861,7 +969,7 @@ exports[`Storyshots DataChannel DataChannel.ControlRange 1`] = `
           </p>
         </div>
         <div
-          className="gboopT">
+          className="kRwEkq">
           <p
             className="jyQfel"
             color="grayBase">
@@ -921,7 +1029,7 @@ exports[`Storyshots DataChannel DataChannel.ControlRange 1`] = `
 
 exports[`Storyshots DataChannel DataChannel.ControlString 1`] = `
 <div
-  className="hPwCMI">
+  className="cVdXxp">
   <div
     className="fROLJM">
     <a
@@ -940,7 +1048,7 @@ exports[`Storyshots DataChannel DataChannel.ControlString 1`] = `
         placeholder="placeholder"
         value={undefined} />
       <div
-        className="hMOXMn">
+        className="cMqWVR">
         <div
           className="cqMgnG"
           color="black">
@@ -990,7 +1098,7 @@ exports[`Storyshots DataChannel DataChannel.ControlString 1`] = `
 
 exports[`Storyshots DataChannel DataChannel.ControlSwitch 1`] = `
 <div
-  className="hPwCMI">
+  className="cVdXxp">
   <div
     className="fROLJM">
     <a
@@ -1035,7 +1143,7 @@ exports[`Storyshots DataChannel DataChannel.ControlSwitch 1`] = `
 
 exports[`Storyshots DataChannel Fixed width 1`] = `
 <div
-  className="jwFuaE hPwCMI">
+  className="jwFuaE cVdXxp">
   <div
     className="fROLJM">
     <a
@@ -1080,7 +1188,7 @@ exports[`Storyshots DataChannel Fixed width 1`] = `
 
 exports[`Storyshots DataChannelCard API 1`] = `
 <div
-  className="hPwCMI">
+  className="cVdXxp">
   <div
     className="fROLJM">
     <a
@@ -1122,7 +1230,7 @@ exports[`Storyshots DataChannelCard API 1`] = `
 
 exports[`Storyshots DataChannelCard Fixed width 1`] = `
 <div
-  className="hVuYrW hPwCMI">
+  className="hVuYrW cVdXxp">
   <div
     className="fROLJM">
     V
