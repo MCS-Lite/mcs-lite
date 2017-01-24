@@ -4,6 +4,8 @@ import R from 'ramda';
 import withDataChannelCard from './withDataChannelCard';
 import InputRange from '../InputRange';
 import P from '../P';
+import Input from '../Input';
+import Button from '../Button';
 
 const isNumber = R.is(Number);
 
@@ -13,16 +15,13 @@ const Container = styled.div`
   flex-direction: column-reverse;
 `;
 
+const InputWrapper = styled.div`
+  display: flex;
+`;
+
 const LabelWrapper = styled.div`
   display: flex;
-
-  > *:first-child {
-    align-items: ${props => props.labels.length <= 2 ? 'flex-start' : 'center'}
-  }
-
-  > *:last-child {
-    align-items: ${props => props.labels.length <= 2 ? 'flex-end' : 'center'}
-  }
+  justify-content: space-between;
 `;
 
 const LabelItem = styled.div`
@@ -32,6 +31,7 @@ const LabelItem = styled.div`
   margin: 0 4px;
   flex-grow: 1;
   flex-basis: 0;
+  min-width: 0;
   overflow: hidden;
 
   &::before {
@@ -53,27 +53,31 @@ const Value = styled(P)`
   display: inline-block;
 `;
 
-const InputWrapper = styled.div`
-  padding: 0 ${props => `${props.labels.length <= 2 ? 0 : (100 / props.labels.length / 2) - 3}%`};
+const InputRangeWrapper = styled.div`
+  padding: 0 ${props => `${(100 / props.labels.length / 2) - 3}%`};
 `;
 
-const BaseComponent = ({ value, onChange, labels, valueMapper, children, ...otherProps }) => {
+const BaseComponent = ({ value, onChange, labels, valueMapper, extendChildren, ...otherProps }) => {
   const min = isNumber(labels[0]) ? labels[0] : 0;
   const max = isNumber(labels[1]) ? labels[1] : labels.length - 1;
 
   return (
     <Container {...otherProps} >
-      <LabelWrapper labels={labels}>
+      <LabelWrapper>
+        {extendChildren}
         {labels.map(e => <LabelItem key={e}><P color="grayBase">{e}</P></LabelItem>)}
       </LabelWrapper>
 
-      <InputWrapper labels={labels}>
-        {children}
-
+      <InputRangeWrapper labels={labels}>
         <ValueWrapper color="grayBase">Current value:&nbsp;
           <Value color="primary">{valueMapper(value)}</Value>
         </ValueWrapper>
         <InputRange min={min} max={max} step={1} value={value} onChange={onChange} />
+      </InputRangeWrapper>
+
+      <InputWrapper>
+        <Input />
+        <Button>OK</Button>
       </InputWrapper>
     </Container>
   );
@@ -89,4 +93,4 @@ BaseComponent.defaultProps = {
   valueMapper: R.identity,
 };
 
-export default withDataChannelCard(BaseComponent, 'ControlRange');
+export default withDataChannelCard(BaseComponent, 'ControlPWM');

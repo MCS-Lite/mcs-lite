@@ -4,6 +4,9 @@ import React from 'react';
 import styled from 'styled-components';
 import { storiesOf, action } from '@kadira/storybook';
 import DataChannel from '.';
+import Button from '../Button';
+import Input from '../Input';
+import P from '../P';
 
 storiesOf('DataChannel', module)
   .addWithInfo(
@@ -84,7 +87,7 @@ storiesOf('DataChannel', module)
 
         > * {
           margin: 7.5px;
-          width: 300px;
+          width: 280px;
         }
       `;
 
@@ -95,7 +98,7 @@ storiesOf('DataChannel', module)
         <Wrapper>
           <DataChannel.ControlRange
             title="Category"
-            subtitle="123125125125125"
+            subtitle="Category"
             description="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
             header={<a href="">Link</a>}
             childrenProps={{
@@ -107,8 +110,8 @@ storiesOf('DataChannel', module)
           />
 
           <DataChannel.ControlRange
-            title="Title"
-            subtitle="GPIO"
+            title="GPIO"
+            subtitle="123125125125125"
             description="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
             header={<a href="">Link</a>}
             childrenProps={{
@@ -120,7 +123,7 @@ storiesOf('DataChannel', module)
           />
 
           <DataChannel.ControlRange
-            title="Title"
+            title="Analog"
             subtitle="123125125125125"
             description="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
             header={<a href="">Link</a>}
@@ -131,6 +134,47 @@ storiesOf('DataChannel', module)
             }}
           />
         </Wrapper>
+      );
+    },
+    { inline: true },
+  )
+  .addWithInfo(
+    'ControlRange - PWM',
+    '',
+    () => {
+      const Container = styled.div`
+        margin-bottom: 10px;
+      `;
+
+      const InputWrapper = styled.div`
+        display: flex;
+        margin-top: 5px;
+      `;
+
+      const StyledInput = styled(Input)`
+        margin-right: 10px;
+      `;
+
+      return (
+        <DataChannel.ControlRange
+          title="ControlPWM"
+          subtitle="123125125125125"
+          description="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
+          header={<a href="">Link</a>}
+          childrenProps={{
+            children: (
+              <Container>
+                <label htmlFor="input"><P color="grayBase">Period</P></label>
+                <InputWrapper>
+                  <StyledInput id="input" placeholder="Integer only" type="number" />
+                  <Button>OK</Button>
+                </InputWrapper>
+              </Container>
+            ),
+            onChange: action('ControlRange onChange'),
+            labels: [0, 100],
+          }}
+        />
       );
     },
     { inline: true },
