@@ -7,21 +7,6 @@ import DataChannel from '.';
 
 storiesOf('DataChannel', module)
   .addWithInfo(
-    'DataChannel.ControlSwitch',
-    '',
-    () =>
-      <DataChannel.ControlSwitch
-        title="Title"
-        subtitle="123125125125125"
-        description="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
-        header={<a href="">Link</a>}
-        childrenProps={{
-          onClick: action('ControlSwitch onSubmit'),
-        }}
-      />,
-    { inline: true },
-  )
-  .addWithInfo(
     'DataChannel.ControlNumber',
     '',
     () =>
@@ -36,6 +21,21 @@ storiesOf('DataChannel', module)
           onClear: action('ControlNumber onClear'),
           placeholder: 'placeholder',
           unit: '攝氏',
+        }}
+      />,
+    { inline: true },
+  )
+  .addWithInfo(
+    'DataChannel.ControlSwitch',
+    '',
+    () =>
+      <DataChannel.ControlSwitch
+        title="Title"
+        subtitle="123125125125125"
+        description="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
+        header={<a href="">Link</a>}
+        childrenProps={{
+          onClick: action('ControlSwitch onSubmit'),
         }}
       />,
     { inline: true },

@@ -29,7 +29,8 @@ injectGlobal`
 
   body {
     font-family: "Noto Sans TC", "RionaSans", "Helvetica", "微軟正黑體", "Microsoft JhengHei", "黑體-繁","Heiti TC", "新細明體", "PMingLiU", "sans-serif";
-    background-color: ${theme.base.bodyBackground};
+    background-color: ${theme.base.bodyBackgroundColor};
+    color: ${theme.base.bodyColor};
     padding: 30px;
   }
 `;

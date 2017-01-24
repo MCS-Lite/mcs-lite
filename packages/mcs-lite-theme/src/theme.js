@@ -16,22 +16,22 @@ export const kind = {
 };
 
 const base = {
-  bodyBackground: '#F1F2F7',
-  // textColor: gray.black,
-  fontSize: '14px',
+  bodyBackgroundColor: '#F1F2F7',
+  bodyColor: gray.black,
+  fontSize: '13px',
   lineHeight: 1.5,
   inputHeight: '32px',
 };
 
 const fontSize = {
-  small: '86%',
+  small: '92.3%',
   p: '1rem',
   h6: '1rem',
   h5: '1rem',
-  h4: '1.14rem',
-  h3: '1.43rem',
-  h2: '1.71rem',
-  h1: '2.43rem',
+  h4: '1.15rem',
+  h3: '1.38rem',
+  h2: '1.69rem',
+  h1: '2.46rem',
 };
 
 export default {

@@ -6,6 +6,13 @@ import Heading from '../Heading';
 import Small from '../Small';
 import P from '../P';
 
+const setHeightByLine = line => props => `${
+  Number(props.theme.fontSize.p.split('rem')[0]) *
+  Number(props.theme.base.fontSize.split('px')[0]) *
+  props.theme.base.lineHeight *
+  line
+}px`;
+
 const Header = styled.div`
   flex-basis: 24px;
   align-items: center;
@@ -23,13 +30,13 @@ const Body = styled.div`
 `;
 
 const Description = styled(P)`
-  min-height: 42px;
+  height: ${setHeightByLine(2)};
 `;
 
 const Hr = styled.hr`
   border: 0;
   border-top: 1px solid ${props => props.theme.color.grayDark};
-  margin: 2px 0;
+  margin: 5px 0;
 `;
 
 const Wrapper = styled(Card)`

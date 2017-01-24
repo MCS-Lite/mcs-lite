@@ -39,9 +39,12 @@ const LabelItem = styled.div`
   }
 `;
 
-const CurrentValue = styled(P)`
-  display: flex;
+const ValueWrapper = styled(P)`
   margin-bottom: 15px;
+`;
+
+const Value = styled(P)`
+  display: inline-block;
 `;
 
 const InputWrapper = styled.div`
@@ -59,9 +62,9 @@ const BaseComponent = ({ value, onChange, labels, valueMapper, ...otherProps }) 
       </LabelWrapper>
 
       <InputWrapper labels={labels}>
-        <CurrentValue color="grayBase">Current value:&nbsp;
-          <P color="primary">{valueMapper(value)}</P>
-        </CurrentValue>
+        <ValueWrapper color="grayBase">Current value:&nbsp;
+          <Value color="primary">{valueMapper(value)}</Value>
+        </ValueWrapper>
         <InputRange min={min} max={max} step={1} value={value} onChange={onChange} />
       </InputWrapper>
     </Container>

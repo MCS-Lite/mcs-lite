@@ -8,7 +8,7 @@ exports[`Storyshots A API 1`] = `
 
 exports[`Storyshots A Nested children with Heading 1`] = `
 <h1
-  className="fwDbfe"
+  className="cRIiEL"
   color="black">
   Heading Level 1 
   <b
@@ -118,20 +118,21 @@ exports[`Storyshots API [mcs-lite-theme] [JSON] theme 1`] = `
         \"warning\": \"#F39A1E\"
       },
       \"base\": {
-        \"bodyBackground\": \"#F1F2F7\",
-        \"fontSize\": \"14px\",
+        \"bodyBackgroundColor\": \"#F1F2F7\",
+        \"bodyColor\": \"#353630\",
+        \"fontSize\": \"13px\",
         \"lineHeight\": 1.5,
         \"inputHeight\": \"32px\"
       },
       \"fontSize\": {
-        \"small\": \"86%\",
+        \"small\": \"92.3%\",
         \"p\": \"1rem\",
         \"h6\": \"1rem\",
         \"h5\": \"1rem\",
-        \"h4\": \"1.14rem\",
-        \"h3\": \"1.43rem\",
-        \"h2\": \"1.71rem\",
-        \"h1\": \"2.43rem\"
+        \"h4\": \"1.15rem\",
+        \"h3\": \"1.38rem\",
+        \"h2\": \"1.69rem\",
+        \"h1\": \"2.46rem\"
       }
     }
   </pre>
@@ -147,7 +148,7 @@ exports[`Storyshots B API 1`] = `
 
 exports[`Storyshots B CJK 1`] = `
 <h4
-  className="kqHMIM"
+  className="ezDjUV"
   color="black">
   <b
     className="dbJQUp">
@@ -175,7 +176,7 @@ exports[`Storyshots B Within <P> 1`] = `
   color="black">
   Nisi eu eiusmod cupidatat aute laboris commodo excepteur
   <small
-    className="gAkaPt">
+    className="gPtzLl">
     <b
       className="dbJQUp">
        Bold content 
@@ -343,11 +344,11 @@ exports[`Storyshots DataChannel ControlRange - Category, GPIO and Analog 1`] = `
         <div
           className="dLRXKm">
           <div
-            className="fAIsif"
+            className="chvbqM"
             color="grayBase">
             Current value: 
             <p
-              className="hEzGry"
+              className="eBMqlM"
               color="primary">
               DDDDD
             </p>
@@ -366,7 +367,7 @@ exports[`Storyshots DataChannel ControlRange - Category, GPIO and Analog 1`] = `
     </div>
     <div>
       <h4
-        className="kqHMIM"
+        className="ezDjUV"
         color="black">
         Category
       </h4>
@@ -374,14 +375,14 @@ exports[`Storyshots DataChannel ControlRange - Category, GPIO and Analog 1`] = `
         className="jyQfel"
         color="grayBase">
         <small
-          className="gAkaPt">
+          className="gPtzLl">
           123125125125125
         </small>
       </div>
       <hr
-        className="jKIGsL" />
+        className="grCtyw" />
       <div
-        className="ePRywc"
+        className="bMkgFU"
         color="black">
         <MockReactTextTruncate
           line={2}
@@ -425,11 +426,11 @@ exports[`Storyshots DataChannel ControlRange - Category, GPIO and Analog 1`] = `
         <div
           className="kiMUJg">
           <div
-            className="fAIsif"
+            className="chvbqM"
             color="grayBase">
             Current value: 
             <p
-              className="hEzGry"
+              className="eBMqlM"
               color="primary">
               Low
             </p>
@@ -448,7 +449,7 @@ exports[`Storyshots DataChannel ControlRange - Category, GPIO and Analog 1`] = `
     </div>
     <div>
       <h4
-        className="kqHMIM"
+        className="ezDjUV"
         color="black">
         Title
       </h4>
@@ -456,14 +457,14 @@ exports[`Storyshots DataChannel ControlRange - Category, GPIO and Analog 1`] = `
         className="jyQfel"
         color="grayBase">
         <small
-          className="gAkaPt">
+          className="gPtzLl">
           GPIO
         </small>
       </div>
       <hr
-        className="jKIGsL" />
+        className="grCtyw" />
       <div
-        className="ePRywc"
+        className="bMkgFU"
         color="black">
         <MockReactTextTruncate
           line={2}
@@ -507,11 +508,11 @@ exports[`Storyshots DataChannel ControlRange - Category, GPIO and Analog 1`] = `
         <div
           className="kiMUJg">
           <div
-            className="fAIsif"
+            className="chvbqM"
             color="grayBase">
             Current value: 
             <div
-              className="hEzGry"
+              className="eBMqlM"
               color="primary">
               33
             </div>
@@ -530,7 +531,7 @@ exports[`Storyshots DataChannel ControlRange - Category, GPIO and Analog 1`] = `
     </div>
     <div>
       <h4
-        className="kqHMIM"
+        className="ezDjUV"
         color="black">
         Title
       </h4>
@@ -538,14 +539,14 @@ exports[`Storyshots DataChannel ControlRange - Category, GPIO and Analog 1`] = `
         className="jyQfel"
         color="grayBase">
         <small
-          className="gAkaPt">
+          className="gPtzLl">
           123125125125125
         </small>
       </div>
       <hr
-        className="jKIGsL" />
+        className="grCtyw" />
       <div
-        className="ePRywc"
+        className="bMkgFU"
         color="black">
         <MockReactTextTruncate
           line={2}
@@ -601,11 +602,11 @@ exports[`Storyshots DataChannel ControlRange - Stateful PPAP 1`] = `
       <div
         className="gmgBXP">
         <div
-          className="fAIsif"
+          className="chvbqM"
           color="grayBase">
           Current value: 
           <p
-            className="hEzGry"
+            className="eBMqlM"
             color="primary">
             Pineapple
           </p>
@@ -624,7 +625,7 @@ exports[`Storyshots DataChannel ControlRange - Stateful PPAP 1`] = `
   </div>
   <div>
     <h4
-      className="kqHMIM"
+      className="ezDjUV"
       color="black">
       Stateful PPAP
     </h4>
@@ -632,14 +633,14 @@ exports[`Storyshots DataChannel ControlRange - Stateful PPAP 1`] = `
       className="jyQfel"
       color="grayBase">
       <small
-        className="gAkaPt">
+        className="gPtzLl">
         123125125125125
       </small>
     </div>
     <hr
-      className="jKIGsL" />
+      className="grCtyw" />
     <div
-      className="ePRywc"
+      className="bMkgFU"
       color="black">
       <MockReactTextTruncate
         line={2}
@@ -686,11 +687,11 @@ exports[`Storyshots DataChannel ControlRange - Stateful number 1`] = `
       <div
         className="kiMUJg">
         <div
-          className="fAIsif"
+          className="chvbqM"
           color="grayBase">
           Current value: 
           <div
-            className="hEzGry"
+            className="eBMqlM"
             color="primary">
             88
           </div>
@@ -709,7 +710,7 @@ exports[`Storyshots DataChannel ControlRange - Stateful number 1`] = `
   </div>
   <div>
     <h4
-      className="kqHMIM"
+      className="ezDjUV"
       color="black">
       Stateful number
     </h4>
@@ -717,14 +718,14 @@ exports[`Storyshots DataChannel ControlRange - Stateful number 1`] = `
       className="jyQfel"
       color="grayBase">
       <small
-        className="gAkaPt">
+        className="gPtzLl">
         123125125125125
       </small>
     </div>
     <hr
-      className="jKIGsL" />
+      className="grCtyw" />
     <div
-      className="ePRywc"
+      className="bMkgFU"
       color="black">
       <MockReactTextTruncate
         line={2}
@@ -750,20 +751,18 @@ exports[`Storyshots DataChannel DataChannel.ControlNumber 1`] = `
     <div
       className="kdCvHd">
       <div
-        className="jniDxR">
-        <p
-          className="fKBvcf"
-          color="grayBase">
-          攝氏
-        </p>
-        <input
-          className="dFmTJq"
-          kind="primary"
-          onChange={[Function]}
-          placeholder="placeholder"
-          type="number"
-          value={undefined} />
+        className="dFZeAf"
+        color="grayBase">
+        單位：
+        攝氏
       </div>
+      <input
+        className="QbwlJ"
+        kind="primary"
+        onChange={[Function]}
+        placeholder="placeholder"
+        type="number"
+        value={undefined} />
       <div
         className="kGGPNo">
         <div
@@ -787,7 +786,7 @@ exports[`Storyshots DataChannel DataChannel.ControlNumber 1`] = `
   </div>
   <div>
     <h4
-      className="kqHMIM"
+      className="ezDjUV"
       color="black">
       Title
     </h4>
@@ -795,14 +794,14 @@ exports[`Storyshots DataChannel DataChannel.ControlNumber 1`] = `
       className="jyQfel"
       color="grayBase">
       <small
-        className="gAkaPt">
+        className="gPtzLl">
         123125125125125
       </small>
     </div>
     <hr
-      className="jKIGsL" />
+      className="grCtyw" />
     <div
-      className="ePRywc"
+      className="bMkgFU"
       color="black">
       <MockReactTextTruncate
         line={2}
@@ -873,11 +872,11 @@ exports[`Storyshots DataChannel DataChannel.ControlRange 1`] = `
       <div
         className="dLRXKm">
         <div
-          className="fAIsif"
+          className="chvbqM"
           color="grayBase">
           Current value: 
           <div
-            className="hEzGry"
+            className="eBMqlM"
             color="primary" />
         </div>
         <input
@@ -894,7 +893,7 @@ exports[`Storyshots DataChannel DataChannel.ControlRange 1`] = `
   </div>
   <div>
     <h4
-      className="kqHMIM"
+      className="ezDjUV"
       color="black">
       Title
     </h4>
@@ -902,14 +901,14 @@ exports[`Storyshots DataChannel DataChannel.ControlRange 1`] = `
       className="jyQfel"
       color="grayBase">
       <small
-        className="gAkaPt">
+        className="gPtzLl">
         123125125125125
       </small>
     </div>
     <hr
-      className="jKIGsL" />
+      className="grCtyw" />
     <div
-      className="ePRywc"
+      className="bMkgFU"
       color="black">
       <MockReactTextTruncate
         line={2}
@@ -963,7 +962,7 @@ exports[`Storyshots DataChannel DataChannel.ControlString 1`] = `
   </div>
   <div>
     <h4
-      className="kqHMIM"
+      className="ezDjUV"
       color="black">
       Title
     </h4>
@@ -971,14 +970,14 @@ exports[`Storyshots DataChannel DataChannel.ControlString 1`] = `
       className="jyQfel"
       color="grayBase">
       <small
-        className="gAkaPt">
+        className="gPtzLl">
         123125125125125
       </small>
     </div>
     <hr
-      className="jKIGsL" />
+      className="grCtyw" />
     <div
-      className="ePRywc"
+      className="bMkgFU"
       color="black">
       <MockReactTextTruncate
         line={2}
@@ -1008,7 +1007,7 @@ exports[`Storyshots DataChannel DataChannel.ControlSwitch 1`] = `
   </div>
   <div>
     <h4
-      className="kqHMIM"
+      className="ezDjUV"
       color="black">
       Title
     </h4>
@@ -1016,14 +1015,14 @@ exports[`Storyshots DataChannel DataChannel.ControlSwitch 1`] = `
       className="jyQfel"
       color="grayBase">
       <small
-        className="gAkaPt">
+        className="gPtzLl">
         123125125125125
       </small>
     </div>
     <hr
-      className="jKIGsL" />
+      className="grCtyw" />
     <div
-      className="ePRywc"
+      className="bMkgFU"
       color="black">
       <MockReactTextTruncate
         line={2}
@@ -1053,7 +1052,7 @@ exports[`Storyshots DataChannel Fixed width 1`] = `
   </div>
   <div>
     <h4
-      className="kqHMIM"
+      className="ezDjUV"
       color="black">
       Title
     </h4>
@@ -1061,14 +1060,14 @@ exports[`Storyshots DataChannel Fixed width 1`] = `
       className="jyQfel"
       color="grayBase">
       <small
-        className="gAkaPt">
+        className="gPtzLl">
         123125125125125
       </small>
     </div>
     <hr
-      className="jKIGsL" />
+      className="grCtyw" />
     <div
-      className="ePRywc"
+      className="bMkgFU"
       color="black">
       <MockReactTextTruncate
         line={2}
@@ -1095,7 +1094,7 @@ exports[`Storyshots DataChannelCard API 1`] = `
   </div>
   <div>
     <h4
-      className="kqHMIM"
+      className="ezDjUV"
       color="black">
       Title
     </h4>
@@ -1103,14 +1102,14 @@ exports[`Storyshots DataChannelCard API 1`] = `
       className="jyQfel"
       color="grayBase">
       <small
-        className="gAkaPt">
+        className="gPtzLl">
         Last data point time : 2015-06-12 12:00
       </small>
     </div>
     <hr
-      className="jKIGsL" />
+      className="grCtyw" />
     <div
-      className="ePRywc"
+      className="bMkgFU"
       color="black">
       <MockReactTextTruncate
         line={2}
@@ -1136,7 +1135,7 @@ exports[`Storyshots DataChannelCard Fixed width 1`] = `
   </div>
   <div>
     <h4
-      className="kqHMIM"
+      className="ezDjUV"
       color="black">
       Title
     </h4>
@@ -1144,14 +1143,14 @@ exports[`Storyshots DataChannelCard Fixed width 1`] = `
       className="jyQfel"
       color="grayBase">
       <small
-        className="gAkaPt">
+        className="gPtzLl">
         Last data point time : 2015-06-12 12:00
       </small>
     </div>
     <hr
-      className="jKIGsL" />
+      className="grCtyw" />
     <div
-      className="ePRywc"
+      className="bMkgFU"
       color="black">
       <MockReactTextTruncate
         line={2}
@@ -1164,7 +1163,7 @@ exports[`Storyshots DataChannelCard Fixed width 1`] = `
 
 exports[`Storyshots Heading API 1`] = `
 <h1
-  className="fwDbfe"
+  className="cRIiEL"
   color="black">
   Level 1
 </h1>
@@ -1173,61 +1172,61 @@ exports[`Storyshots Heading API 1`] = `
 exports[`Storyshots Heading With color props 1`] = `
 <div>
   <h2
-    className="jqocls"
+    className="hYsLQk"
     color="black">
     Level 2 
     black
   </h2>
   <h2
-    className="bERyZV"
+    className="hMMWfV"
     color="grayBase">
     Level 2 
     grayBase
   </h2>
   <h2
-    className="doouNK"
+    className="wysyv"
     color="grayDark">
     Level 2 
     grayDark
   </h2>
   <h2
-    className="jlswaz"
+    className="eDlSGk"
     color="grayLight">
     Level 2 
     grayLight
   </h2>
   <h2
-    className="iAWgMf"
+    className="iDodem"
     color="white">
     Level 2 
     white
   </h2>
   <h2
-    className="jlswaz"
+    className="eDlSGk"
     color="default">
     Level 2 
     default
   </h2>
   <h2
-    className="bEllWn"
+    className="ewKygI"
     color="primary">
     Level 2 
     primary
   </h2>
   <h2
-    className="rmutG"
+    className="jBhbxQ"
     color="success">
     Level 2 
     success
   </h2>
   <h2
-    className="eYTobf"
+    className="iYcHQ"
     color="error">
     Level 2 
     error
   </h2>
   <h2
-    className="lgGZbt"
+    className="bGhNdb"
     color="warning">
     Level 2 
     warning
@@ -1238,55 +1237,55 @@ exports[`Storyshots Heading With color props 1`] = `
 exports[`Storyshots Heading With level props 1`] = `
 <div>
   <h1
-    className="fwDbfe"
+    className="cRIiEL"
     color="black">
     h
     1
      - Level 
     1
        (
-    2.43rem
+    2.46rem
      = 
-    34.02px
+    31.98px
     )
   </h1>
   <h2
-    className="jqocls"
+    className="hYsLQk"
     color="black">
     h
     2
      - Level 
     2
        (
-    1.71rem
+    1.69rem
      = 
-    23.939999999999998px
+    21.97px
     )
   </h2>
   <h3
-    className="LPHYu"
+    className="lewxKA"
     color="black">
     h
     3
      - Level 
     3
        (
-    1.43rem
+    1.38rem
      = 
-    20.02px
+    17.939999999999998px
     )
   </h3>
   <h4
-    className="kqHMIM"
+    className="ezDjUV"
     color="black">
     h
     4
      - Level 
     4
        (
-    1.14rem
+    1.15rem
      = 
-    15.959999999999999px
+    14.95px
     )
   </h4>
   <h5
@@ -1299,7 +1298,7 @@ exports[`Storyshots Heading With level props 1`] = `
        (
     1rem
      = 
-    14px
+    13px
     )
   </h5>
   <h6
@@ -1312,7 +1311,7 @@ exports[`Storyshots Heading With level props 1`] = `
        (
     1rem
      = 
-    14px
+    13px
     )
   </h6>
 </div>
@@ -1552,7 +1551,7 @@ exports[`Storyshots P With color props 1`] = `
 
 exports[`Storyshots Small API 1`] = `
 <small
-  className="gAkaPt">
+  className="gPtzLl">
   Small content
 </small>
 `;
@@ -1563,7 +1562,7 @@ exports[`Storyshots Small With color 1`] = `
   color="primary">
   Nisi eu eiusmod cupidatat aute laboris commodo excepteur
   <small
-    className="gAkaPt">
+    className="gPtzLl">
      Small content 
   </small>
   incididunt incididunt aliquip pariatur est minim officia sit.
@@ -1576,7 +1575,7 @@ exports[`Storyshots Small Within <P> 1`] = `
   color="black">
   Nisi eu eiusmod cupidatat aute laboris commodo excepteur
   <small
-    className="gAkaPt">
+    className="gPtzLl">
      Small content 
   </small>
   incididunt incididunt aliquip pariatur est minim officia sit.
