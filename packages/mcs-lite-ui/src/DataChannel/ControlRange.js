@@ -17,11 +17,11 @@ const LabelWrapper = styled.div`
   display: flex;
 
   > *:first-child {
-    align-items: ${props => props.labels.length <= 2 ? 'flex-start' : 'center'}
+    align-items: ${props => props.labels.length <= 2 ? 'flex-start' : 'center'};
   }
 
   > *:last-child {
-    align-items: ${props => props.labels.length <= 2 ? 'flex-end' : 'center'}
+    align-items: ${props => props.labels.length <= 2 ? 'flex-end' : 'center'};
   }
 `;
 
