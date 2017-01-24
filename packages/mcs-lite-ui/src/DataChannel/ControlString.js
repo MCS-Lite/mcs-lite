@@ -20,6 +20,7 @@ const ButtonWrapper = styled.div`
   flex-wrap: wrap;
   margin-top: 10px;
   margin-bottom: 5px;
+  flex-shrink: 0;
 `;
 
 const StyledTextarea = styled(Textarea)`
