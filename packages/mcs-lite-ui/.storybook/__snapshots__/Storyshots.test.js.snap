@@ -1036,7 +1036,7 @@ exports[`Storyshots DataChannel DataChannel.ControlSwitch 1`] = `
 
 exports[`Storyshots DataChannel Fixed width 1`] = `
 <div
-  className="hVuYrW hPwCMI">
+  className="jwFuaE hPwCMI">
   <div
     className="fROLJM">
     <a
@@ -1047,37 +1047,9 @@ exports[`Storyshots DataChannel Fixed width 1`] = `
   <div
     className="dJSrbi">
     <div
-      className="kdCvHd">
-      <div
-        className="jniDxR">
-        <input
-          className="dFmTJq"
-          kind="primary"
-          onChange={undefined}
-          placeholder={undefined}
-          type="number"
-          value={undefined} />
-      </div>
-      <div
-        className="kGGPNo">
-        <div
-          className="cqMgnG"
-          color="black">
-          <a
-            className="DvAuM"
-            color="primary"
-            onClick={undefined}>
-            Clear
-          </a>
-        </div>
-        <button
-          className="hhGxPY"
-          kind="primary"
-          onClick={[Function]}>
-          Ok
-        </button>
-      </div>
-    </div>
+      checked={false}
+      className="hKkhHI"
+      onSubmit={[Function]} />
   </div>
   <div>
     <h4
