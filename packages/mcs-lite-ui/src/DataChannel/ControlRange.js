@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
 import styled from 'styled-components';
 import R from 'ramda';
 import withDataChannelCard from './withDataChannelCard';
@@ -79,14 +79,19 @@ const BaseComponent = ({ value, onChange, labels, valueMapper, children, ...othe
   );
 };
 
-// BaseComponent.propTypes = {
-//   value: PropTypes.number,
-//   onChange: PropTypes.func,
-//   onSubmit: PropTypes.func,
-// };
+BaseComponent.propTypes = {
+  value: PropTypes.number,
+  onChange: PropTypes.func,
+  labels: PropTypes.array.isRequired,
+  valueMapper: PropTypes.func, // index: number => string
+  children: PropTypes.any,
+};
 
 BaseComponent.defaultProps = {
+  value: undefined,
+  onChange: undefined,
   valueMapper: R.identity,
+  children: undefined,
 };
 
 export default withDataChannelCard(BaseComponent, 'ControlRange');

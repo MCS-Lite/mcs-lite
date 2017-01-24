@@ -44,4 +44,13 @@ BaseComponent.propTypes = {
   unit: PropTypes.string,
 };
 
+BaseComponent.defaultProps = {
+  value: undefined,
+  onChange: undefined,
+  onSubmit: undefined,
+  onClear: undefined,
+  placeholder: undefined,
+  unit: undefined,
+};
+
 export default withDataChannelCard(BaseComponent, 'ControlNumber');
