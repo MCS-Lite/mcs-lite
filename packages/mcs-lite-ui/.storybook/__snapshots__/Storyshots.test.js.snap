@@ -281,6 +281,460 @@ exports[`Storyshots Card API 1`] = `
 </div>
 `;
 
+exports[`Storyshots DataChannel ControlRange - Category, GPIO and Analog 1`] = `
+<div
+  className="wtHIP">
+  <div
+    className="hPwCMI">
+    <div
+      className="fROLJM">
+      <a
+        href="">
+        Link
+      </a>
+    </div>
+    <div
+      className="dJSrbi">
+      <div
+        className="ciDLcE">
+        <div
+          className="dhGIaz">
+          <div
+            className="gboopT">
+            <p
+              className="jyQfel"
+              color="grayBase">
+              AAAAAA
+            </p>
+          </div>
+          <div
+            className="gboopT">
+            <p
+              className="jyQfel"
+              color="grayBase">
+              BBBBB
+            </p>
+          </div>
+          <div
+            className="gboopT">
+            <p
+              className="jyQfel"
+              color="grayBase">
+              CCCCC
+            </p>
+          </div>
+          <div
+            className="gboopT">
+            <p
+              className="jyQfel"
+              color="grayBase">
+              DDDDD
+            </p>
+          </div>
+          <div
+            className="gboopT">
+            <p
+              className="jyQfel"
+              color="grayBase">
+              EEEEE
+            </p>
+          </div>
+        </div>
+        <div
+          className="dLRXKm">
+          <div
+            className="fAIsif"
+            color="grayBase">
+            Current value: 
+            <p
+              className="hEzGry"
+              color="primary">
+              DDDDD
+            </p>
+          </div>
+          <input
+            className="hdhnFx"
+            kind="primary"
+            max={4}
+            min={0}
+            onChange={[Function]}
+            step={1}
+            type="range"
+            value={3} />
+        </div>
+      </div>
+    </div>
+    <div>
+      <h4
+        className="kqHMIM"
+        color="black">
+        Category
+      </h4>
+      <div
+        className="jyQfel"
+        color="grayBase">
+        <small
+          className="gAkaPt">
+          123125125125125
+        </small>
+      </div>
+      <hr
+        className="jKIGsL" />
+      <div
+        className="ePRywc"
+        color="black">
+        <MockReactTextTruncate
+          line={2}
+          text="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
+          truncateText=" ..." />
+      </div>
+    </div>
+  </div>
+  <div
+    className="hPwCMI">
+    <div
+      className="fROLJM">
+      <a
+        href="">
+        Link
+      </a>
+    </div>
+    <div
+      className="dJSrbi">
+      <div
+        className="ciDLcE">
+        <div
+          className="dhGIaz">
+          <div
+            className="gboopT">
+            <p
+              className="jyQfel"
+              color="grayBase">
+              Low
+            </p>
+          </div>
+          <div
+            className="gboopT">
+            <p
+              className="jyQfel"
+              color="grayBase">
+              Heigh
+            </p>
+          </div>
+        </div>
+        <div
+          className="kiMUJg">
+          <div
+            className="fAIsif"
+            color="grayBase">
+            Current value: 
+            <p
+              className="hEzGry"
+              color="primary">
+              Low
+            </p>
+          </div>
+          <input
+            className="hdhnFx"
+            kind="primary"
+            max={1}
+            min={0}
+            onChange={[Function]}
+            step={1}
+            type="range"
+            value={0} />
+        </div>
+      </div>
+    </div>
+    <div>
+      <h4
+        className="kqHMIM"
+        color="black">
+        Title
+      </h4>
+      <div
+        className="jyQfel"
+        color="grayBase">
+        <small
+          className="gAkaPt">
+          GPIO
+        </small>
+      </div>
+      <hr
+        className="jKIGsL" />
+      <div
+        className="ePRywc"
+        color="black">
+        <MockReactTextTruncate
+          line={2}
+          text="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
+          truncateText=" ..." />
+      </div>
+    </div>
+  </div>
+  <div
+    className="hPwCMI">
+    <div
+      className="fROLJM">
+      <a
+        href="">
+        Link
+      </a>
+    </div>
+    <div
+      className="dJSrbi">
+      <div
+        className="ciDLcE">
+        <div
+          className="dhGIaz">
+          <div
+            className="gboopT">
+            <div
+              className="jyQfel"
+              color="grayBase">
+              0
+            </div>
+          </div>
+          <div
+            className="gboopT">
+            <div
+              className="jyQfel"
+              color="grayBase">
+              100
+            </div>
+          </div>
+        </div>
+        <div
+          className="kiMUJg">
+          <div
+            className="fAIsif"
+            color="grayBase">
+            Current value: 
+            <div
+              className="hEzGry"
+              color="primary">
+              33
+            </div>
+          </div>
+          <input
+            className="hdhnFx"
+            kind="primary"
+            max={100}
+            min={0}
+            onChange={[Function]}
+            step={1}
+            type="range"
+            value={33} />
+        </div>
+      </div>
+    </div>
+    <div>
+      <h4
+        className="kqHMIM"
+        color="black">
+        Title
+      </h4>
+      <div
+        className="jyQfel"
+        color="grayBase">
+        <small
+          className="gAkaPt">
+          123125125125125
+        </small>
+      </div>
+      <hr
+        className="jKIGsL" />
+      <div
+        className="ePRywc"
+        color="black">
+        <MockReactTextTruncate
+          line={2}
+          text="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
+          truncateText=" ..." />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots DataChannel ControlRange - Stateful PPAP 1`] = `
+<div
+  className="hPwCMI">
+  <div
+    className="fROLJM">
+    <a
+      href="">
+      Link
+    </a>
+  </div>
+  <div
+    className="dJSrbi">
+    <div
+      className="ciDLcE">
+      <div
+        className="dhGIaz">
+        <div
+          className="gboopT">
+          <p
+            className="jyQfel"
+            color="grayBase">
+            Apple
+          </p>
+        </div>
+        <div
+          className="gboopT">
+          <p
+            className="jyQfel"
+            color="grayBase">
+            Pen
+          </p>
+        </div>
+        <div
+          className="gboopT">
+          <p
+            className="jyQfel"
+            color="grayBase">
+            Pineapple
+          </p>
+        </div>
+      </div>
+      <div
+        className="gmgBXP">
+        <div
+          className="fAIsif"
+          color="grayBase">
+          Current value: 
+          <p
+            className="hEzGry"
+            color="primary">
+            Pineapple
+          </p>
+        </div>
+        <input
+          className="hdhnFx"
+          kind="primary"
+          max={2}
+          min={0}
+          onChange={[Function]}
+          step={1}
+          type="range"
+          value={2} />
+      </div>
+    </div>
+  </div>
+  <div>
+    <h4
+      className="kqHMIM"
+      color="black">
+      Stateful PPAP
+    </h4>
+    <div
+      className="jyQfel"
+      color="grayBase">
+      <small
+        className="gAkaPt">
+        123125125125125
+      </small>
+    </div>
+    <hr
+      className="jKIGsL" />
+    <div
+      className="ePRywc"
+      color="black">
+      <MockReactTextTruncate
+        line={2}
+        text="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
+        truncateText=" ..." />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots DataChannel ControlRange - Stateful number 1`] = `
+<div
+  className="hPwCMI">
+  <div
+    className="fROLJM">
+    <a
+      href="">
+      Link
+    </a>
+  </div>
+  <div
+    className="dJSrbi">
+    <div
+      className="ciDLcE">
+      <div
+        className="dhGIaz">
+        <div
+          className="gboopT">
+          <div
+            className="jyQfel"
+            color="grayBase">
+            33
+          </div>
+        </div>
+        <div
+          className="gboopT">
+          <div
+            className="jyQfel"
+            color="grayBase">
+            95
+          </div>
+        </div>
+      </div>
+      <div
+        className="kiMUJg">
+        <div
+          className="fAIsif"
+          color="grayBase">
+          Current value: 
+          <div
+            className="hEzGry"
+            color="primary">
+            88
+          </div>
+        </div>
+        <input
+          className="hdhnFx"
+          kind="primary"
+          max={95}
+          min={33}
+          onChange={[Function]}
+          step={1}
+          type="range"
+          value={88} />
+      </div>
+    </div>
+  </div>
+  <div>
+    <h4
+      className="kqHMIM"
+      color="black">
+      Stateful number
+    </h4>
+    <div
+      className="jyQfel"
+      color="grayBase">
+      <small
+        className="gAkaPt">
+        123125125125125
+      </small>
+    </div>
+    <hr
+      className="jKIGsL" />
+    <div
+      className="ePRywc"
+      color="black">
+      <MockReactTextTruncate
+        line={2}
+        text="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
+        truncateText=" ..." />
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots DataChannel DataChannel.ControlNumber 1`] = `
 <div
   className="hPwCMI">
@@ -328,6 +782,113 @@ exports[`Storyshots DataChannel DataChannel.ControlNumber 1`] = `
           onClick={[Function]}>
           Ok
         </button>
+      </div>
+    </div>
+  </div>
+  <div>
+    <h4
+      className="kqHMIM"
+      color="black">
+      Title
+    </h4>
+    <div
+      className="jyQfel"
+      color="grayBase">
+      <small
+        className="gAkaPt">
+        123125125125125
+      </small>
+    </div>
+    <hr
+      className="jKIGsL" />
+    <div
+      className="ePRywc"
+      color="black">
+      <MockReactTextTruncate
+        line={2}
+        text="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
+        truncateText=" ..." />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots DataChannel DataChannel.ControlRange 1`] = `
+<div
+  className="hPwCMI">
+  <div
+    className="fROLJM">
+    <a
+      href="">
+      Link
+    </a>
+  </div>
+  <div
+    className="dJSrbi">
+    <div
+      className="ciDLcE">
+      <div
+        className="dhGIaz">
+        <div
+          className="gboopT">
+          <p
+            className="jyQfel"
+            color="grayBase">
+            AAAAAA
+          </p>
+        </div>
+        <div
+          className="gboopT">
+          <p
+            className="jyQfel"
+            color="grayBase">
+            BBBBB
+          </p>
+        </div>
+        <div
+          className="gboopT">
+          <p
+            className="jyQfel"
+            color="grayBase">
+            CCCCC
+          </p>
+        </div>
+        <div
+          className="gboopT">
+          <p
+            className="jyQfel"
+            color="grayBase">
+            DDDDD
+          </p>
+        </div>
+        <div
+          className="gboopT">
+          <p
+            className="jyQfel"
+            color="grayBase">
+            EEEEE
+          </p>
+        </div>
+      </div>
+      <div
+        className="dLRXKm">
+        <div
+          className="fAIsif"
+          color="grayBase">
+          Current value: 
+          <div
+            className="hEzGry"
+            color="primary" />
+        </div>
+        <input
+          className="hdhnFx"
+          kind="primary"
+          max={4}
+          min={0}
+          onChange={[Function]}
+          step={1}
+          type="range"
+          value={undefined} />
       </div>
     </div>
   </div>
