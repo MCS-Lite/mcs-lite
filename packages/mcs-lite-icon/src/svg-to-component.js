@@ -15,7 +15,7 @@ const babelOptions = JSON.parse(fs.readFileSync(
 ));
 babelOptions.babelrc = false;
 
-const srcDir = 'node_modules/mcs-lite-design/icon';
+const srcDir = 'node_modules/mcs-lite-design/lib/icon';
 
 const filename$ = Rx.Observable
   .from([srcDir])
