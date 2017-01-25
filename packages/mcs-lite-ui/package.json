@@ -11,7 +11,8 @@
     "prebuild": "npm run clean",
     "build": "NODE_ENV=production babel src --out-dir lib --ignore example.js",
     "createEntryFile": "node node_modules/mcs-lite-scripts/exportsAllComponents 'src/[A-Z]*' > lib/index.js",
-    "prepublish": "npm run build && npm run createEntryFile",
+    "postbuild": "npm run createEntryFile",
+    "prepublish": "npm run build",
     "test": "jest",
     "stylelint": "stylelint './src/**/*.js'",
     "flow": "flow check",
@@ -47,6 +48,7 @@
     "flow-bin": "^0.37.4",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^18.1.0",
+    "mcs-lite-icon": "^0.0.0",
     "mcs-lite-scripts": "^0.0.0",
     "normalize.css": "^5.0.0",
     "react": "^15.4.2",
@@ -59,12 +61,12 @@
     "stylelint-config-mcs-lite": "^0.0.0"
   },
   "dependencies": {
-    "d3-color": "^1.0.2",
     "mcs-lite-theme": "^0.0.0",
     "ramda": "^0.23.0",
     "react-text-truncate": "^0.8.3"
   },
   "peerDependencies": {
+    "mcs-lite-icon": "^0.0.0",
     "styled-components": "^1.3.1"
   }
 }

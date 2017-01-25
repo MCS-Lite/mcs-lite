@@ -1,10 +1,9 @@
 import React, { PropTypes } from 'react';
 import styled from 'styled-components';
 import withDataChannelCard from '../HOC/withDataChannelCard';
-import Button from '../Button';
+import ButtonClear from './ButtonClear';
 import Textarea from '../Textarea';
-import A from '../A';
-import P from '../P';
+import Button from '../Button';
 
 const Container = styled.div`
   width: 100%;
@@ -33,7 +32,7 @@ const BaseComponent = ({ value, onChange, onSubmit, onClear, placeholder, ...oth
     <StyledTextarea value={value} onChange={onChange} placeholder={placeholder} />
 
     <ButtonWrapper>
-      <P><A onClick={onClear}>Clear</A></P>
+      <ButtonClear onClick={onClear} />
       <Button onClick={onSubmit}>Ok</Button>
     </ButtonWrapper>
   </Container>;
