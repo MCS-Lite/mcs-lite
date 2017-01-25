@@ -20,11 +20,12 @@ storiesOf('DataChannelCard', module)
     { inline: true },
   )
   .addWithInfo(
-    'Fixed width',
-    '固定寬度。',
+    'Custom width and height',
+    '固定寬度與高度。',
     () => {
       const MCSSyledCard = styled(DataChannelCard)`
         width: 300px;
+        height: 400px;
       `;
 
       return (

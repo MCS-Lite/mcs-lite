@@ -1,7 +1,7 @@
 import React, { PropTypes } from 'react';
 import styled from 'styled-components';
 import R from 'ramda';
-import withDataChannelCard from './withDataChannelCard';
+import withDataChannelCard from '../HOC/withDataChannelCard';
 import InputRange from '../InputRange';
 import P from '../P';
 
@@ -82,16 +82,13 @@ const BaseComponent = ({ value, onChange, labels, valueMapper, children, ...othe
 BaseComponent.propTypes = {
   value: PropTypes.number,
   onChange: PropTypes.func,
-  labels: PropTypes.array.isRequired,
   valueMapper: PropTypes.func, // index: number => string
-  children: PropTypes.any,
+  children: PropTypes.any,     // for PWM
+  labels: PropTypes.array.isRequired,
 };
 
 BaseComponent.defaultProps = {
-  value: undefined,
-  onChange: undefined,
   valueMapper: R.identity,
-  children: undefined,
 };
 
 export default withDataChannelCard(BaseComponent, 'ControlRange');

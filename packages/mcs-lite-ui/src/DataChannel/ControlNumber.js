@@ -1,6 +1,6 @@
 import React, { PropTypes } from 'react';
 import styled from 'styled-components';
-import withDataChannelCard from './withDataChannelCard';
+import withDataChannelCard from '../HOC/withDataChannelCard';
 import Button from '../Button';
 import Input from '../Input';
 import A from '../A';
@@ -42,15 +42,6 @@ BaseComponent.propTypes = {
   onClear: PropTypes.func,
   placeholder: PropTypes.string,
   unit: PropTypes.string,
-};
-
-BaseComponent.defaultProps = {
-  value: undefined,
-  onChange: undefined,
-  onSubmit: undefined,
-  onClear: undefined,
-  placeholder: undefined,
-  unit: undefined,
 };
 
 export default withDataChannelCard(BaseComponent, 'ControlNumber');

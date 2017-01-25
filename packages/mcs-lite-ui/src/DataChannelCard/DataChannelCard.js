@@ -59,15 +59,11 @@ const DataChannelCard = ({ header, children, title, subtitle, description, ...ot
 
 DataChannelCard.displayName = 'DataChannelCard';
 DataChannelCard.propTypes = {
-  header: PropTypes.any.isRequired,
+  header: PropTypes.any,
   children: PropTypes.any.isRequired,
   title: PropTypes.string.isRequired,
   subtitle: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
-};
-
-DataChannelCard.defaultProps = {
-  // kind: 'primary',
 };
 
 export default DataChannelCard;
