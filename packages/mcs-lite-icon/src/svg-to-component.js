@@ -1,46 +1,48 @@
-import svgToJsx from 'svg-to-jsx';
+/* eslint no-console:0 */
+
 import fs from 'fs';
 import path from 'path';
 import Rx from 'rxjs/Rx';
-import * as babel from 'babel-core';
 import camelCase from 'lodash.camelcase';
 import upperFirst from 'lodash.upperfirst';
-import template from './template';
+import { spawnSync } from 'child_process';
+import { parseSVG, compile, template } from './utils';
 
-const spawnSync = require('child_process').spawnSync;
+const srcDir = process.argv[2];
+const desDir = process.argv[3];
 
-const babelOptions = JSON.parse(fs.readFileSync(
-  path.resolve(__dirname, '..', '.babelrc'),
-  'utf8',
-));
-babelOptions.babelrc = false;
-
-const srcDir = 'node_modules/mcs-lite-design/lib/icon';
-
-const filename$ = Rx.Observable
+// --- /lib/a.svg --- /lib/b.svg --- ...
+const srcPath$ = Rx.Observable
   .from([srcDir])
-  .switchMap(dirPath => Rx.Observable.from(fs.readdirSync(dirPath)));
+  .switchMap(dirPath => Rx.Observable.from(fs.readdirSync(dirPath)))
+  .map(basename => path.resolve(srcDir, basename));
 
-const componentName$ = filename$
-  .map(filename => path.basename(filename, path.extname(filename)))
-  .map(name => `Icon-${name}`)
+// --- IconA --- IconB --- ...
+const componentName$ = srcPath$
+  .map(filepath => path.basename(filepath, path.extname(filepath)))
+  .map(filename => `Icon-${filename}`)
   .map(camelCase)
   .map(upperFirst);
 
-const jsx$ = filename$
-  .map(filename => fs.readFileSync(path.resolve(srcDir, filename), 'utf-8'))
-  .mergeMap(svg => Rx.Observable.fromPromise(svgToJsx(svg)));
+// --- xmlA --- xmlB --- ...
+const xml$ = srcPath$
+  .map(filepath => fs.readFileSync(filepath, 'utf-8'));
+
+// --- codeA --- codeB --- ...
+const code$ = Rx.Observable
+  .zip(componentName$, xml$)
+  .map(([componentName, xml]) => compile(template(componentName, parseSVG(xml))));
+
+// --- ./lib/IconA.js --- ./lib/IconB.js --- ...
+const destPath$ = componentName$
+  .map(componentName => path.resolve(desDir, `${componentName}.js`))
+  .do(destPath => spawnSync('mkdir', ['-p', path.dirname(destPath)]));
 
 Rx.Observable
-  .zip(componentName$, jsx$)
-  .do(([name, jsx]) => {
-    const transformed = babel.transform(template({ name, jsx }), babelOptions).code;
-    const destPath = path.resolve('lib', `${name}.js`);
-    spawnSync('mkdir', ['-p', path.dirname(destPath)]);
-
-    fs.writeFileSync(destPath, transformed);
-
-    console.log(`${srcDir}/${name} -> ${destPath}`);
+  .zip(srcPath$, code$, destPath$)
+  .do(([srcPath, code, destPath]) => {
+    fs.writeFileSync(destPath, code);
+    console.log(`${path.relative(process.cwd(), srcPath)} -> ${path.relative(process.cwd(), destPath)}`);
   })
   .catch(console.error)
-  .subscribe()
+  .subscribe();

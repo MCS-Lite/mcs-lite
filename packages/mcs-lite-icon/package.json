@@ -7,22 +7,26 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "rm -rf lib",
     "prebuild": "npm run clean",
-    "build": "babel-node ./src/svg-to-component.js",
-    "createEntryFile": "node node_modules/mcs-lite-scripts/exportsAllComponents 'lib/[A-Z]*' > lib/index.js",
+    "build": "node build.js 'node_modules/mcs-lite-design/lib/icon' lib",
+    "createEntryFile": "node node_modules/mcs-lite-scripts/exportsAllComponents 'lib/[A-Z]*.js' > lib/index.js",
     "postbuild": "npm run createEntryFile",
     "prepublish": "npm run build"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "babel-cli": "^6.22.2",
     "babel-core": "^6.22.1",
     "babel-preset-mcs-lite": "^0.0.0",
+    "babel-register": "^6.22.0",
+    "cheerio": "^0.22.0",
     "lodash.camelcase": "^4.3.0",
     "lodash.upperfirst": "^4.3.1",
     "mcs-lite-design": "^0.0.0",
     "mcs-lite-scripts": "^0.0.0",
-    "rxjs": "^5.0.3",
-    "svg-to-jsx": "^0.0.20"
+    "react": "^15.4.2",
+    "rxjs": "^5.0.3"
+  },
+  "peerDependencies": {
+    "react": "^15.4.2"
   }
 }
