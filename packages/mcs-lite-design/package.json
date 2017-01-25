@@ -4,7 +4,6 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "rm -rf lib",
     "prebuild": "npm run clean",
     "compress:svg": "svgo -f 'src/icon' -o lib/icon --pretty --multipass --indent=2 --quiet",
