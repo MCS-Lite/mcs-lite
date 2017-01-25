@@ -1,12 +1,9 @@
 import React from 'react';
 import { storiesOf } from '@kadira/storybook';
 import styled from 'styled-components';
+import * as Icon from 'mcs-lite-icon/lib/index';
 import Heading from '../Heading';
 import Card from '../Card';
-
-const mcsLiteIcon = require('mcs-lite-icon');
-
-const Icons = Object.keys(mcsLiteIcon);
 
 const IconWrapper = styled(Heading)`
   display: flex;
@@ -30,7 +27,7 @@ storiesOf('Icon')
     'API',
     '',
     () =>
-      <mcsLiteIcon.IconEllipsisV />,
+      <Icon.IconEllipsisV />,
     { inline: true },
   )
   .addWithInfo(
@@ -39,10 +36,10 @@ storiesOf('Icon')
     () =>
       <div>
         {
-          Icons.map(name => (
+          Object.keys(Icon).map(name => (
             <StyledCard key={name}>
               <IconWrapper color="primary" level={2}>
-                {React.createElement(mcsLiteIcon[name])}
+                {React.createElement(Icon[name])}
                 {`<${name} />`}
               </IconWrapper>
             </StyledCard>

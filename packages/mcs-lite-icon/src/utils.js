@@ -38,7 +38,6 @@ const ${componentName} = ({ name, size, children, ...otherProps }) =>
 
 ${componentName}.displayName = '${componentName}';
 ${componentName}.propTypes = {
-  name: PropTypes.string.isRequired,
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   children: PropTypes.any,
 };
