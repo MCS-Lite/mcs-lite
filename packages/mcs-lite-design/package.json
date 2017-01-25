@@ -7,9 +7,13 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "rm -rf lib",
     "prebuild": "npm run clean",
-    "build": "svgo -f 'src/icon' -o lib/icon --pretty --multipass --indent=2 --quiet",
+    "compress:svg": "svgo -f 'src/icon' -o lib/icon --pretty --multipass --indent=2 --quiet",
+    "build": "npm run compress:svg",
     "prepublish": "npm run build"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "svgo": "^0.7.1"
+  }
 }
