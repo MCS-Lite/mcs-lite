@@ -23,6 +23,7 @@ module.exports = {
         id: [
           'ramda',
           'mcs-lite-ui',
+          'mcs-lite-icon',
         ],
       },
     ],
