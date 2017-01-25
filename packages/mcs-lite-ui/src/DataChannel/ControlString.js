@@ -1,6 +1,6 @@
 import React, { PropTypes } from 'react';
 import styled from 'styled-components';
-import withDataChannelCard from './withDataChannelCard';
+import withDataChannelCard from '../HOC/withDataChannelCard';
 import Button from '../Button';
 import Textarea from '../Textarea';
 import A from '../A';
@@ -44,14 +44,6 @@ BaseComponent.propTypes = {
   onSubmit: PropTypes.func,
   onClear: PropTypes.func,
   placeholder: PropTypes.string,
-};
-
-BaseComponent.defaultProps = {
-  value: undefined,
-  onChange: undefined,
-  onSubmit: undefined,
-  onClear: undefined,
-  placeholder: undefined,
 };
 
 export default withDataChannelCard(BaseComponent, 'ControlString');
