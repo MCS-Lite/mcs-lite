@@ -1782,15 +1782,18 @@ exports[`Storyshots Menu Combination 1`] = `
 <div
   className="etymeq">
   <div
-    className="kJbGLx">
+    className="kJbGLx"
+    onClick={[Function]}>
     MenuItem 1
   </div>
   <div
-    className="kJbGLx">
+    className="kJbGLx"
+    onClick={[Function]}>
     MenuItem Content 2
   </div>
   <div
-    className="kJbGLx">
+    className="kJbGLx"
+    onClick={[Function]}>
     <h1
       className="cRIiEL"
       color="black">
@@ -1798,7 +1801,8 @@ exports[`Storyshots Menu Combination 1`] = `
     </h1>
   </div>
   <div
-    className="kJbGLx">
+    className="kJbGLx"
+    onClick={[Function]}>
     <p
       className="cqMgnG"
       color="black">
@@ -1806,7 +1810,8 @@ exports[`Storyshots Menu Combination 1`] = `
     </p>
   </div>
   <div
-    className="kJbGLx">
+    className="kJbGLx"
+    onClick={[Function]}>
     <p
       className="hrGHNS"
       color="error">
@@ -1814,7 +1819,8 @@ exports[`Storyshots Menu Combination 1`] = `
     </p>
   </div>
   <div
-    className="kJbGLx">
+    className="kJbGLx"
+    onClick={[Function]}>
     <a
       className="DvAuM"
       color="primary">
@@ -1822,14 +1828,16 @@ exports[`Storyshots Menu Combination 1`] = `
     </a>
   </div>
   <div
-    className="kJbGLx">
+    className="kJbGLx"
+    onClick={[Function]}>
     <b
       className="dbJQUp">
       MenuItem B
     </b>
   </div>
   <div
-    className="kJbGLx">
+    className="kJbGLx"
+    onClick={[Function]}>
     <svg
       fill="currentColor"
       height="1em"

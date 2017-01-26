@@ -1,5 +1,5 @@
 import React from 'react';
-import { storiesOf } from '@kadira/storybook';
+import { storiesOf, action } from '@kadira/storybook';
 import styled from 'styled-components';
 import { IconTrashO } from 'mcs-lite-icon';
 import { MenuItem, Menu } from '.';
@@ -31,14 +31,14 @@ storiesOf('Menu', module)
     'With fixed width',
     () =>
       <StyledMenu>
-        <MenuItem>MenuItem 1</MenuItem>
-        <MenuItem>MenuItem Content 2</MenuItem>
-        <MenuItem><Heading>MenuItem Heading 1</Heading></MenuItem>
-        <MenuItem><P>MenuItem P</P></MenuItem>
-        <MenuItem><P color="error">MenuItem P error</P></MenuItem>
-        <MenuItem><A>MenuItem A</A></MenuItem>
-        <MenuItem><B>MenuItem B</B></MenuItem>
-        <MenuItem><IconTrashO /></MenuItem>
+        <MenuItem onClick={action('1')}>MenuItem 1</MenuItem>
+        <MenuItem onClick={action('2')}>MenuItem Content 2</MenuItem>
+        <MenuItem onClick={action('3')}><Heading>MenuItem Heading 1</Heading></MenuItem>
+        <MenuItem onClick={action('4')}><P>MenuItem P</P></MenuItem>
+        <MenuItem onClick={action('5')}><P color="error">MenuItem P error</P></MenuItem>
+        <MenuItem onClick={action('6')}><A>MenuItem A</A></MenuItem>
+        <MenuItem onClick={action('7')}><B>MenuItem B</B></MenuItem>
+        <MenuItem onClick={action('8')}><IconTrashO /></MenuItem>
       </StyledMenu>,
     { inline: true },
   );
