@@ -1503,7 +1503,7 @@ exports[`Storyshots Heading With level props 1`] = `
 </div>
 `;
 
-exports[`Storyshots Icon API 1`] = `
+exports[`Storyshots Icon [mcs-lite-icon] API 1`] = `
 <svg
   fill="currentColor"
   height="1em"
@@ -1515,7 +1515,7 @@ exports[`Storyshots Icon API 1`] = `
 </svg>
 `;
 
-exports[`Storyshots Icon Icon list, Custom color and size 1`] = `
+exports[`Storyshots Icon [mcs-lite-icon] Icon list, Custom color and size 1`] = `
 <div
   className="a">
   <h1

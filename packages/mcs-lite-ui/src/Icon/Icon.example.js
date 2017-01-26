@@ -35,7 +35,7 @@ const StyledCard = styled(Card)`
   padding: 16px;
 `;
 
-storiesOf('Icon')
+storiesOf('Icon [mcs-lite-icon]')
   .addWithInfo(
     'API',
     '',
