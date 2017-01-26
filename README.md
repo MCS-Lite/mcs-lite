@@ -53,6 +53,7 @@ $ npm run test --watch --coverage
 
 | **Package**                 | clean | test | start | build | lint | prepublish |
 |-----------------------------|-------|------|-------|-------|------|------------|
+| root                        | V     |      |       |       | es   |            |
 | `babel-preset-mcs-lite`     |       | V    |       |       |      |            |
 | `eslint-config-mcs-lite`    |       | V    |       |       |      |            |
 | `mcs-lite-demo-nextjs`      |       |      | V     |       |      |            |
