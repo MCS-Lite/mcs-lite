@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { darken1, darken2 } from 'mcs-lite-theme';
+import { darken1 } from 'mcs-lite-theme';
 
 const MenuItem = styled.div`
   display: flex;
@@ -7,8 +7,8 @@ const MenuItem = styled.div`
   padding-left: 15px;
   padding-right: 26px;
   cursor: pointer;
-  color: ${props => props.theme.color.black};
   box-sizing: border-box;
+  color: ${props => props.theme.color.black};
   min-height: ${props => props.theme.base.inputHeight};
 
   * {
@@ -16,7 +16,7 @@ const MenuItem = styled.div`
   }
 
   &:hover {
-    background-color: ${props => darken1(props.theme.color.primary)};
+    background-color: ${props => props.theme.color.primary};
     color: white;
 
     * {
@@ -25,7 +25,7 @@ const MenuItem = styled.div`
   }
 
   &:active {
-    background-color: ${props => darken2(props.theme.color.primary)};
+    background-color: ${props => darken1(props.theme.color.primary)};
     color: white;
 
     * {
