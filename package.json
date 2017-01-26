@@ -3,7 +3,8 @@
   "scripts": {
     "postinstall": "lerna bootstrap",
     "clean": "rm -rf node_modules && lerna clean",
-    "eslint": "eslint ./"
+    "eslint": "eslint ./",
+    "ncu": "ncu && lerna exec --concurrency 1 -- ncu"
   },
   "devDependencies": {
     "babel-eslint": "^7.1.1",
@@ -13,5 +14,6 @@
     "eslint-plugin-jsx-a11y": "^3.0.2",
     "eslint-plugin-react": "^6.9.0",
     "lerna": "2.0.0-beta.33"
+    "npm-check-updates": "^2.8.9"
   }
 }

@@ -53,6 +53,7 @@ $ npm run test --watch --coverage
 
 | **Package**                 | clean | test | start | build | lint | prepublish |
 |-----------------------------|-------|------|-------|-------|------|------------|
+| root                        | V     |      |       |       | es   |            |
 | `babel-preset-mcs-lite`     |       | V    |       |       |      |            |
 | `eslint-config-mcs-lite`    |       | V    |       |       |      |            |
 | `mcs-lite-demo-nextjs`      |       |      | V     |       |      |            |
@@ -62,3 +63,9 @@ $ npm run test --watch --coverage
 | `mcs-lite-theme`            | V     |      |       | V     |      | V          |
 | `mcs-lite-ui`               | V     | V    | V     | V     | V    | V          |
 | `stylelint-config-mcs-lite` |       | V    |       |       |      |            |
+
+## npm-check-updates
+
+```
+$ npm run ncu # check for all packages
+```
