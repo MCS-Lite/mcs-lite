@@ -19,6 +19,7 @@ const Button = styled.button`
   outline: none;
   cursor: pointer;
   min-width: 80px;
+  width: ${props => props.block ? '100%' : 'initial'};
   box-sizing: border-box;
   padding: 6px 10px;
   min-height: ${props => props.theme.base.inputHeight};
@@ -41,10 +42,12 @@ Button.displayName = 'Button';
 
 Button.propTypes = {
   kind: PropTypes.string,
+  block: PropTypes.bool,
 };
 
 Button.defaultProps = {
   kind: 'primary',
+  block: false,
 };
 
 export default Button;
