@@ -62,3 +62,9 @@ $ npm run test --watch --coverage
 | `mcs-lite-theme`            | V     |      |       | V     |      | V          |
 | `mcs-lite-ui`               | V     | V    | V     | V     | V    | V          |
 | `stylelint-config-mcs-lite` |       | V    |       |       |      |            |
+
+## npm-check-updates
+
+```
+$ npm run ncu # check for all packages
+```
