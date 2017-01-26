@@ -62,7 +62,10 @@
     "stylelint-config-mcs-lite": "^0.0.0"
   },
   "dependencies": {
+    "dom-align": "^1.5.3",
     "ramda": "^0.23.0",
+    "react-motion-ui-pack": "^0.10.2",
+    "react-overlays": "^0.6.10",
     "react-text-truncate": "^0.8.3"
   },
   "peerDependencies": {
