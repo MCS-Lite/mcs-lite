@@ -21,7 +21,13 @@ Try it online - http://mcs-lite-ui.netlify.com/
 | `mcs-lite-ui`               | MCS Lite common UI and storybook demo page. |
 | `stylelint-config-mcs-lite` | CSS coding style                            |
 
-## Getting Started
+## Install
+
+```
+$ npm i mcs-lite-ui mcs-lite-icon mcs-lite-theme --save
+```
+
+## Development
 
 ```
 $ npm run clean # Remove all node_modules
@@ -49,7 +55,7 @@ $ npm run test --watch --coverage
 ```
 
 
-## NPM Scipts interface
+## NPM Scipts Interface
 
 | **Package**                 | clean | test | start | build | lint | prepublish |
 |-----------------------------|-------|------|-------|-------|------|------------|
