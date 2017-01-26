@@ -188,50 +188,71 @@ exports[`Storyshots B Within <P> 1`] = `
 
 exports[`Storyshots Button API 1`] = `
 <button
-  className="hhGxPY"
+  className="fqCsyW"
   kind="primary">
-  Simple button
+  button
 </button>
 `;
 
 exports[`Storyshots Button Overriding style 1`] = `
 <button
-  className="iVccwG"
+  className="ciXyyf"
   kind="primary"
   onClick={[Function]}>
   Overriding style
 </button>
 `;
 
+exports[`Storyshots Button With block props 1`] = `
+<div
+  className="epDjBm">
+  <button
+    className="fqCsyW"
+    kind="primary">
+    Button
+  </button>
+  <button
+    className="fqCsyW"
+    kind="primary">
+    Simple button
+  </button>
+  <button
+    className="JGlsS"
+    kind="primary">
+    block
+  </button>
+</div>
+`;
+
 exports[`Storyshots Button With kind props 1`] = `
 <div
   className="epDjBm">
   <button
-    className="eKAgHO"
+    className="DxFsx"
     kind="default"
     onClick={[Function]}>
     default
   </button>
   <button
-    className="hhGxPY"
+    className="fqCsyW"
     kind="primary"
     onClick={[Function]}>
     primary
   </button>
   <button
-    className="dIKOWb"
+    className="ckvztW"
     kind="success"
     onClick={[Function]}>
     success
   </button>
   <button
-    className="gMVhkr"
+    className="iDTYQb"
     kind="error"
     onClick={[Function]}>
     error
   </button>
   <button
-    className="joofWL"
+    className="XOtSZ"
     kind="warning"
     onClick={[Function]}>
     warning
@@ -243,31 +264,31 @@ exports[`Storyshots Button With theme provider (Material) 1`] = `
 <div
   className="epDjBm">
   <button
-    className="cADtOQ"
+    className="bLvfpx"
     kind="default"
     onClick={[Function]}>
     default
   </button>
   <button
-    className="jfRLRd"
+    className="iVupic"
     kind="primary"
     onClick={[Function]}>
     primary
   </button>
   <button
-    className="bXnLIP"
+    className="jUFdjw"
     kind="success"
     onClick={[Function]}>
     success
   </button>
   <button
-    className="kexEwl"
+    className="ilWTgv"
     kind="error"
     onClick={[Function]}>
     error
   </button>
   <button
-    className="iQTyOW"
+    className="gWeAuj"
     kind="warning"
     onClick={[Function]}>
     warning
@@ -612,7 +633,7 @@ exports[`Storyshots DataChannel ControlRange - PWM 1`] = `
               placeholder="Integer only"
               type="number" />
             <button
-              className="hhGxPY"
+              className="fqCsyW"
               kind="primary">
               OK
             </button>
@@ -893,7 +914,7 @@ exports[`Storyshots DataChannel DataChannel.ControlNumber 1`] = `
           </a>
         </div>
         <button
-          className="hhGxPY"
+          className="fqCsyW"
           kind="primary"
           onClick={[Function]}>
           Ok
@@ -1078,7 +1099,7 @@ exports[`Storyshots DataChannel DataChannel.ControlString 1`] = `
           </a>
         </div>
         <button
-          className="hhGxPY"
+          className="fqCsyW"
           kind="primary"
           onClick={[Function]}>
           Ok

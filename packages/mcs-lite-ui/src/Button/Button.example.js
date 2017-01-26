@@ -65,8 +65,19 @@ const TomatoButton = styled(Button)`
 storiesOf('Button', module)
   .addWithInfo(
     'API',
-    '',
-    () => <Button>Simple button</Button>,
+    'Default min-width',
+    () => <Button>button</Button>,
+    { inline: true },
+  )
+  .addWithInfo(
+    'With block props',
+    'different size',
+    () =>
+      <Container>
+        <Button>Button</Button>
+        <Button>Simple button</Button>
+        <Button block>block</Button>
+      </Container>,
     { inline: true },
   )
   .addWithInfo(
