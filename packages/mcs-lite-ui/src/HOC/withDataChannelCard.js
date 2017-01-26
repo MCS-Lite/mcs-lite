@@ -1,7 +1,7 @@
 import React, { PropTypes } from 'react';
 import DataChannelCard from '../DataChannelCard';
 
-const withDataChannelCard = (BaseComponent, displayName) => {
+const withDataChannelCard = (BaseComponent, displayName = '') => {
   const WrapperComponent = ({ childrenProps, ...otherProps }) =>
     <DataChannelCard {...otherProps}>
       <BaseComponent {...childrenProps} />
