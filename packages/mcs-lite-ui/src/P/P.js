@@ -1,9 +1,10 @@
 import React, { PropTypes } from 'react';
 import styled from 'styled-components';
 import R from 'ramda';
+import isString from '../utils/isString';
 
 const getBaseComponent = R.ifElse(
-  R.is(String),
+  isString,
   R.always('p'),
   R.always('div'),
 );

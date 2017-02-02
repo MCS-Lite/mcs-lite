@@ -11,17 +11,18 @@ import A from '../A';
 storiesOf('Overlay', module)
   .addWithInfo(
     'API',
-    '',
+    'state = { show: true }',
     () => {
       class SimpleOverlay extends React.Component {
-        state = { show: false };
+        state = { show: true, target: undefined };
         onMouseEnter = () => this.setState({ show: !this.state.show });
         onHide = () => this.setState({ show: false });
+        getTarget = node => this.setState({ target: node });
         render() {
           return (
             <div>
               <A
-                ref={(node) => { this.target = node; }}
+                ref={this.getTarget}
                 onMouseEnter={this.onMouseEnter}
                 onMouseLeave={this.onHide}
               >
@@ -31,7 +32,7 @@ storiesOf('Overlay', module)
               {
                 this.state.show && (
                   <Overlay
-                    target={this.target}
+                    target={this.state.target}
                     {...this.props}
                   >
                     <div key="div">This is overlay content.</div>
@@ -62,22 +63,21 @@ storiesOf('Overlay', module)
       `;
 
       class OverlayMenu extends React.Component {
-        state = { show: false };
-        onClick = () => {
-          this.setState({ show: !this.state.show });
-        }
+        state = { show: false, target: undefined };
+        onClick = () => this.setState({ show: !this.state.show });
         onHide = () => this.setState({ show: false });
+        getTarget = node => this.setState({ target: node });
         render() {
           return (
             <div>
-              <Button ref={(node) => { this.target = node; }} onClick={this.onClick}>
+              <Button ref={this.getTarget} onClick={this.onClick}>
                 Button
               </Button>
 
               {
                 this.state.show && (
                   <Overlay
-                    target={this.target}
+                    target={this.state.target}
                     onClickOutSide={this.onHide}
                     {...this.props}
                   >

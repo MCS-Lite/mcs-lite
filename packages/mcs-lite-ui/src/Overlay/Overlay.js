@@ -4,15 +4,15 @@ import React, { PropTypes } from 'react';
 import { findDOMNode } from 'react-dom';
 import Portal from 'react-overlays/lib/Portal';
 import Transition from 'react-motion-ui-pack';
-import DomAlign from './DomAlign';
-import ClickOutside from './ClickOutside';
+import DomAlign from '../DomAlign';
+import ClickOutside from '../ClickOutside';
 import emptyFunction from '../utils/emptyFunction';
 
 class Overlay extends React.Component {
   static propTypes = {
     onClickOutSide: PropTypes.func,                // for ClickOutside
     children: PropTypes.node.isRequired,
-    target: PropTypes.any.isRequired,              // react mounted instance
+    target: PropTypes.any,                         // react mounted instance
     alignConfig: PropTypes.object.isRequired,      // docs: https://github.com/yiminghe/dom-align#alignconfig-object-details
     transitionConfig: PropTypes.object.isRequired, // docs: https://github.com/souporserious/react-motion-ui-pack#props
   }

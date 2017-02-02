@@ -1,7 +1,7 @@
 import React, { PropTypes } from 'react';
 import styled from 'styled-components';
 import R from 'ramda';
-import withDataChannelCard from '../HOC/withDataChannelCard';
+import withDataChannelCard from './withDataChannelCard';
 import InputRange from '../InputRange';
 import P from '../P';
 

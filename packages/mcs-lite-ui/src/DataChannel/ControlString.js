@@ -1,6 +1,6 @@
 import React, { PropTypes } from 'react';
 import styled from 'styled-components';
-import withDataChannelCard from '../HOC/withDataChannelCard';
+import withDataChannelCard from './withDataChannelCard';
 import ButtonClear from './ButtonClear';
 import Textarea from '../Textarea';
 import Button from '../Button';
