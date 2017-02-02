@@ -4,8 +4,8 @@ Try it online - http://mcs-lite-ui.netlify.com/
 
 ## Requirements
 
--   node >= 7.4.0
--   npm >= 4.0.5
+-   node >= 7.5.0
+-   npm >= 4.1.2
 
 ## Packages
 
