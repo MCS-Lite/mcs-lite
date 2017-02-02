@@ -1,6 +1,4 @@
-exports[`ClickOutside should add a "click" EventListener of document 1`] = `Object {}`;
-
-exports[`ClickOutside should add a "click" EventListener of document 2`] = `
+exports[`ClickOutside should add a "click" EventListener of document 1`] = `
 Object {
   "click": [Function],
 }
