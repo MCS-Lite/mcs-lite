@@ -3,6 +3,6 @@ import React from 'react';
 const Header = () =>
   <header>
     Header
-  </header>
+  </header>;
 
 export default Header;
