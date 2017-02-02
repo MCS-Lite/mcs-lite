@@ -5,6 +5,9 @@ module.exports = {
   ],
   globals: {
     jest: true,
+    describe: true,
+    it: true,
+    expect: true,
   },
   rules: {
     'react/prop-types': 0,

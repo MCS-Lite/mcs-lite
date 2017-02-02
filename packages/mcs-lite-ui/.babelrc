@@ -1,3 +1,11 @@
 {
-  "presets": ["mcs-lite"]
+  "presets": ["mcs-lite"],
+  "env": {
+    "production": {
+      "ignore": [
+        "example.js",
+        "test.js"
+      ]
+    }
+  }
 }

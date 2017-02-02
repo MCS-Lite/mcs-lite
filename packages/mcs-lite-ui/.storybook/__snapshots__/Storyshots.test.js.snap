@@ -303,6 +303,34 @@ exports[`Storyshots Card API 1`] = `
 </div>
 `;
 
+exports[`Storyshots ClickOutside API 1`] = `
+<div
+  className="eHLExQ">
+  Inside (Try to click outside.)
+</div>
+`;
+
+exports[`Storyshots DataChannel ButtonClear 1`] = `
+<div
+  className="cqMgnG"
+  color="black">
+  <a
+    className="enrdWE"
+    color="primary">
+    <svg
+      fill="currentColor"
+      height="1em"
+      preserveAspectRatio="xMidYMid meet"
+      viewBox="0 0 40 40"
+      width="1em">
+      <path
+        d="M15.9 16.4v12.9q0 .3-.2.5t-.5.2h-1.4q-.3 0-.5-.2t-.2-.5V16.4q0-.3.2-.5t.5-.2h1.4q.3 0 .5.2t.2.5zm5.7 0v12.9q0 .3-.2.5t-.5.2h-1.4q-.3 0-.5-.2t-.2-.5V16.4q0-.3.2-.5t.5-.2h1.4q.3 0 .5.2t.2.5zm5.8 0v12.9q0 .3-.2.5t-.6.2h-1.4q-.3 0-.5-.2t-.2-.5V16.4q0-.3.2-.5t.5-.2h1.4q.4 0 .6.2t.2.5zm2.8 16.2V11.4h-20v21.2q0 .5.2.9t.3.6.2.2h18.6q.1 0 .2-.2t.4-.6.1-.9zm-15-24h10L24.1 6q-.1-.2-.3-.3h-7.1q-.2.1-.4.3zm20.7.7v1.4q0 .3-.2.5t-.5.2h-2.1v21.2q0 1.8-1.1 3.2t-2.5 1.3H10.9q-1.4 0-2.5-1.3t-1-3.1V11.4H5.2q-.3 0-.5-.2t-.2-.5V9.3q0-.3.2-.5t.5-.2h6.9l1.6-3.8q.3-.8 1.2-1.4t1.7-.5h7.2q.9 0 1.8.5t1.2 1.4l1.5 3.8h6.9q.3 0 .5.2t.2.5z" />
+    </svg>
+    Clear
+  </a>
+</div>
+`;
+
 exports[`Storyshots DataChannel ControlRange - Category, GPIO and Analog 1`] = `
 <div
   className="bnxHrL">
@@ -1225,6 +1253,45 @@ exports[`Storyshots DataChannel Fixed width 1`] = `
 </div>
 `;
 
+exports[`Storyshots DataChannel withDataChannelCard (HOC) 1`] = `
+<div
+  className="cVdXxp">
+  <div
+    className="fROLJM" />
+  <div
+    className="dJSrbi">
+    <div>
+      Wrap with HOC
+    </div>
+  </div>
+  <div>
+    <h4
+      className="ezDjUV"
+      color="black">
+      Title
+    </h4>
+    <div
+      className="jyQfel"
+      color="grayBase">
+      <small
+        className="gPtzLl">
+        123125125125125
+      </small>
+    </div>
+    <hr
+      className="grCtyw" />
+    <div
+      className="bMkgFU"
+      color="black">
+      <MockReactTextTruncate
+        line={2}
+        text="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
+        truncateText=" ..." />
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots DataChannelCard API 1`] = `
 <div
   className="cVdXxp">
@@ -1308,41 +1375,13 @@ exports[`Storyshots DataChannelCard Custom width and height 1`] = `
 </div>
 `;
 
-exports[`Storyshots HOC withDataChannelCard 1`] = `
-<div
-  className="cVdXxp">
-  <div
-    className="fROLJM" />
-  <div
-    className="dJSrbi">
-    <div>
-      CustomDataChannel
-    </div>
+exports[`Storyshots DomAlign API 1`] = `
+<div>
+  <div>
+    Target node
   </div>
   <div>
-    <h4
-      className="ezDjUV"
-      color="black">
-      Title
-    </h4>
-    <div
-      className="jyQfel"
-      color="grayBase">
-      <small
-        className="gPtzLl">
-        123125125125125
-      </small>
-    </div>
-    <hr
-      className="grCtyw" />
-    <div
-      className="bMkgFU"
-      color="black">
-      <MockReactTextTruncate
-        line={2}
-        text="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
-        truncateText=" ..." />
-    </div>
+    Source node
   </div>
 </div>
 `;

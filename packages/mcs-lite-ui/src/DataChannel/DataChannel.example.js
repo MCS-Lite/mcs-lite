@@ -4,11 +4,38 @@ import React from 'react';
 import styled from 'styled-components';
 import { storiesOf, action } from '@kadira/storybook';
 import DataChannel from '.';
+import withDataChannelCard from './withDataChannelCard';
+import ButtonClear from './ButtonClear';
 import Button from '../Button';
 import Input from '../Input';
 import P from '../P';
 
 storiesOf('DataChannel', module)
+  .addWithInfo(
+    'ButtonClear',
+    'Shared Button.',
+    () => <ButtonClear />,
+    { inline: true },
+  )
+
+  .addWithInfo(
+    'withDataChannelCard (HOC)',
+    'Use with HOC.',
+    () => {
+      const Component = () => <div>Wrap with HOC</div>;
+      const CustomDataChannel = withDataChannelCard(Component);
+
+      return (
+        <CustomDataChannel
+          title="Title"
+          subtitle="123125125125125"
+          description="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
+        />
+      );
+    },
+    { inline: true },
+  )
+
   .addWithInfo(
     'DataChannel.ControlNumber',
     '',
