@@ -11,6 +11,7 @@ const Container = styled.div`
 
 const CardWrapper = styled.div`
   display: flex;
+  flex-wrap: wrap;
 `;
 
 const Icon = styled(Heading)`
