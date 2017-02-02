@@ -1,45 +1,26 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Provider } from 'react-redux';
+import { Router, Route, browserHistory } from 'react-router';
+import { syncHistoryWithStore } from 'react-router-redux'
 import { ThemeProvider, injectGlobal } from 'styled-components';
 import { theme } from 'mcs-lite-theme';
-import App from './App';
+import App from './containers/App';
+import Device from './containers/Device';
+import configureStore from './store/configureStore';
 
-import 'normalize.css';
-import './index.css';
-
-injectGlobal`
-  @font-face {
-   font-family: 'Noto Sans TC';
-   font-style: normal;
-   font-weight: 400;
-   src: url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Regular.woff2) format('woff2'),
-        url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Regular.woff) format('woff'),
-        url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Regular.otf) format('opentype');
-  }
-  @font-face {
-   font-family: 'Noto Sans TC';
-   font-style: normal;
-   font-weight: 700;
-   src: url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Bold.woff2) format('woff2'),
-        url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Bold.woff) format('woff'),
-        url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Bold.otf) format('opentype');
-  }
-
-  html {
-    font-size: ${theme.base.fontSize};
-    line-height: ${theme.base.lineHeight};
-  }
-
-  body {
-    font-family: "Noto Sans TC", "RionaSans", "Helvetica", "微軟正黑體", "Microsoft JhengHei", "黑體-繁","Heiti TC", "新細明體", "PMingLiU", "sans-serif";
-    background-color: ${theme.base.bodyBackgroundColor};
-    color: ${theme.base.bodyColor};
-  }
-`;
+const store = configureStore();
+const history = syncHistoryWithStore(browserHistory, store);
 
 ReactDOM.render(
   <ThemeProvider theme={theme}>
-    <App />
+    <Provider store={store}>
+      <Router history={history}>
+        <Route path="/" component={App}>
+          <Route path="/devices" component={Device} />
+        </Route>
+      </Router>
+    </Provider>
   </ThemeProvider>,
-  document.getElementById('root')
+  document.getElementById('root'),
 );
