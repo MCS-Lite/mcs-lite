@@ -2,7 +2,7 @@
   "name": "mcs-lite",
   "scripts": {
     "postinstall": "lerna bootstrap",
-    "clean": "rm -rf node_modules && lerna clean",
+    "clean": "lerna clean && rm -rf node_modules",
     "eslint": "eslint ./",
     "ncu": "ncu && lerna exec --concurrency 1 -- ncu"
   },
