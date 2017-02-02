@@ -9,7 +9,7 @@
     "start": "start-storybook -p 6006 --dont-track",
     "build-storybook": "build-storybook",
     "prebuild": "npm run clean",
-    "build": "NODE_ENV=production babel src --out-dir lib",
+    "build": "NODE_ENV=production babel src --out-dir lib --ignore example.js,test.js",
     "createEntryFile": "node node_modules/mcs-lite-scripts/exportsAllComponents 'src/[A-Z]*' > lib/index.js",
     "postbuild": "npm run createEntryFile",
     "prepublish": "npm run build",
