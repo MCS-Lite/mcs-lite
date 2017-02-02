@@ -1,9 +1,10 @@
+import 'rxjs';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { Router, Route, browserHistory } from 'react-router';
 import { syncHistoryWithStore } from 'react-router-redux'
-import { ThemeProvider, injectGlobal } from 'styled-components';
+import { ThemeProvider } from 'styled-components';
 import { theme } from 'mcs-lite-theme';
 import App from './containers/App';
 import Device from './containers/Device';
