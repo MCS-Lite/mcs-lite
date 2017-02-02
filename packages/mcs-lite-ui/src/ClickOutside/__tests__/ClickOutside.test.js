@@ -21,6 +21,6 @@ describe('ClickOutside', () => {
     );
 
     // After mount
-    expect(typeof documentEvents.click).toBe('function');
+    expect(documentEvents).toMatchSnapshot();
   });
 });

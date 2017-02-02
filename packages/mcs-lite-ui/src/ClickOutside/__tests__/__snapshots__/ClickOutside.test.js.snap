@@ -1,0 +1,7 @@
+exports[`ClickOutside should add a "click" EventListener of document 1`] = `Object {}`;
+
+exports[`ClickOutside should add a "click" EventListener of document 2`] = `
+Object {
+  "click": [Function],
+}
+`;
