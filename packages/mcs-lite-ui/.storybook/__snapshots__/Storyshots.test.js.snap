@@ -1851,6 +1851,48 @@ exports[`Storyshots Menu Combination 1`] = `
 </div>
 `;
 
+exports[`Storyshots Overlay API 1`] = `
+<div>
+  <a
+    className="DvAuM"
+    color="primary"
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}>
+    Hover me
+  </a>
+</div>
+`;
+
+exports[`Storyshots Overlay Dropdown Menu 1`] = `
+<div
+  className="dhGIaz">
+  <div>
+    <button
+      className="fqCsyW"
+      kind="primary"
+      onClick={[Function]}>
+      Button
+    </button>
+  </div>
+  <div>
+    <button
+      className="fqCsyW"
+      kind="primary"
+      onClick={[Function]}>
+      Button
+    </button>
+  </div>
+  <div>
+    <button
+      className="fqCsyW"
+      kind="primary"
+      onClick={[Function]}>
+      Button
+    </button>
+  </div>
+</div>
+`;
+
 exports[`Storyshots P API 1`] = `
 <p
   className="cqMgnG"
