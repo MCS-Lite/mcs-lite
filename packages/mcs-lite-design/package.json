@@ -7,8 +7,7 @@
     "clean": "rm -rf lib",
     "prebuild": "npm run clean",
     "compress:svg": "svgo -f 'src/icon' -o lib/icon --pretty --multipass --indent=2 --quiet",
-    "build": "npm run compress:svg",
-    "prepublish": "npm run build"
+    "build": "npm run compress:svg"
   },
   "author": "",
   "license": "ISC",

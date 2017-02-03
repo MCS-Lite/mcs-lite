@@ -16,6 +16,7 @@ Try it online - http://mcs-lite-ui.netlify.com/
 | `mcs-lite-demo-nextjs`      | Demo how to use mcs-lite-ui.                |
 | `mcs-lite-design`           | The source files to be compressed.          |
 | `mcs-lite-icon`             | Convert svg to react components.            |
+| `mcs-lite-mobile-web`       | MCS Lite mobile website project.            |
 | `mcs-lite-scripts`          | Shared scripts                              |
 | `mcs-lite-theme`            | Defined `Theme` object and color helpers.   |
 | `mcs-lite-ui`               | MCS Lite common UI and storybook demo page. |
@@ -37,6 +38,13 @@ $ npm install # Install all external dependencies of each package.
 $ npm run clean # Remove all node_modules
 ```
 
+## Building all mono-packages
+
+```
+# design => icon => theme => ui
+$ ./tasks/build.sh
+```
+
 ## Testing
 
 ```
@@ -54,24 +62,25 @@ $ npm start
 ### Testing
 
 ```
-$ npm run test --watch --coverage
+$ npm run test:watch
 ```
 
 
 ## NPM Scipts Interface
 
-| **Package**                 | clean | test | start | build | lint | prepublish |
-|-----------------------------|-------|------|-------|-------|------|------------|
-| root                        | V     |      |       |       | es   |            |
-| `babel-preset-mcs-lite`     |       | V    |       |       |      |            |
-| `eslint-config-mcs-lite`    |       | V    |       |       |      |            |
-| `mcs-lite-demo-nextjs`      |       |      | V     |       |      |            |
-| `mcs-lite-design`           | V     |      |       | V     |      | V          |
-| `mcs-lite-icon`             | V     |      |       | V     |      | V          |
-| `mcs-lite-scripts`          |       |      |       |       |      |            |
-| `mcs-lite-theme`            | V     |      |       | V     |      | V          |
-| `mcs-lite-ui`               | V     | V    | V     | V     | V    | V          |
-| `stylelint-config-mcs-lite` |       | V    |       |       |      |            |
+| **Package**                 | clean | test | start | build | lint |
+|-----------------------------|-------|------|-------|-------|------|
+| root                        | V     |      |       |       | es   |
+| `babel-preset-mcs-lite`     |       | V    |       |       |      |
+| `eslint-config-mcs-lite`    |       | V    |       |       |      |
+| `mcs-lite-demo-nextjs`      |       |      | V     |       |      |
+| `mcs-lite-design`           | V     |      |       | V     |      |
+| `mcs-lite-icon`             | V     |      |       | V     |      |
+| `mcs-lite-mobile-web`       | V     | V    | V     | V     |      |
+| `mcs-lite-scripts`          |       |      |       |       |      |
+| `mcs-lite-theme`            | V     |      |       | V     |      |
+| `mcs-lite-ui`               | V     | V    | V     | V     | V    |
+| `stylelint-config-mcs-lite` |       | V    |       |       |      |
 
 ## npm-check-updates
 

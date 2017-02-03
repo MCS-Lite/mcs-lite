@@ -1,0 +1,12 @@
+exports[`devices should return fetchDevices actions 1`] = `
+Object {
+  "type": "mcs-lite-mobile-web/devices/FETCH_DEVICES",
+}
+`;
+
+exports[`devices should return setDevices actions 1`] = `
+Object {
+  "payload": "payload",
+  "type": "mcs-lite-mobile-web/devices/SET_DEVICES",
+}
+`;
