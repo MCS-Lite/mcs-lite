@@ -16,6 +16,7 @@ Try it online - http://mcs-lite-ui.netlify.com/
 | `mcs-lite-demo-nextjs`      | Demo how to use mcs-lite-ui.                |
 | `mcs-lite-design`           | The source files to be compressed.          |
 | `mcs-lite-icon`             | Convert svg to react components.            |
+| `mcs-lite-mobile-web`       | MCS Lite mobile website project.            |
 | `mcs-lite-scripts`          | Shared scripts                              |
 | `mcs-lite-theme`            | Defined `Theme` object and color helpers.   |
 | `mcs-lite-ui`               | MCS Lite common UI and storybook demo page. |
@@ -68,6 +69,7 @@ $ npm run test:watch
 | `mcs-lite-demo-nextjs`      |       |      | V     |       |      |            |
 | `mcs-lite-design`           | V     |      |       | V     |      | V          |
 | `mcs-lite-icon`             | V     |      |       | V     |      | V          |
+| `mcs-lite-mobile-web`       | V     | V    | V     | V     |      | V          |
 | `mcs-lite-scripts`          |       |      |       |       |      |            |
 | `mcs-lite-theme`            | V     |      |       | V     |      | V          |
 | `mcs-lite-ui`               | V     | V    | V     | V     | V    | V          |
