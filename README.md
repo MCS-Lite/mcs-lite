@@ -38,6 +38,12 @@ $ npm install # Install all external dependencies of each package.
 $ npm run clean # Remove all node_modules
 ```
 
+## Building all mono-packages
+
+```
+$ ./tasks/build.sh
+```
+
 ## Testing
 
 ```
@@ -61,19 +67,19 @@ $ npm run test:watch
 
 ## NPM Scipts Interface
 
-| **Package**                 | clean | test | start | build | lint | prepublish |
-|-----------------------------|-------|------|-------|-------|------|------------|
-| root                        | V     |      |       |       | es   |            |
-| `babel-preset-mcs-lite`     |       | V    |       |       |      |            |
-| `eslint-config-mcs-lite`    |       | V    |       |       |      |            |
-| `mcs-lite-demo-nextjs`      |       |      | V     |       |      |            |
-| `mcs-lite-design`           | V     |      |       | V     |      | V          |
-| `mcs-lite-icon`             | V     |      |       | V     |      | V          |
-| `mcs-lite-mobile-web`       | V     | V    | V     | V     |      | V          |
-| `mcs-lite-scripts`          |       |      |       |       |      |            |
-| `mcs-lite-theme`            | V     |      |       | V     |      | V          |
-| `mcs-lite-ui`               | V     | V    | V     | V     | V    | V          |
-| `stylelint-config-mcs-lite` |       | V    |       |       |      |            |
+| **Package**                 | clean | test | start | build | lint |
+|-----------------------------|-------|------|-------|-------|------|
+| root                        | V     |      |       |       | es   |
+| `babel-preset-mcs-lite`     |       | V    |       |       |      |
+| `eslint-config-mcs-lite`    |       | V    |       |       |      |
+| `mcs-lite-demo-nextjs`      |       |      | V     |       |      |
+| `mcs-lite-design`           | V     |      |       | V     |      |
+| `mcs-lite-icon`             | V     |      |       | V     |      |
+| `mcs-lite-mobile-web`       | V     | V    | V     | V     |      |
+| `mcs-lite-scripts`          |       |      |       |       |      |
+| `mcs-lite-theme`            | V     |      |       | V     |      |
+| `mcs-lite-ui`               | V     | V    | V     | V     | V    |
+| `stylelint-config-mcs-lite` |       | V    |       |       |      |
 
 ## npm-check-updates
 
