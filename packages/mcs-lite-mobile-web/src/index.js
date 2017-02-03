@@ -1,9 +1,12 @@
-import 'rxjs';
+/* global document */
+/* eslint import/first: 0 */
+
+import './utils/rxjs';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { Router, Route, browserHistory } from 'react-router';
-import { syncHistoryWithStore } from 'react-router-redux'
+import { syncHistoryWithStore } from 'react-router-redux';
 import { ThemeProvider } from 'styled-components';
 import { theme } from 'mcs-lite-theme';
 import App from './containers/App';

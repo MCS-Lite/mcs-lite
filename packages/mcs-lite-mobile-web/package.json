@@ -2,18 +2,15 @@
   "private": true,
   "name": "mcs-lite-mobile-web",
   "version": "0.1.0",
-  "eslintConfig": {
-    "extends": "mcs-lite"
-  },
   "devDependencies": {
     "babel-eslint": "^7.1.1",
     "eslint": "^3.14.1",
     "eslint-config-airbnb": "^14.0.0",
-    "eslint-config-mcs-lite": "^0.0.0",
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jsx-a11y": "^3.0.2",
     "eslint-plugin-react": "^6.9.0",
-    "react-scripts": "0.8.5"
+    "react-scripts": "0.8.5",
+    "redux-freeze": "^0.1.5"
   },
   "dependencies": {
     "mcs-lite-icon": "^0.0.0",

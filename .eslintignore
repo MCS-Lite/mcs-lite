@@ -1,6 +1,7 @@
 node_modules/
 flow-typed/
 lib/
+build/
 storybook-static/
 coverage/
 !.storybook/
