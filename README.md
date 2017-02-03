@@ -1,7 +1,7 @@
 # MCS Lite [![CircleCI](https://circleci.com/gh/evenchange4/mcs-lite/tree/master.svg?style=svg&circle-token=c633ab2d85927871bccf4c39d676ce242f2da24c)](https://circleci.com/gh/evenchange4/mcs-lite/tree/master)
 
-Try it online - http://mcs-lite-ui.netlify.com/
-Try it online - http://mcs-lite-mobile-web.netlify.com/
+-   Try it online - http://mcs-lite-ui.netlify.com/
+-   Try it online - http://mcs-lite-mobile-web.netlify.com/
 
 ## Requirements
 
