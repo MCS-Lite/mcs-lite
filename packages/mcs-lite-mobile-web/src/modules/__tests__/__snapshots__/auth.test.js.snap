@@ -1,0 +1,12 @@
+exports[`auth should return setCookie actions 1`] = `
+Object {
+  "payload": "payload",
+  "type": "mcs-lite-mobile-web/auth/SET_COOKIE",
+}
+`;
+
+exports[`auth should return signin actions 1`] = `
+Object {
+  "type": "mcs-lite-mobile-web/auth/SIGNIN",
+}
+`;
