@@ -41,6 +41,7 @@ $ npm run clean # Remove all node_modules
 ## Building all mono-packages
 
 ```
+# design => icon => theme => ui
 $ ./tasks/build.sh
 ```
 
