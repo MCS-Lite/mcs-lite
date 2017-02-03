@@ -54,7 +54,7 @@ $ npm start
 ### Testing
 
 ```
-$ npm run test --watch --coverage
+$ npm run test:watch
 ```
 
 
