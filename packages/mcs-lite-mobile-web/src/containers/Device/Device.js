@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import { Button, Heading, PullToRefresh } from 'mcs-lite-ui';
 import { actions } from '../../modules/devices';
 
-const Container = styled.div`
+const Container = styled.section`
   height: 1200px;
   background-color: ${props => props.theme.color.grayLight}
 `;
