@@ -1,4 +1,5 @@
 /* global document */
+// Ref: https://github.com/renatn/react-pull-to-refresh/blob/master/PullToRefresh.jsx
 
 import React, { PropTypes } from 'react';
 import styled from 'styled-components';
@@ -61,7 +62,7 @@ class PullToRefresh extends React.Component {
     if (distance < 0) return;   // disable pulling up
     // if (distance > 120) return; // limit range of pulling down
     if (this.state.isRefreshing) return;
-    e.preventDefault();
+    e.preventDefault(); // TODO: https://github.com/facebook/react/issues/6436
 
     this.setState({ distance });
   }
