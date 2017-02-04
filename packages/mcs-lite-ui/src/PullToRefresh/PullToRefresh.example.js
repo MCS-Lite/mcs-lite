@@ -4,7 +4,12 @@ import { storiesOf, action } from '@kadira/storybook';
 import PullToRefresh from '.';
 
 const Body = styled.div`
-  height: 300px;
+  ${''/* height: 300px; */}
+  overflow: hidden;
+`;
+
+const Content = styled.section`
+  height: 500px;
 `;
 
 const fetchMock = () =>
@@ -25,9 +30,9 @@ storiesOf('PullToRefresh', module)
     () =>
       <Body>
         <PullToRefresh onRefresh={onRefresh}>
-          <div>
+          <Content>
             Pull me
-          </div>
+          </Content>
         </PullToRefresh>
       </Body>,
     { inline: false },
