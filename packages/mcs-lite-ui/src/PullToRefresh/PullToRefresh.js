@@ -5,18 +5,22 @@ import { IconTrashO, IconEllipsisV } from 'mcs-lite-icon';
 const height = 60;
 
 const PullWrapper = styled.div`
-  position: relative;
-  height: 100%;
-  overflow-y: hidden;
+  ${''/* position: relative; */}
+  ${''/* height: 100%; */}
+  ${''/* overflow-y: hidden; */}
   background-color: ${props => props.theme.color.grayBase};
+  ${''/* transform: translate3d(0 , ${props => props.distance}px, 0); */}
+  margin-top: ${props => props.distance}px;
+  transition: all .25s ease;
 `;
 
 const LoadingContainer = styled.div`
-  position: absolute;
-  width: 100%;
+  ${''/* position: absolute; */}
+  margin-top: -${height}px;
+  ${''/* width: 100%; */}
   height: ${height}px;
-  transform: translate3d(0 , ${props => (Number(props.distance) - height)}px, 0);
-  transition: all .25s ease;
+  ${''/* transform: translate3d(0 , ${props => (Number(props.distance) - height)}px, 0); */}
+  ${''/* transition: all .25s ease; */}
   display: flex;
   align-items: center;
   justify-content: center;
@@ -29,11 +33,11 @@ const LoadingContainer = styled.div`
 `;
 
 const ChildrenContainer = styled.div`
-  position: relative;
-  transform: translate3d(0 , ${props => props.distance}px, 0);
-  transition: all .25s ease;
+  ${''/* position: relative; */}
+  ${''/* transform: translate3d(0 , ${props => props.distance}px, 0);
+  transition: all .25s ease; */}
   background-color: red;
-  height: 100%;
+  ${''/* height: 100%; */}
 `;
 
 class PullToRefresh extends React.Component {
@@ -65,6 +69,7 @@ class PullToRefresh extends React.Component {
     return (
       <PullWrapper
         {...otherProps}
+        distance={this.state.distance}
         onTouchStart={this.onTouchStart}
         onTouchEnd={this.onTouchEnd}
         onTouchMove={this.onTouchMove}
