@@ -7,7 +7,7 @@ const height = 60;
 const PullWrapper = styled.div`
   position: relative;
   height: 100%;
-  overflow-y: hidden;
+  ${''/* overflow-y: hidden; */}
   background-color: ${props => props.theme.color.grayBase};
 `;
 
