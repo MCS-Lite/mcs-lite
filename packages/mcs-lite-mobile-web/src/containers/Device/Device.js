@@ -1,16 +1,23 @@
 import React from 'react';
+import styled from 'styled-components';
 import { connect } from 'react-redux';
-import { Button } from 'mcs-lite-ui';
+import { Button, Heading } from 'mcs-lite-ui';
 import { actions } from '../../modules/devices';
 
+const Container = styled.div`
+  height: 1200px;
+  background-color: ${props => props.theme.color.grayLight}
+`;
+
 const Device = props =>
-  <div>
-    Device page
+  <Container>
+    <Heading>Device page</Heading>
+
     <pre>
       {JSON.stringify(props.devices, null, 2)}
     </pre>
     <Button onClick={props.fetchDevices}>fetch</Button>
-  </div>;
+  </Container>;
 
 export default connect(
   ({ devices }) => ({ devices }),

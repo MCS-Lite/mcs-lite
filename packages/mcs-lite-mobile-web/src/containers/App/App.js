@@ -9,18 +9,14 @@ const Root = styled.div`
   flex-direction: column;
 `;
 
-const Main = styled.main`
-  height: 300px;
-`;
-
 const App = ({ children }) =>
   <Root>
     <Header />
-    <Main>
+    <main>
       <MaxWidthCenterWrapper>
         {children}
       </MaxWidthCenterWrapper>
-    </Main>
+    </main>
   </Root>;
 
 export default App;
