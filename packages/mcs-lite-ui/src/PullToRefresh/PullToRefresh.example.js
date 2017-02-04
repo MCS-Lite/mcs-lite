@@ -4,12 +4,13 @@ import { storiesOf, action } from '@kadira/storybook';
 import PullToRefresh from '.';
 
 const Body = styled.div`
-  ${''/* height: 300px; */}
   overflow: hidden;
+  background-color: ${props => props.theme.color.grayLight}
 `;
 
 const Content = styled.section`
   height: 500px;
+  background-color: ${props => props.theme.color.primary}
 `;
 
 const fetchMock = () =>
