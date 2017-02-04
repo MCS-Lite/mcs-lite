@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { connect } from 'react-redux';
-import { Button, Heading } from 'mcs-lite-ui';
+import { Button, Heading, PullToRefresh } from 'mcs-lite-ui';
 import { actions } from '../../modules/devices';
 
 const Container = styled.div`
@@ -10,14 +10,16 @@ const Container = styled.div`
 `;
 
 const Device = props =>
-  <Container>
-    <Heading>Device page</Heading>
+  <PullToRefresh>
+    <Container>
+      <Heading>Device page</Heading>
 
-    <pre>
-      {JSON.stringify(props.devices, null, 2)}
-    </pre>
-    <Button onClick={props.fetchDevices}>fetch</Button>
-  </Container>;
+      <pre>
+        {JSON.stringify(props.devices, null, 2)}
+      </pre>
+      <Button onClick={props.fetchDevices}>fetch</Button>
+    </Container>
+  </PullToRefresh>;
 
 export default connect(
   ({ devices }) => ({ devices }),
