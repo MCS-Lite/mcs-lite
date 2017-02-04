@@ -44,7 +44,10 @@ export default function reducer(state = initialState, action = {}) {
     case SET_DEVICES:
       return {
         ...state,
-        devices: action.payload,
+        devices: [
+          ...state.devices,
+          action.payload,
+        ],
       };
     default:
       return state;
