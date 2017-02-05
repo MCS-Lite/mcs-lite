@@ -4,7 +4,9 @@
 import React, { PropTypes } from 'react';
 import Hammer from 'react-hammerjs';
 import styled from 'styled-components';
-import { IconTrashO, IconEllipsisV } from 'mcs-lite-icon';
+import { IconArrowDown, IconCircleLoading } from 'mcs-lite-icon';
+import Heading from '../Heading';
+import Spin from '../Spin';
 
 const HEIGHT = 60;
 const SENSITIVITY = 2;
@@ -22,8 +24,8 @@ const LoadingContainer = styled.div`
   justify-content: center;
 
   > * {
-    transition: all .25s ease;
-    transform: ${props => props.distance >= HEIGHT ? 'rotate(-180deg)' : 'initial'};
+    transition: all 0.25s ease;
+    transform: ${props => props.distance >= HEIGHT ? 'rotate(180deg)' : 'initial'};
   }
 `;
 
@@ -36,8 +38,8 @@ class PullToRefresh extends React.Component {
   }
 
   static defaultProps = {
-    IconArrow: IconEllipsisV,
-    IconLoading: IconTrashO,
+    IconArrow: () => <Heading level={2} color="grayBase"><Spin><IconCircleLoading /></Spin></Heading>,
+    IconLoading: () => <Heading level={2} color="grayBase"><IconArrowDown /></Heading>,
   }
 
   state = { distance: 0, isRefreshing: false };
