@@ -6,7 +6,7 @@ import styled from 'styled-components';
 import { IconTrashO, IconEllipsisV } from 'mcs-lite-icon';
 
 const height = 60;
-const SENSITIVITY = 2.5;
+const SENSITIVITY = 2;
 
 const PullWrapper = styled.div`
   ${''/* position: relative; */}
@@ -49,19 +49,24 @@ const LoadingContainer = styled.div`
 class PullToRefresh extends React.Component {
   state = { distance: 0, isRefreshing: false };
   onTouchStart = (e) => {
-    this.checkPullFromTop();
-    if (!this.isPullFromTop) return;
+    if (document.body.scrollTop > 0) return; // 非從頂端往下拉。
 
+    this.isPullFromTop = true;
     this.from = this.to = e.touches[0].pageY;
   }
   onTouchMove = (e) => {
-    if (!this.isPullFromTop) return;
+    if (this.state.isRefreshing) return;
+
+    if (!this.isPullFromTop && document.body.scrollTop <= 0) { // 非從頂端往下拉，但拉回頂端。
+      this.onTouchStart(e); // trigger start
+    } else if (!this.isPullFromTop) {
+      return;
+    }
 
     this.to = e.touches[0].pageY;
     const distance = (this.to - this.from) / SENSITIVITY;
     if (distance < 0) return;   // disable pulling up
     // if (distance > 120) return; // limit range of pulling down
-    if (this.state.isRefreshing) return;
     e.preventDefault(); // TODO: https://github.com/facebook/react/issues/6436
 
     this.setState({ distance });
@@ -81,13 +86,6 @@ class PullToRefresh extends React.Component {
   doneCallback = () => {
     this.isPullFromTop = false;
     this.setState({ distance: 0, isRefreshing: false });
-  }
-  checkPullFromTop = () => {
-    if (document.body.scrollTop === 0) {
-      this.isPullFromTop = true;
-    } else {
-      this.isPullFromTop = false;
-    }
   }
   render() {
     const { children, ...otherProps } = this.props;
