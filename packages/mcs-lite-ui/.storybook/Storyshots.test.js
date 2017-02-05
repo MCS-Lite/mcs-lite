@@ -1,3 +1,11 @@
 import initStoryshots from 'storyshots';
 
-initStoryshots();
+/**
+ * Ignore Snapshot testing with "[Skip]" in story name.
+ *
+ * @author Michael Hsu
+ */
+
+initStoryshots({
+  storyRegex: /^((?!\[Skip\]).)*$/,
+});
