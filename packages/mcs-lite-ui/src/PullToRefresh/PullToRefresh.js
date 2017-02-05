@@ -2,109 +2,103 @@
 // Ref: https://github.com/renatn/react-pull-to-refresh/blob/master/PullToRefresh.jsx
 
 import React, { PropTypes } from 'react';
+import Hammer from 'react-hammerjs';
 import styled from 'styled-components';
 import { IconTrashO, IconEllipsisV } from 'mcs-lite-icon';
 
-const height = 60;
+const HEIGHT = 60;
 const SENSITIVITY = 2;
 
 const PullWrapper = styled.div`
-  ${''/* position: relative; */}
-  ${''/* height: 100%; */}
-  ${''/* overflow-y: hidden; */}
-  ${''/* background-color: ${props => props.theme.color.grayBase}; */}
-  ${''/* transform: translate3d(0 , ${props => Number(props.distance)}px, 0); */}
   margin-top: ${props => Number(props.distance)}px;
-  ${''/* margin-top: ${props => props.distance}px; */}
-  ${''/* transition: all .25s ease; */}
   transition: ${props => (props.distance === 0 || props.isRefreshing) ? 'all .25s ease' : 'initial'};
 `;
 
 const LoadingContainer = styled.div`
-  ${''/* position: absolute; */}
-  margin-top: -${height}px;
-  ${''/* width: 100%; */}
-  height: ${height}px;
-  ${''/* transform: translate3d(0 , ${props => (Number(props.distance) - height)}px, 0); */}
-  ${''/* transition: all .25s ease; */}
+  margin-top: -${HEIGHT}px;
+  height: ${HEIGHT}px;
   display: flex;
   align-items: center;
   justify-content: center;
-  ${''/* background-color: green; */}
 
   > * {
     transition: all .25s ease;
-    transform: ${props => props.distance >= 60 ? 'rotate(-180deg)' : 'initial'};
+    transform: ${props => props.distance >= HEIGHT ? 'rotate(-180deg)' : 'initial'};
   }
 `;
-//
-// const ChildrenContainer = styled.div`
-//   ${''/* position: relative; */}
-//   ${''/* transform: translate3d(0 , ${props => props.distance}px, 0);
-//   transition: all .25s ease; */}
-//   ${''/* background-color: red; */}
-//   ${''/* height: 100%; */}
-// `;
 
 class PullToRefresh extends React.Component {
+  static propTypes = {
+    children: PropTypes.node.isRequired,
+    onRefresh: PropTypes.func.isRequired,
+    IconArrow: PropTypes.any,
+    IconLoading: PropTypes.any,
+  }
+
+  static defaultProps = {
+    IconArrow: IconEllipsisV,
+    IconLoading: IconTrashO,
+  }
+
   state = { distance: 0, isRefreshing: false };
-  onTouchStart = (e) => {
+
+  onPanDownStart = (e) => {
+    this.fromY = this.toY = e.srcEvent.pageY;
+  }
+
+  onPanDown = (e) => {
     if (document.body.scrollTop > 0) return; // 非從頂端往下拉。
+    if (this.state.isRefreshing) {
+      // 正在 refresh，不要亂動。
+      e.preventDefault();
+      return;
+    }
+    e.preventDefault();
 
-    this.isPullFromTop = true;
-    this.from = this.to = e.touches[0].pageY;
+    this.toY = e.srcEvent.pageY;
+    this.setState({ distance: (this.toY - this.fromY) / SENSITIVITY });
   }
-  onTouchMove = (e) => {
-    if (this.state.isRefreshing) return;
 
-    if (!this.isPullFromTop && document.body.scrollTop <= 0) { // 非從頂端往下拉，但拉回頂端。
-      this.onTouchStart(e); // trigger start
-    } else if (!this.isPullFromTop) {
+  onPanDownEnd = () => {
+    if (this.state.isRefreshing) return; // 正在 refresh，不要打。
+    if (this.state.distance < HEIGHT) { // 沒超過一定高度不需要 Refresh。
+      this.reset();
       return;
     }
 
-    this.to = e.touches[0].pageY;
-    const distance = (this.to - this.from) / SENSITIVITY;
-    if (distance < 0) return;   // disable pulling up
-    // if (distance > 120) return; // limit range of pulling down
-    e.preventDefault(); // TODO: https://github.com/facebook/react/issues/6436
-
-    this.setState({ distance });
-  }
-  onTouchEnd = () => {
-    if (!this.isPullFromTop) return;
-
-    if (this.state.distance < height) {
-      this.doneCallback();
-      return;
-    }
-
-    this.setState({ distance: height, isRefreshing: true });
-    this.props.onRefresh(this.doneCallback);
+    this.setState({ distance: HEIGHT, isRefreshing: true });
+    this.props.onRefresh(this.reset);
   }
 
-  doneCallback = () => {
-    this.isPullFromTop = false;
+  reset = () => {
     this.setState({ distance: 0, isRefreshing: false });
   }
   render() {
-    const { children, ...otherProps } = this.props;
+    const { children, IconArrow, IconLoading, ...otherProps } = this.props;
     const { isRefreshing } = this.state;
 
     return (
-      <PullWrapper
-        {...otherProps}
-        distance={this.state.distance}
-        isRefreshing={isRefreshing}
-        onTouchStart={this.onTouchStart}
-        onTouchEnd={this.onTouchEnd}
-        onTouchMove={this.onTouchMove}
+      <Hammer
+        onPan={this.onPanDown}
+        onPanStart={this.onPanDownStart}
+        onPanEnd={this.onPanDownEnd}
+        direction="DIRECTION_DOWN"
+        options={{
+          touchAction: 'pan-x pan-y',
+        }}
       >
-        <LoadingContainer distance={this.state.distance}>
-          {this.state.isRefreshing ? <IconEllipsisV /> : <IconTrashO />}
-        </LoadingContainer>
-        {children}
-      </PullWrapper>
+        <PullWrapper
+          {...otherProps}
+          distance={this.state.distance}
+          isRefreshing={isRefreshing}
+        >
+          <LoadingContainer distance={this.state.distance}>
+            {this.state.isRefreshing ? <IconArrow /> : <IconLoading />}
+          </LoadingContainer>
+          {children}
+
+        </PullWrapper>
+      </Hammer>
     );
   }
 }
