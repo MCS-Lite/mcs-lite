@@ -11,9 +11,9 @@ const mockInfoAddon = {
 setAddon(mockInfoAddon);
 addDecorator(centered);
 
-// For DataChannelCard
+// For DataChannelCard component.
 jest.mock('react-text-truncate', () => 'MockReactTextTruncate');
 // For DomAlign, findDOMNode not supported. ref: https://github.com/facebook/react/issues/8324
 jest.mock('react-dom');
-
+// For PullToRefresh component.
 jest.mock('react-hammerjs', () => 'MockReactHammerJS');
