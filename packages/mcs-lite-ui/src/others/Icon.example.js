@@ -5,6 +5,7 @@ import * as Icons from 'mcs-lite-icon/lib/index';
 import Heading from '../Heading';
 import Card from '../Card';
 import P from '../P';
+import Spin from '../Spin';
 
 const Container = styled.div`
 `;
@@ -42,6 +43,15 @@ storiesOf('Icon [mcs-lite-icon]')
     '',
     () =>
       <Icons.IconEllipsisV />,
+    { inline: true },
+  )
+  .addWithInfo(
+    'Spin Icon',
+    '',
+    () =>
+      <Spin>
+        <Icons.IconCircleLoading />
+      </Spin>,
     { inline: true },
   )
   .addWithInfo(

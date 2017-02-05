@@ -1583,6 +1583,63 @@ exports[`Storyshots Icon [mcs-lite-icon] Icon list, Custom color and size 1`] = 
           viewBox="0 0 24 24"
           width="1em">
           <path
+            d="M12 18.9l5-5h-3.8V5.1h-2.5v8.8H7l5 5z" />
+        </svg>
+      </h1>
+      <p
+        className="jyQfel"
+        color="grayBase">
+        <IconArrowDown />
+      </p>
+      <div
+        className="knOAnV"
+        color="primary">
+        mcs-lite-icon/lib/
+        IconArrowDown
+      </div>
+    </div>
+    <div
+      className="WFoSn">
+      <h1
+        className="hVfmdf"
+        color="grayBase">
+        <svg
+          fill="currentColor"
+          height="1em"
+          preserveAspectRatio="xMidYMid meet"
+          viewBox="0 0 24 24"
+          width="1em">
+          <path
+            d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm0 18c-4.4 0-8-3.6-8-8s3.6-8 8-8 8 3.6 8 8-3.6 8-8 8z"
+            opacity=".3" />
+          <path
+            d="M12 4c4.4 0 8 3.6 8 8h2c0-5.5-4.5-10-10-10v2z" />
+        </svg>
+      </h1>
+      <p
+        className="jyQfel"
+        color="grayBase">
+        <IconCircleLoading />
+      </p>
+      <div
+        className="knOAnV"
+        color="primary">
+        mcs-lite-icon/lib/
+        IconCircleLoading
+      </div>
+    </div>
+    <div
+      className="WFoSn">
+      <h1
+        className="hVfmdf"
+        color="grayBase">
+        <svg
+          fill="currentColor"
+          height="1em"
+          preserveAspectRatio="xMidYMid meet"
+          viewBox="0 0 24 24"
+          width="1em">
+          <path
             d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
         </svg>
       </h1>
@@ -1653,6 +1710,24 @@ exports[`Storyshots Icon [mcs-lite-icon] Icon list, Custom color and size 1`] = 
       </div>
     </div>
   </div>
+</div>
+`;
+
+exports[`Storyshots Icon [mcs-lite-icon] Spin Icon 1`] = `
+<div
+  className="ftRJdL">
+  <svg
+    fill="currentColor"
+    height="1em"
+    preserveAspectRatio="xMidYMid meet"
+    viewBox="0 0 24 24"
+    width="1em">
+    <path
+      d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm0 18c-4.4 0-8-3.6-8-8s3.6-8 8-8 8 3.6 8 8-3.6 8-8 8z"
+      opacity=".3" />
+    <path
+      d="M12 4c4.4 0 8 3.6 8 8h2c0-5.5-4.5-10-10-10v2z" />
+  </svg>
 </div>
 `;
 
@@ -2017,6 +2092,55 @@ exports[`Storyshots P With color props 1`] = `
 </div>
 `;
 
+exports[`Storyshots PullToRefresh API 1`] = `
+<div
+  className="bkQdNb">
+  <MockReactHammerJS
+    direction="DIRECTION_DOWN"
+    onPan={[Function]}
+    onPanEnd={[Function]}
+    onPanStart={[Function]}
+    options={
+      Object {
+        "touchAction": "pan-x pan-y",
+      }
+    }>
+    <div
+      className="bywnUD">
+      <div
+        className="kWdxnU">
+        <h2
+          className="hMMWfV"
+          color="grayBase">
+          <svg
+            fill="currentColor"
+            height="1em"
+            preserveAspectRatio="xMidYMid meet"
+            viewBox="0 0 24 24"
+            width="1em">
+            <path
+              d="M12 18.9l5-5h-3.8V5.1h-2.5v8.8H7l5 5z" />
+          </svg>
+        </h2>
+      </div>
+      <section
+        className="jpOdJs">
+        <h1
+          className="lhKeVk"
+          color="white">
+          Pull me down
+        </h1>
+        <h3
+          className="emBao"
+          color="white">
+          (API will respond after 3 seconds.)
+        </h3>
+      </section>
+    </div>
+  </MockReactHammerJS>
+</div>
+`;
+
 exports[`Storyshots Small API 1`] = `
 <small
   className="gPtzLl">
@@ -2047,6 +2171,16 @@ exports[`Storyshots Small Within <P> 1`] = `
      Small content 
   </small>
   incididunt incididunt aliquip pariatur est minim officia sit.
+</div>
+`;
+
+exports[`Storyshots Spin API 1`] = `
+<div
+  className="ftRJdL">
+  <div
+    className="erQqRy">
+    Content
+  </div>
 </div>
 `;
 
