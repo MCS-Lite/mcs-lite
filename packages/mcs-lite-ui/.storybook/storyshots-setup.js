@@ -15,3 +15,5 @@ addDecorator(centered);
 jest.mock('react-text-truncate', () => 'MockReactTextTruncate');
 // For DomAlign, findDOMNode not supported. ref: https://github.com/facebook/react/issues/8324
 jest.mock('react-dom');
+
+jest.mock('react-hammerjs', () => 'MockReactHammerJS');

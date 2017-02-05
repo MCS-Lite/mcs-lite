@@ -2092,6 +2092,55 @@ exports[`Storyshots P With color props 1`] = `
 </div>
 `;
 
+exports[`Storyshots PullToRefresh API 1`] = `
+<div
+  className="bkQdNb">
+  <MockReactHammerJS
+    direction="DIRECTION_DOWN"
+    onPan={[Function]}
+    onPanEnd={[Function]}
+    onPanStart={[Function]}
+    options={
+      Object {
+        "touchAction": "pan-x pan-y",
+      }
+    }>
+    <div
+      className="bywnUD">
+      <div
+        className="kWdxnU">
+        <h2
+          className="hMMWfV"
+          color="grayBase">
+          <svg
+            fill="currentColor"
+            height="1em"
+            preserveAspectRatio="xMidYMid meet"
+            viewBox="0 0 24 24"
+            width="1em">
+            <path
+              d="M12 18.9l5-5h-3.8V5.1h-2.5v8.8H7l5 5z" />
+          </svg>
+        </h2>
+      </div>
+      <section
+        className="jpOdJs">
+        <h1
+          className="lhKeVk"
+          color="white">
+          Pull me down
+        </h1>
+        <h3
+          className="emBao"
+          color="white">
+          (API will respond after 3 seconds.)
+        </h3>
+      </section>
+    </div>
+  </MockReactHammerJS>
+</div>
+`;
+
 exports[`Storyshots Small API 1`] = `
 <small
   className="gPtzLl">
