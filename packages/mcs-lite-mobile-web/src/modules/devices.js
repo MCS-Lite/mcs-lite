@@ -1,3 +1,5 @@
+import { Observable } from 'rxjs/Observable';
+
 // ----------------------------------------------------------------------------
 // 1. Constants
 // ----------------------------------------------------------------------------
@@ -9,7 +11,7 @@ const SET_DEVICES = 'mcs-lite-mobile-web/devices/SET_DEVICES';
 // 2. Action Creators (Sync)
 // ----------------------------------------------------------------------------
 
-const fetchDevices = () => ({ type: FETCH_DEVICES });
+const fetchDevices = callback => ({ type: FETCH_DEVICES, callback });
 const setDevices = payload => ({ type: SET_DEVICES, payload });
 
 export const actions = {
@@ -21,11 +23,20 @@ export const actions = {
 // 3. Epic (Async, side effect)
 // ----------------------------------------------------------------------------
 
-const fetchDevicesEpic = action$ =>
-  action$
-    .ofType(FETCH_DEVICES)
-    .mapTo([{ id: 123, name: 'deviceName' }]) // fake
-    .map(setDevices);
+const fetchDevicesEpic = (action$) => {
+  const fetchDevices$ = action$.ofType(FETCH_DEVICES);
+  const callback$ = fetchDevices$.pluck('callback');
+  const devices$ = fetchDevices$
+    .delay(1000)
+    .mapTo([{ id: 123, name: 'deviceName' }]); // fake
+
+  return Observable
+    .zip(devices$, callback$)
+    .map(([devices, callback]) => {
+      callback();
+      return setDevices(devices);
+    });
+};
 
 export const epics = [
   fetchDevicesEpic,

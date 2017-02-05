@@ -7,19 +7,29 @@ import MaxWidthCenterWrapper from '../../components/MaxWidthCenterWrapper';
 const Root = styled.div`
   display: flex;
   flex-direction: column;
+  height: 100vh;
 `;
 
 const Main = styled.main`
-  height: 300px;
+  ${''/* height: 300px; */}
+  flex-grow: 1;
+  display: flex;
+`;
+
+const StyledMaxWidthCenterWrapper = styled(MaxWidthCenterWrapper)`
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  flex-shrink: 0;
 `;
 
 const App = ({ children }) =>
   <Root>
     <Header />
     <Main>
-      <MaxWidthCenterWrapper>
+      <StyledMaxWidthCenterWrapper>
         {children}
-      </MaxWidthCenterWrapper>
+      </StyledMaxWidthCenterWrapper>
     </Main>
   </Root>;
 

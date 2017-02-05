@@ -25,7 +25,7 @@ const Body = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-basis: 165px;
+  ${''/* flex-basis: 165px; */}
 `;
 
 const Description = styled(P)`
