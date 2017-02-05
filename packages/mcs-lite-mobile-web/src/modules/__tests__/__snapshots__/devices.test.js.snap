@@ -1,5 +1,6 @@
 exports[`devices should return fetchDevices actions 1`] = `
 Object {
+  "callback": undefined,
   "type": "mcs-lite-mobile-web/devices/FETCH_DEVICES",
 }
 `;
