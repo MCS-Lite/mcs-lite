@@ -8,7 +8,6 @@ const height = '4rem';
 
 const HeaderContainer = styled.header`
   height: ${height};
-  ${''/* z-index: 1; */}
 `;
 
 const FixedContainer = styled.div`

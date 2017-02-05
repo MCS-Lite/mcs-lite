@@ -5,8 +5,7 @@ import { Button, Heading, PullToRefresh } from 'mcs-lite-ui';
 import { actions } from '../../modules/devices';
 
 const Container = styled.section`
-  ${''/* height: 1200px; */}
-  background-color: ${props => props.theme.color.grayLight}
+  background-color: ${props => props.theme.color.grayLight};
 `;
 
 const Device = (props) => {

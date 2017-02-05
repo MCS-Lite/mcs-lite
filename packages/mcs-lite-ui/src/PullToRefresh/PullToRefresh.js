@@ -49,10 +49,9 @@ class PullToRefresh extends React.Component {
   }
 
   onPanDown = (e) => {
-    if (document.body.scrollTop > 0) return; // 非從頂端往下拉。
+    if (document.body.scrollTop > 0) return; // Remind: Skip the event if it's not pulled from top.
     if (this.state.isRefreshing) {
-      // 正在 refresh，不要亂動。
-      e.preventDefault();
+      e.preventDefault(); // Hint: Prevent being pulled while refreshing.
       return;
     }
     e.preventDefault();
@@ -62,8 +61,10 @@ class PullToRefresh extends React.Component {
   }
 
   onPanDownEnd = () => {
-    if (this.state.isRefreshing) return; // 正在 refresh，不要打。
-    if (this.state.distance < HEIGHT) { // 沒超過一定高度不需要 Refresh。
+    if (this.state.isRefreshing) return; // Remind: Prevent re-refreshing.
+
+    // Remind: Trigger only when it is pulled heigher than HEIGHT.
+    if (this.state.distance < HEIGHT) {
       this.reset();
       return;
     }
