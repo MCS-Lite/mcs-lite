@@ -7,9 +7,6 @@ import Card from '../Card';
 import P from '../P';
 import Spin from '../Spin';
 
-const Container = styled.div`
-`;
-
 const CardWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
@@ -58,7 +55,7 @@ storiesOf('Icon [mcs-lite-icon]')
     'Icon list, Custom color and size [Skip]',
     '',
     () =>
-      <Container>
+      <div>
         <Heading>MCS Lite Icon</Heading>
         <CodeBlock color="primary" level={3}>
           {'$ npm i mcs-lite-icon --save'}<br />
@@ -77,6 +74,6 @@ storiesOf('Icon [mcs-lite-icon]')
             ))
           }
         </CardWrapper>
-      </Container>,
+      </div>,
     { inline: false, propTables: false },
   );

@@ -1,0 +1,3 @@
+{
+  "extends": "./packages/stylelint-config-mcs-lite/index.js"
+}

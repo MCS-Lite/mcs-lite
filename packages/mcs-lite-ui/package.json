@@ -14,13 +14,8 @@
     "postbuild": "npm run createEntryFile",
     "test": "jest",
     "test:watch": "npm run test -- --watch --coverage",
-    "stylelint": "stylelint './src/**/*.js'",
     "flow": "flow check",
-    "lint": "npm run stylelint && npm run flow"
-  },
-  "stylelint": {
-    "extends": "stylelint-config-mcs-lite",
-    "ignoreFiles": "**/*.example.js"
+    "lint": "npm run flow"
   },
   "jest": {
     "setupFiles": [
@@ -57,9 +52,7 @@
     "react-dom": "^15.4.2",
     "react-test-renderer": "^15.4.2",
     "storyshots": "^3.2.1",
-    "styled-components": "^1.4.3",
-    "stylelint": "^7.8.0",
-    "stylelint-config-mcs-lite": "^0.0.0"
+    "styled-components": "^1.4.3"
   },
   "dependencies": {
     "dom-align": "^1.5.3",

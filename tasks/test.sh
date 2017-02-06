@@ -4,6 +4,7 @@ set -e
 
 # global linting
 npm run eslint
+npm run stylelint
 
 ## Interface for each project
 node_modules/.bin/lerna run lint

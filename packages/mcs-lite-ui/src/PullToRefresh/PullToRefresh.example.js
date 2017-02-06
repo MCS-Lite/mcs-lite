@@ -6,12 +6,12 @@ import PullToRefresh from '.';
 
 const Body = styled.div`
   overflow: hidden;
-  background-color: ${props => props.theme.color.grayLight}
+  background-color: ${props => props.theme.color.grayLight};
 `;
 
 const Content = styled.section`
   height: 500px;
-  background-color: ${props => props.theme.color.primary}
+  background-color: ${props => props.theme.color.primary};
 `;
 
 const StyledHeading = styled(Heading)`

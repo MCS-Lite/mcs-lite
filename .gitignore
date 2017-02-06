@@ -1,4 +1,6 @@
 node_modules/
+
+# files
 npm-debug.log
 lerna-debug.log
 .DS_Store
@@ -16,4 +18,4 @@ coverage/
 .next/
 
 # CRA production
-build
+build/

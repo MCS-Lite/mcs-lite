@@ -69,19 +69,19 @@ $ npm run test:watch
 
 ## NPM Scipts Interface
 
-| **Package**                 | clean | test | start | build | lint |
-|-----------------------------|-------|------|-------|-------|------|
-| root                        | V     |      |       |       | es   |
-| `babel-preset-mcs-lite`     |       | V    |       |       |      |
-| `eslint-config-mcs-lite`    |       | V    |       |       |      |
-| `mcs-lite-demo-nextjs`      |       |      | V     |       |      |
-| `mcs-lite-design`           | V     |      |       | V     |      |
-| `mcs-lite-icon`             | V     |      |       | V     |      |
-| `mcs-lite-mobile-web`       | V     | V    | V     | V     |      |
-| `mcs-lite-scripts`          |       |      |       |       |      |
-| `mcs-lite-theme`            | V     |      |       | V     |      |
-| `mcs-lite-ui`               | V     | V    | V     | V     | V    |
-| `stylelint-config-mcs-lite` |       | V    |       |       |      |
+| **Package**                 | clean | test | start | build | lint          |
+|-----------------------------|-------|------|-------|-------|---------------|
+| root                        | V     |      |       |       | V (es, style) |
+| `babel-preset-mcs-lite`     |       | V    |       |       |               |
+| `eslint-config-mcs-lite`    |       | V    |       |       |               |
+| `mcs-lite-demo-nextjs`      |       |      | V     |       |               |
+| `mcs-lite-design`           | V     |      |       | V     |               |
+| `mcs-lite-icon`             | V     |      |       | V     |               |
+| `mcs-lite-mobile-web`       | V     | V    | V     | V     |               |
+| `mcs-lite-scripts`          |       |      |       |       |               |
+| `mcs-lite-theme`            | V     |      |       | V     |               |
+| `mcs-lite-ui`               | V     | V    | V     | V     | V (flow)      |
+| `stylelint-config-mcs-lite` |       | V    |       |       |               |
 
 ## npm-check-updates
 
