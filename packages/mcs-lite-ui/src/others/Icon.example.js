@@ -55,7 +55,7 @@ storiesOf('Icon [mcs-lite-icon]')
     { inline: true },
   )
   .addWithInfo(
-    'Icon list, Custom color and size',
+    'Icon list, Custom color and size [Skip]',
     '',
     () =>
       <Container>
