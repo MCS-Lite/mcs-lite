@@ -1935,7 +1935,7 @@ exports[`Storyshots P With color props 1`] = `
 
 exports[`Storyshots PullToRefresh API 1`] = `
 <div
-  className="bkQdNb">
+  className="elSmSq">
   <MockReactHammerJS
     direction="DIRECTION_DOWN"
     onPan={[Function]}
@@ -1965,7 +1965,7 @@ exports[`Storyshots PullToRefresh API 1`] = `
         </h2>
       </div>
       <section
-        className="jpOdJs">
+        className="imSnko">
         <h1
           className="lhKeVk"
           color="white">
