@@ -10,6 +10,16 @@ import Button from '../Button';
 import Input from '../Input';
 import P from '../P';
 
+const FlexWrapper = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+
+  > * {
+    margin: 7.5px;
+    width: 280px;
+  }
+`;
+
 storiesOf('DataChannel', module)
   .addWithInfo(
     'ButtonClear',
@@ -108,21 +118,11 @@ storiesOf('DataChannel', module)
     'ControlRange - Category, GPIO and Analog',
     '',
     () => {
-      const Wrapper = styled.div`
-        display: flex;
-        flex-wrap: wrap;
-
-        > * {
-          margin: 7.5px;
-          width: 280px;
-        }
-      `;
-
       const categories = ['AAAAAA', 'BBBBB', 'CCCCC', 'DDDDD', 'EEEEE'];
       const gpioLabels = ['Low', 'Heigh'];
 
       return (
-        <Wrapper>
+        <FlexWrapper>
           <DataChannel.ControlRange
             title="Category"
             subtitle="Category"
@@ -160,7 +160,7 @@ storiesOf('DataChannel', module)
               labels: [0, 100],
             }}
           />
-        </Wrapper>
+        </FlexWrapper>
       );
     },
     { inline: true },

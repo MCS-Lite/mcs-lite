@@ -3,7 +3,8 @@
   "scripts": {
     "postinstall": "lerna bootstrap && ./tasks/build.sh",
     "clean": "lerna clean && rm -rf node_modules",
-    "eslint": "eslint ./",
+    "stylelint": "stylelint './**/*.js' --ignore-path .linterignore",
+    "eslint": "eslint ./ --ignore-path .linterignore",
     "ncu": "ncu && lerna exec --concurrency 1 -- ncu",
     "npm-update": "npm update && lerna exec --concurrency 1 -- npm update"
   },
@@ -15,6 +16,7 @@
     "eslint-plugin-jsx-a11y": "^3.0.2",
     "eslint-plugin-react": "^6.9.0",
     "lerna": "2.0.0-beta.33",
-    "npm-check-updates": "^2.10.0"
+    "npm-check-updates": "^2.10.0",
+    "stylelint": "^7.8.0"
   }
 }

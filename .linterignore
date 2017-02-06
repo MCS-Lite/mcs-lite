@@ -1,0 +1,26 @@
+# =====================================================
+# Lint ignore pattern shared with eslint and stylelint.
+# =====================================================
+
+node_modules/
+
+# flow
+flow-typed/
+
+# babel build
+lib/
+
+# storybook
+storybook-static/
+
+# jest
+coverage/
+
+# next
+.next/
+
+# CRA production
+build/
+
+# include (negative ignore)
+!.storybook/
