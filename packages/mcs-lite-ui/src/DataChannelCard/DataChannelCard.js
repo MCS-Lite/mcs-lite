@@ -52,8 +52,14 @@ const DataChannelCard = ({ header, children, title, subtitle, description, ...ot
     <div>
       <Heading level={4}>{title}</Heading>
       <P color="grayBase"><Small>{subtitle}</Small></P>
-      <Hr />
-      <Description><TextTruncate line={2} truncateText=" ..." text={description} /></Description>
+      {description && <Hr />}
+      {
+        description && (
+          <Description>
+            <TextTruncate line={2} truncateText=" ..." text={description} />
+          </Description>
+        )
+      }
     </div>
   </Wrapper>;
 
@@ -63,7 +69,7 @@ DataChannelCard.propTypes = {
   children: PropTypes.any.isRequired,
   title: PropTypes.string.isRequired,
   subtitle: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
+  description: PropTypes.string,
 };
 
 export default DataChannelCard;

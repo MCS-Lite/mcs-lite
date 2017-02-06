@@ -22,7 +22,7 @@
     "mcs-lite-design": "^0.0.0",
     "mcs-lite-scripts": "^0.0.0",
     "react": "^15.4.2",
-    "rxjs": "^5.0.3"
+    "rxjs": "^5.1.0"
   },
   "peerDependencies": {
     "react": "^15.4.2"

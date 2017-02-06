@@ -7,6 +7,10 @@ const Container = styled.div`
   height: 300px;
 `;
 
+const StyledImg = styled(Img)`
+  height: 100px;
+`;
+
 storiesOf('Img', module)
   .addWithInfo(
     'API',
@@ -24,5 +28,12 @@ storiesOf('Img', module)
       <Container>
         <Img src="http://placehold.it/350x150" size="contain" />
       </Container>,
+    { inline: true },
+  )
+  .addWithInfo(
+    'With height override',
+    'height=100',
+    () =>
+      <StyledImg src="http://placehold.it/350x150" />,
     { inline: true },
   );

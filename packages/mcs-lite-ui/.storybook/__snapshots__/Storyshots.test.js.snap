@@ -1375,6 +1375,37 @@ exports[`Storyshots DataChannelCard Custom width and height 1`] = `
 </div>
 `;
 
+exports[`Storyshots DataChannelCard Without description 1`] = `
+<div
+  className="czVqfN">
+  <div
+    className="fROLJM">
+    V
+  </div>
+  <div
+    className="dJSrbi">
+    <div
+      checked={false}
+      className="hKkhHI" />
+  </div>
+  <div>
+    <h4
+      className="ezDjUV"
+      color="black">
+      Title
+    </h4>
+    <div
+      className="jyQfel"
+      color="grayBase">
+      <small
+        className="gPtzLl">
+        Last data point time : 2015-06-12 12:00
+      </small>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots DomAlign API 1`] = `
 <div>
   <div>
@@ -1580,6 +1611,13 @@ exports[`Storyshots Img API 1`] = `
     size="cover"
     src="http://placehold.it/350x150" />
 </div>
+`;
+
+exports[`Storyshots Img With height override 1`] = `
+<div
+  className="jwuuYs"
+  size="cover"
+  src="http://placehold.it/350x150" />
 `;
 
 exports[`Storyshots Img With size props 1`] = `

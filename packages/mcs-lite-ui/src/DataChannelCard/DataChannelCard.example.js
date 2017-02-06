@@ -40,4 +40,17 @@ storiesOf('DataChannelCard', module)
       );
     },
     { inline: true },
+  )
+  .addWithInfo(
+    'Without description',
+    '',
+    () =>
+      <DataChannelCard
+        header="V"
+        title="Title"
+        subtitle="Last data point time : 2015-06-12 12:00"
+      >
+        <Switch />
+      </DataChannelCard>,
+    { inline: true },
   );
