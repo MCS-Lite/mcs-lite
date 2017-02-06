@@ -5,8 +5,13 @@ import { Link } from 'react-router';
 import { Heading, PullToRefresh, PreventDrag } from 'mcs-lite-ui';
 import { actions } from '../../modules/devices';
 import DeviceCard from '../../components/DeviceCard';
+import MaxWidthCenterWrapper from '../../components/MaxWidthCenterWrapper';
 
-const CardContainer = styled.div`
+const Container = styled(MaxWidthCenterWrapper)`
+  padding: 8px;
+`;
+
+const CardWrapper = styled.div`
 
   > * {
     margin-bottom: 10px;
@@ -24,10 +29,10 @@ const DeviceList = (props) => {
   };
   return (
     <PullToRefresh onRefresh={onRefresh}>
-      <div>
+      <Container>
         <Heading>DeviceList page</Heading>
 
-        <CardContainer>
+        <CardWrapper>
           {
             props.devices.map(device => (
               <PreventDrag key={device.id}>
@@ -40,8 +45,8 @@ const DeviceList = (props) => {
               </PreventDrag>
             ))
           }
-        </CardContainer>
-      </div>
+        </CardWrapper>
+      </Container>
     </PullToRefresh>
   );
 };

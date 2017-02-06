@@ -10,6 +10,7 @@ const Container = styled(MaxWidthCenterWrapper)`
   flex-direction: column;
   justify-content: center;
   height: 100vh;
+  padding: 0 16px;
 `;
 
 const Signin = ({ signin, cookie }) =>
