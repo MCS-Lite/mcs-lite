@@ -27,3 +27,6 @@ node_modules/styled-components/flow-typed/lodash_v4.x.x.js
 node_modules/styled-components/flow-typed/inline-style-prefixer_vx.x.x.js
 
 [options]
+
+# TODO: https://github.com/styled-components/styled-components/issues/458
+unsafe.enable_getters_and_setters=true

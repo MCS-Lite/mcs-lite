@@ -87,6 +87,7 @@ $ npm run test:watch
 
 ```
 $ npm run ncu # check for all packages
+$ npm run npm-update
 ```
 
 ## Reference

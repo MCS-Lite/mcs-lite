@@ -4,7 +4,8 @@
     "postinstall": "lerna bootstrap && ./tasks/build.sh",
     "clean": "lerna clean && rm -rf node_modules",
     "eslint": "eslint ./",
-    "ncu": "ncu && lerna exec --concurrency 1 -- ncu"
+    "ncu": "ncu && lerna exec --concurrency 1 -- ncu",
+    "npm-update": "npm update && lerna exec --concurrency 1 -- npm update"
   },
   "devDependencies": {
     "babel-eslint": "^7.1.1",

@@ -45,7 +45,8 @@ class PullToRefresh extends React.Component {
   state = { distance: 0, isRefreshing: false };
 
   onPanDownStart = (e) => {
-    this.fromY = this.toY = e.srcEvent.pageY;
+    this.fromY = e.srcEvent.pageY;
+    this.toY = this.fromY;
   }
 
   onPanDown = (e) => {
