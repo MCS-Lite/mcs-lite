@@ -3,6 +3,10 @@ machine:
     version: 7.5.0
 
 dependencies:
+  override:
+    - rm -rf node_modules
+    - npm install
+
   cache_directories:
     - node_modules
     - packages/babel-preset-mcs-lite/node_modules

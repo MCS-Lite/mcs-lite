@@ -8,9 +8,12 @@ const StyledImg = styled(Img)`
   height: 200px;
 `;
 
-const StyledControlSwitch = styled(DataChannel.ControlSwitch)`
-  height: 200px;
-  padding: 8px 16px;
+const CardContainer = styled.div`
+
+  > * {
+    height: 200px;
+    padding: 8px 16px;
+  }
 `;
 
 const DeviceDetail = (props) => {
@@ -24,13 +27,25 @@ const DeviceDetail = (props) => {
           <StyledImg src="http://placehold.it/350x150" />
         </PreventDrag>
 
-        <div>
-          <StyledControlSwitch
+        <CardContainer>
+          <DataChannel.ControlSwitch
             title="Title"
             subtitle="123125125125125"
             header={<a href="">Link</a>}
           />
-        </div>
+
+          <DataChannel.ControlNumber
+            title="Title"
+            subtitle="123125125125125"
+            header={<a href="">Link</a>}
+          />
+
+          <DataChannel.ControlString
+            title="Title"
+            subtitle="123125125125125"
+            header={<a href="">Link</a>}
+          />
+        </CardContainer>
       </div>
     </PullToRefresh>
   );
