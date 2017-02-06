@@ -10,7 +10,8 @@ import { syncHistoryWithStore } from 'react-router-redux';
 import { ThemeProvider } from 'styled-components';
 import { theme } from 'mcs-lite-theme';
 import App from './containers/App';
-import Device from './containers/Device';
+import DeviceList from './containers/DeviceList';
+import DeviceDetail from './containers/DeviceDetail';
 import Signin from './containers/Signin';
 import configureStore from './store/configureStore';
 
@@ -24,7 +25,8 @@ ReactDOM.render(
         <Route path="/signin" component={Signin} />
         <Route path="/" component={App}>
           <IndexRedirect to="/signin" />
-          <Route path="/devices" component={Device} />
+          <Route path="/devices" component={DeviceList} />
+          <Route path="/devices/:deviceId" component={DeviceDetail} />
         </Route>
       </Router>
     </Provider>
