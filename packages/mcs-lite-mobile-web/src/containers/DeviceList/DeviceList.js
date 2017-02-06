@@ -18,20 +18,20 @@ const StyledLink = styled(Link)`
   text-decoration: none;
 `;
 
-const Device = (props) => {
+const DeviceList = (props) => {
   const onRefresh = (done) => {
     props.fetchDevices(done);
   };
   return (
     <PullToRefresh onRefresh={onRefresh}>
       <div>
-        <Heading>Device page</Heading>
+        <Heading>DeviceList page</Heading>
 
         <CardContainer>
           {
             props.devices.map(device => (
               <PreventDrag key={device.id}>
-                <StyledLink to={`/${device.id}`}>
+                <StyledLink to={`/devices/${device.id}`}>
                   <DeviceCard
                     title={device.name}
                     image={device.image}
@@ -49,4 +49,4 @@ const Device = (props) => {
 export default connect(
   ({ devices }) => ({ devices }),
   { fetchDevices: actions.fetchDevices },
-)(Device);
+)(DeviceList);
