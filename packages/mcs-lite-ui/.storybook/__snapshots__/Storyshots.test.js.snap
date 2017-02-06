@@ -298,14 +298,14 @@ exports[`Storyshots Button With theme provider (Material) 1`] = `
 
 exports[`Storyshots Card API 1`] = `
 <div
-  className="eHLExQ">
+  className="jzLWVG">
   Card Content
 </div>
 `;
 
 exports[`Storyshots ClickOutside API 1`] = `
 <div
-  className="eHLExQ">
+  className="jzLWVG">
   Inside (Try to click outside.)
 </div>
 `;
@@ -335,7 +335,7 @@ exports[`Storyshots DataChannel ControlRange - Category, GPIO and Analog 1`] = `
 <div
   className="bnxHrL">
   <div
-    className="cVdXxp">
+    className="czVqfN">
     <div
       className="fROLJM">
       <a
@@ -441,7 +441,7 @@ exports[`Storyshots DataChannel ControlRange - Category, GPIO and Analog 1`] = `
     </div>
   </div>
   <div
-    className="cVdXxp">
+    className="czVqfN">
     <div
       className="fROLJM">
       <a
@@ -523,7 +523,7 @@ exports[`Storyshots DataChannel ControlRange - Category, GPIO and Analog 1`] = `
     </div>
   </div>
   <div
-    className="cVdXxp">
+    className="czVqfN">
     <div
       className="fROLJM">
       <a
@@ -609,7 +609,7 @@ exports[`Storyshots DataChannel ControlRange - Category, GPIO and Analog 1`] = `
 
 exports[`Storyshots DataChannel ControlRange - PWM 1`] = `
 <div
-  className="cVdXxp">
+  className="czVqfN">
   <div
     className="fROLJM">
     <a
@@ -717,7 +717,7 @@ exports[`Storyshots DataChannel ControlRange - PWM 1`] = `
 
 exports[`Storyshots DataChannel ControlRange - Stateful PPAP 1`] = `
 <div
-  className="cVdXxp">
+  className="czVqfN">
   <div
     className="fROLJM">
     <a
@@ -810,7 +810,7 @@ exports[`Storyshots DataChannel ControlRange - Stateful PPAP 1`] = `
 
 exports[`Storyshots DataChannel ControlRange - Stateful number 1`] = `
 <div
-  className="cVdXxp">
+  className="czVqfN">
   <div
     className="fROLJM">
     <a
@@ -895,7 +895,7 @@ exports[`Storyshots DataChannel ControlRange - Stateful number 1`] = `
 
 exports[`Storyshots DataChannel DataChannel.ControlNumber 1`] = `
 <div
-  className="cVdXxp">
+  className="czVqfN">
   <div
     className="fROLJM">
     <a
@@ -980,7 +980,7 @@ exports[`Storyshots DataChannel DataChannel.ControlNumber 1`] = `
 
 exports[`Storyshots DataChannel DataChannel.ControlRange 1`] = `
 <div
-  className="cVdXxp">
+  className="czVqfN">
   <div
     className="fROLJM">
     <a
@@ -1087,7 +1087,7 @@ exports[`Storyshots DataChannel DataChannel.ControlRange 1`] = `
 
 exports[`Storyshots DataChannel DataChannel.ControlString 1`] = `
 <div
-  className="cVdXxp">
+  className="czVqfN">
   <div
     className="fROLJM">
     <a
@@ -1165,7 +1165,7 @@ exports[`Storyshots DataChannel DataChannel.ControlString 1`] = `
 
 exports[`Storyshots DataChannel DataChannel.ControlSwitch 1`] = `
 <div
-  className="cVdXxp">
+  className="czVqfN">
   <div
     className="fROLJM">
     <a
@@ -1210,7 +1210,7 @@ exports[`Storyshots DataChannel DataChannel.ControlSwitch 1`] = `
 
 exports[`Storyshots DataChannel Fixed width 1`] = `
 <div
-  className="jwFuaE cVdXxp">
+  className="jwFuaE czVqfN">
   <div
     className="fROLJM">
     <a
@@ -1255,7 +1255,7 @@ exports[`Storyshots DataChannel Fixed width 1`] = `
 
 exports[`Storyshots DataChannel withDataChannelCard (HOC) 1`] = `
 <div
-  className="cVdXxp">
+  className="czVqfN">
   <div
     className="fROLJM" />
   <div
@@ -1294,7 +1294,7 @@ exports[`Storyshots DataChannel withDataChannelCard (HOC) 1`] = `
 
 exports[`Storyshots DataChannelCard API 1`] = `
 <div
-  className="cVdXxp">
+  className="czVqfN">
   <div
     className="fROLJM">
     <a
@@ -1336,7 +1336,7 @@ exports[`Storyshots DataChannelCard API 1`] = `
 
 exports[`Storyshots DataChannelCard Custom width and height 1`] = `
 <div
-  className="drcatN cVdXxp">
+  className="drcatN czVqfN">
   <div
     className="fROLJM">
     V
@@ -1572,6 +1572,26 @@ exports[`Storyshots Icon [mcs-lite-icon] Spin Icon 1`] = `
 </div>
 `;
 
+exports[`Storyshots Img API 1`] = `
+<div
+  className="haXnLh">
+  <div
+    className="ccOdku"
+    size="cover"
+    src="http://placehold.it/350x150" />
+</div>
+`;
+
+exports[`Storyshots Img With size props 1`] = `
+<div
+  className="haXnLh">
+  <div
+    className="jUQfeJ"
+    size="contain"
+    src="http://placehold.it/350x150" />
+</div>
+`;
+
 exports[`Storyshots Input API 1`] = `
 <input
   className="QbwlJ"
@@ -1721,7 +1741,7 @@ exports[`Storyshots InputRange With kind props 1`] = `
 
 exports[`Storyshots Menu API for Menu 1`] = `
 <div
-  className="fDiFVt">
+  className="cwnYBS">
   Children
 </div>
 `;
@@ -1735,7 +1755,7 @@ exports[`Storyshots Menu API for MenuItem 1`] = `
 
 exports[`Storyshots Menu Combination 1`] = `
 <div
-  className="etymeq">
+  className="kRUrap">
   <div
     className="ftUprM"
     onClick={[Function]}>
@@ -1933,6 +1953,41 @@ exports[`Storyshots P With color props 1`] = `
 </div>
 `;
 
+exports[`Storyshots PreventDrag API 1`] = `
+<div>
+  <img
+    alt=""
+    src="http://placehold.it/350x150" />
+  <div
+    className="fikKfg"
+    onDragStart={[Function]}
+    onDrop={[Function]}
+    onMouseDown={[Function]}
+    onMouseMove={[Function]}
+    onMouseOut={[Function]}>
+    <img
+      alt=""
+      src="http://placehold.it/350x150" />
+  </div>
+  <a
+    href="">
+    Link content
+  </a>
+  <div
+    className="fikKfg"
+    onDragStart={[Function]}
+    onDrop={[Function]}
+    onMouseDown={[Function]}
+    onMouseMove={[Function]}
+    onMouseOut={[Function]}>
+    <a
+      href="">
+      Link content (PreventDrag)
+    </a>
+  </div>
+</div>
+`;
+
 exports[`Storyshots PullToRefresh API 1`] = `
 <div
   className="elSmSq">
@@ -1947,7 +2002,12 @@ exports[`Storyshots PullToRefresh API 1`] = `
       }
     }>
     <div
-      className="bywnUD">
+      className="hRcCPT"
+      style={
+        Object {
+          "marginTop": 0,
+        }
+      }>
       <div
         className="kWdxnU">
         <h2

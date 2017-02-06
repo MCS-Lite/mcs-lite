@@ -12,7 +12,6 @@ const HEIGHT = 60;
 const SENSITIVITY = 2;
 
 const PullWrapper = styled.div`
-  margin-top: ${props => Number(props.distance)}px;
   transition: ${props => (props.distance === 0 || props.isRefreshing) ? 'all .25s ease' : 'initial'};
 `;
 
@@ -79,7 +78,7 @@ class PullToRefresh extends React.Component {
   }
   render() {
     const { children, IconArrow, IconLoading, ...otherProps } = this.props;
-    const { isRefreshing } = this.state;
+    const { isRefreshing, distance } = this.state;
 
     return (
       <Hammer
@@ -93,14 +92,14 @@ class PullToRefresh extends React.Component {
       >
         <PullWrapper
           {...otherProps}
-          distance={this.state.distance}
+          distance={distance}
           isRefreshing={isRefreshing}
+          style={{ marginTop: distance }}
         >
-          <LoadingContainer distance={this.state.distance}>
-            {this.state.isRefreshing ? <IconArrow /> : <IconLoading />}
+          <LoadingContainer distance={distance}>
+            {isRefreshing ? <IconArrow /> : <IconLoading />}
           </LoadingContainer>
           {children}
-
         </PullWrapper>
       </Hammer>
     );

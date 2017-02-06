@@ -1,11 +1,21 @@
 import React from 'react';
 import styled from 'styled-components';
 import { connect } from 'react-redux';
-import { Button, Heading, PullToRefresh } from 'mcs-lite-ui';
+import { Link } from 'react-router';
+import { Heading, PullToRefresh, PreventDrag } from 'mcs-lite-ui';
 import { actions } from '../../modules/devices';
+import DeviceCard from '../../components/DeviceCard';
 
-const Container = styled.section`
-  background-color: ${props => props.theme.color.grayLight};
+const CardContainer = styled.div`
+
+  > * {
+    margin-bottom: 10px;
+  }
+`;
+
+const StyledLink = styled(Link)`
+  display: block;
+  text-decoration: none;
 `;
 
 const Device = (props) => {
@@ -14,14 +24,24 @@ const Device = (props) => {
   };
   return (
     <PullToRefresh onRefresh={onRefresh}>
-      <Container>
+      <div>
         <Heading>Device page</Heading>
 
-        <pre>
-          {JSON.stringify(props.devices, null, 2)}
-        </pre>
-        <Button onClick={props.fetchDevices}>fetch</Button>
-      </Container>
+        <CardContainer>
+          {
+            props.devices.map(device => (
+              <PreventDrag key={device.id}>
+                <StyledLink to={`/${device.id}`}>
+                  <DeviceCard
+                    title={device.name}
+                    image={device.image}
+                  />
+                </StyledLink>
+              </PreventDrag>
+            ))
+          }
+        </CardContainer>
+      </div>
     </PullToRefresh>
   );
 };
