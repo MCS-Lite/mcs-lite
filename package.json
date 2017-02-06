@@ -1,7 +1,8 @@
 {
   "name": "mcs-lite",
   "scripts": {
-    "postinstall": "lerna bootstrap && ./tasks/build.sh",
+    "bootstrap": "lerna bootstrap --hoist",
+    "postinstall": "npm run bootstrap && ./tasks/build.sh",
     "clean": "lerna clean && rm -rf node_modules",
     "stylelint": "stylelint './**/*.js' --ignore-path .linterignore",
     "eslint": "eslint ./ --ignore-path .linterignore",
@@ -15,7 +16,7 @@
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jsx-a11y": "^3.0.2",
     "eslint-plugin-react": "^6.9.0",
-    "lerna": "2.0.0-beta.33",
+    "lerna": "2.0.0-beta.36",
     "npm-check-updates": "^2.10.0",
     "stylelint": "^7.8.0"
   }
