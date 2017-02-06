@@ -28,7 +28,7 @@ const fetchDevicesEpic = (action$) => {
   const callback$ = fetchDevices$.pluck('callback');
   const devices$ = fetchDevices$
     .delay(1000)
-    .mapTo([{ id: 123, name: 'deviceName' }]); // fake
+    .mapTo({ name: 'deviceName', image: 'http://placehold.it/350x150' }); // fake
 
   return Observable
     .zip(devices$, callback$)
@@ -47,20 +47,18 @@ export const epics = [
 // 4. Reducer as default (state shaper)
 // ----------------------------------------------------------------------------
 
-const initialState = {
-  devices: [],
-};
+const initialState = [];
 
 export default function reducer(state = initialState, action = {}) {
   switch (action.type) {
     case SET_DEVICES:
-      return {
+      return [
         ...state,
-        devices: [
-          ...state.devices,
-          action.payload,
-        ],
-      };
+        {
+          id: state.length,
+          ...action.payload,
+        },
+      ];
     default:
       return state;
   }
