@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import './style';
 import Header from '../../components/Header';
-import MaxWidthCenterWrapper from '../../components/MaxWidthCenterWrapper';
 
 const Root = styled.div`
   display: flex;
@@ -12,11 +11,7 @@ const Root = styled.div`
 const App = ({ children }) =>
   <Root>
     <Header />
-    <main>
-      <MaxWidthCenterWrapper>
-        {children}
-      </MaxWidthCenterWrapper>
-    </main>
+    <main>{children}</main>
   </Root>;
 
 export default App;
