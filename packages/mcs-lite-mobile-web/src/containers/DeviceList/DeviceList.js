@@ -1,20 +1,21 @@
 import React from 'react';
 import styled from 'styled-components';
+import R from 'ramda';
 import { connect } from 'react-redux';
 import { Link } from 'react-router';
-import { Heading, PullToRefresh, PreventDrag } from 'mcs-lite-ui';
+import { P, PullToRefresh, PreventDrag } from 'mcs-lite-ui';
 import { actions } from '../../modules/devices';
 import DeviceCard from '../../components/DeviceCard';
 import MaxWidthCenterWrapper from '../../components/MaxWidthCenterWrapper';
 
 const Container = styled(MaxWidthCenterWrapper)`
-  padding: 8px;
+  padding: 16px;
 `;
 
 const CardWrapper = styled.div`
 
   > * {
-    margin-bottom: 10px;
+    margin-bottom: 16px;
   }
 `;
 
@@ -23,18 +24,32 @@ const StyledLink = styled(Link)`
   text-decoration: none;
 `;
 
-const DeviceList = (props) => {
-  const onRefresh = (done) => {
-    props.fetchDevices(done);
-  };
+const PlaceholdWrapper = styled(P)`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+`;
+
+const DeviceList = ({ devices, fetchDevices }) => {
+  const onRefresh = done => fetchDevices(done);
+
   return (
     <PullToRefresh onRefresh={onRefresh}>
       <Container>
-        <Heading>DeviceList page</Heading>
-
+        {
+          R.isEmpty(devices) &&
+            <PlaceholdWrapper>
+              目前還沒有任何測試裝置
+            </PlaceholdWrapper>
+        }
         <CardWrapper>
           {
-            props.devices.map(device => (
+            devices.map(device => (
               <PreventDrag key={device.id}>
                 <StyledLink to={`/devices/${device.id}`}>
                   <DeviceCard

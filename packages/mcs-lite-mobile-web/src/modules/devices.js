@@ -6,6 +6,7 @@ import { Observable } from 'rxjs/Observable';
 
 const FETCH_DEVICES = 'mcs-lite-mobile-web/devices/FETCH_DEVICES';
 const SET_DEVICES = 'mcs-lite-mobile-web/devices/SET_DEVICES';
+const CLEAR_DEVICES = 'mcs-lite-mobile-web/devices/CLEAR_DEVICES';
 
 // ----------------------------------------------------------------------------
 // 2. Action Creators (Sync)
@@ -13,10 +14,12 @@ const SET_DEVICES = 'mcs-lite-mobile-web/devices/SET_DEVICES';
 
 const fetchDevices = callback => ({ type: FETCH_DEVICES, callback });
 const setDevices = payload => ({ type: SET_DEVICES, payload });
+const clearDevices = () => ({ type: CLEAR_DEVICES });
 
 export const actions = {
   fetchDevices,
   setDevices,
+  clearDevices,
 };
 
 // ----------------------------------------------------------------------------
@@ -47,9 +50,7 @@ export const epics = [
 // 4. Reducer as default (state shaper)
 // ----------------------------------------------------------------------------
 
-const initialState = [
-  { id: 'deviceId', name: 'initial device', image: 'http://placehold.it/350x150' },
-];
+const initialState = [];
 
 export default function reducer(state = initialState, action = {}) {
   switch (action.type) {
@@ -61,6 +62,8 @@ export default function reducer(state = initialState, action = {}) {
           ...action.payload,
         },
       ];
+    case CLEAR_DEVICES:
+      return initialState;
     default:
       return state;
   }
