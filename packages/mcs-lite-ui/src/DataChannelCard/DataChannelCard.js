@@ -5,6 +5,7 @@ import Card from '../Card';
 import Heading from '../Heading';
 import Small from '../Small';
 import P from '../P';
+import Hr from '../Hr';
 
 const setHeightByLine = line => props => `${
   parseFloat(props.theme.fontSize.p, 10) *
@@ -32,9 +33,7 @@ const Description = styled(P)`
   height: ${setHeightByLine(2)};
 `;
 
-const Hr = styled.hr`
-  border: 0;
-  border-top: 1px solid ${props => props.theme.color.grayDark};
+const StyledHr = styled(Hr)`
   margin: 5px 0;
 `;
 
@@ -52,7 +51,7 @@ const DataChannelCard = ({ header, children, title, subtitle, description, ...ot
     <div>
       <Heading level={4}>{title}</Heading>
       <P color="grayBase"><Small>{subtitle}</Small></P>
-      {description && <Hr />}
+      {description && <StyledHr />}
       {
         description && (
           <Description>

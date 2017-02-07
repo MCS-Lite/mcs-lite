@@ -429,7 +429,7 @@ exports[`Storyshots DataChannel ControlRange - Category, GPIO and Analog 1`] = `
         </small>
       </div>
       <hr
-        className="grCtyw" />
+        className="dPNKKP iAugwC" />
       <div
         className="bMkgFU"
         color="black">
@@ -511,7 +511,7 @@ exports[`Storyshots DataChannel ControlRange - Category, GPIO and Analog 1`] = `
         </small>
       </div>
       <hr
-        className="grCtyw" />
+        className="dPNKKP iAugwC" />
       <div
         className="bMkgFU"
         color="black">
@@ -593,7 +593,7 @@ exports[`Storyshots DataChannel ControlRange - Category, GPIO and Analog 1`] = `
         </small>
       </div>
       <hr
-        className="grCtyw" />
+        className="dPNKKP iAugwC" />
       <div
         className="bMkgFU"
         color="black">
@@ -702,7 +702,7 @@ exports[`Storyshots DataChannel ControlRange - PWM 1`] = `
       </small>
     </div>
     <hr
-      className="grCtyw" />
+      className="dPNKKP iAugwC" />
     <div
       className="bMkgFU"
       color="black">
@@ -795,7 +795,7 @@ exports[`Storyshots DataChannel ControlRange - Stateful PPAP 1`] = `
       </small>
     </div>
     <hr
-      className="grCtyw" />
+      className="dPNKKP iAugwC" />
     <div
       className="bMkgFU"
       color="black">
@@ -880,7 +880,7 @@ exports[`Storyshots DataChannel ControlRange - Stateful number 1`] = `
       </small>
     </div>
     <hr
-      className="grCtyw" />
+      className="dPNKKP iAugwC" />
     <div
       className="bMkgFU"
       color="black">
@@ -965,7 +965,7 @@ exports[`Storyshots DataChannel DataChannel.ControlNumber 1`] = `
       </small>
     </div>
     <hr
-      className="grCtyw" />
+      className="dPNKKP iAugwC" />
     <div
       className="bMkgFU"
       color="black">
@@ -1072,7 +1072,7 @@ exports[`Storyshots DataChannel DataChannel.ControlRange 1`] = `
       </small>
     </div>
     <hr
-      className="grCtyw" />
+      className="dPNKKP iAugwC" />
     <div
       className="bMkgFU"
       color="black">
@@ -1150,7 +1150,7 @@ exports[`Storyshots DataChannel DataChannel.ControlString 1`] = `
       </small>
     </div>
     <hr
-      className="grCtyw" />
+      className="dPNKKP iAugwC" />
     <div
       className="bMkgFU"
       color="black">
@@ -1195,7 +1195,7 @@ exports[`Storyshots DataChannel DataChannel.ControlSwitch 1`] = `
       </small>
     </div>
     <hr
-      className="grCtyw" />
+      className="dPNKKP iAugwC" />
     <div
       className="bMkgFU"
       color="black">
@@ -1240,7 +1240,7 @@ exports[`Storyshots DataChannel Fixed width 1`] = `
       </small>
     </div>
     <hr
-      className="grCtyw" />
+      className="dPNKKP iAugwC" />
     <div
       className="bMkgFU"
       color="black">
@@ -1279,7 +1279,7 @@ exports[`Storyshots DataChannel withDataChannelCard (HOC) 1`] = `
       </small>
     </div>
     <hr
-      className="grCtyw" />
+      className="dPNKKP iAugwC" />
     <div
       className="bMkgFU"
       color="black">
@@ -1321,7 +1321,7 @@ exports[`Storyshots DataChannelCard API 1`] = `
       </small>
     </div>
     <hr
-      className="grCtyw" />
+      className="dPNKKP iAugwC" />
     <div
       className="bMkgFU"
       color="black">
@@ -1362,7 +1362,7 @@ exports[`Storyshots DataChannelCard Custom width and height 1`] = `
       </small>
     </div>
     <hr
-      className="grCtyw" />
+      className="dPNKKP iAugwC" />
     <div
       className="bMkgFU"
       color="black">
@@ -1570,6 +1570,25 @@ exports[`Storyshots Heading With level props 1`] = `
     13px
     )
   </h6>
+</div>
+`;
+
+exports[`Storyshots Hr API 1`] = `
+<hr
+  className="iAugwC" />
+`;
+
+exports[`Storyshots Hr With children 1`] = `
+<div
+  className="biEMBf">
+  <hr
+    className="iAugwC" />
+  <div
+    className="KXFgb">
+    String
+  </div>
+  <hr
+    className="iAugwC" />
 </div>
 `;
 
