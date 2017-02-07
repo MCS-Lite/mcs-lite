@@ -2,7 +2,8 @@ import { actions } from '../auth';
 
 describe('auth', () => {
   it('should return signin actions', () => {
-    expect(actions.signin()).toMatchSnapshot();
+    const payload = { account: 'account', password: 'password' };
+    expect(actions.signin(payload)).toMatchSnapshot();
   });
 
   it('should return setCookie actions', () => {
