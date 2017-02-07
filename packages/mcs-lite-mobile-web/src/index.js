@@ -5,7 +5,8 @@ import './utils/rxjs';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
-import { Router, Route, browserHistory, IndexRedirect } from 'react-router';
+import { Router, Route, browserHistory, IndexRedirect, applyRouterMiddleware } from 'react-router';
+import useScroll from 'react-router-scroll/lib/useScroll';
 import { syncHistoryWithStore } from 'react-router-redux';
 import { ThemeProvider } from 'styled-components';
 import { theme } from 'mcs-lite-theme';
@@ -21,7 +22,7 @@ const history = syncHistoryWithStore(browserHistory, store);
 ReactDOM.render(
   <ThemeProvider theme={theme}>
     <Provider store={store}>
-      <Router history={history}>
+      <Router history={history} render={applyRouterMiddleware(useScroll())}>
         <Route path="/signin" component={Signin} />
         <Route path="/" component={App}>
           <IndexRedirect to="/signin" />
