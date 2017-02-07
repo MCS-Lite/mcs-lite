@@ -7,6 +7,10 @@ Object {
 
 exports[`auth should return signin actions 1`] = `
 Object {
+  "payload": Object {
+    "account": "account",
+    "password": "password",
+  },
   "type": "mcs-lite-mobile-web/auth/SIGNIN",
 }
 `;

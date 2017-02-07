@@ -22,10 +22,17 @@ const Input = styled.input`
     box-shadow: 0 0 3px 0 ${props => shadow(props.theme.color[props.kind])};
   }
 
-  &::placeholder {
+  /* stylelint-disable selector-no-vendor-prefix */
+
+  &::placeholder,
+  &::-webkit-input-placeholder,
+  &::-moz-placeholder,
+  &::-ms-input-placeholder {
     opacity: 1;
     color: ${props => props.theme.color.grayDark};
   }
+
+  /* stylelint-enable */
 `;
 
 Input.displayName = 'Input';

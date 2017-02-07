@@ -12,7 +12,7 @@ const SET_COOKIE = 'mcs-lite-mobile-web/auth/SET_COOKIE';
 // 2. Action Creators (Sync)
 // ----------------------------------------------------------------------------
 
-const signin = () => ({ type: SIGNIN });
+const signin = ({ account, password }) => ({ type: SIGNIN, payload: { account, password }});
 const setCookie = payload => ({ type: SET_COOKIE, payload });
 
 export const actions = {

@@ -10,7 +10,7 @@ import { Router, Route, browserHistory, IndexRedirect, applyRouterMiddleware } f
 import useScroll from 'react-router-scroll/lib/useScroll';
 import { syncHistoryWithStore } from 'react-router-redux';
 import { ThemeProvider } from 'styled-components';
-import { theme } from 'mcs-lite-theme';
+import theme from './utils/theme';
 import Layout from './components/Layout';
 import DeviceList from './containers/DeviceList';
 import DeviceDetail from './containers/DeviceDetail';
