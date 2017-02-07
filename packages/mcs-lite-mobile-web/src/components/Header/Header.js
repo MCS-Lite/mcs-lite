@@ -1,16 +1,17 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Link } from 'react-router';
-import IconFold from 'mcs-lite-icon/lib/IconFold';
+import { browserHistory, Link } from 'react-router';
+import { connect } from 'react-redux';
 import MaxWidthCenterWrapper from '../MaxWidthCenterWrapper';
 
-const height = '4rem';
+const height = '56px;';
 
-const HeaderContainer = styled.header`
+const Container = styled.header`
   height: ${height};
+  z-index: 1;
 `;
 
-const FixedContainer = styled.div`
+const Fixed = styled.div`
   position: fixed;
   left: 0;
   right: 0;
@@ -18,20 +19,38 @@ const FixedContainer = styled.div`
   height: ${height};
 `;
 
-const StyledLink = styled(Link)`
-  color: blue;
-  margin-right: 5px;
+const Wrapper = styled(MaxWidthCenterWrapper)`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 `;
 
-const Header = () =>
-  <HeaderContainer>
-    <FixedContainer>
-      <MaxWidthCenterWrapper>
-        <IconFold />
-        <StyledLink to="/">Homepage</StyledLink>
-        <StyledLink to="/devices">Devices</StyledLink>
-      </MaxWidthCenterWrapper>
-    </FixedContainer>
-  </HeaderContainer>;
+const StyledLink = styled(Link)`
+  color: white;
+  text-decoration: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 16px;
+  cursor: pointer;
+`;
 
-export default Header;
+const Header = ({ pathname }) =>
+  <Container>
+    <Fixed>
+      <Wrapper>
+        {
+          pathname === '/devices'
+            ? <StyledLink to="/account">＝</StyledLink>
+            : <StyledLink onClick={browserHistory.goBack}>--</StyledLink>
+        }
+
+        <StyledLink to="/">?</StyledLink>
+      </Wrapper>
+    </Fixed>
+  </Container>;
+
+export default connect(
+  ({ routing }) => ({ pathname: routing.locationBeforeTransitions.pathname }),
+)(Header);

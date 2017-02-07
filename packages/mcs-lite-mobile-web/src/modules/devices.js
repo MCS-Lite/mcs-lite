@@ -47,7 +47,9 @@ export const epics = [
 // 4. Reducer as default (state shaper)
 // ----------------------------------------------------------------------------
 
-const initialState = [];
+const initialState = [
+  { id: 'deviceId', name: 'initial device', image: 'http://placehold.it/350x150' },
+];
 
 export default function reducer(state = initialState, action = {}) {
   switch (action.type) {
