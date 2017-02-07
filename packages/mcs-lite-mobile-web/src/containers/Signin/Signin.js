@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 import MaxWidthCenterWrapper from '../../components/MaxWidthCenterWrapper';
 import { actions } from '../../modules/auth';
 
-const Container = styled(MaxWidthCenterWrapper)`
+const Layout = styled(MaxWidthCenterWrapper)`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -14,13 +14,13 @@ const Container = styled(MaxWidthCenterWrapper)`
 `;
 
 const Signin = ({ signin, cookie }) =>
-  <Container>
+  <Layout>
     <div>LOGO</div>
     {cookie}
     <Input placeholder="placeholder" />
     <Input placeholder="placeholder" />
     <Button block onClick={signin}>Sign in</Button>
-  </Container>;
+  </Layout>;
 
 export default connect(
   ({ auth }) => ({ cookie: auth.cookie }),
