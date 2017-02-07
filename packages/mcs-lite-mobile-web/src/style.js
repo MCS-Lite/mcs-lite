@@ -2,7 +2,7 @@
 
 import 'normalize.css';
 import { injectGlobal } from 'styled-components';
-import { theme } from 'mcs-lite-theme';
+import theme from './utils/theme';
 
 injectGlobal`
 
