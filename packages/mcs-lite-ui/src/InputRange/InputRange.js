@@ -1,10 +1,10 @@
-import React, { PropTypes } from 'react';
+import { PropTypes } from 'react';
 import styled from 'styled-components';
 import { darken } from 'mcs-lite-theme';
 
 const lighten = darken(-0.5);
 
-const InputRange = styled(props => <input type="range" {...props} />)`
+const InputRange = styled.input`
 
   /* stylelint-disable property-no-vendor-prefix */
   -webkit-appearance: none;
@@ -119,5 +119,7 @@ InputRange.propTypes = {
 
 InputRange.defaultProps = {
   kind: 'primary',
+  type: 'range',
 };
+
 export default InputRange;

@@ -655,7 +655,7 @@ exports[`Storyshots DataChannel ControlRange - PWM 1`] = `
           <div
             className="fystPB">
             <input
-              className="jXdcCC"
+              className="cMuAcD"
               id="input"
               kind="primary"
               placeholder="Integer only"
@@ -914,7 +914,7 @@ exports[`Storyshots DataChannel DataChannel.ControlNumber 1`] = `
         攝氏
       </div>
       <input
-        className="QbwlJ"
+        className="jWbJOn"
         kind="primary"
         onChange={[Function]}
         placeholder="placeholder"
@@ -1651,7 +1651,7 @@ exports[`Storyshots Img With size props 1`] = `
 
 exports[`Storyshots Input API 1`] = `
 <input
-  className="QbwlJ"
+  className="jWbJOn"
   kind="primary"
   placeholder="placeholder" />
 `;
@@ -1660,23 +1660,23 @@ exports[`Storyshots Input With kind props 1`] = `
 <div
   className="cZlPqe">
   <input
-    className="jcKvDH"
+    className="jLdfOf"
     kind="default"
     placeholder="default" />
   <input
-    className="QbwlJ"
+    className="jWbJOn"
     kind="primary"
     placeholder="primary" />
   <input
-    className="cQVsYe"
+    className="luvMa"
     kind="success"
     placeholder="success" />
   <input
-    className="cCmFiG"
+    className="hnHoAq"
     kind="error"
     placeholder="error" />
   <input
-    className="ctBKec"
+    className="bsbPqO"
     kind="warning"
     placeholder="warning" />
 </div>
@@ -1686,77 +1686,77 @@ exports[`Storyshots Input With type props 1`] = `
 <div
   className="cZlPqe">
   <input
-    className="QbwlJ"
+    className="jWbJOn"
     kind="primary"
     placeholder="text"
     type="text" />
   <input
-    className="QbwlJ"
+    className="jWbJOn"
     kind="primary"
     placeholder="email"
     type="email" />
   <input
-    className="QbwlJ"
+    className="jWbJOn"
     kind="primary"
     placeholder="number"
     type="number" />
   <input
-    className="QbwlJ"
+    className="jWbJOn"
     kind="primary"
     placeholder="password"
     type="password" />
   <input
-    className="QbwlJ"
+    className="jWbJOn"
     kind="primary"
     placeholder="tel"
     type="tel" />
   <input
-    className="QbwlJ"
+    className="jWbJOn"
     kind="primary"
     placeholder="search"
     type="search" />
   <input
-    className="QbwlJ"
+    className="jWbJOn"
     kind="primary"
     placeholder="month"
     type="month" />
   <input
-    className="QbwlJ"
+    className="jWbJOn"
     kind="primary"
     placeholder="week"
     type="week" />
   <input
-    className="QbwlJ"
+    className="jWbJOn"
     kind="primary"
     placeholder="date"
     type="date" />
   <input
-    className="QbwlJ"
+    className="jWbJOn"
     kind="primary"
     placeholder="color"
     type="color" />
   <input
-    className="QbwlJ"
+    className="jWbJOn"
     kind="primary"
     placeholder="file"
     type="file" />
   <input
-    className="QbwlJ"
+    className="jWbJOn"
     kind="primary"
     placeholder="radio"
     type="radio" />
   <input
-    className="QbwlJ"
+    className="jWbJOn"
     kind="primary"
     placeholder="time"
     type="time" />
   <input
-    className="QbwlJ"
+    className="jWbJOn"
     kind="primary"
     placeholder="url"
     type="url" />
   <input
-    className="QbwlJ"
+    className="jWbJOn"
     kind="primary"
     placeholder="range"
     type="range" />
