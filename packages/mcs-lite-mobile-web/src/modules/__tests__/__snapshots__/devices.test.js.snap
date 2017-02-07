@@ -1,3 +1,9 @@
+exports[`devices should return clearDevices actions 1`] = `
+Object {
+  "type": "mcs-lite-mobile-web/devices/CLEAR_DEVICES",
+}
+`;
+
 exports[`devices should return fetchDevices actions 1`] = `
 Object {
   "callback": undefined,

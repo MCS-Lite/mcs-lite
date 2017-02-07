@@ -1,7 +1,13 @@
-exports[`auth should return setCookie actions 1`] = `
+exports[`auth should return clearUserInfo actions 1`] = `
+Object {
+  "type": "mcs-lite-mobile-web/auth/CLEAR_USERINFO",
+}
+`;
+
+exports[`auth should return setUserInfo actions 1`] = `
 Object {
   "payload": "payload",
-  "type": "mcs-lite-mobile-web/auth/SET_COOKIE",
+  "type": "mcs-lite-mobile-web/auth/SET_USERINFO",
 }
 `;
 
@@ -12,5 +18,11 @@ Object {
     "password": "password",
   },
   "type": "mcs-lite-mobile-web/auth/SIGNIN",
+}
+`;
+
+exports[`auth should return signout actions 1`] = `
+Object {
+  "type": "mcs-lite-mobile-web/auth/SIGNOUT",
 }
 `;

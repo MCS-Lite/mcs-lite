@@ -5,10 +5,10 @@ import { connect } from 'react-redux';
 import Input from '../../components/Input';
 import MaxWidthCenterWrapper from '../../components/MaxWidthCenterWrapper';
 import { actions } from '../../modules/auth';
-import LOGO from '../../statics/iamges/logo.svg';
+import Logo from '../../components/Logo';
 
 const StyledHr = styled(Hr)`
-  margin-top: 32px;
+  margin-top: 16px;
   margin-bottom: 16px;
 `;
 
@@ -41,7 +41,7 @@ class Signin extends React.Component {
 
     return (
       <Layout>
-        <img src={LOGO} alt="MCS Lite Logo" />
+        <Logo />
         <StyledHr>歡迎</StyledHr>
         <Input name="account" placeholder="帳號" value={account} onChange={onChange} />
         <Input name="password" placeholder="密碼" value={password} onChange={onChange} />
