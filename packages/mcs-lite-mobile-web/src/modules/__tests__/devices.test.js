@@ -8,4 +8,8 @@ describe('devices', () => {
   it('should return setDevices actions', () => {
     expect(actions.setDevices('payload')).toMatchSnapshot();
   });
+
+  it('should return clearDevices actions', () => {
+    expect(actions.clearDevices()).toMatchSnapshot();
+  });
 });
