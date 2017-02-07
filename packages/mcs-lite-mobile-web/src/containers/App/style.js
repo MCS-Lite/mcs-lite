@@ -1,31 +1,11 @@
 /* eslint no-unused-expressions:0 */
 
 import 'normalize.css';
+import 'typeface-noto-sans-tc/index.css';
 import { injectGlobal } from 'styled-components';
 import { theme } from 'mcs-lite-theme';
 
 injectGlobal`
-
-  @font-face {
-    font-family: "Noto Sans TC";
-    font-style: normal;
-    font-weight: 400;
-    src:
-      url("//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Regular.woff2") format("woff2"),
-      url("//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Regular.woff") format("woff"),
-      url("//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Regular.otf") format("opentype");
-  }
-
-  @font-face {
-    font-family: "Noto Sans TC";
-    font-style: normal;
-    font-weight: 700;
-    src:
-      url("//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Bold.woff2") format("woff2"),
-      url("//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Bold.woff") format("woff"),
-      url("//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Bold.otf") format("opentype");
-  }
-
   html {
     font-size: ${theme.base.fontSize};
     line-height: ${theme.base.lineHeight};
