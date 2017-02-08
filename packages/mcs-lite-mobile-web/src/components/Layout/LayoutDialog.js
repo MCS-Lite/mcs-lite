@@ -7,7 +7,7 @@ import IconEllipsisV from 'mcs-lite-icon/lib/IconEllipsisV';
 import MaxWidthCenterWrapper from '../MaxWidthCenterWrapper';
 
 const Container = styled(MaxWidthCenterWrapper)`
-  height: 100vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
   background-color: ${props => props.theme.color.white};

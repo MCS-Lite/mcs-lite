@@ -15,7 +15,7 @@ const Layout = styled(MaxWidthCenterWrapper)`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 100vh;
+  height: 100%;
   padding: 0 16px;
 
   > input + input {

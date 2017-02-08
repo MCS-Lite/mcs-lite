@@ -81,14 +81,15 @@ class Header extends React.Component {
                   component={false}
                   enter={{
                     opacity: 1,
-                    translateX: 0,
+                    marginLeft: 0,
                   }}
                   leave={{
                     opacity: 0,
-                    translateX: 20,
+                    marginLeft: 50,
                   }}
                 >
                   <Input
+                    autoFocus
                     key="filter"
                     placeholder="搜尋"
                     value={filterValue}

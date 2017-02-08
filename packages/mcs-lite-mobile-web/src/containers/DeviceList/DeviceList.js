@@ -28,7 +28,7 @@ const PlaceholdWrapper = styled(P)`
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 100%;
   position: absolute;
   width: 100%;
   left: 0;

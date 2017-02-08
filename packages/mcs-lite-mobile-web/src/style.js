@@ -36,4 +36,9 @@ injectGlobal`
     background-color: ${theme.base.bodyBackgroundColor};
     color: ${theme.base.bodyColor};
   }
+
+  ${''/* DO NOT use 100vh for mobile (safari) */}
+  html, body, body > div {
+    height: 100%;
+  }
 `;
