@@ -7,14 +7,10 @@ const Container = styled.div`
   flex-direction: column;
 `;
 
-const LayoutWithHeader = ({ children }) => {
-  console.log(children)
-  return (
-    <Container>
-      <Header />
-      <main>{children}</main>
-    </Container>
-  );
-};
+const LayoutWithHeader = ({ children }) =>
+  <Container>
+    <Header />
+    <main>{children}</main>
+  </Container>;
 
 export default LayoutWithHeader;
