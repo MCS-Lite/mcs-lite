@@ -11,9 +11,11 @@ class ClickOutside extends React.Component {
   }
   componentDidMount = () => {
     document.addEventListener('click', this.handleClickOutside, true);
+    document.addEventListener('touchend', this.handleClickOutside, true);
   }
   componentWillUnmount = () => {
     document.removeEventListener('click', this.handleClickOutside, true);
+    document.removeEventListener('touchend', this.handleClickOutside, true);
   }
   handleClickOutside = (e) => {
     if (findDOMNode(this).contains(e.target)) return; // Hint: Omit clicking itself.
