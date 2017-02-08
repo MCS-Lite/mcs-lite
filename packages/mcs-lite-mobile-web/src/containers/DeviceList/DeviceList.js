@@ -77,7 +77,7 @@ class DeviceList extends React.Component {
               <PreventDrag >
                 <Transition
                   component={CardWrapper}
-                  appear={{ opacity: 0.8, translateY: 40 }}
+                  appear={{ opacity: 0.8, translateY: 20 }}
                   enter={{ opacity: 1, translateY: 0 }}
                 >
                   {

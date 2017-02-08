@@ -13,7 +13,7 @@ const Container = styled(MaxWidthCenterWrapper)`
 `;
 
 const StyledImg = styled(Img)`
-  height: 200px;
+  height: 192px;
 `;
 
 const CardWrapper = styled.div`
@@ -21,7 +21,7 @@ const CardWrapper = styled.div`
   flex-wrap: wrap;
 
   > * {
-    height: 200px;
+    height: 221px;
     padding: 8px 16px;
     margin: 4px;
     flex-basis: 100%;
@@ -66,7 +66,7 @@ class DeviceDetail extends React.Component {
         <main>
           <PullToRefresh onRefresh={onRefresh}>
             <div>
-              <StyledImg src="http://placehold.it/350x150" />
+              <StyledImg src="https://img.mediatek.com/600/mtk.linkit/productBanner.png" />
 
               <Container>
                 <CardWrapper>

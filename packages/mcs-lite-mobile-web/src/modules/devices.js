@@ -33,7 +33,7 @@ const fetchDevicesEpic = (action$) => {
     .delay(1000)
     .mapTo({
       name: '範例 B 的測試裝置範例 B 的測試裝置範例 B 的測試裝置範例 B 的測試裝置範例 B 的測試裝置試裝置範例 B 的測試裝置試裝置範例 B 的測試裝置試裝置範例 B 的測試裝置',
-      image: 'http://placehold.it/350x150',
+      image: 'https://img.mediatek.com/600/mtk.linkit/productBanner.png',
     }); // fake
 
   return Observable
