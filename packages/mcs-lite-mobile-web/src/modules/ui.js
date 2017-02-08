@@ -1,6 +1,6 @@
+import R from 'ramda';
 import { Observable } from 'rxjs/Observable';
 import { LOCATION_CHANGE } from 'react-router-redux';
-import R from 'ramda';
 
 // ----------------------------------------------------------------------------
 // 1. Constants
@@ -68,31 +68,17 @@ const initialState = {
 export default function reducer(state = initialState, action = {}) {
   switch (action.type) {
     case SET_IS_FILTERABLE:
-      return {
-        ...state,
-        header: {
-          ...state.header,
-          isFilterable: action.payload,
-        },
-      };
+      return R.assocPath(['header', 'isFilterable'], action.payload)(state);
+
     case SET_IS_FILTER_OPEN:
-      return {
-        ...state,
-        header: {
-          ...state.header,
-          isFilterOpen: action.payload,
-        },
-      };
+      return R.assocPath(['header', 'isFilterOpen'], action.payload)(state);
+
     case SET_FILTER_VALUE:
-      return {
-        ...state,
-        header: {
-          ...state.header,
-          filterValue: action.payload,
-        },
-      };
+      return R.assocPath(['header', 'filterValue'], action.payload)(state);
+
     case CLEAR:
       return initialState;
+
     default:
       return state;
   }
