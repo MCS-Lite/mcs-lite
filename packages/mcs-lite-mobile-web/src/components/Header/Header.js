@@ -12,7 +12,6 @@ export const HEIGHT = '56px;';
 
 const Container = styled.header`
   height: ${HEIGHT};
-  z-index: 1;
 `;
 
 const Fixed = styled.div`

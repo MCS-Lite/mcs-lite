@@ -15,7 +15,7 @@ const mobileTheme = {
     h4: '1.14rem',  // = 16px;
     h3: '1.43rem',  // = 20px;
     h2: '1.57rem',  // = 22px;
-    h1: '2.29rem',  // = 32px;
+    h1: '2.14rem',  // = 30px;
   },
 };
 

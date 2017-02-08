@@ -38,7 +38,9 @@ injectGlobal`
   }
 
   ${''/* DO NOT use 100vh for mobile (safari) */}
-  html, body, body > div {
+  html,
+  body,
+  body > div:first-child {
     height: 100%;
   }
 `;

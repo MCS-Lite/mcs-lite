@@ -34,14 +34,8 @@ const goBack = () => browserHistory.goBack();
 const LayoutDialog = ({ children }) =>
   <Transition
     component={false}
-    enter={{
-      opacity: 1,
-      translateY: 0,
-    }}
-    leave={{
-      opacity: 0,
-      translateY: -40,
-    }}
+    enter={{ opacity: 1, translateY: 0 }}
+    leave={{ opacity: 0, translateY: -40 }}
   >
     <Container key="layoutDialog">
       <Header>

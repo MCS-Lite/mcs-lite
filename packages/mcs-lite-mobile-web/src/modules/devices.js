@@ -31,7 +31,10 @@ const fetchDevicesEpic = (action$) => {
   const callback$ = fetchDevices$.pluck('callback');
   const devices$ = fetchDevices$
     .delay(1000)
-    .mapTo({ name: 'deviceName', image: 'http://placehold.it/350x150' }); // fake
+    .mapTo({
+      name: '範例 B 的測試裝置範例 B 的測試裝置範例 B 的測試裝置範例 B 的測試裝置範例 B 的測試裝置試裝置範例 B 的測試裝置試裝置範例 B 的測試裝置試裝置範例 B 的測試裝置',
+      image: 'https://img.mediatek.com/600/mtk.linkit/productBanner.png',
+    }); // fake
 
   return Observable
     .zip(devices$, callback$)
