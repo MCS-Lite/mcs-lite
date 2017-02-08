@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { browserHistory } from 'react-router';
 import Transition from 'react-motion-ui-pack';
 import { A } from 'mcs-lite-ui';
-import IconEllipsisV from 'mcs-lite-icon/lib/IconEllipsisV';
+import IconTimes from 'mcs-lite-icon/lib/IconTimes';
 import MaxWidthCenterWrapper from '../MaxWidthCenterWrapper';
 
 const Container = styled(MaxWidthCenterWrapper)`
@@ -45,7 +45,7 @@ const LayoutDialog = ({ children }) =>
   >
     <Container key="layoutDialog">
       <Header>
-        <A color="primary" onClick={goBack}><IconEllipsisV /></A>
+        <A color="primary" onClick={goBack}><IconTimes /></A>
       </Header>
       <Main>{children}</Main>
     </Container>

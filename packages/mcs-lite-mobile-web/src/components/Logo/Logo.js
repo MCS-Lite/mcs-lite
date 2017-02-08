@@ -3,6 +3,7 @@ import logoPath from '../../statics/iamges/logo.svg';
 
 const Logo = styled.img`
   margin: 16px;
+  user-select: none;
 `;
 
 Logo.defaultProps = {
