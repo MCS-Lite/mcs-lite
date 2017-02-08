@@ -8,3 +8,4 @@ import 'rxjs/add/operator/switchMap';
 import 'rxjs/add/operator/delay';
 import 'rxjs/add/operator/do';
 import 'rxjs/add/operator/pluck';
+import 'rxjs/add/operator/filter';

@@ -1,10 +1,12 @@
 import { Observable } from 'rxjs/Observable';
 import { LOCATION_CHANGE } from 'react-router-redux';
+import R from 'ramda';
 
 // ----------------------------------------------------------------------------
 // 1. Constants
 // ----------------------------------------------------------------------------
 
+const SET_IS_FILTERABLE = 'mcs-lite-mobile-web/ui/SET_IS_FILTERABLE';
 const SET_IS_FILTER_OPEN = 'mcs-lite-mobile-web/ui/SET_IS_FILTER_OPEN';
 const SET_FILTER_VALUE = 'mcs-lite-mobile-web/ui/SET_FILTER_VALUE';
 const CLEAR = 'mcs-lite-mobile-web/ui/CLEAR';
@@ -13,11 +15,13 @@ const CLEAR = 'mcs-lite-mobile-web/ui/CLEAR';
 // 2. Action Creators (Sync)
 // ----------------------------------------------------------------------------
 
-const setIsFilterOpen = () => ({ type: SET_IS_FILTER_OPEN });
+const setIsFilterable = payload => ({ type: SET_IS_FILTERABLE, payload });
+const setIsFilterOpen = payload => ({ type: SET_IS_FILTER_OPEN, payload });
 const setFilterValue = payload => ({ type: SET_FILTER_VALUE, payload });
 const clear = () => ({ type: CLEAR });
 
 export const actions = {
+  setIsFilterable,
   setIsFilterOpen,
   setFilterValue,
   clear,
@@ -34,8 +38,19 @@ const setIsFilterOpenEpic = action$ =>
       Observable.of(clear()),
     ));
 
+const setIsFilterableEpic = action$ =>
+  action$
+    .ofType(LOCATION_CHANGE)
+    .pluck('payload', 'pathname')
+    .filter(R.equals('/devices'))
+    .switchMap(() => Observable.merge(
+      Observable.of(setIsFilterable(true)),
+    ));
+
+
 export const epics = [
   setIsFilterOpenEpic,
+  setIsFilterableEpic,
 ];
 
 // ----------------------------------------------------------------------------
@@ -43,21 +58,38 @@ export const epics = [
 // ----------------------------------------------------------------------------
 
 const initialState = {
-  isFilterOpen: false,
-  filterValue: '',
+  header: {
+    isFilterable: false,
+    isFilterOpen: false,
+    filterValue: '',
+  },
 };
 
 export default function reducer(state = initialState, action = {}) {
   switch (action.type) {
+    case SET_IS_FILTERABLE:
+      return {
+        ...state,
+        header: {
+          ...state.header,
+          isFilterable: action.payload,
+        },
+      };
     case SET_IS_FILTER_OPEN:
       return {
         ...state,
-        isFilterOpen: !state.isFilterOpen,
+        header: {
+          ...state.header,
+          isFilterOpen: action.payload,
+        },
       };
     case SET_FILTER_VALUE:
       return {
         ...state,
-        filterValue: action.payload,
+        header: {
+          ...state.header,
+          filterValue: action.payload,
+        },
       };
     case CLEAR:
       return initialState;
