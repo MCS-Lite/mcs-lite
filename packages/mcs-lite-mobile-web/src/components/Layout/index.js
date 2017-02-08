@@ -1,7 +1,7 @@
-import LayoutWithHeader from './LayoutWithHeader';
+import LayoutDefault from './LayoutDefault';
 import LayoutDialog from './LayoutDialog';
 
 export default {
-  LayoutWithHeader,
+  LayoutDefault,
   LayoutDialog,
 };

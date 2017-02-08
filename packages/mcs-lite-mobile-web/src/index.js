@@ -30,7 +30,7 @@ ReactDOM.render(
         <Route path="/">
           <IndexRedirect to="/signin" />
           <Route path="/signin" component={Signin} />
-          <Route component={Layout.LayoutWithHeader}>
+          <Route component={Layout.LayoutDefault}>
             <Route path="/devices" component={DeviceList} />
             <Route path="/devices/:deviceId" component={DeviceDetail} />
           </Route>

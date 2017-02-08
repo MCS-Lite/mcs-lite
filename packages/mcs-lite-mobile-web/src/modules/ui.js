@@ -1,3 +1,4 @@
+import R from 'ramda';
 import { Observable } from 'rxjs/Observable';
 import { LOCATION_CHANGE } from 'react-router-redux';
 
@@ -5,21 +6,18 @@ import { LOCATION_CHANGE } from 'react-router-redux';
 // 1. Constants
 // ----------------------------------------------------------------------------
 
-const SET_IS_FILTER_OPEN = 'mcs-lite-mobile-web/ui/SET_IS_FILTER_OPEN';
-const SET_FILTER_VALUE = 'mcs-lite-mobile-web/ui/SET_FILTER_VALUE';
+const SET_HAS_BACK = 'mcs-lite-mobile-web/ui/SET_HAS_BACK';
 const CLEAR = 'mcs-lite-mobile-web/ui/CLEAR';
 
 // ----------------------------------------------------------------------------
 // 2. Action Creators (Sync)
 // ----------------------------------------------------------------------------
 
-const setIsFilterOpen = () => ({ type: SET_IS_FILTER_OPEN });
-const setFilterValue = payload => ({ type: SET_FILTER_VALUE, payload });
+const setHasBack = payload => ({ type: SET_HAS_BACK, payload });
 const clear = () => ({ type: CLEAR });
 
 export const actions = {
-  setIsFilterOpen,
-  setFilterValue,
+  setHasBack,
   clear,
 };
 
@@ -27,15 +25,18 @@ export const actions = {
 // 3. Epic (Async, side effect)
 // ----------------------------------------------------------------------------
 
-const setIsFilterOpenEpic = action$ =>
+const setHasBackEpic = action$ =>
   action$
     .ofType(LOCATION_CHANGE)
-    .switchMap(() => Observable.merge(
-      Observable.of(clear()),
+    .pluck('payload', 'pathname')
+    .map(R.equals('/devices'))
+    .switchMap(isDevicesListPage => Observable.merge(
+      Observable.of(setHasBack(!isDevicesListPage)),
     ));
 
+
 export const epics = [
-  setIsFilterOpenEpic,
+  setHasBackEpic,
 ];
 
 // ----------------------------------------------------------------------------
@@ -43,24 +44,19 @@ export const epics = [
 // ----------------------------------------------------------------------------
 
 const initialState = {
-  isFilterOpen: false,
-  filterValue: '',
+  header: {
+    hasBack: true,
+  },
 };
 
 export default function reducer(state = initialState, action = {}) {
   switch (action.type) {
-    case SET_IS_FILTER_OPEN:
-      return {
-        ...state,
-        isFilterOpen: !state.isFilterOpen,
-      };
-    case SET_FILTER_VALUE:
-      return {
-        ...state,
-        filterValue: action.payload,
-      };
+    case SET_HAS_BACK:
+      return R.assocPath(['header', 'hasBack'], action.payload)(state);
+
     case CLEAR:
       return initialState;
+
     default:
       return state;
   }

@@ -14,9 +14,8 @@ const StyledHr = styled(Hr)`
 const Layout = styled(MaxWidthCenterWrapper)`
   display: flex;
   flex-direction: column;
-  justify-content: center;
   height: 100%;
-  padding: 0 16px;
+  padding: 16px;
 
   > input + input {
     margin-top: 8px;
