@@ -6,24 +6,18 @@ import { LOCATION_CHANGE } from 'react-router-redux';
 // 1. Constants
 // ----------------------------------------------------------------------------
 
-const SET_IS_FILTERABLE = 'mcs-lite-mobile-web/ui/SET_IS_FILTERABLE';
-const SET_IS_FILTER_OPEN = 'mcs-lite-mobile-web/ui/SET_IS_FILTER_OPEN';
-const SET_FILTER_VALUE = 'mcs-lite-mobile-web/ui/SET_FILTER_VALUE';
+const SET_HAS_BACK = 'mcs-lite-mobile-web/ui/SET_HAS_BACK';
 const CLEAR = 'mcs-lite-mobile-web/ui/CLEAR';
 
 // ----------------------------------------------------------------------------
 // 2. Action Creators (Sync)
 // ----------------------------------------------------------------------------
 
-const setIsFilterable = payload => ({ type: SET_IS_FILTERABLE, payload });
-const setIsFilterOpen = payload => ({ type: SET_IS_FILTER_OPEN, payload });
-const setFilterValue = payload => ({ type: SET_FILTER_VALUE, payload });
+const setHasBack = payload => ({ type: SET_HAS_BACK, payload });
 const clear = () => ({ type: CLEAR });
 
 export const actions = {
-  setIsFilterable,
-  setIsFilterOpen,
-  setFilterValue,
+  setHasBack,
   clear,
 };
 
@@ -31,26 +25,18 @@ export const actions = {
 // 3. Epic (Async, side effect)
 // ----------------------------------------------------------------------------
 
-const setIsFilterOpenEpic = action$ =>
-  action$
-    .ofType(LOCATION_CHANGE)
-    .switchMap(() => Observable.merge(
-      Observable.of(clear()),
-    ));
-
-const setIsFilterableEpic = action$ =>
+const setHasBackEpic = action$ =>
   action$
     .ofType(LOCATION_CHANGE)
     .pluck('payload', 'pathname')
-    .filter(R.equals('/devices'))
-    .switchMap(() => Observable.merge(
-      Observable.of(setIsFilterable(true)),
+    .map(R.equals('/devices'))
+    .switchMap(isDevicesListPage => Observable.merge(
+      Observable.of(setHasBack(!isDevicesListPage)),
     ));
 
 
 export const epics = [
-  setIsFilterOpenEpic,
-  setIsFilterableEpic,
+  setHasBackEpic,
 ];
 
 // ----------------------------------------------------------------------------
@@ -59,22 +45,14 @@ export const epics = [
 
 const initialState = {
   header: {
-    isFilterable: false,
-    isFilterOpen: false,
-    filterValue: '',
+    hasBack: true,
   },
 };
 
 export default function reducer(state = initialState, action = {}) {
   switch (action.type) {
-    case SET_IS_FILTERABLE:
-      return R.assocPath(['header', 'isFilterable'], action.payload)(state);
-
-    case SET_IS_FILTER_OPEN:
-      return R.assocPath(['header', 'isFilterOpen'], action.payload)(state);
-
-    case SET_FILTER_VALUE:
-      return R.assocPath(['header', 'filterValue'], action.payload)(state);
+    case SET_HAS_BACK:
+      return R.assocPath(['header', 'hasBack'], action.payload)(state);
 
     case CLEAR:
       return initialState;

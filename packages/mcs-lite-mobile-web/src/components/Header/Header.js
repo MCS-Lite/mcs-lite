@@ -1,19 +1,17 @@
 import React from 'react';
 import styled from 'styled-components';
-import { browserHistory, Link } from 'react-router';
+import { browserHistory } from 'react-router';
 import { connect } from 'react-redux';
-import { Heading, B, Input } from 'mcs-lite-ui';
-import Transition from 'react-motion-ui-pack';
-import IconSearch from 'mcs-lite-icon/lib/IconSearch';
+import { Heading, B } from 'mcs-lite-ui';
 import IconBars from 'mcs-lite-icon/lib/IconBars';
 import IconArrowLeft from 'mcs-lite-icon/lib/IconArrowLeft';
 import MaxWidthCenterWrapper from '../MaxWidthCenterWrapper';
-import { actions } from '../../modules/ui';
+import HeaderIcon from '../HeaderIcon';
 
-const height = '56px;';
+export const HEIGHT = '56px;';
 
 const Container = styled.header`
-  height: ${height};
+  height: ${HEIGHT};
   z-index: 1;
 `;
 
@@ -22,7 +20,7 @@ const Fixed = styled.div`
   left: 0;
   right: 0;
   background-color: ${props => props.theme.color.primary};
-  height: ${height};
+  height: ${HEIGHT};
   box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.3);
 `;
 
@@ -36,6 +34,14 @@ const Left = styled.div`
   display: flex;
   height: 100%;
   align-items: center;
+  overflow: hidden;
+  flex-shrink: 0;
+`;
+
+const Center = styled.div`
+  display: flex;
+  height: 100%;
+  align-items: center;
   flex-grow: 1;
   overflow: hidden;
 `;
@@ -44,10 +50,11 @@ const Right = styled.div`
   display: flex;
   height: 100%;
   align-items: center;
+  flex-grow: 1;
+  justify-content: flex-end;
 `;
 
 const StyledHeading = styled(Heading)`
-  margin: 0 16px;
   user-select: none;
   width: 100%;
   white-space: nowrap;
@@ -55,75 +62,26 @@ const StyledHeading = styled(Heading)`
   overflow: hidden;
 `;
 
-const StyledLink = styled(Link)`
-  color: ${props => props.theme.color.white};
-  text-decoration: none;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0 16px;
-  cursor: pointer;
-  font-size: 24px;
-`;
-
-class Header extends React.Component {
-  onFilterChange = e => this.props.setFilterValue(e.target.value);
-  onSearchClick = () => this.props.setIsFilterOpen(!this.props.isFilterOpen);
-  render() {
-    const { title, isFilterable, isFilterOpen, filterValue } = this.props;
-    const { onFilterChange, onSearchClick } = this;
-
-    return (
-      <Container>
-        <Fixed>
-          <Wrapper>
-            <Left>
-              {isFilterable
-                ? <StyledLink to="/account"><IconBars /></StyledLink>
-                : <StyledLink onClick={browserHistory.goBack}><IconArrowLeft /></StyledLink>
-              }
-              {!isFilterOpen && title &&
-                <StyledHeading level={3} color="white"><B>{title}</B></StyledHeading>
-              }
-              {isFilterOpen &&
-                <Transition
-                  component={false}
-                  enter={{ opacity: 1, marginLeft: 0 }}
-                  leave={{ opacity: 0, marginLeft: 50 }}
-                >
-                  <Input
-                    autoFocus
-                    key="filter"
-                    placeholder="搜尋"
-                    value={filterValue}
-                    onChange={onFilterChange}
-                  />
-                </Transition>
-              }
-            </Left>
-
-            <Right>
-              {isFilterable &&
-                <StyledLink onClick={onSearchClick}><IconSearch /></StyledLink>
-              }
-            </Right>
-          </Wrapper>
-        </Fixed>
-      </Container>
-    );
-  }
-}
+const Header = ({ title, hasBack, children }) =>
+  <Container>
+    <Fixed>
+      <Wrapper>
+        <Left>
+          {hasBack
+            ? <HeaderIcon onClick={browserHistory.goBack}><IconArrowLeft /></HeaderIcon>
+            : <HeaderIcon to="/account"><IconBars /></HeaderIcon>
+          }
+        </Left>
+        {title &&
+          <Center>
+            <StyledHeading level={3} color="white"><B>{title}</B></StyledHeading>
+          </Center>
+        }
+        <Right>{children}</Right>
+      </Wrapper>
+    </Fixed>
+  </Container>;
 
 export default connect(
-  ({ ui }) => ({
-    title: '我的裝置名字非常長長長長長長長長長長長長長長長長長長',
-    isFilterable: ui.header.isFilterable,
-    isFilterOpen: ui.header.isFilterOpen,
-    filterValue: ui.header.filterValue,
-  }),
-  {
-    setIsFilterOpen: actions.setIsFilterOpen,
-    setFilterValue: actions.setFilterValue,
-  },
+  ({ ui }) => ({ hasBack: ui.header.hasBack }),
 )(Header);

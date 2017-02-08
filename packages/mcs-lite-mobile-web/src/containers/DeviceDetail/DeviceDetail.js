@@ -2,8 +2,11 @@ import React from 'react';
 import styled from 'styled-components';
 import { connect } from 'react-redux';
 import { Img, PullToRefresh, DataChannel } from 'mcs-lite-ui';
+import IconEllipsisV from 'mcs-lite-icon/lib/IconEllipsisV';
 import { actions } from '../../modules/devices';
 import MaxWidthCenterWrapper from '../../components/MaxWidthCenterWrapper';
+import Header from '../../components/Header';
+import HeaderIcon from '../../components/HeaderIcon';
 
 const Container = styled(MaxWidthCenterWrapper)`
   padding: 4px;
@@ -35,45 +38,55 @@ const DeviceDetail = (props) => {
     props.fetchDevices(done);
   };
   return (
-    <PullToRefresh onRefresh={onRefresh}>
-      <div>
-        <StyledImg src="http://placehold.it/350x150" />
+    <div>
+      <Header title="裝置名稱（裝置詳細資料">
+        <HeaderIcon>
+          <IconEllipsisV />
+        </HeaderIcon>
+      </Header>
+      <main>
+        <PullToRefresh onRefresh={onRefresh}>
+          <div>
+            <StyledImg src="http://placehold.it/350x150" />
 
-        <Container>
-          <CardWrapper>
-            <DataChannel.ControlSwitch
-              data-width="half"
-              title="Title"
-              subtitle="123125125125125"
-              header={<a href="">Link</a>}
-            />
+            <Container>
+              <CardWrapper>
+                <DataChannel.ControlSwitch
+                  data-width="half"
+                  title="Title"
+                  subtitle="123125125125125"
+                  header={<a href="">Link</a>}
+                />
 
-            <DataChannel.ControlNumber
-              data-width="half"
-              title="Title"
-              subtitle="123125125125125"
-              header={<a href="">Link</a>}
-            />
+                <DataChannel.ControlNumber
+                  data-width="half"
+                  title="Title"
+                  subtitle="123125125125125"
+                  header={<a href="">Link</a>}
+                />
 
-            <DataChannel.ControlRange
-              title="Title"
-              subtitle="123125125125125"
-              header={<a href="">Link</a>}
-              childrenProps={{
-                labels: ['AAAAAA', 'BBBBB', 'CCCCC', 'DDDDD', 'EEEEE'],
-              }}
-            />
+                <DataChannel.ControlRange
+                  title="Title"
+                  subtitle="123125125125125"
+                  header={<a href="">Link</a>}
+                  childrenProps={{
+                    labels: ['AAAAAA', 'BBBBB', 'CCCCC', 'DDDDD', 'EEEEE'],
+                  }}
+                />
 
-            <DataChannel.ControlString
-              data-width="half"
-              title="Title"
-              subtitle="123125125125125"
-              header={<a href="">Link</a>}
-            />
-          </CardWrapper>
-        </Container>
-      </div>
-    </PullToRefresh>
+                <DataChannel.ControlString
+                  data-width="half"
+                  title="Title"
+                  subtitle="123125125125125"
+                  header={<a href="">Link</a>}
+                />
+              </CardWrapper>
+            </Container>
+          </div>
+        </PullToRefresh>
+      </main>
+    </div>
+
   );
 };
 
