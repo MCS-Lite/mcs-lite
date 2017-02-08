@@ -24,7 +24,7 @@ const DeviceCard = ({ title, image }) =>
       <Img src={image} />
     </ImageWrapper>
     <ContentWrapper>
-      <Heading level={4}>
+      <Heading level={4} color="black">
         <TextTruncate line={4} truncateText=" ..." text={title} />
       </Heading>
     </ContentWrapper>
