@@ -13,13 +13,13 @@ import Header, { HEIGHT } from '../../components/Header/Header';
 import HeaderIcon from '../../components/HeaderIcon';
 
 const Container = styled(MaxWidthCenterWrapper)`
-  padding: 16px;
+  padding: 8px;
 `;
 
 const CardWrapper = styled.div`
 
   > * {
-    margin-bottom: 16px;
+    margin-bottom: 8px;
   }
 `;
 
@@ -44,10 +44,11 @@ class DeviceList extends React.Component {
   onFilterChange = e => this.setState({ filterValue: e.target.value });
   onFilterClick = () => this.setState({ isFilterOpen: !this.state.isFilterOpen });
   onRefresh = done => this.props.fetchDevices(done);
+  includeDeviceName = device => device.name.includes(this.state.filterValue);
   render() {
     const { isFilterOpen, filterValue } = this.state;
     const { devices } = this.props;
-    const { onRefresh, onFilterChange, onFilterClick } = this;
+    const { onRefresh, onFilterChange, onFilterClick, includeDeviceName } = this;
 
     return (
       <div>
@@ -73,20 +74,25 @@ class DeviceList extends React.Component {
         <main>
           <PullToRefresh onRefresh={onRefresh}>
             <Container>
-              <CardWrapper>
-                {
-                  devices.map(device => (
-                    <PreventDrag key={device.id}>
-                      <StyledLink to={`/devices/${device.id}`}>
+              <PreventDrag >
+                <Transition
+                  component={CardWrapper}
+                  appear={{ opacity: 0.8, translateY: 40 }}
+                  enter={{ opacity: 1, translateY: 0 }}
+                >
+                  {
+                    devices.filter(includeDeviceName).map(device => (
+                      <StyledLink key={device.id} to={`/devices/${device.id}`}>
                         <DeviceCard
                           title={device.name}
                           image={device.image}
                         />
                       </StyledLink>
-                    </PreventDrag>
-                  ))
-                }
-              </CardWrapper>
+                    ))
+                  }
+                </Transition>
+              </PreventDrag>
+
               {R.isEmpty(devices) &&
                 <PlaceholdWrapper>目前還沒有任何測試裝置</PlaceholdWrapper>
               }
