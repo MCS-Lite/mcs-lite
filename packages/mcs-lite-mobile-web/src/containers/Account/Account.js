@@ -10,7 +10,7 @@ const FlatButton = styled(Button)`
   border: initial;
   border-radius: initial;
   height: 56px;
-  border-top: 1px solid white;
+  border-top: 1px solid ${props => props.theme.color.white};
 `;
 
 const Container = styled.div`

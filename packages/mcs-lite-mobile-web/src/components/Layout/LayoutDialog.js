@@ -10,7 +10,7 @@ const Container = styled(MaxWidthCenterWrapper)`
   height: 100vh;
   display: flex;
   flex-direction: column;
-  background-color: white;
+  background-color: ${props => props.theme.color.white};
 `;
 
 const Header = styled.header`

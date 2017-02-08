@@ -2,7 +2,11 @@ import React from 'react';
 import styled from 'styled-components';
 import { browserHistory, Link } from 'react-router';
 import { connect } from 'react-redux';
+import { Heading, B, Input } from 'mcs-lite-ui';
+import Transition from 'react-motion-ui-pack';
+import IconEllipsisV from 'mcs-lite-icon/lib/IconEllipsisV';
 import MaxWidthCenterWrapper from '../MaxWidthCenterWrapper';
+import { actions } from '../../modules/ui';
 
 const height = '56px;';
 
@@ -25,8 +29,18 @@ const Wrapper = styled(MaxWidthCenterWrapper)`
   justify-content: space-between;
 `;
 
+const ItemWrapper = styled.div`
+  display: flex;
+  height: 100%;
+  align-items: center;
+`;
+
+const StyledHeading = styled(Heading)`
+  margin-left: 16px;
+`;
+
 const StyledLink = styled(Link)`
-  color: white;
+  color: ${props => props.theme.color.white};
   text-decoration: none;
   height: 100%;
   display: flex;
@@ -34,23 +48,76 @@ const StyledLink = styled(Link)`
   justify-content: center;
   padding: 0 16px;
   cursor: pointer;
+  font-size: 24px;
 `;
 
-const Header = ({ pathname }) =>
-  <Container>
-    <Fixed>
-      <Wrapper>
-        {
-          pathname === '/devices'
-            ? <StyledLink to="/account">＝</StyledLink>
-            : <StyledLink onClick={browserHistory.goBack}>--</StyledLink>
-        }
+class Header extends React.Component {
+  onFilterChange = e => this.props.onFilterChange(e.target.value);
+  render() {
+    const { pathname, title, isFilterOpen, filterValue, onSearchClick } = this.props;
+    const { onFilterChange } = this;
 
-        <StyledLink to="/">?</StyledLink>
-      </Wrapper>
-    </Fixed>
-  </Container>;
+    return (
+      <Container>
+        <Fixed>
+          <Wrapper>
+            <ItemWrapper>
+              {
+                pathname === '/devices'
+                ? <StyledLink to="/account"><IconEllipsisV /></StyledLink>
+                : <StyledLink onClick={browserHistory.goBack}>--</StyledLink>
+              }
+              {
+                !isFilterOpen && title && (
+                  <StyledHeading level={3} color="white">
+                    <B>{title}</B>
+                  </StyledHeading>
+                )
+              }
+            </ItemWrapper>
+            {
+              isFilterOpen &&
+                <Transition
+                  component={false}
+                  enter={{
+                    opacity: 1,
+                    translateX: 0,
+                  }}
+                  leave={{
+                    opacity: 0,
+                    translateX: 20,
+                  }}
+                >
+                  <Input
+                    key="filter"
+                    placeholder="搜尋"
+                    value={filterValue}
+                    onChange={onFilterChange}
+                  />
+                </Transition>
+            }
+
+            <ItemWrapper>
+              <StyledLink onClick={onSearchClick}>
+                <IconEllipsisV />
+              </StyledLink>
+            </ItemWrapper>
+          </Wrapper>
+        </Fixed>
+      </Container>
+    );
+  }
+}
 
 export default connect(
-  ({ routing }) => ({ pathname: routing.locationBeforeTransitions.pathname }),
+  ({ routing, ui }) => ({
+    pathname: routing.locationBeforeTransitions.pathname,
+    title: '我的裝置',
+    isFilterOpen: ui.isFilterOpen,
+    filterValue: ui.filterValue,
+  }),
+  {
+    onSearchClick: actions.setIsFilterOpen,
+    onFilterChange: actions.setFilterValue,
+  },
 )(Header);

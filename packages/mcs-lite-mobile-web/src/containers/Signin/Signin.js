@@ -1,8 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Button, Hr } from 'mcs-lite-ui';
+import { Button, Hr, Input } from 'mcs-lite-ui';
 import { connect } from 'react-redux';
-import Input from '../../components/Input';
 import MaxWidthCenterWrapper from '../../components/MaxWidthCenterWrapper';
 import { actions } from '../../modules/auth';
 import Logo from '../../components/Logo';
