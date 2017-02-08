@@ -12,7 +12,6 @@ export const HEIGHT = '56px;';
 
 const Container = styled.header`
   height: ${HEIGHT};
-  z-index: 1;
 `;
 
 const Fixed = styled.div`
@@ -22,6 +21,7 @@ const Fixed = styled.div`
   background-color: ${props => props.theme.color.primary};
   height: ${HEIGHT};
   box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.3);
+  z-index: 1;
 `;
 
 const Wrapper = styled(MaxWidthCenterWrapper)`
