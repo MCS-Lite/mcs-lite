@@ -14,6 +14,7 @@ import theme from './utils/theme';
 import Layout from './components/Layout';
 import DeviceList from './containers/DeviceList';
 import DeviceDetail from './containers/DeviceDetail';
+import DeviceDetailInfo from './containers/DeviceDetailInfo';
 import Signin from './containers/Signin';
 import Account from './containers/Account';
 import configureStore from './store/configureStore';
@@ -33,6 +34,7 @@ ReactDOM.render(
           <Route component={Layout.LayoutDefault}>
             <Route path="/devices" component={DeviceList} />
             <Route path="/devices/:deviceId" component={DeviceDetail} />
+            <Route path="/devices/:deviceId/info" component={DeviceDetailInfo} />
           </Route>
           <Route component={Layout.LayoutDialog}>
             <Route path="/account" component={Account} />

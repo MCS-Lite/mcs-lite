@@ -2,9 +2,9 @@ import React from 'react';
 import styled from 'styled-components';
 import { Button, Heading } from 'mcs-lite-ui';
 import { connect } from 'react-redux';
-import { Link } from 'react-router';
 import { actions } from '../../modules/auth';
 import Logo from '../../components/Logo';
+import StyledLink from '../../components/StyledLink';
 
 const FlatButton = styled(Button)`
   border: initial;
@@ -46,12 +46,12 @@ const Account = ({ username, signout }) =>
       <Heading level={4}>你好</Heading>
     </Body>
     <Footer>
-      <Link to="/devices">
+      <StyledLink to="/devices">
         <FlatButton block>我的裝置</FlatButton>
-      </Link>
-      <Link>
+      </StyledLink>
+      <StyledLink>
         <FlatButton block>更改密碼</FlatButton>
-      </Link>
+      </StyledLink>
       <FlatButton block onClick={signout}>登出</FlatButton>
     </Footer>
   </Container>;

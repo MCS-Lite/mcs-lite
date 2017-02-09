@@ -1,15 +1,13 @@
 import styled from 'styled-components';
-import { Link } from 'react-router';
+import StyledLink from '../StyledLink';
 
-const HeaderIcon = styled(Link)`
+const HeaderIcon = styled(StyledLink)`
   color: ${props => props.theme.color.white};
-  text-decoration: none;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 0 16px;
-  cursor: pointer;
   font-size: 24px;
 `;
 
