@@ -1,10 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
-import { browserHistory } from 'react-router';
 import Transition from 'react-motion-ui-pack';
-import { A } from 'mcs-lite-ui';
 import IconTimes from 'mcs-lite-icon/lib/IconTimes';
 import MaxWidthCenterWrapper from '../MaxWidthCenterWrapper';
+import StyledLink from '../StyledLink';
 
 const Container = styled(MaxWidthCenterWrapper)`
   height: 100%;
@@ -20,6 +19,7 @@ const Header = styled.header`
   > * {
     font-size: 24px;
     padding: 16px;
+    color: ${props => props.theme.color.primary};
   }
 `;
 
@@ -29,8 +29,6 @@ const Main = styled.main`
   flex-direction: column;
 `;
 
-const goBack = () => browserHistory.goBack();
-
 const LayoutDialog = ({ children }) =>
   <Transition
     component={false}
@@ -39,7 +37,7 @@ const LayoutDialog = ({ children }) =>
   >
     <Container key="layoutDialog">
       <Header>
-        <A color="primary" onClick={goBack}><IconTimes /></A>
+        <StyledLink to="/devices"><IconTimes /></StyledLink>
       </Header>
       <Main>{children}</Main>
     </Container>

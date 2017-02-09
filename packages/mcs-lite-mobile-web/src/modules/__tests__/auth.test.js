@@ -10,6 +10,10 @@ describe('auth', () => {
     expect(actions.signout()).toMatchSnapshot();
   });
 
+  it('should return changePassword actions', () => {
+    expect(actions.changePassword({})).toMatchSnapshot();
+  });
+
   it('should return setUserInfo actions', () => {
     expect(actions.setUserInfo('payload')).toMatchSnapshot();
   });
