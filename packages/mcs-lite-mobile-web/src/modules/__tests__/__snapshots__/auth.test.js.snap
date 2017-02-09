@@ -1,3 +1,14 @@
+exports[`auth should return changePassword actions 1`] = `
+Object {
+  "payload": Object {
+    "new1": undefined,
+    "new2": undefined,
+    "old": undefined,
+  },
+  "type": "mcs-lite-mobile-web/auth/CHANGE_PASSWORD",
+}
+`;
+
 exports[`auth should return clear actions 1`] = `
 Object {
   "type": "mcs-lite-mobile-web/auth/CLEAR",

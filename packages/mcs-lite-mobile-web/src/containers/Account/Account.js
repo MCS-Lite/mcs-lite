@@ -30,7 +30,7 @@ const Body = styled.div`
   flex-direction: column;
 `;
 
-const StyledLog = styled(Logo)`
+const StyledLogo = styled(Logo)`
   margin-bottom: 32px;
 `;
 
@@ -41,7 +41,7 @@ const Footer = styled.footer`
 const Account = ({ username, signout }) =>
   <Container>
     <Body>
-      <StyledLog />
+      <StyledLogo />
       <Heading level={4}>{username}</Heading>
       <Heading level={4}>你好</Heading>
     </Body>
@@ -49,7 +49,7 @@ const Account = ({ username, signout }) =>
       <StyledLink to="/devices">
         <FlatButton block>我的裝置</FlatButton>
       </StyledLink>
-      <StyledLink>
+      <StyledLink to="/password">
         <FlatButton block>更改密碼</FlatButton>
       </StyledLink>
       <FlatButton block onClick={signout}>登出</FlatButton>

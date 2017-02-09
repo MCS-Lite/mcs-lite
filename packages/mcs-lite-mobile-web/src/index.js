@@ -17,6 +17,7 @@ import DeviceDetail from './containers/DeviceDetail';
 import DeviceDetailInfo from './containers/DeviceDetailInfo';
 import Signin from './containers/Signin';
 import Account from './containers/Account';
+import Password from './containers/Password';
 import configureStore from './store/configureStore';
 import './style';
 
@@ -32,6 +33,7 @@ ReactDOM.render(
           <IndexRedirect to="/signin" />
           <Route path="/signin" component={Signin} />
           <Route component={Layout.LayoutDefault}>
+            <Route path="/password" component={Password} />
             <Route path="/devices" component={DeviceList} />
             <Route path="/devices/:deviceId" component={DeviceDetail} />
             <Route path="/devices/:deviceId/info" component={DeviceDetailInfo} />

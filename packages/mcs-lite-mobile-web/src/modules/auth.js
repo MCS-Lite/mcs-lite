@@ -8,6 +8,7 @@ import { actions as devicesActions } from './devices';
 
 const SIGNIN = 'mcs-lite-mobile-web/auth/SIGNIN';
 const SIGNOUT = 'mcs-lite-mobile-web/auth/SIGNOUT';
+const CHANGE_PASSWORD = 'mcs-lite-mobile-web/auth/CHANGE_PASSWORD';
 const SET_USERINFO = 'mcs-lite-mobile-web/auth/SET_USERINFO';
 const CLEAR = 'mcs-lite-mobile-web/auth/CLEAR';
 
@@ -18,12 +19,15 @@ const CLEAR = 'mcs-lite-mobile-web/auth/CLEAR';
 const signin = ({ account, password }) => ({ type: SIGNIN, payload: { account, password }});
 const signout = () => ({ type: SIGNOUT });
 const setUserInfo = payload => ({ type: SET_USERINFO, payload });
+const changePassword = ({ old, new1, new2 }) =>
+  ({ type: CHANGE_PASSWORD, payload: { old, new1, new2 }});
 const clear = () => ({ type: CLEAR });
 
 export const actions = {
   signin,
   signout,
   setUserInfo,
+  changePassword,
   clear,
 };
 
@@ -34,6 +38,7 @@ export const actions = {
 const signinEpic = action$ =>
   action$
     .ofType(SIGNIN)
+    .delay(1000)
     .map(payload => ({
       username: 'Michael Hsu',
       image: 'http://placehold.it/350x150',
@@ -54,9 +59,16 @@ const signoutEpic = action$ =>
       Observable.of(push('/')),
     ));
 
+const changePasswordEpic = action$ =>
+  action$
+    .ofType(CHANGE_PASSWORD)
+    .delay(1000)
+    .mapTo('success');
+
 export const epics = [
   signinEpic,
   signoutEpic,
+  changePasswordEpic,
 ];
 
 // ----------------------------------------------------------------------------
