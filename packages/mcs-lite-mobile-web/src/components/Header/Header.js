@@ -1,7 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import { browserHistory } from 'react-router';
-import { connect } from 'react-redux';
 import { Heading, B } from 'mcs-lite-ui';
 import IconBars from 'mcs-lite-icon/lib/IconBars';
 import IconArrowLeft from 'mcs-lite-icon/lib/IconArrowLeft';
@@ -61,13 +59,13 @@ const StyledHeading = styled(Heading)`
   overflow: hidden;
 `;
 
-const Header = ({ title, hasBack, children }) =>
+const Header = ({ title, backTo, children }) =>
   <Container>
     <Fixed>
       <Wrapper>
         <Left>
-          {hasBack
-            ? <HeaderIcon onClick={browserHistory.goBack}><IconArrowLeft /></HeaderIcon>
+          {backTo
+            ? <HeaderIcon to={backTo}><IconArrowLeft /></HeaderIcon>
             : <HeaderIcon to="/account"><IconBars /></HeaderIcon>
           }
         </Left>
@@ -81,6 +79,4 @@ const Header = ({ title, hasBack, children }) =>
     </Fixed>
   </Container>;
 
-export default connect(
-  ({ ui }) => ({ hasBack: ui.header.hasBack }),
-)(Header);
+export default Header;
