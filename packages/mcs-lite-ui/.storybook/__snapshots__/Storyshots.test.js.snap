@@ -2095,6 +2095,167 @@ exports[`Storyshots Spin API 1`] = `
 </div>
 `;
 
+exports[`Storyshots StatusLight API 1`] = `
+<svg
+  className="gUywdC"
+  color="grayDark"
+  preserveAspectRatio="none"
+  viewBox="0 0 20 20">
+  <circle
+    cx="10"
+    cy="10"
+    r="10" />
+</svg>
+`;
+
+exports[`Storyshots StatusLight Custom width 1`] = `
+<svg
+  className="gnQYZP kUCVuq"
+  color="warning"
+  preserveAspectRatio="none"
+  viewBox="0 0 20 20">
+  <circle
+    cx="10"
+    cy="10"
+    r="10" />
+</svg>
+`;
+
+exports[`Storyshots StatusLight With color props 1`] = `
+<div>
+  <div>
+    <svg
+      className="cLuimq"
+      color="black"
+      preserveAspectRatio="none"
+      viewBox="0 0 20 20">
+      <circle
+        cx="10"
+        cy="10"
+        r="10" />
+    </svg>
+    black
+  </div>
+  <div>
+    <svg
+      className="ePEEdP"
+      color="grayBase"
+      preserveAspectRatio="none"
+      viewBox="0 0 20 20">
+      <circle
+        cx="10"
+        cy="10"
+        r="10" />
+    </svg>
+    grayBase
+  </div>
+  <div>
+    <svg
+      className="gUywdC"
+      color="grayDark"
+      preserveAspectRatio="none"
+      viewBox="0 0 20 20">
+      <circle
+        cx="10"
+        cy="10"
+        r="10" />
+    </svg>
+    grayDark
+  </div>
+  <div>
+    <svg
+      className="boZlWD"
+      color="grayLight"
+      preserveAspectRatio="none"
+      viewBox="0 0 20 20">
+      <circle
+        cx="10"
+        cy="10"
+        r="10" />
+    </svg>
+    grayLight
+  </div>
+  <div>
+    <svg
+      className="ggsUXl"
+      color="white"
+      preserveAspectRatio="none"
+      viewBox="0 0 20 20">
+      <circle
+        cx="10"
+        cy="10"
+        r="10" />
+    </svg>
+    white
+  </div>
+  <div>
+    <svg
+      className="boZlWD"
+      color="default"
+      preserveAspectRatio="none"
+      viewBox="0 0 20 20">
+      <circle
+        cx="10"
+        cy="10"
+        r="10" />
+    </svg>
+    default
+  </div>
+  <div>
+    <svg
+      className="kGHODW"
+      color="primary"
+      preserveAspectRatio="none"
+      viewBox="0 0 20 20">
+      <circle
+        cx="10"
+        cy="10"
+        r="10" />
+    </svg>
+    primary
+  </div>
+  <div>
+    <svg
+      className="jfcUeq"
+      color="success"
+      preserveAspectRatio="none"
+      viewBox="0 0 20 20">
+      <circle
+        cx="10"
+        cy="10"
+        r="10" />
+    </svg>
+    success
+  </div>
+  <div>
+    <svg
+      className="jvqUaW"
+      color="error"
+      preserveAspectRatio="none"
+      viewBox="0 0 20 20">
+      <circle
+        cx="10"
+        cy="10"
+        r="10" />
+    </svg>
+    error
+  </div>
+  <div>
+    <svg
+      className="kUCVuq"
+      color="warning"
+      preserveAspectRatio="none"
+      viewBox="0 0 20 20">
+      <circle
+        cx="10"
+        cy="10"
+        r="10" />
+    </svg>
+    warning
+  </div>
+</div>
+`;
+
 exports[`Storyshots Switch API 1`] = `
 <div>
   <div
