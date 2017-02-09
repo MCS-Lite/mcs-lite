@@ -6,7 +6,7 @@ import P from '.';
 storiesOf('P', module)
   .addWithInfo(
     'API',
-    `段落使用。 (${theme.fontSize.p})`,
+    `段落使用。 (${theme.fontSize.p}) & color: currentColor`,
     () =>
       <P>
         Nisi eu eiusmod cupidatat aute laboris commodo excepteur esse dolore

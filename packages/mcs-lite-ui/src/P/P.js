@@ -15,15 +15,12 @@ const Component = ({ children, ...otherProps }) =>
 const P = styled(Component)`
   margin: 0;
   font-size: ${props => props.theme.fontSize.p};
-  color: ${props => props.theme.color[props.color]};
+  color: ${props => props.color ? props.theme.color[props.color] : 'currentColor'};
 `;
 
 P.displayName = 'P';
 P.propTypes = {
   color: PropTypes.string,
-};
-P.defaultProps = {
-  color: 'black',
 };
 
 export default P;

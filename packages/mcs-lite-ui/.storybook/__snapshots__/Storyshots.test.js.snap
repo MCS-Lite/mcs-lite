@@ -8,8 +8,7 @@ exports[`Storyshots A API 1`] = `
 
 exports[`Storyshots A Nested children with Heading 1`] = `
 <h1
-  className="cRIiEL"
-  color="black">
+  className="khhwSD">
   Heading Level 1 
   <b
     className="dbJQUp">
@@ -148,8 +147,7 @@ exports[`Storyshots B API 1`] = `
 
 exports[`Storyshots B CJK 1`] = `
 <h4
-  className="ezDjUV"
-  color="black">
+  className="jSuFAn">
   <b
     className="dbJQUp">
     控制開關粗體字
@@ -172,8 +170,7 @@ exports[`Storyshots B With color 1`] = `
 
 exports[`Storyshots B Within <P> 1`] = `
 <div
-  className="cqMgnG"
-  color="black">
+  className="gVViGF">
   Nisi eu eiusmod cupidatat aute laboris commodo excepteur
   <small
     className="gPtzLl">
@@ -312,8 +309,7 @@ exports[`Storyshots ClickOutside API 1`] = `
 
 exports[`Storyshots DataChannel ButtonClear 1`] = `
 <div
-  className="cqMgnG"
-  color="black">
+  className="gVViGF">
   <a
     className="enrdWE"
     color="primary">
@@ -416,8 +412,7 @@ exports[`Storyshots DataChannel ControlRange - Category, GPIO and Analog 1`] = `
     </div>
     <div>
       <h4
-        className="ezDjUV"
-        color="black">
+        className="jSuFAn">
         Category
       </h4>
       <div
@@ -431,8 +426,7 @@ exports[`Storyshots DataChannel ControlRange - Category, GPIO and Analog 1`] = `
       <hr
         className="dPNKKP iAugwC" />
       <div
-        className="bMkgFU"
-        color="black">
+        className="iyRJwF">
         <MockReactTextTruncate
           line={2}
           text="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
@@ -498,8 +492,7 @@ exports[`Storyshots DataChannel ControlRange - Category, GPIO and Analog 1`] = `
     </div>
     <div>
       <h4
-        className="ezDjUV"
-        color="black">
+        className="jSuFAn">
         GPIO
       </h4>
       <div
@@ -513,8 +506,7 @@ exports[`Storyshots DataChannel ControlRange - Category, GPIO and Analog 1`] = `
       <hr
         className="dPNKKP iAugwC" />
       <div
-        className="bMkgFU"
-        color="black">
+        className="iyRJwF">
         <MockReactTextTruncate
           line={2}
           text="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
@@ -580,8 +572,7 @@ exports[`Storyshots DataChannel ControlRange - Category, GPIO and Analog 1`] = `
     </div>
     <div>
       <h4
-        className="ezDjUV"
-        color="black">
+        className="jSuFAn">
         Analog
       </h4>
       <div
@@ -595,8 +586,7 @@ exports[`Storyshots DataChannel ControlRange - Category, GPIO and Analog 1`] = `
       <hr
         className="dPNKKP iAugwC" />
       <div
-        className="bMkgFU"
-        color="black">
+        className="iyRJwF">
         <MockReactTextTruncate
           line={2}
           text="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
@@ -689,8 +679,7 @@ exports[`Storyshots DataChannel ControlRange - PWM 1`] = `
   </div>
   <div>
     <h4
-      className="ezDjUV"
-      color="black">
+      className="jSuFAn">
       ControlPWM
     </h4>
     <div
@@ -704,8 +693,7 @@ exports[`Storyshots DataChannel ControlRange - PWM 1`] = `
     <hr
       className="dPNKKP iAugwC" />
     <div
-      className="bMkgFU"
-      color="black">
+      className="iyRJwF">
       <MockReactTextTruncate
         line={2}
         text="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
@@ -782,8 +770,7 @@ exports[`Storyshots DataChannel ControlRange - Stateful PPAP 1`] = `
   </div>
   <div>
     <h4
-      className="ezDjUV"
-      color="black">
+      className="jSuFAn">
       Stateful PPAP
     </h4>
     <div
@@ -797,8 +784,7 @@ exports[`Storyshots DataChannel ControlRange - Stateful PPAP 1`] = `
     <hr
       className="dPNKKP iAugwC" />
     <div
-      className="bMkgFU"
-      color="black">
+      className="iyRJwF">
       <MockReactTextTruncate
         line={2}
         text="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
@@ -867,8 +853,7 @@ exports[`Storyshots DataChannel ControlRange - Stateful number 1`] = `
   </div>
   <div>
     <h4
-      className="ezDjUV"
-      color="black">
+      className="jSuFAn">
       Stateful number
     </h4>
     <div
@@ -882,8 +867,7 @@ exports[`Storyshots DataChannel ControlRange - Stateful number 1`] = `
     <hr
       className="dPNKKP iAugwC" />
     <div
-      className="bMkgFU"
-      color="black">
+      className="iyRJwF">
       <MockReactTextTruncate
         line={2}
         text="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
@@ -923,8 +907,7 @@ exports[`Storyshots DataChannel DataChannel.ControlNumber 1`] = `
       <div
         className="kGGPNo">
         <div
-          className="cqMgnG"
-          color="black"
+          className="gVViGF"
           onClick={[Function]}>
           <a
             className="enrdWE"
@@ -952,8 +935,7 @@ exports[`Storyshots DataChannel DataChannel.ControlNumber 1`] = `
   </div>
   <div>
     <h4
-      className="ezDjUV"
-      color="black">
+      className="jSuFAn">
       Title
     </h4>
     <div
@@ -967,8 +949,7 @@ exports[`Storyshots DataChannel DataChannel.ControlNumber 1`] = `
     <hr
       className="dPNKKP iAugwC" />
     <div
-      className="bMkgFU"
-      color="black">
+      className="iyRJwF">
       <MockReactTextTruncate
         line={2}
         text="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
@@ -1059,8 +1040,7 @@ exports[`Storyshots DataChannel DataChannel.ControlRange 1`] = `
   </div>
   <div>
     <h4
-      className="ezDjUV"
-      color="black">
+      className="jSuFAn">
       Title
     </h4>
     <div
@@ -1074,8 +1054,7 @@ exports[`Storyshots DataChannel DataChannel.ControlRange 1`] = `
     <hr
       className="dPNKKP iAugwC" />
     <div
-      className="bMkgFU"
-      color="black">
+      className="iyRJwF">
       <MockReactTextTruncate
         line={2}
         text="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
@@ -1108,8 +1087,7 @@ exports[`Storyshots DataChannel DataChannel.ControlString 1`] = `
       <div
         className="cMqWVR">
         <div
-          className="cqMgnG"
-          color="black"
+          className="gVViGF"
           onClick={[Function]}>
           <a
             className="enrdWE"
@@ -1137,8 +1115,7 @@ exports[`Storyshots DataChannel DataChannel.ControlString 1`] = `
   </div>
   <div>
     <h4
-      className="ezDjUV"
-      color="black">
+      className="jSuFAn">
       Title
     </h4>
     <div
@@ -1152,8 +1129,7 @@ exports[`Storyshots DataChannel DataChannel.ControlString 1`] = `
     <hr
       className="dPNKKP iAugwC" />
     <div
-      className="bMkgFU"
-      color="black">
+      className="iyRJwF">
       <MockReactTextTruncate
         line={2}
         text="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
@@ -1182,8 +1158,7 @@ exports[`Storyshots DataChannel DataChannel.ControlSwitch 1`] = `
   </div>
   <div>
     <h4
-      className="ezDjUV"
-      color="black">
+      className="jSuFAn">
       Title
     </h4>
     <div
@@ -1197,8 +1172,7 @@ exports[`Storyshots DataChannel DataChannel.ControlSwitch 1`] = `
     <hr
       className="dPNKKP iAugwC" />
     <div
-      className="bMkgFU"
-      color="black">
+      className="iyRJwF">
       <MockReactTextTruncate
         line={2}
         text="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
@@ -1227,8 +1201,7 @@ exports[`Storyshots DataChannel Fixed width 1`] = `
   </div>
   <div>
     <h4
-      className="ezDjUV"
-      color="black">
+      className="jSuFAn">
       Title
     </h4>
     <div
@@ -1242,8 +1215,7 @@ exports[`Storyshots DataChannel Fixed width 1`] = `
     <hr
       className="dPNKKP iAugwC" />
     <div
-      className="bMkgFU"
-      color="black">
+      className="iyRJwF">
       <MockReactTextTruncate
         line={2}
         text="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
@@ -1266,8 +1238,7 @@ exports[`Storyshots DataChannel withDataChannelCard (HOC) 1`] = `
   </div>
   <div>
     <h4
-      className="ezDjUV"
-      color="black">
+      className="jSuFAn">
       Title
     </h4>
     <div
@@ -1281,8 +1252,7 @@ exports[`Storyshots DataChannel withDataChannelCard (HOC) 1`] = `
     <hr
       className="dPNKKP iAugwC" />
     <div
-      className="bMkgFU"
-      color="black">
+      className="iyRJwF">
       <MockReactTextTruncate
         line={2}
         text="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
@@ -1308,8 +1278,7 @@ exports[`Storyshots DataChannelCard API 1`] = `
   </div>
   <div>
     <h4
-      className="ezDjUV"
-      color="black">
+      className="jSuFAn">
       Title
     </h4>
     <div
@@ -1323,8 +1292,7 @@ exports[`Storyshots DataChannelCard API 1`] = `
     <hr
       className="dPNKKP iAugwC" />
     <div
-      className="bMkgFU"
-      color="black">
+      className="iyRJwF">
       <MockReactTextTruncate
         line={2}
         text="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
@@ -1349,8 +1317,7 @@ exports[`Storyshots DataChannelCard Custom width and height 1`] = `
   </div>
   <div>
     <h4
-      className="ezDjUV"
-      color="black">
+      className="jSuFAn">
       Title
     </h4>
     <div
@@ -1364,8 +1331,7 @@ exports[`Storyshots DataChannelCard Custom width and height 1`] = `
     <hr
       className="dPNKKP iAugwC" />
     <div
-      className="bMkgFU"
-      color="black">
+      className="iyRJwF">
       <MockReactTextTruncate
         line={2}
         text="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
@@ -1390,8 +1356,7 @@ exports[`Storyshots DataChannelCard Without description 1`] = `
   </div>
   <div>
     <h4
-      className="ezDjUV"
-      color="black">
+      className="jSuFAn">
       Title
     </h4>
     <div
@@ -1419,8 +1384,7 @@ exports[`Storyshots DomAlign API 1`] = `
 
 exports[`Storyshots Heading API 1`] = `
 <h1
-  className="cRIiEL"
-  color="black">
+  className="khhwSD">
   Level 1
 </h1>
 `;
@@ -1493,8 +1457,7 @@ exports[`Storyshots Heading With color props 1`] = `
 exports[`Storyshots Heading With level props 1`] = `
 <div>
   <h1
-    className="cRIiEL"
-    color="black">
+    className="khhwSD">
     h
     1
      - Level 
@@ -1506,8 +1469,7 @@ exports[`Storyshots Heading With level props 1`] = `
     )
   </h1>
   <h2
-    className="hYsLQk"
-    color="black">
+    className="hNqZOT">
     h
     2
      - Level 
@@ -1519,8 +1481,7 @@ exports[`Storyshots Heading With level props 1`] = `
     )
   </h2>
   <h3
-    className="lewxKA"
-    color="black">
+    className="kaxFLM">
     h
     3
      - Level 
@@ -1532,8 +1493,7 @@ exports[`Storyshots Heading With level props 1`] = `
     )
   </h3>
   <h4
-    className="ezDjUV"
-    color="black">
+    className="jSuFAn">
     h
     4
      - Level 
@@ -1545,8 +1505,7 @@ exports[`Storyshots Heading With level props 1`] = `
     )
   </h4>
   <h5
-    className="iyjEQr"
-    color="black">
+    className="eyeiJn">
     h
     5
      - Level 
@@ -1558,8 +1517,7 @@ exports[`Storyshots Heading With level props 1`] = `
     )
   </h5>
   <h6
-    className="iyjEQr"
-    color="black">
+    className="eyeiJn">
     h
     6
      - Level 
@@ -1827,8 +1785,7 @@ exports[`Storyshots Menu Combination 1`] = `
     className="ftUprM"
     onClick={[Function]}>
     <h1
-      className="cRIiEL"
-      color="black">
+      className="khhwSD">
       MenuItem Heading 1
     </h1>
   </div>
@@ -1836,8 +1793,7 @@ exports[`Storyshots Menu Combination 1`] = `
     className="ftUprM"
     onClick={[Function]}>
     <p
-      className="cqMgnG"
-      color="black">
+      className="gVViGF">
       MenuItem P
     </p>
   </div>
@@ -1927,16 +1883,14 @@ exports[`Storyshots Overlay Dropdown Menu 1`] = `
 
 exports[`Storyshots P API 1`] = `
 <p
-  className="cqMgnG"
-  color="black">
+  className="gVViGF">
   Nisi eu eiusmod cupidatat aute laboris commodo excepteur esse dolore incididunt incididunt aliquip pariatur est minim officia sit. Nulla pariatur duis duis quis commodo cupidatat voluptate enim culpa elit adipisicing do cupidatat sint anim. Cillum elit magna occaecat proident sit cupidatat ad quis sunt id culpa culpa. Ad duis nulla in incididunt amet consequat officia ad voluptate voluptate. Pariatur eiusmod ullamco cupidatat non magna officia aute magna deserunt qui aute dolor eu. Qui amet non ex cillum sunt ad velit consequat ipsum velit.
 </p>
 `;
 
 exports[`Storyshots P Nested children with div 1`] = `
 <div
-  className="cqMgnG"
-  color="black">
+  className="gVViGF">
   <div>
     <span>
       Qui amet non ex cillum sunt ad velit consequat ipsum velit.
@@ -2121,8 +2075,7 @@ exports[`Storyshots Small With color 1`] = `
 
 exports[`Storyshots Small Within <P> 1`] = `
 <div
-  className="cqMgnG"
-  color="black">
+  className="gVViGF">
   Nisi eu eiusmod cupidatat aute laboris commodo excepteur
   <small
     className="gPtzLl">

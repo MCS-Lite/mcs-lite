@@ -8,7 +8,7 @@ const Heading = styled(H)`
   margin: 0;
   font-weight: normal;
   font-size: ${props => props.theme.fontSize[`h${props.level}`]};
-  color: ${props => props.theme.color[props.color]};
+  color: ${props => props.color ? props.theme.color[props.color] : 'currentColor'};
 `;
 
 Heading.displayName = 'Heading';
@@ -20,7 +20,6 @@ Heading.propTypes = {
 
 Heading.defaultProps = {
   level: 1,
-  color: 'black',
 };
 
 export default Heading;

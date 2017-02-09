@@ -9,7 +9,7 @@ const remToPx = rem => `${parseFloat(theme.base.fontSize, 10) * parseFloat(rem, 
 storiesOf('Heading', module)
   .addWithInfo(
     'API',
-    'Default h1',
+    'Default h1 & color: currentColor',
     () => <Heading>Level 1</Heading>,
     { inline: true },
   )
