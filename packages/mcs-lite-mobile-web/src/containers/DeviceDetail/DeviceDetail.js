@@ -44,7 +44,7 @@ class DeviceDetail extends React.Component {
     const { getTarget, onMoreDetailClick, onHide, onRefresh } = this;
     return (
       <div>
-        <Header title="裝置名稱（裝置詳細資料">
+        <Header title="裝置名稱（裝置詳細資料" backTo="/devices">
           <HeaderIcon ref={getTarget} onClick={onMoreDetailClick}>
             <IconEllipsisV />
           </HeaderIcon>
