@@ -7,6 +7,7 @@ import MaxWidthCenterWrapper from '../../components/MaxWidthCenterWrapper';
 import Header from '../../components/Header';
 
 const Container = styled(MaxWidthCenterWrapper)`
+  padding: 16px 16px 56px 16px;
 
   > div + div {
     margin-top: 8px;
