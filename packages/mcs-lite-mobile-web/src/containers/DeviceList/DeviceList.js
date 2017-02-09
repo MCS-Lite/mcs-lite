@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import R from 'ramda';
 import { connect } from 'react-redux';
-import { Link } from 'react-router';
 import Transition from 'react-motion-ui-pack';
 import { P, PullToRefresh, PreventDrag, Input } from 'mcs-lite-ui';
 import IconSearch from 'mcs-lite-icon/lib/IconSearch';
@@ -11,6 +10,7 @@ import DeviceCard from '../../components/DeviceCard';
 import MaxWidthCenterWrapper from '../../components/MaxWidthCenterWrapper';
 import Header, { HEIGHT } from '../../components/Header/Header';
 import HeaderIcon from '../../components/HeaderIcon';
+import StyledLink from '../../components/StyledLink';
 
 const Container = styled(MaxWidthCenterWrapper)`
   padding: 8px;
@@ -21,11 +21,6 @@ const CardWrapper = styled.div`
   > * {
     margin-bottom: 8px;
   }
-`;
-
-const StyledLink = styled(Link)`
-  display: block;
-  text-decoration: none;
 `;
 
 const PlaceholdWrapper = styled(P)`
@@ -41,9 +36,10 @@ const PlaceholdWrapper = styled(P)`
 
 class DeviceList extends React.Component {
   state = { isFilterOpen: false, filterValue: '' };
+  componentDidMount = () => this.props.fetchDeviceList();
   onFilterChange = e => this.setState({ filterValue: e.target.value });
   onFilterClick = () => this.setState({ isFilterOpen: !this.state.isFilterOpen });
-  onRefresh = done => this.props.fetchDevices(done);
+  onRefresh = done => this.props.fetchDeviceList(done);
   includeDeviceName = device => device.name.includes(this.state.filterValue);
   render() {
     const { isFilterOpen, filterValue } = this.state;
@@ -77,15 +73,15 @@ class DeviceList extends React.Component {
               <PreventDrag >
                 <Transition
                   component={CardWrapper}
-                  appear={{ opacity: 0.8, translateY: 20 }}
-                  enter={{ opacity: 1, translateY: 0 }}
+                  appear={{ opacity: 0.8, marginTop: -20 }}
+                  enter={{ opacity: 1, marginTop: 0 }}
                 >
                   {
                     devices.filter(includeDeviceName).map(device => (
-                      <StyledLink key={device.id} to={`/devices/${device.id}`}>
+                      <StyledLink key={device.deviceId} to={`/devices/${device.deviceId}`}>
                         <DeviceCard
                           title={device.name}
-                          image={device.image}
+                          image={device.deviceImageURL}
                         />
                       </StyledLink>
                     ))
@@ -105,6 +101,6 @@ class DeviceList extends React.Component {
 }
 
 export default connect(
-  ({ devices }) => ({ devices }),
-  { fetchDevices: actions.fetchDevices },
+  ({ devices }) => ({ devices: Object.values(devices) }),
+  { fetchDeviceList: actions.fetchDeviceList },
 )(DeviceList);

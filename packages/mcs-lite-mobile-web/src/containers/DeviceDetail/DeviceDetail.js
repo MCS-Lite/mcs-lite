@@ -7,6 +7,7 @@ import { actions } from '../../modules/devices';
 import MaxWidthCenterWrapper from '../../components/MaxWidthCenterWrapper';
 import Header from '../../components/Header';
 import HeaderIcon from '../../components/HeaderIcon';
+import StyledLink from '../../components/StyledLink';
 
 const Container = styled(MaxWidthCenterWrapper)`
   padding: 4px;
@@ -35,12 +36,14 @@ const CardWrapper = styled.div`
 
 class DeviceDetail extends React.Component {
   state = { isMenuShow: false, target: undefined };
+  componentDidMount = () => this.props.fetchDeviceDetail();
   onMoreDetailClick = () => this.setState({ isMenuShow: !this.state.isMenuShow });
   onHide = () => this.setState({ isMenuShow: false });
-  onRefresh = done => this.props.fetchDevices(done);
+  onRefresh = done => this.props.fetchDeviceDetail(done);
   getTarget = node => this.setState({ target: node });
   render() {
     const { isMenuShow, target } = this.state;
+    const { device } = this.props;
     const { getTarget, onMoreDetailClick, onHide, onRefresh } = this;
     return (
       <div>
@@ -56,7 +59,9 @@ class DeviceDetail extends React.Component {
                 alignConfig={{ points: ['tr', 'bc'], offset: [20, -20]}}
               >
                 <Menu.Menu key="menu">
-                  <Menu.MenuItem>測試裝置介紹</Menu.MenuItem>
+                  <StyledLink to={`/devices/${device.deviceId}/info`}>
+                    <Menu.MenuItem>測試裝置介紹</Menu.MenuItem>
+                  </StyledLink>
                   <Menu.MenuItem>觸發條件與動作</Menu.MenuItem>
                 </Menu.Menu>
               </Overlay>
@@ -110,6 +115,8 @@ class DeviceDetail extends React.Component {
 }
 
 export default connect(
-  ({ devices }) => ({ devices }),
-  { fetchDevices: actions.fetchDevices },
+  ({ devices }, { params: { deviceId }}) => ({
+    device: devices[deviceId],
+  }),
+  { fetchDeviceDetail: actions.fetchDeviceDetail },
 )(DeviceDetail);
