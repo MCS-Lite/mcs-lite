@@ -101,6 +101,6 @@ class DeviceList extends React.Component {
 }
 
 export default connect(
-  ({ devices }) => ({ devices: Object.values(devices) }),
+  ({ devices }) => ({ devices: R.values(devices) }),
   { fetchDeviceList: actions.fetchDeviceList },
 )(DeviceList);
