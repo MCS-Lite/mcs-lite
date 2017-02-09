@@ -1,6 +1,6 @@
-exports[`devices should return clearDevices actions 1`] = `
+exports[`devices should return clear actions 1`] = `
 Object {
-  "type": "mcs-lite-mobile-web/devices/CLEAR_DEVICES",
+  "type": "mcs-lite-mobile-web/devices/CLEAR",
 }
 `;
 

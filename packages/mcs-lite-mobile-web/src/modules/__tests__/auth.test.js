@@ -14,7 +14,7 @@ describe('auth', () => {
     expect(actions.setUserInfo('payload')).toMatchSnapshot();
   });
 
-  it('should return clearUserInfo actions', () => {
-    expect(actions.clearUserInfo()).toMatchSnapshot();
+  it('should return clear actions', () => {
+    expect(actions.clear()).toMatchSnapshot();
   });
 });

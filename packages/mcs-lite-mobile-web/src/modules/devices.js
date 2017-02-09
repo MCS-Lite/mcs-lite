@@ -1,4 +1,3 @@
-import R from 'ramda';
 import { Observable } from 'rxjs/Observable';
 import emptyFunction from 'mcs-lite-ui/lib/utils/emptyFunction';
 import devicesJSON from './mocks/devices.api.json';
@@ -12,7 +11,7 @@ const FETCH_DEVICE_LIST = 'mcs-lite-mobile-web/devices/FETCH_DEVICE_LIST';
 const FETCH_DEVICE_DETAIL = 'mcs-lite-mobile-web/devices/FETCH_DEVICE_DETAIL';
 const SET_DEVICE_LIST = 'mcs-lite-mobile-web/devices/SET_DEVICE_LIST';
 const SET_DEVICE_DETAIL = 'mcs-lite-mobile-web/devices/SET_DEVICE_DETAIL';
-const CLEAR_DEVICES = 'mcs-lite-mobile-web/devices/CLEAR_DEVICES';
+const CLEAR = 'mcs-lite-mobile-web/devices/CLEAR';
 
 // ----------------------------------------------------------------------------
 // 2. Action Creators (Sync)
@@ -22,14 +21,14 @@ const fetchDeviceList = (callback = emptyFunction) => ({ type: FETCH_DEVICE_LIST
 const fetchDeviceDetail = (callback = emptyFunction) => ({ type: FETCH_DEVICE_DETAIL, callback });
 const setDeviceList = payload => ({ type: SET_DEVICE_LIST, payload });
 const setDeviceDetail = payload => ({ type: SET_DEVICE_DETAIL, payload });
-const clearDevices = () => ({ type: CLEAR_DEVICES });
+const clear = () => ({ type: CLEAR });
 
 export const actions = {
   fetchDeviceList,
   fetchDeviceDetail,
   setDeviceList,
   setDeviceDetail,
-  clearDevices,
+  clear,
 };
 
 // ----------------------------------------------------------------------------
@@ -41,8 +40,7 @@ const fetchDeviceListEpic = (action$) => {
   const callback$ = fetchDeviceList$.pluck('callback');
   const devices$ = fetchDeviceList$
     .delay(1000)
-    .mapTo(devicesJSON.results) // fake
-    .map(devices => R.indexBy(R.prop('deviceId'), devices));
+    .mapTo(devicesJSON.results); // fake
 
   return Observable
     .zip(devices$, callback$)
@@ -67,7 +65,6 @@ const fetchDeviceDetailEpic = (action$) => {
     });
 };
 
-
 export const epics = [
   fetchDeviceListEpic,
   fetchDeviceDetailEpic,
@@ -77,26 +74,30 @@ export const epics = [
 // 4. Reducer as default (state shaper)
 // ----------------------------------------------------------------------------
 
-const initialState = {};
+const initialState = {}; // Remind: indexBy deviceId
 
 export default function reducer(state = initialState, action = {}) {
   switch (action.type) {
     case SET_DEVICE_LIST:
-      // TODO: keep old device detail info
-      return action.payload;
+      return action.payload.reduce((acc, device) => ({
+        ...acc,
+        [device.deviceId]: {
+          ...state[device.deviceId], // keep this device old info
+          ...device, // list api
+        },
+      }), {});
 
     case SET_DEVICE_DETAIL:
       return {
-        ...state,
+        ...state, // keep other devices
         [action.payload.deviceId]: {
-          ...state[action.payload.deviceId],
-          ...action.payload,
+          ...state[action.payload.deviceId], // keep this device old info
+          ...action.payload, // detail api
         },
       };
 
-    case CLEAR_DEVICES:
+    case CLEAR:
       return initialState;
-
     default:
       return state;
   }
