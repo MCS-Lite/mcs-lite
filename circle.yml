@@ -4,20 +4,10 @@ machine:
 
 dependencies:
   override:
-    - rm -rf node_modules
     - npm install
 
   cache_directories:
     - node_modules
-    - packages/babel-preset-mcs-lite/node_modules
-    - packages/mcs-lite-demo-nextjs/node_modules
-    - packages/mcs-lite-design/node_modules
-    - packages/mcs-lite-icon/node_modules
-    - packages/mcs-lite-mobile-web/node_modules
-    - packages/mcs-lite-scripts/node_modules
-    - packages/mcs-lite-theme/node_modules
-    - packages/mcs-lite-ui/node_modules
-    - packages/stylelint-config-mcs-lite/node_modules
 
 test:
   override:
