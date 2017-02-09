@@ -4,7 +4,6 @@ machine:
 
 dependencies:
   override:
-    - rm -rf node_modules
     - npm install
 
   cache_directories:
