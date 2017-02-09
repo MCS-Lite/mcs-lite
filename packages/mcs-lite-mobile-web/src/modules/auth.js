@@ -9,7 +9,7 @@ import { actions as devicesActions } from './devices';
 const SIGNIN = 'mcs-lite-mobile-web/auth/SIGNIN';
 const SIGNOUT = 'mcs-lite-mobile-web/auth/SIGNOUT';
 const SET_USERINFO = 'mcs-lite-mobile-web/auth/SET_USERINFO';
-const CLEAR_USERINFO = 'mcs-lite-mobile-web/auth/CLEAR_USERINFO';
+const CLEAR = 'mcs-lite-mobile-web/auth/CLEAR';
 
 // ----------------------------------------------------------------------------
 // 2. Action Creators (Sync)
@@ -18,13 +18,13 @@ const CLEAR_USERINFO = 'mcs-lite-mobile-web/auth/CLEAR_USERINFO';
 const signin = ({ account, password }) => ({ type: SIGNIN, payload: { account, password }});
 const signout = () => ({ type: SIGNOUT });
 const setUserInfo = payload => ({ type: SET_USERINFO, payload });
-const clearUserInfo = () => ({ type: CLEAR_USERINFO });
+const clear = () => ({ type: CLEAR });
 
 export const actions = {
   signin,
   signout,
   setUserInfo,
-  clearUserInfo,
+  clear,
 };
 
 // ----------------------------------------------------------------------------
@@ -49,11 +49,10 @@ const signoutEpic = action$ =>
   action$
     .ofType(SIGNOUT)
     .switchMap(() => Observable.merge(
-      Observable.of(clearUserInfo()),
-      Observable.of(devicesActions.clearDevices()),
+      Observable.of(clear()),
+      Observable.of(devicesActions.clear()),
       Observable.of(push('/')),
     ));
-
 
 export const epics = [
   signinEpic,
@@ -75,7 +74,7 @@ export default function reducer(state = initialState, action = {}) {
         ...state,
         ...action.payload,
       };
-    case CLEAR_USERINFO:
+    case CLEAR:
       return initialState;
     default:
       return state;

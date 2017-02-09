@@ -17,7 +17,7 @@ describe('devices', () => {
     expect(actions.setDeviceDetail({})).toMatchSnapshot();
   });
 
-  it('should return clearDevices actions', () => {
-    expect(actions.clearDevices()).toMatchSnapshot();
+  it('should return clear actions', () => {
+    expect(actions.clear()).toMatchSnapshot();
   });
 });

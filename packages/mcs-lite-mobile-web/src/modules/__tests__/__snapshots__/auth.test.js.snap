@@ -1,6 +1,6 @@
-exports[`auth should return clearUserInfo actions 1`] = `
+exports[`auth should return clear actions 1`] = `
 Object {
-  "type": "mcs-lite-mobile-web/auth/CLEAR_USERINFO",
+  "type": "mcs-lite-mobile-web/auth/CLEAR",
 }
 `;
 
