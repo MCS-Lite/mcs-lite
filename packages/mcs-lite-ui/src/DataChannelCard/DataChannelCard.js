@@ -18,7 +18,6 @@ const Header = styled.div`
   align-items: center;
   justify-content: flex-end;
   display: flex;
-  margin-bottom: 5px;
 `;
 
 const Body = styled.div`
@@ -26,7 +25,7 @@ const Body = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-basis: 165px;
+  padding: 10px 0;
 `;
 
 const Description = styled(P)`
@@ -44,13 +43,25 @@ const Wrapper = styled(Card)`
   flex-direction: column;
 `;
 
+const StyledHeading = styled(Heading)`
+  overflow: hidden;
+  text-overflow: ellipsis;
+`;
+
+const StyledSmall = styled(Small)`
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: ${props => props.theme.color.grayBase};
+`;
+
 const DataChannelCard = ({ header, children, title, subtitle, description, ...otherProps }) =>
   <Wrapper {...otherProps}>
     <Header>{header}</Header>
     <Body>{children}</Body>
     <div>
-      <Heading level={4}>{title}</Heading>
-      <P color="grayBase"><Small>{subtitle}</Small></P>
+      <StyledHeading level={4}>{title}</StyledHeading>
+      <StyledSmall>{subtitle}</StyledSmall>
       {description && <StyledHr />}
       {
         description && (

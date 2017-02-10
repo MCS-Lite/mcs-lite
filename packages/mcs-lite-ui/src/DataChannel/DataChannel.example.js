@@ -67,13 +67,66 @@ storiesOf('DataChannel', module)
     '',
     () =>
       <DataChannel.DisplayStatus
-        title="Category"
+        title="DisplayStatus"
         subtitle="123125125125125"
         description="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
         header={<a href="">Link</a>}
         childrenProps={{
           value: 2,
           labels: ['Apple1', 'Apple2', 'Pen', 'Pineapple', 'PPAPPPAPPPAP'],
+        }}
+      />,
+    { inline: true },
+  )
+
+  .addWithInfo(
+    'DataChannel.DisplayUnitValue',
+    '',
+    () =>
+      <DataChannel.DisplayUnitValue
+        title="DisplayUnitValue"
+        subtitle="123125125125125"
+        description="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
+        header={<a href="">Link</a>}
+        childrenProps={{
+          value: 1123124124121,
+          unit: '攝氏',
+        }}
+      />,
+    { inline: true },
+  )
+
+  .addWithInfo(
+    'DataChannel.DisplayMultipleValue',
+    '',
+    () =>
+      <DataChannel.DisplayMultipleValue
+        title="DisplayMultipleValue"
+        subtitle="123125125125125"
+        description="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
+        header={<a href="">Link</a>}
+        childrenProps={{
+          items: [
+            { name: 'Value', value: 1234455 },
+            { name: 'Period', value: 125125 },
+          ],
+        }}
+      />,
+    { inline: true },
+  )
+
+  .addWithInfo(
+    'DataChannel.DisplayString',
+    '',
+    () =>
+      <DataChannel.DisplayString
+        title="DisplayString"
+        subtitle="123125125125125"
+        description="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
+        header={<a href="">Link</a>}
+        childrenProps={{
+          value: 'value',
+          placeholder: 'This place holds Hex value.',
         }}
       />,
     { inline: true },
