@@ -2026,7 +2026,7 @@ exports[`Storyshots Input With type props 1`] = `
 
 exports[`Storyshots InputGroup API 1`] = `
 <div
-  className="cZlPqe">
+  className="gQrROo">
   <div
     className="jaAZmb">
     <button
@@ -2036,6 +2036,19 @@ exports[`Storyshots InputGroup API 1`] = `
     </button>
     <button
       className="DxFsx"
+      kind="default">
+      Button 2
+    </button>
+  </div>
+  <div
+    className="jaAZmb">
+    <button
+      className="JGlsS"
+      kind="primary">
+      Button 1
+    </button>
+    <button
+      className="eMqgsi"
       kind="default">
       Button 2
     </button>

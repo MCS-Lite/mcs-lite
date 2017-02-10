@@ -8,8 +8,7 @@ import InputGroup from '../InputGroup';
 const Wrapper = styled.div`
 
   > * {
-    margin: 15px;
-    width: 300px;
+    margin-bottom: 15px;
   }
 `;
 
@@ -22,6 +21,11 @@ storiesOf('InputGroup', module)
         <InputGroup>
           <Button>Button 1</Button>
           <Button kind="default">Button 2</Button>
+        </InputGroup>
+
+        <InputGroup>
+          <Button block>Button 1</Button>
+          <Button kind="default" block>Button 2</Button>
         </InputGroup>
 
         <InputGroup>
