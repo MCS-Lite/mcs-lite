@@ -333,14 +333,14 @@ exports[`Storyshots DataChannel ControlRange - Category, GPIO and Analog 1`] = `
   <div
     className="czVqfN">
     <div
-      className="fROLJM">
+      className="bUqfcz">
       <a
         href="">
         Link
       </a>
     </div>
     <div
-      className="dJSrbi">
+      className="dvQQLa">
       <div
         className="ciDLcE">
         <div
@@ -412,17 +412,13 @@ exports[`Storyshots DataChannel ControlRange - Category, GPIO and Analog 1`] = `
     </div>
     <div>
       <h4
-        className="jSuFAn">
+        className="glocWb">
         Category
       </h4>
-      <div
-        className="jyQfel"
-        color="grayBase">
-        <small
-          className="gPtzLl">
-          Category
-        </small>
-      </div>
+      <small
+        className="jvIFlH">
+        Category
+      </small>
       <hr
         className="dPNKKP iAugwC" />
       <div
@@ -437,14 +433,14 @@ exports[`Storyshots DataChannel ControlRange - Category, GPIO and Analog 1`] = `
   <div
     className="czVqfN">
     <div
-      className="fROLJM">
+      className="bUqfcz">
       <a
         href="">
         Link
       </a>
     </div>
     <div
-      className="dJSrbi">
+      className="dvQQLa">
       <div
         className="ciDLcE">
         <div
@@ -492,17 +488,13 @@ exports[`Storyshots DataChannel ControlRange - Category, GPIO and Analog 1`] = `
     </div>
     <div>
       <h4
-        className="jSuFAn">
+        className="glocWb">
         GPIO
       </h4>
-      <div
-        className="jyQfel"
-        color="grayBase">
-        <small
-          className="gPtzLl">
-          123125125125125
-        </small>
-      </div>
+      <small
+        className="jvIFlH">
+        123125125125125
+      </small>
       <hr
         className="dPNKKP iAugwC" />
       <div
@@ -517,14 +509,14 @@ exports[`Storyshots DataChannel ControlRange - Category, GPIO and Analog 1`] = `
   <div
     className="czVqfN">
     <div
-      className="fROLJM">
+      className="bUqfcz">
       <a
         href="">
         Link
       </a>
     </div>
     <div
-      className="dJSrbi">
+      className="dvQQLa">
       <div
         className="ciDLcE">
         <div
@@ -572,17 +564,13 @@ exports[`Storyshots DataChannel ControlRange - Category, GPIO and Analog 1`] = `
     </div>
     <div>
       <h4
-        className="jSuFAn">
+        className="glocWb">
         Analog
       </h4>
-      <div
-        className="jyQfel"
-        color="grayBase">
-        <small
-          className="gPtzLl">
-          123125125125125
-        </small>
-      </div>
+      <small
+        className="jvIFlH">
+        123125125125125
+      </small>
       <hr
         className="dPNKKP iAugwC" />
       <div
@@ -601,14 +589,14 @@ exports[`Storyshots DataChannel ControlRange - PWM 1`] = `
 <div
   className="czVqfN">
   <div
-    className="fROLJM">
+    className="bUqfcz">
     <a
       href="">
       Link
     </a>
   </div>
   <div
-    className="dJSrbi">
+    className="dvQQLa">
     <div
       className="ciDLcE">
       <div
@@ -679,17 +667,13 @@ exports[`Storyshots DataChannel ControlRange - PWM 1`] = `
   </div>
   <div>
     <h4
-      className="jSuFAn">
+      className="glocWb">
       ControlPWM
     </h4>
-    <div
-      className="jyQfel"
-      color="grayBase">
-      <small
-        className="gPtzLl">
-        123125125125125
-      </small>
-    </div>
+    <small
+      className="jvIFlH">
+      123125125125125
+    </small>
     <hr
       className="dPNKKP iAugwC" />
     <div
@@ -707,14 +691,14 @@ exports[`Storyshots DataChannel ControlRange - Stateful PPAP 1`] = `
 <div
   className="czVqfN">
   <div
-    className="fROLJM">
+    className="bUqfcz">
     <a
       href="">
       Link
     </a>
   </div>
   <div
-    className="dJSrbi">
+    className="dvQQLa">
     <div
       className="ciDLcE">
       <div
@@ -770,17 +754,13 @@ exports[`Storyshots DataChannel ControlRange - Stateful PPAP 1`] = `
   </div>
   <div>
     <h4
-      className="jSuFAn">
+      className="glocWb">
       Stateful PPAP
     </h4>
-    <div
-      className="jyQfel"
-      color="grayBase">
-      <small
-        className="gPtzLl">
-        123125125125125
-      </small>
-    </div>
+    <small
+      className="jvIFlH">
+      123125125125125
+    </small>
     <hr
       className="dPNKKP iAugwC" />
     <div
@@ -798,14 +778,14 @@ exports[`Storyshots DataChannel ControlRange - Stateful number 1`] = `
 <div
   className="czVqfN">
   <div
-    className="fROLJM">
+    className="bUqfcz">
     <a
       href="">
       Link
     </a>
   </div>
   <div
-    className="dJSrbi">
+    className="dvQQLa">
     <div
       className="ciDLcE">
       <div
@@ -853,17 +833,13 @@ exports[`Storyshots DataChannel ControlRange - Stateful number 1`] = `
   </div>
   <div>
     <h4
-      className="jSuFAn">
+      className="glocWb">
       Stateful number
     </h4>
-    <div
-      className="jyQfel"
-      color="grayBase">
-      <small
-        className="gPtzLl">
-        123125125125125
-      </small>
-    </div>
+    <small
+      className="jvIFlH">
+      123125125125125
+    </small>
     <hr
       className="dPNKKP iAugwC" />
     <div
@@ -881,14 +857,14 @@ exports[`Storyshots DataChannel DataChannel.ControlNumber 1`] = `
 <div
   className="czVqfN">
   <div
-    className="fROLJM">
+    className="bUqfcz">
     <a
       href="">
       Link
     </a>
   </div>
   <div
-    className="dJSrbi">
+    className="dvQQLa">
     <div
       className="kdCvHd">
       <div
@@ -935,17 +911,13 @@ exports[`Storyshots DataChannel DataChannel.ControlNumber 1`] = `
   </div>
   <div>
     <h4
-      className="jSuFAn">
+      className="glocWb">
       Title
     </h4>
-    <div
-      className="jyQfel"
-      color="grayBase">
-      <small
-        className="gPtzLl">
-        123125125125125
-      </small>
-    </div>
+    <small
+      className="jvIFlH">
+      123125125125125
+    </small>
     <hr
       className="dPNKKP iAugwC" />
     <div
@@ -963,14 +935,14 @@ exports[`Storyshots DataChannel DataChannel.ControlRange 1`] = `
 <div
   className="czVqfN">
   <div
-    className="fROLJM">
+    className="bUqfcz">
     <a
       href="">
       Link
     </a>
   </div>
   <div
-    className="dJSrbi">
+    className="dvQQLa">
     <div
       className="ciDLcE">
       <div
@@ -1040,17 +1012,13 @@ exports[`Storyshots DataChannel DataChannel.ControlRange 1`] = `
   </div>
   <div>
     <h4
-      className="jSuFAn">
+      className="glocWb">
       Title
     </h4>
-    <div
-      className="jyQfel"
-      color="grayBase">
-      <small
-        className="gPtzLl">
-        123125125125125
-      </small>
-    </div>
+    <small
+      className="jvIFlH">
+      123125125125125
+    </small>
     <hr
       className="dPNKKP iAugwC" />
     <div
@@ -1068,24 +1036,24 @@ exports[`Storyshots DataChannel DataChannel.ControlString 1`] = `
 <div
   className="czVqfN">
   <div
-    className="fROLJM">
+    className="bUqfcz">
     <a
       href="">
       Link
     </a>
   </div>
   <div
-    className="dJSrbi">
+    className="dvQQLa">
     <div
       className="lkjDmd">
       <textarea
-        className="XYvdH"
+        className="iSEZZX"
         kind="primary"
         onChange={[Function]}
         placeholder="placeholder"
         value={undefined} />
       <div
-        className="cMqWVR">
+        className="gkMZXk">
         <div
           className="gVViGF"
           onClick={[Function]}>
@@ -1115,17 +1083,13 @@ exports[`Storyshots DataChannel DataChannel.ControlString 1`] = `
   </div>
   <div>
     <h4
-      className="jSuFAn">
+      className="glocWb">
       Title
     </h4>
-    <div
-      className="jyQfel"
-      color="grayBase">
-      <small
-        className="gPtzLl">
-        123125125125125
-      </small>
-    </div>
+    <small
+      className="jvIFlH">
+      123125125125125
+    </small>
     <hr
       className="dPNKKP iAugwC" />
     <div
@@ -1143,14 +1107,14 @@ exports[`Storyshots DataChannel DataChannel.ControlSwitch 1`] = `
 <div
   className="czVqfN">
   <div
-    className="fROLJM">
+    className="bUqfcz">
     <a
       href="">
       Link
     </a>
   </div>
   <div
-    className="dJSrbi">
+    className="dvQQLa">
     <div
       checked={false}
       className="hKkhHI"
@@ -1158,17 +1122,376 @@ exports[`Storyshots DataChannel DataChannel.ControlSwitch 1`] = `
   </div>
   <div>
     <h4
-      className="jSuFAn">
+      className="glocWb">
       Title
     </h4>
+    <small
+      className="jvIFlH">
+      123125125125125
+    </small>
+    <hr
+      className="dPNKKP iAugwC" />
     <div
-      className="jyQfel"
-      color="grayBase">
-      <small
-        className="gPtzLl">
-        123125125125125
-      </small>
+      className="iyRJwF">
+      <MockReactTextTruncate
+        line={2}
+        text="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
+        truncateText=" ..." />
     </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots DataChannel DataChannel.DisplayMultipleValue 1`] = `
+<div
+  className="czVqfN">
+  <div
+    className="bUqfcz">
+    <a
+      href="">
+      Link
+    </a>
+  </div>
+  <div
+    className="dvQQLa">
+    <div
+      className="gLFxag">
+      <div>
+        <p
+          className="jyQfel"
+          color="grayBase">
+          Value
+        </p>
+        <h1
+          className="fCRioE"
+          color="primary">
+          1234455
+        </h1>
+      </div>
+      <div>
+        <p
+          className="jyQfel"
+          color="grayBase">
+          Period
+        </p>
+        <h1
+          className="fCRioE"
+          color="primary">
+          125125
+        </h1>
+      </div>
+    </div>
+  </div>
+  <div>
+    <h4
+      className="glocWb">
+      DisplayMultipleValue
+    </h4>
+    <small
+      className="jvIFlH">
+      123125125125125
+    </small>
+    <hr
+      className="dPNKKP iAugwC" />
+    <div
+      className="iyRJwF">
+      <MockReactTextTruncate
+        line={2}
+        text="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
+        truncateText=" ..." />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots DataChannel DataChannel.DisplayStatus 1`] = `
+<div
+  className="czVqfN">
+  <div
+    className="bUqfcz">
+    <a
+      href="">
+      Link
+    </a>
+  </div>
+  <div
+    className="dvQQLa">
+    <div
+      className="frKWdl">
+      <div
+        className="gBTIWB">
+        <p
+          className="jyQfel"
+          color="grayBase">
+          OFF
+        </p>
+        <div>
+          <svg
+            className="gUywdC"
+            color="grayDark"
+            viewBox="0 0 20 20">
+            <circle
+              cx="10"
+              cy="10"
+              r="10" />
+          </svg>
+        </div>
+      </div>
+      <div
+        className="gBTIWB">
+        <p
+          className="jyQfel"
+          color="grayBase">
+          ON
+        </p>
+        <div>
+          <svg
+            className="gUywdC"
+            color="grayDark"
+            viewBox="0 0 20 20">
+            <circle
+              cx="10"
+              cy="10"
+              r="10" />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <h4
+      className="glocWb">
+      DisplayStatus
+    </h4>
+    <small
+      className="jvIFlH">
+      123125125125125
+    </small>
+    <hr
+      className="dPNKKP iAugwC" />
+    <div
+      className="iyRJwF">
+      <MockReactTextTruncate
+        line={2}
+        text="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
+        truncateText=" ..." />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots DataChannel DataChannel.DisplayString 1`] = `
+<div
+  className="czVqfN">
+  <div
+    className="bUqfcz">
+    <a
+      href="">
+      Link
+    </a>
+  </div>
+  <div
+    className="dvQQLa">
+    <div
+      className="gdQukP">
+      <textarea
+        className="iSEZZX"
+        disabled={true}
+        kind="primary"
+        placeholder="This place holds Hex value."
+        value="value" />
+    </div>
+  </div>
+  <div>
+    <h4
+      className="glocWb">
+      DisplayString
+    </h4>
+    <small
+      className="jvIFlH">
+      123125125125125
+    </small>
+    <hr
+      className="dPNKKP iAugwC" />
+    <div
+      className="iyRJwF">
+      <MockReactTextTruncate
+        line={2}
+        text="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
+        truncateText=" ..." />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots DataChannel DataChannel.DisplayUnitValue 1`] = `
+<div
+  className="czVqfN">
+  <div
+    className="bUqfcz">
+    <a
+      href="">
+      Link
+    </a>
+  </div>
+  <div
+    className="dvQQLa">
+    <div
+      className="cthtBB">
+      <h1
+        className="ekhOej"
+        color="primary">
+        1123124124121
+      </h1>
+      <p
+        className="iiIFfD"
+        color="grayBase">
+        攝氏
+      </p>
+    </div>
+  </div>
+  <div>
+    <h4
+      className="glocWb">
+      DisplayUnitValue
+    </h4>
+    <small
+      className="jvIFlH">
+      123125125125125
+    </small>
+    <hr
+      className="dPNKKP iAugwC" />
+    <div
+      className="iyRJwF">
+      <MockReactTextTruncate
+        line={2}
+        text="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
+        truncateText=" ..." />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots DataChannel DisplayStatus - Category 1`] = `
+<div
+  className="czVqfN">
+  <div
+    className="bUqfcz">
+    <a
+      href="">
+      Link
+    </a>
+  </div>
+  <div
+    className="dvQQLa">
+    <div
+      className="frKWdl">
+      <div
+        className="gBTIWB">
+        <p
+          className="jyQfel"
+          color="grayBase">
+          Apple1
+        </p>
+        <div>
+          <svg
+            className="gUywdC"
+            color="grayDark"
+            viewBox="0 0 20 20">
+            <circle
+              cx="10"
+              cy="10"
+              r="10" />
+          </svg>
+        </div>
+      </div>
+      <div
+        className="gBTIWB">
+        <p
+          className="jyQfel"
+          color="grayBase">
+          Apple2
+        </p>
+        <div>
+          <svg
+            className="gUywdC"
+            color="grayDark"
+            viewBox="0 0 20 20">
+            <circle
+              cx="10"
+              cy="10"
+              r="10" />
+          </svg>
+        </div>
+      </div>
+      <div
+        className="gBTIWB">
+        <p
+          className="jyQfel"
+          color="grayBase">
+          Pen
+        </p>
+        <div>
+          <svg
+            className="jfcUeq"
+            color="success"
+            viewBox="0 0 20 20">
+            <circle
+              cx="10"
+              cy="10"
+              r="10" />
+          </svg>
+        </div>
+      </div>
+      <div
+        className="gBTIWB">
+        <p
+          className="jyQfel"
+          color="grayBase">
+          Pineapple
+        </p>
+        <div>
+          <svg
+            className="gUywdC"
+            color="grayDark"
+            viewBox="0 0 20 20">
+            <circle
+              cx="10"
+              cy="10"
+              r="10" />
+          </svg>
+        </div>
+      </div>
+      <div
+        className="gBTIWB">
+        <p
+          className="jyQfel"
+          color="grayBase">
+          PPAPPPAPPPAP
+        </p>
+        <div>
+          <svg
+            className="gUywdC"
+            color="grayDark"
+            viewBox="0 0 20 20">
+            <circle
+              cx="10"
+              cy="10"
+              r="10" />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <h4
+      className="glocWb">
+      DisplayStatus
+    </h4>
+    <small
+      className="jvIFlH">
+      123125125125125
+    </small>
     <hr
       className="dPNKKP iAugwC" />
     <div
@@ -1186,14 +1509,14 @@ exports[`Storyshots DataChannel Fixed width 1`] = `
 <div
   className="jwFuaE czVqfN">
   <div
-    className="fROLJM">
+    className="bUqfcz">
     <a
       href="">
       Link
     </a>
   </div>
   <div
-    className="dJSrbi">
+    className="dvQQLa">
     <div
       checked={false}
       className="hKkhHI"
@@ -1201,17 +1524,13 @@ exports[`Storyshots DataChannel Fixed width 1`] = `
   </div>
   <div>
     <h4
-      className="jSuFAn">
+      className="glocWb">
       Title
     </h4>
-    <div
-      className="jyQfel"
-      color="grayBase">
-      <small
-        className="gPtzLl">
-        123125125125125
-      </small>
-    </div>
+    <small
+      className="jvIFlH">
+      123125125125125
+    </small>
     <hr
       className="dPNKKP iAugwC" />
     <div
@@ -1229,26 +1548,22 @@ exports[`Storyshots DataChannel withDataChannelCard (HOC) 1`] = `
 <div
   className="czVqfN">
   <div
-    className="fROLJM" />
+    className="bUqfcz" />
   <div
-    className="dJSrbi">
+    className="dvQQLa">
     <div>
       Wrap with HOC
     </div>
   </div>
   <div>
     <h4
-      className="jSuFAn">
+      className="glocWb">
       Title
     </h4>
-    <div
-      className="jyQfel"
-      color="grayBase">
-      <small
-        className="gPtzLl">
-        123125125125125
-      </small>
-    </div>
+    <small
+      className="jvIFlH">
+      123125125125125
+    </small>
     <hr
       className="dPNKKP iAugwC" />
     <div
@@ -1266,29 +1581,25 @@ exports[`Storyshots DataChannelCard API 1`] = `
 <div
   className="czVqfN">
   <div
-    className="fROLJM">
+    className="bUqfcz">
     <a
       href="">
       Link
     </a>
   </div>
   <div
-    className="dJSrbi">
+    className="dvQQLa">
     Children
   </div>
   <div>
     <h4
-      className="jSuFAn">
+      className="glocWb">
       Title
     </h4>
-    <div
-      className="jyQfel"
-      color="grayBase">
-      <small
-        className="gPtzLl">
-        Last data point time : 2015-06-12 12:00
-      </small>
-    </div>
+    <small
+      className="jvIFlH">
+      Last data point time : 2015-06-12 12:00
+    </small>
     <hr
       className="dPNKKP iAugwC" />
     <div
@@ -1306,28 +1617,24 @@ exports[`Storyshots DataChannelCard Custom width and height 1`] = `
 <div
   className="drcatN czVqfN">
   <div
-    className="fROLJM">
+    className="bUqfcz">
     V
   </div>
   <div
-    className="dJSrbi">
+    className="dvQQLa">
     <div
       checked={false}
       className="hKkhHI" />
   </div>
   <div>
     <h4
-      className="jSuFAn">
+      className="glocWb">
       Title
     </h4>
-    <div
-      className="jyQfel"
-      color="grayBase">
-      <small
-        className="gPtzLl">
-        Last data point time : 2015-06-12 12:00
-      </small>
-    </div>
+    <small
+      className="jvIFlH">
+      Last data point time : 2015-06-12 12:00
+    </small>
     <hr
       className="dPNKKP iAugwC" />
     <div
@@ -1345,28 +1652,24 @@ exports[`Storyshots DataChannelCard Without description 1`] = `
 <div
   className="czVqfN">
   <div
-    className="fROLJM">
+    className="bUqfcz">
     V
   </div>
   <div
-    className="dJSrbi">
+    className="dvQQLa">
     <div
       checked={false}
       className="hKkhHI" />
   </div>
   <div>
     <h4
-      className="jSuFAn">
+      className="glocWb">
       Title
     </h4>
-    <div
-      className="jyQfel"
-      color="grayBase">
-      <small
-        className="gPtzLl">
-        Last data point time : 2015-06-12 12:00
-      </small>
-    </div>
+    <small
+      className="jvIFlH">
+      Last data point time : 2015-06-12 12:00
+    </small>
   </div>
 </div>
 `;
@@ -2095,6 +2398,155 @@ exports[`Storyshots Spin API 1`] = `
 </div>
 `;
 
+exports[`Storyshots StatusLight API 1`] = `
+<svg
+  className="gUywdC"
+  color="grayDark"
+  viewBox="0 0 20 20">
+  <circle
+    cx="10"
+    cy="10"
+    r="10" />
+</svg>
+`;
+
+exports[`Storyshots StatusLight Custom width 1`] = `
+<svg
+  className="gnQYZP kUCVuq"
+  color="warning"
+  viewBox="0 0 20 20">
+  <circle
+    cx="10"
+    cy="10"
+    r="10" />
+</svg>
+`;
+
+exports[`Storyshots StatusLight With color props 1`] = `
+<div>
+  <div>
+    <svg
+      className="cLuimq"
+      color="black"
+      viewBox="0 0 20 20">
+      <circle
+        cx="10"
+        cy="10"
+        r="10" />
+    </svg>
+    black
+  </div>
+  <div>
+    <svg
+      className="ePEEdP"
+      color="grayBase"
+      viewBox="0 0 20 20">
+      <circle
+        cx="10"
+        cy="10"
+        r="10" />
+    </svg>
+    grayBase
+  </div>
+  <div>
+    <svg
+      className="gUywdC"
+      color="grayDark"
+      viewBox="0 0 20 20">
+      <circle
+        cx="10"
+        cy="10"
+        r="10" />
+    </svg>
+    grayDark
+  </div>
+  <div>
+    <svg
+      className="boZlWD"
+      color="grayLight"
+      viewBox="0 0 20 20">
+      <circle
+        cx="10"
+        cy="10"
+        r="10" />
+    </svg>
+    grayLight
+  </div>
+  <div>
+    <svg
+      className="ggsUXl"
+      color="white"
+      viewBox="0 0 20 20">
+      <circle
+        cx="10"
+        cy="10"
+        r="10" />
+    </svg>
+    white
+  </div>
+  <div>
+    <svg
+      className="boZlWD"
+      color="default"
+      viewBox="0 0 20 20">
+      <circle
+        cx="10"
+        cy="10"
+        r="10" />
+    </svg>
+    default
+  </div>
+  <div>
+    <svg
+      className="kGHODW"
+      color="primary"
+      viewBox="0 0 20 20">
+      <circle
+        cx="10"
+        cy="10"
+        r="10" />
+    </svg>
+    primary
+  </div>
+  <div>
+    <svg
+      className="jfcUeq"
+      color="success"
+      viewBox="0 0 20 20">
+      <circle
+        cx="10"
+        cy="10"
+        r="10" />
+    </svg>
+    success
+  </div>
+  <div>
+    <svg
+      className="jvqUaW"
+      color="error"
+      viewBox="0 0 20 20">
+      <circle
+        cx="10"
+        cy="10"
+        r="10" />
+    </svg>
+    error
+  </div>
+  <div>
+    <svg
+      className="kUCVuq"
+      color="warning"
+      viewBox="0 0 20 20">
+      <circle
+        cx="10"
+        cy="10"
+        r="10" />
+    </svg>
+    warning
+  </div>
+</div>
+`;
+
 exports[`Storyshots Switch API 1`] = `
 <div>
   <div
@@ -2122,7 +2574,7 @@ exports[`Storyshots Switch Stateful switch 1`] = `
 
 exports[`Storyshots Textarea API 1`] = `
 <textarea
-  className="kvtfBS"
+  className="XpDPt"
   kind="primary"
   placeholder="placeholder"
   rows="3" />
@@ -2132,23 +2584,23 @@ exports[`Storyshots Textarea With kind props 1`] = `
 <div
   className="cZlPqe">
   <textarea
-    className="iXzziC"
+    className="GSpKV"
     kind="default"
     placeholder="default" />
   <textarea
-    className="kvtfBS"
+    className="XpDPt"
     kind="primary"
     placeholder="primary" />
   <textarea
-    className="irIqNe"
+    className="gTzMmj"
     kind="success"
     placeholder="success" />
   <textarea
-    className="tpuwn"
+    className="kgGEdg"
     kind="error"
     placeholder="error" />
   <textarea
-    className="dEWaqb"
+    className="yqxRC"
     kind="warning"
     placeholder="warning" />
 </div>

@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { connect } from 'react-redux';
-import { Img, PullToRefresh, DataChannel, Overlay, Menu } from 'mcs-lite-ui';
+import { Img, PullToRefresh, DataChannel, Overlay, Menu, P, Button, Input } from 'mcs-lite-ui';
 import IconEllipsisV from 'mcs-lite-icon/lib/IconEllipsisV';
 import { actions } from '../../modules/devices';
 import MaxWidthCenterWrapper from '../../components/MaxWidthCenterWrapper';
@@ -22,7 +22,7 @@ const CardWrapper = styled.div`
   flex-wrap: wrap;
 
   > * {
-    height: 221px;
+    height: initial;
     padding: 8px 16px;
     margin: 4px;
     flex-basis: 100%;
@@ -33,6 +33,41 @@ const CardWrapper = styled.div`
     flex-basis: 40%;
   }
 `;
+
+const PWM = () => {
+  const PWMContainer = styled.div`
+    margin-bottom: 10px;
+  `;
+
+  const InputWrapper = styled.div`
+    display: flex;
+    margin-top: 5px;
+  `;
+
+  const StyledInput = styled(Input)`
+    margin-right: 10px;
+  `;
+
+  return (
+    <DataChannel.ControlRange
+      title="ControlPWM"
+      subtitle="123125125125125"
+      header={<a href="">Link</a>}
+      childrenProps={{
+        children: (
+          <PWMContainer>
+            <label htmlFor="input"><P color="grayBase">Period</P></label>
+            <InputWrapper>
+              <StyledInput id="input" placeholder="Integer only" type="number" />
+              <Button>OK</Button>
+            </InputWrapper>
+          </PWMContainer>
+        ),
+        labels: [0, 100],
+      }}
+    />
+  );
+};
 
 class DeviceDetail extends React.Component {
   state = { isMenuShow: false, target: undefined };
@@ -75,11 +110,59 @@ class DeviceDetail extends React.Component {
 
               <Container>
                 <CardWrapper>
-                  <DataChannel.ControlSwitch
+                  <DataChannel.DisplayStatus
                     data-width="half"
-                    title="Title"
+                    title="DisplayStatus"
                     subtitle="123125125125125"
                     header={<a href="">Link</a>}
+                    childrenProps={{
+                      labels: ['OFF', 'ON'],
+                    }}
+                  />
+
+                  <DataChannel.DisplayMultipleValue
+                    data-width="half"
+                    title="DisplayStatus"
+                    subtitle="123125125125125"
+                    header={<a href="">Link</a>}
+                    childrenProps={{
+                      items: [
+                        { name: 'Value', value: 1234455 },
+                        { name: 'Period', value: 125125 },
+                      ],
+                    }}
+                  />
+
+                  <DataChannel.DisplayStatus
+                    title="Category"
+                    subtitle="123125125125125"
+                    header={<a href="">Link</a>}
+                    childrenProps={{
+                      value: 2,
+                      labels: ['Apple1', 'Apple2', 'Pen', 'Pineapple', 'PPAPPPAPPPAP'],
+                    }}
+                  />
+
+                  <DataChannel.DisplayUnitValue
+                    data-width="half"
+                    title="DisplayStatus"
+                    subtitle="123125125125125"
+                    header={<a href="">Link</a>}
+                    childrenProps={{
+                      value: 1123124124121,
+                      unit: '攝氏',
+                    }}
+                  />
+
+                  <DataChannel.DisplayString
+                    data-width="half"
+                    title="DisplayString"
+                    subtitle="123125125125125"
+                    header={<a href="">Link</a>}
+                    childrenProps={{
+                      value: 'value',
+                      placeholder: 'This place holds Hex value.',
+                    }}
                   />
 
                   <DataChannel.ControlNumber
@@ -104,6 +187,9 @@ class DeviceDetail extends React.Component {
                     subtitle="123125125125125"
                     header={<a href="">Link</a>}
                   />
+
+                  <PWM />
+
                 </CardWrapper>
               </Container>
             </div>

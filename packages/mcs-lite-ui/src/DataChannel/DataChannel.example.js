@@ -47,6 +47,92 @@ storiesOf('DataChannel', module)
   )
 
   .addWithInfo(
+    'DataChannel.DisplayStatus',
+    '',
+    () =>
+      <DataChannel.DisplayStatus
+        title="DisplayStatus"
+        subtitle="123125125125125"
+        description="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
+        header={<a href="">Link</a>}
+        childrenProps={{
+          labels: ['OFF', 'ON'],
+        }}
+      />,
+    { inline: true },
+  )
+
+  .addWithInfo(
+    'DisplayStatus - Category',
+    '',
+    () =>
+      <DataChannel.DisplayStatus
+        title="DisplayStatus"
+        subtitle="123125125125125"
+        description="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
+        header={<a href="">Link</a>}
+        childrenProps={{
+          value: 2,
+          labels: ['Apple1', 'Apple2', 'Pen', 'Pineapple', 'PPAPPPAPPPAP'],
+        }}
+      />,
+    { inline: true },
+  )
+
+  .addWithInfo(
+    'DataChannel.DisplayUnitValue',
+    '',
+    () =>
+      <DataChannel.DisplayUnitValue
+        title="DisplayUnitValue"
+        subtitle="123125125125125"
+        description="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
+        header={<a href="">Link</a>}
+        childrenProps={{
+          value: 1123124124121,
+          unit: '攝氏',
+        }}
+      />,
+    { inline: true },
+  )
+
+  .addWithInfo(
+    'DataChannel.DisplayMultipleValue',
+    '',
+    () =>
+      <DataChannel.DisplayMultipleValue
+        title="DisplayMultipleValue"
+        subtitle="123125125125125"
+        description="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
+        header={<a href="">Link</a>}
+        childrenProps={{
+          items: [
+            { name: 'Value', value: 1234455 },
+            { name: 'Period', value: 125125 },
+          ],
+        }}
+      />,
+    { inline: true },
+  )
+
+  .addWithInfo(
+    'DataChannel.DisplayString',
+    '',
+    () =>
+      <DataChannel.DisplayString
+        title="DisplayString"
+        subtitle="123125125125125"
+        description="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
+        header={<a href="">Link</a>}
+        childrenProps={{
+          value: 'value',
+          placeholder: 'This place holds Hex value.',
+        }}
+      />,
+    { inline: true },
+  )
+
+  .addWithInfo(
     'DataChannel.ControlNumber',
     '',
     () =>
@@ -212,7 +298,7 @@ storiesOf('DataChannel', module)
     () => {
       class StatefulControlRange extends React.Component {
         state = { value: 88 };
-        onChange = e => this.setState({ value: e.target.value });
+        onChange = e => this.setState({ value: Number(e.target.value) });
         labels = [33, 95];
         render() {
           return (
@@ -241,7 +327,7 @@ storiesOf('DataChannel', module)
     () => {
       class StatefulControlRange extends React.Component {
         state = { value: 2 };
-        onChange = e => this.setState({ value: e.target.value });
+        onChange = e => this.setState({ value: Number(e.target.value) });
         labels = ['Apple', 'Pen', 'Pineapple'];
         render() {
           return (

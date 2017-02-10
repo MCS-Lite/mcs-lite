@@ -25,6 +25,10 @@ const Textarea = styled.textarea`
     opacity: 1;
     color: ${props => props.theme.color.grayDark};
   }
+
+  &:disabled {
+    background-color: initial;
+  }
 `;
 
 Textarea.displayName = 'Textarea';

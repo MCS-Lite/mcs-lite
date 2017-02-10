@@ -18,12 +18,12 @@ const ButtonWrapper = styled.div`
   align-items: center;
   flex-wrap: wrap;
   margin-top: 10px;
-  margin-bottom: 5px;
   flex-shrink: 0;
 `;
 
 const StyledTextarea = styled(Textarea)`
   height: 100%;
+  min-height: 4em;
   flex-grow: 1;
 `;
 
