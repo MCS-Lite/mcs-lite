@@ -1219,7 +1219,7 @@ exports[`Storyshots DataChannel DataChannel.DisplayStatus 1`] = `
     <div
       className="frKWdl">
       <div
-        className="ezdjVZ">
+        className="gBTIWB">
         <p
           className="jyQfel"
           color="grayBase">
@@ -1229,7 +1229,6 @@ exports[`Storyshots DataChannel DataChannel.DisplayStatus 1`] = `
           <svg
             className="gUywdC"
             color="grayDark"
-            preserveAspectRatio="none"
             viewBox="0 0 20 20">
             <circle
               cx="10"
@@ -1239,7 +1238,7 @@ exports[`Storyshots DataChannel DataChannel.DisplayStatus 1`] = `
         </div>
       </div>
       <div
-        className="ezdjVZ">
+        className="gBTIWB">
         <p
           className="jyQfel"
           color="grayBase">
@@ -1249,7 +1248,6 @@ exports[`Storyshots DataChannel DataChannel.DisplayStatus 1`] = `
           <svg
             className="gUywdC"
             color="grayDark"
-            preserveAspectRatio="none"
             viewBox="0 0 20 20">
             <circle
               cx="10"
@@ -1389,7 +1387,7 @@ exports[`Storyshots DataChannel DisplayStatus - Category 1`] = `
     <div
       className="frKWdl">
       <div
-        className="ezdjVZ">
+        className="gBTIWB">
         <p
           className="jyQfel"
           color="grayBase">
@@ -1399,7 +1397,6 @@ exports[`Storyshots DataChannel DisplayStatus - Category 1`] = `
           <svg
             className="gUywdC"
             color="grayDark"
-            preserveAspectRatio="none"
             viewBox="0 0 20 20">
             <circle
               cx="10"
@@ -1409,7 +1406,7 @@ exports[`Storyshots DataChannel DisplayStatus - Category 1`] = `
         </div>
       </div>
       <div
-        className="ezdjVZ">
+        className="gBTIWB">
         <p
           className="jyQfel"
           color="grayBase">
@@ -1419,7 +1416,6 @@ exports[`Storyshots DataChannel DisplayStatus - Category 1`] = `
           <svg
             className="gUywdC"
             color="grayDark"
-            preserveAspectRatio="none"
             viewBox="0 0 20 20">
             <circle
               cx="10"
@@ -1429,7 +1425,7 @@ exports[`Storyshots DataChannel DisplayStatus - Category 1`] = `
         </div>
       </div>
       <div
-        className="ezdjVZ">
+        className="gBTIWB">
         <p
           className="jyQfel"
           color="grayBase">
@@ -1439,7 +1435,6 @@ exports[`Storyshots DataChannel DisplayStatus - Category 1`] = `
           <svg
             className="jfcUeq"
             color="success"
-            preserveAspectRatio="none"
             viewBox="0 0 20 20">
             <circle
               cx="10"
@@ -1449,7 +1444,7 @@ exports[`Storyshots DataChannel DisplayStatus - Category 1`] = `
         </div>
       </div>
       <div
-        className="ezdjVZ">
+        className="gBTIWB">
         <p
           className="jyQfel"
           color="grayBase">
@@ -1459,7 +1454,6 @@ exports[`Storyshots DataChannel DisplayStatus - Category 1`] = `
           <svg
             className="gUywdC"
             color="grayDark"
-            preserveAspectRatio="none"
             viewBox="0 0 20 20">
             <circle
               cx="10"
@@ -1469,7 +1463,7 @@ exports[`Storyshots DataChannel DisplayStatus - Category 1`] = `
         </div>
       </div>
       <div
-        className="ezdjVZ">
+        className="gBTIWB">
         <p
           className="jyQfel"
           color="grayBase">
@@ -1479,7 +1473,6 @@ exports[`Storyshots DataChannel DisplayStatus - Category 1`] = `
           <svg
             className="gUywdC"
             color="grayDark"
-            preserveAspectRatio="none"
             viewBox="0 0 20 20">
             <circle
               cx="10"
@@ -2409,7 +2402,6 @@ exports[`Storyshots StatusLight API 1`] = `
 <svg
   className="gUywdC"
   color="grayDark"
-  preserveAspectRatio="none"
   viewBox="0 0 20 20">
   <circle
     cx="10"
@@ -2422,7 +2414,6 @@ exports[`Storyshots StatusLight Custom width 1`] = `
 <svg
   className="gnQYZP kUCVuq"
   color="warning"
-  preserveAspectRatio="none"
   viewBox="0 0 20 20">
   <circle
     cx="10"
@@ -2437,7 +2428,6 @@ exports[`Storyshots StatusLight With color props 1`] = `
     <svg
       className="cLuimq"
       color="black"
-      preserveAspectRatio="none"
       viewBox="0 0 20 20">
       <circle
         cx="10"
@@ -2450,7 +2440,6 @@ exports[`Storyshots StatusLight With color props 1`] = `
     <svg
       className="ePEEdP"
       color="grayBase"
-      preserveAspectRatio="none"
       viewBox="0 0 20 20">
       <circle
         cx="10"
@@ -2463,7 +2452,6 @@ exports[`Storyshots StatusLight With color props 1`] = `
     <svg
       className="gUywdC"
       color="grayDark"
-      preserveAspectRatio="none"
       viewBox="0 0 20 20">
       <circle
         cx="10"
@@ -2476,7 +2464,6 @@ exports[`Storyshots StatusLight With color props 1`] = `
     <svg
       className="boZlWD"
       color="grayLight"
-      preserveAspectRatio="none"
       viewBox="0 0 20 20">
       <circle
         cx="10"
@@ -2489,7 +2476,6 @@ exports[`Storyshots StatusLight With color props 1`] = `
     <svg
       className="ggsUXl"
       color="white"
-      preserveAspectRatio="none"
       viewBox="0 0 20 20">
       <circle
         cx="10"
@@ -2502,7 +2488,6 @@ exports[`Storyshots StatusLight With color props 1`] = `
     <svg
       className="boZlWD"
       color="default"
-      preserveAspectRatio="none"
       viewBox="0 0 20 20">
       <circle
         cx="10"
@@ -2515,7 +2500,6 @@ exports[`Storyshots StatusLight With color props 1`] = `
     <svg
       className="kGHODW"
       color="primary"
-      preserveAspectRatio="none"
       viewBox="0 0 20 20">
       <circle
         cx="10"
@@ -2528,7 +2512,6 @@ exports[`Storyshots StatusLight With color props 1`] = `
     <svg
       className="jfcUeq"
       color="success"
-      preserveAspectRatio="none"
       viewBox="0 0 20 20">
       <circle
         cx="10"
@@ -2541,7 +2524,6 @@ exports[`Storyshots StatusLight With color props 1`] = `
     <svg
       className="jvqUaW"
       color="error"
-      preserveAspectRatio="none"
       viewBox="0 0 20 20">
       <circle
         cx="10"
@@ -2554,7 +2536,6 @@ exports[`Storyshots StatusLight With color props 1`] = `
     <svg
       className="kUCVuq"
       color="warning"
-      preserveAspectRatio="none"
       viewBox="0 0 20 20">
       <circle
         cx="10"

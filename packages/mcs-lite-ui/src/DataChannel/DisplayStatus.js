@@ -16,7 +16,7 @@ const ItemWrapper = styled.div`
   align-items: center;
   flex-grow: 1;
   flex-basis: 0;
-  margin: 0px 4px;
+  margin: 0 4px;
   overflow: hidden;
 
   > *:first-child {

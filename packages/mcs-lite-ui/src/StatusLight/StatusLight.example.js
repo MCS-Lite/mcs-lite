@@ -23,8 +23,8 @@ storiesOf('StatusLight', module)
       <div>
         {
           Object.keys(theme.color).map(key =>
-            <div>
-              <StatusLight key={key} color={key} />
+            <div key={key}>
+              <StatusLight color={key} />
               {key}
             </div>,
           )

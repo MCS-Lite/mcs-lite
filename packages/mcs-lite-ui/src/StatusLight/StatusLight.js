@@ -11,7 +11,7 @@ const Svg = styled.svg`
 `;
 
 const StatusLight = props =>
-  <Svg viewBox="0 0 20 20" preserveAspectRatio="none" {...props}>
+  <Svg viewBox="0 0 20 20" {...props}>
     <circle cx="10" cy="10" r="10" />
   </Svg>;
 
