@@ -15,6 +15,8 @@ import Layout from './components/Layout';
 import DeviceList from './containers/DeviceList';
 import DeviceDetail from './containers/DeviceDetail';
 import DeviceDetailInfo from './containers/DeviceDetailInfo';
+import DeviceTrigger from './containers/DeviceTrigger';
+import DeviceTriggerEdit from './containers/DeviceTriggerEdit';
 import Signin from './containers/Signin';
 import Account from './containers/Account';
 import Password from './containers/Password';
@@ -37,6 +39,8 @@ ReactDOM.render(
             <Route path="/devices" component={DeviceList} />
             <Route path="/devices/:deviceId" component={DeviceDetail} />
             <Route path="/devices/:deviceId/info" component={DeviceDetailInfo} />
+            <Route path="/devices/:deviceId/trigger" component={DeviceTrigger} />
+            <Route path="/devices/:deviceId/trigger/edit" component={DeviceTriggerEdit} />
           </Route>
           <Route component={Layout.LayoutDialog}>
             <Route path="/account" component={Account} />

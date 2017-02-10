@@ -5,6 +5,7 @@ const StyledLink = styled(Link)`
   display: block;
   text-decoration: none;
   cursor: pointer;
+  color: currentColor;
 `;
 
 export default StyledLink;

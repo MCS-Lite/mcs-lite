@@ -2024,6 +2024,123 @@ exports[`Storyshots Input With type props 1`] = `
 </div>
 `;
 
+exports[`Storyshots InputGroup API 1`] = `
+<div
+  className="cZlPqe">
+  <div
+    className="jaAZmb">
+    <button
+      className="fqCsyW"
+      kind="primary">
+      Button 1
+    </button>
+    <button
+      className="DxFsx"
+      kind="default">
+      Button 2
+    </button>
+  </div>
+  <div
+    className="jaAZmb">
+    <button
+      className="fqCsyW"
+      kind="primary">
+      Button 1
+    </button>
+    <button
+      className="DxFsx"
+      kind="default">
+      Button 2
+    </button>
+    <button
+      className="XOtSZ"
+      kind="warning">
+      Button 3
+    </button>
+  </div>
+  <div
+    className="jaAZmb">
+    <button
+      className="fqCsyW"
+      kind="primary">
+      Button 1
+    </button>
+    <button
+      className="eMqgsi"
+      kind="default">
+      Button 2
+    </button>
+    <button
+      className="XOtSZ"
+      kind="warning">
+      Button 3
+    </button>
+  </div>
+  <div
+    className="jaAZmb">
+    <button
+      className="fqCsyW"
+      kind="primary">
+      大於
+    </button>
+    <input
+      className="jWbJOn"
+      kind="primary"
+      placeholder="預設值：20" />
+  </div>
+  <div
+    className="jaAZmb">
+    <input
+      className="jWbJOn"
+      kind="primary"
+      placeholder="Input 1" />
+    <button
+      className="fqCsyW"
+      kind="primary">
+      Button 1
+    </button>
+  </div>
+  <div
+    className="jaAZmb">
+    <button
+      className="fqCsyW"
+      kind="primary">
+      Button 1
+    </button>
+    <input
+      className="jWbJOn"
+      kind="primary"
+      placeholder="Input 1" />
+    <button
+      className="fqCsyW"
+      kind="primary">
+      Button 2
+    </button>
+  </div>
+  <div
+    className="jaAZmb">
+    <button
+      className="fqCsyW"
+      kind="primary">
+      之間
+    </button>
+    <input
+      className="jWbJOn"
+      kind="primary"
+      placeholder="預設值：0" />
+    <button
+      className="fqCsyW"
+      kind="primary">
+      和
+    </button>
+    <input
+      className="jWbJOn"
+      kind="primary"
+      placeholder="預設值：100" />
+  </div>
+</div>
+`;
+
 exports[`Storyshots InputRange API 1`] = `
 <input
   className="hdhnFx"

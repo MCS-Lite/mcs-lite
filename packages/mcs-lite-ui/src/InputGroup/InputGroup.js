@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
 const InputGroup = styled.div`
-    display: flex;
-    width: 100%;
+  display: flex;
+  width: 100%;
 
   /* ============================
    * First Child
