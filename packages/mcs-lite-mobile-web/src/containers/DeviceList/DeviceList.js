@@ -1,10 +1,12 @@
 import React from 'react';
+import { findDOMNode } from 'react-dom';
 import styled from 'styled-components';
 import R from 'ramda';
 import { connect } from 'react-redux';
 import Transition from 'react-motion-ui-pack';
-import { P, PullToRefresh, PreventDrag, Input } from 'mcs-lite-ui';
+import { P, PullToRefresh, PreventDrag, Input, ClickOutside } from 'mcs-lite-ui';
 import IconSearch from 'mcs-lite-icon/lib/IconSearch';
+import { opacity } from 'mcs-lite-theme';
 import { actions } from '../../modules/devices';
 import DeviceCard from '../../components/DeviceCard';
 import MaxWidthCenterWrapper from '../../components/MaxWidthCenterWrapper';
@@ -23,6 +25,10 @@ const CardWrapper = styled.div`
   }
 `;
 
+const StyledHeaderIcon = styled(HeaderIcon)`
+  color: ${props => opacity(props.isFilterOpen ? 0.5 : 1)(props.theme.color.white)};
+`;
+
 const PlaceholdWrapper = styled(P)`
   display: flex;
   align-items: center;
@@ -39,12 +45,21 @@ class DeviceList extends React.Component {
   componentDidMount = () => this.props.fetchDeviceList();
   onFilterChange = e => this.setState({ filterValue: e.target.value });
   onFilterClick = () => this.setState({ isFilterOpen: !this.state.isFilterOpen });
+  onClickOutside = (e) => {
+    if (e.target === findDOMNode(this.input)) return; // Hint: Omit clicking input.
+
+    this.setState({ isFilterOpen: false });
+  }
   onRefresh = done => this.props.fetchDeviceList(done);
+  getInput = (node) => { this.input = node; }
   includeDeviceName = device => device.name.includes(this.state.filterValue);
   render() {
     const { isFilterOpen, filterValue } = this.state;
     const { devices } = this.props;
-    const { onRefresh, onFilterChange, onFilterClick, includeDeviceName } = this;
+    const {
+      onRefresh, onFilterChange, onClickOutside, onFilterClick,
+      includeDeviceName, getInput,
+    } = this;
 
     return (
       <div>
@@ -56,6 +71,7 @@ class DeviceList extends React.Component {
               leave={{ opacity: 0, marginLeft: 50 }}
             >
               <Input
+                ref={getInput}
                 autoFocus
                 key="filter"
                 placeholder="搜尋"
@@ -64,7 +80,11 @@ class DeviceList extends React.Component {
               />
             </Transition>
           }
-          <HeaderIcon onClick={onFilterClick}><IconSearch /></HeaderIcon>
+          <ClickOutside onClick={onClickOutside}>
+            <StyledHeaderIcon onClick={onFilterClick} isFilterOpen={isFilterOpen}>
+              <IconSearch />
+            </StyledHeaderIcon>
+          </ClickOutside>
         </Header>
 
         <main>
