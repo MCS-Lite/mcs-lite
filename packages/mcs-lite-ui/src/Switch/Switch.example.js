@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { storiesOf, action } from '@kadira/storybook';
+import { kindList } from 'mcs-lite-theme';
 import Switch from '.';
 
 const withState = Component =>
@@ -29,6 +30,10 @@ const StyledSwitch = withState(styled(Switch)`
   }
 `);
 
+const ScaledSwitch = withState(styled(Switch)`
+  transform: scale(0.48);
+`);
+
 storiesOf('Switch', module)
   .addWithInfo(
     'API',
@@ -37,6 +42,15 @@ storiesOf('Switch', module)
       <div>
         <Switch />
         <Switch checked />
+      </div>,
+    { inline: true },
+  )
+  .addWithInfo(
+    'With kind props',
+    'kind="primary"',
+    () =>
+      <div>
+        {kindList.map(kind => <Switch key={kind} checked kind={kind} />)}
       </div>,
     { inline: true },
   )
@@ -53,5 +67,11 @@ storiesOf('Switch', module)
     'Overriding style',
     '使用 styled-components 來覆蓋 css。',
     () => <StyledSwitch />,
+    { inline: true, propTables: false },
+  )
+  .addWithInfo(
+    'With scaling',
+    'transform: scale(0.48) for mobile',
+    () => <ScaledSwitch kind="primary" />,
     { inline: true, propTables: false },
   );
