@@ -9,6 +9,7 @@ const HeaderIcon = styled(StyledLink)`
   justify-content: center;
   padding: 0 16px;
   font-size: 24px;
+  transition: color cubic-bezier(0.47, 0, 0.75, 0.72) 0.3s;
 `;
 
 export default HeaderIcon;
