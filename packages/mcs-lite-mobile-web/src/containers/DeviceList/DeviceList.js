@@ -48,7 +48,7 @@ class DeviceList extends React.Component {
   onClickOutside = (e) => {
     if (e.target === findDOMNode(this.input)) return; // Hint: Omit clicking input.
 
-    this.setState({ isFilterOpen: false });
+    this.setState({ isFilterOpen: false, filterValue: '' });
   }
   onRefresh = done => this.props.fetchDeviceList(done);
   getInput = (node) => { this.input = node; }
