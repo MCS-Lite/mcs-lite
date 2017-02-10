@@ -23,7 +23,6 @@ const CardWrapper = styled.div`
 
   > * {
     height: initial;
-    height: initial;
     padding: 8px 16px;
     margin: 4px;
     flex-basis: 100%;
@@ -135,7 +134,6 @@ class DeviceDetail extends React.Component {
                   />
 
                   <DataChannel.DisplayStatus
-                    data-width="half"
                     title="Category"
                     subtitle="123125125125125"
                     header={<a href="">Link</a>}
