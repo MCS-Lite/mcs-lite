@@ -45,6 +45,11 @@ const ButtonWrapper = styled.div`
   }
 `;
 
+const ScaledSwitch = styled(Switch)`
+  transform: scale(0.48);
+  transform-origin: right center;
+`;
+
 class DeviceTriggerEdit extends React.Component {
   state = { isChecked: false };
   componentDidMount = () => this.props.fetchDeviceDetail();
@@ -61,7 +66,7 @@ class DeviceTriggerEdit extends React.Component {
           <Item>
             <P>觸發條件名稱 A觸發條件名稱 A觸發條件名稱 A觸發條件名稱 A觸發條件名稱 A觸發條件名稱 A觸發條件名稱 A</P>
             <div>
-              <Switch checked={isChecked} onClick={onSwitchClick} />
+              <ScaledSwitch kind="primary" checked={isChecked} onClick={onSwitchClick} />
             </div>
           </Item>
 

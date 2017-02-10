@@ -135,6 +135,12 @@ class DeviceDetail extends React.Component {
                     }}
                   />
 
+                  <DataChannel.ControlSwitch
+                    title="Title"
+                    subtitle="123125125125125"
+                    header={<a href="">Link</a>}
+                  />
+
                   <DataChannel.DisplayStatus
                     title="Category"
                     subtitle="123125125125125"
