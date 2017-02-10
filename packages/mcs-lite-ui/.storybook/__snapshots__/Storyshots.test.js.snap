@@ -1117,7 +1117,8 @@ exports[`Storyshots DataChannel DataChannel.ControlSwitch 1`] = `
     className="dvQQLa">
     <div
       checked={false}
-      className="hKkhHI"
+      className="hiQQzp"
+      kind="success"
       onClick={[Function]} />
   </div>
   <div>
@@ -1519,7 +1520,8 @@ exports[`Storyshots DataChannel Fixed width 1`] = `
     className="dvQQLa">
     <div
       checked={false}
-      className="hKkhHI"
+      className="hiQQzp"
+      kind="success"
       onSubmit={[Function]} />
   </div>
   <div>
@@ -1624,7 +1626,8 @@ exports[`Storyshots DataChannelCard Custom width and height 1`] = `
     className="dvQQLa">
     <div
       checked={false}
-      className="hKkhHI" />
+      className="hiQQzp"
+      kind="success" />
   </div>
   <div>
     <h4
@@ -1659,7 +1662,8 @@ exports[`Storyshots DataChannelCard Without description 1`] = `
     className="dvQQLa">
     <div
       checked={false}
-      className="hKkhHI" />
+      className="hiQQzp"
+      kind="success" />
   </div>
   <div>
     <h4
@@ -2681,24 +2685,61 @@ exports[`Storyshots Switch API 1`] = `
 <div>
   <div
     checked={false}
-    className="hKkhHI" />
+    className="hiQQzp"
+    kind="success" />
   <div
     checked={true}
-    className="gJGPrQ" />
+    className="cDkFNS"
+    kind="success" />
 </div>
 `;
 
 exports[`Storyshots Switch Overriding style 1`] = `
 <div
   checked={false}
-  className="mzyXg"
+  className="bKlAUX"
+  kind="success"
   onClick={[Function]} />
 `;
 
 exports[`Storyshots Switch Stateful switch 1`] = `
 <div
   checked={false}
-  className="hKkhHI"
+  className="hiQQzp"
+  kind="success"
+  onClick={[Function]} />
+`;
+
+exports[`Storyshots Switch With kind props 1`] = `
+<div>
+  <div
+    checked={true}
+    className="dJHpgd"
+    kind="default" />
+  <div
+    checked={true}
+    className="jZopHz"
+    kind="primary" />
+  <div
+    checked={true}
+    className="cDkFNS"
+    kind="success" />
+  <div
+    checked={true}
+    className="hvcNTy"
+    kind="error" />
+  <div
+    checked={true}
+    className="fdHlIe"
+    kind="warning" />
+</div>
+`;
+
+exports[`Storyshots Switch With scaling 1`] = `
+<div
+  checked={false}
+  className="hsuqHb"
+  kind="primary"
   onClick={[Function]} />
 `;
 

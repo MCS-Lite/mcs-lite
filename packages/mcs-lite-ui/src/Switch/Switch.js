@@ -9,7 +9,8 @@ const Switch = styled.div`
   border-radius: 24px;
   transition: background-color cubic-bezier(0.47, 0, 0.75, 0.72) 0.2s;
   cursor: pointer;
-  background-color: ${props => props.checked ? props.theme.color.success : props.theme.color.grayBase};
+  background-color: ${props => props.checked ? props.theme.color[props.kind] : props.theme.color.grayBase};
+  transform-origin: 0 0;
 
   &::after {
     content: " ";
@@ -30,9 +31,11 @@ const Switch = styled.div`
 
 Switch.displayName = 'Switch';
 Switch.propTypes = {
+  kind: PropTypes.string,
   checked: PropTypes.bool,
 };
 Switch.defaultProps = {
+  kind: 'success',
   checked: false,
 };
 
