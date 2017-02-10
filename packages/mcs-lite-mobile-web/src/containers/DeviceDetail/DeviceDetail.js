@@ -97,7 +97,9 @@ class DeviceDetail extends React.Component {
                   <StyledLink to={`/devices/${device.deviceId}/info`}>
                     <Menu.MenuItem>測試裝置介紹</Menu.MenuItem>
                   </StyledLink>
-                  <Menu.MenuItem>觸發條件與動作</Menu.MenuItem>
+                  <StyledLink to={`/devices/${device.deviceId}/trigger`}>
+                    <Menu.MenuItem>觸發條件與動作</Menu.MenuItem>
+                  </StyledLink>
                 </Menu.Menu>
               </Overlay>
             )
