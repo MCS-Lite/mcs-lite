@@ -50,14 +50,13 @@ class DeviceList extends React.Component {
 
     this.setState({ isFilterOpen: false, filterValue: '' });
   }
-  onRefresh = done => this.props.fetchDeviceList(done);
   getInput = (node) => { this.input = node; }
   includeDeviceName = device => device.name.includes(this.state.filterValue);
   render() {
     const { isFilterOpen, filterValue } = this.state;
-    const { devices } = this.props;
+    const { fetchDeviceList, devices, isLoading } = this.props;
     const {
-      onRefresh, onFilterChange, onClickOutside, onFilterClick,
+      onFilterChange, onClickOutside, onFilterClick,
       includeDeviceName, getInput,
     } = this;
 
@@ -88,7 +87,7 @@ class DeviceList extends React.Component {
         </Header>
 
         <main>
-          <PullToRefresh onRefresh={onRefresh}>
+          <PullToRefresh isLoading={isLoading} onPull={fetchDeviceList}>
             <Container>
               <PreventDrag >
                 <Transition
@@ -121,6 +120,9 @@ class DeviceList extends React.Component {
 }
 
 export default connect(
-  ({ devices }) => ({ devices: R.values(devices) }),
+  ({ devices, ui }) => ({
+    devices: R.values(devices),
+    isLoading: ui.isLoading,
+  }),
   { fetchDeviceList: actions.fetchDeviceList },
 )(DeviceList);

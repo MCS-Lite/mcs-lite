@@ -12,7 +12,7 @@ const HEIGHT = 60;
 const SENSITIVITY = 2;
 
 const PullWrapper = styled.div`
-  transition: ${props => (props.distance === 0 || props.isRefreshing) ? 'all .25s ease' : 'initial'};
+  transition: ${props => (props.distance === 0 || props.isLoading) ? 'all .25s ease' : 'initial'};
 `;
 
 const LoadingContainer = styled.div`
@@ -31,7 +31,8 @@ const LoadingContainer = styled.div`
 class PullToRefresh extends React.Component {
   static propTypes = {
     children: PropTypes.node.isRequired,
-    onRefresh: PropTypes.func.isRequired,
+    isLoading: PropTypes.bool.isRequired,
+    onPull: PropTypes.func.isRequired,
     IconArrow: PropTypes.any,
     IconLoading: PropTypes.any,
   }
@@ -41,7 +42,16 @@ class PullToRefresh extends React.Component {
     IconLoading: () => <Heading level={2} color="grayBase"><IconArrowDown /></Heading>,
   }
 
-  state = { distance: 0, isRefreshing: false };
+  constructor(props) {
+    super(props);
+    this.state = { distance: props.isLoading ? HEIGHT : 0 };
+  }
+
+  componentWillReceiveProps(nextProps) {
+    if (nextProps.isLoading) return this.setLoading();
+
+    return this.reset();
+  }
 
   onPanDownStart = (e) => {
     this.fromY = e.srcEvent.pageY;
@@ -50,7 +60,7 @@ class PullToRefresh extends React.Component {
 
   onPanDown = (e) => {
     if (document.body.scrollTop > 0) return; // Remind: Skip the event if it's not pulled from top.
-    if (this.state.isRefreshing) {
+    if (this.props.isLoading) {
       e.preventDefault(); // Hint: Prevent being pulled while refreshing.
       return;
     }
@@ -61,7 +71,7 @@ class PullToRefresh extends React.Component {
   }
 
   onPanDownEnd = () => {
-    if (this.state.isRefreshing) return; // Remind: Prevent re-refreshing.
+    if (this.props.isLoading) return; // Remind: Prevent re-refreshing.
 
     // Remind: Trigger only when it is pulled heigher than HEIGHT.
     if (this.state.distance < HEIGHT) {
@@ -69,16 +79,16 @@ class PullToRefresh extends React.Component {
       return;
     }
 
-    this.setState({ distance: HEIGHT, isRefreshing: true });
-    this.props.onRefresh(this.reset);
+    this.setLoading();
+    this.props.onPull();
   }
 
-  reset = () => {
-    this.setState({ distance: 0, isRefreshing: false });
-  }
+  setLoading = () => this.setState({ distance: HEIGHT });
+  reset = () => this.setState({ distance: 0 });
+
   render() {
-    const { children, IconArrow, IconLoading, ...otherProps } = this.props;
-    const { isRefreshing, distance } = this.state;
+    const { children, isLoading, IconArrow, IconLoading, ...otherProps } = this.props;
+    const { distance } = this.state;
 
     return (
       <Hammer
@@ -93,11 +103,11 @@ class PullToRefresh extends React.Component {
         <PullWrapper
           {...otherProps}
           distance={distance}
-          isRefreshing={isRefreshing}
+          isLoading={isLoading}
           style={{ marginTop: distance }}
         >
           <LoadingContainer distance={distance}>
-            {isRefreshing ? <IconArrow /> : <IconLoading />}
+            {isLoading ? <IconArrow /> : <IconLoading />}
           </LoadingContainer>
           {children}
         </PullWrapper>

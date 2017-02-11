@@ -6,14 +6,12 @@ Object {
 
 exports[`devices should return fetchDeviceDetail actions 1`] = `
 Object {
-  "callback": [Function],
   "type": "mcs-lite-mobile-web/devices/FETCH_DEVICE_DETAIL",
 }
 `;
 
 exports[`devices should return fetchDeviceList actions 1`] = `
 Object {
-  "callback": [Function],
   "type": "mcs-lite-mobile-web/devices/FETCH_DEVICE_LIST",
 }
 `;

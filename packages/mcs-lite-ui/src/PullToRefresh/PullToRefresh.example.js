@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { storiesOf, action } from '@kadira/storybook';
+import { storiesOf } from '@kadira/storybook';
 import Heading from '../Heading';
 import PullToRefresh from '.';
 
@@ -24,11 +24,30 @@ const fetchMock = () =>
     setTimeout(() => resolve(123), 3000);
   });
 
-const onRefresh = done =>
-  fetchMock().then(() => {
-    action('done');
-    done();
-  });
+class StatefulPullToRefresh extends React.Component {
+  state = { isLoading: false }
+  onPull = () => {
+    this.setState({ isLoading: true });
+
+    fetchMock().then(() => {
+      this.setState({ isLoading: false });
+    });
+  }
+  render() {
+    return (
+      <PullToRefresh isLoading={this.state.isLoading} onPull={this.onPull}>
+        <Content>
+          <StyledHeading color="white">
+            Pull me down
+          </StyledHeading>
+          <StyledHeading color="white" level={3}>
+            (API will respond after 3 seconds.)
+          </StyledHeading>
+        </Content>
+      </PullToRefresh>
+    );
+  }
+}
 
 storiesOf('PullToRefresh', module)
   .addWithInfo(
@@ -36,16 +55,7 @@ storiesOf('PullToRefresh', module)
     '',
     () =>
       <Body>
-        <PullToRefresh onRefresh={onRefresh}>
-          <Content>
-            <StyledHeading color="white">
-              Pull me down
-            </StyledHeading>
-            <StyledHeading color="white" level={3}>
-              (API will respond after 3 seconds.)
-            </StyledHeading>
-          </Content>
-        </PullToRefresh>
+        <StatefulPullToRefresh />
       </Body>,
     { inline: true, propTables: [PullToRefresh]},
   );

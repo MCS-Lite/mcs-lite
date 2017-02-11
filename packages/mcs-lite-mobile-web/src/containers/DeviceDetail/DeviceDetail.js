@@ -74,12 +74,11 @@ class DeviceDetail extends React.Component {
   componentDidMount = () => this.props.fetchDeviceDetail();
   onMoreDetailClick = () => this.setState({ isMenuShow: !this.state.isMenuShow });
   onHide = () => this.setState({ isMenuShow: false });
-  onRefresh = done => this.props.fetchDeviceDetail(done);
   getTarget = node => this.setState({ target: node });
   render() {
     const { isMenuShow, target } = this.state;
-    const { device } = this.props;
-    const { getTarget, onMoreDetailClick, onHide, onRefresh } = this;
+    const { device, isLoading, fetchDeviceDetail } = this.props;
+    const { getTarget, onMoreDetailClick, onHide } = this;
     return (
       <div>
         <Header title="裝置名稱（裝置詳細資料" backTo="/devices">
@@ -106,7 +105,7 @@ class DeviceDetail extends React.Component {
           }
         </Header>
         <main>
-          <PullToRefresh onRefresh={onRefresh}>
+          <PullToRefresh isLoading={isLoading} onPull={fetchDeviceDetail}>
             <div>
               <StyledImg src="https://img.mediatek.com/600/mtk.linkit/productBanner.png" />
 
@@ -209,8 +208,9 @@ class DeviceDetail extends React.Component {
 }
 
 export default connect(
-  ({ devices }, { params: { deviceId }}) => ({
+  ({ devices, ui }, { params: { deviceId }}) => ({
     device: devices[deviceId],
+    isLoading: ui.isLoading,
   }),
   { fetchDeviceDetail: actions.fetchDeviceDetail },
 )(DeviceDetail);
