@@ -12,6 +12,6 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "svgo": "^0.7.1"
+    "svgo": "^0.7.2"
   }
 }
