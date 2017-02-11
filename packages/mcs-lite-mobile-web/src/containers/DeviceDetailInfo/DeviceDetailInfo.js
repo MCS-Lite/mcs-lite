@@ -17,16 +17,14 @@ const Container = styled(MaxWidthCenterWrapper)`
 class DeviceDetailInfo extends React.Component {
   state = { isMenuShow: false, target: undefined };
   componentDidMount = () => this.props.fetchDeviceDetail();
-  onRefresh = done => this.props.fetchDeviceDetail(done);
   render() {
-    const { device } = this.props;
-    const { onRefresh } = this;
+    const { device, fetchDeviceDetail, isLoading } = this.props;
 
     return (
       <div>
         <Header title="裝置名稱（裝置詳細資料" backTo={`/devices/${device && device.deviceId}`} />
         <main>
-          <PullToRefresh onRefresh={onRefresh}>
+          <PullToRefresh isLoading={isLoading} onPull={fetchDeviceDetail}>
             <Container>
               <div>
                 <B>裝置名稱</B>
@@ -66,8 +64,9 @@ class DeviceDetailInfo extends React.Component {
 }
 
 export default connect(
-  ({ devices }, { params: { deviceId }}) => ({
+  ({ devices, ui }, { params: { deviceId }}) => ({
     device: devices[deviceId],
+    isLoading: ui.isLoading,
   }),
   { fetchDeviceDetail: actions.fetchDeviceDetail },
 )(DeviceDetailInfo);

@@ -1,7 +1,7 @@
+import R from 'ramda';
 import { Observable } from 'rxjs/Observable';
-import emptyFunction from 'mcs-lite-ui/lib/utils/emptyFunction';
-import devicesJSON from './mocks/devices.api.json';
-import deviceDetailJSON from './mocks/D2rbGd3.api.json';
+import { actions as uiActions } from './ui';
+import API from './API';
 
 // ----------------------------------------------------------------------------
 // 1. Constants
@@ -17,8 +17,8 @@ const CLEAR = 'mcs-lite-mobile-web/devices/CLEAR';
 // 2. Action Creators (Sync)
 // ----------------------------------------------------------------------------
 
-const fetchDeviceList = (callback = emptyFunction) => ({ type: FETCH_DEVICE_LIST, callback });
-const fetchDeviceDetail = (callback = emptyFunction) => ({ type: FETCH_DEVICE_DETAIL, callback });
+const fetchDeviceList = () => ({ type: FETCH_DEVICE_LIST });
+const fetchDeviceDetail = () => ({ type: FETCH_DEVICE_DETAIL });
 const setDeviceList = payload => ({ type: SET_DEVICE_LIST, payload });
 const setDeviceDetail = payload => ({ type: SET_DEVICE_DETAIL, payload });
 const clear = () => ({ type: CLEAR });
@@ -35,39 +35,38 @@ export const actions = {
 // 3. Epic (Async, side effect)
 // ----------------------------------------------------------------------------
 
-const fetchDeviceListEpic = (action$) => {
-  const fetchDeviceList$ = action$.ofType(FETCH_DEVICE_LIST);
-  const callback$ = fetchDeviceList$.pluck('callback');
-  const devices$ = fetchDeviceList$
-    .delay(1000)
-    .mapTo(devicesJSON.results); // fake
+const fetchDeviceListEpic = action$ =>
+  action$.ofType(FETCH_DEVICE_LIST)
+    .mergeMap(() => Observable.merge(
+      Observable.of(uiActions.setLoading()),
+      Observable.fromPromise(API.fetchDeviceList())
+        .map(R.prop('results'))
+        .map(setDeviceList),
+    ));
 
-  return Observable
-    .zip(devices$, callback$)
-    .map(([devices, callback]) => {
-      callback();
-      return setDeviceList(devices);
-    });
-};
+const setDeviceListEpic = action$ =>
+  action$.ofType(SET_DEVICE_LIST)
+    .mapTo(uiActions.setLoaded());
 
-const fetchDeviceDetailEpic = (action$) => {
-  const fetchDeviceDetail$ = action$.ofType(FETCH_DEVICE_DETAIL);
-  const callback$ = fetchDeviceDetail$.pluck('callback');
-  const deviceDetail$ = fetchDeviceDetail$
-    .delay(1000)
-    .mapTo(deviceDetailJSON.results[0]); // fake
+const fetchDeviceDetailEpic = action$ =>
+  action$.ofType(FETCH_DEVICE_DETAIL)
+    .mergeMap(() => Observable.merge(
+      Observable.of(uiActions.setLoading()),
+      Observable.fromPromise(API.fetchDeviceDetail())
+        .map(R.prop('results'))
+        .map(R.head)
+        .map(setDeviceDetail),
+    ));
 
-  return Observable
-    .zip(deviceDetail$, callback$)
-    .map(([deviceDetail, callback]) => {
-      callback();
-      return setDeviceDetail(deviceDetail);
-    });
-};
+const setDeviceDetailEpic = action$ =>
+  action$.ofType(SET_DEVICE_DETAIL)
+    .mapTo(uiActions.setLoaded());
 
 export const epics = [
   fetchDeviceListEpic,
   fetchDeviceDetailEpic,
+  setDeviceListEpic,
+  setDeviceDetailEpic,
 ];
 
 // ----------------------------------------------------------------------------

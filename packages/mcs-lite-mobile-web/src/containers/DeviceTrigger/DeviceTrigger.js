@@ -30,16 +30,14 @@ const IconWrapper = styled.div`
 class DeviceTrigger extends React.Component {
   state = { isMenuShow: false, target: undefined };
   componentDidMount = () => this.props.fetchDeviceDetail();
-  onRefresh = done => this.props.fetchDeviceDetail(done);
   render() {
-    const { device } = this.props;
-    const { onRefresh } = this;
+    const { device, isLoading, fetchDeviceDetail } = this.props;
 
     return (
       <div>
         <Header title="觸發條件與動作" backTo={`/devices/${device && device.deviceId}`} />
         <main>
-          <PullToRefresh onRefresh={onRefresh}>
+          <PullToRefresh isLoading={isLoading} onPull={fetchDeviceDetail}>
             <PreventDrag>
               <StyledLink to={`/devices/${device && device.deviceId}/trigger/edit`}>
                 <Item>
@@ -69,8 +67,9 @@ class DeviceTrigger extends React.Component {
 }
 
 export default connect(
-  ({ devices }, { params: { deviceId }}) => ({
+  ({ devices, ui }, { params: { deviceId }}) => ({
     device: devices[deviceId],
+    isLoading: ui.isLoading,
   }),
   { fetchDeviceDetail: actions.fetchDeviceDetail },
 )(DeviceTrigger);
