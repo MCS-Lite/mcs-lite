@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { storiesOf, action } from '@kadira/storybook';
+import { storiesOf } from '@kadira/storybook';
 import Heading from '../Heading';
 import PullToRefresh from '.';
 
