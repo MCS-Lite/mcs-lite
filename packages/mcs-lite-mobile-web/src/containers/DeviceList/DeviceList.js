@@ -108,7 +108,7 @@ class DeviceList extends React.Component {
                 </Transition>
               </PreventDrag>
 
-              {!isLoading && R.isEmpty(devices) &&
+              {R.isEmpty(devices) &&
                 <PlaceholdWrapper>目前還沒有任何測試裝置</PlaceholdWrapper>
               }
             </Container>
