@@ -1,38 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
 import { connect } from 'react-redux';
-import { Img, PullToRefresh, DataChannel, Overlay, Menu, P, Button, Input } from 'mcs-lite-ui';
+import { PullToRefresh, DataChannel, Overlay, Menu, P, Button, Input } from 'mcs-lite-ui';
 import IconEllipsisV from 'mcs-lite-icon/lib/IconEllipsisV';
 import { actions } from '../../modules/devices';
-import MaxWidthCenterWrapper from '../../components/MaxWidthCenterWrapper';
 import Header from '../../components/Header';
 import HeaderIcon from '../../components/HeaderIcon';
 import StyledLink from '../../components/StyledLink';
-
-const Container = styled(MaxWidthCenterWrapper)`
-  padding: 4px;
-`;
-
-const StyledImg = styled(Img)`
-  height: 192px;
-`;
-
-const CardWrapper = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-
-  > * {
-    height: initial;
-    padding: 8px 16px;
-    margin: 4px;
-    flex-basis: 100%;
-  }
-
-  > [data-width ~= half] {
-    flex-grow: 1;
-    flex-basis: 40%;
-  }
-`;
+import { Container, StyledImg, CardWrapper } from './styled-components';
 
 const PWM = () => {
   const PWMContainer = styled.div`

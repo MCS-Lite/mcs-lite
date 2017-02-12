@@ -1,42 +1,9 @@
 import React from 'react';
-import styled from 'styled-components';
-import { Button, Heading } from 'mcs-lite-ui';
+import { Heading } from 'mcs-lite-ui';
 import { connect } from 'react-redux';
 import { actions } from '../../modules/auth';
-import Logo from '../../components/Logo';
 import StyledLink from '../../components/StyledLink';
-
-const FlatButton = styled(Button)`
-  border: initial;
-  border-radius: initial;
-  height: 56px;
-  border-top: 1px solid ${props => props.theme.color.white};
-`;
-
-const Container = styled.div`
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  flex-grow: 1;
-`;
-
-const Body = styled.div`
-  width: 100%;
-  flex-grow: 1;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-`;
-
-const StyledLogo = styled(Logo)`
-  margin-bottom: 32px;
-`;
-
-const Footer = styled.footer`
-  width: 100%;
-`;
+import { Container, Body, StyledLogo, Footer, FlatButton } from './styled-components';
 
 const Account = ({ username, signout }) =>
   <Container>
