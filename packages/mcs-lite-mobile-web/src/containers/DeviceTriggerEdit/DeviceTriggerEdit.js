@@ -50,14 +50,19 @@ const ScaledSwitch = styled(Switch)`
   transform-origin: right center;
 `;
 
+const StyledHr = styled(Hr)`
+  margin-top: 16px;
+`;
+
 class DeviceTriggerEdit extends React.Component {
   state = { isChecked: false };
   componentDidMount = () => this.props.fetchDeviceDetail();
   onSwitchClick = () => this.setState({ isChecked: !this.state.isChecked });
+  onSubmit = e => e.preventDefault();
   render() {
     const { isChecked } = this.state;
     const { device } = this.props;
-    const { onSwitchClick } = this;
+    const { onSwitchClick, onSubmit } = this;
 
     return (
       <div>
@@ -70,51 +75,50 @@ class DeviceTriggerEdit extends React.Component {
             </div>
           </Item>
 
+          <form onSubmit={onSubmit}>
+            {isChecked &&
+              <Transition
+                component={Body}
+                enter={{ opacity: 1, translateY: 0 }}
+                leave={{ opacity: 0.8, translateY: -20 }}
+              >
+                <div key="1">
+                  <P>資料通道名稱 A</P>
+                  <StyledSamll>單位：單位顯示</StyledSamll>
 
-          {isChecked &&
-            <Transition
-              component={Body}
-              enter={{ opacity: 1, translateY: 0 }}
-              leave={{ opacity: 0.8, translateY: -20 }}
-            >
-              <div key="1">
-                <P>資料通道名稱 A</P>
-                <StyledSamll>單位：單位顯示</StyledSamll>
+                  <InputGroup>
+                    <Button>大於</Button>
+                    <Input placeholder="預設值：20" />
+                  </InputGroup>
 
-                <InputGroup>
-                  <Button>大於</Button>
-                  <Input placeholder="預設值：20" />
-                </InputGroup>
-              </div>
+                  <StyledHr>和</StyledHr>
+                </div>
 
-              <Hr>和</Hr>
+                <div key="2">
+                  <P>資料通道名稱 B</P>
+                  <StyledSamll>單位：單位顯示</StyledSamll>
 
-              <div key="2">
-                <P>資料通道名稱 B</P>
-                <StyledSamll>單位：單位顯示</StyledSamll>
+                  <InputGroup>
+                    <Button>之間</Button>
+                    <Input placeholder="預設值：0" />
+                    <Button>和</Button>
+                    <Input placeholder="預設值：100" />
+                  </InputGroup>
+                </div>
+              </Transition>
+            }
 
-                <InputGroup>
-                  <Button>之間</Button>
-                  <Input placeholder="預設值：0" />
-                  <Button>和</Button>
-                  <Input placeholder="預設值：100" />
-                </InputGroup>
-              </div>
-            </Transition>
-          }
-
-          {isChecked &&
-            <FixedFooter>
-              <ButtonWrapper>
-                <StyledLink to="/account">
-                  <Button kind="default" block>取消</Button>
-                </StyledLink>
-                <StyledLink>
-                  <Button block>儲存</Button>
-                </StyledLink>
-              </ButtonWrapper>
-            </FixedFooter>
-          }
+            {isChecked &&
+              <FixedFooter>
+                <ButtonWrapper>
+                  <StyledLink to="/account">
+                    <Button kind="default" block>取消</Button>
+                  </StyledLink>
+                  <Button component="input" type="submit" value="儲存" block />
+                </ButtonWrapper>
+              </FixedFooter>
+            }
+          </form>
         </main>
       </div>
     );
