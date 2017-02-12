@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import Helmet from 'react-helmet';
 import IconAngleRight from 'mcs-lite-icon/lib/IconAngleRight';
 import { PreventDrag, PullToRefresh, P } from 'mcs-lite-ui';
 import { actions } from '../../modules/devices';
@@ -15,6 +16,7 @@ class DeviceTrigger extends React.Component {
 
     return (
       <div>
+        <Helmet title="觸發條件與動作" />
         <Header title="觸發條件與動作" backTo={`/devices/${device && device.deviceId}`} />
         <main>
           <PullToRefresh isLoading={isLoading} onPull={fetchDeviceDetail}>

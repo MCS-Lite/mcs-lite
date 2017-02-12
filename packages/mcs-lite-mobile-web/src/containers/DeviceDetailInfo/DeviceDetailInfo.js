@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import Helmet from 'react-helmet';
 import { PullToRefresh, B, P } from 'mcs-lite-ui';
 import { actions } from '../../modules/devices';
 import Header from '../../components/Header';
@@ -13,6 +14,7 @@ class DeviceDetailInfo extends React.Component {
 
     return (
       <div>
+        <Helmet title="裝置名稱（裝置詳細資料" />
         <Header title="裝置名稱（裝置詳細資料" backTo={`/devices/${device && device.deviceId}`} />
         <main>
           <PullToRefresh isLoading={isLoading} onPull={fetchDeviceDetail}>

@@ -2,6 +2,7 @@ import React from 'react';
 import { findDOMNode } from 'react-dom';
 import R from 'ramda';
 import { connect } from 'react-redux';
+import Helmet from 'react-helmet';
 import Transition from 'react-motion-ui-pack';
 import { PullToRefresh, PreventDrag, Input, ClickOutside } from 'mcs-lite-ui';
 import IconSearch from 'mcs-lite-icon/lib/IconSearch';
@@ -33,6 +34,7 @@ class DeviceList extends React.Component {
 
     return (
       <div>
+        <Helmet title="我的測試裝置" />
         <Header title={!isFilterOpen && '我的裝置列表很長很長很長很長很長很長很長很長很長很長很長很長很長'}>
           {isFilterOpen &&
             <Transition

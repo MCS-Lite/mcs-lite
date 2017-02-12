@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { Input, Button } from 'mcs-lite-ui';
+import Helmet from 'react-helmet';
 import { actions } from '../../modules/auth';
 import Header from '../../components/Header';
 import StyledLink from '../../components/StyledLink';
@@ -20,6 +21,7 @@ class Password extends React.Component {
 
     return (
       <div>
+        <Helmet title="修改密碼" />
         <Header title="修改密碼" />
 
         <form onSubmit={onSubmit}>

@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { connect } from 'react-redux';
+import Helmet from 'react-helmet';
 import { PullToRefresh, DataChannel, Overlay, Menu, P, Button, Input } from 'mcs-lite-ui';
 import IconEllipsisV from 'mcs-lite-icon/lib/IconEllipsisV';
 import { actions } from '../../modules/devices';
@@ -56,6 +57,7 @@ class DeviceDetail extends React.Component {
     const { getTarget, onMoreDetailClick, onHide } = this;
     return (
       <div>
+        <Helmet title="裝置名稱（裝置詳細資料" />
         <Header title="裝置名稱（裝置詳細資料" backTo="/devices">
           <HeaderIcon ref={getTarget} onClick={onMoreDetailClick}>
             <IconEllipsisV />
