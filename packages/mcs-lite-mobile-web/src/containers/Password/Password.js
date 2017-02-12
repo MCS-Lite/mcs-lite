@@ -1,42 +1,11 @@
 import React from 'react';
-import styled from 'styled-components';
 import { connect } from 'react-redux';
 import { Input, Button } from 'mcs-lite-ui';
 import { actions } from '../../modules/auth';
-import MaxWidthCenterWrapper from '../../components/MaxWidthCenterWrapper';
 import Header from '../../components/Header';
 import StyledLink from '../../components/StyledLink';
 import FixedFooter from '../../components/FixedFooter';
-
-const Container = styled(MaxWidthCenterWrapper)`
-  padding: 16px 16px 56px 16px;
-
-  > div + div {
-    margin-top: 8px;
-  }
-
-  > div:last-child {
-    margin-bottom: 16px;
-  }
-`;
-
-const Label = styled.label`
-  display: block;
-  margin-bottom: 4px;
-`;
-
-const ButtonWrapper = styled.div`
-  display: flex;
-  padding: 8px 16px;
-
-  > * {
-    flex: 1;
-  }
-
-  > *:first-child {
-    margin-right: 8px;
-  }
-`;
+import { Container, Label, ButtonWrapper } from './styled-components';
 
 class Password extends React.Component {
   state = { old: '', new1: '', new2: '' };

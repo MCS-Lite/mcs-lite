@@ -1,44 +1,15 @@
 import React from 'react';
 import { findDOMNode } from 'react-dom';
-import styled from 'styled-components';
 import R from 'ramda';
 import { connect } from 'react-redux';
 import Transition from 'react-motion-ui-pack';
-import { P, PullToRefresh, PreventDrag, Input, ClickOutside } from 'mcs-lite-ui';
+import { PullToRefresh, PreventDrag, Input, ClickOutside } from 'mcs-lite-ui';
 import IconSearch from 'mcs-lite-icon/lib/IconSearch';
-import { opacity } from 'mcs-lite-theme';
 import { actions } from '../../modules/devices';
 import DeviceCard from '../../components/DeviceCard';
-import MaxWidthCenterWrapper from '../../components/MaxWidthCenterWrapper';
-import Header, { HEIGHT } from '../../components/Header/Header';
-import HeaderIcon from '../../components/HeaderIcon';
+import Header from '../../components/Header/Header';
 import StyledLink from '../../components/StyledLink';
-
-const Container = styled(MaxWidthCenterWrapper)`
-  padding: 8px;
-`;
-
-const CardWrapper = styled.div`
-
-  > * {
-    margin-bottom: 8px;
-  }
-`;
-
-const StyledHeaderIcon = styled(HeaderIcon)`
-  color: ${props => opacity(props.isFilterOpen ? 0.5 : 1)(props.theme.color.white)};
-`;
-
-const PlaceholdWrapper = styled(P)`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  width: 100%;
-  left: 0;
-  top: ${HEIGHT};
-  bottom: 0;
-`;
+import { Container, CardWrapper, StyledHeaderIcon, PlaceholdWrapper } from './styled-components';
 
 class DeviceList extends React.Component {
   state = { isFilterOpen: false, filterValue: '' };

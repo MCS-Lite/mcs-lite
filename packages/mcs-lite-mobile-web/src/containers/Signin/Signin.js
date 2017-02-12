@@ -1,33 +1,9 @@
 import React from 'react';
-import styled from 'styled-components';
-import { Button, Hr, Input } from 'mcs-lite-ui';
+import { Button, Input } from 'mcs-lite-ui';
 import { connect } from 'react-redux';
-import MaxWidthCenterWrapper from '../../components/MaxWidthCenterWrapper';
 import { actions } from '../../modules/auth';
 import Logo from '../../components/Logo';
-
-const StyledHr = styled(Hr)`
-  margin-top: 16px;
-  margin-bottom: 16px;
-`;
-
-const Layout = styled(MaxWidthCenterWrapper)`
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  padding: 16px;
-`;
-
-const Form = styled.form`
-
-  > input + input {
-    margin-top: 8px;
-  }
-
-  > input:last-child {
-    margin-top: 32px;
-  }
-`;
+import { StyledHr, Layout, Form } from './styled-components';
 
 class Signin extends React.Component {
   state = { account: '', password: '' };

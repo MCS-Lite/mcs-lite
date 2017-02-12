@@ -1,18 +1,9 @@
 import React from 'react';
-import styled from 'styled-components';
 import { connect } from 'react-redux';
 import { PullToRefresh, B, P } from 'mcs-lite-ui';
 import { actions } from '../../modules/devices';
-import MaxWidthCenterWrapper from '../../components/MaxWidthCenterWrapper';
 import Header from '../../components/Header';
-
-const Container = styled(MaxWidthCenterWrapper)`
-  padding: 16px 16px 56px 16px;
-
-  > div + div {
-    margin-top: 8px;
-  }
-`;
+import { Container } from './styled-components';
 
 class DeviceDetailInfo extends React.Component {
   state = { isMenuShow: false, target: undefined };

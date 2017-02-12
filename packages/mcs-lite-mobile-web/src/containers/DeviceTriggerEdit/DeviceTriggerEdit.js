@@ -1,58 +1,12 @@
 import React from 'react';
-import styled from 'styled-components';
 import { connect } from 'react-redux';
 import Transition from 'react-motion-ui-pack';
-import { Switch, Hr, P, Small, InputGroup, Button, Input } from 'mcs-lite-ui';
+import { P, InputGroup, Button, Input } from 'mcs-lite-ui';
 import { actions } from '../../modules/devices';
-import MaxWidthCenterWrapper from '../../components/MaxWidthCenterWrapper';
 import Header from '../../components/Header';
 import StyledLink from '../../components/StyledLink';
 import FixedFooter from '../../components/FixedFooter';
-
-const Item = styled(MaxWidthCenterWrapper)`
-  padding: 8px 16px;
-  border-bottom: 1px solid ${props => props.theme.color.grayDark};
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-`;
-
-const Body = styled(MaxWidthCenterWrapper)`
-  padding: 16px 16px 56px 16px;
-
-  > * {
-    margin-bottom: 16px;
-  }
-`;
-
-const StyledSamll = styled(Small)`
-  display: block;
-  margin-top: 4px;
-  margin-bottom: 8px;
-  color: ${props => props.theme.color.grayBase};
-`;
-
-const ButtonWrapper = styled.div`
-  display: flex;
-  padding: 8px 16px;
-
-  > * {
-    flex: 1;
-  }
-
-  > *:first-child {
-    margin-right: 8px;
-  }
-`;
-
-const ScaledSwitch = styled(Switch)`
-  transform: scale(0.48);
-  transform-origin: right center;
-`;
-
-const StyledHr = styled(Hr)`
-  margin-top: 16px;
-`;
+import { Item, Body, StyledSamll, ButtonWrapper, ScaledSwitch, StyledHr } from './styled-components';
 
 class DeviceTriggerEdit extends React.Component {
   state = { isChecked: false };
