@@ -185,8 +185,7 @@ exports[`Storyshots B Within <P> 1`] = `
 
 exports[`Storyshots Button API 1`] = `
 <button
-  className="fqCsyW"
-  kind="primary">
+  className="fqCsyW">
   button
 </button>
 `;
@@ -194,7 +193,6 @@ exports[`Storyshots Button API 1`] = `
 exports[`Storyshots Button Overriding style 1`] = `
 <button
   className="ciXyyf"
-  kind="primary"
   onClick={[Function]}>
   Overriding style
 </button>
@@ -204,21 +202,36 @@ exports[`Storyshots Button With block props 1`] = `
 <div
   className="epDjBm">
   <button
-    className="fqCsyW"
-    kind="primary">
+    className="fqCsyW">
     Button
   </button>
   <button
-    className="fqCsyW"
-    kind="primary">
+    className="fqCsyW">
     Simple button
   </button>
   <button
-    className="JGlsS"
-    kind="primary">
+    className="JGlsS">
     block
   </button>
 </div>
+`;
+
+exports[`Storyshots Button With component props - Input submit 1`] = `
+<input
+  className="JGlsS"
+  onClick={[Function]}
+  type="submit"
+  value="Input Submit" />
+`;
+
+exports[`Storyshots Button With component props 1`] = `
+<a
+  className="fqCsyW"
+  onClick={[Function]}>
+  I am 
+  <a>
+   tag.
+</a>
 `;
 
 exports[`Storyshots Button With kind props 1`] = `
@@ -226,31 +239,26 @@ exports[`Storyshots Button With kind props 1`] = `
   className="epDjBm">
   <button
     className="DxFsx"
-    kind="default"
     onClick={[Function]}>
     default
   </button>
   <button
     className="fqCsyW"
-    kind="primary"
     onClick={[Function]}>
     primary
   </button>
   <button
     className="ckvztW"
-    kind="success"
     onClick={[Function]}>
     success
   </button>
   <button
     className="iDTYQb"
-    kind="error"
     onClick={[Function]}>
     error
   </button>
   <button
     className="XOtSZ"
-    kind="warning"
     onClick={[Function]}>
     warning
   </button>
@@ -262,31 +270,26 @@ exports[`Storyshots Button With theme provider (Material) 1`] = `
   className="epDjBm">
   <button
     className="bLvfpx"
-    kind="default"
     onClick={[Function]}>
     default
   </button>
   <button
     className="iVupic"
-    kind="primary"
     onClick={[Function]}>
     primary
   </button>
   <button
     className="jUFdjw"
-    kind="success"
     onClick={[Function]}>
     success
   </button>
   <button
     className="ilWTgv"
-    kind="error"
     onClick={[Function]}>
     error
   </button>
   <button
     className="gWeAuj"
-    kind="warning"
     onClick={[Function]}>
     warning
   </button>
@@ -639,8 +642,7 @@ exports[`Storyshots DataChannel ControlRange - PWM 1`] = `
               placeholder="Integer only"
               type="number" />
             <button
-              className="fqCsyW"
-              kind="primary">
+              className="fqCsyW">
               OK
             </button>
           </div>
@@ -902,7 +904,6 @@ exports[`Storyshots DataChannel DataChannel.ControlNumber 1`] = `
         </div>
         <button
           className="fqCsyW"
-          kind="primary"
           onClick={[Function]}>
           Ok
         </button>
@@ -1074,7 +1075,6 @@ exports[`Storyshots DataChannel DataChannel.ControlString 1`] = `
         </div>
         <button
           className="fqCsyW"
-          kind="primary"
           onClick={[Function]}>
           Ok
         </button>
@@ -2034,70 +2034,59 @@ exports[`Storyshots InputGroup API 1`] = `
   <div
     className="jaAZmb">
     <button
-      className="fqCsyW"
-      kind="primary">
+      className="fqCsyW">
       Button 1
     </button>
     <button
-      className="DxFsx"
-      kind="default">
+      className="DxFsx">
       Button 2
     </button>
   </div>
   <div
     className="jaAZmb">
     <button
-      className="JGlsS"
-      kind="primary">
+      className="JGlsS">
       Button 1
     </button>
     <button
-      className="eMqgsi"
-      kind="default">
+      className="eMqgsi">
       Button 2
     </button>
   </div>
   <div
     className="jaAZmb">
     <button
-      className="fqCsyW"
-      kind="primary">
+      className="fqCsyW">
       Button 1
     </button>
     <button
-      className="DxFsx"
-      kind="default">
+      className="DxFsx">
       Button 2
     </button>
     <button
-      className="XOtSZ"
-      kind="warning">
+      className="XOtSZ">
       Button 3
     </button>
   </div>
   <div
     className="jaAZmb">
     <button
-      className="fqCsyW"
-      kind="primary">
+      className="fqCsyW">
       Button 1
     </button>
     <button
-      className="eMqgsi"
-      kind="default">
+      className="eMqgsi">
       Button 2
     </button>
     <button
-      className="XOtSZ"
-      kind="warning">
+      className="XOtSZ">
       Button 3
     </button>
   </div>
   <div
     className="jaAZmb">
     <button
-      className="fqCsyW"
-      kind="primary">
+      className="fqCsyW">
       大於
     </button>
     <input
@@ -2112,16 +2101,14 @@ exports[`Storyshots InputGroup API 1`] = `
       kind="primary"
       placeholder="Input 1" />
     <button
-      className="fqCsyW"
-      kind="primary">
+      className="fqCsyW">
       Button 1
     </button>
   </div>
   <div
     className="jaAZmb">
     <button
-      className="fqCsyW"
-      kind="primary">
+      className="fqCsyW">
       Button 1
     </button>
     <input
@@ -2129,16 +2116,14 @@ exports[`Storyshots InputGroup API 1`] = `
       kind="primary"
       placeholder="Input 1" />
     <button
-      className="fqCsyW"
-      kind="primary">
+      className="fqCsyW">
       Button 2
     </button>
   </div>
   <div
     className="jaAZmb">
     <button
-      className="fqCsyW"
-      kind="primary">
+      className="fqCsyW">
       之間
     </button>
     <input
@@ -2146,8 +2131,7 @@ exports[`Storyshots InputGroup API 1`] = `
       kind="primary"
       placeholder="預設值：0" />
     <button
-      className="fqCsyW"
-      kind="primary">
+      className="fqCsyW">
       和
     </button>
     <input
@@ -2294,7 +2278,6 @@ exports[`Storyshots Overlay Dropdown Menu 1`] = `
   <div>
     <button
       className="fqCsyW"
-      kind="primary"
       onClick={[Function]}>
       Button
     </button>
@@ -2302,7 +2285,6 @@ exports[`Storyshots Overlay Dropdown Menu 1`] = `
   <div>
     <button
       className="fqCsyW"
-      kind="primary"
       onClick={[Function]}>
       Button
     </button>
@@ -2310,7 +2292,6 @@ exports[`Storyshots Overlay Dropdown Menu 1`] = `
   <div>
     <button
       className="fqCsyW"
-      kind="primary"
       onClick={[Function]}>
       Button
     </button>

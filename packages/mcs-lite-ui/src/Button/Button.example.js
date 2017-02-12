@@ -100,4 +100,26 @@ storiesOf('Button', module)
     '使用 styled-components 來覆蓋 css。',
     () => <TomatoButton onClick={action('clicked')}>Overriding style</TomatoButton>,
     { inline: true, propTables: false },
+  )
+  .addWithInfo(
+    'With component props',
+    '使用 a tag。',
+    () =>
+      <Button onClick={action('clicked a')} component="a">
+        I am {'<a>'} tag.
+      </Button>,
+    { inline: true },
+  )
+  .addWithInfo(
+    'With component props - Input submit',
+    '',
+    () =>
+      <Button
+        onClick={action('clicked input')}
+        component="input"
+        type="submit"
+        value="Input Submit"
+        block
+      />,
+    { inline: true },
   );
