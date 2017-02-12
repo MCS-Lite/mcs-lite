@@ -1,12 +1,14 @@
 import React from 'react';
 import { Heading } from 'mcs-lite-ui';
 import { connect } from 'react-redux';
+import Helmet from 'react-helmet';
 import { actions } from '../../modules/auth';
 import StyledLink from '../../components/StyledLink';
 import { Container, Body, StyledLogo, Footer, FlatButton } from './styled-components';
 
 const Account = ({ username, signout }) =>
   <Container>
+    <Helmet title="帳戶" />
     <Body>
       <StyledLogo />
       <Heading level={4}>{username}</Heading>

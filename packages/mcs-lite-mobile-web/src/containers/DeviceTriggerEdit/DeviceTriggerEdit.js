@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import Helmet from 'react-helmet';
 import Transition from 'react-motion-ui-pack';
 import { P, InputGroup, Button, Input } from 'mcs-lite-ui';
 import { actions } from '../../modules/devices';
@@ -20,7 +21,8 @@ class DeviceTriggerEdit extends React.Component {
 
     return (
       <div>
-        <Header title="觸發條件與動作" backTo={`/devices/${device && device.deviceId}/trigger`} />
+        <Helmet title="編輯觸發條件與動作" />
+        <Header title="編輯觸發條件與動作" backTo={`/devices/${device && device.deviceId}/trigger`} />
         <main>
           <Item>
             <P>觸發條件名稱 A觸發條件名稱 A觸發條件名稱 A觸發條件名稱 A觸發條件名稱 A觸發條件名稱 A觸發條件名稱 A</P>
