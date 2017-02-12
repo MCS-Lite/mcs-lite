@@ -1,5 +1,5 @@
 // @flow
-import { PropTypes } from 'react';
+import React, { PropTypes } from 'react';
 import styled from 'styled-components';
 import R from 'ramda';
 import { darken1, darken2, darken3 } from 'mcs-lite-theme';
@@ -12,7 +12,12 @@ const mapColorByKind = props => R.pipe(
   ]),
 );
 
-const Button = styled.button`
+const omitProps = R.omit(['block', 'kind']);
+
+const BaseComponent = ({ component, children, ...otherProps }) =>
+  React.createElement(component, omitProps(otherProps), children);
+
+const Button = styled(BaseComponent)`
   border-radius: 3px;
   border-width: 1px;
   border-style: solid;
@@ -43,11 +48,13 @@ Button.displayName = 'Button';
 Button.propTypes = {
   kind: PropTypes.string,
   block: PropTypes.bool,
+  component: PropTypes.any,
 };
 
 Button.defaultProps = {
   kind: 'primary',
   block: false,
+  component: 'button',
 };
 
 export default Button;
