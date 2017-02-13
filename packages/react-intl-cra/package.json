@@ -2,22 +2,12 @@
   "name": "react-intl-cra",
   "version": "0.0.0",
   "description": "",
-  "main": "bin/index.js",
   "bin": {
-    "react-intl-cra": "bin/index.js"
-  },
-  "scripts": {
-    "test": "node bin/index.js '../mcs-lite-mobile-web/src/**/*.js' './messages.json'"
+    "react-intl-cra": "./bin/extract-messages.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "babel-core": "^6.22.1",
-    "babel-plugin-react-intl": "^2.3.1",
-    "babel-preset-mcs-lite": "^0.0.0",
-    "babel-preset-react-app": "^2.1.0",
-    "babel-register": "^6.22.0",
-    "glob": "^7.1.1",
-    "rxjs": "^5.1.0"
+    "mcs-lite-scripts": "^0.0.0"
   }
 }

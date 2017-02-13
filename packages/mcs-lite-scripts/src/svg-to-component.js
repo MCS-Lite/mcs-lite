@@ -11,6 +11,8 @@ import { parseSVG, compile, template } from './utils';
 const srcDir = process.argv[2];
 const desDir = process.argv[3];
 
+process.env.NODE_ENV = 'production'; // for babel
+
 // --- /lib/a.svg --- /lib/b.svg --- ...
 const srcPath$ = Rx.Observable
   .from([srcDir])

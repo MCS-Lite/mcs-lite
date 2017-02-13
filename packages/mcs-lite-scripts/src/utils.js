@@ -1,13 +1,10 @@
-import fs from 'fs';
-import path from 'path';
 import cheerio from 'cheerio';
 import * as babel from 'babel-core';
 
-const babelOptions = JSON.parse(fs.readFileSync(
-  path.resolve(__dirname, '../.babelrc'),
-  'utf8',
-));
-babelOptions.babelrc = false;
+const babelOptions = {
+  presets: [require.resolve('babel-preset-mcs-lite')],
+  babelrc: false,
+};
 
 const compile = code => babel.transform(code, babelOptions).code;
 
