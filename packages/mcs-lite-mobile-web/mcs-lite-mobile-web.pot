@@ -1,11 +1,39 @@
 msgid ""
 msgstr ""
-"POT-Creation-Date: 2017-02-13T01:13:40.857Z\n"
+"POT-Creation-Date: 2017-02-13T02:04:11.011Z\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "MIME-Version: 1.0\n"
 "X-Generator: react-intl-po\n"
 
+
+#: ./messages.json
+#. [DeviceTrigger.off]
+#. defaultMessage is:
+#. OFF
+msgid "OFF"
+msgstr ""
+
+#: ./messages.json
+#. [DeviceTrigger.on]
+#. defaultMessage is:
+#. ON
+msgid "ON"
+msgstr ""
+
+#: ./messages.json
+#. [DeviceTriggerEdit.between]
+#. defaultMessage is:
+#. 之間
+msgid "之間"
+msgstr ""
+
+#: ./messages.json
+#. [Account.hello]
+#. defaultMessage is:
+#. 你好
+msgid "你好"
+msgstr ""
 
 #: ./messages.json
 #. [Password.changePassword] - Title
@@ -14,6 +42,10 @@ msgstr ""
 msgid "修改密碼"
 msgstr ""
 
+#: ./messages.json
+#. [DeviceTriggerEdit.save]
+#. defaultMessage is:
+#. 儲存
 #: ./messages.json
 #. [Password.save]
 #. defaultMessage is:
@@ -29,10 +61,35 @@ msgid "再一次輸入新密碼"
 msgstr ""
 
 #: ./messages.json
+#. [DeviceTriggerEdit.cancel]
+#. defaultMessage is:
+#. 取消
+#: ./messages.json
 #. [Password.cancel]
 #. defaultMessage is:
 #. 取消
 msgid "取消"
+msgstr ""
+
+#: ./messages.json
+#. [DeviceTriggerEdit.and]
+#. defaultMessage is:
+#. 和
+msgid "和"
+msgstr ""
+
+#: ./messages.json
+#. [DeviceTriggerEdit.unit]
+#. defaultMessage is:
+#. 單位：
+msgid "單位："
+msgstr ""
+
+#: ./messages.json
+#. [DeviceTriggerEdit.greater]
+#. defaultMessage is:
+#. 大於
+msgid "大於"
 msgstr ""
 
 #: ./messages.json
@@ -43,10 +100,42 @@ msgid "密碼"
 msgstr ""
 
 #: ./messages.json
+#. [Account.account] - Title
+#. defaultMessage is:
+#. 帳戶
+msgid "帳戶"
+msgstr ""
+
+#: ./messages.json
 #. [Signin.account]
 #. defaultMessage is:
 #. 帳號
 msgid "帳號"
+msgstr ""
+
+#: ./messages.json
+#. [Account.myTestDevices]
+#. defaultMessage is:
+#. 我的測試裝置
+#: ./messages.json
+#. [DeviceList.myTestDevices] - Title
+#. defaultMessage is:
+#. 我的測試裝置
+msgid "我的測試裝置"
+msgstr ""
+
+#: ./messages.json
+#. [DeviceList.search]
+#. defaultMessage is:
+#. 搜尋
+msgid "搜尋"
+msgstr ""
+
+#: ./messages.json
+#. [Account.changePassword]
+#. defaultMessage is:
+#. 更改密碼
+msgid "更改密碼"
 msgstr ""
 
 #: ./messages.json
@@ -57,10 +146,53 @@ msgid "歡迎"
 msgstr ""
 
 #: ./messages.json
+#. [DeviceDetail.deviceIntro] - dropdown
+#. defaultMessage is:
+#. 測試裝置介紹
+#: ./messages.json
+#. [DeviceDetailInfo.deviceIntro] - Title
+#. defaultMessage is:
+#. 測試裝置介紹
+msgid "測試裝置介紹"
+msgstr ""
+
+#: ./messages.json
 #. [Signin.signin] - Document Title
 #. defaultMessage is:
 #. 登入
 msgid "登入"
+msgstr ""
+
+#: ./messages.json
+#. [Account.signout]
+#. defaultMessage is:
+#. 登出
+msgid "登出"
+msgstr ""
+
+#: ./messages.json
+#. [DeviceList.noDevice]
+#. defaultMessage is:
+#. 目前還沒有任何測試裝置
+msgid "目前還沒有任何測試裝置"
+msgstr ""
+
+#: ./messages.json
+#. [DeviceTriggerEdit.editTriggerAndAction] - Title
+#. defaultMessage is:
+#. 編輯觸發條件與動作
+msgid "編輯觸發條件與動作"
+msgstr ""
+
+#: ./messages.json
+#. [DeviceDetail.triggerAndAction] - dropdown
+#. defaultMessage is:
+#. 觸發條件與動作
+#: ./messages.json
+#. [DeviceTrigger.triggerAndAction] - Title
+#. defaultMessage is:
+#. 觸發條件與動作
+msgid "觸發條件與動作"
 msgstr ""
 
 #: ./messages.json

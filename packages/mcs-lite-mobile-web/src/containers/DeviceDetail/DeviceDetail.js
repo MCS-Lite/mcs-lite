@@ -4,6 +4,9 @@ import { connect } from 'react-redux';
 import Helmet from 'react-helmet';
 import { PullToRefresh, DataChannel, Overlay, Menu, P, Button, Input } from 'mcs-lite-ui';
 import IconEllipsisV from 'mcs-lite-icon/lib/IconEllipsisV';
+import compose from 'recompose/compose';
+import withGetMessages from '../../utils/withGetMessages';
+import messages from './messages';
 import { actions } from '../../modules/devices';
 import Header from '../../components/Header';
 import HeaderIcon from '../../components/HeaderIcon';
@@ -53,12 +56,12 @@ class DeviceDetail extends React.Component {
   getTarget = node => this.setState({ target: node });
   render() {
     const { isMenuShow, target } = this.state;
-    const { device, isLoading, fetchDeviceDetail } = this.props;
+    const { device, isLoading, fetchDeviceDetail, getMessages: t } = this.props;
     const { getTarget, onMoreDetailClick, onHide } = this;
     return (
       <div>
-        <Helmet title="裝置名稱（裝置詳細資料" />
-        <Header title="裝置名稱（裝置詳細資料" backTo="/devices">
+        <Helmet title="範例 A 的測試裝置" />
+        <Header title="範例 A 的測試裝置" backTo="/devices">
           <HeaderIcon ref={getTarget} onClick={onMoreDetailClick}>
             <IconEllipsisV />
           </HeaderIcon>
@@ -71,10 +74,10 @@ class DeviceDetail extends React.Component {
               >
                 <Menu.Menu key="menu">
                   <StyledLink to={`/devices/${device.deviceId}/info`}>
-                    <Menu.MenuItem>測試裝置介紹</Menu.MenuItem>
+                    <Menu.MenuItem>{t('deviceIntro')}</Menu.MenuItem>
                   </StyledLink>
                   <StyledLink to={`/devices/${device.deviceId}/trigger`}>
-                    <Menu.MenuItem>觸發條件與動作</Menu.MenuItem>
+                    <Menu.MenuItem>{t('triggerAndAction')}</Menu.MenuItem>
                   </StyledLink>
                 </Menu.Menu>
               </Overlay>
@@ -184,10 +187,13 @@ class DeviceDetail extends React.Component {
   }
 }
 
-export default connect(
-  ({ devices, ui }, { params: { deviceId }}) => ({
-    device: devices[deviceId],
-    isLoading: ui.isLoading,
-  }),
-  { fetchDeviceDetail: actions.fetchDeviceDetail },
+export default compose(
+  connect(
+    ({ devices, ui }, { params: { deviceId }}) => ({
+      device: devices[deviceId],
+      isLoading: ui.isLoading,
+    }),
+    { fetchDeviceDetail: actions.fetchDeviceDetail },
+  ),
+  withGetMessages(messages, 'DeviceDetail'),
 )(DeviceDetail);

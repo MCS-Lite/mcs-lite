@@ -3,6 +3,9 @@ import { connect } from 'react-redux';
 import Helmet from 'react-helmet';
 import Transition from 'react-motion-ui-pack';
 import { P, InputGroup, Button, Input } from 'mcs-lite-ui';
+import compose from 'recompose/compose';
+import withGetMessages from '../../utils/withGetMessages';
+import messages from './messages';
 import { actions } from '../../modules/devices';
 import Header from '../../components/Header';
 import StyledLink from '../../components/StyledLink';
@@ -16,13 +19,13 @@ class DeviceTriggerEdit extends React.Component {
   onSubmit = e => e.preventDefault();
   render() {
     const { isChecked } = this.state;
-    const { device } = this.props;
+    const { device, getMessages: t } = this.props;
     const { onSwitchClick, onSubmit } = this;
 
     return (
       <div>
-        <Helmet title="編輯觸發條件與動作" />
-        <Header title="編輯觸發條件與動作" backTo={`/devices/${device && device.deviceId}/trigger`} />
+        <Helmet title={t('editTriggerAndAction')} />
+        <Header title={t('editTriggerAndAction')} backTo={`/devices/${device && device.deviceId}/trigger`} />
         <main>
           <Item>
             <P>觸發條件名稱 A觸發條件名稱 A觸發條件名稱 A觸發條件名稱 A觸發條件名稱 A觸發條件名稱 A觸發條件名稱 A</P>
@@ -40,24 +43,24 @@ class DeviceTriggerEdit extends React.Component {
               >
                 <div key="1">
                   <P>資料通道名稱 A</P>
-                  <StyledSamll>單位：單位顯示</StyledSamll>
+                  <StyledSamll>{t('unit')}單位顯示</StyledSamll>
 
                   <InputGroup>
-                    <Button>大於</Button>
+                    <Button>{t('greater')}</Button>
                     <Input placeholder="預設值：20" />
                   </InputGroup>
 
-                  <StyledHr>和</StyledHr>
+                  <StyledHr>{t('and')}</StyledHr>
                 </div>
 
                 <div key="2">
                   <P>資料通道名稱 B</P>
-                  <StyledSamll>單位：單位顯示</StyledSamll>
+                  <StyledSamll>{t('unit')}單位顯示</StyledSamll>
 
                   <InputGroup>
-                    <Button>之間</Button>
+                    <Button>{t('between')}</Button>
                     <Input placeholder="預設值：0" />
-                    <Button>和</Button>
+                    <Button>{t('and')}</Button>
                     <Input placeholder="預設值：100" />
                   </InputGroup>
                 </div>
@@ -68,9 +71,9 @@ class DeviceTriggerEdit extends React.Component {
               <FixedFooter>
                 <ButtonWrapper>
                   <StyledLink to="/account">
-                    <Button kind="default" block>取消</Button>
+                    <Button kind="default" block>{t('cancel')}</Button>
                   </StyledLink>
-                  <Button component="input" type="submit" value="儲存" block />
+                  <Button component="input" type="submit" value={t('save')} block />
                 </ButtonWrapper>
               </FixedFooter>
             }
@@ -81,9 +84,12 @@ class DeviceTriggerEdit extends React.Component {
   }
 }
 
-export default connect(
-  ({ devices }, { params: { deviceId }}) => ({
-    device: devices[deviceId],
-  }),
-  { fetchDeviceDetail: actions.fetchDeviceDetail },
+export default compose(
+  connect(
+    ({ devices }, { params: { deviceId }}) => ({
+      device: devices[deviceId],
+    }),
+    { fetchDeviceDetail: actions.fetchDeviceDetail },
+  ),
+  withGetMessages(messages, 'DeviceTriggerEdit'),
 )(DeviceTriggerEdit);

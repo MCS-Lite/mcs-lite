@@ -1,5 +1,96 @@
 [
   {
+    "id": "Account.account",
+    "description": "Title",
+    "defaultMessage": "帳戶"
+  },
+  {
+    "id": "Account.hello",
+    "defaultMessage": "你好"
+  },
+  {
+    "id": "Account.myTestDevices",
+    "defaultMessage": "我的測試裝置"
+  },
+  {
+    "id": "Account.changePassword",
+    "defaultMessage": "更改密碼"
+  },
+  {
+    "id": "Account.signout",
+    "defaultMessage": "登出"
+  },
+  {
+    "id": "DeviceDetail.deviceIntro",
+    "description": "dropdown",
+    "defaultMessage": "測試裝置介紹"
+  },
+  {
+    "id": "DeviceDetail.triggerAndAction",
+    "description": "dropdown",
+    "defaultMessage": "觸發條件與動作"
+  },
+  {
+    "id": "DeviceDetailInfo.deviceIntro",
+    "description": "Title",
+    "defaultMessage": "測試裝置介紹"
+  },
+  {
+    "id": "DeviceList.myTestDevices",
+    "description": "Title",
+    "defaultMessage": "我的測試裝置"
+  },
+  {
+    "id": "DeviceList.search",
+    "defaultMessage": "搜尋"
+  },
+  {
+    "id": "DeviceList.noDevice",
+    "defaultMessage": "目前還沒有任何測試裝置"
+  },
+  {
+    "id": "DeviceTrigger.triggerAndAction",
+    "description": "Title",
+    "defaultMessage": "觸發條件與動作"
+  },
+  {
+    "id": "DeviceTrigger.on",
+    "defaultMessage": "ON"
+  },
+  {
+    "id": "DeviceTrigger.off",
+    "defaultMessage": "OFF"
+  },
+  {
+    "id": "DeviceTriggerEdit.editTriggerAndAction",
+    "description": "Title",
+    "defaultMessage": "編輯觸發條件與動作"
+  },
+  {
+    "id": "DeviceTriggerEdit.and",
+    "defaultMessage": "和"
+  },
+  {
+    "id": "DeviceTriggerEdit.greater",
+    "defaultMessage": "大於"
+  },
+  {
+    "id": "DeviceTriggerEdit.between",
+    "defaultMessage": "之間"
+  },
+  {
+    "id": "DeviceTriggerEdit.unit",
+    "defaultMessage": "單位："
+  },
+  {
+    "id": "DeviceTriggerEdit.cancel",
+    "defaultMessage": "取消"
+  },
+  {
+    "id": "DeviceTriggerEdit.save",
+    "defaultMessage": "儲存"
+  },
+  {
     "id": "Password.changePassword",
     "description": "Title",
     "defaultMessage": "修改密碼"

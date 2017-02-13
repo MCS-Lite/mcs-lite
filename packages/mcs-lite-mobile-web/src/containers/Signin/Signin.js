@@ -20,20 +20,20 @@ class Signin extends React.Component {
   render() {
     const { account, password } = this.state;
     const { onChange, onSubmit } = this;
-    const { getMessages } = this.props;
+    const { getMessages: t } = this.props;
 
     return (
       <Layout>
-        <Helmet title={getMessages('Signin.signin')} />
+        <Helmet title={t('signin')} />
 
         <Logo />
-        <StyledHr>{getMessages('Signin.welcome')}</StyledHr>
+        <StyledHr>{t('welcome')}</StyledHr>
 
         <Form onSubmit={onSubmit}>
           <Input
             type="email"
             name="account"
-            placeholder={getMessages('Signin.account')}
+            placeholder={t('account')}
             value={account}
             onChange={onChange}
             required
@@ -41,17 +41,12 @@ class Signin extends React.Component {
           <Input
             type="password"
             name="password"
-            placeholder={getMessages('Signin.password')}
+            placeholder={t('password')}
             value={password}
             onChange={onChange}
             required
           />
-          <Button
-            component="input"
-            type="submit"
-            value={getMessages('Signin.signin')}
-            block
-          />
+          <Button component="input" type="submit" value={t('signin')} block />
         </Form>
       </Layout>
     );
@@ -63,5 +58,5 @@ export default compose(
     null,
     { signin: actions.signin },
   ),
-  withGetMessages(messages),
+  withGetMessages(messages, 'Signin'),
 )(Signin);

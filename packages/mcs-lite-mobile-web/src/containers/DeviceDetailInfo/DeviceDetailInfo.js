@@ -2,6 +2,9 @@ import React from 'react';
 import { connect } from 'react-redux';
 import Helmet from 'react-helmet';
 import { PullToRefresh, B, P } from 'mcs-lite-ui';
+import compose from 'recompose/compose';
+import withGetMessages from '../../utils/withGetMessages';
+import messages from './messages';
 import { actions } from '../../modules/devices';
 import Header from '../../components/Header';
 import { Container } from './styled-components';
@@ -10,12 +13,12 @@ class DeviceDetailInfo extends React.Component {
   state = { isMenuShow: false, target: undefined };
   componentDidMount = () => this.props.fetchDeviceDetail();
   render() {
-    const { device, fetchDeviceDetail, isLoading } = this.props;
+    const { device, fetchDeviceDetail, isLoading, getMessages: t } = this.props;
 
     return (
       <div>
-        <Helmet title="裝置名稱（裝置詳細資料" />
-        <Header title="裝置名稱（裝置詳細資料" backTo={`/devices/${device && device.deviceId}`} />
+        <Helmet title={t('deviceIntro')} />
+        <Header title={t('deviceIntro')} backTo={`/devices/${device && device.deviceId}`} />
         <main>
           <PullToRefresh isLoading={isLoading} onPull={fetchDeviceDetail}>
             <Container>
@@ -56,10 +59,13 @@ class DeviceDetailInfo extends React.Component {
   }
 }
 
-export default connect(
-  ({ devices, ui }, { params: { deviceId }}) => ({
-    device: devices[deviceId],
-    isLoading: ui.isLoading,
-  }),
-  { fetchDeviceDetail: actions.fetchDeviceDetail },
+export default compose(
+  connect(
+    ({ devices, ui }, { params: { deviceId }}) => ({
+      device: devices[deviceId],
+      isLoading: ui.isLoading,
+    }),
+    { fetchDeviceDetail: actions.fetchDeviceDetail },
+  ),
+  withGetMessages(messages, 'DeviceDetailInfo'),
 )(DeviceDetailInfo);

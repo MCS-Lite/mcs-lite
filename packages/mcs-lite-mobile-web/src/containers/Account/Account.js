@@ -2,30 +2,36 @@ import React from 'react';
 import { Heading } from 'mcs-lite-ui';
 import { connect } from 'react-redux';
 import Helmet from 'react-helmet';
+import compose from 'recompose/compose';
+import withGetMessages from '../../utils/withGetMessages';
+import messages from './messages';
 import { actions } from '../../modules/auth';
 import StyledLink from '../../components/StyledLink';
 import { Container, Body, StyledLogo, Footer, FlatButton } from './styled-components';
 
-const Account = ({ username, signout }) =>
+const Account = ({ username, signout, getMessages: t }) =>
   <Container>
-    <Helmet title="帳戶" />
+    <Helmet title={t('account')} />
     <Body>
       <StyledLogo />
       <Heading level={4}>{username}</Heading>
-      <Heading level={4}>你好</Heading>
+      <Heading level={4}>{t('hello')}</Heading>
     </Body>
     <Footer>
       <StyledLink to="/devices">
-        <FlatButton block>我的裝置</FlatButton>
+        <FlatButton block>{t('myTestDevices')}</FlatButton>
       </StyledLink>
       <StyledLink to="/password">
-        <FlatButton block>更改密碼</FlatButton>
+        <FlatButton block>{t('changePassword')}</FlatButton>
       </StyledLink>
-      <FlatButton block onClick={signout}>登出</FlatButton>
+      <FlatButton block onClick={signout}>{t('signout')}</FlatButton>
     </Footer>
   </Container>;
 
-export default connect(
-  ({ auth }) => ({ username: auth.username }),
-  { signout: actions.signout },
+export default compose(
+  connect(
+    ({ auth }) => ({ username: auth.username }),
+    { signout: actions.signout },
+  ),
+  withGetMessages(messages, 'Account'),
 )(Account);

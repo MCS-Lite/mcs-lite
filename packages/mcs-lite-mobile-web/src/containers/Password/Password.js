@@ -21,45 +21,45 @@ class Password extends React.Component {
   render() {
     const { old, new1, new2 } = this.state;
     const { onChange, onSubmit } = this;
-    const { getMessages } = this.props;
+    const { getMessages: t } = this.props;
 
     return (
       <div>
-        <Helmet title={getMessages('Password.changePassword')} />
-        <Header title={getMessages('Password.changePassword')} />
+        <Helmet title={t('changePassword')} />
+        <Header title={t('changePassword')} />
 
         <form onSubmit={onSubmit}>
           <main>
             <Container>
               <div>
-                <Label htmlFor="old">{getMessages('Password.enterOldPassword')}</Label>
+                <Label htmlFor="old">{t('enterOldPassword')}</Label>
                 <Input
                   id="old"
                   value={old}
                   onChange={onChange}
-                  placeholder={getMessages('Password.enterOldPassword')}
+                  placeholder={t('enterOldPassword')}
                   type="password"
                   required
                 />
               </div>
               <div>
-                <Label htmlFor="new1">{getMessages('Password.enterNewPassword')}</Label>
+                <Label htmlFor="new1">{t('enterNewPassword')}</Label>
                 <Input
                   id="new1"
                   value={new1}
                   onChange={onChange}
-                  placeholder={getMessages('Password.enterNewPassword')}
+                  placeholder={t('enterNewPassword')}
                   type="password"
                   required
                 />
               </div>
               <div>
-                <Label htmlFor="new2">{getMessages('Password.enterNewPasswordAgain')}</Label>
+                <Label htmlFor="new2">{t('enterNewPasswordAgain')}</Label>
                 <Input
                   id="new2"
                   value={new2}
                   onChange={onChange}
-                  placeholder={getMessages('Password.enterNewPasswordAgain')}
+                  placeholder={t('enterNewPasswordAgain')}
                   type="password"
                   required
                 />
@@ -70,9 +70,9 @@ class Password extends React.Component {
           <FixedFooter>
             <ButtonWrapper>
               <StyledLink to="/account">
-                <Button kind="default" block>{getMessages('Password.cancel')}</Button>
+                <Button kind="default" block>{t('cancel')}</Button>
               </StyledLink>
-              <Button component="input" type="submit" value={getMessages('Password.save')} block />
+              <Button component="input" type="submit" value={t('save')} block />
             </ButtonWrapper>
           </FixedFooter>
         </form>
@@ -86,5 +86,5 @@ export default compose(
     null,
     { changePassword: actions.changePassword },
   ),
-  withGetMessages(messages),
+  withGetMessages(messages, 'Password'),
 )(Password);
