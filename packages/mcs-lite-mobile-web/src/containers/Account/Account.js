@@ -8,6 +8,7 @@ import messages from './messages';
 import { actions } from '../../modules/auth';
 import StyledLink from '../../components/StyledLink';
 import { Container, Body, StyledLogo, Footer, FlatButton } from './styled-components';
+import updatePathname from '../../utils/updatePathname';
 
 const Account = ({ username, signout, getMessages: t }) =>
   <Container>
@@ -18,10 +19,10 @@ const Account = ({ username, signout, getMessages: t }) =>
       <Heading level={4}>{t('hello')}</Heading>
     </Body>
     <Footer>
-      <StyledLink to="/devices">
+      <StyledLink to={updatePathname('/devices')}>
         <FlatButton block>{t('myTestDevices')}</FlatButton>
       </StyledLink>
-      <StyledLink to="/password">
+      <StyledLink to={updatePathname('/password')}>
         <FlatButton block>{t('changePassword')}</FlatButton>
       </StyledLink>
       <FlatButton block onClick={signout}>{t('signout')}</FlatButton>

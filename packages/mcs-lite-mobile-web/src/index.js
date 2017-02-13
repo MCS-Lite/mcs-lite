@@ -10,7 +10,7 @@ import { Router, Route, browserHistory, IndexRedirect, applyRouterMiddleware } f
 import useScroll from 'react-router-scroll/lib/useScroll';
 import { syncHistoryWithStore } from 'react-router-redux';
 import { ThemeProvider } from 'styled-components';
-import { IntlProvider } from 'react-intl';
+import IntlProvider from './containers/IntlProvider';
 import theme from './utils/theme';
 import Layout from './components/Layout';
 import DeviceList from './containers/DeviceList';
@@ -23,14 +23,15 @@ import Account from './containers/Account';
 import Password from './containers/Password';
 import configureStore from './store/configureStore';
 import './style';
+import './utils/i18n';
 
 const store = configureStore();
 const history = syncHistoryWithStore(browserHistory, store);
 
 ReactDOM.render(
-  <IntlProvider locale="en">
-    <ThemeProvider theme={theme}>
-      <Provider store={store}>
+  <Provider store={store}>
+    <IntlProvider defaultLocale="zh-TW">
+      <ThemeProvider theme={theme}>
         <Router history={history} render={applyRouterMiddleware(useScroll())}>
 
           <Route path="/">
@@ -49,8 +50,8 @@ ReactDOM.render(
             </Route>
           </Route>
         </Router>
-      </Provider>
-    </ThemeProvider>
-  </IntlProvider>,
+      </ThemeProvider>
+    </IntlProvider>
+  </Provider>,
   document.getElementById('root'),
 );

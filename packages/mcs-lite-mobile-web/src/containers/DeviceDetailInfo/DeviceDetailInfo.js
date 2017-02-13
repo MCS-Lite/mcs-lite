@@ -8,6 +8,7 @@ import messages from './messages';
 import { actions } from '../../modules/devices';
 import Header from '../../components/Header';
 import { Container } from './styled-components';
+import updatePathname from '../../utils/updatePathname';
 
 class DeviceDetailInfo extends React.Component {
   state = { isMenuShow: false, target: undefined };
@@ -18,7 +19,7 @@ class DeviceDetailInfo extends React.Component {
     return (
       <div>
         <Helmet title={t('deviceIntro')} />
-        <Header title={t('deviceIntro')} backTo={`/devices/${device && device.deviceId}`} />
+        <Header title={t('deviceIntro')} backTo={updatePathname(`/devices/${device && device.deviceId}`)} />
         <main>
           <PullToRefresh isLoading={isLoading} onPull={fetchDeviceDetail}>
             <Container>

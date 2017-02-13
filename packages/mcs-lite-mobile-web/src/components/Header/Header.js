@@ -5,6 +5,7 @@ import IconBars from 'mcs-lite-icon/lib/IconBars';
 import IconArrowLeft from 'mcs-lite-icon/lib/IconArrowLeft';
 import MaxWidthCenterWrapper from '../MaxWidthCenterWrapper';
 import HeaderIcon from '../HeaderIcon';
+import updatePathname from '../../utils/updatePathname';
 
 export const HEIGHT = '56px;';
 
@@ -66,7 +67,7 @@ const Header = ({ title, backTo, children }) =>
         <Left>
           {backTo
             ? <HeaderIcon to={backTo}><IconArrowLeft /></HeaderIcon>
-            : <HeaderIcon to="/account"><IconBars /></HeaderIcon>
+            : <HeaderIcon to={updatePathname('/account')}><IconBars /></HeaderIcon>
           }
         </Left>
         {title &&

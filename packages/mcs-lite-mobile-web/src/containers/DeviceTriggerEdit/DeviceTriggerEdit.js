@@ -11,6 +11,7 @@ import Header from '../../components/Header';
 import StyledLink from '../../components/StyledLink';
 import FixedFooter from '../../components/FixedFooter';
 import { Item, Body, StyledSamll, ButtonWrapper, ScaledSwitch, StyledHr } from './styled-components';
+import updatePathname from '../../utils/updatePathname';
 
 class DeviceTriggerEdit extends React.Component {
   state = { isChecked: false };
@@ -25,7 +26,7 @@ class DeviceTriggerEdit extends React.Component {
     return (
       <div>
         <Helmet title={t('editTriggerAndAction')} />
-        <Header title={t('editTriggerAndAction')} backTo={`/devices/${device && device.deviceId}/trigger`} />
+        <Header title={t('editTriggerAndAction')} backTo={updatePathname(`/devices/${device && device.deviceId}/trigger`)} />
         <main>
           <Item>
             <P>觸發條件名稱 A觸發條件名稱 A觸發條件名稱 A觸發條件名稱 A觸發條件名稱 A觸發條件名稱 A觸發條件名稱 A</P>
@@ -70,7 +71,7 @@ class DeviceTriggerEdit extends React.Component {
             {isChecked &&
               <FixedFooter>
                 <ButtonWrapper>
-                  <StyledLink to="/account">
+                  <StyledLink to={updatePathname('/account')}>
                     <Button kind="default" block>{t('cancel')}</Button>
                   </StyledLink>
                   <Button component="input" type="submit" value={t('save')} block />
