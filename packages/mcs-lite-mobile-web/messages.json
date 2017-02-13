@@ -1,0 +1,47 @@
+[
+  {
+    "id": "Password.changePassword",
+    "description": "Title",
+    "defaultMessage": "修改密碼"
+  },
+  {
+    "id": "Password.enterOldPassword",
+    "description": "Label and placeholder",
+    "defaultMessage": "請輸入舊密碼"
+  },
+  {
+    "id": "Password.enterNewPassword",
+    "description": "Label and placeholder",
+    "defaultMessage": "請輸入新密碼"
+  },
+  {
+    "id": "Password.enterNewPasswordAgain",
+    "description": "Label and placeholder",
+    "defaultMessage": "再一次輸入新密碼"
+  },
+  {
+    "id": "Password.cancel",
+    "defaultMessage": "取消"
+  },
+  {
+    "id": "Password.save",
+    "defaultMessage": "儲存"
+  },
+  {
+    "id": "Signin.signin",
+    "description": "Document Title",
+    "defaultMessage": "登入"
+  },
+  {
+    "id": "Signin.welcome",
+    "defaultMessage": "歡迎"
+  },
+  {
+    "id": "Signin.account",
+    "defaultMessage": "帳號"
+  },
+  {
+    "id": "Signin.password",
+    "defaultMessage": "密碼"
+  }
+]

@@ -1,0 +1,78 @@
+msgid ""
+msgstr ""
+"POT-Creation-Date: 2017-02-13T01:13:40.857Z\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"MIME-Version: 1.0\n"
+"X-Generator: react-intl-po\n"
+
+
+#: ./messages.json
+#. [Password.changePassword] - Title
+#. defaultMessage is:
+#. 修改密碼
+msgid "修改密碼"
+msgstr ""
+
+#: ./messages.json
+#. [Password.save]
+#. defaultMessage is:
+#. 儲存
+msgid "儲存"
+msgstr ""
+
+#: ./messages.json
+#. [Password.enterNewPasswordAgain] - Label and placeholder
+#. defaultMessage is:
+#. 再一次輸入新密碼
+msgid "再一次輸入新密碼"
+msgstr ""
+
+#: ./messages.json
+#. [Password.cancel]
+#. defaultMessage is:
+#. 取消
+msgid "取消"
+msgstr ""
+
+#: ./messages.json
+#. [Signin.password]
+#. defaultMessage is:
+#. 密碼
+msgid "密碼"
+msgstr ""
+
+#: ./messages.json
+#. [Signin.account]
+#. defaultMessage is:
+#. 帳號
+msgid "帳號"
+msgstr ""
+
+#: ./messages.json
+#. [Signin.welcome]
+#. defaultMessage is:
+#. 歡迎
+msgid "歡迎"
+msgstr ""
+
+#: ./messages.json
+#. [Signin.signin] - Document Title
+#. defaultMessage is:
+#. 登入
+msgid "登入"
+msgstr ""
+
+#: ./messages.json
+#. [Password.enterNewPassword] - Label and placeholder
+#. defaultMessage is:
+#. 請輸入新密碼
+msgid "請輸入新密碼"
+msgstr ""
+
+#: ./messages.json
+#. [Password.enterOldPassword] - Label and placeholder
+#. defaultMessage is:
+#. 請輸入舊密碼
+msgid "請輸入舊密碼"
+msgstr ""

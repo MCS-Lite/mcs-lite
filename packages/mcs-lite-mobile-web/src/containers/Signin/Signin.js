@@ -2,6 +2,9 @@ import React from 'react';
 import { Button, Input } from 'mcs-lite-ui';
 import { connect } from 'react-redux';
 import Helmet from 'react-helmet';
+import compose from 'recompose/compose';
+import withGetMessages from '../../utils/withGetMessages';
+import messages from './messages';
 import { actions } from '../../modules/auth';
 import Logo from '../../components/Logo';
 import { StyledHr, Layout, Form } from './styled-components';
@@ -17,25 +20,48 @@ class Signin extends React.Component {
   render() {
     const { account, password } = this.state;
     const { onChange, onSubmit } = this;
+    const { getMessages } = this.props;
 
     return (
       <Layout>
-        <Helmet title="Signin" />
+        <Helmet title={getMessages('Signin.signin')} />
 
         <Logo />
-        <StyledHr>歡迎</StyledHr>
+        <StyledHr>{getMessages('Signin.welcome')}</StyledHr>
 
         <Form onSubmit={onSubmit}>
-          <Input type="email" name="account" placeholder="帳號" value={account} onChange={onChange} required />
-          <Input type="password" name="password" placeholder="密碼" value={password} onChange={onChange} required />
-          <Button component="input" type="submit" value="登入" block />
+          <Input
+            type="email"
+            name="account"
+            placeholder={getMessages('Signin.account')}
+            value={account}
+            onChange={onChange}
+            required
+          />
+          <Input
+            type="password"
+            name="password"
+            placeholder={getMessages('Signin.password')}
+            value={password}
+            onChange={onChange}
+            required
+          />
+          <Button
+            component="input"
+            type="submit"
+            value={getMessages('Signin.signin')}
+            block
+          />
         </Form>
       </Layout>
     );
   }
 }
 
-export default connect(
-  null,
-  { signin: actions.signin },
+export default compose(
+  connect(
+    null,
+    { signin: actions.signin },
+  ),
+  withGetMessages(messages),
 )(Signin);

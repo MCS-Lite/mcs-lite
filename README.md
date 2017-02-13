@@ -21,6 +21,7 @@
 | `mcs-lite-scripts`          | Shared scripts                              |
 | `mcs-lite-theme`            | Defined `Theme` object and color helpers.   |
 | `mcs-lite-ui`               | MCS Lite common UI and storybook demo page. |
+| `react-intl-cra`            | Run `babel-plugin-react-intl` for CRA.      |
 | `stylelint-config-mcs-lite` | CSS coding style                            |
 
 ## Install
