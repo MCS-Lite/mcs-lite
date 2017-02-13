@@ -19,5 +19,8 @@
     "lerna": "2.0.0-beta.37",
     "npm-check-updates": "^2.10.2",
     "stylelint": "^7.8.0"
+  },
+  "stylelint": {
+    "extends": "./packages/stylelint-config-mcs-lite/index.js"
   }
 }
