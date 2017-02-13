@@ -82,6 +82,7 @@ $ npm run test:watch
 | `mcs-lite-scripts`          |       |      |       |       |               |
 | `mcs-lite-theme`            | V     |      |       | V     |               |
 | `mcs-lite-ui`               | V     | V    | V     | V     | V (flow)      |
+| `react-intl-cra`            |       |      |       |       |               |
 | `stylelint-config-mcs-lite` |       | V    |       |       |               |
 
 ## npm-check-updates
