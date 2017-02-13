@@ -10,6 +10,7 @@ import { actions } from '../../modules/devices';
 import Header from '../../components/Header';
 import StyledLink from '../../components/StyledLink';
 import { Item, StyledSamll, IconWrapper } from './styled-components';
+import updatePathname from '../../utils/updatePathname';
 
 class DeviceTrigger extends React.Component {
   state = { isMenuShow: false, target: undefined };
@@ -20,11 +21,11 @@ class DeviceTrigger extends React.Component {
     return (
       <div>
         <Helmet title={t('triggerAndAction')} />
-        <Header title={t('triggerAndAction')} backTo={`/devices/${device && device.deviceId}`} />
+        <Header title={t('triggerAndAction')} backTo={updatePathname(`/devices/${device && device.deviceId}`)} />
         <main>
           <PullToRefresh isLoading={isLoading} onPull={fetchDeviceDetail}>
             <PreventDrag>
-              <StyledLink to={`/devices/${device && device.deviceId}/trigger/edit`}>
+              <StyledLink to={updatePathname(`/devices/${device && device.deviceId}/trigger/edit`)}>
                 <Item>
                   <div>
                     <P>觸發條件名稱 A</P>
@@ -34,7 +35,7 @@ class DeviceTrigger extends React.Component {
                 </Item>
               </StyledLink>
 
-              <StyledLink to={`/devices/${device && device.deviceId}/trigger/edit`}>
+              <StyledLink to={updatePathname(`/devices/${device && device.deviceId}/trigger/edit`)}>
                 <Item>
                   <div>
                     <P>觸發條件名稱 A</P>

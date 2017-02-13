@@ -1,5 +1,5 @@
 import { Observable } from 'rxjs/Observable';
-import { push } from 'react-router-redux';
+import { actions as routingActions } from './routing';
 import { actions as devicesActions } from './devices';
 
 // ----------------------------------------------------------------------------
@@ -47,7 +47,7 @@ const signinEpic = action$ =>
     }))
     .switchMap(userInfo => Observable.merge(
       Observable.of(setUserInfo(userInfo)),
-      Observable.of(push('/devices')),
+      Observable.of(routingActions.pushPathname('/devices')),
     ));
 
 const signoutEpic = action$ =>
@@ -56,7 +56,7 @@ const signoutEpic = action$ =>
     .switchMap(() => Observable.merge(
       Observable.of(clear()),
       Observable.of(devicesActions.clear()),
-      Observable.of(push('/')),
+      Observable.of(routingActions.pushPathname('/')),
     ));
 
 const changePasswordEpic = action$ =>

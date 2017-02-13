@@ -10,6 +10,7 @@ import Header from '../../components/Header';
 import StyledLink from '../../components/StyledLink';
 import FixedFooter from '../../components/FixedFooter';
 import { Container, Label, ButtonWrapper } from './styled-components';
+import updatePathname from '../../utils/updatePathname';
 
 class Password extends React.Component {
   state = { old: '', new1: '', new2: '' };
@@ -69,7 +70,7 @@ class Password extends React.Component {
 
           <FixedFooter>
             <ButtonWrapper>
-              <StyledLink to="/account">
+              <StyledLink to={updatePathname('/account')}>
                 <Button kind="default" block>{t('cancel')}</Button>
               </StyledLink>
               <Button component="input" type="submit" value={t('save')} block />

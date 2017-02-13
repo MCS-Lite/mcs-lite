@@ -4,6 +4,7 @@ import Transition from 'react-motion-ui-pack';
 import IconTimes from 'mcs-lite-icon/lib/IconTimes';
 import MaxWidthCenterWrapper from '../MaxWidthCenterWrapper';
 import StyledLink from '../StyledLink';
+import updatePathname from '../../utils/updatePathname';
 
 const Container = styled(MaxWidthCenterWrapper)`
   height: 100%;
@@ -37,7 +38,7 @@ const LayoutDialog = ({ children }) =>
   >
     <Container key="layoutDialog">
       <Header>
-        <StyledLink to="/devices"><IconTimes /></StyledLink>
+        <StyledLink to={updatePathname('/devices')}><IconTimes /></StyledLink>
       </Header>
       <Main>{children}</Main>
     </Container>

@@ -12,6 +12,7 @@ import Header from '../../components/Header';
 import HeaderIcon from '../../components/HeaderIcon';
 import StyledLink from '../../components/StyledLink';
 import { Container, StyledImg, CardWrapper } from './styled-components';
+import updatePathname from '../../utils/updatePathname';
 
 const PWM = () => {
   const PWMContainer = styled.div`
@@ -61,7 +62,7 @@ class DeviceDetail extends React.Component {
     return (
       <div>
         <Helmet title="範例 A 的測試裝置" />
-        <Header title="範例 A 的測試裝置" backTo="/devices">
+        <Header title="範例 A 的測試裝置" backTo={updatePathname('/devices')}>
           <HeaderIcon ref={getTarget} onClick={onMoreDetailClick}>
             <IconEllipsisV />
           </HeaderIcon>
@@ -73,10 +74,10 @@ class DeviceDetail extends React.Component {
                 alignConfig={{ points: ['tr', 'bc'], offset: [20, -20]}}
               >
                 <Menu.Menu key="menu">
-                  <StyledLink to={`/devices/${device.deviceId}/info`}>
+                  <StyledLink to={updatePathname(`/devices/${device.deviceId}/info`)}>
                     <Menu.MenuItem>{t('deviceIntro')}</Menu.MenuItem>
                   </StyledLink>
-                  <StyledLink to={`/devices/${device.deviceId}/trigger`}>
+                  <StyledLink to={updatePathname(`/devices/${device.deviceId}/trigger`)}>
                     <Menu.MenuItem>{t('triggerAndAction')}</Menu.MenuItem>
                   </StyledLink>
                 </Menu.Menu>

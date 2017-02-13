@@ -14,6 +14,7 @@ import DeviceCard from '../../components/DeviceCard';
 import Header from '../../components/Header/Header';
 import StyledLink from '../../components/StyledLink';
 import { Container, CardWrapper, StyledHeaderIcon, PlaceholdWrapper } from './styled-components';
+import updatePathname from '../../utils/updatePathname';
 
 class DeviceList extends React.Component {
   state = { isFilterOpen: false, filterValue: '' };
@@ -73,7 +74,7 @@ class DeviceList extends React.Component {
                 >
                   {
                     devices.filter(includeDeviceName).map(device => (
-                      <StyledLink key={device.deviceId} to={`/devices/${device.deviceId}`}>
+                      <StyledLink key={device.deviceId} to={updatePathname(`/devices/${device.deviceId}`)}>
                         <DeviceCard
                           title={device.name}
                           image={device.deviceImageURL}
