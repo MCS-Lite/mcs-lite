@@ -1,13 +1,16 @@
 /* eslint no-console:0 */
 
 import fs from 'fs';
-import path from 'path';
+import R from 'ramda';
 import glob from 'glob';
+import path from 'path';
 import Rx from 'rxjs/Rx';
-import { compile } from './utils';
+import * as babel from 'babel-core';
 
 const srcPattern = process.argv[2];
 const desPath = process.argv[3];
+
+process.env.NODE_ENV = 'production'; // for babel
 
 // --- /src/a.js --- /src/b.js --- ...
 const srcPath$ = Rx.Observable
@@ -20,7 +23,12 @@ const content$ = srcPath$
 
 // --- [] --- [] --- [{}, {}] --- ...
 const messages$ = content$
-  .map(compile);
+  .map(content => babel.transform(content, {
+    presets: [require.resolve('babel-preset-react-app')],
+    plugins: [require.resolve('babel-plugin-react-intl')],
+    babelrc: false,
+  }))
+  .map(R.path(['metadata', 'react-intl', 'messages']));
 
 // ---------- JSON:[{}, {}] |
 const results$ = messages$

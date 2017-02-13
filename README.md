@@ -18,10 +18,10 @@
 | `mcs-lite-design`           | The source files to be compressed.          |
 | `mcs-lite-icon`             | Convert svg to react components.            |
 | `mcs-lite-mobile-web`       | MCS Lite mobile website project.            |
-| `mcs-lite-scripts`          | Shared scripts                              |
+| `mcs-lite-scripts`          | Shared scripts and some CLI `bin` files.    |
 | `mcs-lite-theme`            | Defined `Theme` object and color helpers.   |
 | `mcs-lite-ui`               | MCS Lite common UI and storybook demo page. |
-| `react-intl-cra`            | Run `babel-plugin-react-intl` for CRA.      |
+| `react-intl-cra`            | Alias for `extract-messages`.               |
 | `stylelint-config-mcs-lite` | CSS coding style                            |
 
 ## Install
@@ -79,7 +79,7 @@ $ npm run test:watch
 | `mcs-lite-design`           | V     |      |       | V     |               |
 | `mcs-lite-icon`             | V     |      |       | V     |               |
 | `mcs-lite-mobile-web`       | V     | V    | V     | V     |               |
-| `mcs-lite-scripts`          |       |      |       |       |               |
+| `mcs-lite-scripts`          | V     |      |       | V     |               |
 | `mcs-lite-theme`            | V     |      |       | V     |               |
 | `mcs-lite-ui`               | V     | V    | V     | V     | V (flow)      |
 | `react-intl-cra`            |       |      |       |       |               |
