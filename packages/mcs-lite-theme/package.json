@@ -16,5 +16,8 @@
   },
   "dependencies": {
     "d3-color": "^1.0.2"
+  },
+  "babel": {
+    "presets": ["mcs-lite"]
   }
 }

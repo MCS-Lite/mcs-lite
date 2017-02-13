@@ -14,9 +14,6 @@
     "prebuild": "npm run clean",
     "build": "NODE_ENV='production' babel src --out-dir lib"
   },
-  "babel": {
-    "presets": ["mcs-lite"]
-  },
   "dependencies": {
     "babel-core": "^6.22.1",
     "babel-plugin-react-intl": "^2.3.1",
@@ -31,5 +28,8 @@
   },
   "devDependencies": {
     "babel-cli": "^6.22.2"
+  },
+  "babel": {
+    "presets": ["mcs-lite"]
   }
 }
