@@ -6,6 +6,9 @@ import Helmet from 'react-helmet';
 import Transition from 'react-motion-ui-pack';
 import { PullToRefresh, PreventDrag, Input, ClickOutside } from 'mcs-lite-ui';
 import IconSearch from 'mcs-lite-icon/lib/IconSearch';
+import compose from 'recompose/compose';
+import withGetMessages from '../../utils/withGetMessages';
+import messages from './messages';
 import { actions } from '../../modules/devices';
 import DeviceCard from '../../components/DeviceCard';
 import Header from '../../components/Header/Header';
@@ -26,7 +29,7 @@ class DeviceList extends React.Component {
   includeDeviceName = device => device.name.includes(this.state.filterValue);
   render() {
     const { isFilterOpen, filterValue } = this.state;
-    const { fetchDeviceList, devices, isLoading } = this.props;
+    const { fetchDeviceList, devices, isLoading, getMessages: t } = this.props;
     const {
       onFilterChange, onClickOutside, onFilterClick,
       includeDeviceName, getInput,
@@ -34,8 +37,8 @@ class DeviceList extends React.Component {
 
     return (
       <div>
-        <Helmet title="我的測試裝置" />
-        <Header title={!isFilterOpen && '我的裝置列表很長很長很長很長很長很長很長很長很長很長很長很長很長'}>
+        <Helmet title={t('myTestDevices')} />
+        <Header title={!isFilterOpen && t('myTestDevices')}>
           {isFilterOpen &&
             <Transition
               component={false}
@@ -46,7 +49,7 @@ class DeviceList extends React.Component {
                 ref={getInput}
                 autoFocus
                 key="filter"
-                placeholder="搜尋"
+                placeholder={t('search')}
                 value={filterValue}
                 onChange={onFilterChange}
               />
@@ -81,9 +84,7 @@ class DeviceList extends React.Component {
                 </Transition>
               </PreventDrag>
 
-              {R.isEmpty(devices) &&
-                <PlaceholdWrapper>目前還沒有任何測試裝置</PlaceholdWrapper>
-              }
+              {R.isEmpty(devices) && <PlaceholdWrapper>{t('noDevice')}</PlaceholdWrapper>}
             </Container>
           </PullToRefresh>
         </main>
@@ -92,10 +93,13 @@ class DeviceList extends React.Component {
   }
 }
 
-export default connect(
-  ({ devices, ui }) => ({
-    devices: R.values(devices),
-    isLoading: ui.isLoading,
-  }),
-  { fetchDeviceList: actions.fetchDeviceList },
+export default compose(
+  connect(
+    ({ devices, ui }) => ({
+      devices: R.values(devices),
+      isLoading: ui.isLoading,
+    }),
+    { fetchDeviceList: actions.fetchDeviceList },
+  ),
+  withGetMessages(messages, 'DeviceList'),
 )(DeviceList);

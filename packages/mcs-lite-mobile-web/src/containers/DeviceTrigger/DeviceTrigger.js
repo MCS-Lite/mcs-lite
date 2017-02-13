@@ -3,6 +3,9 @@ import { connect } from 'react-redux';
 import Helmet from 'react-helmet';
 import IconAngleRight from 'mcs-lite-icon/lib/IconAngleRight';
 import { PreventDrag, PullToRefresh, P } from 'mcs-lite-ui';
+import compose from 'recompose/compose';
+import withGetMessages from '../../utils/withGetMessages';
+import messages from './messages';
 import { actions } from '../../modules/devices';
 import Header from '../../components/Header';
 import StyledLink from '../../components/StyledLink';
@@ -12,12 +15,12 @@ class DeviceTrigger extends React.Component {
   state = { isMenuShow: false, target: undefined };
   componentDidMount = () => this.props.fetchDeviceDetail();
   render() {
-    const { device, isLoading, fetchDeviceDetail } = this.props;
+    const { device, isLoading, fetchDeviceDetail, getMessages: t } = this.props;
 
     return (
       <div>
-        <Helmet title="觸發條件與動作" />
-        <Header title="觸發條件與動作" backTo={`/devices/${device && device.deviceId}`} />
+        <Helmet title={t('triggerAndAction')} />
+        <Header title={t('triggerAndAction')} backTo={`/devices/${device && device.deviceId}`} />
         <main>
           <PullToRefresh isLoading={isLoading} onPull={fetchDeviceDetail}>
             <PreventDrag>
@@ -25,7 +28,7 @@ class DeviceTrigger extends React.Component {
                 <Item>
                   <div>
                     <P>觸發條件名稱 A</P>
-                    <StyledSamll>ON</StyledSamll>
+                    <StyledSamll>{t('on')}</StyledSamll>
                   </div>
                   <IconWrapper><IconAngleRight /></IconWrapper>
                 </Item>
@@ -35,7 +38,7 @@ class DeviceTrigger extends React.Component {
                 <Item>
                   <div>
                     <P>觸發條件名稱 A</P>
-                    <StyledSamll>ON</StyledSamll>
+                    <StyledSamll>{t('off')}</StyledSamll>
                   </div>
                   <IconWrapper><IconAngleRight /></IconWrapper>
                 </Item>
@@ -48,10 +51,13 @@ class DeviceTrigger extends React.Component {
   }
 }
 
-export default connect(
-  ({ devices, ui }, { params: { deviceId }}) => ({
-    device: devices[deviceId],
-    isLoading: ui.isLoading,
-  }),
-  { fetchDeviceDetail: actions.fetchDeviceDetail },
+export default compose(
+  connect(
+    ({ devices, ui }, { params: { deviceId }}) => ({
+      device: devices[deviceId],
+      isLoading: ui.isLoading,
+    }),
+    { fetchDeviceDetail: actions.fetchDeviceDetail },
+  ),
+  withGetMessages(messages, 'DeviceTrigger'),
 )(DeviceTrigger);

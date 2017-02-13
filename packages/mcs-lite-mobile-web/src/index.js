@@ -10,6 +10,7 @@ import { Router, Route, browserHistory, IndexRedirect, applyRouterMiddleware } f
 import useScroll from 'react-router-scroll/lib/useScroll';
 import { syncHistoryWithStore } from 'react-router-redux';
 import { ThemeProvider } from 'styled-components';
+import { IntlProvider } from 'react-intl';
 import theme from './utils/theme';
 import Layout from './components/Layout';
 import DeviceList from './containers/DeviceList';
@@ -27,27 +28,29 @@ const store = configureStore();
 const history = syncHistoryWithStore(browserHistory, store);
 
 ReactDOM.render(
-  <ThemeProvider theme={theme}>
-    <Provider store={store}>
-      <Router history={history} render={applyRouterMiddleware(useScroll())}>
+  <IntlProvider locale="en">
+    <ThemeProvider theme={theme}>
+      <Provider store={store}>
+        <Router history={history} render={applyRouterMiddleware(useScroll())}>
 
-        <Route path="/">
-          <IndexRedirect to="/signin" />
-          <Route path="/signin" component={Signin} />
-          <Route component={Layout.LayoutDefault}>
-            <Route path="/password" component={Password} />
-            <Route path="/devices" component={DeviceList} />
-            <Route path="/devices/:deviceId" component={DeviceDetail} />
-            <Route path="/devices/:deviceId/info" component={DeviceDetailInfo} />
-            <Route path="/devices/:deviceId/trigger" component={DeviceTrigger} />
-            <Route path="/devices/:deviceId/trigger/edit" component={DeviceTriggerEdit} />
+          <Route path="/">
+            <IndexRedirect to="/signin" />
+            <Route path="/signin" component={Signin} />
+            <Route component={Layout.LayoutDefault}>
+              <Route path="/password" component={Password} />
+              <Route path="/devices" component={DeviceList} />
+              <Route path="/devices/:deviceId" component={DeviceDetail} />
+              <Route path="/devices/:deviceId/info" component={DeviceDetailInfo} />
+              <Route path="/devices/:deviceId/trigger" component={DeviceTrigger} />
+              <Route path="/devices/:deviceId/trigger/edit" component={DeviceTriggerEdit} />
+            </Route>
+            <Route component={Layout.LayoutDialog}>
+              <Route path="/account" component={Account} />
+            </Route>
           </Route>
-          <Route component={Layout.LayoutDialog}>
-            <Route path="/account" component={Account} />
-          </Route>
-        </Route>
-      </Router>
-    </Provider>
-  </ThemeProvider>,
+        </Router>
+      </Provider>
+    </ThemeProvider>
+  </IntlProvider>,
   document.getElementById('root'),
 );
