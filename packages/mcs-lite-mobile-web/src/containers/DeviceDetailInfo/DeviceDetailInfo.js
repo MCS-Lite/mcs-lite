@@ -12,16 +12,18 @@ import updatePathname from '../../utils/updatePathname';
 
 class DeviceDetailInfo extends React.Component {
   state = { isMenuShow: false, target: undefined };
-  componentDidMount = () => this.props.fetchDeviceDetail(this.props.deviceId);
+  componentDidMount = () => this.fetch();
+  fetch = () => this.props.fetchDeviceDetail(this.props.deviceId);
   render() {
-    const { device, fetchDeviceDetail, isLoading, getMessages: t } = this.props;
+    const { device, isLoading, getMessages: t } = this.props;
+    const { fetch } = this;
 
     return (
       <div>
         <Helmet title={t('deviceIntro')} />
         <Header title={t('deviceIntro')} backTo={updatePathname(`/devices/${device && device.deviceId}`)} />
         <main>
-          <PullToRefresh isLoading={isLoading} onPull={fetchDeviceDetail}>
+          <PullToRefresh isLoading={isLoading} onPull={fetch}>
             <Container>
               <div>
                 <B>裝置名稱</B>

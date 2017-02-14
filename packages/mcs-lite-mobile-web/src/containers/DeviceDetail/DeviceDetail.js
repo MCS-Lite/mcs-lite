@@ -51,14 +51,15 @@ const PWM = () => {
 
 class DeviceDetail extends React.Component {
   state = { isMenuShow: false, target: undefined };
-  componentDidMount = () => this.props.fetchDeviceDetail(this.props.deviceId);
+  componentDidMount = () => this.fetch();
   onMoreDetailClick = () => this.setState({ isMenuShow: !this.state.isMenuShow });
   onHide = () => this.setState({ isMenuShow: false });
   getTarget = node => this.setState({ target: node });
+  fetch = () => this.props.fetchDeviceDetail(this.props.deviceId);
   render() {
     const { isMenuShow, target } = this.state;
-    const { device, isLoading, fetchDeviceDetail, getMessages: t } = this.props;
-    const { getTarget, onMoreDetailClick, onHide } = this;
+    const { device, isLoading, getMessages: t } = this.props;
+    const { getTarget, onMoreDetailClick, onHide, fetch } = this;
     return (
       <div>
         <Helmet title="範例 A 的測試裝置" />
@@ -86,7 +87,7 @@ class DeviceDetail extends React.Component {
           }
         </Header>
         <main>
-          <PullToRefresh isLoading={isLoading} onPull={fetchDeviceDetail}>
+          <PullToRefresh isLoading={isLoading} onPull={fetch}>
             <div>
               <StyledImg src="https://img.mediatek.com/600/mtk.linkit/productBanner.png" />
 

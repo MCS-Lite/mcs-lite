@@ -1,0 +1,30 @@
+{
+  "name": "mcs-lite-fetch-rx",
+  "version": "0.0.0",
+  "description": "",
+  "main": "lib/index.js",
+  "scripts": {
+    "clean": "rm -rf lib",
+    "prebuild": "npm run clean",
+    "build": "NODE_ENV='production' babel src --out-dir lib",
+    "createEntryFile": "exports-all 'lib/*.js' 'lib/index.js'",
+    "postbuild": "npm run createEntryFile"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "http-client": "^4.3.1"
+  },
+  "peerDependencies": {
+    "rxjs": "^5.1.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.22.2",
+    "babel-preset-mcs-lite": "^0.0.0",
+    "mcs-lite-scripts": "^0.0.0",
+    "rxjs": "^5.1.0"
+  },
+  "babel": {
+    "presets": ["mcs-lite"]
+  }
+}

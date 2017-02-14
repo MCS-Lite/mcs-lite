@@ -1,6 +1,6 @@
 import { Observable } from 'rxjs/Observable';
+import * as fetchRx from 'mcs-lite-fetch-rx';
 import { actions as uiActions } from './ui';
-import fetchRx from './fetch-rx';
 
 // ----------------------------------------------------------------------------
 // 1. Constants
@@ -34,31 +34,30 @@ export const actions = {
 // 3. Epic (Async, side effect)
 // ----------------------------------------------------------------------------
 
-
 /**
- * accessTokenAccessable
+ * tokenAvailable - require access_token
  * @return {Observable} original action$
  *
  * @author Michael Hsu
  */
-const accessTokenAccessable = (action$, store) => {
-  // Hint: require access_token
-  const { auth } = store.getState();
-  if (auth.access_token) return Observable.of(action$);
+const tokenAvailable = (action$, store) => () => {
+  const duration$ = store.getState().auth.access_token
+    ? Observable.of(true)
+    : action$.ofType(require('./auth').SET_USERINFO);
 
-  return action$
-    .ofType(require('./auth').SET_USERINFO)
-    .mapTo(action$);
+  return duration$.mapTo(action$);
 };
 
 const fetchDeviceListEpic = (action$, store) =>
   action$.ofType(FETCH_DEVICE_LIST)
-    .delayWhen(() => accessTokenAccessable(action$, store))
+    .delayWhen(tokenAvailable(action$, store))
     .map(() => store.getState())
     .pluck('auth', 'access_token')
     .mergeMap(accessToken => Observable.merge(
       Observable.of(uiActions.setLoading()),
-      fetchRx.fetchDeviceList(accessToken).map(setDeviceList),
+      Observable
+        .from(fetchRx.fetchDeviceList(accessToken))
+        .map(setDeviceList),
     ));
 
 const setDeviceListEpic = action$ =>
@@ -67,12 +66,12 @@ const setDeviceListEpic = action$ =>
 
 const fetchDeviceDetailEpic = (action$, store) =>
   action$.ofType(FETCH_DEVICE_DETAIL)
-    .delayWhen(() => accessTokenAccessable(action$, store))
+    .delayWhen(tokenAvailable(action$, store))
     .pluck('payload')
     .mergeMap(deviceId => Observable.merge(
       Observable.of(uiActions.setLoading()),
-      fetchRx
-        .fetchDeviceDetail({ deviceId }, store.getState().auth.access_token)
+      Observable
+        .from(fetchRx.fetchDeviceDetail({ deviceId }, store.getState().auth.access_token))
         .map(setDeviceDetail),
     ));
 

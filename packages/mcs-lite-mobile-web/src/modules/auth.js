@@ -1,8 +1,8 @@
 import { Observable } from 'rxjs/Observable';
+import * as fetchRx from 'mcs-lite-fetch-rx';
 import cookie from 'react-cookie';
 import { actions as routingActions } from './routing';
 import { actions as devicesActions } from './devices';
-import fetchRx from './fetch-rx';
 
 // ----------------------------------------------------------------------------
 // 1. Constants
@@ -41,9 +41,13 @@ const requireAuthEpic = action$ =>
   action$
     .ofType(REQUIRE_AUTH)
     .map(() => cookie.load('token'))
-    .switchMap(fetchRx.fetchUser)
+    .switchMap(cookieToken => Observable.from(fetchRx.fetchUser(cookieToken)))
     .map(setUserInfo)
-    .catch(() => Observable.of(routingActions.pushPathname('/signin')));
+    .catch((data) => {
+      // TODO: toast ?
+      console.error(data); // eslint-disable-line
+      return Observable.of(routingActions.pushPathname('/signin'));
+    });
 
 const signoutEpic = action$ =>
   action$

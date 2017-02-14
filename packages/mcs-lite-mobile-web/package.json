@@ -16,7 +16,7 @@
     "redux-freeze": "^0.1.5"
   },
   "dependencies": {
-    "http-client": "^4.3.1",
+    "mcs-lite-fetch-rx": "^0.0.0",
     "mcs-lite-icon": "^0.0.0",
     "mcs-lite-theme": "^0.0.0",
     "mcs-lite-ui": "^0.0.0",
