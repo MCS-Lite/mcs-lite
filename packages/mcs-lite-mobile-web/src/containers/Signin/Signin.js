@@ -1,5 +1,6 @@
 import React from 'react';
 import { Button, Input } from 'mcs-lite-ui';
+import { Signin as SIGNIN_URL } from 'mcs-lite-fetch-rx';
 import Helmet from 'react-helmet';
 import compose from 'recompose/compose';
 import withGetMessages from '../../utils/withGetMessages';
@@ -22,7 +23,7 @@ class Signin extends React.Component {
         <Logo />
         <StyledHr>{t('welcome')}</StyledHr>
 
-        <Form method="post" action="/oauth/login/mobile">
+        <Form method="post" action={SIGNIN_URL}>
           <Input
             type="email"
             name="email"

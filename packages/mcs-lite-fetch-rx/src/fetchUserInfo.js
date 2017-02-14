@@ -6,8 +6,8 @@ import 'rxjs/add/operator/pluck';
 
 export const URL = '/oauth/cookies/mobile';
 
-const fetchUser = (cookieToken) => {
-  if (!cookieToken) return Observable.throw('[fetchUser] cookieToken is required.');
+const fetchUserInfo = (cookieToken) => {
+  if (!cookieToken) return Observable.throw('[fetchUserInfo] cookieToken is required.');
 
   const fetch = createFetch(
     method('POST'),
@@ -17,8 +17,7 @@ const fetchUser = (cookieToken) => {
 
   return Observable
     .fromPromise(fetch(URL))
-    .pluck('jsonData')
-    .pluck('results');
+    .pluck('jsonData', 'results');
 };
 
-export default fetchUser;
+export default fetchUserInfo;

@@ -41,7 +41,7 @@ const requireAuthEpic = action$ =>
   action$
     .ofType(REQUIRE_AUTH)
     .map(() => cookie.load('token'))
-    .switchMap(cookieToken => Observable.from(fetchRx.fetchUser(cookieToken)))
+    .switchMap(cookieToken => Observable.from(fetchRx.fetchUserInfo(cookieToken)))
     .map(setUserInfo)
     .catch((data) => {
       // TODO: toast ?

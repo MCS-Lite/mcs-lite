@@ -6,6 +6,7 @@ Object {
 
 exports[`devices should return fetchDeviceDetail actions 1`] = `
 Object {
+  "payload": "deviceId",
   "type": "mcs-lite-mobile-web/devices/FETCH_DEVICE_DETAIL",
 }
 `;
