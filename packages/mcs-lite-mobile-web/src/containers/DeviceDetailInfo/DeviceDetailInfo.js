@@ -12,7 +12,7 @@ import updatePathname from '../../utils/updatePathname';
 
 class DeviceDetailInfo extends React.Component {
   state = { isMenuShow: false, target: undefined };
-  componentDidMount = () => this.props.fetchDeviceDetail();
+  componentDidMount = () => this.props.fetchDeviceDetail(this.props.deviceId);
   render() {
     const { device, fetchDeviceDetail, isLoading, getMessages: t } = this.props;
 
@@ -63,6 +63,7 @@ class DeviceDetailInfo extends React.Component {
 export default compose(
   connect(
     ({ devices, ui }, { params: { deviceId }}) => ({
+      deviceId,
       device: devices[deviceId],
       isLoading: ui.isLoading,
     }),

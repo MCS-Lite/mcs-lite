@@ -15,7 +15,7 @@ import updatePathname from '../../utils/updatePathname';
 
 class DeviceTriggerEdit extends React.Component {
   state = { isChecked: false };
-  componentDidMount = () => this.props.fetchDeviceDetail();
+  componentDidMount = () => this.props.fetchDeviceDetail(this.props.deviceId);
   onSwitchClick = () => this.setState({ isChecked: !this.state.isChecked });
   onSubmit = e => e.preventDefault();
   render() {
@@ -88,6 +88,7 @@ class DeviceTriggerEdit extends React.Component {
 export default compose(
   connect(
     ({ devices }, { params: { deviceId }}) => ({
+      deviceId,
       device: devices[deviceId],
     }),
     { fetchDeviceDetail: actions.fetchDeviceDetail },

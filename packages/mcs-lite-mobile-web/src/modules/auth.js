@@ -2,14 +2,12 @@ import { Observable } from 'rxjs/Observable';
 import cookie from 'react-cookie';
 import { actions as routingActions } from './routing';
 import { actions as devicesActions } from './devices';
-// import { actions as uiActions } from './ui';
-import fetchUser from './fetch-rx/fetchUser';
+import fetchRx from './fetch-rx';
 
 // ----------------------------------------------------------------------------
 // 1. Constants
 // ----------------------------------------------------------------------------
 
-// const SIGNIN = 'mcs-lite-mobile-web/auth/SIGNIN';
 const REQUIRE_AUTH = 'mcs-lite-mobile-web/auth/REQUIRE_AUTH';
 const SIGNOUT = 'mcs-lite-mobile-web/auth/SIGNOUT';
 const CHANGE_PASSWORD = 'mcs-lite-mobile-web/auth/CHANGE_PASSWORD';
@@ -20,7 +18,6 @@ const CLEAR = 'mcs-lite-mobile-web/auth/CLEAR';
 // 2. Action Creators (Sync)
 // ----------------------------------------------------------------------------
 
-// const signin = ({ email, password }) => ({ type: SIGNIN, payload: { email, password }});
 const requireAuth = () => ({ type: REQUIRE_AUTH });
 const signout = () => ({ type: SIGNOUT });
 const setUserInfo = payload => ({ type: SET_USERINFO, payload });
@@ -29,7 +26,6 @@ const changePassword = ({ old, new1, new2 }) =>
 const clear = () => ({ type: CLEAR });
 
 export const actions = {
-  // signin,
   requireAuth,
   signout,
   setUserInfo,
@@ -45,9 +41,9 @@ const requireAuthEpic = action$ =>
   action$
     .ofType(REQUIRE_AUTH)
     .map(() => cookie.load('token'))
-    .switchMap(fetchUser)
+    .switchMap(fetchRx.fetchUser)
     .map(setUserInfo)
-    .catch(Observable.of(routingActions.pushPathname('/signin')));
+    .catch(() => Observable.of(routingActions.pushPathname('/signin')));
 
 const signoutEpic = action$ =>
   action$
@@ -56,7 +52,8 @@ const signoutEpic = action$ =>
       Observable.of(routingActions.pushPathname('/')),
       Observable.of(clear()),
       Observable.of(devicesActions.clear()),
-    ));
+    ))
+    .do(() => cookie.remove('token'));
 
 const changePasswordEpic = action$ =>
   action$
@@ -64,16 +61,10 @@ const changePasswordEpic = action$ =>
     .delay(1000)
     .mapTo('success');
 
-const clearEpic = action$ =>
-  action$
-    .ofType(CLEAR)
-    .do(() => cookie.remove('token'));
-
 export const epics = [
   requireAuthEpic,
   signoutEpic,
   changePasswordEpic,
-  clearEpic,
 ];
 
 // ----------------------------------------------------------------------------

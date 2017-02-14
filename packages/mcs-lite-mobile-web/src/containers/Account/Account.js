@@ -10,12 +10,12 @@ import StyledLink from '../../components/StyledLink';
 import { Container, Body, StyledLogo, Footer, FlatButton } from './styled-components';
 import updatePathname from '../../utils/updatePathname';
 
-const Account = ({ username, signout, getMessages: t }) =>
+const Account = ({ userName, signout, getMessages: t }) =>
   <Container>
     <Helmet title={t('account')} />
     <Body>
       <StyledLogo />
-      <Heading level={4}>{username}</Heading>
+      <Heading level={4}>{userName}</Heading>
       <Heading level={4}>{t('hello')}</Heading>
     </Body>
     <Footer>
@@ -31,7 +31,7 @@ const Account = ({ username, signout, getMessages: t }) =>
 
 export default compose(
   connect(
-    ({ auth }) => ({ username: auth.username }),
+    ({ auth }) => ({ userName: auth.userName }),
     { signout: actions.signout },
   ),
   withGetMessages(messages, 'Account'),

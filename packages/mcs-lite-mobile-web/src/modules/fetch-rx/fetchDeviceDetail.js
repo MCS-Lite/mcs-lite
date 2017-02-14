@@ -1,17 +1,17 @@
 import { Observable } from 'rxjs/Observable';
 import { createFetch } from 'http-client';
-import bearer from './utils/bearer';
+import bearer from './stacks/bearer';
 
 export const URL = '/devices';
 
-const fetchUser = (accessToken) => {
+const fetchDeviceDetail = ({ deviceId }, accessToken) => {
   const fetch = createFetch(
     bearer(accessToken),
   );
 
   return Observable
-    .fromPromise(fetch(URL))
+    .fromPromise(fetch(`${URL}/${deviceId}`))
     .pluck('jsonData', 'data');
 };
 
-export default fetchUser;
+export default fetchDeviceDetail;

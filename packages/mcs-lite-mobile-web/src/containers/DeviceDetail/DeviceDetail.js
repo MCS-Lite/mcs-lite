@@ -51,7 +51,7 @@ const PWM = () => {
 
 class DeviceDetail extends React.Component {
   state = { isMenuShow: false, target: undefined };
-  componentDidMount = () => this.props.fetchDeviceDetail();
+  componentDidMount = () => this.props.fetchDeviceDetail(this.props.deviceId);
   onMoreDetailClick = () => this.setState({ isMenuShow: !this.state.isMenuShow });
   onHide = () => this.setState({ isMenuShow: false });
   getTarget = node => this.setState({ target: node });
@@ -191,6 +191,7 @@ class DeviceDetail extends React.Component {
 export default compose(
   connect(
     ({ devices, ui }, { params: { deviceId }}) => ({
+      deviceId,
       device: devices[deviceId],
       isLoading: ui.isLoading,
     }),
