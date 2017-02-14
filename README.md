@@ -16,6 +16,7 @@
 | `eslint-config-mcs-lite`    | JS coding style                             |
 | `mcs-lite-demo-nextjs`      | Demo how to use mcs-lite-ui.                |
 | `mcs-lite-design`           | The source files to be compressed.          |
+| `mcs-lite-fetch-rx`         | The Client api (stream creator).            |
 | `mcs-lite-icon`             | Convert svg to react components.            |
 | `mcs-lite-mobile-web`       | MCS Lite mobile website project.            |
 | `mcs-lite-scripts`          | Shared scripts and some CLI `bin` files.    |
@@ -77,6 +78,7 @@ $ npm run test:watch
 | `eslint-config-mcs-lite`    |       | V    |       |       |               |
 | `mcs-lite-demo-nextjs`      |       |      | V     |       |               |
 | `mcs-lite-design`           | V     |      |       | V     |               |
+| `mcs-lite-fetch-rx`         | V     |      |       | V     |               |
 | `mcs-lite-icon`             | V     |      |       | V     |               |
 | `mcs-lite-mobile-web`       | V     | V    | V     | V     |               |
 | `mcs-lite-scripts`          | V     |      |       | V     |               |
