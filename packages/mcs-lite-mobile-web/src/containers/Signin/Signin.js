@@ -1,25 +1,18 @@
 import React from 'react';
 import { Button, Input } from 'mcs-lite-ui';
-import { connect } from 'react-redux';
 import Helmet from 'react-helmet';
 import compose from 'recompose/compose';
 import withGetMessages from '../../utils/withGetMessages';
 import messages from './messages';
-import { actions } from '../../modules/auth';
 import Logo from '../../components/Logo';
 import { StyledHr, Layout, Form } from './styled-components';
 
 class Signin extends React.Component {
-  state = { account: '', password: '' };
+  state = { email: '', password: '' };
   onChange = e => this.setState({ [e.target.name]: e.target.value });
-  onSubmit = (e) => {
-    const { account, password } = this.state;
-    this.props.signin({ account, password });
-    e.preventDefault();
-  }
   render() {
-    const { account, password } = this.state;
-    const { onChange, onSubmit } = this;
+    const { email, password } = this.state;
+    const { onChange } = this;
     const { getMessages: t } = this.props;
 
     return (
@@ -29,12 +22,12 @@ class Signin extends React.Component {
         <Logo />
         <StyledHr>{t('welcome')}</StyledHr>
 
-        <Form onSubmit={onSubmit}>
+        <Form method="post" action="/oauth/login/mobile">
           <Input
             type="email"
-            name="account"
-            placeholder={t('account')}
-            value={account}
+            name="email"
+            placeholder={t('email')}
+            value={email}
             onChange={onChange}
             required
           />
@@ -54,9 +47,5 @@ class Signin extends React.Component {
 }
 
 export default compose(
-  connect(
-    null,
-    { signin: actions.signin },
-  ),
   withGetMessages(messages, 'Signin'),
 )(Signin);

@@ -2,6 +2,8 @@ import R from 'ramda';
 import { Observable } from 'rxjs/Observable';
 import { actions as uiActions } from './ui';
 import API from './API';
+import fetchDevices from './fetch-rx/fetchDevices';
+// import { SET_USERINFO } from './auth';
 
 // ----------------------------------------------------------------------------
 // 1. Constants
@@ -35,13 +37,21 @@ export const actions = {
 // 3. Epic (Async, side effect)
 // ----------------------------------------------------------------------------
 
-const fetchDeviceListEpic = action$ =>
+const accessTokenAccessable = (action$, store) => {
+  // Hint: require access_token
+  const { auth } = store.getState();
+  if (auth.access_token) return Observable.of(true);
+  return action$.ofType(require('./auth').SET_USERINFO);
+};
+
+const fetchDeviceListEpic = (action$, store) =>
   action$.ofType(FETCH_DEVICE_LIST)
-    .mergeMap(() => Observable.merge(
+    .delayWhen(() => accessTokenAccessable(action$, store))
+    .map(() => store.getState())
+    .pluck('auth', 'access_token')
+    .mergeMap(accessToken => Observable.merge(
       Observable.of(uiActions.setLoading()),
-      Observable.fromPromise(API.fetchDeviceList())
-        .map(R.prop('results'))
-        .map(setDeviceList),
+      fetchDevices(accessToken).map(setDeviceList),
     ));
 
 const setDeviceListEpic = action$ =>

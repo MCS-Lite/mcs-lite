@@ -3,6 +3,7 @@
   "name": "mcs-lite-mobile-web",
   "version": "0.1.0",
   "homepage": ".",
+  "proxy": "http://localhost:3000",
   "devDependencies": {
     "babel-eslint": "^7.1.1",
     "eslint": "^3.15.0",
@@ -15,12 +16,14 @@
     "redux-freeze": "^0.1.5"
   },
   "dependencies": {
+    "http-client": "^4.3.1",
     "mcs-lite-icon": "^0.0.0",
     "mcs-lite-theme": "^0.0.0",
     "mcs-lite-ui": "^0.0.0",
     "normalize.css": "^5.0.0",
     "ramda": "^0.23.0",
     "react": "^15.4.2",
+    "react-cookie": "^1.0.4",
     "react-dom": "^15.4.2",
     "react-helmet": "^4.0.0",
     "react-intl": "^2.2.3",
@@ -39,7 +42,7 @@
   },
   "scripts": {
     "clean": "rm -rf build",
-    "start": "react-scripts start",
+    "start": "PORT='8082' react-scripts start",
     "prebuild": "npm run clean",
     "build": "react-scripts build",
     "test": "CI=true react-scripts test --env=jsdom",
