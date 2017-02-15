@@ -53,11 +53,11 @@ const signoutEpic = action$ =>
   action$
     .ofType(SIGNOUT)
     .switchMap(() => Observable.merge(
-      Observable.of(routingActions.pushPathname('/')),
+      Observable.of(routingActions.pushPathname('/signin')),
       Observable.of(clear()),
       Observable.of(devicesActions.clear()),
     ))
-    .do(() => cookie.remove('token'));
+    .do(() => cookie.remove('token', { path: '/' }));
 
 const changePasswordEpic = action$ =>
   action$
