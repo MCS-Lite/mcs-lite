@@ -5,6 +5,10 @@ describe('auth', () => {
     expect(actions.requireAuth()).toMatchSnapshot();
   });
 
+  it('should return tryEnter actions', () => {
+    expect(actions.tryEnter()).toMatchSnapshot();
+  });
+
   it('should return signout actions', () => {
     expect(actions.signout()).toMatchSnapshot();
   });

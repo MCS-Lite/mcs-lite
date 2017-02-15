@@ -7,8 +7,6 @@
  *
  */
 
-import { API_HOSTNAME } from './stacks/proxy';
-
-const URL = `${API_HOSTNAME}/oauth/login/mobile`;
+const URL = '/oauth/login/mobile';
 
 export default URL;

@@ -9,6 +9,7 @@ import { actions as devicesActions } from './devices';
 // ----------------------------------------------------------------------------
 
 const REQUIRE_AUTH = 'mcs-lite-mobile-web/auth/REQUIRE_AUTH';
+const TRY_ENTER = 'mcs-lite-mobile-web/auth/TRY_ENTER';
 const SIGNOUT = 'mcs-lite-mobile-web/auth/SIGNOUT';
 const CHANGE_PASSWORD = 'mcs-lite-mobile-web/auth/CHANGE_PASSWORD';
 export const SET_USERINFO = 'mcs-lite-mobile-web/auth/SET_USERINFO';
@@ -19,6 +20,7 @@ const CLEAR = 'mcs-lite-mobile-web/auth/CLEAR';
 // ----------------------------------------------------------------------------
 
 const requireAuth = () => ({ type: REQUIRE_AUTH });
+const tryEnter = () => ({ type: TRY_ENTER });
 const signout = () => ({ type: SIGNOUT });
 const setUserInfo = payload => ({ type: SET_USERINFO, payload });
 const changePassword = ({ old, new1, new2 }) =>
@@ -27,6 +29,7 @@ const clear = () => ({ type: CLEAR });
 
 export const actions = {
   requireAuth,
+  tryEnter,
   signout,
   setUserInfo,
   changePassword,
@@ -49,6 +52,13 @@ const requireAuthEpic = action$ =>
       return Observable.of(routingActions.pushPathname('/signin'));
     });
 
+const tryEnterEpic = action$ =>
+  action$
+    .ofType(TRY_ENTER)
+    .map(() => cookie.load('token'))
+    .filter(token => !!token)
+    .map(() => routingActions.pushPathname('/'));
+
 const signoutEpic = action$ =>
   action$
     .ofType(SIGNOUT)
@@ -67,6 +77,7 @@ const changePasswordEpic = action$ =>
 
 export const epics = [
   requireAuthEpic,
+  tryEnterEpic,
   signoutEpic,
   changePasswordEpic,
 ];
