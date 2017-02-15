@@ -330,1252 +330,660 @@ exports[`Storyshots DataChannel ButtonClear 1`] = `
 </div>
 `;
 
-exports[`Storyshots DataChannel ControlRange - Category, GPIO and Analog 1`] = `
+exports[`Storyshots DataChannel ControlNumber 1`] = `
 <div
-  className="bnxHrL">
+  className="kdCvHd">
+  <p
+    className="dFZeAf"
+    color="grayBase">
+    單位：攝氏
+  </p>
+  <input
+    className="jWbJOn"
+    kind="primary"
+    onChange={[Function]}
+    placeholder="placeholder"
+    type="number"
+    value={undefined} />
   <div
-    className="czVqfN">
+    className="kGGPNo">
     <div
-      className="bUqfcz">
+      className="gVViGF"
+      onClick={[Function]}>
       <a
-        href="">
-        Link
+        className="enrdWE"
+        color="primary">
+        <svg
+          fill="currentColor"
+          height="1em"
+          preserveAspectRatio="xMidYMid meet"
+          viewBox="0 0 40 40"
+          width="1em">
+          <path
+            d="M15.9 16.4v12.9q0 .3-.2.5t-.5.2h-1.4q-.3 0-.5-.2t-.2-.5V16.4q0-.3.2-.5t.5-.2h1.4q.3 0 .5.2t.2.5zm5.7 0v12.9q0 .3-.2.5t-.5.2h-1.4q-.3 0-.5-.2t-.2-.5V16.4q0-.3.2-.5t.5-.2h1.4q.3 0 .5.2t.2.5zm5.8 0v12.9q0 .3-.2.5t-.6.2h-1.4q-.3 0-.5-.2t-.2-.5V16.4q0-.3.2-.5t.5-.2h1.4q.4 0 .6.2t.2.5zm2.8 16.2V11.4h-20v21.2q0 .5.2.9t.3.6.2.2h18.6q.1 0 .2-.2t.4-.6.1-.9zm-15-24h10L24.1 6q-.1-.2-.3-.3h-7.1q-.2.1-.4.3zm20.7.7v1.4q0 .3-.2.5t-.5.2h-2.1v21.2q0 1.8-1.1 3.2t-2.5 1.3H10.9q-1.4 0-2.5-1.3t-1-3.1V11.4H5.2q-.3 0-.5-.2t-.2-.5V9.3q0-.3.2-.5t.5-.2h6.9l1.6-3.8q.3-.8 1.2-1.4t1.7-.5h7.2q.9 0 1.8.5t1.2 1.4l1.5 3.8h6.9q.3 0 .5.2t.2.5z" />
+        </svg>
+        Clear
       </a>
     </div>
-    <div
-      className="dvQQLa">
-      <div
-        className="ciDLcE">
-        <div
-          className="hWdvxO">
-          <div
-            className="kRwEkq">
-            <p
-              className="jyQfel"
-              color="grayBase">
-              AAAAAA
-            </p>
-          </div>
-          <div
-            className="kRwEkq">
-            <p
-              className="jyQfel"
-              color="grayBase">
-              BBBBB
-            </p>
-          </div>
-          <div
-            className="kRwEkq">
-            <p
-              className="jyQfel"
-              color="grayBase">
-              CCCCC
-            </p>
-          </div>
-          <div
-            className="kRwEkq">
-            <p
-              className="jyQfel"
-              color="grayBase">
-              DDDDD
-            </p>
-          </div>
-          <div
-            className="kRwEkq">
-            <p
-              className="jyQfel"
-              color="grayBase">
-              EEEEE
-            </p>
-          </div>
-        </div>
-        <div
-          className="dLRXKm">
-          <div
-            className="chvbqM"
-            color="grayBase">
-            Current value: 
-            <p
-              className="eBMqlM"
-              color="primary">
-              DDDDD
-            </p>
-          </div>
-          <input
-            className="hdhnFx"
-            kind="primary"
-            max={4}
-            min={0}
-            onChange={[Function]}
-            step={1}
-            type="range"
-            value={3} />
-        </div>
-      </div>
-    </div>
-    <div>
-      <h4
-        className="glocWb">
-        Category
-      </h4>
-      <small
-        className="jvIFlH">
-        Category
-      </small>
-      <hr
-        className="dPNKKP iAugwC" />
-      <div
-        className="iyRJwF">
-        <MockReactTextTruncate
-          line={2}
-          text="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
-          truncateText=" ..." />
-      </div>
-    </div>
-  </div>
-  <div
-    className="czVqfN">
-    <div
-      className="bUqfcz">
-      <a
-        href="">
-        Link
-      </a>
-    </div>
-    <div
-      className="dvQQLa">
-      <div
-        className="ciDLcE">
-        <div
-          className="hxnWDy">
-          <div
-            className="kRwEkq">
-            <p
-              className="jyQfel"
-              color="grayBase">
-              Low
-            </p>
-          </div>
-          <div
-            className="kRwEkq">
-            <p
-              className="jyQfel"
-              color="grayBase">
-              Heigh
-            </p>
-          </div>
-        </div>
-        <div
-          className="glLEWf">
-          <div
-            className="chvbqM"
-            color="grayBase">
-            Current value: 
-            <p
-              className="eBMqlM"
-              color="primary">
-              Low
-            </p>
-          </div>
-          <input
-            className="hdhnFx"
-            kind="primary"
-            max={1}
-            min={0}
-            onChange={[Function]}
-            step={1}
-            type="range"
-            value={0} />
-        </div>
-      </div>
-    </div>
-    <div>
-      <h4
-        className="glocWb">
-        GPIO
-      </h4>
-      <small
-        className="jvIFlH">
-        123125125125125
-      </small>
-      <hr
-        className="dPNKKP iAugwC" />
-      <div
-        className="iyRJwF">
-        <MockReactTextTruncate
-          line={2}
-          text="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
-          truncateText=" ..." />
-      </div>
-    </div>
-  </div>
-  <div
-    className="czVqfN">
-    <div
-      className="bUqfcz">
-      <a
-        href="">
-        Link
-      </a>
-    </div>
-    <div
-      className="dvQQLa">
-      <div
-        className="ciDLcE">
-        <div
-          className="hxnWDy">
-          <div
-            className="kRwEkq">
-            <div
-              className="jyQfel"
-              color="grayBase">
-              0
-            </div>
-          </div>
-          <div
-            className="kRwEkq">
-            <div
-              className="jyQfel"
-              color="grayBase">
-              100
-            </div>
-          </div>
-        </div>
-        <div
-          className="glLEWf">
-          <div
-            className="chvbqM"
-            color="grayBase">
-            Current value: 
-            <div
-              className="eBMqlM"
-              color="primary">
-              33
-            </div>
-          </div>
-          <input
-            className="hdhnFx"
-            kind="primary"
-            max={100}
-            min={0}
-            onChange={[Function]}
-            step={1}
-            type="range"
-            value={33} />
-        </div>
-      </div>
-    </div>
-    <div>
-      <h4
-        className="glocWb">
-        Analog
-      </h4>
-      <small
-        className="jvIFlH">
-        123125125125125
-      </small>
-      <hr
-        className="dPNKKP iAugwC" />
-      <div
-        className="iyRJwF">
-        <MockReactTextTruncate
-          line={2}
-          text="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
-          truncateText=" ..." />
-      </div>
-    </div>
+    <button
+      className="fqCsyW"
+      onClick={[Function]}>
+      Ok
+    </button>
   </div>
 </div>
 `;
 
-exports[`Storyshots DataChannel ControlRange - PWM 1`] = `
+exports[`Storyshots DataChannel ControlPeriod 1`] = `
 <div
-  className="czVqfN">
+  className="korPeA">
+  <label
+    htmlFor="input">
+    <p
+      className="jyQfel"
+      color="grayBase">
+      Period
+    </p>
+  </label>
   <div
-    className="bUqfcz">
-    <a
-      href="">
-      Link
-    </a>
-  </div>
-  <div
-    className="dvQQLa">
-    <div
-      className="ciDLcE">
-      <div
-        className="hxnWDy">
-        <div
-          className="kRwEkq">
-          <div
-            className="jyQfel"
-            color="grayBase">
-            0
-          </div>
-        </div>
-        <div
-          className="kRwEkq">
-          <div
-            className="jyQfel"
-            color="grayBase">
-            100
-          </div>
-        </div>
-      </div>
-      <div
-        className="glLEWf">
-        <div
-          className="korPeA">
-          <label
-            htmlFor="input">
-            <p
-              className="jyQfel"
-              color="grayBase">
-              Period
-            </p>
-          </label>
-          <div
-            className="fystPB">
-            <input
-              className="cMuAcD"
-              id="input"
-              kind="primary"
-              placeholder="Integer only"
-              type="number" />
-            <button
-              className="fqCsyW">
-              OK
-            </button>
-          </div>
-        </div>
-        <div
-          className="chvbqM"
-          color="grayBase">
-          Current value: 
-          <div
-            className="eBMqlM"
-            color="primary" />
-        </div>
-        <input
-          className="hdhnFx"
-          kind="primary"
-          max={100}
-          min={0}
-          onChange={[Function]}
-          step={1}
-          type="range"
-          value={undefined} />
-      </div>
-    </div>
-  </div>
-  <div>
-    <h4
-      className="glocWb">
-      ControlPWM
-    </h4>
-    <small
-      className="jvIFlH">
-      123125125125125
-    </small>
-    <hr
-      className="dPNKKP iAugwC" />
-    <div
-      className="iyRJwF">
-      <MockReactTextTruncate
-        line={2}
-        text="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
-        truncateText=" ..." />
-    </div>
+    className="fystPB">
+    <input
+      className="cMuAcD"
+      kind="primary"
+      onChange={[Function]}
+      placeholder="placeholder"
+      type="number"
+      value={undefined} />
+    <button
+      className="fqCsyW"
+      onClick={[Function]}>
+      Ok
+    </button>
   </div>
 </div>
 `;
 
 exports[`Storyshots DataChannel ControlRange - Stateful PPAP 1`] = `
 <div
-  className="czVqfN">
+  className="ciDLcE"
+  onChange={[Function]}>
   <div
-    className="bUqfcz">
-    <a
-      href="">
-      Link
-    </a>
-  </div>
-  <div
-    className="dvQQLa">
+    className="hWdvxO">
     <div
-      className="ciDLcE">
-      <div
-        className="hWdvxO">
-        <div
-          className="kRwEkq">
-          <p
-            className="jyQfel"
-            color="grayBase">
-            Apple
-          </p>
-        </div>
-        <div
-          className="kRwEkq">
-          <p
-            className="jyQfel"
-            color="grayBase">
-            Pen
-          </p>
-        </div>
-        <div
-          className="kRwEkq">
-          <p
-            className="jyQfel"
-            color="grayBase">
-            Pineapple
-          </p>
-        </div>
-      </div>
-      <div
-        className="gmgBXP">
-        <div
-          className="chvbqM"
-          color="grayBase">
-          Current value: 
-          <p
-            className="eBMqlM"
-            color="primary">
-            Pineapple
-          </p>
-        </div>
-        <input
-          className="hdhnFx"
-          kind="primary"
-          max={2}
-          min={0}
-          onChange={[Function]}
-          step={1}
-          type="range"
-          value={2} />
-      </div>
+      className="kRwEkq">
+      <p
+        className="jyQfel"
+        color="grayBase">
+        Apple
+      </p>
+    </div>
+    <div
+      className="kRwEkq">
+      <p
+        className="jyQfel"
+        color="grayBase">
+        Pen
+      </p>
+    </div>
+    <div
+      className="kRwEkq">
+      <p
+        className="jyQfel"
+        color="grayBase">
+        Pineapple
+      </p>
     </div>
   </div>
-  <div>
-    <h4
-      className="glocWb">
-      Stateful PPAP
-    </h4>
-    <small
-      className="jvIFlH">
-      123125125125125
-    </small>
-    <hr
-      className="dPNKKP iAugwC" />
+  <div
+    className="gmgBXP">
     <div
-      className="iyRJwF">
-      <MockReactTextTruncate
-        line={2}
-        text="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
-        truncateText=" ..." />
+      className="chvbqM"
+      color="grayBase">
+      Current value: 
+      <p
+        className="eBMqlM"
+        color="primary">
+        Pineapple
+      </p>
     </div>
+    <input
+      className="hdhnFx"
+      kind="primary"
+      max={2}
+      min={0}
+      onChange={undefined}
+      step={1}
+      type="range"
+      value={2} />
   </div>
 </div>
 `;
 
 exports[`Storyshots DataChannel ControlRange - Stateful number 1`] = `
 <div
-  className="czVqfN">
+  className="ciDLcE"
+  onChange={[Function]}>
   <div
-    className="bUqfcz">
-    <a
-      href="">
-      Link
-    </a>
-  </div>
-  <div
-    className="dvQQLa">
+    className="hxnWDy">
     <div
-      className="ciDLcE">
+      className="kRwEkq">
       <div
-        className="hxnWDy">
-        <div
-          className="kRwEkq">
-          <div
-            className="jyQfel"
-            color="grayBase">
-            33
-          </div>
-        </div>
-        <div
-          className="kRwEkq">
-          <div
-            className="jyQfel"
-            color="grayBase">
-            95
-          </div>
-        </div>
+        className="jyQfel"
+        color="grayBase">
+        33
       </div>
+    </div>
+    <div
+      className="kRwEkq">
       <div
-        className="glLEWf">
-        <div
-          className="chvbqM"
-          color="grayBase">
-          Current value: 
-          <div
-            className="eBMqlM"
-            color="primary">
-            88
-          </div>
-        </div>
-        <input
-          className="hdhnFx"
-          kind="primary"
-          max={95}
-          min={33}
-          onChange={[Function]}
-          step={1}
-          type="range"
-          value={88} />
+        className="jyQfel"
+        color="grayBase">
+        95
       </div>
     </div>
   </div>
-  <div>
-    <h4
-      className="glocWb">
-      Stateful number
-    </h4>
-    <small
-      className="jvIFlH">
-      123125125125125
-    </small>
-    <hr
-      className="dPNKKP iAugwC" />
+  <div
+    className="glLEWf">
     <div
-      className="iyRJwF">
-      <MockReactTextTruncate
-        line={2}
-        text="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
-        truncateText=" ..." />
+      className="chvbqM"
+      color="grayBase">
+      Current value: 
+      <div
+        className="eBMqlM"
+        color="primary">
+        88
+      </div>
     </div>
+    <input
+      className="hdhnFx"
+      kind="primary"
+      max={95}
+      min={33}
+      onChange={undefined}
+      step={1}
+      type="range"
+      value={88} />
   </div>
 </div>
 `;
 
-exports[`Storyshots DataChannel DataChannel.ControlNumber 1`] = `
+exports[`Storyshots DataChannel ControlRange 1`] = `
 <div
-  className="czVqfN">
+  className="izFvfQ">
   <div
-    className="bUqfcz">
-    <a
-      href="">
-      Link
-    </a>
-  </div>
-  <div
-    className="dvQQLa">
+    className="ciDLcE">
     <div
-      className="kdCvHd">
+      className="hWdvxO">
       <div
-        className="dFZeAf"
+        className="kRwEkq">
+        <p
+          className="jyQfel"
+          color="grayBase">
+          AAAAAA
+        </p>
+      </div>
+      <div
+        className="kRwEkq">
+        <p
+          className="jyQfel"
+          color="grayBase">
+          BBBBB
+        </p>
+      </div>
+      <div
+        className="kRwEkq">
+        <p
+          className="jyQfel"
+          color="grayBase">
+          CCCCC
+        </p>
+      </div>
+      <div
+        className="kRwEkq">
+        <p
+          className="jyQfel"
+          color="grayBase">
+          DDDDD
+        </p>
+      </div>
+      <div
+        className="kRwEkq">
+        <p
+          className="jyQfel"
+          color="grayBase">
+          EEEEE
+        </p>
+      </div>
+    </div>
+    <div
+      className="dLRXKm">
+      <div
+        className="chvbqM"
         color="grayBase">
-        單位：
-        攝氏
+        Current value: 
+        <div
+          className="eBMqlM"
+          color="primary" />
       </div>
       <input
-        className="jWbJOn"
+        className="hdhnFx"
         kind="primary"
+        max={4}
+        min={0}
         onChange={[Function]}
-        placeholder="placeholder"
-        type="number"
+        step={1}
+        type="range"
         value={undefined} />
+    </div>
+  </div>
+  <div
+    className="ciDLcE"
+    onChange={[Function]}>
+    <div
+      className="hWdvxO">
       <div
-        className="kGGPNo">
-        <div
-          className="gVViGF"
-          onClick={[Function]}>
-          <a
-            className="enrdWE"
-            color="primary">
-            <svg
-              fill="currentColor"
-              height="1em"
-              preserveAspectRatio="xMidYMid meet"
-              viewBox="0 0 40 40"
-              width="1em">
-              <path
-                d="M15.9 16.4v12.9q0 .3-.2.5t-.5.2h-1.4q-.3 0-.5-.2t-.2-.5V16.4q0-.3.2-.5t.5-.2h1.4q.3 0 .5.2t.2.5zm5.7 0v12.9q0 .3-.2.5t-.5.2h-1.4q-.3 0-.5-.2t-.2-.5V16.4q0-.3.2-.5t.5-.2h1.4q.3 0 .5.2t.2.5zm5.8 0v12.9q0 .3-.2.5t-.6.2h-1.4q-.3 0-.5-.2t-.2-.5V16.4q0-.3.2-.5t.5-.2h1.4q.4 0 .6.2t.2.5zm2.8 16.2V11.4h-20v21.2q0 .5.2.9t.3.6.2.2h18.6q.1 0 .2-.2t.4-.6.1-.9zm-15-24h10L24.1 6q-.1-.2-.3-.3h-7.1q-.2.1-.4.3zm20.7.7v1.4q0 .3-.2.5t-.5.2h-2.1v21.2q0 1.8-1.1 3.2t-2.5 1.3H10.9q-1.4 0-2.5-1.3t-1-3.1V11.4H5.2q-.3 0-.5-.2t-.2-.5V9.3q0-.3.2-.5t.5-.2h6.9l1.6-3.8q.3-.8 1.2-1.4t1.7-.5h7.2q.9 0 1.8.5t1.2 1.4l1.5 3.8h6.9q.3 0 .5.2t.2.5z" />
-            </svg>
-            Clear
-          </a>
-        </div>
-        <button
-          className="fqCsyW"
-          onClick={[Function]}>
-          Ok
-        </button>
-      </div>
-    </div>
-  </div>
-  <div>
-    <h4
-      className="glocWb">
-      Title
-    </h4>
-    <small
-      className="jvIFlH">
-      123125125125125
-    </small>
-    <hr
-      className="dPNKKP iAugwC" />
-    <div
-      className="iyRJwF">
-      <MockReactTextTruncate
-        line={2}
-        text="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
-        truncateText=" ..." />
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots DataChannel DataChannel.ControlRange 1`] = `
-<div
-  className="czVqfN">
-  <div
-    className="bUqfcz">
-    <a
-      href="">
-      Link
-    </a>
-  </div>
-  <div
-    className="dvQQLa">
-    <div
-      className="ciDLcE">
-      <div
-        className="hWdvxO">
-        <div
-          className="kRwEkq">
-          <p
-            className="jyQfel"
-            color="grayBase">
-            AAAAAA
-          </p>
-        </div>
-        <div
-          className="kRwEkq">
-          <p
-            className="jyQfel"
-            color="grayBase">
-            BBBBB
-          </p>
-        </div>
-        <div
-          className="kRwEkq">
-          <p
-            className="jyQfel"
-            color="grayBase">
-            CCCCC
-          </p>
-        </div>
-        <div
-          className="kRwEkq">
-          <p
-            className="jyQfel"
-            color="grayBase">
-            DDDDD
-          </p>
-        </div>
-        <div
-          className="kRwEkq">
-          <p
-            className="jyQfel"
-            color="grayBase">
-            EEEEE
-          </p>
-        </div>
-      </div>
-      <div
-        className="dLRXKm">
-        <div
-          className="chvbqM"
-          color="grayBase">
-          Current value: 
-          <div
-            className="eBMqlM"
-            color="primary" />
-        </div>
-        <input
-          className="hdhnFx"
-          kind="primary"
-          max={4}
-          min={0}
-          onChange={[Function]}
-          step={1}
-          type="range"
-          value={undefined} />
-      </div>
-    </div>
-  </div>
-  <div>
-    <h4
-      className="glocWb">
-      Title
-    </h4>
-    <small
-      className="jvIFlH">
-      123125125125125
-    </small>
-    <hr
-      className="dPNKKP iAugwC" />
-    <div
-      className="iyRJwF">
-      <MockReactTextTruncate
-        line={2}
-        text="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
-        truncateText=" ..." />
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots DataChannel DataChannel.ControlString 1`] = `
-<div
-  className="czVqfN">
-  <div
-    className="bUqfcz">
-    <a
-      href="">
-      Link
-    </a>
-  </div>
-  <div
-    className="dvQQLa">
-    <div
-      className="lkjDmd">
-      <textarea
-        className="iSEZZX"
-        kind="primary"
-        onChange={[Function]}
-        placeholder="placeholder"
-        value={undefined} />
-      <div
-        className="gkMZXk">
-        <div
-          className="gVViGF"
-          onClick={[Function]}>
-          <a
-            className="enrdWE"
-            color="primary">
-            <svg
-              fill="currentColor"
-              height="1em"
-              preserveAspectRatio="xMidYMid meet"
-              viewBox="0 0 40 40"
-              width="1em">
-              <path
-                d="M15.9 16.4v12.9q0 .3-.2.5t-.5.2h-1.4q-.3 0-.5-.2t-.2-.5V16.4q0-.3.2-.5t.5-.2h1.4q.3 0 .5.2t.2.5zm5.7 0v12.9q0 .3-.2.5t-.5.2h-1.4q-.3 0-.5-.2t-.2-.5V16.4q0-.3.2-.5t.5-.2h1.4q.3 0 .5.2t.2.5zm5.8 0v12.9q0 .3-.2.5t-.6.2h-1.4q-.3 0-.5-.2t-.2-.5V16.4q0-.3.2-.5t.5-.2h1.4q.4 0 .6.2t.2.5zm2.8 16.2V11.4h-20v21.2q0 .5.2.9t.3.6.2.2h18.6q.1 0 .2-.2t.4-.6.1-.9zm-15-24h10L24.1 6q-.1-.2-.3-.3h-7.1q-.2.1-.4.3zm20.7.7v1.4q0 .3-.2.5t-.5.2h-2.1v21.2q0 1.8-1.1 3.2t-2.5 1.3H10.9q-1.4 0-2.5-1.3t-1-3.1V11.4H5.2q-.3 0-.5-.2t-.2-.5V9.3q0-.3.2-.5t.5-.2h6.9l1.6-3.8q.3-.8 1.2-1.4t1.7-.5h7.2q.9 0 1.8.5t1.2 1.4l1.5 3.8h6.9q.3 0 .5.2t.2.5z" />
-            </svg>
-            Clear
-          </a>
-        </div>
-        <button
-          className="fqCsyW"
-          onClick={[Function]}>
-          Ok
-        </button>
-      </div>
-    </div>
-  </div>
-  <div>
-    <h4
-      className="glocWb">
-      Title
-    </h4>
-    <small
-      className="jvIFlH">
-      123125125125125
-    </small>
-    <hr
-      className="dPNKKP iAugwC" />
-    <div
-      className="iyRJwF">
-      <MockReactTextTruncate
-        line={2}
-        text="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
-        truncateText=" ..." />
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots DataChannel DataChannel.ControlSwitch 1`] = `
-<div
-  className="czVqfN">
-  <div
-    className="bUqfcz">
-    <a
-      href="">
-      Link
-    </a>
-  </div>
-  <div
-    className="dvQQLa">
-    <div
-      checked={false}
-      className="hiQQzp"
-      kind="success"
-      onClick={[Function]} />
-  </div>
-  <div>
-    <h4
-      className="glocWb">
-      Title
-    </h4>
-    <small
-      className="jvIFlH">
-      123125125125125
-    </small>
-    <hr
-      className="dPNKKP iAugwC" />
-    <div
-      className="iyRJwF">
-      <MockReactTextTruncate
-        line={2}
-        text="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
-        truncateText=" ..." />
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots DataChannel DataChannel.DisplayMultipleValue 1`] = `
-<div
-  className="czVqfN">
-  <div
-    className="bUqfcz">
-    <a
-      href="">
-      Link
-    </a>
-  </div>
-  <div
-    className="dvQQLa">
-    <div
-      className="gLFxag">
-      <div>
+        className="kRwEkq">
         <p
           className="jyQfel"
           color="grayBase">
-          Value
+          AAAAAA
         </p>
-        <h1
-          className="fCRioE"
-          color="primary">
-          1234455
-        </h1>
-      </div>
-      <div>
-        <p
-          className="jyQfel"
-          color="grayBase">
-          Period
-        </p>
-        <h1
-          className="fCRioE"
-          color="primary">
-          125125
-        </h1>
-      </div>
-    </div>
-  </div>
-  <div>
-    <h4
-      className="glocWb">
-      DisplayMultipleValue
-    </h4>
-    <small
-      className="jvIFlH">
-      123125125125125
-    </small>
-    <hr
-      className="dPNKKP iAugwC" />
-    <div
-      className="iyRJwF">
-      <MockReactTextTruncate
-        line={2}
-        text="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
-        truncateText=" ..." />
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots DataChannel DataChannel.DisplayStatus 1`] = `
-<div
-  className="czVqfN">
-  <div
-    className="bUqfcz">
-    <a
-      href="">
-      Link
-    </a>
-  </div>
-  <div
-    className="dvQQLa">
-    <div
-      className="frKWdl">
-      <div
-        className="gBTIWB">
-        <p
-          className="jyQfel"
-          color="grayBase">
-          OFF
-        </p>
-        <div>
-          <svg
-            className="gUywdC"
-            color="grayDark"
-            viewBox="0 0 20 20">
-            <circle
-              cx="10"
-              cy="10"
-              r="10" />
-          </svg>
-        </div>
       </div>
       <div
-        className="gBTIWB">
+        className="kRwEkq">
         <p
           className="jyQfel"
           color="grayBase">
-          ON
+          BBBBB
         </p>
-        <div>
-          <svg
-            className="gUywdC"
-            color="grayDark"
-            viewBox="0 0 20 20">
-            <circle
-              cx="10"
-              cy="10"
-              r="10" />
-          </svg>
-        </div>
+      </div>
+      <div
+        className="kRwEkq">
+        <p
+          className="jyQfel"
+          color="grayBase">
+          CCCCC
+        </p>
+      </div>
+      <div
+        className="kRwEkq">
+        <p
+          className="jyQfel"
+          color="grayBase">
+          DDDDD
+        </p>
+      </div>
+      <div
+        className="kRwEkq">
+        <p
+          className="jyQfel"
+          color="grayBase">
+          EEEEE
+        </p>
       </div>
     </div>
-  </div>
-  <div>
-    <h4
-      className="glocWb">
-      DisplayStatus
-    </h4>
-    <small
-      className="jvIFlH">
-      123125125125125
-    </small>
-    <hr
-      className="dPNKKP iAugwC" />
     <div
-      className="iyRJwF">
-      <MockReactTextTruncate
-        line={2}
-        text="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
-        truncateText=" ..." />
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots DataChannel DataChannel.DisplayString 1`] = `
-<div
-  className="czVqfN">
-  <div
-    className="bUqfcz">
-    <a
-      href="">
-      Link
-    </a>
-  </div>
-  <div
-    className="dvQQLa">
-    <div
-      className="gdQukP">
-      <textarea
-        className="iSEZZX"
-        disabled={true}
-        kind="primary"
-        placeholder="This place holds Hex value."
-        value="value" />
-    </div>
-  </div>
-  <div>
-    <h4
-      className="glocWb">
-      DisplayString
-    </h4>
-    <small
-      className="jvIFlH">
-      123125125125125
-    </small>
-    <hr
-      className="dPNKKP iAugwC" />
-    <div
-      className="iyRJwF">
-      <MockReactTextTruncate
-        line={2}
-        text="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
-        truncateText=" ..." />
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots DataChannel DataChannel.DisplayUnitValue 1`] = `
-<div
-  className="czVqfN">
-  <div
-    className="bUqfcz">
-    <a
-      href="">
-      Link
-    </a>
-  </div>
-  <div
-    className="dvQQLa">
-    <div
-      className="cthtBB">
-      <h1
-        className="ekhOej"
-        color="primary">
-        1123124124121
-      </h1>
-      <p
-        className="iiIFfD"
+      className="dLRXKm">
+      <div
+        className="chvbqM"
         color="grayBase">
-        攝氏
+        Current value: 
+        <p
+          className="eBMqlM"
+          color="primary">
+          DDDDD
+        </p>
+      </div>
+      <input
+        className="hdhnFx"
+        kind="primary"
+        max={4}
+        min={0}
+        onChange={undefined}
+        step={1}
+        type="range"
+        value={3} />
+    </div>
+  </div>
+  <div
+    className="ciDLcE"
+    onChange={[Function]}>
+    <div
+      className="hxnWDy">
+      <div
+        className="kRwEkq">
+        <p
+          className="jyQfel"
+          color="grayBase">
+          Low
+        </p>
+      </div>
+      <div
+        className="kRwEkq">
+        <p
+          className="jyQfel"
+          color="grayBase">
+          Heigh
+        </p>
+      </div>
+    </div>
+    <div
+      className="glLEWf">
+      <div
+        className="chvbqM"
+        color="grayBase">
+        Current value: 
+        <p
+          className="eBMqlM"
+          color="primary">
+          Low
+        </p>
+      </div>
+      <input
+        className="hdhnFx"
+        kind="primary"
+        max={1}
+        min={0}
+        onChange={undefined}
+        step={1}
+        type="range"
+        value={0} />
+    </div>
+  </div>
+  <div
+    className="ciDLcE"
+    onChange={[Function]}>
+    <div
+      className="hxnWDy">
+      <div
+        className="kRwEkq">
+        <div
+          className="jyQfel"
+          color="grayBase">
+          0
+        </div>
+      </div>
+      <div
+        className="kRwEkq">
+        <div
+          className="jyQfel"
+          color="grayBase">
+          100
+        </div>
+      </div>
+    </div>
+    <div
+      className="glLEWf">
+      <div
+        className="chvbqM"
+        color="grayBase">
+        Current value: 
+        <div
+          className="eBMqlM"
+          color="primary">
+          33
+        </div>
+      </div>
+      <input
+        className="hdhnFx"
+        kind="primary"
+        max={100}
+        min={0}
+        onChange={undefined}
+        step={1}
+        type="range"
+        value={33} />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots DataChannel ControlString 1`] = `
+<div
+  className="lkjDmd">
+  <textarea
+    className="haOaRY"
+    kind="primary"
+    onChange={[Function]}
+    placeholder="placeholder"
+    value={undefined} />
+  <div
+    className="gkMZXk">
+    <div
+      className="gVViGF"
+      onClick={[Function]}>
+      <a
+        className="enrdWE"
+        color="primary">
+        <svg
+          fill="currentColor"
+          height="1em"
+          preserveAspectRatio="xMidYMid meet"
+          viewBox="0 0 40 40"
+          width="1em">
+          <path
+            d="M15.9 16.4v12.9q0 .3-.2.5t-.5.2h-1.4q-.3 0-.5-.2t-.2-.5V16.4q0-.3.2-.5t.5-.2h1.4q.3 0 .5.2t.2.5zm5.7 0v12.9q0 .3-.2.5t-.5.2h-1.4q-.3 0-.5-.2t-.2-.5V16.4q0-.3.2-.5t.5-.2h1.4q.3 0 .5.2t.2.5zm5.8 0v12.9q0 .3-.2.5t-.6.2h-1.4q-.3 0-.5-.2t-.2-.5V16.4q0-.3.2-.5t.5-.2h1.4q.4 0 .6.2t.2.5zm2.8 16.2V11.4h-20v21.2q0 .5.2.9t.3.6.2.2h18.6q.1 0 .2-.2t.4-.6.1-.9zm-15-24h10L24.1 6q-.1-.2-.3-.3h-7.1q-.2.1-.4.3zm20.7.7v1.4q0 .3-.2.5t-.5.2h-2.1v21.2q0 1.8-1.1 3.2t-2.5 1.3H10.9q-1.4 0-2.5-1.3t-1-3.1V11.4H5.2q-.3 0-.5-.2t-.2-.5V9.3q0-.3.2-.5t.5-.2h6.9l1.6-3.8q.3-.8 1.2-1.4t1.7-.5h7.2q.9 0 1.8.5t1.2 1.4l1.5 3.8h6.9q.3 0 .5.2t.2.5z" />
+        </svg>
+        Clear
+      </a>
+    </div>
+    <button
+      className="fqCsyW"
+      onClick={[Function]}>
+      Ok
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots DataChannel ControlSwitch 1`] = `
+<div
+  checked={false}
+  className="hiQQzp"
+  kind="success"
+  onClick={[Function]} />
+`;
+
+exports[`Storyshots DataChannel DisplayMultipleValue 1`] = `
+<div
+  className="gLFxag">
+  <div>
+    <p
+      className="jyQfel"
+      color="grayBase">
+      Value
+    </p>
+    <h1
+      className="fCRioE"
+      color="primary">
+      1234455
+    </h1>
+  </div>
+  <div>
+    <p
+      className="jyQfel"
+      color="grayBase">
+      Period
+    </p>
+    <h1
+      className="fCRioE"
+      color="primary">
+      125125
+    </h1>
+  </div>
+</div>
+`;
+
+exports[`Storyshots DataChannel DisplayStatus 1`] = `
+<div
+  className="izFvfQ">
+  <div
+    className="frKWdl">
+    <div
+      className="gBTIWB">
+      <p
+        className="jyQfel"
+        color="grayBase">
+        OFF
       </p>
+      <div>
+        <svg
+          className="gUywdC"
+          color="grayDark"
+          viewBox="0 0 20 20">
+          <circle
+            cx="10"
+            cy="10"
+            r="10" />
+        </svg>
+      </div>
+    </div>
+    <div
+      className="gBTIWB">
+      <p
+        className="jyQfel"
+        color="grayBase">
+        ON
+      </p>
+      <div>
+        <svg
+          className="gUywdC"
+          color="grayDark"
+          viewBox="0 0 20 20">
+          <circle
+            cx="10"
+            cy="10"
+            r="10" />
+        </svg>
+      </div>
     </div>
   </div>
-  <div>
-    <h4
-      className="glocWb">
-      DisplayUnitValue
-    </h4>
-    <small
-      className="jvIFlH">
-      123125125125125
-    </small>
-    <hr
-      className="dPNKKP iAugwC" />
+  <div
+    className="frKWdl">
     <div
-      className="iyRJwF">
-      <MockReactTextTruncate
-        line={2}
-        text="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
-        truncateText=" ..." />
+      className="gBTIWB">
+      <p
+        className="jyQfel"
+        color="grayBase">
+        Apple1
+      </p>
+      <div>
+        <svg
+          className="gUywdC"
+          color="grayDark"
+          viewBox="0 0 20 20">
+          <circle
+            cx="10"
+            cy="10"
+            r="10" />
+        </svg>
+      </div>
+    </div>
+    <div
+      className="gBTIWB">
+      <p
+        className="jyQfel"
+        color="grayBase">
+        Apple2
+      </p>
+      <div>
+        <svg
+          className="gUywdC"
+          color="grayDark"
+          viewBox="0 0 20 20">
+          <circle
+            cx="10"
+            cy="10"
+            r="10" />
+        </svg>
+      </div>
+    </div>
+    <div
+      className="gBTIWB">
+      <p
+        className="jyQfel"
+        color="grayBase">
+        Pen
+      </p>
+      <div>
+        <svg
+          className="jfcUeq"
+          color="success"
+          viewBox="0 0 20 20">
+          <circle
+            cx="10"
+            cy="10"
+            r="10" />
+        </svg>
+      </div>
+    </div>
+    <div
+      className="gBTIWB">
+      <p
+        className="jyQfel"
+        color="grayBase">
+        Pineapple
+      </p>
+      <div>
+        <svg
+          className="gUywdC"
+          color="grayDark"
+          viewBox="0 0 20 20">
+          <circle
+            cx="10"
+            cy="10"
+            r="10" />
+        </svg>
+      </div>
+    </div>
+    <div
+      className="gBTIWB">
+      <p
+        className="jyQfel"
+        color="grayBase">
+        PPAPPPAPPPAP
+      </p>
+      <div>
+        <svg
+          className="gUywdC"
+          color="grayDark"
+          viewBox="0 0 20 20">
+          <circle
+            cx="10"
+            cy="10"
+            r="10" />
+        </svg>
+      </div>
     </div>
   </div>
 </div>
 `;
 
-exports[`Storyshots DataChannel DisplayStatus - Category 1`] = `
+exports[`Storyshots DataChannel DisplayString 1`] = `
 <div
-  className="czVqfN">
-  <div
-    className="bUqfcz">
-    <a
-      href="">
-      Link
-    </a>
-  </div>
-  <div
-    className="dvQQLa">
-    <div
-      className="frKWdl">
-      <div
-        className="gBTIWB">
-        <p
-          className="jyQfel"
-          color="grayBase">
-          Apple1
-        </p>
-        <div>
-          <svg
-            className="gUywdC"
-            color="grayDark"
-            viewBox="0 0 20 20">
-            <circle
-              cx="10"
-              cy="10"
-              r="10" />
-          </svg>
-        </div>
-      </div>
-      <div
-        className="gBTIWB">
-        <p
-          className="jyQfel"
-          color="grayBase">
-          Apple2
-        </p>
-        <div>
-          <svg
-            className="gUywdC"
-            color="grayDark"
-            viewBox="0 0 20 20">
-            <circle
-              cx="10"
-              cy="10"
-              r="10" />
-          </svg>
-        </div>
-      </div>
-      <div
-        className="gBTIWB">
-        <p
-          className="jyQfel"
-          color="grayBase">
-          Pen
-        </p>
-        <div>
-          <svg
-            className="jfcUeq"
-            color="success"
-            viewBox="0 0 20 20">
-            <circle
-              cx="10"
-              cy="10"
-              r="10" />
-          </svg>
-        </div>
-      </div>
-      <div
-        className="gBTIWB">
-        <p
-          className="jyQfel"
-          color="grayBase">
-          Pineapple
-        </p>
-        <div>
-          <svg
-            className="gUywdC"
-            color="grayDark"
-            viewBox="0 0 20 20">
-            <circle
-              cx="10"
-              cy="10"
-              r="10" />
-          </svg>
-        </div>
-      </div>
-      <div
-        className="gBTIWB">
-        <p
-          className="jyQfel"
-          color="grayBase">
-          PPAPPPAPPPAP
-        </p>
-        <div>
-          <svg
-            className="gUywdC"
-            color="grayDark"
-            viewBox="0 0 20 20">
-            <circle
-              cx="10"
-              cy="10"
-              r="10" />
-          </svg>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div>
-    <h4
-      className="glocWb">
-      DisplayStatus
-    </h4>
-    <small
-      className="jvIFlH">
-      123125125125125
-    </small>
-    <hr
-      className="dPNKKP iAugwC" />
-    <div
-      className="iyRJwF">
-      <MockReactTextTruncate
-        line={2}
-        text="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
-        truncateText=" ..." />
-    </div>
-  </div>
+  className="gdQukP">
+  <textarea
+    className="haOaRY"
+    disabled={true}
+    kind="primary"
+    placeholder="This place holds Hex value."
+    value="value" />
 </div>
 `;
 
-exports[`Storyshots DataChannel Fixed width 1`] = `
+exports[`Storyshots DataChannel DisplayUnitValue 1`] = `
 <div
-  className="jwFuaE czVqfN">
-  <div
-    className="bUqfcz">
-    <a
-      href="">
-      Link
-    </a>
-  </div>
-  <div
-    className="dvQQLa">
-    <div
-      checked={false}
-      className="hiQQzp"
-      kind="success"
-      onSubmit={[Function]} />
-  </div>
-  <div>
-    <h4
-      className="glocWb">
-      Title
-    </h4>
-    <small
-      className="jvIFlH">
-      123125125125125
-    </small>
-    <hr
-      className="dPNKKP iAugwC" />
-    <div
-      className="iyRJwF">
-      <MockReactTextTruncate
-        line={2}
-        text="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
-        truncateText=" ..." />
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots DataChannel withDataChannelCard (HOC) 1`] = `
-<div
-  className="czVqfN">
-  <div
-    className="bUqfcz" />
-  <div
-    className="dvQQLa">
-    <div>
-      Wrap with HOC
-    </div>
-  </div>
-  <div>
-    <h4
-      className="glocWb">
-      Title
-    </h4>
-    <small
-      className="jvIFlH">
-      123125125125125
-    </small>
-    <hr
-      className="dPNKKP iAugwC" />
-    <div
-      className="iyRJwF">
-      <MockReactTextTruncate
-        line={2}
-        text="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
-        truncateText=" ..." />
-    </div>
-  </div>
+  className="cthtBB">
+  <h1
+    className="ekhOej"
+    color="primary">
+    1123124124121
+  </h1>
+  <p
+    className="iiIFfD"
+    color="grayBase">
+    攝氏
+  </p>
 </div>
 `;
 
@@ -1674,6 +1082,45 @@ exports[`Storyshots DataChannelCard Without description 1`] = `
       className="jvIFlH">
       Last data point time : 2015-06-12 12:00
     </small>
+  </div>
+</div>
+`;
+
+exports[`Storyshots DataChannelCard withDataChannelCard (HOC) 1`] = `
+<div
+  className="czVqfN">
+  <div
+    className="bUqfcz">
+    <div>
+      header
+    </div>
+  </div>
+  <div
+    className="dvQQLa">
+    <div
+      checked={false}
+      className="hiQQzp"
+      kind="success"
+      onClick={undefined} />
+  </div>
+  <div>
+    <h4
+      className="glocWb">
+      title
+    </h4>
+    <small
+      className="jvIFlH">
+      subtitle
+    </small>
+    <hr
+      className="dPNKKP iAugwC" />
+    <div
+      className="iyRJwF">
+      <MockReactTextTruncate
+        line={2}
+        text="description"
+        truncateText=" ..." />
+    </div>
   </div>
 </div>
 `;
@@ -2726,7 +2173,7 @@ exports[`Storyshots Switch With scaling 1`] = `
 
 exports[`Storyshots Textarea API 1`] = `
 <textarea
-  className="XpDPt"
+  className="YixGR"
   kind="primary"
   placeholder="placeholder"
   rows="3" />
@@ -2736,23 +2183,23 @@ exports[`Storyshots Textarea With kind props 1`] = `
 <div
   className="cZlPqe">
   <textarea
-    className="GSpKV"
+    className="gyTfaf"
     kind="default"
     placeholder="default" />
   <textarea
-    className="XpDPt"
+    className="YixGR"
     kind="primary"
     placeholder="primary" />
   <textarea
-    className="gTzMmj"
+    className="hnKkLx"
     kind="success"
     placeholder="success" />
   <textarea
-    className="kgGEdg"
+    className="cujISZ"
     kind="error"
     placeholder="error" />
   <textarea
-    className="yqxRC"
+    className="gIHRDP"
     kind="warning"
     placeholder="warning" />
 </div>

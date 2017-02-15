@@ -1,6 +1,5 @@
 import React, { PropTypes } from 'react';
 import styled from 'styled-components';
-import withDataChannelCard from './withDataChannelCard';
 import StatusLight from '../StatusLight';
 import P from '../P';
 
@@ -24,7 +23,7 @@ const ItemWrapper = styled.div`
   }
 `;
 
-const BaseComponent = ({ value, labels, ...otherProps }) =>
+const DisplayStatus = ({ value, labels, ...otherProps }) =>
   <Container {...otherProps} >
     {
       labels.map((label, index) =>
@@ -38,9 +37,10 @@ const BaseComponent = ({ value, labels, ...otherProps }) =>
     }
   </Container>;
 
-BaseComponent.propTypes = {
-  value: PropTypes.number, // index
+DisplayStatus.displayName = 'DisplayStatus';
+DisplayStatus.propTypes = {
+  value: PropTypes.number,            // index
   labels: PropTypes.array.isRequired,
 };
 
-export default withDataChannelCard(BaseComponent, 'DisplayStatus');
+export default DisplayStatus;

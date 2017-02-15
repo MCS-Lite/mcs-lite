@@ -1,3 +1,2 @@
-import DataChannelCard from './DataChannelCard';
-
-export default DataChannelCard;
+export { default as DataChannelCard } from './DataChannelCard';
+export { default as withDataChannelCard } from './withDataChannelCard';

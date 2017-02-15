@@ -1,6 +1,5 @@
 import React, { PropTypes } from 'react';
 import styled from 'styled-components';
-import withDataChannelCard from './withDataChannelCard';
 import ButtonClear from './ButtonClear';
 import Button from '../Button';
 import Input from '../Input';
@@ -24,9 +23,9 @@ const Unixtype = styled(P)`
   justify-content: flex-end;
 `;
 
-const BaseComponent = ({ value, onChange, onSubmit, onClear, placeholder, unit, ...otherProps }) =>
+const ControlNumber = ({ value, onChange, onSubmit, onClear, placeholder, unit, ...otherProps }) =>
   <Container {...otherProps} >
-    {unit && <Unixtype color="grayBase">單位：{unit}</Unixtype>}
+    {unit && <Unixtype color="grayBase">{unit}</Unixtype>}
     <Input type="number" value={value} onChange={onChange} placeholder={placeholder} />
 
     <ButtonWrapper>
@@ -35,7 +34,8 @@ const BaseComponent = ({ value, onChange, onSubmit, onClear, placeholder, unit, 
     </ButtonWrapper>
   </Container>;
 
-BaseComponent.propTypes = {
+ControlNumber.displayName = 'ControlNumber';
+ControlNumber.propTypes = {
   value: PropTypes.number,
   onChange: PropTypes.func,
   onSubmit: PropTypes.func,
@@ -44,4 +44,4 @@ BaseComponent.propTypes = {
   unit: PropTypes.string,
 };
 
-export default withDataChannelCard(BaseComponent, 'ControlNumber');
+export default ControlNumber;

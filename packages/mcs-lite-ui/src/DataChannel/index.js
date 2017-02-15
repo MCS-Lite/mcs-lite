@@ -2,6 +2,7 @@ import ControlSwitch from './ControlSwitch';
 import ControlNumber from './ControlNumber';
 import ControlString from './ControlString';
 import ControlRange from './ControlRange';
+import ControlPeriod from './ControlPeriod';
 import DisplayStatus from './DisplayStatus';
 import DisplayUnitValue from './DisplayUnitValue';
 import DisplayMultipleValue from './DisplayMultipleValue';
@@ -12,6 +13,7 @@ export default {
   ControlNumber,
   ControlString,
   ControlRange,
+  ControlPeriod,
   DisplayStatus,
   DisplayUnitValue,
   DisplayMultipleValue,

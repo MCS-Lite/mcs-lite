@@ -1,6 +1,5 @@
 import React, { PropTypes } from 'react';
 import styled from 'styled-components';
-import withDataChannelCard from './withDataChannelCard';
 import ButtonClear from './ButtonClear';
 import Textarea from '../Textarea';
 import Button from '../Button';
@@ -27,7 +26,7 @@ const StyledTextarea = styled(Textarea)`
   flex-grow: 1;
 `;
 
-const BaseComponent = ({ value, onChange, onSubmit, onClear, placeholder, ...otherProps }) =>
+const ControlString = ({ value, onChange, onSubmit, onClear, placeholder, ...otherProps }) =>
   <Container {...otherProps} >
     <StyledTextarea value={value} onChange={onChange} placeholder={placeholder} />
 
@@ -37,7 +36,8 @@ const BaseComponent = ({ value, onChange, onSubmit, onClear, placeholder, ...oth
     </ButtonWrapper>
   </Container>;
 
-BaseComponent.propTypes = {
+ControlString.displayName = 'ControlString';
+ControlString.propTypes = {
   value: PropTypes.number,
   onChange: PropTypes.func,
   onSubmit: PropTypes.func,
@@ -45,4 +45,4 @@ BaseComponent.propTypes = {
   placeholder: PropTypes.string,
 };
 
-export default withDataChannelCard(BaseComponent, 'ControlString');
+export default ControlString;

@@ -1,4 +1,16 @@
-import withDataChannelCard from './withDataChannelCard';
+import React, { PropTypes } from 'react';
 import Switch from '../Switch';
 
-export default withDataChannelCard(Switch, 'ControlSwitch');
+const ControlSwitch = ({ value, onSubmit, ...otherProps }) =>
+  <Switch
+    {...otherProps}
+    checked={value}
+    onClick={onSubmit}
+  />;
+
+ControlSwitch.displayName = 'ControlSwitch';
+ControlSwitch.propTypes = {
+  value: PropTypes.bool,
+  onSubmit: PropTypes.func,
+};
+export default ControlSwitch;
