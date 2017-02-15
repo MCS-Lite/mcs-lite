@@ -1,0 +1,13 @@
+exports[`devices should return pushLocale actions 1`] = `
+Object {
+  "payload": "en",
+  "type": "mcs-lite-mobile-web/routing/PUSH_LOCALE",
+}
+`;
+
+exports[`devices should return pushPathname actions 1`] = `
+Object {
+  "payload": "/signin",
+  "type": "mcs-lite-mobile-web/routing/PUSH_PATHNAME",
+}
+`;

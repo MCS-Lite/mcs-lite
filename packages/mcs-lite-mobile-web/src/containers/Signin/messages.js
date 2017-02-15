@@ -10,8 +10,8 @@ const messages = defineMessages({
     id: 'Signin.welcome',
     defaultMessage: '歡迎',
   },
-  'Signin.account': {
-    id: 'Signin.account',
+  'Signin.email': {
+    id: 'Signin.email',
     defaultMessage: '帳號',
   },
   'Signin.password': {

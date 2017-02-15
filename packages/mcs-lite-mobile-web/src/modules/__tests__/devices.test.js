@@ -6,7 +6,7 @@ describe('devices', () => {
   });
 
   it('should return fetchDeviceDetail actions', () => {
-    expect(actions.fetchDeviceDetail()).toMatchSnapshot();
+    expect(actions.fetchDeviceDetail('deviceId')).toMatchSnapshot();
   });
 
   it('should return setDeviceList actions', () => {

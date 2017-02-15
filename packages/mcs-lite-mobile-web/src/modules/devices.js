@@ -1,7 +1,6 @@
-import R from 'ramda';
 import { Observable } from 'rxjs/Observable';
+import * as fetchRx from 'mcs-lite-fetch-rx';
 import { actions as uiActions } from './ui';
-import API from './API';
 
 // ----------------------------------------------------------------------------
 // 1. Constants
@@ -18,7 +17,7 @@ const CLEAR = 'mcs-lite-mobile-web/devices/CLEAR';
 // ----------------------------------------------------------------------------
 
 const fetchDeviceList = () => ({ type: FETCH_DEVICE_LIST });
-const fetchDeviceDetail = () => ({ type: FETCH_DEVICE_DETAIL });
+const fetchDeviceDetail = deviceId => ({ type: FETCH_DEVICE_DETAIL, payload: deviceId });
 const setDeviceList = payload => ({ type: SET_DEVICE_LIST, payload });
 const setDeviceDetail = payload => ({ type: SET_DEVICE_DETAIL, payload });
 const clear = () => ({ type: CLEAR });
@@ -35,12 +34,29 @@ export const actions = {
 // 3. Epic (Async, side effect)
 // ----------------------------------------------------------------------------
 
-const fetchDeviceListEpic = action$ =>
+/**
+ * tokenAvailable - require access_token
+ * @return {Observable} original action$
+ *
+ * @author Michael Hsu
+ */
+const tokenAvailable = (action$, store) => () => {
+  const duration$ = store.getState().auth.access_token
+    ? Observable.of(true)
+    : action$.ofType(require('./auth').SET_USERINFO);
+
+  return duration$.mapTo(action$);
+};
+
+const fetchDeviceListEpic = (action$, store) =>
   action$.ofType(FETCH_DEVICE_LIST)
-    .mergeMap(() => Observable.merge(
+    .delayWhen(tokenAvailable(action$, store))
+    .map(() => store.getState())
+    .pluck('auth', 'access_token')
+    .mergeMap(accessToken => Observable.merge(
       Observable.of(uiActions.setLoading()),
-      Observable.fromPromise(API.fetchDeviceList())
-        .map(R.prop('results'))
+      Observable
+        .from(fetchRx.fetchDeviceList(accessToken))
         .map(setDeviceList),
     ));
 
@@ -48,13 +64,14 @@ const setDeviceListEpic = action$ =>
   action$.ofType(SET_DEVICE_LIST)
     .mapTo(uiActions.setLoaded());
 
-const fetchDeviceDetailEpic = action$ =>
+const fetchDeviceDetailEpic = (action$, store) =>
   action$.ofType(FETCH_DEVICE_DETAIL)
-    .mergeMap(() => Observable.merge(
+    .delayWhen(tokenAvailable(action$, store))
+    .pluck('payload')
+    .mergeMap(deviceId => Observable.merge(
       Observable.of(uiActions.setLoading()),
-      Observable.fromPromise(API.fetchDeviceDetail())
-        .map(R.prop('results'))
-        .map(R.head)
+      Observable
+        .from(fetchRx.fetchDeviceDetail({ deviceId }, store.getState().auth.access_token))
         .map(setDeviceDetail),
     ));
 

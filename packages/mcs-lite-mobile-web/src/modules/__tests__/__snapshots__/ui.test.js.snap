@@ -1,0 +1,11 @@
+exports[`devices should return setLoaded actions 1`] = `
+Object {
+  "type": "mcs-lite-mobile-web/ui/SET_LOADED",
+}
+`;
+
+exports[`devices should return setLoading actions 1`] = `
+Object {
+  "type": "mcs-lite-mobile-web/ui/SET_LOADING",
+}
+`;

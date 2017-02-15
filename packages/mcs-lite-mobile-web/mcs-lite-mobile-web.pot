@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"POT-Creation-Date: 2017-02-13T07:04:17.760Z\n"
+"POT-Creation-Date: 2017-02-14T15:19:41.863Z\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "MIME-Version: 1.0\n"
@@ -107,7 +107,7 @@ msgid "帳戶"
 msgstr ""
 
 #: ./messages.json
-#. [Signin.account]
+#. [Signin.email]
 #. defaultMessage is:
 #. 帳號
 msgid "帳號"

@@ -21,6 +21,7 @@ import DeviceTriggerEdit from './containers/DeviceTriggerEdit';
 import Signin from './containers/Signin';
 import Account from './containers/Account';
 import Password from './containers/Password';
+import RequireAuth from './containers/RequireAuth';
 import configureStore from './store/configureStore';
 import './style';
 import './utils/i18n';
@@ -34,9 +35,10 @@ ReactDOM.render(
       <ThemeProvider theme={theme}>
         <Router history={history} render={applyRouterMiddleware(useScroll())}>
 
-          <Route path="/">
+          <Route path="/signin" component={Signin} />
+
+          <Route path="/" component={RequireAuth}>
             <IndexRedirect to="/signin" />
-            <Route path="/signin" component={Signin} />
             <Route component={Layout.LayoutDefault}>
               <Route path="/password" component={Password} />
               <Route path="/devices" component={DeviceList} />

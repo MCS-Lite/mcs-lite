@@ -27,7 +27,7 @@ class DeviceList extends React.Component {
     this.setState({ isFilterOpen: false, filterValue: '' });
   }
   getInput = (node) => { this.input = node; }
-  includeDeviceName = device => device.name.includes(this.state.filterValue);
+  includeDeviceName = device => device.deviceName.includes(this.state.filterValue);
   render() {
     const { isFilterOpen, filterValue } = this.state;
     const { fetchDeviceList, devices, isLoading, getMessages: t } = this.props;
@@ -76,8 +76,8 @@ class DeviceList extends React.Component {
                     devices.filter(includeDeviceName).map(device => (
                       <StyledLink key={device.deviceId} to={updatePathname(`/devices/${device.deviceId}`)}>
                         <DeviceCard
-                          title={device.name}
-                          image={device.deviceImageURL}
+                          title={device.deviceName}
+                          image={device.deviceImageURL || 'https://img.mediatek.com/600/mtk.linkit/productBanner.png'}
                         />
                       </StyledLink>
                     ))

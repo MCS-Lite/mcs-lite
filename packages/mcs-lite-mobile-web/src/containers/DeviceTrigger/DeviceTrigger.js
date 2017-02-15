@@ -14,16 +14,18 @@ import updatePathname from '../../utils/updatePathname';
 
 class DeviceTrigger extends React.Component {
   state = { isMenuShow: false, target: undefined };
-  componentDidMount = () => this.props.fetchDeviceDetail();
+  componentDidMount = () => this.fetch();
+  fetch = () => this.props.fetchDeviceDetail(this.props.deviceId);
   render() {
-    const { device, isLoading, fetchDeviceDetail, getMessages: t } = this.props;
+    const { device, isLoading, getMessages: t } = this.props;
+    const { fetch } = this;
 
     return (
       <div>
         <Helmet title={t('triggerAndAction')} />
         <Header title={t('triggerAndAction')} backTo={updatePathname(`/devices/${device && device.deviceId}`)} />
         <main>
-          <PullToRefresh isLoading={isLoading} onPull={fetchDeviceDetail}>
+          <PullToRefresh isLoading={isLoading} onPull={fetch}>
             <PreventDrag>
               <StyledLink to={updatePathname(`/devices/${device && device.deviceId}/trigger/edit`)}>
                 <Item>
@@ -55,6 +57,7 @@ class DeviceTrigger extends React.Component {
 export default compose(
   connect(
     ({ devices, ui }, { params: { deviceId }}) => ({
+      deviceId,
       device: devices[deviceId],
       isLoading: ui.isLoading,
     }),
