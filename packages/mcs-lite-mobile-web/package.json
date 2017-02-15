@@ -1,7 +1,6 @@
 {
-  "private": true,
   "name": "mcs-lite-mobile-web",
-  "version": "0.1.0",
+  "version": "0.0.0",
   "homepage": ".",
   "scripts": {
     "clean": "rm -rf build",
