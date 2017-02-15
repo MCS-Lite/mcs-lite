@@ -3,9 +3,20 @@
   "name": "mcs-lite-mobile-web",
   "version": "0.1.0",
   "homepage": ".",
-  "proxy": "http://localhost:3000",
+  "scripts": {
+    "clean": "rm -rf build",
+    "start": "node -r dotenv/config ./node_modules/.bin/react-scripts start dotenv_config_path=.env.development",
+    "prebuild": "npm run clean",
+    "build": "node -r dotenv/config ./node_modules/.bin/react-scripts build dotenv_config_path=.env.production",
+    "test": "CI=true react-scripts test --env=jsdom",
+    "test:watch": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "extract:messages": "react-intl-cra './src/**/*.js' './messages.json'",
+    "extract:pot": "react-intl-po json2pot './messages.json' -o './mcs-lite-mobile-web.pot'"
+  },
   "devDependencies": {
     "babel-eslint": "^7.1.1",
+    "dotenv": "^4.0.0",
     "eslint": "^3.15.0",
     "eslint-config-airbnb": "^14.1.0",
     "eslint-plugin-import": "^2.2.0",
@@ -39,16 +50,5 @@
     "redux-observable": "^0.13.0",
     "rxjs": "^5.1.0",
     "styled-components": "^1.4.3"
-  },
-  "scripts": {
-    "clean": "rm -rf build",
-    "start": "PORT='8082' react-scripts start",
-    "prebuild": "npm run clean",
-    "build": "react-scripts build",
-    "test": "CI=true react-scripts test --env=jsdom",
-    "test:watch": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
-    "extract:messages": "react-intl-cra './src/**/*.js' './messages.json'",
-    "extract:pot": "react-intl-po json2pot './messages.json' -o './mcs-lite-mobile-web.pot'"
   }
 }

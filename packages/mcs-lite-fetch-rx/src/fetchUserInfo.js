@@ -3,6 +3,7 @@ import { createFetch, parse, method, params } from 'http-client';
 import 'rxjs/add/observable/fromPromise';
 import 'rxjs/add/observable/throw';
 import 'rxjs/add/operator/pluck';
+import proxy from './stacks/proxy';
 
 export const URL = '/oauth/cookies/mobile';
 
@@ -13,6 +14,7 @@ const fetchUserInfo = (cookieToken) => {
     method('POST'),
     params({ token: cookieToken }),
     parse('json', 'jsonData'),
+    proxy,
   );
 
   return Observable
