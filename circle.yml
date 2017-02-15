@@ -12,3 +12,10 @@ dependencies:
 test:
   override:
     - ./tasks/test.sh
+
+general:
+  artifacts:
+    - "packages/mcs-lite-theme"
+    - "packages/mcs-lite-ui"
+    - "packages/mcs-lite-icon"
+    - "packages/mcs-lite-mobile-web/mcs-lite-mobile-web.pot"
