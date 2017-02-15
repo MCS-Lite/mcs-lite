@@ -16,8 +16,8 @@ test:
     - npm pack packages/mcs-lite-icon
     - npm pack packages/mcs-lite-theme
     - npm pack packages/mcs-lite-ui
-    - mkdir $CIRCLE_ARTIFACTS/beta
-    - mv *.tgz $CIRCLE_ARTIFACTS/beta
+    - mkdir ~/npm
+    - mv *.tgz ~/npm
 
 general:
   artifacts:
