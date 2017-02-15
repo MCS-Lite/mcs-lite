@@ -12,10 +12,12 @@ dependencies:
 test:
   override:
     - ./tasks/test.sh
+  post:
+    - npm pack packages/mcs-lite-icon
+    - npm pack packages/mcs-lite-theme
+    - npm pack packages/mcs-lite-ui
+    - mv *.tgz $CIRCLE_ARTIFACTS/npm
 
 general:
   artifacts:
-    - "packages/mcs-lite-theme"
-    - "packages/mcs-lite-ui"
-    - "packages/mcs-lite-icon"
     - "packages/mcs-lite-mobile-web/mcs-lite-mobile-web.pot"
