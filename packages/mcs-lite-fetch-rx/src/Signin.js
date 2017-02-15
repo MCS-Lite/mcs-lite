@@ -11,6 +11,4 @@ import { API_HOSTNAME } from './stacks/proxy';
 
 const URL = `${API_HOSTNAME}/oauth/login/mobile`;
 
-console.log(URL)
-
 export default URL;
