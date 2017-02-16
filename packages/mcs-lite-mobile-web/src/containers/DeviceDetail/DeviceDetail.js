@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import Helmet from 'react-helmet';
-import { PullToRefresh, Overlay, Menu, DataChannelCard } from 'mcs-lite-ui';
+import { PullToRefresh, Overlay, Menu, DataChannelCard, DataChannelAdapter } from 'mcs-lite-ui';
 import IconEllipsisV from 'mcs-lite-icon/lib/IconEllipsisV';
 import compose from 'recompose/compose';
 import withGetMessages from '../../utils/withGetMessages';
@@ -12,7 +12,6 @@ import HeaderIcon from '../../components/HeaderIcon';
 import StyledLink from '../../components/StyledLink';
 import { Container, StyledImg, CardWrapper } from './styled-components';
 import updatePathname from '../../utils/updatePathname';
-import DataChannelAdapter from './DataChannelAdapter';
 
 const dataChannels = [
   {

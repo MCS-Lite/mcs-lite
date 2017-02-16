@@ -2,8 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import { storiesOf } from '@kadira/storybook';
 import DataChannelCard from './DataChannelCard';
-import withDataChannelCard from './withDataChannelCard';
-import DataChannel from '../DataChannel';
 import Switch from '../Switch';
 
 storiesOf('DataChannelCard', module)
@@ -54,23 +52,5 @@ storiesOf('DataChannelCard', module)
       >
         <Switch />
       </DataChannelCard>,
-    { inline: true },
-  )
-
-  .addWithInfo(
-    'withDataChannelCard (HOC)',
-    'Use with HOC.',
-    () => {
-      const CustomDataChannel = withDataChannelCard(({
-        header: <div>header</div>,
-        title: 'title',
-        subtitle: 'subtitle',
-        description: 'description',
-      }))(DataChannel.ControlSwitch);
-
-      return (
-        <CustomDataChannel />
-      );
-    },
     { inline: true },
   );

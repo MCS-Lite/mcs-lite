@@ -1,7 +1,7 @@
 import React, { PropTypes } from 'react';
 import styled from 'styled-components';
 import R from 'ramda';
-import { DataChannel } from 'mcs-lite-ui';
+import DataChannel from '../DataChannel';
 
 const Wrapper = styled.div`
   width: 100%;
