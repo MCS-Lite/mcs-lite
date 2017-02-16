@@ -1,6 +1,5 @@
 import React, { PropTypes } from 'react';
 import styled from 'styled-components';
-import withDataChannelCard from './withDataChannelCard';
 import P from '../P';
 import Heading from '../Heading';
 
@@ -27,7 +26,7 @@ const StyledHeading = styled(Heading)`
   margin-top: 5px;
 `;
 
-const BaseComponent = ({ items, ...otherProps }) =>
+const DisplayMultipleValue = ({ items, ...otherProps }) =>
   <Container {...otherProps} >
     {items.map(({ name, value }) => (
       <div key={name}>
@@ -37,11 +36,12 @@ const BaseComponent = ({ items, ...otherProps }) =>
     ))}
   </Container>;
 
-BaseComponent.propTypes = {
+DisplayMultipleValue.displayName = 'DisplayMultipleValue';
+DisplayMultipleValue.propTypes = {
   items: PropTypes.arrayOf(PropTypes.shape({
     name: PropTypes.string.isRequired,
     value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
   })).isRequired,
 };
 
-export default withDataChannelCard(BaseComponent, 'DisplayMultipleValue');
+export default DisplayMultipleValue;

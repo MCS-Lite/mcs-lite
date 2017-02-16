@@ -1,6 +1,5 @@
 import React, { PropTypes } from 'react';
 import styled from 'styled-components';
-import withDataChannelCard from './withDataChannelCard';
 import P from '../P';
 import Heading from '../Heading';
 
@@ -22,15 +21,16 @@ const StyledP = styled(P)`
   margin-top: 10px;
 `;
 
-const BaseComponent = ({ value, unit, ...otherProps }) =>
+const DisplayUnitValue = ({ value, unit, ...otherProps }) =>
   <Container {...otherProps} >
     <StyledHeading color="primary">{value}</StyledHeading>
     {unit && <StyledP color="grayBase">{unit}</StyledP>}
   </Container>;
 
-BaseComponent.propTypes = {
+DisplayUnitValue.displayName = 'DisplayUnitValue';
+DisplayUnitValue.propTypes = {
   value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
   unit: PropTypes.string,
 };
 
-export default withDataChannelCard(BaseComponent, 'DisplayUnitValue');
+export default DisplayUnitValue;

@@ -27,7 +27,7 @@ const Textarea = styled.textarea`
   }
 
   &:disabled {
-    background-color: initial;
+    background-color: ${props => props.theme.color.white};
   }
 `;
 

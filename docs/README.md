@@ -1,4 +1,15 @@
-## How to add new mcs-lite-icon?
+# MCS Lite Developer Guide
+
+## Table of Contents
+
+-   [DataChannelAdapter Design](#datachanneladapter-design)
+-   [How To Add New Icon?](#how-to-add-new-icon)
+
+## DataChannelAdapter Design
+
+![](./images/DataChannelAdapter.png)
+
+## How To Add New Icon?
 
 ![](./images/create-icon-step-1.png)
 ![](./images/create-icon-step-2.png)

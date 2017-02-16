@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { storiesOf } from '@kadira/storybook';
-import DataChannelCard from '.';
+import DataChannelCard from './DataChannelCard';
 import Switch from '../Switch';
 
 storiesOf('DataChannelCard', module)

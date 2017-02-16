@@ -3,6 +3,9 @@
 -   Try it online - http://mcs-lite-ui.netlify.com/
 -   Try it online - http://mcs-lite-mobile-web.netlify.com/
 
+* [Developer Guide](./docs/README.md)
+
+
 ## Requirements
 
 -   node >= 7.5.0

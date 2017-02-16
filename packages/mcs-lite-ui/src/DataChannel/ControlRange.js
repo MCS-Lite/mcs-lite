@@ -1,11 +1,9 @@
 import React, { PropTypes } from 'react';
 import styled from 'styled-components';
 import R from 'ramda';
-import withDataChannelCard from './withDataChannelCard';
 import InputRange from '../InputRange';
 import P from '../P';
-
-const isNumber = R.is(Number);
+import isNumber from '../utils/isNumber';
 
 const Container = styled.div`
   width: 100%;
@@ -57,7 +55,7 @@ const InputWrapper = styled.div`
   padding: 0 ${props => `${props.labels.length <= 2 ? 0 : (100 / props.labels.length / 2) - 3}%`};
 `;
 
-const BaseComponent = ({ value, onChange, labels, valueMapper, children, ...otherProps }) => {
+const ControlRange = ({ value, onSubmit, labels, valueMapper, ...otherProps }) => {
   const min = isNumber(labels[0]) ? labels[0] : 0;
   const max = isNumber(labels[1]) ? labels[1] : labels.length - 1;
 
@@ -68,27 +66,25 @@ const BaseComponent = ({ value, onChange, labels, valueMapper, children, ...othe
       </LabelWrapper>
 
       <InputWrapper labels={labels}>
-        {children}
-
         <ValueWrapper color="grayBase">Current value:&nbsp;
           <Value color="primary">{valueMapper(value)}</Value>
         </ValueWrapper>
-        <InputRange min={min} max={max} step={1} value={value} onChange={onChange} />
+        <InputRange min={min} max={max} step={1} value={value} onChange={onSubmit} />
       </InputWrapper>
     </Container>
   );
 };
 
-BaseComponent.propTypes = {
-  value: PropTypes.number,
-  onChange: PropTypes.func,
-  valueMapper: PropTypes.func, // index: number => string
-  children: PropTypes.any,     // for PWM
+ControlRange.displayName = 'ControlRange';
+ControlRange.propTypes = {
+  value: PropTypes.number,     // index of labels
+  onSubmit: PropTypes.func,
+  valueMapper: PropTypes.func, // index: number => value: string
   labels: PropTypes.array.isRequired,
 };
 
-BaseComponent.defaultProps = {
+ControlRange.defaultProps = {
   valueMapper: R.identity,
 };
 
-export default withDataChannelCard(BaseComponent, 'ControlRange');
+export default ControlRange;

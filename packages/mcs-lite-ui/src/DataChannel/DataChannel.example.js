@@ -4,294 +4,162 @@ import React from 'react';
 import styled from 'styled-components';
 import { storiesOf, action } from '@kadira/storybook';
 import DataChannel from '.';
-import withDataChannelCard from './withDataChannelCard';
 import ButtonClear from './ButtonClear';
-import Button from '../Button';
-import Input from '../Input';
-import P from '../P';
 
-const FlexWrapper = styled.div`
-  display: flex;
-  flex-wrap: wrap;
+const DemoWrapper = styled.div`
 
   > * {
     margin: 7.5px;
-    width: 280px;
+    width: 600px;
+    background: white;
   }
 `;
 
 storiesOf('DataChannel', module)
   .addWithInfo(
     'ButtonClear',
-    'Shared Button.',
+    'Shared clear button.',
     () => <ButtonClear />,
     { inline: true },
   )
 
   .addWithInfo(
-    'withDataChannelCard (HOC)',
-    'Use with HOC.',
-    () => {
-      const Component = () => <div>Wrap with HOC</div>;
-      const CustomDataChannel = withDataChannelCard(Component);
-
-      return (
-        <CustomDataChannel
-          title="Title"
-          subtitle="123125125125125"
-          description="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
+    'DisplayStatus',
+    '',
+    () =>
+      <DemoWrapper>
+        <DataChannel.DisplayStatus
+          labels={['OFF', 'ON']}
         />
-      );
-    },
+        <DataChannel.DisplayStatus
+          value={2}
+          labels={['Apple1', 'Apple2', 'Pen', 'Pineapple', 'PPAPPPAPPPAP']}
+        />
+      </DemoWrapper>,
     { inline: true },
   )
 
   .addWithInfo(
-    'DataChannel.DisplayStatus',
-    '',
-    () =>
-      <DataChannel.DisplayStatus
-        title="DisplayStatus"
-        subtitle="123125125125125"
-        description="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
-        header={<a href="">Link</a>}
-        childrenProps={{
-          labels: ['OFF', 'ON'],
-        }}
-      />,
-    { inline: true },
-  )
-
-  .addWithInfo(
-    'DisplayStatus - Category',
-    '',
-    () =>
-      <DataChannel.DisplayStatus
-        title="DisplayStatus"
-        subtitle="123125125125125"
-        description="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
-        header={<a href="">Link</a>}
-        childrenProps={{
-          value: 2,
-          labels: ['Apple1', 'Apple2', 'Pen', 'Pineapple', 'PPAPPPAPPPAP'],
-        }}
-      />,
-    { inline: true },
-  )
-
-  .addWithInfo(
-    'DataChannel.DisplayUnitValue',
+    'DisplayUnitValue',
     '',
     () =>
       <DataChannel.DisplayUnitValue
-        title="DisplayUnitValue"
-        subtitle="123125125125125"
-        description="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
-        header={<a href="">Link</a>}
-        childrenProps={{
-          value: 1123124124121,
-          unit: '攝氏',
-        }}
+        value={1123124124121}
+        unit="攝氏"
       />,
     { inline: true },
   )
 
   .addWithInfo(
-    'DataChannel.DisplayMultipleValue',
+    'DisplayMultipleValue',
     '',
     () =>
       <DataChannel.DisplayMultipleValue
-        title="DisplayMultipleValue"
-        subtitle="123125125125125"
-        description="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
-        header={<a href="">Link</a>}
-        childrenProps={{
-          items: [
-            { name: 'Value', value: 1234455 },
-            { name: 'Period', value: 125125 },
-          ],
-        }}
+        items={[
+          { name: 'Value', value: 1234455 },
+          { name: 'Period', value: 125125 },
+        ]}
       />,
     { inline: true },
   )
 
   .addWithInfo(
-    'DataChannel.DisplayString',
+    'DisplayString',
     '',
     () =>
       <DataChannel.DisplayString
-        title="DisplayString"
-        subtitle="123125125125125"
-        description="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
-        header={<a href="">Link</a>}
-        childrenProps={{
-          value: 'value',
-          placeholder: 'This place holds Hex value.',
-        }}
+        value="value"
+        placeholder="This place holds Hex value."
       />,
     { inline: true },
   )
 
   .addWithInfo(
-    'DataChannel.ControlNumber',
+    'ControlNumber',
     '',
     () =>
       <DataChannel.ControlNumber
-        title="Title"
-        subtitle="123125125125125"
-        description="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
-        header={<a href="">Link</a>}
-        childrenProps={{
-          onSubmit: action('ControlNumber onSubmit'),
-          onChange: action('ControlNumber onChange'),
-          onClear: action('ControlNumber onClear'),
-          placeholder: 'placeholder',
-          unit: '攝氏',
-        }}
+        onSubmit={action('ControlNumber onSubmit')}
+        onChange={action('ControlNumber onChange')}
+        onClear={action('ControlNumber onClear')}
+        placeholder="placeholder"
+        unit="單位：攝氏"
       />,
     { inline: true },
   )
+
   .addWithInfo(
-    'DataChannel.ControlSwitch',
+    'ControlPeriod',
     '',
     () =>
+      <DataChannel.ControlPeriod
+        onSubmit={action('ControlPeriod onSubmit')}
+        onChange={action('ControlPeriod onChange')}
+        placeholder="placeholder"
+      />,
+    { inline: true },
+  )
+
+  .addWithInfo(
+    'ControlSwitch',
+    '<Swtich> component with renamed props.',
+    () =>
       <DataChannel.ControlSwitch
-        title="Title"
-        subtitle="123125125125125"
-        description="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
-        header={<a href="">Link</a>}
-        childrenProps={{
-          onClick: action('ControlSwitch onSubmit'),
-        }}
+        onSubmit={action('ControlSwitch onSubmit')}
       />,
     { inline: true },
   )
   .addWithInfo(
-    'DataChannel.ControlString',
+    'ControlString',
     '',
     () =>
       <DataChannel.ControlString
-        title="Title"
-        subtitle="123125125125125"
-        description="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
-        header={<a href="">Link</a>}
-        childrenProps={{
-          onSubmit: action('ControlString onSubmit'),
-          onChange: action('ControlString onChange'),
-          onClear: action('ControlString onClear'),
-          placeholder: 'placeholder',
-        }}
+        onSubmit={action('ControlString onSubmit')}
+        onChange={action('ControlString onChange')}
+        onClear={action('ControlString onClear')}
+        placeholder="placeholder"
       />,
     { inline: true },
   )
   .addWithInfo(
-    'DataChannel.ControlRange',
-    '',
-    () =>
-      <DataChannel.ControlRange
-        title="Title"
-        subtitle="123125125125125"
-        description="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
-        header={<a href="">Link</a>}
-        childrenProps={{
-          onChange: action('ControlRange onChange'),
-          labels: ['AAAAAA', 'BBBBB', 'CCCCC', 'DDDDD', 'EEEEE'],
-        }}
-      />,
-    { inline: true },
-  )
-  .addWithInfo(
-    'ControlRange - Category, GPIO and Analog',
+    'ControlRange',
     '',
     () => {
-      const categories = ['AAAAAA', 'BBBBB', 'CCCCC', 'DDDDD', 'EEEEE'];
-      const gpioLabels = ['Low', 'Heigh'];
+      const CATEGORIES = ['AAAAAA', 'BBBBB', 'CCCCC', 'DDDDD', 'EEEEE'];
+      const GPIOS = ['Low', 'Heigh'];
 
       return (
-        <FlexWrapper>
+        <DemoWrapper>
           <DataChannel.ControlRange
-            title="Category"
-            subtitle="Category"
-            description="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
-            header={<a href="">Link</a>}
-            childrenProps={{
-              onChange: action('ControlRange onChange'),
-              value: 3,
-              valueMapper: index => categories[index],
-              labels: categories,
-            }}
+            onSubmit={action('ControlRange onSubmit')}
+            labels={['AAAAAA', 'BBBBB', 'CCCCC', 'DDDDD', 'EEEEE']}
           />
 
           <DataChannel.ControlRange
-            title="GPIO"
-            subtitle="123125125125125"
-            description="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
-            header={<a href="">Link</a>}
-            childrenProps={{
-              onChange: action('ControlRange onChange'),
-              value: 0,
-              valueMapper: index => gpioLabels[index],
-              labels: gpioLabels,
-            }}
+            onSubmit={action('ControlRange onSubmit')}
+            value={3}
+            valueMapper={index => CATEGORIES[index]}
+            labels={CATEGORIES}
           />
 
           <DataChannel.ControlRange
-            title="Analog"
-            subtitle="123125125125125"
-            description="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
-            header={<a href="">Link</a>}
-            childrenProps={{
-              onChange: action('ControlRange onChange'),
-              value: 33,
-              labels: [0, 100],
-            }}
+            onSubmit={action('ControlRange onSubmit')}
+            value={0}
+            valueMapper={index => GPIOS[index]}
+            labels={GPIOS}
           />
-        </FlexWrapper>
+
+          <DataChannel.ControlRange
+            onSubmit={action('ControlRange onSubmit')}
+            value={33}
+            labels={[0, 100]}
+          />
+        </DemoWrapper>
       );
     },
     { inline: true },
   )
-  .addWithInfo(
-    'ControlRange - PWM',
-    '',
-    () => {
-      const Container = styled.div`
-        margin-bottom: 10px;
-      `;
 
-      const InputWrapper = styled.div`
-        display: flex;
-        margin-top: 5px;
-      `;
-
-      const StyledInput = styled(Input)`
-        margin-right: 10px;
-      `;
-
-      return (
-        <DataChannel.ControlRange
-          title="ControlPWM"
-          subtitle="123125125125125"
-          description="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
-          header={<a href="">Link</a>}
-          childrenProps={{
-            children: (
-              <Container>
-                <label htmlFor="input"><P color="grayBase">Period</P></label>
-                <InputWrapper>
-                  <StyledInput id="input" placeholder="Integer only" type="number" />
-                  <Button>OK</Button>
-                </InputWrapper>
-              </Container>
-            ),
-            onChange: action('ControlRange onChange'),
-            labels: [0, 100],
-          }}
-        />
-      );
-    },
-    { inline: true },
-  )
   .addWithInfo(
     'ControlRange - Stateful number',
     '',
@@ -303,15 +171,9 @@ storiesOf('DataChannel', module)
         render() {
           return (
             <DataChannel.ControlRange
-              title="Stateful number"
-              subtitle="123125125125125"
-              description="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
-              header={<a href="">Link</a>}
-              childrenProps={{
-                onChange: this.onChange,
-                value: this.state.value,
-                labels: this.labels,
-              }}
+              onChange={this.onChange}
+              value={this.state.value}
+              labels={this.labels}
             />
           );
         }
@@ -332,16 +194,10 @@ storiesOf('DataChannel', module)
         render() {
           return (
             <DataChannel.ControlRange
-              title="Stateful PPAP"
-              subtitle="123125125125125"
-              description="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
-              header={<a href="">Link</a>}
-              childrenProps={{
-                onChange: this.onChange,
-                value: this.state.value,
-                valueMapper: index => this.labels[index],
-                labels: this.labels,
-              }}
+              onChange={this.onChange}
+              value={this.state.value}
+              valueMapper={index => this.labels[index]}
+              labels={this.labels}
             />
           );
         }
@@ -350,26 +206,4 @@ storiesOf('DataChannel', module)
       return <StatefulControlRange />;
     },
     { inline: true },
-  )
-  .addWithInfo(
-    'Fixed width',
-    '280px for MCS',
-    () => {
-      const StyledComponent = styled(DataChannel.ControlSwitch)`
-        width: 280px;
-      `;
-
-      return (
-        <StyledComponent
-          title="Title"
-          subtitle="123125125125125"
-          description="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
-          header={<a href="">Link</a>}
-          childrenProps={{
-            onSubmit: action('StyledComponent onSubmit'),
-          }}
-        />
-      );
-    },
-    { inline: true, propTables: false },
   );
