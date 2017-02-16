@@ -7,6 +7,18 @@ const Wrapper = styled.div`
   width: 100%;
 `;
 
+/**
+ * type Event = {
+ *   type: 'submit'|'change'|'clear', // event type
+ *   id: string,                      // data channel id
+ *   values: {                        // datapoint values
+ *     value: string|number,
+ *     period?: number,
+ *   },
+ * }
+ * function eventHandler(event: Event): void {}
+ */
+
 class DataChannelAdapter extends React.Component {
   static propTypes = {
     dataChannelProps: PropTypes.shape({
