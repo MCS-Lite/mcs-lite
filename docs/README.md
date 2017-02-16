@@ -2,10 +2,10 @@
 
 ## Table of Contents
 
--   [DataChannel Design](#datachannel-design)
--   [How To Add New Icon?](#how-to-add-new -icon)
+-   [DataChannelAdapter Design](#datachanneladapter-design)
+-   [How To Add New Icon?](#how-to-add-new-icon)
 
-## DataChannel Design
+## DataChannelAdapter Design
 
 ![](./images/DataChannelAdapter.png)
 
