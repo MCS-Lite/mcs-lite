@@ -136,21 +136,21 @@ storiesOf('DataChannel', module)
           />
 
           <DataChannel.ControlRange
-            onChange={action('ControlRange onChange')}
+            onSubmit={action('ControlRange onSubmit')}
             value={3}
             valueMapper={index => CATEGORIES[index]}
             labels={CATEGORIES}
           />
 
           <DataChannel.ControlRange
-            onChange={action('ControlRange onChange')}
+            onSubmit={action('ControlRange onSubmit')}
             value={0}
             valueMapper={index => GPIOS[index]}
             labels={GPIOS}
           />
 
           <DataChannel.ControlRange
-            onChange={action('ControlRange onChange')}
+            onSubmit={action('ControlRange onSubmit')}
             value={33}
             labels={[0, 100]}
           />
