@@ -33,3 +33,9 @@ Object {
   "type": "mcs-lite-mobile-web/auth/SIGNOUT",
 }
 `;
+
+exports[`auth should return tryEnter actions 1`] = `
+Object {
+  "type": "mcs-lite-mobile-web/auth/TRY_ENTER",
+}
+`;

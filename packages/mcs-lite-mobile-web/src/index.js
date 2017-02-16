@@ -6,7 +6,8 @@ import 'normalize.css';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
-import { Router, Route, browserHistory, IndexRedirect, applyRouterMiddleware } from 'react-router';
+import { Router, Route, useRouterHistory, IndexRedirect, applyRouterMiddleware } from 'react-router';
+import { createHistory } from 'history';
 import useScroll from 'react-router-scroll/lib/useScroll';
 import { syncHistoryWithStore } from 'react-router-redux';
 import { ThemeProvider } from 'styled-components';
@@ -26,29 +27,30 @@ import configureStore from './store/configureStore';
 import './style';
 import './utils/i18n';
 
-const store = configureStore();
-const history = syncHistoryWithStore(browserHistory, store);
+const history = useRouterHistory(createHistory)({ basename: '/mobile' });
+const store = configureStore({}, history);
 
 ReactDOM.render(
   <Provider store={store}>
     <IntlProvider defaultLocale="zh-TW">
       <ThemeProvider theme={theme}>
-        <Router history={history} render={applyRouterMiddleware(useScroll())}>
-
+        <Router
+          history={syncHistoryWithStore(history, store)}
+          render={applyRouterMiddleware(useScroll())}
+        >
           <Route path="/signin" component={Signin} />
-
           <Route path="/" component={RequireAuth}>
-            <IndexRedirect to="/signin" />
+            <IndexRedirect to="devices" />
             <Route component={Layout.LayoutDefault}>
-              <Route path="/password" component={Password} />
-              <Route path="/devices" component={DeviceList} />
-              <Route path="/devices/:deviceId" component={DeviceDetail} />
-              <Route path="/devices/:deviceId/info" component={DeviceDetailInfo} />
-              <Route path="/devices/:deviceId/trigger" component={DeviceTrigger} />
-              <Route path="/devices/:deviceId/trigger/edit" component={DeviceTriggerEdit} />
+              <Route path="password" component={Password} />
+              <Route path="devices" component={DeviceList} />
+              <Route path="devices/:deviceId" component={DeviceDetail} />
+              <Route path="devices/:deviceId/info" component={DeviceDetailInfo} />
+              <Route path="devices/:deviceId/trigger" component={DeviceTrigger} />
+              <Route path="devices/:deviceId/trigger/edit" component={DeviceTriggerEdit} />
             </Route>
             <Route component={Layout.LayoutDialog}>
-              <Route path="/account" component={Account} />
+              <Route path="account" component={Account} />
             </Route>
           </Route>
         </Router>

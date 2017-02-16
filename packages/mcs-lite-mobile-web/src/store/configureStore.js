@@ -3,7 +3,6 @@
 
 import { createStore, applyMiddleware, compose } from 'redux';
 import { createEpicMiddleware } from 'redux-observable';
-import { browserHistory } from 'react-router';
 import { routerMiddleware } from 'react-router-redux';
 import { reducer, epic } from '../modules';
 
@@ -17,23 +16,25 @@ const composeEnhancers =
   window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ ?
     window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ : compose;
 
-const middlewares = [
-  createEpicMiddleware(epic),
-  routerMiddleware(browserHistory),
-];
+const configureStore = (initialState, history) => {
+  const middlewares = [
+    createEpicMiddleware(epic),
+    routerMiddleware(history),
+  ];
 
-/**
- * Prevents state from being mutated
- * Ref: https://github.com/buunguyen/redux-freeze#usage
- */
-if (process.env.NODE_ENV !== 'production') {
-  middlewares.push(require('redux-freeze'));
-}
+  /**
+   * Prevents state from being mutated
+   * Ref: https://github.com/buunguyen/redux-freeze#usage
+   */
+  if (process.env.NODE_ENV !== 'production') {
+    middlewares.push(require('redux-freeze'));
+  }
 
-const configureStore = initialState => createStore(
-  reducer,
-  initialState,
-  composeEnhancers(applyMiddleware(...middlewares)),
-);
+  return createStore(
+    reducer,
+    initialState,
+    composeEnhancers(applyMiddleware(...middlewares)),
+  );
+};
 
 export default configureStore;

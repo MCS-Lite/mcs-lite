@@ -1,4 +1,5 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import { Button, Input } from 'mcs-lite-ui';
 import { Signin as SIGNIN_URL } from 'mcs-lite-fetch-rx';
 import Helmet from 'react-helmet';
@@ -7,9 +8,11 @@ import withGetMessages from '../../utils/withGetMessages';
 import messages from './messages';
 import Logo from '../../components/Logo';
 import { StyledHr, Layout, Form } from './styled-components';
+import { actions as authActions } from '../../modules/auth';
 
 class Signin extends React.Component {
   state = { email: '', password: '' };
+  componentWillMount = () => this.props.tryEnter(); // Hint: When cookieToken avaliable
   onChange = e => this.setState({ [e.target.name]: e.target.value });
   render() {
     const { email, password } = this.state;
@@ -48,5 +51,11 @@ class Signin extends React.Component {
 }
 
 export default compose(
+  connect(
+    null,
+    {
+      tryEnter: authActions.tryEnter,
+    },
+  ),
   withGetMessages(messages, 'Signin'),
 )(Signin);
