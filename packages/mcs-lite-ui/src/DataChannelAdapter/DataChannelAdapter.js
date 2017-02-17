@@ -23,7 +23,17 @@ class DataChannelAdapter extends React.Component {
   static propTypes = {
     dataChannelProps: PropTypes.shape({
       id: PropTypes.string.isRequired,
-      type: PropTypes.string.isRequired,
+      type: PropTypes.oneOf([
+        'SWITCH_CONTROL', 'SWITCH_DISPLAY',
+        'INTEGER_CONTROL', 'INTEGER_DISPLAY',
+        'STRING_CONTROL', 'STRING_DISPLAY',
+        'HEX_CONTROL', 'HEX_DISPLAY',
+        'FLOAT_DISPLAY', 'FLOAT_CONTROL',
+        'GPIO_CONTROL', 'GPIO_DISPLAY',
+        'CATEGORY_CONTROL', 'CATEGORY_DISPLAY',
+        'ANALOG_CONTROL',
+        'PWM_DISPLAY', 'PWM_CONTROL',
+      ]).isRequired,
       values: PropTypes.shape({
         value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
         period: PropTypes.number,
@@ -42,7 +52,7 @@ class DataChannelAdapter extends React.Component {
     const { id, values, type, format } = dataChannelProps;
 
     return R.cond([
-      [R.equals('Switch_Control'), () =>
+      [R.equals('SWITCH_CONTROL'), () =>
         <DataChannel.ControlSwitch
           value={Boolean(values.value)}
           onSubmit={() => eventHandler({
@@ -52,13 +62,13 @@ class DataChannelAdapter extends React.Component {
           })}
         />,
       ],
-      [R.equals('Switch_Display'), () =>
+      [R.equals('SWITCH_DISPLAY'), () =>
         <DataChannel.DisplayStatus
           value={values.value && values.value ? 1 : 0}
           labels={['OFF', 'ON']}
         />,
       ],
-      [R.equals('Integer_Control'), () =>
+      [R.equals('INTEGER_CONTROL'), () =>
         <DataChannel.ControlNumber
           placeholder="Integer only"
           unit={`單位：${format.unit}`}
@@ -68,13 +78,13 @@ class DataChannelAdapter extends React.Component {
           onClear={() => eventHandler({ type: 'clear', id, values: 0 })}
         />,
       ],
-      [R.equals('Integer_Display'), () =>
+      [R.equals('INTEGER_DISPLAY'), () =>
         <DataChannel.DisplayUnitValue
           value={values.value}
           unit={format.unit}
         />,
       ],
-      [R.equals('String_Control'), () =>
+      [R.equals('STRING_CONTROL'), () =>
         <DataChannel.ControlString
           placeholder="String only"
           value={values.value}
@@ -83,13 +93,13 @@ class DataChannelAdapter extends React.Component {
           onClear={() => eventHandler({ type: 'clear', id, values: 0 })}
         />,
       ],
-      [R.equals('String_Display'), () =>
+      [R.equals('STRING_DISPLAY'), () =>
         <DataChannel.DisplayString
           placeholder="String only"
           value={values.value}
         />,
       ],
-      [R.equals('Hex_Control'), () =>
+      [R.equals('HEX_CONTROL'), () =>
         <DataChannel.ControlString
           placeholder="Hex only"
           value={values.value}
@@ -98,19 +108,19 @@ class DataChannelAdapter extends React.Component {
           onClear={() => eventHandler({ type: 'clear', id, values: 0 })}
         />,
       ],
-      [R.equals('Hex_Display'), () =>
+      [R.equals('HEX_DISPLAY'), () =>
         <DataChannel.DisplayString
           placeholder="String only"
           value={values.value}
         />,
       ],
-      [R.equals('Float_Display'), () =>
+      [R.equals('FLOAT_DISPLAY'), () =>
         <DataChannel.DisplayUnitValue
           value={values.value}
           unit={format.unit}
         />,
       ],
-      [R.equals('Float_Control'), () =>
+      [R.equals('FLOAT_CONTROL'), () =>
         <DataChannel.ControlNumber
           placeholder="Float only"
           unit={`單位：${format.unit}`}
@@ -120,7 +130,7 @@ class DataChannelAdapter extends React.Component {
           onClear={() => eventHandler({ type: 'clear', id, values: 0 })}
         />,
       ],
-      [R.equals('GPIO_Control'), () => {
+      [R.equals('GPIO_CONTROL'), () => {
         const labels = ['Low', 'High'];
         const valueMapper = index => labels[index];
 
@@ -137,13 +147,13 @@ class DataChannelAdapter extends React.Component {
           />
         );
       }],
-      [R.equals('GPIO_Display'), () =>
+      [R.equals('GPIO_DISPLAY'), () =>
         <DataChannel.DisplayStatus
           value={values.value}
           labels={['Low', 'High']}
         />,
       ],
-      [R.equals('Category_Control'), () => {
+      [R.equals('CATEGORY_CONTROL'), () => {
         const value = R.findIndex(R.propEq('value', values.value))(format.items);
         const valueMapper = index => format.items[index].value;
 
@@ -160,7 +170,7 @@ class DataChannelAdapter extends React.Component {
           />
         );
       }],
-      [R.equals('Category_Display'), () => {
+      [R.equals('CATEGORY_DISPLAY'), () => {
         const value = R.findIndex(R.propEq('value', values.value))(format.items);
 
         return (
@@ -170,7 +180,7 @@ class DataChannelAdapter extends React.Component {
           />
         );
       }],
-      [R.equals('Analog_Control'), () =>
+      [R.equals('ANALOG_CONTROL'), () =>
         <DataChannel.ControlRange
           value={values.value}
           labels={[format.lowerbound, format.upperbound]}
@@ -181,7 +191,7 @@ class DataChannelAdapter extends React.Component {
           })}
         />,
       ],
-      [R.equals('PWM_Display'), () =>
+      [R.equals('PWM_DISPLAY'), () =>
         <DataChannel.DisplayMultipleValue
           items={[
             { name: 'Value', value: values.value },
@@ -189,7 +199,7 @@ class DataChannelAdapter extends React.Component {
           ]}
         />,
       ],
-      [R.equals('PWM_Control'), () =>
+      [R.equals('PWM_CONTROL'), () =>
         <Wrapper>
           <DataChannel.ControlPeriod
             value={values.period}
@@ -212,7 +222,7 @@ class DataChannelAdapter extends React.Component {
           />
         </Wrapper>,
       ],
-      [R.T, name => <div>{name} TBD</div>],
+      [R.T, name => <div>{name} NOT SUPPORTED.</div>],
     ])(type);
   }
 

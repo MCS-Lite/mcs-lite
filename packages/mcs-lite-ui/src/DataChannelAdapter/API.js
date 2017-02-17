@@ -1,7 +1,7 @@
 const DATA_CHANNELS = [
   {
     id: 'Integer Control id',
-    type: 'Integer_Control',
+    type: 'INTEGER_CONTROL',
     values: { value: 50 },
     format: {
       unit: 'ampere',
@@ -9,7 +9,7 @@ const DATA_CHANNELS = [
   },
   {
     id: 'Integer Display id',
-    type: 'Integer_Display',
+    type: 'INTEGER_DISPLAY',
     values: { value: 50 },
     format: {
       unit: 'ampere',
@@ -17,7 +17,7 @@ const DATA_CHANNELS = [
   },
   {
     id: 'Float Control id',
-    type: 'Float_Control',
+    type: 'FLOAT_CONTROL',
     values: { value: 50.1235 },
     format: {
       unit: 'ampere',
@@ -25,7 +25,7 @@ const DATA_CHANNELS = [
   },
   {
     id: 'Float Display id',
-    type: 'Float_Display',
+    type: 'FLOAT_DISPLAY',
     values: { value: 50.55252 },
     format: {
       unit: 'ampere',
@@ -33,43 +33,43 @@ const DATA_CHANNELS = [
   },
   {
     id: 'String Control id',
-    type: 'String_Control',
+    type: 'STRING_CONTROL',
     values: { value: 'Any string type value.' },
     format: {},
   },
   {
     id: 'String Display id',
-    type: 'String_Display',
+    type: 'STRING_DISPLAY',
     values: { value: 'Any string type value.' },
     format: {},
   },
   {
     id: 'Hex Control id',
-    type: 'Hex_Control',
+    type: 'HEX_CONTROL',
     values: { value: 'ABF123' },
     format: {},
   },
   {
     id: 'Hex Display id',
-    type: 'Hex_Display',
+    type: 'HEX_DISPLAY',
     values: { value: 'ABF123' },
     format: {},
   },
   {
     id: 'Switch Control id',
-    type: 'Switch_Control',
+    type: 'SWITCH_CONTROL',
     values: { value: 1 },
     format: {},
   },
   {
     id: 'Switch Display',
-    type: 'Switch_Display',
+    type: 'SWITCH_DISPLAY',
     values: { value: 0 },
     format: {},
   },
   {
     id: 'Category Control id',
-    type: 'Category_Control',
+    type: 'CATEGORY_CONTROL',
     values: { value: 'v2' },
     format: {
       items: [
@@ -80,7 +80,7 @@ const DATA_CHANNELS = [
   },
   {
     id: 'Category Display',
-    type: 'Category_Display',
+    type: 'CATEGORY_DISPLAY',
     values: { value: 'v2' },
     format: {
       items: [
@@ -94,19 +94,19 @@ const DATA_CHANNELS = [
   },
   {
     id: 'GPIO Control id',
-    type: 'GPIO_Control',
+    type: 'GPIO_CONTROL',
     values: { value: 1 },
     format: {},
   },
   {
     id: 'GPIO Display id',
-    type: 'GPIO_Display',
+    type: 'GPIO_DISPLAY',
     values: { value: 0 },
     format: {},
   },
   {
     id: 'Analog Control id',
-    type: 'Analog_Control',
+    type: 'ANALOG_CONTROL',
     values: { value: 23 },
     format: {
       lowerbound: 1,
@@ -115,13 +115,13 @@ const DATA_CHANNELS = [
   },
   {
     id: 'PWM Display',
-    type: 'PWM_Display',
+    type: 'PWM_DISPLAY',
     values: { value: 'value pwm', period: 20 },
     format: {},
   },
   {
     id: 'PWM Control',
-    type: 'PWM_Control',
+    type: 'PWM_CONTROL',
     values: { value: 1, period: 20 },
     format: {
       lowerbound: 1,

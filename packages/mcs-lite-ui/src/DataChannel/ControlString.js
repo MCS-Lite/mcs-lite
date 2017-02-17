@@ -38,7 +38,7 @@ const ControlString = ({ value, onChange, onSubmit, onClear, placeholder, ...oth
 
 ControlString.displayName = 'ControlString';
 ControlString.propTypes = {
-  value: PropTypes.number,
+  value: PropTypes.string,
   onChange: PropTypes.func,
   onSubmit: PropTypes.func,
   onClear: PropTypes.func,
