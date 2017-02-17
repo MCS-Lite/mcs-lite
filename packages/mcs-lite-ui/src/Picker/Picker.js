@@ -56,6 +56,7 @@ class Picker extends React.Component {
   onPanVertical = (e) => {
     this.toY = e.srcEvent.pageY;
     this.setState({ distance: this.last + (this.toY - this.fromY) });
+    e.preventDefault();
   }
 
   onPanVerticalEnd = () => {

@@ -8,9 +8,9 @@ const Container = styled.div`
   position: relative;
   height: ${CONTAINER_HEIGHT}px;
   overflow: hidden;
-  border: 1px solid black;
   cursor: default;
   display: flex;
+  background-color: rgba(255, 255, 255, 1);
 
   > * {
     flex-grow: 1;
@@ -28,10 +28,26 @@ const Indicator = styled.div`
   pointer-events: none;
 `;
 
+const Overlay = styled.div`
+  position: absolute;
+  height: 100%;
+  left: 0;
+  right: 0;
+  background-image:
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.6)),
+    linear-gradient(to top, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.6));
+  background-position: top, bottom;
+  background-size: 100% 32px;
+  background-repeat: no-repeat;
+  pointer-events: none;
+`;
+
+
 const PickerContainer = ({ children }) =>
   <Container>
     {children}
     <Indicator />
+    <Overlay />
   </Container>;
 
 export default PickerContainer;
