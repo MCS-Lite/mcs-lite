@@ -18,6 +18,7 @@ const Toast = styled(Card)`
   display: flex;
   align-items: center;
   padding: 0 16px;
+  font-size: ${props => props.theme.fontSize.p};
   min-height: ${props => props.theme.base.inputHeight};
   color: ${mapColorByKind};
   border: 1px solid ${mapColorByKind};
