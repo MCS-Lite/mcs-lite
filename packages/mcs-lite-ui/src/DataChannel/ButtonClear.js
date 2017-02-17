@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { IconTrashO } from 'mcs-lite-icon';
+import { IconDelete } from 'mcs-lite-icon';
 import A from '../A';
 import P from '../P';
 
@@ -14,7 +14,7 @@ const StyledA = styled(A)`
 `;
 
 const ButtonClear = props =>
-  <P {...props}><StyledA><IconTrashO />Clear</StyledA></P>;
+  <P {...props}><StyledA><IconDelete />Clear</StyledA></P>;
 
 ButtonClear.displayName = 'ButtonClear';
 

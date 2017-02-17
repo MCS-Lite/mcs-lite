@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import Helmet from 'react-helmet';
 import { PullToRefresh, Overlay, Menu, DataChannelCard, DataChannelAdapter } from 'mcs-lite-ui';
-import IconEllipsisV from 'mcs-lite-icon/lib/IconEllipsisV';
+import IconMoreVert from 'mcs-lite-icon/lib/IconMoreVert';
 import compose from 'recompose/compose';
 import withGetMessages from '../../utils/withGetMessages';
 import messages from './messages';
@@ -93,7 +93,7 @@ class DeviceDetail extends React.Component {
         <Helmet title="範例 A 的測試裝置" />
         <Header title="範例 A 的測試裝置" backTo={updatePathname('/devices')}>
           <HeaderIcon ref={getTarget} onClick={onMoreDetailClick}>
-            <IconEllipsisV />
+            <IconMoreVert />
           </HeaderIcon>
           {
             isMenuShow && (

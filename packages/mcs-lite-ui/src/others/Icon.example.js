@@ -39,7 +39,7 @@ storiesOf('Icon [mcs-lite-icon]')
     'API',
     '',
     () =>
-      <Icons.IconEllipsisV />,
+      <Icons.IconDelete />,
     { inline: true },
   )
   .addWithInfo(
@@ -47,7 +47,7 @@ storiesOf('Icon [mcs-lite-icon]')
     '',
     () =>
       <Spin>
-        <Icons.IconCircleLoading />
+        <Icons.IconLoading />
       </Spin>,
     { inline: true },
   )
