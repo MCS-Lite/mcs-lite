@@ -46,7 +46,7 @@ storiesOf('DataChannelAdapter', module)
             <DataChannelCard
               key={dataChannel.id}
               data-width="half"
-              title="Title"
+              title={dataChannel.type}
               subtitle="Last data point time : 2015-06-12 12:00"
               description="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
               header={<a href="">Link</a>}
