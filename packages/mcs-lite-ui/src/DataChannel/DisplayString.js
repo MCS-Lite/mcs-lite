@@ -7,7 +7,6 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-self: stretch;
-  margin-bottom: 10px;
 `;
 
 const StyledTextarea = styled(Textarea)`

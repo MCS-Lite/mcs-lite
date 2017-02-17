@@ -958,7 +958,7 @@ exports[`Storyshots DataChannel DisplayStatus 1`] = `
 
 exports[`Storyshots DataChannel DisplayString 1`] = `
 <div
-  className="gdQukP">
+  className="lkjDmd">
   <textarea
     className="haOaRY"
     disabled={true}
@@ -1044,7 +1044,393 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
     <div>
       <h4
         className="glocWb">
-        Title
+        INTEGER_CONTROL
+      </h4>
+      <small
+        className="jvIFlH">
+        Last data point time : 2015-06-12 12:00
+      </small>
+      <hr
+        className="dPNKKP iAugwC" />
+      <div
+        className="iyRJwF">
+        <MockReactTextTruncate
+          line={2}
+          text="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
+          truncateText=" ..." />
+      </div>
+    </div>
+  </div>
+  <div
+    className="czVqfN"
+    data-width="half">
+    <div
+      className="bUqfcz">
+      <a
+        href="">
+        Link
+      </a>
+    </div>
+    <div
+      className="dvQQLa">
+      <div
+        className="cthtBB">
+        <h1
+          className="ekhOej"
+          color="primary">
+          50
+        </h1>
+        <p
+          className="iiIFfD"
+          color="grayBase">
+          ampere
+        </p>
+      </div>
+    </div>
+    <div>
+      <h4
+        className="glocWb">
+        INTEGER_DISPLAY
+      </h4>
+      <small
+        className="jvIFlH">
+        Last data point time : 2015-06-12 12:00
+      </small>
+      <hr
+        className="dPNKKP iAugwC" />
+      <div
+        className="iyRJwF">
+        <MockReactTextTruncate
+          line={2}
+          text="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
+          truncateText=" ..." />
+      </div>
+    </div>
+  </div>
+  <div
+    className="czVqfN"
+    data-width="half">
+    <div
+      className="bUqfcz">
+      <a
+        href="">
+        Link
+      </a>
+    </div>
+    <div
+      className="dvQQLa">
+      <div
+        className="kdCvHd">
+        <p
+          className="dFZeAf"
+          color="grayBase">
+          單位：ampere
+        </p>
+        <input
+          className="jWbJOn"
+          kind="primary"
+          onChange={[Function]}
+          placeholder="Float only"
+          type="number"
+          value={50.1235} />
+        <div
+          className="kGGPNo">
+          <div
+            className="gVViGF"
+            onClick={[Function]}>
+            <a
+              className="enrdWE"
+              color="primary">
+              <svg
+                fill="currentColor"
+                height="1em"
+                preserveAspectRatio="xMidYMid meet"
+                viewBox="0 0 24 24"
+                width="1em">
+                <path
+                  d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zm9-10h1v10h-1V9zm-4 0h2v10h-2V9zM8 9h1v10H8V9zm7.5-5l-1-1h-5l-1 1H5v2h14V4h-3.5z" />
+              </svg>
+              Clear
+            </a>
+          </div>
+          <button
+            className="fqCsyW"
+            onClick={[Function]}>
+            Ok
+          </button>
+        </div>
+      </div>
+    </div>
+    <div>
+      <h4
+        className="glocWb">
+        FLOAT_CONTROL
+      </h4>
+      <small
+        className="jvIFlH">
+        Last data point time : 2015-06-12 12:00
+      </small>
+      <hr
+        className="dPNKKP iAugwC" />
+      <div
+        className="iyRJwF">
+        <MockReactTextTruncate
+          line={2}
+          text="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
+          truncateText=" ..." />
+      </div>
+    </div>
+  </div>
+  <div
+    className="czVqfN"
+    data-width="half">
+    <div
+      className="bUqfcz">
+      <a
+        href="">
+        Link
+      </a>
+    </div>
+    <div
+      className="dvQQLa">
+      <div
+        className="cthtBB">
+        <h1
+          className="ekhOej"
+          color="primary">
+          50.55252
+        </h1>
+        <p
+          className="iiIFfD"
+          color="grayBase">
+          ampere
+        </p>
+      </div>
+    </div>
+    <div>
+      <h4
+        className="glocWb">
+        FLOAT_DISPLAY
+      </h4>
+      <small
+        className="jvIFlH">
+        Last data point time : 2015-06-12 12:00
+      </small>
+      <hr
+        className="dPNKKP iAugwC" />
+      <div
+        className="iyRJwF">
+        <MockReactTextTruncate
+          line={2}
+          text="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
+          truncateText=" ..." />
+      </div>
+    </div>
+  </div>
+  <div
+    className="czVqfN"
+    data-width="half">
+    <div
+      className="bUqfcz">
+      <a
+        href="">
+        Link
+      </a>
+    </div>
+    <div
+      className="dvQQLa">
+      <div
+        className="lkjDmd">
+        <textarea
+          className="haOaRY"
+          kind="primary"
+          onChange={[Function]}
+          placeholder="String only"
+          value="Any string type value." />
+        <div
+          className="gkMZXk">
+          <div
+            className="gVViGF"
+            onClick={[Function]}>
+            <a
+              className="enrdWE"
+              color="primary">
+              <svg
+                fill="currentColor"
+                height="1em"
+                preserveAspectRatio="xMidYMid meet"
+                viewBox="0 0 24 24"
+                width="1em">
+                <path
+                  d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zm9-10h1v10h-1V9zm-4 0h2v10h-2V9zM8 9h1v10H8V9zm7.5-5l-1-1h-5l-1 1H5v2h14V4h-3.5z" />
+              </svg>
+              Clear
+            </a>
+          </div>
+          <button
+            className="fqCsyW"
+            onClick={[Function]}>
+            Ok
+          </button>
+        </div>
+      </div>
+    </div>
+    <div>
+      <h4
+        className="glocWb">
+        STRING_CONTROL
+      </h4>
+      <small
+        className="jvIFlH">
+        Last data point time : 2015-06-12 12:00
+      </small>
+      <hr
+        className="dPNKKP iAugwC" />
+      <div
+        className="iyRJwF">
+        <MockReactTextTruncate
+          line={2}
+          text="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
+          truncateText=" ..." />
+      </div>
+    </div>
+  </div>
+  <div
+    className="czVqfN"
+    data-width="half">
+    <div
+      className="bUqfcz">
+      <a
+        href="">
+        Link
+      </a>
+    </div>
+    <div
+      className="dvQQLa">
+      <div
+        className="lkjDmd">
+        <textarea
+          className="haOaRY"
+          disabled={true}
+          kind="primary"
+          placeholder="String only"
+          value="Any string type value." />
+      </div>
+    </div>
+    <div>
+      <h4
+        className="glocWb">
+        STRING_DISPLAY
+      </h4>
+      <small
+        className="jvIFlH">
+        Last data point time : 2015-06-12 12:00
+      </small>
+      <hr
+        className="dPNKKP iAugwC" />
+      <div
+        className="iyRJwF">
+        <MockReactTextTruncate
+          line={2}
+          text="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
+          truncateText=" ..." />
+      </div>
+    </div>
+  </div>
+  <div
+    className="czVqfN"
+    data-width="half">
+    <div
+      className="bUqfcz">
+      <a
+        href="">
+        Link
+      </a>
+    </div>
+    <div
+      className="dvQQLa">
+      <div
+        className="lkjDmd">
+        <textarea
+          className="haOaRY"
+          kind="primary"
+          onChange={[Function]}
+          placeholder="Hex only"
+          value="ABF123" />
+        <div
+          className="gkMZXk">
+          <div
+            className="gVViGF"
+            onClick={[Function]}>
+            <a
+              className="enrdWE"
+              color="primary">
+              <svg
+                fill="currentColor"
+                height="1em"
+                preserveAspectRatio="xMidYMid meet"
+                viewBox="0 0 24 24"
+                width="1em">
+                <path
+                  d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zm9-10h1v10h-1V9zm-4 0h2v10h-2V9zM8 9h1v10H8V9zm7.5-5l-1-1h-5l-1 1H5v2h14V4h-3.5z" />
+              </svg>
+              Clear
+            </a>
+          </div>
+          <button
+            className="fqCsyW"
+            onClick={[Function]}>
+            Ok
+          </button>
+        </div>
+      </div>
+    </div>
+    <div>
+      <h4
+        className="glocWb">
+        HEX_CONTROL
+      </h4>
+      <small
+        className="jvIFlH">
+        Last data point time : 2015-06-12 12:00
+      </small>
+      <hr
+        className="dPNKKP iAugwC" />
+      <div
+        className="iyRJwF">
+        <MockReactTextTruncate
+          line={2}
+          text="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
+          truncateText=" ..." />
+      </div>
+    </div>
+  </div>
+  <div
+    className="czVqfN"
+    data-width="half">
+    <div
+      className="bUqfcz">
+      <a
+        href="">
+        Link
+      </a>
+    </div>
+    <div
+      className="dvQQLa">
+      <div
+        className="lkjDmd">
+        <textarea
+          className="haOaRY"
+          disabled={true}
+          kind="primary"
+          placeholder="String only"
+          value="ABF123" />
+      </div>
+    </div>
+    <div>
+      <h4
+        className="glocWb">
+        HEX_DISPLAY
       </h4>
       <small
         className="jvIFlH">
@@ -1082,7 +1468,81 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
     <div>
       <h4
         className="glocWb">
-        Title
+        SWITCH_CONTROL
+      </h4>
+      <small
+        className="jvIFlH">
+        Last data point time : 2015-06-12 12:00
+      </small>
+      <hr
+        className="dPNKKP iAugwC" />
+      <div
+        className="iyRJwF">
+        <MockReactTextTruncate
+          line={2}
+          text="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
+          truncateText=" ..." />
+      </div>
+    </div>
+  </div>
+  <div
+    className="czVqfN"
+    data-width="half">
+    <div
+      className="bUqfcz">
+      <a
+        href="">
+        Link
+      </a>
+    </div>
+    <div
+      className="dvQQLa">
+      <div
+        className="frKWdl">
+        <div
+          className="gBTIWB">
+          <p
+            className="jyQfel"
+            color="grayBase">
+            OFF
+          </p>
+          <div>
+            <svg
+              className="jfcUeq"
+              color="success"
+              viewBox="0 0 20 20">
+              <circle
+                cx="10"
+                cy="10"
+                r="10" />
+            </svg>
+          </div>
+        </div>
+        <div
+          className="gBTIWB">
+          <p
+            className="jyQfel"
+            color="grayBase">
+            ON
+          </p>
+          <div>
+            <svg
+              className="gUywdC"
+              color="grayDark"
+              viewBox="0 0 20 20">
+              <circle
+                cx="10"
+                cy="10"
+                r="10" />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <h4
+        className="glocWb">
+        SWITCH_DISPLAY
       </h4>
       <small
         className="jvIFlH">
@@ -1159,7 +1619,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
     <div>
       <h4
         className="glocWb">
-        Title
+        CATEGORY_CONTROL
       </h4>
       <small
         className="jvIFlH">
@@ -1290,7 +1750,84 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
     <div>
       <h4
         className="glocWb">
-        Title
+        CATEGORY_DISPLAY
+      </h4>
+      <small
+        className="jvIFlH">
+        Last data point time : 2015-06-12 12:00
+      </small>
+      <hr
+        className="dPNKKP iAugwC" />
+      <div
+        className="iyRJwF">
+        <MockReactTextTruncate
+          line={2}
+          text="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
+          truncateText=" ..." />
+      </div>
+    </div>
+  </div>
+  <div
+    className="czVqfN"
+    data-width="half">
+    <div
+      className="bUqfcz">
+      <a
+        href="">
+        Link
+      </a>
+    </div>
+    <div
+      className="dvQQLa">
+      <div
+        className="ciDLcE">
+        <div
+          className="hxnWDy">
+          <div
+            className="kRwEkq">
+            <p
+              className="jyQfel"
+              color="grayBase">
+              Low
+            </p>
+          </div>
+          <div
+            className="kRwEkq">
+            <p
+              className="jyQfel"
+              color="grayBase">
+              High
+            </p>
+          </div>
+        </div>
+        <div
+          className="glLEWf">
+          <div
+            className="chvbqM"
+            color="grayBase">
+            Current value: 
+            <p
+              className="eBMqlM"
+              color="primary">
+              High
+            </p>
+          </div>
+          <input
+            className="hdhnFx"
+            kind="primary"
+            max={1}
+            min={0}
+            onChange={[Function]}
+            step={1}
+            type="range"
+            value={1} />
+        </div>
+      </div>
+    </div>
+    <div>
+      <h4
+        className="glocWb">
+        GPIO_CONTROL
       </h4>
       <small
         className="jvIFlH">
@@ -1326,7 +1863,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
           <p
             className="jyQfel"
             color="grayBase">
-            OFF
+            Low
           </p>
           <div>
             <svg
@@ -1345,7 +1882,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
           <p
             className="jyQfel"
             color="grayBase">
-            ON
+            High
           </p>
           <div>
             <svg
@@ -1364,7 +1901,84 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
     <div>
       <h4
         className="glocWb">
-        Title
+        GPIO_DISPLAY
+      </h4>
+      <small
+        className="jvIFlH">
+        Last data point time : 2015-06-12 12:00
+      </small>
+      <hr
+        className="dPNKKP iAugwC" />
+      <div
+        className="iyRJwF">
+        <MockReactTextTruncate
+          line={2}
+          text="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
+          truncateText=" ..." />
+      </div>
+    </div>
+  </div>
+  <div
+    className="czVqfN"
+    data-width="half">
+    <div
+      className="bUqfcz">
+      <a
+        href="">
+        Link
+      </a>
+    </div>
+    <div
+      className="dvQQLa">
+      <div
+        className="ciDLcE">
+        <div
+          className="hxnWDy">
+          <div
+            className="kRwEkq">
+            <div
+              className="jyQfel"
+              color="grayBase">
+              1
+            </div>
+          </div>
+          <div
+            className="kRwEkq">
+            <div
+              className="jyQfel"
+              color="grayBase">
+              100
+            </div>
+          </div>
+        </div>
+        <div
+          className="glLEWf">
+          <div
+            className="chvbqM"
+            color="grayBase">
+            Current value: 
+            <div
+              className="eBMqlM"
+              color="primary">
+              23
+            </div>
+          </div>
+          <input
+            className="hdhnFx"
+            kind="primary"
+            max={100}
+            min={1}
+            onChange={[Function]}
+            step={1}
+            type="range"
+            value={23} />
+        </div>
+      </div>
+    </div>
+    <div>
+      <h4
+        className="glocWb">
+        ANALOG_CONTROL
       </h4>
       <small
         className="jvIFlH">
@@ -1424,7 +2038,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
     <div>
       <h4
         className="glocWb">
-        Title
+        PWM_DISPLAY
       </h4>
       <small
         className="jvIFlH">
@@ -1530,7 +2144,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
     <div>
       <h4
         className="glocWb">
-        Title
+        PWM_CONTROL
       </h4>
       <small
         className="jvIFlH">
