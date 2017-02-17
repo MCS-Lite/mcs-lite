@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Transition from 'react-motion-ui-pack';
-import IconTimes from 'mcs-lite-icon/lib/IconTimes';
+import IconClose from 'mcs-lite-icon/lib/IconClose';
 import MaxWidthCenterWrapper from '../MaxWidthCenterWrapper';
 import StyledLink from '../StyledLink';
 import updatePathname from '../../utils/updatePathname';
@@ -38,7 +38,7 @@ const LayoutDialog = ({ children }) =>
   >
     <Container key="layoutDialog">
       <Header>
-        <StyledLink to={updatePathname('/devices')}><IconTimes /></StyledLink>
+        <StyledLink to={updatePathname('/devices')}><IconClose /></StyledLink>
       </Header>
       <Main>{children}</Main>
     </Container>

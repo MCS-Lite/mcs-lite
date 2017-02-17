@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf, action } from '@kadira/storybook';
 import styled from 'styled-components';
-import { IconTrashO } from 'mcs-lite-icon';
+import { IconDelete } from 'mcs-lite-icon';
 import { MenuItem, Menu } from '.';
 import Heading from '../Heading';
 import P from '../P';
@@ -38,7 +38,7 @@ storiesOf('Menu', module)
         <MenuItem onClick={action('5')}><P color="error">MenuItem P error</P></MenuItem>
         <MenuItem onClick={action('6')}><A>MenuItem A</A></MenuItem>
         <MenuItem onClick={action('7')}><B>MenuItem B</B></MenuItem>
-        <MenuItem onClick={action('8')}><IconTrashO /></MenuItem>
+        <MenuItem onClick={action('8')}><IconDelete /></MenuItem>
       </StyledMenu>,
     { inline: true },
   );

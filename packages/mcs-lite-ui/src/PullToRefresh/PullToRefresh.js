@@ -4,7 +4,7 @@
 import React, { PropTypes } from 'react';
 import Hammer from 'react-hammerjs';
 import styled from 'styled-components';
-import { IconArrowDown, IconCircleLoading } from 'mcs-lite-icon';
+import { IconGoDown, IconLoading as MLIconLoading } from 'mcs-lite-icon';
 import Heading from '../Heading';
 import Spin from '../Spin';
 
@@ -38,8 +38,8 @@ class PullToRefresh extends React.Component {
   }
 
   static defaultProps = {
-    IconArrow: () => <Heading level={2} color="grayBase"><Spin><IconCircleLoading /></Spin></Heading>,
-    IconLoading: () => <Heading level={2} color="grayBase"><IconArrowDown /></Heading>,
+    IconLoading: () => <Heading level={2} color="grayBase"><Spin><MLIconLoading /></Spin></Heading>,
+    IconArrow: () => <Heading level={2} color="grayBase"><IconGoDown /></Heading>,
   }
 
   constructor(props) {
@@ -107,7 +107,7 @@ class PullToRefresh extends React.Component {
           style={{ marginTop: distance }}
         >
           <LoadingContainer distance={distance}>
-            {isLoading ? <IconArrow /> : <IconLoading />}
+            {isLoading ? <IconLoading /> : <IconArrow />}
           </LoadingContainer>
           {children}
         </PullWrapper>

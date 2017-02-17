@@ -22,7 +22,6 @@ const srcPath$ = Rx.Observable
 // --- IconA --- IconB --- ...
 const componentName$ = srcPath$
   .map(filepath => path.basename(filepath, path.extname(filepath)))
-  .map(filename => `Icon-${filename}`)
   .map(camelCase)
   .map(upperFirst);
 

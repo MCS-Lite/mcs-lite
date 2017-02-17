@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import Helmet from 'react-helmet';
-import IconAngleRight from 'mcs-lite-icon/lib/IconAngleRight';
+import IconChevronRight from 'mcs-lite-icon/lib/IconChevronRight';
 import { PreventDrag, PullToRefresh, P } from 'mcs-lite-ui';
 import compose from 'recompose/compose';
 import withGetMessages from '../../utils/withGetMessages';
@@ -33,7 +33,7 @@ class DeviceTrigger extends React.Component {
                     <P>觸發條件名稱 A</P>
                     <StyledSamll>{t('on')}</StyledSamll>
                   </div>
-                  <IconWrapper><IconAngleRight /></IconWrapper>
+                  <IconWrapper><IconChevronRight /></IconWrapper>
                 </Item>
               </StyledLink>
 
@@ -43,7 +43,7 @@ class DeviceTrigger extends React.Component {
                     <P>觸發條件名稱 A</P>
                     <StyledSamll>{t('off')}</StyledSamll>
                   </div>
-                  <IconWrapper><IconAngleRight /></IconWrapper>
+                  <IconWrapper><IconChevronRight /></IconWrapper>
                 </Item>
               </StyledLink>
             </PreventDrag>

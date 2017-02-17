@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Heading, B } from 'mcs-lite-ui';
-import IconBars from 'mcs-lite-icon/lib/IconBars';
+import IconMenu from 'mcs-lite-icon/lib/IconMenu';
 import IconArrowLeft from 'mcs-lite-icon/lib/IconArrowLeft';
 import MaxWidthCenterWrapper from '../MaxWidthCenterWrapper';
 import HeaderIcon from '../HeaderIcon';
@@ -67,7 +67,7 @@ const Header = ({ title, backTo, children }) =>
         <Left>
           {backTo
             ? <HeaderIcon to={backTo}><IconArrowLeft /></HeaderIcon>
-            : <HeaderIcon to={updatePathname('/account')}><IconBars /></HeaderIcon>
+            : <HeaderIcon to={updatePathname('/account')}><IconMenu /></HeaderIcon>
           }
         </Left>
         {title &&
