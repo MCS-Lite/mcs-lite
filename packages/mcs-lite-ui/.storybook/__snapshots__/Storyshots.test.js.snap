@@ -3342,3 +3342,47 @@ exports[`Storyshots Textarea With kind props 1`] = `
     placeholder="warning" />
 </div>
 `;
+
+exports[`Storyshots Toast API 1`] = `
+<div
+  className="hqyEEN"
+  kind="primary">
+  Success! You have delete the item.
+</div>
+`;
+
+exports[`Storyshots Toast With kind props 1`] = `
+<div
+  className="iQMpYt">
+  <div
+    className="dptwSt"
+    kind="default">
+    default
+     - You have delete the item.
+  </div>
+  <div
+    className="hqyEEN"
+    kind="primary">
+    primary
+     - You have delete the item.
+  </div>
+  <div
+    className="dVvONi"
+    kind="success">
+    success
+     - You have delete the item.
+  </div>
+  <div
+    className="iSyzWS"
+    kind="error">
+    error
+     - You have delete the item.
+  </div>
+  <div
+    className="ibtjeq"
+    kind="warning">
+    warning
+     - You have delete the item.
+  </div>
+</div>
+`;
