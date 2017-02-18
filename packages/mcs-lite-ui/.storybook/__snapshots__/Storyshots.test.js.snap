@@ -3624,15 +3624,19 @@ exports[`Storyshots Picker API 1`] = `
       }>
       <div
         className="sFYwZ">
-        2016
+        Apple
       </div>
       <div
         className="hqQMRe">
-        2017
+        Pen
       </div>
       <div
         className="hqQMRe">
-        2018
+        Apple pen
+      </div>
+      <div
+        className="hqQMRe">
+        Pineapple
       </div>
     </div>
   </MockReactHammerJS>
@@ -3655,51 +3659,11 @@ exports[`Storyshots Picker API 1`] = `
       }>
       <div
         className="hqQMRe">
-        1
+        PPAP
       </div>
       <div
         className="sFYwZ">
-        2
-      </div>
-      <div
-        className="hqQMRe">
-        3
-      </div>
-      <div
-        className="hqQMRe">
-        4
-      </div>
-      <div
-        className="hqQMRe">
-        5
-      </div>
-      <div
-        className="hqQMRe">
-        6
-      </div>
-      <div
-        className="hqQMRe">
-        7
-      </div>
-      <div
-        className="hqQMRe">
-        8
-      </div>
-      <div
-        className="hqQMRe">
-        9
-      </div>
-      <div
-        className="hqQMRe">
-        10
-      </div>
-      <div
-        className="hqQMRe">
-        11
-      </div>
-      <div
-        className="hqQMRe">
-        12
+        PAPA
       </div>
     </div>
   </MockReactHammerJS>

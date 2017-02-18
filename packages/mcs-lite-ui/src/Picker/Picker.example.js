@@ -1,10 +1,13 @@
 import React from 'react';
-import { storiesOf } from '@kadira/storybook';
+import { storiesOf, action } from '@kadira/storybook';
 import { Picker, PickerContainer } from '.';
 
 class StatefulPicker extends React.Component {
   state = { picker1: 0, picker2: 1 }
-  onChange = (index, props) => this.setState({ [props.name]: index })
+  onChange = (index, props) => {
+    this.setState({ [props.name]: index });
+    action('Picker onChange(index: number, props: object)')(index, props);
+  }
   render() {
     return (
       <PickerContainer>

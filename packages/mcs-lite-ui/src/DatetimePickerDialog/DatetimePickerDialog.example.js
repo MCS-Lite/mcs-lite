@@ -1,5 +1,5 @@
 import React from 'react';
-import { storiesOf } from '@kadira/storybook';
+import { storiesOf, action } from '@kadira/storybook';
 import DatetimePickerDialog from '.';
 import Input from '../Input';
 
@@ -8,7 +8,7 @@ storiesOf('DatetimePickerDialog', module)
     'API',
     `
       ~~~js
-      function onSubmit(value: number): void {} // // Unix Timestamp (milliseconds)
+      function onSubmit(value: number): void {} // Unix Timestamp (milliseconds)
       ~~~
     `,
     () => {
@@ -16,7 +16,10 @@ storiesOf('DatetimePickerDialog', module)
         state = { show: false, value: new Date(1463556631722).valueOf() };
         onShow = () => this.setState({ show: true });
         onHide = () => this.setState({ show: false });
-        onSubmit = value => this.setState({ value });
+        onSubmit = (value) => {
+          this.setState({ value });
+          action('DatetimePickerDialog onSubmit(value: number) Unix Timestamp (milliseconds)')(value);
+        }
         render() {
           return (
             <div>

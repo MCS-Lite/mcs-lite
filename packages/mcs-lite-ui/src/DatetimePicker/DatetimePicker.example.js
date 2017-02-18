@@ -1,5 +1,5 @@
 import React from 'react';
-import { storiesOf } from '@kadira/storybook';
+import { storiesOf, action } from '@kadira/storybook';
 import DatetimePicker from '.';
 
 storiesOf('DatetimePicker', module)
@@ -7,13 +7,13 @@ storiesOf('DatetimePicker', module)
     'API',
     `
       ~~~js
-      function onChange(value: number): void {} // // Unix Timestamp (milliseconds)
+      function onChange(value: number): void {} // Unix Timestamp (milliseconds)
       ~~~
     `,
     () =>
       <DatetimePicker
         defaultValue={new Date(1455780631722).valueOf()}
-        onChange={console.log} // eslint-disable-line
+        onChange={action('DatetimePicker onChange(value: number) Unix Timestamp (milliseconds)')}
         utcOffset={8}
       />,
     { inline: true },

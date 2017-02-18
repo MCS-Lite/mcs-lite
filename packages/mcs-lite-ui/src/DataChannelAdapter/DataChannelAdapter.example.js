@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { storiesOf } from '@kadira/storybook';
+import { storiesOf, action } from '@kadira/storybook';
 import DataChannelCard from '../DataChannelCard';
 import DATA_CHANNELS from './API';
 import DataChannelAdapter from '.';
@@ -53,7 +53,7 @@ storiesOf('DataChannelAdapter', module)
             >
               <DataChannelAdapter
                 dataChannelProps={dataChannel}
-                eventHandler={console.log} // eslint-disable-line
+                eventHandler={action('DataChannelAdapter eventHandler(event: Event)')}
               />
             </DataChannelCard>
           ))
