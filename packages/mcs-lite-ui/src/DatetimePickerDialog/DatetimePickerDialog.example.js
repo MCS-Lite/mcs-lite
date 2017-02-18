@@ -26,6 +26,7 @@ storiesOf('DatetimePickerDialog', module)
                 datetimePickerProps={{
                   defaultValue: this.state.value,
                   years: [2015, 2016, 2017, 2018],
+                  utcOffset: 8,
                 }}
                 show={this.state.show}
                 onHide={this.onHide}

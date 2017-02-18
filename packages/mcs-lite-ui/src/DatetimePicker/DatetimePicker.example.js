@@ -10,6 +10,7 @@ storiesOf('DatetimePicker', module)
       <DatetimePicker
         defaultValue={new Date(1455780631722).valueOf()}
         onChange={console.log} // eslint-disable-line
+        utcOffset={8}
       />,
     { inline: true },
   );
