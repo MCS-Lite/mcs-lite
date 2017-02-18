@@ -30,14 +30,12 @@ class Picker extends React.Component {
       PropTypes.number,
     ])).isRequired,
   }
-
   static defaultProps = {
     value: 0,
   }
 
   constructor(props) {
     super(props);
-
     this.state = { distance: this.calcDistanceByIndex(props.value) };
   }
 
@@ -58,19 +56,20 @@ class Picker extends React.Component {
   }
 
   onPanVerticalEnd = () => {
-    // const continueDistance = e.velocityY * e.velocityY * 100;
-    const index = this.calcIndexByDistance(this.state.distance);
-
-    if (!this.props.onChange) {
-      // Hint: make it control
+    if (this.props.onChange) {
+      // TODO: consider velocity for animation
+      // continueDistance = e.velocityY * e.velocityY * 100;
+      const index = this.calcIndexByDistance(this.state.distance);
+      this.props.onChange(index, this.props);
+    } else {
+      // Hint: Make it as control component - back to origin position.
       this.setState({
         distance: this.calcDistanceByIndex(this.props.value),
       });
-    } else {
-      this.props.onChange(index, this.props);
     }
   }
 
+  clampIndex = R.clamp(0, this.props.labels.length - 1);
   calcDistanceByIndex = (index) => {
     const distance = R.pipe(
       this.clampIndex,
@@ -80,7 +79,6 @@ class Picker extends React.Component {
 
     return distance;
   }
-  clampIndex = R.clamp(0, this.props.labels.length - 1);
   calcIndexByDistance = (distance) => {
     const index = R.pipe(
       R.subtract(R.__, ITEM_HEIGHT / 2),
@@ -105,9 +103,7 @@ class Picker extends React.Component {
         onPanStart={this.onPanVerticalStart}
         onPanEnd={this.onPanVerticalEnd}
         direction="DIRECTION_VERTICAL"
-        options={{
-          touchAction: 'pan-x pan-y',
-        }}
+        options={{ touchAction: 'pan-x pan-y' }}
       >
         <ItemWrapper style={{ marginTop: distance }}>
           {

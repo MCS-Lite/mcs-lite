@@ -1,5 +1,4 @@
 import React from 'react';
-import R from 'ramda';
 import { storiesOf } from '@kadira/storybook';
 import { Picker, PickerContainer } from '.';
 
@@ -13,13 +12,13 @@ class StatefulPicker extends React.Component {
           name="picker1"
           value={this.state.picker1}
           onChange={this.onChange}
-          labels={['2016', '2017', '2018']}
+          labels={['Apple', 'Pen', 'Apple pen', 'Pineapple']}
         />
         <Picker
           name="picker2"
           value={this.state.picker2}
           onChange={this.onChange}
-          labels={R.range(1, 13)}
+          labels={['PPAP', 'PAPA']}
         />
       </PickerContainer>
     );
@@ -34,7 +33,6 @@ storiesOf('Picker', module)
       function onChange(index: number, props: object): void {}
       ~~~
     `,
-    () =>
-      <StatefulPicker />,
+    () => <StatefulPicker />,
     { inline: true, propTables: [Picker]},
   );
