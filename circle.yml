@@ -19,6 +19,7 @@ test:
     - npm pack packages/mcs-lite-mobile-web
     - mkdir $CIRCLE_ARTIFACTS/beta
     - mv *.tgz $CIRCLE_ARTIFACTS/beta
+    - ./node_modules/.bin/codecov --token=9a81042e-f705-4092-b79d-ea3a678223cb
 
 general:
   artifacts:
