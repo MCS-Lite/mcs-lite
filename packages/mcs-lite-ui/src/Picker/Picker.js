@@ -70,27 +70,33 @@ class Picker extends React.Component {
   }
 
   clampIndex = R.clamp(0, this.props.labels.length - 1);
-  calcDistanceByIndex = (index) => {
-    const distance = R.pipe(
-      this.clampIndex,
-      R.negate,
-      R.multiply(ITEM_HEIGHT),
-    )(index);
 
-    return distance;
-  }
-  calcIndexByDistance = (distance) => {
-    const index = R.pipe(
-      R.subtract(R.__, ITEM_HEIGHT / 2),
-      Math.abs,
-      R.divide(R.__, ITEM_HEIGHT),
-      Math.ceil,
-      R.subtract(R.__, 1),
-      this.clampIndex,
-    )(distance);
+  /**
+   * Calculating the position.
+   * (index: number) => distance: number
+   *
+   * @author Michael Hsu
+   */
+  calcDistanceByIndex = R.pipe(
+    this.clampIndex,
+    R.multiply(ITEM_HEIGHT),
+    R.negate,
+  );
 
-    return index;
-  }
+  /**
+   * Calculating the active index.
+   * (distance: number) => index: number
+   *
+   * @author Michael Hsu
+   */
+  calcIndexByDistance = R.pipe(
+    R.subtract(R.__, ITEM_HEIGHT / 2),
+    Math.abs,
+    R.divide(R.__, ITEM_HEIGHT),
+    Math.ceil,
+    R.subtract(R.__, 1), // Remind: convert to index, start from 0.
+    this.clampIndex,
+  );
 
   render() {
     const { labels } = this.props;
