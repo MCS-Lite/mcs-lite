@@ -20,13 +20,13 @@ const Item = styled.div`
   height: ${ITEM_HEIGHT}px;
   user-select: none;
   color: ${props => props.active ? props.theme.color.black : props.theme.color.grayDark};
-  transition: color 0.25s ease;
+  ${''/* transition: color 0.25s ease; */}
 `;
 
 class Picker extends React.Component {
   static propTypes = {
     value: PropTypes.number.isRequired, // index
-    onChange: PropTypes.func,           // (index: number) => void
+    onChange: PropTypes.func,           // (index: number, props: object) => void
     labels: PropTypes.arrayOf(PropTypes.oneOfType([
       PropTypes.string,
       PropTypes.number,
@@ -60,6 +60,7 @@ class Picker extends React.Component {
   }
 
   onPanVerticalEnd = () => {
+    // const continueDistance = e.velocityY * e.velocityY * 100;
     const index = this.calcIndexByDistance(this.state.distance);
 
     if (!this.props.onChange) {
@@ -68,7 +69,7 @@ class Picker extends React.Component {
         distance: this.calcDistanceByIndex(this.props.value),
       });
     } else {
-      this.props.onChange(this.clampIndex(index));
+      this.props.onChange(index, this.props);
     }
   }
 
@@ -89,6 +90,7 @@ class Picker extends React.Component {
       R.divide(R.__, ITEM_HEIGHT),
       Math.ceil,
       R.subtract(R.__, 1),
+      this.clampIndex,
     )(distance);
 
     return index;

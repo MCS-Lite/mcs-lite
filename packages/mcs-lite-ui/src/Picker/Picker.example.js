@@ -1,28 +1,42 @@
 import React from 'react';
+import R from 'ramda';
 import { storiesOf } from '@kadira/storybook';
 import { Picker, PickerContainer } from '.';
 
 class PickerWithState extends React.Component {
-  state = { value1: 0, value2: 1 }
+  state = { value1: 0, value2: 1, value3: 1, value4: 1, value5: 5 }
   onValue1Change = index => this.setState({ value1: index });
   onValue2Change = index => this.setState({ value2: index });
+  onValue3Change = index => this.setState({ value3: index });
+  onValue4Change = index => this.setState({ value4: index });
+  onValue5Change = index => this.setState({ value5: index });
   render() {
     return (
       <PickerContainer>
         <Picker
           value={this.state.value1}
           onChange={this.onValue1Change}
-          labels={[
-            'name 1', 'name 2', 'name 3', 'name 4',
-            'name 5', 'name 6', 'name 7', 'name 8',
-            'name 9', 'name 10', 'name 11', 'name 12',
-          ]}
+          labels={['2016', '2017', '2018']}
         />
-
         <Picker
           value={this.state.value2}
           onChange={this.onValue2Change}
-          labels={['name 1', 'name 2', 'name 3', 'name 4']}
+          labels={R.range(1, 13)}
+        />
+        <Picker
+          value={this.state.value3}
+          onChange={this.onValue3Change}
+          labels={R.range(1, 32)}
+        />
+        <Picker
+          value={this.state.value4}
+          onChange={this.onValue4Change}
+          labels={R.range(0, 24)}
+        />
+        <Picker
+          value={this.state.value5}
+          onChange={this.onValue5Change}
+          labels={R.range(0, 60)}
         />
       </PickerContainer>
     );

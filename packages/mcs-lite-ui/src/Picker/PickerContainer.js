@@ -43,8 +43,8 @@ const Overlay = styled.div`
 `;
 
 
-const PickerContainer = ({ children }) =>
-  <Container>
+const PickerContainer = ({ children, ...otherProps }) =>
+  <Container {...otherProps}>
     {children}
     <Indicator />
     <Overlay />
