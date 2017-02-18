@@ -10,16 +10,18 @@ class DatetimePicker extends React.Component {
     defaultValue: PropTypes.number.isRequired, // Unix Timestamp (milliseconds)
     onChange: PropTypes.func,                  // (value: number) => void
     years: PropTypes.array,
+    utcOffset: PropTypes.number, // set hours offset, utc to display
   }
 
   static defaultProps = {
     onChange: emptyFunction,
     years: [2016, 2017],
+    utcOffset: 8,
   }
 
   constructor(props) {
     super(props);
-    this.state = { value: moment(this.props.defaultValue) };
+    this.state = { value: moment(this.props.defaultValue).utcOffset(props.utcOffset) };
   }
 
   onChange = (index, { name }) => {
