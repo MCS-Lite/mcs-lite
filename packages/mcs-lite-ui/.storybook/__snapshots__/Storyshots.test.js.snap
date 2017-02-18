@@ -2266,7 +2266,7 @@ exports[`Storyshots DataChannelCard Without description 1`] = `
 exports[`Storyshots DatetimePicker API 1`] = `
 <div
   className="bPCADX"
-  defaultValue={1487402503074}
+  defaultValue={1455780631722}
   onChange={[Function]}>
   <MockReactHammerJS
     direction="DIRECTION_VERTICAL"
@@ -2282,15 +2282,15 @@ exports[`Storyshots DatetimePicker API 1`] = `
       className="bVXAeq"
       style={
         Object {
-          "marginTop": -40,
+          "marginTop": -0,
         }
       }>
       <div
-        className="hqQMRe">
+        className="sFYwZ">
         2016
       </div>
       <div
-        className="sFYwZ">
+        className="hqQMRe">
         2017
       </div>
     </div>
@@ -2491,6 +2491,10 @@ exports[`Storyshots DatetimePicker API 1`] = `
         className="hqQMRe">
         28
       </div>
+      <div
+        className="hqQMRe">
+        29
+      </div>
     </div>
   </MockReactHammerJS>
   <MockReactHammerJS
@@ -2622,7 +2626,7 @@ exports[`Storyshots DatetimePicker API 1`] = `
       className="bVXAeq"
       style={
         Object {
-          "marginTop": -840,
+          "marginTop": -1200,
         }
       }>
       <div
@@ -2710,7 +2714,7 @@ exports[`Storyshots DatetimePicker API 1`] = `
         20
       </div>
       <div
-        className="sFYwZ">
+        className="hqQMRe">
         21
       </div>
       <div
@@ -2746,7 +2750,7 @@ exports[`Storyshots DatetimePicker API 1`] = `
         29
       </div>
       <div
-        className="hqQMRe">
+        className="sFYwZ">
         30
       </div>
       <div
@@ -2881,7 +2885,7 @@ exports[`Storyshots DatetimePickerDialog API 1`] = `
     kind="primary"
     onClick={[Function]}
     readOnly={true}
-    value="Sat Feb 18 2017 15:21:43 GMT+0800 (CST)" />
+    value="Wed May 18 2016 15:30:31 GMT+0800 (CST)" />
 </div>
 `;
 

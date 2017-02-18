@@ -10,7 +10,6 @@ const ITEM_HEIGHT = 40;
 
 const ItemWrapper = styled.div`
   padding-top: ${(CONTAINER_HEIGHT / 2) - (ITEM_HEIGHT / 2)}px;
-  ${''/* transition: margin 0.0s ease; */}
 `;
 
 const Item = styled.div`
@@ -20,7 +19,6 @@ const Item = styled.div`
   height: ${ITEM_HEIGHT}px;
   user-select: none;
   color: ${props => props.active ? props.theme.color.black : props.theme.color.grayDark};
-  ${''/* transition: color 0.25s ease; */}
 `;
 
 class Picker extends React.Component {

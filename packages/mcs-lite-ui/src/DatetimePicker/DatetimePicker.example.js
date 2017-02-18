@@ -8,8 +8,8 @@ storiesOf('DatetimePicker', module)
     '',
     () =>
       <DatetimePicker
-        defaultValue={new Date().valueOf()}
-        onChange={console.log}
+        defaultValue={new Date(1455780631722).valueOf()}
+        onChange={console.log} // eslint-disable-line
       />,
     { inline: true },
   );

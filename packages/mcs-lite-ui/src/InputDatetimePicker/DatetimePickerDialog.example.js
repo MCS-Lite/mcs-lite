@@ -9,7 +9,7 @@ storiesOf('DatetimePickerDialog', module)
     '',
     () => {
       class StatefulDatetimePickerDialog extends React.Component {
-        state = { show: false, value: new Date().valueOf() };
+        state = { show: false, value: new Date(1463556631722).valueOf() };
         onShow = () => this.setState({ show: true });
         onHide = () => this.setState({ show: false });
         onSubmit = value => this.setState({ value });
