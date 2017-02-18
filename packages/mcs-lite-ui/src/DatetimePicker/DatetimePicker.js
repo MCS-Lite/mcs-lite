@@ -19,7 +19,7 @@ class DatetimePicker extends React.Component {
 
   constructor(props) {
     super(props);
-    this.state = { value: moment(this.props.defaultValue).local() };
+    this.state = { value: moment(this.props.defaultValue) };
   }
 
   onChange = (index, { name }) => {

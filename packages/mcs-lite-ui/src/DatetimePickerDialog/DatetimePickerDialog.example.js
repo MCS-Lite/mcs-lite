@@ -18,7 +18,7 @@ storiesOf('DatetimePickerDialog', module)
             <div>
               <Input
                 onClick={this.onShow}
-                value={new Date(this.state.value).toString()}
+                value={new Date(this.state.value).toISOString()}
                 readOnly
               />
 
