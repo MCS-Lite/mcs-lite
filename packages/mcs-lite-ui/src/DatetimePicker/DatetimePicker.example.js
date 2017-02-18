@@ -5,7 +5,11 @@ import DatetimePicker from '.';
 storiesOf('DatetimePicker', module)
   .addWithInfo(
     'API',
-    '',
+    `
+      ~~~js
+      function onChange(value: number): void {} // // Unix Timestamp (milliseconds)
+      ~~~
+    `,
     () =>
       <DatetimePicker
         defaultValue={new Date(1455780631722).valueOf()}

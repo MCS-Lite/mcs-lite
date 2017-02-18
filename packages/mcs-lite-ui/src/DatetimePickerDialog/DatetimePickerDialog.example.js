@@ -6,7 +6,11 @@ import Input from '../Input';
 storiesOf('DatetimePickerDialog', module)
   .addWithInfo(
     'API',
-    '',
+    `
+      ~~~js
+      function onSubmit(value: number): void {} // // Unix Timestamp (milliseconds)
+      ~~~
+    `,
     () => {
       class StatefulDatetimePickerDialog extends React.Component {
         state = { show: false, value: new Date(1463556631722).valueOf() };
