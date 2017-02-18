@@ -8,7 +8,7 @@
     "start": "node -r dotenv/config ./node_modules/.bin/react-scripts start dotenv_config_path=.env.development",
     "prebuild": "npm run clean",
     "build": "node -r dotenv/config ./node_modules/.bin/react-scripts build dotenv_config_path=.env.production",
-    "test": "CI=true react-scripts test --env=jsdom",
+    "test": "CI=true react-scripts test --env=jsdom --coverage",
     "test:watch": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "extract:messages": "react-intl-cra './src/**/*.js' './messages.json'",
