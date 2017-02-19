@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
 import styled from 'styled-components';
-import { Card, Img, Heading } from 'mcs-lite-ui';
 import TextTruncate from 'react-text-truncate';
+import Card from '../Card';
+import Img from '../Img';
+import Heading from '../Heading';
 
 const StyledCard = styled(Card)`
   height: 120px;
@@ -18,11 +20,12 @@ const ContentWrapper = styled.div`
   padding: 8px;
 `;
 
-const DeviceCard = ({ title, image }) =>
-  <StyledCard>
+const MobileDeviceCard = ({ title, image, ...otherProps }) =>
+  <StyledCard {...otherProps}>
     <ImageWrapper>
       <Img src={image} />
     </ImageWrapper>
+
     <ContentWrapper>
       <Heading level={4} color="black">
         <TextTruncate line={4} truncateText=" ..." text={title} />
@@ -30,4 +33,10 @@ const DeviceCard = ({ title, image }) =>
     </ContentWrapper>
   </StyledCard>;
 
-export default DeviceCard;
+MobileDeviceCard.displayName = 'MobileDeviceCard';
+MobileDeviceCard.propTypes = {
+  title: PropTypes.string.isRequired,
+  image: PropTypes.string.isRequired,
+};
+
+export default MobileDeviceCard;

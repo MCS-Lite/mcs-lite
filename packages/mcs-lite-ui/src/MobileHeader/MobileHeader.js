@@ -1,16 +1,11 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
 import styled from 'styled-components';
-import { Heading, B } from 'mcs-lite-ui';
-import IconMenu from 'mcs-lite-icon/lib/IconMenu';
-import IconArrowLeft from 'mcs-lite-icon/lib/IconArrowLeft';
-import MaxWidthCenterWrapper from '../MaxWidthCenterWrapper';
-import HeaderIcon from '../HeaderIcon';
-import updatePathname from '../../utils/updatePathname';
-
-export const HEIGHT = '56px;';
+import MobileContentWrapper from '../MobileContentWrapper';
+import Heading from '../Heading';
+import B from '../B';
 
 const Container = styled.header`
-  height: ${HEIGHT};
+  height: ${props => props.theme.mobile.headerHeight};
 `;
 
 const Fixed = styled.div`
@@ -18,11 +13,11 @@ const Fixed = styled.div`
   left: 0;
   right: 0;
   background-color: ${props => props.theme.color.primary};
-  height: ${HEIGHT};
+  height: ${props => props.theme.mobile.headerHeight};
   box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.3);
 `;
 
-const Wrapper = styled(MaxWidthCenterWrapper)`
+const Wrapper = styled(MobileContentWrapper)`
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -60,24 +55,27 @@ const StyledHeading = styled(Heading)`
   overflow: hidden;
 `;
 
-const Header = ({ title, backTo, children }) =>
-  <Container>
+const MobileHeader = ({ title, leftChildren, rightChildren, ...otherProps }) =>
+  <Container {...otherProps}>
     <Fixed>
       <Wrapper>
-        <Left>
-          {backTo
-            ? <HeaderIcon to={backTo}><IconArrowLeft /></HeaderIcon>
-            : <HeaderIcon to={updatePathname('/account')}><IconMenu /></HeaderIcon>
-          }
-        </Left>
+        <Left>{leftChildren}</Left>
         {title &&
           <Center>
             <StyledHeading level={3} color="white"><B>{title}</B></StyledHeading>
           </Center>
         }
-        <Right>{children}</Right>
+        <Right>{rightChildren}</Right>
       </Wrapper>
     </Fixed>
   </Container>;
 
-export default Header;
+MobileHeader.displayName = 'MobileHeader';
+MobileHeader.propTypes = {
+  title: PropTypes.string,
+  leftChildren: PropTypes.any.isRequired,
+  rightChildren: PropTypes.any,
+};
+
+
+export default MobileHeader;

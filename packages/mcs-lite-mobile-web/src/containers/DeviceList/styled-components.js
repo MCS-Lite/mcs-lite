@@ -1,11 +1,8 @@
 import styled from 'styled-components';
-import { P } from 'mcs-lite-ui';
+import { P, MobileHeader, MobileContentWrapper } from 'mcs-lite-ui';
 import { opacity } from 'mcs-lite-theme';
-import MaxWidthCenterWrapper from '../../components/MaxWidthCenterWrapper';
-import { HEIGHT } from '../../components/Header/Header';
-import HeaderIcon from '../../components/HeaderIcon';
 
-export const Container = styled(MaxWidthCenterWrapper)`
+export const Container = styled(MobileContentWrapper)`
   padding: 8px;
 `;
 
@@ -16,8 +13,8 @@ export const CardWrapper = styled.div`
   }
 `;
 
-export const StyledHeaderIcon = styled(HeaderIcon)`
-  color: ${props => opacity(props.isFilterOpen ? 0.5 : 1)(props.theme.color.white)};
+export const StyledHeaderIcon = styled(MobileHeader.MobileHeaderIcon)`
+  color: ${props => opacity(props.active ? 0.5 : 1)(props.theme.color.white)};
 `;
 
 export const PlaceholdWrapper = styled(P)`
@@ -27,6 +24,6 @@ export const PlaceholdWrapper = styled(P)`
   position: absolute;
   width: 100%;
   left: 0;
-  top: ${HEIGHT};
+  top: ${props => props.theme.mobile.headerHeight};
   bottom: 0;
 `;

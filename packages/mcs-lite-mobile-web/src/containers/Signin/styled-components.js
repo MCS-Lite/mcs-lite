@@ -1,13 +1,12 @@
 import styled from 'styled-components';
-import { Hr } from 'mcs-lite-ui';
-import MaxWidthCenterWrapper from '../../components/MaxWidthCenterWrapper';
+import { Hr, MobileContentWrapper } from 'mcs-lite-ui';
 
 export const StyledHr = styled(Hr)`
   margin-top: 16px;
   margin-bottom: 16px;
 `;
 
-export const Layout = styled(MaxWidthCenterWrapper)`
+export const Layout = styled(MobileContentWrapper)`
   display: flex;
   flex-direction: column;
   height: 100%;
