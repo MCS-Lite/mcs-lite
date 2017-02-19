@@ -53,7 +53,7 @@ const fetchDeviceListEpic = (action$, store) =>
     .delayWhen(tokenAvailable(action$, store))
     .map(() => store.getState())
     .pluck('auth', 'access_token')
-    .mergeMap(accessToken => Observable.merge(
+    .switchMap(accessToken => Observable.merge(
       Observable.of(uiActions.setLoading()),
       Observable
         .from(fetchRx.fetchDeviceList(accessToken))
@@ -68,7 +68,7 @@ const fetchDeviceDetailEpic = (action$, store) =>
   action$.ofType(FETCH_DEVICE_DETAIL)
     .delayWhen(tokenAvailable(action$, store))
     .pluck('payload')
-    .mergeMap(deviceId => Observable.merge(
+    .switchMap(deviceId => Observable.merge(
       Observable.of(uiActions.setLoading()),
       Observable
         .from(fetchRx.fetchDeviceDetail({ deviceId }, store.getState().auth.access_token))
