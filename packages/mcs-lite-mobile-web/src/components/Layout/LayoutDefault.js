@@ -13,7 +13,7 @@ const LayoutDefault = ({ children, ...otherProps }) =>
 
 LayoutDefault.displayName = 'LayoutDefault';
 LayoutDefault.propTypes = {
-  children: PropTypes.any,
+  children: PropTypes.any.isRequired,
 };
 
 export default LayoutDefault;

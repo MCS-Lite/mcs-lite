@@ -1,7 +1,7 @@
 exports[`test should renders <Signin> correctly 1`] = `
 <styled.div>
   <HelmetWrapper />
-  <styled.img
+  <Logo
     alt="MCS Lite Logo"
     src="logo.svg" />
   <Styled(Hr) />
