@@ -1,9 +1,9 @@
 /* eslint import/prefer-default-export: 0 */
 
 import styled from 'styled-components';
-import MaxWidthCenterWrapper from '../../components/MaxWidthCenterWrapper';
+import { MobileContentWrapper } from 'mcs-lite-ui';
 
-export const Container = styled(MaxWidthCenterWrapper)`
+export const Container = styled(MobileContentWrapper)`
   padding: 16px 16px 56px 16px;
 
   > div + div {

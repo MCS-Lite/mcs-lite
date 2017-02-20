@@ -4,14 +4,17 @@ import R from 'ramda';
 import { connect } from 'react-redux';
 import Helmet from 'react-helmet';
 import Transition from 'react-motion-ui-pack';
-import { PullToRefresh, PreventDrag, Input, ClickOutside } from 'mcs-lite-ui';
+import { Link } from 'react-router';
+import {
+  PullToRefresh, PreventDrag, Input, ClickOutside, MobileDeviceCard,
+  MobileHeader,
+} from 'mcs-lite-ui';
 import IconSearch from 'mcs-lite-icon/lib/IconSearch';
+import IconMenu from 'mcs-lite-icon/lib/IconMenu';
 import compose from 'recompose/compose';
 import withGetMessages from '../../utils/withGetMessages';
 import messages from './messages';
 import { actions } from '../../modules/devices';
-import DeviceCard from '../../components/DeviceCard';
-import Header from '../../components/Header/Header';
 import StyledLink from '../../components/StyledLink';
 import { Container, CardWrapper, StyledHeaderIcon, PlaceholdWrapper } from './styled-components';
 import updatePathname from '../../utils/updatePathname';
@@ -39,29 +42,41 @@ class DeviceList extends React.Component {
     return (
       <div>
         <Helmet title={t('myTestDevices')} />
-        <Header title={!isFilterOpen && t('myTestDevices')}>
-          {isFilterOpen &&
-            <Transition
-              component={false}
-              enter={{ opacity: 1, marginLeft: 0 }}
-              leave={{ opacity: 0, marginLeft: 50 }}
+        <MobileHeader.MobileHeader
+          title={!isFilterOpen && t('myTestDevices')}
+          leftChildren={
+            <MobileHeader.MobileHeaderIcon
+              component={Link}
+              to={updatePathname('/account')}
             >
-              <Input
-                ref={getInput}
-                autoFocus
-                key="filter"
-                placeholder={t('search')}
-                value={filterValue}
-                onChange={onFilterChange}
-              />
-            </Transition>
+              <IconMenu />
+            </MobileHeader.MobileHeaderIcon>
           }
-          <ClickOutside onClick={onClickOutside}>
-            <StyledHeaderIcon onClick={onFilterClick} isFilterOpen={isFilterOpen}>
-              <IconSearch />
-            </StyledHeaderIcon>
-          </ClickOutside>
-        </Header>
+          rightChildren={[
+            isFilterOpen && (
+              <Transition
+                key="input"
+                component={false}
+                enter={{ opacity: 1, marginLeft: 0 }}
+                leave={{ opacity: 0, marginLeft: 50 }}
+              >
+                <Input
+                  ref={getInput}
+                  autoFocus
+                  key="filter"
+                  placeholder={t('search')}
+                  value={filterValue}
+                  onChange={onFilterChange}
+                />
+              </Transition>
+            ),
+            <ClickOutside key="icon" onClick={onClickOutside}>
+              <StyledHeaderIcon onClick={onFilterClick} active={isFilterOpen}>
+                <IconSearch />
+              </StyledHeaderIcon>
+            </ClickOutside>,
+          ]}
+        />
 
         <main>
           <PullToRefresh isLoading={isLoading} onPull={fetchDeviceList}>
@@ -75,7 +90,7 @@ class DeviceList extends React.Component {
                   {
                     devices.filter(includeDeviceName).map(device => (
                       <StyledLink key={device.deviceId} to={updatePathname(`/devices/${device.deviceId}`)}>
-                        <DeviceCard
+                        <MobileDeviceCard
                           title={device.deviceName}
                           image={device.deviceImageURL || 'https://img.mediatek.com/600/mtk.linkit/productBanner.png'}
                         />

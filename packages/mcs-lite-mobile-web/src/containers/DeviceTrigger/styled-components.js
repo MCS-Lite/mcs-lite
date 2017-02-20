@@ -1,8 +1,7 @@
 import styled from 'styled-components';
-import { Small } from 'mcs-lite-ui';
-import MaxWidthCenterWrapper from '../../components/MaxWidthCenterWrapper';
+import { Small, MobileContentWrapper } from 'mcs-lite-ui';
 
-export const Item = styled(MaxWidthCenterWrapper)`
+export const Item = styled(MobileContentWrapper)`
   padding: 8px 16px;
   border-bottom: 1px solid ${props => props.theme.color.grayDark};
   display: flex;

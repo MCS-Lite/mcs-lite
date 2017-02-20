@@ -1,14 +1,14 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { Input, Button } from 'mcs-lite-ui';
+import { Input, Button, MobileFixedFooter, MobileHeader } from 'mcs-lite-ui';
+import IconMenu from 'mcs-lite-icon/lib/IconMenu';
 import Helmet from 'react-helmet';
+import { Link } from 'react-router';
 import compose from 'recompose/compose';
 import withGetMessages from '../../utils/withGetMessages';
 import messages from './messages';
 import { actions } from '../../modules/auth';
-import Header from '../../components/Header';
 import StyledLink from '../../components/StyledLink';
-import FixedFooter from '../../components/FixedFooter';
 import { Container, Label, ButtonWrapper } from './styled-components';
 import updatePathname from '../../utils/updatePathname';
 
@@ -27,7 +27,17 @@ class Password extends React.Component {
     return (
       <div>
         <Helmet title={t('changePassword')} />
-        <Header title={t('changePassword')} />
+        <MobileHeader.MobileHeader
+          title={t('changePassword')}
+          leftChildren={
+            <MobileHeader.MobileHeaderIcon
+              component={Link}
+              to={updatePathname('/account')}
+            >
+              <IconMenu />
+            </MobileHeader.MobileHeaderIcon>
+          }
+        />
 
         <form onSubmit={onSubmit}>
           <main>
@@ -68,14 +78,14 @@ class Password extends React.Component {
             </Container>
           </main>
 
-          <FixedFooter>
+          <MobileFixedFooter>
             <ButtonWrapper>
               <StyledLink to={updatePathname('/account')}>
                 <Button kind="default" block>{t('cancel')}</Button>
               </StyledLink>
               <Button component="input" type="submit" value={t('save')} block />
             </ButtonWrapper>
-          </FixedFooter>
+          </MobileFixedFooter>
         </form>
       </div>
     );

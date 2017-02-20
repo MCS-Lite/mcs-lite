@@ -1,12 +1,13 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import Helmet from 'react-helmet';
-import { PullToRefresh, B, P } from 'mcs-lite-ui';
+import { PullToRefresh, B, P, MobileHeader } from 'mcs-lite-ui';
+import IconArrowLeft from 'mcs-lite-icon/lib/IconArrowLeft';
+import { Link } from 'react-router';
 import compose from 'recompose/compose';
 import withGetMessages from '../../utils/withGetMessages';
 import messages from './messages';
 import { actions } from '../../modules/devices';
-import Header from '../../components/Header';
 import { Container } from './styled-components';
 import updatePathname from '../../utils/updatePathname';
 
@@ -21,7 +22,18 @@ class DeviceDetailInfo extends React.Component {
     return (
       <div>
         <Helmet title={t('deviceIntro')} />
-        <Header title={t('deviceIntro')} backTo={updatePathname(`/devices/${device && device.deviceId}`)} />
+        <MobileHeader.MobileHeader
+          title={t('deviceIntro')}
+          leftChildren={
+            <MobileHeader.MobileHeaderIcon
+              component={Link}
+              to={updatePathname(`/devices/${device && device.deviceId}`)}
+            >
+              <IconArrowLeft />
+            </MobileHeader.MobileHeaderIcon>
+          }
+        />
+
         <main>
           <PullToRefresh isLoading={isLoading} onPull={fetch}>
             <Container>

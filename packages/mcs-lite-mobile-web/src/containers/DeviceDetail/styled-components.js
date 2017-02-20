@@ -1,8 +1,7 @@
 import styled from 'styled-components';
-import { Img } from 'mcs-lite-ui';
-import MaxWidthCenterWrapper from '../../components/MaxWidthCenterWrapper';
+import { Img, MobileContentWrapper } from 'mcs-lite-ui';
 
-export const Container = styled(MaxWidthCenterWrapper)`
+export const Container = styled(MobileContentWrapper)`
   padding: 4px;
 `;
 

@@ -1,15 +1,18 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import Helmet from 'react-helmet';
-import { PullToRefresh, Overlay, Menu, DataChannelCard, DataChannelAdapter } from 'mcs-lite-ui';
+import {
+  PullToRefresh, Overlay, Menu, DataChannelCard, DataChannelAdapter,
+  MobileHeader,
+} from 'mcs-lite-ui';
 import dataChannels from 'mcs-lite-ui/lib/DataChannelAdapter/API';
 import IconMoreVert from 'mcs-lite-icon/lib/IconMoreVert';
+import IconArrowLeft from 'mcs-lite-icon/lib/IconArrowLeft';
 import compose from 'recompose/compose';
+import { Link } from 'react-router';
 import withGetMessages from '../../utils/withGetMessages';
 import messages from './messages';
 import { actions } from '../../modules/devices';
-import Header from '../../components/Header';
-import HeaderIcon from '../../components/HeaderIcon';
 import StyledLink from '../../components/StyledLink';
 import { Container, StyledImg, CardWrapper } from './styled-components';
 import updatePathname from '../../utils/updatePathname';
@@ -29,13 +32,28 @@ class DeviceDetail extends React.Component {
     return (
       <div>
         <Helmet title="範例 A 的測試裝置" />
-        <Header title="範例 A 的測試裝置" backTo={updatePathname('/devices')}>
-          <HeaderIcon ref={getTarget} onClick={onMoreDetailClick}>
-            <IconMoreVert />
-          </HeaderIcon>
-          {
+        <MobileHeader.MobileHeader
+          title="範例 A 的測試裝置"
+          leftChildren={
+            <MobileHeader.MobileHeaderIcon
+              component={Link}
+              to={updatePathname('/devices')}
+            >
+              <IconArrowLeft />
+            </MobileHeader.MobileHeaderIcon>
+          }
+          rightChildren={[
+            <MobileHeader.MobileHeaderIcon
+              key="icon"
+              ref={getTarget}
+              component={Link}
+              onClick={onMoreDetailClick}
+            >
+              <IconMoreVert />
+            </MobileHeader.MobileHeaderIcon>,
             isMenuShow && (
               <Overlay
+                key="menu"
                 target={target}
                 onClickOutSide={onHide}
                 alignConfig={{ points: ['tr', 'bc'], offset: [20, -20]}}
@@ -49,9 +67,10 @@ class DeviceDetail extends React.Component {
                   </StyledLink>
                 </Menu.Menu>
               </Overlay>
-            )
-          }
-        </Header>
+            ),
+          ]}
+        />
+
         <main>
           <PullToRefresh isLoading={isLoading} onPull={fetch}>
             <div>

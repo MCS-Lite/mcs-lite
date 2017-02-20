@@ -2,11 +2,11 @@ import React from 'react';
 import styled from 'styled-components';
 import Transition from 'react-motion-ui-pack';
 import IconClose from 'mcs-lite-icon/lib/IconClose';
-import MaxWidthCenterWrapper from '../MaxWidthCenterWrapper';
+import { MobileContentWrapper } from 'mcs-lite-ui';
 import StyledLink from '../StyledLink';
 import updatePathname from '../../utils/updatePathname';
 
-const Container = styled(MaxWidthCenterWrapper)`
+const Container = styled(MobileContentWrapper)`
   height: 100%;
   display: flex;
   flex-direction: column;

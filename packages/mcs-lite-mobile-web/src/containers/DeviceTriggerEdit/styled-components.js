@@ -1,8 +1,7 @@
 import styled from 'styled-components';
-import { Switch, Hr, Small } from 'mcs-lite-ui';
-import MaxWidthCenterWrapper from '../../components/MaxWidthCenterWrapper';
+import { Switch, Hr, Small, MobileContentWrapper } from 'mcs-lite-ui';
 
-export const Item = styled(MaxWidthCenterWrapper)`
+export const Item = styled(MobileContentWrapper)`
   padding: 8px 16px;
   border-bottom: 1px solid ${props => props.theme.color.grayDark};
   display: flex;
@@ -10,7 +9,7 @@ export const Item = styled(MaxWidthCenterWrapper)`
   align-items: center;
 `;
 
-export const Body = styled(MaxWidthCenterWrapper)`
+export const Body = styled(MobileContentWrapper)`
   padding: 16px 16px 56px 16px;
 
   > * {

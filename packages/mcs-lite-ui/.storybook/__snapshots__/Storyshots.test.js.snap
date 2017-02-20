@@ -132,6 +132,10 @@ exports[`Storyshots API [mcs-lite-theme] [JSON] theme 1`] = `
         \"h3\": \"1.38rem\",
         \"h2\": \"1.69rem\",
         \"h1\": \"2.46rem\"
+      },
+      \"mobile\": {
+        \"maxWidth\": \"800px\",
+        \"headerHeight\": \"56px\"
       }
     }
   </pre>
@@ -3478,6 +3482,177 @@ exports[`Storyshots Menu Combination 1`] = `
     </svg>
   </div>
 </div>
+`;
+
+exports[`Storyshots MobileContentWrapper API 1`] = `
+<div
+  className="dfXHhG">
+  <div
+    className="llkJXV">
+    With max-width
+  </div>
+</div>
+`;
+
+exports[`Storyshots MobileDeviceCard API 1`] = `
+<div
+  className="bJJQOv">
+  <div
+    className="jhSFQr">
+    <div
+      className="hAprVT"
+      size="cover"
+      src="https://img.mediatek.com/600/mtk.linkit/productBanner.png" />
+  </div>
+  <div
+    className="cvAcKZ">
+    <h4
+      className="ezDjUV"
+      color="black">
+      <MockReactTextTruncate
+        line={4}
+        text="範例 B 的測試裝置"
+        truncateText=" ..." />
+    </h4>
+  </div>
+</div>
+`;
+
+exports[`Storyshots MobileDeviceCard Override height 1`] = `
+<div
+  className="fscmZo bJJQOv">
+  <div
+    className="jhSFQr">
+    <div
+      className="hAprVT"
+      size="cover"
+      src="https://img.mediatek.com/600/mtk.linkit/productBanner.png" />
+  </div>
+  <div
+    className="cvAcKZ">
+    <h4
+      className="ezDjUV"
+      color="black">
+      <MockReactTextTruncate
+        line={4}
+        text="範例 B 的測試裝置"
+        truncateText=" ..." />
+    </h4>
+  </div>
+</div>
+`;
+
+exports[`Storyshots MobileFixedFooter API 1`] = `
+<footer
+  className="jHdxNL">
+  <div
+    className="dfXHhG">
+    <div
+      className="fliFWR">
+      <button
+        className="eMqgsi">
+        Cancel
+      </button>
+      <button
+        className="JGlsS">
+        Submit
+      </button>
+    </div>
+  </div>
+</footer>
+`;
+
+exports[`Storyshots MobileHeader API 1`] = `
+<header
+  className="dNRrjG">
+  <div
+    className="jPhnUD">
+    <div
+      className="dLdvuC">
+      <div
+        className="gzrXWO">
+        <a
+          className="jtiRp">
+          <svg
+            fill="currentColor"
+            height="1em"
+            preserveAspectRatio="xMidYMid meet"
+            viewBox="0 0 24 24"
+            width="1em">
+            <path
+              d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
+          </svg>
+        </a>
+      </div>
+      <div
+        className="gIIDkH">
+        <h3
+          className="bmMTAH"
+          color="white">
+          <b
+            className="dbJQUp">
+            Device List
+          </b>
+        </h3>
+      </div>
+      <div
+        className="ibwtzP" />
+    </div>
+  </div>
+</header>
+`;
+
+exports[`Storyshots MobileHeader With right props 1`] = `
+<header
+  className="dNRrjG">
+  <div
+    className="jPhnUD">
+    <div
+      className="dLdvuC">
+      <div
+        className="gzrXWO">
+        <div
+          className="jtiRp">
+          <svg
+            fill="currentColor"
+            height="1em"
+            preserveAspectRatio="xMidYMid meet"
+            viewBox="0 0 24 24"
+            width="1em">
+            <path
+              d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
+          </svg>
+        </div>
+      </div>
+      <div
+        className="gIIDkH">
+        <h3
+          className="bmMTAH"
+          color="white">
+          <b
+            className="dbJQUp">
+            Device List
+          </b>
+        </h3>
+      </div>
+      <div
+        className="ibwtzP">
+        <a
+          className="jtiRp">
+          <svg
+            fill="currentColor"
+            height="1em"
+            preserveAspectRatio="xMidYMid meet"
+            viewBox="0 0 24 24"
+            width="1em">
+            <path
+              d="M15.5 14h-.8l-.3-.3c1-1.1 1.6-2.6 1.6-4.2C16 5.9 13.1 3 9.5 3S3 5.9 3 9.5 5.9 16 9.5 16c1.6 0 3.1-.6 4.2-1.6l.3.3v.8l5 5 1.5-1.5-5-5zm-6 0C7 14 5 12 5 9.5S7 5 9.5 5 14 7 14 9.5 12 14 9.5 14z" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
 `;
 
 exports[`Storyshots Overlay API 1`] = `

@@ -34,6 +34,11 @@ const fontSize = {
   h1: '2.46rem',
 };
 
+const mobile = {
+  maxWidth: '800px',
+  headerHeight: '56px',
+};
+
 export default {
   color: {
     ...gray,
@@ -41,4 +46,5 @@ export default {
   },
   base,
   fontSize,
+  mobile,
 };

@@ -2,12 +2,13 @@ import React from 'react';
 import { connect } from 'react-redux';
 import Helmet from 'react-helmet';
 import IconChevronRight from 'mcs-lite-icon/lib/IconChevronRight';
-import { PreventDrag, PullToRefresh, P } from 'mcs-lite-ui';
+import IconArrowLeft from 'mcs-lite-icon/lib/IconArrowLeft';
+import { PreventDrag, PullToRefresh, P, MobileHeader } from 'mcs-lite-ui';
+import { Link } from 'react-router';
 import compose from 'recompose/compose';
 import withGetMessages from '../../utils/withGetMessages';
 import messages from './messages';
 import { actions } from '../../modules/devices';
-import Header from '../../components/Header';
 import StyledLink from '../../components/StyledLink';
 import { Item, StyledSamll, IconWrapper } from './styled-components';
 import updatePathname from '../../utils/updatePathname';
@@ -23,7 +24,17 @@ class DeviceTrigger extends React.Component {
     return (
       <div>
         <Helmet title={t('triggerAndAction')} />
-        <Header title={t('triggerAndAction')} backTo={updatePathname(`/devices/${device && device.deviceId}`)} />
+        <MobileHeader.MobileHeader
+          title={t('triggerAndAction')}
+          leftChildren={
+            <MobileHeader.MobileHeaderIcon
+              component={Link}
+              to={updatePathname(`/devices/${device && device.deviceId}`)}
+            >
+              <IconArrowLeft />
+            </MobileHeader.MobileHeaderIcon>
+          }
+        />
         <main>
           <PullToRefresh isLoading={isLoading} onPull={fetch}>
             <PreventDrag>

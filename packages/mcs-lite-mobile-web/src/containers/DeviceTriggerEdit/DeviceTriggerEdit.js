@@ -2,14 +2,14 @@ import React from 'react';
 import { connect } from 'react-redux';
 import Helmet from 'react-helmet';
 import Transition from 'react-motion-ui-pack';
-import { P, InputGroup, Button, Input } from 'mcs-lite-ui';
+import IconArrowLeft from 'mcs-lite-icon/lib/IconArrowLeft';
+import { P, InputGroup, Button, Input, MobileFixedFooter, MobileHeader } from 'mcs-lite-ui';
+import { Link } from 'react-router';
 import compose from 'recompose/compose';
 import withGetMessages from '../../utils/withGetMessages';
 import messages from './messages';
 import { actions } from '../../modules/devices';
-import Header from '../../components/Header';
 import StyledLink from '../../components/StyledLink';
-import FixedFooter from '../../components/FixedFooter';
 import { Item, Body, StyledSamll, ButtonWrapper, ScaledSwitch, StyledHr } from './styled-components';
 import updatePathname from '../../utils/updatePathname';
 
@@ -26,7 +26,17 @@ class DeviceTriggerEdit extends React.Component {
     return (
       <div>
         <Helmet title={t('editTriggerAndAction')} />
-        <Header title={t('editTriggerAndAction')} backTo={updatePathname(`/devices/${device && device.deviceId}/trigger`)} />
+        <MobileHeader.MobileHeader
+          title={t('editTriggerAndAction')}
+          leftChildren={
+            <MobileHeader.MobileHeaderIcon
+              component={Link}
+              to={updatePathname(`/devices/${device && device.deviceId}/trigger`)}
+            >
+              <IconArrowLeft />
+            </MobileHeader.MobileHeaderIcon>
+          }
+        />
         <main>
           <Item>
             <P>觸發條件名稱 A觸發條件名稱 A觸發條件名稱 A觸發條件名稱 A觸發條件名稱 A觸發條件名稱 A觸發條件名稱 A</P>
@@ -69,14 +79,14 @@ class DeviceTriggerEdit extends React.Component {
             }
 
             {isChecked &&
-              <FixedFooter>
+              <MobileFixedFooter>
                 <ButtonWrapper>
                   <StyledLink to={updatePathname('/account')}>
                     <Button kind="default" block>{t('cancel')}</Button>
                   </StyledLink>
                   <Button component="input" type="submit" value={t('save')} block />
                 </ButtonWrapper>
-              </FixedFooter>
+              </MobileFixedFooter>
             }
           </form>
         </main>
