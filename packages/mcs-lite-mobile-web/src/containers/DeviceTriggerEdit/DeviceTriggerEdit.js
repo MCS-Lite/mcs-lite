@@ -1,21 +1,25 @@
-import React from 'react';
-import { connect } from 'react-redux';
+import React, { PropTypes } from 'react';
 import Helmet from 'react-helmet';
 import Transition from 'react-motion-ui-pack';
 import IconArrowLeft from 'mcs-lite-icon/lib/IconArrowLeft';
 import { P, InputGroup, Button, Input, MobileFixedFooter, MobileHeader } from 'mcs-lite-ui';
 import { Link } from 'react-router';
-import compose from 'recompose/compose';
-import withGetMessages from '../../utils/withGetMessages';
-import messages from './messages';
-import { actions } from '../../modules/devices';
 import StyledLink from '../../components/StyledLink';
 import { Item, Body, StyledSamll, ButtonWrapper, ScaledSwitch, StyledHr } from './styled-components';
 import updatePathname from '../../utils/updatePathname';
 
 class DeviceTriggerEdit extends React.Component {
+  static propTypes = {
+    device: PropTypes.object,
+    deviceId: PropTypes.string.isRequired,
+    getMessages: PropTypes.func.isRequired,
+    fetchDeviceDetail: PropTypes.func.isRequired,
+  }
+  static defaultProps = {
+    device: {},
+  }
   state = { isChecked: false };
-  componentDidMount = () => this.props.fetchDeviceDetail(this.props.deviceId);
+  componentWillMount = () => this.props.fetchDeviceDetail(this.props.deviceId);
   onSwitchClick = () => this.setState({ isChecked: !this.state.isChecked });
   onSubmit = e => e.preventDefault();
   render() {
@@ -31,7 +35,7 @@ class DeviceTriggerEdit extends React.Component {
           leftChildren={
             <MobileHeader.MobileHeaderIcon
               component={Link}
-              to={updatePathname(`/devices/${device && device.deviceId}/trigger`)}
+              to={updatePathname(`/devices/${device.deviceId}/trigger`)}
             >
               <IconArrowLeft />
             </MobileHeader.MobileHeaderIcon>
@@ -95,13 +99,4 @@ class DeviceTriggerEdit extends React.Component {
   }
 }
 
-export default compose(
-  connect(
-    ({ devices }, { params: { deviceId }}) => ({
-      deviceId,
-      device: devices[deviceId],
-    }),
-    { fetchDeviceDetail: actions.fetchDeviceDetail },
-  ),
-  withGetMessages(messages, 'DeviceTriggerEdit'),
-)(DeviceTriggerEdit);
+export default DeviceTriggerEdit;

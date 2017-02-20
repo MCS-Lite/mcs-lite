@@ -1,33 +1,33 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
 import { IntlProvider as ReactIntlProvider } from 'react-intl';
-import { connect } from 'react-redux';
-import { actions as routingActions } from '../../modules/routing';
 
 class IntlProvider extends React.Component {
-  componentDidMount() {
-    const { location, pushLocale, defaultLocale } = this.props;
+  static propTypes = {
+    locale: PropTypes.string,
+    defaultLocale: PropTypes.string.isRequired,
+    pushLocale: PropTypes.func.isRequired,
+  }
+  componentWillMount() {
+    const { locale, pushLocale, defaultLocale } = this.props;
 
     // Hint: Set to default locale. "/" => "/?locale=zh-TW"
-    if (!location.query.locale) {
+    if (!locale) {
       pushLocale(defaultLocale);
     }
   }
 
   render() {
-    const { location, defaultLocale, ...otherProps } = this.props;
+    const { locale, defaultLocale, ...otherProps } = this.props;
 
     return (
       <ReactIntlProvider
         {...otherProps}
         defaultLocale={defaultLocale}
-        locale={location.query.locale || defaultLocale}
-        messages={{}}
+        locale={locale || defaultLocale}
+        messages={{}} // TODO: import i18n messages object
       />
     );
   }
 }
 
-export default connect(
-  ({ routing }) => ({ location: routing.locationBeforeTransitions }),
-  ({ pushLocale: routingActions.pushLocale }),
-)(IntlProvider);
+export default IntlProvider;

@@ -1,21 +1,25 @@
-import React from 'react';
-import { connect } from 'react-redux';
+import React, { PropTypes } from 'react';
 import Helmet from 'react-helmet';
 import IconChevronRight from 'mcs-lite-icon/lib/IconChevronRight';
 import IconArrowLeft from 'mcs-lite-icon/lib/IconArrowLeft';
 import { PreventDrag, PullToRefresh, P, MobileHeader } from 'mcs-lite-ui';
 import { Link } from 'react-router';
-import compose from 'recompose/compose';
-import withGetMessages from '../../utils/withGetMessages';
-import messages from './messages';
-import { actions } from '../../modules/devices';
 import StyledLink from '../../components/StyledLink';
 import { Item, StyledSamll, IconWrapper } from './styled-components';
 import updatePathname from '../../utils/updatePathname';
 
 class DeviceTrigger extends React.Component {
-  state = { isMenuShow: false, target: undefined };
-  componentDidMount = () => this.fetch();
+  static propTypes = {
+    device: PropTypes.object,
+    deviceId: PropTypes.string.isRequired,
+    isLoading: PropTypes.bool.isRequired,
+    getMessages: PropTypes.func.isRequired,
+    fetchDeviceDetail: PropTypes.func.isRequired,
+  }
+  static defaultProps = {
+    device: {},
+  }
+  componentWillMount = () => this.fetch();
   fetch = () => this.props.fetchDeviceDetail(this.props.deviceId);
   render() {
     const { device, isLoading, getMessages: t } = this.props;
@@ -29,7 +33,7 @@ class DeviceTrigger extends React.Component {
           leftChildren={
             <MobileHeader.MobileHeaderIcon
               component={Link}
-              to={updatePathname(`/devices/${device && device.deviceId}`)}
+              to={updatePathname(`/devices/${device.deviceId}`)}
             >
               <IconArrowLeft />
             </MobileHeader.MobileHeaderIcon>
@@ -38,7 +42,7 @@ class DeviceTrigger extends React.Component {
         <main>
           <PullToRefresh isLoading={isLoading} onPull={fetch}>
             <PreventDrag>
-              <StyledLink to={updatePathname(`/devices/${device && device.deviceId}/trigger/edit`)}>
+              <StyledLink to={updatePathname(`/devices/${device.deviceId}/trigger/edit`)}>
                 <Item>
                   <div>
                     <P>觸發條件名稱 A</P>
@@ -48,7 +52,7 @@ class DeviceTrigger extends React.Component {
                 </Item>
               </StyledLink>
 
-              <StyledLink to={updatePathname(`/devices/${device && device.deviceId}/trigger/edit`)}>
+              <StyledLink to={updatePathname(`/devices/${device.deviceId}/trigger/edit`)}>
                 <Item>
                   <div>
                     <P>觸發條件名稱 A</P>
@@ -65,14 +69,4 @@ class DeviceTrigger extends React.Component {
   }
 }
 
-export default compose(
-  connect(
-    ({ devices, ui }, { params: { deviceId }}) => ({
-      deviceId,
-      device: devices[deviceId],
-      isLoading: ui.isLoading,
-    }),
-    { fetchDeviceDetail: actions.fetchDeviceDetail },
-  ),
-  withGetMessages(messages, 'DeviceTrigger'),
-)(DeviceTrigger);
+export default DeviceTrigger;
