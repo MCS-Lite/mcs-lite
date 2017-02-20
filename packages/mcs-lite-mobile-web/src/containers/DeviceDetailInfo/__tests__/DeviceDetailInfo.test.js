@@ -7,6 +7,20 @@ it('should return messages', () => {
   expect(require('../messages').default).toMatchSnapshot();
 });
 
+it('should renders <DeviceDetailInfo> correctly without device data', () => {
+  const wrapper = shallow(
+    <DeviceDetailInfo
+      getMessages={() => {}}
+      deviceId="deviceId"
+      isLoading={false}
+      fetchDeviceDetail={() => {}}
+    />,
+  );
+
+  expect(toJson(wrapper)).toMatchSnapshot();
+});
+
+
 it('should renders <DeviceDetailInfo> correctly', () => {
   const fetchMock = jest.fn();
   const wrapper = shallow(
@@ -19,6 +33,12 @@ it('should renders <DeviceDetailInfo> correctly', () => {
         createUserId: 'createUserId',
         deviceDescription: 'deviceDescription',
         deviceKey: 'deviceKey',
+        user: {
+          userName: 'userName',
+        },
+        prototype: {
+          version: 'version',
+        },
       }}
       isLoading={false}
       fetchDeviceDetail={fetchMock}

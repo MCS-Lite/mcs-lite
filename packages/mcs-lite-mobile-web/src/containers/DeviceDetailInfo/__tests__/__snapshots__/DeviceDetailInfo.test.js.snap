@@ -26,13 +26,13 @@ exports[`test should renders <DeviceDetailInfo> correctly 1`] = `
         <div>
           <B />
           <P>
-            createUserId
+            userName
           </P>
         </div>
         <div>
           <B />
           <P>
-            1.0
+            version
           </P>
         </div>
         <div>
@@ -56,6 +56,59 @@ exports[`test should renders <DeviceDetailInfo> correctly 1`] = `
           <P>
             deviceKey
           </P>
+        </div>
+      </styled.div>
+    </PullToRefresh>
+  </main>
+</div>
+`;
+
+exports[`test should renders <DeviceDetailInfo> correctly without device data 1`] = `
+<div>
+  <HelmetWrapper />
+  <MobileHeader
+    leftChildren={
+      <MobileHeaderIcon
+        component={[Function]}
+        to={[Function]}>
+        <IconArrowLeft
+          size="1em" />
+      </MobileHeaderIcon>
+    } />
+  <main>
+    <PullToRefresh
+      IconArrow={[Function]}
+      IconLoading={[Function]}
+      isLoading={false}
+      onPull={[Function]}>
+      <styled.div>
+        <div>
+          <B />
+          <P />
+        </div>
+        <div>
+          <B />
+          <P />
+        </div>
+        <div>
+          <B />
+          <P />
+        </div>
+        <div>
+          <B />
+          <P />
+        </div>
+        <div>
+          <B>
+            DeviceId
+          </B>
+          <P />
+        </div>
+        <div>
+          <B>
+            DeviceKey
+          </B>
+          <P />
         </div>
       </styled.div>
     </PullToRefresh>
