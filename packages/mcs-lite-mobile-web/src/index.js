@@ -29,14 +29,16 @@ import './utils/i18n';
 
 const history = useRouterHistory(createHistory)({ basename: '/mobile' });
 const store = configureStore({}, history);
+const routerHistory = syncHistoryWithStore(history, store);
+const render = applyRouterMiddleware(useScroll());
 
 ReactDOM.render(
   <Provider store={store}>
     <IntlProvider defaultLocale="zh-TW">
       <ThemeProvider theme={theme}>
         <Router
-          history={syncHistoryWithStore(history, store)}
-          render={applyRouterMiddleware(useScroll())}
+          history={routerHistory}
+          render={render}
         >
           <Route path="/signin" component={Signin} />
           <Route path="/" component={RequireAuth}>

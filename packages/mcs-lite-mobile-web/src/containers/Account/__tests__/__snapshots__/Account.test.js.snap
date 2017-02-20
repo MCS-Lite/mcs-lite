@@ -1,0 +1,63 @@
+exports[`test should renders <Account> correctly 1`] = `
+<styled.div>
+  <HelmetWrapper />
+  <styled.div>
+    <styled.img
+      alt="MCS Lite Logo"
+      src="logo.svg" />
+    <Heading
+      level={4}>
+      userName
+    </Heading>
+    <Heading
+      level={4} />
+  </styled.div>
+  <styled.footer>
+    <Styled(Link)
+      to={[Function]}>
+      <Styled(BaseComponent)
+        block={true}
+        component="button"
+        kind="primary" />
+    </Styled(Link)>
+    <Styled(Link)
+      to={[Function]}>
+      <Styled(BaseComponent)
+        block={true}
+        component="button"
+        kind="primary" />
+    </Styled(Link)>
+    <Styled(BaseComponent)
+      block={true}
+      component="button"
+      kind="primary"
+      onClick={[Function]} />
+  </styled.footer>
+</styled.div>
+`;
+
+exports[`test should return messages 1`] = `
+Object {
+  "Account.account": Object {
+    "defaultMessage": "帳戶",
+    "description": "Title",
+    "id": "Account.account",
+  },
+  "Account.changePassword": Object {
+    "defaultMessage": "更改密碼",
+    "id": "Account.changePassword",
+  },
+  "Account.hello": Object {
+    "defaultMessage": "你好",
+    "id": "Account.hello",
+  },
+  "Account.myTestDevices": Object {
+    "defaultMessage": "我的測試裝置",
+    "id": "Account.myTestDevices",
+  },
+  "Account.signout": Object {
+    "defaultMessage": "登出",
+    "id": "Account.signout",
+  },
+}
+`;

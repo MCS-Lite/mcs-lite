@@ -1,18 +1,17 @@
-import React from 'react';
-import { connect } from 'react-redux';
+import React, { PropTypes } from 'react';
 import { Input, Button, MobileFixedFooter, MobileHeader } from 'mcs-lite-ui';
 import IconMenu from 'mcs-lite-icon/lib/IconMenu';
 import Helmet from 'react-helmet';
 import { Link } from 'react-router';
-import compose from 'recompose/compose';
-import withGetMessages from '../../utils/withGetMessages';
-import messages from './messages';
-import { actions } from '../../modules/auth';
 import StyledLink from '../../components/StyledLink';
 import { Container, Label, ButtonWrapper } from './styled-components';
 import updatePathname from '../../utils/updatePathname';
 
 class Password extends React.Component {
+  static propTypes = {
+    getMessages: PropTypes.func.isRequired,
+    changePassword: PropTypes.func.isRequired,
+  }
   state = { old: '', new1: '', new2: '' };
   onChange = e => this.setState({ [e.target.id]: e.target.value });
   onSubmit = (e) => {
@@ -92,10 +91,4 @@ class Password extends React.Component {
   }
 }
 
-export default compose(
-  connect(
-    null,
-    { changePassword: actions.changePassword },
-  ),
-  withGetMessages(messages, 'Password'),
-)(Password);
+export default Password;

@@ -1,11 +1,6 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
 import { Heading } from 'mcs-lite-ui';
-import { connect } from 'react-redux';
 import Helmet from 'react-helmet';
-import compose from 'recompose/compose';
-import withGetMessages from '../../utils/withGetMessages';
-import messages from './messages';
-import { actions } from '../../modules/auth';
 import StyledLink from '../../components/StyledLink';
 import { Container, Body, StyledLogo, Footer, FlatButton } from './styled-components';
 import updatePathname from '../../utils/updatePathname';
@@ -29,10 +24,10 @@ const Account = ({ userName, signout, getMessages: t }) =>
     </Footer>
   </Container>;
 
-export default compose(
-  connect(
-    ({ auth }) => ({ userName: auth.userName }),
-    { signout: actions.signout },
-  ),
-  withGetMessages(messages, 'Account'),
-)(Account);
+Account.propTypes = {
+  userName: PropTypes.string.isRequired,
+  signout: PropTypes.func.isRequired,
+  getMessages: PropTypes.func.isRequired,
+};
+
+export default Account;

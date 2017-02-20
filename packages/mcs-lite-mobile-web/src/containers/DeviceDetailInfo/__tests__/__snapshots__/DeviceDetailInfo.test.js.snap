@@ -1,0 +1,143 @@
+exports[`test should renders <DeviceDetailInfo> correctly 1`] = `
+<div>
+  <HelmetWrapper />
+  <MobileHeader
+    leftChildren={
+      <MobileHeaderIcon
+        component={[Function]}
+        to={[Function]}>
+        <IconArrowLeft
+          size="1em" />
+      </MobileHeaderIcon>
+    } />
+  <main>
+    <PullToRefresh
+      IconArrow={[Function]}
+      IconLoading={[Function]}
+      isLoading={false}
+      onPull={[Function]}>
+      <styled.div>
+        <div>
+          <B />
+          <P>
+            deviceName
+          </P>
+        </div>
+        <div>
+          <B />
+          <P>
+            userName
+          </P>
+        </div>
+        <div>
+          <B />
+          <P>
+            version
+          </P>
+        </div>
+        <div>
+          <B />
+          <P>
+            deviceDescription
+          </P>
+        </div>
+        <div>
+          <B>
+            DeviceId
+          </B>
+          <P>
+            deviceId
+          </P>
+        </div>
+        <div>
+          <B>
+            DeviceKey
+          </B>
+          <P>
+            deviceKey
+          </P>
+        </div>
+      </styled.div>
+    </PullToRefresh>
+  </main>
+</div>
+`;
+
+exports[`test should renders <DeviceDetailInfo> correctly without device data 1`] = `
+<div>
+  <HelmetWrapper />
+  <MobileHeader
+    leftChildren={
+      <MobileHeaderIcon
+        component={[Function]}
+        to={[Function]}>
+        <IconArrowLeft
+          size="1em" />
+      </MobileHeaderIcon>
+    } />
+  <main>
+    <PullToRefresh
+      IconArrow={[Function]}
+      IconLoading={[Function]}
+      isLoading={false}
+      onPull={[Function]}>
+      <styled.div>
+        <div>
+          <B />
+          <P />
+        </div>
+        <div>
+          <B />
+          <P />
+        </div>
+        <div>
+          <B />
+          <P />
+        </div>
+        <div>
+          <B />
+          <P />
+        </div>
+        <div>
+          <B>
+            DeviceId
+          </B>
+          <P />
+        </div>
+        <div>
+          <B>
+            DeviceKey
+          </B>
+          <P />
+        </div>
+      </styled.div>
+    </PullToRefresh>
+  </main>
+</div>
+`;
+
+exports[`test should return messages 1`] = `
+Object {
+  "DeviceDetailInfo.creator": Object {
+    "defaultMessage": "創建者",
+    "id": "DeviceDetailInfo.creator",
+  },
+  "DeviceDetailInfo.description": Object {
+    "defaultMessage": "描述",
+    "id": "DeviceDetailInfo.description",
+  },
+  "DeviceDetailInfo.deviceIntro": Object {
+    "defaultMessage": "測試裝置介紹",
+    "description": "Title",
+    "id": "DeviceDetailInfo.deviceIntro",
+  },
+  "DeviceDetailInfo.deviceName": Object {
+    "defaultMessage": "裝置名稱",
+    "id": "DeviceDetailInfo.deviceName",
+  },
+  "DeviceDetailInfo.version": Object {
+    "defaultMessage": "版本",
+    "id": "DeviceDetailInfo.version",
+  },
+}
+`;
