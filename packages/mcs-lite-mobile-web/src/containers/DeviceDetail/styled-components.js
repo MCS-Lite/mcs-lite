@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import { Img, MobileContentWrapper } from 'mcs-lite-ui';
-import { Link } from 'react-router';
 
 export const Container = styled(MobileContentWrapper)`
   padding: 4px;
@@ -25,12 +24,4 @@ export const CardWrapper = styled.div`
     flex-grow: 1;
     flex-basis: 40%;
   }
-`;
-
-
-export const StyledLink = styled(Link)`
-  display: block;
-  text-decoration: none;
-  cursor: pointer;
-  color: currentColor;
 `;

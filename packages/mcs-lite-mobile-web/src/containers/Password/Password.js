@@ -8,6 +8,7 @@ import compose from 'recompose/compose';
 import withGetMessages from '../../utils/withGetMessages';
 import messages from './messages';
 import { actions } from '../../modules/auth';
+import StyledLink from '../../components/StyledLink';
 import { Container, Label, ButtonWrapper } from './styled-components';
 import updatePathname from '../../utils/updatePathname';
 
@@ -79,9 +80,9 @@ class Password extends React.Component {
 
           <MobileFixedFooter>
             <ButtonWrapper>
-              <Link to={updatePathname('/account')}>
+              <StyledLink to={updatePathname('/account')}>
                 <Button kind="default" block>{t('cancel')}</Button>
-              </Link>
+              </StyledLink>
               <Button component="input" type="submit" value={t('save')} block />
             </ButtonWrapper>
           </MobileFixedFooter>
