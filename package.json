@@ -3,7 +3,7 @@
   "scripts": {
     "bootstrap": "lerna bootstrap --hoist",
     "postinstall": "npm run bootstrap && ./tasks/build.sh",
-    "clean": "rm -rf node_modules && rm -rf ./packages/*/node_modules && rm ./packages/*/.DS_Store",
+    "clean": "rm -rf node_modules && rm -rf ./packages/*/node_modules && rm -rf ./packages/*/.DS_Store && rm -rf ./packages/*/*.log",
     "stylelint": "stylelint './**/*.js' --ignore-path .linterignore",
     "eslint": "eslint ./ --ignore-path .linterignore",
     "ncu": "ncu && lerna exec --concurrency 1 -- ncu",
