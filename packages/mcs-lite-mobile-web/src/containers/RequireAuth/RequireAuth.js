@@ -1,17 +1,19 @@
-import React from 'react';
-import { connect } from 'react-redux';
-import { actions as authActions } from '../../modules/auth';
+import React, { PropTypes } from 'react';
+import R from 'ramda';
+
+const omitProps = R.omit(['requireAuth']);
 
 class RequireAuth extends React.Component {
+  static propTypes = {
+    children: PropTypes.any.isRequired,
+    requireAuth: PropTypes.func.isRequired,
+  }
   componentWillMount = () => this.props.requireAuth();
   render() {
     const { children, ...otherProps } = this.props;
 
-    return React.cloneElement(children, otherProps);
+    return React.cloneElement(children, omitProps(otherProps));
   }
 }
 
-export default connect(
-  null,
-  { requireAuth: authActions.requireAuth },
-)(RequireAuth);
+export default RequireAuth;
