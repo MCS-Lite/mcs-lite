@@ -1,11 +1,36 @@
-exports[`devices should return setLoaded actions 1`] = `
+exports[`ui - 1. Constants should return constants 1`] = `
+Object {
+  "SET_LOADED": "mcs-lite-mobile-web/ui/SET_LOADED",
+  "SET_LOADING": "mcs-lite-mobile-web/ui/SET_LOADING",
+}
+`;
+
+exports[`ui - 2. Action Creators should return setLoaded actions 1`] = `
 Object {
   "type": "mcs-lite-mobile-web/ui/SET_LOADED",
 }
 `;
 
-exports[`devices should return setLoading actions 1`] = `
+exports[`ui - 2. Action Creators should return setLoading actions 1`] = `
 Object {
   "type": "mcs-lite-mobile-web/ui/SET_LOADING",
+}
+`;
+
+exports[`ui - 4. Reducer should handle SET_LOADED 1`] = `
+Object {
+  "isLoading": false,
+}
+`;
+
+exports[`ui - 4. Reducer should handle SET_LOADING 1`] = `
+Object {
+  "isLoading": true,
+}
+`;
+
+exports[`ui - 4. Reducer should return the initial state 1`] = `
+Object {
+  "isLoading": false,
 }
 `;

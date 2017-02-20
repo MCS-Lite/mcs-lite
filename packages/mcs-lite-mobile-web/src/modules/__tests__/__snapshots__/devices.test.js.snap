@@ -1,32 +1,102 @@
-exports[`devices should return clear actions 1`] = `
+exports[`devices - 1. Constants should return constants 1`] = `
+Object {
+  "CLEAR": "mcs-lite-mobile-web/devices/CLEAR",
+  "FETCH_DEVICE_DETAIL": "mcs-lite-mobile-web/devices/FETCH_DEVICE_DETAIL",
+  "FETCH_DEVICE_LIST": "mcs-lite-mobile-web/devices/FETCH_DEVICE_LIST",
+  "SET_DEVICE_DETAIL": "mcs-lite-mobile-web/devices/SET_DEVICE_DETAIL",
+  "SET_DEVICE_LIST": "mcs-lite-mobile-web/devices/SET_DEVICE_LIST",
+}
+`;
+
+exports[`devices - 2. Action Creators should return clear actions 1`] = `
 Object {
   "type": "mcs-lite-mobile-web/devices/CLEAR",
 }
 `;
 
-exports[`devices should return fetchDeviceDetail actions 1`] = `
+exports[`devices - 2. Action Creators should return fetchDeviceDetail actions 1`] = `
 Object {
   "payload": "deviceId",
   "type": "mcs-lite-mobile-web/devices/FETCH_DEVICE_DETAIL",
 }
 `;
 
-exports[`devices should return fetchDeviceList actions 1`] = `
+exports[`devices - 2. Action Creators should return fetchDeviceList actions 1`] = `
 Object {
   "type": "mcs-lite-mobile-web/devices/FETCH_DEVICE_LIST",
 }
 `;
 
-exports[`devices should return setDeviceDetail actions 1`] = `
+exports[`devices - 2. Action Creators should return setDeviceDetail actions 1`] = `
 Object {
   "payload": Object {},
   "type": "mcs-lite-mobile-web/devices/SET_DEVICE_DETAIL",
 }
 `;
 
-exports[`devices should return setDeviceList actions 1`] = `
+exports[`devices - 2. Action Creators should return setDeviceList actions 1`] = `
 Object {
   "payload": Array [],
   "type": "mcs-lite-mobile-web/devices/SET_DEVICE_LIST",
 }
 `;
+
+exports[`devices - 3. Epic should return correct actions when fetchDeviceDetailEpic 1`] = `
+Array [
+  Object {
+    "type": "mcs-lite-mobile-web/ui/SET_LOADING",
+  },
+  Object {
+    "payload": "response",
+    "type": "mcs-lite-mobile-web/devices/SET_DEVICE_DETAIL",
+  },
+]
+`;
+
+exports[`devices - 3. Epic should return correct actions when fetchDeviceListEpic 1`] = `
+Array [
+  Object {
+    "type": "mcs-lite-mobile-web/ui/SET_LOADING",
+  },
+  Object {
+    "payload": "response",
+    "type": "mcs-lite-mobile-web/devices/SET_DEVICE_LIST",
+  },
+]
+`;
+
+exports[`devices - 3. Epic should return correct actions when setDeviceDetailEpic 1`] = `
+Array [
+  Object {
+    "type": "mcs-lite-mobile-web/ui/SET_LOADED",
+  },
+]
+`;
+
+exports[`devices - 3. Epic should return correct actions when setDeviceListEpic 1`] = `
+Array [
+  Object {
+    "type": "mcs-lite-mobile-web/ui/SET_LOADED",
+  },
+]
+`;
+
+exports[`devices - 4. Reducer should handle CLEAR 1`] = `Object {}`;
+
+exports[`devices - 4. Reducer should handle SET_DEVICE_DETAIL 1`] = `
+Object {
+  "deviceId_1": Object {
+    "deviceId": "deviceId_1",
+  },
+}
+`;
+
+exports[`devices - 4. Reducer should handle SET_DEVICE_LIST 1`] = `
+Object {
+  "deviceId_1": Object {
+    "deviceId": "deviceId_1",
+  },
+}
+`;
+
+exports[`devices - 4. Reducer should return the initial state 1`] = `Object {}`;

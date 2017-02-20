@@ -12,8 +12,17 @@ const REQUIRE_AUTH = 'mcs-lite-mobile-web/auth/REQUIRE_AUTH';
 const TRY_ENTER = 'mcs-lite-mobile-web/auth/TRY_ENTER';
 const SIGNOUT = 'mcs-lite-mobile-web/auth/SIGNOUT';
 const CHANGE_PASSWORD = 'mcs-lite-mobile-web/auth/CHANGE_PASSWORD';
-export const SET_USERINFO = 'mcs-lite-mobile-web/auth/SET_USERINFO';
+const SET_USERINFO = 'mcs-lite-mobile-web/auth/SET_USERINFO';
 const CLEAR = 'mcs-lite-mobile-web/auth/CLEAR';
+
+export const constants = {
+  REQUIRE_AUTH,
+  TRY_ENTER,
+  SIGNOUT,
+  CHANGE_PASSWORD,
+  SET_USERINFO,
+  CLEAR,
+};
 
 // ----------------------------------------------------------------------------
 // 2. Action Creators (Sync)
@@ -75,12 +84,12 @@ const changePasswordEpic = action$ =>
     .delay(1000)
     .mapTo('success');
 
-export const epics = [
+export const epics = {
   requireAuthEpic,
   tryEnterEpic,
   signoutEpic,
   changePasswordEpic,
-];
+};
 
 // ----------------------------------------------------------------------------
 // 4. Reducer as default (state shaper)

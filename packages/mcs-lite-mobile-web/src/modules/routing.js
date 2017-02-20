@@ -10,6 +10,12 @@ const PUSH_PATHNAME = 'mcs-lite-mobile-web/routing/PUSH_PATHNAME';
 const PUSH_LOCALE = 'mcs-lite-mobile-web/routing/PUSH_LOCALE';
 const LOCATION_CHANGE = require('react-router-redux/lib/reducer').LOCATION_CHANGE;
 
+export const constants = {
+  PUSH_PATHNAME,
+  PUSH_LOCALE,
+  LOCATION_CHANGE,
+};
+
 // ----------------------------------------------------------------------------
 // 2. Action Creators (Sync)
 // ----------------------------------------------------------------------------
@@ -41,10 +47,10 @@ const pushLocaleEpic = (action$, store) =>
     )));
 
 
-export const epics = [
+export const epics = {
   pushPathnameEpic,
   pushLocaleEpic,
-];
+};
 
 // ----------------------------------------------------------------------------
 // 4. Reducer as default (state shaper)

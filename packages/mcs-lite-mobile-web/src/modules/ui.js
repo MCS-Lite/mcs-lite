@@ -5,6 +5,11 @@
 const SET_LOADING = 'mcs-lite-mobile-web/ui/SET_LOADING';
 const SET_LOADED = 'mcs-lite-mobile-web/ui/SET_LOADED';
 
+export const constants = {
+  SET_LOADING,
+  SET_LOADED,
+};
+
 // ----------------------------------------------------------------------------
 // 2. Action Creators (Sync)
 // ----------------------------------------------------------------------------
@@ -21,7 +26,7 @@ export const actions = {
 // 3. Epic (Async, side effect)
 // ----------------------------------------------------------------------------
 
-export const epics = [];
+export const epics = {};
 
 // ----------------------------------------------------------------------------
 // 4. Reducer as default (state shaper)

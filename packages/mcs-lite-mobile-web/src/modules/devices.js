@@ -1,6 +1,7 @@
 import { Observable } from 'rxjs/Observable';
 import * as fetchRx from 'mcs-lite-fetch-rx';
 import { actions as uiActions } from './ui';
+import { constants as authConstants } from './auth';
 
 // ----------------------------------------------------------------------------
 // 1. Constants
@@ -11,6 +12,14 @@ const FETCH_DEVICE_DETAIL = 'mcs-lite-mobile-web/devices/FETCH_DEVICE_DETAIL';
 const SET_DEVICE_LIST = 'mcs-lite-mobile-web/devices/SET_DEVICE_LIST';
 const SET_DEVICE_DETAIL = 'mcs-lite-mobile-web/devices/SET_DEVICE_DETAIL';
 const CLEAR = 'mcs-lite-mobile-web/devices/CLEAR';
+
+export const constants = {
+  FETCH_DEVICE_LIST,
+  FETCH_DEVICE_DETAIL,
+  SET_DEVICE_LIST,
+  SET_DEVICE_DETAIL,
+  CLEAR,
+};
 
 // ----------------------------------------------------------------------------
 // 2. Action Creators (Sync)
@@ -35,22 +44,21 @@ export const actions = {
 // ----------------------------------------------------------------------------
 
 /**
- * tokenAvailable - require access_token
+ * delayWhenTokenAvailable - require access_token
  * @return {Observable} original action$
  *
  * @author Michael Hsu
  */
-const tokenAvailable = (action$, store) => () => {
-  const duration$ = store.getState().auth.access_token
-    ? Observable.of(true)
-    : action$.ofType(require('./auth').SET_USERINFO);
 
-  return duration$.mapTo(action$);
-};
+const delayWhenTokenAvailable = (action$, store) => action =>
+  store.getState().auth.access_token
+    ? Observable.of(action)
+    : Observable.of(action)
+      .delayWhen(() => action$.ofType(authConstants.SET_USERINFO));
 
 const fetchDeviceListEpic = (action$, store) =>
   action$.ofType(FETCH_DEVICE_LIST)
-    .delayWhen(tokenAvailable(action$, store))
+    .switchMap(delayWhenTokenAvailable(action$, store))
     .map(() => store.getState())
     .pluck('auth', 'access_token')
     .switchMap(accessToken => Observable.merge(
@@ -66,7 +74,7 @@ const setDeviceListEpic = action$ =>
 
 const fetchDeviceDetailEpic = (action$, store) =>
   action$.ofType(FETCH_DEVICE_DETAIL)
-    .delayWhen(tokenAvailable(action$, store))
+    .switchMap(delayWhenTokenAvailable(action$, store))
     .pluck('payload')
     .switchMap(deviceId => Observable.merge(
       Observable.of(uiActions.setLoading()),
@@ -79,12 +87,12 @@ const setDeviceDetailEpic = action$ =>
   action$.ofType(SET_DEVICE_DETAIL)
     .mapTo(uiActions.setLoaded());
 
-export const epics = [
+export const epics = {
   fetchDeviceListEpic,
   fetchDeviceDetailEpic,
   setDeviceListEpic,
   setDeviceDetailEpic,
-];
+};
 
 // ----------------------------------------------------------------------------
 // 4. Reducer as default (state shaper)
