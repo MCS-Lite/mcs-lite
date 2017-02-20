@@ -3486,7 +3486,7 @@ exports[`Storyshots Menu Combination 1`] = `
 
 exports[`Storyshots MobileContentWrapper API 1`] = `
 <div
-  className="daxrNw">
+  className="dfXHhG">
   <div
     className="llkJXV">
     With max-width
@@ -3546,7 +3546,7 @@ exports[`Storyshots MobileFixedFooter API 1`] = `
 <footer
   className="jHdxNL">
   <div
-    className="daxrNw">
+    className="dfXHhG">
     <div
       className="fliFWR">
       <button
@@ -3568,7 +3568,7 @@ exports[`Storyshots MobileHeader API 1`] = `
   <div
     className="jPhnUD">
     <div
-      className="bMLYff">
+      className="dLdvuC">
       <div
         className="gzrXWO">
         <a
@@ -3608,7 +3608,7 @@ exports[`Storyshots MobileHeader With right props 1`] = `
   <div
     className="jPhnUD">
     <div
-      className="bMLYff">
+      className="dLdvuC">
       <div
         className="gzrXWO">
         <div
