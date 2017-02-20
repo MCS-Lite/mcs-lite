@@ -15,3 +15,4 @@ import 'rxjs/add/operator/pluck';
 import 'rxjs/add/operator/filter';
 import 'rxjs/add/operator/catch';
 import 'rxjs/add/operator/delayWhen';
+import 'rxjs/add/operator/toArray';

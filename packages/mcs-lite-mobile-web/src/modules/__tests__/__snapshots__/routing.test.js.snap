@@ -1,13 +1,69 @@
-exports[`devices should return pushLocale actions 1`] = `
+exports[`routing - 1. Constants should return constants 1`] = `
+Object {
+  "LOCATION_CHANGE": "@@router/LOCATION_CHANGE",
+  "PUSH_LOCALE": "mcs-lite-mobile-web/routing/PUSH_LOCALE",
+  "PUSH_PATHNAME": "mcs-lite-mobile-web/routing/PUSH_PATHNAME",
+}
+`;
+
+exports[`routing - 2. Action Creators should return pushLocale actions 1`] = `
 Object {
   "payload": "en",
   "type": "mcs-lite-mobile-web/routing/PUSH_LOCALE",
 }
 `;
 
-exports[`devices should return pushPathname actions 1`] = `
+exports[`routing - 2. Action Creators should return pushPathname actions 1`] = `
 Object {
   "payload": "/signin",
   "type": "mcs-lite-mobile-web/routing/PUSH_PATHNAME",
+}
+`;
+
+exports[`routing - 3. Epic should return correct actions when pushLocaleEpic 1`] = `
+Array [
+  Object {
+    "payload": Object {
+      "args": Array [
+        Object {
+          "query": Object {
+            "locale": "en",
+          },
+        },
+      ],
+      "method": "push",
+    },
+    "type": "@@router/CALL_HISTORY_METHOD",
+  },
+]
+`;
+
+exports[`routing - 3. Epic should return correct actions when pushPathnameEpic 1`] = `
+Array [
+  Object {
+    "payload": Object {
+      "args": Array [
+        Object {
+          "pathname": "/signin",
+        },
+      ],
+      "method": "push",
+    },
+    "type": "@@router/CALL_HISTORY_METHOD",
+  },
+]
+`;
+
+exports[`routing - 4. Reducer should handle LOCATION_CHANGE 1`] = `
+Object {
+  "locationBeforeTransitions": Object {
+    "pathname": "/",
+  },
+}
+`;
+
+exports[`routing - 4. Reducer should return the initial state 1`] = `
+Object {
+  "locationBeforeTransitions": null,
 }
 `;
