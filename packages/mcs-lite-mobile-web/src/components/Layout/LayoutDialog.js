@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
 import styled from 'styled-components';
 import Transition from 'react-motion-ui-pack';
 import IconClose from 'mcs-lite-icon/lib/IconClose';
@@ -30,13 +30,13 @@ const Main = styled.main`
   flex-direction: column;
 `;
 
-const LayoutDialog = ({ children }) =>
+const LayoutDialog = ({ children, ...otherProps }) =>
   <Transition
     component={false}
     enter={{ opacity: 1, translateY: 0 }}
     leave={{ opacity: 0, translateY: -40 }}
   >
-    <Container key="layoutDialog">
+    <Container key="layoutDialog" {...otherProps}>
       <Header>
         <StyledLink to={updatePathname('/devices')}><IconClose /></StyledLink>
       </Header>
@@ -44,5 +44,9 @@ const LayoutDialog = ({ children }) =>
     </Container>
   </Transition>;
 
+LayoutDialog.displayName = 'LayoutDialog';
+LayoutDialog.propTypes = {
+  children: PropTypes.any,
+};
 
 export default LayoutDialog;

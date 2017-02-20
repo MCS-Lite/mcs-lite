@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import logoPath from '../../statics/iamges/logo.svg';
+import logoPath from '../../statics/images/logo.svg';
 
 const Logo = styled.img`
   margin: 16px;

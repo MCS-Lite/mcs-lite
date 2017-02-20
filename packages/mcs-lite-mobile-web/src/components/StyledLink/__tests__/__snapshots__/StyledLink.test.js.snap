@@ -1,0 +1,6 @@
+exports[`test should renders <StyledLink> correctly 1`] = `
+<Link
+  className="kktDeU"
+  onlyActiveOnIndex={false}
+  style={Object {}} />
+`;
