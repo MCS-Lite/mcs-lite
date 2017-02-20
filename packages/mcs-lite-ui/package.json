@@ -36,7 +36,7 @@
   "devDependencies": {
     "@kadira/react-storybook-addon-info": "^3.3.0",
     "@kadira/storybook": "^2.35.3",
-    "babel-cli": "^6.22.2",
+    "babel-cli": "^6.23.0",
     "babel-preset-mcs-lite": "^0.0.0",
     "enzyme": "^2.7.1",
     "enzyme-to-json": "^1.4.5",
@@ -51,7 +51,7 @@
     "react-addons-test-utils": "^15.4.2",
     "react-dom": "^15.4.2",
     "react-test-renderer": "^15.4.2",
-    "storyshots": "^3.2.1",
+    "storyshots": "^3.2.2",
     "styled-components": "^1.4.3"
   },
   "dependencies": {
@@ -61,7 +61,7 @@
     "ramda": "^0.23.0",
     "react-hammerjs": "^0.5.0",
     "react-motion-ui-pack": "^0.10.2",
-    "react-overlays": "^0.6.10",
+    "react-overlays": "^0.6.11",
     "react-text-truncate": "^0.8.3"
   },
   "peerDependencies": {

@@ -7,7 +7,6 @@ import DataChannel from '.';
 import ButtonClear from './ButtonClear';
 
 const DemoWrapper = styled.div`
-
   > * {
     margin: 7.5px;
     width: 600px;

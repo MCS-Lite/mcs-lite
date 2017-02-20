@@ -14,7 +14,6 @@ export const Layout = styled(MobileContentWrapper)`
 `;
 
 export const Form = styled.form`
-
   > input + input {
     margin-top: 8px;
   }

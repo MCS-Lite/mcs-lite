@@ -5,7 +5,6 @@ import { kindList } from 'mcs-lite-theme';
 import Input from '.';
 
 const Wrapper = styled.div`
-
   > * {
     margin: 15px;
     width: 300px;

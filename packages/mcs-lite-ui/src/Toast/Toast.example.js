@@ -5,7 +5,6 @@ import { kindList } from 'mcs-lite-theme';
 import Toast from '.';
 
 const DemoWrapper = styled.div`
-
   > * {
     margin-bottom: 16px;
   }

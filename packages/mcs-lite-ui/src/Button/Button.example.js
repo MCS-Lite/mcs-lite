@@ -5,7 +5,6 @@ import { kindList, darken1, darken2, darken3 } from 'mcs-lite-theme';
 import Button from '.';
 
 const Container = styled.div`
-
   > * {
     margin: 5px;
   }
