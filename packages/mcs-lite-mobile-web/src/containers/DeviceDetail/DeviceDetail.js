@@ -13,8 +13,7 @@ import { Link } from 'react-router';
 import withGetMessages from '../../utils/withGetMessages';
 import messages from './messages';
 import { actions } from '../../modules/devices';
-import StyledLink from '../../components/StyledLink';
-import { Container, StyledImg, CardWrapper } from './styled-components';
+import { Container, StyledImg, CardWrapper, StyledLink } from './styled-components';
 import updatePathname from '../../utils/updatePathname';
 
 class DeviceDetail extends React.Component {

@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import Transition from 'react-motion-ui-pack';
 import IconClose from 'mcs-lite-icon/lib/IconClose';
 import { MobileContentWrapper } from 'mcs-lite-ui';
-import StyledLink from '../StyledLink';
+import { Link } from 'react-router';
 import updatePathname from '../../utils/updatePathname';
 
 const Container = styled(MobileContentWrapper)`
@@ -38,7 +38,7 @@ const LayoutDialog = ({ children }) =>
   >
     <Container key="layoutDialog">
       <Header>
-        <StyledLink to={updatePathname('/devices')}><IconClose /></StyledLink>
+        <Link to={updatePathname('/devices')}><IconClose /></Link>
       </Header>
       <Main>{children}</Main>
     </Container>

@@ -9,7 +9,6 @@ import compose from 'recompose/compose';
 import withGetMessages from '../../utils/withGetMessages';
 import messages from './messages';
 import { actions } from '../../modules/devices';
-import StyledLink from '../../components/StyledLink';
 import { Item, Body, StyledSamll, ButtonWrapper, ScaledSwitch, StyledHr } from './styled-components';
 import updatePathname from '../../utils/updatePathname';
 
@@ -81,9 +80,9 @@ class DeviceTriggerEdit extends React.Component {
             {isChecked &&
               <MobileFixedFooter>
                 <ButtonWrapper>
-                  <StyledLink to={updatePathname('/account')}>
+                  <Link to={updatePathname('/account')}>
                     <Button kind="default" block>{t('cancel')}</Button>
-                  </StyledLink>
+                  </Link>
                   <Button component="input" type="submit" value={t('save')} block />
                 </ButtonWrapper>
               </MobileFixedFooter>
