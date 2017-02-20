@@ -5,7 +5,6 @@ const MobileContentWrapper = styled.div`
   height: 100%;
   box-sizing: border-box;
   margin: 0 auto;
-  border: 1px dashed ${props => props.theme.color.black};
 `;
 
 MobileContentWrapper.displayName = 'MobileContentWrapper';
