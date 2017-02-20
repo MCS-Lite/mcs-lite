@@ -23,7 +23,6 @@ const Input = styled.input`
   }
 
   /* stylelint-disable selector-no-vendor-prefix */
-
   &::placeholder,
   &::-webkit-input-placeholder,
   &::-moz-placeholder,

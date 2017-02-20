@@ -3,7 +3,7 @@
   "scripts": {
     "bootstrap": "lerna bootstrap --hoist",
     "postinstall": "npm run bootstrap && ./tasks/build.sh",
-    "clean": "lerna clean && rm -rf node_modules",
+    "clean": "rm -rf node_modules && rm -rf ./packages/*/node_modules && rm ./packages/*/.DS_Store",
     "stylelint": "stylelint './**/*.js' --ignore-path .linterignore",
     "eslint": "eslint ./ --ignore-path .linterignore",
     "ncu": "ncu && lerna exec --concurrency 1 -- ncu",
@@ -15,11 +15,11 @@
     "eslint": "^3.15.0",
     "eslint-config-airbnb": "^14.1.0",
     "eslint-plugin-import": "^2.2.0",
-    "eslint-plugin-jsx-a11y": "^3.0.2",
-    "eslint-plugin-react": "^6.9.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-react": "^6.10.0",
     "lerna": "2.0.0-beta.37",
-    "npm-check-updates": "^2.10.2",
-    "stylelint": "^7.8.0"
+    "npm-check-updates": "^2.10.3",
+    "stylelint": "^7.9.0"
   },
   "stylelint": {
     "extends": "./packages/stylelint-config-mcs-lite/index.js"

@@ -3,10 +3,12 @@ module.exports = {
   extends: 'stylelint-config-suitcss',
   rules: {
     'color-hex-case': 'upper',
-    'declaration-block-properties-order': null,
+    'order/declaration-block-properties-alphabetical-order': null,
     'color-hex-length': 'long',
     'selector-list-comma-newline-after': null,
-    'rule-non-nested-empty-line-before': 'never-multi-line',
+    'rule-empty-line-before': ['always-multi-line', {
+      except: ['after-rule', 'after-single-line-comment', 'inside-block-and-after-rule', 'first-nested'],
+    }],
   },
   syntax: 'scss', // Setting the syntax to scss is needed for nesting and interpolation support!
 };

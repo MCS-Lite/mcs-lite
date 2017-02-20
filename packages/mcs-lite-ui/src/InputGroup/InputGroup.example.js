@@ -6,7 +6,6 @@ import Button from '../Button';
 import InputGroup from '../InputGroup';
 
 const Wrapper = styled.div`
-
   > * {
     margin-bottom: 15px;
   }

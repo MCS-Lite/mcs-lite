@@ -7,7 +7,6 @@ export const Container = styled(MobileContentWrapper)`
 `;
 
 export const CardWrapper = styled.div`
-
   > * {
     margin-bottom: 8px;
   }
