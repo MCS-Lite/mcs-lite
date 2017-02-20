@@ -1,0 +1,153 @@
+exports[`test should renders <DeviceList> correctly with one device 1`] = `
+<div>
+  <HelmetWrapper />
+  <MobileHeader
+    leftChildren={
+      <MobileHeaderIcon
+        component={[Function]}
+        to={[Function]}>
+        <IconMenu
+          size="1em" />
+      </MobileHeaderIcon>
+    }
+    rightChildren={
+      Array [
+        false,
+        <ClickOutside
+          onClick={[Function]}>
+          <Styled(BaseComponent)
+              active={false}
+              component="a"
+              onClick={[Function]}>
+              <IconSearch
+                  size="1em" />
+          </Styled(BaseComponent)>
+      </ClickOutside>,
+      ]
+    } />
+  <main>
+    <PullToRefresh
+      IconArrow={[Function]}
+      IconLoading={[Function]}
+      isLoading={false}
+      onPull={[Function]}>
+      <styled.div>
+        <PreventDrag>
+          <Transition
+            appear={
+              Object {
+                "marginTop": -20,
+                "opacity": 0.8,
+              }
+            }
+            component={[Function]}
+            enter={
+              Object {
+                "marginTop": 0,
+                "opacity": 1,
+              }
+            }
+            leave={
+              Object {
+                "opacity": 0,
+              }
+            }
+            onEnter={[Function]}
+            onLeave={[Function]}
+            runOnMount={true}>
+            <Styled(Link)
+              to={[Function]}>
+              <MobileDeviceCard
+                image="deviceImageURL"
+                title="deviceName" />
+            </Styled(Link)>
+          </Transition>
+        </PreventDrag>
+      </styled.div>
+    </PullToRefresh>
+  </main>
+</div>
+`;
+
+exports[`test should renders <DeviceList> correctly without devices 1`] = `
+<div>
+  <HelmetWrapper />
+  <MobileHeader
+    leftChildren={
+      <MobileHeaderIcon
+        component={[Function]}
+        to={[Function]}>
+        <IconMenu
+          size="1em" />
+      </MobileHeaderIcon>
+    }
+    rightChildren={
+      Array [
+        false,
+        <ClickOutside
+          onClick={[Function]}>
+          <Styled(BaseComponent)
+              active={false}
+              component="a"
+              onClick={[Function]}>
+              <IconSearch
+                  size="1em" />
+          </Styled(BaseComponent)>
+      </ClickOutside>,
+      ]
+    } />
+  <main>
+    <PullToRefresh
+      IconArrow={[Function]}
+      IconLoading={[Function]}
+      isLoading={false}
+      onPull={[Function]}>
+      <styled.div>
+        <PreventDrag>
+          <Transition
+            appear={
+              Object {
+                "marginTop": -20,
+                "opacity": 0.8,
+              }
+            }
+            component={[Function]}
+            enter={
+              Object {
+                "marginTop": 0,
+                "opacity": 1,
+              }
+            }
+            leave={
+              Object {
+                "opacity": 0,
+              }
+            }
+            onEnter={[Function]}
+            onLeave={[Function]}
+            runOnMount={true} />
+        </PreventDrag>
+        <Styled(Component) />
+      </styled.div>
+    </PullToRefresh>
+  </main>
+</div>
+`;
+
+exports[`test should return messages 1`] = `
+Object {
+  "DeviceList.myTestDevices": Object {
+    "defaultMessage": "我的測試裝置",
+    "description": "Title",
+    "id": "DeviceList.myTestDevices",
+  },
+  "DeviceList.noDevice": Object {
+    "defaultMessage": "目前還沒有任何測試裝置",
+    "id": "DeviceList.noDevice",
+  },
+  "DeviceList.search": Object {
+    "defaultMessage": "搜尋",
+    "id": "DeviceList.search",
+  },
+}
+`;

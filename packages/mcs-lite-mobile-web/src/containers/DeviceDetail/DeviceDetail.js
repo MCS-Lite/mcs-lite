@@ -1,5 +1,4 @@
-import React from 'react';
-import { connect } from 'react-redux';
+import React, { PropTypes } from 'react';
 import Helmet from 'react-helmet';
 import {
   PullToRefresh, Overlay, Menu, DataChannelCard, DataChannelAdapter,
@@ -8,18 +7,24 @@ import {
 import dataChannels from 'mcs-lite-ui/lib/DataChannelAdapter/API';
 import IconMoreVert from 'mcs-lite-icon/lib/IconMoreVert';
 import IconArrowLeft from 'mcs-lite-icon/lib/IconArrowLeft';
-import compose from 'recompose/compose';
 import { Link } from 'react-router';
-import withGetMessages from '../../utils/withGetMessages';
-import messages from './messages';
-import { actions } from '../../modules/devices';
 import StyledLink from '../../components/StyledLink';
 import { Container, StyledImg, CardWrapper } from './styled-components';
 import updatePathname from '../../utils/updatePathname';
 
 class DeviceDetail extends React.Component {
+  static propTypes = {
+    device: PropTypes.object,
+    deviceId: PropTypes.string.isRequired,
+    isLoading: PropTypes.bool.isRequired,
+    getMessages: PropTypes.func.isRequired,
+    fetchDeviceDetail: PropTypes.func.isRequired,
+  }
+  static defaultProps = {
+    device: {},
+  }
   state = { isMenuShow: false, target: undefined };
-  componentDidMount = () => this.fetch();
+  componentWillMount = () => this.fetch();
   onMoreDetailClick = () => this.setState({ isMenuShow: !this.state.isMenuShow });
   onHide = () => this.setState({ isMenuShow: false });
   getTarget = node => this.setState({ target: node });
@@ -104,14 +109,4 @@ class DeviceDetail extends React.Component {
   }
 }
 
-export default compose(
-  connect(
-    ({ devices, ui }, { params: { deviceId }}) => ({
-      deviceId,
-      device: devices[deviceId],
-      isLoading: ui.isLoading,
-    }),
-    { fetchDeviceDetail: actions.fetchDeviceDetail },
-  ),
-  withGetMessages(messages, 'DeviceDetail'),
-)(DeviceDetail);
+export default DeviceDetail;
