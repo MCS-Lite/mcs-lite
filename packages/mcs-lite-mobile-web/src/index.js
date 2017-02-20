@@ -12,7 +12,7 @@ import useScroll from 'react-router-scroll/lib/useScroll';
 import { syncHistoryWithStore } from 'react-router-redux';
 import { ThemeProvider } from 'styled-components';
 import IntlProvider from './containers/IntlProvider';
-import theme from './utils/theme';
+import mobileTheme from './utils/mobileTheme';
 import Layout from './components/Layout';
 import DeviceList from './containers/DeviceList';
 import DeviceDetail from './containers/DeviceDetail';
@@ -27,19 +27,29 @@ import configureStore from './store/configureStore';
 import './style';
 import './utils/i18n';
 
-const history = useRouterHistory(createHistory)({ basename: '/mobile' });
+// ----------------------------------------------------------------------------
+// 1. Constants
+// ----------------------------------------------------------------------------
+export const BASENAME = '/mobile';
+export const DEFAULT_LOCALE = 'zh-TW';
+export const ROOT_ID = 'root';
+
+// ----------------------------------------------------------------------------
+// 2. Redux store
+// ----------------------------------------------------------------------------
+const history = useRouterHistory(createHistory)({ basename: BASENAME });
 const store = configureStore({}, history);
 const routerHistory = syncHistoryWithStore(history, store);
 const render = applyRouterMiddleware(useScroll());
 
+// ----------------------------------------------------------------------------
+// 3. React render
+// ----------------------------------------------------------------------------
 ReactDOM.render(
   <Provider store={store}>
-    <IntlProvider defaultLocale="zh-TW">
-      <ThemeProvider theme={theme}>
-        <Router
-          history={routerHistory}
-          render={render}
-        >
+    <IntlProvider defaultLocale={DEFAULT_LOCALE}>
+      <ThemeProvider theme={mobileTheme}>
+        <Router history={routerHistory} render={render}>
           <Route path="/signin" component={Signin} />
           <Route path="/" component={RequireAuth}>
             <IndexRedirect to="devices" />
@@ -59,5 +69,5 @@ ReactDOM.render(
       </ThemeProvider>
     </IntlProvider>
   </Provider>,
-  document.getElementById('root'),
+  document.getElementById(ROOT_ID),
 );
