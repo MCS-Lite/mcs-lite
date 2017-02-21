@@ -1,12 +1,12 @@
 {
   "name": "mcs-lite-ui",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Common UI used by MCS Lite",
   "repository": "evenchange4/mcs-lite",
   "author": "Michael Hsu <evenchange4@gmail.com>",
   "bugs": {
     "url": "https://github.com/evenchange4/mcs-lite/issues",
-    "email" : "evenchange4@gmail.com"
+    "email": "evenchange4@gmail.com"
   },
   "homepage": "https://github.com/evenchange4/mcs-lite#readme",
   "files": [
@@ -47,15 +47,15 @@
     "@kadira/react-storybook-addon-info": "^3.3.0",
     "@kadira/storybook": "^2.35.3",
     "babel-cli": "^6.23.0",
-    "babel-preset-mcs-lite": "^0.0.0",
+    "babel-preset-mcs-lite": "^0.0.1",
     "enzyme": "^2.7.1",
     "enzyme-to-json": "^1.4.5",
     "flow-bin": "^0.37.4",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^18.1.0",
-    "mcs-lite-icon": "^0.0.0",
-    "mcs-lite-scripts": "^0.0.0",
-    "mcs-lite-theme": "^0.0.0",
+    "mcs-lite-icon": "^0.0.1",
+    "mcs-lite-scripts": "^0.0.1",
+    "mcs-lite-theme": "^0.0.1",
     "normalize.css": "^5.0.0",
     "react": "^15.4.2",
     "react-addons-test-utils": "^15.4.2",
@@ -75,8 +75,8 @@
     "react-text-truncate": "^0.8.3"
   },
   "peerDependencies": {
-    "mcs-lite-icon": "^0.0.0",
-    "mcs-lite-theme": "^0.0.0",
+    "mcs-lite-icon": "^0.0.1",
+    "mcs-lite-theme": "^0.0.1",
     "styled-components": "^1.4.3"
   }
 }

@@ -1,18 +1,17 @@
 {
   "name": "mcs-lite-mobile-web",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "MCS Lite Mobile Web",
   "repository": "evenchange4/mcs-lite",
   "author": "Michael Hsu <evenchange4@gmail.com>",
   "bugs": {
     "url": "https://github.com/evenchange4/mcs-lite/issues",
-    "email" : "evenchange4@gmail.com"
+    "email": "evenchange4@gmail.com"
   },
-  "homepage": "https://github.com/evenchange4/mcs-lite#readme",
+  "homepage": "http://localhost:3000/mobile",
   "files": [
     "build"
   ],
-  "homepage": "http://localhost:3000/mobile",
   "proxy": "http://localhost:3000",
   "scripts": {
     "clean": "rm -rf build",
@@ -36,10 +35,10 @@
     "eslint-plugin-jsx-a11y": "^4.0.0",
     "eslint-plugin-react": "^6.10.0",
     "history": "^3.2.1",
-    "mcs-lite-fetch-rx": "^0.0.0",
-    "mcs-lite-icon": "^0.0.0",
-    "mcs-lite-theme": "^0.0.0",
-    "mcs-lite-ui": "^0.0.0",
+    "mcs-lite-fetch-rx": "^0.0.1",
+    "mcs-lite-icon": "^0.0.1",
+    "mcs-lite-theme": "^0.0.1",
+    "mcs-lite-ui": "^0.0.1",
     "normalize.css": "^5.0.0",
     "ramda": "^0.23.0",
     "react": "^15.4.2",
@@ -47,7 +46,7 @@
     "react-dom": "^15.4.2",
     "react-helmet": "^4.0.0",
     "react-intl": "^2.2.3",
-    "react-intl-cra": "^0.0.0",
+    "react-intl-cra": "^0.0.1",
     "react-intl-po": "^2.0.1",
     "react-motion-ui-pack": "^0.10.2",
     "react-redux": "^5.0.2",
