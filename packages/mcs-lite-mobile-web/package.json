@@ -47,6 +47,7 @@
     "react-helmet": "^4.0.0",
     "react-intl": "^2.2.3",
     "react-intl-cra": "^0.0.1",
+    "react-intl-inject-hoc": "^0.0.0",
     "react-intl-po": "^2.0.1",
     "react-motion-ui-pack": "^0.10.2",
     "react-redux": "^5.0.2",

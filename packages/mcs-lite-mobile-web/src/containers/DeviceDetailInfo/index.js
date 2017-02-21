@@ -1,7 +1,7 @@
 import { connect } from 'react-redux';
 import compose from 'recompose/compose';
+import { withGetMessages } from 'react-intl-inject-hoc';
 import DeviceDetailInfo from './DeviceDetailInfo';
-import withGetMessages from '../../utils/withGetMessages';
 import messages from './messages';
 import { actions } from '../../modules/devices';
 
