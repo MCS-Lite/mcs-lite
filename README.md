@@ -13,20 +13,53 @@
 
 ## Packages
 
-| **Package**                 | **Description**                             | **Version** | **Dependencies** |
-|-----------------------------|---------------------------------------------| | |
-| `babel-preset-mcs-lite`     | Babel config                                | | |
-| `eslint-config-mcs-lite`    | JS coding style                             | | |
-| `mcs-lite-demo-nextjs`      | Demo how to use mcs-lite-ui.                | | |
-| `mcs-lite-design`           | The source files to be compressed.          | | |
-| `mcs-lite-fetch-rx`         | The Client api with stream creator.         | | |
-| `mcs-lite-icon`             | Convert svg to react components.            | | |
-| `mcs-lite-mobile-web`       | MCS Lite mobile website project.            | | |
-| `mcs-lite-scripts`          | Shared scripts and some CLI `bin` files.    | | |
-| `mcs-lite-theme`            | Defined `Theme` object and color helpers.   | | |
-| `mcs-lite-ui`               | MCS Lite common UI and storybook demo page. | | |
-| `react-intl-cra`            | Alias for `extract-messages`.               | | |
-| `stylelint-config-mcs-lite` | CSS coding style                            | | |
+[babel-preset-mcs-lite-npm-badge]: https://img.shields.io/npm/v/babel-preset-mcs-lite.svg?style=flat-square
+[babel-preset-mcs-lite-npm]: https://www.npmjs.org/package/babel-preset-mcs-lite
+
+[eslint-config-mcs-lite-npm-badge]: https://img.shields.io/npm/v/eslint-config-mcs-lite.svg?style=flat-square
+[eslint-config-mcs-lite-npm]: https://www.npmjs.org/package/eslint-config-mcs-lite
+
+[mcs-lite-design-npm-badge]: https://img.shields.io/npm/v/mcs-lite-design.svg?style=flat-square
+[mcs-lite-design-npm]: https://www.npmjs.org/package/mcs-lite-design
+
+[mcs-lite-fetch-rx-npm-badge]: https://img.shields.io/npm/v/mcs-lite-fetch-rx.svg?style=flat-square
+[mcs-lite-fetch-rx-npm]: https://www.npmjs.org/package/mcs-lite-fetch-rx
+
+[mcs-lite-icon-npm-badge]: https://img.shields.io/npm/v/mcs-lite-icon.svg?style=flat-square
+[mcs-lite-icon-npm]: https://www.npmjs.org/package/mcs-lite-icon
+
+[mcs-lite-mobile-web-npm-badge]: https://img.shields.io/npm/v/mcs-lite-mobile-web.svg?style=flat-square
+[mcs-lite-mobile-web-npm]: https://www.npmjs.org/package/mcs-lite-mobile-web
+
+[mcs-lite-scripts-npm-badge]: https://img.shields.io/npm/v/mcs-lite-scripts.svg?style=flat-square
+[mcs-lite-scripts-npm]: https://www.npmjs.org/package/mcs-lite-scripts
+
+[mcs-lite-theme-npm-badge]: https://img.shields.io/npm/v/mcs-lite-theme.svg?style=flat-square
+[mcs-lite-theme-npm]: https://www.npmjs.org/package/mcs-lite-theme
+
+[mcs-lite-ui-npm-badge]: https://img.shields.io/npm/v/mcs-lite-ui.svg?style=flat-square
+[mcs-lite-ui-npm]: https://www.npmjs.org/package/mcs-lite-ui
+
+[react-intl-cra-npm-badge]: https://img.shields.io/npm/v/react-intl-cra.svg?style=flat-square
+[react-intl-cra-npm]: https://www.npmjs.org/package/react-intl-cra
+
+[stylelint-config-mcs-lite-npm-badge]: https://img.shields.io/npm/v/stylelint-config-mcs-lite.svg?style=flat-square
+[stylelint-config-mcs-lite-npm]: https://www.npmjs.org/package/stylelint-config-mcs-lite
+
+| **Package** | **Description** | **Version** |
+|-----------------------------|---------------------------------------------|
+| `babel-preset-mcs-lite` | Babel config | [![npm][babel-preset-mcs-lite-npm-badge]]([babel-preset-mcs-lite-npm]) |
+| `eslint-config-mcs-lite` | JS coding style | [![npm][eslint-config-mcs-lite-npm-badge]]([eslint-config-mcs-lite-npm]) |
+| `mcs-lite-demo-nextjs` | Demo how to use mcs-lite-ui. | |
+| `mcs-lite-design` | The source files to be compressed. | [![npm][mcs-lite-design-npm-badge]]([mcs-lite-design-npm]) |
+| `mcs-lite-fetch-rx` | The Client api with stream creator. | [![npm][mcs-lite-fetch-rx-npm-badge]]([mcs-lite-fetch-rx-npm]) |
+| `mcs-lite-icon` | Convert svg to react components. | [![npm][mcs-lite-icon-npm-badge]]([mcs-lite-icon-npm]) |
+| `mcs-lite-mobile-web` | MCS Lite mobile website project. | [![npm][mcs-lite-mobile-web-npm-badge]]([mcs-lite-mobile-web-npm]) |
+| `mcs-lite-scripts` | Shared scripts and some CLI `bin` files. | [![npm][mcs-lite-scripts-npm-badge]]([mcs-lite-scripts-npm]) |
+| `mcs-lite-theme` | Defined `Theme` object and color helpers. | [![npm][mcs-lite-theme-npm-badge]]([mcs-lite-theme-npm]) |
+| `mcs-lite-ui` | MCS Lite common UI and storybook demo page. | [![npm][mcs-lite-ui-npm-badge]]([mcs-lite-ui-npm]) |
+| `react-intl-cra` | Alias for `extract-messages`. | [![npm][react-intl-cra-npm-badge]]([react-intl-cra-npm]) |
+| `stylelint-config-mcs-lite` | CSS coding style | [![npm][stylelint-config-mcs-lite-npm-badge]]([stylelint-config-mcs-lite-npm]) |
 
 ## Install
 
