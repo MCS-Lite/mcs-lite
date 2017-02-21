@@ -1,4 +1,5 @@
 import React from 'react';
+import R from 'ramda';
 import { shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
 import Account from '../Account';
@@ -12,7 +13,7 @@ it('should renders <Account> correctly', () => {
     <Account
       userName="userName"
       signout={() => {}}
-      getMessages={() => {}}
+      getMessages={R.identity}
     />,
   );
 

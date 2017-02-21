@@ -1,6 +1,7 @@
 exports[`test should renders <DeviceList> correctly with one device 1`] = `
 <div>
-  <HelmetWrapper />
+  <HelmetWrapper
+    title="myTestDevices" />
   <MobileHeader
     leftChildren={
       <MobileHeaderIcon
@@ -24,7 +25,8 @@ exports[`test should renders <DeviceList> correctly with one device 1`] = `
           </Styled(BaseComponent)>
       </ClickOutside>,
       ]
-    } />
+    }
+    title="myTestDevices" />
   <main>
     <PullToRefresh
       IconArrow={[Function]}
@@ -71,7 +73,8 @@ exports[`test should renders <DeviceList> correctly with one device 1`] = `
 
 exports[`test should renders <DeviceList> correctly without devices 1`] = `
 <div>
-  <HelmetWrapper />
+  <HelmetWrapper
+    title="myTestDevices" />
   <MobileHeader
     leftChildren={
       <MobileHeaderIcon
@@ -95,7 +98,8 @@ exports[`test should renders <DeviceList> correctly without devices 1`] = `
           </Styled(BaseComponent)>
       </ClickOutside>,
       ]
-    } />
+    }
+    title="myTestDevices" />
   <main>
     <PullToRefresh
       IconArrow={[Function]}
@@ -127,7 +131,9 @@ exports[`test should renders <DeviceList> correctly without devices 1`] = `
             onLeave={[Function]}
             runOnMount={true} />
         </PreventDrag>
-        <Styled(Component) />
+        <Styled(Component)>
+          noDevice
+        </Styled(Component)>
       </styled.div>
     </PullToRefresh>
   </main>

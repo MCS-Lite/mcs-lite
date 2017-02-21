@@ -5,10 +5,10 @@ import { actions } from '../../modules/auth';
 import Account from './Account';
 import messages from './messages';
 
+export const mapStateToProps = ({ auth }) => ({ userName: auth.userName });
+export const mapDispatchToProps = { signout: actions.signout };
+
 export default compose(
-  connect(
-    ({ auth }) => ({ userName: auth.userName }),
-    { signout: actions.signout },
-  ),
+  connect(mapStateToProps, mapDispatchToProps),
   withGetMessages(messages, 'Account'),
 )(Account);

@@ -6,13 +6,13 @@ import messages from './messages';
 import { actions } from '../../modules/devices';
 import DeviceList from './DeviceList';
 
+export const mapStateToProps = ({ devices, ui }) => ({
+  devices: R.values(devices),
+  isLoading: ui.isLoading,
+});
+export const mapDispatchToProps = { fetchDeviceList: actions.fetchDeviceList };
+
 export default compose(
-  connect(
-    ({ devices, ui }) => ({
-      devices: R.values(devices),
-      isLoading: ui.isLoading,
-    }),
-    { fetchDeviceList: actions.fetchDeviceList },
-  ),
+  connect(mapStateToProps, mapDispatchToProps),
   withGetMessages(messages, 'DeviceList'),
 )(DeviceList);

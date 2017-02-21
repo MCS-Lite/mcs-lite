@@ -1,4 +1,5 @@
 import React from 'react';
+import R from 'ramda';
 import { shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
 import DeviceList from '../DeviceList';
@@ -11,7 +12,7 @@ it('should renders <DeviceList> correctly without devices', () => {
   const fetchMock = jest.fn();
   const wrapper = shallow(
     <DeviceList
-      getMessages={() => {}}
+      getMessages={R.identity}
       devices={[]}
       isLoading={false}
       fetchDeviceList={fetchMock}
@@ -26,7 +27,7 @@ it('should renders <DeviceList> correctly with one device', () => {
   const fetchMock = jest.fn();
   const wrapper = shallow(
     <DeviceList
-      getMessages={() => {}}
+      getMessages={R.identity}
       devices={[
         {
           deviceId: 'deviceId',

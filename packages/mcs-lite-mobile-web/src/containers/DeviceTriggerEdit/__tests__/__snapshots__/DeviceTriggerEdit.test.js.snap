@@ -1,6 +1,7 @@
 exports[`test should renders <DeviceTriggerEdit> correctly 1`] = `
 <div>
-  <HelmetWrapper />
+  <HelmetWrapper
+    title="editTriggerAndAction" />
   <MobileHeader
     leftChildren={
       <MobileHeaderIcon
@@ -9,7 +10,8 @@ exports[`test should renders <DeviceTriggerEdit> correctly 1`] = `
         <IconArrowLeft
           size="1em" />
       </MobileHeaderIcon>
-    } />
+    }
+    title="editTriggerAndAction" />
   <main>
     <styled.div>
       <P>

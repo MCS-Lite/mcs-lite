@@ -1,10 +1,13 @@
 exports[`test should renders <Signin> correctly 1`] = `
 <styled.div>
-  <HelmetWrapper />
+  <HelmetWrapper
+    title="signin" />
   <Logo
     alt="MCS Lite Logo"
     src="logo.svg" />
-  <Styled(Hr) />
+  <Styled(Hr)>
+    welcome
+  </Styled(Hr)>
   <styled.form
     action="/oauth/login/mobile"
     method="post">
@@ -12,6 +15,7 @@ exports[`test should renders <Signin> correctly 1`] = `
       kind="primary"
       name="email"
       onChange={[Function]}
+      placeholder="email"
       required={true}
       type="email"
       value="" />
@@ -19,6 +23,7 @@ exports[`test should renders <Signin> correctly 1`] = `
       kind="primary"
       name="password"
       onChange={[Function]}
+      placeholder="password"
       required={true}
       type="password"
       value="" />
@@ -26,7 +31,8 @@ exports[`test should renders <Signin> correctly 1`] = `
       block={true}
       component="input"
       kind="primary"
-      type="submit" />
+      type="submit"
+      value="signin" />
   </styled.form>
 </styled.div>
 `;

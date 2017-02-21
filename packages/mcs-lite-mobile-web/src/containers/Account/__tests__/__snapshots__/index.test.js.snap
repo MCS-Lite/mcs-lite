@@ -1,0 +1,13 @@
+exports[`test should render Container correctly with HOC 1`] = `<Connect(InjectIntl(withPropsOnChange(Account))) />`;
+
+exports[`test should return props correctly with mapDispatchToProps 1`] = `
+Object {
+  "signout": [Function],
+}
+`;
+
+exports[`test should return props correctly with mapStateToProps 1`] = `
+Object {
+  "userName": "userName",
+}
+`;

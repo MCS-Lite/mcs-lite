@@ -1,0 +1,7 @@
+exports[`test should render Container correctly with HOC 1`] = `<Connect(InjectIntl(withPropsOnChange(Signin))) />`;
+
+exports[`test should return props correctly with mapDispatchToProps 1`] = `
+Object {
+  "tryEnter": [Function],
+}
+`;

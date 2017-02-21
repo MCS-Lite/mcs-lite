@@ -1,4 +1,5 @@
 import React from 'react';
+import R from 'ramda';
 import { shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
 import DeviceDetailInfo from '../DeviceDetailInfo';
@@ -25,7 +26,7 @@ it('should renders <DeviceDetailInfo> correctly', () => {
   const fetchMock = jest.fn();
   const wrapper = shallow(
     <DeviceDetailInfo
-      getMessages={() => {}}
+      getMessages={R.identity}
       deviceId="deviceId"
       device={{
         deviceId: 'deviceId',
