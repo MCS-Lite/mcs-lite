@@ -1,0 +1,34 @@
+exports[`test should render components correctly 1`] = `
+<div>
+  <Styled(MobileContentWrapper)>
+    <MobileContentWrapper
+      className="jCqbCL" />
+  </Styled(MobileContentWrapper)>
+  <styled.div>
+    <div
+      className="fOyagY" />
+  </styled.div>
+  <Styled(BaseComponent)>
+    <BaseComponent
+      className="bICnBJ">
+      <MobileHeaderIcon
+        className="bICnBJ"
+        component="a" />
+    </BaseComponent>
+  </Styled(BaseComponent)>
+  <Styled(BaseComponent)
+    active={true}>
+    <BaseComponent
+      active={true}
+      className="iPMmaL">
+      <MobileHeaderIcon
+        className="iPMmaL"
+        component="a" />
+    </BaseComponent>
+  </Styled(BaseComponent)>
+  <Styled(P)>
+    <P
+      className="ljoVtz" />
+  </Styled(P)>
+</div>
+`;

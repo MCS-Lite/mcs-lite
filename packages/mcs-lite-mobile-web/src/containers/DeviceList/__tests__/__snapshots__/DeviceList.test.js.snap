@@ -1,3 +1,94 @@
+exports[`test should renders <DeviceList> correctly when Filter open 1`] = `
+<div>
+  <HelmetWrapper
+    title="myTestDevices" />
+  <MobileHeader
+    leftChildren={
+      <MobileHeaderIcon
+        component={[Function]}
+        to={[Function]}>
+        <IconMenu
+          size="1em" />
+      </MobileHeaderIcon>
+    }
+    rightChildren={
+      Array [
+        <Transition
+          component={false}
+          enter={
+              Object {
+                  "marginLeft": 0,
+                  "opacity": 1,
+                }
+          }
+          leave={
+              Object {
+                  "marginLeft": 50,
+                  "opacity": 0,
+                }
+          }
+          onEnter={[Function]}
+          onLeave={[Function]}
+          runOnMount={true}>
+          <Input
+              autoFocus={true}
+              kind="primary"
+              onChange={[Function]}
+              placeholder="search"
+              value="" />
+      </Transition>,
+        <ClickOutside
+          onClick={[Function]}>
+          <Styled(BaseComponent)
+              active={true}
+              onClick={[Function]}>
+              <IconSearch
+                  size="1em" />
+          </Styled(BaseComponent)>
+      </ClickOutside>,
+      ]
+    }
+    title="" />
+  <main>
+    <PullToRefresh
+      IconArrow={[Function]}
+      IconLoading={[Function]}
+      isLoading={false}
+      onPull={[Function]}>
+      <styled.div>
+        <PreventDrag>
+          <Transition
+            appear={
+              Object {
+                "marginTop": -20,
+                "opacity": 0.8,
+              }
+            }
+            component={[Function]}
+            enter={
+              Object {
+                "marginTop": 0,
+                "opacity": 1,
+              }
+            }
+            leave={
+              Object {
+                "opacity": 0,
+              }
+            }
+            onEnter={[Function]}
+            onLeave={[Function]}
+            runOnMount={true} />
+        </PreventDrag>
+        <Styled(Component)>
+          noDevice
+        </Styled(Component)>
+      </styled.div>
+    </PullToRefresh>
+  </main>
+</div>
+`;
+
 exports[`test should renders <DeviceList> correctly with one device 1`] = `
 <div>
   <HelmetWrapper
@@ -18,7 +109,6 @@ exports[`test should renders <DeviceList> correctly with one device 1`] = `
           onClick={[Function]}>
           <Styled(BaseComponent)
               active={false}
-              component="a"
               onClick={[Function]}>
               <IconSearch
                   size="1em" />
@@ -91,7 +181,6 @@ exports[`test should renders <DeviceList> correctly without devices 1`] = `
           onClick={[Function]}>
           <Styled(BaseComponent)
               active={false}
-              component="a"
               onClick={[Function]}>
               <IconSearch
                   size="1em" />

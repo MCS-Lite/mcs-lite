@@ -1,0 +1,31 @@
+exports[`test should render components correctly 1`] = `
+<div>
+  <Styled(Button)>
+    <Button
+      block={false}
+      className="buRwqu"
+      component="button"
+      kind="primary" />
+  </Styled(Button)>
+  <styled.div>
+    <div
+      className="cCgbat" />
+  </styled.div>
+  <styled.div>
+    <div
+      className="EuRNj" />
+  </styled.div>
+  <styled.img
+    alt="MCS Lite Logo"
+    src="logo.svg">
+    <img
+      alt="MCS Lite Logo"
+      className="fRRFQD"
+      src="logo.svg" />
+  </styled.img>
+  <styled.footer>
+    <footer
+      className="bMAZFf" />
+  </styled.footer>
+</div>
+`;

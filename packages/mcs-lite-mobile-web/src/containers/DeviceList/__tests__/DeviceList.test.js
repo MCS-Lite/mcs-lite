@@ -43,3 +43,43 @@ it('should renders <DeviceList> correctly with one device', () => {
   expect(toJson(wrapper)).toMatchSnapshot();
   expect(fetchMock).toHaveBeenCalledWith();
 });
+
+it('should renders <DeviceList> correctly when Filter open', () => {
+  const wrapper = shallow(
+    <DeviceList
+      getMessages={R.identity}
+      devices={[]}
+      isLoading={false}
+      fetchDeviceList={() => {}}
+    />,
+  );
+
+  wrapper.setState({ isFilterOpen: true });
+  expect(toJson(wrapper)).toMatchSnapshot();
+});
+
+it('should return correctly state', () => {
+  const wrapper = shallow(
+    <DeviceList
+      getMessages={R.identity}
+      devices={[]}
+      isLoading={false}
+      fetchDeviceList={() => {}}
+    />,
+  );
+
+  // Before Open
+  expect(wrapper.state('filterValue')).toBe('');
+  expect(wrapper.state('isFilterOpen')).toBe(false);
+
+  // After Open
+  wrapper.instance().onFilterClick();
+  wrapper.instance().onFilterChange({ target: { value: 'keyword' }});
+  expect(wrapper.state('filterValue')).toBe('keyword');
+  expect(wrapper.state('isFilterOpen')).toBe(true);
+
+  // After Close
+  wrapper.instance().onClickOutside({ target: undefined });
+  expect(wrapper.state('filterValue')).toBe('');
+  expect(wrapper.state('isFilterOpen')).toBe(false);
+});

@@ -1,4 +1,6 @@
+import React from 'react';
 import styled from 'styled-components';
+import R from 'ramda';
 import { P, MobileHeader, MobileContentWrapper } from 'mcs-lite-ui';
 import { opacity } from 'mcs-lite-theme';
 
@@ -12,7 +14,9 @@ export const CardWrapper = styled.div`
   }
 `;
 
-export const StyledHeaderIcon = styled(MobileHeader.MobileHeaderIcon)`
+const omitProps = R.omit(['active']);
+const BaseComponent = props => <MobileHeader.MobileHeaderIcon {...omitProps(props)} />;
+export const StyledHeaderIcon = styled(BaseComponent)`
   color: ${props => opacity(props.active ? 0.5 : 1)(props.theme.color.white)};
 `;
 
