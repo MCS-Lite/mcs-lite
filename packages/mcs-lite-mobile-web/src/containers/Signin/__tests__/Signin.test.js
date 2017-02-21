@@ -29,7 +29,7 @@ it('should return correctly state', () => {
     />,
   );
 
-  // Before Open
+  // Before Change
   expect(wrapper.state('email')).toBe('');
   expect(wrapper.state('password')).toBe('');
 

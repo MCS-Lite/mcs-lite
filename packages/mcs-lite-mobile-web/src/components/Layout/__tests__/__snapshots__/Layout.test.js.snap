@@ -13,7 +13,7 @@ exports[`test should renders <Layout.LayoutDefault> correctly 1`] = `
 
 exports[`test should renders <Layout.LayoutDialog> correctly 1`] = `
 <LayoutDialog>
-  <Transition
+  <Component
     component={false}
     enter={
       Object {
@@ -26,91 +26,11 @@ exports[`test should renders <Layout.LayoutDialog> correctly 1`] = `
         "opacity": 0,
         "translateY": -40,
       }
-    }
-    onEnter={[Function]}
-    onLeave={[Function]}
-    runOnMount={true}>
-    <TransitionMotion
-      defaultStyles={
-        Array [
-          Object {
-            "data": <Styled(MobileContentWrapper)>
-              <styled.header>
-                    <Styled(Link)
-                          to={[Function]}>
-                          <IconClose
-                                size="1em" />
-                    </Styled(Link)>
-              </styled.header>
-              <styled.main>
-                    <div>
-                          Mock children
-                    </div>
-              </styled.main>
-        </Styled(MobileContentWrapper)>,
-            "key": "layoutDialog",
-            "style": Object {
-              "opacity": 0,
-              "translateY": -40,
-            },
-          },
-        ]
-      }
-      didLeave={[Function]}
-      styles={
-        Array [
-          Object {
-            "data": <Styled(MobileContentWrapper)>
-              <styled.header>
-                    <Styled(Link)
-                          to={[Function]}>
-                          <IconClose
-                                size="1em" />
-                    </Styled(Link)>
-              </styled.header>
-              <styled.main>
-                    <div>
-                          Mock children
-                    </div>
-              </styled.main>
-        </Styled(MobileContentWrapper)>,
-            "key": "layoutDialog",
-            "style": Object {
-              "opacity": Object {
-                "damping": 26,
-                "precision": 0.01,
-                "stiffness": 170,
-                "val": 1,
-              },
-              "translateY": Object {
-                "damping": 26,
-                "precision": 0.01,
-                "stiffness": 170,
-                "val": 0,
-              },
-            },
-          },
-        ]
-      }
-      willEnter={[Function]}
-      willLeave={[Function]}>
-      <Styled(MobileContentWrapper)
-        style={
-          Object {
-            "opacity": 0,
-            "undefined": "translateY(-40px) ",
-          }
-        }>
-        <MobileContentWrapper
-          className="fEeXvk"
-          style={
-            Object {
-              "opacity": 0,
-              "undefined": "translateY(-40px) ",
-            }
-          } />
-      </Styled(MobileContentWrapper)>
-    </TransitionMotion>
-  </Transition>
+    }>
+    <Styled(MobileContentWrapper)>
+      <MobileContentWrapper
+        className="fEeXvk" />
+    </Styled(MobileContentWrapper)>
+  </Component>
 </LayoutDialog>
 `;
