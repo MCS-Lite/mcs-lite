@@ -1,42 +1,36 @@
 exports[`test should renders <Layout.LayoutDefault> correctly 1`] = `
-<styled.div>
-  <div>
-    Mock children
-  </div>
-</styled.div>
-`;
-
-exports[`test should renders <Layout.LayoutDialog> correctly 1`] = `
-<Transition
-  component={false}
-  enter={
-    Object {
-      "opacity": 1,
-      "translateY": 0,
-    }
-  }
-  leave={
-    Object {
-      "opacity": 0,
-      "translateY": -40,
-    }
-  }
-  onEnter={[Function]}
-  onLeave={[Function]}
-  runOnMount={true}>
+<LayoutDefault>
   <styled.div>
-    <styled.header>
-      <Styled(Link)
-        to={[Function]}>
-        <IconClose
-          size="1em" />
-      </Styled(Link)>
-    </styled.header>
-    <styled.main>
+    <div
+      className="iTMMQv">
       <div>
         Mock children
       </div>
-    </styled.main>
+    </div>
   </styled.div>
-</Transition>
+</LayoutDefault>
+`;
+
+exports[`test should renders <Layout.LayoutDialog> correctly 1`] = `
+<LayoutDialog>
+  <Component
+    component={false}
+    enter={
+      Object {
+        "opacity": 1,
+        "translateY": 0,
+      }
+    }
+    leave={
+      Object {
+        "opacity": 0,
+        "translateY": -40,
+      }
+    }>
+    <Styled(MobileContentWrapper)>
+      <MobileContentWrapper
+        className="fEeXvk" />
+    </Styled(MobileContentWrapper)>
+  </Component>
+</LayoutDialog>
 `;

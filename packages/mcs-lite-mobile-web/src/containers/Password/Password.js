@@ -13,7 +13,7 @@ class Password extends React.Component {
     changePassword: PropTypes.func.isRequired,
   }
   state = { old: '', new1: '', new2: '' };
-  onChange = e => this.setState({ [e.target.id]: e.target.value });
+  onChange = e => this.setState({ [e.target.name]: e.target.value });
   onSubmit = (e) => {
     this.props.changePassword(this.state);
     e.preventDefault();
@@ -44,7 +44,7 @@ class Password extends React.Component {
               <div>
                 <Label htmlFor="old">{t('enterOldPassword')}</Label>
                 <Input
-                  id="old"
+                  name="old"
                   value={old}
                   onChange={onChange}
                   placeholder={t('enterOldPassword')}
@@ -55,7 +55,7 @@ class Password extends React.Component {
               <div>
                 <Label htmlFor="new1">{t('enterNewPassword')}</Label>
                 <Input
-                  id="new1"
+                  name="new1"
                   value={new1}
                   onChange={onChange}
                   placeholder={t('enterNewPassword')}
@@ -66,7 +66,7 @@ class Password extends React.Component {
               <div>
                 <Label htmlFor="new2">{t('enterNewPasswordAgain')}</Label>
                 <Input
-                  id="new2"
+                  name="new2"
                   value={new2}
                   onChange={onChange}
                   placeholder={t('enterNewPasswordAgain')}

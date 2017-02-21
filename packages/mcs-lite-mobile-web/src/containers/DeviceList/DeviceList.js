@@ -44,7 +44,7 @@ class DeviceList extends React.Component {
       <div>
         <Helmet title={t('myTestDevices')} />
         <MobileHeader.MobileHeader
-          title={!isFilterOpen && t('myTestDevices')}
+          title={isFilterOpen ? '' : t('myTestDevices')}
           leftChildren={
             <MobileHeader.MobileHeaderIcon
               component={Link}

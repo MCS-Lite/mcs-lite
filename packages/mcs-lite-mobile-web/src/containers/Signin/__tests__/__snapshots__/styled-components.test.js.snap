@@ -1,0 +1,12 @@
+exports[`test should render components correctly 1`] = `
+<div>
+  <Styled(MobileContentWrapper)>
+    <MobileContentWrapper
+      className="bAQOQh" />
+  </Styled(MobileContentWrapper)>
+  <styled.form>
+    <form
+      className="jIzYBx" />
+  </styled.form>
+</div>
+`;

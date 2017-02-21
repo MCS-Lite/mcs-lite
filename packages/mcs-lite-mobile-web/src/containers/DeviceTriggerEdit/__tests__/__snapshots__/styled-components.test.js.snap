@@ -1,0 +1,26 @@
+exports[`test should render components correctly 1`] = `
+<div>
+  <Styled(MobileContentWrapper)>
+    <MobileContentWrapper
+      className="cWSYOE" />
+  </Styled(MobileContentWrapper)>
+  <Styled(MobileContentWrapper)>
+    <MobileContentWrapper
+      className="eCOaFC" />
+  </Styled(MobileContentWrapper)>
+  <Styled(Small)>
+    <Small
+      className="duXBxT" />
+  </Styled(Small)>
+  <styled.div>
+    <div
+      className="fBwQPK" />
+  </styled.div>
+  <Styled(Switch)>
+    <Switch
+      checked={false}
+      className="kTMKcX"
+      kind="success" />
+  </Styled(Switch)>
+</div>
+`;
