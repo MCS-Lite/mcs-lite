@@ -91,7 +91,7 @@ $ npm run clean # Remove all node_modules
 ## Building all mono-packages
 
 ```
-# design => icon => theme => ui
+# scripts => design => icon => theme => ui
 $ ./tasks/build.sh
 ```
 
@@ -118,27 +118,36 @@ $ npm run test:watch
 
 ## NPM Scipts Interface
 
-| **Package**                 | clean | test | start | build | lint          |
-|-----------------------------|-------|------|-------|-------|---------------|
-| root                        | V     |      |       |       | V (es, style) |
-| `babel-preset-mcs-lite`     |       | V    |       |       |               |
-| `eslint-config-mcs-lite`    |       | V    |       |       |               |
-| `mcs-lite-demo-nextjs`      |       |      | V     |       |               |
-| `mcs-lite-design`           | V     |      |       | V     |               |
-| `mcs-lite-fetch-rx`         | V     |      |       | V     |               |
-| `mcs-lite-icon`             | V     |      |       | V     |               |
-| `mcs-lite-mobile-web`       | V     | V    | V     | V     |               |
-| `mcs-lite-scripts`          | V     |      |       | V     |               |
-| `mcs-lite-theme`            | V     |      |       | V     |               |
-| `mcs-lite-ui`               | V     | V    | V     | V     | V (flow)      |
-| `react-intl-cra`            |       |      |       |       |               |
-| `stylelint-config-mcs-lite` |       | V    |       |       |               |
+| **Package**                 | clean | test | start | build | lint          | publish   |
+|-----------------------------|-------|------|-------|-------|---------------|-----------|
+| root                        | V     |      |       |       | V (es, style) | V (lerna) |
+| `babel-preset-mcs-lite`     |       | V    |       |       |               |           |
+| `eslint-config-mcs-lite`    |       | V    |       |       |               |           |
+| `mcs-lite-demo-nextjs`      |       |      | V     |       |               |           |
+| `mcs-lite-design`           | V     |      |       | V     |               |           |
+| `mcs-lite-fetch-rx`         | V     |      |       | V     |               |           |
+| `mcs-lite-icon`             | V     |      |       | V     |               |           |
+| `mcs-lite-mobile-web`       | V     | V    | V     | V     |               |           |
+| `mcs-lite-scripts`          | V     |      |       | V     |               |           |
+| `mcs-lite-theme`            | V     |      |       | V     |               |           |
+| `mcs-lite-ui`               | V     | V    | V     | V     | V (flow)      |           |
+| `react-intl-cra`            |       |      |       |       |               |           |
+| `stylelint-config-mcs-lite` |       | V    |       |       |               |           |
 
-## npm-check-updates
+## Internal Notes
+
+### npm-check-updates
 
 ```
 $ npm run ncu # check for all packages
 $ npm run ncu-update # update packages.json
+```
+
+### npm publish
+
+```
+$ cd mcs-lite/
+$ npm run publish
 ```
 
 ## Team

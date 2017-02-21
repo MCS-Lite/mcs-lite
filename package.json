@@ -7,7 +7,9 @@
     "stylelint": "stylelint './**/*.js' --ignore-path .linterignore",
     "eslint": "eslint ./ --ignore-path .linterignore",
     "ncu": "ncu && lerna exec --concurrency 1 -- ncu",
-    "ncu-update": "ncu -au && lerna exec --concurrency 1 -- ncu -au"
+    "ncu-update": "ncu -au && lerna exec --concurrency 1 -- ncu -au",
+    "publish": "lerna publish",
+    "prepublish": "./tasks/build.sh"
   },
   "devDependencies": {
     "babel-eslint": "^7.1.1",
