@@ -48,18 +48,18 @@
 
 | **Package** | **Description** | **Version** |
 |-------------|-----------------|-------------|
-| `babel-preset-mcs-lite` | Babel config | [![npm][babel-preset-mcs-lite-npm-badge]]([babel-preset-mcs-lite-npm]) |
-| `eslint-config-mcs-lite` | JS coding style | [![npm][eslint-config-mcs-lite-npm-badge]]([eslint-config-mcs-lite-npm]) |
+| `babel-preset-mcs-lite` | Babel preset used by MCS Lite | [![npm][babel-preset-mcs-lite-npm-badge]]([babel-preset-mcs-lite-npm]) |
+| `eslint-config-mcs-lite` | Eslint config used by MCS Lite | [![npm][eslint-config-mcs-lite-npm-badge]]([eslint-config-mcs-lite-npm]) |
 | `mcs-lite-demo-nextjs` | Demo how to use mcs-lite-ui. | |
-| `mcs-lite-design` | The source files to be compressed. | [![npm][mcs-lite-design-npm-badge]]([mcs-lite-design-npm]) |
-| `mcs-lite-fetch-rx` | The Client api with stream creator. | [![npm][mcs-lite-fetch-rx-npm-badge]]([mcs-lite-fetch-rx-npm]) |
-| `mcs-lite-icon` | Convert svg to react components. | [![npm][mcs-lite-icon-npm-badge]]([mcs-lite-icon-npm]) |
-| `mcs-lite-mobile-web` | MCS Lite mobile website project. | [![npm][mcs-lite-mobile-web-npm-badge]]([mcs-lite-mobile-web-npm]) |
-| `mcs-lite-scripts` | Shared scripts and some CLI `bin` files. | [![npm][mcs-lite-scripts-npm-badge]]([mcs-lite-scripts-npm]) |
-| `mcs-lite-theme` | Defined `Theme` object and color helpers. | [![npm][mcs-lite-theme-npm-badge]]([mcs-lite-theme-npm]) |
-| `mcs-lite-ui` | MCS Lite common UI and storybook demo page. | [![npm][mcs-lite-ui-npm-badge]]([mcs-lite-ui-npm]) |
-| `react-intl-cra` | Alias for `extract-messages`. | [![npm][react-intl-cra-npm-badge]]([react-intl-cra-npm]) |
-| `stylelint-config-mcs-lite` | CSS coding style | [![npm][stylelint-config-mcs-lite-npm-badge]]([stylelint-config-mcs-lite-npm]) |
+| `mcs-lite-design` | The source images to be compressed used by MCS Lite | [![npm][mcs-lite-design-npm-badge]]([mcs-lite-design-npm]) |
+| `mcs-lite-fetch-rx` | The Client api with stream creator for MCS Lite | [![npm][mcs-lite-fetch-rx-npm-badge]]([mcs-lite-fetch-rx-npm]) |
+| `mcs-lite-icon` | Convert SVG icon to React components | [![npm][mcs-lite-icon-npm-badge]]([mcs-lite-icon-npm]) |
+| `mcs-lite-mobile-web` | MCS Lite Mobile Web | [![npm][mcs-lite-mobile-web-npm-badge]]([mcs-lite-mobile-web-npm]) |
+| `mcs-lite-scripts` | Shared scripts and CLI used by MCS Lite | [![npm][mcs-lite-scripts-npm-badge]]([mcs-lite-scripts-npm]) |
+| `mcs-lite-theme` | Defined `Theme` and helpers for `mcs-lite-ui` | [![npm][mcs-lite-theme-npm-badge]]([mcs-lite-theme-npm]) |
+| `mcs-lite-ui` | Common UI used by MCS Lite | [![npm][mcs-lite-ui-npm-badge]]([mcs-lite-ui-npm]) |
+| `react-intl-cra` | Extract messages for `Creact React App` from the command line | [![npm][react-intl-cra-npm-badge]]([react-intl-cra-npm]) |
+| `stylelint-config-mcs-lite` | Stylelint config used by MCS Lite | [![npm][stylelint-config-mcs-lite-npm-badge]]([stylelint-config-mcs-lite-npm]) |
 
 ## Install
 

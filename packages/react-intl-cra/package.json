@@ -1,11 +1,20 @@
 {
   "name": "react-intl-cra",
   "version": "0.0.0",
-  "description": "",
+  "description": "Extract messages for `Creact React App` from the command line",
+  "repository": "evenchange4/mcs-lite",
+  "author": "Michael Hsu <evenchange4@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/evenchange4/mcs-lite/issues",
+    "email" : "evenchange4@gmail.com"
+  },
+  "homepage": "https://github.com/evenchange4/mcs-lite#readme",
+  "files": [
+    "bin"
+  ],
   "bin": {
     "react-intl-cra": "./bin/extract-messages.js"
   },
-  "author": "",
   "license": "ISC",
   "dependencies": {
     "mcs-lite-scripts": "^0.0.0"

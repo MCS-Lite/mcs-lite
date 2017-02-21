@@ -1,8 +1,18 @@
 {
   "name": "mcs-lite-scripts",
   "version": "0.0.0",
-  "description": "",
-  "author": "",
+  "description": "Shared scripts and CLI used by MCS Lite",
+  "repository": "evenchange4/mcs-lite",
+  "author": "Michael Hsu <evenchange4@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/evenchange4/mcs-lite/issues",
+    "email" : "evenchange4@gmail.com"
+  },
+  "homepage": "https://github.com/evenchange4/mcs-lite#readme",
+  "files": [
+    "lib",
+    "bin"
+  ],
   "license": "ISC",
   "bin": {
     "exports-all": "bin/exports-all.js",

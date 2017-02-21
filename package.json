@@ -1,5 +1,5 @@
 {
-  "name": "mcs-lite",
+  "private": true,
   "scripts": {
     "bootstrap": "lerna bootstrap --hoist",
     "postinstall": "npm run bootstrap && ./tasks/build.sh",

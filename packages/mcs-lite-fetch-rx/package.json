@@ -1,7 +1,17 @@
 {
   "name": "mcs-lite-fetch-rx",
   "version": "0.0.0",
-  "description": "",
+  "description": "The Client api with stream creator for MCS Lite",
+  "repository": "evenchange4/mcs-lite",
+  "author": "Michael Hsu <evenchange4@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/evenchange4/mcs-lite/issues",
+    "email" : "evenchange4@gmail.com"
+  },
+  "homepage": "https://github.com/evenchange4/mcs-lite#readme",
+  "files": [
+    "lib"
+  ],
   "main": "lib/index.js",
   "scripts": {
     "clean": "rm -rf lib",
@@ -10,7 +20,6 @@
     "createEntryFile": "exports-all 'lib/*.js' 'lib/index.js'",
     "postbuild": "npm run createEntryFile"
   },
-  "author": "",
   "license": "ISC",
   "dependencies": {
     "http-client": "^4.3.1"

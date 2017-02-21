@@ -1,14 +1,23 @@
 {
   "name": "mcs-lite-theme",
   "version": "0.0.0",
-  "description": "",
+  "description": "Defined `Theme` and helpers for `mcs-lite-ui`",
+  "repository": "evenchange4/mcs-lite",
+  "author": "Michael Hsu <evenchange4@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/evenchange4/mcs-lite/issues",
+    "email" : "evenchange4@gmail.com"
+  },
+  "homepage": "https://github.com/evenchange4/mcs-lite#readme",
+  "files": [
+    "lib"
+  ],
   "main": "lib/index.js",
   "scripts": {
     "clean": "rm -rf lib",
     "prebuild": "npm run clean",
     "build": "NODE_ENV=production babel src --out-dir lib"
   },
-  "author": "",
   "license": "ISC",
   "devDependencies": {
     "babel-cli": "^6.23.0",
