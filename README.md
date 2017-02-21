@@ -56,6 +56,10 @@
 [react-intl-cra-npm]: https://www.npmjs.org/package/react-intl-cra
 [react-intl-cra-npm-downloads]: https://img.shields.io/npm/dt/react-intl-cra.svg?maxAge=86400&style=flat-square
 
+[react-intl-inject-hoc-npm-badge]: https://img.shields.io/npm/v/react-intl-inject-hoc.svg?maxAge=86400&style=flat-square
+[react-intl-inject-hoc-npm]: https://www.npmjs.org/package/react-intl-inject-hoc
+[react-intl-inject-hoc-npm-downloads]: https://img.shields.io/npm/dt/react-intl-inject-hoc.svg?maxAge=86400&style=flat-square
+
 [stylelint-config-mcs-lite-npm-badge]: https://img.shields.io/npm/v/stylelint-config-mcs-lite.svg?maxAge=86400&style=flat-square
 [stylelint-config-mcs-lite-npm]: https://www.npmjs.org/package/stylelint-config-mcs-lite
 [stylelint-config-mcs-lite-npm-downloads]: https://img.shields.io/npm/dt/stylelint-config-mcs-lite.svg?maxAge=86400&style=flat-square
@@ -73,6 +77,7 @@
 | `mcs-lite-theme` | Defined `Theme` and helpers for `mcs-lite-ui` | [![npm][mcs-lite-theme-npm-badge]][mcs-lite-theme-npm] | [![npm downloads][mcs-lite-theme-npm-downloads]][mcs-lite-theme-npm]
 | `mcs-lite-ui` | Common UI used by MCS Lite | [![npm][mcs-lite-ui-npm-badge]][mcs-lite-ui-npm] | [![npm downloads][mcs-lite-ui-npm-downloads]][mcs-lite-ui-npm]
 | `react-intl-cra` | Extract messages for `Creact React App` from the command line | [![npm][react-intl-cra-npm-badge]][react-intl-cra-npm] | [![npm downloads][react-intl-cra-npm-downloads]][react-intl-cra-npm]
+| `react-intl-inject-hoc` | The convenience HOC of react-intl injectIntl | [![npm][react-intl-inject-hoc-npm-badge]][react-intl-inject-hoc-npm] | [![npm downloads][react-intl-inject-hoc-npm-downloads]][react-intl-inject-hoc-npm]
 | `stylelint-config-mcs-lite` | Stylelint config used by MCS Lite | [![npm][stylelint-config-mcs-lite-npm-badge]][stylelint-config-mcs-lite-npm] | [![npm downloads][stylelint-config-mcs-lite-npm-downloads]][stylelint-config-mcs-lite-npm]
 
 ## Install
@@ -135,6 +140,7 @@ $ npm run test:watch
 | `mcs-lite-theme`            | V     |      |       | V     |               |           |
 | `mcs-lite-ui`               | V     | V    | V     | V     | V (flow)      |           |
 | `react-intl-cra`            |       |      |       |       |               |           |
+| `react-intl-inject-hoc`     | V     |      |       | V     |               |           |
 | `stylelint-config-mcs-lite` |       | V    |       |       |               |           |
 
 ## Internal Notes

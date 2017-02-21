@@ -1,7 +1,7 @@
 import { connect } from 'react-redux';
 import R from 'ramda';
 import compose from 'recompose/compose';
-import withGetMessages from '../../utils/withGetMessages';
+import { withGetMessages } from 'react-intl-inject-hoc';
 import messages from './messages';
 import { actions } from '../../modules/devices';
 import DeviceList from './DeviceList';

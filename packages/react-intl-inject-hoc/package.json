@@ -1,0 +1,39 @@
+{
+  "name": "react-intl-inject-hoc",
+  "version": "0.0.0",
+  "description": "The convenience HOC of react-intl injectIntl",
+  "repository": "evenchange4/mcs-lite",
+  "author": "Michael Hsu <evenchange4@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/evenchange4/mcs-lite/issues",
+    "email": "evenchange4@gmail.com"
+  },
+  "homepage": "https://github.com/evenchange4/mcs-lite#readme",
+  "files": [
+    "lib"
+  ],
+  "main": "lib/index.js",
+  "scripts": {
+    "clean": "rm -rf lib",
+    "prebuild": "npm run clean",
+    "build": "NODE_ENV='production' babel src --out-dir lib",
+    "createEntryFile": "exports-all 'lib/*.js' 'lib/index.js'",
+    "postbuild": "npm run createEntryFile"
+  },
+  "license": "ISC",
+  "peerDependencies": {
+    "react": "^15.4.2",
+    "react-intl": "^2.2.3",
+    "recompose": "^0.22.0"
+  },
+  "dependencies": {
+    "babel-cli": "^6.23.0",
+    "babel-preset-mcs-lite": "^0.0.1",
+    "mcs-lite-scripts": "^0.0.1"
+  },
+  "babel": {
+    "presets": [
+      "mcs-lite"
+    ]
+  }
+}
