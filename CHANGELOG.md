@@ -1,4 +1,4 @@
-## Unreleased (2017-02-21)
+## Released (2017-02-21)
 
 #### :rocket: New Feature
 * `mcs-lite-mobile-web`, `react-intl-inject-hoc`

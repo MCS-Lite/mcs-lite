@@ -16,53 +16,53 @@
 
 ## Packages
 
-[babel-preset-mcs-lite-npm-badge]: https://img.shields.io/npm/v/babel-preset-mcs-lite.svg?maxAge=86400&style=flat-square
+[babel-preset-mcs-lite-npm-badge]: https://img.shields.io/npm/v/babel-preset-mcs-lite.svg?style=flat-square
 [babel-preset-mcs-lite-npm]: https://www.npmjs.org/package/babel-preset-mcs-lite
-[babel-preset-mcs-lite-npm-downloads]: https://img.shields.io/npm/dt/babel-preset-mcs-lite.svg?maxAge=86400&style=flat-square
+[babel-preset-mcs-lite-npm-downloads]: https://img.shields.io/npm/dt/babel-preset-mcs-lite.svg?style=flat-square
 
-[eslint-config-mcs-lite-npm-badge]: https://img.shields.io/npm/v/eslint-config-mcs-lite.svg?maxAge=86400&style=flat-square
+[eslint-config-mcs-lite-npm-badge]: https://img.shields.io/npm/v/eslint-config-mcs-lite.svg?style=flat-square
 [eslint-config-mcs-lite-npm]: https://www.npmjs.org/package/eslint-config-mcs-lite
-[eslint-config-mcs-lite-npm-downloads]: https://img.shields.io/npm/dt/eslint-config-mcs-lite.svg?maxAge=86400&style=flat-square
+[eslint-config-mcs-lite-npm-downloads]: https://img.shields.io/npm/dt/eslint-config-mcs-lite.svg?style=flat-square
 
-[mcs-lite-design-npm-badge]: https://img.shields.io/npm/v/mcs-lite-design.svg?maxAge=86400&style=flat-square
+[mcs-lite-design-npm-badge]: https://img.shields.io/npm/v/mcs-lite-design.svg?style=flat-square
 [mcs-lite-design-npm]: https://www.npmjs.org/package/mcs-lite-design
-[mcs-lite-design-npm-downloads]: https://img.shields.io/npm/dt/mcs-lite-design.svg?maxAge=86400&style=flat-square
+[mcs-lite-design-npm-downloads]: https://img.shields.io/npm/dt/mcs-lite-design.svg?style=flat-square
 
-[mcs-lite-fetch-rx-npm-badge]: https://img.shields.io/npm/v/mcs-lite-fetch-rx.svg?maxAge=86400&style=flat-square
+[mcs-lite-fetch-rx-npm-badge]: https://img.shields.io/npm/v/mcs-lite-fetch-rx.svg?style=flat-square
 [mcs-lite-fetch-rx-npm]: https://www.npmjs.org/package/mcs-lite-fetch-rx
-[mcs-lite-fetch-rx-npm-downloads]: https://img.shields.io/npm/dt/mcs-lite-fetch-rx.svg?maxAge=86400&style=flat-square
+[mcs-lite-fetch-rx-npm-downloads]: https://img.shields.io/npm/dt/mcs-lite-fetch-rx.svg?style=flat-square
 
-[mcs-lite-icon-npm-badge]: https://img.shields.io/npm/v/mcs-lite-icon.svg?maxAge=86400&style=flat-square
+[mcs-lite-icon-npm-badge]: https://img.shields.io/npm/v/mcs-lite-icon.svg?style=flat-square
 [mcs-lite-icon-npm]: https://www.npmjs.org/package/mcs-lite-icon
-[mcs-lite-icon-npm-downloads]: https://img.shields.io/npm/dt/mcs-lite-icon.svg?maxAge=86400&style=flat-square
+[mcs-lite-icon-npm-downloads]: https://img.shields.io/npm/dt/mcs-lite-icon.svg?style=flat-square
 
-[mcs-lite-mobile-web-npm-badge]: https://img.shields.io/npm/v/mcs-lite-mobile-web.svg?maxAge=86400&style=flat-square
+[mcs-lite-mobile-web-npm-badge]: https://img.shields.io/npm/v/mcs-lite-mobile-web.svg?style=flat-square
 [mcs-lite-mobile-web-npm]: https://www.npmjs.org/package/mcs-lite-mobile-web
-[mcs-lite-mobile-web-npm-downloads]: https://img.shields.io/npm/dt/mcs-lite-mobile.svg?maxAge=86400&style=flat-square
+[mcs-lite-mobile-web-npm-downloads]: https://img.shields.io/npm/dt/mcs-lite-mobile.svg?style=flat-square
 
-[mcs-lite-scripts-npm-badge]: https://img.shields.io/npm/v/mcs-lite-scripts.svg?maxAge=86400&style=flat-square
+[mcs-lite-scripts-npm-badge]: https://img.shields.io/npm/v/mcs-lite-scripts.svg?style=flat-square
 [mcs-lite-scripts-npm]: https://www.npmjs.org/package/mcs-lite-scripts
-[mcs-lite-scripts-npm-downloads]: https://img.shields.io/npm/dt/mcs-lite-scripts.svg?maxAge=86400&style=flat-square
+[mcs-lite-scripts-npm-downloads]: https://img.shields.io/npm/dt/mcs-lite-scripts.svg?style=flat-square
 
-[mcs-lite-theme-npm-badge]: https://img.shields.io/npm/v/mcs-lite-theme.svg?maxAge=86400&style=flat-square
+[mcs-lite-theme-npm-badge]: https://img.shields.io/npm/v/mcs-lite-theme.svg?style=flat-square
 [mcs-lite-theme-npm]: https://www.npmjs.org/package/mcs-lite-theme
-[mcs-lite-theme-npm-downloads]: https://img.shields.io/npm/dt/mcs-lite-theme.svg?maxAge=86400&style=flat-square
+[mcs-lite-theme-npm-downloads]: https://img.shields.io/npm/dt/mcs-lite-theme.svg?style=flat-square
 
-[mcs-lite-ui-npm-badge]: https://img.shields.io/npm/v/mcs-lite-ui.svg?maxAge=86400&style=flat-square
+[mcs-lite-ui-npm-badge]: https://img.shields.io/npm/v/mcs-lite-ui.svg?style=flat-square
 [mcs-lite-ui-npm]: https://www.npmjs.org/package/mcs-lite-ui
-[mcs-lite-ui-npm-downloads]: https://img.shields.io/npm/dt/mcs-lite-ui-npm.svg?maxAge=86400&style=flat-square
+[mcs-lite-ui-npm-downloads]: https://img.shields.io/npm/dt/mcs-lite-ui-npm.svg?style=flat-square
 
-[react-intl-cra-npm-badge]: https://img.shields.io/npm/v/react-intl-cra.svg?maxAge=86400&style=flat-square
+[react-intl-cra-npm-badge]: https://img.shields.io/npm/v/react-intl-cra.svg?style=flat-square
 [react-intl-cra-npm]: https://www.npmjs.org/package/react-intl-cra
-[react-intl-cra-npm-downloads]: https://img.shields.io/npm/dt/react-intl-cra.svg?maxAge=86400&style=flat-square
+[react-intl-cra-npm-downloads]: https://img.shields.io/npm/dt/react-intl-cra.svg?style=flat-square
 
-[react-intl-inject-hoc-npm-badge]: https://img.shields.io/npm/v/react-intl-inject-hoc.svg?maxAge=86400&style=flat-square
+[react-intl-inject-hoc-npm-badge]: https://img.shields.io/npm/v/react-intl-inject-hoc.svg?style=flat-square
 [react-intl-inject-hoc-npm]: https://www.npmjs.org/package/react-intl-inject-hoc
-[react-intl-inject-hoc-npm-downloads]: https://img.shields.io/npm/dt/react-intl-inject-hoc.svg?maxAge=86400&style=flat-square
+[react-intl-inject-hoc-npm-downloads]: https://img.shields.io/npm/dt/react-intl-inject-hoc.svg?style=flat-square
 
-[stylelint-config-mcs-lite-npm-badge]: https://img.shields.io/npm/v/stylelint-config-mcs-lite.svg?maxAge=86400&style=flat-square
+[stylelint-config-mcs-lite-npm-badge]: https://img.shields.io/npm/v/stylelint-config-mcs-lite.svg?style=flat-square
 [stylelint-config-mcs-lite-npm]: https://www.npmjs.org/package/stylelint-config-mcs-lite
-[stylelint-config-mcs-lite-npm-downloads]: https://img.shields.io/npm/dt/stylelint-config-mcs-lite.svg?maxAge=86400&style=flat-square
+[stylelint-config-mcs-lite-npm-downloads]: https://img.shields.io/npm/dt/stylelint-config-mcs-lite.svg?style=flat-square
 
 | **Package** | **Description** | **Version** | **Downloads** |
 |-------------|-----------------|-------------|---------------|
