@@ -1,6 +1,7 @@
 exports[`test should renders <DeviceTrigger> correctly 1`] = `
 <div>
-  <HelmetWrapper />
+  <HelmetWrapper
+    title="triggerAndAction" />
   <MobileHeader
     leftChildren={
       <MobileHeaderIcon
@@ -9,7 +10,8 @@ exports[`test should renders <DeviceTrigger> correctly 1`] = `
         <IconArrowLeft
           size="1em" />
       </MobileHeaderIcon>
-    } />
+    }
+    title="triggerAndAction" />
   <main>
     <PullToRefresh
       IconArrow={[Function]}
@@ -24,7 +26,9 @@ exports[`test should renders <DeviceTrigger> correctly 1`] = `
               <P>
                 觸發條件名稱 A
               </P>
-              <styled.small />
+              <styled.small>
+                on
+              </styled.small>
             </div>
             <styled.div>
               <IconChevronRight
@@ -39,7 +43,9 @@ exports[`test should renders <DeviceTrigger> correctly 1`] = `
               <P>
                 觸發條件名稱 A
               </P>
-              <styled.small />
+              <styled.small>
+                off
+              </styled.small>
             </div>
             <styled.div>
               <IconChevronRight

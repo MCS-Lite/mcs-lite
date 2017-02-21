@@ -1,6 +1,7 @@
 exports[`test should renders <DeviceDetailInfo> correctly 1`] = `
 <div>
-  <HelmetWrapper />
+  <HelmetWrapper
+    title="deviceIntro" />
   <MobileHeader
     leftChildren={
       <MobileHeaderIcon
@@ -9,7 +10,8 @@ exports[`test should renders <DeviceDetailInfo> correctly 1`] = `
         <IconArrowLeft
           size="1em" />
       </MobileHeaderIcon>
-    } />
+    }
+    title="deviceIntro" />
   <main>
     <PullToRefresh
       IconArrow={[Function]}
@@ -18,25 +20,33 @@ exports[`test should renders <DeviceDetailInfo> correctly 1`] = `
       onPull={[Function]}>
       <styled.div>
         <div>
-          <B />
+          <B>
+            deviceName
+          </B>
           <P>
             deviceName
           </P>
         </div>
         <div>
-          <B />
+          <B>
+            creator
+          </B>
           <P>
             userName
           </P>
         </div>
         <div>
-          <B />
+          <B>
+            version
+          </B>
           <P>
             version
           </P>
         </div>
         <div>
-          <B />
+          <B>
+            description
+          </B>
           <P>
             deviceDescription
           </P>

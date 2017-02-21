@@ -1,6 +1,7 @@
 exports[`test should renders <Account> correctly 1`] = `
 <styled.div>
-  <HelmetWrapper />
+  <HelmetWrapper
+    title="account" />
   <styled.div>
     <styled.img
       alt="MCS Lite Logo"
@@ -10,7 +11,9 @@ exports[`test should renders <Account> correctly 1`] = `
       userName
     </Heading>
     <Heading
-      level={4} />
+      level={4}>
+      hello
+    </Heading>
   </styled.div>
   <styled.footer>
     <Styled(Link)
@@ -18,20 +21,26 @@ exports[`test should renders <Account> correctly 1`] = `
       <Styled(BaseComponent)
         block={true}
         component="button"
-        kind="primary" />
+        kind="primary">
+        myTestDevices
+      </Styled(BaseComponent)>
     </Styled(Link)>
     <Styled(Link)
       to={[Function]}>
       <Styled(BaseComponent)
         block={true}
         component="button"
-        kind="primary" />
+        kind="primary">
+        changePassword
+      </Styled(BaseComponent)>
     </Styled(Link)>
     <Styled(BaseComponent)
       block={true}
       component="button"
       kind="primary"
-      onClick={[Function]} />
+      onClick={[Function]}>
+      signout
+    </Styled(BaseComponent)>
   </styled.footer>
 </styled.div>
 `;

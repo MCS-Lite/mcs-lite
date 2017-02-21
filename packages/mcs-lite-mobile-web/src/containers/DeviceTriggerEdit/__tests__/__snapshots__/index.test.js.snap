@@ -1,0 +1,16 @@
+exports[`test should render Container correctly with HOC 1`] = `<Connect(InjectIntl(withPropsOnChange(DeviceTriggerEdit))) />`;
+
+exports[`test should return props correctly with mapDispatchToProps 1`] = `
+Object {
+  "fetchDeviceDetail": [Function],
+}
+`;
+
+exports[`test should return props correctly with mapStateToProps 1`] = `
+Object {
+  "device": Object {
+    "deviceName": "deviceName",
+  },
+  "deviceId": "deviceId",
+}
+`;
