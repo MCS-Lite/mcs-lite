@@ -13,20 +13,20 @@
 
 ## Packages
 
-| **Package**                 | **Description**                             |
-|-----------------------------|---------------------------------------------|
-| `babel-preset-mcs-lite`     | Babel config                                |
-| `eslint-config-mcs-lite`    | JS coding style                             |
-| `mcs-lite-demo-nextjs`      | Demo how to use mcs-lite-ui.                |
-| `mcs-lite-design`           | The source files to be compressed.          |
-| `mcs-lite-fetch-rx`         | The Client api with stream creator.         |
-| `mcs-lite-icon`             | Convert svg to react components.            |
-| `mcs-lite-mobile-web`       | MCS Lite mobile website project.            |
-| `mcs-lite-scripts`          | Shared scripts and some CLI `bin` files.    |
-| `mcs-lite-theme`            | Defined `Theme` object and color helpers.   |
-| `mcs-lite-ui`               | MCS Lite common UI and storybook demo page. |
-| `react-intl-cra`            | Alias for `extract-messages`.               |
-| `stylelint-config-mcs-lite` | CSS coding style                            |
+| **Package**                 | **Description**                             | **Version** | **Dependencies** |
+|-----------------------------|---------------------------------------------| | |
+| `babel-preset-mcs-lite`     | Babel config                                | | |
+| `eslint-config-mcs-lite`    | JS coding style                             | | |
+| `mcs-lite-demo-nextjs`      | Demo how to use mcs-lite-ui.                | | |
+| `mcs-lite-design`           | The source files to be compressed.          | | |
+| `mcs-lite-fetch-rx`         | The Client api with stream creator.         | | |
+| `mcs-lite-icon`             | Convert svg to react components.            | | |
+| `mcs-lite-mobile-web`       | MCS Lite mobile website project.            | | |
+| `mcs-lite-scripts`          | Shared scripts and some CLI `bin` files.    | | |
+| `mcs-lite-theme`            | Defined `Theme` object and color helpers.   | | |
+| `mcs-lite-ui`               | MCS Lite common UI and storybook demo page. | | |
+| `react-intl-cra`            | Alias for `extract-messages`.               | | |
+| `stylelint-config-mcs-lite` | CSS coding style                            | | |
 
 ## Install
 
@@ -97,7 +97,10 @@ $ npm run ncu # check for all packages
 $ npm run ncu-update # update packages.json
 ```
 
-## Reference
+## Team
 
--  https://github.com/diegohaz/arc
--  https://github.com/jxnblk/grid-styled
+[![Michael Hsu](https://avatars.githubusercontent.com/u/1527371?v=3&s=96)](https://github.com/evenchange4) | [![Abel Chen](https://avatars.githubusercontent.com/u/2841286?v=3&s=96)](https://github.com/cettoana) | [![Abby Chiu](https://avatars.githubusercontent.com/u/11768650?v=3&s=96)](https://github.com/abby1002) | [![Daria Chen](https://avatars.githubusercontent.com/u/1300728?v=3&s=96)](https://github.com/dariachen) | [![blue chen](https://avatars.githubusercontent.com/u/1887942?v=3&s=96)](https://github.com/iamblue)
+---|---|---|---|---|
+Michael Hsu | Abel Chen | Abby Chiu | Daria Chen| blue chen
+[@evenchange4](https://github.com/evenchange4) | [@cettoana](https://github.com/cettoana) | [@abby1002](https://github.com/abby1002) | [@dariachen](https://github.com/dariachen) | [@iamblue](https://github.com/iamblue)
+[@evenchange4](https://twitter.com/evenchange4) | | | |
