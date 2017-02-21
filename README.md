@@ -6,6 +6,9 @@
 * [Developer Guide](./docs/README.md)
 
 
+> Note: MCS Lite core and Desktop website is being developed at https://github.com/iamblue/mcs-lite-app.
+
+
 ## Requirements
 
 -   node >= 7.5.0
@@ -148,6 +151,13 @@ $ npm run ncu-update # update packages.json
 ```
 $ cd mcs-lite/
 $ npm run publish
+```
+
+### changelog
+
+```
+$ npm i lerna-changelog -g
+$ lerna-changelog
 ```
 
 ## Team
