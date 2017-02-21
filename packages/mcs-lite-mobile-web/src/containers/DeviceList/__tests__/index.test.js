@@ -25,11 +25,8 @@ it('should return props correctly with mapStateToProps', () => {
     devices: { deviceId: { deviceName: 'deviceName' }},
     ui: { isLoading: false },
   };
-  const ownProps = {
-    params: { deviceId: 'deviceId' },
-  };
 
-  expect(mapStateToProps(state, ownProps)).toMatchSnapshot();
+  expect(mapStateToProps(state)).toMatchSnapshot();
 });
 
 it('should return props correctly with mapDispatchToProps', () => {
