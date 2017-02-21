@@ -47,7 +47,7 @@
 [stylelint-config-mcs-lite-npm]: https://www.npmjs.org/package/stylelint-config-mcs-lite
 
 | **Package** | **Description** | **Version** |
-|-----------------------------|---------------------------------------------|
+|-------------|-----------------|-------------|
 | `babel-preset-mcs-lite` | Babel config | [![npm][babel-preset-mcs-lite-npm-badge]]([babel-preset-mcs-lite-npm]) |
 | `eslint-config-mcs-lite` | JS coding style | [![npm][eslint-config-mcs-lite-npm-badge]]([eslint-config-mcs-lite-npm]) |
 | `mcs-lite-demo-nextjs` | Demo how to use mcs-lite-ui. | |
