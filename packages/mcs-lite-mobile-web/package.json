@@ -27,6 +27,7 @@
   },
   "devDependencies": {
     "babel-eslint": "^7.1.1",
+    "date-fp": "^4.4.8",
     "dotenv": "^4.0.0",
     "enzyme": "^2.7.1",
     "enzyme-to-json": "^1.4.5",

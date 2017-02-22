@@ -19,6 +19,8 @@ import DeviceDetail from './containers/DeviceDetail';
 import DeviceDetailInfo from './containers/DeviceDetailInfo';
 import DeviceTrigger from './containers/DeviceTrigger';
 import DeviceTriggerEdit from './containers/DeviceTriggerEdit';
+import DeviceDataChannelDetail from './containers/DeviceDataChannelDetail';
+import DeviceDataChannelTimeRange from './containers/DeviceDataChannelTimeRange';
 import Signin from './containers/Signin';
 import Account from './containers/Account';
 import Password from './containers/Password';
@@ -60,6 +62,8 @@ ReactDOM.render(
               <Route path="devices/:deviceId/info" component={DeviceDetailInfo} />
               <Route path="devices/:deviceId/trigger" component={DeviceTrigger} />
               <Route path="devices/:deviceId/trigger/edit" component={DeviceTriggerEdit} />
+              <Route path="devices/:deviceId/dataChannels/:dataChannelId" component={DeviceDataChannelDetail} />
+              <Route path="devices/:deviceId/dataChannels/:dataChannelId/timeRange" component={DeviceDataChannelTimeRange} />
             </Route>
             <Route component={Layout.LayoutDialog}>
               <Route path="account" component={Account} />
