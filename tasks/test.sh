@@ -8,9 +8,8 @@ npm run stylelint
 
 ## Interface for each project
 node_modules/.bin/lerna run lint
-node_modules/.bin/lerna run --concurrency 1 test
+node_modules/.bin/lerna run test
 
 ## Test for demo page building
-# TODO: Circle CI memory problem.
-# node_modules/.bin/lerna run build-storybook --scope mcs-lite-ui
-# node_modules/.bin/lerna run build --scope mcs-lite-mobile-web
+node_modules/.bin/lerna run build-storybook --scope mcs-lite-ui
+node_modules/.bin/lerna run build --scope mcs-lite-mobile-web
