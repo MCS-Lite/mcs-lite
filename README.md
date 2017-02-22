@@ -166,6 +166,20 @@ $ npm i lerna-changelog -g
 $ lerna-changelog
 ```
 
+---
+
+## CONTRIBUTING
+
+* ⇄ Pull requests and ★ Stars are always welcome.
+* For bugs and feature requests, please create an issue.
+* Pull requests must be accompanied by passing automated tests.
+
+## [CHANGELOG](CHANGELOG.md)
+
+## [LICENSE](LICENSE)
+
+TBD
+
 ## Team
 
 [![Michael Hsu](https://avatars.githubusercontent.com/u/1527371?v=3&s=96)](https://github.com/evenchange4) | [![Abel Chen](https://avatars.githubusercontent.com/u/2841286?v=3&s=96)](https://github.com/cettoana) | [![Abby Chiu](https://avatars.githubusercontent.com/u/11768650?v=3&s=96)](https://github.com/abby1002) | [![Daria Chen](https://avatars.githubusercontent.com/u/1300728?v=3&s=96)](https://github.com/dariachen) | [![blue chen](https://avatars.githubusercontent.com/u/1887942?v=3&s=96)](https://github.com/iamblue)
