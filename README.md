@@ -163,7 +163,18 @@ $ npm run publish
 
 ```
 $ npm i lerna-changelog -g
+$ cd mcs-lite/
 $ lerna-changelog
+```
+
+### license-checker
+
+```
+$ npm i license-checker -g
+$ cd mcs-lite/
+$ npm run clean
+$ npm i
+$ license-checker --csv --out docs/licenses.csv
 ```
 
 ---
