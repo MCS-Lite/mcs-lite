@@ -38,7 +38,7 @@
 
 [mcs-lite-mobile-web-npm-badge]: https://img.shields.io/npm/v/mcs-lite-mobile-web.svg?style=flat-square
 [mcs-lite-mobile-web-npm]: https://www.npmjs.org/package/mcs-lite-mobile-web
-[mcs-lite-mobile-web-npm-downloads]: https://img.shields.io/npm/dt/mcs-lite-mobile.svg?style=flat-square
+[mcs-lite-mobile-web-npm-downloads]: https://img.shields.io/npm/dt/mcs-lite-mobile-web.svg?style=flat-square
 
 [mcs-lite-scripts-npm-badge]: https://img.shields.io/npm/v/mcs-lite-scripts.svg?style=flat-square
 [mcs-lite-scripts-npm]: https://www.npmjs.org/package/mcs-lite-scripts
@@ -50,7 +50,7 @@
 
 [mcs-lite-ui-npm-badge]: https://img.shields.io/npm/v/mcs-lite-ui.svg?style=flat-square
 [mcs-lite-ui-npm]: https://www.npmjs.org/package/mcs-lite-ui
-[mcs-lite-ui-npm-downloads]: https://img.shields.io/npm/dt/mcs-lite-ui-npm.svg?style=flat-square
+[mcs-lite-ui-npm-downloads]: https://img.shields.io/npm/dt/mcs-lite-ui.svg?style=flat-square
 
 [react-intl-cra-npm-badge]: https://img.shields.io/npm/v/react-intl-cra.svg?style=flat-square
 [react-intl-cra-npm]: https://www.npmjs.org/package/react-intl-cra
