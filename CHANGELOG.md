@@ -1,5 +1,10 @@
 ## Released (2017-02-21)
 
+### Bump Versions
+
+-   `mcs-lite-mobile-web`: `0.0.2`
+-   `react-intl-inject-hoc`: `0.0.1`
+
 #### :rocket: New Feature
 * `mcs-lite-mobile-web`, `react-intl-inject-hoc`
   * [#135](https://github.com/evenchange4/mcs-lite/pull/135) feat(react-intl-inject-hoc): add new package. ([@evenchange4](https://github.com/evenchange4))
