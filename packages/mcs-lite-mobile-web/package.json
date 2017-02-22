@@ -22,7 +22,8 @@
     "test:watch": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "extract:messages": "react-intl-cra './src/**/*.js' './messages.json'",
-    "extract:pot": "react-intl-po json2pot './messages.json' -o './mcs-lite-mobile-web.pot'"
+    "extract:pot": "react-intl-po json2pot './messages.json' -o './mcs-lite-mobile-web.pot'",
+    "prepublish": "rm -rf ./build/static/*/*.map"
   },
   "devDependencies": {
     "babel-eslint": "^7.1.1",
