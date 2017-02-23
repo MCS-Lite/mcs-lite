@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@kadira/storybook';
 import styled from 'styled-components';
-import DataPointlAreaChart from '.';
+import DataPointAreaChart from '.';
 import RechartTooltip from './RechartTooltip';
 
 const DemoWrapper = styled.div`
@@ -28,7 +28,7 @@ const data2 = [
   { value: 1, updatedAt: '2016-12-13 06:00' },
 ];
 
-storiesOf('DataPointlAreaChart', module)
+storiesOf('DataPointAreaChart', module)
   .addWithInfo(
     'RechartTooltip',
     'Customize',
@@ -48,9 +48,9 @@ storiesOf('DataPointlAreaChart', module)
     'Default',
     () =>
       <DemoWrapper>
-        <DataPointlAreaChart data={data1} />
+        <DataPointAreaChart data={data1} />
       </DemoWrapper>,
-    { inline: true, propTables: [DataPointlAreaChart]},
+    { inline: true, propTables: [DataPointAreaChart]},
   )
 
   .addWithInfo(
@@ -58,9 +58,9 @@ storiesOf('DataPointlAreaChart', module)
     'Render with animation',
     () =>
       <DemoWrapper>
-        <DataPointlAreaChart isAnimationActive data={data1} />
+        <DataPointAreaChart isAnimationActive data={data1} />
       </DemoWrapper>,
-    { inline: true, propTables: [DataPointlAreaChart]},
+    { inline: true, propTables: [DataPointAreaChart]},
   )
 
   .addWithInfo(
@@ -68,9 +68,9 @@ storiesOf('DataPointlAreaChart', module)
     '',
     () =>
       <DemoWrapper>
-        <DataPointlAreaChart kind="warning" type="step" data={data2} />
+        <DataPointAreaChart kind="warning" type="step" data={data2} />
       </DemoWrapper>,
-    { inline: true, propTables: [DataPointlAreaChart]},
+    { inline: true, propTables: [DataPointAreaChart]},
   )
 
   .addWithInfo(
@@ -105,7 +105,7 @@ storiesOf('DataPointlAreaChart', module)
         render() {
           return (
             <DemoWrapper>
-              <DataPointlAreaChart kind="success" data={this.state.data} />
+              <DataPointAreaChart kind="success" data={this.state.data} />
             </DemoWrapper>
           );
         }
@@ -113,5 +113,5 @@ storiesOf('DataPointlAreaChart', module)
 
       return <RealtimeChart />;
     },
-    { inline: true, propTables: [DataPointlAreaChart]},
+    { inline: true, propTables: [DataPointAreaChart]},
   );

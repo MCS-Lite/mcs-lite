@@ -2267,12 +2267,12 @@ exports[`Storyshots DataChannelCard Without description 1`] = `
 </div>
 `;
 
-exports[`Storyshots DataPointlAreaChart API 1`] = `
+exports[`Storyshots DataPointAreaChart API 1`] = `
 <div
   className="haXnLh" />
 `;
 
-exports[`Storyshots DataPointlAreaChart RechartTooltip 1`] = `
+exports[`Storyshots DataPointAreaChart RechartTooltip 1`] = `
 <div
   className="eaWXZP">
   <p
@@ -2290,17 +2290,17 @@ exports[`Storyshots DataPointlAreaChart RechartTooltip 1`] = `
 </div>
 `;
 
-exports[`Storyshots DataPointlAreaChart With isAnimationActive props 1`] = `
+exports[`Storyshots DataPointAreaChart With isAnimationActive props 1`] = `
 <div
   className="haXnLh" />
 `;
 
-exports[`Storyshots DataPointlAreaChart With kind and type props 1`] = `
+exports[`Storyshots DataPointAreaChart With kind and type props 1`] = `
 <div
   className="haXnLh" />
 `;
 
-exports[`Storyshots DataPointlAreaChart With realtime data 1`] = `
+exports[`Storyshots DataPointAreaChart With realtime data 1`] = `
 <div
   className="haXnLh" />
 `;
