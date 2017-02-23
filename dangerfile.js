@@ -1,5 +1,5 @@
-import { danger, fail, warn } from 'danger';
-import fs from 'fs';
+const { danger, fail } = require('danger');
+// import fs from 'fs';
 
 // Make sure there are changelog entries
 const hasChangelog = danger.git.modified_files.includes('changelog.md');
