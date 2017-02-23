@@ -1,14 +1,27 @@
 import React, { PropTypes } from 'react';
 import Helmet from 'react-helmet';
-import { MobileHeader, DataChannelCard, DataChannelAdapter, P } from 'mcs-lite-ui';
+import {
+  MobileHeader, DataChannelCard, DataChannelAdapter, P, DataPointlAreaChart,
+} from 'mcs-lite-ui';
 import IconArrowLeft from 'mcs-lite-icon/lib/IconArrowLeft';
 import IconCalendar from 'mcs-lite-icon/lib/IconCalendar';
 import IconRefresh from 'mcs-lite-icon/lib/IconRefresh';
 import { Link } from 'react-router';
 import {
   CardContainer, StyledSamll, HistoryHeader, ResetWrapper, HistoryContainer,
+  ChartWrapper,
 } from './styled-components';
 import updatePathname from '../../utils/updatePathname';
+
+const data1 = [
+  { value: 5, updatedAt: '12-13 00:00' },
+  { value: 25, updatedAt: '12-13 00:01' },
+  { value: 75, updatedAt: '12-13 00:02' },
+  { value: 89, updatedAt: '12-13 00:03' },
+  { value: 23, updatedAt: '12-13 00:04' },
+  { value: 41, updatedAt: '12-13 00:05' },
+  { value: 23, updatedAt: '12-13 00:06' },
+];
 
 class DeviceDataChannelDetail extends React.Component {
   static propTypes = {
@@ -86,7 +99,9 @@ class DeviceDataChannelDetail extends React.Component {
               </div>
             </HistoryHeader>
 
-            Chart Here
+            <ChartWrapper>
+              <DataPointlAreaChart data={data1} />
+            </ChartWrapper>
           </HistoryContainer>
         </main>
       </div>

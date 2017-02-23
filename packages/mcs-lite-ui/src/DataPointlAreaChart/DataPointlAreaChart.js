@@ -12,7 +12,7 @@ const DataPointlAreaChart = ({
   XAxisProps, tooltipProps,
 }) =>
   <ResponsiveContainer>
-    <AreaChart data={data}>
+    <AreaChart data={data} margin={{ left: -20 }}>
       <defs>
         <linearGradient id="areaGradient" x1="0.5" y1="0" x2="0.5" y2="1">
           <stop offset="0" stopColor={theme.color[kind]} stopOpacity="0.5" />
@@ -23,10 +23,11 @@ const DataPointlAreaChart = ({
       <XAxis
         dataKey="updatedAt"
         tick={{ fill: theme.color.grayBase }}
-        height={16}
+        height={24}
         tickLine={false}
         tickSize={12}
         axisLine={{ stroke: theme.color.grayBase }}
+        interval="preserveStartEnd"
         {...XAxisProps}
       />
       <YAxis

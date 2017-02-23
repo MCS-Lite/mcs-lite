@@ -15,6 +15,10 @@ export const HistoryContainer = styled(MobileContentWrapper)`
   padding: 16px;
 `;
 
+export const ChartWrapper = styled.div`
+  height: 300px;
+`;
+
 export const HistoryHeader = styled.div`
   display: flex;
   justify-content: space-between;

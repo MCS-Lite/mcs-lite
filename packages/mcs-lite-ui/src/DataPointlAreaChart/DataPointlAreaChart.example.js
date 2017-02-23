@@ -94,7 +94,7 @@ storiesOf('DataPointlAreaChart', module)
             this.setState({
               data: [
                 ...this.state.data.slice(1),
-                { value: Math.random() * 150, updatedAt: '2016-12-13 00:07' },
+                { value: Math.random() * 15000, updatedAt: '2016-12-13 00:07' },
               ],
             });
           }, 2000);

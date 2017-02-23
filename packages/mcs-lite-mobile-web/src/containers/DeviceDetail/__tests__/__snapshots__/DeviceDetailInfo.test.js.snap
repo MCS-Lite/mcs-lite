@@ -38,6 +38,15 @@ exports[`test should renders <DeviceDetail> correctly 1`] = `
             <DataChannelCard
               data-width="half"
               description="You can input description of controller here. You …"
+              header={
+                <Styled(Link)
+                  to={[Function]}>
+                  <styled.div>
+                    <IconFold
+                      size="1em" />
+                  </styled.div>
+                </Styled(Link)>
+              }
               subtitle="Last data point time : 2015-06-12 12:00"
               title="Title">
               <DataChannelAdapter
@@ -58,6 +67,15 @@ exports[`test should renders <DeviceDetail> correctly 1`] = `
             <DataChannelCard
               data-width="half"
               description="You can input description of controller here. You …"
+              header={
+                <Styled(Link)
+                  to={[Function]}>
+                  <styled.div>
+                    <IconFold
+                      size="1em" />
+                  </styled.div>
+                </Styled(Link)>
+              }
               subtitle="Last data point time : 2015-06-12 12:00"
               title="Title">
               <DataChannelAdapter
@@ -78,6 +96,15 @@ exports[`test should renders <DeviceDetail> correctly 1`] = `
             <DataChannelCard
               data-width="half"
               description="You can input description of controller here. You …"
+              header={
+                <Styled(Link)
+                  to={[Function]}>
+                  <styled.div>
+                    <IconFold
+                      size="1em" />
+                  </styled.div>
+                </Styled(Link)>
+              }
               subtitle="Last data point time : 2015-06-12 12:00"
               title="Title">
               <DataChannelAdapter
@@ -98,6 +125,15 @@ exports[`test should renders <DeviceDetail> correctly 1`] = `
             <DataChannelCard
               data-width="half"
               description="You can input description of controller here. You …"
+              header={
+                <Styled(Link)
+                  to={[Function]}>
+                  <styled.div>
+                    <IconFold
+                      size="1em" />
+                  </styled.div>
+                </Styled(Link)>
+              }
               subtitle="Last data point time : 2015-06-12 12:00"
               title="Title">
               <DataChannelAdapter
@@ -118,6 +154,15 @@ exports[`test should renders <DeviceDetail> correctly 1`] = `
             <DataChannelCard
               data-width="half"
               description="You can input description of controller here. You …"
+              header={
+                <Styled(Link)
+                  to={[Function]}>
+                  <styled.div>
+                    <IconFold
+                      size="1em" />
+                  </styled.div>
+                </Styled(Link)>
+              }
               subtitle="Last data point time : 2015-06-12 12:00"
               title="Title">
               <DataChannelAdapter
@@ -136,6 +181,15 @@ exports[`test should renders <DeviceDetail> correctly 1`] = `
             <DataChannelCard
               data-width="half"
               description="You can input description of controller here. You …"
+              header={
+                <Styled(Link)
+                  to={[Function]}>
+                  <styled.div>
+                    <IconFold
+                      size="1em" />
+                  </styled.div>
+                </Styled(Link)>
+              }
               subtitle="Last data point time : 2015-06-12 12:00"
               title="Title">
               <DataChannelAdapter
@@ -154,6 +208,15 @@ exports[`test should renders <DeviceDetail> correctly 1`] = `
             <DataChannelCard
               data-width="half"
               description="You can input description of controller here. You …"
+              header={
+                <Styled(Link)
+                  to={[Function]}>
+                  <styled.div>
+                    <IconFold
+                      size="1em" />
+                  </styled.div>
+                </Styled(Link)>
+              }
               subtitle="Last data point time : 2015-06-12 12:00"
               title="Title">
               <DataChannelAdapter
@@ -172,6 +235,15 @@ exports[`test should renders <DeviceDetail> correctly 1`] = `
             <DataChannelCard
               data-width="half"
               description="You can input description of controller here. You …"
+              header={
+                <Styled(Link)
+                  to={[Function]}>
+                  <styled.div>
+                    <IconFold
+                      size="1em" />
+                  </styled.div>
+                </Styled(Link)>
+              }
               subtitle="Last data point time : 2015-06-12 12:00"
               title="Title">
               <DataChannelAdapter
@@ -190,6 +262,15 @@ exports[`test should renders <DeviceDetail> correctly 1`] = `
             <DataChannelCard
               data-width="half"
               description="You can input description of controller here. You …"
+              header={
+                <Styled(Link)
+                  to={[Function]}>
+                  <styled.div>
+                    <IconFold
+                      size="1em" />
+                  </styled.div>
+                </Styled(Link)>
+              }
               subtitle="Last data point time : 2015-06-12 12:00"
               title="Title">
               <DataChannelAdapter
@@ -208,6 +289,15 @@ exports[`test should renders <DeviceDetail> correctly 1`] = `
             <DataChannelCard
               data-width="half"
               description="You can input description of controller here. You …"
+              header={
+                <Styled(Link)
+                  to={[Function]}>
+                  <styled.div>
+                    <IconFold
+                      size="1em" />
+                  </styled.div>
+                </Styled(Link)>
+              }
               subtitle="Last data point time : 2015-06-12 12:00"
               title="Title">
               <DataChannelAdapter
@@ -226,6 +316,15 @@ exports[`test should renders <DeviceDetail> correctly 1`] = `
             <DataChannelCard
               data-width="half"
               description="You can input description of controller here. You …"
+              header={
+                <Styled(Link)
+                  to={[Function]}>
+                  <styled.div>
+                    <IconFold
+                      size="1em" />
+                  </styled.div>
+                </Styled(Link)>
+              }
               subtitle="Last data point time : 2015-06-12 12:00"
               title="Title">
               <DataChannelAdapter
@@ -255,6 +354,15 @@ exports[`test should renders <DeviceDetail> correctly 1`] = `
             <DataChannelCard
               data-width="half"
               description="You can input description of controller here. You …"
+              header={
+                <Styled(Link)
+                  to={[Function]}>
+                  <styled.div>
+                    <IconFold
+                      size="1em" />
+                  </styled.div>
+                </Styled(Link)>
+              }
               subtitle="Last data point time : 2015-06-12 12:00"
               title="Title">
               <DataChannelAdapter
@@ -296,6 +404,15 @@ exports[`test should renders <DeviceDetail> correctly 1`] = `
             <DataChannelCard
               data-width="half"
               description="You can input description of controller here. You …"
+              header={
+                <Styled(Link)
+                  to={[Function]}>
+                  <styled.div>
+                    <IconFold
+                      size="1em" />
+                  </styled.div>
+                </Styled(Link)>
+              }
               subtitle="Last data point time : 2015-06-12 12:00"
               title="Title">
               <DataChannelAdapter
@@ -314,6 +431,15 @@ exports[`test should renders <DeviceDetail> correctly 1`] = `
             <DataChannelCard
               data-width="half"
               description="You can input description of controller here. You …"
+              header={
+                <Styled(Link)
+                  to={[Function]}>
+                  <styled.div>
+                    <IconFold
+                      size="1em" />
+                  </styled.div>
+                </Styled(Link)>
+              }
               subtitle="Last data point time : 2015-06-12 12:00"
               title="Title">
               <DataChannelAdapter
@@ -332,6 +458,15 @@ exports[`test should renders <DeviceDetail> correctly 1`] = `
             <DataChannelCard
               data-width="half"
               description="You can input description of controller here. You …"
+              header={
+                <Styled(Link)
+                  to={[Function]}>
+                  <styled.div>
+                    <IconFold
+                      size="1em" />
+                  </styled.div>
+                </Styled(Link)>
+              }
               subtitle="Last data point time : 2015-06-12 12:00"
               title="Title">
               <DataChannelAdapter
@@ -353,6 +488,15 @@ exports[`test should renders <DeviceDetail> correctly 1`] = `
             <DataChannelCard
               data-width="half"
               description="You can input description of controller here. You …"
+              header={
+                <Styled(Link)
+                  to={[Function]}>
+                  <styled.div>
+                    <IconFold
+                      size="1em" />
+                  </styled.div>
+                </Styled(Link)>
+              }
               subtitle="Last data point time : 2015-06-12 12:00"
               title="Title">
               <DataChannelAdapter
@@ -372,6 +516,15 @@ exports[`test should renders <DeviceDetail> correctly 1`] = `
             <DataChannelCard
               data-width="half"
               description="You can input description of controller here. You …"
+              header={
+                <Styled(Link)
+                  to={[Function]}>
+                  <styled.div>
+                    <IconFold
+                      size="1em" />
+                  </styled.div>
+                </Styled(Link)>
+              }
               subtitle="Last data point time : 2015-06-12 12:00"
               title="Title">
               <DataChannelAdapter
@@ -478,6 +631,15 @@ exports[`test should renders <DeviceDetail> correctly when Menu show 1`] = `
             <DataChannelCard
               data-width="half"
               description="You can input description of controller here. You …"
+              header={
+                <Styled(Link)
+                  to={[Function]}>
+                  <styled.div>
+                    <IconFold
+                      size="1em" />
+                  </styled.div>
+                </Styled(Link)>
+              }
               subtitle="Last data point time : 2015-06-12 12:00"
               title="Title">
               <DataChannelAdapter
@@ -498,6 +660,15 @@ exports[`test should renders <DeviceDetail> correctly when Menu show 1`] = `
             <DataChannelCard
               data-width="half"
               description="You can input description of controller here. You …"
+              header={
+                <Styled(Link)
+                  to={[Function]}>
+                  <styled.div>
+                    <IconFold
+                      size="1em" />
+                  </styled.div>
+                </Styled(Link)>
+              }
               subtitle="Last data point time : 2015-06-12 12:00"
               title="Title">
               <DataChannelAdapter
@@ -518,6 +689,15 @@ exports[`test should renders <DeviceDetail> correctly when Menu show 1`] = `
             <DataChannelCard
               data-width="half"
               description="You can input description of controller here. You …"
+              header={
+                <Styled(Link)
+                  to={[Function]}>
+                  <styled.div>
+                    <IconFold
+                      size="1em" />
+                  </styled.div>
+                </Styled(Link)>
+              }
               subtitle="Last data point time : 2015-06-12 12:00"
               title="Title">
               <DataChannelAdapter
@@ -538,6 +718,15 @@ exports[`test should renders <DeviceDetail> correctly when Menu show 1`] = `
             <DataChannelCard
               data-width="half"
               description="You can input description of controller here. You …"
+              header={
+                <Styled(Link)
+                  to={[Function]}>
+                  <styled.div>
+                    <IconFold
+                      size="1em" />
+                  </styled.div>
+                </Styled(Link)>
+              }
               subtitle="Last data point time : 2015-06-12 12:00"
               title="Title">
               <DataChannelAdapter
@@ -558,6 +747,15 @@ exports[`test should renders <DeviceDetail> correctly when Menu show 1`] = `
             <DataChannelCard
               data-width="half"
               description="You can input description of controller here. You …"
+              header={
+                <Styled(Link)
+                  to={[Function]}>
+                  <styled.div>
+                    <IconFold
+                      size="1em" />
+                  </styled.div>
+                </Styled(Link)>
+              }
               subtitle="Last data point time : 2015-06-12 12:00"
               title="Title">
               <DataChannelAdapter
@@ -576,6 +774,15 @@ exports[`test should renders <DeviceDetail> correctly when Menu show 1`] = `
             <DataChannelCard
               data-width="half"
               description="You can input description of controller here. You …"
+              header={
+                <Styled(Link)
+                  to={[Function]}>
+                  <styled.div>
+                    <IconFold
+                      size="1em" />
+                  </styled.div>
+                </Styled(Link)>
+              }
               subtitle="Last data point time : 2015-06-12 12:00"
               title="Title">
               <DataChannelAdapter
@@ -594,6 +801,15 @@ exports[`test should renders <DeviceDetail> correctly when Menu show 1`] = `
             <DataChannelCard
               data-width="half"
               description="You can input description of controller here. You …"
+              header={
+                <Styled(Link)
+                  to={[Function]}>
+                  <styled.div>
+                    <IconFold
+                      size="1em" />
+                  </styled.div>
+                </Styled(Link)>
+              }
               subtitle="Last data point time : 2015-06-12 12:00"
               title="Title">
               <DataChannelAdapter
@@ -612,6 +828,15 @@ exports[`test should renders <DeviceDetail> correctly when Menu show 1`] = `
             <DataChannelCard
               data-width="half"
               description="You can input description of controller here. You …"
+              header={
+                <Styled(Link)
+                  to={[Function]}>
+                  <styled.div>
+                    <IconFold
+                      size="1em" />
+                  </styled.div>
+                </Styled(Link)>
+              }
               subtitle="Last data point time : 2015-06-12 12:00"
               title="Title">
               <DataChannelAdapter
@@ -630,6 +855,15 @@ exports[`test should renders <DeviceDetail> correctly when Menu show 1`] = `
             <DataChannelCard
               data-width="half"
               description="You can input description of controller here. You …"
+              header={
+                <Styled(Link)
+                  to={[Function]}>
+                  <styled.div>
+                    <IconFold
+                      size="1em" />
+                  </styled.div>
+                </Styled(Link)>
+              }
               subtitle="Last data point time : 2015-06-12 12:00"
               title="Title">
               <DataChannelAdapter
@@ -648,6 +882,15 @@ exports[`test should renders <DeviceDetail> correctly when Menu show 1`] = `
             <DataChannelCard
               data-width="half"
               description="You can input description of controller here. You …"
+              header={
+                <Styled(Link)
+                  to={[Function]}>
+                  <styled.div>
+                    <IconFold
+                      size="1em" />
+                  </styled.div>
+                </Styled(Link)>
+              }
               subtitle="Last data point time : 2015-06-12 12:00"
               title="Title">
               <DataChannelAdapter
@@ -666,6 +909,15 @@ exports[`test should renders <DeviceDetail> correctly when Menu show 1`] = `
             <DataChannelCard
               data-width="half"
               description="You can input description of controller here. You …"
+              header={
+                <Styled(Link)
+                  to={[Function]}>
+                  <styled.div>
+                    <IconFold
+                      size="1em" />
+                  </styled.div>
+                </Styled(Link)>
+              }
               subtitle="Last data point time : 2015-06-12 12:00"
               title="Title">
               <DataChannelAdapter
@@ -695,6 +947,15 @@ exports[`test should renders <DeviceDetail> correctly when Menu show 1`] = `
             <DataChannelCard
               data-width="half"
               description="You can input description of controller here. You …"
+              header={
+                <Styled(Link)
+                  to={[Function]}>
+                  <styled.div>
+                    <IconFold
+                      size="1em" />
+                  </styled.div>
+                </Styled(Link)>
+              }
               subtitle="Last data point time : 2015-06-12 12:00"
               title="Title">
               <DataChannelAdapter
@@ -736,6 +997,15 @@ exports[`test should renders <DeviceDetail> correctly when Menu show 1`] = `
             <DataChannelCard
               data-width="half"
               description="You can input description of controller here. You …"
+              header={
+                <Styled(Link)
+                  to={[Function]}>
+                  <styled.div>
+                    <IconFold
+                      size="1em" />
+                  </styled.div>
+                </Styled(Link)>
+              }
               subtitle="Last data point time : 2015-06-12 12:00"
               title="Title">
               <DataChannelAdapter
@@ -754,6 +1024,15 @@ exports[`test should renders <DeviceDetail> correctly when Menu show 1`] = `
             <DataChannelCard
               data-width="half"
               description="You can input description of controller here. You …"
+              header={
+                <Styled(Link)
+                  to={[Function]}>
+                  <styled.div>
+                    <IconFold
+                      size="1em" />
+                  </styled.div>
+                </Styled(Link)>
+              }
               subtitle="Last data point time : 2015-06-12 12:00"
               title="Title">
               <DataChannelAdapter
@@ -772,6 +1051,15 @@ exports[`test should renders <DeviceDetail> correctly when Menu show 1`] = `
             <DataChannelCard
               data-width="half"
               description="You can input description of controller here. You …"
+              header={
+                <Styled(Link)
+                  to={[Function]}>
+                  <styled.div>
+                    <IconFold
+                      size="1em" />
+                  </styled.div>
+                </Styled(Link)>
+              }
               subtitle="Last data point time : 2015-06-12 12:00"
               title="Title">
               <DataChannelAdapter
@@ -793,6 +1081,15 @@ exports[`test should renders <DeviceDetail> correctly when Menu show 1`] = `
             <DataChannelCard
               data-width="half"
               description="You can input description of controller here. You …"
+              header={
+                <Styled(Link)
+                  to={[Function]}>
+                  <styled.div>
+                    <IconFold
+                      size="1em" />
+                  </styled.div>
+                </Styled(Link)>
+              }
               subtitle="Last data point time : 2015-06-12 12:00"
               title="Title">
               <DataChannelAdapter
@@ -812,6 +1109,15 @@ exports[`test should renders <DeviceDetail> correctly when Menu show 1`] = `
             <DataChannelCard
               data-width="half"
               description="You can input description of controller here. You …"
+              header={
+                <Styled(Link)
+                  to={[Function]}>
+                  <styled.div>
+                    <IconFold
+                      size="1em" />
+                  </styled.div>
+                </Styled(Link)>
+              }
               subtitle="Last data point time : 2015-06-12 12:00"
               title="Title">
               <DataChannelAdapter
