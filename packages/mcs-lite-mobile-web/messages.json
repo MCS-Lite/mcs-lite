@@ -21,6 +21,41 @@
     "defaultMessage": "登出"
   },
   {
+    "id": "DeviceDataChannelDetail.historyChart",
+    "defaultMessage": "歷史資料圖表"
+  },
+  {
+    "id": "DeviceDataChannelDetail.defaultQueryLatest",
+    "description": "label hint",
+    "defaultMessage": "預設值為顯示最新100筆資料"
+  },
+  {
+    "id": "DeviceDataChannelDetail.reset",
+    "description": "reset for history query",
+    "defaultMessage": "回復預設值"
+  },
+  {
+    "id": "DeviceDataChannelTimeRange.searchTimeRange",
+    "description": "title",
+    "defaultMessage": "搜尋時間區間"
+  },
+  {
+    "id": "DeviceDataChannelTimeRange.from",
+    "defaultMessage": "從"
+  },
+  {
+    "id": "DeviceDataChannelTimeRange.to",
+    "defaultMessage": "到"
+  },
+  {
+    "id": "DeviceDataChannelTimeRange.cancel",
+    "defaultMessage": "取消"
+  },
+  {
+    "id": "DeviceDataChannelTimeRange.save",
+    "defaultMessage": "確認"
+  },
+  {
     "id": "DeviceDetail.deviceIntro",
     "description": "dropdown",
     "defaultMessage": "測試裝置介紹"
@@ -34,6 +69,22 @@
     "id": "DeviceDetailInfo.deviceIntro",
     "description": "Title",
     "defaultMessage": "測試裝置介紹"
+  },
+  {
+    "id": "DeviceDetailInfo.deviceName",
+    "defaultMessage": "裝置名稱"
+  },
+  {
+    "id": "DeviceDetailInfo.creator",
+    "defaultMessage": "創建者"
+  },
+  {
+    "id": "DeviceDetailInfo.version",
+    "defaultMessage": "版本"
+  },
+  {
+    "id": "DeviceDetailInfo.description",
+    "defaultMessage": "描述"
   },
   {
     "id": "DeviceList.myTestDevices",

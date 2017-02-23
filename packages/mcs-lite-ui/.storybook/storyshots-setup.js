@@ -20,3 +20,6 @@ jest.mock('react-text-truncate', () => 'MockReactTextTruncate');
 jest.mock('react-dom');
 // For PullToRefresh component.
 jest.mock('react-hammerjs', () => 'MockReactHammerJS');
+// For recharts
+jest.mock('react-resize-detector', () => 'MockReactHammerJS');
+jest.mock('recharts');

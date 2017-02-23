@@ -2267,6 +2267,44 @@ exports[`Storyshots DataChannelCard Without description 1`] = `
 </div>
 `;
 
+exports[`Storyshots DataPointlAreaChart API 1`] = `
+<div
+  className="haXnLh" />
+`;
+
+exports[`Storyshots DataPointlAreaChart RechartTooltip 1`] = `
+<div
+  className="eaWXZP">
+  <p
+    className="gVViGF">
+    formatter(1)
+  </p>
+  <div
+    className="jyQfel"
+    color="grayBase">
+    <small
+      className="gPtzLl">
+      labelFormatter(1532438716989)
+    </small>
+  </div>
+</div>
+`;
+
+exports[`Storyshots DataPointlAreaChart With isAnimationActive props 1`] = `
+<div
+  className="haXnLh" />
+`;
+
+exports[`Storyshots DataPointlAreaChart With kind and type props 1`] = `
+<div
+  className="haXnLh" />
+`;
+
+exports[`Storyshots DataPointlAreaChart With realtime data 1`] = `
+<div
+  className="haXnLh" />
+`;
+
 exports[`Storyshots DatetimePicker API 1`] = `
 <div
   className="bPCADX"

@@ -7,9 +7,10 @@ import {
 import dataChannels from 'mcs-lite-ui/lib/DataChannelAdapter/API';
 import IconMoreVert from 'mcs-lite-icon/lib/IconMoreVert';
 import IconArrowLeft from 'mcs-lite-icon/lib/IconArrowLeft';
+import IconFold from 'mcs-lite-icon/lib/IconFold';
 import { Link } from 'react-router';
 import StyledLink from '../../components/StyledLink';
-import { Container, StyledImg, CardWrapper } from './styled-components';
+import { Container, StyledImg, CardWrapper, CardHeaderIcon } from './styled-components';
 import updatePathname from '../../utils/updatePathname';
 
 class DeviceDetail extends React.Component {
@@ -88,6 +89,13 @@ class DeviceDetail extends React.Component {
                       <DataChannelCard
                         key={c.id}
                         data-width="half"
+                        header={
+                          <StyledLink to={updatePathname(`/devices/${device.deviceId}/dataChannels/${c.id}`)}>
+                            <CardHeaderIcon>
+                              <IconFold />
+                            </CardHeaderIcon>
+                          </StyledLink>
+                        }
                         title="Title"
                         subtitle="Last data point time : 2015-06-12 12:00"
                         description="You can input description of controller here. You …"
