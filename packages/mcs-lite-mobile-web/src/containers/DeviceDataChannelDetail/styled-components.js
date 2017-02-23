@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { MobileContentWrapper, Small, A } from 'mcs-lite-ui';
 
 export const CardContainer = styled(MobileContentWrapper)`
-  padding: 8px;
+  padding: 8px 8px 0 8px;
 `;
 
 export const StyledSamll = styled(Small)`

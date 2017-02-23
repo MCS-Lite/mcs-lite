@@ -85,6 +85,8 @@ class DeviceDataChannelDetail extends React.Component {
                 </ResetWrapper>
               </div>
             </HistoryHeader>
+
+            Chart Here
           </HistoryContainer>
         </main>
       </div>
