@@ -7,7 +7,7 @@ import RechartTooltip from './RechartTooltip';
 
 const lighten = opacity(0.4);
 
-const DataPointlAreaChart = ({
+const DataPointAreaChart = ({
   data, theme, kind, type, isAnimationActive,
   XAxisProps, tooltipProps,
 }) =>
@@ -54,8 +54,8 @@ const DataPointlAreaChart = ({
     </AreaChart>
   </ResponsiveContainer>;
 
-DataPointlAreaChart.displayName = 'DataPointlAreaChart';
-DataPointlAreaChart.propTypes = {
+DataPointAreaChart.displayName = 'DataPointAreaChart';
+DataPointAreaChart.propTypes = {
   kind: PropTypes.string.isRequired,
   type: PropTypes.string.isRequired,
   isAnimationActive: PropTypes.bool,
@@ -67,7 +67,7 @@ DataPointlAreaChart.propTypes = {
     labelFormatter: PropTypes.func,
   }),
 };
-DataPointlAreaChart.defaultProps = {
+DataPointAreaChart.defaultProps = {
   kind: 'primary',
   type: 'linear',
   isAnimationActive: false,
@@ -80,4 +80,4 @@ DataPointlAreaChart.defaultProps = {
   },
 };
 
-export default withTheme(DataPointlAreaChart);
+export default withTheme(DataPointAreaChart);

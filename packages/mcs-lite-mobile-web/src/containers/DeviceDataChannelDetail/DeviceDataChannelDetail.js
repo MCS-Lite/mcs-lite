@@ -1,7 +1,7 @@
 import React, { PropTypes } from 'react';
 import Helmet from 'react-helmet';
 import {
-  MobileHeader, DataChannelCard, DataChannelAdapter, P, DataPointlAreaChart,
+  MobileHeader, DataChannelCard, DataChannelAdapter, P, DataPointAreaChart,
 } from 'mcs-lite-ui';
 import IconArrowLeft from 'mcs-lite-icon/lib/IconArrowLeft';
 import IconCalendar from 'mcs-lite-icon/lib/IconCalendar';
@@ -100,7 +100,7 @@ class DeviceDataChannelDetail extends React.Component {
             </HistoryHeader>
 
             <ChartWrapper>
-              <DataPointlAreaChart data={data1} />
+              <DataPointAreaChart data={data1} />
             </ChartWrapper>
           </HistoryContainer>
         </main>

@@ -1,16 +1,20 @@
 exports[`test should render components correctly 1`] = `
-<div>
-  <Styled(MobileContentWrapper)>
-    <MobileContentWrapper
-      className="hDHuFE" />
-  </Styled(MobileContentWrapper)>
-  <styled.label>
-    <label
-      className="kBhMui" />
-  </styled.label>
-  <styled.div>
-    <div
-      className="fBwQPK" />
-  </styled.div>
-</div>
+Array [
+  <div>
+    <Styled(MobileContentWrapper)>
+        <MobileContentWrapper
+            className="hDHuFE" />
+    </Styled(MobileContentWrapper)>
+    <styled.label>
+        <label
+            className="kBhMui" />
+    </styled.label>
+    <styled.div>
+        <div
+            className="fBwQPK" />
+    </styled.div>
+</div>,
+  <div
+    className="fBwQPK" />,
+]
 `;
