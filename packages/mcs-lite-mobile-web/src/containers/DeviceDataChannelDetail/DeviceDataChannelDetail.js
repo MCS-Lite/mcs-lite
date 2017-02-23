@@ -76,7 +76,7 @@ class DeviceDataChannelDetail extends React.Component {
             <HistoryHeader>
               <div>
                 <P>{t('historyChart')}</P>
-                <StyledSamll color="grayBase">{t('defaultQueryLatest')}</StyledSamll>
+                <StyledSamll>{t('defaultQueryLatest')}</StyledSamll>
               </div>
               <div>
                 <ResetWrapper onClick={onResetClick}>
