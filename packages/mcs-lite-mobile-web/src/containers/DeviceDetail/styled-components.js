@@ -25,3 +25,9 @@ export const CardWrapper = styled.div`
     flex-basis: 40%;
   }
 `;
+
+export const CardHeaderIcon = styled.div`
+  padding-left: 8px;
+  font-size: 24px;
+  color: ${props => props.theme.color.primary};
+`;

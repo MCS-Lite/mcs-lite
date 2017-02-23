@@ -21,6 +21,20 @@
     "defaultMessage": "登出"
   },
   {
+    "id": "DeviceDataChannelDetail.historyChart",
+    "defaultMessage": "歷史資料圖表"
+  },
+  {
+    "id": "DeviceDataChannelDetail.defaultQueryLatest",
+    "description": "label hint",
+    "defaultMessage": "預設值為顯示最新100筆資料"
+  },
+  {
+    "id": "DeviceDataChannelDetail.reset",
+    "description": "reset for history query",
+    "defaultMessage": "回復預設值"
+  },
+  {
     "id": "DeviceDataChannelTimeRange.searchTimeRange",
     "description": "title",
     "defaultMessage": "搜尋時間區間"

@@ -1,17 +1,19 @@
 import React, { PropTypes } from 'react';
 import Helmet from 'react-helmet';
-import { MobileHeader, DataChannelCard, DataChannelAdapter } from 'mcs-lite-ui';
+import { MobileHeader, DataChannelCard, DataChannelAdapter, P } from 'mcs-lite-ui';
 import IconArrowLeft from 'mcs-lite-icon/lib/IconArrowLeft';
 import IconCalendar from 'mcs-lite-icon/lib/IconCalendar';
+import IconRefresh from 'mcs-lite-icon/lib/IconRefresh';
 import { Link } from 'react-router';
-import { Container } from './styled-components';
+import {
+  CardContainer, StyledSamll, HistoryHeader, ResetWrapper, HistoryContainer,
+} from './styled-components';
 import updatePathname from '../../utils/updatePathname';
 
 class DeviceDataChannelDetail extends React.Component {
   static propTypes = {
     device: PropTypes.object,
     deviceId: PropTypes.string.isRequired,
-    isLoading: PropTypes.bool.isRequired,
     getMessages: PropTypes.func.isRequired,
     fetchDeviceDetail: PropTypes.func.isRequired,
   }
@@ -23,10 +25,11 @@ class DeviceDataChannelDetail extends React.Component {
   }
   componentWillMount = () => this.fetch();
   eventHandler = console.log; // eslint-disable-line
+  onResetClick = console.log; // eslint-disable-line
   fetch = () => this.props.fetchDeviceDetail(this.props.deviceId);
   render() {
-    const { device, isLoading, getMessages: t, dataChannelId } = this.props;
-    const { fetch, onHide, onSubmit, eventHandler, onStartTimeClick, onEndTimeClick } = this;
+    const { device, getMessages: t, dataChannelId } = this.props;
+    const { eventHandler, onResetClick } = this;
 
     return (
       <div>
@@ -52,7 +55,7 @@ class DeviceDataChannelDetail extends React.Component {
         />
 
         <main>
-          <Container>
+          <CardContainer>
             <DataChannelCard
               title="Title"
               subtitle="Last data point time : 2015-06-12 12:00"
@@ -67,7 +70,22 @@ class DeviceDataChannelDetail extends React.Component {
                 eventHandler={eventHandler}
               />
             </DataChannelCard>
-          </Container>
+          </CardContainer>
+
+          <HistoryContainer>
+            <HistoryHeader>
+              <div>
+                <P>{t('historyChart')}</P>
+                <StyledSamll color="grayBase">{t('defaultQueryLatest')}</StyledSamll>
+              </div>
+              <div>
+                <ResetWrapper onClick={onResetClick}>
+                  <IconRefresh />
+                  <P>{t('reset')}</P>
+                </ResetWrapper>
+              </div>
+            </HistoryHeader>
+          </HistoryContainer>
         </main>
       </div>
     );

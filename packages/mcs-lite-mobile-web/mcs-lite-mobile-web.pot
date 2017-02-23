@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"POT-Creation-Date: 2017-02-22T13:23:18.401Z\n"
+"POT-Creation-Date: 2017-02-23T03:10:12.186Z\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "MIME-Version: 1.0\n"
@@ -104,6 +104,13 @@ msgid "單位："
 msgstr ""
 
 #: ./messages.json
+#. [DeviceDataChannelDetail.reset] - reset for history query
+#. defaultMessage is:
+#. 回復預設值
+msgid "回復預設值"
+msgstr ""
+
+#: ./messages.json
 #. [DeviceTriggerEdit.greater]
 #. defaultMessage is:
 #. 大於
@@ -182,6 +189,13 @@ msgstr ""
 #. defaultMessage is:
 #. 歡迎
 msgid "歡迎"
+msgstr ""
+
+#: ./messages.json
+#. [DeviceDataChannelDetail.historyChart]
+#. defaultMessage is:
+#. 歷史資料圖表
+msgid "歷史資料圖表"
 msgstr ""
 
 #: ./messages.json
@@ -267,4 +281,11 @@ msgstr ""
 #. defaultMessage is:
 #. 請輸入舊密碼
 msgid "請輸入舊密碼"
+msgstr ""
+
+#: ./messages.json
+#. [DeviceDataChannelDetail.defaultQueryLatest] - label hint
+#. defaultMessage is:
+#. 預設值為顯示最新100筆資料
+msgid "預設值為顯示最新100筆資料"
 msgstr ""

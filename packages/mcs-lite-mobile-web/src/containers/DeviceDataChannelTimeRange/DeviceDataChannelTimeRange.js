@@ -8,7 +8,7 @@ import { Container, InputWrapper, FakeInput, ButtonWrapper } from './styled-comp
 import updatePathname from '../../utils/updatePathname';
 import StyledLink from '../../components/StyledLink';
 
-const format = D.format('YYYY-MM-DD HH:mm');
+const DATETIME_FORMAT = D.format('YYYY-MM-DD HH:mm');
 
 class DeviceDataChannelTimeRange extends React.Component {
   static propTypes = {
@@ -22,12 +22,11 @@ class DeviceDataChannelTimeRange extends React.Component {
     startTime: new Date(1463556631722).valueOf(),
     endTime: new Date(1463556631722).valueOf(),
   };
-  componentWillMount = () => this.fetch();
+  componentWillMount = () => this.props.fetchDeviceDetail(this.props.deviceId);
   onStartTimeClick = () => this.setState({ isDialogshow: true, dialogTarget: 'startTime' });
   onEndTimeClick = () => this.setState({ isDialogshow: true, dialogTarget: 'endTime' });
   onHide = () => this.setState({ isDialogshow: false });
   onPickerSubmit = value => this.setState({ [this.state.dialogTarget]: value });
-  fetch = () => this.props.fetchDeviceDetail(this.props.deviceId);
   back = updatePathname(`/devices/${this.props.deviceId}/dataChannels/${this.props.dataChannelId}`);
   render() {
     const { getMessages: t } = this.props;
@@ -40,10 +39,7 @@ class DeviceDataChannelTimeRange extends React.Component {
         <MobileHeader.MobileHeader
           title={t('searchTimeRange')}
           leftChildren={
-            <MobileHeader.MobileHeaderIcon
-              component={Link}
-              to={back}
-            >
+            <MobileHeader.MobileHeaderIcon component={Link} to={back}>
               <IconArrowLeft />
             </MobileHeader.MobileHeaderIcon>
           }
@@ -51,27 +47,25 @@ class DeviceDataChannelTimeRange extends React.Component {
 
         <main>
           <Container>
-            <div>
-              <InputWrapper onClick={onStartTimeClick}>
-                <P>{t('from')}</P>
-                <FakeInput >{format(new Date(startTime))}</FakeInput>
-              </InputWrapper>
+            <InputWrapper onClick={onStartTimeClick}>
+              <P>{t('from')}</P>
+              <FakeInput >{DATETIME_FORMAT(new Date(startTime))}</FakeInput>
+            </InputWrapper>
 
-              <InputWrapper onClick={onEndTimeClick}>
-                <P>{t('to')}</P>
-                <FakeInput >{format(new Date(endTime))}</FakeInput>
-              </InputWrapper>
+            <InputWrapper onClick={onEndTimeClick}>
+              <P>{t('to')}</P>
+              <FakeInput >{DATETIME_FORMAT(new Date(endTime))}</FakeInput>
+            </InputWrapper>
 
-              <DatetimePickerDialog
-                datetimePickerProps={{
-                  defaultValue: this.state[dialogTarget],
-                  years: [2015, 2016, 2017, 2018],
-                }}
-                show={isDialogshow}
-                onHide={onHide}
-                onSubmit={onPickerSubmit}
-              />
-            </div>
+            <DatetimePickerDialog
+              datetimePickerProps={{
+                defaultValue: this.state[dialogTarget],
+                years: [2015, 2016, 2017, 2018],
+              }}
+              show={isDialogshow}
+              onHide={onHide}
+              onSubmit={onPickerSubmit}
+            />
           </Container>
         </main>
 
