@@ -1,5 +1,27 @@
 ## Released (2017-02-23)
 
+
+### Bump Versions
+
+-   mcs-lite-demo-nextjs@0.1.0
+-   mcs-lite-mobile-web@0.1.0
+-   mcs-lite-ui@0.1.0
+
+#### :boom: Breaking Change
+* `mcs-lite-mobile-web`, `mcs-lite-ui`
+  * [#147](https://github.com/evenchange4/mcs-lite/pull/147) fix(DataPointAreaChart): typo naming. ([@evenchange4](https://github.com/evenchange4))
+
+#### :bug: Bug Fix
+* `mcs-lite-mobile-web`, `mcs-lite-ui`
+  * [#147](https://github.com/evenchange4/mcs-lite/pull/147) fix(DataPointAreaChart): typo naming. ([@evenchange4](https://github.com/evenchange4))
+
+#### Committers: 1
+- Michael Hsu ([evenchange4](https://github.com/evenchange4))
+
+----
+
+## Released (2017-02-23)
+
 ### Bump Versions
 
 -   mcs-lite-demo-nextjs@0.0.2
