@@ -17,13 +17,13 @@ if (danger.github.pr.additions + danger.github.pr.deletions > bigPRThreshold) {
   warn(':exclamation: Big PR');
 }
 
-// Fail if there are changes to package.json without changes to Licenses.csv.
+// Warn if there are changes to package.json without changes to Licenses.csv.
 const i18nChanged = danger.git.modified_files.includes('messages.js');
 const potChanged = danger.git.modified_files.includes('.pot');
 if (i18nChanged && !potChanged) {
   const message = 'Changes were made to i18n, but not to .pot';
   const idea = 'Perhaps you need to run `$ npm run extract:pot`?';
-  fail(`${message} - <i>${idea}</i>`);
+  warn(`${message} - <i>${idea}</i>`);
 }
 
 // Fail if there are changes to package.json without changes to Licenses.csv.
