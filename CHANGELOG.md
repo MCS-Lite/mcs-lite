@@ -1,18 +1,33 @@
-## Unreleased (2017-02-22)
+## Released (2017-02-23)
+
+### Bump Versions
+
+-   mcs-lite-demo-nextjs@0.0.2
+-   mcs-lite-mobile-web@0.0.3
+-   mcs-lite-ui@0.0.2
+
+#### :rocket: New Feature
+* `mcs-lite-mobile-web`, `mcs-lite-ui`
+  * [#146](https://github.com/evenchange4/mcs-lite/pull/146) feat(DataPointAreaChart): add new Chart component. ([@evenchange4](https://github.com/evenchange4))
 
 #### :bug: Bug Fix
+* `mcs-lite-mobile-web`, `mcs-lite-ui`
+  * [#144](https://github.com/evenchange4/mcs-lite/pull/144) fix(Jest): add --runInBand for jest test in circle ci. ([@evenchange4](https://github.com/evenchange4))
 * `mcs-lite-mobile-web`
   * [#139](https://github.com/evenchange4/mcs-lite/pull/139) fix(Mobile): remove source map. ([@evenchange4](https://github.com/evenchange4))
 
 #### :house: Internal
 * Other
-  * [#140](https://github.com/evenchange4/mcs-lite/pull/140) chore(circleci): try to fix testing timeout. ([@evenchange4](https://github.com/evenchange4))
+  * [#145](https://github.com/evenchange4/mcs-lite/pull/145) chore(License): add license-checker. ([@evenchange4](https://github.com/evenchange4))
+* `mcs-lite-mobile-web`, `mcs-lite-ui`
+  * [#144](https://github.com/evenchange4/mcs-lite/pull/144) fix(Jest): add --runInBand for jest test in circle ci. ([@evenchange4](https://github.com/evenchange4))
 * `mcs-lite-mobile-web`
   * [#139](https://github.com/evenchange4/mcs-lite/pull/139) fix(Mobile): remove source map. ([@evenchange4](https://github.com/evenchange4))
 
 #### Committers: 1
 - Michael Hsu ([evenchange4](https://github.com/evenchange4))
 
+----
 
 ## Released (2017-02-21)
 
