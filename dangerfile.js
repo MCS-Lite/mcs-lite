@@ -1,11 +1,23 @@
 const { danger, warn, fail } = require('danger');
-// import fs from 'fs';
 
-// Make sure there are changelog entries
-// const hasChangelog = danger.git.modified_files.includes('changelog.md');
-// if (!hasChangelog) { fail('No Changelog changes!'); }
+// Warn if there is no one assign.
+if (!danger.github.pr.body.length) {
+  warn('Please add a description to your PR.');
+}
 
-// Warns if there are changes to package.json without changes to Licenses.csv.
+// Warn if there is no one assign.
+const someoneAssigned = danger.github.pr.assignee;
+if (someoneAssigned === null) {
+  warn('Please assign someone to merge this PR, and optionally include people who should review.');
+}
+
+// Warn when there is a big PR
+const bigPRThreshold = 500;
+if (danger.github.pr.additions + danger.github.pr.deletions > bigPRThreshold) {
+  warn(':exclamation: Big PR');
+}
+
+// Fail if there are changes to package.json without changes to Licenses.csv.
 const i18nChanged = danger.git.modified_files.includes('messages.js');
 const potChanged = danger.git.modified_files.includes('.pot');
 if (i18nChanged && !potChanged) {
@@ -14,11 +26,11 @@ if (i18nChanged && !potChanged) {
   fail(`${message} - <i>${idea}</i>`);
 }
 
-// Warns if there are changes to package.json without changes to Licenses.csv.
+// Fail if there are changes to package.json without changes to Licenses.csv.
 const packageChanged = danger.git.modified_files.includes('package.json');
 const licensesCSVChanged = danger.git.modified_files.includes('docs/licenses.csv');
 if (packageChanged && !licensesCSVChanged) {
   const message = 'Changes were made to package.json, but not to licenses.csv';
   const idea = 'Perhaps you need to run `$ license-checker --csv --out docs/licenses.csv`?';
-  warn(`${message} - <i>${idea}</i>`);
+  fail(`${message} - <i>${idea}</i>`);
 }
