@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"POT-Creation-Date: 2017-02-24T03:28:04.352Z\n"
+"POT-Creation-Date: 2017-02-24T13:11:50.528Z\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "MIME-Version: 1.0\n"
@@ -54,10 +54,10 @@ msgid "儲存"
 msgstr ""
 
 #: ./messages.json
-#. [Password.enterNewPasswordAgain] - Label and placeholder
+#. [Password.newPasswordAgain.placeholder] - Placeholder
 #. defaultMessage is:
-#. 再一次輸入新密碼
-msgid "再一次輸入新密碼"
+#. 再次輸入新密碼
+msgid "再次輸入新密碼"
 msgstr ""
 
 #: ./messages.json
@@ -146,6 +146,13 @@ msgid "從"
 msgstr ""
 
 #: ./messages.json
+#. [Password.success] - Toast
+#. defaultMessage is:
+#. 成功！你已經成功修改密碼。
+msgid "成功！你已經成功修改密碼。"
+msgstr ""
+
+#: ./messages.json
 #. [Account.myTestDevices]
 #. defaultMessage is:
 #. 我的測試裝置
@@ -175,6 +182,13 @@ msgstr ""
 #. defaultMessage is:
 #. 搜尋時間區間
 msgid "搜尋時間區間"
+msgstr ""
+
+#: ./messages.json
+#. [Password.newPassword.label] - Label
+#. defaultMessage is:
+#. 新密碼
+msgid "新密碼"
 msgstr ""
 
 #: ./messages.json
@@ -252,6 +266,20 @@ msgid "確認"
 msgstr ""
 
 #: ./messages.json
+#. [Password.newPasswordAgain] - Label
+#. defaultMessage is:
+#. 確認密碼
+msgid "確認密碼"
+msgstr ""
+
+#: ./messages.json
+#. [Password.newPasswordAgain.error]
+#. defaultMessage is:
+#. 確認密碼與新密碼不相符
+msgid "確認密碼與新密碼不相符"
+msgstr ""
+
+#: ./messages.json
 #. [DeviceTriggerEdit.editTriggerAndAction] - Title
 #. defaultMessage is:
 #. 編輯觸發條件與動作
@@ -277,17 +305,10 @@ msgid "觸發條件與動作"
 msgstr ""
 
 #: ./messages.json
-#. [Password.enterNewPassword] - Label and placeholder
+#. [Password.newPassword.placeholder] - Placeholder
 #. defaultMessage is:
-#. 請輸入新密碼
-msgid "請輸入新密碼"
-msgstr ""
-
-#: ./messages.json
-#. [Password.enterOldPassword] - Label and placeholder
-#. defaultMessage is:
-#. 請輸入舊密碼
-msgid "請輸入舊密碼"
+#. 輸入新密碼
+msgid "輸入新密碼"
 msgstr ""
 
 #: ./messages.json
