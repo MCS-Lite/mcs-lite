@@ -1,20 +1,21 @@
 import { Observable } from 'rxjs/Observable';
-import { createFetch, method } from 'http-client';
+import { createFetch, method, params } from 'http-client';
 import 'rxjs/add/observable/fromPromise';
 import 'rxjs/add/operator/pluck';
 import bearer from './stacks/bearer';
 
-export const URL = '/devices';
+export const URL = '/users/changepassword';
 
-const fetchDeviceList = (accessToken) => {
+const changePassword = ({ password }, accessToken) => {
   const fetch = createFetch(
-    method('GET'),
+    method('PUT'),
     bearer(accessToken),
+    params({ password }),
   );
 
   return Observable
     .fromPromise(fetch(URL))
-    .pluck('jsonData', 'data');
+    .pluck('jsonData', 'message');
 };
 
-export default fetchDeviceList;
+export default changePassword;

@@ -6,21 +6,33 @@ const messages = defineMessages({
     description: 'Title',
     defaultMessage: '修改密碼',
   },
-  'Password.enterOldPassword': {
-    id: 'Password.enterOldPassword',
-    description: 'Label and placeholder',
-    defaultMessage: '請輸入舊密碼',
+
+  'Password.newPassword.label': {
+    id: 'Password.newPassword.label',
+    description: 'Label',
+    defaultMessage: '新密碼',
   },
-  'Password.enterNewPassword': {
-    id: 'Password.enterNewPassword',
-    description: 'Label and placeholder',
-    defaultMessage: '請輸入新密碼',
+  'Password.newPassword.placeholder': {
+    id: 'Password.newPassword.placeholder',
+    description: 'Placeholder',
+    defaultMessage: '輸入新密碼',
   },
-  'Password.enterNewPasswordAgain': {
-    id: 'Password.enterNewPasswordAgain',
-    description: 'Label and placeholder',
-    defaultMessage: '再一次輸入新密碼',
+
+  'Password.newPasswordAgain.label': {
+    id: 'Password.newPasswordAgain',
+    description: 'Label',
+    defaultMessage: '確認密碼',
   },
+  'Password.newPasswordAgain.placeholder': {
+    id: 'Password.newPasswordAgain.placeholder',
+    description: 'Placeholder',
+    defaultMessage: '再次輸入新密碼',
+  },
+  'Password.newPasswordAgain.error': {
+    id: 'Password.newPasswordAgain.error',
+    defaultMessage: '確認密碼與新密碼不相符',
+  },
+
   'Password.cancel': {
     id: 'Password.cancel',
     defaultMessage: '取消',
@@ -28,6 +40,11 @@ const messages = defineMessages({
   'Password.save': {
     id: 'Password.save',
     defaultMessage: '儲存',
+  },
+  'Password.success': {
+    id: 'Password.success',
+    description: 'Toast',
+    defaultMessage: '成功！你已經成功修改密碼。',
   },
 });
 
