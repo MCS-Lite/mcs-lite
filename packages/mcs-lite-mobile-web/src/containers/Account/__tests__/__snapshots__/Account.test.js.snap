@@ -56,6 +56,10 @@ Object {
     "defaultMessage": "更改密碼",
     "id": "Account.changePassword",
   },
+  "Account.confirm": Object {
+    "defaultMessage": "確定要登出？",
+    "id": "Account.confirm",
+  },
   "Account.hello": Object {
     "defaultMessage": "你好",
     "id": "Account.hello",

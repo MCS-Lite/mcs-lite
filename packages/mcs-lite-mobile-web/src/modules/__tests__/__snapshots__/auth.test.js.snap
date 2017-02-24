@@ -41,6 +41,7 @@ Object {
 
 exports[`auth - 2. Action Creators should return signout actions 1`] = `
 Object {
+  "payload": "payload",
   "type": "mcs-lite-mobile-web/auth/SIGNOUT",
 }
 `;
