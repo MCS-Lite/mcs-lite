@@ -7,6 +7,24 @@ Object {
 }
 `;
 
+exports[`ui - 2. Action Creators should return addToast actions 1`] = `
+Object {
+  "payload": Object {
+    "children": undefined,
+    "key": "mockKey",
+    "kind": undefined,
+  },
+  "type": "mcs-lite-mobile-web/ui/ADD_TOAST",
+}
+`;
+
+exports[`ui - 2. Action Creators should return removeToast actions 1`] = `
+Object {
+  "payload": "key",
+  "type": "mcs-lite-mobile-web/ui/REMOVE_TOAST",
+}
+`;
+
 exports[`ui - 2. Action Creators should return setLoaded actions 1`] = `
 Object {
   "type": "mcs-lite-mobile-web/ui/SET_LOADED",
@@ -16,6 +34,22 @@ Object {
 exports[`ui - 2. Action Creators should return setLoading actions 1`] = `
 Object {
   "type": "mcs-lite-mobile-web/ui/SET_LOADING",
+}
+`;
+
+exports[`ui - 4. Reducer should handle ADD_TOAST 1`] = `
+Object {
+  "toasts": Array [
+    Object {
+      "message": "message",
+    },
+  ],
+}
+`;
+
+exports[`ui - 4. Reducer should handle REMOVE_TOAST 1`] = `
+Object {
+  "toasts": Array [],
 }
 `;
 

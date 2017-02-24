@@ -45,3 +45,19 @@ it('should return correctly state', () => {
   wrapper.instance().onSubmit({ preventDefault: () => {} });
   expect(fetchMock).toHaveBeenCalledWith({ message: 'success', password: '1234' });
 });
+
+it('should render with error mesage', () => {
+  const fetchMock = jest.fn();
+  const wrapper = shallow(
+    <Password
+      getMessages={R.identity}
+      changePassword={fetchMock}
+    />,
+  );
+
+  // Set different password
+  wrapper.setState({ new1: '1234' });
+  wrapper.setState({ new2: '12345' });
+
+  expect(toJson(wrapper)).toMatchSnapshot();
+});

@@ -66,6 +66,20 @@ describe('devices - 3. Epic', () => {
       .subscribe(action => expect(action).toMatchSnapshot());
   });
 
+
+  it('should return correct actions when fetchDeviceListEpic without access_token', () => {
+    const action$ = ActionsObservable.of(actions.fetchDeviceList());
+    const store = {
+      getState: () => ({
+        auth: {},
+      }),
+    };
+
+    epics.fetchDeviceListEpic(action$, store)
+      .toArray()
+      .subscribe(action => expect(action).toMatchSnapshot());
+  });
+
   it('should return correct actions when fetchDeviceDetailEpic', () => {
     const action$ = ActionsObservable.of(actions.fetchDeviceDetail('deviceId'));
     const store = {
