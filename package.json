@@ -10,7 +10,7 @@
     "ncu-update": "ncu -au && lerna exec --concurrency 1 -- ncu -au",
     "publish": "lerna publish",
     "prepublish": "./tasks/build.sh",
-    "danger": "danger"
+    "danger": "danger run --verbose"
   },
   "devDependencies": {
     "babel-eslint": "^7.1.1",
