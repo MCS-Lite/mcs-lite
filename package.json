@@ -22,6 +22,7 @@
     "eslint-plugin-jsx-a11y": "^4.0.0",
     "eslint-plugin-react": "^6.10.0",
     "lerna": "2.0.0-beta.37",
+    "lerna-changelog": "^0.3.0",
     "npm-check-updates": "^2.10.3",
     "stylelint": "^7.9.0"
   },
