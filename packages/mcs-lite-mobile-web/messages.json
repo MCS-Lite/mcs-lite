@@ -21,6 +21,10 @@
     "defaultMessage": "登出"
   },
   {
+    "id": "Account.confirm",
+    "defaultMessage": "確定要登出？"
+  },
+  {
     "id": "DeviceDataChannelDetail.historyChart",
     "defaultMessage": "歷史資料圖表"
   },
