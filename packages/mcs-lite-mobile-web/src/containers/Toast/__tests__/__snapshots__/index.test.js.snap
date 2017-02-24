@@ -1,0 +1,7 @@
+exports[`test should render Container correctly with HOC 1`] = `<Connect(Toast) />`;
+
+exports[`test should return props correctly with mapStateToProps 1`] = `
+Object {
+  "toasts": Array [],
+}
+`;

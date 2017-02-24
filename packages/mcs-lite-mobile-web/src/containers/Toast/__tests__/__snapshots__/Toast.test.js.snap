@@ -1,0 +1,42 @@
+exports[`test should renders <Toast> correctly with toasts 1`] = `
+<styled.div>
+  <styled.div />
+  <Portal>
+    <styled.div>
+      <Transition
+        appear={
+          Object {
+            "opacity": 0.8,
+            "translateY": -20,
+          }
+        }
+        component={[Function]}
+        enter={
+          Object {
+            "opacity": 1,
+            "translateY": 0,
+          }
+        }
+        leave={
+          Object {
+            "opacity": 0,
+          }
+        }
+        onEnter={[Function]}
+        onLeave={[Function]}
+        runOnMount={true}>
+        <Toast
+          kind="kind">
+          children
+        </Toast>
+      </Transition>
+    </styled.div>
+  </Portal>
+</styled.div>
+`;
+
+exports[`test should renders <Toast> correctly without toasts 1`] = `
+<styled.div>
+  <styled.div />
+</styled.div>
+`;

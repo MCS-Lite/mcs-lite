@@ -35,6 +35,7 @@ describe('auth - 2. Action Creators', () => {
 
 jest.mock('mcs-lite-fetch-rx', () => ({
   fetchUserInfo: () => ['response'],
+  changePassword: () => ['response'],
 }));
 
 describe('auth - 3. Epic', () => {
@@ -61,6 +62,20 @@ describe('auth - 3. Epic', () => {
     const store = null;
 
     epics.signoutEpic(action$, store)
+      .toArray()
+      .subscribe(action => expect(action).toMatchSnapshot());
+  });
+
+  it('should return correct actions when changePassword', () => {
+    const payload = { key: 'key', password: 'password', message: 'message' };
+    const action$ = ActionsObservable.of(actions.changePassword(payload));
+    const store = {
+      getState: () => ({
+        auth: { access_token: 123 },
+      }),
+    };
+
+    epics.changePasswordEpic(action$, store)
       .toArray()
       .subscribe(action => expect(action).toMatchSnapshot());
   });

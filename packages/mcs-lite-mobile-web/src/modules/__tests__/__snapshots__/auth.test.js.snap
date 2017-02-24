@@ -51,6 +51,19 @@ Object {
 }
 `;
 
+exports[`auth - 3. Epic should return correct actions when changePassword 1`] = `
+Array [
+  Object {
+    "payload": Object {
+      "children": "message",
+      "key": "mockKey",
+      "kind": "success",
+    },
+    "type": "mcs-lite-mobile-web/ui/ADD_TOAST",
+  },
+]
+`;
+
 exports[`auth - 3. Epic should return correct actions when requireAuthEpic 1`] = `
 Array [
   Object {
