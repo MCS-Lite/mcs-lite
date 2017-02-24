@@ -1,6 +1,6 @@
 const { danger, warn, fail } = require('danger');
 
-// Warn if there is no one assign.
+// Warn if there is no description.
 if (!danger.github.pr.body.length) {
   warn('Please add a description to your PR.');
 }
@@ -17,7 +17,7 @@ if (danger.github.pr.additions + danger.github.pr.deletions > bigPRThreshold) {
   warn(':exclamation: Big PR');
 }
 
-// Warn if there are changes to package.json without changes to Licenses.csv.
+// Warn if there are changes to i18n without extracting to pot.
 const i18nChanged = danger.git.modified_files.includes('messages.js');
 const potChanged = danger.git.modified_files.includes('.pot');
 if (i18nChanged && !potChanged) {
