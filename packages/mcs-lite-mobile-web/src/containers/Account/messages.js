@@ -22,6 +22,10 @@ const messages = defineMessages({
     id: 'Account.signout',
     defaultMessage: '登出',
   },
+  'Account.confirm': {
+    id: 'Account.confirm',
+    defaultMessage: '確定要登出？',
+  },
 });
 
 export default messages;

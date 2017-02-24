@@ -1,3 +1,6 @@
+/* global window */
+/* eslint no-alert: 0 */
+
 import { Observable } from 'rxjs/Observable';
 import * as fetchRx from 'mcs-lite-fetch-rx';
 import cookie from 'react-cookie';
@@ -30,7 +33,7 @@ export const constants = {
 
 const requireAuth = () => ({ type: REQUIRE_AUTH });
 const tryEnter = () => ({ type: TRY_ENTER });
-const signout = () => ({ type: SIGNOUT });
+const signout = message => ({ type: SIGNOUT, payload: message });
 const setUserInfo = payload => ({ type: SET_USERINFO, payload });
 const changePassword = ({ old, new1, new2 }) =>
   ({ type: CHANGE_PASSWORD, payload: { old, new1, new2 }});
@@ -48,6 +51,20 @@ export const actions = {
 // ----------------------------------------------------------------------------
 // 3. Epic (Async, side effect)
 // ----------------------------------------------------------------------------
+
+/**
+ * requireConfirm
+ * @return {Observable} original action$ or empty()
+ *
+ * @author Michael Hsu
+ */
+
+const requireConfirm = (action) => {
+  if (window.confirm(action.payload)) {
+    return Observable.of(action);
+  }
+  return Observable.empty();
+};
 
 const requireAuthEpic = action$ =>
   action$
@@ -71,6 +88,7 @@ const tryEnterEpic = action$ =>
 const signoutEpic = action$ =>
   action$
     .ofType(SIGNOUT)
+    .switchMap(requireConfirm)
     .switchMap(() => Observable.merge(
       Observable.of(routingActions.pushPathname('/signin')),
       Observable.of(clear()),
