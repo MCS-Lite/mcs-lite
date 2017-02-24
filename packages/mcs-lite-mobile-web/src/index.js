@@ -25,6 +25,7 @@ import Signin from './containers/Signin';
 import Account from './containers/Account';
 import Password from './containers/Password';
 import RequireAuth from './containers/RequireAuth';
+import Toast from './containers/Toast';
 import configureStore from './store/configureStore';
 import './style';
 import './utils/i18n';
@@ -52,21 +53,23 @@ ReactDOM.render(
     <IntlProvider defaultLocale={DEFAULT_LOCALE}>
       <ThemeProvider theme={mobileTheme}>
         <Router history={routerHistory} render={render}>
-          <Route path="/signin" component={Signin} />
-          <Route path="/" component={RequireAuth}>
-            <IndexRedirect to="devices" />
-            <Route component={Layout.LayoutDefault}>
-              <Route path="password" component={Password} />
-              <Route path="devices" component={DeviceList} />
-              <Route path="devices/:deviceId" component={DeviceDetail} />
-              <Route path="devices/:deviceId/info" component={DeviceDetailInfo} />
-              <Route path="devices/:deviceId/trigger" component={DeviceTrigger} />
-              <Route path="devices/:deviceId/trigger/edit" component={DeviceTriggerEdit} />
-              <Route path="devices/:deviceId/dataChannels/:dataChannelId" component={DeviceDataChannelDetail} />
-              <Route path="devices/:deviceId/dataChannels/:dataChannelId/timeRange" component={DeviceDataChannelTimeRange} />
-            </Route>
-            <Route component={Layout.LayoutDialog}>
-              <Route path="account" component={Account} />
+          <Route component={Toast}>
+            <Route path="/signin" component={Signin} />
+            <Route path="/" component={RequireAuth}>
+              <IndexRedirect to="devices" />
+              <Route component={Layout.LayoutDefault}>
+                <Route path="password" component={Password} />
+                <Route path="devices" component={DeviceList} />
+                <Route path="devices/:deviceId" component={DeviceDetail} />
+                <Route path="devices/:deviceId/info" component={DeviceDetailInfo} />
+                <Route path="devices/:deviceId/trigger" component={DeviceTrigger} />
+                <Route path="devices/:deviceId/trigger/edit" component={DeviceTriggerEdit} />
+                <Route path="devices/:deviceId/dataChannels/:dataChannelId" component={DeviceDataChannelDetail} />
+                <Route path="devices/:deviceId/dataChannels/:dataChannelId/timeRange" component={DeviceDataChannelTimeRange} />
+              </Route>
+              <Route component={Layout.LayoutDialog}>
+                <Route path="account" component={Account} />
+              </Route>
             </Route>
           </Route>
         </Router>

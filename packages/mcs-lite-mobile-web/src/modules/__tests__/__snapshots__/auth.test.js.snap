@@ -12,9 +12,8 @@ Object {
 exports[`auth - 2. Action Creators should return changePassword actions 1`] = `
 Object {
   "payload": Object {
-    "new1": undefined,
-    "new2": undefined,
-    "old": undefined,
+    "message": undefined,
+    "password": undefined,
   },
   "type": "mcs-lite-mobile-web/auth/CHANGE_PASSWORD",
 }

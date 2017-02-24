@@ -29,14 +29,12 @@ it('should return correctly state', () => {
   );
 
   // Before Open
-  expect(wrapper.state('old')).toBe('');
   expect(wrapper.state('new1')).toBe('');
   expect(wrapper.state('new2')).toBe('');
 
   // After Change
   wrapper.instance().onChange({ target: { name: 'new1', value: '1234' }});
   wrapper.instance().onChange({ target: { name: 'new2', value: '1234' }});
-  expect(wrapper.state('old')).toBe('');
   expect(wrapper.state('new1')).toBe('1234');
   expect(wrapper.state('new2')).toBe('1234');
 
@@ -45,5 +43,5 @@ it('should return correctly state', () => {
 
   // After Submit
   wrapper.instance().onSubmit({ preventDefault: () => {} });
-  expect(fetchMock).toHaveBeenCalledWith({ new1: '1234', new2: '1234', old: '' });
+  expect(fetchMock).toHaveBeenCalledWith({ message: 'success', password: '1234' });
 });

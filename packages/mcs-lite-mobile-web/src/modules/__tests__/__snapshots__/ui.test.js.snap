@@ -1,5 +1,7 @@
 exports[`ui - 1. Constants should return constants 1`] = `
 Object {
+  "ADD_TOAST": "mcs-lite-mobile-web/ui/ADD_TOAST",
+  "REMOVE_TOAST": "mcs-lite-mobile-web/ui/REMOVE_TOAST",
   "SET_LOADED": "mcs-lite-mobile-web/ui/SET_LOADED",
   "SET_LOADING": "mcs-lite-mobile-web/ui/SET_LOADING",
 }
@@ -32,5 +34,6 @@ Object {
 exports[`ui - 4. Reducer should return the initial state 1`] = `
 Object {
   "isLoading": false,
+  "toasts": Array [],
 }
 `;
