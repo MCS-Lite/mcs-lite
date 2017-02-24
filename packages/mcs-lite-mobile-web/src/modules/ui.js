@@ -1,13 +1,20 @@
+import { Observable } from 'rxjs/Observable';
+import uuid from 'uuid/v1';
+
 // ----------------------------------------------------------------------------
 // 1. Constants
 // ----------------------------------------------------------------------------
 
 const SET_LOADING = 'mcs-lite-mobile-web/ui/SET_LOADING';
 const SET_LOADED = 'mcs-lite-mobile-web/ui/SET_LOADED';
+const ADD_TOAST = 'mcs-lite-mobile-web/ui/ADD_TOAST';
+const REMOVE_TOAST = 'mcs-lite-mobile-web/ui/REMOVE_TOAST';
 
 export const constants = {
   SET_LOADING,
   SET_LOADED,
+  ADD_TOAST,
+  REMOVE_TOAST,
 };
 
 // ----------------------------------------------------------------------------
@@ -16,17 +23,34 @@ export const constants = {
 
 const setLoading = () => ({ type: SET_LOADING });
 const setLoaded = () => ({ type: SET_LOADED });
+const addToast = ({ kind, children }) =>
+  ({ type: ADD_TOAST, payload: { key: uuid(), kind, children }});
+const removeToast = key => ({ type: REMOVE_TOAST, payload: key });
 
 export const actions = {
   setLoading,
   setLoaded,
+  addToast,
+  removeToast,
 };
 
 // ----------------------------------------------------------------------------
 // 3. Epic (Async, side effect)
 // ----------------------------------------------------------------------------
 
-export const epics = {};
+const DELAY = 1500;
+
+const addToastEpic = action$ =>
+  action$
+    .ofType(ADD_TOAST)
+    .concatMap(({ payload }) => Observable
+      .of(removeToast(payload.key))
+      .delay(DELAY),
+    );
+
+export const epics = {
+  addToastEpic,
+};
 
 // ----------------------------------------------------------------------------
 // 4. Reducer as default (state shaper)
@@ -34,6 +58,7 @@ export const epics = {};
 
 const initialState = {
   isLoading: false,
+  toasts: [],
 };
 
 export default function reducer(state = initialState, action = {}) {
@@ -48,6 +73,21 @@ export default function reducer(state = initialState, action = {}) {
       return {
         ...state,
         isLoading: false,
+      };
+
+    case ADD_TOAST:
+      return {
+        ...state,
+        toasts: [
+          action.payload,
+          ...state.toasts,
+        ],
+      };
+
+    case REMOVE_TOAST:
+      return {
+        ...state,
+        toasts: state.toasts.filter(t => t.key !== action.payload),
       };
 
     default:

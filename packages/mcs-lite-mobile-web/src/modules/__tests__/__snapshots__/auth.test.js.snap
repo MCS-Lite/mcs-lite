@@ -12,9 +12,8 @@ Object {
 exports[`auth - 2. Action Creators should return changePassword actions 1`] = `
 Object {
   "payload": Object {
-    "new1": undefined,
-    "new2": undefined,
-    "old": undefined,
+    "message": undefined,
+    "password": undefined,
   },
   "type": "mcs-lite-mobile-web/auth/CHANGE_PASSWORD",
 }
@@ -50,6 +49,19 @@ exports[`auth - 2. Action Creators should return tryEnter actions 1`] = `
 Object {
   "type": "mcs-lite-mobile-web/auth/TRY_ENTER",
 }
+`;
+
+exports[`auth - 3. Epic should return correct actions when changePassword 1`] = `
+Array [
+  Object {
+    "payload": Object {
+      "children": "message",
+      "key": "mockKey",
+      "kind": "success",
+    },
+    "type": "mcs-lite-mobile-web/ui/ADD_TOAST",
+  },
+]
 `;
 
 exports[`auth - 3. Epic should return correct actions when requireAuthEpic 1`] = `

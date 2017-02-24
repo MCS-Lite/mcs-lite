@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { MobileContentWrapper } from 'mcs-lite-ui';
+import { P, MobileContentWrapper } from 'mcs-lite-ui';
 
 export const Container = styled(MobileContentWrapper)`
   padding: 16px 16px 56px 16px;
@@ -29,4 +29,8 @@ export const ButtonWrapper = styled.div`
   > *:first-child {
     margin-right: 8px;
   }
+`;
+
+export const StyledP = styled(P)`
+  margin-top: 4px;
 `;

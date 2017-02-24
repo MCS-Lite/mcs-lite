@@ -4,7 +4,7 @@ import IconMenu from 'mcs-lite-icon/lib/IconMenu';
 import Helmet from 'react-helmet';
 import { Link } from 'react-router';
 import StyledLink from '../../components/StyledLink';
-import { Container, Label, ButtonWrapper } from './styled-components';
+import { Container, Label, ButtonWrapper, StyledP } from './styled-components';
 import updatePathname from '../../utils/updatePathname';
 
 class Password extends React.Component {
@@ -12,16 +12,20 @@ class Password extends React.Component {
     getMessages: PropTypes.func.isRequired,
     changePassword: PropTypes.func.isRequired,
   }
-  state = { old: '', new1: '', new2: '' };
+  state = { new1: '', new2: '' };
   onChange = e => this.setState({ [e.target.name]: e.target.value });
   onSubmit = (e) => {
-    this.props.changePassword(this.state);
+    this.props.changePassword({
+      password: this.state.new2,
+      message: this.props.getMessages('success'),
+    });
     e.preventDefault();
   }
   render() {
-    const { old, new1, new2 } = this.state;
+    const { new1, new2 } = this.state;
     const { onChange, onSubmit } = this;
     const { getMessages: t } = this.props;
+    const isNew2Error = new1 && new2 && new1 !== new2;
 
     return (
       <div>
@@ -42,37 +46,28 @@ class Password extends React.Component {
           <main>
             <Container>
               <div>
-                <Label htmlFor="old">{t('enterOldPassword')}</Label>
-                <Input
-                  name="old"
-                  value={old}
-                  onChange={onChange}
-                  placeholder={t('enterOldPassword')}
-                  type="password"
-                  required
-                />
-              </div>
-              <div>
-                <Label htmlFor="new1">{t('enterNewPassword')}</Label>
+                <Label htmlFor="new1">{t('newPassword.label')}</Label>
                 <Input
                   name="new1"
                   value={new1}
                   onChange={onChange}
-                  placeholder={t('enterNewPassword')}
+                  placeholder={t('newPassword.placeholder')}
                   type="password"
                   required
                 />
               </div>
               <div>
-                <Label htmlFor="new2">{t('enterNewPasswordAgain')}</Label>
+                <Label htmlFor="new2">{t('newPasswordAgain.label')}</Label>
                 <Input
                   name="new2"
                   value={new2}
                   onChange={onChange}
-                  placeholder={t('enterNewPasswordAgain')}
+                  placeholder={t('newPasswordAgain.placeholder')}
                   type="password"
                   required
+                  kind={isNew2Error ? 'error' : 'primary'}
                 />
+                {isNew2Error && <StyledP color="error">{t('newPasswordAgain.error')}</StyledP>}
               </div>
             </Container>
           </main>

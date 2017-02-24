@@ -6,6 +6,7 @@ import * as fetchRx from 'mcs-lite-fetch-rx';
 import cookie from 'react-cookie';
 import { actions as routingActions } from './routing';
 import { actions as devicesActions } from './devices';
+import { actions as uiActions } from './ui';
 
 // ----------------------------------------------------------------------------
 // 1. Constants
@@ -35,8 +36,8 @@ const requireAuth = () => ({ type: REQUIRE_AUTH });
 const tryEnter = () => ({ type: TRY_ENTER });
 const signout = message => ({ type: SIGNOUT, payload: message });
 const setUserInfo = payload => ({ type: SET_USERINFO, payload });
-const changePassword = ({ old, new1, new2 }) =>
-  ({ type: CHANGE_PASSWORD, payload: { old, new1, new2 }});
+const changePassword = ({ password, message }) =>
+  ({ type: CHANGE_PASSWORD, payload: { password, message }});
 const clear = () => ({ type: CLEAR });
 
 export const actions = {
@@ -96,11 +97,18 @@ const signoutEpic = action$ =>
     ))
     .do(() => cookie.remove('token', { path: '/' }));
 
-const changePasswordEpic = action$ =>
+const changePasswordEpic = (action$, store) =>
   action$
     .ofType(CHANGE_PASSWORD)
-    .delay(1000)
-    .mapTo('success');
+    .pluck('payload')
+    .switchMap(({ password, message }) => Observable
+      .from(fetchRx.changePassword({ password }, store.getState().auth.access_token))
+      .mapTo(message),
+    )
+    .map(message => uiActions.addToast({
+      kind: 'success',
+      children: message,
+    }));
 
 export const epics = {
   requireAuthEpic,

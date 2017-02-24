@@ -151,19 +151,28 @@
     "defaultMessage": "修改密碼"
   },
   {
-    "id": "Password.enterOldPassword",
-    "description": "Label and placeholder",
-    "defaultMessage": "請輸入舊密碼"
+    "id": "Password.newPassword.label",
+    "description": "Label",
+    "defaultMessage": "新密碼"
   },
   {
-    "id": "Password.enterNewPassword",
-    "description": "Label and placeholder",
-    "defaultMessage": "請輸入新密碼"
+    "id": "Password.newPassword.placeholder",
+    "description": "Placeholder",
+    "defaultMessage": "輸入新密碼"
   },
   {
-    "id": "Password.enterNewPasswordAgain",
-    "description": "Label and placeholder",
-    "defaultMessage": "再一次輸入新密碼"
+    "id": "Password.newPasswordAgain",
+    "description": "Label",
+    "defaultMessage": "確認密碼"
+  },
+  {
+    "id": "Password.newPasswordAgain.placeholder",
+    "description": "Placeholder",
+    "defaultMessage": "再次輸入新密碼"
+  },
+  {
+    "id": "Password.newPasswordAgain.error",
+    "defaultMessage": "確認密碼與新密碼不相符"
   },
   {
     "id": "Password.cancel",
@@ -172,6 +181,11 @@
   {
     "id": "Password.save",
     "defaultMessage": "儲存"
+  },
+  {
+    "id": "Password.success",
+    "description": "Toast",
+    "defaultMessage": "成功！你已經成功修改密碼。"
   },
   {
     "id": "Signin.signin",

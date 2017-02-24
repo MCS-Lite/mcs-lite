@@ -1,7 +1,27 @@
 exports[`ui - 1. Constants should return constants 1`] = `
 Object {
+  "ADD_TOAST": "mcs-lite-mobile-web/ui/ADD_TOAST",
+  "REMOVE_TOAST": "mcs-lite-mobile-web/ui/REMOVE_TOAST",
   "SET_LOADED": "mcs-lite-mobile-web/ui/SET_LOADED",
   "SET_LOADING": "mcs-lite-mobile-web/ui/SET_LOADING",
+}
+`;
+
+exports[`ui - 2. Action Creators should return addToast actions 1`] = `
+Object {
+  "payload": Object {
+    "children": undefined,
+    "key": "mockKey",
+    "kind": undefined,
+  },
+  "type": "mcs-lite-mobile-web/ui/ADD_TOAST",
+}
+`;
+
+exports[`ui - 2. Action Creators should return removeToast actions 1`] = `
+Object {
+  "payload": "key",
+  "type": "mcs-lite-mobile-web/ui/REMOVE_TOAST",
 }
 `;
 
@@ -14,6 +34,22 @@ Object {
 exports[`ui - 2. Action Creators should return setLoading actions 1`] = `
 Object {
   "type": "mcs-lite-mobile-web/ui/SET_LOADING",
+}
+`;
+
+exports[`ui - 4. Reducer should handle ADD_TOAST 1`] = `
+Object {
+  "toasts": Array [
+    Object {
+      "message": "message",
+    },
+  ],
+}
+`;
+
+exports[`ui - 4. Reducer should handle REMOVE_TOAST 1`] = `
+Object {
+  "toasts": Array [],
 }
 `;
 
@@ -32,5 +68,6 @@ Object {
 exports[`ui - 4. Reducer should return the initial state 1`] = `
 Object {
   "isLoading": false,
+  "toasts": Array [],
 }
 `;
