@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"POT-Creation-Date: 2017-02-23T03:10:12.186Z\n"
+"POT-Creation-Date: 2017-02-24T03:28:04.352Z\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "MIME-Version: 1.0\n"
@@ -235,6 +235,13 @@ msgstr ""
 #. defaultMessage is:
 #. 目前還沒有任何測試裝置
 msgid "目前還沒有任何測試裝置"
+msgstr ""
+
+#: ./messages.json
+#. [Account.confirm]
+#. defaultMessage is:
+#. 確定要登出？
+msgid "確定要登出？"
 msgstr ""
 
 #: ./messages.json

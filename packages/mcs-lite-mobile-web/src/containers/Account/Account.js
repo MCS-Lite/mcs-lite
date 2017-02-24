@@ -20,12 +20,14 @@ const Account = ({ userName, signout, getMessages: t }) =>
       <StyledLink to={updatePathname('/password')}>
         <FlatButton block>{t('changePassword')}</FlatButton>
       </StyledLink>
-      <FlatButton block onClick={signout}>{t('signout')}</FlatButton>
+      <FlatButton block onClick={() => signout(t('confirm'))}>
+        {t('signout')}
+      </FlatButton>
     </Footer>
   </Container>;
 
 Account.propTypes = {
-  userName: PropTypes.string.isRequired,
+  userName: PropTypes.string,
   signout: PropTypes.func.isRequired,
   getMessages: PropTypes.func.isRequired,
 };
