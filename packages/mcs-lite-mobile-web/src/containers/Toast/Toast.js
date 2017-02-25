@@ -8,21 +8,19 @@ const Toast = ({ toasts, children }) =>
   <HeightContainer>
     <HeightContainer>{children}</HeightContainer>
 
-    {
-      toasts.length > 0 && (
-        <Portal>
-          <Fixed>
-            <Transition
-              component={ToastContainer}
-              appear={{ opacity: 0.8, translateY: -20 }}
-              enter={{ opacity: 1, translateY: 0 }}
-            >
-              {toasts.map(t => <MLToast key={t.key} {...t} />)}
-            </Transition>
-          </Fixed>
-        </Portal>
-      )
-    }
+    {toasts.length > 0 && (
+      <Portal>
+        <Fixed>
+          <Transition
+            component={ToastContainer}
+            appear={{ opacity: 0.8, translateY: -20 }}
+            enter={{ opacity: 1, translateY: 0 }}
+          >
+            {toasts.map(t => <MLToast key={t.key} {...t} />)}
+          </Transition>
+        </Fixed>
+      </Portal>
+    )}
   </HeightContainer>;
 
 Toast.displayName = 'Toast';

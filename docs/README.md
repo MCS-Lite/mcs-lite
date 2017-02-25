@@ -2,11 +2,11 @@
 
 ## Table of Contents
 
--   [Technical stack](#technical-stack)
+-   [Technology stack](#technology-stack)
 -   [DataChannelAdapter Design](#datachanneladapter-design)
 -   [How To Add New Icon?](#how-to-add-new-icon)
 
-## Technical stack
+## Technology stack
 
 ![](./images/tech-stack.png)
 
