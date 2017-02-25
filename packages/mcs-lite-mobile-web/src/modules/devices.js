@@ -61,12 +61,11 @@ const fetchDeviceListEpic = (action$, store) =>
     .switchMap(delayWhenTokenAvailable(action$, store))
     .map(() => store.getState())
     .pluck('auth', 'access_token')
-    .switchMap(accessToken => Observable.merge(
-      Observable.of(uiActions.setLoading()),
-      Observable
-        .from(fetchRx.fetchDeviceList(accessToken))
-        .map(setDeviceList),
-    ));
+    .switchMap(accessToken => Observable
+      .from(fetchRx.fetchDeviceList(accessToken))
+      .map(setDeviceList)
+      .startWith(uiActions.setLoading()),
+    );
 
 const setDeviceListEpic = action$ =>
   action$.ofType(SET_DEVICE_LIST)
@@ -76,12 +75,11 @@ const fetchDeviceDetailEpic = (action$, store) =>
   action$.ofType(FETCH_DEVICE_DETAIL)
     .switchMap(delayWhenTokenAvailable(action$, store))
     .pluck('payload')
-    .switchMap(deviceId => Observable.merge(
-      Observable.of(uiActions.setLoading()),
-      Observable
-        .from(fetchRx.fetchDeviceDetail({ deviceId }, store.getState().auth.access_token))
-        .map(setDeviceDetail),
-    ));
+    .switchMap(deviceId => Observable
+      .from(fetchRx.fetchDeviceDetail({ deviceId }, store.getState().auth.access_token))
+      .map(setDeviceDetail)
+      .startWith(uiActions.setLoading()),
+    );
 
 const setDeviceDetailEpic = action$ =>
   action$.ofType(SET_DEVICE_DETAIL)
