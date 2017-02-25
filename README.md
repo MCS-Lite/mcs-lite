@@ -1,3 +1,7 @@
+<h1 align="center">
+  <a href='https://mcs.mediatek.com'><img src='./docs/images/logo.svg' height='60'></a>
+</h1>
+
 # MCS Lite [![CircleCI](https://circleci.com/gh/evenchange4/mcs-lite/tree/master.svg?style=svg&circle-token=c633ab2d85927871bccf4c39d676ce242f2da24c)](https://circleci.com/gh/evenchange4/mcs-lite/tree/master) [![codecov](https://codecov.io/gh/evenchange4/mcs-lite/branch/master/graph/badge.svg?token=r9HT3Wivr0)](https://codecov.io/gh/evenchange4/mcs-lite)
 
 -   Try it online - http://mcs-lite-ui.netlify.com/

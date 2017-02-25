@@ -6,4 +6,4 @@ import './utils/rxjs';
 window.confirm = () => true;
 
 // For toast
-jest.mock('uuid/v1', () => () => 'mockKey');
+jest.mock('uuid/v1', () => () => 'mockUuid()');

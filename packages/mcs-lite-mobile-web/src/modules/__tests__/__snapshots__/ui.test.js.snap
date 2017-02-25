@@ -11,7 +11,7 @@ exports[`ui - 2. Action Creators should return addToast actions 1`] = `
 Object {
   "payload": Object {
     "children": undefined,
-    "key": "mockKey",
+    "key": "mockUuid()",
     "kind": undefined,
   },
   "type": "mcs-lite-mobile-web/ui/ADD_TOAST",

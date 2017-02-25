@@ -56,7 +56,7 @@ Array [
   Object {
     "payload": Object {
       "children": "message",
-      "key": "mockKey",
+      "key": "mockUuid()",
       "kind": "success",
     },
     "type": "mcs-lite-mobile-web/ui/ADD_TOAST",
