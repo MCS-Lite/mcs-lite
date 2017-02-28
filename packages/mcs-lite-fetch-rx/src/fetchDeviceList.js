@@ -14,7 +14,10 @@ const fetchDeviceList = (accessToken) => {
 
   return Observable
     .fromPromise(fetch(URL))
-    .pluck('jsonData', 'data');
+    .switchMap(({ ok, jsonData }) => {
+      if (!ok) return Observable.throw(jsonData);
+      return Observable.of(jsonData).pluck('data');
+    });
 };
 
 export default fetchDeviceList;

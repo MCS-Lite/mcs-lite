@@ -17,7 +17,10 @@ const fetchUserInfo = (cookieToken) => {
 
   return Observable
     .fromPromise(fetch(URL))
-    .pluck('jsonData', 'results');
+    .switchMap(({ ok, jsonData }) => {
+      if (!ok) return Observable.throw(jsonData);
+      return Observable.of(jsonData).pluck('results');
+    });
 };
 
 export default fetchUserInfo;

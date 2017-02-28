@@ -1,6 +1,7 @@
 import { Observable } from 'rxjs/Observable';
 import { createFetch, method, params } from 'http-client';
 import 'rxjs/add/observable/fromPromise';
+import 'rxjs/add/observable/throw';
 import 'rxjs/add/operator/pluck';
 import bearer from './stacks/bearer';
 
@@ -15,7 +16,10 @@ const changePassword = ({ password }, accessToken) => {
 
   return Observable
     .fromPromise(fetch(URL))
-    .pluck('jsonData', 'message');
+    .switchMap(({ ok, jsonData }) => {
+      if (!ok) return Observable.throw(jsonData);
+      return Observable.of(jsonData).pluck('message');
+    });
 };
 
 export default changePassword;

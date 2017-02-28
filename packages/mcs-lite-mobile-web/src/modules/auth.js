@@ -103,12 +103,15 @@ const changePasswordEpic = (action$, store) =>
     .pluck('payload')
     .switchMap(({ password, message }) => Observable
       .from(fetchRx.changePassword({ password }, store.getState().auth.access_token))
-      .mapTo(message),
-    )
-    .map(message => uiActions.addToast({
-      kind: 'success',
-      children: message,
-    }));
+      .mapTo(uiActions.addToast({
+        kind: 'success',
+        children: message,
+      }))
+      .catch(error => Observable.of(uiActions.addToast({
+        kind: 'error',
+        children: error.error_description,
+      }))),
+    );
 
 export const epics = {
   requireAuthEpic,
