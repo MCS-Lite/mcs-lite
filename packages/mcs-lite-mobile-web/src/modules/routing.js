@@ -1,6 +1,5 @@
-import { Observable } from 'rxjs/Observable';
 import { push } from 'react-router-redux';
-import assocPath from 'ramda/src/assocPath';
+import R from 'ramda';
 
 // ----------------------------------------------------------------------------
 // 1. Constants
@@ -35,17 +34,20 @@ export const actions = {
 const pushPathnameEpic = (action$, store) =>
   action$
     .ofType(PUSH_PATHNAME)
-    .switchMap(({ payload }) => Observable.of(push(
-      assocPath(['pathname'], payload)(store.getState().routing.locationBeforeTransitions),
-    )));
+    .map(({ payload }) => R.pipe(
+      R.path(['routing', 'locationBeforeTransitions']),
+      R.assocPath(['pathname'], payload),
+      push,
+    )(store.getState()));
 
 const pushLocaleEpic = (action$, store) =>
   action$
     .ofType(PUSH_LOCALE)
-    .switchMap(({ payload }) => Observable.of(push(
-      assocPath(['query', 'locale'], payload)(store.getState().routing.locationBeforeTransitions),
-    )));
-
+    .map(({ payload }) => R.pipe(
+      R.path(['routing', 'locationBeforeTransitions']),
+      R.assocPath(['query', 'locale'], payload),
+      push,
+    )(store.getState()));
 
 export const epics = {
   pushPathnameEpic,
