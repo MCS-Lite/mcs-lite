@@ -15,14 +15,19 @@
   "main": "index.js",
   "license": "ISC",
   "scripts": {
-    "test": "test -e index.js"
+    "test": "jest --coverage --runInBand",
+    "test:watch": "npm run test -- --watch"
   },
   "dependencies": {
     "babel-plugin-add-module-exports": "^0.2.1",
-    "babel-plugin-lodash": "^3.2.11",
+    "babel-plugin-import": "^1.1.1",
     "babel-plugin-styled-components": "^1.0.0",
     "babel-preset-latest": "^6.22.0",
     "babel-preset-react": "^6.23.0",
     "babel-preset-stage-0": "^6.22.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.23.1",
+    "jest": "^19.0.2"
   }
 }
