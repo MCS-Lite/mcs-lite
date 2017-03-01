@@ -1,3 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
 exports[`ClickOutside should add a "click" EventListener of document 1`] = `
 Object {
   "click": [Function],
