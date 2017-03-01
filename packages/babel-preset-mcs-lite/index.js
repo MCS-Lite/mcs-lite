@@ -7,7 +7,7 @@ module.exports = {
   plugins: [
     require.resolve('babel-plugin-add-module-exports'),
 
-    // minify styled-components css
+    // Minify styled-components css
     [
       require.resolve('babel-plugin-styled-components'),
       {
@@ -17,15 +17,26 @@ module.exports = {
       },
     ],
 
+    // Optimize bundle size
     [
-      require.resolve('babel-plugin-lodash'),
-      {
-        id: [
-          'ramda',
-          'mcs-lite-ui',
-          'mcs-lite-icon',
-        ],
-      },
+      require.resolve('babel-plugin-import'),
+      [
+        {
+          libraryName: 'mcs-lite-icon',
+          libraryDirectory: 'lib',        // default: lib
+          camel2DashComponentName: false, // default: true
+        },
+        {
+          libraryName: 'mcs-lite-ui',
+          libraryDirectory: 'lib',        // default: lib
+          camel2DashComponentName: false, // default: true
+        },
+        {
+          libraryName: 'ramda',
+          libraryDirectory: 'src',        // default: lib
+          camel2DashComponentName: false, // default: true
+        },
+      ],
     ],
   ],
 };

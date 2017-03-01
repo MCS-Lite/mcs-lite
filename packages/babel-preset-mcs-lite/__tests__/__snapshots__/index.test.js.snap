@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should work with mcs-lite-icon 1`] = `
+"'use strict';
+
+var _Icon = require('mcs-lite-icon/lib/Icon');
+
+var _Icon2 = _interopRequireDefault(_Icon);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+console.log(_Icon2.default);"
+`;
+
+exports[`should work with mcs-lite-icon/lib 1`] = `
+"'use strict';
+
+var _Icon = require('mcs-lite-icon/lib/Icon');
+
+var _Icon2 = _interopRequireDefault(_Icon);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+console.log(_Icon2.default);"
+`;
+
+exports[`should work with mcs-lite-ui 1`] = `
+"'use strict';
+
+var _Button = require('mcs-lite-ui/lib/Button');
+
+var _Button2 = _interopRequireDefault(_Button);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+console.log(_Button2.default);"
+`;
+
+exports[`should work with mcs-lite-ui/lib 1`] = `
+"'use strict';
+
+var _Button = require('mcs-lite-ui/lib/Button');
+
+var _Button2 = _interopRequireDefault(_Button);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+console.log(_Button2.default);"
+`;
+
+exports[`should work with ramda 1`] = `
+"'use strict';
+
+var _pipe = require('ramda/src/pipe');
+
+var _pipe2 = _interopRequireDefault(_pipe);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+console.log(_pipe2.default);"
+`;
+
+exports[`should work with ramda/src 1`] = `
+"'use strict';
+
+var _pipe = require('ramda/src/pipe');
+
+var _pipe2 = _interopRequireDefault(_pipe);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+console.log(_pipe2.default);"
+`;
