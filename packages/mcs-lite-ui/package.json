@@ -1,6 +1,6 @@
 {
   "name": "mcs-lite-ui",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "Common UI used by MCS Lite",
   "repository": "evenchange4/mcs-lite",
   "author": "Michael Hsu <evenchange4@gmail.com>",
@@ -53,8 +53,8 @@
     "flow-bin": "^0.40.0",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^19.0.2",
-    "mcs-lite-icon": "^0.0.1",
-    "mcs-lite-scripts": "^0.0.1",
+    "mcs-lite-icon": "^0.1.1",
+    "mcs-lite-scripts": "^0.1.1",
     "mcs-lite-theme": "^0.0.1",
     "normalize.css": "^5.0.0",
     "react": "^15.4.2",
@@ -76,7 +76,7 @@
     "recharts": "^0.21.0"
   },
   "peerDependencies": {
-    "mcs-lite-icon": "^0.0.1",
+    "mcs-lite-icon": "^0.1.1",
     "mcs-lite-theme": "^0.0.1",
     "styled-components": "^1.4.3"
   }
