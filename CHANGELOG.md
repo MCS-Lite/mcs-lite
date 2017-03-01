@@ -4,14 +4,41 @@
 
 ### Bump Versions
 
--  mcs-lite-demo-nextjs@0.1.2
--  mcs-lite-fetch-rx@0.1.1
--  mcs-lite-icon@0.1.1
--  mcs-lite-mobile-web@0.1.2
--  mcs-lite-scripts@0.1.1
--  mcs-lite-ui@0.1.2
--  react-intl-cra@0.1.1
--  react-intl-inject-hoc@0.1.1
+-   babel-preset-mcs-lite@0.1.0
+-   eslint-config-mcs-lite@0.1.0
+-   mcs-lite-demo-nextjs@0.1.3
+-   mcs-lite-design@0.1.0
+-   mcs-lite-fetch-rx@0.1.2
+-   mcs-lite-icon@0.1.2
+-   mcs-lite-mobile-web@0.1.3
+-   mcs-lite-scripts@0.1.2
+-   mcs-lite-theme@0.1.0
+-   mcs-lite-ui@0.1.3
+-   react-intl-cra@0.1.2
+-   react-intl-inject-hoc@0.1.2
+-   stylelint-config-mcs-lite@0.1.0
+
+#### :bug: Bug Fix
+* `babel-preset-mcs-lite`
+  * [#169](https://github.com/evenchange4/mcs-lite/pull/169) fix(babel-preset-mcs-lite): replace babel-plugin-lodash with babel-plugin-import. ([@evenchange4](https://github.com/evenchange4))
+
+#### Committers: 1
+- Michael Hsu ([evenchange4](https://github.com/evenchange4))
+
+----
+
+## Released (2017-03-01)
+
+### Bump Versions
+
+-   mcs-lite-demo-nextjs@0.1.2
+-   mcs-lite-fetch-rx@0.1.1
+-   mcs-lite-icon@0.1.1
+-   mcs-lite-mobile-web@0.1.2
+-   mcs-lite-scripts@0.1.1
+-   mcs-lite-ui@0.1.2
+-   react-intl-cra@0.1.1
+-   react-intl-inject-hoc@0.1.1
 
 #### :rocket: New Feature
 * `mcs-lite-fetch-rx`, `mcs-lite-mobile-web`
