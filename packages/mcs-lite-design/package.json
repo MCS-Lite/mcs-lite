@@ -1,6 +1,6 @@
 {
   "name": "mcs-lite-design",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "The source images to be compressed used by MCS Lite",
   "repository": "evenchange4/mcs-lite",
   "author": "Michael Hsu <evenchange4@gmail.com>",
