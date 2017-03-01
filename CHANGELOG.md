@@ -1,5 +1,43 @@
-## Released (2017-02-23)
+# MCS Lite Changelog
 
+## Released (2017-03-01)
+
+### Bump Versions
+
+-   mcs-lite-demo-nextjs@0.1.1
+-   mcs-lite-fetch-rx@0.1.0
+-   mcs-lite-icon@0.1.0
+-   mcs-lite-mobile-web@0.1.1
+-   mcs-lite-scripts@0.1.0
+-   mcs-lite-ui@0.1.1
+-   react-intl-cra@0.1.0
+-   react-intl-inject-hoc@0.1.0
+
+#### :rocket: New Feature
+* `mcs-lite-fetch-rx`, `mcs-lite-mobile-web`
+  * [#164](https://github.com/evenchange4/mcs-lite/pull/164) feat(Module): add error handler. ([@evenchange4](https://github.com/evenchange4))
+  * [#156](https://github.com/evenchange4/mcs-lite/pull/156) feat(Password): add changing password feature.. ([@evenchange4](https://github.com/evenchange4))
+* `mcs-lite-mobile-web`
+  * [#155](https://github.com/evenchange4/mcs-lite/pull/155) feat(Signout): require confirm before leaving. ([@evenchange4](https://github.com/evenchange4))
+
+#### :nail_care: Enhancement
+* `mcs-lite-mobile-web`
+  * [#162](https://github.com/evenchange4/mcs-lite/pull/162) refactor(modules/device): use startWith. ([@evenchange4](https://github.com/evenchange4))
+
+#### :house: Internal
+* `mcs-lite-fetch-rx`, `mcs-lite-mobile-web`, `mcs-lite-scripts`, `mcs-lite-ui`
+  * [#165](https://github.com/evenchange4/mcs-lite/pull/165) chore(Jest): upgrade to jest 19. ([@evenchange4](https://github.com/evenchange4))
+* Other
+  * [#158](https://github.com/evenchange4/mcs-lite/pull/158) chore(danger): use danger run -v. ([@evenchange4](https://github.com/evenchange4))
+  * [#153](https://github.com/evenchange4/mcs-lite/pull/153) chore(dangerJS): update rules for pot checker. ([@evenchange4](https://github.com/evenchange4))
+  * [#149](https://github.com/evenchange4/mcs-lite/pull/149) feat(dangerJS): introduce danger js. ([@evenchange4](https://github.com/evenchange4))
+
+#### Committers: 1
+- Michael Hsu ([evenchange4](https://github.com/evenchange4))
+
+----
+
+## Released (2017-02-23)
 
 ### Bump Versions
 

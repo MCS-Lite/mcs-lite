@@ -1,6 +1,6 @@
 {
   "name": "react-intl-inject-hoc",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "The convenience HOC of react-intl injectIntl",
   "repository": "evenchange4/mcs-lite",
   "author": "Michael Hsu <evenchange4@gmail.com>",
@@ -29,7 +29,7 @@
   "dependencies": {
     "babel-cli": "^6.23.0",
     "babel-preset-mcs-lite": "^0.0.1",
-    "mcs-lite-scripts": "^0.0.1"
+    "mcs-lite-scripts": "^0.1.0"
   },
   "babel": {
     "presets": [
