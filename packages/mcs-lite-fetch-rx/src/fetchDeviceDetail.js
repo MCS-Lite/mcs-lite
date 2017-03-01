@@ -1,6 +1,7 @@
 import { Observable } from 'rxjs/Observable';
 import { createFetch, method } from 'http-client';
 import 'rxjs/add/observable/fromPromise';
+import 'rxjs/add/observable/throw';
 import 'rxjs/add/operator/pluck';
 import bearer from './stacks/bearer';
 
@@ -14,7 +15,10 @@ const fetchDeviceDetail = ({ deviceId }, accessToken) => {
 
   return Observable
     .fromPromise(fetch(`${URL}/${deviceId}`))
-    .pluck('jsonData', 'data');
+    .switchMap(({ ok, jsonData }) => {
+      if (!ok) return Observable.throw(jsonData);
+      return Observable.of(jsonData).pluck('data');
+    });
 };
 
 export default fetchDeviceDetail;

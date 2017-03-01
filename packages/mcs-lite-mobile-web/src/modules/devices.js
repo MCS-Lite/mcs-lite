@@ -1,6 +1,7 @@
 import { Observable } from 'rxjs/Observable';
 import * as fetchRx from 'mcs-lite-fetch-rx';
 import { actions as uiActions } from './ui';
+import { actions as routingActions } from './routing';
 import { constants as authConstants } from './auth';
 
 // ----------------------------------------------------------------------------
@@ -54,7 +55,8 @@ const delayWhenTokenAvailable = (action$, store) => action =>
   store.getState().auth.access_token
     ? Observable.of(action)
     : Observable.of(action)
-      .delayWhen(() => action$.ofType(authConstants.SET_USERINFO));
+      .delayWhen(() => action$.ofType(authConstants.SET_USERINFO))
+      .timeout(3000);
 
 const fetchDeviceListEpic = (action$, store) =>
   action$.ofType(FETCH_DEVICE_LIST)
@@ -64,8 +66,17 @@ const fetchDeviceListEpic = (action$, store) =>
     .switchMap(accessToken => Observable
       .from(fetchRx.fetchDeviceList(accessToken))
       .map(setDeviceList)
-      .startWith(uiActions.setLoading()),
-    );
+      .startWith(uiActions.setLoading())
+      .catch((data) => {
+        // TODO: refresh token ?
+        console.error(data); // eslint-disable-line
+        return Observable.of(routingActions.pushPathname('/signin'));
+      }),
+    )
+    .catch(error => Observable.of(uiActions.addToast({
+      kind: 'error',
+      children: error.message,
+    })));
 
 const setDeviceListEpic = action$ =>
   action$.ofType(SET_DEVICE_LIST)
@@ -78,8 +89,17 @@ const fetchDeviceDetailEpic = (action$, store) =>
     .switchMap(deviceId => Observable
       .from(fetchRx.fetchDeviceDetail({ deviceId }, store.getState().auth.access_token))
       .map(setDeviceDetail)
-      .startWith(uiActions.setLoading()),
-    );
+      .startWith(uiActions.setLoading())
+      .catch((data) => {
+        // TODO: refresh token ?
+        console.error(data); // eslint-disable-line
+        return Observable.of(routingActions.pushPathname('/signin'));
+      }),
+    )
+    .catch(error => Observable.of(uiActions.addToast({
+      kind: 'error',
+      children: error.message,
+    })));
 
 const setDeviceDetailEpic = action$ =>
   action$.ofType(SET_DEVICE_DETAIL)
