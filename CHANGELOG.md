@@ -1,6 +1,17 @@
 # MCS Lite Changelog
 
-## Unreleased (2017-03-01)
+## Released (2017-03-01)
+
+### Bump Versions
+
+-   mcs-lite-demo-nextjs@0.1.1
+-   mcs-lite-fetch-rx@0.1.0
+-   mcs-lite-icon@0.1.0
+-   mcs-lite-mobile-web@0.1.1
+-   mcs-lite-scripts@0.1.0
+-   mcs-lite-ui@0.1.1
+-   react-intl-cra@0.1.0
+-   react-intl-inject-hoc@0.1.0
 
 #### :rocket: New Feature
 * `mcs-lite-fetch-rx`, `mcs-lite-mobile-web`
