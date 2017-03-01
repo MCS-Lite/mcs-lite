@@ -166,7 +166,7 @@ $ npm run publish
 ### changelog
 
 ```
-$ npm i lerna-changelog -g
+$ npm i lerna lerna-changelog -g
 $ cd mcs-lite/
 $ lerna-changelog
 ```
