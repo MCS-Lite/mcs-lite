@@ -1,6 +1,7 @@
 import { Observable } from 'rxjs/Observable';
 import { createFetch, method } from 'http-client';
 import 'rxjs/add/observable/fromPromise';
+import 'rxjs/add/observable/throw';
 import 'rxjs/add/operator/pluck';
 import bearer from './stacks/bearer';
 
