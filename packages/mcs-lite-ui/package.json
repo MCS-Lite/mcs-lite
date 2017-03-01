@@ -49,10 +49,10 @@
     "babel-cli": "^6.23.0",
     "babel-preset-mcs-lite": "^0.0.1",
     "enzyme": "^2.7.1",
-    "enzyme-to-json": "^1.4.5",
-    "flow-bin": "^0.37.4",
+    "enzyme-to-json": "^1.5.0",
+    "flow-bin": "^0.40.0",
     "identity-obj-proxy": "^3.0.0",
-    "jest": "^18.1.0",
+    "jest": "^19.0.2",
     "mcs-lite-icon": "^0.0.1",
     "mcs-lite-scripts": "^0.0.1",
     "mcs-lite-theme": "^0.0.1",
@@ -73,7 +73,7 @@
     "react-motion-ui-pack": "^0.10.2",
     "react-overlays": "^0.6.11",
     "react-text-truncate": "^0.8.3",
-    "recharts": "^0.20.8"
+    "recharts": "^0.21.0"
   },
   "peerDependencies": {
     "mcs-lite-icon": "^0.0.1",

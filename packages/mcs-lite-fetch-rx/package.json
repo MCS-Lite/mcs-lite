@@ -25,13 +25,13 @@
     "http-client": "^4.3.1"
   },
   "peerDependencies": {
-    "rxjs": "^5.1.1"
+    "rxjs": "^5.2.0"
   },
   "devDependencies": {
     "babel-cli": "^6.23.0",
     "babel-preset-mcs-lite": "^0.0.1",
     "mcs-lite-scripts": "^0.0.1",
-    "rxjs": "^5.1.1"
+    "rxjs": "^5.2.0"
   },
   "babel": {
     "presets": [
