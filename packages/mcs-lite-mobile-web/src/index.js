@@ -11,7 +11,6 @@ import { createHistory } from 'history';
 import useScroll from 'react-router-scroll/lib/useScroll';
 import { syncHistoryWithStore } from 'react-router-redux';
 import { ThemeProvider } from 'styled-components';
-import { w3cwebsocket as W3CWebSocket } from 'websocket';
 import IntlProvider from './containers/IntlProvider';
 import mobileTheme from './utils/mobileTheme';
 import Layout from './components/Layout';
