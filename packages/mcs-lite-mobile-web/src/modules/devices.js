@@ -12,6 +12,8 @@ const FETCH_DEVICE_LIST = 'mcs-lite-mobile-web/devices/FETCH_DEVICE_LIST';
 const FETCH_DEVICE_DETAIL = 'mcs-lite-mobile-web/devices/FETCH_DEVICE_DETAIL';
 const SET_DEVICE_LIST = 'mcs-lite-mobile-web/devices/SET_DEVICE_LIST';
 const SET_DEVICE_DETAIL = 'mcs-lite-mobile-web/devices/SET_DEVICE_DETAIL';
+const UPLOAD_DATAPOINT = 'mcs-lite-mobile-web/devices/UPLOAD_DATAPOINT';
+const SET_DATAPOINT = 'mcs-lite-mobile-web/devices/SET_DATAPOINT';
 const CLEAR = 'mcs-lite-mobile-web/devices/CLEAR';
 
 export const constants = {
@@ -19,6 +21,8 @@ export const constants = {
   FETCH_DEVICE_DETAIL,
   SET_DEVICE_LIST,
   SET_DEVICE_DETAIL,
+  UPLOAD_DATAPOINT,
+  SET_DATAPOINT,
   CLEAR,
 };
 
@@ -30,6 +34,9 @@ const fetchDeviceList = () => ({ type: FETCH_DEVICE_LIST });
 const fetchDeviceDetail = deviceId => ({ type: FETCH_DEVICE_DETAIL, payload: deviceId });
 const setDeviceList = payload => ({ type: SET_DEVICE_LIST, payload });
 const setDeviceDetail = payload => ({ type: SET_DEVICE_DETAIL, payload });
+const uploadDatapoint = payload => ({ type: UPLOAD_DATAPOINT, payload });
+const setDatapoint = payload => ({ type: UPLOAD_DATAPOINT, payload });
+
 const clear = () => ({ type: CLEAR });
 
 export const actions = {
@@ -37,6 +44,8 @@ export const actions = {
   fetchDeviceDetail,
   setDeviceList,
   setDeviceDetail,
+  uploadDatapoint,
+  setDatapoint,
   clear,
 };
 
@@ -100,6 +109,13 @@ const fetchDeviceDetailEpic = (action$, store) =>
       kind: 'error',
       children: error.message,
     })));
+
+// const uploadDatapointEpic = action$ =>
+//   action$.ofType(UPLOAD_DATAPOINT)
+//     .do(() => {
+//       socket.emmi();
+//     })
+//     .map(setDatapoint);
 
 const setDeviceDetailEpic = action$ =>
   action$.ofType(SET_DEVICE_DETAIL)

@@ -66,6 +66,7 @@
     "redux-observable": "^0.13.0",
     "rxjs": "^5.2.0",
     "styled-components": "^1.4.3",
-    "uuid": "^3.0.1"
+    "uuid": "^3.0.1",
+    "websocket": "^1.0.24"
   }
 }

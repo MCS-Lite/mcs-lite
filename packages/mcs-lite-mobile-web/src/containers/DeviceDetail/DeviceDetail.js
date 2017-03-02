@@ -1,10 +1,11 @@
 import React, { PropTypes } from 'react';
+import R from 'ramda';
 import Helmet from 'react-helmet';
 import {
-  PullToRefresh, Overlay, Menu, DataChannelCard, DataChannelAdapter,
+  PullToRefresh, Overlay, DataChannelCard, DataChannelAdapter,
   MobileHeader,
 } from 'mcs-lite-ui';
-import dataChannels from 'mcs-lite-ui/lib/DataChannelAdapter/API';
+import Menu from 'mcs-lite-ui/lib/Menu';
 import IconMoreVert from 'mcs-lite-icon/lib/IconMoreVert';
 import IconArrowLeft from 'mcs-lite-icon/lib/IconArrowLeft';
 import IconFold from 'mcs-lite-icon/lib/IconFold';
@@ -13,6 +14,15 @@ import StyledLink from '../../components/StyledLink';
 import { Container, StyledImg, CardWrapper, CardHeaderIcon } from './styled-components';
 import updatePathname from '../../utils/updatePathname';
 
+// (String, 1) => STRING_CONTROL
+const typeMapper = (name, type) => R.pipe(
+  R.cond([
+    [R.equals(1), R.always('_CONTROL')],
+    [R.equals(2), R.always('_DISPLAY')],
+  ]),
+  R.concat(R.toUpper(name)),
+)(type);
+
 class DeviceDetail extends React.Component {
   static propTypes = {
     device: PropTypes.object,
@@ -20,6 +30,7 @@ class DeviceDetail extends React.Component {
     isLoading: PropTypes.bool.isRequired,
     getMessages: PropTypes.func.isRequired,
     fetchDeviceDetail: PropTypes.func.isRequired,
+    sendMessage: PropTypes.func.isRequired,
   }
   static defaultProps = {
     device: {},
@@ -30,11 +41,13 @@ class DeviceDetail extends React.Component {
   onHide = () => this.setState({ isMenuShow: false });
   getTarget = node => this.setState({ target: node });
   fetch = () => this.props.fetchDeviceDetail(this.props.deviceId);
-  eventHandler = e => console.log(e); // eslint-disable-line
+  eventHandler = (e) => {
+    this.props.sendMessage(JSON.stringify(e));
+  }
   render() {
     const { isMenuShow, target } = this.state;
     const { device, isLoading, getMessages: t } = this.props;
-    const { getTarget, onMoreDetailClick, onHide, fetch } = this;
+    const { getTarget, onMoreDetailClick, onHide, fetch, eventHandler } = this;
     return (
       <div>
         <Helmet title="範例 A 的測試裝置" />
@@ -85,24 +98,28 @@ class DeviceDetail extends React.Component {
               <Container>
                 <CardWrapper>
                   {
-                    dataChannels.map(c => (
+                    (device.datachannels || []).map(c => (
                       <DataChannelCard
-                        key={c.id}
+                        key={c.datachannelId}
                         data-width="half"
                         header={
-                          <StyledLink to={updatePathname(`/devices/${device.deviceId}/dataChannels/${c.id}`)}>
+                          <StyledLink to={updatePathname(`/devices/${device.deviceId}/dataChannels/${c.datachannelId}`)}>
                             <CardHeaderIcon>
                               <IconFold />
                             </CardHeaderIcon>
                           </StyledLink>
                         }
-                        title="Title"
-                        subtitle="Last data point time : 2015-06-12 12:00"
-                        description="You can input description of controller here. You …"
+                        title={c.datachannelName}
+                        subtitle={new Date(c.createdAt).toString()}
                       >
                         <DataChannelAdapter
-                          dataChannelProps={c}
-                          eventHandler={this.eventHandler}
+                          dataChannelProps={{
+                            id: c.datachannelId,
+                            type: typeMapper(c.channelType.name, c.type),
+                            values: { value: 0 },
+                            format: c.format,
+                          }}
+                          eventHandler={eventHandler}
                         />
                       </DataChannelCard>
                     ))
