@@ -37,6 +37,7 @@
     "eslint-plugin-jsx-a11y": "^4.0.0",
     "eslint-plugin-react": "^6.10.0",
     "history": "^3.2.1",
+    "mcs-lite-connect": "^0.0.0",
     "mcs-lite-fetch-rx": "^0.1.2",
     "mcs-lite-icon": "^0.1.2",
     "mcs-lite-theme": "^0.1.0",
@@ -66,7 +67,6 @@
     "redux-observable": "^0.13.0",
     "rxjs": "^5.2.0",
     "styled-components": "^1.4.3",
-    "uuid": "^3.0.1",
-    "websocket": "^1.0.24"
+    "uuid": "^3.0.1"
   }
 }

@@ -1,0 +1,38 @@
+{
+  "name": "mcs-lite-connect",
+  "version": "0.0.0",
+  "description": "Connect MCS with WebSocket",
+  "repository": "evenchange4/mcs-lite",
+  "author": "Michael Hsu <evenchange4@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/evenchange4/mcs-lite/issues",
+    "email": "evenchange4@gmail.com"
+  },
+  "homepage": "https://github.com/evenchange4/mcs-lite#readme",
+  "files": [
+    "lib"
+  ],
+  "main": "lib/index.js",
+  "scripts": {
+    "clean": "rm -rf lib",
+    "prebuild": "npm run clean",
+    "build": "NODE_ENV=production babel src --out-dir lib",
+    "createEntryFile": "exports-all 'lib/*.js' 'lib/index.js'",
+    "postbuild": "npm run createEntryFile"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.23.0",
+    "babel-preset-mcs-lite": "^0.1.0",
+    "mcs-lite-scripts": "^0.1.2"
+  },
+  "dependencies": {
+    "recompose": "^0.22.0",
+    "websocket": "^1.0.24"
+  },
+  "babel": {
+    "presets": [
+      "mcs-lite"
+    ]
+  }
+}
