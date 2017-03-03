@@ -2,11 +2,12 @@
 
 ## Table of Contents
 
--   [Technology stack](#technology-stack)
+-   [Technology Stack](#technology-stack)
+-   [Packages Relation](#packages-relation)
 -   [DataChannelAdapter Design](#datachanneladapter-design)
 -   [How To Add New Icon?](#how-to-add-new-icon)
 
-## Technology stack
+## Technology Stack
 
 ![](./images/tech-stack.png)
 
@@ -19,6 +20,10 @@
 -   [styled-components](https://github.com/styled-components/styled-components)
 -   [react-storybook](https://github.com/storybooks/react-storybook)
 -   [react-intl](https://github.com/yahoo/react-intl)
+
+## Packages Relation
+
+![](./images/relation.png)
 
 ## DataChannelAdapter Design
 
