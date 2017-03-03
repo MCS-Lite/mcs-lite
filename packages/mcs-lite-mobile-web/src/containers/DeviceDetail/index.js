@@ -1,3 +1,5 @@
+/* global window */
+
 import { connect } from 'react-redux';
 import compose from 'recompose/compose';
 import { withGetMessages } from 'react-intl-inject-hoc';
@@ -16,10 +18,12 @@ export const mapDispatchToProps = {
   setDatapoint: actions.setDatapoint,
 };
 
+const wsHost = `ws://${window.location.hostname}:${process.env.REACT_APP_SOCKET_PORT}`;
+
 export default compose(
   connect(mapStateToProps, mapDispatchToProps),
   connectMCS(
-    ({ device }) => device && `ws://nb14090119.local:8000/deviceId/${device.deviceId}/deviceKey/${device.deviceKey}`,
+    ({ device }) => device && `${wsHost}/deviceId/${device.deviceId}/deviceKey/${device.deviceKey}`,
     props => datapoint => props.setDatapoint(props.deviceId, datapoint),
     'sendMessage', // propsName
   ),
