@@ -18,11 +18,11 @@ Array [
     </styled.div>
     <styled.img
         alt="MCS Lite Logo"
-        src="logo.svg">
+        src="logo_mcs_lite_black.svg">
         <img
             alt="MCS Lite Logo"
-            className="fRRFQD"
-            src="logo.svg" />
+            className="SWJqY"
+            src="logo_mcs_lite_black.svg" />
     </styled.img>
     <styled.footer>
         <footer
