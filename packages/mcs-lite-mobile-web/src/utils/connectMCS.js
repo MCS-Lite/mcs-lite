@@ -1,8 +1,9 @@
 /* eslint no-console: 0 */
 
 import React from 'react';
+import createEagerFactory from 'recompose/createEagerFactory';
+import createHelper from 'recompose/createHelper';
 import { w3cwebsocket as W3CWebSocket } from 'websocket';
-
 
 /**
  * connectMCS
@@ -13,8 +14,10 @@ import { w3cwebsocket as W3CWebSocket } from 'websocket';
  * @author Michael Hsu
  */
 
-const connectMCS = (urlMapper, onMessage, sendPropsName) => BaseComponent =>
-  class ConnectMCS extends React.Component {
+const connectMCS = (urlMapper, onMessage, sendPropsName) => (BaseComponent) => {
+  const factory = createEagerFactory(BaseComponent);
+
+  return class ConnectMCS extends React.Component {
     state = { exposeSenderFunction: null };
     componentWillMount = () => this.createWebSocket();
     componentWillReceiveProps = () => this.createWebSocket();
@@ -52,11 +55,12 @@ const connectMCS = (urlMapper, onMessage, sendPropsName) => BaseComponent =>
     }
 
     render() {
-      return React.createElement(BaseComponent, {
+      return factory({
         ...this.props,
         [sendPropsName]: this.state.exposeSenderFunction,
       });
     }
   };
+};
 
-export default connectMCS;
+export default createHelper(connectMCS, 'connectMCS');

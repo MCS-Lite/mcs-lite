@@ -3,6 +3,7 @@ Object {
   "CLEAR": "mcs-lite-mobile-web/devices/CLEAR",
   "FETCH_DEVICE_DETAIL": "mcs-lite-mobile-web/devices/FETCH_DEVICE_DETAIL",
   "FETCH_DEVICE_LIST": "mcs-lite-mobile-web/devices/FETCH_DEVICE_LIST",
+  "SET_DATAPOINT": "mcs-lite-mobile-web/devices/SET_DATAPOINT",
   "SET_DEVICE_DETAIL": "mcs-lite-mobile-web/devices/SET_DEVICE_DETAIL",
   "SET_DEVICE_LIST": "mcs-lite-mobile-web/devices/SET_DEVICE_LIST",
 }
