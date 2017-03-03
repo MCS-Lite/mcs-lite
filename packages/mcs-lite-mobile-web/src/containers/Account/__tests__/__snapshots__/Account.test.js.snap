@@ -5,7 +5,7 @@ exports[`test should renders <Account> correctly 1`] = `
   <styled.div>
     <styled.img
       alt="MCS Lite Logo"
-      src="logo.svg" />
+      src="logo_mcs_lite_black.svg" />
     <Heading
       level={4}>
       userName

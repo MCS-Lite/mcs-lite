@@ -4,7 +4,7 @@ exports[`test should renders <Signin> correctly 1`] = `
     title="signin" />
   <Logo
     alt="MCS Lite Logo"
-    src="logo.svg" />
+    src="logo_mcs_lite_black.svg" />
   <Styled(Hr)>
     welcome
   </Styled(Hr)>
