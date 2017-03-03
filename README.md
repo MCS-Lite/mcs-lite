@@ -28,6 +28,10 @@
 [eslint-config-mcs-lite-npm]: https://www.npmjs.org/package/eslint-config-mcs-lite
 [eslint-config-mcs-lite-npm-downloads]: https://img.shields.io/npm/dt/eslint-config-mcs-lite.svg?style=flat-square
 
+[mcs-lite-connect-npm-badge]: https://img.shields.io/npm/v/mcs-lite-connect.svg?style=flat-square
+[mcs-lite-connect-npm]: https://www.npmjs.org/package/mcs-lite-connect
+[mcs-lite-connect-npm-downloads]: https://img.shields.io/npm/dt/mcs-lite-connect.svg?style=flat-square
+
 [mcs-lite-design-npm-badge]: https://img.shields.io/npm/v/mcs-lite-design.svg?style=flat-square
 [mcs-lite-design-npm]: https://www.npmjs.org/package/mcs-lite-design
 [mcs-lite-design-npm-downloads]: https://img.shields.io/npm/dt/mcs-lite-design.svg?style=flat-square
@@ -72,6 +76,7 @@
 |-------------|-----------------|-------------|---------------|
 | `babel-preset-mcs-lite` | Babel preset used by MCS Lite | [![npm][babel-preset-mcs-lite-npm-badge]][babel-preset-mcs-lite-npm] | [![npm downloads][babel-preset-mcs-lite-npm-downloads]][babel-preset-mcs-lite-npm]
 | `eslint-config-mcs-lite` | Eslint config used by MCS Lite | [![npm][eslint-config-mcs-lite-npm-badge]][eslint-config-mcs-lite-npm] | [![npm downloads][eslint-config-mcs-lite-npm-downloads]][eslint-config-mcs-lite-npm]
+| `mcs-lite-connect` | Connect MCS with WebSocket | [![npm][mcs-lite-connect-npm-badge]][mcs-lite-connect-npm] | [![npm downloads][mcs-lite-connect-npm-downloads]][mcs-lite-connect-npm]
 | `mcs-lite-demo-nextjs` | Demo how to use mcs-lite-ui. | | |
 | `mcs-lite-design` | The source images to be compressed used by MCS Lite | [![npm][mcs-lite-design-npm-badge]][mcs-lite-design-npm] | [![npm downloads][mcs-lite-design-npm-downloads]][mcs-lite-design-npm]
 | `mcs-lite-fetch-rx` | The Client api with stream creator for MCS Lite | [![npm][mcs-lite-fetch-rx-npm-badge]][mcs-lite-fetch-rx-npm] | [![npm downloads][mcs-lite-fetch-rx-npm-downloads]][mcs-lite-fetch-rx-npm]
@@ -135,6 +140,7 @@ $ npm run test:watch
 | root                        | V     |      |       |       | V (es, style) | V (lerna) |
 | `babel-preset-mcs-lite`     |       | V    |       |       |               |           |
 | `eslint-config-mcs-lite`    |       | V    |       |       |               |           |
+| `mcs-lite-connect`          | V     |      |       | V     |               |           |
 | `mcs-lite-demo-nextjs`      |       |      | V     |       |               |           |
 | `mcs-lite-design`           | V     |      |       | V     |               |           |
 | `mcs-lite-fetch-rx`         | V     |      |       | V     |               |           |

@@ -6,7 +6,7 @@ import createHelper from 'recompose/createHelper';
 import { w3cwebsocket as W3CWebSocket } from 'websocket';
 
 /**
- * connectMCS
+ * connectSocket
  *   urlMapper => props => string
  *   onMessage => props => e => void
  *   sendPropsName: string
@@ -14,7 +14,7 @@ import { w3cwebsocket as W3CWebSocket } from 'websocket';
  * @author Michael Hsu
  */
 
-const connectMCS = (urlMapper, onMessage, sendPropsName) => (BaseComponent) => {
+const connectSocket = (urlMapper, onMessage, sendPropsName) => (BaseComponent) => {
   const factory = createEagerFactory(BaseComponent);
 
   return class ConnectMCS extends React.Component {
@@ -63,4 +63,4 @@ const connectMCS = (urlMapper, onMessage, sendPropsName) => (BaseComponent) => {
   };
 };
 
-export default createHelper(connectMCS, 'connectMCS');
+export default createHelper(connectSocket, 'connectSocket');
