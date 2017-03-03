@@ -12,7 +12,7 @@ import moment from 'moment';
 import StyledLink from '../../components/StyledLink';
 import { Container, StyledImg, CardWrapper, CardHeaderIcon } from './styled-components';
 import updatePathname from '../../utils/updatePathname';
-import dataChanneltypeMapper from '../../utils/dataChannelTypeMapper';
+import dataChannelTypeMapper from '../../utils/dataChannelTypeMapper';
 
 class DeviceDetail extends React.Component {
   static propTypes = {
@@ -116,7 +116,7 @@ class DeviceDetail extends React.Component {
                         <DataChannelAdapter
                           dataChannelProps={{
                             id: c.datachannelId,
-                            type: dataChanneltypeMapper(c.channelType.name, c.type),
+                            type: dataChannelTypeMapper(c.channelType.name, c.type),
                             values: c.datapoints.values || {},
                             format: c.format,
                           }}
