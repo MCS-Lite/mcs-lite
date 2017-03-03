@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://mcs.mediatek.com">
-    <img width="320" src="./packages/mcs-lite-design/src/logo/logo_mcs_lite_black.svg">
+    <img height="300" src="./docs/images/banner_mcs_lite_black.png">
   </a>
 </p>
 
