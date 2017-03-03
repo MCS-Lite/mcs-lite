@@ -19,6 +19,8 @@ const Wrapper = styled.div`
  * function eventHandler(event: Event): void {}
  */
 
+const NO_DATA_PLACEHOLDER = 'N/A';
+
 class DataChannelAdapter extends React.Component {
   static propTypes = {
     dataChannelProps: PropTypes.shape({
@@ -41,12 +43,14 @@ class DataChannelAdapter extends React.Component {
       format: PropTypes.shape({
         unit: PropTypes.string,
         items: PropTypes.array,
-        lowerbound: PropTypes.number,
-        upperbound: PropTypes.number,
+        lowerbound: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+        upperbound: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
       }).isRequired,
     }),
     eventHandler: PropTypes.func.isRequired, // (event: object) => void
   }
+
+  // TODO: refactor these handler codes. (maybe hoist)
   switchByType = () => {
     const { dataChannelProps, eventHandler } = this.props;
     const { id, values, type, format } = dataChannelProps;
@@ -72,7 +76,7 @@ class DataChannelAdapter extends React.Component {
         <DataChannel.ControlNumber
           placeholder="Integer only"
           unit={`單位：${format.unit}`}
-          value={parseInt(values.value, 10)}
+          value={values.value ? parseInt(values.value, 10) : ''}
           onSubmit={() => eventHandler({ type: 'submit', id, values })}
           onChange={e => eventHandler({ type: 'change', id, values: { value: e.target.value }})}
           onClear={() => eventHandler({ type: 'clear', id, values: 0 })}
@@ -80,14 +84,14 @@ class DataChannelAdapter extends React.Component {
       ],
       [R.equals('INTEGER_DISPLAY'), () =>
         <DataChannel.DisplayUnitValue
-          value={values.value}
+          value={values.value || NO_DATA_PLACEHOLDER}
           unit={format.unit}
         />,
       ],
       [R.equals('STRING_CONTROL'), () =>
         <DataChannel.ControlString
           placeholder="String only"
-          value={values.value}
+          value={values.value || ''}
           onSubmit={() => eventHandler({ type: 'submit', id, values })}
           onChange={e => eventHandler({ type: 'change', id, values: { value: e.target.value }})}
           onClear={() => eventHandler({ type: 'clear', id, values: 0 })}
@@ -102,7 +106,7 @@ class DataChannelAdapter extends React.Component {
       [R.equals('HEX_CONTROL'), () =>
         <DataChannel.ControlString
           placeholder="Hex only"
-          value={values.value}
+          value={values.value || ''}
           onSubmit={() => eventHandler({ type: 'submit', id, values })}
           onChange={e => eventHandler({ type: 'change', id, values: { value: e.target.value }})}
           onClear={() => eventHandler({ type: 'clear', id, values: 0 })}
@@ -111,12 +115,12 @@ class DataChannelAdapter extends React.Component {
       [R.equals('HEX_DISPLAY'), () =>
         <DataChannel.DisplayString
           placeholder="String only"
-          value={values.value}
+          value={values.value || ''}
         />,
       ],
       [R.equals('FLOAT_DISPLAY'), () =>
         <DataChannel.DisplayUnitValue
-          value={values.value}
+          value={values.value || NO_DATA_PLACEHOLDER}
           unit={format.unit}
         />,
       ],
@@ -124,7 +128,7 @@ class DataChannelAdapter extends React.Component {
         <DataChannel.ControlNumber
           placeholder="Float only"
           unit={`單位：${format.unit}`}
-          value={parseFloat(values.value, 10)}
+          value={values.value ? parseFloat(values.value, 10) : ''}
           onSubmit={() => eventHandler({ type: 'submit', id, values })}
           onChange={e => eventHandler({ type: 'change', id, values: { value: e.target.value }})}
           onClear={() => eventHandler({ type: 'clear', id, values: 0 })}
@@ -132,17 +136,22 @@ class DataChannelAdapter extends React.Component {
       ],
       [R.equals('GPIO_CONTROL'), () => {
         const labels = ['Low', 'High'];
-        const valueMapper = index => labels[index];
+        const valueMapper = index => index ? labels[index] : NO_DATA_PLACEHOLDER;
 
         return (
           <DataChannel.ControlRange
             value={values.value}
             labels={labels}
             valueMapper={valueMapper}
-            onSubmit={e => eventHandler({
-              type: 'submit',
+            onChange={e => eventHandler({
+              type: 'change',
               id,
               values: { value: e.target.value },
+            })}
+            onSubmit={() => eventHandler({
+              type: 'submit',
+              id,
+              values: { value: values.value },
             })}
           />
         );
@@ -154,24 +163,35 @@ class DataChannelAdapter extends React.Component {
         />,
       ],
       [R.equals('CATEGORY_CONTROL'), () => {
-        const value = R.findIndex(R.propEq('value', values.value))(format.items);
-        const valueMapper = index => format.items[index].value;
+        const value = values.value
+          ? R.findIndex(R.propEq('value', values.value))(format.items)
+          : undefined;
+        const valueMapper = index => index
+          ? format.items[index].value
+          : NO_DATA_PLACEHOLDER;
 
         return (
           <DataChannel.ControlRange
             value={value}
             labels={format.items.map(R.prop('name'))}
             valueMapper={valueMapper}
-            onSubmit={e => eventHandler({
+            onChange={e => eventHandler({
+              type: 'change',
+              id,
+              values: { value: valueMapper(e.target.value), period: values.period },
+            })}
+            onSubmit={() => eventHandler({
               type: 'submit',
               id,
-              values: { value: valueMapper(e.target.value) },
+              values: { value: valueMapper(values.value), period: values.period },
             })}
           />
         );
       }],
       [R.equals('CATEGORY_DISPLAY'), () => {
-        const value = R.findIndex(R.propEq('value', values.value))(format.items);
+        const value = values.value
+          ? R.findIndex(R.propEq('value', values.value))(format.items)
+          : undefined;
 
         return (
           <DataChannel.DisplayStatus
@@ -180,48 +200,74 @@ class DataChannelAdapter extends React.Component {
           />
         );
       }],
-      [R.equals('ANALOG_CONTROL'), () =>
-        <DataChannel.ControlRange
-          value={values.value}
-          labels={[format.lowerbound, format.upperbound]}
-          onSubmit={e => eventHandler({
-            type: 'submit',
-            id,
-            values: { value: e.target.value },
-          })}
-        />,
-      ],
-      [R.equals('PWM_DISPLAY'), () =>
-        <DataChannel.DisplayMultipleValue
-          items={[
-            { name: 'Value', value: values.value },
-            { name: 'Period', value: values.period },
-          ]}
-        />,
-      ],
-      [R.equals('PWM_CONTROL'), () =>
-        <Wrapper>
-          <DataChannel.ControlPeriod
-            value={values.period}
-            onSubmit={() => eventHandler({ type: 'submit', id, values })}
+      [R.equals('ANALOG_CONTROL'), () => {
+        const valueMapper = index => index || NO_DATA_PLACEHOLDER;
+
+        return (
+          <DataChannel.ControlRange
+            value={values.value}
+            valueMapper={valueMapper}
+            labels={[
+              parseFloat(format.lowerbound, 10),
+              parseFloat(format.upperbound, 10),
+            ]}
             onChange={e => eventHandler({
               type: 'change',
               id,
-              values: { period: e.target.value, value: values.value },
+              values: { value: e.target.value },
             })}
-            placeholder="Integer only"
-          />
-          <DataChannel.ControlRange
-            value={values.value}
-            labels={[format.lowerbound, format.upperbound]}
-            onSubmit={e => eventHandler({
+            onSubmit={() => eventHandler({
               type: 'submit',
               id,
-              values: { value: e.target.value, period: values.period },
+              values: { value: values.value },
             })}
           />
-        </Wrapper>,
+        );
+      }],
+      [R.equals('PWM_DISPLAY'), () =>
+        <DataChannel.DisplayMultipleValue
+          items={[
+            { name: 'Value', value: values.value || NO_DATA_PLACEHOLDER },
+            { name: 'Period', value: values.period || NO_DATA_PLACEHOLDER },
+          ]}
+        />,
       ],
+      [R.equals('PWM_CONTROL'), () => {
+        const valueMapper = index => index || NO_DATA_PLACEHOLDER;
+
+        return (
+          <Wrapper>
+            <DataChannel.ControlPeriod
+              value={values.period}
+              onSubmit={() => eventHandler({ type: 'submit', id, values })}
+              onChange={e => eventHandler({
+                type: 'change',
+                id,
+                values: { period: e.target.value, value: values.value },
+              })}
+              placeholder="Integer only"
+            />
+            <DataChannel.ControlRange
+              value={values.value && parseFloat(values.value, 10)}
+              valueMapper={valueMapper}
+              labels={[
+                parseFloat(format.lowerbound, 10),
+                parseFloat(format.upperbound, 10),
+              ]}
+              onChange={e => eventHandler({
+                type: 'change',
+                id,
+                values: { value: e.target.value, period: values.period },
+              })}
+              onSubmit={() => eventHandler({
+                type: 'submit',
+                id,
+                values: { value: values.value, period: values.period },
+              })}
+            />
+          </Wrapper>
+        );
+      }],
       [R.T, name => <div>{name} NOT SUPPORTED.</div>],
     ])(type);
   }

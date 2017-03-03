@@ -400,7 +400,7 @@ exports[`Storyshots DataChannel ControlNumber 1`] = `
     onChange={[Function]}
     placeholder="placeholder"
     type="number"
-    value={undefined}
+    value={10}
   />
   <div
     className="kGGPNo"
@@ -460,7 +460,7 @@ exports[`Storyshots DataChannel ControlPeriod 1`] = `
       onChange={[Function]}
       placeholder="placeholder"
       type="number"
-      value={undefined}
+      value={10}
     />
     <button
       className="fqCsyW"
@@ -475,7 +475,6 @@ exports[`Storyshots DataChannel ControlPeriod 1`] = `
 exports[`Storyshots DataChannel ControlRange - Stateful PPAP 1`] = `
 <div
   className="ciDLcE"
-  onChange={[Function]}
 >
   <div
     className="hWdvxO"
@@ -531,7 +530,9 @@ exports[`Storyshots DataChannel ControlRange - Stateful PPAP 1`] = `
       kind="primary"
       max={2}
       min={0}
-      onChange={undefined}
+      onChange={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
       step={1}
       type="range"
       value={2}
@@ -543,7 +544,6 @@ exports[`Storyshots DataChannel ControlRange - Stateful PPAP 1`] = `
 exports[`Storyshots DataChannel ControlRange - Stateful number 1`] = `
 <div
   className="ciDLcE"
-  onChange={[Function]}
 >
   <div
     className="hxnWDy"
@@ -589,7 +589,9 @@ exports[`Storyshots DataChannel ControlRange - Stateful number 1`] = `
       kind="primary"
       max={95}
       min={33}
-      onChange={undefined}
+      onChange={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
       step={1}
       type="range"
       value={88}
@@ -667,10 +669,12 @@ exports[`Storyshots DataChannel ControlRange 1`] = `
         color="grayBase"
       >
         Current value: 
-        <div
+        <p
           className="eBMqlM"
           color="primary"
-        />
+        >
+          N/A
+        </p>
       </div>
       <input
         className="hdhnFx"
@@ -678,6 +682,8 @@ exports[`Storyshots DataChannel ControlRange 1`] = `
         max={4}
         min={0}
         onChange={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
         step={1}
         type="range"
         value={undefined}
@@ -762,6 +768,8 @@ exports[`Storyshots DataChannel ControlRange 1`] = `
         max={4}
         min={0}
         onChange={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
         step={1}
         type="range"
         value={3}
@@ -816,6 +824,8 @@ exports[`Storyshots DataChannel ControlRange 1`] = `
         max={1}
         min={0}
         onChange={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
         step={1}
         type="range"
         value={0}
@@ -870,6 +880,8 @@ exports[`Storyshots DataChannel ControlRange 1`] = `
         max={100}
         min={0}
         onChange={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
         step={1}
         type="range"
         value={33}
@@ -888,7 +900,7 @@ exports[`Storyshots DataChannel ControlString 1`] = `
     kind="primary"
     onChange={[Function]}
     placeholder="placeholder"
-    value={undefined}
+    value=""
   />
   <div
     className="gkMZXk"
@@ -1962,6 +1974,8 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
             max={1}
             min={0}
             onChange={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
             step={1}
             type="range"
             value={1}
@@ -2219,6 +2233,8 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
             max={1}
             min={0}
             onChange={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
             step={1}
             type="range"
             value={1}
@@ -2407,6 +2423,8 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
             max={100}
             min={1}
             onChange={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
             step={1}
             type="range"
             value={23}
@@ -2612,6 +2630,8 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
               max={100}
               min={1}
               onChange={[Function]}
+              onMouseUp={[Function]}
+              onTouchEnd={[Function]}
               step={1}
               type="range"
               value={1}

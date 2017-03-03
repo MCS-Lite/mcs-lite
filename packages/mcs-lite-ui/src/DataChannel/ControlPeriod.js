@@ -28,9 +28,9 @@ const ControlPeriod = ({ value, onChange, onSubmit, placeholder, ...otherProps }
 
 ControlPeriod.displayName = 'ControlPeriod';
 ControlPeriod.propTypes = {
-  value: PropTypes.number,
-  onChange: PropTypes.func,
-  onSubmit: PropTypes.func,
+  value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
+  onChange: PropTypes.func.isRequired,
+  onSubmit: PropTypes.func.isRequired,
   placeholder: PropTypes.string,
 };
 

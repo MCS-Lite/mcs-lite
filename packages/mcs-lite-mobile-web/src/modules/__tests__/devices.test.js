@@ -24,6 +24,10 @@ describe('devices - 2. Action Creators', () => {
     expect(actions.setDeviceDetail({})).toMatchSnapshot();
   });
 
+  it('should return setDatapoint actions', () => {
+    expect(actions.setDatapoint('deviceId', {})).toMatchSnapshot();
+  });
+
   it('should return clear actions', () => {
     expect(actions.clear()).toMatchSnapshot();
   });
@@ -115,6 +119,26 @@ describe('devices - 4. Reducer', () => {
       type: constants.SET_DEVICE_DETAIL,
       payload: { deviceId: 'deviceId_1' },
     });
+    expect(state).toMatchSnapshot();
+  });
+
+  it('should handle SET_DATAPOINT', () => {
+    const state = reducer(
+      {
+        deviceId_1: {
+          datachannels: [
+            { datachannelId: 'datachannelId', datapoints: null },
+          ],
+        },
+      },
+      {
+        type: constants.SET_DATAPOINT,
+        payload: {
+          deviceId: 'deviceId_1',
+          datapoint: { datachannelId: 'datachannelId', values: { value: 1 }},
+        },
+      },
+    );
     expect(state).toMatchSnapshot();
   });
 

@@ -36,10 +36,10 @@ const ControlNumber = ({ value, onChange, onSubmit, onClear, placeholder, unit, 
 
 ControlNumber.displayName = 'ControlNumber';
 ControlNumber.propTypes = {
-  value: PropTypes.number,
-  onChange: PropTypes.func,
-  onSubmit: PropTypes.func,
-  onClear: PropTypes.func,
+  value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
+  onChange: PropTypes.func.isRequired,
+  onSubmit: PropTypes.func.isRequired,
+  onClear: PropTypes.func.isRequired,
   placeholder: PropTypes.string,
   unit: PropTypes.string,
 };

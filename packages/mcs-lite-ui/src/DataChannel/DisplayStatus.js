@@ -39,7 +39,7 @@ const DisplayStatus = ({ value, labels, ...otherProps }) =>
 
 DisplayStatus.displayName = 'DisplayStatus';
 DisplayStatus.propTypes = {
-  value: PropTypes.number,            // index
+  value: PropTypes.number, // index
   labels: PropTypes.array.isRequired,
 };
 

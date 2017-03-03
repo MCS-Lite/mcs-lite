@@ -75,7 +75,7 @@ storiesOf('DataChannel', module)
 
   .addWithInfo(
     'ControlNumber',
-    '',
+    'React controlled-components.',
     () =>
       <DataChannel.ControlNumber
         onSubmit={action('ControlNumber onSubmit')}
@@ -83,18 +83,20 @@ storiesOf('DataChannel', module)
         onClear={action('ControlNumber onClear')}
         placeholder="placeholder"
         unit="單位：攝氏"
+        value={10}
       />,
     { inline: true },
   )
 
   .addWithInfo(
     'ControlPeriod',
-    '',
+    'React controlled-components.',
     () =>
       <DataChannel.ControlPeriod
         onSubmit={action('ControlPeriod onSubmit')}
         onChange={action('ControlPeriod onChange')}
         placeholder="placeholder"
+        value={10}
       />,
     { inline: true },
   )
@@ -104,25 +106,27 @@ storiesOf('DataChannel', module)
     '<Swtich> component with renamed props.',
     () =>
       <DataChannel.ControlSwitch
+        value={false}
         onSubmit={action('ControlSwitch onSubmit')}
       />,
     { inline: true },
   )
   .addWithInfo(
     'ControlString',
-    '',
+    'React controlled-components.',
     () =>
       <DataChannel.ControlString
         onSubmit={action('ControlString onSubmit')}
         onChange={action('ControlString onChange')}
         onClear={action('ControlString onClear')}
         placeholder="placeholder"
+        value=""
       />,
     { inline: true },
   )
   .addWithInfo(
     'ControlRange',
-    '',
+    'React controlled-components.',
     () => {
       const CATEGORIES = ['AAAAAA', 'BBBBB', 'CCCCC', 'DDDDD', 'EEEEE'];
       const GPIOS = ['Low', 'Heigh'];
@@ -130,11 +134,14 @@ storiesOf('DataChannel', module)
       return (
         <DemoWrapper>
           <DataChannel.ControlRange
+            onChange={action('ControlRange onChange')}
             onSubmit={action('ControlRange onSubmit')}
             labels={['AAAAAA', 'BBBBB', 'CCCCC', 'DDDDD', 'EEEEE']}
+            valueMapper={() => 'N/A'}
           />
 
           <DataChannel.ControlRange
+            onChange={action('ControlRange onChange')}
             onSubmit={action('ControlRange onSubmit')}
             value={3}
             valueMapper={index => CATEGORIES[index]}
@@ -142,6 +149,7 @@ storiesOf('DataChannel', module)
           />
 
           <DataChannel.ControlRange
+            onChange={action('ControlRange onChange')}
             onSubmit={action('ControlRange onSubmit')}
             value={0}
             valueMapper={index => GPIOS[index]}
@@ -149,6 +157,7 @@ storiesOf('DataChannel', module)
           />
 
           <DataChannel.ControlRange
+            onChange={action('ControlRange onChange')}
             onSubmit={action('ControlRange onSubmit')}
             value={33}
             labels={[0, 100]}
@@ -171,6 +180,7 @@ storiesOf('DataChannel', module)
           return (
             <DataChannel.ControlRange
               onChange={this.onChange}
+              onSubmit={action('StatefulControlRange onSubmit')}
               value={this.state.value}
               labels={this.labels}
             />
@@ -194,6 +204,7 @@ storiesOf('DataChannel', module)
           return (
             <DataChannel.ControlRange
               onChange={this.onChange}
+              onSubmit={action('StatefulControlRange onSubmit')}
               value={this.state.value}
               valueMapper={index => this.labels[index]}
               labels={this.labels}
