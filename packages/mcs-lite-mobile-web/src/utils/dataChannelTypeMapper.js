@@ -7,7 +7,7 @@ import R from 'ramda';
  *
  * @author Michael Hsu
  */
-const dataChanneltypeMapper = (name, type) => R.pipe(
+const dataChannelTypeMapper = (name, type) => R.pipe(
   R.cond([
     [R.equals(1), R.always('_CONTROL')],
     [R.equals(2), R.always('_DISPLAY')],
@@ -15,4 +15,4 @@ const dataChanneltypeMapper = (name, type) => R.pipe(
   R.concat(R.toUpper(name)),
 )(type);
 
-export default dataChanneltypeMapper;
+export default dataChannelTypeMapper;
