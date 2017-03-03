@@ -1,5 +1,32 @@
 # MCS Lite Changelog
 
+## Released (2017-03-03)
+
+### Bump Versions
+
+-   mcs-lite-connect@0.1.0
+-   mcs-lite-demo-nextjs@0.1.4
+-   mcs-lite-design@0.1.1
+-   mcs-lite-icon@0.1.3
+-   mcs-lite-mobile-web@0.1.4
+-   mcs-lite-ui@0.1.4
+
+#### :rocket: New Feature
+* `mcs-lite-connect`, `mcs-lite-mobile-web`
+  * [#174](https://github.com/evenchange4/mcs-lite/pull/174) feat(mcs-lite-connect): extract web-socket hoc. ([@evenchange4](https://github.com/evenchange4))
+* `mcs-lite-mobile-web`, `mcs-lite-ui`
+  * [#170](https://github.com/evenchange4/mcs-lite/pull/170) feat(Device/WebSocket): upload datapoint use websocket.. ([@evenchange4](https://github.com/evenchange4))
+
+#### :memo: Documentation
+* `mcs-lite-design`, `mcs-lite-mobile-web`
+  * [#172](https://github.com/evenchange4/mcs-lite/pull/172) chore(logo): update favicon and manifest.json. ([@evenchange4](https://github.com/evenchange4))
+  * [#171](https://github.com/evenchange4/mcs-lite/pull/171) chore(LOGO): add logo images to mcs-lite-design. ([@evenchange4](https://github.com/evenchange4))
+
+#### Committers: 1
+- Michael Hsu ([evenchange4](https://github.com/evenchange4))
+
+----
+
 ## Released (2017-03-01)
 
 ### Bump Versions
