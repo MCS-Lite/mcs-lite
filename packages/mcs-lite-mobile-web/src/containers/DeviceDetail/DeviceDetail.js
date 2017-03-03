@@ -1,11 +1,9 @@
 import React, { PropTypes } from 'react';
-import R from 'ramda';
 import Helmet from 'react-helmet';
 import {
-  PullToRefresh, Overlay, DataChannelCard, DataChannelAdapter,
+  PullToRefresh, Overlay, Menu, DataChannelCard, DataChannelAdapter,
   MobileHeader,
 } from 'mcs-lite-ui';
-import Menu from 'mcs-lite-ui/lib/Menu';
 import IconMoreVert from 'mcs-lite-icon/lib/IconMoreVert';
 import IconArrowLeft from 'mcs-lite-icon/lib/IconArrowLeft';
 import IconFold from 'mcs-lite-icon/lib/IconFold';
@@ -14,15 +12,7 @@ import moment from 'moment';
 import StyledLink from '../../components/StyledLink';
 import { Container, StyledImg, CardWrapper, CardHeaderIcon } from './styled-components';
 import updatePathname from '../../utils/updatePathname';
-
-// (String, 1) => STRING_CONTROL
-const typeMapper = (name, type) => R.pipe(
-  R.cond([
-    [R.equals(1), R.always('_CONTROL')],
-    [R.equals(2), R.always('_DISPLAY')],
-  ]),
-  R.concat(R.toUpper(name)),
-)(type);
+import dataChanneltypeMapper from '../../utils/dataChannelTypeMapper';
 
 class DeviceDetail extends React.Component {
   static propTypes = {
@@ -126,7 +116,7 @@ class DeviceDetail extends React.Component {
                         <DataChannelAdapter
                           dataChannelProps={{
                             id: c.datachannelId,
-                            type: typeMapper(c.channelType.name, c.type),
+                            type: dataChanneltypeMapper(c.channelType.name, c.type),
                             values: c.datapoints.values || {},
                             format: c.format,
                           }}
