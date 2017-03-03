@@ -10,7 +10,7 @@ const ControlSwitch = ({ value, onSubmit, ...otherProps }) =>
 
 ControlSwitch.displayName = 'ControlSwitch';
 ControlSwitch.propTypes = {
-  value: PropTypes.bool,
-  onSubmit: PropTypes.func,
+  value: PropTypes.bool.isRequired,
+  onSubmit: PropTypes.func.isRequired,
 };
 export default ControlSwitch;

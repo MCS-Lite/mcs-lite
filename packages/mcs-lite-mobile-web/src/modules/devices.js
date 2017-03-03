@@ -1,4 +1,5 @@
 import { Observable } from 'rxjs/Observable';
+import R from 'ramda';
 import * as fetchRx from 'mcs-lite-fetch-rx';
 import { actions as uiActions } from './ui';
 import { actions as routingActions } from './routing';
@@ -12,6 +13,7 @@ const FETCH_DEVICE_LIST = 'mcs-lite-mobile-web/devices/FETCH_DEVICE_LIST';
 const FETCH_DEVICE_DETAIL = 'mcs-lite-mobile-web/devices/FETCH_DEVICE_DETAIL';
 const SET_DEVICE_LIST = 'mcs-lite-mobile-web/devices/SET_DEVICE_LIST';
 const SET_DEVICE_DETAIL = 'mcs-lite-mobile-web/devices/SET_DEVICE_DETAIL';
+const SET_DATAPOINT = 'mcs-lite-mobile-web/devices/SET_DATAPOINT';
 const CLEAR = 'mcs-lite-mobile-web/devices/CLEAR';
 
 export const constants = {
@@ -19,6 +21,7 @@ export const constants = {
   FETCH_DEVICE_DETAIL,
   SET_DEVICE_LIST,
   SET_DEVICE_DETAIL,
+  SET_DATAPOINT,
   CLEAR,
 };
 
@@ -30,6 +33,9 @@ const fetchDeviceList = () => ({ type: FETCH_DEVICE_LIST });
 const fetchDeviceDetail = deviceId => ({ type: FETCH_DEVICE_DETAIL, payload: deviceId });
 const setDeviceList = payload => ({ type: SET_DEVICE_LIST, payload });
 const setDeviceDetail = payload => ({ type: SET_DEVICE_DETAIL, payload });
+const setDatapoint = (deviceId, datapoint) =>
+  ({ type: SET_DATAPOINT, payload: { deviceId, datapoint }});
+
 const clear = () => ({ type: CLEAR });
 
 export const actions = {
@@ -37,6 +43,7 @@ export const actions = {
   fetchDeviceDetail,
   setDeviceList,
   setDeviceDetail,
+  setDatapoint,
   clear,
 };
 
@@ -137,6 +144,23 @@ export default function reducer(state = initialState, action = {}) {
           ...action.payload, // detail api
         },
       };
+
+    case SET_DATAPOINT: {
+      // TODO: refactor these codes
+      const { datachannelId, values } = action.payload.datapoint;
+      const dataChannels = state[action.payload.deviceId].datachannels;
+      const index = R.findIndex(R.propEq('datachannelId', datachannelId))(dataChannels);
+      const updateDatapoints = R.assoc('datapoints', { values });
+      const nextDataChannels = R.adjust(updateDatapoints, index)(dataChannels);
+
+      return {
+        ...state,
+        [action.payload.deviceId]: {
+          ...state[action.payload.deviceId], // keep this device old info
+          datachannels: nextDataChannels,
+        },
+      };
+    }
 
     case CLEAR:
       return initialState;

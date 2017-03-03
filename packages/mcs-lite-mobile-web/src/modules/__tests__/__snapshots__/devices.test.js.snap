@@ -3,6 +3,7 @@ Object {
   "CLEAR": "mcs-lite-mobile-web/devices/CLEAR",
   "FETCH_DEVICE_DETAIL": "mcs-lite-mobile-web/devices/FETCH_DEVICE_DETAIL",
   "FETCH_DEVICE_LIST": "mcs-lite-mobile-web/devices/FETCH_DEVICE_LIST",
+  "SET_DATAPOINT": "mcs-lite-mobile-web/devices/SET_DATAPOINT",
   "SET_DEVICE_DETAIL": "mcs-lite-mobile-web/devices/SET_DEVICE_DETAIL",
   "SET_DEVICE_LIST": "mcs-lite-mobile-web/devices/SET_DEVICE_LIST",
 }
@@ -24,6 +25,16 @@ Object {
 exports[`devices - 2. Action Creators should return fetchDeviceList actions 1`] = `
 Object {
   "type": "mcs-lite-mobile-web/devices/FETCH_DEVICE_LIST",
+}
+`;
+
+exports[`devices - 2. Action Creators should return setDatapoint actions 1`] = `
+Object {
+  "payload": Object {
+    "datapoint": Object {},
+    "deviceId": "deviceId",
+  },
+  "type": "mcs-lite-mobile-web/devices/SET_DATAPOINT",
 }
 `;
 
@@ -82,6 +93,23 @@ Array [
 `;
 
 exports[`devices - 4. Reducer should handle CLEAR 1`] = `Object {}`;
+
+exports[`devices - 4. Reducer should handle SET_DATAPOINT 1`] = `
+Object {
+  "deviceId_1": Object {
+    "datachannels": Array [
+      Object {
+        "datachannelId": "datachannelId",
+        "datapoints": Object {
+          "values": Object {
+            "value": 1,
+          },
+        },
+      },
+    ],
+  },
+}
+`;
 
 exports[`devices - 4. Reducer should handle SET_DEVICE_DETAIL 1`] = `
 Object {

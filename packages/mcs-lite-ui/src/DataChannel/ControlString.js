@@ -38,10 +38,10 @@ const ControlString = ({ value, onChange, onSubmit, onClear, placeholder, ...oth
 
 ControlString.displayName = 'ControlString';
 ControlString.propTypes = {
-  value: PropTypes.string,
-  onChange: PropTypes.func,
-  onSubmit: PropTypes.func,
-  onClear: PropTypes.func,
+  value: PropTypes.string.isRequired,
+  onChange: PropTypes.func.isRequired,
+  onSubmit: PropTypes.func.isRequired,
+  onClear: PropTypes.func.isRequired,
   placeholder: PropTypes.string,
 };
 
