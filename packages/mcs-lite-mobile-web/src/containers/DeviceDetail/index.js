@@ -11,14 +11,17 @@ export const mapStateToProps = ({ devices, ui }, { params: { deviceId }}) => ({
   device: devices[deviceId],
   isLoading: ui.isLoading,
 });
-export const mapDispatchToProps = { fetchDeviceDetail: actions.fetchDeviceDetail };
+export const mapDispatchToProps = {
+  fetchDeviceDetail: actions.fetchDeviceDetail,
+  setDatapoint: actions.setDatapoint,
+};
 
 export default compose(
   connect(mapStateToProps, mapDispatchToProps),
   connectMCS(
+    ({ device }) => device && `ws://nb14090119.local:8000/deviceId/${device.deviceId}/deviceKey/${device.deviceKey}`,
+    props => datapoint => props.setDatapoint(props.deviceId, datapoint),
     'sendMessage', // propsName
-    ({ device }) => device && `ws://localhost:8000/deviceId/${device.deviceId}/deviceKey/${device.deviceKey}`,
-    props => e => console.log(props.fetchDeviceDetail, e),
   ),
   withGetMessages(messages, 'DeviceDetail'),
 )(DeviceDetail);

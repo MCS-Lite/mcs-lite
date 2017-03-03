@@ -10,6 +10,7 @@ import IconMoreVert from 'mcs-lite-icon/lib/IconMoreVert';
 import IconArrowLeft from 'mcs-lite-icon/lib/IconArrowLeft';
 import IconFold from 'mcs-lite-icon/lib/IconFold';
 import { Link } from 'react-router';
+import moment from 'moment';
 import StyledLink from '../../components/StyledLink';
 import { Container, StyledImg, CardWrapper, CardHeaderIcon } from './styled-components';
 import updatePathname from '../../utils/updatePathname';
@@ -30,7 +31,7 @@ class DeviceDetail extends React.Component {
     isLoading: PropTypes.bool.isRequired,
     getMessages: PropTypes.func.isRequired,
     fetchDeviceDetail: PropTypes.func.isRequired,
-    sendMessage: PropTypes.func.isRequired,
+    sendMessage: PropTypes.func,
   }
   static defaultProps = {
     device: {},
@@ -42,7 +43,17 @@ class DeviceDetail extends React.Component {
   getTarget = node => this.setState({ target: node });
   fetch = () => this.props.fetchDeviceDetail(this.props.deviceId);
   eventHandler = (e) => {
-    this.props.sendMessage(JSON.stringify(e));
+    // TODO: refactor these codes.
+    const datapoint = { datachannelId: e.id, values: e.values };
+    switch (e.type) {
+      case 'submit':
+        // Remind: MUST upload the datapoint via WebSocket.
+        this.props.sendMessage(JSON.stringify(datapoint));
+        break;
+      default:
+        // Remind: Just change the state.
+        this.props.setDatapoint(this.props.deviceId, datapoint);
+    }
   }
   render() {
     const { isMenuShow, target } = this.state;
@@ -110,13 +121,13 @@ class DeviceDetail extends React.Component {
                           </StyledLink>
                         }
                         title={c.datachannelName}
-                        subtitle={new Date(c.createdAt).toString()}
+                        subtitle={moment(c.createdAt).format('YYYY-MM-DD HH:mm')}
                       >
                         <DataChannelAdapter
                           dataChannelProps={{
                             id: c.datachannelId,
                             type: typeMapper(c.channelType.name, c.type),
-                            values: { value: 0 },
+                            values: c.datapoints.values || {},
                             format: c.format,
                           }}
                           eventHandler={eventHandler}

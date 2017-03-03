@@ -55,7 +55,7 @@ const InputWrapper = styled.div`
   padding: 0 ${props => `${props.labels.length <= 2 ? 0 : (100 / props.labels.length / 2) - 3}%`};
 `;
 
-const ControlRange = ({ value, onSubmit, labels, valueMapper, ...otherProps }) => {
+const ControlRange = ({ value, onChange, onSubmit, labels, valueMapper, ...otherProps }) => {
   const min = isNumber(labels[0]) ? labels[0] : 0;
   const max = isNumber(labels[1]) ? labels[1] : labels.length - 1;
 
@@ -69,7 +69,15 @@ const ControlRange = ({ value, onSubmit, labels, valueMapper, ...otherProps }) =
         <ValueWrapper color="grayBase">Current value:&nbsp;
           <Value color="primary">{valueMapper(value)}</Value>
         </ValueWrapper>
-        <InputRange min={min} max={max} step={1} value={value} onChange={onSubmit} />
+        <InputRange
+          min={min}
+          max={max}
+          step={1}
+          value={value}
+          onChange={onChange}
+          onMouseUp={onSubmit}  // for desktop
+          onTouchEnd={onSubmit} // for mobile
+        />
       </InputWrapper>
     </Container>
   );
@@ -77,8 +85,9 @@ const ControlRange = ({ value, onSubmit, labels, valueMapper, ...otherProps }) =
 
 ControlRange.displayName = 'ControlRange';
 ControlRange.propTypes = {
-  value: PropTypes.number,     // index of labels
-  onSubmit: PropTypes.func,
+  value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]), // index of labels
+  onChange: PropTypes.func.isRequired,
+  onSubmit: PropTypes.func.isRequired,
   valueMapper: PropTypes.func, // index: number => value: string
   labels: PropTypes.array.isRequired,
 };

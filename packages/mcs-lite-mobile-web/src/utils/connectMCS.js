@@ -6,14 +6,14 @@ import { w3cwebsocket as W3CWebSocket } from 'websocket';
 
 /**
  * connectMCS
- *   propsName: string
  *   urlMapper => props => string
  *   onMessage => props => e => void
+ *   sendPropsName: string
  *
  * @author Michael Hsu
  */
 
-const connectMCS = (propsName, urlMapper, onMessage) => BaseComponent =>
+const connectMCS = (urlMapper, onMessage, sendPropsName) => BaseComponent =>
   class ConnectMCS extends React.Component {
     state = { exposeSenderFunction: null };
     componentWillMount = () => this.createWebSocket();
@@ -29,7 +29,10 @@ const connectMCS = (propsName, urlMapper, onMessage) => BaseComponent =>
         this.viewer.onopen = data => console.info('viewer onopen', data);
         this.viewer.onerror = error => console.info('viewer onerror', error);
         this.viewer.onclose = data => console.info('viewer onclose', data);
-        this.viewer.onmessage = e => onMessage(this.props)(e); // Remind: Handle receieve messages.
+        this.viewer.onmessage = (payload) => {
+          const data = JSON.parse(payload.data);
+          onMessage(this.props)(data); // Remind: Handle receieve messages.
+        };
       }
 
       if (!this.sender) {
@@ -51,7 +54,7 @@ const connectMCS = (propsName, urlMapper, onMessage) => BaseComponent =>
     render() {
       return React.createElement(BaseComponent, {
         ...this.props,
-        [propsName]: this.state.exposeSenderFunction,
+        [sendPropsName]: this.state.exposeSenderFunction,
       });
     }
   };
