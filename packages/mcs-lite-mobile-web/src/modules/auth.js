@@ -90,10 +90,10 @@ const signoutEpic = action$ =>
   action$
     .ofType(SIGNOUT)
     .switchMap(requireConfirm)
-    .switchMap(() => Observable.merge(
-      Observable.of(routingActions.pushPathname('/signin')),
-      Observable.of(clear()),
-      Observable.of(devicesActions.clear()),
+    .switchMap(() => Observable.of(
+      routingActions.pushPathname('/signin'),
+      clear(),
+      devicesActions.clear(),
     ))
     .do(() => cookie.remove('token', { path: '/' }));
 
