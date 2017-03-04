@@ -38,7 +38,7 @@ export const actions = {
 // 3. Epic (Async, side effect)
 // ----------------------------------------------------------------------------
 
-const DELAY = 1500;
+const DELAY = 2500;
 
 const addToastEpic = action$ =>
   action$

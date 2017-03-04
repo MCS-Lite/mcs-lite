@@ -1,0 +1,8 @@
+exports[`test should invoke remove with correct arguments 1`] = `
+Object {
+  "key": "token",
+  "options": Object {
+    "path": "/",
+  },
+}
+`;

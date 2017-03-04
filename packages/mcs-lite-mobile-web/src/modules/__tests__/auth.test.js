@@ -17,7 +17,7 @@ describe('auth - 2. Action Creators', () => {
   });
 
   it('should return signout actions', () => {
-    expect(actions.signout('payload')).toMatchSnapshot();
+    expect(actions.signout('payload', false)).toMatchSnapshot();
   });
 
   it('should return setUserInfo actions', () => {
