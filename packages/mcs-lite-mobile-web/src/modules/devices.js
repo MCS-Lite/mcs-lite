@@ -35,7 +35,6 @@ const setDeviceList = payload => ({ type: SET_DEVICE_LIST, payload });
 const setDeviceDetail = payload => ({ type: SET_DEVICE_DETAIL, payload });
 const setDatapoint = (deviceId, datapoint) =>
   ({ type: SET_DATAPOINT, payload: { deviceId, datapoint }});
-
 const clear = () => ({ type: CLEAR });
 
 export const actions = {
