@@ -2,11 +2,12 @@
 /* eslint no-alert: 0 */
 
 import { Observable } from 'rxjs/Observable';
+import R from 'ramda';
 import * as fetchRx from 'mcs-lite-fetch-rx';
-import cookie from 'react-cookie';
 import { actions as routingActions } from './routing';
 import { actions as devicesActions } from './devices';
 import { actions as uiActions } from './ui';
+import { getCookieToken, removeCookieToken } from '../utils/cookieHelper';
 
 // ----------------------------------------------------------------------------
 // 1. Constants
@@ -34,7 +35,7 @@ export const constants = {
 
 const requireAuth = () => ({ type: REQUIRE_AUTH });
 const tryEnter = () => ({ type: TRY_ENTER });
-const signout = message => ({ type: SIGNOUT, payload: message });
+const signout = (message, isForce) => ({ type: SIGNOUT, payload: { message, isForce }});
 const setUserInfo = payload => ({ type: SET_USERINFO, payload });
 const changePassword = ({ password, message }) =>
   ({ type: CHANGE_PASSWORD, payload: { password, message }});
@@ -61,7 +62,8 @@ export const actions = {
  */
 
 const requireConfirm = (action) => {
-  if (window.confirm(action.payload)) {
+  const { message, isForce } = action.payload;
+  if (isForce || window.confirm(message)) {
     return Observable.of(action);
   }
   return Observable.empty();
@@ -70,21 +72,26 @@ const requireConfirm = (action) => {
 const requireAuthEpic = action$ =>
   action$
     .ofType(REQUIRE_AUTH)
-    .map(() => cookie.load('token'))
-    .switchMap(cookieToken => Observable.from(fetchRx.fetchUserInfo(cookieToken)))
-    .map(setUserInfo)
-    .catch((data) => {
-      // TODO: toast ?
-      console.error(data); // eslint-disable-line
-      return Observable.of(routingActions.pushPathname('/signin'));
-    });
+    .map(getCookieToken)
+    .switchMap(cookieToken =>
+      Observable
+        .from(fetchRx.fetchUserInfo(cookieToken))
+        .map(setUserInfo)
+        .catch(error => Observable.of(
+          uiActions.addToast({
+            kind: 'error',
+            children: R.is(String, error) ? error : error.message,
+          }),
+          signout('', true),
+        )),
+    );
 
 const tryEnterEpic = action$ =>
   action$
     .ofType(TRY_ENTER)
-    .map(() => cookie.load('token'))
-    .filter(token => !!token)
-    .map(() => routingActions.pushPathname('/'));
+    .map(getCookieToken) // Remind: DO NOT use mapTo or you will get old cookie object.
+    .filter(cookieToken => !!cookieToken) // Hint: Go to devices list if cookieToken avaliable
+    .mapTo(routingActions.pushPathname('/'));
 
 const signoutEpic = action$ =>
   action$
@@ -95,7 +102,7 @@ const signoutEpic = action$ =>
       clear(),
       devicesActions.clear(),
     ))
-    .do(() => cookie.remove('token', { path: '/' }));
+    .do(removeCookieToken);
 
 const changePasswordEpic = (action$, store) =>
   action$
