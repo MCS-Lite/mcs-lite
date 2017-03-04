@@ -7,7 +7,7 @@ import * as fetchRx from 'mcs-lite-fetch-rx';
 import { actions as routingActions } from './routing';
 import { actions as devicesActions } from './devices';
 import { actions as uiActions } from './ui';
-import { getCookieToken, removeCookieToken } from '../utils/cookieHelper';
+import cookieHelper from '../utils/cookieHelper';
 
 // ----------------------------------------------------------------------------
 // 1. Constants
@@ -72,7 +72,7 @@ const requireConfirm = (action) => {
 const requireAuthEpic = action$ =>
   action$
     .ofType(REQUIRE_AUTH)
-    .map(getCookieToken)
+    .map(cookieHelper.getCookieToken)
     .switchMap(cookieToken =>
       Observable
         .from(fetchRx.fetchUserInfo(cookieToken))
@@ -89,7 +89,7 @@ const requireAuthEpic = action$ =>
 const tryEnterEpic = action$ =>
   action$
     .ofType(TRY_ENTER)
-    .map(getCookieToken) // Remind: DO NOT use mapTo or you will get old cookie object.
+    .map(cookieHelper.getCookieToken)
     .filter(cookieToken => !!cookieToken) // Hint: Go to devices list if cookieToken avaliable
     .mapTo(routingActions.pushPathname('/'));
 
@@ -102,7 +102,7 @@ const signoutEpic = action$ =>
       clear(),
       devicesActions.clear(),
     ))
-    .do(removeCookieToken);
+    .do(cookieHelper.removeCookieToken);
 
 const changePasswordEpic = (action$, store) =>
   action$
