@@ -48,8 +48,7 @@ function addToastCycle(sources) {
   const action$ = key$
     .concatMap(key => Observable
       .of(removeToast(key))
-      .let(sources.Time.delay(DELAY))
-      // .delay(DELAY),
+      .let(sources.Time.delay(DELAY)),
     );
 
   return {

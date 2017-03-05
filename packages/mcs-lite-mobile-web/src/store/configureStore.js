@@ -44,6 +44,7 @@ const configureStore = (initialState, history) => {
 
   /**
    * redux-cycles
+   * Remind: MUST create sotre first.
    */
   run(main, {
     ACTION: makeActionDriver(),

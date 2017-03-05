@@ -1,9 +1,6 @@
 import { Observable } from 'rxjs/Observable';
 import R from 'ramda';
-// import * as fetchRx from 'mcs-lite-fetch-rx';
 import { actions as uiActions } from './ui';
-import { actions as routingActions } from './routing';
-import { constants as authConstants } from './auth';
 
 // ----------------------------------------------------------------------------
 // 1. Constants
@@ -50,40 +47,6 @@ export const actions = {
 // 3. Cycle (Side-effects)
 // ----------------------------------------------------------------------------
 
-/**
- * delayWhenTokenAvailable - require access_token
- * @return {Observable} original action$
- *
- * @author Michael Hsu
- */
-
-// const delayWhenTokenAvailable = (action$, store) => action =>
-//   store.getState().auth.access_token
-//     ? Observable.of(action)
-//     : Observable.of(action)
-//       .delayWhen(() => action$.ofType(authConstants.SET_USERINFO))
-//       .timeout(3000);
-
-// const fetchDeviceListEpic = (action$, store) =>
-//   action$.ofType(FETCH_DEVICE_LIST)
-//     .switchMap(delayWhenTokenAvailable(action$, store))
-//     .map(() => store.getState())
-//     .pluck('auth', 'access_token')
-//     .switchMap(accessToken => Observable
-//       .from(fetchRx.fetchDeviceList(accessToken))
-//       .map(setDeviceList)
-//       .startWith(uiActions.setLoading())
-//       .catch((data) => {
-//         // TODO: refresh token ?
-//         console.error(data); // eslint-disable-line
-//         return Observable.of(routingActions.pushPathname('/signin'));
-//       }),
-//     )
-//     .catch(error => Observable.of(uiActions.addToast({
-//       kind: 'error',
-//       children: error.message,
-//     })));
-
 function fetchDeviceListCycle(sources) {
   const accessToken$ = sources.STATE
     .pluck('auth', 'access_token')
@@ -92,7 +55,7 @@ function fetchDeviceListCycle(sources) {
 
   const request$ = sources.ACTION
     .filter(action => action.type === FETCH_DEVICE_LIST)
-    .combineLatest(accessToken$)
+    .combineLatest(accessToken$) // Hint: will wait for accessToken avaliable.
     .map(([, accessToken]) => ({
       url: '/api/devices',
       method: 'GET',
@@ -116,25 +79,6 @@ function fetchDeviceListCycle(sources) {
     HTTP: request$,
   };
 }
-
-// const fetchDeviceDetailEpic = (action$, store) =>
-//   action$.ofType(FETCH_DEVICE_DETAIL)
-//     .switchMap(delayWhenTokenAvailable(action$, store))
-//     .pluck('payload')
-//     .switchMap(deviceId => Observable
-//       .from(fetchRx.fetchDeviceDetail({ deviceId }, store.getState().auth.access_token))
-//       .map(setDeviceDetail)
-//       .startWith(uiActions.setLoading())
-//       .catch((data) => {
-//         // TODO: refresh token ?
-//         console.error(data); // eslint-disable-line
-//         return Observable.of(routingActions.pushPathname('/signin'));
-//       }),
-//     )
-//     .catch(error => Observable.of(uiActions.addToast({
-//       kind: 'error',
-//       children: error.message,
-//     })));
 
 function fetchDeviceDetailCycle(sources) {
   const accessToken$ = sources.STATE
