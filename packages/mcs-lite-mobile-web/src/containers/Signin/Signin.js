@@ -1,6 +1,5 @@
 import React, { PropTypes } from 'react';
 import { Button, Input } from 'mcs-lite-ui';
-import { Signin as SIGNIN_URL } from 'mcs-lite-fetch-rx';
 import Helmet from 'react-helmet';
 import Logo from '../../components/Logo';
 import { StyledHr, Layout, Form } from './styled-components';
@@ -25,7 +24,7 @@ class Signin extends React.Component {
         <Logo />
         <StyledHr>{t('welcome')}</StyledHr>
 
-        <Form method="post" action={SIGNIN_URL}>
+        <Form method="post" action="/oauth/login/mobile">
           <Input
             type="email"
             name="email"

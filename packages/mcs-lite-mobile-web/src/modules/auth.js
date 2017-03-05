@@ -166,7 +166,6 @@ function authErrorCycle(sources) {
   const errorMessage$ = sources.HTTP
     .select() // TODO: should I use .select('user') ?
     .switch()
-    .do(console.log)
     .pluck('ok')
     .filter(R.not)
     .catch(({ response }) => Observable.of(response.body.message));
