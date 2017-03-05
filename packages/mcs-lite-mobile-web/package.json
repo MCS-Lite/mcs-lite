@@ -67,7 +67,6 @@
     "redux-cycles": "^0.4.0",
     "redux-freeze": "^0.1.5",
     "redux-mock-store": "^1.2.2",
-    "redux-observable": "^0.14.0",
     "rxjs": "^5.2.0",
     "styled-components": "^1.4.4",
     "uuid": "^3.0.1"
