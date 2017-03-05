@@ -20,40 +20,6 @@ Object {
 }
 `;
 
-exports[`routing - 3. Epic should return correct actions when pushLocaleEpic 1`] = `
-Array [
-  Object {
-    "payload": Object {
-      "args": Array [
-        Object {
-          "query": Object {
-            "locale": "en",
-          },
-        },
-      ],
-      "method": "push",
-    },
-    "type": "@@router/CALL_HISTORY_METHOD",
-  },
-]
-`;
-
-exports[`routing - 3. Epic should return correct actions when pushPathnameEpic 1`] = `
-Array [
-  Object {
-    "payload": Object {
-      "args": Array [
-        Object {
-          "pathname": "/signin",
-        },
-      ],
-      "method": "push",
-    },
-    "type": "@@router/CALL_HISTORY_METHOD",
-  },
-]
-`;
-
 exports[`routing - 4. Reducer should handle LOCATION_CHANGE 1`] = `
 Object {
   "locationBeforeTransitions": Object {

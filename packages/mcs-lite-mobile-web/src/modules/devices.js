@@ -1,6 +1,6 @@
 import { Observable } from 'rxjs/Observable';
 import R from 'ramda';
-import * as fetchRx from 'mcs-lite-fetch-rx';
+// import * as fetchRx from 'mcs-lite-fetch-rx';
 import { actions as uiActions } from './ui';
 import { actions as routingActions } from './routing';
 import { constants as authConstants } from './auth';
@@ -47,7 +47,7 @@ export const actions = {
 };
 
 // ----------------------------------------------------------------------------
-// 3. Epic (Async, side effect)
+// 3. Cycle (Side-effects)
 // ----------------------------------------------------------------------------
 
 /**
@@ -57,69 +57,128 @@ export const actions = {
  * @author Michael Hsu
  */
 
-const delayWhenTokenAvailable = (action$, store) => action =>
-  store.getState().auth.access_token
-    ? Observable.of(action)
-    : Observable.of(action)
-      .delayWhen(() => action$.ofType(authConstants.SET_USERINFO))
-      .timeout(3000);
+// const delayWhenTokenAvailable = (action$, store) => action =>
+//   store.getState().auth.access_token
+//     ? Observable.of(action)
+//     : Observable.of(action)
+//       .delayWhen(() => action$.ofType(authConstants.SET_USERINFO))
+//       .timeout(3000);
 
-const fetchDeviceListEpic = (action$, store) =>
-  action$.ofType(FETCH_DEVICE_LIST)
-    .switchMap(delayWhenTokenAvailable(action$, store))
-    .map(() => store.getState())
+// const fetchDeviceListEpic = (action$, store) =>
+//   action$.ofType(FETCH_DEVICE_LIST)
+//     .switchMap(delayWhenTokenAvailable(action$, store))
+//     .map(() => store.getState())
+//     .pluck('auth', 'access_token')
+//     .switchMap(accessToken => Observable
+//       .from(fetchRx.fetchDeviceList(accessToken))
+//       .map(setDeviceList)
+//       .startWith(uiActions.setLoading())
+//       .catch((data) => {
+//         // TODO: refresh token ?
+//         console.error(data); // eslint-disable-line
+//         return Observable.of(routingActions.pushPathname('/signin'));
+//       }),
+//     )
+//     .catch(error => Observable.of(uiActions.addToast({
+//       kind: 'error',
+//       children: error.message,
+//     })));
+
+function fetchDeviceListCycle(sources) {
+  const accessToken$ = sources.STATE
     .pluck('auth', 'access_token')
-    .switchMap(accessToken => Observable
-      .from(fetchRx.fetchDeviceList(accessToken))
-      .map(setDeviceList)
-      .startWith(uiActions.setLoading())
-      .catch((data) => {
-        // TODO: refresh token ?
-        console.error(data); // eslint-disable-line
-        return Observable.of(routingActions.pushPathname('/signin'));
-      }),
-    )
-    .catch(error => Observable.of(uiActions.addToast({
-      kind: 'error',
-      children: error.message,
-    })));
+    .filter(d => !!d)
+    .distinctUntilChanged();
 
-const setDeviceListEpic = action$ =>
-  action$.ofType(SET_DEVICE_LIST)
-    .mapTo(uiActions.setLoaded());
+  const request$ = sources.ACTION
+    .filter(action => action.type === FETCH_DEVICE_LIST)
+    .combineLatest(accessToken$)
+    .map(([, accessToken]) => ({
+      url: '/api/devices',
+      method: 'GET',
+      headers: { Authorization: `Bearer ${accessToken}` },
+      category: 'devices',
+    }));
 
-const fetchDeviceDetailEpic = (action$, store) =>
-  action$.ofType(FETCH_DEVICE_DETAIL)
-    .switchMap(delayWhenTokenAvailable(action$, store))
-    .pluck('payload')
-    .switchMap(deviceId => Observable
-      .from(fetchRx.fetchDeviceDetail({ deviceId }, store.getState().auth.access_token))
-      .map(setDeviceDetail)
-      .startWith(uiActions.setLoading())
-      .catch((data) => {
-        // TODO: refresh token ?
-        console.error(data); // eslint-disable-line
-        return Observable.of(routingActions.pushPathname('/signin'));
-      }),
-    )
-    .catch(error => Observable.of(uiActions.addToast({
-      kind: 'error',
-      children: error.message,
-    })));
+  const response$ = sources.HTTP
+    .select('devices')
+    .switch();
 
-const setDeviceDetailEpic = action$ =>
-  action$.ofType(SET_DEVICE_DETAIL)
-    .mapTo(uiActions.setLoaded());
+  const action$ = Observable.from([
+    request$.mapTo(uiActions.setLoading()),
+    response$.pluck('body', 'data').map(setDeviceList),
+    response$.mapTo(uiActions.setLoaded()),
+  ])
+  .mergeAll();
 
-export const epics = {
-  fetchDeviceListEpic,
-  fetchDeviceDetailEpic,
-  setDeviceListEpic,
-  setDeviceDetailEpic,
+  return {
+    ACTION: action$,
+    HTTP: request$,
+  };
+}
+
+// const fetchDeviceDetailEpic = (action$, store) =>
+//   action$.ofType(FETCH_DEVICE_DETAIL)
+//     .switchMap(delayWhenTokenAvailable(action$, store))
+//     .pluck('payload')
+//     .switchMap(deviceId => Observable
+//       .from(fetchRx.fetchDeviceDetail({ deviceId }, store.getState().auth.access_token))
+//       .map(setDeviceDetail)
+//       .startWith(uiActions.setLoading())
+//       .catch((data) => {
+//         // TODO: refresh token ?
+//         console.error(data); // eslint-disable-line
+//         return Observable.of(routingActions.pushPathname('/signin'));
+//       }),
+//     )
+//     .catch(error => Observable.of(uiActions.addToast({
+//       kind: 'error',
+//       children: error.message,
+//     })));
+
+function fetchDeviceDetailCycle(sources) {
+  const accessToken$ = sources.STATE
+    .pluck('auth', 'access_token')
+    .filter(d => !!d)
+    .distinctUntilChanged();
+
+  const deviceId$ = sources.ACTION
+    .filter(action => action.type === FETCH_DEVICE_DETAIL)
+    .pluck('payload');
+
+  const request$ = deviceId$
+    .combineLatest(accessToken$)
+    .map(([deviceId, accessToken]) => ({
+      url: `/api/devices/${deviceId}`,
+      method: 'GET',
+      headers: { Authorization: `Bearer ${accessToken}` },
+      category: 'deviceDetail',
+    }));
+
+  const response$ = sources.HTTP
+    .select('deviceDetail')
+    .switch();
+
+  const action$ = Observable.from([
+    request$.mapTo(uiActions.setLoading()),
+    response$.pluck('body', 'data').map(setDeviceDetail),
+    response$.mapTo(uiActions.setLoaded()),
+  ])
+  .mergeAll();
+
+  return {
+    ACTION: action$,
+    HTTP: request$,
+  };
+}
+
+export const cycles = {
+  fetchDeviceListCycle,
+  fetchDeviceDetailCycle,
 };
 
 // ----------------------------------------------------------------------------
-// 4. Reducer as default (state shaper)
+// 4. Reducer as default (State shaper)
 // ----------------------------------------------------------------------------
 
 const initialState = {}; // Remind: indexBy deviceId

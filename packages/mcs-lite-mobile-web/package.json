@@ -26,6 +26,9 @@
     "prepublish": "rm -rf ./build/static/*/*.map"
   },
   "devDependencies": {
+    "@cycle/http": "^12.0.0",
+    "@cycle/rxjs-run": "^4.1.0",
+    "@cycle/time": "^0.7.2",
     "babel-eslint": "^7.1.1",
     "date-fp": "^4.4.8",
     "dotenv": "^4.0.0",
@@ -62,6 +65,7 @@
     "react-text-truncate": "^0.8.3",
     "recompose": "^0.22.0",
     "redux": "^3.6.0",
+    "redux-cycles": "^0.4.0",
     "redux-freeze": "^0.1.5",
     "redux-mock-store": "^1.2.2",
     "redux-observable": "^0.14.0",

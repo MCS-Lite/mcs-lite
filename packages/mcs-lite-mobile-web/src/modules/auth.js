@@ -2,8 +2,8 @@
 /* eslint no-alert: 0 */
 
 import { Observable } from 'rxjs/Observable';
-import R from 'ramda';
-import * as fetchRx from 'mcs-lite-fetch-rx';
+// import R from 'ramda';
+// import * as fetchRx from 'mcs-lite-fetch-rx';
 import { actions as routingActions } from './routing';
 import { actions as devicesActions } from './devices';
 import { actions as uiActions } from './ui';
@@ -51,7 +51,7 @@ export const actions = {
 };
 
 // ----------------------------------------------------------------------------
-// 3. Epic (Async, side effect)
+// 3. Cycle (Side-effects)
 // ----------------------------------------------------------------------------
 
 /**
@@ -69,34 +69,88 @@ const requireConfirm = (action) => {
   return Observable.empty();
 };
 
-const requireAuthEpic = action$ =>
-  action$
-    .ofType(REQUIRE_AUTH)
-    .map(cookieHelper.getCookieToken)
-    .switchMap(cookieToken =>
-      Observable
-        .from(fetchRx.fetchUserInfo(cookieToken))
-        .map(setUserInfo)
-        .catch(error => Observable.of(
-          uiActions.addToast({
-            kind: 'error',
-            children: R.is(String, error) ? error : error.message,
-          }),
-          signout('', true),
-        )),
-    );
+// const requireAuthEpic = action$ =>
+//   action$
+//     .ofType(REQUIRE_AUTH)
+//     .map(cookieHelper.getCookieToken)
+//     .switchMap(cookieToken =>
+//       Observable
+//         .from(fetchRx.fetchUserInfo(cookieToken))
+//         .map(setUserInfo)
+//         .catch(error => Observable.of(
+//           uiActions.addToast({
+//             kind: 'error',
+//             children: R.is(String, error) ? error : error.message,
+//           }),
+//           signout('', true),
+//         )),
+//     );
 
-const tryEnterEpic = action$ =>
-  action$
-    .ofType(TRY_ENTER)
-    .map(cookieHelper.getCookieToken)
+function requireAuthCycle(sources) {
+  const cookieToken$ = sources.ACTION
+    .filter(action => action.type === REQUIRE_AUTH)
+    .map(cookieHelper.getCookieToken);
+
+  const request$ = cookieToken$
+    .map(cookieToken => ({
+      url: '/oauth/cookies/mobile',
+      method: 'POST',
+      send: { token: cookieToken },
+      category: 'user',
+    }));
+
+  const response$ = sources.HTTP
+    .select('user')
+    .switch();
+
+  const action$ = response$
+    .pluck('body', 'results')
+    .map(setUserInfo);
+
+  return {
+    ACTION: action$,
+    HTTP: request$,
+  };
+}
+
+// const tryEnterEpic = action$ =>
+//   action$
+//     .ofType(TRY_ENTER)
+//     .map(cookieHelper.getCookieToken)
+//     .filter(cookieToken => !!cookieToken) // Hint: Go to devices list if cookieToken avaliable
+//     .mapTo(routingActions.pushPathname('/'));
+
+function tryEnterCycle(sources) {
+  const cookieToken$ = sources.ACTION
+    .filter(action => action.type === TRY_ENTER)
+    .map(cookieHelper.getCookieToken);
+
+  const action$ = cookieToken$
     .filter(cookieToken => !!cookieToken) // Hint: Go to devices list if cookieToken avaliable
     .mapTo(routingActions.pushPathname('/'));
 
-const signoutEpic = action$ =>
-  action$
-    .ofType(SIGNOUT)
-    .switchMap(requireConfirm)
+  return {
+    ACTION: action$,
+  };
+}
+
+// const signoutEpic = action$ =>
+//   action$
+//     .ofType(SIGNOUT)
+//     .switchMap(requireConfirm)
+//     .switchMap(() => Observable.of(
+//       routingActions.pushPathname('/signin'),
+//       clear(),
+//       devicesActions.clear(),
+//     ))
+//     .do(cookieHelper.removeCookieToken);
+
+function signoutCycle(sources) {
+  const confirm$ = sources.ACTION
+    .filter(action => action.type === SIGNOUT)
+    .switchMap(requireConfirm);
+
+  const action$ = confirm$
     .switchMap(() => Observable.of(
       routingActions.pushPathname('/signin'),
       clear(),
@@ -104,27 +158,71 @@ const signoutEpic = action$ =>
     ))
     .do(cookieHelper.removeCookieToken);
 
-const changePasswordEpic = (action$, store) =>
-  action$
-    .ofType(CHANGE_PASSWORD)
-    .pluck('payload')
-    .switchMap(({ password, message }) => Observable
-      .from(fetchRx.changePassword({ password }, store.getState().auth.access_token))
-      .mapTo(uiActions.addToast({
-        kind: 'success',
-        children: message,
-      }))
-      .catch(error => Observable.of(uiActions.addToast({
-        kind: 'error',
-        children: error.error_description,
-      }))),
-    );
+  return {
+    ACTION: action$,
+  };
+}
 
-export const epics = {
-  requireAuthEpic,
-  tryEnterEpic,
-  signoutEpic,
-  changePasswordEpic,
+// const changePasswordEpic = (action$, store) =>
+//   action$
+//     .ofType(CHANGE_PASSWORD)
+//     .pluck('payload')
+//     .switchMap(({ password, message }) => Observable
+//       .from(fetchRx.changePassword({ password }, store.getState().auth.access_token))
+//       .mapTo(uiActions.addToast({
+//         kind: 'success',
+//         children: message,
+//       }))
+//       .catch(error => Observable.of(uiActions.addToast({
+//         kind: 'error',
+//         children: error.error_description,
+//       }))),
+//     );
+
+function changePasswordCycle(sources) {
+  const accessToken$ = sources.STATE
+    .pluck('auth', 'access_token')
+    .filter(d => !!d)
+    .distinctUntilChanged();
+
+  const payload$ = sources.ACTION
+    .filter(action => action.type === CHANGE_PASSWORD)
+    .pluck('payload');
+  const password$ = payload$.pluck('password');
+  const message$ = payload$.pluck('message');
+
+  const request$ = password$
+    .withLatestFrom(accessToken$)
+    .map(([password, accessToken]) => ({
+      url: '/api/users/changepassword',
+      method: 'PUT',
+      headers: { Authorization: `Bearer ${accessToken}` },
+      send: { password },
+      category: 'changePassword',
+    }));
+
+  const response$ = sources.HTTP
+    .select('changePassword')
+    .switch();
+
+  const action$ = response$
+    .withLatestFrom(message$)
+    .map(([, message]) => uiActions.addToast({
+      kind: 'success',
+      children: message,
+    }));
+
+  return {
+    ACTION: action$,
+    HTTP: request$,
+  };
+}
+
+export const cycles = {
+  requireAuthCycle,
+  tryEnterCycle,
+  signoutCycle,
+  changePasswordCycle,
 };
 
 // ----------------------------------------------------------------------------

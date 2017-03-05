@@ -54,45 +54,6 @@ Object {
 }
 `;
 
-exports[`auth - 3. Epic should return correct actions when changePassword 1`] = `
-Array [
-  Object {
-    "payload": Object {
-      "children": "message",
-      "key": "mockUuid()",
-      "kind": "success",
-    },
-    "type": "mcs-lite-mobile-web/ui/ADD_TOAST",
-  },
-]
-`;
-
-exports[`auth - 3. Epic should return correct actions when requireAuthEpic 1`] = `
-Array [
-  Object {
-    "payload": "response",
-    "type": "mcs-lite-mobile-web/auth/SET_USERINFO",
-  },
-]
-`;
-
-exports[`auth - 3. Epic should return correct actions when signoutEpic 1`] = `
-Array [
-  Object {
-    "payload": "/signin",
-    "type": "mcs-lite-mobile-web/routing/PUSH_PATHNAME",
-  },
-  Object {
-    "type": "mcs-lite-mobile-web/auth/CLEAR",
-  },
-  Object {
-    "type": "mcs-lite-mobile-web/devices/CLEAR",
-  },
-]
-`;
-
-exports[`auth - 3. Epic should return correct actions when tryEnterEpic without cookie 1`] = `Array []`;
-
 exports[`devices - 4. Reducer should handle CLEAR 1`] = `Object {}`;
 
 exports[`devices - 4. Reducer should handle SET_USERINFO 1`] = `

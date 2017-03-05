@@ -1,16 +1,16 @@
-import { combineEpics } from 'redux-observable';
+import { combineCycles } from 'redux-cycles';
 import { combineReducers } from 'redux';
 import R from 'ramda';
-import routing, { epics as routingEpics } from './routing';
-import devices, { epics as devicesEpics } from './devices';
-import auth, { epics as authEpics } from './auth';
-import ui, { epics as uiEpics } from './ui';
+import routing, { cycles as routingCycles } from './routing';
+import devices, { cycles as devicesCycles } from './devices';
+import auth, { cycles as authCycles } from './auth';
+import ui, { cycles as uiCycles } from './ui';
 
-export const epic = combineEpics(
-  ...R.values(routingEpics),
-  ...R.values(devicesEpics),
-  ...R.values(authEpics),
-  ...R.values(uiEpics),
+export const cycle = combineCycles(
+  ...R.values(routingCycles),
+  ...R.values(authCycles),
+  ...R.values(devicesCycles),
+  ...R.values(uiCycles),
 );
 
 export const reducer = combineReducers({

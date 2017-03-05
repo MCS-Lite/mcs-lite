@@ -1,5 +1,5 @@
-import { ActionsObservable } from 'redux-observable';
-import reducer, { constants, actions, epics } from '../ui';
+import reducer, { constants, actions, cycles } from '../ui';
+import { assertSourcesSinks } from '../../utils/helpers';
 
 describe('ui - 1. Constants', () => {
   it('should return constants', () => {
@@ -25,15 +25,29 @@ describe('ui - 2. Action Creators', () => {
   });
 });
 
-describe('ui - 3. Epic', () => {
-  it('should return correct actions when addToastEpic', () => {
-    const action$ = ActionsObservable.of(actions.addToast({ key: 'key' }));
-    const store = null;
+describe('ui - 3. Cycle', () => {
+  it('should emit correct Sinks given Sources with addToastCycle', (done) => {
+    const actionSource = {
+      a: actions.addToast({}),
+      b: actions.addToast({}),
+    };
 
-    // TODO: test for delay operator ??
-    epics.addToastEpic(action$, store)
-      .toArray()
-      .subscribe(action => expect(action).toMatchSnapshot());
+    const actionSink = {
+      x: actions.removeToast('mockUuid()'),
+      y: actions.removeToast('mockUuid()'),
+    };
+
+    assertSourcesSinks(
+      { ACTION: { '-a-b--|': actionSource }},
+      { ACTION: { '---x-y|': actionSink }},
+      cycles.addToastCycle, () => {}, { interval: 1250 },
+    );
+
+    assertSourcesSinks(
+      { ACTION: { '-a-----b--|': actionSource }},
+      { ACTION: { '---x-----y|': actionSink }},
+      cycles.addToastCycle, done, { interval: 1250 },
+    );
   });
 });
 

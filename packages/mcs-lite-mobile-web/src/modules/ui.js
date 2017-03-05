@@ -35,25 +35,34 @@ export const actions = {
 };
 
 // ----------------------------------------------------------------------------
-// 3. Epic (Async, side effect)
+// 3. Cycle (Side-effects)
 // ----------------------------------------------------------------------------
 
 const DELAY = 2500;
 
-const addToastEpic = action$ =>
-  action$
-    .ofType(ADD_TOAST)
-    .concatMap(({ payload }) => Observable
-      .of(removeToast(payload.key))
-      .delay(DELAY),
+function addToastCycle(sources) {
+  const key$ = sources.ACTION
+    .filter(action => action.type === ADD_TOAST)
+    .pluck('payload', 'key');
+
+  const action$ = key$
+    .concatMap(key => Observable
+      .of(removeToast(key))
+      .let(sources.Time.delay(DELAY))
+      // .delay(DELAY),
     );
 
-export const epics = {
-  addToastEpic,
+  return {
+    ACTION: action$,
+  };
+}
+
+export const cycles = {
+  addToastCycle,
 };
 
 // ----------------------------------------------------------------------------
-// 4. Reducer as default (state shaper)
+// 4. Reducer as default (State shaper)
 // ----------------------------------------------------------------------------
 
 const initialState = {
