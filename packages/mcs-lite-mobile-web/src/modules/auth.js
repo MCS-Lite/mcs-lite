@@ -164,8 +164,9 @@ function changePasswordCycle(sources) {
 
 function authErrorCycle(sources) {
   const errorMessage$ = sources.HTTP
-    .select('user')
+    .select() // TODO: should I use .select('user') ?
     .switch()
+    .do(console.log)
     .pluck('ok')
     .filter(R.not)
     .catch(({ response }) => Observable.of(response.body.message));
@@ -180,7 +181,6 @@ function authErrorCycle(sources) {
     ACTION: action$,
   };
 }
-
 
 export const cycles = {
   requireAuthCycle,

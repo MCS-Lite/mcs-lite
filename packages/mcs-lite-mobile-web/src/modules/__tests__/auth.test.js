@@ -148,6 +148,28 @@ describe('auth - 3. Cycle', () => {
       ACTION: { '----x---|': actionSink },
     }, cycles.changePasswordCycle, done);
   });
+
+  it('should emit correct Sinks given Sources with authErrorCycle', (done) => {
+    const httpSource = {
+      select: () => ({
+        r: Observable.throw({ ok: false, response: { body: { message: 'errorMessage' }}}),
+      }),
+    };
+
+    const actionSink = {
+      x: uiActions.addToast({
+        kind: 'error',
+        children: 'errorMessage',
+      }),
+      y: actions.signout('', true),
+    };
+
+    assertSourcesSinks(
+      { HTTP:   { 'r---|': httpSource }},
+      { ACTION: { '(xy|)': actionSink }},
+      cycles.authErrorCycle, done,
+    );
+  });
 });
 
 describe('devices - 4. Reducer', () => {
