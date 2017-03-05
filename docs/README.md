@@ -16,7 +16,7 @@
 -   [react-helmet](https://github.com/nfl/react-helmet)
 -   [react-motion](https://github.com/chenglou/react-motion)
 -   [redux](https://github.com/reactjs/redux)
--   [redux-observable](https://github.com/redux-observable/redux-observable)
+-   [redux-cycles](https://github.com/cyclejs-community/redux-cycles)
 -   [styled-components](https://github.com/styled-components/styled-components)
 -   [react-storybook](https://github.com/storybooks/react-storybook)
 -   [react-intl](https://github.com/yahoo/react-intl)
