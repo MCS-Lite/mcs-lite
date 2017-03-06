@@ -3,7 +3,6 @@
 
 import { Observable } from 'rxjs/Observable';
 import R from 'ramda';
-import * as fetchRx from 'mcs-lite-fetch-rx';
 import { actions as routingActions } from './routing';
 import { actions as devicesActions } from './devices';
 import { actions as uiActions } from './ui';
@@ -51,52 +50,66 @@ export const actions = {
 };
 
 // ----------------------------------------------------------------------------
-// 3. Epic (Async, side effect)
+// 3. Cycle (Side-effects)
 // ----------------------------------------------------------------------------
 
-/**
- * requireConfirm
- * @return {Observable} original action$ or empty()
- *
- * @author Michael Hsu
- */
+function requireAuthCycle(sources) {
+  const cookieToken$ = sources.ACTION
+    .filter(action => action.type === REQUIRE_AUTH)
+    .map(cookieHelper.getCookieToken);
 
-const requireConfirm = (action) => {
-  const { message, isForce } = action.payload;
-  if (isForce || window.confirm(message)) {
-    return Observable.of(action);
-  }
-  return Observable.empty();
-};
+  const request$ = cookieToken$
+    .map(cookieToken => ({
+      url: '/oauth/cookies/mobile',
+      method: 'POST',
+      send: { token: cookieToken },
+      category: 'user',
+    }));
 
-const requireAuthEpic = action$ =>
-  action$
-    .ofType(REQUIRE_AUTH)
-    .map(cookieHelper.getCookieToken)
-    .switchMap(cookieToken =>
-      Observable
-        .from(fetchRx.fetchUserInfo(cookieToken))
-        .map(setUserInfo)
-        .catch(error => Observable.of(
-          uiActions.addToast({
-            kind: 'error',
-            children: R.is(String, error) ? error : error.message,
-          }),
-          signout('', true),
-        )),
-    );
+  const response$ = sources.HTTP
+    .select('user')
+    .switch();
 
-const tryEnterEpic = action$ =>
-  action$
-    .ofType(TRY_ENTER)
-    .map(cookieHelper.getCookieToken)
+  const action$ = response$
+    .pluck('body', 'results')
+    .map(setUserInfo)
+    .catch((error) => {
+      console.error({ error }); // eslint-disable-line
+      return Observable.empty();
+    });
+
+  return {
+    ACTION: action$,
+    HTTP: request$,
+  };
+}
+
+function tryEnterCycle(sources) {
+  const cookieToken$ = sources.ACTION
+    .filter(action => action.type === TRY_ENTER)
+    .map(cookieHelper.getCookieToken);
+
+  const action$ = cookieToken$
     .filter(cookieToken => !!cookieToken) // Hint: Go to devices list if cookieToken avaliable
     .mapTo(routingActions.pushPathname('/'));
 
-const signoutEpic = action$ =>
-  action$
-    .ofType(SIGNOUT)
-    .switchMap(requireConfirm)
+  return {
+    ACTION: action$,
+  };
+}
+
+function signoutCycle(sources) {
+  const confirm$ = sources.ACTION
+    .filter(action => action.type === SIGNOUT)
+    .switchMap((action) => {
+      const { message, isForce } = action.payload;
+      if (isForce || window.confirm(message)) {
+        return Observable.of(action);
+      }
+      return Observable.empty();
+    });
+
+  const action$ = confirm$
     .switchMap(() => Observable.of(
       routingActions.pushPathname('/signin'),
       clear(),
@@ -104,31 +117,80 @@ const signoutEpic = action$ =>
     ))
     .do(cookieHelper.removeCookieToken);
 
-const changePasswordEpic = (action$, store) =>
-  action$
-    .ofType(CHANGE_PASSWORD)
-    .pluck('payload')
-    .switchMap(({ password, message }) => Observable
-      .from(fetchRx.changePassword({ password }, store.getState().auth.access_token))
-      .mapTo(uiActions.addToast({
-        kind: 'success',
-        children: message,
-      }))
-      .catch(error => Observable.of(uiActions.addToast({
-        kind: 'error',
-        children: error.error_description,
-      }))),
-    );
+  return {
+    ACTION: action$,
+  };
+}
 
-export const epics = {
-  requireAuthEpic,
-  tryEnterEpic,
-  signoutEpic,
-  changePasswordEpic,
+function changePasswordCycle(sources) {
+  const accessToken$ = sources.STATE
+    .pluck('auth', 'access_token')
+    .filter(d => !!d)
+    .distinctUntilChanged();
+
+  const payload$ = sources.ACTION
+    .filter(action => action.type === CHANGE_PASSWORD)
+    .pluck('payload');
+
+  const password$ = payload$.pluck('password');
+  const message$ = payload$.pluck('message');
+
+  const request$ = password$
+    .withLatestFrom(accessToken$)
+    .map(([password, accessToken]) => ({
+      url: '/api/users/changepassword',
+      method: 'PUT',
+      headers: { Authorization: `Bearer ${accessToken}` },
+      send: { password },
+      category: 'changePassword',
+    }));
+
+  const response$ = sources.HTTP
+    .select('changePassword')
+    .switch();
+
+  const action$ = response$
+    .withLatestFrom(message$)
+    .map(([, message]) => uiActions.addToast({
+      kind: 'success',
+      children: message,
+    }));
+
+  return {
+    ACTION: action$,
+    HTTP: request$,
+  };
+}
+
+function authErrorCycle(sources) {
+  const errorMessage$ = sources.HTTP
+    .select() // TODO: should I use .select('user') ?
+    .switch()
+    .pluck('ok')
+    .filter(R.not)
+    .catch(({ response }) => Observable.of(response.body.message));
+
+  const action$ = errorMessage$
+    .concatMap(message => Observable.of(
+      uiActions.addToast({ kind: 'error', children: message }),
+      signout('', true), // Remind: Force signout
+    ));
+
+  return {
+    ACTION: action$,
+  };
+}
+
+export const cycles = {
+  requireAuthCycle,
+  tryEnterCycle,
+  signoutCycle,
+  changePasswordCycle,
+  authErrorCycle,
 };
 
 // ----------------------------------------------------------------------------
-// 4. Reducer as default (state shaper)
+// 4. Reducer as default (State shaper)
 // ----------------------------------------------------------------------------
 
 const initialState = {};

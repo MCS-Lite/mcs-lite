@@ -5,6 +5,7 @@ import 'rxjs/add/observable/from';
 import 'rxjs/add/observable/fromPromise';
 import 'rxjs/add/observable/throw';
 import 'rxjs/add/observable/empty';
+import 'rxjs/add/observable/combineLatest';
 
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/mapTo';
@@ -20,3 +21,10 @@ import 'rxjs/add/operator/delayWhen';
 import 'rxjs/add/operator/toArray';
 import 'rxjs/add/operator/startWith';
 import 'rxjs/add/operator/timeout';
+import 'rxjs/add/operator/withLatestFrom';
+import 'rxjs/add/operator/combineLatest';
+import 'rxjs/add/operator/let';
+import 'rxjs/add/operator/distinctUntilChanged';
+import 'rxjs/add/operator/switch';
+import 'rxjs/add/operator/mergeAll';
+import 'rxjs/add/operator/distinctUntilKeyChanged';

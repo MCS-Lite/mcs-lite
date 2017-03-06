@@ -1,5 +1,11 @@
-import { ActionsObservable } from 'redux-observable';
-import reducer, { constants, actions, epics } from '../auth';
+/* eslint key-spacing: 0 */
+
+import { Observable } from 'rxjs/Observable';
+import reducer, { constants, actions, cycles } from '../auth';
+import { actions as routingActions } from '../routing';
+import { actions as devicesActions } from '../devices';
+import { actions as uiActions } from '../ui';
+import { assertSourcesSinks } from '../../utils/helpers';
 
 describe('auth - 1. Constants', () => {
   it('should return constants', () => {
@@ -33,51 +39,136 @@ describe('auth - 2. Action Creators', () => {
   });
 });
 
-jest.mock('mcs-lite-fetch-rx', () => ({
-  fetchUserInfo: () => ['response'],
-  changePassword: () => ['response'],
+jest.mock('../../utils/cookieHelper', () => ({
+  getCookieToken: () => 'fakeCookieToken5',
+  removeCookieToken: () => {},
 }));
 
-describe('auth - 3. Epic', () => {
-  it('should return correct actions when requireAuthEpic', () => {
-    const action$ = ActionsObservable.of(actions.requireAuth());
-    const store = null;
-
-    epics.requireAuthEpic(action$, store)
-      .toArray()
-      .subscribe(action => expect(action).toMatchSnapshot());
-  });
-
-  it('should return correct actions when tryEnterEpic without cookie', () => {
-    const action$ = ActionsObservable.of(actions.tryEnter());
-    const store = null;
-
-    epics.tryEnterEpic(action$, store)
-      .toArray()
-      .subscribe(action => expect(action).toMatchSnapshot());
-  });
-
-  it('should return correct actions when signoutEpic', () => {
-    const action$ = ActionsObservable.of(actions.signout());
-    const store = null;
-
-    epics.signoutEpic(action$, store)
-      .toArray()
-      .subscribe(action => expect(action).toMatchSnapshot());
-  });
-
-  it('should return correct actions when changePassword', () => {
-    const payload = { key: 'key', password: 'password', message: 'message' };
-    const action$ = ActionsObservable.of(actions.changePassword(payload));
-    const store = {
-      getState: () => ({
-        auth: { access_token: 123 },
+describe('auth - 3. Cycle', () => {
+  it('should emit correct Sinks given Sources with requireAuthCycle', (done) => {
+    const actionSource = {
+      a: actions.requireAuth(),
+    };
+    const httpSource = {
+      select: () => ({
+        r: Observable.of({ body: { results: { a: 'a' }}}),
       }),
     };
 
-    epics.changePasswordEpic(action$, store)
-      .toArray()
-      .subscribe(action => expect(action).toMatchSnapshot());
+    const actionSink = {
+      x: actions.setUserInfo({ a: 'a' }),
+    };
+    const httpSink = {
+      r: {
+        url: '/oauth/cookies/mobile',
+        method: 'POST',
+        send: { token: 'fakeCookieToken5' },
+        category: 'user',
+      },
+    };
+
+    assertSourcesSinks({
+      ACTION: { 'a----|': actionSource },
+      HTTP:   { '----r|': httpSource },
+    }, {
+      HTTP:   { 'r----|': httpSink },
+      ACTION: { '----x|': actionSink },
+    }, cycles.requireAuthCycle, done);
+  });
+
+  it('should emit correct Sinks given Sources with tryEnterCycle', (done) => {
+    const actionSource = {
+      a: actions.tryEnter(),
+    };
+
+    const actionSink = {
+      x: routingActions.pushPathname('/'),
+    };
+
+    assertSourcesSinks({
+      ACTION: { 'a|': actionSource },
+    }, {
+      ACTION: { 'x|': actionSink },
+    }, cycles.tryEnterCycle, done);
+  });
+
+  it('should emit correct Sinks given Sources with signoutCycle', (done) => {
+    const actionSource = {
+      a: actions.signout(),
+    };
+
+    const actionSink = {
+      x: routingActions.pushPathname('/signin'),
+      y: actions.clear(),
+      z: devicesActions.clear(),
+    };
+
+    assertSourcesSinks({
+      ACTION: { 'a----|': actionSource },
+    }, {
+      ACTION: { '(xyz)|': actionSink },
+    }, cycles.signoutCycle, done);
+  });
+
+  it('should emit correct Sinks given Sources with changePasswordCycle', (done) => {
+    const stateSource = {
+      s: { auth: { access_token: 'faketoken456' }},
+    };
+    const actionSource = {
+      a: actions.changePassword({ password: '12332331', message: 'succesMessage' }),
+    };
+    const httpSource = {
+      select: () => ({
+        r: Observable.of({}),
+      }),
+    };
+
+    const actionSink = {
+      x: uiActions.addToast({
+        kind: 'success',
+        children: 'succesMessage',
+      }),
+    };
+    const httpSink = {
+      r: {
+        url: '/api/users/changepassword',
+        method: 'PUT',
+        headers: { Authorization: 'Bearer faketoken456' },
+        send: { password: '12332331' },
+        category: 'changePassword',
+      },
+    };
+
+    assertSourcesSinks({
+      STATE:  { 's-------|': stateSource },
+      ACTION: { 'a-------|': actionSource },
+      HTTP:   { '----r---|': httpSource },
+    }, {
+      HTTP:   { 'r-------|': httpSink },
+      ACTION: { '----x---|': actionSink },
+    }, cycles.changePasswordCycle, done);
+  });
+
+  it('should emit correct Sinks given Sources with authErrorCycle', (done) => {
+    const httpSource = {
+      select: () => ({
+        r: Observable.throw({ ok: false, response: { body: { message: 'errorMessage' }}}),
+      }),
+    };
+
+    const actionSink = {
+      x: uiActions.addToast({
+        kind: 'error',
+        children: 'errorMessage',
+      }),
+      y: actions.signout('', true),
+    };
+
+    assertSourcesSinks(
+      { HTTP:   { 'r---|': httpSource }},
+      { ACTION: { '(xy|)': actionSink }},
+      cycles.authErrorCycle, done,
+    );
   });
 });
 

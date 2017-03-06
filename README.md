@@ -36,10 +36,6 @@
 [mcs-lite-design-npm]: https://www.npmjs.org/package/mcs-lite-design
 [mcs-lite-design-npm-downloads]: https://img.shields.io/npm/dt/mcs-lite-design.svg?style=flat-square
 
-[mcs-lite-fetch-rx-npm-badge]: https://img.shields.io/npm/v/mcs-lite-fetch-rx.svg?style=flat-square
-[mcs-lite-fetch-rx-npm]: https://www.npmjs.org/package/mcs-lite-fetch-rx
-[mcs-lite-fetch-rx-npm-downloads]: https://img.shields.io/npm/dt/mcs-lite-fetch-rx.svg?style=flat-square
-
 [mcs-lite-icon-npm-badge]: https://img.shields.io/npm/v/mcs-lite-icon.svg?style=flat-square
 [mcs-lite-icon-npm]: https://www.npmjs.org/package/mcs-lite-icon
 [mcs-lite-icon-npm-downloads]: https://img.shields.io/npm/dt/mcs-lite-icon.svg?style=flat-square
@@ -79,7 +75,6 @@
 | `mcs-lite-connect` | Connect MCS with WebSocket | [![npm][mcs-lite-connect-npm-badge]][mcs-lite-connect-npm] | [![npm downloads][mcs-lite-connect-npm-downloads]][mcs-lite-connect-npm]
 | `mcs-lite-demo-nextjs` | Demo how to use mcs-lite-ui. | | |
 | `mcs-lite-design` | The source images to be compressed used by MCS Lite | [![npm][mcs-lite-design-npm-badge]][mcs-lite-design-npm] | [![npm downloads][mcs-lite-design-npm-downloads]][mcs-lite-design-npm]
-| `mcs-lite-fetch-rx` | The Client api with stream creator for MCS Lite | [![npm][mcs-lite-fetch-rx-npm-badge]][mcs-lite-fetch-rx-npm] | [![npm downloads][mcs-lite-fetch-rx-npm-downloads]][mcs-lite-fetch-rx-npm]
 | `mcs-lite-icon` | Convert SVG icon to React components | [![npm][mcs-lite-icon-npm-badge]][mcs-lite-icon-npm] | [![npm downloads][mcs-lite-icon-npm-downloads]][mcs-lite-icon-npm]
 | `mcs-lite-mobile-web` | MCS Lite Mobile Web | [![npm][mcs-lite-mobile-web-npm-badge]][mcs-lite-mobile-web-npm] | [![npm downloads][mcs-lite-mobile-web-npm-downloads]][mcs-lite-mobile-web-npm]
 | `mcs-lite-scripts` | Shared scripts and CLI used by MCS Lite | [![npm][mcs-lite-scripts-npm-badge]][mcs-lite-scripts-npm] | [![npm downloads][mcs-lite-scripts-npm-downloads]][mcs-lite-scripts-npm]
@@ -143,7 +138,6 @@ $ npm run test:watch
 | `mcs-lite-connect`          | V     |      |       | V     |               |           |
 | `mcs-lite-demo-nextjs`      |       |      | V     |       |               |           |
 | `mcs-lite-design`           | V     |      |       | V     |               |           |
-| `mcs-lite-fetch-rx`         | V     |      |       | V     |               |           |
 | `mcs-lite-icon`             | V     |      |       | V     |               |           |
 | `mcs-lite-mobile-web`       | V     | V    | V     | V     |               |           |
 | `mcs-lite-scripts`          | V     |      |       | V     |               |           |

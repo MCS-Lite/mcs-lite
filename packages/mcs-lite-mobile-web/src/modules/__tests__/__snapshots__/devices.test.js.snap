@@ -52,46 +52,6 @@ Object {
 }
 `;
 
-exports[`devices - 3. Epic should return correct actions when fetchDeviceDetailEpic 1`] = `
-Array [
-  Object {
-    "type": "mcs-lite-mobile-web/ui/SET_LOADING",
-  },
-  Object {
-    "payload": "response",
-    "type": "mcs-lite-mobile-web/devices/SET_DEVICE_DETAIL",
-  },
-]
-`;
-
-exports[`devices - 3. Epic should return correct actions when fetchDeviceListEpic 1`] = `
-Array [
-  Object {
-    "type": "mcs-lite-mobile-web/ui/SET_LOADING",
-  },
-  Object {
-    "payload": "response",
-    "type": "mcs-lite-mobile-web/devices/SET_DEVICE_LIST",
-  },
-]
-`;
-
-exports[`devices - 3. Epic should return correct actions when setDeviceDetailEpic 1`] = `
-Array [
-  Object {
-    "type": "mcs-lite-mobile-web/ui/SET_LOADED",
-  },
-]
-`;
-
-exports[`devices - 3. Epic should return correct actions when setDeviceListEpic 1`] = `
-Array [
-  Object {
-    "type": "mcs-lite-mobile-web/ui/SET_LOADED",
-  },
-]
-`;
-
 exports[`devices - 4. Reducer should handle CLEAR 1`] = `Object {}`;
 
 exports[`devices - 4. Reducer should handle SET_DATAPOINT 1`] = `

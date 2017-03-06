@@ -1,5 +1,9 @@
-import { ActionsObservable } from 'redux-observable';
-import reducer, { constants, actions, epics } from '../devices';
+/* eslint key-spacing: 0 */
+
+import { Observable } from 'rxjs/Observable';
+import reducer, { constants, actions, cycles } from '../devices';
+import { actions as uiActions } from '../ui';
+import { assertSourcesSinks } from '../../utils/helpers';
 
 describe('devices - 1. Constants', () => {
   it('should return constants', () => {
@@ -33,68 +37,79 @@ describe('devices - 2. Action Creators', () => {
   });
 });
 
-jest.mock('mcs-lite-fetch-rx', () => ({
-  fetchDeviceList: () => ['response'],
-  fetchDeviceDetail: () => ['response'],
-}));
-
-describe('devices - 3. Epic', () => {
-  it('should return correct actions when setDeviceListEpic', () => {
-    const action$ = ActionsObservable.of(actions.setDeviceList());
-    const store = null;
-
-    epics.setDeviceListEpic(action$, store)
-      .toArray()
-      .subscribe(action => expect(action).toMatchSnapshot());
-  });
-
-  it('should return correct actions when setDeviceDetailEpic', () => {
-    const action$ = ActionsObservable.of(actions.setDeviceDetail());
-    const store = null;
-
-    epics.setDeviceDetailEpic(action$, store)
-      .toArray()
-      .subscribe(action => expect(action).toMatchSnapshot());
-  });
-
-  it('should return correct actions when fetchDeviceListEpic', () => {
-    const action$ = ActionsObservable.of(actions.fetchDeviceList());
-    const store = {
-      getState: () => ({
-        auth: { access_token: 123 },
+describe('devices - 3. Cycle', () => {
+  it('should emit correct Sinks given Sources with fetchDeviceListCycle', (done) => {
+    const stateSource = {
+      s: { auth: { access_token: 'faketoken123' }},
+    };
+    const actionSource = {
+      a: actions.fetchDeviceList(),
+    };
+    const httpSource = {
+      select: () => ({
+        r: Observable.of({ body: { data: { a: 'a' }}}),
       }),
     };
 
-    epics.fetchDeviceListEpic(action$, store)
-      .toArray()
-      .subscribe(action => expect(action).toMatchSnapshot());
+    const actionSink = {
+      x: uiActions.setLoading(),
+      y: actions.setDeviceList({ a: 'a' }),
+      z: uiActions.setLoaded(),
+    };
+    const httpSink = {
+      r: {
+        url: '/api/devices',
+        method: 'GET',
+        headers: { Authorization: 'Bearer faketoken123' },
+        category: 'devices',
+      },
+    };
+
+    assertSourcesSinks({
+      STATE:  { 's-------|': stateSource },
+      ACTION: { 'a-------|': actionSource },
+      HTTP:   { '----r---|': httpSource },
+    }, {
+      HTTP:   { 'r-------|': httpSink },
+      ACTION: { 'x---(yz)|': actionSink },
+    }, cycles.fetchDeviceListCycle, done);
   });
 
-
-  it('should return correct actions when fetchDeviceListEpic without access_token', () => {
-    const action$ = ActionsObservable.of(actions.fetchDeviceList());
-    const store = {
-      getState: () => ({
-        auth: {},
+  it('should emit correct Sinks given Sources with fetchDeviceDetailCycle', (done) => {
+    const stateSource = {
+      s: { auth: { access_token: 'faketoken456' }},
+    };
+    const actionSource = {
+      a: actions.fetchDeviceDetail('fakedeviceid123'),
+    };
+    const httpSource = {
+      select: () => ({
+        r: Observable.of({ body: { data: { b: 'b' }}}),
       }),
     };
 
-    epics.fetchDeviceListEpic(action$, store)
-      .toArray()
-      .subscribe(action => expect(action).toMatchSnapshot());
-  });
-
-  it('should return correct actions when fetchDeviceDetailEpic', () => {
-    const action$ = ActionsObservable.of(actions.fetchDeviceDetail('deviceId'));
-    const store = {
-      getState: () => ({
-        auth: { access_token: 123 },
-      }),
+    const actionSink = {
+      x: uiActions.setLoading(),
+      y: actions.setDeviceDetail({ b: 'b' }),
+      z: uiActions.setLoaded(),
+    };
+    const httpSink = {
+      r: {
+        url: '/api/devices/fakedeviceid123',
+        method: 'GET',
+        headers: { Authorization: 'Bearer faketoken456' },
+        category: 'deviceDetail',
+      },
     };
 
-    epics.fetchDeviceDetailEpic(action$, store)
-      .toArray()
-      .subscribe(action => expect(action).toMatchSnapshot());
+    assertSourcesSinks({
+      STATE:  { 's-------|': stateSource },
+      ACTION: { 'a-------|': actionSource },
+      HTTP:   { '----r---|': httpSource },
+    }, {
+      HTTP:   { 'r-------|': httpSink },
+      ACTION: { 'x---(yz)|': actionSink },
+    }, cycles.fetchDeviceDetailCycle, done);
   });
 });
 

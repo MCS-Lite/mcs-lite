@@ -2,9 +2,12 @@
 /* eslint no-underscore-dangle: 0 */
 
 import { createStore, applyMiddleware, compose } from 'redux';
-import { createEpicMiddleware } from 'redux-observable';
+import { run } from '@cycle/rxjs-run';
+import { createCycleMiddleware } from 'redux-cycles';
+import { makeHTTPDriver } from '@cycle/http';
+import { timeDriver } from '@cycle/time';
 import { routerMiddleware } from 'react-router-redux';
-import { reducer, epic } from '../modules';
+import { reducer, cycle as main } from '../modules';
 
 /**
  * Compose with Redux devtool
@@ -17,8 +20,11 @@ const composeEnhancers =
     window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ : compose;
 
 const configureStore = (initialState, history) => {
+  const cycleMiddleware = createCycleMiddleware();
+  const { makeActionDriver, makeStateDriver } = cycleMiddleware;
+
   const middlewares = [
-    createEpicMiddleware(epic),
+    cycleMiddleware,
     routerMiddleware(history),
   ];
 
@@ -30,11 +36,24 @@ const configureStore = (initialState, history) => {
     middlewares.push(require('redux-freeze'));
   }
 
-  return createStore(
+  const store = createStore(
     reducer,
     initialState,
     composeEnhancers(applyMiddleware(...middlewares)),
   );
+
+  /**
+   * redux-cycles
+   * Remind: MUST create sotre first.
+   */
+  run(main, {
+    ACTION: makeActionDriver(),
+    STATE: makeStateDriver(),
+    Time: timeDriver,
+    HTTP: makeHTTPDriver(),
+  });
+
+  return store;
 };
 
 export default configureStore;

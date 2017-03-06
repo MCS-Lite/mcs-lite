@@ -28,34 +28,56 @@ export const actions = {
 };
 
 // ----------------------------------------------------------------------------
-// 3. Epic (Async, side effect)
+// 3. Cycle (Side-effects)
 // ----------------------------------------------------------------------------
 
-const pushPathnameEpic = (action$, store) =>
-  action$
-    .ofType(PUSH_PATHNAME)
-    .map(({ payload }) => R.pipe(
-      R.path(['routing', 'locationBeforeTransitions']),
-      R.assocPath(['pathname'], payload),
-      push,
-    )(store.getState()));
+function pushPathnameCycle(sources) {
+  const location$ = sources.STATE
+    .pluck('routing', 'locationBeforeTransitions')
+    .filter(d => !!d)
+    .distinctUntilKeyChanged('pathname');
 
-const pushLocaleEpic = (action$, store) =>
-  action$
-    .ofType(PUSH_LOCALE)
-    .map(({ payload }) => R.pipe(
-      R.path(['routing', 'locationBeforeTransitions']),
-      R.assocPath(['query', 'locale'], payload),
-      push,
-    )(store.getState()));
+  const pathname$ = sources.ACTION
+    .filter(action => action.type === PUSH_PATHNAME)
+    .pluck('payload');
 
-export const epics = {
-  pushPathnameEpic,
-  pushLocaleEpic,
+  const action$ = pathname$
+    .combineLatest(location$)
+    .map(([pathname, location]) => R.assocPath(['pathname'], pathname)(location))
+    .map(location => push(location));
+
+  return {
+    ACTION: action$,
+  };
+}
+
+function pushLocaleCycle(sources) {
+  const location$ = sources.STATE
+    .pluck('routing', 'locationBeforeTransitions')
+    .filter(d => !!d)
+    .distinctUntilKeyChanged('pathname');
+
+  const locale$ = sources.ACTION
+    .filter(action => action.type === PUSH_LOCALE)
+    .pluck('payload');
+
+  const action$ = locale$
+    .combineLatest(location$)
+    .map(([locale, location]) => R.assocPath(['query', 'locale'], locale)(location))
+    .map(location => push(location));
+
+  return {
+    ACTION: action$,
+  };
+}
+
+export const cycles = {
+  pushPathnameCycle,
+  pushLocaleCycle,
 };
 
 // ----------------------------------------------------------------------------
-// 4. Reducer as default (state shaper)
+// 4. Reducer as default (State shaper)
 // ----------------------------------------------------------------------------
 
 const initialState = {

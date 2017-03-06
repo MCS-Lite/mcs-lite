@@ -1,5 +1,8 @@
-import { ActionsObservable } from 'redux-observable';
-import reducer, { constants, actions, epics } from '../routing';
+/* eslint key-spacing: 0 */
+
+import { push } from 'react-router-redux';
+import reducer, { constants, actions, cycles } from '../routing';
+import { assertSourcesSinks } from '../../utils/helpers';
 
 describe('routing - 1. Constants', () => {
   it('should return constants', () => {
@@ -17,31 +20,52 @@ describe('routing - 2. Action Creators', () => {
   });
 });
 
-describe('routing - 3. Epic', () => {
-  it('should return correct actions when pushPathnameEpic', () => {
-    const action$ = ActionsObservable.of(actions.pushPathname('/signin'));
-    const store = {
-      getState: () => ({
-        routing: { locationBeforeTransitions: {}},
-      }),
+describe('ui - 3. Cycle', () => {
+  it('should emit correct Sinks given Sources with pushPathnameCycle', (done) => {
+    const stateSource = {
+      s: { routing: { locationBeforeTransitions: { pathname: '/' }}},
+    };
+    const actionSource = {
+      a: actions.pushPathname('/fakepath/123'),
     };
 
-    epics.pushPathnameEpic(action$, store)
-      .toArray()
-      .subscribe(action => expect(action).toMatchSnapshot());
+    const actionSink = {
+      x: push({ pathname: '/fakepath/123' }),
+    };
+
+    assertSourcesSinks(
+      {
+        STATE:  { 's|': stateSource },
+        ACTION: { 'a|': actionSource },
+      },
+      { ACTION: { 'x|': actionSink }},
+      cycles.pushPathnameCycle, done,
+    );
   });
 
-  it('should return correct actions when pushLocaleEpic', () => {
-    const action$ = ActionsObservable.of(actions.pushLocale('en'));
-    const store = {
-      getState: () => ({
-        routing: { locationBeforeTransitions: {}},
-      }),
+  it('should emit correct Sinks given Sources with pushLocaleCycle', (done) => {
+    const stateSource = {
+      s: { routing: { locationBeforeTransitions: {
+        pathname: '/',
+        query: {},
+      }}},
+    };
+    const actionSource = {
+      a: actions.pushLocale('zh-TW'),
     };
 
-    epics.pushLocaleEpic(action$, store)
-      .toArray()
-      .subscribe(action => expect(action).toMatchSnapshot());
+    const actionSink = {
+      x: push({ pathname: '/', query: { locale: 'zh-TW' }}),
+    };
+
+    assertSourcesSinks(
+      {
+        STATE:  { 's|': stateSource },
+        ACTION: { 'a|': actionSource },
+      },
+      { ACTION: { 'x|': actionSink }},
+      cycles.pushLocaleCycle, done,
+    );
   });
 });
 
