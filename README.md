@@ -183,17 +183,9 @@ $ license-checker --csv --out docs/licenses.csv
 
 ---
 
-## CONTRIBUTING
-
-* ⇄ Pull requests and ★ Stars are always welcome.
-* For bugs and feature requests, please create an issue.
-* Pull requests must be accompanied by passing automated tests.
-
+## [CONTRIBUTING](CONTRIBUTING.md)
 ## [CHANGELOG](CHANGELOG.md)
-
 ## [LICENSE](LICENSE)
-
-TBD
 
 ## Team
 

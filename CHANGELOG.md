@@ -1,4 +1,4 @@
-# MCS Lite Changelog
+# MCS Lite changelogs
 
 ## Released (2017-03-03)
 
