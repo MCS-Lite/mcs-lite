@@ -50,7 +50,7 @@
     "babel-preset-mcs-lite": "^0.1.0",
     "enzyme": "^2.7.1",
     "enzyme-to-json": "^1.5.0",
-    "flow-bin": "^0.40.0",
+    "flow-bin": "^0.41.0",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^19.0.2",
     "mcs-lite-icon": "^0.1.3",
