@@ -8,6 +8,7 @@ Object {
 
 exports[`test should return props correctly with mapStateToProps 1`] = `
 Object {
-  "userName": "userName",
+  "email": "evenchange4@gmail.com",
+  "userName": "Michael Hsu",
 }
 `;

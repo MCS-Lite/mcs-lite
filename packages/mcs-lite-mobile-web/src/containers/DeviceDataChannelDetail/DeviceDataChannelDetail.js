@@ -12,6 +12,8 @@ import {
   ChartWrapper,
 } from './styled-components';
 import updatePathname from '../../utils/updatePathname';
+import dataChannelTypeMapper from '../../utils/dataChannelTypeMapper';
+import datetimeFormat from '../../utils/datetimeFormat';
 
 const data1 = [
   { value: 5, updatedAt: '12-13 00:00' },
@@ -37,8 +39,20 @@ class DeviceDataChannelDetail extends React.Component {
     },
   }
   componentWillMount = () => this.fetch();
-  eventHandler = console.log; // eslint-disable-line
   onResetClick = console.log; // eslint-disable-line
+  eventHandler = (e) => {
+    // TODO: refactor these codes.
+    const datapoint = { datachannelId: e.id, values: e.values };
+    switch (e.type) {
+      case 'submit':
+        // Remind: MUST upload the datapoint via WebSocket.
+        this.props.sendMessage(JSON.stringify(datapoint));
+        break;
+      default:
+        // Remind: Just change the state.
+        this.props.setDatapoint(this.props.deviceId, datapoint);
+    }
+  }
   fetch = () => this.props.fetchDeviceDetail(this.props.deviceId);
   render() {
     const { device, getMessages: t, dataChannelId } = this.props;
@@ -69,20 +83,26 @@ class DeviceDataChannelDetail extends React.Component {
 
         <main>
           <CardContainer>
-            <DataChannelCard
-              title="Title"
-              subtitle="Last data point time : 2015-06-12 12:00"
-            >
-              <DataChannelAdapter
-                dataChannelProps={{
-                  id: dataChannelId,
-                  type: 'SWITCH_CONTROL',
-                  values: { value: 0 },
-                  format: {},
-                }}
-                eventHandler={eventHandler}
-              />
-            </DataChannelCard>
+            {(device.datachannels || [])
+              .filter(e => e.datachannelId === dataChannelId)
+              .map(c => (
+                <DataChannelCard
+                  key={c.datachannelId}
+                  title={c.datachannelName}
+                  subtitle={datetimeFormat(new Date(c.createdAt))}
+                >
+                  <DataChannelAdapter
+                    dataChannelProps={{
+                      id: c.datachannelId,
+                      type: dataChannelTypeMapper(c.channelType.name, c.type),
+                      values: c.datapoints.values || {},
+                      format: c.format,
+                    }}
+                    eventHandler={eventHandler}
+                  />
+                </DataChannelCard>
+              ),
+            )}
           </CardContainer>
 
           <HistoryContainer>
