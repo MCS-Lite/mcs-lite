@@ -2794,7 +2794,26 @@ exports[`Storyshots DataChannelCard Without description 1`] = `
 exports[`Storyshots DataPointAreaChart API 1`] = `
 <div
   className="haXnLh"
-/>
+>
+  <div
+    className="recharts-responsive-container"
+    style={
+      Object {
+        "height": "100%",
+        "maxHeight": undefined,
+        "minHeight": undefined,
+        "minWidth": undefined,
+        "width": "100%",
+      }
+    }
+  >
+    <MockReactHammerJS
+      handleHeight={true}
+      handleWidth={true}
+      onResize={[Function]}
+    />
+  </div>
+</div>
 `;
 
 exports[`Storyshots DataPointAreaChart RechartTooltip 1`] = `
@@ -2822,19 +2841,76 @@ exports[`Storyshots DataPointAreaChart RechartTooltip 1`] = `
 exports[`Storyshots DataPointAreaChart With isAnimationActive props 1`] = `
 <div
   className="haXnLh"
-/>
+>
+  <div
+    className="recharts-responsive-container"
+    style={
+      Object {
+        "height": "100%",
+        "maxHeight": undefined,
+        "minHeight": undefined,
+        "minWidth": undefined,
+        "width": "100%",
+      }
+    }
+  >
+    <MockReactHammerJS
+      handleHeight={true}
+      handleWidth={true}
+      onResize={[Function]}
+    />
+  </div>
+</div>
 `;
 
 exports[`Storyshots DataPointAreaChart With kind and type props 1`] = `
 <div
   className="haXnLh"
-/>
+>
+  <div
+    className="recharts-responsive-container"
+    style={
+      Object {
+        "height": "100%",
+        "maxHeight": undefined,
+        "minHeight": undefined,
+        "minWidth": undefined,
+        "width": "100%",
+      }
+    }
+  >
+    <MockReactHammerJS
+      handleHeight={true}
+      handleWidth={true}
+      onResize={[Function]}
+    />
+  </div>
+</div>
 `;
 
 exports[`Storyshots DataPointAreaChart With realtime data 1`] = `
 <div
   className="haXnLh"
-/>
+>
+  <div
+    className="recharts-responsive-container"
+    style={
+      Object {
+        "height": "100%",
+        "maxHeight": undefined,
+        "minHeight": undefined,
+        "minWidth": undefined,
+        "width": "100%",
+      }
+    }
+  >
+    <MockReactHammerJS
+      handleHeight={true}
+      handleWidth={true}
+      onResize={[Function]}
+    />
+  </div>
+</div>
 `;
 
 exports[`Storyshots DatetimePicker API 1`] = `

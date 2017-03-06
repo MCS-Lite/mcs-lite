@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should work with ramda 1`] = `
+"'use strict';
+
+var _pipe = require('ramda/src/pipe');
+
+var _pipe2 = _interopRequireDefault(_pipe);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+console.log(_pipe2.default);"
+`;
+
+exports[`should work with ramda/src 1`] = `
+"'use strict';
+
+var _pipe = require('ramda/src/pipe');
+
+var _pipe2 = _interopRequireDefault(_pipe);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+console.log(_pipe2.default);"
+`;

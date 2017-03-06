@@ -22,4 +22,3 @@ jest.mock('react-dom');
 jest.mock('react-hammerjs', () => 'MockReactHammerJS');
 // For recharts
 jest.mock('react-resize-detector', () => 'MockReactHammerJS');
-jest.mock('recharts');
