@@ -16,6 +16,9 @@
     "react-intl-cra": "./bin/extract-messages.js"
   },
   "license": "ISC",
+  "scripts": {
+    "test": "echo 'no'"
+  },
   "dependencies": {
     "mcs-lite-scripts": "^0.1.2"
   }

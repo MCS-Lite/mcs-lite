@@ -18,7 +18,8 @@
     "prebuild": "npm run clean",
     "build": "NODE_ENV='production' babel src --out-dir lib",
     "createEntryFile": "exports-all 'lib/*.js' 'lib/index.js'",
-    "postbuild": "npm run createEntryFile"
+    "postbuild": "npm run createEntryFile",
+    "test": "echo 'TODO'"
   },
   "license": "ISC",
   "peerDependencies": {

@@ -5,7 +5,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "next"
+    "start": "next",
+    "test": "echo 'no'"
   },
   "author": "",
   "license": "ISC",
