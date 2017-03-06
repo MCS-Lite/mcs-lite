@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should work with recompose 1`] = `
+"'use strict';
+
+var _withState = require('recompose/withState');
+
+var _withState2 = _interopRequireDefault(_withState);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+console.log(_withState2.default);"
+`;
+
+exports[`should work with recompose as default 1`] = `
+"'use strict';
+
+var _withState = require('recompose/withState');
+
+var _withState2 = _interopRequireDefault(_withState);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+console.log(_withState2.default);"
+`;
+
+exports[`should work with recompose/createHelper 1`] = `
+"'use strict';
+
+var _createHelper = require('recompose/createHelper');
+
+var _createHelper2 = _interopRequireDefault(_createHelper);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+console.log(_createHelper2.default);"
+`;

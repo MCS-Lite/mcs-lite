@@ -18,6 +18,7 @@ module.exports = {
     ],
 
     // Optimize bundle size
+    require.resolve('babel-plugin-recharts'),
     [
       require.resolve('babel-plugin-import'),
       [
@@ -34,6 +35,11 @@ module.exports = {
         {
           libraryName: 'ramda',
           libraryDirectory: 'src',        // default: lib
+          camel2DashComponentName: false, // default: true
+        },
+        {
+          libraryName: 'recompose',
+          libraryDirectory: '/',          // default: lib
           camel2DashComponentName: false, // default: true
         },
       ],

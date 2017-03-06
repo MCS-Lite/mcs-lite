@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should work with recharts 1`] = `
+"'use strict';
+
+require('recharts/lib/polyfill.js');
+
+var _AreaChart = require('recharts/lib/chart/AreaChart.js');
+
+var _AreaChart2 = _interopRequireDefault(_AreaChart);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+console.log(_AreaChart2.default);"
+`;
