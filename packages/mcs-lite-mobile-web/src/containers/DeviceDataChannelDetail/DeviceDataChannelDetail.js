@@ -46,27 +46,6 @@ class DeviceDataChannelDetail extends React.Component {
 
     return (
       <div>
-        <Helmet title={'資料通道名稱'} />
-        <MobileHeader.MobileHeader
-          title={'資料通道名稱'}
-          leftChildren={
-            <MobileHeader.MobileHeaderIcon
-              component={Link}
-              to={updatePathname(`/devices/${device.deviceId}`)}
-            >
-              <IconArrowLeft />
-            </MobileHeader.MobileHeaderIcon>
-          }
-          rightChildren={
-            <MobileHeader.MobileHeaderIcon
-              component={Link}
-              to={updatePathname(`/devices/${device.deviceId}/dataChannels/${dataChannelId}/timeRange`)}
-            >
-              <IconCalendar />
-            </MobileHeader.MobileHeaderIcon>
-          }
-        />
-
         <main>
           <CardContainer>
             <DataChannelCard

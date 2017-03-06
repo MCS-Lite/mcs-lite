@@ -40,19 +40,6 @@ class DeviceDetailInfo extends React.Component {
             </MobileHeader.MobileHeaderIcon>
           }
         />
-
-        <main>
-          <PullToRefresh isLoading={isLoading} onPull={fetch}>
-            <Container>
-              <div><B>{t('deviceName')}</B><P>{device.deviceName}</P></div>
-              <div><B>{t('creator')}</B><P>{device.user.userName}</P></div>
-              <div><B>{t('version')}</B><P>{device.prototype.version}</P></div>
-              <div><B>{t('description')}</B><P>{device.deviceDescription}</P></div>
-              <div><B>DeviceId</B><P>{device.deviceId}</P></div>
-              <div><B>DeviceKey</B><P>{device.deviceKey}</P></div>
-            </Container>
-          </PullToRefresh>
-        </main>
       </div>
     );
   }
