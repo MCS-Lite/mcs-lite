@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"POT-Creation-Date: 2017-02-24T13:11:50.528Z\n"
+"POT-Creation-Date: 2017-03-06T09:05:49.983Z\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "MIME-Version: 1.0\n"
@@ -26,13 +26,6 @@ msgstr ""
 #. defaultMessage is:
 #. 之間
 msgid "之間"
-msgstr ""
-
-#: ./messages.json
-#. [Account.hello]
-#. defaultMessage is:
-#. 你好
-msgid "你好"
 msgstr ""
 
 #: ./messages.json
