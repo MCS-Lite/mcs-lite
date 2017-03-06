@@ -8,11 +8,11 @@ import IconMoreVert from 'mcs-lite-icon/lib/IconMoreVert';
 import IconArrowLeft from 'mcs-lite-icon/lib/IconArrowLeft';
 import IconFold from 'mcs-lite-icon/lib/IconFold';
 import { Link } from 'react-router';
-import moment from 'moment';
 import StyledLink from '../../components/StyledLink';
 import { Container, StyledImg, CardWrapper, CardHeaderIcon } from './styled-components';
 import updatePathname from '../../utils/updatePathname';
 import dataChannelTypeMapper from '../../utils/dataChannelTypeMapper';
+import datetimeFormat from '../../utils/datetimeFormat';
 
 class DeviceDetail extends React.Component {
   static propTypes = {
@@ -111,7 +111,7 @@ class DeviceDetail extends React.Component {
                           </StyledLink>
                         }
                         title={c.datachannelName}
-                        subtitle={moment(c.createdAt).format('YYYY-MM-DD HH:mm')}
+                        subtitle={datetimeFormat(new Date(c.createdAt))}
                       >
                         <DataChannelAdapter
                           dataChannelProps={{

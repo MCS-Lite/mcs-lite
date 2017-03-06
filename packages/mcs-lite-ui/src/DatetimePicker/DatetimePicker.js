@@ -1,6 +1,6 @@
 import React, { PropTypes } from 'react';
 import R from 'ramda';
-import moment from 'moment';
+import moment from 'moment/min/moment.min'; // TODO: do use min file
 import leftPad from 'left-pad';
 import { Picker, PickerContainer } from '../Picker';
 import emptyFunction from '../utils/emptyFunction';
