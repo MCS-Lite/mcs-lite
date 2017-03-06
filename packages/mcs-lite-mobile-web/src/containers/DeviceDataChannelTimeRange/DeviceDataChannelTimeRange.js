@@ -1,14 +1,12 @@
 import React, { PropTypes } from 'react';
 import Helmet from 'react-helmet';
-import D from 'date-fp';
 import { MobileHeader, P, DatetimePickerDialog, Button, MobileFixedFooter } from 'mcs-lite-ui';
 import IconArrowLeft from 'mcs-lite-icon/lib/IconArrowLeft';
 import { Link } from 'react-router';
 import { Container, InputWrapper, FakeInput, ButtonWrapper } from './styled-components';
 import updatePathname from '../../utils/updatePathname';
+import datetimeFormat from '../../utils/datetimeFormat';
 import StyledLink from '../../components/StyledLink';
-
-const DATETIME_FORMAT = D.format('YYYY-MM-DD HH:mm');
 
 class DeviceDataChannelTimeRange extends React.Component {
   static propTypes = {
@@ -49,12 +47,12 @@ class DeviceDataChannelTimeRange extends React.Component {
           <Container>
             <InputWrapper onClick={onStartTimeClick}>
               <P>{t('from')}</P>
-              <FakeInput >{DATETIME_FORMAT(new Date(startTime))}</FakeInput>
+              <FakeInput >{datetimeFormat(new Date(startTime))}</FakeInput>
             </InputWrapper>
 
             <InputWrapper onClick={onEndTimeClick}>
               <P>{t('to')}</P>
-              <FakeInput >{DATETIME_FORMAT(new Date(endTime))}</FakeInput>
+              <FakeInput >{datetimeFormat(new Date(endTime))}</FakeInput>
             </InputWrapper>
 
             <DatetimePickerDialog
