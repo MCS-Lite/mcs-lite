@@ -1,5 +1,52 @@
 # MCS Lite changelogs
 
+## Released (2017-03-06)
+
+#### :rocket: New Feature
+* `mcs-lite-mobile-web`, `mcs-lite-ui`
+  * [#187](https://github.com/evenchange4/mcs-lite/pull/187) feat(DataChannelDetail): enable websocket. ([@evenchange4](https://github.com/evenchange4))
+* `babel-preset-mcs-lite`, `mcs-lite-ui`
+  * [#184](https://github.com/evenchange4/mcs-lite/pull/184) feat(babel-plugin): support for reducing bundle size of recompose and recharts. ([@evenchange4](https://github.com/evenchange4))
+* `mcs-lite-fetch-rx`, `mcs-lite-mobile-web`
+  * [#178](https://github.com/evenchange4/mcs-lite/pull/178) refactor(Module/Side-effects): replace redux-observable with redux-cycles. ([@evenchange4](https://github.com/evenchange4))
+
+#### :boom: Breaking Change
+* `mcs-lite-fetch-rx`, `mcs-lite-mobile-web`
+  * [#178](https://github.com/evenchange4/mcs-lite/pull/178) refactor(Module/Side-effects): replace redux-observable with redux-cycles. ([@evenchange4](https://github.com/evenchange4))
+
+#### :bug: Bug Fix
+* `mcs-lite-connect`, `mcs-lite-demo-nextjs`, `mcs-lite-design`, `mcs-lite-icon`, `mcs-lite-mobile-web`, `mcs-lite-scripts`, `mcs-lite-theme`, `react-intl-cra`, `react-intl-inject-hoc`
+  * [#181](https://github.com/evenchange4/mcs-lite/pull/181) fix(Building): timeout problem. ([@evenchange4](https://github.com/evenchange4))
+
+#### :nail_care: Enhancement
+* `mcs-lite-mobile-web`, `mcs-lite-ui`
+  * [#186](https://github.com/evenchange4/mcs-lite/pull/186) feat(datetimeFormat): replace moment with date-fp. ([@evenchange4](https://github.com/evenchange4))
+* `mcs-lite-mobile-web`
+  * [#177](https://github.com/evenchange4/mcs-lite/pull/177) refactor(auth/module): handle error. ([@evenchange4](https://github.com/evenchange4))
+* `mcs-lite-demo-nextjs`, `mcs-lite-mobile-web`, `mcs-lite-ui`
+  * [#176](https://github.com/evenchange4/mcs-lite/pull/176) feat(package): ncu & update redux-observable to 0.14. ([@evenchange4](https://github.com/evenchange4))
+
+#### :memo: Documentation
+* `mcs-lite-fetch-rx`, `mcs-lite-mobile-web`
+  * [#178](https://github.com/evenchange4/mcs-lite/pull/178) refactor(Module/Side-effects): replace redux-observable with redux-cycles. ([@evenchange4](https://github.com/evenchange4))
+
+#### :house: Internal
+* `mcs-lite-ui`, `stylelint-config-mcs-lite`
+  * [#183](https://github.com/evenchange4/mcs-lite/pull/183) chore(ncu): ncu-update. ([@evenchange4](https://github.com/evenchange4))
+* `mcs-lite-connect`, `mcs-lite-demo-nextjs`, `mcs-lite-design`, `mcs-lite-icon`, `mcs-lite-mobile-web`, `mcs-lite-scripts`, `mcs-lite-theme`, `react-intl-cra`, `react-intl-inject-hoc`
+  * [#181](https://github.com/evenchange4/mcs-lite/pull/181) fix(Building): timeout problem. ([@evenchange4](https://github.com/evenchange4))
+* `mcs-lite-fetch-rx`, `mcs-lite-mobile-web`
+  * [#178](https://github.com/evenchange4/mcs-lite/pull/178) refactor(Module/Side-effects): replace redux-observable with redux-cycles. ([@evenchange4](https://github.com/evenchange4))
+* `mcs-lite-mobile-web`
+  * [#177](https://github.com/evenchange4/mcs-lite/pull/177) refactor(auth/module): handle error. ([@evenchange4](https://github.com/evenchange4))
+* `mcs-lite-demo-nextjs`, `mcs-lite-mobile-web`, `mcs-lite-ui`
+  * [#176](https://github.com/evenchange4/mcs-lite/pull/176) feat(package): ncu & update redux-observable to 0.14. ([@evenchange4](https://github.com/evenchange4))
+
+#### Committers: 1
+- Michael Hsu ([evenchange4](https://github.com/evenchange4))
+
+----
+
 ## Released (2017-03-03)
 
 ### Bump Versions
