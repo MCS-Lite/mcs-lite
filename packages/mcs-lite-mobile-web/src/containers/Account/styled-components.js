@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Button } from 'mcs-lite-ui';
+import { Button, P } from 'mcs-lite-ui';
 import Logo from '../../components/Logo';
 
 export const FlatButton = styled(Button)`
@@ -24,10 +24,19 @@ export const Body = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
+
+  > *:not(:first-child) {
+    margin-bottom: 8px;
+  }
 `;
 
 export const StyledLogo = styled(Logo)`
   margin-bottom: 32px;
+`;
+
+export const VersionWrapper = styled(P)`
+  text-align: center;
+  margin-bottom: 8px;
 `;
 
 export const Footer = styled.footer`

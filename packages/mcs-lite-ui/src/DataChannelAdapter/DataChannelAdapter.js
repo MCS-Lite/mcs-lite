@@ -140,7 +140,7 @@ class DataChannelAdapter extends React.Component {
 
         return (
           <DataChannel.ControlRange
-            value={values.value}
+            value={values.value || ''}
             labels={labels}
             valueMapper={valueMapper}
             onChange={e => eventHandler({
@@ -172,7 +172,7 @@ class DataChannelAdapter extends React.Component {
 
         return (
           <DataChannel.ControlRange
-            value={value}
+            value={value || ''}
             labels={format.items.map(R.prop('name'))}
             valueMapper={valueMapper}
             onChange={e => eventHandler({
@@ -205,7 +205,7 @@ class DataChannelAdapter extends React.Component {
 
         return (
           <DataChannel.ControlRange
-            value={values.value}
+            value={values.value || ''}
             valueMapper={valueMapper}
             labels={[
               parseFloat(format.lowerbound, 10),
@@ -248,7 +248,7 @@ class DataChannelAdapter extends React.Component {
               placeholder="Integer only"
             />
             <DataChannel.ControlRange
-              value={values.value && parseFloat(values.value, 10)}
+              value={values.value ? parseFloat(values.value, 10) : ''}
               valueMapper={valueMapper}
               labels={[
                 parseFloat(format.lowerbound, 10),

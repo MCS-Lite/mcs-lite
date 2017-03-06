@@ -5,10 +5,6 @@
     "defaultMessage": "帳戶"
   },
   {
-    "id": "Account.hello",
-    "defaultMessage": "你好"
-  },
-  {
     "id": "Account.myTestDevices",
     "defaultMessage": "我的測試裝置"
   },

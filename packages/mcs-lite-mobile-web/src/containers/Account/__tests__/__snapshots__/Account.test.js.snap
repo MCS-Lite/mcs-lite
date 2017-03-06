@@ -11,11 +11,18 @@ exports[`test should renders <Account> correctly 1`] = `
       userName
     </Heading>
     <Heading
-      level={4}>
-      hello
+      level={5}>
+      email
     </Heading>
   </styled.div>
   <styled.footer>
+    <Styled(Component)
+      color="grayBase">
+      <Small>
+        v
+        0.0.0
+      </Small>
+    </Styled(Component)>
     <Styled(Link)
       to={[Function]}>
       <Styled(BaseComponent)
@@ -59,10 +66,6 @@ Object {
   "Account.confirm": Object {
     "defaultMessage": "確定要登出？",
     "id": "Account.confirm",
-  },
-  "Account.hello": Object {
-    "defaultMessage": "你好",
-    "id": "Account.hello",
   },
   "Account.myTestDevices": Object {
     "defaultMessage": "我的測試裝置",

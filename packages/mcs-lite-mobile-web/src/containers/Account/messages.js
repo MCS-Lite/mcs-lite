@@ -6,10 +6,6 @@ const messages = defineMessages({
     description: 'Title',
     defaultMessage: '帳戶',
   },
-  'Account.hello': {
-    id: 'Account.hello',
-    defaultMessage: '你好',
-  },
   'Account.myTestDevices': {
     id: 'Account.myTestDevices',
     defaultMessage: '我的測試裝置',

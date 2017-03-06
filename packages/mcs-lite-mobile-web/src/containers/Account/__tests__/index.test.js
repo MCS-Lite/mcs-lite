@@ -21,7 +21,10 @@ it('should render Container correctly with HOC', () => {
 });
 
 it('should return props correctly with mapStateToProps', () => {
-  const state = { auth: { userName: 'userName' }};
+  const state = { auth: {
+    userName: 'Michael Hsu',
+    email: 'evenchange4@gmail.com',
+  }};
 
   expect(mapStateToProps(state)).toMatchSnapshot();
 });
