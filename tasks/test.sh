@@ -3,13 +3,16 @@
 set -e
 
 # global linting
-# npm run eslint
-# npm run stylelint
+echo '💪 Start global linting';
+npm run eslint
+npm run stylelint
 
 ## Interface for each project
-# node_modules/.bin/lerna run lint
-# node_modules/.bin/lerna run test
+echo '💪 Start testing for each packages';
+node_modules/.bin/lerna run lint
+node_modules/.bin/lerna run test
 
-## Test for demo page building
+echo '💪 Start testing for building demo page';
+## Test for building demo page
 node_modules/.bin/lerna run build-storybook --scope mcs-lite-ui
 node_modules/.bin/lerna run build --scope mcs-lite-mobile-web
