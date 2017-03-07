@@ -12,3 +12,6 @@ node_modules/.bin/lerna run build --scope mcs-lite-theme
 node_modules/.bin/lerna run build --scope mcs-lite-ui
 node_modules/.bin/lerna run build --scope react-intl-inject-hoc
 node_modules/.bin/lerna run build --scope mcs-lite-connect
+
+## pages
+node_modules/.bin/lerna run build --scope mcs-lite-mobile-web

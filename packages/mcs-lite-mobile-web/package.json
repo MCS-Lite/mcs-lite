@@ -23,7 +23,7 @@
     "eject": "react-scripts eject",
     "extract:messages": "react-intl-cra './src/**/*.js' './messages.json'",
     "extract:pot": "react-intl-po json2pot './messages.json' -o './mcs-lite-mobile-web.pot'",
-    "prepublish": "rm -rf ./build/static/*/*.map"
+    "prepublish": "npm run build && rm -rf ./build/static/*/*.map"
   },
   "devDependencies": {
     "@cycle/http": "^13.0.0",
