@@ -6,7 +6,7 @@
 
 ### Bump Versions
 
--   mcs-lite-mobile-web@0.1.6
+-   mcs-lite-mobile-web@0.1.7
 
 #### :bug: Bug Fix
 * `mcs-lite-mobile-web`

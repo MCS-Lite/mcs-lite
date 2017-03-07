@@ -22,4 +22,4 @@
 1. Checkout `master` branch.
 2. Update CHANGELOG.md by copying the results of `$ lerna-changelog`.
 3. Run `$ npm run release`.
-4. Add the `Bump Verions` of npm section to CHANGELOG.md. ([#26](https://github.com/lerna/lerna-changelog/issues/26))
+4. Add the `Bump Verions` section to CHANGELOG.md. ([#26](https://github.com/lerna/lerna-changelog/issues/26))
