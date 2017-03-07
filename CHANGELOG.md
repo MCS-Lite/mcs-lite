@@ -1,5 +1,27 @@
 # MCS Lite changelogs
 
+## Released (2017-03-07)
+
+**This release just for testing release flow.**
+
+#### :bug: Bug Fix
+* `mcs-lite-mobile-web`
+  * [#191](https://github.com/evenchange4/mcs-lite/pull/191) fix(Mobile/publish): build at prepublish-phase so that we can get current version of packages.json.. ([@evenchange4](https://github.com/evenchange4))
+
+#### :nail_care: Enhancement
+* `mcs-lite-mobile-web`
+  * [#188](https://github.com/evenchange4/mcs-lite/pull/188) test(Module/UI): add more toast test. ([@evenchange4](https://github.com/evenchange4))
+
+#### :house: Internal
+* `mcs-lite-mobile-web`
+  * [#191](https://github.com/evenchange4/mcs-lite/pull/191) fix(Mobile/publish): build at prepublish-phase so that we can get current version of packages.json.. ([@evenchange4](https://github.com/evenchange4))
+  * [#189](https://github.com/evenchange4/mcs-lite/pull/189) chore(ncu): upgrade cycle & cra without any breaking changes. ([@evenchange4](https://github.com/evenchange4))
+
+#### Committers: 1
+- Michael Hsu ([evenchange4](https://github.com/evenchange4))
+
+----
+
 ## Released (2017-03-06)
 
 ### Bump Versions
