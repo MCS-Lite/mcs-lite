@@ -38,8 +38,14 @@ describe('ui - 3. Cycle', () => {
     };
 
     assertSourcesSinks(
-      { ACTION: { '-a-b--|': actionSource }},
+      { ACTION: { '-ab---|': actionSource }},
       { ACTION: { '---x-y|': actionSink }},
+      cycles.addToastCycle, () => {}, { interval: 1250 },
+    );
+
+    assertSourcesSinks(
+      { ACTION: { '-(ab)---|': actionSource }},
+      { ACTION: { '---x-y--|': actionSink }},
       cycles.addToastCycle, () => {}, { interval: 1250 },
     );
 
