@@ -171,7 +171,7 @@ $ npm run publish
 2. lerna publish
   - Version of package.json will be updated.
   - Create git tags.
-  - npm prepublish (Only for mobile project.)
+  - npm `prepublishOnly` (Only for mobile project.)
   - Publish to npm.
 
 ### changelog
