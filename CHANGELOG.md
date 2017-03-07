@@ -4,6 +4,10 @@
 
 **This release just for testing release flow.**
 
+### Bump Versions
+
+-   mcs-lite-mobile-web@0.1.6
+
 #### :bug: Bug Fix
 * `mcs-lite-mobile-web`
   * [#191](https://github.com/evenchange4/mcs-lite/pull/191) fix(Mobile/publish): build at prepublish-phase so that we can get current version of packages.json.. ([@evenchange4](https://github.com/evenchange4))
