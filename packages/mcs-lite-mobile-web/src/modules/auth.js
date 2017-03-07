@@ -73,6 +73,7 @@ function requireAuthCycle(sources) {
   const action$ = response$
     .pluck('body', 'results')
     .map(setUserInfo)
+    // TODO: Should I catch response$ error here ?
     .catch((error) => {
       console.error({ error }); // eslint-disable-line
       return Observable.empty();
@@ -164,7 +165,7 @@ function changePasswordCycle(sources) {
 
 function authErrorCycle(sources) {
   const errorMessage$ = sources.HTTP
-    .select() // TODO: should I use .select('user') ?
+    .select() // TODO: Should I use .select('user') ?
     .switch()
     .pluck('ok')
     .filter(R.not)

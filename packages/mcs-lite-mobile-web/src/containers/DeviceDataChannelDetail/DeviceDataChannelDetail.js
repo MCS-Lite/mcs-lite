@@ -15,28 +15,32 @@ import updatePathname from '../../utils/updatePathname';
 import dataChannelTypeMapper from '../../utils/dataChannelTypeMapper';
 import datetimeFormat from '../../utils/datetimeFormat';
 
-const data1 = [
-  { value: 5, updatedAt: '12-13 00:00' },
-  { value: 25, updatedAt: '12-13 00:01' },
-  { value: 75, updatedAt: '12-13 00:02' },
-  { value: 89, updatedAt: '12-13 00:03' },
-  { value: 23, updatedAt: '12-13 00:04' },
-  { value: 41, updatedAt: '12-13 00:05' },
-  { value: 23, updatedAt: '12-13 00:06' },
-];
+// const data1 = [
+//   { value: 5, updatedAt: '12-13 00:00' },
+//   { value: 25, updatedAt: '12-13 00:01' },
+//   { value: 75, updatedAt: '12-13 00:02' },
+//   { value: 89, updatedAt: '12-13 00:03' },
+//   { value: 23, updatedAt: '12-13 00:04' },
+//   { value: 41, updatedAt: '12-13 00:05' },
+//   { value: 23, updatedAt: '12-13 00:06' },
+// ];
 
 class DeviceDataChannelDetail extends React.Component {
   static propTypes = {
     device: PropTypes.object,
+    datapoints: PropTypes.array,
     deviceId: PropTypes.string.isRequired,
+    dataChannelId: PropTypes.string.isRequired,
     getMessages: PropTypes.func.isRequired,
     fetchDeviceDetail: PropTypes.func.isRequired,
+    fetchDatapoints: PropTypes.func.isRequired,
   }
   static defaultProps = {
     device: {
       user: {},
       prototype: {},
     },
+    datapoints: [],
   }
   componentWillMount = () => this.fetch();
   onResetClick = console.log; // eslint-disable-line
@@ -53,10 +57,20 @@ class DeviceDataChannelDetail extends React.Component {
         this.props.setDatapoint(this.props.deviceId, datapoint);
     }
   }
-  fetch = () => this.props.fetchDeviceDetail(this.props.deviceId);
+  fetch = () => {
+    const { deviceId, dataChannelId } = this.props;
+
+    this.props.fetchDeviceDetail(deviceId);
+    this.props.fetchDatapoints(deviceId, dataChannelId);
+  }
   render() {
-    const { device, getMessages: t, dataChannelId } = this.props;
+    const { device, datapoints, getMessages: t, dataChannelId } = this.props;
     const { eventHandler, onResetClick } = this;
+    const data = datapoints.map(d => ({
+      value: parseInt(d.values.value, 10),
+      updatedAt: datetimeFormat(new Date(d.updatedAt)),
+    }));
+    const c = (device.datachannels || []).filter(e => e.datachannelId === dataChannelId)[0];
 
     return (
       <div>
@@ -83,25 +97,22 @@ class DeviceDataChannelDetail extends React.Component {
 
         <main>
           <CardContainer>
-            {(device.datachannels || [])
-              .filter(e => e.datachannelId === dataChannelId)
-              .map(c => (
-                <DataChannelCard
-                  key={c.datachannelId}
-                  title={c.datachannelName}
-                  subtitle={datetimeFormat(new Date(c.createdAt))}
-                >
-                  <DataChannelAdapter
-                    dataChannelProps={{
-                      id: c.datachannelId,
-                      type: dataChannelTypeMapper(c.channelType.name, c.type),
-                      values: c.datapoints.values || {},
-                      format: c.format,
-                    }}
-                    eventHandler={eventHandler}
-                  />
-                </DataChannelCard>
-              ),
+            {c && (
+              <DataChannelCard
+                key={c.datachannelId}
+                title={c.datachannelName}
+                subtitle={datetimeFormat(new Date(c.createdAt))}
+              >
+                <DataChannelAdapter
+                  dataChannelProps={{
+                    id: c.datachannelId,
+                    type: dataChannelTypeMapper(c.channelType.name, c.type),
+                    values: c.datapoints.values || {},
+                    format: c.format,
+                  }}
+                  eventHandler={eventHandler}
+                />
+              </DataChannelCard>
             )}
           </CardContainer>
 
@@ -120,7 +131,12 @@ class DeviceDataChannelDetail extends React.Component {
             </HistoryHeader>
 
             <ChartWrapper>
-              <DataPointAreaChart data={data1} />
+              {c && (
+                <DataPointAreaChart
+                  data={data}
+                  type={['Switch'].includes(c.channelType.name) ? 'step' : 'linear'}
+                />
+              )}
             </ChartWrapper>
           </HistoryContainer>
         </main>
