@@ -20,7 +20,7 @@
   - Publish to npm.
 
 **Remind: We should replace `prepublishOnly` with `prepublish` after [npm@5](https://github.com/npm/npm/blob/v4.1.2/doc/misc/npm-scripts.md#deprecation-note), therefore
-MCS Lite use `npm run release` instead of `npm publish` to avoid these wired npm run behaviors.**
+MCS Lite use `npm run release` instead of `npm run publish` to avoid these weird npm behaviors.**
  
 ## Technology Stack
 
