@@ -130,7 +130,7 @@ $ npm run test:watch
 
 ## NPM Scipts Interface
 
-| **Package**                 | clean | test | start | build | lint          | publish   |
+| **Package**                 | clean | test | start | build | lint          | release   |
 |-----------------------------|-------|------|-------|-------|---------------|-----------|
 | root                        | V     |      |       |       | V (es, style) | V (lerna) |
 | `babel-preset-mcs-lite`     |       | V    |       |       |               |           |
@@ -154,21 +154,6 @@ $ npm run test:watch
 ```
 $ npm run ncu # check for all packages
 $ npm run ncu-update # update packages.json
-```
-
-### npm publish
-
-```
-$ cd mcs-lite/
-$ npm run publish
-```
-
-### changelog
-
-```
-$ npm i lerna lerna-changelog -g
-$ cd mcs-lite/
-$ lerna-changelog
 ```
 
 ### license-checker

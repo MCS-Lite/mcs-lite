@@ -8,8 +8,8 @@
     "eslint": "eslint ./ --ignore-path .linterignore",
     "ncu": "ncu && lerna exec --concurrency 1 -- ncu",
     "ncu-update": "ncu -au && lerna exec --concurrency 1 -- ncu -au",
-    "publish": "lerna publish",
-    "prepublish": "./tasks/build.sh",
+    "release": "lerna publish",
+    "prerelease": "./tasks/build.sh",
     "danger": "danger run --verbose"
   },
   "devDependencies": {
