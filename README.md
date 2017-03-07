@@ -163,6 +163,17 @@ $ cd mcs-lite/
 $ npm run publish
 ```
 
+#### [Publish flow](https://github.com/lerna/lerna#publish):
+
+1. lerna prepublish
+  - ./tasks/build.sh (Only for dependency packages in order.)
+  
+2. lerna publish
+  - Version of package.json will be updated.
+  - Create git tags.
+  - npm prepublish (Only for mobile project.)
+  - Publish to npm.
+
 ### changelog
 
 ```
