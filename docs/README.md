@@ -2,11 +2,26 @@
 
 ## Table of Contents
 
+-   [Release Flow](#release-flow)
 -   [Technology Stack](#technology-stack)
 -   [Packages Relation](#packages-relation)
 -   [DataChannelAdapter Design](#datachanneladapter-design)
 -   [How To Add New Icon?](#how-to-add-new-icon)
 
+## Release Flow
+
+1. prerelease
+  - `./tasks/build.sh` (Only for dependency packages in order.)
+  
+2. [lerna publish](https://github.com/lerna/lerna#publish)
+  - Version of package.json will be updated.
+  - Create git tags.
+  - npm `prepublishOnly` (Only for mobile project.)
+  - Publish to npm.
+
+**Remind: We should replace `prepublishOnly` with `prepublish` after [npm@5](https://github.com/npm/npm/blob/v4.1.2/doc/misc/npm-scripts.md#deprecation-note), therefore
+MCS Lite use `npm run release` instead of `npm publish` to avoid these wired npm run behaviors.**
+ 
 ## Technology Stack
 
 ![](./images/tech-stack.png)

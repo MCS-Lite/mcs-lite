@@ -15,3 +15,11 @@
 6. Run `./tasks/test.sh` to lint and test. Don’t commit before fixing all errors and warnings.
 7. Commit with the [Git Commit Msg Convention](http://karma-runner.github.io/1.0/dev/git-commit-msg.html).
 8. Make a pull request.
+
+
+## To release new versions
+
+1. Checkout `master` branch.
+2. Update CHANGELOG.md by copying the results of `$ lerna-changelog`.
+3. Run `$ npm run release`.
+4. Add the `Bump Verions` of npm section to CHANGELOG.md. ([#26](https://github.com/lerna/lerna-changelog/issues/26))
