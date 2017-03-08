@@ -14,11 +14,10 @@
   ],
   "license": "ISC",
   "scripts": {
-    "clean": "rm -rf build",
+    "clean": "rm -rf _book",
     "start": "gitbook serve",
     "prebuild": "npm run clean",
-    "build": "gitbook build",
-    "prepublish": "[ -f book.json ] && npm run build || echo 'Skip prepublish.'"
+    "build": "gitbook build"
   },
   "devDependencies": {
     "gitbook-cli": "^2.3.0"
