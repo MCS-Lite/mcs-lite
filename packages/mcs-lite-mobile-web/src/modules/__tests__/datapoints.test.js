@@ -56,7 +56,7 @@ describe('datapoints - 3. Cycle', () => {
     };
 
     assertSourcesSinks({
-      STATE:  { '-s------|': stateSource }, // Remind: Test for getting deviceKey later.
+      STATE:  { '-s------|': stateSource }, // Remind: will get deviceKey later.
       ACTION: { 'a-------|': actionSource },
       HTTP:   { '----r---|': httpSource },
     }, {
