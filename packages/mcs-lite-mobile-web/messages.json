@@ -21,6 +21,11 @@
     "defaultMessage": "確定要登出？"
   },
   {
+    "id": "App.titleTemplate",
+    "description": "For document title",
+    "defaultMessage": "MCS Lite Mobile"
+  },
+  {
     "id": "DeviceDataChannelDetail.dataChannelDetail",
     "defaultMessage": "資料通道詳情"
   },

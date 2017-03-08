@@ -5,10 +5,10 @@ import Transition from 'react-motion-ui-pack';
 import Portal from 'react-overlays/lib/Portal';
 import { HeightContainer, ToastContainer, Fixed } from './styled-components';
 
-const App = ({ toasts, children }) =>
+const App = ({ toasts, children, getMessages: t }) =>
   <HeightContainer>
     {/* 1. Helmet */}
-    <Helmet titleTemplate="%s | MCS Lite Mobile" />
+    <Helmet titleTemplate={`%s | ${t('titleTemplate')}`} />
 
     {/* 2. Body content */}
     <HeightContainer>{children}</HeightContainer>
@@ -22,7 +22,7 @@ const App = ({ toasts, children }) =>
             appear={{ opacity: 0.8, translateY: -20 }}
             enter={{ opacity: 1, translateY: 0 }}
           >
-            {toasts.map(t => <MLToast key={t.key} {...t} />)}
+            {toasts.map(toast => <MLToast key={toast.key} {...toast} />)}
           </Transition>
         </Fixed>
       </Portal>
@@ -36,6 +36,7 @@ App.propTypes = {
     kind: PropTypes.string.isRequired,
     children: PropTypes.any.isRequired,
   })),
+  getMessages: PropTypes.func.isRequired,
 };
 App.defaultProps = {
   toasts: [],

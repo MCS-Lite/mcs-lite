@@ -1,4 +1,4 @@
-exports[`test should render Container correctly with HOC 1`] = `<Connect(App) />`;
+exports[`test should render Container correctly with HOC 1`] = `<Connect(InjectIntl(withPropsOnChange(App))) />`;
 
 exports[`test should return props correctly with mapStateToProps 1`] = `
 Object {
