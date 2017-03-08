@@ -1,7 +1,7 @@
 {
   "name": "mcs-lite-introduction",
   "version": "0.0.0",
-  "description": "Gitbook for MCS Lite documentation",
+  "description": "GitBook for MCS Lite documentation",
   "repository": "evenchange4/mcs-lite",
   "author": "Daria Chen <smartexist@gmail.com>",
   "bugs": {
