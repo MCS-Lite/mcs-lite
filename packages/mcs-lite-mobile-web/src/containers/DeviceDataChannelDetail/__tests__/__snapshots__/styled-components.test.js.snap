@@ -1,0 +1,8 @@
+exports[`test should render components correctly 1`] = `
+<div>
+  <Styled(Small)>
+    <Small
+      className="bdAfFa" />
+  </Styled(Small)>
+</div>
+`;

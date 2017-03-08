@@ -51,9 +51,9 @@ class DeviceDetail extends React.Component {
     const { getTarget, onMoreDetailClick, onHide, fetch, eventHandler } = this;
     return (
       <div>
-        <Helmet title="範例 A 的測試裝置" />
+        <Helmet title={device.deviceName} />
         <MobileHeader.MobileHeader
-          title="範例 A 的測試裝置"
+          title={device.deviceName}
           leftChildren={
             <MobileHeader.MobileHeaderIcon
               component={Link}

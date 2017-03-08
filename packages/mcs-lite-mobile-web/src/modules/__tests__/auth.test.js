@@ -4,6 +4,7 @@ import { Observable } from 'rxjs/Observable';
 import reducer, { constants, actions, cycles } from '../auth';
 import { actions as routingActions } from '../routing';
 import { actions as devicesActions } from '../devices';
+import { actions as datapointsActions } from '../datapoints';
 import { actions as uiActions } from '../ui';
 import { assertSourcesSinks } from '../../utils/helpers';
 
@@ -98,15 +99,16 @@ describe('auth - 3. Cycle', () => {
     };
 
     const actionSink = {
-      x: routingActions.pushPathname('/signin'),
-      y: actions.clear(),
-      z: devicesActions.clear(),
+      w: routingActions.pushPathname('/signin'),
+      x: actions.clear(),
+      y: devicesActions.clear(),
+      z: datapointsActions.clear(),
     };
 
     assertSourcesSinks({
-      ACTION: { 'a----|': actionSource },
+      ACTION: { 'a-----|': actionSource },
     }, {
-      ACTION: { '(xyz)|': actionSink },
+      ACTION: { '(wxyz)|': actionSink },
     }, cycles.signoutCycle, done);
   });
 

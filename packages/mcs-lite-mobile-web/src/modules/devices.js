@@ -30,8 +30,8 @@ const fetchDeviceList = () => ({ type: FETCH_DEVICE_LIST });
 const fetchDeviceDetail = deviceId => ({ type: FETCH_DEVICE_DETAIL, payload: deviceId });
 const setDeviceList = payload => ({ type: SET_DEVICE_LIST, payload });
 const setDeviceDetail = payload => ({ type: SET_DEVICE_DETAIL, payload });
-const setDatapoint = (deviceId, datapoint) =>
-  ({ type: SET_DATAPOINT, payload: { deviceId, datapoint }});
+const setDatapoint = (deviceId, datapoint, isFromServer) =>
+  ({ type: SET_DATAPOINT, payload: { deviceId, datapoint, isFromServer }});
 const clear = () => ({ type: CLEAR });
 
 export const actions = {

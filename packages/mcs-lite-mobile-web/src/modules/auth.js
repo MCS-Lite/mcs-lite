@@ -5,6 +5,7 @@ import { Observable } from 'rxjs/Observable';
 import R from 'ramda';
 import { actions as routingActions } from './routing';
 import { actions as devicesActions } from './devices';
+import { actions as datapointsActions } from './datapoints';
 import { actions as uiActions } from './ui';
 import cookieHelper from '../utils/cookieHelper';
 
@@ -73,6 +74,7 @@ function requireAuthCycle(sources) {
   const action$ = response$
     .pluck('body', 'results')
     .map(setUserInfo)
+    // TODO: Should I catch response$ error here ?
     .catch((error) => {
       console.error({ error }); // eslint-disable-line
       return Observable.empty();
@@ -114,6 +116,7 @@ function signoutCycle(sources) {
       routingActions.pushPathname('/signin'),
       clear(),
       devicesActions.clear(),
+      datapointsActions.clear(),
     ))
     .do(cookieHelper.removeCookieToken);
 
@@ -164,7 +167,7 @@ function changePasswordCycle(sources) {
 
 function authErrorCycle(sources) {
   const errorMessage$ = sources.HTTP
-    .select() // TODO: should I use .select('user') ?
+    .select() // TODO: Should I use .select('user') ?
     .switch()
     .pluck('ok')
     .filter(R.not)

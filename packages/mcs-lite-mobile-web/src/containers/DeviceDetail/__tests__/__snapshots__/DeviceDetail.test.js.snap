@@ -1,7 +1,7 @@
 exports[`test should renders <DeviceDetail> correctly 1`] = `
 <div>
   <HelmetWrapper
-    title="範例 A 的測試裝置" />
+    title="deviceName" />
   <MobileHeader
     leftChildren={
       <MobileHeaderIcon
@@ -22,7 +22,7 @@ exports[`test should renders <DeviceDetail> correctly 1`] = `
         false,
       ]
     }
-    title="範例 A 的測試裝置" />
+    title="deviceName" />
   <main>
     <PullToRefresh
       IconArrow={[Function]}
@@ -44,8 +44,7 @@ exports[`test should renders <DeviceDetail> correctly 1`] = `
 
 exports[`test should renders <DeviceDetail> correctly when Menu show 1`] = `
 <div>
-  <HelmetWrapper
-    title="範例 A 的測試裝置" />
+  <HelmetWrapper />
   <MobileHeader
     leftChildren={
       <MobileHeaderIcon
@@ -104,8 +103,7 @@ exports[`test should renders <DeviceDetail> correctly when Menu show 1`] = `
           </Menu>
       </Overlay>,
       ]
-    }
-    title="範例 A 的測試裝置" />
+    } />
   <main>
     <PullToRefresh
       IconArrow={[Function]}

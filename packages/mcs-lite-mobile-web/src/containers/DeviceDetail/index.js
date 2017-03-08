@@ -24,7 +24,7 @@ export default compose(
   connect(mapStateToProps, mapDispatchToProps),
   connectSocket(
     ({ device }) => device && `${wsHost}/deviceId/${device.deviceId}/deviceKey/${device.deviceKey}`,
-    props => datapoint => props.setDatapoint(props.deviceId, datapoint),
+    props => datapoint => props.setDatapoint(props.deviceId, datapoint, true),
     'sendMessage', // propsName
   ),
   withGetMessages(messages, 'DeviceDetail'),
