@@ -21,6 +21,10 @@
     "defaultMessage": "確定要登出？"
   },
   {
+    "id": "DeviceDataChannelDetail.dataChannelDetail",
+    "defaultMessage": "資料通道詳情"
+  },
+  {
     "id": "DeviceDataChannelDetail.historyChart",
     "defaultMessage": "歷史資料圖表"
   },

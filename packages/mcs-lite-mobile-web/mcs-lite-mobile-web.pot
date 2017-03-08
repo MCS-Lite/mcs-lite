@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"POT-Creation-Date: 2017-03-06T09:05:49.983Z\n"
+"POT-Creation-Date: 2017-03-08T07:18:03.582Z\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "MIME-Version: 1.0\n"
@@ -295,6 +295,13 @@ msgstr ""
 #. defaultMessage is:
 #. 觸發條件與動作
 msgid "觸發條件與動作"
+msgstr ""
+
+#: ./messages.json
+#. [DeviceDataChannelDetail.dataChannelDetail]
+#. defaultMessage is:
+#. 資料通道詳情
+msgid "資料通道詳情"
 msgstr ""
 
 #: ./messages.json
