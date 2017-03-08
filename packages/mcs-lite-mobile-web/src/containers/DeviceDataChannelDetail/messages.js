@@ -1,6 +1,10 @@
 import { defineMessages } from 'react-intl';
 
 const messages = defineMessages({
+  'DeviceDataChannelDetail.dataChannelDetail': {
+    id: 'DeviceDataChannelDetail.dataChannelDetail',
+    defaultMessage: '資料通道詳情',
+  },
   'DeviceDataChannelDetail.historyChart': {
     id: 'DeviceDataChannelDetail.historyChart',
     defaultMessage: '歷史資料圖表',

@@ -15,16 +15,6 @@ import updatePathname from '../../utils/updatePathname';
 import dataChannelTypeMapper from '../../utils/dataChannelTypeMapper';
 import datetimeFormat from '../../utils/datetimeFormat';
 
-// const data1 = [
-//   { value: 5, updatedAt: '12-13 00:00' },
-//   { value: 25, updatedAt: '12-13 00:01' },
-//   { value: 75, updatedAt: '12-13 00:02' },
-//   { value: 89, updatedAt: '12-13 00:03' },
-//   { value: 23, updatedAt: '12-13 00:04' },
-//   { value: 41, updatedAt: '12-13 00:05' },
-//   { value: 23, updatedAt: '12-13 00:06' },
-// ];
-
 class DeviceDataChannelDetail extends React.Component {
   static propTypes = {
     device: PropTypes.object,
@@ -74,9 +64,9 @@ class DeviceDataChannelDetail extends React.Component {
 
     return (
       <div>
-        <Helmet title={'資料通道名稱'} />
+        <Helmet title={t('dataChannelDetail')} />
         <MobileHeader.MobileHeader
-          title={'資料通道名稱'}
+          title={t('dataChannelDetail')}
           leftChildren={
             <MobileHeader.MobileHeaderIcon
               component={Link}

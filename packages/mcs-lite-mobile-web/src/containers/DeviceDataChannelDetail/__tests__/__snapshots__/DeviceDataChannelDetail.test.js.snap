@@ -1,7 +1,7 @@
 exports[`test should renders <DeviceDataChannelDetail> correctly 1`] = `
 <div>
   <HelmetWrapper
-    title="資料通道名稱" />
+    title="dataChannelDetail" />
   <MobileHeader
     leftChildren={
       <MobileHeaderIcon
@@ -19,7 +19,7 @@ exports[`test should renders <DeviceDataChannelDetail> correctly 1`] = `
           size="1em" />
       </MobileHeaderIcon>
     }
-    title="資料通道名稱" />
+    title="dataChannelDetail" />
   <main>
     <styled.div />
     <styled.div>
@@ -52,6 +52,10 @@ exports[`test should renders <DeviceDataChannelDetail> correctly 1`] = `
 
 exports[`test should return messages 1`] = `
 Object {
+  "DeviceDataChannelDetail.dataChannelDetail": Object {
+    "defaultMessage": "資料通道詳情",
+    "id": "DeviceDataChannelDetail.dataChannelDetail",
+  },
   "DeviceDataChannelDetail.defaultQueryLatest": Object {
     "defaultMessage": "預設值為顯示最新100筆資料",
     "description": "label hint",
