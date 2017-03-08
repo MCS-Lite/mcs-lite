@@ -9,12 +9,22 @@
     <!-- Allow installing the app to the homescreen -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
     <meta name="theme-color" content="#00A1DE">
-    <!-- For safari -->
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/images/icon_mcs_lite_192.png">
-    <link rel="apple-touch-startup-image" href="%PUBLIC_URL%/images/icon_mcs_lite_192.png">
-    <meta name="apple-mobile-web-app-title" content="MCS Lite">
+
+    <!-- CONFIGURATION for safari ref: http://taylor.fausak.me/2015/01/27/ios-8-web-apps/ -->
+    <!-- Allow web app to be run in full-screen mode. -->
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="#00A1DE">
+    <!-- Make the app title different than the page title. -->
+    <meta name="apple-mobile-web-app-title" content="MCS Lite">
+    <!-- Configure the status bar. -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <!-- Icons ref: https://developer.apple.com/ios/human-interface-guidelines/graphics/app-icon/ -->
+    <link rel="apple-touch-icon-precomposed" href="%PUBLIC_URL%/images/icon_mcs_lite_180.png">
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="%PUBLIC_URL%/images/icon_mcs_lite_120.png">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="%PUBLIC_URL%/images/icon_mcs_lite_152.png">
+    <link rel="apple-touch-icon-precomposed" sizes="167x167" href="%PUBLIC_URL%/images/icon_mcs_lite_167.png">
+    <link rel="apple-touch-icon-precomposed" sizes="180x180" href="%PUBLIC_URL%/images/icon_mcs_lite_180.png">
+    <link rel="apple-touch-icon-precomposed" sizes="1024x1024" href="%PUBLIC_URL%/images/icon_mcs_lite_1024.png">
+
     <!--
       Notice the use of %PUBLIC_URL% in the tag above.
       It will be replaced with the URL of the `public` folder during the build.

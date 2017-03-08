@@ -36,8 +36,8 @@
       "type": "image/png"
     },
     {
-      "src": "/favicon",
-      "sizes": "16x16",
+      "src": "images/favicon.ico",
+      "sizes": "64x64",
       "type": "image/x-icon"
     }
   ],
