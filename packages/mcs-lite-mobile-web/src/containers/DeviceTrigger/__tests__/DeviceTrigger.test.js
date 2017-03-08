@@ -4,10 +4,6 @@ import { shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
 import DeviceTrigger from '../DeviceTrigger';
 
-it('should return messages', () => {
-  expect(require('../messages').default).toMatchSnapshot();
-});
-
 it('should renders <DeviceTrigger> correctly', () => {
   const fetchMock = jest.fn();
   const wrapper = shallow(

@@ -1,0 +1,14 @@
+exports[`test should return messages 1`] = `
+Object {
+  "DeviceDetail.deviceIntro": Object {
+    "defaultMessage": "測試裝置介紹",
+    "description": "dropdown",
+    "id": "DeviceDetail.deviceIntro",
+  },
+  "DeviceDetail.triggerAndAction": Object {
+    "defaultMessage": "觸發條件與動作",
+    "description": "dropdown",
+    "id": "DeviceDetail.triggerAndAction",
+  },
+}
+`;

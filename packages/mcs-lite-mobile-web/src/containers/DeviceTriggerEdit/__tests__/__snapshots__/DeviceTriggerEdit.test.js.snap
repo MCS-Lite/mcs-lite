@@ -29,37 +29,3 @@ exports[`test should renders <DeviceTriggerEdit> correctly 1`] = `
   </main>
 </div>
 `;
-
-exports[`test should return messages 1`] = `
-Object {
-  "DeviceTriggerEdit.and": Object {
-    "defaultMessage": "和",
-    "id": "DeviceTriggerEdit.and",
-  },
-  "DeviceTriggerEdit.between": Object {
-    "defaultMessage": "之間",
-    "id": "DeviceTriggerEdit.between",
-  },
-  "DeviceTriggerEdit.cancel": Object {
-    "defaultMessage": "取消",
-    "id": "DeviceTriggerEdit.cancel",
-  },
-  "DeviceTriggerEdit.editTriggerAndAction": Object {
-    "defaultMessage": "編輯觸發條件與動作",
-    "description": "Title",
-    "id": "DeviceTriggerEdit.editTriggerAndAction",
-  },
-  "DeviceTriggerEdit.greater": Object {
-    "defaultMessage": "大於",
-    "id": "DeviceTriggerEdit.greater",
-  },
-  "DeviceTriggerEdit.save": Object {
-    "defaultMessage": "儲存",
-    "id": "DeviceTriggerEdit.save",
-  },
-  "DeviceTriggerEdit.unit": Object {
-    "defaultMessage": "單位：",
-    "id": "DeviceTriggerEdit.unit",
-  },
-}
-`;

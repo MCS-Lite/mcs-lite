@@ -9,10 +9,6 @@ jest.mock('../../../../package.json', () => ({
   version: '0.0.0',
 }));
 
-it('should return messages', () => {
-  expect(require('../messages').default).toMatchSnapshot();
-});
-
 it('should renders <Account> correctly', () => {
   const wrapper = shallow(
     <Account

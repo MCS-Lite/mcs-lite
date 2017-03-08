@@ -4,10 +4,6 @@ import { shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
 import DeviceDetailInfo from '../DeviceDetailInfo';
 
-it('should return messages', () => {
-  expect(require('../messages').default).toMatchSnapshot();
-});
-
 it('should renders <DeviceDetailInfo> correctly without device data', () => {
   const wrapper = shallow(
     <DeviceDetailInfo

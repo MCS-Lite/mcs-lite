@@ -4,10 +4,6 @@ import { shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
 import DeviceDetail from '../DeviceDetail';
 
-it('should return messages', () => {
-  expect(require('../messages').default).toMatchSnapshot();
-});
-
 it('should renders <DeviceDetail> correctly', () => {
   const fetchMock = jest.fn();
   const wrapper = shallow(
