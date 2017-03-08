@@ -24,3 +24,6 @@ build/
 
 # include (negative ignore)
 !.storybook/
+
+# GitBook
+_book/

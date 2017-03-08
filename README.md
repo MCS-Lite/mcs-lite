@@ -40,6 +40,10 @@
 [mcs-lite-icon-npm]: https://www.npmjs.org/package/mcs-lite-icon
 [mcs-lite-icon-npm-downloads]: https://img.shields.io/npm/dt/mcs-lite-icon.svg?style=flat-square
 
+[mcs-lite-introduction-npm-badge]: https://img.shields.io/npm/v/mcs-lite-introduction.svg?style=flat-square
+[mcs-lite-introduction-npm]: https://www.npmjs.org/package/mcs-lite-introduction
+[mcs-lite-introduction-npm-downloads]: https://img.shields.io/npm/dt/mcs-lite-introduction.svg?style=flat-square
+
 [mcs-lite-mobile-web-npm-badge]: https://img.shields.io/npm/v/mcs-lite-mobile-web.svg?style=flat-square
 [mcs-lite-mobile-web-npm]: https://www.npmjs.org/package/mcs-lite-mobile-web
 [mcs-lite-mobile-web-npm-downloads]: https://img.shields.io/npm/dt/mcs-lite-mobile-web.svg?style=flat-square
@@ -76,6 +80,7 @@
 | `mcs-lite-demo-nextjs` | Demo how to use mcs-lite-ui. | | |
 | `mcs-lite-design` | The source images to be compressed used by MCS Lite | [![npm][mcs-lite-design-npm-badge]][mcs-lite-design-npm] | [![npm downloads][mcs-lite-design-npm-downloads]][mcs-lite-design-npm]
 | `mcs-lite-icon` | Convert SVG icon to React components | [![npm][mcs-lite-icon-npm-badge]][mcs-lite-icon-npm] | [![npm downloads][mcs-lite-icon-npm-downloads]][mcs-lite-icon-npm]
+| `mcs-lite-introduction` | Gitbook for MCS Lite documentation | [![npm][mcs-lite-introduction-npm-badge]][mcs-lite-introduction-npm] | [![npm downloads][mcs-lite-introduction-npm-downloads]][mcs-lite-introduction-npm]
 | `mcs-lite-mobile-web` | MCS Lite Mobile Web | [![npm][mcs-lite-mobile-web-npm-badge]][mcs-lite-mobile-web-npm] | [![npm downloads][mcs-lite-mobile-web-npm-downloads]][mcs-lite-mobile-web-npm]
 | `mcs-lite-scripts` | Shared scripts and CLI used by MCS Lite | [![npm][mcs-lite-scripts-npm-badge]][mcs-lite-scripts-npm] | [![npm downloads][mcs-lite-scripts-npm-downloads]][mcs-lite-scripts-npm]
 | `mcs-lite-theme` | Defined `Theme` and helpers for `mcs-lite-ui` | [![npm][mcs-lite-theme-npm-badge]][mcs-lite-theme-npm] | [![npm downloads][mcs-lite-theme-npm-downloads]][mcs-lite-theme-npm]
@@ -139,6 +144,7 @@ $ npm run test:watch
 | `mcs-lite-demo-nextjs`      |       |      | V     |       |               |           |
 | `mcs-lite-design`           | V     |      |       | V     |               |           |
 | `mcs-lite-icon`             | V     |      |       | V     |               |           |
+| `mcs-lite-introduction`     | V     |      |       | V     |               |           |
 | `mcs-lite-mobile-web`       | V     | V    | V     | V     |               |           |
 | `mcs-lite-scripts`          | V     |      |       | V     |               |           |
 | `mcs-lite-theme`            | V     |      |       | V     |               |           |
