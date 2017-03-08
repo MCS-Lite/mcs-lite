@@ -14,6 +14,7 @@ import { ThemeProvider } from 'styled-components';
 import IntlProvider from './containers/IntlProvider';
 import mobileTheme from './utils/mobileTheme';
 import Layout from './components/Layout';
+import App from './containers/App';
 import DeviceList from './containers/DeviceList';
 import DeviceDetail from './containers/DeviceDetail';
 import DeviceDetailInfo from './containers/DeviceDetailInfo';
@@ -25,7 +26,6 @@ import Signin from './containers/Signin';
 import Account from './containers/Account';
 import Password from './containers/Password';
 import RequireAuth from './containers/RequireAuth';
-import Toast from './containers/Toast';
 import configureStore from './store/configureStore';
 import './style';
 import './utils/i18n';
@@ -53,7 +53,7 @@ ReactDOM.render(
     <IntlProvider defaultLocale={DEFAULT_LOCALE}>
       <ThemeProvider theme={mobileTheme}>
         <Router history={routerHistory} render={render}>
-          <Route component={Toast}>
+          <Route component={App}>
             <Route path="/signin" component={Signin} />
             <Route path="/" component={RequireAuth}>
               <IndexRedirect to="devices" />

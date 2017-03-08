@@ -1,11 +1,18 @@
 msgid ""
 msgstr ""
-"POT-Creation-Date: 2017-03-08T07:18:03.582Z\n"
+"POT-Creation-Date: 2017-03-08T07:56:47.307Z\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "MIME-Version: 1.0\n"
 "X-Generator: react-intl-po\n"
 
+
+#: ./messages.json
+#. [App.titleTemplate] - For document title
+#. defaultMessage is:
+#. MCS Lite Mobile
+msgid "MCS Lite Mobile"
+msgstr ""
 
 #: ./messages.json
 #. [DeviceTrigger.off]

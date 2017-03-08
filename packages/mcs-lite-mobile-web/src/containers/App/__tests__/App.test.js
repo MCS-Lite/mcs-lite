@@ -1,11 +1,13 @@
 import React from 'react';
+import R from 'ramda';
 import { shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
-import Toast from '../Toast';
+import App from '../App';
 
-it('should renders <Toast> correctly without toasts', () => {
+it('should renders <App> correctly without toasts', () => {
   const wrapper = shallow(
-    <Toast
+    <App
+      getMessages={R.identity}
       toasts={[]}
     />,
   );
@@ -14,9 +16,10 @@ it('should renders <Toast> correctly without toasts', () => {
 });
 
 
-it('should renders <Toast> correctly with toasts', () => {
+it('should renders <App> correctly with toasts', () => {
   const wrapper = shallow(
-    <Toast
+    <App
+      getMessages={R.identity}
       toasts={[{ key: 'key', kind: 'kind', children: 'children' }]}
     />,
   );
