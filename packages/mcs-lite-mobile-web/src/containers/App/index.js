@@ -1,8 +1,8 @@
 import { connect } from 'react-redux';
-import Toast from './Toast';
+import App from './App';
 
 export const mapStateToProps = ({ ui }) => ({
   toasts: ui.toasts,
 });
 
-export default connect(mapStateToProps)(Toast);
+export default connect(mapStateToProps)(App);
