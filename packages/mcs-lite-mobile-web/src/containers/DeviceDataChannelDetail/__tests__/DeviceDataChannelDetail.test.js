@@ -4,10 +4,6 @@ import { shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
 import DeviceDataChannelDetail from '../DeviceDataChannelDetail';
 
-it('should return messages', () => {
-  expect(require('../messages').default).toMatchSnapshot();
-});
-
 it('should renders <DeviceDataChannelDetail> correctly', () => {
   const fetchDeviceMock = jest.fn();
   const fetchDatapointsMock = jest.fn();
