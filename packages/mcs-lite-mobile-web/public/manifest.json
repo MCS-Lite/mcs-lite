@@ -1,6 +1,6 @@
 {
-  "name": "MediaTek Cloud Sandbox Lite",
-  "short_name": "MCSLite",
+  "name": "MCS Lite",
+  "short_name": "MCS Lite",
   "description": "MediaTek Cloud Sandbox Lite",
   "start_url": "./",
   "lang": "zh-TW",
@@ -36,8 +36,8 @@
       "type": "image/png"
     },
     {
-      "src": "/favicon",
-      "sizes": "16x16",
+      "src": "images/favicon.ico",
+      "sizes": "64x64",
       "type": "image/x-icon"
     }
   ],
