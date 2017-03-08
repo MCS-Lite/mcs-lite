@@ -9,9 +9,6 @@
     "email": "evenchange4@gmail.com"
   },
   "homepage": "https://github.com/evenchange4/mcs-lite#readme",
-  "files": [
-    "_book"
-  ],
   "license": "ISC",
   "scripts": {
     "clean": "rm -rf _book",

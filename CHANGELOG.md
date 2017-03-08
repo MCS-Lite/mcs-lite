@@ -2,6 +2,15 @@
 
 ## Released (2017-03-08)
 
+### Bump Versions
+
+-   mcs-lite-demo-nextjs@0.1.6
+-   mcs-lite-design@0.1.3
+-   mcs-lite-icon@0.1.5
+-   mcs-lite-introduction@0.1.2 😍
+-   mcs-lite-mobile-web@0.1.8
+-   mcs-lite-ui@0.1.6
+
 #### :rocket: New Feature
 * `mcs-lite-mobile-web`
   * [#199](https://github.com/evenchange4/mcs-lite/pull/199) feat(App/Title): setup react-helmet at root App container. ([@evenchange4](https://github.com/evenchange4))
