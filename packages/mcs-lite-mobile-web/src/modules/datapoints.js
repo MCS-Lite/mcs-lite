@@ -1,4 +1,3 @@
-// import { Observable } from 'rxjs/Observable';
 import R from 'ramda';
 import { constants as devicesConstants } from './devices';
 
@@ -27,11 +26,13 @@ const fetchDatapoints = (deviceId, dataChannelId) =>
 const setDatapoints = payload => ({ type: SET_DATAPOINTS, payload });
 const appendDatapoint = ({ dataChannelId, values }) =>
   ({ type: APPEND_DATAPOINT, payload: { dataChannelId, values }});
+const clear = () => ({ type: CLEAR });
 
 export const actions = {
   fetchDatapoints,
   setDatapoints,
   appendDatapoint,
+  clear,
 };
 
 // ----------------------------------------------------------------------------
@@ -111,6 +112,7 @@ export default function reducer(state = initialState, action = {}) {
     case SET_DATAPOINTS:
       return {
         ...state,
+        // TODO: api should move datachannelId upper scope.
         [action.payload[0].datachannelId]: action.payload,
       };
     case APPEND_DATAPOINT: {
@@ -119,7 +121,8 @@ export default function reducer(state = initialState, action = {}) {
       const nextDatapoints = R.pipe(
         R.append({
           values: action.payload.values,
-          updatedAt: new Date().valueOf(),
+          // TODO: Should I create a new datetime here?
+          updatedAt: action.payload.updatedAt || new Date().valueOf(),
         }),
         R.takeLast(100),
       )(datapoints);
@@ -130,6 +133,7 @@ export default function reducer(state = initialState, action = {}) {
         [dataChannelId]: nextDatapoints,
       };
     }
+
     case CLEAR:
       return initialState;
     default:

@@ -5,6 +5,7 @@ import { Observable } from 'rxjs/Observable';
 import R from 'ramda';
 import { actions as routingActions } from './routing';
 import { actions as devicesActions } from './devices';
+import { actions as datapointsActions } from './datapoints';
 import { actions as uiActions } from './ui';
 import cookieHelper from '../utils/cookieHelper';
 
@@ -115,6 +116,7 @@ function signoutCycle(sources) {
       routingActions.pushPathname('/signin'),
       clear(),
       devicesActions.clear(),
+      datapointsActions.clear(),
     ))
     .do(cookieHelper.removeCookieToken);
 

@@ -33,6 +33,7 @@ Object {
   "payload": Object {
     "datapoint": Object {},
     "deviceId": "deviceId",
+    "isFromServer": undefined,
   },
   "type": "mcs-lite-mobile-web/devices/SET_DATAPOINT",
 }
