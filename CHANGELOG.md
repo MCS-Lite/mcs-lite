@@ -1,5 +1,28 @@
 # MCS Lite changelogs
 
+## Released (2017-03-08)
+
+#### :rocket: New Feature
+* `mcs-lite-mobile-web`
+  * [#199](https://github.com/evenchange4/mcs-lite/pull/199) feat(App/Title): setup react-helmet at root App container. ([@evenchange4](https://github.com/evenchange4))
+  * [#194](https://github.com/evenchange4/mcs-lite/pull/194) feat(Module/Datapoints): add new History chart for data channels. ([@evenchange4](https://github.com/evenchange4))
+* `mcs-lite-design`, `mcs-lite-mobile-web`
+  * [#197](https://github.com/evenchange4/mcs-lite/pull/197) feat(Logo/icons): add iPhone icons for safari add-to-homescreen feature. ([@evenchange4](https://github.com/evenchange4))
+
+#### :memo: Documentation
+* `mcs-lite-introduction`
+  * [#202](https://github.com/evenchange4/mcs-lite/pull/202) docs(Resources): create package for each documents.. ([@dariachen](https://github.com/dariachen))
+
+#### :house: Internal
+* `mcs-lite-mobile-web`
+  * [#200](https://github.com/evenchange4/mcs-lite/pull/200) test(i18n): extract messages.tests. ([@evenchange4](https://github.com/evenchange4))
+
+#### Committers: 2
+- Daria Chen ([dariachen](https://github.com/dariachen))
+- Michael Hsu ([evenchange4](https://github.com/evenchange4))
+
+----
+
 ## Released (2017-03-07)
 
 **This release just for testing release flow.**
