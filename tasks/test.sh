@@ -16,3 +16,4 @@ echo '💪  Start testing for building demo page';
 ## Test for building demo page
 node_modules/.bin/lerna run build-storybook --scope mcs-lite-ui
 node_modules/.bin/lerna run build --scope mcs-lite-mobile-web
+node_modules/.bin/lerna run build --scope mcs-lite-introduction
