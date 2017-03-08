@@ -9,8 +9,8 @@
 > Note: MCS Lite core and Desktop website is being developed at https://github.com/iamblue/mcs-lite-app.
 
 -   Try UI online - http://mcs-lite-ui.netlify.com/
-
-* [Developer Guide](./docs/README.md)
+-   Introduction - http://mcs-lite-introduction.netlify.com/
+-   [Developer Guide](./docs/README.md)
 
 
 ## Requirements
