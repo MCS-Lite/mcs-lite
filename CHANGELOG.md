@@ -2,6 +2,22 @@
 
 ## Released (2017-03-09)
 
+#### :rocket: New Feature
+* `mcs-lite-introduction`
+  * [#205](https://github.com/evenchange4/mcs-lite/pull/205) feat(mcs-lite-introduction): change the folder name to lower cases and add i18n feature. ([@dariachen](https://github.com/dariachen))
+
+#### :bug: Bug Fix
+* `mcs-lite-ui`
+  * [#208](https://github.com/evenchange4/mcs-lite/pull/208) test(DataChannelAdapter): add tests. ([@evenchange4](https://github.com/evenchange4))
+
+#### Committers: 1
+- Daria Chen ([dariachen](https://github.com/dariachen))
+- Michael Hsu ([evenchange4](https://github.com/evenchange4))
+
+----
+
+## Released (2017-03-09)
+
 ### Bump Versions
 
 -   mcs-lite-introduction@0.1.3
