@@ -76,7 +76,7 @@ class DataChannelAdapter extends React.Component {
         <DataChannel.ControlNumber
           placeholder="Integer only"
           unit={`單位：${format.unit}`}
-          value={values.value ? parseInt(values.value, 10) : ''}
+          value={R.isNil(values.value) ? '' : parseInt(values.value, 10)}
           onSubmit={() => eventHandler({ type: 'submit', id, values })}
           onChange={e => eventHandler({ type: 'change', id, values: { value: e.target.value }})}
           onClear={() => eventHandler({ type: 'clear', id, values: 0 })}
@@ -84,14 +84,14 @@ class DataChannelAdapter extends React.Component {
       ],
       [R.equals('INTEGER_DISPLAY'), () =>
         <DataChannel.DisplayUnitValue
-          value={values.value || NO_DATA_PLACEHOLDER}
+          value={R.isNil(values.value) ? NO_DATA_PLACEHOLDER : values.value}
           unit={format.unit}
         />,
       ],
       [R.equals('STRING_CONTROL'), () =>
         <DataChannel.ControlString
           placeholder="String only"
-          value={values.value || ''}
+          value={R.isNil(values.value) ? '' : values.value}
           onSubmit={() => eventHandler({ type: 'submit', id, values })}
           onChange={e => eventHandler({ type: 'change', id, values: { value: e.target.value }})}
           onClear={() => eventHandler({ type: 'clear', id, values: 0 })}
@@ -106,7 +106,7 @@ class DataChannelAdapter extends React.Component {
       [R.equals('HEX_CONTROL'), () =>
         <DataChannel.ControlString
           placeholder="Hex only"
-          value={values.value || ''}
+          value={R.isNil(values.value) ? '' : values.value}
           onSubmit={() => eventHandler({ type: 'submit', id, values })}
           onChange={e => eventHandler({ type: 'change', id, values: { value: e.target.value }})}
           onClear={() => eventHandler({ type: 'clear', id, values: 0 })}
@@ -115,12 +115,12 @@ class DataChannelAdapter extends React.Component {
       [R.equals('HEX_DISPLAY'), () =>
         <DataChannel.DisplayString
           placeholder="String only"
-          value={values.value || ''}
+          value={R.isNil(values.value) ? '' : values.value}
         />,
       ],
       [R.equals('FLOAT_DISPLAY'), () =>
         <DataChannel.DisplayUnitValue
-          value={values.value || NO_DATA_PLACEHOLDER}
+          value={R.isNil(values.value) ? NO_DATA_PLACEHOLDER : values.value}
           unit={format.unit}
         />,
       ],
@@ -128,7 +128,7 @@ class DataChannelAdapter extends React.Component {
         <DataChannel.ControlNumber
           placeholder="Float only"
           unit={`單位：${format.unit}`}
-          value={values.value ? parseFloat(values.value, 10) : ''}
+          value={R.isNil(values.value) ? '' : parseInt(values.value, 10)}
           onSubmit={() => eventHandler({ type: 'submit', id, values })}
           onChange={e => eventHandler({ type: 'change', id, values: { value: e.target.value }})}
           onClear={() => eventHandler({ type: 'clear', id, values: 0 })}
@@ -140,7 +140,7 @@ class DataChannelAdapter extends React.Component {
 
         return (
           <DataChannel.ControlRange
-            value={values.value || ''}
+            value={R.isNil(values.value) ? '' : values.value}
             labels={labels}
             valueMapper={valueMapper}
             onChange={e => eventHandler({
@@ -172,7 +172,7 @@ class DataChannelAdapter extends React.Component {
 
         return (
           <DataChannel.ControlRange
-            value={value || ''}
+            value={R.isNil(value) ? '' : value}
             labels={format.items.map(R.prop('name'))}
             valueMapper={valueMapper}
             onChange={e => eventHandler({
@@ -205,7 +205,7 @@ class DataChannelAdapter extends React.Component {
 
         return (
           <DataChannel.ControlRange
-            value={values.value || ''}
+            value={R.isNil(values.value) ? '' : values.value}
             valueMapper={valueMapper}
             labels={[
               parseFloat(format.lowerbound, 10),
@@ -227,18 +227,18 @@ class DataChannelAdapter extends React.Component {
       [R.equals('PWM_DISPLAY'), () =>
         <DataChannel.DisplayMultipleValue
           items={[
-            { name: 'Value', value: values.value || NO_DATA_PLACEHOLDER },
-            { name: 'Period', value: values.period || NO_DATA_PLACEHOLDER },
+            { name: 'Value', value: R.isNil(values.value) ? NO_DATA_PLACEHOLDER : values.value },
+            { name: 'Period', value: R.isNil(values.period) ? NO_DATA_PLACEHOLDER : values.period },
           ]}
         />,
       ],
       [R.equals('PWM_CONTROL'), () => {
-        const valueMapper = index => index || NO_DATA_PLACEHOLDER;
+        const valueMapper = index => R.isNil(index) ? NO_DATA_PLACEHOLDER : index;
 
         return (
           <Wrapper>
             <DataChannel.ControlPeriod
-              value={values.period}
+              value={R.isNil(values.period) ? '' : values.period}
               onSubmit={() => eventHandler({ type: 'submit', id, values })}
               onChange={e => eventHandler({
                 type: 'change',
@@ -248,7 +248,7 @@ class DataChannelAdapter extends React.Component {
               placeholder="Integer only"
             />
             <DataChannel.ControlRange
-              value={values.value ? parseFloat(values.value, 10) : ''}
+              value={R.isNil(values.value) ? '' : parseFloat(values.value, 10)}
               valueMapper={valueMapper}
               labels={[
                 parseFloat(format.lowerbound, 10),

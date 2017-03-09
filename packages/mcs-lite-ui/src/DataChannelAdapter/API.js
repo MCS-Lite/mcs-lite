@@ -2,7 +2,7 @@ const DATA_CHANNELS = [
   {
     id: 'Integer Control id',
     type: 'INTEGER_CONTROL',
-    values: { value: 50 },
+    values: { value: 0 },
     format: {
       unit: 'ampere',
     },
@@ -10,7 +10,7 @@ const DATA_CHANNELS = [
   {
     id: 'Integer Display id',
     type: 'INTEGER_DISPLAY',
-    values: { value: 50 },
+    values: { value: 0 },
     format: {
       unit: 'ampere',
     },
@@ -18,7 +18,7 @@ const DATA_CHANNELS = [
   {
     id: 'Float Control id',
     type: 'FLOAT_CONTROL',
-    values: { value: 50.1235 },
+    values: {},
     format: {
       unit: 'ampere',
     },
@@ -26,7 +26,7 @@ const DATA_CHANNELS = [
   {
     id: 'Float Display id',
     type: 'FLOAT_DISPLAY',
-    values: { value: 50.55252 },
+    values: {},
     format: {
       unit: 'ampere',
     },
@@ -122,9 +122,9 @@ const DATA_CHANNELS = [
   {
     id: 'PWM Control',
     type: 'PWM_CONTROL',
-    values: { value: 1, period: 20 },
+    values: { value: 0, period: 0 },
     format: {
-      lowerbound: 1,
+      lowerbound: 0,
       upperbound: 100,
     },
   },
