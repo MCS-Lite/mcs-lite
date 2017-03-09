@@ -200,7 +200,7 @@ class DataChannelAdapter extends React.Component {
       }],
       [R.equals('GPIO_DISPLAY'), () =>
         <DataChannel.DisplayStatus
-          value={R.isNil(values.value) ? '' : values.value}
+          value={R.isNil(values.value) ? undefined : values.value}
           labels={['Low', 'High']}
         />,
       ],
