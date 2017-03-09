@@ -125,36 +125,52 @@ class DataChannelAdapter extends React.Component {
           unit={format.unit}
         />,
       ],
+
+      /**
+       * String
+       *
+       * @author Michael Hsu
+       */
+
       [R.equals('STRING_CONTROL'), () =>
         <DataChannel.ControlString
           placeholder="String only"
           value={R.isNil(values.value) ? '' : values.value}
           onSubmit={() => eventHandler({ type: 'submit', id, values })}
           onChange={e => eventHandler({ type: 'change', id, values: { value: e.target.value }})}
-          onClear={() => eventHandler({ type: 'clear', id, values: 0 })}
+          onClear={() => eventHandler({ type: 'clear', id, values: '' })}
         />,
       ],
       [R.equals('STRING_DISPLAY'), () =>
         <DataChannel.DisplayString
           placeholder="String only"
-          value={values.value}
+          value={R.isNil(values.value) ? '' : values.value}
         />,
       ],
+
+      /**
+       * HEX
+       *
+       * @author Michael Hsu
+       */
+
       [R.equals('HEX_CONTROL'), () =>
         <DataChannel.ControlString
           placeholder="Hex only"
           value={R.isNil(values.value) ? '' : values.value}
           onSubmit={() => eventHandler({ type: 'submit', id, values })}
           onChange={e => eventHandler({ type: 'change', id, values: { value: e.target.value }})}
-          onClear={() => eventHandler({ type: 'clear', id, values: 0 })}
+          onClear={() => eventHandler({ type: 'clear', id, values: '' })}
         />,
       ],
       [R.equals('HEX_DISPLAY'), () =>
         <DataChannel.DisplayString
-          placeholder="String only"
+          placeholder="Hex only"
           value={R.isNil(values.value) ? '' : values.value}
         />,
       ],
+
+
       [R.equals('GPIO_CONTROL'), () => {
         const labels = ['Low', 'High'];
         const valueMapper = index => index ? labels[index] : NO_DATA_PLACEHOLDER;
