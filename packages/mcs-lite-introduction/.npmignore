@@ -1,3 +1,2 @@
-*.md
-assets
-book.json
+*
+!_book/**
