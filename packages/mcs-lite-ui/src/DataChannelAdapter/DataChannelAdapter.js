@@ -75,7 +75,7 @@ class DataChannelAdapter extends React.Component {
       [R.equals('INTEGER_CONTROL'), () =>
         <DataChannel.ControlNumber
           placeholder="Integer only"
-          unit={`單位：${format.unit}`}
+          unit={format.unit && `單位：${format.unit}`}
           value={R.isNil(values.value) ? '' : parseInt(values.value, 10)}
           onSubmit={() => eventHandler({ type: 'submit', id, values })}
           onChange={e => eventHandler({ type: 'change', id, values: { value: e.target.value }})}
