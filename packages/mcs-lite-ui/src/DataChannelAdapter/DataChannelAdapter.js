@@ -251,7 +251,7 @@ class DataChannelAdapter extends React.Component {
       }],
 
       /**
-       * Analog
+       * Analog (Control only)
        *
        * @author Michael Hsu
        */
@@ -284,6 +284,11 @@ class DataChannelAdapter extends React.Component {
         );
       }],
 
+      /**
+       * PWM
+       *
+       * @author Michael Hsu
+       */
 
       [R.equals('PWM_DISPLAY'), () =>
         <DataChannel.DisplayMultipleValue
@@ -294,7 +299,10 @@ class DataChannelAdapter extends React.Component {
         />,
       ],
       [R.equals('PWM_CONTROL'), () => {
-        const valueMapper = index => R.isNil(index) ? NO_DATA_PLACEHOLDER : index;
+        // Hint: index could be empty string. (For Controlled Component usage.)
+        const valueMapper = index => R.isNil(index) || R.isEmpty(index)
+          ? NO_DATA_PLACEHOLDER
+          : index;
 
         return (
           <Wrapper>
