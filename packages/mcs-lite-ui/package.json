@@ -36,6 +36,11 @@
       "!src/**/*.test.{js,jsx}",
       "!src/**/*.example.{js,jsx}"
     ],
+    "testPathIgnorePatterns": [
+      "<rootDir>/node_modules/",
+      "<rootDir>/lib/",
+      "<rootDir>/flow-typed/"
+    ],
     "snapshotSerializers": [
       "enzyme-to-json/serializer"
     ],
