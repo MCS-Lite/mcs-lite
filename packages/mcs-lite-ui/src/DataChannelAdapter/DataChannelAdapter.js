@@ -170,10 +170,15 @@ class DataChannelAdapter extends React.Component {
         />,
       ],
 
+      /**
+       * GPIO
+       *
+       * @author Michael Hsu
+       */
 
       [R.equals('GPIO_CONTROL'), () => {
         const labels = ['Low', 'High'];
-        const valueMapper = index => index ? labels[index] : NO_DATA_PLACEHOLDER;
+        const valueMapper = index => R.isNil(index) ? NO_DATA_PLACEHOLDER : labels[index];
 
         return (
           <DataChannel.ControlRange
@@ -195,10 +200,11 @@ class DataChannelAdapter extends React.Component {
       }],
       [R.equals('GPIO_DISPLAY'), () =>
         <DataChannel.DisplayStatus
-          value={values.value}
+          value={R.isNil(values.value) ? '' : values.value}
           labels={['Low', 'High']}
         />,
       ],
+
       [R.equals('CATEGORY_CONTROL'), () => {
         const value = values.value
           ? R.findIndex(R.propEq('value', values.value))(format.items)
