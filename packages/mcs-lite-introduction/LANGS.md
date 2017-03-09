@@ -1,5 +1,5 @@
 # Languages
 
 * [English](en/)
-* [Traditional Chinese](zh-tw/)
-* [Simplified Chinese](zh-cn/)
+* [繁體中文](zh-tw/)
+* [简体中文](zh-cn/)
