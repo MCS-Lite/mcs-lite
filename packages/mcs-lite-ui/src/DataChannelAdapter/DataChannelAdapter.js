@@ -56,6 +56,13 @@ class DataChannelAdapter extends React.Component {
     const { id, values, type, format } = dataChannelProps;
 
     return R.cond([
+
+      /**
+       * Switch
+       *
+       * @author Michael Hsu
+       */
+
       [R.equals('SWITCH_CONTROL'), () =>
         <DataChannel.ControlSwitch
           value={Boolean(values.value)}
@@ -72,11 +79,18 @@ class DataChannelAdapter extends React.Component {
           labels={['OFF', 'ON']}
         />,
       ],
+
+      /**
+       * Integer
+       *
+       * @author Michael Hsu
+       */
+
       [R.equals('INTEGER_CONTROL'), () =>
         <DataChannel.ControlNumber
           placeholder="Integer only"
-          unit={`單位：${format.unit}`}
-          value={values.value ? parseInt(values.value, 10) : ''}
+          unit={format.unit && `單位：${format.unit}`}
+          value={R.isNil(values.value) ? '' : parseInt(values.value, 10)}
           onSubmit={() => eventHandler({ type: 'submit', id, values })}
           onChange={e => eventHandler({ type: 'change', id, values: { value: e.target.value }})}
           onClear={() => eventHandler({ type: 'clear', id, values: 0 })}
@@ -84,63 +98,91 @@ class DataChannelAdapter extends React.Component {
       ],
       [R.equals('INTEGER_DISPLAY'), () =>
         <DataChannel.DisplayUnitValue
-          value={values.value || NO_DATA_PLACEHOLDER}
+          value={R.isNil(values.value) ? NO_DATA_PLACEHOLDER : parseInt(values.value, 10)}
           unit={format.unit}
         />,
       ],
-      [R.equals('STRING_CONTROL'), () =>
-        <DataChannel.ControlString
-          placeholder="String only"
-          value={values.value || ''}
+
+      /**
+       * Float
+       *
+       * @author Michael Hsu
+       */
+
+      [R.equals('FLOAT_CONTROL'), () =>
+        <DataChannel.ControlNumber
+          placeholder="Float only"
+          unit={format.unit && `單位：${format.unit}`}
+          value={R.isNil(values.value) ? '' : parseFloat(values.value, 10)}
           onSubmit={() => eventHandler({ type: 'submit', id, values })}
           onChange={e => eventHandler({ type: 'change', id, values: { value: e.target.value }})}
           onClear={() => eventHandler({ type: 'clear', id, values: 0 })}
+        />,
+      ],
+      [R.equals('FLOAT_DISPLAY'), () =>
+        <DataChannel.DisplayUnitValue
+          value={R.isNil(values.value) ? NO_DATA_PLACEHOLDER : parseFloat(values.value, 10)}
+          unit={format.unit}
+        />,
+      ],
+
+      /**
+       * String
+       *
+       * @author Michael Hsu
+       */
+
+      [R.equals('STRING_CONTROL'), () =>
+        <DataChannel.ControlString
+          placeholder="String only"
+          value={R.isNil(values.value) ? '' : values.value}
+          onSubmit={() => eventHandler({ type: 'submit', id, values })}
+          onChange={e => eventHandler({ type: 'change', id, values: { value: e.target.value }})}
+          onClear={() => eventHandler({ type: 'clear', id, values: '' })}
         />,
       ],
       [R.equals('STRING_DISPLAY'), () =>
         <DataChannel.DisplayString
           placeholder="String only"
-          value={values.value}
+          value={R.isNil(values.value) ? '' : values.value}
         />,
       ],
+
+      /**
+       * HEX
+       *
+       * @author Michael Hsu
+       */
+
       [R.equals('HEX_CONTROL'), () =>
         <DataChannel.ControlString
           placeholder="Hex only"
-          value={values.value || ''}
+          value={R.isNil(values.value) ? '' : values.value}
           onSubmit={() => eventHandler({ type: 'submit', id, values })}
           onChange={e => eventHandler({ type: 'change', id, values: { value: e.target.value }})}
-          onClear={() => eventHandler({ type: 'clear', id, values: 0 })}
+          onClear={() => eventHandler({ type: 'clear', id, values: '' })}
         />,
       ],
       [R.equals('HEX_DISPLAY'), () =>
         <DataChannel.DisplayString
-          placeholder="String only"
-          value={values.value || ''}
+          placeholder="Hex only"
+          value={R.isNil(values.value) ? '' : values.value}
         />,
       ],
-      [R.equals('FLOAT_DISPLAY'), () =>
-        <DataChannel.DisplayUnitValue
-          value={values.value || NO_DATA_PLACEHOLDER}
-          unit={format.unit}
-        />,
-      ],
-      [R.equals('FLOAT_CONTROL'), () =>
-        <DataChannel.ControlNumber
-          placeholder="Float only"
-          unit={`單位：${format.unit}`}
-          value={values.value ? parseFloat(values.value, 10) : ''}
-          onSubmit={() => eventHandler({ type: 'submit', id, values })}
-          onChange={e => eventHandler({ type: 'change', id, values: { value: e.target.value }})}
-          onClear={() => eventHandler({ type: 'clear', id, values: 0 })}
-        />,
-      ],
+
+      /**
+       * GPIO
+       *
+       * @author Michael Hsu
+       */
+
       [R.equals('GPIO_CONTROL'), () => {
         const labels = ['Low', 'High'];
-        const valueMapper = index => index ? labels[index] : NO_DATA_PLACEHOLDER;
+        const valueMapper = index => labels[index] || NO_DATA_PLACEHOLDER;
 
         return (
           <DataChannel.ControlRange
-            value={values.value || ''}
+            value={R.isNil(values.value) ? '' : values.value}
             labels={labels}
             valueMapper={valueMapper}
             onChange={e => eventHandler({
@@ -158,54 +200,71 @@ class DataChannelAdapter extends React.Component {
       }],
       [R.equals('GPIO_DISPLAY'), () =>
         <DataChannel.DisplayStatus
-          value={values.value}
+          value={R.isNil(values.value) ? undefined : values.value}
           labels={['Low', 'High']}
         />,
       ],
+
+      /**
+       * Category
+       *
+       * @author Michael Hsu
+       */
+
       [R.equals('CATEGORY_CONTROL'), () => {
-        const value = values.value
-          ? R.findIndex(R.propEq('value', values.value))(format.items)
-          : undefined;
-        const valueMapper = index => index
+        const value = R.isNil(values.value)
+          ? undefined
+          : R.findIndex(R.propEq('value', values.value))(format.items);
+        const valueMapper = index => format.items[index]
           ? format.items[index].value
           : NO_DATA_PLACEHOLDER;
 
         return (
           <DataChannel.ControlRange
-            value={value || ''}
-            labels={format.items.map(R.prop('name'))}
+            value={value}
+            labels={R.pluck('name')(format.items)}
             valueMapper={valueMapper}
             onChange={e => eventHandler({
               type: 'change',
               id,
-              values: { value: valueMapper(e.target.value), period: values.period },
+              values: { value: valueMapper(e.target.value) },
             })}
             onSubmit={() => eventHandler({
               type: 'submit',
               id,
-              values: { value: valueMapper(values.value), period: values.period },
+              values: { value: valueMapper(values.value) },
             })}
           />
         );
       }],
       [R.equals('CATEGORY_DISPLAY'), () => {
-        const value = values.value
-          ? R.findIndex(R.propEq('value', values.value))(format.items)
-          : undefined;
+        const value = R.isNil(values.value)
+          ? undefined
+          : R.findIndex(R.propEq('value', values.value))(format.items);
 
         return (
           <DataChannel.DisplayStatus
             value={value}
-            labels={format.items.map(R.prop('name'))}
+            labels={R.pluck('name')(format.items)}
           />
         );
       }],
+
+      /**
+       * Analog (Control only)
+       *
+       * @author Michael Hsu
+       */
+
       [R.equals('ANALOG_CONTROL'), () => {
-        const valueMapper = index => index || NO_DATA_PLACEHOLDER;
+        // Hint: index could be empty string. (For Controlled Component usage.)
+        const valueMapper = index => R.isNil(index) || R.isEmpty(index)
+          ? NO_DATA_PLACEHOLDER
+          : index;
 
         return (
           <DataChannel.ControlRange
-            value={values.value || ''}
+            value={R.isNil(values.value) ? '' : values.value}
             valueMapper={valueMapper}
             labels={[
               parseFloat(format.lowerbound, 10),
@@ -224,21 +283,31 @@ class DataChannelAdapter extends React.Component {
           />
         );
       }],
+
+      /**
+       * PWM
+       *
+       * @author Michael Hsu
+       */
+
       [R.equals('PWM_DISPLAY'), () =>
         <DataChannel.DisplayMultipleValue
           items={[
-            { name: 'Value', value: values.value || NO_DATA_PLACEHOLDER },
-            { name: 'Period', value: values.period || NO_DATA_PLACEHOLDER },
+            { name: 'Value', value: R.isNil(values.value) ? NO_DATA_PLACEHOLDER : values.value },
+            { name: 'Period', value: R.isNil(values.period) ? NO_DATA_PLACEHOLDER : values.period },
           ]}
         />,
       ],
       [R.equals('PWM_CONTROL'), () => {
-        const valueMapper = index => index || NO_DATA_PLACEHOLDER;
+        // Hint: index could be empty string. (For Controlled Component usage.)
+        const valueMapper = index => R.isNil(index) || R.isEmpty(index)
+          ? NO_DATA_PLACEHOLDER
+          : index;
 
         return (
           <Wrapper>
             <DataChannel.ControlPeriod
-              value={values.period}
+              value={R.isNil(values.period) ? '' : values.period}
               onSubmit={() => eventHandler({ type: 'submit', id, values })}
               onChange={e => eventHandler({
                 type: 'change',
@@ -248,7 +317,7 @@ class DataChannelAdapter extends React.Component {
               placeholder="Integer only"
             />
             <DataChannel.ControlRange
-              value={values.value ? parseFloat(values.value, 10) : ''}
+              value={R.isNil(values.value) ? '' : parseFloat(values.value, 10)}
               valueMapper={valueMapper}
               labels={[
                 parseFloat(format.lowerbound, 10),

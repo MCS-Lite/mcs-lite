@@ -1,0 +1,344 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render HEX_CONTROL correctly with default value to empty 1`] = `
+<DataChannelAdapter
+  dataChannelProps={
+    Object {
+      "format": Object {},
+      "id": "id",
+      "type": "HEX_CONTROL",
+      "values": Object {},
+    }
+  }
+  eventHandler={[Function]}
+>
+  <ControlString
+    onChange={[Function]}
+    onClear={[Function]}
+    onSubmit={[Function]}
+    placeholder="Hex only"
+    value=""
+  >
+    <styled.div>
+      <div
+        className="lkjDmd"
+      >
+        <styled.textarea
+          kind="primary"
+          onChange={[Function]}
+          placeholder="Hex only"
+          value=""
+        >
+          <textarea
+            className="haOaRY"
+            kind="primary"
+            onChange={[Function]}
+            placeholder="Hex only"
+            value=""
+          />
+        </styled.textarea>
+        <styled.div>
+          <div
+            className="gkMZXk"
+          >
+            <ButtonClear
+              onClick={[Function]}
+            >
+              <P
+                onClick={[Function]}
+              >
+                <Component
+                  className="gVViGF"
+                  onClick={[Function]}
+                >
+                  <div
+                    className="gVViGF"
+                    onClick={[Function]}
+                  >
+                    <styled.a
+                      color="primary"
+                    >
+                      <a
+                        className="enrdWE"
+                        color="primary"
+                      >
+                        <IconDelete
+                          size="1em"
+                        >
+                          <svg
+                            fill="currentColor"
+                            height="1em"
+                            preserveAspectRatio="xMidYMid meet"
+                            viewBox="0 0 24 24"
+                            width="1em"
+                          >
+                            <path
+                              d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zm9-10h1v10h-1V9zm-4 0h2v10h-2V9zM8 9h1v10H8V9zm7.5-5l-1-1h-5l-1 1H5v2h14V4h-3.5z"
+                            />
+                          </svg>
+                        </IconDelete>
+                        Clear
+                      </a>
+                    </styled.a>
+                  </div>
+                </Component>
+              </P>
+            </ButtonClear>
+            <Button
+              block={false}
+              component="button"
+              kind="primary"
+              onClick={[Function]}
+            >
+              <BaseComponent
+                block={false}
+                className="fqCsyW"
+                component="button"
+                kind="primary"
+                onClick={[Function]}
+              >
+                <button
+                  className="fqCsyW"
+                  onClick={[Function]}
+                >
+                  Ok
+                </button>
+              </BaseComponent>
+            </Button>
+          </div>
+        </styled.div>
+      </div>
+    </styled.div>
+  </ControlString>
+</DataChannelAdapter>
+`;
+
+exports[`should render HEX_CONTROL correctly with empty string 1`] = `
+<DataChannelAdapter
+  dataChannelProps={
+    Object {
+      "format": Object {},
+      "id": "id",
+      "type": "HEX_CONTROL",
+      "values": Object {
+        "value": "",
+      },
+    }
+  }
+  eventHandler={[Function]}
+>
+  <ControlString
+    onChange={[Function]}
+    onClear={[Function]}
+    onSubmit={[Function]}
+    placeholder="Hex only"
+    value=""
+  >
+    <styled.div>
+      <div
+        className="lkjDmd"
+      >
+        <styled.textarea
+          kind="primary"
+          onChange={[Function]}
+          placeholder="Hex only"
+          value=""
+        >
+          <textarea
+            className="haOaRY"
+            kind="primary"
+            onChange={[Function]}
+            placeholder="Hex only"
+            value=""
+          />
+        </styled.textarea>
+        <styled.div>
+          <div
+            className="gkMZXk"
+          >
+            <ButtonClear
+              onClick={[Function]}
+            >
+              <P
+                onClick={[Function]}
+              >
+                <Component
+                  className="gVViGF"
+                  onClick={[Function]}
+                >
+                  <div
+                    className="gVViGF"
+                    onClick={[Function]}
+                  >
+                    <styled.a
+                      color="primary"
+                    >
+                      <a
+                        className="enrdWE"
+                        color="primary"
+                      >
+                        <IconDelete
+                          size="1em"
+                        >
+                          <svg
+                            fill="currentColor"
+                            height="1em"
+                            preserveAspectRatio="xMidYMid meet"
+                            viewBox="0 0 24 24"
+                            width="1em"
+                          >
+                            <path
+                              d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zm9-10h1v10h-1V9zm-4 0h2v10h-2V9zM8 9h1v10H8V9zm7.5-5l-1-1h-5l-1 1H5v2h14V4h-3.5z"
+                            />
+                          </svg>
+                        </IconDelete>
+                        Clear
+                      </a>
+                    </styled.a>
+                  </div>
+                </Component>
+              </P>
+            </ButtonClear>
+            <Button
+              block={false}
+              component="button"
+              kind="primary"
+              onClick={[Function]}
+            >
+              <BaseComponent
+                block={false}
+                className="fqCsyW"
+                component="button"
+                kind="primary"
+                onClick={[Function]}
+              >
+                <button
+                  className="fqCsyW"
+                  onClick={[Function]}
+                >
+                  Ok
+                </button>
+              </BaseComponent>
+            </Button>
+          </div>
+        </styled.div>
+      </div>
+    </styled.div>
+  </ControlString>
+</DataChannelAdapter>
+`;
+
+exports[`should render HEX_CONTROL correctly with value 1`] = `
+<DataChannelAdapter
+  dataChannelProps={
+    Object {
+      "format": Object {},
+      "id": "id",
+      "type": "HEX_CONTROL",
+      "values": Object {
+        "value": "michaelhsu",
+      },
+    }
+  }
+  eventHandler={[Function]}
+>
+  <ControlString
+    onChange={[Function]}
+    onClear={[Function]}
+    onSubmit={[Function]}
+    placeholder="Hex only"
+    value="michaelhsu"
+  >
+    <styled.div>
+      <div
+        className="lkjDmd"
+      >
+        <styled.textarea
+          kind="primary"
+          onChange={[Function]}
+          placeholder="Hex only"
+          value="michaelhsu"
+        >
+          <textarea
+            className="haOaRY"
+            kind="primary"
+            onChange={[Function]}
+            placeholder="Hex only"
+            value="michaelhsu"
+          />
+        </styled.textarea>
+        <styled.div>
+          <div
+            className="gkMZXk"
+          >
+            <ButtonClear
+              onClick={[Function]}
+            >
+              <P
+                onClick={[Function]}
+              >
+                <Component
+                  className="gVViGF"
+                  onClick={[Function]}
+                >
+                  <div
+                    className="gVViGF"
+                    onClick={[Function]}
+                  >
+                    <styled.a
+                      color="primary"
+                    >
+                      <a
+                        className="enrdWE"
+                        color="primary"
+                      >
+                        <IconDelete
+                          size="1em"
+                        >
+                          <svg
+                            fill="currentColor"
+                            height="1em"
+                            preserveAspectRatio="xMidYMid meet"
+                            viewBox="0 0 24 24"
+                            width="1em"
+                          >
+                            <path
+                              d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zm9-10h1v10h-1V9zm-4 0h2v10h-2V9zM8 9h1v10H8V9zm7.5-5l-1-1h-5l-1 1H5v2h14V4h-3.5z"
+                            />
+                          </svg>
+                        </IconDelete>
+                        Clear
+                      </a>
+                    </styled.a>
+                  </div>
+                </Component>
+              </P>
+            </ButtonClear>
+            <Button
+              block={false}
+              component="button"
+              kind="primary"
+              onClick={[Function]}
+            >
+              <BaseComponent
+                block={false}
+                className="fqCsyW"
+                component="button"
+                kind="primary"
+                onClick={[Function]}
+              >
+                <button
+                  className="fqCsyW"
+                  onClick={[Function]}
+                >
+                  Ok
+                </button>
+              </BaseComponent>
+            </Button>
+          </div>
+        </styled.div>
+      </div>
+    </styled.div>
+  </ControlString>
+</DataChannelAdapter>
+`;

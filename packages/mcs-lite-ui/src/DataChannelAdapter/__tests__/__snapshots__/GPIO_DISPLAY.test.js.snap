@@ -1,0 +1,355 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render GPIO_DISPLAY correctly with High 1`] = `
+<DataChannelAdapter
+  dataChannelProps={
+    Object {
+      "format": Object {},
+      "id": "id",
+      "type": "GPIO_DISPLAY",
+      "values": Object {
+        "value": 1,
+      },
+    }
+  }
+  eventHandler={[Function]}
+>
+  <DisplayStatus
+    labels={
+      Array [
+        "Low",
+        "High",
+      ]
+    }
+    value={1}
+  >
+    <styled.div>
+      <div
+        className="frKWdl"
+      >
+        <styled.div>
+          <div
+            className="gBTIWB"
+          >
+            <P
+              color="grayBase"
+            >
+              <Component
+                className="jyQfel"
+                color="grayBase"
+              >
+                <p
+                  className="jyQfel"
+                  color="grayBase"
+                >
+                  Low
+                </p>
+              </Component>
+            </P>
+            <div>
+              <StatusLight
+                color="grayDark"
+              >
+                <styled.svg
+                  color="grayDark"
+                  viewBox="0 0 20 20"
+                >
+                  <svg
+                    className="gUywdC"
+                    color="grayDark"
+                    viewBox="0 0 20 20"
+                  >
+                    <circle
+                      cx="10"
+                      cy="10"
+                      r="10"
+                    />
+                  </svg>
+                </styled.svg>
+              </StatusLight>
+            </div>
+          </div>
+        </styled.div>
+        <styled.div>
+          <div
+            className="gBTIWB"
+          >
+            <P
+              color="grayBase"
+            >
+              <Component
+                className="jyQfel"
+                color="grayBase"
+              >
+                <p
+                  className="jyQfel"
+                  color="grayBase"
+                >
+                  High
+                </p>
+              </Component>
+            </P>
+            <div>
+              <StatusLight
+                color="success"
+              >
+                <styled.svg
+                  color="success"
+                  viewBox="0 0 20 20"
+                >
+                  <svg
+                    className="jfcUeq"
+                    color="success"
+                    viewBox="0 0 20 20"
+                  >
+                    <circle
+                      cx="10"
+                      cy="10"
+                      r="10"
+                    />
+                  </svg>
+                </styled.svg>
+              </StatusLight>
+            </div>
+          </div>
+        </styled.div>
+      </div>
+    </styled.div>
+  </DisplayStatus>
+</DataChannelAdapter>
+`;
+
+exports[`should render GPIO_DISPLAY correctly with Low 1`] = `
+<DataChannelAdapter
+  dataChannelProps={
+    Object {
+      "format": Object {},
+      "id": "id",
+      "type": "GPIO_DISPLAY",
+      "values": Object {
+        "value": 0,
+      },
+    }
+  }
+  eventHandler={[Function]}
+>
+  <DisplayStatus
+    labels={
+      Array [
+        "Low",
+        "High",
+      ]
+    }
+    value={0}
+  >
+    <styled.div>
+      <div
+        className="frKWdl"
+      >
+        <styled.div>
+          <div
+            className="gBTIWB"
+          >
+            <P
+              color="grayBase"
+            >
+              <Component
+                className="jyQfel"
+                color="grayBase"
+              >
+                <p
+                  className="jyQfel"
+                  color="grayBase"
+                >
+                  Low
+                </p>
+              </Component>
+            </P>
+            <div>
+              <StatusLight
+                color="success"
+              >
+                <styled.svg
+                  color="success"
+                  viewBox="0 0 20 20"
+                >
+                  <svg
+                    className="jfcUeq"
+                    color="success"
+                    viewBox="0 0 20 20"
+                  >
+                    <circle
+                      cx="10"
+                      cy="10"
+                      r="10"
+                    />
+                  </svg>
+                </styled.svg>
+              </StatusLight>
+            </div>
+          </div>
+        </styled.div>
+        <styled.div>
+          <div
+            className="gBTIWB"
+          >
+            <P
+              color="grayBase"
+            >
+              <Component
+                className="jyQfel"
+                color="grayBase"
+              >
+                <p
+                  className="jyQfel"
+                  color="grayBase"
+                >
+                  High
+                </p>
+              </Component>
+            </P>
+            <div>
+              <StatusLight
+                color="grayDark"
+              >
+                <styled.svg
+                  color="grayDark"
+                  viewBox="0 0 20 20"
+                >
+                  <svg
+                    className="gUywdC"
+                    color="grayDark"
+                    viewBox="0 0 20 20"
+                  >
+                    <circle
+                      cx="10"
+                      cy="10"
+                      r="10"
+                    />
+                  </svg>
+                </styled.svg>
+              </StatusLight>
+            </div>
+          </div>
+        </styled.div>
+      </div>
+    </styled.div>
+  </DisplayStatus>
+</DataChannelAdapter>
+`;
+
+exports[`should render GPIO_DISPLAY correctly with default value to undefiend 1`] = `
+<DataChannelAdapter
+  dataChannelProps={
+    Object {
+      "format": Object {},
+      "id": "id",
+      "type": "GPIO_DISPLAY",
+      "values": Object {},
+    }
+  }
+  eventHandler={[Function]}
+>
+  <DisplayStatus
+    labels={
+      Array [
+        "Low",
+        "High",
+      ]
+    }
+  >
+    <styled.div>
+      <div
+        className="frKWdl"
+      >
+        <styled.div>
+          <div
+            className="gBTIWB"
+          >
+            <P
+              color="grayBase"
+            >
+              <Component
+                className="jyQfel"
+                color="grayBase"
+              >
+                <p
+                  className="jyQfel"
+                  color="grayBase"
+                >
+                  Low
+                </p>
+              </Component>
+            </P>
+            <div>
+              <StatusLight
+                color="grayDark"
+              >
+                <styled.svg
+                  color="grayDark"
+                  viewBox="0 0 20 20"
+                >
+                  <svg
+                    className="gUywdC"
+                    color="grayDark"
+                    viewBox="0 0 20 20"
+                  >
+                    <circle
+                      cx="10"
+                      cy="10"
+                      r="10"
+                    />
+                  </svg>
+                </styled.svg>
+              </StatusLight>
+            </div>
+          </div>
+        </styled.div>
+        <styled.div>
+          <div
+            className="gBTIWB"
+          >
+            <P
+              color="grayBase"
+            >
+              <Component
+                className="jyQfel"
+                color="grayBase"
+              >
+                <p
+                  className="jyQfel"
+                  color="grayBase"
+                >
+                  High
+                </p>
+              </Component>
+            </P>
+            <div>
+              <StatusLight
+                color="grayDark"
+              >
+                <styled.svg
+                  color="grayDark"
+                  viewBox="0 0 20 20"
+                >
+                  <svg
+                    className="gUywdC"
+                    color="grayDark"
+                    viewBox="0 0 20 20"
+                  >
+                    <circle
+                      cx="10"
+                      cy="10"
+                      r="10"
+                    />
+                  </svg>
+                </styled.svg>
+              </StatusLight>
+            </div>
+          </div>
+        </styled.div>
+      </div>
+    </styled.div>
+  </DisplayStatus>
+</DataChannelAdapter>
+`;

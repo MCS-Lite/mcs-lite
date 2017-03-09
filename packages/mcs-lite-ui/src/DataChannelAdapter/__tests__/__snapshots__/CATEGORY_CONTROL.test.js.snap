@@ -1,0 +1,503 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render CATEGORY_CONTROL correctly with default value to N/A 1`] = `
+<DataChannelAdapter
+  dataChannelProps={
+    Object {
+      "format": Object {
+        "items": Array [
+          Object {
+            "name": "name1",
+            "value": "value1",
+          },
+          Object {
+            "name": "name2",
+            "value": "value2",
+          },
+        ],
+      },
+      "id": "id",
+      "type": "CATEGORY_CONTROL",
+      "values": Object {},
+    }
+  }
+  eventHandler={[Function]}
+>
+  <ControlRange
+    labels={
+      Array [
+        "name1",
+        "name2",
+      ]
+    }
+    onChange={[Function]}
+    onSubmit={[Function]}
+    valueMapper={[Function]}
+  >
+    <styled.div>
+      <div
+        className="ciDLcE"
+      >
+        <styled.div
+          labels={
+            Array [
+              "name1",
+              "name2",
+            ]
+          }
+        >
+          <div
+            className="hxnWDy"
+          >
+            <styled.div>
+              <div
+                className="kRwEkq"
+              >
+                <P
+                  color="grayBase"
+                >
+                  <Component
+                    className="jyQfel"
+                    color="grayBase"
+                  >
+                    <p
+                      className="jyQfel"
+                      color="grayBase"
+                    >
+                      name1
+                    </p>
+                  </Component>
+                </P>
+              </div>
+            </styled.div>
+            <styled.div>
+              <div
+                className="kRwEkq"
+              >
+                <P
+                  color="grayBase"
+                >
+                  <Component
+                    className="jyQfel"
+                    color="grayBase"
+                  >
+                    <p
+                      className="jyQfel"
+                      color="grayBase"
+                    >
+                      name2
+                    </p>
+                  </Component>
+                </P>
+              </div>
+            </styled.div>
+          </div>
+        </styled.div>
+        <styled.div
+          labels={
+            Array [
+              "name1",
+              "name2",
+            ]
+          }
+        >
+          <div
+            className="glLEWf"
+          >
+            <Styled(Component)
+              color="grayBase"
+            >
+              <Component
+                className="chvbqM"
+                color="grayBase"
+              >
+                <div
+                  className="chvbqM"
+                  color="grayBase"
+                >
+                  Current value: 
+                  <Styled(Component)
+                    color="primary"
+                  >
+                    <Component
+                      className="eBMqlM"
+                      color="primary"
+                    >
+                      <p
+                        className="eBMqlM"
+                        color="primary"
+                      >
+                        N/A
+                      </p>
+                    </Component>
+                  </Styled(Component)>
+                </div>
+              </Component>
+            </Styled(Component)>
+            <InputRange
+              kind="primary"
+              max={1}
+              min={0}
+              onChange={[Function]}
+              onMouseUp={[Function]}
+              onTouchEnd={[Function]}
+              step={1}
+              type="range"
+            >
+              <input
+                className="hdhnFx"
+                kind="primary"
+                max={1}
+                min={0}
+                onChange={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                step={1}
+                type="range"
+              />
+            </InputRange>
+          </div>
+        </styled.div>
+      </div>
+    </styled.div>
+  </ControlRange>
+</DataChannelAdapter>
+`;
+
+exports[`should render CATEGORY_CONTROL correctly with first item 1`] = `
+<DataChannelAdapter
+  dataChannelProps={
+    Object {
+      "format": Object {
+        "items": Array [
+          Object {
+            "name": "name1",
+            "value": "value1",
+          },
+          Object {
+            "name": "name2",
+            "value": "value2",
+          },
+        ],
+      },
+      "id": "id",
+      "type": "CATEGORY_CONTROL",
+      "values": Object {
+        "value": "value1",
+      },
+    }
+  }
+  eventHandler={[Function]}
+>
+  <ControlRange
+    labels={
+      Array [
+        "name1",
+        "name2",
+      ]
+    }
+    onChange={[Function]}
+    onSubmit={[Function]}
+    value={0}
+    valueMapper={[Function]}
+  >
+    <styled.div>
+      <div
+        className="ciDLcE"
+      >
+        <styled.div
+          labels={
+            Array [
+              "name1",
+              "name2",
+            ]
+          }
+        >
+          <div
+            className="hxnWDy"
+          >
+            <styled.div>
+              <div
+                className="kRwEkq"
+              >
+                <P
+                  color="grayBase"
+                >
+                  <Component
+                    className="jyQfel"
+                    color="grayBase"
+                  >
+                    <p
+                      className="jyQfel"
+                      color="grayBase"
+                    >
+                      name1
+                    </p>
+                  </Component>
+                </P>
+              </div>
+            </styled.div>
+            <styled.div>
+              <div
+                className="kRwEkq"
+              >
+                <P
+                  color="grayBase"
+                >
+                  <Component
+                    className="jyQfel"
+                    color="grayBase"
+                  >
+                    <p
+                      className="jyQfel"
+                      color="grayBase"
+                    >
+                      name2
+                    </p>
+                  </Component>
+                </P>
+              </div>
+            </styled.div>
+          </div>
+        </styled.div>
+        <styled.div
+          labels={
+            Array [
+              "name1",
+              "name2",
+            ]
+          }
+        >
+          <div
+            className="glLEWf"
+          >
+            <Styled(Component)
+              color="grayBase"
+            >
+              <Component
+                className="chvbqM"
+                color="grayBase"
+              >
+                <div
+                  className="chvbqM"
+                  color="grayBase"
+                >
+                  Current value: 
+                  <Styled(Component)
+                    color="primary"
+                  >
+                    <Component
+                      className="eBMqlM"
+                      color="primary"
+                    >
+                      <p
+                        className="eBMqlM"
+                        color="primary"
+                      >
+                        value1
+                      </p>
+                    </Component>
+                  </Styled(Component)>
+                </div>
+              </Component>
+            </Styled(Component)>
+            <InputRange
+              kind="primary"
+              max={1}
+              min={0}
+              onChange={[Function]}
+              onMouseUp={[Function]}
+              onTouchEnd={[Function]}
+              step={1}
+              type="range"
+              value={0}
+            >
+              <input
+                className="hdhnFx"
+                kind="primary"
+                max={1}
+                min={0}
+                onChange={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                step={1}
+                type="range"
+                value={0}
+              />
+            </InputRange>
+          </div>
+        </styled.div>
+      </div>
+    </styled.div>
+  </ControlRange>
+</DataChannelAdapter>
+`;
+
+exports[`should render CATEGORY_CONTROL correctly with second item 1`] = `
+<DataChannelAdapter
+  dataChannelProps={
+    Object {
+      "format": Object {
+        "items": Array [
+          Object {
+            "name": "name1",
+            "value": "value1",
+          },
+          Object {
+            "name": "name2",
+            "value": "value2",
+          },
+        ],
+      },
+      "id": "id",
+      "type": "CATEGORY_CONTROL",
+      "values": Object {
+        "value": "value2",
+      },
+    }
+  }
+  eventHandler={[Function]}
+>
+  <ControlRange
+    labels={
+      Array [
+        "name1",
+        "name2",
+      ]
+    }
+    onChange={[Function]}
+    onSubmit={[Function]}
+    value={1}
+    valueMapper={[Function]}
+  >
+    <styled.div>
+      <div
+        className="ciDLcE"
+      >
+        <styled.div
+          labels={
+            Array [
+              "name1",
+              "name2",
+            ]
+          }
+        >
+          <div
+            className="hxnWDy"
+          >
+            <styled.div>
+              <div
+                className="kRwEkq"
+              >
+                <P
+                  color="grayBase"
+                >
+                  <Component
+                    className="jyQfel"
+                    color="grayBase"
+                  >
+                    <p
+                      className="jyQfel"
+                      color="grayBase"
+                    >
+                      name1
+                    </p>
+                  </Component>
+                </P>
+              </div>
+            </styled.div>
+            <styled.div>
+              <div
+                className="kRwEkq"
+              >
+                <P
+                  color="grayBase"
+                >
+                  <Component
+                    className="jyQfel"
+                    color="grayBase"
+                  >
+                    <p
+                      className="jyQfel"
+                      color="grayBase"
+                    >
+                      name2
+                    </p>
+                  </Component>
+                </P>
+              </div>
+            </styled.div>
+          </div>
+        </styled.div>
+        <styled.div
+          labels={
+            Array [
+              "name1",
+              "name2",
+            ]
+          }
+        >
+          <div
+            className="glLEWf"
+          >
+            <Styled(Component)
+              color="grayBase"
+            >
+              <Component
+                className="chvbqM"
+                color="grayBase"
+              >
+                <div
+                  className="chvbqM"
+                  color="grayBase"
+                >
+                  Current value: 
+                  <Styled(Component)
+                    color="primary"
+                  >
+                    <Component
+                      className="eBMqlM"
+                      color="primary"
+                    >
+                      <p
+                        className="eBMqlM"
+                        color="primary"
+                      >
+                        value2
+                      </p>
+                    </Component>
+                  </Styled(Component)>
+                </div>
+              </Component>
+            </Styled(Component)>
+            <InputRange
+              kind="primary"
+              max={1}
+              min={0}
+              onChange={[Function]}
+              onMouseUp={[Function]}
+              onTouchEnd={[Function]}
+              step={1}
+              type="range"
+              value={1}
+            >
+              <input
+                className="hdhnFx"
+                kind="primary"
+                max={1}
+                min={0}
+                onChange={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                step={1}
+                type="range"
+                value={1}
+              />
+            </InputRange>
+          </div>
+        </styled.div>
+      </div>
+    </styled.div>
+  </ControlRange>
+</DataChannelAdapter>
+`;

@@ -1,0 +1,193 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render FLOAT_DISPLAY correctly with default value to N/A 1`] = `
+<DataChannelAdapter
+  dataChannelProps={
+    Object {
+      "format": Object {},
+      "id": "id",
+      "type": "FLOAT_DISPLAY",
+      "values": Object {},
+    }
+  }
+  eventHandler={[Function]}
+>
+  <DisplayUnitValue
+    value="N/A"
+  >
+    <styled.div>
+      <div
+        className="cthtBB"
+      >
+        <Styled(H)
+          color="primary"
+          level={1}
+        >
+          <H
+            className="ekhOej"
+            color="primary"
+            level={1}
+          >
+            <h1
+              className="ekhOej"
+              color="primary"
+            >
+              N/A
+            </h1>
+          </H>
+        </Styled(H)>
+      </div>
+    </styled.div>
+  </DisplayUnitValue>
+</DataChannelAdapter>
+`;
+
+exports[`should render FLOAT_DISPLAY correctly with unit 1`] = `
+<DataChannelAdapter
+  dataChannelProps={
+    Object {
+      "format": Object {
+        "unit": "攝氏",
+      },
+      "id": "id",
+      "type": "FLOAT_DISPLAY",
+      "values": Object {
+        "value": 1.3,
+      },
+    }
+  }
+  eventHandler={[Function]}
+>
+  <DisplayUnitValue
+    unit="攝氏"
+    value={1.3}
+  >
+    <styled.div>
+      <div
+        className="cthtBB"
+      >
+        <Styled(H)
+          color="primary"
+          level={1}
+        >
+          <H
+            className="ekhOej"
+            color="primary"
+            level={1}
+          >
+            <h1
+              className="ekhOej"
+              color="primary"
+            >
+              1.3
+            </h1>
+          </H>
+        </Styled(H)>
+        <Styled(Component)
+          color="grayBase"
+        >
+          <Component
+            className="iiIFfD"
+            color="grayBase"
+          >
+            <p
+              className="iiIFfD"
+              color="grayBase"
+            >
+              攝氏
+            </p>
+          </Component>
+        </Styled(Component)>
+      </div>
+    </styled.div>
+  </DisplayUnitValue>
+</DataChannelAdapter>
+`;
+
+exports[`should render FLOAT_DISPLAY correctly with value 1`] = `
+<DataChannelAdapter
+  dataChannelProps={
+    Object {
+      "format": Object {},
+      "id": "id",
+      "type": "FLOAT_DISPLAY",
+      "values": Object {
+        "value": 1.1,
+      },
+    }
+  }
+  eventHandler={[Function]}
+>
+  <DisplayUnitValue
+    value={1.1}
+  >
+    <styled.div>
+      <div
+        className="cthtBB"
+      >
+        <Styled(H)
+          color="primary"
+          level={1}
+        >
+          <H
+            className="ekhOej"
+            color="primary"
+            level={1}
+          >
+            <h1
+              className="ekhOej"
+              color="primary"
+            >
+              1.1
+            </h1>
+          </H>
+        </Styled(H)>
+      </div>
+    </styled.div>
+  </DisplayUnitValue>
+</DataChannelAdapter>
+`;
+
+exports[`should render FLOAT_DISPLAY correctly with zero 1`] = `
+<DataChannelAdapter
+  dataChannelProps={
+    Object {
+      "format": Object {},
+      "id": "id",
+      "type": "FLOAT_DISPLAY",
+      "values": Object {
+        "value": 0,
+      },
+    }
+  }
+  eventHandler={[Function]}
+>
+  <DisplayUnitValue
+    value={0}
+  >
+    <styled.div>
+      <div
+        className="cthtBB"
+      >
+        <Styled(H)
+          color="primary"
+          level={1}
+        >
+          <H
+            className="ekhOej"
+            color="primary"
+            level={1}
+          >
+            <h1
+              className="ekhOej"
+              color="primary"
+            >
+              0
+            </h1>
+          </H>
+        </Styled(H)>
+      </div>
+    </styled.div>
+  </DisplayUnitValue>
+</DataChannelAdapter>
+`;

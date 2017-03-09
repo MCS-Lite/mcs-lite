@@ -1,0 +1,125 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render HEX_DISPLAY correctly with default value to empty 1`] = `
+<DataChannelAdapter
+  dataChannelProps={
+    Object {
+      "format": Object {},
+      "id": "id",
+      "type": "HEX_DISPLAY",
+      "values": Object {},
+    }
+  }
+  eventHandler={[Function]}
+>
+  <DisplayString
+    placeholder="Hex only"
+    value=""
+  >
+    <styled.div>
+      <div
+        className="lkjDmd"
+      >
+        <styled.textarea
+          disabled={true}
+          kind="primary"
+          placeholder="Hex only"
+          value=""
+        >
+          <textarea
+            className="haOaRY"
+            disabled={true}
+            kind="primary"
+            placeholder="Hex only"
+            value=""
+          />
+        </styled.textarea>
+      </div>
+    </styled.div>
+  </DisplayString>
+</DataChannelAdapter>
+`;
+
+exports[`should render HEX_DISPLAY correctly with empty string 1`] = `
+<DataChannelAdapter
+  dataChannelProps={
+    Object {
+      "format": Object {},
+      "id": "id",
+      "type": "HEX_DISPLAY",
+      "values": Object {
+        "value": "",
+      },
+    }
+  }
+  eventHandler={[Function]}
+>
+  <DisplayString
+    placeholder="Hex only"
+    value=""
+  >
+    <styled.div>
+      <div
+        className="lkjDmd"
+      >
+        <styled.textarea
+          disabled={true}
+          kind="primary"
+          placeholder="Hex only"
+          value=""
+        >
+          <textarea
+            className="haOaRY"
+            disabled={true}
+            kind="primary"
+            placeholder="Hex only"
+            value=""
+          />
+        </styled.textarea>
+      </div>
+    </styled.div>
+  </DisplayString>
+</DataChannelAdapter>
+`;
+
+exports[`should render HEX_DISPLAY correctly with value 1`] = `
+<DataChannelAdapter
+  dataChannelProps={
+    Object {
+      "format": Object {},
+      "id": "id",
+      "type": "HEX_DISPLAY",
+      "values": Object {
+        "value": "michaelhsu",
+      },
+    }
+  }
+  eventHandler={[Function]}
+>
+  <DisplayString
+    placeholder="Hex only"
+    value="michaelhsu"
+  >
+    <styled.div>
+      <div
+        className="lkjDmd"
+      >
+        <styled.textarea
+          disabled={true}
+          kind="primary"
+          placeholder="Hex only"
+          value="michaelhsu"
+        >
+          <textarea
+            className="haOaRY"
+            disabled={true}
+            kind="primary"
+            placeholder="Hex only"
+            value="michaelhsu"
+          />
+        </styled.textarea>
+      </div>
+    </styled.div>
+  </DisplayString>
+</DataChannelAdapter>
+`;

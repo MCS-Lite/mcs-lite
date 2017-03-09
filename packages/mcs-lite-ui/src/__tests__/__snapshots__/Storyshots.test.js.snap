@@ -1225,7 +1225,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
           onChange={[Function]}
           placeholder="Integer only"
           type="number"
-          value={50}
+          value={0}
         />
         <div
           className="kGGPNo"
@@ -1309,7 +1309,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
           className="ekhOej"
           color="primary"
         >
-          50
+          0
         </h1>
         <p
           className="iiIFfD"
@@ -1375,7 +1375,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
           onChange={[Function]}
           placeholder="Float only"
           type="number"
-          value={50.1235}
+          value=""
         />
         <div
           className="kGGPNo"
@@ -1459,7 +1459,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
           className="ekhOej"
           color="primary"
         >
-          50.55252
+          N/A
         </h1>
         <p
           className="iiIFfD"
@@ -1740,7 +1740,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
           className="haOaRY"
           disabled={true}
           kind="primary"
-          placeholder="String only"
+          placeholder="Hex only"
           value="ABF123"
         />
       </div>
@@ -2572,7 +2572,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
               onChange={[Function]}
               placeholder="Integer only"
               type="number"
-              value={20}
+              value={0}
             />
             <button
               className="fqCsyW"
@@ -2595,7 +2595,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
                 className="jyQfel"
                 color="grayBase"
               >
-                1
+                0
               </div>
             </div>
             <div
@@ -2621,20 +2621,20 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
                 className="eBMqlM"
                 color="primary"
               >
-                1
+                0
               </div>
             </div>
             <input
               className="hdhnFx"
               kind="primary"
               max={100}
-              min={1}
+              min={0}
               onChange={[Function]}
               onMouseUp={[Function]}
               onTouchEnd={[Function]}
               step={1}
               type="range"
-              value={1}
+              value={0}
             />
           </div>
         </div>

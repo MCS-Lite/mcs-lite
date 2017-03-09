@@ -1,0 +1,319 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render PWM_DISPLAY correctly with default value to N/A 1`] = `
+<DataChannelAdapter
+  dataChannelProps={
+    Object {
+      "format": Object {},
+      "id": "id",
+      "type": "PWM_DISPLAY",
+      "values": Object {},
+    }
+  }
+  eventHandler={[Function]}
+>
+  <DisplayMultipleValue
+    items={
+      Array [
+        Object {
+          "name": "Value",
+          "value": "N/A",
+        },
+        Object {
+          "name": "Period",
+          "value": "N/A",
+        },
+      ]
+    }
+  >
+    <styled.div>
+      <div
+        className="gLFxag"
+      >
+        <div>
+          <P
+            color="grayBase"
+          >
+            <Component
+              className="jyQfel"
+              color="grayBase"
+            >
+              <p
+                className="jyQfel"
+                color="grayBase"
+              >
+                Value
+              </p>
+            </Component>
+          </P>
+          <Styled(H)
+            color="primary"
+            level={1}
+          >
+            <H
+              className="fCRioE"
+              color="primary"
+              level={1}
+            >
+              <h1
+                className="fCRioE"
+                color="primary"
+              >
+                N/A
+              </h1>
+            </H>
+          </Styled(H)>
+        </div>
+        <div>
+          <P
+            color="grayBase"
+          >
+            <Component
+              className="jyQfel"
+              color="grayBase"
+            >
+              <p
+                className="jyQfel"
+                color="grayBase"
+              >
+                Period
+              </p>
+            </Component>
+          </P>
+          <Styled(H)
+            color="primary"
+            level={1}
+          >
+            <H
+              className="fCRioE"
+              color="primary"
+              level={1}
+            >
+              <h1
+                className="fCRioE"
+                color="primary"
+              >
+                N/A
+              </h1>
+            </H>
+          </Styled(H)>
+        </div>
+      </div>
+    </styled.div>
+  </DisplayMultipleValue>
+</DataChannelAdapter>
+`;
+
+exports[`should render PWM_DISPLAY correctly with max 1`] = `
+<DataChannelAdapter
+  dataChannelProps={
+    Object {
+      "format": Object {},
+      "id": "id",
+      "type": "PWM_DISPLAY",
+      "values": Object {
+        "period": 1,
+        "value": 100,
+      },
+    }
+  }
+  eventHandler={[Function]}
+>
+  <DisplayMultipleValue
+    items={
+      Array [
+        Object {
+          "name": "Value",
+          "value": 100,
+        },
+        Object {
+          "name": "Period",
+          "value": 1,
+        },
+      ]
+    }
+  >
+    <styled.div>
+      <div
+        className="gLFxag"
+      >
+        <div>
+          <P
+            color="grayBase"
+          >
+            <Component
+              className="jyQfel"
+              color="grayBase"
+            >
+              <p
+                className="jyQfel"
+                color="grayBase"
+              >
+                Value
+              </p>
+            </Component>
+          </P>
+          <Styled(H)
+            color="primary"
+            level={1}
+          >
+            <H
+              className="fCRioE"
+              color="primary"
+              level={1}
+            >
+              <h1
+                className="fCRioE"
+                color="primary"
+              >
+                100
+              </h1>
+            </H>
+          </Styled(H)>
+        </div>
+        <div>
+          <P
+            color="grayBase"
+          >
+            <Component
+              className="jyQfel"
+              color="grayBase"
+            >
+              <p
+                className="jyQfel"
+                color="grayBase"
+              >
+                Period
+              </p>
+            </Component>
+          </P>
+          <Styled(H)
+            color="primary"
+            level={1}
+          >
+            <H
+              className="fCRioE"
+              color="primary"
+              level={1}
+            >
+              <h1
+                className="fCRioE"
+                color="primary"
+              >
+                1
+              </h1>
+            </H>
+          </Styled(H)>
+        </div>
+      </div>
+    </styled.div>
+  </DisplayMultipleValue>
+</DataChannelAdapter>
+`;
+
+exports[`should render PWM_DISPLAY correctly with zero 1`] = `
+<DataChannelAdapter
+  dataChannelProps={
+    Object {
+      "format": Object {},
+      "id": "id",
+      "type": "PWM_DISPLAY",
+      "values": Object {
+        "period": 0,
+        "value": 0,
+      },
+    }
+  }
+  eventHandler={[Function]}
+>
+  <DisplayMultipleValue
+    items={
+      Array [
+        Object {
+          "name": "Value",
+          "value": 0,
+        },
+        Object {
+          "name": "Period",
+          "value": 0,
+        },
+      ]
+    }
+  >
+    <styled.div>
+      <div
+        className="gLFxag"
+      >
+        <div>
+          <P
+            color="grayBase"
+          >
+            <Component
+              className="jyQfel"
+              color="grayBase"
+            >
+              <p
+                className="jyQfel"
+                color="grayBase"
+              >
+                Value
+              </p>
+            </Component>
+          </P>
+          <Styled(H)
+            color="primary"
+            level={1}
+          >
+            <H
+              className="fCRioE"
+              color="primary"
+              level={1}
+            >
+              <h1
+                className="fCRioE"
+                color="primary"
+              >
+                0
+              </h1>
+            </H>
+          </Styled(H)>
+        </div>
+        <div>
+          <P
+            color="grayBase"
+          >
+            <Component
+              className="jyQfel"
+              color="grayBase"
+            >
+              <p
+                className="jyQfel"
+                color="grayBase"
+              >
+                Period
+              </p>
+            </Component>
+          </P>
+          <Styled(H)
+            color="primary"
+            level={1}
+          >
+            <H
+              className="fCRioE"
+              color="primary"
+              level={1}
+            >
+              <h1
+                className="fCRioE"
+                color="primary"
+              >
+                0
+              </h1>
+            </H>
+          </Styled(H)>
+        </div>
+      </div>
+    </styled.div>
+  </DisplayMultipleValue>
+</DataChannelAdapter>
+`;

@@ -1,0 +1,473 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render GPIO_CONTROL correctly with High 1`] = `
+<DataChannelAdapter
+  dataChannelProps={
+    Object {
+      "format": Object {},
+      "id": "id",
+      "type": "GPIO_CONTROL",
+      "values": Object {
+        "value": 1,
+      },
+    }
+  }
+  eventHandler={[Function]}
+>
+  <ControlRange
+    labels={
+      Array [
+        "Low",
+        "High",
+      ]
+    }
+    onChange={[Function]}
+    onSubmit={[Function]}
+    value={1}
+    valueMapper={[Function]}
+  >
+    <styled.div>
+      <div
+        className="ciDLcE"
+      >
+        <styled.div
+          labels={
+            Array [
+              "Low",
+              "High",
+            ]
+          }
+        >
+          <div
+            className="hxnWDy"
+          >
+            <styled.div>
+              <div
+                className="kRwEkq"
+              >
+                <P
+                  color="grayBase"
+                >
+                  <Component
+                    className="jyQfel"
+                    color="grayBase"
+                  >
+                    <p
+                      className="jyQfel"
+                      color="grayBase"
+                    >
+                      Low
+                    </p>
+                  </Component>
+                </P>
+              </div>
+            </styled.div>
+            <styled.div>
+              <div
+                className="kRwEkq"
+              >
+                <P
+                  color="grayBase"
+                >
+                  <Component
+                    className="jyQfel"
+                    color="grayBase"
+                  >
+                    <p
+                      className="jyQfel"
+                      color="grayBase"
+                    >
+                      High
+                    </p>
+                  </Component>
+                </P>
+              </div>
+            </styled.div>
+          </div>
+        </styled.div>
+        <styled.div
+          labels={
+            Array [
+              "Low",
+              "High",
+            ]
+          }
+        >
+          <div
+            className="glLEWf"
+          >
+            <Styled(Component)
+              color="grayBase"
+            >
+              <Component
+                className="chvbqM"
+                color="grayBase"
+              >
+                <div
+                  className="chvbqM"
+                  color="grayBase"
+                >
+                  Current value: 
+                  <Styled(Component)
+                    color="primary"
+                  >
+                    <Component
+                      className="eBMqlM"
+                      color="primary"
+                    >
+                      <p
+                        className="eBMqlM"
+                        color="primary"
+                      >
+                        High
+                      </p>
+                    </Component>
+                  </Styled(Component)>
+                </div>
+              </Component>
+            </Styled(Component)>
+            <InputRange
+              kind="primary"
+              max={1}
+              min={0}
+              onChange={[Function]}
+              onMouseUp={[Function]}
+              onTouchEnd={[Function]}
+              step={1}
+              type="range"
+              value={1}
+            >
+              <input
+                className="hdhnFx"
+                kind="primary"
+                max={1}
+                min={0}
+                onChange={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                step={1}
+                type="range"
+                value={1}
+              />
+            </InputRange>
+          </div>
+        </styled.div>
+      </div>
+    </styled.div>
+  </ControlRange>
+</DataChannelAdapter>
+`;
+
+exports[`should render GPIO_CONTROL correctly with Low 1`] = `
+<DataChannelAdapter
+  dataChannelProps={
+    Object {
+      "format": Object {},
+      "id": "id",
+      "type": "GPIO_CONTROL",
+      "values": Object {
+        "value": 0,
+      },
+    }
+  }
+  eventHandler={[Function]}
+>
+  <ControlRange
+    labels={
+      Array [
+        "Low",
+        "High",
+      ]
+    }
+    onChange={[Function]}
+    onSubmit={[Function]}
+    value={0}
+    valueMapper={[Function]}
+  >
+    <styled.div>
+      <div
+        className="ciDLcE"
+      >
+        <styled.div
+          labels={
+            Array [
+              "Low",
+              "High",
+            ]
+          }
+        >
+          <div
+            className="hxnWDy"
+          >
+            <styled.div>
+              <div
+                className="kRwEkq"
+              >
+                <P
+                  color="grayBase"
+                >
+                  <Component
+                    className="jyQfel"
+                    color="grayBase"
+                  >
+                    <p
+                      className="jyQfel"
+                      color="grayBase"
+                    >
+                      Low
+                    </p>
+                  </Component>
+                </P>
+              </div>
+            </styled.div>
+            <styled.div>
+              <div
+                className="kRwEkq"
+              >
+                <P
+                  color="grayBase"
+                >
+                  <Component
+                    className="jyQfel"
+                    color="grayBase"
+                  >
+                    <p
+                      className="jyQfel"
+                      color="grayBase"
+                    >
+                      High
+                    </p>
+                  </Component>
+                </P>
+              </div>
+            </styled.div>
+          </div>
+        </styled.div>
+        <styled.div
+          labels={
+            Array [
+              "Low",
+              "High",
+            ]
+          }
+        >
+          <div
+            className="glLEWf"
+          >
+            <Styled(Component)
+              color="grayBase"
+            >
+              <Component
+                className="chvbqM"
+                color="grayBase"
+              >
+                <div
+                  className="chvbqM"
+                  color="grayBase"
+                >
+                  Current value: 
+                  <Styled(Component)
+                    color="primary"
+                  >
+                    <Component
+                      className="eBMqlM"
+                      color="primary"
+                    >
+                      <p
+                        className="eBMqlM"
+                        color="primary"
+                      >
+                        Low
+                      </p>
+                    </Component>
+                  </Styled(Component)>
+                </div>
+              </Component>
+            </Styled(Component)>
+            <InputRange
+              kind="primary"
+              max={1}
+              min={0}
+              onChange={[Function]}
+              onMouseUp={[Function]}
+              onTouchEnd={[Function]}
+              step={1}
+              type="range"
+              value={0}
+            >
+              <input
+                className="hdhnFx"
+                kind="primary"
+                max={1}
+                min={0}
+                onChange={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                step={1}
+                type="range"
+                value={0}
+              />
+            </InputRange>
+          </div>
+        </styled.div>
+      </div>
+    </styled.div>
+  </ControlRange>
+</DataChannelAdapter>
+`;
+
+exports[`should render GPIO_CONTROL correctly with default value to N/A 1`] = `
+<DataChannelAdapter
+  dataChannelProps={
+    Object {
+      "format": Object {},
+      "id": "id",
+      "type": "GPIO_CONTROL",
+      "values": Object {},
+    }
+  }
+  eventHandler={[Function]}
+>
+  <ControlRange
+    labels={
+      Array [
+        "Low",
+        "High",
+      ]
+    }
+    onChange={[Function]}
+    onSubmit={[Function]}
+    value=""
+    valueMapper={[Function]}
+  >
+    <styled.div>
+      <div
+        className="ciDLcE"
+      >
+        <styled.div
+          labels={
+            Array [
+              "Low",
+              "High",
+            ]
+          }
+        >
+          <div
+            className="hxnWDy"
+          >
+            <styled.div>
+              <div
+                className="kRwEkq"
+              >
+                <P
+                  color="grayBase"
+                >
+                  <Component
+                    className="jyQfel"
+                    color="grayBase"
+                  >
+                    <p
+                      className="jyQfel"
+                      color="grayBase"
+                    >
+                      Low
+                    </p>
+                  </Component>
+                </P>
+              </div>
+            </styled.div>
+            <styled.div>
+              <div
+                className="kRwEkq"
+              >
+                <P
+                  color="grayBase"
+                >
+                  <Component
+                    className="jyQfel"
+                    color="grayBase"
+                  >
+                    <p
+                      className="jyQfel"
+                      color="grayBase"
+                    >
+                      High
+                    </p>
+                  </Component>
+                </P>
+              </div>
+            </styled.div>
+          </div>
+        </styled.div>
+        <styled.div
+          labels={
+            Array [
+              "Low",
+              "High",
+            ]
+          }
+        >
+          <div
+            className="glLEWf"
+          >
+            <Styled(Component)
+              color="grayBase"
+            >
+              <Component
+                className="chvbqM"
+                color="grayBase"
+              >
+                <div
+                  className="chvbqM"
+                  color="grayBase"
+                >
+                  Current value: 
+                  <Styled(Component)
+                    color="primary"
+                  >
+                    <Component
+                      className="eBMqlM"
+                      color="primary"
+                    >
+                      <p
+                        className="eBMqlM"
+                        color="primary"
+                      >
+                        N/A
+                      </p>
+                    </Component>
+                  </Styled(Component)>
+                </div>
+              </Component>
+            </Styled(Component)>
+            <InputRange
+              kind="primary"
+              max={1}
+              min={0}
+              onChange={[Function]}
+              onMouseUp={[Function]}
+              onTouchEnd={[Function]}
+              step={1}
+              type="range"
+              value=""
+            >
+              <input
+                className="hdhnFx"
+                kind="primary"
+                max={1}
+                min={0}
+                onChange={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                step={1}
+                type="range"
+                value=""
+              />
+            </InputRange>
+          </div>
+        </styled.div>
+      </div>
+    </styled.div>
+  </ControlRange>
+</DataChannelAdapter>
+`;
