@@ -144,11 +144,11 @@ $ npm run test:watch
 | `mcs-lite-demo-nextjs`      |       |      | V     |       |               |           |
 | `mcs-lite-design`           | V     |      |       | V     |               |           |
 | `mcs-lite-icon`             | V     |      |       | V     |               |           |
-| `mcs-lite-introduction`     | V     |      |       | V     |               |           |
+| `mcs-lite-introduction`     | V     |      | V     | V     |               |           |
 | `mcs-lite-mobile-web`       | V     | V    | V     | V     |               |           |
 | `mcs-lite-scripts`          | V     |      |       | V     |               |           |
 | `mcs-lite-theme`            | V     |      |       | V     |               |           |
-| `mcs-lite-ui`               | V     | V    | V     | V     | V (flow)      |           |
+| `mcs-lite-ui`               | V     | V    | V     | V     | V (flow?)     |           |
 | `react-intl-cra`            |       |      |       |       |               |           |
 | `react-intl-inject-hoc`     | V     |      |       | V     |               |           |
 | `stylelint-config-mcs-lite` |       | V    |       |       |               |           |
