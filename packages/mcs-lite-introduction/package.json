@@ -14,8 +14,7 @@
     "clean": "rm -rf _book",
     "start": "gitbook serve",
     "prebuild": "npm run clean",
-    "build": "gitbook build",
-    "postbuild": "rm -rf _book/package.json"
+    "build": "gitbook build"
   },
   "devDependencies": {
     "gitbook-cli": "^2.3.0"
