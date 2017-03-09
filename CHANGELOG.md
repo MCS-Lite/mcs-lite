@@ -2,6 +2,10 @@
 
 ## Released (2017-03-09)
 
+### Bump Versions
+
+-   mcs-lite-introduction@0.1.3
+
 #### :bug: Bug Fix
 * `mcs-lite-introduction`
   * [#207](https://github.com/evenchange4/mcs-lite/pull/207) fix(gitbook/pack): use .bookignore instead of rm -rf. ([@evenchange4](https://github.com/evenchange4))
