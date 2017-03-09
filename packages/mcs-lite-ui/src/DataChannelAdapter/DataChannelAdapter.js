@@ -93,7 +93,7 @@ class DataChannelAdapter extends React.Component {
           value={R.isNil(values.value) ? '' : parseInt(values.value, 10)}
           onSubmit={() => eventHandler({ type: 'submit', id, values })}
           onChange={e => eventHandler({ type: 'change', id, values: { value: e.target.value }})}
-          onClear={() => eventHandler({ type: 'clear', id, values: 0 })}
+          onClear={() => eventHandler({ type: 'clear', id, values: {}})}
         />,
       ],
       [R.equals('INTEGER_DISPLAY'), () =>
@@ -116,7 +116,7 @@ class DataChannelAdapter extends React.Component {
           value={R.isNil(values.value) ? '' : parseFloat(values.value, 10)}
           onSubmit={() => eventHandler({ type: 'submit', id, values })}
           onChange={e => eventHandler({ type: 'change', id, values: { value: e.target.value }})}
-          onClear={() => eventHandler({ type: 'clear', id, values: 0 })}
+          onClear={() => eventHandler({ type: 'clear', id, values: {}})}
         />,
       ],
       [R.equals('FLOAT_DISPLAY'), () =>
@@ -138,7 +138,7 @@ class DataChannelAdapter extends React.Component {
           value={R.isNil(values.value) ? '' : values.value}
           onSubmit={() => eventHandler({ type: 'submit', id, values })}
           onChange={e => eventHandler({ type: 'change', id, values: { value: e.target.value }})}
-          onClear={() => eventHandler({ type: 'clear', id, values: '' })}
+          onClear={() => eventHandler({ type: 'clear', id, values: {}})}
         />,
       ],
       [R.equals('STRING_DISPLAY'), () =>
@@ -160,7 +160,7 @@ class DataChannelAdapter extends React.Component {
           value={R.isNil(values.value) ? '' : values.value}
           onSubmit={() => eventHandler({ type: 'submit', id, values })}
           onChange={e => eventHandler({ type: 'change', id, values: { value: e.target.value }})}
-          onClear={() => eventHandler({ type: 'clear', id, values: '' })}
+          onClear={() => eventHandler({ type: 'clear', id, values: {}})}
         />,
       ],
       [R.equals('HEX_DISPLAY'), () =>
@@ -232,7 +232,7 @@ class DataChannelAdapter extends React.Component {
             onSubmit={() => eventHandler({
               type: 'submit',
               id,
-              values: { value: valueMapper(values.value) },
+              values: { value: values.value },
             })}
           />
         );

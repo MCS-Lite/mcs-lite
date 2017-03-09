@@ -3,6 +3,7 @@ import { mount } from 'enzyme';
 import { ThemeProvider } from 'styled-components';
 import { theme } from 'mcs-lite-theme';
 import DataChannelAdapter from '../DataChannelAdapter';
+import DataChannel from '../../DataChannel';
 
 it('should render SWITCH_CONTROL correctly with default value to false', () => {
   const wrapper = mount(
@@ -56,4 +57,52 @@ it('should render SWITCH_CONTROL correctly with false value', () => {
   );
 
   expect(wrapper.find(DataChannelAdapter)).toMatchSnapshot();
+});
+
+it('should handle onSubmit with true value', () => {
+  const mockEventHandler = jest.fn();
+
+  const wrapper = mount(
+    <ThemeProvider theme={theme}>
+      <DataChannelAdapter
+        dataChannelProps={{
+          id: 'id',
+          type: 'SWITCH_CONTROL',
+          values: { value: 0 },
+          format: {},
+        }}
+        eventHandler={mockEventHandler}
+      />
+    </ThemeProvider>,
+  );
+
+  expect(mockEventHandler).not.toHaveBeenCalled();
+  wrapper.find(DataChannel.ControlSwitch).props().onSubmit();
+  expect(mockEventHandler).toHaveBeenCalledWith({
+    id: 'id', type: 'submit', values: { value: 1 }},
+  );
+});
+
+it('should handle onSubmit with false value', () => {
+  const mockEventHandler = jest.fn();
+
+  const wrapper = mount(
+    <ThemeProvider theme={theme}>
+      <DataChannelAdapter
+        dataChannelProps={{
+          id: 'id',
+          type: 'SWITCH_CONTROL',
+          values: { value: 1 },
+          format: {},
+        }}
+        eventHandler={mockEventHandler}
+      />
+    </ThemeProvider>,
+  );
+
+  expect(mockEventHandler).not.toHaveBeenCalled();
+  wrapper.find(DataChannel.ControlSwitch).props().onSubmit();
+  expect(mockEventHandler).toHaveBeenCalledWith({
+    id: 'id', type: 'submit', values: { value: 0 }},
+  );
 });
