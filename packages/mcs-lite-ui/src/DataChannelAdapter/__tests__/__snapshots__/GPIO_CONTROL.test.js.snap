@@ -429,10 +429,12 @@ exports[`DataChannelAdapter should render GPIO_CONTROL correctly with default va
                       className="eBMqlM"
                       color="primary"
                     >
-                      <div
+                      <p
                         className="eBMqlM"
                         color="primary"
-                      />
+                      >
+                        N/A
+                      </p>
                     </Component>
                   </Styled(Component)>
                 </div>
