@@ -250,9 +250,17 @@ class DataChannelAdapter extends React.Component {
         );
       }],
 
+      /**
+       * Analog
+       *
+       * @author Michael Hsu
+       */
 
       [R.equals('ANALOG_CONTROL'), () => {
-        const valueMapper = index => index || NO_DATA_PLACEHOLDER;
+        // Hint: index could be empty string. (For Controlled Component usage.)
+        const valueMapper = index => R.isNil(index) || R.isEmpty(index)
+          ? NO_DATA_PLACEHOLDER
+          : index;
 
         return (
           <DataChannel.ControlRange
@@ -275,6 +283,8 @@ class DataChannelAdapter extends React.Component {
           />
         );
       }],
+
+
       [R.equals('PWM_DISPLAY'), () =>
         <DataChannel.DisplayMultipleValue
           items={[
