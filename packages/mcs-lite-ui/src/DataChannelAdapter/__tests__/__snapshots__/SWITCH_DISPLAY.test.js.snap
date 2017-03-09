@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`DataChannelAdapter should render SWITCH_DISPLAY correctly with default value to false 1`] = `
+exports[`should render SWITCH_DISPLAY correctly with default value to false 1`] = `
 <DataChannelAdapter
   dataChannelProps={
     Object {
@@ -117,7 +117,7 @@ exports[`DataChannelAdapter should render SWITCH_DISPLAY correctly with default 
 </DataChannelAdapter>
 `;
 
-exports[`DataChannelAdapter should render SWITCH_DISPLAY correctly with false value 1`] = `
+exports[`should render SWITCH_DISPLAY correctly with false value 1`] = `
 <DataChannelAdapter
   dataChannelProps={
     Object {
@@ -236,7 +236,7 @@ exports[`DataChannelAdapter should render SWITCH_DISPLAY correctly with false va
 </DataChannelAdapter>
 `;
 
-exports[`DataChannelAdapter should render SWITCH_DISPLAY correctly with true value 1`] = `
+exports[`should render SWITCH_DISPLAY correctly with true value 1`] = `
 <DataChannelAdapter
   dataChannelProps={
     Object {

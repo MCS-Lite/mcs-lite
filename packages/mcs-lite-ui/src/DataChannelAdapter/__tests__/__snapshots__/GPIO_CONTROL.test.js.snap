@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`DataChannelAdapter should render GPIO_CONTROL correctly with High 1`] = `
+exports[`should render GPIO_CONTROL correctly with High 1`] = `
 <DataChannelAdapter
   dataChannelProps={
     Object {
@@ -158,7 +158,7 @@ exports[`DataChannelAdapter should render GPIO_CONTROL correctly with High 1`] =
 </DataChannelAdapter>
 `;
 
-exports[`DataChannelAdapter should render GPIO_CONTROL correctly with Low 1`] = `
+exports[`should render GPIO_CONTROL correctly with Low 1`] = `
 <DataChannelAdapter
   dataChannelProps={
     Object {
@@ -316,7 +316,7 @@ exports[`DataChannelAdapter should render GPIO_CONTROL correctly with Low 1`] = 
 </DataChannelAdapter>
 `;
 
-exports[`DataChannelAdapter should render GPIO_CONTROL correctly with default value to N/A 1`] = `
+exports[`should render GPIO_CONTROL correctly with default value to N/A 1`] = `
 <DataChannelAdapter
   dataChannelProps={
     Object {

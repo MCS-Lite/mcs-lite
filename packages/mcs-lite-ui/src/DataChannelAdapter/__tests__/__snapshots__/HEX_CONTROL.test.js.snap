@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`DataChannelAdapter should render HEX_CONTROL correctly with default value to empty 1`] = `
+exports[`should render HEX_CONTROL correctly with default value to empty 1`] = `
 <DataChannelAdapter
   dataChannelProps={
     Object {
@@ -113,7 +113,7 @@ exports[`DataChannelAdapter should render HEX_CONTROL correctly with default val
 </DataChannelAdapter>
 `;
 
-exports[`DataChannelAdapter should render HEX_CONTROL correctly with empty string 1`] = `
+exports[`should render HEX_CONTROL correctly with empty string 1`] = `
 <DataChannelAdapter
   dataChannelProps={
     Object {
@@ -228,7 +228,7 @@ exports[`DataChannelAdapter should render HEX_CONTROL correctly with empty strin
 </DataChannelAdapter>
 `;
 
-exports[`DataChannelAdapter should render HEX_CONTROL correctly with value 1`] = `
+exports[`should render HEX_CONTROL correctly with value 1`] = `
 <DataChannelAdapter
   dataChannelProps={
     Object {

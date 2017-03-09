@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`DataChannelAdapter should render INTEGER_CONTROL correctly with default value to empty 1`] = `
+exports[`should render INTEGER_CONTROL correctly with default value to empty 1`] = `
 <DataChannelAdapter
   dataChannelProps={
     Object {
@@ -115,7 +115,7 @@ exports[`DataChannelAdapter should render INTEGER_CONTROL correctly with default
 </DataChannelAdapter>
 `;
 
-exports[`DataChannelAdapter should render INTEGER_CONTROL correctly with unit 1`] = `
+exports[`should render INTEGER_CONTROL correctly with unit 1`] = `
 <DataChannelAdapter
   dataChannelProps={
     Object {
@@ -250,7 +250,7 @@ exports[`DataChannelAdapter should render INTEGER_CONTROL correctly with unit 1`
 </DataChannelAdapter>
 `;
 
-exports[`DataChannelAdapter should render INTEGER_CONTROL correctly with value 1`] = `
+exports[`should render INTEGER_CONTROL correctly with value 1`] = `
 <DataChannelAdapter
   dataChannelProps={
     Object {
@@ -367,7 +367,7 @@ exports[`DataChannelAdapter should render INTEGER_CONTROL correctly with value 1
 </DataChannelAdapter>
 `;
 
-exports[`DataChannelAdapter should render INTEGER_CONTROL correctly with zero 1`] = `
+exports[`should render INTEGER_CONTROL correctly with zero 1`] = `
 <DataChannelAdapter
   dataChannelProps={
     Object {

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`DataChannelAdapter should render CATEGORY_CONTROL correctly with default value to N/A 1`] = `
+exports[`should render CATEGORY_CONTROL correctly with default value to N/A 1`] = `
 <DataChannelAdapter
   dataChannelProps={
     Object {
@@ -164,7 +164,7 @@ exports[`DataChannelAdapter should render CATEGORY_CONTROL correctly with defaul
 </DataChannelAdapter>
 `;
 
-exports[`DataChannelAdapter should render CATEGORY_CONTROL correctly with first item 1`] = `
+exports[`should render CATEGORY_CONTROL correctly with first item 1`] = `
 <DataChannelAdapter
   dataChannelProps={
     Object {
@@ -333,7 +333,7 @@ exports[`DataChannelAdapter should render CATEGORY_CONTROL correctly with first 
 </DataChannelAdapter>
 `;
 
-exports[`DataChannelAdapter should render CATEGORY_CONTROL correctly with second item 1`] = `
+exports[`should render CATEGORY_CONTROL correctly with second item 1`] = `
 <DataChannelAdapter
   dataChannelProps={
     Object {

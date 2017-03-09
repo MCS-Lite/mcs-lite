@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`DataChannelAdapter should render FLOAT_DISPLAY correctly with default value to N/A 1`] = `
+exports[`should render FLOAT_DISPLAY correctly with default value to N/A 1`] = `
 <DataChannelAdapter
   dataChannelProps={
     Object {
@@ -42,7 +42,7 @@ exports[`DataChannelAdapter should render FLOAT_DISPLAY correctly with default v
 </DataChannelAdapter>
 `;
 
-exports[`DataChannelAdapter should render FLOAT_DISPLAY correctly with unit 1`] = `
+exports[`should render FLOAT_DISPLAY correctly with unit 1`] = `
 <DataChannelAdapter
   dataChannelProps={
     Object {
@@ -104,7 +104,7 @@ exports[`DataChannelAdapter should render FLOAT_DISPLAY correctly with unit 1`] 
 </DataChannelAdapter>
 `;
 
-exports[`DataChannelAdapter should render FLOAT_DISPLAY correctly with value 1`] = `
+exports[`should render FLOAT_DISPLAY correctly with value 1`] = `
 <DataChannelAdapter
   dataChannelProps={
     Object {
@@ -148,7 +148,7 @@ exports[`DataChannelAdapter should render FLOAT_DISPLAY correctly with value 1`]
 </DataChannelAdapter>
 `;
 
-exports[`DataChannelAdapter should render FLOAT_DISPLAY correctly with zero 1`] = `
+exports[`should render FLOAT_DISPLAY correctly with zero 1`] = `
 <DataChannelAdapter
   dataChannelProps={
     Object {
