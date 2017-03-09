@@ -56,6 +56,13 @@ class DataChannelAdapter extends React.Component {
     const { id, values, type, format } = dataChannelProps;
 
     return R.cond([
+
+      /**
+       * Switch
+       *
+       * @author Michael Hsu
+       */
+
       [R.equals('SWITCH_CONTROL'), () =>
         <DataChannel.ControlSwitch
           value={Boolean(values.value)}
@@ -72,6 +79,13 @@ class DataChannelAdapter extends React.Component {
           labels={['OFF', 'ON']}
         />,
       ],
+
+      /**
+       * Integer
+       *
+       * @author Michael Hsu
+       */
+
       [R.equals('INTEGER_CONTROL'), () =>
         <DataChannel.ControlNumber
           placeholder="Integer only"
@@ -84,7 +98,30 @@ class DataChannelAdapter extends React.Component {
       ],
       [R.equals('INTEGER_DISPLAY'), () =>
         <DataChannel.DisplayUnitValue
-          value={R.isNil(values.value) ? NO_DATA_PLACEHOLDER : values.value}
+          value={R.isNil(values.value) ? NO_DATA_PLACEHOLDER : parseInt(values.value, 10)}
+          unit={format.unit}
+        />,
+      ],
+
+      /**
+       * Float
+       *
+       * @author Michael Hsu
+       */
+
+      [R.equals('FLOAT_CONTROL'), () =>
+        <DataChannel.ControlNumber
+          placeholder="Float only"
+          unit={format.unit && `單位：${format.unit}`}
+          value={R.isNil(values.value) ? '' : parseFloat(values.value, 10)}
+          onSubmit={() => eventHandler({ type: 'submit', id, values })}
+          onChange={e => eventHandler({ type: 'change', id, values: { value: e.target.value }})}
+          onClear={() => eventHandler({ type: 'clear', id, values: 0 })}
+        />,
+      ],
+      [R.equals('FLOAT_DISPLAY'), () =>
+        <DataChannel.DisplayUnitValue
+          value={R.isNil(values.value) ? NO_DATA_PLACEHOLDER : parseFloat(values.value, 10)}
           unit={format.unit}
         />,
       ],
@@ -116,22 +153,6 @@ class DataChannelAdapter extends React.Component {
         <DataChannel.DisplayString
           placeholder="String only"
           value={R.isNil(values.value) ? '' : values.value}
-        />,
-      ],
-      [R.equals('FLOAT_DISPLAY'), () =>
-        <DataChannel.DisplayUnitValue
-          value={R.isNil(values.value) ? NO_DATA_PLACEHOLDER : values.value}
-          unit={format.unit}
-        />,
-      ],
-      [R.equals('FLOAT_CONTROL'), () =>
-        <DataChannel.ControlNumber
-          placeholder="Float only"
-          unit={`單位：${format.unit}`}
-          value={R.isNil(values.value) ? '' : parseInt(values.value, 10)}
-          onSubmit={() => eventHandler({ type: 'submit', id, values })}
-          onChange={e => eventHandler({ type: 'change', id, values: { value: e.target.value }})}
-          onClear={() => eventHandler({ type: 'clear', id, values: 0 })}
         />,
       ],
       [R.equals('GPIO_CONTROL'), () => {
