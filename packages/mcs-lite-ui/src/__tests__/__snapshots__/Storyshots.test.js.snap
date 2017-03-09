@@ -1740,7 +1740,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
           className="haOaRY"
           disabled={true}
           kind="primary"
-          placeholder="String only"
+          placeholder="Hex only"
           value="ABF123"
         />
       </div>

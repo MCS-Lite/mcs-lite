@@ -178,7 +178,7 @@ class DataChannelAdapter extends React.Component {
 
       [R.equals('GPIO_CONTROL'), () => {
         const labels = ['Low', 'High'];
-        const valueMapper = index => R.isNil(index) ? NO_DATA_PLACEHOLDER : labels[index];
+        const valueMapper = index => labels[index] || NO_DATA_PLACEHOLDER;
 
         return (
           <DataChannel.ControlRange
@@ -205,36 +205,42 @@ class DataChannelAdapter extends React.Component {
         />,
       ],
 
+      /**
+       * Category
+       *
+       * @author Michael Hsu
+       */
+
       [R.equals('CATEGORY_CONTROL'), () => {
-        const value = values.value
-          ? R.findIndex(R.propEq('value', values.value))(format.items)
-          : undefined;
-        const valueMapper = index => index
+        const value = R.isNil(values.value)
+          ? undefined
+          : R.findIndex(R.propEq('value', values.value))(format.items);
+        const valueMapper = index => format.items[index]
           ? format.items[index].value
           : NO_DATA_PLACEHOLDER;
 
         return (
           <DataChannel.ControlRange
-            value={R.isNil(value) ? '' : value}
+            value={value}
             labels={format.items.map(R.prop('name'))}
             valueMapper={valueMapper}
             onChange={e => eventHandler({
               type: 'change',
               id,
-              values: { value: valueMapper(e.target.value), period: values.period },
+              values: { value: valueMapper(e.target.value) },
             })}
             onSubmit={() => eventHandler({
               type: 'submit',
               id,
-              values: { value: valueMapper(values.value), period: values.period },
+              values: { value: valueMapper(values.value) },
             })}
           />
         );
       }],
       [R.equals('CATEGORY_DISPLAY'), () => {
-        const value = values.value
-          ? R.findIndex(R.propEq('value', values.value))(format.items)
-          : undefined;
+        const value = R.isNil(values.value)
+          ? undefined
+          : R.findIndex(R.propEq('value', values.value))(format.items);
 
         return (
           <DataChannel.DisplayStatus
@@ -243,6 +249,8 @@ class DataChannelAdapter extends React.Component {
           />
         );
       }],
+
+
       [R.equals('ANALOG_CONTROL'), () => {
         const valueMapper = index => index || NO_DATA_PLACEHOLDER;
 
