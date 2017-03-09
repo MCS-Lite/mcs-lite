@@ -222,7 +222,7 @@ class DataChannelAdapter extends React.Component {
         return (
           <DataChannel.ControlRange
             value={value}
-            labels={format.items.map(R.prop('name'))}
+            labels={R.pluck('name')(format.items)}
             valueMapper={valueMapper}
             onChange={e => eventHandler({
               type: 'change',
@@ -245,7 +245,7 @@ class DataChannelAdapter extends React.Component {
         return (
           <DataChannel.DisplayStatus
             value={value}
-            labels={format.items.map(R.prop('name'))}
+            labels={R.pluck('name')(format.items)}
           />
         );
       }],

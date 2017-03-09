@@ -1,0 +1,388 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render CATEGORY_DISPLAY correctly with default value to N/A 1`] = `
+<DataChannelAdapter
+  dataChannelProps={
+    Object {
+      "format": Object {
+        "items": Array [
+          Object {
+            "name": "name1",
+            "value": "value1",
+          },
+          Object {
+            "name": "name2",
+            "value": "value2",
+          },
+        ],
+      },
+      "id": "id",
+      "type": "CATEGORY_DISPLAY",
+      "values": Object {},
+    }
+  }
+  eventHandler={[Function]}
+>
+  <DisplayStatus
+    labels={
+      Array [
+        "name1",
+        "name2",
+      ]
+    }
+  >
+    <styled.div>
+      <div
+        className="frKWdl"
+      >
+        <styled.div>
+          <div
+            className="gBTIWB"
+          >
+            <P
+              color="grayBase"
+            >
+              <Component
+                className="jyQfel"
+                color="grayBase"
+              >
+                <p
+                  className="jyQfel"
+                  color="grayBase"
+                >
+                  name1
+                </p>
+              </Component>
+            </P>
+            <div>
+              <StatusLight
+                color="grayDark"
+              >
+                <styled.svg
+                  color="grayDark"
+                  viewBox="0 0 20 20"
+                >
+                  <svg
+                    className="gUywdC"
+                    color="grayDark"
+                    viewBox="0 0 20 20"
+                  >
+                    <circle
+                      cx="10"
+                      cy="10"
+                      r="10"
+                    />
+                  </svg>
+                </styled.svg>
+              </StatusLight>
+            </div>
+          </div>
+        </styled.div>
+        <styled.div>
+          <div
+            className="gBTIWB"
+          >
+            <P
+              color="grayBase"
+            >
+              <Component
+                className="jyQfel"
+                color="grayBase"
+              >
+                <p
+                  className="jyQfel"
+                  color="grayBase"
+                >
+                  name2
+                </p>
+              </Component>
+            </P>
+            <div>
+              <StatusLight
+                color="grayDark"
+              >
+                <styled.svg
+                  color="grayDark"
+                  viewBox="0 0 20 20"
+                >
+                  <svg
+                    className="gUywdC"
+                    color="grayDark"
+                    viewBox="0 0 20 20"
+                  >
+                    <circle
+                      cx="10"
+                      cy="10"
+                      r="10"
+                    />
+                  </svg>
+                </styled.svg>
+              </StatusLight>
+            </div>
+          </div>
+        </styled.div>
+      </div>
+    </styled.div>
+  </DisplayStatus>
+</DataChannelAdapter>
+`;
+
+exports[`should render CATEGORY_DISPLAY correctly with first item 1`] = `
+<DataChannelAdapter
+  dataChannelProps={
+    Object {
+      "format": Object {
+        "items": Array [
+          Object {
+            "name": "name1",
+            "value": "value1",
+          },
+          Object {
+            "name": "name2",
+            "value": "value2",
+          },
+        ],
+      },
+      "id": "id",
+      "type": "CATEGORY_DISPLAY",
+      "values": Object {
+        "value": "value1",
+      },
+    }
+  }
+  eventHandler={[Function]}
+>
+  <DisplayStatus
+    labels={
+      Array [
+        "name1",
+        "name2",
+      ]
+    }
+    value={0}
+  >
+    <styled.div>
+      <div
+        className="frKWdl"
+      >
+        <styled.div>
+          <div
+            className="gBTIWB"
+          >
+            <P
+              color="grayBase"
+            >
+              <Component
+                className="jyQfel"
+                color="grayBase"
+              >
+                <p
+                  className="jyQfel"
+                  color="grayBase"
+                >
+                  name1
+                </p>
+              </Component>
+            </P>
+            <div>
+              <StatusLight
+                color="success"
+              >
+                <styled.svg
+                  color="success"
+                  viewBox="0 0 20 20"
+                >
+                  <svg
+                    className="jfcUeq"
+                    color="success"
+                    viewBox="0 0 20 20"
+                  >
+                    <circle
+                      cx="10"
+                      cy="10"
+                      r="10"
+                    />
+                  </svg>
+                </styled.svg>
+              </StatusLight>
+            </div>
+          </div>
+        </styled.div>
+        <styled.div>
+          <div
+            className="gBTIWB"
+          >
+            <P
+              color="grayBase"
+            >
+              <Component
+                className="jyQfel"
+                color="grayBase"
+              >
+                <p
+                  className="jyQfel"
+                  color="grayBase"
+                >
+                  name2
+                </p>
+              </Component>
+            </P>
+            <div>
+              <StatusLight
+                color="grayDark"
+              >
+                <styled.svg
+                  color="grayDark"
+                  viewBox="0 0 20 20"
+                >
+                  <svg
+                    className="gUywdC"
+                    color="grayDark"
+                    viewBox="0 0 20 20"
+                  >
+                    <circle
+                      cx="10"
+                      cy="10"
+                      r="10"
+                    />
+                  </svg>
+                </styled.svg>
+              </StatusLight>
+            </div>
+          </div>
+        </styled.div>
+      </div>
+    </styled.div>
+  </DisplayStatus>
+</DataChannelAdapter>
+`;
+
+exports[`should render CATEGORY_DISPLAY correctly with second item 1`] = `
+<DataChannelAdapter
+  dataChannelProps={
+    Object {
+      "format": Object {
+        "items": Array [
+          Object {
+            "name": "name1",
+            "value": "value1",
+          },
+          Object {
+            "name": "name2",
+            "value": "value2",
+          },
+        ],
+      },
+      "id": "id",
+      "type": "CATEGORY_DISPLAY",
+      "values": Object {
+        "value": "value2",
+      },
+    }
+  }
+  eventHandler={[Function]}
+>
+  <DisplayStatus
+    labels={
+      Array [
+        "name1",
+        "name2",
+      ]
+    }
+    value={1}
+  >
+    <styled.div>
+      <div
+        className="frKWdl"
+      >
+        <styled.div>
+          <div
+            className="gBTIWB"
+          >
+            <P
+              color="grayBase"
+            >
+              <Component
+                className="jyQfel"
+                color="grayBase"
+              >
+                <p
+                  className="jyQfel"
+                  color="grayBase"
+                >
+                  name1
+                </p>
+              </Component>
+            </P>
+            <div>
+              <StatusLight
+                color="grayDark"
+              >
+                <styled.svg
+                  color="grayDark"
+                  viewBox="0 0 20 20"
+                >
+                  <svg
+                    className="gUywdC"
+                    color="grayDark"
+                    viewBox="0 0 20 20"
+                  >
+                    <circle
+                      cx="10"
+                      cy="10"
+                      r="10"
+                    />
+                  </svg>
+                </styled.svg>
+              </StatusLight>
+            </div>
+          </div>
+        </styled.div>
+        <styled.div>
+          <div
+            className="gBTIWB"
+          >
+            <P
+              color="grayBase"
+            >
+              <Component
+                className="jyQfel"
+                color="grayBase"
+              >
+                <p
+                  className="jyQfel"
+                  color="grayBase"
+                >
+                  name2
+                </p>
+              </Component>
+            </P>
+            <div>
+              <StatusLight
+                color="success"
+              >
+                <styled.svg
+                  color="success"
+                  viewBox="0 0 20 20"
+                >
+                  <svg
+                    className="jfcUeq"
+                    color="success"
+                    viewBox="0 0 20 20"
+                  >
+                    <circle
+                      cx="10"
+                      cy="10"
+                      r="10"
+                    />
+                  </svg>
+                </styled.svg>
+              </StatusLight>
+            </div>
+          </div>
+        </styled.div>
+      </div>
+    </styled.div>
+  </DisplayStatus>
+</DataChannelAdapter>
+`;
