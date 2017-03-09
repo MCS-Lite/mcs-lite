@@ -1,5 +1,20 @@
 # MCS Lite changelogs
 
+## Released (2017-03-09)
+
+#### :bug: Bug Fix
+* `mcs-lite-introduction`
+  * [#207](https://github.com/evenchange4/mcs-lite/pull/207) fix(gitbook/pack): use .bookignore instead of rm -rf. ([@evenchange4](https://github.com/evenchange4))
+
+#### :house: Internal
+* `mcs-lite-introduction`
+  * [#206](https://github.com/evenchange4/mcs-lite/pull/206) chore(gitbook): remove package.json. ([@evenchange4](https://github.com/evenchange4))
+
+#### Committers: 1
+- Michael Hsu ([evenchange4](https://github.com/evenchange4))
+
+----
+
 ## Released (2017-03-08)
 
 ### Bump Versions
