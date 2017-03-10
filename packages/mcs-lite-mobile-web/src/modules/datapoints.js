@@ -60,14 +60,25 @@ function fetchDatapointsCycle(sources) {
 
   const deviceKey$ = sources.STATE
     .pluck('devices')
-    .filter(R.pipe(R.isEmpty, R.not))
+    .filter(R.complement(R.isEmpty))
     .combineLatest(deviceId$)
     .map(([devices, deviceId]) => devices[deviceId].deviceKey)
     .distinctUntilChanged();
 
-  const query$ = sources.ACTION
-    .filter(action => action.type === SET_QUERY)
-    .pluck('payload', 'query')
+  // const query$ = sources.ACTION
+  //   .filter(action => action.type === SET_QUERY)
+  //   .pluck('payload', 'query')
+  //   .startWith({ start: '', end: '' });
+
+  const query$ = sources.STATE
+    .pluck('datapoints')
+    .filter(R.complement(R.isNil))
+    .combineLatest(dataChannelId$)
+    .map(([datapoint, dataChannelId]) => datapoint[dataChannelId])
+    .filter(R.complement(R.isNil))
+    .pluck('query')
+    .filter(query => !!query)
+    .distinctUntilChanged((q1, q2) => R.eqProps('start', q1, q2) && R.eqProps('end', q1, q2))
     .startWith({ start: '', end: '' });
 
   const request$ = Observable
@@ -86,7 +97,7 @@ function fetchDatapointsCycle(sources) {
 
   const action$ = response$
     .pluck('body', 'data')
-    .do(console.log)
+    // .do(console.log)
     .zip(dataChannelId$, (data, dataChannelId) => ({ data, dataChannelId }))
     .map(setDatapoints);
 
@@ -128,7 +139,6 @@ const initialState = {}; // Remind: indexBy datachannelId
 export default function reducer(state = initialState, action = {}) {
   switch (action.type) {
     case SET_DATAPOINTS: {
-      // TODO: api should move dataChannelId upper scope.
       const { dataChannelId, data } = action.payload;
 
       return {
@@ -141,7 +151,6 @@ export default function reducer(state = initialState, action = {}) {
     }
 
     case SET_QUERY: {
-      // TODO: api should move dataChannelId upper scope.
       const { dataChannelId, query } = action.payload;
 
       return {
@@ -165,7 +174,6 @@ export default function reducer(state = initialState, action = {}) {
         R.takeLast(100),
       )(datapoints);
 
-      // TODO: API sort ?
       return {
         ...state,
         [dataChannelId]: {

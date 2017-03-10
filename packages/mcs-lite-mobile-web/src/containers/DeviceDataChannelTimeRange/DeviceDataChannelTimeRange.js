@@ -1,9 +1,13 @@
 import React, { PropTypes } from 'react';
 import Helmet from 'react-helmet';
-import { MobileHeader, P, DatetimePickerDialog, Button, MobileFixedFooter } from 'mcs-lite-ui';
-import IconArrowLeft from 'mcs-lite-icon/lib/IconArrowLeft';
 import { Link } from 'react-router';
-import { Container, InputWrapper, FakeInput, ButtonWrapper } from './styled-components';
+import IconArrowLeft from 'mcs-lite-icon/lib/IconArrowLeft';
+import {
+  MobileHeader, P, DatetimePickerDialog, Button, MobileFixedFooter,
+} from 'mcs-lite-ui';
+import {
+  Container, InputWrapper, FakeInput, ButtonWrapper,
+} from './styled-components';
 import updatePathname from '../../utils/updatePathname';
 import datetimeFormat from '../../utils/datetimeFormat';
 import StyledLink from '../../components/StyledLink';
@@ -22,7 +26,6 @@ class DeviceDataChannelTimeRange extends React.Component {
     fetchDeviceDetail: PropTypes.func.isRequired,
     setQuery: PropTypes.func.isRequired,
   }
-
   constructor(props) {
     super(props);
     const now = new Date().valueOf();
@@ -33,7 +36,6 @@ class DeviceDataChannelTimeRange extends React.Component {
       end: props.query.end || now,
     };
   }
-
   componentWillMount = () => this.props.fetchDeviceDetail(this.props.deviceId);
   onStartTimeClick = () => this.setState({ isDialogshow: true, dialogTarget: 'start' });
   onEndTimeClick = () => this.setState({ isDialogshow: true, dialogTarget: 'end' });
@@ -42,7 +44,6 @@ class DeviceDataChannelTimeRange extends React.Component {
   onSubmit = () => {
     const { dataChannelId, setQuery } = this.props;
     const { start, end } = this.state;
-
     setQuery(dataChannelId, { start, end });
   }
   back = updatePathname(`/devices/${this.props.deviceId}/dataChannels/${this.props.dataChannelId}`);

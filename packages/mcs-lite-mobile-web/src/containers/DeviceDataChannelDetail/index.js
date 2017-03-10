@@ -9,6 +9,7 @@ import messages from './messages';
 import { actions as devicesActions } from '../../modules/devices';
 import { actions as datapointsActions } from '../../modules/datapoints';
 import DeviceDataChannelDetail from './DeviceDataChannelDetail';
+import datetimeFormat from '../../utils/datetimeFormat';
 
 export const mapStateToProps = (
   { devices, ui, datapoints },
@@ -16,10 +17,20 @@ export const mapStateToProps = (
 ) => ({
   deviceId,
   dataChannelId,
-  device: devices[deviceId],
+  datachannel: R.pipe(
+      R.pathOr([], [deviceId, 'datachannels']),
+      R.find(R.propEq('datachannelId', dataChannelId)),
+    )(devices),
   isLoading: ui.isLoading,
-  datapoints: R.pathOr([], [dataChannelId, 'data'])(datapoints),
+  data: R.pipe(
+      R.pathOr([], [dataChannelId, 'data']),
+      R.map(d => ({
+        value: parseInt(d.values.value, 10),
+        updatedAt: datetimeFormat(new Date(d.updatedAt)),
+      })),
+    )(datapoints),
   query: R.pathOr({}, [dataChannelId, 'query'])(datapoints),
+  deviceKey: R.pathOr('', [deviceId, 'deviceKey'])(devices),
 });
 export const mapDispatchToProps = {
   fetchDeviceDetail: devicesActions.fetchDeviceDetail,
@@ -33,7 +44,8 @@ const wsHost = `ws://${window.location.hostname}:${process.env.REACT_APP_SOCKET_
 export default compose(
   connect(mapStateToProps, mapDispatchToProps),
   connectSocket(
-    ({ device }) => device && `${wsHost}/deviceId/${device.deviceId}/deviceKey/${device.deviceKey}`,
+    ({ deviceId, deviceKey }) => deviceKey
+      && `${wsHost}/deviceId/${deviceId}/deviceKey/${deviceKey}`,
     props => datapoint => props.setDatapoint(props.deviceId, datapoint, true),
     'sendMessage', // propsName
   ),
