@@ -1,6 +1,7 @@
 /* global window */
 
 import { connect } from 'react-redux';
+import R from 'ramda';
 import compose from 'recompose/compose';
 import { withGetMessages } from 'react-intl-inject-hoc';
 import { connectSocket } from 'mcs-lite-connect';
@@ -17,12 +18,14 @@ export const mapStateToProps = (
   dataChannelId,
   device: devices[deviceId],
   isLoading: ui.isLoading,
-  datapoints: datapoints[dataChannelId],
+  datapoints: R.pathOr([], [dataChannelId, 'data'])(datapoints),
+  query: R.pathOr({}, [dataChannelId, 'query'])(datapoints),
 });
 export const mapDispatchToProps = {
   fetchDeviceDetail: devicesActions.fetchDeviceDetail,
   fetchDatapoints: datapointsActions.fetchDatapoints,
   setDatapoint: devicesActions.setDatapoint,
+  setQuery: datapointsActions.setQuery,
 };
 
 const wsHost = `ws://${window.location.hostname}:${process.env.REACT_APP_SOCKET_PORT}`;

@@ -18,22 +18,26 @@ import datetimeFormat from '../../utils/datetimeFormat';
 class DeviceDataChannelDetail extends React.Component {
   static propTypes = {
     device: PropTypes.object,
-    datapoints: PropTypes.array,
+    datapoints: PropTypes.array.isRequired,
     deviceId: PropTypes.string.isRequired,
     dataChannelId: PropTypes.string.isRequired,
     getMessages: PropTypes.func.isRequired,
     fetchDeviceDetail: PropTypes.func.isRequired,
     fetchDatapoints: PropTypes.func.isRequired,
+    setQuery: PropTypes.func.isRequired,
   }
   static defaultProps = {
     device: {
       user: {},
       prototype: {},
     },
-    datapoints: [],
   }
   componentWillMount = () => this.fetch();
-  onResetClick = console.log; // eslint-disable-line
+  onResetClick = () => {
+    const { deviceId, dataChannelId } = this.props;
+    this.props.setQuery(this.props.dataChannelId, {});
+    this.props.fetchDatapoints(deviceId, dataChannelId);
+  }
   eventHandler = (e) => {
     // TODO: refactor these codes.
     const datapoint = { datachannelId: e.id, values: e.values };
@@ -121,12 +125,12 @@ class DeviceDataChannelDetail extends React.Component {
             </HistoryHeader>
 
             <ChartWrapper>
-              {c && (
+              {c && data.length > 0 ? (
                 <DataPointAreaChart
                   data={data}
                   type={['Switch'].includes(c.channelType.name) ? 'step' : 'linear'}
                 />
-              )}
+              ) : t('noData')}
             </ChartWrapper>
           </HistoryContainer>
         </main>
