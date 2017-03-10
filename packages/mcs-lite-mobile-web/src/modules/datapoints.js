@@ -51,45 +51,40 @@ function fetchDatapointsCycle(sources) {
     .filter(action => action.type === FETCH_DATAPOINTS)
     .pluck('payload');
 
-  const dataChannelId$ = payload$
-    .pluck('dataChannelId');
-
-  const deviceId$ = payload$
-    .pluck('deviceId')
-    .distinctUntilChanged();
+  const dataChannelId$ = payload$.pluck('dataChannelId');
+  const deviceId$ = payload$.pluck('deviceId');
 
   const deviceKey$ = sources.STATE
     .pluck('devices')
-    .filter(R.complement(R.isEmpty))
-    .combineLatest(deviceId$)
-    .map(([devices, deviceId]) => devices[deviceId].deviceKey)
-    .distinctUntilChanged();
+    .combineLatest(deviceId$, (devices, deviceId) =>
+      R.pathOr(undefined, [deviceId, 'deviceKey'])(devices),
+    )
+    .filter(R.complement(R.isNil));
 
-  // const query$ = sources.ACTION
-  //   .filter(action => action.type === SET_QUERY)
-  //   .pluck('payload', 'query')
-  //   .startWith({ start: '', end: '' });
-
-  const query$ = sources.STATE
+  const datapoints$ = sources.STATE
     .pluck('datapoints')
+    .filter(R.complement(R.isNil));
+
+  const query$ = datapoints$
+    .combineLatest(dataChannelId$, (datapoint, dataChannelId) =>
+      R.pathOr(undefined, [dataChannelId, 'query'])(datapoint),
+    )
     .filter(R.complement(R.isNil))
-    .combineLatest(dataChannelId$)
-    .map(([datapoint, dataChannelId]) => datapoint[dataChannelId])
-    .filter(R.complement(R.isNil))
-    .pluck('query')
-    .filter(query => !!query)
-    .distinctUntilChanged((q1, q2) => R.eqProps('start', q1, q2) && R.eqProps('end', q1, q2))
     .startWith({ start: '', end: '' });
 
-  const request$ = Observable
-    .combineLatest(deviceKey$, deviceId$, dataChannelId$, query$)
-    .map(([deviceKey, deviceId, dataChannelId, query]) => ({
+  const request$ = Observable.combineLatest(
+    deviceKey$.distinctUntilChanged(),
+    deviceId$.distinctUntilChanged(),
+    dataChannelId$,
+    query$.distinctUntilChanged((q1, q2) => R.eqProps('start', q1, q2) && R.eqProps('end', q1, q2)),
+    (deviceKey, deviceId, dataChannelId, query) => ({
       url: `/api/devices/${deviceId}/datachannels/${dataChannelId}/datapoints`,
       method: 'GET',
       headers: { deviceKey },
       category: 'datapoints',
       query,
-    }));
+    }),
+  );
 
   const response$ = sources.HTTP
     .select('datapoints')
@@ -97,7 +92,7 @@ function fetchDatapointsCycle(sources) {
 
   const action$ = response$
     .pluck('body', 'data')
-    // .do(console.log)
+    // ERROR: zip with async code will cause problems
     .zip(dataChannelId$, (data, dataChannelId) => ({ data, dataChannelId }))
     .map(setDatapoints);
 
