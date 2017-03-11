@@ -13,7 +13,7 @@ exports[`test should return props correctly with mapStateToProps 1`] = `
 Object {
   "data": Array [],
   "dataChannelId": "dataChannelId",
-  "datachannel": Object {},
+  "datachannel": undefined,
   "deviceId": "deviceId",
   "deviceKey": "",
   "isLoading": false,

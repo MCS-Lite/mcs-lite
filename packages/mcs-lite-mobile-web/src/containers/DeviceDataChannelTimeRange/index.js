@@ -10,16 +10,19 @@ import DeviceDataChannelTimeRange from './DeviceDataChannelTimeRange';
 const getCurrent = () => new Date().valueOf();
 
 export const mapStateToProps = (
-  { devices, ui, datapoints },
+  { ui, datapoints },
   { params: { deviceId, dataChannelId }},
 ) => ({
   deviceId,
   dataChannelId,
-  device: devices[deviceId],
   isLoading: ui.isLoading,
-  query: R.pathOr(
-    { start: getCurrent(), end: getCurrent() },
-    [dataChannelId, 'query'],
+  start: R.pathOr(
+    getCurrent(),
+    [dataChannelId, 'query', 'start'],
+  )(datapoints),
+  end: R.pathOr(
+    getCurrent(),
+    [dataChannelId, 'query', 'end'],
   )(datapoints),
 });
 export const mapDispatchToProps = {

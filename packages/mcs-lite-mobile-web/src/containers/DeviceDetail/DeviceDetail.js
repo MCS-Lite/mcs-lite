@@ -16,15 +16,13 @@ import datetimeFormat from '../../utils/datetimeFormat';
 
 class DeviceDetail extends React.Component {
   static propTypes = {
-    device: PropTypes.object,
+    device: PropTypes.object.isRequired,
     deviceId: PropTypes.string.isRequired,
     isLoading: PropTypes.bool.isRequired,
     getMessages: PropTypes.func.isRequired,
     fetchDeviceDetail: PropTypes.func.isRequired,
-    sendMessage: PropTypes.func,
-  }
-  static defaultProps = {
-    device: {},
+    sendMessage: PropTypes.func.isRequired,
+    setDatapoint: PropTypes.func.isRequired,
   }
   state = { isMenuShow: false, target: undefined };
   componentWillMount = () => this.fetch();
@@ -33,21 +31,24 @@ class DeviceDetail extends React.Component {
   getTarget = node => this.setState({ target: node });
   fetch = () => this.props.fetchDeviceDetail(this.props.deviceId);
   eventHandler = (e) => {
+    const { id, values, type } = e;
+    const { deviceId, sendMessage, setDatapoint } = this.props;
     // TODO: refactor these codes.
-    const datapoint = { datachannelId: e.id, values: e.values };
-    switch (e.type) {
+    const datapoint = { datachannelId: id, values };
+    switch (type) {
       case 'submit':
         // Remind: MUST upload the datapoint via WebSocket.
-        this.props.sendMessage(JSON.stringify(datapoint));
+        sendMessage(JSON.stringify(datapoint));
         break;
       default:
         // Remind: Just change the state.
-        this.props.setDatapoint(this.props.deviceId, datapoint);
+        setDatapoint(deviceId, datapoint);
+        break;
     }
   }
   render() {
     const { isMenuShow, target } = this.state;
-    const { device, isLoading, getMessages: t } = this.props;
+    const { deviceId, device, isLoading, getMessages: t } = this.props;
     const { getTarget, onMoreDetailClick, onHide, fetch, eventHandler } = this;
     return (
       <div>
@@ -79,10 +80,10 @@ class DeviceDetail extends React.Component {
                 alignConfig={{ points: ['tr', 'bc'], offset: [20, -20]}}
               >
                 <Menu.Menu key="menu">
-                  <StyledLink to={updatePathname(`/devices/${device.deviceId}/info`)}>
+                  <StyledLink to={updatePathname(`/devices/${deviceId}/info`)}>
                     <Menu.MenuItem>{t('deviceIntro')}</Menu.MenuItem>
                   </StyledLink>
-                  <StyledLink to={updatePathname(`/devices/${device.deviceId}/trigger`)}>
+                  <StyledLink to={updatePathname(`/devices/${deviceId}/trigger`)}>
                     <Menu.MenuItem>{t('triggerAndAction')}</Menu.MenuItem>
                   </StyledLink>
                 </Menu.Menu>
@@ -99,12 +100,12 @@ class DeviceDetail extends React.Component {
               <Container>
                 <CardWrapper>
                   {
-                    (device.datachannels || []).map(c => (
+                    device.datachannels && device.datachannels.map(c => (
                       <DataChannelCard
                         key={c.datachannelId}
                         data-width="half"
                         header={
-                          <StyledLink to={updatePathname(`/devices/${device.deviceId}/dataChannels/${c.datachannelId}`)}>
+                          <StyledLink to={updatePathname(`/devices/${deviceId}/dataChannels/${c.datachannelId}`)}>
                             <CardHeaderIcon>
                               <IconFold />
                             </CardHeaderIcon>

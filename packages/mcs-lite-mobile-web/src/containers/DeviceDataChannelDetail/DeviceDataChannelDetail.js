@@ -26,28 +26,32 @@ class DeviceDataChannelDetail extends React.Component {
     fetchDeviceDetail: PropTypes.func.isRequired,
     fetchDatapoints: PropTypes.func.isRequired,
     setQuery: PropTypes.func.isRequired,
+    sendMessage: PropTypes.func,
+    setDatapoint: PropTypes.func.isRequired,
   }
   componentWillMount = () => {
-    const { deviceId, dataChannelId } = this.props;
-    this.props.fetchDeviceDetail(deviceId);
-    this.props.fetchDatapoints(deviceId, dataChannelId);
+    const { deviceId, dataChannelId, fetchDeviceDetail, fetchDatapoints } = this.props;
+    fetchDeviceDetail(deviceId);
+    fetchDatapoints(deviceId, dataChannelId);
   };
   onResetClick = () => {
-    const { deviceId, dataChannelId } = this.props;
-    this.props.setQuery(this.props.dataChannelId, {});
-    this.props.fetchDatapoints(deviceId, dataChannelId);
+    const { dataChannelId, setQuery } = this.props;
+    setQuery(dataChannelId, {});
   }
   eventHandler = (e) => {
+    const { id, values, type } = e;
+    const { deviceId, sendMessage, setDatapoint } = this.props;
     // TODO: refactor these codes.
-    const datapoint = { datachannelId: e.id, values: e.values };
-    switch (e.type) {
+    const datapoint = { datachannelId: id, values };
+    switch (type) {
       case 'submit':
         // Remind: MUST upload the datapoint via WebSocket.
-        this.props.sendMessage(JSON.stringify(datapoint));
+        sendMessage(JSON.stringify(datapoint));
         break;
       default:
         // Remind: Just change the state.
-        this.props.setDatapoint(this.props.deviceId, datapoint);
+        setDatapoint(deviceId, datapoint);
+        break;
     }
   }
   render() {

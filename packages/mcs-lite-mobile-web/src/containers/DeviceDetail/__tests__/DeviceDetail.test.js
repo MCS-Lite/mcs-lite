@@ -19,6 +19,8 @@ it('should renders <DeviceDetail> correctly', () => {
       }}
       isLoading={false}
       fetchDeviceDetail={fetchMock}
+      sendMessage={() => {}}
+      setDatapoint={() => {}}
     />,
   );
 
@@ -34,6 +36,8 @@ it('should renders <DeviceDetail> correctly when Menu show', () => {
       device={{}}
       isLoading={false}
       fetchDeviceDetail={() => {}}
+      sendMessage={() => {}}
+      setDatapoint={() => {}}
     />,
   );
 
@@ -49,6 +53,8 @@ it('should return correctly state', () => {
       device={{}}
       isLoading={false}
       fetchDeviceDetail={() => {}}
+      sendMessage={() => {}}
+      setDatapoint={() => {}}
     />,
   );
 
@@ -63,4 +69,44 @@ it('should return correctly state', () => {
   // After Hide
   wrapper.instance().onHide();
   expect(wrapper.state('isMenuShow')).toBe(false);
+});
+
+it('should handle eventHandler correctly', () => {
+  const sendMessageMock = jest.fn();
+  const setDatapointMock = jest.fn();
+  const wrapper = shallow(
+    <DeviceDetail
+      getMessages={R.identity}
+      deviceId="deviceId"
+      device={{}}
+      isLoading={false}
+      fetchDeviceDetail={() => {}}
+      sendMessage={sendMessageMock}
+      setDatapoint={setDatapointMock}
+    />,
+  );
+
+  // Before eventHandler with submit type
+  expect(setDatapointMock).not.toHaveBeenCalled();
+  // After eventHandler with submit type
+  wrapper.instance().eventHandler({
+    type: 'submit',
+    id: 'id',
+    values: { value: 1 },
+  });
+  expect(sendMessageMock).toHaveBeenCalledWith('{"datachannelId":"id","values":{"value":1}}');
+
+
+  // Before eventHandler with other type
+  expect(setDatapointMock).not.toHaveBeenCalled();
+  // After eventHandler with other type
+  wrapper.instance().eventHandler({
+    type: 'change',
+    id: 'id',
+    values: { value: 1 },
+  });
+  expect(setDatapointMock).toHaveBeenCalledWith(
+    'deviceId',
+    { datachannelId: 'id', values: { value: 1 }},
+  );
 });

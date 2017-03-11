@@ -20,7 +20,6 @@ export const mapStateToProps = (
   datachannel: R.pipe(
     R.pathOr([], [deviceId, 'datachannels']),
     R.find(R.propEq('datachannelId', dataChannelId)),
-    R.defaultTo({}),
   )(devices),
   isLoading: ui.isLoading,
   data: R.pipe(

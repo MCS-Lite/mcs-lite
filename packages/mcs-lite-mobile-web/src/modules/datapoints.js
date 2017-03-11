@@ -70,16 +70,14 @@ function fetchDatapointsCycle(sources) {
       R.pathOr(undefined, [dataChannelId, 'query'])(datapoint),
     )
     .filter(R.complement(R.isNil))
-    .startWith({ start: '', end: '' });
+    .startWith({});
 
-  const requestPayload$ = Observable.combineLatest(
-    deviceKey$.distinctUntilChanged(),
-    deviceId$.distinctUntilChanged(),
-    dataChannelId$.distinctUntilChanged(),
-    query$.distinctUntilKeyChanged('start').distinctUntilKeyChanged('end'),
-  );
-
-  const request$ = requestPayload$
+  const request$ = Observable.combineLatest(
+      deviceKey$.distinctUntilChanged(),
+      deviceId$.distinctUntilChanged(),
+      dataChannelId$.distinctUntilChanged(),
+      query$.distinctUntilKeyChanged('start').distinctUntilKeyChanged('end'),
+    )
     .map(([deviceKey, deviceId, dataChannelId, query]) => ({
       url: `/api/devices/${deviceId}/datachannels/${dataChannelId}/datapoints`,
       method: 'GET',
@@ -92,10 +90,17 @@ function fetchDatapointsCycle(sources) {
     .select('datapoints')
     .switch();
 
+  // Remind: api response with dataChannelId will be better.
+  const responseDataChannedId$ = response$
+    .pluck('request', 'url')
+    .map(R.pipe(
+      R.match(/[\w]+(?=\/datapoints$)/),
+      R.head,
+    ));
+
   const action$ = response$
     .pluck('body', 'data')
-    // TODO: zip with async code will cause some problems?
-    .zip(requestPayload$, (data, [,, dataChannelId]) => ({ data, dataChannelId }))
+    .zip(responseDataChannedId$, (data, dataChannelId) => ({ data, dataChannelId }))
     .map(setDatapoints);
 
   return {
@@ -161,7 +166,7 @@ export default function reducer(state = initialState, action = {}) {
 
     case APPEND_DATAPOINT: {
       const dataChannelId = action.payload.dataChannelId;
-      const datapoints = state[dataChannelId].data;
+      const datapoints = R.pathOr([], [dataChannelId, 'data'])(state);
       const nextDatapoints = R.pipe(
         R.append({
           values: action.payload.values,

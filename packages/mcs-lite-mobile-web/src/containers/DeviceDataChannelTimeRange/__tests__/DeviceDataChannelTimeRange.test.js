@@ -13,10 +13,8 @@ it('should renders <DeviceDataChannelTimeRange> correctly', () => {
       getMessages={R.identity}
       deviceId="deviceId"
       dataChannelId="dataChannelId"
-      query={{
-        start: 1,
-        end: 2,
-      }}
+      start={1}
+      end={2}
       setQuery={() => {}}
       isLoading={false}
       fetchDeviceDetail={fetchDeviceMock}
@@ -34,10 +32,8 @@ it('should handle DatetimePickerDialog with correct state', () => {
       getMessages={R.identity}
       deviceId="deviceId"
       dataChannelId="dataChannelId"
-      query={{
-        start: 1,
-        end: 2,
-      }}
+      start={1}
+      end={2}
       setQuery={setQueryMock}
       isLoading={false}
       fetchDeviceDetail={() => {}}

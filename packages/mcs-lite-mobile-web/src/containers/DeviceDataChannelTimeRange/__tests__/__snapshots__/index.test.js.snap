@@ -10,14 +10,9 @@ Object {
 exports[`test should return props correctly with mapStateToProps 1`] = `
 Object {
   "dataChannelId": "dataChannelId",
-  "device": Object {
-    "deviceName": "deviceName",
-  },
   "deviceId": "deviceId",
+  "end": 2,
   "isLoading": false,
-  "query": Object {
-    "end": 2,
-    "start": 1,
-  },
+  "start": 1,
 }
 `;

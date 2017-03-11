@@ -1,6 +1,7 @@
 /* global window */
 
 import { connect } from 'react-redux';
+import R from 'ramda';
 import compose from 'recompose/compose';
 import { withGetMessages } from 'react-intl-inject-hoc';
 import { connectSocket } from 'mcs-lite-connect';
@@ -10,7 +11,7 @@ import DeviceDetail from './DeviceDetail';
 
 export const mapStateToProps = ({ devices, ui }, { params: { deviceId }}) => ({
   deviceId,
-  device: devices[deviceId],
+  device: R.pathOr({}, [deviceId])(devices),
   isLoading: ui.isLoading,
 });
 export const mapDispatchToProps = {
