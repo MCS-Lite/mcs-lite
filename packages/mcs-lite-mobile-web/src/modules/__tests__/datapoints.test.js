@@ -40,14 +40,21 @@ describe('datapoints - 2. Action Creators', () => {
 describe('datapoints - 3. Cycle', () => {
   it('should emit correct Sinks given Sources with fetchDatapointsCycle', (done) => {
     const stateSource = {
-      s: { devices: { deviceId445: { deviceKey: 'key556' }}},
+      s: {
+        devices: { deviceId445: { deviceKey: 'key556' }},
+      },
+      t: {
+        devices: { deviceId445: { deviceKey: 'key556' }},
+        datapoints: { dataChannelId778: { data: [], query: { start: 1, end: 2 }}},
+      },
     };
     const actionSource = {
       a: actions.fetchDatapoints('deviceId445', 'dataChannelId778'),
     };
     const httpSource = {
       select: () => ({
-        r: Observable.of({ body: { data: [{ a: 1 }, { a: 2 }]}}),
+        q: Observable.of({ body: { data: [{ a: 1 }, { a: 2 }]}}),
+        r: Observable.of({ body: { data: [{ a: 3 }, { a: 4 }]}}),
       }),
     };
 
@@ -56,24 +63,35 @@ describe('datapoints - 3. Cycle', () => {
         dataChannelId: 'dataChannelId778',
         data: [{ a: 1 }, { a: 2 }],
       }),
+      y: actions.setDatapoints({
+        dataChannelId: 'dataChannelId778',
+        data: [{ a: 3 }, { a: 4 }],
+      }),
     };
     const httpSink = {
-      r: {
+      q: {
         url: '/api/devices/deviceId445/datachannels/dataChannelId778/datapoints',
         method: 'GET',
         headers: { deviceKey: 'key556' },
         category: 'datapoints',
         query: { start: '', end: '' },
       },
+      r: {
+        url: '/api/devices/deviceId445/datachannels/dataChannelId778/datapoints',
+        method: 'GET',
+        headers: { deviceKey: 'key556' },
+        category: 'datapoints',
+        query: { start: 1, end: 2 },
+      },
     };
 
     assertSourcesSinks({
-      STATE:  { '-s------|': stateSource }, // Remind: will get deviceKey later.
+      STATE:  { '-s----t-|': stateSource }, // Remind: will get deviceKey later.
       ACTION: { 'a-------|': actionSource },
-      HTTP:   { '----r---|': httpSource },
+      HTTP:   { '----q--r|': httpSource },
     }, {
-      HTTP:   { '-r------|': httpSink },
-      ACTION: { '----x---|': actionSink },
+      HTTP:   { '-q----r-|': httpSink },
+      ACTION: { '----x--y|': actionSink },
     }, cycles.fetchDatapointsCycle, done);
   });
 
