@@ -88,4 +88,16 @@ Object {
 }
 `;
 
+exports[`datapoints - 4. Reducer should handle SET_QUERY 1`] = `
+Object {
+  "datachannelId123": Object {
+    "data": Array [],
+    "query": Object {
+      "end": 456,
+      "start": 123,
+    },
+  },
+}
+`;
+
 exports[`datapoints - 4. Reducer should return the initial state 1`] = `Object {}`;

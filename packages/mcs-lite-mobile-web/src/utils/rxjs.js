@@ -28,3 +28,4 @@ import 'rxjs/add/operator/distinctUntilChanged';
 import 'rxjs/add/operator/switch';
 import 'rxjs/add/operator/mergeAll';
 import 'rxjs/add/operator/distinctUntilKeyChanged';
+import 'rxjs/add/operator/zip';

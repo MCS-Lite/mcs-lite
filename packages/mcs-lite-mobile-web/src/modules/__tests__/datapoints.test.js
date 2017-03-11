@@ -52,7 +52,10 @@ describe('datapoints - 3. Cycle', () => {
     };
 
     const actionSink = {
-      x: actions.setDatapoints([{ a: 1 }, { a: 2 }]),
+      x: actions.setDatapoints({
+        dataChannelId: 'dataChannelId778',
+        data: [{ a: 1 }, { a: 2 }],
+      }),
     };
     const httpSink = {
       r: {
@@ -60,6 +63,7 @@ describe('datapoints - 3. Cycle', () => {
         method: 'GET',
         headers: { deviceKey: 'key556' },
         category: 'datapoints',
+        query: { start: '', end: '' },
       },
     };
 
@@ -105,6 +109,24 @@ describe('datapoints - 4. Reducer', () => {
       type: constants.SET_DATAPOINTS,
       payload: { dataChannelId: 'datachannelId123', data: []},
     });
+    expect(state).toMatchSnapshot();
+  });
+
+  it('should handle SET_QUERY', () => {
+    const state = reducer(
+      {
+        datachannelId123: {
+          data: [],
+        },
+      },
+      {
+        type: constants.SET_QUERY,
+        payload: {
+          dataChannelId: 'datachannelId123',
+          query: { start: 123, end: 456 },
+        },
+      },
+    );
     expect(state).toMatchSnapshot();
   });
 
