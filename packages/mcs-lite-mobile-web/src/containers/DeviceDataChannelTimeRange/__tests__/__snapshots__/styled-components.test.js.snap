@@ -1,0 +1,12 @@
+exports[`test should render components correctly 1`] = `
+Array [
+  <div>
+    <styled.div>
+        <div
+            className="bSbYwT" />
+    </styled.div>
+</div>,
+  <div
+    className="bSbYwT" />,
+]
+`;

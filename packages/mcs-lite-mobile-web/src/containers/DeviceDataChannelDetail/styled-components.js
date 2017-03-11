@@ -17,6 +17,9 @@ export const HistoryContainer = styled(MobileContentWrapper)`
 
 export const ChartWrapper = styled.div`
   height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;
 
 export const HistoryHeader = styled.div`

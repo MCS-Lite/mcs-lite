@@ -1,3 +1,4 @@
+import { Observable } from 'rxjs/Observable';
 import R from 'ramda';
 import { constants as devicesConstants } from './devices';
 
@@ -7,12 +8,14 @@ import { constants as devicesConstants } from './devices';
 
 const FETCH_DATAPOINTS = 'mcs-lite-mobile-web/datapoints/FETCH_DATAPOINTS';
 const SET_DATAPOINTS = 'mcs-lite-mobile-web/datapoints/SET_DATAPOINTS';
+const SET_QUERY = 'mcs-lite-mobile-web/datapoints/SET_QUERY';
 const APPEND_DATAPOINT = 'mcs-lite-mobile-web/datapoints/APPEND_DATAPOINT';
 const CLEAR = 'mcs-lite-mobile-web/datapoints/CLEAR';
 
 export const constants = {
   FETCH_DATAPOINTS,
   SET_DATAPOINTS,
+  SET_QUERY,
   APPEND_DATAPOINT,
   CLEAR,
 };
@@ -23,7 +26,10 @@ export const constants = {
 
 const fetchDatapoints = (deviceId, dataChannelId) =>
   ({ type: FETCH_DATAPOINTS, payload: { deviceId, dataChannelId }});
-const setDatapoints = payload => ({ type: SET_DATAPOINTS, payload });
+const setDatapoints = ({ data, dataChannelId }) =>
+  ({ type: SET_DATAPOINTS, payload: { data, dataChannelId }});
+const setQuery = (dataChannelId, query) =>
+  ({ type: SET_QUERY, payload: { dataChannelId, query }});
 const appendDatapoint = ({ dataChannelId, values }) =>
   ({ type: APPEND_DATAPOINT, payload: { dataChannelId, values }});
 const clear = () => ({ type: CLEAR });
@@ -31,6 +37,7 @@ const clear = () => ({ type: CLEAR });
 export const actions = {
   fetchDatapoints,
   setDatapoints,
+  setQuery,
   appendDatapoint,
   clear,
 };
@@ -44,32 +51,56 @@ function fetchDatapointsCycle(sources) {
     .filter(action => action.type === FETCH_DATAPOINTS)
     .pluck('payload');
 
-  const devices$ = sources.STATE
-    .pluck('devices')
-    .filter(R.pipe(R.isEmpty, R.not));
+  const dataChannelId$ = payload$.pluck('dataChannelId');
+  const deviceId$ = payload$.pluck('deviceId');
 
-  const request$ = payload$
-    .combineLatest(devices$)
-    .map(([{ deviceId, dataChannelId }, devices]) => ({
-      deviceKey: devices[deviceId].deviceKey,
-      deviceId,
-      dataChannelId,
-    }))
-    .filter(d => !!d.deviceKey)
-    .distinctUntilKeyChanged('dataChannelId')
-    .map(({ deviceKey, deviceId, dataChannelId }) => ({
+  const deviceKey$ = sources.STATE
+    .pluck('devices')
+    .combineLatest(deviceId$, (devices, deviceId) =>
+      R.pathOr(undefined, [deviceId, 'deviceKey'])(devices),
+    )
+    .filter(R.complement(R.isNil));
+
+  const datapoints$ = sources.STATE
+    .pluck('datapoints')
+    .filter(R.complement(R.isNil));
+
+  const query$ = datapoints$
+    .combineLatest(dataChannelId$, (datapoint, dataChannelId) =>
+      R.pathOr(undefined, [dataChannelId, 'query'])(datapoint),
+    )
+    .filter(R.complement(R.isNil))
+    .startWith({});
+
+  const request$ = Observable.combineLatest(
+      deviceKey$.distinctUntilChanged(),
+      deviceId$.distinctUntilChanged(),
+      dataChannelId$.distinctUntilChanged(),
+      query$.distinctUntilKeyChanged('start').distinctUntilKeyChanged('end'),
+    )
+    .map(([deviceKey, deviceId, dataChannelId, query]) => ({
       url: `/api/devices/${deviceId}/datachannels/${dataChannelId}/datapoints`,
       method: 'GET',
       headers: { deviceKey },
       category: 'datapoints',
+      query,
     }));
 
   const response$ = sources.HTTP
     .select('datapoints')
     .switch();
 
+  // Remind: api response with dataChannelId will be better.
+  const responseDataChannedId$ = response$
+    .pluck('request', 'url')
+    .map(R.pipe(
+      R.match(/[\w]+(?=\/datapoints$)/),
+      R.head,
+    ));
+
   const action$ = response$
     .pluck('body', 'data')
+    .zip(responseDataChannedId$, (data, dataChannelId) => ({ data, dataChannelId }))
     .map(setDatapoints);
 
   return {
@@ -109,15 +140,33 @@ const initialState = {}; // Remind: indexBy datachannelId
 
 export default function reducer(state = initialState, action = {}) {
   switch (action.type) {
-    case SET_DATAPOINTS:
+    case SET_DATAPOINTS: {
+      const { dataChannelId, data } = action.payload;
+
       return {
         ...state,
-        // TODO: api should move datachannelId upper scope.
-        [action.payload[0].datachannelId]: action.payload,
+        [dataChannelId]: {
+          ...state[dataChannelId],
+          data,
+        },
       };
+    }
+
+    case SET_QUERY: {
+      const { dataChannelId, query } = action.payload;
+
+      return {
+        ...state,
+        [dataChannelId]: {
+          ...state[dataChannelId],
+          query,
+        },
+      };
+    }
+
     case APPEND_DATAPOINT: {
       const dataChannelId = action.payload.dataChannelId;
-      const datapoints = state[dataChannelId];
+      const datapoints = R.pathOr([], [dataChannelId, 'data'])(state);
       const nextDatapoints = R.pipe(
         R.append({
           values: action.payload.values,
@@ -127,10 +176,12 @@ export default function reducer(state = initialState, action = {}) {
         R.takeLast(100),
       )(datapoints);
 
-      // TODO: API sort ?
       return {
         ...state,
-        [dataChannelId]: nextDatapoints,
+        [dataChannelId]: {
+          ...state[dataChannelId],
+          data: nextDatapoints,
+        },
       };
     }
 

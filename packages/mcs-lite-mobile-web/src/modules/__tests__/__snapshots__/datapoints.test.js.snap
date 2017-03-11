@@ -4,6 +4,7 @@ Object {
   "CLEAR": "mcs-lite-mobile-web/datapoints/CLEAR",
   "FETCH_DATAPOINTS": "mcs-lite-mobile-web/datapoints/FETCH_DATAPOINTS",
   "SET_DATAPOINTS": "mcs-lite-mobile-web/datapoints/SET_DATAPOINTS",
+  "SET_QUERY": "mcs-lite-mobile-web/datapoints/SET_QUERY",
 }
 `;
 
@@ -37,38 +38,65 @@ Object {
 
 exports[`datapoints - 2. Action Creators should return setDatapoints actions 1`] = `
 Object {
-  "payload": Array [],
+  "payload": Object {
+    "data": Array [],
+    "dataChannelId": "dataChannelId",
+  },
   "type": "mcs-lite-mobile-web/datapoints/SET_DATAPOINTS",
+}
+`;
+
+exports[`datapoints - 2. Action Creators should return setQuery actions 1`] = `
+Object {
+  "payload": Object {
+    "dataChannelId": "dataChannelId",
+    "query": Object {
+      "query": 123,
+    },
+  },
+  "type": "mcs-lite-mobile-web/datapoints/SET_QUERY",
 }
 `;
 
 exports[`datapoints - 4. Reducer should handle APPEND_DATAPOINT 1`] = `
 Object {
-  "dataChannelId4124": Array [
-    Object {
-      "updatedAt": 1488938740201,
-      "values": Object {
-        "value": 1,
+  "dataChannelId4124": Object {
+    "data": Array [
+      Object {
+        "updatedAt": 1488938740201,
+        "values": Object {
+          "value": 1,
+        },
       },
-    },
-    Object {
-      "updatedAt": 1488938740202,
-      "values": Object {
-        "value": 5,
+      Object {
+        "updatedAt": 1488938740202,
+        "values": Object {
+          "value": 5,
+        },
       },
-    },
-  ],
+    ],
+    "query": Object {},
+  },
 }
 `;
 
 exports[`datapoints - 4. Reducer should handle SET_DATAPOINTS 1`] = `
 Object {
-  "datachannelId123": Array [
-    Object {
-      "datachannelId": "datachannelId123",
-      "others": Object {},
+  "datachannelId123": Object {
+    "data": Array [],
+  },
+}
+`;
+
+exports[`datapoints - 4. Reducer should handle SET_QUERY 1`] = `
+Object {
+  "datachannelId123": Object {
+    "data": Array [],
+    "query": Object {
+      "end": 456,
+      "start": 123,
     },
-  ],
+  },
 }
 `;
 

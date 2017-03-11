@@ -13,6 +13,11 @@ Object {
     "defaultMessage": "歷史資料圖表",
     "id": "DeviceDataChannelDetail.historyChart",
   },
+  "DeviceDataChannelDetail.noData": Object {
+    "defaultMessage": "尚無資料",
+    "description": "No Data avaliable for history",
+    "id": "DeviceDataChannelDetail.noData",
+  },
   "DeviceDataChannelDetail.reset": Object {
     "defaultMessage": "回復預設值",
     "description": "reset for history query",

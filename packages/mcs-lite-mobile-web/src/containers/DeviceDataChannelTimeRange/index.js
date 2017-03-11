@@ -1,17 +1,34 @@
 import { connect } from 'react-redux';
+import R from 'ramda';
 import compose from 'recompose/compose';
 import { withGetMessages } from 'react-intl-inject-hoc';
 import messages from './messages';
-import { actions } from '../../modules/devices';
+import { actions as devicesActions } from '../../modules/devices';
+import { actions as datapointsActions } from '../../modules/datapoints';
 import DeviceDataChannelTimeRange from './DeviceDataChannelTimeRange';
 
-export const mapStateToProps = ({ devices, ui }, { params: { deviceId, dataChannelId }}) => ({
+const getCurrent = () => new Date().valueOf();
+
+export const mapStateToProps = (
+  { ui, datapoints },
+  { params: { deviceId, dataChannelId }},
+) => ({
   deviceId,
   dataChannelId,
-  device: devices[deviceId],
   isLoading: ui.isLoading,
+  start: R.pathOr(
+    getCurrent(),
+    [dataChannelId, 'query', 'start'],
+  )(datapoints),
+  end: R.pathOr(
+    getCurrent(),
+    [dataChannelId, 'query', 'end'],
+  )(datapoints),
 });
-export const mapDispatchToProps = { fetchDeviceDetail: actions.fetchDeviceDetail };
+export const mapDispatchToProps = {
+  fetchDeviceDetail: devicesActions.fetchDeviceDetail,
+  setQuery: datapointsActions.setQuery,
+};
 
 export default compose(
   connect(mapStateToProps, mapDispatchToProps),

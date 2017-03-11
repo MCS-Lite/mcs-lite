@@ -19,6 +19,11 @@ const messages = defineMessages({
     description: 'reset for history query',
     defaultMessage: '回復預設值',
   },
+  'DeviceDataChannelDetail.noData': {
+    id: 'DeviceDataChannelDetail.noData',
+    description: 'No Data avaliable for history',
+    defaultMessage: '尚無資料',
+  },
 });
 
 export default messages;

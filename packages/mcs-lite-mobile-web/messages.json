@@ -44,6 +44,11 @@
     "defaultMessage": "回復預設值"
   },
   {
+    "id": "DeviceDataChannelDetail.noData",
+    "description": "No Data avaliable for history",
+    "defaultMessage": "尚無資料"
+  },
+  {
     "id": "DeviceDataChannelTimeRange.searchTimeRange",
     "description": "title",
     "defaultMessage": "搜尋時間區間"

@@ -50,13 +50,12 @@ export const actions = {
 function fetchDeviceListCycle(sources) {
   const accessToken$ = sources.STATE
     .pluck('auth', 'access_token')
-    .filter(d => !!d)
-    .distinctUntilChanged();
+    .filter(R.complement(R.isNil)) // Hint: will wait for accessToken avaliable.
+    .distinctUntilChanged(); // Remind: Avoid loop
 
   const request$ = sources.ACTION
     .filter(action => action.type === FETCH_DEVICE_LIST)
-    .combineLatest(accessToken$) // Hint: will wait for accessToken avaliable.
-    .map(([, accessToken]) => ({
+    .combineLatest(accessToken$, (action, accessToken) => ({
       url: '/api/devices',
       method: 'GET',
       headers: { Authorization: `Bearer ${accessToken}` },
@@ -83,16 +82,16 @@ function fetchDeviceListCycle(sources) {
 function fetchDeviceDetailCycle(sources) {
   const accessToken$ = sources.STATE
     .pluck('auth', 'access_token')
-    .filter(d => !!d)
-    .distinctUntilChanged();
+    .filter(R.complement(R.isNil)); // Hint: will wait for accessToken avaliable.
 
   const deviceId$ = sources.ACTION
     .filter(action => action.type === FETCH_DEVICE_DETAIL)
     .pluck('payload');
 
-  const request$ = deviceId$
-    .combineLatest(accessToken$)
-    .map(([deviceId, accessToken]) => ({
+  const request$ = Observable.combineLatest(
+    deviceId$.distinctUntilChanged(),
+    accessToken$.distinctUntilChanged(),
+    (deviceId, accessToken) => ({
       url: `/api/devices/${deviceId}`,
       method: 'GET',
       headers: { Authorization: `Bearer ${accessToken}` },
