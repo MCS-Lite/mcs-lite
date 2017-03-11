@@ -82,13 +82,11 @@ function fetchDeviceListCycle(sources) {
 function fetchDeviceDetailCycle(sources) {
   const accessToken$ = sources.STATE
     .pluck('auth', 'access_token')
-    .filter(R.complement(R.isNil)) // Hint: will wait for accessToken avaliable.
-    // .distinctUntilChanged(); // Remind: Avoid loop
+    .filter(R.complement(R.isNil)); // Hint: will wait for accessToken avaliable.
 
   const deviceId$ = sources.ACTION
     .filter(action => action.type === FETCH_DEVICE_DETAIL)
-    .pluck('payload')
-    // .distinctUntilChanged(); // Hint: Performace
+    .pluck('payload');
 
   const request$ = Observable.combineLatest(
     deviceId$.distinctUntilChanged(),
