@@ -19,8 +19,8 @@ class DeviceDataChannelTimeRange extends React.Component {
     deviceId: PropTypes.string.isRequired,
     dataChannelId: PropTypes.string.isRequired,
     query: PropTypes.shape({
-      start: PropTypes.number,
-      end: PropTypes.number,
+      start: PropTypes.number.isRequired,
+      end: PropTypes.number.isRequired,
     }).isRequired,
     getMessages: PropTypes.func.isRequired,
     fetchDeviceDetail: PropTypes.func.isRequired,
@@ -28,12 +28,11 @@ class DeviceDataChannelTimeRange extends React.Component {
   }
   constructor(props) {
     super(props);
-    const now = new Date().valueOf();
     this.state = {
       isDialogshow: false,
       dialogTarget: 'start',
-      start: props.query.start || now,
-      end: props.query.end || now,
+      start: props.query.start,
+      end: props.query.end,
     };
   }
   componentWillMount = () => this.props.fetchDeviceDetail(this.props.deviceId);

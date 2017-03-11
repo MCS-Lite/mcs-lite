@@ -1,0 +1,25 @@
+exports[`test should return messages 1`] = `
+Object {
+  "DeviceDataChannelTimeRange.cancel": Object {
+    "defaultMessage": "取消",
+    "id": "DeviceDataChannelTimeRange.cancel",
+  },
+  "DeviceDataChannelTimeRange.from": Object {
+    "defaultMessage": "從",
+    "id": "DeviceDataChannelTimeRange.from",
+  },
+  "DeviceDataChannelTimeRange.save": Object {
+    "defaultMessage": "確認",
+    "id": "DeviceDataChannelTimeRange.save",
+  },
+  "DeviceDataChannelTimeRange.searchTimeRange": Object {
+    "defaultMessage": "搜尋時間區間",
+    "description": "title",
+    "id": "DeviceDataChannelTimeRange.searchTimeRange",
+  },
+  "DeviceDataChannelTimeRange.to": Object {
+    "defaultMessage": "到",
+    "id": "DeviceDataChannelTimeRange.to",
+  },
+}
+`;

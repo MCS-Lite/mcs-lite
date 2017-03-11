@@ -1,0 +1,76 @@
+exports[`test should renders <DeviceDataChannelTimeRange> correctly 1`] = `
+<div>
+  <HelmetWrapper
+    title="searchTimeRange" />
+  <MobileHeader
+    leftChildren={
+      <MobileHeaderIcon
+        component={[Function]}
+        to={[Function]}>
+        <IconArrowLeft
+          size="1em" />
+      </MobileHeaderIcon>
+    }
+    title="searchTimeRange" />
+  <main>
+    <styled.div>
+      <styled.div
+        onClick={[Function]}>
+        <P>
+          from
+        </P>
+        <styled.div>
+          mockDatetime
+        </styled.div>
+      </styled.div>
+      <styled.div
+        onClick={[Function]}>
+        <P>
+          to
+        </P>
+        <styled.div>
+          mockDatetime
+        </styled.div>
+      </styled.div>
+      <DatetimePickerDialog
+        datetimePickerProps={
+          Object {
+            "defaultValue": 1,
+            "years": Array [
+              2015,
+              2016,
+              2017,
+              2018,
+            ],
+          }
+        }
+        onHide={[Function]}
+        onSubmit={[Function]}
+        show={false} />
+    </styled.div>
+  </main>
+  <MobileFixedFooter>
+    <styled.div>
+      <Styled(Link)
+        to={[Function]}>
+        <Button
+          block={true}
+          component="button"
+          kind="default">
+          cancel
+        </Button>
+      </Styled(Link)>
+      <Styled(Link)
+        to={[Function]}>
+        <Button
+          block={true}
+          component="button"
+          kind="primary"
+          onClick={[Function]}>
+          save
+        </Button>
+      </Styled(Link)>
+    </styled.div>
+  </MobileFixedFooter>
+</div>
+`;

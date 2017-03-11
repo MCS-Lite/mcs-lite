@@ -7,6 +7,8 @@ import { actions as devicesActions } from '../../modules/devices';
 import { actions as datapointsActions } from '../../modules/datapoints';
 import DeviceDataChannelTimeRange from './DeviceDataChannelTimeRange';
 
+const getCurrent = () => new Date().valueOf();
+
 export const mapStateToProps = (
   { devices, ui, datapoints },
   { params: { deviceId, dataChannelId }},
@@ -15,7 +17,10 @@ export const mapStateToProps = (
   dataChannelId,
   device: devices[deviceId],
   isLoading: ui.isLoading,
-  query: R.pathOr({}, [dataChannelId, 'query'])(datapoints),
+  query: R.pathOr(
+    { start: getCurrent(), end: getCurrent() },
+    [dataChannelId, 'query'],
+  )(datapoints),
 });
 export const mapDispatchToProps = {
   fetchDeviceDetail: devicesActions.fetchDeviceDetail,
