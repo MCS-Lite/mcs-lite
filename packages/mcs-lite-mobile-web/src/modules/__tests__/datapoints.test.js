@@ -53,8 +53,14 @@ describe('datapoints - 3. Cycle', () => {
     };
     const httpSource = {
       select: () => ({
-        q: Observable.of({ body: { data: [{ a: 1 }, { a: 2 }]}}),
-        r: Observable.of({ body: { data: [{ a: 3 }, { a: 4 }]}}),
+        q: Observable.of({
+          request: { url: '/api/devices/S1Mart-9g/datachannels/dataChannelId778/datapoints' },
+          body: { data: [{ a: 1 }, { a: 2 }]},
+        }),
+        r: Observable.of({
+          request: { url: '/api/devices/S1Mart-9g/datachannels/dataChannelId778/datapoints' },
+          body: { data: [{ a: 3 }, { a: 4 }]},
+        }),
       }),
     };
 
@@ -74,7 +80,7 @@ describe('datapoints - 3. Cycle', () => {
         method: 'GET',
         headers: { deviceKey: 'key556' },
         category: 'datapoints',
-        query: { start: '', end: '' },
+        query: {},
       },
       r: {
         url: '/api/devices/deviceId445/datachannels/dataChannelId778/datapoints',
