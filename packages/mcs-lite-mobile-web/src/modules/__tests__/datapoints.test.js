@@ -17,7 +17,15 @@ describe('datapoints - 2. Action Creators', () => {
   });
 
   it('should return setDatapoints actions', () => {
-    expect(actions.setDatapoints([])).toMatchSnapshot();
+    expect(
+      actions.setDatapoints({ data: [], dataChannelId: 'dataChannelId' }),
+    ).toMatchSnapshot();
+  });
+
+  it('should return setQuery actions', () => {
+    expect(
+      actions.setQuery('dataChannelId', { query: 123 }),
+    ).toMatchSnapshot();
   });
 
   it('should return appendDatapoint actions', () => {
@@ -95,9 +103,7 @@ describe('datapoints - 4. Reducer', () => {
   it('should handle SET_DATAPOINTS', () => {
     const state = reducer({}, {
       type: constants.SET_DATAPOINTS,
-      payload: [
-        { datachannelId: 'datachannelId123', others: {}},
-      ],
+      payload: { dataChannelId: 'datachannelId123', data: []},
     });
     expect(state).toMatchSnapshot();
   });
@@ -105,9 +111,10 @@ describe('datapoints - 4. Reducer', () => {
   it('should handle APPEND_DATAPOINT', () => {
     const state = reducer(
       {
-        dataChannelId4124: [
-          { updatedAt: 1488938740201, values: { value: 1 }},
-        ],
+        dataChannelId4124: {
+          query: {},
+          data: [{ updatedAt: 1488938740201, values: { value: 1 }}],
+        },
       },
       {
         type: constants.APPEND_DATAPOINT,

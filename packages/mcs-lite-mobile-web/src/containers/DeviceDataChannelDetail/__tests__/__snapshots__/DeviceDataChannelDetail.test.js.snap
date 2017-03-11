@@ -1,4 +1,4 @@
-exports[`test should renders <DeviceDataChannelDetail> correctly 1`] = `
+exports[`test should renders <DeviceDataChannelDetail> correctly without data 1`] = `
 <div>
   <HelmetWrapper
     title="dataChannelDetail" />
@@ -44,7 +44,9 @@ exports[`test should renders <DeviceDataChannelDetail> correctly 1`] = `
           </styled.a>
         </div>
       </styled.div>
-      <styled.div />
+      <styled.div>
+        noData
+      </styled.div>
     </styled.div>
   </main>
 </div>

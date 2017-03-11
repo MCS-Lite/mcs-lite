@@ -18,17 +18,18 @@ export const mapStateToProps = (
   deviceId,
   dataChannelId,
   datachannel: R.pipe(
-      R.pathOr([], [deviceId, 'datachannels']),
-      R.find(R.propEq('datachannelId', dataChannelId)),
-    )(devices),
+    R.pathOr([], [deviceId, 'datachannels']),
+    R.find(R.propEq('datachannelId', dataChannelId)),
+    R.defaultTo({}),
+  )(devices),
   isLoading: ui.isLoading,
   data: R.pipe(
-      R.pathOr([], [dataChannelId, 'data']),
-      R.map(d => ({
-        value: parseInt(d.values.value, 10),
-        updatedAt: datetimeFormat(new Date(d.updatedAt)),
-      })),
-    )(datapoints),
+    R.pathOr([], [dataChannelId, 'data']),
+    R.map(d => ({
+      value: parseInt(d.values.value, 10),
+      updatedAt: datetimeFormat(new Date(d.updatedAt)),
+    })),
+  )(datapoints),
   query: R.pathOr({}, [dataChannelId, 'query'])(datapoints),
   deviceKey: R.pathOr('', [deviceId, 'deviceKey'])(devices),
 });

@@ -76,7 +76,7 @@ function fetchDatapointsCycle(sources) {
     deviceKey$.distinctUntilChanged(),
     deviceId$.distinctUntilChanged(),
     dataChannelId$.distinctUntilChanged(),
-    query$.distinctUntilChanged((q1, q2) => R.eqProps('start', q1, q2) && R.eqProps('end', q1, q2)),
+    query$.distinctUntilKeyChanged('start').distinctUntilKeyChanged('end'),
   );
 
   const request$ = requestPayload$

@@ -5,17 +5,18 @@ Object {
   "fetchDatapoints": [Function],
   "fetchDeviceDetail": [Function],
   "setDatapoint": [Function],
+  "setQuery": [Function],
 }
 `;
 
 exports[`test should return props correctly with mapStateToProps 1`] = `
 Object {
+  "data": Array [],
   "dataChannelId": "dataChannelId",
-  "datapoints": Object {},
-  "device": Object {
-    "deviceName": "deviceName",
-  },
+  "datachannel": Object {},
   "deviceId": "deviceId",
+  "deviceKey": "",
   "isLoading": false,
+  "query": Object {},
 }
 `;

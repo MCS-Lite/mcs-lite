@@ -4,7 +4,7 @@ import { shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
 import DeviceDataChannelDetail from '../DeviceDataChannelDetail';
 
-it('should renders <DeviceDataChannelDetail> correctly', () => {
+it('should renders <DeviceDataChannelDetail> correctly without data', () => {
   const fetchDeviceMock = jest.fn();
   const fetchDatapointsMock = jest.fn();
   const wrapper = shallow(
@@ -19,7 +19,8 @@ it('should renders <DeviceDataChannelDetail> correctly', () => {
         deviceDescription: 'deviceDescription',
         deviceKey: 'deviceKey',
       }}
-      datapoints={[]}
+      data={[]}
+      setQuery={() => {}}
       isLoading={false}
       fetchDeviceDetail={fetchDeviceMock}
       fetchDatapoints={fetchDatapointsMock}
