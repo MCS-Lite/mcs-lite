@@ -72,19 +72,21 @@ function fetchDatapointsCycle(sources) {
     .filter(R.complement(R.isNil))
     .startWith({ start: '', end: '' });
 
-  const request$ = Observable.combineLatest(
+  const requestPayload$ = Observable.combineLatest(
     deviceKey$.distinctUntilChanged(),
     deviceId$.distinctUntilChanged(),
-    dataChannelId$,
+    dataChannelId$.distinctUntilChanged(),
     query$.distinctUntilChanged((q1, q2) => R.eqProps('start', q1, q2) && R.eqProps('end', q1, q2)),
-    (deviceKey, deviceId, dataChannelId, query) => ({
+  );
+
+  const request$ = requestPayload$
+    .map(([deviceKey, deviceId, dataChannelId, query]) => ({
       url: `/api/devices/${deviceId}/datachannels/${dataChannelId}/datapoints`,
       method: 'GET',
       headers: { deviceKey },
       category: 'datapoints',
       query,
-    }),
-  );
+    }));
 
   const response$ = sources.HTTP
     .select('datapoints')
@@ -92,8 +94,8 @@ function fetchDatapointsCycle(sources) {
 
   const action$ = response$
     .pluck('body', 'data')
-    // ERROR: zip with async code will cause problems
-    .zip(dataChannelId$, (data, dataChannelId) => ({ data, dataChannelId }))
+    // TODO: zip with async code will cause some problems?
+    .zip(requestPayload$, (data, [,, dataChannelId]) => ({ data, dataChannelId }))
     .map(setDatapoints);
 
   return {
