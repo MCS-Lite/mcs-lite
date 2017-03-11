@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"POT-Creation-Date: 2017-03-08T07:56:47.307Z\n"
+"POT-Creation-Date: 2017-03-11T09:28:50.361Z\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "MIME-Version: 1.0\n"
@@ -122,6 +122,13 @@ msgstr ""
 #. defaultMessage is:
 #. 密碼
 msgid "密碼"
+msgstr ""
+
+#: ./messages.json
+#. [DeviceDataChannelDetail.noData] - No Data avaliable for history
+#. defaultMessage is:
+#. 尚無資料
+msgid "尚無資料"
 msgstr ""
 
 #: ./messages.json
