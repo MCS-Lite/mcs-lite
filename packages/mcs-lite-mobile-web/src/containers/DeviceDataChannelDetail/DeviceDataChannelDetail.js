@@ -56,7 +56,7 @@ class DeviceDataChannelDetail extends React.Component {
     // TODO: refactor these codes.
     const datapoint = { datachannelId: id, values };
     switch (type) {
-      case 'submit':
+      case 'SUBMIT':
         // Remind: MUST upload the datapoint via WebSocket.
         sendMessage(JSON.stringify(datapoint));
         break;
