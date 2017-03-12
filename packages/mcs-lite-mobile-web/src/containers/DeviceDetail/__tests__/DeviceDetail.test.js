@@ -90,7 +90,7 @@ it('should handle eventHandler correctly', () => {
   expect(setDatapointMock).not.toHaveBeenCalled();
   // After eventHandler with submit type
   wrapper.instance().eventHandler({
-    type: 'submit',
+    type: 'SUBMIT',
     id: 'id',
     values: { value: 1 },
   });
@@ -101,7 +101,7 @@ it('should handle eventHandler correctly', () => {
   expect(setDatapointMock).not.toHaveBeenCalled();
   // After eventHandler with other type
   wrapper.instance().eventHandler({
-    type: 'change',
+    type: 'CHANGE',
     id: 'id',
     values: { value: 1 },
   });
