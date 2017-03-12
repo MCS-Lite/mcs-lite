@@ -31,15 +31,15 @@ const App = ({ toasts, children, getMessages: t }) =>
 
 App.displayName = 'App';
 App.propTypes = {
+  // Redux State
   toasts: PropTypes.arrayOf(PropTypes.shape({
     key: PropTypes.string.isRequired,
     kind: PropTypes.string.isRequired,
     children: PropTypes.any.isRequired,
-  })),
+  })).isRequired,
+
+  // React-intl I18n
   getMessages: PropTypes.func.isRequired,
-};
-App.defaultProps = {
-  toasts: [],
 };
 
 export default App;

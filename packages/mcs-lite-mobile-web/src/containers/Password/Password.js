@@ -9,8 +9,11 @@ import updatePathname from '../../utils/updatePathname';
 
 class Password extends React.Component {
   static propTypes = {
-    getMessages: PropTypes.func.isRequired,
+    // Redux Action
     changePassword: PropTypes.func.isRequired,
+
+    // React-intl I18n
+    getMessages: PropTypes.func.isRequired,
   }
   state = { new1: '', new2: '' };
   onChange = e => this.setState({ [e.target.name]: e.target.value });

@@ -12,7 +12,6 @@ Object {
   "dataChannelId": "dataChannelId",
   "deviceId": "deviceId",
   "end": 2,
-  "isLoading": false,
   "start": 1,
 }
 `;

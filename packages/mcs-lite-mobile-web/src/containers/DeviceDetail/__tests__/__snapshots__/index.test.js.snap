@@ -13,6 +13,7 @@ Object {
     "deviceName": "deviceName",
   },
   "deviceId": "deviceId",
+  "deviceKey": undefined,
   "isLoading": false,
 }
 `;

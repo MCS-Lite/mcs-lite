@@ -16,13 +16,22 @@ import datetimeFormat from '../../utils/datetimeFormat';
 
 class DeviceDetail extends React.Component {
   static propTypes = {
-    device: PropTypes.object.isRequired,
+    // React-router Params
     deviceId: PropTypes.string.isRequired,
+
+    // Redux State
+    device: PropTypes.object.isRequired,
     isLoading: PropTypes.bool.isRequired,
-    getMessages: PropTypes.func.isRequired,
+
+    // Redux Action
     fetchDeviceDetail: PropTypes.func.isRequired,
-    sendMessage: PropTypes.func.isRequired,
     setDatapoint: PropTypes.func.isRequired,
+
+    // React-intl I18n
+    getMessages: PropTypes.func.isRequired,
+
+    // WebSocket
+    sendMessage: PropTypes.func.isRequired,
   }
   state = { isMenuShow: false, target: undefined };
   componentWillMount = () => this.fetch();
@@ -118,7 +127,7 @@ class DeviceDetail extends React.Component {
                           dataChannelProps={{
                             id: c.datachannelId,
                             type: dataChannelTypeMapper(c.channelType.name, c.type),
-                            values: c.datapoints.values || {},
+                            values: c.datapoints.values,
                             format: c.format,
                           }}
                           eventHandler={eventHandler}

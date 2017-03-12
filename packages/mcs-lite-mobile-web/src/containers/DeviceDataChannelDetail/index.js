@@ -12,7 +12,7 @@ import DeviceDataChannelDetail from './DeviceDataChannelDetail';
 import datetimeFormat from '../../utils/datetimeFormat';
 
 export const mapStateToProps = (
-  { devices, ui, datapoints },
+  { devices, datapoints },
   { params: { deviceId, dataChannelId }},
 ) => ({
   deviceId,
@@ -21,7 +21,6 @@ export const mapStateToProps = (
     R.pathOr([], [deviceId, 'datachannels']),
     R.find(R.propEq('datachannelId', dataChannelId)),
   )(devices),
-  isLoading: ui.isLoading,
   data: R.pipe(
     R.pathOr([], [dataChannelId, 'data']),
     R.map(d => ({
@@ -29,8 +28,9 @@ export const mapStateToProps = (
       updatedAt: datetimeFormat(new Date(d.updatedAt)),
     })),
   )(datapoints),
-  query: R.pathOr({}, [dataChannelId, 'query'])(datapoints),
-  deviceKey: R.pathOr('', [deviceId, 'deviceKey'])(devices),
+
+  // For WebSocket Config
+  deviceKey: R.pathOr(undefined, [deviceId, 'deviceKey'])(devices),
 });
 export const mapDispatchToProps = {
   fetchDeviceDetail: devicesActions.fetchDeviceDetail,

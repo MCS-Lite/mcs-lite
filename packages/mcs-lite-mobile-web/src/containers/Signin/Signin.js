@@ -6,8 +6,11 @@ import { StyledHr, Layout, Form } from './styled-components';
 
 class Signin extends React.Component {
   static propTypes = {
-    getMessages: PropTypes.func.isRequired,
+    // Redux Action
     tryEnter: PropTypes.func.isRequired,
+
+    // React-intl I18n
+    getMessages: PropTypes.func.isRequired,
   }
   state = { email: '', password: '' };
   componentWillMount = () => this.props.tryEnter(); // Hint: When cookieToken avaliable

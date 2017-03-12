@@ -12,6 +12,5 @@ Object {
     "deviceName": "deviceName",
   },
   "deviceId": "deviceId",
-  "isLoading": false,
 }
 `;

@@ -16,13 +16,20 @@ const YEARS = [2015, 2016, 2017, 2018];
 
 class DeviceDataChannelTimeRange extends React.Component {
   static propTypes = {
+    // React-router Params
     deviceId: PropTypes.string.isRequired,
     dataChannelId: PropTypes.string.isRequired,
+
+    // Redux State
     start: PropTypes.number.isRequired,
     end: PropTypes.number.isRequired,
-    getMessages: PropTypes.func.isRequired,
+
+    // Redux Action
     fetchDeviceDetail: PropTypes.func.isRequired,
     setQuery: PropTypes.func.isRequired,
+
+    // React-intl I18n
+    getMessages: PropTypes.func.isRequired,
   }
   constructor(props) {
     super(props);

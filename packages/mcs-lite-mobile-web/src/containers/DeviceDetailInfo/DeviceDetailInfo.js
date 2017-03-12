@@ -1,6 +1,6 @@
 import React, { PropTypes } from 'react';
 import Helmet from 'react-helmet';
-import { PullToRefresh, B, P, MobileHeader } from 'mcs-lite-ui';
+import { B, P, MobileHeader } from 'mcs-lite-ui';
 import IconArrowLeft from 'mcs-lite-icon/lib/IconArrowLeft';
 import { Link } from 'react-router';
 import { Container } from './styled-components';
@@ -8,23 +8,21 @@ import updatePathname from '../../utils/updatePathname';
 
 class DeviceDetailInfo extends React.Component {
   static propTypes = {
-    device: PropTypes.object,
+    // React-router Params
     deviceId: PropTypes.string.isRequired,
-    isLoading: PropTypes.bool.isRequired,
-    getMessages: PropTypes.func.isRequired,
+
+    // Redux State
+    device: PropTypes.object,
+
+    // Redux Action
     fetchDeviceDetail: PropTypes.func.isRequired,
+
+    // React-intl I18n
+    getMessages: PropTypes.func.isRequired,
   }
-  static defaultProps = {
-    device: {
-      user: {},
-      prototype: {},
-    },
-  }
-  componentWillMount = () => this.fetch();
-  fetch = () => this.props.fetchDeviceDetail(this.props.deviceId);
+  componentWillMount = () => this.props.fetchDeviceDetail(this.props.deviceId);
   render() {
-    const { device, isLoading, getMessages: t } = this.props;
-    const { fetch } = this;
+    const { deviceId, device, getMessages: t } = this.props;
 
     return (
       <div>
@@ -34,7 +32,7 @@ class DeviceDetailInfo extends React.Component {
           leftChildren={
             <MobileHeader.MobileHeaderIcon
               component={Link}
-              to={updatePathname(`/devices/${device.deviceId}`)}
+              to={updatePathname(`/devices/${deviceId}`)}
             >
               <IconArrowLeft />
             </MobileHeader.MobileHeaderIcon>
@@ -42,7 +40,7 @@ class DeviceDetailInfo extends React.Component {
         />
 
         <main>
-          <PullToRefresh isLoading={isLoading} onPull={fetch}>
+          {device && (
             <Container>
               <div><B>{t('deviceName')}</B><P>{device.deviceName}</P></div>
               <div><B>{t('creator')}</B><P>{device.user.userName}</P></div>
@@ -51,7 +49,7 @@ class DeviceDetailInfo extends React.Component {
               <div><B>DeviceId</B><P>{device.deviceId}</P></div>
               <div><B>DeviceKey</B><P>{device.deviceKey}</P></div>
             </Container>
-          </PullToRefresh>
+          )}
         </main>
       </div>
     );
