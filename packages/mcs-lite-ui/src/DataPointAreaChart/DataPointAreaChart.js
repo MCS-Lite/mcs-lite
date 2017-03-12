@@ -60,6 +60,7 @@ DataPointAreaChart.propTypes = {
     updatedAt: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
     value: PropTypes.number.isRequired,
   })).isRequired,
+  theme: PropTypes.object.isRequired,
   kind: PropTypes.string.isRequired,
   type: PropTypes.string.isRequired,
   isAnimationActive: PropTypes.bool,
