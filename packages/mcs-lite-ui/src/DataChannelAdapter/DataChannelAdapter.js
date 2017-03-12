@@ -9,7 +9,7 @@ const Wrapper = styled.div`
 
 /**
  * type Event = {
- *   type: 'submit'|'change'|'clear', // event type
+ *   type: 'SUBMIT'|'CHANGE'|'CLEAR', // event type
  *   id: string,                      // data channel id
  *   values: {                        // datapoint values
  *     value: string|number,
@@ -70,7 +70,7 @@ class DataChannelAdapter extends React.Component {
         <DataChannel.ControlSwitch
           value={Boolean(values.value)}
           onSubmit={() => eventHandler({
-            type: 'submit',
+            type: 'SUBMIT',
             id,
             values: { value: !values.value ? 1 : 0 },
           })}
@@ -94,9 +94,9 @@ class DataChannelAdapter extends React.Component {
           placeholder="Integer only"
           unit={format.unit && `單位：${format.unit}`}
           value={R.isNil(values.value) ? '' : parseInt(values.value, 10)}
-          onSubmit={() => eventHandler({ type: 'submit', id, values })}
-          onChange={e => eventHandler({ type: 'change', id, values: { value: e.target.value }})}
-          onClear={() => eventHandler({ type: 'clear', id, values: {}})}
+          onSubmit={() => eventHandler({ type: 'SUBMIT', id, values })}
+          onChange={e => eventHandler({ type: 'CHANGE', id, values: { value: e.target.value }})}
+          onClear={() => eventHandler({ type: 'CLEAR', id, values: {}})}
         />,
       ],
       [R.equals('INTEGER_DISPLAY'), () =>
@@ -117,9 +117,9 @@ class DataChannelAdapter extends React.Component {
           placeholder="Float only"
           unit={format.unit && `單位：${format.unit}`}
           value={R.isNil(values.value) ? '' : parseFloat(values.value, 10)}
-          onSubmit={() => eventHandler({ type: 'submit', id, values })}
-          onChange={e => eventHandler({ type: 'change', id, values: { value: e.target.value }})}
-          onClear={() => eventHandler({ type: 'clear', id, values: {}})}
+          onSubmit={() => eventHandler({ type: 'SUBMIT', id, values })}
+          onChange={e => eventHandler({ type: 'CHANGE', id, values: { value: e.target.value }})}
+          onClear={() => eventHandler({ type: 'CLEAR', id, values: {}})}
         />,
       ],
       [R.equals('FLOAT_DISPLAY'), () =>
@@ -139,9 +139,9 @@ class DataChannelAdapter extends React.Component {
         <DataChannel.ControlString
           placeholder="String only"
           value={R.isNil(values.value) ? '' : values.value}
-          onSubmit={() => eventHandler({ type: 'submit', id, values })}
-          onChange={e => eventHandler({ type: 'change', id, values: { value: e.target.value }})}
-          onClear={() => eventHandler({ type: 'clear', id, values: {}})}
+          onSubmit={() => eventHandler({ type: 'SUBMIT', id, values })}
+          onChange={e => eventHandler({ type: 'CHANGE', id, values: { value: e.target.value }})}
+          onClear={() => eventHandler({ type: 'CLEAR', id, values: {}})}
         />,
       ],
       [R.equals('STRING_DISPLAY'), () =>
@@ -161,9 +161,9 @@ class DataChannelAdapter extends React.Component {
         <DataChannel.ControlString
           placeholder="Hex only"
           value={R.isNil(values.value) ? '' : values.value}
-          onSubmit={() => eventHandler({ type: 'submit', id, values })}
-          onChange={e => eventHandler({ type: 'change', id, values: { value: e.target.value }})}
-          onClear={() => eventHandler({ type: 'clear', id, values: {}})}
+          onSubmit={() => eventHandler({ type: 'SUBMIT', id, values })}
+          onChange={e => eventHandler({ type: 'CHANGE', id, values: { value: e.target.value }})}
+          onClear={() => eventHandler({ type: 'CLEAR', id, values: {}})}
         />,
       ],
       [R.equals('HEX_DISPLAY'), () =>
@@ -189,12 +189,12 @@ class DataChannelAdapter extends React.Component {
             labels={labels}
             valueMapper={valueMapper}
             onChange={e => eventHandler({
-              type: 'change',
+              type: 'CHANGE',
               id,
               values: { value: e.target.value },
             })}
             onSubmit={() => eventHandler({
-              type: 'submit',
+              type: 'SUBMIT',
               id,
               values: { value: values.value },
             })}
@@ -228,12 +228,12 @@ class DataChannelAdapter extends React.Component {
             labels={R.pluck('name')(format.items)}
             valueMapper={valueMapper}
             onChange={e => eventHandler({
-              type: 'change',
+              type: 'CHANGE',
               id,
               values: { value: valueMapper(e.target.value) },
             })}
             onSubmit={() => eventHandler({
-              type: 'submit',
+              type: 'SUBMIT',
               id,
               values: { value: values.value },
             })}
@@ -274,12 +274,12 @@ class DataChannelAdapter extends React.Component {
               parseFloat(format.upperbound, 10),
             ]}
             onChange={e => eventHandler({
-              type: 'change',
+              type: 'CHANGE',
               id,
               values: { value: e.target.value },
             })}
             onSubmit={() => eventHandler({
-              type: 'submit',
+              type: 'SUBMIT',
               id,
               values: { value: values.value },
             })}
@@ -311,9 +311,9 @@ class DataChannelAdapter extends React.Component {
           <Wrapper>
             <DataChannel.ControlPeriod
               value={R.isNil(values.period) ? '' : values.period}
-              onSubmit={() => eventHandler({ type: 'submit', id, values })}
+              onSubmit={() => eventHandler({ type: 'SUBMIT', id, values })}
               onChange={e => eventHandler({
-                type: 'change',
+                type: 'CHANGE',
                 id,
                 values: { period: e.target.value, value: values.value },
               })}
@@ -327,12 +327,12 @@ class DataChannelAdapter extends React.Component {
                 parseFloat(format.upperbound, 10),
               ]}
               onChange={e => eventHandler({
-                type: 'change',
+                type: 'CHANGE',
                 id,
                 values: { value: e.target.value, period: values.period },
               })}
               onSubmit={() => eventHandler({
-                type: 'submit',
+                type: 'SUBMIT',
                 id,
                 values: { value: values.value, period: values.period },
               })}

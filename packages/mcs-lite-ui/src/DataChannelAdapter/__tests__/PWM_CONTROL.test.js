@@ -93,7 +93,7 @@ it('should handle onChange of ControlPeriod', () => {
     target: { value: 11 },
   });
   expect(mockEventHandler).toHaveBeenCalledWith({
-    id: 'id', type: 'change', values: { period: 11, value: 100 }},
+    id: 'id', type: 'CHANGE', values: { period: 11, value: 100 }},
   );
 });
 
@@ -120,7 +120,7 @@ it('should handle onSubmit of ControlPeriod', () => {
   expect(mockEventHandler).not.toHaveBeenCalled();
   wrapper.find(DataChannel.ControlPeriod).props().onSubmit();
   expect(mockEventHandler).toHaveBeenCalledWith({
-    id: 'id', type: 'submit', values: { period: 1, value: 100 }},
+    id: 'id', type: 'SUBMIT', values: { period: 1, value: 100 }},
   );
 });
 
@@ -149,7 +149,7 @@ it('should handle onChange of ControlRange', () => {
     target: { value: 22 },
   });
   expect(mockEventHandler).toHaveBeenCalledWith({
-    id: 'id', type: 'change', values: { period: 1, value: 22 }},
+    id: 'id', type: 'CHANGE', values: { period: 1, value: 22 }},
   );
 });
 
@@ -176,6 +176,6 @@ it('should handle onSubmit of ControlRange', () => {
   expect(mockEventHandler).not.toHaveBeenCalled();
   wrapper.find(DataChannel.ControlRange).props().onSubmit();
   expect(mockEventHandler).toHaveBeenCalledWith({
-    id: 'id', type: 'submit', values: { period: 1, value: 100 }},
+    id: 'id', type: 'SUBMIT', values: { period: 1, value: 100 }},
   );
 });

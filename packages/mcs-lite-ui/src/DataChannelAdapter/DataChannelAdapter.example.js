@@ -28,7 +28,7 @@ storiesOf('DataChannelAdapter', module)
     `
       ~~~js
       type Event = {
-        type: 'submit'|'change'|'clear', // event type
+        type: 'SUBMIT'|'CHANGE'|'CLEAR', // event type
         id: string,                      // data channel id
         values: {                        // datapoint values
           value: string|number,
