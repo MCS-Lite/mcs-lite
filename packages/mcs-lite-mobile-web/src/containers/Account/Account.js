@@ -2,11 +2,13 @@ import React, { PropTypes } from 'react';
 import { Heading, Small } from 'mcs-lite-ui';
 import Helmet from 'react-helmet';
 import StyledLink from '../../components/StyledLink';
-import { Container, Body, StyledLogo, Footer, VersionWrapper, FlatButton } from './styled-components';
+import {
+  Container, Body, StyledLogo, Footer, VersionWrapper, FlatButton,
+} from './styled-components';
 import updatePathname from '../../utils/updatePathname';
 import packageJSON from '../../../package.json';
 
-const version = packageJSON.version;
+const VERSION = packageJSON.version;
 
 const Account = ({ userName, email, signout, getMessages: t }) =>
   <Container>
@@ -18,7 +20,7 @@ const Account = ({ userName, email, signout, getMessages: t }) =>
     </Body>
     <Footer>
       <VersionWrapper color="grayBase">
-        <Small>v{version}</Small>
+        <Small>v{VERSION}</Small>
       </VersionWrapper>
       <StyledLink to={updatePathname('/devices')}>
         <FlatButton block>{t('myTestDevices')}</FlatButton>
@@ -32,10 +34,16 @@ const Account = ({ userName, email, signout, getMessages: t }) =>
     </Footer>
   </Container>;
 
+Account.displayName = 'Account';
 Account.propTypes = {
-  userName: PropTypes.string,
-  email: PropTypes.string,
+  // Redux State
+  userName: PropTypes.string.isRequired,
+  email: PropTypes.string.isRequired,
+
+  // Redux Action
   signout: PropTypes.func.isRequired,
+
+  // React-intl I18n
   getMessages: PropTypes.func.isRequired,
 };
 

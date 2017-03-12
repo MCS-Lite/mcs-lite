@@ -4,22 +4,29 @@ import R from 'ramda';
 import Helmet from 'react-helmet';
 import Transition from 'react-motion-ui-pack';
 import { Link } from 'react-router';
+import IconSearch from 'mcs-lite-icon/lib/IconSearch';
+import IconMenu from 'mcs-lite-icon/lib/IconMenu';
 import {
   PullToRefresh, PreventDrag, Input, ClickOutside, MobileDeviceCard,
   MobileHeader,
 } from 'mcs-lite-ui';
-import IconSearch from 'mcs-lite-icon/lib/IconSearch';
-import IconMenu from 'mcs-lite-icon/lib/IconMenu';
+import {
+  Container, CardWrapper, StyledHeaderIcon, PlaceholdWrapper,
+} from './styled-components';
 import StyledLink from '../../components/StyledLink';
-import { Container, CardWrapper, StyledHeaderIcon, PlaceholdWrapper } from './styled-components';
 import updatePathname from '../../utils/updatePathname';
 
 class DeviceList extends React.Component {
   static propTypes = {
+    // Redux State
     devices: PropTypes.array.isRequired,
     isLoading: PropTypes.bool.isRequired,
-    getMessages: PropTypes.func.isRequired,
+
+    // Redux Action
     fetchDeviceList: PropTypes.func.isRequired,
+
+    // React-intl I18n
+    getMessages: PropTypes.func.isRequired,
   }
   state = { isFilterOpen: false, filterValue: '' };
   componentWillMount = () => this.props.fetchDeviceList();

@@ -5,8 +5,11 @@ const omitProps = R.omit(['requireAuth']);
 
 class RequireAuth extends React.Component {
   static propTypes = {
-    children: PropTypes.any.isRequired,
+    // Redux Action
     requireAuth: PropTypes.func.isRequired,
+
+    // props
+    children: PropTypes.any.isRequired,
   }
   componentWillMount = () => this.props.requireAuth();
   render() {

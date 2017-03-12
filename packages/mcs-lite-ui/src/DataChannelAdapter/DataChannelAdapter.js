@@ -39,7 +39,7 @@ class DataChannelAdapter extends React.Component {
       values: PropTypes.shape({
         value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
         period: PropTypes.number,
-      }).isRequired,
+      }),
       format: PropTypes.shape({
         unit: PropTypes.string,
         items: PropTypes.array,
@@ -53,7 +53,10 @@ class DataChannelAdapter extends React.Component {
   // TODO: refactor these handler codes. (maybe hoist)
   switchByType = () => {
     const { dataChannelProps, eventHandler } = this.props;
-    const { id, values, type, format } = dataChannelProps;
+    const { id, type, format } = dataChannelProps;
+
+    // Remind: API response could be 'null' value.
+    const values = R.defaultTo({})(dataChannelProps.values);
 
     return R.cond([
 

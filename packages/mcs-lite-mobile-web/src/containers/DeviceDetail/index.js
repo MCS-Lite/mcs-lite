@@ -13,6 +13,9 @@ export const mapStateToProps = ({ devices, ui }, { params: { deviceId }}) => ({
   deviceId,
   device: R.pathOr({}, [deviceId])(devices),
   isLoading: ui.isLoading,
+
+  // For WebSocket Config
+  deviceKey: R.pathOr(undefined, [deviceId, 'deviceKey'])(devices),
 });
 export const mapDispatchToProps = {
   fetchDeviceDetail: actions.fetchDeviceDetail,
@@ -24,7 +27,8 @@ const wsHost = `ws://${window.location.hostname}:${process.env.REACT_APP_SOCKET_
 export default compose(
   connect(mapStateToProps, mapDispatchToProps),
   connectSocket(
-    ({ device }) => device && `${wsHost}/deviceId/${device.deviceId}/deviceKey/${device.deviceKey}`,
+    ({ deviceId, deviceKey }) => deviceKey
+      && `${wsHost}/deviceId/${deviceId}/deviceKey/${deviceKey}`,
     props => datapoint => props.setDatapoint(props.deviceId, datapoint, true),
     'sendMessage', // propsName
   ),

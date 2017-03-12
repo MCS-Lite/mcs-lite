@@ -3,9 +3,14 @@ import { IntlProvider as ReactIntlProvider } from 'react-intl';
 
 class IntlProvider extends React.Component {
   static propTypes = {
+    // Redux State
     locale: PropTypes.string,
-    defaultLocale: PropTypes.string.isRequired,
+
+    // Redux Action
     pushLocale: PropTypes.func.isRequired,
+
+    // Props
+    defaultLocale: PropTypes.string.isRequired,
   }
   componentWillMount() {
     const { locale, pushLocale, defaultLocale } = this.props;

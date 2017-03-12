@@ -13,62 +13,56 @@ exports[`test should renders <DeviceDetailInfo> correctly 1`] = `
     }
     title="deviceIntro" />
   <main>
-    <PullToRefresh
-      IconArrow={[Function]}
-      IconLoading={[Function]}
-      isLoading={false}
-      onPull={[Function]}>
-      <styled.div>
-        <div>
-          <B>
-            deviceName
-          </B>
-          <P>
-            deviceName
-          </P>
-        </div>
-        <div>
-          <B>
-            creator
-          </B>
-          <P>
-            userName
-          </P>
-        </div>
-        <div>
-          <B>
-            version
-          </B>
-          <P>
-            version
-          </P>
-        </div>
-        <div>
-          <B>
-            description
-          </B>
-          <P>
-            deviceDescription
-          </P>
-        </div>
-        <div>
-          <B>
-            DeviceId
-          </B>
-          <P>
-            deviceId
-          </P>
-        </div>
-        <div>
-          <B>
-            DeviceKey
-          </B>
-          <P>
-            deviceKey
-          </P>
-        </div>
-      </styled.div>
-    </PullToRefresh>
+    <styled.div>
+      <div>
+        <B>
+          deviceName
+        </B>
+        <P>
+          deviceName
+        </P>
+      </div>
+      <div>
+        <B>
+          creator
+        </B>
+        <P>
+          userName
+        </P>
+      </div>
+      <div>
+        <B>
+          version
+        </B>
+        <P>
+          version
+        </P>
+      </div>
+      <div>
+        <B>
+          description
+        </B>
+        <P>
+          deviceDescription
+        </P>
+      </div>
+      <div>
+        <B>
+          DeviceId
+        </B>
+        <P>
+          deviceId
+        </P>
+      </div>
+      <div>
+        <B>
+          DeviceKey
+        </B>
+        <P>
+          deviceKey
+        </P>
+      </div>
+    </styled.div>
   </main>
 </div>
 `;
@@ -85,43 +79,6 @@ exports[`test should renders <DeviceDetailInfo> correctly without device data 1`
           size="1em" />
       </MobileHeaderIcon>
     } />
-  <main>
-    <PullToRefresh
-      IconArrow={[Function]}
-      IconLoading={[Function]}
-      isLoading={false}
-      onPull={[Function]}>
-      <styled.div>
-        <div>
-          <B />
-          <P />
-        </div>
-        <div>
-          <B />
-          <P />
-        </div>
-        <div>
-          <B />
-          <P />
-        </div>
-        <div>
-          <B />
-          <P />
-        </div>
-        <div>
-          <B>
-            DeviceId
-          </B>
-          <P />
-        </div>
-        <div>
-          <B>
-            DeviceKey
-          </B>
-          <P />
-        </div>
-      </styled.div>
-    </PullToRefresh>
-  </main>
+  <main />
 </div>
 `;

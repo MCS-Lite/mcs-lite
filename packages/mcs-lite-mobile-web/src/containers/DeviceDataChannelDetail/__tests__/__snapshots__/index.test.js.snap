@@ -15,8 +15,6 @@ Object {
   "dataChannelId": "dataChannelId",
   "datachannel": undefined,
   "deviceId": "deviceId",
-  "deviceKey": "",
-  "isLoading": false,
-  "query": Object {},
+  "deviceKey": undefined,
 }
 `;

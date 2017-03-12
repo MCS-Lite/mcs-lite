@@ -56,6 +56,10 @@ const DataPointAreaChart = ({
 
 DataPointAreaChart.displayName = 'DataPointAreaChart';
 DataPointAreaChart.propTypes = {
+  data: PropTypes.arrayOf(PropTypes.shape({
+    updatedAt: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
+    value: PropTypes.number.isRequired,
+  })).isRequired,
   kind: PropTypes.string.isRequired,
   type: PropTypes.string.isRequired,
   isAnimationActive: PropTypes.bool,

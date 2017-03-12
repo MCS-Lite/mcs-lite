@@ -18,16 +18,28 @@ import areaChartTypeMapper from '../../utils/areaChartTypeMapper';
 
 class DeviceDataChannelDetail extends React.Component {
   static propTypes = {
+    // React-router Params
     deviceId: PropTypes.string.isRequired,
     dataChannelId: PropTypes.string.isRequired,
+
+    // Redux State
     datachannel: PropTypes.object,
-    data: PropTypes.array.isRequired,
-    getMessages: PropTypes.func.isRequired,
+    data: PropTypes.arrayOf(PropTypes.shape({
+      updatedAt: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
+      value: PropTypes.number.isRequired,
+    })).isRequired,
+
+    // Redux Action
     fetchDeviceDetail: PropTypes.func.isRequired,
     fetchDatapoints: PropTypes.func.isRequired,
     setQuery: PropTypes.func.isRequired,
-    sendMessage: PropTypes.func,
     setDatapoint: PropTypes.func.isRequired,
+
+    // React-intl I18n
+    getMessages: PropTypes.func.isRequired,
+
+    // WebSocket
+    sendMessage: PropTypes.func,
   }
   componentWillMount = () => {
     const { deviceId, dataChannelId, fetchDeviceDetail, fetchDatapoints } = this.props;
@@ -93,7 +105,7 @@ class DeviceDataChannelDetail extends React.Component {
                   dataChannelProps={{
                     id: datachannel.datachannelId,
                     type: dataChannelTypeMapper(datachannel.channelType.name, datachannel.type),
-                    values: datachannel.datapoints.values || {},
+                    values: datachannel.datapoints.values,
                     format: datachannel.format,
                   }}
                   eventHandler={eventHandler}
