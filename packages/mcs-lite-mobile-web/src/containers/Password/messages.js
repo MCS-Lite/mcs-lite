@@ -17,6 +17,10 @@ const messages = defineMessages({
     description: 'Placeholder',
     defaultMessage: '輸入新密碼',
   },
+  'Password.lengthError': {
+    id: 'Password.lengthError',
+    defaultMessage: '密碼長度需要長於 8 個字元',
+  },
 
   'Password.newPasswordAgain.label': {
     id: 'Password.newPasswordAgain',
@@ -30,9 +34,8 @@ const messages = defineMessages({
   },
   'Password.newPasswordAgain.error': {
     id: 'Password.newPasswordAgain.error',
-    defaultMessage: '確認密碼與新密碼不相符',
+    defaultMessage: '新密碼和確認密碼不一致',
   },
-
   'Password.cancel': {
     id: 'Password.cancel',
     defaultMessage: '取消',

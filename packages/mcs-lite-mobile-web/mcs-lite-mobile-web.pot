@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"POT-Creation-Date: 2017-03-11T09:28:50.361Z\n"
+"POT-Creation-Date: 2017-03-13T02:10:51.907Z\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "MIME-Version: 1.0\n"
@@ -125,6 +125,13 @@ msgid "密碼"
 msgstr ""
 
 #: ./messages.json
+#. [Password.lengthError]
+#. defaultMessage is:
+#. 密碼長度需要長於 8 個字元
+msgid "密碼長度需要長於 8 個字元"
+msgstr ""
+
+#: ./messages.json
 #. [DeviceDataChannelDetail.noData] - No Data avaliable for history
 #. defaultMessage is:
 #. 尚無資料
@@ -196,6 +203,13 @@ msgstr ""
 #. defaultMessage is:
 #. 新密碼
 msgid "新密碼"
+msgstr ""
+
+#: ./messages.json
+#. [Password.newPasswordAgain.error]
+#. defaultMessage is:
+#. 新密碼和確認密碼不一致
+msgid "新密碼和確認密碼不一致"
 msgstr ""
 
 #: ./messages.json
@@ -277,13 +291,6 @@ msgstr ""
 #. defaultMessage is:
 #. 確認密碼
 msgid "確認密碼"
-msgstr ""
-
-#: ./messages.json
-#. [Password.newPasswordAgain.error]
-#. defaultMessage is:
-#. 確認密碼與新密碼不相符
-msgid "確認密碼與新密碼不相符"
 msgstr ""
 
 #: ./messages.json
