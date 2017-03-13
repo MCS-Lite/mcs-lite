@@ -1,6 +1,5 @@
 /* eslint no-unused-expressions:0 */
 
-import 'normalize.css';
 import { injectGlobal } from 'styled-components';
 import mobileTheme from './utils/mobileTheme';
 
