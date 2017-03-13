@@ -54,7 +54,7 @@ ReactDOM.render(
       <ThemeProvider theme={mobileTheme}>
         <Router history={routerHistory} render={render}>
           <Route component={App}>
-            <Route path="/signin" component={Signin} />
+            <Route path="/login" component={Signin} />
             <Route path="/" component={RequireAuth}>
               <IndexRedirect to="devices" />
               <Route component={Layout.LayoutDefault}>

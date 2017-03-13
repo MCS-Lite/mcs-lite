@@ -21,7 +21,11 @@ it('should render Container correctly with HOC', () => {
 });
 
 it('should return props correctly with mapStateToProps', () => {
-  expect(mapStateToProps).toBeNull();
+  const state = {
+    routing: { locationBeforeTransitions: { query: { errorMsg: 'errorMessage' }}},
+  };
+
+  expect(mapStateToProps(state)).toMatchSnapshot();
 });
 
 it('should return props correctly with mapDispatchToProps', () => {

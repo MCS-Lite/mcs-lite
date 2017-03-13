@@ -12,7 +12,7 @@ describe('routing - 1. Constants', () => {
 
 describe('routing - 2. Action Creators', () => {
   it('should return pushPathname actions', () => {
-    expect(actions.pushPathname('/signin')).toMatchSnapshot();
+    expect(actions.pushPathname('/login')).toMatchSnapshot();
   });
 
   it('should return pushLocale actions', () => {
