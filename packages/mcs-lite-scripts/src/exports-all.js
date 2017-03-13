@@ -14,7 +14,7 @@ process.env.NODE_ENV = 'production'; // for babel
 
 // --- /src/a.js --- /src/b.js --- ...
 const srcPath$ = Rx.Observable
-  .from([srcPattern])
+  .of(srcPattern)
   .switchMap(pattern => Rx.Observable.from(glob.sync(pattern)));
 
 // --- a --- b --- ...

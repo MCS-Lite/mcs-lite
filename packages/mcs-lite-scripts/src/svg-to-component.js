@@ -15,7 +15,7 @@ process.env.NODE_ENV = 'production'; // for babel
 
 // --- /lib/a.svg --- /lib/b.svg --- ...
 const srcPath$ = Rx.Observable
-  .from([srcDir])
+  .of(srcDir)
   .switchMap(dirPath => Rx.Observable.from(fs.readdirSync(dirPath)))
   .map(basename => path.resolve(srcDir, basename));
 
