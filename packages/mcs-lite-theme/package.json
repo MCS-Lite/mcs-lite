@@ -21,11 +21,11 @@
   },
   "license": "ISC",
   "devDependencies": {
-    "babel-cli": "^6.23.0",
+    "babel-cli": "^6.24.0",
     "babel-preset-mcs-lite": "^0.1.1"
   },
   "dependencies": {
-    "d3-color": "^1.0.2"
+    "d3-color": "^1.0.3"
   },
   "babel": {
     "presets": [
