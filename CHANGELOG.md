@@ -2,6 +2,19 @@
 
 ## Released (2017-03-13)
 
+### Bump Versions
+
+-   babel-preset-mcs-lite@0.1.2
+-   mcs-lite-connect@0.1.2
+-   mcs-lite-demo-nextjs@0.1.8
+-   mcs-lite-icon@0.1.6
+-   mcs-lite-mobile-web@0.2.0
+-   mcs-lite-scripts@0.1.4
+-   mcs-lite-theme@0.1.2
+-   mcs-lite-ui@0.2.0
+-   react-intl-cra@0.1.4
+-   react-intl-inject-hoc@0.1.4
+
 #### :rocket: New Feature
 * `mcs-lite-mobile-web`
   * [#217](https://github.com/evenchange4/mcs-lite/pull/217) feat(Signin): add errorMessage feature. ([@evenchange4](https://github.com/evenchange4))
