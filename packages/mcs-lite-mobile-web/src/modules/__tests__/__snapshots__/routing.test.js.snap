@@ -15,7 +15,7 @@ Object {
 
 exports[`routing - 2. Action Creators should return pushPathname actions 1`] = `
 Object {
-  "payload": "/signin",
+  "payload": "/login",
   "type": "mcs-lite-mobile-web/routing/PUSH_PATHNAME",
 }
 `;

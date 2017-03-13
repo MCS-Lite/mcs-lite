@@ -17,6 +17,20 @@ it('should renders <Signin> correctly', () => {
   expect(fetchMock).toHaveBeenCalledWith();
 });
 
+
+it('should renders <Signin> correctly with errorMessage', () => {
+  const wrapper = shallow(
+    <Signin
+      getMessages={R.identity}
+      tryEnter={() => {}}
+      errorMessage={'errorMessage'}
+    />,
+  );
+
+  expect(toJson(wrapper)).toMatchSnapshot();
+});
+
+
 it('should return correctly state', () => {
   const wrapper = shallow(
     <Signin

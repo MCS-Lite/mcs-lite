@@ -99,7 +99,7 @@ describe('auth - 3. Cycle', () => {
     };
 
     const actionSink = {
-      w: routingActions.pushPathname('/signin'),
+      w: routingActions.pushPathname('/login'),
       x: actions.clear(),
       y: devicesActions.clear(),
       z: datapointsActions.clear(),

@@ -113,7 +113,7 @@ function signoutCycle(sources) {
 
   const action$ = confirm$
     .switchMap(() => Observable.of(
-      routingActions.pushPathname('/signin'),
+      routingActions.pushPathname('/login'),
       clear(),
       devicesActions.clear(),
       datapointsActions.clear(),

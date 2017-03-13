@@ -2,10 +2,13 @@ import React, { PropTypes } from 'react';
 import { Button, Input } from 'mcs-lite-ui';
 import Helmet from 'react-helmet';
 import Logo from '../../components/Logo';
-import { StyledHr, Layout, Form } from './styled-components';
+import { ErrorMessage, StyledHr, Layout, Form } from './styled-components';
 
 class Signin extends React.Component {
   static propTypes = {
+    // Redux State
+    errorMessage: PropTypes.string,
+
     // Redux Action
     tryEnter: PropTypes.func.isRequired,
 
@@ -18,13 +21,14 @@ class Signin extends React.Component {
   render() {
     const { email, password } = this.state;
     const { onChange } = this;
-    const { getMessages: t } = this.props;
+    const { errorMessage, getMessages: t } = this.props;
 
     return (
       <Layout>
         <Helmet title={t('signin')} />
 
         <Logo />
+        {errorMessage && <ErrorMessage color="error">{errorMessage}</ErrorMessage>}
         <StyledHr>{t('welcome')}</StyledHr>
 
         <Form method="post" action="/oauth/login/mobile">

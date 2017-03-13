@@ -1,5 +1,11 @@
 import styled from 'styled-components';
-import { Hr, MobileContentWrapper } from 'mcs-lite-ui';
+import { Hr, MobileContentWrapper, P } from 'mcs-lite-ui';
+
+export const ErrorMessage = styled(P)`
+  text-align: center;
+  margin-top: 16px;
+  margin-bottom: 16px;
+`;
 
 export const StyledHr = styled(Hr)`
   margin-top: 16px;

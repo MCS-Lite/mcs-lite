@@ -5,3 +5,9 @@ Object {
   "tryEnter": [Function],
 }
 `;
+
+exports[`test should return props correctly with mapStateToProps 1`] = `
+Object {
+  "errorMessage": "errorMessage",
+}
+`;

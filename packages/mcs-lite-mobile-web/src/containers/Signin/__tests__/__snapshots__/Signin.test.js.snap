@@ -36,3 +36,46 @@ exports[`test should renders <Signin> correctly 1`] = `
   </styled.form>
 </styled.div>
 `;
+
+exports[`test should renders <Signin> correctly with errorMessage 1`] = `
+<styled.div>
+  <HelmetWrapper
+    title="signin" />
+  <Logo
+    alt="MCS Lite Logo"
+    src="logo_mcs_lite_black.svg" />
+  <Styled(Component)
+    color="error">
+    errorMessage
+  </Styled(Component)>
+  <Styled(Hr)>
+    welcome
+  </Styled(Hr)>
+  <styled.form
+    action="/oauth/login/mobile"
+    method="post">
+    <Input
+      kind="primary"
+      name="email"
+      onChange={[Function]}
+      placeholder="email"
+      required={true}
+      type="email"
+      value="" />
+    <Input
+      kind="primary"
+      name="password"
+      onChange={[Function]}
+      placeholder="password"
+      required={true}
+      type="password"
+      value="" />
+    <Button
+      block={true}
+      component="input"
+      kind="primary"
+      type="submit"
+      value="signin" />
+  </styled.form>
+</styled.div>
+`;
