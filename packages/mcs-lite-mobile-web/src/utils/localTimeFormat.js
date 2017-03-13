@@ -1,10 +1,12 @@
 import R from 'ramda';
+import format from 'date-fp/build/format';
 import fromTime from 'date-fp/build/fromTime';
-import localFormat from './localFormat';
+import local from './local';
 
 const localTimeFormat = R.pipe(
   fromTime,
-  localFormat('YYYY-MM-DD HH:mm'),
+  local,
+  format('YYYY-MM-DD HH:mm'),
 );
 
 export default localTimeFormat;
