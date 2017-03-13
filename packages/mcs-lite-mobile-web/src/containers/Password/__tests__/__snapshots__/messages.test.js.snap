@@ -9,6 +9,10 @@ Object {
     "description": "Title",
     "id": "Password.changePassword",
   },
+  "Password.lengthError": Object {
+    "defaultMessage": "密碼長度需要長於 8 個字元",
+    "id": "Password.lengthError",
+  },
   "Password.newPassword.label": Object {
     "defaultMessage": "新密碼",
     "description": "Label",
@@ -20,7 +24,7 @@ Object {
     "id": "Password.newPassword.placeholder",
   },
   "Password.newPasswordAgain.error": Object {
-    "defaultMessage": "確認密碼與新密碼不相符",
+    "defaultMessage": "新密碼和確認密碼不一致",
     "id": "Password.newPasswordAgain.error",
   },
   "Password.newPasswordAgain.label": Object {

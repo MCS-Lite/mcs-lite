@@ -171,6 +171,10 @@
     "defaultMessage": "輸入新密碼"
   },
   {
+    "id": "Password.lengthError",
+    "defaultMessage": "密碼長度需要長於 8 個字元"
+  },
+  {
     "id": "Password.newPasswordAgain",
     "description": "Label",
     "defaultMessage": "確認密碼"
@@ -182,7 +186,7 @@
   },
   {
     "id": "Password.newPasswordAgain.error",
-    "defaultMessage": "確認密碼與新密碼不相符"
+    "defaultMessage": "新密碼和確認密碼不一致"
   },
   {
     "id": "Password.cancel",
