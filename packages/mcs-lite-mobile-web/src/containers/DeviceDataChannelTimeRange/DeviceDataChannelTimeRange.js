@@ -72,12 +72,12 @@ class DeviceDataChannelTimeRange extends React.Component {
           <Container>
             <InputWrapper onClick={onStartTimeClick}>
               <P>{t('from')}</P>
-              <FakeInput >{localTimeFormat(new Date(start))}</FakeInput>
+              <FakeInput >{localTimeFormat(start)}</FakeInput>
             </InputWrapper>
 
             <InputWrapper onClick={onEndTimeClick}>
               <P>{t('to')}</P>
-              <FakeInput >{localTimeFormat(new Date(end))}</FakeInput>
+              <FakeInput >{localTimeFormat(end)}</FakeInput>
             </InputWrapper>
 
             <DatetimePickerDialog

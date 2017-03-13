@@ -99,7 +99,7 @@ class DeviceDataChannelDetail extends React.Component {
               <DataChannelCard
                 key={datachannel.datachannelId}
                 title={datachannel.datachannelName}
-                subtitle={localTimeFormat(new Date(datachannel.createdAt))}
+                subtitle={localTimeFormat(datachannel.createdAt)}
               >
                 <DataChannelAdapter
                   dataChannelProps={{

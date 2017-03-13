@@ -25,7 +25,7 @@ export const mapStateToProps = (
     R.pathOr([], [dataChannelId, 'data']),
     R.map(d => ({
       value: parseInt(d.values.value, 10),
-      updatedAt: localTimeFormat(new Date(d.updatedAt)),
+      updatedAt: localTimeFormat(d.updatedAt),
     })),
   )(datapoints),
 

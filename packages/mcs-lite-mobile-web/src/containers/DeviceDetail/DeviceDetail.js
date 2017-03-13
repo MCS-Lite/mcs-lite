@@ -121,7 +121,7 @@ class DeviceDetail extends React.Component {
                           </StyledLink>
                         }
                         title={c.datachannelName}
-                        subtitle={localTimeFormat(new Date(c.createdAt))}
+                        subtitle={localTimeFormat(c.createdAt)}
                       >
                         <DataChannelAdapter
                           dataChannelProps={{
