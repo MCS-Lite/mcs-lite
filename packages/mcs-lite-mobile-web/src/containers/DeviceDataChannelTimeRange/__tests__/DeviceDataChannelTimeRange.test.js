@@ -4,8 +4,6 @@ import { shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
 import DeviceDataChannelTimeRange from '../DeviceDataChannelTimeRange';
 
-jest.mock('../../../utils/datetimeFormat', () => () => 'mockDatetime');
-
 it('should renders <DeviceDataChannelTimeRange> correctly', () => {
   const fetchDeviceMock = jest.fn();
   const wrapper = shallow(

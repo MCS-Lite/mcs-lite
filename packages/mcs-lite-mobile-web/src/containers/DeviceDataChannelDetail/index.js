@@ -9,7 +9,7 @@ import messages from './messages';
 import { actions as devicesActions } from '../../modules/devices';
 import { actions as datapointsActions } from '../../modules/datapoints';
 import DeviceDataChannelDetail from './DeviceDataChannelDetail';
-import datetimeFormat from '../../utils/datetimeFormat';
+import localTimeFormat from '../../utils/localTimeFormat';
 
 export const mapStateToProps = (
   { devices, datapoints },
@@ -25,7 +25,7 @@ export const mapStateToProps = (
     R.pathOr([], [dataChannelId, 'data']),
     R.map(d => ({
       value: parseInt(d.values.value, 10),
-      updatedAt: datetimeFormat(new Date(d.updatedAt)),
+      updatedAt: localTimeFormat(d.updatedAt),
     })),
   )(datapoints),
 

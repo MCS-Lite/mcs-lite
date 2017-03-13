@@ -9,7 +9,7 @@ import {
   Container, InputWrapper, FakeInput, ButtonWrapper,
 } from './styled-components';
 import updatePathname from '../../utils/updatePathname';
-import datetimeFormat from '../../utils/datetimeFormat';
+import localTimeFormat from '../../utils/localTimeFormat';
 import StyledLink from '../../components/StyledLink';
 
 const YEARS = [2015, 2016, 2017, 2018];
@@ -72,12 +72,12 @@ class DeviceDataChannelTimeRange extends React.Component {
           <Container>
             <InputWrapper onClick={onStartTimeClick}>
               <P>{t('from')}</P>
-              <FakeInput >{datetimeFormat(new Date(start))}</FakeInput>
+              <FakeInput >{localTimeFormat(start)}</FakeInput>
             </InputWrapper>
 
             <InputWrapper onClick={onEndTimeClick}>
               <P>{t('to')}</P>
-              <FakeInput >{datetimeFormat(new Date(end))}</FakeInput>
+              <FakeInput >{localTimeFormat(end)}</FakeInput>
             </InputWrapper>
 
             <DatetimePickerDialog
