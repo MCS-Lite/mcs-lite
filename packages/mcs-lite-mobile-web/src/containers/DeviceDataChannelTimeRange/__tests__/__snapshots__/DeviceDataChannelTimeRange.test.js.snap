@@ -20,7 +20,7 @@ exports[`test should renders <DeviceDataChannelTimeRange> correctly 1`] = `
           from
         </P>
         <styled.div>
-          mockDatetime
+          1970-01-01 00:00
         </styled.div>
       </styled.div>
       <styled.div
@@ -29,7 +29,7 @@ exports[`test should renders <DeviceDataChannelTimeRange> correctly 1`] = `
           to
         </P>
         <styled.div>
-          mockDatetime
+          1970-01-01 00:00
         </styled.div>
       </styled.div>
       <DatetimePickerDialog
