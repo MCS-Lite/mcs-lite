@@ -13,7 +13,7 @@ import {
 } from './styled-components';
 import updatePathname from '../../utils/updatePathname';
 import dataChannelTypeMapper from '../../utils/dataChannelTypeMapper';
-import datetimeFormat from '../../utils/datetimeFormat';
+import localTimeFormat from '../../utils/localTimeFormat';
 import areaChartTypeMapper from '../../utils/areaChartTypeMapper';
 
 class DeviceDataChannelDetail extends React.Component {
@@ -99,7 +99,7 @@ class DeviceDataChannelDetail extends React.Component {
               <DataChannelCard
                 key={datachannel.datachannelId}
                 title={datachannel.datachannelName}
-                subtitle={datetimeFormat(new Date(datachannel.createdAt))}
+                subtitle={localTimeFormat(datachannel.createdAt)}
               >
                 <DataChannelAdapter
                   dataChannelProps={{

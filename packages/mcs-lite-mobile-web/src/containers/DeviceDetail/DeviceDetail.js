@@ -12,7 +12,7 @@ import StyledLink from '../../components/StyledLink';
 import { Container, StyledImg, CardWrapper, CardHeaderIcon } from './styled-components';
 import updatePathname from '../../utils/updatePathname';
 import dataChannelTypeMapper from '../../utils/dataChannelTypeMapper';
-import datetimeFormat from '../../utils/datetimeFormat';
+import localTimeFormat from '../../utils/localTimeFormat';
 
 class DeviceDetail extends React.Component {
   static propTypes = {
@@ -121,7 +121,7 @@ class DeviceDetail extends React.Component {
                           </StyledLink>
                         }
                         title={c.datachannelName}
-                        subtitle={datetimeFormat(new Date(c.createdAt))}
+                        subtitle={localTimeFormat(c.createdAt)}
                       >
                         <DataChannelAdapter
                           dataChannelProps={{
