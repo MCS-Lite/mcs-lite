@@ -19,7 +19,7 @@ $ react-intl-cra './src/**/*.js' './messages.json'
 
 
 ```json
-// message.json
+// messages.json
 
 [
   {

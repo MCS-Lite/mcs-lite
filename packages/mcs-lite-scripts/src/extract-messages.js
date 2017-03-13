@@ -12,14 +12,15 @@ const desPath = process.argv[3];
 
 process.env.NODE_ENV = 'production'; // for babel
 
+// -- ./src/**/*.js |
+const srcPattern$ = Rx.Observable.of(srcPattern);
+
 // --- /Users/project/src/a.js --- /Users/project/src/b.js --- ...
-const srcPath$ = Rx.Observable
-  .of(srcPattern)
+const srcPath$ = srcPattern$
   .switchMap(pattern => Rx.Observable.from(glob.sync(pattern, { absolute: true })));
 
 // --- ./src/a.js --- ./src/b.js --- ...
-const relativeSrcPath$ = Rx.Observable
-  .of(srcPattern)
+const relativeSrcPath$ = srcPattern$
   .switchMap(pattern => Rx.Observable.from(glob.sync(pattern)));
 
 // --- contentA --- contentB --- ...
