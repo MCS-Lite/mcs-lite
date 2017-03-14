@@ -20,7 +20,11 @@ const base = {
   bodyColor: gray.black,
   fontSize: '13px',
   lineHeight: 1.5,
-  inputHeight: '32px',
+};
+
+const height = {
+  normal: '32px',
+  small: '20px',
 };
 
 const fontSize = {
@@ -46,5 +50,6 @@ export default {
   },
   base,
   fontSize,
+  height,
   mobile,
 };

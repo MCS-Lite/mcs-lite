@@ -7,16 +7,13 @@ import P from '../P';
 
 const lighten = opacity(0.1);
 
-const mapColorByKind = props => R.pipe(
-  R.path(['kind']),
-  R.cond([
-    [R.equals('default'), R.always(props.theme.color.grayBase)],
-    [R.T, R.always(props.theme.color[props.kind])],
-  ]),
-);
+const mapColorByKind = R.cond([
+  [R.propEq('kind', 'default'), R.path(['theme', 'color', 'grayBase'])],
+  [R.T, props => R.path(['theme', 'color', props.kind])],
+]);
 
 const StyledCard = styled(Card)`
-  height: ${props => props.theme.base.inputHeight};
+  height: ${props => props.theme.height.normal};
   border: 1px solid ${mapColorByKind};
   background-color: rgba(255, 255, 255, 0.9);
 `;

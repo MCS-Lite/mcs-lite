@@ -5,7 +5,10 @@ const mobileTheme = {
   base: {
     ...theme.base,
     fontSize: '14px',
-    inputHeight: '40px',
+  },
+  height: {
+    normal: '40px',
+    small: '25px',
   },
   fontSize: {
     small: '85.7%', // = 12px;
