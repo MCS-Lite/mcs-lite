@@ -1,12 +1,7 @@
-import R from 'ramda';
-import format from 'date-fp/build/format';
-import fromTime from 'date-fp/build/fromTime';
-import local from './local';
+import format from 'date-fns/format';
 
-const localTimeFormat = R.pipe(
-  fromTime,
-  local,
-  format('YYYY-MM-DD HH:mm'),
-);
+// Remind: date-fns always return local time
+const localTimeFormat = date =>
+  format(new Date(date), 'YYYY-MM-DD HH:mm');
 
 export default localTimeFormat;

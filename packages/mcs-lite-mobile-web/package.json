@@ -30,7 +30,7 @@
     "@cycle/rxjs-run": "^6.1.0",
     "@cycle/time": "^0.7.3",
     "babel-eslint": "^7.1.1",
-    "date-fp": "^5.0.2",
+    "date-fns": "^1.28.0",
     "dotenv": "^4.0.0",
     "enzyme": "^2.7.1",
     "enzyme-to-json": "^1.5.0",
