@@ -97,7 +97,7 @@ exports[`should render FLOAT_CONTROL correctly with default value to empty 1`] =
             >
               <BaseComponent
                 block={false}
-                className="fxAlbS"
+                className="eCTWnK"
                 component="button"
                 kind="primary"
                 onClick={[Function]}
@@ -106,7 +106,7 @@ exports[`should render FLOAT_CONTROL correctly with default value to empty 1`] =
                 square={false}
               >
                 <button
-                  className="fxAlbS"
+                  className="eCTWnK"
                   onClick={[Function]}
                 >
                   Ok
@@ -238,7 +238,7 @@ exports[`should render FLOAT_CONTROL correctly with unit 1`] = `
             >
               <BaseComponent
                 block={false}
-                className="fxAlbS"
+                className="eCTWnK"
                 component="button"
                 kind="primary"
                 onClick={[Function]}
@@ -247,7 +247,7 @@ exports[`should render FLOAT_CONTROL correctly with unit 1`] = `
                 square={false}
               >
                 <button
-                  className="fxAlbS"
+                  className="eCTWnK"
                   onClick={[Function]}
                 >
                   Ok
@@ -361,7 +361,7 @@ exports[`should render FLOAT_CONTROL correctly with value 1`] = `
             >
               <BaseComponent
                 block={false}
-                className="fxAlbS"
+                className="eCTWnK"
                 component="button"
                 kind="primary"
                 onClick={[Function]}
@@ -370,7 +370,7 @@ exports[`should render FLOAT_CONTROL correctly with value 1`] = `
                 square={false}
               >
                 <button
-                  className="fxAlbS"
+                  className="eCTWnK"
                   onClick={[Function]}
                 >
                   Ok
@@ -484,7 +484,7 @@ exports[`should render FLOAT_CONTROL correctly with zero 1`] = `
             >
               <BaseComponent
                 block={false}
-                className="fxAlbS"
+                className="eCTWnK"
                 component="button"
                 kind="primary"
                 onClick={[Function]}
@@ -493,7 +493,7 @@ exports[`should render FLOAT_CONTROL correctly with zero 1`] = `
                 square={false}
               >
                 <button
-                  className="fxAlbS"
+                  className="eCTWnK"
                   onClick={[Function]}
                 >
                   Ok

@@ -42,7 +42,7 @@ export const padding = R.cond([
     R.always('0'),
   ],
   [R.propEq('size', SMALL), R.always('0 5px')],
-  [R.T, R.always('0 10px')],
+  [R.T, R.always('6px 15px')],
 ]);
 
 export const fontSize = R.cond([

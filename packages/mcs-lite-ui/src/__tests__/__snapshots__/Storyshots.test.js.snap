@@ -216,7 +216,7 @@ exports[`Storyshots B Within <P> 1`] = `
 
 exports[`Storyshots Button API 1`] = `
 <button
-  className="fxAlbS"
+  className="eCTWnK"
 >
   button
 </button>
@@ -224,7 +224,7 @@ exports[`Storyshots Button API 1`] = `
 
 exports[`Storyshots Button Overriding style 1`] = `
 <button
-  className="eMVVbt"
+  className="KPkkN"
   onClick={[Function]}
 >
   Overriding style
@@ -236,17 +236,17 @@ exports[`Storyshots Button With block props 1`] = `
   className="epDjBm"
 >
   <button
-    className="fxAlbS"
+    className="eCTWnK"
   >
     Button
   </button>
   <button
-    className="fxAlbS"
+    className="eCTWnK"
   >
     Simple button
   </button>
   <button
-    className="ggSKCZ"
+    className="bsRShF"
   >
     block
   </button>
@@ -255,7 +255,7 @@ exports[`Storyshots Button With block props 1`] = `
 
 exports[`Storyshots Button With component props - Input submit 1`] = `
 <input
-  className="ggSKCZ"
+  className="bsRShF"
   onClick={[Function]}
   type="submit"
   value="Input Submit"
@@ -264,7 +264,7 @@ exports[`Storyshots Button With component props - Input submit 1`] = `
 
 exports[`Storyshots Button With component props 1`] = `
 <a
-  className="fxAlbS"
+  className="eCTWnK"
   onClick={[Function]}
 >
   I am 
@@ -275,7 +275,7 @@ exports[`Storyshots Button With component props 1`] = `
 
 exports[`Storyshots Button With icon inside 1`] = `
 <button
-  className="fxAlbS"
+  className="eCTWnK"
 >
   <div
     className="hfTLHh"
@@ -309,31 +309,31 @@ exports[`Storyshots Button With kind props 1`] = `
   className="epDjBm"
 >
   <button
-    className="hHwSwx"
+    className="kFQptx"
     onClick={[Function]}
   >
     default
   </button>
   <button
-    className="fxAlbS"
+    className="eCTWnK"
     onClick={[Function]}
   >
     primary
   </button>
   <button
-    className="fpvUSc"
+    className="jyzJml"
     onClick={[Function]}
   >
     success
   </button>
   <button
-    className="hfPCgM"
+    className="ijMlEg"
     onClick={[Function]}
   >
     error
   </button>
   <button
-    className="jxijWz"
+    className="kMrUsK"
     onClick={[Function]}
   >
     warning
@@ -346,12 +346,12 @@ exports[`Storyshots Button With round props 1`] = `
   className="epDjBm"
 >
   <button
-    className="jtzaBy"
+    className="gYJgwz"
   >
     A
   </button>
   <button
-    className="hpXaGR"
+    className="fRoGLj"
   >
     <svg
       fill="currentColor"
@@ -373,12 +373,12 @@ exports[`Storyshots Button With size props 1`] = `
   className="epDjBm"
 >
   <button
-    className="kDKXmx"
+    className="bTzrRC"
   >
     Btn
   </button>
   <button
-    className="gQbkmA"
+    className="hHIWVQ"
   >
     Small Button
   </button>
@@ -390,12 +390,12 @@ exports[`Storyshots Button With square props 1`] = `
   className="epDjBm"
 >
   <button
-    className="jCBLeD"
+    className="kWwhtI"
   >
     A
   </button>
   <button
-    className="fkybyn"
+    className="gBOWrX"
   >
     <svg
       fill="currentColor"
@@ -417,31 +417,31 @@ exports[`Storyshots Button With theme provider (Material) 1`] = `
   className="epDjBm"
 >
   <button
-    className="hHwSwx"
+    className="iMLSOK"
     onClick={[Function]}
   >
     default
   </button>
   <button
-    className="kMdowt"
+    className="evIlTo"
     onClick={[Function]}
   >
     primary
   </button>
   <button
-    className="bTCSLh"
+    className="jCVewC"
     onClick={[Function]}
   >
     success
   </button>
   <button
-    className="drQJZe"
+    className="chBqAr"
     onClick={[Function]}
   >
     error
   </button>
   <button
-    className="krsCXU"
+    className="tMUFx"
     onClick={[Function]}
   >
     warning
@@ -533,7 +533,7 @@ exports[`Storyshots DataChannel ControlNumber 1`] = `
       </a>
     </div>
     <button
-      className="fxAlbS"
+      className="eCTWnK"
       onClick={[Function]}
     >
       Ok
@@ -568,7 +568,7 @@ exports[`Storyshots DataChannel ControlPeriod 1`] = `
       value={10}
     />
     <button
-      className="fxAlbS"
+      className="eCTWnK"
       onClick={[Function]}
     >
       Ok
@@ -1033,7 +1033,7 @@ exports[`Storyshots DataChannel ControlString 1`] = `
       </a>
     </div>
     <button
-      className="fxAlbS"
+      className="eCTWnK"
       onClick={[Function]}
     >
       Ok
@@ -1358,7 +1358,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
             </a>
           </div>
           <button
-            className="fxAlbS"
+            className="eCTWnK"
             onClick={[Function]}
           >
             Ok
@@ -1508,7 +1508,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
             </a>
           </div>
           <button
-            className="fxAlbS"
+            className="eCTWnK"
             onClick={[Function]}
           >
             Ok
@@ -1651,7 +1651,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
             </a>
           </div>
           <button
-            className="fxAlbS"
+            className="eCTWnK"
             onClick={[Function]}
           >
             Ok
@@ -1789,7 +1789,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
             </a>
           </div>
           <button
-            className="fxAlbS"
+            className="eCTWnK"
             onClick={[Function]}
           >
             Ok
@@ -2680,7 +2680,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
               value={0}
             />
             <button
-              className="fxAlbS"
+              className="eCTWnK"
               onClick={[Function]}
             >
               Ok
@@ -4209,12 +4209,12 @@ exports[`Storyshots InputGroup API 1`] = `
     className="jaAZmb"
   >
     <button
-      className="kDKXmx"
+      className="bTzrRC"
     >
       Button 1
     </button>
     <button
-      className="gQbkmA"
+      className="hHIWVQ"
     >
       Button 2
     </button>
@@ -4223,12 +4223,12 @@ exports[`Storyshots InputGroup API 1`] = `
     className="jaAZmb"
   >
     <button
-      className="ggSKCZ"
+      className="bsRShF"
     >
       Button 1
     </button>
     <button
-      className="dIUQdq"
+      className="dCcnPE"
     >
       Button 2
     </button>
@@ -4237,17 +4237,17 @@ exports[`Storyshots InputGroup API 1`] = `
     className="jaAZmb"
   >
     <button
-      className="fxAlbS"
+      className="eCTWnK"
     >
       Button 1
     </button>
     <button
-      className="hHwSwx"
+      className="kFQptx"
     >
       Button 2
     </button>
     <button
-      className="jxijWz"
+      className="kMrUsK"
     >
       Button 3
     </button>
@@ -4256,17 +4256,17 @@ exports[`Storyshots InputGroup API 1`] = `
     className="jaAZmb"
   >
     <button
-      className="fxAlbS"
+      className="eCTWnK"
     >
       Button 1
     </button>
     <button
-      className="dIUQdq"
+      className="dCcnPE"
     >
       Button 2
     </button>
     <button
-      className="jxijWz"
+      className="kMrUsK"
     >
       Button 3
     </button>
@@ -4275,7 +4275,7 @@ exports[`Storyshots InputGroup API 1`] = `
     className="jaAZmb"
   >
     <button
-      className="fxAlbS"
+      className="eCTWnK"
     >
       大於
     </button>
@@ -4294,7 +4294,7 @@ exports[`Storyshots InputGroup API 1`] = `
       placeholder="Input 1"
     />
     <button
-      className="fxAlbS"
+      className="eCTWnK"
     >
       Button 1
     </button>
@@ -4303,7 +4303,7 @@ exports[`Storyshots InputGroup API 1`] = `
     className="jaAZmb"
   >
     <button
-      className="fxAlbS"
+      className="eCTWnK"
     >
       Button 1
     </button>
@@ -4313,7 +4313,7 @@ exports[`Storyshots InputGroup API 1`] = `
       placeholder="Input 1"
     />
     <button
-      className="fxAlbS"
+      className="eCTWnK"
     >
       Button 2
     </button>
@@ -4322,7 +4322,7 @@ exports[`Storyshots InputGroup API 1`] = `
     className="jaAZmb"
   >
     <button
-      className="fxAlbS"
+      className="eCTWnK"
     >
       之間
     </button>
@@ -4332,7 +4332,7 @@ exports[`Storyshots InputGroup API 1`] = `
       placeholder="預設值：0"
     />
     <button
-      className="jCBLeD"
+      className="kWwhtI"
     >
       和
     </button>
@@ -4571,12 +4571,12 @@ exports[`Storyshots MobileFixedFooter API 1`] = `
       className="fliFWR"
     >
       <button
-        className="dIUQdq"
+        className="dCcnPE"
       >
         Cancel
       </button>
       <button
-        className="ggSKCZ"
+        className="bsRShF"
       >
         Submit
       </button>
@@ -4722,7 +4722,7 @@ exports[`Storyshots Overlay Dropdown Menu 1`] = `
 >
   <div>
     <button
-      className="fxAlbS"
+      className="eCTWnK"
       onClick={[Function]}
     >
       Button
@@ -4730,7 +4730,7 @@ exports[`Storyshots Overlay Dropdown Menu 1`] = `
   </div>
   <div>
     <button
-      className="fxAlbS"
+      className="eCTWnK"
       onClick={[Function]}
     >
       Button
@@ -4738,7 +4738,7 @@ exports[`Storyshots Overlay Dropdown Menu 1`] = `
   </div>
   <div>
     <button
-      className="fxAlbS"
+      className="eCTWnK"
       onClick={[Function]}
     >
       Button

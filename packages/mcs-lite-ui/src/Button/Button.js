@@ -34,7 +34,7 @@ const Button = styled(BaseComponent)`
   min-width: ${propMappers.minWidth};
   height: ${props => props.theme.height[props.size]};
   padding: ${propMappers.padding};
-  font-size: ${propMappers.gontSize};
+  font-size: ${propMappers.fontSize};
 `;
 
 Button.displayName = 'Button';

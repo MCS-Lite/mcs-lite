@@ -79,7 +79,7 @@ storiesOf('Button', module)
   )
   .addWithInfo(
     'With block props',
-    'different size',
+    'Different size in order: min-width: 80px / auto / 100%.',
     () =>
       <Container>
         <Button>Button</Button>
@@ -116,7 +116,7 @@ storiesOf('Button', module)
   )
   .addWithInfo(
     'With size props',
-    '小',
+    '小 (min-width: 40px)',
     () =>
       <Container>
         <Button size="small">Btn</Button>
