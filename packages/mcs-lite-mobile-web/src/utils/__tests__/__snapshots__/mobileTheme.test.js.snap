@@ -4,7 +4,7 @@ Object {
     "bodyBackgroundColor": "#F1F2F7",
     "bodyColor": "#353630",
     "fontSize": "14px",
-    "inputHeight": "40px",
+    "inputHeight": "32px",
     "lineHeight": 1.5,
   },
   "color": Object {
@@ -28,6 +28,10 @@ Object {
     "h6": "1rem",
     "p": "1rem",
     "small": "85.7%",
+  },
+  "height": Object {
+    "normal": "40px",
+    "small": "25px",
   },
   "mobile": Object {
     "headerHeight": "56px",

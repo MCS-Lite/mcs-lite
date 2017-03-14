@@ -18,8 +18,8 @@ storiesOf('InputGroup', module)
     () =>
       <Wrapper>
         <InputGroup>
-          <Button>Button 1</Button>
-          <Button kind="default">Button 2</Button>
+          <Button size="small">Button 1</Button>
+          <Button kind="default" size="small">Button 2</Button>
         </InputGroup>
 
         <InputGroup>
@@ -58,7 +58,7 @@ storiesOf('InputGroup', module)
         <InputGroup>
           <Button>之間</Button>
           <Input placeholder="預設值：0" />
-          <Button>和</Button>
+          <Button square>和</Button>
           <Input placeholder="預設值：100" />
         </InputGroup>
 

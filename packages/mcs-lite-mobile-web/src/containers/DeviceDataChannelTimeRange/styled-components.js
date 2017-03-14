@@ -22,7 +22,7 @@ export const FakeInput = styled.div`
   border-radius: 3px;
   padding: 0 10px;
   cursor: pointer;
-  min-height: ${props => props.theme.base.inputHeight};
+  min-height: ${props => props.theme.height.normal};
   color: ${props => props.theme.color.black};
   background-color: ${props => props.theme.color.white};
   border-color: ${props => props.theme.color.grayDark};

@@ -2,12 +2,20 @@ import React from 'react';
 import styled, { ThemeProvider } from 'styled-components';
 import { storiesOf, action } from '@kadira/storybook';
 import { kindList, darken1, darken2, darken3 } from 'mcs-lite-theme';
+import { IconLoading, IconCalendar } from 'mcs-lite-icon';
 import Button from '.';
+import Spin from '../Spin';
 
 const Container = styled.div`
   > * {
     margin: 5px;
   }
+`;
+
+const CenterContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;
 
 const KindContainer = () =>
@@ -51,6 +59,7 @@ const TomatoButton = styled(Button)`
   border-radius: 6px;
   border-color: ${darken3('tomato')};
   background-color: tomato;
+  min-height: 80px;
 
   &:hover {
     background-color: ${darken1('tomato')};
@@ -84,6 +93,50 @@ storiesOf('Button', module)
     '使用內建 kind props 樣式。',
     () => <KindContainer />,
     { inline: true, propTables: false },
+  )
+  .addWithInfo(
+    'With square props',
+    '方',
+    () =>
+      <Container>
+        <Button square>A</Button>
+        <Button square kind="default"><IconCalendar /></Button>
+      </Container>,
+    { inline: true },
+  )
+  .addWithInfo(
+    'With round props',
+    '圓',
+    () =>
+      <Container>
+        <Button round>A</Button>
+        <Button round kind="default"><IconCalendar /></Button>
+      </Container>,
+    { inline: true },
+  )
+  .addWithInfo(
+    'With size props',
+    '小',
+    () =>
+      <Container>
+        <Button size="small">Btn</Button>
+        <Button size="small" kind="default">Small Button</Button>
+      </Container>,
+    { inline: true },
+  )
+  .addWithInfo(
+    'With icon inside',
+    'loading',
+    () =>
+      <Button>
+        <CenterContainer>
+          <Spin>
+            <IconLoading />
+          </Spin>
+          &nbsp;Loading ...
+        </CenterContainer>
+      </Button>,
+    { inline: true },
   )
   .addWithInfo(
     'With theme provider (Material)',
