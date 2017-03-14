@@ -89,16 +89,22 @@ exports[`should render STRING_CONTROL correctly with default value to empty 1`] 
               component="button"
               kind="primary"
               onClick={[Function]}
+              round={false}
+              size="normal"
+              square={false}
             >
               <BaseComponent
                 block={false}
-                className="fqCsyW"
+                className="eCTWnK"
                 component="button"
                 kind="primary"
                 onClick={[Function]}
+                round={false}
+                size="normal"
+                square={false}
               >
                 <button
-                  className="fqCsyW"
+                  className="eCTWnK"
                   onClick={[Function]}
                 >
                   Ok
@@ -204,16 +210,22 @@ exports[`should render STRING_CONTROL correctly with empty string 1`] = `
               component="button"
               kind="primary"
               onClick={[Function]}
+              round={false}
+              size="normal"
+              square={false}
             >
               <BaseComponent
                 block={false}
-                className="fqCsyW"
+                className="eCTWnK"
                 component="button"
                 kind="primary"
                 onClick={[Function]}
+                round={false}
+                size="normal"
+                square={false}
               >
                 <button
-                  className="fqCsyW"
+                  className="eCTWnK"
                   onClick={[Function]}
                 >
                   Ok
@@ -319,16 +331,22 @@ exports[`should render STRING_CONTROL correctly with value 1`] = `
               component="button"
               kind="primary"
               onClick={[Function]}
+              round={false}
+              size="normal"
+              square={false}
             >
               <BaseComponent
                 block={false}
-                className="fqCsyW"
+                className="eCTWnK"
                 component="button"
                 kind="primary"
                 onClick={[Function]}
+                round={false}
+                size="normal"
+                square={false}
               >
                 <button
-                  className="fqCsyW"
+                  className="eCTWnK"
                   onClick={[Function]}
                 >
                   Ok

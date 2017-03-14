@@ -1,0 +1,6 @@
+exports[`test should return correct formated string 1`] = `
+Object {
+  "date": "2017-03-14T01:30:29.878Z",
+  "format": "YYYY-MM-DD HH:mm",
+}
+`;

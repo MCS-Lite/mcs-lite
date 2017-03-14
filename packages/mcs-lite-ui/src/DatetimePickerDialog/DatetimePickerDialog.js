@@ -13,7 +13,7 @@ const Container = styled.div`
 `;
 
 const Header = styled.header`
-  height: ${props => props.theme.base.inputHeight};
+  height: ${props => props.theme.height.normal};
   background-color: ${props => props.theme.color.white};
   display: flex;
   align-items: center;

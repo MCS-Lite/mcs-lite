@@ -12,7 +12,7 @@ storiesOf('DatetimePicker', module)
     `,
     () =>
       <DatetimePicker
-        defaultValue={new Date(1455780631722).valueOf()}
+        defaultValue={1455780631722}
         onChange={action('DatetimePicker onChange(value: number) Unix Timestamp (milliseconds)')}
         utcOffset={8}
       />,

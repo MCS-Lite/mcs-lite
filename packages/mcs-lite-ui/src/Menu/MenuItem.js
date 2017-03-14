@@ -9,7 +9,7 @@ const MenuItem = styled.div`
   cursor: pointer;
   box-sizing: border-box;
   color: ${props => props.theme.color.black};
-  min-height: ${props => props.theme.base.inputHeight};
+  min-height: ${props => props.theme.height.normal};
 
   * {
     transition: initial;
