@@ -1,12 +1,17 @@
-import of from 'date-fp/build/of';
 import localTimeFormat from '../localTimeFormat';
+
+// Remind: We just test the two argument of date-fns' format function.
+jest.mock('date-fns/format', () => (date, format) => ({
+  date: date.toISOString(),
+  format,
+}));
 
 it('should return localTimeFormat function', () => {
   expect(typeof localTimeFormat).toBe('function');
 });
 
 it('should return correct formated string', () => {
-  const fixedDate = of([2015, 2, 4, 22, 8, 5, 23]);
+  const fixedDate = 1489455029878; // Tue Mar 14 2017 09:30:29 GMT+0800 (CST)
 
-  expect(localTimeFormat(fixedDate)).toBe('2015-03-04 22:08');
+  expect(localTimeFormat(fixedDate)).toMatchSnapshot();
 });
