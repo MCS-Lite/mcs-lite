@@ -56,7 +56,10 @@ exports[`test should renders <DeviceDataChannelTimeRange> correctly 1`] = `
         <Button
           block={true}
           component="button"
-          kind="default">
+          kind="default"
+          round={false}
+          size="normal"
+          square={false}>
           cancel
         </Button>
       </Styled(Link)>
@@ -66,7 +69,10 @@ exports[`test should renders <DeviceDataChannelTimeRange> correctly 1`] = `
           block={true}
           component="button"
           kind="primary"
-          onClick={[Function]}>
+          onClick={[Function]}
+          round={false}
+          size="normal"
+          square={false}>
           save
         </Button>
       </Styled(Link)>

@@ -28,7 +28,10 @@ exports[`test should renders <Account> correctly 1`] = `
       <Styled(BaseComponent)
         block={true}
         component="button"
-        kind="primary">
+        kind="primary"
+        round={false}
+        size="normal"
+        square={false}>
         myTestDevices
       </Styled(BaseComponent)>
     </Styled(Link)>
@@ -37,7 +40,10 @@ exports[`test should renders <Account> correctly 1`] = `
       <Styled(BaseComponent)
         block={true}
         component="button"
-        kind="primary">
+        kind="primary"
+        round={false}
+        size="normal"
+        square={false}>
         changePassword
       </Styled(BaseComponent)>
     </Styled(Link)>
@@ -45,7 +51,10 @@ exports[`test should renders <Account> correctly 1`] = `
       block={true}
       component="button"
       kind="primary"
-      onClick={[Function]}>
+      onClick={[Function]}
+      round={false}
+      size="normal"
+      square={false}>
       signout
     </Styled(BaseComponent)>
   </styled.footer>

@@ -4,7 +4,6 @@ Object {
     "bodyBackgroundColor": "#F1F2F7",
     "bodyColor": "#353630",
     "fontSize": "14px",
-    "inputHeight": "32px",
     "lineHeight": 1.5,
   },
   "color": Object {

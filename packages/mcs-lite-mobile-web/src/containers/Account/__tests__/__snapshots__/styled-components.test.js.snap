@@ -6,7 +6,10 @@ Array [
             block={false}
             className="buRwqu"
             component="button"
-            kind="primary" />
+            kind="primary"
+            round={false}
+            size="normal"
+            square={false} />
     </Styled(Button)>
     <styled.div>
         <div
