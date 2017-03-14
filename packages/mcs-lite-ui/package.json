@@ -79,6 +79,7 @@
     "react-motion-ui-pack": "^0.10.2",
     "react-overlays": "^0.6.12",
     "react-svg-morph": "^0.1.10",
+    "react-syntax-highlighter": "^5.0.0",
     "react-text-truncate": "^0.8.3",
     "recharts": "^0.21.2",
     "recompose": "^0.22.0",
