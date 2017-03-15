@@ -53,4 +53,18 @@ storiesOf('DataChannelCard', module)
         <Switch />
       </DataChannelCard>,
     { inline: true },
+  )
+  .addWithInfo(
+    'With empty description',
+    '',
+    () =>
+      <DataChannelCard
+        header="V"
+        title="Title"
+        subtitle="Last data point time : 2015-06-12 12:00"
+        description=""
+      >
+        <Switch />
+      </DataChannelCard>,
+    { inline: true },
   );
