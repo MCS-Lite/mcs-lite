@@ -6,6 +6,7 @@ import Heading from '../Heading';
 import Small from '../Small';
 import P from '../P';
 import Hr from '../Hr';
+import isString from '../utils/isString';
 
 const setHeightByLine = line => props => `${
   parseFloat(props.theme.fontSize.p, 10) *
@@ -62,9 +63,9 @@ const DataChannelCard = ({ header, children, title, subtitle, description, ...ot
     <div>
       <StyledHeading level={4}>{title}</StyledHeading>
       <StyledSmall>{subtitle}</StyledSmall>
-      {description && <StyledHr />}
+      {isString(description) && <StyledHr />}
       {
-        description && (
+        isString(description) && (
           <Description>
             <TextTruncate line={2} truncateText=" ..." text={description} />
           </Description>
