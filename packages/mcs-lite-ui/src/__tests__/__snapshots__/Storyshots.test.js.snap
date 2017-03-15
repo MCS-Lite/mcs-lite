@@ -4055,6 +4055,22 @@ exports[`Storyshots Icon [mcs-lite-icon] API 1`] = `
 </svg>
 `;
 
+exports[`Storyshots Icon [mcs-lite-icon] MorphReplace 1`] = `
+<svg
+  height={24}
+  preserveAspectRatio="xMidYMid meet"
+  viewBox="0 0 24 24"
+  width={24}
+>
+  <path
+    d="M19.9,13C19.9,13,19.9,11,19.9,11C19.9,11,7.899999999999999,11,7.899999999999999,11C7.899999999999999,11,13.399999999999999,5.5,13.399999999999999,5.5C13.399999999999999,5.5,12,4.1,12,4.1C12,4.1,4.1,12,4.1,12C4.1,12,12,19.9,12,19.9C12,19.9,13.4,18.5,13.4,18.5C13.4,18.5,7.9,13,7.9,13C7.9,13,19.9,13,19.9,13C19.9,13,19.9,13,19.9,13"
+    fill="rgba(-1,-1,-1,-1)"
+    style={Object {}}
+    transform="rotate(360 12 12)"
+  />
+</svg>
+`;
+
 exports[`Storyshots Icon [mcs-lite-icon] Spin Icon 1`] = `
 <div
   className="ftRJdL"
