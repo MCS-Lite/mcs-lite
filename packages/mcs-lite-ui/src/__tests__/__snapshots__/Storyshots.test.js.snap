@@ -2863,6 +2863,51 @@ exports[`Storyshots DataChannelCard Custom width and height 1`] = `
 </div>
 `;
 
+exports[`Storyshots DataChannelCard With empty description 1`] = `
+<div
+  className="czVqfN"
+>
+  <div
+    className="bUqfcz"
+  >
+    V
+  </div>
+  <div
+    className="dvQQLa"
+  >
+    <div
+      checked={false}
+      className="hiQQzp"
+      kind="success"
+    />
+  </div>
+  <div>
+    <h4
+      className="glocWb"
+    >
+      Title
+    </h4>
+    <small
+      className="jvIFlH"
+    >
+      Last data point time : 2015-06-12 12:00
+    </small>
+    <hr
+      className="dPNKKP iAugwC"
+    />
+    <div
+      className="iyRJwF"
+    >
+      <MockReactTextTruncate
+        line={2}
+        text=""
+        truncateText=" ..."
+      />
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots DataChannelCard Without description 1`] = `
 <div
   className="czVqfN"
