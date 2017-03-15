@@ -22,3 +22,5 @@ jest.mock('react-dom');
 jest.mock('react-hammerjs', () => 'MockReactHammerJS');
 // For recharts
 jest.mock('react-resize-detector', () => 'MockReactHammerJS');
+// For Icon
+jest.mock('react-svg-morph/lib/MorphReplace', () => 'MockMorphReplace');
