@@ -30,7 +30,11 @@ export default compose(
     ({ deviceId, deviceKey }) => deviceKey
       && `${wsHost}/deviceId/${deviceId}/deviceKey/${deviceKey}`,
     props => datapoint => props.setDatapoint(props.deviceId, datapoint, true),
-    'sendMessage', // propsName
+    ({ readyState, send, createWebSocket }) => ({
+      sendMessage: send,
+      isWebSocketClose: readyState.sender === 3 || readyState.viewer === 3,
+      reconnect: createWebSocket,
+    }),
   ),
   withGetMessages(messages, 'DeviceDetail'),
 )(DeviceDetail);

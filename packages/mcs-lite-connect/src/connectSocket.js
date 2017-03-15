@@ -5,63 +5,95 @@ import createEagerFactory from 'recompose/createEagerFactory';
 import createHelper from 'recompose/createHelper';
 import { w3cwebsocket as W3CWebSocket } from 'websocket';
 
+// https://developer.mozilla.org/en-US/docs/Web/API/WebSocket#Ready_state_constants
+const CLOSING = 2;
+
 const emptyFunction = () => {
   console.warn('[mcs-lite-connect] W3CWebSocket is not ready.');
 };
 
+const setReadyState = (type, readyState) => prevState => ({
+  readyState: {
+    ...prevState.readyState,
+    [type]: readyState,
+  },
+});
+
 /**
  * connectSocket
  *   urlMapper => props => string
- *   onMessage => props => e => void
- *   sendPropsName: string
+ *   onMessage => props => datapoint => void
+ *   propsMapper: => state => object
  *
  * @author Michael Hsu
  */
 
-const connectSocket = (urlMapper, onMessage, sendPropsName) => (BaseComponent) => {
+const connectSocket = (urlMapper, onMessage, propsMapper) => (BaseComponent) => {
   const factory = createEagerFactory(BaseComponent);
+  const initialState = {
+    send: emptyFunction, // Remind: Pass this Sender function as props.
+    readyState: { viewer: '', sender: '' }, // 0 ~ 3
+  };
 
   return class ConnectMCS extends React.Component {
-    state = { exposeSenderFunction: emptyFunction };
+    state = initialState;
+    isComponentUnmount = false; // Hint: To avoid calling setState of unmounted component.
     componentWillMount = () => this.createWebSocket();
     componentWillReceiveProps = () => this.createWebSocket();
-    componentWillUnmount = () => this.close();
+    componentWillUnmount = () => {
+      this.viewer.close();
+      this.sender.close();
+      this.setState(initialState);
+      this.isComponentUnmount = true;
+    };
 
+    /**
+     * This function will be passed to component as props, so that the consumer
+     * could have the controllability of reconnecting.
+     *
+     * @author Michael Hsu
+     */
     createWebSocket = () => {
       const URL = urlMapper(this.props);
-      if (!URL) return; // Hint: deviceId Not Ready.
+      if (!URL) return; // Hint: deviceKey Not Ready.
 
-      if (!this.viewer) {
+      if (!this.viewer || this.viewer.readyState >= CLOSING) {
         this.viewer = new W3CWebSocket(`${URL}/viewer`);
-        // this.viewer.onopen = data => console.info('viewer onopen', data);
-        // this.viewer.onerror = error => console.info('viewer onerror', error);
-        // this.viewer.onclose = data => console.info('viewer onclose', data);
+        this.viewer.onopen = () =>
+          this.setState(setReadyState('viewer', this.viewer.readyState));
+        this.viewer.onclose = () => {
+          if (this.isComponentUnmount) return;
+          this.setState(setReadyState('viewer', this.viewer.readyState));
+        };
         this.viewer.onmessage = (payload) => {
           const data = JSON.parse(payload.data);
           onMessage(this.props)(data); // Remind: Handle receieve messages.
         };
+        this.viewer.onerror = error => console.info('viewer onerror', error);
       }
 
-      if (!this.sender) {
+      if (!this.sender || this.sender.readyState >= CLOSING) {
         this.sender = new W3CWebSocket(`${URL}`);
-        this.sender.onopen = () =>
-          this.setState({ exposeSenderFunction: this.sender.send.bind(this.sender) });
-        // this.sender.onerror = error => console.info('sender onerror', error);
-        // this.sender.onclose = data => console.info('sender onclose', data);
-        // this.sender.onmessage = e => console.info('sender onmessage', e.data);
+        this.sender.onopen = () => {
+          this.setState({ send: this.sender.send.bind(this.sender) });
+          this.setState(setReadyState('sender', this.sender.readyState));
+        };
+        this.viewer.onclose = () => {
+          if (this.isComponentUnmount) return;
+          this.setState(setReadyState('sender', this.sender.readyState));
+        };
+        this.sender.onmessage = e => console.info('sender onmessage', e.data);
+        this.sender.onerror = error => console.info('sender onerror', error);
       }
-    }
-
-    close = () => {
-      this.viewer.close();
-      this.sender.close();
-      this.setState({ exposeSenderFunction: emptyFunction });
     }
 
     render() {
       return factory({
         ...this.props,
-        [sendPropsName]: this.state.exposeSenderFunction,
+        ...propsMapper({
+          createWebSocket: this.createWebSocket,
+          ...this.state,
+        }),
       });
     }
   };
