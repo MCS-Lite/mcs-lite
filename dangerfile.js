@@ -12,7 +12,7 @@ if (!danger.github.pr.body.length) {
 }
 
 // Warn if there is no labels.
-if (!danger.github.issue.labels) {
+if (!danger.github.issue.labels.length) {
   warn('Please add a label to your PR.');
 }
 
