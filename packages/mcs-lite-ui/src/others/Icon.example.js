@@ -1,6 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@kadira/storybook';
 import styled from 'styled-components';
+import MorphReplace from 'react-svg-morph/lib/MorphReplace';
 import * as Icons from 'mcs-lite-icon/lib/index';
 import Heading from '../Heading';
 import Card from '../Card';
@@ -34,6 +35,29 @@ const StyledCard = styled(Card)`
   padding: 16px;
 `;
 
+class StatefulMorphReplace extends React.Component {
+  state = { checked: false };
+  componentDidMount = () => {
+    this.interval = setInterval(() => {
+      this.setState(prevState => ({ checked: !prevState.checked }));
+    }, 1000);
+  }
+  componentWillUnmount = () => {
+    clearInterval(this.interval);
+  }
+
+  render() {
+    return (
+      <MorphReplace width={24} height={24}>
+        {this.state.checked
+          ? <Icons.IconMenu key="menu" />
+          : <Icons.IconArrowLeft key="arrow" />
+        }
+      </MorphReplace>
+    );
+  }
+}
+
 storiesOf('Icon [mcs-lite-icon]')
   .addWithInfo(
     'API',
@@ -50,6 +74,12 @@ storiesOf('Icon [mcs-lite-icon]')
         <Icons.IconLoading />
       </Spin>,
     { inline: true },
+  )
+  .addWithInfo(
+    'MorphReplace',
+    'https://github.com/gorangajic/react-svg-morph',
+    () => <StatefulMorphReplace />,
+    { inline: true, propTables: [MorphReplace]},
   )
   .addWithInfo(
     'Icon list, Custom color and size [Skip]',
