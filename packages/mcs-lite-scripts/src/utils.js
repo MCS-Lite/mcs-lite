@@ -20,18 +20,25 @@ const parseSVG = (xml) => {
 const template = (componentName, { children, viewBox }) => `
 import React, { PropTypes } from 'react';
 
-const ${componentName} = ({ name, size, children, ...otherProps }) =>
-  <svg
-    viewBox="${viewBox}"
-    preserveAspectRatio="xMidYMid meet"
-    fill="currentColor"
-    width={size}
-    height={size}
-    {...otherProps}
-  >
-    ${children}
-    {children}
-  </svg>;
+class ${componentName} extends React.Component {
+  render() {
+    const { size, children, ...otherProps } = this.props;
+
+    return (
+      <svg
+        viewBox="${viewBox}"
+        preserveAspectRatio="xMidYMid meet"
+        fill="currentColor"
+        width={size}
+        height={size}
+        {...otherProps}
+      >
+        ${children}
+        {children}
+      </svg>
+    );
+  }
+}
 
 ${componentName}.displayName = '${componentName}';
 ${componentName}.propTypes = {
