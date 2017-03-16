@@ -15,7 +15,7 @@ module.exports = {
 
         // only necessary if you're server-side renderin
         ssr: false,
-        minify: false,
+        minify: true,
         transpileTemplateLiterals: false,
       },
     ],
