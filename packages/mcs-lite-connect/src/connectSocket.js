@@ -5,25 +5,25 @@ import createEagerFactory from 'recompose/createEagerFactory';
 import createHelper from 'recompose/createHelper';
 import { w3cwebsocket as W3CWebSocket } from 'websocket';
 
-// https://developer.mozilla.org/en-US/docs/Web/API/WebSocket#Ready_state_constants
+// ref: https://developer.mozilla.org/en-US/docs/Web/API/WebSocket#Ready_state_constants
 const CLOSING = 2;
 
 const emptyFunction = () => {
   console.warn('[mcs-lite-connect] W3CWebSocket is not ready.');
 };
 
-const setReadyState = (type, readyState) => prevState => ({
+const setReadyState = (name, websocket) => prevState => ({
   readyState: {
     ...prevState.readyState,
-    [type]: readyState,
+    [name]: websocket.readyState,
   },
 });
 
 /**
  * connectSocket
- *   urlMapper => props => string
- *   onMessage => props => datapoint => void
- *   propsMapper: => state => object
+ *   urlMapper => (ownerProps: Object) => string
+ *   onMessage => (ownerProps: Object) => datapoint => void
+ *   propsMapper => state => props
  *
  * @author Michael Hsu
  */
@@ -60,10 +60,10 @@ const connectSocket = (urlMapper, onMessage, propsMapper) => (BaseComponent) => 
       if (!this.viewer || this.viewer.readyState >= CLOSING) {
         this.viewer = new W3CWebSocket(`${URL}/viewer`);
         this.viewer.onopen = () =>
-          this.setState(setReadyState('viewer', this.viewer.readyState));
+          this.setState(setReadyState('viewer', this.viewer));
         this.viewer.onclose = () => {
           if (this.isComponentUnmount) return;
-          this.setState(setReadyState('viewer', this.viewer.readyState));
+          this.setState(setReadyState('viewer', this.viewer));
         };
         this.viewer.onmessage = (payload) => {
           const data = JSON.parse(payload.data);
@@ -76,11 +76,11 @@ const connectSocket = (urlMapper, onMessage, propsMapper) => (BaseComponent) => 
         this.sender = new W3CWebSocket(`${URL}`);
         this.sender.onopen = () => {
           this.setState({ send: this.sender.send.bind(this.sender) });
-          this.setState(setReadyState('sender', this.sender.readyState));
+          this.setState(setReadyState('sender', this.sender));
         };
         this.viewer.onclose = () => {
           if (this.isComponentUnmount) return;
-          this.setState(setReadyState('sender', this.sender.readyState));
+          this.setState(setReadyState('sender', this.sender));
         };
         this.sender.onmessage = e => console.info('sender onmessage', e.data);
         this.sender.onerror = error => console.info('sender onerror', error);
@@ -92,7 +92,8 @@ const connectSocket = (urlMapper, onMessage, propsMapper) => (BaseComponent) => 
         ...this.props,
         ...propsMapper({
           createWebSocket: this.createWebSocket,
-          ...this.state,
+          send: this.state.send,
+          readyState: this.state.readyState,
         }),
       });
     }
