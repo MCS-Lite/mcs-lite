@@ -5399,6 +5399,77 @@ exports[`Storyshots Switch With scaling 1`] = `
 />
 `;
 
+exports[`Storyshots TabItem API 1`] = `
+<div>
+  <div
+    className="dRgwQy"
+    color="primary"
+    onClick={[Function]}
+    value="key"
+  >
+    TabItem
+  </div>
+  <div
+    className="jqtOsN"
+    color="primary"
+    onClick={[Function]}
+    value="key"
+  >
+    Active TabItem
+  </div>
+</div>
+`;
+
+exports[`Storyshots TabItem With color props 1`] = `
+<div>
+  <div
+    className="gjskof"
+    color="warning"
+    onClick={[Function]}
+    value={1}
+  >
+    TabItem 1
+  </div>
+  <div
+    className="VWsdC"
+    color="warning"
+    onClick={[Function]}
+    value={2}
+  >
+    TabItem 2
+  </div>
+</div>
+`;
+
+exports[`Storyshots TabItem With state 1`] = `
+<div>
+  <div
+    className="dRgwQy"
+    color="primary"
+    onClick={[Function]}
+    value={1}
+  >
+    Tab 1
+  </div>
+  <div
+    className="dRgwQy"
+    color="primary"
+    onClick={[Function]}
+    value={2}
+  >
+    Tab 2
+  </div>
+  <div
+    className="dRgwQy"
+    color="primary"
+    onClick={[Function]}
+    value={3}
+  >
+    Tab 3
+  </div>
+</div>
+`;
+
 exports[`Storyshots Textarea API 1`] = `
 <textarea
   className="YixGR"
