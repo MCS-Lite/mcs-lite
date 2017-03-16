@@ -35,18 +35,18 @@ const Component = connectSocket(
 
 ## API
 
-1.  `urlMapper => (ownerProps: Object) => string`
+### `urlMapper => (ownerProps: Object) => string`
 
   Set the **URL** to be connected. There are two connections:
   
-    - *Sender* : The **Send-Only** connection via `${URL}`.
-    - *Viewer* : The **Read-Only** connection via `${URL}/viewer`.
+  - *Sender* : The **Send-Only** connection via `${URL}`.
+  - *Viewer* : The **Read-Only** connection via `${URL}/viewer`.
 
-2.  `onMessage => (ownerProps: Object) => datapoint => void`
+### `onMessage => (ownerProps: Object) => datapoint => void`
   
   The **callback function** of *Viewer*. It will be invoked   when receiving messages (*datapoint*) from the server.
 
-3.  `propsMapper => state => props`
+### `propsMapper => state => props`
   
   A function that maps **internal state** to a new collection of props that are passed to the base component. There are three states:
   
