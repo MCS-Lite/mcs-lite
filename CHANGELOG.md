@@ -2,6 +2,20 @@
 
 ## Released (2017-03-16)
 
+### Bump Versions
+
+-   babel-preset-mcs-lite@0.1.3
+-   mcs-lite-connect@0.2.0
+-   mcs-lite-demo-nextjs@0.1.9
+-   mcs-lite-design@0.1.4
+-   mcs-lite-icon@0.2.0
+-   mcs-lite-mobile-web@0.2.1
+-   mcs-lite-scripts@0.2.0
+-   mcs-lite-theme@0.2.0
+-   mcs-lite-ui@0.2.1
+-   react-intl-cra@0.1.5
+-   react-intl-inject-hoc@0.1.5
+
 #### :rocket: New Feature
 * `mcs-lite-connect`, `mcs-lite-mobile-web`
   * [#234](https://github.com/evenchange4/mcs-lite/pull/234) feat(mcs-lite-connect): add isWebSocketClose feature [BREAKING]. ([@evenchange4](https://github.com/evenchange4))
