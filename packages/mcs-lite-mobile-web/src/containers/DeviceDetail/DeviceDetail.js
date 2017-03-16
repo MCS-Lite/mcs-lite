@@ -33,6 +33,7 @@ class DeviceDetail extends React.Component {
 
     // WebSocket
     sendMessage: PropTypes.func.isRequired,
+    reconnect: PropTypes.func.isRequired,
     isWebSocketClose: PropTypes.bool.isRequired,
   }
   state = { isMenuShow: false, target: undefined };
@@ -59,7 +60,10 @@ class DeviceDetail extends React.Component {
   }
   render() {
     const { isMenuShow, target } = this.state;
-    const { deviceId, device, isLoading, getMessages: t, isWebSocketClose } = this.props;
+    const {
+      deviceId, device, isLoading, getMessages: t, isWebSocketClose,
+      reconnect,
+    } = this.props;
     const { getTarget, onMoreDetailClick, onHide, fetch, eventHandler } = this;
     return (
       <div>
@@ -104,7 +108,8 @@ class DeviceDetail extends React.Component {
         />
 
         <main>
-          {isWebSocketClose && <WebSocketNotification onClick={this.props.reconnect} />}
+          {isWebSocketClose && <WebSocketNotification onClick={reconnect} />}
+
           <PullToRefresh isLoading={isLoading} onPull={fetch}>
             <div>
               <StyledImg src="https://img.mediatek.com/600/mtk.linkit/productBanner.png" />

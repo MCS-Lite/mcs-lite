@@ -3,6 +3,7 @@ import R from 'ramda';
 import { shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
 import DeviceDetail from '../DeviceDetail';
+import WebSocketNotification from '../../../components/WebSocketNotification';
 
 it('should renders <DeviceDetail> correctly', () => {
   const fetchMock = jest.fn();
@@ -21,11 +22,40 @@ it('should renders <DeviceDetail> correctly', () => {
       fetchDeviceDetail={fetchMock}
       sendMessage={() => {}}
       setDatapoint={() => {}}
+      reconnect={() => {}}
+      isWebSocketClose={false}
     />,
   );
 
   expect(toJson(wrapper)).toMatchSnapshot();
   expect(fetchMock).toHaveBeenCalledWith('deviceId');
+});
+
+it('should renders <DeviceDetail> correctly with Notification', () => {
+  const fetchMock = jest.fn();
+  const wrapper = shallow(
+    <DeviceDetail
+      getMessages={R.identity}
+      deviceId="deviceId"
+      device={{
+        deviceId: 'deviceId',
+        deviceName: 'deviceName',
+        createUserId: 'createUserId',
+        deviceDescription: 'deviceDescription',
+        deviceKey: 'deviceKey',
+      }}
+      isLoading={false}
+      fetchDeviceDetail={fetchMock}
+      sendMessage={() => {}}
+      setDatapoint={() => {}}
+      reconnect={() => {}}
+      isWebSocketClose
+    />,
+  );
+
+  expect(
+    toJson(wrapper.find(WebSocketNotification)),
+  ).toMatchSnapshot();
 });
 
 it('should renders <DeviceDetail> correctly when Menu show', () => {
@@ -38,6 +68,8 @@ it('should renders <DeviceDetail> correctly when Menu show', () => {
       fetchDeviceDetail={() => {}}
       sendMessage={() => {}}
       setDatapoint={() => {}}
+      reconnect={() => {}}
+      isWebSocketClose={false}
     />,
   );
 
@@ -55,6 +87,8 @@ it('should return correctly state', () => {
       fetchDeviceDetail={() => {}}
       sendMessage={() => {}}
       setDatapoint={() => {}}
+      reconnect={() => {}}
+      isWebSocketClose={false}
     />,
   );
 
@@ -83,6 +117,8 @@ it('should handle eventHandler correctly', () => {
       fetchDeviceDetail={() => {}}
       sendMessage={sendMessageMock}
       setDatapoint={setDatapointMock}
+      reconnect={() => {}}
+      isWebSocketClose={false}
     />,
   );
 
@@ -109,4 +145,28 @@ it('should handle eventHandler correctly', () => {
     'deviceId',
     { datachannelId: 'id', values: { value: 1 }},
   );
+});
+
+it('should handle reconnect', () => {
+  const mockReconnect = jest.fn();
+  const wrapper = shallow(
+    <DeviceDetail
+      getMessages={R.identity}
+      deviceId="deviceId"
+      device={{}}
+      isLoading={false}
+      fetchDeviceDetail={() => {}}
+      sendMessage={() => {}}
+      setDatapoint={() => {}}
+      reconnect={mockReconnect}
+      isWebSocketClose
+    />,
+  );
+
+  // Before eventHandler with submit type
+  expect(mockReconnect).not.toHaveBeenCalled();
+
+  // After eventHandler with submit type
+  wrapper.find(WebSocketNotification).props().onClick();
+  expect(mockReconnect).toHaveBeenCalled();
 });

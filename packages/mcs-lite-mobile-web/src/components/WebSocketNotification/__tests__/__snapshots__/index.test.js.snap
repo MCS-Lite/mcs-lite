@@ -1,0 +1,1 @@
+exports[`test should render Container correctly with HOC 1`] = `<InjectIntl(withPropsOnChange(WebSocketNotification)) />`;

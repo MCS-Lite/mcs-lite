@@ -1,9 +1,7 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
 import styled from 'styled-components';
 import { MobileContentWrapper, Notification, Button, P } from 'mcs-lite-ui';
-import { withGetMessages } from 'react-intl-inject-hoc';
 import Transition from 'react-motion-ui-pack';
-import messages from './messages';
 
 const Fixed = styled.div`
   position: fixed;
@@ -33,4 +31,13 @@ const WebSocketNotification = ({ onClick, getMessages: t }) =>
     </Wrapper>
   </Fixed>;
 
-export default withGetMessages(messages, 'WebSocketNotification')(WebSocketNotification);
+WebSocketNotification.displayName = 'WebSocketNotification';
+WebSocketNotification.propTypes = {
+  // Props
+  onClick: PropTypes.func.isRequired,
+
+  // React-intl I18n
+  getMessages: PropTypes.func.isRequired,
+};
+
+export default WebSocketNotification;
