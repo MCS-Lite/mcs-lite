@@ -13,9 +13,9 @@ module.exports = {
         // TODO: withConfig problem
         displayName: false,
 
-        // only necessary if you're server-side renderin
+        // Only necessary if you're server-side renderin
         ssr: false,
-        minify: true,
+        minify: true, // TODO: CI snapshot testing problem
         transpileTemplateLiterals: false,
       },
     ],
