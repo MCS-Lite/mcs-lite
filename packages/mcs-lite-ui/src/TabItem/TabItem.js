@@ -19,7 +19,7 @@ const mapColorByActive = R.cond([
   [R.T, R.path(['theme', 'color', 'black'])],
 ]);
 
-const Item = styled.div`
+export const Item = styled.div`
   display: inline-flex;
   align-items: center;
   justify-content: center;
