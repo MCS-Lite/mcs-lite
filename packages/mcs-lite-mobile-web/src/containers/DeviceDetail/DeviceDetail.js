@@ -9,6 +9,7 @@ import IconArrowLeft from 'mcs-lite-icon/lib/IconArrowLeft';
 import IconFold from 'mcs-lite-icon/lib/IconFold';
 import { Link } from 'react-router';
 import StyledLink from '../../components/StyledLink';
+import WebSocketNotification from '../../components/WebSocketNotification';
 import { Container, StyledImg, CardWrapper, CardHeaderIcon } from './styled-components';
 import updatePathname from '../../utils/updatePathname';
 import dataChannelTypeMapper from '../../utils/dataChannelTypeMapper';
@@ -103,10 +104,7 @@ class DeviceDetail extends React.Component {
         />
 
         <main>
-          {isWebSocketClose && (
-            <button onClick={this.props.reconnect}>Reconnect</button>
-          )}
-
+          {isWebSocketClose && <WebSocketNotification onClick={this.props.reconnect} />}
           <PullToRefresh isLoading={isLoading} onPull={fetch}>
             <div>
               <StyledImg src="https://img.mediatek.com/600/mtk.linkit/productBanner.png" />
