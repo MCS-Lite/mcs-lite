@@ -465,6 +465,265 @@ exports[`Storyshots ClickOutside API 1`] = `
 </div>
 `;
 
+exports[`Storyshots Code API 1`] = `
+<MockSyntaxHighlighter
+  customStyle={
+    Object {
+      "backgroundColor": "initial",
+    }
+  }
+  language="javascript"
+  style={
+    Object {
+      "hljs": Object {
+        "background": "white",
+        "color": "#333333",
+        "display": "block",
+        "overflowX": "auto",
+        "padding": "0.5em",
+      },
+      "hljs-addition": Object {
+        "backgroundColor": "#eaffea",
+        "color": "#55a532",
+      },
+      "hljs-attr": Object {
+        "color": "#795da3",
+      },
+      "hljs-attribute": Object {
+        "color": "#0086b3",
+      },
+      "hljs-bullet": Object {
+        "color": "#0086b3",
+      },
+      "hljs-comment": Object {
+        "color": "#969896",
+      },
+      "hljs-deletion": Object {
+        "backgroundColor": "#ffecec",
+        "color": "#bd2c00",
+      },
+      "hljs-emphasis": Object {
+        "color": "#df5000",
+      },
+      "hljs-keyword": Object {
+        "color": "#a71d5d",
+      },
+      "hljs-link": Object {
+        "textDecoration": "underline",
+      },
+      "hljs-literal": Object {
+        "color": "#0086b3",
+      },
+      "hljs-meta": Object {
+        "color": "#969896",
+      },
+      "hljs-name": Object {
+        "color": "#63a35c",
+      },
+      "hljs-quote": Object {
+        "color": "#df5000",
+      },
+      "hljs-section": Object {
+        "color": "#63a35c",
+      },
+      "hljs-selector-attr": Object {
+        "color": "#795da3",
+      },
+      "hljs-selector-class": Object {
+        "color": "#795da3",
+      },
+      "hljs-selector-id": Object {
+        "color": "#795da3",
+      },
+      "hljs-selector-pseudo": Object {
+        "color": "#795da3",
+      },
+      "hljs-selector-tag": Object {
+        "color": "#a71d5d",
+      },
+      "hljs-string": Object {
+        "color": "#df5000",
+      },
+      "hljs-strong": Object {
+        "color": "#df5000",
+      },
+      "hljs-symbol": Object {
+        "color": "#0086b3",
+      },
+      "hljs-tag": Object {
+        "color": "#333333",
+      },
+      "hljs-template-variable": Object {
+        "color": "#df5000",
+      },
+      "hljs-title": Object {
+        "color": "#795da3",
+      },
+      "hljs-type": Object {
+        "color": "#a71d5d",
+      },
+      "hljs-variable": Object {
+        "color": "#df5000",
+      },
+    }
+  }
+  wrapLines={true}
+>
+  var data = {
+    datapoints:
+      [{dataChnId: "Map", values: {latitude: 12, longitude: 13, altitude: 14}}]
+  };
+  
+  $.ajax({
+    type: "POST",
+    url: "https://api.mediatek.com/mcs/v2/devices/DzdpHYIZ/datapoints",
+    headers: { deviceKey: "Cio34Lj7Na5RmQXj" },
+    contentType: "application/json",
+    data: JSON.stringify(data)
+  })
+  .done(function(data){
+    // your content
+  })
+</MockSyntaxHighlighter>
+`;
+
+exports[`Storyshots Code With language props 1`] = `
+<MockSyntaxHighlighter
+  customStyle={
+    Object {
+      "backgroundColor": "initial",
+    }
+  }
+  language="arduino"
+  style={
+    Object {
+      "hljs": Object {
+        "background": "white",
+        "color": "#333333",
+        "display": "block",
+        "overflowX": "auto",
+        "padding": "0.5em",
+      },
+      "hljs-addition": Object {
+        "backgroundColor": "#eaffea",
+        "color": "#55a532",
+      },
+      "hljs-attr": Object {
+        "color": "#795da3",
+      },
+      "hljs-attribute": Object {
+        "color": "#0086b3",
+      },
+      "hljs-bullet": Object {
+        "color": "#0086b3",
+      },
+      "hljs-comment": Object {
+        "color": "#969896",
+      },
+      "hljs-deletion": Object {
+        "backgroundColor": "#ffecec",
+        "color": "#bd2c00",
+      },
+      "hljs-emphasis": Object {
+        "color": "#df5000",
+      },
+      "hljs-keyword": Object {
+        "color": "#a71d5d",
+      },
+      "hljs-link": Object {
+        "textDecoration": "underline",
+      },
+      "hljs-literal": Object {
+        "color": "#0086b3",
+      },
+      "hljs-meta": Object {
+        "color": "#969896",
+      },
+      "hljs-name": Object {
+        "color": "#63a35c",
+      },
+      "hljs-quote": Object {
+        "color": "#df5000",
+      },
+      "hljs-section": Object {
+        "color": "#63a35c",
+      },
+      "hljs-selector-attr": Object {
+        "color": "#795da3",
+      },
+      "hljs-selector-class": Object {
+        "color": "#795da3",
+      },
+      "hljs-selector-id": Object {
+        "color": "#795da3",
+      },
+      "hljs-selector-pseudo": Object {
+        "color": "#795da3",
+      },
+      "hljs-selector-tag": Object {
+        "color": "#a71d5d",
+      },
+      "hljs-string": Object {
+        "color": "#df5000",
+      },
+      "hljs-strong": Object {
+        "color": "#df5000",
+      },
+      "hljs-symbol": Object {
+        "color": "#0086b3",
+      },
+      "hljs-tag": Object {
+        "color": "#333333",
+      },
+      "hljs-template-variable": Object {
+        "color": "#df5000",
+      },
+      "hljs-title": Object {
+        "color": "#795da3",
+      },
+      "hljs-type": Object {
+        "color": "#a71d5d",
+      },
+      "hljs-variable": Object {
+        "color": "#df5000",
+      },
+    }
+  }
+  wrapLines={true}
+>
+  include &lt;HttpClient.h&gt;
+  include &lt;EthernetClient.h&gt;
+  
+  EthernetClient content;
+  HttpClient http(content);
+  
+  content.println("POST /mcs/v2/devices/DzdpHYIZ/datapoints.csv HTTP/1.1");
+  #hint! Please do not add excessive spaces
+  
+  String data = "inte,,123"
+  
+  #hint! Please do not add excessive spaces
+  #timestamp is in unix-time format the milliseconds and is optional. If not provided,
+  
+  #system will generate timestamp at the time of receiving this API
+  int dataLength = data.length();
+  
+  content.println("Host: api.mediatek.com");
+  content.println("deviceKey: Cio34Lj7Na5RmQXj");
+  content.print("Content-Length: ");
+  content.println(dataLength);
+</MockSyntaxHighlighter>
+`;
+
+exports[`Storyshots CopyButton API 1`] = `
+<button
+  className="dGmdQp"
+  onClick={[Function]}
+>
+  Copy
+</button>
+`;
+
 exports[`Storyshots DataChannel ButtonClear 1`] = `
 <div
   className="gVViGF"
@@ -2863,6 +3122,51 @@ exports[`Storyshots DataChannelCard Custom width and height 1`] = `
 </div>
 `;
 
+exports[`Storyshots DataChannelCard With empty description 1`] = `
+<div
+  className="czVqfN"
+>
+  <div
+    className="bUqfcz"
+  >
+    V
+  </div>
+  <div
+    className="dvQQLa"
+  >
+    <div
+      checked={false}
+      className="hiQQzp"
+      kind="success"
+    />
+  </div>
+  <div>
+    <h4
+      className="glocWb"
+    >
+      Title
+    </h4>
+    <small
+      className="jvIFlH"
+    >
+      Last data point time : 2015-06-12 12:00
+    </small>
+    <hr
+      className="dPNKKP iAugwC"
+    />
+    <div
+      className="iyRJwF"
+    >
+      <MockReactTextTruncate
+        line={2}
+        text=""
+        truncateText=" ..."
+      />
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots DataChannelCard Without description 1`] = `
 <div
   className="czVqfN"
@@ -4008,6 +4312,25 @@ exports[`Storyshots Icon [mcs-lite-icon] API 1`] = `
     d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zm9-10h1v10h-1V9zm-4 0h2v10h-2V9zM8 9h1v10H8V9zm7.5-5l-1-1h-5l-1 1H5v2h14V4h-3.5z"
   />
 </svg>
+`;
+
+exports[`Storyshots Icon [mcs-lite-icon] MorphReplace 1`] = `
+<MockMorphReplace
+  height={24}
+  width={24}
+>
+  <svg
+    fill="currentColor"
+    height="1em"
+    preserveAspectRatio="xMidYMid meet"
+    viewBox="0 0 24 24"
+    width="1em"
+  >
+    <path
+      d="M19.9 13v-2h-12l5.5-5.5L12 4.1 4.1 12l7.9 7.9 1.4-1.4L7.9 13h12z"
+    />
+  </svg>
+</MockMorphReplace>
 `;
 
 exports[`Storyshots Icon [mcs-lite-icon] Spin Icon 1`] = `
@@ -5324,6 +5647,77 @@ exports[`Storyshots Switch With scaling 1`] = `
   kind="primary"
   onClick={[Function]}
 />
+`;
+
+exports[`Storyshots TabItem API 1`] = `
+<div>
+  <div
+    className="dRgwQy"
+    color="primary"
+    onClick={[Function]}
+    value="key"
+  >
+    TabItem
+  </div>
+  <div
+    className="jqtOsN"
+    color="primary"
+    onClick={[Function]}
+    value="key"
+  >
+    Active TabItem
+  </div>
+</div>
+`;
+
+exports[`Storyshots TabItem With color props 1`] = `
+<div>
+  <div
+    className="gjskof"
+    color="warning"
+    onClick={[Function]}
+    value={1}
+  >
+    TabItem 1
+  </div>
+  <div
+    className="VWsdC"
+    color="warning"
+    onClick={[Function]}
+    value={2}
+  >
+    TabItem 2
+  </div>
+</div>
+`;
+
+exports[`Storyshots TabItem With state 1`] = `
+<div>
+  <div
+    className="dRgwQy"
+    color="primary"
+    onClick={[Function]}
+    value={1}
+  >
+    Tab 1
+  </div>
+  <div
+    className="dRgwQy"
+    color="primary"
+    onClick={[Function]}
+    value={2}
+  >
+    Tab 2
+  </div>
+  <div
+    className="dRgwQy"
+    color="primary"
+    onClick={[Function]}
+    value={3}
+  >
+    Tab 3
+  </div>
+</div>
 `;
 
 exports[`Storyshots Textarea API 1`] = `

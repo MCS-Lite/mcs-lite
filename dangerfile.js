@@ -11,6 +11,11 @@ if (!danger.github.pr.body.length) {
   warn('Please add a description to your PR.');
 }
 
+// Warn if there is no labels.
+if (!danger.github.issue.labels.length) {
+  warn('Please add a label to your PR.');
+}
+
 // Warn if there is no one assign.
 const someoneAssigned = danger.github.pr.assignee;
 if (someoneAssigned === null) {
