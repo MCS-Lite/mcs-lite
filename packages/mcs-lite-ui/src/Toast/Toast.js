@@ -13,7 +13,6 @@ const mapColorByKind = R.cond([
 ]);
 
 const StyledCard = styled(Card)`
-  height: ${props => props.theme.height.normal};
   border: 1px solid ${mapColorByKind};
   background-color: rgba(255, 255, 255, 0.9);
 `;
@@ -21,7 +20,7 @@ const StyledCard = styled(Card)`
 const StyledP = styled(P)`
   display: flex;
   align-items: center;
-  padding: 0 20px;
+  padding: 10px 20px;
   height: 100%;
   color: ${mapColorByKind};
   background-color: ${props => lighten(props.theme.color[props.kind])};
