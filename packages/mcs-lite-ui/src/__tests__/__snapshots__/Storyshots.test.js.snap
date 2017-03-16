@@ -465,6 +465,256 @@ exports[`Storyshots ClickOutside API 1`] = `
 </div>
 `;
 
+exports[`Storyshots Code API 1`] = `
+<MockSyntaxHighlighter
+  customStyle={
+    Object {
+      "backgroundColor": "initial",
+    }
+  }
+  language="javascript"
+  style={
+    Object {
+      "hljs": Object {
+        "background": "white",
+        "color": "#333333",
+        "display": "block",
+        "overflowX": "auto",
+        "padding": "0.5em",
+      },
+      "hljs-addition": Object {
+        "backgroundColor": "#eaffea",
+        "color": "#55a532",
+      },
+      "hljs-attr": Object {
+        "color": "#795da3",
+      },
+      "hljs-attribute": Object {
+        "color": "#0086b3",
+      },
+      "hljs-bullet": Object {
+        "color": "#0086b3",
+      },
+      "hljs-comment": Object {
+        "color": "#969896",
+      },
+      "hljs-deletion": Object {
+        "backgroundColor": "#ffecec",
+        "color": "#bd2c00",
+      },
+      "hljs-emphasis": Object {
+        "color": "#df5000",
+      },
+      "hljs-keyword": Object {
+        "color": "#a71d5d",
+      },
+      "hljs-link": Object {
+        "textDecoration": "underline",
+      },
+      "hljs-literal": Object {
+        "color": "#0086b3",
+      },
+      "hljs-meta": Object {
+        "color": "#969896",
+      },
+      "hljs-name": Object {
+        "color": "#63a35c",
+      },
+      "hljs-quote": Object {
+        "color": "#df5000",
+      },
+      "hljs-section": Object {
+        "color": "#63a35c",
+      },
+      "hljs-selector-attr": Object {
+        "color": "#795da3",
+      },
+      "hljs-selector-class": Object {
+        "color": "#795da3",
+      },
+      "hljs-selector-id": Object {
+        "color": "#795da3",
+      },
+      "hljs-selector-pseudo": Object {
+        "color": "#795da3",
+      },
+      "hljs-selector-tag": Object {
+        "color": "#a71d5d",
+      },
+      "hljs-string": Object {
+        "color": "#df5000",
+      },
+      "hljs-strong": Object {
+        "color": "#df5000",
+      },
+      "hljs-symbol": Object {
+        "color": "#0086b3",
+      },
+      "hljs-tag": Object {
+        "color": "#333333",
+      },
+      "hljs-template-variable": Object {
+        "color": "#df5000",
+      },
+      "hljs-title": Object {
+        "color": "#795da3",
+      },
+      "hljs-type": Object {
+        "color": "#a71d5d",
+      },
+      "hljs-variable": Object {
+        "color": "#df5000",
+      },
+    }
+  }
+  wrapLines={true}
+>
+  var data = {
+    datapoints:
+      [{dataChnId: "Map", values: {latitude: 12, longitude: 13, altitude: 14}}]
+  };
+  
+  $.ajax({
+    type: "POST",
+    url: "https://api.mediatek.com/mcs/v2/devices/DzdpHYIZ/datapoints",
+    headers: { deviceKey: "Cio34Lj7Na5RmQXj" },
+    contentType: "application/json",
+    data: JSON.stringify(data)
+  })
+  .done(function(data){
+    // your content
+  })
+</MockSyntaxHighlighter>
+`;
+
+exports[`Storyshots Code With language props 1`] = `
+<MockSyntaxHighlighter
+  customStyle={
+    Object {
+      "backgroundColor": "initial",
+    }
+  }
+  language="arduino"
+  style={
+    Object {
+      "hljs": Object {
+        "background": "white",
+        "color": "#333333",
+        "display": "block",
+        "overflowX": "auto",
+        "padding": "0.5em",
+      },
+      "hljs-addition": Object {
+        "backgroundColor": "#eaffea",
+        "color": "#55a532",
+      },
+      "hljs-attr": Object {
+        "color": "#795da3",
+      },
+      "hljs-attribute": Object {
+        "color": "#0086b3",
+      },
+      "hljs-bullet": Object {
+        "color": "#0086b3",
+      },
+      "hljs-comment": Object {
+        "color": "#969896",
+      },
+      "hljs-deletion": Object {
+        "backgroundColor": "#ffecec",
+        "color": "#bd2c00",
+      },
+      "hljs-emphasis": Object {
+        "color": "#df5000",
+      },
+      "hljs-keyword": Object {
+        "color": "#a71d5d",
+      },
+      "hljs-link": Object {
+        "textDecoration": "underline",
+      },
+      "hljs-literal": Object {
+        "color": "#0086b3",
+      },
+      "hljs-meta": Object {
+        "color": "#969896",
+      },
+      "hljs-name": Object {
+        "color": "#63a35c",
+      },
+      "hljs-quote": Object {
+        "color": "#df5000",
+      },
+      "hljs-section": Object {
+        "color": "#63a35c",
+      },
+      "hljs-selector-attr": Object {
+        "color": "#795da3",
+      },
+      "hljs-selector-class": Object {
+        "color": "#795da3",
+      },
+      "hljs-selector-id": Object {
+        "color": "#795da3",
+      },
+      "hljs-selector-pseudo": Object {
+        "color": "#795da3",
+      },
+      "hljs-selector-tag": Object {
+        "color": "#a71d5d",
+      },
+      "hljs-string": Object {
+        "color": "#df5000",
+      },
+      "hljs-strong": Object {
+        "color": "#df5000",
+      },
+      "hljs-symbol": Object {
+        "color": "#0086b3",
+      },
+      "hljs-tag": Object {
+        "color": "#333333",
+      },
+      "hljs-template-variable": Object {
+        "color": "#df5000",
+      },
+      "hljs-title": Object {
+        "color": "#795da3",
+      },
+      "hljs-type": Object {
+        "color": "#a71d5d",
+      },
+      "hljs-variable": Object {
+        "color": "#df5000",
+      },
+    }
+  }
+  wrapLines={true}
+>
+  include &lt;HttpClient.h&gt;
+  include &lt;EthernetClient.h&gt;
+  
+  EthernetClient content;
+  HttpClient http(content);
+  
+  content.println("POST /mcs/v2/devices/DzdpHYIZ/datapoints.csv HTTP/1.1");
+  #hint! Please do not add excessive spaces
+  
+  String data = "inte,,123"
+  
+  #hint! Please do not add excessive spaces
+  #timestamp is in unix-time format the milliseconds and is optional. If not provided,
+  
+  #system will generate timestamp at the time of receiving this API
+  int dataLength = data.length();
+  
+  content.println("Host: api.mediatek.com");
+  content.println("deviceKey: Cio34Lj7Na5RmQXj");
+  content.print("Content-Length: ");
+  content.println(dataLength);
+</MockSyntaxHighlighter>
+`;
+
 exports[`Storyshots CopyButton API 1`] = `
 <button
   className="dGmdQp"
