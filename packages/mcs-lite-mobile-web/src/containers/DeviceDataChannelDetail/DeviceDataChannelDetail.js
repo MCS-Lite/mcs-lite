@@ -11,6 +11,7 @@ import {
   CardContainer, StyledSamll, HistoryHeader, ResetWrapper, HistoryContainer,
   ChartWrapper,
 } from './styled-components';
+import WebSocketNotification from '../../components/WebSocketNotification';
 import updatePathname from '../../utils/updatePathname';
 import dataChannelTypeMapper from '../../utils/dataChannelTypeMapper';
 import localTimeFormat from '../../utils/localTimeFormat';
@@ -39,7 +40,9 @@ class DeviceDataChannelDetail extends React.Component {
     getMessages: PropTypes.func.isRequired,
 
     // WebSocket
-    sendMessage: PropTypes.func,
+    sendMessage: PropTypes.func.isRequired,
+    reconnect: PropTypes.func.isRequired,
+    isWebSocketClose: PropTypes.bool.isRequired,
   }
   componentWillMount = () => {
     const { deviceId, dataChannelId, fetchDeviceDetail, fetchDatapoints } = this.props;
@@ -67,7 +70,10 @@ class DeviceDataChannelDetail extends React.Component {
     }
   }
   render() {
-    const { deviceId, datachannel, data, getMessages: t, dataChannelId } = this.props;
+    const {
+      deviceId, datachannel, data, getMessages: t, dataChannelId,
+      isWebSocketClose, reconnect,
+    } = this.props;
     const { eventHandler, onResetClick } = this;
 
     return (
@@ -94,6 +100,8 @@ class DeviceDataChannelDetail extends React.Component {
         />
 
         <main>
+          {isWebSocketClose && <WebSocketNotification onClick={reconnect} />}
+
           <CardContainer>
             {datachannel && (
               <DataChannelCard

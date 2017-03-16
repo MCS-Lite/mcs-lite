@@ -122,3 +122,8 @@ exports[`test should renders <DeviceDetail> correctly when Menu show 1`] = `
   </main>
 </div>
 `;
+
+exports[`test should renders <DeviceDetail> correctly with Notification 1`] = `
+<InjectIntl(withPropsOnChange(WebSocketNotification))
+  onClick={[Function]} />
+`;

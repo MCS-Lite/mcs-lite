@@ -1,0 +1,44 @@
+exports[`test should renders <WebSocketNotification> correctly 1`] = `
+<styled.div>
+  <styled.div>
+    <Transition
+      appear={
+        Object {
+          "opacity": 0.5,
+          "translateY": -40,
+        }
+      }
+      component={false}
+      enter={
+        Object {
+          "opacity": 1,
+          "translateY": 0,
+        }
+      }
+      leave={
+        Object {
+          "opacity": 0,
+        }
+      }
+      onEnter={[Function]}
+      onLeave={[Function]}
+      runOnMount={true}>
+      <Notification>
+        <P>
+          info
+        </P>
+        <Button
+          block={false}
+          component="button"
+          kind="primary"
+          onClick={[Function]}
+          round={false}
+          size="normal"
+          square={false}>
+          reconnect
+        </Button>
+      </Notification>
+    </Transition>
+  </styled.div>
+</styled.div>
+`;

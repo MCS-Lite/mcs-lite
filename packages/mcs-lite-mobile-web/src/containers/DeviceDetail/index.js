@@ -27,10 +27,19 @@ const wsHost = `ws://${window.location.hostname}:${process.env.REACT_APP_SOCKET_
 export default compose(
   connect(mapStateToProps, mapDispatchToProps),
   connectSocket(
+    // 1. urlMapper => (ownerProps: Object) => string
     ({ deviceId, deviceKey }) => deviceKey
       && `${wsHost}/deviceId/${deviceId}/deviceKey/${deviceKey}`,
+
+    // 2. onMessage => (ownerProps: Object) => datapoint => void
     props => datapoint => props.setDatapoint(props.deviceId, datapoint, true),
-    'sendMessage', // propsName
+
+    // 3. propsMapper => state => props
+    ({ readyState, send, createWebSocket }) => ({
+      sendMessage: send,
+      isWebSocketClose: readyState.sender === 3 || readyState.viewer === 3,
+      reconnect: createWebSocket,
+    }),
   ),
   withGetMessages(messages, 'DeviceDetail'),
 )(DeviceDetail);

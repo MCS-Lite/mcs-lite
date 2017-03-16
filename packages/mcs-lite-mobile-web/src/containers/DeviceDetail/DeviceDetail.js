@@ -9,6 +9,7 @@ import IconArrowLeft from 'mcs-lite-icon/lib/IconArrowLeft';
 import IconFold from 'mcs-lite-icon/lib/IconFold';
 import { Link } from 'react-router';
 import StyledLink from '../../components/StyledLink';
+import WebSocketNotification from '../../components/WebSocketNotification';
 import { Container, StyledImg, CardWrapper, CardHeaderIcon } from './styled-components';
 import updatePathname from '../../utils/updatePathname';
 import dataChannelTypeMapper from '../../utils/dataChannelTypeMapper';
@@ -32,6 +33,8 @@ class DeviceDetail extends React.Component {
 
     // WebSocket
     sendMessage: PropTypes.func.isRequired,
+    reconnect: PropTypes.func.isRequired,
+    isWebSocketClose: PropTypes.bool.isRequired,
   }
   state = { isMenuShow: false, target: undefined };
   componentWillMount = () => this.fetch();
@@ -57,7 +60,10 @@ class DeviceDetail extends React.Component {
   }
   render() {
     const { isMenuShow, target } = this.state;
-    const { deviceId, device, isLoading, getMessages: t } = this.props;
+    const {
+      deviceId, device, isLoading, getMessages: t, isWebSocketClose,
+      reconnect,
+    } = this.props;
     const { getTarget, onMoreDetailClick, onHide, fetch, eventHandler } = this;
     return (
       <div>
@@ -102,6 +108,8 @@ class DeviceDetail extends React.Component {
         />
 
         <main>
+          {isWebSocketClose && <WebSocketNotification onClick={reconnect} />}
+
           <PullToRefresh isLoading={isLoading} onPull={fetch}>
             <div>
               <StyledImg src="https://img.mediatek.com/600/mtk.linkit/productBanner.png" />

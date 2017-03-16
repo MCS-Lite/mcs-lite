@@ -76,7 +76,7 @@
 |-------------|-----------------|-------------|---------------|
 | `babel-preset-mcs-lite` | Babel preset used by MCS Lite | [![npm][babel-preset-mcs-lite-npm-badge]][babel-preset-mcs-lite-npm] | [![npm downloads][babel-preset-mcs-lite-npm-downloads]][babel-preset-mcs-lite-npm]
 | `eslint-config-mcs-lite` | Eslint config used by MCS Lite | [![npm][eslint-config-mcs-lite-npm-badge]][eslint-config-mcs-lite-npm] | [![npm downloads][eslint-config-mcs-lite-npm-downloads]][eslint-config-mcs-lite-npm]
-| `mcs-lite-connect` | Connect MCS with WebSocket | [![npm][mcs-lite-connect-npm-badge]][mcs-lite-connect-npm] | [![npm downloads][mcs-lite-connect-npm-downloads]][mcs-lite-connect-npm]
+| [`mcs-lite-connect`](./packages/mcs-lite-connect) | Connect MCS with WebSocket | [![npm][mcs-lite-connect-npm-badge]][mcs-lite-connect-npm] | [![npm downloads][mcs-lite-connect-npm-downloads]][mcs-lite-connect-npm]
 | `mcs-lite-demo-nextjs` | Demo how to use mcs-lite-ui. | | |
 | `mcs-lite-design` | The source images to be compressed used by MCS Lite | [![npm][mcs-lite-design-npm-badge]][mcs-lite-design-npm] | [![npm downloads][mcs-lite-design-npm-downloads]][mcs-lite-design-npm]
 | `mcs-lite-icon` | Convert SVG icon to React components | [![npm][mcs-lite-icon-npm-badge]][mcs-lite-icon-npm] | [![npm downloads][mcs-lite-icon-npm-downloads]][mcs-lite-icon-npm]

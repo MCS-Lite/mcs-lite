@@ -3,6 +3,7 @@ import R from 'ramda';
 import { shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
 import DeviceDataChannelDetail from '../DeviceDataChannelDetail';
+import WebSocketNotification from '../../../components/WebSocketNotification';
 
 it('should renders <DeviceDataChannelDetail> correctly without data', () => {
   const fetchDeviceMock = jest.fn();
@@ -26,12 +27,46 @@ it('should renders <DeviceDataChannelDetail> correctly without data', () => {
       fetchDatapoints={fetchDatapointsMock}
       sendMessage={() => {}}
       setDatapoint={() => {}}
+      reconnect={() => {}}
+      isWebSocketClose={false}
     />,
   );
 
   expect(toJson(wrapper)).toMatchSnapshot();
   expect(fetchDeviceMock).toHaveBeenCalledWith('deviceId');
   expect(fetchDatapointsMock).toHaveBeenCalledWith('deviceId', 'dataChannelId');
+});
+
+it('should renders <DeviceDataChannelDetail> correctly with Notification', () => {
+  const fetchDeviceMock = jest.fn();
+  const fetchDatapointsMock = jest.fn();
+  const wrapper = shallow(
+    <DeviceDataChannelDetail
+      getMessages={R.identity}
+      deviceId="deviceId"
+      dataChannelId="dataChannelId"
+      device={{
+        deviceId: 'deviceId',
+        deviceName: 'deviceName',
+        createUserId: 'createUserId',
+        deviceDescription: 'deviceDescription',
+        deviceKey: 'deviceKey',
+      }}
+      data={[]}
+      setQuery={() => {}}
+      isLoading={false}
+      fetchDeviceDetail={fetchDeviceMock}
+      fetchDatapoints={fetchDatapointsMock}
+      sendMessage={() => {}}
+      setDatapoint={() => {}}
+      reconnect={() => {}}
+      isWebSocketClose
+    />,
+  );
+
+  expect(
+    toJson(wrapper.find(WebSocketNotification)),
+  ).toMatchSnapshot();
 });
 
 it('should handle onResetClick correctly', () => {
@@ -56,6 +91,8 @@ it('should handle onResetClick correctly', () => {
       fetchDatapoints={fetchDatapointsMock}
       sendMessage={() => {}}
       setDatapoint={() => {}}
+      reconnect={() => {}}
+      isWebSocketClose={false}
     />,
   );
 
@@ -89,6 +126,8 @@ it('should handle eventHandler correctly', () => {
       fetchDatapoints={() => {}}
       sendMessage={sendMessageMock}
       setDatapoint={setDatapointMock}
+      reconnect={() => {}}
+      isWebSocketClose={false}
     />,
   );
 
@@ -115,4 +154,38 @@ it('should handle eventHandler correctly', () => {
     'deviceId',
     { datachannelId: 'id', values: { value: 1 }},
   );
+});
+
+it('should handle reconnect', () => {
+  const mockReconnect = jest.fn();
+  const wrapper = shallow(
+    <DeviceDataChannelDetail
+      getMessages={R.identity}
+      deviceId="deviceId"
+      dataChannelId="dataChannelId"
+      device={{
+        deviceId: 'deviceId',
+        deviceName: 'deviceName',
+        createUserId: 'createUserId',
+        deviceDescription: 'deviceDescription',
+        deviceKey: 'deviceKey',
+      }}
+      data={[]}
+      setQuery={() => {}}
+      isLoading={false}
+      fetchDeviceDetail={() => {}}
+      fetchDatapoints={() => {}}
+      sendMessage={() => {}}
+      setDatapoint={() => {}}
+      reconnect={mockReconnect}
+      isWebSocketClose
+    />,
+  );
+
+  // Before eventHandler with submit type
+  expect(mockReconnect).not.toHaveBeenCalled();
+
+  // After eventHandler with submit type
+  wrapper.find(WebSocketNotification).props().onClick();
+  expect(mockReconnect).toHaveBeenCalled();
 });
