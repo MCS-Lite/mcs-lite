@@ -1,5 +1,78 @@
 # MCS Lite changelogs
 
+## Released (2017-03-16)
+
+#### :rocket: New Feature
+* `mcs-lite-connect`, `mcs-lite-mobile-web`
+  * [#234](https://github.com/evenchange4/mcs-lite/pull/234) feat(mcs-lite-connect): add isWebSocketClose feature [BREAKING]. ([@evenchange4](https://github.com/evenchange4))
+* `mcs-lite-ui`
+  * [#235](https://github.com/evenchange4/mcs-lite/pull/235) feat(Notification): add new component & Update Toast style. ([@evenchange4](https://github.com/evenchange4))
+  * [#232](https://github.com/evenchange4/mcs-lite/pull/232) feat(Code): add new component. ([@evenchange4](https://github.com/evenchange4))
+  * [#230](https://github.com/evenchange4/mcs-lite/pull/230) feat(TabItem): add new component. ([@evenchange4](https://github.com/evenchange4))
+  * [#229](https://github.com/evenchange4/mcs-lite/pull/229) feat(CopyButton): add new component. ([@evenchange4](https://github.com/evenchange4))
+* `mcs-lite-mobile-web`, `mcs-lite-scripts`, `react-intl-cra`
+  * [#220](https://github.com/evenchange4/mcs-lite/pull/220) feat(react-intl-cra): output with filepath & update README. ([@evenchange4](https://github.com/evenchange4))
+* `mcs-lite-scripts`, `mcs-lite-ui`
+  * [#228](https://github.com/evenchange4/mcs-lite/pull/228) feat(mcs-lite-icon): support for react-svg-morph [BREAKING]. ([@evenchange4](https://github.com/evenchange4))
+* `mcs-lite-mobile-web`, `mcs-lite-theme`, `mcs-lite-ui`
+  * [#224](https://github.com/evenchange4/mcs-lite/pull/224) feat(Button): add new square / round / size props. ([@evenchange4](https://github.com/evenchange4))
+
+#### :boom: Breaking Change
+* `mcs-lite-connect`, `mcs-lite-mobile-web`
+  * [#234](https://github.com/evenchange4/mcs-lite/pull/234) feat(mcs-lite-connect): add isWebSocketClose feature [BREAKING]. ([@evenchange4](https://github.com/evenchange4))
+  
+  Replace the third argument of `connectSocket` with `propsMapper: Function`.
+
+  ```diff
+  -    'sendMessage', // propsName
+  +    ({ readyState, send, createWebSocket }) => ({
+  +      sendMessage: send,
+  +      isWebSocketClose: readyState.sender === 3 || readyState.viewer === 3,
+  +      reconnect: createWebSocket,
+  +    }),
+  ```
+  
+* `mcs-lite-scripts`, `mcs-lite-ui`
+  * [#228](https://github.com/evenchange4/mcs-lite/pull/228) feat(mcs-lite-icon): support for react-svg-morph [BREAKING]. ([@evenchange4](https://github.com/evenchange4))
+  
+  Switch `functional` to `class` component 
+  
+* `mcs-lite-mobile-web`, `mcs-lite-theme`, `mcs-lite-ui`
+  * [#224](https://github.com/evenchange4/mcs-lite/pull/224) feat(Button): add new square / round / size props. ([@evenchange4](https://github.com/evenchange4))
+
+  ```diff
+  - min-height: ${props => props.theme.base.inputHeight};
+  + min-height: ${props => props.theme.height.normal};
+  ```
+
+#### :bug: Bug Fix
+* `mcs-lite-ui`
+  * [#227](https://github.com/evenchange4/mcs-lite/pull/227) fix(DataChannelCard): support for empty string. ([@evenchange4](https://github.com/evenchange4))
+* `mcs-lite-mobile-web`, `mcs-lite-ui`
+  * [#223](https://github.com/evenchange4/mcs-lite/pull/223) fix(localTimeFormat): switch to date-fns. ([@evenchange4](https://github.com/evenchange4))
+* `mcs-lite-mobile-web`
+  * [#221](https://github.com/evenchange4/mcs-lite/pull/221) feat(date-fp): fix timezone problem. ([@evenchange4](https://github.com/evenchange4))
+
+#### :memo: Documentation
+* `mcs-lite-mobile-web`, `mcs-lite-scripts`, `react-intl-cra`
+  * [#220](https://github.com/evenchange4/mcs-lite/pull/220) feat(react-intl-cra): output with filepath & update README. ([@evenchange4](https://github.com/evenchange4))
+
+#### :house: Internal
+* `mcs-lite-design`
+  * [#233](https://github.com/evenchange4/mcs-lite/pull/233) chore(mcs-lite-design): update 1024 image & add 128 size.. ([@abby1002](https://github.com/abby1002))
+* `babel-preset-mcs-lite`, `mcs-lite-mobile-web`
+  * [#231](https://github.com/evenchange4/mcs-lite/pull/231) chore(ncu): upgrade. ([@evenchange4](https://github.com/evenchange4))
+* Other
+  * [#225](https://github.com/evenchange4/mcs-lite/pull/225) Update codecov to the latest version 🚀. ([@greenkeeper[bot]](https://github.com/integration/greenkeeper))
+  * [#226](https://github.com/evenchange4/mcs-lite/pull/226) feat(Danger.js): Warn if there is no labels. ([@greenkeeper[bot]](https://github.com/integration/greenkeeper))
+
+#### Committers: 3
+- Abby Chiu ([abby1002](https://github.com/abby1002))
+- Michael Hsu ([evenchange4](https://github.com/evenchange4))
+- [greenkeeper[bot]](https://github.com/integration/greenkeeper)
+
+----
+
 ## Released (2017-03-13)
 
 ### Bump Versions
