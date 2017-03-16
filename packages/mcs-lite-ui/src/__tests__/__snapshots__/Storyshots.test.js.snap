@@ -5026,6 +5026,31 @@ exports[`Storyshots MobileHeader With right props 1`] = `
 </header>
 `;
 
+exports[`Storyshots Notification API 1`] = `
+<div
+  className="dlOzxm"
+>
+  Do you want to go to Enalish version website?
+</div>
+`;
+
+exports[`Storyshots Notification With feedbck Button component 1`] = `
+<div
+  className="dlOzxm"
+>
+  <p
+    className="gVViGF"
+  >
+    Do you want to go to Enalish version website?
+  </p>
+  <button
+    className="eCTWnK"
+  >
+    Yes, please
+  </button>
+</div>
+`;
+
 exports[`Storyshots Overlay API 1`] = `
 <div>
   <a
@@ -5763,11 +5788,11 @@ exports[`Storyshots Textarea With kind props 1`] = `
 
 exports[`Storyshots Toast API 1`] = `
 <div
-  className="bvtktA"
+  className="dQOjMh"
   kind="primary"
 >
   <p
-    className="jqoaId"
+    className="fHBKUb"
     kind="primary"
   >
     Success! You have delete the item.
@@ -5780,11 +5805,11 @@ exports[`Storyshots Toast With kind props 1`] = `
   className="iQMpYt"
 >
   <div
-    className="eqmIuR"
+    className="eqBZby"
     kind="default"
   >
     <div
-      className="cwldVm"
+      className="iMedLA"
       kind="default"
     >
       default
@@ -5792,11 +5817,11 @@ exports[`Storyshots Toast With kind props 1`] = `
     </div>
   </div>
   <div
-    className="bvtktA"
+    className="dQOjMh"
     kind="primary"
   >
     <div
-      className="jqoaId"
+      className="fHBKUb"
       kind="primary"
     >
       primary
@@ -5804,11 +5829,11 @@ exports[`Storyshots Toast With kind props 1`] = `
     </div>
   </div>
   <div
-    className="kEYedK"
+    className="kthfKY"
     kind="success"
   >
     <div
-      className="hKLoOD"
+      className="hrzuIZ"
       kind="success"
     >
       success
@@ -5816,11 +5841,11 @@ exports[`Storyshots Toast With kind props 1`] = `
     </div>
   </div>
   <div
-    className="eenCjv"
+    className="iyHHcL"
     kind="error"
   >
     <div
-      className="gMtsLM"
+      className="lmbbRX"
       kind="error"
     >
       error
@@ -5828,11 +5853,11 @@ exports[`Storyshots Toast With kind props 1`] = `
     </div>
   </div>
   <div
-    className="fjzXVx"
+    className="vIYLY"
     kind="warning"
   >
     <div
-      className="cZlcZb"
+      className="bOyboK"
       kind="warning"
     >
       warning
