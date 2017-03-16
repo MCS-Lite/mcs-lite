@@ -9,22 +9,28 @@ storiesOf('Code', module)
     () =>
       <Code>
         {
-`const woah = fun => fun + 1;
-const dude = woah(2) + 3;
-function thisIsAFunction() {
-  return [1,2,3].map(n => n + 1).filter(n !== 3);
-}
-console.log('making up fake code is really hard');
-function itIs() {
-  return 'no seriously really it is';
-}`
+`var data = {
+  datapoints:
+    [{dataChnId: "Map", values: {latitude: 12, longitude: 13, altitude: 14}}]
+};
+
+$.ajax({
+  type: "POST",
+  url: "https://api.mediatek.com/mcs/v2/devices/DzdpHYIZ/datapoints",
+  headers: { deviceKey: "Cio34Lj7Na5RmQXj" },
+  contentType: "application/json",
+  data: JSON.stringify(data)
+})
+.done(function(data){
+  // your content
+})`
         }
       </Code>,
     { inline: true },
   )
   .addWithInfo(
-    'arduino',
-    '',
+    'With language props',
+    '["javascript", "cpp", "arduino"]',
     () =>
       <Code language="arduino">
         {
@@ -52,33 +58,4 @@ content.println(dataLength);`
         }
       </Code>,
     { inline: true },
-  )
-  .addWithInfo(
-    'Markdown',
-    '',
-    () =>
-      <Code language="markdown">
-        {
-`### Title
-[123](https://mcs.mediatek.com)
-`}
-      </Code>,
-    { inline: true },
-  )
-
-//   .addWithInfo(
-//     'http',
-//     '',
-//     () =>
-//       <Code language="http">
-//         {
-// `POST /mcs/v2/devices/DzdpHYIZ/datapoints.csv HTTP/1.1
-// Host: api.mediatek.com
-// deviceKey: Cio34Lj7Na5RmQXj
-// Cache-Control: no-cache
-// Content-Length: 'Input your command length'
-//
-// 123123,,1`}
-//       </Code>,
-//     { inline: true },
-//   );
+  );
