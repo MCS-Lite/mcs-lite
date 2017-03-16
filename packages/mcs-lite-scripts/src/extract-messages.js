@@ -12,10 +12,16 @@ const desPath = process.argv[3];
 
 process.env.NODE_ENV = 'production'; // for babel
 
-// --- /src/a.js --- /src/b.js --- ...
-const srcPath$ = Rx.Observable
-  .from([srcPattern])
+// -- ./src/**/*.js |
+const srcPattern$ = Rx.Observable.of(srcPattern);
+
+// --- /Users/project/src/a.js --- /Users/project/src/b.js --- ...
+const srcPath$ = srcPattern$
   .switchMap(pattern => Rx.Observable.from(glob.sync(pattern, { absolute: true })));
+
+// --- ./src/a.js --- ./src/b.js --- ...
+const relativeSrcPath$ = srcPattern$
+  .switchMap(pattern => Rx.Observable.from(glob.sync(pattern)));
 
 // --- contentA --- contentB --- ...
 const content$ = srcPath$
@@ -31,7 +37,11 @@ const messages$ = content$
   .map(R.path(['metadata', 'react-intl', 'messages']));
 
 // ---------- JSON:[{}, {}] |
+
 const results$ = messages$
+  .zip(relativeSrcPath$, (messages, relativeSrcPath) =>
+    messages.map(R.assoc('filepath', relativeSrcPath)),
+  )
   .filter(messages => messages.length !== 0)
   .reduce((acc, messages) => acc.concat(messages), [])
   .map(concated => JSON.stringify(concated, null, 2));
