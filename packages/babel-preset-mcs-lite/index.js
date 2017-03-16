@@ -10,8 +10,12 @@ module.exports = {
     [
       require.resolve('babel-plugin-styled-components'),
       {
-        ssr: false,
+        // TODO: withConfig problem
         displayName: false,
+
+        // only necessary if you're server-side renderin
+        ssr: false,
+        minify: false,
         transpileTemplateLiterals: false,
       },
     ],
