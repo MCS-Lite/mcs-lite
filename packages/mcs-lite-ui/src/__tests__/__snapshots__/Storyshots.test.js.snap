@@ -5028,7 +5028,7 @@ exports[`Storyshots MobileHeader With right props 1`] = `
 
 exports[`Storyshots Notification API 1`] = `
 <div
-  className="jfQXvf"
+  className="dlOzxm"
 >
   Do you want to go to Enalish version website?
 </div>
@@ -5036,7 +5036,7 @@ exports[`Storyshots Notification API 1`] = `
 
 exports[`Storyshots Notification With feedbck Button component 1`] = `
 <div
-  className="jfQXvf"
+  className="dlOzxm"
 >
   <p
     className="gVViGF"

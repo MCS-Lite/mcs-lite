@@ -13,6 +13,7 @@ const Notification = styled.div`
   padding: 10px 20px;
   background-color: ${props => lighten(props.theme.color.black)};
   color: ${props => props.theme.color.white};
+  font-size: ${props => props.theme.fontSize.p};
 
   > *:nth-child(2) {
     margin-left: 8px;
