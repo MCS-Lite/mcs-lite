@@ -3333,11 +3333,6 @@ exports[`Storyshots DatetimePicker API 1`] = `
     onPan={[Function]}
     onPanEnd={[Function]}
     onPanStart={[Function]}
-    options={
-      Object {
-        "touchAction": "pan-x pan-y",
-      }
-    }
   >
     <div
       className="bVXAeq"
@@ -3364,11 +3359,6 @@ exports[`Storyshots DatetimePicker API 1`] = `
     onPan={[Function]}
     onPanEnd={[Function]}
     onPanStart={[Function]}
-    options={
-      Object {
-        "touchAction": "pan-x pan-y",
-      }
-    }
   >
     <div
       className="bVXAeq"
@@ -3445,11 +3435,6 @@ exports[`Storyshots DatetimePicker API 1`] = `
     onPan={[Function]}
     onPanEnd={[Function]}
     onPanStart={[Function]}
-    options={
-      Object {
-        "touchAction": "pan-x pan-y",
-      }
-    }
   >
     <div
       className="bVXAeq"
@@ -3611,11 +3596,6 @@ exports[`Storyshots DatetimePicker API 1`] = `
     onPan={[Function]}
     onPanEnd={[Function]}
     onPanStart={[Function]}
-    options={
-      Object {
-        "touchAction": "pan-x pan-y",
-      }
-    }
   >
     <div
       className="bVXAeq"
@@ -3752,11 +3732,6 @@ exports[`Storyshots DatetimePicker API 1`] = `
     onPan={[Function]}
     onPanEnd={[Function]}
     onPanStart={[Function]}
-    options={
-      Object {
-        "touchAction": "pan-x pan-y",
-      }
-    }
   >
     <div
       className="bVXAeq"
@@ -5199,11 +5174,6 @@ exports[`Storyshots Picker API 1`] = `
     onPan={[Function]}
     onPanEnd={[Function]}
     onPanStart={[Function]}
-    options={
-      Object {
-        "touchAction": "pan-x pan-y",
-      }
-    }
   >
     <div
       className="bVXAeq"
@@ -5240,11 +5210,6 @@ exports[`Storyshots Picker API 1`] = `
     onPan={[Function]}
     onPanEnd={[Function]}
     onPanStart={[Function]}
-    options={
-      Object {
-        "touchAction": "pan-x pan-y",
-      }
-    }
   >
     <div
       className="bVXAeq"
@@ -5325,11 +5290,6 @@ exports[`Storyshots PullToRefresh API 1`] = `
     onPan={[Function]}
     onPanEnd={[Function]}
     onPanStart={[Function]}
-    options={
-      Object {
-        "touchAction": "pan-x pan-y",
-      }
-    }
   >
     <div
       className="hRcCPT"
