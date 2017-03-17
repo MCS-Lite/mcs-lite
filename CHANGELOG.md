@@ -1,5 +1,21 @@
 # MCS Lite changelogs
 
+## Released (2017-03-17)
+
+### Bump Versions
+
+-   mcs-lite-mobile-web@0.2.2
+
+#### :bug: Bug Fix
+* `mcs-lite-mobile-web`
+  * [#238](https://github.com/evenchange4/mcs-lite/pull/238) fix(DeviceDetail): Pull-to-referesh not working & update Device banner image url. ([@evenchange4](https://github.com/evenchange4))
+  * [#237](https://github.com/evenchange4/mcs-lite/pull/237) feat(cyclejs): update rxjs-run to 7 (optimize bundle size) [#179]. ([@evenchange4](https://github.com/evenchange4))
+
+#### Committers: 1
+- Michael Hsu ([evenchange4](https://github.com/evenchange4))
+
+----
+
 ## Released (2017-03-16)
 
 ### Bump Versions
