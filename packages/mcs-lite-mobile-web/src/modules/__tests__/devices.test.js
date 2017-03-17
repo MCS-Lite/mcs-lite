@@ -17,7 +17,7 @@ describe('devices - 2. Action Creators', () => {
   });
 
   it('should return fetchDeviceDetail actions', () => {
-    expect(actions.fetchDeviceDetail('deviceId')).toMatchSnapshot();
+    expect(actions.fetchDeviceDetail('deviceId', true)).toMatchSnapshot();
   });
 
   it('should return setDeviceList actions', () => {
