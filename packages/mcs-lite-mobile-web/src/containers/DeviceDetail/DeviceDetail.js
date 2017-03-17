@@ -100,9 +100,12 @@ class DeviceDetail extends React.Component {
                   <StyledLink to={updatePathname(`/devices/${deviceId}/info`)}>
                     <Menu.MenuItem>{t('deviceIntro')}</Menu.MenuItem>
                   </StyledLink>
+
+                  {/* TODO: Hide trigger feature at Phase 1
                   <StyledLink to={updatePathname(`/devices/${deviceId}/trigger`)}>
                     <Menu.MenuItem>{t('triggerAndAction')}</Menu.MenuItem>
                   </StyledLink>
+                  */}
                 </Menu.Menu>
               </Overlay>
             ),
