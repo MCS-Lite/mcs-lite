@@ -150,7 +150,7 @@ exports[`test should renders <DeviceList> correctly with one device 1`] = `
             <Styled(Link)
               to={[Function]}>
               <MobileDeviceCard
-                image="deviceImageURL"
+                image="/images/deviceImageURL"
                 title="deviceName" />
             </Styled(Link)>
           </Transition>

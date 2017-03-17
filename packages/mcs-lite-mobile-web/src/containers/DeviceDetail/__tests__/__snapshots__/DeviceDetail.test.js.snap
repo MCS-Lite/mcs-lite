@@ -32,7 +32,7 @@ exports[`test should renders <DeviceDetail> correctly 1`] = `
       <div>
         <styled.div
           size="cover"
-          src="https://img.mediatek.com/600/mtk.linkit/productBanner.png" />
+          src="banner.svg" />
         <styled.div>
           <styled.div />
         </styled.div>
@@ -113,7 +113,7 @@ exports[`test should renders <DeviceDetail> correctly when Menu show 1`] = `
       <div>
         <styled.div
           size="cover"
-          src="https://img.mediatek.com/600/mtk.linkit/productBanner.png" />
+          src="banner.svg" />
         <styled.div>
           <styled.div />
         </styled.div>

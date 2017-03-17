@@ -15,6 +15,8 @@ import {
 } from './styled-components';
 import StyledLink from '../../components/StyledLink';
 import updatePathname from '../../utils/updatePathname';
+import resolveImage from '../../utils/resolveImage';
+import BANNER_IMAGE from '../../statics/images/banner.svg';
 
 class DeviceList extends React.Component {
   static propTypes = {
@@ -100,7 +102,7 @@ class DeviceList extends React.Component {
                       <StyledLink key={device.deviceId} to={updatePathname(`/devices/${device.deviceId}`)}>
                         <MobileDeviceCard
                           title={device.deviceName}
-                          image={device.deviceImageURL || 'https://img.mediatek.com/600/mtk.linkit/productBanner.png'}
+                          image={resolveImage(BANNER_IMAGE, device.deviceImageURL)}
                         />
                       </StyledLink>
                     ))
