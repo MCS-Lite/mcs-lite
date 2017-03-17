@@ -163,10 +163,31 @@ it('should handle reconnect', () => {
     />,
   );
 
-  // Before eventHandler with submit type
+  // Before reconnect
   expect(mockReconnect).not.toHaveBeenCalled();
 
-  // After eventHandler with submit type
+  // After reconnect
   wrapper.find(WebSocketNotification).props().onClick();
   expect(mockReconnect).toHaveBeenCalled();
+});
+
+it('should handle reFetch', () => {
+  const mockFetchDeviceDetail = jest.fn();
+  const wrapper = shallow(
+    <DeviceDetail
+      getMessages={R.identity}
+      deviceId="deviceId"
+      device={{}}
+      isLoading={false}
+      fetchDeviceDetail={mockFetchDeviceDetail}
+      sendMessage={() => {}}
+      setDatapoint={() => {}}
+      reconnect={() => {}}
+      isWebSocketClose
+    />,
+  );
+
+  // After eventHandler with submit type
+  wrapper.instance().reFetch();
+  expect(mockFetchDeviceDetail).toHaveBeenCalledWith('deviceId', true);
 });

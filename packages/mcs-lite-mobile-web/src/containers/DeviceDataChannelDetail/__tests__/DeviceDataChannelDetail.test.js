@@ -182,10 +182,10 @@ it('should handle reconnect', () => {
     />,
   );
 
-  // Before eventHandler with submit type
+  // Before reconnect
   expect(mockReconnect).not.toHaveBeenCalled();
 
-  // After eventHandler with submit type
+  // After reconnect
   wrapper.find(WebSocketNotification).props().onClick();
   expect(mockReconnect).toHaveBeenCalled();
 });

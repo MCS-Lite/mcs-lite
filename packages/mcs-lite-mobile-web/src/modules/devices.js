@@ -27,7 +27,8 @@ export const constants = {
 // ----------------------------------------------------------------------------
 
 const fetchDeviceList = () => ({ type: FETCH_DEVICE_LIST });
-const fetchDeviceDetail = deviceId => ({ type: FETCH_DEVICE_DETAIL, payload: deviceId });
+const fetchDeviceDetail = (deviceId, isForce) =>
+  ({ type: FETCH_DEVICE_DETAIL, payload: { deviceId, isForce }});
 const setDeviceList = payload => ({ type: SET_DEVICE_LIST, payload });
 const setDeviceDetail = payload => ({ type: SET_DEVICE_DETAIL, payload });
 const setDatapoint = (deviceId, datapoint, isFromServer) =>
@@ -84,13 +85,19 @@ function fetchDeviceDetailCycle(sources) {
     .pluck('auth', 'access_token')
     .filter(R.complement(R.isNil)); // Hint: will wait for accessToken avaliable.
 
-  const deviceId$ = sources.ACTION
+  const payload$ = sources.ACTION
     .filter(action => action.type === FETCH_DEVICE_DETAIL)
     .pluck('payload');
+  const deviceId$ = payload$.pluck('deviceId');
+  const isForce$ = payload$
+    .pluck('isForce')
+    .filter(R.complement(R.isNil))
+    .startWith(true);
 
   const request$ = Observable.combineLatest(
     deviceId$.distinctUntilChanged(),
     accessToken$.distinctUntilChanged(),
+    isForce$,
     (deviceId, accessToken) => ({
       url: `/api/devices/${deviceId}`,
       method: 'GET',

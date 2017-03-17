@@ -1,19 +1,21 @@
 import React, { PropTypes } from 'react';
 import Helmet from 'react-helmet';
-import {
-  PullToRefresh, Overlay, Menu, DataChannelCard, DataChannelAdapter,
-  MobileHeader,
-} from 'mcs-lite-ui';
 import IconMoreVert from 'mcs-lite-icon/lib/IconMoreVert';
 import IconArrowLeft from 'mcs-lite-icon/lib/IconArrowLeft';
 import IconFold from 'mcs-lite-icon/lib/IconFold';
 import { Link } from 'react-router';
+import {
+  PullToRefresh, Overlay, Menu, DataChannelCard, DataChannelAdapter,
+  MobileHeader,
+} from 'mcs-lite-ui';
+import { Container, StyledImg, CardWrapper, CardHeaderIcon } from './styled-components';
 import StyledLink from '../../components/StyledLink';
 import WebSocketNotification from '../../components/WebSocketNotification';
-import { Container, StyledImg, CardWrapper, CardHeaderIcon } from './styled-components';
 import updatePathname from '../../utils/updatePathname';
 import dataChannelTypeMapper from '../../utils/dataChannelTypeMapper';
 import localTimeFormat from '../../utils/localTimeFormat';
+import resolveImage from '../../utils/resolveImage';
+import BANNER_IMAGE from '../../statics/images/banner.svg';
 
 class DeviceDetail extends React.Component {
   static propTypes = {
@@ -37,11 +39,11 @@ class DeviceDetail extends React.Component {
     isWebSocketClose: PropTypes.bool.isRequired,
   }
   state = { isMenuShow: false, target: undefined };
-  componentWillMount = () => this.fetch();
+  componentWillMount = () => this.props.fetchDeviceDetail(this.props.deviceId);
   onMoreDetailClick = () => this.setState({ isMenuShow: !this.state.isMenuShow });
   onHide = () => this.setState({ isMenuShow: false });
   getTarget = node => this.setState({ target: node });
-  fetch = () => this.props.fetchDeviceDetail(this.props.deviceId);
+  reFetch = () => this.props.fetchDeviceDetail(this.props.deviceId, true);
   eventHandler = (e) => {
     const { id, values, type } = e;
     const { deviceId, sendMessage, setDatapoint } = this.props;
@@ -64,7 +66,7 @@ class DeviceDetail extends React.Component {
       deviceId, device, isLoading, getMessages: t, isWebSocketClose,
       reconnect,
     } = this.props;
-    const { getTarget, onMoreDetailClick, onHide, fetch, eventHandler } = this;
+    const { getTarget, onMoreDetailClick, onHide, reFetch, eventHandler } = this;
     return (
       <div>
         <Helmet title={device.deviceName} />
@@ -110,9 +112,9 @@ class DeviceDetail extends React.Component {
         <main>
           {isWebSocketClose && <WebSocketNotification onClick={reconnect} />}
 
-          <PullToRefresh isLoading={isLoading} onPull={fetch}>
+          <PullToRefresh isLoading={isLoading} onPull={reFetch}>
             <div>
-              <StyledImg src="https://img.mediatek.com/600/mtk.linkit/productBanner.png" />
+              <StyledImg src={resolveImage(BANNER_IMAGE, device.deviceImageURL)} />
 
               <Container>
                 <CardWrapper>

@@ -17,7 +17,10 @@ Object {
 
 exports[`devices - 2. Action Creators should return fetchDeviceDetail actions 1`] = `
 Object {
-  "payload": "deviceId",
+  "payload": Object {
+    "deviceId": "deviceId",
+    "isForce": true,
+  },
   "type": "mcs-lite-mobile-web/devices/FETCH_DEVICE_DETAIL",
 }
 `;
