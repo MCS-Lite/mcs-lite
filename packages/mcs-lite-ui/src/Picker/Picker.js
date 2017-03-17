@@ -109,7 +109,6 @@ class Picker extends React.Component {
         onPanStart={this.onPanVerticalStart}
         onPanEnd={this.onPanVerticalEnd}
         direction="DIRECTION_VERTICAL"
-        options={{ touchAction: 'pan-x pan-y' }}
       >
         <ItemWrapper style={{ marginTop: distance }}>
           {

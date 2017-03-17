@@ -96,9 +96,6 @@ class PullToRefresh extends React.Component {
         onPanStart={this.onPanDownStart}
         onPanEnd={this.onPanDownEnd}
         direction="DIRECTION_DOWN"
-        options={{
-          touchAction: 'pan-x pan-y',
-        }}
       >
         <PullWrapper
           {...otherProps}
