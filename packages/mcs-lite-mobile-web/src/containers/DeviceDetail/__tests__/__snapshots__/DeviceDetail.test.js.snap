@@ -94,12 +94,6 @@ exports[`test should renders <DeviceDetail> correctly when Menu show 1`] = `
                       deviceIntro
                   </MenuItem>
               </Styled(Link)>
-              <Styled(Link)
-                  to={[Function]}>
-                  <MenuItem>
-                      triggerAndAction
-                  </MenuItem>
-              </Styled(Link)>
           </Menu>
       </Overlay>,
       ]
