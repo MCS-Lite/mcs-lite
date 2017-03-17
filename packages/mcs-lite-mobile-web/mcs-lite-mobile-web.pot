@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"POT-Creation-Date: 2017-03-16T10:02:16.879Z\n"
+"POT-Creation-Date: 2017-03-17T06:54:19.440Z\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "MIME-Version: 1.0\n"
@@ -33,6 +33,13 @@ msgstr ""
 #. defaultMessage is:
 #. 之間
 msgid "之間"
+msgstr ""
+
+#: ./messages.json
+#. [WebSocketNotification.info] - Error message
+#. defaultMessage is:
+#. 伺服器連線異常，目前無法即時上傳與接收資料，是否要重新連線？
+msgid "伺服器連線異常，目前無法即時上傳與接收資料，是否要重新連線？"
 msgstr ""
 
 #: ./messages.json
@@ -263,13 +270,6 @@ msgstr ""
 #. defaultMessage is:
 #. 登出
 msgid "登出"
-msgstr ""
-
-#: ./messages.json
-#. [WebSocketNotification.info] - Error message
-#. defaultMessage is:
-#. 目前網路連線斷線，請問要重新連線嗎？
-msgid "目前網路連線斷線，請問要重新連線嗎？"
 msgstr ""
 
 #: ./messages.json
