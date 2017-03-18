@@ -4504,7 +4504,7 @@ exports[`Storyshots InputGroup API 1`] = `
   className="gQrROo"
 >
   <div
-    className="jaAZmb"
+    className="gzynLw"
   >
     <button
       className="bTzrRC"
@@ -4518,21 +4518,7 @@ exports[`Storyshots InputGroup API 1`] = `
     </button>
   </div>
   <div
-    className="jaAZmb"
-  >
-    <button
-      className="bsRShF"
-    >
-      Button 1
-    </button>
-    <button
-      className="dCcnPE"
-    >
-      Button 2
-    </button>
-  </div>
-  <div
-    className="jaAZmb"
+    className="gzynLw"
   >
     <button
       className="eCTWnK"
@@ -4542,35 +4528,16 @@ exports[`Storyshots InputGroup API 1`] = `
     <button
       className="kFQptx"
     >
-      Button 2
+      Button Two
     </button>
     <button
       className="kMrUsK"
     >
-      Button 3
+      Button Three
     </button>
   </div>
   <div
-    className="jaAZmb"
-  >
-    <button
-      className="eCTWnK"
-    >
-      Button 1
-    </button>
-    <button
-      className="dCcnPE"
-    >
-      Button 2
-    </button>
-    <button
-      className="kMrUsK"
-    >
-      Button 3
-    </button>
-  </div>
-  <div
-    className="jaAZmb"
+    className="gzynLw"
   >
     <button
       className="eCTWnK"
@@ -4584,7 +4551,7 @@ exports[`Storyshots InputGroup API 1`] = `
     />
   </div>
   <div
-    className="jaAZmb"
+    className="gzynLw"
   >
     <input
       className="jWbJOn"
@@ -4598,7 +4565,7 @@ exports[`Storyshots InputGroup API 1`] = `
     </button>
   </div>
   <div
-    className="jaAZmb"
+    className="gzynLw"
   >
     <button
       className="eCTWnK"
@@ -4617,7 +4584,7 @@ exports[`Storyshots InputGroup API 1`] = `
     </button>
   </div>
   <div
-    className="jaAZmb"
+    className="gzynLw"
   >
     <button
       className="eCTWnK"
