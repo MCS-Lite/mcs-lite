@@ -23,20 +23,9 @@ storiesOf('InputGroup', module)
         </InputGroup>
 
         <InputGroup>
-          <Button block>Button 1</Button>
-          <Button kind="default" block>Button 2</Button>
-        </InputGroup>
-
-        <InputGroup>
           <Button>Button 1</Button>
-          <Button kind="default">Button 2</Button>
-          <Button kind="warning">Button 3</Button>
-        </InputGroup>
-
-        <InputGroup>
-          <Button>Button 1</Button>
-          <Button kind="default" block>Button 2</Button>
-          <Button kind="warning">Button 3</Button>
+          <Button kind="default">Button Two</Button>
+          <Button kind="warning">Button Three</Button>
         </InputGroup>
 
         <InputGroup>

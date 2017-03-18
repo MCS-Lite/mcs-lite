@@ -2,7 +2,10 @@ import styled from 'styled-components';
 
 const InputGroup = styled.div`
   display: flex;
-  width: 100%;
+
+  > button {
+    flex-shrink: 0;
+  }
 
   /* ============================
    * First Child

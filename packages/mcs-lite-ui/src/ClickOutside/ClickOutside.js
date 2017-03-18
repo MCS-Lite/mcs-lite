@@ -18,7 +18,8 @@ class ClickOutside extends React.Component {
     document.removeEventListener('touchend', this.handleClickOutside, true);
   }
   handleClickOutside = (e) => {
-    if (findDOMNode(this).contains(e.target)) return; // Hint: Omit clicking itself.
+    const node = findDOMNode(this);
+    if (node && node.contains(e.target)) return; // Hint: Omit clicking itself.
 
     this.props.onClick(e);
   }
