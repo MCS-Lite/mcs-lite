@@ -33,7 +33,8 @@ class Overlay extends React.Component {
     },
   }
   onClickOutSide = (e) => {
-    if (findDOMNode(this.props.target).contains(e.target)) return; // Hint: Omit clicking target.
+    const node = findDOMNode(this.props.target);
+    if (node && node.contains(e.target)) return; // Hint: Omit clicking target.
 
     this.props.onClickOutSide(e);
   }

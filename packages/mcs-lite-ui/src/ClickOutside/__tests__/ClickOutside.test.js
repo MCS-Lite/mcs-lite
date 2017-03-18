@@ -4,23 +4,43 @@ import React from 'react';
 import { mount } from 'enzyme';
 import ClickOutside from '../ClickOutside';
 
-describe('ClickOutside', () => {
-  it('should add a "click" EventListener of document', () => {
-    // ref: https://github.com/airbnb/enzyme/issues/426
-    const documentEvents = {};
-    document.addEventListener = jest.fn((event, cb) => {
-      documentEvents[event] = cb;
-    });
-
-    // Before mount
-    expect(documentEvents).toEqual({});
-    mount(
-      <ClickOutside onClick={() => {}}>
-        <div className="icon-star">Children</div>
-      </ClickOutside>,
-    );
-
-    // After mount
-    expect(documentEvents).toMatchSnapshot();
+it('should add a "click" EventListener of document', () => {
+  // ref: https://github.com/airbnb/enzyme/issues/426
+  const documentEvents = {};
+  document.addEventListener = jest.fn((event, cb) => {
+    documentEvents[event] = cb;
   });
+  document.removeEventListener = jest.fn();
+
+  // Before mount
+  expect(documentEvents).toEqual({});
+  const wrapper = mount(
+    <ClickOutside onClick={() => {}}>
+      <div>Children</div>
+    </ClickOutside>,
+  );
+
+  // After mount
+  expect(documentEvents).toMatchSnapshot();
+
+  // Before Unmount
+  expect(document.removeEventListener).not.toHaveBeenCalled();
+  // After Unmount
+  wrapper.unmount();
+  expect(document.removeEventListener).toHaveBeenCalled();
+});
+
+it('should handle onClick', () => {
+  const mockOnClick = jest.fn();
+  const wrapper = mount(
+    <ClickOutside onClick={mockOnClick}>
+      <div>Children</div>
+    </ClickOutside>,
+  );
+
+  // Before clicking
+  expect(mockOnClick).not.toHaveBeenCalled();
+  // After clicking
+  wrapper.instance().handleClickOutside({});
+  expect(mockOnClick).toHaveBeenCalledWith({});
 });

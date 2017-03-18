@@ -80,8 +80,8 @@ DataPointAreaChart.defaultProps = {
     tickFormatter: R.identity,
   },
   tooltipProps: {
-    formatter: value => `datapoint: ${value}`,
-    labelFormatter: value => `time: ${value}`,
+    formatter: value => `Datapoint: ${value}`,
+    labelFormatter: value => `Time: ${value}`,
   },
 };
 
