@@ -21,7 +21,6 @@ const StyledP = styled(P)`
   display: flex;
   align-items: center;
   padding: 10px 20px;
-  height: 100%;
   color: ${mapColorByKind};
   background-color: ${props => lighten(props.theme.color[props.kind])};
 `;
