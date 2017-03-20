@@ -1,5 +1,26 @@
 # MCS Lite changelogs
 
+## Released (2017-03-20)
+
+#### :bug: Bug Fix
+* `mcs-lite-ui`
+  * [#246](https://github.com/evenchange4/mcs-lite/pull/246) fix(Toast): remove height 100%. ([@evenchange4](https://github.com/evenchange4))
+  * [#240](https://github.com/evenchange4/mcs-lite/pull/240) fix(Picker): Update Hammer for android chrome Pan problem. ([@evenchange4](https://github.com/evenchange4))
+* `mcs-lite-mobile-web`, `mcs-lite-ui`
+  * [#245](https://github.com/evenchange4/mcs-lite/pull/245) chore(ncu): fix eslint-plugin-react. ([@evenchange4](https://github.com/evenchange4))
+* `mcs-lite-mobile-web`
+  * [#239](https://github.com/evenchange4/mcs-lite/pull/239) fix(Trigger): hide entry at phase 1. ([@evenchange4](https://github.com/evenchange4))
+
+#### :nail_care: Enhancement
+* `mcs-lite-ui`
+  * [#242](https://github.com/evenchange4/mcs-lite/pull/242) test(Overlay/Pick/Dialog): add more test for mcs-lite-ui. ([@evenchange4](https://github.com/evenchange4))
+
+#### Committers: 2
+- Michael Hsu ([evenchange4](https://github.com/evenchange4))
+- [greenkeeper[bot]](https://github.com/integration/greenkeeper)
+
+----
+
 ## Released (2017-03-17)
 
 ### Bump Versions
