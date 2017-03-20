@@ -2,6 +2,21 @@
 
 ## Released (2017-03-20)
 
+#### :rocket: New Feature
+* `mcs-lite-mobile-web`
+  * [#247](https://github.com/evenchange4/mcs-lite/pull/247) feat(WebSocket PORT):  Injecting Data from the Server into the Page.. ([@evenchange4](https://github.com/evenchange4))
+
+#### :bug: Bug Fix
+* `mcs-lite-ui`
+  * [#248](https://github.com/evenchange4/mcs-lite/pull/248) fix(Menu): add min-width: 80. ([@evenchange4](https://github.com/evenchange4))
+
+#### Committers: 1
+- Michael Hsu ([evenchange4](https://github.com/evenchange4))
+
+----
+
+## Released (2017-03-20)
+
 ### Bump Versions
 
 -   mcs-lite-demo-nextjs@0.1.10
