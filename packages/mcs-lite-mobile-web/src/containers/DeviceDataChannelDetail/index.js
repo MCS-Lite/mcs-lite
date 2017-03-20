@@ -39,7 +39,7 @@ export const mapDispatchToProps = {
   setQuery: datapointsActions.setQuery,
 };
 
-const wsHost = `ws://${window.location.hostname}:${process.env.REACT_APP_SOCKET_PORT}`;
+const wsHost = `ws://${window.location.hostname}:${window.SOCKET_PORT}`;
 
 export default compose(
   connect(mapStateToProps, mapDispatchToProps),
