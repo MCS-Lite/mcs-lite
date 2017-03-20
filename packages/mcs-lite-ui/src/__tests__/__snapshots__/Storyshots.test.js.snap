@@ -5719,7 +5719,7 @@ exports[`Storyshots Toast API 1`] = `
   kind="primary"
 >
   <p
-    className="fHBKUb"
+    className="eKZHSa"
     kind="primary"
   >
     Success! You have delete the item.
@@ -5736,7 +5736,7 @@ exports[`Storyshots Toast With kind props 1`] = `
     kind="default"
   >
     <div
-      className="iMedLA"
+      className="kUlrZq"
       kind="default"
     >
       default
@@ -5748,7 +5748,7 @@ exports[`Storyshots Toast With kind props 1`] = `
     kind="primary"
   >
     <div
-      className="fHBKUb"
+      className="eKZHSa"
       kind="primary"
     >
       primary
@@ -5760,7 +5760,7 @@ exports[`Storyshots Toast With kind props 1`] = `
     kind="success"
   >
     <div
-      className="hrzuIZ"
+      className="hkcPID"
       kind="success"
     >
       success
@@ -5772,7 +5772,7 @@ exports[`Storyshots Toast With kind props 1`] = `
     kind="error"
   >
     <div
-      className="lmbbRX"
+      className="kqYxLG"
       kind="error"
     >
       error
@@ -5784,7 +5784,7 @@ exports[`Storyshots Toast With kind props 1`] = `
     kind="warning"
   >
     <div
-      className="bOyboK"
+      className="cGpqMj"
       kind="warning"
     >
       warning
