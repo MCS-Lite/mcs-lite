@@ -4,6 +4,21 @@
 
 ### Bump Versions
 
+-   mcs-lite-mobile-web@0.2.5
+
+#### :bug: Bug Fix
+* `mcs-lite-mobile-web`
+  * [#249](https://github.com/evenchange4/mcs-lite/pull/249) fix(WebSocket): use window.SOCKET_PORT. ([@evenchange4](https://github.com/evenchange4))
+
+#### Committers: 1
+- Michael Hsu ([evenchange4](https://github.com/evenchange4))
+
+----
+
+## Released (2017-03-20)
+
+### Bump Versions
+
 -   mcs-lite-demo-nextjs@0.1.11
 -   mcs-lite-mobile-web@0.2.4
 -   mcs-lite-ui@0.2.3
