@@ -132,6 +132,9 @@ $ npm start
 $ npm run test:watch
 ```
 
+### WebSocket PORT
+
+Replace `__SOCKET_PORT_FROM_SERVER__` in the `build/index.html` file. (Default to `8000`)
 
 ## NPM Scipts Interface
 
