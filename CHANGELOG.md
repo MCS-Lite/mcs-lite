@@ -2,6 +2,12 @@
 
 ## Released (2017-03-20)
 
+### Bump Versions
+
+-   mcs-lite-demo-nextjs@0.1.10
+-   mcs-lite-mobile-web@0.2.3
+-   mcs-lite-ui@0.2.2
+
 #### :bug: Bug Fix
 * `mcs-lite-ui`
   * [#246](https://github.com/evenchange4/mcs-lite/pull/246) fix(Toast): remove height 100%. ([@evenchange4](https://github.com/evenchange4))
