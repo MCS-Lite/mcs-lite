@@ -4652,7 +4652,7 @@ exports[`Storyshots InputRange With kind props 1`] = `
 
 exports[`Storyshots Menu API for Menu 1`] = `
 <div
-  className="cwnYBS"
+  className="gwdwFZ"
 >
   Children
 </div>
@@ -4660,30 +4660,30 @@ exports[`Storyshots Menu API for Menu 1`] = `
 
 exports[`Storyshots Menu API for MenuItem 1`] = `
 <div
-  className="ftUprM"
+  className="ghcScp"
 >
-  MenuItem
+  A
 </div>
 `;
 
-exports[`Storyshots Menu Combination 1`] = `
+exports[`Storyshots Menu Fixed width 1`] = `
 <div
-  className="kRUrap"
+  className="bUhfcF"
 >
   <div
-    className="ftUprM"
+    className="ghcScp"
     onClick={[Function]}
   >
     MenuItem 1
   </div>
   <div
-    className="ftUprM"
+    className="ghcScp"
     onClick={[Function]}
   >
     MenuItem Content 2
   </div>
   <div
-    className="ftUprM"
+    className="ghcScp"
     onClick={[Function]}
   >
     <h1
@@ -4693,7 +4693,7 @@ exports[`Storyshots Menu Combination 1`] = `
     </h1>
   </div>
   <div
-    className="ftUprM"
+    className="ghcScp"
     onClick={[Function]}
   >
     <p
@@ -4703,7 +4703,7 @@ exports[`Storyshots Menu Combination 1`] = `
     </p>
   </div>
   <div
-    className="ftUprM"
+    className="ghcScp"
     onClick={[Function]}
   >
     <p
@@ -4714,7 +4714,7 @@ exports[`Storyshots Menu Combination 1`] = `
     </p>
   </div>
   <div
-    className="ftUprM"
+    className="ghcScp"
     onClick={[Function]}
   >
     <a
@@ -4725,7 +4725,7 @@ exports[`Storyshots Menu Combination 1`] = `
     </a>
   </div>
   <div
-    className="ftUprM"
+    className="ghcScp"
     onClick={[Function]}
   >
     <b
@@ -4735,7 +4735,7 @@ exports[`Storyshots Menu Combination 1`] = `
     </b>
   </div>
   <div
-    className="ftUprM"
+    className="ghcScp"
     onClick={[Function]}
   >
     <svg
@@ -4749,6 +4749,25 @@ exports[`Storyshots Menu Combination 1`] = `
         d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zm9-10h1v10h-1V9zm-4 0h2v10h-2V9zM8 9h1v10H8V9zm7.5-5l-1-1h-5l-1 1H5v2h14V4h-3.5z"
       />
     </svg>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Menu Min width 1`] = `
+<div
+  className="gwdwFZ"
+>
+  <div
+    className="ghcScp"
+    onClick={[Function]}
+  >
+    複製
+  </div>
+  <div
+    className="ghcScp"
+    onClick={[Function]}
+  >
+    刪除
   </div>
 </div>
 `;

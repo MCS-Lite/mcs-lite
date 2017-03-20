@@ -16,7 +16,7 @@ storiesOf('Menu', module)
   .addWithInfo(
     'API for MenuItem',
     '',
-    () => <MenuItem>MenuItem</MenuItem>,
+    () => <MenuItem>A</MenuItem>,
     { inline: true },
   )
   .addWithInfo(
@@ -27,7 +27,18 @@ storiesOf('Menu', module)
   )
 
   .addWithInfo(
-    'Combination',
+    'Min width',
+    'min-width: 80px',
+    () =>
+      <Menu>
+        <MenuItem onClick={action('1')}>複製</MenuItem>
+        <MenuItem onClick={action('1')}>刪除</MenuItem>
+      </Menu>,
+    { inline: true },
+  )
+
+  .addWithInfo(
+    'Fixed width',
     'With fixed width',
     () =>
       <StyledMenu>
