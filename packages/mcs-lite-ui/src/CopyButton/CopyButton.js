@@ -1,13 +1,11 @@
 import React, { PropTypes } from 'react';
 import styled from 'styled-components';
-import {
-  setObservableConfig, createEventHandler, componentFromStream,
-} from 'recompose';
-import { Observable } from 'rxjs/Observable';
+import { createEventHandler, componentFromStream } from 'recompose';
 import R from 'ramda';
 import copyToClipboard from 'copy-to-clipboard';
 import MorphReplace from 'react-svg-morph/lib/MorphReplace';
 import { IconLoading, IconDone } from 'mcs-lite-icon';
+import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/operator/combineLatest';
 import 'rxjs/add/operator/withLatestFrom';
 import 'rxjs/add/operator/do';
@@ -21,10 +19,6 @@ import 'rxjs/add/observable/from';
 import 'rxjs/add/observable/merge';
 import Button from '../Button';
 import rotate360 from '../Spin/rotate360';
-
-setObservableConfig({
-  fromESObservable: Observable.from,
-});
 
 const DEFAULT = 'default';
 const LOADING = 'loading';
@@ -48,11 +42,12 @@ const StyledButton = styled(Button)`
 
 const omitProps = R.omit(['text']);
 
-const CopyButton = componentFromStream((props$) => {
-  const { handler: onClick, stream: onClick$ } = createEventHandler();
+const CopyButton = componentFromStream((propStream) => {
+  const props$ = Observable.from(propStream);
+  const { handler: onClick, stream: onClickStream } = createEventHandler();
 
   const text$ = props$.pluck('text');
-  const status$ = onClick$
+  const status$ = Observable.from(onClickStream)
     .withLatestFrom(text$, (e, text) => text)
     .do(copyToClipboard)
     .switchMapTo(Observable.merge(
