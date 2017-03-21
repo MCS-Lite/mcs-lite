@@ -139,7 +139,7 @@ exports[`Storyshots API [mcs-lite-theme] [JSON] theme 1`] = `
         "lineHeight": 1.5
       },
       "fontSize": {
-        "small": "92.3%",
+        "small": "0.923rem",
         "p": "1rem",
         "h6": "1rem",
         "h5": "1rem",
@@ -202,7 +202,7 @@ exports[`Storyshots B Within <P> 1`] = `
 >
   Nisi eu eiusmod cupidatat aute laboris commodo excepteur
   <small
-    className="gPtzLl"
+    className="jLXNUx"
   >
     <b
       className="dbJQUp"
@@ -373,12 +373,12 @@ exports[`Storyshots Button With size props 1`] = `
   className="epDjBm"
 >
   <button
-    className="bTzrRC"
+    className="hxVoJG"
   >
     Btn
   </button>
   <button
-    className="hHIWVQ"
+    className="drDwqB"
   >
     Small Button
   </button>
@@ -470,6 +470,9 @@ exports[`Storyshots Code API 1`] = `
   customStyle={
     Object {
       "backgroundColor": "initial",
+      "fontSize": "0.923rem",
+      "margin": 0,
+      "padding": 0,
     }
   }
   language="javascript"
@@ -592,6 +595,9 @@ exports[`Storyshots Code With language props 1`] = `
   customStyle={
     Object {
       "backgroundColor": "initial",
+      "fontSize": "0.923rem",
+      "margin": 0,
+      "padding": 0,
     }
   }
   language="arduino"
@@ -717,7 +723,7 @@ exports[`Storyshots Code With language props 1`] = `
 
 exports[`Storyshots CopyButton API 1`] = `
 <button
-  className="dGmdQp"
+  className="eCGqFF"
   onClick={[Function]}
 >
   Copy
@@ -1632,7 +1638,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
         INTEGER_CONTROL
       </h4>
       <small
-        className="jvIFlH"
+        className="fbIXVw"
       >
         Last data point time : 2015-06-12 12:00
       </small>
@@ -1690,7 +1696,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
         INTEGER_DISPLAY
       </h4>
       <small
-        className="jvIFlH"
+        className="fbIXVw"
       >
         Last data point time : 2015-06-12 12:00
       </small>
@@ -1782,7 +1788,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
         FLOAT_CONTROL
       </h4>
       <small
-        className="jvIFlH"
+        className="fbIXVw"
       >
         Last data point time : 2015-06-12 12:00
       </small>
@@ -1840,7 +1846,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
         FLOAT_DISPLAY
       </h4>
       <small
-        className="jvIFlH"
+        className="fbIXVw"
       >
         Last data point time : 2015-06-12 12:00
       </small>
@@ -1925,7 +1931,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
         STRING_CONTROL
       </h4>
       <small
-        className="jvIFlH"
+        className="fbIXVw"
       >
         Last data point time : 2015-06-12 12:00
       </small>
@@ -1978,7 +1984,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
         STRING_DISPLAY
       </h4>
       <small
-        className="jvIFlH"
+        className="fbIXVw"
       >
         Last data point time : 2015-06-12 12:00
       </small>
@@ -2063,7 +2069,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
         HEX_CONTROL
       </h4>
       <small
-        className="jvIFlH"
+        className="fbIXVw"
       >
         Last data point time : 2015-06-12 12:00
       </small>
@@ -2116,7 +2122,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
         HEX_DISPLAY
       </h4>
       <small
-        className="jvIFlH"
+        className="fbIXVw"
       >
         Last data point time : 2015-06-12 12:00
       </small>
@@ -2164,7 +2170,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
         SWITCH_CONTROL
       </h4>
       <small
-        className="jvIFlH"
+        className="fbIXVw"
       >
         Last data point time : 2015-06-12 12:00
       </small>
@@ -2256,7 +2262,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
         SWITCH_DISPLAY
       </h4>
       <small
-        className="jvIFlH"
+        className="fbIXVw"
       >
         Last data point time : 2015-06-12 12:00
       </small>
@@ -2354,7 +2360,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
         CATEGORY_CONTROL
       </h4>
       <small
-        className="jvIFlH"
+        className="fbIXVw"
       >
         Last data point time : 2015-06-12 12:00
       </small>
@@ -2515,7 +2521,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
         CATEGORY_DISPLAY
       </h4>
       <small
-        className="jvIFlH"
+        className="fbIXVw"
       >
         Last data point time : 2015-06-12 12:00
       </small>
@@ -2613,7 +2619,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
         GPIO_CONTROL
       </h4>
       <small
-        className="jvIFlH"
+        className="fbIXVw"
       >
         Last data point time : 2015-06-12 12:00
       </small>
@@ -2705,7 +2711,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
         GPIO_DISPLAY
       </h4>
       <small
-        className="jvIFlH"
+        className="fbIXVw"
       >
         Last data point time : 2015-06-12 12:00
       </small>
@@ -2803,7 +2809,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
         ANALOG_CONTROL
       </h4>
       <small
-        className="jvIFlH"
+        className="fbIXVw"
       >
         Last data point time : 2015-06-12 12:00
       </small>
@@ -2877,7 +2883,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
         PWM_DISPLAY
       </h4>
       <small
-        className="jvIFlH"
+        className="fbIXVw"
       >
         Last data point time : 2015-06-12 12:00
       </small>
@@ -3011,7 +3017,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
         PWM_CONTROL
       </h4>
       <small
-        className="jvIFlH"
+        className="fbIXVw"
       >
         Last data point time : 2015-06-12 12:00
       </small>
@@ -3057,7 +3063,7 @@ exports[`Storyshots DataChannelCard API 1`] = `
       Title
     </h4>
     <small
-      className="jvIFlH"
+      className="fbIXVw"
     >
       Last data point time : 2015-06-12 12:00
     </small>
@@ -3102,7 +3108,7 @@ exports[`Storyshots DataChannelCard Custom width and height 1`] = `
       Title
     </h4>
     <small
-      className="jvIFlH"
+      className="fbIXVw"
     >
       Last data point time : 2015-06-12 12:00
     </small>
@@ -3147,7 +3153,7 @@ exports[`Storyshots DataChannelCard With empty description 1`] = `
       Title
     </h4>
     <small
-      className="jvIFlH"
+      className="fbIXVw"
     >
       Last data point time : 2015-06-12 12:00
     </small>
@@ -3192,7 +3198,7 @@ exports[`Storyshots DataChannelCard Without description 1`] = `
       Title
     </h4>
     <small
-      className="jvIFlH"
+      className="fbIXVw"
     >
       Last data point time : 2015-06-12 12:00
     </small>
@@ -3239,7 +3245,7 @@ exports[`Storyshots DataPointAreaChart RechartTooltip 1`] = `
     color="grayBase"
   >
     <small
-      className="gPtzLl"
+      className="jLXNUx"
     >
       labelFormatter(1532438716989)
     </small>
@@ -4265,7 +4271,7 @@ exports[`Storyshots Hr With children 1`] = `
     className="iAugwC"
   />
   <div
-    className="KXFgb"
+    className="jfziGO"
   >
     String
   </div>
@@ -4507,12 +4513,12 @@ exports[`Storyshots InputGroup API 1`] = `
     className="gzynLw"
   >
     <button
-      className="bTzrRC"
+      className="hxVoJG"
     >
       Button 1
     </button>
     <button
-      className="hHIWVQ"
+      className="drDwqB"
     >
       Button 2
     </button>
@@ -5328,7 +5334,7 @@ exports[`Storyshots PullToRefresh API 1`] = `
 
 exports[`Storyshots Small API 1`] = `
 <small
-  className="gPtzLl"
+  className="jLXNUx"
 >
   Small content
 </small>
@@ -5341,7 +5347,7 @@ exports[`Storyshots Small With color 1`] = `
 >
   Nisi eu eiusmod cupidatat aute laboris commodo excepteur
   <small
-    className="gPtzLl"
+    className="jLXNUx"
   >
      Small content 
   </small>
@@ -5355,7 +5361,7 @@ exports[`Storyshots Small Within <P> 1`] = `
 >
   Nisi eu eiusmod cupidatat aute laboris commodo excepteur
   <small
-    className="gPtzLl"
+    className="jLXNUx"
   >
      Small content 
   </small>
