@@ -26,7 +26,7 @@ Object {
     "h5": "1rem",
     "h6": "1rem",
     "p": "1rem",
-    "small": "85.7%",
+    "small": "0.857rem",
   },
   "height": Object {
     "normal": "40px",
