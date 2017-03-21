@@ -11,7 +11,7 @@ const mobileTheme = {
     small: '25px',
   },
   fontSize: {
-    small: '85.7%', // = 12px;
+    small: '0.857rem', // = 12px;
     p: '1rem',
     h6: '1rem',
     h5: '1rem',     // = 14px;

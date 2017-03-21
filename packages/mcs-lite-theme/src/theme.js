@@ -28,7 +28,7 @@ const height = {
 };
 
 const fontSize = {
-  small: '92.3%',
+  small: '0.923rem',
   p: '1rem',
   h6: '1rem',
   h5: '1rem',
