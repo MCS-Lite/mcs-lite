@@ -1,6 +1,6 @@
 {
   "name": "mcs-lite-ui",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "Common UI used by MCS Lite",
   "repository": "evenchange4/mcs-lite",
   "author": "Michael Hsu <evenchange4@gmail.com>",
@@ -60,7 +60,7 @@
     "jest": "^19.0.2",
     "mcs-lite-icon": "^0.2.0",
     "mcs-lite-scripts": "^0.2.0",
-    "mcs-lite-theme": "^0.2.0",
+    "mcs-lite-theme": "^0.2.1",
     "normalize.css": "^5.0.0",
     "react": "^15.4.2",
     "react-addons-test-utils": "^15.4.2",
@@ -87,7 +87,7 @@
   },
   "peerDependencies": {
     "mcs-lite-icon": "^0.2.0",
-    "mcs-lite-theme": "^0.2.0",
+    "mcs-lite-theme": "^0.2.1",
     "styled-components": "^1.4.4"
   }
 }
