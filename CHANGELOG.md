@@ -2,6 +2,13 @@
 
 ## Released (2017-03-21)
 
+### Bump Versions
+
+-   mcs-lite-demo-nextjs@0.1.12
+-   mcs-lite-mobile-web@0.2.6
+-   mcs-lite-theme@0.2.1
+-   mcs-lite-ui@0.2.4
+
 #### :bug: Bug Fix
 * `mcs-lite-mobile-web`
   * [#253](https://github.com/evenchange4/mcs-lite/pull/253) fix(eslint): upgrade eslint-plugin-react to 6.10.3. ([@evenchange4](https://github.com/evenchange4))
