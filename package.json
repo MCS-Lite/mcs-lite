@@ -13,14 +13,14 @@
     "danger": "danger run --verbose"
   },
   "devDependencies": {
-    "babel-eslint": "^7.1.1",
+    "babel-eslint": "^7.2.0",
     "codecov": "^2.1.0",
     "danger": "^0.13.0",
     "eslint": "^3.18.0",
     "eslint-config-airbnb": "^14.1.0",
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jsx-a11y": "^4.0.0",
-    "eslint-plugin-react": "6.10.0",
+    "eslint-plugin-react": "^6.10.3",
     "lerna": "2.0.0-beta.38",
     "npm-check-updates": "^2.10.3",
     "stylelint": "^7.9.0"
