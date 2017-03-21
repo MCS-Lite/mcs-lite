@@ -1,5 +1,20 @@
 # MCS Lite changelogs
 
+## Released (2017-03-21)
+
+#### :bug: Bug Fix
+* `mcs-lite-mobile-web`
+  * [#253](https://github.com/evenchange4/mcs-lite/pull/253) fix(eslint): upgrade eslint-plugin-react to 6.10.3. ([@evenchange4](https://github.com/evenchange4))
+* `mcs-lite-mobile-web`, `mcs-lite-theme`, `mcs-lite-ui`
+  * [#252](https://github.com/evenchange4/mcs-lite/pull/252) fix(Code): add custom style for react-syntax-highlighter. ([@evenchange4](https://github.com/evenchange4))
+* `mcs-lite-ui`
+  * [#250](https://github.com/evenchange4/mcs-lite/pull/250) fix(recompose/rx): do use global setting. ([@evenchange4](https://github.com/evenchange4))
+
+#### Committers: 1
+- Michael Hsu ([evenchange4](https://github.com/evenchange4))
+
+----
+
 ## Released (2017-03-20)
 
 ### Bump Versions
