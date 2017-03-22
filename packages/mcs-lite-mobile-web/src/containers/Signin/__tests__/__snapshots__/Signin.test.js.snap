@@ -1,6 +1,7 @@
 exports[`test should renders <Signin> correctly 1`] = `
 <styled.div>
   <HelmetWrapper
+    encodeSpecialCharacters={true}
     title="signin" />
   <Logo
     alt="MCS Lite Logo"
@@ -43,6 +44,7 @@ exports[`test should renders <Signin> correctly 1`] = `
 exports[`test should renders <Signin> correctly with errorMessage 1`] = `
 <styled.div>
   <HelmetWrapper
+    encodeSpecialCharacters={true}
     title="signin" />
   <Logo
     alt="MCS Lite Logo"

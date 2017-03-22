@@ -31,8 +31,8 @@ storiesOf('Menu', module)
     'min-width: 80px',
     () =>
       <Menu>
-        <MenuItem onClick={action('1')}>複製</MenuItem>
-        <MenuItem onClick={action('1')}>刪除</MenuItem>
+        <MenuItem onClick={action('index: 1')}>複製</MenuItem>
+        <MenuItem onClick={action('index: 1')}>刪除</MenuItem>
       </Menu>,
     { inline: true },
   )
@@ -42,14 +42,14 @@ storiesOf('Menu', module)
     'With fixed width',
     () =>
       <StyledMenu>
-        <MenuItem onClick={action('1')}>MenuItem 1</MenuItem>
-        <MenuItem onClick={action('2')}>MenuItem Content 2</MenuItem>
-        <MenuItem onClick={action('3')}><Heading>MenuItem Heading 1</Heading></MenuItem>
-        <MenuItem onClick={action('4')}><P>MenuItem P</P></MenuItem>
-        <MenuItem onClick={action('5')}><P color="error">MenuItem P error</P></MenuItem>
-        <MenuItem onClick={action('6')}><A>MenuItem A</A></MenuItem>
-        <MenuItem onClick={action('7')}><B>MenuItem B</B></MenuItem>
-        <MenuItem onClick={action('8')}><IconDelete /></MenuItem>
+        <MenuItem onClick={action('index: 1')}>MenuItem 1</MenuItem>
+        <MenuItem onClick={action('index: 2')}>MenuItem Content 2</MenuItem>
+        <MenuItem onClick={action('index: 3')}><Heading>MenuItem Heading 1</Heading></MenuItem>
+        <MenuItem onClick={action('index: 4')}><P>MenuItem P</P></MenuItem>
+        <MenuItem onClick={action('index: 5')}><P color="error">MenuItem P error</P></MenuItem>
+        <MenuItem onClick={action('index: 6')}><A>MenuItem A</A></MenuItem>
+        <MenuItem onClick={action('index: 7')}><B>MenuItem B</B></MenuItem>
+        <MenuItem onClick={action('index: 8')}><IconDelete /></MenuItem>
       </StyledMenu>,
     { inline: true },
   );
