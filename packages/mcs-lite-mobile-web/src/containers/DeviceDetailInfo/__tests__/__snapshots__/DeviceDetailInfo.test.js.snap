@@ -1,6 +1,7 @@
 exports[`test should renders <DeviceDetailInfo> correctly 1`] = `
 <div>
   <HelmetWrapper
+    encodeSpecialCharacters={true}
     title="deviceIntro" />
   <MobileHeader
     leftChildren={
@@ -69,7 +70,8 @@ exports[`test should renders <DeviceDetailInfo> correctly 1`] = `
 
 exports[`test should renders <DeviceDetailInfo> correctly without device data 1`] = `
 <div>
-  <HelmetWrapper />
+  <HelmetWrapper
+    encodeSpecialCharacters={true} />
   <MobileHeader
     leftChildren={
       <MobileHeaderIcon

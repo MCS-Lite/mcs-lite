@@ -6,6 +6,7 @@ exports[`test should renders <DeviceDataChannelDetail> correctly with Notificati
 exports[`test should renders <DeviceDataChannelDetail> correctly without data 1`] = `
 <div>
   <HelmetWrapper
+    encodeSpecialCharacters={true}
     title="dataChannelDetail" />
   <MobileHeader
     leftChildren={

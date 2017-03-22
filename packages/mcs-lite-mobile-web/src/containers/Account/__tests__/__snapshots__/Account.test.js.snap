@@ -1,6 +1,7 @@
 exports[`test should renders <Account> correctly 1`] = `
 <styled.div>
   <HelmetWrapper
+    encodeSpecialCharacters={true}
     title="account" />
   <styled.div>
     <styled.img

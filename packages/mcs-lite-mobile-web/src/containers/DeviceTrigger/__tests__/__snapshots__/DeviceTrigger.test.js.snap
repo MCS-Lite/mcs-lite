@@ -1,6 +1,7 @@
 exports[`test should renders <DeviceTrigger> correctly 1`] = `
 <div>
   <HelmetWrapper
+    encodeSpecialCharacters={true}
     title="triggerAndAction" />
   <MobileHeader
     leftChildren={

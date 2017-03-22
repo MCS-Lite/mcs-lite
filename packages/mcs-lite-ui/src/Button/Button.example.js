@@ -22,7 +22,7 @@ const KindContainer = () =>
   <Container>
     {
       kindList.map(key =>
-        <Button key={key} kind={key} onClick={action(key)}>{key}</Button>,
+        <Button key={key} kind={key} onClick={action(`Kind ${key}`)}>{key}</Button>,
       )
     }
   </Container>;

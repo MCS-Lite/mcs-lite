@@ -1,6 +1,7 @@
 exports[`test should renders <DeviceDetail> correctly 1`] = `
 <div>
   <HelmetWrapper
+    encodeSpecialCharacters={true}
     title="deviceName" />
   <MobileHeader
     leftChildren={
@@ -44,7 +45,8 @@ exports[`test should renders <DeviceDetail> correctly 1`] = `
 
 exports[`test should renders <DeviceDetail> correctly when Menu show 1`] = `
 <div>
-  <HelmetWrapper />
+  <HelmetWrapper
+    encodeSpecialCharacters={true} />
   <MobileHeader
     leftChildren={
       <MobileHeaderIcon

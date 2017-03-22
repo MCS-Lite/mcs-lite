@@ -1,6 +1,7 @@
 exports[`test should renders <DeviceDataChannelTimeRange> correctly 1`] = `
 <div>
   <HelmetWrapper
+    encodeSpecialCharacters={true}
     title="searchTimeRange" />
   <MobileHeader
     leftChildren={
