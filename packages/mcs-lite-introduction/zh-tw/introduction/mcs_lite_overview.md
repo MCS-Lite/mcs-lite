@@ -6,7 +6,7 @@ MCS Lite 應用程序主要包含了以下兩個主要的使用介面：
 	
 ##物聯網服務平台
 
-* 透過標準的網路協定（HTTP, MQTT, websocket）將裝置產生的數據上傳至 MCS Lite 並儲存。
+* 透過標準的網路協定（HTTP, websocket）將裝置產生的數據上傳至 MCS Lite 並儲存。
 * 遠端控制您的測試裝置。
 * 圖形化的數據介面。
 * 管理所有的裝置。
@@ -33,8 +33,6 @@ MCS Lite 應用程序主要包含了以下兩個主要的使用介面：
 * Windows 
 
 ## 網路環境
-Internet > Intranet > LAN
-
 MCS Lite 主要支援部署在區域網路（Local Area Network），首先您的裝置必須與 MCS Lite 伺服器位於同個區域網路內，並可透過伺服器的 IP 位址或是主機名稱（hostname）與之連結。並確定 MCS Lite 所使用的連接埠並沒有被其他服務佔用，也不會被其他網路上的路由器或防火牆等設備阻擋。
 
 ## 安裝步驟
