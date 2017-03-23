@@ -69,7 +69,7 @@ class DeviceDetail extends React.Component {
     const { getTarget, onMoreDetailClick, onHide, reFetch, eventHandler } = this;
     return (
       <div>
-        <Helmet title={device.deviceName} />
+        <Helmet><title>{device.deviceName}</title></Helmet>
         <MobileHeader.MobileHeader
           title={device.deviceName}
           leftChildren={

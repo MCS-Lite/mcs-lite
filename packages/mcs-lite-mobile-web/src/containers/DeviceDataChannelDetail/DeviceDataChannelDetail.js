@@ -78,7 +78,7 @@ class DeviceDataChannelDetail extends React.Component {
 
     return (
       <div>
-        <Helmet title={t('dataChannelDetail')} />
+        <Helmet><title>{t('dataChannelDetail')}</title></Helmet>
         <MobileHeader.MobileHeader
           title={t('dataChannelDetail')}
           leftChildren={

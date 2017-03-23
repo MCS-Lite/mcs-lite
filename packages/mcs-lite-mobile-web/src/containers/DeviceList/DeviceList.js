@@ -51,7 +51,7 @@ class DeviceList extends React.Component {
 
     return (
       <div>
-        <Helmet title={t('myTestDevices')} />
+        <Helmet><title>{t('myTestDevices')}</title></Helmet>
         <MobileHeader.MobileHeader
           title={isFilterOpen ? '' : t('myTestDevices')}
           leftChildren={

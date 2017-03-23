@@ -12,7 +12,7 @@ const VERSION = packageJSON.version;
 
 const Account = ({ userName, email, signout, getMessages: t }) =>
   <Container>
-    <Helmet title={t('account')} />
+    <Helmet><title>{t('account')}</title></Helmet>
     <Body>
       <StyledLogo />
       <Heading level={4}>{userName}</Heading>
