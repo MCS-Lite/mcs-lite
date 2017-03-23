@@ -29,7 +29,7 @@ class DeviceTriggerEdit extends React.Component {
 
     return (
       <div>
-        <Helmet title={t('editTriggerAndAction')} />
+        <Helmet><title>{t('editTriggerAndAction')}</title></Helmet>
         <MobileHeader.MobileHeader
           title={t('editTriggerAndAction')}
           leftChildren={

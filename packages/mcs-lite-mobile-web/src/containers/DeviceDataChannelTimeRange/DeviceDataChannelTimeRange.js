@@ -58,7 +58,7 @@ class DeviceDataChannelTimeRange extends React.Component {
 
     return (
       <div>
-        <Helmet title={t('searchTimeRange')} />
+        <Helmet><title>{t('searchTimeRange')}</title></Helmet>
         <MobileHeader.MobileHeader
           title={t('searchTimeRange')}
           leftChildren={

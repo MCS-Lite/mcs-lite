@@ -27,7 +27,7 @@ class DeviceTrigger extends React.Component {
 
     return (
       <div>
-        <Helmet title={t('triggerAndAction')} />
+        <Helmet><title>{t('triggerAndAction')}</title></Helmet>
         <MobileHeader.MobileHeader
           title={t('triggerAndAction')}
           leftChildren={

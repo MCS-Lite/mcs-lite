@@ -25,7 +25,7 @@ class Signin extends React.Component {
 
     return (
       <Layout>
-        <Helmet title={t('signin')} />
+        <Helmet><title>{t('signin')}</title></Helmet>
 
         <Logo />
         {errorMessage && <ErrorMessage color="error">{errorMessage}</ErrorMessage>}

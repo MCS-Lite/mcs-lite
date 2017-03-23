@@ -34,7 +34,7 @@ class Password extends React.Component {
 
     return (
       <div>
-        <Helmet title={t('changePassword')} />
+        <Helmet><title>{t('changePassword')}</title></Helmet>
         <MobileHeader.MobileHeader
           title={t('changePassword')}
           leftChildren={

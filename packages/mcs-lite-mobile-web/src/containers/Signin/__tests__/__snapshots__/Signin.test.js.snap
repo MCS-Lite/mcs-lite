@@ -1,8 +1,11 @@
 exports[`test should renders <Signin> correctly 1`] = `
 <styled.div>
   <HelmetWrapper
-    encodeSpecialCharacters={true}
-    title="signin" />
+    encodeSpecialCharacters={true}>
+    <title>
+      signin
+    </title>
+  </HelmetWrapper>
   <Logo
     alt="MCS Lite Logo"
     src="logo_mcs_lite_black.svg" />
@@ -44,8 +47,11 @@ exports[`test should renders <Signin> correctly 1`] = `
 exports[`test should renders <Signin> correctly with errorMessage 1`] = `
 <styled.div>
   <HelmetWrapper
-    encodeSpecialCharacters={true}
-    title="signin" />
+    encodeSpecialCharacters={true}>
+    <title>
+      signin
+    </title>
+  </HelmetWrapper>
   <Logo
     alt="MCS Lite Logo"
     src="logo_mcs_lite_black.svg" />

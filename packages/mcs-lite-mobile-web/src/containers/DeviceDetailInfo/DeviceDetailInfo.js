@@ -26,7 +26,7 @@ class DeviceDetailInfo extends React.Component {
 
     return (
       <div>
-        <Helmet title={t('deviceIntro')} />
+        <Helmet><title>{t('deviceIntro')}</title></Helmet>
         <MobileHeader.MobileHeader
           title={t('deviceIntro')}
           leftChildren={

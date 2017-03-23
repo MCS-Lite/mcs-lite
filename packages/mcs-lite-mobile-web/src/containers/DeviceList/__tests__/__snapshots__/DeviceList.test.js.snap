@@ -1,8 +1,11 @@
 exports[`test should renders <DeviceList> correctly when Filter open 1`] = `
 <div>
   <HelmetWrapper
-    encodeSpecialCharacters={true}
-    title="myTestDevices" />
+    encodeSpecialCharacters={true}>
+    <title>
+      myTestDevices
+    </title>
+  </HelmetWrapper>
   <MobileHeader
     leftChildren={
       <MobileHeaderIcon
@@ -93,8 +96,11 @@ exports[`test should renders <DeviceList> correctly when Filter open 1`] = `
 exports[`test should renders <DeviceList> correctly with one device 1`] = `
 <div>
   <HelmetWrapper
-    encodeSpecialCharacters={true}
-    title="myTestDevices" />
+    encodeSpecialCharacters={true}>
+    <title>
+      myTestDevices
+    </title>
+  </HelmetWrapper>
   <MobileHeader
     leftChildren={
       <MobileHeaderIcon
@@ -166,8 +172,11 @@ exports[`test should renders <DeviceList> correctly with one device 1`] = `
 exports[`test should renders <DeviceList> correctly without devices 1`] = `
 <div>
   <HelmetWrapper
-    encodeSpecialCharacters={true}
-    title="myTestDevices" />
+    encodeSpecialCharacters={true}>
+    <title>
+      myTestDevices
+    </title>
+  </HelmetWrapper>
   <MobileHeader
     leftChildren={
       <MobileHeaderIcon

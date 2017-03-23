@@ -1,8 +1,11 @@
 exports[`test should renders <Account> correctly 1`] = `
 <styled.div>
   <HelmetWrapper
-    encodeSpecialCharacters={true}
-    title="account" />
+    encodeSpecialCharacters={true}>
+    <title>
+      account
+    </title>
+  </HelmetWrapper>
   <styled.div>
     <styled.img
       alt="MCS Lite Logo"
