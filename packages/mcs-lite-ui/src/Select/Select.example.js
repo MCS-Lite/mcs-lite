@@ -1,30 +1,48 @@
 import React from 'react';
-import styled from 'styled-components';
 import { storiesOf } from '@kadira/storybook';
-import { kindList } from 'mcs-lite-theme';
 import Select from '.';
-import InputGroup from '../InputGroup';
 
-const Wrapper = styled.div`
-  > * {
-    margin: 15px;
-    width: 300px;
+class StatefulSelect extends React.Component {
+  state = { value: '' };
+  onChange = e => this.setState({ value: parseFloat(e.target.value, 10) });
+  render() {
+    return (
+      <Select
+        value={this.state.value}
+        onChange={this.onChange}
+        placeholder="選擇資料通道"
+        items={[
+          { value: 1, children: 'value 1' },
+          { value: 2, children: 'value 2' },
+          { value: 3, children: 'value 3', disabled: true },
+        ]}
+      />
+    );
   }
-`;
+}
 
 storiesOf('Select', module)
   .addWithInfo(
-    'API',
-    '',
+    'API - ReadOnly',
+    'React controlled component',
     () =>
       <Select
+        value={2}
+        readOnly
         items={[
-          { value: 1, children: '1' },
-          { value: 2, children: '2' },
+          { value: 1, children: 'value 1' },
+          { value: 2, children: 'value 2' },
         ]}
       />,
     { inline: true },
   )
+  .addWithInfo(
+    'With disabled props',
+    '',
+    () =>
+      <StatefulSelect />,
+    { inline: true },
+  );
   // .addWithInfo(
   //   'With kind props',
   //   '使用內建 kind props 樣式。',
