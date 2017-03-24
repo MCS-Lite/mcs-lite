@@ -1,6 +1,6 @@
 {
   "name": "mcs-lite-mobile-web",
-  "version": "0.2.6",
+  "version": "0.2.7",
   "description": "MCS Lite Mobile Web",
   "repository": "evenchange4/mcs-lite",
   "author": "Michael Hsu <evenchange4@gmail.com>",
@@ -43,7 +43,7 @@
     "mcs-lite-connect": "^0.2.0",
     "mcs-lite-icon": "^0.2.0",
     "mcs-lite-theme": "^0.2.1",
-    "mcs-lite-ui": "^0.2.4",
+    "mcs-lite-ui": "^0.2.5",
     "normalize.css": "^5.0.0",
     "ramda": "^0.23.0",
     "react": "^15.4.2",
