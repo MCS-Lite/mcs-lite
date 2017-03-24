@@ -58,6 +58,7 @@ exports[`test should renders <DeviceDataChannelTimeRange> correctly 1`] = `
       <Styled(Link)
         to={[Function]}>
         <Button
+          active={false}
           block={true}
           component="button"
           kind="default"
@@ -70,6 +71,7 @@ exports[`test should renders <DeviceDataChannelTimeRange> correctly 1`] = `
       <Styled(Link)
         to={[Function]}>
         <Button
+          active={false}
           block={true}
           component="button"
           kind="primary"

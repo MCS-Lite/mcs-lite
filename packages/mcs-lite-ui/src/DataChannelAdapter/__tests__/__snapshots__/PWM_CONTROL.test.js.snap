@@ -53,6 +53,7 @@ exports[`should render PWM_CONTROL correctly with default value to N/A 1`] = `
                 className="fystPB"
               >
                 <styled.input
+                  focus={false}
                   kind="primary"
                   onChange={[Function]}
                   placeholder="Integer only"
@@ -60,7 +61,7 @@ exports[`should render PWM_CONTROL correctly with default value to N/A 1`] = `
                   value=""
                 >
                   <input
-                    className="cMuAcD"
+                    className="jfzaul"
                     kind="primary"
                     onChange={[Function]}
                     placeholder="Integer only"
@@ -69,6 +70,7 @@ exports[`should render PWM_CONTROL correctly with default value to N/A 1`] = `
                   />
                 </styled.input>
                 <Button
+                  active={false}
                   block={false}
                   component="button"
                   kind="primary"
@@ -78,8 +80,9 @@ exports[`should render PWM_CONTROL correctly with default value to N/A 1`] = `
                   square={false}
                 >
                   <BaseComponent
+                    active={false}
                     block={false}
-                    className="eCTWnK"
+                    className="dSNJHu"
                     component="button"
                     kind="primary"
                     onClick={[Function]}
@@ -88,7 +91,7 @@ exports[`should render PWM_CONTROL correctly with default value to N/A 1`] = `
                     square={false}
                   >
                     <button
-                      className="eCTWnK"
+                      className="dSNJHu"
                       onClick={[Function]}
                     >
                       Ok
@@ -302,6 +305,7 @@ exports[`should render PWM_CONTROL correctly with max 1`] = `
                 className="fystPB"
               >
                 <styled.input
+                  focus={false}
                   kind="primary"
                   onChange={[Function]}
                   placeholder="Integer only"
@@ -309,7 +313,7 @@ exports[`should render PWM_CONTROL correctly with max 1`] = `
                   value={1}
                 >
                   <input
-                    className="cMuAcD"
+                    className="jfzaul"
                     kind="primary"
                     onChange={[Function]}
                     placeholder="Integer only"
@@ -318,6 +322,7 @@ exports[`should render PWM_CONTROL correctly with max 1`] = `
                   />
                 </styled.input>
                 <Button
+                  active={false}
                   block={false}
                   component="button"
                   kind="primary"
@@ -327,8 +332,9 @@ exports[`should render PWM_CONTROL correctly with max 1`] = `
                   square={false}
                 >
                   <BaseComponent
+                    active={false}
                     block={false}
-                    className="eCTWnK"
+                    className="dSNJHu"
                     component="button"
                     kind="primary"
                     onClick={[Function]}
@@ -337,7 +343,7 @@ exports[`should render PWM_CONTROL correctly with max 1`] = `
                     square={false}
                   >
                     <button
-                      className="eCTWnK"
+                      className="dSNJHu"
                       onClick={[Function]}
                     >
                       Ok
@@ -551,6 +557,7 @@ exports[`should render PWM_CONTROL correctly with zero 1`] = `
                 className="fystPB"
               >
                 <styled.input
+                  focus={false}
                   kind="primary"
                   onChange={[Function]}
                   placeholder="Integer only"
@@ -558,7 +565,7 @@ exports[`should render PWM_CONTROL correctly with zero 1`] = `
                   value={0}
                 >
                   <input
-                    className="cMuAcD"
+                    className="jfzaul"
                     kind="primary"
                     onChange={[Function]}
                     placeholder="Integer only"
@@ -567,6 +574,7 @@ exports[`should render PWM_CONTROL correctly with zero 1`] = `
                   />
                 </styled.input>
                 <Button
+                  active={false}
                   block={false}
                   component="button"
                   kind="primary"
@@ -576,8 +584,9 @@ exports[`should render PWM_CONTROL correctly with zero 1`] = `
                   square={false}
                 >
                   <BaseComponent
+                    active={false}
                     block={false}
-                    className="eCTWnK"
+                    className="dSNJHu"
                     component="button"
                     kind="primary"
                     onClick={[Function]}
@@ -586,7 +595,7 @@ exports[`should render PWM_CONTROL correctly with zero 1`] = `
                     square={false}
                   >
                     <button
-                      className="eCTWnK"
+                      className="dSNJHu"
                       onClick={[Function]}
                     >
                       Ok

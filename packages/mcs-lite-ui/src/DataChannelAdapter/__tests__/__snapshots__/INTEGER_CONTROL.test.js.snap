@@ -24,6 +24,7 @@ exports[`should render INTEGER_CONTROL correctly with default value to empty 1`]
         className="kdCvHd"
       >
         <Input
+          focus={false}
           kind="primary"
           onChange={[Function]}
           placeholder="Integer only"
@@ -31,7 +32,7 @@ exports[`should render INTEGER_CONTROL correctly with default value to empty 1`]
           value=""
         >
           <input
-            className="jWbJOn"
+            className="bpPgUt"
             kind="primary"
             onChange={[Function]}
             placeholder="Integer only"
@@ -87,6 +88,7 @@ exports[`should render INTEGER_CONTROL correctly with default value to empty 1`]
               </P>
             </ButtonClear>
             <Button
+              active={false}
               block={false}
               component="button"
               kind="primary"
@@ -96,8 +98,9 @@ exports[`should render INTEGER_CONTROL correctly with default value to empty 1`]
               square={false}
             >
               <BaseComponent
+                active={false}
                 block={false}
-                className="eCTWnK"
+                className="dSNJHu"
                 component="button"
                 kind="primary"
                 onClick={[Function]}
@@ -106,7 +109,7 @@ exports[`should render INTEGER_CONTROL correctly with default value to empty 1`]
                 square={false}
               >
                 <button
-                  className="eCTWnK"
+                  className="dSNJHu"
                   onClick={[Function]}
                 >
                   Ok
@@ -165,6 +168,7 @@ exports[`should render INTEGER_CONTROL correctly with unit 1`] = `
           </Component>
         </Styled(Component)>
         <Input
+          focus={false}
           kind="primary"
           onChange={[Function]}
           placeholder="Integer only"
@@ -172,7 +176,7 @@ exports[`should render INTEGER_CONTROL correctly with unit 1`] = `
           value={1}
         >
           <input
-            className="jWbJOn"
+            className="bpPgUt"
             kind="primary"
             onChange={[Function]}
             placeholder="Integer only"
@@ -228,6 +232,7 @@ exports[`should render INTEGER_CONTROL correctly with unit 1`] = `
               </P>
             </ButtonClear>
             <Button
+              active={false}
               block={false}
               component="button"
               kind="primary"
@@ -237,8 +242,9 @@ exports[`should render INTEGER_CONTROL correctly with unit 1`] = `
               square={false}
             >
               <BaseComponent
+                active={false}
                 block={false}
-                className="eCTWnK"
+                className="dSNJHu"
                 component="button"
                 kind="primary"
                 onClick={[Function]}
@@ -247,7 +253,7 @@ exports[`should render INTEGER_CONTROL correctly with unit 1`] = `
                 square={false}
               >
                 <button
-                  className="eCTWnK"
+                  className="dSNJHu"
                   onClick={[Function]}
                 >
                   Ok
@@ -288,6 +294,7 @@ exports[`should render INTEGER_CONTROL correctly with value 1`] = `
         className="kdCvHd"
       >
         <Input
+          focus={false}
           kind="primary"
           onChange={[Function]}
           placeholder="Integer only"
@@ -295,7 +302,7 @@ exports[`should render INTEGER_CONTROL correctly with value 1`] = `
           value={1}
         >
           <input
-            className="jWbJOn"
+            className="bpPgUt"
             kind="primary"
             onChange={[Function]}
             placeholder="Integer only"
@@ -351,6 +358,7 @@ exports[`should render INTEGER_CONTROL correctly with value 1`] = `
               </P>
             </ButtonClear>
             <Button
+              active={false}
               block={false}
               component="button"
               kind="primary"
@@ -360,8 +368,9 @@ exports[`should render INTEGER_CONTROL correctly with value 1`] = `
               square={false}
             >
               <BaseComponent
+                active={false}
                 block={false}
-                className="eCTWnK"
+                className="dSNJHu"
                 component="button"
                 kind="primary"
                 onClick={[Function]}
@@ -370,7 +379,7 @@ exports[`should render INTEGER_CONTROL correctly with value 1`] = `
                 square={false}
               >
                 <button
-                  className="eCTWnK"
+                  className="dSNJHu"
                   onClick={[Function]}
                 >
                   Ok
@@ -411,6 +420,7 @@ exports[`should render INTEGER_CONTROL correctly with zero 1`] = `
         className="kdCvHd"
       >
         <Input
+          focus={false}
           kind="primary"
           onChange={[Function]}
           placeholder="Integer only"
@@ -418,7 +428,7 @@ exports[`should render INTEGER_CONTROL correctly with zero 1`] = `
           value={0}
         >
           <input
-            className="jWbJOn"
+            className="bpPgUt"
             kind="primary"
             onChange={[Function]}
             placeholder="Integer only"
@@ -474,6 +484,7 @@ exports[`should render INTEGER_CONTROL correctly with zero 1`] = `
               </P>
             </ButtonClear>
             <Button
+              active={false}
               block={false}
               component="button"
               kind="primary"
@@ -483,8 +494,9 @@ exports[`should render INTEGER_CONTROL correctly with zero 1`] = `
               square={false}
             >
               <BaseComponent
+                active={false}
                 block={false}
-                className="eCTWnK"
+                className="dSNJHu"
                 component="button"
                 kind="primary"
                 onClick={[Function]}
@@ -493,7 +505,7 @@ exports[`should render INTEGER_CONTROL correctly with zero 1`] = `
                 square={false}
               >
                 <button
-                  className="eCTWnK"
+                  className="dSNJHu"
                   onClick={[Function]}
                 >
                   Ok

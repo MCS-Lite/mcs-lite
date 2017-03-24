@@ -19,6 +19,12 @@ storiesOf('Input', module)
     { inline: true },
   )
   .addWithInfo(
+    'With focus props',
+    '',
+    () => <Input placeholder="placeholder" focus />,
+    { inline: true },
+  )
+  .addWithInfo(
     'With kind props',
     '使用內建 kind props 樣式。',
     () =>

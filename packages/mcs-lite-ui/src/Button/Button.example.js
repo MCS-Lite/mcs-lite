@@ -125,6 +125,12 @@ storiesOf('Button', module)
     { inline: true },
   )
   .addWithInfo(
+    'With active props',
+    '',
+    () => <Button active>Active</Button>,
+    { inline: true },
+  )
+  .addWithInfo(
     'With icon inside',
     'loading',
     () =>

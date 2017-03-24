@@ -36,6 +36,7 @@ exports[`test should renders <DeviceList> correctly when Filter open 1`] = `
           runOnMount={true}>
           <Input
               autoFocus={true}
+              focus={false}
               kind="primary"
               onChange={[Function]}
               placeholder="search"
