@@ -1,5 +1,28 @@
 # MCS Lite changelogs
 
+## Released (2017-03-24)
+
+#### :rocket: New Feature
+* `mcs-lite-mobile-web`, `mcs-lite-ui`
+  * [#260](https://github.com/evenchange4/mcs-lite/pull/260) feat(Select): add new native select component & support active props for Button and Input. ([@evenchange4](https://github.com/evenchange4))
+
+#### :bug: Bug Fix
+* `mcs-lite-mobile-web`
+  * [#258](https://github.com/evenchange4/mcs-lite/pull/258) fix(react-helmet): use plain HTML for 5.0.0. ([@evenchange4](https://github.com/evenchange4))
+* `mcs-lite-mobile-web`, `mcs-lite-ui`
+  * [#256](https://github.com/evenchange4/mcs-lite/pull/256) fix(storybook/react-helmet): fix testing. ([@evenchange4](https://github.com/evenchange4))
+
+#### :memo: Documentation
+* `mcs-lite-introduction`
+  * [#257](https://github.com/evenchange4/mcs-lite/pull/257) feat(githook): add 7697 example gcc. ([@dariachen](https://github.com/dariachen))
+  * [#254](https://github.com/evenchange4/mcs-lite/pull/254) docs(mcs-lite-intro): add example code for LinkIt 7697 Arduino.. ([@dariachen](https://github.com/dariachen))
+
+#### Committers: 2
+- Daria Chen ([dariachen](https://github.com/dariachen))
+- Michael Hsu ([evenchange4](https://github.com/evenchange4))
+
+----
+
 ## Released (2017-03-21)
 
 ### Bump Versions
