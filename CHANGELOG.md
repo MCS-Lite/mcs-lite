@@ -2,6 +2,13 @@
 
 ## Released (2017-03-24)
 
+### Bump Versions
+
+-   mcs-lite-demo-nextjs@0.1.13
+-   mcs-lite-introduction@0.1.5
+-   mcs-lite-mobile-web@0.2.7
+-   mcs-lite-ui@0.2.5
+
 #### :rocket: New Feature
 * `mcs-lite-mobile-web`, `mcs-lite-ui`
   * [#260](https://github.com/evenchange4/mcs-lite/pull/260) feat(Select): add new native select component & support active props for Button and Input. ([@evenchange4](https://github.com/evenchange4))
