@@ -1,4 +1,5 @@
 import R from 'ramda';
+import { darken2 } from 'mcs-lite-theme';
 
 const SMALL = 'small';
 const DEFAULT = 'default';
@@ -53,4 +54,9 @@ export const fontSize = R.cond([
 export const color = R.cond([
   [R.propEq('kind', DEFAULT), R.path(['theme', 'color', 'grayBase'])],
   [R.T, R.path(['theme', 'color', 'white'])],
+]);
+
+export const backgroundColor = R.cond([
+  [R.propEq('active', true), props => darken2(props.theme.color[props.kind])],
+  [R.T, props => props.theme.color[props.kind]],
 ]);

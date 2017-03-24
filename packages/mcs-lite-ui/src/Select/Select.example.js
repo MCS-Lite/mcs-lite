@@ -37,35 +37,24 @@ storiesOf('Select', module)
     { inline: true },
   )
   .addWithInfo(
+    'With kind props',
+    '',
+    () =>
+      <Select
+        value={2}
+        readOnly
+        kind="warning"
+        items={[
+          { value: 1, children: 'value 1' },
+          { value: 2, children: 'value 2' },
+        ]}
+      />,
+    { inline: true },
+  )
+  .addWithInfo(
     'With disabled props',
     '',
     () =>
       <StatefulSelect />,
-    { inline: true },
+    { inline: true, propTables: [Select]},
   );
-  // .addWithInfo(
-  //   'With kind props',
-  //   '使用內建 kind props 樣式。',
-  //   () =>
-  //     <Wrapper>
-  //       {
-  //         kindList.map(key =>
-  //           <Select key={key} kind={key}>
-  //             <option value="1">1</option>
-  //             <option value="2">2</option>
-  //           </Select>,
-  //         )
-  //       }
-  //     </Wrapper>,
-  //   { inline: true },
-  // )
-  // .addWithInfo(
-  //   'API',
-  //   '',
-  //   () =>
-  //     <Select>
-  //       <option value="1">1</option>
-  //       <option value="2">2</option>
-  //     </Select>,
-  //   { inline: true },
-  // );

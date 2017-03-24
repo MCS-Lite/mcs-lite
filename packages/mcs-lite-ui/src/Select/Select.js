@@ -19,67 +19,71 @@ const Wrapper = styled.div`
 `;
 
 const StyledSelect = styled.select`
-  ${''/* opacity: 0.5; */}
-  ${''/* background-color: red; */}
   width: 100%;
-  ${''/* padding: 0 10px; */}
   border: 0;
   height: ${props => props.theme.height.normal};
   background-color: ${props => props.theme.color.white};
   outline: 0;
   font-size: ${props => props.theme.fontSize.p};
   color: ${props => props.theme.color.black};
-
-  ${''/* &:focus {
-    border-color: ${props => props.theme.color[props.kind]};
-    box-shadow: 0 0 3px 0 ${props => shadow(props.theme.color[props.kind])};
-    outline: none;
-  } */}
+  appearance: none;
 `;
 
 const StyledButton = styled(Button)`
   font-size: 18px;
+
+  > * {
+    transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    transform: ${props => props.active ? 'rotate(-180deg)' : 'initial'};
+  }
 `;
 
-const Select = ({ items, kind, value, placeholder, ...otherProps }) =>
-  <Wrapper kind={kind}>
-    <StyledInputGroup>
-      <Input
-        value={
-          R.pipe(
-            R.find(R.propEq('value', value)),
-            R.pathOr('', ['children']),
-          )(items)
-        }
-        placeholder={placeholder}
-        readOnly
-      />
-      <StyledButton square><IconFold /></StyledButton>
-    </StyledInputGroup>
+class Select extends React.Component {
+  static propTypes = {
+    kind: PropTypes.string,
+    value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
+    placeholder: PropTypes.string,
+  };
+  static defaultProps = {
+    kind: 'primary',
+    value: '',
+  };
+  state = { isOpen: false }
+  onFocus = () => this.setState({ isOpen: true });
+  onBlur = () => this.setState({ isOpen: false });
+  valueMapper = value => R.pipe(
+    R.find(R.propEq('value', value)),
+    R.pathOr('', ['children']),
+  )(this.props.items);
+  render() {
+    const { isOpen } = this.state;
+    const { items, kind, value, placeholder, ...otherProps } = this.props;
+    const { onFocus, onBlur, valueMapper } = this;
+    return (
+      <Wrapper>
+        <StyledInputGroup>
+          <Input
+            kind={kind}
+            value={valueMapper(value)}
+            placeholder={placeholder}
+            readOnly
+            focus={isOpen}
+          />
+          <StyledButton kind={kind} active={isOpen} square><IconFold /></StyledButton>
+        </StyledInputGroup>
 
-    <StyledSelect
-      value={value || PLACEHOLDER_VALUE}
-      {...otherProps}
-      onFocus={console.log}
-      onBlur={console.log}
-    >
-      {placeholder && <option value={PLACEHOLDER_VALUE} disabled>{placeholder}</option>}
-      {items.map(e => <option key={e.value} {...e} />)}
-    </StyledSelect>
-  </Wrapper>;
-
-Select.displayName = 'Select';
-Select.propTypes = {
-  kind: PropTypes.string,
-  value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
-  placeholder: PropTypes.string,
-  valueMapper: PropTypes.func.isRequired, // value => string
-};
-
-Select.defaultProps = {
-  kind: 'primary',
-  value: '',
-  valueMapper: R.identity,
-};
+        <StyledSelect
+          value={value || PLACEHOLDER_VALUE}
+          {...otherProps}
+          onFocus={onFocus}
+          onBlur={onBlur}
+        >
+          {placeholder && <option value={PLACEHOLDER_VALUE} disabled>{placeholder}</option>}
+          {items.map(e => <option key={e.value} {...e} />)}
+        </StyledSelect>
+      </Wrapper>
+    );
+  }
+}
 
 export default Select;
