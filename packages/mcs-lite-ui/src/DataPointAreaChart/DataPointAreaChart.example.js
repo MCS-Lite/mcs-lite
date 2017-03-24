@@ -32,47 +32,47 @@ storiesOf('DataPointAreaChart', module)
   .addWithInfo(
     'RechartTooltip',
     'Customize',
-    () =>
+    () => (
       <RechartTooltip
         active
         payload={[{ value: 1 }]}
         label={1532438716989}
         formatter={value => `formatter(${value})`}
         labelFormatter={value => `labelFormatter(${value})`}
-      />,
-    { inline: true, propTables: [RechartTooltip]},
+      />
+    ),
+    { inline: true, propTables: [RechartTooltip] }
   )
-
   .addWithInfo(
     'API',
     'Default',
-    () =>
+    () => (
       <DemoWrapper>
         <DataPointAreaChart data={data1} />
-      </DemoWrapper>,
-    { inline: true, propTables: [DataPointAreaChart]},
+      </DemoWrapper>
+    ),
+    { inline: true, propTables: [DataPointAreaChart] }
   )
-
   .addWithInfo(
     'With isAnimationActive props',
     'Render with animation',
-    () =>
+    () => (
       <DemoWrapper>
         <DataPointAreaChart isAnimationActive data={data1} />
-      </DemoWrapper>,
-    { inline: true, propTables: [DataPointAreaChart]},
+      </DemoWrapper>
+    ),
+    { inline: true, propTables: [DataPointAreaChart] }
   )
-
   .addWithInfo(
     'With kind and type props',
     '',
-    () =>
+    () => (
       <DemoWrapper>
         <DataPointAreaChart kind="warning" type="step" data={data2} />
-      </DemoWrapper>,
-    { inline: true, propTables: [DataPointAreaChart]},
+      </DemoWrapper>
+    ),
+    { inline: true, propTables: [DataPointAreaChart] }
   )
-
   .addWithInfo(
     'With realtime data',
     '',
@@ -90,14 +90,20 @@ storiesOf('DataPointAreaChart', module)
           ],
         };
         componentDidMount() {
-          this.interval = setInterval(() => {
-            this.setState({
-              data: [
-                ...this.state.data.slice(1),
-                { value: Math.random() * 15000, updatedAt: '2016-12-13 00:07' },
-              ],
-            });
-          }, 2000);
+          this.interval = setInterval(
+            () => {
+              this.setState({
+                data: [
+                  ...this.state.data.slice(1),
+                  {
+                    value: Math.random() * 15000,
+                    updatedAt: '2016-12-13 00:07',
+                  },
+                ],
+              });
+            },
+            2000
+          );
         }
         componentWillUnmount() {
           clearInterval(this.interval);
@@ -113,5 +119,5 @@ storiesOf('DataPointAreaChart', module)
 
       return <RealtimeChart />;
     },
-    { inline: true, propTables: [DataPointAreaChart]},
+    { inline: true, propTables: [DataPointAreaChart] }
   );

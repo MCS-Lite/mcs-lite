@@ -8,15 +8,13 @@ import CopyButton from '../CopyButton';
 jest.mock('copy-to-clipboard');
 jest.mock('mcs-lite-icon');
 
-it('should handle onClick', (done) => {
+it('should handle onClick', done => {
   const wrapper = mount(
     <ThemeProvider theme={theme}>
-      <CopyButton
-        text={123}
-      >
+      <CopyButton text={123}>
         Copy
       </CopyButton>
-    </ThemeProvider>,
+    </ThemeProvider>
   );
 
   // After clicking
@@ -24,8 +22,11 @@ it('should handle onClick', (done) => {
 
   expect(wrapper.find(CopyButton).contains(<IconLoading />)).toBe(true);
 
-  setTimeout(() => {
-    expect(wrapper.find(CopyButton).contains(<IconDone />)).toBe(true);
-    done();
-  }, 600);
+  setTimeout(
+    () => {
+      expect(wrapper.find(CopyButton).contains(<IconDone />)).toBe(true);
+      done();
+    },
+    600
+  );
 });

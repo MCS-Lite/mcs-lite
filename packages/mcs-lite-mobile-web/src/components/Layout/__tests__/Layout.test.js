@@ -14,7 +14,7 @@ it('should renders <Layout.LayoutDefault> correctly', () => {
       <Layout.LayoutDefault>
         <div>Mock children</div>
       </Layout.LayoutDefault>
-    </ThemeProvider>,
+    </ThemeProvider>
   );
 
   expect(toJson(wrapper.find(Layout.LayoutDefault))).toMatchSnapshot();
@@ -26,7 +26,7 @@ it('should renders <Layout.LayoutDialog> correctly', () => {
       <Layout.LayoutDialog>
         <div>Mock children</div>
       </Layout.LayoutDialog>
-    </ThemeProvider>,
+    </ThemeProvider>
   );
 
   expect(toJson(wrapper.find(Layout.LayoutDialog))).toMatchSnapshot();

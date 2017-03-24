@@ -16,7 +16,7 @@ it('should render INTEGER_DISPLAY correctly with default value to N/A', () => {
         }}
         eventHandler={() => {}}
       />
-    </ThemeProvider>,
+    </ThemeProvider>
   );
 
   expect(wrapper.find(DataChannelAdapter)).toMatchSnapshot();
@@ -34,7 +34,7 @@ it('should render INTEGER_DISPLAY correctly with value', () => {
         }}
         eventHandler={() => {}}
       />
-    </ThemeProvider>,
+    </ThemeProvider>
   );
 
   expect(wrapper.find(DataChannelAdapter)).toMatchSnapshot();
@@ -52,7 +52,7 @@ it('should render INTEGER_DISPLAY correctly with zero', () => {
         }}
         eventHandler={() => {}}
       />
-    </ThemeProvider>,
+    </ThemeProvider>
   );
 
   expect(wrapper.find(DataChannelAdapter)).toMatchSnapshot();
@@ -70,7 +70,7 @@ it('should render INTEGER_DISPLAY correctly with unit', () => {
         }}
         eventHandler={() => {}}
       />
-    </ThemeProvider>,
+    </ThemeProvider>
   );
 
   expect(wrapper.find(DataChannelAdapter)).toMatchSnapshot();

@@ -9,22 +9,34 @@ const babelOptions = {
 const compile = code => babel.transform(code, babelOptions).code;
 
 it('should work with recompose as default', () => {
-  expect(compile(`
+  expect(
+    compile(
+      `
 import Rc from 'recompose';
 console.log(Rc.withState);
-  `)).toMatchSnapshot();
+  `
+    )
+  ).toMatchSnapshot();
 });
 
 it('should work with recompose', () => {
-  expect(compile(`
+  expect(
+    compile(
+      `
 import { withState } from 'recompose';
 console.log(withState);
-  `)).toMatchSnapshot();
+  `
+    )
+  ).toMatchSnapshot();
 });
 
 it('should work with recompose/createHelper', () => {
-  expect(compile(`
+  expect(
+    compile(
+      `
 import createHelper from 'recompose/createHelper';
 console.log(createHelper);
-  `)).toMatchSnapshot();
+  `
+    )
+  ).toMatchSnapshot();
 });

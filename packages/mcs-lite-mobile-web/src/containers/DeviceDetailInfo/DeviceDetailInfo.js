@@ -19,7 +19,7 @@ class DeviceDetailInfo extends React.Component {
 
     // React-intl I18n
     getMessages: PropTypes.func.isRequired,
-  }
+  };
   componentWillMount = () => this.props.fetchDeviceDetail(this.props.deviceId);
   render() {
     const { deviceId, device, getMessages: t } = this.props;
@@ -40,16 +40,17 @@ class DeviceDetailInfo extends React.Component {
         />
 
         <main>
-          {device && (
+          {device &&
             <Container>
               <div><B>{t('deviceName')}</B><P>{device.deviceName}</P></div>
               <div><B>{t('creator')}</B><P>{device.user.userName}</P></div>
               <div><B>{t('version')}</B><P>{device.prototype.version}</P></div>
-              <div><B>{t('description')}</B><P>{device.deviceDescription}</P></div>
+              <div>
+                <B>{t('description')}</B><P>{device.deviceDescription}</P>
+              </div>
               <div><B>DeviceId</B><P>{device.deviceId}</P></div>
               <div><B>DeviceKey</B><P>{device.deviceKey}</P></div>
-            </Container>
-          )}
+            </Container>}
         </main>
       </div>
     );

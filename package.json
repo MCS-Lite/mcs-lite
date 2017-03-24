@@ -10,7 +10,9 @@
     "ncu-update": "ncu -au && lerna exec --concurrency 1 -- ncu -au",
     "release": "lerna publish",
     "prerelease": "./tasks/build.sh",
-    "danger": "danger run --verbose"
+    "danger": "danger run --verbose",
+    "format": "prettier --trailing-comma es5 --single-quote --write 'packages/*/*.js' 'packages/*/!(node_modules|build|lib|storybook-static|coverage|.next|_book|flow-typed)/**/*.js'",
+    "precommit": "lint-staged"
   },
   "devDependencies": {
     "babel-eslint": "^7.2.0",
@@ -27,5 +29,11 @@
   },
   "stylelint": {
     "extends": "./packages/stylelint-config-mcs-lite/index.js"
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --trailing-comma es5 --single-quote --write",
+      "git add"
+    ]
   }
 }

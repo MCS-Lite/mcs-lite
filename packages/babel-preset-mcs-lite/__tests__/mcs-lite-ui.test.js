@@ -9,15 +9,23 @@ const babelOptions = {
 const compile = code => babel.transform(code, babelOptions).code;
 
 it('should work with mcs-lite-ui', () => {
-  expect(compile(`
+  expect(
+    compile(
+      `
 import { Button } from 'mcs-lite-ui';
 console.log(Button);
-  `)).toMatchSnapshot();
+  `
+    )
+  ).toMatchSnapshot();
 });
 
 it('should work with mcs-lite-ui/lib', () => {
-  expect(compile(`
+  expect(
+    compile(
+      `
 import Button from 'mcs-lite-ui/lib/Button';
 console.log(Button);
-  `)).toMatchSnapshot();
+  `
+    )
+  ).toMatchSnapshot();
 });

@@ -5,17 +5,11 @@ import R from 'ramda';
 import emptyFunction from '../utils/emptyFunction';
 
 const mapBorderColorByActive = R.cond([
-  [
-    R.propEq('active', true),
-    props => R.path(['theme', 'color', props.color]),
-  ],
+  [R.propEq('active', true), props => R.path(['theme', 'color', props.color])],
   [R.T, R.always('transparent')],
 ]);
 const mapColorByActive = R.cond([
-  [
-    R.propEq('active', true),
-    props => R.path(['theme', 'color', props.color]),
-  ],
+  [R.propEq('active', true), props => R.path(['theme', 'color', props.color])],
   [R.T, R.path(['theme', 'color', 'black'])],
 ]);
 
@@ -50,13 +44,7 @@ class TabItem extends React.Component {
   render() {
     const { value, ...otherProps } = this.props;
     const { onClick } = this;
-    return (
-      <Item
-        {...otherProps}
-        value={value}
-        onClick={onClick}
-      />
-    );
+    return <Item {...otherProps} value={value} onClick={onClick} />;
   }
 }
 

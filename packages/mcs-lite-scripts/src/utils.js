@@ -8,7 +8,7 @@ const babelOptions = {
 
 const compile = code => babel.transform(code, babelOptions).code;
 
-const parseSVG = (xml) => {
+const parseSVG = xml => {
   const $ = cheerio.load(xml, { xmlMode: true });
   $('path[fill="none"]').remove();
   return {
@@ -17,7 +17,8 @@ const parseSVG = (xml) => {
   };
 };
 
-const template = (componentName, { children, viewBox }) => `
+const template = (componentName, { children, viewBox }) =>
+  `
 import React, { PropTypes } from 'react';
 
 class ${componentName} extends React.Component {

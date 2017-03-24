@@ -29,26 +29,21 @@ storiesOf('Overlay', module)
                 Hover me
               </A>
 
-              {
-                this.state.show && (
-                  <Overlay
-                    target={this.state.target}
-                    {...this.props}
-                  >
-                    <div key="div">This is overlay content.</div>
-                  </Overlay>
-                )
-              }
+              {this.state.show &&
+                <Overlay target={this.state.target} {...this.props}>
+                  <div key="div">This is overlay content.</div>
+                </Overlay>}
             </div>
           );
         }
       }
 
-      return <SimpleOverlay alignConfig={{ points: ['cl', 'cr'], offset: [5, 0]}} />;
+      return (
+        <SimpleOverlay alignConfig={{ points: ['cl', 'cr'], offset: [5, 0] }} />
+      );
     },
-    { inline: true, propTables: [Overlay]},
+    { inline: true, propTables: [Overlay] }
   )
-
   .addWithInfo(
     'Dropdown Menu',
     'With onHide function for rootClose',
@@ -74,20 +69,17 @@ storiesOf('Overlay', module)
                 Button
               </Button>
 
-              {
-                this.state.show && (
-                  <Overlay
-                    target={this.state.target}
-                    onClickOutSide={this.onHide}
-                    {...this.props}
-                  >
-                    <StyledMenu key="menu">
-                      <MenuItem onClick={action('click 1')}>1</MenuItem>
-                      <MenuItem onClick={action('click 2')}>2</MenuItem>
-                    </StyledMenu>
-                  </Overlay>
-                )
-              }
+              {this.state.show &&
+                <Overlay
+                  target={this.state.target}
+                  onClickOutSide={this.onHide}
+                  {...this.props}
+                >
+                  <StyledMenu key="menu">
+                    <MenuItem onClick={action('click 1')}>1</MenuItem>
+                    <MenuItem onClick={action('click 2')}>2</MenuItem>
+                  </StyledMenu>
+                </Overlay>}
             </div>
           );
         }
@@ -95,8 +87,12 @@ storiesOf('Overlay', module)
 
       return (
         <Wrapper>
-          <OverlayMenu alignConfig={{ points: ['tl', 'bl'], offset: [0, 16]}} />
-          <OverlayMenu alignConfig={{ points: ['tc', 'bc'], offset: [0, 16]}} />
+          <OverlayMenu
+            alignConfig={{ points: ['tl', 'bl'], offset: [0, 16] }}
+          />
+          <OverlayMenu
+            alignConfig={{ points: ['tc', 'bc'], offset: [0, 16] }}
+          />
           <OverlayMenu
             transitionConfig={{
               component: false,
@@ -111,5 +107,5 @@ storiesOf('Overlay', module)
         </Wrapper>
       );
     },
-    { inline: true, propTables: [Overlay]},
+    { inline: true, propTables: [Overlay] }
   );

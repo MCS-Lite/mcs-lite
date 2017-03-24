@@ -11,12 +11,11 @@ it('should renders <DeviceDetailInfo> correctly without device data', () => {
       deviceId="deviceId"
       isLoading={false}
       fetchDeviceDetail={() => {}}
-    />,
+    />
   );
 
   expect(toJson(wrapper)).toMatchSnapshot();
 });
-
 
 it('should renders <DeviceDetailInfo> correctly', () => {
   const fetchMock = jest.fn();
@@ -39,7 +38,7 @@ it('should renders <DeviceDetailInfo> correctly', () => {
       }}
       isLoading={false}
       fetchDeviceDetail={fetchMock}
-    />,
+    />
   );
 
   expect(toJson(wrapper)).toMatchSnapshot();

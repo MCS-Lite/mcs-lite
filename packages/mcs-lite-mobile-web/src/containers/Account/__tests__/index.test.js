@@ -14,17 +14,19 @@ it('should render Container correctly with HOC', () => {
   const wrapper = shallow(
     <Provider store={store}>
       <Container />
-    </Provider>,
+    </Provider>
   );
 
   expect(toJson(wrapper)).toMatchSnapshot();
 });
 
 it('should return props correctly with mapStateToProps', () => {
-  const state = { auth: {
-    userName: 'Michael Hsu',
-    email: 'evenchange4@gmail.com',
-  }};
+  const state = {
+    auth: {
+      userName: 'Michael Hsu',
+      email: 'evenchange4@gmail.com',
+    },
+  };
 
   expect(mapStateToProps(state)).toMatchSnapshot();
 });

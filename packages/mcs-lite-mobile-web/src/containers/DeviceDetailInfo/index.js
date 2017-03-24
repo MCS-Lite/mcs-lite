@@ -5,13 +5,15 @@ import DeviceDetailInfo from './DeviceDetailInfo';
 import messages from './messages';
 import { actions } from '../../modules/devices';
 
-export const mapStateToProps = ({ devices }, { params: { deviceId }}) => ({
+export const mapStateToProps = ({ devices }, { params: { deviceId } }) => ({
   deviceId,
   device: devices[deviceId],
 });
-export const mapDispatchToProps = { fetchDeviceDetail: actions.fetchDeviceDetail };
+export const mapDispatchToProps = {
+  fetchDeviceDetail: actions.fetchDeviceDetail,
+};
 
 export default compose(
   connect(mapStateToProps, mapDispatchToProps),
-  withGetMessages(messages, 'DeviceDetailInfo'),
+  withGetMessages(messages, 'DeviceDetailInfo')
 )(DeviceDetailInfo);

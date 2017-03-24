@@ -17,10 +17,10 @@ class Dialog extends React.Component {
   static propTypes = {
     show: PropTypes.bool.isRequired,
     onHide: PropTypes.func,
-  }
+  };
   static defaultProps = {
     onHide: emptyFunction,
-  }
+  };
   render() {
     const { onHide, show, children, ...otherProps } = this.props;
 

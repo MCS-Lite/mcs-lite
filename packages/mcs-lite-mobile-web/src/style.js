@@ -15,7 +15,7 @@ injectGlobal`
     color: ${mobileTheme.base.bodyColor};
   }
 
-  ${''/* DO NOT use 100vh for mobile (safari) */}
+  ${/* DO NOT use 100vh for mobile (safari) */ ''}
   html,
   body,
   body > div:first-child {

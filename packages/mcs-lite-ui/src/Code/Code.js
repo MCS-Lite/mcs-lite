@@ -1,6 +1,8 @@
 import React, { PropTypes } from 'react';
 import { withTheme } from 'styled-components';
-import SyntaxHighlighter, { registerLanguage } from 'react-syntax-highlighter/dist/light';
+import SyntaxHighlighter, {
+  registerLanguage,
+} from 'react-syntax-highlighter/dist/light';
 import js from 'highlight.js/lib/languages/javascript';
 import cpp from 'highlight.js/lib/languages/cpp';
 import arduino from 'highlight.js/lib/languages/arduino';
@@ -10,7 +12,7 @@ registerLanguage('javascript', js);
 registerLanguage('cpp', cpp); // Remind: for arduino
 registerLanguage('arduino', arduino);
 
-const Code = withTheme(({ style, theme, ...otherProps }) =>
+const Code = withTheme(({ style, theme, ...otherProps }) => (
   <SyntaxHighlighter
     style={gist}
     customStyle={{
@@ -22,8 +24,8 @@ const Code = withTheme(({ style, theme, ...otherProps }) =>
     }}
     wrapLines
     {...otherProps}
-  />,
-);
+  />
+));
 
 Code.displayName = 'Code';
 Code.propTypes = {

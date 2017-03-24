@@ -14,5 +14,5 @@ export const mapDispatchToProps = { fetchDeviceList: actions.fetchDeviceList };
 
 export default compose(
   connect(mapStateToProps, mapDispatchToProps),
-  withGetMessages(messages, 'DeviceList'),
+  withGetMessages(messages, 'DeviceList')
 )(DeviceList);

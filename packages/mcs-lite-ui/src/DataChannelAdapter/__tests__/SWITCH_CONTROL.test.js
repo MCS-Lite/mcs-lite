@@ -17,7 +17,7 @@ it('should render SWITCH_CONTROL correctly with default value to false', () => {
         }}
         eventHandler={() => {}}
       />
-    </ThemeProvider>,
+    </ThemeProvider>
   );
 
   expect(wrapper.find(DataChannelAdapter)).toMatchSnapshot();
@@ -35,7 +35,7 @@ it('should render SWITCH_CONTROL correctly with true value', () => {
         }}
         eventHandler={() => {}}
       />
-    </ThemeProvider>,
+    </ThemeProvider>
   );
 
   expect(wrapper.find(DataChannelAdapter)).toMatchSnapshot();
@@ -53,7 +53,7 @@ it('should render SWITCH_CONTROL correctly with false value', () => {
         }}
         eventHandler={() => {}}
       />
-    </ThemeProvider>,
+    </ThemeProvider>
   );
 
   expect(wrapper.find(DataChannelAdapter)).toMatchSnapshot();
@@ -73,14 +73,16 @@ it('should handle onSubmit with true value', () => {
         }}
         eventHandler={mockEventHandler}
       />
-    </ThemeProvider>,
+    </ThemeProvider>
   );
 
   expect(mockEventHandler).not.toHaveBeenCalled();
   wrapper.find(DataChannel.ControlSwitch).props().onSubmit();
   expect(mockEventHandler).toHaveBeenCalledWith({
-    id: 'id', type: 'SUBMIT', values: { value: 1 }},
-  );
+    id: 'id',
+    type: 'SUBMIT',
+    values: { value: 1 },
+  });
 });
 
 it('should handle onSubmit with false value', () => {
@@ -97,12 +99,14 @@ it('should handle onSubmit with false value', () => {
         }}
         eventHandler={mockEventHandler}
       />
-    </ThemeProvider>,
+    </ThemeProvider>
   );
 
   expect(mockEventHandler).not.toHaveBeenCalled();
   wrapper.find(DataChannel.ControlSwitch).props().onSubmit();
   expect(mockEventHandler).toHaveBeenCalledWith({
-    id: 'id', type: 'SUBMIT', values: { value: 0 }},
-  );
+    id: 'id',
+    type: 'SUBMIT',
+    values: { value: 0 },
+  });
 });

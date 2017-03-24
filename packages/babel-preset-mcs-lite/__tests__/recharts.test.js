@@ -9,8 +9,12 @@ const babelOptions = {
 const compile = code => babel.transform(code, babelOptions).code;
 
 it('should work with recharts', () => {
-  expect(compile(`
+  expect(
+    compile(
+      `
 import { AreaChart } from 'recharts';
 console.log(AreaChart);
-  `)).toMatchSnapshot();
+  `
+    )
+  ).toMatchSnapshot();
 });

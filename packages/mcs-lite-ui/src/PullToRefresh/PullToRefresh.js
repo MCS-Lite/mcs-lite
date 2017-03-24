@@ -12,7 +12,7 @@ const HEIGHT = 60;
 const SENSITIVITY = 2;
 
 const PullWrapper = styled.div`
-  transition: ${props => (props.distance === 0 || props.isLoading) ? 'all .25s ease' : 'initial'};
+  transition: ${props => props.distance === 0 || props.isLoading ? 'all .25s ease' : 'initial'};
 `;
 
 const LoadingContainer = styled.div`
@@ -35,12 +35,18 @@ class PullToRefresh extends React.Component {
     onPull: PropTypes.func.isRequired,
     IconArrow: PropTypes.any,
     IconLoading: PropTypes.any,
-  }
+  };
 
   static defaultProps = {
-    IconLoading: () => <Heading level={2} color="grayBase"><Spin><MLIconLoading /></Spin></Heading>,
-    IconArrow: () => <Heading level={2} color="grayBase"><IconGoDown /></Heading>,
-  }
+    IconLoading: () => (
+      <Heading level={2} color="grayBase">
+        <Spin><MLIconLoading /></Spin>
+      </Heading>
+    ),
+    IconArrow: () => (
+      <Heading level={2} color="grayBase"><IconGoDown /></Heading>
+    ),
+  };
 
   constructor(props) {
     super(props);
@@ -53,12 +59,12 @@ class PullToRefresh extends React.Component {
     return this.reset();
   }
 
-  onPanDownStart = (e) => {
+  onPanDownStart = e => {
     this.fromY = e.srcEvent.pageY;
     this.toY = this.fromY;
-  }
+  };
 
-  onPanDown = (e) => {
+  onPanDown = e => {
     if (document.body.scrollTop > 0) return; // Remind: Skip the event if it's not pulled from top.
     if (this.props.isLoading) {
       e.preventDefault(); // Hint: Prevent being pulled while refreshing.
@@ -68,7 +74,7 @@ class PullToRefresh extends React.Component {
 
     this.toY = e.srcEvent.pageY;
     this.setState({ distance: (this.toY - this.fromY) / SENSITIVITY });
-  }
+  };
 
   onPanDownEnd = () => {
     if (this.props.isLoading) return; // Remind: Prevent re-refreshing.
@@ -81,13 +87,19 @@ class PullToRefresh extends React.Component {
 
     this.setLoading();
     this.props.onPull();
-  }
+  };
 
   setLoading = () => this.setState({ distance: HEIGHT });
   reset = () => this.setState({ distance: 0 });
 
   render() {
-    const { children, isLoading, IconArrow, IconLoading, ...otherProps } = this.props;
+    const {
+      children,
+      isLoading,
+      IconArrow,
+      IconLoading,
+      ...otherProps
+    } = this.props;
     const { distance } = this.state;
 
     return (

@@ -13,7 +13,7 @@ it('should return correct state', () => {
       show
       onHide={() => {}}
       onSubmit={() => {}}
-    />,
+    />
   );
 
   // Before onChange
@@ -35,7 +35,7 @@ it('should handle onCancel', () => {
       show
       onHide={mockOnHide}
       onSubmit={() => {}}
-    />,
+    />
   );
 
   // Before onCancel
@@ -59,7 +59,7 @@ it('should handle onSubmit', () => {
       show
       onHide={mockOnHide}
       onSubmit={mockOnSubmit}
-    />,
+    />
   );
 
   // Before onSubmit

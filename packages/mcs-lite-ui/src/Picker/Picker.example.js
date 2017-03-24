@@ -3,11 +3,11 @@ import { storiesOf, action } from '@kadira/storybook';
 import { Picker, PickerContainer } from '.';
 
 class StatefulPicker extends React.Component {
-  state = { picker1: 0, picker2: 1 }
+  state = { picker1: 0, picker2: 1 };
   onChange = (index, props) => {
     this.setState({ [props.name]: index });
     action('Picker onChange(index: number, props: object)')(index, props);
-  }
+  };
   render() {
     return (
       <PickerContainer>
@@ -28,14 +28,13 @@ class StatefulPicker extends React.Component {
   }
 }
 
-storiesOf('Picker', module)
-  .addWithInfo(
-    'API',
-    `
+storiesOf('Picker', module).addWithInfo(
+  'API',
+  `
       ~~~js
       function onChange(index: number, props: object): void {}
       ~~~
     `,
-    () => <StatefulPicker />,
-    { inline: true, propTables: [Picker]},
-  );
+  () => <StatefulPicker />,
+  { inline: true, propTables: [Picker] }
+);

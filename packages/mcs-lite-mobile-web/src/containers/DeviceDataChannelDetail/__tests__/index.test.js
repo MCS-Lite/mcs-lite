@@ -14,7 +14,7 @@ it('should render Container correctly with HOC', () => {
   const wrapper = shallow(
     <Provider store={store}>
       <Container />
-    </Provider>,
+    </Provider>
   );
 
   expect(toJson(wrapper)).toMatchSnapshot();
@@ -22,9 +22,9 @@ it('should render Container correctly with HOC', () => {
 
 it('should return props correctly with mapStateToProps', () => {
   const state = {
-    devices: { deviceId: { deviceName: 'deviceName' }},
+    devices: { deviceId: { deviceName: 'deviceName' } },
     ui: { isLoading: false },
-    datapoints: { dataChannelId: {}},
+    datapoints: { dataChannelId: {} },
   };
   const ownProps = {
     params: { deviceId: 'deviceId', dataChannelId: 'dataChannelId' },

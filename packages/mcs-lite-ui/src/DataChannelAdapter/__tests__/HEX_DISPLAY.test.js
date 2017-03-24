@@ -16,7 +16,7 @@ it('should render HEX_DISPLAY correctly with default value to empty', () => {
         }}
         eventHandler={() => {}}
       />
-    </ThemeProvider>,
+    </ThemeProvider>
   );
 
   expect(wrapper.find(DataChannelAdapter)).toMatchSnapshot();
@@ -34,7 +34,7 @@ it('should render HEX_DISPLAY correctly with value', () => {
         }}
         eventHandler={() => {}}
       />
-    </ThemeProvider>,
+    </ThemeProvider>
   );
 
   expect(wrapper.find(DataChannelAdapter)).toMatchSnapshot();
@@ -52,7 +52,7 @@ it('should render HEX_DISPLAY correctly with empty string', () => {
         }}
         eventHandler={() => {}}
       />
-    </ThemeProvider>,
+    </ThemeProvider>
   );
 
   expect(wrapper.find(DataChannelAdapter)).toMatchSnapshot();

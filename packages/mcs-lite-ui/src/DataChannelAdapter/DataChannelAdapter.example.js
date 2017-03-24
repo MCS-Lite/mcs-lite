@@ -22,10 +22,9 @@ const CardWrapper = styled.div`
   }
 `;
 
-storiesOf('DataChannelAdapter', module)
-  .addWithInfo(
-    'API',
-    `
+storiesOf('DataChannelAdapter', module).addWithInfo(
+  'API',
+  `
       ~~~js
       type Event = {
         type: 'SUBMIT'|'CHANGE'|'CLEAR', // event type
@@ -39,25 +38,26 @@ storiesOf('DataChannelAdapter', module)
       function eventHandler(event: Event): void {}
       ~~~
     `,
-    () =>
-      <CardWrapper>
-        {
-          DATA_CHANNELS.map(dataChannel => (
-            <DataChannelCard
-              key={dataChannel.id}
-              data-width="half"
-              title={dataChannel.type}
-              subtitle="Last data point time : 2015-06-12 12:00"
-              description="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
-              header={<a href="">Link</a>}
-            >
-              <DataChannelAdapter
-                dataChannelProps={dataChannel}
-                eventHandler={action('DataChannelAdapter eventHandler(event: Event)')}
-              />
-            </DataChannelCard>
-          ))
-        }
-      </CardWrapper>,
-    { inline: true },
-  );
+  () => (
+    <CardWrapper>
+      {DATA_CHANNELS.map(dataChannel => (
+        <DataChannelCard
+          key={dataChannel.id}
+          data-width="half"
+          title={dataChannel.type}
+          subtitle="Last data point time : 2015-06-12 12:00"
+          description="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
+          header={<a href="">Link</a>}
+        >
+          <DataChannelAdapter
+            dataChannelProps={dataChannel}
+            eventHandler={action(
+              'DataChannelAdapter eventHandler(event: Event)'
+            )}
+          />
+        </DataChannelCard>
+      ))}
+    </CardWrapper>
+  ),
+  { inline: true }
+);

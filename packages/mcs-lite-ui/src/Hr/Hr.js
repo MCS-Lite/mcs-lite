@@ -32,7 +32,6 @@ const Hr = ({ children, ...otherProps }) => {
   );
 };
 
-
 Hr.displayName = 'Hr';
 Hr.propTypes = {
   children: PropTypes.string,

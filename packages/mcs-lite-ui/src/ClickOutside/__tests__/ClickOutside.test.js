@@ -17,7 +17,7 @@ it('should add a "click" EventListener of document', () => {
   const wrapper = mount(
     <ClickOutside onClick={() => {}}>
       <div>Children</div>
-    </ClickOutside>,
+    </ClickOutside>
   );
 
   // After mount
@@ -35,7 +35,7 @@ it('should handle onClick', () => {
   const wrapper = mount(
     <ClickOutside onClick={mockOnClick}>
       <div>Children</div>
-    </ClickOutside>,
+    </ClickOutside>
   );
 
   // Before clicking

@@ -72,10 +72,7 @@ const DATA_CHANNELS = [
     type: 'CATEGORY_CONTROL',
     values: { value: 'v2' },
     format: {
-      items: [
-        { name: 'k1', value: 'v1' },
-        { name: 'k2', value: 'v2' },
-      ],
+      items: [{ name: 'k1', value: 'v1' }, { name: 'k2', value: 'v2' }],
     },
   },
   {

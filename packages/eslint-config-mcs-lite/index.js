@@ -1,8 +1,6 @@
 module.exports = {
   parser: 'babel-eslint',
-  extends: [
-    'airbnb',
-  ],
+  extends: ['airbnb'],
   globals: {
     jest: true,
     describe: true,
@@ -24,10 +22,7 @@ module.exports = {
         ],
       },
     ],
-    'object-shorthand': [
-      2,
-      'always',
-    ],
+    'object-shorthand': [2, 'always'],
     'object-curly-spacing': [
       2,
       'always',
@@ -49,19 +44,14 @@ module.exports = {
         ignoreStateless: true,
       },
     ],
-    'no-use-before-define': [
-      2,
-      'nofunc',
-    ],
+    'no-use-before-define': [2, 'nofunc'],
     'no-console': 2,
     'import/no-unresolved': 0,
     'global-require': 0,
     'react/jsx-filename-extension': [
       1,
       {
-        extensions: [
-          '.js',
-        ],
+        extensions: ['.js'],
       },
     ],
     'import/no-extraneous-dependencies': 0,

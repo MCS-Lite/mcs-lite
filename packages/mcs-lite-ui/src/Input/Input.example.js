@@ -12,39 +12,46 @@ const Wrapper = styled.div`
 `;
 
 storiesOf('Input', module)
-  .addWithInfo(
-    'API',
-    '',
-    () => <Input placeholder="placeholder" />,
-    { inline: true },
-  )
+  .addWithInfo('API', '', () => <Input placeholder="placeholder" />, {
+    inline: true,
+  })
   .addWithInfo(
     'With kind props',
     '使用內建 kind props 樣式。',
-    () =>
+    () => (
       <Wrapper>
-        {
-          kindList.map(key => <Input key={key} kind={key} placeholder={key} />)
-        }
-      </Wrapper>,
-    { inline: true },
+        {kindList.map(key => <Input key={key} kind={key} placeholder={key} />)}
+      </Wrapper>
+    ),
+    { inline: true }
   )
   .addWithInfo(
     'With type props',
     '使用內建 type props 樣式。',
     () => {
       const types = [
-        'text', 'email', 'number', 'password', 'tel', 'search', 'month', 'week',
-        'date', 'color', 'file', 'radio', 'time', 'url', 'range',
+        'text',
+        'email',
+        'number',
+        'password',
+        'tel',
+        'search',
+        'month',
+        'week',
+        'date',
+        'color',
+        'file',
+        'radio',
+        'time',
+        'url',
+        'range',
       ];
 
       return (
         <Wrapper>
-          {
-            types.map(key => <Input key={key} type={key} placeholder={key} />)
-          }
+          {types.map(key => <Input key={key} type={key} placeholder={key} />)}
         </Wrapper>
       );
     },
-    { inline: true },
+    { inline: true }
   );

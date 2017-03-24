@@ -11,7 +11,7 @@ class IntlProvider extends React.Component {
 
     // Props
     defaultLocale: PropTypes.string.isRequired,
-  }
+  };
   componentWillMount() {
     const { locale, pushLocale, defaultLocale } = this.props;
 

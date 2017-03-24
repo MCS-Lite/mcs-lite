@@ -16,7 +16,7 @@ it('should renders <Account> correctly', () => {
       email="email"
       signout={() => {}}
       getMessages={R.identity}
-    />,
+    />
   );
 
   expect(toJson(wrapper)).toMatchSnapshot();
@@ -30,7 +30,7 @@ it('should return correctly payload when clicking signout', () => {
       email="email"
       signout={signoutMock}
       getMessages={R.identity}
-    />,
+    />
   );
 
   // Before clicking

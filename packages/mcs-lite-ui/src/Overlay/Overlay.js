@@ -10,12 +10,12 @@ import emptyFunction from '../utils/emptyFunction';
 
 class Overlay extends React.Component {
   static propTypes = {
-    onClickOutSide: PropTypes.func,                // for ClickOutside
+    onClickOutSide: PropTypes.func, // for ClickOutside
     children: PropTypes.node.isRequired,
-    target: PropTypes.any,                         // react mounted instance
-    alignConfig: PropTypes.object.isRequired,      // docs: https://github.com/yiminghe/dom-align#alignconfig-object-details
+    target: PropTypes.any, // react mounted instance
+    alignConfig: PropTypes.object.isRequired, // docs: https://github.com/yiminghe/dom-align#alignconfig-object-details
     transitionConfig: PropTypes.object.isRequired, // docs: https://github.com/souporserious/react-motion-ui-pack#props
-  }
+  };
   static defaultProps = {
     onClickOutSide: emptyFunction,
     alignConfig: {
@@ -31,20 +31,26 @@ class Overlay extends React.Component {
         translateY: -10,
       },
     },
-  }
-  onClickOutSide = (e) => {
+  };
+  onClickOutSide = e => {
     const node = findDOMNode(this.props.target);
     if (node && node.contains(e.target)) return; // Hint: Omit clicking target.
 
     this.props.onClickOutSide(e);
-  }
-  renderChildrenWithStyle = () => React.cloneElement(this.props.children, { style: { ...this.props.children.style, position: 'absolute' }});
+  };
+  renderChildrenWithStyle = () =>
+    React.cloneElement(this.props.children, {
+      style: { ...this.props.children.style, position: 'absolute' },
+    });
 
   render() {
     return (
       <Portal>
         <ClickOutside onClick={this.onClickOutSide}>
-          <DomAlign alignConfig={this.props.alignConfig} target={this.props.target}>
+          <DomAlign
+            alignConfig={this.props.alignConfig}
+            target={this.props.target}
+          >
             <Transition {...this.props.transitionConfig}>
               {this.renderChildrenWithStyle()}
             </Transition>

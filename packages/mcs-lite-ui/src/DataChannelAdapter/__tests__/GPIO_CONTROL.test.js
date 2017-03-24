@@ -17,7 +17,7 @@ it('should render GPIO_CONTROL correctly with default value to N/A', () => {
         }}
         eventHandler={() => {}}
       />
-    </ThemeProvider>,
+    </ThemeProvider>
   );
 
   expect(wrapper.find(DataChannelAdapter)).toMatchSnapshot();
@@ -35,7 +35,7 @@ it('should render GPIO_CONTROL correctly with Low', () => {
         }}
         eventHandler={() => {}}
       />
-    </ThemeProvider>,
+    </ThemeProvider>
   );
 
   expect(wrapper.find(DataChannelAdapter)).toMatchSnapshot();
@@ -53,7 +53,7 @@ it('should render GPIO_CONTROL correctly with High', () => {
         }}
         eventHandler={() => {}}
       />
-    </ThemeProvider>,
+    </ThemeProvider>
   );
 
   expect(wrapper.find(DataChannelAdapter)).toMatchSnapshot();
@@ -73,7 +73,7 @@ it('should handle onChange', () => {
         }}
         eventHandler={mockEventHandler}
       />
-    </ThemeProvider>,
+    </ThemeProvider>
   );
 
   expect(mockEventHandler).not.toHaveBeenCalled();
@@ -81,8 +81,10 @@ it('should handle onChange', () => {
     target: { value: 0 },
   });
   expect(mockEventHandler).toHaveBeenCalledWith({
-    id: 'id', type: 'CHANGE', values: { value: 0 }},
-  );
+    id: 'id',
+    type: 'CHANGE',
+    values: { value: 0 },
+  });
 });
 
 it('should handle onSubmit', () => {
@@ -99,12 +101,14 @@ it('should handle onSubmit', () => {
         }}
         eventHandler={mockEventHandler}
       />
-    </ThemeProvider>,
+    </ThemeProvider>
   );
 
   expect(mockEventHandler).not.toHaveBeenCalled();
   wrapper.find(DataChannel.ControlRange).props().onSubmit();
   expect(mockEventHandler).toHaveBeenCalledWith({
-    id: 'id', type: 'SUBMIT', values: { value: 1 }},
-  );
+    id: 'id',
+    type: 'SUBMIT',
+    values: { value: 1 },
+  });
 });

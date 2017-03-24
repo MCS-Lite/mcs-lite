@@ -15,10 +15,10 @@ class DeviceTrigger extends React.Component {
     isLoading: PropTypes.bool.isRequired,
     getMessages: PropTypes.func.isRequired,
     fetchDeviceDetail: PropTypes.func.isRequired,
-  }
+  };
   static defaultProps = {
     device: {},
-  }
+  };
   componentWillMount = () => this.fetch();
   fetch = () => this.props.fetchDeviceDetail(this.props.deviceId);
   render() {
@@ -42,7 +42,9 @@ class DeviceTrigger extends React.Component {
         <main>
           <PullToRefresh isLoading={isLoading} onPull={fetch}>
             <PreventDrag>
-              <StyledLink to={updatePathname(`/devices/${device.deviceId}/trigger/edit`)}>
+              <StyledLink
+                to={updatePathname(`/devices/${device.deviceId}/trigger/edit`)}
+              >
                 <Item>
                   <div>
                     <P>觸發條件名稱 A</P>
@@ -52,7 +54,9 @@ class DeviceTrigger extends React.Component {
                 </Item>
               </StyledLink>
 
-              <StyledLink to={updatePathname(`/devices/${device.deviceId}/trigger/edit`)}>
+              <StyledLink
+                to={updatePathname(`/devices/${device.deviceId}/trigger/edit`)}
+              >
                 <Item>
                   <div>
                     <P>觸發條件名稱 A</P>

@@ -12,7 +12,7 @@ it('should renders <DeviceList> correctly without devices', () => {
       devices={[]}
       isLoading={false}
       fetchDeviceList={fetchMock}
-    />,
+    />
   );
 
   expect(toJson(wrapper)).toMatchSnapshot();
@@ -33,7 +33,7 @@ it('should renders <DeviceList> correctly with one device', () => {
       ]}
       isLoading={false}
       fetchDeviceList={fetchMock}
-    />,
+    />
   );
 
   expect(toJson(wrapper)).toMatchSnapshot();
@@ -47,7 +47,7 @@ it('should renders <DeviceList> correctly when Filter open', () => {
       devices={[]}
       isLoading={false}
       fetchDeviceList={() => {}}
-    />,
+    />
   );
 
   wrapper.setState({ isFilterOpen: true });
@@ -61,7 +61,7 @@ it('should return correctly state', () => {
       devices={[]}
       isLoading={false}
       fetchDeviceList={() => {}}
-    />,
+    />
   );
 
   // Before Open
@@ -70,7 +70,7 @@ it('should return correctly state', () => {
 
   // After Open
   wrapper.instance().onFilterClick();
-  wrapper.instance().onFilterChange({ target: { value: 'keyword' }});
+  wrapper.instance().onFilterChange({ target: { value: 'keyword' } });
   expect(wrapper.state('filterValue')).toBe('keyword');
   expect(wrapper.state('isFilterOpen')).toBe(true);
 

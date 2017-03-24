@@ -27,12 +27,16 @@ export const constants = {
 // ----------------------------------------------------------------------------
 
 const fetchDeviceList = () => ({ type: FETCH_DEVICE_LIST });
-const fetchDeviceDetail = (deviceId, isForce) =>
-  ({ type: FETCH_DEVICE_DETAIL, payload: { deviceId, isForce }});
+const fetchDeviceDetail = (deviceId, isForce) => ({
+  type: FETCH_DEVICE_DETAIL,
+  payload: { deviceId, isForce },
+});
 const setDeviceList = payload => ({ type: SET_DEVICE_LIST, payload });
 const setDeviceDetail = payload => ({ type: SET_DEVICE_DETAIL, payload });
-const setDatapoint = (deviceId, datapoint, isFromServer) =>
-  ({ type: SET_DATAPOINT, payload: { deviceId, datapoint, isFromServer }});
+const setDatapoint = (deviceId, datapoint, isFromServer) => ({
+  type: SET_DATAPOINT,
+  payload: { deviceId, datapoint, isFromServer },
+});
 const clear = () => ({ type: CLEAR });
 
 export const actions = {
@@ -63,16 +67,13 @@ function fetchDeviceListCycle(sources) {
       category: 'devices',
     }));
 
-  const response$ = sources.HTTP
-    .select('devices')
-    .switch();
+  const response$ = sources.HTTP.select('devices').switch();
 
   const action$ = Observable.from([
     request$.mapTo(uiActions.setLoading()),
     response$.pluck('body', 'data').map(setDeviceList),
     response$.mapTo(uiActions.setLoaded()),
-  ])
-  .mergeAll();
+  ]).mergeAll();
 
   return {
     ACTION: action$,
@@ -103,18 +104,16 @@ function fetchDeviceDetailCycle(sources) {
       method: 'GET',
       headers: { Authorization: `Bearer ${accessToken}` },
       category: 'deviceDetail',
-    }));
+    })
+  );
 
-  const response$ = sources.HTTP
-    .select('deviceDetail')
-    .switch();
+  const response$ = sources.HTTP.select('deviceDetail').switch();
 
   const action$ = Observable.from([
     request$.mapTo(uiActions.setLoading()),
     response$.pluck('body', 'data').map(setDeviceDetail),
     response$.mapTo(uiActions.setLoaded()),
-  ])
-  .mergeAll();
+  ]).mergeAll();
 
   return {
     ACTION: action$,
@@ -136,13 +135,16 @@ const initialState = {}; // Remind: indexBy deviceId
 export default function reducer(state = initialState, action = {}) {
   switch (action.type) {
     case SET_DEVICE_LIST:
-      return action.payload.reduce((acc, device) => ({
-        ...acc,
-        [device.deviceId]: {
-          ...state[device.deviceId], // keep this device old info
-          ...device, // list api
-        },
-      }), {});
+      return action.payload.reduce(
+        (acc, device) => ({
+          ...acc,
+          [device.deviceId]: {
+            ...state[device.deviceId], // keep this device old info
+            ...device, // list api
+          },
+        }),
+        {}
+      );
 
     case SET_DEVICE_DETAIL:
       return {
@@ -157,7 +159,9 @@ export default function reducer(state = initialState, action = {}) {
       // TODO: refactor these codes
       const { datachannelId, values } = action.payload.datapoint;
       const dataChannels = state[action.payload.deviceId].datachannels;
-      const index = R.findIndex(R.propEq('datachannelId', datachannelId))(dataChannels);
+      const index = R.findIndex(R.propEq('datachannelId', datachannelId))(
+        dataChannels
+      );
       const updateDatapoints = R.assoc('datapoints', { values });
       const nextDataChannels = R.adjust(updateDatapoints, index)(dataChannels);
 

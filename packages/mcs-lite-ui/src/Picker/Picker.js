@@ -9,7 +9,7 @@ const CONTAINER_HEIGHT = 200;
 const ITEM_HEIGHT = 40;
 
 const ItemWrapper = styled.div`
-  padding-top: ${(CONTAINER_HEIGHT / 2) - (ITEM_HEIGHT / 2)}px;
+  padding-top: ${CONTAINER_HEIGHT / 2 - ITEM_HEIGHT / 2}px;
 `;
 
 const Item = styled.div`
@@ -24,15 +24,14 @@ const Item = styled.div`
 class Picker extends React.Component {
   static propTypes = {
     value: PropTypes.number.isRequired, // index
-    onChange: PropTypes.func,           // (index: number, props: object) => void
-    labels: PropTypes.arrayOf(PropTypes.oneOfType([
-      PropTypes.string,
-      PropTypes.number,
-    ])).isRequired,
-  }
+    onChange: PropTypes.func, // (index: number, props: object) => void
+    labels: PropTypes.arrayOf(
+      PropTypes.oneOfType([PropTypes.string, PropTypes.number])
+    ).isRequired,
+  };
   static defaultProps = {
     value: 0,
-  }
+  };
 
   constructor(props) {
     super(props);
@@ -43,17 +42,17 @@ class Picker extends React.Component {
     this.setState({ distance: this.calcDistanceByIndex(nextProps.value) });
   }
 
-  onPanVerticalStart = (e) => {
+  onPanVerticalStart = e => {
     this.fromY = e.srcEvent.pageY;
     this.toY = this.fromY;
     this.last = this.state.distance;
-  }
+  };
 
-  onPanVertical = (e) => {
+  onPanVertical = e => {
     this.toY = e.srcEvent.pageY;
     this.setState({ distance: this.last + (this.toY - this.fromY) });
     e.preventDefault();
-  }
+  };
 
   onPanVerticalEnd = () => {
     if (this.props.onChange) {
@@ -67,7 +66,7 @@ class Picker extends React.Component {
         distance: this.calcDistanceByIndex(this.props.value),
       });
     }
-  }
+  };
 
   clampIndex = R.clamp(0, this.props.labels.length - 1);
 
@@ -80,7 +79,7 @@ class Picker extends React.Component {
   calcDistanceByIndex = R.pipe(
     this.clampIndex,
     R.multiply(ITEM_HEIGHT),
-    R.negate,
+    R.negate
   );
 
   /**
@@ -95,7 +94,7 @@ class Picker extends React.Component {
     R.divide(R.__, ITEM_HEIGHT),
     Math.ceil,
     R.subtract(R.__, 1), // Remind: convert to index, start from 0.
-    this.clampIndex,
+    this.clampIndex
   );
 
   render() {
@@ -111,13 +110,11 @@ class Picker extends React.Component {
         direction="DIRECTION_VERTICAL"
       >
         <ItemWrapper style={{ marginTop: distance }}>
-          {
-            labels.map((label, index) => (
-              <Item key={label} active={calcIndexByDistance(distance) === index}>
-                {label}
-              </Item>
-            ))
-          }
+          {labels.map((label, index) => (
+            <Item key={label} active={calcIndexByDistance(distance) === index}>
+              {label}
+            </Item>
+          ))}
         </ItemWrapper>
       </Hammer>
     );

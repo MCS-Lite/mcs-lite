@@ -24,14 +24,22 @@ export const constants = {
 // 2. Action Creators (Sync)
 // ----------------------------------------------------------------------------
 
-const fetchDatapoints = (deviceId, dataChannelId) =>
-  ({ type: FETCH_DATAPOINTS, payload: { deviceId, dataChannelId }});
-const setDatapoints = ({ data, dataChannelId }) =>
-  ({ type: SET_DATAPOINTS, payload: { data, dataChannelId }});
-const setQuery = (dataChannelId, query) =>
-  ({ type: SET_QUERY, payload: { dataChannelId, query }});
-const appendDatapoint = ({ dataChannelId, values }) =>
-  ({ type: APPEND_DATAPOINT, payload: { dataChannelId, values }});
+const fetchDatapoints = (deviceId, dataChannelId) => ({
+  type: FETCH_DATAPOINTS,
+  payload: { deviceId, dataChannelId },
+});
+const setDatapoints = ({ data, dataChannelId }) => ({
+  type: SET_DATAPOINTS,
+  payload: { data, dataChannelId },
+});
+const setQuery = (dataChannelId, query) => ({
+  type: SET_QUERY,
+  payload: { dataChannelId, query },
+});
+const appendDatapoint = ({ dataChannelId, values }) => ({
+  type: APPEND_DATAPOINT,
+  payload: { dataChannelId, values },
+});
 const clear = () => ({ type: CLEAR });
 
 export const actions = {
@@ -57,8 +65,7 @@ function fetchDatapointsCycle(sources) {
   const deviceKey$ = sources.STATE
     .pluck('devices')
     .combineLatest(deviceId$, (devices, deviceId) =>
-      R.pathOr(undefined, [deviceId, 'deviceKey'])(devices),
-    )
+      R.pathOr(undefined, [deviceId, 'deviceKey'])(devices))
     .filter(R.complement(R.isNil));
 
   const datapoints$ = sources.STATE
@@ -67,40 +74,36 @@ function fetchDatapointsCycle(sources) {
 
   const query$ = datapoints$
     .combineLatest(dataChannelId$, (datapoint, dataChannelId) =>
-      R.pathOr(undefined, [dataChannelId, 'query'])(datapoint),
-    )
+      R.pathOr(undefined, [dataChannelId, 'query'])(datapoint))
     .filter(R.complement(R.isNil))
     .startWith({});
 
   const request$ = Observable.combineLatest(
-      deviceKey$.distinctUntilChanged(),
-      deviceId$.distinctUntilChanged(),
-      dataChannelId$.distinctUntilChanged(),
-      query$.distinctUntilKeyChanged('start').distinctUntilKeyChanged('end'),
-    )
-    .map(([deviceKey, deviceId, dataChannelId, query]) => ({
-      url: `/api/devices/${deviceId}/datachannels/${dataChannelId}/datapoints`,
-      method: 'GET',
-      headers: { deviceKey },
-      category: 'datapoints',
-      query,
-    }));
+    deviceKey$.distinctUntilChanged(),
+    deviceId$.distinctUntilChanged(),
+    dataChannelId$.distinctUntilChanged(),
+    query$.distinctUntilKeyChanged('start').distinctUntilKeyChanged('end')
+  ).map(([deviceKey, deviceId, dataChannelId, query]) => ({
+    url: `/api/devices/${deviceId}/datachannels/${dataChannelId}/datapoints`,
+    method: 'GET',
+    headers: { deviceKey },
+    category: 'datapoints',
+    query,
+  }));
 
-  const response$ = sources.HTTP
-    .select('datapoints')
-    .switch();
+  const response$ = sources.HTTP.select('datapoints').switch();
 
   // Remind: api response with dataChannelId will be better.
   const responseDataChannedId$ = response$
     .pluck('request', 'url')
-    .map(R.pipe(
-      R.match(/[\w]+(?=\/datapoints$)/),
-      R.head,
-    ));
+    .map(R.pipe(R.match(/[\w]+(?=\/datapoints$)/), R.head));
 
   const action$ = response$
     .pluck('body', 'data')
-    .zip(responseDataChannedId$, (data, dataChannelId) => ({ data, dataChannelId }))
+    .zip(responseDataChannedId$, (data, dataChannelId) => ({
+      data,
+      dataChannelId,
+    }))
     .map(setDatapoints);
 
   return {
@@ -173,7 +176,7 @@ export default function reducer(state = initialState, action = {}) {
           // TODO: Should I create a new datetime here?
           updatedAt: action.payload.updatedAt || new Date().valueOf(),
         }),
-        R.takeLast(100),
+        R.takeLast(100)
       )(datapoints);
 
       return {

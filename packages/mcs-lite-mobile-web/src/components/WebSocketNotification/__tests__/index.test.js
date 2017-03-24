@@ -8,7 +8,7 @@ it('should render Container correctly with HOC', () => {
   const wrapper = shallow(
     <IntlProvider locale="zh-TW" messages={{}}>
       <Container />
-    </IntlProvider>,
+    </IntlProvider>
   );
 
   expect(toJson(wrapper)).toMatchSnapshot();

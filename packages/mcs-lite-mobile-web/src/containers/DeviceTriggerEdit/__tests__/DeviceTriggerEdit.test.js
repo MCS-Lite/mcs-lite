@@ -19,7 +19,7 @@ it('should renders <DeviceTriggerEdit> correctly', () => {
       }}
       isLoading={false}
       fetchDeviceDetail={fetchMock}
-    />,
+    />
   );
 
   expect(toJson(wrapper)).toMatchSnapshot();

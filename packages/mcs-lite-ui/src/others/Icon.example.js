@@ -38,72 +38,68 @@ const StyledCard = styled(Card)`
 class StatefulMorphReplace extends React.Component {
   state = { checked: false };
   componentDidMount = () => {
-    this.interval = setInterval(() => {
-      this.setState(prevState => ({ checked: !prevState.checked }));
-    }, 1000);
-  }
+    this.interval = setInterval(
+      () => {
+        this.setState(prevState => ({ checked: !prevState.checked }));
+      },
+      1000
+    );
+  };
   componentWillUnmount = () => {
     clearInterval(this.interval);
-  }
+  };
 
   render() {
     return (
       <MorphReplace width={24} height={24}>
         {this.state.checked
           ? <Icons.IconMenu key="menu" />
-          : <Icons.IconArrowLeft key="arrow" />
-        }
+          : <Icons.IconArrowLeft key="arrow" />}
       </MorphReplace>
     );
   }
 }
 
 storiesOf('Icon [mcs-lite-icon]')
-  .addWithInfo(
-    'API',
-    '',
-    () =>
-      <Icons.IconDelete />,
-    { inline: true },
-  )
+  .addWithInfo('API', '', () => <Icons.IconDelete />, { inline: true })
   .addWithInfo(
     'Spin Icon',
     '',
-    () =>
+    () => (
       <Spin>
         <Icons.IconLoading />
-      </Spin>,
-    { inline: true },
+      </Spin>
+    ),
+    { inline: true }
   )
   .addWithInfo(
     'MorphReplace',
     'https://github.com/gorangajic/react-svg-morph',
     () => <StatefulMorphReplace />,
-    { inline: true, propTables: [MorphReplace]},
+    { inline: true, propTables: [MorphReplace] }
   )
   .addWithInfo(
     'Icon list, Custom color and size [Skip]',
     '',
-    () =>
+    () => (
       <div>
         <Heading>MCS Lite Icon</Heading>
         <CodeBlock color="primary" level={3}>
           {'$ npm i mcs-lite-icon --save'}<br />
-          {'import { IconName } from \'mcs-lite-icon\';'}
+          {"import { IconName } from 'mcs-lite-icon';"}
         </CodeBlock>
         <CardWrapper>
-          {
-            Object.keys(Icons).map(name => (
-              <StyledCard key={name}>
-                <Icon color="grayBase" level={1}>
-                  {React.createElement(Icons[name])}
-                </Icon>
-                <P color="grayBase">{`<${name} />`}</P>
-                <IconPath color="primary">mcs-lite-icon/lib/{name}</IconPath>
-              </StyledCard>
-            ))
-          }
+          {Object.keys(Icons).map(name => (
+            <StyledCard key={name}>
+              <Icon color="grayBase" level={1}>
+                {React.createElement(Icons[name])}
+              </Icon>
+              <P color="grayBase">{`<${name} />`}</P>
+              <IconPath color="primary">mcs-lite-icon/lib/{name}</IconPath>
+            </StyledCard>
+          ))}
         </CardWrapper>
-      </div>,
-    { inline: false, propTables: false },
+      </div>
+    ),
+    { inline: false, propTables: false }
   );

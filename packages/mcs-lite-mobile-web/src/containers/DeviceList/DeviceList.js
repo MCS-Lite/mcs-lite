@@ -7,11 +7,18 @@ import { Link } from 'react-router';
 import IconSearch from 'mcs-lite-icon/lib/IconSearch';
 import IconMenu from 'mcs-lite-icon/lib/IconMenu';
 import {
-  PullToRefresh, PreventDrag, Input, ClickOutside, MobileDeviceCard,
+  PullToRefresh,
+  PreventDrag,
+  Input,
+  ClickOutside,
+  MobileDeviceCard,
   MobileHeader,
 } from 'mcs-lite-ui';
 import {
-  Container, CardWrapper, StyledHeaderIcon, PlaceholdWrapper,
+  Container,
+  CardWrapper,
+  StyledHeaderIcon,
+  PlaceholdWrapper,
 } from './styled-components';
 import StyledLink from '../../components/StyledLink';
 import updatePathname from '../../utils/updatePathname';
@@ -29,24 +36,31 @@ class DeviceList extends React.Component {
 
     // React-intl I18n
     getMessages: PropTypes.func.isRequired,
-  }
+  };
   state = { isFilterOpen: false, filterValue: '' };
   componentWillMount = () => this.props.fetchDeviceList();
   onFilterChange = e => this.setState({ filterValue: e.target.value });
-  onFilterClick = () => this.setState({ isFilterOpen: !this.state.isFilterOpen });
-  onClickOutside = (e) => {
+  onFilterClick = () =>
+    this.setState({ isFilterOpen: !this.state.isFilterOpen });
+  onClickOutside = e => {
     if (e.target === findDOMNode(this.input)) return; // Hint: Omit clicking input.
 
     this.setState({ isFilterOpen: false, filterValue: '' });
-  }
-  getInput = (node) => { this.input = node; }
-  includeDeviceName = device => device.deviceName.includes(this.state.filterValue);
+  };
+  getInput = node => {
+    this.input = node;
+  };
+  includeDeviceName = device =>
+    device.deviceName.includes(this.state.filterValue);
   render() {
     const { isFilterOpen, filterValue } = this.state;
     const { fetchDeviceList, devices, isLoading, getMessages: t } = this.props;
     const {
-      onFilterChange, onClickOutside, onFilterClick,
-      includeDeviceName, getInput,
+      onFilterChange,
+      onClickOutside,
+      onFilterClick,
+      includeDeviceName,
+      getInput,
     } = this;
 
     return (
@@ -63,7 +77,7 @@ class DeviceList extends React.Component {
             </MobileHeader.MobileHeaderIcon>
           }
           rightChildren={[
-            isFilterOpen && (
+            isFilterOpen &&
               <Transition
                 key="input"
                 component={false}
@@ -78,8 +92,7 @@ class DeviceList extends React.Component {
                   value={filterValue}
                   onChange={onFilterChange}
                 />
-              </Transition>
-            ),
+              </Transition>,
             <ClickOutside key="icon" onClick={onClickOutside}>
               <StyledHeaderIcon onClick={onFilterClick} active={isFilterOpen}>
                 <IconSearch />
@@ -91,26 +104,31 @@ class DeviceList extends React.Component {
         <main>
           <PullToRefresh isLoading={isLoading} onPull={fetchDeviceList}>
             <Container>
-              <PreventDrag >
+              <PreventDrag>
                 <Transition
                   component={CardWrapper}
                   appear={{ opacity: 0.8, marginTop: -20 }}
                   enter={{ opacity: 1, marginTop: 0 }}
                 >
-                  {
-                    devices.filter(includeDeviceName).map(device => (
-                      <StyledLink key={device.deviceId} to={updatePathname(`/devices/${device.deviceId}`)}>
-                        <MobileDeviceCard
-                          title={device.deviceName}
-                          image={resolveImage(BANNER_IMAGE, device.deviceImageURL)}
-                        />
-                      </StyledLink>
-                    ))
-                  }
+                  {devices.filter(includeDeviceName).map(device => (
+                    <StyledLink
+                      key={device.deviceId}
+                      to={updatePathname(`/devices/${device.deviceId}`)}
+                    >
+                      <MobileDeviceCard
+                        title={device.deviceName}
+                        image={resolveImage(
+                          BANNER_IMAGE,
+                          device.deviceImageURL
+                        )}
+                      />
+                    </StyledLink>
+                  ))}
                 </Transition>
               </PreventDrag>
 
-              {R.isEmpty(devices) && <PlaceholdWrapper>{t('noDevice')}</PlaceholdWrapper>}
+              {R.isEmpty(devices) &&
+                <PlaceholdWrapper>{t('noDevice')}</PlaceholdWrapper>}
             </Container>
           </PullToRefresh>
         </main>

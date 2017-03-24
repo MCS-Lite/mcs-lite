@@ -9,15 +9,23 @@ const babelOptions = {
 const compile = code => babel.transform(code, babelOptions).code;
 
 it('should work with mcs-lite-icon', () => {
-  expect(compile(`
+  expect(
+    compile(
+      `
 import { Icon } from 'mcs-lite-icon';
 console.log(Icon);
-  `)).toMatchSnapshot();
+  `
+    )
+  ).toMatchSnapshot();
 });
 
 it('should work with mcs-lite-icon/lib', () => {
-  expect(compile(`
+  expect(
+    compile(
+      `
 import Icon from 'mcs-lite-icon/lib/Icon';
 console.log(Icon);
-  `)).toMatchSnapshot();
+  `
+    )
+  ).toMatchSnapshot();
 });
