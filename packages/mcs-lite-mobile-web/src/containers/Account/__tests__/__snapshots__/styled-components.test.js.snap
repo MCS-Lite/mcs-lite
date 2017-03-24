@@ -3,6 +3,7 @@ Array [
   <div>
     <Styled(Button)>
         <Button
+            active={false}
             block={false}
             className="buRwqu"
             component="button"

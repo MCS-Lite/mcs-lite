@@ -30,6 +30,7 @@ exports[`test should renders <Account> correctly 1`] = `
     <Styled(Link)
       to={[Function]}>
       <Styled(BaseComponent)
+        active={false}
         block={true}
         component="button"
         kind="primary"
@@ -42,6 +43,7 @@ exports[`test should renders <Account> correctly 1`] = `
     <Styled(Link)
       to={[Function]}>
       <Styled(BaseComponent)
+        active={false}
         block={true}
         component="button"
         kind="primary"
@@ -52,6 +54,7 @@ exports[`test should renders <Account> correctly 1`] = `
       </Styled(BaseComponent)>
     </Styled(Link)>
     <Styled(BaseComponent)
+      active={false}
       block={true}
       component="button"
       kind="primary"

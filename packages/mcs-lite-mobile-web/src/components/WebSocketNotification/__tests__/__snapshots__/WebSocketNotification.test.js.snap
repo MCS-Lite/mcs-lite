@@ -28,6 +28,7 @@ exports[`test should renders <WebSocketNotification> correctly 1`] = `
           info
         </P>
         <Button
+          active={false}
           block={false}
           component="button"
           kind="primary"
