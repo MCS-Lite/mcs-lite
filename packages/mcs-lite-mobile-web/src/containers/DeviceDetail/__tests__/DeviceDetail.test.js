@@ -24,7 +24,7 @@ it('should renders <DeviceDetail> correctly', () => {
       setDatapoint={() => {}}
       reconnect={() => {}}
       isWebSocketClose={false}
-    />,
+    />
   );
 
   expect(toJson(wrapper)).toMatchSnapshot();
@@ -50,12 +50,10 @@ it('should renders <DeviceDetail> correctly with Notification', () => {
       setDatapoint={() => {}}
       reconnect={() => {}}
       isWebSocketClose
-    />,
+    />
   );
 
-  expect(
-    toJson(wrapper.find(WebSocketNotification)),
-  ).toMatchSnapshot();
+  expect(toJson(wrapper.find(WebSocketNotification))).toMatchSnapshot();
 });
 
 it('should renders <DeviceDetail> correctly when Menu show', () => {
@@ -70,7 +68,7 @@ it('should renders <DeviceDetail> correctly when Menu show', () => {
       setDatapoint={() => {}}
       reconnect={() => {}}
       isWebSocketClose={false}
-    />,
+    />
   );
 
   wrapper.setState({ isMenuShow: true });
@@ -89,7 +87,7 @@ it('should return correctly state', () => {
       setDatapoint={() => {}}
       reconnect={() => {}}
       isWebSocketClose={false}
-    />,
+    />
   );
 
   // Before Open
@@ -119,7 +117,7 @@ it('should handle eventHandler correctly', () => {
       setDatapoint={setDatapointMock}
       reconnect={() => {}}
       isWebSocketClose={false}
-    />,
+    />
   );
 
   // Before eventHandler with submit type
@@ -130,8 +128,9 @@ it('should handle eventHandler correctly', () => {
     id: 'id',
     values: { value: 1 },
   });
-  expect(sendMessageMock).toHaveBeenCalledWith('{"datachannelId":"id","values":{"value":1}}');
-
+  expect(sendMessageMock).toHaveBeenCalledWith(
+    '{"datachannelId":"id","values":{"value":1}}'
+  );
 
   // Before eventHandler with other type
   expect(setDatapointMock).not.toHaveBeenCalled();
@@ -141,10 +140,10 @@ it('should handle eventHandler correctly', () => {
     id: 'id',
     values: { value: 1 },
   });
-  expect(setDatapointMock).toHaveBeenCalledWith(
-    'deviceId',
-    { datachannelId: 'id', values: { value: 1 }},
-  );
+  expect(setDatapointMock).toHaveBeenCalledWith('deviceId', {
+    datachannelId: 'id',
+    values: { value: 1 },
+  });
 });
 
 it('should handle reconnect', () => {
@@ -160,7 +159,7 @@ it('should handle reconnect', () => {
       setDatapoint={() => {}}
       reconnect={mockReconnect}
       isWebSocketClose
-    />,
+    />
   );
 
   // Before reconnect
@@ -184,7 +183,7 @@ it('should handle reFetch', () => {
       setDatapoint={() => {}}
       reconnect={() => {}}
       isWebSocketClose
-    />,
+    />
   );
 
   // After eventHandler with submit type

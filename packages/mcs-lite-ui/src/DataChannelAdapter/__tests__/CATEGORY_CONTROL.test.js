@@ -22,7 +22,7 @@ it('should render CATEGORY_CONTROL correctly with default value to N/A', () => {
         }}
         eventHandler={() => {}}
       />
-    </ThemeProvider>,
+    </ThemeProvider>
   );
 
   expect(wrapper.find(DataChannelAdapter)).toMatchSnapshot();
@@ -45,7 +45,7 @@ it('should render CATEGORY_CONTROL correctly with first item', () => {
         }}
         eventHandler={() => {}}
       />
-    </ThemeProvider>,
+    </ThemeProvider>
   );
 
   expect(wrapper.find(DataChannelAdapter)).toMatchSnapshot();
@@ -68,7 +68,7 @@ it('should render CATEGORY_CONTROL correctly with second item', () => {
         }}
         eventHandler={() => {}}
       />
-    </ThemeProvider>,
+    </ThemeProvider>
   );
 
   expect(wrapper.find(DataChannelAdapter)).toMatchSnapshot();
@@ -93,7 +93,7 @@ it('should handle onChange', () => {
         }}
         eventHandler={mockEventHandler}
       />
-    </ThemeProvider>,
+    </ThemeProvider>
   );
 
   expect(mockEventHandler).not.toHaveBeenCalled();
@@ -101,8 +101,10 @@ it('should handle onChange', () => {
     target: { value: 1 },
   });
   expect(mockEventHandler).toHaveBeenCalledWith({
-    id: 'id', type: 'CHANGE', values: { value: 'value2' }},
-  );
+    id: 'id',
+    type: 'CHANGE',
+    values: { value: 'value2' },
+  });
 });
 
 it('should handle onSubmit', () => {
@@ -124,12 +126,14 @@ it('should handle onSubmit', () => {
         }}
         eventHandler={mockEventHandler}
       />
-    </ThemeProvider>,
+    </ThemeProvider>
   );
 
   expect(mockEventHandler).not.toHaveBeenCalled();
   wrapper.find(DataChannel.ControlRange).props().onSubmit();
   expect(mockEventHandler).toHaveBeenCalledWith({
-    id: 'id', type: 'SUBMIT', values: { value: 'value2' }},
-  );
+    id: 'id',
+    type: 'SUBMIT',
+    values: { value: 'value2' },
+  });
 });

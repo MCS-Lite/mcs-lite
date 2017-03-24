@@ -14,7 +14,7 @@ class Signin extends React.Component {
 
     // React-intl I18n
     getMessages: PropTypes.func.isRequired,
-  }
+  };
   state = { email: '', password: '' };
   componentWillMount = () => this.props.tryEnter(); // Hint: When cookieToken avaliable
   onChange = e => this.setState({ [e.target.name]: e.target.value });
@@ -28,7 +28,8 @@ class Signin extends React.Component {
         <Helmet><title>{t('signin')}</title></Helmet>
 
         <Logo />
-        {errorMessage && <ErrorMessage color="error">{errorMessage}</ErrorMessage>}
+        {errorMessage &&
+          <ErrorMessage color="error">{errorMessage}</ErrorMessage>}
         <StyledHr>{t('welcome')}</StyledHr>
 
         <Form method="post" action="/oauth/login/mobile">

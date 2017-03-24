@@ -8,13 +8,10 @@ it('should handle onClick', () => {
   const mockOnClick = jest.fn();
   const wrapper = mount(
     <ThemeProvider theme={theme}>
-      <TabItem
-        value={123}
-        onClick={mockOnClick}
-      >
+      <TabItem value={123} onClick={mockOnClick}>
         Tab
       </TabItem>
-    </ThemeProvider>,
+    </ThemeProvider>
   );
 
   expect(mockOnClick).not.toHaveBeenCalled();

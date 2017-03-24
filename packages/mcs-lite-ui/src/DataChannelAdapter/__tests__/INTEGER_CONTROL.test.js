@@ -17,7 +17,7 @@ it('should render INTEGER_CONTROL correctly with default value to empty', () => 
         }}
         eventHandler={() => {}}
       />
-    </ThemeProvider>,
+    </ThemeProvider>
   );
 
   expect(wrapper.find(DataChannelAdapter)).toMatchSnapshot();
@@ -35,7 +35,7 @@ it('should render INTEGER_CONTROL correctly with value', () => {
         }}
         eventHandler={() => {}}
       />
-    </ThemeProvider>,
+    </ThemeProvider>
   );
 
   expect(wrapper.find(DataChannelAdapter)).toMatchSnapshot();
@@ -53,7 +53,7 @@ it('should render INTEGER_CONTROL correctly with zero', () => {
         }}
         eventHandler={() => {}}
       />
-    </ThemeProvider>,
+    </ThemeProvider>
   );
 
   expect(wrapper.find(DataChannelAdapter)).toMatchSnapshot();
@@ -71,7 +71,7 @@ it('should render INTEGER_CONTROL correctly with unit', () => {
         }}
         eventHandler={() => {}}
       />
-    </ThemeProvider>,
+    </ThemeProvider>
   );
 
   expect(wrapper.find(DataChannelAdapter)).toMatchSnapshot();
@@ -91,7 +91,7 @@ it('should handle onChange', () => {
         }}
         eventHandler={mockEventHandler}
       />
-    </ThemeProvider>,
+    </ThemeProvider>
   );
 
   expect(mockEventHandler).not.toHaveBeenCalled();
@@ -99,8 +99,10 @@ it('should handle onChange', () => {
     target: { value: 11 },
   });
   expect(mockEventHandler).toHaveBeenCalledWith({
-    id: 'id', type: 'CHANGE', values: { value: 11 }},
-  );
+    id: 'id',
+    type: 'CHANGE',
+    values: { value: 11 },
+  });
 });
 
 it('should handle onSubmit', () => {
@@ -117,14 +119,16 @@ it('should handle onSubmit', () => {
         }}
         eventHandler={mockEventHandler}
       />
-    </ThemeProvider>,
+    </ThemeProvider>
   );
 
   expect(mockEventHandler).not.toHaveBeenCalled();
   wrapper.find(DataChannel.ControlNumber).props().onSubmit();
   expect(mockEventHandler).toHaveBeenCalledWith({
-    id: 'id', type: 'SUBMIT', values: { value: 1 }},
-  );
+    id: 'id',
+    type: 'SUBMIT',
+    values: { value: 1 },
+  });
 });
 
 it('should handle onClear', () => {
@@ -141,12 +145,14 @@ it('should handle onClear', () => {
         }}
         eventHandler={mockEventHandler}
       />
-    </ThemeProvider>,
+    </ThemeProvider>
   );
 
   expect(mockEventHandler).not.toHaveBeenCalled();
   wrapper.find(DataChannel.ControlNumber).props().onClear();
   expect(mockEventHandler).toHaveBeenCalledWith({
-    id: 'id', type: 'CLEAR', values: {}},
-  );
+    id: 'id',
+    type: 'CLEAR',
+    values: {},
+  });
 });

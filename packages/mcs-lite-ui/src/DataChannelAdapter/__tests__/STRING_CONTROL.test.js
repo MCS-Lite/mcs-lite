@@ -17,7 +17,7 @@ it('should render STRING_CONTROL correctly with default value to empty', () => {
         }}
         eventHandler={() => {}}
       />
-    </ThemeProvider>,
+    </ThemeProvider>
   );
 
   expect(wrapper.find(DataChannelAdapter)).toMatchSnapshot();
@@ -35,7 +35,7 @@ it('should render STRING_CONTROL correctly with value', () => {
         }}
         eventHandler={() => {}}
       />
-    </ThemeProvider>,
+    </ThemeProvider>
   );
 
   expect(wrapper.find(DataChannelAdapter)).toMatchSnapshot();
@@ -53,7 +53,7 @@ it('should render STRING_CONTROL correctly with empty string', () => {
         }}
         eventHandler={() => {}}
       />
-    </ThemeProvider>,
+    </ThemeProvider>
   );
 
   expect(wrapper.find(DataChannelAdapter)).toMatchSnapshot();
@@ -73,7 +73,7 @@ it('should handle onChange', () => {
         }}
         eventHandler={mockEventHandler}
       />
-    </ThemeProvider>,
+    </ThemeProvider>
   );
 
   expect(mockEventHandler).not.toHaveBeenCalled();
@@ -81,8 +81,10 @@ it('should handle onChange', () => {
     target: { value: 'abby' },
   });
   expect(mockEventHandler).toHaveBeenCalledWith({
-    id: 'id', type: 'CHANGE', values: { value: 'abby' }},
-  );
+    id: 'id',
+    type: 'CHANGE',
+    values: { value: 'abby' },
+  });
 });
 
 it('should handle onSubmit', () => {
@@ -99,14 +101,16 @@ it('should handle onSubmit', () => {
         }}
         eventHandler={mockEventHandler}
       />
-    </ThemeProvider>,
+    </ThemeProvider>
   );
 
   expect(mockEventHandler).not.toHaveBeenCalled();
   wrapper.find(DataChannel.ControlString).props().onSubmit();
   expect(mockEventHandler).toHaveBeenCalledWith({
-    id: 'id', type: 'SUBMIT', values: { value: 'michaelhsu' }},
-  );
+    id: 'id',
+    type: 'SUBMIT',
+    values: { value: 'michaelhsu' },
+  });
 });
 
 it('should handle onClear', () => {
@@ -123,12 +127,14 @@ it('should handle onClear', () => {
         }}
         eventHandler={mockEventHandler}
       />
-    </ThemeProvider>,
+    </ThemeProvider>
   );
 
   expect(mockEventHandler).not.toHaveBeenCalled();
   wrapper.find(DataChannel.ControlString).props().onClear();
   expect(mockEventHandler).toHaveBeenCalledWith({
-    id: 'id', type: 'CLEAR', values: {}},
-  );
+    id: 'id',
+    type: 'CLEAR',
+    values: {},
+  });
 });

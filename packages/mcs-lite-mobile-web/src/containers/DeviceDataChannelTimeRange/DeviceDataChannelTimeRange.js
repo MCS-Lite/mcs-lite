@@ -3,10 +3,17 @@ import Helmet from 'react-helmet';
 import { Link } from 'react-router';
 import IconArrowLeft from 'mcs-lite-icon/lib/IconArrowLeft';
 import {
-  MobileHeader, P, DatetimePickerDialog, Button, MobileFixedFooter,
+  MobileHeader,
+  P,
+  DatetimePickerDialog,
+  Button,
+  MobileFixedFooter,
 } from 'mcs-lite-ui';
 import {
-  Container, InputWrapper, FakeInput, ButtonWrapper,
+  Container,
+  InputWrapper,
+  FakeInput,
+  ButtonWrapper,
 } from './styled-components';
 import updatePathname from '../../utils/updatePathname';
 import localTimeFormat from '../../utils/localTimeFormat';
@@ -30,7 +37,7 @@ class DeviceDataChannelTimeRange extends React.Component {
 
     // React-intl I18n
     getMessages: PropTypes.func.isRequired,
-  }
+  };
   constructor(props) {
     super(props);
     this.state = {
@@ -41,20 +48,31 @@ class DeviceDataChannelTimeRange extends React.Component {
     };
   }
   componentWillMount = () => this.props.fetchDeviceDetail(this.props.deviceId);
-  onStartTimeClick = () => this.setState({ isDialogshow: true, dialogTarget: 'start' });
-  onEndTimeClick = () => this.setState({ isDialogshow: true, dialogTarget: 'end' });
+  onStartTimeClick = () =>
+    this.setState({ isDialogshow: true, dialogTarget: 'start' });
+  onEndTimeClick = () =>
+    this.setState({ isDialogshow: true, dialogTarget: 'end' });
   onHide = () => this.setState({ isDialogshow: false });
   onPickerSubmit = value => this.setState({ [this.state.dialogTarget]: value });
   onSubmit = () => {
     const { dataChannelId, setQuery } = this.props;
     const { start, end } = this.state;
     setQuery(dataChannelId, { start, end });
-  }
-  back = updatePathname(`/devices/${this.props.deviceId}/dataChannels/${this.props.dataChannelId}`);
+  };
+  back = updatePathname(
+    `/devices/${this.props.deviceId}/dataChannels/${this.props.dataChannelId}`
+  );
   render() {
     const { getMessages: t } = this.props;
     const { isDialogshow, start, end, dialogTarget } = this.state;
-    const { back, onHide, onPickerSubmit, onStartTimeClick, onEndTimeClick, onSubmit } = this;
+    const {
+      back,
+      onHide,
+      onPickerSubmit,
+      onStartTimeClick,
+      onEndTimeClick,
+      onSubmit,
+    } = this;
 
     return (
       <div>
@@ -72,12 +90,12 @@ class DeviceDataChannelTimeRange extends React.Component {
           <Container>
             <InputWrapper onClick={onStartTimeClick}>
               <P>{t('from')}</P>
-              <FakeInput >{localTimeFormat(start)}</FakeInput>
+              <FakeInput>{localTimeFormat(start)}</FakeInput>
             </InputWrapper>
 
             <InputWrapper onClick={onEndTimeClick}>
               <P>{t('to')}</P>
-              <FakeInput >{localTimeFormat(end)}</FakeInput>
+              <FakeInput>{localTimeFormat(end)}</FakeInput>
             </InputWrapper>
 
             <DatetimePickerDialog

@@ -20,19 +20,19 @@ const StyledHeading = styled(Heading)`
 `;
 
 const fetchMock = () =>
-  new Promise((resolve) => {
+  new Promise(resolve => {
     setTimeout(() => resolve(123), 3000);
   });
 
 class StatefulPullToRefresh extends React.Component {
-  state = { isLoading: false }
+  state = { isLoading: false };
   onPull = () => {
     this.setState({ isLoading: true });
 
     fetchMock().then(() => {
       this.setState({ isLoading: false });
     });
-  }
+  };
   render() {
     return (
       <PullToRefresh isLoading={this.state.isLoading} onPull={this.onPull}>
@@ -49,13 +49,13 @@ class StatefulPullToRefresh extends React.Component {
   }
 }
 
-storiesOf('PullToRefresh', module)
-  .addWithInfo(
-    'API',
-    '',
-    () =>
-      <Body>
-        <StatefulPullToRefresh />
-      </Body>,
-    { inline: true, propTables: [PullToRefresh]},
-  );
+storiesOf('PullToRefresh', module).addWithInfo(
+  'API',
+  '',
+  () => (
+    <Body>
+      <StatefulPullToRefresh />
+    </Body>
+  ),
+  { inline: true, propTables: [PullToRefresh] }
+);

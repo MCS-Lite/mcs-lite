@@ -3,14 +3,19 @@ import { Heading, Small } from 'mcs-lite-ui';
 import Helmet from 'react-helmet';
 import StyledLink from '../../components/StyledLink';
 import {
-  Container, Body, StyledLogo, Footer, VersionWrapper, FlatButton,
+  Container,
+  Body,
+  StyledLogo,
+  Footer,
+  VersionWrapper,
+  FlatButton,
 } from './styled-components';
 import updatePathname from '../../utils/updatePathname';
 import packageJSON from '../../../package.json';
 
 const VERSION = packageJSON.version;
 
-const Account = ({ userName, email, signout, getMessages: t }) =>
+const Account = ({ userName, email, signout, getMessages: t }) => (
   <Container>
     <Helmet><title>{t('account')}</title></Helmet>
     <Body>
@@ -32,7 +37,8 @@ const Account = ({ userName, email, signout, getMessages: t }) =>
         {t('signout')}
       </FlatButton>
     </Footer>
-  </Container>;
+  </Container>
+);
 
 Account.displayName = 'Account';
 Account.propTypes = {

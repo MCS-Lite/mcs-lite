@@ -23,16 +23,24 @@ const Unixtype = styled(P)`
   justify-content: flex-end;
 `;
 
-const ControlNumber = ({ value, onChange, onSubmit, onClear, placeholder, unit, ...otherProps }) =>
-  <Container {...otherProps} >
+const ControlNumber = (
+  { value, onChange, onSubmit, onClear, placeholder, unit, ...otherProps }
+) => (
+  <Container {...otherProps}>
     {unit && <Unixtype color="grayBase">{unit}</Unixtype>}
-    <Input type="number" value={value} onChange={onChange} placeholder={placeholder} />
+    <Input
+      type="number"
+      value={value}
+      onChange={onChange}
+      placeholder={placeholder}
+    />
 
     <ButtonWrapper>
       <ButtonClear onClick={onClear} />
       <Button onClick={onSubmit}>Ok</Button>
     </ButtonWrapper>
-  </Container>;
+  </Container>
+);
 
 ControlNumber.displayName = 'ControlNumber';
 ControlNumber.propTypes = {

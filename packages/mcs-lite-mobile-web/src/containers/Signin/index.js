@@ -7,12 +7,15 @@ import { actions as authActions } from '../../modules/auth';
 import Signin from './Signin';
 
 export const mapStateToProps = ({ routing }) => ({
-  errorMessage:
-    R.pathOr(undefined, ['locationBeforeTransitions', 'query', 'errorMsg'])(routing),
+  errorMessage: R.pathOr(undefined, [
+    'locationBeforeTransitions',
+    'query',
+    'errorMsg',
+  ])(routing),
 });
 export const mapDispatchToProps = { tryEnter: authActions.tryEnter };
 
 export default compose(
   connect(mapStateToProps, mapDispatchToProps),
-  withGetMessages(messages, 'Signin'),
+  withGetMessages(messages, 'Signin')
 )(Signin);

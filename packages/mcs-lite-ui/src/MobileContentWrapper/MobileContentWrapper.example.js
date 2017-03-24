@@ -7,15 +7,15 @@ const Content = styled.div`
   border: 1px dashed ${props => props.theme.color.black};
 `;
 
-storiesOf('MobileContentWrapper', module)
-  .addWithInfo(
-    'API',
-    '',
-    () =>
-      <MobileContentWrapper>
-        <Content>
-          With max-width
-        </Content>
-      </MobileContentWrapper>,
-    { inline: true },
-  );
+storiesOf('MobileContentWrapper', module).addWithInfo(
+  'API',
+  '',
+  () => (
+    <MobileContentWrapper>
+      <Content>
+        With max-width
+      </Content>
+    </MobileContentWrapper>
+  ),
+  { inline: true }
+);

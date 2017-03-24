@@ -3,11 +3,7 @@ import styled from 'styled-components';
 import R from 'ramda';
 import isString from '../utils/isString';
 
-const getBaseComponent = R.ifElse(
-  isString,
-  R.always('p'),
-  R.always('div'),
-);
+const getBaseComponent = R.ifElse(isString, R.always('p'), R.always('div'));
 
 const Component = ({ children, ...otherProps }) =>
   React.createElement(getBaseComponent(children), otherProps, children);

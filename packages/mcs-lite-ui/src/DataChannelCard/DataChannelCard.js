@@ -8,11 +8,9 @@ import P from '../P';
 import Hr from '../Hr';
 import isString from '../utils/isString';
 
-const setHeightByLine = line => props => `${
-  parseFloat(props.theme.fontSize.p, 10) *
-  parseFloat(props.theme.base.fontSize, 10) *
-  props.theme.base.lineHeight * line
-}px`;
+const setHeightByLine = line =>
+  props =>
+    `${parseFloat(props.theme.fontSize.p, 10) * parseFloat(props.theme.base.fontSize, 10) * props.theme.base.lineHeight * line}px`;
 
 const Header = styled.div`
   flex-basis: 24px;
@@ -56,7 +54,9 @@ const StyledSmall = styled(Small)`
   color: ${props => props.theme.color.grayBase};
 `;
 
-const DataChannelCard = ({ header, children, title, subtitle, description, ...otherProps }) =>
+const DataChannelCard = (
+  { header, children, title, subtitle, description, ...otherProps }
+) => (
   <Wrapper {...otherProps}>
     <Header>{header}</Header>
     <Body>{children}</Body>
@@ -64,15 +64,13 @@ const DataChannelCard = ({ header, children, title, subtitle, description, ...ot
       <StyledHeading level={4}>{title}</StyledHeading>
       <StyledSmall>{subtitle}</StyledSmall>
       {isString(description) && <StyledHr />}
-      {
-        isString(description) && (
-          <Description>
-            <TextTruncate line={2} truncateText=" ..." text={description} />
-          </Description>
-        )
-      }
+      {isString(description) &&
+        <Description>
+          <TextTruncate line={2} truncateText=" ..." text={description} />
+        </Description>}
     </div>
-  </Wrapper>;
+  </Wrapper>
+);
 
 DataChannelCard.displayName = 'DataChannelCard';
 DataChannelCard.propTypes = {

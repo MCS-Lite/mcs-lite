@@ -6,11 +6,11 @@ import Switch from '.';
 
 const withState = Component =>
   class WithStateComponent extends React.Component {
-    state = { checked: false }
+    state = { checked: false };
     onClick = () => {
       action('click');
       this.setState({ checked: !this.state.checked });
-    }
+    };
     render() {
       return (
         <Component
@@ -22,37 +22,43 @@ const withState = Component =>
     }
   };
 
-const StyledSwitch = withState(styled(Switch)`
+const StyledSwitch = withState(
+  styled(Switch)`
   background-color: ${props => props.checked ? 'steelblue' : 'aliceblue'};
 
   &::after {
     background-color: ${props => props.checked ? 'aliceblue' : 'cornflowerblue'};
   }
-`);
+`
+);
 
-const ScaledSwitch = withState(styled(Switch)`
+const ScaledSwitch = withState(
+  styled(Switch)`
   transform: scale(0.48);
-`);
+`
+);
 
 storiesOf('Switch', module)
   .addWithInfo(
     'API',
     'Switch is a controlled component.',
-    () =>
+    () => (
       <div>
         <Switch />
         <Switch checked />
-      </div>,
-    { inline: true },
+      </div>
+    ),
+    { inline: true }
   )
   .addWithInfo(
     'With kind props',
     'kind="primary"',
-    () =>
+    () => (
       <div>
         {kindList.map(kind => <Switch key={kind} checked kind={kind} />)}
-      </div>,
-    { inline: true },
+      </div>
+    ),
+    { inline: true }
   )
   .addWithInfo(
     'Stateful switch',
@@ -61,17 +67,17 @@ storiesOf('Switch', module)
       const Simple = withState(Switch);
       return <Simple />;
     },
-    { inline: true, propTables: false },
+    { inline: true, propTables: false }
   )
   .addWithInfo(
     'Overriding style',
     '使用 styled-components 來覆蓋 css。',
     () => <StyledSwitch />,
-    { inline: true, propTables: false },
+    { inline: true, propTables: false }
   )
   .addWithInfo(
     'With scaling',
     'transform: scale(0.48) for mobile',
     () => <ScaledSwitch kind="primary" />,
-    { inline: true, propTables: false },
+    { inline: true, propTables: false }
   );

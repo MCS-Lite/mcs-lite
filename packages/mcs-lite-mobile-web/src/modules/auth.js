@@ -35,10 +35,15 @@ export const constants = {
 
 const requireAuth = () => ({ type: REQUIRE_AUTH });
 const tryEnter = () => ({ type: TRY_ENTER });
-const signout = (message, isForce) => ({ type: SIGNOUT, payload: { message, isForce }});
+const signout = (message, isForce) => ({
+  type: SIGNOUT,
+  payload: { message, isForce },
+});
 const setUserInfo = payload => ({ type: SET_USERINFO, payload });
-const changePassword = ({ password, message }) =>
-  ({ type: CHANGE_PASSWORD, payload: { password, message }});
+const changePassword = ({ password, message }) => ({
+  type: CHANGE_PASSWORD,
+  payload: { password, message },
+});
 const clear = () => ({ type: CLEAR });
 
 export const actions = {
@@ -59,23 +64,20 @@ function requireAuthCycle(sources) {
     .filter(action => action.type === REQUIRE_AUTH)
     .map(cookieHelper.getCookieToken);
 
-  const request$ = cookieToken$
-    .map(cookieToken => ({
-      url: '/oauth/cookies/mobile',
-      method: 'POST',
-      send: { token: cookieToken },
-      category: 'user',
-    }));
+  const request$ = cookieToken$.map(cookieToken => ({
+    url: '/oauth/cookies/mobile',
+    method: 'POST',
+    send: { token: cookieToken },
+    category: 'user',
+  }));
 
-  const response$ = sources.HTTP
-    .select('user')
-    .switch();
+  const response$ = sources.HTTP.select('user').switch();
 
   const action$ = response$
     .pluck('body', 'results')
     .map(setUserInfo)
     // TODO: Should I catch response$ error here ?
-    .catch((error) => {
+    .catch(error => {
       console.error({ error }); // eslint-disable-line
       return Observable.empty();
     });
@@ -103,7 +105,7 @@ function tryEnterCycle(sources) {
 function signoutCycle(sources) {
   const confirm$ = sources.ACTION
     .filter(action => action.type === SIGNOUT)
-    .switchMap((action) => {
+    .switchMap(action => {
       const { message, isForce } = action.payload;
       if (isForce || window.confirm(message)) {
         return Observable.of(action);
@@ -112,12 +114,13 @@ function signoutCycle(sources) {
     });
 
   const action$ = confirm$
-    .switchMap(() => Observable.of(
-      routingActions.pushPathname('/login'),
-      clear(),
-      devicesActions.clear(),
-      datapointsActions.clear(),
-    ))
+    .switchMap(() =>
+      Observable.of(
+        routingActions.pushPathname('/login'),
+        clear(),
+        devicesActions.clear(),
+        datapointsActions.clear()
+      ))
     .do(cookieHelper.removeCookieToken);
 
   return {
@@ -138,23 +141,21 @@ function changePasswordCycle(sources) {
   const password$ = payload$.pluck('password');
   const message$ = payload$.pluck('message');
 
-  const request$ = password$
-    .withLatestFrom(accessToken$)
-    .map(([password, accessToken]) => ({
-      url: '/api/users/changepassword',
-      method: 'PUT',
-      headers: { Authorization: `Bearer ${accessToken}` },
-      send: { password },
-      category: 'changePassword',
-    }));
+  const request$ = password$.withLatestFrom(accessToken$).map(([
+    password,
+    accessToken,
+  ]) => ({
+    url: '/api/users/changepassword',
+    method: 'PUT',
+    headers: { Authorization: `Bearer ${accessToken}` },
+    send: { password },
+    category: 'changePassword',
+  }));
 
-  const response$ = sources.HTTP
-    .select('changePassword')
-    .switch();
+  const response$ = sources.HTTP.select('changePassword').switch();
 
-  const action$ = response$
-    .withLatestFrom(message$)
-    .map(([, message]) => uiActions.addToast({
+  const action$ = response$.withLatestFrom(message$).map(([, message]) =>
+    uiActions.addToast({
       kind: 'success',
       children: message,
     }));
@@ -173,10 +174,10 @@ function authErrorCycle(sources) {
     .filter(R.not)
     .catch(({ response }) => Observable.of(response.body.message));
 
-  const action$ = errorMessage$
-    .concatMap(message => Observable.of(
+  const action$ = errorMessage$.concatMap(message =>
+    Observable.of(
       uiActions.addToast({ kind: 'error', children: message }),
-      signout('', true), // Remind: Force signout
+      signout('', true) // Remind: Force signout
     ));
 
   return {

@@ -55,20 +55,24 @@ const StyledHeading = styled(Heading)`
   overflow: hidden;
 `;
 
-const MobileHeader = ({ title, leftChildren, rightChildren, ...otherProps }) =>
+const MobileHeader = (
+  { title, leftChildren, rightChildren, ...otherProps }
+) => (
   <Container {...otherProps}>
     <Fixed>
       <Wrapper>
         <Left>{leftChildren}</Left>
         {title &&
           <Center>
-            <StyledHeading level={3} color="white"><B>{title}</B></StyledHeading>
-          </Center>
-        }
+            <StyledHeading level={3} color="white">
+              <B>{title}</B>
+            </StyledHeading>
+          </Center>}
         <Right>{rightChildren}</Right>
       </Wrapper>
     </Fixed>
-  </Container>;
+  </Container>
+);
 
 MobileHeader.displayName = 'MobileHeader';
 MobileHeader.propTypes = {
@@ -76,6 +80,5 @@ MobileHeader.propTypes = {
   leftChildren: PropTypes.any.isRequired,
   rightChildren: PropTypes.any,
 };
-
 
 export default MobileHeader;

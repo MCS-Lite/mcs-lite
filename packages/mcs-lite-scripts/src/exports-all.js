@@ -18,26 +18,26 @@ const srcPath$ = Rx.Observable
   .switchMap(pattern => Rx.Observable.from(glob.sync(pattern)));
 
 // --- a --- b --- ...
-const basename$ = srcPath$
-  .map(srcPath => path.basename(srcPath, path.extname(srcPath)));
+const basename$ = srcPath$.map(srcPath =>
+  path.basename(srcPath, path.extname(srcPath)));
 
 // --- 'export a' --- 'export b' --- ...
-const strings$ = basename$
-  .map(basename => `export { default as ${basename} } from './${basename}';`);
+const strings$ = basename$.map(
+  basename => `export { default as ${basename} } from './${basename}';`
+);
 
 // --- 'export a \n export b' |
-const resultsES6$ = strings$
-  .toArray()
-  .map(R.join('\n'));
+const resultsES6$ = strings$.toArray().map(R.join('\n'));
 
-const resultsES5$ = resultsES6$
-  .map(compile);
+const resultsES5$ = resultsES6$.map(compile);
 
 // Output
 resultsES5$
-  .do((results) => {
+  .do(results => {
     fs.writeFileSync(desPath, results);
-    console.log(`${path.relative(process.cwd(), srcPattern)} -> ${path.relative(process.cwd(), desPath)}`);
+    console.log(
+      `${path.relative(process.cwd(), srcPattern)} -> ${path.relative(process.cwd(), desPath)}`
+    );
   })
   .catch(console.error)
   .subscribe();

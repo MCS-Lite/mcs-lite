@@ -13,5 +13,5 @@ export const mapDispatchToProps = { signout: actions.signout };
 
 export default compose(
   connect(mapStateToProps, mapDispatchToProps),
-  withGetMessages(messages, 'Account'),
+  withGetMessages(messages, 'Account')
 )(Account);

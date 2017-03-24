@@ -13,7 +13,7 @@ it('should render components correctly', () => {
       <div>
         <StyledSamll />
       </div>
-    </ThemeProvider>,
+    </ThemeProvider>
   );
 
   expect(toJson(wrapper.find('div'))).toMatchSnapshot();

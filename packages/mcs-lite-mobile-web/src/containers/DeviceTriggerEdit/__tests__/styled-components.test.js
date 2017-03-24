@@ -3,7 +3,13 @@ import { mount } from 'enzyme';
 import toJson from 'enzyme-to-json';
 import { ThemeProvider } from 'styled-components';
 import mobileTheme from '../../../utils/mobileTheme';
-import { Item, Body, StyledSamll, ButtonWrapper, ScaledSwitch } from '../styled-components';
+import {
+  Item,
+  Body,
+  StyledSamll,
+  ButtonWrapper,
+  ScaledSwitch,
+} from '../styled-components';
 
 jest.mock('mcs-lite-ui');
 
@@ -17,7 +23,7 @@ it('should render components correctly', () => {
         <ButtonWrapper />
         <ScaledSwitch />
       </div>
-    </ThemeProvider>,
+    </ThemeProvider>
   );
 
   expect(toJson(wrapper.find('div'))).toMatchSnapshot();

@@ -26,15 +26,22 @@ const StyledTextarea = styled(Textarea)`
   flex-grow: 1;
 `;
 
-const ControlString = ({ value, onChange, onSubmit, onClear, placeholder, ...otherProps }) =>
-  <Container {...otherProps} >
-    <StyledTextarea value={value} onChange={onChange} placeholder={placeholder} />
+const ControlString = (
+  { value, onChange, onSubmit, onClear, placeholder, ...otherProps }
+) => (
+  <Container {...otherProps}>
+    <StyledTextarea
+      value={value}
+      onChange={onChange}
+      placeholder={placeholder}
+    />
 
     <ButtonWrapper>
       <ButtonClear onClick={onClear} />
       <Button onClick={onSubmit}>Ok</Button>
     </ButtonWrapper>
-  </Container>;
+  </Container>
+);
 
 ControlString.displayName = 'ControlString';
 ControlString.propTypes = {

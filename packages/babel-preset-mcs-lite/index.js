@@ -27,22 +27,22 @@ module.exports = {
       [
         {
           libraryName: 'mcs-lite-icon',
-          libraryDirectory: 'lib',        // default: lib
+          libraryDirectory: 'lib', // default: lib
           camel2DashComponentName: false, // default: true
         },
         {
           libraryName: 'mcs-lite-ui',
-          libraryDirectory: 'lib',        // default: lib
+          libraryDirectory: 'lib', // default: lib
           camel2DashComponentName: false, // default: true
         },
         {
           libraryName: 'ramda',
-          libraryDirectory: 'src',        // default: lib
+          libraryDirectory: 'src', // default: lib
           camel2DashComponentName: false, // default: true
         },
         {
           libraryName: 'recompose',
-          libraryDirectory: '/',          // default: lib
+          libraryDirectory: '/', // default: lib
           camel2DashComponentName: false, // default: true
         },
       ],

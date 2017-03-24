@@ -15,7 +15,7 @@ it('should render components correctly', () => {
         <StyledSamll />
         <IconWrapper />
       </div>
-    </ThemeProvider>,
+    </ThemeProvider>
   );
 
   expect(toJson(wrapper.find('div'))).toMatchSnapshot();

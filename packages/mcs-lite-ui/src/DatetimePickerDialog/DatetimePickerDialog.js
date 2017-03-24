@@ -39,10 +39,10 @@ class DatetimePickerDialog extends React.Component {
     show: PropTypes.bool,
     onHide: PropTypes.func.isRequired,
     onSubmit: PropTypes.func.isRequired,
-  }
+  };
   static defaultProps = {
     show: false,
-  }
+  };
   constructor(props) {
     super(props);
     this.state = { value: props.datetimePickerProps.defaultValue };
@@ -51,11 +51,11 @@ class DatetimePickerDialog extends React.Component {
   onCancel = () => {
     this.setState({ value: this.props.datetimePickerProps.defaultValue });
     this.props.onHide();
-  }
+  };
   onSubmit = () => {
     this.props.onSubmit(this.state.value);
     this.props.onHide();
-  }
+  };
   render() {
     const { onChange, onSubmit, onCancel } = this;
     const { show, datetimePickerProps } = this.props;
@@ -72,10 +72,7 @@ class DatetimePickerDialog extends React.Component {
               <StyledA onClick={onSubmit}>OK</StyledA>
             </Header>
 
-            <DatetimePicker
-              {...datetimePickerProps}
-              onChange={onChange}
-            />
+            <DatetimePicker {...datetimePickerProps} onChange={onChange} />
           </Container>
         </Transition>
       </Dialog>

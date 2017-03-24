@@ -29,10 +29,7 @@ const StyledButton = styled(Button)`
 
   svg {
     transform-origin: center center;
-    animation: ${props => props.status === LOADING
-      ? `${rotate360} 0.6s infinite cubic-bezier(0.41, 0.01, 0.58, 1)`
-      : 'none'
-    };
+    animation: ${props => props.status === LOADING ? `${rotate360} 0.6s infinite cubic-bezier(0.41, 0.01, 0.58, 1)` : 'none'};
   }
 
   path {
@@ -42,7 +39,7 @@ const StyledButton = styled(Button)`
 
 const omitProps = R.omit(['text']);
 
-const CopyButton = componentFromStream((propStream) => {
+const CopyButton = componentFromStream(propStream => {
   const props$ = Observable.from(propStream);
   const { handler: onClick, stream: onClickStream } = createEventHandler();
 
@@ -50,34 +47,34 @@ const CopyButton = componentFromStream((propStream) => {
   const status$ = Observable.from(onClickStream)
     .withLatestFrom(text$, (e, text) => text)
     .do(copyToClipboard)
-    .switchMapTo(Observable.merge(
-      Observable.of(LOADING),
-      Observable.of(SUCCESS).delay(500),
-      Observable.of(DEFAULT).delay(1800),
-    ))
+    .switchMapTo(
+      Observable.merge(
+        Observable.of(LOADING),
+        Observable.of(SUCCESS).delay(500),
+        Observable.of(DEFAULT).delay(1800)
+      )
+    )
     .startWith(DEFAULT);
 
-  return props$.combineLatest(status$, ({ children, ...otherProps }, status) =>
+  return props$.combineLatest(status$, ({
+    children,
+    ...otherProps
+  }, status) => (
     <StyledButton
       {...omitProps(otherProps)}
       size="small"
       status={status}
       onClick={onClick}
     >
-      {
-        status === DEFAULT
-          ? children
-          : (
-            <MorphReplace width={10} height={10}>
-              {status === LOADING
-                ? <IconLoading key="loading" />
-                : <IconDone key="success" />
-              }
-            </MorphReplace>
-          )
-      }
-    </StyledButton>,
-  );
+      {status === DEFAULT
+        ? children
+        : <MorphReplace width={10} height={10}>
+            {status === LOADING
+              ? <IconLoading key="loading" />
+              : <IconDone key="success" />}
+          </MorphReplace>}
+    </StyledButton>
+  ));
 });
 
 CopyButton.displayName = 'CopyButton';

@@ -8,7 +8,7 @@ const Container = styled.div`
 
 const preventDefault = e => e.preventDefault();
 
-const PreventDrag = ({ children }) =>
+const PreventDrag = ({ children }) => (
   <Container
     onDrop={preventDefault}
     onDragStart={preventDefault}
@@ -17,7 +17,8 @@ const PreventDrag = ({ children }) =>
     onMouseDown={preventDefault} // for Safari
   >
     {children}
-  </Container>;
+  </Container>
+);
 
 PreventDrag.displayName = 'PreventDrag';
 PreventDrag.propTypes = {

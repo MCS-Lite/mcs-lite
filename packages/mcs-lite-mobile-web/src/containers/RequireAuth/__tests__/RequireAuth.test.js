@@ -6,11 +6,9 @@ import RequireAuth from '../RequireAuth';
 it('should renders <RequireAuth> correctly', () => {
   const fetchMock = jest.fn();
   const wrapper = shallow(
-    <RequireAuth
-      requireAuth={fetchMock}
-    >
+    <RequireAuth requireAuth={fetchMock}>
       <div>Mock Children</div>
-    </RequireAuth>,
+    </RequireAuth>
   );
 
   expect(toJson(wrapper)).toMatchSnapshot();

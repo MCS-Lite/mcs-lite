@@ -16,16 +16,17 @@ storiesOf('Textarea', module)
     'API',
     '',
     () => <Textarea placeholder="placeholder" rows="3" />,
-    { inline: true },
+    { inline: true }
   )
   .addWithInfo(
     'With kind props',
     '使用內建 kind props 樣式。',
-    () =>
+    () => (
       <Wrapper>
-        {
-          kindList.map(key => <Textarea key={key} kind={key} placeholder={key} />)
-        }
-      </Wrapper>,
-    { inline: true },
+        {kindList.map(key => (
+          <Textarea key={key} kind={key} placeholder={key} />
+        ))}
+      </Wrapper>
+    ),
+    { inline: true }
   );

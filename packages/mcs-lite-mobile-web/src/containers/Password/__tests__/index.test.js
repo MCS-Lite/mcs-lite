@@ -14,7 +14,7 @@ it('should render Container correctly with HOC', () => {
   const wrapper = shallow(
     <Provider store={store}>
       <Container />
-    </Provider>,
+    </Provider>
   );
 
   expect(toJson(wrapper)).toMatchSnapshot();

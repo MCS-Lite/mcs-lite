@@ -15,7 +15,7 @@ it('should render components correctly', () => {
         <Fixed />
         <ToastContainer />
       </div>
-    </ThemeProvider>,
+    </ThemeProvider>
   );
 
   expect(toJson(wrapper.find('div'))).toMatchSnapshot();

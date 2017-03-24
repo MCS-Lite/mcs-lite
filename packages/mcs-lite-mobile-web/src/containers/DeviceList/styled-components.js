@@ -15,7 +15,9 @@ export const CardWrapper = styled.div`
 `;
 
 const omitProps = R.omit(['active']);
-const BaseComponent = props => <MobileHeader.MobileHeaderIcon {...omitProps(props)} />;
+const BaseComponent = props => (
+  <MobileHeader.MobileHeaderIcon {...omitProps(props)} />
+);
 export const StyledHeaderIcon = styled(BaseComponent)`
   color: ${props => opacity(props.active ? 0.5 : 1)(props.theme.color.white)};
 `;

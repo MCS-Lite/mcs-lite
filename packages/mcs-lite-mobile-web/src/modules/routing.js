@@ -43,7 +43,8 @@ function pushPathnameCycle(sources) {
 
   const action$ = pathname$
     .combineLatest(location$)
-    .map(([pathname, location]) => R.assocPath(['pathname'], pathname)(location))
+    .map(([pathname, location]) =>
+      R.assocPath(['pathname'], pathname)(location))
     .map(location => push(location));
 
   return {
@@ -63,7 +64,8 @@ function pushLocaleCycle(sources) {
 
   const action$ = locale$
     .combineLatest(location$)
-    .map(([locale, location]) => R.assocPath(['query', 'locale'], locale)(location))
+    .map(([locale, location]) =>
+      R.assocPath(['query', 'locale'], locale)(location))
     .map(location => push(location));
 
   return {

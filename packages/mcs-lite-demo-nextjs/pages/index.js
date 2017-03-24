@@ -7,7 +7,7 @@ const StyledControlSwitch = styled(DataChannel.ControlSwitch)`
   width: 300px;
 `;
 
-export default () =>
+export default () => (
   <ThemeProvider theme={theme}>
     <div>
       <DataChannelCard
@@ -19,7 +19,6 @@ export default () =>
         <Button>mcs-lite-ui button</Button>
       </DataChannelCard>
 
-
       <StyledControlSwitch
         title="Title"
         description="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
@@ -30,4 +29,5 @@ export default () =>
         }}
       />
     </div>
-  </ThemeProvider>;
+  </ThemeProvider>
+);

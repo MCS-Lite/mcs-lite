@@ -9,7 +9,7 @@ import messages from './messages';
 import { actions } from '../../modules/devices';
 import DeviceDetail from './DeviceDetail';
 
-export const mapStateToProps = ({ devices, ui }, { params: { deviceId }}) => ({
+export const mapStateToProps = ({ devices, ui }, { params: { deviceId } }) => ({
   deviceId,
   device: R.pathOr({}, [deviceId])(devices),
   isLoading: ui.isLoading,
@@ -28,18 +28,16 @@ export default compose(
   connect(mapStateToProps, mapDispatchToProps),
   connectSocket(
     // 1. urlMapper => (ownerProps: Object) => string
-    ({ deviceId, deviceKey }) => deviceKey
-      && `${wsHost}/deviceId/${deviceId}/deviceKey/${deviceKey}`,
-
+    ({ deviceId, deviceKey }) =>
+      deviceKey && `${wsHost}/deviceId/${deviceId}/deviceKey/${deviceKey}`,
     // 2. onMessage => (ownerProps: Object) => datapoint => void
     props => datapoint => props.setDatapoint(props.deviceId, datapoint, true),
-
     // 3. propsMapper => state => props
     ({ readyState, send, createWebSocket }) => ({
       sendMessage: send,
       isWebSocketClose: readyState.sender === 3 || readyState.viewer === 3,
       reconnect: createWebSocket,
-    }),
+    })
   ),
-  withGetMessages(messages, 'DeviceDetail'),
+  withGetMessages(messages, 'DeviceDetail')
 )(DeviceDetail);

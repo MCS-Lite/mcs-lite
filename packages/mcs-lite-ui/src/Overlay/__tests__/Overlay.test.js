@@ -7,7 +7,7 @@ it('should handle onClickOutSide', () => {
   const wrapper = mount(
     <Overlay onClickOutSide={mockOnClickOutSide}>
       Children
-    </Overlay>,
+    </Overlay>
   );
 
   // Before clicking

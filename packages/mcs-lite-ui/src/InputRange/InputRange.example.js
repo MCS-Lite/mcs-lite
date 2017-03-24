@@ -12,22 +12,16 @@ const Wrapper = styled.div`
 `;
 
 storiesOf('InputRange', module)
-  .addWithInfo(
-    'API',
-    'Default InputRange',
-    () => <InputRange />,
-    { inline: true },
-  )
+  .addWithInfo('API', 'Default InputRange', () => <InputRange />, {
+    inline: true,
+  })
   .addWithInfo(
     'With kind props',
     '',
-    () =>
+    () => (
       <Wrapper>
-        {
-          kindList.map(key =>
-            <InputRange key={key} kind={key} />,
-          )
-        }
-      </Wrapper>,
-    { inline: true },
+        {kindList.map(key => <InputRange key={key} kind={key} />)}
+      </Wrapper>
+    ),
+    { inline: true }
   );

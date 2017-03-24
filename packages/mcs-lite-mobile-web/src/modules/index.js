@@ -12,7 +12,7 @@ export const cycle = combineCycles(
   ...R.values(authCycles),
   ...R.values(devicesCycles),
   ...R.values(uiCycles),
-  ...R.values(datapointsCycles),
+  ...R.values(datapointsCycles)
 );
 
 export const reducer = combineReducers({

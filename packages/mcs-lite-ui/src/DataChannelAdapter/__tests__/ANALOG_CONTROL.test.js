@@ -20,7 +20,7 @@ it('should render ANALOG_CONTROL correctly with default value to N/A', () => {
         }}
         eventHandler={() => {}}
       />
-    </ThemeProvider>,
+    </ThemeProvider>
   );
 
   expect(wrapper.find(DataChannelAdapter)).toMatchSnapshot();
@@ -41,7 +41,7 @@ it('should render ANALOG_CONTROL correctly with zero', () => {
         }}
         eventHandler={() => {}}
       />
-    </ThemeProvider>,
+    </ThemeProvider>
   );
 
   expect(wrapper.find(DataChannelAdapter)).toMatchSnapshot();
@@ -62,7 +62,7 @@ it('should render ANALOG_CONTROL correctly with max', () => {
         }}
         eventHandler={() => {}}
       />
-    </ThemeProvider>,
+    </ThemeProvider>
   );
 
   expect(wrapper.find(DataChannelAdapter)).toMatchSnapshot();
@@ -85,7 +85,7 @@ it('should handle onChange', () => {
         }}
         eventHandler={mockEventHandler}
       />
-    </ThemeProvider>,
+    </ThemeProvider>
   );
 
   expect(mockEventHandler).not.toHaveBeenCalled();
@@ -93,8 +93,10 @@ it('should handle onChange', () => {
     target: { value: 43 },
   });
   expect(mockEventHandler).toHaveBeenCalledWith({
-    id: 'id', type: 'CHANGE', values: { value: 43 }},
-  );
+    id: 'id',
+    type: 'CHANGE',
+    values: { value: 43 },
+  });
 });
 
 it('should handle onSubmit', () => {
@@ -114,12 +116,14 @@ it('should handle onSubmit', () => {
         }}
         eventHandler={mockEventHandler}
       />
-    </ThemeProvider>,
+    </ThemeProvider>
   );
 
   expect(mockEventHandler).not.toHaveBeenCalled();
   wrapper.find(DataChannel.ControlRange).props().onSubmit();
   expect(mockEventHandler).toHaveBeenCalledWith({
-    id: 'id', type: 'SUBMIT', values: { value: 100 }},
-  );
+    id: 'id',
+    type: 'SUBMIT',
+    values: { value: 100 },
+  });
 });

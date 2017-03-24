@@ -29,7 +29,7 @@ it('should renders <DeviceDataChannelDetail> correctly without data', () => {
       setDatapoint={() => {}}
       reconnect={() => {}}
       isWebSocketClose={false}
-    />,
+    />
   );
 
   expect(toJson(wrapper)).toMatchSnapshot();
@@ -61,12 +61,10 @@ it('should renders <DeviceDataChannelDetail> correctly with Notification', () =>
       setDatapoint={() => {}}
       reconnect={() => {}}
       isWebSocketClose
-    />,
+    />
   );
 
-  expect(
-    toJson(wrapper.find(WebSocketNotification)),
-  ).toMatchSnapshot();
+  expect(toJson(wrapper.find(WebSocketNotification))).toMatchSnapshot();
 });
 
 it('should handle onResetClick correctly', () => {
@@ -93,7 +91,7 @@ it('should handle onResetClick correctly', () => {
       setDatapoint={() => {}}
       reconnect={() => {}}
       isWebSocketClose={false}
-    />,
+    />
   );
 
   // Before onResetClick
@@ -128,7 +126,7 @@ it('should handle eventHandler correctly', () => {
       setDatapoint={setDatapointMock}
       reconnect={() => {}}
       isWebSocketClose={false}
-    />,
+    />
   );
 
   // Before eventHandler with submit type
@@ -139,8 +137,9 @@ it('should handle eventHandler correctly', () => {
     id: 'id',
     values: { value: 1 },
   });
-  expect(sendMessageMock).toHaveBeenCalledWith('{"datachannelId":"id","values":{"value":1}}');
-
+  expect(sendMessageMock).toHaveBeenCalledWith(
+    '{"datachannelId":"id","values":{"value":1}}'
+  );
 
   // Before eventHandler with other type
   expect(setDatapointMock).not.toHaveBeenCalled();
@@ -150,10 +149,10 @@ it('should handle eventHandler correctly', () => {
     id: 'id',
     values: { value: 1 },
   });
-  expect(setDatapointMock).toHaveBeenCalledWith(
-    'deviceId',
-    { datachannelId: 'id', values: { value: 1 }},
-  );
+  expect(setDatapointMock).toHaveBeenCalledWith('deviceId', {
+    datachannelId: 'id',
+    values: { value: 1 },
+  });
 });
 
 it('should handle reconnect', () => {
@@ -179,7 +178,7 @@ it('should handle reconnect', () => {
       setDatapoint={() => {}}
       reconnect={mockReconnect}
       isWebSocketClose
-    />,
+    />
   );
 
   // Before reconnect

@@ -6,10 +6,7 @@ import Password from '../Password';
 
 it('should renders <Password> correctly', () => {
   const wrapper = shallow(
-    <Password
-      getMessages={R.identity}
-      changePassword={() => {}}
-    />,
+    <Password getMessages={R.identity} changePassword={() => {}} />
   );
 
   expect(toJson(wrapper)).toMatchSnapshot();
@@ -18,10 +15,7 @@ it('should renders <Password> correctly', () => {
 it('should return correctly state', () => {
   const fetchMock = jest.fn();
   const wrapper = shallow(
-    <Password
-      getMessages={R.identity}
-      changePassword={fetchMock}
-    />,
+    <Password getMessages={R.identity} changePassword={fetchMock} />
   );
 
   // Before Open
@@ -29,8 +23,8 @@ it('should return correctly state', () => {
   expect(wrapper.state('new2')).toBe('');
 
   // After Change
-  wrapper.instance().onChange({ target: { name: 'new1', value: '1234' }});
-  wrapper.instance().onChange({ target: { name: 'new2', value: '1234' }});
+  wrapper.instance().onChange({ target: { name: 'new1', value: '1234' } });
+  wrapper.instance().onChange({ target: { name: 'new2', value: '1234' } });
   expect(wrapper.state('new1')).toBe('1234');
   expect(wrapper.state('new2')).toBe('1234');
 
@@ -39,16 +33,16 @@ it('should return correctly state', () => {
 
   // After Submit
   wrapper.instance().onSubmit({ preventDefault: () => {} });
-  expect(fetchMock).toHaveBeenCalledWith({ message: 'success', password: '1234' });
+  expect(fetchMock).toHaveBeenCalledWith({
+    message: 'success',
+    password: '1234',
+  });
 });
 
 it('should render with error mesage', () => {
   const fetchMock = jest.fn();
   const wrapper = shallow(
-    <Password
-      getMessages={R.identity}
-      changePassword={fetchMock}
-    />,
+    <Password getMessages={R.identity} changePassword={fetchMock} />
   );
 
   // Set different password

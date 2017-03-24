@@ -20,7 +20,7 @@ const ContentWrapper = styled.div`
   padding: 8px;
 `;
 
-const MobileDeviceCard = ({ title, image, ...otherProps }) =>
+const MobileDeviceCard = ({ title, image, ...otherProps }) => (
   <StyledCard {...otherProps}>
     <ImageWrapper>
       <Img src={image} />
@@ -31,7 +31,8 @@ const MobileDeviceCard = ({ title, image, ...otherProps }) =>
         <TextTruncate line={4} truncateText=" ..." text={title} />
       </Heading>
     </ContentWrapper>
-  </StyledCard>;
+  </StyledCard>
+);
 
 MobileDeviceCard.displayName = 'MobileDeviceCard';
 MobileDeviceCard.propTypes = {

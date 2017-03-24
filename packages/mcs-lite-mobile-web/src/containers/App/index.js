@@ -10,5 +10,5 @@ export const mapStateToProps = ({ ui }) => ({
 
 export default compose(
   connect(mapStateToProps),
-  withGetMessages(messages, 'App'),
+  withGetMessages(messages, 'App')
 )(App);

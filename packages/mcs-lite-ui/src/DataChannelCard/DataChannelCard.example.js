@@ -8,7 +8,7 @@ storiesOf('DataChannelCard', module)
   .addWithInfo(
     'API',
     'MCS data channel 的卡片。',
-    () =>
+    () => (
       <DataChannelCard
         title="Title"
         subtitle="Last data point time : 2015-06-12 12:00"
@@ -16,8 +16,9 @@ storiesOf('DataChannelCard', module)
         header={<a href="">Link</a>}
       >
         Children
-      </DataChannelCard>,
-    { inline: true },
+      </DataChannelCard>
+    ),
+    { inline: true }
   )
   .addWithInfo(
     'Custom width and height',
@@ -39,25 +40,26 @@ storiesOf('DataChannelCard', module)
         </MCSSyledCard>
       );
     },
-    { inline: true },
+    { inline: true }
   )
   .addWithInfo(
     'Without description',
     '',
-    () =>
+    () => (
       <DataChannelCard
         header="V"
         title="Title"
         subtitle="Last data point time : 2015-06-12 12:00"
       >
         <Switch />
-      </DataChannelCard>,
-    { inline: true },
+      </DataChannelCard>
+    ),
+    { inline: true }
   )
   .addWithInfo(
     'With empty description',
     '',
-    () =>
+    () => (
       <DataChannelCard
         header="V"
         title="Title"
@@ -65,6 +67,7 @@ storiesOf('DataChannelCard', module)
         description=""
       >
         <Switch />
-      </DataChannelCard>,
-    { inline: true },
+      </DataChannelCard>
+    ),
+    { inline: true }
   );

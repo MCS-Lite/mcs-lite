@@ -14,7 +14,7 @@ it('should render Container correctly with HOC', () => {
   const wrapper = shallow(
     <Provider store={store}>
       <Container />
-    </Provider>,
+    </Provider>
   );
 
   expect(toJson(wrapper)).toMatchSnapshot();
@@ -22,7 +22,7 @@ it('should render Container correctly with HOC', () => {
 
 it('should return props correctly with mapStateToProps', () => {
   const state = {
-    routing: { locationBeforeTransitions: { query: { locale: 'zh-TW' }}},
+    routing: { locationBeforeTransitions: { query: { locale: 'zh-TW' } } },
   };
 
   expect(mapStateToProps(state)).toMatchSnapshot();

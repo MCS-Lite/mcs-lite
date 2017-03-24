@@ -12,7 +12,6 @@ import assocPath from 'ramda/src/assocPath';
  * @author Michael Hsu
  */
 
-const updatePathname = pathname =>
-  assocPath(['pathname'], pathname);
+const updatePathname = pathname => assocPath(['pathname'], pathname);
 
 export default updatePathname;

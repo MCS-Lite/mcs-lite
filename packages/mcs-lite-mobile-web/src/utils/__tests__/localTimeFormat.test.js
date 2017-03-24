@@ -1,10 +1,11 @@
 import localTimeFormat from '../localTimeFormat';
 
 // Remind: We just test the two argument of date-fns' format function.
-jest.mock('date-fns/format', () => (date, format) => ({
-  date: date.toISOString(),
-  format,
-}));
+jest.mock('date-fns/format', () =>
+  (date, format) => ({
+    date: date.toISOString(),
+    format,
+  }));
 
 it('should return localTimeFormat function', () => {
   expect(typeof localTimeFormat).toBe('function');

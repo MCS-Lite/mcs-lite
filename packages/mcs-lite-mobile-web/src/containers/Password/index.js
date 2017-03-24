@@ -10,5 +10,5 @@ export const mapDispatchToProps = { changePassword: actions.changePassword };
 
 export default compose(
   connect(mapStateToProps, mapDispatchToProps),
-  withGetMessages(messages, 'Password'),
+  withGetMessages(messages, 'Password')
 )(Password);

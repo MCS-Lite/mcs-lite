@@ -8,15 +8,15 @@ import emptyFunction from '../utils/emptyFunction';
 class DatetimePicker extends React.Component {
   static propTypes = {
     defaultValue: PropTypes.number.isRequired, // Unix Timestamp (milliseconds)
-    onChange: PropTypes.func,                  // (value: number) => void
+    onChange: PropTypes.func, // (value: number) => void
     years: PropTypes.array,
     utcOffset: PropTypes.number, // Remind: lock utc for testing (default is local time)
-  }
+  };
 
   static defaultProps = {
     onChange: emptyFunction,
     years: [2016, 2017],
-  }
+  };
 
   constructor(props) {
     super(props);
@@ -32,7 +32,7 @@ class DatetimePicker extends React.Component {
 
     this.setState({ value: newValue });
     this.props.onChange(newValue.clone().valueOf()); // Remind: prevent mutate
-  }
+  };
 
   reducer = (value, { name, index }) => {
     switch (name) {

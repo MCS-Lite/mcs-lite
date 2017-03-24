@@ -2,10 +2,24 @@ import React, { PropTypes } from 'react';
 import Helmet from 'react-helmet';
 import Transition from 'react-motion-ui-pack';
 import IconArrowLeft from 'mcs-lite-icon/lib/IconArrowLeft';
-import { P, InputGroup, Button, Input, MobileFixedFooter, MobileHeader } from 'mcs-lite-ui';
+import {
+  P,
+  InputGroup,
+  Button,
+  Input,
+  MobileFixedFooter,
+  MobileHeader,
+} from 'mcs-lite-ui';
 import { Link } from 'react-router';
 import StyledLink from '../../components/StyledLink';
-import { Item, Body, StyledSamll, ButtonWrapper, ScaledSwitch, StyledHr } from './styled-components';
+import {
+  Item,
+  Body,
+  StyledSamll,
+  ButtonWrapper,
+  ScaledSwitch,
+  StyledHr,
+} from './styled-components';
 import updatePathname from '../../utils/updatePathname';
 
 class DeviceTriggerEdit extends React.Component {
@@ -14,10 +28,10 @@ class DeviceTriggerEdit extends React.Component {
     deviceId: PropTypes.string.isRequired,
     getMessages: PropTypes.func.isRequired,
     fetchDeviceDetail: PropTypes.func.isRequired,
-  }
+  };
   static defaultProps = {
     device: {},
-  }
+  };
   state = { isChecked: false };
   componentWillMount = () => this.props.fetchDeviceDetail(this.props.deviceId);
   onSwitchClick = () => this.setState({ isChecked: !this.state.isChecked });
@@ -45,7 +59,11 @@ class DeviceTriggerEdit extends React.Component {
           <Item>
             <P>觸發條件名稱 A觸發條件名稱 A觸發條件名稱 A觸發條件名稱 A觸發條件名稱 A觸發條件名稱 A觸發條件名稱 A</P>
             <div>
-              <ScaledSwitch kind="primary" checked={isChecked} onClick={onSwitchClick} />
+              <ScaledSwitch
+                kind="primary"
+                checked={isChecked}
+                onClick={onSwitchClick}
+              />
             </div>
           </Item>
 
@@ -79,8 +97,7 @@ class DeviceTriggerEdit extends React.Component {
                     <Input placeholder="預設值：100" />
                   </InputGroup>
                 </div>
-              </Transition>
-            }
+              </Transition>}
 
             {isChecked &&
               <MobileFixedFooter>
@@ -88,10 +105,14 @@ class DeviceTriggerEdit extends React.Component {
                   <StyledLink to={updatePathname('/account')}>
                     <Button kind="default" block>{t('cancel')}</Button>
                   </StyledLink>
-                  <Button component="input" type="submit" value={t('save')} block />
+                  <Button
+                    component="input"
+                    type="submit"
+                    value={t('save')}
+                    block
+                  />
                 </ButtonWrapper>
-              </MobileFixedFooter>
-            }
+              </MobileFixedFooter>}
           </form>
         </main>
       </div>
