@@ -12,6 +12,7 @@ const Input = styled.input`
   border-radius: 3px;
   outline: 0;
   padding: 0 10px;
+  line-height: 1;
   min-height: ${props => props.theme.height.normal};
   color: ${props => props.theme.color.black};
   font-size: ${props => props.theme.fontSize.p};
