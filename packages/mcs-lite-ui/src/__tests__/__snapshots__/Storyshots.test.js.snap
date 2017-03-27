@@ -773,7 +773,7 @@ exports[`Storyshots DataChannel ControlNumber 1`] = `
     單位：攝氏
   </p>
   <input
-    className="bpPgUt"
+    className="dbdDaU"
     kind="primary"
     onChange={[Function]}
     placeholder="placeholder"
@@ -833,7 +833,7 @@ exports[`Storyshots DataChannel ControlPeriod 1`] = `
     className="fystPB"
   >
     <input
-      className="jfzaul"
+      className="jpBzcm"
       kind="primary"
       onChange={[Function]}
       placeholder="placeholder"
@@ -1598,7 +1598,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
           單位：ampere
         </p>
         <input
-          className="bpPgUt"
+          className="dbdDaU"
           kind="primary"
           onChange={[Function]}
           placeholder="Integer only"
@@ -1748,7 +1748,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
           單位：ampere
         </p>
         <input
-          className="bpPgUt"
+          className="dbdDaU"
           kind="primary"
           onChange={[Function]}
           placeholder="Float only"
@@ -2945,7 +2945,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
             className="fystPB"
           >
             <input
-              className="jfzaul"
+              className="jpBzcm"
               kind="primary"
               onChange={[Function]}
               placeholder="Integer only"
@@ -4069,7 +4069,7 @@ exports[`Storyshots DatetimePicker API 1`] = `
 exports[`Storyshots DatetimePickerDialog API 1`] = `
 <div>
   <input
-    className="bpPgUt"
+    className="dbdDaU"
     kind="primary"
     onClick={[Function]}
     readOnly={true}
@@ -4378,7 +4378,7 @@ exports[`Storyshots Img With size props 1`] = `
 
 exports[`Storyshots Input API 1`] = `
 <input
-  className="bpPgUt"
+  className="dbdDaU"
   kind="primary"
   placeholder="placeholder"
 />
@@ -4386,7 +4386,7 @@ exports[`Storyshots Input API 1`] = `
 
 exports[`Storyshots Input With focus props 1`] = `
 <input
-  className="iViDgM"
+  className="lmdHvm"
   kind="primary"
   placeholder="placeholder"
 />
@@ -4397,27 +4397,27 @@ exports[`Storyshots Input With kind props 1`] = `
   className="cZlPqe"
 >
   <input
-    className="igWmfz"
+    className="kQrhDw"
     kind="default"
     placeholder="default"
   />
   <input
-    className="bpPgUt"
+    className="dbdDaU"
     kind="primary"
     placeholder="primary"
   />
   <input
-    className="jaCWhd"
+    className="chejTV"
     kind="success"
     placeholder="success"
   />
   <input
-    className="irTBCj"
+    className="blQjcV"
     kind="error"
     placeholder="error"
   />
   <input
-    className="cCZeVJ"
+    className="Mdnkg"
     kind="warning"
     placeholder="warning"
   />
@@ -4429,91 +4429,91 @@ exports[`Storyshots Input With type props 1`] = `
   className="cZlPqe"
 >
   <input
-    className="bpPgUt"
+    className="dbdDaU"
     kind="primary"
     placeholder="text"
     type="text"
   />
   <input
-    className="bpPgUt"
+    className="dbdDaU"
     kind="primary"
     placeholder="email"
     type="email"
   />
   <input
-    className="bpPgUt"
+    className="dbdDaU"
     kind="primary"
     placeholder="number"
     type="number"
   />
   <input
-    className="bpPgUt"
+    className="dbdDaU"
     kind="primary"
     placeholder="password"
     type="password"
   />
   <input
-    className="bpPgUt"
+    className="dbdDaU"
     kind="primary"
     placeholder="tel"
     type="tel"
   />
   <input
-    className="bpPgUt"
+    className="dbdDaU"
     kind="primary"
     placeholder="search"
     type="search"
   />
   <input
-    className="bpPgUt"
+    className="dbdDaU"
     kind="primary"
     placeholder="month"
     type="month"
   />
   <input
-    className="bpPgUt"
+    className="dbdDaU"
     kind="primary"
     placeholder="week"
     type="week"
   />
   <input
-    className="bpPgUt"
+    className="dbdDaU"
     kind="primary"
     placeholder="date"
     type="date"
   />
   <input
-    className="bpPgUt"
+    className="dbdDaU"
     kind="primary"
     placeholder="color"
     type="color"
   />
   <input
-    className="bpPgUt"
+    className="dbdDaU"
     kind="primary"
     placeholder="file"
     type="file"
   />
   <input
-    className="bpPgUt"
+    className="dbdDaU"
     kind="primary"
     placeholder="radio"
     type="radio"
   />
   <input
-    className="bpPgUt"
+    className="dbdDaU"
     kind="primary"
     placeholder="time"
     type="time"
   />
   <input
-    className="bpPgUt"
+    className="dbdDaU"
     kind="primary"
     placeholder="url"
     type="url"
   />
   <input
-    className="bpPgUt"
+    className="dbdDaU"
     kind="primary"
     placeholder="range"
     type="range"
@@ -4567,7 +4567,7 @@ exports[`Storyshots InputGroup API 1`] = `
       大於
     </button>
     <input
-      className="bpPgUt"
+      className="dbdDaU"
       kind="primary"
       placeholder="預設值：20"
     />
@@ -4576,7 +4576,7 @@ exports[`Storyshots InputGroup API 1`] = `
     className="gzynLw"
   >
     <input
-      className="bpPgUt"
+      className="dbdDaU"
       kind="primary"
       placeholder="Input 1"
     />
@@ -4595,7 +4595,7 @@ exports[`Storyshots InputGroup API 1`] = `
       Button 1
     </button>
     <input
-      className="bpPgUt"
+      className="dbdDaU"
       kind="primary"
       placeholder="Input 1"
     />
@@ -4614,7 +4614,7 @@ exports[`Storyshots InputGroup API 1`] = `
       之間
     </button>
     <input
-      className="bpPgUt"
+      className="dbdDaU"
       kind="primary"
       placeholder="預設值：0"
     />
@@ -4624,7 +4624,7 @@ exports[`Storyshots InputGroup API 1`] = `
       和
     </button>
     <input
-      className="bpPgUt"
+      className="dbdDaU"
       kind="primary"
       placeholder="預設值：100"
     />
@@ -5356,7 +5356,7 @@ exports[`Storyshots Select API - ReadOnly 1`] = `
     className="fPWPDH"
   >
     <input
-      className="bpPgUt"
+      className="dbdDaU"
       kind="primary"
       placeholder={undefined}
       readOnly={true}
@@ -5407,7 +5407,7 @@ exports[`Storyshots Select With disabled props 1`] = `
     className="fPWPDH"
   >
     <input
-      className="bpPgUt"
+      className="dbdDaU"
       kind="primary"
       placeholder="選擇資料通道"
       readOnly={true}
@@ -5470,7 +5470,7 @@ exports[`Storyshots Select With kind props 1`] = `
     className="fPWPDH"
   >
     <input
-      className="cCZeVJ"
+      className="Mdnkg"
       kind="warning"
       placeholder={undefined}
       readOnly={true}
