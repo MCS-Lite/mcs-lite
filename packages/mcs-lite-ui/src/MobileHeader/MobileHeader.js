@@ -1,5 +1,6 @@
 import React, { PropTypes } from 'react';
 import styled from 'styled-components';
+import Portal from 'react-overlays/lib/Portal';
 import MobileContentWrapper from '../MobileContentWrapper';
 import Heading from '../Heading';
 import B from '../B';
@@ -10,6 +11,7 @@ const Container = styled.header`
 
 const Fixed = styled.div`
   position: fixed;
+  top: 0;
   left: 0;
   right: 0;
   background-color: ${props => props.theme.color.primary};
@@ -57,17 +59,19 @@ const StyledHeading = styled(Heading)`
 
 const MobileHeader = ({ title, leftChildren, rightChildren, ...otherProps }) =>
   <Container {...otherProps}>
-    <Fixed>
-      <Wrapper>
-        <Left>{leftChildren}</Left>
-        {title &&
-          <Center>
-            <StyledHeading level={3} color="white"><B>{title}</B></StyledHeading>
-          </Center>
-        }
-        <Right>{rightChildren}</Right>
-      </Wrapper>
-    </Fixed>
+    <Portal>
+      <Fixed>
+        <Wrapper>
+          <Left>{leftChildren}</Left>
+          {title &&
+            <Center>
+              <StyledHeading level={3} color="white"><B>{title}</B></StyledHeading>
+            </Center>
+          }
+          <Right>{rightChildren}</Right>
+        </Wrapper>
+      </Fixed>
+    </Portal>
   </Container>;
 
 MobileHeader.displayName = 'MobileHeader';
