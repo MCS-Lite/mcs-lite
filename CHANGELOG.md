@@ -2,6 +2,19 @@
 
 ## Released (2017-03-27)
 
+### Bump Versions
+
+-   babel-preset-mcs-lite@0.1.4
+-   mcs-lite-connect@0.2.1
+-   mcs-lite-demo-nextjs@0.1.14
+-   mcs-lite-icon@0.2.1
+-   mcs-lite-mobile-web@0.2.8
+-   mcs-lite-scripts@0.2.1
+-   mcs-lite-theme@0.2.2
+-   mcs-lite-ui@0.2.6
+-   react-intl-cra@0.1.6
+-   react-intl-inject-hoc@0.1.6
+
 #### :bug: Bug Fix
 * `mcs-lite-ui`
   * [#263](https://github.com/evenchange4/mcs-lite/pull/263) fix(Mobile/Header): use portal to manage z-index problem. ([@evenchange4](https://github.com/evenchange4))
