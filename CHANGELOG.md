@@ -1,5 +1,20 @@
 # MCS Lite changelogs
 
+## Released (2017-03-27)
+
+#### :bug: Bug Fix
+* `mcs-lite-ui`
+  * [#263](https://github.com/evenchange4/mcs-lite/pull/263) fix(Mobile/Header): use portal to manage z-index problem. ([@evenchange4](https://github.com/evenchange4))
+
+#### :house: Internal
+* `babel-preset-mcs-lite`, `mcs-lite-mobile-web`, `mcs-lite-ui`
+  * [#262](https://github.com/evenchange4/mcs-lite/pull/262) chore(ncu): update normalize.css to 6. ([@evenchange4](https://github.com/evenchange4))
+
+#### Committers: 1
+- Michael Hsu ([evenchange4](https://github.com/evenchange4))
+
+----
+
 ## Released (2017-03-24)
 
 ### Bump Versions
