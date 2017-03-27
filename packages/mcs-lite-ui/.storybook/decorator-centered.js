@@ -14,6 +14,9 @@ injectGlobal`
     background-color: ${theme.base.bodyBackgroundColor};
     color: ${theme.base.bodyColor};
     padding: 30px;
+
+    ${''/* Remind: We need this for normalize.css ^6.0.0 */}
+    margin: 0;
   }
 `;
 

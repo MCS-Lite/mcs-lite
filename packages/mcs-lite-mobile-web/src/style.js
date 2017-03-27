@@ -13,6 +13,9 @@ injectGlobal`
     font-family: "Noto Sans TC", "RionaSans", "Helvetica", "微軟正黑體", "Microsoft JhengHei", "黑體-繁", "Heiti TC", "新細明體", "PMingLiU", "sans-serif";
     background-color: ${mobileTheme.base.bodyBackgroundColor};
     color: ${mobileTheme.base.bodyColor};
+
+    ${''/* Remind: We need this for normalize.css ^6.0.0 */}
+    margin: 0;
   }
 
   ${''/* DO NOT use 100vh for mobile (safari) */}
