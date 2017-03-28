@@ -5,14 +5,14 @@ import Dialog from '../Dialog';
 import DatetimePicker from '../DatetimePicker';
 import A from '../A';
 
-const Container = styled.div`
+export const Container = styled.div`
   position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
 `;
 
-const Header = styled.header`
+export const Header = styled.header`
   height: ${props => props.theme.height.normal};
   background-color: ${props => props.theme.color.white};
   display: flex;
@@ -21,7 +21,7 @@ const Header = styled.header`
   border-bottom: 1px solid ${props => props.theme.color.grayDark};
 `;
 
-const StyledA = styled(A)`
+export const StyledA = styled(A)`
   display: flex;
   align-items: center;
   justify-content: center;

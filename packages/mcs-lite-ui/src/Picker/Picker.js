@@ -8,11 +8,11 @@ import Hammer from 'react-hammerjs';
 const CONTAINER_HEIGHT = 200;
 const ITEM_HEIGHT = 40;
 
-const ItemWrapper = styled.div`
+export const ItemWrapper = styled.div`
   padding-top: ${(CONTAINER_HEIGHT / 2) - (ITEM_HEIGHT / 2)}px;
 `;
 
-const Item = styled.div`
+export const Item = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;

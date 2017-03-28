@@ -4,7 +4,7 @@ import { IconDelete } from 'mcs-lite-icon';
 import A from '../A';
 import P from '../P';
 
-const StyledA = styled(A)`
+export const StyledA = styled(A)`
   display: flex;
   align-items: center;
 

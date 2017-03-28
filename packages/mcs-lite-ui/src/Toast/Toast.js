@@ -12,12 +12,12 @@ const mapColorByKind = R.cond([
   [R.T, props => R.path(['theme', 'color', props.kind])],
 ]);
 
-const StyledCard = styled(Card)`
+export const StyledCard = styled(Card)`
   border: 1px solid ${mapColorByKind};
   background-color: rgba(255, 255, 255, 0.9);
 `;
 
-const StyledP = styled(P)`
+export const StyledP = styled(P)`
   display: flex;
   align-items: center;
   padding: 10px 20px;

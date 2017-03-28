@@ -4,14 +4,14 @@ import ButtonClear from './ButtonClear';
 import Textarea from '../Textarea';
 import Button from '../Button';
 
-const Container = styled.div`
+export const Container = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
   align-self: stretch;
 `;
 
-const ButtonWrapper = styled.div`
+export const ButtonWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -20,7 +20,7 @@ const ButtonWrapper = styled.div`
   flex-shrink: 0;
 `;
 
-const StyledTextarea = styled(Textarea)`
+export const StyledTextarea = styled(Textarea)`
   height: 100%;
   min-height: 4em;
   flex-grow: 1;

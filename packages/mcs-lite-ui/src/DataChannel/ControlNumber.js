@@ -5,11 +5,11 @@ import Button from '../Button';
 import Input from '../Input';
 import P from '../P';
 
-const Container = styled.div`
+export const Container = styled.div`
   width: 100%;
 `;
 
-const ButtonWrapper = styled.div`
+export const ButtonWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -17,7 +17,7 @@ const ButtonWrapper = styled.div`
   margin-top: 10px;
 `;
 
-const Unixtype = styled(P)`
+export const Unixtype = styled(P)`
   margin-bottom: 5px;
   display: flex;
   justify-content: flex-end;

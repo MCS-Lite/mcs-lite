@@ -1,7 +1,7 @@
 import React, { PropTypes } from 'react';
 import styled from 'styled-components';
 
-const Svg = styled.svg`
+export const Svg = styled.svg`
   width: 12px;
 
   > * {

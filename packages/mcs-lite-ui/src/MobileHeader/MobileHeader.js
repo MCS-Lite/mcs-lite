@@ -5,11 +5,11 @@ import MobileContentWrapper from '../MobileContentWrapper';
 import Heading from '../Heading';
 import B from '../B';
 
-const Container = styled.header`
+export const Container = styled.header`
   height: ${props => props.theme.mobile.headerHeight};
 `;
 
-const Fixed = styled.div`
+export const Fixed = styled.div`
   position: fixed;
   top: 0;
   left: 0;
@@ -19,13 +19,13 @@ const Fixed = styled.div`
   box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.3);
 `;
 
-const Wrapper = styled(MobileContentWrapper)`
+export const Wrapper = styled(MobileContentWrapper)`
   display: flex;
   align-items: center;
   justify-content: space-between;
 `;
 
-const Left = styled.div`
+export const Left = styled.div`
   display: flex;
   height: 100%;
   align-items: center;
@@ -33,7 +33,7 @@ const Left = styled.div`
   flex-shrink: 0;
 `;
 
-const Center = styled.div`
+export const Center = styled.div`
   display: flex;
   height: 100%;
   align-items: center;
@@ -41,7 +41,7 @@ const Center = styled.div`
   overflow: hidden;
 `;
 
-const Right = styled.div`
+export const Right = styled.div`
   display: flex;
   height: 100%;
   align-items: center;
@@ -49,7 +49,7 @@ const Right = styled.div`
   justify-content: flex-end;
 `;
 
-const StyledHeading = styled(Heading)`
+export const StyledHeading = styled(Heading)`
   user-select: none;
   width: 100%;
   white-space: nowrap;

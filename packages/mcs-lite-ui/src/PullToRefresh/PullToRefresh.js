@@ -11,11 +11,11 @@ import Spin from '../Spin';
 const HEIGHT = 60;
 const SENSITIVITY = 2;
 
-const PullWrapper = styled.div`
+export const PullWrapper = styled.div`
   transition: ${props => (props.distance === 0 || props.isLoading) ? 'all .25s ease' : 'initial'};
 `;
 
-const LoadingContainer = styled.div`
+export const LoadingContainer = styled.div`
   margin-top: -${HEIGHT}px;
   height: ${HEIGHT}px;
   display: flex;

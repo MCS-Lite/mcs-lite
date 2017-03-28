@@ -3,13 +3,13 @@ import styled from 'styled-components';
 import StatusLight from '../StatusLight';
 import P from '../P';
 
-const Container = styled.div`
+export const Container = styled.div`
   display: flex;
   justify-content: space-around;
   width: 100%;
 `;
 
-const ItemWrapper = styled.div`
+export const ItemWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;

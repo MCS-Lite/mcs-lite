@@ -2,14 +2,14 @@ import React, { PropTypes } from 'react';
 import styled from 'styled-components';
 import Textarea from '../Textarea';
 
-const Container = styled.div`
+export const Container = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
   align-self: stretch;
 `;
 
-const StyledTextarea = styled(Textarea)`
+export const StyledTextarea = styled(Textarea)`
   height: 100%;
   min-height: 4em;
   flex-grow: 1;

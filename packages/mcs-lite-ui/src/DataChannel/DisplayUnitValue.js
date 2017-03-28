@@ -3,21 +3,21 @@ import styled from 'styled-components';
 import P from '../P';
 import Heading from '../Heading';
 
-const Container = styled.div`
+export const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
 `;
 
-const StyledHeading = styled(Heading)`
+export const StyledHeading = styled(Heading)`
   text-align: center;
   overflow: hidden;
   text-overflow: ellipsis;
   width: 100%;
 `;
 
-const StyledP = styled(P)`
+export const StyledP = styled(P)`
   margin-top: 10px;
 `;
 
