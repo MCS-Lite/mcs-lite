@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "mcs-lite-demo-nextjs",
-  "version": "0.1.14",
+  "version": "0.2.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -11,9 +11,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "mcs-lite-theme": "^0.2.2",
-    "mcs-lite-ui": "^0.2.6",
-    "mcs-lite-icon": "^0.2.1",
+    "mcs-lite-theme": "^0.2.3",
+    "mcs-lite-ui": "^0.3.0",
+    "mcs-lite-icon": "^0.2.2",
     "next": "^1.2.3",
     "styled-components": "^2.0.0-10"
   }
