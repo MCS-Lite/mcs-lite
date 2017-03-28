@@ -1,8 +1,11 @@
 import React, { PropTypes } from 'react';
+import R from 'ramda';
 import styled from 'styled-components';
 
+const omitProps = R.omit(['active']);
+
 const BaseComponent = ({ component, children, ...otherProps }) =>
-  React.createElement(component, otherProps, children);
+  React.createElement(component, omitProps(otherProps), children);
 
 const MobileHeaderIcon = styled(BaseComponent)`
   color: ${props => props.theme.color.white};

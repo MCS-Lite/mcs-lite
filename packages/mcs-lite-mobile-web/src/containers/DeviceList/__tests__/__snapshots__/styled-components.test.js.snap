@@ -9,24 +9,18 @@ Array [
         <div
             className="sc-bwzfXH fdppCk" />
     </styled.div>
-    <Styled(undefined)>
-        <BaseComponent
-            className="sc-htpNat jaEngQ">
-            <MobileHeaderIcon
-                className="sc-htpNat jaEngQ"
-                component="a" />
-        </BaseComponent>
-    </Styled(undefined)>
-    <Styled(undefined)
+    <Styled(MobileHeaderIcon)>
+        <MobileHeaderIcon
+            className="sc-htpNat jaEngQ"
+            component="a" />
+    </Styled(MobileHeaderIcon)>
+    <Styled(MobileHeaderIcon)
         active={true}>
-        <BaseComponent
+        <MobileHeaderIcon
             active={true}
-            className="sc-htpNat dMtSTb">
-            <MobileHeaderIcon
-                className="sc-htpNat dMtSTb"
-                component="a" />
-        </BaseComponent>
-    </Styled(undefined)>
+            className="sc-htpNat dMtSTb"
+            component="a" />
+    </Styled(MobileHeaderIcon)>
     <Styled(P)>
         <P
             className="sc-bxivhb RrqZP" />
