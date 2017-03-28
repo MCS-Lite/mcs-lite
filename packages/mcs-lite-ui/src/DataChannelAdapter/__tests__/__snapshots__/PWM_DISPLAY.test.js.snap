@@ -26,80 +26,90 @@ exports[`should render PWM_DISPLAY correctly with default value to N/A 1`] = `
       ]
     }
   >
-    <styled.div>
+    <DisplayMultipleValue__Container>
       <div
-        className="gLFxag"
+        className="DisplayMultipleValue__Container-emGSTk jhztvc"
       >
         <div>
           <P
             color="grayBase"
           >
             <Component
-              className="jyQfel"
+              className="P__P-KJbCR kHKeHO"
               color="grayBase"
             >
               <p
-                className="jyQfel"
+                className="P__P-KJbCR kHKeHO"
                 color="grayBase"
               >
                 Value
               </p>
             </Component>
           </P>
-          <Styled(H)
+          <DisplayMultipleValue__StyledHeading
             color="primary"
-            level={1}
           >
-            <H
-              className="fCRioE"
+            <Heading
+              className="DisplayMultipleValue__StyledHeading-fVnwQZ fMCDyR"
               color="primary"
               level={1}
             >
-              <h1
-                className="fCRioE"
+              <H
+                className="DisplayMultipleValue__StyledHeading-fVnwQZ fMCDyR Heading__Heading-bbmQNS bzctpr"
                 color="primary"
+                level={1}
               >
-                N/A
-              </h1>
-            </H>
-          </Styled(H)>
+                <h1
+                  className="DisplayMultipleValue__StyledHeading-fVnwQZ fMCDyR Heading__Heading-bbmQNS bzctpr"
+                  color="primary"
+                >
+                  N/A
+                </h1>
+              </H>
+            </Heading>
+          </DisplayMultipleValue__StyledHeading>
         </div>
         <div>
           <P
             color="grayBase"
           >
             <Component
-              className="jyQfel"
+              className="P__P-KJbCR kHKeHO"
               color="grayBase"
             >
               <p
-                className="jyQfel"
+                className="P__P-KJbCR kHKeHO"
                 color="grayBase"
               >
                 Period
               </p>
             </Component>
           </P>
-          <Styled(H)
+          <DisplayMultipleValue__StyledHeading
             color="primary"
-            level={1}
           >
-            <H
-              className="fCRioE"
+            <Heading
+              className="DisplayMultipleValue__StyledHeading-fVnwQZ fMCDyR"
               color="primary"
               level={1}
             >
-              <h1
-                className="fCRioE"
+              <H
+                className="DisplayMultipleValue__StyledHeading-fVnwQZ fMCDyR Heading__Heading-bbmQNS bzctpr"
                 color="primary"
+                level={1}
               >
-                N/A
-              </h1>
-            </H>
-          </Styled(H)>
+                <h1
+                  className="DisplayMultipleValue__StyledHeading-fVnwQZ fMCDyR Heading__Heading-bbmQNS bzctpr"
+                  color="primary"
+                >
+                  N/A
+                </h1>
+              </H>
+            </Heading>
+          </DisplayMultipleValue__StyledHeading>
         </div>
       </div>
-    </styled.div>
+    </DisplayMultipleValue__Container>
   </DisplayMultipleValue>
 </DataChannelAdapter>
 `;
@@ -133,80 +143,90 @@ exports[`should render PWM_DISPLAY correctly with max 1`] = `
       ]
     }
   >
-    <styled.div>
+    <DisplayMultipleValue__Container>
       <div
-        className="gLFxag"
+        className="DisplayMultipleValue__Container-emGSTk jhztvc"
       >
         <div>
           <P
             color="grayBase"
           >
             <Component
-              className="jyQfel"
+              className="P__P-KJbCR kHKeHO"
               color="grayBase"
             >
               <p
-                className="jyQfel"
+                className="P__P-KJbCR kHKeHO"
                 color="grayBase"
               >
                 Value
               </p>
             </Component>
           </P>
-          <Styled(H)
+          <DisplayMultipleValue__StyledHeading
             color="primary"
-            level={1}
           >
-            <H
-              className="fCRioE"
+            <Heading
+              className="DisplayMultipleValue__StyledHeading-fVnwQZ fMCDyR"
               color="primary"
               level={1}
             >
-              <h1
-                className="fCRioE"
+              <H
+                className="DisplayMultipleValue__StyledHeading-fVnwQZ fMCDyR Heading__Heading-bbmQNS bzctpr"
                 color="primary"
+                level={1}
               >
-                100
-              </h1>
-            </H>
-          </Styled(H)>
+                <h1
+                  className="DisplayMultipleValue__StyledHeading-fVnwQZ fMCDyR Heading__Heading-bbmQNS bzctpr"
+                  color="primary"
+                >
+                  100
+                </h1>
+              </H>
+            </Heading>
+          </DisplayMultipleValue__StyledHeading>
         </div>
         <div>
           <P
             color="grayBase"
           >
             <Component
-              className="jyQfel"
+              className="P__P-KJbCR kHKeHO"
               color="grayBase"
             >
               <p
-                className="jyQfel"
+                className="P__P-KJbCR kHKeHO"
                 color="grayBase"
               >
                 Period
               </p>
             </Component>
           </P>
-          <Styled(H)
+          <DisplayMultipleValue__StyledHeading
             color="primary"
-            level={1}
           >
-            <H
-              className="fCRioE"
+            <Heading
+              className="DisplayMultipleValue__StyledHeading-fVnwQZ fMCDyR"
               color="primary"
               level={1}
             >
-              <h1
-                className="fCRioE"
+              <H
+                className="DisplayMultipleValue__StyledHeading-fVnwQZ fMCDyR Heading__Heading-bbmQNS bzctpr"
                 color="primary"
+                level={1}
               >
-                1
-              </h1>
-            </H>
-          </Styled(H)>
+                <h1
+                  className="DisplayMultipleValue__StyledHeading-fVnwQZ fMCDyR Heading__Heading-bbmQNS bzctpr"
+                  color="primary"
+                >
+                  1
+                </h1>
+              </H>
+            </Heading>
+          </DisplayMultipleValue__StyledHeading>
         </div>
       </div>
-    </styled.div>
+    </DisplayMultipleValue__Container>
   </DisplayMultipleValue>
 </DataChannelAdapter>
 `;
@@ -240,80 +260,90 @@ exports[`should render PWM_DISPLAY correctly with zero 1`] = `
       ]
     }
   >
-    <styled.div>
+    <DisplayMultipleValue__Container>
       <div
-        className="gLFxag"
+        className="DisplayMultipleValue__Container-emGSTk jhztvc"
       >
         <div>
           <P
             color="grayBase"
           >
             <Component
-              className="jyQfel"
+              className="P__P-KJbCR kHKeHO"
               color="grayBase"
             >
               <p
-                className="jyQfel"
+                className="P__P-KJbCR kHKeHO"
                 color="grayBase"
               >
                 Value
               </p>
             </Component>
           </P>
-          <Styled(H)
+          <DisplayMultipleValue__StyledHeading
             color="primary"
-            level={1}
           >
-            <H
-              className="fCRioE"
+            <Heading
+              className="DisplayMultipleValue__StyledHeading-fVnwQZ fMCDyR"
               color="primary"
               level={1}
             >
-              <h1
-                className="fCRioE"
+              <H
+                className="DisplayMultipleValue__StyledHeading-fVnwQZ fMCDyR Heading__Heading-bbmQNS bzctpr"
                 color="primary"
+                level={1}
               >
-                0
-              </h1>
-            </H>
-          </Styled(H)>
+                <h1
+                  className="DisplayMultipleValue__StyledHeading-fVnwQZ fMCDyR Heading__Heading-bbmQNS bzctpr"
+                  color="primary"
+                >
+                  0
+                </h1>
+              </H>
+            </Heading>
+          </DisplayMultipleValue__StyledHeading>
         </div>
         <div>
           <P
             color="grayBase"
           >
             <Component
-              className="jyQfel"
+              className="P__P-KJbCR kHKeHO"
               color="grayBase"
             >
               <p
-                className="jyQfel"
+                className="P__P-KJbCR kHKeHO"
                 color="grayBase"
               >
                 Period
               </p>
             </Component>
           </P>
-          <Styled(H)
+          <DisplayMultipleValue__StyledHeading
             color="primary"
-            level={1}
           >
-            <H
-              className="fCRioE"
+            <Heading
+              className="DisplayMultipleValue__StyledHeading-fVnwQZ fMCDyR"
               color="primary"
               level={1}
             >
-              <h1
-                className="fCRioE"
+              <H
+                className="DisplayMultipleValue__StyledHeading-fVnwQZ fMCDyR Heading__Heading-bbmQNS bzctpr"
                 color="primary"
+                level={1}
               >
-                0
-              </h1>
-            </H>
-          </Styled(H)>
+                <h1
+                  className="DisplayMultipleValue__StyledHeading-fVnwQZ fMCDyR Heading__Heading-bbmQNS bzctpr"
+                  color="primary"
+                >
+                  0
+                </h1>
+              </H>
+            </Heading>
+          </DisplayMultipleValue__StyledHeading>
         </div>
       </div>
-    </styled.div>
+    </DisplayMultipleValue__Container>
   </DisplayMultipleValue>
 </DataChannelAdapter>
 `;

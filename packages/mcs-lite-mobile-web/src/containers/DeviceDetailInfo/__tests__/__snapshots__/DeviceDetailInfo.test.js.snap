@@ -17,7 +17,7 @@ exports[`test should renders <DeviceDetailInfo> correctly 1`] = `
     }
     title="deviceIntro" />
   <main>
-    <styled.div>
+    <Styled(MobileContentWrapper)>
       <div>
         <B>
           deviceName
@@ -66,7 +66,7 @@ exports[`test should renders <DeviceDetailInfo> correctly 1`] = `
           deviceKey
         </P>
       </div>
-    </styled.div>
+    </Styled(MobileContentWrapper)>
   </main>
 </div>
 `;

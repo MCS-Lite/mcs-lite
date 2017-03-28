@@ -25,37 +25,37 @@ exports[`test should renders <DeviceTrigger> correctly 1`] = `
       <PreventDrag>
         <Styled(Link)
           to={[Function]}>
-          <styled.div>
+          <Styled(MobileContentWrapper)>
             <div>
               <P>
                 觸發條件名稱 A
               </P>
-              <styled.small>
+              <Styled(Small)>
                 on
-              </styled.small>
+              </Styled(Small)>
             </div>
             <styled.div>
               <IconChevronRight
                 size="1em" />
             </styled.div>
-          </styled.div>
+          </Styled(MobileContentWrapper)>
         </Styled(Link)>
         <Styled(Link)
           to={[Function]}>
-          <styled.div>
+          <Styled(MobileContentWrapper)>
             <div>
               <P>
                 觸發條件名稱 A
               </P>
-              <styled.small>
+              <Styled(Small)>
                 off
-              </styled.small>
+              </Styled(Small)>
             </div>
             <styled.div>
               <IconChevronRight
                 size="1em" />
             </styled.div>
-          </styled.div>
+          </Styled(MobileContentWrapper)>
         </Styled(Link)>
       </PreventDrag>
     </PullToRefresh>

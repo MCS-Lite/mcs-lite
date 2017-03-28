@@ -1,6 +1,6 @@
 exports[`test should renders <WebSocketNotification> correctly 1`] = `
 <styled.div>
-  <styled.div>
+  <Styled(MobileContentWrapper)>
     <Transition
       appear={
         Object {
@@ -40,6 +40,6 @@ exports[`test should renders <WebSocketNotification> correctly 1`] = `
         </Button>
       </Notification>
     </Transition>
-  </styled.div>
+  </Styled(MobileContentWrapper)>
 </styled.div>
 `;

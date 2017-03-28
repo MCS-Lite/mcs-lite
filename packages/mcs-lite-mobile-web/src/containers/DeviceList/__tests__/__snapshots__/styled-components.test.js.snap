@@ -3,36 +3,30 @@ Array [
   <div>
     <Styled(MobileContentWrapper)>
         <MobileContentWrapper
-            className="jCqbCL" />
+            className="sc-bdVaJa cHxkvh" />
     </Styled(MobileContentWrapper)>
     <styled.div>
         <div
-            className="fOyagY" />
+            className="sc-bwzfXH fdppCk" />
     </styled.div>
-    <Styled(BaseComponent)>
-        <BaseComponent
-            className="bICnBJ">
-            <MobileHeaderIcon
-                className="bICnBJ"
-                component="a" />
-        </BaseComponent>
-    </Styled(BaseComponent)>
-    <Styled(BaseComponent)
+    <Styled(MobileHeaderIcon)>
+        <MobileHeaderIcon
+            className="sc-htpNat jaEngQ"
+            component="a" />
+    </Styled(MobileHeaderIcon)>
+    <Styled(MobileHeaderIcon)
         active={true}>
-        <BaseComponent
+        <MobileHeaderIcon
             active={true}
-            className="iPMmaL">
-            <MobileHeaderIcon
-                className="iPMmaL"
-                component="a" />
-        </BaseComponent>
-    </Styled(BaseComponent)>
+            className="sc-htpNat dMtSTb"
+            component="a" />
+    </Styled(MobileHeaderIcon)>
     <Styled(P)>
         <P
-            className="ljoVtz" />
+            className="sc-bxivhb RrqZP" />
     </Styled(P)>
 </div>,
   <div
-    className="fOyagY" />,
+    className="sc-bwzfXH fdppCk" />,
 ]
 `;

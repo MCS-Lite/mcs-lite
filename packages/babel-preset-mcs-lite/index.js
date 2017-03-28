@@ -1,3 +1,5 @@
+const env = process.env.BABEL_ENV || process.env.NODE_ENV;
+
 module.exports = {
   presets: [
     require.resolve('babel-preset-react-app'),
@@ -10,8 +12,8 @@ module.exports = {
     [
       require.resolve('babel-plugin-styled-components'),
       {
-        // TODO: withConfig problem
-        displayName: false,
+        // Better debugging
+        displayName: env !== 'production' || env === 'test',
 
         // Only necessary if you're server-side renderin
         ssr: false,

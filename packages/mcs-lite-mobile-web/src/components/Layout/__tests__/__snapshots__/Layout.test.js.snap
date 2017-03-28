@@ -2,7 +2,7 @@ exports[`test should renders <Layout.LayoutDefault> correctly 1`] = `
 <LayoutDefault>
   <styled.div>
     <div
-      className="iTMMQv">
+      className="sc-bdVaJa bPGLpq">
       <div>
         Mock children
       </div>
@@ -29,7 +29,7 @@ exports[`test should renders <Layout.LayoutDialog> correctly 1`] = `
     }>
     <Styled(MobileContentWrapper)>
       <MobileContentWrapper
-        className="fEeXvk" />
+        className="sc-htpNat gDUiwA" />
     </Styled(MobileContentWrapper)>
   </Component>
 </LayoutDialog>

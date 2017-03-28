@@ -19,9 +19,9 @@ exports[`should render FLOAT_CONTROL correctly with default value to empty 1`] =
     placeholder="Float only"
     value=""
   >
-    <styled.div>
+    <ControlNumber__Container>
       <div
-        className="kdCvHd"
+        className="ControlNumber__Container-gmlYuy rzEmK"
       >
         <Input
           focus={false}
@@ -32,7 +32,7 @@ exports[`should render FLOAT_CONTROL correctly with default value to empty 1`] =
           value=""
         >
           <input
-            className="dbdDaU"
+            className="Input__Input-ixjKAz ijwcNZ"
             kind="primary"
             onChange={[Function]}
             placeholder="Float only"
@@ -40,9 +40,9 @@ exports[`should render FLOAT_CONTROL correctly with default value to empty 1`] =
             value=""
           />
         </Input>
-        <styled.div>
+        <ControlNumber__ButtonWrapper>
           <div
-            className="kGGPNo"
+            className="ControlNumber__ButtonWrapper-iczkcP gmGCvf"
           >
             <ButtonClear
               onClick={[Function]}
@@ -51,38 +51,41 @@ exports[`should render FLOAT_CONTROL correctly with default value to empty 1`] =
                 onClick={[Function]}
               >
                 <Component
-                  className="gVViGF"
+                  className="P__P-KJbCR huqyql"
                   onClick={[Function]}
                 >
                   <div
-                    className="gVViGF"
+                    className="P__P-KJbCR huqyql"
                     onClick={[Function]}
                   >
-                    <styled.a
-                      color="primary"
-                    >
-                      <a
-                        className="enrdWE"
+                    <ButtonClear__StyledA>
+                      <A
+                        className="ButtonClear__StyledA-hPckxD cJqJoD"
                         color="primary"
                       >
-                        <IconDelete
-                          size="1em"
+                        <a
+                          className="ButtonClear__StyledA-hPckxD cJqJoD A__A-cCPuKx iriyAs"
+                          color="primary"
                         >
-                          <svg
-                            fill="currentColor"
-                            height="1em"
-                            preserveAspectRatio="xMidYMid meet"
-                            viewBox="0 0 24 24"
-                            width="1em"
+                          <IconDelete
+                            size="1em"
                           >
-                            <path
-                              d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zm9-10h1v10h-1V9zm-4 0h2v10h-2V9zM8 9h1v10H8V9zm7.5-5l-1-1h-5l-1 1H5v2h14V4h-3.5z"
-                            />
-                          </svg>
-                        </IconDelete>
-                        Clear
-                      </a>
-                    </styled.a>
+                            <svg
+                              fill="currentColor"
+                              height="1em"
+                              preserveAspectRatio="xMidYMid meet"
+                              viewBox="0 0 24 24"
+                              width="1em"
+                            >
+                              <path
+                                d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zm9-10h1v10h-1V9zm-4 0h2v10h-2V9zM8 9h1v10H8V9zm7.5-5l-1-1h-5l-1 1H5v2h14V4h-3.5z"
+                              />
+                            </svg>
+                          </IconDelete>
+                          Clear
+                        </a>
+                      </A>
+                    </ButtonClear__StyledA>
                   </div>
                 </Component>
               </P>
@@ -100,7 +103,7 @@ exports[`should render FLOAT_CONTROL correctly with default value to empty 1`] =
               <BaseComponent
                 active={false}
                 block={false}
-                className="dSNJHu"
+                className="Button__Button-jkHDFw ibjUrp"
                 component="button"
                 kind="primary"
                 onClick={[Function]}
@@ -109,7 +112,7 @@ exports[`should render FLOAT_CONTROL correctly with default value to empty 1`] =
                 square={false}
               >
                 <button
-                  className="dSNJHu"
+                  className="Button__Button-jkHDFw ibjUrp"
                   onClick={[Function]}
                 >
                   Ok
@@ -117,9 +120,9 @@ exports[`should render FLOAT_CONTROL correctly with default value to empty 1`] =
               </BaseComponent>
             </Button>
           </div>
-        </styled.div>
+        </ControlNumber__ButtonWrapper>
       </div>
-    </styled.div>
+    </ControlNumber__Container>
   </ControlNumber>
 </DataChannelAdapter>
 `;
@@ -148,25 +151,30 @@ exports[`should render FLOAT_CONTROL correctly with unit 1`] = `
     unit="單位：攝氏"
     value={0.11}
   >
-    <styled.div>
+    <ControlNumber__Container>
       <div
-        className="kdCvHd"
+        className="ControlNumber__Container-gmlYuy rzEmK"
       >
-        <Styled(Component)
+        <ControlNumber__Unixtype
           color="grayBase"
         >
-          <Component
-            className="dFZeAf"
+          <P
+            className="ControlNumber__Unixtype-hOgmLf cWpJIG"
             color="grayBase"
           >
-            <p
-              className="dFZeAf"
+            <Component
+              className="ControlNumber__Unixtype-hOgmLf cWpJIG P__P-KJbCR kHKeHO"
               color="grayBase"
             >
-              單位：攝氏
-            </p>
-          </Component>
-        </Styled(Component)>
+              <p
+                className="ControlNumber__Unixtype-hOgmLf cWpJIG P__P-KJbCR kHKeHO"
+                color="grayBase"
+              >
+                單位：攝氏
+              </p>
+            </Component>
+          </P>
+        </ControlNumber__Unixtype>
         <Input
           focus={false}
           kind="primary"
@@ -176,7 +184,7 @@ exports[`should render FLOAT_CONTROL correctly with unit 1`] = `
           value={0.11}
         >
           <input
-            className="dbdDaU"
+            className="Input__Input-ixjKAz ijwcNZ"
             kind="primary"
             onChange={[Function]}
             placeholder="Float only"
@@ -184,9 +192,9 @@ exports[`should render FLOAT_CONTROL correctly with unit 1`] = `
             value={0.11}
           />
         </Input>
-        <styled.div>
+        <ControlNumber__ButtonWrapper>
           <div
-            className="kGGPNo"
+            className="ControlNumber__ButtonWrapper-iczkcP gmGCvf"
           >
             <ButtonClear
               onClick={[Function]}
@@ -195,38 +203,41 @@ exports[`should render FLOAT_CONTROL correctly with unit 1`] = `
                 onClick={[Function]}
               >
                 <Component
-                  className="gVViGF"
+                  className="P__P-KJbCR huqyql"
                   onClick={[Function]}
                 >
                   <div
-                    className="gVViGF"
+                    className="P__P-KJbCR huqyql"
                     onClick={[Function]}
                   >
-                    <styled.a
-                      color="primary"
-                    >
-                      <a
-                        className="enrdWE"
+                    <ButtonClear__StyledA>
+                      <A
+                        className="ButtonClear__StyledA-hPckxD cJqJoD"
                         color="primary"
                       >
-                        <IconDelete
-                          size="1em"
+                        <a
+                          className="ButtonClear__StyledA-hPckxD cJqJoD A__A-cCPuKx iriyAs"
+                          color="primary"
                         >
-                          <svg
-                            fill="currentColor"
-                            height="1em"
-                            preserveAspectRatio="xMidYMid meet"
-                            viewBox="0 0 24 24"
-                            width="1em"
+                          <IconDelete
+                            size="1em"
                           >
-                            <path
-                              d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zm9-10h1v10h-1V9zm-4 0h2v10h-2V9zM8 9h1v10H8V9zm7.5-5l-1-1h-5l-1 1H5v2h14V4h-3.5z"
-                            />
-                          </svg>
-                        </IconDelete>
-                        Clear
-                      </a>
-                    </styled.a>
+                            <svg
+                              fill="currentColor"
+                              height="1em"
+                              preserveAspectRatio="xMidYMid meet"
+                              viewBox="0 0 24 24"
+                              width="1em"
+                            >
+                              <path
+                                d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zm9-10h1v10h-1V9zm-4 0h2v10h-2V9zM8 9h1v10H8V9zm7.5-5l-1-1h-5l-1 1H5v2h14V4h-3.5z"
+                              />
+                            </svg>
+                          </IconDelete>
+                          Clear
+                        </a>
+                      </A>
+                    </ButtonClear__StyledA>
                   </div>
                 </Component>
               </P>
@@ -244,7 +255,7 @@ exports[`should render FLOAT_CONTROL correctly with unit 1`] = `
               <BaseComponent
                 active={false}
                 block={false}
-                className="dSNJHu"
+                className="Button__Button-jkHDFw ibjUrp"
                 component="button"
                 kind="primary"
                 onClick={[Function]}
@@ -253,7 +264,7 @@ exports[`should render FLOAT_CONTROL correctly with unit 1`] = `
                 square={false}
               >
                 <button
-                  className="dSNJHu"
+                  className="Button__Button-jkHDFw ibjUrp"
                   onClick={[Function]}
                 >
                   Ok
@@ -261,9 +272,9 @@ exports[`should render FLOAT_CONTROL correctly with unit 1`] = `
               </BaseComponent>
             </Button>
           </div>
-        </styled.div>
+        </ControlNumber__ButtonWrapper>
       </div>
-    </styled.div>
+    </ControlNumber__Container>
   </ControlNumber>
 </DataChannelAdapter>
 `;
@@ -289,9 +300,9 @@ exports[`should render FLOAT_CONTROL correctly with value 1`] = `
     placeholder="Float only"
     value={0.11}
   >
-    <styled.div>
+    <ControlNumber__Container>
       <div
-        className="kdCvHd"
+        className="ControlNumber__Container-gmlYuy rzEmK"
       >
         <Input
           focus={false}
@@ -302,7 +313,7 @@ exports[`should render FLOAT_CONTROL correctly with value 1`] = `
           value={0.11}
         >
           <input
-            className="dbdDaU"
+            className="Input__Input-ixjKAz ijwcNZ"
             kind="primary"
             onChange={[Function]}
             placeholder="Float only"
@@ -310,9 +321,9 @@ exports[`should render FLOAT_CONTROL correctly with value 1`] = `
             value={0.11}
           />
         </Input>
-        <styled.div>
+        <ControlNumber__ButtonWrapper>
           <div
-            className="kGGPNo"
+            className="ControlNumber__ButtonWrapper-iczkcP gmGCvf"
           >
             <ButtonClear
               onClick={[Function]}
@@ -321,38 +332,41 @@ exports[`should render FLOAT_CONTROL correctly with value 1`] = `
                 onClick={[Function]}
               >
                 <Component
-                  className="gVViGF"
+                  className="P__P-KJbCR huqyql"
                   onClick={[Function]}
                 >
                   <div
-                    className="gVViGF"
+                    className="P__P-KJbCR huqyql"
                     onClick={[Function]}
                   >
-                    <styled.a
-                      color="primary"
-                    >
-                      <a
-                        className="enrdWE"
+                    <ButtonClear__StyledA>
+                      <A
+                        className="ButtonClear__StyledA-hPckxD cJqJoD"
                         color="primary"
                       >
-                        <IconDelete
-                          size="1em"
+                        <a
+                          className="ButtonClear__StyledA-hPckxD cJqJoD A__A-cCPuKx iriyAs"
+                          color="primary"
                         >
-                          <svg
-                            fill="currentColor"
-                            height="1em"
-                            preserveAspectRatio="xMidYMid meet"
-                            viewBox="0 0 24 24"
-                            width="1em"
+                          <IconDelete
+                            size="1em"
                           >
-                            <path
-                              d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zm9-10h1v10h-1V9zm-4 0h2v10h-2V9zM8 9h1v10H8V9zm7.5-5l-1-1h-5l-1 1H5v2h14V4h-3.5z"
-                            />
-                          </svg>
-                        </IconDelete>
-                        Clear
-                      </a>
-                    </styled.a>
+                            <svg
+                              fill="currentColor"
+                              height="1em"
+                              preserveAspectRatio="xMidYMid meet"
+                              viewBox="0 0 24 24"
+                              width="1em"
+                            >
+                              <path
+                                d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zm9-10h1v10h-1V9zm-4 0h2v10h-2V9zM8 9h1v10H8V9zm7.5-5l-1-1h-5l-1 1H5v2h14V4h-3.5z"
+                              />
+                            </svg>
+                          </IconDelete>
+                          Clear
+                        </a>
+                      </A>
+                    </ButtonClear__StyledA>
                   </div>
                 </Component>
               </P>
@@ -370,7 +384,7 @@ exports[`should render FLOAT_CONTROL correctly with value 1`] = `
               <BaseComponent
                 active={false}
                 block={false}
-                className="dSNJHu"
+                className="Button__Button-jkHDFw ibjUrp"
                 component="button"
                 kind="primary"
                 onClick={[Function]}
@@ -379,7 +393,7 @@ exports[`should render FLOAT_CONTROL correctly with value 1`] = `
                 square={false}
               >
                 <button
-                  className="dSNJHu"
+                  className="Button__Button-jkHDFw ibjUrp"
                   onClick={[Function]}
                 >
                   Ok
@@ -387,9 +401,9 @@ exports[`should render FLOAT_CONTROL correctly with value 1`] = `
               </BaseComponent>
             </Button>
           </div>
-        </styled.div>
+        </ControlNumber__ButtonWrapper>
       </div>
-    </styled.div>
+    </ControlNumber__Container>
   </ControlNumber>
 </DataChannelAdapter>
 `;
@@ -415,9 +429,9 @@ exports[`should render FLOAT_CONTROL correctly with zero 1`] = `
     placeholder="Float only"
     value={0}
   >
-    <styled.div>
+    <ControlNumber__Container>
       <div
-        className="kdCvHd"
+        className="ControlNumber__Container-gmlYuy rzEmK"
       >
         <Input
           focus={false}
@@ -428,7 +442,7 @@ exports[`should render FLOAT_CONTROL correctly with zero 1`] = `
           value={0}
         >
           <input
-            className="dbdDaU"
+            className="Input__Input-ixjKAz ijwcNZ"
             kind="primary"
             onChange={[Function]}
             placeholder="Float only"
@@ -436,9 +450,9 @@ exports[`should render FLOAT_CONTROL correctly with zero 1`] = `
             value={0}
           />
         </Input>
-        <styled.div>
+        <ControlNumber__ButtonWrapper>
           <div
-            className="kGGPNo"
+            className="ControlNumber__ButtonWrapper-iczkcP gmGCvf"
           >
             <ButtonClear
               onClick={[Function]}
@@ -447,38 +461,41 @@ exports[`should render FLOAT_CONTROL correctly with zero 1`] = `
                 onClick={[Function]}
               >
                 <Component
-                  className="gVViGF"
+                  className="P__P-KJbCR huqyql"
                   onClick={[Function]}
                 >
                   <div
-                    className="gVViGF"
+                    className="P__P-KJbCR huqyql"
                     onClick={[Function]}
                   >
-                    <styled.a
-                      color="primary"
-                    >
-                      <a
-                        className="enrdWE"
+                    <ButtonClear__StyledA>
+                      <A
+                        className="ButtonClear__StyledA-hPckxD cJqJoD"
                         color="primary"
                       >
-                        <IconDelete
-                          size="1em"
+                        <a
+                          className="ButtonClear__StyledA-hPckxD cJqJoD A__A-cCPuKx iriyAs"
+                          color="primary"
                         >
-                          <svg
-                            fill="currentColor"
-                            height="1em"
-                            preserveAspectRatio="xMidYMid meet"
-                            viewBox="0 0 24 24"
-                            width="1em"
+                          <IconDelete
+                            size="1em"
                           >
-                            <path
-                              d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zm9-10h1v10h-1V9zm-4 0h2v10h-2V9zM8 9h1v10H8V9zm7.5-5l-1-1h-5l-1 1H5v2h14V4h-3.5z"
-                            />
-                          </svg>
-                        </IconDelete>
-                        Clear
-                      </a>
-                    </styled.a>
+                            <svg
+                              fill="currentColor"
+                              height="1em"
+                              preserveAspectRatio="xMidYMid meet"
+                              viewBox="0 0 24 24"
+                              width="1em"
+                            >
+                              <path
+                                d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zm9-10h1v10h-1V9zm-4 0h2v10h-2V9zM8 9h1v10H8V9zm7.5-5l-1-1h-5l-1 1H5v2h14V4h-3.5z"
+                              />
+                            </svg>
+                          </IconDelete>
+                          Clear
+                        </a>
+                      </A>
+                    </ButtonClear__StyledA>
                   </div>
                 </Component>
               </P>
@@ -496,7 +513,7 @@ exports[`should render FLOAT_CONTROL correctly with zero 1`] = `
               <BaseComponent
                 active={false}
                 block={false}
-                className="dSNJHu"
+                className="Button__Button-jkHDFw ibjUrp"
                 component="button"
                 kind="primary"
                 onClick={[Function]}
@@ -505,7 +522,7 @@ exports[`should render FLOAT_CONTROL correctly with zero 1`] = `
                 square={false}
               >
                 <button
-                  className="dSNJHu"
+                  className="Button__Button-jkHDFw ibjUrp"
                   onClick={[Function]}
                 >
                   Ok
@@ -513,9 +530,9 @@ exports[`should render FLOAT_CONTROL correctly with zero 1`] = `
               </BaseComponent>
             </Button>
           </div>
-        </styled.div>
+        </ControlNumber__ButtonWrapper>
       </div>
-    </styled.div>
+    </ControlNumber__Container>
   </ControlNumber>
 </DataChannelAdapter>
 `;

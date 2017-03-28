@@ -3,20 +3,20 @@ Array [
   <div>
     <styled.div>
         <div
-            className="ciYYTC" />
+            className="sc-bdVaJa dGIfxd" />
     </styled.div>
     <styled.div>
         <div
-            className="AJPwE" />
+            className="sc-bwzfXH gjbKqk" />
     </styled.div>
     <Styled(MobileContentWrapper)>
         <MobileContentWrapper
-            className="igtcBn" />
+            className="sc-htpNat dWlGLA" />
     </Styled(MobileContentWrapper)>
 </div>,
   <div
-    className="ciYYTC" />,
+    className="sc-bdVaJa dGIfxd" />,
   <div
-    className="AJPwE" />,
+    className="sc-bwzfXH gjbKqk" />,
 ]
 `;

@@ -1,8 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
 import { storiesOf } from '@kadira/storybook';
-import DataChannelCard from './DataChannelCard';
+import DataChannelCard, { Footer } from './DataChannelCard';
 import Switch from '../Switch';
+
+const StyledDataChannelCard = styled(DataChannelCard)`
+  ${Footer} {
+    width: 50%;
+  }
+`;
 
 storiesOf('DataChannelCard', module)
   .addWithInfo(
@@ -66,5 +72,20 @@ storiesOf('DataChannelCard', module)
       >
         <Switch />
       </DataChannelCard>,
+    { inline: true },
+  )
+
+  .addWithInfo(
+    'With Component selector',
+    '',
+    () =>
+      <StyledDataChannelCard
+        header="V"
+        title="Title"
+        subtitle="Last data point time : 2015-06-12 12:00"
+        description="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
+      >
+        Children
+      </StyledDataChannelCard>,
     { inline: true },
   );

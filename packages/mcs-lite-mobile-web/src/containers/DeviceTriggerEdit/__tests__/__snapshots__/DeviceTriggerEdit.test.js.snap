@@ -17,17 +17,17 @@ exports[`test should renders <DeviceTriggerEdit> correctly 1`] = `
     }
     title="editTriggerAndAction" />
   <main>
-    <styled.div>
+    <Styled(MobileContentWrapper)>
       <P>
         觸發條件名稱 A觸發條件名稱 A觸發條件名稱 A觸發條件名稱 A觸發條件名稱 A觸發條件名稱 A觸發條件名稱 A
       </P>
       <div>
-        <styled.div
+        <Styled(Switch)
           checked={false}
           kind="primary"
           onClick={[Function]} />
       </div>
-    </styled.div>
+    </Styled(MobileContentWrapper)>
     <form
       onSubmit={[Function]} />
   </main>

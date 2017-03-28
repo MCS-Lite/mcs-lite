@@ -7,9 +7,7 @@ exports[`test should renders <Account> correctly 1`] = `
     </title>
   </HelmetWrapper>
   <styled.div>
-    <styled.img
-      alt="MCS Lite Logo"
-      src="logo_mcs_lite_black.svg" />
+    <Styled(Logo) />
     <Heading
       level={4}>
       userName
@@ -20,50 +18,32 @@ exports[`test should renders <Account> correctly 1`] = `
     </Heading>
   </styled.div>
   <styled.footer>
-    <Styled(Component)
+    <Styled(P)
       color="grayBase">
       <Small>
         v
         0.0.0
       </Small>
-    </Styled(Component)>
+    </Styled(P)>
     <Styled(Link)
       to={[Function]}>
-      <Styled(BaseComponent)
-        active={false}
-        block={true}
-        component="button"
-        kind="primary"
-        round={false}
-        size="normal"
-        square={false}>
+      <Styled(Button)
+        block={true}>
         myTestDevices
-      </Styled(BaseComponent)>
+      </Styled(Button)>
     </Styled(Link)>
     <Styled(Link)
       to={[Function]}>
-      <Styled(BaseComponent)
-        active={false}
-        block={true}
-        component="button"
-        kind="primary"
-        round={false}
-        size="normal"
-        square={false}>
+      <Styled(Button)
+        block={true}>
         changePassword
-      </Styled(BaseComponent)>
+      </Styled(Button)>
     </Styled(Link)>
-    <Styled(BaseComponent)
-      active={false}
+    <Styled(Button)
       block={true}
-      component="button"
-      kind="primary"
-      onClick={[Function]}
-      round={false}
-      size="normal"
-      square={false}>
+      onClick={[Function]}>
       signout
-    </Styled(BaseComponent)>
+    </Styled(Button)>
   </styled.footer>
 </styled.div>
 `;

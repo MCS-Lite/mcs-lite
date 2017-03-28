@@ -2,7 +2,7 @@ exports[`test should render components correctly 1`] = `
 <div>
   <Styled(Small)>
     <Small
-      className="bdAfFa" />
+      className="sc-bwzfXH wIntD" />
   </Styled(Small)>
 </div>
 `;

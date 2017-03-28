@@ -29,7 +29,11 @@ const Body = styled.div`
   padding: 10px 0;
 `;
 
-const Description = styled(P)`
+export const Footer = styled.div`
+  display: block;
+`;
+
+export const Description = styled(P)`
   height: ${setHeightByLine(2)};
 `;
 
@@ -60,7 +64,7 @@ const DataChannelCard = ({ header, children, title, subtitle, description, ...ot
   <Wrapper {...otherProps}>
     <Header>{header}</Header>
     <Body>{children}</Body>
-    <div>
+    <Footer>
       <StyledHeading level={4}>{title}</StyledHeading>
       <StyledSmall>{subtitle}</StyledSmall>
       {isString(description) && <StyledHr />}
@@ -71,7 +75,7 @@ const DataChannelCard = ({ header, children, title, subtitle, description, ...ot
           </Description>
         )
       }
-    </div>
+    </Footer>
   </Wrapper>;
 
 DataChannelCard.displayName = 'DataChannelCard';
