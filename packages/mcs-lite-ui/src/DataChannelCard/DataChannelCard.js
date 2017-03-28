@@ -29,7 +29,9 @@ const Body = styled.div`
   padding: 10px 0;
 `;
 
-export const Footer = styled.div``;
+export const Footer = styled.div`
+  display: block;
+`;
 
 export const Description = styled(P)`
   height: ${setHeightByLine(2)};
