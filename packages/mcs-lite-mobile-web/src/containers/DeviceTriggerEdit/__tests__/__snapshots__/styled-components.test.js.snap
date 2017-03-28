@@ -3,28 +3,28 @@ Array [
   <div>
     <Styled(MobileContentWrapper)>
         <MobileContentWrapper
-            className="cWSYOE" />
+            className="sc-bdVaJa dRbEK" />
     </Styled(MobileContentWrapper)>
     <Styled(MobileContentWrapper)>
         <MobileContentWrapper
-            className="eCOaFC" />
+            className="sc-bwzfXH dNQKJg" />
     </Styled(MobileContentWrapper)>
     <Styled(Small)>
         <Small
-            className="duXBxT" />
+            className="sc-htpNat jBwnyn" />
     </Styled(Small)>
     <styled.div>
         <div
-            className="fBwQPK" />
+            className="sc-bxivhb cEYKpZ" />
     </styled.div>
     <Styled(Switch)>
         <Switch
             checked={false}
-            className="kTMKcX"
+            className="sc-ifAKCX jhZcTJ"
             kind="success" />
     </Styled(Switch)>
 </div>,
   <div
-    className="fBwQPK" />,
+    className="sc-bxivhb cEYKpZ" />,
 ]
 `;

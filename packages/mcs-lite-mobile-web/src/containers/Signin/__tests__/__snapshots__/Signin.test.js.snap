@@ -1,5 +1,5 @@
 exports[`test should renders <Signin> correctly 1`] = `
-<styled.div>
+<Styled(MobileContentWrapper)>
   <HelmetWrapper
     encodeSpecialCharacters={true}>
     <title>
@@ -44,11 +44,11 @@ exports[`test should renders <Signin> correctly 1`] = `
       type="submit"
       value="signin" />
   </styled.form>
-</styled.div>
+</Styled(MobileContentWrapper)>
 `;
 
 exports[`test should renders <Signin> correctly with errorMessage 1`] = `
-<styled.div>
+<Styled(MobileContentWrapper)>
   <HelmetWrapper
     encodeSpecialCharacters={true}>
     <title>
@@ -58,10 +58,10 @@ exports[`test should renders <Signin> correctly with errorMessage 1`] = `
   <Logo
     alt="MCS Lite Logo"
     src="logo_mcs_lite_black.svg" />
-  <Styled(Component)
+  <Styled(P)
     color="error">
     errorMessage
-  </Styled(Component)>
+  </Styled(P)>
   <Styled(Hr)>
     welcome
   </Styled(Hr)>
@@ -97,5 +97,5 @@ exports[`test should renders <Signin> correctly with errorMessage 1`] = `
       type="submit"
       value="signin" />
   </styled.form>
-</styled.div>
+</Styled(MobileContentWrapper)>
 `;

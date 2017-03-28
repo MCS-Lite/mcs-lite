@@ -17,7 +17,7 @@ exports[`test should renders <DeviceDataChannelTimeRange> correctly 1`] = `
     }
     title="searchTimeRange" />
   <main>
-    <styled.div>
+    <Styled(MobileContentWrapper)>
       <styled.div
         onClick={[Function]}>
         <P>
@@ -51,7 +51,7 @@ exports[`test should renders <DeviceDataChannelTimeRange> correctly 1`] = `
         onHide={[Function]}
         onSubmit={[Function]}
         show={false} />
-    </styled.div>
+    </Styled(MobileContentWrapper)>
   </main>
   <MobileFixedFooter>
     <styled.div>

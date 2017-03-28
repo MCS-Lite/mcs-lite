@@ -3,18 +3,18 @@ Array [
   <div>
     <Styled(MobileContentWrapper)>
         <MobileContentWrapper
-            className="hDHuFE" />
+            className="sc-bdVaJa jJHLFN" />
     </Styled(MobileContentWrapper)>
     <styled.label>
         <label
-            className="kBhMui" />
+            className="sc-bwzfXH kNZjpJ" />
     </styled.label>
     <styled.div>
         <div
-            className="fBwQPK" />
+            className="sc-htpNat MUAJk" />
     </styled.div>
 </div>,
   <div
-    className="fBwQPK" />,
+    className="sc-htpNat MUAJk" />,
 ]
 `;

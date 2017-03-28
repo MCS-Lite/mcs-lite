@@ -44,12 +44,12 @@ exports[`test should renders <DeviceList> correctly when Filter open 1`] = `
       </Transition>,
         <ClickOutside
           onClick={[Function]}>
-          <Styled(BaseComponent)
+          <Styled(undefined)
               active={true}
               onClick={[Function]}>
               <IconSearch
                   size="1em" />
-          </Styled(BaseComponent)>
+          </Styled(undefined)>
       </ClickOutside>,
       ]
     }
@@ -60,7 +60,7 @@ exports[`test should renders <DeviceList> correctly when Filter open 1`] = `
       IconLoading={[Function]}
       isLoading={false}
       onPull={[Function]}>
-      <styled.div>
+      <Styled(MobileContentWrapper)>
         <PreventDrag>
           <Transition
             appear={
@@ -85,10 +85,10 @@ exports[`test should renders <DeviceList> correctly when Filter open 1`] = `
             onLeave={[Function]}
             runOnMount={true} />
         </PreventDrag>
-        <Styled(Component)>
+        <Styled(P)>
           noDevice
-        </Styled(Component)>
-      </styled.div>
+        </Styled(P)>
+      </Styled(MobileContentWrapper)>
     </PullToRefresh>
   </main>
 </div>
@@ -116,12 +116,12 @@ exports[`test should renders <DeviceList> correctly with one device 1`] = `
         false,
         <ClickOutside
           onClick={[Function]}>
-          <Styled(BaseComponent)
+          <Styled(undefined)
               active={false}
               onClick={[Function]}>
               <IconSearch
                   size="1em" />
-          </Styled(BaseComponent)>
+          </Styled(undefined)>
       </ClickOutside>,
       ]
     }
@@ -132,7 +132,7 @@ exports[`test should renders <DeviceList> correctly with one device 1`] = `
       IconLoading={[Function]}
       isLoading={false}
       onPull={[Function]}>
-      <styled.div>
+      <Styled(MobileContentWrapper)>
         <PreventDrag>
           <Transition
             appear={
@@ -164,7 +164,7 @@ exports[`test should renders <DeviceList> correctly with one device 1`] = `
             </Styled(Link)>
           </Transition>
         </PreventDrag>
-      </styled.div>
+      </Styled(MobileContentWrapper)>
     </PullToRefresh>
   </main>
 </div>
@@ -192,12 +192,12 @@ exports[`test should renders <DeviceList> correctly without devices 1`] = `
         false,
         <ClickOutside
           onClick={[Function]}>
-          <Styled(BaseComponent)
+          <Styled(undefined)
               active={false}
               onClick={[Function]}>
               <IconSearch
                   size="1em" />
-          </Styled(BaseComponent)>
+          </Styled(undefined)>
       </ClickOutside>,
       ]
     }
@@ -208,7 +208,7 @@ exports[`test should renders <DeviceList> correctly without devices 1`] = `
       IconLoading={[Function]}
       isLoading={false}
       onPull={[Function]}>
-      <styled.div>
+      <Styled(MobileContentWrapper)>
         <PreventDrag>
           <Transition
             appear={
@@ -233,10 +233,10 @@ exports[`test should renders <DeviceList> correctly without devices 1`] = `
             onLeave={[Function]}
             runOnMount={true} />
         </PreventDrag>
-        <Styled(Component)>
+        <Styled(P)>
           noDevice
-        </Styled(Component)>
-      </styled.div>
+        </Styled(P)>
+      </Styled(MobileContentWrapper)>
     </PullToRefresh>
   </main>
 </div>

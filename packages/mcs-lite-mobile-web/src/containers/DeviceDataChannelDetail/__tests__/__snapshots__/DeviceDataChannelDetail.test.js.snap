@@ -30,33 +30,32 @@ exports[`test should renders <DeviceDataChannelDetail> correctly without data 1`
     }
     title="dataChannelDetail" />
   <main>
-    <styled.div />
-    <styled.div>
+    <Styled(MobileContentWrapper) />
+    <Styled(MobileContentWrapper)>
       <styled.div>
         <div>
           <P>
             historyChart
           </P>
-          <styled.small>
+          <Styled(Small)>
             defaultQueryLatest
-          </styled.small>
+          </Styled(Small)>
         </div>
         <div>
-          <styled.a
-            color="primary"
+          <Styled(A)
             onClick={[Function]}>
             <IconRefresh
               size="1em" />
             <P>
               reset
             </P>
-          </styled.a>
+          </Styled(A)>
         </div>
       </styled.div>
       <styled.div>
         noData
       </styled.div>
-    </styled.div>
+    </Styled(MobileContentWrapper)>
   </main>
 </div>
 `;

@@ -34,12 +34,11 @@ exports[`test should renders <DeviceDetail> correctly 1`] = `
       isLoading={false}
       onPull={[Function]}>
       <div>
-        <styled.div
-          size="cover"
+        <Styled(Img)
           src="banner.svg" />
-        <styled.div>
+        <Styled(MobileContentWrapper)>
           <styled.div />
-        </styled.div>
+        </Styled(MobileContentWrapper)>
       </div>
     </PullToRefresh>
   </main>
@@ -112,12 +111,11 @@ exports[`test should renders <DeviceDetail> correctly when Menu show 1`] = `
       isLoading={false}
       onPull={[Function]}>
       <div>
-        <styled.div
-          size="cover"
+        <Styled(Img)
           src="banner.svg" />
-        <styled.div>
+        <Styled(MobileContentWrapper)>
           <styled.div />
-        </styled.div>
+        </Styled(MobileContentWrapper)>
       </div>
     </PullToRefresh>
   </main>

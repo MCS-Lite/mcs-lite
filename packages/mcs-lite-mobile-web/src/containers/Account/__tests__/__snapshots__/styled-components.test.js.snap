@@ -5,7 +5,7 @@ Array [
         <Button
             active={false}
             block={false}
-            className="buRwqu"
+            className="sc-bwzfXH jcNmuD"
             component="button"
             kind="primary"
             round={false}
@@ -14,28 +14,31 @@ Array [
     </Styled(Button)>
     <styled.div>
         <div
-            className="cCgbat" />
+            className="sc-htpNat kuHdgz" />
     </styled.div>
     <styled.div>
         <div
-            className="bTfGFu" />
+            className="sc-bxivhb fBmJKB" />
     </styled.div>
-    <styled.img
-        alt="MCS Lite Logo"
-        src="logo_mcs_lite_black.svg">
-        <img
+    <Styled(Logo)>
+        <Logo
             alt="MCS Lite Logo"
-            className="SWJqY"
-            src="logo_mcs_lite_black.svg" />
-    </styled.img>
+            className="sc-ifAKCX eoQxsM"
+            src="logo_mcs_lite_black.svg">
+            <img
+                alt="MCS Lite Logo"
+                className="sc-ifAKCX eoQxsM sc-bdVaJa kawKoJ"
+                src="logo_mcs_lite_black.svg" />
+        </Logo>
+    </Styled(Logo)>
     <styled.footer>
         <footer
-            className="bMAZFf" />
+            className="sc-bZQynM EvJhB" />
     </styled.footer>
 </div>,
   <div
-    className="cCgbat" />,
+    className="sc-htpNat kuHdgz" />,
   <div
-    className="bTfGFu" />,
+    className="sc-bxivhb fBmJKB" />,
 ]
 `;
