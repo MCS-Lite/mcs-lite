@@ -5,16 +5,16 @@ import Card from '../Card';
 import Img from '../Img';
 import Heading from '../Heading';
 
-const StyledCard = styled(Card)`
+export const StyledCard = styled(Card)`
   height: 120px;
   display: flex;
 `;
 
-const ImageWrapper = styled.div`
+export const ImageWrapper = styled.div`
   flex-grow: 2;
 `;
 
-const ContentWrapper = styled.div`
+export const ContentWrapper = styled.div`
   flex-grow: 1;
   flex-basis: 0;
   padding: 8px;

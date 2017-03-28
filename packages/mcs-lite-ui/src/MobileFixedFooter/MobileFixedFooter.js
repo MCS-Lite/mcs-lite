@@ -2,7 +2,7 @@ import React, { PropTypes } from 'react';
 import styled from 'styled-components';
 import MobileContentWrapper from '../MobileContentWrapper';
 
-const Footer = styled.footer`
+export const Footer = styled.footer`
   position: fixed;
   width: 100%;
   bottom: 0;

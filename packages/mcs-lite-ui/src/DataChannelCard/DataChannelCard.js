@@ -14,14 +14,14 @@ const setHeightByLine = line => props => `${
   props.theme.base.lineHeight * line
 }px`;
 
-const Header = styled.div`
+export const Header = styled.div`
   flex-basis: 24px;
   align-items: center;
   justify-content: flex-end;
   display: flex;
 `;
 
-const Body = styled.div`
+export const Body = styled.div`
   flex-grow: 1;
   display: flex;
   align-items: center;
@@ -37,23 +37,23 @@ export const Description = styled(P)`
   height: ${setHeightByLine(2)};
 `;
 
-const StyledHr = styled(Hr)`
+export const StyledHr = styled(Hr)`
   margin: 5px 0;
 `;
 
-const Wrapper = styled(Card)`
+export const Wrapper = styled(Card)`
   height: 300px;
   padding: 10px 20px;
   display: flex;
   flex-direction: column;
 `;
 
-const StyledHeading = styled(Heading)`
+export const StyledHeading = styled(Heading)`
   overflow: hidden;
   text-overflow: ellipsis;
 `;
 
-const StyledSmall = styled(Small)`
+export const StyledSmall = styled(Small)`
   display: block;
   overflow: hidden;
   text-overflow: ellipsis;

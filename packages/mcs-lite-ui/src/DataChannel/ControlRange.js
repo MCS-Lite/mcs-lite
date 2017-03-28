@@ -5,13 +5,13 @@ import InputRange from '../InputRange';
 import P from '../P';
 import isNumber from '../utils/isNumber';
 
-const Container = styled.div`
+export const Container = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column-reverse;
 `;
 
-const LabelWrapper = styled.div`
+export const LabelWrapper = styled.div`
   display: flex;
 
   > *:first-child {
@@ -23,7 +23,7 @@ const LabelWrapper = styled.div`
   }
 `;
 
-const LabelItem = styled.div`
+export const LabelItem = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -43,15 +43,15 @@ const LabelItem = styled.div`
   }
 `;
 
-const ValueWrapper = styled(P)`
+export const ValueWrapper = styled(P)`
   margin-bottom: 15px;
 `;
 
-const Value = styled(P)`
+export const Value = styled(P)`
   display: inline-block;
 `;
 
-const InputWrapper = styled.div`
+export const InputWrapper = styled.div`
   padding: 0 ${props => `${props.labels.length <= 2 ? 0 : (100 / props.labels.length / 2) - 3}%`};
 `;
 

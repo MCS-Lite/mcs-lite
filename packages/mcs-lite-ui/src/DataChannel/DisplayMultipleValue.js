@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import P from '../P';
 import Heading from '../Heading';
 
-const Container = styled.div`
+export const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -18,7 +18,7 @@ const Container = styled.div`
   }
 `;
 
-const StyledHeading = styled(Heading)`
+export const StyledHeading = styled(Heading)`
   text-align: center;
   overflow: hidden;
   text-overflow: ellipsis;

@@ -4,7 +4,7 @@ import Portal from 'react-overlays/lib/Portal';
 import Transition from 'react-motion-ui-pack';
 import emptyFunction from '../utils/emptyFunction';
 
-const Overlay = styled.div`
+export const Overlay = styled.div`
   position: fixed;
   top: 0;
   bottom: 0;

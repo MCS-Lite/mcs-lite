@@ -24,7 +24,7 @@ const DEFAULT = 'default';
 const LOADING = 'loading';
 const SUCCESS = 'success';
 
-const StyledButton = styled(Button)`
+export const StyledButton = styled(Button)`
   width: 42px;
 
   svg {

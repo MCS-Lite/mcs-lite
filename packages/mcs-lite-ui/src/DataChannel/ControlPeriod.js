@@ -4,16 +4,16 @@ import Input from '../Input';
 import Button from '../Button';
 import P from '../P';
 
-const Container = styled.div`
+export const Container = styled.div`
   margin-bottom: 10px;
 `;
 
-const InputWrapper = styled.div`
+export const InputWrapper = styled.div`
   display: flex;
   margin-top: 5px;
 `;
 
-const StyledInput = styled(Input)`
+export const StyledInput = styled(Input)`
   margin-right: 10px;
 `;
 

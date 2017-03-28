@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
 import styled from 'styled-components';
 
 const CONTAINER_HEIGHT = 200;
 const ITEM_HEIGHT = 40;
 
-const Container = styled.div`
+export const Container = styled.div`
   position: relative;
   height: ${CONTAINER_HEIGHT}px;
   overflow: hidden;
@@ -17,7 +17,7 @@ const Container = styled.div`
   }
 `;
 
-const Indicator = styled.div`
+export const Indicator = styled.div`
   position: absolute;
   height: ${ITEM_HEIGHT}px;
   left: 0;
@@ -28,7 +28,7 @@ const Indicator = styled.div`
   pointer-events: none;
 `;
 
-const Overlay = styled.div`
+export const Overlay = styled.div`
   position: absolute;
   height: 100%;
   left: 0;
@@ -49,5 +49,10 @@ const PickerContainer = ({ children, ...otherProps }) =>
     <Indicator />
     <Overlay />
   </Container>;
+
+PickerContainer.displayName = 'PickerContainer';
+PickerContainer.propTypes = {
+  children: PropTypes.any.isRequired,
+};
 
 export default PickerContainer;

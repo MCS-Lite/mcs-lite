@@ -8,17 +8,17 @@ import Button from '../Button';
 
 const PLACEHOLDER_VALUE = 'SELECT/PLACEHOLDER_VALUE';
 
-const StyledInputGroup = styled(InputGroup)`
+export const StyledInputGroup = styled(InputGroup)`
   position: absolute;
   width: 100%;
   pointer-events: none;
 `;
 
-const Wrapper = styled.div`
+export const Wrapper = styled.div`
   position: relative;
 `;
 
-const StyledSelect = styled.select`
+export const StyledSelect = styled.select`
   width: 100%;
   border: 0;
   height: ${props => props.theme.height.normal};
@@ -29,7 +29,7 @@ const StyledSelect = styled.select`
   appearance: none;
 `;
 
-const StyledButton = styled(Button)`
+export const StyledButton = styled(Button)`
   font-size: 18px;
 
   > * {
