@@ -68,7 +68,7 @@ exports[`should render PWM_CONTROL correctly with default value to N/A 1`] = `
                     value=""
                   >
                     <input
-                      className="ControlPeriod__StyledInput-fNvBTX cAVBYu Input__Input-ixjKAz ijwcNZ"
+                      className="ControlPeriod__StyledInput-fNvBTX cAVBYu Input__Input-ixjKAz hMaVBp"
                       kind="primary"
                       onChange={[Function]}
                       placeholder="Integer only"
@@ -338,7 +338,7 @@ exports[`should render PWM_CONTROL correctly with max 1`] = `
                     value={1}
                   >
                     <input
-                      className="ControlPeriod__StyledInput-fNvBTX cAVBYu Input__Input-ixjKAz ijwcNZ"
+                      className="ControlPeriod__StyledInput-fNvBTX cAVBYu Input__Input-ixjKAz hMaVBp"
                       kind="primary"
                       onChange={[Function]}
                       placeholder="Integer only"
@@ -608,7 +608,7 @@ exports[`should render PWM_CONTROL correctly with zero 1`] = `
                     value={0}
                   >
                     <input
-                      className="ControlPeriod__StyledInput-fNvBTX cAVBYu Input__Input-ixjKAz ijwcNZ"
+                      className="ControlPeriod__StyledInput-fNvBTX cAVBYu Input__Input-ixjKAz hMaVBp"
                       kind="primary"
                       onChange={[Function]}
                       placeholder="Integer only"
