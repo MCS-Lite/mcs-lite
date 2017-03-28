@@ -27,6 +27,26 @@
 }
 ```
 
+**You can use Component Selector now!**
+
+```diff
+// Postcss
+-.dataChannelCard.withGraph > div:nth-child(2),
+-.dataChannelCard.withGraph > div:nth-child(3) {
+-  width: 240px;
+-}
+
+// Styled-Components
+import DataChannelCard, { Body, Footer } from '../DataChannelCard';
+
+const StyledDataChannelCard = styled(DataChannelCard)`
++ ${Body}, ${Footer} {
++   width: ${props => props.isHistoryShow ? '240px' : 'initial'};
++ }
+`;
+```
+
+
 #### :house: Internal
 * `mcs-lite-ui`
   * [#266](https://github.com/evenchange4/mcs-lite/pull/266) feat(mcs-lite-ui): export all internal components. ([@evenchange4](https://github.com/evenchange4))
