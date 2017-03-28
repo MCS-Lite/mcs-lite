@@ -2,6 +2,19 @@
 
 ## Released (2017-03-28)
 
+### Bump Versions
+
+-   babel-preset-mcs-lite@0.2.0
+-   mcs-lite-connect@0.2.2
+-   mcs-lite-demo-nextjs@0.2.0
+-   mcs-lite-icon@0.2.2
+-   mcs-lite-mobile-web@0.3.0
+-   mcs-lite-scripts@0.2.2
+-   mcs-lite-theme@0.2.3
+-   mcs-lite-ui@0.3.0
+-   react-intl-cra@0.1.7
+-   react-intl-inject-hoc@0.1.7
+
 #### :boom: Breaking Change
 * `babel-preset-mcs-lite`, `mcs-lite-demo-nextjs`, `mcs-lite-mobile-web`, `mcs-lite-ui`
   * [#264](https://github.com/evenchange4/mcs-lite/pull/264) feat(Styled-Components): upgrade to 2.0.0-10. ([@evenchange4](https://github.com/evenchange4))
