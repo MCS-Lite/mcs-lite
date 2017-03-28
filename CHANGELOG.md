@@ -1,5 +1,28 @@
 # MCS Lite changelogs
 
+## Released (2017-03-28)
+
+#### :boom: Breaking Change
+* `babel-preset-mcs-lite`, `mcs-lite-demo-nextjs`, `mcs-lite-mobile-web`, `mcs-lite-ui`
+  * [#264](https://github.com/evenchange4/mcs-lite/pull/264) feat(Styled-Components): upgrade to 2.0.0-10. ([@evenchange4](https://github.com/evenchange4))
+
+**You might need a End-to-End testing and updating the snapshot testing.**
+
+```diff
+"peerDependencies": {
++  "styled-components": "^2.0.0-10"
+}
+```
+
+#### :house: Internal
+* `mcs-lite-ui`
+  * [#266](https://github.com/evenchange4/mcs-lite/pull/266) feat(mcs-lite-ui): export all internal components. ([@evenchange4](https://github.com/evenchange4))
+
+#### Committers: 1
+- Michael Hsu ([evenchange4](https://github.com/evenchange4))
+
+----
+
 ## Released (2017-03-27)
 
 ### Bump Versions
