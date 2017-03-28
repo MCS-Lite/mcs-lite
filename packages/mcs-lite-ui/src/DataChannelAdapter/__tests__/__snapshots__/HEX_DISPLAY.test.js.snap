@@ -16,26 +16,33 @@ exports[`should render HEX_DISPLAY correctly with default value to empty 1`] = `
     placeholder="Hex only"
     value=""
   >
-    <styled.div>
+    <DisplayString__Container>
       <div
-        className="lkjDmd"
+        className="DisplayString__Container-gMiSmM eaLFWz"
       >
-        <styled.textarea
+        <DisplayString__StyledTextarea
           disabled={true}
-          kind="primary"
           placeholder="Hex only"
           value=""
         >
-          <textarea
-            className="haOaRY"
+          <Textarea
+            className="DisplayString__StyledTextarea-iHUBEj eYiCLJ"
             disabled={true}
             kind="primary"
             placeholder="Hex only"
             value=""
-          />
-        </styled.textarea>
+          >
+            <textarea
+              className="DisplayString__StyledTextarea-iHUBEj eYiCLJ Textarea__Textarea-dEcNVt haEdAh"
+              disabled={true}
+              kind="primary"
+              placeholder="Hex only"
+              value=""
+            />
+          </Textarea>
+        </DisplayString__StyledTextarea>
       </div>
-    </styled.div>
+    </DisplayString__Container>
   </DisplayString>
 </DataChannelAdapter>
 `;
@@ -58,26 +65,33 @@ exports[`should render HEX_DISPLAY correctly with empty string 1`] = `
     placeholder="Hex only"
     value=""
   >
-    <styled.div>
+    <DisplayString__Container>
       <div
-        className="lkjDmd"
+        className="DisplayString__Container-gMiSmM eaLFWz"
       >
-        <styled.textarea
+        <DisplayString__StyledTextarea
           disabled={true}
-          kind="primary"
           placeholder="Hex only"
           value=""
         >
-          <textarea
-            className="haOaRY"
+          <Textarea
+            className="DisplayString__StyledTextarea-iHUBEj eYiCLJ"
             disabled={true}
             kind="primary"
             placeholder="Hex only"
             value=""
-          />
-        </styled.textarea>
+          >
+            <textarea
+              className="DisplayString__StyledTextarea-iHUBEj eYiCLJ Textarea__Textarea-dEcNVt haEdAh"
+              disabled={true}
+              kind="primary"
+              placeholder="Hex only"
+              value=""
+            />
+          </Textarea>
+        </DisplayString__StyledTextarea>
       </div>
-    </styled.div>
+    </DisplayString__Container>
   </DisplayString>
 </DataChannelAdapter>
 `;
@@ -100,26 +114,33 @@ exports[`should render HEX_DISPLAY correctly with value 1`] = `
     placeholder="Hex only"
     value="michaelhsu"
   >
-    <styled.div>
+    <DisplayString__Container>
       <div
-        className="lkjDmd"
+        className="DisplayString__Container-gMiSmM eaLFWz"
       >
-        <styled.textarea
+        <DisplayString__StyledTextarea
           disabled={true}
-          kind="primary"
           placeholder="Hex only"
           value="michaelhsu"
         >
-          <textarea
-            className="haOaRY"
+          <Textarea
+            className="DisplayString__StyledTextarea-iHUBEj eYiCLJ"
             disabled={true}
             kind="primary"
             placeholder="Hex only"
             value="michaelhsu"
-          />
-        </styled.textarea>
+          >
+            <textarea
+              className="DisplayString__StyledTextarea-iHUBEj eYiCLJ Textarea__Textarea-dEcNVt haEdAh"
+              disabled={true}
+              kind="primary"
+              placeholder="Hex only"
+              value="michaelhsu"
+            />
+          </Textarea>
+        </DisplayString__StyledTextarea>
       </div>
-    </styled.div>
+    </DisplayString__Container>
   </DisplayString>
 </DataChannelAdapter>
 `;

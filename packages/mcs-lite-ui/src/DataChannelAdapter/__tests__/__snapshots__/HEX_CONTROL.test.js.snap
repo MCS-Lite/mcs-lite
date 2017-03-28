@@ -19,27 +19,34 @@ exports[`should render HEX_CONTROL correctly with default value to empty 1`] = `
     placeholder="Hex only"
     value=""
   >
-    <styled.div>
+    <ControlString__Container>
       <div
-        className="lkjDmd"
+        className="ControlString__Container-gxvWtt eRKIhm"
       >
-        <styled.textarea
-          kind="primary"
+        <ControlString__StyledTextarea
           onChange={[Function]}
           placeholder="Hex only"
           value=""
         >
-          <textarea
-            className="haOaRY"
+          <Textarea
+            className="ControlString__StyledTextarea-jUHsJW krVxuY"
             kind="primary"
             onChange={[Function]}
             placeholder="Hex only"
             value=""
-          />
-        </styled.textarea>
-        <styled.div>
+          >
+            <textarea
+              className="ControlString__StyledTextarea-jUHsJW krVxuY Textarea__Textarea-dEcNVt haEdAh"
+              kind="primary"
+              onChange={[Function]}
+              placeholder="Hex only"
+              value=""
+            />
+          </Textarea>
+        </ControlString__StyledTextarea>
+        <ControlString__ButtonWrapper>
           <div
-            className="gkMZXk"
+            className="ControlString__ButtonWrapper-kaocaH fiUlWA"
           >
             <ButtonClear
               onClick={[Function]}
@@ -48,38 +55,41 @@ exports[`should render HEX_CONTROL correctly with default value to empty 1`] = `
                 onClick={[Function]}
               >
                 <Component
-                  className="gVViGF"
+                  className="P__P-KJbCR huqyql"
                   onClick={[Function]}
                 >
                   <div
-                    className="gVViGF"
+                    className="P__P-KJbCR huqyql"
                     onClick={[Function]}
                   >
-                    <styled.a
-                      color="primary"
-                    >
-                      <a
-                        className="enrdWE"
+                    <ButtonClear__StyledA>
+                      <A
+                        className="ButtonClear__StyledA-hPckxD cJqJoD"
                         color="primary"
                       >
-                        <IconDelete
-                          size="1em"
+                        <a
+                          className="ButtonClear__StyledA-hPckxD cJqJoD A__A-cCPuKx iriyAs"
+                          color="primary"
                         >
-                          <svg
-                            fill="currentColor"
-                            height="1em"
-                            preserveAspectRatio="xMidYMid meet"
-                            viewBox="0 0 24 24"
-                            width="1em"
+                          <IconDelete
+                            size="1em"
                           >
-                            <path
-                              d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zm9-10h1v10h-1V9zm-4 0h2v10h-2V9zM8 9h1v10H8V9zm7.5-5l-1-1h-5l-1 1H5v2h14V4h-3.5z"
-                            />
-                          </svg>
-                        </IconDelete>
-                        Clear
-                      </a>
-                    </styled.a>
+                            <svg
+                              fill="currentColor"
+                              height="1em"
+                              preserveAspectRatio="xMidYMid meet"
+                              viewBox="0 0 24 24"
+                              width="1em"
+                            >
+                              <path
+                                d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zm9-10h1v10h-1V9zm-4 0h2v10h-2V9zM8 9h1v10H8V9zm7.5-5l-1-1h-5l-1 1H5v2h14V4h-3.5z"
+                              />
+                            </svg>
+                          </IconDelete>
+                          Clear
+                        </a>
+                      </A>
+                    </ButtonClear__StyledA>
                   </div>
                 </Component>
               </P>
@@ -97,7 +107,7 @@ exports[`should render HEX_CONTROL correctly with default value to empty 1`] = `
               <BaseComponent
                 active={false}
                 block={false}
-                className="dSNJHu"
+                className="Button__Button-jkHDFw ibjUrp"
                 component="button"
                 kind="primary"
                 onClick={[Function]}
@@ -106,7 +116,7 @@ exports[`should render HEX_CONTROL correctly with default value to empty 1`] = `
                 square={false}
               >
                 <button
-                  className="dSNJHu"
+                  className="Button__Button-jkHDFw ibjUrp"
                   onClick={[Function]}
                 >
                   Ok
@@ -114,9 +124,9 @@ exports[`should render HEX_CONTROL correctly with default value to empty 1`] = `
               </BaseComponent>
             </Button>
           </div>
-        </styled.div>
+        </ControlString__ButtonWrapper>
       </div>
-    </styled.div>
+    </ControlString__Container>
   </ControlString>
 </DataChannelAdapter>
 `;
@@ -142,27 +152,34 @@ exports[`should render HEX_CONTROL correctly with empty string 1`] = `
     placeholder="Hex only"
     value=""
   >
-    <styled.div>
+    <ControlString__Container>
       <div
-        className="lkjDmd"
+        className="ControlString__Container-gxvWtt eRKIhm"
       >
-        <styled.textarea
-          kind="primary"
+        <ControlString__StyledTextarea
           onChange={[Function]}
           placeholder="Hex only"
           value=""
         >
-          <textarea
-            className="haOaRY"
+          <Textarea
+            className="ControlString__StyledTextarea-jUHsJW krVxuY"
             kind="primary"
             onChange={[Function]}
             placeholder="Hex only"
             value=""
-          />
-        </styled.textarea>
-        <styled.div>
+          >
+            <textarea
+              className="ControlString__StyledTextarea-jUHsJW krVxuY Textarea__Textarea-dEcNVt haEdAh"
+              kind="primary"
+              onChange={[Function]}
+              placeholder="Hex only"
+              value=""
+            />
+          </Textarea>
+        </ControlString__StyledTextarea>
+        <ControlString__ButtonWrapper>
           <div
-            className="gkMZXk"
+            className="ControlString__ButtonWrapper-kaocaH fiUlWA"
           >
             <ButtonClear
               onClick={[Function]}
@@ -171,38 +188,41 @@ exports[`should render HEX_CONTROL correctly with empty string 1`] = `
                 onClick={[Function]}
               >
                 <Component
-                  className="gVViGF"
+                  className="P__P-KJbCR huqyql"
                   onClick={[Function]}
                 >
                   <div
-                    className="gVViGF"
+                    className="P__P-KJbCR huqyql"
                     onClick={[Function]}
                   >
-                    <styled.a
-                      color="primary"
-                    >
-                      <a
-                        className="enrdWE"
+                    <ButtonClear__StyledA>
+                      <A
+                        className="ButtonClear__StyledA-hPckxD cJqJoD"
                         color="primary"
                       >
-                        <IconDelete
-                          size="1em"
+                        <a
+                          className="ButtonClear__StyledA-hPckxD cJqJoD A__A-cCPuKx iriyAs"
+                          color="primary"
                         >
-                          <svg
-                            fill="currentColor"
-                            height="1em"
-                            preserveAspectRatio="xMidYMid meet"
-                            viewBox="0 0 24 24"
-                            width="1em"
+                          <IconDelete
+                            size="1em"
                           >
-                            <path
-                              d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zm9-10h1v10h-1V9zm-4 0h2v10h-2V9zM8 9h1v10H8V9zm7.5-5l-1-1h-5l-1 1H5v2h14V4h-3.5z"
-                            />
-                          </svg>
-                        </IconDelete>
-                        Clear
-                      </a>
-                    </styled.a>
+                            <svg
+                              fill="currentColor"
+                              height="1em"
+                              preserveAspectRatio="xMidYMid meet"
+                              viewBox="0 0 24 24"
+                              width="1em"
+                            >
+                              <path
+                                d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zm9-10h1v10h-1V9zm-4 0h2v10h-2V9zM8 9h1v10H8V9zm7.5-5l-1-1h-5l-1 1H5v2h14V4h-3.5z"
+                              />
+                            </svg>
+                          </IconDelete>
+                          Clear
+                        </a>
+                      </A>
+                    </ButtonClear__StyledA>
                   </div>
                 </Component>
               </P>
@@ -220,7 +240,7 @@ exports[`should render HEX_CONTROL correctly with empty string 1`] = `
               <BaseComponent
                 active={false}
                 block={false}
-                className="dSNJHu"
+                className="Button__Button-jkHDFw ibjUrp"
                 component="button"
                 kind="primary"
                 onClick={[Function]}
@@ -229,7 +249,7 @@ exports[`should render HEX_CONTROL correctly with empty string 1`] = `
                 square={false}
               >
                 <button
-                  className="dSNJHu"
+                  className="Button__Button-jkHDFw ibjUrp"
                   onClick={[Function]}
                 >
                   Ok
@@ -237,9 +257,9 @@ exports[`should render HEX_CONTROL correctly with empty string 1`] = `
               </BaseComponent>
             </Button>
           </div>
-        </styled.div>
+        </ControlString__ButtonWrapper>
       </div>
-    </styled.div>
+    </ControlString__Container>
   </ControlString>
 </DataChannelAdapter>
 `;
@@ -265,27 +285,34 @@ exports[`should render HEX_CONTROL correctly with value 1`] = `
     placeholder="Hex only"
     value="michaelhsu"
   >
-    <styled.div>
+    <ControlString__Container>
       <div
-        className="lkjDmd"
+        className="ControlString__Container-gxvWtt eRKIhm"
       >
-        <styled.textarea
-          kind="primary"
+        <ControlString__StyledTextarea
           onChange={[Function]}
           placeholder="Hex only"
           value="michaelhsu"
         >
-          <textarea
-            className="haOaRY"
+          <Textarea
+            className="ControlString__StyledTextarea-jUHsJW krVxuY"
             kind="primary"
             onChange={[Function]}
             placeholder="Hex only"
             value="michaelhsu"
-          />
-        </styled.textarea>
-        <styled.div>
+          >
+            <textarea
+              className="ControlString__StyledTextarea-jUHsJW krVxuY Textarea__Textarea-dEcNVt haEdAh"
+              kind="primary"
+              onChange={[Function]}
+              placeholder="Hex only"
+              value="michaelhsu"
+            />
+          </Textarea>
+        </ControlString__StyledTextarea>
+        <ControlString__ButtonWrapper>
           <div
-            className="gkMZXk"
+            className="ControlString__ButtonWrapper-kaocaH fiUlWA"
           >
             <ButtonClear
               onClick={[Function]}
@@ -294,38 +321,41 @@ exports[`should render HEX_CONTROL correctly with value 1`] = `
                 onClick={[Function]}
               >
                 <Component
-                  className="gVViGF"
+                  className="P__P-KJbCR huqyql"
                   onClick={[Function]}
                 >
                   <div
-                    className="gVViGF"
+                    className="P__P-KJbCR huqyql"
                     onClick={[Function]}
                   >
-                    <styled.a
-                      color="primary"
-                    >
-                      <a
-                        className="enrdWE"
+                    <ButtonClear__StyledA>
+                      <A
+                        className="ButtonClear__StyledA-hPckxD cJqJoD"
                         color="primary"
                       >
-                        <IconDelete
-                          size="1em"
+                        <a
+                          className="ButtonClear__StyledA-hPckxD cJqJoD A__A-cCPuKx iriyAs"
+                          color="primary"
                         >
-                          <svg
-                            fill="currentColor"
-                            height="1em"
-                            preserveAspectRatio="xMidYMid meet"
-                            viewBox="0 0 24 24"
-                            width="1em"
+                          <IconDelete
+                            size="1em"
                           >
-                            <path
-                              d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zm9-10h1v10h-1V9zm-4 0h2v10h-2V9zM8 9h1v10H8V9zm7.5-5l-1-1h-5l-1 1H5v2h14V4h-3.5z"
-                            />
-                          </svg>
-                        </IconDelete>
-                        Clear
-                      </a>
-                    </styled.a>
+                            <svg
+                              fill="currentColor"
+                              height="1em"
+                              preserveAspectRatio="xMidYMid meet"
+                              viewBox="0 0 24 24"
+                              width="1em"
+                            >
+                              <path
+                                d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zm9-10h1v10h-1V9zm-4 0h2v10h-2V9zM8 9h1v10H8V9zm7.5-5l-1-1h-5l-1 1H5v2h14V4h-3.5z"
+                              />
+                            </svg>
+                          </IconDelete>
+                          Clear
+                        </a>
+                      </A>
+                    </ButtonClear__StyledA>
                   </div>
                 </Component>
               </P>
@@ -343,7 +373,7 @@ exports[`should render HEX_CONTROL correctly with value 1`] = `
               <BaseComponent
                 active={false}
                 block={false}
-                className="dSNJHu"
+                className="Button__Button-jkHDFw ibjUrp"
                 component="button"
                 kind="primary"
                 onClick={[Function]}
@@ -352,7 +382,7 @@ exports[`should render HEX_CONTROL correctly with value 1`] = `
                 square={false}
               >
                 <button
-                  className="dSNJHu"
+                  className="Button__Button-jkHDFw ibjUrp"
                   onClick={[Function]}
                 >
                   Ok
@@ -360,9 +390,9 @@ exports[`should render HEX_CONTROL correctly with value 1`] = `
               </BaseComponent>
             </Button>
           </div>
-        </styled.div>
+        </ControlString__ButtonWrapper>
       </div>
-    </styled.div>
+    </ControlString__Container>
   </ControlString>
 </DataChannelAdapter>
 `;

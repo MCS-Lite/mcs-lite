@@ -15,6 +15,6 @@
     "mcs-lite-ui": "^0.2.6",
     "mcs-lite-icon": "^0.2.1",
     "next": "^1.2.3",
-    "styled-components": "^1.4.4"
+    "styled-components": "^2.0.0-10"
   }
 }

@@ -31,23 +31,23 @@ exports[`should render CATEGORY_DISPLAY correctly with default value to N/A 1`] 
       ]
     }
   >
-    <styled.div>
+    <DisplayStatus__Container>
       <div
-        className="frKWdl"
+        className="DisplayStatus__Container-jrDlkR DzKAF"
       >
-        <styled.div>
+        <DisplayStatus__ItemWrapper>
           <div
-            className="gBTIWB"
+            className="DisplayStatus__ItemWrapper-edfiVv eBhrYw"
           >
             <P
               color="grayBase"
             >
               <Component
-                className="jyQfel"
+                className="P__P-KJbCR kHKeHO"
                 color="grayBase"
               >
                 <p
-                  className="jyQfel"
+                  className="P__P-KJbCR kHKeHO"
                   color="grayBase"
                 >
                   name1
@@ -58,12 +58,12 @@ exports[`should render CATEGORY_DISPLAY correctly with default value to N/A 1`] 
               <StatusLight
                 color="grayDark"
               >
-                <styled.svg
+                <StatusLight__Svg
                   color="grayDark"
                   viewBox="0 0 20 20"
                 >
                   <svg
-                    className="gUywdC"
+                    className="StatusLight__Svg-IVkxE heGIpa"
                     color="grayDark"
                     viewBox="0 0 20 20"
                   >
@@ -73,24 +73,24 @@ exports[`should render CATEGORY_DISPLAY correctly with default value to N/A 1`] 
                       r="10"
                     />
                   </svg>
-                </styled.svg>
+                </StatusLight__Svg>
               </StatusLight>
             </div>
           </div>
-        </styled.div>
-        <styled.div>
+        </DisplayStatus__ItemWrapper>
+        <DisplayStatus__ItemWrapper>
           <div
-            className="gBTIWB"
+            className="DisplayStatus__ItemWrapper-edfiVv eBhrYw"
           >
             <P
               color="grayBase"
             >
               <Component
-                className="jyQfel"
+                className="P__P-KJbCR kHKeHO"
                 color="grayBase"
               >
                 <p
-                  className="jyQfel"
+                  className="P__P-KJbCR kHKeHO"
                   color="grayBase"
                 >
                   name2
@@ -101,12 +101,12 @@ exports[`should render CATEGORY_DISPLAY correctly with default value to N/A 1`] 
               <StatusLight
                 color="grayDark"
               >
-                <styled.svg
+                <StatusLight__Svg
                   color="grayDark"
                   viewBox="0 0 20 20"
                 >
                   <svg
-                    className="gUywdC"
+                    className="StatusLight__Svg-IVkxE heGIpa"
                     color="grayDark"
                     viewBox="0 0 20 20"
                   >
@@ -116,13 +116,13 @@ exports[`should render CATEGORY_DISPLAY correctly with default value to N/A 1`] 
                       r="10"
                     />
                   </svg>
-                </styled.svg>
+                </StatusLight__Svg>
               </StatusLight>
             </div>
           </div>
-        </styled.div>
+        </DisplayStatus__ItemWrapper>
       </div>
-    </styled.div>
+    </DisplayStatus__Container>
   </DisplayStatus>
 </DataChannelAdapter>
 `;
@@ -161,23 +161,23 @@ exports[`should render CATEGORY_DISPLAY correctly with first item 1`] = `
     }
     value={0}
   >
-    <styled.div>
+    <DisplayStatus__Container>
       <div
-        className="frKWdl"
+        className="DisplayStatus__Container-jrDlkR DzKAF"
       >
-        <styled.div>
+        <DisplayStatus__ItemWrapper>
           <div
-            className="gBTIWB"
+            className="DisplayStatus__ItemWrapper-edfiVv eBhrYw"
           >
             <P
               color="grayBase"
             >
               <Component
-                className="jyQfel"
+                className="P__P-KJbCR kHKeHO"
                 color="grayBase"
               >
                 <p
-                  className="jyQfel"
+                  className="P__P-KJbCR kHKeHO"
                   color="grayBase"
                 >
                   name1
@@ -188,12 +188,12 @@ exports[`should render CATEGORY_DISPLAY correctly with first item 1`] = `
               <StatusLight
                 color="success"
               >
-                <styled.svg
+                <StatusLight__Svg
                   color="success"
                   viewBox="0 0 20 20"
                 >
                   <svg
-                    className="jfcUeq"
+                    className="StatusLight__Svg-IVkxE geyPxt"
                     color="success"
                     viewBox="0 0 20 20"
                   >
@@ -203,24 +203,24 @@ exports[`should render CATEGORY_DISPLAY correctly with first item 1`] = `
                       r="10"
                     />
                   </svg>
-                </styled.svg>
+                </StatusLight__Svg>
               </StatusLight>
             </div>
           </div>
-        </styled.div>
-        <styled.div>
+        </DisplayStatus__ItemWrapper>
+        <DisplayStatus__ItemWrapper>
           <div
-            className="gBTIWB"
+            className="DisplayStatus__ItemWrapper-edfiVv eBhrYw"
           >
             <P
               color="grayBase"
             >
               <Component
-                className="jyQfel"
+                className="P__P-KJbCR kHKeHO"
                 color="grayBase"
               >
                 <p
-                  className="jyQfel"
+                  className="P__P-KJbCR kHKeHO"
                   color="grayBase"
                 >
                   name2
@@ -231,12 +231,12 @@ exports[`should render CATEGORY_DISPLAY correctly with first item 1`] = `
               <StatusLight
                 color="grayDark"
               >
-                <styled.svg
+                <StatusLight__Svg
                   color="grayDark"
                   viewBox="0 0 20 20"
                 >
                   <svg
-                    className="gUywdC"
+                    className="StatusLight__Svg-IVkxE heGIpa"
                     color="grayDark"
                     viewBox="0 0 20 20"
                   >
@@ -246,13 +246,13 @@ exports[`should render CATEGORY_DISPLAY correctly with first item 1`] = `
                       r="10"
                     />
                   </svg>
-                </styled.svg>
+                </StatusLight__Svg>
               </StatusLight>
             </div>
           </div>
-        </styled.div>
+        </DisplayStatus__ItemWrapper>
       </div>
-    </styled.div>
+    </DisplayStatus__Container>
   </DisplayStatus>
 </DataChannelAdapter>
 `;
@@ -291,23 +291,23 @@ exports[`should render CATEGORY_DISPLAY correctly with second item 1`] = `
     }
     value={1}
   >
-    <styled.div>
+    <DisplayStatus__Container>
       <div
-        className="frKWdl"
+        className="DisplayStatus__Container-jrDlkR DzKAF"
       >
-        <styled.div>
+        <DisplayStatus__ItemWrapper>
           <div
-            className="gBTIWB"
+            className="DisplayStatus__ItemWrapper-edfiVv eBhrYw"
           >
             <P
               color="grayBase"
             >
               <Component
-                className="jyQfel"
+                className="P__P-KJbCR kHKeHO"
                 color="grayBase"
               >
                 <p
-                  className="jyQfel"
+                  className="P__P-KJbCR kHKeHO"
                   color="grayBase"
                 >
                   name1
@@ -318,12 +318,12 @@ exports[`should render CATEGORY_DISPLAY correctly with second item 1`] = `
               <StatusLight
                 color="grayDark"
               >
-                <styled.svg
+                <StatusLight__Svg
                   color="grayDark"
                   viewBox="0 0 20 20"
                 >
                   <svg
-                    className="gUywdC"
+                    className="StatusLight__Svg-IVkxE heGIpa"
                     color="grayDark"
                     viewBox="0 0 20 20"
                   >
@@ -333,24 +333,24 @@ exports[`should render CATEGORY_DISPLAY correctly with second item 1`] = `
                       r="10"
                     />
                   </svg>
-                </styled.svg>
+                </StatusLight__Svg>
               </StatusLight>
             </div>
           </div>
-        </styled.div>
-        <styled.div>
+        </DisplayStatus__ItemWrapper>
+        <DisplayStatus__ItemWrapper>
           <div
-            className="gBTIWB"
+            className="DisplayStatus__ItemWrapper-edfiVv eBhrYw"
           >
             <P
               color="grayBase"
             >
               <Component
-                className="jyQfel"
+                className="P__P-KJbCR kHKeHO"
                 color="grayBase"
               >
                 <p
-                  className="jyQfel"
+                  className="P__P-KJbCR kHKeHO"
                   color="grayBase"
                 >
                   name2
@@ -361,12 +361,12 @@ exports[`should render CATEGORY_DISPLAY correctly with second item 1`] = `
               <StatusLight
                 color="success"
               >
-                <styled.svg
+                <StatusLight__Svg
                   color="success"
                   viewBox="0 0 20 20"
                 >
                   <svg
-                    className="jfcUeq"
+                    className="StatusLight__Svg-IVkxE geyPxt"
                     color="success"
                     viewBox="0 0 20 20"
                   >
@@ -376,13 +376,13 @@ exports[`should render CATEGORY_DISPLAY correctly with second item 1`] = `
                       r="10"
                     />
                   </svg>
-                </styled.svg>
+                </StatusLight__Svg>
               </StatusLight>
             </div>
           </div>
-        </styled.div>
+        </DisplayStatus__ItemWrapper>
       </div>
-    </styled.div>
+    </DisplayStatus__Container>
   </DisplayStatus>
 </DataChannelAdapter>
 `;

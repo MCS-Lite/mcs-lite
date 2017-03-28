@@ -27,11 +27,11 @@ exports[`should render ANALOG_CONTROL correctly with default value to N/A 1`] = 
     value=""
     valueMapper={[Function]}
   >
-    <styled.div>
+    <ControlRange__Container>
       <div
-        className="ciDLcE"
+        className="ControlRange__Container-ispxkc kkVGKq"
       >
-        <styled.div
+        <ControlRange__LabelWrapper
           labels={
             Array [
               0,
@@ -40,21 +40,21 @@ exports[`should render ANALOG_CONTROL correctly with default value to N/A 1`] = 
           }
         >
           <div
-            className="hxnWDy"
+            className="ControlRange__LabelWrapper-hpKjGx kKFCvQ"
           >
-            <styled.div>
+            <ControlRange__LabelItem>
               <div
-                className="kRwEkq"
+                className="ControlRange__LabelItem-kiIalK idIiax"
               >
                 <P
                   color="grayBase"
                 >
                   <Component
-                    className="jyQfel"
+                    className="P__P-KJbCR kHKeHO"
                     color="grayBase"
                   >
                     <div
-                      className="jyQfel"
+                      className="P__P-KJbCR kHKeHO"
                       color="grayBase"
                     >
                       0
@@ -62,20 +62,20 @@ exports[`should render ANALOG_CONTROL correctly with default value to N/A 1`] = 
                   </Component>
                 </P>
               </div>
-            </styled.div>
-            <styled.div>
+            </ControlRange__LabelItem>
+            <ControlRange__LabelItem>
               <div
-                className="kRwEkq"
+                className="ControlRange__LabelItem-kiIalK idIiax"
               >
                 <P
                   color="grayBase"
                 >
                   <Component
-                    className="jyQfel"
+                    className="P__P-KJbCR kHKeHO"
                     color="grayBase"
                   >
                     <div
-                      className="jyQfel"
+                      className="P__P-KJbCR kHKeHO"
                       color="grayBase"
                     >
                       100
@@ -83,10 +83,10 @@ exports[`should render ANALOG_CONTROL correctly with default value to N/A 1`] = 
                   </Component>
                 </P>
               </div>
-            </styled.div>
+            </ControlRange__LabelItem>
           </div>
-        </styled.div>
-        <styled.div
+        </ControlRange__LabelWrapper>
+        <ControlRange__InputWrapper
           labels={
             Array [
               0,
@@ -95,38 +95,48 @@ exports[`should render ANALOG_CONTROL correctly with default value to N/A 1`] = 
           }
         >
           <div
-            className="glLEWf"
+            className="ControlRange__InputWrapper-fklkwO dVxsgp"
           >
-            <Styled(Component)
+            <ControlRange__ValueWrapper
               color="grayBase"
             >
-              <Component
-                className="chvbqM"
+              <P
+                className="ControlRange__ValueWrapper-jxMKxr lkxWna"
                 color="grayBase"
               >
-                <div
-                  className="chvbqM"
+                <Component
+                  className="ControlRange__ValueWrapper-jxMKxr lkxWna P__P-KJbCR kHKeHO"
                   color="grayBase"
                 >
-                  Current value: 
-                  <Styled(Component)
-                    color="primary"
+                  <div
+                    className="ControlRange__ValueWrapper-jxMKxr lkxWna P__P-KJbCR kHKeHO"
+                    color="grayBase"
                   >
-                    <Component
-                      className="eBMqlM"
+                    Current value: 
+                    <ControlRange__Value
                       color="primary"
                     >
-                      <p
-                        className="eBMqlM"
+                      <P
+                        className="ControlRange__Value-kXycxr cJYxpn"
                         color="primary"
                       >
-                        N/A
-                      </p>
-                    </Component>
-                  </Styled(Component)>
-                </div>
-              </Component>
-            </Styled(Component)>
+                        <Component
+                          className="ControlRange__Value-kXycxr cJYxpn P__P-KJbCR dnAaPu"
+                          color="primary"
+                        >
+                          <p
+                            className="ControlRange__Value-kXycxr cJYxpn P__P-KJbCR dnAaPu"
+                            color="primary"
+                          >
+                            N/A
+                          </p>
+                        </Component>
+                      </P>
+                    </ControlRange__Value>
+                  </div>
+                </Component>
+              </P>
+            </ControlRange__ValueWrapper>
             <InputRange
               kind="primary"
               max={100}
@@ -139,7 +149,7 @@ exports[`should render ANALOG_CONTROL correctly with default value to N/A 1`] = 
               value=""
             >
               <input
-                className="hdhnFx"
+                className="InputRange__InputRange-uGAsR iOVoet"
                 kind="primary"
                 max={100}
                 min={0}
@@ -152,9 +162,9 @@ exports[`should render ANALOG_CONTROL correctly with default value to N/A 1`] = 
               />
             </InputRange>
           </div>
-        </styled.div>
+        </ControlRange__InputWrapper>
       </div>
-    </styled.div>
+    </ControlRange__Container>
   </ControlRange>
 </DataChannelAdapter>
 `;
@@ -188,11 +198,11 @@ exports[`should render ANALOG_CONTROL correctly with max 1`] = `
     value={100}
     valueMapper={[Function]}
   >
-    <styled.div>
+    <ControlRange__Container>
       <div
-        className="ciDLcE"
+        className="ControlRange__Container-ispxkc kkVGKq"
       >
-        <styled.div
+        <ControlRange__LabelWrapper
           labels={
             Array [
               0,
@@ -201,21 +211,21 @@ exports[`should render ANALOG_CONTROL correctly with max 1`] = `
           }
         >
           <div
-            className="hxnWDy"
+            className="ControlRange__LabelWrapper-hpKjGx kKFCvQ"
           >
-            <styled.div>
+            <ControlRange__LabelItem>
               <div
-                className="kRwEkq"
+                className="ControlRange__LabelItem-kiIalK idIiax"
               >
                 <P
                   color="grayBase"
                 >
                   <Component
-                    className="jyQfel"
+                    className="P__P-KJbCR kHKeHO"
                     color="grayBase"
                   >
                     <div
-                      className="jyQfel"
+                      className="P__P-KJbCR kHKeHO"
                       color="grayBase"
                     >
                       0
@@ -223,20 +233,20 @@ exports[`should render ANALOG_CONTROL correctly with max 1`] = `
                   </Component>
                 </P>
               </div>
-            </styled.div>
-            <styled.div>
+            </ControlRange__LabelItem>
+            <ControlRange__LabelItem>
               <div
-                className="kRwEkq"
+                className="ControlRange__LabelItem-kiIalK idIiax"
               >
                 <P
                   color="grayBase"
                 >
                   <Component
-                    className="jyQfel"
+                    className="P__P-KJbCR kHKeHO"
                     color="grayBase"
                   >
                     <div
-                      className="jyQfel"
+                      className="P__P-KJbCR kHKeHO"
                       color="grayBase"
                     >
                       100
@@ -244,10 +254,10 @@ exports[`should render ANALOG_CONTROL correctly with max 1`] = `
                   </Component>
                 </P>
               </div>
-            </styled.div>
+            </ControlRange__LabelItem>
           </div>
-        </styled.div>
-        <styled.div
+        </ControlRange__LabelWrapper>
+        <ControlRange__InputWrapper
           labels={
             Array [
               0,
@@ -256,38 +266,48 @@ exports[`should render ANALOG_CONTROL correctly with max 1`] = `
           }
         >
           <div
-            className="glLEWf"
+            className="ControlRange__InputWrapper-fklkwO dVxsgp"
           >
-            <Styled(Component)
+            <ControlRange__ValueWrapper
               color="grayBase"
             >
-              <Component
-                className="chvbqM"
+              <P
+                className="ControlRange__ValueWrapper-jxMKxr lkxWna"
                 color="grayBase"
               >
-                <div
-                  className="chvbqM"
+                <Component
+                  className="ControlRange__ValueWrapper-jxMKxr lkxWna P__P-KJbCR kHKeHO"
                   color="grayBase"
                 >
-                  Current value: 
-                  <Styled(Component)
-                    color="primary"
+                  <div
+                    className="ControlRange__ValueWrapper-jxMKxr lkxWna P__P-KJbCR kHKeHO"
+                    color="grayBase"
                   >
-                    <Component
-                      className="eBMqlM"
+                    Current value: 
+                    <ControlRange__Value
                       color="primary"
                     >
-                      <div
-                        className="eBMqlM"
+                      <P
+                        className="ControlRange__Value-kXycxr cJYxpn"
                         color="primary"
                       >
-                        100
-                      </div>
-                    </Component>
-                  </Styled(Component)>
-                </div>
-              </Component>
-            </Styled(Component)>
+                        <Component
+                          className="ControlRange__Value-kXycxr cJYxpn P__P-KJbCR dnAaPu"
+                          color="primary"
+                        >
+                          <div
+                            className="ControlRange__Value-kXycxr cJYxpn P__P-KJbCR dnAaPu"
+                            color="primary"
+                          >
+                            100
+                          </div>
+                        </Component>
+                      </P>
+                    </ControlRange__Value>
+                  </div>
+                </Component>
+              </P>
+            </ControlRange__ValueWrapper>
             <InputRange
               kind="primary"
               max={100}
@@ -300,7 +320,7 @@ exports[`should render ANALOG_CONTROL correctly with max 1`] = `
               value={100}
             >
               <input
-                className="hdhnFx"
+                className="InputRange__InputRange-uGAsR iOVoet"
                 kind="primary"
                 max={100}
                 min={0}
@@ -313,9 +333,9 @@ exports[`should render ANALOG_CONTROL correctly with max 1`] = `
               />
             </InputRange>
           </div>
-        </styled.div>
+        </ControlRange__InputWrapper>
       </div>
-    </styled.div>
+    </ControlRange__Container>
   </ControlRange>
 </DataChannelAdapter>
 `;
@@ -349,11 +369,11 @@ exports[`should render ANALOG_CONTROL correctly with zero 1`] = `
     value={0}
     valueMapper={[Function]}
   >
-    <styled.div>
+    <ControlRange__Container>
       <div
-        className="ciDLcE"
+        className="ControlRange__Container-ispxkc kkVGKq"
       >
-        <styled.div
+        <ControlRange__LabelWrapper
           labels={
             Array [
               0,
@@ -362,21 +382,21 @@ exports[`should render ANALOG_CONTROL correctly with zero 1`] = `
           }
         >
           <div
-            className="hxnWDy"
+            className="ControlRange__LabelWrapper-hpKjGx kKFCvQ"
           >
-            <styled.div>
+            <ControlRange__LabelItem>
               <div
-                className="kRwEkq"
+                className="ControlRange__LabelItem-kiIalK idIiax"
               >
                 <P
                   color="grayBase"
                 >
                   <Component
-                    className="jyQfel"
+                    className="P__P-KJbCR kHKeHO"
                     color="grayBase"
                   >
                     <div
-                      className="jyQfel"
+                      className="P__P-KJbCR kHKeHO"
                       color="grayBase"
                     >
                       0
@@ -384,20 +404,20 @@ exports[`should render ANALOG_CONTROL correctly with zero 1`] = `
                   </Component>
                 </P>
               </div>
-            </styled.div>
-            <styled.div>
+            </ControlRange__LabelItem>
+            <ControlRange__LabelItem>
               <div
-                className="kRwEkq"
+                className="ControlRange__LabelItem-kiIalK idIiax"
               >
                 <P
                   color="grayBase"
                 >
                   <Component
-                    className="jyQfel"
+                    className="P__P-KJbCR kHKeHO"
                     color="grayBase"
                   >
                     <div
-                      className="jyQfel"
+                      className="P__P-KJbCR kHKeHO"
                       color="grayBase"
                     >
                       100
@@ -405,10 +425,10 @@ exports[`should render ANALOG_CONTROL correctly with zero 1`] = `
                   </Component>
                 </P>
               </div>
-            </styled.div>
+            </ControlRange__LabelItem>
           </div>
-        </styled.div>
-        <styled.div
+        </ControlRange__LabelWrapper>
+        <ControlRange__InputWrapper
           labels={
             Array [
               0,
@@ -417,38 +437,48 @@ exports[`should render ANALOG_CONTROL correctly with zero 1`] = `
           }
         >
           <div
-            className="glLEWf"
+            className="ControlRange__InputWrapper-fklkwO dVxsgp"
           >
-            <Styled(Component)
+            <ControlRange__ValueWrapper
               color="grayBase"
             >
-              <Component
-                className="chvbqM"
+              <P
+                className="ControlRange__ValueWrapper-jxMKxr lkxWna"
                 color="grayBase"
               >
-                <div
-                  className="chvbqM"
+                <Component
+                  className="ControlRange__ValueWrapper-jxMKxr lkxWna P__P-KJbCR kHKeHO"
                   color="grayBase"
                 >
-                  Current value: 
-                  <Styled(Component)
-                    color="primary"
+                  <div
+                    className="ControlRange__ValueWrapper-jxMKxr lkxWna P__P-KJbCR kHKeHO"
+                    color="grayBase"
                   >
-                    <Component
-                      className="eBMqlM"
+                    Current value: 
+                    <ControlRange__Value
                       color="primary"
                     >
-                      <div
-                        className="eBMqlM"
+                      <P
+                        className="ControlRange__Value-kXycxr cJYxpn"
                         color="primary"
                       >
-                        0
-                      </div>
-                    </Component>
-                  </Styled(Component)>
-                </div>
-              </Component>
-            </Styled(Component)>
+                        <Component
+                          className="ControlRange__Value-kXycxr cJYxpn P__P-KJbCR dnAaPu"
+                          color="primary"
+                        >
+                          <div
+                            className="ControlRange__Value-kXycxr cJYxpn P__P-KJbCR dnAaPu"
+                            color="primary"
+                          >
+                            0
+                          </div>
+                        </Component>
+                      </P>
+                    </ControlRange__Value>
+                  </div>
+                </Component>
+              </P>
+            </ControlRange__ValueWrapper>
             <InputRange
               kind="primary"
               max={100}
@@ -461,7 +491,7 @@ exports[`should render ANALOG_CONTROL correctly with zero 1`] = `
               value={0}
             >
               <input
-                className="hdhnFx"
+                className="InputRange__InputRange-uGAsR iOVoet"
                 kind="primary"
                 max={100}
                 min={0}
@@ -474,9 +504,9 @@ exports[`should render ANALOG_CONTROL correctly with zero 1`] = `
               />
             </InputRange>
           </div>
-        </styled.div>
+        </ControlRange__InputWrapper>
       </div>
-    </styled.div>
+    </ControlRange__Container>
   </ControlRange>
 </DataChannelAdapter>
 `;

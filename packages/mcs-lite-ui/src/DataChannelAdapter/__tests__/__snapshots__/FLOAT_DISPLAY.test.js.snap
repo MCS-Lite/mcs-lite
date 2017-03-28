@@ -15,29 +15,34 @@ exports[`should render FLOAT_DISPLAY correctly with default value to N/A 1`] = `
   <DisplayUnitValue
     value="N/A"
   >
-    <styled.div>
+    <DisplayUnitValue__Container>
       <div
-        className="cthtBB"
+        className="DisplayUnitValue__Container-fOKEIX dDKurw"
       >
-        <Styled(H)
+        <DisplayUnitValue__StyledHeading
           color="primary"
-          level={1}
         >
-          <H
-            className="ekhOej"
+          <Heading
+            className="DisplayUnitValue__StyledHeading-kRatpm hdCZyr"
             color="primary"
             level={1}
           >
-            <h1
-              className="ekhOej"
+            <H
+              className="DisplayUnitValue__StyledHeading-kRatpm hdCZyr Heading__Heading-bbmQNS bzctpr"
               color="primary"
+              level={1}
             >
-              N/A
-            </h1>
-          </H>
-        </Styled(H)>
+              <h1
+                className="DisplayUnitValue__StyledHeading-kRatpm hdCZyr Heading__Heading-bbmQNS bzctpr"
+                color="primary"
+              >
+                N/A
+              </h1>
+            </H>
+          </Heading>
+        </DisplayUnitValue__StyledHeading>
       </div>
-    </styled.div>
+    </DisplayUnitValue__Container>
   </DisplayUnitValue>
 </DataChannelAdapter>
 `;
@@ -62,44 +67,54 @@ exports[`should render FLOAT_DISPLAY correctly with unit 1`] = `
     unit="攝氏"
     value={1.3}
   >
-    <styled.div>
+    <DisplayUnitValue__Container>
       <div
-        className="cthtBB"
+        className="DisplayUnitValue__Container-fOKEIX dDKurw"
       >
-        <Styled(H)
+        <DisplayUnitValue__StyledHeading
           color="primary"
-          level={1}
         >
-          <H
-            className="ekhOej"
+          <Heading
+            className="DisplayUnitValue__StyledHeading-kRatpm hdCZyr"
             color="primary"
             level={1}
           >
-            <h1
-              className="ekhOej"
+            <H
+              className="DisplayUnitValue__StyledHeading-kRatpm hdCZyr Heading__Heading-bbmQNS bzctpr"
               color="primary"
+              level={1}
             >
-              1.3
-            </h1>
-          </H>
-        </Styled(H)>
-        <Styled(Component)
+              <h1
+                className="DisplayUnitValue__StyledHeading-kRatpm hdCZyr Heading__Heading-bbmQNS bzctpr"
+                color="primary"
+              >
+                1.3
+              </h1>
+            </H>
+          </Heading>
+        </DisplayUnitValue__StyledHeading>
+        <DisplayUnitValue__StyledP
           color="grayBase"
         >
-          <Component
-            className="iiIFfD"
+          <P
+            className="DisplayUnitValue__StyledP-ceNPmY iawlaJ"
             color="grayBase"
           >
-            <p
-              className="iiIFfD"
+            <Component
+              className="DisplayUnitValue__StyledP-ceNPmY iawlaJ P__P-KJbCR kHKeHO"
               color="grayBase"
             >
-              攝氏
-            </p>
-          </Component>
-        </Styled(Component)>
+              <p
+                className="DisplayUnitValue__StyledP-ceNPmY iawlaJ P__P-KJbCR kHKeHO"
+                color="grayBase"
+              >
+                攝氏
+              </p>
+            </Component>
+          </P>
+        </DisplayUnitValue__StyledP>
       </div>
-    </styled.div>
+    </DisplayUnitValue__Container>
   </DisplayUnitValue>
 </DataChannelAdapter>
 `;
@@ -121,29 +136,34 @@ exports[`should render FLOAT_DISPLAY correctly with value 1`] = `
   <DisplayUnitValue
     value={1.1}
   >
-    <styled.div>
+    <DisplayUnitValue__Container>
       <div
-        className="cthtBB"
+        className="DisplayUnitValue__Container-fOKEIX dDKurw"
       >
-        <Styled(H)
+        <DisplayUnitValue__StyledHeading
           color="primary"
-          level={1}
         >
-          <H
-            className="ekhOej"
+          <Heading
+            className="DisplayUnitValue__StyledHeading-kRatpm hdCZyr"
             color="primary"
             level={1}
           >
-            <h1
-              className="ekhOej"
+            <H
+              className="DisplayUnitValue__StyledHeading-kRatpm hdCZyr Heading__Heading-bbmQNS bzctpr"
               color="primary"
+              level={1}
             >
-              1.1
-            </h1>
-          </H>
-        </Styled(H)>
+              <h1
+                className="DisplayUnitValue__StyledHeading-kRatpm hdCZyr Heading__Heading-bbmQNS bzctpr"
+                color="primary"
+              >
+                1.1
+              </h1>
+            </H>
+          </Heading>
+        </DisplayUnitValue__StyledHeading>
       </div>
-    </styled.div>
+    </DisplayUnitValue__Container>
   </DisplayUnitValue>
 </DataChannelAdapter>
 `;
@@ -165,29 +185,34 @@ exports[`should render FLOAT_DISPLAY correctly with zero 1`] = `
   <DisplayUnitValue
     value={0}
   >
-    <styled.div>
+    <DisplayUnitValue__Container>
       <div
-        className="cthtBB"
+        className="DisplayUnitValue__Container-fOKEIX dDKurw"
       >
-        <Styled(H)
+        <DisplayUnitValue__StyledHeading
           color="primary"
-          level={1}
         >
-          <H
-            className="ekhOej"
+          <Heading
+            className="DisplayUnitValue__StyledHeading-kRatpm hdCZyr"
             color="primary"
             level={1}
           >
-            <h1
-              className="ekhOej"
+            <H
+              className="DisplayUnitValue__StyledHeading-kRatpm hdCZyr Heading__Heading-bbmQNS bzctpr"
               color="primary"
+              level={1}
             >
-              0
-            </h1>
-          </H>
-        </Styled(H)>
+              <h1
+                className="DisplayUnitValue__StyledHeading-kRatpm hdCZyr Heading__Heading-bbmQNS bzctpr"
+                color="primary"
+              >
+                0
+              </h1>
+            </H>
+          </Heading>
+        </DisplayUnitValue__StyledHeading>
       </div>
-    </styled.div>
+    </DisplayUnitValue__Container>
   </DisplayUnitValue>
 </DataChannelAdapter>
 `;
