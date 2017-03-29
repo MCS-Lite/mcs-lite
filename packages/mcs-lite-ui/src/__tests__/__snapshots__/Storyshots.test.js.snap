@@ -3432,6 +3432,11 @@ exports[`Storyshots DatetimePicker API 1`] = `
     onPan={[Function]}
     onPanEnd={[Function]}
     onPanStart={[Function]}
+    options={
+      Object {
+        "touchAction": "pan-x",
+      }
+    }
   >
     <div
       className="Picker__ItemWrapper-buHaJW chppio"
@@ -3458,6 +3463,11 @@ exports[`Storyshots DatetimePicker API 1`] = `
     onPan={[Function]}
     onPanEnd={[Function]}
     onPanStart={[Function]}
+    options={
+      Object {
+        "touchAction": "pan-x",
+      }
+    }
   >
     <div
       className="Picker__ItemWrapper-buHaJW chppio"
@@ -3534,6 +3544,11 @@ exports[`Storyshots DatetimePicker API 1`] = `
     onPan={[Function]}
     onPanEnd={[Function]}
     onPanStart={[Function]}
+    options={
+      Object {
+        "touchAction": "pan-x",
+      }
+    }
   >
     <div
       className="Picker__ItemWrapper-buHaJW chppio"
@@ -3695,6 +3710,11 @@ exports[`Storyshots DatetimePicker API 1`] = `
     onPan={[Function]}
     onPanEnd={[Function]}
     onPanStart={[Function]}
+    options={
+      Object {
+        "touchAction": "pan-x",
+      }
+    }
   >
     <div
       className="Picker__ItemWrapper-buHaJW chppio"
@@ -3831,6 +3851,11 @@ exports[`Storyshots DatetimePicker API 1`] = `
     onPan={[Function]}
     onPanEnd={[Function]}
     onPanStart={[Function]}
+    options={
+      Object {
+        "touchAction": "pan-x",
+      }
+    }
   >
     <div
       className="Picker__ItemWrapper-buHaJW chppio"
@@ -5272,6 +5297,11 @@ exports[`Storyshots Picker API 1`] = `
     onPan={[Function]}
     onPanEnd={[Function]}
     onPanStart={[Function]}
+    options={
+      Object {
+        "touchAction": "pan-x",
+      }
+    }
   >
     <div
       className="Picker__ItemWrapper-buHaJW chppio"
@@ -5308,6 +5338,11 @@ exports[`Storyshots Picker API 1`] = `
     onPan={[Function]}
     onPanEnd={[Function]}
     onPanStart={[Function]}
+    options={
+      Object {
+        "touchAction": "pan-x",
+      }
+    }
   >
     <div
       className="Picker__ItemWrapper-buHaJW chppio"
@@ -5388,6 +5423,11 @@ exports[`Storyshots PullToRefresh API 1`] = `
     onPan={[Function]}
     onPanEnd={[Function]}
     onPanStart={[Function]}
+    options={
+      Object {
+        "touchAction": "pan-x pan-y",
+      }
+    }
   >
     <div
       className="PullToRefresh__PullWrapper-hUeHkt fozezD"

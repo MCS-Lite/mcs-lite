@@ -53,8 +53,8 @@ class PullToRefresh extends React.Component {
     return this.reset();
   }
 
-  onPanDownStart = (e) => {
-    this.fromY = e.srcEvent.pageY;
+  onPanDownStart = () => {
+    this.fromY = 0;
     this.toY = this.fromY;
   }
 
@@ -66,7 +66,7 @@ class PullToRefresh extends React.Component {
     }
     e.preventDefault();
 
-    this.toY = e.srcEvent.pageY;
+    this.toY = e.deltaY;
     this.setState({ distance: (this.toY - this.fromY) / SENSITIVITY });
   }
 
@@ -96,6 +96,7 @@ class PullToRefresh extends React.Component {
         onPanStart={this.onPanDownStart}
         onPanEnd={this.onPanDownEnd}
         direction="DIRECTION_DOWN"
+        options={{ touchAction: 'pan-x pan-y' }}
       >
         <PullWrapper
           {...otherProps}

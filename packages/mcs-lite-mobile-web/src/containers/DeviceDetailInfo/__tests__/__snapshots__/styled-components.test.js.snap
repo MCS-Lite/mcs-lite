@@ -2,7 +2,7 @@ exports[`test should render components correctly 1`] = `
 <div>
   <Styled(MobileContentWrapper)>
     <MobileContentWrapper
-      className="sc-bdVaJa eJPQkK" />
+      className="sc-bdVaJa iemWIQ" />
   </Styled(MobileContentWrapper)>
 </div>
 `;
