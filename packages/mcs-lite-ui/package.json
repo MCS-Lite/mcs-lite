@@ -1,6 +1,6 @@
 {
   "name": "mcs-lite-ui",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Common UI used by MCS Lite",
   "repository": "evenchange4/mcs-lite",
   "author": "Michael Hsu <evenchange4@gmail.com>",
