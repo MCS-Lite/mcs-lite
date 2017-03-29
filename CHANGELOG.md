@@ -2,6 +2,12 @@
 
 ## Released (2017-03-29)
 
+### Bump Versions
+
+-   mcs-lite-demo-nextjs@0.2.1
+-   mcs-lite-mobile-web@0.3.1
+-   mcs-lite-ui@0.3.1
+
 #### :bug: Bug Fix
 * `mcs-lite-mobile-web`, `mcs-lite-ui`
   * [#268](https://github.com/evenchange4/mcs-lite/pull/268) fix(Picker/PullToRefresh): use deltaY for android chrome. ([@evenchange4](https://github.com/evenchange4))
