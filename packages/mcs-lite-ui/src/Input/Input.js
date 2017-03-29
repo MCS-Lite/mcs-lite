@@ -16,16 +16,14 @@ const Input = styled.input`
   min-height: ${props => props.theme.height.normal};
   color: ${props => props.theme.color.black};
   font-size: ${props => props.theme.fontSize.p};
-  border-color: ${
-    props => props.focus
-      ? props.theme.color[props.kind]
-      : props.theme.color.grayDark
+  border-color: ${props => props.focus
+    ? props.theme.color[props.kind]
+    : props.theme.color.grayDark
   };
-  box-shadow: ${
-    props => props.focus
-      ? `0 0 3px 0 ${shadow(props.theme.color[props.kind])}`
-      : 'none'
-    };
+  box-shadow: ${props => props.focus
+    ? `0 0 3px 0 ${shadow(props.theme.color[props.kind])}`
+    : 'none'
+  };
 
   &:focus {
     border-color: ${props => props.theme.color[props.kind]};
@@ -33,10 +31,22 @@ const Input = styled.input`
   }
 
   /* stylelint-disable selector-no-vendor-prefix */
-  &::placeholder,
-  &::-webkit-input-placeholder,
-  &::-moz-placeholder,
-  &::-ms-input-placeholder {
+  &::placeholder {
+    opacity: 1;
+    color: ${props => props.theme.color.grayDark};
+  }
+
+  &::-moz-placeholder {
+    opacity: 1;
+    color: ${props => props.theme.color.grayDark};
+  }
+
+  &::-webkit-input-placeholder {
+    opacity: 1;
+    color: ${props => props.theme.color.grayDark};
+  }
+
+  &:-ms-input-placeholder {
     opacity: 1;
     color: ${props => props.theme.color.grayDark};
   }

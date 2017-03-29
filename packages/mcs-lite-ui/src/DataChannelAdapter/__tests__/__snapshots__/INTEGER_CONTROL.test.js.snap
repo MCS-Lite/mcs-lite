@@ -32,7 +32,7 @@ exports[`should render INTEGER_CONTROL correctly with default value to empty 1`]
           value=""
         >
           <input
-            className="Input__Input-ixjKAz ijwcNZ"
+            className="Input__Input-ixjKAz hMaVBp"
             kind="primary"
             onChange={[Function]}
             placeholder="Integer only"
@@ -184,7 +184,7 @@ exports[`should render INTEGER_CONTROL correctly with unit 1`] = `
           value={1}
         >
           <input
-            className="Input__Input-ixjKAz ijwcNZ"
+            className="Input__Input-ixjKAz hMaVBp"
             kind="primary"
             onChange={[Function]}
             placeholder="Integer only"
@@ -313,7 +313,7 @@ exports[`should render INTEGER_CONTROL correctly with value 1`] = `
           value={1}
         >
           <input
-            className="Input__Input-ixjKAz ijwcNZ"
+            className="Input__Input-ixjKAz hMaVBp"
             kind="primary"
             onChange={[Function]}
             placeholder="Integer only"
@@ -442,7 +442,7 @@ exports[`should render INTEGER_CONTROL correctly with zero 1`] = `
           value={0}
         >
           <input
-            className="Input__Input-ixjKAz ijwcNZ"
+            className="Input__Input-ixjKAz hMaVBp"
             kind="primary"
             onChange={[Function]}
             placeholder="Integer only"

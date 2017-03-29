@@ -773,7 +773,7 @@ exports[`Storyshots DataChannel ControlNumber 1`] = `
     單位：攝氏
   </p>
   <input
-    className="Input__Input-ixjKAz ijwcNZ"
+    className="Input__Input-ixjKAz hMaVBp"
     kind="primary"
     onChange={[Function]}
     placeholder="placeholder"
@@ -833,7 +833,7 @@ exports[`Storyshots DataChannel ControlPeriod 1`] = `
     className="ControlPeriod__InputWrapper-icIPmx gFyvMa"
   >
     <input
-      className="ControlPeriod__StyledInput-fNvBTX cAVBYu Input__Input-ixjKAz ijwcNZ"
+      className="ControlPeriod__StyledInput-fNvBTX cAVBYu Input__Input-ixjKAz hMaVBp"
       kind="primary"
       onChange={[Function]}
       placeholder="placeholder"
@@ -1598,7 +1598,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
           單位：ampere
         </p>
         <input
-          className="Input__Input-ixjKAz ijwcNZ"
+          className="Input__Input-ixjKAz hMaVBp"
           kind="primary"
           onChange={[Function]}
           placeholder="Integer only"
@@ -1752,7 +1752,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
           單位：ampere
         </p>
         <input
-          className="Input__Input-ixjKAz ijwcNZ"
+          className="Input__Input-ixjKAz hMaVBp"
           kind="primary"
           onChange={[Function]}
           placeholder="Float only"
@@ -2977,7 +2977,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
             className="ControlPeriod__InputWrapper-icIPmx gFyvMa"
           >
             <input
-              className="ControlPeriod__StyledInput-fNvBTX cAVBYu Input__Input-ixjKAz ijwcNZ"
+              className="ControlPeriod__StyledInput-fNvBTX cAVBYu Input__Input-ixjKAz hMaVBp"
               kind="primary"
               onChange={[Function]}
               placeholder="Integer only"
@@ -4154,7 +4154,7 @@ exports[`Storyshots DatetimePicker API 1`] = `
 exports[`Storyshots DatetimePickerDialog API 1`] = `
 <div>
   <input
-    className="Input__Input-ixjKAz ijwcNZ"
+    className="Input__Input-ixjKAz hMaVBp"
     kind="primary"
     onClick={[Function]}
     readOnly={true}
@@ -4463,7 +4463,7 @@ exports[`Storyshots Img With size props 1`] = `
 
 exports[`Storyshots Input API 1`] = `
 <input
-  className="Input__Input-ixjKAz ijwcNZ"
+  className="Input__Input-ixjKAz hMaVBp"
   kind="primary"
   placeholder="placeholder"
 />
@@ -4471,7 +4471,7 @@ exports[`Storyshots Input API 1`] = `
 
 exports[`Storyshots Input With focus props 1`] = `
 <input
-  className="Input__Input-ixjKAz fVnCMx"
+  className="Input__Input-ixjKAz haVXDh"
   kind="primary"
   placeholder="placeholder"
 />
@@ -4482,27 +4482,27 @@ exports[`Storyshots Input With kind props 1`] = `
   className="Input-example__Wrapper-wdFpp vSgWM"
 >
   <input
-    className="Input__Input-ixjKAz iRhLum"
+    className="Input__Input-ixjKAz fdAlSe"
     kind="default"
     placeholder="default"
   />
   <input
-    className="Input__Input-ixjKAz ijwcNZ"
+    className="Input__Input-ixjKAz hMaVBp"
     kind="primary"
     placeholder="primary"
   />
   <input
-    className="Input__Input-ixjKAz byJyAa"
+    className="Input__Input-ixjKAz kQAVcY"
     kind="success"
     placeholder="success"
   />
   <input
-    className="Input__Input-ixjKAz qoqsg"
+    className="Input__Input-ixjKAz hJJlNR"
     kind="error"
     placeholder="error"
   />
   <input
-    className="Input__Input-ixjKAz hKkKgm"
+    className="Input__Input-ixjKAz jrljQl"
     kind="warning"
     placeholder="warning"
   />
@@ -4514,91 +4514,91 @@ exports[`Storyshots Input With type props 1`] = `
   className="Input-example__Wrapper-wdFpp vSgWM"
 >
   <input
-    className="Input__Input-ixjKAz ijwcNZ"
+    className="Input__Input-ixjKAz hMaVBp"
     kind="primary"
     placeholder="text"
     type="text"
   />
   <input
-    className="Input__Input-ixjKAz ijwcNZ"
+    className="Input__Input-ixjKAz hMaVBp"
     kind="primary"
     placeholder="email"
     type="email"
   />
   <input
-    className="Input__Input-ixjKAz ijwcNZ"
+    className="Input__Input-ixjKAz hMaVBp"
     kind="primary"
     placeholder="number"
     type="number"
   />
   <input
-    className="Input__Input-ixjKAz ijwcNZ"
+    className="Input__Input-ixjKAz hMaVBp"
     kind="primary"
     placeholder="password"
     type="password"
   />
   <input
-    className="Input__Input-ixjKAz ijwcNZ"
+    className="Input__Input-ixjKAz hMaVBp"
     kind="primary"
     placeholder="tel"
     type="tel"
   />
   <input
-    className="Input__Input-ixjKAz ijwcNZ"
+    className="Input__Input-ixjKAz hMaVBp"
     kind="primary"
     placeholder="search"
     type="search"
   />
   <input
-    className="Input__Input-ixjKAz ijwcNZ"
+    className="Input__Input-ixjKAz hMaVBp"
     kind="primary"
     placeholder="month"
     type="month"
   />
   <input
-    className="Input__Input-ixjKAz ijwcNZ"
+    className="Input__Input-ixjKAz hMaVBp"
     kind="primary"
     placeholder="week"
     type="week"
   />
   <input
-    className="Input__Input-ixjKAz ijwcNZ"
+    className="Input__Input-ixjKAz hMaVBp"
     kind="primary"
     placeholder="date"
     type="date"
   />
   <input
-    className="Input__Input-ixjKAz ijwcNZ"
+    className="Input__Input-ixjKAz hMaVBp"
     kind="primary"
     placeholder="color"
     type="color"
   />
   <input
-    className="Input__Input-ixjKAz ijwcNZ"
+    className="Input__Input-ixjKAz hMaVBp"
     kind="primary"
     placeholder="file"
     type="file"
   />
   <input
-    className="Input__Input-ixjKAz ijwcNZ"
+    className="Input__Input-ixjKAz hMaVBp"
     kind="primary"
     placeholder="radio"
     type="radio"
   />
   <input
-    className="Input__Input-ixjKAz ijwcNZ"
+    className="Input__Input-ixjKAz hMaVBp"
     kind="primary"
     placeholder="time"
     type="time"
   />
   <input
-    className="Input__Input-ixjKAz ijwcNZ"
+    className="Input__Input-ixjKAz hMaVBp"
     kind="primary"
     placeholder="url"
     type="url"
   />
   <input
-    className="Input__Input-ixjKAz ijwcNZ"
+    className="Input__Input-ixjKAz hMaVBp"
     kind="primary"
     placeholder="range"
     type="range"
@@ -4652,7 +4652,7 @@ exports[`Storyshots InputGroup API 1`] = `
       大於
     </button>
     <input
-      className="Input__Input-ixjKAz ijwcNZ"
+      className="Input__Input-ixjKAz hMaVBp"
       kind="primary"
       placeholder="預設值：20"
     />
@@ -4661,7 +4661,7 @@ exports[`Storyshots InputGroup API 1`] = `
     className="InputGroup__InputGroup-jokkYF Gitcm"
   >
     <input
-      className="Input__Input-ixjKAz ijwcNZ"
+      className="Input__Input-ixjKAz hMaVBp"
       kind="primary"
       placeholder="Input 1"
     />
@@ -4680,7 +4680,7 @@ exports[`Storyshots InputGroup API 1`] = `
       Button 1
     </button>
     <input
-      className="Input__Input-ixjKAz ijwcNZ"
+      className="Input__Input-ixjKAz hMaVBp"
       kind="primary"
       placeholder="Input 1"
     />
@@ -4699,7 +4699,7 @@ exports[`Storyshots InputGroup API 1`] = `
       之間
     </button>
     <input
-      className="Input__Input-ixjKAz ijwcNZ"
+      className="Input__Input-ixjKAz hMaVBp"
       kind="primary"
       placeholder="預設值：0"
     />
@@ -4709,7 +4709,7 @@ exports[`Storyshots InputGroup API 1`] = `
       和
     </button>
     <input
-      className="Input__Input-ixjKAz ijwcNZ"
+      className="Input__Input-ixjKAz hMaVBp"
       kind="primary"
       placeholder="預設值：100"
     />
@@ -5446,7 +5446,7 @@ exports[`Storyshots Select API - ReadOnly 1`] = `
     className="Select__StyledInputGroup-etiIHI eQWZKB InputGroup__InputGroup-jokkYF Gitcm"
   >
     <input
-      className="Input__Input-ixjKAz ijwcNZ"
+      className="Input__Input-ixjKAz hMaVBp"
       kind="primary"
       placeholder={undefined}
       readOnly={true}
@@ -5497,7 +5497,7 @@ exports[`Storyshots Select With disabled props 1`] = `
     className="Select__StyledInputGroup-etiIHI eQWZKB InputGroup__InputGroup-jokkYF Gitcm"
   >
     <input
-      className="Input__Input-ixjKAz ijwcNZ"
+      className="Input__Input-ixjKAz hMaVBp"
       kind="primary"
       placeholder="選擇資料通道"
       readOnly={true}
@@ -5560,7 +5560,7 @@ exports[`Storyshots Select With kind props 1`] = `
     className="Select__StyledInputGroup-etiIHI eQWZKB InputGroup__InputGroup-jokkYF Gitcm"
   >
     <input
-      className="Input__Input-ixjKAz hKkKgm"
+      className="Input__Input-ixjKAz jrljQl"
       kind="warning"
       placeholder={undefined}
       readOnly={true}
