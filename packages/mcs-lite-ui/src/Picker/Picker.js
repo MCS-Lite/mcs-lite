@@ -43,14 +43,14 @@ class Picker extends React.Component {
     this.setState({ distance: this.calcDistanceByIndex(nextProps.value) });
   }
 
-  onPanVerticalStart = (e) => {
-    this.fromY = e.srcEvent.pageY;
+  onPanVerticalStart = () => {
+    this.fromY = 0;
     this.toY = this.fromY;
     this.last = this.state.distance;
   }
 
   onPanVertical = (e) => {
-    this.toY = e.srcEvent.pageY;
+    this.toY = e.deltaY;
     this.setState({ distance: this.last + (this.toY - this.fromY) });
     e.preventDefault();
   }
@@ -109,6 +109,7 @@ class Picker extends React.Component {
         onPanStart={this.onPanVerticalStart}
         onPanEnd={this.onPanVerticalEnd}
         direction="DIRECTION_VERTICAL"
+        options={{ touchAction: 'pan-x' }}
       >
         <ItemWrapper style={{ marginTop: distance }}>
           {

@@ -9,4 +9,8 @@ export const Container = styled(MobileContentWrapper)`
   > div + div {
     margin-top: 8px;
   }
+
+  p {
+    word-wrap: break-word;
+  }
 `;
