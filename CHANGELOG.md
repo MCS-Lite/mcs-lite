@@ -1,5 +1,18 @@
 # MCS Lite changelogs
 
+## Released (2017-03-29)
+
+#### :bug: Bug Fix
+* `mcs-lite-mobile-web`, `mcs-lite-ui`
+  * [#268](https://github.com/evenchange4/mcs-lite/pull/268) fix(Picker/PullToRefresh): use deltaY for android chrome. ([@evenchange4](https://github.com/evenchange4))
+* `mcs-lite-ui`
+  * [#267](https://github.com/evenchange4/mcs-lite/pull/267) fix(Input): wrong placeholder style. ([@evenchange4](https://github.com/evenchange4))
+
+#### Committers: 1
+- Michael Hsu ([evenchange4](https://github.com/evenchange4))
+
+----
+
 ## Released (2017-03-28)
 
 ### Bump Versions
