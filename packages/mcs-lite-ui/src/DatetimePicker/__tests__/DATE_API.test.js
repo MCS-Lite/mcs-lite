@@ -1,8 +1,8 @@
 import D from '../DATE_API';
 
 const fixedDate = new Date(1490855461424);
-console.log(fixedDate.toString())
-console.log(fixedDate.toISOString())
+console.log(fixedDate.toString()); // eslint-disable-line
+console.log(fixedDate.toISOString()); // eslint-disable-line
 
 it('should return correct value of D.from', () => {
   expect(
