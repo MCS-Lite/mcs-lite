@@ -31,7 +31,7 @@ class DatetimePicker extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      value: D.from(this.props.defaultValue), // Date object
+      value: D.from(this.props.defaultValue), // Remind: Date object
     };
   }
 
@@ -39,7 +39,7 @@ class DatetimePicker extends React.Component {
     const newValue = this.reducer(this.state.value, { name, index });
 
     this.setState({ value: newValue });
-    this.props.onChange(D.to(newValue)); // Remind: prevent mutate
+    this.props.onChange(D.to(newValue)); // Remind: To Unix Timestamp (milliseconds)
   }
 
   reducer = (value, { name, index }) => R.cond([
