@@ -22,7 +22,7 @@
     "build": "NODE_ENV=production babel src --out-dir lib --ignore example.js,test.js",
     "createEntryFile": "exports-all 'lib/[A-Z]*' 'lib/index.js'",
     "postbuild": "npm run createEntryFile",
-    "test": "NODE_ENV='test' TEST_TZ='true' TZ='UTC+08:00' jest --coverage --runInBand",
+    "test": "NODE_ENV='test' jest --coverage --runInBand",
     "test:watch": "npm run test -- --watch",
     "flow": "echo 'todo'",
     "lint": "npm run flow"
