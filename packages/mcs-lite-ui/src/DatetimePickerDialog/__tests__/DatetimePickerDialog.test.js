@@ -1,6 +1,8 @@
 import React from 'react';
 import { mount } from 'enzyme';
-import DatetimePickerDialog from '../DatetimePickerDialog';
+import { ThemeProvider } from 'styled-components';
+import { theme } from 'mcs-lite-theme';
+import DatetimePickerDialog, { Header } from '../DatetimePickerDialog';
 
 it('should return correct state', () => {
   const wrapper = mount(
@@ -64,4 +66,16 @@ it('should handle onSubmit', () => {
   wrapper.instance().onSubmit();
   expect(mockOnHide).toHaveBeenCalled();
   expect(mockOnSubmit).toHaveBeenCalledWith(1463556631722);
+});
+
+it('should redner styled-components <Header/>', () => {
+  const wrapper = mount(
+    <ThemeProvider theme={theme}>
+      <div>
+        <Header />
+      </div>
+    </ThemeProvider>,
+  );
+
+  expect(wrapper.find('div')).toMatchSnapshot();
 });
