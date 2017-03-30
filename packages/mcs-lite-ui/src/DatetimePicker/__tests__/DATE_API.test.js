@@ -1,58 +1,53 @@
 import D from '../DATE_API';
 
 const fixedDate = new Date(1490855461424);
+console.log(fixedDate.toString())
+console.log(fixedDate.toISOString())
 
 it('should return correct value of D.from', () => {
   expect(
-    D.from(1490855461424).toISOString(),
-  ).toBe('2017-03-30T06:31:01.424Z');
+    D.from(1490855461424).toString(),
+  ).toBe('Thu Mar 30 2017 14:31:01 GMT+0800 (CST)');
 });
 
 it('should return correct value of D.to', () => {
-  expect(fixedDate.toISOString()).toBe('2017-03-30T06:31:01.424Z');
   expect(
     D.to(fixedDate),
   ).toBe(1490855461424);
+  expect(fixedDate.toString()).toBe('Thu Mar 30 2017 14:31:01 GMT+0800 (CST)');
 });
 
 it('should return correct value of D.setYear', () => {
-  expect(fixedDate.toISOString()).toBe('2017-03-30T06:31:01.424Z');
   expect(
-    D.setYear(2019)(fixedDate).toISOString(),
-  ).toBe('2019-03-30T06:31:01.424Z');
+    D.setYear(2019)(fixedDate).toString(),
+  ).toBe('Sat Mar 30 2019 14:31:01 GMT+0800 (CST)');
+  expect(fixedDate.toString()).toBe('Thu Mar 30 2017 14:31:01 GMT+0800 (CST)');
 });
 
 it('should return correct value of D.setMonth', () => {
-  expect(fixedDate.toISOString()).toBe('2017-03-30T06:31:01.424Z');
   expect(
-    D.setMonth(9)(fixedDate).toISOString(),
-  ).toBe('2017-10-30T06:31:01.424Z');
+    D.setMonth(9)(fixedDate).toString(),
+  ).toBe('Mon Oct 30 2017 14:31:01 GMT+0800 (CST)');
+  expect(fixedDate.toString()).toBe('Thu Mar 30 2017 14:31:01 GMT+0800 (CST)');
 });
 
 it('should return correct value of D.setDate', () => {
-  expect(fixedDate.toISOString()).toBe('2017-03-30T06:31:01.424Z');
   expect(
-    D.setDate(2)(fixedDate).toISOString(),
-  ).toBe('2017-03-03T06:31:01.424Z');
+    D.setDate(2)(fixedDate).toString(),
+  ).toBe('Thu Mar 02 2017 14:31:01 GMT+0800 (CST)');
+  expect(fixedDate.toString()).toBe('Thu Mar 30 2017 14:31:01 GMT+0800 (CST)');
 });
 
 it('should return correct value of D.setHours', () => {
-  expect(fixedDate.toISOString()).toBe('2017-03-30T06:31:01.424Z');
   expect(
-    D.setHours(2)(fixedDate).toISOString(),
-  ).toBe('2017-03-29T10:31:01.424Z');
+    D.setHours(2)(fixedDate).toString(),
+  ).toBe('Thu Mar 30 2017 02:31:01 GMT+0800 (CST)');
+  expect(fixedDate.toString()).toBe('Thu Mar 30 2017 14:31:01 GMT+0800 (CST)');
 });
 
 it('should return correct value of D.setMinutes', () => {
-  expect(fixedDate.toISOString()).toBe('2017-03-30T06:31:01.424Z');
   expect(
-    D.setMinutes(2)(fixedDate).toISOString(),
-  ).toBe('2017-03-30T06:02:01.424Z');
-});
-
-it('should return correct value of D.setMinutes', () => {
-  expect(fixedDate.toISOString()).toBe('2017-03-30T06:31:01.424Z');
-  expect(
-    D.setMinutes(2)(fixedDate).toISOString(),
-  ).toBe('2017-03-30T06:02:01.424Z');
+    D.setMinutes(2)(fixedDate).toString(),
+  ).toBe('Thu Mar 30 2017 14:02:01 GMT+0800 (CST)');
+  expect(fixedDate.toString()).toBe('Thu Mar 30 2017 14:31:01 GMT+0800 (CST)');
 });

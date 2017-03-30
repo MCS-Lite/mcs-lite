@@ -5,6 +5,8 @@ it('should return localTimeFormat function', () => {
 });
 
 it('should return correct formated string', () => {
+  process.env.TEST_TZ = 'true';
+  process.env.TZ = 'Asia/Taipei';
   const fixedDate = 1489455029878; // Tue Mar 14 2017 09:30:29 GMT+0800 (CST)
 
   expect(localTimeFormat(fixedDate)).toBe('2017-03-14 09:30');
