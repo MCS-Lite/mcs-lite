@@ -1,9 +1,9 @@
 import React, { PropTypes } from 'react';
 import R from 'ramda';
-import leftPad from 'left-pad';
 import { Picker, PickerContainer } from '../Picker';
 import emptyFunction from '../utils/emptyFunction';
 import D from './DATE_API';
+import { MONTH_RANGE, HOUR_RANGE, MINUTE_RANGE } from './utils';
 
 /**
  * [Timezone]
@@ -68,7 +68,7 @@ class DatetimePicker extends React.Component {
           name="MONTH"
           value={D.getMonth(value)} // 0 ~ 11
           onChange={onChange}
-          labels={R.range(1, 13)} // 1 ~ 12
+          labels={MONTH_RANGE} // 1 ~ 12
         />
         <Picker
           name="DATE"
@@ -80,13 +80,13 @@ class DatetimePicker extends React.Component {
           name="HOUR"
           value={D.getHours(value)}
           onChange={onChange}
-          labels={R.range(0, 24).map(i => leftPad(i, 2, 0))} // 00 ~ 23
+          labels={HOUR_RANGE} // 00 ~ 23
         />
         <Picker
           name="MINUTE"
           value={D.getMinutes(value)}
           onChange={onChange}
-          labels={R.range(0, 60).map(i => leftPad(i, 2, 0))} // 00 ~ 59
+          labels={MINUTE_RANGE} // 00 ~ 59
         />
       </PickerContainer>
     );
