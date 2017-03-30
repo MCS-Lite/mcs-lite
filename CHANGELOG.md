@@ -1,5 +1,33 @@
 # MCS Lite changelogs
 
+## Released (2017-03-30)
+
+#### :boom: Breaking Change
+* `mcs-lite-mobile-web`, `mcs-lite-ui`
+  * [#269](https://github.com/evenchange4/mcs-lite/pull/269) refactor(DatetimePicker): replace moment.js with date-fns. ([@evenchange4](https://github.com/evenchange4))
+
+
+  **DatetimePicker** is always displayed in local time now.
+
+  ```diff
+  <DatetimePicker
+    defaultValue={1455780631722}
+    onChange={}
+  - utcOffset={8}
+  />
+  ```
+  
+  Dropping `moment.js` to optimize bundle size. 👋
+
+#### :bug: Bug Fix
+* `mcs-lite-ui`
+  * [#270](https://github.com/evenchange4/mcs-lite/pull/270) test(DatetimePicker/CopyButton): fixed tests. ([@evenchange4](https://github.com/evenchange4))
+
+#### Committers: 1
+- Michael Hsu ([evenchange4](https://github.com/evenchange4))
+
+----
+
 ## Released (2017-03-29)
 
 ### Bump Versions
