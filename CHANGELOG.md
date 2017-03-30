@@ -2,6 +2,12 @@
 
 ## Released (2017-03-30)
 
+### Bump Versions
+
+-   mcs-lite-demo-nextjs@0.2.2
+-   mcs-lite-mobile-web@0.3.2
+-   mcs-lite-ui@0.3.2
+
 #### :boom: Breaking Change
 * `mcs-lite-mobile-web`, `mcs-lite-ui`
   * [#269](https://github.com/evenchange4/mcs-lite/pull/269) refactor(DatetimePicker): replace moment.js with date-fns. ([@evenchange4](https://github.com/evenchange4))
