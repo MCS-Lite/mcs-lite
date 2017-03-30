@@ -2,6 +2,12 @@ import D from '../DATE_API';
 
 const fixedDate = new Date(1490855461424);
 
+it('should setup node.js TZ="UTC"', () => {
+  expect(
+    fixedDate.getTimezoneOffset() / 60,
+  ).toBe(0);
+});
+
 it('should return correct value of D.from', () => {
   expect(
     D.from(1490855461424).toISOString(),
@@ -33,14 +39,14 @@ it('should return correct value of D.setDate', () => {
   expect(fixedDate.toISOString()).toBe('2017-03-30T06:31:01.424Z');
   expect(
     D.setDate(2)(fixedDate).toISOString(),
-  ).toBe('2017-03-03T06:31:01.424Z');
+  ).toBe('2017-03-02T06:31:01.424Z');
 });
 
 it('should return correct value of D.setHours', () => {
   expect(fixedDate.toISOString()).toBe('2017-03-30T06:31:01.424Z');
   expect(
     D.setHours(2)(fixedDate).toISOString(),
-  ).toBe('2017-03-29T10:31:01.424Z');
+  ).toBe('2017-03-30T02:31:01.424Z');
 });
 
 it('should return correct value of D.setMinutes', () => {

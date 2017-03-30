@@ -69,7 +69,9 @@ class Picker extends React.Component {
     }
   }
 
-  clampIndex = R.clamp(0, this.props.labels.length - 1);
+  // Important: need arrow function to get this object.
+  clampIndex = index =>
+    R.clamp(0, this.props.labels.length - 1)(index);
 
   /**
    * Calculating the position.
