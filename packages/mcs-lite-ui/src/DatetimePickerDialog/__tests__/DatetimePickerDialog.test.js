@@ -8,7 +8,6 @@ it('should return correct state', () => {
       datetimePickerProps={{
         defaultValue: 1463556631722,
         years: [2015, 2016, 2017, 2018],
-        utcOffset: 8,
       }}
       show
       onHide={() => {}}
@@ -30,7 +29,6 @@ it('should handle onCancel', () => {
       datetimePickerProps={{
         defaultValue: 1463556631722,
         years: [2015, 2016, 2017, 2018],
-        utcOffset: 8,
       }}
       show
       onHide={mockOnHide}
@@ -54,7 +52,6 @@ it('should handle onSubmit', () => {
       datetimePickerProps={{
         defaultValue: 1463556631722,
         years: [2015, 2016, 2017, 2018],
-        utcOffset: 8,
       }}
       show
       onHide={mockOnHide}
