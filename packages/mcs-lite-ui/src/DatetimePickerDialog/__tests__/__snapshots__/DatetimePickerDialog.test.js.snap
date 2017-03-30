@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should redner styled-components <Header/> 1`] = `
+<div>
+  <DatetimePickerDialog__Header>
+    <header
+      className="DatetimePickerDialog__Header-iZpsvK iUrndt"
+    />
+  </DatetimePickerDialog__Header>
+</div>
+`;

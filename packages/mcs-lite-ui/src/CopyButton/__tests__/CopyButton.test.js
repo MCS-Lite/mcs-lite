@@ -7,6 +7,7 @@ import CopyButton from '../CopyButton';
 
 jest.mock('copy-to-clipboard');
 jest.mock('mcs-lite-icon');
+jest.unmock('react-dom');
 
 it('should handle onClick', (done) => {
   const wrapper = mount(
@@ -20,7 +21,7 @@ it('should handle onClick', (done) => {
   );
 
   // After clicking
-  wrapper.find('button').props().onClick();
+  wrapper.find('button').simulate('click');
 
   expect(wrapper.find(CopyButton).contains(<IconLoading />)).toBe(true);
 

@@ -7,14 +7,18 @@ import DatetimePicker from '../DatetimePicker';
 jest.unmock('react-hammerjs');
 jest.mock('react-hammerjs', () => () => <div />);
 
-it('should handle reducer correctly', () => {
+it('should handle onChange', () => {
+  const mockOnChange = jest.fn();
   const wrapper = mount(
     <ThemeProvider theme={theme}>
       <DatetimePicker
-        defaultValue={1455780631722}
+        defaultValue={1455780631722} // Thu Feb 18 2016 15:30:31 GMT+0800 (CST)
+        onChange={mockOnChange}
       />
     </ThemeProvider>,
   );
 
-  expect(wrapper.find(DatetimePicker)).toMatchSnapshot();
+  wrapper.find(DatetimePicker).getNode().onChange(1, { name: 'YEAR' });
+  expect(mockOnChange)
+    .toHaveBeenCalledWith(1487403031722); // Sat Feb 18 2017 15:30:31 GMT+0800 (CST)
 });
