@@ -22,7 +22,7 @@
     "build": "NODE_ENV=production babel src --out-dir lib --ignore example.js,test.js",
     "createEntryFile": "exports-all 'lib/[A-Z]*' 'lib/index.js'",
     "postbuild": "npm run createEntryFile",
-    "test": "NODE_ENV='test' jest --coverage --runInBand",
+    "test": "NODE_ENV='test' TEST_TZ='true' TZ='UTC+08:00' jest --coverage --runInBand",
     "test:watch": "npm run test -- --watch",
     "flow": "echo 'todo'",
     "lint": "npm run flow"
@@ -71,9 +71,9 @@
   },
   "dependencies": {
     "copy-to-clipboard": "^3.0.5",
+    "date-fns": "^1.28.2",
     "dom-align": "^1.5.3",
     "left-pad": "^1.1.3",
-    "moment": "^2.18.1",
     "ramda": "^0.23.0",
     "react-hammerjs": "^0.5.0",
     "react-motion-ui-pack": "^0.10.2",

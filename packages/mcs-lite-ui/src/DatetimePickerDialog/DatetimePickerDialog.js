@@ -34,7 +34,6 @@ class DatetimePickerDialog extends React.Component {
     datetimePickerProps: PropTypes.shape({
       defaultValue: PropTypes.number.isRequired, // Unix Timestamp (milliseconds)
       years: PropTypes.array,
-      utcOffset: PropTypes.number, // Remind: lock utc for testing (default is local time)
     }),
     show: PropTypes.bool,
     onHide: PropTypes.func.isRequired,

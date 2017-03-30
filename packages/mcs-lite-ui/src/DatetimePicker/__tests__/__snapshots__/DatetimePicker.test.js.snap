@@ -1,0 +1,295 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should handle reducer correctly 1`] = `
+<DatetimePicker
+  defaultValue={1455780631722}
+  onChange={[Function]}
+  years={
+    Array [
+      2016,
+      2017,
+    ]
+  }
+>
+  <PickerContainer
+    defaultValue={1455780631722}
+    onChange={[Function]}
+    years={
+      Array [
+        2016,
+        2017,
+      ]
+    }
+  >
+    <PickerContainer__Container
+      defaultValue={1455780631722}
+      onChange={[Function]}
+      years={
+        Array [
+          2016,
+          2017,
+        ]
+      }
+    >
+      <div
+        className="PickerContainer__Container-bycPjJ fSlrkj"
+        defaultValue={1455780631722}
+        onChange={[Function]}
+      >
+        <Picker
+          labels={
+            Array [
+              2016,
+              2017,
+            ]
+          }
+          name="YEAR"
+          onChange={[Function]}
+          value={0}
+        >
+          <Component
+            direction="DIRECTION_VERTICAL"
+            onPan={[Function]}
+            onPanEnd={[Function]}
+            onPanStart={[Function]}
+            options={
+              Object {
+                "touchAction": "pan-x",
+              }
+            }
+          >
+            <div />
+          </Component>
+        </Picker>
+        <Picker
+          labels={
+            Array [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+            ]
+          }
+          name="MONTH"
+          onChange={[Function]}
+          value={1}
+        >
+          <Component
+            direction="DIRECTION_VERTICAL"
+            onPan={[Function]}
+            onPanEnd={[Function]}
+            onPanStart={[Function]}
+            options={
+              Object {
+                "touchAction": "pan-x",
+              }
+            }
+          >
+            <div />
+          </Component>
+        </Picker>
+        <Picker
+          labels={
+            Array [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+            ]
+          }
+          name="DATE"
+          onChange={[Function]}
+          value={16}
+        >
+          <Component
+            direction="DIRECTION_VERTICAL"
+            onPan={[Function]}
+            onPanEnd={[Function]}
+            onPanStart={[Function]}
+            options={
+              Object {
+                "touchAction": "pan-x",
+              }
+            }
+          >
+            <div />
+          </Component>
+        </Picker>
+        <Picker
+          labels={
+            Array [
+              "00",
+              "01",
+              "02",
+              "03",
+              "04",
+              "05",
+              "06",
+              "07",
+              "08",
+              "09",
+              "10",
+              "11",
+              "12",
+              "13",
+              "14",
+              "15",
+              "16",
+              "17",
+              "18",
+              "19",
+              "20",
+              "21",
+              "22",
+              "23",
+            ]
+          }
+          name="HOUR"
+          onChange={[Function]}
+          value={23}
+        >
+          <Component
+            direction="DIRECTION_VERTICAL"
+            onPan={[Function]}
+            onPanEnd={[Function]}
+            onPanStart={[Function]}
+            options={
+              Object {
+                "touchAction": "pan-x",
+              }
+            }
+          >
+            <div />
+          </Component>
+        </Picker>
+        <Picker
+          labels={
+            Array [
+              "00",
+              "01",
+              "02",
+              "03",
+              "04",
+              "05",
+              "06",
+              "07",
+              "08",
+              "09",
+              "10",
+              "11",
+              "12",
+              "13",
+              "14",
+              "15",
+              "16",
+              "17",
+              "18",
+              "19",
+              "20",
+              "21",
+              "22",
+              "23",
+              "24",
+              "25",
+              "26",
+              "27",
+              "28",
+              "29",
+              "30",
+              "31",
+              "32",
+              "33",
+              "34",
+              "35",
+              "36",
+              "37",
+              "38",
+              "39",
+              "40",
+              "41",
+              "42",
+              "43",
+              "44",
+              "45",
+              "46",
+              "47",
+              "48",
+              "49",
+              "50",
+              "51",
+              "52",
+              "53",
+              "54",
+              "55",
+              "56",
+              "57",
+              "58",
+              "59",
+            ]
+          }
+          name="MINUTE"
+          onChange={[Function]}
+          value={30}
+        >
+          <Component
+            direction="DIRECTION_VERTICAL"
+            onPan={[Function]}
+            onPanEnd={[Function]}
+            onPanStart={[Function]}
+            options={
+              Object {
+                "touchAction": "pan-x",
+              }
+            }
+          >
+            <div />
+          </Component>
+        </Picker>
+        <PickerContainer__Indicator>
+          <div
+            className="PickerContainer__Indicator-ccckoW gyFnAm"
+          />
+        </PickerContainer__Indicator>
+        <PickerContainer__Overlay>
+          <div
+            className="PickerContainer__Overlay-bFXsUq dIwqvm"
+          />
+        </PickerContainer__Overlay>
+      </div>
+    </PickerContainer__Container>
+  </PickerContainer>
+</DatetimePicker>
+`;

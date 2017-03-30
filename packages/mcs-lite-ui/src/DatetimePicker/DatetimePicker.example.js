@@ -14,7 +14,6 @@ storiesOf('DatetimePicker', module)
       <DatetimePicker
         defaultValue={1455780631722}
         onChange={action('DatetimePicker onChange(value: number) Unix Timestamp (milliseconds)')}
-        utcOffset={8}
       />,
     { inline: true },
   );
