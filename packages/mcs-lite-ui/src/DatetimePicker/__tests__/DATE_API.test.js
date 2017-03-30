@@ -2,6 +2,12 @@ import D from '../DATE_API';
 
 const fixedDate = new Date(1490855461424);
 
+it('should setup TZ="UTC+08:00"', () => {
+  expect(
+    fixedDate.getTimezoneOffset() / 60,
+  ).toBe(8);
+});
+
 it('should return correct value of D.from', () => {
   expect(
     D.from(1490855461424).toISOString(),
