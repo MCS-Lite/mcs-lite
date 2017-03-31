@@ -1,5 +1,18 @@
 # MCS Lite changelogs
 
+## Released (2017-03-31)
+
+#### :bug: Bug Fix
+* `mcs-lite-mobile-web`
+  * [#273](https://github.com/evenchange4/mcs-lite/pull/273) test(Mobile/localtime): setup TZ=‘UTC’. ([@evenchange4](https://github.com/evenchange4))
+* `mcs-lite-ui`
+  * [#272](https://github.com/evenchange4/mcs-lite/pull/272) test(timezone): add unit test for timezone setup. ([@evenchange4](https://github.com/evenchange4))
+
+#### Committers: 1
+- Michael Hsu ([evenchange4](https://github.com/evenchange4))
+
+----
+
 ## Released (2017-03-30)
 
 ### Bump Versions
