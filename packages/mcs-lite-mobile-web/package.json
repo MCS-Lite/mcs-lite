@@ -68,7 +68,7 @@
     "redux-freeze": "^0.1.5",
     "redux-mock-store": "^1.2.2",
     "rxjs": "^5.2.0",
-    "styled-components": "^2.0.0-10",
+    "styled-components": "2.0.0-10",
     "uuid": "^3.0.1"
   }
 }
