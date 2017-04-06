@@ -67,7 +67,7 @@
     "react-dom": "^15.4.2",
     "react-test-renderer": "^15.4.2",
     "storyshots": "^3.2.2",
-    "styled-components": "^2.0.0-10"
+    "styled-components": "2.0.0-10"
   },
   "dependencies": {
     "copy-to-clipboard": "^3.0.5",
@@ -88,6 +88,6 @@
   "peerDependencies": {
     "mcs-lite-icon": "^0.2.2",
     "mcs-lite-theme": "^0.2.3",
-    "styled-components": "^2.0.0-10"
+    "styled-components": "2.0.0-10"
   }
 }
