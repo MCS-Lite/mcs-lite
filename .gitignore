@@ -22,3 +22,6 @@ build/
 
 # GitBook
 _book/
+
+# lerna yarn
+packages/*/yarn.lock

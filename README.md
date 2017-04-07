@@ -17,6 +17,7 @@
 
 -   node >= 7.5.0
 -   npm >= 4.1.2
+-   yarn >= 0.21.3
 
 ## Packages
 
@@ -98,11 +99,11 @@ $ npm i mcs-lite-ui mcs-lite-icon mcs-lite-theme --save
 ## Development
 
 ```
-$ npm install # Install all external dependencies of each package.
+$ yarn # Install all external dependencies of each package.
 ```
 
 ```
-$ npm run clean # Remove all node_modules
+$ yarn run clean # Remove all node_modules
 ```
 
 ## Building all mono-packages
