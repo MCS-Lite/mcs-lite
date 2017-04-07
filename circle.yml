@@ -15,7 +15,7 @@ dependencies:
     - ~/.yarn
     - ~/.cache/yarn
   override:
-    - yarn install --no-progress
+    - yarn install --no-progress --pure-lockfile
 
 test:
   override:
