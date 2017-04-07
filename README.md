@@ -17,7 +17,7 @@
 
 -   node >= 7.5.0
 -   npm >= 4.1.2
--   yarn >= 0.21.3
+-   yarn >= 0.22.0
 
 ## Packages
 
