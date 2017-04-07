@@ -5,8 +5,6 @@
     "clean": "rm -rf node_modules && rm -rf ./packages/*/node_modules && rm -rf ./packages/*/.DS_Store && rm -rf ./packages/*/*.log",
     "stylelint": "stylelint './**/*.js' --ignore-path .linterignore",
     "eslint": "eslint ./ --ignore-path .linterignore",
-    "ncu": "ncu && lerna exec --concurrency 1 -- ncu",
-    "ncu-update": "ncu -au && lerna exec --concurrency 1 -- ncu -au",
     "release": "lerna publish",
     "prerelease": "./tasks/build.sh",
     "danger": "danger run --verbose"
@@ -15,13 +13,12 @@
     "babel-eslint": "^7.2.1",
     "codecov": "^2.1.0",
     "danger": "^0.14.1",
-    "eslint": "^3.18.0",
+    "eslint": "^3.19.0",
     "eslint-config-airbnb": "^14.1.0",
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jsx-a11y": "^4.0.0",
     "eslint-plugin-react": "^6.10.3",
     "lerna": "2.0.0-rc.0",
-    "npm-check-updates": "^2.10.4",
     "stylelint": "^7.9.0"
   },
   "stylelint": {

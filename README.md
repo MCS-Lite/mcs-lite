@@ -162,8 +162,9 @@ Replace `__SOCKET_PORT_FROM_SERVER__` in the `build/index.html` file. (Default t
 ### npm-check-updates
 
 ```
-$ npm run ncu # check for all packages
-$ npm run ncu-update # update packages.json
+$ npm install -g npm-check-updates
+$ ncu && lerna exec --concurrency 1 -- ncu # check for all packages
+$ ncu -au && lerna exec --concurrency 1 -- ncu -au # update packages.json
 ```
 
 ### license-checker
