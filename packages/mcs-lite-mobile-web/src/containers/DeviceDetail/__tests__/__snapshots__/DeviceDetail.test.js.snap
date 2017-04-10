@@ -94,12 +94,12 @@ exports[`test should renders <DeviceDetail> correctly when Menu show 1`] = `
                 }
           }>
           <Menu>
-              <Styled(Link)
+              <StyledLink
                   to={[Function]}>
                   <MenuItem>
                       deviceIntro
                   </MenuItem>
-              </Styled(Link)>
+              </StyledLink>
           </Menu>
       </Overlay>,
       ]

@@ -23,7 +23,7 @@ exports[`test should renders <DeviceTrigger> correctly 1`] = `
       isLoading={false}
       onPull={[Function]}>
       <PreventDrag>
-        <Styled(Link)
+        <StyledLink
           to={[Function]}>
           <Styled(MobileContentWrapper)>
             <div>
@@ -39,8 +39,8 @@ exports[`test should renders <DeviceTrigger> correctly 1`] = `
                 size="1em" />
             </styled.div>
           </Styled(MobileContentWrapper)>
-        </Styled(Link)>
-        <Styled(Link)
+        </StyledLink>
+        <StyledLink
           to={[Function]}>
           <Styled(MobileContentWrapper)>
             <div>
@@ -56,7 +56,7 @@ exports[`test should renders <DeviceTrigger> correctly 1`] = `
                 size="1em" />
             </styled.div>
           </Styled(MobileContentWrapper)>
-        </Styled(Link)>
+        </StyledLink>
       </PreventDrag>
     </PullToRefresh>
   </main>

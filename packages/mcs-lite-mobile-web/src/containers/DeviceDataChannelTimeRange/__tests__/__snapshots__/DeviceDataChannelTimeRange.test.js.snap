@@ -55,7 +55,7 @@ exports[`test should renders <DeviceDataChannelTimeRange> correctly 1`] = `
   </main>
   <MobileFixedFooter>
     <styled.div>
-      <Styled(Link)
+      <StyledLink
         to={[Function]}>
         <Button
           active={false}
@@ -67,8 +67,8 @@ exports[`test should renders <DeviceDataChannelTimeRange> correctly 1`] = `
           square={false}>
           cancel
         </Button>
-      </Styled(Link)>
-      <Styled(Link)
+      </StyledLink>
+      <StyledLink
         to={[Function]}>
         <Button
           active={false}
@@ -81,7 +81,7 @@ exports[`test should renders <DeviceDataChannelTimeRange> correctly 1`] = `
           square={false}>
           save
         </Button>
-      </Styled(Link)>
+      </StyledLink>
     </styled.div>
   </MobileFixedFooter>
 </div>

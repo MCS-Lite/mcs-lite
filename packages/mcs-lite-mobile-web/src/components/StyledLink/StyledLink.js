@@ -8,4 +8,6 @@ const StyledLink = styled(Link)`
   color: currentColor;
 `;
 
+StyledLink.displayName = 'StyledLink';
+
 export default StyledLink;
