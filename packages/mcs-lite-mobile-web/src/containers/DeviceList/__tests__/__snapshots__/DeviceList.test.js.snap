@@ -156,12 +156,12 @@ exports[`test should renders <DeviceList> correctly with one device 1`] = `
             onEnter={[Function]}
             onLeave={[Function]}
             runOnMount={true}>
-            <Styled(Link)
+            <StyledLink
               to={[Function]}>
               <MobileDeviceCard
                 image="/images/deviceImageURL"
                 title="deviceName" />
-            </Styled(Link)>
+            </StyledLink>
           </Transition>
         </PreventDrag>
       </Styled(MobileContentWrapper)>

@@ -41,7 +41,7 @@
     "eslint-plugin-jsx-a11y": "^4.0.0",
     "eslint-plugin-react": "^6.10.3",
     "history": "^3.2.1",
-    "jest": "^19.0.2",
+    "jest": "^18.1.0",
     "mcs-lite-connect": "^0.2.2",
     "mcs-lite-icon": "^0.2.2",
     "mcs-lite-theme": "^0.2.3",

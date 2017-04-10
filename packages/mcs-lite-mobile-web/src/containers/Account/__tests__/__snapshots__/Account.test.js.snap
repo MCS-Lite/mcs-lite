@@ -25,20 +25,20 @@ exports[`test should renders <Account> correctly 1`] = `
         0.0.0
       </Small>
     </Styled(P)>
-    <Styled(Link)
+    <StyledLink
       to={[Function]}>
       <Styled(Button)
         block={true}>
         myTestDevices
       </Styled(Button)>
-    </Styled(Link)>
-    <Styled(Link)
+    </StyledLink>
+    <StyledLink
       to={[Function]}>
       <Styled(Button)
         block={true}>
         changePassword
       </Styled(Button)>
-    </Styled(Link)>
+    </StyledLink>
     <Styled(Button)
       block={true}
       onClick={[Function]}>
