@@ -43,7 +43,9 @@ it('should handle onClick', (done) => {
 
 it('should return correct status marble diagram with one click', () => {
   const scheduler = new Rx.TestScheduler(jestRxAssert);
-  const click$ = scheduler.createHotObservable('---x');
+  const sourceMarble = '---x';
+  const resultMarble = '1--2--3-4';
+  const click$ = scheduler.createHotObservable(sourceMarble);
   const source = getStatusStream(click$, 30, 50, scheduler);
   const values = {
     1: 'default',
@@ -51,13 +53,15 @@ it('should return correct status marble diagram with one click', () => {
     3: 'success',
     4: 'default',
   };
-  scheduler.expectObservable(source).toBe('1--2--3-4', values);
+  scheduler.expectObservable(source).toBe(resultMarble, values);
   scheduler.flush();
 });
 
 it('should return correct status marble diagram with three clicks', () => {
   const scheduler = new Rx.TestScheduler(jestRxAssert);
-  const click$ = scheduler.createHotObservable('---xyz');
+  const sourceMarble = '---xyz';
+  const resultMarble = '1--222--3-4';
+  const click$ = scheduler.createHotObservable(sourceMarble);
   const source = getStatusStream(click$, 30, 50, scheduler);
   const values = {
     1: 'default',
@@ -65,6 +69,38 @@ it('should return correct status marble diagram with three clicks', () => {
     3: 'success',
     4: 'default',
   };
-  scheduler.expectObservable(source).toBe('1--222--3-4', values);
+  scheduler.expectObservable(source).toBe(resultMarble, values);
+  scheduler.flush();
+});
+
+it('should return correct status marble diagram with intervals', () => {
+  const scheduler = new Rx.TestScheduler(jestRxAssert);
+  const sourceMarble = '---x--y';
+  const resultMarble = '1--2--2--3-4';
+  const click$ = scheduler.createHotObservable(sourceMarble);
+  const source = getStatusStream(click$, 30, 50, scheduler);
+  const values = {
+    1: 'default',
+    2: 'loading',
+    3: 'success',
+    4: 'default',
+  };
+  scheduler.expectObservable(source).toBe(resultMarble, values);
+  scheduler.flush();
+});
+
+it('should return correct status marble diagram with intervals2', () => {
+  const scheduler = new Rx.TestScheduler(jestRxAssert);
+  const sourceMarble = '---x---y';
+  const resultMarble = '1--2--32--3-4';
+  const click$ = scheduler.createHotObservable(sourceMarble);
+  const source = getStatusStream(click$, 30, 50, scheduler);
+  const values = {
+    1: 'default',
+    2: 'loading',
+    3: 'success',
+    4: 'default',
+  };
+  scheduler.expectObservable(source).toBe(resultMarble, values);
   scheduler.flush();
 });
