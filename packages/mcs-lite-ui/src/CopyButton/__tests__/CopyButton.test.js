@@ -36,22 +36,35 @@ it('should handle onClick', (done) => {
   expect(wrapper.find(CopyButton).contains(<IconLoading />)).toBe(true);
 
   setTimeout(() => {
-    console.log('timeout', wrapper.find(CopyButton).contains(<IconDone />))
     expect(wrapper.find(CopyButton).contains(<IconDone />)).toBe(true);
     done();
   }, 600);
 });
-//
-// it('should return correct marble diagram with getStatusStream', () => {
-//   const scheduler = new Rx.TestScheduler(jestRxAssert);
-//   const click$ = scheduler.createHotObservable('---x');
-//   const source = getStatusStream(click$, 30, 50, scheduler);
-//   const values = {
-//     1: 'default',
-//     2: 'loading',
-//     3: 'success',
-//     4: 'default',
-//   };
-//   scheduler.expectObservable(source).toBe('1--2--3-4', values);
-//   scheduler.flush();
-// });
+
+it('should return correct status marble diagram with one click', () => {
+  const scheduler = new Rx.TestScheduler(jestRxAssert);
+  const click$ = scheduler.createHotObservable('---x');
+  const source = getStatusStream(click$, 30, 50, scheduler);
+  const values = {
+    1: 'default',
+    2: 'loading',
+    3: 'success',
+    4: 'default',
+  };
+  scheduler.expectObservable(source).toBe('1--2--3-4', values);
+  scheduler.flush();
+});
+
+it('should return correct status marble diagram with three clicks', () => {
+  const scheduler = new Rx.TestScheduler(jestRxAssert);
+  const click$ = scheduler.createHotObservable('---xyz');
+  const source = getStatusStream(click$, 30, 50, scheduler);
+  const values = {
+    1: 'default',
+    2: 'loading',
+    3: 'success',
+    4: 'default',
+  };
+  scheduler.expectObservable(source).toBe('1--222--3-4', values);
+  scheduler.flush();
+});

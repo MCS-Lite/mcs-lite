@@ -6,7 +6,7 @@ import copyToClipboard from 'copy-to-clipboard';
 import MorphReplace from 'react-svg-morph/lib/MorphReplace';
 import { IconLoading, IconDone } from 'mcs-lite-icon';
 import { Observable } from 'rxjs/Observable';
-import async from 'rxjs/scheduler/async';
+import { async } from 'rxjs/scheduler/async';
 import 'rxjs/add/operator/combineLatest';
 import 'rxjs/add/operator/withLatestFrom';
 import 'rxjs/add/operator/do';
@@ -42,12 +42,13 @@ export const StyledButton = styled(Button)`
 `;
 
 export const getStatusStream = (source$, t1 = 500, t2 = 1800, scheduler = async) =>
-  source$.switchMapTo(Observable.merge(
-    Observable.of(LOADING),
-    Observable.of(SUCCESS).delay(t1, scheduler),
-    Observable.of(DEFAULT).delay(t2, scheduler),
-  ))
-  .startWith(DEFAULT);
+  source$
+    .switchMapTo(Observable.merge(
+      Observable.of(LOADING),
+      Observable.of(SUCCESS).delay(t1, scheduler),
+      Observable.of(DEFAULT).delay(t2, scheduler),
+    ))
+    .startWith(DEFAULT);
 
 const omitProps = R.omit(['text']);
 
@@ -60,10 +61,10 @@ const CopyButton = componentFromStream((propStream) => {
   const status$ = getStatusStream(onClick$);
 
   // Remind: copyToClipboard Side-effects
-  // onClick$
-  //   .withLatestFrom(text$, (status, text) => text)
-  //   .do(copyToClipboard)
-  //   .subscribe();
+  onClick$
+    .withLatestFrom(text$, (status, text) => text)
+    .do(copyToClipboard)
+    .subscribe();
 
   return props$.combineLatest(status$, ({ children, ...otherProps }, status) =>
     <StyledButton
