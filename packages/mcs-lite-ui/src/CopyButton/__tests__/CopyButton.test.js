@@ -59,8 +59,8 @@ it('should return correct status marble diagram with one click', () => {
 
 it('should return correct status marble diagram with three clicks', () => {
   const scheduler = new Rx.TestScheduler(jestRxAssert);
-  const sourceMarble = '---xyz';
-  const resultMarble = '1--222--3-4';
+  const sourceMarble = '---xyz-----|';
+  const resultMarble = '1--222--3-4|';
   const click$ = scheduler.createHotObservable(sourceMarble);
   const source = getStatusStream(click$, 30, 50, scheduler);
   const values = {
@@ -91,8 +91,8 @@ it('should return correct status marble diagram with intervals', () => {
 
 it('should return correct status marble diagram with intervals2', () => {
   const scheduler = new Rx.TestScheduler(jestRxAssert);
-  const sourceMarble = '---x---y';
-  const resultMarble = '1--2--32--3-4';
+  const sourceMarble = '---x---y-----|';
+  const resultMarble = '1--2--32--3-4|';
   const click$ = scheduler.createHotObservable(sourceMarble);
   const source = getStatusStream(click$, 30, 50, scheduler);
   const values = {
