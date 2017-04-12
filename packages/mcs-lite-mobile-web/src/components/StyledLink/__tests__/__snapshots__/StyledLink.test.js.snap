@@ -1,5 +1,5 @@
 exports[`test should renders <StyledLink> correctly 1`] = `
-<Component
+<Link
   className="sc-bdVaJa fdERht"
   onlyActiveOnIndex={false}
   style={Object {}} />
