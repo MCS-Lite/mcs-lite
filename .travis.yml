@@ -1,0 +1,16 @@
+sudo: false
+language: node_js
+node_js:
+  - "7.5.0"
+
+script:
+  - node --version
+  - npm --version
+  - ./tasks/test.sh
+
+notifications:
+  email: evenchange4@gmail.com
+
+cache:
+  directories:
+    - node_modules
