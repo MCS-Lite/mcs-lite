@@ -1,3 +1,4 @@
+// @flow
 import PropTypes from 'prop-types';
 import React from 'react';
 import Helmet from 'react-helmet';
@@ -17,6 +18,16 @@ import dataChannelTypeMapper from '../../utils/dataChannelTypeMapper';
 import localTimeFormat from '../../utils/localTimeFormat';
 import resolveImage from '../../utils/resolveImage';
 import BANNER_IMAGE from '../../statics/images/banner.svg';
+
+type DCEvent = {
+  id: string,
+  values: {
+    value?: string | number,
+    period?: number,
+  },
+  type: 'SUBMIT' | 'CHANGE' | 'CLEAR',
+};
+type DCEventHandler = DCEvent => void
 
 class DeviceDetail extends React.Component {
   static propTypes = {
@@ -43,9 +54,9 @@ class DeviceDetail extends React.Component {
   componentWillMount = () => this.props.fetchDeviceDetail(this.props.deviceId);
   onMoreDetailClick = () => this.setState({ isMenuShow: !this.state.isMenuShow });
   onHide = () => this.setState({ isMenuShow: false });
-  getTarget = node => this.setState({ target: node });
+  getTarget = (node: any) => this.setState({ target: node });
   reFetch = () => this.props.fetchDeviceDetail(this.props.deviceId, true);
-  eventHandler = (e) => {
+  eventHandler: DCEventHandler = (e) => {
     const { id, values, type } = e;
     const { deviceId, sendMessage, setDatapoint } = this.props;
     // TODO: refactor these codes.

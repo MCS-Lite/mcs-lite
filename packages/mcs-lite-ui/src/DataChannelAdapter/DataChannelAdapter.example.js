@@ -31,12 +31,12 @@ storiesOf('DataChannelAdapter', module)
         type: 'SUBMIT'|'CHANGE'|'CLEAR', // event type
         id: string,                      // data channel id
         values: {                        // datapoint values
-          value: string|number,
-          period?: number,
+          value: ?string|number,
+          period: ?number,
         },
       }
 
-      function eventHandler(event: Event): void {}
+      type DCEventHandler = DCEvent => void
       ~~~
     `,
     () =>
