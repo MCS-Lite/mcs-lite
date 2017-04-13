@@ -1,4 +1,5 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import { Toast as MLToast } from 'mcs-lite-ui';
 import Transition from 'react-motion-ui-pack';

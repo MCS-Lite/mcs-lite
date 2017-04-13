@@ -1,7 +1,8 @@
 /* global document */
 /* eslint react/no-find-dom-node: 0 */
 
-import React, { PropTypes } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import { findDOMNode } from 'react-dom';
 import domAlign from 'dom-align';
 import isString from '../utils/isString';

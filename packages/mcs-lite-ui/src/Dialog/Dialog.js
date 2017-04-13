@@ -1,4 +1,5 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Portal from 'react-overlays/lib/Portal';
 import Transition from 'react-motion-ui-pack';

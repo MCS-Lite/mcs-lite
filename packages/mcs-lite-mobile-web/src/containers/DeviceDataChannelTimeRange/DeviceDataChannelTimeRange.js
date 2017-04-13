@@ -1,4 +1,5 @@
-import React, { PropTypes } from 'react';
+import PropTypes from 'prop-types';
+import React from 'react';
 import Helmet from 'react-helmet';
 import { Link } from 'react-router';
 import IconArrowLeft from 'mcs-lite-icon/lib/IconArrowLeft';

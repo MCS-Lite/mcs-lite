@@ -1,4 +1,5 @@
-import React, { PropTypes } from 'react';
+import PropTypes from 'prop-types';
+import React from 'react';
 import { Button, Input } from 'mcs-lite-ui';
 import Helmet from 'react-helmet';
 import Logo from '../../components/Logo';
