@@ -21,7 +21,7 @@
   },
   "license": "ISC",
   "devDependencies": {
-    "babel-cli": "^6.24.0",
+    "babel-cli": "^6.24.1",
     "babel-preset-mcs-lite": "^0.2.0"
   },
   "dependencies": {

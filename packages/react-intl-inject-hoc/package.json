@@ -28,7 +28,7 @@
     "recompose": "^0.22.0"
   },
   "dependencies": {
-    "babel-cli": "^6.24.0",
+    "babel-cli": "^6.24.1",
     "babel-preset-mcs-lite": "^0.2.0",
     "mcs-lite-scripts": "^0.2.2"
   },

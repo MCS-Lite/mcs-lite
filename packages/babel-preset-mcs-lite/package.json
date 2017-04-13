@@ -24,10 +24,10 @@
     "babel-plugin-recharts": "^1.1.0",
     "babel-plugin-styled-components": "1.1.4",
     "babel-preset-react-app": "^2.2.0",
-    "babel-preset-stage-0": "^6.22.0"
+    "babel-preset-stage-0": "^6.24.1"
   },
   "devDependencies": {
-    "babel-core": "^6.24.0",
+    "babel-core": "^6.24.1",
     "jest": "^19.0.2"
   }
 }

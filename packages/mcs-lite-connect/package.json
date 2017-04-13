@@ -23,12 +23,12 @@
   },
   "license": "ISC",
   "devDependencies": {
-    "babel-cli": "^6.24.0",
+    "babel-cli": "^6.24.1",
     "babel-preset-mcs-lite": "^0.2.0",
     "mcs-lite-scripts": "^0.2.2"
   },
   "dependencies": {
-    "recompose": "^0.22.0",
+    "recompose": "^0.23.1",
     "websocket": "^1.0.24"
   },
   "babel": {
