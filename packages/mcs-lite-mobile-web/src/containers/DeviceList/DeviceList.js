@@ -1,5 +1,6 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
 import { findDOMNode } from 'react-dom';
+import PropTypes from 'prop-types';
 import R from 'ramda';
 import Helmet from 'react-helmet';
 import Transition from 'react-motion-ui-pack';

@@ -18,7 +18,8 @@ const parseSVG = (xml) => {
 };
 
 const template = (componentName, { children, viewBox }) => `
-import React, { PropTypes } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 
 class ${componentName} extends React.Component {
   render() {
