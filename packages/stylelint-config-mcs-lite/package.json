@@ -1,6 +1,6 @@
 {
   "name": "stylelint-config-mcs-lite",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Stylelint config used by MCS Lite",
   "repository": "evenchange4/mcs-lite",
   "author": "Michael Hsu <evenchange4@gmail.com>",
@@ -18,8 +18,8 @@
     "test": "test -e index.js"
   },
   "dependencies": {
-    "stylelint-processor-styled-components": "0.0.4",
-    "stylelint-config-suitcss": "^11.0.0"
+    "stylelint-config-suitcss": "^11.0.0",
+    "stylelint-processor-styled-components": "0.0.4"
   },
   "peerDependencies": {
     "stylelint": "^7.7.1"
