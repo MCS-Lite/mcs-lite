@@ -1,5 +1,8 @@
+// @flow
 import R from 'ramda';
 
-const isString = R.is(Number);
+type Fun = (any) => boolean
 
-export default isString;
+const isNumber: Fun = R.is(Number);
+
+export default isNumber;

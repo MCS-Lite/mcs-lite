@@ -5,6 +5,7 @@
     "clean": "rm -rf node_modules && rm -rf ./packages/*/node_modules && rm -rf ./packages/*/.DS_Store && rm -rf ./packages/*/*.log",
     "stylelint": "stylelint './**/*.js' --ignore-path .linterignore",
     "eslint": "eslint ./ --ignore-path .linterignore",
+    "flow": "flow check",
     "release": "lerna publish",
     "prerelease": "./tasks/build.sh",
     "danger": "danger run --verbose"
@@ -18,6 +19,7 @@
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jsx-a11y": "^4.0.0",
     "eslint-plugin-react": "^6.10.3",
+    "flow-bin": "^0.43.1",
     "lerna": "2.0.0-rc.1",
     "stylelint": "^7.10.1"
   },

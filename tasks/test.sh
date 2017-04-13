@@ -6,6 +6,7 @@ set -e
 echo '💪  Start global linting';
 npm run eslint
 npm run stylelint
+npm run flow
 
 ## Interface for each project
 echo '💪  Start testing for each packages';

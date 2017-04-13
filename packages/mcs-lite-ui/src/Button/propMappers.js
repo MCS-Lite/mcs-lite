@@ -1,3 +1,4 @@
+// @flow
 import R from 'ramda';
 import { darken2 } from 'mcs-lite-theme';
 

@@ -1,3 +1,4 @@
+// @flow
 import isString from '../isString';
 
 describe('isString', () => {

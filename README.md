@@ -138,23 +138,30 @@ Replace `__SOCKET_PORT_FROM_SERVER__` in the `build/index.html` file. (Default t
 
 ## NPM Scipts Interface
 
-| **Package**                 | clean | test | start | build | lint          | release   |
-|-----------------------------|-------|------|-------|-------|---------------|-----------|
-| root                        | V     |      |       |       | V (es, style) | V (lerna) |
-| `babel-preset-mcs-lite`     |       | V    |       |       |               |           |
-| `eslint-config-mcs-lite`    |       | V    |       |       |               |           |
-| `mcs-lite-connect`          | V     |      |       | V     |               |           |
-| `mcs-lite-demo-nextjs`      |       |      | V     |       |               |           |
-| `mcs-lite-design`           | V     |      |       | V     |               |           |
-| `mcs-lite-icon`             | V     |      |       | V     |               |           |
-| `mcs-lite-introduction`     | V     |      | V     | V     |               |           |
-| `mcs-lite-mobile-web`       | V     | V    | V     | V     |               |           |
-| `mcs-lite-scripts`          | V     |      |       | V     |               |           |
-| `mcs-lite-theme`            | V     |      |       | V     |               |           |
-| `mcs-lite-ui`               | V     | V    | V     | V     | V (flow?)     |           |
-| `react-intl-cra`            |       |      |       |       |               |           |
-| `react-intl-inject-hoc`     | V     |      |       | V     |               |           |
-| `stylelint-config-mcs-lite` |       | V    |       |       |               |           |
+Root
+
+- **npm run clean**: remove all node_modules
+- **npm run lint**: eslint, styledlint and flow
+- **npm run release**: publish
+
+Packages
+
+| **Package**                 | clean | test | start | build |
+|-----------------------------|-------|------|-------|-------|
+| `babel-preset-mcs-lite`     |       | V    |       |       |
+| `eslint-config-mcs-lite`    |       | V    |       |       |
+| `mcs-lite-connect`          | V     |      |       | V     |
+| `mcs-lite-demo-nextjs`      |       |      | V     |       |
+| `mcs-lite-design`           | V     |      |       | V     |
+| `mcs-lite-icon`             | V     |      |       | V     |
+| `mcs-lite-introduction`     | V     |      | V     | V     |
+| `mcs-lite-mobile-web`       | V     | V    | V     | V     |
+| `mcs-lite-scripts`          | V     |      |       | V     |
+| `mcs-lite-theme`            | V     |      |       | V     |
+| `mcs-lite-ui`               | V     | V    | V     | V     |
+| `react-intl-cra`            |       |      |       |       |
+| `react-intl-inject-hoc`     | V     |      |       | V     |
+| `stylelint-config-mcs-lite` |       | V    |       |       |
 
 ## Internal Notes
 
