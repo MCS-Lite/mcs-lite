@@ -3,7 +3,7 @@ module.exports = {
   extends: 'stylelint-config-suitcss',
   rules: {
     'color-hex-case': 'upper',
-    'order/declaration-block-properties-alphabetical-order': null,
+    'order/properties-alphabetical-order': null,
     'color-hex-length': 'long',
     'selector-list-comma-newline-after': null,
     'rule-empty-line-before': ['always-multi-line', {
