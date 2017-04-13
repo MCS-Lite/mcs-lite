@@ -140,9 +140,9 @@ Replace `__SOCKET_PORT_FROM_SERVER__` in the `build/index.html` file. (Default t
 
 Root
 
-- **npm run clean**: remove all node_modules
-- **npm run lint**: eslint, styledlint and flow
-- **npm run release**: publish
+-   **npm run clean**: remove all node_modules
+-   **npm run lint**: eslint, styledlint and flow
+-   **npm run release**: publish
 
 Packages
 
