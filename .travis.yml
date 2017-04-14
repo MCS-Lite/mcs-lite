@@ -3,13 +3,15 @@ language: node_js
 node_js:
   - "7.5.0"
 
-script:
-  - node --version
-  - npm --version
-  - ./tasks/test.sh
-
 notifications:
   email: evenchange4@gmail.com
+
+script:
+  - npm run danger
+  - ./tasks/test.sh
+
+after_success:
+  - ./node_modules/.bin/codecov --token=c0854c5b-42fa-4605-a466-3d5d1aee4f9f
 
 cache:
   directories:
