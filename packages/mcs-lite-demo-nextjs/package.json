@@ -9,7 +9,7 @@
     "test": "echo 'no'"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "mcs-lite-icon": "^0.2.3",
     "mcs-lite-theme": "^0.2.4",
