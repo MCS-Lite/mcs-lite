@@ -77,7 +77,6 @@
 | `babel-preset-mcs-lite` | Babel preset used by MCS Lite | [![npm][babel-preset-mcs-lite-npm-badge]][babel-preset-mcs-lite-npm] | [![npm downloads][babel-preset-mcs-lite-npm-downloads]][babel-preset-mcs-lite-npm]
 | `eslint-config-mcs-lite` | Eslint config used by MCS Lite | [![npm][eslint-config-mcs-lite-npm-badge]][eslint-config-mcs-lite-npm] | [![npm downloads][eslint-config-mcs-lite-npm-downloads]][eslint-config-mcs-lite-npm]
 | [`mcs-lite-connect`](./packages/mcs-lite-connect) | Connect MCS with WebSocket | [![npm][mcs-lite-connect-npm-badge]][mcs-lite-connect-npm] | [![npm downloads][mcs-lite-connect-npm-downloads]][mcs-lite-connect-npm]
-| `mcs-lite-demo-nextjs` | Demo how to use mcs-lite-ui. | | |
 | `mcs-lite-design` | The source images to be compressed used by MCS Lite | [![npm][mcs-lite-design-npm-badge]][mcs-lite-design-npm] | [![npm downloads][mcs-lite-design-npm-downloads]][mcs-lite-design-npm]
 | `mcs-lite-icon` | Convert SVG icon to React components | [![npm][mcs-lite-icon-npm-badge]][mcs-lite-icon-npm] | [![npm downloads][mcs-lite-icon-npm-downloads]][mcs-lite-icon-npm]
 | `mcs-lite-introduction` | GitBook for MCS Lite documentation | [![npm][mcs-lite-introduction-npm-badge]][mcs-lite-introduction-npm] | [![npm downloads][mcs-lite-introduction-npm-downloads]][mcs-lite-introduction-npm]
@@ -141,7 +140,7 @@ Replace `__SOCKET_PORT_FROM_SERVER__` in the `build/index.html` file. (Default t
 Root
 
 -   **npm run clean**: remove all node_modules
--   **npm run lint**: eslint, styledlint and flow
+-   **lint**: eslint, styledlint and flow
 -   **npm run release**: publish
 
 Packages
@@ -151,7 +150,6 @@ Packages
 | `babel-preset-mcs-lite`     |       | V    |       |       |
 | `eslint-config-mcs-lite`    |       | V    |       |       |
 | `mcs-lite-connect`          | V     |      |       | V     |
-| `mcs-lite-demo-nextjs`      |       |      | V     |       |
 | `mcs-lite-design`           | V     |      |       | V     |
 | `mcs-lite-icon`             | V     |      |       | V     |
 | `mcs-lite-introduction`     | V     |      | V     | V     |

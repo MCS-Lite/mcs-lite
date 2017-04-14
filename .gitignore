@@ -14,9 +14,6 @@ storybook-static/
 # jest
 coverage/
 
-# next
-.next/
-
 # CRA production
 build/
 
