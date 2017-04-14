@@ -1,3 +1,4 @@
+// @flow
 import dataChannelTypeMapper from '../dataChannelTypeMapper';
 
 it('should return dataChannelTypeMapper', () => {

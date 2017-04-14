@@ -1,3 +1,4 @@
+// @flow
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { darken1, darken2 } from 'mcs-lite-theme';

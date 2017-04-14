@@ -1,3 +1,4 @@
+// @type
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
@@ -9,15 +10,15 @@ const Wrapper = styled.div`
 `;
 
 /**
- * type Event = {
- *   type: 'SUBMIT'|'CHANGE'|'CLEAR', // event type
- *   id: string,                      // data channel id
- *   values: {                        // datapoint values
- *     value: string|number,
+ * type DCEvent = {
+ *   id: string,
+ *   values: {
+ *     value?: string | number,
  *     period?: number,
  *   },
- * }
- * function eventHandler(event: Event): void {}
+ *   type: 'SUBMIT' | 'CHANGE' | 'CLEAR',
+ * };
+ * type DCEventHandler = DCEvent => void
  */
 
 const NO_DATA_PLACEHOLDER = 'N/A';

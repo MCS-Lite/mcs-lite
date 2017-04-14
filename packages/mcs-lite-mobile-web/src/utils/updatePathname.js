@@ -1,4 +1,7 @@
+// @flow
 import assocPath from 'ramda/src/assocPath';
+
+type Func = (string) => (Object) => Object
 
 /**
  * For react-router <Link />
@@ -12,7 +15,7 @@ import assocPath from 'ramda/src/assocPath';
  * @author Michael Hsu
  */
 
-const updatePathname = pathname =>
+const updatePathname: Func = pathname =>
   assocPath(['pathname'], pathname);
 
 export default updatePathname;
