@@ -5,7 +5,7 @@
   ],
   "version": "independent",
   "changelog": {
-    "repo": "evenchange4/mcs-lite",
+    "repo": "MCS-Lite/mcs-lite",
     "labels": {
       "tag: new feature": ":rocket: New Feature",
       "tag: breaking change": ":boom: Breaking Change",
