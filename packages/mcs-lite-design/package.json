@@ -2,13 +2,13 @@
   "name": "mcs-lite-design",
   "version": "0.1.4",
   "description": "The source images to be compressed used by MCS Lite",
-  "repository": "evenchange4/mcs-lite",
+  "repository": "MCS-Lite/mcs-lite",
   "author": "Michael Hsu <evenchange4@gmail.com>",
   "bugs": {
-    "url": "https://github.com/evenchange4/mcs-lite/issues",
+    "url": "https://github.com/MCS-Lite/mcs-lite/issues",
     "email": "evenchange4@gmail.com"
   },
-  "homepage": "https://github.com/evenchange4/mcs-lite#readme",
+  "homepage": "https://github.com/MCS-Lite/mcs-lite#readme",
   "files": [
     "lib"
   ],
@@ -19,7 +19,7 @@
     "build": "npm run compress:svg",
     "test": "echo 'no'"
   },
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "svgo": "^0.7.2"
   }

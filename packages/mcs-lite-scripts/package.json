@@ -2,18 +2,18 @@
   "name": "mcs-lite-scripts",
   "version": "0.2.3",
   "description": "Shared scripts and CLI used by MCS Lite",
-  "repository": "evenchange4/mcs-lite",
+  "repository": "MCS-Lite/mcs-lite",
   "author": "Michael Hsu <evenchange4@gmail.com>",
   "bugs": {
-    "url": "https://github.com/evenchange4/mcs-lite/issues",
+    "url": "https://github.com/MCS-Lite/mcs-lite/issues",
     "email": "evenchange4@gmail.com"
   },
-  "homepage": "https://github.com/evenchange4/mcs-lite#readme",
+  "homepage": "https://github.com/MCS-Lite/mcs-lite#readme",
   "files": [
     "lib",
     "bin"
   ],
-  "license": "ISC",
+  "license": "MIT",
   "bin": {
     "exports-all": "bin/exports-all.js",
     "extract-messages": "bin/extract-messages.js",
