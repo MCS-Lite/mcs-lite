@@ -5,14 +5,9 @@ machine:
 dependencies:
   cache_directories:
     - node_modules
-
   override:
     - npm install
 
 test:
   override:
-    - npm run danger
     - ./tasks/test.sh
-
-  post:
-    - ./node_modules/.bin/codecov --token=9a81042e-f705-4092-b79d-ea3a678223cb

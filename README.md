@@ -4,7 +4,7 @@
   </a>
 </p>
 
-# MCS Lite [![TravisCI](https://travis-ci.com/evenchange4/mcs-lite.svg?token=M5W8N3UE7Z9icpshis3W&branch=master)](https://travis-ci.com/evenchange4/mcs-lite) [![CircleCI](https://circleci.com/gh/evenchange4/mcs-lite/tree/master.svg?style=svg&circle-token=c633ab2d85927871bccf4c39d676ce242f2da24c)](https://circleci.com/gh/evenchange4/mcs-lite/tree/master)  [![codecov](https://codecov.io/gh/evenchange4/mcs-lite/branch/master/graph/badge.svg?token=r9HT3Wivr0)](https://codecov.io/gh/evenchange4/mcs-lite) [![Greenkeeper badge](https://badges.greenkeeper.io/evenchange4/mcs-lite.svg?token=b8d3b0e941c72d6359c554c1ccdebaecaf2b6e099631c6c394ca760690bd9721)](https://greenkeeper.io/)
+# MCS Lite [![TravisCI](https://travis-ci.com/MCS-Lite/mcs-lite.svg?token=M5W8N3UE7Z9icpshis3W&branch=master)](https://travis-ci.com/MCS-Lite/mcs-lite) [![CircleCI](https://circleci.com/gh/MCS-Lite/mcs-lite.svg?style=svg&circle-token=c633ab2d85927871bccf4c39d676ce242f2da24c)](https://circleci.com/gh/MCS-Lite/mcs-lite) [![codecov](https://codecov.io/gh/MCS-Lite/mcs-lite/branch/master/graph/badge.svg?token=r9HT3Wivr0)](https://codecov.io/gh/MCS-Lite/mcs-lite) [![Greenkeeper badge](https://badges.greenkeeper.io/evenchange4/mcs-lite.svg?token=b8d3b0e941c72d6359c554c1ccdebaecaf2b6e099631c6c394ca760690bd9721)](https://greenkeeper.io/)
 
 > Note: MCS Lite core and Desktop website is being developed at https://github.com/iamblue/mcs-lite-app.
 
