@@ -141,6 +141,7 @@ Root
 
 -   **npm run clean**: remove all node_modules
 -   **lint**: eslint, styledlint and flow
+-   **npm run format**: prettier
 -   **npm run release**: publish
 
 Packages

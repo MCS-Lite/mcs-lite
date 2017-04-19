@@ -9,7 +9,7 @@
     "release": "lerna publish",
     "prerelease": "./tasks/build.sh",
     "danger": "danger run --verbose",
-    "format": "prettier --trailing-comma all --single-quote --write 'packages/*/*.js' 'packages/*/!(node_modules|build|lib|storybook-static|coverage|.next|_book)/**/*.js'"
+    "format": "prettier --trailing-comma all --single-quote --write '*.js' 'packages/*/*.js' 'packages/*/.storybook/*.js' 'packages/*/!(node_modules|build|lib|storybook-static|coverage|.next|_book)/**/*.js'"
   },
   "devDependencies": {
     "babel-eslint": "^7.2.2",
@@ -17,8 +17,10 @@
     "danger": "^0.16.0",
     "eslint": "^3.19.0",
     "eslint-config-airbnb": "^14.1.0",
+    "eslint-config-prettier": "^1.6.0",
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-prettier": "^2.0.1",
     "eslint-plugin-react": "^6.10.3",
     "flow-bin": "^0.43.1",
     "lerna": "2.0.0-rc.1",

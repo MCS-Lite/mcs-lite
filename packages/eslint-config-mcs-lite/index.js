@@ -1,8 +1,7 @@
 module.exports = {
   parser: 'babel-eslint',
-  extends: [
-    'airbnb',
-  ],
+  extends: ['airbnb', 'prettier', 'prettier/flowtype', 'prettier/react'],
+  plugins: ['prettier'],
   globals: {
     jest: true,
     describe: true,
@@ -24,16 +23,13 @@ module.exports = {
         ],
       },
     ],
-    'object-shorthand': [
-      2,
-      'always',
-    ],
+    'object-shorthand': [2, 'always'],
     'object-curly-spacing': [
       2,
       'always',
       {
-        objectsInObjects: false,
-        arraysInObjects: false,
+        objectsInObjects: true,
+        arraysInObjects: true,
       },
     ],
     'react/jsx-curly-spacing': [
@@ -49,19 +45,14 @@ module.exports = {
         ignoreStateless: true,
       },
     ],
-    'no-use-before-define': [
-      2,
-      'nofunc',
-    ],
+    'no-use-before-define': [2, 'nofunc'],
     'no-console': 2,
     'import/no-unresolved': 0,
     'global-require': 0,
     'react/jsx-filename-extension': [
       1,
       {
-        extensions: [
-          '.js',
-        ],
+        extensions: ['.js'],
       },
     ],
     'import/no-extraneous-dependencies': 0,
@@ -75,5 +66,14 @@ module.exports = {
     'no-confusing-arrow': 0,
     'react/forbid-prop-types': 0,
     'react/require-default-props': 0,
+
+    // Prettier
+    'prettier/prettier': [
+      'error',
+      {
+        singleQuote: true,
+        trailingComma: 'all',
+      },
+    ],
   },
 };
