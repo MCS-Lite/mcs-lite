@@ -18,9 +18,9 @@ it('should return correct index and distance', () => {
       />
     </ThemeProvider>,
   );
-  const {
-    clampIndex, calcDistanceByIndex, calcIndexByDistance,
-  } = wrapper.find(Picker).getNode();
+  const { clampIndex, calcDistanceByIndex, calcIndexByDistance } = wrapper
+    .find(Picker)
+    .getNode();
 
   expect(clampIndex(-2)).toBe(0);
   expect(clampIndex(-1)).toBe(0);
@@ -40,7 +40,7 @@ it('should return correct index and distance', () => {
 
   expect(calcIndexByDistance(-20)).toBe(0);
   expect(calcIndexByDistance(60)).toBe(0);
-  expect(calcIndexByDistance(61)).toBe(1);  // 60~100
+  expect(calcIndexByDistance(61)).toBe(1); // 60~100
   expect(calcIndexByDistance(100)).toBe(1);
   expect(calcIndexByDistance(101)).toBe(2); // 101~140
   expect(calcIndexByDistance(140)).toBe(2);

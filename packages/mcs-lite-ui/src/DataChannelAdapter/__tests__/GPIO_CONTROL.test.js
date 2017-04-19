@@ -81,8 +81,10 @@ it('should handle onChange', () => {
     target: { value: 0 },
   });
   expect(mockEventHandler).toHaveBeenCalledWith({
-    id: 'id', type: 'CHANGE', values: { value: 0 }},
-  );
+    id: 'id',
+    type: 'CHANGE',
+    values: { value: 0 },
+  });
 });
 
 it('should handle onSubmit', () => {
@@ -105,6 +107,8 @@ it('should handle onSubmit', () => {
   expect(mockEventHandler).not.toHaveBeenCalled();
   wrapper.find(DataChannel.ControlRange).props().onSubmit();
   expect(mockEventHandler).toHaveBeenCalledWith({
-    id: 'id', type: 'SUBMIT', values: { value: 1 }},
-  );
+    id: 'id',
+    type: 'SUBMIT',
+    values: { value: 1 },
+  });
 });

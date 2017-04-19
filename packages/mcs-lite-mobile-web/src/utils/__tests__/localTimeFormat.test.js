@@ -1,9 +1,7 @@
 import localTimeFormat from '../localTimeFormat';
 
 it('should setup TZ="UTC"', () => {
-  expect(
-    new Date(1490855461424).getTimezoneOffset() / 60,
-  ).toBe(0);
+  expect(new Date(1490855461424).getTimezoneOffset() / 60).toBe(0);
 });
 
 it('should return localTimeFormat function', () => {

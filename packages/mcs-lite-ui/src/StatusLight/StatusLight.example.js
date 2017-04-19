@@ -9,33 +9,25 @@ const StyledStatusLight = styled(StatusLight)`
 `;
 
 storiesOf('StatusLight', module)
-  .addWithInfo(
-    'API',
-    'default',
-    () =>
-      <StatusLight />,
-    { inline: true },
-  )
+  .addWithInfo('API', 'default', () => <StatusLight />, { inline: true })
   .addWithInfo(
     'With color props',
     '',
-    () =>
+    () => (
       <div>
-        {
-          Object.keys(theme.color).map(key =>
-            <div key={key}>
-              <StatusLight color={key} />
-              {key}
-            </div>,
-          )
-        }
-      </div>,
+        {Object.keys(theme.color).map(key => (
+          <div key={key}>
+            <StatusLight color={key} />
+            {key}
+          </div>
+        ))}
+      </div>
+    ),
     { inline: true },
   )
   .addWithInfo(
     'Custom width',
     'With width: 100px',
-    () =>
-      <StyledStatusLight color="warning" />,
+    () => <StyledStatusLight color="warning" />,
     { inline: true },
   );

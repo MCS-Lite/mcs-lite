@@ -13,8 +13,9 @@ export const StyledA = styled(A)`
   }
 `;
 
-const ButtonClear = props =>
-  <P {...props}><StyledA><IconDelete />Clear</StyledA></P>;
+const ButtonClear = props => (
+  <P {...props}><StyledA><IconDelete />Clear</StyledA></P>
+);
 
 ButtonClear.displayName = 'ButtonClear';
 

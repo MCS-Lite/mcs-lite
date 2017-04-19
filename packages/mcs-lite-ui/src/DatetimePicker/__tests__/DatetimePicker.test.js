@@ -19,6 +19,5 @@ it('should handle onChange', () => {
   );
 
   wrapper.find(DatetimePicker).getNode().onChange(1, { name: 'YEAR' });
-  expect(mockOnChange)
-    .toHaveBeenCalledWith(1487403031722); // Sat Feb 18 2017 15:30:31 GMT+0800 (CST)
+  expect(mockOnChange).toHaveBeenCalledWith(1487403031722); // Sat Feb 18 2017 15:30:31 GMT+0800 (CST)
 });

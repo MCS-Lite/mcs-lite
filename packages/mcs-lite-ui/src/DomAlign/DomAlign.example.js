@@ -26,15 +26,14 @@ class Container extends React.Component {
   }
 }
 
-storiesOf('DomAlign', module)
-  .addWithInfo(
-    'API',
-    `
+storiesOf('DomAlign', module).addWithInfo(
+  'API',
+  `
       With config: ${JSON.stringify(alignConfig)}.
 
       Reference: React.js [dom-align](https://github.com/yiminghe/dom-align) integration component.
 
     `,
-    () => <Container />,
-    { inline: true, propTables: [DomAlign]},
-  );
+  () => <Container />,
+  { inline: true, propTables: [DomAlign] },
+);

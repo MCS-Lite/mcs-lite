@@ -16,24 +16,27 @@ process.env.NODE_ENV = 'production'; // for babel
 const srcPattern$ = Rx.Observable.of(srcPattern);
 
 // --- /Users/project/src/a.js --- /Users/project/src/b.js --- ...
-const srcPath$ = srcPattern$
-  .switchMap(pattern => Rx.Observable.from(glob.sync(pattern, { absolute: true })));
+const srcPath$ = srcPattern$.switchMap(pattern =>
+  Rx.Observable.from(glob.sync(pattern, { absolute: true })),
+);
 
 // --- ./src/a.js --- ./src/b.js --- ...
-const relativeSrcPath$ = srcPattern$
-  .switchMap(pattern => Rx.Observable.from(glob.sync(pattern)));
+const relativeSrcPath$ = srcPattern$.switchMap(pattern =>
+  Rx.Observable.from(glob.sync(pattern)),
+);
 
 // --- contentA --- contentB --- ...
-const content$ = srcPath$
-  .map(filepath => fs.readFileSync(filepath, 'utf-8'));
+const content$ = srcPath$.map(filepath => fs.readFileSync(filepath, 'utf-8'));
 
 // --- [] --- [] --- [{}, {}] --- ...
 const messages$ = content$
-  .map(content => babel.transform(content, {
-    presets: [require.resolve('babel-preset-react-app')],
-    plugins: [require.resolve('babel-plugin-react-intl')],
-    babelrc: false,
-  }))
+  .map(content =>
+    babel.transform(content, {
+      presets: [require.resolve('babel-preset-react-app')],
+      plugins: [require.resolve('babel-plugin-react-intl')],
+      babelrc: false,
+    }),
+  )
   .map(R.path(['metadata', 'react-intl', 'messages']));
 
 // ---------- JSON:[{}, {}] |
@@ -48,9 +51,11 @@ const results$ = messages$
 
 // Output
 results$
-  .do((results) => {
+  .do(results => {
     fs.writeFileSync(desPath, results);
-    console.log(`${path.relative(process.cwd(), srcPattern)} -> ${path.relative(process.cwd(), desPath)}`);
+    console.log(
+      `${path.relative(process.cwd(), srcPattern)} -> ${path.relative(process.cwd(), desPath)}`,
+    );
   })
   .catch(console.error)
   .subscribe();

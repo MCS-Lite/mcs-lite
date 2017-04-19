@@ -3,21 +3,38 @@ import PropTypes from 'prop-types';
 import R from 'ramda';
 import { opacity } from 'mcs-lite-theme';
 import { withTheme } from 'styled-components';
-import { ResponsiveContainer, AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip } from 'recharts';
+import {
+  ResponsiveContainer,
+  AreaChart,
+  Area,
+  XAxis,
+  YAxis,
+  CartesianGrid,
+  Tooltip,
+} from 'recharts';
 import RechartTooltip from './RechartTooltip';
 
 const lighten = opacity(0.4);
 
 const DataPointAreaChart = ({
-  data, theme, kind, type, isAnimationActive,
-  XAxisProps, tooltipProps,
-}) =>
+  data,
+  theme,
+  kind,
+  type,
+  isAnimationActive,
+  XAxisProps,
+  tooltipProps,
+}) => (
   <ResponsiveContainer>
     <AreaChart data={data} margin={{ left: -20 }}>
       <defs>
         <linearGradient id="areaGradient" x1="0.5" y1="0" x2="0.5" y2="1">
           <stop offset="0" stopColor={theme.color[kind]} stopOpacity="0.5" />
-          <stop offset="1" stopColor={lighten(theme.color[kind])} stopOpacity="0.5" />
+          <stop
+            offset="1"
+            stopColor={lighten(theme.color[kind])}
+            stopOpacity="0.5"
+          />
         </linearGradient>
       </defs>
 
@@ -36,10 +53,7 @@ const DataPointAreaChart = ({
         tick={{ fill: theme.color.grayBase }}
         axisLine={{ stroke: theme.color.grayBase }}
       />
-      <CartesianGrid
-        strokeDasharray="3 3"
-        vertical={false}
-      />
+      <CartesianGrid strokeDasharray="3 3" vertical={false} />
       <Tooltip
         content={<RechartTooltip />}
         cursor={{ stroke: theme.color.warning, strokeDasharray: '4, 2' }}
@@ -53,14 +67,18 @@ const DataPointAreaChart = ({
         fill="url(#areaGradient)"
       />
     </AreaChart>
-  </ResponsiveContainer>;
+  </ResponsiveContainer>
+);
 
 DataPointAreaChart.displayName = 'DataPointAreaChart';
 DataPointAreaChart.propTypes = {
-  data: PropTypes.arrayOf(PropTypes.shape({
-    updatedAt: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
-    value: PropTypes.number.isRequired,
-  })).isRequired,
+  data: PropTypes.arrayOf(
+    PropTypes.shape({
+      updatedAt: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
+        .isRequired,
+      value: PropTypes.number.isRequired,
+    }),
+  ).isRequired,
   theme: PropTypes.object.isRequired,
   kind: PropTypes.string.isRequired,
   type: PropTypes.string.isRequired,

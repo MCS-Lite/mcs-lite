@@ -69,5 +69,8 @@ it('should handle DatetimePickerDialog with correct state', () => {
   expect(setQueryMock).not.toHaveBeenCalled();
   // After onSubmit
   wrapper.instance().onSubmit();
-  expect(setQueryMock).toHaveBeenCalledWith('dataChannelId', { start: 1, end: 3 });
+  expect(setQueryMock).toHaveBeenCalledWith('dataChannelId', {
+    start: 1,
+    end: 3,
+  });
 });

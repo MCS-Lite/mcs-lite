@@ -15,12 +15,12 @@ injectGlobal`
     color: ${theme.base.bodyColor};
     padding: 30px;
 
-    ${''/* Remind: We need this for normalize.css ^6.0.0 */}
+    ${/* Remind: We need this for normalize.css ^6.0.0 */ ''}
     margin: 0;
   }
 `;
 
-export default function (renderStory) {
+export default function(renderStory) {
   return (
     <ThemeProvider theme={theme}>
       {renderStory()}

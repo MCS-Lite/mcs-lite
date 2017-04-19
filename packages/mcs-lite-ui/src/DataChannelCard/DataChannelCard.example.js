@@ -14,7 +14,7 @@ storiesOf('DataChannelCard', module)
   .addWithInfo(
     'API',
     'MCS data channel 的卡片。',
-    () =>
+    () => (
       <DataChannelCard
         title="Title"
         subtitle="Last data point time : 2015-06-12 12:00"
@@ -22,7 +22,8 @@ storiesOf('DataChannelCard', module)
         header={<a href="">Link</a>}
       >
         Children
-      </DataChannelCard>,
+      </DataChannelCard>
+    ),
     { inline: true },
   )
   .addWithInfo(
@@ -50,20 +51,21 @@ storiesOf('DataChannelCard', module)
   .addWithInfo(
     'Without description',
     '',
-    () =>
+    () => (
       <DataChannelCard
         header="V"
         title="Title"
         subtitle="Last data point time : 2015-06-12 12:00"
       >
         <Switch />
-      </DataChannelCard>,
+      </DataChannelCard>
+    ),
     { inline: true },
   )
   .addWithInfo(
     'With empty description',
     '',
-    () =>
+    () => (
       <DataChannelCard
         header="V"
         title="Title"
@@ -71,14 +73,14 @@ storiesOf('DataChannelCard', module)
         description=""
       >
         <Switch />
-      </DataChannelCard>,
+      </DataChannelCard>
+    ),
     { inline: true },
   )
-
   .addWithInfo(
     'With Component selector',
     '',
-    () =>
+    () => (
       <StyledDataChannelCard
         header="V"
         title="Title"
@@ -86,6 +88,7 @@ storiesOf('DataChannelCard', module)
         description="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
       >
         Children
-      </StyledDataChannelCard>,
+      </StyledDataChannelCard>
+    ),
     { inline: true },
   );

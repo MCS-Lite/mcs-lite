@@ -25,13 +25,13 @@ class RechartTooltip extends React.Component {
     payload: PropTypes.array, // dataPoint
     formatter: PropTypes.func,
     labelFormatter: PropTypes.func,
-  }
+  };
 
   static defaultProps = {
     active: false,
     formatter: R.identity,
     labelFormatter: R.identity,
-  }
+  };
 
   render() {
     const { formatter, labelFormatter } = this.props;

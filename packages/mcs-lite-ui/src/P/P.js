@@ -4,11 +4,7 @@ import styled from 'styled-components';
 import R from 'ramda';
 import isString from '../utils/isString';
 
-const getBaseComponent = R.ifElse(
-  isString,
-  R.always('p'),
-  R.always('div'),
-);
+const getBaseComponent = R.ifElse(isString, R.always('p'), R.always('div'));
 
 const Component = ({ children, ...otherProps }) =>
   React.createElement(getBaseComponent(children), otherProps, children);
@@ -16,7 +12,7 @@ const Component = ({ children, ...otherProps }) =>
 const P = styled(Component)`
   margin: 0;
   font-size: ${props => props.theme.fontSize.p};
-  color: ${props => props.color ? props.theme.color[props.color] : 'currentColor'};
+  color: ${props => (props.color ? props.theme.color[props.color] : 'currentColor')};
 `;
 
 P.displayName = 'P';

@@ -38,16 +38,16 @@ describe('devices - 2. Action Creators', () => {
 });
 
 describe('devices - 3. Cycle', () => {
-  it('should emit correct Sinks given Sources with fetchDeviceListCycle', (done) => {
+  it('should emit correct Sinks given Sources with fetchDeviceListCycle', done => {
     const stateSource = {
-      s: { auth: { access_token: 'faketoken123' }},
+      s: { auth: { access_token: 'faketoken123' } },
     };
     const actionSource = {
       a: actions.fetchDeviceList(),
     };
     const httpSource = {
       select: () => ({
-        r: Observable.of({ body: { data: { a: 'a' }}}),
+        r: Observable.of({ body: { data: { a: 'a' } } }),
       }),
     };
 
@@ -65,6 +65,7 @@ describe('devices - 3. Cycle', () => {
       },
     };
 
+    // prettier-ignore
     assertSourcesSinks({
       STATE:  { 's-------|': stateSource },
       ACTION: { 'a-------|': actionSource },
@@ -75,16 +76,16 @@ describe('devices - 3. Cycle', () => {
     }, cycles.fetchDeviceListCycle, done);
   });
 
-  it('should emit correct Sinks given Sources with fetchDeviceDetailCycle', (done) => {
+  it('should emit correct Sinks given Sources with fetchDeviceDetailCycle', done => {
     const stateSource = {
-      s: { auth: { access_token: 'faketoken456' }},
+      s: { auth: { access_token: 'faketoken456' } },
     };
     const actionSource = {
       a: actions.fetchDeviceDetail('fakedeviceid123'),
     };
     const httpSource = {
       select: () => ({
-        r: Observable.of({ body: { data: { b: 'b' }}}),
+        r: Observable.of({ body: { data: { b: 'b' } } }),
       }),
     };
 
@@ -102,6 +103,7 @@ describe('devices - 3. Cycle', () => {
       },
     };
 
+    // prettier-ignore
     assertSourcesSinks({
       STATE:  { 's-------|': stateSource },
       ACTION: { 'a-------|': actionSource },
@@ -120,20 +122,24 @@ describe('devices - 4. Reducer', () => {
   });
 
   it('should handle SET_DEVICE_LIST', () => {
-    const state = reducer({}, {
-      type: constants.SET_DEVICE_LIST,
-      payload: [
-        { deviceId: 'deviceId_1' },
-      ],
-    });
+    const state = reducer(
+      {},
+      {
+        type: constants.SET_DEVICE_LIST,
+        payload: [{ deviceId: 'deviceId_1' }],
+      },
+    );
     expect(state).toMatchSnapshot();
   });
 
   it('should handle SET_DEVICE_DETAIL', () => {
-    const state = reducer({}, {
-      type: constants.SET_DEVICE_DETAIL,
-      payload: { deviceId: 'deviceId_1' },
-    });
+    const state = reducer(
+      {},
+      {
+        type: constants.SET_DEVICE_DETAIL,
+        payload: { deviceId: 'deviceId_1' },
+      },
+    );
     expect(state).toMatchSnapshot();
   });
 
@@ -141,16 +147,14 @@ describe('devices - 4. Reducer', () => {
     const state = reducer(
       {
         deviceId_1: {
-          datachannels: [
-            { datachannelId: 'datachannelId', datapoints: null },
-          ],
+          datachannels: [{ datachannelId: 'datachannelId', datapoints: null }],
         },
       },
       {
         type: constants.SET_DATAPOINT,
         payload: {
           deviceId: 'deviceId_1',
-          datapoint: { datachannelId: 'datachannelId', values: { value: 1 }},
+          datapoint: { datachannelId: 'datachannelId', values: { value: 1 } },
         },
       },
     );

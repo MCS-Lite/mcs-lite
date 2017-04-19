@@ -28,7 +28,7 @@ const setReadyState = (name, websocket) => prevState => ({
  * @author Michael Hsu
  */
 
-const connectSocket = (urlMapper, onMessage, propsMapper) => (BaseComponent) => {
+const connectSocket = (urlMapper, onMessage, propsMapper) => BaseComponent => {
   const factory = createEagerFactory(BaseComponent);
   const initialState = {
     send: emptyFunction, // Remind: Pass this Sender function as props.
@@ -65,7 +65,7 @@ const connectSocket = (urlMapper, onMessage, propsMapper) => (BaseComponent) => 
           if (this.isComponentUnmount) return;
           this.setState(setReadyState('viewer', this.viewer));
         };
-        this.viewer.onmessage = (payload) => {
+        this.viewer.onmessage = payload => {
           const data = JSON.parse(payload.data);
           onMessage(this.props)(data); // Remind: Handle receieve messages.
         };
@@ -85,7 +85,7 @@ const connectSocket = (urlMapper, onMessage, propsMapper) => (BaseComponent) => 
         this.sender.onmessage = e => console.info('sender onmessage', e.data);
         this.sender.onerror = error => console.info('sender onerror', error);
       }
-    }
+    };
 
     render() {
       return factory({

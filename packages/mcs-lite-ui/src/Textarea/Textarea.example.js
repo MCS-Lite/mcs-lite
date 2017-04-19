@@ -21,11 +21,12 @@ storiesOf('Textarea', module)
   .addWithInfo(
     'With kind props',
     '使用內建 kind props 樣式。',
-    () =>
+    () => (
       <Wrapper>
-        {
-          kindList.map(key => <Textarea key={key} kind={key} placeholder={key} />)
-        }
-      </Wrapper>,
+        {kindList.map(key => (
+          <Textarea key={key} kind={key} placeholder={key} />
+        ))}
+      </Wrapper>
+    ),
     { inline: true },
   );

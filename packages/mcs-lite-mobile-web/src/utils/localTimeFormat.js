@@ -1,7 +1,7 @@
 // @flow
 import format from 'date-fns/format';
 
-type Formatter = (Date) => string
+type Formatter = Date => string;
 
 // Remind: date-fns always return local time
 const localTimeFormat: Formatter = date =>

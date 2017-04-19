@@ -21,13 +21,13 @@ import { MONTH_RANGE, HOUR_RANGE, MINUTE_RANGE } from './utils';
 class DatetimePicker extends React.Component {
   static propTypes = {
     defaultValue: PropTypes.number.isRequired, // Unix Timestamp (milliseconds)
-    onChange: PropTypes.func,                  // (value: number) => void
+    onChange: PropTypes.func, // (value: number) => void
     years: PropTypes.array,
-  }
+  };
   static defaultProps = {
     onChange: emptyFunction,
     years: [2016, 2017],
-  }
+  };
 
   constructor(props) {
     super(props);
@@ -41,16 +41,17 @@ class DatetimePicker extends React.Component {
 
     this.setState({ value: newValue });
     this.props.onChange(D.to(newValue)); // Remind: To Unix Timestamp (milliseconds)
-  }
+  };
 
-  reducer = (value, { name, index }) => R.cond([
-    [R.equals('YEAR'), R.always(D.setYear(this.props.years[index]))],
-    [R.equals('MONTH'), R.always(D.setMonth(index))],
-    [R.equals('DATE'), R.always(D.setDate(index + 1))],
-    [R.equals('HOUR'), R.always(D.setHours(index))],
-    [R.equals('MINUTE'), R.always(D.setMinutes(index))],
-    [R.T, R.identity],
-  ])(name)(value);
+  reducer = (value, { name, index }) =>
+    R.cond([
+      [R.equals('YEAR'), R.always(D.setYear(this.props.years[index]))],
+      [R.equals('MONTH'), R.always(D.setMonth(index))],
+      [R.equals('DATE'), R.always(D.setDate(index + 1))],
+      [R.equals('HOUR'), R.always(D.setHours(index))],
+      [R.equals('MINUTE'), R.always(D.setMinutes(index))],
+      [R.T, R.identity],
+    ])(name)(value);
 
   render() {
     const { years } = this.props;

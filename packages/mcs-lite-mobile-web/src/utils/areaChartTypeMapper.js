@@ -1,7 +1,7 @@
 // @flow
 import R from 'ramda';
 
-type Mapper = (string) => 'step' | 'linear'
+type Mapper = string => 'step' | 'linear';
 
 const areaChartTypeMapper: Mapper = R.ifElse(
   R.contains(R.__, ['Switch', 'GPIO']), // eslint-disable-line

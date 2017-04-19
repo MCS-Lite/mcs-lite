@@ -8,10 +8,7 @@ const DEFAULT = 'default';
 export const width = R.cond([
   [R.propEq('block', true), R.always('100%')],
   [
-    R.anyPass([
-      R.propEq('square', true),
-      R.propEq('round', true),
-    ]),
+    R.anyPass([R.propEq('square', true), R.propEq('round', true)]),
     R.path(['theme', 'height', 'normal']),
   ],
   [R.T, R.always('initial')],
@@ -37,10 +34,7 @@ export const borderRadius = R.cond([
 
 export const padding = R.cond([
   [
-    R.anyPass([
-      R.propEq('square', true),
-      R.propEq('round', true),
-    ]),
+    R.anyPass([R.propEq('square', true), R.propEq('round', true)]),
     R.always('0'),
   ],
   [R.propEq('size', SMALL), R.always('0 5px')],

@@ -14,20 +14,18 @@ storiesOf('Toast', module)
   .addWithInfo(
     'API',
     '',
-    () =>
-      <Toast>Success! You have delete the item.</Toast>,
+    () => <Toast>Success! You have delete the item.</Toast>,
     { inline: true },
   )
   .addWithInfo(
     'With kind props',
     '',
-    () =>
+    () => (
       <DemoWrapper>
-        {
-          kindList.map(key =>
-            <Toast key={key} kind={key}>{key} - You have delete the item.</Toast>,
-          )
-        }
-      </DemoWrapper>,
+        {kindList.map(key => (
+          <Toast key={key} kind={key}>{key} - You have delete the item.</Toast>
+        ))}
+      </DemoWrapper>
+    ),
     { inline: true },
   );

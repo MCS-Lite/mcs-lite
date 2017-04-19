@@ -17,7 +17,6 @@ it('should renders <DeviceDetailInfo> correctly without device data', () => {
   expect(toJson(wrapper)).toMatchSnapshot();
 });
 
-
 it('should renders <DeviceDetailInfo> correctly', () => {
   const fetchMock = jest.fn();
   const wrapper = shallow(

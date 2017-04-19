@@ -26,13 +26,14 @@ const componentName$ = srcPath$
   .map(upperFirst);
 
 // --- xmlA --- xmlB --- ...
-const xml$ = srcPath$
-  .map(filepath => fs.readFileSync(filepath, 'utf-8'));
+const xml$ = srcPath$.map(filepath => fs.readFileSync(filepath, 'utf-8'));
 
 // --- codeA --- codeB --- ...
 const code$ = Rx.Observable
   .zip(componentName$, xml$)
-  .map(([componentName, xml]) => compile(template(componentName, parseSVG(xml))));
+  .map(([componentName, xml]) =>
+    compile(template(componentName, parseSVG(xml))),
+  );
 
 // --- ./lib/IconA.js --- ./lib/IconB.js --- ...
 const destPath$ = componentName$
@@ -43,7 +44,9 @@ Rx.Observable
   .zip(srcPath$, code$, destPath$)
   .do(([srcPath, code, destPath]) => {
     fs.writeFileSync(destPath, code);
-    console.log(`${path.relative(process.cwd(), srcPath)} -> ${path.relative(process.cwd(), destPath)}`);
+    console.log(
+      `${path.relative(process.cwd(), srcPath)} -> ${path.relative(process.cwd(), destPath)}`,
+    );
   })
   .catch(console.error)
   .subscribe();

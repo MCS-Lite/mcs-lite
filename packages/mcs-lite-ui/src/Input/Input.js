@@ -16,14 +16,8 @@ const Input = styled.input`
   min-height: ${props => props.theme.height.normal};
   color: ${props => props.theme.color.black};
   font-size: ${props => props.theme.fontSize.p};
-  border-color: ${props => props.focus
-    ? props.theme.color[props.kind]
-    : props.theme.color.grayDark
-  };
-  box-shadow: ${props => props.focus
-    ? `0 0 3px 0 ${shadow(props.theme.color[props.kind])}`
-    : 'none'
-  };
+  border-color: ${props => (props.focus ? props.theme.color[props.kind] : props.theme.color.grayDark)};
+  box-shadow: ${props => (props.focus ? `0 0 3px 0 ${shadow(props.theme.color[props.kind])}` : 'none')};
 
   &:focus {
     border-color: ${props => props.theme.color[props.kind]};

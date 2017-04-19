@@ -19,7 +19,9 @@ if (!danger.github.issue.labels.length) {
 // Warn if there is no one assign.
 const someoneAssigned = danger.github.pr.assignee;
 if (someoneAssigned === null) {
-  warn('Please assign someone to merge this PR, and optionally include people who should review.');
+  warn(
+    'Please assign someone to merge this PR, and optionally include people who should review.',
+  );
 }
 
 // Warn when there is a big PR
@@ -39,9 +41,12 @@ if (i18nChanged && !potChanged) {
 
 // Warn if there are changes to package.json without changes to Licenses.csv.
 const packageChanged = allChanges.some(e => /package\.json/.test(e));
-const licensesCSVChanged = danger.git.modified_files.includes('docs/licenses.csv');
+const licensesCSVChanged = danger.git.modified_files.includes(
+  'docs/licenses.csv',
+);
 if (packageChanged && !licensesCSVChanged) {
   const message = 'Changes were made to package.json, but not to licenses.csv';
-  const idea = 'Perhaps you need to run `$ license-checker --csv --out docs/licenses.csv`?';
+  const idea =
+    'Perhaps you need to run `$ license-checker --csv --out docs/licenses.csv`?';
   warn(`${message} - <i>${idea}</i>`);
 }

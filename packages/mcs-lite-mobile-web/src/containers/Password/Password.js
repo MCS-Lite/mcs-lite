@@ -16,16 +16,16 @@ class Password extends React.Component {
 
     // React-intl I18n
     getMessages: PropTypes.func.isRequired,
-  }
+  };
   state = { new1: '', new2: '' };
   onChange = e => this.setState({ [e.target.name]: e.target.value });
-  onSubmit = (e) => {
+  onSubmit = e => {
     this.props.changePassword({
       password: this.state.new2,
       message: this.props.getMessages('success'),
     });
     e.preventDefault();
-  }
+  };
   render() {
     const { new1, new2 } = this.state;
     const { onChange, onSubmit } = this;
@@ -62,7 +62,8 @@ class Password extends React.Component {
                   required
                   kind={isNew1Error ? 'error' : 'primary'}
                 />
-                {isNew1Error && <StyledP color="error">{t('lengthError')}</StyledP>}
+                {isNew1Error &&
+                  <StyledP color="error">{t('lengthError')}</StyledP>}
               </div>
 
               <div>
@@ -76,7 +77,10 @@ class Password extends React.Component {
                   required
                   kind={isNew2Error ? 'error' : 'primary'}
                 />
-                {isNew2Error && <StyledP color="error">{t('newPasswordAgain.error')}</StyledP>}
+                {isNew2Error &&
+                  <StyledP color="error">
+                    {t('newPasswordAgain.error')}
+                  </StyledP>}
               </div>
             </Container>
           </main>

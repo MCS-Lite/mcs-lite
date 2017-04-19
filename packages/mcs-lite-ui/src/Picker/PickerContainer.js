@@ -23,7 +23,7 @@ export const Indicator = styled.div`
   height: ${ITEM_HEIGHT}px;
   left: 0;
   right: 0;
-  top: ${(CONTAINER_HEIGHT / 2) - (ITEM_HEIGHT / 2)}px;
+  top: ${CONTAINER_HEIGHT / 2 - ITEM_HEIGHT / 2}px;
   border-top: 1px solid ${props => props.theme.color.grayDark};
   border-bottom: 1px solid ${props => props.theme.color.grayDark};
   pointer-events: none;
@@ -43,13 +43,13 @@ export const Overlay = styled.div`
   pointer-events: none;
 `;
 
-
-const PickerContainer = ({ children, ...otherProps }) =>
+const PickerContainer = ({ children, ...otherProps }) => (
   <Container {...otherProps}>
     {children}
     <Indicator />
     <Overlay />
-  </Container>;
+  </Container>
+);
 
 PickerContainer.displayName = 'PickerContainer';
 PickerContainer.propTypes = {

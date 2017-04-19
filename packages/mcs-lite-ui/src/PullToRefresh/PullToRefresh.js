@@ -13,7 +13,7 @@ const HEIGHT = 60;
 const SENSITIVITY = 2;
 
 export const PullWrapper = styled.div`
-  transition: ${props => (props.distance === 0 || props.isLoading) ? 'all .25s ease' : 'initial'};
+  transition: ${props => (props.distance === 0 || props.isLoading ? 'all .25s ease' : 'initial')};
 `;
 
 export const LoadingContainer = styled.div`
@@ -25,7 +25,7 @@ export const LoadingContainer = styled.div`
 
   > * {
     transition: all 0.25s ease;
-    transform: ${props => props.distance >= HEIGHT ? 'rotate(180deg)' : 'initial'};
+    transform: ${props => (props.distance >= HEIGHT ? 'rotate(180deg)' : 'initial')};
   }
 `;
 
@@ -36,12 +36,18 @@ class PullToRefresh extends React.Component {
     onPull: PropTypes.func.isRequired,
     IconArrow: PropTypes.any,
     IconLoading: PropTypes.any,
-  }
+  };
 
   static defaultProps = {
-    IconLoading: () => <Heading level={2} color="grayBase"><Spin><MLIconLoading /></Spin></Heading>,
-    IconArrow: () => <Heading level={2} color="grayBase"><IconGoDown /></Heading>,
-  }
+    IconLoading: () => (
+      <Heading level={2} color="grayBase">
+        <Spin><MLIconLoading /></Spin>
+      </Heading>
+    ),
+    IconArrow: () => (
+      <Heading level={2} color="grayBase"><IconGoDown /></Heading>
+    ),
+  };
 
   constructor(props) {
     super(props);
@@ -57,9 +63,9 @@ class PullToRefresh extends React.Component {
   onPanDownStart = () => {
     this.fromY = 0;
     this.toY = this.fromY;
-  }
+  };
 
-  onPanDown = (e) => {
+  onPanDown = e => {
     if (document.body.scrollTop > 0) return; // Remind: Skip the event if it's not pulled from top.
     if (this.props.isLoading) {
       e.preventDefault(); // Hint: Prevent being pulled while refreshing.
@@ -69,7 +75,7 @@ class PullToRefresh extends React.Component {
 
     this.toY = e.deltaY;
     this.setState({ distance: (this.toY - this.fromY) / SENSITIVITY });
-  }
+  };
 
   onPanDownEnd = () => {
     if (this.props.isLoading) return; // Remind: Prevent re-refreshing.
@@ -82,13 +88,19 @@ class PullToRefresh extends React.Component {
 
     this.setLoading();
     this.props.onPull();
-  }
+  };
 
   setLoading = () => this.setState({ distance: HEIGHT });
   reset = () => this.setState({ distance: 0 });
 
   render() {
-    const { children, isLoading, IconArrow, IconLoading, ...otherProps } = this.props;
+    const {
+      children,
+      isLoading,
+      IconArrow,
+      IconLoading,
+      ...otherProps
+    } = this.props;
     const { distance } = this.state;
 
     return (

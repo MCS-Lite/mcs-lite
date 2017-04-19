@@ -18,14 +18,26 @@ export const StyledInput = styled(Input)`
   margin-right: 10px;
 `;
 
-const ControlPeriod = ({ value, onChange, onSubmit, placeholder, ...otherProps }) =>
-  <Container {...otherProps} >
+const ControlPeriod = ({
+  value,
+  onChange,
+  onSubmit,
+  placeholder,
+  ...otherProps
+}) => (
+  <Container {...otherProps}>
     <label htmlFor="input"><P color="grayBase">Period</P></label>
     <InputWrapper>
-      <StyledInput type="number" value={value} onChange={onChange} placeholder={placeholder} />
+      <StyledInput
+        type="number"
+        value={value}
+        onChange={onChange}
+        placeholder={placeholder}
+      />
       <Button onClick={onSubmit}>Ok</Button>
     </InputWrapper>
-  </Container>;
+  </Container>
+);
 
 ControlPeriod.displayName = 'ControlPeriod';
 ControlPeriod.propTypes = {

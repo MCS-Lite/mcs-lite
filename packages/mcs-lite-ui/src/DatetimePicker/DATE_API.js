@@ -13,7 +13,7 @@ import endOfMonth from 'date-fns/end_of_month';
 
 const DATE_API = {
   from: timestamp => new Date(timestamp), // timestamp:number => Date
-  to: date => getTime(date),              // Date => timestamp:number
+  to: date => getTime(date), // Date => timestamp:number
   setYear: year => date => setYear(date, year),
   setMonth: month => date => setMonth(date, month),
   setDate: dayOfMonth => date => setDate(date, dayOfMonth),

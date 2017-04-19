@@ -23,7 +23,7 @@ it('should render Container correctly with HOC', () => {
 it('should return props correctly with mapStateToProps', () => {
   const state = {
     ui: { isLoading: false },
-    datapoints: { dataChannelId: { query: { start: 1, end: 2 }}},
+    datapoints: { dataChannelId: { query: { start: 1, end: 2 } } },
   };
   const ownProps = {
     params: { deviceId: 'deviceId', dataChannelId: 'dataChannelId' },
