@@ -2,6 +2,22 @@
 
 ## Released (2017-04-19)
 
+### Bump Versions
+
+-   babel-preset-mcs-lite@0.2.2
+-   eslint-config-mcs-lite@0.2.0 👈
+-   mcs-lite-connect@0.2.4
+-   mcs-lite-design@0.1.5
+-   mcs-lite-icon@0.2.4
+-   mcs-lite-introduction@0.1.6
+-   mcs-lite-mobile-web@0.3.5
+-   mcs-lite-scripts@0.2.4
+-   mcs-lite-theme@0.2.5
+-   mcs-lite-ui@0.3.5
+-   react-intl-cra@0.1.9
+-   react-intl-inject-hoc@0.1.9
+-   stylelint-config-mcs-lite@0.1.3
+
 #### :boom: Breaking Change
 * `babel-preset-mcs-lite`, `eslint-config-mcs-lite`, `mcs-lite-connect`, `mcs-lite-mobile-web`, `mcs-lite-scripts`, `mcs-lite-theme`, `mcs-lite-ui`, `react-intl-inject-hoc`, `stylelint-config-mcs-lite`
   * [#298](https://github.com/MCS-Lite/mcs-lite/pull/298) feat(prettier): introduce prettier [BREAKING]. ([@evenchange4](https://github.com/evenchange4))
