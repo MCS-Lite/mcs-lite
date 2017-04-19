@@ -1,5 +1,33 @@
 # MCS Lite changelogs
 
+## Released (2017-04-19)
+
+#### :boom: Breaking Change
+* `babel-preset-mcs-lite`, `eslint-config-mcs-lite`, `mcs-lite-connect`, `mcs-lite-mobile-web`, `mcs-lite-scripts`, `mcs-lite-theme`, `mcs-lite-ui`, `react-intl-inject-hoc`, `stylelint-config-mcs-lite`
+  * [#298](https://github.com/MCS-Lite/mcs-lite/pull/298) feat(prettier): introduce prettier [BREAKING]. ([@evenchange4](https://github.com/evenchange4))
+
+#### :memo: Documentation
+* `babel-preset-mcs-lite`, `eslint-config-mcs-lite`, `mcs-lite-connect`, `mcs-lite-demo-nextjs`, `mcs-lite-design`, `mcs-lite-icon`, `mcs-lite-introduction`, `mcs-lite-mobile-web`, `mcs-lite-scripts`, `mcs-lite-theme`, `mcs-lite-ui`, `react-intl-cra`, `react-intl-inject-hoc`, `stylelint-config-mcs-lite`
+  * [#296](https://github.com/MCS-Lite/mcs-lite/pull/296) chore(package.json): move to MCS-Lite. ([@evenchange4](https://github.com/evenchange4))
+
+#### :house: Internal
+* `babel-preset-mcs-lite`, `eslint-config-mcs-lite`, `mcs-lite-connect`, `mcs-lite-mobile-web`, `mcs-lite-scripts`, `mcs-lite-theme`, `mcs-lite-ui`, `react-intl-inject-hoc`, `stylelint-config-mcs-lite`
+  * [#298](https://github.com/MCS-Lite/mcs-lite/pull/298) feat(prettier): introduce prettier [BREAKING]. ([@evenchange4](https://github.com/evenchange4))
+* `mcs-lite-demo-nextjs`
+  * [#297](https://github.com/MCS-Lite/mcs-lite/pull/297) chore(next.js): remove project. ([@evenchange4](https://github.com/evenchange4))
+* `mcs-lite-mobile-web`, `mcs-lite-ui`
+  * [#290](https://github.com/MCS-Lite/mcs-lite/pull/290) feat(flow): re-enable flow type checker. ([@evenchange4](https://github.com/evenchange4))
+* Other
+  * [#294](https://github.com/MCS-Lite/mcs-lite/pull/294) fix(CI): switch from circle to travis. ([@evenchange4](https://github.com/evenchange4))
+* `mcs-lite-ui`
+  * [#291](https://github.com/MCS-Lite/mcs-lite/pull/291) chore(rechart): upgrade to 0.22.1. ([@evenchange4](https://github.com/evenchange4))
+
+#### Committers: 2
+- Michael Hsu ([evenchange4](https://github.com/evenchange4))
+- [greenkeeper[bot]](https://github.com/integration/greenkeeper)
+
+----
+
 ## Released (2017-04-13)
 
 ### Bump Versions
