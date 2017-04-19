@@ -8,7 +8,8 @@
     "flow": "flow check",
     "release": "lerna publish",
     "prerelease": "./tasks/build.sh",
-    "danger": "danger run --verbose"
+    "danger": "danger run --verbose",
+    "format": "prettier --trailing-comma es5 --single-quote --write 'packages/*/*.js' 'packages/*/!(node_modules|build|lib|storybook-static|coverage|.next|_book)/**/*.js'"
   },
   "devDependencies": {
     "babel-eslint": "^7.2.2",
@@ -21,6 +22,7 @@
     "eslint-plugin-react": "^6.10.3",
     "flow-bin": "^0.43.1",
     "lerna": "2.0.0-rc.1",
+    "prettier": "^1.1.0",
     "stylelint": "^7.10.1"
   },
   "stylelint": {
