@@ -11,18 +11,12 @@ const getCurrent = () => new Date().valueOf();
 
 export const mapStateToProps = (
   { datapoints },
-  { params: { deviceId, dataChannelId }},
+  { params: { deviceId, dataChannelId } },
 ) => ({
   deviceId,
   dataChannelId,
-  start: R.pathOr(
-    getCurrent(),
-    [dataChannelId, 'query', 'start'],
-  )(datapoints),
-  end: R.pathOr(
-    getCurrent(),
-    [dataChannelId, 'query', 'end'],
-  )(datapoints),
+  start: R.pathOr(getCurrent(), [dataChannelId, 'query', 'start'])(datapoints),
+  end: R.pathOr(getCurrent(), [dataChannelId, 'query', 'end'])(datapoints),
 });
 export const mapDispatchToProps = {
   fetchDeviceDetail: devicesActions.fetchDeviceDetail,

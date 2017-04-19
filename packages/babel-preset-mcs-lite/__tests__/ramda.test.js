@@ -9,15 +9,23 @@ const babelOptions = {
 const compile = code => babel.transform(code, babelOptions).code;
 
 it('should work with ramda', () => {
-  expect(compile(`
+  expect(
+    compile(
+      `
 import R from 'ramda';
 console.log(R.pipe);
-  `)).toMatchSnapshot();
+  `,
+    ),
+  ).toMatchSnapshot();
 });
 
 it('should work with ramda/src', () => {
-  expect(compile(`
+  expect(
+    compile(
+      `
 import pipe from 'ramda/src/pipe';
 console.log(pipe);
-  `)).toMatchSnapshot();
+  `,
+    ),
+  ).toMatchSnapshot();
 });

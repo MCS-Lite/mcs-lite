@@ -16,11 +16,11 @@ export const LabelWrapper = styled.div`
   display: flex;
 
   > *:first-child {
-    align-items: ${props => props.labels.length <= 2 ? 'flex-start' : 'center'};
+    align-items: ${props => (props.labels.length <= 2 ? 'flex-start' : 'center')};
   }
 
   > *:last-child {
-    align-items: ${props => props.labels.length <= 2 ? 'flex-end' : 'center'};
+    align-items: ${props => (props.labels.length <= 2 ? 'flex-end' : 'center')};
   }
 `;
 
@@ -53,21 +53,31 @@ export const Value = styled(P)`
 `;
 
 export const InputWrapper = styled.div`
-  padding: 0 ${props => `${props.labels.length <= 2 ? 0 : (100 / props.labels.length / 2) - 3}%`};
+  padding: 0 ${props => `${props.labels.length <= 2 ? 0 : 100 / props.labels.length / 2 - 3}%`};
 `;
 
-const ControlRange = ({ value, onChange, onSubmit, labels, valueMapper, ...otherProps }) => {
+const ControlRange = ({
+  value,
+  onChange,
+  onSubmit,
+  labels,
+  valueMapper,
+  ...otherProps
+}) => {
   const min = isNumber(labels[0]) ? labels[0] : 0;
   const max = isNumber(labels[1]) ? labels[1] : labels.length - 1;
 
   return (
-    <Container {...otherProps} >
+    <Container {...otherProps}>
       <LabelWrapper labels={labels}>
-        {labels.map(e => <LabelItem key={e}><P color="grayBase">{e}</P></LabelItem>)}
+        {labels.map(e => (
+          <LabelItem key={e}><P color="grayBase">{e}</P></LabelItem>
+        ))}
       </LabelWrapper>
 
       <InputWrapper labels={labels}>
-        <ValueWrapper color="grayBase">Current value:&nbsp;
+        <ValueWrapper color="grayBase">
+          Current value:&nbsp;
           <Value color="primary">{valueMapper(value)}</Value>
         </ValueWrapper>
         <InputRange
@@ -76,7 +86,7 @@ const ControlRange = ({ value, onChange, onSubmit, labels, valueMapper, ...other
           step={1}
           value={value}
           onChange={onChange}
-          onMouseUp={onSubmit}  // for desktop
+          onMouseUp={onSubmit} // for desktop
           onTouchEnd={onSubmit} // for mobile
         />
       </InputWrapper>

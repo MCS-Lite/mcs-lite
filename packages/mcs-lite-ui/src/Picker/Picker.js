@@ -10,7 +10,7 @@ const CONTAINER_HEIGHT = 200;
 const ITEM_HEIGHT = 40;
 
 export const ItemWrapper = styled.div`
-  padding-top: ${(CONTAINER_HEIGHT / 2) - (ITEM_HEIGHT / 2)}px;
+  padding-top: ${CONTAINER_HEIGHT / 2 - ITEM_HEIGHT / 2}px;
 `;
 
 export const Item = styled.div`
@@ -19,21 +19,20 @@ export const Item = styled.div`
   justify-content: center;
   height: ${ITEM_HEIGHT}px;
   user-select: none;
-  color: ${props => props.active ? props.theme.color.black : props.theme.color.grayDark};
+  color: ${props => (props.active ? props.theme.color.black : props.theme.color.grayDark)};
 `;
 
 class Picker extends React.Component {
   static propTypes = {
     value: PropTypes.number.isRequired, // index
-    onChange: PropTypes.func,           // (index: number, props: object) => void
-    labels: PropTypes.arrayOf(PropTypes.oneOfType([
-      PropTypes.string,
-      PropTypes.number,
-    ])).isRequired,
-  }
+    onChange: PropTypes.func, // (index: number, props: object) => void
+    labels: PropTypes.arrayOf(
+      PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+    ).isRequired,
+  };
   static defaultProps = {
     value: 0,
-  }
+  };
 
   constructor(props) {
     super(props);
@@ -48,13 +47,13 @@ class Picker extends React.Component {
     this.fromY = 0;
     this.toY = this.fromY;
     this.last = this.state.distance;
-  }
+  };
 
-  onPanVertical = (e) => {
+  onPanVertical = e => {
     this.toY = e.deltaY;
     this.setState({ distance: this.last + (this.toY - this.fromY) });
     e.preventDefault();
-  }
+  };
 
   onPanVerticalEnd = () => {
     if (this.props.onChange) {
@@ -68,11 +67,10 @@ class Picker extends React.Component {
         distance: this.calcDistanceByIndex(this.props.value),
       });
     }
-  }
+  };
 
   // Important: need arrow function to get this object.
-  clampIndex = index =>
-    R.clamp(0, this.props.labels.length - 1)(index);
+  clampIndex = index => R.clamp(0, this.props.labels.length - 1)(index);
 
   /**
    * Calculating the position.
@@ -115,13 +113,11 @@ class Picker extends React.Component {
         options={{ touchAction: 'pan-x' }}
       >
         <ItemWrapper style={{ marginTop: distance }}>
-          {
-            labels.map((label, index) => (
-              <Item key={label} active={calcIndexByDistance(distance) === index}>
-                {label}
-              </Item>
-            ))
-          }
+          {labels.map((label, index) => (
+            <Item key={label} active={calcIndexByDistance(distance) === index}>
+              {label}
+            </Item>
+          ))}
         </ItemWrapper>
       </Hammer>
     );

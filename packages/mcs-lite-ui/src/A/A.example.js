@@ -7,30 +7,23 @@ import B from '../B';
 import A from '.';
 
 storiesOf('A', module)
-  .addWithInfo(
-    'API',
-    'anchor A',
-    () =>
-      <A>Link</A>,
-    { inline: true },
-  )
+  .addWithInfo('API', 'anchor A', () => <A>Link</A>, { inline: true })
   .addWithInfo(
     'With color props',
     '',
-    () =>
+    () => (
       <div>
-        {
-          Object.keys(theme.color).map(key =>
-            <A key={key} color={key}>A link {key}</A>,
-          )
-        }
-      </div>,
+        {Object.keys(theme.color).map(key => (
+          <A key={key} color={key}>A link {key}</A>
+        ))}
+      </div>
+    ),
     { inline: true },
   )
   .addWithInfo(
     'Nested children with Heading',
     '',
-    () =>
+    () => (
       <Heading>
         Heading Level 1&nbsp;
         <B>
@@ -38,6 +31,7 @@ storiesOf('A', module)
             Link
           </A>
         </B>
-      </Heading>,
+      </Heading>
+    ),
     { inline: true },
   );

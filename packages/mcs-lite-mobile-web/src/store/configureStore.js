@@ -13,20 +13,17 @@ import { reducer, cycle as main } from '../modules';
  * Compose with Redux devtool
  * Ref: https://github.com/zalmoxisus/redux-devtools-extension/blob/master/npm-package/developmentOnly.js
  */
-const composeEnhancers =
-  process.env.NODE_ENV !== 'production' &&
+const composeEnhancers = process.env.NODE_ENV !== 'production' &&
   typeof window === 'object' &&
-  window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ ?
-    window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ : compose;
+  window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__
+  ? window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__
+  : compose;
 
 const configureStore = (initialState, history) => {
   const cycleMiddleware = createCycleMiddleware();
   const { makeActionDriver, makeStateDriver } = cycleMiddleware;
 
-  const middlewares = [
-    cycleMiddleware,
-    routerMiddleware(history),
-  ];
+  const middlewares = [cycleMiddleware, routerMiddleware(history)];
 
   /**
    * Prevents state from being mutated

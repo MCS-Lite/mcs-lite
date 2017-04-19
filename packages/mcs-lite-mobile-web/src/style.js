@@ -14,11 +14,11 @@ injectGlobal`
     background-color: ${mobileTheme.base.bodyBackgroundColor};
     color: ${mobileTheme.base.bodyColor};
 
-    ${''/* Remind: We need this for normalize.css ^6.0.0 */}
+    ${/* Remind: We need this for normalize.css ^6.0.0 */ ''}
     margin: 0;
   }
 
-  ${''/* DO NOT use 100vh for mobile (safari) */}
+  ${/* DO NOT use 100vh for mobile (safari) */ ''}
   html,
   body,
   body > div:first-child {

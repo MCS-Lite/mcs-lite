@@ -6,7 +6,15 @@ import R from 'ramda';
 import { darken1, darken2, darken3 } from 'mcs-lite-theme';
 import * as propMappers from './propMappers';
 
-const omitProps = R.omit(['block', 'kind', 'square', 'round', 'size', 'status', 'active']);
+const omitProps = R.omit([
+  'block',
+  'kind',
+  'square',
+  'round',
+  'size',
+  'status',
+  'active',
+]);
 
 const BaseComponent = ({ component, children, ...otherProps }) =>
   React.createElement(component, omitProps(otherProps), children);

@@ -7,14 +7,13 @@ var genDefaultConfig = require('@kadira/storybook/dist/server/config/defaults/we
 module.exports = function(config, env) {
   var config = genDefaultConfig(config, env);
 
-  const loaders = config.module.loaders
-    .map((e) => {
-      if (e.test.toString() === '/\\.css?$/') {
-        delete e.include;
-      }
+  const loaders = config.module.loaders.map(e => {
+    if (e.test.toString() === '/\\.css?$/') {
+      delete e.include;
+    }
 
-      return e;
-    });
+    return e;
+  });
 
   config.module.loaders = loaders;
 

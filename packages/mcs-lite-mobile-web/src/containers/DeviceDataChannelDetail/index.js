@@ -13,7 +13,7 @@ import localTimeFormat from '../../utils/localTimeFormat';
 
 export const mapStateToProps = (
   { devices, datapoints },
-  { params: { deviceId, dataChannelId }},
+  { params: { deviceId, dataChannelId } },
 ) => ({
   deviceId,
   dataChannelId,
@@ -45,12 +45,10 @@ export default compose(
   connect(mapStateToProps, mapDispatchToProps),
   connectSocket(
     // 1. urlMapper => (ownerProps: Object) => string
-    ({ deviceId, deviceKey }) => deviceKey
-      && `${wsHost}/deviceId/${deviceId}/deviceKey/${deviceKey}`,
-
+    ({ deviceId, deviceKey }) =>
+      deviceKey && `${wsHost}/deviceId/${deviceId}/deviceKey/${deviceKey}`,
     // 2. onMessage => (ownerProps: Object) => datapoint => void
     props => datapoint => props.setDatapoint(props.deviceId, datapoint, true),
-
     // 3. propsMapper => state => props
     ({ readyState, send, createWebSocket }) => ({
       sendMessage: send,

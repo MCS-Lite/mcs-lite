@@ -4,54 +4,60 @@ import { storiesOf, action } from '@kadira/storybook';
 import { kindList } from 'mcs-lite-theme';
 import Switch from '.';
 
-const withState = Component =>
-  class WithStateComponent extends React.Component {
-    state = { checked: false }
-    onClick = () => {
-      action('click');
-      this.setState({ checked: !this.state.checked });
-    }
-    render() {
-      return (
-        <Component
-          {...this.props}
-          onClick={this.onClick}
-          checked={this.state.checked}
-        />
-      );
-    }
+const withState = Component => class WithStateComponent
+  extends React.Component {
+  state = { checked: false };
+  onClick = () => {
+    action('click');
+    this.setState({ checked: !this.state.checked });
   };
+  render() {
+    return (
+      <Component
+        {...this.props}
+        onClick={this.onClick}
+        checked={this.state.checked}
+      />
+    );
+  }
+};
 
-const StyledSwitch = withState(styled(Switch)`
-  background-color: ${props => props.checked ? 'steelblue' : 'aliceblue'};
+const StyledSwitch = withState(
+  styled(Switch)`
+  background-color: ${props => (props.checked ? 'steelblue' : 'aliceblue')};
 
   &::after {
-    background-color: ${props => props.checked ? 'aliceblue' : 'cornflowerblue'};
+    background-color: ${props => (props.checked ? 'aliceblue' : 'cornflowerblue')};
   }
-`);
+`,
+);
 
-const ScaledSwitch = withState(styled(Switch)`
+const ScaledSwitch = withState(
+  styled(Switch)`
   transform: scale(0.48);
-`);
+`,
+);
 
 storiesOf('Switch', module)
   .addWithInfo(
     'API',
     'Switch is a controlled component.',
-    () =>
+    () => (
       <div>
         <Switch />
         <Switch checked />
-      </div>,
+      </div>
+    ),
     { inline: true },
   )
   .addWithInfo(
     'With kind props',
     'kind="primary"',
-    () =>
+    () => (
       <div>
         {kindList.map(kind => <Switch key={kind} checked kind={kind} />)}
-      </div>,
+      </div>
+    ),
     { inline: true },
   )
   .addWithInfo(

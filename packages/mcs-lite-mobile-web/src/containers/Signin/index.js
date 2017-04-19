@@ -7,8 +7,11 @@ import { actions as authActions } from '../../modules/auth';
 import Signin from './Signin';
 
 export const mapStateToProps = ({ routing }) => ({
-  errorMessage:
-    R.pathOr(undefined, ['locationBeforeTransitions', 'query', 'errorMsg'])(routing),
+  errorMessage: R.pathOr(undefined, [
+    'locationBeforeTransitions',
+    'query',
+    'errorMsg',
+  ])(routing),
 });
 export const mapDispatchToProps = { tryEnter: authActions.tryEnter };
 

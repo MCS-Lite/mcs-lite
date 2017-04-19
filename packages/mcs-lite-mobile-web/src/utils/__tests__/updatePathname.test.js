@@ -10,7 +10,5 @@ it('should override pathname', () => {
     query: { locale: 'zh-TW' },
   };
 
-  expect(
-    updatePathname('/account')(mockLocation),
-  ).toMatchSnapshot();
+  expect(updatePathname('/account')(mockLocation)).toMatchSnapshot();
 });

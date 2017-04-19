@@ -24,19 +24,18 @@ export const ItemWrapper = styled.div`
   }
 `;
 
-const DisplayStatus = ({ value, labels, ...otherProps }) =>
-  <Container {...otherProps} >
-    {
-      labels.map((label, index) =>
-        <ItemWrapper key={label}>
-          <P color="grayBase">{label}</P>
-          <div>
-            <StatusLight color={value === index ? 'success' : 'grayDark'} />
-          </div>
-        </ItemWrapper>,
-      )
-    }
-  </Container>;
+const DisplayStatus = ({ value, labels, ...otherProps }) => (
+  <Container {...otherProps}>
+    {labels.map((label, index) => (
+      <ItemWrapper key={label}>
+        <P color="grayBase">{label}</P>
+        <div>
+          <StatusLight color={value === index ? 'success' : 'grayDark'} />
+        </div>
+      </ItemWrapper>
+    ))}
+  </Container>
+);
 
 DisplayStatus.displayName = 'DisplayStatus';
 DisplayStatus.propTypes = {

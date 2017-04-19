@@ -23,8 +23,10 @@ export const constants = {
 
 const setLoading = () => ({ type: SET_LOADING });
 const setLoaded = () => ({ type: SET_LOADED });
-const addToast = ({ kind, children }) =>
-  ({ type: ADD_TOAST, payload: { key: uuid(), kind, children }});
+const addToast = ({ kind, children }) => ({
+  type: ADD_TOAST,
+  payload: { key: uuid(), kind, children },
+});
 const removeToast = key => ({ type: REMOVE_TOAST, payload: key });
 
 export const actions = {
@@ -45,11 +47,9 @@ function addToastCycle(sources) {
     .filter(action => action.type === ADD_TOAST)
     .pluck('payload', 'key');
 
-  const action$ = key$
-    .concatMap(key => Observable
-      .of(removeToast(key))
-      .let(sources.Time.delay(DELAY)),
-    );
+  const action$ = key$.concatMap(key =>
+    Observable.of(removeToast(key)).let(sources.Time.delay(DELAY)),
+  );
 
   return {
     ACTION: action$,
@@ -86,10 +86,7 @@ export default function reducer(state = initialState, action = {}) {
     case ADD_TOAST:
       return {
         ...state,
-        toasts: [
-          action.payload,
-          ...state.toasts,
-        ],
+        toasts: [action.payload, ...state.toasts],
       };
 
     case REMOVE_TOAST:

@@ -7,10 +7,11 @@ const Container = styled.div`
   flex-direction: column;
 `;
 
-const LayoutDefault = ({ children, ...otherProps }) =>
+const LayoutDefault = ({ children, ...otherProps }) => (
   <Container {...otherProps}>
     {children}
-  </Container>;
+  </Container>
+);
 
 LayoutDefault.displayName = 'LayoutDefault';
 LayoutDefault.propTypes = {

@@ -24,21 +24,6 @@ module.exports = {
       },
     ],
     'object-shorthand': [2, 'always'],
-    'object-curly-spacing': [
-      2,
-      'always',
-      {
-        objectsInObjects: true,
-        arraysInObjects: true,
-      },
-    ],
-    'react/jsx-curly-spacing': [
-      2,
-      'never',
-      {
-        allowMultiline: true,
-      },
-    ],
     'react/no-multi-comp': [
       2,
       {

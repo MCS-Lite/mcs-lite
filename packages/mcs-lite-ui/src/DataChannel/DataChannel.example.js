@@ -15,68 +15,57 @@ const DemoWrapper = styled.div`
 `;
 
 storiesOf('DataChannel', module)
-  .addWithInfo(
-    'ButtonClear',
-    'Shared clear button.',
-    () => <ButtonClear />,
-    { inline: true },
-  )
-
+  .addWithInfo('ButtonClear', 'Shared clear button.', () => <ButtonClear />, {
+    inline: true,
+  })
   .addWithInfo(
     'DisplayStatus',
     '',
-    () =>
+    () => (
       <DemoWrapper>
-        <DataChannel.DisplayStatus
-          labels={['OFF', 'ON']}
-        />
+        <DataChannel.DisplayStatus labels={['OFF', 'ON']} />
         <DataChannel.DisplayStatus
           value={2}
           labels={['Apple1', 'Apple2', 'Pen', 'Pineapple', 'PPAPPPAPPPAP']}
         />
-      </DemoWrapper>,
+      </DemoWrapper>
+    ),
     { inline: true },
   )
-
   .addWithInfo(
     'DisplayUnitValue',
     '',
-    () =>
-      <DataChannel.DisplayUnitValue
-        value={1123124124121}
-        unit="攝氏"
-      />,
+    () => <DataChannel.DisplayUnitValue value={1123124124121} unit="攝氏" />,
     { inline: true },
   )
-
   .addWithInfo(
     'DisplayMultipleValue',
     '',
-    () =>
+    () => (
       <DataChannel.DisplayMultipleValue
         items={[
           { name: 'Value', value: 1234455 },
           { name: 'Period', value: 125125 },
         ]}
-      />,
+      />
+    ),
     { inline: true },
   )
-
   .addWithInfo(
     'DisplayString',
     '',
-    () =>
+    () => (
       <DataChannel.DisplayString
         value="value"
         placeholder="This place holds Hex value."
-      />,
+      />
+    ),
     { inline: true },
   )
-
   .addWithInfo(
     'ControlNumber',
     'React controlled-components.',
-    () =>
+    () => (
       <DataChannel.ControlNumber
         onSubmit={action('ControlNumber onSubmit')}
         onChange={action('ControlNumber onChange')}
@@ -84,44 +73,46 @@ storiesOf('DataChannel', module)
         placeholder="placeholder"
         unit="單位：攝氏"
         value={10}
-      />,
+      />
+    ),
     { inline: true },
   )
-
   .addWithInfo(
     'ControlPeriod',
     'React controlled-components.',
-    () =>
+    () => (
       <DataChannel.ControlPeriod
         onSubmit={action('ControlPeriod onSubmit')}
         onChange={action('ControlPeriod onChange')}
         placeholder="placeholder"
         value={10}
-      />,
+      />
+    ),
     { inline: true },
   )
-
   .addWithInfo(
     'ControlSwitch',
     '<Swtich> component with renamed props.',
-    () =>
+    () => (
       <DataChannel.ControlSwitch
         value={false}
         onSubmit={action('ControlSwitch onSubmit')}
-      />,
+      />
+    ),
     { inline: true },
   )
   .addWithInfo(
     'ControlString',
     'React controlled-components.',
-    () =>
+    () => (
       <DataChannel.ControlString
         onSubmit={action('ControlString onSubmit')}
         onChange={action('ControlString onChange')}
         onClear={action('ControlString onClear')}
         placeholder="placeholder"
         value=""
-      />,
+      />
+    ),
     { inline: true },
   )
   .addWithInfo(
@@ -167,7 +158,6 @@ storiesOf('DataChannel', module)
     },
     { inline: true },
   )
-
   .addWithInfo(
     'ControlRange - Stateful number',
     '',

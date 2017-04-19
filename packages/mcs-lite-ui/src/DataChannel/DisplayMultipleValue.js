@@ -27,22 +27,26 @@ export const StyledHeading = styled(Heading)`
   margin-top: 5px;
 `;
 
-const DisplayMultipleValue = ({ items, ...otherProps }) =>
-  <Container {...otherProps} >
+const DisplayMultipleValue = ({ items, ...otherProps }) => (
+  <Container {...otherProps}>
     {items.map(({ name, value }) => (
       <div key={name}>
         <P color="grayBase">{name}</P>
         <StyledHeading color="primary">{value}</StyledHeading>
       </div>
     ))}
-  </Container>;
+  </Container>
+);
 
 DisplayMultipleValue.displayName = 'DisplayMultipleValue';
 DisplayMultipleValue.propTypes = {
-  items: PropTypes.arrayOf(PropTypes.shape({
-    name: PropTypes.string.isRequired,
-    value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
-  })).isRequired,
+  items: PropTypes.arrayOf(
+    PropTypes.shape({
+      name: PropTypes.string.isRequired,
+      value: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
+        .isRequired,
+    }),
+  ).isRequired,
 };
 
 export default DisplayMultipleValue;

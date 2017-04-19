@@ -8,19 +8,21 @@ storiesOf('Notification', module)
   .addWithInfo(
     'API',
     '',
-    () =>
+    () => (
       <Notification>
         Do you want to go to Enalish version website?
-      </Notification>,
+      </Notification>
+    ),
     { inline: true },
   )
   .addWithInfo(
     'With feedbck Button component',
     '',
-    () =>
+    () => (
       <Notification>
         <P>Do you want to go to Enalish version website?</P>
         <Button>Yes, please</Button>
-      </Notification>,
+      </Notification>
+    ),
     { inline: true },
   );

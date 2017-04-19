@@ -8,24 +8,17 @@ import WebSocketNotification from '../WebSocketNotification';
 
 it('should renders <WebSocketNotification> correctly', () => {
   const wrapper = shallow(
-    <WebSocketNotification
-      getMessages={R.identity}
-      onClick={() => {}}
-    />,
+    <WebSocketNotification getMessages={R.identity} onClick={() => {}} />,
   );
 
   expect(toJson(wrapper)).toMatchSnapshot();
 });
 
-
 it('should handle onClick', () => {
   const mockOnClick = jest.fn();
   const wrapper = mount(
     <ThemeProvider theme={mobileTheme}>
-      <WebSocketNotification
-        getMessages={R.identity}
-        onClick={mockOnClick}
-      />
+      <WebSocketNotification getMessages={R.identity} onClick={mockOnClick} />
     </ThemeProvider>,
   );
 

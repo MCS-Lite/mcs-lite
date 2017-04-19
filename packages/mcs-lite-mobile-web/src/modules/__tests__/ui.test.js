@@ -26,7 +26,7 @@ describe('ui - 2. Action Creators', () => {
 });
 
 describe('ui - 3. Cycle', () => {
-  it('should emit correct Sinks given Sources with addToastCycle', (done) => {
+  it('should emit correct Sinks given Sources with addToastCycle', done => {
     const actionSource = {
       a: actions.addToast({}),
       b: actions.addToast({}),
@@ -37,21 +37,24 @@ describe('ui - 3. Cycle', () => {
       y: actions.removeToast('mockUuid()'),
     };
 
+    // prettier-ignore
     assertSourcesSinks(
-      { ACTION: { '-ab---|': actionSource }},
-      { ACTION: { '---x-y|': actionSink }},
+      { ACTION: { '-ab---|': actionSource } },
+      { ACTION: { '---x-y|': actionSink } },
       cycles.addToastCycle, () => {}, { interval: 1250 },
     );
 
+    // prettier-ignore
     assertSourcesSinks(
-      { ACTION: { '-(ab)---|': actionSource }},
-      { ACTION: { '---x-y--|': actionSink }},
+      { ACTION: { '-(ab)---|': actionSource } },
+      { ACTION: { '---x-y--|': actionSink } },
       cycles.addToastCycle, () => {}, { interval: 1250 },
     );
 
+    // prettier-ignore
     assertSourcesSinks(
-      { ACTION: { '-a-----b--|': actionSource }},
-      { ACTION: { '---x-----y|': actionSink }},
+      { ACTION: { '-a-----b--|': actionSource } },
+      { ACTION: { '---x-----y|': actionSink } },
       cycles.addToastCycle, done, { interval: 1250 },
     );
   });
@@ -64,32 +67,44 @@ describe('ui - 4. Reducer', () => {
   });
 
   it('should handle SET_LOADING', () => {
-    const state = reducer({}, {
-      type: constants.SET_LOADING,
-    });
+    const state = reducer(
+      {},
+      {
+        type: constants.SET_LOADING,
+      },
+    );
     expect(state).toMatchSnapshot();
   });
 
   it('should handle SET_LOADED', () => {
-    const state = reducer({}, {
-      type: constants.SET_LOADED,
-    });
+    const state = reducer(
+      {},
+      {
+        type: constants.SET_LOADED,
+      },
+    );
     expect(state).toMatchSnapshot();
   });
 
   it('should handle ADD_TOAST', () => {
-    const state = reducer({ toasts: []}, {
-      type: constants.ADD_TOAST,
-      payload: { message: 'message' },
-    });
+    const state = reducer(
+      { toasts: [] },
+      {
+        type: constants.ADD_TOAST,
+        payload: { message: 'message' },
+      },
+    );
     expect(state).toMatchSnapshot();
   });
 
   it('should handle REMOVE_TOAST', () => {
-    const state = reducer({ toasts: [{ key: 'key' }]}, {
-      type: constants.REMOVE_TOAST,
-      payload: 'key',
-    });
+    const state = reducer(
+      { toasts: [{ key: 'key' }] },
+      {
+        type: constants.REMOVE_TOAST,
+        payload: 'key',
+      },
+    );
     expect(state).toMatchSnapshot();
   });
 });

@@ -25,7 +25,8 @@ jest.mock('react-resize-detector', () => 'MockReactHammerJS');
 // For Icon
 jest.mock('react-svg-morph/lib/MorphReplace', () => 'MockMorphReplace');
 // For Code
-jest.mock('react-syntax-highlighter/dist/highlight', () => () => 'MockSyntaxHighlighter');
+jest.mock('react-syntax-highlighter/dist/highlight', () => () =>
+  'MockSyntaxHighlighter');
 // For Header & some portal to body problems
 jest.mock('react-overlays/lib/Portal', () => 'MockPortal');
 jest.mock('dom-align');

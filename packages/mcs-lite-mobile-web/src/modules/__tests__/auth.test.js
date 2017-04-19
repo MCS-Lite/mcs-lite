@@ -46,13 +46,13 @@ jest.mock('../../utils/cookieHelper', () => ({
 }));
 
 describe('auth - 3. Cycle', () => {
-  it('should emit correct Sinks given Sources with requireAuthCycle', (done) => {
+  it('should emit correct Sinks given Sources with requireAuthCycle', done => {
     const actionSource = {
       a: actions.requireAuth(),
     };
     const httpSource = {
       select: () => ({
-        r: Observable.of({ body: { results: { a: 'a' }}}),
+        r: Observable.of({ body: { results: { a: 'a' } } }),
       }),
     };
 
@@ -68,6 +68,7 @@ describe('auth - 3. Cycle', () => {
       },
     };
 
+    // prettier-ignore
     assertSourcesSinks({
       ACTION: { 'a----|': actionSource },
       HTTP:   { '----r|': httpSource },
@@ -77,7 +78,7 @@ describe('auth - 3. Cycle', () => {
     }, cycles.requireAuthCycle, done);
   });
 
-  it('should emit correct Sinks given Sources with tryEnterCycle', (done) => {
+  it('should emit correct Sinks given Sources with tryEnterCycle', done => {
     const actionSource = {
       a: actions.tryEnter(),
     };
@@ -86,6 +87,7 @@ describe('auth - 3. Cycle', () => {
       x: routingActions.pushPathname('/'),
     };
 
+    // prettier-ignore
     assertSourcesSinks({
       ACTION: { 'a|': actionSource },
     }, {
@@ -93,7 +95,7 @@ describe('auth - 3. Cycle', () => {
     }, cycles.tryEnterCycle, done);
   });
 
-  it('should emit correct Sinks given Sources with signoutCycle', (done) => {
+  it('should emit correct Sinks given Sources with signoutCycle', done => {
     const actionSource = {
       a: actions.signout(),
     };
@@ -105,6 +107,7 @@ describe('auth - 3. Cycle', () => {
       z: datapointsActions.clear(),
     };
 
+    // prettier-ignore
     assertSourcesSinks({
       ACTION: { 'a-----|': actionSource },
     }, {
@@ -112,12 +115,15 @@ describe('auth - 3. Cycle', () => {
     }, cycles.signoutCycle, done);
   });
 
-  it('should emit correct Sinks given Sources with changePasswordCycle', (done) => {
+  it('should emit correct Sinks given Sources with changePasswordCycle', done => {
     const stateSource = {
-      s: { auth: { access_token: 'faketoken456' }},
+      s: { auth: { access_token: 'faketoken456' } },
     };
     const actionSource = {
-      a: actions.changePassword({ password: '12332331', message: 'succesMessage' }),
+      a: actions.changePassword({
+        password: '12332331',
+        message: 'succesMessage',
+      }),
     };
     const httpSource = {
       select: () => ({
@@ -141,6 +147,7 @@ describe('auth - 3. Cycle', () => {
       },
     };
 
+    // prettier-ignore
     assertSourcesSinks({
       STATE:  { 's-------|': stateSource },
       ACTION: { 'a-------|': actionSource },
@@ -151,10 +158,13 @@ describe('auth - 3. Cycle', () => {
     }, cycles.changePasswordCycle, done);
   });
 
-  it('should emit correct Sinks given Sources with authErrorCycle', (done) => {
+  it('should emit correct Sinks given Sources with authErrorCycle', done => {
     const httpSource = {
       select: () => ({
-        r: Observable.throw({ ok: false, response: { body: { message: 'errorMessage' }}}),
+        r: Observable.throw({
+          ok: false,
+          response: { body: { message: 'errorMessage' } },
+        }),
       }),
     };
 
@@ -166,9 +176,10 @@ describe('auth - 3. Cycle', () => {
       y: actions.signout('', true),
     };
 
+    // prettier-ignore
     assertSourcesSinks(
-      { HTTP:   { 'r---|': httpSource }},
-      { ACTION: { '(xy|)': actionSink }},
+      { HTTP:   { 'r---|': httpSource } },
+      { ACTION: { '(xy|)': actionSink } },
       cycles.authErrorCycle, done,
     );
   });
@@ -181,18 +192,18 @@ describe('devices - 4. Reducer', () => {
   });
 
   it('should handle SET_USERINFO', () => {
-    const state = reducer({}, {
-      type: constants.SET_USERINFO,
-      payload: { token: 'token' },
-    });
+    const state = reducer(
+      {},
+      {
+        type: constants.SET_USERINFO,
+        payload: { token: 'token' },
+      },
+    );
     expect(state).toMatchSnapshot();
   });
 
   it('should handle CLEAR', () => {
-    const state = reducer(
-      { token: 'token' },
-      { type: constants.CLEAR },
-    );
+    const state = reducer({ token: 'token' }, { type: constants.CLEAR });
     expect(state).toMatchSnapshot();
   });
 });

@@ -6,10 +6,18 @@ import IconArrowLeft from 'mcs-lite-icon/lib/IconArrowLeft';
 import IconCalendar from 'mcs-lite-icon/lib/IconCalendar';
 import IconRefresh from 'mcs-lite-icon/lib/IconRefresh';
 import {
-  MobileHeader, DataChannelCard, DataChannelAdapter, P, DataPointAreaChart,
+  MobileHeader,
+  DataChannelCard,
+  DataChannelAdapter,
+  P,
+  DataPointAreaChart,
 } from 'mcs-lite-ui';
 import {
-  CardContainer, StyledSamll, HistoryHeader, ResetWrapper, HistoryContainer,
+  CardContainer,
+  StyledSamll,
+  HistoryHeader,
+  ResetWrapper,
+  HistoryContainer,
   ChartWrapper,
 } from './styled-components';
 import WebSocketNotification from '../../components/WebSocketNotification';
@@ -26,10 +34,13 @@ class DeviceDataChannelDetail extends React.Component {
 
     // Redux State
     datachannel: PropTypes.object,
-    data: PropTypes.arrayOf(PropTypes.shape({
-      updatedAt: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
-      value: PropTypes.number.isRequired,
-    })).isRequired,
+    data: PropTypes.arrayOf(
+      PropTypes.shape({
+        updatedAt: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
+          .isRequired,
+        value: PropTypes.number.isRequired,
+      }),
+    ).isRequired,
 
     // Redux Action
     fetchDeviceDetail: PropTypes.func.isRequired,
@@ -44,17 +55,22 @@ class DeviceDataChannelDetail extends React.Component {
     sendMessage: PropTypes.func.isRequired,
     reconnect: PropTypes.func.isRequired,
     isWebSocketClose: PropTypes.bool.isRequired,
-  }
+  };
   componentWillMount = () => {
-    const { deviceId, dataChannelId, fetchDeviceDetail, fetchDatapoints } = this.props;
+    const {
+      deviceId,
+      dataChannelId,
+      fetchDeviceDetail,
+      fetchDatapoints,
+    } = this.props;
     fetchDeviceDetail(deviceId);
     fetchDatapoints(deviceId, dataChannelId);
   };
   onResetClick = () => {
     const { dataChannelId, setQuery } = this.props;
     setQuery(dataChannelId, {});
-  }
-  eventHandler = (e) => {
+  };
+  eventHandler = e => {
     const { id, values, type } = e;
     const { deviceId, sendMessage, setDatapoint } = this.props;
     // TODO: refactor these codes.
@@ -69,11 +85,16 @@ class DeviceDataChannelDetail extends React.Component {
         setDatapoint(deviceId, datapoint);
         break;
     }
-  }
+  };
   render() {
     const {
-      deviceId, datachannel, data, getMessages: t, dataChannelId,
-      isWebSocketClose, reconnect,
+      deviceId,
+      datachannel,
+      data,
+      getMessages: t,
+      dataChannelId,
+      isWebSocketClose,
+      reconnect,
     } = this.props;
     const { eventHandler, onResetClick } = this;
 
@@ -93,7 +114,9 @@ class DeviceDataChannelDetail extends React.Component {
           rightChildren={
             <MobileHeader.MobileHeaderIcon
               component={Link}
-              to={updatePathname(`/devices/${deviceId}/dataChannels/${dataChannelId}/timeRange`)}
+              to={updatePathname(
+                `/devices/${deviceId}/dataChannels/${dataChannelId}/timeRange`,
+              )}
             >
               <IconCalendar />
             </MobileHeader.MobileHeaderIcon>
@@ -104,7 +127,7 @@ class DeviceDataChannelDetail extends React.Component {
           {isWebSocketClose && <WebSocketNotification onClick={reconnect} />}
 
           <CardContainer>
-            {datachannel && (
+            {datachannel &&
               <DataChannelCard
                 key={datachannel.datachannelId}
                 title={datachannel.datachannelName}
@@ -113,14 +136,16 @@ class DeviceDataChannelDetail extends React.Component {
                 <DataChannelAdapter
                   dataChannelProps={{
                     id: datachannel.datachannelId,
-                    type: dataChannelTypeMapper(datachannel.channelType.name, datachannel.type),
+                    type: dataChannelTypeMapper(
+                      datachannel.channelType.name,
+                      datachannel.type,
+                    ),
                     values: datachannel.datapoints.values,
                     format: datachannel.format,
                   }}
                   eventHandler={eventHandler}
                 />
-              </DataChannelCard>
-            )}
+              </DataChannelCard>}
           </CardContainer>
 
           <HistoryContainer>
@@ -138,12 +163,12 @@ class DeviceDataChannelDetail extends React.Component {
             </HistoryHeader>
 
             <ChartWrapper>
-              {data.length > 0 ? (
-                <DataPointAreaChart
-                  data={data}
-                  type={areaChartTypeMapper(datachannel.channelType.name)}
-                />
-              ) : t('noData')}
+              {data.length > 0
+                ? <DataPointAreaChart
+                    data={data}
+                    type={areaChartTypeMapper(datachannel.channelType.name)}
+                  />
+                : t('noData')}
             </ChartWrapper>
           </HistoryContainer>
         </main>

@@ -70,7 +70,7 @@ it('should return correctly state', () => {
 
   // After Open
   wrapper.instance().onFilterClick();
-  wrapper.instance().onFilterChange({ target: { value: 'keyword' }});
+  wrapper.instance().onFilterChange({ target: { value: 'keyword' } });
   expect(wrapper.state('filterValue')).toBe('keyword');
   expect(wrapper.state('isFilterOpen')).toBe(true);
 

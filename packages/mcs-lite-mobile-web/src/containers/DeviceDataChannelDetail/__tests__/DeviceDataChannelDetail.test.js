@@ -64,9 +64,7 @@ it('should renders <DeviceDataChannelDetail> correctly with Notification', () =>
     />,
   );
 
-  expect(
-    toJson(wrapper.find(WebSocketNotification)),
-  ).toMatchSnapshot();
+  expect(toJson(wrapper.find(WebSocketNotification))).toMatchSnapshot();
 });
 
 it('should handle onResetClick correctly', () => {
@@ -139,8 +137,9 @@ it('should handle eventHandler correctly', () => {
     id: 'id',
     values: { value: 1 },
   });
-  expect(sendMessageMock).toHaveBeenCalledWith('{"datachannelId":"id","values":{"value":1}}');
-
+  expect(sendMessageMock).toHaveBeenCalledWith(
+    '{"datachannelId":"id","values":{"value":1}}',
+  );
 
   // Before eventHandler with other type
   expect(setDatapointMock).not.toHaveBeenCalled();
@@ -150,10 +149,10 @@ it('should handle eventHandler correctly', () => {
     id: 'id',
     values: { value: 1 },
   });
-  expect(setDatapointMock).toHaveBeenCalledWith(
-    'deviceId',
-    { datachannelId: 'id', values: { value: 1 }},
-  );
+  expect(setDatapointMock).toHaveBeenCalledWith('deviceId', {
+    datachannelId: 'id',
+    values: { value: 1 },
+  });
 });
 
 it('should handle reconnect', () => {

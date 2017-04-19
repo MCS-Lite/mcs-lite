@@ -22,7 +22,7 @@ it('should render Container correctly with HOC', () => {
 
 it('should return props correctly with mapStateToProps', () => {
   const state = {
-    devices: { deviceId: { deviceName: 'deviceName' }},
+    devices: { deviceId: { deviceName: 'deviceName' } },
   };
   const ownProps = {
     params: { deviceId: 'deviceId' },

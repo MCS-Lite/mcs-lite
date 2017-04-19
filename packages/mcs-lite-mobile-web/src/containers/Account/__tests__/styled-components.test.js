@@ -3,7 +3,13 @@ import { mount } from 'enzyme';
 import toJson from 'enzyme-to-json';
 import { ThemeProvider } from 'styled-components';
 import mobileTheme from '../../../utils/mobileTheme';
-import { FlatButton, Container, Body, StyledLogo, Footer } from '../styled-components';
+import {
+  FlatButton,
+  Container,
+  Body,
+  StyledLogo,
+  Footer,
+} from '../styled-components';
 
 jest.mock('mcs-lite-ui');
 

@@ -35,7 +35,7 @@ export const StyledButton = styled(Button)`
 
   > * {
     transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
-    transform: ${props => props.active ? 'rotate(-180deg)' : 'initial'};
+    transform: ${props => (props.active ? 'rotate(-180deg)' : 'initial')};
   }
 `;
 
@@ -49,13 +49,13 @@ class Select extends React.Component {
     kind: 'primary',
     value: '',
   };
-  state = { isOpen: false }
+  state = { isOpen: false };
   onFocus = () => this.setState({ isOpen: true });
   onBlur = () => this.setState({ isOpen: false });
-  valueMapper = value => R.pipe(
-    R.find(R.propEq('value', value)),
-    R.pathOr('', ['children']),
-  )(this.props.items);
+  valueMapper = value =>
+    R.pipe(R.find(R.propEq('value', value)), R.pathOr('', ['children']))(
+      this.props.items,
+    );
   render() {
     const { isOpen } = this.state;
     const { items, kind, value, placeholder, ...otherProps } = this.props;
@@ -70,7 +70,9 @@ class Select extends React.Component {
             readOnly
             focus={isOpen}
           />
-          <StyledButton kind={kind} active={isOpen} square><IconFold /></StyledButton>
+          <StyledButton kind={kind} active={isOpen} square>
+            <IconFold />
+          </StyledButton>
         </StyledInputGroup>
 
         <StyledSelect
@@ -79,7 +81,8 @@ class Select extends React.Component {
           onFocus={onFocus}
           onBlur={onBlur}
         >
-          {placeholder && <option value={PLACEHOLDER_VALUE} disabled>{placeholder}</option>}
+          {placeholder &&
+            <option value={PLACEHOLDER_VALUE} disabled>{placeholder}</option>}
           {items.map(e => <option key={e.value} {...e} />)}
         </StyledSelect>
       </Wrapper>
