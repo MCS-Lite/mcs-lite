@@ -71,25 +71,25 @@ const CopyButton = componentFromStream(propStream => {
     .do(copyToClipboard)
     .subscribe();
 
-  return props$.combineLatest(status$, ({
-    children,
-    ...otherProps
-  }, status) => (
-    <StyledButton
-      {...omitProps(otherProps)}
-      size="small"
-      status={status}
-      onClick={onClick}
-    >
-      {status === DEFAULT
-        ? children
-        : <MorphReplace width={10} height={10}>
-            {status === LOADING
-              ? <IconLoading key="loading" />
-              : <IconDone key="success" />}
-          </MorphReplace>}
-    </StyledButton>
-  ));
+  return props$.combineLatest(
+    status$,
+    ({ children, ...otherProps }, status) => (
+      <StyledButton
+        {...omitProps(otherProps)}
+        size="small"
+        status={status}
+        onClick={onClick}
+      >
+        {status === DEFAULT
+          ? children
+          : <MorphReplace width={10} height={10}>
+              {status === LOADING
+                ? <IconLoading key="loading" />
+                : <IconDone key="success" />}
+            </MorphReplace>}
+      </StyledButton>
+    ),
+  );
 });
 
 CopyButton.displayName = 'CopyButton';

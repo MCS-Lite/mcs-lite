@@ -142,16 +142,15 @@ function changePasswordCycle(sources) {
   const password$ = payload$.pluck('password');
   const message$ = payload$.pluck('message');
 
-  const request$ = password$.withLatestFrom(accessToken$).map(([
-    password,
-    accessToken,
-  ]) => ({
-    url: '/api/users/changepassword',
-    method: 'PUT',
-    headers: { Authorization: `Bearer ${accessToken}` },
-    send: { password },
-    category: 'changePassword',
-  }));
+  const request$ = password$
+    .withLatestFrom(accessToken$)
+    .map(([password, accessToken]) => ({
+      url: '/api/users/changepassword',
+      method: 'PUT',
+      headers: { Authorization: `Bearer ${accessToken}` },
+      send: { password },
+      category: 'changePassword',
+    }));
 
   const response$ = sources.HTTP.select('changePassword').switch();
 
