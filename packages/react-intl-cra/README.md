@@ -3,6 +3,10 @@
 
 This is just a workaround for [create-react-app #1227](https://github.com/facebookincubator/create-react-app/issues/1227#issuecomment-285738137) and [react-intl #869](https://github.com/yahoo/react-intl/issues/869) in unofficial way.
 
+## Demo
+
+Standalone example based on Create-React-App: https://github.com/evenchange4/react-intl-po-example
+
 ## Installation
 
 ```console
