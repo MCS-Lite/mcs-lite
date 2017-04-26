@@ -186,7 +186,7 @@ $ license-checker --csv --out docs/licenses.csv
 
 ## [CONTRIBUTING](CONTRIBUTING.md)
 ## [CHANGELOG](CHANGELOG.md)
-## [LICENSE](LICENSE.md)
+## [LICENSE](LICENSE)
 
 ## Team
 
