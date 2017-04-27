@@ -1,5 +1,24 @@
 # MCS Lite changelogs
 
+## Released (2017-04-27)
+
+### Bump Versions
+
+-   mcs-lite-mobile-web@0.3.6
+-   mcs-lite-ui@0.3.6
+-   react-intl-cra@0.1.10
+
+#### :memo: Documentation
+* Other
+  * [#301](https://github.com/MCS-Lite/mcs-lite/pull/301) docs(License): update. ([@evenchange4](https://github.com/evenchange4))
+
+#### :house: Internal
+* `mcs-lite-mobile-web`, `mcs-lite-ui`
+  * [#300](https://github.com/MCS-Lite/mcs-lite/pull/300) chore(prettier): update. ([@evenchange4](https://github.com/evenchange4))
+
+#### Committers: 1
+- Michael Hsu ([evenchange4](https://github.com/evenchange4))
+
 ## Released (2017-04-19)
 
 ### Bump Versions
