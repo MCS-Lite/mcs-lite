@@ -7,11 +7,10 @@
 	* [管理者介面使用說明](introduction/mcs_lite_admin_usage.md)
 
 ## 教學範例
-* [使用 LinkIt 7697 開發版](tutorial/7697_overview.md)
-	* [Arduino IDE](tutorial/Arduino_overview.md)
+* 使用 LinkIt 7697 開發版
+	* Arduino IDE
 		* [遠端控制 LED 明滅](tutorial/7697_arduino_led_blink.md) 
-	* [LinkIt SDK](tutorial/SDK_overview.md)
-		* [遠端控制 LED 明滅](tutorial/7697_sdk_led_blink.md) 
+	* LinkIt SDK
 	
 
 	

@@ -1,15 +1,15 @@
 {
   "name": "mcs-lite-introduction",
-  "version": "0.1.6",
+  "version": "0.1.4",
   "description": "GitBook for MCS Lite documentation",
-  "repository": "MCS-Lite/mcs-lite",
+  "repository": "evenchange4/mcs-lite",
   "author": "Daria Chen <smartexist@gmail.com>",
   "bugs": {
-    "url": "https://github.com/MCS-Lite/mcs-lite/issues",
+    "url": "https://github.com/evenchange4/mcs-lite/issues",
     "email": "evenchange4@gmail.com"
   },
-  "homepage": "https://github.com/MCS-Lite/mcs-lite#readme",
-  "license": "MIT",
+  "homepage": "https://github.com/evenchange4/mcs-lite#readme",
+  "license": "ISC",
   "scripts": {
     "clean": "rm -rf _book",
     "start": "gitbook serve",
