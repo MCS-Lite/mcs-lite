@@ -5,8 +5,8 @@
 
 ### 前置作業
 
-1. 設定 LinkIt 7697 的 Arduino IDE 開發環境，詳細步驟請參考 [Labs 官方文件](https://labs.mediatek.com/zh-tw/support/resources)。
-2. 將 LinkIt 7697 連接到您的電腦，詳細步驟請參考 [Labs 官方文件](https://labs.mediatek.com/zh-tw/support/resources)。
+1. 設定 LinkIt 7697 的 Arduino IDE 開發環境，詳細步驟請參考 [Labs 官方文件](https://docs.labs.mediatek.com/resource/linkit7697-arduino/en/setup-arduino-ide-for-linkit-7697)。
+2. 將 LinkIt 7697 連接到您的電腦，詳細步驟請參考 [Labs 官方文件](https://docs.labs.mediatek.com/resource/linkit7697-arduino/en/connecting-linkit-7697-to-computer)。
 3. 啟動 MCS Lite Application，建立一個產品原型，定義資料通道並且新增一個測試裝置。本範例會使用到的資料通道為：
 
 	* 開關控制器：資料通道 ID 為 **switch**
