@@ -1,0 +1,8 @@
+exports[`test should override pathname 1`] = `
+Object {
+  "pathname": "/account",
+  "query": Object {
+    "locale": "zh-TW",
+  },
+}
+`;

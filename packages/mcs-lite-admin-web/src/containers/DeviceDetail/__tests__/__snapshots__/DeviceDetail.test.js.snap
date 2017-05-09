@@ -1,0 +1,128 @@
+exports[`test should renders <DeviceDetail> correctly 1`] = `
+<div>
+  <HelmetWrapper
+    encodeSpecialCharacters={true}>
+    <title>
+      deviceName
+    </title>
+  </HelmetWrapper>
+  <MobileHeader
+    leftChildren={
+      <MobileHeaderIcon
+        component={[Function]}
+        to={[Function]}>
+        <IconArrowLeft
+          size="1em" />
+      </MobileHeaderIcon>
+    }
+    rightChildren={
+      Array [
+        <MobileHeaderIcon
+          component={[Function]}
+          onClick={[Function]}>
+          <IconMoreVert
+              size="1em" />
+      </MobileHeaderIcon>,
+        false,
+      ]
+    }
+    title="deviceName" />
+  <main>
+    <PullToRefresh
+      IconArrow={[Function]}
+      IconLoading={[Function]}
+      isLoading={false}
+      onPull={[Function]}>
+      <div>
+        <Styled(Img)
+          src="banner.svg" />
+        <Styled(MobileContentWrapper)>
+          <styled.div />
+        </Styled(MobileContentWrapper)>
+      </div>
+    </PullToRefresh>
+  </main>
+</div>
+`;
+
+exports[`test should renders <DeviceDetail> correctly when Menu show 1`] = `
+<div>
+  <HelmetWrapper
+    encodeSpecialCharacters={true}>
+    <title />
+  </HelmetWrapper>
+  <MobileHeader
+    leftChildren={
+      <MobileHeaderIcon
+        component={[Function]}
+        to={[Function]}>
+        <IconArrowLeft
+          size="1em" />
+      </MobileHeaderIcon>
+    }
+    rightChildren={
+      Array [
+        <MobileHeaderIcon
+          component={[Function]}
+          onClick={[Function]}>
+          <IconMoreVert
+              size="1em" />
+      </MobileHeaderIcon>,
+        <Overlay
+          alignConfig={
+              Object {
+                  "offset": Array [
+                    20,
+                    -20,
+                  ],
+                  "points": Array [
+                    "tr",
+                    "bc",
+                  ],
+                }
+          }
+          onClickOutSide={[Function]}
+          transitionConfig={
+              Object {
+                  "component": false,
+                  "enter": Object {
+                    "translateY": 0,
+                  },
+                  "leave": Object {
+                    "translateY": -10,
+                  },
+                }
+          }>
+          <Menu>
+              <StyledLink
+                  to={[Function]}>
+                  <MenuItem>
+                      deviceIntro
+                  </MenuItem>
+              </StyledLink>
+          </Menu>
+      </Overlay>,
+      ]
+    } />
+  <main>
+    <PullToRefresh
+      IconArrow={[Function]}
+      IconLoading={[Function]}
+      isLoading={false}
+      onPull={[Function]}>
+      <div>
+        <Styled(Img)
+          src="banner.svg" />
+        <Styled(MobileContentWrapper)>
+          <styled.div />
+        </Styled(MobileContentWrapper)>
+      </div>
+    </PullToRefresh>
+  </main>
+</div>
+`;
+
+exports[`test should renders <DeviceDetail> correctly with Notification 1`] = `
+<InjectIntl(withPropsOnChange(WebSocketNotification))
+  onClick={[Function]} />
+`;

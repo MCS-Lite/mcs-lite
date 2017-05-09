@@ -1,0 +1,6 @@
+exports[`test should renders <Logo> correctly 1`] = `
+<img
+  alt="MCS Lite Logo"
+  className="sc-bdVaJa kawKoJ"
+  src="logo_mcs_lite_black.svg" />
+`;

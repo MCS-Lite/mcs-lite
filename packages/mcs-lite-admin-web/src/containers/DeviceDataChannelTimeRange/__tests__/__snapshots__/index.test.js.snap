@@ -1,0 +1,17 @@
+exports[`test should render Container correctly with HOC 1`] = `<Connect(InjectIntl(withPropsOnChange(DeviceDataChannelTimeRange))) />`;
+
+exports[`test should return props correctly with mapDispatchToProps 1`] = `
+Object {
+  "fetchDeviceDetail": [Function],
+  "setQuery": [Function],
+}
+`;
+
+exports[`test should return props correctly with mapStateToProps 1`] = `
+Object {
+  "dataChannelId": "dataChannelId",
+  "deviceId": "deviceId",
+  "end": 2,
+  "start": 1,
+}
+`;

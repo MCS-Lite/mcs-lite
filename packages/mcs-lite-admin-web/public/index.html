@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/images/favicon.ico">
+    <link rel="icon" href="%PUBLIC_URL%/images/favicon.ico" />
+
+    <!-- Allow installing the app to the homescreen -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+    <meta name="theme-color" content="#00A1DE">
+
+    <!-- CONFIGURATION for safari ref: http://taylor.fausak.me/2015/01/27/ios-8-web-apps/ -->
+    <!-- Allow web app to be run in full-screen mode. -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- Make the app title different than the page title. -->
+    <meta name="apple-mobile-web-app-title" content="MCS Lite">
+    <!-- Configure the status bar. -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <!-- Icons ref: https://developer.apple.com/ios/human-interface-guidelines/graphics/app-icon/ -->
+    <link rel="apple-touch-icon-precomposed" href="%PUBLIC_URL%/images/icon_mcs_lite_180.png">
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="%PUBLIC_URL%/images/icon_mcs_lite_120.png">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="%PUBLIC_URL%/images/icon_mcs_lite_152.png">
+    <link rel="apple-touch-icon-precomposed" sizes="167x167" href="%PUBLIC_URL%/images/icon_mcs_lite_167.png">
+    <link rel="apple-touch-icon-precomposed" sizes="180x180" href="%PUBLIC_URL%/images/icon_mcs_lite_180.png">
+    <link rel="apple-touch-icon-precomposed" sizes="1024x1024" href="%PUBLIC_URL%/images/icon_mcs_lite_1024.png">
+
+    <!--
+      Notice the use of %PUBLIC_URL% in the tag above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>MCS Lite Admin</title>
+
+    <!--
+      The "__SOCKET_PORT_FROM_SERVER__" string will be replaced in the
+      mcs-lite-app server, so that we can set PORT variable dynamically.
+
+      Reference: Injecting Data from the Server into the Page.
+      (https://goo.gl/hExshS)
+
+      1. window.SOCKET_PORT: websocket port
+    -->
+    <script>
+      try {
+        window.SOCKET_PORT = __SOCKET_PORT_FROM_SERVER__;
+      } catch(e) {
+        console.info('[DEVELOPMENT MODE] Load %REACT_APP_SOCKET_PORT% as REACT_APP_SOCKET_PORT.', e);
+        window.SOCKET_PORT = %REACT_APP_SOCKET_PORT%;
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start`.
+      To create a production bundle, use `npm run build`.
+    -->
+  </body>
+</html>

@@ -1,0 +1,88 @@
+exports[`test should renders <DeviceDataChannelTimeRange> correctly 1`] = `
+<div>
+  <HelmetWrapper
+    encodeSpecialCharacters={true}>
+    <title>
+      searchTimeRange
+    </title>
+  </HelmetWrapper>
+  <MobileHeader
+    leftChildren={
+      <MobileHeaderIcon
+        component={[Function]}
+        to={[Function]}>
+        <IconArrowLeft
+          size="1em" />
+      </MobileHeaderIcon>
+    }
+    title="searchTimeRange" />
+  <main>
+    <Styled(MobileContentWrapper)>
+      <styled.div
+        onClick={[Function]}>
+        <P>
+          from
+        </P>
+        <styled.div>
+          mocklocalTimeFormat
+        </styled.div>
+      </styled.div>
+      <styled.div
+        onClick={[Function]}>
+        <P>
+          to
+        </P>
+        <styled.div>
+          mocklocalTimeFormat
+        </styled.div>
+      </styled.div>
+      <DatetimePickerDialog
+        datetimePickerProps={
+          Object {
+            "defaultValue": 1,
+            "years": Array [
+              2015,
+              2016,
+              2017,
+              2018,
+            ],
+          }
+        }
+        onHide={[Function]}
+        onSubmit={[Function]}
+        show={false} />
+    </Styled(MobileContentWrapper)>
+  </main>
+  <MobileFixedFooter>
+    <styled.div>
+      <StyledLink
+        to={[Function]}>
+        <Button
+          active={false}
+          block={true}
+          component="button"
+          kind="default"
+          round={false}
+          size="normal"
+          square={false}>
+          cancel
+        </Button>
+      </StyledLink>
+      <StyledLink
+        to={[Function]}>
+        <Button
+          active={false}
+          block={true}
+          component="button"
+          kind="primary"
+          onClick={[Function]}
+          round={false}
+          size="normal"
+          square={false}>
+          save
+        </Button>
+      </StyledLink>
+    </styled.div>
+  </MobileFixedFooter>
+</div>
+`;

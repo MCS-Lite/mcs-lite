@@ -1,0 +1,5 @@
+exports[`test should renders <RequireAuth> correctly 1`] = `
+<div>
+  Mock Children
+</div>
+`;

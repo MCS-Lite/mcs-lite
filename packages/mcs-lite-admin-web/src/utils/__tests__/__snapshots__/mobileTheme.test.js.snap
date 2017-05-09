@@ -1,0 +1,40 @@
+exports[`test should return mobileTheme 1`] = `
+Object {
+  "base": Object {
+    "bodyBackgroundColor": "#F1F2F7",
+    "bodyColor": "#353630",
+    "fontSize": "14px",
+    "lineHeight": 1.5,
+  },
+  "color": Object {
+    "black": "#353630",
+    "default": "#FAFAFA",
+    "error": "#F5364E",
+    "grayBase": "#999A94",
+    "grayDark": "#D1D2D3",
+    "grayLight": "#FAFAFA",
+    "primary": "#00A1DE",
+    "success": "#69BE28",
+    "warning": "#F39A1E",
+    "white": "#FFFFFF",
+  },
+  "fontSize": Object {
+    "h1": "2.14rem",
+    "h2": "1.57rem",
+    "h3": "1.43rem",
+    "h4": "1.14rem",
+    "h5": "1rem",
+    "h6": "1rem",
+    "p": "1rem",
+    "small": "0.857rem",
+  },
+  "height": Object {
+    "normal": "40px",
+    "small": "25px",
+  },
+  "mobile": Object {
+    "headerHeight": "56px",
+    "maxWidth": "800px",
+  },
+}
+`;

@@ -1,0 +1,14 @@
+exports[`test should return messages 1`] = `
+Object {
+  "WebSocketNotification.info": Object {
+    "defaultMessage": "伺服器連線異常，目前無法即時上傳與接收資料，是否要重新連線？",
+    "description": "Error message",
+    "id": "WebSocketNotification.info",
+  },
+  "WebSocketNotification.reconnect": Object {
+    "defaultMessage": "重新連線",
+    "description": "For button content",
+    "id": "WebSocketNotification.reconnect",
+  },
+}
+`;

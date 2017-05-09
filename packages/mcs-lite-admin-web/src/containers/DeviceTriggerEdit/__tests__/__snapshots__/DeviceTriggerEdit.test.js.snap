@@ -1,0 +1,35 @@
+exports[`test should renders <DeviceTriggerEdit> correctly 1`] = `
+<div>
+  <HelmetWrapper
+    encodeSpecialCharacters={true}>
+    <title>
+      editTriggerAndAction
+    </title>
+  </HelmetWrapper>
+  <MobileHeader
+    leftChildren={
+      <MobileHeaderIcon
+        component={[Function]}
+        to={[Function]}>
+        <IconArrowLeft
+          size="1em" />
+      </MobileHeaderIcon>
+    }
+    title="editTriggerAndAction" />
+  <main>
+    <Styled(MobileContentWrapper)>
+      <P>
+        觸發條件名稱 A觸發條件名稱 A觸發條件名稱 A觸發條件名稱 A觸發條件名稱 A觸發條件名稱 A觸發條件名稱 A
+      </P>
+      <div>
+        <Styled(Switch)
+          checked={false}
+          kind="primary"
+          onClick={[Function]} />
+      </div>
+    </Styled(MobileContentWrapper)>
+    <form
+      onSubmit={[Function]} />
+  </main>
+</div>
+`;

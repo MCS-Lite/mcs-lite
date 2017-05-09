@@ -1,0 +1,64 @@
+exports[`test should renders <DeviceTrigger> correctly 1`] = `
+<div>
+  <HelmetWrapper
+    encodeSpecialCharacters={true}>
+    <title>
+      triggerAndAction
+    </title>
+  </HelmetWrapper>
+  <MobileHeader
+    leftChildren={
+      <MobileHeaderIcon
+        component={[Function]}
+        to={[Function]}>
+        <IconArrowLeft
+          size="1em" />
+      </MobileHeaderIcon>
+    }
+    title="triggerAndAction" />
+  <main>
+    <PullToRefresh
+      IconArrow={[Function]}
+      IconLoading={[Function]}
+      isLoading={false}
+      onPull={[Function]}>
+      <PreventDrag>
+        <StyledLink
+          to={[Function]}>
+          <Styled(MobileContentWrapper)>
+            <div>
+              <P>
+                觸發條件名稱 A
+              </P>
+              <Styled(Small)>
+                on
+              </Styled(Small)>
+            </div>
+            <styled.div>
+              <IconChevronRight
+                size="1em" />
+            </styled.div>
+          </Styled(MobileContentWrapper)>
+        </StyledLink>
+        <StyledLink
+          to={[Function]}>
+          <Styled(MobileContentWrapper)>
+            <div>
+              <P>
+                觸發條件名稱 A
+              </P>
+              <Styled(Small)>
+                off
+              </Styled(Small)>
+            </div>
+            <styled.div>
+              <IconChevronRight
+                size="1em" />
+            </styled.div>
+          </Styled(MobileContentWrapper)>
+        </StyledLink>
+      </PreventDrag>
+    </PullToRefresh>
+  </main>
+</div>
+`;

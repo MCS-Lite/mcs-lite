@@ -1,0 +1,21 @@
+exports[`test should return messages 1`] = `
+Object {
+  "Signin.email": Object {
+    "defaultMessage": "帳號",
+    "id": "Signin.email",
+  },
+  "Signin.password": Object {
+    "defaultMessage": "密碼",
+    "id": "Signin.password",
+  },
+  "Signin.signin": Object {
+    "defaultMessage": "登入",
+    "description": "Document Title",
+    "id": "Signin.signin",
+  },
+  "Signin.welcome": Object {
+    "defaultMessage": "歡迎",
+    "id": "Signin.welcome",
+  },
+}
+`;
