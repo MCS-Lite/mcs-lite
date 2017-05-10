@@ -16,8 +16,7 @@ module.exports = {
       },
     ],
     'import/no-extraneous-dependencies': 0,
-    // <div onClick={() => {}} />
-    'jsx-a11y/no-static-element-interactions': 0,
+    'jsx-a11y/no-static-element-interactions': 0, // <div onClick={() => {}} />
     'react/forbid-prop-types': 0,
     'react/require-default-props': 0,
 

@@ -1,7 +1,7 @@
 // @flow
 import assocPath from 'ramda/src/assocPath';
 
-type Func = string => (Object) => Object;
+type Func = string => Object => Object;
 
 /**
  * For react-router <Link />
