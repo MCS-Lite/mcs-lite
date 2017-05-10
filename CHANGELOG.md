@@ -1,5 +1,27 @@
 # MCS Lite changelogs
 
+## Released (2017-05-10)
+
+#### :rocket: New Feature
+* `mcs-lite-design`
+  * [#306](https://github.com/MCS-Lite/mcs-lite/pull/306) feat(Design): Add new Logout, Sync icons. ([@abby1002](https://github.com/abby1002))
+  * [#305](https://github.com/MCS-Lite/mcs-lite/pull/305) feat(Design): add new Pause, Play, Refresh icons. ([@abby1002](https://github.com/abby1002))
+
+#### :boom: Breaking Change
+* `eslint-config-mcs-lite`, `mcs-lite-mobile-web`, `mcs-lite-ui`
+  * [#307](https://github.com/MCS-Lite/mcs-lite/pull/307) fix(eslint): remove useless old rules [BREAKING]. ([@evenchange4](https://github.com/evenchange4))
+
+  ** Break Eslint rules for development. **
+
+#### :memo: Documentation
+* `mcs-lite-introduction`
+  * [#303](https://github.com/MCS-Lite/mcs-lite/pull/303) Feature/mcs lite intro v2. ([@dariachen](https://github.com/dariachen))
+
+#### Committers: 3
+- Abby Chiu ([abby1002](https://github.com/abby1002))
+- Daria Chen ([dariachen](https://github.com/dariachen))
+- Michael Hsu ([evenchange4](https://github.com/evenchange4))
+
 ## Released (2017-04-27)
 
 ### Bump Versions
