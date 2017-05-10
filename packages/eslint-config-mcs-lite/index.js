@@ -9,30 +9,6 @@ module.exports = {
     expect: true,
   },
   rules: {
-    'react/sort-comp': [
-      2,
-      {
-        order: [
-          'lifecycle',
-          '/^on.+$/',
-          '/^(get|set)(?!(InitialState$|DefaultProps$|ChildContext$)).+$/',
-          'everything-else',
-          '/^render.+$/',
-          'render',
-        ],
-      },
-    ],
-    'object-shorthand': [2, 'always'],
-    'react/no-multi-comp': [
-      2,
-      {
-        ignoreStateless: true,
-      },
-    ],
-    'no-use-before-define': [2, 'nofunc'],
-    'no-console': 2,
-    'import/no-unresolved': 0,
-    'global-require': 0,
     'react/jsx-filename-extension': [
       1,
       {
