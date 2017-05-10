@@ -16,14 +16,8 @@ module.exports = {
       },
     ],
     'import/no-extraneous-dependencies': 0,
-    'no-plusplus': [
-      'error',
-      {
-        allowForLoopAfterthoughts: true,
-      },
-    ],
+    // <div onClick={() => {}} />
     'jsx-a11y/no-static-element-interactions': 0,
-    'no-confusing-arrow': 0,
     'react/forbid-prop-types': 0,
     'react/require-default-props': 0,
 
