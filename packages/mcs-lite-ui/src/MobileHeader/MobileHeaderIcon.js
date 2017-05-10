@@ -7,6 +7,11 @@ const omitProps = R.omit(['active']);
 
 const BaseComponent = ({ component, children, ...otherProps }) =>
   React.createElement(component, omitProps(otherProps), children);
+BaseComponent.displayName = 'BaseComponent';
+BaseComponent.propTypes = {
+  component: PropTypes.any.isRequired,
+  children: PropTypes.any.isRequired,
+};
 
 const MobileHeaderIcon = styled(BaseComponent)`
   color: ${props => props.theme.color.white};

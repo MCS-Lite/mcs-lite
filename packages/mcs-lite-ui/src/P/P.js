@@ -8,6 +8,10 @@ const getBaseComponent = R.ifElse(isString, R.always('p'), R.always('div'));
 
 const Component = ({ children, ...otherProps }) =>
   React.createElement(getBaseComponent(children), otherProps, children);
+Component.displayName = 'Component';
+Component.propTypes = {
+  children: PropTypes.any.isRequired,
+};
 
 const P = styled(Component)`
   margin: 0;

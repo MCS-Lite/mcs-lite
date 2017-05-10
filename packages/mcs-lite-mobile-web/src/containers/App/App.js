@@ -32,6 +32,8 @@ const App = ({ toasts, children, getMessages: t }) => (
 
 App.displayName = 'App';
 App.propTypes = {
+  children: PropTypes.any.isRequired,
+
   // Redux State
   toasts: PropTypes.arrayOf(
     PropTypes.shape({

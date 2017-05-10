@@ -297,9 +297,9 @@ class DataChannelAdapter extends React.Component {
             ? undefined
             : R.findIndex(R.propEq('value', values.value))(format.items);
           const valueMapper = index =>
-            (format.items[index]
+            format.items[index]
               ? format.items[index].value
-              : NO_DATA_PLACEHOLDER);
+              : NO_DATA_PLACEHOLDER;
 
           return (
             <DataChannel.ControlRange
@@ -349,7 +349,7 @@ class DataChannelAdapter extends React.Component {
         () => {
           // Hint: index could be empty string. (For Controlled Component usage.)
           const valueMapper = index =>
-            (R.isNil(index) || R.isEmpty(index) ? NO_DATA_PLACEHOLDER : index);
+            R.isNil(index) || R.isEmpty(index) ? NO_DATA_PLACEHOLDER : index;
 
           return (
             <DataChannel.ControlRange
@@ -408,7 +408,7 @@ class DataChannelAdapter extends React.Component {
         () => {
           // Hint: index could be empty string. (For Controlled Component usage.)
           const valueMapper = index =>
-            (R.isNil(index) || R.isEmpty(index) ? NO_DATA_PLACEHOLDER : index);
+            R.isNil(index) || R.isEmpty(index) ? NO_DATA_PLACEHOLDER : index;
 
           return (
             <Wrapper>

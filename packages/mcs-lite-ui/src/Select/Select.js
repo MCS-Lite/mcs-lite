@@ -44,6 +44,13 @@ class Select extends React.Component {
     kind: PropTypes.string,
     value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
     placeholder: PropTypes.string,
+    items: PropTypes.arrayOf(
+      PropTypes.shape({
+        children: PropTypes.any.isRequired,
+        value: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
+          .isRequired,
+      }),
+    ).isRequired,
   };
   static defaultProps = {
     kind: 'primary',

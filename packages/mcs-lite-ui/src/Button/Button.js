@@ -18,6 +18,11 @@ const omitProps = R.omit([
 
 const BaseComponent = ({ component, children, ...otherProps }) =>
   React.createElement(component, omitProps(otherProps), children);
+BaseComponent.displayName = 'BaseComponent';
+BaseComponent.propTypes = {
+  component: PropTypes.any.isRequired,
+  children: PropTypes.any.isRequired,
+};
 
 const Button = styled(BaseComponent)`
   border-width: 1px;

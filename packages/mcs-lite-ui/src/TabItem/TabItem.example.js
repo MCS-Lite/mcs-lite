@@ -1,8 +1,12 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { storiesOf, action } from '@kadira/storybook';
 import TabItem from '.';
 
 class StatefulTabItems extends React.Component {
+  static propTypes = {
+    items: PropTypes.arrayOf(PropTypes.number).isRequired,
+  };
   state = { value: '' };
   onChange = (e, value) => this.setState({ value });
   render() {

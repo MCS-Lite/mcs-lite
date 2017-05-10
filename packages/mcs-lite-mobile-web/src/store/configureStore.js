@@ -30,7 +30,7 @@ const configureStore = (initialState, history) => {
    * Ref: https://github.com/buunguyen/redux-freeze#usage
    */
   if (process.env.NODE_ENV !== 'production') {
-    middlewares.push(require('redux-freeze'));
+    middlewares.push(require('redux-freeze')); // eslint-disable-line global-require
   }
 
   const store = createStore(

@@ -4,23 +4,23 @@ import { storiesOf, action } from '@kadira/storybook';
 import { kindList } from 'mcs-lite-theme';
 import Switch from '.';
 
-const withState = Component => class WithStateComponent
-  extends React.Component {
-  state = { checked: false };
-  onClick = () => {
-    action('click');
-    this.setState({ checked: !this.state.checked });
+const withState = Component =>
+  class WithStateComponent extends React.Component {
+    state = { checked: false };
+    onClick = () => {
+      action('click');
+      this.setState({ checked: !this.state.checked });
+    };
+    render() {
+      return (
+        <Component
+          {...this.props}
+          onClick={this.onClick}
+          checked={this.state.checked}
+        />
+      );
+    }
   };
-  render() {
-    return (
-      <Component
-        {...this.props}
-        onClick={this.onClick}
-        checked={this.state.checked}
-      />
-    );
-  }
-};
 
 const StyledSwitch = withState(
   styled(Switch)`
