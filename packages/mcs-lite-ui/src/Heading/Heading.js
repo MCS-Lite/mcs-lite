@@ -4,6 +4,11 @@ import styled from 'styled-components';
 
 const H = ({ level, children, ...otherProps }) =>
   React.createElement(`h${level}`, otherProps, children);
+H.displayName = 'H';
+H.propTypes = {
+  level: PropTypes.number.isRequired,
+  children: PropTypes.any.isRequired,
+};
 
 const Heading = styled(H)`
   margin: 0;

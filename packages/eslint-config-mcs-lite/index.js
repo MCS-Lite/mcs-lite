@@ -9,7 +9,6 @@ module.exports = {
     expect: true,
   },
   rules: {
-    'react/prop-types': 0,
     'react/sort-comp': [
       2,
       {
