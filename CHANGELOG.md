@@ -2,6 +2,13 @@
 
 ## Released (2017-05-10)
 
+-   eslint-config-mcs-lite@0.3.0 🚨
+-   mcs-lite-design@0.1.6
+-   mcs-lite-icon@0.2.5
+-   mcs-lite-introduction@0.1.7
+-   mcs-lite-mobile-web@0.3.7
+-   mcs-lite-ui@0.3.7
+
 #### :rocket: New Feature
 * `mcs-lite-design`
   * [#306](https://github.com/MCS-Lite/mcs-lite/pull/306) feat(Design): Add new Logout, Sync icons. ([@abby1002](https://github.com/abby1002))
