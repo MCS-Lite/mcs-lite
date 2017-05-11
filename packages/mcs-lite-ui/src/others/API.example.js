@@ -8,7 +8,7 @@ const JsonDisplay = ({ data }) => (
 );
 JsonDisplay.displayName = 'JsonDisplay';
 JsonDisplay.propTypes = {
-  data: PropTypes.object.isRequired,
+  data: PropTypes.oneOfType([PropTypes.object, PropTypes.array]).isRequired,
 };
 
 storiesOf('API [mcs-lite-theme]', module)
