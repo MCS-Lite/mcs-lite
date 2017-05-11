@@ -48,6 +48,7 @@
   "devDependencies": {
     "@kadira/react-storybook-addon-info": "^3.4.0",
     "@kadira/storybook": "^2.35.3",
+    "@kadira/storybook-addon-options": "^1.0.2",
     "babel-cli": "^6.24.1",
     "babel-preset-mcs-lite": "^0.2.2",
     "enzyme": "^2.8.1",
