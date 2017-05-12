@@ -101,7 +101,7 @@ const connectSocket = (urlMapper, onMessage, propsMapper) => BaseComponent => {
   }
 
   if (process.env.NODE_ENV !== 'production') {
-    return setDisplayName(wrapDisplayName(BaseComponent, 'ConnectMCS'))(
+    return setDisplayName(wrapDisplayName(BaseComponent, 'connectSocket'))(
       ConnectMCS,
     );
   }
