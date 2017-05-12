@@ -1,5 +1,22 @@
 # MCS Lite changelogs
 
+## Released (2017-05-12)
+
+#### :bug: Bug Fix
+* `mcs-lite-connect`, `mcs-lite-mobile-web`, `mcs-lite-ui`, `react-intl-inject-hoc`
+  * [#310](https://github.com/MCS-Lite/mcs-lite/pull/310) fix(recompose): update to 0.23.3. ([@evenchange4](https://github.com/evenchange4))
+* `mcs-lite-icon`
+  * [#309](https://github.com/MCS-Lite/mcs-lite/pull/309) fix(mcs-lite-icon): move prop-types to dependency. ([@evenchange4](https://github.com/evenchange4))
+
+#### :house: Internal
+* `mcs-lite-ui`
+  * [#308](https://github.com/MCS-Lite/mcs-lite/pull/308) feat(storybook): add option add-on.. ([@evenchange4](https://github.com/evenchange4))
+
+#### Committers: 1
+- Michael Hsu ([evenchange4](https://github.com/evenchange4))
+
+----
+
 ## Released (2017-05-10)
 
 -   eslint-config-mcs-lite@0.3.0 🚨
