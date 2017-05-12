@@ -1,6 +1,6 @@
 {
   "name": "react-intl-inject-hoc",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "description": "The convenience HOC of react-intl injectIntl",
   "repository": "MCS-Lite/mcs-lite",
   "author": "Michael Hsu <evenchange4@gmail.com>",
