@@ -22,10 +22,12 @@
     "test": "echo 'TODO'"
   },
   "license": "MIT",
+  "dependencies": {
+    "prop-types": "^15.5.8"
+  },
   "devDependencies": {
     "mcs-lite-design": "^0.1.6",
-    "mcs-lite-scripts": "^0.2.4",
-    "prop-types": "^15.5.8"
+    "mcs-lite-scripts": "^0.2.4"
   },
   "peerDependencies": {
     "react": "^15.4.2"
