@@ -2,6 +2,14 @@
 
 ## Released (2017-05-12)
 
+### Bump Versions
+
+-   mcs-lite-connect@0.2.5
+-   mcs-lite-icon@0.2.6
+-   mcs-lite-mobile-web@0.3.8
+-   mcs-lite-ui@0.3.8
+-   react-intl-inject-hoc@0.1.10
+
 #### :bug: Bug Fix
 * `mcs-lite-connect`, `mcs-lite-mobile-web`, `mcs-lite-ui`, `react-intl-inject-hoc`
   * [#310](https://github.com/MCS-Lite/mcs-lite/pull/310) fix(recompose): update to 0.23.3. ([@evenchange4](https://github.com/evenchange4))
@@ -18,6 +26,8 @@
 ----
 
 ## Released (2017-05-10)
+
+### Bump Versions
 
 -   eslint-config-mcs-lite@0.3.0 🚨
 -   mcs-lite-design@0.1.6
