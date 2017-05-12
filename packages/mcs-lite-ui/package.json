@@ -80,7 +80,7 @@
     "react-syntax-highlighter": "^5.3.0",
     "react-text-truncate": "^0.8.3",
     "recharts": "^0.22.1",
-    "recompose": "^0.23.1",
+    "recompose": "^0.23.3",
     "rxjs": "^5.3.0"
   },
   "peerDependencies": {

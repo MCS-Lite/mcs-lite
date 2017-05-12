@@ -2,7 +2,8 @@
 
 import React from 'react';
 import createEagerFactory from 'recompose/createEagerFactory';
-import createHelper from 'recompose/createHelper';
+import setDisplayName from 'recompose/setDisplayName';
+import wrapDisplayName from 'recompose/wrapDisplayName';
 import { w3cwebsocket as W3CWebSocket } from 'websocket';
 
 // ref: https://developer.mozilla.org/en-US/docs/Web/API/WebSocket#Ready_state_constants
@@ -35,9 +36,8 @@ const connectSocket = (urlMapper, onMessage, propsMapper) => BaseComponent => {
     readyState: { viewer: '', sender: '' }, // 0 ~ 3
   };
 
-  return class ConnectMCS extends React.Component {
+  class ConnectMCS extends React.Component {
     state = initialState;
-    isComponentUnmount = false; // Hint: To avoid calling setState of unmounted component.
     componentWillMount = () => this.createWebSocket();
     componentWillReceiveProps = () => this.createWebSocket();
     componentWillUnmount = () => {
@@ -46,6 +46,7 @@ const connectSocket = (urlMapper, onMessage, propsMapper) => BaseComponent => {
       this.setState(initialState);
       this.isComponentUnmount = true;
     };
+    isComponentUnmount = false; // Hint: To avoid calling setState of unmounted component.
 
     /**
      * This function will be passed to component as props, so that the consumer
@@ -97,7 +98,15 @@ const connectSocket = (urlMapper, onMessage, propsMapper) => BaseComponent => {
         }),
       });
     }
-  };
+  }
+
+  if (process.env.NODE_ENV !== 'production') {
+    return setDisplayName(wrapDisplayName(BaseComponent, 'connectSocket'))(
+      ConnectMCS,
+    );
+  }
+
+  return ConnectMCS;
 };
 
-export default createHelper(connectSocket, 'connectSocket');
+export default connectSocket;
