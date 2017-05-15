@@ -2,9 +2,9 @@
 
 請注意，由於目前 Beta 版尚未有系統管理主控台圖形化介面，因此必須直接在 mcs-lite-app 資料夾下更改相關參數。
 
-#### Windows 作業系統![](/assets/win.png)
+#### Windows 作業系統![](../assets/win.png)
 
-#### Mac OSX 作業系統![](/assets/mac.png)
+#### Mac OSX 作業系統![](../assets/mac.png)
 
 在 **mcs-lite-app/config** 資料夾下，會有系統與連線相關的設定檔案，其檔案格式接為 JSON。
 
