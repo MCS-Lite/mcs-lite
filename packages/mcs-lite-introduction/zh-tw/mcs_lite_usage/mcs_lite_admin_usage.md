@@ -23,4 +23,3 @@
 ### 如何備份 DB ?
 
 目前產品原型 \(prototype\)，測試裝置 \(test device\)，資料通道 \(data channel\)，上傳資料 \(datapoint\) 與使用者帳戶 \(user account\) 等資料，都是以 JSON 格式儲存在 **mcs-lite-app/db **資料夾下，備份 db 即是把這個資料夾的檔案備份好即可。
-
