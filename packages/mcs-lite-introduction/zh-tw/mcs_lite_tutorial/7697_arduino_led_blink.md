@@ -19,7 +19,7 @@
 1. 開啓 Arduino IDE，在 Tools > Board 中選取 **LinkIt 7697**。在 Tools > Port 中選取 LinkIt 7697 所連接的序列埠，此序列埠的後方會標示 **(LinkIt 7697)**。 ![Arduino IDE](../assets/Arduino_tools.png)
 2. 將 [LED Blink Example](https://github.com/Mediatek-Cloud/mcs-lite-example/blob/master/Arduino/LED_controller/LED_controller.ino) 的程式碼複製貼上於 Arduino IDE 編輯器中，並根據您的網路環境與 MCS Lite 設定修改代碼中的變數：
 
-	```
+	```arduino
 char ssid[] = "mcs";  
 char pass[] = "mcs123";  
 char deviceId[] = "HydTsgYie";  
@@ -54,7 +54,7 @@ int rs_port = 3000;
 
 **在 setup() 中呼叫 connectWs() 建立 WebSocket 連線**
 
-```
+```arduino
 void setup() {
 	...
 	// 組 WebSocket 的請求封包
@@ -74,7 +74,7 @@ void connectWs () {
 
 **在 loop() 中對 MCS Lite 伺服器發送 WebSocket heartbeat，並且接收來自伺服器端的指令/資料**
 
-```
+```arduino
 void loop() {
 	...
 	//當 WebSocket 連線建立時，每 10 秒送出 heartbeat 封包
@@ -119,7 +119,7 @@ void loop() {
 
 同時，您可能也會發現到，在接收處理 WebSocket 的資料時，我們同時也呼叫了 **upload_datapoint()** 函式，透過 RESTful API 上傳一個字串到 MCS Lite 伺服器。其中 **string** 為我們先前所定義的資料通道 ID。
 
-```
+```arduino
 if (wscmd.substring(2).equals(switch_on)){
 	digitalWrite(7, HIGH);
 	String data = "string,,LED is ON";
@@ -133,7 +133,7 @@ if (wscmd.substring(2).equals(switch_on)){
 }
 ```
 
-```
+```arduino
 void upload_datapoint(String content) {
 	if (rs_client.connect(server, rs_port)) {
     	Serial.println("rs_client is built.");
@@ -150,6 +150,3 @@ void upload_datapoint(String content) {
   	rs_client.stop();
 }
 ```
-
-
-

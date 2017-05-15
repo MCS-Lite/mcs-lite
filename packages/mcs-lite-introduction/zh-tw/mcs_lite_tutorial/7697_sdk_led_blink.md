@@ -21,7 +21,7 @@
 	* SSID: 您的 AP SSID
 	* PASSWORD: 您的 AP 密碼
 		
-	```
+	```arduino
 #define SSID "your_SSID"
 #define PASSWORD "your_password"
 	```
@@ -30,20 +30,20 @@
 	* Device ID: 在 MCS Lite 上所建立的測試裝置的識別碼
 	* Device Key: 在 MCS Lite 上所建立的測試裝置的金鑰
 	
-	```
+	```arduino
 	#define DEVICEID "S1Ma*****"
 	#define DEVICEKEY "3a4eee2d697dc032334fcd9c1e1597*****...."
 	```
 
 3. 接著，就可以開始透過 GCC 編譯並建立您的專案了。現在確認已經儲存修改過的程式碼，然後切換到 **GCC** 子資料夾，並執行 **make** 命令。
 	
-	```
+	```Bash
 	cd {SDK_Root}/project/linkit7697_hdk/apps/my_project/GCC
 	make
 	```
 	或是切換到 **{SDK\_Root}** 資料夾，並執行 **.\\build.sh** 腳本。
 	
-	```
+	```Bash
 	cd {SDK_Root}
 	./build.sh linkit7697_hdk LED_controller
 	```
@@ -64,5 +64,3 @@
 在 **tcp\_callback()** 函式中，我們使用了 cJSON 函式庫來處理來自 MCS Lite 的 JSON 格式的指令/資料，判別開與關的指令。
 
 同時，您可能也會發現到，在接收處理 WebSocket 的資料時，我們同時也呼叫了 **mcs\_upload\_datapoint()** 函式，透過 RESTful API 上傳一個字串到 MCS Lite 伺服器。其中 **string** 為我們先前所定義的資料通道 ID。
-
-
