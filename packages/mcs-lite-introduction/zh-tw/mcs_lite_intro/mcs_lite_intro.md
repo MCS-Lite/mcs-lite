@@ -38,7 +38,7 @@ MCS Lite 應用程序主要包含了以下兩個主要的使用介面：
 
    * 如果您是在 MacOS 上第一次執行 **mcs-lite-app **或是更換過檔案路徑，請務必先執行 **setup **腳本程式，重新初始化 config.json 的所在路徑。
    * 如果您是在 MacOS 上執行 **mcs-lite-app**，可能會看到如下的警告視窗，因為 **mcs-lite-app **來自未識別的開發者，可透過按滑鼠右鍵來開啟。  
-     ![](/assets/unknown warning.png)
+     ![](../assets/unknown warning.png)
 
 4. 使用預設的帳號密碼登入主控台，此時物聯網服務平台的應用程序尚未開啟運行。
 
@@ -71,6 +71,3 @@ MCS Lite 應用程序主要包含了以下兩個主要的使用介面：
 * 區域網路存取
 
 * 相關防火牆開啟 3000, 8000, 8888 port （可以在[系統管理主控台](/mcs_lite_usage/mcs_lite_admin_usage.md)使用說明查看如何修改相關設定 ）
-
-
-
