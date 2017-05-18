@@ -8,7 +8,8 @@
   "plugins": [
     "edit-link",
     "github",
-    "anchorjs"
+    "anchorjs", 
+    "ga"
   ],
   "pluginsConfig": {
     "edit-link": {
@@ -26,6 +27,9 @@
       "styles": {
         "website": "build/gitbook.css"
       }
+    },
+    "ga":{
+      "token":"UA-58128356-6"
     }
   }
 }
