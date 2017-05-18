@@ -162,6 +162,10 @@ Packages
 | `react-intl-inject-hoc`     | V     |      |       | V     |
 | `stylelint-config-mcs-lite` |       | V    |       |       |
 
+## Environment variables
+
+-   mcs-lite-introduction: `GA_ID`
+
 ## Internal Notes
 
 ### npm-check-updates
