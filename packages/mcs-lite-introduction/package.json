@@ -13,9 +13,10 @@
   "scripts": {
     "clean": "rm -rf _book",
     "gitbook:install": "gitbook install",
-    "start": "npm run gitbook:install && gitbook serve",
+    "start": "npm run gitbook:install && gitbook serve --port 4001",
     "prebuild": "npm run gitbook:install && npm run clean",
-    "build": "gitbook build"
+    "build": "gitbook build",
+    "build:netlify": "GA_ID='UA-58128356-6' npm run build"
   },
   "devDependencies": {
     "gitbook-cli": "^2.3.0"
