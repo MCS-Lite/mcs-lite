@@ -8,9 +8,8 @@ const GA_ID = process.env.GA_ID;
 const plugins = ['edit-link', 'github', 'anchorjs'];
 
 if (GA_ID) {
-  console.info(
-    `[Book.js]: the 'gitbook-plugin-ga' has been loaded with GA_ID: ${GA_ID}.`,
-  );
+  // prettier-ignore
+  console.info(`[Book.js]: the 'gitbook-plugin-ga' has been loaded with GA_ID: ${GA_ID}.`);
   plugins.push('ga');
 }
 
