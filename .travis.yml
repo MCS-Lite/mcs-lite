@@ -7,12 +7,13 @@ notifications:
   email: evenchange4@gmail.com
 
 script:
-  - npm run danger
+  - yarn run danger
   - ./tasks/test.sh
 
 after_success:
   - ./node_modules/.bin/codecov --token=c0854c5b-42fa-4605-a466-3d5d1aee4f9f
 
 cache:
+  yarn: true
   directories:
     - node_modules

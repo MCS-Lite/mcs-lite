@@ -1,5 +1,11 @@
 {
-  "lerna": "2.0.0-rc.1",
+  "lerna": "2.0.0-rc.4",
+  "npmClient": "yarn",
+  "commands": {
+    "bootstrap": {
+      "hoist": true
+    }
+  },
   "packages": [
     "packages/*"
   ],
