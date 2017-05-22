@@ -4,9 +4,9 @@ set -e
 
 # global linting
 echo '💪  Start global linting';
-npm run eslint
-npm run stylelint
-npm run flow
+yarn run eslint
+yarn run stylelint
+yarn run flow
 
 ## Interface for each project
 echo '💪  Start testing for each packages';
