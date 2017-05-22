@@ -8,16 +8,20 @@ MCS Lite 應用程序主要包含了以下兩個主要的使用介面：
 
 1. **物聯網服務平台**
 
-   * 透過標準的網路協定（HTTP or websocket）將測試裝置產生的數據上傳至 MCS Lite 並儲存。
-   * 透過標準的網路協定（websocket）遠端控制您的測試裝置。
-
+   * 透過標準的網路協定（HTTP or WebSocket）將測試裝置產生的數據上傳至 MCS Lite 並儲存。
    * 圖形化的數據介面（當前資料與歷史數據）。
+![](../assets/mcs_lite_data_upload.png)
+   
+   * 透過標準的網路協定（HTTP or WebSocket）遠端控制您的測試裝置。
+![](../assets/mcs_remote_control_onoff.gif)
 
    * 管理所有的測試裝置。
+![](../assets/device_management.png)
 
    * 提供手機版本的操作介面。
+ ![](../assets/mcs_lite_mobile_view.gif)
 
-   * 提供 MCS Lite 函式庫，有助於簡化並加速開發流程。
+   * 針對 LinkIt 7697 提供 MCS Lite 函式庫，有助於簡化並加速開發流程。
 
 2. **系統管理主控台**
 
@@ -29,26 +33,20 @@ MCS Lite 應用程序主要包含了以下兩個主要的使用介面：
 
 ## 安裝指南
 
-1. 下載 **MCS Lite** 應用程式。
-   * Windows x64: [https://labs.mediatek.com/en/download/kSjImF9g](https://labs.mediatek.com/en/download/kSjImF9g)
-   * Windows x86: [https://labs.mediatek.com/en/download/Le1PTB49](https://labs.mediatek.com/en/download/Le1PTB49)
-   * MacOS: [https://labs.mediatek.com/en/download/JqOI2DDT](https://labs.mediatek.com/en/download/JqOI2DDT) 
+1. 下載 **MCS Lite** 應用程式。[點我下載](https://github.com/MCS-Lite/mcs-lite-app/releases)
 2. 將下載後的檔案解壓縮，產生的資料夾可以搬遷或複製到任意的目錄底下。
-3. 執行 **mcs-lite-app **檔案，開啟系統管理主控台。
+3. 執行 **mcs-lite-app** 檔案，開啟系統管理主控台。
 
-   * 如果您是在 MacOS 上第一次執行 **mcs-lite-app **或是更換過檔案路徑，請務必先執行 **setup **腳本程式，重新初始化 config.json 的所在路徑。
-   * 如果您是在 MacOS 上執行 **mcs-lite-app**，可能會看到如下的警告視窗，因為 **mcs-lite-app **來自未識別的開發者，可透過按滑鼠右鍵來開啟。  
+   * 如果您是在 MacOS 上第一次執行 **mcs-lite-app** 或是更換過檔案路徑，請務必先執行 **setup** 腳本程式，重新初始化 config.json 的所在路徑。
+   * 如果您是在 MacOS 上執行 **mcs-lite-app**，可能會看到如下的警告視窗，因為 **mcs-lite-app** 來自未識別的開發者，可透過按滑鼠右鍵來開啟。  
      ![](../assets/unknown warning.png)
 
-4. 使用預設的帳號密碼登入主控台，此時物聯網服務平台的應用程序尚未開啟運行。
+4. 在 **IP 連線**頁面可以看到 **MCS Lite** 服務所綁定的 IP 與連接埠列表。
 
-5. 點擊**啟動**按鈕，開啟物聯網服務平台。
+5. 同個網域內的設備與電腦皆可在瀏覽器的網址列中輸入 MCS Lite 服務的 IP 與連接埠，連線到物聯網服務平台。
 
-6. 在 **IP 連線**頁面可以看到** MCS Lite** 服務所綁定的 IP 與連接埠列表。
-
-7. 同個網域內的設備與電腦皆可在瀏覽器的網址列中輸入 MCS Lite 服務的 IP 與連接埠，連線到物聯網服務平台。
-
-   * 例如：[http://172.23.6.69:3000](http://172.23.6.69:3000)
+   * 例如：http://172.23.6.41:3000
+   ![](../assets/mcs_lite_console.png)
 
 ## 系統需求
 
@@ -64,9 +62,9 @@ MCS Lite 應用程序主要包含了以下兩個主要的使用介面：
 
 * 400 MHz 以上或更快的 32 位元 \(x86\) 或 64 位元 \(x64\) 處理器
 
-* 建議最少 128 MB RAM
+* 建議最少 256 MB RAM
 
-* 500 MB 的可用硬碟空間
+* 2 GB 的可用硬碟空間
 
 * 區域網路存取
 
