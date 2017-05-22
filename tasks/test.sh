@@ -16,4 +16,6 @@ node_modules/.bin/lerna run test --concurrency 1
 echo '💪  Start testing for building demo page';
 node_modules/.bin/lerna run build-storybook --scope mcs-lite-ui
 node_modules/.bin/lerna run build --scope mcs-lite-mobile-web
-node_modules/.bin/lerna run build --scope mcs-lite-introduction
+
+# Duplicate at postinstall stage
+# node_modules/.bin/lerna run build --scope mcs-lite-introduction
