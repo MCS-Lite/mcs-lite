@@ -1,6 +1,6 @@
 machine:
   environment:
-    YARN_VERSION: 0.24.4
+    YARN_VERSION: 0.24.5
     PATH: "${PATH}:${HOME}/.yarn/bin:${HOME}/${CIRCLE_PROJECT_REPONAME}/node_modules/.bin"
   node:
     version: 7.5.0
@@ -15,6 +15,7 @@ dependencies:
     - ~/.yarn
     - ~/.cache/yarn
     - node_modules
+    - packages/mcs-lite-introduction/node_modules
   override:
     - yarn install --no-progress
 
