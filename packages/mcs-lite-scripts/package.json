@@ -31,11 +31,11 @@
     "babel-preset-mcs-lite": "^0.2.2",
     "babel-preset-react-app": "^2.2.0",
     "cheerio": "^0.22.0",
-    "glob": "^7.1.1",
+    "glob": "^7.1.2",
     "lodash.camelcase": "^4.3.0",
     "lodash.upperfirst": "^4.3.1",
     "ramda": "^0.23.0",
-    "rxjs": "^5.3.0"
+    "rxjs": "^5.4.0"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1"
