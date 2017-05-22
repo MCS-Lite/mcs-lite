@@ -1,3 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
 exports[`auth - 1. Constants should return constants 1`] = `
 Object {
   "CHANGE_PASSWORD": "mcs-lite-mobile-web/auth/CHANGE_PASSWORD",

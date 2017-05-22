@@ -1,5 +1,5 @@
 import React from 'react';
-import { storiesOf } from '@kadira/storybook';
+import { storiesOf } from '@storybook/react';
 import styled from 'styled-components';
 import { kindList } from 'mcs-lite-theme';
 import InputRange from '.';

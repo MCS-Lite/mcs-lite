@@ -1,7 +1,8 @@
 /* eslint react/no-multi-comp: 0 */
 
 import React from 'react';
-import { storiesOf, action } from '@kadira/storybook';
+import { storiesOf } from '@storybook/react';
+import { action } from '@storybook/addon-actions';
 import ClickOutside from '.';
 import Card from '../Card';
 

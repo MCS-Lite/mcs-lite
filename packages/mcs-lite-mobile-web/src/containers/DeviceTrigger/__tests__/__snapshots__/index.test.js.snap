@@ -1,12 +1,14 @@
-exports[`test should render Container correctly with HOC 1`] = `<Connect(InjectIntl(withPropsOnChange(DeviceTrigger))) />`;
+// Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`test should return props correctly with mapDispatchToProps 1`] = `
+exports[`should render Container correctly with HOC 1`] = `<Connect(InjectIntl(withPropsOnChange(DeviceTrigger))) />`;
+
+exports[`should return props correctly with mapDispatchToProps 1`] = `
 Object {
   "fetchDeviceDetail": [Function],
 }
 `;
 
-exports[`test should return props correctly with mapStateToProps 1`] = `
+exports[`should return props correctly with mapStateToProps 1`] = `
 Object {
   "device": Object {
     "deviceName": "deviceName",

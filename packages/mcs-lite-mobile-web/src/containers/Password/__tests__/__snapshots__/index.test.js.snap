@@ -1,6 +1,8 @@
-exports[`test should render Container correctly with HOC 1`] = `<Connect(InjectIntl(withPropsOnChange(Password))) />`;
+// Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`test should return props correctly with mapDispatchToProps 1`] = `
+exports[`should render Container correctly with HOC 1`] = `<Connect(InjectIntl(withPropsOnChange(Password))) />`;
+
+exports[`should return props correctly with mapDispatchToProps 1`] = `
 Object {
   "changePassword": [Function],
 }

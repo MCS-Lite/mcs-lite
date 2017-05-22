@@ -12,9 +12,8 @@ import {
   FlatButton,
 } from './styled-components';
 import updatePathname from '../../utils/updatePathname';
-import packageJSON from '../../../package.json';
 
-const VERSION = packageJSON.version;
+const VERSION = process.env.REACT_APP_VERSION;
 
 const Account = ({ userName, email, signout, getMessages: t }) => (
   <Container>

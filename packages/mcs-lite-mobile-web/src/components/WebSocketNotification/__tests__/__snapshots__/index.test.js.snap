@@ -1,1 +1,3 @@
-exports[`test should render Container correctly with HOC 1`] = `<InjectIntl(withPropsOnChange(WebSocketNotification)) />`;
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render Container correctly with HOC 1`] = `<InjectIntl(withPropsOnChange(WebSocketNotification)) />`;

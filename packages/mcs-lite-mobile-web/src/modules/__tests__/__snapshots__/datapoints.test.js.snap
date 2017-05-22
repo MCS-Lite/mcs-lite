@@ -1,3 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
 exports[`datapoints - 1. Constants should return constants 1`] = `
 Object {
   "APPEND_DATAPOINT": "mcs-lite-mobile-web/datapoints/APPEND_DATAPOINT",

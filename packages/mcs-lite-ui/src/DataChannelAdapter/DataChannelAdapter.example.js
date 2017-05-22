@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import { storiesOf, action } from '@kadira/storybook';
+import { storiesOf } from '@storybook/react';
+import { action } from '@storybook/addon-actions';
 import DataChannelCard from '../DataChannelCard';
 import DATA_CHANNELS from './API';
 import DataChannelAdapter from '.';

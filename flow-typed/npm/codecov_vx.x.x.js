@@ -1,4 +1,4 @@
-// flow-typed signature: 9a5a86dc452458a2863b9554144fcbe0
+// flow-typed signature: 800bcebb2f52856a85b6e512361d3669
 // flow-typed version: <<STUB>>/codecov_v^2.1.0/flow_v0.43.1
 
 /**
@@ -27,6 +27,10 @@ declare module 'codecov/lib/codecov' {
 }
 
 declare module 'codecov/lib/detect' {
+  declare module.exports: any;
+}
+
+declare module 'codecov/lib/git' {
   declare module.exports: any;
 }
 
@@ -87,6 +91,10 @@ declare module 'codecov/lib/services/wercker' {
 }
 
 declare module 'codecov/test/detect' {
+  declare module.exports: any;
+}
+
+declare module 'codecov/test/git' {
   declare module.exports: any;
 }
 
@@ -167,6 +175,9 @@ declare module 'codecov/lib/codecov.js' {
 declare module 'codecov/lib/detect.js' {
   declare module.exports: $Exports<'codecov/lib/detect'>;
 }
+declare module 'codecov/lib/git.js' {
+  declare module.exports: $Exports<'codecov/lib/git'>;
+}
 declare module 'codecov/lib/offline.js' {
   declare module.exports: $Exports<'codecov/lib/offline'>;
 }
@@ -211,6 +222,9 @@ declare module 'codecov/lib/services/wercker.js' {
 }
 declare module 'codecov/test/detect.js' {
   declare module.exports: $Exports<'codecov/test/detect'>;
+}
+declare module 'codecov/test/git.js' {
+  declare module.exports: $Exports<'codecov/test/git'>;
 }
 declare module 'codecov/test/index.js' {
   declare module.exports: $Exports<'codecov/test/index'>;

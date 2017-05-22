@@ -1,7 +1,10 @@
-exports[`test should renders <DeviceDataChannelTimeRange> correctly 1`] = `
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should renders <DeviceDataChannelTimeRange> correctly 1`] = `
 <div>
   <HelmetWrapper
-    encodeSpecialCharacters={true}>
+    encodeSpecialCharacters={true}
+  >
     <title>
       searchTimeRange
     </title>
@@ -10,16 +13,20 @@ exports[`test should renders <DeviceDataChannelTimeRange> correctly 1`] = `
     leftChildren={
       <MobileHeaderIcon
         component={[Function]}
-        to={[Function]}>
+        to={[Function]}
+      >
         <IconArrowLeft
-          size="1em" />
+          size="1em"
+        />
       </MobileHeaderIcon>
     }
-    title="searchTimeRange" />
+    title="searchTimeRange"
+  />
   <main>
     <Styled(MobileContentWrapper)>
       <styled.div
-        onClick={[Function]}>
+        onClick={[Function]}
+      >
         <P>
           from
         </P>
@@ -28,7 +35,8 @@ exports[`test should renders <DeviceDataChannelTimeRange> correctly 1`] = `
         </styled.div>
       </styled.div>
       <styled.div
-        onClick={[Function]}>
+        onClick={[Function]}
+      >
         <P>
           to
         </P>
@@ -50,13 +58,15 @@ exports[`test should renders <DeviceDataChannelTimeRange> correctly 1`] = `
         }
         onHide={[Function]}
         onSubmit={[Function]}
-        show={false} />
+        show={false}
+      />
     </Styled(MobileContentWrapper)>
   </main>
   <MobileFixedFooter>
     <styled.div>
       <StyledLink
-        to={[Function]}>
+        to={[Function]}
+      >
         <Button
           active={false}
           block={true}
@@ -64,12 +74,14 @@ exports[`test should renders <DeviceDataChannelTimeRange> correctly 1`] = `
           kind="default"
           round={false}
           size="normal"
-          square={false}>
+          square={false}
+        >
           cancel
         </Button>
       </StyledLink>
       <StyledLink
-        to={[Function]}>
+        to={[Function]}
+      >
         <Button
           active={false}
           block={true}
@@ -78,7 +90,8 @@ exports[`test should renders <DeviceDataChannelTimeRange> correctly 1`] = `
           onClick={[Function]}
           round={false}
           size="normal"
-          square={false}>
+          square={false}
+        >
           save
         </Button>
       </StyledLink>

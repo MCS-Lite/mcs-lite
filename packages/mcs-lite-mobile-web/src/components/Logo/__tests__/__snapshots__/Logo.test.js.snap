@@ -1,6 +1,9 @@
-exports[`test should renders <Logo> correctly 1`] = `
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should renders <Logo> correctly 1`] = `
 <img
   alt="MCS Lite Logo"
   className="sc-bdVaJa kawKoJ"
-  src="logo_mcs_lite_black.svg" />
+  src="logo_mcs_lite_black.svg"
+/>
 `;

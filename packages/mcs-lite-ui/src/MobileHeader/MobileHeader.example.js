@@ -1,5 +1,5 @@
 import React from 'react';
-import { storiesOf } from '@kadira/storybook';
+import { storiesOf } from '@storybook/react';
 import { IconMenu, IconSearch } from 'mcs-lite-icon';
 import { MobileHeader, MobileHeaderIcon } from '.';
 

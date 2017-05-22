@@ -36,6 +36,7 @@ import RequireAuth from './containers/RequireAuth';
 import configureStore from './store/configureStore';
 import './style';
 import './utils/i18n';
+import registerServiceWorker from './registerServiceWorker';
 
 // ----------------------------------------------------------------------------
 // 1. Constants
@@ -100,3 +101,4 @@ ReactDOM.render(
   </Provider>,
   document.getElementById(ROOT_ID),
 );
+registerServiceWorker();

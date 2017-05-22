@@ -2,7 +2,8 @@
 
 import React from 'react';
 import styled from 'styled-components';
-import { storiesOf, action } from '@kadira/storybook';
+import { storiesOf } from '@storybook/react';
+import { action } from '@storybook/addon-actions';
 import DataChannel from '.';
 import ButtonClear from './ButtonClear';
 

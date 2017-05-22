@@ -1,5 +1,5 @@
 import React from 'react';
-import { storiesOf } from '@kadira/storybook';
+import { storiesOf } from '@storybook/react';
 import styled from 'styled-components';
 import MorphReplace from 'react-svg-morph/lib/MorphReplace';
 import * as Icons from 'mcs-lite-icon/lib/index';

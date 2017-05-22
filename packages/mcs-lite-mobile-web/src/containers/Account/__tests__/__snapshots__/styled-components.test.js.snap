@@ -1,4 +1,6 @@
-exports[`test should render components correctly 1`] = `
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render components correctly 1`] = `
 Array [
   <div>
     <Styled(Button)>
@@ -10,35 +12,43 @@ Array [
             kind="primary"
             round={false}
             size="normal"
-            square={false} />
+            square={false}
+        />
     </Styled(Button)>
     <styled.div>
         <div
-            className="sc-htpNat kuHdgz" />
+            className="sc-htpNat kuHdgz"
+        />
     </styled.div>
     <styled.div>
         <div
-            className="sc-bxivhb fBmJKB" />
+            className="sc-bxivhb fBmJKB"
+        />
     </styled.div>
     <Styled(Logo)>
         <Logo
             alt="MCS Lite Logo"
             className="sc-ifAKCX eoQxsM"
-            src="logo_mcs_lite_black.svg">
+            src="logo_mcs_lite_black.svg"
+        >
             <img
                 alt="MCS Lite Logo"
                 className="sc-ifAKCX eoQxsM sc-bdVaJa kawKoJ"
-                src="logo_mcs_lite_black.svg" />
+                src="logo_mcs_lite_black.svg"
+            />
         </Logo>
     </Styled(Logo)>
     <styled.footer>
         <footer
-            className="sc-bZQynM EvJhB" />
+            className="sc-bZQynM EvJhB"
+        />
     </styled.footer>
 </div>,
   <div
-    className="sc-htpNat kuHdgz" />,
+    className="sc-htpNat kuHdgz"
+/>,
   <div
-    className="sc-bxivhb fBmJKB" />,
+    className="sc-bxivhb fBmJKB"
+/>,
 ]
 `;

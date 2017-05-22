@@ -1,32 +1,41 @@
-exports[`test should render components correctly 1`] = `
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render components correctly 1`] = `
 Array [
   <div>
     <Styled(MobileContentWrapper)>
         <MobileContentWrapper
-            className="sc-bdVaJa cHxkvh" />
+            className="sc-bdVaJa cHxkvh"
+        />
     </Styled(MobileContentWrapper)>
     <styled.div>
         <div
-            className="sc-bwzfXH fdppCk" />
+            className="sc-bwzfXH fdppCk"
+        />
     </styled.div>
     <Styled(MobileHeaderIcon)>
         <MobileHeaderIcon
             className="sc-htpNat jaEngQ"
-            component="a" />
+            component="a"
+        />
     </Styled(MobileHeaderIcon)>
     <Styled(MobileHeaderIcon)
-        active={true}>
+        active={true}
+    >
         <MobileHeaderIcon
             active={true}
             className="sc-htpNat dMtSTb"
-            component="a" />
+            component="a"
+        />
     </Styled(MobileHeaderIcon)>
     <Styled(P)>
         <P
-            className="sc-bxivhb RrqZP" />
+            className="sc-bxivhb RrqZP"
+        />
     </Styled(P)>
 </div>,
   <div
-    className="sc-bwzfXH fdppCk" />,
+    className="sc-bwzfXH fdppCk"
+/>,
 ]
 `;
