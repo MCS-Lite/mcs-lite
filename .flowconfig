@@ -6,6 +6,7 @@
 .*/npm/.*
 .*/npmi/.*
 .*/conventional-changelog-core/.*
+.*/react-scripts/.*
 
 [include]
 
