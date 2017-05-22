@@ -16,7 +16,7 @@
   "license": "MIT",
   "scripts": {
     "clean": "rm -rf lib",
-    "start": "start-storybook -p 6006 --dont-track",
+    "start": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "prebuild": "npm run clean",
     "build": "NODE_ENV=production babel src --out-dir lib --ignore example.js,test.js",
@@ -46,15 +46,15 @@
     }
   },
   "devDependencies": {
-    "@kadira/react-storybook-addon-info": "^3.4.0",
-    "@kadira/storybook": "^2.35.3",
-    "@kadira/storybook-addon-options": "^1.0.2",
+    "@storybook/addon-info": "3.0.0-alpha.3",
+    "@storybook/addon-options": "3.0.0-alpha.3",
+    "@storybook/react": "3.0.0-alpha.3",
     "babel-cli": "^6.24.1",
     "babel-preset-mcs-lite": "^0.2.2",
     "enzyme": "^2.8.1",
     "enzyme-to-json": "^1.5.0",
     "identity-obj-proxy": "^3.0.0",
-    "jest": "^19.0.2",
+    "jest": "^20.0.0",
     "mcs-lite-icon": "^0.2.6",
     "mcs-lite-scripts": "^0.2.4",
     "mcs-lite-theme": "^0.2.5",

@@ -1,4 +1,4 @@
-import { addDecorator, setAddon } from '@kadira/storybook';
+import { addDecorator, setAddon } from '@storybook/react';
 import centered from './decorator-centered';
 
 /**

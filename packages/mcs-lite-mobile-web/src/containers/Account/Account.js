@@ -12,9 +12,9 @@ import {
   FlatButton,
 } from './styled-components';
 import updatePathname from '../../utils/updatePathname';
-import packageJSON from '../../../package.json';
-
-const VERSION = packageJSON.version;
+// import packageJSON from '../../../package.json';
+//
+// const VERSION = packageJSON.version;
 
 const Account = ({ userName, email, signout, getMessages: t }) => (
   <Container>
@@ -26,7 +26,7 @@ const Account = ({ userName, email, signout, getMessages: t }) => (
     </Body>
     <Footer>
       <VersionWrapper color="grayBase">
-        <Small>v{VERSION}</Small>
+        {/* <Small>v{VERSION}</Small> */}
       </VersionWrapper>
       <StyledLink to={updatePathname('/devices')}>
         <FlatButton block>{t('myTestDevices')}</FlatButton>
