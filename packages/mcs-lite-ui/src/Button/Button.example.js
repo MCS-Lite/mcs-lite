@@ -1,6 +1,6 @@
 import React from 'react';
 import styled, { ThemeProvider } from 'styled-components';
-import { storiesOf, action } from '@kadira/storybook';
+import { storiesOf, action } from '@storybook/react';
 import { kindList, darken1, darken2, darken3 } from 'mcs-lite-theme';
 import { IconLoading, IconCalendar } from 'mcs-lite-icon';
 import Button from '.';

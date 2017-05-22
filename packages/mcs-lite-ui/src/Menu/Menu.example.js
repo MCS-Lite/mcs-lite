@@ -1,5 +1,5 @@
 import React from 'react';
-import { storiesOf, action } from '@kadira/storybook';
+import { storiesOf, action } from '@storybook/react';
 import styled from 'styled-components';
 import { IconDelete } from 'mcs-lite-icon';
 import { MenuItem, Menu } from '.';

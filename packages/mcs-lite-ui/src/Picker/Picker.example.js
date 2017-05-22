@@ -1,5 +1,5 @@
 import React from 'react';
-import { storiesOf, action } from '@kadira/storybook';
+import { storiesOf, action } from '@storybook/react';
 import { Picker, PickerContainer } from '.';
 
 class StatefulPicker extends React.Component {
