@@ -4,6 +4,15 @@ module.exports = {
   presets: [
     require.resolve('babel-preset-react-app'),
     require.resolve('babel-preset-stage-0'),
+    // TODO: Override react-app 'modules', we need to transform to CJS.
+    [
+      require.resolve('babel-preset-env'),
+      {
+        targets: {
+          node: 'current',
+        },
+      },
+    ],
   ],
   plugins: [
     require.resolve('babel-plugin-add-module-exports'),
