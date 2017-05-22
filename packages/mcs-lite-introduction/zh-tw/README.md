@@ -1,6 +1,7 @@
+![](./assets/mcs_lite_private.png)
 # 輕鬆搭建
 
-如果您需要建構一個專屬的物聯網服務平台，且正在尋找一個能快速安裝與上手的方案，那您一定不能錯過 **MCS Lite**。
+如果您需要建構一個私有的物聯網服務平台，且正在尋找一個能快速安裝與上手的方案，那您一定不能錯過 **MCS Lite**。
 
 **MediaTek Cloud Sandbox Lite Edition**（簡稱 **MCS Lite**），是根據聯發科技物聯網雲端平台 **MediaTek Cloud Sandbox**（簡稱 **MCS**）的核心功能改寫，開發成一個跨平臺的輕量級桌面應用程式，可運行在 Windows, Linux 和 Mac OS 等常用作業系統上。
 

@@ -1,6 +1,6 @@
 # API 參考文件
 
-MCS Lite 支援透過 WebSocket 與 HTTP RESTful API 兩種方法上傳與讀取資料，其支援的協定與內文格式定義如下表
+MCS Lite 支援透過 **WebSocket** 與 **HTTP RESTful API** 兩種方法上傳與讀取資料，其支援的協定與內文格式定義如下表
 
 | WebSocket | HTTP RESTful API |
 | :---: | :---: |
