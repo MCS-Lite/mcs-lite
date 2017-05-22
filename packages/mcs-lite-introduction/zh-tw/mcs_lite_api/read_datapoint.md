@@ -28,13 +28,13 @@ ws://192.168.0.100:8000/deviceId/BJlQmdbQ0l/deviceKey/71ad1f7abc449a3168cc712291
 
 * 針對只會產生一筆資料的通道，像是開關、整數、浮點數、十六進位值、字串、GPIO等，其回傳的數據格式為
 
-```JSON
+```json
 {"datachannelId":"$dataChannelID","values":{"value":$value}}
 ```
 
 例如
 
-```JSON
+```json
 {"datachannelId":"GPIO","values":{"value":0}}
 {"datachannelId":"onoff","values":{"value":1}}
 {"datachannelId":"GPIO","values":{"value":1}}
@@ -43,7 +43,7 @@ ws://192.168.0.100:8000/deviceId/BJlQmdbQ0l/deviceKey/71ad1f7abc449a3168cc712291
 
 * 針對會同時產生多筆資料的通道，其回傳的數據格式為
 
-```JSON
+```json
 {"datachannelId":"$dataChannelID","values":{"value":"$value", "period":"$period"}}
 {"datachannelId":"$dataChannelID","values":{"value":"$value"}}
 {"datachannelId":"$dataChannelID","values":{"period":"$period"}}
@@ -51,7 +51,7 @@ ws://192.168.0.100:8000/deviceId/BJlQmdbQ0l/deviceKey/71ad1f7abc449a3168cc712291
 
 例如
 
-```JSON
+```json
 {"datachannelId":"pwm","values":{"value":"31","period":"8"}}
 {"datachannelId":"pwm","values":{"period":"8"}}
 ```
@@ -137,7 +137,7 @@ GET
 
 內文為標準的 **JSON **格式。
 
-```JSON
+```json
 {
     "data":[
         {

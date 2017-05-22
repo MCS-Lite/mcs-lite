@@ -37,13 +37,13 @@
 
 3. 接著，就可以開始透過 GCC 編譯並建立您的專案了。現在確認已經儲存修改過的程式碼，然後切換到 **GCC** 子資料夾，並執行 **make** 命令。
 	
-	```Bash
+	```bash
 	cd {SDK_Root}/project/linkit7697_hdk/apps/my_project/GCC
 	make
 	```
 	或是切換到 **{SDK\_Root}** 資料夾，並執行 **.\\build.sh** 腳本。
 	
-	```Bash
+	```bash
 	cd {SDK_Root}
 	./build.sh linkit7697_hdk LED_controller
 	```
