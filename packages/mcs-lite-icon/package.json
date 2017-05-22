@@ -23,7 +23,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "prop-types": "^15.5.8"
+    "prop-types": "^15.5.10"
   },
   "devDependencies": {
     "mcs-lite-design": "^0.1.6",

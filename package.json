@@ -13,19 +13,19 @@
     "format": "prettier --trailing-comma all --single-quote --write '*.js' 'packages/*/*.js' 'packages/*/.storybook/*.js' 'packages/*/!(node_modules|build|lib|storybook-static|coverage|.next|_book)/**/*.js'"
   },
   "devDependencies": {
-    "babel-eslint": "^7.1.1",
-    "codecov": "^2.1.0",
-    "danger": "^0.17.0",
-    "eslint": "^3.13.1",
+    "babel-eslint": "^7.2.3",
+    "codecov": "^2.2.0",
+    "danger": "^0.18.0",
+    "eslint": "^3.19.0",
     "eslint-config-airbnb": "^15.0.1",
-    "eslint-config-prettier": "^2.1.0",
+    "eslint-config-prettier": "^2.1.1",
     "eslint-plugin-import": "^2.2.0",
-    "eslint-plugin-jsx-a11y": "^5.0.1",
-    "eslint-plugin-prettier": "^2.0.1",
+    "eslint-plugin-jsx-a11y": "^5.0.3",
+    "eslint-plugin-prettier": "^2.1.1",
     "eslint-plugin-react": "^7.0.1",
-    "flow-bin": "^0.43.1",
+    "flow-bin": "^0.46.0",
     "lerna": "2.0.0-rc.1",
-    "prettier": "^1.1.0",
+    "prettier": "^1.3.1",
     "stylelint": "^7.10.1"
   },
   "stylelint": {
