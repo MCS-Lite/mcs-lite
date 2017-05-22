@@ -5,7 +5,7 @@ const GITHUB_ORG = 'https://github.com/MCS-Lite';
 const GITHUB_DIR = `${GITHUB_ORG}/mcs-lite/tree/master/packages/mcs-lite-introduction`;
 const GA_ID = process.env.GA_ID;
 
-const plugins = ['edit-link', 'github', 'anchorjs'];
+const plugins = ['edit-link', 'prism', '-highlight', 'github', 'anchorjs'];
 
 if (GA_ID) {
   // prettier-ignore
@@ -34,6 +34,11 @@ module.exports = {
         en: 'Edit This Page',
         'zh-tw': '編輯本頁',
         'zh-cn': '编辑本页',
+      },
+    },
+    prism: {
+      lang: {
+        arduino: 'clike',
       },
     },
     github: {

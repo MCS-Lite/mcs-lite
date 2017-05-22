@@ -25,7 +25,7 @@ ws://192.168.0.100:8000/deviceId/BJlQmdbQ0l/deviceKey/71ad1f7abc449a3168cc712291
 * 內文為標準的 **JSON **格式。
 * 針對只會產生一筆資料的通道，像是開關、整數、浮點數、十六進位值、字串、GPIO等，其上傳的格式為
 
-```JSON
+```json
 // please change $dataChannelID to the real channel ID you created on MCS Lite console
 // please change $value to the real value you are going to upload
 
@@ -34,13 +34,13 @@ ws://192.168.0.100:8000/deviceId/BJlQmdbQ0l/deviceKey/71ad1f7abc449a3168cc712291
 
 範例
 
-```JSON
+```json
 {"datachannelId":"control_integer","values":{"value":91}}
 ```
 
 * 針對會同時產生多筆資料的通道，像是PWM，其上傳格式如下。當然，您也可以只上傳其中一個數據。
 
-```JSON
+```json
 // please change $dataChannelID to the real channel ID you created on MCS Lite console
 // please change $value to the real value you are going to upload
 // please change $period to the real period you are going to upload
@@ -53,7 +53,7 @@ ws://192.168.0.100:8000/deviceId/BJlQmdbQ0l/deviceKey/71ad1f7abc449a3168cc712291
 
 範例
 
-```JSON
+```json
 {"datachannelId":"control_pwm","values":{"value":"205","period":"10"}}
 ```
 
@@ -116,7 +116,7 @@ POST
 
 ##### 回覆內文（Response Body）
 
-```JSON
+```json
 {
     "results": "success"
 }
