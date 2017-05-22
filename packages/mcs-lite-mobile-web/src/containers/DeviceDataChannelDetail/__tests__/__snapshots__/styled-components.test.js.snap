@@ -1,8 +1,11 @@
-exports[`test should render components correctly 1`] = `
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render components correctly 1`] = `
 <div>
   <Styled(Small)>
     <Small
-      className="sc-bwzfXH wIntD" />
+      className="sc-bwzfXH wIntD"
+    />
   </Styled(Small)>
 </div>
 `;

@@ -18,7 +18,7 @@
     "clean": "rm -rf build",
     "start": "react-scripts start",
     "prebuild": "npm run clean",
-    "build": "react-scripts build",
+    "build": "REACT_APP_VERSION=$(node -pe 'require(\"./package.json\").version') react-scripts build",
     "test": "CI=true react-scripts test --env=jsdom --coverage --runInBand",
     "test:watch": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",

@@ -1,7 +1,10 @@
-exports[`test should renders <Account> correctly 1`] = `
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should renders <Account> correctly 1`] = `
 <styled.div>
   <HelmetWrapper
-    encodeSpecialCharacters={true}>
+    encodeSpecialCharacters={true}
+  >
     <title>
       account
     </title>
@@ -9,39 +12,46 @@ exports[`test should renders <Account> correctly 1`] = `
   <styled.div>
     <Styled(Logo) />
     <Heading
-      level={4}>
+      level={4}
+    >
       userName
     </Heading>
     <Heading
-      level={5}>
+      level={5}
+    >
       email
     </Heading>
   </styled.div>
   <styled.footer>
     <Styled(P)
-      color="grayBase">
+      color="grayBase"
+    >
       <Small>
         v
-        0.0.0
       </Small>
     </Styled(P)>
     <StyledLink
-      to={[Function]}>
+      to={[Function]}
+    >
       <Styled(Button)
-        block={true}>
+        block={true}
+      >
         myTestDevices
       </Styled(Button)>
     </StyledLink>
     <StyledLink
-      to={[Function]}>
+      to={[Function]}
+    >
       <Styled(Button)
-        block={true}>
+        block={true}
+      >
         changePassword
       </Styled(Button)>
     </StyledLink>
     <Styled(Button)
       block={true}
-      onClick={[Function]}>
+      onClick={[Function]}
+    >
       signout
     </Styled(Button)>
   </styled.footer>

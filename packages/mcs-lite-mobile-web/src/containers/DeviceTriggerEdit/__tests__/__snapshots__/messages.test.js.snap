@@ -1,4 +1,6 @@
-exports[`test should return messages 1`] = `
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should return messages 1`] = `
 Object {
   "DeviceTriggerEdit.and": Object {
     "defaultMessage": "和",

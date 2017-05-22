@@ -1,3 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
 exports[`devices - 1. Constants should return constants 1`] = `
 Object {
   "CLEAR": "mcs-lite-mobile-web/devices/CLEAR",

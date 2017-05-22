@@ -1,12 +1,16 @@
-exports[`test should renders <DeviceDataChannelDetail> correctly with Notification 1`] = `
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should renders <DeviceDataChannelDetail> correctly with Notification 1`] = `
 <InjectIntl(withPropsOnChange(WebSocketNotification))
-  onClick={[Function]} />
+  onClick={[Function]}
+/>
 `;
 
-exports[`test should renders <DeviceDataChannelDetail> correctly without data 1`] = `
+exports[`should renders <DeviceDataChannelDetail> correctly without data 1`] = `
 <div>
   <HelmetWrapper
-    encodeSpecialCharacters={true}>
+    encodeSpecialCharacters={true}
+  >
     <title>
       dataChannelDetail
     </title>
@@ -15,20 +19,25 @@ exports[`test should renders <DeviceDataChannelDetail> correctly without data 1`
     leftChildren={
       <MobileHeaderIcon
         component={[Function]}
-        to={[Function]}>
+        to={[Function]}
+      >
         <IconArrowLeft
-          size="1em" />
+          size="1em"
+        />
       </MobileHeaderIcon>
     }
     rightChildren={
       <MobileHeaderIcon
         component={[Function]}
-        to={[Function]}>
+        to={[Function]}
+      >
         <IconCalendar
-          size="1em" />
+          size="1em"
+        />
       </MobileHeaderIcon>
     }
-    title="dataChannelDetail" />
+    title="dataChannelDetail"
+  />
   <main>
     <Styled(MobileContentWrapper) />
     <Styled(MobileContentWrapper)>
@@ -43,9 +52,11 @@ exports[`test should renders <DeviceDataChannelDetail> correctly without data 1`
         </div>
         <div>
           <Styled(A)
-            onClick={[Function]}>
+            onClick={[Function]}
+          >
             <IconRefresh
-              size="1em" />
+              size="1em"
+            />
             <P>
               reset
             </P>

@@ -1,3 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
 exports[`routing - 1. Constants should return constants 1`] = `
 Object {
   "LOCATION_CHANGE": "@@router/LOCATION_CHANGE",

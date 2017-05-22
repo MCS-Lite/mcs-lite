@@ -1,7 +1,10 @@
-exports[`test should renders <DeviceTrigger> correctly 1`] = `
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should renders <DeviceTrigger> correctly 1`] = `
 <div>
   <HelmetWrapper
-    encodeSpecialCharacters={true}>
+    encodeSpecialCharacters={true}
+  >
     <title>
       triggerAndAction
     </title>
@@ -10,21 +13,26 @@ exports[`test should renders <DeviceTrigger> correctly 1`] = `
     leftChildren={
       <MobileHeaderIcon
         component={[Function]}
-        to={[Function]}>
+        to={[Function]}
+      >
         <IconArrowLeft
-          size="1em" />
+          size="1em"
+        />
       </MobileHeaderIcon>
     }
-    title="triggerAndAction" />
+    title="triggerAndAction"
+  />
   <main>
     <PullToRefresh
       IconArrow={[Function]}
       IconLoading={[Function]}
       isLoading={false}
-      onPull={[Function]}>
+      onPull={[Function]}
+    >
       <PreventDrag>
         <StyledLink
-          to={[Function]}>
+          to={[Function]}
+        >
           <Styled(MobileContentWrapper)>
             <div>
               <P>
@@ -36,12 +44,14 @@ exports[`test should renders <DeviceTrigger> correctly 1`] = `
             </div>
             <styled.div>
               <IconChevronRight
-                size="1em" />
+                size="1em"
+              />
             </styled.div>
           </Styled(MobileContentWrapper)>
         </StyledLink>
         <StyledLink
-          to={[Function]}>
+          to={[Function]}
+        >
           <Styled(MobileContentWrapper)>
             <div>
               <P>
@@ -53,7 +63,8 @@ exports[`test should renders <DeviceTrigger> correctly 1`] = `
             </div>
             <styled.div>
               <IconChevronRight
-                size="1em" />
+                size="1em"
+              />
             </styled.div>
           </Styled(MobileContentWrapper)>
         </StyledLink>

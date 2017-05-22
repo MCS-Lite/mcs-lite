@@ -1,4 +1,3 @@
-/* global document */
 /* eslint react/no-find-dom-node: 0 */
 
 import React from 'react';

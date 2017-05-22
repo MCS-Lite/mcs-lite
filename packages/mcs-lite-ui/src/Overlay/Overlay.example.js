@@ -1,7 +1,8 @@
 /* eslint react/no-multi-comp: 0 */
 
 import React from 'react';
-import { storiesOf, action } from '@storybook/react';
+import { storiesOf } from '@storybook/react';
+import { action } from '@storybook/addon-actions';
 import styled from 'styled-components';
 import { MenuItem, Menu } from '../Menu';
 import Button from '../Button';

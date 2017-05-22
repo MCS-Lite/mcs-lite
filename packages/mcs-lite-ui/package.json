@@ -48,6 +48,7 @@
   "devDependencies": {
     "@storybook/addon-info": "3.0.0-alpha.3",
     "@storybook/addon-options": "3.0.0-alpha.3",
+    "@storybook/addon-storyshots": "3.0.0-alpha.3",
     "@storybook/react": "3.0.0-alpha.3",
     "babel-cli": "^6.24.1",
     "babel-preset-mcs-lite": "^0.2.2",
@@ -63,7 +64,6 @@
     "react-addons-test-utils": "^15.5.1",
     "react-dom": "^15.5.4",
     "react-test-renderer": "^15.5.4",
-    "storyshots": "^3.2.2",
     "styled-components": "2.0.0-15"
   },
   "dependencies": {

@@ -1,20 +1,25 @@
-exports[`test should renders <Signin> correctly 1`] = `
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should renders <Signin> correctly 1`] = `
 <Styled(MobileContentWrapper)>
   <HelmetWrapper
-    encodeSpecialCharacters={true}>
+    encodeSpecialCharacters={true}
+  >
     <title>
       signin
     </title>
   </HelmetWrapper>
   <Logo
     alt="MCS Lite Logo"
-    src="logo_mcs_lite_black.svg" />
+    src="logo_mcs_lite_black.svg"
+  />
   <Styled(Hr)>
     welcome
   </Styled(Hr)>
   <styled.form
     action="/oauth/login/mobile"
-    method="post">
+    method="post"
+  >
     <Input
       focus={false}
       kind="primary"
@@ -23,7 +28,8 @@ exports[`test should renders <Signin> correctly 1`] = `
       placeholder="email"
       required={true}
       type="email"
-      value="" />
+      value=""
+    />
     <Input
       focus={false}
       kind="primary"
@@ -32,7 +38,8 @@ exports[`test should renders <Signin> correctly 1`] = `
       placeholder="password"
       required={true}
       type="password"
-      value="" />
+      value=""
+    />
     <Button
       active={false}
       block={true}
@@ -42,24 +49,28 @@ exports[`test should renders <Signin> correctly 1`] = `
       size="normal"
       square={false}
       type="submit"
-      value="signin" />
+      value="signin"
+    />
   </styled.form>
 </Styled(MobileContentWrapper)>
 `;
 
-exports[`test should renders <Signin> correctly with errorMessage 1`] = `
+exports[`should renders <Signin> correctly with errorMessage 1`] = `
 <Styled(MobileContentWrapper)>
   <HelmetWrapper
-    encodeSpecialCharacters={true}>
+    encodeSpecialCharacters={true}
+  >
     <title>
       signin
     </title>
   </HelmetWrapper>
   <Logo
     alt="MCS Lite Logo"
-    src="logo_mcs_lite_black.svg" />
+    src="logo_mcs_lite_black.svg"
+  />
   <Styled(P)
-    color="error">
+    color="error"
+  >
     errorMessage
   </Styled(P)>
   <Styled(Hr)>
@@ -67,7 +78,8 @@ exports[`test should renders <Signin> correctly with errorMessage 1`] = `
   </Styled(Hr)>
   <styled.form
     action="/oauth/login/mobile"
-    method="post">
+    method="post"
+  >
     <Input
       focus={false}
       kind="primary"
@@ -76,7 +88,8 @@ exports[`test should renders <Signin> correctly with errorMessage 1`] = `
       placeholder="email"
       required={true}
       type="email"
-      value="" />
+      value=""
+    />
     <Input
       focus={false}
       kind="primary"
@@ -85,7 +98,8 @@ exports[`test should renders <Signin> correctly with errorMessage 1`] = `
       placeholder="password"
       required={true}
       type="password"
-      value="" />
+      value=""
+    />
     <Button
       active={false}
       block={true}
@@ -95,7 +109,8 @@ exports[`test should renders <Signin> correctly with errorMessage 1`] = `
       size="normal"
       square={false}
       type="submit"
-      value="signin" />
+      value="signin"
+    />
   </styled.form>
 </Styled(MobileContentWrapper)>
 `;

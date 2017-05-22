@@ -1,7 +1,10 @@
-exports[`test should renders <DeviceDetailInfo> correctly 1`] = `
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should renders <DeviceDetailInfo> correctly 1`] = `
 <div>
   <HelmetWrapper
-    encodeSpecialCharacters={true}>
+    encodeSpecialCharacters={true}
+  >
     <title>
       deviceIntro
     </title>
@@ -10,12 +13,15 @@ exports[`test should renders <DeviceDetailInfo> correctly 1`] = `
     leftChildren={
       <MobileHeaderIcon
         component={[Function]}
-        to={[Function]}>
+        to={[Function]}
+      >
         <IconArrowLeft
-          size="1em" />
+          size="1em"
+        />
       </MobileHeaderIcon>
     }
-    title="deviceIntro" />
+    title="deviceIntro"
+  />
   <main>
     <Styled(MobileContentWrapper)>
       <div>
@@ -71,21 +77,25 @@ exports[`test should renders <DeviceDetailInfo> correctly 1`] = `
 </div>
 `;
 
-exports[`test should renders <DeviceDetailInfo> correctly without device data 1`] = `
+exports[`should renders <DeviceDetailInfo> correctly without device data 1`] = `
 <div>
   <HelmetWrapper
-    encodeSpecialCharacters={true}>
+    encodeSpecialCharacters={true}
+  >
     <title />
   </HelmetWrapper>
   <MobileHeader
     leftChildren={
       <MobileHeaderIcon
         component={[Function]}
-        to={[Function]}>
+        to={[Function]}
+      >
         <IconArrowLeft
-          size="1em" />
+          size="1em"
+        />
       </MobileHeaderIcon>
-    } />
+    }
+  />
   <main />
 </div>
 `;

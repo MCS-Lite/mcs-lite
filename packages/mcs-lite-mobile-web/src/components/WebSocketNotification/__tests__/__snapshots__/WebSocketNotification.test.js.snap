@@ -1,4 +1,6 @@
-exports[`test should renders <WebSocketNotification> correctly 1`] = `
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should renders <WebSocketNotification> correctly 1`] = `
 <styled.div>
   <Styled(MobileContentWrapper)>
     <Transition
@@ -22,7 +24,8 @@ exports[`test should renders <WebSocketNotification> correctly 1`] = `
       }
       onEnter={[Function]}
       onLeave={[Function]}
-      runOnMount={true}>
+      runOnMount={true}
+    >
       <Notification>
         <P>
           info
@@ -35,7 +38,8 @@ exports[`test should renders <WebSocketNotification> correctly 1`] = `
           onClick={[Function]}
           round={false}
           size="normal"
-          square={false}>
+          square={false}
+        >
           reconnect
         </Button>
       </Notification>

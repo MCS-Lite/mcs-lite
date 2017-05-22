@@ -1,8 +1,11 @@
-exports[`test should renders <Layout.LayoutDefault> correctly 1`] = `
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should renders <Layout.LayoutDefault> correctly 1`] = `
 <LayoutDefault>
   <styled.div>
     <div
-      className="sc-bdVaJa bPGLpq">
+      className="sc-bdVaJa bPGLpq"
+    >
       <div>
         Mock children
       </div>
@@ -11,7 +14,7 @@ exports[`test should renders <Layout.LayoutDefault> correctly 1`] = `
 </LayoutDefault>
 `;
 
-exports[`test should renders <Layout.LayoutDialog> correctly 1`] = `
+exports[`should renders <Layout.LayoutDialog> correctly 1`] = `
 <LayoutDialog>
   <Component
     component={false}
@@ -26,10 +29,12 @@ exports[`test should renders <Layout.LayoutDialog> correctly 1`] = `
         "opacity": 0,
         "translateY": -40,
       }
-    }>
+    }
+  >
     <Styled(MobileContentWrapper)>
       <MobileContentWrapper
-        className="sc-htpNat gDUiwA" />
+        className="sc-htpNat gDUiwA"
+      />
     </Styled(MobileContentWrapper)>
   </Component>
 </LayoutDialog>

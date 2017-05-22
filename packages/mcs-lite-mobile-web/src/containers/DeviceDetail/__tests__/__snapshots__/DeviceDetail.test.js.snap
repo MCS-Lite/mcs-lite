@@ -1,7 +1,10 @@
-exports[`test should renders <DeviceDetail> correctly 1`] = `
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should renders <DeviceDetail> correctly 1`] = `
 <div>
   <HelmetWrapper
-    encodeSpecialCharacters={true}>
+    encodeSpecialCharacters={true}
+  >
     <title>
       deviceName
     </title>
@@ -10,32 +13,39 @@ exports[`test should renders <DeviceDetail> correctly 1`] = `
     leftChildren={
       <MobileHeaderIcon
         component={[Function]}
-        to={[Function]}>
+        to={[Function]}
+      >
         <IconArrowLeft
-          size="1em" />
+          size="1em"
+        />
       </MobileHeaderIcon>
     }
     rightChildren={
       Array [
         <MobileHeaderIcon
           component={[Function]}
-          onClick={[Function]}>
+          onClick={[Function]}
+      >
           <IconMoreVert
-              size="1em" />
+              size="1em"
+          />
       </MobileHeaderIcon>,
         false,
       ]
     }
-    title="deviceName" />
+    title="deviceName"
+  />
   <main>
     <PullToRefresh
       IconArrow={[Function]}
       IconLoading={[Function]}
       isLoading={false}
-      onPull={[Function]}>
+      onPull={[Function]}
+    >
       <div>
         <Styled(Img)
-          src="banner.svg" />
+          src="banner.svg"
+        />
         <Styled(MobileContentWrapper)>
           <styled.div />
         </Styled(MobileContentWrapper)>
@@ -45,28 +55,33 @@ exports[`test should renders <DeviceDetail> correctly 1`] = `
 </div>
 `;
 
-exports[`test should renders <DeviceDetail> correctly when Menu show 1`] = `
+exports[`should renders <DeviceDetail> correctly when Menu show 1`] = `
 <div>
   <HelmetWrapper
-    encodeSpecialCharacters={true}>
+    encodeSpecialCharacters={true}
+  >
     <title />
   </HelmetWrapper>
   <MobileHeader
     leftChildren={
       <MobileHeaderIcon
         component={[Function]}
-        to={[Function]}>
+        to={[Function]}
+      >
         <IconArrowLeft
-          size="1em" />
+          size="1em"
+        />
       </MobileHeaderIcon>
     }
     rightChildren={
       Array [
         <MobileHeaderIcon
           component={[Function]}
-          onClick={[Function]}>
+          onClick={[Function]}
+      >
           <IconMoreVert
-              size="1em" />
+              size="1em"
+          />
       </MobileHeaderIcon>,
         <Overlay
           alignConfig={
@@ -92,10 +107,12 @@ exports[`test should renders <DeviceDetail> correctly when Menu show 1`] = `
                     "translateY": -10,
                   },
                 }
-          }>
+          }
+      >
           <Menu>
               <StyledLink
-                  to={[Function]}>
+                  to={[Function]}
+              >
                   <MenuItem>
                       deviceIntro
                   </MenuItem>
@@ -103,16 +120,19 @@ exports[`test should renders <DeviceDetail> correctly when Menu show 1`] = `
           </Menu>
       </Overlay>,
       ]
-    } />
+    }
+  />
   <main>
     <PullToRefresh
       IconArrow={[Function]}
       IconLoading={[Function]}
       isLoading={false}
-      onPull={[Function]}>
+      onPull={[Function]}
+    >
       <div>
         <Styled(Img)
-          src="banner.svg" />
+          src="banner.svg"
+        />
         <Styled(MobileContentWrapper)>
           <styled.div />
         </Styled(MobileContentWrapper)>
@@ -122,7 +142,8 @@ exports[`test should renders <DeviceDetail> correctly when Menu show 1`] = `
 </div>
 `;
 
-exports[`test should renders <DeviceDetail> correctly with Notification 1`] = `
+exports[`should renders <DeviceDetail> correctly with Notification 1`] = `
 <InjectIntl(withPropsOnChange(WebSocketNotification))
-  onClick={[Function]} />
+  onClick={[Function]}
+/>
 `;

@@ -1,3 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
 exports[`ui - 1. Constants should return constants 1`] = `
 Object {
   "ADD_TOAST": "mcs-lite-mobile-web/ui/ADD_TOAST",

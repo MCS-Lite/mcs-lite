@@ -1,8 +1,11 @@
-exports[`test should render components correctly 1`] = `
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render components correctly 1`] = `
 <div>
   <Styled(MobileContentWrapper)>
     <MobileContentWrapper
-      className="sc-bdVaJa iemWIQ" />
+      className="sc-bdVaJa iemWIQ"
+    />
   </Styled(MobileContentWrapper)>
 </div>
 `;

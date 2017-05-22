@@ -1,8 +1,11 @@
-exports[`test should renders <App> correctly with toasts 1`] = `
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should renders <App> correctly with toasts 1`] = `
 <styled.div>
   <HelmetWrapper
     encodeSpecialCharacters={true}
-    titleTemplate="%s | titleTemplate" />
+    titleTemplate="%s | titleTemplate"
+  />
   <styled.div />
   <Portal>
     <styled.div>
@@ -27,9 +30,11 @@ exports[`test should renders <App> correctly with toasts 1`] = `
         }
         onEnter={[Function]}
         onLeave={[Function]}
-        runOnMount={true}>
+        runOnMount={true}
+      >
         <Toast
-          kind="kind">
+          kind="kind"
+        >
           children
         </Toast>
       </Transition>
@@ -38,11 +43,12 @@ exports[`test should renders <App> correctly with toasts 1`] = `
 </styled.div>
 `;
 
-exports[`test should renders <App> correctly without toasts 1`] = `
+exports[`should renders <App> correctly without toasts 1`] = `
 <styled.div>
   <HelmetWrapper
     encodeSpecialCharacters={true}
-    titleTemplate="%s | titleTemplate" />
+    titleTemplate="%s | titleTemplate"
+  />
   <styled.div />
 </styled.div>
 `;

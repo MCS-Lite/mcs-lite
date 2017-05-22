@@ -1,6 +1,8 @@
-exports[`test should render Container correctly with HOC 1`] = `<Connect(connectSocket(InjectIntl(withPropsOnChange(DeviceDataChannelDetail)))) />`;
+// Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`test should return props correctly with mapDispatchToProps 1`] = `
+exports[`should render Container correctly with HOC 1`] = `<Connect(connectSocket(InjectIntl(withPropsOnChange(DeviceDataChannelDetail)))) />`;
+
+exports[`should return props correctly with mapDispatchToProps 1`] = `
 Object {
   "fetchDatapoints": [Function],
   "fetchDeviceDetail": [Function],
@@ -9,7 +11,7 @@ Object {
 }
 `;
 
-exports[`test should return props correctly with mapStateToProps 1`] = `
+exports[`should return props correctly with mapStateToProps 1`] = `
 Object {
   "data": Array [],
   "dataChannelId": "dataChannelId",

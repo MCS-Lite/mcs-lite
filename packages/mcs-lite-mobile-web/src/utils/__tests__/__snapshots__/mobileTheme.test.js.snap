@@ -1,4 +1,6 @@
-exports[`test should return mobileTheme 1`] = `
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should return mobileTheme 1`] = `
 Object {
   "base": Object {
     "bodyBackgroundColor": "#F1F2F7",

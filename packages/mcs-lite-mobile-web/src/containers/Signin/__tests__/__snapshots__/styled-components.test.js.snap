@@ -1,12 +1,16 @@
-exports[`test should render components correctly 1`] = `
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render components correctly 1`] = `
 <div>
   <Styled(MobileContentWrapper)>
     <MobileContentWrapper
-      className="sc-htpNat fhaWyw" />
+      className="sc-htpNat fhaWyw"
+    />
   </Styled(MobileContentWrapper)>
   <styled.form>
     <form
-      className="sc-bxivhb jmIgvy" />
+      className="sc-bxivhb jmIgvy"
+    />
   </styled.form>
 </div>
 `;
