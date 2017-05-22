@@ -17,6 +17,7 @@
 
 -   node >= 7.5.0
 -   npm >= 4.1.2
+-   yarn >= 0.24.5
 
 ## Packages
 
@@ -97,11 +98,11 @@ $ npm i mcs-lite-ui mcs-lite-icon mcs-lite-theme --save
 ## Development
 
 ```
-$ npm install # Install all external dependencies of each package.
+$ yarn # Install all external dependencies of each package.
 ```
 
 ```
-$ npm run clean # Remove all node_modules
+$ yarn run clean # Remove all node_modules
 ```
 
 ## Building all mono-packages
@@ -122,27 +123,27 @@ $ ./tasks/test.sh
 ### Development
 
 ```
-$ npm start
+$ yarn start
 ```
 
 ### Testing
 
 ```
-$ npm run test:watch
+$ yarn run test:watch
 ```
 
 ### WebSocket PORT
 
 Replace `__SOCKET_PORT_FROM_SERVER__` in the `build/index.html` file. (Default to `8000`)
 
-## NPM Scipts Interface
+## NPM Scripts Interface
 
 Root
 
--   **npm run clean**: remove all node_modules
+-   **yarn run clean**: remove all node_modules
 -   **lint**: eslint, styledlint and flow
--   **npm run format**: prettier
--   **npm run release**: publish
+-   **yarn run format**: prettier
+-   **yarn run release**: publish
 
 Packages
 
@@ -181,8 +182,8 @@ $ ncu -au && lerna exec --concurrency 1 -- ncu -au # update packages.json
 ```
 $ npm i license-checker -g
 $ cd mcs-lite/
-$ npm run clean
-$ npm i
+$ yarn run clean
+$ yarn
 $ license-checker --csv --out docs/licenses.csv
 ```
 
