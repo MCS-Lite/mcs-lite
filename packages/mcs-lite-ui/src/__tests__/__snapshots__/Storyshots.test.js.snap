@@ -483,6 +483,7 @@ exports[`Storyshots Code API 1`] = `
       "padding": 0,
     }
   }
+  innerRef={undefined}
   language="javascript"
   style={
     Object {
@@ -608,6 +609,7 @@ exports[`Storyshots Code With language props 1`] = `
       "padding": 0,
     }
   }
+  innerRef={undefined}
   language="arduino"
   style={
     Object {
