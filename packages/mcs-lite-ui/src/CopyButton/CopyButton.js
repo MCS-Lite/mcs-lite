@@ -29,7 +29,7 @@ const SUCCESS = 'success';
 export const StyledButton = styled(Button)`
   width: 42px;
 
-  svg {
+  > div {
     transform-origin: center center;
     animation: ${props => (props.status === LOADING ? `${rotate360} 0.6s infinite cubic-bezier(0.41, 0.01, 0.58, 1)` : 'none')};
   }
@@ -80,13 +80,15 @@ const CopyButton = componentFromStream(propStream => {
         status={status}
         onClick={onClick}
       >
-        {status === DEFAULT
-          ? children
-          : <MorphReplace width={10} height={10}>
-              {status === LOADING
-                ? <IconLoading key="loading" />
-                : <IconDone key="success" />}
-            </MorphReplace>}
+        <div>
+          {status === DEFAULT
+            ? children
+            : <MorphReplace width={10} height={10}>
+                {status === LOADING
+                  ? <IconLoading key="loading" />
+                  : <IconDone key="success" />}
+              </MorphReplace>}
+        </div>
       </StyledButton>
     ),
   );
