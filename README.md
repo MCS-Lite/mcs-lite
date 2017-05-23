@@ -108,7 +108,6 @@ $ yarn run clean # Remove all node_modules
 ## Building all mono-packages
 
 ```
-# scripts => design => icon => theme => ui
 $ ./tasks/build.sh
 ```
 

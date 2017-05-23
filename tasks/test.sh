@@ -10,7 +10,7 @@ yarn run flow
 
 ## Interface for each project
 echo '💪  Start testing for each packages';
-node_modules/.bin/lerna run test --concurrency 1
+node_modules/.bin/lerna run test
 
 ## Test for building demo page
 echo '💪  Start testing for building demo page';
