@@ -17,7 +17,8 @@
   },
   "license": "MIT",
   "scripts": {
-    "test": "echo 'no'"
+    "test": "echo 'no'",
+    "build": "echo 'none'"
   },
   "dependencies": {
     "mcs-lite-scripts": "^0.2.4"

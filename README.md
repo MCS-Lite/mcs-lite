@@ -108,7 +108,6 @@ $ yarn run clean # Remove all node_modules
 ## Building all mono-packages
 
 ```
-# scripts => design => icon => theme => ui
 $ ./tasks/build.sh
 ```
 
@@ -149,8 +148,8 @@ Packages
 
 | **Package**                 | clean | test | start | build |
 |-----------------------------|-------|------|-------|-------|
-| `babel-preset-mcs-lite`     |       | V    |       |       |
-| `eslint-config-mcs-lite`    |       | V    |       |       |
+| `babel-preset-mcs-lite`     |       | V    |       | -     |
+| `eslint-config-mcs-lite`    |       | V    |       | -     |
 | `mcs-lite-connect`          | V     |      |       | V     |
 | `mcs-lite-design`           | V     |      |       | V     |
 | `mcs-lite-icon`             | V     |      |       | V     |
@@ -159,9 +158,9 @@ Packages
 | `mcs-lite-scripts`          | V     |      |       | V     |
 | `mcs-lite-theme`            | V     |      |       | V     |
 | `mcs-lite-ui`               | V     | V    | V     | V     |
-| `react-intl-cra`            |       |      |       |       |
+| `react-intl-cra`            |       |      |       | -     |
 | `react-intl-inject-hoc`     | V     |      |       | V     |
-| `stylelint-config-mcs-lite` |       | V    |       |       |
+| `stylelint-config-mcs-lite` |       | V    |       | -     |
 
 ## Environment variables
 
