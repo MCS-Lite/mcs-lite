@@ -14,10 +14,10 @@ node_modules/.bin/lerna run test
 
 ## Test for building demo page
 echo '💪  Start testing for building demo page';
+node_modules/.bin/lerna run build --scope mcs-lite-mobile-web
 
 # Duplicate at Netlify CI
 # node_modules/.bin/lerna run build-storybook --scope mcs-lite-ui
-# node_modules/.bin/lerna run build --scope mcs-lite-mobile-web
 
-# Duplicate at 'npm run postinstall' stage
+# Duplicate at 'npm run postinstall (prepublish)' stage
 # node_modules/.bin/lerna run build --scope mcs-lite-introduction
