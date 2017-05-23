@@ -16,7 +16,8 @@
   "license": "MIT",
   "scripts": {
     "test": "jest --coverage --runInBand",
-    "test:watch": "npm run test -- --watch"
+    "test:watch": "npm run test -- --watch",
+    "build": "echo 'none'"
   },
   "dependencies": {
     "babel-plugin-add-module-exports": "^0.2.1",

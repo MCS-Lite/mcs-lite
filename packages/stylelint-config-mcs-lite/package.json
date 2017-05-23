@@ -15,7 +15,8 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "test": "test -e index.js"
+    "test": "test -e index.js",
+    "build": "echo 'none'"
   },
   "dependencies": {
     "stylelint-config-suitcss": "^11.0.0",
