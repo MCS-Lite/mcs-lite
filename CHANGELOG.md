@@ -2,6 +2,22 @@
 
 ## Released (2017-05-24)
 
+### Bump Versions
+
+-   babel-preset-mcs-lite@0.3.0
+-   eslint-config-mcs-lite@0.4.0
+-   mcs-lite-connect@0.3.0
+-   mcs-lite-design@0.2.0
+-   mcs-lite-icon@0.3.0
+-   mcs-lite-introduction@0.2.0
+-   mcs-lite-mobile-web@0.4.0
+-   mcs-lite-scripts@0.3.0
+-   mcs-lite-theme@0.3.0
+-   mcs-lite-ui@0.4.0
+-   react-intl-cra@0.2.0
+-   react-intl-inject-hoc@0.2.0
+-   stylelint-config-mcs-lite@0.2.0
+
 ### Tools/Stacks BREAKING
 
 -   React-scripts 1.0
