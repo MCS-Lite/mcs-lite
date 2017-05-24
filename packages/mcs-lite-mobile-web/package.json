@@ -13,7 +13,14 @@
   "files": [
     "build"
   ],
-  "proxy": "http://localhost:3000",
+  "proxy": {
+    "/api": {
+      "target": "http://localhost:3000"
+    },
+    "/oauth": {
+      "target": "http://localhost:3000"
+    }
+  },
   "scripts": {
     "clean": "rm -rf build",
     "start": "react-scripts start",
