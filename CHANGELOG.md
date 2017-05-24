@@ -1,5 +1,56 @@
 # MCS Lite changelogs
 
+## Released (2017-05-24)
+
+### Tools/Stacks BREAKING
+
+-   React-scripts 1.0
+-   lerna + yarn supported 2.0.0-rc5
+-   webpack 2
+-   storybook 3 alpha
+-   styled-components 2.0.0-19
+
+#### :rocket: New Feature
+* Other
+  * [#317](https://github.com/MCS-Lite/mcs-lite/pull/317) feat(learn): enable yarn & update rc4 🚀. ([@evenchange4](https://github.com/evenchange4))
+* `babel-preset-mcs-lite`, `eslint-config-mcs-lite`, `mcs-lite-mobile-web`, `mcs-lite-ui`
+  * [#314](https://github.com/MCS-Lite/mcs-lite/pull/314) feat(webpack2): update CRA 1.0 & storybook 3. ([@evenchange4](https://github.com/evenchange4))
+* `mcs-lite-introduction`
+  * [#311](https://github.com/MCS-Lite/mcs-lite/pull/311) feat(gitbook): add some plugins. ([@evenchange4](https://github.com/evenchange4))
+
+#### :bug: Bug Fix
+* `mcs-lite-ui`
+  * [#324](https://github.com/MCS-Lite/mcs-lite/pull/324) fix(CopyButton): fix animation. ([@evenchange4](https://github.com/evenchange4))
+* `mcs-lite-introduction`
+  * [#319](https://github.com/MCS-Lite/mcs-lite/pull/319) fix(gitbook): switch from highlight.js to prismjs. ([@evenchange4](https://github.com/evenchange4))
+
+#### :memo: Documentation
+* `mcs-lite-introduction`
+  * [#322](https://github.com/MCS-Lite/mcs-lite/pull/322) docs(intro): compress images. ([@evenchange4](https://github.com/evenchange4))
+  * [#320](https://github.com/MCS-Lite/mcs-lite/pull/320) docs(introduction): update content.. ([@dariachen](https://github.com/dariachen))
+  * [#318](https://github.com/MCS-Lite/mcs-lite/pull/318) docs(introduction): update content with more graphic explanation.. ([@dariachen](https://github.com/dariachen))
+  * [#312](https://github.com/MCS-Lite/mcs-lite/pull/312) docs(introduction): Feature/admin introduction. ([@dariachen](https://github.com/dariachen))
+
+#### :house: Internal
+* `mcs-lite-ui`
+  * [#325](https://github.com/MCS-Lite/mcs-lite/pull/325) chore(styled-components): update to 19. ([@evenchange4](https://github.com/evenchange4))
+* `mcs-lite-mobile-web`, `mcs-lite-ui`, `stylelint-config-mcs-lite`
+  * [#323](https://github.com/MCS-Lite/mcs-lite/pull/323) chore(styled-components): update 18 & storybook 3-alpha4. ([@evenchange4](https://github.com/evenchange4))
+* `babel-preset-mcs-lite`, `eslint-config-mcs-lite`, `mcs-lite-introduction`, `mcs-lite-mobile-web`, `mcs-lite-ui`, `react-intl-cra`, `stylelint-config-mcs-lite`
+  * [#321](https://github.com/MCS-Lite/mcs-lite/pull/321) chore(CI): update scripts & use lerna rc.5. ([@evenchange4](https://github.com/evenchange4))
+* `babel-preset-mcs-lite`, `mcs-lite-scripts`
+  * [#316](https://github.com/MCS-Lite/mcs-lite/pull/316) chore(babel-preset-env): switch to env & update babel-preset-react-app 3. ([@evenchange4](https://github.com/evenchange4))
+* `babel-preset-mcs-lite`, `mcs-lite-connect`, `mcs-lite-icon`, `mcs-lite-mobile-web`, `mcs-lite-scripts`, `mcs-lite-ui`, `react-intl-inject-hoc`
+  * [#315](https://github.com/MCS-Lite/mcs-lite/pull/315) chore(packages): ncu update. ([@evenchange4](https://github.com/evenchange4))
+* `mcs-lite-introduction`
+  * [#313](https://github.com/MCS-Lite/mcs-lite/pull/313) docs(introduction): add GA plug-in.. ([@dariachen](https://github.com/dariachen))
+
+#### Committers: 2
+- Daria Chen ([dariachen](https://github.com/dariachen))
+- Michael Hsu ([evenchange4](https://github.com/evenchange4))
+
+----
+
 ## Released (2017-05-12)
 
 ### Bump Versions
