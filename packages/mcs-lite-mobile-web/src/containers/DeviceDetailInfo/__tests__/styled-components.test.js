@@ -5,7 +5,7 @@ import { ThemeProvider } from 'styled-components';
 import mobileTheme from '../../../utils/mobileTheme';
 import { Container } from '../styled-components';
 
-jest.mock('mcs-lite-ui');
+jest.mock('mcs-lite-ui/lib/MobileContentWrapper');
 
 it('should render components correctly', () => {
   const wrapper = mount(

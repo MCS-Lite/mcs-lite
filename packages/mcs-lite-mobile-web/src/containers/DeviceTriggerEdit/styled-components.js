@@ -1,5 +1,8 @@
 import styled from 'styled-components';
-import { Switch, Hr, Small, MobileContentWrapper } from 'mcs-lite-ui';
+import Switch from 'mcs-lite-ui/lib/Switch';
+import Hr from 'mcs-lite-ui/lib/Hr';
+import Small from 'mcs-lite-ui/lib/Small';
+import MobileContentWrapper from 'mcs-lite-ui/lib/MobileContentWrapper';
 
 export const Item = styled(MobileContentWrapper)`
   padding: 8px 16px;

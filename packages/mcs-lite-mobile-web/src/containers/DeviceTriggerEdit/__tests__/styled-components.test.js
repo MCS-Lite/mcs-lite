@@ -11,7 +11,10 @@ import {
   ScaledSwitch,
 } from '../styled-components';
 
-jest.mock('mcs-lite-ui');
+jest.mock('mcs-lite-ui/lib/Switch');
+jest.mock('mcs-lite-ui/lib/Hr');
+jest.mock('mcs-lite-ui/lib/Small');
+jest.mock('mcs-lite-ui/lib/MobileContentWrapper');
 
 it('should render components correctly', () => {
   const wrapper = mount(

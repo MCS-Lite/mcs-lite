@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import React from 'react';
-import { Button, Input } from 'mcs-lite-ui';
+import Button from 'mcs-lite-ui/lib/Button';
+import Input from 'mcs-lite-ui/lib/Input';
 import Helmet from 'react-helmet';
 import Logo from '../../components/Logo';
 import { ErrorMessage, StyledHr, Layout, Form } from './styled-components';

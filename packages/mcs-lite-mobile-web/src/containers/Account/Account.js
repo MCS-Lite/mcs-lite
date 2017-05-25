@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Heading, Small } from 'mcs-lite-ui';
+import Heading from 'mcs-lite-ui/lib/Heading';
+import Small from 'mcs-lite-ui/lib/Small';
 import Helmet from 'react-helmet';
 import StyledLink from '../../components/StyledLink';
 import {

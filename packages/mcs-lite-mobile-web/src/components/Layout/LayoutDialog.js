@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Transition from 'react-motion-ui-pack';
 import IconClose from 'mcs-lite-icon/lib/IconClose';
-import { MobileContentWrapper } from 'mcs-lite-ui';
+import MobileContentWrapper from 'mcs-lite-ui/lib/MobileContentWrapper';
 import StyledLink from '../StyledLink';
 import updatePathname from '../../utils/updatePathname';
 

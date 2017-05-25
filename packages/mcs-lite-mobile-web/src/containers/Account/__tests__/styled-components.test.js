@@ -11,7 +11,8 @@ import {
   Footer,
 } from '../styled-components';
 
-jest.mock('mcs-lite-ui');
+jest.mock('mcs-lite-ui/lib/Button');
+jest.mock('mcs-lite-ui/lib/P');
 
 it('should render components correctly', () => {
   const wrapper = mount(

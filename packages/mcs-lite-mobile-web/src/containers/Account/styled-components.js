@@ -1,5 +1,6 @@
 import styled from 'styled-components';
-import { Button, P } from 'mcs-lite-ui';
+import Button from 'mcs-lite-ui/lib/Button';
+import P from 'mcs-lite-ui/lib/P';
 import Logo from '../../components/Logo';
 
 export const FlatButton = styled(Button)`

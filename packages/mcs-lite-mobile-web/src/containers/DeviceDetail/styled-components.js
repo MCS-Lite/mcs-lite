@@ -1,5 +1,6 @@
 import styled from 'styled-components';
-import { Img, MobileContentWrapper } from 'mcs-lite-ui';
+import Img from 'mcs-lite-ui/lib/Img';
+import MobileContentWrapper from 'mcs-lite-ui/lib/MobileContentWrapper';
 
 export const Container = styled(MobileContentWrapper)`
   padding: 4px;

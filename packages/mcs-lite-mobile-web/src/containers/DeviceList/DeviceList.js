@@ -7,14 +7,12 @@ import Transition from 'react-motion-ui-pack';
 import { Link } from 'react-router';
 import IconSearch from 'mcs-lite-icon/lib/IconSearch';
 import IconMenu from 'mcs-lite-icon/lib/IconMenu';
-import {
-  PullToRefresh,
-  PreventDrag,
-  Input,
-  ClickOutside,
-  MobileDeviceCard,
-  MobileHeader,
-} from 'mcs-lite-ui';
+import PullToRefresh from 'mcs-lite-ui/lib/PullToRefresh';
+import PreventDrag from 'mcs-lite-ui/lib/PreventDrag';
+import Input from 'mcs-lite-ui/lib/Input';
+import ClickOutside from 'mcs-lite-ui/lib/ClickOutside';
+import MobileDeviceCard from 'mcs-lite-ui/lib/MobileDeviceCard';
+import MobileHeader from 'mcs-lite-ui/lib/MobileHeader';
 import {
   Container,
   CardWrapper,

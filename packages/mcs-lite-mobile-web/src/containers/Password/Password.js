@@ -1,6 +1,9 @@
 import PropTypes from 'prop-types';
 import React from 'react';
-import { Input, Button, MobileFixedFooter, MobileHeader } from 'mcs-lite-ui';
+import Input from 'mcs-lite-ui/lib/Input';
+import Button from 'mcs-lite-ui/lib/Button';
+import MobileFixedFooter from 'mcs-lite-ui/lib/MobileFixedFooter';
+import MobileHeader from 'mcs-lite-ui/lib/MobileHeader';
 import IconMenu from 'mcs-lite-icon/lib/IconMenu';
 import Helmet from 'react-helmet';
 import { Link } from 'react-router';

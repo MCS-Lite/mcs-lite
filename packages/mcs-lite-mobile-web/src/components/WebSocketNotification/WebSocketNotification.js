@@ -1,7 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { MobileContentWrapper, Notification, Button, P } from 'mcs-lite-ui';
+import MobileContentWrapper from 'mcs-lite-ui/lib/MobileContentWrapper';
+import Notification from 'mcs-lite-ui/lib/Notification';
+import Button from 'mcs-lite-ui/lib/Button';
+import P from 'mcs-lite-ui/lib/P';
 import Transition from 'react-motion-ui-pack';
 
 const Fixed = styled.div`

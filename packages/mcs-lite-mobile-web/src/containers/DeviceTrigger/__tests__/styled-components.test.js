@@ -5,7 +5,8 @@ import { ThemeProvider } from 'styled-components';
 import mobileTheme from '../../../utils/mobileTheme';
 import { Item, StyledSamll, IconWrapper } from '../styled-components';
 
-jest.mock('mcs-lite-ui');
+jest.mock('mcs-lite-ui/lib/MobileContentWrapper');
+jest.mock('mcs-lite-ui/lib/Small');
 
 it('should render components correctly', () => {
   const wrapper = mount(

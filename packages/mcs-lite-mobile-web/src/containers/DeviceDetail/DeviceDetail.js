@@ -6,14 +6,12 @@ import IconMoreVert from 'mcs-lite-icon/lib/IconMoreVert';
 import IconArrowLeft from 'mcs-lite-icon/lib/IconArrowLeft';
 import IconFold from 'mcs-lite-icon/lib/IconFold';
 import { Link } from 'react-router';
-import {
-  PullToRefresh,
-  Overlay,
-  Menu,
-  DataChannelCard,
-  DataChannelAdapter,
-  MobileHeader,
-} from 'mcs-lite-ui';
+import PullToRefresh from 'mcs-lite-ui/lib/PullToRefresh';
+import Overlay from 'mcs-lite-ui/lib/Overlay';
+import Menu from 'mcs-lite-ui/lib/Menu';
+import DataChannelCard from 'mcs-lite-ui/lib/DataChannelCard';
+import DataChannelAdapter from 'mcs-lite-ui/lib/DataChannelAdapter';
+import MobileHeader from 'mcs-lite-ui/lib/MobileHeader';
 import {
   Container,
   StyledImg,
