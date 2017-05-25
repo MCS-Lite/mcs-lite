@@ -1,5 +1,7 @@
 import styled from 'styled-components';
-import { MobileContentWrapper, Small, A } from 'mcs-lite-ui';
+import MobileContentWrapper from 'mcs-lite-ui/lib/MobileContentWrapper';
+import Small from 'mcs-lite-ui/lib/Small';
+import A from 'mcs-lite-ui/lib/A';
 
 export const CardContainer = styled(MobileContentWrapper)`
   padding: 8px 8px 0 8px;

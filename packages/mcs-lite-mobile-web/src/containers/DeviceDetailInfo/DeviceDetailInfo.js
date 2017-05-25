@@ -1,7 +1,9 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 import Helmet from 'react-helmet';
-import { B, P, MobileHeader } from 'mcs-lite-ui';
+import B from 'mcs-lite-ui/lib/B';
+import P from 'mcs-lite-ui/lib/P';
+import MobileHeader from 'mcs-lite-ui/lib/MobileHeader';
 import IconArrowLeft from 'mcs-lite-icon/lib/IconArrowLeft';
 import { Link } from 'react-router';
 import { Container } from './styled-components';

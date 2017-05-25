@@ -65,6 +65,7 @@
     "react-intl-cra": "^0.2.0",
     "react-intl-inject-hoc": "^0.2.0",
     "react-intl-po": "^2.0.2",
+    "react-loadable": "^3.3.1",
     "react-motion-ui-pack": "^0.10.2",
     "react-overlays": "^0.7.0",
     "react-redux": "^5.0.5",

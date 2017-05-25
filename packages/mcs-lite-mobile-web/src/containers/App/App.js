@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
-import { Toast as MLToast } from 'mcs-lite-ui';
+import MLToast from 'mcs-lite-ui/lib/Toast';
 import Transition from 'react-motion-ui-pack';
 import Portal from 'react-overlays/lib/Portal';
 import { HeightContainer, ToastContainer, Fixed } from './styled-components';

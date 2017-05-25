@@ -1,5 +1,7 @@
 import styled from 'styled-components';
-import { P, MobileHeader, MobileContentWrapper } from 'mcs-lite-ui';
+import P from 'mcs-lite-ui/lib/P';
+import MobileHeader from 'mcs-lite-ui/lib/MobileHeader';
+import MobileContentWrapper from 'mcs-lite-ui/lib/MobileContentWrapper';
 import { opacity } from 'mcs-lite-theme';
 
 export const Container = styled(MobileContentWrapper)`

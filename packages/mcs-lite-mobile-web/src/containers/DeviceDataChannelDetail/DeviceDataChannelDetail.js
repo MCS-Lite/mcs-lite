@@ -2,16 +2,14 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import Helmet from 'react-helmet';
 import { Link } from 'react-router';
+import Loadable from 'react-loadable';
 import IconArrowLeft from 'mcs-lite-icon/lib/IconArrowLeft';
 import IconCalendar from 'mcs-lite-icon/lib/IconCalendar';
 import IconRefresh from 'mcs-lite-icon/lib/IconRefresh';
-import {
-  MobileHeader,
-  DataChannelCard,
-  DataChannelAdapter,
-  P,
-  DataPointAreaChart,
-} from 'mcs-lite-ui';
+import MobileHeader from 'mcs-lite-ui/lib/MobileHeader';
+import DataChannelCard from 'mcs-lite-ui/lib/DataChannelCard';
+import DataChannelAdapter from 'mcs-lite-ui/lib/DataChannelAdapter';
+import P from 'mcs-lite-ui/lib/P';
 import {
   CardContainer,
   StyledSamll,
@@ -25,6 +23,11 @@ import updatePathname from '../../utils/updatePathname';
 import dataChannelTypeMapper from '../../utils/dataChannelTypeMapper';
 import localTimeFormat from '../../utils/localTimeFormat';
 import areaChartTypeMapper from '../../utils/areaChartTypeMapper';
+
+const LoadableChart = Loadable({
+  loader: () => import('mcs-lite-ui/lib/DataPointAreaChart'),
+  LoadingComponent: () => <div>Loading...</div>,
+});
 
 class DeviceDataChannelDetail extends React.Component {
   static propTypes = {
@@ -164,7 +167,7 @@ class DeviceDataChannelDetail extends React.Component {
 
             <ChartWrapper>
               {data.length > 0
-                ? <DataPointAreaChart
+                ? <LoadableChart
                     data={data}
                     type={areaChartTypeMapper(datachannel.channelType.name)}
                   />

@@ -3,13 +3,11 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import { Link } from 'react-router';
 import IconArrowLeft from 'mcs-lite-icon/lib/IconArrowLeft';
-import {
-  MobileHeader,
-  P,
-  DatetimePickerDialog,
-  Button,
-  MobileFixedFooter,
-} from 'mcs-lite-ui';
+import MobileHeader from 'mcs-lite-ui/lib/MobileHeader';
+import P from 'mcs-lite-ui/lib/P';
+import DatetimePickerDialog from 'mcs-lite-ui/lib/DatetimePickerDialog';
+import Button from 'mcs-lite-ui/lib/Button';
+import MobileFixedFooter from 'mcs-lite-ui/lib/MobileFixedFooter';
 import {
   Container,
   InputWrapper,

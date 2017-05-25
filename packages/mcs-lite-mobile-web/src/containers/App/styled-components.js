@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { MobileContentWrapper } from 'mcs-lite-ui';
+import MobileContentWrapper from 'mcs-lite-ui/lib/MobileContentWrapper';
 
 export const HeightContainer = styled.div`
   height: 100%;

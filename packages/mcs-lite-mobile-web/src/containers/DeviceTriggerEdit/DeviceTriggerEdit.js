@@ -3,14 +3,12 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import Transition from 'react-motion-ui-pack';
 import IconArrowLeft from 'mcs-lite-icon/lib/IconArrowLeft';
-import {
-  P,
-  InputGroup,
-  Button,
-  Input,
-  MobileFixedFooter,
-  MobileHeader,
-} from 'mcs-lite-ui';
+import P from 'mcs-lite-ui/lib/P';
+import InputGroup from 'mcs-lite-ui/lib/InputGroup';
+import Button from 'mcs-lite-ui/lib/Button';
+import Input from 'mcs-lite-ui/lib/Input';
+import MobileFixedFooter from 'mcs-lite-ui/lib/MobileFixedFooter';
+import MobileHeader from 'mcs-lite-ui/lib/MobileHeader';
 import { Link } from 'react-router';
 import StyledLink from '../../components/StyledLink';
 import {
