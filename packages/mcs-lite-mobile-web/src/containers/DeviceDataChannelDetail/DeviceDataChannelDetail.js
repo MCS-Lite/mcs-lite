@@ -29,6 +29,8 @@ import areaChartTypeMapper from '../../utils/areaChartTypeMapper';
 const LoadableChart = Loadable({
   loader: () => import('mcs-lite-ui/lib/DataPointAreaChart'),
   LoadingComponent: () => <Spin><IconLoading size={20} /></Spin>,
+  webpackRequireWeakId: () =>
+    require.resolveWeak('mcs-lite-ui/lib/DataPointAreaChart'),
 });
 
 class DeviceDataChannelDetail extends React.Component {
