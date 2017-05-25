@@ -5,7 +5,7 @@ import { ThemeProvider } from 'styled-components';
 import mobileTheme from '../../../utils/mobileTheme';
 import Layout from '../';
 
-jest.mock('mcs-lite-ui');
+jest.mock('mcs-lite-ui/lib/MobileContentWrapper');
 jest.mock('react-motion-ui-pack', () => ({ children }) => children);
 
 it('should renders <Layout.LayoutDefault> correctly', () => {

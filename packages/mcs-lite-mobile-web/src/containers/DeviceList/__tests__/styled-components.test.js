@@ -10,7 +10,9 @@ import {
   PlaceholdWrapper,
 } from '../styled-components';
 
-jest.mock('mcs-lite-ui');
+jest.mock('mcs-lite-ui/lib/MobileContentWrapper');
+jest.mock('mcs-lite-ui/lib/MobileHeader');
+jest.mock('mcs-lite-ui/lib/P');
 
 it('should render components correctly', () => {
   const wrapper = mount(
