@@ -6,10 +6,12 @@ import Loadable from 'react-loadable';
 import IconArrowLeft from 'mcs-lite-icon/lib/IconArrowLeft';
 import IconCalendar from 'mcs-lite-icon/lib/IconCalendar';
 import IconRefresh from 'mcs-lite-icon/lib/IconRefresh';
+import IconLoading from 'mcs-lite-icon/lib/IconLoading';
 import MobileHeader from 'mcs-lite-ui/lib/MobileHeader';
 import DataChannelCard from 'mcs-lite-ui/lib/DataChannelCard';
 import DataChannelAdapter from 'mcs-lite-ui/lib/DataChannelAdapter';
 import P from 'mcs-lite-ui/lib/P';
+import Spin from 'mcs-lite-ui/lib/Spin';
 import {
   CardContainer,
   StyledSamll,
@@ -26,7 +28,7 @@ import areaChartTypeMapper from '../../utils/areaChartTypeMapper';
 
 const LoadableChart = Loadable({
   loader: () => import('mcs-lite-ui/lib/DataPointAreaChart'),
-  LoadingComponent: () => <div>Loading...</div>,
+  LoadingComponent: () => <Spin><IconLoading size={20} /></Spin>,
 });
 
 class DeviceDataChannelDetail extends React.Component {
