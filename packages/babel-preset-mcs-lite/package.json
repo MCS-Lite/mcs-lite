@@ -21,7 +21,7 @@
   },
   "dependencies": {
     "babel-plugin-add-module-exports": "^0.2.1",
-    "babel-plugin-import": "^1.1.1",
+    "babel-plugin-import": "^1.2.0",
     "babel-plugin-recharts": "^1.1.0",
     "babel-plugin-styled-components": "1.1.4",
     "babel-preset-env": "^1.5.1",
@@ -30,6 +30,6 @@
   },
   "devDependencies": {
     "babel-core": "^6.24.1",
-    "jest": "^20.0.3"
+    "jest": "^20.0.4"
   }
 }
