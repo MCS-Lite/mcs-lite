@@ -23,14 +23,21 @@ describe('routing - 2. Action Creators', () => {
 describe('ui - 3. Cycle', () => {
   it('should emit correct Sinks given Sources with pushPathnameCycle', done => {
     const stateSource = {
-      s: { routing: { locationBeforeTransitions: { pathname: '/' } } },
+      s: {
+        routing: {
+          locationBeforeTransitions: {
+            pathname: '/',
+            query: { locale: 'zh-TW' },
+          },
+        },
+      },
     };
     const actionSource = {
       a: actions.pushPathname('/fakepath/123'),
     };
 
     const actionSink = {
-      x: push({ pathname: '/fakepath/123' }),
+      x: push({ pathname: '/fakepath/123', query: { locale: 'zh-TW' } }),
     };
 
     // prettier-ignore
