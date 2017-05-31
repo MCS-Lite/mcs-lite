@@ -2,6 +2,10 @@
 
 ## Released (2017-05-31)
 
+### Bump Versions
+
+-   mcs-lite-introduction@0.2.3
+
 #### :bug: Bug Fix
 * `mcs-lite-introduction`
   * [#335](https://github.com/MCS-Lite/mcs-lite/pull/335) fix(gitbook): add npmrc for --save behavior of npm@5. ([@evenchange4](https://github.com/evenchange4))
