@@ -15,6 +15,7 @@ dependencies:
     - ~/.yarn
     - ~/.cache/yarn
     - node_modules
+    - packages/mcs-lite-introduction/node_modules
   override:
     - yarn install --no-progress
 

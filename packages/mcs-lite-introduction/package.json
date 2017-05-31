@@ -13,12 +13,15 @@
   "scripts": {
     "clean": "rm -rf _book",
     "start": "gitbook serve --port 4001",
+    "prebuild": "npm run clean",
     "build": "gitbook build",
     "build:netlify": "GA_ID='UA-58128356-6' npm run build",
     "prepack": "npm run build"
   },
   "devDependencies": {
-    "gitbook-cli": "^2.3.0",
+    "gitbook-cli": "^2.3.0"
+  },
+  "dependencies": {
     "gitbook-plugin-anchorjs": "^1.1.1",
     "gitbook-plugin-edit-link": "^2.0.2",
     "gitbook-plugin-github": "^2.0.0",

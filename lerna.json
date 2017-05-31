@@ -3,7 +3,8 @@
   "npmClient": "yarn",
   "commands": {
     "bootstrap": {
-      "hoist": true
+      "hoist": true,
+      "nohoist": "gitbook-plugin-*"
     }
   },
   "packages": [
