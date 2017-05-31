@@ -8,6 +8,7 @@
 .*/conventional-changelog-core/.*
 .*/react-scripts/.*
 .*/config-chain/.*
+.*/license-checker/.*
 
 [include]
 
