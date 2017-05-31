@@ -22,12 +22,17 @@
     "build": "NODE_ENV=production babel src --out-dir lib --ignore example.js,test.js",
     "createEntryFile": "exports-all 'lib/[A-Z]*' 'lib/index.js'",
     "postbuild": "npm run createEntryFile",
-    "test": "NODE_ENV='test' TZ='UTC' jest --coverage --runInBand",
+    "test": "NODE_ENV='test' TZ='UTC' jest --runInBand",
     "test:watch": "npm run test -- --watch"
   },
   "jest": {
     "setupFiles": [
       "<rootDir>/.storybook/storyshots-setup.js"
+    ],
+    "collectCoverage": true,
+    "coverageReporters": [
+      "json",
+      "lcov"
     ],
     "collectCoverageFrom": [
       "src/**/*.{js,jsx}",
