@@ -2,6 +2,17 @@
 
 ## Released (2017-05-31)
 
+#### :bug: Bug Fix
+* `mcs-lite-introduction`
+  * [#335](https://github.com/MCS-Lite/mcs-lite/pull/335) fix(gitbook): add npmrc for --save behavior of npm@5. ([@evenchange4](https://github.com/evenchange4))
+
+#### Committers: 1
+- Michael Hsu ([evenchange4](https://github.com/evenchange4))
+
+----
+
+## Released (2017-05-31)
+
 ### Environment BREAKING 🚀
 
 -   node >= 8.0.0
