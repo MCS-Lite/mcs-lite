@@ -10,15 +10,15 @@
     "@types/superagent" "2.0.36"
     superagent "3.5.2"
 
-"@cycle/run@*", "@cycle/run@^1.0.0-rc.9":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@cycle/run/-/run-1.0.0.tgz#67d3d9008f722a6e5c41bddd415abf5e615ce6f8"
+"@cycle/run@*", "@cycle/run@3.x":
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/@cycle/run/-/run-3.1.0.tgz#76df582a501d2d1b871f8f6decf263afae090384"
   dependencies:
     xstream "10.x"
 
-"@cycle/run@3.x":
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/@cycle/run/-/run-3.1.0.tgz#76df582a501d2d1b871f8f6decf263afae090384"
+"@cycle/run@^1.0.0-rc.9":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@cycle/run/-/run-1.0.0.tgz#67d3d9008f722a6e5c41bddd415abf5e615ce6f8"
   dependencies:
     xstream "10.x"
 
