@@ -26,6 +26,4 @@ node_modules/.bin/lerna run build --scope mcs-lite-mobile-web
 
 # Duplicate at Netlify CI
 # node_modules/.bin/lerna run build-storybook --scope mcs-lite-ui
-
-# Duplicate at 'npm run postinstall \(prepublish\)' stage
 # node_modules/.bin/lerna run build --scope mcs-lite-introduction

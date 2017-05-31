@@ -17,7 +17,7 @@
     "prebuild": "npm run gitbook:install && npm run clean",
     "build": "gitbook build",
     "build:netlify": "GA_ID='UA-58128356-6' npm run build",
-    "prepublish": "[ -f book.js ] && npm run build || echo 'Skip prepublish.'"
+    "prepack": "npm run build"
   },
   "devDependencies": {
     "gitbook-cli": "^2.3.0"
