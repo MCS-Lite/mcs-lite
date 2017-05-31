@@ -17,4 +17,3 @@ cache:
   yarn: true
   directories:
     - node_modules
-    - packages/mcs-lite-introduction/node_modules
