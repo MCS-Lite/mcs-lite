@@ -1,5 +1,39 @@
 # MCS Lite changelogs
 
+## Released (2017-05-31)
+
+### Environment BREAKING 🚀
+
+-   node >= 8.0.0
+-   npm >= 5.0.0
+-   yarn >= 0.24.6
+
+#### :rocket: New Feature
+* `mcs-lite-mobile-web`
+  * [#327](https://github.com/MCS-Lite/mcs-lite/pull/327) feat(Mobile): introduce react-loadable for lazy loading. ([@evenchange4](https://github.com/evenchange4))
+
+#### :bug: Bug Fix
+* `mcs-lite-mobile-web`
+  * [#329](https://github.com/MCS-Lite/mcs-lite/pull/329) fix(routing-cycle): there are some bugs when clone origin location object. ([@evenchange4](https://github.com/evenchange4))
+  * [#326](https://github.com/MCS-Lite/mcs-lite/pull/326) fix(proxy): add custom proxy config with CRA 1.0.0. ([@evenchange4](https://github.com/evenchange4))
+
+#### :nail_care: Enhancement
+* `mcs-lite-mobile-web`
+  * [#328](https://github.com/MCS-Lite/mcs-lite/pull/328) fix(react-loadable): add missing  webpack optimize. ([@evenchange4](https://github.com/evenchange4))
+
+#### :house: Internal
+* `mcs-lite-introduction`, `mcs-lite-mobile-web`
+  * [#333](https://github.com/MCS-Lite/mcs-lite/pull/333) feat(node/npm): upgrade to node 8 and npm 5. ([@evenchange4](https://github.com/evenchange4))
+* `mcs-lite-mobile-web`, `mcs-lite-scripts`, `mcs-lite-ui`
+  * [#332](https://github.com/MCS-Lite/mcs-lite/pull/332) chore(packages): update ramada 0.24 & other packages. ([@evenchange4](https://github.com/evenchange4))
+* `babel-preset-mcs-lite`, `mcs-lite-mobile-web`, `mcs-lite-ui`
+  * [#330](https://github.com/MCS-Lite/mcs-lite/pull/330) chore(ncu): update styled-components 2. ([@evenchange4](https://github.com/evenchange4))
+
+#### Committers: 1
+- Michael Hsu ([evenchange4](https://github.com/evenchange4))
+
+----
+
 ## Released (2017-05-24)
 
 ### Bump Versions

@@ -32,6 +32,9 @@
 -   [styled-components](https://github.com/styled-components/styled-components)
 -   [react-storybook](https://github.com/storybooks/react-storybook)
 -   [react-intl](https://github.com/yahoo/react-intl)
+-   [recompose](https://github.com/acdlite/recompose)
+
+*Further readings: [Build A Web App in MediaTek (中文)](https://medium.com/@evenchange4/build-a-web-app-in-mediatek-61b0a26215a0)*
 
 ## Packages Relation
 
