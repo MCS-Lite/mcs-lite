@@ -20,6 +20,6 @@
 ## To release new versions
 
 1. Checkout `master` branch.
-2. Update CHANGELOG.md by copying the results of `$ lerna-changelog`.
+2. Update CHANGELOG.md by copying the results of `$ npm run changelog`.
 3. Run `$ yarn run release`.
 4. Add the `Bump Verions` section to CHANGELOG.md. ([#26](https://github.com/lerna/lerna-changelog/issues/26))

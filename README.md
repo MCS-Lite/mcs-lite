@@ -166,7 +166,9 @@ Packages
 
 -   mcs-lite-introduction: `GA_ID`
 
-## Internal Notes
+----
+
+## Other Notes
 
 ### npm-check-updates
 
@@ -179,14 +181,11 @@ $ ncu -au && lerna exec --concurrency 1 -- ncu -au # update packages.json
 ### license-checker
 
 ```
-$ npm i license-checker -g
-$ cd mcs-lite/
-$ yarn run clean
-$ yarn
-$ license-checker --csv --out docs/licenses.csv
+$ yarn run clean && yarn # Re-install node_modules
+$ yarn run license
 ```
 
----
+----
 
 ## [CONTRIBUTING](CONTRIBUTING.md)
 ## [CHANGELOG](CHANGELOG.md)
