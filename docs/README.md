@@ -16,11 +16,8 @@
 2. [lerna publish](https://github.com/lerna/lerna#publish)
   - Version of package.json will be updated.
   - Create git tags.
-  - npm `prepublish` (Only for mobile project.)
+  - npm `prepack` (Only for projects.)
   - Publish to npm.
-
-**Remind: You should not be confused about `prepublish` after [npm@5](https://github.com/npm/npm/blob/v4.1.2/doc/misc/npm-scripts.md#deprecation-note), therefore
-MCS Lite use `npm run release` instead of `npm run publish` to avoid these weird NPM behaviors.**
  
 ## Technology Stack
 
