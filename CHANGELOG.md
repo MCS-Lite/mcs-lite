@@ -8,6 +8,19 @@
 -   npm >= 5.0.0
 -   yarn >= 0.24.6
 
+### Bump Versions
+
+-   babel-preset-mcs-lite@0.3.1
+-   mcs-lite-connect@0.3.1
+-   mcs-lite-icon@0.3.1
+-   mcs-lite-introduction@0.2.1
+-   mcs-lite-mobile-web@0.4.1
+-   mcs-lite-scripts@0.3.1
+-   mcs-lite-theme@0.3.1
+-   mcs-lite-ui@0.4.1
+-   react-intl-cra@0.2.1
+-   react-intl-inject-hoc@0.2.1
+
 #### :rocket: New Feature
 * `mcs-lite-mobile-web`
   * [#327](https://github.com/MCS-Lite/mcs-lite/pull/327) feat(Mobile): introduce react-loadable for lazy loading. ([@evenchange4](https://github.com/evenchange4))
