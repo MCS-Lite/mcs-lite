@@ -174,8 +174,8 @@ Packages
 
 ```
 $ npm install -g npm-check-updates
-$ ncu && lerna exec --concurrency 1 -- ncu # check for all packages
-$ ncu -au && lerna exec --concurrency 1 -- ncu -au # update packages.json
+$ ncu && node_modules/.bin/lerna exec --concurrency 1 -- ncu # check for all packages
+$ ncu -au && node_modules/.bin/lerna exec --concurrency 1 -- ncu -au # update packages.json
 ```
 
 ### license-checker
