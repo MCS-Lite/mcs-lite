@@ -17,7 +17,6 @@
 		* [遠端控制 LED 明滅](mcs_lite_tutorial/7697_arduino_led_blink.md) 
 	* [LinkIt SDK](mcs_lite_tutorial/SDK_overview.md)
 		* [遠端控制 LED 明滅](mcs_lite_tutorial/7697_sdk_led_blink.md) 
-* [更多範例](mcs_lite_example.md)
 
 ## 附錄
 * [附錄A：支援平台列表](mcs_lite_platform.md)
