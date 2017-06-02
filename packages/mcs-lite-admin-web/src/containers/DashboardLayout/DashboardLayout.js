@@ -13,7 +13,7 @@ import {
   Main, StyledLogo,
 } from './styled-components';
 
-const DashboardLayout = ({ toasts, children, getMessages: t }) => (
+const DashboardLayout = ({ toasts, signout, children, getMessages: t }) => (
   <Container>
     <Header>
       <a href="/">
@@ -22,7 +22,7 @@ const DashboardLayout = ({ toasts, children, getMessages: t }) => (
       <HeaderItemWrapper>
         <HeaderItem>
           <IconPlay size={18} />
-          <P>啟動</P>
+          <P>{t('start')}</P>
         </HeaderItem>
         <HeaderItem>
           <IconPause size={18} />
@@ -33,17 +33,17 @@ const DashboardLayout = ({ toasts, children, getMessages: t }) => (
     <Body>
       <Nav>
         <div>
-          <NavItem>IP 連線</NavItem>
-          <NavItem>系統管理</NavItem>
+          <NavItem to="/ip">{t('ipConnection')}</NavItem>
+          <NavItem to="/system">{t('systemManagement')}</NavItem>
         </div>
         <div>
           <NavItemControl>
             <IconSync size={18} />
-            <P>版本更新檢查</P>
+            <P>{t('versionCheck')}</P>
           </NavItemControl>
-          <NavItemControl>
+          <NavItemControl onClick={() => signout(t('confirm'))}>
             <IconLogout size={18} />
-            <P>登出服務</P>
+            <P>{t('signoutService')}</P>
           </NavItemControl>
         </div>
       </Nav>
@@ -64,6 +64,9 @@ DashboardLayout.propTypes = {
       children: PropTypes.any.isRequired,
     }),
   ).isRequired,
+
+  // Redux Action
+  signout: PropTypes.func.isRequired,
 
   // React-intl I18n
   getMessages: PropTypes.func.isRequired,

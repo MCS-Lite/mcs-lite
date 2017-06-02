@@ -6,6 +6,8 @@ import devices, { cycles as devicesCycles } from './devices';
 import auth, { cycles as authCycles } from './auth';
 import ui, { cycles as uiCycles } from './ui';
 import datapoints, { cycles as datapointsCycles } from './datapoints';
+import ips, { cycles as ipsCycles } from './ips';
+import system, { cycles as systemCycles } from './system';
 
 export const cycle = combineCycles(
   ...R.values(routingCycles),
@@ -13,6 +15,8 @@ export const cycle = combineCycles(
   ...R.values(devicesCycles),
   ...R.values(uiCycles),
   ...R.values(datapointsCycles),
+  ...R.values(ipsCycles),
+  ...R.values(systemCycles),
 );
 
 export const reducer = combineReducers({
@@ -21,4 +25,6 @@ export const reducer = combineReducers({
   ui,
   routing,
   datapoints,
+  ips,
+  system,
 });

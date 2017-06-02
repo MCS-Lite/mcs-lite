@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import P from 'mcs-lite-ui/lib/P';
+import { Link } from 'react-router';
 import Logo from '../../components/Logo';
 
 export const Container = styled.div`
@@ -55,7 +56,7 @@ export const Body = styled.div`
   flex-grow: 1;
   display: flex;
 
-  ${'' /* Remind: fixed for firefox: https://goo.gl/Rjqio3 */}
+  ${/* Remind: fixed for firefox: https://goo.gl/Rjqio3 */ ''}
   min-height: 0;
 `;
 
@@ -69,13 +70,21 @@ export const Nav = styled.nav`
   justify-content: space-between;
 `;
 
-export const NavItem = styled.div`
+const activeClassName = `DashboardLayout-SC-NavItem-attrs-activeClassName`;
+export const NavItem = styled(Link).attrs({ activeClassName })`
   width: : 100%;
   height: ${props => props.theme.height.normal};
   display: flex;
   padding: 0 20px;
   align-items: center;
   cursor: pointer;
+  text-decoration: none;
+  color: ${props => props.theme.color.black};
+
+  &.${activeClassName} {
+    background-color: ${props => props.theme.color.white};
+    color: ${props => props.theme.color.primary};
+  }
 `;
 
 export const NavItemControl = styled(NavItem)`
@@ -91,4 +100,5 @@ export const Main = styled.main`
   flex-grow: 1;
   background-color: ${props => props.theme.color.white};
   overflow: auto;
+  padding: 20px;
 `;

@@ -33,20 +33,21 @@ export const actions = {
 // ----------------------------------------------------------------------------
 
 function pushPathnameCycle(sources) {
-  const location$ = sources.STATE
-    .pluck('routing', 'locationBeforeTransitions')
+  // Remind: wait for locale avaliable
+  const locale$ = sources.STATE
+    .map(R.path(['routing', 'locationBeforeTransitions', 'query', 'locale']))
     .filter(d => !!d)
-    .distinctUntilKeyChanged('pathname');
+    .distinctUntilChanged();
 
   const pathname$ = sources.ACTION
     .filter(action => action.type === PUSH_PATHNAME)
     .pluck('payload');
 
   const action$ = pathname$
-    .combineLatest(location$)
-    .map(([pathname, location]) =>
-      R.assocPath(['pathname'], pathname)(location),
-    )
+    .combineLatest(locale$, (pathname, locale) => ({
+      pathname,
+      query: { locale },
+    }))
     .map(location => push(location));
 
   return {
@@ -55,20 +56,20 @@ function pushPathnameCycle(sources) {
 }
 
 function pushLocaleCycle(sources) {
-  const location$ = sources.STATE
-    .pluck('routing', 'locationBeforeTransitions')
+  const pathname$ = sources.STATE
+    .map(R.path(['routing', 'locationBeforeTransitions', 'pathname']))
     .filter(d => !!d)
-    .distinctUntilKeyChanged('pathname');
+    .distinctUntilChanged();
 
   const locale$ = sources.ACTION
     .filter(action => action.type === PUSH_LOCALE)
     .pluck('payload');
 
   const action$ = locale$
-    .combineLatest(location$)
-    .map(([locale, location]) =>
-      R.assocPath(['query', 'locale'], locale)(location),
-    )
+    .combineLatest(pathname$, (locale, pathname) => ({
+      pathname,
+      query: { locale },
+    }))
     .map(location => push(location));
 
   return {

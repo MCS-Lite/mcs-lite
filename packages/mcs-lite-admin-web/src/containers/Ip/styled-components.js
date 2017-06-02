@@ -1,20 +1,11 @@
 import styled from 'styled-components';
-import { MobileContentWrapper } from 'mcs-lite-ui';
+import Button from 'mcs-lite-ui/lib/Button';
 
-export const HeightContainer = styled.div`
-  height: 100%;
+export const StyledButton = styled(Button)`
+  margin-top: 10px;
 `;
 
-export const Fixed = styled.div`
-  position: fixed;
-  bottom: 56px;
-  width: 100%;
-`;
-
-export const ToastContainer = styled(MobileContentWrapper)`
-  padding: 16px;
-
-  > * {
-    margin-top: 8px;
-  }
+export const NaWrapper = styled.div`
+  margin-top: 40px;
+  text-align: center;
 `;

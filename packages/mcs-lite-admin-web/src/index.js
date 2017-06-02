@@ -23,6 +23,7 @@ import { theme } from 'mcs-lite-theme';
 import App from './containers/App';
 import DashboardLayout from './containers/DashboardLayout';
 import Ip from './containers/Ip';
+import System from './containers/System';
 // import DeviceList from './containers/DeviceList';
 // import DeviceDetail from './containers/DeviceDetail';
 // import DeviceDetailInfo from './containers/DeviceDetailInfo';
@@ -38,6 +39,7 @@ import RequireAuth from './containers/RequireAuth';
 import configureStore from './store/configureStore';
 import './style';
 import './utils/i18n';
+import registerServiceWorker from './registerServiceWorker';
 
 // ----------------------------------------------------------------------------
 // 1. Constants
@@ -68,6 +70,7 @@ ReactDOM.render(
               <Route component={DashboardLayout}>
                 <IndexRedirect to="ip" />
                 <Route path="ip" component={Ip} />
+                <Route path="system" component={System} />
               </Route>
               {/* <IndexRedirect to="devices" /> */}
               {/* <Route component={Layout.LayoutDefault}>
@@ -106,3 +109,4 @@ ReactDOM.render(
   </Provider>,
   document.getElementById(ROOT_ID),
 );
+registerServiceWorker();
