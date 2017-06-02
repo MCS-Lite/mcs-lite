@@ -1,5 +1,16 @@
 # MCS Lite changelogs
 
+## Released (2017-06-02)
+
+#### :memo: Documentation
+* `mcs-lite-introduction`
+  * [#336](https://github.com/MCS-Lite/mcs-lite/pull/336) docs(intro): modify the 7697 example code and document.. ([@dariachen](https://github.com/dariachen))
+
+#### Committers: 1
+- Daria Chen ([dariachen](https://github.com/dariachen))
+
+----
+
 ## Released (2017-05-31)
 
 ### Bump Versions
