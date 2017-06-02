@@ -14,7 +14,7 @@ const Table = styled.table`
     }
   }
 
-  tr  {
+  tr {
     border-bottom: 1px solid ${props => props.theme.base.bodyBackgroundColor};
 
     > * {
