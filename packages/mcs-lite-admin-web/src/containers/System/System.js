@@ -24,10 +24,10 @@ class Ip extends React.Component {
       rest: PropTypes.object.isRequired,
       wot: PropTypes.object.isRequired,
     }).isRequired,
-    isLoading: PropTypes.bool.isRequired,
 
     // Redux Action
     fetchSystemByType: PropTypes.func.isRequired,
+    setSystemByType: PropTypes.func.isRequired,
 
     // React-intl I18n
     getMessages: PropTypes.func.isRequired,
@@ -38,8 +38,15 @@ class Ip extends React.Component {
     this.setState({ tabValue: value });
     this.props.fetchSystemByType(value);
   };
+  onCodeMirrorChange = value =>
+    this.props.setSystemByType({
+      data: value,
+      type: this.state.tabValue,
+    });
+
   render() {
-    const { system, isLoading, getMessages: t } = this.props;
+    const { system, getMessages: t } = this.props;
+    const { onCodeMirrorChange, onTabItemClick } = this;
     const { tabValue } = this.state;
 
     return (
@@ -53,7 +60,7 @@ class Ip extends React.Component {
             <TabItem
               key={value}
               value={value}
-              onClick={this.onTabItemClick}
+              onClick={onTabItemClick}
               active={tabValue === value}
             >
               {value}.json
@@ -62,8 +69,8 @@ class Ip extends React.Component {
         </TabWrapper>
 
         <StyledCodeMirror
-          value={JSON.stringify(system[tabValue], null, 2)}
-          onChange={() => {}}
+          value={system[tabValue]}
+          onChange={onCodeMirrorChange}
           options={{ mode: 'javascript', lineNumbers: true }}
         />
 

@@ -7,11 +7,13 @@ import { actions as uiActions } from './ui';
 // ----------------------------------------------------------------------------
 
 const FETCH_SYSTEM_BY_TYPE = 'mcs-lite-admin-web/system/FETCH_SYSTEM_BY_TYPE';
+const SAVE_SYSTEM_BY_TYPE = 'mcs-lite-admin-web/system/SAVE_SYSTEM_BY_TYPE';
 const SET_SYSTEM_BY_TYPE = 'mcs-lite-admin-web/system/SET_SYSTEM_BY_TYPE';
 const CLEAR = 'mcs-lite-admin-web/system/CLEAR';
 
 export const constants = {
   FETCH_SYSTEM_BY_TYPE,
+  SAVE_SYSTEM_BY_TYPE,
   SET_SYSTEM_BY_TYPE,
   CLEAR,
 };
@@ -21,7 +23,11 @@ export const constants = {
 // ----------------------------------------------------------------------------
 
 const fetchSystemByType = payload => ({ type: FETCH_SYSTEM_BY_TYPE, payload });
-const setSystemByType = payload => ({ type: SET_SYSTEM_BY_TYPE, payload });
+const saveSystemByType = payload => ({ type: FETCH_SYSTEM_BY_TYPE, payload });
+const setSystemByType = ({ data, type }) => ({
+  type: SET_SYSTEM_BY_TYPE,
+  payload: { data, type },
+});
 const clear = () => ({ type: CLEAR });
 
 export const actions = {
@@ -42,6 +48,7 @@ function fetchSystemByTypeCycle(sources) {
 
   const request$ = sources.ACTION
     .filter(action => action.type === FETCH_SYSTEM_BY_TYPE)
+    .distinctUntilKeyChanged('payload')
     .combineLatest(accessToken$, (action, accessToken) => ({
       url: `/api/service/${action.payload}`,
       method: 'GET',
@@ -60,6 +67,7 @@ function fetchSystemByTypeCycle(sources) {
     request$.mapTo(uiActions.setLoading()),
     response$
       .pluck('body', 'data')
+      .map(data => JSON.stringify(data, null, 2))
       .zip(responseType$, (data, type) => ({
         data,
         type,
@@ -83,10 +91,10 @@ export const cycles = {
 // ----------------------------------------------------------------------------
 
 const initialState = {
-  db: {},
-  oauth: {},
-  rest: {},
-  wot: {},
+  db: '',
+  oauth: '',
+  rest: '',
+  wot: '',
 };
 
 export default function reducer(state = initialState, action = {}) {

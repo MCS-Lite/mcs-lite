@@ -15,12 +15,12 @@ import cookieHelper from '../utils/cookieHelper';
 // 1. Constants
 // ----------------------------------------------------------------------------
 
-const REQUIRE_AUTH = 'mcs-lite-mobile-web/auth/REQUIRE_AUTH';
-const TRY_ENTER = 'mcs-lite-mobile-web/auth/TRY_ENTER';
-const SIGNOUT = 'mcs-lite-mobile-web/auth/SIGNOUT';
-const CHANGE_PASSWORD = 'mcs-lite-mobile-web/auth/CHANGE_PASSWORD';
-const SET_USERINFO = 'mcs-lite-mobile-web/auth/SET_USERINFO';
-const CLEAR = 'mcs-lite-mobile-web/auth/CLEAR';
+const REQUIRE_AUTH = 'mcs-lite-admin-web/auth/REQUIRE_AUTH';
+const TRY_ENTER = 'mcs-lite-admin-web/auth/TRY_ENTER';
+const SIGNOUT = 'mcs-lite-admin-web/auth/SIGNOUT';
+const CHANGE_PASSWORD = 'mcs-lite-admin-web/auth/CHANGE_PASSWORD';
+const SET_USERINFO = 'mcs-lite-admin-web/auth/SET_USERINFO';
+const CLEAR = 'mcs-lite-admin-web/auth/CLEAR';
 
 export const constants = {
   REQUIRE_AUTH,

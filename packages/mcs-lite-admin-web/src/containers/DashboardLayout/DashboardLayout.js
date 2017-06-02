@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 // import Helmet from 'react-helmet';
+import TopBarProgress from 'react-topbar-progress-indicator';
 import P from 'mcs-lite-ui/lib/P';
 // import Transition from 'react-motion-ui-pack';
 // import Portal from 'react-overlays/lib/Portal';
@@ -13,8 +14,20 @@ import {
   Main, StyledLogo,
 } from './styled-components';
 
-const DashboardLayout = ({ toasts, signout, children, getMessages: t }) => (
+// Setup default config
+TopBarProgress.config({
+  barThickness: 4,
+  barColors: {
+    '0': '#00A1DE',
+    '1.0': '#00A1DE',
+  },
+  shadowBlur: 5,
+  shadowColor: 'rgba(0, 0, 0, 0.2)',
+});
+
+const DashboardLayout = ({ toasts, isLoading, signout, children, getMessages: t }) => (
   <Container>
+    {isLoading && <TopBarProgress />}
     <Header>
       <a href="/">
         <StyledLogo />
@@ -64,6 +77,7 @@ DashboardLayout.propTypes = {
       children: PropTypes.any.isRequired,
     }),
   ).isRequired,
+  isLoading: PropTypes.bool.isRequired,
 
   // Redux Action
   signout: PropTypes.func.isRequired,

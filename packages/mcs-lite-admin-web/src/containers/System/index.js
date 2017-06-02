@@ -5,13 +5,13 @@ import messages from './messages';
 import { actions } from '../../modules/system';
 import System from './System';
 
-export const mapStateToProps = ({ ui, system }) => ({
+export const mapStateToProps = ({ system }) => ({
   system,
-  isLoading: ui.isLoading,
 });
 
 export const mapDispatchToProps = {
   fetchSystemByType: actions.fetchSystemByType,
+  setSystemByType: actions.setSystemByType,
 };
 
 export default compose(

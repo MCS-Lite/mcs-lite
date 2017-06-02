@@ -7,6 +7,7 @@ import DashboardLayout from './DashboardLayout';
 
 export const mapStateToProps = ({ ui }) => ({
   toasts: ui.toasts,
+  isLoading: ui.isLoading,
 });
 
 export const mapDispatchToProps = { signout: actions.signout };
