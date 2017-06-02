@@ -9,6 +9,7 @@
 .*/react-scripts/.*
 .*/config-chain/.*
 .*/license-checker/.*
+.*/node_modules/react-topbar-progress-indicator/.*
 
 [include]
 

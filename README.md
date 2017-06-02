@@ -29,6 +29,10 @@
 [eslint-config-mcs-lite-npm]: https://www.npmjs.org/package/eslint-config-mcs-lite
 [eslint-config-mcs-lite-npm-downloads]: https://img.shields.io/npm/dt/eslint-config-mcs-lite.svg?style=flat-square
 
+[mcs-lite-admin-web-npm-badge]: https://img.shields.io/npm/v/mcs-lite-admin-web.svg?style=flat-square
+[mcs-lite-admin-web-npm]: https://www.npmjs.org/package/mcs-lite-admin-web
+[mcs-lite-admin-web-npm-downloads]: https://img.shields.io/npm/dt/mcs-lite-admin-web.svg?style=flat-square
+
 [mcs-lite-connect-npm-badge]: https://img.shields.io/npm/v/mcs-lite-connect.svg?style=flat-square
 [mcs-lite-connect-npm]: https://www.npmjs.org/package/mcs-lite-connect
 [mcs-lite-connect-npm-downloads]: https://img.shields.io/npm/dt/mcs-lite-connect.svg?style=flat-square
@@ -77,6 +81,7 @@
 |-------------|-----------------|-------------|---------------|
 | `babel-preset-mcs-lite` | Babel preset used by MCS Lite | [![npm][babel-preset-mcs-lite-npm-badge]][babel-preset-mcs-lite-npm] | [![npm downloads][babel-preset-mcs-lite-npm-downloads]][babel-preset-mcs-lite-npm]
 | `eslint-config-mcs-lite` | Eslint config used by MCS Lite | [![npm][eslint-config-mcs-lite-npm-badge]][eslint-config-mcs-lite-npm] | [![npm downloads][eslint-config-mcs-lite-npm-downloads]][eslint-config-mcs-lite-npm]
+| `mcs-lite-admin-web` | MCS Lite Admin Web | [![npm][mcs-lite-admin-web-npm-badge]][mcs-lite-admin-web-npm] | [![npm downloads][mcs-lite-admin-web-npm-downloads]][mcs-lite-admin-web-npm]
 | [`mcs-lite-connect`](./packages/mcs-lite-connect) | Connect MCS with WebSocket | [![npm][mcs-lite-connect-npm-badge]][mcs-lite-connect-npm] | [![npm downloads][mcs-lite-connect-npm-downloads]][mcs-lite-connect-npm]
 | `mcs-lite-design` | The source images to be compressed used by MCS Lite | [![npm][mcs-lite-design-npm-badge]][mcs-lite-design-npm] | [![npm downloads][mcs-lite-design-npm-downloads]][mcs-lite-design-npm]
 | `mcs-lite-icon` | Convert SVG icon to React components | [![npm][mcs-lite-icon-npm-badge]][mcs-lite-icon-npm] | [![npm downloads][mcs-lite-icon-npm-downloads]][mcs-lite-icon-npm]
@@ -150,11 +155,12 @@ Packages
 |-----------------------------|-------|------|-------|-------|
 | `babel-preset-mcs-lite`     |       | V    |       | -     |
 | `eslint-config-mcs-lite`    |       | V    |       | -     |
+| `mcs-lite-admin-web`        |       | V    | V     | V     |
 | `mcs-lite-connect`          | V     |      |       | V     |
 | `mcs-lite-design`           | V     |      |       | V     |
 | `mcs-lite-icon`             | V     |      |       | V     |
 | `mcs-lite-introduction`     | V     |      | V     | V     |
-| `mcs-lite-mobile-web`       | V     | V    | V     | V     |
+| `mcs-lite-mobile-web`       |       | V    | V     | V     |
 | `mcs-lite-scripts`          | V     |      |       | V     |
 | `mcs-lite-theme`            | V     |      |       | V     |
 | `mcs-lite-ui`               | V     | V    | V     | V     |
