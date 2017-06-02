@@ -4,8 +4,6 @@
 import { Observable } from 'rxjs/Observable';
 import R from 'ramda';
 import { actions as routingActions } from './routing';
-import { actions as devicesActions } from './devices';
-import { actions as datapointsActions } from './datapoints';
 import { actions as ipsActions } from './ips';
 import { actions as systemActions } from './system';
 import { actions as uiActions } from './ui';
@@ -120,8 +118,6 @@ function signoutCycle(sources) {
       Observable.of(
         routingActions.pushPathname('/login'),
         clear(),
-        devicesActions.clear(),
-        datapointsActions.clear(),
         ipsActions.clear(),
         systemActions.clear(),
       ),

@@ -51,7 +51,8 @@ export function assertSourcesSinks(sources, sinks, main, done, timeOpts = {}) {
   );
 
   Time.run(err => {
-    expect(err).toBeFalsy();
-    done();
+    console.log(err);
+    expect(err).toBe(undefined);
   });
+  done();
 }

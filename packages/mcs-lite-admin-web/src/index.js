@@ -19,22 +19,11 @@ import { syncHistoryWithStore } from 'react-router-redux';
 import { ThemeProvider } from 'styled-components';
 import IntlProvider from './containers/IntlProvider';
 import { theme } from 'mcs-lite-theme';
-// import Layout from './components/Layout';
 import App from './containers/App';
 import DashboardLayout from './containers/DashboardLayout';
 import Ip from './containers/Ip';
 import System from './containers/System';
-// import DeviceList from './containers/DeviceList';
-// import DeviceDetail from './containers/DeviceDetail';
-// import DeviceDetailInfo from './containers/DeviceDetailInfo';
-// import DeviceTrigger from './containers/DeviceTrigger';
-// import DeviceTriggerEdit from './containers/DeviceTriggerEdit';
-// import DeviceDataChannelDetail from './containers/DeviceDataChannelDetail';
-// import DeviceDataChannelTimeRange
-//   from './containers/DeviceDataChannelTimeRange';
 import Signin from './containers/Signin';
-// import Account from './containers/Account';
-// import Password from './containers/Password';
 import RequireAuth from './containers/RequireAuth';
 import configureStore from './store/configureStore';
 import './style';
@@ -72,35 +61,6 @@ ReactDOM.render(
                 <Route path="ip" component={Ip} />
                 <Route path="system" component={System} />
               </Route>
-              {/* <IndexRedirect to="devices" /> */}
-              {/* <Route component={Layout.LayoutDefault}>
-                <Route path="password" component={Password} />
-                <Route path="devices" component={DeviceList} />
-                <Route path="devices/:deviceId" component={DeviceDetail} />
-                <Route
-                  path="devices/:deviceId/info"
-                  component={DeviceDetailInfo}
-                />
-                <Route
-                  path="devices/:deviceId/trigger"
-                  component={DeviceTrigger}
-                />
-                <Route
-                  path="devices/:deviceId/trigger/edit"
-                  component={DeviceTriggerEdit}
-                />
-                <Route
-                  path="devices/:deviceId/dataChannels/:dataChannelId"
-                  component={DeviceDataChannelDetail}
-                />
-                <Route
-                  path="devices/:deviceId/dataChannels/:dataChannelId/timeRange"
-                  component={DeviceDataChannelTimeRange}
-                />
-              </Route>
-              <Route component={Layout.LayoutDialog}>
-                <Route path="account" component={Account} />
-              </Route> */}
             </Route>
           </Route>
         </Router>

@@ -10,8 +10,16 @@ import IconPause from 'mcs-lite-icon/lib/IconPause';
 import IconLogout from 'mcs-lite-icon/lib/IconLogout';
 import IconSync from 'mcs-lite-icon/lib/IconSync';
 import {
-  Container, Header, HeaderItemWrapper, HeaderItem, Body, Nav, NavItem, NavItemControl,
-  Main, StyledLogo,
+  Container,
+  Header,
+  HeaderItemWrapper,
+  HeaderItem,
+  Body,
+  Nav,
+  NavItem,
+  NavItemControl,
+  Main,
+  StyledLogo,
 } from './styled-components';
 
 // Setup default config
@@ -25,7 +33,13 @@ TopBarProgress.config({
   shadowColor: 'rgba(0, 0, 0, 0.2)',
 });
 
-const DashboardLayout = ({ toasts, isLoading, signout, children, getMessages: t }) => (
+const DashboardLayout = ({
+  toasts,
+  isLoading,
+  signout,
+  children,
+  getMessages: t,
+}) => (
   <Container>
     {isLoading && <TopBarProgress />}
     <Header>

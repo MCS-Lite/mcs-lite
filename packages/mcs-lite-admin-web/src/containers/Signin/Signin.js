@@ -2,8 +2,13 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import { Button, Input } from 'mcs-lite-ui';
 import Helmet from 'react-helmet';
-import logoPath from '../../statics/images/logo_mcs_lite_black.svg';
-import { StyledLogo, ErrorMessage, StyledHr, Layout, Form } from './styled-components';
+import {
+  StyledLogo,
+  ErrorMessage,
+  StyledHr,
+  Layout,
+  Form,
+} from './styled-components';
 
 class Signin extends React.Component {
   static propTypes = {
