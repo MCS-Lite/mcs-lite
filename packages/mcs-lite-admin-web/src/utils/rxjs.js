@@ -6,6 +6,7 @@ import 'rxjs/add/observable/fromPromise';
 import 'rxjs/add/observable/throw';
 import 'rxjs/add/observable/empty';
 import 'rxjs/add/observable/combineLatest';
+import 'rxjs/add/observable/never';
 
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/mapTo';

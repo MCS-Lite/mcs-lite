@@ -1,6 +1,6 @@
 // @flow
 import R from 'ramda';
-import { darken2 } from 'mcs-lite-theme';
+import { darken1, darken2, darken3 } from 'mcs-lite-theme';
 
 const SMALL = 'small';
 const DEFAULT = 'default';
@@ -53,5 +53,21 @@ export const color = R.cond([
 
 export const backgroundColor = R.cond([
   [R.propEq('active', true), props => darken2(props.theme.color[props.kind])],
+  [R.propEq('disabled', true), R.path(['theme', 'color', 'grayDark'])],
   [R.T, props => props.theme.color[props.kind]],
+]);
+
+export const hoverBackgroundColor = R.cond([
+  [R.propEq('disabled', true), R.path(['theme', 'color', 'grayDark'])],
+  [R.T, props => darken1(props.theme.color[props.kind])],
+]);
+
+export const activeBackgroundColor = R.cond([
+  [R.propEq('disabled', true), R.path(['theme', 'color', 'grayDark'])],
+  [R.T, props => darken2(props.theme.color[props.kind])],
+]);
+
+export const borderColor = R.cond([
+  [R.propEq('disabled', true), props => darken3(props.theme.color.grayDark)],
+  [R.T, props => darken3(props.theme.color[props.kind])],
 ]);

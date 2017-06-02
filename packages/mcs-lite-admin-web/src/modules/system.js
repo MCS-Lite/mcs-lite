@@ -1,5 +1,6 @@
 import { Observable } from 'rxjs/Observable';
 import R from 'ramda';
+import isJSON from 'validator/lib/isJSON';
 import { actions as uiActions } from './ui';
 
 // ----------------------------------------------------------------------------
@@ -7,13 +8,13 @@ import { actions as uiActions } from './ui';
 // ----------------------------------------------------------------------------
 
 const FETCH_SYSTEM_BY_TYPE = 'mcs-lite-admin-web/system/FETCH_SYSTEM_BY_TYPE';
-const SAVE_SYSTEM_BY_TYPE = 'mcs-lite-admin-web/system/SAVE_SYSTEM_BY_TYPE';
+const UPLOAD_SYSTEM_BY_TYPE = 'mcs-lite-admin-web/system/UPLOAD_SYSTEM_BY_TYPE';
 const SET_SYSTEM_BY_TYPE = 'mcs-lite-admin-web/system/SET_SYSTEM_BY_TYPE';
 const CLEAR = 'mcs-lite-admin-web/system/CLEAR';
 
 export const constants = {
   FETCH_SYSTEM_BY_TYPE,
-  SAVE_SYSTEM_BY_TYPE,
+  UPLOAD_SYSTEM_BY_TYPE,
   SET_SYSTEM_BY_TYPE,
   CLEAR,
 };
@@ -23,7 +24,10 @@ export const constants = {
 // ----------------------------------------------------------------------------
 
 const fetchSystemByType = payload => ({ type: FETCH_SYSTEM_BY_TYPE, payload });
-const saveSystemByType = payload => ({ type: FETCH_SYSTEM_BY_TYPE, payload });
+const uploadSystemByType = payload => ({
+  type: UPLOAD_SYSTEM_BY_TYPE,
+  payload,
+});
 const setSystemByType = ({ data, type }) => ({
   type: SET_SYSTEM_BY_TYPE,
   payload: { data, type },
@@ -32,6 +36,7 @@ const clear = () => ({ type: CLEAR });
 
 export const actions = {
   fetchSystemByType,
+  uploadSystemByType,
   setSystemByType,
   clear,
 };
@@ -53,10 +58,10 @@ function fetchSystemByTypeCycle(sources) {
       url: `/api/service/${action.payload}`,
       method: 'GET',
       headers: { Authorization: `Bearer ${accessToken}` },
-      category: 'system',
+      category: FETCH_SYSTEM_BY_TYPE,
     }));
 
-  const response$ = sources.HTTP.select('system').switch();
+  const response$ = sources.HTTP.select(FETCH_SYSTEM_BY_TYPE).switch();
 
   // Remind: api response with type(settingId) will be better.
   const responseType$ = response$
@@ -67,7 +72,7 @@ function fetchSystemByTypeCycle(sources) {
     request$.mapTo(uiActions.setLoading()),
     response$
       .pluck('body', 'data')
-      .map(data => JSON.stringify(data, null, 2))
+      .map(data => JSON.stringify(data, null, '\t'))
       .zip(responseType$, (data, type) => ({
         data,
         type,
@@ -82,8 +87,50 @@ function fetchSystemByTypeCycle(sources) {
   };
 }
 
+function uploadSystemByTypeCycle(sources) {
+  const accessToken$ = sources.STATE
+    .pluck('auth', 'access_token')
+    .filter(R.complement(R.isNil)) // Hint: will wait for accessToken avaliable.
+    .distinctUntilChanged();
+
+  const system$ = sources.STATE.pluck('system');
+
+  const type$ = sources.ACTION
+    .filter(action => action.type === UPLOAD_SYSTEM_BY_TYPE)
+    .pluck('payload');
+
+  const content$ = type$
+    .withLatestFrom(system$, (type, system) => system[type])
+    .distinctUntilChanged()
+    .filter(isJSON)
+    .map(JSON.parse);
+
+  const request$ = type$.withLatestFrom(
+    accessToken$,
+    content$,
+    (type, accessToken, content) => ({
+      url: `/api/service/${type}`,
+      method: 'PUT',
+      send: { content },
+      headers: { Authorization: `Bearer ${accessToken}` },
+      category: UPLOAD_SYSTEM_BY_TYPE,
+    }),
+  );
+
+  const response$ = sources.HTTP.select(UPLOAD_SYSTEM_BY_TYPE).switch();
+  const action$ = response$
+    .pluck('text')
+    .map(text => uiActions.addToast({ kind: 'success', children: text }));
+
+  return {
+    ACTION: action$,
+    HTTP: request$,
+  };
+}
+
 export const cycles = {
   fetchSystemByTypeCycle,
+  uploadSystemByTypeCycle,
 };
 
 // ----------------------------------------------------------------------------

@@ -1,32 +1,37 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import R from 'ramda';
 import Helmet from 'react-helmet';
 import 'codemirror/mode/javascript/javascript';
 import 'codemirror/lib/codemirror.css';
 import TabItem from 'mcs-lite-ui/lib/TabItem';
+import isJSONValidator from 'validator/lib/isJSON';
 import DashboardTitle from '../../components/DashboardTitle';
 import DashboardDesc from '../../components/DashboardDesc';
 import {
   StyledButton,
   TabWrapper,
   StyledCodeMirror,
+  Message,
 } from './styled-components';
 
 const TABS = ['db', 'oauth', 'rest', 'wot'];
 const DEFAULT_TAB_VALUE = TABS[0];
+const OPTIONS = { mode: 'javascript', lineNumbers: true };
 
 class Ip extends React.Component {
   static propTypes = {
     // Redux State
     system: PropTypes.shape({
-      db: PropTypes.object.isRequired,
-      oauth: PropTypes.object.isRequired,
-      rest: PropTypes.object.isRequired,
-      wot: PropTypes.object.isRequired,
+      db: PropTypes.string.isRequired,
+      oauth: PropTypes.string.isRequired,
+      rest: PropTypes.string.isRequired,
+      wot: PropTypes.string.isRequired,
     }).isRequired,
 
     // Redux Action
     fetchSystemByType: PropTypes.func.isRequired,
+    uploadSystemByType: PropTypes.func.isRequired,
     setSystemByType: PropTypes.func.isRequired,
 
     // React-intl I18n
@@ -43,11 +48,14 @@ class Ip extends React.Component {
       data: value,
       type: this.state.tabValue,
     });
+  onSaveClick = () => this.props.uploadSystemByType(this.state.tabValue);
 
   render() {
     const { system, getMessages: t } = this.props;
-    const { onCodeMirrorChange, onTabItemClick } = this;
+    const { onCodeMirrorChange, onSaveClick, onTabItemClick } = this;
     const { tabValue } = this.state;
+    const code = system[tabValue];
+    const isJSON = R.isEmpty(code) || isJSONValidator(code);
 
     return (
       <div>
@@ -69,12 +77,18 @@ class Ip extends React.Component {
         </TabWrapper>
 
         <StyledCodeMirror
-          value={system[tabValue]}
+          value={code}
           onChange={onCodeMirrorChange}
-          options={{ mode: 'javascript', lineNumbers: true }}
+          options={OPTIONS}
+          error={!isJSON}
         />
 
-        <StyledButton>{t('save')}</StyledButton>
+        {!isJSON && <Message color="error">{t('jsonError')}</Message>}
+
+        <StyledButton onClick={isJSON && onSaveClick} disabled={!isJSON}>
+          {t('save')}
+        </StyledButton>
+
       </div>
     );
   }

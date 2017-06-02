@@ -3,7 +3,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import R from 'ramda';
-import { darken1, darken2, darken3 } from 'mcs-lite-theme';
 import * as propMappers from './propMappers';
 
 const omitProps = R.omit([
@@ -14,6 +13,7 @@ const omitProps = R.omit([
   'size',
   'status',
   'active',
+  'disabled',
 ]);
 
 const BaseComponent = ({ component, children, ...otherProps }) =>
@@ -28,18 +28,17 @@ const Button = styled(BaseComponent)`
   border-width: 1px;
   border-style: solid;
   outline: none;
-  cursor: pointer;
   box-sizing: border-box;
   transition: background-color cubic-bezier(0.47, 0, 0.75, 0.72) 0.3s;
   line-height: 0;
-  border-color: ${props => darken3(props.theme.color[props.kind])};
+  cursor: ${props => (props.disabled ? 'not-allowed;' : 'pointer')};
 
   &:hover {
-    background-color: ${props => darken1(props.theme.color[props.kind])};
+    background-color: ${propMappers.hoverBackgroundColor};
   }
 
   &:active {
-    background-color: ${props => darken2(props.theme.color[props.kind])};
+    background-color: ${propMappers.activeBackgroundColor};
   }
 
   background-color: ${propMappers.backgroundColor};
@@ -50,6 +49,7 @@ const Button = styled(BaseComponent)`
   height: ${props => props.theme.height[props.size]};
   padding: ${propMappers.padding};
   font-size: ${propMappers.fontSize};
+  border-color: ${propMappers.borderColor};
 `;
 
 Button.displayName = 'Button';
@@ -62,6 +62,7 @@ Button.propTypes = {
   round: PropTypes.bool,
   size: PropTypes.oneOf(['small', 'normal']),
   active: PropTypes.bool,
+  disabled: PropTypes.bool,
 };
 
 Button.defaultProps = {
@@ -72,6 +73,7 @@ Button.defaultProps = {
   round: false,
   size: 'normal',
   active: false,
+  disabled: false,
 };
 
 export default Button;

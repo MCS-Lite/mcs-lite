@@ -11,6 +11,10 @@ const messages = defineMessages({
     description: 'description',
     defaultMessage: '修改系統的參數設定。',
   },
+  'System.jsonError': {
+    id: 'System.jsonError',
+    defaultMessage: 'JSON 資料格式錯誤',
+  },
   'System.save': {
     id: 'System.save',
     defaultMessage: '儲存',

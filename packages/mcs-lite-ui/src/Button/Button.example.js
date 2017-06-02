@@ -131,6 +131,12 @@ storiesOf('Button', module)
     inline: true,
   })
   .addWithInfo(
+    'With disabled props',
+    '',
+    () => <Button disabled>Disabled</Button>,
+    { inline: true },
+  )
+  .addWithInfo(
     'With icon inside',
     'loading',
     () => (

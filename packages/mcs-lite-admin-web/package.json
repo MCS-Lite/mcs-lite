@@ -81,6 +81,7 @@
     "redux-mock-store": "^1.2.3",
     "rxjs": "^5.4.0",
     "styled-components": "^2.0.0",
-    "uuid": "^3.0.1"
+    "uuid": "^3.0.1",
+    "validator": "^7.0.0"
   }
 }
