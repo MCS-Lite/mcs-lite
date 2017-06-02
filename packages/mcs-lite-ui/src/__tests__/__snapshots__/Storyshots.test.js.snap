@@ -6022,7 +6022,7 @@ exports[`Storyshots TabItem With state 1`] = `
 
 exports[`Storyshots Table API 1`] = `
 <table
-  className="Table__Table-fLBySN kxQAFA"
+  className="Table__Table-fLBySN gnDJdq"
   style={
     Object {
       "backgroundColor": "white",
