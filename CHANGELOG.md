@@ -2,6 +2,10 @@
 
 ## Released (2017-06-02)
 
+### Bump Versions
+
+-   mcs-lite-introduction@0.2.4
+
 #### :memo: Documentation
 * `mcs-lite-introduction`
   * [#336](https://github.com/MCS-Lite/mcs-lite/pull/336) docs(intro): modify the 7697 example code and document.. ([@dariachen](https://github.com/dariachen))
