@@ -1,7 +1,16 @@
-exports[`test should render Container correctly with HOC 1`] = `<Connect(InjectIntl(withPropsOnChange(App))) />`;
+// Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`test should return props correctly with mapStateToProps 1`] = `
+exports[`should render Container correctly with HOC 1`] = `<Connect(InjectIntl(withPropsOnChange(Ip))) />`;
+
+exports[`should return props correctly with mapDispatchToProps 1`] = `
 Object {
-  "toasts": Array [],
+  "fetchIpList": [Function],
+}
+`;
+
+exports[`should return props correctly with mapStateToProps 1`] = `
+Object {
+  "ips": Array [],
+  "isLoading": false,
 }
 `;

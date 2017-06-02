@@ -1,9 +1,30 @@
-exports[`test should return messages 1`] = `
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should return messages 1`] = `
 Object {
-  "App.titleTemplate": Object {
-    "defaultMessage": "MCS Lite Mobile",
-    "description": "For document title",
-    "id": "App.titleTemplate",
+  "DashboardLayout.confirm": Object {
+    "defaultMessage": "確定要登出？",
+    "id": "DashboardLayout.confirm",
+  },
+  "DashboardLayout.ipConnection": Object {
+    "defaultMessage": "IP 連線",
+    "id": "DashboardLayout.ipConnection",
+  },
+  "DashboardLayout.signoutService": Object {
+    "defaultMessage": "登出服務",
+    "id": "DashboardLayout.signoutService",
+  },
+  "DashboardLayout.start": Object {
+    "defaultMessage": "啟動",
+    "id": "DashboardLayout.start",
+  },
+  "DashboardLayout.systemManagement": Object {
+    "defaultMessage": "系統管理",
+    "id": "DashboardLayout.systemManagement",
+  },
+  "DashboardLayout.versionCheck": Object {
+    "defaultMessage": "版本更新檢查",
+    "id": "DashboardLayout.versionCheck",
   },
 }
 `;

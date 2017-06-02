@@ -1,0 +1,74 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should renders <Ip> correctly with ip 1`] = `
+<div>
+  <HelmetWrapper
+    encodeSpecialCharacters={true}
+  >
+    <title>
+      mcsLiteIpConnection
+    </title>
+  </HelmetWrapper>
+  <DashboardTitle
+    title="mcsLiteIpConnection"
+  />
+  <DashboardDesc>
+    description
+  </DashboardDesc>
+  <Table>
+    <thead>
+      <tr>
+        <td>
+          serviceIpAddress
+        </td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          127.0.0.1
+        </td>
+      </tr>
+      <tr>
+        <td>
+          localhost
+        </td>
+      </tr>
+    </tbody>
+  </Table>
+  <Styled(Button)>
+    goToMCSLite
+  </Styled(Button)>
+</div>
+`;
+
+exports[`should renders <Ip> correctly without ip 1`] = `
+<div>
+  <HelmetWrapper
+    encodeSpecialCharacters={true}
+  >
+    <title>
+      mcsLiteIpConnection
+    </title>
+  </HelmetWrapper>
+  <DashboardTitle
+    title="mcsLiteIpConnection"
+  />
+  <DashboardDesc>
+    description
+  </DashboardDesc>
+  <Table>
+    <thead>
+      <tr>
+        <td>
+          serviceIpAddress
+        </td>
+      </tr>
+    </thead>
+    <tbody />
+  </Table>
+  <Styled(Button)>
+    goToMCSLite
+  </Styled(Button)>
+</div>
+`;

@@ -5,14 +5,9 @@ import messages from './messages';
 import { actions } from '../../modules/auth';
 import DashboardLayout from './DashboardLayout';
 
-export const mapStateToProps = ({ ui }) => ({
-  toasts: ui.toasts,
-  isLoading: ui.isLoading,
-});
-
 export const mapDispatchToProps = { signout: actions.signout };
 
 export default compose(
-  connect(mapStateToProps, mapDispatchToProps),
+  connect(null, mapDispatchToProps),
   withGetMessages(messages, 'DashboardLayout'),
 )(DashboardLayout);

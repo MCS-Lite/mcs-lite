@@ -1,7 +1,9 @@
-exports[`test should return messages 1`] = `
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should return messages 1`] = `
 Object {
   "App.titleTemplate": Object {
-    "defaultMessage": "MCS Lite Mobile",
+    "defaultMessage": "MCS Lite Admin",
     "description": "For document title",
     "id": "App.titleTemplate",
   },

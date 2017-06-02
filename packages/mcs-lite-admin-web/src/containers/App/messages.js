@@ -4,7 +4,7 @@ const messages = defineMessages({
   'App.titleTemplate': {
     id: 'App.titleTemplate',
     description: 'For document title',
-    defaultMessage: 'MCS Lite Mobile',
+    defaultMessage: 'MCS Lite Admin',
   },
 });
 

@@ -1,7 +1,10 @@
-exports[`test should render Container correctly with HOC 1`] = `<Connect(InjectIntl(withPropsOnChange(App))) />`;
+// Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`test should return props correctly with mapStateToProps 1`] = `
+exports[`should render Container correctly with HOC 1`] = `<Connect(InjectIntl(withPropsOnChange(App))) />`;
+
+exports[`should return props correctly with mapStateToProps 1`] = `
 Object {
+  "isLoading": false,
   "toasts": Array [],
 }
 `;

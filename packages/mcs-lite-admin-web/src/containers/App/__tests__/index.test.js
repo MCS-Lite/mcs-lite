@@ -22,7 +22,7 @@ it('should render Container correctly with HOC', () => {
 
 it('should return props correctly with mapStateToProps', () => {
   const state = {
-    ui: { toasts: [] },
+    ui: { toasts: [], isLoading: false },
   };
 
   expect(mapStateToProps(state)).toMatchSnapshot();

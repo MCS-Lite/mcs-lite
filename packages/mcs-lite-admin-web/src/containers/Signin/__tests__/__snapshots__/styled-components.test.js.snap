@@ -1,12 +1,39 @@
-exports[`test should render components correctly 1`] = `
-<div>
-  <Styled(MobileContentWrapper)>
-    <MobileContentWrapper
-      className="sc-htpNat fhaWyw" />
-  </Styled(MobileContentWrapper)>
-  <styled.form>
-    <form
-      className="sc-bxivhb jmIgvy" />
-  </styled.form>
-</div>
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render components correctly 1`] = `
+Array [
+  <div>
+    <Styled(Logo)>
+        <Logo
+            alt="MCS Lite Logo"
+            className="sc-bwzfXH fwZmcw"
+            src="logo_mcs_lite_black.svg"
+        >
+            <img
+                alt="MCS Lite Logo"
+                className="sc-bwzfXH fwZmcw sc-bdVaJa RUnCB"
+                src="logo_mcs_lite_black.svg"
+            />
+        </Logo>
+    </Styled(Logo)>
+    <Styled(P)>
+        <P
+            className="sc-htpNat gsUUlc"
+        />
+    </Styled(P)>
+    <styled.div>
+        <div
+            className="sc-ifAKCX llFyuF"
+        />
+    </styled.div>
+    <styled.form>
+        <form
+            className="sc-EHOje eeyGju"
+        />
+    </styled.form>
+</div>,
+  <div
+    className="sc-ifAKCX llFyuF"
+/>,
+]
 `;

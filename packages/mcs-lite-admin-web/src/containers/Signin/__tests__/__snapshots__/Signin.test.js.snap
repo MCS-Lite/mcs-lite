@@ -1,20 +1,22 @@
-exports[`test should renders <Signin> correctly 1`] = `
-<Styled(MobileContentWrapper)>
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should renders <Signin> correctly 1`] = `
+<styled.div>
   <HelmetWrapper
-    encodeSpecialCharacters={true}>
+    encodeSpecialCharacters={true}
+  >
     <title>
       signin
     </title>
   </HelmetWrapper>
-  <Logo
-    alt="MCS Lite Logo"
-    src="logo_mcs_lite_black.svg" />
+  <Styled(Logo) />
   <Styled(Hr)>
     welcome
   </Styled(Hr)>
   <styled.form
-    action="/oauth/login/mobile"
-    method="post">
+    action="/oauth/login"
+    method="post"
+  >
     <Input
       focus={false}
       kind="primary"
@@ -23,7 +25,8 @@ exports[`test should renders <Signin> correctly 1`] = `
       placeholder="email"
       required={true}
       type="email"
-      value="" />
+      value=""
+    />
     <Input
       focus={false}
       kind="primary"
@@ -32,42 +35,46 @@ exports[`test should renders <Signin> correctly 1`] = `
       placeholder="password"
       required={true}
       type="password"
-      value="" />
+      value=""
+    />
     <Button
       active={false}
       block={true}
       component="input"
+      disabled={false}
       kind="primary"
       round={false}
       size="normal"
       square={false}
       type="submit"
-      value="signin" />
+      value="signin"
+    />
   </styled.form>
-</Styled(MobileContentWrapper)>
+</styled.div>
 `;
 
-exports[`test should renders <Signin> correctly with errorMessage 1`] = `
-<Styled(MobileContentWrapper)>
+exports[`should renders <Signin> correctly with errorMessage 1`] = `
+<styled.div>
   <HelmetWrapper
-    encodeSpecialCharacters={true}>
+    encodeSpecialCharacters={true}
+  >
     <title>
       signin
     </title>
   </HelmetWrapper>
-  <Logo
-    alt="MCS Lite Logo"
-    src="logo_mcs_lite_black.svg" />
+  <Styled(Logo) />
   <Styled(P)
-    color="error">
+    color="error"
+  >
     errorMessage
   </Styled(P)>
   <Styled(Hr)>
     welcome
   </Styled(Hr)>
   <styled.form
-    action="/oauth/login/mobile"
-    method="post">
+    action="/oauth/login"
+    method="post"
+  >
     <Input
       focus={false}
       kind="primary"
@@ -76,7 +83,8 @@ exports[`test should renders <Signin> correctly with errorMessage 1`] = `
       placeholder="email"
       required={true}
       type="email"
-      value="" />
+      value=""
+    />
     <Input
       focus={false}
       kind="primary"
@@ -85,17 +93,20 @@ exports[`test should renders <Signin> correctly with errorMessage 1`] = `
       placeholder="password"
       required={true}
       type="password"
-      value="" />
+      value=""
+    />
     <Button
       active={false}
       block={true}
       component="input"
+      disabled={false}
       kind="primary"
       round={false}
       size="normal"
       square={false}
       type="submit"
-      value="signin" />
+      value="signin"
+    />
   </styled.form>
-</Styled(MobileContentWrapper)>
+</styled.div>
 `;

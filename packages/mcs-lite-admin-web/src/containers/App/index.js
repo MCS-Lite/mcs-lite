@@ -6,6 +6,7 @@ import App from './App';
 
 export const mapStateToProps = ({ ui }) => ({
   toasts: ui.toasts,
+  isLoading: ui.isLoading,
 });
 
 export default compose(

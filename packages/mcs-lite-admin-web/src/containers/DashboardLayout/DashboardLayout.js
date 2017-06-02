@@ -1,10 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-// import Helmet from 'react-helmet';
-import TopBarProgress from 'react-topbar-progress-indicator';
 import P from 'mcs-lite-ui/lib/P';
-// import Transition from 'react-motion-ui-pack';
-// import Portal from 'react-overlays/lib/Portal';
 import IconPlay from 'mcs-lite-icon/lib/IconPlay';
 import IconPause from 'mcs-lite-icon/lib/IconPause';
 import IconLogout from 'mcs-lite-icon/lib/IconLogout';
@@ -22,26 +18,8 @@ import {
   StyledLogo,
 } from './styled-components';
 
-// Setup default config
-TopBarProgress.config({
-  barThickness: 4,
-  barColors: {
-    '0': '#00A1DE',
-    '1.0': '#00A1DE',
-  },
-  shadowBlur: 5,
-  shadowColor: 'rgba(0, 0, 0, 0.2)',
-});
-
-const DashboardLayout = ({
-  toasts,
-  isLoading,
-  signout,
-  children,
-  getMessages: t,
-}) => (
+const DashboardLayout = ({ signout, children, getMessages: t }) => (
   <Container>
-    {isLoading && <TopBarProgress />}
     <Header>
       <a href="/">
         <StyledLogo />
@@ -83,15 +61,7 @@ const DashboardLayout = ({
 
 DashboardLayout.displayName = 'DashboardLayout';
 DashboardLayout.propTypes = {
-  // Redux State
-  toasts: PropTypes.arrayOf(
-    PropTypes.shape({
-      key: PropTypes.string.isRequired,
-      kind: PropTypes.string.isRequired,
-      children: PropTypes.any.isRequired,
-    }),
-  ).isRequired,
-  isLoading: PropTypes.bool.isRequired,
+  children: PropTypes.any.isRequired,
 
   // Redux Action
   signout: PropTypes.func.isRequired,

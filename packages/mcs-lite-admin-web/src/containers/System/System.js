@@ -16,10 +16,10 @@ import {
 } from './styled-components';
 
 const TABS = ['db', 'oauth', 'rest', 'wot'];
-const DEFAULT_TAB_VALUE = TABS[0];
+export const DEFAULT_TAB_VALUE = 'db';
 const OPTIONS = { mode: 'javascript', lineNumbers: true };
 
-class Ip extends React.Component {
+class System extends React.Component {
   static propTypes = {
     // Redux State
     system: PropTypes.shape({
@@ -94,4 +94,4 @@ class Ip extends React.Component {
   }
 }
 
-export default Ip;
+export default System;

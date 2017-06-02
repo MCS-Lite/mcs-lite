@@ -1,22 +1,51 @@
-exports[`test should render components correctly 1`] = `
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render components correctly 1`] = `
 Array [
   <div>
+    <Styled(Button)>
+        <Button
+            active={false}
+            block={false}
+            className="sc-htpNat iJpthS"
+            component="button"
+            disabled={false}
+            kind="primary"
+            round={false}
+            size="normal"
+            square={false}
+        >
+            <BaseComponent
+                active={false}
+                block={false}
+                className="sc-htpNat iJpthS sc-bdVaJa kDgzfK"
+                component="button"
+                disabled={false}
+                kind="primary"
+                round={false}
+                size="normal"
+                square={false}
+            >
+                <button
+                    className="sc-htpNat iJpthS sc-bdVaJa kDgzfK"
+                />
+            </BaseComponent>
+        </Button>
+    </Styled(Button)>
     <styled.div>
         <div
-            className="sc-bdVaJa dGIfxd" />
+            className="sc-bxivhb enlRff"
+        />
     </styled.div>
-    <styled.div>
-        <div
-            className="sc-bwzfXH gjbKqk" />
-    </styled.div>
-    <Styled(MobileContentWrapper)>
-        <MobileContentWrapper
-            className="sc-htpNat dWlGLA" />
-    </Styled(MobileContentWrapper)>
+    <Styled(mockConstructor)>
+        <mockConstructor
+            className="sc-EHOje cnIwWZ"
+            preserveScrollPosition={false}
+        />
+    </Styled(mockConstructor)>
 </div>,
   <div
-    className="sc-bdVaJa dGIfxd" />,
-  <div
-    className="sc-bwzfXH gjbKqk" />,
+    className="sc-bxivhb enlRff"
+/>,
 ]
 `;

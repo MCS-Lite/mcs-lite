@@ -1,4 +1,6 @@
-exports[`test should renders <RequireAuth> correctly 1`] = `
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should renders <RequireAuth> correctly 1`] = `
 <div>
   Mock Children
 </div>

@@ -34,4 +34,8 @@ export const StyledCodeMirror = styled(CodeMirror)`
   .CodeMirror-line {
     padding-left: 10px;
   }
+
+  .CodeMirror-gutters {
+    z-index: auto;
+  }
 `;
