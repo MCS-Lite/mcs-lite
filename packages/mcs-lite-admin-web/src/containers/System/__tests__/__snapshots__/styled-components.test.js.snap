@@ -39,7 +39,7 @@ Array [
     </styled.div>
     <Styled(mockConstructor)>
         <mockConstructor
-            className="sc-EHOje cnIwWZ"
+            className="sc-EHOje kYsIWP"
             preserveScrollPosition={false}
         />
     </Styled(mockConstructor)>
