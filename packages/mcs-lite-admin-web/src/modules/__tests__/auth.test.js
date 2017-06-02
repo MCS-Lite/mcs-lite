@@ -3,6 +3,8 @@
 import { Observable } from 'rxjs/Observable';
 import reducer, { constants, actions, cycles } from '../auth';
 import { actions as routingActions } from '../routing';
+import { actions as ipsActions } from '../ips';
+import { actions as systemActions } from '../system';
 import { actions as uiActions } from '../ui';
 import { assertSourcesSinks } from '../../utils/helpers';
 
@@ -59,7 +61,7 @@ describe('auth - 3. Cycle', () => {
     };
     const httpSink = {
       r: {
-        url: '/oauth/cookies/mobile',
+        url: '/oauth/cookies',
         method: 'POST',
         send: { token: 'fakeCookieToken5' },
         category: 'user',
@@ -101,13 +103,15 @@ describe('auth - 3. Cycle', () => {
     const actionSink = {
       w: routingActions.pushPathname('/login'),
       x: actions.clear(),
+      y: ipsActions.clear(),
+      z: systemActions.clear(),
     };
 
     // prettier-ignore
     assertSourcesSinks({
       ACTION: { 'a-----|': actionSource },
     }, {
-      ACTION: { '(wx)|': actionSink },
+      ACTION: { '(wxyz)|': actionSink },
     }, cycles.signoutCycle, done);
   });
 
