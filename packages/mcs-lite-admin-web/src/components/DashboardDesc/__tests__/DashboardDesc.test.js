@@ -1,10 +1,10 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
-import StyledLink from '../';
+import DashboardDesc from '../';
 
-it('should renders <StyledLink> correctly', () => {
-  const wrapper = shallow(<StyledLink />);
+it('should renders <DashboardDesc> correctly', () => {
+  const wrapper = shallow(<DashboardDesc />);
 
   expect(toJson(wrapper)).toMatchSnapshot();
 });

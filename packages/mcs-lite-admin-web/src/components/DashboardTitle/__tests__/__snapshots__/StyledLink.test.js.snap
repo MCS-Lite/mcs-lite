@@ -1,9 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`should renders <StyledLink> correctly 1`] = `
-<styled.div>
-  <Heading
-    level={4}
-  />
-</styled.div>
-`;

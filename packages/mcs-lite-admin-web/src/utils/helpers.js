@@ -50,9 +50,5 @@ export function assertSourcesSinks(sources, sinks, main, done, timeOpts = {}) {
     Time.assertEqual(_main[sinkKey], _sinks[sinkKey]),
   );
 
-  Time.run(err => {
-    console.log(err);
-    expect(err).toBe(undefined);
-  });
-  done();
+  Time.run(done);
 }

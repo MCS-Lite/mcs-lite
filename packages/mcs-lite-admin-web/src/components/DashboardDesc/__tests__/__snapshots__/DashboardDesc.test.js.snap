@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`should renders <StyledLink> correctly 1`] = `
+exports[`should renders <DashboardDesc> correctly 1`] = `
 <P
   className="sc-bwzfXH gHzNhV"
 />
