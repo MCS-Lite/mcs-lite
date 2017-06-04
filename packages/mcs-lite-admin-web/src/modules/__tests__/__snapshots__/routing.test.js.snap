@@ -3,22 +3,22 @@
 exports[`routing - 1. Constants should return constants 1`] = `
 Object {
   "LOCATION_CHANGE": "@@router/LOCATION_CHANGE",
-  "PUSH_LOCALE": "mcs-lite-mobile-web/routing/PUSH_LOCALE",
-  "PUSH_PATHNAME": "mcs-lite-mobile-web/routing/PUSH_PATHNAME",
+  "PUSH_LOCALE": "mcs-lite-admin-web/routing/PUSH_LOCALE",
+  "PUSH_PATHNAME": "mcs-lite-admin-web/routing/PUSH_PATHNAME",
 }
 `;
 
 exports[`routing - 2. Action Creators should return pushLocale actions 1`] = `
 Object {
   "payload": "en",
-  "type": "mcs-lite-mobile-web/routing/PUSH_LOCALE",
+  "type": "mcs-lite-admin-web/routing/PUSH_LOCALE",
 }
 `;
 
 exports[`routing - 2. Action Creators should return pushPathname actions 1`] = `
 Object {
   "payload": "/login",
-  "type": "mcs-lite-mobile-web/routing/PUSH_PATHNAME",
+  "type": "mcs-lite-admin-web/routing/PUSH_PATHNAME",
 }
 `;
 

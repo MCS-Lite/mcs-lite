@@ -2,10 +2,10 @@
 
 exports[`ui - 1. Constants should return constants 1`] = `
 Object {
-  "ADD_TOAST": "mcs-lite-mobile-web/ui/ADD_TOAST",
-  "REMOVE_TOAST": "mcs-lite-mobile-web/ui/REMOVE_TOAST",
-  "SET_LOADED": "mcs-lite-mobile-web/ui/SET_LOADED",
-  "SET_LOADING": "mcs-lite-mobile-web/ui/SET_LOADING",
+  "ADD_TOAST": "mcs-lite-admin-web/ui/ADD_TOAST",
+  "REMOVE_TOAST": "mcs-lite-admin-web/ui/REMOVE_TOAST",
+  "SET_LOADED": "mcs-lite-admin-web/ui/SET_LOADED",
+  "SET_LOADING": "mcs-lite-admin-web/ui/SET_LOADING",
 }
 `;
 
@@ -16,26 +16,26 @@ Object {
     "key": "mockUuid()",
     "kind": undefined,
   },
-  "type": "mcs-lite-mobile-web/ui/ADD_TOAST",
+  "type": "mcs-lite-admin-web/ui/ADD_TOAST",
 }
 `;
 
 exports[`ui - 2. Action Creators should return removeToast actions 1`] = `
 Object {
   "payload": "key",
-  "type": "mcs-lite-mobile-web/ui/REMOVE_TOAST",
+  "type": "mcs-lite-admin-web/ui/REMOVE_TOAST",
 }
 `;
 
 exports[`ui - 2. Action Creators should return setLoaded actions 1`] = `
 Object {
-  "type": "mcs-lite-mobile-web/ui/SET_LOADED",
+  "type": "mcs-lite-admin-web/ui/SET_LOADED",
 }
 `;
 
 exports[`ui - 2. Action Creators should return setLoading actions 1`] = `
 Object {
-  "type": "mcs-lite-mobile-web/ui/SET_LOADING",
+  "type": "mcs-lite-admin-web/ui/SET_LOADING",
 }
 `;
 

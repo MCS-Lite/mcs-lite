@@ -5,10 +5,10 @@ import uuid from 'uuid/v1';
 // 1. Constants
 // ----------------------------------------------------------------------------
 
-const SET_LOADING = 'mcs-lite-mobile-web/ui/SET_LOADING';
-const SET_LOADED = 'mcs-lite-mobile-web/ui/SET_LOADED';
-const ADD_TOAST = 'mcs-lite-mobile-web/ui/ADD_TOAST';
-const REMOVE_TOAST = 'mcs-lite-mobile-web/ui/REMOVE_TOAST';
+const SET_LOADING = 'mcs-lite-admin-web/ui/SET_LOADING';
+const SET_LOADED = 'mcs-lite-admin-web/ui/SET_LOADED';
+const ADD_TOAST = 'mcs-lite-admin-web/ui/ADD_TOAST';
+const REMOVE_TOAST = 'mcs-lite-admin-web/ui/REMOVE_TOAST';
 
 export const constants = {
   SET_LOADING,

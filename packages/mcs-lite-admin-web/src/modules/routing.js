@@ -5,8 +5,8 @@ import R from 'ramda';
 // 1. Constants
 // ----------------------------------------------------------------------------
 
-const PUSH_PATHNAME = 'mcs-lite-mobile-web/routing/PUSH_PATHNAME';
-const PUSH_LOCALE = 'mcs-lite-mobile-web/routing/PUSH_LOCALE';
+const PUSH_PATHNAME = 'mcs-lite-admin-web/routing/PUSH_PATHNAME';
+const PUSH_LOCALE = 'mcs-lite-admin-web/routing/PUSH_LOCALE';
 const LOCATION_CHANGE = require('react-router-redux/lib/reducer')
   .LOCATION_CHANGE;
 
