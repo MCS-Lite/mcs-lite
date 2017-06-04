@@ -5,8 +5,6 @@ import { ThemeProvider } from 'styled-components';
 import { theme } from 'mcs-lite-theme';
 import { HeightContainer, Fixed, ToastContainer } from '../styled-components';
 
-jest.mock('mcs-lite-ui');
-
 it('should render components correctly', () => {
   const wrapper = mount(
     <ThemeProvider theme={theme}>

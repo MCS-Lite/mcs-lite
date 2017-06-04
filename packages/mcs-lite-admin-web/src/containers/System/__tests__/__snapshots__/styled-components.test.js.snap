@@ -14,35 +14,33 @@ Array [
             round={false}
             size="normal"
             square={false}
-        >
-            <BaseComponent
-                active={false}
-                block={false}
-                className="sc-htpNat iJpthS sc-bdVaJa kDgzfK"
-                component="button"
-                disabled={false}
-                kind="primary"
-                round={false}
-                size="normal"
-                square={false}
-            >
-                <button
-                    className="sc-htpNat iJpthS sc-bdVaJa kDgzfK"
-                />
-            </BaseComponent>
-        </Button>
+        />
     </Styled(Button)>
     <styled.div>
         <div
             className="sc-bxivhb enlRff"
         />
     </styled.div>
-    <Styled(mockConstructor)>
-        <mockConstructor
+    <Styled(Loadable)>
+        <Loadable
             className="sc-EHOje kYsIWP"
-            preserveScrollPosition={false}
-        />
-    </Styled(mockConstructor)>
+        >
+            <LoadingComponent
+                error={null}
+                isLoading={true}
+                pastDelay={false}
+            >
+                <Styled(P)
+                    color="primary"
+                >
+                    <P
+                        className="sc-bwzfXH blGNPr"
+                        color="primary"
+                    />
+                </Styled(P)>
+            </LoadingComponent>
+        </Loadable>
+    </Styled(Loadable)>
 </div>,
   <div
     className="sc-bxivhb enlRff"

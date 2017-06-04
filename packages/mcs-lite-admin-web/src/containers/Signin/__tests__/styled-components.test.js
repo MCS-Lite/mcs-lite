@@ -5,7 +5,8 @@ import { ThemeProvider } from 'styled-components';
 import { theme } from 'mcs-lite-theme';
 import { StyledLogo, ErrorMessage, Layout, Form } from '../styled-components';
 
-jest.mock('mcs-lite-ui');
+jest.mock('mcs-lite-ui/lib/P');
+jest.mock('mcs-lite-ui/lib/Hr');
 
 it('should render components correctly', () => {
   const wrapper = mount(

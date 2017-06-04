@@ -1,7 +1,32 @@
+import React from 'react';
 import styled from 'styled-components';
 import Button from 'mcs-lite-ui/lib/Button';
 import P from 'mcs-lite-ui/lib/P';
-import CodeMirror from 'react-codemirror';
+import IconLoading from 'mcs-lite-icon/lib/IconLoading';
+import Spin from 'mcs-lite-ui/lib/Spin';
+import Loadable from 'react-loadable';
+
+const Center = styled(P)`
+  text-align: center;
+  padding: 20px;
+`;
+
+const LoadableCodeMirror = Loadable({
+  loader: () =>
+    Promise.all([
+      import(
+        /* webpackChunkName: "/LoadableCodeMirror" */ 'codemirror/lib/codemirror.css',
+      ),
+      import(
+        /* webpackChunkName: "/LoadableCodeMirror" */ 'codemirror/mode/javascript/javascript',
+      ),
+    ]).then(() =>
+      import(/* webpackChunkName: "/LoadableCodeMirror" */ 'react-codemirror'),
+    ),
+  LoadingComponent: () =>
+    <Center color="primary"><Spin><IconLoading size={20} /></Spin></Center>,
+  webpackRequireWeakId: () => require.resolveWeak('react-codemirror'),
+});
 
 export const StyledButton = styled(Button)`
   margin-top: 10px;
@@ -17,7 +42,7 @@ export const Message = styled(P)`
   margin-top: 5px;
 `;
 
-export const StyledCodeMirror = styled(CodeMirror)`
+export const StyledLoadableCodeMirror = styled(LoadableCodeMirror)`
   > .CodeMirror {
     border: 1px solid ${props =>
       props.error ? props.theme.color.error : props.theme.color.grayDark};
