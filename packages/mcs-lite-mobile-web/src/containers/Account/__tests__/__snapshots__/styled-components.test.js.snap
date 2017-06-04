@@ -9,6 +9,7 @@ Array [
             block={false}
             className="sc-bwzfXH jcNmuD"
             component="button"
+            disabled={false}
             kind="primary"
             round={false}
             size="normal"

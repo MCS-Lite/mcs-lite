@@ -1,0 +1,100 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render components correctly 1`] = `
+Array [
+  <div>
+    <styled.div>
+        <div
+            className="sc-htpNat lYQhy"
+        />
+    </styled.div>
+    <styled.header>
+        <header
+            className="sc-bxivhb dXzFIJ"
+        />
+    </styled.header>
+    <styled.div>
+        <div
+            className="sc-ifAKCX gXKEbp"
+        />
+    </styled.div>
+    <styled.div>
+        <div
+            className="sc-EHOje dsvIkb"
+        />
+    </styled.div>
+    <Styled(Logo)>
+        <Logo
+            alt="MCS Lite Logo"
+            className="sc-bZQynM bMPIqW"
+            src="logo_mcs_lite_black.svg"
+        >
+            <img
+                alt="MCS Lite Logo"
+                className="sc-bZQynM bMPIqW sc-bwzfXH eoGWgM"
+                src="logo_mcs_lite_black.svg"
+            />
+        </Logo>
+    </Styled(Logo)>
+    <styled.div>
+        <div
+            className="sc-gzVnrw cejBzL"
+        />
+    </styled.div>
+    <styled.nav>
+        <nav
+            className="sc-htoDjs flOUgP"
+        />
+    </styled.nav>
+    <Styled(Link)>
+        <Link
+            activeClassName="DashboardLayout-SC-NavItem-attrs-activeClassName"
+            className="sc-dnqmqq eiXBHA"
+            onlyActiveOnIndex={false}
+            style={Object {}}
+        >
+            <a
+                className="sc-dnqmqq eiXBHA"
+                onClick={[Function]}
+                style={Object {}}
+            />
+        </Link>
+    </Styled(Link)>
+    <Styled(Styled(Link))>
+        <Styled(Link)
+            className="sc-iwsKbI iVYsde"
+        >
+            <Link
+                activeClassName="DashboardLayout-SC-NavItem-attrs-activeClassName"
+                className="sc-iwsKbI iVYsde sc-dnqmqq eiXBHA"
+                onlyActiveOnIndex={false}
+                style={Object {}}
+            >
+                <a
+                    className="sc-iwsKbI iVYsde sc-dnqmqq eiXBHA"
+                    onClick={[Function]}
+                    style={Object {}}
+                />
+            </Link>
+        </Styled(Link)>
+    </Styled(Styled(Link))>
+    <styled.main>
+        <main
+            className="sc-gZMcBi iJCugY"
+        />
+    </styled.main>
+</div>,
+  <div
+    className="sc-htpNat lYQhy"
+/>,
+  <div
+    className="sc-ifAKCX gXKEbp"
+/>,
+  <div
+    className="sc-EHOje dsvIkb"
+/>,
+  <div
+    className="sc-gzVnrw cejBzL"
+/>,
+]
+`;

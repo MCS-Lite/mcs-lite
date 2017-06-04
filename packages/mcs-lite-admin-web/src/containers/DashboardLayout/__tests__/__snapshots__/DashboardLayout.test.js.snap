@@ -1,0 +1,70 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should renders <DashboardLayout> correctly 1`] = `
+<styled.div>
+  <styled.header>
+    <a
+      href="/"
+    >
+      <Styled(Logo) />
+    </a>
+    <styled.div>
+      <styled.div>
+        <IconPlay
+          size={18}
+        />
+        <P>
+          start
+        </P>
+      </styled.div>
+      <styled.div>
+        <IconPause
+          size={18}
+        />
+        <P>
+          啟動
+        </P>
+      </styled.div>
+    </styled.div>
+  </styled.header>
+  <styled.div>
+    <styled.nav>
+      <div>
+        <Styled(Link)
+          to="/ip"
+        >
+          ipConnection
+        </Styled(Link)>
+        <Styled(Link)
+          to="/system"
+        >
+          systemManagement
+        </Styled(Link)>
+      </div>
+      <div>
+        <Styled(Styled(Link))>
+          <IconSync
+            size={18}
+          />
+          <P>
+            versionCheck
+          </P>
+        </Styled(Styled(Link))>
+        <Styled(Styled(Link))
+          onClick={[Function]}
+        >
+          <IconLogout
+            size={18}
+          />
+          <P>
+            signoutService
+          </P>
+        </Styled(Styled(Link))>
+      </div>
+    </styled.nav>
+    <styled.main>
+      Content
+    </styled.main>
+  </styled.div>
+</styled.div>
+`;

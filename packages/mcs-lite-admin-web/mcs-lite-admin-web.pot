@@ -1,0 +1,145 @@
+msgid ""
+msgstr ""
+"POT-Creation-Date: 2017-06-04T07:27:05.390Z\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"MIME-Version: 1.0\n"
+"X-Generator: react-intl-po\n"
+
+
+#: ./messages.json
+#. [DashboardLayout.ipConnection]
+#. defaultMessage is:
+#. IP 連線
+msgid "IP 連線"
+msgstr ""
+
+#: ./messages.json
+#. [System.jsonError]
+#. defaultMessage is:
+#. JSON 資料格式錯誤
+msgid "JSON 資料格式錯誤"
+msgstr ""
+
+#: ./messages.json
+#. [App.titleTemplate] - For document title
+#. defaultMessage is:
+#. MCS Lite Admin
+msgid "MCS Lite Admin"
+msgstr ""
+
+#: ./messages.json
+#. [Ip.mcsLiteIpConnection] - Meta/Title
+#. defaultMessage is:
+#. MCS lite 的連線 IP
+msgid "MCS lite 的連線 IP"
+msgstr ""
+
+#: ./messages.json
+#. [Ip.description] - description
+#. defaultMessage is:
+#. 使用者可透過下列的 IP 位址連線至 MCS Lite 服務器。
+msgid "使用者可透過下列的 IP 位址連線至 MCS Lite 服務器。"
+msgstr ""
+
+#: ./messages.json
+#. [System.description] - description
+#. defaultMessage is:
+#. 修改系統的參數設定。
+msgid "修改系統的參數設定。"
+msgstr ""
+
+#: ./messages.json
+#. [System.save]
+#. defaultMessage is:
+#. 儲存
+msgid "儲存"
+msgstr ""
+
+#: ./messages.json
+#. [Ip.goToMCSLite]
+#. defaultMessage is:
+#. 前往 MCS Lite
+msgid "前往 MCS Lite"
+msgstr ""
+
+#: ./messages.json
+#. [DashboardLayout.start]
+#. defaultMessage is:
+#. 啟動
+msgid "啟動"
+msgstr ""
+
+#: ./messages.json
+#. [Signin.password]
+#. defaultMessage is:
+#. 密碼
+msgid "密碼"
+msgstr ""
+
+#: ./messages.json
+#. [Signin.email]
+#. defaultMessage is:
+#. 帳號
+msgid "帳號"
+msgstr ""
+
+#: ./messages.json
+#. [Ip.serviceIpAddress]
+#. defaultMessage is:
+#. 服務器 IP 位址
+msgid "服務器 IP 位址"
+msgstr ""
+
+#: ./messages.json
+#. [Signin.welcome]
+#. defaultMessage is:
+#. 歡迎
+msgid "歡迎"
+msgstr ""
+
+#: ./messages.json
+#. [DashboardLayout.versionCheck]
+#. defaultMessage is:
+#. 版本更新檢查
+msgid "版本更新檢查"
+msgstr ""
+
+#: ./messages.json
+#. [Signin.signin] - Document Title
+#. defaultMessage is:
+#. 登入
+msgid "登入"
+msgstr ""
+
+#: ./messages.json
+#. [DashboardLayout.signoutService]
+#. defaultMessage is:
+#. 登出服務
+msgid "登出服務"
+msgstr ""
+
+#: ./messages.json
+#. [Ip.na]
+#. defaultMessage is:
+#. 目前尚無可連線的服務，請先啟動本服務。
+msgid "目前尚無可連線的服務，請先啟動本服務。"
+msgstr ""
+
+#: ./messages.json
+#. [DashboardLayout.confirm]
+#. defaultMessage is:
+#. 確定要登出？
+msgid "確定要登出？"
+msgstr ""
+
+#: ./messages.json
+#. [DashboardLayout.systemManagement]
+#. defaultMessage is:
+#. 系統管理
+#: ./messages.json
+#. [System.systemManagement] - Meta/Title
+#. defaultMessage is:
+#. 系統管理
+msgid "系統管理"
+msgstr ""

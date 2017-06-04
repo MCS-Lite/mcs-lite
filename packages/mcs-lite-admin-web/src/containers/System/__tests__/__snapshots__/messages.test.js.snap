@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should return messages 1`] = `
+Object {
+  "System.description": Object {
+    "defaultMessage": "修改系統的參數設定。",
+    "description": "description",
+    "id": "System.description",
+  },
+  "System.jsonError": Object {
+    "defaultMessage": "JSON 資料格式錯誤",
+    "id": "System.jsonError",
+  },
+  "System.save": Object {
+    "defaultMessage": "儲存",
+    "id": "System.save",
+  },
+  "System.systemManagement": Object {
+    "defaultMessage": "系統管理",
+    "description": "Meta/Title",
+    "id": "System.systemManagement",
+  },
+}
+`;

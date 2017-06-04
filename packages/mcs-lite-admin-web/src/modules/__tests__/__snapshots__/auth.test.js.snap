@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`auth - 1. Constants should return constants 1`] = `
+Object {
+  "CHANGE_PASSWORD": "mcs-lite-admin-web/auth/CHANGE_PASSWORD",
+  "CLEAR": "mcs-lite-admin-web/auth/CLEAR",
+  "REQUIRE_AUTH": "mcs-lite-admin-web/auth/REQUIRE_AUTH",
+  "SET_USERINFO": "mcs-lite-admin-web/auth/SET_USERINFO",
+  "SIGNOUT": "mcs-lite-admin-web/auth/SIGNOUT",
+  "TRY_ENTER": "mcs-lite-admin-web/auth/TRY_ENTER",
+}
+`;
+
+exports[`auth - 2. Action Creators should return changePassword actions 1`] = `
+Object {
+  "payload": Object {
+    "message": undefined,
+    "password": undefined,
+  },
+  "type": "mcs-lite-admin-web/auth/CHANGE_PASSWORD",
+}
+`;
+
+exports[`auth - 2. Action Creators should return clear actions 1`] = `
+Object {
+  "type": "mcs-lite-admin-web/auth/CLEAR",
+}
+`;
+
+exports[`auth - 2. Action Creators should return requireAuth actions 1`] = `
+Object {
+  "type": "mcs-lite-admin-web/auth/REQUIRE_AUTH",
+}
+`;
+
+exports[`auth - 2. Action Creators should return setUserInfo actions 1`] = `
+Object {
+  "payload": "payload",
+  "type": "mcs-lite-admin-web/auth/SET_USERINFO",
+}
+`;
+
+exports[`auth - 2. Action Creators should return signout actions 1`] = `
+Object {
+  "payload": Object {
+    "isForce": false,
+    "message": "payload",
+  },
+  "type": "mcs-lite-admin-web/auth/SIGNOUT",
+}
+`;
+
+exports[`auth - 2. Action Creators should return tryEnter actions 1`] = `
+Object {
+  "type": "mcs-lite-admin-web/auth/TRY_ENTER",
+}
+`;
+
+exports[`devices - 4. Reducer should handle CLEAR 1`] = `Object {}`;
+
+exports[`devices - 4. Reducer should handle SET_USERINFO 1`] = `
+Object {
+  "token": "token",
+}
+`;
+
+exports[`devices - 4. Reducer should return the initial state 1`] = `Object {}`;

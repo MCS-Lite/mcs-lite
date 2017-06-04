@@ -14,7 +14,7 @@ const Wrapper = styled.div`
 storiesOf('InputGroup', module).addWithInfo(
   'API',
   '',
-  () => (
+  () =>
     <Wrapper>
       <InputGroup>
         <Button size="small">Button 1</Button>
@@ -50,7 +50,6 @@ storiesOf('InputGroup', module).addWithInfo(
         <Input placeholder="預設值：100" />
       </InputGroup>
 
-    </Wrapper>
-  ),
+    </Wrapper>,
   { inline: true },
 );

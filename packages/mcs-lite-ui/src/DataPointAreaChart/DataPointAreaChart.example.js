@@ -32,45 +32,41 @@ storiesOf('DataPointAreaChart', module)
   .addWithInfo(
     'RechartTooltip',
     'Customize',
-    () => (
+    () =>
       <RechartTooltip
         active
         payload={[{ value: 1 }]}
         label={1532438716989}
         formatter={value => `formatter(${value})`}
         labelFormatter={value => `labelFormatter(${value})`}
-      />
-    ),
+      />,
     { inline: true, propTables: [RechartTooltip] },
   )
   .addWithInfo(
     'API',
     'Default',
-    () => (
+    () =>
       <DemoWrapper>
         <DataPointAreaChart data={data1} />
-      </DemoWrapper>
-    ),
+      </DemoWrapper>,
     { inline: true, propTables: [DataPointAreaChart] },
   )
   .addWithInfo(
     'With isAnimationActive props',
     'Render with animation',
-    () => (
+    () =>
       <DemoWrapper>
         <DataPointAreaChart isAnimationActive data={data1} />
-      </DemoWrapper>
-    ),
+      </DemoWrapper>,
     { inline: true, propTables: [DataPointAreaChart] },
   )
   .addWithInfo(
     'With kind and type props',
     '',
-    () => (
+    () =>
       <DemoWrapper>
         <DataPointAreaChart kind="warning" type="step" data={data2} />
-      </DemoWrapper>
-    ),
+      </DemoWrapper>,
     { inline: true, propTables: [DataPointAreaChart] },
   )
   .addWithInfo(

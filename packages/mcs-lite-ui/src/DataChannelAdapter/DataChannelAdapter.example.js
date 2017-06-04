@@ -39,9 +39,9 @@ storiesOf('DataChannelAdapter', module).addWithInfo(
       type DCEventHandler = DCEvent => void
       ~~~
     `,
-  () => (
+  () =>
     <CardWrapper>
-      {DATA_CHANNELS.map(dataChannel => (
+      {DATA_CHANNELS.map(dataChannel =>
         <DataChannelCard
           key={dataChannel.id}
           data-width="half"
@@ -56,9 +56,8 @@ storiesOf('DataChannelAdapter', module).addWithInfo(
               'DataChannelAdapter eventHandler(event: Event)',
             )}
           />
-        </DataChannelCard>
-      ))}
-    </CardWrapper>
-  ),
+        </DataChannelCard>,
+      )}
+    </CardWrapper>,
   { inline: true },
 );

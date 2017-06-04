@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render Container correctly with HOC 1`] = `<Connect(InjectIntl(withPropsOnChange(System))) />`;
+
+exports[`should return props correctly with mapDispatchToProps 1`] = `
+Object {
+  "fetchSystemByType": [Function],
+  "setSystemByType": [Function],
+  "uploadSystemByType": [Function],
+}
+`;
+
+exports[`should return props correctly with mapStateToProps 1`] = `
+Object {
+  "system": Object {},
+}
+`;

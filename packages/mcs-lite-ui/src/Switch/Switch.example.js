@@ -28,7 +28,8 @@ const StyledSwitch = withState(
   background-color: ${props => (props.checked ? 'steelblue' : 'aliceblue')};
 
   &::after {
-    background-color: ${props => (props.checked ? 'aliceblue' : 'cornflowerblue')};
+    background-color: ${props =>
+      props.checked ? 'aliceblue' : 'cornflowerblue'};
   }
 `,
 );
@@ -43,22 +44,20 @@ storiesOf('Switch', module)
   .addWithInfo(
     'API',
     'Switch is a controlled component.',
-    () => (
+    () =>
       <div>
         <Switch />
         <Switch checked />
-      </div>
-    ),
+      </div>,
     { inline: true },
   )
   .addWithInfo(
     'With kind props',
     'kind="primary"',
-    () => (
+    () =>
       <div>
         {kindList.map(kind => <Switch key={kind} checked kind={kind} />)}
-      </div>
-    ),
+      </div>,
     { inline: true },
   )
   .addWithInfo(

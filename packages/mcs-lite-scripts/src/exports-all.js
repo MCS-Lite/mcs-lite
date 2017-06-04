@@ -37,7 +37,10 @@ resultsES5$
   .do(results => {
     fs.writeFileSync(desPath, results);
     console.log(
-      `${path.relative(process.cwd(), srcPattern)} -> ${path.relative(process.cwd(), desPath)}`,
+      `${path.relative(process.cwd(), srcPattern)} -> ${path.relative(
+        process.cwd(),
+        desPath,
+      )}`,
     );
   })
   .catch(console.error)

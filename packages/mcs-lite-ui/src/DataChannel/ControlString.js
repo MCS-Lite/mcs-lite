@@ -34,7 +34,7 @@ const ControlString = ({
   onClear,
   placeholder,
   ...otherProps
-}) => (
+}) =>
   <Container {...otherProps}>
     <StyledTextarea
       value={value}
@@ -46,8 +46,7 @@ const ControlString = ({
       <ButtonClear onClick={onClear} />
       <Button onClick={onSubmit}>Ok</Button>
     </ButtonWrapper>
-  </Container>
-);
+  </Container>;
 
 ControlString.displayName = 'ControlString';
 ControlString.propTypes = {

@@ -1,0 +1,74 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should renders <System> correctly 1`] = `
+<div>
+  <HelmetWrapper
+    encodeSpecialCharacters={true}
+  >
+    <title>
+      systemManagement
+    </title>
+  </HelmetWrapper>
+  <DashboardTitle
+    title="systemManagement"
+  />
+  <DashboardDesc>
+    description
+  </DashboardDesc>
+  <styled.div>
+    <TabItem
+      active={true}
+      color="primary"
+      onClick={[Function]}
+      value="db"
+    >
+      db
+      .json
+    </TabItem>
+    <TabItem
+      active={false}
+      color="primary"
+      onClick={[Function]}
+      value="oauth"
+    >
+      oauth
+      .json
+    </TabItem>
+    <TabItem
+      active={false}
+      color="primary"
+      onClick={[Function]}
+      value="rest"
+    >
+      rest
+      .json
+    </TabItem>
+    <TabItem
+      active={false}
+      color="primary"
+      onClick={[Function]}
+      value="wot"
+    >
+      wot
+      .json
+    </TabItem>
+  </styled.div>
+  <Styled(Component)
+    error={false}
+    onChange={[Function]}
+    options={
+      Object {
+        "lineNumbers": true,
+        "mode": "javascript",
+      }
+    }
+    value=""
+  />
+  <Styled(Button)
+    disabled={false}
+    onClick={[Function]}
+  >
+    save
+  </Styled(Button)>
+</div>
+`;

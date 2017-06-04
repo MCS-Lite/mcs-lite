@@ -19,7 +19,8 @@ export const Item = styled.div`
   justify-content: center;
   height: ${ITEM_HEIGHT}px;
   user-select: none;
-  color: ${props => (props.active ? props.theme.color.black : props.theme.color.grayDark)};
+  color: ${props =>
+    props.active ? props.theme.color.black : props.theme.color.grayDark};
 `;
 
 class Picker extends React.Component {
@@ -113,11 +114,11 @@ class Picker extends React.Component {
         options={{ touchAction: 'pan-x' }}
       >
         <ItemWrapper style={{ marginTop: distance }}>
-          {labels.map((label, index) => (
+          {labels.map((label, index) =>
             <Item key={label} active={calcIndexByDistance(distance) === index}>
               {label}
-            </Item>
-          ))}
+            </Item>,
+          )}
         </ItemWrapper>
       </Hammer>
     );

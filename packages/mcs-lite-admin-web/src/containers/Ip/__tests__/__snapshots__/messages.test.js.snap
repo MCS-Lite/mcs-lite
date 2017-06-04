@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should return messages 1`] = `
+Object {
+  "Ip.description": Object {
+    "defaultMessage": "使用者可透過下列的 IP 位址連線至 MCS Lite 服務器。",
+    "description": "description",
+    "id": "Ip.description",
+  },
+  "Ip.goToMCSLite": Object {
+    "defaultMessage": "前往 MCS Lite",
+    "id": "Ip.goToMCSLite",
+  },
+  "Ip.mcsLiteIpConnection": Object {
+    "defaultMessage": "MCS lite 的連線 IP",
+    "description": "Meta/Title",
+    "id": "Ip.mcsLiteIpConnection",
+  },
+  "Ip.na": Object {
+    "defaultMessage": "目前尚無可連線的服務，請先啟動本服務。",
+    "id": "Ip.na",
+  },
+  "Ip.serviceIpAddress": Object {
+    "defaultMessage": "服務器 IP 位址",
+    "id": "Ip.serviceIpAddress",
+  },
+}
+`;

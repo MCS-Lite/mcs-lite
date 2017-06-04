@@ -59,13 +59,15 @@ describe('datapoints - 3. Cycle', () => {
       select: () => ({
         q: Observable.of({
           request: {
-            url: '/api/devices/S1Mart-9g/datachannels/dataChannelId778/datapoints',
+            url:
+              '/api/devices/S1Mart-9g/datachannels/dataChannelId778/datapoints',
           },
           body: { data: [{ a: 1 }, { a: 2 }] },
         }),
         r: Observable.of({
           request: {
-            url: '/api/devices/S1Mart-9g/datachannels/dataChannelId778/datapoints',
+            url:
+              '/api/devices/S1Mart-9g/datachannels/dataChannelId778/datapoints',
           },
           body: { data: [{ a: 3 }, { a: 4 }] },
         }),
@@ -84,14 +86,16 @@ describe('datapoints - 3. Cycle', () => {
     };
     const httpSink = {
       q: {
-        url: '/api/devices/deviceId445/datachannels/dataChannelId778/datapoints',
+        url:
+          '/api/devices/deviceId445/datachannels/dataChannelId778/datapoints',
         method: 'GET',
         headers: { deviceKey: 'key556' },
         category: 'datapoints',
         query: {},
       },
       r: {
-        url: '/api/devices/deviceId445/datachannels/dataChannelId778/datapoints',
+        url:
+          '/api/devices/deviceId445/datachannels/dataChannelId778/datapoints',
         method: 'GET',
         headers: { deviceKey: 'key556' },
         category: 'datapoints',

@@ -17,27 +17,25 @@ storiesOf('Heading', module)
   .addWithInfo(
     'With level props',
     '使用不同等級的 Level。',
-    () => (
+    () =>
       <div>
-        {R.range(1, 7).map(key => (
+        {R.range(1, 7).map(key =>
           <Heading key={key} level={key}>
             h{key} - Level {key} &nbsp;
             ({theme.fontSize[`h${key}`]} = {remToPx(theme.fontSize[`h${key}`])})
-          </Heading>
-        ))}
-      </div>
-    ),
+          </Heading>,
+        )}
+      </div>,
     { inline: true, propTables: false },
   )
   .addWithInfo(
     'With color props',
     '使用不同等級的 Color。',
-    () => (
+    () =>
       <div>
-        {Object.keys(theme.color).map(key => (
-          <Heading key={key} level={2} color={key}>Level 2 {key}</Heading>
-        ))}
-      </div>
-    ),
+        {Object.keys(theme.color).map(key =>
+          <Heading key={key} level={2} color={key}>Level 2 {key}</Heading>,
+        )}
+      </div>,
     { inline: true, propTables: false },
   );

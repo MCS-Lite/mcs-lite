@@ -1,0 +1,112 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should renders <Signin> correctly 1`] = `
+<styled.div>
+  <HelmetWrapper
+    encodeSpecialCharacters={true}
+  >
+    <title>
+      signin
+    </title>
+  </HelmetWrapper>
+  <Styled(Logo) />
+  <Styled(Hr)>
+    welcome
+  </Styled(Hr)>
+  <styled.form
+    action="/oauth/login"
+    method="post"
+  >
+    <Input
+      focus={false}
+      kind="primary"
+      name="email"
+      onChange={[Function]}
+      placeholder="email"
+      required={true}
+      type="email"
+      value=""
+    />
+    <Input
+      focus={false}
+      kind="primary"
+      name="password"
+      onChange={[Function]}
+      placeholder="password"
+      required={true}
+      type="password"
+      value=""
+    />
+    <Button
+      active={false}
+      block={true}
+      component="input"
+      disabled={false}
+      kind="primary"
+      round={false}
+      size="normal"
+      square={false}
+      type="submit"
+      value="signin"
+    />
+  </styled.form>
+</styled.div>
+`;
+
+exports[`should renders <Signin> correctly with errorMessage 1`] = `
+<styled.div>
+  <HelmetWrapper
+    encodeSpecialCharacters={true}
+  >
+    <title>
+      signin
+    </title>
+  </HelmetWrapper>
+  <Styled(Logo) />
+  <Styled(P)
+    color="error"
+  >
+    errorMessage
+  </Styled(P)>
+  <Styled(Hr)>
+    welcome
+  </Styled(Hr)>
+  <styled.form
+    action="/oauth/login"
+    method="post"
+  >
+    <Input
+      focus={false}
+      kind="primary"
+      name="email"
+      onChange={[Function]}
+      placeholder="email"
+      required={true}
+      type="email"
+      value=""
+    />
+    <Input
+      focus={false}
+      kind="primary"
+      name="password"
+      onChange={[Function]}
+      placeholder="password"
+      required={true}
+      type="password"
+      value=""
+    />
+    <Button
+      active={false}
+      block={true}
+      component="input"
+      disabled={false}
+      kind="primary"
+      round={false}
+      size="normal"
+      square={false}
+      type="submit"
+      value="signin"
+    />
+  </styled.form>
+</styled.div>
+`;

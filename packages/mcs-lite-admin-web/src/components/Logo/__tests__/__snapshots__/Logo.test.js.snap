@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should renders <Logo> correctly 1`] = `
+<img
+  alt="MCS Lite Logo"
+  className="sc-bdVaJa RUnCB"
+  src="logo_mcs_lite_black.svg"
+/>
+`;

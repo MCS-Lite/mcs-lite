@@ -109,7 +109,7 @@ class DeviceList extends React.Component {
                   appear={{ opacity: 0.8, marginTop: -20 }}
                   enter={{ opacity: 1, marginTop: 0 }}
                 >
-                  {devices.filter(includeDeviceName).map(device => (
+                  {devices.filter(includeDeviceName).map(device =>
                     <StyledLink
                       key={device.deviceId}
                       to={updatePathname(`/devices/${device.deviceId}`)}
@@ -121,8 +121,8 @@ class DeviceList extends React.Component {
                           device.deviceImageURL,
                         )}
                       />
-                    </StyledLink>
-                  ))}
+                    </StyledLink>,
+                  )}
                 </Transition>
               </PreventDrag>
 

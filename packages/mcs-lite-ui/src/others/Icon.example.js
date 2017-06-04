@@ -62,11 +62,10 @@ storiesOf('Icon [mcs-lite-icon]')
   .addWithInfo(
     'Spin Icon',
     '',
-    () => (
+    () =>
       <Spin>
         <Icons.IconLoading />
-      </Spin>
-    ),
+      </Spin>,
     { inline: true },
   )
   .addWithInfo(
@@ -78,7 +77,7 @@ storiesOf('Icon [mcs-lite-icon]')
   .addWithInfo(
     'Icon list, Custom color and size [Skip]',
     '',
-    () => (
+    () =>
       <div>
         <Heading>MCS Lite Icon</Heading>
         <CodeBlock color="primary" level={3}>
@@ -86,17 +85,16 @@ storiesOf('Icon [mcs-lite-icon]')
           {"import { IconName } from 'mcs-lite-icon';"}
         </CodeBlock>
         <CardWrapper>
-          {Object.keys(Icons).map(name => (
+          {Object.keys(Icons).map(name =>
             <StyledCard key={name}>
               <Icon color="grayBase" level={1}>
                 {React.createElement(Icons[name])}
               </Icon>
               <P color="grayBase">{`<${name} />`}</P>
               <IconPath color="primary">mcs-lite-icon/lib/{name}</IconPath>
-            </StyledCard>
-          ))}
+            </StyledCard>,
+          )}
         </CardWrapper>
-      </div>
-    ),
+      </div>,
     { inline: false, propTables: false },
   );

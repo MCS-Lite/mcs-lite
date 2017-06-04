@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should invoke remove with correct arguments 1`] = `
+Object {
+  "key": "token",
+  "options": Object {
+    "path": "/",
+  },
+}
+`;

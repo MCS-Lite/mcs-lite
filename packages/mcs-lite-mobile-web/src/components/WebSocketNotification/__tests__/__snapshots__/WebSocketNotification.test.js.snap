@@ -34,6 +34,7 @@ exports[`should renders <WebSocketNotification> correctly 1`] = `
           active={false}
           block={false}
           component="button"
+          disabled={false}
           kind="primary"
           onClick={[Function]}
           round={false}

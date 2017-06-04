@@ -31,7 +31,10 @@ export const StyledButton = styled(Button)`
 
   > div {
     transform-origin: center center;
-    animation: ${props => (props.status === LOADING ? `${rotate360} 0.6s infinite cubic-bezier(0.41, 0.01, 0.58, 1)` : 'none')};
+    animation: ${props =>
+      props.status === LOADING
+        ? `${rotate360} 0.6s infinite cubic-bezier(0.41, 0.01, 0.58, 1)`
+        : 'none'};
   }
 
   path {
@@ -71,26 +74,23 @@ const CopyButton = componentFromStream(propStream => {
     .do(copyToClipboard)
     .subscribe();
 
-  return props$.combineLatest(
-    status$,
-    ({ children, ...otherProps }, status) => (
-      <StyledButton
-        {...omitProps(otherProps)}
-        size="small"
-        status={status}
-        onClick={onClick}
-      >
-        <div>
-          {status === DEFAULT
-            ? children
-            : <MorphReplace width={10} height={10}>
-                {status === LOADING
-                  ? <IconLoading key="loading" />
-                  : <IconDone key="success" />}
-              </MorphReplace>}
-        </div>
-      </StyledButton>
-    ),
+  return props$.combineLatest(status$, ({ children, ...otherProps }, status) =>
+    <StyledButton
+      {...omitProps(otherProps)}
+      size="small"
+      status={status}
+      onClick={onClick}
+    >
+      <div>
+        {status === DEFAULT
+          ? children
+          : <MorphReplace width={10} height={10}>
+              {status === LOADING
+                ? <IconLoading key="loading" />
+                : <IconDone key="success" />}
+            </MorphReplace>}
+      </div>
+    </StyledButton>,
   );
 });
 

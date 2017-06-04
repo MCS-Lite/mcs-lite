@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should renders <DashboardTitle> correctly with children 1`] = `
+<styled.div>
+  <Heading
+    level={4}
+  >
+    title
+  </Heading>
+  children
+</styled.div>
+`;
+
+exports[`should renders <DashboardTitle> correctly without children 1`] = `
+<styled.div>
+  <Heading
+    level={4}
+  >
+    title
+  </Heading>
+</styled.div>
+`;

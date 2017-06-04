@@ -94,6 +94,7 @@ exports[`should render FLOAT_CONTROL correctly with default value to empty 1`] =
               active={false}
               block={false}
               component="button"
+              disabled={false}
               kind="primary"
               onClick={[Function]}
               round={false}
@@ -103,8 +104,9 @@ exports[`should render FLOAT_CONTROL correctly with default value to empty 1`] =
               <BaseComponent
                 active={false}
                 block={false}
-                className="Button__Button-jkHDFw ibjUrp"
+                className="Button__Button-jkHDFw hzHJoG"
                 component="button"
+                disabled={false}
                 kind="primary"
                 onClick={[Function]}
                 round={false}
@@ -112,7 +114,7 @@ exports[`should render FLOAT_CONTROL correctly with default value to empty 1`] =
                 square={false}
               >
                 <button
-                  className="Button__Button-jkHDFw ibjUrp"
+                  className="Button__Button-jkHDFw hzHJoG"
                   onClick={[Function]}
                 >
                   Ok
@@ -246,6 +248,7 @@ exports[`should render FLOAT_CONTROL correctly with unit 1`] = `
               active={false}
               block={false}
               component="button"
+              disabled={false}
               kind="primary"
               onClick={[Function]}
               round={false}
@@ -255,8 +258,9 @@ exports[`should render FLOAT_CONTROL correctly with unit 1`] = `
               <BaseComponent
                 active={false}
                 block={false}
-                className="Button__Button-jkHDFw ibjUrp"
+                className="Button__Button-jkHDFw hzHJoG"
                 component="button"
+                disabled={false}
                 kind="primary"
                 onClick={[Function]}
                 round={false}
@@ -264,7 +268,7 @@ exports[`should render FLOAT_CONTROL correctly with unit 1`] = `
                 square={false}
               >
                 <button
-                  className="Button__Button-jkHDFw ibjUrp"
+                  className="Button__Button-jkHDFw hzHJoG"
                   onClick={[Function]}
                 >
                   Ok
@@ -375,6 +379,7 @@ exports[`should render FLOAT_CONTROL correctly with value 1`] = `
               active={false}
               block={false}
               component="button"
+              disabled={false}
               kind="primary"
               onClick={[Function]}
               round={false}
@@ -384,8 +389,9 @@ exports[`should render FLOAT_CONTROL correctly with value 1`] = `
               <BaseComponent
                 active={false}
                 block={false}
-                className="Button__Button-jkHDFw ibjUrp"
+                className="Button__Button-jkHDFw hzHJoG"
                 component="button"
+                disabled={false}
                 kind="primary"
                 onClick={[Function]}
                 round={false}
@@ -393,7 +399,7 @@ exports[`should render FLOAT_CONTROL correctly with value 1`] = `
                 square={false}
               >
                 <button
-                  className="Button__Button-jkHDFw ibjUrp"
+                  className="Button__Button-jkHDFw hzHJoG"
                   onClick={[Function]}
                 >
                   Ok
@@ -504,6 +510,7 @@ exports[`should render FLOAT_CONTROL correctly with zero 1`] = `
               active={false}
               block={false}
               component="button"
+              disabled={false}
               kind="primary"
               onClick={[Function]}
               round={false}
@@ -513,8 +520,9 @@ exports[`should render FLOAT_CONTROL correctly with zero 1`] = `
               <BaseComponent
                 active={false}
                 block={false}
-                className="Button__Button-jkHDFw ibjUrp"
+                className="Button__Button-jkHDFw hzHJoG"
                 component="button"
+                disabled={false}
                 kind="primary"
                 onClick={[Function]}
                 round={false}
@@ -522,7 +530,7 @@ exports[`should render FLOAT_CONTROL correctly with zero 1`] = `
                 square={false}
               >
                 <button
-                  className="Button__Button-jkHDFw ibjUrp"
+                  className="Button__Button-jkHDFw hzHJoG"
                   onClick={[Function]}
                 >
                   Ok

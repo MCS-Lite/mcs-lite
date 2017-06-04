@@ -1,0 +1,108 @@
+[
+  {
+    "id": "App.titleTemplate",
+    "description": "For document title",
+    "defaultMessage": "MCS Lite Admin",
+    "filepath": "./src/containers/App/messages.js"
+  },
+  {
+    "id": "DashboardLayout.start",
+    "defaultMessage": "啟動",
+    "filepath": "./src/containers/DashboardLayout/messages.js"
+  },
+  {
+    "id": "DashboardLayout.ipConnection",
+    "defaultMessage": "IP 連線",
+    "filepath": "./src/containers/DashboardLayout/messages.js"
+  },
+  {
+    "id": "DashboardLayout.systemManagement",
+    "defaultMessage": "系統管理",
+    "filepath": "./src/containers/DashboardLayout/messages.js"
+  },
+  {
+    "id": "DashboardLayout.versionCheck",
+    "defaultMessage": "版本更新檢查",
+    "filepath": "./src/containers/DashboardLayout/messages.js"
+  },
+  {
+    "id": "DashboardLayout.signoutService",
+    "defaultMessage": "登出服務",
+    "filepath": "./src/containers/DashboardLayout/messages.js"
+  },
+  {
+    "id": "DashboardLayout.confirm",
+    "defaultMessage": "確定要登出？",
+    "filepath": "./src/containers/DashboardLayout/messages.js"
+  },
+  {
+    "id": "Ip.mcsLiteIpConnection",
+    "description": "Meta/Title",
+    "defaultMessage": "MCS lite 的連線 IP",
+    "filepath": "./src/containers/Ip/messages.js"
+  },
+  {
+    "id": "Ip.description",
+    "description": "description",
+    "defaultMessage": "使用者可透過下列的 IP 位址連線至 MCS Lite 服務器。",
+    "filepath": "./src/containers/Ip/messages.js"
+  },
+  {
+    "id": "Ip.serviceIpAddress",
+    "defaultMessage": "服務器 IP 位址",
+    "filepath": "./src/containers/Ip/messages.js"
+  },
+  {
+    "id": "Ip.goToMCSLite",
+    "defaultMessage": "前往 MCS Lite",
+    "filepath": "./src/containers/Ip/messages.js"
+  },
+  {
+    "id": "Ip.na",
+    "defaultMessage": "目前尚無可連線的服務，請先啟動本服務。",
+    "filepath": "./src/containers/Ip/messages.js"
+  },
+  {
+    "id": "Signin.signin",
+    "description": "Document Title",
+    "defaultMessage": "登入",
+    "filepath": "./src/containers/Signin/messages.js"
+  },
+  {
+    "id": "Signin.welcome",
+    "defaultMessage": "歡迎",
+    "filepath": "./src/containers/Signin/messages.js"
+  },
+  {
+    "id": "Signin.email",
+    "defaultMessage": "帳號",
+    "filepath": "./src/containers/Signin/messages.js"
+  },
+  {
+    "id": "Signin.password",
+    "defaultMessage": "密碼",
+    "filepath": "./src/containers/Signin/messages.js"
+  },
+  {
+    "id": "System.systemManagement",
+    "description": "Meta/Title",
+    "defaultMessage": "系統管理",
+    "filepath": "./src/containers/System/messages.js"
+  },
+  {
+    "id": "System.description",
+    "description": "description",
+    "defaultMessage": "修改系統的參數設定。",
+    "filepath": "./src/containers/System/messages.js"
+  },
+  {
+    "id": "System.jsonError",
+    "defaultMessage": "JSON 資料格式錯誤",
+    "filepath": "./src/containers/System/messages.js"
+  },
+  {
+    "id": "System.save",
+    "defaultMessage": "儲存",
+    "filepath": "./src/containers/System/messages.js"
+  }
+]

@@ -13,7 +13,8 @@ const HEIGHT = 60;
 const SENSITIVITY = 2;
 
 export const PullWrapper = styled.div`
-  transition: ${props => (props.distance === 0 || props.isLoading ? 'all .25s ease' : 'initial')};
+  transition: ${props =>
+    props.distance === 0 || props.isLoading ? 'all .25s ease' : 'initial'};
 `;
 
 export const LoadingContainer = styled.div`
@@ -25,7 +26,8 @@ export const LoadingContainer = styled.div`
 
   > * {
     transition: all 0.25s ease;
-    transform: ${props => (props.distance >= HEIGHT ? 'rotate(180deg)' : 'initial')};
+    transform: ${props =>
+      props.distance >= HEIGHT ? 'rotate(180deg)' : 'initial'};
   }
 `;
 
@@ -39,14 +41,12 @@ class PullToRefresh extends React.Component {
   };
 
   static defaultProps = {
-    IconLoading: () => (
+    IconLoading: () =>
       <Heading level={2} color="grayBase">
         <Spin><MLIconLoading /></Spin>
-      </Heading>
-    ),
-    IconArrow: () => (
-      <Heading level={2} color="grayBase"><IconGoDown /></Heading>
-    ),
+      </Heading>,
+    IconArrow: () =>
+      <Heading level={2} color="grayBase"><IconGoDown /></Heading>,
   };
 
   constructor(props) {

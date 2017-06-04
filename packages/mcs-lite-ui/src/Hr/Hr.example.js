@@ -7,10 +7,9 @@ storiesOf('Hr', module)
   .addWithInfo(
     'With children',
     'With string inside.',
-    () => (
+    () =>
       <Hr>
         String
-      </Hr>
-    ),
+      </Hr>,
     { inline: true },
   );

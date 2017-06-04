@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render components correctly 1`] = `
+Array [
+  <div>
+    <styled.div>
+        <div
+            className="sc-bdVaJa dGIfxd"
+        />
+    </styled.div>
+    <styled.div>
+        <div
+            className="sc-bwzfXH fJgWw"
+        />
+    </styled.div>
+    <styled.div>
+        <div
+            className="sc-htpNat ctRuvZ"
+        />
+    </styled.div>
+</div>,
+  <div
+    className="sc-bdVaJa dGIfxd"
+/>,
+  <div
+    className="sc-bwzfXH fJgWw"
+/>,
+  <div
+    className="sc-htpNat ctRuvZ"
+/>,
+]
+`;

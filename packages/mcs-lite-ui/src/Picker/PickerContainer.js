@@ -43,13 +43,12 @@ export const Overlay = styled.div`
   pointer-events: none;
 `;
 
-const PickerContainer = ({ children, ...otherProps }) => (
+const PickerContainer = ({ children, ...otherProps }) =>
   <Container {...otherProps}>
     {children}
     <Indicator />
     <Overlay />
-  </Container>
-);
+  </Container>;
 
 PickerContainer.displayName = 'PickerContainer';
 PickerContainer.propTypes = {

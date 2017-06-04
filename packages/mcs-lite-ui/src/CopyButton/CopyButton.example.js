@@ -5,10 +5,9 @@ import CopyButton from '.';
 storiesOf('CopyButton', module).addWithInfo(
   'API',
   '',
-  () => (
+  () =>
     <CopyButton text="devieKey">
       Copy
-    </CopyButton>
-  ),
+    </CopyButton>,
   { inline: true },
 );

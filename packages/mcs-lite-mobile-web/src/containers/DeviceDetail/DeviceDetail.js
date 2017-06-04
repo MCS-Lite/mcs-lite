@@ -153,7 +153,7 @@ class DeviceDetail extends React.Component {
               <Container>
                 <CardWrapper>
                   {device.datachannels &&
-                    device.datachannels.map(c => (
+                    device.datachannels.map(c =>
                       <DataChannelCard
                         key={c.datachannelId}
                         data-width="half"
@@ -183,8 +183,8 @@ class DeviceDetail extends React.Component {
                           }}
                           eventHandler={eventHandler}
                         />
-                      </DataChannelCard>
-                    ))}
+                      </DataChannelCard>,
+                    )}
                 </CardWrapper>
               </Container>
             </div>

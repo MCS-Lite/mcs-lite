@@ -10,7 +10,10 @@ import Hr from '../Hr';
 import isString from '../utils/isString';
 
 const setHeightByLine = line => props =>
-  `${parseFloat(props.theme.fontSize.p, 10) * parseFloat(props.theme.base.fontSize, 10) * props.theme.base.lineHeight * line}px`;
+  `${parseFloat(props.theme.fontSize.p, 10) *
+    parseFloat(props.theme.base.fontSize, 10) *
+    props.theme.base.lineHeight *
+    line}px`;
 
 export const Header = styled.div`
   flex-basis: 24px;
@@ -65,7 +68,7 @@ const DataChannelCard = ({
   subtitle,
   description,
   ...otherProps
-}) => (
+}) =>
   <Wrapper {...otherProps}>
     <Header>{header}</Header>
     <Body>{children}</Body>
@@ -78,8 +81,7 @@ const DataChannelCard = ({
           <TextTruncate line={2} truncateText=" ..." text={description} />
         </Description>}
     </Footer>
-  </Wrapper>
-);
+  </Wrapper>;
 
 DataChannelCard.displayName = 'DataChannelCard';
 DataChannelCard.propTypes = {

@@ -11,22 +11,20 @@ storiesOf('MobileDeviceCard', module)
   .addWithInfo(
     'API',
     '',
-    () => (
+    () =>
       <MobileDeviceCard
         image="https://img.mediatek.com/600/mtk.linkit/productBanner.png"
         title="範例 B 的測試裝置"
-      />
-    ),
+      />,
     { inline: true },
   )
   .addWithInfo(
     'Override height',
     '',
-    () => (
+    () =>
       <StyledMobileDeviceCard
         image="https://img.mediatek.com/600/mtk.linkit/productBanner.png"
         title="範例 B 的測試裝置"
-      />
-    ),
+      />,
     { inline: true },
   );
