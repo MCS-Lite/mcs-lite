@@ -1,5 +1,6 @@
 import styled from 'styled-components';
-import { Hr, P } from 'mcs-lite-ui';
+import Hr from 'mcs-lite-ui/lib/Hr';
+import P from 'mcs-lite-ui/lib/P';
 import Logo from '../../components/Logo';
 
 export const StyledLogo = styled(Logo)`

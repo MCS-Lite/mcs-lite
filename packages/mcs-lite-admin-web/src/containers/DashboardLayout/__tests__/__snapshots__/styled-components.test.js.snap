@@ -5,56 +5,56 @@ Array [
   <div>
     <styled.div>
         <div
-            className="sc-htpNat lYQhy"
+            className="sc-bwzfXH gPmFGo"
         />
     </styled.div>
     <styled.header>
         <header
-            className="sc-bxivhb dXzFIJ"
+            className="sc-htpNat kbxgiD"
         />
     </styled.header>
     <styled.div>
         <div
-            className="sc-ifAKCX gXKEbp"
+            className="sc-bxivhb uzCBi"
         />
     </styled.div>
     <styled.div>
         <div
-            className="sc-EHOje dsvIkb"
+            className="sc-ifAKCX jpDVsq"
         />
     </styled.div>
     <Styled(Logo)>
         <Logo
             alt="MCS Lite Logo"
-            className="sc-bZQynM bMPIqW"
+            className="sc-EHOje dQwnkZ"
             src="logo_mcs_lite_black.svg"
         >
             <img
                 alt="MCS Lite Logo"
-                className="sc-bZQynM bMPIqW sc-bwzfXH eoGWgM"
+                className="sc-EHOje dQwnkZ sc-bdVaJa RUnCB"
                 src="logo_mcs_lite_black.svg"
             />
         </Logo>
     </Styled(Logo)>
     <styled.div>
         <div
-            className="sc-gzVnrw cejBzL"
+            className="sc-bZQynM ijZMir"
         />
     </styled.div>
     <styled.nav>
         <nav
-            className="sc-htoDjs flOUgP"
+            className="sc-gzVnrw gDjQsG"
         />
     </styled.nav>
     <Styled(Link)>
         <Link
             activeClassName="DashboardLayout-SC-NavItem-attrs-activeClassName"
-            className="sc-dnqmqq eiXBHA"
+            className="sc-htoDjs ckroVS"
             onlyActiveOnIndex={false}
             style={Object {}}
         >
             <a
-                className="sc-dnqmqq eiXBHA"
+                className="sc-htoDjs ckroVS"
                 onClick={[Function]}
                 style={Object {}}
             />
@@ -62,16 +62,16 @@ Array [
     </Styled(Link)>
     <Styled(Styled(Link))>
         <Styled(Link)
-            className="sc-iwsKbI iVYsde"
+            className="sc-dnqmqq fbtjeC"
         >
             <Link
                 activeClassName="DashboardLayout-SC-NavItem-attrs-activeClassName"
-                className="sc-iwsKbI iVYsde sc-dnqmqq eiXBHA"
+                className="sc-dnqmqq fbtjeC sc-htoDjs ckroVS"
                 onlyActiveOnIndex={false}
                 style={Object {}}
             >
                 <a
-                    className="sc-iwsKbI iVYsde sc-dnqmqq eiXBHA"
+                    className="sc-dnqmqq fbtjeC sc-htoDjs ckroVS"
                     onClick={[Function]}
                     style={Object {}}
                 />
@@ -80,21 +80,21 @@ Array [
     </Styled(Styled(Link))>
     <styled.main>
         <main
-            className="sc-gZMcBi iJCugY"
+            className="sc-iwsKbI jSuezg"
         />
     </styled.main>
 </div>,
   <div
-    className="sc-htpNat lYQhy"
+    className="sc-bwzfXH gPmFGo"
 />,
   <div
-    className="sc-ifAKCX gXKEbp"
+    className="sc-bxivhb uzCBi"
 />,
   <div
-    className="sc-EHOje dsvIkb"
+    className="sc-ifAKCX jpDVsq"
 />,
   <div
-    className="sc-gzVnrw cejBzL"
+    className="sc-bZQynM ijZMir"
 />,
 ]
 `;

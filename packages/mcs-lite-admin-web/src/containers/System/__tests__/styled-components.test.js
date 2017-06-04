@@ -6,10 +6,11 @@ import { theme } from 'mcs-lite-theme';
 import {
   StyledButton,
   TabWrapper,
-  StyledCodeMirror,
+  StyledLoadableCodeMirror,
 } from '../styled-components';
 
-jest.mock('mcs-lite-ui');
+jest.mock('mcs-lite-ui/lib/Button');
+jest.mock('mcs-lite-ui/lib/P');
 jest.mock('react-codemirror');
 
 it('should render components correctly', () => {
@@ -18,7 +19,7 @@ it('should render components correctly', () => {
       <div>
         <StyledButton />
         <TabWrapper />
-        <StyledCodeMirror />
+        <StyledLoadableCodeMirror />
       </div>
     </ThemeProvider>,
   );

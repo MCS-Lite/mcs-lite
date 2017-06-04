@@ -5,7 +5,7 @@ import { ThemeProvider } from 'styled-components';
 import { theme } from 'mcs-lite-theme';
 import { StyledButton, NaWrapper } from '../styled-components';
 
-jest.mock('mcs-lite-ui');
+jest.mock('mcs-lite-ui/lib/Button');
 
 it('should render components correctly', () => {
   const wrapper = mount(

@@ -7,39 +7,23 @@ Array [
         <Button
             active={false}
             block={false}
-            className="sc-bwzfXH jQNUeE"
+            className="sc-bdVaJa byrdwB"
             component="button"
             disabled={false}
             kind="primary"
             round={false}
             size="normal"
             square={false}
-        >
-            <BaseComponent
-                active={false}
-                block={false}
-                className="sc-bwzfXH jQNUeE sc-bdVaJa kDgzfK"
-                component="button"
-                disabled={false}
-                kind="primary"
-                round={false}
-                size="normal"
-                square={false}
-            >
-                <button
-                    className="sc-bwzfXH jQNUeE sc-bdVaJa kDgzfK"
-                />
-            </BaseComponent>
-        </Button>
+        />
     </Styled(Button)>
     <styled.div>
         <div
-            className="sc-htpNat iqOCg"
+            className="sc-bwzfXH eQuOHF"
         />
     </styled.div>
 </div>,
   <div
-    className="sc-htpNat iqOCg"
+    className="sc-bwzfXH eQuOHF"
 />,
 ]
 `;

@@ -2,8 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import R from 'ramda';
 import Helmet from 'react-helmet';
-import 'codemirror/mode/javascript/javascript';
-import 'codemirror/lib/codemirror.css';
 import TabItem from 'mcs-lite-ui/lib/TabItem';
 import isJSONValidator from 'validator/lib/isJSON';
 import DashboardTitle from '../../components/DashboardTitle';
@@ -11,7 +9,7 @@ import DashboardDesc from '../../components/DashboardDesc';
 import {
   StyledButton,
   TabWrapper,
-  StyledCodeMirror,
+  StyledLoadableCodeMirror,
   Message,
 } from './styled-components';
 
@@ -76,7 +74,7 @@ class System extends React.Component {
           )}
         </TabWrapper>
 
-        <StyledCodeMirror
+        <StyledLoadableCodeMirror
           value={code}
           onChange={onCodeMirrorChange}
           options={OPTIONS}
