@@ -10,11 +10,10 @@ storiesOf('DatetimePicker', module).addWithInfo(
       function onChange(value: number): void {} // Unix Timestamp (milliseconds)
       ~~~
     `,
-  () => (
+  () =>
     <DatetimePicker
       defaultValue={1455780631722}
       onChange={value => action('DatetimePicker')(new Date(value).toString())}
-    />
-  ),
+    />,
   { inline: true },
 );

@@ -8,7 +8,7 @@ storiesOf(
 ).addWithInfo(
   'API',
   'Try to drag the second one.',
-  () => (
+  () =>
     <div>
       <img src="http://placehold.it/350x150" alt="" />
       <PreventDrag>
@@ -19,7 +19,6 @@ storiesOf(
       <PreventDrag>
         <a href="">Link content (PreventDrag)</a>
       </PreventDrag>
-    </div>
-  ),
+    </div>,
   { inline: true },
 );

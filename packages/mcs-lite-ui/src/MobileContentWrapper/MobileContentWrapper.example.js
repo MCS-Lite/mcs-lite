@@ -10,12 +10,11 @@ const Content = styled.div`
 storiesOf('MobileContentWrapper', module).addWithInfo(
   'API',
   '',
-  () => (
+  () =>
     <MobileContentWrapper>
       <Content>
         With max-width
       </Content>
-    </MobileContentWrapper>
-  ),
+    </MobileContentWrapper>,
   { inline: true },
 );

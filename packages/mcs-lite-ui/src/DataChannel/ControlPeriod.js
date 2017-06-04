@@ -24,7 +24,7 @@ const ControlPeriod = ({
   onSubmit,
   placeholder,
   ...otherProps
-}) => (
+}) =>
   <Container {...otherProps}>
     <label htmlFor="input"><P color="grayBase">Period</P></label>
     <InputWrapper>
@@ -36,8 +36,7 @@ const ControlPeriod = ({
       />
       <Button onClick={onSubmit}>Ok</Button>
     </InputWrapper>
-  </Container>
-);
+  </Container>;
 
 ControlPeriod.displayName = 'ControlPeriod';
 ControlPeriod.propTypes = {

@@ -27,8 +27,7 @@ import DeviceDetailInfo from './containers/DeviceDetailInfo';
 import DeviceTrigger from './containers/DeviceTrigger';
 import DeviceTriggerEdit from './containers/DeviceTriggerEdit';
 import DeviceDataChannelDetail from './containers/DeviceDataChannelDetail';
-import DeviceDataChannelTimeRange
-  from './containers/DeviceDataChannelTimeRange';
+import DeviceDataChannelTimeRange from './containers/DeviceDataChannelTimeRange';
 import Signin from './containers/Signin';
 import Account from './containers/Account';
 import Password from './containers/Password';

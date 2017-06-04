@@ -16,7 +16,8 @@ export const LabelWrapper = styled.div`
   display: flex;
 
   > *:first-child {
-    align-items: ${props => (props.labels.length <= 2 ? 'flex-start' : 'center')};
+    align-items: ${props =>
+      props.labels.length <= 2 ? 'flex-start' : 'center'};
   }
 
   > *:last-child {
@@ -53,7 +54,8 @@ export const Value = styled(P)`
 `;
 
 export const InputWrapper = styled.div`
-  padding: 0 ${props => `${props.labels.length <= 2 ? 0 : 100 / props.labels.length / 2 - 3}%`};
+  padding: 0 ${props =>
+    `${props.labels.length <= 2 ? 0 : 100 / props.labels.length / 2 - 3}%`};
 `;
 
 const ControlRange = ({
@@ -70,9 +72,9 @@ const ControlRange = ({
   return (
     <Container {...otherProps}>
       <LabelWrapper labels={labels}>
-        {labels.map(e => (
-          <LabelItem key={e}><P color="grayBase">{e}</P></LabelItem>
-        ))}
+        {labels.map(e =>
+          <LabelItem key={e}><P color="grayBase">{e}</P></LabelItem>,
+        )}
       </LabelWrapper>
 
       <InputWrapper labels={labels}>

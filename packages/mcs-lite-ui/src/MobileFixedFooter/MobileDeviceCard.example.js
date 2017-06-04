@@ -20,13 +20,12 @@ const ButtonWrapper = styled.div`
 storiesOf('MobileFixedFooter', module).addWithInfo(
   'API',
   '',
-  () => (
+  () =>
     <MobileFixedFooter>
       <ButtonWrapper>
         <Button block kind="default">Cancel</Button>
         <Button block>Submit</Button>
       </ButtonWrapper>
-    </MobileFixedFooter>
-  ),
+    </MobileFixedFooter>,
   { inline: true },
 );

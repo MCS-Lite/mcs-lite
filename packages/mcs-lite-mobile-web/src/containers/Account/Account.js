@@ -16,7 +16,7 @@ import updatePathname from '../../utils/updatePathname';
 
 const VERSION = process.env.REACT_APP_VERSION;
 
-const Account = ({ userName, email, signout, getMessages: t }) => (
+const Account = ({ userName, email, signout, getMessages: t }) =>
   <Container>
     <Helmet><title>{t('account')}</title></Helmet>
     <Body>
@@ -38,8 +38,7 @@ const Account = ({ userName, email, signout, getMessages: t }) => (
         {t('signout')}
       </FlatButton>
     </Footer>
-  </Container>
-);
+  </Container>;
 
 Account.displayName = 'Account';
 Account.propTypes = {

@@ -13,16 +13,15 @@ storiesOf('StatusLight', module)
   .addWithInfo(
     'With color props',
     '',
-    () => (
+    () =>
       <div>
-        {Object.keys(theme.color).map(key => (
+        {Object.keys(theme.color).map(key =>
           <div key={key}>
             <StatusLight color={key} />
             {key}
-          </div>
-        ))}
-      </div>
-    ),
+          </div>,
+        )}
+      </div>,
     { inline: true },
   )
   .addWithInfo(

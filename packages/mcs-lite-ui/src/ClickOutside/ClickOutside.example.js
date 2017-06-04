@@ -9,12 +9,11 @@ import Card from '../Card';
 storiesOf('ClickOutside', module).addWithInfo(
   'API',
   '',
-  () => (
+  () =>
     <ClickOutside onClick={action('ClickOutside')}>
       <Card>
         Inside (Try to click outside.)
       </Card>
-    </ClickOutside>
-  ),
+    </ClickOutside>,
   { inline: true, propTables: [ClickOutside] },
 );

@@ -52,10 +52,9 @@ class StatefulPullToRefresh extends React.Component {
 storiesOf('PullToRefresh', module).addWithInfo(
   'API',
   '',
-  () => (
+  () =>
     <Body>
       <StatefulPullToRefresh />
-    </Body>
-  ),
+    </Body>,
   { inline: true, propTables: [PullToRefresh] },
 );

@@ -11,12 +11,11 @@ const Wrapper = styled.div`
   border-bottom: 1px solid ${props => props.theme.color.grayDark};
 `;
 
-const DashboardTitle = ({ title, children }) => (
+const DashboardTitle = ({ title, children }) =>
   <Wrapper>
     <Heading level={4}>{title}</Heading>
     {children}
-  </Wrapper>
-);
+  </Wrapper>;
 
 DashboardTitle.displayName = 'DashboardTitle';
 DashboardTitle.propTypes = {

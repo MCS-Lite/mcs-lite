@@ -19,7 +19,8 @@ export const Message = styled(P)`
 
 export const StyledCodeMirror = styled(CodeMirror)`
   > .CodeMirror {
-    border: 1px solid ${props => (props.error ? props.theme.color.error : props.theme.color.grayDark)};
+    border: 1px solid ${props =>
+      props.error ? props.theme.color.error : props.theme.color.grayDark};
     border-radius: 3px;
     height: 320px;
     color: ${props => props.theme.color.black};

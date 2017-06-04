@@ -18,10 +18,9 @@ storiesOf('InputRange', module)
   .addWithInfo(
     'With kind props',
     '',
-    () => (
+    () =>
       <Wrapper>
         {kindList.map(key => <InputRange key={key} kind={key} />)}
-      </Wrapper>
-    ),
+      </Wrapper>,
     { inline: true },
   );

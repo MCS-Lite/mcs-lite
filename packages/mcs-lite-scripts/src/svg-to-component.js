@@ -45,7 +45,10 @@ Rx.Observable
   .do(([srcPath, code, destPath]) => {
     fs.writeFileSync(destPath, code);
     console.log(
-      `${path.relative(process.cwd(), srcPath)} -> ${path.relative(process.cwd(), destPath)}`,
+      `${path.relative(process.cwd(), srcPath)} -> ${path.relative(
+        process.cwd(),
+        destPath,
+      )}`,
     );
   })
   .catch(console.error)

@@ -31,7 +31,7 @@ const Main = styled.main`
   flex-direction: column;
 `;
 
-const LayoutDialog = ({ children, ...otherProps }) => (
+const LayoutDialog = ({ children, ...otherProps }) =>
   <Transition
     component={false}
     enter={{ opacity: 1, translateY: 0 }}
@@ -43,8 +43,7 @@ const LayoutDialog = ({ children, ...otherProps }) => (
       </Header>
       <Main>{children}</Main>
     </Container>
-  </Transition>
-);
+  </Transition>;
 
 LayoutDialog.displayName = 'LayoutDialog';
 LayoutDialog.propTypes = {

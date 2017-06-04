@@ -18,7 +18,7 @@ import {
   StyledLogo,
 } from './styled-components';
 
-const DashboardLayout = ({ signout, children, getMessages: t }) => (
+const DashboardLayout = ({ signout, children, getMessages: t }) =>
   <Container>
     <Header>
       <a href="/">
@@ -56,8 +56,7 @@ const DashboardLayout = ({ signout, children, getMessages: t }) => (
         {children}
       </Main>
     </Body>
-  </Container>
-);
+  </Container>;
 
 DashboardLayout.displayName = 'DashboardLayout';
 DashboardLayout.propTypes = {

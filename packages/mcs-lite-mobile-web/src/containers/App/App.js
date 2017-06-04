@@ -6,7 +6,7 @@ import Transition from 'react-motion-ui-pack';
 import Portal from 'react-overlays/lib/Portal';
 import { HeightContainer, ToastContainer, Fixed } from './styled-components';
 
-const App = ({ toasts, children, getMessages: t }) => (
+const App = ({ toasts, children, getMessages: t }) =>
   <HeightContainer>
     {/* 1. Helmet */}
     <Helmet titleTemplate={`%s | ${t('titleTemplate')}`} />
@@ -27,8 +27,7 @@ const App = ({ toasts, children, getMessages: t }) => (
           </Transition>
         </Fixed>
       </Portal>}
-  </HeightContainer>
-);
+  </HeightContainer>;
 
 App.displayName = 'App';
 App.propTypes = {

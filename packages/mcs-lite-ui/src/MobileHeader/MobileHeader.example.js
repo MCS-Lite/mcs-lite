@@ -7,7 +7,7 @@ storiesOf('MobileHeader', module)
   .addWithInfo(
     'API',
     '',
-    () => (
+    () =>
       <MobileHeader
         title="Device List"
         leftChildren={
@@ -15,14 +15,13 @@ storiesOf('MobileHeader', module)
             <IconMenu />
           </MobileHeaderIcon>
         }
-      />
-    ),
+      />,
     { inline: true },
   )
   .addWithInfo(
     'With right props',
     '',
-    () => (
+    () =>
       <MobileHeader
         title="Device List"
         leftChildren={
@@ -35,7 +34,6 @@ storiesOf('MobileHeader', module)
             <IconSearch />
           </MobileHeaderIcon>
         }
-      />
-    ),
+      />,
     { inline: true },
   );

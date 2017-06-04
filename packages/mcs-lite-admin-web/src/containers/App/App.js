@@ -18,7 +18,7 @@ TopBarProgress.config({
   shadowColor: 'rgba(0, 0, 0, 0.2)',
 });
 
-const App = ({ toasts, isLoading, children, getMessages: t }) => (
+const App = ({ toasts, isLoading, children, getMessages: t }) =>
   <HeightContainer>
     {/* 1. Helmet */}
     <Helmet titleTemplate={`%s | ${t('titleTemplate')}`} />
@@ -40,8 +40,7 @@ const App = ({ toasts, isLoading, children, getMessages: t }) => (
           </Transition>
         </Fixed>
       </Portal>}
-  </HeightContainer>
-);
+  </HeightContainer>;
 
 App.displayName = 'App';
 App.propTypes = {

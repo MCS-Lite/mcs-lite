@@ -64,7 +64,7 @@ class System extends React.Component {
         <DashboardDesc>{t('description')}</DashboardDesc>
 
         <TabWrapper>
-          {TABS.map(value => (
+          {TABS.map(value =>
             <TabItem
               key={value}
               value={value}
@@ -72,8 +72,8 @@ class System extends React.Component {
               active={tabValue === value}
             >
               {value}.json
-            </TabItem>
-          ))}
+            </TabItem>,
+          )}
         </TabWrapper>
 
         <StyledCodeMirror

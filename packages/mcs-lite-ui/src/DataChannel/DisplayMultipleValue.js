@@ -27,16 +27,15 @@ export const StyledHeading = styled(Heading)`
   margin-top: 5px;
 `;
 
-const DisplayMultipleValue = ({ items, ...otherProps }) => (
+const DisplayMultipleValue = ({ items, ...otherProps }) =>
   <Container {...otherProps}>
-    {items.map(({ name, value }) => (
+    {items.map(({ name, value }) =>
       <div key={name}>
         <P color="grayBase">{name}</P>
         <StyledHeading color="primary">{value}</StyledHeading>
-      </div>
-    ))}
-  </Container>
-);
+      </div>,
+    )}
+  </Container>;
 
 DisplayMultipleValue.displayName = 'DisplayMultipleValue';
 DisplayMultipleValue.propTypes = {

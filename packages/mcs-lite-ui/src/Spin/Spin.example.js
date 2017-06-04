@@ -13,10 +13,9 @@ storiesOf(
 ).addWithInfo(
   'API',
   'Content with display: inline-block;',
-  () => (
+  () =>
     <Spin>
       <ContentWrapper>Content</ContentWrapper>
-    </Spin>
-  ),
+    </Spin>,
   { inline: true },
 );

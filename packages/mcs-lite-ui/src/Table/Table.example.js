@@ -5,7 +5,7 @@ import Table from '.';
 storiesOf('Table', module).addWithInfo(
   'API',
   '',
-  () => (
+  () =>
     <Table style={{ backgroundColor: 'white' }}>
       <thead>
         <tr>
@@ -24,7 +24,6 @@ storiesOf('Table', module).addWithInfo(
           <td>@evenchange4</td>
         </tr>
       </tbody>
-    </Table>
-  ),
+    </Table>,
   { inline: true },
 );

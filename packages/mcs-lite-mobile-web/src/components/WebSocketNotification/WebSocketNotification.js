@@ -19,7 +19,7 @@ const Wrapper = styled(MobileContentWrapper)`
   padding: 0 16px;
 `;
 
-const WebSocketNotification = ({ onClick, getMessages: t }) => (
+const WebSocketNotification = ({ onClick, getMessages: t }) =>
   <Fixed>
     <Wrapper>
       <Transition
@@ -33,8 +33,7 @@ const WebSocketNotification = ({ onClick, getMessages: t }) => (
         </Notification>
       </Transition>
     </Wrapper>
-  </Fixed>
-);
+  </Fixed>;
 
 WebSocketNotification.displayName = 'WebSocketNotification';
 WebSocketNotification.propTypes = {
