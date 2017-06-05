@@ -5,6 +5,7 @@ import P from 'mcs-lite-ui/lib/P';
 import IconLoading from 'mcs-lite-icon/lib/IconLoading';
 import Spin from 'mcs-lite-ui/lib/Spin';
 import Loadable from 'react-loadable';
+import 'codemirror/lib/codemirror.css';
 
 const Center = styled(P)`
   text-align: center;
@@ -13,14 +14,9 @@ const Center = styled(P)`
 
 const LoadableCodeMirror = Loadable({
   loader: () =>
-    Promise.all([
-      import(
-        /* webpackChunkName: "/LoadableCodeMirror" */ 'codemirror/lib/codemirror.css',
-      ),
-      import(
-        /* webpackChunkName: "/LoadableCodeMirror" */ 'codemirror/mode/javascript/javascript',
-      ),
-    ]).then(() =>
+    import(
+      /* webpackChunkName: "/LoadableCodeMirror" */ 'codemirror/mode/javascript/javascript',
+    ).then(() =>
       import(/* webpackChunkName: "/LoadableCodeMirror" */ 'react-codemirror'),
     ),
   LoadingComponent: () =>
