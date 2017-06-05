@@ -1,6 +1,6 @@
 {
   "name": "babel-preset-mcs-lite",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "Babel preset used by MCS Lite",
   "repository": "MCS-Lite/mcs-lite",
   "author": "Michael Hsu <evenchange4@gmail.com>",
