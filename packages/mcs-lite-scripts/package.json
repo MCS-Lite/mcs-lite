@@ -34,7 +34,7 @@
     "glob": "^7.1.2",
     "lodash.camelcase": "^4.3.0",
     "lodash.upperfirst": "^4.3.1",
-    "ramda": "^0.24.0",
+    "ramda": "^0.24.1",
     "rxjs": "^5.4.0"
   },
   "devDependencies": {

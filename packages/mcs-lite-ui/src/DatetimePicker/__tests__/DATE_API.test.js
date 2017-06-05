@@ -49,10 +49,3 @@ it('should return correct value of D.setMinutes', () => {
     '2017-03-30T06:02:01.424Z',
   );
 });
-
-it('should return correct value of D.setMinutes', () => {
-  expect(fixedDate.toISOString()).toBe('2017-03-30T06:31:01.424Z');
-  expect(D.setMinutes(2)(fixedDate).toISOString()).toBe(
-    '2017-03-30T06:02:01.424Z',
-  );
-});
