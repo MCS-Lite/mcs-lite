@@ -40,10 +40,10 @@ export const Message = styled(P)`
 
 export const StyledLoadableCodeMirror = styled(LoadableCodeMirror)`
   > .CodeMirror {
+    height: auto;
     border: 1px solid ${props =>
       props.error ? props.theme.color.error : props.theme.color.grayDark};
     border-radius: 3px;
-    height: 320px;
     color: ${props => props.theme.color.black};
   }
 

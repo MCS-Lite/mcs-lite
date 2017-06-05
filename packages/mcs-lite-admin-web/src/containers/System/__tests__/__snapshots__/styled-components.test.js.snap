@@ -23,7 +23,7 @@ Array [
     </styled.div>
     <Styled(Loadable)>
         <Loadable
-            className="sc-EHOje kYsIWP"
+            className="sc-EHOje bSiipK"
         >
             <LoadingComponent
                 error={null}
