@@ -4,7 +4,6 @@ import P from 'mcs-lite-ui/lib/P';
 import IconPlay from 'mcs-lite-icon/lib/IconPlay';
 import IconPause from 'mcs-lite-icon/lib/IconPause';
 import IconLogout from 'mcs-lite-icon/lib/IconLogout';
-import IconSync from 'mcs-lite-icon/lib/IconSync';
 import {
   Container,
   Header,
@@ -18,21 +17,27 @@ import {
   StyledLogo,
 } from './styled-components';
 
-const DashboardLayout = ({ signout, children, getMessages: t }) =>
+const DashboardLayout = ({
+  start,
+  stop,
+  isStarted,
+  signout,
+  children,
+  getMessages: t,
+}) =>
   <Container>
     <Header>
-      <a href="/">
-        <StyledLogo />
-      </a>
+      <StyledLogo />
       <HeaderItemWrapper>
-        <HeaderItem>
-          <IconPlay size={18} />
-          <P>{t('start')}</P>
-        </HeaderItem>
-        <HeaderItem>
-          <IconPause size={18} />
-          <P>啟動</P>
-        </HeaderItem>
+        {isStarted
+          ? <HeaderItem onClick={stop}>
+              <IconPause size={18} />
+              <P>{t('stop')}</P>
+            </HeaderItem>
+          : <HeaderItem onClick={start}>
+              <IconPlay size={18} />
+              <P>{t('start')}</P>
+            </HeaderItem>}
       </HeaderItemWrapper>
     </Header>
     <Body>
@@ -42,10 +47,11 @@ const DashboardLayout = ({ signout, children, getMessages: t }) =>
           <NavItem to="/system">{t('systemManagement')}</NavItem>
         </div>
         <div>
-          <NavItemControl>
+          {/* Admin v2 */}
+          {/* <NavItemControl>
             <IconSync size={18} />
             <P>{t('versionCheck')}</P>
-          </NavItemControl>
+          </NavItemControl> */}
           <NavItemControl onClick={() => signout(t('confirm'))}>
             <IconLogout size={18} />
             <P>{t('signoutService')}</P>
@@ -62,8 +68,13 @@ DashboardLayout.displayName = 'DashboardLayout';
 DashboardLayout.propTypes = {
   children: PropTypes.any.isRequired,
 
+  // Redux State
+  isStarted: PropTypes.bool.isRequired,
+
   // Redux Action
   signout: PropTypes.func.isRequired,
+  start: PropTypes.func.isRequired,
+  stop: PropTypes.func.isRequired,
 
   // React-intl I18n
   getMessages: PropTypes.func.isRequired,

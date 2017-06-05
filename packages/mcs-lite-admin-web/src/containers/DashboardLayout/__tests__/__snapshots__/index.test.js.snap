@@ -5,5 +5,7 @@ exports[`should render Container correctly with HOC 1`] = `<Connect(InjectIntl(w
 exports[`should return props correctly with mapDispatchToProps 1`] = `
 Object {
   "signout": [Function],
+  "start": [Function],
+  "stop": [Function],
 }
 `;
