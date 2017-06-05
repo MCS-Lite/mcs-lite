@@ -2,6 +2,20 @@
 
 ## Released (2017-06-05)
 
+### Bump Versions
+
+-   babel-preset-mcs-lite@0.3.2
+-   eslint-config-mcs-lite@0.5.0  🚀
+-   mcs-lite-admin-web@0.1.0
+-   mcs-lite-connect@0.3.2
+-   mcs-lite-icon@0.3.2
+-   mcs-lite-mobile-web@0.4.2
+-   mcs-lite-scripts@0.3.2
+-   mcs-lite-theme@0.3.2
+-   mcs-lite-ui@0.4.2
+-   react-intl-cra@0.2.2
+-   react-intl-inject-hoc@0.2.2
+
 #### :rocket: New Feature
 * `mcs-lite-admin-web`
   * [#343](https://github.com/MCS-Lite/mcs-lite/pull/343) feat(Admin/Service): add new service module for starting service. ([@evenchange4](https://github.com/evenchange4))
