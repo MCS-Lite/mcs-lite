@@ -9,3 +9,9 @@ Object {
   "stop": [Function],
 }
 `;
+
+exports[`should return props correctly with mapStateToProps 1`] = `
+Object {
+  "isStarted": false,
+}
+`;

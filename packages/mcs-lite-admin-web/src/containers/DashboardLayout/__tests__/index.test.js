@@ -3,7 +3,7 @@ import { shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
 import configureStore from 'redux-mock-store';
 import { Provider } from 'react-redux';
-import Container, { mapDispatchToProps } from '../';
+import Container, { mapStateToProps, mapDispatchToProps } from '../';
 
 const middlewares = [];
 const mockStore = configureStore(middlewares);
@@ -18,6 +18,14 @@ it('should render Container correctly with HOC', () => {
   );
 
   expect(toJson(wrapper)).toMatchSnapshot();
+});
+
+it('should return props correctly with mapStateToProps', () => {
+  const state = {
+    service: { isStarted: false },
+  };
+
+  expect(mapStateToProps(state)).toMatchSnapshot();
 });
 
 it('should return props correctly with mapDispatchToProps', () => {

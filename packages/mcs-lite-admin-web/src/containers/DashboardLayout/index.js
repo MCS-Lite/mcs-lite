@@ -13,7 +13,7 @@ export const mapStateToProps = ({ service }) => ({
 export const mapDispatchToProps = {
   signout: authActions.signout,
   start: serviceActions.start,
-  stop: serviceActions.start,
+  stop: serviceActions.stop,
 };
 
 export default compose(
