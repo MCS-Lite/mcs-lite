@@ -86,7 +86,6 @@ class System extends React.Component {
         <StyledButton onClick={isJSON && onSaveClick} disabled={!isJSON}>
           {t('save')}
         </StyledButton>
-
       </div>
     );
   }
