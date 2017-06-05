@@ -1,12 +1,15 @@
 module.exports = {
   parser: 'babel-eslint',
-  extends: ['airbnb', 'prettier', 'prettier/flowtype', 'prettier/react'],
-  plugins: ['prettier'],
-  globals: {
-    jest: true,
-    describe: true,
-    it: true,
-    expect: true,
+  extends: [
+    'airbnb',
+    'prettier',
+    'prettier/flowtype',
+    'prettier/react',
+    'plugin:jest/recommended',
+  ],
+  plugins: ['prettier', 'jest'],
+  env: {
+    'jest/globals': true,
   },
   rules: {
     'react/jsx-filename-extension': [
