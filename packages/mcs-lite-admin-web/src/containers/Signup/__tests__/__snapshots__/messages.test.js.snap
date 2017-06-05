@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should return messages 1`] = `
+Object {
+  "Signup.createAdminAccount": Object {
+    "defaultMessage": "建立管理者帳戶",
+    "id": "Signup.createAdminAccount",
+  },
+  "Signup.email": Object {
+    "defaultMessage": "Email",
+    "id": "Signup.email",
+  },
+  "Signup.lengthError": Object {
+    "defaultMessage": "密碼長度需要長於 8 個字元",
+    "id": "Signup.lengthError",
+  },
+  "Signup.password": Object {
+    "defaultMessage": "密碼",
+    "id": "Signup.password",
+  },
+  "Signup.password2": Object {
+    "defaultMessage": "確認您的密碼",
+    "id": "Signup.password2",
+  },
+  "Signup.password2.error": Object {
+    "defaultMessage": "新密碼和確認密碼不一致",
+    "id": "Signup.password2.error",
+  },
+  "Signup.signup": Object {
+    "defaultMessage": "註冊",
+    "description": "Document Title",
+    "id": "Signup.signup",
+  },
+  "Signup.userName": Object {
+    "defaultMessage": "暱稱",
+    "id": "Signup.userName",
+  },
+}
+`;

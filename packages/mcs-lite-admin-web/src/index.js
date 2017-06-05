@@ -24,6 +24,7 @@ import DashboardLayout from './containers/DashboardLayout';
 import Ip from './containers/Ip';
 import System from './containers/System';
 import Signin from './containers/Signin';
+import Signup from './containers/Signup';
 import RequireAuth from './containers/RequireAuth';
 import configureStore from './store/configureStore';
 import './style';
@@ -55,6 +56,7 @@ ReactDOM.render(
         <Router history={routerHistory} render={render}>
           <Route component={App}>
             <Route path="/login" component={Signin} />
+            <Route path="/signup" component={Signup} />
             <Route path="/" component={RequireAuth}>
               <Route component={DashboardLayout}>
                 <IndexRedirect to="ip" />
