@@ -1,5 +1,36 @@
 # MCS Lite changelogs
 
+## Released (2017-06-05)
+
+#### :rocket: New Feature
+* `mcs-lite-admin-web`
+  * [#343](https://github.com/MCS-Lite/mcs-lite/pull/343) feat(Admin/Service): add new service module for starting service. ([@evenchange4](https://github.com/evenchange4))
+  * [#340](https://github.com/MCS-Lite/mcs-lite/pull/340) feat(Admin/Signup): add new Signup page. ([@evenchange4](https://github.com/evenchange4))
+  * [#338](https://github.com/MCS-Lite/mcs-lite/pull/338) feat(Admin/Codemirror): code split with react-loadable. ([@evenchange4](https://github.com/evenchange4))
+* `mcs-lite-admin-web`, `mcs-lite-mobile-web`, `mcs-lite-scripts`, `mcs-lite-ui`
+  * [#337](https://github.com/MCS-Lite/mcs-lite/pull/337) feat(Admin/UI): add new Table Component & new admin page project & prettier 1.4. ([@evenchange4](https://github.com/evenchange4))
+
+#### :bug: Bug Fix
+* `mcs-lite-admin-web`
+  * [#344](https://github.com/MCS-Lite/mcs-lite/pull/344) fix(Admin/Codemirror): set height auto. ([@evenchange4](https://github.com/evenchange4))
+  * [#341](https://github.com/MCS-Lite/mcs-lite/pull/341) fix(Admin/Codemirror): Lazy load css cause styling problem.. ([@evenchange4](https://github.com/evenchange4))
+
+#### :house: Internal
+* Other
+  * [#342](https://github.com/MCS-Lite/mcs-lite/pull/342) chore(CI): separate testing flow. ([@evenchange4](https://github.com/evenchange4))
+* `babel-preset-mcs-lite`, `eslint-config-mcs-lite`, `mcs-lite-admin-web`, `mcs-lite-mobile-web`, `mcs-lite-scripts`, `mcs-lite-ui`
+  * [#339](https://github.com/MCS-Lite/mcs-lite/pull/339) feat(eslint): introduce eslint-plugin-jest [BREAKING]. ([@evenchange4](https://github.com/evenchange4))
+
+
+```
+$ yarn add eslint-plugin-jest --dev
+```
+
+#### Committers: 1
+- Michael Hsu ([evenchange4](https://github.com/evenchange4))
+
+----
+
 ## Released (2017-06-02)
 
 ### Bump Versions
