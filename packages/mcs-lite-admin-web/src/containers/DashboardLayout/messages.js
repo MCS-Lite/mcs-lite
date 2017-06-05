@@ -5,6 +5,10 @@ const messages = defineMessages({
     id: 'DashboardLayout.start',
     defaultMessage: '啟動',
   },
+  'DashboardLayout.stop': {
+    id: 'DashboardLayout.stop',
+    defaultMessage: '停止',
+  },
   'DashboardLayout.ipConnection': {
     id: 'DashboardLayout.ipConnection',
     defaultMessage: 'IP 連線',

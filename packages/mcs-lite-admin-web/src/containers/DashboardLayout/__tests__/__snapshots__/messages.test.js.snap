@@ -18,6 +18,10 @@ Object {
     "defaultMessage": "啟動",
     "id": "DashboardLayout.start",
   },
+  "DashboardLayout.stop": Object {
+    "defaultMessage": "停止",
+    "id": "DashboardLayout.stop",
+  },
   "DashboardLayout.systemManagement": Object {
     "defaultMessage": "系統管理",
     "id": "DashboardLayout.systemManagement",

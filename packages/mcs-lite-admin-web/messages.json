@@ -11,6 +11,11 @@
     "filepath": "./src/containers/DashboardLayout/messages.js"
   },
   {
+    "id": "DashboardLayout.stop",
+    "defaultMessage": "停止",
+    "filepath": "./src/containers/DashboardLayout/messages.js"
+  },
+  {
     "id": "DashboardLayout.ipConnection",
     "defaultMessage": "IP 連線",
     "filepath": "./src/containers/DashboardLayout/messages.js"
