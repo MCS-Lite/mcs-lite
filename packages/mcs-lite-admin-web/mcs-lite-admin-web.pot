@@ -1,11 +1,22 @@
 msgid ""
 msgstr ""
-"POT-Creation-Date: 2017-06-04T07:27:05.390Z\n"
+"POT-Creation-Date: 2017-06-05T06:06:24.345Z\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "MIME-Version: 1.0\n"
 "X-Generator: react-intl-po\n"
 
+
+#: ./messages.json
+#. [Signin.email]
+#. defaultMessage is:
+#. Email
+#: ./messages.json
+#. [Signup.email]
+#. defaultMessage is:
+#. Email
+msgid "Email"
+msgstr ""
 
 #: ./messages.json
 #. [DashboardLayout.ipConnection]
@@ -74,14 +85,39 @@ msgstr ""
 #. [Signin.password]
 #. defaultMessage is:
 #. 密碼
+#: ./messages.json
+#. [Signup.password]
+#. defaultMessage is:
+#. 密碼
 msgid "密碼"
 msgstr ""
 
 #: ./messages.json
-#. [Signin.email]
+#. [Signup.lengthError]
 #. defaultMessage is:
-#. 帳號
-msgid "帳號"
+#. 密碼長度需要長於 8 個字元
+msgid "密碼長度需要長於 8 個字元"
+msgstr ""
+
+#: ./messages.json
+#. [Signup.createAdminAccount]
+#. defaultMessage is:
+#. 建立管理者帳戶
+msgid "建立管理者帳戶"
+msgstr ""
+
+#: ./messages.json
+#. [Signup.password2.error]
+#. defaultMessage is:
+#. 新密碼和確認密碼不一致
+msgid "新密碼和確認密碼不一致"
+msgstr ""
+
+#: ./messages.json
+#. [Signup.userName]
+#. defaultMessage is:
+#. 暱稱
+msgid "暱稱"
 msgstr ""
 
 #: ./messages.json
@@ -134,6 +170,13 @@ msgid "確定要登出？"
 msgstr ""
 
 #: ./messages.json
+#. [Signup.password2]
+#. defaultMessage is:
+#. 確認您的密碼
+msgid "確認您的密碼"
+msgstr ""
+
+#: ./messages.json
 #. [DashboardLayout.systemManagement]
 #. defaultMessage is:
 #. 系統管理
@@ -142,4 +185,11 @@ msgstr ""
 #. defaultMessage is:
 #. 系統管理
 msgid "系統管理"
+msgstr ""
+
+#: ./messages.json
+#. [Signup.signup] - Document Title
+#. defaultMessage is:
+#. 註冊
+msgid "註冊"
 msgstr ""

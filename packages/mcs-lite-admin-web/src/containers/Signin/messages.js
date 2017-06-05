@@ -12,7 +12,7 @@ const messages = defineMessages({
   },
   'Signin.email': {
     id: 'Signin.email',
-    defaultMessage: '帳號',
+    defaultMessage: 'Email',
   },
   'Signin.password': {
     id: 'Signin.password',

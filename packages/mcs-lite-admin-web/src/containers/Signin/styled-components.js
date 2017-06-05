@@ -9,8 +9,10 @@ export const StyledLogo = styled(Logo)`
 
 export const ErrorMessage = styled(P)`
   text-align: center;
-  margin-top: 16px;
-  margin-bottom: 16px;
+
+  &:not(:empty) {
+    margin-top: 20px;
+  }
 `;
 
 export const StyledHr = styled(Hr)`

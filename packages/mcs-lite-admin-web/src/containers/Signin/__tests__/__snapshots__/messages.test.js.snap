@@ -3,7 +3,7 @@
 exports[`should return messages 1`] = `
 Object {
   "Signin.email": Object {
-    "defaultMessage": "帳號",
+    "defaultMessage": "Email",
     "id": "Signin.email",
   },
   "Signin.password": Object {

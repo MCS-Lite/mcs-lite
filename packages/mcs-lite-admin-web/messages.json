@@ -75,13 +75,54 @@
   },
   {
     "id": "Signin.email",
-    "defaultMessage": "帳號",
+    "defaultMessage": "Email",
     "filepath": "./src/containers/Signin/messages.js"
   },
   {
     "id": "Signin.password",
     "defaultMessage": "密碼",
     "filepath": "./src/containers/Signin/messages.js"
+  },
+  {
+    "id": "Signup.signup",
+    "description": "Document Title",
+    "defaultMessage": "註冊",
+    "filepath": "./src/containers/Signup/messages.js"
+  },
+  {
+    "id": "Signup.createAdminAccount",
+    "defaultMessage": "建立管理者帳戶",
+    "filepath": "./src/containers/Signup/messages.js"
+  },
+  {
+    "id": "Signup.userName",
+    "defaultMessage": "暱稱",
+    "filepath": "./src/containers/Signup/messages.js"
+  },
+  {
+    "id": "Signup.email",
+    "defaultMessage": "Email",
+    "filepath": "./src/containers/Signup/messages.js"
+  },
+  {
+    "id": "Signup.password",
+    "defaultMessage": "密碼",
+    "filepath": "./src/containers/Signup/messages.js"
+  },
+  {
+    "id": "Signup.password2",
+    "defaultMessage": "確認您的密碼",
+    "filepath": "./src/containers/Signup/messages.js"
+  },
+  {
+    "id": "Signup.lengthError",
+    "defaultMessage": "密碼長度需要長於 8 個字元",
+    "filepath": "./src/containers/Signup/messages.js"
+  },
+  {
+    "id": "Signup.password2.error",
+    "defaultMessage": "新密碼和確認密碼不一致",
+    "filepath": "./src/containers/Signup/messages.js"
   },
   {
     "id": "System.systemManagement",
