@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"POT-Creation-Date: 2017-06-05T06:06:24.345Z\n"
+"POT-Creation-Date: 2017-06-05T08:26:51.277Z\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "MIME-Version: 1.0\n"
@@ -58,6 +58,13 @@ msgstr ""
 #. defaultMessage is:
 #. 修改系統的參數設定。
 msgid "修改系統的參數設定。"
+msgstr ""
+
+#: ./messages.json
+#. [DashboardLayout.stop]
+#. defaultMessage is:
+#. 停止
+msgid "停止"
 msgstr ""
 
 #: ./messages.json
