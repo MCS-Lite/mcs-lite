@@ -21,4 +21,4 @@ dependencies:
 
 test:
   override:
-    - ./tasks/test.sh
+    - ./tasks/test-page.sh
