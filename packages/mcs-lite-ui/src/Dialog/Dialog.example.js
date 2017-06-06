@@ -18,7 +18,7 @@ storiesOf('Dialog', module).addWithInfo(
             </div>
 
             <Dialog show={this.state.show} onHide={this.onHide}>
-              Content
+              <div>Content</div>
             </Dialog>
           </div>
         );
