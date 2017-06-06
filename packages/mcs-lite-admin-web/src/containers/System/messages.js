@@ -19,6 +19,18 @@ const messages = defineMessages({
     id: 'System.save',
     defaultMessage: '儲存',
   },
+  'System.reset': {
+    id: 'System.reset',
+    defaultMessage: '系統重置',
+  },
+  'System.reset.confirm': {
+    id: 'System.reset.confirm',
+    defaultMessage: '是否確定重置系統？',
+  },
+  'System.reset.success': {
+    id: 'System.reset.success',
+    defaultMessage: '成功！系統已重置，請重新登入。',
+  },
 });
 
 export default messages;

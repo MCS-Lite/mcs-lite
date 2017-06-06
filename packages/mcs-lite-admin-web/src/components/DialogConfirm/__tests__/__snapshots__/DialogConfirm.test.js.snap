@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should renders <DialogConfirm> correctly 1`] = `
+<Styled(Dialog)
+  onHide={[Function]}
+  show={false}
+>
+  <Styled(Panel)>
+    <header>
+      notice
+    </header>
+    <main>
+      <img
+        alt="warning"
+        src="img_warning.svg"
+      />
+      children
+    </main>
+    <footer>
+      <Button
+        active={false}
+        block={false}
+        component="button"
+        disabled={false}
+        kind="default"
+        onClick={[Function]}
+        round={false}
+        size="normal"
+        square={false}
+      >
+        cancel
+      </Button>
+      <Button
+        active={false}
+        block={false}
+        component="button"
+        disabled={false}
+        kind="primary"
+        onClick={[Function]}
+        round={false}
+        size="normal"
+        square={false}
+      >
+        confirm
+      </Button>
+    </footer>
+  </Styled(Panel)>
+</Styled(Dialog)>
+`;

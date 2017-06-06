@@ -9,9 +9,23 @@ exports[`should renders <System> correctly 1`] = `
       systemManagement
     </title>
   </HelmetWrapper>
+  <InjectIntl(withPropsOnChange(DialogConfirm))
+    onCancel={[Function]}
+    onSubmit={[Function]}
+    show={false}
+  >
+    reset.confirm
+  </InjectIntl(withPropsOnChange(DialogConfirm))>
   <DashboardTitle
     title="systemManagement"
-  />
+  >
+    <A
+      color="primary"
+      onClick={[Function]}
+    >
+      reset
+    </A>
+  </DashboardTitle>
   <DashboardDesc>
     description
   </DashboardDesc>

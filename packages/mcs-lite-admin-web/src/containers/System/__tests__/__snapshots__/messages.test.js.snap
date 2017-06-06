@@ -11,6 +11,18 @@ Object {
     "defaultMessage": "JSON 資料格式錯誤",
     "id": "System.jsonError",
   },
+  "System.reset": Object {
+    "defaultMessage": "系統重置",
+    "id": "System.reset",
+  },
+  "System.reset.confirm": Object {
+    "defaultMessage": "是否確定重置系統？",
+    "id": "System.reset.confirm",
+  },
+  "System.reset.success": Object {
+    "defaultMessage": "成功！系統已重置，請重新登入。",
+    "id": "System.reset.success",
+  },
   "System.save": Object {
     "defaultMessage": "儲存",
     "id": "System.save",

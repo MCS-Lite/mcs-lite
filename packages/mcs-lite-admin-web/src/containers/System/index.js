@@ -12,6 +12,7 @@ export const mapStateToProps = ({ system }) => ({
 export const mapDispatchToProps = {
   fetchSystemByType: actions.fetchSystemByType,
   uploadSystemByType: actions.uploadSystemByType,
+  postReset: actions.postReset,
   setSystemByType: actions.setSystemByType,
 };
 
