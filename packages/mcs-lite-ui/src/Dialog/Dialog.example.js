@@ -5,6 +5,42 @@ import Panel from '../Panel';
 import Button from '../Button';
 import Dialog from '.';
 
+const StyledDialog = styled(Dialog)`
+  justify-content: center;
+`;
+
+const StyledPanel = styled(Panel)`
+  width: 440px;
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+  overflow: auto;
+
+  > header {
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+  }
+
+  > main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    > img {
+      margin-bottom: 20px;
+    }
+  }
+
+  > footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    > *:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+`;
+
 storiesOf('Dialog', module)
   .addWithInfo(
     'API',
@@ -36,57 +72,18 @@ storiesOf('Dialog', module)
   .addWithInfo(
     'Confirm Dialog',
     '',
-    () => {
-      const StyledDialog = styled(Dialog)`
-        justify-content: center;
-      `;
-
-      const StyledPanel = styled(Panel)`
-        width: 440px;
-        box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2);
-        overflow: auto;
-
-        > header {
-          padding-left: 20px;
-          display: flex;
-          align-items: center;
-        }
-
-        > main {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-
-          > img {
-            margin-bottom: 20px;
-          }
-        }
-
-        > footer {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-
-          > *:not(:last-child) {
-            margin-right: 10px;
-          }
-        }
-      `;
-
-      return (
-        <StyledDialog show onHide={() => {}}>
-          <StyledPanel>
-            <header>Notice!</header>
-            <main>
-              是否確定重置系統？
-            </main>
-            <footer>
-              <Button kind="default">取消</Button>
-              <Button>確定</Button>
-            </footer>
-          </StyledPanel>
-        </StyledDialog>
-      );
-    },
+    () =>
+      <StyledDialog show onHide={() => {}}>
+        <StyledPanel>
+          <header>Notice!</header>
+          <main>
+            是否確定重置系統？
+          </main>
+          <footer>
+            <Button kind="default">取消</Button>
+            <Button>確定</Button>
+          </footer>
+        </StyledPanel>
+      </StyledDialog>,
     { inline: true, propTables: [Dialog] },
   );
