@@ -18,6 +18,7 @@ it('should renders <System> correctly', () => {
       fetchSystemByType={fetchMock}
       uploadSystemByType={() => {}}
       setSystemByType={() => {}}
+      postReset={() => {}}
     />,
   );
 
