@@ -5300,6 +5300,22 @@ exports[`Storyshots P With color props 1`] = `
 </div>
 `;
 
+exports[`Storyshots Panel API 1`] = `
+<div
+  className="Panel__Panel-hUpLEX fecvLj"
+>
+  <header>
+    Panel Header (header)
+  </header>
+  <main>
+    Panel body (main)
+  </main>
+  <footer>
+    footer
+  </footer>
+</div>
+`;
+
 exports[`Storyshots Picker API 1`] = `
 <div
   className="PickerContainer__Container-bycPjJ fSlrkj"
