@@ -57,12 +57,10 @@ const System = componentFromStream(props$ => {
   const isJSON$ = code$.map(R.anyPass([R.isEmpty, isJSONValidator]));
 
   const isDialogShow$ = Observable.merge(
-    onResetClick$.mapTo(Observable.of(true)),
-    onCancel$.mapTo(Observable.of(false)),
-    onSubmit$.mapTo(Observable.of(false)),
-  )
-    .switch()
-    .startWith(false);
+    onResetClick$.mapTo(true),
+    onCancel$.mapTo(false),
+    onSubmit$.mapTo(false),
+  ).startWith(false);
 
   // Remind: There are four fetch Side-effects below.
   tabValue$

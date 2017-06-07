@@ -16,6 +16,7 @@ import {
   Main,
   StyledLogo,
 } from './styled-components';
+import updatePathname from '../../utils/updatePathname';
 
 const DashboardLayout = ({
   start,
@@ -43,8 +44,10 @@ const DashboardLayout = ({
     <Body>
       <Nav>
         <div>
-          <NavItem to="/ip">{t('ipConnection')}</NavItem>
-          <NavItem to="/system">{t('systemManagement')}</NavItem>
+          <NavItem to={updatePathname('/ip')}>{t('ipConnection')}</NavItem>
+          <NavItem to={updatePathname('/system')}>
+            {t('systemManagement')}
+          </NavItem>
         </div>
         <div>
           {/* Admin v2 */}

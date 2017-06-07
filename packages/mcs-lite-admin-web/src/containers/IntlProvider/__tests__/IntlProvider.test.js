@@ -12,5 +12,4 @@ it('should renders <IntlProvider> correctly', () => {
   );
 
   expect(toJson(wrapper)).toMatchSnapshot();
-  expect(fetchMock).toHaveBeenCalledWith('zh-TW');
 });

@@ -1,18 +1,14 @@
 import { push } from 'react-router-redux';
 import R from 'ramda';
+import { LOCATION_CHANGE } from 'react-router-redux/lib/reducer';
+
+export const DEFAULT_LOCALE = 'zh-TW';
 
 // ----------------------------------------------------------------------------
 // 1. Constants
 // ----------------------------------------------------------------------------
 
-const PUSH_PATHNAME = 'mcs-lite-mobile-web/routing/PUSH_PATHNAME';
-const PUSH_LOCALE = 'mcs-lite-mobile-web/routing/PUSH_LOCALE';
-const LOCATION_CHANGE = require('react-router-redux/lib/reducer')
-  .LOCATION_CHANGE;
-
 export const constants = {
-  PUSH_PATHNAME,
-  PUSH_LOCALE,
   LOCATION_CHANGE,
 };
 
@@ -20,53 +16,38 @@ export const constants = {
 // 2. Action Creators (Sync)
 // ----------------------------------------------------------------------------
 
-const pushPathname = pathname => ({ type: PUSH_PATHNAME, payload: pathname });
-const pushLocale = locale => ({ type: PUSH_LOCALE, payload: locale });
-
-export const actions = {
-  pushPathname,
-  pushLocale,
-};
+export const actions = {};
 
 // ----------------------------------------------------------------------------
 // 3. Cycle (Side-effects)
 // ----------------------------------------------------------------------------
 
-function pushPathnameCycle(sources) {
-  // Remind: wait for locale avaliable
+/**
+ * This cycle handle two use cases:
+ * 1. There is no locale been set.
+ *    Set to default locale.
+ *
+ * 2. When routing change with react-router-redux push('/') action without locale info
+ *    Set to last locale state.
+ *
+ *  **Please see the routing.test.js for more details.**
+ * @author Michael Hsu
+ */
+function localeCycle(sources) {
+  const pathnameWithoutLocale$ = sources.STATE
+    .map(R.path(['routing', 'locationBeforeTransitions']))
+    .filter(d => d && d.pathname && !d.query.locale) // Case1
+    .pluck('pathname')
+    .distinctUntilChanged();
+
   const locale$ = sources.STATE
     .map(R.path(['routing', 'locationBeforeTransitions', 'query', 'locale']))
     .filter(d => !!d)
+    .startWith(DEFAULT_LOCALE) // Case2
     .distinctUntilChanged();
-
-  const pathname$ = sources.ACTION
-    .filter(action => action.type === PUSH_PATHNAME)
-    .pluck('payload');
-
-  const action$ = pathname$
-    .combineLatest(locale$, (pathname, locale) => ({
-      pathname,
-      query: { locale },
-    }))
-    .map(location => push(location));
-
-  return {
-    ACTION: action$,
-  };
-}
-
-function pushLocaleCycle(sources) {
-  const pathname$ = sources.STATE
-    .map(R.path(['routing', 'locationBeforeTransitions', 'pathname']))
-    .filter(d => !!d)
-    .distinctUntilChanged();
-
-  const locale$ = sources.ACTION
-    .filter(action => action.type === PUSH_LOCALE)
-    .pluck('payload');
 
   const action$ = locale$
-    .combineLatest(pathname$, (locale, pathname) => ({
+    .combineLatest(pathnameWithoutLocale$, (locale, pathname) => ({
       pathname,
       query: { locale },
     }))
@@ -78,8 +59,7 @@ function pushLocaleCycle(sources) {
 }
 
 export const cycles = {
-  pushPathnameCycle,
-  pushLocaleCycle,
+  localeCycle,
 };
 
 // ----------------------------------------------------------------------------

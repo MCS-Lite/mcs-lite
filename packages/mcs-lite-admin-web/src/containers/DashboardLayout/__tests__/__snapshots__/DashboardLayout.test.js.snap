@@ -21,12 +21,12 @@ exports[`should renders <DashboardLayout> correctly when started 1`] = `
     <styled.nav>
       <div>
         <Styled(Link)
-          to="/ip"
+          to={[Function]}
         >
           ipConnection
         </Styled(Link)>
         <Styled(Link)
-          to="/system"
+          to={[Function]}
         >
           systemManagement
         </Styled(Link)>
@@ -72,12 +72,12 @@ exports[`should renders <DashboardLayout> correctly when stopped 1`] = `
     <styled.nav>
       <div>
         <Styled(Link)
-          to="/ip"
+          to={[Function]}
         >
           ipConnection
         </Styled(Link)>
         <Styled(Link)
-          to="/system"
+          to={[Function]}
         >
           systemManagement
         </Styled(Link)>

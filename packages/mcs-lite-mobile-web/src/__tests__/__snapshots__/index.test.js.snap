@@ -3,7 +3,6 @@
 exports[`should return Constants correctly 1`] = `
 Object {
   "BASENAME": "/mobile",
-  "DEFAULT_LOCALE": "zh-TW",
   "ROOT_ID": "root",
 }
 `;

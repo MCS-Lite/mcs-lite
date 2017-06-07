@@ -2,12 +2,6 @@
 
 exports[`should render Container correctly with HOC 1`] = `<Connect(IntlProvider) />`;
 
-exports[`should return props correctly with mapDispatchToProps 1`] = `
-Object {
-  "pushLocale": [Function],
-}
-`;
-
 exports[`should return props correctly with mapStateToProps 1`] = `
 Object {
   "locale": "zh-TW",
