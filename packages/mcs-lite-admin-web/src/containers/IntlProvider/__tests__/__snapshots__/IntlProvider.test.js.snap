@@ -4,7 +4,6 @@ exports[`should renders <IntlProvider> correctly 1`] = `
 <IntlProvider
   defaultLocale="zh-TW"
   locale="zh-TW"
-  messages={Object {}}
   pushLocale={[Function]}
 >
   <div>

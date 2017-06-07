@@ -61,6 +61,10 @@
 [mcs-lite-theme-npm]: https://www.npmjs.org/package/mcs-lite-theme
 [mcs-lite-theme-npm-downloads]: https://img.shields.io/npm/dt/mcs-lite-theme.svg?style=flat-square
 
+[mcs-lite-translation-npm-badge]: https://img.shields.io/npm/v/mcs-lite-translation.svg?style=flat-square
+[mcs-lite-translation-npm]: https://www.npmjs.org/package/mcs-lite-translation
+[mcs-lite-translation-npm-downloads]: https://img.shields.io/npm/dt/mcs-lite-translation.svg?style=flat-square
+
 [mcs-lite-ui-npm-badge]: https://img.shields.io/npm/v/mcs-lite-ui.svg?style=flat-square
 [mcs-lite-ui-npm]: https://www.npmjs.org/package/mcs-lite-ui
 [mcs-lite-ui-npm-downloads]: https://img.shields.io/npm/dt/mcs-lite-ui.svg?style=flat-square
@@ -89,6 +93,7 @@
 | `mcs-lite-mobile-web` | MCS Lite Mobile Web | [![npm][mcs-lite-mobile-web-npm-badge]][mcs-lite-mobile-web-npm] | [![npm downloads][mcs-lite-mobile-web-npm-downloads]][mcs-lite-mobile-web-npm]
 | `mcs-lite-scripts` | Shared scripts and CLI used by MCS Lite | [![npm][mcs-lite-scripts-npm-badge]][mcs-lite-scripts-npm] | [![npm downloads][mcs-lite-scripts-npm-downloads]][mcs-lite-scripts-npm]
 | `mcs-lite-theme` | Defined `Theme` and helpers for `mcs-lite-ui` | [![npm][mcs-lite-theme-npm-badge]][mcs-lite-theme-npm] | [![npm downloads][mcs-lite-theme-npm-downloads]][mcs-lite-theme-npm]
+| `mcs-lite-translation` | I18n workflow with React-Intl used by MCS Lite | [![npm][mcs-lite-translation-npm-badge]][mcs-lite-translation-npm] | [![npm downloads][mcs-lite-translation-npm-downloads]][mcs-lite-translation-npm]
 | `mcs-lite-ui` | Common UI used by MCS Lite | [![npm][mcs-lite-ui-npm-badge]][mcs-lite-ui-npm] | [![npm downloads][mcs-lite-ui-npm-downloads]][mcs-lite-ui-npm]
 | [`react-intl-cra`](./packages/react-intl-cra) | Extract messages of `Creact React App` from the command line | [![npm][react-intl-cra-npm-badge]][react-intl-cra-npm] | [![npm downloads][react-intl-cra-npm-downloads]][react-intl-cra-npm]
 | `react-intl-inject-hoc` | The convenience HOC of react-intl injectIntl | [![npm][react-intl-inject-hoc-npm-badge]][react-intl-inject-hoc-npm] | [![npm downloads][react-intl-inject-hoc-npm-downloads]][react-intl-inject-hoc-npm]
@@ -163,6 +168,7 @@ Packages
 | `mcs-lite-mobile-web`       |       | V    | V     | V     |
 | `mcs-lite-scripts`          | V     |      |       | V     |
 | `mcs-lite-theme`            | V     |      |       | V     |
+| `mcs-lite-translation`      | V     |      |       | V     |
 | `mcs-lite-ui`               | V     | V    | V     | V     |
 | `react-intl-cra`            |       |      |       | -     |
 | `react-intl-inject-hoc`     | V     |      |       | V     |

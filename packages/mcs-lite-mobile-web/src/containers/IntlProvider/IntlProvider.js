@@ -1,13 +1,14 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 import { IntlProvider as ReactIntlProvider } from 'react-intl';
+import translation from 'mcs-lite-translation/lib/mcs-lite-mobile-web.json';
 
 const IntlProvider = ({ locale, defaultLocale, ...otherProps }) =>
   <ReactIntlProvider
     {...otherProps}
     defaultLocale={defaultLocale}
     locale={locale || defaultLocale}
-    messages={{}} // TODO: import i18n messages object
+    messages={translation[locale]}
   />;
 
 IntlProvider.displayName = 'IntlProvider';

@@ -1,0 +1,25 @@
+{
+  "name": "mcs-lite-translation",
+  "version": "0.0.0",
+  "description": "I18n workflow with React-Intl used by MCS Lite",
+  "repository": "MCS-Lite/mcs-lite",
+  "author": "Michael Hsu <evenchange4@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/MCS-Lite/mcs-lite/issues",
+    "email": "evenchange4@gmail.com"
+  },
+  "homepage": "https://github.com/MCS-Lite/mcs-lite#readme",
+  "files": [
+    "lib"
+  ],
+  "main": "lib",
+  "scripts": {
+    "clean": "rm -rf lib",
+    "prebuild": "npm run clean",
+    "build": "./build.sh"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "react-intl-po": "^2.0.2"
+  }
+}

@@ -3,183 +3,183 @@
     "id": "DialogConfirm.notice",
     "description": "For Dialog Header",
     "defaultMessage": "注意！",
-    "filepath": "./src/components/DialogConfirm/messages.js"
+    "filepath": "src/components/DialogConfirm/messages.js"
   },
   {
     "id": "DialogConfirm.cancel",
     "defaultMessage": "取消",
-    "filepath": "./src/components/DialogConfirm/messages.js"
+    "filepath": "src/components/DialogConfirm/messages.js"
   },
   {
     "id": "DialogConfirm.confirm",
     "defaultMessage": "確定",
-    "filepath": "./src/components/DialogConfirm/messages.js"
+    "filepath": "src/components/DialogConfirm/messages.js"
   },
   {
     "id": "App.titleTemplate",
     "description": "For document title",
     "defaultMessage": "MCS Lite Admin",
-    "filepath": "./src/containers/App/messages.js"
+    "filepath": "src/containers/App/messages.js"
   },
   {
     "id": "DashboardLayout.start",
     "defaultMessage": "啟動",
-    "filepath": "./src/containers/DashboardLayout/messages.js"
+    "filepath": "src/containers/DashboardLayout/messages.js"
   },
   {
     "id": "DashboardLayout.stop",
     "defaultMessage": "停止",
-    "filepath": "./src/containers/DashboardLayout/messages.js"
+    "filepath": "src/containers/DashboardLayout/messages.js"
   },
   {
     "id": "DashboardLayout.ipConnection",
     "defaultMessage": "IP 連線",
-    "filepath": "./src/containers/DashboardLayout/messages.js"
+    "filepath": "src/containers/DashboardLayout/messages.js"
   },
   {
     "id": "DashboardLayout.systemManagement",
     "defaultMessage": "系統管理",
-    "filepath": "./src/containers/DashboardLayout/messages.js"
+    "filepath": "src/containers/DashboardLayout/messages.js"
   },
   {
     "id": "DashboardLayout.versionCheck",
     "defaultMessage": "版本更新檢查",
-    "filepath": "./src/containers/DashboardLayout/messages.js"
+    "filepath": "src/containers/DashboardLayout/messages.js"
   },
   {
     "id": "DashboardLayout.signoutService",
     "defaultMessage": "登出服務",
-    "filepath": "./src/containers/DashboardLayout/messages.js"
+    "filepath": "src/containers/DashboardLayout/messages.js"
   },
   {
     "id": "DashboardLayout.confirm",
     "defaultMessage": "確定要登出？",
-    "filepath": "./src/containers/DashboardLayout/messages.js"
+    "filepath": "src/containers/DashboardLayout/messages.js"
   },
   {
     "id": "Ip.mcsLiteIpConnection",
     "description": "Meta/Title",
     "defaultMessage": "MCS lite 的連線 IP",
-    "filepath": "./src/containers/Ip/messages.js"
+    "filepath": "src/containers/Ip/messages.js"
   },
   {
     "id": "Ip.description",
     "description": "description",
     "defaultMessage": "使用者可透過下列的 IP 位址連線至 MCS Lite 服務器。",
-    "filepath": "./src/containers/Ip/messages.js"
+    "filepath": "src/containers/Ip/messages.js"
   },
   {
     "id": "Ip.serviceIpAddress",
     "defaultMessage": "服務器 IP 位址",
-    "filepath": "./src/containers/Ip/messages.js"
+    "filepath": "src/containers/Ip/messages.js"
   },
   {
     "id": "Ip.goToMCSLite",
     "defaultMessage": "前往 MCS Lite",
-    "filepath": "./src/containers/Ip/messages.js"
+    "filepath": "src/containers/Ip/messages.js"
   },
   {
     "id": "Ip.na",
     "defaultMessage": "目前尚無可連線的服務，請先啟動本服務。",
-    "filepath": "./src/containers/Ip/messages.js"
+    "filepath": "src/containers/Ip/messages.js"
   },
   {
     "id": "Signin.signin",
     "description": "Document Title",
     "defaultMessage": "登入",
-    "filepath": "./src/containers/Signin/messages.js"
+    "filepath": "src/containers/Signin/messages.js"
   },
   {
     "id": "Signin.welcome",
     "defaultMessage": "歡迎",
-    "filepath": "./src/containers/Signin/messages.js"
+    "filepath": "src/containers/Signin/messages.js"
   },
   {
     "id": "Signin.email",
     "defaultMessage": "Email",
-    "filepath": "./src/containers/Signin/messages.js"
+    "filepath": "src/containers/Signin/messages.js"
   },
   {
     "id": "Signin.password",
     "defaultMessage": "密碼",
-    "filepath": "./src/containers/Signin/messages.js"
+    "filepath": "src/containers/Signin/messages.js"
   },
   {
     "id": "Signup.signup",
     "description": "Document Title",
     "defaultMessage": "註冊",
-    "filepath": "./src/containers/Signup/messages.js"
+    "filepath": "src/containers/Signup/messages.js"
   },
   {
     "id": "Signup.createAdminAccount",
     "defaultMessage": "建立管理者帳戶",
-    "filepath": "./src/containers/Signup/messages.js"
+    "filepath": "src/containers/Signup/messages.js"
   },
   {
     "id": "Signup.userName",
     "defaultMessage": "暱稱",
-    "filepath": "./src/containers/Signup/messages.js"
+    "filepath": "src/containers/Signup/messages.js"
   },
   {
     "id": "Signup.email",
     "defaultMessage": "Email",
-    "filepath": "./src/containers/Signup/messages.js"
+    "filepath": "src/containers/Signup/messages.js"
   },
   {
     "id": "Signup.password",
     "defaultMessage": "密碼",
-    "filepath": "./src/containers/Signup/messages.js"
+    "filepath": "src/containers/Signup/messages.js"
   },
   {
     "id": "Signup.password2",
     "defaultMessage": "確認您的密碼",
-    "filepath": "./src/containers/Signup/messages.js"
+    "filepath": "src/containers/Signup/messages.js"
   },
   {
     "id": "Signup.lengthError",
     "defaultMessage": "密碼長度需要長於 8 個字元",
-    "filepath": "./src/containers/Signup/messages.js"
+    "filepath": "src/containers/Signup/messages.js"
   },
   {
     "id": "Signup.password2.error",
     "defaultMessage": "新密碼和確認密碼不一致",
-    "filepath": "./src/containers/Signup/messages.js"
+    "filepath": "src/containers/Signup/messages.js"
   },
   {
     "id": "System.systemManagement",
     "description": "Meta/Title",
     "defaultMessage": "系統管理",
-    "filepath": "./src/containers/System/messages.js"
+    "filepath": "src/containers/System/messages.js"
   },
   {
     "id": "System.description",
     "description": "description",
     "defaultMessage": "修改系統的參數設定。",
-    "filepath": "./src/containers/System/messages.js"
+    "filepath": "src/containers/System/messages.js"
   },
   {
     "id": "System.jsonError",
     "defaultMessage": "JSON 資料格式錯誤",
-    "filepath": "./src/containers/System/messages.js"
+    "filepath": "src/containers/System/messages.js"
   },
   {
     "id": "System.save",
     "defaultMessage": "儲存",
-    "filepath": "./src/containers/System/messages.js"
+    "filepath": "src/containers/System/messages.js"
   },
   {
     "id": "System.reset",
     "defaultMessage": "系統重置",
-    "filepath": "./src/containers/System/messages.js"
+    "filepath": "src/containers/System/messages.js"
   },
   {
     "id": "System.reset.confirm",
     "defaultMessage": "是否確定重置系統？",
-    "filepath": "./src/containers/System/messages.js"
+    "filepath": "src/containers/System/messages.js"
   },
   {
     "id": "System.reset.success",
     "defaultMessage": "成功！系統已重置，請重新登入。",
-    "filepath": "./src/containers/System/messages.js"
+    "filepath": "src/containers/System/messages.js"
   }
 ]

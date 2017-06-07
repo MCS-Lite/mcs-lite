@@ -5,6 +5,7 @@ import R from 'ramda';
 import glob from 'glob';
 import path from 'path';
 import Rx from 'rxjs/Rx';
+import { spawnSync } from 'child_process';
 import * as babel from 'babel-core';
 
 const srcPattern = process.argv[2];
@@ -52,6 +53,7 @@ const results$ = messages$
 // Output
 results$
   .do(results => {
+    spawnSync('mkdir', ['-p', path.dirname(desPath)]);
     fs.writeFileSync(desPath, results);
     console.log(
       `${path.relative(process.cwd(), srcPattern)} -> ${path.relative(

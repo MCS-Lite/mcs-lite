@@ -3,281 +3,281 @@
     "id": "WebSocketNotification.info",
     "description": "Error message",
     "defaultMessage": "伺服器連線異常，目前無法即時上傳與接收資料，是否要重新連線？",
-    "filepath": "./src/components/WebSocketNotification/messages.js"
+    "filepath": "src/components/WebSocketNotification/messages.js"
   },
   {
     "id": "WebSocketNotification.reconnect",
     "description": "For button content",
     "defaultMessage": "重新連線",
-    "filepath": "./src/components/WebSocketNotification/messages.js"
+    "filepath": "src/components/WebSocketNotification/messages.js"
   },
   {
     "id": "Account.account",
     "description": "Title",
     "defaultMessage": "帳戶",
-    "filepath": "./src/containers/Account/messages.js"
+    "filepath": "src/containers/Account/messages.js"
   },
   {
     "id": "Account.myTestDevices",
     "defaultMessage": "我的測試裝置",
-    "filepath": "./src/containers/Account/messages.js"
+    "filepath": "src/containers/Account/messages.js"
   },
   {
     "id": "Account.changePassword",
     "defaultMessage": "更改密碼",
-    "filepath": "./src/containers/Account/messages.js"
+    "filepath": "src/containers/Account/messages.js"
   },
   {
     "id": "Account.signout",
     "defaultMessage": "登出",
-    "filepath": "./src/containers/Account/messages.js"
+    "filepath": "src/containers/Account/messages.js"
   },
   {
     "id": "Account.confirm",
     "defaultMessage": "確定要登出？",
-    "filepath": "./src/containers/Account/messages.js"
+    "filepath": "src/containers/Account/messages.js"
   },
   {
     "id": "App.titleTemplate",
     "description": "For document title",
     "defaultMessage": "MCS Lite Mobile",
-    "filepath": "./src/containers/App/messages.js"
+    "filepath": "src/containers/App/messages.js"
   },
   {
     "id": "DeviceDataChannelDetail.dataChannelDetail",
     "defaultMessage": "資料通道詳情",
-    "filepath": "./src/containers/DeviceDataChannelDetail/messages.js"
+    "filepath": "src/containers/DeviceDataChannelDetail/messages.js"
   },
   {
     "id": "DeviceDataChannelDetail.historyChart",
     "defaultMessage": "歷史資料圖表",
-    "filepath": "./src/containers/DeviceDataChannelDetail/messages.js"
+    "filepath": "src/containers/DeviceDataChannelDetail/messages.js"
   },
   {
     "id": "DeviceDataChannelDetail.defaultQueryLatest",
     "description": "label hint",
     "defaultMessage": "預設值為顯示最新100筆資料",
-    "filepath": "./src/containers/DeviceDataChannelDetail/messages.js"
+    "filepath": "src/containers/DeviceDataChannelDetail/messages.js"
   },
   {
     "id": "DeviceDataChannelDetail.reset",
     "description": "reset for history query",
     "defaultMessage": "回復預設值",
-    "filepath": "./src/containers/DeviceDataChannelDetail/messages.js"
+    "filepath": "src/containers/DeviceDataChannelDetail/messages.js"
   },
   {
     "id": "DeviceDataChannelDetail.noData",
     "description": "No Data avaliable for history",
     "defaultMessage": "尚無資料",
-    "filepath": "./src/containers/DeviceDataChannelDetail/messages.js"
+    "filepath": "src/containers/DeviceDataChannelDetail/messages.js"
   },
   {
     "id": "DeviceDataChannelTimeRange.searchTimeRange",
     "description": "title",
     "defaultMessage": "搜尋時間區間",
-    "filepath": "./src/containers/DeviceDataChannelTimeRange/messages.js"
+    "filepath": "src/containers/DeviceDataChannelTimeRange/messages.js"
   },
   {
     "id": "DeviceDataChannelTimeRange.from",
     "defaultMessage": "從",
-    "filepath": "./src/containers/DeviceDataChannelTimeRange/messages.js"
+    "filepath": "src/containers/DeviceDataChannelTimeRange/messages.js"
   },
   {
     "id": "DeviceDataChannelTimeRange.to",
     "defaultMessage": "到",
-    "filepath": "./src/containers/DeviceDataChannelTimeRange/messages.js"
+    "filepath": "src/containers/DeviceDataChannelTimeRange/messages.js"
   },
   {
     "id": "DeviceDataChannelTimeRange.cancel",
     "defaultMessage": "取消",
-    "filepath": "./src/containers/DeviceDataChannelTimeRange/messages.js"
+    "filepath": "src/containers/DeviceDataChannelTimeRange/messages.js"
   },
   {
     "id": "DeviceDataChannelTimeRange.save",
     "defaultMessage": "確認",
-    "filepath": "./src/containers/DeviceDataChannelTimeRange/messages.js"
+    "filepath": "src/containers/DeviceDataChannelTimeRange/messages.js"
   },
   {
     "id": "DeviceDetail.deviceIntro",
     "description": "dropdown",
     "defaultMessage": "測試裝置介紹",
-    "filepath": "./src/containers/DeviceDetail/messages.js"
+    "filepath": "src/containers/DeviceDetail/messages.js"
   },
   {
     "id": "DeviceDetail.triggerAndAction",
     "description": "dropdown",
     "defaultMessage": "觸發條件與動作",
-    "filepath": "./src/containers/DeviceDetail/messages.js"
+    "filepath": "src/containers/DeviceDetail/messages.js"
   },
   {
     "id": "DeviceDetailInfo.deviceIntro",
     "description": "Title",
     "defaultMessage": "測試裝置介紹",
-    "filepath": "./src/containers/DeviceDetailInfo/messages.js"
+    "filepath": "src/containers/DeviceDetailInfo/messages.js"
   },
   {
     "id": "DeviceDetailInfo.deviceName",
     "defaultMessage": "裝置名稱",
-    "filepath": "./src/containers/DeviceDetailInfo/messages.js"
+    "filepath": "src/containers/DeviceDetailInfo/messages.js"
   },
   {
     "id": "DeviceDetailInfo.creator",
     "defaultMessage": "創建者",
-    "filepath": "./src/containers/DeviceDetailInfo/messages.js"
+    "filepath": "src/containers/DeviceDetailInfo/messages.js"
   },
   {
     "id": "DeviceDetailInfo.version",
     "defaultMessage": "版本",
-    "filepath": "./src/containers/DeviceDetailInfo/messages.js"
+    "filepath": "src/containers/DeviceDetailInfo/messages.js"
   },
   {
     "id": "DeviceDetailInfo.description",
     "defaultMessage": "描述",
-    "filepath": "./src/containers/DeviceDetailInfo/messages.js"
+    "filepath": "src/containers/DeviceDetailInfo/messages.js"
   },
   {
     "id": "DeviceList.myTestDevices",
     "description": "Title",
     "defaultMessage": "我的測試裝置",
-    "filepath": "./src/containers/DeviceList/messages.js"
+    "filepath": "src/containers/DeviceList/messages.js"
   },
   {
     "id": "DeviceList.search",
     "defaultMessage": "搜尋",
-    "filepath": "./src/containers/DeviceList/messages.js"
+    "filepath": "src/containers/DeviceList/messages.js"
   },
   {
     "id": "DeviceList.noDevice",
     "defaultMessage": "目前還沒有任何測試裝置",
-    "filepath": "./src/containers/DeviceList/messages.js"
+    "filepath": "src/containers/DeviceList/messages.js"
   },
   {
     "id": "DeviceTrigger.triggerAndAction",
     "description": "Title",
     "defaultMessage": "觸發條件與動作",
-    "filepath": "./src/containers/DeviceTrigger/messages.js"
+    "filepath": "src/containers/DeviceTrigger/messages.js"
   },
   {
     "id": "DeviceTrigger.on",
     "defaultMessage": "ON",
-    "filepath": "./src/containers/DeviceTrigger/messages.js"
+    "filepath": "src/containers/DeviceTrigger/messages.js"
   },
   {
     "id": "DeviceTrigger.off",
     "defaultMessage": "OFF",
-    "filepath": "./src/containers/DeviceTrigger/messages.js"
+    "filepath": "src/containers/DeviceTrigger/messages.js"
   },
   {
     "id": "DeviceTriggerEdit.editTriggerAndAction",
     "description": "Title",
     "defaultMessage": "編輯觸發條件與動作",
-    "filepath": "./src/containers/DeviceTriggerEdit/messages.js"
+    "filepath": "src/containers/DeviceTriggerEdit/messages.js"
   },
   {
     "id": "DeviceTriggerEdit.and",
     "defaultMessage": "和",
-    "filepath": "./src/containers/DeviceTriggerEdit/messages.js"
+    "filepath": "src/containers/DeviceTriggerEdit/messages.js"
   },
   {
     "id": "DeviceTriggerEdit.greater",
     "defaultMessage": "大於",
-    "filepath": "./src/containers/DeviceTriggerEdit/messages.js"
+    "filepath": "src/containers/DeviceTriggerEdit/messages.js"
   },
   {
     "id": "DeviceTriggerEdit.between",
     "defaultMessage": "之間",
-    "filepath": "./src/containers/DeviceTriggerEdit/messages.js"
+    "filepath": "src/containers/DeviceTriggerEdit/messages.js"
   },
   {
     "id": "DeviceTriggerEdit.unit",
     "defaultMessage": "單位：",
-    "filepath": "./src/containers/DeviceTriggerEdit/messages.js"
+    "filepath": "src/containers/DeviceTriggerEdit/messages.js"
   },
   {
     "id": "DeviceTriggerEdit.cancel",
     "defaultMessage": "取消",
-    "filepath": "./src/containers/DeviceTriggerEdit/messages.js"
+    "filepath": "src/containers/DeviceTriggerEdit/messages.js"
   },
   {
     "id": "DeviceTriggerEdit.save",
     "defaultMessage": "儲存",
-    "filepath": "./src/containers/DeviceTriggerEdit/messages.js"
+    "filepath": "src/containers/DeviceTriggerEdit/messages.js"
   },
   {
     "id": "Password.changePassword",
     "description": "Title",
     "defaultMessage": "修改密碼",
-    "filepath": "./src/containers/Password/messages.js"
+    "filepath": "src/containers/Password/messages.js"
   },
   {
     "id": "Password.newPassword.label",
     "description": "Label",
     "defaultMessage": "新密碼",
-    "filepath": "./src/containers/Password/messages.js"
+    "filepath": "src/containers/Password/messages.js"
   },
   {
     "id": "Password.newPassword.placeholder",
     "description": "Placeholder",
     "defaultMessage": "輸入新密碼",
-    "filepath": "./src/containers/Password/messages.js"
+    "filepath": "src/containers/Password/messages.js"
   },
   {
     "id": "Password.lengthError",
     "defaultMessage": "密碼長度需要長於 8 個字元",
-    "filepath": "./src/containers/Password/messages.js"
+    "filepath": "src/containers/Password/messages.js"
   },
   {
     "id": "Password.newPasswordAgain",
     "description": "Label",
     "defaultMessage": "確認密碼",
-    "filepath": "./src/containers/Password/messages.js"
+    "filepath": "src/containers/Password/messages.js"
   },
   {
     "id": "Password.newPasswordAgain.placeholder",
     "description": "Placeholder",
     "defaultMessage": "再次輸入新密碼",
-    "filepath": "./src/containers/Password/messages.js"
+    "filepath": "src/containers/Password/messages.js"
   },
   {
     "id": "Password.newPasswordAgain.error",
     "defaultMessage": "新密碼和確認密碼不一致",
-    "filepath": "./src/containers/Password/messages.js"
+    "filepath": "src/containers/Password/messages.js"
   },
   {
     "id": "Password.cancel",
     "defaultMessage": "取消",
-    "filepath": "./src/containers/Password/messages.js"
+    "filepath": "src/containers/Password/messages.js"
   },
   {
     "id": "Password.save",
     "defaultMessage": "儲存",
-    "filepath": "./src/containers/Password/messages.js"
+    "filepath": "src/containers/Password/messages.js"
   },
   {
     "id": "Password.success",
     "description": "Toast",
     "defaultMessage": "成功！你已經成功修改密碼。",
-    "filepath": "./src/containers/Password/messages.js"
+    "filepath": "src/containers/Password/messages.js"
   },
   {
     "id": "Signin.signin",
     "description": "Document Title",
     "defaultMessage": "登入",
-    "filepath": "./src/containers/Signin/messages.js"
+    "filepath": "src/containers/Signin/messages.js"
   },
   {
     "id": "Signin.welcome",
     "defaultMessage": "歡迎",
-    "filepath": "./src/containers/Signin/messages.js"
+    "filepath": "src/containers/Signin/messages.js"
   },
   {
     "id": "Signin.email",
     "defaultMessage": "帳號",
-    "filepath": "./src/containers/Signin/messages.js"
+    "filepath": "src/containers/Signin/messages.js"
   },
   {
     "id": "Signin.password",
     "defaultMessage": "密碼",
-    "filepath": "./src/containers/Signin/messages.js"
+    "filepath": "src/containers/Signin/messages.js"
   }
 ]
