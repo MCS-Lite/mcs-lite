@@ -1,8 +1,8 @@
 /* eslint key-spacing: 0 */
 
 import { Observable } from 'rxjs/Observable';
-import reducer, { constants, actions, cycles } from '../auth';
 import { push } from 'react-router-redux';
+import reducer, { constants, actions, cycles } from '../auth';
 import { actions as devicesActions } from '../devices';
 import { actions as datapointsActions } from '../datapoints';
 import { actions as uiActions } from '../ui';
