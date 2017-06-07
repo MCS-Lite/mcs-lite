@@ -35,7 +35,7 @@ const Toast = ({ children, kind, ...otherProps }) =>
 
 Toast.displayName = 'Toast';
 Toast.propTypes = {
-  children: PropTypes.any.isRequired,
+  children: PropTypes.node.isRequired,
   kind: PropTypes.string,
 };
 Toast.defaultProps = {

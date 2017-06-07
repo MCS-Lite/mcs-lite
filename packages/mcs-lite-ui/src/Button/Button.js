@@ -20,8 +20,8 @@ const BaseComponent = ({ component, children, ...otherProps }) =>
   React.createElement(component, omitProps(otherProps), children);
 BaseComponent.displayName = 'BaseComponent';
 BaseComponent.propTypes = {
-  component: PropTypes.any.isRequired,
-  children: PropTypes.any, // Remind: There is not a children for Input tag.
+  component: PropTypes.oneOfType([PropTypes.func, PropTypes.string]).isRequired,
+  children: PropTypes.node, // Remind: There is not a children for Input tag.
 };
 
 const Button = styled(BaseComponent)`
@@ -57,7 +57,7 @@ Button.displayName = 'Button';
 Button.propTypes = {
   kind: PropTypes.string,
   block: PropTypes.bool,
-  component: PropTypes.any,
+  component: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
   square: PropTypes.bool,
   round: PropTypes.bool,
   size: PropTypes.oneOf(['small', 'normal']),

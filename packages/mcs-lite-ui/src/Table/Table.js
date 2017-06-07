@@ -29,7 +29,7 @@ const Table = styled.table`
 
 Table.displayName = 'Table';
 Table.propTypes = {
-  children: PropTypes.any,
+  children: PropTypes.node,
 };
 
 export default Table;

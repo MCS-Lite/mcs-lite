@@ -37,8 +37,28 @@ exports[`should renders <DeviceDetail> correctly 1`] = `
   />
   <main>
     <PullToRefresh
-      IconArrow={[Function]}
-      IconLoading={[Function]}
+      IconArrow={
+        <Heading
+          color="grayBase"
+          level={2}
+        >
+          <IconGoDown
+            size="1em"
+          />
+        </Heading>
+      }
+      IconLoading={
+        <Heading
+          color="grayBase"
+          level={2}
+        >
+          <Spin>
+            <IconLoading
+              size="1em"
+            />
+          </Spin>
+        </Heading>
+      }
       isLoading={false}
       onPull={[Function]}
     >
@@ -124,8 +144,28 @@ exports[`should renders <DeviceDetail> correctly when Menu show 1`] = `
   />
   <main>
     <PullToRefresh
-      IconArrow={[Function]}
-      IconLoading={[Function]}
+      IconArrow={
+        <Heading
+          color="grayBase"
+          level={2}
+        >
+          <IconGoDown
+            size="1em"
+          />
+        </Heading>
+      }
+      IconLoading={
+        <Heading
+          color="grayBase"
+          level={2}
+        >
+          <Spin>
+            <IconLoading
+              size="1em"
+            />
+          </Spin>
+        </Heading>
+      }
       isLoading={false}
       onPull={[Function]}
     >

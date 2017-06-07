@@ -20,6 +20,6 @@ const DashboardTitle = ({ title, children }) =>
 DashboardTitle.displayName = 'DashboardTitle';
 DashboardTitle.propTypes = {
   title: PropTypes.string.isRequired,
-  children: PropTypes.any,
+  children: PropTypes.node,
 };
 export default DashboardTitle;

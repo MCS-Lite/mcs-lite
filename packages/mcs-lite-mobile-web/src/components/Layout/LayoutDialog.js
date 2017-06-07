@@ -47,7 +47,7 @@ const LayoutDialog = ({ children, ...otherProps }) =>
 
 LayoutDialog.displayName = 'LayoutDialog';
 LayoutDialog.propTypes = {
-  children: PropTypes.any.isRequired,
+  children: PropTypes.node.isRequired,
 };
 
 export default LayoutDialog;

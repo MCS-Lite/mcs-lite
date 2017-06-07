@@ -10,7 +10,7 @@ class RequireAuth extends React.Component {
     requireAuth: PropTypes.func.isRequired,
 
     // props
-    children: PropTypes.any.isRequired,
+    children: PropTypes.node.isRequired,
   };
   componentWillMount = () => this.props.requireAuth();
   render() {

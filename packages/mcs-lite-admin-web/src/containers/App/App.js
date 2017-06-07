@@ -44,14 +44,14 @@ const App = ({ toasts, isLoading, children, getMessages: t }) =>
 
 App.displayName = 'App';
 App.propTypes = {
-  children: PropTypes.any.isRequired,
+  children: PropTypes.node.isRequired,
 
   // Redux State
   toasts: PropTypes.arrayOf(
     PropTypes.shape({
       key: PropTypes.string.isRequired,
       kind: PropTypes.string.isRequired,
-      children: PropTypes.any.isRequired,
+      children: PropTypes.node.isRequired,
     }),
   ).isRequired,
   isLoading: PropTypes.bool.isRequired,

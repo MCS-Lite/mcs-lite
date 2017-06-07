@@ -69,7 +69,7 @@ const DashboardLayout = ({
 
 DashboardLayout.displayName = 'DashboardLayout';
 DashboardLayout.propTypes = {
-  children: PropTypes.any.isRequired,
+  children: PropTypes.node.isRequired,
 
   // Redux State
   isStarted: PropTypes.bool.isRequired,

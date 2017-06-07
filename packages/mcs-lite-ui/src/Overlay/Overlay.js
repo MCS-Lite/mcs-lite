@@ -13,7 +13,7 @@ class Overlay extends React.Component {
   static propTypes = {
     onClickOutSide: PropTypes.func, // for ClickOutside
     children: PropTypes.node.isRequired,
-    target: PropTypes.any, // react mounted instance
+    target: PropTypes.object, // react mounted instance
     alignConfig: PropTypes.object.isRequired, // docs: https://github.com/yiminghe/dom-align#alignconfig-object-details
     transitionConfig: PropTypes.object.isRequired, // docs: https://github.com/souporserious/react-motion-ui-pack#props
   };
