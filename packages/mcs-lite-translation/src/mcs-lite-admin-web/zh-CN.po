@@ -10,7 +10,7 @@ msgstr ""
 "Language-Team: \n"
 "Last-Translator: \n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"Language: zh_CN\n"
+"Language: zh-CN\n"
 
 #. [Signin.email]
 #. defaultMessage is:
