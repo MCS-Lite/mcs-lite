@@ -2,7 +2,7 @@
 
 import { Observable } from 'rxjs/Observable';
 import reducer, { constants, actions, cycles } from '../auth';
-import { actions as routingActions } from '../routing';
+import { push } from 'react-router-redux';
 import { actions as devicesActions } from '../devices';
 import { actions as datapointsActions } from '../datapoints';
 import { actions as uiActions } from '../ui';
@@ -84,7 +84,7 @@ describe('auth - 3. Cycle', () => {
     };
 
     const actionSink = {
-      x: routingActions.pushPathname('/'),
+      x: push('/'),
     };
 
     // prettier-ignore
@@ -101,7 +101,7 @@ describe('auth - 3. Cycle', () => {
     };
 
     const actionSink = {
-      w: routingActions.pushPathname('/login'),
+      w: push('/login'),
       x: actions.clear(),
       y: devicesActions.clear(),
       z: datapointsActions.clear(),

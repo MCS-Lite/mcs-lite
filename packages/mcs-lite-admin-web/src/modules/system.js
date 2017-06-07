@@ -148,7 +148,7 @@ function postResetCycle(sources) {
 
   const request$ = sources.ACTION
     .filter(action => action.type === POST_RESET)
-    .combineLatest(accessToken$, (action, accessToken) => ({
+    .withLatestFrom(accessToken$, (action, accessToken) => ({
       url: '/api/service/reset',
       method: 'POST',
       headers: { Authorization: `Bearer ${accessToken}` },
@@ -160,7 +160,7 @@ function postResetCycle(sources) {
     request$.mapTo(uiActions.setLoading()),
     response$
       .pluck('text')
-      .combineLatest(message$, (text, message) => message)
+      .withLatestFrom(message$, (text, message) => message)
       .switchMap(message =>
         Observable.of(
           authActions.signout('', true),

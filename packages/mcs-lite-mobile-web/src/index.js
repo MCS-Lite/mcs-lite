@@ -33,6 +33,7 @@ import Account from './containers/Account';
 import Password from './containers/Password';
 import RequireAuth from './containers/RequireAuth';
 import configureStore from './store/configureStore';
+import { DEFAULT_LOCALE } from './modules/routing';
 import './style';
 import './utils/i18n';
 import registerServiceWorker from './registerServiceWorker';
@@ -41,7 +42,6 @@ import registerServiceWorker from './registerServiceWorker';
 // 1. Constants
 // ----------------------------------------------------------------------------
 export const BASENAME = '/mobile';
-export const DEFAULT_LOCALE = 'zh-TW';
 export const ROOT_ID = 'root';
 
 // ----------------------------------------------------------------------------

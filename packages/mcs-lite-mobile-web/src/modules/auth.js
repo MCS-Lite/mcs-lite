@@ -3,7 +3,7 @@
 
 import { Observable } from 'rxjs/Observable';
 import R from 'ramda';
-import { actions as routingActions } from './routing';
+import { push } from 'react-router-redux';
 import { actions as devicesActions } from './devices';
 import { actions as datapointsActions } from './datapoints';
 import { actions as uiActions } from './ui';
@@ -95,7 +95,7 @@ function tryEnterCycle(sources) {
 
   const action$ = cookieToken$
     .filter(cookieToken => !!cookieToken) // Hint: Go to devices list if cookieToken avaliable
-    .mapTo(routingActions.pushPathname('/'));
+    .mapTo(push('/'));
 
   return {
     ACTION: action$,
@@ -116,7 +116,7 @@ function signoutCycle(sources) {
   const action$ = confirm$
     .switchMap(() =>
       Observable.of(
-        routingActions.pushPathname('/login'),
+        push('/login'),
         clear(),
         devicesActions.clear(),
         datapointsActions.clear(),

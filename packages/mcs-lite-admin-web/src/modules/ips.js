@@ -46,10 +46,10 @@ function fetchIpListCycle(sources) {
       url: '/api/ip',
       method: 'GET',
       headers: { Authorization: `Bearer ${accessToken}` },
-      category: 'ips',
+      category: FETCH_IP_LIST,
     }));
 
-  const response$ = sources.HTTP.select('ips').switch();
+  const response$ = sources.HTTP.select(FETCH_IP_LIST).switch();
 
   const action$ = Observable.from([
     request$.mapTo(uiActions.setLoading()),

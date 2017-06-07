@@ -11,73 +11,89 @@ describe('routing - 1. Constants', () => {
 });
 
 describe('routing - 2. Action Creators', () => {
-  it('should return pushPathname actions', () => {
-    expect(actions.pushPathname('/login')).toMatchSnapshot();
-  });
-
-  it('should return pushLocale actions', () => {
-    expect(actions.pushLocale('en')).toMatchSnapshot();
+  it('should return actions', () => {
+    expect(actions).toMatchSnapshot();
   });
 });
 
 describe('ui - 3. Cycle', () => {
-  it('should emit correct Sinks given Sources with pushPathnameCycle', done => {
+  it('should handle Case1: defaultLocale', done => {
     const stateSource = {
-      s: {
+      i: {
         routing: {
-          locationBeforeTransitions: {
-            pathname: '/',
-            query: { locale: 'zh-TW' },
-          },
+          locationBeforeTransitions: null,
         },
       },
-    };
-    const actionSource = {
-      a: actions.pushPathname('/fakepath/123'),
-    };
-
-    const actionSink = {
-      x: push({ pathname: '/fakepath/123', query: { locale: 'zh-TW' } }),
-    };
-
-    // prettier-ignore
-    assertSourcesSinks(
-      {
-        STATE:  { 's|': stateSource },
-        ACTION: { 'a|': actionSource },
-      },
-      { ACTION: { 'x|': actionSink } },
-      cycles.pushPathnameCycle, done,
-    );
-  });
-
-  it('should emit correct Sinks given Sources with pushLocaleCycle', done => {
-    const stateSource = {
       s: {
         routing: {
           locationBeforeTransitions: {
-            pathname: '/',
+            pathname: '/a',
             query: {},
           },
         },
       },
     };
-    const actionSource = {
-      a: actions.pushLocale('zh-TW'),
-    };
 
     const actionSink = {
-      x: push({ pathname: '/', query: { locale: 'zh-TW' } }),
+      x: push({ pathname: '/a', query: { locale: 'zh-TW' } }),
     };
 
     // prettier-ignore
     assertSourcesSinks(
       {
-        STATE:  { 's|': stateSource },
-        ACTION: { 'a|': actionSource },
+        STATE:  { 'is|': stateSource },
       },
-      { ACTION: { 'x|': actionSink } },
-      cycles.pushLocaleCycle, done,
+      { ACTION: { '-x|': actionSink } },
+      cycles.localeCycle, done,
+    );
+  });
+
+  it('should handle Case2: Keep last local state with push()', done => {
+    const stateSource = {
+      i: {
+        routing: {
+          locationBeforeTransitions: null,
+        },
+      },
+      s: {
+        routing: {
+          locationBeforeTransitions: {
+            pathname: '/a',
+            query: {},
+          },
+        },
+      },
+      t: {
+        routing: {
+          locationBeforeTransitions: {
+            pathname: '/a',
+            query: { locale: 'en' },
+          },
+        },
+      },
+      u: {
+        routing: {
+          locationBeforeTransitions: {
+            pathname: '/logout',
+            query: {},
+          },
+        },
+      },
+    };
+
+    const actionSink = {
+      x: push({ pathname: '/a', query: { locale: 'zh-TW' } }),
+      y: push({ pathname: '/a', query: { locale: 'en' } }),
+      z: push({ pathname: '/logout', query: { locale: 'en' } }),
+    };
+
+    // prettier-ignore
+    assertSourcesSinks(
+      {
+        STATE:  { 'istu|': stateSource },
+      },
+      { ACTION: { '-xyz|': actionSink } },
+      cycles.localeCycle, done,
     );
   });
 });
