@@ -5,6 +5,7 @@ exports[`should render Container correctly with HOC 1`] = `<Connect(InjectIntl(w
 exports[`should return props correctly with mapDispatchToProps 1`] = `
 Object {
   "fetchSystemByType": [Function],
+  "postReset": [Function],
   "setSystemByType": [Function],
   "uploadSystemByType": [Function],
 }

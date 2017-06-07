@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should return messages 1`] = `
+Object {
+  "DialogConfirm.cancel": Object {
+    "defaultMessage": "取消",
+    "id": "DialogConfirm.cancel",
+  },
+  "DialogConfirm.confirm": Object {
+    "defaultMessage": "確定",
+    "id": "DialogConfirm.confirm",
+  },
+  "DialogConfirm.notice": Object {
+    "defaultMessage": "注意！",
+    "description": "For Dialog Header",
+    "id": "DialogConfirm.notice",
+  },
+}
+`;

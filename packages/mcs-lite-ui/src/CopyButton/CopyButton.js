@@ -1,7 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { createEventHandler, componentFromStream } from 'recompose';
+import { componentFromStreamWithConfig } from 'recompose/componentFromStream';
+import { createEventHandlerWithConfig } from 'recompose/createEventHandler';
 import R from 'ramda';
 import copyToClipboard from 'copy-to-clipboard';
 import MorphReplace from 'react-svg-morph/lib/MorphReplace';
@@ -10,7 +11,6 @@ import { Observable } from 'rxjs/Observable';
 import { async } from 'rxjs/scheduler/async';
 import 'rxjs/add/operator/combineLatest';
 import 'rxjs/add/operator/withLatestFrom';
-import 'rxjs/add/operator/do';
 import 'rxjs/add/observable/of';
 import 'rxjs/add/operator/switchMapTo';
 import 'rxjs/add/operator/delay';
@@ -60,19 +60,25 @@ export const getStatusStream = (
 
 const omitProps = R.omit(['text']);
 
-const CopyButton = componentFromStream(propStream => {
-  const props$ = Observable.from(propStream);
-  const { handler: onClick, stream: onClickStream } = createEventHandler();
+const componentFromStream = componentFromStreamWithConfig({
+  fromESObservable: Observable.from,
+  toESObservable: stream => stream,
+});
+const createEventHandler = createEventHandlerWithConfig({
+  fromESObservable: Observable.from,
+  toESObservable: stream => stream,
+});
+
+const CopyButton = componentFromStream(props$ => {
+  const { handler: onClick, stream: onClick$ } = createEventHandler();
 
   const text$ = props$.pluck('text');
-  const onClick$ = Observable.from(onClickStream);
   const status$ = getStatusStream(onClick$);
 
   // Remind: copyToClipboard Side-effects
   onClick$
     .withLatestFrom(text$, (status, text) => text)
-    .do(copyToClipboard)
-    .subscribe();
+    .subscribe(copyToClipboard);
 
   return props$.combineLatest(status$, ({ children, ...otherProps }, status) =>
     <StyledButton

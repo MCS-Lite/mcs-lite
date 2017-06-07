@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"POT-Creation-Date: 2017-06-05T08:26:51.277Z\n"
+"POT-Creation-Date: 2017-06-06T08:18:55.756Z\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "MIME-Version: 1.0\n"
@@ -82,6 +82,13 @@ msgid "前往 MCS Lite"
 msgstr ""
 
 #: ./messages.json
+#. [DialogConfirm.cancel]
+#. defaultMessage is:
+#. 取消
+msgid "取消"
+msgstr ""
+
+#: ./messages.json
 #. [DashboardLayout.start]
 #. defaultMessage is:
 #. 啟動
@@ -114,10 +121,24 @@ msgid "建立管理者帳戶"
 msgstr ""
 
 #: ./messages.json
+#. [System.reset.success]
+#. defaultMessage is:
+#. 成功！系統已重置，請重新登入。
+msgid "成功！系統已重置，請重新登入。"
+msgstr ""
+
+#: ./messages.json
 #. [Signup.password2.error]
 #. defaultMessage is:
 #. 新密碼和確認密碼不一致
 msgid "新密碼和確認密碼不一致"
+msgstr ""
+
+#: ./messages.json
+#. [System.reset.confirm]
+#. defaultMessage is:
+#. 是否確定重置系統？
+msgid "是否確定重置系統？"
 msgstr ""
 
 #: ./messages.json
@@ -139,6 +160,13 @@ msgstr ""
 #. defaultMessage is:
 #. 歡迎
 msgid "歡迎"
+msgstr ""
+
+#: ./messages.json
+#. [DialogConfirm.notice] - For Dialog Header
+#. defaultMessage is:
+#. 注意！
+msgid "注意！"
 msgstr ""
 
 #: ./messages.json
@@ -170,6 +198,13 @@ msgid "目前尚無可連線的服務，請先啟動本服務。"
 msgstr ""
 
 #: ./messages.json
+#. [DialogConfirm.confirm]
+#. defaultMessage is:
+#. 確定
+msgid "確定"
+msgstr ""
+
+#: ./messages.json
 #. [DashboardLayout.confirm]
 #. defaultMessage is:
 #. 確定要登出？
@@ -192,6 +227,13 @@ msgstr ""
 #. defaultMessage is:
 #. 系統管理
 msgid "系統管理"
+msgstr ""
+
+#: ./messages.json
+#. [System.reset]
+#. defaultMessage is:
+#. 系統重置
+msgid "系統重置"
 msgstr ""
 
 #: ./messages.json

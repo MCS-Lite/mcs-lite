@@ -1,5 +1,21 @@
 [
   {
+    "id": "DialogConfirm.notice",
+    "description": "For Dialog Header",
+    "defaultMessage": "注意！",
+    "filepath": "./src/components/DialogConfirm/messages.js"
+  },
+  {
+    "id": "DialogConfirm.cancel",
+    "defaultMessage": "取消",
+    "filepath": "./src/components/DialogConfirm/messages.js"
+  },
+  {
+    "id": "DialogConfirm.confirm",
+    "defaultMessage": "確定",
+    "filepath": "./src/components/DialogConfirm/messages.js"
+  },
+  {
     "id": "App.titleTemplate",
     "description": "For document title",
     "defaultMessage": "MCS Lite Admin",
@@ -149,6 +165,21 @@
   {
     "id": "System.save",
     "defaultMessage": "儲存",
+    "filepath": "./src/containers/System/messages.js"
+  },
+  {
+    "id": "System.reset",
+    "defaultMessage": "系統重置",
+    "filepath": "./src/containers/System/messages.js"
+  },
+  {
+    "id": "System.reset.confirm",
+    "defaultMessage": "是否確定重置系統？",
+    "filepath": "./src/containers/System/messages.js"
+  },
+  {
+    "id": "System.reset.success",
+    "defaultMessage": "成功！系統已重置，請重新登入。",
     "filepath": "./src/containers/System/messages.js"
   }
 ]
