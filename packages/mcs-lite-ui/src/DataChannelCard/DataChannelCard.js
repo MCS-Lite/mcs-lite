@@ -85,8 +85,8 @@ const DataChannelCard = ({
 
 DataChannelCard.displayName = 'DataChannelCard';
 DataChannelCard.propTypes = {
-  header: PropTypes.any,
-  children: PropTypes.any.isRequired,
+  header: PropTypes.node,
+  children: PropTypes.node.isRequired,
   title: PropTypes.string.isRequired,
   subtitle: PropTypes.string.isRequired,
   description: PropTypes.string,

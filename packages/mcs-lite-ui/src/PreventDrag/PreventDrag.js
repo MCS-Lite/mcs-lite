@@ -22,7 +22,7 @@ const PreventDrag = ({ children }) =>
 
 PreventDrag.displayName = 'PreventDrag';
 PreventDrag.propTypes = {
-  children: PropTypes.any.isRequired,
+  children: PropTypes.node.isRequired,
 };
 
 export default PreventDrag;

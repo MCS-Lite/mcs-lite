@@ -10,7 +10,7 @@ const Component = ({ children, ...otherProps }) =>
   React.createElement(getBaseComponent(children), otherProps, children);
 Component.displayName = 'Component';
 Component.propTypes = {
-  children: PropTypes.any.isRequired,
+  children: PropTypes.node.isRequired,
 };
 
 const P = styled(Component)`

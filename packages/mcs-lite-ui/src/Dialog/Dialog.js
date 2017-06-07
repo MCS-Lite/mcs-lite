@@ -20,7 +20,7 @@ export const Overlay = styled.div`
 
 class Dialog extends React.Component {
   static propTypes = {
-    children: PropTypes.any.isRequired,
+    children: PropTypes.node.isRequired,
     show: PropTypes.bool.isRequired,
     onHide: PropTypes.func,
   };

@@ -7,7 +7,7 @@ const H = ({ level, children, ...otherProps }) =>
 H.displayName = 'H';
 H.propTypes = {
   level: PropTypes.number.isRequired,
-  children: PropTypes.any.isRequired,
+  children: PropTypes.node.isRequired,
 };
 
 const Heading = styled(H)`

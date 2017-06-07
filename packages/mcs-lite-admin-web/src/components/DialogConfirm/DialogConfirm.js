@@ -71,7 +71,7 @@ DialogConfirm.propTypes = {
   show: PropTypes.bool.isRequired,
   onCancel: PropTypes.func.isRequired,
   onSubmit: PropTypes.func.isRequired,
-  children: PropTypes.any.isRequired,
+  children: PropTypes.node.isRequired,
 
   // React-intl I18n
   getMessages: PropTypes.func.isRequired,

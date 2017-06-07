@@ -52,7 +52,7 @@ const PickerContainer = ({ children, ...otherProps }) =>
 
 PickerContainer.displayName = 'PickerContainer';
 PickerContainer.propTypes = {
-  children: PropTypes.any.isRequired,
+  children: PropTypes.node.isRequired,
 };
 
 export default PickerContainer;

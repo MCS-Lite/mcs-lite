@@ -36,17 +36,17 @@ class PullToRefresh extends React.Component {
     children: PropTypes.node.isRequired,
     isLoading: PropTypes.bool.isRequired,
     onPull: PropTypes.func.isRequired,
-    IconArrow: PropTypes.any,
-    IconLoading: PropTypes.any,
+    IconArrow: PropTypes.node,
+    IconLoading: PropTypes.node,
   };
 
   static defaultProps = {
-    IconLoading: () =>
+    IconLoading: (
       <Heading level={2} color="grayBase">
         <Spin><MLIconLoading /></Spin>
-      </Heading>,
-    IconArrow: () =>
-      <Heading level={2} color="grayBase"><IconGoDown /></Heading>,
+      </Heading>
+    ),
+    IconArrow: <Heading level={2} color="grayBase"><IconGoDown /></Heading>,
   };
 
   constructor(props) {
@@ -118,7 +118,7 @@ class PullToRefresh extends React.Component {
           style={{ marginTop: distance }}
         >
           <LoadingContainer distance={distance}>
-            {isLoading ? <IconLoading /> : <IconArrow />}
+            {isLoading ? IconLoading : IconArrow}
           </LoadingContainer>
           {children}
         </PullWrapper>

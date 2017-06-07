@@ -19,7 +19,7 @@ const MobileFixedFooter = ({ children, ...otherProps }) =>
 
 MobileFixedFooter.displayName = 'MobileFixedFooter';
 MobileFixedFooter.propTypes = {
-  children: PropTypes.any.isRequired,
+  children: PropTypes.node.isRequired,
 };
 
 export default MobileFixedFooter;

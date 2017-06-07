@@ -45,7 +45,7 @@ class ${componentName} extends React.Component {
 ${componentName}.displayName = '${componentName}';
 ${componentName}.propTypes = {
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  children: PropTypes.any,
+  children: PropTypes.node,
 };
 ${componentName}.defaultProps = {
   size: '1em',

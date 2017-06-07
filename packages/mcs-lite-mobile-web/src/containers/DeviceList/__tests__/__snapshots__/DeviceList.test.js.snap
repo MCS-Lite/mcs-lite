@@ -67,8 +67,28 @@ exports[`should renders <DeviceList> correctly when Filter open 1`] = `
   />
   <main>
     <PullToRefresh
-      IconArrow={[Function]}
-      IconLoading={[Function]}
+      IconArrow={
+        <Heading
+          color="grayBase"
+          level={2}
+        >
+          <IconGoDown
+            size="1em"
+          />
+        </Heading>
+      }
+      IconLoading={
+        <Heading
+          color="grayBase"
+          level={2}
+        >
+          <Spin>
+            <IconLoading
+              size="1em"
+            />
+          </Spin>
+        </Heading>
+      }
       isLoading={false}
       onPull={[Function]}
     >
@@ -148,8 +168,28 @@ exports[`should renders <DeviceList> correctly with one device 1`] = `
   />
   <main>
     <PullToRefresh
-      IconArrow={[Function]}
-      IconLoading={[Function]}
+      IconArrow={
+        <Heading
+          color="grayBase"
+          level={2}
+        >
+          <IconGoDown
+            size="1em"
+          />
+        </Heading>
+      }
+      IconLoading={
+        <Heading
+          color="grayBase"
+          level={2}
+        >
+          <Spin>
+            <IconLoading
+              size="1em"
+            />
+          </Spin>
+        </Heading>
+      }
       isLoading={false}
       onPull={[Function]}
     >
@@ -235,8 +275,28 @@ exports[`should renders <DeviceList> correctly without devices 1`] = `
   />
   <main>
     <PullToRefresh
-      IconArrow={[Function]}
-      IconLoading={[Function]}
+      IconArrow={
+        <Heading
+          color="grayBase"
+          level={2}
+        >
+          <IconGoDown
+            size="1em"
+          />
+        </Heading>
+      }
+      IconLoading={
+        <Heading
+          color="grayBase"
+          level={2}
+        >
+          <Spin>
+            <IconLoading
+              size="1em"
+            />
+          </Spin>
+        </Heading>
+      }
       isLoading={false}
       onPull={[Function]}
     >

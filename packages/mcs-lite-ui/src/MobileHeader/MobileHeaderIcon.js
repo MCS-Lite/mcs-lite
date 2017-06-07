@@ -9,8 +9,8 @@ const BaseComponent = ({ component, children, ...otherProps }) =>
   React.createElement(component, omitProps(otherProps), children);
 BaseComponent.displayName = 'BaseComponent';
 BaseComponent.propTypes = {
-  component: PropTypes.any.isRequired,
-  children: PropTypes.any.isRequired,
+  component: PropTypes.oneOfType([PropTypes.func, PropTypes.string]).isRequired,
+  children: PropTypes.node.isRequired,
 };
 
 const MobileHeaderIcon = styled(BaseComponent)`
@@ -27,7 +27,7 @@ const MobileHeaderIcon = styled(BaseComponent)`
 
 MobileHeaderIcon.displayName = 'MobileHeaderIcon';
 MobileHeaderIcon.propTypes = {
-  component: PropTypes.any,
+  component: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
 };
 MobileHeaderIcon.defaultProps = {
   component: 'a',

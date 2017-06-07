@@ -9,7 +9,7 @@ import isString from '../utils/isString';
 class DomAlign extends React.Component {
   static propTypes = {
     children: PropTypes.node.isRequired,
-    target: PropTypes.any, // react mounted instance
+    target: PropTypes.object, // react mounted instance
     alignConfig: PropTypes.object.isRequired, // docs: https://github.com/yiminghe/dom-align#alignconfig-object-details
   };
   static defaultProps = {

@@ -79,8 +79,8 @@ const MobileHeader = ({ title, leftChildren, rightChildren, ...otherProps }) =>
 MobileHeader.displayName = 'MobileHeader';
 MobileHeader.propTypes = {
   title: PropTypes.string,
-  leftChildren: PropTypes.any.isRequired,
-  rightChildren: PropTypes.any,
+  leftChildren: PropTypes.node.isRequired,
+  rightChildren: PropTypes.node,
 };
 
 export default MobileHeader;
