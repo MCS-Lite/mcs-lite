@@ -22,12 +22,12 @@ We use two CIs at same time to separate testing flow.
 ## Release Flow
 
 1. prerelease
-  - `./tasks/build.sh` (Only for dependency packages in order.)
+  - run `tasks/build.sh` - `npm run build` for all packages
   
 2. [lerna publish](https://github.com/lerna/lerna#publish)
   - Version of package.json will be updated.
   - Create git tags.
-  - npm `prepack` (Only for projects.)
+  - `npm run prepack` for all projects (mcs-lite-\*-web)
   - Publish to npm.
  
 ## I18n workflow
@@ -65,9 +65,9 @@ When release, the flow will be:
 
 1.  `npm run release` (lerna)
 2.  run `tasks/build.sh` (prerelease)
-      - `build` for all packages (mcs-lite-translation)
-      - `prepack` for all projects (mcs-lite-\*-web)
+      - `npm run build` for all packages (mcs-lite-translation)
 3.  NPM publish
+      - `npm run prepack` for all projects (mcs-lite-\*-web)
 
 ## Technology Stack
 
