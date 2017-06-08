@@ -64,7 +64,7 @@
     "react-addons-test-utils": "^15.5.1",
     "react-dom": "^15.5.4",
     "react-test-renderer": "^15.5.4",
-    "styled-components": "^2.0.0"
+    "styled-components": "^2.0.1"
   },
   "dependencies": {
     "copy-to-clipboard": "^3.0.6",
@@ -80,7 +80,7 @@
     "react-syntax-highlighter": "^5.6.2",
     "react-text-truncate": "^0.10.1",
     "recharts": "^1.0.0-alpha.0",
-    "recompose": "^0.23.4",
+    "recompose": "^0.23.5",
     "rxjs": "^5.4.0"
   },
   "peerDependencies": {
@@ -88,6 +88,6 @@
     "mcs-lite-theme": "^0.3.2",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
-    "styled-components": "^2.0.0"
+    "styled-components": "^2.0.1"
   }
 }

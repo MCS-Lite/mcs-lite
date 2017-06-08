@@ -28,28 +28,10 @@ const Input = styled.input`
     box-shadow: 0 0 3px 0 ${props => shadow(props.theme.color[props.kind])};
   }
 
-  /* stylelint-disable selector-no-vendor-prefix */
   &::placeholder {
     opacity: 1;
     color: ${props => props.theme.color.grayDark};
   }
-
-  &::-moz-placeholder {
-    opacity: 1;
-    color: ${props => props.theme.color.grayDark};
-  }
-
-  &::-webkit-input-placeholder {
-    opacity: 1;
-    color: ${props => props.theme.color.grayDark};
-  }
-
-  &:-ms-input-placeholder {
-    opacity: 1;
-    color: ${props => props.theme.color.grayDark};
-  }
-
-  /* stylelint-enable */
 `;
 
 Input.displayName = 'Input';

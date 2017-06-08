@@ -28,7 +28,7 @@
     "mcs-lite-scripts": "^0.3.2"
   },
   "dependencies": {
-    "recompose": "^0.23.4",
+    "recompose": "^0.23.5",
     "websocket": "^1.0.24"
   },
   "babel": {
