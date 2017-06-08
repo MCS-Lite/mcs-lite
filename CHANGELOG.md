@@ -2,6 +2,20 @@
 
 ## Released (2017-06-08)
 
+### Bump Versions
+
+-   babel-preset-mcs-lite: 0.3.2 => 0.3.3
+-   mcs-lite-admin-web: 0.1.0 => 0.1.1
+-   mcs-lite-connect: 0.3.2 => 0.3.3
+-   mcs-lite-icon: 0.3.2 => 0.3.3
+-   mcs-lite-mobile-web: 0.4.2 => 0.4.3
+-   mcs-lite-scripts: 0.3.2 => 0.3.3
+-   mcs-lite-theme: 0.3.2 => 0.3.3
+-   mcs-lite-translation: 0.0.0 => 0.1.0  🎉
+-   mcs-lite-ui: 0.4.2 => 0.4.3
+-   react-intl-cra: 0.2.2 => 0.2.3
+-   react-intl-inject-hoc: 0.2.2 => 0.2.3
+
 #### :rocket: New Feature
 * `mcs-lite-admin-web`, `mcs-lite-mobile-web`, `mcs-lite-scripts`, `mcs-lite-translation`
   * [#348](https://github.com/MCS-Lite/mcs-lite/pull/348) feat(I18n): add new mcs-lite-translation project & update mcs-lite-script which creating empty directory. ([@evenchange4](https://github.com/evenchange4))
