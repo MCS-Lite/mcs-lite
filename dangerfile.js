@@ -35,7 +35,8 @@ const i18nChanged = allChanges.some(e => /messages\.js/.test(e));
 const potChanged = allChanges.some(e => /\.pot/.test(e));
 if (i18nChanged && !potChanged) {
   const message = 'Changes were made to i18n, but not to .pot';
-  const idea = 'Perhaps you need to run `$ npm run extract:pot`?';
+  const idea =
+    'Perhaps you need to run `$ yarn run extract:messages && yarn run extract:pot`?';
   fail(`${message} - <i>${idea}</i>`);
 }
 
@@ -46,7 +47,6 @@ const licensesCSVChanged = danger.git.modified_files.includes(
 );
 if (packageChanged && !licensesCSVChanged) {
   const message = 'Changes were made to package.json, but not to licenses.csv';
-  const idea =
-    'Perhaps you need to run `$ license-checker --csv --out docs/licenses.csv`?';
+  const idea = 'Perhaps you need to run `$ yarn run license`?';
   warn(`${message} - <i>${idea}</i>`);
 }
