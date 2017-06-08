@@ -45,7 +45,9 @@ $ yarn run extract:messages
 $ yarn run extract:pot
 ```
 
-*If you forget to extract the messages, the [DangerJS checker](https://github.com/MCS-Lite/mcs-lite/blob/master/dangerfile.js#L33) will **FAIL** the build in Travis CI.*
+If you forget to extract the messages, the [DangerJS checker](https://github.com/MCS-Lite/mcs-lite/blob/master/dangerfile.js#L33) will **FAIL** the build in Travis CI.
+
+![dangerjs](./images/i18n-workflow-dangerjs.png)
 
 #### Translator
 
@@ -58,6 +60,14 @@ Update POT file using [Poedit](https://poedit.net/) editor.
 #### Release
 
 The translation file will be generated automatically at **mcs-lite-translation** building phase (`$ npm run build`).
+
+When release, the flow will be:
+
+1.  `npm run release` (lerna)
+2.  run `tasks/build.sh` (prerelease)
+      - `build` for all packages (mcs-lite-translation)
+      - `prepack` for all projects (mcs-lite-\*-web)
+3.  NPM publish
 
 ## Technology Stack
 

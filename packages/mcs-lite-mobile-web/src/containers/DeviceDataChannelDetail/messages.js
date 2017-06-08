@@ -17,7 +17,7 @@ const messages = defineMessages({
   'DeviceDataChannelDetail.reset': {
     id: 'DeviceDataChannelDetail.reset',
     description: 'reset for history query',
-    defaultMessage: '回復預設值123',
+    defaultMessage: '回復預設值',
   },
   'DeviceDataChannelDetail.noData': {
     id: 'DeviceDataChannelDetail.noData',
