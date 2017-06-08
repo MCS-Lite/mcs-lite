@@ -19,3 +19,6 @@ build/
 
 # GitBook
 _book/
+
+# POT
+*.mo
