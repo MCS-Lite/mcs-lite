@@ -36,7 +36,7 @@ We use two CIs at same time to separate testing flow.
 
 #### Developer
 
-Extract messages from source code as PO format
+Extract messages from source code as PO format.
 
 ```bash
 # packages/mcs-lite-mobile-web
@@ -49,7 +49,7 @@ $ yarn run extract:pot
 
 #### Translator
 
-Update POT file using [Poedit](https://poedit.net/) editor
+Update POT file using [Poedit](https://poedit.net/) editor.
 
 | **Step 1** | **Step 2** | **Step 3** |
 |-----|-----|-----|
