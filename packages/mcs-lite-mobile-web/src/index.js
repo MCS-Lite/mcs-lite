@@ -33,7 +33,7 @@ import Account from './containers/Account';
 import Password from './containers/Password';
 import RequireAuth from './containers/RequireAuth';
 import configureStore from './store/configureStore';
-import { DEFAULT_LOCALE } from './modules/routing';
+import { constants } from './modules/routing';
 import './style';
 import './utils/i18n';
 import registerServiceWorker from './registerServiceWorker';
@@ -57,7 +57,7 @@ const render = applyRouterMiddleware(useScroll());
 // ----------------------------------------------------------------------------
 ReactDOM.render(
   <Provider store={store}>
-    <IntlProvider defaultLocale={DEFAULT_LOCALE}>
+    <IntlProvider defaultLocale={constants.DEFAULT_LOCALE}>
       <ThemeProvider theme={mobileTheme}>
         <Router history={routerHistory} render={render}>
           <Route component={App}>

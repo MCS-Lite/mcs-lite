@@ -2,7 +2,7 @@ import { push } from 'react-router-redux';
 import R from 'ramda';
 import { LOCATION_CHANGE } from 'react-router-redux/lib/reducer';
 
-export const DEFAULT_LOCALE = 'zh-TW';
+const DEFAULT_LOCALE = 'zh-TW';
 
 // ----------------------------------------------------------------------------
 // 1. Constants
@@ -10,6 +10,7 @@ export const DEFAULT_LOCALE = 'zh-TW';
 
 export const constants = {
   LOCATION_CHANGE,
+  DEFAULT_LOCALE,
 };
 
 // ----------------------------------------------------------------------------

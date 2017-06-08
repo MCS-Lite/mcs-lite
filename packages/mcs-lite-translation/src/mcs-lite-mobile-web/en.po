@@ -183,7 +183,7 @@ msgstr ""
 #. 我的測試裝置
 #: ../mcs-lite-translation/src/mcs-lite-mobile-web/messages.json
 msgid "我的測試裝置"
-msgstr ""
+msgstr "My test devices"
 
 #. [DeviceDetailInfo.description]
 #. defaultMessage is:

@@ -7,14 +7,14 @@ const IntlProvider = ({ locale, defaultLocale, ...otherProps }) =>
   <ReactIntlProvider
     {...otherProps}
     defaultLocale={defaultLocale}
-    locale={locale || defaultLocale}
+    locale={locale}
     messages={translation[locale]}
   />;
 
 IntlProvider.displayName = 'IntlProvider';
 IntlProvider.propTypes = {
   // Redux State
-  locale: PropTypes.string,
+  locale: PropTypes.string, // Remind: Missing locale data for locale: "undefined". Using default locale: "zh-TW" as fallback.
 
   // Props
   defaultLocale: PropTypes.string.isRequired,
