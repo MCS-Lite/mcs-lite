@@ -45,7 +45,7 @@ $ yarn run extract:messages
 $ yarn run extract:pot
 ```
 
-*If you forget to extract the messages, the DangerJS checker will **FAIL** the build in Travis CI.*
+*If you forget to extract the messages, the [DangerJS checker](https://github.com/MCS-Lite/mcs-lite/blob/master/dangerfile.js#L33) will **FAIL** the build in Travis CI.*
 
 #### Translator
 
