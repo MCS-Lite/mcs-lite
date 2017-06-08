@@ -32,7 +32,7 @@ exports[`should render FLOAT_CONTROL correctly with default value to empty 1`] =
           value=""
         >
           <input
-            className="Input__Input-ixjKAz hMaVBp"
+            className="Input__Input-ixjKAz daZkvy"
             kind="primary"
             onChange={[Function]}
             placeholder="Float only"
@@ -186,7 +186,7 @@ exports[`should render FLOAT_CONTROL correctly with unit 1`] = `
           value={0.11}
         >
           <input
-            className="Input__Input-ixjKAz hMaVBp"
+            className="Input__Input-ixjKAz daZkvy"
             kind="primary"
             onChange={[Function]}
             placeholder="Float only"
@@ -317,7 +317,7 @@ exports[`should render FLOAT_CONTROL correctly with value 1`] = `
           value={0.11}
         >
           <input
-            className="Input__Input-ixjKAz hMaVBp"
+            className="Input__Input-ixjKAz daZkvy"
             kind="primary"
             onChange={[Function]}
             placeholder="Float only"
@@ -448,7 +448,7 @@ exports[`should render FLOAT_CONTROL correctly with zero 1`] = `
           value={0}
         >
           <input
-            className="Input__Input-ixjKAz hMaVBp"
+            className="Input__Input-ixjKAz daZkvy"
             kind="primary"
             onChange={[Function]}
             placeholder="Float only"
