@@ -2,8 +2,9 @@
 
 ## Table of Contents
 
--   [Release Flow](#release-flow)
 -   [CI](#ci)
+-   [Release Flow](#release-flow)
+-   [I18n Workflow](#i18n-workflow)
 -   [Technology Stack](#technology-stack)
 -   [Packages Relation](#packages-relation)
 -   [DataChannelAdapter Design](#datachanneladapter-design)
@@ -29,9 +30,40 @@ We use two CIs at same time to separate testing flow.
   - npm `prepack` (Only for projects.)
   - Publish to npm.
  
+## I18n workflow
+
+> Further readings: [I18n Workflow for React Project 中文](https://medium.com/@evenchange4/i18n-workflow-for-react-project-9f9ff8fe9aef)
+
+#### Developer
+
+Extract messages from source code as PO format.
+
+```bash
+# packages/mcs-lite-mobile-web
+
+$ yarn run extract:messages
+$ yarn run extract:pot
+```
+
+*If you forget to extract the messages, the DangerJS checker will **FAIL** the build in Travis CI.*
+
+#### Translator
+
+Update POT file using [Poedit](https://poedit.net/) editor.
+
+| **Step 1** | **Step 2** | **Step 3** |
+|-----|-----|-----|
+| ![step1](./images/i18n-workflow-1.png) | ![step2](./images/i18n-workflow-2.png) | ![step3](./images/i18n-workflow-3.png) |
+
+#### Release
+
+The translation file will be generated automatically at **mcs-lite-translation** building phase (`$ npm run build`).
+
 ## Technology Stack
 
 ![](./images/tech-stack.png)
+
+> Further readings: [Build A Web App in MediaTek (中文)](https://medium.com/@evenchange4/build-a-web-app-in-mediatek-61b0a26215a0)
 
 -   [create-react-app](https://github.com/facebookincubator/create-react-app)
 -   [react-router](https://github.com/ReactTraining/react-router)
@@ -44,8 +76,6 @@ We use two CIs at same time to separate testing flow.
 -   [react-intl](https://github.com/yahoo/react-intl)
 -   [recompose](https://github.com/acdlite/recompose)
 
-*Further readings: [Build A Web App in MediaTek (中文)](https://medium.com/@evenchange4/build-a-web-app-in-mediatek-61b0a26215a0)*
-
 ## Packages Relation
 
 ![](./images/relation.png)
@@ -56,8 +86,10 @@ We use two CIs at same time to separate testing flow.
 
 ## How To Add New Icon?
 
-![](./images/create-icon-step-1.png)
-![](./images/create-icon-step-2.png)
-![](./images/create-icon-step-3.png)
-![](./images/create-icon-step-4.png)
-![](./images/create-icon-step-5.png)
+| **Step 1** | **Step 2** | **Step 3** |
+|-----|-----|-----|
+| ![](./images/create-icon-step-1.png)| ![](./images/create-icon-step-2.png)| ![](./images/create-icon-step-3.png)|
+
+| **Step 4** | **Step 5** |
+|-----|-----|
+| ![](./images/create-icon-step-4.png)| ![](./images/create-icon-step-5.png)|

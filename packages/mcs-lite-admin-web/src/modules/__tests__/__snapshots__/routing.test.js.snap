@@ -2,6 +2,7 @@
 
 exports[`routing - 1. Constants should return constants 1`] = `
 Object {
+  "DEFAULT_LOCALE": "zh-TW",
   "LOCATION_CHANGE": "@@router/LOCATION_CHANGE",
 }
 `;

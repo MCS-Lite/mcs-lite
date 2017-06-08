@@ -1,0 +1,244 @@
+msgid ""
+msgstr ""
+"POT-Creation-Date: 2017-06-07T12:29:43.673Z\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"MIME-Version: 1.0\n"
+"X-Generator: react-intl-po\n"
+
+
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+#. [Signin.email]
+#. defaultMessage is:
+#. Email
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+#. [Signup.email]
+#. defaultMessage is:
+#. Email
+msgid "Email"
+msgstr ""
+
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+#. [DashboardLayout.ipConnection]
+#. defaultMessage is:
+#. IP 連線
+msgid "IP 連線"
+msgstr ""
+
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+#. [System.jsonError]
+#. defaultMessage is:
+#. JSON 資料格式錯誤
+msgid "JSON 資料格式錯誤"
+msgstr ""
+
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+#. [App.titleTemplate] - For document title
+#. defaultMessage is:
+#. MCS Lite Admin
+msgid "MCS Lite Admin"
+msgstr ""
+
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+#. [Ip.mcsLiteIpConnection] - Meta/Title
+#. defaultMessage is:
+#. MCS lite 的連線 IP
+msgid "MCS lite 的連線 IP"
+msgstr ""
+
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+#. [Ip.description] - description
+#. defaultMessage is:
+#. 使用者可透過下列的 IP 位址連線至 MCS Lite 服務器。
+msgid "使用者可透過下列的 IP 位址連線至 MCS Lite 服務器。"
+msgstr ""
+
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+#. [System.description] - description
+#. defaultMessage is:
+#. 修改系統的參數設定。
+msgid "修改系統的參數設定。"
+msgstr ""
+
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+#. [DashboardLayout.stop]
+#. defaultMessage is:
+#. 停止
+msgid "停止"
+msgstr ""
+
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+#. [System.save]
+#. defaultMessage is:
+#. 儲存
+msgid "儲存"
+msgstr ""
+
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+#. [Ip.goToMCSLite]
+#. defaultMessage is:
+#. 前往 MCS Lite
+msgid "前往 MCS Lite"
+msgstr ""
+
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+#. [DialogConfirm.cancel]
+#. defaultMessage is:
+#. 取消
+msgid "取消"
+msgstr ""
+
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+#. [DashboardLayout.start]
+#. defaultMessage is:
+#. 啟動
+msgid "啟動"
+msgstr ""
+
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+#. [Signin.password]
+#. defaultMessage is:
+#. 密碼
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+#. [Signup.password]
+#. defaultMessage is:
+#. 密碼
+msgid "密碼"
+msgstr ""
+
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+#. [Signup.lengthError]
+#. defaultMessage is:
+#. 密碼長度需要長於 8 個字元
+msgid "密碼長度需要長於 8 個字元"
+msgstr ""
+
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+#. [Signup.createAdminAccount]
+#. defaultMessage is:
+#. 建立管理者帳戶
+msgid "建立管理者帳戶"
+msgstr ""
+
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+#. [System.reset.success]
+#. defaultMessage is:
+#. 成功！系統已重置，請重新登入。
+msgid "成功！系統已重置，請重新登入。"
+msgstr ""
+
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+#. [Signup.password2.error]
+#. defaultMessage is:
+#. 新密碼和確認密碼不一致
+msgid "新密碼和確認密碼不一致"
+msgstr ""
+
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+#. [System.reset.confirm]
+#. defaultMessage is:
+#. 是否確定重置系統？
+msgid "是否確定重置系統？"
+msgstr ""
+
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+#. [Signup.userName]
+#. defaultMessage is:
+#. 暱稱
+msgid "暱稱"
+msgstr ""
+
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+#. [Ip.serviceIpAddress]
+#. defaultMessage is:
+#. 服務器 IP 位址
+msgid "服務器 IP 位址"
+msgstr ""
+
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+#. [Signin.welcome]
+#. defaultMessage is:
+#. 歡迎
+msgid "歡迎"
+msgstr ""
+
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+#. [DialogConfirm.notice] - For Dialog Header
+#. defaultMessage is:
+#. 注意！
+msgid "注意！"
+msgstr ""
+
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+#. [DashboardLayout.versionCheck]
+#. defaultMessage is:
+#. 版本更新檢查
+msgid "版本更新檢查"
+msgstr ""
+
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+#. [Signin.signin] - Document Title
+#. defaultMessage is:
+#. 登入
+msgid "登入"
+msgstr ""
+
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+#. [DashboardLayout.signoutService]
+#. defaultMessage is:
+#. 登出服務
+msgid "登出服務"
+msgstr ""
+
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+#. [Ip.na]
+#. defaultMessage is:
+#. 目前尚無可連線的服務，請先啟動本服務。
+msgid "目前尚無可連線的服務，請先啟動本服務。"
+msgstr ""
+
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+#. [DialogConfirm.confirm]
+#. defaultMessage is:
+#. 確定
+msgid "確定"
+msgstr ""
+
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+#. [DashboardLayout.confirm]
+#. defaultMessage is:
+#. 確定要登出？
+msgid "確定要登出？"
+msgstr ""
+
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+#. [Signup.password2]
+#. defaultMessage is:
+#. 確認您的密碼
+msgid "確認您的密碼"
+msgstr ""
+
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+#. [DashboardLayout.systemManagement]
+#. defaultMessage is:
+#. 系統管理
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+#. [System.systemManagement] - Meta/Title
+#. defaultMessage is:
+#. 系統管理
+msgid "系統管理"
+msgstr ""
+
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+#. [System.reset]
+#. defaultMessage is:
+#. 系統重置
+msgid "系統重置"
+msgstr ""
+
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+#. [Signup.signup] - Document Title
+#. defaultMessage is:
+#. 註冊
+msgid "註冊"
+msgstr ""

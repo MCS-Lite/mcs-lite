@@ -1,352 +1,352 @@
 msgid ""
 msgstr ""
-"POT-Creation-Date: 2017-04-19T05:40:21.510Z\n"
+"POT-Creation-Date: 2017-06-07T12:29:29.139Z\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "MIME-Version: 1.0\n"
 "X-Generator: react-intl-po\n"
 
 
-#: ./messages.json
+#: ../mcs-lite-translation/src/mcs-lite-mobile-web/messages.json
 #. [App.titleTemplate] - For document title
 #. defaultMessage is:
 #. MCS Lite Mobile
 msgid "MCS Lite Mobile"
 msgstr ""
 
-#: ./messages.json
+#: ../mcs-lite-translation/src/mcs-lite-mobile-web/messages.json
 #. [DeviceTrigger.off]
 #. defaultMessage is:
 #. OFF
 msgid "OFF"
 msgstr ""
 
-#: ./messages.json
+#: ../mcs-lite-translation/src/mcs-lite-mobile-web/messages.json
 #. [DeviceTrigger.on]
 #. defaultMessage is:
 #. ON
 msgid "ON"
 msgstr ""
 
-#: ./messages.json
+#: ../mcs-lite-translation/src/mcs-lite-mobile-web/messages.json
 #. [DeviceTriggerEdit.between]
 #. defaultMessage is:
 #. 之間
 msgid "之間"
 msgstr ""
 
-#: ./messages.json
+#: ../mcs-lite-translation/src/mcs-lite-mobile-web/messages.json
 #. [WebSocketNotification.info] - Error message
 #. defaultMessage is:
 #. 伺服器連線異常，目前無法即時上傳與接收資料，是否要重新連線？
 msgid "伺服器連線異常，目前無法即時上傳與接收資料，是否要重新連線？"
 msgstr ""
 
-#: ./messages.json
+#: ../mcs-lite-translation/src/mcs-lite-mobile-web/messages.json
 #. [Password.changePassword] - Title
 #. defaultMessage is:
 #. 修改密碼
 msgid "修改密碼"
 msgstr ""
 
-#: ./messages.json
+#: ../mcs-lite-translation/src/mcs-lite-mobile-web/messages.json
 #. [DeviceTriggerEdit.save]
 #. defaultMessage is:
 #. 儲存
-#: ./messages.json
+#: ../mcs-lite-translation/src/mcs-lite-mobile-web/messages.json
 #. [Password.save]
 #. defaultMessage is:
 #. 儲存
 msgid "儲存"
 msgstr ""
 
-#: ./messages.json
+#: ../mcs-lite-translation/src/mcs-lite-mobile-web/messages.json
 #. [Password.newPasswordAgain.placeholder] - Placeholder
 #. defaultMessage is:
 #. 再次輸入新密碼
 msgid "再次輸入新密碼"
 msgstr ""
 
-#: ./messages.json
+#: ../mcs-lite-translation/src/mcs-lite-mobile-web/messages.json
 #. [DeviceDataChannelTimeRange.to]
 #. defaultMessage is:
 #. 到
 msgid "到"
 msgstr ""
 
-#: ./messages.json
+#: ../mcs-lite-translation/src/mcs-lite-mobile-web/messages.json
 #. [DeviceDetailInfo.creator]
 #. defaultMessage is:
 #. 創建者
 msgid "創建者"
 msgstr ""
 
-#: ./messages.json
+#: ../mcs-lite-translation/src/mcs-lite-mobile-web/messages.json
 #. [DeviceDataChannelTimeRange.cancel]
 #. defaultMessage is:
 #. 取消
-#: ./messages.json
+#: ../mcs-lite-translation/src/mcs-lite-mobile-web/messages.json
 #. [DeviceTriggerEdit.cancel]
 #. defaultMessage is:
 #. 取消
-#: ./messages.json
+#: ../mcs-lite-translation/src/mcs-lite-mobile-web/messages.json
 #. [Password.cancel]
 #. defaultMessage is:
 #. 取消
 msgid "取消"
 msgstr ""
 
-#: ./messages.json
+#: ../mcs-lite-translation/src/mcs-lite-mobile-web/messages.json
 #. [DeviceTriggerEdit.and]
 #. defaultMessage is:
 #. 和
 msgid "和"
 msgstr ""
 
-#: ./messages.json
+#: ../mcs-lite-translation/src/mcs-lite-mobile-web/messages.json
 #. [DeviceTriggerEdit.unit]
 #. defaultMessage is:
 #. 單位：
 msgid "單位："
 msgstr ""
 
-#: ./messages.json
+#: ../mcs-lite-translation/src/mcs-lite-mobile-web/messages.json
 #. [DeviceDataChannelDetail.reset] - reset for history query
 #. defaultMessage is:
 #. 回復預設值
 msgid "回復預設值"
 msgstr ""
 
-#: ./messages.json
+#: ../mcs-lite-translation/src/mcs-lite-mobile-web/messages.json
 #. [DeviceTriggerEdit.greater]
 #. defaultMessage is:
 #. 大於
 msgid "大於"
 msgstr ""
 
-#: ./messages.json
+#: ../mcs-lite-translation/src/mcs-lite-mobile-web/messages.json
 #. [Signin.password]
 #. defaultMessage is:
 #. 密碼
 msgid "密碼"
 msgstr ""
 
-#: ./messages.json
+#: ../mcs-lite-translation/src/mcs-lite-mobile-web/messages.json
 #. [Password.lengthError]
 #. defaultMessage is:
 #. 密碼長度需要長於 8 個字元
 msgid "密碼長度需要長於 8 個字元"
 msgstr ""
 
-#: ./messages.json
+#: ../mcs-lite-translation/src/mcs-lite-mobile-web/messages.json
 #. [DeviceDataChannelDetail.noData] - No Data avaliable for history
 #. defaultMessage is:
 #. 尚無資料
 msgid "尚無資料"
 msgstr ""
 
-#: ./messages.json
+#: ../mcs-lite-translation/src/mcs-lite-mobile-web/messages.json
 #. [Account.account] - Title
 #. defaultMessage is:
 #. 帳戶
 msgid "帳戶"
 msgstr ""
 
-#: ./messages.json
+#: ../mcs-lite-translation/src/mcs-lite-mobile-web/messages.json
 #. [Signin.email]
 #. defaultMessage is:
 #. 帳號
 msgid "帳號"
 msgstr ""
 
-#: ./messages.json
+#: ../mcs-lite-translation/src/mcs-lite-mobile-web/messages.json
 #. [DeviceDataChannelTimeRange.from]
 #. defaultMessage is:
 #. 從
 msgid "從"
 msgstr ""
 
-#: ./messages.json
+#: ../mcs-lite-translation/src/mcs-lite-mobile-web/messages.json
 #. [Password.success] - Toast
 #. defaultMessage is:
 #. 成功！你已經成功修改密碼。
 msgid "成功！你已經成功修改密碼。"
 msgstr ""
 
-#: ./messages.json
+#: ../mcs-lite-translation/src/mcs-lite-mobile-web/messages.json
 #. [Account.myTestDevices]
 #. defaultMessage is:
 #. 我的測試裝置
-#: ./messages.json
+#: ../mcs-lite-translation/src/mcs-lite-mobile-web/messages.json
 #. [DeviceList.myTestDevices] - Title
 #. defaultMessage is:
 #. 我的測試裝置
 msgid "我的測試裝置"
 msgstr ""
 
-#: ./messages.json
+#: ../mcs-lite-translation/src/mcs-lite-mobile-web/messages.json
 #. [DeviceDetailInfo.description]
 #. defaultMessage is:
 #. 描述
 msgid "描述"
 msgstr ""
 
-#: ./messages.json
+#: ../mcs-lite-translation/src/mcs-lite-mobile-web/messages.json
 #. [DeviceList.search]
 #. defaultMessage is:
 #. 搜尋
 msgid "搜尋"
 msgstr ""
 
-#: ./messages.json
+#: ../mcs-lite-translation/src/mcs-lite-mobile-web/messages.json
 #. [DeviceDataChannelTimeRange.searchTimeRange] - title
 #. defaultMessage is:
 #. 搜尋時間區間
 msgid "搜尋時間區間"
 msgstr ""
 
-#: ./messages.json
+#: ../mcs-lite-translation/src/mcs-lite-mobile-web/messages.json
 #. [Password.newPassword.label] - Label
 #. defaultMessage is:
 #. 新密碼
 msgid "新密碼"
 msgstr ""
 
-#: ./messages.json
+#: ../mcs-lite-translation/src/mcs-lite-mobile-web/messages.json
 #. [Password.newPasswordAgain.error]
 #. defaultMessage is:
 #. 新密碼和確認密碼不一致
 msgid "新密碼和確認密碼不一致"
 msgstr ""
 
-#: ./messages.json
+#: ../mcs-lite-translation/src/mcs-lite-mobile-web/messages.json
 #. [Account.changePassword]
 #. defaultMessage is:
 #. 更改密碼
 msgid "更改密碼"
 msgstr ""
 
-#: ./messages.json
+#: ../mcs-lite-translation/src/mcs-lite-mobile-web/messages.json
 #. [Signin.welcome]
 #. defaultMessage is:
 #. 歡迎
 msgid "歡迎"
 msgstr ""
 
-#: ./messages.json
+#: ../mcs-lite-translation/src/mcs-lite-mobile-web/messages.json
 #. [DeviceDataChannelDetail.historyChart]
 #. defaultMessage is:
 #. 歷史資料圖表
 msgid "歷史資料圖表"
 msgstr ""
 
-#: ./messages.json
+#: ../mcs-lite-translation/src/mcs-lite-mobile-web/messages.json
 #. [DeviceDetail.deviceIntro] - dropdown
 #. defaultMessage is:
 #. 測試裝置介紹
-#: ./messages.json
+#: ../mcs-lite-translation/src/mcs-lite-mobile-web/messages.json
 #. [DeviceDetailInfo.deviceIntro] - Title
 #. defaultMessage is:
 #. 測試裝置介紹
 msgid "測試裝置介紹"
 msgstr ""
 
-#: ./messages.json
+#: ../mcs-lite-translation/src/mcs-lite-mobile-web/messages.json
 #. [DeviceDetailInfo.version]
 #. defaultMessage is:
 #. 版本
 msgid "版本"
 msgstr ""
 
-#: ./messages.json
+#: ../mcs-lite-translation/src/mcs-lite-mobile-web/messages.json
 #. [Signin.signin] - Document Title
 #. defaultMessage is:
 #. 登入
 msgid "登入"
 msgstr ""
 
-#: ./messages.json
+#: ../mcs-lite-translation/src/mcs-lite-mobile-web/messages.json
 #. [Account.signout]
 #. defaultMessage is:
 #. 登出
 msgid "登出"
 msgstr ""
 
-#: ./messages.json
+#: ../mcs-lite-translation/src/mcs-lite-mobile-web/messages.json
 #. [DeviceList.noDevice]
 #. defaultMessage is:
 #. 目前還沒有任何測試裝置
 msgid "目前還沒有任何測試裝置"
 msgstr ""
 
-#: ./messages.json
+#: ../mcs-lite-translation/src/mcs-lite-mobile-web/messages.json
 #. [Account.confirm]
 #. defaultMessage is:
 #. 確定要登出？
 msgid "確定要登出？"
 msgstr ""
 
-#: ./messages.json
+#: ../mcs-lite-translation/src/mcs-lite-mobile-web/messages.json
 #. [DeviceDataChannelTimeRange.save]
 #. defaultMessage is:
 #. 確認
 msgid "確認"
 msgstr ""
 
-#: ./messages.json
+#: ../mcs-lite-translation/src/mcs-lite-mobile-web/messages.json
 #. [Password.newPasswordAgain] - Label
 #. defaultMessage is:
 #. 確認密碼
 msgid "確認密碼"
 msgstr ""
 
-#: ./messages.json
+#: ../mcs-lite-translation/src/mcs-lite-mobile-web/messages.json
 #. [DeviceTriggerEdit.editTriggerAndAction] - Title
 #. defaultMessage is:
 #. 編輯觸發條件與動作
 msgid "編輯觸發條件與動作"
 msgstr ""
 
-#: ./messages.json
+#: ../mcs-lite-translation/src/mcs-lite-mobile-web/messages.json
 #. [DeviceDetailInfo.deviceName]
 #. defaultMessage is:
 #. 裝置名稱
 msgid "裝置名稱"
 msgstr ""
 
-#: ./messages.json
+#: ../mcs-lite-translation/src/mcs-lite-mobile-web/messages.json
 #. [DeviceDetail.triggerAndAction] - dropdown
 #. defaultMessage is:
 #. 觸發條件與動作
-#: ./messages.json
+#: ../mcs-lite-translation/src/mcs-lite-mobile-web/messages.json
 #. [DeviceTrigger.triggerAndAction] - Title
 #. defaultMessage is:
 #. 觸發條件與動作
 msgid "觸發條件與動作"
 msgstr ""
 
-#: ./messages.json
+#: ../mcs-lite-translation/src/mcs-lite-mobile-web/messages.json
 #. [DeviceDataChannelDetail.dataChannelDetail]
 #. defaultMessage is:
 #. 資料通道詳情
 msgid "資料通道詳情"
 msgstr ""
 
-#: ./messages.json
+#: ../mcs-lite-translation/src/mcs-lite-mobile-web/messages.json
 #. [Password.newPassword.placeholder] - Placeholder
 #. defaultMessage is:
 #. 輸入新密碼
 msgid "輸入新密碼"
 msgstr ""
 
-#: ./messages.json
+#: ../mcs-lite-translation/src/mcs-lite-mobile-web/messages.json
 #. [WebSocketNotification.reconnect] - For button content
 #. defaultMessage is:
 #. 重新連線
 msgid "重新連線"
 msgstr ""
 
-#: ./messages.json
+#: ../mcs-lite-translation/src/mcs-lite-mobile-web/messages.json
 #. [DeviceDataChannelDetail.defaultQueryLatest] - label hint
 #. defaultMessage is:
 #. 預設值為顯示最新100筆資料
