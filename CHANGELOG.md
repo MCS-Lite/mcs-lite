@@ -1,5 +1,47 @@
 # MCS Lite changelogs
 
+## Released (2017-06-08)
+
+#### :rocket: New Feature
+* `mcs-lite-admin-web`, `mcs-lite-mobile-web`, `mcs-lite-scripts`, `mcs-lite-translation`
+  * [#348](https://github.com/MCS-Lite/mcs-lite/pull/348) feat(I18n): add new mcs-lite-translation project & update mcs-lite-script which creating empty directory. ([@evenchange4](https://github.com/evenchange4))
+
+##### For more detail, please read [I18n workflow](https://github.com/MCS-Lite/mcs-lite/blob/master/docs/README.md#i18n-workflow).
+
+##### react-intl-cra:
+  
+    ```
+    # Before:
+    $ react-intl-cra './src/**/*.js' './messages.json'
+    # After:
+    $ react-intl-cra './src/**/*.js' './path/to/messages.json'
+    ```
+  
+* `mcs-lite-admin-web`, `mcs-lite-ui`
+  * [#345](https://github.com/MCS-Lite/mcs-lite/pull/345) feat(Admin/UI): add new reset feature & New Panel Component. ([@evenchange4](https://github.com/evenchange4))
+
+  Also, fix(UI/Dialog): use clickoutside & update center style
+
+#### :bug: Bug Fix
+* `babel-preset-mcs-lite`, `mcs-lite-admin-web`, `mcs-lite-connect`, `mcs-lite-mobile-web`, `mcs-lite-ui`, `react-intl-inject-hoc`
+  * [#349](https://github.com/MCS-Lite/mcs-lite/pull/349) fix(stylis): update styled-componets to 2.0.1 and stylis 3 & remove placeholder css. ([@evenchange4](https://github.com/evenchange4))
+* `mcs-lite-admin-web`, `mcs-lite-mobile-web`, `mcs-lite-scripts`, `mcs-lite-ui`
+  * [#347](https://github.com/MCS-Lite/mcs-lite/pull/347) fix(prop-types): update node. ([@evenchange4](https://github.com/evenchange4))
+  
+  ```js
+  component: PropTypes.oneOfType([PropTypes.func, PropTypes.string]).isRequired,
+  children: PropTypes.node,
+  ```
+
+#### :house: Internal
+* `mcs-lite-admin-web`, `mcs-lite-mobile-web`
+  * [#346](https://github.com/MCS-Lite/mcs-lite/pull/346) refactor(Routing-Cycle): update localCycle. ([@evenchange4](https://github.com/evenchange4))
+
+#### Committers: 1
+- Michael Hsu ([evenchange4](https://github.com/evenchange4))
+
+----
+
 ## Released (2017-06-05)
 
 ### Bump Versions
