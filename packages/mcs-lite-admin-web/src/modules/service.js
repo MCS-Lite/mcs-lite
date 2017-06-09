@@ -1,6 +1,6 @@
 import { Observable } from 'rxjs/Observable';
-import R from 'ramda';
 import { actions as uiActions } from './ui';
+import { success, accessTokenSelector$ } from '../utils/cycleHelper';
 
 // ----------------------------------------------------------------------------
 // 1. Constants
@@ -24,7 +24,10 @@ export const constants = {
 
 const start = () => ({ type: START });
 const stop = () => ({ type: STOP });
-const setIsStarted = payload => ({ type: SET_IS_STARTED, payload });
+const setIsStarted = isStarted => ({
+  type: SET_IS_STARTED,
+  payload: isStarted,
+});
 const clear = () => ({ type: CLEAR });
 
 export const actions = {
@@ -39,10 +42,7 @@ export const actions = {
 // ----------------------------------------------------------------------------
 
 function startCycle(sources) {
-  const accessToken$ = sources.STATE
-    .pluck('auth', 'access_token')
-    .filter(R.complement(R.isNil)) // Hint: will wait for accessToken avaliable.
-    .distinctUntilChanged(); // Remind: Avoid loop
+  const accessToken$ = accessTokenSelector$(sources.STATE);
 
   const request$ = sources.ACTION
     .filter(action => action.type === START)
@@ -53,12 +53,12 @@ function startCycle(sources) {
       category: START,
     }));
 
-  const response$ = sources.HTTP.select(START).switch();
+  const successRes$ = sources.HTTP.select(START).switchMap(success);
 
   const action$ = Observable.from([
     request$.mapTo(uiActions.setLoading()),
-    response$.pluck('text').mapTo(setIsStarted(true)),
-    response$.mapTo(uiActions.setLoaded()),
+    successRes$.pluck('text').mapTo(setIsStarted(true)),
+    successRes$.mapTo(uiActions.setLoaded()),
   ]).mergeAll();
 
   return {
@@ -68,10 +68,7 @@ function startCycle(sources) {
 }
 
 function stopCycle(sources) {
-  const accessToken$ = sources.STATE
-    .pluck('auth', 'access_token')
-    .filter(R.complement(R.isNil)) // Hint: will wait for accessToken avaliable.
-    .distinctUntilChanged(); // Remind: Avoid loop
+  const accessToken$ = accessTokenSelector$(sources.STATE);
 
   const request$ = sources.ACTION
     .filter(action => action.type === STOP)
@@ -82,12 +79,12 @@ function stopCycle(sources) {
       category: STOP,
     }));
 
-  const response$ = sources.HTTP.select(STOP).switch();
+  const successRes$ = sources.HTTP.select(STOP).switchMap(success);
 
   const action$ = Observable.from([
     request$.mapTo(uiActions.setLoading()),
-    response$.pluck('text').mapTo(setIsStarted(false)),
-    response$.mapTo(uiActions.setLoaded()),
+    successRes$.mapTo(setIsStarted(false)),
+    successRes$.mapTo(uiActions.setLoaded()),
   ]).mergeAll();
 
   return {

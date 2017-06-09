@@ -2,12 +2,12 @@
 /* eslint no-alert: 0 */
 
 import { Observable } from 'rxjs/Observable';
-import R from 'ramda';
 import { push } from 'react-router-redux';
 import { actions as ipsActions } from './ips';
 import { actions as systemActions } from './system';
 import { actions as uiActions } from './ui';
 import cookieHelper from '../utils/cookieHelper';
+import { success, failure } from '../utils/cycleHelper';
 
 // ----------------------------------------------------------------------------
 // 1. Constants
@@ -16,7 +16,6 @@ import cookieHelper from '../utils/cookieHelper';
 const REQUIRE_AUTH = 'mcs-lite-admin-web/auth/REQUIRE_AUTH';
 const TRY_ENTER = 'mcs-lite-admin-web/auth/TRY_ENTER';
 const SIGNOUT = 'mcs-lite-admin-web/auth/SIGNOUT';
-const CHANGE_PASSWORD = 'mcs-lite-admin-web/auth/CHANGE_PASSWORD';
 const SET_USERINFO = 'mcs-lite-admin-web/auth/SET_USERINFO';
 const CLEAR = 'mcs-lite-admin-web/auth/CLEAR';
 
@@ -24,7 +23,6 @@ export const constants = {
   REQUIRE_AUTH,
   TRY_ENTER,
   SIGNOUT,
-  CHANGE_PASSWORD,
   SET_USERINFO,
   CLEAR,
 };
@@ -35,15 +33,11 @@ export const constants = {
 
 const requireAuth = () => ({ type: REQUIRE_AUTH });
 const tryEnter = () => ({ type: TRY_ENTER });
-const signout = (message, isForce) => ({
+const signout = (confirmMessage, isForce) => ({
   type: SIGNOUT,
-  payload: { message, isForce },
+  payload: { message: confirmMessage, isForce },
 });
-const setUserInfo = payload => ({ type: SET_USERINFO, payload });
-const changePassword = ({ password, message }) => ({
-  type: CHANGE_PASSWORD,
-  payload: { password, message },
-});
+const setUserInfo = userData => ({ type: SET_USERINFO, payload: userData });
 const clear = () => ({ type: CLEAR });
 
 export const actions = {
@@ -51,7 +45,6 @@ export const actions = {
   tryEnter,
   signout,
   setUserInfo,
-  changePassword,
   clear,
 };
 
@@ -68,19 +61,12 @@ function requireAuthCycle(sources) {
     url: '/oauth/cookies',
     method: 'POST',
     send: { token: cookieToken },
-    category: 'user',
+    category: REQUIRE_AUTH,
   }));
 
-  const response$ = sources.HTTP.select('user').switch();
+  const successRes$ = sources.HTTP.select(REQUIRE_AUTH).switchMap(success);
 
-  const action$ = response$
-    .pluck('body', 'results')
-    .map(setUserInfo)
-    // TODO: Should I catch response$ error here ?
-    .catch(error => {
-      console.error({ error }); // eslint-disable-line
-      return Observable.empty();
-    });
+  const action$ = successRes$.pluck('body', 'results').map(setUserInfo);
 
   return {
     ACTION: action$,
@@ -129,58 +115,26 @@ function signoutCycle(sources) {
   };
 }
 
-function changePasswordCycle(sources) {
-  const accessToken$ = sources.STATE
-    .pluck('auth', 'access_token')
-    .filter(d => !!d)
-    .distinctUntilChanged();
+function httpErrorCycle(sources) {
+  // Remind: handle all http errors here
+  const failureRes$ = sources.HTTP
+    .select()
+    .switchMap(failure)
+    .pluck('response')
+    .do(response => console.log('httpErrorCycle', response)); // eslint-disable-line
 
-  const payload$ = sources.ACTION
-    .filter(action => action.type === CHANGE_PASSWORD)
-    .pluck('payload');
+  const action$ = failureRes$.concatMap(({ status, statusText }) => {
+    const shouldSignout = status === 401;
 
-  const password$ = payload$.pluck('password');
-  const message$ = payload$.pluck('message');
-
-  const request$ = password$
-    .withLatestFrom(accessToken$)
-    .map(([password, accessToken]) => ({
-      url: '/api/users/changepassword',
-      method: 'PUT',
-      headers: { Authorization: `Bearer ${accessToken}` },
-      send: { password },
-      category: 'changePassword',
-    }));
-
-  const response$ = sources.HTTP.select('changePassword').switch();
-
-  const action$ = response$.withLatestFrom(message$).map(([, message]) =>
-    uiActions.addToast({
-      kind: 'success',
-      children: message,
-    }),
-  );
-
-  return {
-    ACTION: action$,
-    HTTP: request$,
-  };
-}
-
-function authErrorCycle(sources) {
-  const errorMessage$ = sources.HTTP
-    .select() // TODO: Should I use .select('user') ?
-    .switch()
-    .pluck('ok')
-    .filter(R.not)
-    .catch(({ response }) => Observable.of(response.body.message));
-
-  const action$ = errorMessage$.concatMap(message =>
-    Observable.of(
-      uiActions.addToast({ kind: 'error', children: message }),
-      signout('', true), // Remind: Force signout
-    ),
-  );
+    return Observable.of(
+      uiActions.addToast({
+        kind: 'error',
+        children: ` (${status} ${statusText})`,
+      }),
+      uiActions.setLoaded(), // Hint: set loading anyway
+      shouldSignout ? signout('', true) : {}, // Remind: Force signout
+    );
+  });
 
   return {
     ACTION: action$,
@@ -191,8 +145,7 @@ export const cycles = {
   requireAuthCycle,
   tryEnterCycle,
   signoutCycle,
-  changePasswordCycle,
-  authErrorCycle,
+  httpErrorCycle,
 };
 
 // ----------------------------------------------------------------------------

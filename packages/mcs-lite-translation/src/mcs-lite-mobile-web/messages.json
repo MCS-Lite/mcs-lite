@@ -44,6 +44,12 @@
     "filepath": "src/containers/App/messages.js"
   },
   {
+    "id": "App.gerenalError",
+    "description": "With HTTP error status code 401/500",
+    "defaultMessage": "我們目前無法處理您的請求。請稍後再試。",
+    "filepath": "src/containers/App/messages.js"
+  },
+  {
     "id": "DeviceDataChannelDetail.dataChannelDetail",
     "defaultMessage": "資料通道詳情",
     "filepath": "src/containers/DeviceDataChannelDetail/messages.js"

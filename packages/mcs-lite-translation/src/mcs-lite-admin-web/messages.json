@@ -22,6 +22,12 @@
     "filepath": "src/containers/App/messages.js"
   },
   {
+    "id": "App.gerenalError",
+    "description": "With HTTP error status code 401/500",
+    "defaultMessage": "我們目前無法處理您的請求。請稍後再試。",
+    "filepath": "src/containers/App/messages.js"
+  },
+  {
     "id": "DashboardLayout.start",
     "defaultMessage": "啟動",
     "filepath": "src/containers/DashboardLayout/messages.js"
@@ -165,6 +171,11 @@
   {
     "id": "System.save",
     "defaultMessage": "儲存",
+    "filepath": "src/containers/System/messages.js"
+  },
+  {
+    "id": "System.save.success",
+    "defaultMessage": "成功！系統的參數設定已更新。",
     "filepath": "src/containers/System/messages.js"
   },
   {

@@ -2,6 +2,11 @@
 
 exports[`should return messages 1`] = `
 Object {
+  "App.gerenalError": Object {
+    "defaultMessage": "我們目前無法處理您的請求。請稍後再試。",
+    "description": "With HTTP error status code 401/500",
+    "id": "App.gerenalError",
+  },
   "App.titleTemplate": Object {
     "defaultMessage": "MCS Lite Mobile",
     "description": "For document title",

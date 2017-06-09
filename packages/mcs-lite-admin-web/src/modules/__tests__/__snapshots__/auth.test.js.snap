@@ -2,22 +2,11 @@
 
 exports[`auth - 1. Constants should return constants 1`] = `
 Object {
-  "CHANGE_PASSWORD": "mcs-lite-admin-web/auth/CHANGE_PASSWORD",
   "CLEAR": "mcs-lite-admin-web/auth/CLEAR",
   "REQUIRE_AUTH": "mcs-lite-admin-web/auth/REQUIRE_AUTH",
   "SET_USERINFO": "mcs-lite-admin-web/auth/SET_USERINFO",
   "SIGNOUT": "mcs-lite-admin-web/auth/SIGNOUT",
   "TRY_ENTER": "mcs-lite-admin-web/auth/TRY_ENTER",
-}
-`;
-
-exports[`auth - 2. Action Creators should return changePassword actions 1`] = `
-Object {
-  "payload": Object {
-    "message": undefined,
-    "password": undefined,
-  },
-  "type": "mcs-lite-admin-web/auth/CHANGE_PASSWORD",
 }
 `;
 

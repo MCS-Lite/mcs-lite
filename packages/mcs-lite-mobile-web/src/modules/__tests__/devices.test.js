@@ -61,7 +61,7 @@ describe('devices - 3. Cycle', () => {
         url: '/api/devices',
         method: 'GET',
         headers: { Authorization: 'Bearer faketoken123' },
-        category: 'devices',
+        category: constants.FETCH_DEVICE_LIST,
       },
     };
 
@@ -99,7 +99,7 @@ describe('devices - 3. Cycle', () => {
         url: '/api/devices/fakedeviceid123',
         method: 'GET',
         headers: { Authorization: 'Bearer faketoken456' },
-        category: 'deviceDetail',
+        category: constants.FETCH_DEVICE_DETAIL,
       },
     };
 

@@ -36,7 +36,12 @@ const App = ({ toasts, isLoading, children, getMessages: t }) =>
             appear={{ opacity: 0.8, translateY: -20 }}
             enter={{ opacity: 1, translateY: 0 }}
           >
-            {toasts.map(toast => <MLToast key={toast.key} {...toast} />)}
+            {toasts.map(({ key, kind, children: toastChildren }) =>
+              <MLToast key={key} kind={kind}>
+                {kind === 'error' && t('gerenalError')}
+                {toastChildren}
+              </MLToast>,
+            )}
           </Transition>
         </Fixed>
       </Portal>}
