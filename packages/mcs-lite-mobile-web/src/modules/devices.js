@@ -32,8 +32,14 @@ const fetchDeviceDetail = (deviceId, isForce) => ({
   type: FETCH_DEVICE_DETAIL,
   payload: { deviceId, isForce },
 });
-const setDeviceList = payload => ({ type: SET_DEVICE_LIST, payload });
-const setDeviceDetail = payload => ({ type: SET_DEVICE_DETAIL, payload });
+const setDeviceList = deviceList => ({
+  type: SET_DEVICE_LIST,
+  payload: deviceList,
+});
+const setDeviceDetail = deviceData => ({
+  type: SET_DEVICE_DETAIL,
+  payload: deviceData,
+});
 const setDatapoint = (deviceId, datapoint, isFromServer) => ({
   type: SET_DATAPOINT,
   payload: { deviceId, datapoint, isFromServer },
