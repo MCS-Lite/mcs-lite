@@ -18,6 +18,3 @@
 flow-typed
 
 [options]
-
-# TODO: https://github.com/styled-components/styled-components/issues/458
-unsafe.enable_getters_and_setters=true
