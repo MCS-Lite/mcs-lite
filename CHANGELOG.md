@@ -1,5 +1,24 @@
 # MCS Lite changelogs
 
+## Released (2017-06-09)
+
+#### :rocket: New Feature
+* `mcs-lite-translation`
+  * [#351](https://github.com/MCS-Lite/mcs-lite/pull/351) feat(i18n): add zh-TW & ignore .mo. ([@evenchange4](https://github.com/evenchange4))
+
+#### :nail_care: Enhancement
+* `mcs-lite-translation`
+  * [#352](https://github.com/MCS-Lite/mcs-lite/pull/352) feat(i18N): provide the translation strings for zh-CN and en.. ([@dariachen](https://github.com/dariachen))
+
+#### :memo: Documentation
+* [#350](https://github.com/MCS-Lite/mcs-lite/pull/350) docs(README): update developer guide. ([@evenchange4](https://github.com/evenchange4))
+
+#### Committers: 2
+- Daria Chen ([dariachen](https://github.com/dariachen))
+- Michael Hsu ([evenchange4](https://github.com/evenchange4))
+
+----
+
 ## Released (2017-06-08)
 
 ### Bump Versions
