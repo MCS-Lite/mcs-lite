@@ -28,7 +28,7 @@
     "test:watch": "react-scripts test --env=jsdom",
     "extract:messages": "react-intl-cra 'src/**/*.js' '../mcs-lite-translation/src/mcs-lite-admin-web/messages.json'",
     "extract:pot": "react-intl-po json2pot '../mcs-lite-translation/src/mcs-lite-admin-web/messages.json' -o '../mcs-lite-translation/src/mcs-lite-admin-web/messages.pot'",
-    "prepack": "npm run build && rm -rf ./build/static/*/*.map"
+    "prepack": "npm run build"
   },
   "devDependencies": {
     "@cycle/http": "^13.3.0",
