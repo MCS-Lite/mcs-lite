@@ -2,6 +2,14 @@
 
 ## Released (2017-06-09)
 
+### Bump Versions
+
+-   mcs-lite-admin-web: 0.1.1 => 0.1.2
+-   mcs-lite-mobile-web: 0.4.3 => 0.4.4
+-   mcs-lite-translation: 0.1.0 => 0.1.1
+
+*Multiple language support! 💯*
+
 #### :rocket: New Feature
 * `mcs-lite-translation`
   * [#351](https://github.com/MCS-Lite/mcs-lite/pull/351) feat(i18n): add zh-TW & ignore .mo. ([@evenchange4](https://github.com/evenchange4))
