@@ -3,6 +3,7 @@ import R from 'ramda';
 import isJSON from 'validator/lib/isJSON';
 import { actions as uiActions } from './ui';
 import { actions as authActions } from './auth';
+import { success, accessTokenSelector$ } from '../utils/cycleHelper';
 
 // ----------------------------------------------------------------------------
 // 1. Constants
@@ -27,13 +28,13 @@ export const constants = {
 // ----------------------------------------------------------------------------
 
 const fetchSystemByType = payload => ({ type: FETCH_SYSTEM_BY_TYPE, payload });
-const uploadSystemByType = payload => ({
+const uploadSystemByType = (type, message) => ({
   type: UPLOAD_SYSTEM_BY_TYPE,
-  payload,
+  payload: { type, message },
 });
-const postReset = payload => ({
+const postReset = successMessage => ({
   type: POST_RESET,
-  payload,
+  payload: successMessage,
 });
 const setSystemByType = ({ data, type }) => ({
   type: SET_SYSTEM_BY_TYPE,
@@ -54,31 +55,31 @@ export const actions = {
 // ----------------------------------------------------------------------------
 
 function fetchSystemByTypeCycle(sources) {
-  const accessToken$ = sources.STATE
-    .pluck('auth', 'access_token')
-    .filter(R.complement(R.isNil)) // Hint: will wait for accessToken avaliable.
-    .distinctUntilChanged(); // Remind: Avoid loop
-
-  const request$ = sources.ACTION
+  const accessToken$ = accessTokenSelector$(sources.STATE);
+  const type$ = sources.ACTION
     .filter(action => action.type === FETCH_SYSTEM_BY_TYPE)
-    .distinctUntilKeyChanged('payload')
-    .combineLatest(accessToken$, (action, accessToken) => ({
-      url: `/api/service/${action.payload}`,
-      method: 'GET',
-      headers: { Authorization: `Bearer ${accessToken}` },
-      category: FETCH_SYSTEM_BY_TYPE,
-    }));
+    .pluck('payload')
+    .distinctUntilChanged();
 
-  const response$ = sources.HTTP.select(FETCH_SYSTEM_BY_TYPE).switch();
+  const request$ = type$.combineLatest(accessToken$, (type, accessToken) => ({
+    url: `/api/service/${type}`,
+    method: 'GET',
+    headers: { Authorization: `Bearer ${accessToken}` },
+    category: FETCH_SYSTEM_BY_TYPE,
+  }));
+
+  const successRes$ = sources.HTTP
+    .select(FETCH_SYSTEM_BY_TYPE)
+    .switchMap(success);
 
   // Remind: api response with type(settingId) will be better.
-  const responseType$ = response$
+  const responseType$ = successRes$
     .pluck('request', 'url')
     .map(R.pipe(R.match(/[\w]+$/), R.head));
 
   const action$ = Observable.from([
     request$.mapTo(uiActions.setLoading()),
-    response$
+    successRes$
       .pluck('body', 'data')
       .map(data => JSON.stringify(data, null, '\t'))
       .zip(responseType$, (data, type) => ({
@@ -86,7 +87,7 @@ function fetchSystemByTypeCycle(sources) {
         type,
       }))
       .map(setSystemByType),
-    response$.mapTo(uiActions.setLoaded()),
+    successRes$.mapTo(uiActions.setLoaded()),
   ]).mergeAll();
 
   return {
@@ -96,16 +97,14 @@ function fetchSystemByTypeCycle(sources) {
 }
 
 function uploadSystemByTypeCycle(sources) {
-  const accessToken$ = sources.STATE
-    .pluck('auth', 'access_token')
-    .filter(R.complement(R.isNil)) // Hint: will wait for accessToken avaliable.
-    .distinctUntilChanged();
-
+  const accessToken$ = accessTokenSelector$(sources.STATE);
   const system$ = sources.STATE.pluck('system');
 
-  const type$ = sources.ACTION
+  const payload$ = sources.ACTION
     .filter(action => action.type === UPLOAD_SYSTEM_BY_TYPE)
     .pluck('payload');
+  const type$ = payload$.pluck('type');
+  const message$ = payload$.pluck('message');
 
   const content$ = type$
     .withLatestFrom(system$, (type, system) => system[type])
@@ -125,10 +124,19 @@ function uploadSystemByTypeCycle(sources) {
     }),
   );
 
-  const response$ = sources.HTTP.select(UPLOAD_SYSTEM_BY_TYPE).switch();
-  const action$ = response$
-    .pluck('text')
-    .map(text => uiActions.addToast({ kind: 'success', children: text }));
+  const successRes$ = sources.HTTP
+    .select(UPLOAD_SYSTEM_BY_TYPE)
+    .switchMap(success);
+
+  const action$ = Observable.from([
+    request$.mapTo(uiActions.setLoading()),
+    successRes$
+      .withLatestFrom(message$, (response, message) => message)
+      .map(message =>
+        uiActions.addToast({ kind: 'success', children: message }),
+      ),
+    successRes$.mapTo(uiActions.setLoaded()),
+  ]).mergeAll();
 
   return {
     ACTION: action$,
@@ -137,10 +145,7 @@ function uploadSystemByTypeCycle(sources) {
 }
 
 function postResetCycle(sources) {
-  const accessToken$ = sources.STATE
-    .pluck('auth', 'access_token')
-    .filter(R.complement(R.isNil)) // Hint: will wait for accessToken avaliable.
-    .distinctUntilChanged();
+  const accessToken$ = accessTokenSelector$(sources.STATE);
 
   const message$ = sources.ACTION
     .filter(action => action.type === POST_RESET)
@@ -155,10 +160,11 @@ function postResetCycle(sources) {
       category: POST_RESET,
     }));
 
-  const response$ = sources.HTTP.select(POST_RESET).switch();
+  const successRes$ = sources.HTTP.select(POST_RESET).switchMap(success);
+
   const action$ = Observable.from([
     request$.mapTo(uiActions.setLoading()),
-    response$
+    successRes$
       .pluck('text')
       .withLatestFrom(message$, (text, message) => message)
       .switchMap(message =>
@@ -167,7 +173,7 @@ function postResetCycle(sources) {
           uiActions.addToast({ kind: 'success', children: message }),
         ),
       ),
-    response$.mapTo(uiActions.setLoaded()),
+    successRes$.mapTo(uiActions.setLoaded()),
   ]).mergeAll();
 
   return {

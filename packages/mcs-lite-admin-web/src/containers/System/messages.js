@@ -19,6 +19,10 @@ const messages = defineMessages({
     id: 'System.save',
     defaultMessage: '儲存',
   },
+  'System.save.success': {
+    id: 'System.save.success',
+    defaultMessage: '成功！系統的參數設定已更新。',
+  },
   'System.reset': {
     id: 'System.reset',
     defaultMessage: '系統重置',

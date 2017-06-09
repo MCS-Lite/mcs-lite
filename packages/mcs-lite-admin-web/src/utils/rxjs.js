@@ -26,7 +26,7 @@ import 'rxjs/add/operator/withLatestFrom';
 import 'rxjs/add/operator/combineLatest';
 import 'rxjs/add/operator/let';
 import 'rxjs/add/operator/distinctUntilChanged';
-import 'rxjs/add/operator/switch';
 import 'rxjs/add/operator/mergeAll';
 import 'rxjs/add/operator/distinctUntilKeyChanged';
 import 'rxjs/add/operator/zip';
+import 'rxjs/add/operator/skip';

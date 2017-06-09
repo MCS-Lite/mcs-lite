@@ -74,8 +74,11 @@ const System = componentFromStream(props$ => {
     )
     .subscribe(R.call);
   onSaveClick$
-    .withLatestFrom(tabValue$, props$, (e, tabValue, { uploadSystemByType }) =>
-      uploadSystemByType.bind(null, tabValue),
+    .withLatestFrom(
+      tabValue$,
+      props$,
+      (e, tabValue, { uploadSystemByType, getMessages: t }) =>
+        uploadSystemByType.bind(null, tabValue, t('save.success')),
     )
     .subscribe(R.call);
   onSubmit$

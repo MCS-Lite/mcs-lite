@@ -27,6 +27,10 @@ Object {
     "defaultMessage": "儲存",
     "id": "System.save",
   },
+  "System.save.success": Object {
+    "defaultMessage": "成功！系統的參數設定已更新。",
+    "id": "System.save.success",
+  },
   "System.systemManagement": Object {
     "defaultMessage": "系統管理",
     "description": "Meta/Title",

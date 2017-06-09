@@ -1,6 +1,6 @@
 import { Observable } from 'rxjs/Observable';
-import R from 'ramda';
 import { actions as uiActions } from './ui';
+import { success, accessTokenSelector$ } from '../utils/cycleHelper';
 
 // ----------------------------------------------------------------------------
 // 1. Constants
@@ -21,7 +21,7 @@ export const constants = {
 // ----------------------------------------------------------------------------
 
 const fetchIpList = () => ({ type: FETCH_IP_LIST });
-const setIpList = payload => ({ type: SET_IP_LIST, payload });
+const setIpList = ipList => ({ type: SET_IP_LIST, payload: ipList });
 const clear = () => ({ type: CLEAR });
 
 export const actions = {
@@ -35,10 +35,7 @@ export const actions = {
 // ----------------------------------------------------------------------------
 
 function fetchIpListCycle(sources) {
-  const accessToken$ = sources.STATE
-    .pluck('auth', 'access_token')
-    .filter(R.complement(R.isNil)) // Hint: will wait for accessToken avaliable.
-    .distinctUntilChanged(); // Remind: Avoid loop
+  const accessToken$ = accessTokenSelector$(sources.STATE);
 
   const request$ = sources.ACTION
     .filter(action => action.type === FETCH_IP_LIST)
@@ -49,12 +46,12 @@ function fetchIpListCycle(sources) {
       category: FETCH_IP_LIST,
     }));
 
-  const response$ = sources.HTTP.select(FETCH_IP_LIST).switch();
+  const successRes$ = sources.HTTP.select(FETCH_IP_LIST).switchMap(success);
 
   const action$ = Observable.from([
     request$.mapTo(uiActions.setLoading()),
-    response$.pluck('body', 'data').map(setIpList),
-    response$.mapTo(uiActions.setLoaded()),
+    successRes$.pluck('body', 'data').map(setIpList),
+    successRes$.mapTo(uiActions.setLoaded()),
   ]).mergeAll();
 
   return {
