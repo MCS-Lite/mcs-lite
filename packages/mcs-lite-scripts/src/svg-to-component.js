@@ -40,9 +40,9 @@ const destPath$ = componentName$
   .map(componentName => path.resolve(desDir, `${componentName}.js`))
   .do(destPath => spawnSync('mkdir', ['-p', path.dirname(destPath)]));
 
-Rx.Observable
-  .zip(srcPath$, code$, destPath$)
-  .do(([srcPath, code, destPath]) => {
+// Output
+Rx.Observable.zip(srcPath$, code$, destPath$).subscribe(
+  ([srcPath, code, destPath]) => {
     fs.writeFileSync(destPath, code);
     console.log(
       `${path.relative(process.cwd(), srcPath)} -> ${path.relative(
@@ -50,6 +50,6 @@ Rx.Observable
         destPath,
       )}`,
     );
-  })
-  .catch(console.error)
-  .subscribe();
+  },
+  error => console.error(error),
+);

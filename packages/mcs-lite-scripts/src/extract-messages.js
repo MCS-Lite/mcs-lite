@@ -51,8 +51,8 @@ const results$ = messages$
   .map(concated => JSON.stringify(concated, null, 2));
 
 // Output
-results$
-  .do(results => {
+results$.subscribe(
+  results => {
     spawnSync('mkdir', ['-p', path.dirname(desPath)]);
     fs.writeFileSync(desPath, results);
     console.log(
@@ -61,6 +61,6 @@ results$
         desPath,
       )}`,
     );
-  })
-  .catch(console.error)
-  .subscribe();
+  },
+  error => console.error(error),
+);

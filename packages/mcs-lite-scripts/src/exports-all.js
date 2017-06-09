@@ -33,8 +33,8 @@ const resultsES6$ = strings$.toArray().map(R.join('\n'));
 const resultsES5$ = resultsES6$.map(compile);
 
 // Output
-resultsES5$
-  .do(results => {
+resultsES5$.subscribe(
+  results => {
     fs.writeFileSync(desPath, results);
     console.log(
       `${path.relative(process.cwd(), srcPattern)} -> ${path.relative(
@@ -42,6 +42,6 @@ resultsES5$
         desPath,
       )}`,
     );
-  })
-  .catch(console.error)
-  .subscribe();
+  },
+  error => console.error(error),
+);
