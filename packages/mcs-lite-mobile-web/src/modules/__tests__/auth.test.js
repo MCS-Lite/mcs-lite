@@ -64,7 +64,7 @@ describe('auth - 3. Cycle', () => {
         url: '/oauth/cookies/mobile',
         method: 'POST',
         send: { token: 'fakeCookieToken5' },
-        category: 'user',
+        category: constants.REQUIRE_AUTH,
       },
     };
 
@@ -143,7 +143,7 @@ describe('auth - 3. Cycle', () => {
         method: 'PUT',
         headers: { Authorization: 'Bearer faketoken456' },
         send: { password: '12332331' },
-        category: 'changePassword',
+        category: constants.CHANGE_PASSWORD,
       },
     };
 
@@ -158,12 +158,14 @@ describe('auth - 3. Cycle', () => {
     }, cycles.changePasswordCycle, done);
   });
 
-  it('should emit correct Sinks given Sources with authErrorCycle', done => {
+  it('should emit correct Sinks given Sources with httpErrorCycle', done => {
     const httpSource = {
       select: () => ({
         r: Observable.throw({
-          ok: false,
-          response: { body: { message: 'errorMessage' } },
+          response: {
+            status: 401,
+            statusText: 'errorMessage',
+          },
         }),
       }),
     };
@@ -171,16 +173,17 @@ describe('auth - 3. Cycle', () => {
     const actionSink = {
       x: uiActions.addToast({
         kind: 'error',
-        children: 'errorMessage',
+        children: ' (401 errorMessage)',
       }),
-      y: actions.signout('', true),
+      y: uiActions.setLoaded(),
+      z: actions.signout('', true),
     };
 
     // prettier-ignore
     assertSourcesSinks(
-      { HTTP:   { 'r---|': httpSource } },
-      { ACTION: { '(xy|)': actionSink } },
-      cycles.authErrorCycle, done,
+      { HTTP:   { 'r----|': httpSource } },
+      { ACTION: { '(xyz)|': actionSink } },
+      cycles.httpErrorCycle, done,
     );
   });
 });

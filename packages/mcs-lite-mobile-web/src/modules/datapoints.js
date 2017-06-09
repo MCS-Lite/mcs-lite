@@ -1,6 +1,7 @@
 import { Observable } from 'rxjs/Observable';
 import R from 'ramda';
 import { constants as devicesConstants } from './devices';
+import { success, exist } from '../utils/cycleHelper';
 
 // ----------------------------------------------------------------------------
 // 1. Constants
@@ -65,19 +66,17 @@ function fetchDatapointsCycle(sources) {
   const deviceKey$ = sources.STATE
     .pluck('devices')
     .combineLatest(deviceId$, (devices, deviceId) =>
-      R.pathOr(undefined, [deviceId, 'deviceKey'])(devices),
+      R.path([deviceId, 'deviceKey'])(devices),
     )
-    .filter(R.complement(R.isNil));
+    .filter(exist);
 
-  const datapoints$ = sources.STATE
-    .pluck('datapoints')
-    .filter(R.complement(R.isNil));
+  const datapoints$ = sources.STATE.pluck('datapoints').filter(exist);
 
   const query$ = datapoints$
     .combineLatest(dataChannelId$, (datapoint, dataChannelId) =>
-      R.pathOr(undefined, [dataChannelId, 'query'])(datapoint),
+      R.path([dataChannelId, 'query'])(datapoint),
     )
-    .filter(R.complement(R.isNil))
+    .filter(exist)
     .startWith({});
 
   const request$ = Observable.combineLatest(
@@ -85,15 +84,16 @@ function fetchDatapointsCycle(sources) {
     deviceId$.distinctUntilChanged(),
     dataChannelId$.distinctUntilChanged(),
     query$.distinctUntilKeyChanged('start').distinctUntilKeyChanged('end'),
-  ).map(([deviceKey, deviceId, dataChannelId, query]) => ({
-    url: `/api/devices/${deviceId}/datachannels/${dataChannelId}/datapoints`,
-    method: 'GET',
-    headers: { deviceKey },
-    category: 'datapoints',
-    query,
-  }));
+    (deviceKey, deviceId, dataChannelId, query) => ({
+      url: `/api/devices/${deviceId}/datachannels/${dataChannelId}/datapoints`,
+      method: 'GET',
+      headers: { deviceKey },
+      category: FETCH_DATAPOINTS,
+      query,
+    }),
+  );
 
-  const response$ = sources.HTTP.select('datapoints').switch();
+  const response$ = sources.HTTP.select(FETCH_DATAPOINTS).switchMap(success);
 
   // Remind: api response with dataChannelId will be better.
   const responseDataChannedId$ = response$

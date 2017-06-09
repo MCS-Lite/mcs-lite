@@ -1,6 +1,7 @@
 import { Observable } from 'rxjs/Observable';
 import R from 'ramda';
 import { actions as uiActions } from './ui';
+import { success, exist, accessTokenSelector$ } from '../utils/cycleHelper';
 
 // ----------------------------------------------------------------------------
 // 1. Constants
@@ -53,10 +54,7 @@ export const actions = {
 // ----------------------------------------------------------------------------
 
 function fetchDeviceListCycle(sources) {
-  const accessToken$ = sources.STATE
-    .pluck('auth', 'access_token')
-    .filter(R.complement(R.isNil)) // Hint: will wait for accessToken avaliable.
-    .distinctUntilChanged(); // Remind: Avoid loop
+  const accessToken$ = accessTokenSelector$(sources.STATE);
 
   const request$ = sources.ACTION
     .filter(action => action.type === FETCH_DEVICE_LIST)
@@ -64,10 +62,10 @@ function fetchDeviceListCycle(sources) {
       url: '/api/devices',
       method: 'GET',
       headers: { Authorization: `Bearer ${accessToken}` },
-      category: 'devices',
+      category: FETCH_DEVICE_LIST,
     }));
 
-  const response$ = sources.HTTP.select('devices').switch();
+  const response$ = sources.HTTP.select(FETCH_DEVICE_LIST).switchMap(success);
 
   const action$ = Observable.from([
     request$.mapTo(uiActions.setLoading()),
@@ -82,32 +80,27 @@ function fetchDeviceListCycle(sources) {
 }
 
 function fetchDeviceDetailCycle(sources) {
-  const accessToken$ = sources.STATE
-    .pluck('auth', 'access_token')
-    .filter(R.complement(R.isNil)); // Hint: will wait for accessToken avaliable.
+  const accessToken$ = accessTokenSelector$(sources.STATE);
 
   const payload$ = sources.ACTION
     .filter(action => action.type === FETCH_DEVICE_DETAIL)
     .pluck('payload');
-  const deviceId$ = payload$.pluck('deviceId');
-  const isForce$ = payload$
-    .pluck('isForce')
-    .filter(R.complement(R.isNil))
-    .startWith(true);
+  const deviceId$ = payload$.pluck('deviceId').distinctUntilChanged();
+  const refetch$ = payload$.pluck('isForce').filter(exist).startWith(true);
 
   const request$ = Observable.combineLatest(
-    deviceId$.distinctUntilChanged(),
-    accessToken$.distinctUntilChanged(),
-    isForce$,
+    deviceId$,
+    accessToken$,
+    refetch$,
     (deviceId, accessToken) => ({
       url: `/api/devices/${deviceId}`,
       method: 'GET',
       headers: { Authorization: `Bearer ${accessToken}` },
-      category: 'deviceDetail',
+      category: FETCH_DEVICE_DETAIL,
     }),
   );
 
-  const response$ = sources.HTTP.select('deviceDetail').switch();
+  const response$ = sources.HTTP.select(FETCH_DEVICE_DETAIL).switchMap(success);
 
   const action$ = Observable.from([
     request$.mapTo(uiActions.setLoading()),

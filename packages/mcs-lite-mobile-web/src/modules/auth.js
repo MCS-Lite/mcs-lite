@@ -2,12 +2,12 @@
 /* eslint no-alert: 0 */
 
 import { Observable } from 'rxjs/Observable';
-import R from 'ramda';
 import { push } from 'react-router-redux';
 import { actions as devicesActions } from './devices';
 import { actions as datapointsActions } from './datapoints';
 import { actions as uiActions } from './ui';
 import cookieHelper from '../utils/cookieHelper';
+import { success, failure, accessTokenSelector$ } from '../utils/cycleHelper';
 
 // ----------------------------------------------------------------------------
 // 1. Constants
@@ -35,11 +35,11 @@ export const constants = {
 
 const requireAuth = () => ({ type: REQUIRE_AUTH });
 const tryEnter = () => ({ type: TRY_ENTER });
-const signout = (message, isForce) => ({
+const signout = (confirmMessage, isForce) => ({
   type: SIGNOUT,
-  payload: { message, isForce },
+  payload: { message: confirmMessage, isForce },
 });
-const setUserInfo = payload => ({ type: SET_USERINFO, payload });
+const setUserInfo = userData => ({ type: SET_USERINFO, payload: userData });
 const changePassword = ({ password, message }) => ({
   type: CHANGE_PASSWORD,
   payload: { password, message },
@@ -68,19 +68,12 @@ function requireAuthCycle(sources) {
     url: '/oauth/cookies/mobile',
     method: 'POST',
     send: { token: cookieToken },
-    category: 'user',
+    category: REQUIRE_AUTH,
   }));
 
-  const response$ = sources.HTTP.select('user').switch();
+  const successRes$ = sources.HTTP.select(REQUIRE_AUTH).switchMap(success);
 
-  const action$ = response$
-    .pluck('body', 'results')
-    .map(setUserInfo)
-    // TODO: Should I catch response$ error here ?
-    .catch(error => {
-      console.error({ error }); // eslint-disable-line
-      return Observable.empty();
-    });
+  const action$ = successRes$.pluck('body', 'results').map(setUserInfo);
 
   return {
     ACTION: action$,
@@ -130,10 +123,7 @@ function signoutCycle(sources) {
 }
 
 function changePasswordCycle(sources) {
-  const accessToken$ = sources.STATE
-    .pluck('auth', 'access_token')
-    .filter(d => !!d)
-    .distinctUntilChanged();
+  const accessToken$ = accessTokenSelector$(sources.STATE);
 
   const payload$ = sources.ACTION
     .filter(action => action.type === CHANGE_PASSWORD)
@@ -142,19 +132,20 @@ function changePasswordCycle(sources) {
   const password$ = payload$.pluck('password');
   const message$ = payload$.pluck('message');
 
-  const request$ = password$
-    .withLatestFrom(accessToken$)
-    .map(([password, accessToken]) => ({
+  const request$ = password$.withLatestFrom(
+    accessToken$,
+    (password, accessToken) => ({
       url: '/api/users/changepassword',
       method: 'PUT',
       headers: { Authorization: `Bearer ${accessToken}` },
       send: { password },
-      category: 'changePassword',
-    }));
+      category: CHANGE_PASSWORD,
+    }),
+  );
 
-  const response$ = sources.HTTP.select('changePassword').switch();
+  const response$ = sources.HTTP.select(CHANGE_PASSWORD).switchMap(success);
 
-  const action$ = response$.withLatestFrom(message$).map(([, message]) =>
+  const action$ = response$.withLatestFrom(message$, (response, message) =>
     uiActions.addToast({
       kind: 'success',
       children: message,
@@ -167,20 +158,26 @@ function changePasswordCycle(sources) {
   };
 }
 
-function authErrorCycle(sources) {
-  const errorMessage$ = sources.HTTP
-    .select() // TODO: Should I use .select('user') ?
-    .switch()
-    .pluck('ok')
-    .filter(R.not)
-    .catch(({ response }) => Observable.of(response.body.message));
+function httpErrorCycle(sources) {
+  // Remind: handle all http errors here
+  const failureRes$ = sources.HTTP
+    .select()
+    .switchMap(failure)
+    .pluck('response')
+    .do(response => console.log('httpErrorCycle', response)); // eslint-disable-line
 
-  const action$ = errorMessage$.concatMap(message =>
-    Observable.of(
-      uiActions.addToast({ kind: 'error', children: message }),
-      signout('', true), // Remind: Force signout
-    ),
-  );
+  const action$ = failureRes$.concatMap(({ status, statusText }) => {
+    const shouldSignout = status === 401;
+
+    return Observable.of(
+      uiActions.addToast({
+        kind: 'error',
+        children: ` (${status} ${statusText})`,
+      }),
+      uiActions.setLoaded(), // Hint: set loading anyway
+      shouldSignout ? signout('', true) : {}, // Remind: Force signout
+    );
+  });
 
   return {
     ACTION: action$,
@@ -192,7 +189,7 @@ export const cycles = {
   tryEnterCycle,
   signoutCycle,
   changePasswordCycle,
-  authErrorCycle,
+  httpErrorCycle,
 };
 
 // ----------------------------------------------------------------------------

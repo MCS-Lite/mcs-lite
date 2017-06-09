@@ -90,7 +90,7 @@ describe('datapoints - 3. Cycle', () => {
           '/api/devices/deviceId445/datachannels/dataChannelId778/datapoints',
         method: 'GET',
         headers: { deviceKey: 'key556' },
-        category: 'datapoints',
+        category: constants.FETCH_DATAPOINTS,
         query: {},
       },
       r: {
@@ -98,7 +98,7 @@ describe('datapoints - 3. Cycle', () => {
           '/api/devices/deviceId445/datachannels/dataChannelId778/datapoints',
         method: 'GET',
         headers: { deviceKey: 'key556' },
-        category: 'datapoints',
+        category: constants.FETCH_DATAPOINTS,
         query: { start: 1, end: 2 },
       },
     };
