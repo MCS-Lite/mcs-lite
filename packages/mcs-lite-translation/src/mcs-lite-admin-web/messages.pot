@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"POT-Creation-Date: 2017-06-07T12:29:43.673Z\n"
+"POT-Creation-Date: 2017-06-09T06:43:47.601Z\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "MIME-Version: 1.0\n"
@@ -125,6 +125,20 @@ msgstr ""
 #. defaultMessage is:
 #. 成功！系統已重置，請重新登入。
 msgid "成功！系統已重置，請重新登入。"
+msgstr ""
+
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+#. [System.save.success]
+#. defaultMessage is:
+#. 成功！系統的參數設定已更新。
+msgid "成功！系統的參數設定已更新。"
+msgstr ""
+
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+#. [App.gerenalError] - With HTTP error status code 401/500
+#. defaultMessage is:
+#. 我們目前無法處理您的請求。請稍後再試。
+msgid "我們目前無法處理您的請求。請稍後再試。"
 msgstr ""
 
 #: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json

@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"POT-Creation-Date: 2017-06-07T12:29:29.139Z\n"
+"POT-Creation-Date: 2017-06-09T06:43:32.440Z\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "MIME-Version: 1.0\n"
@@ -171,6 +171,13 @@ msgstr ""
 #. defaultMessage is:
 #. 成功！你已經成功修改密碼。
 msgid "成功！你已經成功修改密碼。"
+msgstr ""
+
+#: ../mcs-lite-translation/src/mcs-lite-mobile-web/messages.json
+#. [App.gerenalError] - With HTTP error status code 401/500
+#. defaultMessage is:
+#. 我們目前無法處理您的請求。請稍後再試。
+msgid "我們目前無法處理您的請求。請稍後再試。"
 msgstr ""
 
 #: ../mcs-lite-translation/src/mcs-lite-mobile-web/messages.json
