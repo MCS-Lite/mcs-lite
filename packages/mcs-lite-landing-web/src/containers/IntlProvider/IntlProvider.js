@@ -12,7 +12,11 @@ const translation = {
 };
 
 const IntlProvider = ({ defaultLocale, router, ...otherProps }) => {
-  const locale = router.params.locale;
+  let locale = router.params.locale;
+
+  // Remind: fix for netlify redirect to lower case path
+  if (locale === 'zh-tw') locale = 'zh-TW';
+  if (locale === 'zh-cn') locale = 'zh-CN';
 
   return (
     <ReactIntlProvider
