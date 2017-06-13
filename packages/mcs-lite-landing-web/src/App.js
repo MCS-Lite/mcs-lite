@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { withGetMessages } from 'react-intl-inject-hoc';
+import { Link } from 'react-router';
 import messages from './messages';
 
 const App = ({ getMessages: t }) =>
@@ -8,8 +9,8 @@ const App = ({ getMessages: t }) =>
     <div>
       <h2>{t('welcome')}</h2>
     </div>
-    <a href="/zh-TW">zh-TW</a> |
-    <a href="/en">en</a>
+    <Link to="/zh-TW">zh-TW</Link> |
+    <Link to="/en">en</Link>
   </div>;
 
 App.displayName = 'App';

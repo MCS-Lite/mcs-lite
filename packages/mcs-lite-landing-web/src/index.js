@@ -1,27 +1,24 @@
-/* global window,document */
+/* global document */
 
 import 'normalize.css';
 import React from 'react';
 import { render } from 'react-snapshot';
-import { IntlProvider } from 'react-intl';
+import { Router, Route, useRouterHistory, IndexRedirect } from 'react-router';
+import { createHistory } from 'history';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
+import IntlProvider from './containers/IntlProvider';
 import './utils/i18n';
 
-const messages = {
-  'zh-TW': {
-    'App.welcome': '歡迎！',
-  },
-  en: {
-    'App.welcome': 'Welcome!',
-  },
-};
-const locale = window.location.pathname.replace('/', '') || 'en';
+const history = useRouterHistory(createHistory)();
 
 render(
-  <IntlProvider locale={locale} messages={messages[locale]}>
-    <App />
-  </IntlProvider>,
+  <Router history={history}>
+    <Route path="/" component={IntlProvider}>
+      <IndexRedirect to="en" />
+      <Route path=":locale" component={App} />
+    </Route>
+  </Router>,
   document.getElementById('root'),
 );
 registerServiceWorker();
