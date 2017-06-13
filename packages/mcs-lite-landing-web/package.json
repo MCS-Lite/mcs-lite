@@ -1,0 +1,39 @@
+{
+  "name": "mcs-lite-landing-web",
+  "version": "0.0.0",
+  "private": true,
+  "description": "MCS Lite Landing Web",
+  "repository": "MCS-Lite/mcs-lite",
+  "author": "Michael Hsu <evenchange4@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/MCS-Lite/mcs-lite/issues",
+    "email": "evenchange4@gmail.com"
+  },
+  "license": "MIT",
+  "homepage": "http://localhost:3000/",
+  "devDependencies": {
+    "mcs-lite-icon": "^0.3.3",
+    "mcs-lite-theme": "^0.3.3",
+    "mcs-lite-translation": "^0.1.1",
+    "mcs-lite-ui": "^0.4.3",
+    "normalize.css": "^7.0.0",
+    "prop-types": "^15.5.10",
+    "ramda": "^0.24.1",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "react-intl": "^2.3.0",
+    "react-intl-cra": "^0.2.3",
+    "react-intl-inject-hoc": "^0.2.3",
+    "react-intl-po": "^2.0.2",
+    "react-scripts": "^1.0.7",
+    "react-snapshot": "^1.1.0",
+    "styled-components": "^2.0.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build && react-snapshot",
+    "test": "react-scripts test --env=jsdom",
+    "extract:messages": "react-intl-cra 'src/**/*.js' '../mcs-lite-translation/src/mcs-lite-landing-web/messages.json'",
+    "extract:pot": "react-intl-po json2pot '../mcs-lite-translation/src/mcs-lite-landing-web/messages.json' -o '../mcs-lite-translation/src/mcs-lite-landing-web/messages.pot'"
+  }
+}
