@@ -50,7 +50,7 @@
     prop-types "^15.5.8"
     react-inspector "^2.0.0"
 
-"@storybook/addon-info@^3.0.1":
+"@storybook/addon-info@^3.1.3":
   version "3.1.3"
   resolved "https://registry.yarnpkg.com/@storybook/addon-info/-/addon-info-3.1.3.tgz#0fb26ffcaf2068a3c058d16074a899f5b15d1eb4"
   dependencies:
@@ -67,13 +67,13 @@
   dependencies:
     "@storybook/addons" "^3.1.2"
 
-"@storybook/addon-options@^3.0.1":
+"@storybook/addon-options@^3.1.2":
   version "3.1.2"
   resolved "https://registry.yarnpkg.com/@storybook/addon-options/-/addon-options-3.1.2.tgz#94036ffd4d78a81ee2501728dcd589c9f5f0dbb7"
   dependencies:
     "@storybook/addons" "^3.1.2"
 
-"@storybook/addon-storyshots@^3.0.0":
+"@storybook/addon-storyshots@^3.1.2":
   version "3.1.2"
   resolved "https://registry.yarnpkg.com/@storybook/addon-storyshots/-/addon-storyshots-3.1.2.tgz#f063293e576c136bf22ef25f31f3bb5e59ccaa5c"
   dependencies:
@@ -107,7 +107,7 @@
     fuse.js "^3.0.1"
     prop-types "^15.5.9"
 
-"@storybook/react@^3.0.1":
+"@storybook/react@^3.1.3":
   version "3.1.3"
   resolved "https://registry.yarnpkg.com/@storybook/react/-/react-3.1.3.tgz#e2d7d2ecf4d7ff3dfab1d7b324e2c19e04be5934"
   dependencies:
@@ -1734,11 +1734,11 @@ browserslist@^1.1.1, browserslist@^1.1.3, browserslist@^1.3.6, browserslist@^1.4
     electron-to-chromium "^1.2.7"
 
 browserslist@^2.1.2, browserslist@^2.1.3:
-  version "2.1.4"
-  resolved "https://registry.yarnpkg.com/browserslist/-/browserslist-2.1.4.tgz#cc526af4a1312b7d2e05653e56d0c8ab70c0e053"
+  version "2.1.5"
+  resolved "https://registry.yarnpkg.com/browserslist/-/browserslist-2.1.5.tgz#e882550df3d1cd6d481c1a3e0038f2baf13a4711"
   dependencies:
-    caniuse-lite "^1.0.30000670"
-    electron-to-chromium "^1.3.11"
+    caniuse-lite "^1.0.30000684"
+    electron-to-chromium "^1.3.14"
 
 bser@1.0.2:
   version "1.0.2"
@@ -1856,7 +1856,7 @@ caniuse-db@^1.0.30000187, caniuse-db@^1.0.30000529, caniuse-db@^1.0.30000634, ca
   version "1.0.30000684"
   resolved "https://registry.yarnpkg.com/caniuse-db/-/caniuse-db-1.0.30000684.tgz#99acb0118b8fd1fdd601a15e0c0f2dfc15a81680"
 
-caniuse-lite@^1.0.30000669, caniuse-lite@^1.0.30000670:
+caniuse-lite@^1.0.30000669, caniuse-lite@^1.0.30000670, caniuse-lite@^1.0.30000684:
   version "1.0.30000684"
   resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30000684.tgz#0c1032d0b36e14d1ac199f93ef2d1c42d3f03fd7"
 
@@ -1986,8 +1986,8 @@ circular-json@^0.3.1:
   resolved "https://registry.yarnpkg.com/circular-json/-/circular-json-0.3.1.tgz#be8b36aefccde8b3ca7aa2d6afc07a37242c0d2d"
 
 clap@^1.0.9:
-  version "1.1.3"
-  resolved "https://registry.yarnpkg.com/clap/-/clap-1.1.3.tgz#b3bd36e93dd4cbfb395a3c26896352445265c05b"
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/clap/-/clap-1.2.0.tgz#59c90fe3e137104746ff19469a27a634ff68c857"
   dependencies:
     chalk "^1.1.3"
 
@@ -3005,7 +3005,7 @@ doiuse@^2.4.1:
     through2 "^0.6.3"
     yargs "^3.5.4"
 
-dom-align@^1.6.0:
+dom-align@^1.6.2:
   version "1.6.2"
   resolved "https://registry.yarnpkg.com/dom-align/-/dom-align-1.6.2.tgz#b14e64917c25de6b4055227339b4d64f4b7db885"
 
@@ -3066,16 +3066,9 @@ domutils@1.1:
   dependencies:
     domelementtype "1"
 
-domutils@1.5.1:
+domutils@1.5.1, domutils@^1.5.1:
   version "1.5.1"
   resolved "https://registry.yarnpkg.com/domutils/-/domutils-1.5.1.tgz#dcd8488a26f563d61079e48c9f7b7e32373682cf"
-  dependencies:
-    dom-serializer "0"
-    domelementtype "1"
-
-domutils@^1.5.1:
-  version "1.6.2"
-  resolved "https://registry.yarnpkg.com/domutils/-/domutils-1.6.2.tgz#1958cc0b4c9426e9ed367fb1c8e854891b0fa3ff"
   dependencies:
     dom-serializer "0"
     domelementtype "1"
@@ -3095,10 +3088,6 @@ dot-prop@^4.1.0:
 dotenv@4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-4.0.0.tgz#864ef1379aced55ce6f95debecdce179f7a0cd1d"
-
-double-ended-queue@^2.1.0-0:
-  version "2.1.0-0"
-  resolved "https://registry.yarnpkg.com/double-ended-queue/-/double-ended-queue-2.1.0-0.tgz#103d3527fd31528f40188130c841efdd78264e5c"
 
 duplexer2@0.0.2:
   version "0.0.2"
@@ -3130,7 +3119,7 @@ ee-first@1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/ee-first/-/ee-first-1.1.1.tgz#590c61156b0ae2f4f0255732a158b266bc56b21d"
 
-electron-to-chromium@^1.2.7, electron-to-chromium@^1.3.11:
+electron-to-chromium@^1.2.7, electron-to-chromium@^1.3.14:
   version "1.3.14"
   resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.14.tgz#64af0f9efd3c3c6acd57d71f83b49ca7ee9c4b43"
 
@@ -3434,13 +3423,21 @@ eslint-plugin-prettier@^2.1.1:
     fast-diff "^1.1.1"
     jest-docblock "^20.0.1"
 
-eslint-plugin-react@7.0.1, eslint-plugin-react@^7.0.1:
+eslint-plugin-react@7.0.1:
   version "7.0.1"
   resolved "https://registry.yarnpkg.com/eslint-plugin-react/-/eslint-plugin-react-7.0.1.tgz#e78107e1e559c6e2b17786bb67c2e2a010ad0d2f"
   dependencies:
     doctrine "^2.0.0"
     has "^1.0.1"
     jsx-ast-utils "^1.3.4"
+
+eslint-plugin-react@^7.1.0:
+  version "7.1.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-react/-/eslint-plugin-react-7.1.0.tgz#27770acf39f5fd49cd0af4083ce58104eb390d4c"
+  dependencies:
+    doctrine "^2.0.0"
+    has "^1.0.1"
+    jsx-ast-utils "^1.4.1"
 
 eslint@3.19.0, eslint@^3.19.0:
   version "3.19.0"
@@ -3844,9 +3841,9 @@ flatten@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/flatten/-/flatten-1.0.2.tgz#dae46a9d78fbe25292258cc1e780a41d95c03782"
 
-flow-bin@^0.47.0:
-  version "0.47.0"
-  resolved "https://registry.yarnpkg.com/flow-bin/-/flow-bin-0.47.0.tgz#a2a08ab3e0d1f1cb57d17e27b30b118b62fda367"
+flow-bin@^0.48.0:
+  version "0.48.0"
+  resolved "https://registry.yarnpkg.com/flow-bin/-/flow-bin-0.48.0.tgz#72d075143524358db8901525e3c784dc13a7c7ee"
 
 follow-redirects@0.0.7:
   version "0.0.7"
@@ -4565,8 +4562,8 @@ iconv-lite@0.4.13:
   resolved "https://registry.yarnpkg.com/iconv-lite/-/iconv-lite-0.4.13.tgz#1f88aba4ab0b1508e8312acc39345f36e992e2f2"
 
 iconv-lite@^0.4.17, iconv-lite@~0.4.13:
-  version "0.4.17"
-  resolved "https://registry.yarnpkg.com/iconv-lite/-/iconv-lite-0.4.17.tgz#4fdaa3b38acbc2c031b045d0edcdfe1ecab18c8d"
+  version "0.4.18"
+  resolved "https://registry.yarnpkg.com/iconv-lite/-/iconv-lite-0.4.18.tgz#23d8656b16aae6742ac29732ea8f0336a4789cf2"
 
 icss-replace-symbols@^1.1.0:
   version "1.1.0"
@@ -4651,8 +4648,8 @@ init-package-json@~1.9.3, init-package-json@~1.9.4:
     validate-npm-package-name "^3.0.0"
 
 inline-style-prefixer@^3.0.2:
-  version "3.0.5"
-  resolved "https://registry.yarnpkg.com/inline-style-prefixer/-/inline-style-prefixer-3.0.5.tgz#0092881b3a2eadf1bd619dc43726557316f76042"
+  version "3.0.6"
+  resolved "https://registry.yarnpkg.com/inline-style-prefixer/-/inline-style-prefixer-3.0.6.tgz#b27fe309b4168a31eaf38c8e8c60ab9e7c11731f"
   dependencies:
     bowser "^1.6.0"
     css-in-js-utils "^1.0.3"
@@ -5616,7 +5613,7 @@ jsprim@^1.2.2:
     json-schema "0.2.3"
     verror "1.3.6"
 
-jsx-ast-utils@^1.3.4, jsx-ast-utils@^1.4.0:
+jsx-ast-utils@^1.3.4, jsx-ast-utils@^1.4.0, jsx-ast-utils@^1.4.1:
   version "1.4.1"
   resolved "https://registry.yarnpkg.com/jsx-ast-utils/-/jsx-ast-utils-1.4.1.tgz#3867213e8dd79bf1e8f2300c0cfc1efb182c0df1"
 
@@ -7884,9 +7881,9 @@ react-docgen@^2.15.0:
     node-dir "^0.1.10"
     recast "^0.11.5"
 
-react-dom@^15.3.0, react-dom@^15.5.4:
-  version "15.5.4"
-  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-15.5.4.tgz#ba0c28786fd52ed7e4f2135fe0288d462aef93da"
+react-dom@^15.3.0, react-dom@^15.6.0:
+  version "15.6.0"
+  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-15.6.0.tgz#8bc23cb0c80e706355b76ca9f8ce47cf7bdfb6d1"
   dependencies:
     fbjs "^0.8.9"
     loose-envify "^1.1.0"
@@ -7974,8 +7971,8 @@ react-loadable@^3.3.1:
     babel-plugin-syntax-dynamic-import "^6.18.0"
 
 react-modal@^1.7.6, react-modal@^1.7.7:
-  version "1.9.2"
-  resolved "https://registry.yarnpkg.com/react-modal/-/react-modal-1.9.2.tgz#a921b027830512bfa50663320266b913ee1b6a81"
+  version "1.9.4"
+  resolved "https://registry.yarnpkg.com/react-modal/-/react-modal-1.9.4.tgz#f6823c29ca9ecbecd9cc2a9f019e78e4319bafdd"
   dependencies:
     create-react-class "^15.5.2"
     element-class "^0.2.0"
@@ -8182,7 +8179,7 @@ react-test-renderer@^15.5.4:
     fbjs "^0.8.9"
     object-assign "^4.1.0"
 
-react-text-truncate@^0.10.1:
+react-text-truncate@^0.10.2:
   version "0.10.2"
   resolved "https://registry.yarnpkg.com/react-text-truncate/-/react-text-truncate-0.10.2.tgz#67194225122513cb8aa947c6547de032d73dea50"
   dependencies:
@@ -8204,10 +8201,11 @@ react-transition-group@^1.1.1:
     prop-types "^15.5.6"
     warning "^3.0.0"
 
-react@^15.3.0, react@^15.5.4:
-  version "15.5.4"
-  resolved "https://registry.yarnpkg.com/react/-/react-15.5.4.tgz#fa83eb01506ab237cdc1c8c3b1cea8de012bf047"
+react@^15.3.0, react@^15.6.0:
+  version "15.6.0"
+  resolved "https://registry.yarnpkg.com/react/-/react-15.6.0.tgz#c23299b48e30ed302508ce89e1a02c919f826bce"
   dependencies:
+    create-react-class "^15.5.2"
     fbjs "^0.8.9"
     loose-envify "^1.1.0"
     object-assign "^4.1.0"
@@ -8400,7 +8398,7 @@ recharts-scale@0.3.1:
   version "0.3.1"
   resolved "https://registry.yarnpkg.com/recharts-scale/-/recharts-scale-0.3.1.tgz#635f14c998b151d63f2e8fff1fcbe46faf0423a6"
 
-recharts@^1.0.0-alpha.0:
+recharts@^1.0.0-alpha.1:
   version "1.0.0-alpha.1"
   resolved "https://registry.yarnpkg.com/recharts/-/recharts-1.0.0-alpha.1.tgz#f9cee06d0d3e03dc11911760f0c6dc29e572e528"
   dependencies:
@@ -9413,7 +9411,7 @@ stylelint-suitcss@^1.0.0:
     postcss-selector-parser "^2.2.3"
     stylelint "^7.9.0"
 
-stylelint@^7.10.1, stylelint@^7.9.0:
+stylelint@^7.11.0, stylelint@^7.9.0:
   version "7.11.0"
   resolved "https://registry.yarnpkg.com/stylelint/-/stylelint-7.11.0.tgz#4816372ecd0afd2c30fe53f4f6a00eb04960dbfc"
   dependencies:
@@ -9529,8 +9527,8 @@ sw-precache-webpack-plugin@0.9.1:
     uglify-js "^2.8.5"
 
 sw-precache@^5.0.0:
-  version "5.1.1"
-  resolved "https://registry.yarnpkg.com/sw-precache/-/sw-precache-5.1.1.tgz#928720957463e55ed56777e177c4699f35ec59b6"
+  version "5.2.0"
+  resolved "https://registry.yarnpkg.com/sw-precache/-/sw-precache-5.2.0.tgz#eb6225ce580ceaae148194578a0ad01ab7ea199c"
   dependencies:
     dom-urls "^1.1.0"
     es6-promise "^4.0.5"
@@ -9652,10 +9650,8 @@ text-table@0.2.0, text-table@^0.2.0, text-table@~0.2.0:
   resolved "https://registry.yarnpkg.com/text-table/-/text-table-0.2.0.tgz#7f5ee823ae805207c00af2df4a84ec3fcfa570b4"
 
 throat@^3.0.0:
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/throat/-/throat-3.1.0.tgz#ef22d8855963b3fdc626d043508f24c4cdf7d3c3"
-  dependencies:
-    double-ended-queue "^2.1.0-0"
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/throat/-/throat-3.2.0.tgz#50cb0670edbc40237b9e347d7e1f88e4620af836"
 
 through2@^0.6.1, through2@^0.6.3, through2@~0.6.1:
   version "0.6.5"

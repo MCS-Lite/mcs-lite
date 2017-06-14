@@ -25,13 +25,13 @@
     "eslint-plugin-jest": "^20.0.3",
     "eslint-plugin-jsx-a11y": "^5.0.3",
     "eslint-plugin-prettier": "^2.1.1",
-    "eslint-plugin-react": "^7.0.1",
-    "flow-bin": "^0.47.0",
+    "eslint-plugin-react": "^7.1.0",
+    "flow-bin": "^0.48.0",
     "lerna": "^2.0.0-rc.5",
     "lerna-changelog": "^0.5.0",
     "license-checker": "^11.0.0",
     "prettier": "^1.4.4",
-    "stylelint": "^7.10.1"
+    "stylelint": "^7.11.0"
   },
   "stylelint": {
     "extends": "./packages/stylelint-config-mcs-lite/index.js"
