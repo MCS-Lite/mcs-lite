@@ -7,7 +7,12 @@ import Ip from '../Ip';
 it('should renders <Ip> correctly without ip', () => {
   const fetchMock = jest.fn();
   const wrapper = shallow(
-    <Ip getMessages={R.identity} ips={[]} isLoading fetchIpList={fetchMock} />,
+    <Ip
+      getMessages={R.identity}
+      service={[]}
+      isLoading
+      fetchIpList={fetchMock}
+    />,
   );
 
   expect(toJson(wrapper)).toMatchSnapshot();
@@ -18,7 +23,7 @@ it('should renders <Ip> correctly with ip', () => {
   const wrapper = shallow(
     <Ip
       getMessages={R.identity}
-      ips={['127.0.0.1', 'localhost']}
+      service={['127.0.0.1', 'localhost']}
       isLoading={false}
       fetchIpList={() => {}}
     />,

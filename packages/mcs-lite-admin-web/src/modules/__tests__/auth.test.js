@@ -3,7 +3,7 @@
 import { Observable } from 'rxjs/Observable';
 import { push } from 'react-router-redux';
 import reducer, { constants, actions, cycles } from '../auth';
-import { actions as ipsActions } from '../ips';
+import { actions as serviceActions } from '../service';
 import { actions as systemActions } from '../system';
 import { actions as uiActions } from '../ui';
 import { assertSourcesSinks } from '../../utils/helpers';
@@ -54,6 +54,7 @@ describe('auth - 3. Cycle', () => {
 
     const actionSink = {
       x: actions.setUserInfo({ a: 'a' }),
+      y: serviceActions.fetchIpList(),
     };
     const httpSink = {
       r: {
@@ -66,11 +67,11 @@ describe('auth - 3. Cycle', () => {
 
     // prettier-ignore
     assertSourcesSinks({
-      ACTION: { 'a----|': actionSource },
-      HTTP:   { '----r|': httpSource },
+      ACTION: { 'a-------|': actionSource },
+      HTTP:   { '----r---|': httpSource },
     }, {
-      HTTP:   { 'r----|': httpSink },
-      ACTION: { '----x|': actionSink },
+      HTTP:   { 'r-------|': httpSink },
+      ACTION: { '----(xy)|': actionSink },
     }, cycles.requireAuthCycle, done);
   });
 
@@ -99,7 +100,7 @@ describe('auth - 3. Cycle', () => {
     const actionSink = {
       w: push('/login'),
       x: actions.clear(),
-      y: ipsActions.clear(),
+      y: serviceActions.clear(),
       z: systemActions.clear(),
     };
 

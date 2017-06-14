@@ -18,9 +18,19 @@ Object {
     "defaultMessage": "啟動",
     "id": "DashboardLayout.start",
   },
+  "DashboardLayout.start.success": Object {
+    "defaultMessage": "成功！服務已啟動。",
+    "description": "Toast",
+    "id": "DashboardLayout.start.success",
+  },
   "DashboardLayout.stop": Object {
     "defaultMessage": "停止",
     "id": "DashboardLayout.stop",
+  },
+  "DashboardLayout.stop.success": Object {
+    "defaultMessage": "成功！服務已停止。",
+    "description": "Toast",
+    "id": "DashboardLayout.stop.success",
   },
   "DashboardLayout.systemManagement": Object {
     "defaultMessage": "系統管理",

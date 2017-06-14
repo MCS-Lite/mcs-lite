@@ -10,7 +10,7 @@ import { StyledButton, NaWrapper } from './styled-components';
 class Ip extends React.Component {
   static propTypes = {
     // Redux State
-    ips: PropTypes.arrayOf(PropTypes.string).isRequired,
+    service: PropTypes.arrayOf(PropTypes.string).isRequired,
     isLoading: PropTypes.bool.isRequired,
 
     // Redux Action
@@ -21,8 +21,8 @@ class Ip extends React.Component {
   };
   componentWillMount = () => this.props.fetchIpList();
   render() {
-    const { ips, isLoading, getMessages: t } = this.props;
-    const isNA = !isLoading && R.isEmpty(ips);
+    const { service, isLoading, getMessages: t } = this.props;
+    const isNA = !isLoading && R.isEmpty(service);
 
     return (
       <div>
@@ -37,13 +37,16 @@ class Ip extends React.Component {
             </tr>
           </thead>
           <tbody>
-            {ips.map(ip => <tr key={ip}><td>{ip}</td></tr>)}
+            {service.map(ip => <tr key={ip}><td>{ip}</td></tr>)}
           </tbody>
         </Table>
 
         {isNA && <NaWrapper>{t('na')}</NaWrapper>}
 
-        <StyledButton>{t('goToMCSLite')}</StyledButton>
+        {service[0] &&
+          <a href={`//${service[0]}`} target="_blank" rel="noreferrer noopener">
+            <StyledButton>{t('goToMCSLite')}</StyledButton>
+          </a>}
       </div>
     );
   }

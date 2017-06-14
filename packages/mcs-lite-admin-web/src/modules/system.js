@@ -2,7 +2,6 @@ import { Observable } from 'rxjs/Observable';
 import R from 'ramda';
 import isJSON from 'validator/lib/isJSON';
 import { actions as uiActions } from './ui';
-import { actions as authActions } from './auth';
 import { success, accessTokenSelector$ } from '../utils/cycleHelper';
 
 // ----------------------------------------------------------------------------
@@ -165,13 +164,9 @@ function postResetCycle(sources) {
   const action$ = Observable.from([
     request$.mapTo(uiActions.setLoading()),
     successRes$
-      .pluck('text')
-      .withLatestFrom(message$, (text, message) => message)
-      .switchMap(message =>
-        Observable.of(
-          authActions.signout('', true),
-          uiActions.addToast({ kind: 'success', children: message }),
-        ),
+      .withLatestFrom(message$, (response, message) => message)
+      .map(message =>
+        uiActions.addToast({ kind: 'success', children: message }),
       ),
     successRes$.mapTo(uiActions.setLoaded()),
   ]).mergeAll();

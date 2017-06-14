@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import P from 'mcs-lite-ui/lib/P';
 import IconPlay from 'mcs-lite-icon/lib/IconPlay';
-import IconPause from 'mcs-lite-icon/lib/IconPause';
+import IconStop from 'mcs-lite-icon/lib/IconStop';
 import IconLogout from 'mcs-lite-icon/lib/IconLogout';
 import {
   Container,
@@ -31,11 +31,11 @@ const DashboardLayout = ({
       <StyledLogo />
       <HeaderItemWrapper>
         {isStarted
-          ? <HeaderItem onClick={stop}>
-              <IconPause size={18} />
+          ? <HeaderItem onClick={() => stop(t('stop.success'))}>
+              <IconStop size={18} />
               <P>{t('stop')}</P>
             </HeaderItem>
-          : <HeaderItem onClick={start}>
+          : <HeaderItem onClick={() => start(t('start.success'))}>
               <IconPlay size={18} />
               <P>{t('start')}</P>
             </HeaderItem>}

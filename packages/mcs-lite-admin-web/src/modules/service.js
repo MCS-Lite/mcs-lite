@@ -8,13 +8,15 @@ import { success, accessTokenSelector$ } from '../utils/cycleHelper';
 
 const START = 'mcs-lite-admin-web/service/START';
 const STOP = 'mcs-lite-admin-web/service/STOP';
-const SET_IS_STARTED = 'mcs-lite-admin-web/service/SET_IS_STARTED';
+const FETCH_IP_LIST = 'mcs-lite-admin-web/service/FETCH_IP_LIST';
+const SET_IP_LIST = 'mcs-lite-admin-web/service/SET_IP_LIST';
 const CLEAR = 'mcs-lite-admin-web/service/CLEAR';
 
 export const constants = {
   START,
   STOP,
-  SET_IS_STARTED,
+  FETCH_IP_LIST,
+  SET_IP_LIST,
   CLEAR,
 };
 
@@ -22,18 +24,17 @@ export const constants = {
 // 2. Action Creators (Sync)
 // ----------------------------------------------------------------------------
 
-const start = () => ({ type: START });
-const stop = () => ({ type: STOP });
-const setIsStarted = isStarted => ({
-  type: SET_IS_STARTED,
-  payload: isStarted,
-});
+const start = message => ({ type: START, payload: message });
+const stop = message => ({ type: STOP, payload: message });
+const fetchIpList = () => ({ type: FETCH_IP_LIST });
+const setIpList = ipList => ({ type: SET_IP_LIST, payload: ipList });
 const clear = () => ({ type: CLEAR });
 
 export const actions = {
   start,
   stop,
-  setIsStarted,
+  fetchIpList,
+  setIpList,
   clear,
 };
 
@@ -43,6 +44,10 @@ export const actions = {
 
 function startCycle(sources) {
   const accessToken$ = accessTokenSelector$(sources.STATE);
+
+  const message$ = sources.ACTION
+    .filter(action => action.type === START)
+    .pluck('payload');
 
   const request$ = sources.ACTION
     .filter(action => action.type === START)
@@ -56,9 +61,12 @@ function startCycle(sources) {
   const successRes$ = sources.HTTP.select(START).switchMap(success);
 
   const action$ = Observable.from([
-    request$.mapTo(uiActions.setLoading()),
-    successRes$.pluck('text').mapTo(setIsStarted(true)),
-    successRes$.mapTo(uiActions.setLoaded()),
+    successRes$
+      .withLatestFrom(message$, (response, message) => message)
+      .map(message =>
+        uiActions.addToast({ kind: 'success', children: message }),
+      ),
+    successRes$.mapTo(fetchIpList()),
   ]).mergeAll();
 
   return {
@@ -69,6 +77,10 @@ function startCycle(sources) {
 
 function stopCycle(sources) {
   const accessToken$ = accessTokenSelector$(sources.STATE);
+
+  const message$ = sources.ACTION
+    .filter(action => action.type === STOP)
+    .pluck('payload');
 
   const request$ = sources.ACTION
     .filter(action => action.type === STOP)
@@ -82,8 +94,37 @@ function stopCycle(sources) {
   const successRes$ = sources.HTTP.select(STOP).switchMap(success);
 
   const action$ = Observable.from([
+    successRes$
+      .withLatestFrom(message$, (response, message) => message)
+      .map(message =>
+        uiActions.addToast({ kind: 'success', children: message }),
+      ),
+    successRes$.mapTo(fetchIpList()),
+  ]).mergeAll();
+
+  return {
+    ACTION: action$,
+    HTTP: request$,
+  };
+}
+
+function fetchIpListCycle(sources) {
+  const accessToken$ = accessTokenSelector$(sources.STATE);
+
+  const request$ = sources.ACTION
+    .filter(action => action.type === FETCH_IP_LIST)
+    .combineLatest(accessToken$, (action, accessToken) => ({
+      url: '/api/ip',
+      method: 'GET',
+      headers: { Authorization: `Bearer ${accessToken}` },
+      category: FETCH_IP_LIST,
+    }));
+
+  const successRes$ = sources.HTTP.select(FETCH_IP_LIST).switchMap(success);
+
+  const action$ = Observable.from([
     request$.mapTo(uiActions.setLoading()),
-    successRes$.mapTo(setIsStarted(false)),
+    successRes$.pluck('body', 'data').map(setIpList),
     successRes$.mapTo(uiActions.setLoaded()),
   ]).mergeAll();
 
@@ -96,22 +137,19 @@ function stopCycle(sources) {
 export const cycles = {
   startCycle,
   stopCycle,
+  fetchIpListCycle,
 };
 
 // ----------------------------------------------------------------------------
 // 4. Reducer as default (State shaper)
 // ----------------------------------------------------------------------------
 
-const initialState = {
-  isStarted: false,
-};
+const initialState = [];
 
 export default function reducer(state = initialState, action = {}) {
   switch (action.type) {
-    case SET_IS_STARTED:
-      return {
-        isStarted: action.payload,
-      };
+    case SET_IP_LIST:
+      return action.payload;
     case CLEAR:
       return initialState;
     default:

@@ -3,7 +3,7 @@
 
 import { Observable } from 'rxjs/Observable';
 import { push } from 'react-router-redux';
-import { actions as ipsActions } from './ips';
+import { actions as serviceActions } from './service';
 import { actions as systemActions } from './system';
 import { actions as uiActions } from './ui';
 import cookieHelper from '../utils/cookieHelper';
@@ -66,7 +66,10 @@ function requireAuthCycle(sources) {
 
   const successRes$ = sources.HTTP.select(REQUIRE_AUTH).switchMap(success);
 
-  const action$ = successRes$.pluck('body', 'results').map(setUserInfo);
+  const action$ = Observable.from([
+    successRes$.pluck('body', 'results').map(setUserInfo),
+    successRes$.mapTo(serviceActions.fetchIpList()),
+  ]).mergeAll();
 
   return {
     ACTION: action$,
@@ -104,7 +107,7 @@ function signoutCycle(sources) {
       Observable.of(
         push('/login'),
         clear(),
-        ipsActions.clear(),
+        serviceActions.clear(),
         systemActions.clear(),
       ),
     )

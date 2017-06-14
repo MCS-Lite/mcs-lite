@@ -8,7 +8,7 @@ exports[`should renders <DashboardLayout> correctly when started 1`] = `
       <styled.div
         onClick={[Function]}
       >
-        <IconPause
+        <IconStop
           size={18}
         />
         <P>

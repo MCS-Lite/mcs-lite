@@ -10,7 +10,7 @@ Object {
 
 exports[`should return props correctly with mapStateToProps 1`] = `
 Object {
-  "ips": Array [],
   "isLoading": false,
+  "service": Array [],
 }
 `;
