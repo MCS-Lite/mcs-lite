@@ -17,7 +17,7 @@
   "devDependencies": {
     "babel-eslint": "^7.2.3",
     "codecov": "^2.2.0",
-    "danger": "^0.21.0",
+    "danger": "^0.18.0",
     "eslint": "^3.19.0",
     "eslint-config-airbnb": "^15.0.1",
     "eslint-config-prettier": "^2.1.1",
