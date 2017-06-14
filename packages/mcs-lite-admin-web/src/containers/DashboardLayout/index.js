@@ -1,5 +1,6 @@
 import { connect } from 'react-redux';
 import compose from 'recompose/compose';
+import R from 'ramda';
 import { withGetMessages } from 'react-intl-inject-hoc';
 import messages from './messages';
 import { actions as authActions } from '../../modules/auth';
@@ -7,7 +8,7 @@ import { actions as serviceActions } from '../../modules/service';
 import DashboardLayout from './DashboardLayout';
 
 export const mapStateToProps = ({ service }) => ({
-  isStarted: service.isStarted,
+  isStarted: R.complement(R.isEmpty)(service),
 });
 
 export const mapDispatchToProps = {

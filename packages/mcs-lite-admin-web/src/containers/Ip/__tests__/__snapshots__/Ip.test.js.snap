@@ -36,9 +36,15 @@ exports[`should renders <Ip> correctly with ip 1`] = `
       </tr>
     </tbody>
   </Table>
-  <Styled(Button)>
-    goToMCSLite
-  </Styled(Button)>
+  <a
+    href="//127.0.0.1"
+    rel="noreferrer noopener"
+    target="_blank"
+  >
+    <Styled(Button)>
+      goToMCSLite
+    </Styled(Button)>
+  </a>
 </div>
 `;
 
@@ -67,8 +73,5 @@ exports[`should renders <Ip> correctly without ip 1`] = `
     </thead>
     <tbody />
   </Table>
-  <Styled(Button)>
-    goToMCSLite
-  </Styled(Button)>
 </div>
 `;

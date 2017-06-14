@@ -33,8 +33,20 @@
     "filepath": "src/containers/DashboardLayout/messages.js"
   },
   {
+    "id": "DashboardLayout.start.success",
+    "description": "Toast",
+    "defaultMessage": "成功！服務已啟動。",
+    "filepath": "src/containers/DashboardLayout/messages.js"
+  },
+  {
     "id": "DashboardLayout.stop",
     "defaultMessage": "停止",
+    "filepath": "src/containers/DashboardLayout/messages.js"
+  },
+  {
+    "id": "DashboardLayout.stop.success",
+    "description": "Toast",
+    "defaultMessage": "成功！服務已停止。",
     "filepath": "src/containers/DashboardLayout/messages.js"
   },
   {

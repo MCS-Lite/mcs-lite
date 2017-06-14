@@ -5,9 +5,19 @@ const messages = defineMessages({
     id: 'DashboardLayout.start',
     defaultMessage: '啟動',
   },
+  'DashboardLayout.start.success': {
+    id: 'DashboardLayout.start.success',
+    description: 'Toast',
+    defaultMessage: '成功！服務已啟動。',
+  },
   'DashboardLayout.stop': {
     id: 'DashboardLayout.stop',
     defaultMessage: '停止',
+  },
+  'DashboardLayout.stop.success': {
+    id: 'DashboardLayout.stop.success',
+    description: 'Toast',
+    defaultMessage: '成功！服務已停止。',
   },
   'DashboardLayout.ipConnection': {
     id: 'DashboardLayout.ipConnection',

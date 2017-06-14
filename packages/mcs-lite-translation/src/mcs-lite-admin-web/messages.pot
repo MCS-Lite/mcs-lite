@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"POT-Creation-Date: 2017-06-09T08:36:13.966Z\n"
+"POT-Creation-Date: 2017-06-14T05:49:16.040Z\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "MIME-Version: 1.0\n"
@@ -118,6 +118,20 @@ msgstr ""
 #. defaultMessage is:
 #. 建立管理者帳戶
 msgid "建立管理者帳戶"
+msgstr ""
+
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+#. [DashboardLayout.stop.success] - Toast
+#. defaultMessage is:
+#. 成功！服務已停止。
+msgid "成功！服務已停止。"
+msgstr ""
+
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+#. [DashboardLayout.start.success] - Toast
+#. defaultMessage is:
+#. 成功！服務已啟動。
+msgid "成功！服務已啟動。"
 msgstr ""
 
 #: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
