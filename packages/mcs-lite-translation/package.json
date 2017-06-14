@@ -1,6 +1,6 @@
 {
   "name": "mcs-lite-translation",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "I18n workflow with React-Intl used by MCS Lite",
   "repository": "MCS-Lite/mcs-lite",
   "author": "Michael Hsu <evenchange4@gmail.com>",
