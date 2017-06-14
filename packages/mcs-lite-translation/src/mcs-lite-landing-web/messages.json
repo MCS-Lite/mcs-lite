@@ -1,0 +1,7 @@
+[
+  {
+    "id": "App.welcome",
+    "defaultMessage": "Welcome",
+    "filepath": "src/messages.js"
+  }
+]

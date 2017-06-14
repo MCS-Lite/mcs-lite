@@ -1,0 +1,15 @@
+msgid ""
+msgstr ""
+"POT-Creation-Date: 2017-06-13T05:55:36.641Z\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"MIME-Version: 1.0\n"
+"X-Generator: react-intl-po\n"
+
+
+#: ../mcs-lite-translation/src/mcs-lite-landing-web/messages.json
+#. [App.welcome]
+#. defaultMessage is:
+#. Welcome
+msgid "Welcome"
+msgstr ""
