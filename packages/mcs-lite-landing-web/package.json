@@ -11,6 +11,8 @@
   },
   "license": "MIT",
   "devDependencies": {
+    "browser-locale": "^1.0.2",
+    "hedron": "^0.7.1",
     "history": "^3.2.1",
     "mcs-lite-icon": "^0.3.4",
     "mcs-lite-theme": "^0.3.4",
