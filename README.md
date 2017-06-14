@@ -108,7 +108,8 @@ $ npm i mcs-lite-ui mcs-lite-icon mcs-lite-theme --save
 ## Development
 
 ```
-$ yarn # Install all external dependencies of each package.
+# Install all external dependencies of each package.
+$ yarn install --pure-lockfile
 ```
 
 ```
