@@ -1,5 +1,32 @@
 # MCS Lite changelogs
 
+## Released (2017-06-14)
+
+#### :rocket: New Feature
+* `mcs-lite-admin-web`, `mcs-lite-mobile-web`, `mcs-lite-translation`
+  * [#361](https://github.com/MCS-Lite/mcs-lite/pull/361) feat(i18n): add auto detect & language selectors. ([@evenchange4](https://github.com/evenchange4))
+* `mcs-lite-landing-web`, `mcs-lite-translation`
+  * [#358](https://github.com/MCS-Lite/mcs-lite/pull/358) feat(landing): add new landing page project. ([@evenchange4](https://github.com/evenchange4))
+
+#### :bug: Bug Fix
+* `mcs-lite-admin-web`, `mcs-lite-translation`
+  * [#360](https://github.com/MCS-Lite/mcs-lite/pull/360) fix(Admin/Service): merge ip list to service module. ([@evenchange4](https://github.com/evenchange4))
+* `eslint-config-mcs-lite`, `mcs-lite-admin-web`, `mcs-lite-landing-web`, `mcs-lite-mobile-web`, `mcs-lite-ui`
+  * [#357](https://github.com/MCS-Lite/mcs-lite/pull/357) fix(UI/Storybook): upgrade ncu & update react to 15.6.0. ([@evenchange4](https://github.com/evenchange4))
+* `babel-preset-mcs-lite`, `mcs-lite-scripts`, `mcs-lite-translation`
+  * [#355](https://github.com/MCS-Lite/mcs-lite/pull/355) fix(mcs-lite-script): wrong error handle. ([@evenchange4](https://github.com/evenchange4))
+* Other
+  * [#354](https://github.com/MCS-Lite/mcs-lite/pull/354) fix(flow): update styled-components 2. ([@evenchange4](https://github.com/evenchange4))
+
+#### :nail_care: Enhancement
+* `mcs-lite-admin-web`, `mcs-lite-mobile-web`, `mcs-lite-translation`
+  * [#353](https://github.com/MCS-Lite/mcs-lite/pull/353) refactor(Web/CRA): error handle && disable remove sourcemap for debug (#353). ([@evenchange4](https://github.com/evenchange4))
+
+#### Committers: 1
+- Michael Hsu ([evenchange4](https://github.com/evenchange4))
+
+----
+
 ## Released (2017-06-09)
 
 ### Bump Versions
