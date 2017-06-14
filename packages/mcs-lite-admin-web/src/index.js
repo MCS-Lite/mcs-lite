@@ -17,6 +17,7 @@ import { createHistory } from 'history';
 import useScroll from 'react-router-scroll/lib/useScroll';
 import { syncHistoryWithStore } from 'react-router-redux';
 import { ThemeProvider } from 'styled-components';
+import browserLocale from 'browser-locale';
 import IntlProvider from './containers/IntlProvider';
 import { theme } from 'mcs-lite-theme';
 import App from './containers/App';
@@ -25,6 +26,7 @@ import Ip from './containers/Ip';
 import System from './containers/System';
 import Signin from './containers/Signin';
 import Signup from './containers/Signup';
+import Language from './containers/Language';
 import RequireAuth from './containers/RequireAuth';
 import configureStore from './store/configureStore';
 import { constants } from './modules/routing';
@@ -37,6 +39,7 @@ import registerServiceWorker from './registerServiceWorker';
 // ----------------------------------------------------------------------------
 export const BASENAME = '/admin';
 export const ROOT_ID = 'root';
+const DEFAULT_LOCALE = browserLocale() || constants.DEFAULT_LOCALE;
 
 // ----------------------------------------------------------------------------
 // 2. Redux store
@@ -51,7 +54,7 @@ const render = applyRouterMiddleware(useScroll());
 // ----------------------------------------------------------------------------
 ReactDOM.render(
   <Provider store={store}>
-    <IntlProvider defaultLocale={constants.DEFAULT_LOCALE}>
+    <IntlProvider defaultLocale={DEFAULT_LOCALE}>
       <ThemeProvider theme={theme}>
         <Router history={routerHistory} render={render}>
           <Route component={App}>
@@ -62,6 +65,7 @@ ReactDOM.render(
                 <IndexRedirect to="ip" />
                 <Route path="ip" component={Ip} />
                 <Route path="system" component={System} />
+                <Route path="language" component={Language} />
               </Route>
             </Route>
           </Route>

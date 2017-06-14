@@ -14,7 +14,7 @@ import {
   FakeInput,
   ButtonWrapper,
 } from './styled-components';
-import updatePathname from '../../utils/updatePathname';
+import { updatePathname } from '../../utils/routerHelper';
 import localTimeFormat from '../../utils/localTimeFormat';
 import StyledLink from '../../components/StyledLink';
 

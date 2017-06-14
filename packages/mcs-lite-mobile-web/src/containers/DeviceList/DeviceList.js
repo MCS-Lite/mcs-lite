@@ -20,7 +20,7 @@ import {
   PlaceholdWrapper,
 } from './styled-components';
 import StyledLink from '../../components/StyledLink';
-import updatePathname from '../../utils/updatePathname';
+import { updatePathname } from '../../utils/routerHelper';
 import resolveImage from '../../utils/resolveImage';
 import BANNER_IMAGE from '../../statics/images/banner.svg';
 

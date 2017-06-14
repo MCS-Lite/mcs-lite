@@ -33,6 +33,16 @@ exports[`should renders <DashboardLayout> correctly when started 1`] = `
       </div>
       <div>
         <Styled(Styled(Link))
+          to={[Function]}
+        >
+          <IconPublic
+            size={18}
+          />
+          <P>
+            Language
+          </P>
+        </Styled(Styled(Link))>
+        <Styled(Styled(Link))
           onClick={[Function]}
         >
           <IconLogout
@@ -83,6 +93,16 @@ exports[`should renders <DashboardLayout> correctly when stopped 1`] = `
         </Styled(Link)>
       </div>
       <div>
+        <Styled(Styled(Link))
+          to={[Function]}
+        >
+          <IconPublic
+            size={18}
+          />
+          <P>
+            Language
+          </P>
+        </Styled(Styled(Link))>
         <Styled(Styled(Link))
           onClick={[Function]}
         >

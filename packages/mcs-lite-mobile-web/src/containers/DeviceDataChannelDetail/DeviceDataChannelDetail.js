@@ -21,7 +21,7 @@ import {
   ChartWrapper,
 } from './styled-components';
 import WebSocketNotification from '../../components/WebSocketNotification';
-import updatePathname from '../../utils/updatePathname';
+import { updatePathname } from '../../utils/routerHelper';
 import dataChannelTypeMapper from '../../utils/dataChannelTypeMapper';
 import localTimeFormat from '../../utils/localTimeFormat';
 import areaChartTypeMapper from '../../utils/areaChartTypeMapper';

@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should renders <LocaleFooter> correctly 1`] = `
+<styled.div>
+  <Link
+    onlyActiveOnIndex={false}
+    style={Object {}}
+    to={[Function]}
+  >
+    <Small>
+      English
+    </Small>
+  </Link>
+  <Link
+    onlyActiveOnIndex={false}
+    style={Object {}}
+    to={[Function]}
+  >
+    <Small>
+      繁體中文
+    </Small>
+  </Link>
+  <Link
+    onlyActiveOnIndex={false}
+    style={Object {}}
+    to={[Function]}
+  >
+    <Small>
+      简体中文
+    </Small>
+  </Link>
+</styled.div>
+`;
