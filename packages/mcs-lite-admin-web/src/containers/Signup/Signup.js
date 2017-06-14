@@ -11,6 +11,7 @@ import {
   Form,
 } from '../Signin/styled-components';
 import validators from './validators';
+import LocaleFooter from '../../components/LocaleFooter';
 
 class Signup extends React.Component {
   static propTypes = {
@@ -82,6 +83,8 @@ class Signup extends React.Component {
           />
           <Button component="input" type="submit" value={t('signup')} block />
         </Form>
+
+        <LocaleFooter />
       </Layout>
     );
   }

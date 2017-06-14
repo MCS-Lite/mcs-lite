@@ -9,7 +9,7 @@ import Helmet from 'react-helmet';
 import { Link } from 'react-router';
 import StyledLink from '../../components/StyledLink';
 import { Container, Label, ButtonWrapper, StyledP } from './styled-components';
-import updatePathname from '../../utils/updatePathname';
+import { updatePathname } from '../../utils/routerHelper';
 import validators from './validators';
 
 class Password extends React.Component {

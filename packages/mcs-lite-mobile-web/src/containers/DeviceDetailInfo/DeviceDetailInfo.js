@@ -7,7 +7,7 @@ import MobileHeader from 'mcs-lite-ui/lib/MobileHeader';
 import IconArrowLeft from 'mcs-lite-icon/lib/IconArrowLeft';
 import { Link } from 'react-router';
 import { Container } from './styled-components';
-import updatePathname from '../../utils/updatePathname';
+import { updatePathname } from '../../utils/routerHelper';
 
 class DeviceDetailInfo extends React.Component {
   static propTypes = {

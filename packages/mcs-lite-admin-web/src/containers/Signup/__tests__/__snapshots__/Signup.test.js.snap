@@ -73,6 +73,7 @@ exports[`should renders <Signup> correctly 1`] = `
       value="signup"
     />
   </styled.form>
+  <LocaleFooter />
 </styled.div>
 `;
 
@@ -151,5 +152,6 @@ exports[`should renders <Signup> correctly with errorMessage 1`] = `
       value="signup"
     />
   </styled.form>
+  <LocaleFooter />
 </styled.div>
 `;

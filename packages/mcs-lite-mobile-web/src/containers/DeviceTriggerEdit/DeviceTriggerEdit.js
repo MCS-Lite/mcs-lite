@@ -19,7 +19,7 @@ import {
   ScaledSwitch,
   StyledHr,
 } from './styled-components';
-import updatePathname from '../../utils/updatePathname';
+import { updatePathname } from '../../utils/routerHelper';
 
 class DeviceTriggerEdit extends React.Component {
   static propTypes = {

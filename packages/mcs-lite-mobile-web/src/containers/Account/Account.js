@@ -12,7 +12,7 @@ import {
   VersionWrapper,
   FlatButton,
 } from './styled-components';
-import updatePathname from '../../utils/updatePathname';
+import { updatePathname } from '../../utils/routerHelper';
 
 const VERSION = process.env.REACT_APP_VERSION;
 

@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"POT-Creation-Date: 2017-06-14T05:49:16.040Z\n"
+"POT-Creation-Date: 2017-06-14T08:32:41.437Z\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "MIME-Version: 1.0\n"
@@ -72,6 +72,13 @@ msgstr ""
 #. defaultMessage is:
 #. 儲存
 msgid "儲存"
+msgstr ""
+
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+#. [Language.switch] - Document Title
+#. defaultMessage is:
+#. 切換語言
+msgid "切換語言"
 msgstr ""
 
 #: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
@@ -269,4 +276,11 @@ msgstr ""
 #. defaultMessage is:
 #. 註冊
 msgid "註冊"
+msgstr ""
+
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+#. [Language.select]
+#. defaultMessage is:
+#. 選擇語言
+msgid "選擇語言"
 msgstr ""

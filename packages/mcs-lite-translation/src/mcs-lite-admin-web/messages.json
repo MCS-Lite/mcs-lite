@@ -102,6 +102,17 @@
     "filepath": "src/containers/Ip/messages.js"
   },
   {
+    "id": "Language.switch",
+    "description": "Document Title",
+    "defaultMessage": "切換語言",
+    "filepath": "src/containers/Language/messages.js"
+  },
+  {
+    "id": "Language.select",
+    "defaultMessage": "選擇語言",
+    "filepath": "src/containers/Language/messages.js"
+  },
+  {
     "id": "Signin.signin",
     "description": "Document Title",
     "defaultMessage": "登入",

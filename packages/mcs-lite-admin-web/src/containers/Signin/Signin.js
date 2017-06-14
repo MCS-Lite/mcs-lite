@@ -10,6 +10,7 @@ import {
   Layout,
   Form,
 } from './styled-components';
+import LocaleFooter from '../../components/LocaleFooter';
 
 class Signin extends React.Component {
   static propTypes = {
@@ -58,6 +59,8 @@ class Signin extends React.Component {
           />
           <Button component="input" type="submit" value={t('signin')} block />
         </Form>
+
+        <LocaleFooter />
       </Layout>
     );
   }

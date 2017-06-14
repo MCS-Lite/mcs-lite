@@ -1,5 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`should override locale 1`] = `
+Object {
+  "pathname": "/devices",
+  "query": Object {
+    "locale": "en",
+  },
+}
+`;
+
 exports[`should override pathname 1`] = `
 Object {
   "pathname": "/account",

@@ -1,5 +1,4 @@
 // @flow
-import assocPath from 'ramda/src/assocPath';
 
 type Func = string => Object => Object;
 
@@ -15,6 +14,12 @@ type Func = string => Object => Object;
  * @author Michael Hsu
  */
 
-const updatePathname: Func = pathname => assocPath(['pathname'], pathname);
+export const updatePathname: Func = pathname => location => {
+  const { locale } = location.query;
+  return { pathname, query: { locale } };
+};
 
-export default updatePathname;
+export const updateLocale: Func = locale => location => {
+  const { pathname } = location;
+  return { pathname, query: { locale } };
+};

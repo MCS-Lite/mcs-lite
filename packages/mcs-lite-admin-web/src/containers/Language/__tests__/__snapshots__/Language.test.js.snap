@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should renders <Language> correctly 1`] = `
+<div>
+  <HelmetWrapper
+    encodeSpecialCharacters={true}
+  >
+    <title>
+      switch
+    </title>
+  </HelmetWrapper>
+  <DashboardTitle
+    title="switch"
+  />
+  <DashboardDesc>
+    select
+  </DashboardDesc>
+  <styled.div>
+    <Link
+      onlyActiveOnIndex={false}
+      style={Object {}}
+      to={[Function]}
+    >
+      <input
+        checked={true}
+        readOnly={true}
+        type="radio"
+        value="en"
+      />
+      English
+    </Link>
+    <Link
+      onlyActiveOnIndex={false}
+      style={Object {}}
+      to={[Function]}
+    >
+      <input
+        checked={false}
+        readOnly={true}
+        type="radio"
+        value="zh-TW"
+      />
+      繁體中文
+    </Link>
+    <Link
+      onlyActiveOnIndex={false}
+      style={Object {}}
+      to={[Function]}
+    >
+      <input
+        checked={false}
+        readOnly={true}
+        type="radio"
+        value="zh-CN"
+      />
+      简体中文
+    </Link>
+  </styled.div>
+</div>
+`;

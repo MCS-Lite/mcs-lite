@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should return messages 1`] = `
+Object {
+  "Language.select": Object {
+    "defaultMessage": "選擇語言",
+    "id": "Language.select",
+  },
+  "Language.switch": Object {
+    "defaultMessage": "切換語言",
+    "description": "Document Title",
+    "id": "Language.switch",
+  },
+}
+`;

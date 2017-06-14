@@ -10,7 +10,7 @@ import MobileHeader from 'mcs-lite-ui/lib/MobileHeader';
 import { Link } from 'react-router';
 import StyledLink from '../../components/StyledLink';
 import { Item, StyledSamll, IconWrapper } from './styled-components';
-import updatePathname from '../../utils/updatePathname';
+import { updatePathname } from '../../utils/routerHelper';
 
 class DeviceTrigger extends React.Component {
   static propTypes = {

@@ -5,7 +5,7 @@ import Transition from 'react-motion-ui-pack';
 import IconClose from 'mcs-lite-icon/lib/IconClose';
 import MobileContentWrapper from 'mcs-lite-ui/lib/MobileContentWrapper';
 import StyledLink from '../StyledLink';
-import updatePathname from '../../utils/updatePathname';
+import { updatePathname } from '../../utils/routerHelper';
 
 const Container = styled(MobileContentWrapper)`
   height: 100%;

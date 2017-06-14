@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import P from 'mcs-lite-ui/lib/P';
 import IconPlay from 'mcs-lite-icon/lib/IconPlay';
 import IconStop from 'mcs-lite-icon/lib/IconStop';
+import IconPublic from 'mcs-lite-icon/lib/IconPublic';
 import IconLogout from 'mcs-lite-icon/lib/IconLogout';
 import {
   Container,
@@ -16,7 +17,7 @@ import {
   Main,
   StyledLogo,
 } from './styled-components';
-import updatePathname from '../../utils/updatePathname';
+import { updatePathname } from '../../utils/routerHelper';
 
 const DashboardLayout = ({
   start,
@@ -55,6 +56,10 @@ const DashboardLayout = ({
             <IconSync size={18} />
             <P>{t('versionCheck')}</P>
           </NavItemControl> */}
+          <NavItemControl to={updatePathname('/language')}>
+            <IconPublic size={18} />
+            <P>Language</P>
+          </NavItemControl>
           <NavItemControl onClick={() => signout(t('confirm'))}>
             <IconLogout size={18} />
             <P>{t('signoutService')}</P>
