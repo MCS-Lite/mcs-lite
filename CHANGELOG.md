@@ -2,6 +2,21 @@
 
 ## Released (2017-06-14)
 
+-   babel-preset-mcs-lite: 0.3.3 => 0.3.4
+-   eslint-config-mcs-lite: 0.5.0 => 0.5.1
+-   mcs-lite-admin-web: 0.1.2 => 0.1.3
+-   mcs-lite-connect: 0.3.3 => 0.3.4
+-   mcs-lite-design: 0.2.0 => 0.2.1
+-   mcs-lite-icon: 0.3.3 => 0.3.4
+-   mcs-lite-landing-web: 0.0.0 => 0.0.1 (private) 👊
+-   mcs-lite-mobile-web: 0.4.4 => 0.4.5
+-   mcs-lite-scripts: 0.3.3 => 0.3.4
+-   mcs-lite-theme: 0.3.3 => 0.3.4
+-   mcs-lite-translation: 0.1.1 => 0.1.2
+-   mcs-lite-ui: 0.4.3 => 0.4.4
+-   react-intl-cra: 0.2.3 => 0.2.4
+-   react-intl-inject-hoc: 0.2.3 => 0.2.4
+
 #### :rocket: New Feature
 * `mcs-lite-admin-web`, `mcs-lite-mobile-web`, `mcs-lite-translation`
   * [#361](https://github.com/MCS-Lite/mcs-lite/pull/361) feat(i18n): add auto detect & language selectors. ([@evenchange4](https://github.com/evenchange4))
