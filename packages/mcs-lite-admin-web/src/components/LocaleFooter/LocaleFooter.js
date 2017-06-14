@@ -18,8 +18,8 @@ const Wrapper = styled.div`
   }
 
   > a:not(:last-child) {
-    &:after {
-      content: '\\00a0·\\00a0';
+    &::after {
+      content: "\\00a0·\\00a0";
     }
   }
 `;

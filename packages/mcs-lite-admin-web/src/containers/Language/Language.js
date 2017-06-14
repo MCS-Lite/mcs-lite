@@ -16,7 +16,7 @@ const Wrapper = styled.div`
   input {
     margin-right: 5px;
 
-    /* fix for click radio*/
+    /* fix for click radio */
     pointer-events: none;
   }
 
