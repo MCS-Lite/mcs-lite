@@ -17,7 +17,6 @@ import { createHistory } from 'history';
 import useScroll from 'react-router-scroll/lib/useScroll';
 import { syncHistoryWithStore } from 'react-router-redux';
 import { ThemeProvider } from 'styled-components';
-import browserLocale from 'browser-locale';
 import IntlProvider from './containers/IntlProvider';
 import mobileTheme from './utils/mobileTheme';
 import Layout from './components/Layout';
@@ -44,7 +43,6 @@ import registerServiceWorker from './registerServiceWorker';
 // ----------------------------------------------------------------------------
 export const BASENAME = '/mobile';
 export const ROOT_ID = 'root';
-const DEFAULT_LOCALE = browserLocale() || constants.DEFAULT_LOCALE;
 
 // ----------------------------------------------------------------------------
 // 2. Redux store
@@ -59,7 +57,7 @@ const render = applyRouterMiddleware(useScroll());
 // ----------------------------------------------------------------------------
 ReactDOM.render(
   <Provider store={store}>
-    <IntlProvider defaultLocale={DEFAULT_LOCALE}>
+    <IntlProvider defaultLocale={constants.DEFAULT_LOCALE}>
       <ThemeProvider theme={mobileTheme}>
         <Router history={routerHistory} render={render}>
           <Route component={App}>
