@@ -2,6 +2,6 @@
   {
     "id": "App.welcome",
     "defaultMessage": "Welcome",
-    "filepath": "src/messages.js"
+    "filepath": "src/containers/App/messages.js"
   }
 ]

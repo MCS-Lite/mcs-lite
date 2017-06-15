@@ -5,20 +5,40 @@ import React from 'react';
 import { render } from 'react-snapshot';
 import { Router, Route, useRouterHistory, IndexRedirect } from 'react-router';
 import { createHistory } from 'history';
-import App from './App';
-import registerServiceWorker from './registerServiceWorker';
+import browserLocale from 'browser-locale';
+import { ThemeProvider } from 'styled-components';
+import { BreakpointProvider } from 'hedron';
+import { theme } from 'mcs-lite-theme';
 import IntlProvider from './containers/IntlProvider';
+import App from './containers/App';
+import registerServiceWorker from './registerServiceWorker';
+import './style';
 import './utils/i18n';
+
+// ----------------------------------------------------------------------------
+// 1. Constants
+// ----------------------------------------------------------------------------
+
+const DEFAULT_LOCALE = browserLocale() || 'en';
+const BREAKPOINTS = { sm: 300, md: 568, lg: 1200 };
+
+// ----------------------------------------------------------------------------
+// 2. React render
+// ----------------------------------------------------------------------------
 
 const history = useRouterHistory(createHistory)();
 
 render(
-  <Router history={history}>
-    <Route path="/" component={IntlProvider}>
-      <IndexRedirect to="en" />
-      <Route path=":locale" component={App} />
-    </Route>
-  </Router>,
+  <ThemeProvider theme={theme}>
+    <BreakpointProvider breakpoints={BREAKPOINTS}>
+      <Router history={history}>
+        <Route path="/" component={IntlProvider}>
+          <IndexRedirect to={DEFAULT_LOCALE} />
+          <Route path=":locale" component={App} />
+        </Route>
+      </Router>
+    </BreakpointProvider>
+  </ThemeProvider>,
   document.getElementById('root'),
 );
 registerServiceWorker();
