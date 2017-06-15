@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { withGetMessages } from 'react-intl-inject-hoc';
 import { Link } from 'react-router';
+import Helmet from 'react-helmet';
 import { Page, Row, Column } from 'hedron';
 import ScrollOverPack from 'rc-scroll-anim/lib/ScrollOverPack';
 import ScrollParallax from 'rc-scroll-anim/lib/ScrollParallax';
@@ -10,6 +11,11 @@ import messages from './messages';
 
 const App = ({ getMessages: t }) =>
   <Page width="200px">
+    {/* 1. Helmet */}
+    <Helmet titleTemplate={`%s | ${t('titleTemplate')}`}>
+      <title>{t('welcome')}</title>
+    </Helmet>
+
     <Row>
       <Column sm={8} smShift={2} lg={6} lgShift={3}>
         <h1>
