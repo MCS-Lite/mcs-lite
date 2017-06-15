@@ -15,11 +15,11 @@ type Func = string => Object => Object;
  */
 
 export const updatePathname: Func = pathname => location => {
-  const { locale } = location.query;
-  return { pathname, query: { locale } };
+  const locale = location.query.locale;
+  return { pathname, query: { ...location.query, locale } };
 };
 
 export const updateLocale: Func = locale => location => {
-  const { pathname } = location;
-  return { pathname, query: { locale } };
+  const pathname = location.pathname;
+  return { pathname, query: { ...location.query, locale } };
 };

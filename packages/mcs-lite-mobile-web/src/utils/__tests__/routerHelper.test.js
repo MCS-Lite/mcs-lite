@@ -8,10 +8,13 @@ it('should return functions', () => {
 it('should override pathname', () => {
   const mockLocation = {
     pathname: '/devices',
-    query: { locale: 'zh-TW' },
+    query: { locale: 'zh-TW', other: 123 },
   };
 
-  expect(updatePathname('/account')(mockLocation)).toMatchSnapshot();
+  expect(updatePathname('/account')(mockLocation)).toEqual({
+    pathname: '/account',
+    query: { locale: 'zh-TW', other: 123 },
+  });
 });
 
 it('should override locale', () => {
@@ -20,5 +23,20 @@ it('should override locale', () => {
     query: { locale: 'zh-TW' },
   };
 
-  expect(updateLocale('en')(mockLocation)).toMatchSnapshot();
+  expect(updateLocale('en')(mockLocation)).toEqual({
+    pathname: '/devices',
+    query: { locale: 'en' },
+  });
+});
+
+it('should override locale and keep others', () => {
+  const mockLocation = {
+    pathname: '/devices',
+    query: { other: 123 },
+  };
+
+  expect(updateLocale('en')(mockLocation)).toEqual({
+    pathname: '/devices',
+    query: { locale: 'en', other: 123 },
+  });
 });
