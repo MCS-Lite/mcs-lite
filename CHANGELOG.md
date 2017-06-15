@@ -1,5 +1,21 @@
 # MCS Lite changelogs
 
+## Released (2017-06-15)
+
+#### :rocket: New Feature
+* `mcs-lite-admin-web`, `mcs-lite-landing-web`, `mcs-lite-mobile-web`, `mcs-lite-translation`
+  * [#362](https://github.com/MCS-Lite/mcs-lite/pull/362) feat(Landing): add grid & scroll libraries & react-helmet & shrink-to-fit=no. ([@evenchange4](https://github.com/evenchange4))
+
+#### :bug: Bug Fix
+* `mcs-lite-admin-web`, `mcs-lite-mobile-web`
+  * [#364](https://github.com/MCS-Lite/mcs-lite/pull/364) fix(i18n): add mapping locale rules. ([@evenchange4](https://github.com/evenchange4))
+  * [#363](https://github.com/MCS-Lite/mcs-lite/pull/363) 	fix(Routing): should keep original query params while routing. ([@evenchange4](https://github.com/evenchange4))
+
+#### Committers: 1
+- Michael Hsu ([evenchange4](https://github.com/evenchange4))
+
+----
+
 ## Released (2017-06-14)
 
 -   babel-preset-mcs-lite: 0.3.3 => 0.3.4
