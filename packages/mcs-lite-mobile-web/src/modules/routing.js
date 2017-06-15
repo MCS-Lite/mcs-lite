@@ -41,16 +41,17 @@ function localeCycle(sources) {
     .pluck('pathname')
     .distinctUntilChanged();
 
-  const locale$ = sources.STATE
-    .map(R.path(['routing', 'locationBeforeTransitions', 'query', 'locale']))
+  const query$ = sources.STATE
+    .map(R.path(['routing', 'locationBeforeTransitions', 'query']))
     .filter(d => !!d)
-    .startWith(DEFAULT_LOCALE) // Case2
-    .distinctUntilChanged();
+    .filter(R.complement(R.isEmpty))
+    .startWith({})
+    .distinctUntilChanged(R.equals);
 
-  const action$ = locale$
-    .combineLatest(pathnameWithoutLocale$, (locale, pathname) => ({
+  const action$ = pathnameWithoutLocale$
+    .combineLatest(query$, (pathname, query) => ({
       pathname,
-      query: { locale },
+      query: { locale: DEFAULT_LOCALE, ...query }, // Case2
     }))
     .map(location => push(location));
 

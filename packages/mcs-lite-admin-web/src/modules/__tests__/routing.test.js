@@ -28,7 +28,7 @@ describe('ui - 3. Cycle', () => {
         routing: {
           locationBeforeTransitions: {
             pathname: '/a',
-            query: {},
+            query: { query: '123' },
           },
         },
       },
@@ -36,14 +36,15 @@ describe('ui - 3. Cycle', () => {
 
     const actionSink = {
       x: push({ pathname: '/a', query: { locale: 'zh-TW' } }),
+      y: push({ pathname: '/a', query: { locale: 'zh-TW', query: '123' } }),
     };
 
     // prettier-ignore
     assertSourcesSinks(
       {
-        STATE:  { 'is|': stateSource },
+        STATE:  { 'is---|': stateSource },
       },
-      { ACTION: { '-x|': actionSink } },
+      { ACTION: { '-(xy)|': actionSink } },
       cycles.localeCycle, done,
     );
   });
