@@ -9,18 +9,28 @@ import browserLocale from 'browser-locale';
 import { ThemeProvider } from 'styled-components';
 import { BreakpointProvider } from 'hedron';
 import { theme } from 'mcs-lite-theme';
-import App from './App';
-import registerServiceWorker from './registerServiceWorker';
 import IntlProvider from './containers/IntlProvider';
+import App from './containers/App';
+import registerServiceWorker from './registerServiceWorker';
 import './style';
 import './utils/i18n';
 
-const history = useRouterHistory(createHistory)();
+// ----------------------------------------------------------------------------
+// 1. Constants
+// ----------------------------------------------------------------------------
+
 const DEFAULT_LOCALE = browserLocale() || 'en';
+const BREAKPOINTS = { sm: 300, md: 568, lg: 1200 };
+
+// ----------------------------------------------------------------------------
+// 2. React render
+// ----------------------------------------------------------------------------
+
+const history = useRouterHistory(createHistory)();
 
 render(
   <ThemeProvider theme={theme}>
-    <BreakpointProvider breakpoints={{ sm: 300, md: 568, lg: 1200 }}>
+    <BreakpointProvider breakpoints={BREAKPOINTS}>
       <Router history={history}>
         <Route path="/" component={IntlProvider}>
           <IndexRedirect to={DEFAULT_LOCALE} />

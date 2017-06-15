@@ -21,6 +21,7 @@
     "normalize.css": "^7.0.0",
     "prop-types": "^15.5.10",
     "ramda": "^0.24.1",
+    "rc-scroll-anim": "^1.0.5",
     "react": "^15.6.0",
     "react-dom": "^15.6.0",
     "react-intl": "^2.3.0",
