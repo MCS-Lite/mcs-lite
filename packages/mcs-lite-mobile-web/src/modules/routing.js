@@ -1,8 +1,11 @@
 import { push } from 'react-router-redux';
 import R from 'ramda';
 import { LOCATION_CHANGE } from 'react-router-redux/lib/reducer';
+import getBrowserLocale from 'browser-locale';
+import localeMapper from '../utils/localeMapper';
 
 const DEFAULT_LOCALE = 'zh-TW';
+const browserLocale = getBrowserLocale();
 
 // ----------------------------------------------------------------------------
 // 1. Constants
@@ -51,7 +54,10 @@ function localeCycle(sources) {
   const action$ = pathnameWithoutLocale$
     .combineLatest(query$, (pathname, query) => ({
       pathname,
-      query: { locale: DEFAULT_LOCALE, ...query }, // Case2
+      query: {
+        locale: localeMapper(DEFAULT_LOCALE)(browserLocale),
+        ...query,
+      }, // Case2
     }))
     .map(location => push(location));
 

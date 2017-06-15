@@ -4,6 +4,8 @@ import { push } from 'react-router-redux';
 import reducer, { constants, actions, cycles } from '../routing';
 import { assertSourcesSinks } from '../../utils/helpers';
 
+jest.mock('browser-locale', () => () => 'zh-TW');
+
 describe('routing - 1. Constants', () => {
   it('should return constants', () => {
     expect(constants).toMatchSnapshot();
