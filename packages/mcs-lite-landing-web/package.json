@@ -11,6 +11,7 @@
   },
   "license": "MIT",
   "devDependencies": {
+    "bowser": "^1.7.0",
     "browser-locale": "^1.0.2",
     "hedron": "^0.7.1",
     "history": "^3.2.1",

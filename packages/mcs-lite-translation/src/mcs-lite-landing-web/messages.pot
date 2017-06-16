@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"POT-Creation-Date: 2017-06-15T02:20:43.746Z\n"
+"POT-Creation-Date: 2017-06-16T07:33:51.439Z\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "MIME-Version: 1.0\n"
@@ -8,8 +8,183 @@ msgstr ""
 
 
 #: ../mcs-lite-translation/src/mcs-lite-landing-web/messages.json
+#. [Section1.title]
+#. defaultMessage is:
+#. Build your IoT platform with ease and flexibility
+msgid "Build your IoT platform with ease and flexibility"
+msgstr ""
+
+#: ../mcs-lite-translation/src/mcs-lite-landing-web/messages.json
+#. [Section3.data.desc]
+#. defaultMessage is:
+#. Collect and visualize data from your devices
+msgid "Collect and visualize data from your devices"
+msgstr ""
+
+#: ../mcs-lite-translation/src/mcs-lite-landing-web/messages.json
+#. [Section3.remote.desc]
+#. defaultMessage is:
+#. Control your devices from MCS Lite console
+msgid "Control your devices from MCS Lite console"
+msgstr ""
+
+#: ../mcs-lite-translation/src/mcs-lite-landing-web/messages.json
+#. [Section4.custom.title]
+#. defaultMessage is:
+#. Customization
+msgid "Customization"
+msgstr ""
+
+#: ../mcs-lite-translation/src/mcs-lite-landing-web/messages.json
+#. [Section4.custom.button]
+#. defaultMessage is:
+#. Customize your UI
+msgid "Customize your UI"
+msgstr ""
+
+#: ../mcs-lite-translation/src/mcs-lite-landing-web/messages.json
+#. [Section3.data.title]
+#. defaultMessage is:
+#. Data collection
+msgid "Data collection"
+msgstr ""
+
+#: ../mcs-lite-translation/src/mcs-lite-landing-web/messages.json
+#. [DownloadButton.downloadFor]
+#. defaultMessage is:
+#. Download for
+msgid "Download for"
+msgstr ""
+
+#: ../mcs-lite-translation/src/mcs-lite-landing-web/messages.json
+#. [DownloadButton.others]
+#. defaultMessage is:
+#. Download for other platforms
+msgid "Download for other platforms"
+msgstr ""
+
+#: ../mcs-lite-translation/src/mcs-lite-landing-web/messages.json
+#. [Section3.title]
+#. defaultMessage is:
+#. Explore built-in features
+msgid "Explore built-in features"
+msgstr ""
+
+#: ../mcs-lite-translation/src/mcs-lite-landing-web/messages.json
+#. [Section4.title]
+#. defaultMessage is:
+#. Extend and get creative with MCS Lite
+msgid "Extend and get creative with MCS Lite"
+msgstr ""
+
+#: ../mcs-lite-translation/src/mcs-lite-landing-web/messages.json
+#. [Section4.github.button]
+#. defaultMessage is:
+#. Follow us on GitHub
+msgid "Follow us on GitHub"
+msgstr ""
+
+#: ../mcs-lite-translation/src/mcs-lite-landing-web/messages.json
+#. [Section2.title]
+#. defaultMessage is:
+#. Launch MCS Lite in seconds
+msgid "Launch MCS Lite in seconds"
+msgstr ""
+
+#: ../mcs-lite-translation/src/mcs-lite-landing-web/messages.json
+#. [App.titleTemplate] - For document title
+#. defaultMessage is:
+#. MCS Lite
+msgid "MCS Lite"
+msgstr ""
+
+#: ../mcs-lite-translation/src/mcs-lite-landing-web/messages.json
+#. [Section2.desc]
+#. defaultMessage is:
+#. MCS Lite binary can be launched on your computer in one-click, you can also deploy on-premise or in the cloud with provided source code. All the options are here for your IoT applications during prototype, development and production stages.
+msgid "MCS Lite binary can be launched on your computer in one-click, you can also deploy on-premise or in the cloud with provided source code. All the options are here for your IoT applications during prototype, development and production stages."
+msgstr ""
+
+#: ../mcs-lite-translation/src/mcs-lite-landing-web/messages.json
+#. [Section1.desc]
+#. defaultMessage is:
+#. MCS Lite, inspired from features of MCS online with easy-to-use user interface, is designed for users who desire dedicate IoT platform for their applications. Binaries are available in Windows, Linux and Mac OS for instant launch.
+msgid "MCS Lite, inspired from features of MCS online with easy-to-use user interface, is designed for users who desire dedicate IoT platform for their applications. Binaries are available in Windows, Linux and Mac OS for instant launch."
+msgstr ""
+
+#: ../mcs-lite-translation/src/mcs-lite-landing-web/messages.json
+#. [Section4.github.desc]
+#. defaultMessage is:
+#. MCSLite is distributed as an open-source software under MIT license. You can use, copy, modify, merge, publish, distribute, sublicense our projects.
+msgid "MCSLite is distributed as an open-source software under MIT license. You can use, copy, modify, merge, publish, distribute, sublicense our projects."
+msgstr ""
+
+#: ../mcs-lite-translation/src/mcs-lite-landing-web/messages.json
+#. [Section3.management.desc]
+#. defaultMessage is:
+#. Manage all your connected devices
+msgid "Manage all your connected devices"
+msgstr ""
+
+#: ../mcs-lite-translation/src/mcs-lite-landing-web/messages.json
+#. [Section3.management.title]
+#. defaultMessage is:
+#. Management
+msgid "Management"
+msgstr ""
+
+#: ../mcs-lite-translation/src/mcs-lite-landing-web/messages.json
+#. [Section3.mobile.title]
+#. defaultMessage is:
+#. Mobile friendly
+msgid "Mobile friendly"
+msgstr ""
+
+#: ../mcs-lite-translation/src/mcs-lite-landing-web/messages.json
+#. [Section4.github.title]
+#. defaultMessage is:
+#. Open Source
+msgid "Open Source"
+msgstr ""
+
+#: ../mcs-lite-translation/src/mcs-lite-landing-web/messages.json
+#. [Section3.remote.title]
+#. defaultMessage is:
+#. Remote control
+msgid "Remote control"
+msgstr ""
+
+#: ../mcs-lite-translation/src/mcs-lite-landing-web/messages.json
+#. [Section3.mobile.desc]
+#. defaultMessage is:
+#. Responsive Web Design for easy access on your mobile and tablet
+msgid "Responsive Web Design for easy access on your mobile and tablet"
+msgstr ""
+
+#: ../mcs-lite-translation/src/mcs-lite-landing-web/messages.json
+#. [Section3.desc]
+#. defaultMessage is:
+#. Start to collect data from your IoT devices and control them anytime, anywhere.
+msgid "Start to collect data from your IoT devices and control them anytime, anywhere."
+msgstr ""
+
+#: ../mcs-lite-translation/src/mcs-lite-landing-web/messages.json
 #. [App.welcome]
 #. defaultMessage is:
 #. Welcome
 msgid "Welcome"
+msgstr ""
+
+#: ../mcs-lite-translation/src/mcs-lite-landing-web/messages.json
+#. [Section4.custom.desc]
+#. defaultMessage is:
+#. Whether you want to customize the user interface, support other databases or add additional data analysis and encryption mechanism, you can directly modify the source code or use the API provided by MCS Lite to expand the functions.
+msgid "Whether you want to customize the user interface, support other databases or add additional data analysis and encryption mechanism, you can directly modify the source code or use the API provided by MCS Lite to expand the functions."
+msgstr ""
+
+#: ../mcs-lite-translation/src/mcs-lite-landing-web/messages.json
+#. [DownloadButton.or]
+#. defaultMessage is:
+#. or
+msgid "or"
 msgstr ""

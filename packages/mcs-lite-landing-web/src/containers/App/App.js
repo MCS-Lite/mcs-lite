@@ -7,24 +7,52 @@ import { Page, Row, Column } from 'hedron';
 import ScrollOverPack from 'rc-scroll-anim/lib/ScrollOverPack';
 import ScrollParallax from 'rc-scroll-anim/lib/ScrollParallax';
 import Button from 'mcs-lite-ui/lib/Button';
-import Section1 from '../../components/Section1';
-import Section2 from '../../components/Section2';
-import Section3 from '../../components/Section3';
-import Section4 from '../../components/Section4';
+import Section1 from '../Section1';
+import Section2 from '../Section2';
+import Section3 from '../Section3';
+import Section4 from '../Section4';
 import messages from './messages';
 
 const App = ({ getMessages: t }) =>
-  <Page width="960px" debug>
+  <div>
     {/* 1. Helmet */}
     <Helmet titleTemplate={`%s | ${t('titleTemplate')}`}>
       <title>{t('welcome')}</title>
     </Helmet>
+
+    <Link to="/en">English</Link>
+    <Link to="/zh-TW">繁中</Link>
 
     <Section1 />
     <Section2 />
     <Section3 />
     <Section4 />
 
+    <Page width="960px">
+      <Row>
+        <Column fluid sm={4}>
+          <h1>Fluid Columns</h1>
+          <Button>Button</Button>
+        </Column>
+        <Column fluid sm={4}>
+          <p>
+            But you can change the amount of columns by adding the
+            `divisions` property to a Row.
+          </p>
+        </Column>
+        <Column fluid sm={4}>
+          <Row divisions={24}>
+            <Column sm={24}>
+              <p>
+                But you can change the amount of columns by adding the
+                `divisions` property to a Row.
+              </p>
+
+            </Column>
+          </Row>
+        </Column>
+      </Row>
+    </Page>
     <Row>
       <Column fluid sm={4}>
         <h1>Fluid Columns</h1>
@@ -96,7 +124,7 @@ const App = ({ getMessages: t }) =>
         </Row>
       </Column>
     </Row>
-  </Page>;
+  </div>;
 
 App.displayName = 'App';
 App.propTypes = {

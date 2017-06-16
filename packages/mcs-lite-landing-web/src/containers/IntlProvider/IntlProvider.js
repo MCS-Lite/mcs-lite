@@ -36,5 +36,8 @@ IntlProvider.propTypes = {
   // React-Router HOC
   router: PropTypes.object.isRequired,
 };
+IntlProvider.defaultProps = {
+  defaultLocale: 'en',
+};
 
 export default IntlProvider;

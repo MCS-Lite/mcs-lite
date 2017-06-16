@@ -8,10 +8,10 @@ import { createHistory } from 'history';
 import browserLocale from 'browser-locale';
 import { ThemeProvider } from 'styled-components';
 import { BreakpointProvider } from 'hedron';
-import { theme } from 'mcs-lite-theme';
 import IntlProvider from './containers/IntlProvider';
 import App from './containers/App';
 import registerServiceWorker from './registerServiceWorker';
+import landingTheme from './utils/landingTheme';
 import './style';
 import './utils/i18n';
 
@@ -29,7 +29,7 @@ const BREAKPOINTS = { sm: 300, md: 568, lg: 1200 };
 const history = useRouterHistory(createHistory)();
 
 render(
-  <ThemeProvider theme={theme}>
+  <ThemeProvider theme={landingTheme}>
     <BreakpointProvider breakpoints={BREAKPOINTS}>
       <Router history={history}>
         <Route path="/" component={IntlProvider}>
