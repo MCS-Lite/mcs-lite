@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 import { IntlProvider as ReactIntlProvider } from 'react-intl';
+import localeMapper from '../../utils/localeMapper';
 
 const translation = {
   'zh-TW': {
@@ -12,11 +13,8 @@ const translation = {
 };
 
 const IntlProvider = ({ defaultLocale, router, ...otherProps }) => {
-  let locale = router.params.locale;
-
   // Remind: fix for netlify redirect to lower case path
-  if (locale === 'zh-tw') locale = 'zh-TW';
-  if (locale === 'zh-cn') locale = 'zh-CN';
+  const locale = localeMapper(router.params.locale);
 
   return (
     <ReactIntlProvider

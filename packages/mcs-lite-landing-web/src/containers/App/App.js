@@ -11,6 +11,7 @@ import Section4 from '../Section4';
 import Section5 from '../Section5';
 import Footer from '../../components/Footer';
 import messages from './messages';
+import locales from '../../utils/locales.json';
 
 const GITHUB_API_URL =
   'https://api.github.com/repos/MCS-Lite/mcs-lite-app/releases/latest';
@@ -31,8 +32,12 @@ class App extends React.Component {
       <div>
         {/* 1. Helmet */}
         <Helmet titleTemplate={`%s | ${t('titleTemplate')}`}>
-          <title>{t('welcome')}</title>
+          <title>{t('title')}</title>
         </Helmet>
+
+        {locales.map(({ id, childrne }) =>
+          <Link key={id} to={`/${id}`}>{childrne}</Link>,
+        )}
 
         <Link to="/en">English</Link>
         <Link to="/zh-TW">繁中</Link>

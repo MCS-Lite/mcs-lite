@@ -15,14 +15,19 @@
     "filepath": "src/components/DownloadButton/messages.js"
   },
   {
+    "id": "Footer.desc",
+    "defaultMessage": "MediaTek Inc. All Rights Reserved.",
+    "filepath": "src/components/Footer/messages.js"
+  },
+  {
     "id": "App.titleTemplate",
     "description": "For document title",
     "defaultMessage": "MCS Lite",
     "filepath": "src/containers/App/messages.js"
   },
   {
-    "id": "App.welcome",
-    "defaultMessage": "Welcome",
+    "id": "App.title",
+    "defaultMessage": "Build your IoT platform with ease and flexibility",
     "filepath": "src/containers/App/messages.js"
   },
   {
@@ -129,5 +134,10 @@
     "id": "Section4.custom.button",
     "defaultMessage": "Customize your UI",
     "filepath": "src/containers/Section4/messages.js"
+  },
+  {
+    "id": "Section5.title",
+    "defaultMessage": "Let's get started",
+    "filepath": "src/containers/Section5/messages.js"
   }
 ]

@@ -10,11 +10,9 @@ const Wrapper = styled.div`
   padding: 6px 0;
 `;
 
-const YEAR = getCurrentYear();
-
 const Footer = ({ getMessages: t }) =>
   <Wrapper>
-    <P color="white">© {YEAR} {t('desc')}</P>
+    <P color="white">© {getCurrentYear()} {t('desc')}</P>
   </Wrapper>;
 
 Footer.displayName = 'Footer';
