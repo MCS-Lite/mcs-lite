@@ -32,5 +32,5 @@ const fileNameMapper = R.cond([
   [R.T, R.always('win64.zip')],
 ]);
 
-export const getOSName = () => osNameMapper(bowser);
-export const getFileName = () => fileNameMapper(bowser);
+export const getOSName = R.once(() => osNameMapper(bowser));
+export const getFileName = R.once(() => fileNameMapper(bowser));
