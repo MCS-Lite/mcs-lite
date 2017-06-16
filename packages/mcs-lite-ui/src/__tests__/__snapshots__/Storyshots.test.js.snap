@@ -2,7 +2,7 @@
 
 exports[`Storyshots A API 1`] = `
 <a
-  className="A__A-cCPuKx iriyAs"
+  className="A__A-cCPuKx fpwonb"
   color="primary"
 >
   Link
@@ -18,7 +18,7 @@ exports[`Storyshots A Nested children with Heading 1`] = `
     className="B__B-bYLQjZ jyrAdw"
   >
     <a
-      className="A__A-cCPuKx iriyAs"
+      className="A__A-cCPuKx fpwonb"
       color="primary"
     >
       Link
@@ -30,70 +30,70 @@ exports[`Storyshots A Nested children with Heading 1`] = `
 exports[`Storyshots A With color props 1`] = `
 <div>
   <a
-    className="A__A-cCPuKx boFixb"
+    className="A__A-cCPuKx gdTiCt"
     color="black"
   >
     A link 
     black
   </a>
   <a
-    className="A__A-cCPuKx chjCmt"
+    className="A__A-cCPuKx byQhci"
     color="grayBase"
   >
     A link 
     grayBase
   </a>
   <a
-    className="A__A-cCPuKx htyhkl"
+    className="A__A-cCPuKx iMLLLi"
     color="grayDark"
   >
     A link 
     grayDark
   </a>
   <a
-    className="A__A-cCPuKx bLoDNO"
+    className="A__A-cCPuKx bMzvWn"
     color="grayLight"
   >
     A link 
     grayLight
   </a>
   <a
-    className="A__A-cCPuKx eBApCZ"
+    className="A__A-cCPuKx ihpauv"
     color="white"
   >
     A link 
     white
   </a>
   <a
-    className="A__A-cCPuKx bLoDNO"
+    className="A__A-cCPuKx bMzvWn"
     color="default"
   >
     A link 
     default
   </a>
   <a
-    className="A__A-cCPuKx iriyAs"
+    className="A__A-cCPuKx fpwonb"
     color="primary"
   >
     A link 
     primary
   </a>
   <a
-    className="A__A-cCPuKx kBiKBU"
+    className="A__A-cCPuKx CLOsz"
     color="success"
   >
     A link 
     success
   </a>
   <a
-    className="A__A-cCPuKx hxMTxL"
+    className="A__A-cCPuKx clhgzV"
     color="error"
   >
     A link 
     error
   </a>
   <a
-    className="A__A-cCPuKx bDGcKF"
+    className="A__A-cCPuKx bTKBYM"
     color="warning"
   >
     A link 
@@ -755,7 +755,7 @@ exports[`Storyshots DataChannel ButtonClear 1`] = `
   className="P__P-KJbCR huqyql"
 >
   <a
-    className="ButtonClear__StyledA-hPckxD cJqJoD A__A-cCPuKx iriyAs"
+    className="ButtonClear__StyledA-hPckxD cJqJoD A__A-cCPuKx fpwonb"
     color="primary"
   >
     <svg
@@ -800,7 +800,7 @@ exports[`Storyshots DataChannel ControlNumber 1`] = `
       onClick={[Function]}
     >
       <a
-        className="ButtonClear__StyledA-hPckxD cJqJoD A__A-cCPuKx iriyAs"
+        className="ButtonClear__StyledA-hPckxD cJqJoD A__A-cCPuKx fpwonb"
         color="primary"
       >
         <svg
@@ -1300,7 +1300,7 @@ exports[`Storyshots DataChannel ControlString 1`] = `
       onClick={[Function]}
     >
       <a
-        className="ButtonClear__StyledA-hPckxD cJqJoD A__A-cCPuKx iriyAs"
+        className="ButtonClear__StyledA-hPckxD cJqJoD A__A-cCPuKx fpwonb"
         color="primary"
       >
         <svg
@@ -1625,7 +1625,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
             onClick={[Function]}
           >
             <a
-              className="ButtonClear__StyledA-hPckxD cJqJoD A__A-cCPuKx iriyAs"
+              className="ButtonClear__StyledA-hPckxD cJqJoD A__A-cCPuKx fpwonb"
               color="primary"
             >
               <svg
@@ -1779,7 +1779,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
             onClick={[Function]}
           >
             <a
-              className="ButtonClear__StyledA-hPckxD cJqJoD A__A-cCPuKx iriyAs"
+              className="ButtonClear__StyledA-hPckxD cJqJoD A__A-cCPuKx fpwonb"
               color="primary"
             >
               <svg
@@ -1926,7 +1926,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
             onClick={[Function]}
           >
             <a
-              className="ButtonClear__StyledA-hPckxD cJqJoD A__A-cCPuKx iriyAs"
+              className="ButtonClear__StyledA-hPckxD cJqJoD A__A-cCPuKx fpwonb"
               color="primary"
             >
               <svg
@@ -2068,7 +2068,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
             onClick={[Function]}
           >
             <a
-              className="ButtonClear__StyledA-hPckxD cJqJoD A__A-cCPuKx iriyAs"
+              className="ButtonClear__StyledA-hPckxD cJqJoD A__A-cCPuKx fpwonb"
               color="primary"
             >
               <svg
@@ -4864,7 +4864,7 @@ exports[`Storyshots Menu Fixed width 1`] = `
     onClick={[Function]}
   >
     <a
-      className="A__A-cCPuKx iriyAs"
+      className="A__A-cCPuKx fpwonb"
       color="primary"
     >
       MenuItem A
@@ -5165,7 +5165,7 @@ exports[`Storyshots Notification With feedbck Button component 1`] = `
 exports[`Storyshots Overlay API 1`] = `
 <div>
   <a
-    className="A__A-cCPuKx iriyAs"
+    className="A__A-cCPuKx fpwonb"
     color="primary"
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
