@@ -35,12 +35,9 @@ class App extends React.Component {
           <title>{t('title')}</title>
         </Helmet>
 
-        {locales.map(({ id, childrne }) =>
-          <Link key={id} to={`/${id}`}>{childrne}</Link>,
+        {locales.map(({ id, children }) =>
+          <Link key={id} to={`/${id}`}>{children}</Link>,
         )}
-
-        <Link to="/en">English</Link>
-        <Link to="/zh-TW">繁中</Link>
 
         <Section1 tag={tag} />
         <Section2 />
