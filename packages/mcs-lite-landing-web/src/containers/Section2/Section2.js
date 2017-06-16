@@ -12,8 +12,7 @@ import mac from '../../statics/images/mac.svg';
 import macbg from '../../statics/images/macbg.svg';
 
 const StyledSectionRow = styled(SectionRow)`
-  background-image:
-    linear-gradient(-180deg, #FFFFFF 0%, #FDFDFD 47%, #FAFAFA 100%);
+  background-image: linear-gradient(-180deg, #FFFFFF 0%, #FDFDFD 47%, #FAFAFA 100%);
 `;
 
 const MacWrapper = styled.div`

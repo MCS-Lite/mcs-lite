@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
 import { Row, Column } from 'hedron';
 import Heading from 'mcs-lite-ui/lib/Heading';
 import B from 'mcs-lite-ui/lib/B';
@@ -10,12 +9,8 @@ import SpaceTop from '../../components/SpaceTop';
 import TextCenter from '../../components/TextCenter';
 import iconData from '../../statics/images/icon_data.svg';
 
-const StyledSectionRow = styled(SectionRow)`
-  background-color: ${props => props.theme.color.white};
-`;
-
 const Section3 = ({ getMessages: t }) =>
-  <StyledSectionRow>
+  <SectionRow>
     <Column xs={12}>
       <TextCenter>
         <Heading level={2}>{t('title')}</Heading>
@@ -82,7 +77,7 @@ const Section3 = ({ getMessages: t }) =>
         </TextCenter>
       </Column>
     </Row>
-  </StyledSectionRow>;
+  </SectionRow>;
 
 Section3.displayName = 'Section3';
 Section3.propTypes = {

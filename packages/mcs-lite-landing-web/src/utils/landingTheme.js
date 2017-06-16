@@ -11,6 +11,11 @@ const landingTheme = {
     ...theme.base,
     bodyColor: '#40494D',
   },
+
+  fontSize: {
+    ...theme.fontSize,
+    h2: '1.84rem',
+  },
 };
 
 export default landingTheme;

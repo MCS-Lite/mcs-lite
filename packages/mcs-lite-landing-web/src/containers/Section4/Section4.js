@@ -12,8 +12,7 @@ import SectionRow from '../../components/SectionRow';
 import license from '../../statics/images/license.svg';
 
 const StyledSectionRow = styled(SectionRow)`
-  background-image:
-    linear-gradient(-180deg, #FFFFFF 0%, #FDFDFD 47%, #FAFAFA 100%);
+  background-image: linear-gradient(-180deg, #FFFFFF 0%, #FDFDFD 47%, #FAFAFA 100%);
 `;
 
 const CardWrapper = styled.div`
@@ -23,6 +22,7 @@ const CardWrapper = styled.div`
   min-height: 385px;
 
   > ${Button} {
+
     /* Flexbox column align self to bottom trick ref: https://goo.gl/oqMFju */
     margin-top: auto;
     align-self: center;

@@ -8,6 +8,7 @@ export const PAGE_WIDTH = 960;
 
 const Wrapper = styled.div`
   padding: ${PADDING}px 0;
+  background-color: ${props => props.theme.color.white};
 `;
 
 const SectionRow = ({ children, ...otherProps }) =>
