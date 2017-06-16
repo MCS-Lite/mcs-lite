@@ -8,7 +8,7 @@ import TextCenter from '../../components/TextCenter';
 import DownloadButton from '../../components/DownloadButton';
 import mac from '../../statics/images/mac.svg';
 
-const Section5 = ({ getMessages: t }) =>
+const Section5 = ({ tag, getMessages: t }) =>
   <SectionRow>
     <Column xs={12}>
       <TextCenter>
@@ -17,7 +17,7 @@ const Section5 = ({ getMessages: t }) =>
           <img src={mac} alt="mac" />
         </SpaceTop>
         <SpaceTop height={40}>
-          <DownloadButton />
+          <DownloadButton tag={tag} />
         </SpaceTop>
       </TextCenter>
     </Column>
@@ -27,6 +27,9 @@ Section5.displayName = 'Section5';
 Section5.propTypes = {
   // React-intl I18n
   getMessages: PropTypes.func.isRequired,
+
+  // Props
+  tag: PropTypes.string,
 };
 
 export default Section5;

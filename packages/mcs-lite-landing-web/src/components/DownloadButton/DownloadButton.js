@@ -10,11 +10,12 @@ const OS_NAME = getOSName();
 const FILE_NAME = getFileName();
 const REPO_RELEASE_URL = 'https://github.com/MCS-Lite/mcs-lite-app/releases';
 const LATEST_RELEASE = `${REPO_RELEASE_URL}/latest`;
-const DOWNLOAD_LINK = `${REPO_RELEASE_URL}/download/v1.0.4/${FILE_NAME}`;
+const getDownloadLink = tag =>
+  tag ? `${REPO_RELEASE_URL}/download/${tag}/${FILE_NAME}` : REPO_RELEASE_URL;
 
-const Section1 = ({ getMessages: t }) =>
+const DownloadButton = ({ tag, getMessages: t }) =>
   <div>
-    <A href={DOWNLOAD_LINK}>
+    <A href={getDownloadLink(tag)}>
       <Button>
         {t('downloadFor')} {OS_NAME}
       </Button>
@@ -29,10 +30,13 @@ const Section1 = ({ getMessages: t }) =>
     </SpaceTop>
   </div>;
 
-Section1.displayName = 'Section1';
-Section1.propTypes = {
+DownloadButton.displayName = 'DownloadButton';
+DownloadButton.propTypes = {
   // React-intl I18n
   getMessages: PropTypes.func.isRequired,
+
+  // Props
+  tag: PropTypes.string,
 };
 
-export default Section1;
+export default DownloadButton;

@@ -21,7 +21,7 @@ const StyledImageColumn = styled(Column)`
   align-items: flex-end;
 `;
 
-const Section1 = ({ getMessages: t }) =>
+const Section1 = ({ tag, getMessages: t }) =>
   <StyledSectionRow>
     <Column xs={12} sm={6}>
       <Heading level={1}>{t('title')}</Heading>
@@ -29,7 +29,7 @@ const Section1 = ({ getMessages: t }) =>
         <Heading level={4} color="grayBase">{t('desc')}</Heading>
       </SpaceTop>
       <SpaceTop height={40}>
-        <DownloadButton />
+        <DownloadButton tag={tag} />
       </SpaceTop>
     </Column>
     <StyledImageColumn xs={12} sm={6}>
@@ -41,6 +41,9 @@ Section1.displayName = 'Section1';
 Section1.propTypes = {
   // React-intl I18n
   getMessages: PropTypes.func.isRequired,
+
+  // Props
+  tag: PropTypes.string,
 };
 
 export default Section1;
