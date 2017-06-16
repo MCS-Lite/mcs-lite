@@ -1,16 +1,19 @@
 msgid ""
 msgstr ""
-"POT-Creation-Date: 2017-06-07 20:30+0800\n"
+"Project-Id-Version: mcs-lite\n"
+"POT-Creation-Date: 2017-06-16 14:45+0800\n"
+"PO-Revision-Date: 2017-06-16 03:20-0400\n"
+"Last-Translator: smartexist <smartexist@gmail.com>\n"
+"Language-Team: English\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"MIME-Version: 1.0\n"
-"X-Generator: Poedit 2.0.2\n"
-"Project-Id-Version: \n"
-"PO-Revision-Date: \n"
-"Language-Team: \n"
-"Last-Translator: \n"
+"X-Generator: crowdin.com\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"Language: en\n"
+"X-Crowdin-Project: mcs-lite\n"
+"X-Crowdin-Language: en\n"
+"X-Crowdin-File: mcs-lite-admin.po\n"
 
 #. [Signin.email]
 #. defaultMessage is:
@@ -62,7 +65,7 @@ msgstr "Users can connect to MCS Lite server by the following IP address."
 #. 修改系統的參數設定。
 #: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
 msgid "修改系統的參數設定。"
-msgstr "You can modify the system configuration here."
+msgstr "You can modify the system configuration here. Please restart MCS Lite service to have the settings to take effect."
 
 #. [DashboardLayout.stop]
 #. defaultMessage is:
@@ -77,6 +80,13 @@ msgstr "Stop"
 #: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
 msgid "儲存"
 msgstr "Save"
+
+#. [Language.switch] - Document Title
+#. defaultMessage is:
+#. 切換語言
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+msgid "切換語言"
+msgstr "Language"
 
 #. [Ip.goToMCSLite]
 #. defaultMessage is:
@@ -123,6 +133,20 @@ msgstr "Your password must be at least 8 characters"
 msgid "建立管理者帳戶"
 msgstr "Create an administrator account"
 
+#. [DashboardLayout.stop.success] - Toast
+#. defaultMessage is:
+#. 成功！服務已停止。
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+msgid "成功！服務已停止。"
+msgstr "Success! The service has been stopped."
+
+#. [DashboardLayout.start.success] - Toast
+#. defaultMessage is:
+#. 成功！服務已啟動。
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+msgid "成功！服務已啟動。"
+msgstr "Success! The service has been started."
+
 #. [System.reset.success]
 #. defaultMessage is:
 #. 成功！系統已重置，請重新登入。
@@ -130,19 +154,33 @@ msgstr "Create an administrator account"
 msgid "成功！系統已重置，請重新登入。"
 msgstr "Success! The service has been restarted, please sign in your account again."
 
+#. [System.save.success]
+#. defaultMessage is:
+#. 成功！系統的參數設定已更新。
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+msgid "成功！系統的參數設定已更新。"
+msgstr "Success!  The system configuration has been updated."
+
+#. [App.gerenalError] - With HTTP error status code 401/500
+#. defaultMessage is:
+#. 我們目前無法處理您的請求。請稍後再試。
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+msgid "我們目前無法處理您的請求。請稍後再試。"
+msgstr "Sorry, we cannot handle this operation right this moment. Please try again later."
+
 #. [Signup.password2.error]
 #. defaultMessage is:
 #. 新密碼和確認密碼不一致
 #: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
 msgid "新密碼和確認密碼不一致"
-msgstr "Your new password does not match the confirm password"
+msgstr "Your confirmation password does not match the one you just entered."
 
 #. [System.reset.confirm]
 #. defaultMessage is:
 #. 是否確定重置系統？
 #: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
 msgid "是否確定重置系統？"
-msgstr "Want to apply the new configuration and restart the service now?"
+msgstr "Want to reset the system configuration to default settings?"
 
 #. [Signup.userName]
 #. defaultMessage is:
@@ -236,7 +274,7 @@ msgstr "Configuration"
 #. 系統重置
 #: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
 msgid "系統重置"
-msgstr "Restart service"
+msgstr "Reset to defaults"
 
 #. [Signup.signup] - Document Title
 #. defaultMessage is:
@@ -244,3 +282,11 @@ msgstr "Restart service"
 #: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
 msgid "註冊"
 msgstr "Sign up"
+
+#. [Language.select]
+#. defaultMessage is:
+#. 選擇語言
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+msgid "選擇語言"
+msgstr "Select language"
+

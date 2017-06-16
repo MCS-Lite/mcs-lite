@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2017-06-08 17:35+0800\n"
+"POT-Creation-Date: 2017-06-16 15:08+0800\n"
 "PO-Revision-Date: \n"
-"Last-Translator: \n"
+"Last-Translator: Daria Chen <smartexist@gmail.com>\n"
 "Language-Team: \n"
 "Language: zh_TW\n"
 "MIME-Version: 1.0\n"
@@ -41,7 +41,7 @@ msgstr "JSON 資料格式錯誤"
 #. MCS Lite Admin
 #: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
 msgid "MCS Lite Admin"
-msgstr ""
+msgstr "MCS Lite Admin"
 
 #. [Ip.mcsLiteIpConnection] - Meta/Title
 #. defaultMessage is:
@@ -62,7 +62,7 @@ msgstr "使用者可透過下列的 IP 位址連線至 MCS Lite 服務器。"
 #. 修改系統的參數設定。
 #: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
 msgid "修改系統的參數設定。"
-msgstr "您可在此修改系統的參數與連線設定。"
+msgstr "您可在此修改系統的參數與連線設定。修改後請重新啟動 MCS Lite 服務使設定生效。"
 
 #. [DashboardLayout.stop]
 #. defaultMessage is:
@@ -77,6 +77,13 @@ msgstr "停止"
 #: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
 msgid "儲存"
 msgstr "儲存"
+
+#. [Language.switch] - Document Title
+#. defaultMessage is:
+#. 切換語言
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+msgid "切換語言"
+msgstr "切換語言"
 
 #. [Ip.goToMCSLite]
 #. defaultMessage is:
@@ -123,12 +130,40 @@ msgstr "密碼長度需要多於 8 個字元"
 msgid "建立管理者帳戶"
 msgstr "註冊管理者帳戶"
 
+#. [DashboardLayout.stop.success] - Toast
+#. defaultMessage is:
+#. 成功！服務已停止。
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+msgid "成功！服務已停止。"
+msgstr "成功！服務已停止。"
+
+#. [DashboardLayout.start.success] - Toast
+#. defaultMessage is:
+#. 成功！服務已啟動。
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+msgid "成功！服務已啟動。"
+msgstr "成功！服務已啟動。"
+
 #. [System.reset.success]
 #. defaultMessage is:
 #. 成功！系統已重置，請重新登入。
 #: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
 msgid "成功！系統已重置，請重新登入。"
 msgstr "成功！系統已重置，請重新登入。"
+
+#. [System.save.success]
+#. defaultMessage is:
+#. 成功！系統的參數設定已更新。
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+msgid "成功！系統的參數設定已更新。"
+msgstr "成功！系統的參數設定已更新。"
+
+#. [App.gerenalError] - With HTTP error status code 401/500
+#. defaultMessage is:
+#. 我們目前無法處理您的請求。請稍後再試。
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+msgid "我們目前無法處理您的請求。請稍後再試。"
+msgstr "我們目前無法處理您的請求。請稍後再試。"
 
 #. [Signup.password2.error]
 #. defaultMessage is:
@@ -142,7 +177,7 @@ msgstr "新密碼和確認密碼不一致"
 #. 是否確定重置系統？
 #: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
 msgid "是否確定重置系統？"
-msgstr "確定要重新啟動服務？"
+msgstr "確定要將系統設定重置為預設值？"
 
 #. [Signup.userName]
 #. defaultMessage is:
@@ -236,7 +271,7 @@ msgstr "系統管理"
 #. 系統重置
 #: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
 msgid "系統重置"
-msgstr "重新啟動"
+msgstr "系統重置"
 
 #. [Signup.signup] - Document Title
 #. defaultMessage is:
@@ -244,3 +279,10 @@ msgstr "重新啟動"
 #: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
 msgid "註冊"
 msgstr "註冊"
+
+#. [Language.select]
+#. defaultMessage is:
+#. 選擇語言
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+msgid "選擇語言"
+msgstr "選擇語言"
