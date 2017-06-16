@@ -7,30 +7,24 @@ import { Page, Row, Column } from 'hedron';
 import ScrollOverPack from 'rc-scroll-anim/lib/ScrollOverPack';
 import ScrollParallax from 'rc-scroll-anim/lib/ScrollParallax';
 import Button from 'mcs-lite-ui/lib/Button';
+import Section1 from '../../components/Section1';
+import Section2 from '../../components/Section2';
+import Section3 from '../../components/Section3';
+import Section4 from '../../components/Section4';
 import messages from './messages';
 
 const App = ({ getMessages: t }) =>
-  <Page width="200px">
+  <Page width="960px" debug>
     {/* 1. Helmet */}
     <Helmet titleTemplate={`%s | ${t('titleTemplate')}`}>
       <title>{t('welcome')}</title>
     </Helmet>
 
-    <Row>
-      <Column sm={8} smShift={2} lg={6} lgShift={3}>
-        <h1>
-          But you can change the amount of columns by adding the
-          `divisions` property to a Row.
-        </h1>
-        <div>
-          <div>
-            <h2>{t('welcome')}</h2>
-          </div>
-          <Link to="/zh-TW">zh-TW</Link> |
-          <Link to="/en">en</Link>
-        </div>
-      </Column>
-    </Row>
+    <Section1 />
+    <Section2 />
+    <Section3 />
+    <Section4 />
+
     <Row>
       <Column fluid sm={4}>
         <h1>Fluid Columns</h1>
