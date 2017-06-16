@@ -27,7 +27,7 @@ const osNameMapper = R.cond([
 
 const fileNameMapper = R.cond([
   [R.propEq('mac', true), R.always('osx64.tar.gz')],
-  [R.propEq('windows', true), R.always(`win${getOSBit().zip}`)],
+  [R.propEq('windows', true), R.always(`win${getOSBit()}.zip`)],
   // [R.propEq('linux', true), R.always('Linux')],
   [R.T, R.always('win64.zip')],
 ]);
