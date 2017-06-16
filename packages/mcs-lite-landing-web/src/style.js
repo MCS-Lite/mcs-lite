@@ -1,7 +1,7 @@
 /* eslint no-unused-expressions:0 */
 
 import { injectGlobal } from 'styled-components';
-import { theme } from 'mcs-lite-theme';
+import theme from './utils/landingTheme';
 
 injectGlobal`
   html {

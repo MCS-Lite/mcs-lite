@@ -68,7 +68,7 @@ exports[`should render HEX_CONTROL correctly with default value to empty 1`] = `
                         color="primary"
                       >
                         <a
-                          className="ButtonClear__StyledA-hPckxD cJqJoD A__A-cCPuKx iriyAs"
+                          className="ButtonClear__StyledA-hPckxD cJqJoD A__A-cCPuKx fpwonb"
                           color="primary"
                         >
                           <IconDelete
@@ -203,7 +203,7 @@ exports[`should render HEX_CONTROL correctly with empty string 1`] = `
                         color="primary"
                       >
                         <a
-                          className="ButtonClear__StyledA-hPckxD cJqJoD A__A-cCPuKx iriyAs"
+                          className="ButtonClear__StyledA-hPckxD cJqJoD A__A-cCPuKx fpwonb"
                           color="primary"
                         >
                           <IconDelete
@@ -338,7 +338,7 @@ exports[`should render HEX_CONTROL correctly with value 1`] = `
                         color="primary"
                       >
                         <a
-                          className="ButtonClear__StyledA-hPckxD cJqJoD A__A-cCPuKx iriyAs"
+                          className="ButtonClear__StyledA-hPckxD cJqJoD A__A-cCPuKx fpwonb"
                           color="primary"
                         >
                           <IconDelete

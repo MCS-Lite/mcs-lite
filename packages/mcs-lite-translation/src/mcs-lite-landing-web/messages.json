@@ -1,7 +1,143 @@
 [
   {
-    "id": "App.welcome",
-    "defaultMessage": "Welcome",
+    "id": "DownloadButton.downloadFor",
+    "defaultMessage": "Download for",
+    "filepath": "src/components/DownloadButton/messages.js"
+  },
+  {
+    "id": "DownloadButton.or",
+    "defaultMessage": "or",
+    "filepath": "src/components/DownloadButton/messages.js"
+  },
+  {
+    "id": "DownloadButton.others",
+    "defaultMessage": "Download for other platforms",
+    "filepath": "src/components/DownloadButton/messages.js"
+  },
+  {
+    "id": "Footer.desc",
+    "defaultMessage": "MediaTek Inc. All Rights Reserved.",
+    "filepath": "src/components/Footer/messages.js"
+  },
+  {
+    "id": "App.titleTemplate",
+    "description": "For document title",
+    "defaultMessage": "MCS Lite",
     "filepath": "src/containers/App/messages.js"
+  },
+  {
+    "id": "App.title",
+    "defaultMessage": "Build your IoT platform with ease and flexibility",
+    "filepath": "src/containers/App/messages.js"
+  },
+  {
+    "id": "Section1.title",
+    "defaultMessage": "Build your IoT platform with ease and flexibility",
+    "filepath": "src/containers/Section1/messages.js"
+  },
+  {
+    "id": "Section1.desc",
+    "defaultMessage": "MCS Lite, inspired from features of MCS online with easy-to-use user interface, is designed for users who desire dedicate IoT platform for their applications. Binaries are available in Windows, Linux and Mac OS for instant launch.",
+    "filepath": "src/containers/Section1/messages.js"
+  },
+  {
+    "id": "Section2.title",
+    "defaultMessage": "Launch MCS Lite in seconds",
+    "filepath": "src/containers/Section2/messages.js"
+  },
+  {
+    "id": "Section2.desc",
+    "defaultMessage": "MCS Lite binary can be launched on your computer in one-click, you can also deploy on-premise or in the cloud with provided source code. All the options are here for your IoT applications during prototype, development and production stages.",
+    "filepath": "src/containers/Section2/messages.js"
+  },
+  {
+    "id": "Section3.title",
+    "defaultMessage": "Explore built-in features",
+    "filepath": "src/containers/Section3/messages.js"
+  },
+  {
+    "id": "Section3.desc",
+    "defaultMessage": "Start to collect data from your IoT devices and control them anytime, anywhere.",
+    "filepath": "src/containers/Section3/messages.js"
+  },
+  {
+    "id": "Section3.data.title",
+    "defaultMessage": "Data collection",
+    "filepath": "src/containers/Section3/messages.js"
+  },
+  {
+    "id": "Section3.data.desc",
+    "defaultMessage": "Collect and visualize data from your devices",
+    "filepath": "src/containers/Section3/messages.js"
+  },
+  {
+    "id": "Section3.remote.title",
+    "defaultMessage": "Remote control",
+    "filepath": "src/containers/Section3/messages.js"
+  },
+  {
+    "id": "Section3.remote.desc",
+    "defaultMessage": "Control your devices from MCS Lite console",
+    "filepath": "src/containers/Section3/messages.js"
+  },
+  {
+    "id": "Section3.management.title",
+    "defaultMessage": "Management",
+    "filepath": "src/containers/Section3/messages.js"
+  },
+  {
+    "id": "Section3.management.desc",
+    "defaultMessage": "Manage all your connected devices",
+    "filepath": "src/containers/Section3/messages.js"
+  },
+  {
+    "id": "Section3.mobile.title",
+    "defaultMessage": "Mobile friendly",
+    "filepath": "src/containers/Section3/messages.js"
+  },
+  {
+    "id": "Section3.mobile.desc",
+    "defaultMessage": "Responsive Web Design for easy access on your mobile and tablet",
+    "filepath": "src/containers/Section3/messages.js"
+  },
+  {
+    "id": "Section4.title",
+    "defaultMessage": "Extend and get creative with MCS Lite",
+    "filepath": "src/containers/Section4/messages.js"
+  },
+  {
+    "id": "Section4.github.title",
+    "defaultMessage": "Open Source",
+    "filepath": "src/containers/Section4/messages.js"
+  },
+  {
+    "id": "Section4.github.desc",
+    "defaultMessage": "MCSLite is distributed as an open-source software under MIT license. You can use, copy, modify, merge, publish, distribute, sublicense our projects.",
+    "filepath": "src/containers/Section4/messages.js"
+  },
+  {
+    "id": "Section4.github.button",
+    "defaultMessage": "Follow us on GitHub",
+    "filepath": "src/containers/Section4/messages.js"
+  },
+  {
+    "id": "Section4.custom.title",
+    "defaultMessage": "Customization",
+    "filepath": "src/containers/Section4/messages.js"
+  },
+  {
+    "id": "Section4.custom.desc",
+    "defaultMessage": "Whether you want to customize the user interface, support other databases or add additional data analysis and encryption mechanism, you can directly modify the source code or use the API provided by MCS Lite to expand the functions.",
+    "filepath": "src/containers/Section4/messages.js"
+  },
+  {
+    "id": "Section4.custom.button",
+    "defaultMessage": "Customize your UI",
+    "filepath": "src/containers/Section4/messages.js"
+  },
+  {
+    "id": "Section5.title",
+    "defaultMessage": "Let's get started",
+    "filepath": "src/containers/Section5/messages.js"
   }
 ]

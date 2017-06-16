@@ -6,9 +6,9 @@ const messages = defineMessages({
     description: 'For document title',
     defaultMessage: 'MCS Lite',
   },
-  'App.welcome': {
-    id: 'App.welcome',
-    defaultMessage: 'Welcome',
+  'App.title': {
+    id: 'App.title',
+    defaultMessage: 'Build your IoT platform with ease and flexibility',
   },
 });
 

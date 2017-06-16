@@ -1,22 +1,15 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 import { IntlProvider as ReactIntlProvider } from 'react-intl';
+import translation from 'mcs-lite-translation/lib/mcs-lite-landing-web.json';
+import localeMapper from '../../utils/localeMapper';
 
-const translation = {
-  'zh-TW': {
-    'App.welcome': '歡迎！',
-  },
-  en: {
-    'App.welcome': 'Welcome!',
-  },
-};
+export const DEFAULT_LOCALE = 'en';
+const defaultLocaleMapper = localeMapper(DEFAULT_LOCALE);
 
 const IntlProvider = ({ defaultLocale, router, ...otherProps }) => {
-  let locale = router.params.locale;
-
   // Remind: fix for netlify redirect to lower case path
-  if (locale === 'zh-tw') locale = 'zh-TW';
-  if (locale === 'zh-cn') locale = 'zh-CN';
+  const locale = defaultLocaleMapper(router.params.locale);
 
   return (
     <ReactIntlProvider
@@ -35,6 +28,9 @@ IntlProvider.propTypes = {
 
   // React-Router HOC
   router: PropTypes.object.isRequired,
+};
+IntlProvider.defaultProps = {
+  defaultLocale: 'en',
 };
 
 export default IntlProvider;

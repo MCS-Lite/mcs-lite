@@ -7,6 +7,7 @@ const A = styled.a`
   color: ${props => props.theme.color[props.color]};
   transition: color cubic-bezier(0.47, 0, 0.75, 0.72) 0.3s;
   cursor: pointer;
+  text-decoration: none;
 
   &:hover {
     color: ${props => darken1(props.theme.color[props.color])};

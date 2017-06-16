@@ -1,4 +1,3 @@
-#, fuzzy
 msgid ""
 msgstr ""
 "POT-Creation-Date: 2017-06-16 22:14+0800\n"
@@ -8,8 +7,10 @@ msgstr ""
 "X-Generator: Poedit 1.8.11\n"
 "Project-Id-Version: \n"
 "PO-Revision-Date: \n"
-"Last-Translator: \n"
 "Language-Team: \n"
+"Last-Translator: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: en\n"
 
 #. [App.title]
 #. defaultMessage is:
@@ -116,21 +117,31 @@ msgstr ""
 #. defaultMessage is:
 #. MCS Lite binary can be launched on your computer in one-click, you can also deploy on-premise or in the cloud with provided source code. All the options are here for your IoT applications during prototype, development and production stages.
 #: ../mcs-lite-translation/src/mcs-lite-landing-web/messages.json
-msgid "MCS Lite binary can be launched on your computer in one-click, you can also deploy on-premise or in the cloud with provided source code. All the options are here for your IoT applications during prototype, development and production stages."
+msgid ""
+"MCS Lite binary can be launched on your computer in one-click, you can also "
+"deploy on-premise or in the cloud with provided source code. All the options "
+"are here for your IoT applications during prototype, development and "
+"production stages."
 msgstr ""
 
 #. [Section1.desc]
 #. defaultMessage is:
 #. MCS Lite, inspired from features of MCS online with easy-to-use user interface, is designed for users who desire dedicate IoT platform for their applications. Binaries are available in Windows, Linux and Mac OS for instant launch.
 #: ../mcs-lite-translation/src/mcs-lite-landing-web/messages.json
-msgid "MCS Lite, inspired from features of MCS online with easy-to-use user interface, is designed for users who desire dedicate IoT platform for their applications. Binaries are available in Windows, Linux and Mac OS for instant launch."
+msgid ""
+"MCS Lite, inspired from features of MCS online with easy-to-use user "
+"interface, is designed for users who desire dedicate IoT platform for their "
+"applications. Binaries are available in Windows, Linux and Mac OS for "
+"instant launch."
 msgstr ""
 
 #. [Section4.github.desc]
 #. defaultMessage is:
 #. MCSLite is distributed as an open-source software under MIT license. You can use, copy, modify, merge, publish, distribute, sublicense our projects.
 #: ../mcs-lite-translation/src/mcs-lite-landing-web/messages.json
-msgid "MCSLite is distributed as an open-source software under MIT license. You can use, copy, modify, merge, publish, distribute, sublicense our projects."
+msgid ""
+"MCSLite is distributed as an open-source software under MIT license. You can "
+"use, copy, modify, merge, publish, distribute, sublicense our projects."
 msgstr ""
 
 #. [Section3.management.desc]
@@ -186,14 +197,20 @@ msgstr ""
 #. defaultMessage is:
 #. Start to collect data from your IoT devices and control them anytime, anywhere.
 #: ../mcs-lite-translation/src/mcs-lite-landing-web/messages.json
-msgid "Start to collect data from your IoT devices and control them anytime, anywhere."
+msgid ""
+"Start to collect data from your IoT devices and control them anytime, "
+"anywhere."
 msgstr ""
 
 #. [Section4.custom.desc]
 #. defaultMessage is:
 #. Whether you want to customize the user interface, support other databases or add additional data analysis and encryption mechanism, you can directly modify the source code or use the API provided by MCS Lite to expand the functions.
 #: ../mcs-lite-translation/src/mcs-lite-landing-web/messages.json
-msgid "Whether you want to customize the user interface, support other databases or add additional data analysis and encryption mechanism, you can directly modify the source code or use the API provided by MCS Lite to expand the functions."
+msgid ""
+"Whether you want to customize the user interface, support other databases or "
+"add additional data analysis and encryption mechanism, you can directly "
+"modify the source code or use the API provided by MCS Lite to expand the "
+"functions."
 msgstr ""
 
 #. [DownloadButton.or]
