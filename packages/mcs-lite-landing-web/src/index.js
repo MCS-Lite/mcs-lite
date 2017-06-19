@@ -12,19 +12,10 @@ import IntlProvider from './containers/IntlProvider';
 import { DEFAULT_LOCALE } from './containers/IntlProvider/IntlProvider';
 import App from './containers/App';
 import registerServiceWorker from './registerServiceWorker';
-import landingTheme from './utils/landingTheme';
+import landingTheme, { BREAKPOINTS } from './utils/landingTheme';
+import autotrack from './utils/autotrack';
 import './style';
 import './utils/i18n';
-
-// ----------------------------------------------------------------------------
-// 1. Constants
-// ----------------------------------------------------------------------------
-
-const BREAKPOINTS = { sm: 300, md: 568, lg: 1200 };
-
-// ----------------------------------------------------------------------------
-// 2. React render
-// ----------------------------------------------------------------------------
 
 const history = useRouterHistory(createHistory)();
 
@@ -42,3 +33,4 @@ render(
   document.getElementById('root'),
 );
 registerServiceWorker();
+autotrack(process.env.REACT_APP_GA_ID);

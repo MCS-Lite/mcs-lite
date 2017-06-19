@@ -1,5 +1,7 @@
 import { theme } from 'mcs-lite-theme';
 
+export const BREAKPOINTS = { sm: 768, md: 970, lg: 1170 };
+
 const landingTheme = {
   ...theme,
   color: {
