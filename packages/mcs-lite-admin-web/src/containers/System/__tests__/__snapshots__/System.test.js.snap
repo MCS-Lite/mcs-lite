@@ -67,7 +67,7 @@ exports[`should renders <System> correctly 1`] = `
       .json
     </TabItem>
   </styled.div>
-  <Styled(Loadable)
+  <Styled(LoadableComponent)
     error={false}
     onChange={[Function]}
     options={

@@ -21,14 +21,15 @@ Array [
             className="sc-bxivhb enlRff"
         />
     </styled.div>
-    <Styled(Loadable)>
-        <Loadable
+    <Styled(LoadableComponent)>
+        <LoadableComponent
             className="sc-EHOje bSiipK"
         >
-            <LoadingComponent
+            <loading
                 error={null}
                 isLoading={true}
                 pastDelay={false}
+                timedOut={false}
             >
                 <Styled(P)
                     color="primary"
@@ -38,9 +39,9 @@ Array [
                         color="primary"
                     />
                 </Styled(P)>
-            </LoadingComponent>
-        </Loadable>
-    </Styled(Loadable)>
+            </loading>
+        </LoadableComponent>
+    </Styled(LoadableComponent)>
 </div>,
   <div
     className="sc-bxivhb enlRff"
