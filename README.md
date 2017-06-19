@@ -133,6 +133,7 @@ $ ./tasks/test.sh
 ### Development
 
 ```
+# cd packages/mcs-lite-ui
 $ yarn start
 ```
 
@@ -141,10 +142,6 @@ $ yarn start
 ```
 $ yarn run test:watch
 ```
-
-### WebSocket PORT
-
-Replace `__SOCKET_PORT_FROM_SERVER__` in the `build/index.html` file. (Default to `8000`)
 
 ## NPM Scripts Interface
 
@@ -178,6 +175,9 @@ Packages
 ## Environment variables
 
 -   mcs-lite-introduction: `GA_ID`
+-   mcs-lite-mobile-web: WebSocket PORT
+
+    Replace `__SOCKET_PORT_FROM_SERVER__` in the `build/index.html` file. (Default to `8000`)
 
 ----
 
