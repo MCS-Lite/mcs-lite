@@ -19,9 +19,8 @@ const LoadableCodeMirror = Loadable({
     ).then(() =>
       import(/* webpackChunkName: "/LoadableCodeMirror" */ 'react-codemirror'),
     ),
-  LoadingComponent: () =>
+  loading: () =>
     <Center color="primary"><Spin><IconLoading size={20} /></Spin></Center>,
-  webpackRequireWeakId: () => require.resolveWeak('react-codemirror'),
 });
 
 export const StyledButton = styled(Button)`

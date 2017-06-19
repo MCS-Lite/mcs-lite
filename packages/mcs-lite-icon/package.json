@@ -30,6 +30,6 @@
     "mcs-lite-scripts": "^0.3.4"
   },
   "peerDependencies": {
-    "react": "^15.4.2"
+    "react": "^15.6.1"
   }
 }

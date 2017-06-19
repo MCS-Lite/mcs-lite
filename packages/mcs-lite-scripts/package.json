@@ -35,7 +35,7 @@
     "lodash.camelcase": "^4.3.0",
     "lodash.upperfirst": "^4.3.1",
     "ramda": "^0.24.1",
-    "rxjs": "^5.4.0"
+    "rxjs": "^5.4.1"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1"
