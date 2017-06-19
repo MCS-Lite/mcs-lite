@@ -38,24 +38,6 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>MCS Lite Admin</title>
-
-    <!--
-      The "__SOCKET_PORT_FROM_SERVER__" string will be replaced in the
-      mcs-lite-app server, so that we can set PORT variable dynamically.
-
-      Reference: Injecting Data from the Server into the Page.
-      (https://goo.gl/hExshS)
-
-      1. window.SOCKET_PORT: websocket port
-    -->
-    <script>
-      try {
-        window.SOCKET_PORT = __SOCKET_PORT_FROM_SERVER__;
-      } catch(e) {
-        console.info('[DEVELOPMENT MODE] Load %REACT_APP_SOCKET_PORT% as REACT_APP_SOCKET_PORT.', e);
-        window.SOCKET_PORT = %REACT_APP_SOCKET_PORT%;
-      }
-    </script>
   </head>
   <body>
     <div id="root"></div>
