@@ -13,6 +13,7 @@ export const Container = styled.header`
   background: ${props => props.theme.color.grayLight};
 `;
 
+// prettier-ignore
 export const Fixed = styled.div`
   z-index: ${HEADER_ZINDEX};
   position: fixed;
@@ -20,8 +21,7 @@ export const Fixed = styled.div`
   left: 0;
   right: 0;
   background: ${props => props.theme.color.grayLight};
-  box-shadow:
-    ${props => (props.isTop ? 'none' : '0 1px 0 0 rgba(0, 0, 0, 0.05)')};
+  box-shadow: ${props => (props.isTop ? 'none' : '0 1px 0 0 rgba(0, 0, 0, 0.05)')};
   transition: box-shadow cubic-bezier(0.47, 0, 0.75, 0.72) 0.2s;
 `;
 
@@ -38,7 +38,7 @@ export const StyledA = styled(A)`
   align-items: center;
   cursor: pointer;
   text-decoration: none;
-  color ${props => props.theme.color.black};
+  color: ${props => props.theme.color.black};
 `;
 
 export const StyledP = styled(P)`
@@ -58,8 +58,6 @@ export const Right = styled.div`
 `;
 
 export const StyledMenu = styled(Menu)`
-  width: 200px;
-
   ${MenuItem} {
     width: 100%;
   }
@@ -76,5 +74,5 @@ export const HiddenForPreRenderTrick = styled.div`
 
 export const StyledIconFold = styled(IconFold)`
   transform: rotate(${props => (props.isShow ? -180 : 0)}deg);
-  transition: transform .4s cubic-bezier(.68,-.55,.27,1.55);
+  transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 `;
