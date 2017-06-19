@@ -19,7 +19,6 @@
     "extract:pot": "react-intl-po json2pot '../mcs-lite-translation/src/mcs-lite-landing-web/messages.json' -o '../mcs-lite-translation/src/mcs-lite-landing-web/messages.pot'"
   },
   "devDependencies": {
-    "autotrack": "^2.4.1",
     "bowser": "^1.7.0",
     "browser-locale": "^1.0.2",
     "hedron": "^0.7.1",
