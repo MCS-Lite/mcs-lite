@@ -1,5 +1,38 @@
 # MCS Lite changelogs
 
+## Released (2017-06-19)
+
+#### :rocket: New Feature
+* `mcs-lite-landing-web`, `mcs-lite-translation`, `mcs-lite-ui`
+  * [#366](https://github.com/MCS-Lite/mcs-lite/pull/366) feat(Landing): add content to sections & fix the A component style. ([@evenchange4](https://github.com/evenchange4))
+
+  ```diff
+  +text-decoration: none;
+  ```
+
+#### :bug: Bug Fix
+* `mcs-lite-landing-web`
+  * [#369](https://github.com/MCS-Lite/mcs-lite/pull/369) fix(Landing): add redirect rules & fix getBit function. ([@evenchange4](https://github.com/evenchange4))
+  * [#368](https://github.com/MCS-Lite/mcs-lite/pull/368) fix(Netlify/Landing): i18n redirect problem. ([@evenchange4](https://github.com/evenchange4))
+* `mcs-lite-admin-web`, `mcs-lite-landing-web`, `mcs-lite-mobile-web`
+  * [#367](https://github.com/MCS-Lite/mcs-lite/pull/367) fix(utils): wrong memorize function. ([@evenchange4](https://github.com/evenchange4))
+
+#### :nail_care: Enhancement
+* `mcs-lite-translation`
+  * [#365](https://github.com/MCS-Lite/mcs-lite/pull/365) feat(i18N): update translation strings.. ([@dariachen](https://github.com/dariachen))
+
+#### :house: Internal
+* `eslint-config-mcs-lite`, `mcs-lite-admin-web`, `mcs-lite-icon`, `mcs-lite-landing-web`, `mcs-lite-mobile-web`, `mcs-lite-scripts`, `mcs-lite-ui`, `react-intl-inject-hoc`, `stylelint-config-mcs-lite`
+  * [#370](https://github.com/MCS-Lite/mcs-lite/pull/370) feat(React-Loadable): upgrade to 4.0. ([@evenchange4](https://github.com/evenchange4))
+  
+  Also bump rxjs version.
+  
+#### Committers: 2
+- Daria Chen ([dariachen](https://github.com/dariachen))
+- Michael Hsu ([evenchange4](https://github.com/evenchange4))
+
+----
+
 ## Released (2017-06-15)
 
 ### Bump Versions
