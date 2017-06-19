@@ -7,9 +7,12 @@ import { MenuItem } from 'mcs-lite-ui/lib/Menu';
 import Overlay from 'mcs-lite-ui/lib/Overlay';
 import { Page, Row } from 'hedron';
 import { PAGE_WIDTH } from '../../components/SectionRow/SectionRow';
-import locales from '../../utils/locales.json';
 import LOGO from '../../statics/images/logo_mcs_lite_black.svg';
-import localeMapper from '../../utils/localeMapper';
+import {
+  LOCALES,
+  localeMapper,
+  getMCSLinkByLocale,
+} from '../../utils/localeHelper';
 import { DEFAULT_LOCALE } from '../IntlProvider/IntlProvider';
 import {
   Container,
@@ -50,6 +53,7 @@ class Header extends React.Component {
 
     // Remind: fix for netlify redirect to lower case path
     const locale = defaultLocaleMapper(router.params.locale);
+    const mcsLink = getMCSLinkByLocale(locale);
 
     return (
       <Container>
@@ -63,16 +67,16 @@ class Header extends React.Component {
 
                 <Right>
                   <StyledA
-                    href={
-                      locale === 'zh-CN'
-                        ? 'https://mcs.mediatek.cn/'
-                        : `https://mcs.mediatek.com/${locale}`
-                    }
+                    href={mcsLink}
+                    target="_blank"
+                    rel="noreferrer noopener"
                   >
                     {t('gotoMCS')}
                   </StyledA>
                   <StyledA
-                    href={`https://mcs-lite-instroduction.com/${locale}`}
+                    href={`https://mcs-lite-introduction.netlify.com/${locale}`}
+                    target="_blank"
+                    rel="noreferrer noopener"
                   >
                     {t('resource')}
                   </StyledA>
@@ -91,7 +95,7 @@ class Header extends React.Component {
                   {isShow &&
                     <Overlay target={target} onClickOutSide={onHide}>
                       <StyledMenu key="menu">
-                        {locales.map(({ id, children }) =>
+                        {LOCALES.map(({ id, children }) =>
                           <Link key={id} to={`/${id}`} onClick={onHide}>
                             <MenuItem>{children}</MenuItem>
                           </Link>,
@@ -102,7 +106,7 @@ class Header extends React.Component {
 
                 {/* For Prereder */}
                 <HiddenForPreRenderTrick>
-                  {locales.map(({ id, children }) =>
+                  {LOCALES.map(({ id, children }) =>
                     <Link key={id} to={`/${id}`}>
                       {children}
                     </Link>,

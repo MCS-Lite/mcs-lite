@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import { IntlProvider as ReactIntlProvider } from 'react-intl';
 import translation from 'mcs-lite-translation/lib/mcs-lite-landing-web.json';
-import localeMapper from '../../utils/localeMapper';
+import { localeMapper } from '../../utils/localeHelper';
 
 export const DEFAULT_LOCALE = 'en';
 const defaultLocaleMapper = localeMapper(DEFAULT_LOCALE);
