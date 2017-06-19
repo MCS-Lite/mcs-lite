@@ -31,6 +31,21 @@
     "filepath": "src/containers/App/messages.js"
   },
   {
+    "id": "Header.gotoMCS",
+    "defaultMessage": "Go to MCS",
+    "filepath": "src/containers/Header/messages.js"
+  },
+  {
+    "id": "Header.resource",
+    "defaultMessage": "Resources",
+    "filepath": "src/containers/Header/messages.js"
+  },
+  {
+    "id": "Header.contact",
+    "defaultMessage": "Contact us",
+    "filepath": "src/containers/Header/messages.js"
+  },
+  {
     "id": "Section1.title",
     "defaultMessage": "Build your IoT platform with ease and flexibility",
     "filepath": "src/containers/Section1/messages.js"

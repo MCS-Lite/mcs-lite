@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { withGetMessages } from 'react-intl-inject-hoc';
-import { Link } from 'react-router';
 import Helmet from 'react-helmet';
 import request from 'superagent';
 import Section1 from '../Section1';
@@ -10,8 +9,8 @@ import Section3 from '../Section3';
 import Section4 from '../Section4';
 import Section5 from '../Section5';
 import Footer from '../../components/Footer';
+import Header from '../Header';
 import messages from './messages';
-import locales from '../../utils/locales.json';
 
 const GITHUB_API_URL =
   'https://api.github.com/repos/MCS-Lite/mcs-lite-app/releases/latest';
@@ -35,9 +34,7 @@ class App extends React.Component {
           <title>{t('title')}</title>
         </Helmet>
 
-        {locales.map(({ id, children }) =>
-          <Link key={id} to={`/${id}`}>{children}</Link>,
-        )}
+        <Header />
 
         <Section1 tag={tag} />
         <Section2 />
