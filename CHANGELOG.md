@@ -2,6 +2,21 @@
 
 ## Released (2017-06-19)
 
+### Bump Versions
+
+-   eslint-config-mcs-lite: 0.5.1 => 0.5.2
+-   mcs-lite-admin-web: 0.1.4 => 0.1.5
+-   mcs-lite-connect: 0.3.4 => 0.3.5
+-   mcs-lite-icon: 0.3.4 => 0.3.5
+-   mcs-lite-landing-web: 0.0.2 => 0.0.3 (private)
+-   mcs-lite-mobile-web: 0.4.6 => 0.4.7
+-   mcs-lite-scripts: 0.3.4 => 0.3.5
+-   mcs-lite-translation: 0.1.3 => 0.1.4
+-   mcs-lite-ui: 0.4.4 => 0.4.5
+-   react-intl-cra: 0.2.4 => 0.2.5
+-   react-intl-inject-hoc: 0.2.4 => 0.2.5
+-   stylelint-config-mcs-lite: 0.2.0 => 0.2.1
+
 #### :rocket: New Feature
 * `mcs-lite-landing-web`, `mcs-lite-translation`, `mcs-lite-ui`
   * [#366](https://github.com/MCS-Lite/mcs-lite/pull/366) feat(Landing): add content to sections & fix the A component style. ([@evenchange4](https://github.com/evenchange4))
