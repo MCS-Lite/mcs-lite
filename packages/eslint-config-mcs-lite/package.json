@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-mcs-lite",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "description": "Eslint config used by MCS Lite",
   "repository": "MCS-Lite/mcs-lite",
   "author": "Michael Hsu <evenchange4@gmail.com>",
