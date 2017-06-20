@@ -30,6 +30,7 @@
     "mcs-lite-ui": "^0.4.5",
     "normalize.css": "^7.0.0",
     "prop-types": "^15.5.10",
+    "raf": "^3.3.2",
     "ramda": "^0.24.1",
     "rc-scroll-anim": "^1.0.5",
     "react": "^15.6.1",
