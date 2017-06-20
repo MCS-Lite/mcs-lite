@@ -7,19 +7,23 @@ import ScrollParallax from 'rc-scroll-anim/lib/ScrollParallax';
 import SpaceTop from '../../components/SpaceTop';
 import SectionRow from '../../components/SectionRow';
 import TextCenter from '../../components/TextCenter';
-import wifi from '../../statics/images/wifi.svg';
-import mac from '../../statics/images/mac.svg';
-import macbg from '../../statics/images/macbg.svg';
+import imgSignal from '../../statics/images/img_signal.svg';
+import imgMac from '../../statics/images/img_mac.svg';
+import imgIot from '../../statics/images/img_iot.svg';
 
 const StyledSectionRow = styled(SectionRow)`
   background-image: linear-gradient(-180deg, #FFFFFF 0%, #FDFDFD 47%, #FAFAFA 100%);
 `;
 
 const MacWrapper = styled.div`
-  background-image: url(${macbg});
-  background-color: #FAFAFA;
+  background-image: url(${imgIot});
   background-repeat: no-repeat;
-  background-position: 100% 100%;
+  background-position: center center;
+  background-size: contain;
+`;
+
+const StyledImg = styled.img`
+  max-width: 100%;
 `;
 
 const Section2 = ({ getMessages: t }) =>
@@ -31,17 +35,23 @@ const Section2 = ({ getMessages: t }) =>
           <Heading level={4} color="grayBase">{t('desc')}</Heading>
         </SpaceTop>
         <SpaceTop height={40}>
-          <img src={wifi} alt="wifi" />
+          <ScrollParallax
+            animation={{ opacity: 1, playScale: [0.5, 0.8] }}
+            always={false}
+            style={{ opacity: 0 }}
+          >
+            <img src={imgSignal} title={t('title')} alt={t('desc')} />
+          </ScrollParallax>
         </SpaceTop>
 
         <MacWrapper>
           <ScrollParallax
-            animation={{ opacity: 1, y: 0, playScale: [0, 1] }}
+            animation={{ opacity: 1, y: 0, playScale: [0, 0.6] }}
             always={false}
-            style={{ opacity: 0.6, transform: 'translateY(80px)' }}
+            style={{ opacity: 0.8, transform: 'translateY(60px)' }}
           >
             <SpaceTop height={20}>
-              <img src={mac} alt="mac" />
+              <StyledImg src={imgMac} title={t('title')} alt={t('desc')} />
             </SpaceTop>
           </ScrollParallax>
         </MacWrapper>

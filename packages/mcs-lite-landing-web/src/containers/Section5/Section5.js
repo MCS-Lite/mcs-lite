@@ -1,12 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styled from 'styled-components';
 import { Column } from 'hedron';
 import Heading from 'mcs-lite-ui/lib/Heading';
 import SpaceTop from '../../components/SpaceTop';
 import SectionRow from '../../components/SectionRow';
 import TextCenter from '../../components/TextCenter';
 import DownloadButton from '../../components/DownloadButton';
-import mac from '../../statics/images/mac.svg';
+import imgSetup from '../../statics/images/img_setup.svg';
+
+const StyledImg = styled.img`
+  max-width: 100%;
+`;
 
 const Section5 = ({ tag, getMessages: t }) =>
   <SectionRow>
@@ -14,7 +19,7 @@ const Section5 = ({ tag, getMessages: t }) =>
       <TextCenter>
         <Heading level={2}>{t('title')}</Heading>
         <SpaceTop height={40}>
-          <img src={mac} alt="mac" />
+          <StyledImg src={imgSetup} title={t('title')} alt={t('title')} />
         </SpaceTop>
         <SpaceTop height={40}>
           <DownloadButton tag={tag} />
