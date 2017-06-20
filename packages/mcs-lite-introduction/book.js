@@ -3,9 +3,17 @@ const pkg = require('./package.json');
 
 const GITHUB_ORG = 'https://github.com/MCS-Lite';
 const GITHUB_DIR = `${GITHUB_ORG}/mcs-lite/tree/master/packages/mcs-lite-introduction`;
+const NETLIFY_URL = 'https://mcs-lite-introduction.netlify.com/';
 const GA_ID = process.env.GA_ID;
 
-const plugins = ['edit-link', 'prism', '-highlight', 'github', 'anchorjs'];
+const plugins = [
+  'edit-link',
+  'prism',
+  '-highlight',
+  'github',
+  'anchorjs',
+  'sitemap-general',
+];
 
 if (GA_ID) {
   // prettier-ignore
@@ -51,6 +59,9 @@ module.exports = {
     },
     ga: {
       token: GA_ID || '',
+    },
+    'sitemap-general': {
+      prefix: NETLIFY_URL,
     },
   },
 };

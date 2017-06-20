@@ -1,4 +1,4 @@
-/* global ga */
+/* global ga, window */
 
 export default function autotrack(id, breakpoints) {
   if (!id) return;
@@ -9,8 +9,21 @@ export default function autotrack(id, breakpoints) {
   const DIMENSION_MEDIA_QUERY = 1;
   const DIMENSION_CLEAN_URL = 2;
 
-  // prettier-ignore
-  window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date; // eslint-disable-line
+  /**
+   * https://developers.google.com/analytics/devguides/collection/analyticsjs/tracking-snippet-reference
+   * Creates an initial ga() function.
+   * The queued commands will be executed once analytics.js loads.
+   * Sets the time (as an integer) this tag was executed.
+   * Used for timing hits.
+   */
+  /* eslint-disable */
+  window.ga =
+    window.ga ||
+    function() {
+      (ga.q = ga.q || []).push(arguments);
+    };
+  ga.l = +new Date();
+  /* eslint-enable */
 
   ga('create', id, 'auto');
 
