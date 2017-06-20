@@ -38,7 +38,7 @@ const Section4 = ({ getMessages: t }) =>
     </Column>
 
     <Row>
-      <Column xs={6}>
+      <Column xs={12} sm={6}>
         <CardWrapper>
           <img src={license} alt="license" />
           <SpaceTop height={20}>
@@ -53,7 +53,7 @@ const Section4 = ({ getMessages: t }) =>
         </CardWrapper>
       </Column>
 
-      <Column xs={6}>
+      <Column xs={12} sm={6}>
         <CardWrapper>
           <img src={license} alt="license" />
           <SpaceTop height={20}>

@@ -87,7 +87,13 @@ class Header extends React.Component {
                   >
                     {t('contact')}
                   </StyledA>
-                  <StyledA ref={getTarget} onClick={onClickLanguage}>
+                  <StyledA
+                    ref={getTarget}
+                    onClick={onClickLanguage}
+                    data-ga-on="click"
+                    data-ga-event-category="Language Dropdown Menu"
+                    data-ga-event-action="click"
+                  >
                     <StyledP>Language</StyledP>
                     <StyledIconFold size={18} isShow={isShow} />
                   </StyledA>

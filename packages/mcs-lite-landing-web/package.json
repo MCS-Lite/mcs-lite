@@ -13,12 +13,14 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build && react-snapshot",
+    "build:netlify": "REACT_APP_GA_ID='UA-58128356-6' npm run build",
     "test": "CI=true react-scripts test --env=jsdom --coverage --runInBand",
     "test:watch": "react-scripts test --env=jsdom",
     "extract:messages": "react-intl-cra 'src/**/*.js' '../mcs-lite-translation/src/mcs-lite-landing-web/messages.json'",
     "extract:pot": "react-intl-po json2pot '../mcs-lite-translation/src/mcs-lite-landing-web/messages.json' -o '../mcs-lite-translation/src/mcs-lite-landing-web/messages.pot'"
   },
   "devDependencies": {
+    "autotrack": "^2.4.1",
     "bowser": "^1.7.0",
     "browser-locale": "^1.0.2",
     "hedron": "^0.7.1",
