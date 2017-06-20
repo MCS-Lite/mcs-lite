@@ -20,6 +20,21 @@
     "filepath": "src/components/Footer/messages.js"
   },
   {
+    "id": "Header.gotoMCS",
+    "defaultMessage": "Go to MCS",
+    "filepath": "src/components/Header/messages.js"
+  },
+  {
+    "id": "Header.resource",
+    "defaultMessage": "Resources",
+    "filepath": "src/components/Header/messages.js"
+  },
+  {
+    "id": "Header.contact",
+    "defaultMessage": "Contact us",
+    "filepath": "src/components/Header/messages.js"
+  },
+  {
     "id": "App.titleTemplate",
     "description": "For document title",
     "defaultMessage": "MCS Lite",
@@ -29,21 +44,6 @@
     "id": "App.title",
     "defaultMessage": "Build your IoT platform with ease and flexibility",
     "filepath": "src/containers/App/messages.js"
-  },
-  {
-    "id": "Header.gotoMCS",
-    "defaultMessage": "Go to MCS",
-    "filepath": "src/containers/Header/messages.js"
-  },
-  {
-    "id": "Header.resource",
-    "defaultMessage": "Resources",
-    "filepath": "src/containers/Header/messages.js"
-  },
-  {
-    "id": "Header.contact",
-    "defaultMessage": "Contact us",
-    "filepath": "src/containers/Header/messages.js"
   },
   {
     "id": "Section1.title",
