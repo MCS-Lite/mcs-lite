@@ -36,7 +36,7 @@ const Section2 = ({ getMessages: t }) =>
         </SpaceTop>
         <SpaceTop height={40}>
           <ScrollParallax
-            animation={{ opacity: 1, playScale: [0.5, 0.8] }}
+            animation={{ opacity: 1, playScale: [0.5, 0.7] }}
             always={false}
             style={{ opacity: 0 }}
           >
@@ -46,9 +46,9 @@ const Section2 = ({ getMessages: t }) =>
 
         <MacWrapper>
           <ScrollParallax
-            animation={{ opacity: 1, y: 0, playScale: [0, 0.6] }}
+            animation={{ opacity: 1, y: 0, scale: 1, playScale: [0, 0.6] }}
             always={false}
-            style={{ opacity: 0.8, transform: 'translateY(60px)' }}
+            style={{ opacity: 0.8, transform: 'translateY(60px) scale(0.9)' }}
           >
             <SpaceTop height={20}>
               <StyledImg src={imgMac} title={t('title')} alt={t('desc')} />
