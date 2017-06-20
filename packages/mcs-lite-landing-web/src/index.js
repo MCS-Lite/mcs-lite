@@ -33,4 +33,4 @@ render(
   document.getElementById('root'),
 );
 registerServiceWorker();
-autotrack(process.env.REACT_APP_GA_ID);
+autotrack(process.env.REACT_APP_GA_ID, BREAKPOINTS);
