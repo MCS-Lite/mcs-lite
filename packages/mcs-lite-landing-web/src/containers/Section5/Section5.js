@@ -24,11 +24,11 @@ const ImageWrapper = styled.div`
 `;
 
 const ScrollParallaxMachine = styled(ScrollParallax)`
-  transform-origin: 143px 0px;
+  transform-origin: 143px 0;
 `;
 
 const Background = styled.div`
-  background-image: url('${props => props.src}');
+  background-image: url("${props => props.src}");
   background-repeat: no-repeat;
   background-position: center center;
   height: 100%;

@@ -16,7 +16,7 @@ const StyledSectionRow = styled(SectionRow)`
 `;
 
 const Background = styled.div`
-  background-image: url('${props => props.src}');
+  background-image: url("${props => props.src}");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;

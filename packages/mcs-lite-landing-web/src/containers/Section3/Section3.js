@@ -28,12 +28,15 @@ const StyledRow = styled(Row)`
     &:nth-of-type(4n+1) ${ImageWrapper} {
       background-color: #28B2E6;
     }
+
     &:nth-of-type(4n+2) ${ImageWrapper} {
       background-color: #FEB439;
     }
+
     &:nth-of-type(4n+3) ${ImageWrapper} {
       background-color: #36C1CA;
     }
+
     &:nth-of-type(4n) ${ImageWrapper} {
       background-color: #FF4E84;
     }

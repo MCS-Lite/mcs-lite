@@ -56,7 +56,7 @@ const ScrollParallaxCode = styled(ScrollParallax)`
 `;
 
 const Background = styled.div`
-  background-image: url('${props => props.src}');
+  background-image: url("${props => props.src}");
   background-repeat: no-repeat;
   background-position: center center;
   height: 100%;
