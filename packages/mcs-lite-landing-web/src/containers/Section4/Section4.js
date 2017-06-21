@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
+import ScrollParallax from 'rc-scroll-anim/lib/ScrollParallax';
 import { Row, Column } from 'hedron';
 import Heading from 'mcs-lite-ui/lib/Heading';
 import P from 'mcs-lite-ui/lib/P';
@@ -11,6 +12,10 @@ import TextCenter from '../../components/TextCenter';
 import SpaceTop from '../../components/SpaceTop';
 import SectionRow from '../../components/SectionRow';
 import imgOpen from '../../statics/images/img_open_source.svg';
+import imgOpenCloud from '../../statics/images/img_open_source_cloud.svg';
+import imgOpenCode1 from '../../statics/images/img_open_source_code1.svg';
+import imgOpenCode2 from '../../statics/images/img_open_source_code2.svg';
+import imgOpenCode3 from '../../statics/images/img_open_source_code3.svg';
 import imgCustomization from '../../statics/images/img_customization.svg';
 
 const StyledSectionRow = styled(SectionRow)`
@@ -36,6 +41,28 @@ const StyledImg = styled.img`
   padding: 10px 30px;
 `;
 
+const ImageWrapper = styled.div`
+  position: relative;
+  height: 170px;
+
+  > * {
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
+`;
+
+const ScrollParallaxCode = styled(ScrollParallax)`
+  transform-origin: center bottom;
+`;
+
+const Background = styled.div`
+  background-image: url('${imgOpen}');
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100%;
+`;
+
 const Section4 = ({ getMessages: t }) =>
   <StyledSectionRow>
     <Column xs={12}>
@@ -47,11 +74,45 @@ const Section4 = ({ getMessages: t }) =>
     <Row>
       <Column xs={12} sm={6}>
         <CardWrapper>
-          <StyledImg
-            src={imgOpen}
-            title={t('github.title')}
-            alt={t('github.desc')}
-          />
+          <ImageWrapper>
+            <Background />
+            <div>
+              <ScrollParallaxCode
+                animation={{ y: 35, rotate: -15, playScale: [0.1, 0.4] }}
+                style={{ transform: 'translate(-40px, 30px) rotate(-5deg)' }}
+                component="img"
+                src={imgOpenCode1}
+                alt="code1"
+              />
+            </div>
+            <div>
+              <ScrollParallaxCode
+                animation={{ y: 35, rotate: 15, playScale: [0.1, 0.4] }}
+                style={{ transform: 'translate(40px, 30px) rotate(5deg)' }}
+                component="img"
+                src={imgOpenCode3}
+                alt="code3"
+              />
+            </div>
+            <div>
+              <ScrollParallaxCode
+                animation={{ y: 20, playScale: [0.1, 0.4] }}
+                style={{ transform: 'translateY(25px)' }}
+                component="img"
+                src={imgOpenCode2}
+                alt="code2"
+              />
+            </div>
+            <div>
+              <ScrollParallax
+                animation={{ y: 20, playScale: [0, 0.4] }}
+                style={{ transform: 'translateY(0px)' }}
+                component="img"
+                src={imgOpenCloud}
+                alt="cloud"
+              />
+            </div>
+          </ImageWrapper>
           <SpaceTop height={20}>
             <Heading level={3}>
               <B>{t('github.title')}</B>

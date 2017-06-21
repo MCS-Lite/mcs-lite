@@ -24,12 +24,7 @@ const ImageWrapper = styled.div`
 `;
 
 const ScrollParallaxMachine = styled(ScrollParallax)`
-  top: 0;
   transform-origin: 143px 0px;
-`;
-
-const ScrollParallaxScreen = styled(ScrollParallax)`
-  top: 0;
 `;
 
 const Background = styled.div`
@@ -47,7 +42,7 @@ const Section5 = ({ tag, getMessages: t }) =>
         <SpaceTop height={40}>
           <ImageWrapper>
             <div>
-              <ScrollParallaxScreen
+              <ScrollParallax
                 animation={{ x: 0, y: 0, playScale: [0, 0.4] }}
                 style={{ transform: 'translate(-5px, -32px)' }}
                 component="img"
