@@ -56,7 +56,7 @@ const Section3 = ({ getMessages: t }) =>
         <ScrollParallax
           animation={{ opacity: 1, y: 0, playScale: [0, 0.4] }}
           always
-          style={{ opacity: 0.5, transform: 'translateY(-30px)' }}
+          style={{ opacity: 0.4, transform: 'translateY(-30px)' }}
         >
           <TextCenter>
             <ImageWrapper>
@@ -82,7 +82,7 @@ const Section3 = ({ getMessages: t }) =>
         <ScrollParallax
           animation={{ opacity: 1, y: 0, playScale: [0.1, 0.4] }}
           always={false}
-          style={{ opacity: 0.5, transform: 'translateY(-30px)' }}
+          style={{ opacity: 0.4, transform: 'translateY(-30px)' }}
         >
           <TextCenter>
             <ImageWrapper>
@@ -108,7 +108,7 @@ const Section3 = ({ getMessages: t }) =>
         <ScrollParallax
           animation={{ opacity: 1, y: 0, playScale: [0.2, 0.4] }}
           always={false}
-          style={{ opacity: 0.5, transform: 'translateY(-30px)' }}
+          style={{ opacity: 0.4, transform: 'translateY(-30px)' }}
         >
           <TextCenter>
             <ImageWrapper>
@@ -134,7 +134,7 @@ const Section3 = ({ getMessages: t }) =>
         <ScrollParallax
           animation={{ opacity: 1, y: 0, playScale: [0.3, 0.4] }}
           always={false}
-          style={{ opacity: 0.5, transform: 'translateY(-30px)' }}
+          style={{ opacity: 0.4, transform: 'translateY(-30px)' }}
         >
           <TextCenter>
             <ImageWrapper>
