@@ -17,6 +17,10 @@ import imgOpenCode1 from '../../statics/images/img_open_source_code1.svg';
 import imgOpenCode2 from '../../statics/images/img_open_source_code2.svg';
 import imgOpenCode3 from '../../statics/images/img_open_source_code3.svg';
 import imgCustomization from '../../statics/images/img_customization.svg';
+import imgCustomizationCard from '../../statics/images/img_customization_card.svg';
+import imgCustomizationCode from '../../statics/images/img_customization_code.svg';
+import imgCustomizationSearch from '../../statics/images/img_customization_search.svg';
+import imgCustomizationTooltip from '../../statics/images/img_customization_tooltip.svg';
 
 const StyledSectionRow = styled(SectionRow)`
   background-image: linear-gradient(-180deg, #FFFFFF 0%, #FDFDFD 47%, #FAFAFA 100%);
@@ -36,11 +40,6 @@ const CardWrapper = styled.div`
   }
 `;
 
-const StyledImg = styled.img`
-  max-width: 100%;
-  padding: 10px 30px;
-`;
-
 const ImageWrapper = styled.div`
   position: relative;
   height: 170px;
@@ -57,7 +56,7 @@ const ScrollParallaxCode = styled(ScrollParallax)`
 `;
 
 const Background = styled.div`
-  background-image: url('${imgOpen}');
+  background-image: url('${props => props.src}');
   background-repeat: no-repeat;
   background-position: center center;
   height: 100%;
@@ -75,7 +74,7 @@ const Section4 = ({ getMessages: t }) =>
       <Column xs={12} sm={6}>
         <CardWrapper>
           <ImageWrapper>
-            <Background />
+            <Background src={imgOpen} />
             <div>
               <ScrollParallaxCode
                 animation={{ y: 35, rotate: -15, playScale: [0.1, 0.4] }}
@@ -133,11 +132,50 @@ const Section4 = ({ getMessages: t }) =>
 
       <Column xs={12} sm={6}>
         <CardWrapper>
-          <StyledImg
-            src={imgCustomization}
-            title={t('custom.title')}
-            alt={t('custom.desc')}
-          />
+          <ImageWrapper>
+            <Background src={imgCustomization} />
+            <div>
+              <ScrollParallax
+                animation={{
+                  opacity: 1,
+                  x: -105,
+                  y: 85,
+                  playScale: [0.1, 0.4],
+                }}
+                style={{ opacity: 0.8, transform: 'translate(-120px, 85px)' }}
+                component="img"
+                src={imgCustomizationTooltip}
+                alt="imgCustomizationTooltip"
+              />
+            </div>
+            <div>
+              <ScrollParallax
+                animation={{ y: 35, playScale: [0.1, 0.4] }}
+                style={{ transform: 'translateY(0px)' }}
+                component="img"
+                src={imgCustomizationCode}
+                alt="imgCustomizationCode"
+              />
+            </div>
+            <div>
+              <ScrollParallax
+                animation={{ x: 80, y: 22, playScale: [0.1, 0.4] }}
+                style={{ transform: 'translate(90px, 12px)' }}
+                component="img"
+                src={imgCustomizationCard}
+                alt="imgCustomizationCard"
+              />
+            </div>
+            <div>
+              <ScrollParallax
+                animation={{ opacity: 1, x: 70, y: 125, playScale: [0.1, 0.4] }}
+                style={{ opacity: 0.5, transform: 'translate(70px, 135px)' }}
+                component="img"
+                src={imgCustomizationSearch}
+                alt="imgCustomizationSearch"
+              />
+            </div>
+          </ImageWrapper>
           <SpaceTop height={20}>
             <Heading level={3}>
               <B>{t('custom.title')}</B>
