@@ -77,8 +77,13 @@ const Section4 = ({ getMessages: t }) =>
             <Background src={imgOpen} />
             <div>
               <ScrollParallaxCode
-                animation={{ y: 35, rotate: -15, playScale: [0.1, 0.4] }}
-                style={{ transform: 'translate(-40px, 30px) rotate(-5deg)' }}
+                animation={{
+                  x: -40,
+                  y: 35,
+                  rotate: -15,
+                  playScale: [0.1, 0.4],
+                }}
+                style={{ transform: 'translate(-30px, 30px) rotate(0deg)' }}
                 component="img"
                 src={imgOpenCode1}
                 alt="code1"
@@ -86,8 +91,8 @@ const Section4 = ({ getMessages: t }) =>
             </div>
             <div>
               <ScrollParallaxCode
-                animation={{ y: 35, rotate: 15, playScale: [0.1, 0.4] }}
-                style={{ transform: 'translate(40px, 30px) rotate(5deg)' }}
+                animation={{ x: 40, y: 35, rotate: 15, playScale: [0.1, 0.4] }}
+                style={{ transform: 'translate(30px, 30px) rotate(0deg)' }}
                 component="img"
                 src={imgOpenCode3}
                 alt="code3"
@@ -160,7 +165,7 @@ const Section4 = ({ getMessages: t }) =>
             <div>
               <ScrollParallax
                 animation={{ x: 80, y: 22, playScale: [0.1, 0.4] }}
-                style={{ transform: 'translate(90px, 12px)' }}
+                style={{ transform: 'translate(95px, 5px)' }}
                 component="img"
                 src={imgCustomizationCard}
                 alt="imgCustomizationCard"
@@ -169,7 +174,7 @@ const Section4 = ({ getMessages: t }) =>
             <div>
               <ScrollParallax
                 animation={{ opacity: 1, x: 70, y: 125, playScale: [0.1, 0.4] }}
-                style={{ opacity: 0.5, transform: 'translate(70px, 135px)' }}
+                style={{ opacity: 0.3, transform: 'translate(70px, 140px)' }}
                 component="img"
                 src={imgCustomizationSearch}
                 alt="imgCustomizationSearch"

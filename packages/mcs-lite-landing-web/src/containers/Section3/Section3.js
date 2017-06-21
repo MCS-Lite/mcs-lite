@@ -54,7 +54,10 @@ const Section3 = ({ getMessages: t }) =>
     <StyledRow>
       <Column xs={6} sm={3}>
         <ScrollParallax
-          animation={{ opacity: 1, y: 0, playScale: [0, 0.4] }}
+          animation={[
+            { opacity: 1, y: 10, playScale: [0, 0.4] },
+            { opacity: 1, y: 0, playScale: [0.4, 0.5] },
+          ]}
           always
           style={{ opacity: 0.4, transform: 'translateY(-30px)' }}
         >
@@ -80,7 +83,10 @@ const Section3 = ({ getMessages: t }) =>
 
       <Column xs={6} sm={3}>
         <ScrollParallax
-          animation={{ opacity: 1, y: 0, playScale: [0.1, 0.4] }}
+          animation={[
+            { opacity: 1, y: 10, playScale: [0.1, 0.4] },
+            { opacity: 1, y: 0, playScale: [0.4, 0.5] },
+          ]}
           always={false}
           style={{ opacity: 0.4, transform: 'translateY(-30px)' }}
         >
@@ -106,7 +112,10 @@ const Section3 = ({ getMessages: t }) =>
 
       <Column xs={6} sm={3}>
         <ScrollParallax
-          animation={{ opacity: 1, y: 0, playScale: [0.2, 0.4] }}
+          animation={[
+            { opacity: 1, y: 10, playScale: [0.2, 0.4] },
+            { opacity: 1, y: 0, playScale: [0.4, 0.5] },
+          ]}
           always={false}
           style={{ opacity: 0.4, transform: 'translateY(-30px)' }}
         >
@@ -132,7 +141,10 @@ const Section3 = ({ getMessages: t }) =>
 
       <Column xs={6} sm={3}>
         <ScrollParallax
-          animation={{ opacity: 1, y: 0, playScale: [0.3, 0.4] }}
+          animation={[
+            { opacity: 1, y: 10, playScale: [0.3, 0.4] },
+            { opacity: 1, y: 0, playScale: [0.4, 0.5] },
+          ]}
           always={false}
           style={{ opacity: 0.4, transform: 'translateY(-30px)' }}
         >

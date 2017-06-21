@@ -15,8 +15,8 @@ const StyledSectionRow = styled(SectionRow)`
   background-image: linear-gradient(-180deg, #FFFFFF 0%, #FDFDFD 47%, #FAFAFA 100%);
 `;
 
-const MacWrapper = styled.div`
-  background-image: url(${imgIot});
+const Background = styled.div`
+  background-image: url('${props => props.src}');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
@@ -36,7 +36,7 @@ const Section2 = ({ getMessages: t }) =>
         </SpaceTop>
         <SpaceTop height={40}>
           <ScrollParallax
-            animation={{ opacity: 1, playScale: [0.5, 0.7] }}
+            animation={{ opacity: 1, playScale: [0.4, 0.6] }}
             always={false}
             style={{ opacity: 0 }}
           >
@@ -44,9 +44,9 @@ const Section2 = ({ getMessages: t }) =>
           </ScrollParallax>
         </SpaceTop>
 
-        <MacWrapper>
+        <Background src={imgIot}>
           <ScrollParallax
-            animation={{ opacity: 1, y: 0, scale: 1, playScale: [0, 0.6] }}
+            animation={{ opacity: 1, y: 0, scale: 1, playScale: [0, 0.5] }}
             always={false}
             style={{ opacity: 0.8, transform: 'translateY(60px) scale(0.9)' }}
           >
@@ -54,7 +54,7 @@ const Section2 = ({ getMessages: t }) =>
               <StyledImg src={imgMac} title={t('title')} alt={t('desc')} />
             </SpaceTop>
           </ScrollParallax>
-        </MacWrapper>
+        </Background>
       </TextCenter>
     </Column>
   </StyledSectionRow>;

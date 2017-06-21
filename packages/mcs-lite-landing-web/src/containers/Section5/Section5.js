@@ -28,7 +28,7 @@ const ScrollParallaxMachine = styled(ScrollParallax)`
 `;
 
 const Background = styled.div`
-  background-image: url('${imgSetup}');
+  background-image: url('${props => props.src}');
   background-repeat: no-repeat;
   background-position: center center;
   height: 100%;
@@ -59,7 +59,7 @@ const Section5 = ({ tag, getMessages: t }) =>
                 alt="machine"
               />
             </div>
-            <Background />
+            <Background src={imgSetup} />
           </ImageWrapper>
         </SpaceTop>
         <SpaceTop height={40}>
