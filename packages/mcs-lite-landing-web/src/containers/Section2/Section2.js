@@ -20,6 +20,7 @@ const Background = styled.div`
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
+  min-height: 220px;
 `;
 
 const StyledImg = styled.img`
