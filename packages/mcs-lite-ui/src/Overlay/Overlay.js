@@ -21,15 +21,15 @@ class Overlay extends React.Component {
     onClickOutSide: emptyFunction,
     alignConfig: {
       points: ['tr', 'br'], // bottom-right
-      offset: [0, 5],
+      offset: [0, 0],
     },
     transitionConfig: {
       component: false,
       enter: {
         translateY: 0,
       },
-      leave: {
-        translateY: -10,
+      appear: {
+        translateY: -5,
       },
     },
   };

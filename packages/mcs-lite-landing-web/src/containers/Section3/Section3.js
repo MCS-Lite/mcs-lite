@@ -56,15 +56,14 @@ const Section3 = ({ getMessages: t }) =>
 
     <StyledRow>
       <Column xs={6} sm={3}>
-        <ScrollParallax
-          animation={[
-            { opacity: 1, y: 10, playScale: [0, 0.4] },
-            { opacity: 1, y: 0, playScale: [0.4, 0.5] },
-          ]}
-          always
-          style={{ opacity: 0.4, transform: 'translateY(-30px)' }}
-        >
-          <TextCenter>
+        <TextCenter>
+          <ScrollParallax
+            animation={[
+              { opacity: 1, y: 10, playScale: [0, 0.4] },
+              { opacity: 1, y: 0, playScale: [0.4, 0.5] },
+            ]}
+            style={{ opacity: 0, transform: 'translateY(-30px)' }}
+          >
             <ImageWrapper>
               <img
                 src={iconData}
@@ -72,28 +71,27 @@ const Section3 = ({ getMessages: t }) =>
                 alt={t('data.desc')}
               />
             </ImageWrapper>
-            <SpaceTop height={20}>
-              <Heading level={3}>
-                <B>{t('data.title')}</B>
-              </Heading>
-            </SpaceTop>
-            <SpaceTop height={10}>
-              <P>{t('data.desc')}</P>
-            </SpaceTop>
-          </TextCenter>
-        </ScrollParallax>
+          </ScrollParallax>
+          <SpaceTop height={20}>
+            <Heading level={3}>
+              <B>{t('data.title')}</B>
+            </Heading>
+          </SpaceTop>
+          <SpaceTop height={10}>
+            <P>{t('data.desc')}</P>
+          </SpaceTop>
+        </TextCenter>
       </Column>
 
       <Column xs={6} sm={3}>
-        <ScrollParallax
-          animation={[
-            { opacity: 1, y: 10, playScale: [0.1, 0.4] },
-            { opacity: 1, y: 0, playScale: [0.4, 0.5] },
-          ]}
-          always={false}
-          style={{ opacity: 0.4, transform: 'translateY(-30px)' }}
-        >
-          <TextCenter>
+        <TextCenter>
+          <ScrollParallax
+            animation={[
+              { opacity: 1, y: 10, playScale: [0, 0.4] },
+              { opacity: 1, y: 0, playScale: [0.4, 0.5] },
+            ]}
+            style={{ opacity: 0, transform: 'translateY(-30px)' }}
+          >
             <ImageWrapper>
               <img
                 src={iconRemote}
@@ -101,28 +99,27 @@ const Section3 = ({ getMessages: t }) =>
                 alt={t('remote.desc')}
               />
             </ImageWrapper>
-            <SpaceTop height={20}>
-              <Heading level={3}>
-                <B>{t('remote.title')}</B>
-              </Heading>
-            </SpaceTop>
-            <SpaceTop height={10}>
-              <P>{t('remote.desc')}</P>
-            </SpaceTop>
-          </TextCenter>
-        </ScrollParallax>
+          </ScrollParallax>
+          <SpaceTop height={20}>
+            <Heading level={3}>
+              <B>{t('remote.title')}</B>
+            </Heading>
+          </SpaceTop>
+          <SpaceTop height={10}>
+            <P>{t('remote.desc')}</P>
+          </SpaceTop>
+        </TextCenter>
       </Column>
 
       <Column xs={6} sm={3}>
-        <ScrollParallax
-          animation={[
-            { opacity: 1, y: 10, playScale: [0.2, 0.4] },
-            { opacity: 1, y: 0, playScale: [0.4, 0.5] },
-          ]}
-          always={false}
-          style={{ opacity: 0.4, transform: 'translateY(-30px)' }}
-        >
-          <TextCenter>
+        <TextCenter>
+          <ScrollParallax
+            animation={[
+              { opacity: 1, y: 10, playScale: [0, 0.4] },
+              { opacity: 1, y: 0, playScale: [0.4, 0.5] },
+            ]}
+            style={{ opacity: 0, transform: 'translateY(-30px)' }}
+          >
             <ImageWrapper>
               <img
                 src={iconManagement}
@@ -130,28 +127,27 @@ const Section3 = ({ getMessages: t }) =>
                 alt={t('management.desc')}
               />
             </ImageWrapper>
-            <SpaceTop height={20}>
-              <Heading level={3}>
-                <B>{t('management.title')}</B>
-              </Heading>
-            </SpaceTop>
-            <SpaceTop height={10}>
-              <P>{t('management.desc')}</P>
-            </SpaceTop>
-          </TextCenter>
-        </ScrollParallax>
+          </ScrollParallax>
+          <SpaceTop height={20}>
+            <Heading level={3}>
+              <B>{t('management.title')}</B>
+            </Heading>
+          </SpaceTop>
+          <SpaceTop height={10}>
+            <P>{t('management.desc')}</P>
+          </SpaceTop>
+        </TextCenter>
       </Column>
 
       <Column xs={6} sm={3}>
-        <ScrollParallax
-          animation={[
-            { opacity: 1, y: 10, playScale: [0.3, 0.4] },
-            { opacity: 1, y: 0, playScale: [0.4, 0.5] },
-          ]}
-          always={false}
-          style={{ opacity: 0.4, transform: 'translateY(-30px)' }}
-        >
-          <TextCenter>
+        <TextCenter>
+          <ScrollParallax
+            animation={[
+              { opacity: 1, y: 10, playScale: [0, 0.4] },
+              { opacity: 1, y: 0, playScale: [0.4, 0.5] },
+            ]}
+            style={{ opacity: 0, transform: 'translateY(-30px)' }}
+          >
             <ImageWrapper>
               <img
                 src={iconMobile}
@@ -159,16 +155,16 @@ const Section3 = ({ getMessages: t }) =>
                 alt={t('mobile.desc')}
               />
             </ImageWrapper>
-            <SpaceTop height={20}>
-              <Heading level={3}>
-                <B>{t('mobile.title')}</B>
-              </Heading>
-            </SpaceTop>
-            <SpaceTop height={10}>
-              <P>{t('mobile.desc')}</P>
-            </SpaceTop>
-          </TextCenter>
-        </ScrollParallax>
+          </ScrollParallax>
+          <SpaceTop height={20}>
+            <Heading level={3}>
+              <B>{t('mobile.title')}</B>
+            </Heading>
+          </SpaceTop>
+          <SpaceTop height={10}>
+            <P>{t('mobile.desc')}</P>
+          </SpaceTop>
+        </TextCenter>
       </Column>
     </StyledRow>
   </SectionRow>;

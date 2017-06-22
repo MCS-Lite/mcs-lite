@@ -125,6 +125,15 @@ class DeviceDetail extends React.Component {
                 target={target}
                 onClickOutSide={onHide}
                 alignConfig={{ points: ['tr', 'bc'], offset: [20, -20] }}
+                transitionConfig={{
+                  component: false,
+                  enter: {
+                    translateY: 0,
+                  },
+                  leave: {
+                    translateY: -10,
+                  },
+                }}
               >
                 <Menu.Menu key="menu">
                   <StyledLink to={updatePathname(`/devices/${deviceId}/info`)}>

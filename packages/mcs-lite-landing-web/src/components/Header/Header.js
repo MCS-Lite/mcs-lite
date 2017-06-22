@@ -1,4 +1,4 @@
-/* global window */
+/* global window, document */
 
 import React from 'react';
 import PropTypes from 'prop-types';
@@ -6,7 +6,6 @@ import { Link } from 'react-router';
 import { Page, Row, Column, Hidden } from 'hedron';
 import styled from 'styled-components';
 import rafThrottle from 'raf-throttle';
-import A from 'mcs-lite-ui/lib/A';
 import Portal from 'react-overlays/lib/Portal';
 import Transition from 'react-motion-ui-pack';
 import spring from 'react-motion/lib/spring';
@@ -15,9 +14,8 @@ import IconClose from 'mcs-lite-icon/lib/IconClose';
 import { PAGE_WIDTH } from '../../components/SectionRow/SectionRow';
 import LOGO from '../../statics/images/logo_mcs_lite_black.svg';
 import { LOCALES, getMCSLinkByLocale } from '../../utils/localeHelper';
-import FixedContainer, { HEIGHT } from './FixedContainer';
+import FixedTopContainer, { HEIGHT } from './FixedTopContainer';
 import LanguageDropdown from './LanguageDropdown';
-import HeaderNavItem from './HeaderNavItem';
 import MorphReplace from './MorphReplace';
 
 const StyledColumn = styled(Column)`
@@ -37,21 +35,28 @@ const Right = styled.div`
   > *:last-child {
     padding-right: 0;
   }
-`;
 
-const IconWrapper = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  user-select: none;
+  > * {
+    height: ${HEIGHT}px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    color: ${props =>
+      props.active ? props.theme.color.black : props.theme.color.grayBase};
+    transition: color cubic-bezier(0.47, 0, 0.75, 0.72) 0.3s;
 
-  path {
-    fill: ${props => props.theme.color.grayBase};
+    &:hover {
+      color: ${props => props.theme.color.black};
+    }
+
+    path {
+      fill: currentColor;
+    }
   }
 `;
 
-const FixedMobileContainer = styled.div`
+const MobileFixedMenu = styled.div`
   position: fixed;
   top: 0;
   bottom: 0;
@@ -59,6 +64,7 @@ const FixedMobileContainer = styled.div`
   right: 0;
   background-image: linear-gradient(0deg, rgba(250, 250, 250, 0.9) 0%, #FFFFFF 100%);
   padding-top: ${HEIGHT}px;
+  overflow: auto;
 
   > div {
     box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.05);
@@ -83,11 +89,46 @@ const FixedMobileContainer = styled.div`
   }
 `;
 
+const renderLinks = (locale, getMessages) => {
+  const mcsLink = getMCSLinkByLocale(locale);
+
+  return [
+    <a key="gotoMCS" href={mcsLink} target="_blank" rel="noreferrer noopener">
+      {getMessages('gotoMCS')}
+    </a>,
+    <a
+      key="resource"
+      href={`https://mcs-lite-introduction.netlify.com/${locale}`}
+      target="_blank"
+      rel="noreferrer noopener"
+    >
+      {getMessages('resource')}
+    </a>,
+    <a
+      key="contact"
+      href="mailto:mtkcloudsandbox@mediatek.com"
+      target="_blank"
+      rel="noreferrer noopener"
+    >
+      {getMessages('contact')}
+    </a>,
+  ];
+};
+
 class Header extends React.PureComponent {
   state = { isShow: false };
   componentDidMount = () => {
     window.addEventListener('resize', this.onHide);
   };
+  componentDidUpdate(prevProps, prevState) {
+    // TODO: dont do this
+    if (prevState.isShow !== this.state.isShow) {
+      document.body.style.overflow = this.state.isShow ? 'hidden' : 'auto';
+      document.documentElement.style.overflow = this.state.isShow
+        ? 'hidden'
+        : 'auto';
+    }
+  }
   componentWillUnmount = () => {
     window.removeEventListener('resize', this.onHide);
     this.onHide.cancel();
@@ -97,110 +138,67 @@ class Header extends React.PureComponent {
     if (this.state.isShow) this.setState({ isShow: false });
   });
   render() {
-    const { locale, getMessages: t } = this.props;
+    const { locale, getMessages } = this.props;
     const { onClick, onHide } = this;
     const { isShow } = this.state;
-
-    const mcsLink = getMCSLinkByLocale(locale);
+    const linkElements = renderLinks(locale, getMessages);
 
     return (
-      <FixedContainer>
+      <FixedTopContainer>
         <Page width={`${PAGE_WIDTH}px`}>
           <Row>
             <StyledColumn xs={12}>
-              <HeaderNavItem><img src={LOGO} alt="LOGO" /></HeaderNavItem>
+              <img src={LOGO} alt="LOGO" />
 
               {/* Mobile */}
               <Hidden sm md lg>
                 <Right>
-                  <IconWrapper onClick={onClick}>
-                    <MorphReplace width={24} height={24} rotation="none">
+                  <div onClick={onClick}>
+                    <MorphReplace width={24} height={24}>
                       {isShow
                         ? <IconClose key="close" />
                         : <IconMenu key="menu" />}
                     </MorphReplace>
-                  </IconWrapper>
+                  </div>
                 </Right>
-                {isShow &&
-                  <Portal>
-                    <Transition
-                      component={false}
-                      appear={{ opacity: 0.8, marginTop: -50 }}
-                      enter={{
-                        opacity: 1,
-                        marginTop: spring(0, { stiffness: 330, damping: 16 }),
-                      }}
-                    >
-                      <FixedMobileContainer key="FixedMobileContainer">
-                        <div>
-                          <a
-                            href={mcsLink}
-                            target="_blank"
-                            rel="noreferrer noopener"
-                          >
-                            {t('gotoMCS')}
-                          </a>
-                          <a
-                            href={`https://mcs-lite-introduction.netlify.com/${locale}`}
-                            target="_blank"
-                            rel="noreferrer noopener"
-                          >
-                            {t('resource')}
-                          </a>
-                          <a
-                            href="mailto:mtkcloudsandbox@mediatek.com"
-                            target="_blank"
-                            rel="noreferrer noopener"
-                          >
-                            {t('contact')}
-                          </a>
-
-                          <div>Language</div>
-                          {LOCALES.map(({ id, children }) =>
-                            <Link key={id} to={`/${id}`} onClick={onHide}>
-                              {children}
-                            </Link>,
-                          )}
-                        </div>
-                      </FixedMobileContainer>
-                    </Transition>
-                  </Portal>}
               </Hidden>
 
               {/* Desktop */}
               <Hidden xs>
                 <Right>
-                  <A href={mcsLink} target="_blank" rel="noreferrer noopener">
-                    <HeaderNavItem>
-                      {t('gotoMCS')}
-                    </HeaderNavItem>
-                  </A>
-                  <A
-                    href={`https://mcs-lite-introduction.netlify.com/${locale}`}
-                    target="_blank"
-                    rel="noreferrer noopener"
-                  >
-                    <HeaderNavItem>
-                      {t('resource')}
-                    </HeaderNavItem>
-                  </A>
-                  <A
-                    href="mailto:mtkcloudsandbox@mediatek.com"
-                    target="_blank"
-                    rel="noreferrer noopener"
-                  >
-                    <HeaderNavItem>
-                      {t('contact')}
-                    </HeaderNavItem>
-                  </A>
-
+                  {linkElements}
                   <LanguageDropdown />
                 </Right>
               </Hidden>
+
+              {/* Menu for mobile */}
+              {isShow &&
+                <Portal>
+                  <Transition
+                    component={false}
+                    appear={{ opacity: 0.8, translateY: -50 }}
+                    enter={{
+                      opacity: 1,
+                      translateY: spring(0, { stiffness: 330, damping: 16 }),
+                    }}
+                  >
+                    <MobileFixedMenu key="MobileFixedMenu">
+                      <div>
+                        {linkElements}
+                        <div>Language</div>
+                        {LOCALES.map(({ id, children }) =>
+                          <Link key={id} to={`/${id}`} onClick={onHide}>
+                            {children}
+                          </Link>,
+                        )}
+                      </div>
+                    </MobileFixedMenu>
+                  </Transition>
+                </Portal>}
             </StyledColumn>
           </Row>
         </Page>
-      </FixedContainer>
+      </FixedTopContainer>
     );
   }
 }

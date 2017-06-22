@@ -142,12 +142,11 @@ const Section4 = ({ getMessages: t }) =>
             <div>
               <ScrollParallax
                 animation={{
-                  opacity: 1,
                   x: -105,
                   y: 85,
                   playScale: [0.1, 0.4],
                 }}
-                style={{ opacity: 0.8, transform: 'translate(-120px, 85px)' }}
+                style={{ transform: 'translate(-120px, 85px)' }}
                 component="img"
                 src={imgCustomizationTooltip}
                 alt="imgCustomizationTooltip"
@@ -173,8 +172,8 @@ const Section4 = ({ getMessages: t }) =>
             </div>
             <div>
               <ScrollParallax
-                animation={{ opacity: 1, x: 70, y: 125, playScale: [0.1, 0.4] }}
-                style={{ opacity: 0.3, transform: 'translate(70px, 140px)' }}
+                animation={{ x: 70, y: 125, playScale: [0.1, 0.4] }}
+                style={{ transform: 'translate(70px, 140px)' }}
                 component="img"
                 src={imgCustomizationSearch}
                 alt="imgCustomizationSearch"

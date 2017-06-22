@@ -34,10 +34,21 @@ const Background = styled.div`
   height: 100%;
 `;
 
+const BackgroundOverlay = styled.div`
+  background: linear-gradient(90deg, rgba(255, 255, 255, 1) 2%, rgba(255, 255, 255, 0) 8%, rgba(255, 255, 255, 0) 92%, rgba(255, 255, 255, 1) 98%);
+  height: 100%;
+  left: -10px;
+  right: -10px;
+`;
+
+const StyledTextCenter = styled(TextCenter)`
+  overflow-x: hidden;;
+`;
+
 const Section5 = ({ tag, getMessages: t }) =>
   <SectionRow>
     <Column xs={12}>
-      <TextCenter>
+      <StyledTextCenter>
         <Heading level={2}>{t('title')}</Heading>
         <SpaceTop height={40}>
           <ImageWrapper>
@@ -60,12 +71,13 @@ const Section5 = ({ tag, getMessages: t }) =>
               />
             </div>
             <Background src={imgSetup} />
+            <BackgroundOverlay />
           </ImageWrapper>
         </SpaceTop>
         <SpaceTop height={40}>
           <DownloadButton tag={tag} />
         </SpaceTop>
-      </TextCenter>
+      </StyledTextCenter>
     </Column>
   </SectionRow>;
 
