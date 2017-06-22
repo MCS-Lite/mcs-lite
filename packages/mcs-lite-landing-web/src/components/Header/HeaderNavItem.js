@@ -8,7 +8,8 @@ const HeaderNavItem = styled.div`
   align-items: center;
   cursor: pointer;
   text-decoration: none;
-  color: ${props => props.active ? props.theme.color.black : props.theme.color.grayBase};
+  color: ${props =>
+    props.active ? props.theme.color.black : props.theme.color.grayBase};
   transition: color cubic-bezier(0.47, 0, 0.75, 0.72) 0.3s;
 
   &:hover {
