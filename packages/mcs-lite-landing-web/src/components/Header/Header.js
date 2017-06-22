@@ -9,7 +9,7 @@ import raf from 'raf';
 import A from 'mcs-lite-ui/lib/A';
 import Portal from 'react-overlays/lib/Portal';
 import Transition from 'react-motion-ui-pack';
-import MorphReplace from 'react-svg-morph/lib/MorphReplace';
+// import MorphReplace from 'react-svg-morph/lib/MorphReplace';
 import IconMenu from 'mcs-lite-icon/lib/IconMenu';
 import IconClose from 'mcs-lite-icon/lib/IconClose';
 import { PAGE_WIDTH } from '../../components/SectionRow/SectionRow';
@@ -18,6 +18,7 @@ import { LOCALES, getMCSLinkByLocale } from '../../utils/localeHelper';
 import FixedContainer, { HEIGHT } from './FixedContainer';
 import LanguageDropdown from './LanguageDropdown';
 import HeaderNavItem from './HeaderNavItem';
+import MorphReplace from './MorphReplace';
 
 const StyledColumn = styled(Column)`
   padding-top: 0;
@@ -119,9 +120,18 @@ class Header extends React.PureComponent {
                 <Right>
                   <IconWrapper onClick={onClick}>
                     <MorphReplace width={24} height={24} rotation="none">
-                      {this.state.isShow
+                      {/* <IconMenu key="menu" /> */}
+                      {/* {this.state.isShow
                         ? <IconClose key="close" />
-                        : <IconMenu key="menu" />}
+                        : <IconMenu key="menu" />} */}
+                        {this.state.isShow
+                          ? <svg height="24" key="close" viewBox="0 0 24 24" width="24">
+                              <path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" />
+                            </svg>
+                          : <svg height="24" key="menu" viewBox="0 0 24 24" width="24">
+                              <path d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" />
+                            </svg>
+                        }
                     </MorphReplace>
                   </IconWrapper>
                 </Right>
