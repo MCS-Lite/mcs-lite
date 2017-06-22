@@ -9,12 +9,12 @@ import rafThrottle from 'raf-throttle';
 import Portal from 'react-overlays/lib/Portal';
 import Transition from 'react-motion-ui-pack';
 import spring from 'react-motion/lib/spring';
+import LandingHeader from 'mcs-lite-ui/lib/LandingHeader';
 import IconMenu from 'mcs-lite-icon/lib/IconMenu';
 import IconClose from 'mcs-lite-icon/lib/IconClose';
 import { PAGE_WIDTH } from '../../components/SectionRow/SectionRow';
 import LOGO from '../../statics/images/logo_mcs_lite_black.svg';
 import { LOCALES, getMCSLinkByLocale } from '../../utils/localeHelper';
-import FixedTopContainer, { HEIGHT } from './FixedTopContainer';
 import LanguageDropdown from './LanguageDropdown';
 import MorphReplace from './MorphReplace';
 
@@ -37,7 +37,7 @@ const Right = styled.div`
   }
 
   > * {
-    height: ${HEIGHT}px;
+    height: ${props => props.theme.height.header};
     display: flex;
     align-items: center;
     cursor: pointer;
@@ -63,7 +63,7 @@ const MobileFixedMenu = styled.div`
   left: 0;
   right: 0;
   background-image: linear-gradient(0deg, rgba(250, 250, 250, 0.9) 0%, #FFFFFF 100%);
-  padding-top: ${HEIGHT}px;
+  padding-top: ${props => props.theme.height.header};
   overflow: auto;
 
   > div {
@@ -144,7 +144,7 @@ class Header extends React.PureComponent {
     const linkElements = renderLinks(locale, getMessages);
 
     return (
-      <FixedTopContainer>
+      <LandingHeader>
         <Page width={`${PAGE_WIDTH}px`}>
           <Row>
             <StyledColumn xs={12}>
@@ -198,7 +198,7 @@ class Header extends React.PureComponent {
             </StyledColumn>
           </Row>
         </Page>
-      </FixedTopContainer>
+      </LandingHeader>
     );
   }
 }
