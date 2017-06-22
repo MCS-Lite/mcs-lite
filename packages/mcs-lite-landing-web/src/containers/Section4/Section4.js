@@ -8,7 +8,7 @@ import P from 'mcs-lite-ui/lib/P';
 import B from 'mcs-lite-ui/lib/B';
 import A from 'mcs-lite-ui/lib/A';
 import Button from 'mcs-lite-ui/lib/Button';
-import TextCenter from '../../components/TextCenter';
+import TextCenter from 'mcs-lite-ui/lib/TextCenter';
 import SpaceTop from '../../components/SpaceTop';
 import SectionRow from '../../components/SectionRow';
 import imgOpen from '../../statics/images/img_open_source.svg';

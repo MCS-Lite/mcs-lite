@@ -41,6 +41,7 @@
     "react-intl-cra": "^0.2.5",
     "react-intl-inject-hoc": "^0.2.5",
     "react-intl-po": "^2.0.2",
+    "react-motion": "^0.5.0",
     "react-motion-ui-pack": "^0.10.2",
     "react-overlays": "^0.7.0",
     "react-render-to-json": "^0.0.5",
