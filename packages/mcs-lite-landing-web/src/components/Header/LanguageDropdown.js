@@ -45,20 +45,25 @@ class LanguageDropdown extends React.PureComponent {
     window.removeEventListener('scroll', this.onHide);
     window.removeEventListener('resize', this.onHide);
     this.onHide.cancel();
+    this.onOpen.cancel();
   };
-  onClick = () => this.setState({ isShow: !this.state.isShow });
+  onOpen = rafThrottle(() => {
+    if (!this.state.isShow) this.setState({ isShow: true });
+  });
   onHide = rafThrottle(() => {
     if (this.state.isShow) this.setState({ isShow: false });
   });
   getTarget = node => this.setState({ target: node });
   render() {
-    const { onClick, onHide, getTarget } = this;
+    const { onOpen, onHide, getTarget } = this;
     const { isShow, target } = this.state;
 
     return (
       <HeaderNavItem
         ref={getTarget}
-        onClick={onClick}
+        onClick={onOpen}
+        onMouseOver={onOpen}
+        active={isShow}
         data-ga-on="click"
         data-ga-event-category="Language Dropdown Menu"
         data-ga-event-action="click"
@@ -67,7 +72,7 @@ class LanguageDropdown extends React.PureComponent {
         <StyledIconFold size={18} isShow={isShow} />
         {isShow &&
           <Overlay target={target} onClickOutSide={onHide}>
-            <StyledMenu key="menu">
+            <StyledMenu key="menu" onMouseLeave={onHide}>
               {LOCALES.map(({ id, children }) =>
                 <Link key={id} to={`/${id}`} onClick={onHide}>
                   <MenuItem>{children}</MenuItem>

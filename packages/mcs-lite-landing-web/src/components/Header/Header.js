@@ -1,4 +1,4 @@
-/* global window */
+/* global window, document */
 
 import React from 'react';
 import PropTypes from 'prop-types';
@@ -39,15 +39,9 @@ const Right = styled.div`
   }
 `;
 
-const IconWrapper = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  user-select: none;
-
+const StyledHeaderNavItem = styled(HeaderNavItem)`
   path {
-    fill: ${props => props.theme.color.grayBase};
+    fill: currentColor;
   }
 `;
 
@@ -88,6 +82,12 @@ class Header extends React.PureComponent {
   componentDidMount = () => {
     window.addEventListener('resize', this.onHide);
   };
+  componentDidUpdate(prevProps, prevState) {
+    // TODO: dont do this
+    if (prevState.isShow !== this.state.isShow) {
+      document.body.style.overflow = this.state.isShow ? 'hidden' : 'auto';
+    }
+  }
   componentWillUnmount = () => {
     window.removeEventListener('resize', this.onHide);
     this.onHide.cancel();
@@ -113,13 +113,13 @@ class Header extends React.PureComponent {
               {/* Mobile */}
               <Hidden sm md lg>
                 <Right>
-                  <IconWrapper onClick={onClick}>
-                    <MorphReplace width={24} height={24} rotation="none">
+                  <StyledHeaderNavItem onClick={onClick}>
+                    <MorphReplace width={24} height={24}>
                       {isShow
                         ? <IconClose key="close" />
                         : <IconMenu key="menu" />}
                     </MorphReplace>
-                  </IconWrapper>
+                  </StyledHeaderNavItem>
                 </Right>
                 {isShow &&
                   <Portal>

@@ -94,17 +94,7 @@ storiesOf('Overlay', module)
           <OverlayMenu
             alignConfig={{ points: ['tc', 'bc'], offset: [0, 16] }}
           />
-          <OverlayMenu
-            transitionConfig={{
-              component: false,
-              enter: {
-                opacity: 1,
-              },
-              leave: {
-                opacity: 0,
-              },
-            }}
-          />
+          <OverlayMenu />
         </Wrapper>
       );
     },

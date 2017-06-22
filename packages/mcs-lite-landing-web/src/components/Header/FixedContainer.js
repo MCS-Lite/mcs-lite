@@ -1,9 +1,10 @@
-/* global document, window */
+/* global window */
 
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import rafThrottle from 'raf-throttle';
+import getScrollTop from '../../utils/getScrollTop';
 
 export const HEIGHT = 50;
 const HEADER_ZINDEX = 1;
@@ -23,6 +24,7 @@ const Fixed = styled.div`
   background: ${props => props.theme.color.grayLight};
   box-shadow: ${props => (props.isTop ? 'none' : '0 1px 0 0 rgba(0, 0, 0, 0.05)')};
   transition: box-shadow cubic-bezier(0.47, 0, 0.75, 0.72) 0.2s;
+  user-select: none;
 `;
 
 class FixedContainer extends React.PureComponent {
@@ -39,7 +41,7 @@ class FixedContainer extends React.PureComponent {
     this.onScroll.cancel();
   };
   onScroll = rafThrottle(() => {
-    this.setState({ isTop: document.body.scrollTop < 40 });
+    this.setState({ isTop: getScrollTop() < 40 });
   });
 
   render() {
