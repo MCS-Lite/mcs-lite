@@ -3,7 +3,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import raf from 'raf';
+import rafThrottle from 'raf-throttle';
 
 export const HEIGHT = 50;
 const HEADER_ZINDEX = 1;
@@ -36,13 +36,11 @@ class FixedContainer extends React.PureComponent {
   componentDidMount = () => window.addEventListener('scroll', this.onScroll);
   componentWillUnmount = () => {
     window.removeEventListener('scroll', this.onScroll);
-    raf.cancel(this.rafId);
+    this.onScroll.cancel();
   };
-  onScroll = () => {
-    this.rafId = raf(() => {
-      this.setState({ isTop: document.body.scrollTop < 40 });
-    });
-  };
+  onScroll = rafThrottle(() => {
+    this.setState({ isTop: document.body.scrollTop < 40 });
+  });
 
   render() {
     const { children } = this.props;
