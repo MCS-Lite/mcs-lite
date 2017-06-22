@@ -38,13 +38,13 @@ const HiddenForPreRenderTrick = styled.div`
 class LanguageDropdown extends React.PureComponent {
   state = { isShow: false, target: undefined };
   componentDidMount = () => {
-    window.addEventListener('scroll', this.Hide);
-    window.addEventListener('resize', this.Hide);
+    window.addEventListener('scroll', this.onHide);
+    window.addEventListener('resize', this.onHide);
   };
   componentWillUnmount = () => {
-    window.removeEventListener('scroll', this.Hide);
-    window.removeEventListener('scroll', this.Hide);
-    this.Hide.cancel();
+    window.removeEventListener('scroll', this.onHide);
+    window.removeEventListener('resize', this.onHide);
+    this.onHide.cancel();
   };
   onClick = () => this.setState({ isShow: !this.state.isShow });
   onHide = rafThrottle(() => {
