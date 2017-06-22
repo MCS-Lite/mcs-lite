@@ -5,11 +5,11 @@ import PropTypes from 'prop-types';
 import { Link } from 'react-router';
 import { Page, Row, Column, Hidden } from 'hedron';
 import styled from 'styled-components';
-import raf from 'raf';
+import rafThrottle from 'raf-throttle';
 import A from 'mcs-lite-ui/lib/A';
 import Portal from 'react-overlays/lib/Portal';
 import Transition from 'react-motion-ui-pack';
-// import MorphReplace from 'react-svg-morph/lib/MorphReplace';
+import spring from 'react-motion/lib/spring';
 import IconMenu from 'mcs-lite-icon/lib/IconMenu';
 import IconClose from 'mcs-lite-icon/lib/IconClose';
 import { PAGE_WIDTH } from '../../components/SectionRow/SectionRow';
@@ -86,30 +86,25 @@ const FixedMobileContainer = styled.div`
 class Header extends React.PureComponent {
   state = { isShow: false };
   componentDidMount = () => {
-    window.addEventListener('resize', this.onClose);
+    window.addEventListener('resize', this.onHide);
   };
   componentWillUnmount = () => {
-    window.removeEventListener('scroll', this.onClose);
-    raf.cancel(this.rafId);
-  };
-  onClose = () => {
-    this.rafId = raf(this.onHide);
+    window.removeEventListener('resize', this.onHide);
+    this.onHide.cancel();
   };
   onClick = () => this.setState({ isShow: !this.state.isShow });
-  onHide = () => {
+  onHide = rafThrottle(() => {
     if (this.state.isShow) this.setState({ isShow: false });
-  };
-  getTarget = node => this.setState({ target: node });
-
+  });
   render() {
     const { locale, getMessages: t } = this.props;
-    const { onClick, onHide, getTarget } = this;
+    const { onClick, onHide } = this;
     const { isShow } = this.state;
 
     const mcsLink = getMCSLinkByLocale(locale);
 
     return (
-      <FixedContainer ref={getTarget}>
+      <FixedContainer>
         <Page width={`${PAGE_WIDTH}px`}>
           <Row>
             <StyledColumn xs={12}>
@@ -120,18 +115,9 @@ class Header extends React.PureComponent {
                 <Right>
                   <IconWrapper onClick={onClick}>
                     <MorphReplace width={24} height={24} rotation="none">
-                      {/* <IconMenu key="menu" /> */}
-                      {/* {this.state.isShow
+                      {isShow
                         ? <IconClose key="close" />
-                        : <IconMenu key="menu" />} */}
-                        {this.state.isShow
-                          ? <svg height="24" key="close" viewBox="0 0 24 24" width="24">
-                              <path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" />
-                            </svg>
-                          : <svg height="24" key="menu" viewBox="0 0 24 24" width="24">
-                              <path d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" />
-                            </svg>
-                        }
+                        : <IconMenu key="menu" />}
                     </MorphReplace>
                   </IconWrapper>
                 </Right>
@@ -140,7 +126,10 @@ class Header extends React.PureComponent {
                     <Transition
                       component={false}
                       appear={{ opacity: 0.8, marginTop: -50 }}
-                      enter={{ opacity: 1, marginTop: 0 }}
+                      enter={{
+                        opacity: 1,
+                        marginTop: spring(0, { stiffness: 330, damping: 16 }),
+                      }}
                     >
                       <FixedMobileContainer key="FixedMobileContainer">
                         <div>

@@ -3,7 +3,7 @@
 import React from 'react';
 import { Link } from 'react-router';
 import Overlay from 'mcs-lite-ui/lib/Overlay';
-import raf from 'raf';
+import rafThrottle from 'raf-throttle';
 import styled from 'styled-components';
 import P from 'mcs-lite-ui/lib/P';
 import { Menu, MenuItem } from 'mcs-lite-ui/lib/Menu';
@@ -38,21 +38,18 @@ const HiddenForPreRenderTrick = styled.div`
 class LanguageDropdown extends React.PureComponent {
   state = { isShow: false, target: undefined };
   componentDidMount = () => {
-    window.addEventListener('scroll', this.onClose);
-    window.addEventListener('resize', this.onClose);
+    window.addEventListener('scroll', this.Hide);
+    window.addEventListener('resize', this.Hide);
   };
   componentWillUnmount = () => {
-    window.removeEventListener('scroll', this.onClose);
-    window.removeEventListener('scroll', this.onClose);
-    raf.cancel(this.rafId);
-  };
-  onClose = () => {
-    this.rafId = raf(this.onHide);
+    window.removeEventListener('scroll', this.Hide);
+    window.removeEventListener('scroll', this.Hide);
+    this.Hide.cancel();
   };
   onClick = () => this.setState({ isShow: !this.state.isShow });
-  onHide = () => {
+  onHide = rafThrottle(() => {
     if (this.state.isShow) this.setState({ isShow: false });
-  };
+  });
   getTarget = node => this.setState({ target: node });
   render() {
     const { onClick, onHide, getTarget } = this;

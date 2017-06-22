@@ -1,11 +1,19 @@
+/* global window */
+
 import React from 'react';
+import PropTypes from 'prop-types';
 import renderToJson from 'react-render-to-json';
-import { interpolate } from 'flubber';
-import raf from 'raf';
+import {
+  interpolate,
+  interpolateAll,
+  splitPathString,
+  separate,
+  combine,
+} from 'flubber';
 
 class MorphReplace extends React.PureComponent {
   static propTypes = {
-    children: React.PropTypes.element,
+    children: PropTypes.element,
   };
 
   constructor(props) {
@@ -14,14 +22,29 @@ class MorphReplace extends React.PureComponent {
   }
 
   componentWillReceiveProps(nextProps) {
-    const interpolator = interpolate(
-      this.getPath(this.props.children),
-      this.getPath(nextProps.children),
-    );
+    const fromPath = this.getPath(this.props.children);
+    const toPath = this.getPath(nextProps.children);
+    if (fromPath === toPath) return;
+
+    const current = splitPathString(fromPath);
+    const next = splitPathString(toPath);
+    let interpolator;
+    if (current.length === next.length) {
+      // n-to-n
+      interpolator = interpolateAll(current, next, { single: true });
+    } else if (current.length === 1) {
+      // 1-to-n, 1-to-1
+      interpolator = separate(current[0], next, { single: true });
+    } else if (next.length === 1) {
+      // n-to-1
+      interpolator = combine(current, next[0], { single: true });
+    } else {
+      // TODO: n-to-m, NOT animate well.
+      interpolator = interpolate(fromPath, toPath);
+    }
 
     let start = null;
 
-    const easeInCubic = t => t * t * t;
     function easeInOut(t) {
       return t < 0.5 ? 4 * t * t * t : (t - 1) * (2 * t - 2) * (2 * t - 2) + 1;
     }
@@ -31,15 +54,16 @@ class MorphReplace extends React.PureComponent {
       if (start === null) start = timestamp;
       progress = timestamp - start;
       const value = easeInOut(progress / 300);
-      this.setState({ d: interpolator(Math.min(value, 1)) })
+      this.setState({ d: interpolator(Math.min(value, 1)) });
       if (progress < 300) {
-        requestAnimationFrame(drawLoop);
+        window.requestAnimationFrame(drawLoop);
       }
-    }
+    };
 
-    requestAnimationFrame(drawLoop);
+    window.requestAnimationFrame(drawLoop);
   }
 
+  // TODO: Only work for mcs-lite-icon
   getPath = children => {
     const json = renderToJson(children);
     const path = json.children[0].children[0].attributes.d;

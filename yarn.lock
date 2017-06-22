@@ -7806,7 +7806,11 @@ querystringify@~1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/querystringify/-/querystringify-1.0.0.tgz#6286242112c5b712fa654e526652bf6a13ff05cb"
 
-raf@3.x, raf@^3.1.0, raf@^3.2.0, raf@^3.3.0, raf@^3.3.2, raf@~3.3.0:
+raf-throttle@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/raf-throttle/-/raf-throttle-2.0.2.tgz#09dc331149780aa81b97914cd1aa215a6d34261c"
+
+raf@3.x, raf@^3.1.0, raf@^3.2.0, raf@^3.3.0, raf@~3.3.0:
   version "3.3.2"
   resolved "https://registry.yarnpkg.com/raf/-/raf-3.3.2.tgz#0c13be0b5b49b46f76d6669248d527cf2b02fe27"
   dependencies:
@@ -8080,6 +8084,10 @@ react-redux@^5.0.5:
 react-render-to-json@0.0.4:
   version "0.0.4"
   resolved "https://registry.yarnpkg.com/react-render-to-json/-/react-render-to-json-0.0.4.tgz#0db588e2952cea05a66a3390554c46c3ea74d006"
+
+react-render-to-json@^0.0.5:
+  version "0.0.5"
+  resolved "https://registry.yarnpkg.com/react-render-to-json/-/react-render-to-json-0.0.5.tgz#ee3aa9f977bc2554d2170d96fbbbe832eba17212"
 
 react-resize-detector@0.4.1:
   version "0.4.1"
