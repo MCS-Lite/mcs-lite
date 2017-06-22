@@ -20,10 +20,23 @@ const Background = styled.div`
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
+  height: 100%;
+`;
+
+const ImageWrapper = styled.div`
+  position: relative;
   min-height: 220px;
+
+  > * {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 100%;
+  }
 `;
 
 const StyledImg = styled.img`
+  height: 100%;
   max-width: 100%;
 `;
 
@@ -44,18 +57,24 @@ const Section2 = ({ getMessages: t }) =>
             <img src={imgSignal} title={t('title')} alt={t('desc')} />
           </ScrollParallax>
         </SpaceTop>
-
-        <Background src={imgIot}>
-          <ScrollParallax
-            animation={{ opacity: 1, y: 0, scale: 1, playScale: [0, 0.5] }}
-            always={false}
-            style={{ opacity: 0.8, transform: 'translateY(60px) scale(0.9)' }}
-          >
-            <SpaceTop height={20}>
-              <StyledImg src={imgMac} title={t('title')} alt={t('desc')} />
-            </SpaceTop>
-          </ScrollParallax>
-        </Background>
+        <SpaceTop height={20}>
+          <ImageWrapper>
+            <Background src={imgIot} />
+            <div>
+              <ScrollParallax
+                animation={{ opacity: 1, y: 0, scale: 1, playScale: [0, 0.5] }}
+                style={{
+                  opacity: 0.8,
+                  transform: 'translateY(60px) scale(0.9)',
+                }}
+                component={StyledImg}
+                src={imgMac}
+                title={t('title')}
+                alt={t('desc')}
+              />
+            </div>
+          </ImageWrapper>
+        </SpaceTop>
       </TextCenter>
     </Column>
   </StyledSectionRow>;
