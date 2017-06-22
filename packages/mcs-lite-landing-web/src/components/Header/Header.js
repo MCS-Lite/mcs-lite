@@ -87,6 +87,9 @@ class Header extends React.PureComponent {
     // TODO: dont do this
     if (prevState.isShow !== this.state.isShow) {
       document.body.style.overflow = this.state.isShow ? 'hidden' : 'auto';
+      document.documentElement.style.overflow = this.state.isShow
+        ? 'hidden'
+        : 'auto';
     }
   }
   componentWillUnmount = () => {
