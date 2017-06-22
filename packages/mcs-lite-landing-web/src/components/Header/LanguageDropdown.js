@@ -9,7 +9,6 @@ import P from 'mcs-lite-ui/lib/P';
 import { Menu, MenuItem } from 'mcs-lite-ui/lib/Menu';
 import IconFold from 'mcs-lite-icon/lib/IconFold';
 import { LOCALES } from '../../utils/localeHelper';
-import HeaderNavItem from './HeaderNavItem';
 
 const StyledP = styled(P)`
   margin-right: 5px;
@@ -59,7 +58,7 @@ class LanguageDropdown extends React.PureComponent {
     const { isShow, target } = this.state;
 
     return (
-      <HeaderNavItem
+      <div
         ref={getTarget}
         onClick={onOpen}
         onMouseOver={onOpen}
@@ -89,7 +88,7 @@ class LanguageDropdown extends React.PureComponent {
             </Link>,
           )}
         </HiddenForPreRenderTrick>
-      </HeaderNavItem>
+      </div>
     );
   }
 }

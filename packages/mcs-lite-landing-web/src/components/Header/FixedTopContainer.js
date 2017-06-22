@@ -27,7 +27,7 @@ const Fixed = styled.div`
   user-select: none;
 `;
 
-class FixedContainer extends React.PureComponent {
+class FixedTopContainer extends React.PureComponent {
   static propTypes = {
     // Props
     children: PropTypes.node.isRequired,
@@ -58,4 +58,4 @@ class FixedContainer extends React.PureComponent {
   }
 }
 
-export default FixedContainer;
+export default FixedTopContainer;

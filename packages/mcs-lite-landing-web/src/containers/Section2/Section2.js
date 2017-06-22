@@ -67,11 +67,9 @@ const Section2 = ({ getMessages: t }) =>
                   opacity: 0.8,
                   transform: 'translateY(60px) scale(0.9)',
                 }}
-                component={StyledImg}
-                src={imgMac}
-                title={t('title')}
-                alt={t('desc')}
-              />
+              >
+                <StyledImg src={imgMac} title={t('title')} alt={t('desc')} />
+              </ScrollParallax>
             </div>
           </ImageWrapper>
         </SpaceTop>
