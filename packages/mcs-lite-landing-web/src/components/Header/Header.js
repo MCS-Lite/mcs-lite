@@ -53,6 +53,7 @@ const FixedMobileContainer = styled.div`
   right: 0;
   background-image: linear-gradient(0deg, rgba(250, 250, 250, 0.9) 0%, #FFFFFF 100%);
   padding-top: ${HEIGHT}px;
+  overflow: auto;
 
   > div {
     box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.05);
@@ -125,10 +126,10 @@ class Header extends React.PureComponent {
                   <Portal>
                     <Transition
                       component={false}
-                      appear={{ opacity: 0.8, marginTop: -50 }}
+                      appear={{ opacity: 0.8, translateY: -50 }}
                       enter={{
                         opacity: 1,
-                        marginTop: spring(0, { stiffness: 330, damping: 16 }),
+                        translateY: spring(0, { stiffness: 330, damping: 16 }),
                       }}
                     >
                       <FixedMobileContainer key="FixedMobileContainer">
