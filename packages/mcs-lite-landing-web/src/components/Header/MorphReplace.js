@@ -19,6 +19,7 @@ class MorphReplace extends React.PureComponent {
   constructor(props) {
     super(props);
     this.state = { d: this.getPath(props.children) };
+    this.rafId = null; // Remind: for canceling
   }
 
   componentWillReceiveProps(nextProps) {
@@ -56,11 +57,15 @@ class MorphReplace extends React.PureComponent {
       const value = easeInOut(progress / 300);
       this.setState({ d: interpolator(Math.min(value, 1)) });
       if (progress < 300) {
-        window.requestAnimationFrame(drawLoop);
+        this.rafId = window.requestAnimationFrame(drawLoop);
       }
     };
 
-    window.requestAnimationFrame(drawLoop);
+    this.rafId = window.requestAnimationFrame(drawLoop);
+  }
+
+  componentWillUnmount() {
+    window.cancelAnimationFrame(this.rafId);
   }
 
   // TODO: Only work for mcs-lite-icon
