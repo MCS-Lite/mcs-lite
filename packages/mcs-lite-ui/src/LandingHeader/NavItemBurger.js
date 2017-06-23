@@ -31,10 +31,6 @@ export const Fixed = styled.div`
   }
 `;
 
-const BurgerMenu = styled.div`
-  box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.05);
-`;
-
 const StyledNavItem = styled(NavItem)`
   display: flex;
   align-items: center;
@@ -133,9 +129,7 @@ class NavItemBurger extends React.PureComponent {
               }}
             >
               <Fixed key="Fixed">
-                <BurgerMenu>
-                  {items.map(e => <HandleHideNavItem {...e} onHide={onHide} />)}
-                </BurgerMenu>
+                {items.map(e => <HandleHideNavItem {...e} onHide={onHide} />)}
               </Fixed>
             </Transition>
           </Portal>}
