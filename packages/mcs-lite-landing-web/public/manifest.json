@@ -3,8 +3,13 @@
   "short_name": "MCS Lite",
   "description": "MediaTek Cloud Sandbox Lite",
   "start_url": "./index.html",
-  "lang": "zh-TW",
+  "lang": "en",
   "icons": [
+    {
+      "src": "images/icon_mcs_lite_512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
     {
       "src": "images/icon_mcs_lite_192.png",
       "sizes": "192x192",

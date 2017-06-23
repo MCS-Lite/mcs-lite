@@ -13,6 +13,7 @@ import Header from '../../components/Header';
 import messages from './messages';
 import { DEFAULT_LOCALE } from '../IntlProvider/IntlProvider';
 import { localeMapper } from '../../utils/localeHelper';
+import ogImage from '../../statics/images/img_ogimage.png';
 
 const defaultLocaleMapper = localeMapper(DEFAULT_LOCALE);
 
@@ -45,7 +46,29 @@ class App extends React.Component {
       <div>
         {/* 1. Helmet */}
         <Helmet titleTemplate={`%s | ${t('titleTemplate')}`}>
+          {/* <!-- https://megatags.co/#generate-tags --> */}
           <title>{t('title')}</title>
+          {/* <!-- Search Engine --> */}
+          <meta name="description" content={t('desc')} />
+          <meta name="image" content={ogImage} />
+          {/* <!-- Schema.org for Google --> */}
+          <meta itemProp="name" content={t('title')} />
+          <meta itemProp="description" content={t('desc')} />
+          <meta itemProp="image" content={ogImage} />
+          {/* <!-- Twitter --> */}
+          <meta name="twitter:card" content="summary" />
+          <meta name="twitter:title" content={t('title')} />
+          <meta name="twitter:description" content={t('desc')} />
+          <meta name="twitter:creator" content="@evenchange4" />
+          <meta name="twitter:image" content={ogImage} />
+          <meta name="twitter:image:src" content={ogImage} />
+          {/* <!-- Open Graph general (Facebook, Pinterest & Google+) --> */}
+          <meta name="og:title" content={t('title')} />
+          <meta name="og:description" content={t('desc')} />
+          <meta name="og:image" content={ogImage} />
+          <meta name="og:url" content="https://mcslite.netlify.com/" />
+          <meta name="og:site_name" content={t('title')} />
+          <meta name="og:type" content="website" />
         </Helmet>
 
         <Header locale={locale} />
