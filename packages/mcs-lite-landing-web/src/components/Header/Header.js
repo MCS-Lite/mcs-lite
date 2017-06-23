@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router';
-import R from 'ramda';
 import { Page, Row, Column, Hidden } from 'hedron';
 import styled from 'styled-components';
 import {
@@ -22,14 +21,21 @@ const StyledColumn = styled(Column)`
   justify-content: space-between;
 `;
 
-const renderLinks = R.memoize((locale, getMessages) => {
-  const mcsLink = getMCSLinkByLocale(locale);
+const HiddenForPreRenderTrick = styled.div`
+  visibility: hidden;
+  display: none;
+`;
 
-  return [
+const StyledLink = styled(Link)`
+  text-decoration: none;
+`;
+
+const Header = ({ locale, getMessages }) => {
+  const linkItems = [
     {
       component: 'a',
       key: 'gotoMCS',
-      href: mcsLink,
+      href: getMCSLinkByLocale(locale),
       target: '_blank',
       rel: 'noreferrer noopener',
       children: getMessages('gotoMCS'),
@@ -51,19 +57,6 @@ const renderLinks = R.memoize((locale, getMessages) => {
       children: getMessages('contact'),
     },
   ];
-});
-
-const HiddenForPreRenderTrick = styled.div`
-  visibility: hidden;
-  display: none;
-`;
-
-const StyledLink = styled(Link)`
-  text-decoration: none;
-`;
-
-const Header = ({ locale, getMessages }) => {
-  const links = renderLinks(locale, getMessages);
   const languageItems = LOCALES.map(({ id, children }) => ({
     key: id,
     to: `/${id}`,
@@ -76,14 +69,15 @@ const Header = ({ locale, getMessages }) => {
       <Page width={`${PAGE_WIDTH}px`}>
         <Row>
           <StyledColumn xs={12}>
+            {/* 0. Left - LOGO */}
             <img src={LOGO} alt="LOGO" />
 
-            {/* Mobile */}
+            {/* 1. Right - For Mobile */}
             <Hidden sm md lg>
               <Nav>
                 <NavItemBurger
                   items={[
-                    ...links,
+                    ...linkItems,
                     { key: 'Language', children: 'Language', disabled: true },
                     ...languageItems,
                   ]}
@@ -91,24 +85,24 @@ const Header = ({ locale, getMessages }) => {
               </Nav>
             </Hidden>
 
-            {/* Desktop */}
+            {/* 2. Right - For Desktop */}
             <Hidden xs>
               <Nav>
-                {links.map(e => <NavItem {...e} />)}
+                {linkItems.map(e => <NavItem {...e} />)}
                 <NavItemDropdown items={languageItems}>
                   Language
                 </NavItemDropdown>
               </Nav>
-
-              {/* For Prereder */}
-              <HiddenForPreRenderTrick>
-                {LOCALES.map(({ id, children }) =>
-                  <Link key={id} to={`/${id}`}>
-                    {children}
-                  </Link>,
-                )}
-              </HiddenForPreRenderTrick>
             </Hidden>
+
+            {/* 3. Hidden -For Prereder */}
+            <HiddenForPreRenderTrick>
+              {LOCALES.map(({ id, children }) =>
+                <a key={id}>
+                  {children}
+                </a>,
+              )}
+            </HiddenForPreRenderTrick>
           </StyledColumn>
         </Row>
       </Page>
