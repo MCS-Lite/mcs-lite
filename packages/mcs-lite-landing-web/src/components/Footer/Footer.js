@@ -4,14 +4,14 @@ import { Page, Row } from 'hedron';
 import P from 'mcs-lite-ui/lib/P';
 import { PAGE_WIDTH } from '../../components/SectionRow/SectionRow';
 import getCurrentYear from '../../utils/getCurrentYear';
-import iconFacebook from '../../statics/images/icon_facebook.svg';
-import iconGitHub from '../../statics/images/icon_github.svg';
 import {
   Container,
   StyledColumn,
   IconWrapper,
   RWDWrapper,
 } from './styled-components';
+import SVGFacebook from './SVGFacebook';
+import SVGGitHub from './SVGGitHub';
 
 const Footer = ({ getMessages: t }) =>
   <Container>
@@ -26,22 +26,14 @@ const Footer = ({ getMessages: t }) =>
                 target="_blank"
                 rel="noreferrer noopener"
               >
-                <img
-                  src={iconFacebook}
-                  title="MCS 台灣使用者討論社團"
-                  alt="MCS 台灣使用者討論社團"
-                />
+                <SVGFacebook />
               </a>
               <a
                 href="https://github.com/MCS-Lite"
                 target="_blank"
                 rel="noreferrer noopener"
               >
-                <img
-                  src={iconGitHub}
-                  title="MCS Lite GitHub"
-                  alt="MCS Lite GitHub"
-                />
+                <SVGGitHub />
               </a>
             </IconWrapper>
           </RWDWrapper>
