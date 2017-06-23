@@ -37,12 +37,17 @@
   {
     "id": "App.titleTemplate",
     "description": "For document title",
-    "defaultMessage": "MCS Lite",
+    "defaultMessage": "| MediaTek",
     "filepath": "src/containers/App/messages.js"
   },
   {
     "id": "App.title",
-    "defaultMessage": "Build your IoT platform with ease and flexibility",
+    "defaultMessage": "MCS Lite",
+    "filepath": "src/containers/App/messages.js"
+  },
+  {
+    "id": "App.desc",
+    "defaultMessage": "MCS Lite is designed for users who desire a dedicate IoT platform for their applications. MCS Lite can be deployed on-premises or on a publich cloud.",
     "filepath": "src/containers/App/messages.js"
   },
   {
