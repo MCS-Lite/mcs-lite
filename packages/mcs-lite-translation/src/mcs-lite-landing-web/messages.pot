@@ -1,16 +1,12 @@
 msgid ""
 msgstr ""
-"POT-Creation-Date: 2017-06-20T10:50:43.500Z\n"
+"POT-Creation-Date: 2017-06-23T06:47:31.908Z\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "MIME-Version: 1.0\n"
 "X-Generator: react-intl-po\n"
 
 
-#: ../mcs-lite-translation/src/mcs-lite-landing-web/messages.json
-#. [App.title]
-#. defaultMessage is:
-#. Build your IoT platform with ease and flexibility
 #: ../mcs-lite-translation/src/mcs-lite-landing-web/messages.json
 #. [Section1.title]
 #. defaultMessage is:
@@ -117,7 +113,7 @@ msgid "Let's get started"
 msgstr ""
 
 #: ../mcs-lite-translation/src/mcs-lite-landing-web/messages.json
-#. [App.titleTemplate] - For document title
+#. [App.title]
 #. defaultMessage is:
 #. MCS Lite
 msgid "MCS Lite"
@@ -128,6 +124,13 @@ msgstr ""
 #. defaultMessage is:
 #. MCS Lite binary can be launched on your computer in one-click, you can also deploy on-premise or in the cloud with provided source code. All the options are here for your IoT applications during prototype, development and production stages.
 msgid "MCS Lite binary can be launched on your computer in one-click, you can also deploy on-premise or in the cloud with provided source code. All the options are here for your IoT applications during prototype, development and production stages."
+msgstr ""
+
+#: ../mcs-lite-translation/src/mcs-lite-landing-web/messages.json
+#. [App.desc]
+#. defaultMessage is:
+#. MCS Lite is designed for users who desire a dedicate IoT platform for their applications. MCS Lite can be deployed on-premises or on a publich cloud.
+msgid "MCS Lite is designed for users who desire a dedicate IoT platform for their applications. MCS Lite can be deployed on-premises or on a publich cloud."
 msgstr ""
 
 #: ../mcs-lite-translation/src/mcs-lite-landing-web/messages.json
@@ -219,4 +222,11 @@ msgstr ""
 #. defaultMessage is:
 #. or
 msgid "or"
+msgstr ""
+
+#: ../mcs-lite-translation/src/mcs-lite-landing-web/messages.json
+#. [App.titleTemplate] - For document title
+#. defaultMessage is:
+#. | MediaTek
+msgid "| MediaTek"
 msgstr ""

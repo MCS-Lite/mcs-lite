@@ -81,6 +81,9 @@ const Header = ({ locale, getMessages }) => {
                     { key: 'Language', children: 'Language', disabled: true },
                     ...languageItems,
                   ]}
+                  data-ga-on="click"
+                  data-ga-event-category="Mobile NavItemBurger menu"
+                  data-ga-event-action="click"
                 />
               </Nav>
             </Hidden>
@@ -89,7 +92,12 @@ const Header = ({ locale, getMessages }) => {
             <Hidden xs>
               <Nav>
                 {linkItems.map(e => <NavItem {...e} />)}
-                <NavItemDropdown items={languageItems}>
+                <NavItemDropdown
+                  items={languageItems}
+                  data-ga-on="click"
+                  data-ga-event-category="Language NavItemDropdown menu"
+                  data-ga-event-action="click"
+                >
                   Language
                 </NavItemDropdown>
               </Nav>
