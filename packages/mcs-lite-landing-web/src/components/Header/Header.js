@@ -11,8 +11,8 @@ import {
   NavItemBurger,
 } from 'mcs-lite-ui/lib/LandingHeader';
 import { PAGE_WIDTH } from '../../components/SectionRow/SectionRow';
-import LOGO from '../../statics/images/logo_mcs_lite_black.svg';
 import { LOCALES, getMCSLinkByLocale } from '../../utils/localeHelper';
+import SVGLogo from './SVGLogo';
 
 const StyledColumn = styled(Column)`
   padding-top: 0;
@@ -70,7 +70,7 @@ const Header = ({ locale, getMessages }) => {
         <Row>
           <StyledColumn xs={12}>
             {/* 0. Left - LOGO */}
-            <img src={LOGO} alt="LOGO" />
+            <SVGLogo />
 
             {/* 1. Right - For Mobile */}
             <Hidden sm md lg>

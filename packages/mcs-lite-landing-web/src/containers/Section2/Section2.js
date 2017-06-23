@@ -7,9 +7,9 @@ import TextCenter from 'mcs-lite-ui/lib/TextCenter';
 import SpaceTop from 'mcs-lite-ui/lib/SpaceTop';
 import ScrollParallax from 'rc-scroll-anim/lib/ScrollParallax';
 import SectionRow from '../../components/SectionRow';
-import imgSignal from '../../statics/images/img_signal.svg';
 import imgMac from '../../statics/images/img_mac.svg';
 import imgIot from '../../statics/images/img_iot.svg';
+import SVGSignal from './SVGSignal';
 
 const StyledSectionRow = styled(SectionRow)`
   background-image: linear-gradient(-180deg, #FFFFFF 0%, #FDFDFD 47%, #FAFAFA 100%);
@@ -50,12 +50,11 @@ const Section2 = ({ getMessages: t }) =>
         </SpaceTop>
         <SpaceTop height={40}>
           <ScrollParallax
-            animation={{ opacity: 1, playScale: [0.4, 0.6] }}
+            animation={{ opacity: 1, playScale: [0.3, 0.6] }}
             always={false}
             style={{ opacity: 0 }}
-          >
-            <img src={imgSignal} title={t('title')} alt={t('desc')} />
-          </ScrollParallax>
+            component={SVGSignal}
+          />
         </SpaceTop>
         <SpaceTop height={20}>
           <ImageWrapper>
