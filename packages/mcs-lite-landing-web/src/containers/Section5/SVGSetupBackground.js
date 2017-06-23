@@ -6,7 +6,7 @@
 
 import React from 'react';
 
-export default function SVGBackground(props) {
+export default function SVGSetupBackground(props) {
   return (
     <svg width={398} height={171} viewBox="0 0 398 171" {...props}>
       <g fill="none">

@@ -8,13 +8,13 @@ import TextCenter from 'mcs-lite-ui/lib/TextCenter';
 import SpaceTop from 'mcs-lite-ui/lib/SpaceTop';
 import SectionRow from '../../components/SectionRow';
 import DownloadButton from '../../components/DownloadButton';
-import SVGBackground from './SVGBackground';
+import SVGSetupBackground from './SVGSetupBackground';
 import SVGMachine from './SVGMachine';
 import SVGScreen from './SVGScreen';
 
 const ImageWrapper = styled.div`
   position: relative;
-  height: 171px;
+  height: 170px;
 
   > * {
     position: absolute;
@@ -55,7 +55,7 @@ const Image = () =>
       />
     </div>
     <div>
-      <SVGBackground />
+      <SVGSetupBackground />
     </div>
     <BackgroundOverlay />
   </ImageWrapper>;
