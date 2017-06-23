@@ -9,10 +9,10 @@ import P from 'mcs-lite-ui/lib/P';
 import TextCenter from 'mcs-lite-ui/lib/TextCenter';
 import SpaceTop from 'mcs-lite-ui/lib/SpaceTop';
 import SectionRow from '../../components/SectionRow';
-import iconData from '../../statics/images/icon_data_collection.svg';
-import iconRemote from '../../statics/images/icon_remote_control.svg';
-import iconManagement from '../../statics/images/icon_management.svg';
-import iconMobile from '../../statics/images/icon_mobile_friendly.svg';
+import SVGData from './SVGData';
+import SVGRemote from './SVGRemote';
+import SVGManagement from './SVGManagement';
+import SVGMobile from './SVGMobile';
 
 const ImageWrapper = styled.div`
   width: 80px;
@@ -55,6 +55,7 @@ const Section3 = ({ getMessages: t }) =>
     </Column>
 
     <StyledRow>
+      {/* 1. Data Collection */}
       <Column xs={6} sm={3}>
         <TextCenter>
           <ScrollParallax
@@ -65,11 +66,7 @@ const Section3 = ({ getMessages: t }) =>
             style={{ opacity: 0, transform: 'translateY(-30px)' }}
           >
             <ImageWrapper>
-              <img
-                src={iconData}
-                title={t('data.title')}
-                alt={t('data.desc')}
-              />
+              <SVGData />
             </ImageWrapper>
           </ScrollParallax>
           <SpaceTop height={20}>
@@ -83,6 +80,7 @@ const Section3 = ({ getMessages: t }) =>
         </TextCenter>
       </Column>
 
+      {/* 2. Remote Control */}
       <Column xs={6} sm={3}>
         <TextCenter>
           <ScrollParallax
@@ -93,11 +91,7 @@ const Section3 = ({ getMessages: t }) =>
             style={{ opacity: 0, transform: 'translateY(-30px)' }}
           >
             <ImageWrapper>
-              <img
-                src={iconRemote}
-                title={t('remote.title')}
-                alt={t('remote.desc')}
-              />
+              <SVGRemote />
             </ImageWrapper>
           </ScrollParallax>
           <SpaceTop height={20}>
@@ -111,6 +105,7 @@ const Section3 = ({ getMessages: t }) =>
         </TextCenter>
       </Column>
 
+      {/* 3. Management */}
       <Column xs={6} sm={3}>
         <TextCenter>
           <ScrollParallax
@@ -121,11 +116,7 @@ const Section3 = ({ getMessages: t }) =>
             style={{ opacity: 0, transform: 'translateY(-30px)' }}
           >
             <ImageWrapper>
-              <img
-                src={iconManagement}
-                title={t('management.title')}
-                alt={t('management.desc')}
-              />
+              <SVGManagement />
             </ImageWrapper>
           </ScrollParallax>
           <SpaceTop height={20}>
@@ -139,6 +130,7 @@ const Section3 = ({ getMessages: t }) =>
         </TextCenter>
       </Column>
 
+      {/* 4. Mobile */}
       <Column xs={6} sm={3}>
         <TextCenter>
           <ScrollParallax
@@ -149,11 +141,7 @@ const Section3 = ({ getMessages: t }) =>
             style={{ opacity: 0, transform: 'translateY(-30px)' }}
           >
             <ImageWrapper>
-              <img
-                src={iconMobile}
-                title={t('mobile.title')}
-                alt={t('mobile.desc')}
-              />
+              <SVGMobile />
             </ImageWrapper>
           </ScrollParallax>
           <SpaceTop height={20}>
