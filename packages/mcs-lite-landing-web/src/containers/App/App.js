@@ -14,12 +14,15 @@ import messages from './messages';
 import { DEFAULT_LOCALE } from '../IntlProvider/IntlProvider';
 import { LOCALES, localeMapper } from '../../utils/localeHelper';
 import ogImage from '../../statics/images/img_ogimage.png';
-import ogImage2 from '../../statics/images/img_ogimage_twitter2.png';
 
 const defaultLocaleMapper = localeMapper(DEFAULT_LOCALE);
 
 const GITHUB_API_URL =
   'https://api.github.com/repos/MCS-Lite/mcs-lite-app/releases/latest';
+
+// Remind: Twitter need absolute path
+const ogImageForTwitter =
+  'https://raw.githubusercontent.com/MCS-Lite/mcs-lite/master/packages/mcs-lite-design/src/logo/img_ogimage.png';
 
 class App extends React.Component {
   static propTypes = {
@@ -61,7 +64,7 @@ class App extends React.Component {
           <meta name="twitter:title" content={t('title')} />
           <meta name="twitter:description" content={t('desc')} />
           <meta name="twitter:creator" content="@evenchange4" />
-          <meta name="twitter:image" content={ogImage2} />
+          <meta name="twitter:image" content={ogImageForTwitter} />
           <meta name="twitter:alt" content={t('desc')} />
           {/* <!-- Open Graph general (Facebook, Pinterest & Google+) --> */}
           <meta name="og:title" content={t('title')} />
