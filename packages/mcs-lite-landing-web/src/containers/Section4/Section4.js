@@ -144,7 +144,7 @@ const Section4 = ({ getMessages: t }) =>
                 animation={{
                   x: -105,
                   y: 85,
-                  playScale: [0.1, 0.4],
+                  playScale: [0, 0.4],
                 }}
                 style={{ transform: 'translate(-120px, 85px)' }}
                 component="img"
@@ -173,7 +173,7 @@ const Section4 = ({ getMessages: t }) =>
             <div>
               <ScrollParallax
                 animation={{ x: 70, y: 125, playScale: [0.1, 0.4] }}
-                style={{ transform: 'translate(70px, 140px)' }}
+                style={{ transform: 'translate(70px, 130px)' }}
                 component="img"
                 src={imgCustomizationSearch}
                 alt="imgCustomizationSearch"
