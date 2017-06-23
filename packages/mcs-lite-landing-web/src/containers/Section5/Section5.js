@@ -8,7 +8,7 @@ import TextCenter from 'mcs-lite-ui/lib/TextCenter';
 import SpaceTop from 'mcs-lite-ui/lib/SpaceTop';
 import SectionRow from '../../components/SectionRow';
 import DownloadButton from '../../components/DownloadButton';
-import SVGSetupBackground from './SVGSetupBackground';
+import imgSetupBackground from '../../statics/images/img_setup.svg';
 import SVGMachine from './SVGMachine';
 import SVGScreen from './SVGScreen';
 
@@ -25,6 +25,13 @@ const ImageWrapper = styled.div`
 
 const ScrollParallaxMachine = styled(ScrollParallax)`
   transform-origin: 143px 0;
+`;
+
+const Background = styled.div`
+  background-image: url("${props => props.src}");
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100%;
 `;
 
 const BackgroundOverlay = styled.div`
@@ -54,9 +61,7 @@ const Image = () =>
         component={SVGMachine}
       />
     </div>
-    <div>
-      <SVGSetupBackground />
-    </div>
+    <Background src={imgSetupBackground} />
     <BackgroundOverlay />
   </ImageWrapper>;
 

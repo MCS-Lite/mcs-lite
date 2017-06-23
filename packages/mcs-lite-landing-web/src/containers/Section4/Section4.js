@@ -11,12 +11,12 @@ import Button from 'mcs-lite-ui/lib/Button';
 import TextCenter from 'mcs-lite-ui/lib/TextCenter';
 import SpaceTop from 'mcs-lite-ui/lib/SpaceTop';
 import SectionRow from '../../components/SectionRow';
-import SVGCustomBackground from './SVGCustomBackground';
+import imgOpenBackground from '../../statics/images/img_open_source.svg';
 import SVGCard from './SVGCard';
 import SVGCode from './SVGCode';
 import SVGSearch from './SVGSearch';
 import SVGTooltip from './SVGTooltip';
-import SVGOpenBackground from './SVGOpenBackground';
+import imgCustomizationBackground from '../../statics/images/img_customization.svg';
 import SVGCloud from './SVGCloud';
 import SVGOpenCode1 from './SVGOpenCode1';
 import SVGOpenCode2 from './SVGOpenCode2';
@@ -55,11 +55,16 @@ const ScrollParallaxCode = styled(ScrollParallax)`
   transform-origin: center bottom;
 `;
 
+const Background = styled.div`
+  background-image: url("${props => props.src}");
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100%;
+`;
+
 const ImageCustom = () =>
   <ImageWrapper>
-    <div>
-      <SVGCustomBackground />
-    </div>
+    <Background src={imgOpenBackground} />
     <div>
       <ScrollParallax
         animation={{
@@ -96,7 +101,7 @@ const ImageCustom = () =>
 
 const ImageOpenSouce = () =>
   <ImageWrapper>
-    <div><SVGOpenBackground /></div>
+    <Background src={imgCustomizationBackground} />
     <div>
       <ScrollParallaxCode
         animation={{
