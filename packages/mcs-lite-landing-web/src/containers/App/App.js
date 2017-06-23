@@ -56,12 +56,11 @@ class App extends React.Component {
           <meta itemProp="description" content={t('desc')} />
           <meta itemProp="image" content={ogImage} />
           {/* <!-- Twitter --> */}
-          <meta name="twitter:card" content="summary" />
+          <meta name="twitter:card" content="summary_large_image" />
           <meta name="twitter:title" content={t('title')} />
           <meta name="twitter:description" content={t('desc')} />
           <meta name="twitter:creator" content="@evenchange4" />
           <meta name="twitter:image" content={ogImage} />
-          <meta name="twitter:image:src" content={ogImage} />
           {/* <!-- Open Graph general (Facebook, Pinterest & Google+) --> */}
           <meta name="og:title" content={t('title')} />
           <meta name="og:description" content={t('desc')} />

@@ -108,10 +108,10 @@ class NavItemBurger extends React.PureComponent {
   render() {
     const { onClick, onHide } = this;
     const { isShow } = this.state;
-    const { children, items } = this.props;
+    const { children, items, ...otherProps } = this.props;
 
     return (
-      <NavItem onClick={onClick}>
+      <NavItem onClick={onClick} {...otherProps}>
         <StyledP>{children}</StyledP>
         <MorphReplace width={24} height={24}>
           {isShow ? <IconClose key="close" /> : <IconMenu key="menu" />}
