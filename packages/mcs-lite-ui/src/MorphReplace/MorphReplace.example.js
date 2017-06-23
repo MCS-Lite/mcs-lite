@@ -1,9 +1,14 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { storiesOf } from '@storybook/react';
 import * as Icons from 'mcs-lite-icon/lib/index';
 import MorphReplace from '.';
 
 class StatefulMorphReplace extends React.Component {
+  static propTypes = {
+    from: PropTypes.element.isRequired,
+    to: PropTypes.element.isRequired,
+  };
   state = { checked: false };
   componentDidMount = () => {
     this.interval = setInterval(() => {

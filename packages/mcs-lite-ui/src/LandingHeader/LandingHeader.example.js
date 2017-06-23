@@ -17,7 +17,7 @@ storiesOf('LandingHeader', module)
   )
   .addWithInfo(
     'With offset props',
-    'The `scrollTop` value of the document/window to get the shadow style.',
+    'The **scrollTop** value of the document/window to get the shadow style.',
     () =>
       <LandingHeader offset={160}>
         offset 160
@@ -33,14 +33,14 @@ storiesOf('LandingHeader', module)
           <NavItem><IconMenu size={24} /></NavItem>
           <NavItem>Nav Item 1</NavItem>
           <NavItem active>Nav Item 2 (active)</NavItem>
-          <NavItem disabled>Nav Item 2 (disabled)</NavItem>
+          <NavItem disabled>Nav Item 3 (disabled)</NavItem>
         </Nav>
       </LandingHeader>,
     { inline: true },
   )
   .addWithInfo(
-    'With NavItemDropdown',
-    '',
+    'NavItemDropdown',
+    'items = <MenuItem>',
     () =>
       <LandingHeader>
         <Nav>
@@ -57,8 +57,8 @@ storiesOf('LandingHeader', module)
     { inline: true },
   )
   .addWithInfo(
-    'With NavItemBurger',
-    '',
+    'NavItemBurger',
+    'items = <NavItem>',
     () =>
       <LandingHeader>
         <Nav>

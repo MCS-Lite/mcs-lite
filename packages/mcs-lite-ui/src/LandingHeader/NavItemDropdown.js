@@ -5,21 +5,25 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import rafThrottle from 'raf-throttle';
 import IconFold from 'mcs-lite-icon/lib/IconFold';
+import R from 'ramda';
 import Overlay from '../Overlay';
 import P from '../P';
 import { Menu, MenuItem } from '../Menu';
 import NavItem from './NavItem';
 
-const StyledP = styled(P)`
+export const StyledP = styled(P)`
   margin-right: 5px;
 `;
 
-const StyledIconFold = styled(IconFold)`
+const omitProps = R.omit(['isShow']);
+export const StyledIconFold = styled(props =>
+  <IconFold {...omitProps(props)} />,
+)`
   transform: rotate(${props => (props.isShow ? -180 : 0)}deg);
   transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 `;
 
-const HandleHideMenuItem = ({ onHide, onClick, ...otherProps }) =>
+export const HandleHideMenuItem = ({ onHide, onClick, ...otherProps }) =>
   <MenuItem
     {...otherProps}
     onClick={e => {
@@ -36,7 +40,16 @@ HandleHideMenuItem.propTypes = {
 class NavItemDropdown extends React.PureComponent {
   static propTypes = {
     children: PropTypes.node.isRequired,
-    items: PropTypes.arrayOf(PropTypes.node).isRequired,
+
+    // MenuItem
+    items: PropTypes.arrayOf(
+      PropTypes.shape({
+        key: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
+          .isRequired,
+        component: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
+        children: PropTypes.node.isRequired,
+      }),
+    ).isRequired,
   };
   state = { isShow: false, target: undefined };
   componentDidMount = () => {

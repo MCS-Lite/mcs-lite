@@ -12,11 +12,11 @@ import MorphReplace from '../MorphReplace';
 import P from '../P';
 import NavItem from './NavItem';
 
-const StyledP = styled(P)`
+export const StyledP = styled(P)`
   margin-right: 5px;
 `;
 
-const Fixed = styled.div`
+export const Fixed = styled.div`
   position: fixed;
   top: 0;
   bottom: 0;
@@ -51,7 +51,12 @@ const StyledNavItem = styled(NavItem)`
   }
 `;
 
-const HandleHideNavItem = ({ onHide, onClick, disabled, ...otherProps }) =>
+export const HandleHideNavItem = ({
+  onHide,
+  onClick,
+  disabled,
+  ...otherProps
+}) =>
   <StyledNavItem
     {...otherProps}
     disabled={disabled}
@@ -70,7 +75,17 @@ HandleHideNavItem.propTypes = {
 class NavItemBurger extends React.PureComponent {
   static propTypes = {
     children: PropTypes.node.isRequired,
-    items: PropTypes.arrayOf(PropTypes.node).isRequired,
+
+    // NavItem
+    items: PropTypes.arrayOf(
+      PropTypes.shape({
+        key: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
+          .isRequired,
+        component: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
+        children: PropTypes.node.isRequired,
+        disabled: PropTypes.bool,
+      }),
+    ).isRequired,
   };
 
   state = { isShow: false };
