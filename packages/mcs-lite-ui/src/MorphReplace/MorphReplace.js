@@ -11,20 +11,37 @@ import {
   combine,
 } from 'flubber';
 
+// TODO: Only work for mcs-lite-icon
+const getPath = children => {
+  const json = renderToJson(children);
+  const path = json.children[0].children[0].attributes.d;
+  return path;
+};
+
+const easeInOut = t =>
+  t < 0.5 ? 4 * t * t * t : (t - 1) * (2 * t - 2) * (2 * t - 2) + 1;
+
 class MorphReplace extends React.PureComponent {
   static propTypes = {
-    children: PropTypes.element,
+    children: PropTypes.element.isRequired,
+    width: PropTypes.number,
+    height: PropTypes.number,
+  };
+
+  static defaultProps = {
+    width: 24,
+    height: 24,
   };
 
   constructor(props) {
     super(props);
-    this.state = { d: this.getPath(props.children) };
+    this.state = { d: getPath(props.children) };
     this.rafId = null; // Remind: for canceling
   }
 
   componentWillReceiveProps(nextProps) {
-    const fromPath = this.getPath(this.props.children);
-    const toPath = this.getPath(nextProps.children);
+    const fromPath = getPath(this.props.children);
+    const toPath = getPath(nextProps.children);
     if (fromPath === toPath) return;
 
     const current = splitPathString(fromPath);
@@ -46,10 +63,6 @@ class MorphReplace extends React.PureComponent {
 
     let start = null;
 
-    function easeInOut(t) {
-      return t < 0.5 ? 4 * t * t * t : (t - 1) * (2 * t - 2) * (2 * t - 2) + 1;
-    }
-
     const drawLoop = timestamp => {
       let progress = null;
       if (start === null) start = timestamp;
@@ -68,16 +81,10 @@ class MorphReplace extends React.PureComponent {
     window.cancelAnimationFrame(this.rafId);
   }
 
-  // TODO: Only work for mcs-lite-icon
-  getPath = children => {
-    const json = renderToJson(children);
-    const path = json.children[0].children[0].attributes.d;
-    return path;
-  };
-
   render() {
+    const { children, width, height, ...otherProps } = this.props;
     return (
-      <svg viewBox="0 0 24 24" width="24" height="24">
+      <svg viewBox="0 0 24 24" width={width} height={height} {...otherProps}>
         <path d={this.state.d} />
       </svg>
     );

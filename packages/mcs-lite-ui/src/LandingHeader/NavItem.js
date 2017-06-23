@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import R from 'ramda';
 
-const omitProps = R.omit(['active']);
+const omitProps = R.omit(['active', 'disabled']);
 
 const BaseComponent = ({ component, children, ...otherProps }) =>
   React.createElement(component, omitProps(otherProps), children);
@@ -22,9 +22,11 @@ const NavItem = styled(BaseComponent)`
   color: ${props =>
     props.active ? props.theme.color.black : props.theme.color.grayBase};
   transition: color cubic-bezier(0.47, 0, 0.75, 0.72) 0.3s;
+  cursor: ${props => (props.disabled ? 'default' : 'pointer')};
 
   &:hover {
-    color: ${props => props.theme.color.black};
+    color: ${props =>
+      props.disabled ? props.theme.color.grayBase : props.theme.color.black};
   }
 
   path {
@@ -34,10 +36,12 @@ const NavItem = styled(BaseComponent)`
 NavItem.displayName = 'NavItem';
 NavItem.propTypes = {
   component: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
+  disabled: PropTypes.bool,
   active: PropTypes.bool,
 };
 NavItem.defaultProps = {
   component: 'div',
+  disabled: false,
   active: false,
 };
 

@@ -19,6 +19,20 @@ const StyledIconFold = styled(IconFold)`
   transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 `;
 
+const HandleHideMenuItem = ({ onHide, onClick, ...otherProps }) =>
+  <MenuItem
+    {...otherProps}
+    onClick={e => {
+      if (onClick) onClick(e);
+      onHide(e);
+    }}
+  />;
+HandleHideMenuItem.displayName = 'HandleHideMenuItem';
+HandleHideMenuItem.propTypes = {
+  onHide: PropTypes.func.isRequired,
+  onClick: PropTypes.func,
+};
+
 class NavItemDropdown extends React.PureComponent {
   static propTypes = {
     children: PropTypes.node.isRequired,
@@ -57,10 +71,12 @@ class NavItemDropdown extends React.PureComponent {
       >
         <StyledP>{children}</StyledP>
         <StyledIconFold size={18} isShow={isShow} />
+
+        {/* Portal */}
         {isShow &&
           <Overlay target={target} onClickOutSide={onHide}>
-            <Menu key="menu" onMouseLeave={onHide}>
-              {items.map(e => <MenuItem {...e} />)}
+            <Menu key="menu" onClick={onHide} onMouseLeave={onHide}>
+              {items.map(e => <HandleHideMenuItem {...e} onHide={onHide} />)}
             </Menu>
           </Overlay>}
       </NavItem>
