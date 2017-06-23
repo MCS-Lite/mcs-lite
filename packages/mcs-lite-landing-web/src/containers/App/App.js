@@ -12,8 +12,9 @@ import Footer from '../../components/Footer';
 import Header from '../../components/Header';
 import messages from './messages';
 import { DEFAULT_LOCALE } from '../IntlProvider/IntlProvider';
-import { localeMapper } from '../../utils/localeHelper';
+import { LOCALES, localeMapper } from '../../utils/localeHelper';
 import ogImage from '../../statics/images/img_ogimage.png';
+import ogImage2 from '../../statics/images/img_ogimage_twitter2.png';
 
 const defaultLocaleMapper = localeMapper(DEFAULT_LOCALE);
 
@@ -60,7 +61,8 @@ class App extends React.Component {
           <meta name="twitter:title" content={t('title')} />
           <meta name="twitter:description" content={t('desc')} />
           <meta name="twitter:creator" content="@evenchange4" />
-          <meta name="twitter:image" content={ogImage} />
+          <meta name="twitter:image" content={ogImage2} />
+          <meta name="twitter:alt" content={t('desc')} />
           {/* <!-- Open Graph general (Facebook, Pinterest & Google+) --> */}
           <meta name="og:title" content={t('title')} />
           <meta name="og:description" content={t('desc')} />
@@ -68,6 +70,10 @@ class App extends React.Component {
           <meta name="og:url" content="https://mcslite.netlify.com/" />
           <meta name="og:site_name" content={t('title')} />
           <meta name="og:type" content="website" />
+          <meta property="og:locale" content={DEFAULT_LOCALE} />
+          {LOCALES.map(({ id }) =>
+            <meta property="og:locale:alternate" content={id} />,
+          )}
         </Helmet>
 
         <Header locale={locale} />
