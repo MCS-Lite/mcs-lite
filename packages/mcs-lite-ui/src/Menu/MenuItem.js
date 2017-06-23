@@ -1,7 +1,16 @@
+import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { darken1 } from 'mcs-lite-theme';
 
-const MenuItem = styled.div`
+const BaseComponent = ({ component, children, ...otherProps }) =>
+  React.createElement(component, otherProps, children);
+BaseComponent.displayName = 'BaseComponent';
+BaseComponent.propTypes = {
+  component: PropTypes.oneOfType([PropTypes.func, PropTypes.string]).isRequired,
+  children: PropTypes.node.isRequired,
+};
+const MenuItem = styled(BaseComponent)`
   display: inline-flex;
   align-items: center;
   padding: 0 15px;
@@ -35,5 +44,11 @@ const MenuItem = styled.div`
 `;
 
 MenuItem.displayName = 'MenuItem';
+MenuItem.propTypes = {
+  component: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
+};
+MenuItem.defaultProps = {
+  component: 'div',
+};
 
 export default MenuItem;

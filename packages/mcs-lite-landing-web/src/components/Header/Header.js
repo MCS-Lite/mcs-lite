@@ -3,19 +3,24 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router';
+import R from 'ramda';
 import { Page, Row, Column, Hidden } from 'hedron';
 import styled from 'styled-components';
 import rafThrottle from 'raf-throttle';
 import Portal from 'react-overlays/lib/Portal';
 import Transition from 'react-motion-ui-pack';
 import spring from 'react-motion/lib/spring';
-import LandingHeader from 'mcs-lite-ui/lib/LandingHeader';
+import {
+  LandingHeader,
+  Nav,
+  NavItem,
+  NavItemDropdown,
+} from 'mcs-lite-ui/lib/LandingHeader';
 import IconMenu from 'mcs-lite-icon/lib/IconMenu';
 import IconClose from 'mcs-lite-icon/lib/IconClose';
 import { PAGE_WIDTH } from '../../components/SectionRow/SectionRow';
 import LOGO from '../../statics/images/logo_mcs_lite_black.svg';
 import { LOCALES, getMCSLinkByLocale } from '../../utils/localeHelper';
-import LanguageDropdown from './LanguageDropdown';
 import MorphReplace from './MorphReplace';
 
 const StyledColumn = styled(Column)`
@@ -23,37 +28,6 @@ const StyledColumn = styled(Column)`
   padding-bottom: 0;
   display: flex;
   justify-content: space-between;
-`;
-
-const Right = styled.div`
-  display: flex;
-
-  > * {
-    padding: 0 15px;
-  }
-
-  > *:last-child {
-    padding-right: 0;
-  }
-
-  > * {
-    height: ${props => props.theme.height.header};
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    text-decoration: none;
-    color: ${props =>
-      props.active ? props.theme.color.black : props.theme.color.grayBase};
-    transition: color cubic-bezier(0.47, 0, 0.75, 0.72) 0.3s;
-
-    &:hover {
-      color: ${props => props.theme.color.black};
-    }
-
-    path {
-      fill: currentColor;
-    }
-  }
 `;
 
 const MobileFixedMenu = styled.div`
@@ -70,12 +44,9 @@ const MobileFixedMenu = styled.div`
     box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.05);
 
     * {
-      display: block;
-      color: ${props => props.theme.color.grayBase};
-      text-align: center;
-      padding: 16px 0;
-      text-decoration: none;
-      transition: color cubic-bezier(0.47, 0, 0.75, 0.72) 0.3s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
     a:hover {
@@ -89,31 +60,48 @@ const MobileFixedMenu = styled.div`
   }
 `;
 
-const renderLinks = (locale, getMessages) => {
+const renderLinks = R.memoize((locale, getMessages) => {
   const mcsLink = getMCSLinkByLocale(locale);
 
   return [
-    <a key="gotoMCS" href={mcsLink} target="_blank" rel="noreferrer noopener">
+    <NavItem
+      component="a"
+      key="gotoMCS"
+      href={mcsLink}
+      target="_blank"
+      rel="noreferrer noopener"
+    >
       {getMessages('gotoMCS')}
-    </a>,
-    <a
+    </NavItem>,
+    <NavItem
+      component="a"
       key="resource"
       href={`https://mcs-lite-introduction.netlify.com/${locale}`}
       target="_blank"
       rel="noreferrer noopener"
     >
       {getMessages('resource')}
-    </a>,
-    <a
+    </NavItem>,
+    <NavItem
+      component="a"
       key="contact"
       href="mailto:mtkcloudsandbox@mediatek.com"
       target="_blank"
       rel="noreferrer noopener"
     >
       {getMessages('contact')}
-    </a>,
+    </NavItem>,
   ];
-};
+});
+
+const HiddenForPreRenderTrick = styled.div`
+  visibility: hidden;
+  display: none;
+`;
+
+const StyledLink = styled(Link)`
+  text-decoration: none;
+`;
 
 class Header extends React.PureComponent {
   state = { isShow: false };
@@ -142,6 +130,7 @@ class Header extends React.PureComponent {
     const { onClick, onHide } = this;
     const { isShow } = this.state;
     const linkElements = renderLinks(locale, getMessages);
+    console.log(linkElements);
 
     return (
       <LandingHeader>
@@ -152,23 +141,42 @@ class Header extends React.PureComponent {
 
               {/* Mobile */}
               <Hidden sm md lg>
-                <Right>
-                  <div onClick={onClick}>
+                <Nav>
+                  <NavItem onClick={onClick}>
                     <MorphReplace width={24} height={24}>
                       {isShow
                         ? <IconClose key="close" />
                         : <IconMenu key="menu" />}
                     </MorphReplace>
-                  </div>
-                </Right>
+                  </NavItem>
+                </Nav>
               </Hidden>
 
               {/* Desktop */}
               <Hidden xs>
-                <Right>
+                <Nav>
                   {linkElements}
-                  <LanguageDropdown />
-                </Right>
+                  <NavItemDropdown
+                    items={LOCALES.map(({ id, children }) => ({
+                      key: id,
+                      component: StyledLink,
+                      to: `/${id}`,
+                      onClick: onHide,
+                      children,
+                    }))}
+                  >
+                    Language
+                  </NavItemDropdown>
+                </Nav>
+
+                {/* For Prereder */}
+                <HiddenForPreRenderTrick>
+                  {LOCALES.map(({ id, children }) =>
+                    <Link key={id} to={`/${id}`}>
+                      {children}
+                    </Link>,
+                  )}
+                </HiddenForPreRenderTrick>
               </Hidden>
 
               {/* Menu for mobile */}
@@ -185,11 +193,16 @@ class Header extends React.PureComponent {
                     <MobileFixedMenu key="MobileFixedMenu">
                       <div>
                         {linkElements}
-                        <div>Language</div>
+                        <NavItem>Language</NavItem>
                         {LOCALES.map(({ id, children }) =>
-                          <Link key={id} to={`/${id}`} onClick={onHide}>
+                          <NavItem
+                            component={Link}
+                            key={id}
+                            to={`/${id}`}
+                            onClick={onHide}
+                          >
                             {children}
-                          </Link>,
+                          </NavItem>,
                         )}
                       </div>
                     </MobileFixedMenu>

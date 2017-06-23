@@ -14,9 +14,16 @@ const StyledMenu = styled(Menu)`
 `;
 
 storiesOf('Menu', module)
-  .addWithInfo('API for MenuItem', '', () => <MenuItem>A</MenuItem>, {
-    inline: true,
-  })
+  .addWithInfo(
+    'API for MenuItem',
+    '',
+    () =>
+      <div>
+        <MenuItem>div tag (default)</MenuItem>
+        <MenuItem component="a">a Tag</MenuItem>
+      </div>,
+    { inline: true },
+  )
   .addWithInfo('API for Menu', '', () => <Menu>Children</Menu>, {
     inline: true,
   })
@@ -47,6 +54,7 @@ storiesOf('Menu', module)
         <MenuItem onClick={action('index: 6')}><A>MenuItem A</A></MenuItem>
         <MenuItem onClick={action('index: 7')}><B>MenuItem B</B></MenuItem>
         <MenuItem onClick={action('index: 8')}><IconDelete /></MenuItem>
+        <MenuItem component="a">{`<a>`} Tag</MenuItem>
       </StyledMenu>,
     { inline: true },
   );
