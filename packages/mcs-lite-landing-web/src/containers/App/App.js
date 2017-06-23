@@ -49,7 +49,7 @@ class App extends React.Component {
     return (
       <div>
         {/* 1. Helmet */}
-        <Helmet titleTemplate={`%s | ${t('titleTemplate')}`}>
+        <Helmet titleTemplate={`%s ${t('titleTemplate')}`}>
           {/* <!-- https://megatags.co/#generate-tags --> */}
           <title>{t('title')}</title>
           {/* <!-- Search Engine --> */}
