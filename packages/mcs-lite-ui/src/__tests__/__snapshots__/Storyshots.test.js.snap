@@ -150,7 +150,8 @@ exports[`Storyshots API [mcs-lite-theme] [JSON] theme 1`] = `
       },
       "height": {
         "normal": "32px",
-        "small": "20px"
+        "small": "20px",
+        "header": "50px"
       },
       "mobile": {
         "maxWidth": "800px",
@@ -4796,6 +4797,154 @@ exports[`Storyshots InputRange With kind props 1`] = `
 </div>
 `;
 
+exports[`Storyshots LandingHeader API 1`] = `
+<header
+  className="LandingHeader__Container-hrLKri laiink"
+  offset={40}
+>
+  <div
+    className="LandingHeader__Fixed-bXOagm emkZvT"
+  >
+    <div>
+      Content
+    </div>
+  </div>
+</header>
+`;
+
+exports[`Storyshots LandingHeader NavItemBurger 1`] = `
+<header
+  className="LandingHeader__Container-hrLKri laiink"
+  offset={40}
+>
+  <div
+    className="LandingHeader__Fixed-bXOagm emkZvT"
+  >
+    <div
+      className="Nav__Nav-kSOSQJ ZeMyg"
+    >
+      <div
+        className="NavItem__NavItem-dDMHAW hbfMOV"
+        onClick={[Function]}
+      >
+        <p
+          className="NavItemBurger__StyledP-yFaFF ZXPSm P__P-KJbCR huqyql"
+        >
+          children
+        </p>
+        <svg
+          height={24}
+          viewBox="0 0 24 24"
+          width={24}
+        >
+          <path
+            d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"
+          />
+        </svg>
+      </div>
+    </div>
+  </div>
+</header>
+`;
+
+exports[`Storyshots LandingHeader NavItemDropdown 1`] = `
+<header
+  className="LandingHeader__Container-hrLKri laiink"
+  offset={40}
+>
+  <div
+    className="LandingHeader__Fixed-bXOagm emkZvT"
+  >
+    <div
+      className="Nav__Nav-kSOSQJ ZeMyg"
+    >
+      <div
+        className="NavItem__NavItem-dDMHAW hbfMOV"
+        onClick={[Function]}
+        onMouseOver={[Function]}
+      >
+        <p
+          className="NavItemDropdown__StyledP-bCgpbh QpnQQ P__P-KJbCR huqyql"
+        >
+          Language
+        </p>
+        <svg
+          className="NavItemDropdown__StyledIconFold-hwUBGr cGJSbX"
+          fill="currentColor"
+          height={18}
+          preserveAspectRatio="xMidYMid meet"
+          viewBox="0 0 24 24"
+          width={18}
+        >
+          <path
+            d="M7.4 9.8l4.6 4.6 4.6-4.6 1.4 1.4-6 6-6-6 1.4-1.4z"
+          />
+        </svg>
+      </div>
+    </div>
+  </div>
+</header>
+`;
+
+exports[`Storyshots LandingHeader With Nav and NavItem 1`] = `
+<header
+  className="LandingHeader__Container-hrLKri laiink"
+  offset={40}
+>
+  <div
+    className="LandingHeader__Fixed-bXOagm emkZvT"
+  >
+    <div
+      className="Nav__Nav-kSOSQJ ZeMyg"
+    >
+      <div
+        className="NavItem__NavItem-dDMHAW hbfMOV"
+      >
+        <svg
+          fill="currentColor"
+          height={24}
+          preserveAspectRatio="xMidYMid meet"
+          viewBox="0 0 24 24"
+          width={24}
+        >
+          <path
+            d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"
+          />
+        </svg>
+      </div>
+      <div
+        className="NavItem__NavItem-dDMHAW hbfMOV"
+      >
+        Nav Item 1
+      </div>
+      <div
+        className="NavItem__NavItem-dDMHAW gCvHEd"
+      >
+        Nav Item 2 (active)
+      </div>
+      <div
+        className="NavItem__NavItem-dDMHAW leRmGQ"
+      >
+        Nav Item 3 (disabled)
+      </div>
+    </div>
+  </div>
+</header>
+`;
+
+exports[`Storyshots LandingHeader With offset props 1`] = `
+<header
+  className="LandingHeader__Container-hrLKri laiink"
+  offset={160}
+>
+  <div
+    className="LandingHeader__Fixed-bXOagm emkZvT"
+  >
+    offset 160
+  </div>
+</header>
+`;
+
 exports[`Storyshots Menu API for Menu 1`] = `
 <div
   className="Menu__Menu-eXBrAE dbvbBA Card__Card-cAIRri hUtceH"
@@ -4805,10 +4954,17 @@ exports[`Storyshots Menu API for Menu 1`] = `
 `;
 
 exports[`Storyshots Menu API for MenuItem 1`] = `
-<div
-  className="MenuItem__MenuItem-jVnLzZ bzgLkk"
->
-  A
+<div>
+  <div
+    className="MenuItem__MenuItem-jVnLzZ bzgLkk"
+  >
+    div tag (default)
+  </div>
+  <a
+    className="MenuItem__MenuItem-jVnLzZ bzgLkk"
+  >
+    a Tag
+  </a>
 </div>
 `;
 
@@ -4896,6 +5052,12 @@ exports[`Storyshots Menu Fixed width 1`] = `
       />
     </svg>
   </div>
+  <a
+    className="MenuItem__MenuItem-jVnLzZ bzgLkk"
+  >
+    &lt;a&gt;
+     Tag
+  </a>
 </div>
 `;
 
@@ -5135,6 +5297,56 @@ exports[`Storyshots MobileHeader With right props 1`] = `
     </div>
   </MockPortal>
 </header>
+`;
+
+exports[`Storyshots MorphReplace API 1`] = `
+<div>
+  <svg
+    height={24}
+    viewBox="0 0 24 24"
+    width={24}
+  >
+    <path
+      d="M19.9 13v-2h-12l5.5-5.5L12 4.1 4.1 12l7.9 7.9 1.4-1.4L7.9 13h12z"
+    />
+  </svg>
+  <svg
+    height={24}
+    viewBox="0 0 24 24"
+    width={24}
+  >
+    <path
+      d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"
+    />
+  </svg>
+  <svg
+    height={24}
+    viewBox="0 0 24 24"
+    width={24}
+  >
+    <path
+      d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zm9-10h1v10h-1V9zm-4 0h2v10h-2V9zM8 9h1v10H8V9zm7.5-5l-1-1h-5l-1 1H5v2h14V4h-3.5z"
+    />
+  </svg>
+  <svg
+    height={24}
+    viewBox="0 0 24 24"
+    width={24}
+  >
+    <path
+      d="M6 6h12v12H6V6z"
+    />
+  </svg>
+  <svg
+    height={24}
+    viewBox="0 0 24 24"
+    width={24}
+  >
+    <path
+      d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"
+    />
+  </svg>
+</div>
 `;
 
 exports[`Storyshots Notification API 1`] = `
@@ -5710,6 +5922,15 @@ exports[`Storyshots Small Within <P> 1`] = `
 </div>
 `;
 
+exports[`Storyshots SpaceTop API 1`] = `
+<div
+  className="SpaceTop__SpaceTop-dnBlOM cAtjwX"
+  height={20}
+>
+  SpaceTop content
+</div>
+`;
+
 exports[`Storyshots Spin API 1`] = `
 <div
   className="Spin__Spin-cdyXhD emAbgi"
@@ -6080,6 +6301,14 @@ exports[`Storyshots Table API 1`] = `
     </tr>
   </tbody>
 </table>
+`;
+
+exports[`Storyshots TextCenter API 1`] = `
+<div
+  className="TextCenter__TextCenter-eVyHWC jhOyqM"
+>
+  Center
+</div>
 `;
 
 exports[`Storyshots Textarea API 1`] = `

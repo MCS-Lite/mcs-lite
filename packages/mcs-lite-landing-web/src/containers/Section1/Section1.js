@@ -3,9 +3,9 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { Column } from 'hedron';
 import Heading from 'mcs-lite-ui/lib/Heading';
+import SpaceTop from 'mcs-lite-ui/lib/SpaceTop';
 import SectionRow from '../../components/SectionRow';
 import { PADDING } from '../../components/SectionRow/SectionRow';
-import SpaceTop from '../../components/SpaceTop';
 import DownloadButton from '../../components/DownloadButton';
 import screen from '../../statics/images/screen.svg';
 

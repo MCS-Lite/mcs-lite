@@ -133,7 +133,9 @@ exports[`should renders <DeviceDetail> correctly when Menu show 1`] = `
               <StyledLink
                   to={[Function]}
               >
-                  <MenuItem>
+                  <MenuItem
+                      component="div"
+                  >
                       deviceIntro
                   </MenuItem>
               </StyledLink>

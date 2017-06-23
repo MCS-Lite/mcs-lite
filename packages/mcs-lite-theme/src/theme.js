@@ -25,6 +25,7 @@ const base = {
 const height = {
   normal: '32px',
   small: '20px',
+  header: '50px',
 };
 
 const fontSize = {
