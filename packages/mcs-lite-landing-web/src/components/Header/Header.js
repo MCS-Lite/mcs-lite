@@ -98,7 +98,7 @@ const Header = ({ locale, getMessages }) => {
             {/* 3. Hidden -For Prereder */}
             <HiddenForPreRenderTrick>
               {LOCALES.map(({ id, children }) =>
-                <a key={id}>
+                <a key={id} href={`/${id}`}>
                   {children}
                 </a>,
               )}

@@ -5,7 +5,7 @@ import ScrollParallax from 'rc-scroll-anim/lib/ScrollParallax';
 import { Column } from 'hedron';
 import Heading from 'mcs-lite-ui/lib/Heading';
 import TextCenter from 'mcs-lite-ui/lib/TextCenter';
-import SpaceTop from '../../components/SpaceTop';
+import SpaceTop from 'mcs-lite-ui/lib/SpaceTop';
 import SectionRow from '../../components/SectionRow';
 import DownloadButton from '../../components/DownloadButton';
 import imgSetup from '../../statics/images/img_setup.svg';

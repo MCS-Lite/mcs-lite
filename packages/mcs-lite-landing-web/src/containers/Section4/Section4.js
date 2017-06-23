@@ -9,7 +9,7 @@ import B from 'mcs-lite-ui/lib/B';
 import A from 'mcs-lite-ui/lib/A';
 import Button from 'mcs-lite-ui/lib/Button';
 import TextCenter from 'mcs-lite-ui/lib/TextCenter';
-import SpaceTop from '../../components/SpaceTop';
+import SpaceTop from 'mcs-lite-ui/lib/SpaceTop';
 import SectionRow from '../../components/SectionRow';
 import imgOpen from '../../statics/images/img_open_source.svg';
 import imgOpenCloud from '../../statics/images/img_open_source_cloud.svg';
