@@ -8018,6 +8018,12 @@ react-komposer@^2.0.0:
     react-stubber "^1.0.0"
     shallowequal "^0.2.2"
 
+react-lazyload@^2.2.7:
+  version "2.2.7"
+  resolved "https://registry.yarnpkg.com/react-lazyload/-/react-lazyload-2.2.7.tgz#6adf0713f32240a21c630ab5d1e8cf62d0c264af"
+  dependencies:
+    prop-types "^15.5.6"
+
 react-loadable@^4.0.2:
   version "4.0.2"
   resolved "https://registry.yarnpkg.com/react-loadable/-/react-loadable-4.0.2.tgz#e923a9b0d3a34d39a37311fbd365652a3c87e698"

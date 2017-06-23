@@ -6,15 +6,18 @@ import { Column } from 'hedron';
 import Heading from 'mcs-lite-ui/lib/Heading';
 import TextCenter from 'mcs-lite-ui/lib/TextCenter';
 import SpaceTop from 'mcs-lite-ui/lib/SpaceTop';
+import { lazyload } from 'react-lazyload';
 import SectionRow from '../../components/SectionRow';
 import DownloadButton from '../../components/DownloadButton';
 import imgSetupBackground from '../../statics/images/img_setup.svg';
 import SVGMachine from './SVGMachine';
 import SVGScreen from './SVGScreen';
 
+const IMAGE_HEIGHT = 170;
+
 const ImageWrapper = styled.div`
   position: relative;
-  height: 170px;
+  height: ${IMAGE_HEIGHT}px;
 
   > * {
     position: absolute;
@@ -45,7 +48,12 @@ const StyledTextCenter = styled(TextCenter)`
   overflow-x: hidden;
 `;
 
-const Image = () =>
+const Image = lazyload({
+  height: IMAGE_HEIGHT,
+  once: true,
+  throttle: 200,
+  offset: 500,
+})(() =>
   <ImageWrapper>
     <div>
       <ScrollParallax
@@ -63,7 +71,8 @@ const Image = () =>
     </div>
     <Background src={imgSetupBackground} />
     <BackgroundOverlay />
-  </ImageWrapper>;
+  </ImageWrapper>,
+);
 
 const Section5 = ({ tag, getMessages: t }) =>
   <SectionRow>

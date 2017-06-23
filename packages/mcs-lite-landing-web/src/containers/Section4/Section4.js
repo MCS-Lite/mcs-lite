@@ -10,6 +10,7 @@ import A from 'mcs-lite-ui/lib/A';
 import Button from 'mcs-lite-ui/lib/Button';
 import TextCenter from 'mcs-lite-ui/lib/TextCenter';
 import SpaceTop from 'mcs-lite-ui/lib/SpaceTop';
+import { lazyload } from 'react-lazyload';
 import SectionRow from '../../components/SectionRow';
 import imgOpenBackground from '../../statics/images/img_open_source.svg';
 import SVGCard from './SVGCard';
@@ -21,6 +22,8 @@ import SVGCloud from './SVGCloud';
 import SVGOpenCode1 from './SVGOpenCode1';
 import SVGOpenCode2 from './SVGOpenCode2';
 import SVGOpenCode3 from './SVGOpenCode3';
+
+const IMAGE_HEIGHT = 170;
 
 const StyledSectionRow = styled(SectionRow)`
   background-image: linear-gradient(-180deg, #FFFFFF 0%, #FDFDFD 47%, #FAFAFA 100%);
@@ -42,7 +45,7 @@ const CardWrapper = styled.div`
 
 const ImageWrapper = styled.div`
   position: relative;
-  height: 170px;
+  height: ${IMAGE_HEIGHT}px;
 
   > * {
     position: absolute;
@@ -62,7 +65,12 @@ const Background = styled.div`
   height: 100%;
 `;
 
-const ImageCustom = () =>
+const ImageCustom = lazyload({
+  height: IMAGE_HEIGHT,
+  once: true,
+  throttle: 200,
+  offset: 500,
+})(() =>
   <ImageWrapper>
     <Background src={imgOpenBackground} />
     <div>
@@ -97,9 +105,14 @@ const ImageCustom = () =>
         component={SVGSearch}
       />
     </div>
-  </ImageWrapper>;
+  </ImageWrapper>,
+);
 
-const ImageOpenSouce = () =>
+const ImageOpenSouce = lazyload({
+  height: IMAGE_HEIGHT,
+  once: true,
+  offset: 80,
+})(() =>
   <ImageWrapper>
     <Background src={imgCustomizationBackground} />
     <div>
@@ -135,7 +148,8 @@ const ImageOpenSouce = () =>
         component={SVGCloud}
       />
     </div>
-  </ImageWrapper>;
+  </ImageWrapper>,
+);
 
 const Section4 = ({ getMessages: t }) =>
   <StyledSectionRow>

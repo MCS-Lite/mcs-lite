@@ -75,7 +75,7 @@ class App extends React.Component {
           <meta name="og:type" content="website" />
           <meta property="og:locale" content={DEFAULT_LOCALE} />
           {LOCALES.map(({ id }) =>
-            <meta property="og:locale:alternate" content={id} />,
+            <meta key={id} property="og:locale:alternate" content={id} />,
           )}
         </Helmet>
 
