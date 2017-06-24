@@ -12,9 +12,8 @@
   "license": "MIT",
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build && react-snapshot",
+    "build": "react-scripts build && react-snapshot && ./postbuild.sh",
     "build:netlify": "REACT_APP_GA_ID='UA-58128356-6' npm run build",
-    "postbuild": "yarn run mini-sc-css",
     "mini-sc-css": "html-minifier --input-dir build --output-dir build --file-ext html --minify-css",
     "test": "CI=true react-scripts test --env=jsdom --coverage --runInBand",
     "test:watch": "react-scripts test --env=jsdom",
@@ -26,7 +25,6 @@
     "browser-locale": "^1.0.2",
     "hedron": "^0.7.1",
     "history": "^3.2.1",
-    "html-minifier" : "^3.5.2",
     "mcs-lite-icon": "^0.3.5",
     "mcs-lite-theme": "^0.3.4",
     "mcs-lite-translation": "^0.1.4",
