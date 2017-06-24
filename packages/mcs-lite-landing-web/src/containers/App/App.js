@@ -12,7 +12,7 @@ import Footer from '../../components/Footer';
 import Header from '../../components/Header';
 import messages from './messages';
 import { DEFAULT_LOCALE } from '../IntlProvider/IntlProvider';
-import { LOCALES, localeMapper } from '../../utils/localeHelper';
+import { LOCALES, localeMapper } from 'mcs-lite-ui/lib/utils/localeHelper';
 import ogImage from '../../statics/images/img_ogimage.png';
 
 const defaultLocaleMapper = localeMapper(DEFAULT_LOCALE);

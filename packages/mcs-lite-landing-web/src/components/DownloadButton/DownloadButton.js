@@ -4,7 +4,7 @@ import A from 'mcs-lite-ui/lib/A';
 import Button from 'mcs-lite-ui/lib/Button';
 import Small from 'mcs-lite-ui/lib/Small';
 import SpaceTop from 'mcs-lite-ui/lib/SpaceTop';
-import { getOSName, getFileName } from '../../utils/osHelper';
+import { getOSName, getFileName } from 'mcs-lite-ui/lib/utils/osHelper';
 
 const REPO_RELEASE_URL = 'https://github.com/MCS-Lite/mcs-lite-app/releases';
 const LATEST_RELEASE = `${REPO_RELEASE_URL}/latest`;

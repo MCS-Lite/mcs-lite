@@ -10,8 +10,11 @@ import {
   NavItemDropdown,
   NavItemBurger,
 } from 'mcs-lite-ui/lib/LandingHeader';
+import {
+  LOCALES,
+  getMCSLinkByLocale,
+} from 'mcs-lite-ui/lib/utils/localeHelper';
 import { PAGE_WIDTH } from '../../components/SectionRow/SectionRow';
-import { LOCALES, getMCSLinkByLocale } from '../../utils/localeHelper';
 import logo from '../../statics/images/logo_mcs_lite_black.svg';
 
 const StyledColumn = styled(Column)`

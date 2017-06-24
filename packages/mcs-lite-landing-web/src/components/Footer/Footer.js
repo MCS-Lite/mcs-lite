@@ -2,8 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Page, Row } from 'hedron';
 import P from 'mcs-lite-ui/lib/P';
+import getCurrentYear from 'mcs-lite-ui/lib/utils/getCurrentYear';
 import { PAGE_WIDTH } from '../../components/SectionRow/SectionRow';
-import getCurrentYear from '../../utils/getCurrentYear';
 import {
   Container,
   StyledColumn,
