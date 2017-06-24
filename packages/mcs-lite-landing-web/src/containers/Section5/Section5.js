@@ -13,7 +13,7 @@ import imgSetupBackground from '../../statics/images/img_setup.svg';
 import SVGMachine from './SVGMachine';
 import SVGScreen from './SVGScreen';
 
-const IMAGE_HEIGHT = 170;
+const IMAGE_HEIGHT = 171;
 
 const ImageWrapper = styled.div`
   position: relative;
