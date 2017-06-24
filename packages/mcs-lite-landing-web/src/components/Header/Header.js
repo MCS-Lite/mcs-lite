@@ -12,14 +12,13 @@ import {
 } from 'mcs-lite-ui/lib/LandingHeader';
 import { PAGE_WIDTH } from '../../components/SectionRow/SectionRow';
 import { LOCALES, getMCSLinkByLocale } from '../../utils/localeHelper';
-import SVGLogo from './SVGLogo';
+import logo from '../../statics/images/logo_mcs_lite_black.svg';
 
 const StyledColumn = styled(Column)`
   padding-top: 0;
   padding-bottom: 0;
   display: flex;
   justify-content: space-between;
-  align-items: center;
 `;
 
 const HiddenForPreRenderTrick = styled.div`
@@ -29,6 +28,10 @@ const HiddenForPreRenderTrick = styled.div`
 
 const StyledLink = styled(Link)`
   text-decoration: none;
+`;
+
+const LogoImage = styled.img`
+  height: 28px;
 `;
 
 const Header = ({ locale, getMessages }) => {
@@ -71,7 +74,9 @@ const Header = ({ locale, getMessages }) => {
         <Row>
           <StyledColumn xs={12}>
             {/* 0. Left - LOGO */}
-            <SVGLogo />
+            <NavItem>
+              <LogoImage src={logo} alt="logo" />
+            </NavItem>
 
             {/* 1. Right - For Mobile */}
             <Hidden sm md lg>
