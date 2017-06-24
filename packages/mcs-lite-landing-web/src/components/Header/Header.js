@@ -74,9 +74,11 @@ const Header = ({ locale, getMessages }) => {
         <Row>
           <StyledColumn xs={12}>
             {/* 0. Left - LOGO */}
-            <NavItem>
-              <LogoImage src={logo} alt="logo" />
-            </NavItem>
+            <Nav>
+              <NavItem>
+                <LogoImage src={logo} alt="logo" />
+              </NavItem>
+            </Nav>
 
             {/* 1. Right - For Mobile */}
             <Hidden sm md lg>
