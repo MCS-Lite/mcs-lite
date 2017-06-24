@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
+import Transition from 'react-motion-ui-pack';
 import ScrollParallax from 'rc-scroll-anim/lib/ScrollParallax';
 import { Row, Column } from 'hedron';
 import Heading from 'mcs-lite-ui/lib/Heading';
@@ -71,41 +72,43 @@ const ImageCustom = lazyload({
   throttle: 200,
   offset: 500,
 })(() =>
-  <ImageWrapper>
-    <Background src={imgOpenBackground} />
-    <div>
-      <ScrollParallax
-        animation={{
-          x: -105,
-          y: 85,
-          playScale: [0, 0.4],
-        }}
-        style={{ transform: 'translate(-120px, 85px)' }}
-        component={SVGTooltip}
-      />
-    </div>
-    <div>
-      <ScrollParallax
-        animation={{ y: 35, playScale: [0.1, 0.4] }}
-        style={{ transform: 'translateY(0px)' }}
-        component={SVGCode}
-      />
-    </div>
-    <div>
-      <ScrollParallax
-        animation={{ x: 80, y: 22, playScale: [0.1, 0.4] }}
-        style={{ transform: 'translate(95px, 5px)' }}
-        component={SVGCard}
-      />
-    </div>
-    <div>
-      <ScrollParallax
-        animation={{ x: 70, y: 125, playScale: [0.1, 0.4] }}
-        style={{ transform: 'translate(70px, 130px)' }}
-        component={SVGSearch}
-      />
-    </div>
-  </ImageWrapper>,
+  <Transition component={false} enter={{ opacity: 1 }} leave={{ opacity: 0 }}>
+    <ImageWrapper key="ImageWrapper">
+      <Background src={imgOpenBackground} />
+      <div>
+        <ScrollParallax
+          animation={{
+            x: -105,
+            y: 85,
+            playScale: [0, 0.4],
+          }}
+          style={{ transform: 'translate(-120px, 85px)' }}
+          component={SVGTooltip}
+        />
+      </div>
+      <div>
+        <ScrollParallax
+          animation={{ y: 35, playScale: [0.1, 0.4] }}
+          style={{ transform: 'translateY(0px)' }}
+          component={SVGCode}
+        />
+      </div>
+      <div>
+        <ScrollParallax
+          animation={{ x: 80, y: 22, playScale: [0.1, 0.4] }}
+          style={{ transform: 'translate(95px, 5px)' }}
+          component={SVGCard}
+        />
+      </div>
+      <div>
+        <ScrollParallax
+          animation={{ x: 70, y: 125, playScale: [0.1, 0.4] }}
+          style={{ transform: 'translate(70px, 130px)' }}
+          component={SVGSearch}
+        />
+      </div>
+    </ImageWrapper>
+  </Transition>,
 );
 
 const ImageOpenSouce = lazyload({
@@ -113,42 +116,44 @@ const ImageOpenSouce = lazyload({
   once: true,
   offset: 80,
 })(() =>
-  <ImageWrapper>
-    <Background src={imgCustomizationBackground} />
-    <div>
-      <ScrollParallaxCode
-        animation={{
-          x: -40,
-          y: 35,
-          rotate: -15,
-          playScale: [0.1, 0.4],
-        }}
-        style={{ transform: 'translate(-30px, 30px) rotate(0deg)' }}
-        component={SVGOpenCode1}
-      />
-    </div>
-    <div>
-      <ScrollParallaxCode
-        animation={{ x: 40, y: 35, rotate: 15, playScale: [0.1, 0.4] }}
-        style={{ transform: 'translate(30px, 30px) rotate(0deg)' }}
-        component={SVGOpenCode3}
-      />
-    </div>
-    <div>
-      <ScrollParallaxCode
-        animation={{ y: 20, playScale: [0.1, 0.4] }}
-        style={{ transform: 'translateY(25px)' }}
-        component={SVGOpenCode2}
-      />
-    </div>
-    <div>
-      <ScrollParallax
-        animation={{ y: 20, playScale: [0, 0.4] }}
-        style={{ transform: 'translateY(0px)' }}
-        component={SVGCloud}
-      />
-    </div>
-  </ImageWrapper>,
+  <Transition component={false} enter={{ opacity: 1 }} leave={{ opacity: 0 }}>
+    <ImageWrapper key="ImageWrapper">
+      <Background src={imgCustomizationBackground} />
+      <div>
+        <ScrollParallaxCode
+          animation={{
+            x: -40,
+            y: 35,
+            rotate: -15,
+            playScale: [0.1, 0.4],
+          }}
+          style={{ transform: 'translate(-30px, 30px) rotate(0deg)' }}
+          component={SVGOpenCode1}
+        />
+      </div>
+      <div>
+        <ScrollParallaxCode
+          animation={{ x: 40, y: 35, rotate: 15, playScale: [0.1, 0.4] }}
+          style={{ transform: 'translate(30px, 30px) rotate(0deg)' }}
+          component={SVGOpenCode3}
+        />
+      </div>
+      <div>
+        <ScrollParallaxCode
+          animation={{ y: 20, playScale: [0.1, 0.4] }}
+          style={{ transform: 'translateY(25px)' }}
+          component={SVGOpenCode2}
+        />
+      </div>
+      <div>
+        <ScrollParallax
+          animation={{ y: 20, playScale: [0, 0.4] }}
+          style={{ transform: 'translateY(0px)' }}
+          component={SVGCloud}
+        />
+      </div>
+    </ImageWrapper>
+  </Transition>,
 );
 
 const Section4 = ({ getMessages: t }) =>

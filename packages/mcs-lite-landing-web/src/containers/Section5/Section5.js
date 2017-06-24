@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
+import Transition from 'react-motion-ui-pack';
 import ScrollParallax from 'rc-scroll-anim/lib/ScrollParallax';
 import { Column } from 'hedron';
 import Heading from 'mcs-lite-ui/lib/Heading';
@@ -54,24 +55,26 @@ const Image = lazyload({
   throttle: 200,
   offset: 500,
 })(() =>
-  <ImageWrapper>
-    <div>
-      <ScrollParallax
-        animation={{ x: 0, y: 0, playScale: [0, 0.4] }}
-        style={{ transform: 'translate(-5px, -32px)' }}
-        component={SVGScreen}
-      />
-    </div>
-    <div>
-      <ScrollParallaxMachine
-        animation={{ rotate: 0, playScale: [0, 0.4] }}
-        style={{ transform: 'translateX(60px) rotate(15deg)' }}
-        component={SVGMachine}
-      />
-    </div>
-    <Background src={imgSetupBackground} />
-    <BackgroundOverlay />
-  </ImageWrapper>,
+  <Transition component={false} enter={{ opacity: 1 }} leave={{ opacity: 0 }}>
+    <ImageWrapper key="ImageWrapper">
+      <div>
+        <ScrollParallax
+          animation={{ x: 0, y: 0, playScale: [0, 0.4] }}
+          style={{ transform: 'translate(-5px, -32px)' }}
+          component={SVGScreen}
+        />
+      </div>
+      <div>
+        <ScrollParallaxMachine
+          animation={{ rotate: 0, playScale: [0, 0.4] }}
+          style={{ transform: 'translateX(60px) rotate(15deg)' }}
+          component={SVGMachine}
+        />
+      </div>
+      <Background src={imgSetupBackground} />
+      <BackgroundOverlay />
+    </ImageWrapper>
+  </Transition>
 );
 
 const Section5 = ({ tag, getMessages: t }) =>

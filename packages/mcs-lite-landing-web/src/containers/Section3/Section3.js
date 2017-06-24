@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { Row, Column } from 'hedron';
+import Transition from 'react-motion-ui-pack';
 import ScrollParallax from 'rc-scroll-anim/lib/ScrollParallax';
 import Heading from 'mcs-lite-ui/lib/Heading';
 import B from 'mcs-lite-ui/lib/B';
@@ -16,12 +17,6 @@ import SVGManagement from './SVGManagement';
 import SVGMobile from './SVGMobile';
 
 const IMAGE_HEIGHT = 80;
-const lazyloadProps = {
-  height: IMAGE_HEIGHT,
-  once: true,
-  throttle: 200,
-  offset: 500,
-};
 
 const ImageWrapper = styled.div`
   width: ${IMAGE_HEIGHT}px;
@@ -31,6 +26,19 @@ const ImageWrapper = styled.div`
   justify-content: center;
   border-radius: 3px;
 `;
+
+const LazyloadIcon = ({ children }) =>
+  <Lazyload height={IMAGE_HEIGHT} once throttle={200} offset={500}>
+    <Transition component={false} enter={{ opacity: 1 }} leave={{ opacity: 0 }}>
+      <ImageWrapper key="ImageWrapper">
+        {children}
+      </ImageWrapper>
+    </Transition>
+  </Lazyload>;
+LazyloadIcon.displayName = 'LazyloadIcon';
+LazyloadIcon.propTypes = {
+  children: PropTypes.node.isRequired,
+};
 
 const StyledRow = styled(Row)`
   > * {
@@ -74,11 +82,9 @@ const Section3 = ({ getMessages: t }) =>
             ]}
             style={{ opacity: 0, transform: 'translateY(-30px)' }}
           >
-            <Lazyload {...lazyloadProps}>
-              <ImageWrapper>
-                <SVGData />
-              </ImageWrapper>
-            </Lazyload>
+            <LazyloadIcon>
+              <SVGData />
+            </LazyloadIcon>
           </ScrollParallax>
           <SpaceTop height={20}>
             <Heading level={3}>
@@ -101,11 +107,9 @@ const Section3 = ({ getMessages: t }) =>
             ]}
             style={{ opacity: 0, transform: 'translateY(-30px)' }}
           >
-            <Lazyload {...lazyloadProps}>
-              <ImageWrapper>
-                <SVGRemote />
-              </ImageWrapper>
-            </Lazyload>
+            <LazyloadIcon>
+              <SVGRemote />
+            </LazyloadIcon>
           </ScrollParallax>
           <SpaceTop height={20}>
             <Heading level={3}>
@@ -128,11 +132,9 @@ const Section3 = ({ getMessages: t }) =>
             ]}
             style={{ opacity: 0, transform: 'translateY(-30px)' }}
           >
-            <Lazyload {...lazyloadProps}>
-              <ImageWrapper>
-                <SVGManagement />
-              </ImageWrapper>
-            </Lazyload>
+            <LazyloadIcon>
+              <SVGManagement />
+            </LazyloadIcon>
           </ScrollParallax>
           <SpaceTop height={20}>
             <Heading level={3}>
@@ -155,11 +157,9 @@ const Section3 = ({ getMessages: t }) =>
             ]}
             style={{ opacity: 0, transform: 'translateY(-30px)' }}
           >
-            <Lazyload {...lazyloadProps}>
-              <ImageWrapper>
-                <SVGMobile />
-              </ImageWrapper>
-            </Lazyload>
+            <LazyloadIcon>
+              <SVGMobile />
+            </LazyloadIcon>
           </ScrollParallax>
           <SpaceTop height={20}>
             <Heading level={3}>
