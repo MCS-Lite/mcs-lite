@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { withGetMessages } from 'react-intl-inject-hoc';
+import { LOCALES, localeMapper } from 'mcs-lite-ui/lib/utils/localeHelper';
 import Helmet from 'react-helmet';
 import request from 'superagent';
 import Section1 from '../Section1';
@@ -12,7 +13,6 @@ import Footer from '../../components/Footer';
 import Header from '../../components/Header';
 import messages from './messages';
 import { DEFAULT_LOCALE } from '../IntlProvider/IntlProvider';
-import { LOCALES, localeMapper } from '../../utils/localeHelper';
 import ogImage from '../../statics/images/img_ogimage.png';
 
 const defaultLocaleMapper = localeMapper(DEFAULT_LOCALE);
@@ -49,7 +49,7 @@ class App extends React.Component {
     return (
       <div>
         {/* 1. Helmet */}
-        <Helmet titleTemplate={`%s | ${t('titleTemplate')}`}>
+        <Helmet titleTemplate={`%s ${t('titleTemplate')}`}>
           {/* <!-- https://megatags.co/#generate-tags --> */}
           <title>{t('title')}</title>
           {/* <!-- Search Engine --> */}
@@ -75,7 +75,7 @@ class App extends React.Component {
           <meta name="og:type" content="website" />
           <meta property="og:locale" content={DEFAULT_LOCALE} />
           {LOCALES.map(({ id }) =>
-            <meta property="og:locale:alternate" content={id} />,
+            <meta key={id} property="og:locale:alternate" content={id} />,
           )}
         </Helmet>
 

@@ -2,26 +2,43 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { Row, Column } from 'hedron';
+import Transition from 'react-motion-ui-pack';
 import ScrollParallax from 'rc-scroll-anim/lib/ScrollParallax';
 import Heading from 'mcs-lite-ui/lib/Heading';
 import B from 'mcs-lite-ui/lib/B';
 import P from 'mcs-lite-ui/lib/P';
 import TextCenter from 'mcs-lite-ui/lib/TextCenter';
 import SpaceTop from 'mcs-lite-ui/lib/SpaceTop';
+import Lazyload from 'react-lazyload';
 import SectionRow from '../../components/SectionRow';
-import iconData from '../../statics/images/icon_data_collection.svg';
-import iconRemote from '../../statics/images/icon_remote_control.svg';
-import iconManagement from '../../statics/images/icon_management.svg';
-import iconMobile from '../../statics/images/icon_mobile_friendly.svg';
+import SVGData from './SVGData';
+import SVGRemote from './SVGRemote';
+import SVGManagement from './SVGManagement';
+import SVGMobile from './SVGMobile';
+
+const IMAGE_HEIGHT = 80;
 
 const ImageWrapper = styled.div`
-  width: 80px;
-  height: 80px;
+  width: ${IMAGE_HEIGHT}px;
+  height: ${IMAGE_HEIGHT}px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   border-radius: 3px;
 `;
+
+const LazyloadIcon = ({ children }) =>
+  <Lazyload height={IMAGE_HEIGHT} once throttle={200} offset={500}>
+    <Transition component={false} enter={{ opacity: 1 }} leave={{ opacity: 0 }}>
+      <ImageWrapper key="ImageWrapper">
+        {children}
+      </ImageWrapper>
+    </Transition>
+  </Lazyload>;
+LazyloadIcon.displayName = 'LazyloadIcon';
+LazyloadIcon.propTypes = {
+  children: PropTypes.node.isRequired,
+};
 
 const StyledRow = styled(Row)`
   > * {
@@ -55,6 +72,7 @@ const Section3 = ({ getMessages: t }) =>
     </Column>
 
     <StyledRow>
+      {/* 1. Data Collection */}
       <Column xs={6} sm={3}>
         <TextCenter>
           <ScrollParallax
@@ -64,13 +82,9 @@ const Section3 = ({ getMessages: t }) =>
             ]}
             style={{ opacity: 0, transform: 'translateY(-30px)' }}
           >
-            <ImageWrapper>
-              <img
-                src={iconData}
-                title={t('data.title')}
-                alt={t('data.desc')}
-              />
-            </ImageWrapper>
+            <LazyloadIcon>
+              <SVGData />
+            </LazyloadIcon>
           </ScrollParallax>
           <SpaceTop height={20}>
             <Heading level={3}>
@@ -83,6 +97,7 @@ const Section3 = ({ getMessages: t }) =>
         </TextCenter>
       </Column>
 
+      {/* 2. Remote Control */}
       <Column xs={6} sm={3}>
         <TextCenter>
           <ScrollParallax
@@ -92,13 +107,9 @@ const Section3 = ({ getMessages: t }) =>
             ]}
             style={{ opacity: 0, transform: 'translateY(-30px)' }}
           >
-            <ImageWrapper>
-              <img
-                src={iconRemote}
-                title={t('remote.title')}
-                alt={t('remote.desc')}
-              />
-            </ImageWrapper>
+            <LazyloadIcon>
+              <SVGRemote />
+            </LazyloadIcon>
           </ScrollParallax>
           <SpaceTop height={20}>
             <Heading level={3}>
@@ -111,6 +122,7 @@ const Section3 = ({ getMessages: t }) =>
         </TextCenter>
       </Column>
 
+      {/* 3. Management */}
       <Column xs={6} sm={3}>
         <TextCenter>
           <ScrollParallax
@@ -120,13 +132,9 @@ const Section3 = ({ getMessages: t }) =>
             ]}
             style={{ opacity: 0, transform: 'translateY(-30px)' }}
           >
-            <ImageWrapper>
-              <img
-                src={iconManagement}
-                title={t('management.title')}
-                alt={t('management.desc')}
-              />
-            </ImageWrapper>
+            <LazyloadIcon>
+              <SVGManagement />
+            </LazyloadIcon>
           </ScrollParallax>
           <SpaceTop height={20}>
             <Heading level={3}>
@@ -139,6 +147,7 @@ const Section3 = ({ getMessages: t }) =>
         </TextCenter>
       </Column>
 
+      {/* 4. Mobile */}
       <Column xs={6} sm={3}>
         <TextCenter>
           <ScrollParallax
@@ -148,13 +157,9 @@ const Section3 = ({ getMessages: t }) =>
             ]}
             style={{ opacity: 0, transform: 'translateY(-30px)' }}
           >
-            <ImageWrapper>
-              <img
-                src={iconMobile}
-                title={t('mobile.title')}
-                alt={t('mobile.desc')}
-              />
-            </ImageWrapper>
+            <LazyloadIcon>
+              <SVGMobile />
+            </LazyloadIcon>
           </ScrollParallax>
           <SpaceTop height={20}>
             <Heading level={3}>

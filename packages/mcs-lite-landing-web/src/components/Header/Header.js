@@ -10,9 +10,12 @@ import {
   NavItemDropdown,
   NavItemBurger,
 } from 'mcs-lite-ui/lib/LandingHeader';
+import {
+  LOCALES,
+  getMCSLinkByLocale,
+} from 'mcs-lite-ui/lib/utils/localeHelper';
 import { PAGE_WIDTH } from '../../components/SectionRow/SectionRow';
-import LOGO from '../../statics/images/logo_mcs_lite_black.svg';
-import { LOCALES, getMCSLinkByLocale } from '../../utils/localeHelper';
+import logo from '../../statics/images/logo_mcs_lite_black.svg';
 
 const StyledColumn = styled(Column)`
   padding-top: 0;
@@ -28,6 +31,11 @@ const HiddenForPreRenderTrick = styled.div`
 
 const StyledLink = styled(Link)`
   text-decoration: none;
+`;
+
+const LogoImage = styled.img`
+  height: 28px;
+  width: initial;
 `;
 
 const Header = ({ locale, getMessages }) => {
@@ -70,7 +78,11 @@ const Header = ({ locale, getMessages }) => {
         <Row>
           <StyledColumn xs={12}>
             {/* 0. Left - LOGO */}
-            <img src={LOGO} alt="LOGO" />
+            <Nav>
+              <NavItem>
+                <LogoImage src={logo} alt="logo" />
+              </NavItem>
+            </Nav>
 
             {/* 1. Right - For Mobile */}
             <Hidden sm md lg>

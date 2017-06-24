@@ -70,7 +70,7 @@ HandleHideNavItem.propTypes = {
 
 class NavItemBurger extends React.PureComponent {
   static propTypes = {
-    children: PropTypes.node.isRequired,
+    children: PropTypes.node,
 
     // NavItem
     items: PropTypes.arrayOf(

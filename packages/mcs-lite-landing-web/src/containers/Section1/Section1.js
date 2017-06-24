@@ -21,6 +21,11 @@ const StyledImageColumn = styled(Column)`
   align-items: flex-end;
 `;
 
+const ScreenImage = styled.img`
+  height: 500px;
+  width: initial;
+`;
+
 const Section1 = ({ tag, getMessages: t }) =>
   <StyledSectionRow>
     <Column xs={12} sm={6}>
@@ -33,7 +38,7 @@ const Section1 = ({ tag, getMessages: t }) =>
       </SpaceTop>
     </Column>
     <StyledImageColumn xs={12} sm={6}>
-      <img src={screen} alt="screen" />
+      <ScreenImage src={screen} alt="screen" />
     </StyledImageColumn>
   </StyledSectionRow>;
 
