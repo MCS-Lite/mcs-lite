@@ -1,6 +1,7 @@
 [ignore]
 # We vendor our src directory, which is not needed for type-checking
 .*/node_modules/styled-components/.*
+.*/node_modules/polished/.*
 .*/stylelint/.*.js
 .*/dangerfile.js
 .*/npm/.*
