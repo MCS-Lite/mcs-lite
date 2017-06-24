@@ -2,7 +2,6 @@
 /* eslint import/first: 0 */
 
 import './utils/rxjs';
-import 'normalize.css';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
@@ -29,9 +28,9 @@ import Language from './containers/Language';
 import RequireAuth from './containers/RequireAuth';
 import configureStore from './store/configureStore';
 import { constants } from './modules/routing';
-import './style';
+import registerServiceWorker from './utils/registerServiceWorker';
+import './utils/style';
 import './utils/i18n';
-import registerServiceWorker from './registerServiceWorker';
 
 // ----------------------------------------------------------------------------
 // 1. Constants

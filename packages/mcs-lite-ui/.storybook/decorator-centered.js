@@ -1,10 +1,13 @@
 /* eslint no-unused-expressions:0 */
+
 import React from 'react';
 import { ThemeProvider, injectGlobal } from 'styled-components';
+import normalize from 'polished/lib/mixins/normalize';
 import { theme } from 'mcs-lite-theme';
-import 'normalize.css';
 
 injectGlobal`
+  ${normalize()}
+
   html {
     font-size: ${theme.base.fontSize};
     line-height: ${theme.base.lineHeight};

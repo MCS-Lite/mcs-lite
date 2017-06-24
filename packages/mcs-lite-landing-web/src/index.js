@@ -10,10 +10,10 @@ import { BreakpointProvider } from 'hedron';
 import IntlProvider from './containers/IntlProvider';
 import { DEFAULT_LOCALE } from './containers/IntlProvider/IntlProvider';
 import App from './containers/App';
-import registerServiceWorker from './registerServiceWorker';
+import registerServiceWorker from './utils/registerServiceWorker';
 import landingTheme, { BREAKPOINTS } from './utils/landingTheme';
 import autotrack from './utils/autotrack';
-import './style';
+import './utils/style';
 import './utils/i18n';
 
 const history = useRouterHistory(createHistory)();

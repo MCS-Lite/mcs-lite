@@ -1,9 +1,12 @@
 /* eslint no-unused-expressions:0 */
 
 import { injectGlobal } from 'styled-components';
-import mobileTheme from './utils/mobileTheme';
+import normalize from 'polished/lib/mixins/normalize';
+import mobileTheme from './mobileTheme';
 
 injectGlobal`
+  ${normalize()}
+
   html {
     font-size: ${mobileTheme.base.fontSize};
     line-height: ${mobileTheme.base.lineHeight};

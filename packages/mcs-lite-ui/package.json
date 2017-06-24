@@ -59,7 +59,7 @@
     "mcs-lite-icon": "^0.3.5",
     "mcs-lite-scripts": "^0.3.5",
     "mcs-lite-theme": "^0.3.4",
-    "normalize.css": "^7.0.0",
+    "polished": "^1.2.1",
     "react": "^15.6.1",
     "react-addons-test-utils": "^15.6.0",
     "react-dom": "^15.6.1",
