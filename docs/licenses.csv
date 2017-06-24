@@ -1174,6 +1174,7 @@
 "pluralize@1.2.1","MIT","https://github.com/blakeembrey/pluralize"
 "po2json@0.4.5","GNU Library General Public License","https://github.com/mikeedwards/po2json"
 "podda@1.2.2","MIT","https://github.com/arunoda/podda"
+"polished@1.2.1","MIT","https://github.com/styled-components/polished"
 "portfinder@1.0.13","MIT","https://github.com/indexzero/node-portfinder"
 "postcss-calc@5.3.1","MIT","https://github.com/postcss/postcss-calc"
 "postcss-colormin@2.2.2","MIT","https://github.com/ben-eb/postcss-colormin"

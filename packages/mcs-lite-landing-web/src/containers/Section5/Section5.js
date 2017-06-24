@@ -74,7 +74,7 @@ const Image = lazyload({
       <Background src={imgSetupBackground} />
       <BackgroundOverlay />
     </ImageWrapper>
-  </Transition>
+  </Transition>,
 );
 
 const Section5 = ({ tag, getMessages: t }) =>

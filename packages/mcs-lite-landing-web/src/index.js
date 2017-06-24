@@ -1,6 +1,5 @@
 /* global document */
 
-import 'normalize.css';
 import React from 'react';
 import { render } from 'react-snapshot';
 import { Router, Route, useRouterHistory, IndexRedirect } from 'react-router';

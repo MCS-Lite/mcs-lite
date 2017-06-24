@@ -1,9 +1,12 @@
 /* eslint no-unused-expressions:0 */
 
 import { injectGlobal } from 'styled-components';
+import normalize from 'polished/lib/mixins/normalize';
 import theme from './utils/landingTheme';
 
 injectGlobal`
+  ${normalize()}
+
   html {
     font-size: ${theme.base.fontSize};
     line-height: ${theme.base.lineHeight};
