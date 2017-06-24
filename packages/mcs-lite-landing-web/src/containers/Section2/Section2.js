@@ -38,9 +38,9 @@ const ImageWrapper = styled.div`
   }
 `;
 
-const StyledImg = styled.img`
+const MacImage = styled.img`
   height: 100%;
-  max-width: 100%;
+  width: 100%;
 `;
 
 const Image = lazyload({
@@ -58,7 +58,7 @@ const Image = lazyload({
         transform: 'translateY(60px) scale(0.9)',
       }}
     >
-      <StyledImg src={imgMac} />
+      <MacImage src={imgMac} />
     </ScrollParallax>
   </ImageWrapper>,
 );
