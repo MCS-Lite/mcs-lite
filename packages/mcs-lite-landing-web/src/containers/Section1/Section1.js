@@ -19,6 +19,10 @@ const StyledImageColumn = styled(Column)`
   padding: 0;
   display: flex;
   align-items: flex-end;
+
+  img {
+    height: 500px;
+  }
 `;
 
 const Section1 = ({ tag, getMessages: t }) =>

@@ -51,17 +51,15 @@ const Image = lazyload({
 })(() =>
   <ImageWrapper>
     <Background src={imgIot} />
-    <div>
-      <ScrollParallax
-        animation={{ opacity: 1, y: 0, scale: 1, playScale: [0, 0.5] }}
-        style={{
-          opacity: 0.8,
-          transform: 'translateY(60px) scale(0.9)',
-        }}
-      >
-        <StyledImg src={imgMac} />
-      </ScrollParallax>
-    </div>
+    <ScrollParallax
+      animation={{ opacity: 1, y: 0, scale: 1, playScale: [0, 0.5] }}
+      style={{
+        opacity: 0.8,
+        transform: 'translateY(60px) scale(0.9)',
+      }}
+    >
+      <StyledImg src={imgMac} />
+    </ScrollParallax>
   </ImageWrapper>,
 );
 
