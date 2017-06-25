@@ -3,7 +3,7 @@
 import React from 'react';
 import { render } from 'react-snapshot';
 import { Router, Route, useRouterHistory, IndexRedirect } from 'react-router';
-import { createHistory } from 'history';
+import createHistory from 'history/lib/createBrowserHistory';
 import browserLocale from 'browser-locale';
 import { ThemeProvider } from 'styled-components';
 import { BreakpointProvider } from 'hedron';

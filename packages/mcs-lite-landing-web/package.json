@@ -45,7 +45,6 @@
     "react-scripts": "^1.0.7",
     "react-snapshot": "^1.1.0",
     "recompose": "^0.23.5",
-    "styled-components": "^2.1.0",
-    "superagent": "^3.5.2"
+    "styled-components": "^2.1.0"
   }
 }

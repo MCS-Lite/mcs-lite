@@ -1,9 +1,10 @@
+/* global fetch */
+
 import React from 'react';
 import PropTypes from 'prop-types';
 import { withGetMessages } from 'react-intl-inject-hoc';
 import { LOCALES, localeMapper } from 'mcs-lite-ui/lib/utils/localeHelper';
 import Helmet from 'react-helmet';
-import request from 'superagent';
 import Section1 from '../Section1';
 import Section2 from '../Section2';
 import Section3 from '../Section3';
@@ -36,9 +37,9 @@ class App extends React.Component {
     tag: null,
   };
   componentDidMount() {
-    request
-      .get(GITHUB_API_URL)
-      .end((err, res) => this.setState({ tag: res.body.tag_name }));
+    fetch(GITHUB_API_URL)
+      .then(res => res.json())
+      .then(res => this.setState({ tag: res.tag_name }));
   }
   render() {
     const { getMessages: t, router } = this.props;

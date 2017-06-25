@@ -12,7 +12,7 @@ import {
   IndexRedirect,
   applyRouterMiddleware,
 } from 'react-router';
-import { createHistory } from 'history';
+import createHistory from 'history/lib/createBrowserHistory';
 import useScroll from 'react-router-scroll/lib/useScroll';
 import { syncHistoryWithStore } from 'react-router-redux';
 import { ThemeProvider } from 'styled-components';
