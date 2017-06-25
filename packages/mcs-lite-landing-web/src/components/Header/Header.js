@@ -2,14 +2,13 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router';
 import { Page, Row, Column, Hidden } from 'hedron';
+import Loadable from 'react-loadable';
+import { lazyload } from 'react-lazyload';
 import styled from 'styled-components';
-import {
-  LandingHeader,
-  Nav,
-  NavItem,
-  NavItemDropdown,
-  NavItemBurger,
-} from 'mcs-lite-ui/lib/LandingHeader';
+import LandingHeader from 'mcs-lite-ui/lib/LandingHeader/LandingHeader';
+import Nav from 'mcs-lite-ui/lib/LandingHeader/Nav';
+import NavItem from 'mcs-lite-ui/lib/LandingHeader/NavItem';
+import NavItemDropdown from 'mcs-lite-ui/lib/LandingHeader/NavItemDropdown';
 import {
   LOCALES,
   getMCSLinkByLocale,
@@ -37,6 +36,16 @@ const LogoImage = styled.img`
   height: 28px;
   width: auto;
 `;
+
+const LoadableNavItemBurger = Loadable({
+  loader: () => import('mcs-lite-ui/lib/LandingHeader/NavItemBurger'),
+  loading: () => null,
+});
+const LazyLoadableNavItemBurger = lazyload({
+  once: true,
+  throttle: 200,
+  offset: 500,
+})(props => <LoadableNavItemBurger {...props} />);
 
 const Header = ({ locale, getMessages }) => {
   const linkItems = [
@@ -87,7 +96,7 @@ const Header = ({ locale, getMessages }) => {
             {/* 1. Right - For Mobile */}
             <Hidden sm md lg>
               <Nav>
-                <NavItemBurger
+                <LazyLoadableNavItemBurger
                   items={[
                     ...linkItems,
                     { key: 'Language', children: 'Language', disabled: true },

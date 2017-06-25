@@ -15,9 +15,9 @@ const Center = styled(P)`
 const LoadableCodeMirror = Loadable({
   loader: () =>
     import(
-      /* webpackChunkName: "/LoadableCodeMirror" */ 'codemirror/mode/javascript/javascript',
+      /* webpackChunkName: "LoadableCodeMirror" */ 'codemirror/mode/javascript/javascript',
     ).then(() =>
-      import(/* webpackChunkName: "/LoadableCodeMirror" */ 'react-codemirror'),
+      import(/* webpackChunkName: "LoadableCodeMirror" */ 'react-codemirror'),
     ),
   loading: () =>
     <Center color="primary"><Spin><IconLoading size={20} /></Spin></Center>,

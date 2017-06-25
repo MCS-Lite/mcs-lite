@@ -39,6 +39,7 @@
     "react-intl-inject-hoc": "^0.2.5",
     "react-intl-po": "^2.0.2",
     "react-lazyload": "^2.2.7",
+    "react-loadable": "^4.0.2",
     "react-motion-ui-pack": "^0.10.2",
     "react-router": "^3.0.2",
     "react-scripts": "^1.0.7",

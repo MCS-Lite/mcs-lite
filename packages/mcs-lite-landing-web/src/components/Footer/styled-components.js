@@ -26,7 +26,20 @@ export const IconWrapper = styled.div`
   img {
     height: 32px;
     width: 32px;
+    color: ${props => props.theme.color.white};
   }
+`;
+
+export const FakeIcon = styled.div`
+  height: 32px;
+  width: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: ${props => props.theme.color.white};
+  border-radius: 4px;
+  color: ${props => props.theme.color.black};
+  text-decoration: none;
 `;
 
 export const RWDWrapper = withBreakpoints(styled.div`
