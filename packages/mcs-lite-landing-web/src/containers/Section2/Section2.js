@@ -41,7 +41,8 @@ const ImageWrapper = styled.div`
 
 const MacImage = styled.img`
   height: 100%;
-  width: 100%;
+  width: auto;
+  max-width: 100%
 `;
 
 const Image = lazyload({

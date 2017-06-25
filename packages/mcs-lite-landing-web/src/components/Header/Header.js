@@ -35,7 +35,7 @@ const StyledLink = styled(Link)`
 
 const LogoImage = styled.img`
   height: 28px;
-  width: initial;
+  width: auto;
 `;
 
 const Header = ({ locale, getMessages }) => {
