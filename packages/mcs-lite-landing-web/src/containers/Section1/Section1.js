@@ -23,7 +23,7 @@ const StyledImageColumn = styled(Column)`
 
 const ScreenImage = styled.img`
   height: 500px;
-  width: initial;
+  width: auto;
 `;
 
 const Section1 = ({ tag, getMessages: t }) =>
