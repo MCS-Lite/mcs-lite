@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should return messages 1`] = `
+Object {
+  "Section5.title": Object {
+    "defaultMessage": "Let's get started",
+    "id": "Section5.title",
+  },
+}
+`;

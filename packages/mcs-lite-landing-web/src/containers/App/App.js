@@ -2,7 +2,6 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
-import { withGetMessages } from 'react-intl-inject-hoc';
 import { LOCALES, localeMapper } from 'mcs-lite-ui/lib/utils/localeHelper';
 import Helmet from 'react-helmet';
 import Section1 from '../Section1';
@@ -12,7 +11,6 @@ import Section4 from '../Section4';
 import Section5 from '../Section5';
 import Footer from '../../components/Footer';
 import Header from '../../components/Header';
-import messages from './messages';
 import { DEFAULT_LOCALE } from '../IntlProvider/IntlProvider';
 import ogImage from '../../statics/images/img_ogimage.png';
 
@@ -100,4 +98,4 @@ App.propTypes = {
   getMessages: PropTypes.func.isRequired,
 };
 
-export default withGetMessages(messages, 'App')(App);
+export default App;

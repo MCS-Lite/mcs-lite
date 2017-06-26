@@ -1,0 +1,109 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should renders <Section4> correctly 1`] = `
+<Styled(pure(SectionRow))>
+  <Breakpoints
+    xs={12}
+  >
+    <TextCenter>
+      <Heading
+        level={2}
+      >
+        title
+      </Heading>
+    </TextCenter>
+  </Breakpoints>
+  <Styled(RowContainer)>
+    <Breakpoints
+      sm={6}
+      xs={12}
+    >
+      <styled.div>
+        <Component />
+        <SpaceTop
+          height={20}
+        >
+          <Heading
+            level={3}
+          >
+            <B>
+              github.title
+            </B>
+          </Heading>
+        </SpaceTop>
+        <SpaceTop
+          height={10}
+        >
+          <P>
+            github.desc
+          </P>
+        </SpaceTop>
+        <A
+          color="primary"
+          href="https://github.com/MCS-Lite"
+          rel="noreferrer noopener"
+          target="_blank"
+        >
+          <Button
+            active={false}
+            block={false}
+            component="button"
+            disabled={false}
+            kind="primary"
+            round={false}
+            size="normal"
+            square={false}
+          >
+            github.button
+          </Button>
+        </A>
+      </styled.div>
+    </Breakpoints>
+    <Breakpoints
+      sm={6}
+      xs={12}
+    >
+      <styled.div>
+        <Component />
+        <SpaceTop
+          height={20}
+        >
+          <Heading
+            level={3}
+          >
+            <B>
+              custom.title
+            </B>
+          </Heading>
+        </SpaceTop>
+        <SpaceTop
+          height={10}
+        >
+          <P>
+            custom.desc
+          </P>
+        </SpaceTop>
+        <A
+          color="primary"
+          href="https://github.com/MCS-Lite/cra-boilerplate"
+          rel="noreferrer noopener"
+          target="_blank"
+        >
+          <Button
+            active={false}
+            block={false}
+            component="button"
+            disabled={false}
+            kind="primary"
+            round={false}
+            size="normal"
+            square={false}
+          >
+            custom.button
+          </Button>
+        </A>
+      </styled.div>
+    </Breakpoints>
+  </Styled(RowContainer)>
+</Styled(pure(SectionRow))>
+`;

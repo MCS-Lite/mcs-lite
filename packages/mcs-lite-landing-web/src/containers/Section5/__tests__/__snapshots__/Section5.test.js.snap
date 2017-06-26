@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should renders <Section5> correctly 1`] = `
+<pure(SectionRow)>
+  <Breakpoints
+    xs={12}
+  >
+    <Styled(TextCenter)>
+      <Heading
+        level={2}
+      >
+        title
+      </Heading>
+      <SpaceTop
+        height={40}
+      >
+        <Image />
+      </SpaceTop>
+      <SpaceTop
+        height={40}
+      >
+        <pure(InjectIntl(withPropsOnChange(DownloadButton)))
+          tag="v0.0.0"
+        />
+      </SpaceTop>
+    </Styled(TextCenter)>
+  </Breakpoints>
+</pure(SectionRow)>
+`;

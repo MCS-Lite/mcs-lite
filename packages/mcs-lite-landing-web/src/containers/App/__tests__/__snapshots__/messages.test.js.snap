@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should return messages 1`] = `
+Object {
+  "App.desc": Object {
+    "defaultMessage": "MCS Lite is designed for users who desire a dedicate IoT platform for their applications. MCS Lite can be deployed on-premises or on a publich cloud.",
+    "id": "App.desc",
+  },
+  "App.title": Object {
+    "defaultMessage": "MCS Lite",
+    "id": "App.title",
+  },
+  "App.titleTemplate": Object {
+    "defaultMessage": "| MediaTek",
+    "description": "For document title",
+    "id": "App.titleTemplate",
+  },
+}
+`;

@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should return messages 1`] = `
+Object {
+  "DownloadButton.downloadFor": Object {
+    "defaultMessage": "Download for",
+    "id": "DownloadButton.downloadFor",
+  },
+  "DownloadButton.or": Object {
+    "defaultMessage": "or",
+    "id": "DownloadButton.or",
+  },
+  "DownloadButton.others": Object {
+    "defaultMessage": "Download for other platforms",
+    "id": "DownloadButton.others",
+  },
+}
+`;

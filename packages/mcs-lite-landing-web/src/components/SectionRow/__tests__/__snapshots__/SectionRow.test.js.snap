@@ -1,0 +1,62 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should renders <SectionRow> correctly 1`] = `
+.irrVft {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.bIAnAi {
+  margin: 0 auto;
+  max-width: 100%;
+  width: 960px;
+}
+
+.jMkBSN {
+  padding: 60px 0;
+  background-color: #FFFFFF;
+}
+
+<SectionRow>
+  <styled.div>
+    <div
+      className="sc-ifAKCX jMkBSN"
+    >
+      <Styled(PageContainer)
+        width="960px"
+      >
+        <PageContainer
+          className="sc-bxivhb bIAnAi"
+          width="960px"
+        >
+          <div
+            className="sc-bxivhb bIAnAi"
+            width="960px"
+          >
+            <Styled(RowContainer)>
+              <RowContainer
+                className="sc-bwzfXH irrVft"
+                divisions={12}
+              >
+                <section
+                  className="sc-bwzfXH irrVft"
+                >
+                  children
+                </section>
+              </RowContainer>
+            </Styled(RowContainer)>
+          </div>
+        </PageContainer>
+      </Styled(PageContainer)>
+    </div>
+  </styled.div>
+</SectionRow>
+`;

@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should return messages 1`] = `
+Object {
+  "Section3.data.desc": Object {
+    "defaultMessage": "Collect and visualize data from your devices",
+    "id": "Section3.data.desc",
+  },
+  "Section3.data.title": Object {
+    "defaultMessage": "Data collection",
+    "id": "Section3.data.title",
+  },
+  "Section3.desc": Object {
+    "defaultMessage": "Start to collect data from your IoT devices and control them anytime, anywhere.",
+    "id": "Section3.desc",
+  },
+  "Section3.management.desc": Object {
+    "defaultMessage": "Manage all your connected devices",
+    "id": "Section3.management.desc",
+  },
+  "Section3.management.title": Object {
+    "defaultMessage": "Management",
+    "id": "Section3.management.title",
+  },
+  "Section3.mobile.desc": Object {
+    "defaultMessage": "Responsive Web Design for easy access on your mobile and tablet",
+    "id": "Section3.mobile.desc",
+  },
+  "Section3.mobile.title": Object {
+    "defaultMessage": "Mobile friendly",
+    "id": "Section3.mobile.title",
+  },
+  "Section3.remote.desc": Object {
+    "defaultMessage": "Control your devices from MCS Lite console",
+    "id": "Section3.remote.desc",
+  },
+  "Section3.remote.title": Object {
+    "defaultMessage": "Remote control",
+    "id": "Section3.remote.title",
+  },
+  "Section3.title": Object {
+    "defaultMessage": "Explore built-in features",
+    "id": "Section3.title",
+  },
+}
+`;

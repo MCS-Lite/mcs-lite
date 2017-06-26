@@ -1,0 +1,243 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should renders <ImageCustom> correctly 1`] = `
+<LazyloadOnce
+  component="div"
+  height={170}
+  waypointConfig={
+    Object {
+      "bottomOffset": -500,
+      "fireOnRapidScroll": true,
+      "topOffset": -500,
+    }
+  }
+>
+  <Transition
+    component={false}
+    enter={
+      Object {
+        "opacity": 1,
+      }
+    }
+    leave={
+      Object {
+        "opacity": 0,
+      }
+    }
+    onEnter={[Function]}
+    onLeave={[Function]}
+    runOnMount={true}
+  >
+    <pure(ImageLayerWrapper)
+      height={170}
+    >
+      <pure(BackgroundImage)
+        src="img_customization.svg"
+      />
+      <div>
+        <ScrollParallax
+          always={true}
+          animation={
+            Object {
+              "playScale": Array [
+                0,
+                0.4,
+              ],
+              "x": -105,
+              "y": 85,
+            }
+          }
+          component={[Function]}
+          style={
+            Object {
+              "transform": "translate(-120px, 85px)",
+            }
+          }
+        />
+      </div>
+      <div>
+        <ScrollParallax
+          always={true}
+          animation={
+            Object {
+              "playScale": Array [
+                0.1,
+                0.4,
+              ],
+              "y": 35,
+            }
+          }
+          component={[Function]}
+          style={
+            Object {
+              "transform": "translateY(0px)",
+            }
+          }
+        />
+      </div>
+      <div>
+        <ScrollParallax
+          always={true}
+          animation={
+            Object {
+              "playScale": Array [
+                0.1,
+                0.4,
+              ],
+              "x": 80,
+              "y": 22,
+            }
+          }
+          component={[Function]}
+          style={
+            Object {
+              "transform": "translate(95px, 5px)",
+            }
+          }
+        />
+      </div>
+      <div>
+        <ScrollParallax
+          always={true}
+          animation={
+            Object {
+              "playScale": Array [
+                0.1,
+                0.4,
+              ],
+              "x": 70,
+              "y": 125,
+            }
+          }
+          component={[Function]}
+          style={
+            Object {
+              "transform": "translate(70px, 130px)",
+            }
+          }
+        />
+      </div>
+    </pure(ImageLayerWrapper)>
+  </Transition>
+</LazyloadOnce>
+`;
+
+exports[`should renders <ImageOpenSouce> correctly 1`] = `
+<LazyloadOnce
+  component="div"
+  height={170}
+  waypointConfig={
+    Object {
+      "bottomOffset": -500,
+      "fireOnRapidScroll": true,
+      "topOffset": -500,
+    }
+  }
+>
+  <Transition
+    component={false}
+    enter={
+      Object {
+        "opacity": 1,
+      }
+    }
+    leave={
+      Object {
+        "opacity": 0,
+      }
+    }
+    onEnter={[Function]}
+    onLeave={[Function]}
+    runOnMount={true}
+  >
+    <pure(ImageLayerWrapper)
+      height={170}
+    >
+      <pure(BackgroundImage)
+        src="img_open_source.svg"
+      />
+      <div>
+        <Styled(ScrollParallax)
+          animation={
+            Object {
+              "playScale": Array [
+                0.1,
+                0.4,
+              ],
+              "rotate": -15,
+              "x": -40,
+              "y": 35,
+            }
+          }
+          component={[Function]}
+          style={
+            Object {
+              "transform": "translate(-30px, 30px) rotate(0deg)",
+            }
+          }
+        />
+      </div>
+      <div>
+        <Styled(ScrollParallax)
+          animation={
+            Object {
+              "playScale": Array [
+                0.1,
+                0.4,
+              ],
+              "rotate": 15,
+              "x": 40,
+              "y": 35,
+            }
+          }
+          component={[Function]}
+          style={
+            Object {
+              "transform": "translate(30px, 30px) rotate(0deg)",
+            }
+          }
+        />
+      </div>
+      <div>
+        <Styled(ScrollParallax)
+          animation={
+            Object {
+              "playScale": Array [
+                0.1,
+                0.4,
+              ],
+              "y": 20,
+            }
+          }
+          component={[Function]}
+          style={
+            Object {
+              "transform": "translateY(25px)",
+            }
+          }
+        />
+      </div>
+      <div>
+        <ScrollParallax
+          always={true}
+          animation={
+            Object {
+              "playScale": Array [
+                0,
+                0.4,
+              ],
+              "y": 20,
+            }
+          }
+          component={[Function]}
+          style={
+            Object {
+              "transform": "translateY(0px)",
+            }
+          }
+        />
+      </div>
+    </pure(ImageLayerWrapper)>
+  </Transition>
+</LazyloadOnce>
+`;

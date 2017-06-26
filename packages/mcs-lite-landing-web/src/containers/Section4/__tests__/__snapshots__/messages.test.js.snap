@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should return messages 1`] = `
+Object {
+  "Section4.custom.button": Object {
+    "defaultMessage": "Customize your UI",
+    "id": "Section4.custom.button",
+  },
+  "Section4.custom.desc": Object {
+    "defaultMessage": "Whether you want to customize the user interface, support other databases or add additional data analysis and encryption mechanism, you can directly modify the source code or use the API provided by MCS Lite to expand the functions.",
+    "id": "Section4.custom.desc",
+  },
+  "Section4.custom.title": Object {
+    "defaultMessage": "Customization",
+    "id": "Section4.custom.title",
+  },
+  "Section4.github.button": Object {
+    "defaultMessage": "Follow us on GitHub",
+    "id": "Section4.github.button",
+  },
+  "Section4.github.desc": Object {
+    "defaultMessage": "MCSLite is distributed as an open-source software under MIT license. You can use, copy, modify, merge, publish, distribute, sublicense our projects.",
+    "id": "Section4.github.desc",
+  },
+  "Section4.github.title": Object {
+    "defaultMessage": "Open Source",
+    "id": "Section4.github.title",
+  },
+  "Section4.title": Object {
+    "defaultMessage": "Extend and get creative with MCS Lite",
+    "id": "Section4.title",
+  },
+}
+`;

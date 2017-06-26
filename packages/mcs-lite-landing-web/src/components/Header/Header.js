@@ -47,7 +47,7 @@ const StyledNav = styled(Nav)`
 
 const LoadableNavItemBurger = Loadable({
   loader: () => import('mcs-lite-ui/lib/LandingHeader/NavItemBurger'),
-  loading: () => <NavItem><Spin><IconLoading size={20} /></Spin></NavItem>,
+  loading: () => <NavItem><Spin><IconLoading size={24} /></Spin></NavItem>,
 });
 
 const Header = ({ locale, getMessages }) => {

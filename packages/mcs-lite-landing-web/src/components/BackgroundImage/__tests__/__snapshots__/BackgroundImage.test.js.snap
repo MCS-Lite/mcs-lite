@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should renders <BackgroundImage> correctly 1`] = `
+.hIyCsy {
+  background-image: url("src");
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100%;
+}
+
+<BackgroundImage
+  src="src"
+>
+  <div
+    className="sc-bdVaJa hIyCsy"
+    src="src"
+  />
+</BackgroundImage>
+`;
