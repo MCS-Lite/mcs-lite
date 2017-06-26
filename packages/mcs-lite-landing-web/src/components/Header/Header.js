@@ -41,7 +41,7 @@ const LogoImage = styled.img`
 
 const StyledNav = styled(Nav)`
   ${NavItem} {
-    padding-right: 0px;
+    padding-right: 0;
   }
 `;
 

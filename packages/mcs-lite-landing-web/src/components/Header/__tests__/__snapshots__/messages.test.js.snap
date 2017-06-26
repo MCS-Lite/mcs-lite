@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should return messages 1`] = `
+Object {
+  "Header.contact": Object {
+    "defaultMessage": "Contact us",
+    "id": "Header.contact",
+  },
+  "Header.gotoMCS": Object {
+    "defaultMessage": "Go to MCS",
+    "id": "Header.gotoMCS",
+  },
+  "Header.resource": Object {
+    "defaultMessage": "Resources",
+    "id": "Header.resource",
+  },
+}
+`;
