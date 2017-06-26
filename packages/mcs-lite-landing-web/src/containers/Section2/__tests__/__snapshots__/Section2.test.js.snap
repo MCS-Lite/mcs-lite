@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should renders <Section2> correctly 1`] = `
+<Styled(pure(SectionRow))>
+  <Breakpoints
+    xs={12}
+  >
+    <TextCenter>
+      <Heading
+        level={2}
+      >
+        title
+      </Heading>
+      <SpaceTop
+        height={10}
+      >
+        <Heading
+          color="grayBase"
+          level={4}
+        >
+          desc
+        </Heading>
+      </SpaceTop>
+      <SpaceTop
+        height={40}
+      >
+        <ScrollParallax
+          always={false}
+          animation={
+            Object {
+              "opacity": 1,
+              "playScale": Array [
+                0.3,
+                0.6,
+              ],
+            }
+          }
+          component={[Function]}
+          style={
+            Object {
+              "opacity": 0,
+            }
+          }
+        />
+      </SpaceTop>
+      <SpaceTop
+        height={20}
+      >
+        <Image />
+      </SpaceTop>
+    </TextCenter>
+  </Breakpoints>
+</Styled(pure(SectionRow))>
+`;

@@ -37,6 +37,7 @@ const Section1 = ({ tag, getMessages: t }) =>
         <DownloadButton tag={tag} />
       </SpaceTop>
     </Column>
+
     <StyledImageColumn xs={12} sm={6}>
       <ScreenImage src={screen} alt="screen" />
     </StyledImageColumn>

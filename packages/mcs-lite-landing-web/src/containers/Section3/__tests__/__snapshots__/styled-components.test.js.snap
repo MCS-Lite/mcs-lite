@@ -1,0 +1,130 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render LazyloadIcon correctly 1`] = `
+<LazyloadOnce
+  component="div"
+  height={80}
+  waypointConfig={
+    Object {
+      "bottomOffset": -500,
+      "fireOnRapidScroll": true,
+      "topOffset": -500,
+    }
+  }
+>
+  <Transition
+    component={false}
+    enter={
+      Object {
+        "opacity": 1,
+      }
+    }
+    leave={
+      Object {
+        "opacity": 0,
+      }
+    }
+    onEnter={[Function]}
+    onLeave={[Function]}
+    runOnMount={true}
+  >
+    <styled.div>
+      children
+    </styled.div>
+  </Transition>
+</LazyloadOnce>
+`;
+
+exports[`should render components correctly 1`] = `
+Array [
+  .irrVft {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.ehLIEY {
+  width: 80px;
+  height: 80px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-radius: 3px;
+}
+
+.iSQhyH > *:nth-of-type(4n+1) .sc-ifAKCX {
+  background-color: #28B2E6;
+}
+
+.iSQhyH > *:nth-of-type(4n+2) .sc-ifAKCX {
+  background-color: #FEB439;
+}
+
+.iSQhyH > *:nth-of-type(4n+3) .sc-ifAKCX {
+  background-color: #36C1CA;
+}
+
+.iSQhyH > *:nth-of-type(4n) .sc-ifAKCX {
+  background-color: #FF4E84;
+}
+
+<div>
+    <styled.div>
+        <div
+            className="sc-ifAKCX ehLIEY"
+        />
+    </styled.div>
+    <Styled(Styled(RowContainer))>
+        <Styled(RowContainer)
+            className="sc-EHOje iSQhyH"
+        >
+            <RowContainer
+                className="sc-EHOje iSQhyH sc-bwzfXH irrVft"
+                divisions={12}
+            >
+                <section
+                    className="sc-EHOje iSQhyH sc-bwzfXH irrVft"
+                />
+            </RowContainer>
+        </Styled(RowContainer)>
+    </Styled(Styled(RowContainer))>
+</div>,
+  .ehLIEY {
+  width: 80px;
+  height: 80px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-radius: 3px;
+}
+
+<div
+    className="sc-ifAKCX ehLIEY"
+/>,
+]
+`;
