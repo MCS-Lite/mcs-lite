@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import { Link } from 'react-router';
 import { Page, Row, Column, Hidden } from 'hedron';
 import Loadable from 'react-loadable';
-import { lazyload } from 'react-lazyload';
 import styled from 'styled-components';
 import LandingHeader from 'mcs-lite-ui/lib/LandingHeader/LandingHeader';
 import Nav from 'mcs-lite-ui/lib/LandingHeader/Nav';
@@ -13,6 +12,7 @@ import {
   LOCALES,
   getMCSLinkByLocale,
 } from 'mcs-lite-ui/lib/utils/localeHelper';
+import Lazyload from '../../components/Lazyload';
 import { PAGE_WIDTH } from '../../components/SectionRow/SectionRow';
 import logo from '../../statics/images/logo_mcs_lite_black.svg';
 
@@ -41,11 +41,10 @@ const LoadableNavItemBurger = Loadable({
   loader: () => import('mcs-lite-ui/lib/LandingHeader/NavItemBurger'),
   loading: () => null,
 });
-const LazyLoadableNavItemBurger = lazyload({
-  once: true,
-  throttle: 200,
-  offset: 500,
-})(props => <LoadableNavItemBurger {...props} />);
+const LazyLoadableNavItemBurger = props =>
+  <Lazyload>
+    <LoadableNavItemBurger {...props} />
+  </Lazyload>;
 
 const Header = ({ locale, getMessages }) => {
   const linkItems = [

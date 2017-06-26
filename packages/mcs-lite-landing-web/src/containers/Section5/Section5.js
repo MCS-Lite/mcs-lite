@@ -7,7 +7,7 @@ import { Column } from 'hedron';
 import Heading from 'mcs-lite-ui/lib/Heading';
 import TextCenter from 'mcs-lite-ui/lib/TextCenter';
 import SpaceTop from 'mcs-lite-ui/lib/SpaceTop';
-import { lazyload } from 'react-lazyload';
+import Lazyload from '../../components/Lazyload';
 import SectionRow from '../../components/SectionRow';
 import DownloadButton from '../../components/DownloadButton';
 import imgSetupBackground from '../../statics/images/img_setup.svg';
@@ -49,33 +49,29 @@ const StyledTextCenter = styled(TextCenter)`
   overflow-x: hidden;
 `;
 
-const Image = lazyload({
-  height: IMAGE_HEIGHT,
-  once: true,
-  throttle: 200,
-  offset: 500,
-})(() =>
-  <Transition component={false} enter={{ opacity: 1 }} leave={{ opacity: 0 }}>
-    <ImageWrapper key="ImageWrapper">
-      <div>
-        <ScrollParallax
-          animation={{ x: 0, y: 0, playScale: [0, 0.4] }}
-          style={{ transform: 'translate(-5px, -32px)' }}
-          component={SVGScreen}
-        />
-      </div>
-      <div>
-        <ScrollParallaxMachine
-          animation={{ rotate: 0, playScale: [0, 0.4] }}
-          style={{ transform: 'translateX(60px) rotate(15deg)' }}
-          component={SVGMachine}
-        />
-      </div>
-      <Background src={imgSetupBackground} />
-      <BackgroundOverlay />
-    </ImageWrapper>
-  </Transition>,
-);
+const Image = () =>
+  <Lazyload height={IMAGE_HEIGHT}>
+    <Transition component={false} enter={{ opacity: 1 }} leave={{ opacity: 0 }}>
+      <ImageWrapper key="ImageWrapper">
+        <div>
+          <ScrollParallax
+            animation={{ x: 0, y: 0, playScale: [0, 0.4] }}
+            style={{ transform: 'translate(-5px, -32px)' }}
+            component={SVGScreen}
+          />
+        </div>
+        <div>
+          <ScrollParallaxMachine
+            animation={{ rotate: 0, playScale: [0, 0.4] }}
+            style={{ transform: 'translateX(60px) rotate(15deg)' }}
+            component={SVGMachine}
+          />
+        </div>
+        <Background src={imgSetupBackground} />
+        <BackgroundOverlay />
+      </ImageWrapper>
+    </Transition>
+  </Lazyload>;
 
 const Section5 = ({ tag, getMessages: t }) =>
   <SectionRow>
