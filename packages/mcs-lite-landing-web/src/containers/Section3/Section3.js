@@ -8,10 +8,10 @@ import P from 'mcs-lite-ui/lib/P';
 import TextCenter from 'mcs-lite-ui/lib/TextCenter';
 import SpaceTop from 'mcs-lite-ui/lib/SpaceTop';
 import SectionRow from '../../components/SectionRow';
-import SVGData from './SVGData';
-import SVGRemote from './SVGRemote';
-import SVGManagement from './SVGManagement';
-import SVGMobile from './SVGMobile';
+import SVGData from '../../components/SVG/SVGData';
+import SVGRemote from '../../components/SVG/SVGRemote';
+import SVGManagement from '../../components/SVG/SVGManagement';
+import SVGMobile from '../../components/SVG/SVGMobile';
 import { LazyloadIcon, StyledRow } from './styled-components';
 
 const Section3 = ({ getMessages: t }) =>

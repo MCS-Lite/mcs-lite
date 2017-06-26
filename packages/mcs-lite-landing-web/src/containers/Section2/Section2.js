@@ -5,7 +5,7 @@ import Heading from 'mcs-lite-ui/lib/Heading';
 import TextCenter from 'mcs-lite-ui/lib/TextCenter';
 import SpaceTop from 'mcs-lite-ui/lib/SpaceTop';
 import ScrollParallax from 'rc-scroll-anim/lib/ScrollParallax';
-import SVGSignal from './SVGSignal';
+import SVGSignal from '../../components/SVG/SVGSignal';
 import Image from './Image';
 import { StyledSectionRow } from './styled-components';
 
