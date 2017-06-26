@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should renders <IntlProvider> correctly 1`] = `
+<IntlProvider
+  defaultLocale="en"
+  locale="zh-TW"
+  messages={
+    Object {
+      "key": "value",
+    }
+  }
+>
+  <div>
+    children
+  </div>
+</IntlProvider>
+`;

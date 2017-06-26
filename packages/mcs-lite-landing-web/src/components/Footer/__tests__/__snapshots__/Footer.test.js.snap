@@ -25,7 +25,19 @@ exports[`should renders <Footer> correctly 1`] = `
               rel="noreferrer noopener"
               target="_blank"
             >
-              <LazyLoadableSVGFacebook />
+              <LazyloadOnce
+                component="div"
+                height={32}
+                waypointConfig={
+                  Object {
+                    "bottomOffset": -500,
+                    "fireOnRapidScroll": true,
+                    "topOffset": -500,
+                  }
+                }
+              >
+                <LoadableComponent />
+              </LazyloadOnce>
             </A>
             <A
               color="primary"
@@ -33,7 +45,19 @@ exports[`should renders <Footer> correctly 1`] = `
               rel="noreferrer noopener"
               target="_blank"
             >
-              <LazyLoadableSVGGitHub />
+              <LazyloadOnce
+                component="div"
+                height={32}
+                waypointConfig={
+                  Object {
+                    "bottomOffset": -500,
+                    "fireOnRapidScroll": true,
+                    "topOffset": -500,
+                  }
+                }
+              >
+                <LoadableComponent />
+              </LazyloadOnce>
             </A>
           </styled.div>
         </Breakpoints>

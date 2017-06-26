@@ -15,23 +15,15 @@ import {
   RWDWrapper,
 } from './styled-components';
 
+const HEIGHT = 32;
 const LoadableSVGFacebook = Loadable({
-  loader: () => import(/* webpackChunkName: "footer" */ './SVGFacebook'),
+  loader: () => import(/* webpackChunkName: "footer" */ '../SVG/SVGFacebook'),
   loading: () => <FakeIcon>Facebook</FakeIcon>,
 });
-const LazyLoadableSVGFacebook = () =>
-  <LazyloadOnce height={32}>
-    <LoadableSVGFacebook />
-  </LazyloadOnce>;
-
 const LoadableSVGGitHub = Loadable({
-  loader: () => import(/* webpackChunkName: "footer" */ './SVGGitHub'),
+  loader: () => import(/* webpackChunkName: "footer" */ '../SVG/SVGGitHub'),
   loading: () => <FakeIcon>GitHub</FakeIcon>,
 });
-const LazyLoadableSVGGitHub = () =>
-  <LazyloadOnce height={32}>
-    <LoadableSVGGitHub />
-  </LazyloadOnce>;
 
 const Footer = ({ getMessages: t }) =>
   <Container>
@@ -46,14 +38,18 @@ const Footer = ({ getMessages: t }) =>
                 target="_blank"
                 rel="noreferrer noopener"
               >
-                <LazyLoadableSVGFacebook />
+                <LazyloadOnce height={HEIGHT}>
+                  <LoadableSVGFacebook />
+                </LazyloadOnce>
               </A>
               <A
                 href="https://github.com/MCS-Lite"
                 target="_blank"
                 rel="noreferrer noopener"
               >
-                <LazyLoadableSVGGitHub />
+                <LazyloadOnce height={HEIGHT}>
+                  <LoadableSVGGitHub />
+                </LazyloadOnce>
               </A>
             </IconWrapper>
           </RWDWrapper>
