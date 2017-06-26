@@ -7,12 +7,14 @@ import styled from 'styled-components';
 import LandingHeader from 'mcs-lite-ui/lib/LandingHeader/LandingHeader';
 import Nav from 'mcs-lite-ui/lib/LandingHeader/Nav';
 import NavItem from 'mcs-lite-ui/lib/LandingHeader/NavItem';
+import IconLoading from 'mcs-lite-icon/lib/IconLoading';
+import Spin from 'mcs-lite-ui/lib/Spin';
 import NavItemDropdown from 'mcs-lite-ui/lib/LandingHeader/NavItemDropdown';
 import {
   LOCALES,
   getMCSLinkByLocale,
 } from 'mcs-lite-ui/lib/utils/localeHelper';
-import Lazyload from '../../components/Lazyload';
+import LazyloadOnce from 'mcs-lite-ui/lib/LazyloadOnce';
 import { PAGE_WIDTH } from '../../components/SectionRow/SectionRow';
 import logo from '../../statics/images/logo_mcs_lite_black.svg';
 
@@ -39,12 +41,8 @@ const LogoImage = styled.img`
 
 const LoadableNavItemBurger = Loadable({
   loader: () => import('mcs-lite-ui/lib/LandingHeader/NavItemBurger'),
-  loading: () => null,
+  loading: () => <NavItem><Spin><IconLoading size={20} /></Spin></NavItem>,
 });
-const LazyLoadableNavItemBurger = props =>
-  <Lazyload>
-    <LoadableNavItemBurger {...props} />
-  </Lazyload>;
 
 const Header = ({ locale, getMessages }) => {
   const linkItems = [
@@ -95,7 +93,8 @@ const Header = ({ locale, getMessages }) => {
             {/* 1. Right - For Mobile */}
             <Hidden sm md lg>
               <Nav>
-                <LazyLoadableNavItemBurger
+                <LazyloadOnce
+                  component={LoadableNavItemBurger}
                   items={[
                     ...linkItems,
                     { key: 'Language', children: 'Language', disabled: true },

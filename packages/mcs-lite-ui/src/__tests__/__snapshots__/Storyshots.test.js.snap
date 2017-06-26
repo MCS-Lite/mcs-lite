@@ -4945,6 +4945,51 @@ exports[`Storyshots LandingHeader With offset props 1`] = `
 </header>
 `;
 
+exports[`Storyshots LazyloadOnce API 1`] = `
+<div
+  className="LazyloadOnce-example__Wrapper-gEZAdh gemSYd"
+>
+  <div
+    style={
+      Object {
+        "height": 24,
+      }
+    }
+  >
+    <span
+      style={
+        Object {
+          "fontSize": 0,
+        }
+      }
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots LazyloadOnce With component props 1`] = `
+<div
+  className="LazyloadOnce-example__Wrapper-gEZAdh gemSYd"
+>
+  <button
+    className="Button__Button-jkHDFw hzHJoG"
+    style={
+      Object {
+        "height": 24,
+      }
+    }
+  >
+    <span
+      style={
+        Object {
+          "fontSize": 0,
+        }
+      }
+    />
+  </button>
+</div>
+`;
+
 exports[`Storyshots Menu API for Menu 1`] = `
 <div
   className="Menu__Menu-eXBrAE dbvbBA Card__Card-cAIRri hUtceH"
