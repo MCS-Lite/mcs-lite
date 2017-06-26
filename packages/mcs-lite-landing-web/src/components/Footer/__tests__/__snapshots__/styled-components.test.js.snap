@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render components correctly 1`] = `
+Array [
+  .kQXKVV {
+  height: 32px;
+  width: 32px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  color: #40494D;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+<div>
+    <styled.div>
+        <div
+            className="sc-gzVnrw kQXKVV"
+        />
+    </styled.div>
+</div>,
+  .kQXKVV {
+  height: 32px;
+  width: 32px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  color: #40494D;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+<div
+    className="sc-gzVnrw kQXKVV"
+/>,
+]
+`;

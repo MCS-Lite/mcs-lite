@@ -1,0 +1,293 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should renders <Footer> correctly 1`] = `
+.irrVft {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.mJBQx {
+  display: block;
+  box-sizing: border-box;
+  padding: 20px;
+  width: 100%;
+  width: 100%;
+}
+
+.bIAnAi {
+  margin: 0 auto;
+  max-width: 100%;
+  width: 960px;
+}
+
+.dJzTUf {
+  margin: 0;
+  font-size: 1rem;
+  color: #FFFFFF;
+}
+
+.XDMpy {
+  color: #00A1DE;
+  -webkit-transition: color cubic-bezier(0.47, 0, 0.75, 0.72) 0.3s;
+  transition: color cubic-bezier(0.47, 0, 0.75, 0.72) 0.3s;
+  cursor: pointer;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.XDMpy:hover {
+  color: rgb(0, 151, 208);
+}
+
+.XDMpy:active {
+  color: rgb(0, 144, 198);
+}
+
+.gyawhU {
+  background-color: #40494D;
+}
+
+.MMTIn {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.eHdxkj {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.eHdxkj a {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: space-between;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: space-between;
+  justify-content: space-between;
+}
+
+.eHdxkj a + a {
+  margin-left: 20px;
+}
+
+.eHdxkj img {
+  height: 32px;
+  width: 32px;
+  color: #FFFFFF;
+}
+
+.ebhPVn {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: space-between;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: space-between;
+  justify-content: space-between;
+}
+
+@media (max-width: 500px) {
+  .ebhPVn {
+    -webkit-flex-direction: column-reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+    -webkit-text-align: center;
+    text-align: center;
+  }
+
+  .ebhPVn .sc-dnqmqq {
+    margin-bottom: 5px;
+  }
+}
+
+<Footer
+  getMessages={[Function]}
+>
+  <styled.footer>
+    <footer
+      className="sc-gzVnrw gyawhU"
+    >
+      <Styled(PageContainer)
+        width="960px"
+      >
+        <PageContainer
+          className="sc-bxivhb bIAnAi"
+          width="960px"
+        >
+          <div
+            className="sc-bxivhb bIAnAi"
+            width="960px"
+          >
+            <Styled(RowContainer)>
+              <RowContainer
+                className="sc-bwzfXH irrVft"
+                divisions={12}
+              >
+                <section
+                  className="sc-bwzfXH irrVft"
+                >
+                  <Styled(Breakpoints)
+                    xs={12}
+                  >
+                    <Breakpoints
+                      className="sc-htoDjs MMTIn"
+                      xs={12}
+                    >
+                      <Styled(ColumnContainer)
+                        breakpoints={
+                          Object {
+                            "lg": 1100,
+                            "md": 768,
+                            "sm": 500,
+                          }
+                        }
+                        className="sc-htoDjs MMTIn"
+                        xs={12}
+                      >
+                        <ColumnContainer
+                          breakpoints={
+                            Object {
+                              "lg": 1100,
+                              "md": 768,
+                              "sm": 500,
+                            }
+                          }
+                          className="sc-htoDjs MMTIn sc-htpNat mJBQx"
+                          divisions={12}
+                          xs={12}
+                        >
+                          <div
+                            className="sc-htoDjs MMTIn sc-htpNat mJBQx"
+                          >
+                            <Breakpoints>
+                              <styled.div
+                                breakpoints={
+                                  Object {
+                                    "lg": 1100,
+                                    "md": 768,
+                                    "sm": 500,
+                                  }
+                                }
+                              >
+                                <div
+                                  className="sc-gZMcBi ebhPVn"
+                                >
+                                  <P
+                                    color="white"
+                                  >
+                                    <Component
+                                      className="sc-ifAKCX dJzTUf"
+                                      color="white"
+                                    >
+                                      <div
+                                        className="sc-ifAKCX dJzTUf"
+                                        color="white"
+                                      >
+                                        © 
+                                        2017
+                                         
+                                        desc
+                                      </div>
+                                    </Component>
+                                  </P>
+                                  <styled.div>
+                                    <div
+                                      className="sc-dnqmqq eHdxkj"
+                                    >
+                                      <A
+                                        color="primary"
+                                        href="https://www.facebook.com/groups/1651382875112603"
+                                        rel="noreferrer noopener"
+                                        target="_blank"
+                                      >
+                                        <a
+                                          className="sc-EHOje XDMpy"
+                                          color="primary"
+                                          href="https://www.facebook.com/groups/1651382875112603"
+                                          rel="noreferrer noopener"
+                                          target="_blank"
+                                        >
+                                          <LazyLoadableSVGFacebook>
+                                            <LazyloadOnce
+                                              component="div"
+                                              height={32}
+                                              waypointConfig={
+                                                Object {
+                                                  "bottomOffset": -500,
+                                                  "fireOnRapidScroll": true,
+                                                  "topOffset": -500,
+                                                }
+                                              }
+                                            />
+                                          </LazyLoadableSVGFacebook>
+                                        </a>
+                                      </A>
+                                      <A
+                                        color="primary"
+                                        href="https://github.com/MCS-Lite"
+                                        rel="noreferrer noopener"
+                                        target="_blank"
+                                      >
+                                        <a
+                                          className="sc-EHOje XDMpy"
+                                          color="primary"
+                                          href="https://github.com/MCS-Lite"
+                                          rel="noreferrer noopener"
+                                          target="_blank"
+                                        >
+                                          <LazyLoadableSVGGitHub>
+                                            <LazyloadOnce
+                                              component="div"
+                                              height={32}
+                                              waypointConfig={
+                                                Object {
+                                                  "bottomOffset": -500,
+                                                  "fireOnRapidScroll": true,
+                                                  "topOffset": -500,
+                                                }
+                                              }
+                                            />
+                                          </LazyLoadableSVGGitHub>
+                                        </a>
+                                      </A>
+                                    </div>
+                                  </styled.div>
+                                </div>
+                              </styled.div>
+                            </Breakpoints>
+                          </div>
+                        </ColumnContainer>
+                      </Styled(ColumnContainer)>
+                    </Breakpoints>
+                  </Styled(Breakpoints)>
+                </section>
+              </RowContainer>
+            </Styled(RowContainer)>
+          </div>
+        </PageContainer>
+      </Styled(PageContainer)>
+    </footer>
+  </styled.footer>
+</Footer>
+`;
