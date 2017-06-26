@@ -26,7 +26,7 @@ module.exports = {
 
         // Only necessary if you're server-side renderin
         ssr: false,
-        minify: false, // TODO: CI snapshot testing problem
+        minify: true, // TODO: CI snapshot testing problem
         preprocess: false,
         transpileTemplateLiterals: false,
       },
