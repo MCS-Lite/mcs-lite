@@ -7,7 +7,7 @@ import Heading from 'mcs-lite-ui/lib/Heading';
 import TextCenter from 'mcs-lite-ui/lib/TextCenter';
 import SpaceTop from 'mcs-lite-ui/lib/SpaceTop';
 import ScrollParallax from 'rc-scroll-anim/lib/ScrollParallax';
-import { lazyload } from 'react-lazyload';
+import Lazyload from '../../components/Lazyload';
 import SectionRow from '../../components/SectionRow';
 import imgMac from '../../statics/images/img_mac.svg';
 import imgIot from '../../statics/images/img_iot.svg';
@@ -45,27 +45,27 @@ const MacImage = styled.img`
   max-width: 100%;
 `;
 
-const Image = lazyload({
-  height: IMAGE_HEIGHT,
-  once: true,
-  throttle: 200,
-  offset: 500,
-})(() =>
-  <Transition component={false} enter={{ opacity: 1 }} leave={{ opacity: 0.5 }}>
-    <ImageWrapper key="ImageWrapper">
-      <Background src={imgIot} />
-      <ScrollParallax
-        animation={{ opacity: 1, y: 0, scale: 1, playScale: [0, 0.5] }}
-        style={{
-          opacity: 0.8,
-          transform: 'translateY(60px) scale(0.9)',
-        }}
-      >
-        <MacImage src={imgMac} />
-      </ScrollParallax>
-    </ImageWrapper>
-  </Transition>,
-);
+const Image = () =>
+  <Lazyload height={IMAGE_HEIGHT}>
+    <Transition
+      component={false}
+      enter={{ opacity: 1 }}
+      leave={{ opacity: 0.5 }}
+    >
+      <ImageWrapper key="ImageWrapper">
+        <Background src={imgIot} />
+        <ScrollParallax
+          animation={{ opacity: 1, y: 0, scale: 1, playScale: [0, 0.5] }}
+          style={{
+            opacity: 0.8,
+            transform: 'translateY(60px) scale(0.9)',
+          }}
+        >
+          <MacImage src={imgMac} />
+        </ScrollParallax>
+      </ImageWrapper>
+    </Transition>
+  </Lazyload>;
 
 const Section2 = ({ getMessages: t }) =>
   <StyledSectionRow>

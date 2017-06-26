@@ -25,7 +25,7 @@ const GITHUB_API_URL =
 const ogImageForTwitter =
   'https://raw.githubusercontent.com/MCS-Lite/mcs-lite/master/packages/mcs-lite-design/src/logo/img_ogimage.png';
 
-class App extends React.Component {
+class App extends React.PureComponent {
   static propTypes = {
     // React-intl I18n
     getMessages: PropTypes.func.isRequired,

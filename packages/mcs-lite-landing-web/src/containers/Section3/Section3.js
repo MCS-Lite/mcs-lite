@@ -9,7 +9,7 @@ import B from 'mcs-lite-ui/lib/B';
 import P from 'mcs-lite-ui/lib/P';
 import TextCenter from 'mcs-lite-ui/lib/TextCenter';
 import SpaceTop from 'mcs-lite-ui/lib/SpaceTop';
-import Lazyload from 'react-lazyload';
+import Lazyload from '../../components/Lazyload';
 import SectionRow from '../../components/SectionRow';
 import SVGData from './SVGData';
 import SVGRemote from './SVGRemote';
@@ -28,7 +28,7 @@ const ImageWrapper = styled.div`
 `;
 
 const LazyloadIcon = ({ children }) =>
-  <Lazyload height={IMAGE_HEIGHT} once throttle={200} offset={500}>
+  <Lazyload height={IMAGE_HEIGHT}>
     <Transition component={false} enter={{ opacity: 1 }} leave={{ opacity: 0 }}>
       <ImageWrapper key="ImageWrapper">
         {children}
