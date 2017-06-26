@@ -7,7 +7,7 @@ import { Column } from 'hedron';
 import Heading from 'mcs-lite-ui/lib/Heading';
 import TextCenter from 'mcs-lite-ui/lib/TextCenter';
 import SpaceTop from 'mcs-lite-ui/lib/SpaceTop';
-import Lazyload from '../../components/Lazyload';
+import LazyloadOnce from 'mcs-lite-ui/lib/LazyloadOnce';
 import SectionRow from '../../components/SectionRow';
 import DownloadButton from '../../components/DownloadButton';
 import imgSetupBackground from '../../statics/images/img_setup.svg';
@@ -50,7 +50,7 @@ const StyledTextCenter = styled(TextCenter)`
 `;
 
 const Image = () =>
-  <Lazyload height={IMAGE_HEIGHT}>
+  <LazyloadOnce height={IMAGE_HEIGHT}>
     <Transition component={false} enter={{ opacity: 1 }} leave={{ opacity: 0 }}>
       <ImageWrapper key="ImageWrapper">
         <div>
@@ -71,7 +71,7 @@ const Image = () =>
         <BackgroundOverlay />
       </ImageWrapper>
     </Transition>
-  </Lazyload>;
+  </LazyloadOnce>;
 
 const Section5 = ({ tag, getMessages: t }) =>
   <SectionRow>

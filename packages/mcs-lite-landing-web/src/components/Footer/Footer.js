@@ -4,8 +4,8 @@ import { Page, Row } from 'hedron';
 import Loadable from 'react-loadable';
 import P from 'mcs-lite-ui/lib/P';
 import A from 'mcs-lite-ui/lib/A';
+import LazyloadOnce from 'mcs-lite-ui/lib/LazyloadOnce';
 import getCurrentYear from 'mcs-lite-ui/lib/utils/getCurrentYear';
-import Lazyload from '../../components/Lazyload';
 import { PAGE_WIDTH } from '../../components/SectionRow/SectionRow';
 import {
   Container,
@@ -20,18 +20,18 @@ const LoadableSVGFacebook = Loadable({
   loading: () => <FakeIcon>Facebook</FakeIcon>,
 });
 const LazyLoadableSVGFacebook = () =>
-  <Lazyload height={32}>
+  <LazyloadOnce height={32}>
     <LoadableSVGFacebook />
-  </Lazyload>;
+  </LazyloadOnce>;
 
 const LoadableSVGGitHub = Loadable({
   loader: () => import(/* webpackChunkName: "footer" */ './SVGGitHub'),
   loading: () => <FakeIcon>GitHub</FakeIcon>,
 });
 const LazyLoadableSVGGitHub = () =>
-  <Lazyload height={32}>
+  <LazyloadOnce height={32}>
     <LoadableSVGGitHub />
-  </Lazyload>;
+  </LazyloadOnce>;
 
 const Footer = ({ getMessages: t }) =>
   <Container>

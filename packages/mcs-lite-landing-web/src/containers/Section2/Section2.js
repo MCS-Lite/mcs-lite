@@ -6,8 +6,8 @@ import Transition from 'react-motion-ui-pack';
 import Heading from 'mcs-lite-ui/lib/Heading';
 import TextCenter from 'mcs-lite-ui/lib/TextCenter';
 import SpaceTop from 'mcs-lite-ui/lib/SpaceTop';
+import LazyloadOnce from 'mcs-lite-ui/lib/LazyloadOnce';
 import ScrollParallax from 'rc-scroll-anim/lib/ScrollParallax';
-import Lazyload from '../../components/Lazyload';
 import SectionRow from '../../components/SectionRow';
 import imgMac from '../../statics/images/img_mac.svg';
 import imgIot from '../../statics/images/img_iot.svg';
@@ -46,7 +46,7 @@ const MacImage = styled.img`
 `;
 
 const Image = () =>
-  <Lazyload height={IMAGE_HEIGHT}>
+  <LazyloadOnce height={IMAGE_HEIGHT}>
     <Transition
       component={false}
       enter={{ opacity: 1 }}
@@ -65,7 +65,7 @@ const Image = () =>
         </ScrollParallax>
       </ImageWrapper>
     </Transition>
-  </Lazyload>;
+  </LazyloadOnce>;
 
 const Section2 = ({ getMessages: t }) =>
   <StyledSectionRow>

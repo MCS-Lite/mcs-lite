@@ -9,7 +9,7 @@ import B from 'mcs-lite-ui/lib/B';
 import P from 'mcs-lite-ui/lib/P';
 import TextCenter from 'mcs-lite-ui/lib/TextCenter';
 import SpaceTop from 'mcs-lite-ui/lib/SpaceTop';
-import Lazyload from '../../components/Lazyload';
+import LazyloadOnce from 'mcs-lite-ui/lib/LazyloadOnce';
 import SectionRow from '../../components/SectionRow';
 import SVGData from './SVGData';
 import SVGRemote from './SVGRemote';
@@ -28,13 +28,13 @@ const ImageWrapper = styled.div`
 `;
 
 const LazyloadIcon = ({ children }) =>
-  <Lazyload height={IMAGE_HEIGHT}>
+  <LazyloadOnce height={IMAGE_HEIGHT}>
     <Transition component={false} enter={{ opacity: 1 }} leave={{ opacity: 0 }}>
       <ImageWrapper key="ImageWrapper">
         {children}
       </ImageWrapper>
     </Transition>
-  </Lazyload>;
+  </LazyloadOnce>;
 LazyloadIcon.displayName = 'LazyloadIcon';
 LazyloadIcon.propTypes = {
   children: PropTypes.node.isRequired,

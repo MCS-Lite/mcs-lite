@@ -5,10 +5,20 @@ import PropTypes from 'prop-types';
 import Waypoint from 'react-waypoint';
 import rafThrottle from 'raf-throttle';
 
-class Lazyload extends React.PureComponent {
+class LazyloadOnce extends React.PureComponent {
   static propTypes = {
-    children: PropTypes.node.isRequired,
+    children: PropTypes.node,
     height: PropTypes.number,
+    component: PropTypes.oneOfType([PropTypes.string, PropTypes.func]),
+    waypointConfig: PropTypes.object,
+  };
+  static defaultProps = {
+    component: 'div',
+    waypointConfig: {
+      topOffset: -500,
+      bottomOffset: -500,
+      fireOnRapidScroll: true,
+    },
   };
   state = { isShow: false };
   shouldComponentUpdate = () => !this.state.isShow; // Once
@@ -17,24 +27,28 @@ class Lazyload extends React.PureComponent {
     if (!this.state.isShow) this.setState({ isShow: true });
   });
   render() {
-    const { children, height } = this.props;
+    const {
+      children,
+      height,
+      component: Component,
+      waypointConfig,
+      ...otherProps
+    } = this.props;
     const { isShow } = this.state;
     const { onEnter } = this;
 
     return (
-      <div style={{ height }}>
+      <Component style={{ height }} {...otherProps}>
         {isShow
           ? children
           : <Waypoint
               scrollableAncestor={window}
               onEnter={onEnter}
-              topOffset={-500}
-              bottomOffset={-500}
-              fireOnRapidScroll
+              {...waypointConfig}
             />}
-      </div>
+      </Component>
     );
   }
 }
 
-export default Lazyload;
+export default LazyloadOnce;

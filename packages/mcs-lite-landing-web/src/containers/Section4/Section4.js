@@ -11,7 +11,7 @@ import A from 'mcs-lite-ui/lib/A';
 import Button from 'mcs-lite-ui/lib/Button';
 import TextCenter from 'mcs-lite-ui/lib/TextCenter';
 import SpaceTop from 'mcs-lite-ui/lib/SpaceTop';
-import Lazyload from '../../components/Lazyload';
+import LazyloadOnce from 'mcs-lite-ui/lib/LazyloadOnce';
 import SectionRow from '../../components/SectionRow';
 import imgOpenBackground from '../../statics/images/img_open_source.svg';
 import SVGCard from './SVGCard';
@@ -67,7 +67,7 @@ const Background = styled.div`
 `;
 
 const ImageOpenSouce = () =>
-  <Lazyload height={IMAGE_HEIGHT}>
+  <LazyloadOnce height={IMAGE_HEIGHT}>
     <Transition component={false} enter={{ opacity: 1 }} leave={{ opacity: 0 }}>
       <ImageWrapper key="ImageWrapper">
         <Background src={imgOpenBackground} />
@@ -106,10 +106,10 @@ const ImageOpenSouce = () =>
         </div>
       </ImageWrapper>
     </Transition>
-  </Lazyload>;
+  </LazyloadOnce>;
 
 const ImageCustom = () =>
-  <Lazyload height={IMAGE_HEIGHT}>
+  <LazyloadOnce height={IMAGE_HEIGHT}>
     <Transition component={false} enter={{ opacity: 1 }} leave={{ opacity: 0 }}>
       <ImageWrapper key="ImageWrapper">
         <Background src={imgCustomizationBackground} />
@@ -147,7 +147,7 @@ const ImageCustom = () =>
         </div>
       </ImageWrapper>
     </Transition>
-  </Lazyload>;
+  </LazyloadOnce>;
 
 const Section4 = ({ getMessages: t }) =>
   <StyledSectionRow>
