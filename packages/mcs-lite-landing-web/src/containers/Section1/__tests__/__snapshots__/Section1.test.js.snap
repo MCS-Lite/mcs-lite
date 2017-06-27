@@ -69,7 +69,9 @@ exports[`should renders <Section1> correctly 1`] = `
             height={350}
           >
             <styled.img
+              alt="desc"
               src="img_mcs_screen.png"
+              title="title"
             />
             <LoadableComponent />
           </Breakpoints>
@@ -77,7 +79,9 @@ exports[`should renders <Section1> correctly 1`] = `
       </LazyloadOnce>
     </Breakpoints>
     <Breakpoints
+      alt="desc"
       src="img_mcs_screen.png"
+      title="title"
     />
   </Styled(Breakpoints)>
 </Styled(pure(SectionRow))>

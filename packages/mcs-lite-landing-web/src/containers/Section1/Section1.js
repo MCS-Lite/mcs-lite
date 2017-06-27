@@ -50,7 +50,11 @@ const Section1 = ({ getMessages: t, tag }) =>
             leave={{ opacity: 0 }}
           >
             <ImageLayerWrapper key="ImageLayerWrapper" height={IMAGE_HEIGHT}>
-              <BackgroundImage src={imgScreen} />
+              <BackgroundImage
+                src={imgScreen}
+                title={t('title')}
+                alt={t('desc')}
+              />
               <LoadabChart />
             </ImageLayerWrapper>
           </Transition>
@@ -58,7 +62,7 @@ const Section1 = ({ getMessages: t, tag }) =>
       </Hidden>
 
       {/* 2. Mobile */}
-      <ScreenImageMobile src={imgScreen} />
+      <ScreenImageMobile src={imgScreen} title={t('title')} alt={t('desc')} />
     </StyledImageColumn>
   </StyledSectionRow>;
 
