@@ -33,7 +33,7 @@ const StyledHeading = styled(Heading)`
   width: 68px;
   margin-left: 95px;
   margin-right: 20px;
-  margin-top: 61px;
+  margin-top: 62px;
   margin-bottom: 25px;
 `;
 
@@ -46,7 +46,7 @@ class Chart extends React.PureComponent {
       { value: 12, updatedAt: '2016-12-13 00:03' },
       { value: 23, updatedAt: '2016-12-13 00:04' },
       { value: 20, updatedAt: '2016-12-13 00:05' },
-      { value: 23, updatedAt: '2016-12-13 00:06' },
+      { value: 24.5, updatedAt: '2016-12-13 00:06' },
     ],
   };
   componentDidMount() {
@@ -77,7 +77,7 @@ class Chart extends React.PureComponent {
       <Transition
         component={false}
         enter={{ opacity: 1 }}
-        leave={{ opacity: 0.5 }}
+        leave={{ opacity: 0 }}
       >
         <Wrapper key="Wrapper">
           <StyledHeading color="primary">{last(data).value}</StyledHeading>
