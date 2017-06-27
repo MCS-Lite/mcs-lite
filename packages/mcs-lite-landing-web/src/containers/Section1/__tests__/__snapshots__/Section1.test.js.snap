@@ -1,0 +1,84 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should renders <Section1> correctly 1`] = `
+<Styled(pure(SectionRow))>
+  <Breakpoints
+    md={6}
+    xs={12}
+  >
+    <Heading
+      level={1}
+    >
+      title
+    </Heading>
+    <SpaceTop
+      height={20}
+    >
+      <Heading
+        color="grayBase"
+        level={4}
+      >
+        desc
+      </Heading>
+    </SpaceTop>
+    <SpaceTop
+      height={40}
+    >
+      <Breakpoints>
+        <pure(InjectIntl(withPropsOnChange(DownloadButton)))
+          tag="v0.0.0"
+        />
+      </Breakpoints>
+    </SpaceTop>
+  </Breakpoints>
+  <Styled(Breakpoints)
+    md={6}
+    xs={12}
+  >
+    <Breakpoints
+      xs={true}
+    >
+      <LazyloadOnce
+        component="div"
+        height={350}
+        waypointConfig={
+          Object {
+            "bottomOffset": -500,
+            "fireOnRapidScroll": true,
+            "topOffset": -500,
+          }
+        }
+      >
+        <Transition
+          component={false}
+          enter={
+            Object {
+              "opacity": 1,
+            }
+          }
+          leave={
+            Object {
+              "opacity": 0,
+            }
+          }
+          onEnter={[Function]}
+          onLeave={[Function]}
+          runOnMount={true}
+        >
+          <Breakpoints
+            height={350}
+          >
+            <styled.img
+              src="img_mcs_screen.png"
+            />
+            <LoadableComponent />
+          </Breakpoints>
+        </Transition>
+      </LazyloadOnce>
+    </Breakpoints>
+    <Breakpoints
+      src="img_mcs_screen.png"
+    />
+  </Styled(Breakpoints)>
+</Styled(pure(SectionRow))>
+`;

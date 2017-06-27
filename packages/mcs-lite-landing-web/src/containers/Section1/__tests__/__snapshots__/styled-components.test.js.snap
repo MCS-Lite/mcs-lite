@@ -1,0 +1,138 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render components correctly 1`] = `
+Array [
+  .iHyqso {
+  display: none;
+  height: auto;
+  width: 100%;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.10);
+}
+
+.hTNRWa {
+  position: relative;
+  height: px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hTNRWa > * {
+  position: absolute;
+}
+
+@media (max-width: 970px) {
+  .iaWlME {
+    -webkit-text-align: center;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .iHyqso {
+    display: block;
+  }
+}
+
+@media (max-width: 970px) {
+  .hTNRWa {
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+}
+
+<div>
+    <Breakpoints>
+        <styled.div
+            breakpoints={
+                Object {
+                    "lg": 1170,
+                    "md": 970,
+                    "sm": 768,
+                  }
+            }
+        >
+            <div
+                className="sc-bZQynM iaWlME"
+            />
+        </styled.div>
+    </Breakpoints>
+    <Breakpoints>
+        <styled.img
+            breakpoints={
+                Object {
+                    "lg": 1170,
+                    "md": 970,
+                    "sm": 768,
+                  }
+            }
+        >
+            <img
+                className="sc-htoDjs iHyqso"
+            />
+        </styled.img>
+    </Breakpoints>
+    <Breakpoints>
+        <styled.div
+            breakpoints={
+                Object {
+                    "lg": 1170,
+                    "md": 970,
+                    "sm": 768,
+                  }
+            }
+        >
+            <div
+                className="sc-dnqmqq hTNRWa"
+            />
+        </styled.div>
+    </Breakpoints>
+</div>,
+  @media (max-width: 970px) {
+  .iaWlME {
+    -webkit-text-align: center;
+    text-align: center;
+  }
+}
+
+<div
+    className="sc-bZQynM iaWlME"
+/>,
+  .hTNRWa {
+  position: relative;
+  height: px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hTNRWa > * {
+  position: absolute;
+}
+
+@media (max-width: 970px) {
+  .hTNRWa {
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+}
+
+<div
+    className="sc-dnqmqq hTNRWa"
+/>,
+]
+`;

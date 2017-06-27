@@ -1,51 +1,27 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
-import { Column, Hidden, withBreakpoints } from 'hedron';
+import { Column, Hidden } from 'hedron';
 import Heading from 'mcs-lite-ui/lib/Heading';
 import SpaceTop from 'mcs-lite-ui/lib/SpaceTop';
 import Loadable from 'react-loadable';
-import SectionRow from '../../components/SectionRow';
+import Transition from 'react-motion-ui-pack';
+import LazyloadOnce from 'mcs-lite-ui/lib/LazyloadOnce';
 import DownloadButton from '../../components/DownloadButton';
 import imgScreen from '../../statics/images/img_mcs_screen.png';
+import {
+  StyledSectionRow,
+  RWDCenterWrapper,
+  StyledImageColumn,
+  ScreenImageMobile,
+  ImageLayerWrapper,
+  BackgroundImage,
+} from './styled-components';
 
-const StyledSectionRow = styled(SectionRow)`
-  background-image: linear-gradient(-180deg, #FAFAFA 0%, #F1F2F7 100%);
-  padding-bottom: 0;
-  overflow: hidden;
-`;
+const IMAGE_HEIGHT = 350; // image = 350 * 580
 
-const RWDCenterWrapper = withBreakpoints(styled.div`
-  @media (max-width: ${props => props.breakpoints.md}px) {
-    text-align: center;
-  }
-`);
-
-const StyledImageColumn = styled(Column)`
-  padding-bottom: 0;
-`;
-
-const ScreenImageMobile = withBreakpoints(styled.img`
-  display: none;
-  height: auto;
-  width: 100%;
-  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.10);
-
-  @media (max-width: ${props => props.breakpoints.sm}px) {
-    display: block;
-  }
-`);
-
-const BackgroundImage = styled.img`
-  height: 350px;
-  width: auto;
-  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.10);
-  display: flex;
-`;
-
-const LoadableImage = Loadable({
-  loader: () => import('./Image'),
-  loading: () => <BackgroundImage src={imgScreen} />,
+const LoadabChart = Loadable({
+  loader: () => import('./Chart'),
+  loading: () => null,
 });
 
 const Section1 = ({ getMessages: t, tag }) =>
@@ -67,7 +43,18 @@ const Section1 = ({ getMessages: t, tag }) =>
     <StyledImageColumn xs={12} md={6}>
       {/* 1. Desktop */}
       <Hidden xs>
-        <LoadableImage />
+        <LazyloadOnce height={IMAGE_HEIGHT}>
+          <Transition
+            component={false}
+            enter={{ opacity: 1 }}
+            leave={{ opacity: 0 }}
+          >
+            <ImageLayerWrapper key="ImageLayerWrapper" height={IMAGE_HEIGHT}>
+              <BackgroundImage src={imgScreen} />
+              <LoadabChart />
+            </ImageLayerWrapper>
+          </Transition>
+        </LazyloadOnce>
       </Hidden>
 
       {/* 2. Mobile */}

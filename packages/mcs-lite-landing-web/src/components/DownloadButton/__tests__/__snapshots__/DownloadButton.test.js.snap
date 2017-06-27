@@ -6,20 +6,11 @@ exports[`should renders <DownloadButton> correctly 1`] = `
     color="primary"
     href="https://github.com/MCS-Lite/mcs-lite-app/releases/download/v0.0.0/michaelOS.x86.gz"
   >
-    <Button
-      active={false}
-      block={false}
-      component="button"
-      disabled={false}
-      kind="primary"
-      round={false}
-      size="normal"
-      square={false}
-    >
+    <Styled(Button)>
       downloadFor
        
       michaelOS
-    </Button>
+    </Styled(Button)>
   </A>
   <SpaceTop
     height={10}

@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should renders <Chart> correctly 1`] = `
+<styled.div>
+  <Styled(Heading)
+    color="primary"
+  >
+    23
+  </Styled(Heading)>
+  <styled.div>
+    <WithTheme(DataPointAreaChart)
+      data={
+        Array [
+          Object {
+            "updatedAt": "2016-12-13 00:00",
+            "value": 15,
+          },
+          Object {
+            "updatedAt": "2016-12-13 00:01",
+            "value": 25,
+          },
+          Object {
+            "updatedAt": "2016-12-13 00:02",
+            "value": 23,
+          },
+          Object {
+            "updatedAt": "2016-12-13 00:03",
+            "value": 12,
+          },
+          Object {
+            "updatedAt": "2016-12-13 00:04",
+            "value": 23,
+          },
+          Object {
+            "updatedAt": "2016-12-13 00:05",
+            "value": 20,
+          },
+          Object {
+            "updatedAt": "2016-12-13 00:06",
+            "value": 23,
+          },
+        ]
+      }
+      isAnimationActive={true}
+    />
+  </styled.div>
+</styled.div>
+`;
