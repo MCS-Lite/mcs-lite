@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should renders <DownloadButton> correctly 1`] = `
+<div>
+  <A
+    color="primary"
+    href="https://github.com/MCS-Lite/mcs-lite-app/releases/download/v0.0.0/michaelOS.x86.gz"
+  >
+    <Button
+      active={false}
+      block={false}
+      component="button"
+      disabled={false}
+      kind="primary"
+      round={false}
+      size="normal"
+      square={false}
+    >
+      downloadFor
+       
+      michaelOS
+    </Button>
+  </A>
+  <SpaceTop
+    height={10}
+  >
+    <Small>
+      or
+       
+      <A
+        color="primary"
+        href="https://github.com/MCS-Lite/mcs-lite-app/releases/latest"
+        rel="noreferrer noopener"
+        target="_blank"
+      >
+        others
+      </A>
+    </Small>
+  </SpaceTop>
+</div>
+`;

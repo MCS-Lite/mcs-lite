@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should return messages 1`] = `
+Object {
+  "Section1.desc": Object {
+    "defaultMessage": "MCS Lite, inspired from features of MCS online with easy-to-use user interface, is designed for users who desire dedicate IoT platform for their applications. Binaries are available in Windows, Linux and Mac OS for instant launch.",
+    "id": "Section1.desc",
+  },
+  "Section1.title": Object {
+    "defaultMessage": "Build your IoT platform with ease and flexibility",
+    "id": "Section1.title",
+  },
+}
+`;

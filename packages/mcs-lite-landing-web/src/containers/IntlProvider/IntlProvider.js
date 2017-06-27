@@ -24,7 +24,7 @@ const IntlProvider = ({ defaultLocale, router, ...otherProps }) => {
 IntlProvider.displayName = 'IntlProvider';
 IntlProvider.propTypes = {
   // Props
-  defaultLocale: PropTypes.string.isRequired,
+  defaultLocale: PropTypes.string,
 
   // React-Router HOC
   router: PropTypes.object.isRequired,

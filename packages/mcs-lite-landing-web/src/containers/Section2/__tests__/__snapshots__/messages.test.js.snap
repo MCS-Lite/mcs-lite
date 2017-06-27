@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should return messages 1`] = `
+Object {
+  "Section2.desc": Object {
+    "defaultMessage": "MCS Lite binary can be launched on your computer in one-click, you can also deploy on-premise or in the cloud with provided source code. All the options are here for your IoT applications during prototype, development and production stages.",
+    "id": "Section2.desc",
+  },
+  "Section2.title": Object {
+    "defaultMessage": "Launch MCS Lite in seconds",
+    "id": "Section2.title",
+  },
+}
+`;

@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should renders <Image> correctly 1`] = `
+<LazyloadOnce
+  component="div"
+  height={220}
+  waypointConfig={
+    Object {
+      "bottomOffset": -500,
+      "fireOnRapidScroll": true,
+      "topOffset": -500,
+    }
+  }
+>
+  <Transition
+    component={false}
+    enter={
+      Object {
+        "opacity": 1,
+      }
+    }
+    leave={
+      Object {
+        "opacity": 0.5,
+      }
+    }
+    onEnter={[Function]}
+    onLeave={[Function]}
+    runOnMount={true}
+  >
+    <pure(ImageLayerWrapper)
+      height={220}
+    >
+      <Styled(pure(BackgroundImage))
+        src="img_iot.svg"
+      />
+      <ScrollParallax
+        always={true}
+        animation={
+          Object {
+            "opacity": 1,
+            "playScale": Array [
+              0,
+              0.5,
+            ],
+            "scale": 1,
+            "y": 0,
+          }
+        }
+        component="div"
+        style={
+          Object {
+            "opacity": 0.8,
+            "transform": "translateY(60px) scale(0.9)",
+          }
+        }
+      >
+        <styled.img
+          src="img_mac.svg"
+        />
+      </ScrollParallax>
+    </pure(ImageLayerWrapper)>
+  </Transition>
+</LazyloadOnce>
+`;

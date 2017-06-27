@@ -1,0 +1,111 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should renders <App> correctly 1`] = `
+<div>
+  <HelmetWrapper
+    encodeSpecialCharacters={true}
+    titleTemplate="%s titleTemplate"
+  >
+    <title>
+      title
+    </title>
+    <meta
+      content="desc"
+      name="description"
+    />
+    <meta
+      content="img_ogimage.png"
+      name="image"
+    />
+    <meta
+      content="title"
+      itemProp="name"
+    />
+    <meta
+      content="desc"
+      itemProp="description"
+    />
+    <meta
+      content="img_ogimage.png"
+      itemProp="image"
+    />
+    <meta
+      content="summary_large_image"
+      name="twitter:card"
+    />
+    <meta
+      content="title"
+      name="twitter:title"
+    />
+    <meta
+      content="desc"
+      name="twitter:description"
+    />
+    <meta
+      content="@evenchange4"
+      name="twitter:creator"
+    />
+    <meta
+      content="https://raw.githubusercontent.com/MCS-Lite/mcs-lite/master/packages/mcs-lite-design/src/logo/img_ogimage.png"
+      name="twitter:image"
+    />
+    <meta
+      content="desc"
+      name="twitter:alt"
+    />
+    <meta
+      content="title"
+      name="og:title"
+    />
+    <meta
+      content="desc"
+      name="og:description"
+    />
+    <meta
+      content="img_ogimage.png"
+      name="og:image"
+    />
+    <meta
+      content="https://mcslite.netlify.com/"
+      name="og:url"
+    />
+    <meta
+      content="title"
+      name="og:site_name"
+    />
+    <meta
+      content="website"
+      name="og:type"
+    />
+    <meta
+      content="en"
+      property="og:locale"
+    />
+    <meta
+      content="en"
+      property="og:locale:alternate"
+    />
+    <meta
+      content="zh-TW"
+      property="og:locale:alternate"
+    />
+    <meta
+      content="zh-CN"
+      property="og:locale:alternate"
+    />
+  </HelmetWrapper>
+  <pure(InjectIntl(withPropsOnChange(Header)))
+    locale="zh-TW"
+  />
+  <pure(InjectIntl(withPropsOnChange(Section1)))
+    tag={null}
+  />
+  <pure(InjectIntl(withPropsOnChange(Section2))) />
+  <pure(InjectIntl(withPropsOnChange(Section3))) />
+  <pure(InjectIntl(withPropsOnChange(Section4))) />
+  <pure(InjectIntl(withPropsOnChange(Section5)))
+    tag={null}
+  />
+  <pure(InjectIntl(withPropsOnChange(Footer))) />
+</div>
+`;

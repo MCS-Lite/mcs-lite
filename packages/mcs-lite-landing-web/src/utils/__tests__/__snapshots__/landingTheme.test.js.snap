@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should return BREAKPOINTS 1`] = `
+Object {
+  "lg": 1170,
+  "md": 970,
+  "sm": 768,
+}
+`;
+
+exports[`should return landingTheme 1`] = `
+Object {
+  "base": Object {
+    "bodyBackgroundColor": "#F1F2F7",
+    "bodyColor": "#40494D",
+    "fontSize": "13px",
+    "lineHeight": 1.5,
+  },
+  "color": Object {
+    "black": "#40494D",
+    "default": "#FAFAFA",
+    "error": "#F5364E",
+    "grayBase": "#75868C",
+    "grayDark": "#D1D2D3",
+    "grayLight": "#FAFAFA",
+    "primary": "#00A1DE",
+    "success": "#69BE28",
+    "warning": "#F39A1E",
+    "white": "#FFFFFF",
+  },
+  "fontSize": Object {
+    "h1": "2.46rem",
+    "h2": "1.84rem",
+    "h3": "1.38rem",
+    "h4": "1.15rem",
+    "h5": "1rem",
+    "h6": "1rem",
+    "p": "1rem",
+    "small": "0.923rem",
+  },
+  "height": Object {
+    "header": "50px",
+    "normal": "32px",
+    "small": "20px",
+  },
+  "mobile": Object {
+    "headerHeight": "56px",
+    "maxWidth": "800px",
+  },
+}
+`;

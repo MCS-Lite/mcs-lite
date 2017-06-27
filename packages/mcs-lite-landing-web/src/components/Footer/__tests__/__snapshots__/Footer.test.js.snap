@@ -1,0 +1,68 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should renders <Footer> correctly 1`] = `
+<styled.footer>
+  <Styled(PageContainer)
+    width="960px"
+  >
+    <Styled(RowContainer)>
+      <Styled(Breakpoints)
+        xs={12}
+      >
+        <Breakpoints>
+          <P
+            color="white"
+          >
+            © 
+            2017
+             
+            desc
+          </P>
+          <styled.div>
+            <A
+              color="primary"
+              href="https://www.facebook.com/groups/1651382875112603"
+              rel="noreferrer noopener"
+              target="_blank"
+            >
+              <LazyloadOnce
+                component="div"
+                height={32}
+                waypointConfig={
+                  Object {
+                    "bottomOffset": -500,
+                    "fireOnRapidScroll": true,
+                    "topOffset": -500,
+                  }
+                }
+              >
+                <LoadableComponent />
+              </LazyloadOnce>
+            </A>
+            <A
+              color="primary"
+              href="https://github.com/MCS-Lite"
+              rel="noreferrer noopener"
+              target="_blank"
+            >
+              <LazyloadOnce
+                component="div"
+                height={32}
+                waypointConfig={
+                  Object {
+                    "bottomOffset": -500,
+                    "fireOnRapidScroll": true,
+                    "topOffset": -500,
+                  }
+                }
+              >
+                <LoadableComponent />
+              </LazyloadOnce>
+            </A>
+          </styled.div>
+        </Breakpoints>
+      </Styled(Breakpoints)>
+    </Styled(RowContainer)>
+  </Styled(PageContainer)>
+</styled.footer>
+`;

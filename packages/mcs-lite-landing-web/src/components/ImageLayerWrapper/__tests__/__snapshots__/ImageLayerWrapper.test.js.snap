@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should renders <ImageLayerWrapper> correctly 1`] = `
+.fKGUyV {
+  position: relative;
+  height: 24px;
+}
+
+.fKGUyV > * {
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+<ImageLayerWrapper
+  height={24}
+>
+  <div
+    className="sc-bdVaJa fKGUyV"
+    height={24}
+  />
+</ImageLayerWrapper>
+`;

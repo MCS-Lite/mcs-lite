@@ -1,0 +1,265 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should renders <Section3> correctly 1`] = `
+<pure(SectionRow)>
+  <Breakpoints
+    xs={12}
+  >
+    <TextCenter>
+      <Heading
+        level={2}
+      >
+        title
+      </Heading>
+      <SpaceTop
+        height={10}
+      >
+        <Heading
+          color="grayBase"
+          level={4}
+        >
+          desc
+        </Heading>
+      </SpaceTop>
+    </TextCenter>
+  </Breakpoints>
+  <Styled(Styled(RowContainer))>
+    <Breakpoints
+      sm={3}
+      xs={6}
+    >
+      <TextCenter>
+        <ScrollParallax
+          always={true}
+          animation={
+            Array [
+              Object {
+                "opacity": 1,
+                "playScale": Array [
+                  0,
+                  0.4,
+                ],
+                "y": 10,
+              },
+              Object {
+                "opacity": 1,
+                "playScale": Array [
+                  0.4,
+                  0.5,
+                ],
+                "y": 0,
+              },
+            ]
+          }
+          component="div"
+          style={
+            Object {
+              "opacity": 0,
+              "transform": "translateY(-30px)",
+            }
+          }
+        >
+          <LazyloadIcon>
+            <SVGData />
+          </LazyloadIcon>
+        </ScrollParallax>
+        <SpaceTop
+          height={20}
+        >
+          <Heading
+            level={3}
+          >
+            <B>
+              data.title
+            </B>
+          </Heading>
+        </SpaceTop>
+        <SpaceTop
+          height={10}
+        >
+          <P>
+            data.desc
+          </P>
+        </SpaceTop>
+      </TextCenter>
+    </Breakpoints>
+    <Breakpoints
+      sm={3}
+      xs={6}
+    >
+      <TextCenter>
+        <ScrollParallax
+          always={true}
+          animation={
+            Array [
+              Object {
+                "opacity": 1,
+                "playScale": Array [
+                  0,
+                  0.4,
+                ],
+                "y": 10,
+              },
+              Object {
+                "opacity": 1,
+                "playScale": Array [
+                  0.4,
+                  0.5,
+                ],
+                "y": 0,
+              },
+            ]
+          }
+          component="div"
+          style={
+            Object {
+              "opacity": 0,
+              "transform": "translateY(-30px)",
+            }
+          }
+        >
+          <LazyloadIcon>
+            <SVGRemote />
+          </LazyloadIcon>
+        </ScrollParallax>
+        <SpaceTop
+          height={20}
+        >
+          <Heading
+            level={3}
+          >
+            <B>
+              remote.title
+            </B>
+          </Heading>
+        </SpaceTop>
+        <SpaceTop
+          height={10}
+        >
+          <P>
+            remote.desc
+          </P>
+        </SpaceTop>
+      </TextCenter>
+    </Breakpoints>
+    <Breakpoints
+      sm={3}
+      xs={6}
+    >
+      <TextCenter>
+        <ScrollParallax
+          always={true}
+          animation={
+            Array [
+              Object {
+                "opacity": 1,
+                "playScale": Array [
+                  0,
+                  0.4,
+                ],
+                "y": 10,
+              },
+              Object {
+                "opacity": 1,
+                "playScale": Array [
+                  0.4,
+                  0.5,
+                ],
+                "y": 0,
+              },
+            ]
+          }
+          component="div"
+          style={
+            Object {
+              "opacity": 0,
+              "transform": "translateY(-30px)",
+            }
+          }
+        >
+          <LazyloadIcon>
+            <SVGManagement />
+          </LazyloadIcon>
+        </ScrollParallax>
+        <SpaceTop
+          height={20}
+        >
+          <Heading
+            level={3}
+          >
+            <B>
+              management.title
+            </B>
+          </Heading>
+        </SpaceTop>
+        <SpaceTop
+          height={10}
+        >
+          <P>
+            management.desc
+          </P>
+        </SpaceTop>
+      </TextCenter>
+    </Breakpoints>
+    <Breakpoints
+      sm={3}
+      xs={6}
+    >
+      <TextCenter>
+        <ScrollParallax
+          always={true}
+          animation={
+            Array [
+              Object {
+                "opacity": 1,
+                "playScale": Array [
+                  0,
+                  0.4,
+                ],
+                "y": 10,
+              },
+              Object {
+                "opacity": 1,
+                "playScale": Array [
+                  0.4,
+                  0.5,
+                ],
+                "y": 0,
+              },
+            ]
+          }
+          component="div"
+          style={
+            Object {
+              "opacity": 0,
+              "transform": "translateY(-30px)",
+            }
+          }
+        >
+          <LazyloadIcon>
+            <SVGMobile />
+          </LazyloadIcon>
+        </ScrollParallax>
+        <SpaceTop
+          height={20}
+        >
+          <Heading
+            level={3}
+          >
+            <B>
+              mobile.title
+            </B>
+          </Heading>
+        </SpaceTop>
+        <SpaceTop
+          height={10}
+        >
+          <P>
+            mobile.desc
+          </P>
+        </SpaceTop>
+      </TextCenter>
+    </Breakpoints>
+  </Styled(Styled(RowContainer))>
+</pure(SectionRow)>
+`;

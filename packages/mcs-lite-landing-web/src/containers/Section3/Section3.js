@@ -1,64 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
-import { Row, Column } from 'hedron';
-import Transition from 'react-motion-ui-pack';
+import { Column } from 'hedron';
 import ScrollParallax from 'rc-scroll-anim/lib/ScrollParallax';
 import Heading from 'mcs-lite-ui/lib/Heading';
 import B from 'mcs-lite-ui/lib/B';
 import P from 'mcs-lite-ui/lib/P';
 import TextCenter from 'mcs-lite-ui/lib/TextCenter';
 import SpaceTop from 'mcs-lite-ui/lib/SpaceTop';
-import LazyloadOnce from 'mcs-lite-ui/lib/LazyloadOnce';
 import SectionRow from '../../components/SectionRow';
-import SVGData from './SVGData';
-import SVGRemote from './SVGRemote';
-import SVGManagement from './SVGManagement';
-import SVGMobile from './SVGMobile';
-
-const IMAGE_HEIGHT = 80;
-
-const ImageWrapper = styled.div`
-  width: ${IMAGE_HEIGHT}px;
-  height: ${IMAGE_HEIGHT}px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 3px;
-`;
-
-const LazyloadIcon = ({ children }) =>
-  <LazyloadOnce height={IMAGE_HEIGHT}>
-    <Transition component={false} enter={{ opacity: 1 }} leave={{ opacity: 0 }}>
-      <ImageWrapper key="ImageWrapper">
-        {children}
-      </ImageWrapper>
-    </Transition>
-  </LazyloadOnce>;
-LazyloadIcon.displayName = 'LazyloadIcon';
-LazyloadIcon.propTypes = {
-  children: PropTypes.node.isRequired,
-};
-
-const StyledRow = styled(Row)`
-  > * {
-    &:nth-of-type(4n+1) ${ImageWrapper} {
-      background-color: #28B2E6;
-    }
-
-    &:nth-of-type(4n+2) ${ImageWrapper} {
-      background-color: #FEB439;
-    }
-
-    &:nth-of-type(4n+3) ${ImageWrapper} {
-      background-color: #36C1CA;
-    }
-
-    &:nth-of-type(4n) ${ImageWrapper} {
-      background-color: #FF4E84;
-    }
-  }
-`;
+import SVGData from '../../components/SVG/SVGData';
+import SVGRemote from '../../components/SVG/SVGRemote';
+import SVGManagement from '../../components/SVG/SVGManagement';
+import SVGMobile from '../../components/SVG/SVGMobile';
+import { LazyloadIcon, StyledRow } from './styled-components';
 
 const Section3 = ({ getMessages: t }) =>
   <SectionRow>

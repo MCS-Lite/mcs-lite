@@ -39,9 +39,15 @@ const LogoImage = styled.img`
   width: auto;
 `;
 
+const StyledNav = styled(Nav)`
+  ${NavItem} {
+    padding-right: 0;
+  }
+`;
+
 const LoadableNavItemBurger = Loadable({
   loader: () => import('mcs-lite-ui/lib/LandingHeader/NavItemBurger'),
-  loading: () => <NavItem><Spin><IconLoading size={20} /></Spin></NavItem>,
+  loading: () => <NavItem><Spin><IconLoading size={24} /></Spin></NavItem>,
 });
 
 const Header = ({ locale, getMessages }) => {
@@ -92,19 +98,20 @@ const Header = ({ locale, getMessages }) => {
 
             {/* 1. Right - For Mobile */}
             <Hidden sm md lg>
-              <Nav>
-                <LazyloadOnce
-                  component={LoadableNavItemBurger}
-                  items={[
-                    ...linkItems,
-                    { key: 'Language', children: 'Language', disabled: true },
-                    ...languageItems,
-                  ]}
-                  data-ga-on="click"
-                  data-ga-event-category="Mobile NavItemBurger menu"
-                  data-ga-event-action="click"
-                />
-              </Nav>
+              <StyledNav>
+                <LazyloadOnce>
+                  <LoadableNavItemBurger
+                    items={[
+                      ...linkItems,
+                      { key: 'Language', children: 'Language', disabled: true },
+                      ...languageItems,
+                    ]}
+                    data-ga-on="click"
+                    data-ga-event-category="Mobile NavItemBurger menu"
+                    data-ga-event-action="click"
+                  />
+                </LazyloadOnce>
+              </StyledNav>
             </Hidden>
 
             {/* 2. Right - For Desktop */}
