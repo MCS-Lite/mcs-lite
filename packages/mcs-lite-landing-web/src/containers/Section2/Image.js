@@ -9,8 +9,14 @@ import imgIot from '../../statics/images/img_iot.svg';
 
 const HEIGHT = 220;
 
+const waypointConfig = {
+  topOffset: -300,
+  bottomOffset: -300,
+  fireOnRapidScroll: true,
+};
+
 const Image = () =>
-  <LazyloadOnce height={HEIGHT}>
+  <LazyloadOnce height={HEIGHT} waypointConfig={waypointConfig}>
     <Transition
       component={false}
       enter={{ opacity: 1 }}

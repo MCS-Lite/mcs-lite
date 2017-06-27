@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styled from 'styled-components';
 import A from 'mcs-lite-ui/lib/A';
 import Button from 'mcs-lite-ui/lib/Button';
 import Small from 'mcs-lite-ui/lib/Small';
@@ -11,6 +12,10 @@ const LATEST_RELEASE = `${REPO_RELEASE_URL}/latest`;
 const getDownloadLink = (tag, fileName) =>
   tag ? `${REPO_RELEASE_URL}/download/${tag}/${fileName}` : REPO_RELEASE_URL;
 
+const StyledButton = styled(Button)`
+  width: 220px;
+`;
+
 const DownloadButton = ({ tag, getMessages: t }) => {
   const osName = getOSName();
   const fileName = getFileName();
@@ -18,10 +23,11 @@ const DownloadButton = ({ tag, getMessages: t }) => {
   return (
     <div>
       <A href={getDownloadLink(tag, fileName)}>
-        <Button>
+        <StyledButton>
           {t('downloadFor')} {osName}
-        </Button>
+        </StyledButton>
       </A>
+
       <SpaceTop height={10}>
         <Small>
           {t('or')}&nbsp;

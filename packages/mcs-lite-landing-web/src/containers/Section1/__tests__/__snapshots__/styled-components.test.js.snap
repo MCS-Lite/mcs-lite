@@ -1,0 +1,100 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render components correctly 1`] = `
+Array [
+  .cwsUEf {
+  display: none;
+  height: auto;
+  width: 100%;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.1);
+}
+
+.hEgnZI {
+  position: relative;
+  height: px;
+}
+
+.hEgnZI > * {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+@media (max-width: 970px) {
+  .eZeFAD {
+    -webkit-text-align: center;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .cwsUEf {
+    display: block;
+  }
+}
+
+<div>
+    <Breakpoints>
+        <styled.div
+            breakpoints={
+                Object {
+                    "lg": 1170,
+                    "md": 970,
+                    "sm": 768,
+                  }
+            }
+        >
+            <div
+                className="sc-bZQynM eZeFAD"
+            />
+        </styled.div>
+    </Breakpoints>
+    <Breakpoints>
+        <styled.img
+            breakpoints={
+                Object {
+                    "lg": 1170,
+                    "md": 970,
+                    "sm": 768,
+                  }
+            }
+        >
+            <img
+                className="sc-htoDjs cwsUEf"
+            />
+        </styled.img>
+    </Breakpoints>
+    <styled.div>
+        <div
+            className="sc-dnqmqq hEgnZI"
+        />
+    </styled.div>
+</div>,
+  @media (max-width: 970px) {
+  .eZeFAD {
+    -webkit-text-align: center;
+    text-align: center;
+  }
+}
+
+<div
+    className="sc-bZQynM eZeFAD"
+/>,
+  .hEgnZI {
+  position: relative;
+  height: px;
+}
+
+.hEgnZI > * {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+<div
+    className="sc-dnqmqq hEgnZI"
+/>,
+]
+`;
