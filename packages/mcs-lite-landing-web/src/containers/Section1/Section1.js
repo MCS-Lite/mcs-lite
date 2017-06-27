@@ -6,7 +6,9 @@ import SpaceTop from 'mcs-lite-ui/lib/SpaceTop';
 import Loadable from 'react-loadable';
 import LazyloadOnce from 'mcs-lite-ui/lib/LazyloadOnce';
 import DownloadButton from '../../components/DownloadButton';
-import imgScreen from '../../statics/images/img_mcs_screen.png';
+import imgScreen from '../../statics/images/img_mcs_screen_empty.png';
+import imgScreenEmpty from '../../statics/images/img_mcs_screen_empty.png';
+import imgScreenEmptyX60 from '../../statics/images/img_mcs_screen_emptyX60.png';
 import {
   StyledSectionRow,
   RWDCenterWrapper,
@@ -48,9 +50,8 @@ const Section1 = ({ getMessages: t, tag }) =>
           <ImageLayerWrapper key="ImageLayerWrapper" height={IMAGE_HEIGHT}>
             <BackgroundImageWrapper>
               <BackgroundImage
-                src={imgScreen}
-                title={t('title')}
-                alt={t('desc')}
+                src={imgScreenEmpty}
+                placeholder={imgScreenEmptyX60}
               />
             </BackgroundImageWrapper>
             <ChartWrapper>

@@ -45,6 +45,7 @@
     "react-intl-po": "^2.0.2",
     "react-loadable": "^4.0.3",
     "react-motion-ui-pack": "^0.10.3",
+    "react-progressive-bg-image": "^1.1.1",
     "react-router": "^3.0.2",
     "react-scripts": "^1.0.7",
     "react-snapshot": "^1.1.0",
