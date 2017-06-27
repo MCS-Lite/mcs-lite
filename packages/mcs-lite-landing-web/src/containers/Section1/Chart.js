@@ -23,15 +23,15 @@ const Wrapper = styled.div`
 const ChartWrapper = styled.div`
   width: 420px;
   height: 120px;
-  transform: translateY(30px);
-  margin-left: 33px;
+  transform: translateY(29px);
+  margin-left: 31px;
 `;
 
 const StyledHeading = styled(Heading)`
   font-size: 18px;
   text-align: center;
   width: 68px;
-  margin-left: 95px;
+  margin-left: 94px;
   margin-right: 20px;
   margin-top: 62px;
   margin-bottom: 25px;
