@@ -30,23 +30,33 @@ export const ScreenImageMobile = withBreakpoints(styled.img`
   }
 `);
 
-export const ImageLayerWrapper = withBreakpoints(styled.div`
+export const ImageLayerWrapper = styled.div`
   position: relative;
   height: ${props => props.height}px;
-  display: flex;
 
   > * {
     position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
   }
-
-  @media (max-width: ${props => props.breakpoints.md}px) {
-    align-items: center;
-    justify-content: center;
-  }
-`);
+`;
 
 export const BackgroundImage = styled.img`
   height: 100%;
   width: auto;
   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.1);
 `;
+
+export const BackgroundImageWrapper = styled.div`
+  height: 100%;
+  text-align: center;
+`;
+
+export const ChartWrapper = withBreakpoints(styled.div`
+
+  @media (max-width: ${props => props.breakpoints.md}px) {
+    display: flex;
+    justify-content: center;
+  }
+`);

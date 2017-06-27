@@ -6,30 +6,30 @@ exports[`should renders <Section1> correctly 1`] = `
     md={6}
     xs={12}
   >
-    <Heading
-      level={1}
-    >
-      title
-    </Heading>
-    <SpaceTop
-      height={20}
-    >
+    <Breakpoints>
       <Heading
-        color="grayBase"
-        level={4}
+        level={1}
       >
-        desc
+        title
       </Heading>
-    </SpaceTop>
-    <SpaceTop
-      height={40}
-    >
-      <Breakpoints>
+      <SpaceTop
+        height={20}
+      >
+        <Heading
+          color="grayBase"
+          level={4}
+        >
+          desc
+        </Heading>
+      </SpaceTop>
+      <SpaceTop
+        height={40}
+      >
         <pure(InjectIntl(withPropsOnChange(DownloadButton)))
           tag="v0.0.0"
         />
-      </Breakpoints>
-    </SpaceTop>
+      </SpaceTop>
+    </Breakpoints>
   </Breakpoints>
   <Styled(Breakpoints)
     md={6}
@@ -49,33 +49,20 @@ exports[`should renders <Section1> correctly 1`] = `
           }
         }
       >
-        <Transition
-          component={false}
-          enter={
-            Object {
-              "opacity": 1,
-            }
-          }
-          leave={
-            Object {
-              "opacity": 0,
-            }
-          }
-          onEnter={[Function]}
-          onLeave={[Function]}
-          runOnMount={true}
+        <styled.div
+          height={350}
         >
-          <Breakpoints
-            height={350}
-          >
+          <styled.div>
             <styled.img
               alt="desc"
               src="img_mcs_screen.png"
               title="title"
             />
+          </styled.div>
+          <Breakpoints>
             <LoadableComponent />
           </Breakpoints>
-        </Transition>
+        </styled.div>
       </LazyloadOnce>
     </Breakpoints>
     <Breakpoints

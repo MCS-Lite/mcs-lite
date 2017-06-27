@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import rafThrottle from 'raf-throttle';
+import Transition from 'react-motion-ui-pack';
 import Heading from 'mcs-lite-ui/lib/Heading';
 import last from 'ramda/src/last';
 import DataPointAreaChart from 'mcs-lite-ui/lib/DataPointAreaChart';
@@ -20,19 +21,19 @@ const Wrapper = styled.div`
 `;
 
 const ChartWrapper = styled.div`
-  width: 470px;
+  width: 420px;
   height: 120px;
-  transform: translateY(28px);
-  margin-left: 37px;
-
+  transform: translateY(30px);
+  margin-left: 33px;
 `;
 
 const StyledHeading = styled(Heading)`
+  font-size: 18px;
   text-align: center;
   width: 68px;
   margin-left: 95px;
   margin-right: 20px;
-  margin-top: 50px;
+  margin-top: 61px;
   margin-bottom: 25px;
 `;
 
@@ -73,12 +74,18 @@ class Chart extends React.PureComponent {
     const { data } = this.state;
 
     return (
-      <Wrapper>
-        <StyledHeading color="primary">{last(data).value}</StyledHeading>
-        <ChartWrapper>
-          <DataPointAreaChart isAnimationActive data={data} />
-        </ChartWrapper>
-      </Wrapper>
+      <Transition
+        component={false}
+        enter={{ opacity: 1 }}
+        leave={{ opacity: 0.5 }}
+      >
+        <Wrapper key="Wrapper">
+          <StyledHeading color="primary">{last(data).value}</StyledHeading>
+          <ChartWrapper>
+            <DataPointAreaChart isAnimationActive data={data} />
+          </ChartWrapper>
+        </Wrapper>
+      </Transition>
     );
   }
 }
