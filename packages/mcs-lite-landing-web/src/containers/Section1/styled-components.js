@@ -9,6 +9,7 @@ export const StyledSectionRow = styled(SectionRow)`
 `;
 
 export const RWDCenterWrapper = withBreakpoints(styled.div`
+
   @media (max-width: ${props => props.breakpoints.md}px) {
     text-align: center;
   }
@@ -22,7 +23,7 @@ export const ScreenImageMobile = withBreakpoints(styled.img`
   display: none;
   height: auto;
   width: 100%;
-  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.10);
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.1);
 
   @media (max-width: ${props => props.breakpoints.sm}px) {
     display: block;
@@ -47,5 +48,5 @@ export const ImageLayerWrapper = withBreakpoints(styled.div`
 export const BackgroundImage = styled.img`
   height: 100%;
   width: auto;
-  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.10);
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.1);
 `;

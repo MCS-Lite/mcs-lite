@@ -2,11 +2,11 @@
 
 exports[`should render components correctly 1`] = `
 Array [
-  .iHyqso {
+  .cwsUEf {
   display: none;
   height: auto;
   width: 100%;
-  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.10);
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.1);
 }
 
 .hTNRWa {
@@ -23,14 +23,14 @@ Array [
 }
 
 @media (max-width: 970px) {
-  .iaWlME {
+  .eZeFAD {
     -webkit-text-align: center;
     text-align: center;
   }
 }
 
 @media (max-width: 768px) {
-  .iHyqso {
+  .cwsUEf {
     display: block;
   }
 }
@@ -60,7 +60,7 @@ Array [
             }
         >
             <div
-                className="sc-bZQynM iaWlME"
+                className="sc-bZQynM eZeFAD"
             />
         </styled.div>
     </Breakpoints>
@@ -75,7 +75,7 @@ Array [
             }
         >
             <img
-                className="sc-htoDjs iHyqso"
+                className="sc-htoDjs cwsUEf"
             />
         </styled.img>
     </Breakpoints>
@@ -96,14 +96,14 @@ Array [
     </Breakpoints>
 </div>,
   @media (max-width: 970px) {
-  .iaWlME {
+  .eZeFAD {
     -webkit-text-align: center;
     text-align: center;
   }
 }
 
 <div
-    className="sc-bZQynM iaWlME"
+    className="sc-bZQynM eZeFAD"
 />,
   .hTNRWa {
   position: relative;
