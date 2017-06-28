@@ -30,7 +30,7 @@ exports[`should renders <Section2> correctly 1`] = `
             Object {
               "opacity": 1,
               "playScale": Array [
-                0.2,
+                0,
                 0.5,
               ],
             }
