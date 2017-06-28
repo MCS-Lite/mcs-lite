@@ -2,8 +2,13 @@
 
 exports[`should render components correctly 1`] = `
 Array [
-  .cwsUEf {
-  display: none;
+  .cLFRsP {
+  -webkit-text-align: center;
+  text-align: center;
+}
+
+.gmcvRn {
+  display: block;
   height: auto;
   width: 100%;
   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.1);
@@ -21,16 +26,10 @@ Array [
   right: 0;
 }
 
-@media (max-width: 970px) {
-  .eZeFAD {
-    -webkit-text-align: center;
-    text-align: center;
-  }
-}
-
-@media (max-width: 768px) {
-  .cwsUEf {
-    display: block;
+@media (min-width: 970px) {
+  .cLFRsP {
+    -webkit-text-align: left;
+    text-align: left;
   }
 }
 
@@ -46,7 +45,7 @@ Array [
             }
         >
             <div
-                className="sc-bZQynM eZeFAD"
+                className="sc-bZQynM cLFRsP"
             />
         </styled.div>
     </Breakpoints>
@@ -61,7 +60,7 @@ Array [
             }
         >
             <img
-                className="sc-htoDjs cwsUEf"
+                className="sc-htoDjs gmcvRn"
             />
         </styled.img>
     </Breakpoints>
@@ -71,15 +70,20 @@ Array [
         />
     </styled.div>
 </div>,
-  @media (max-width: 970px) {
-  .eZeFAD {
-    -webkit-text-align: center;
-    text-align: center;
+  .cLFRsP {
+  -webkit-text-align: center;
+  text-align: center;
+}
+
+@media (min-width: 970px) {
+  .cLFRsP {
+    -webkit-text-align: left;
+    text-align: left;
   }
 }
 
 <div
-    className="sc-bZQynM eZeFAD"
+    className="sc-bZQynM cLFRsP"
 />,
   .hEgnZI {
   position: relative;

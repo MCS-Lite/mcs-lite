@@ -2,6 +2,6 @@
 
 exports[`should render Container correctly with HOC 1`] = `
 <pure(IntlProvider)>
-  <InjectIntl(withPropsOnChange(pure(Header))) />
+  <InjectIntl(withPropsOnChange(pure(Breakpoints))) />
 </pure(IntlProvider)>
 `;

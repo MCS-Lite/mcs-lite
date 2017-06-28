@@ -1,28 +1,3 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`should renders <Image> correctly 1`] = `
-<LazyloadOnce
-  component="div"
-  height={350}
-  waypointConfig={
-    Object {
-      "bottomOffset": -500,
-      "fireOnRapidScroll": true,
-      "topOffset": -500,
-    }
-  }
->
-  <styled.div
-    height={350}
-  >
-    <styled.div>
-      <styled.img
-        src="img_mcs_screen.png"
-      />
-    </styled.div>
-    <Breakpoints>
-      <LoadableComponent />
-    </Breakpoints>
-  </styled.div>
-</LazyloadOnce>
-`;
+exports[`should renders <Image> correctly 1`] = `<Breakpoints />`;

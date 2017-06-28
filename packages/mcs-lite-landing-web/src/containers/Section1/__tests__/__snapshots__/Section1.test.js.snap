@@ -35,16 +35,7 @@ exports[`should renders <Section1> correctly 1`] = `
     md={6}
     xs={12}
   >
-    <Breakpoints
-      xs={true}
-    >
-      <pure(Image) />
-    </Breakpoints>
-    <Breakpoints
-      alt="desc"
-      src="img_mcs_screen.png"
-      title="title"
-    />
+    <pure(Breakpoints) />
   </Styled(Breakpoints)>
 </Styled(pure(SectionRow))>
 `;

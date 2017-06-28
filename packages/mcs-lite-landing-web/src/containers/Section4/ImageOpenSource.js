@@ -11,7 +11,7 @@ import ImageLayerWrapper from '../../components/ImageLayerWrapper';
 import BackgroundImage from '../../components/BackgroundImage';
 import { ScrollParallaxCode } from './styled-components';
 
-const ImageOpenSouce = () =>
+const ImageOpenSource = () =>
   <Transition component={false} enter={{ opacity: 1 }} leave={{ opacity: 0 }}>
     <ImageLayerWrapper key="ImageLayerWrapper">
       <BackgroundImage src={imgOpenBackground} />
@@ -51,4 +51,4 @@ const ImageOpenSouce = () =>
     </ImageLayerWrapper>
   </Transition>;
 
-export default pure(ImageOpenSouce);
+export default pure(ImageOpenSource);

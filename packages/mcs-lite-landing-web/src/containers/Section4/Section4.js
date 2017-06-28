@@ -14,10 +14,10 @@ import { StyledSectionRow, CardWrapper } from './styled-components';
 
 const HEIGHT = 170;
 
-const LoadableImageOpenSouce = Loadable({
+const LoadableImageOpenSource = Loadable({
   loader: () =>
     import(
-      /* webpackChunkName: "Section4.ImageOpenSouce" */ './ImageOpenSouce',
+      /* webpackChunkName: "Section4.ImageOpenSource" */ './ImageOpenSource',
     ),
   loading: () => null,
 });
@@ -40,7 +40,7 @@ const Section4 = ({ getMessages: t }) =>
       <Column xs={12} sm={6}>
         <CardWrapper>
           <LazyloadOnce height={HEIGHT}>
-            <LoadableImageOpenSouce />
+            <LoadableImageOpenSource />
           </LazyloadOnce>
 
           <SpaceTop height={20}>

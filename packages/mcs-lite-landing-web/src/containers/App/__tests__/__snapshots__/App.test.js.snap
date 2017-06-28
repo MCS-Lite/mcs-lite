@@ -94,7 +94,7 @@ exports[`should renders <App> correctly 1`] = `
       property="og:locale:alternate"
     />
   </HelmetWrapper>
-  <InjectIntl(withPropsOnChange(pure(Header)))
+  <InjectIntl(withPropsOnChange(pure(Breakpoints)))
     locale="zh-TW"
   />
   <InjectIntl(withPropsOnChange(pure(Section1)))
