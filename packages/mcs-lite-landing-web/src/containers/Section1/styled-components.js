@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { Column, withBreakpoints } from 'hedron';
+import ProgressiveImage from 'react-progressive-bg-image';
 import SectionRow from '../../components/SectionRow';
 
 export const StyledSectionRow = styled(SectionRow)`
@@ -42,16 +43,25 @@ export const ImageLayerWrapper = styled.div`
   }
 `;
 
-export const BackgroundImage = styled.img`
+export const BackgroundImage = styled(ProgressiveImage)`
   height: 100%;
-  width: auto;
+  width: 580px;
   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.1);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
 `;
 
-export const BackgroundImageWrapper = styled.div`
+export const BackgroundImageWrapper = withBreakpoints(styled.div`
   height: 100%;
-  text-align: center;
-`;
+
+  @media (max-width: ${props => props.breakpoints.md}px) {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+`);
 
 export const ChartWrapper = withBreakpoints(styled.div`
 

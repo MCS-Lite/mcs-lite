@@ -2,19 +2,19 @@
 
 exports[`should render components correctly 1`] = `
 Array [
-  .cwsUEf {
+  .kHADNM {
   display: none;
   height: auto;
   width: 100%;
   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.1);
 }
 
-.hEgnZI {
+.gQjcjc {
   position: relative;
   height: px;
 }
 
-.hEgnZI > * {
+.gQjcjc > * {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -22,14 +22,14 @@ Array [
 }
 
 @media (max-width: 970px) {
-  .eZeFAD {
+  .jLXzwc {
     -webkit-text-align: center;
     text-align: center;
   }
 }
 
 @media (max-width: 768px) {
-  .cwsUEf {
+  .kHADNM {
     display: block;
   }
 }
@@ -46,7 +46,7 @@ Array [
             }
         >
             <div
-                className="sc-bZQynM eZeFAD"
+                className="sc-gzVnrw jLXzwc"
             />
         </styled.div>
     </Breakpoints>
@@ -61,32 +61,32 @@ Array [
             }
         >
             <img
-                className="sc-htoDjs cwsUEf"
+                className="sc-dnqmqq kHADNM"
             />
         </styled.img>
     </Breakpoints>
     <styled.div>
         <div
-            className="sc-dnqmqq hEgnZI"
+            className="sc-iwsKbI gQjcjc"
         />
     </styled.div>
 </div>,
   @media (max-width: 970px) {
-  .eZeFAD {
+  .jLXzwc {
     -webkit-text-align: center;
     text-align: center;
   }
 }
 
 <div
-    className="sc-bZQynM eZeFAD"
+    className="sc-gzVnrw jLXzwc"
 />,
-  .hEgnZI {
+  .gQjcjc {
   position: relative;
   height: px;
 }
 
-.hEgnZI > * {
+.gQjcjc > * {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -94,7 +94,7 @@ Array [
 }
 
 <div
-    className="sc-dnqmqq hEgnZI"
+    className="sc-iwsKbI gQjcjc"
 />,
 ]
 `;

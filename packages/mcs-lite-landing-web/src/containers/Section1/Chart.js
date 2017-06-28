@@ -14,10 +14,6 @@ const Wrapper = styled.div`
   width: ${IMAGE_WIDTH}px;
   padding-right: 55px;
   box-sizing: border-box;
-
-  > * {
-    background: white;
-  }
 `;
 
 const ChartWrapper = styled.div`

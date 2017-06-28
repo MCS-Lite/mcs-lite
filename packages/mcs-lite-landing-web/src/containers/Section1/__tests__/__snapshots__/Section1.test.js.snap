@@ -52,13 +52,12 @@ exports[`should renders <Section1> correctly 1`] = `
         <styled.div
           height={350}
         >
-          <styled.div>
-            <styled.img
-              alt="desc"
-              src="img_mcs_screen.png"
-              title="title"
+          <Breakpoints>
+            <Styled(ProgressiveImage)
+              placeholder="img_mcs_screen_emptyX60.png"
+              src="img_mcs_screen_empty.png"
             />
-          </styled.div>
+          </Breakpoints>
           <Breakpoints>
             <LoadableComponent />
           </Breakpoints>
@@ -67,7 +66,7 @@ exports[`should renders <Section1> correctly 1`] = `
     </Breakpoints>
     <Breakpoints
       alt="desc"
-      src="img_mcs_screen.png"
+      src="img_mcs_screen_empty.png"
       title="title"
     />
   </Styled(Breakpoints)>
