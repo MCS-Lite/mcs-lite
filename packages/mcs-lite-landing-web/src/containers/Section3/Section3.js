@@ -13,30 +13,24 @@ import { LazyloadIcon, StyledRow } from './styled-components';
 
 const LoadableSVGData = Loadable({
   loader: () =>
-    import(
-      /* webpackChunkName: "Section3.SVG" */ '../../components/SVG/SVGData',
-    ),
+    import(/* webpackChunkName: "Section" */ '../../components/SVG/SVGData'),
   loading: () => null,
 });
 const LoadableSVGRemote = Loadable({
   loader: () =>
-    import(
-      /* webpackChunkName: "Section3.SVG" */ '../../components/SVG/SVGRemote',
-    ),
+    import(/* webpackChunkName: "Section" */ '../../components/SVG/SVGRemote'),
   loading: () => null,
 });
 const LoadableSVGManagement = Loadable({
   loader: () =>
     import(
-      /* webpackChunkName: "Section3.SVG" */ '../../components/SVG/SVGManagement',
+      /* webpackChunkName: "Section" */ '../../components/SVG/SVGManagement',
     ),
   loading: () => null,
 });
 const LoadableSVGMobile = Loadable({
   loader: () =>
-    import(
-      /* webpackChunkName: "Section3.SVG" */ '../../components/SVG/SVGMobile',
-    ),
+    import(/* webpackChunkName: "Section" */ '../../components/SVG/SVGMobile'),
   loading: () => null,
 });
 

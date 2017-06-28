@@ -6,6 +6,7 @@ import { withBreakpoints } from 'hedron';
 import { compose, pure } from 'recompose';
 import Media from 'react-media';
 import imgScreen from '../../statics/images/img_mcs_screen.png';
+import imgScreenX60 from '../../statics/images/img_mcs_screenX60.png';
 import {
   ImageLayerWrapper,
   BackgroundImage,
@@ -25,16 +26,17 @@ const Image = ({ breakpoints }) =>
   <Media query={{ minWidth: breakpoints.sm }}>
     {matches =>
       matches
-        ? <LazyloadOnce height={IMAGE_HEIGHT}>
-            <ImageLayerWrapper key="ImageLayerWrapper" height={IMAGE_HEIGHT}>
-              <BackgroundImageWrapper>
-                <BackgroundImage src={imgScreen} />
-              </BackgroundImageWrapper>
-              <ChartWrapper>
-                <LoadabChart />
-              </ChartWrapper>
-            </ImageLayerWrapper>
-          </LazyloadOnce>
+        ? <ImageLayerWrapper height={IMAGE_HEIGHT}>
+            <BackgroundImageWrapper>
+              <BackgroundImage src={imgScreenX60} />
+            </BackgroundImageWrapper>
+            <BackgroundImageWrapper>
+              <BackgroundImage src={imgScreen} />
+            </BackgroundImageWrapper>
+            <ChartWrapper>
+              <LoadabChart />
+            </ChartWrapper>
+          </ImageLayerWrapper>
         : <ScreenImageMobile src={imgScreen} />}
   </Media>;
 

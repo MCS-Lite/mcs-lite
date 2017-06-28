@@ -19,7 +19,7 @@ const waypointConfig = {
 };
 
 const LoadableImage = Loadable({
-  loader: () => import(/* webpackChunkName: "Section2.Image" */ './Image'),
+  loader: () => import(/* webpackChunkName: "Section" */ './Image'),
   loading: () => null,
 });
 

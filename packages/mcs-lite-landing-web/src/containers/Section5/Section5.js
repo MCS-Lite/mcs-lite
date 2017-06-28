@@ -12,7 +12,7 @@ import { StyledTextCenter } from './styled-components';
 const HEIGHT = 171;
 
 const LoadableImage = Loadable({
-  loader: () => import(/* webpackChunkName: "Section5.Image" */ './Image'),
+  loader: () => import(/* webpackChunkName: "Section" */ './Image'),
   loading: () => null,
 });
 

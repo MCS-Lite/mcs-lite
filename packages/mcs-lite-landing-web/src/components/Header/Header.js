@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router';
-import { Page, Row, Column } from 'hedron';
+import { Page, Row, Column, withBreakpoints } from 'hedron';
 import Loadable from 'react-loadable';
 import Media from 'react-media';
 import styled from 'styled-components';
@@ -40,7 +40,14 @@ const LogoImage = styled.img`
   width: auto;
 `;
 
-const StyledNav = styled(Nav)`
+const DesktopNav = withBreakpoints(styled(Nav)`
+
+  @media (min-width: ${props => props.breakpoints.sm}px) {
+    display: none;
+  }
+`);
+
+const MobileNav = styled(Nav)`
   ${NavItem} {
     padding-right: 0;
   }
@@ -105,7 +112,7 @@ const Header = ({ locale, getMessages, breakpoints }) => {
             <Media query={{ minWidth: breakpoints.sm }}>
               {matches =>
                 matches
-                  ? <Nav>
+                  ? <DesktopNav>
                       {linkItems.map(e => <NavItem {...e} />)}
                       <NavItemDropdown
                         items={languageItems}
@@ -115,8 +122,8 @@ const Header = ({ locale, getMessages, breakpoints }) => {
                       >
                         Language
                       </NavItemDropdown>
-                    </Nav>
-                  : <StyledNav>
+                    </DesktopNav>
+                  : <MobileNav>
                       <LazyloadOnce>
                         <LoadableNavItemBurger
                           items={[
@@ -133,7 +140,7 @@ const Header = ({ locale, getMessages, breakpoints }) => {
                           data-ga-event-action="click"
                         />
                       </LazyloadOnce>
-                    </StyledNav>}
+                    </MobileNav>}
             </Media>
 
             {/* 3. Hidden -For Prereder */}

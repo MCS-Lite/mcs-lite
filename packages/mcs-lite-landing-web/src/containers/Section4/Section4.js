@@ -15,15 +15,11 @@ import { StyledSectionRow, CardWrapper } from './styled-components';
 const HEIGHT = 170;
 
 const LoadableImageOpenSource = Loadable({
-  loader: () =>
-    import(
-      /* webpackChunkName: "Section4.ImageOpenSource" */ './ImageOpenSource',
-    ),
+  loader: () => import(/* webpackChunkName: "Section" */ './ImageOpenSource'),
   loading: () => null,
 });
 const LoadableImageImageCustom = Loadable({
-  loader: () =>
-    import(/* webpackChunkName: "Section4.ImageCustom" */ './ImageCustom'),
+  loader: () => import(/* webpackChunkName: "Section" */ './ImageCustom'),
   loading: () => null,
 });
 
