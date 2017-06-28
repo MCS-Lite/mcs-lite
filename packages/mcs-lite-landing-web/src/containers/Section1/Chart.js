@@ -71,7 +71,7 @@ class Chart extends React.PureComponent {
   componentWillUnmount() {
     clearInterval(this.interval);
     clearTimeout(this.timeout);
-    this.appendData.canel();
+    this.appendData.cancel();
   }
 
   appendData = rafThrottle(() => {

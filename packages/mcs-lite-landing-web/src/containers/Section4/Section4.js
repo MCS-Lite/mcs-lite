@@ -8,8 +8,24 @@ import A from 'mcs-lite-ui/lib/A';
 import Button from 'mcs-lite-ui/lib/Button';
 import TextCenter from 'mcs-lite-ui/lib/TextCenter';
 import SpaceTop from 'mcs-lite-ui/lib/SpaceTop';
+import LazyloadOnce from 'mcs-lite-ui/lib/LazyloadOnce';
+import Loadable from 'react-loadable';
 import { StyledSectionRow, CardWrapper } from './styled-components';
-import { ImageOpenSouce, ImageCustom } from './Image';
+
+const HEIGHT = 170;
+
+const LoadableImageOpenSouce = Loadable({
+  loader: () =>
+    import(
+      /* webpackChunkName: "Section4.ImageOpenSouce" */ './ImageOpenSouce',
+    ),
+  loading: () => null,
+});
+const LoadableImageImageCustom = Loadable({
+  loader: () =>
+    import(/* webpackChunkName: "Section4.ImageCustom" */ './ImageCustom'),
+  loading: () => null,
+});
 
 const Section4 = ({ getMessages: t }) =>
   <StyledSectionRow>
@@ -23,7 +39,9 @@ const Section4 = ({ getMessages: t }) =>
       {/* 1. Open source */}
       <Column xs={12} sm={6}>
         <CardWrapper>
-          <ImageOpenSouce />
+          <LazyloadOnce height={HEIGHT}>
+            <LoadableImageOpenSouce />
+          </LazyloadOnce>
 
           <SpaceTop height={20}>
             <Heading level={3}>
@@ -47,7 +65,9 @@ const Section4 = ({ getMessages: t }) =>
       {/* 2. Customize */}
       <Column xs={12} sm={6}>
         <CardWrapper>
-          <ImageCustom />
+          <LazyloadOnce height={HEIGHT}>
+            <LoadableImageImageCustom />
+          </LazyloadOnce>
 
           <SpaceTop height={20}>
             <Heading level={3}>

@@ -1,13 +1,27 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Column } from 'hedron';
+import Loadable from 'react-loadable';
 import Heading from 'mcs-lite-ui/lib/Heading';
 import TextCenter from 'mcs-lite-ui/lib/TextCenter';
 import SpaceTop from 'mcs-lite-ui/lib/SpaceTop';
+import LazyloadOnce from 'mcs-lite-ui/lib/LazyloadOnce';
 import ScrollParallax from 'rc-scroll-anim/lib/ScrollParallax';
 import SVGSignal from '../../components/SVG/SVGSignal';
-import Image from './Image';
 import { StyledSectionRow } from './styled-components';
+
+const HEIGHT = 220;
+
+const waypointConfig = {
+  topOffset: -300,
+  bottomOffset: -300,
+  fireOnRapidScroll: true,
+};
+
+const LoadableImage = Loadable({
+  loader: () => import(/* webpackChunkName: "Section2.Image" */ './Image'),
+  loading: () => null,
+});
 
 const Section2 = ({ getMessages: t }) =>
   <StyledSectionRow>
@@ -29,7 +43,9 @@ const Section2 = ({ getMessages: t }) =>
         </SpaceTop>
 
         <SpaceTop height={20}>
-          <Image />
+          <LazyloadOnce waypointConfig={waypointConfig} height={HEIGHT}>
+            <LoadableImage />
+          </LazyloadOnce>
         </SpaceTop>
       </TextCenter>
     </Column>

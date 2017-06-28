@@ -1,4 +1,4 @@
-/* global document */
+/* global document, window */
 
 import React from 'react';
 import { render } from 'react-snapshot';
@@ -15,6 +15,22 @@ import landingTheme, { BREAKPOINTS } from './utils/landingTheme';
 import autotrack from './utils/autotrack';
 import './utils/style';
 import './utils/i18n';
+
+/**
+ * matchMedia polyfill
+ * set default value to true
+ * ref: https://github.com/WickyNilliams/enquire.js/issues/82#issuecomment-26990494
+ * @author Michael Hsu
+ */
+window.matchMedia =
+  window.matchMedia ||
+  function matchMedia() {
+    return {
+      matches: true,
+      addListener: () => {},
+      removeListener: () => {},
+    };
+  };
 
 const history = useRouterHistory(createHistory)();
 

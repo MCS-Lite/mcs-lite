@@ -1,12 +1,20 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Column } from 'hedron';
+import Loadable from 'react-loadable';
 import Heading from 'mcs-lite-ui/lib/Heading';
+import LazyloadOnce from 'mcs-lite-ui/lib/LazyloadOnce';
 import SpaceTop from 'mcs-lite-ui/lib/SpaceTop';
 import SectionRow from '../../components/SectionRow';
 import DownloadButton from '../../components/DownloadButton';
-import Image from './Image';
 import { StyledTextCenter } from './styled-components';
+
+const HEIGHT = 171;
+
+const LoadableImage = Loadable({
+  loader: () => import(/* webpackChunkName: "Section5.Image" */ './Image'),
+  loading: () => null,
+});
 
 const Section5 = ({ tag, getMessages: t }) =>
   <SectionRow>
@@ -15,7 +23,9 @@ const Section5 = ({ tag, getMessages: t }) =>
         <Heading level={2}>{t('title')}</Heading>
 
         <SpaceTop height={40}>
-          <Image />
+          <LazyloadOnce height={HEIGHT}>
+            <LoadableImage />
+          </LazyloadOnce>
         </SpaceTop>
 
         <SpaceTop height={40}>

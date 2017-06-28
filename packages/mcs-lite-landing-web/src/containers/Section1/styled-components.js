@@ -9,9 +9,10 @@ export const StyledSectionRow = styled(SectionRow)`
 `;
 
 export const RWDCenterWrapper = withBreakpoints(styled.div`
+  text-align: center;
 
-  @media (max-width: ${props => props.breakpoints.md}px) {
-    text-align: center;
+  @media (min-width: ${props => props.breakpoints.md}px) {
+    text-align: left;
   }
 `);
 
@@ -20,14 +21,10 @@ export const StyledImageColumn = styled(Column)`
 `;
 
 export const ScreenImageMobile = withBreakpoints(styled.img`
-  display: none;
+  display: block;
   height: auto;
   width: 100%;
   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.1);
-
-  @media (max-width: ${props => props.breakpoints.sm}px) {
-    display: block;
-  }
 `);
 
 export const ImageLayerWrapper = styled.div`
@@ -54,9 +51,10 @@ export const BackgroundImageWrapper = styled.div`
 `;
 
 export const ChartWrapper = withBreakpoints(styled.div`
+  display: flex;
+  justify-content: center;
 
-  @media (max-width: ${props => props.breakpoints.md}px) {
-    display: flex;
-    justify-content: center;
+  @media (min-width: ${props => props.breakpoints.md}px) {
+    display: block;
   }
 `);

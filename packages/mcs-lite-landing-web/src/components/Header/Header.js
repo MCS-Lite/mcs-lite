@@ -1,8 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router';
-import { Page, Row, Column, Hidden } from 'hedron';
+import { Page, Row, Column } from 'hedron';
 import Loadable from 'react-loadable';
+import Media from 'react-media';
 import styled from 'styled-components';
 import LandingHeader from 'mcs-lite-ui/lib/LandingHeader/LandingHeader';
 import Nav from 'mcs-lite-ui/lib/LandingHeader/Nav';
@@ -46,11 +47,14 @@ const StyledNav = styled(Nav)`
 `;
 
 const LoadableNavItemBurger = Loadable({
-  loader: () => import('mcs-lite-ui/lib/LandingHeader/NavItemBurger'),
+  loader: () =>
+    import(
+      /* webpackChunkName: "Header.NavItemBurger" */ 'mcs-lite-ui/lib/LandingHeader/NavItemBurger',
+    ),
   loading: () => <NavItem><Spin><IconLoading size={24} /></Spin></NavItem>,
 });
 
-const Header = ({ locale, getMessages }) => {
+const Header = ({ locale, getMessages, breakpoints }) => {
   const linkItems = [
     {
       component: 'a',
@@ -96,38 +100,41 @@ const Header = ({ locale, getMessages }) => {
               </NavItem>
             </Nav>
 
-            {/* 1. Right - For Mobile */}
-            <Hidden sm md lg>
-              <StyledNav>
-                <LazyloadOnce>
-                  <LoadableNavItemBurger
-                    items={[
-                      ...linkItems,
-                      { key: 'Language', children: 'Language', disabled: true },
-                      ...languageItems,
-                    ]}
-                    data-ga-on="click"
-                    data-ga-event-category="Mobile NavItemBurger menu"
-                    data-ga-event-action="click"
-                  />
-                </LazyloadOnce>
-              </StyledNav>
-            </Hidden>
-
-            {/* 2. Right - For Desktop */}
-            <Hidden xs>
-              <Nav>
-                {linkItems.map(e => <NavItem {...e} />)}
-                <NavItemDropdown
-                  items={languageItems}
-                  data-ga-on="click"
-                  data-ga-event-category="Language NavItemDropdown menu"
-                  data-ga-event-action="click"
-                >
-                  Language
-                </NavItemDropdown>
-              </Nav>
-            </Hidden>
+            {/* 1. Right - For Desktop */}
+            {/* 2. Right - For Mobile */}
+            <Media query={{ minWidth: breakpoints.sm }}>
+              {matches =>
+                matches
+                  ? <Nav>
+                      {linkItems.map(e => <NavItem {...e} />)}
+                      <NavItemDropdown
+                        items={languageItems}
+                        data-ga-on="click"
+                        data-ga-event-category="Language NavItemDropdown menu"
+                        data-ga-event-action="click"
+                      >
+                        Language
+                      </NavItemDropdown>
+                    </Nav>
+                  : <StyledNav>
+                      <LazyloadOnce>
+                        <LoadableNavItemBurger
+                          items={[
+                            ...linkItems,
+                            {
+                              key: 'Language',
+                              children: 'Language',
+                              disabled: true,
+                            },
+                            ...languageItems,
+                          ]}
+                          data-ga-on="click"
+                          data-ga-event-category="Mobile NavItemBurger menu"
+                          data-ga-event-action="click"
+                        />
+                      </LazyloadOnce>
+                    </StyledNav>}
+            </Media>
 
             {/* 3. Hidden -For Prereder */}
             <HiddenForPreRenderTrick>
@@ -151,6 +158,11 @@ Header.propTypes = {
 
   // React-Router HOC
   locale: PropTypes.string.isRequired,
+
+  // withBreakpoints HOC
+  breakpoints: PropTypes.shape({
+    sm: PropTypes.number.isRequired,
+  }).isRequired,
 };
 
 export default Header;

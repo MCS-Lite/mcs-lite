@@ -1,15 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Column, Hidden } from 'hedron';
+import { Column } from 'hedron';
 import Heading from 'mcs-lite-ui/lib/Heading';
 import SpaceTop from 'mcs-lite-ui/lib/SpaceTop';
 import DownloadButton from '../../components/DownloadButton';
-import imgScreen from '../../statics/images/img_mcs_screen.png';
 import {
   StyledSectionRow,
   RWDCenterWrapper,
   StyledImageColumn,
-  ScreenImageMobile,
 } from './styled-components';
 import Image from './Image';
 
@@ -30,13 +28,7 @@ const Section1 = ({ getMessages: t, tag }) =>
     </Column>
 
     <StyledImageColumn xs={12} md={6}>
-      {/* 1. Desktop */}
-      <Hidden xs>
-        <Image />
-      </Hidden>
-
-      {/* 2. Mobile */}
-      <ScreenImageMobile src={imgScreen} title={t('title')} alt={t('desc')} />
+      <Image />
     </StyledImageColumn>
   </StyledSectionRow>;
 
