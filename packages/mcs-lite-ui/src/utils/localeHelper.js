@@ -1,4 +1,8 @@
+// @flow
 import R from 'ramda';
+
+type LocaleMapper = string => string => string;
+type GetMCSLinkByLocale = string => string;
 
 export const LOCALES = [
   {
@@ -15,7 +19,7 @@ export const LOCALES = [
   },
 ];
 
-export const localeMapper = defaultLocale =>
+export const localeMapper: LocaleMapper = defaultLocale =>
   R.memoize(string =>
     R.cond([
       [R.test(/^en/gi), R.always('en')],
@@ -26,7 +30,7 @@ export const localeMapper = defaultLocale =>
     ])(string),
   );
 
-export const getMCSLinkByLocale = R.memoize(locale =>
+export const getMCSLinkByLocale: GetMCSLinkByLocale = R.memoize(locale =>
   R.cond([
     [R.equals('en'), R.always('https://mcs.mediatek.com/')],
     [R.equals('zh-CN'), R.always('https://mcs.mediatek.cn/')],

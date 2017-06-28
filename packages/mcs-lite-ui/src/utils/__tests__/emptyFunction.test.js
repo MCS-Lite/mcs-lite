@@ -1,3 +1,5 @@
+// @flow
+
 import emptyFunction from '../emptyFunction';
 
 describe('emptyFunction', () => {

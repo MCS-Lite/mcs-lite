@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Heading from 'mcs-lite-ui/lib/Heading';
+import { updatePathname } from 'mcs-lite-ui/lib/utils/routerHelper';
 import Small from 'mcs-lite-ui/lib/Small';
 import Helmet from 'react-helmet';
 import StyledLink from '../../components/StyledLink';
@@ -12,7 +13,6 @@ import {
   VersionWrapper,
   FlatButton,
 } from './styled-components';
-import { updatePathname } from '../../utils/routerHelper';
 
 const VERSION = process.env.REACT_APP_VERSION;
 

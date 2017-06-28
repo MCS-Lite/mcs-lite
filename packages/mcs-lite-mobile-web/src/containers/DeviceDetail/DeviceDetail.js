@@ -12,6 +12,8 @@ import Menu from 'mcs-lite-ui/lib/Menu';
 import DataChannelCard from 'mcs-lite-ui/lib/DataChannelCard';
 import DataChannelAdapter from 'mcs-lite-ui/lib/DataChannelAdapter';
 import MobileHeader from 'mcs-lite-ui/lib/MobileHeader';
+import { dataChannelTypeMapper } from 'mcs-lite-ui/lib/utils/dataChannelHelper';
+import { updatePathname } from 'mcs-lite-ui/lib/utils/routerHelper';
 import {
   Container,
   StyledImg,
@@ -20,8 +22,6 @@ import {
 } from './styled-components';
 import StyledLink from '../../components/StyledLink';
 import WebSocketNotification from '../../components/WebSocketNotification';
-import { updatePathname } from '../../utils/routerHelper';
-import dataChannelTypeMapper from '../../utils/dataChannelTypeMapper';
 import localTimeFormat from '../../utils/localTimeFormat';
 import resolveImage from '../../utils/resolveImage';
 import BANNER_IMAGE from '../../statics/images/banner.svg';

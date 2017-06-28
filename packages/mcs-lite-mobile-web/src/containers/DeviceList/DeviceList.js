@@ -13,6 +13,7 @@ import Input from 'mcs-lite-ui/lib/Input';
 import ClickOutside from 'mcs-lite-ui/lib/ClickOutside';
 import MobileDeviceCard from 'mcs-lite-ui/lib/MobileDeviceCard';
 import MobileHeader from 'mcs-lite-ui/lib/MobileHeader';
+import { updatePathname } from 'mcs-lite-ui/lib/utils/routerHelper';
 import {
   Container,
   CardWrapper,
@@ -20,7 +21,6 @@ import {
   PlaceholdWrapper,
 } from './styled-components';
 import StyledLink from '../../components/StyledLink';
-import { updatePathname } from '../../utils/routerHelper';
 import resolveImage from '../../utils/resolveImage';
 import BANNER_IMAGE from '../../statics/images/banner.svg';
 

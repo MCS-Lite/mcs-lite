@@ -1,3 +1,5 @@
+// @flow
+
 import cookieHelper from '../cookieHelper';
 
 it('should return cookieHelper function', () => {

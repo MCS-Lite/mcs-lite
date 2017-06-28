@@ -3,10 +3,10 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import styled from 'styled-components';
 import { Link } from 'react-router';
+import { updateLocale } from 'mcs-lite-ui/lib/utils/routerHelper';
+import { LOCALES } from 'mcs-lite-ui/lib/utils/localeHelper';
 import DashboardTitle from '../../components/DashboardTitle';
 import DashboardDesc from '../../components/DashboardDesc';
-import LOCALES from '../../utils/locales.json';
-import { updateLocale } from '../../utils/routerHelper';
 
 const Wrapper = styled.div`
   > * {

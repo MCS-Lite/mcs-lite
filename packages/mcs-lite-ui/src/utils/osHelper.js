@@ -1,13 +1,21 @@
+// @flow
 /* global window */
 
 import bowser from 'bowser';
 import R from 'ramda';
 
-const DEFAULT_OS = 'Windows';
+type GetOSBit = () => 32 | 64;
+type OsNameMapper = Object => string;
+type FileNameMapper = Object => string;
+type GetOSName = () => string;
+type GetFileName = () => string;
+
+const MAC = 'MAC';
+const WINDOWS = 'Windows';
+const DEFAULT_OS = WINDOWS;
 
 // Detect 64-bit or 32-bit Windows from User Agent or Javascript? ref: https://goo.gl/bcsmpo
-
-const getOSBit = () => {
+export const getOSBit: GetOSBit = () => {
   if (
     window.navigator.userAgent.indexOf('WOW64') !== -1 ||
     window.navigator.userAgent.indexOf('Win64') !== -1
@@ -18,19 +26,19 @@ const getOSBit = () => {
   return 32;
 };
 
-const osNameMapper = R.cond([
-  [R.propEq('mac', true), R.always('MAC')],
-  [R.propEq('windows', true), R.always('Windows')],
+export const osNameMapper: OsNameMapper = R.cond([
+  [R.propEq('mac', true), R.always(MAC)],
+  [R.propEq('windows', true), R.always(WINDOWS)],
   // [R.propEq('linux', true), R.always('Linux')],
   [R.T, R.always(DEFAULT_OS)],
 ]);
 
-const fileNameMapper = R.cond([
+export const fileNameMapper: FileNameMapper = R.cond([
   [R.propEq('mac', true), R.always('osx64.tar.gz')],
   [R.propEq('windows', true), R.always(`win${getOSBit()}.zip`)],
   // [R.propEq('linux', true), R.always('Linux')],
   [R.T, R.always('win64.zip')],
 ]);
 
-export const getOSName = R.once(() => osNameMapper(bowser));
-export const getFileName = R.once(() => fileNameMapper(bowser));
+export const getOSName: GetOSName = R.once(() => osNameMapper(bowser));
+export const getFileName: GetFileName = R.once(() => fileNameMapper(bowser));

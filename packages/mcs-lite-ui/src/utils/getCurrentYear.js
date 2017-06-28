@@ -1,5 +1,9 @@
+// @flow
+
 import R from 'ramda';
 
-const getCurrentYear = R.once(() => new Date().getFullYear());
+type Fn = () => number;
+
+const getCurrentYear: Fn = R.once(() => new Date().getFullYear());
 
 export default getCurrentYear;

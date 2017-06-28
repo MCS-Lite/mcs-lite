@@ -40,7 +40,7 @@ describe('auth - 2. Action Creators', () => {
   });
 });
 
-jest.mock('../../utils/cookieHelper', () => ({
+jest.mock('mcs-lite-ui/lib/utils/cookieHelper', () => ({
   getCookieToken: () => 'fakeCookieToken5',
   removeCookieToken: () => {},
 }));

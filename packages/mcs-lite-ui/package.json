@@ -75,6 +75,7 @@
     "prop-types": "^15.5.10",
     "raf-throttle": "^2.0.2",
     "ramda": "^0.24.1",
+    "react-cookie": "^1.0.5",
     "react-hammerjs": "^0.5.0",
     "react-motion": "^0.5.0",
     "react-motion-ui-pack": "^0.10.3",

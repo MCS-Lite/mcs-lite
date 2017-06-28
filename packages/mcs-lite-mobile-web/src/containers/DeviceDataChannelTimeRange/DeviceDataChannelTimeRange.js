@@ -8,13 +8,13 @@ import P from 'mcs-lite-ui/lib/P';
 import DatetimePickerDialog from 'mcs-lite-ui/lib/DatetimePickerDialog';
 import Button from 'mcs-lite-ui/lib/Button';
 import MobileFixedFooter from 'mcs-lite-ui/lib/MobileFixedFooter';
+import { updatePathname } from 'mcs-lite-ui/lib/utils/routerHelper';
 import {
   Container,
   InputWrapper,
   FakeInput,
   ButtonWrapper,
 } from './styled-components';
-import { updatePathname } from '../../utils/routerHelper';
 import localTimeFormat from '../../utils/localTimeFormat';
 import StyledLink from '../../components/StyledLink';
 

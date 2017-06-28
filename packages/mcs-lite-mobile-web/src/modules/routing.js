@@ -2,7 +2,7 @@ import { push } from 'react-router-redux';
 import R from 'ramda';
 import { LOCATION_CHANGE } from 'react-router-redux/lib/reducer';
 import getBrowserLocale from 'browser-locale';
-import localeMapper from '../utils/localeMapper';
+import { localeMapper } from 'mcs-lite-ui/lib/utils/localeHelper';
 
 const DEFAULT_LOCALE = 'zh-TW';
 const browserLocale = getBrowserLocale();

@@ -1,5 +1,7 @@
 // @flow
 
-function emptyFunction() {}
+type Fn = () => void;
+
+const emptyFunction: Fn = () => {};
 
 export default emptyFunction;

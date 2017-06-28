@@ -3,7 +3,7 @@
 type Func = string => Object => Object;
 
 /**
- * For react-router <Link />
+ * For react-router 3.X <Link /> 'to' property
  * ref: https://github.com/ReactTraining/react-router/blob/master/docs/API.md#props-1
  *
  * // Function returning location descriptor.
