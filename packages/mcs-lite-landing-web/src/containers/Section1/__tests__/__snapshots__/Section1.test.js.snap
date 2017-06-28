@@ -25,7 +25,7 @@ exports[`should renders <Section1> correctly 1`] = `
       <SpaceTop
         height={40}
       >
-        <pure(InjectIntl(withPropsOnChange(DownloadButton)))
+        <InjectIntl(withPropsOnChange(pure(DownloadButton)))
           tag="v0.0.0"
         />
       </SpaceTop>
@@ -38,32 +38,7 @@ exports[`should renders <Section1> correctly 1`] = `
     <Breakpoints
       xs={true}
     >
-      <LazyloadOnce
-        component="div"
-        height={350}
-        waypointConfig={
-          Object {
-            "bottomOffset": -500,
-            "fireOnRapidScroll": true,
-            "topOffset": -500,
-          }
-        }
-      >
-        <styled.div
-          height={350}
-        >
-          <styled.div>
-            <styled.img
-              alt="desc"
-              src="img_mcs_screen.png"
-              title="title"
-            />
-          </styled.div>
-          <Breakpoints>
-            <LoadableComponent />
-          </Breakpoints>
-        </styled.div>
-      </LazyloadOnce>
+      <pure(Image) />
     </Breakpoints>
     <Breakpoints
       alt="desc"

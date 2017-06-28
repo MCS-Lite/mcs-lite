@@ -3,4 +3,4 @@ import { compose, pure } from 'recompose';
 import Header from './Header';
 import messages from './messages';
 
-export default compose(pure, withGetMessages(messages, 'Header'))(Header);
+export default compose(withGetMessages(messages, 'Header'), pure)(Header);

@@ -28,31 +28,63 @@ exports[`should renders <Chart> correctly 1`] = `
         data={
           Array [
             Object {
-              "updatedAt": "2016-12-13 00:00",
-              "value": 15,
+              "updatedAt": "2017-01-13 00:00",
+              "value": 21,
             },
             Object {
-              "updatedAt": "2016-12-13 00:01",
+              "updatedAt": "2017-01-13 00:00",
+              "value": 24,
+            },
+            Object {
+              "updatedAt": "2017-01-13 00:00",
+              "value": 21,
+            },
+            Object {
+              "updatedAt": "2017-02-13 00:01",
+              "value": 28,
+            },
+            Object {
+              "updatedAt": "2017-02-13 00:01",
               "value": 25,
             },
             Object {
-              "updatedAt": "2016-12-13 00:02",
+              "updatedAt": "2017-02-13 00:01",
+              "value": 25.2,
+            },
+            Object {
+              "updatedAt": "2017-03-13 00:02",
+              "value": 28,
+            },
+            Object {
+              "updatedAt": "2017-03-13 00:02",
+              "value": 28.1,
+            },
+            Object {
+              "updatedAt": "2017-03-13 00:02",
+              "value": 21.3,
+            },
+            Object {
+              "updatedAt": "2017-04-13 00:04",
               "value": 23,
             },
             Object {
-              "updatedAt": "2016-12-13 00:03",
-              "value": 12,
+              "updatedAt": "2017-04-13 00:04",
+              "value": 24.3,
             },
             Object {
-              "updatedAt": "2016-12-13 00:04",
-              "value": 23,
+              "updatedAt": "2017-04-13 00:04",
+              "value": 24,
             },
             Object {
-              "updatedAt": "2016-12-13 00:05",
+              "updatedAt": "2017-05-13 00:05",
               "value": 20,
             },
             Object {
-              "updatedAt": "2016-12-13 00:06",
+              "updatedAt": "2017-05-13 00:05",
+              "value": 21.5,
+            },
+            Object {
+              "updatedAt": "2017-06-13 00:06",
               "value": 24.5,
             },
           ]

@@ -4,4 +4,4 @@ import { compose, pure } from 'recompose';
 import App from './App';
 import messages from './messages';
 
-export default compose(pure, withGetMessages(messages, 'App'), withRouter)(App);
+export default compose(withGetMessages(messages, 'App'), withRouter, pure)(App);

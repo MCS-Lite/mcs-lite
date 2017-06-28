@@ -36,11 +36,6 @@ const StyledNavItem = styled(NavItem)`
   align-items: center;
   justify-content: center;
 
-  &:hover {
-    color: ${props =>
-      props.disabled ? props.theme.color.grayBase : props.theme.color.primary};
-  }
-
   &:not(a) {
     box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.05);
     margin: 0 50px;

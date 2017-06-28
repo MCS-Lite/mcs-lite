@@ -5,6 +5,7 @@ import Transition from 'react-motion-ui-pack';
 import Heading from 'mcs-lite-ui/lib/Heading';
 import last from 'ramda/src/last';
 import DataPointAreaChart from 'mcs-lite-ui/lib/DataPointAreaChart';
+import localTimeFormat from 'mcs-lite-ui/lib/utils/localTimeFormat';
 
 const IMAGE_WIDTH = 580; // image = 350 * 580
 
@@ -37,24 +38,39 @@ const StyledHeading = styled(Heading)`
   margin-bottom: 25px;
 `;
 
+function getRandomValue(min = 20, max = 35, digits = 2) {
+  return Number((Math.random() * (max - min) + min).toFixed(digits));
+}
+
 class Chart extends React.PureComponent {
   state = {
     data: [
-      { value: 15, updatedAt: '2016-12-13 00:00' },
-      { value: 25, updatedAt: '2016-12-13 00:01' },
-      { value: 23, updatedAt: '2016-12-13 00:02' },
-      { value: 12, updatedAt: '2016-12-13 00:03' },
-      { value: 23, updatedAt: '2016-12-13 00:04' },
-      { value: 20, updatedAt: '2016-12-13 00:05' },
-      { value: 24.5, updatedAt: '2016-12-13 00:06' },
+      { value: 21, updatedAt: '2017-01-13 00:00' },
+      { value: 24, updatedAt: '2017-01-13 00:00' },
+      { value: 21, updatedAt: '2017-01-13 00:00' },
+      { value: 28, updatedAt: '2017-02-13 00:01' },
+      { value: 25, updatedAt: '2017-02-13 00:01' },
+      { value: 25.2, updatedAt: '2017-02-13 00:01' },
+      { value: 28, updatedAt: '2017-03-13 00:02' },
+      { value: 28.1, updatedAt: '2017-03-13 00:02' },
+      { value: 21.3, updatedAt: '2017-03-13 00:02' },
+      { value: 23, updatedAt: '2017-04-13 00:04' },
+      { value: 24.3, updatedAt: '2017-04-13 00:04' },
+      { value: 24, updatedAt: '2017-04-13 00:04' },
+      { value: 20, updatedAt: '2017-05-13 00:05' },
+      { value: 21.5, updatedAt: '2017-05-13 00:05' },
+      { value: 24.5, updatedAt: '2017-06-13 00:06' },
     ],
   };
   componentDidMount() {
-    this.interval = setInterval(this.appendData, 1500);
+    this.timeout = setTimeout(() => {
+      this.interval = setInterval(this.appendData, 1500);
+    }, 1000);
   }
 
   componentWillUnmount() {
     clearInterval(this.interval);
+    clearTimeout(this.timeout);
     this.appendData.canel();
   }
 
@@ -63,8 +79,8 @@ class Chart extends React.PureComponent {
       data: [
         ...this.state.data.slice(1),
         {
-          value: Math.round(Math.random() * 30, -2),
-          updatedAt: '2016-12-13 00:07',
+          value: getRandomValue(),
+          updatedAt: localTimeFormat(new Date()),
         },
       ],
     });

@@ -1,5 +1,6 @@
 import React from 'react';
 import Transition from 'react-motion-ui-pack';
+import { pure } from 'recompose';
 import ScrollParallax from 'rc-scroll-anim/lib/ScrollParallax';
 import LazyloadOnce from 'mcs-lite-ui/lib/LazyloadOnce';
 import ImageLayerWrapper from '../../components/ImageLayerWrapper';
@@ -37,4 +38,4 @@ const Image = () =>
     </Transition>
   </LazyloadOnce>;
 
-export default Image;
+export default pure(Image);

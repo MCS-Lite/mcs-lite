@@ -7,30 +7,28 @@ import { localeMapper } from 'mcs-lite-ui/lib/utils/localeHelper';
 export const DEFAULT_LOCALE = 'en';
 const defaultLocaleMapper = localeMapper(DEFAULT_LOCALE);
 
-const IntlProvider = ({ defaultLocale, router, ...otherProps }) => {
+const IntlProvider = ({ router, children }) => {
   // Remind: fix for netlify redirect to lower case path
   const locale = defaultLocaleMapper(router.params.locale);
 
   return (
     <ReactIntlProvider
-      {...otherProps}
-      defaultLocale={defaultLocale}
+      defaultLocale={DEFAULT_LOCALE}
       locale={locale}
       messages={translation[locale]}
-    />
+    >
+      {children}
+    </ReactIntlProvider>
   );
 };
 
 IntlProvider.displayName = 'IntlProvider';
 IntlProvider.propTypes = {
   // Props
-  defaultLocale: PropTypes.string,
+  children: PropTypes.node.isRequired,
 
   // React-Router HOC
   router: PropTypes.object.isRequired,
-};
-IntlProvider.defaultProps = {
-  defaultLocale: 'en',
 };
 
 export default IntlProvider;

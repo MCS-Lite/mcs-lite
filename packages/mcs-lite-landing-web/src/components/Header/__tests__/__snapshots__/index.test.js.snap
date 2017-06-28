@@ -1,3 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`should render Container correctly with HOC 1`] = `<InjectIntl(withPropsOnChange(Header)) />`;
+exports[`should render Container correctly with HOC 1`] = `
+<pure(IntlProvider)>
+  <InjectIntl(withPropsOnChange(pure(Header))) />
+</pure(IntlProvider)>
+`;

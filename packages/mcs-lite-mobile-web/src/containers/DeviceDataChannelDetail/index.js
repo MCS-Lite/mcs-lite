@@ -5,11 +5,11 @@ import R from 'ramda';
 import compose from 'recompose/compose';
 import { withGetMessages } from 'react-intl-inject-hoc';
 import { connectSocket } from 'mcs-lite-connect';
+import localTimeFormat from 'mcs-lite-ui/lib/utils/localTimeFormat';
 import messages from './messages';
 import { actions as devicesActions } from '../../modules/devices';
 import { actions as datapointsActions } from '../../modules/datapoints';
 import DeviceDataChannelDetail from './DeviceDataChannelDetail';
-import localTimeFormat from '../../utils/localTimeFormat';
 
 export const mapStateToProps = (
   { devices, datapoints },

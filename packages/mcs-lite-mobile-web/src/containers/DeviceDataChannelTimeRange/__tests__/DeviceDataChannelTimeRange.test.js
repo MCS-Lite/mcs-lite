@@ -4,7 +4,9 @@ import { shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
 import DeviceDataChannelTimeRange from '../DeviceDataChannelTimeRange';
 
-jest.mock('../../../utils/localTimeFormat', () => () => 'mocklocalTimeFormat');
+jest.mock('mcs-lite-ui/lib/utils/localTimeFormat', () => () =>
+  'mocklocalTimeFormat',
+);
 
 it('should renders <DeviceDataChannelTimeRange> correctly', () => {
   const fetchDeviceMock = jest.fn();

@@ -30,8 +30,8 @@ exports[`should renders <Section2> correctly 1`] = `
             Object {
               "opacity": 1,
               "playScale": Array [
-                0.3,
-                0.6,
+                0,
+                0.5,
               ],
             }
           }
@@ -46,7 +46,7 @@ exports[`should renders <Section2> correctly 1`] = `
       <SpaceTop
         height={20}
       >
-        <Image />
+        <pure(Image) />
       </SpaceTop>
     </TextCenter>
   </Breakpoints>
