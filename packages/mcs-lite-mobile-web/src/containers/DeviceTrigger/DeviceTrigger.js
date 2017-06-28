@@ -7,10 +7,10 @@ import PreventDrag from 'mcs-lite-ui/lib/PreventDrag';
 import PullToRefresh from 'mcs-lite-ui/lib/PullToRefresh';
 import P from 'mcs-lite-ui/lib/P';
 import MobileHeader from 'mcs-lite-ui/lib/MobileHeader';
+import { updatePathname } from 'mcs-lite-ui/lib/utils/routerHelper';
 import { Link } from 'react-router';
 import StyledLink from '../../components/StyledLink';
 import { Item, StyledSamll, IconWrapper } from './styled-components';
-import { updatePathname } from '../../utils/routerHelper';
 
 class DeviceTrigger extends React.Component {
   static propTypes = {

@@ -1,4 +1,6 @@
-import { updatePathname, updateLocale } from '../../utils/routerHelper';
+// @flow
+
+import { updatePathname, updateLocale } from '../routerHelper';
 
 it('should return functions', () => {
   expect(typeof updatePathname).toBe('function');

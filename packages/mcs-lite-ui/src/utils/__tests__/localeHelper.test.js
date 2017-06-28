@@ -1,6 +1,12 @@
-import localeMapper from '../localeMapper';
+// @flow
 
-it('should return correct locale', () => {
+import { LOCALES, localeMapper, getMCSLinkByLocale } from '../localeHelper';
+
+it('should return LOCALES', () => {
+  expect(LOCALES).toMatchSnapshot();
+});
+
+it('should return correct locale with localeMapper', () => {
   const defaultLocaleMapper = localeMapper('zh-TW');
 
   expect(defaultLocaleMapper('zh-tW')).toBe('zh-TW');
@@ -17,4 +23,10 @@ it('should return correct locale', () => {
   expect(defaultLocaleMapper('EN')).toBe('en');
   expect(defaultLocaleMapper('ja')).toBe('zh-TW');
   expect(defaultLocaleMapper('others')).toBe('zh-TW');
+});
+
+it('should return correct links with getMCSLinkByLocale', () => {
+  expect(getMCSLinkByLocale('zh-TW')).toBe('https://mcs.mediatek.com/zh-TW/');
+  expect(getMCSLinkByLocale('zh-CN')).toBe('https://mcs.mediatek.cn/');
+  expect(getMCSLinkByLocale('en')).toBe('https://mcs.mediatek.com/');
 });

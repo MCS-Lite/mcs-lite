@@ -10,6 +10,7 @@ import IconLoading from 'mcs-lite-icon/lib/IconLoading';
 import MobileHeader from 'mcs-lite-ui/lib/MobileHeader';
 import DataChannelCard from 'mcs-lite-ui/lib/DataChannelCard';
 import DataChannelAdapter from 'mcs-lite-ui/lib/DataChannelAdapter';
+import { updatePathname } from 'mcs-lite-ui/lib/utils/routerHelper';
 import P from 'mcs-lite-ui/lib/P';
 import Spin from 'mcs-lite-ui/lib/Spin';
 import {
@@ -25,7 +26,6 @@ import {
   ChartWrapper,
 } from './styled-components';
 import WebSocketNotification from '../../components/WebSocketNotification';
-import { updatePathname } from '../../utils/routerHelper';
 import localTimeFormat from '../../utils/localTimeFormat';
 
 const LoadableChart = Loadable({

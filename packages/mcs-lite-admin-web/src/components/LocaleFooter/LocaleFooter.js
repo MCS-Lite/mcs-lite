@@ -2,8 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router';
 import Small from 'mcs-lite-ui/lib/Small';
-import LOCALES from '../../utils/locales.json';
-import { updateLocale } from '../../utils/routerHelper';
+import { updateLocale } from 'mcs-lite-ui/lib/utils/routerHelper';
+import { LOCALES } from 'mcs-lite-ui/lib/utils/localeHelper';
 
 const Wrapper = styled.div`
   position: fixed;

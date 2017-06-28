@@ -9,6 +9,7 @@ import Button from 'mcs-lite-ui/lib/Button';
 import Input from 'mcs-lite-ui/lib/Input';
 import MobileFixedFooter from 'mcs-lite-ui/lib/MobileFixedFooter';
 import MobileHeader from 'mcs-lite-ui/lib/MobileHeader';
+import { updatePathname } from 'mcs-lite-ui/lib/utils/routerHelper';
 import { Link } from 'react-router';
 import StyledLink from '../../components/StyledLink';
 import {
@@ -19,7 +20,6 @@ import {
   ScaledSwitch,
   StyledHr,
 } from './styled-components';
-import { updatePathname } from '../../utils/routerHelper';
 
 class DeviceTriggerEdit extends React.Component {
   static propTypes = {

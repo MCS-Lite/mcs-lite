@@ -7,9 +7,9 @@ import MobileHeader from 'mcs-lite-ui/lib/MobileHeader';
 import IconMenu from 'mcs-lite-icon/lib/IconMenu';
 import Helmet from 'react-helmet';
 import { Link } from 'react-router';
+import { updatePathname } from 'mcs-lite-ui/lib/utils/routerHelper';
 import StyledLink from '../../components/StyledLink';
 import { Container, Label, ButtonWrapper, StyledP } from './styled-components';
-import { updatePathname } from '../../utils/routerHelper';
 import validators from './validators';
 
 class Password extends React.Component {

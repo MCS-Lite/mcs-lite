@@ -5,6 +5,7 @@ import IconPlay from 'mcs-lite-icon/lib/IconPlay';
 import IconStop from 'mcs-lite-icon/lib/IconStop';
 import IconPublic from 'mcs-lite-icon/lib/IconPublic';
 import IconLogout from 'mcs-lite-icon/lib/IconLogout';
+import { updatePathname } from 'mcs-lite-ui/lib/utils/routerHelper';
 import {
   Container,
   Header,
@@ -17,7 +18,6 @@ import {
   Main,
   StyledLogo,
 } from './styled-components';
-import { updatePathname } from '../../utils/routerHelper';
 
 const DashboardLayout = ({
   start,

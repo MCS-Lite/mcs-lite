@@ -3,10 +3,10 @@
 
 import { Observable } from 'rxjs/Observable';
 import { push } from 'react-router-redux';
+import cookieHelper from 'mcs-lite-ui/lib/utils/cookieHelper';
 import { actions as devicesActions } from './devices';
 import { actions as datapointsActions } from './datapoints';
 import { actions as uiActions } from './ui';
-import cookieHelper from '../utils/cookieHelper';
 import { success, failure, accessTokenSelector$ } from '../utils/cycleHelper';
 
 // ----------------------------------------------------------------------------
