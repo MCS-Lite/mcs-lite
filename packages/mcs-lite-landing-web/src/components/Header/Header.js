@@ -41,9 +41,10 @@ const LogoImage = styled.img`
 `;
 
 const DesktopNav = withBreakpoints(styled(Nav)`
+  display: none;
 
   @media (min-width: ${props => props.breakpoints.sm}px) {
-    display: none;
+    display: block;
   }
 `);
 
