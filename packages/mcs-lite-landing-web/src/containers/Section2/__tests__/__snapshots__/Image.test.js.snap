@@ -6,9 +6,9 @@ exports[`should renders <Image> correctly 1`] = `
   height={220}
   waypointConfig={
     Object {
-      "bottomOffset": -500,
+      "bottomOffset": -300,
       "fireOnRapidScroll": true,
-      "topOffset": -500,
+      "topOffset": -300,
     }
   }
 >
