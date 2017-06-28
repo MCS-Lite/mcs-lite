@@ -17,6 +17,7 @@ import {
   dataChannelTypeMapper,
   areaChartTypeMapper,
 } from 'mcs-lite-ui/lib/utils/dataChannelHelper';
+import localTimeFormat from 'mcs-lite-ui/lib/utils/localTimeFormat';
 import {
   CardContainer,
   StyledSamll,
@@ -26,7 +27,6 @@ import {
   ChartWrapper,
 } from './styled-components';
 import WebSocketNotification from '../../components/WebSocketNotification';
-import localTimeFormat from '../../utils/localTimeFormat';
 
 const LoadableChart = Loadable({
   loader: () => import('mcs-lite-ui/lib/DataPointAreaChart'),

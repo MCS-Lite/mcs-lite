@@ -3,4 +3,4 @@ import { compose, pure } from 'recompose';
 import Footer from './Footer';
 import messages from './messages';
 
-export default compose(pure, withGetMessages(messages, 'Footer'))(Footer);
+export default compose(withGetMessages(messages, 'Footer'), pure)(Footer);

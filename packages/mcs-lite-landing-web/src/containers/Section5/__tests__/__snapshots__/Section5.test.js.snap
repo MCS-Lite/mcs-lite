@@ -14,12 +14,12 @@ exports[`should renders <Section5> correctly 1`] = `
       <SpaceTop
         height={40}
       >
-        <Image />
+        <pure(Image) />
       </SpaceTop>
       <SpaceTop
         height={40}
       >
-        <pure(InjectIntl(withPropsOnChange(DownloadButton)))
+        <InjectIntl(withPropsOnChange(pure(DownloadButton)))
           tag="v0.0.0"
         />
       </SpaceTop>

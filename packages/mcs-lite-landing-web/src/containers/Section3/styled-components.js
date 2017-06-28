@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Row } from 'hedron';
+import { pure } from 'recompose';
 import styled from 'styled-components';
 import Transition from 'react-motion-ui-pack';
 import LazyloadOnce from 'mcs-lite-ui/lib/LazyloadOnce';
@@ -16,14 +17,15 @@ export const ImageWrapper = styled.div`
   border-radius: 3px;
 `;
 
-export const LazyloadIcon = ({ children }) =>
+export const LazyloadIcon = pure(({ children }) =>
   <LazyloadOnce height={HEIGHT}>
     <Transition component={false} enter={{ opacity: 1 }} leave={{ opacity: 0 }}>
       <ImageWrapper key="ImageWrapper">
         {children}
       </ImageWrapper>
     </Transition>
-  </LazyloadOnce>;
+  </LazyloadOnce>,
+);
 LazyloadIcon.displayName = 'LazyloadIcon';
 LazyloadIcon.propTypes = {
   children: PropTypes.node.isRequired,

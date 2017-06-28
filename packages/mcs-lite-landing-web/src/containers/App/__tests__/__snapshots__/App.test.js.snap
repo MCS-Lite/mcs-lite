@@ -94,18 +94,18 @@ exports[`should renders <App> correctly 1`] = `
       property="og:locale:alternate"
     />
   </HelmetWrapper>
-  <pure(InjectIntl(withPropsOnChange(Header)))
+  <InjectIntl(withPropsOnChange(pure(Header)))
     locale="zh-TW"
   />
-  <pure(InjectIntl(withPropsOnChange(Section1)))
+  <InjectIntl(withPropsOnChange(pure(Section1)))
     tag={null}
   />
-  <pure(InjectIntl(withPropsOnChange(Section2))) />
-  <pure(InjectIntl(withPropsOnChange(Section3))) />
-  <pure(InjectIntl(withPropsOnChange(Section4))) />
-  <pure(InjectIntl(withPropsOnChange(Section5)))
+  <InjectIntl(withPropsOnChange(pure(Section2))) />
+  <InjectIntl(withPropsOnChange(pure(Section3))) />
+  <InjectIntl(withPropsOnChange(pure(Section4))) />
+  <InjectIntl(withPropsOnChange(pure(Section5)))
     tag={null}
   />
-  <pure(InjectIntl(withPropsOnChange(Footer))) />
+  <InjectIntl(withPropsOnChange(pure(Footer))) />
 </div>
 `;

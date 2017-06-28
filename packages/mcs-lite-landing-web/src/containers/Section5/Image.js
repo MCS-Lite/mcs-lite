@@ -1,5 +1,6 @@
 import React from 'react';
 import Transition from 'react-motion-ui-pack';
+import { pure } from 'recompose';
 import ScrollParallax from 'rc-scroll-anim/lib/ScrollParallax';
 import LazyloadOnce from 'mcs-lite-ui/lib/LazyloadOnce';
 import ImageLayerWrapper from '../../components/ImageLayerWrapper';
@@ -17,14 +18,14 @@ const Image = () =>
       <ImageLayerWrapper height={HEIGHT} key="ImageLayerWrapper">
         <div>
           <ScrollParallax
-            animation={{ x: 0, y: 0, playScale: [0, 0.4] }}
+            animation={{ x: 0, y: 0, playScale: [0, 0.5] }}
             style={{ transform: 'translate(-5px, -32px)' }}
             component={SVGScreen}
           />
         </div>
         <div>
           <ScrollParallaxMachine
-            animation={{ rotate: 0, playScale: [0, 0.4] }}
+            animation={{ rotate: 0, playScale: [0, 0.5] }}
             style={{ transform: 'translateX(60px) rotate(15deg)' }}
             component={SVGMachine}
           />
@@ -35,4 +36,4 @@ const Image = () =>
     </Transition>
   </LazyloadOnce>;
 
-export default Image;
+export default pure(Image);

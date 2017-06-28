@@ -9,13 +9,13 @@ import DatetimePickerDialog from 'mcs-lite-ui/lib/DatetimePickerDialog';
 import Button from 'mcs-lite-ui/lib/Button';
 import MobileFixedFooter from 'mcs-lite-ui/lib/MobileFixedFooter';
 import { updatePathname } from 'mcs-lite-ui/lib/utils/routerHelper';
+import localTimeFormat from 'mcs-lite-ui/lib/utils/localTimeFormat';
 import {
   Container,
   InputWrapper,
   FakeInput,
   ButtonWrapper,
 } from './styled-components';
-import localTimeFormat from '../../utils/localTimeFormat';
 import StyledLink from '../../components/StyledLink';
 
 const YEARS = [2015, 2016, 2017, 2018];
