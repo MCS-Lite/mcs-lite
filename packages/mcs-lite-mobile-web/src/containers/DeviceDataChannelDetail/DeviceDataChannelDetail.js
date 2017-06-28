@@ -13,6 +13,10 @@ import DataChannelAdapter from 'mcs-lite-ui/lib/DataChannelAdapter';
 import P from 'mcs-lite-ui/lib/P';
 import Spin from 'mcs-lite-ui/lib/Spin';
 import {
+  dataChannelTypeMapper,
+  areaChartTypeMapper,
+} from 'mcs-lite-ui/lib/utils/dataChannelHelper';
+import {
   CardContainer,
   StyledSamll,
   HistoryHeader,
@@ -22,9 +26,7 @@ import {
 } from './styled-components';
 import WebSocketNotification from '../../components/WebSocketNotification';
 import { updatePathname } from '../../utils/routerHelper';
-import dataChannelTypeMapper from '../../utils/dataChannelTypeMapper';
 import localTimeFormat from '../../utils/localTimeFormat';
-import areaChartTypeMapper from '../../utils/areaChartTypeMapper';
 
 const LoadableChart = Loadable({
   loader: () => import('mcs-lite-ui/lib/DataPointAreaChart'),
