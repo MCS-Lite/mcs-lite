@@ -41,10 +41,10 @@ const LogoImage = styled.img`
 `;
 
 const DesktopNav = withBreakpoints(styled(Nav)`
-  display: inherit;
+  display: none;
 
   @media (min-width: ${props => props.breakpoints.sm}px) {
-    display: block;
+    display: inherit;
   }
 `);
 

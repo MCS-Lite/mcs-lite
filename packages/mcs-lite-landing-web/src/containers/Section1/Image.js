@@ -34,7 +34,9 @@ const Image = ({ breakpoints }) =>
               <BackgroundImage src={imgScreen} />
             </BackgroundImageWrapper>
             <ChartWrapper>
-              <LoadabChart />
+              <LazyloadOnce>
+                <LoadabChart />
+              </LazyloadOnce>
             </ChartWrapper>
           </ImageLayerWrapper>
         : <ScreenImageMobile src={imgScreen} />}
