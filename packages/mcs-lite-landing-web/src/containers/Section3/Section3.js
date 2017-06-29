@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Column } from 'hedron';
+import Loadable from 'react-loadable';
 import ScrollParallax from 'rc-scroll-anim/lib/ScrollParallax';
 import Heading from 'mcs-lite-ui/lib/Heading';
 import B from 'mcs-lite-ui/lib/B';
@@ -8,11 +9,30 @@ import P from 'mcs-lite-ui/lib/P';
 import TextCenter from 'mcs-lite-ui/lib/TextCenter';
 import SpaceTop from 'mcs-lite-ui/lib/SpaceTop';
 import SectionRow from '../../components/SectionRow';
-import SVGData from '../../components/SVG/SVGData';
-import SVGRemote from '../../components/SVG/SVGRemote';
-import SVGManagement from '../../components/SVG/SVGManagement';
-import SVGMobile from '../../components/SVG/SVGMobile';
 import { LazyloadIcon, StyledRow } from './styled-components';
+
+const LoadableSVGData = Loadable({
+  loader: () =>
+    import(/* webpackChunkName: "Section" */ '../../components/SVG/SVGData'),
+  loading: () => null,
+});
+const LoadableSVGRemote = Loadable({
+  loader: () =>
+    import(/* webpackChunkName: "Section" */ '../../components/SVG/SVGRemote'),
+  loading: () => null,
+});
+const LoadableSVGManagement = Loadable({
+  loader: () =>
+    import(
+      /* webpackChunkName: "Section" */ '../../components/SVG/SVGManagement',
+    ),
+  loading: () => null,
+});
+const LoadableSVGMobile = Loadable({
+  loader: () =>
+    import(/* webpackChunkName: "Section" */ '../../components/SVG/SVGMobile'),
+  loading: () => null,
+});
 
 const Section3 = ({ getMessages: t }) =>
   <SectionRow>
@@ -37,7 +57,7 @@ const Section3 = ({ getMessages: t }) =>
             style={{ opacity: 0, transform: 'translateY(-30px)' }}
           >
             <LazyloadIcon>
-              <SVGData />
+              <LoadableSVGData />
             </LazyloadIcon>
           </ScrollParallax>
           <SpaceTop height={20}>
@@ -62,7 +82,7 @@ const Section3 = ({ getMessages: t }) =>
             style={{ opacity: 0, transform: 'translateY(-30px)' }}
           >
             <LazyloadIcon>
-              <SVGRemote />
+              <LoadableSVGRemote />
             </LazyloadIcon>
           </ScrollParallax>
           <SpaceTop height={20}>
@@ -87,7 +107,7 @@ const Section3 = ({ getMessages: t }) =>
             style={{ opacity: 0, transform: 'translateY(-30px)' }}
           >
             <LazyloadIcon>
-              <SVGManagement />
+              <LoadableSVGManagement />
             </LazyloadIcon>
           </ScrollParallax>
           <SpaceTop height={20}>
@@ -112,7 +132,7 @@ const Section3 = ({ getMessages: t }) =>
             style={{ opacity: 0, transform: 'translateY(-30px)' }}
           >
             <LazyloadIcon>
-              <SVGMobile />
+              <LoadableSVGMobile />
             </LazyloadIcon>
           </ScrollParallax>
           <SpaceTop height={20}>

@@ -1,9 +1,8 @@
-import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 const ImageLayerWrapper = styled.div`
   position: relative;
-  height: ${props => props.height}px;
+  height: 100%;
 
   > * {
     position: absolute;
@@ -11,10 +10,5 @@ const ImageLayerWrapper = styled.div`
     right: 0;
   }
 `;
-
-ImageLayerWrapper.displayName = 'ImageLayerWrapper';
-ImageLayerWrapper.propTypes = {
-  height: PropTypes.number.isRequired,
-};
 
 export default ImageLayerWrapper;

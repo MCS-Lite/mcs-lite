@@ -10,14 +10,6 @@ exports[`should renders <Footer> correctly 1`] = `
         xs={12}
       >
         <Breakpoints>
-          <P
-            color="white"
-          >
-            © 
-            2017
-             
-            desc
-          </P>
           <styled.div>
             <A
               color="primary"
@@ -60,6 +52,14 @@ exports[`should renders <Footer> correctly 1`] = `
               </LazyloadOnce>
             </A>
           </styled.div>
+          <P
+            color="white"
+          >
+            © 
+            2017
+             
+            desc
+          </P>
         </Breakpoints>
       </Styled(Breakpoints)>
     </Styled(RowContainer)>

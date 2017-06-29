@@ -14,7 +14,19 @@ exports[`should renders <Section5> correctly 1`] = `
       <SpaceTop
         height={40}
       >
-        <pure(Image) />
+        <LazyloadOnce
+          component="div"
+          height={171}
+          waypointConfig={
+            Object {
+              "bottomOffset": -500,
+              "fireOnRapidScroll": true,
+              "topOffset": -500,
+            }
+          }
+        >
+          <LoadableComponent />
+        </LazyloadOnce>
       </SpaceTop>
       <SpaceTop
         height={40}

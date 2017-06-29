@@ -6,8 +6,7 @@ import Heading from 'mcs-lite-ui/lib/Heading';
 import last from 'ramda/src/last';
 import DataPointAreaChart from 'mcs-lite-ui/lib/DataPointAreaChart';
 import localTimeFormat from 'mcs-lite-ui/lib/utils/localTimeFormat';
-
-const IMAGE_WIDTH = 580; // image = 350 * 580
+import { IMAGE_WIDTH } from './styled-components';
 
 const Wrapper = styled.div`
   display: flex;
@@ -71,7 +70,7 @@ class Chart extends React.PureComponent {
   componentWillUnmount() {
     clearInterval(this.interval);
     clearTimeout(this.timeout);
-    this.appendData.canel();
+    this.appendData.cancel();
   }
 
   appendData = rafThrottle(() => {

@@ -19,7 +19,19 @@ exports[`should renders <Section4> correctly 1`] = `
       xs={12}
     >
       <styled.div>
-        <pure(Component) />
+        <LazyloadOnce
+          component="div"
+          height={170}
+          waypointConfig={
+            Object {
+              "bottomOffset": -500,
+              "fireOnRapidScroll": true,
+              "topOffset": -500,
+            }
+          }
+        >
+          <LoadableComponent />
+        </LazyloadOnce>
         <SpaceTop
           height={20}
         >
@@ -64,7 +76,19 @@ exports[`should renders <Section4> correctly 1`] = `
       xs={12}
     >
       <styled.div>
-        <pure(Component) />
+        <LazyloadOnce
+          component="div"
+          height={170}
+          waypointConfig={
+            Object {
+              "bottomOffset": -500,
+              "fireOnRapidScroll": true,
+              "topOffset": -500,
+            }
+          }
+        >
+          <LoadableComponent />
+        </LazyloadOnce>
         <SpaceTop
           height={20}
         >

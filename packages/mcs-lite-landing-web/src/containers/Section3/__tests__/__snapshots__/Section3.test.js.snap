@@ -60,7 +60,7 @@ exports[`should renders <Section3> correctly 1`] = `
           }
         >
           <LazyloadIcon>
-            <SVGData />
+            <LoadableComponent />
           </LazyloadIcon>
         </ScrollParallax>
         <SpaceTop
@@ -119,7 +119,7 @@ exports[`should renders <Section3> correctly 1`] = `
           }
         >
           <LazyloadIcon>
-            <SVGRemote />
+            <LoadableComponent />
           </LazyloadIcon>
         </ScrollParallax>
         <SpaceTop
@@ -178,7 +178,7 @@ exports[`should renders <Section3> correctly 1`] = `
           }
         >
           <LazyloadIcon>
-            <SVGManagement />
+            <LoadableComponent />
           </LazyloadIcon>
         </ScrollParallax>
         <SpaceTop
@@ -237,7 +237,7 @@ exports[`should renders <Section3> correctly 1`] = `
           }
         >
           <LazyloadIcon>
-            <SVGMobile />
+            <LoadableComponent />
           </LazyloadIcon>
         </ScrollParallax>
         <SpaceTop

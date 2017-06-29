@@ -1,0 +1,243 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render components correctly 1`] = `
+Array [
+  .dqSROF {
+  display: block;
+  box-sizing: border-box;
+  padding: 20px;
+  width: 100%;
+}
+
+.wVyOk {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.wVyOk > *:first-child {
+  padding-left: 0;
+}
+
+.wVyOk > *:last-child {
+  padding-right: 0;
+}
+
+.efjXid {
+  padding-top: 0;
+  padding-bottom: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-between;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: space-between;
+  justify-content: space-between;
+}
+
+.brTxhw {
+  visibility: hidden;
+  display: none;
+}
+
+.jssEWI {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.jmtTFj {
+  height: 28px;
+  width: auto;
+}
+
+.klBtWC {
+  display: none;
+}
+
+.golqhY .sc-EHOje {
+  padding-right: 0;
+}
+
+@media (min-width: 768px) {
+  .klBtWC {
+    display: inherit;
+  }
+}
+
+<div>
+    <Styled(Breakpoints)>
+        <Breakpoints
+            className="sc-bZQynM efjXid"
+        >
+            <Styled(ColumnContainer)
+                breakpoints={
+                    Object {
+                        "lg": 1170,
+                        "md": 970,
+                        "sm": 768,
+                      }
+                }
+                className="sc-bZQynM efjXid"
+            >
+                <ColumnContainer
+                    breakpoints={
+                        Object {
+                            "lg": 1170,
+                            "md": 970,
+                            "sm": 768,
+                          }
+                    }
+                    className="sc-bZQynM efjXid sc-htpNat dqSROF"
+                    divisions={12}
+                >
+                    <div
+                        className="sc-bZQynM efjXid sc-htpNat dqSROF"
+                    />
+                </ColumnContainer>
+            </Styled(ColumnContainer)>
+        </Breakpoints>
+    </Styled(Breakpoints)>
+    <styled.div>
+        <div
+            className="sc-gzVnrw brTxhw"
+        />
+    </styled.div>
+    <Styled(Link)>
+        <Link
+            className="sc-htoDjs jssEWI"
+            onlyActiveOnIndex={false}
+            style={Object {}}
+        >
+            <a
+                className="sc-htoDjs jssEWI"
+                onClick={[Function]}
+                style={Object {}}
+            />
+        </Link>
+    </Styled(Link)>
+    <styled.img>
+        <img
+            className="sc-dnqmqq jmtTFj"
+        />
+    </styled.img>
+    <Breakpoints>
+        <Styled(styled.div)
+            breakpoints={
+                Object {
+                    "lg": 1170,
+                    "md": 970,
+                    "sm": 768,
+                  }
+            }
+        >
+            <styled.div
+                breakpoints={
+                    Object {
+                        "lg": 1170,
+                        "md": 970,
+                        "sm": 768,
+                      }
+                }
+                className="sc-iwsKbI klBtWC"
+            >
+                <div
+                    className="sc-iwsKbI klBtWC sc-ifAKCX wVyOk"
+                />
+            </styled.div>
+        </Styled(styled.div)>
+    </Breakpoints>
+    <Styled(styled.div)>
+        <styled.div
+            className="sc-gZMcBi golqhY"
+        >
+            <div
+                className="sc-gZMcBi golqhY sc-ifAKCX wVyOk"
+            />
+        </styled.div>
+    </Styled(styled.div)>
+</div>,
+  .dqSROF {
+  display: block;
+  box-sizing: border-box;
+  padding: 20px;
+  width: 100%;
+}
+
+.efjXid {
+  padding-top: 0;
+  padding-bottom: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-between;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: space-between;
+  justify-content: space-between;
+}
+
+<div
+    className="sc-bZQynM efjXid sc-htpNat dqSROF"
+/>,
+  .brTxhw {
+  visibility: hidden;
+  display: none;
+}
+
+<div
+    className="sc-gzVnrw brTxhw"
+/>,
+  .wVyOk {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.wVyOk > *:first-child {
+  padding-left: 0;
+}
+
+.wVyOk > *:last-child {
+  padding-right: 0;
+}
+
+.klBtWC {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .klBtWC {
+    display: inherit;
+  }
+}
+
+<div
+    className="sc-iwsKbI klBtWC sc-ifAKCX wVyOk"
+/>,
+  .wVyOk {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.wVyOk > *:first-child {
+  padding-left: 0;
+}
+
+.wVyOk > *:last-child {
+  padding-right: 0;
+}
+
+.golqhY .sc-EHOje {
+  padding-right: 0;
+}
+
+<div
+    className="sc-gZMcBi golqhY sc-ifAKCX wVyOk"
+/>,
+]
+`;

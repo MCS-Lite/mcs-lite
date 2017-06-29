@@ -2,7 +2,55 @@
 
 exports[`should render components correctly 1`] = `
 Array [
-  .kQXKVV {
+  .dqSROF {
+  display: block;
+  box-sizing: border-box;
+  padding: 20px;
+  width: 100%;
+}
+
+.YiQQu {
+  background-color: #40494D;
+}
+
+.hevWBg {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.gtVLpG {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.gtVLpG a {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: space-between;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: space-between;
+  justify-content: space-between;
+}
+
+.gtVLpG a + a {
+  margin-left: 20px;
+}
+
+.gtVLpG img {
+  height: 32px;
+  width: 32px;
+  color: #FFFFFF;
+}
+
+.kQXKVV {
   height: 32px;
   width: 32px;
   display: -webkit-box;
@@ -24,13 +72,156 @@ Array [
   text-decoration: none;
 }
 
+.dEuNnW {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-align: center;
+  text-align: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.dEuNnW .sc-bZQynM {
+  margin-bottom: 5px;
+}
+
+@media (min-width: 768px) {
+  .dEuNnW {
+    -webkit-box-pack: space-between;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: space-between;
+    justify-content: space-between;
+    -webkit-flex-direction: row-reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+  }
+
+  .dEuNnW .sc-bZQynM {
+    margin-bottom: 0;
+  }
+}
+
 <div>
+    <styled.footer>
+        <footer
+            className="sc-ifAKCX YiQQu"
+        />
+    </styled.footer>
+    <Styled(Breakpoints)>
+        <Breakpoints
+            className="sc-EHOje hevWBg"
+        >
+            <Styled(ColumnContainer)
+                breakpoints={
+                    Object {
+                        "lg": 1170,
+                        "md": 970,
+                        "sm": 768,
+                      }
+                }
+                className="sc-EHOje hevWBg"
+            >
+                <ColumnContainer
+                    breakpoints={
+                        Object {
+                            "lg": 1170,
+                            "md": 970,
+                            "sm": 768,
+                          }
+                    }
+                    className="sc-EHOje hevWBg sc-htpNat dqSROF"
+                    divisions={12}
+                >
+                    <div
+                        className="sc-EHOje hevWBg sc-htpNat dqSROF"
+                    />
+                </ColumnContainer>
+            </Styled(ColumnContainer)>
+        </Breakpoints>
+    </Styled(Breakpoints)>
+    <styled.div>
+        <div
+            className="sc-bZQynM gtVLpG"
+        />
+    </styled.div>
     <styled.div>
         <div
             className="sc-gzVnrw kQXKVV"
         />
     </styled.div>
+    <Breakpoints>
+        <styled.div
+            breakpoints={
+                Object {
+                    "lg": 1170,
+                    "md": 970,
+                    "sm": 768,
+                  }
+            }
+        >
+            <div
+                className="sc-htoDjs dEuNnW"
+            />
+        </styled.div>
+    </Breakpoints>
 </div>,
+  .dqSROF {
+  display: block;
+  box-sizing: border-box;
+  padding: 20px;
+  width: 100%;
+}
+
+.hevWBg {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+<div
+    className="sc-EHOje hevWBg sc-htpNat dqSROF"
+/>,
+  .gtVLpG {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.gtVLpG a {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: space-between;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: space-between;
+  justify-content: space-between;
+}
+
+.gtVLpG a + a {
+  margin-left: 20px;
+}
+
+.gtVLpG img {
+  height: 32px;
+  width: 32px;
+  color: #FFFFFF;
+}
+
+<div
+    className="sc-bZQynM gtVLpG"
+/>,
   .kQXKVV {
   height: 32px;
   width: 32px;
@@ -55,6 +246,45 @@ Array [
 
 <div
     className="sc-gzVnrw kQXKVV"
+/>,
+  .dEuNnW {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-align: center;
+  text-align: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.dEuNnW .sc-bZQynM {
+  margin-bottom: 5px;
+}
+
+@media (min-width: 768px) {
+  .dEuNnW {
+    -webkit-box-pack: space-between;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: space-between;
+    justify-content: space-between;
+    -webkit-flex-direction: row-reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+  }
+
+  .dEuNnW .sc-bZQynM {
+    margin-bottom: 0;
+  }
+}
+
+<div
+    className="sc-htoDjs dEuNnW"
 />,
 ]
 `;

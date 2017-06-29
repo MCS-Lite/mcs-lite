@@ -2,39 +2,219 @@
 
 exports[`should render components correctly 1`] = `
 Array [
-  .cwsUEf {
-  display: none;
+  .irrVft {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.dqSROF {
+  display: block;
+  box-sizing: border-box;
+  padding: 20px;
+  width: 100%;
+}
+
+.bIAnAi {
+  margin: 0 auto;
+  max-width: 100%;
+  width: 960px;
+}
+
+.jMkBSN {
+  padding: 60px 0;
+  background-color: #FFFFFF;
+}
+
+.kqmuqK {
+  background-image: linear-gradient(-180deg, #FAFAFA 0%, #F1F2F7 100%);
+  padding-bottom: 0;
+  overflow: hidden;
+}
+
+.cLFRsP {
+  -webkit-text-align: center;
+  text-align: center;
+}
+
+.fpqQNs {
+  padding-bottom: 0;
+}
+
+.gmcvRn {
+  display: block;
   height: auto;
   width: 100%;
   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.1);
 }
 
-.hEgnZI {
+.jJjiey {
   position: relative;
-  height: px;
 }
 
-.hEgnZI > * {
+.cyIVWh {
+  display: none;
+}
+
+.jLHOiw {
+  display: block;
+  height: auto;
+  width: 100%;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.1);
+}
+
+.dmdnyd {
+  height: 100%;
+  -webkit-text-align: center;
+  text-align: center;
+}
+
+.cpdIrH {
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   position: absolute;
-  bottom: 0;
+  -webkit-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  transform: translateY(-100%);
   left: 0;
   right: 0;
 }
 
-@media (max-width: 970px) {
-  .eZeFAD {
-    -webkit-text-align: center;
-    text-align: center;
+.daFCqo {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+@media (min-width: 970px) {
+  .cLFRsP {
+    -webkit-text-align: left;
+    text-align: left;
   }
 }
 
-@media (max-width: 768px) {
-  .cwsUEf {
+@media (min-width: 768px) {
+  .jJjiey {
+    height: px;
+  }
+
+  .jJjiey > * {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .cyIVWh {
+    display: initial;
+    height: 100%;
+    width: auto;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.1);
+  }
+}
+
+@media (min-width: 768px) {
+  .jLHOiw {
+    display: initial;
+    height: 100%;
+    width: auto;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.1);
+  }
+}
+
+@media (min-width: 970px) {
+  .cpdIrH {
+    width: 577px;
+  }
+}
+
+@media (min-width: 768px) {
+  .cpdIrH {
+    position: initial;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+    left: initial;
+    right: initial;
+  }
+}
+
+@media (min-width: 970px) {
+  .daFCqo {
     display: block;
   }
 }
 
 <div>
+    <Styled(pure(SectionRow))>
+        <pure(SectionRow)
+            className="sc-EHOje kqmuqK"
+        >
+            <SectionRow
+                className="sc-EHOje kqmuqK"
+            >
+                <styled.div
+                    className="sc-EHOje kqmuqK"
+                >
+                    <div
+                        className="sc-EHOje kqmuqK sc-ifAKCX jMkBSN"
+                    >
+                        <Styled(PageContainer)
+                            width="960px"
+                        >
+                            <PageContainer
+                                className="sc-bxivhb bIAnAi"
+                                width="960px"
+                            >
+                                <div
+                                    className="sc-bxivhb bIAnAi"
+                                    width="960px"
+                                >
+                                    <Styled(RowContainer)>
+                                        <RowContainer
+                                            className="sc-bwzfXH irrVft"
+                                            divisions={12}
+                                        >
+                                            <section
+                                                className="sc-bwzfXH irrVft"
+                                            >
+                                                children
+                                            </section>
+                                        </RowContainer>
+                                    </Styled(RowContainer)>
+                                </div>
+                            </PageContainer>
+                        </Styled(PageContainer)>
+                    </div>
+                </styled.div>
+            </SectionRow>
+        </pure(SectionRow)>
+    </Styled(pure(SectionRow))>
     <Breakpoints>
         <styled.div
             breakpoints={
@@ -46,7 +226,69 @@ Array [
             }
         >
             <div
-                className="sc-bZQynM eZeFAD"
+                className="sc-bZQynM cLFRsP"
+            />
+        </styled.div>
+    </Breakpoints>
+    <Styled(Breakpoints)>
+        <Breakpoints
+            className="sc-gzVnrw fpqQNs"
+        >
+            <Styled(ColumnContainer)
+                breakpoints={
+                    Object {
+                        "lg": 1170,
+                        "md": 970,
+                        "sm": 768,
+                      }
+                }
+                className="sc-gzVnrw fpqQNs"
+            >
+                <ColumnContainer
+                    breakpoints={
+                        Object {
+                            "lg": 1170,
+                            "md": 970,
+                            "sm": 768,
+                          }
+                    }
+                    className="sc-gzVnrw fpqQNs sc-htpNat dqSROF"
+                    divisions={12}
+                >
+                    <div
+                        className="sc-gzVnrw fpqQNs sc-htpNat dqSROF"
+                    />
+                </ColumnContainer>
+            </Styled(ColumnContainer)>
+        </Breakpoints>
+    </Styled(Breakpoints)>
+    <Breakpoints>
+        <styled.img
+            breakpoints={
+                Object {
+                    "lg": 1170,
+                    "md": 970,
+                    "sm": 768,
+                  }
+            }
+        >
+            <img
+                className="sc-htoDjs gmcvRn"
+            />
+        </styled.img>
+    </Breakpoints>
+    <Breakpoints>
+        <styled.div
+            breakpoints={
+                Object {
+                    "lg": 1170,
+                    "md": 970,
+                    "sm": 768,
+                  }
+            }
+        >
+            <div
+                className="sc-dnqmqq jJjiey"
             />
         </styled.div>
     </Breakpoints>
@@ -61,40 +303,276 @@ Array [
             }
         >
             <img
-                className="sc-htoDjs cwsUEf"
+                className="sc-iwsKbI cyIVWh"
+            />
+        </styled.img>
+    </Breakpoints>
+    <Breakpoints>
+        <styled.img
+            breakpoints={
+                Object {
+                    "lg": 1170,
+                    "md": 970,
+                    "sm": 768,
+                  }
+            }
+        >
+            <img
+                className="sc-gZMcBi jLHOiw"
             />
         </styled.img>
     </Breakpoints>
     <styled.div>
         <div
-            className="sc-dnqmqq hEgnZI"
+            className="sc-gqjmRU dmdnyd"
         />
     </styled.div>
+    <Breakpoints>
+        <styled.div
+            breakpoints={
+                Object {
+                    "lg": 1170,
+                    "md": 970,
+                    "sm": 768,
+                  }
+            }
+        >
+            <div
+                className="sc-VigVT cpdIrH"
+            />
+        </styled.div>
+    </Breakpoints>
+    <Breakpoints>
+        <styled.div
+            breakpoints={
+                Object {
+                    "lg": 1170,
+                    "md": 970,
+                    "sm": 768,
+                  }
+            }
+        >
+            <div
+                className="sc-jTzLTM daFCqo"
+            />
+        </styled.div>
+    </Breakpoints>
 </div>,
-  @media (max-width: 970px) {
-  .eZeFAD {
-    -webkit-text-align: center;
-    text-align: center;
+  .irrVft {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.bIAnAi {
+  margin: 0 auto;
+  max-width: 100%;
+  width: 960px;
+}
+
+.jMkBSN {
+  padding: 60px 0;
+  background-color: #FFFFFF;
+}
+
+.kqmuqK {
+  background-image: linear-gradient(-180deg, #FAFAFA 0%, #F1F2F7 100%);
+  padding-bottom: 0;
+  overflow: hidden;
+}
+
+<div
+    className="sc-EHOje kqmuqK sc-ifAKCX jMkBSN"
+>
+    <Styled(PageContainer)
+        width="960px"
+    >
+        <PageContainer
+            className="sc-bxivhb bIAnAi"
+            width="960px"
+        >
+            <div
+                className="sc-bxivhb bIAnAi"
+                width="960px"
+            >
+                <Styled(RowContainer)>
+                    <RowContainer
+                        className="sc-bwzfXH irrVft"
+                        divisions={12}
+                    >
+                        <section
+                            className="sc-bwzfXH irrVft"
+                        >
+                            children
+                        </section>
+                    </RowContainer>
+                </Styled(RowContainer)>
+            </div>
+        </PageContainer>
+    </Styled(PageContainer)>
+</div>,
+  .irrVft {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.bIAnAi {
+  margin: 0 auto;
+  max-width: 100%;
+  width: 960px;
+}
+
+<div
+    className="sc-bxivhb bIAnAi"
+    width="960px"
+>
+    <Styled(RowContainer)>
+        <RowContainer
+            className="sc-bwzfXH irrVft"
+            divisions={12}
+        >
+            <section
+                className="sc-bwzfXH irrVft"
+            >
+                children
+            </section>
+        </RowContainer>
+    </Styled(RowContainer)>
+</div>,
+  .cLFRsP {
+  -webkit-text-align: center;
+  text-align: center;
+}
+
+@media (min-width: 970px) {
+  .cLFRsP {
+    -webkit-text-align: left;
+    text-align: left;
   }
 }
 
 <div
-    className="sc-bZQynM eZeFAD"
+    className="sc-bZQynM cLFRsP"
 />,
-  .hEgnZI {
-  position: relative;
-  height: px;
+  .dqSROF {
+  display: block;
+  box-sizing: border-box;
+  padding: 20px;
+  width: 100%;
 }
 
-.hEgnZI > * {
+.fpqQNs {
+  padding-bottom: 0;
+}
+
+<div
+    className="sc-gzVnrw fpqQNs sc-htpNat dqSROF"
+/>,
+  .jJjiey {
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .jJjiey {
+    height: px;
+  }
+
+  .jJjiey > * {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+}
+
+<div
+    className="sc-dnqmqq jJjiey"
+/>,
+  .dmdnyd {
+  height: 100%;
+  -webkit-text-align: center;
+  text-align: center;
+}
+
+<div
+    className="sc-gqjmRU dmdnyd"
+/>,
+  .cpdIrH {
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   position: absolute;
-  bottom: 0;
+  -webkit-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  transform: translateY(-100%);
   left: 0;
   right: 0;
 }
 
+@media (min-width: 970px) {
+  .cpdIrH {
+    width: 577px;
+  }
+}
+
+@media (min-width: 768px) {
+  .cpdIrH {
+    position: initial;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+    left: initial;
+    right: initial;
+  }
+}
+
 <div
-    className="sc-dnqmqq hEgnZI"
+    className="sc-VigVT cpdIrH"
+/>,
+  .daFCqo {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+@media (min-width: 970px) {
+  .daFCqo {
+    display: block;
+  }
+}
+
+<div
+    className="sc-jTzLTM daFCqo"
 />,
 ]
 `;

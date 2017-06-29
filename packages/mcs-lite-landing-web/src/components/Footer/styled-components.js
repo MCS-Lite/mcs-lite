@@ -45,14 +45,19 @@ export const FakeIcon = styled.div`
 export const RWDWrapper = withBreakpoints(styled.div`
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  text-align: center;
+  flex-direction: column;
 
-  @media (max-width: ${props => props.breakpoints.sm}px) {
-    flex-direction: column-reverse;
-    text-align: center;
+  ${IconWrapper} {
+    margin-bottom: 5px;
+  }
+
+  @media (min-width: ${props => props.breakpoints.sm}px) {
+    justify-content: space-between;
+    flex-direction: row-reverse;
 
     ${IconWrapper} {
-      margin-bottom: 5px;
+      margin-bottom: 0;
     }
   }
 `);

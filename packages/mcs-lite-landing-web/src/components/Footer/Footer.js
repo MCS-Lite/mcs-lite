@@ -17,11 +17,11 @@ import {
 
 const HEIGHT = 32;
 const LoadableSVGFacebook = Loadable({
-  loader: () => import(/* webpackChunkName: "footer" */ '../SVG/SVGFacebook'),
+  loader: () => import(/* webpackChunkName: "Footer" */ '../SVG/SVGFacebook'),
   loading: () => <FakeIcon>Facebook</FakeIcon>,
 });
 const LoadableSVGGitHub = Loadable({
-  loader: () => import(/* webpackChunkName: "footer" */ '../SVG/SVGGitHub'),
+  loader: () => import(/* webpackChunkName: "Footer" */ '../SVG/SVGGitHub'),
   loading: () => <FakeIcon>GitHub</FakeIcon>,
 });
 
@@ -31,7 +31,6 @@ const Footer = ({ getMessages: t }) =>
       <Row>
         <StyledColumn xs={12}>
           <RWDWrapper>
-            <P color="white">© {getCurrentYear()} {t('desc')}</P>
             <IconWrapper>
               <A
                 href="https://www.facebook.com/groups/1651382875112603"
@@ -52,6 +51,7 @@ const Footer = ({ getMessages: t }) =>
                 </LazyloadOnce>
               </A>
             </IconWrapper>
+            <P color="white">© {getCurrentYear()} {t('desc')}</P>
           </RWDWrapper>
         </StyledColumn>
       </Row>

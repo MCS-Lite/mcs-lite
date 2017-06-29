@@ -1,0 +1,107 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should renders <ImageOpenSource> correctly 1`] = `
+<Transition
+  component={false}
+  enter={
+    Object {
+      "opacity": 1,
+    }
+  }
+  leave={
+    Object {
+      "opacity": 0,
+    }
+  }
+  onEnter={[Function]}
+  onLeave={[Function]}
+  runOnMount={true}
+>
+  <pure(styled.div)>
+    <pure(BackgroundImage)
+      src="img_open_source.svg"
+    />
+    <div>
+      <Styled(ScrollParallax)
+        animation={
+          Object {
+            "playScale": Array [
+              0,
+              0.5,
+            ],
+            "rotate": -15,
+            "x": -40,
+            "y": 35,
+          }
+        }
+        component={[Function]}
+        style={
+          Object {
+            "transform": "translate(-30px, 30px) rotate(0deg)",
+          }
+        }
+      />
+    </div>
+    <div>
+      <Styled(ScrollParallax)
+        animation={
+          Object {
+            "playScale": Array [
+              0,
+              0.5,
+            ],
+            "rotate": 15,
+            "x": 40,
+            "y": 35,
+          }
+        }
+        component={[Function]}
+        style={
+          Object {
+            "transform": "translate(30px, 30px) rotate(0deg)",
+          }
+        }
+      />
+    </div>
+    <div>
+      <Styled(ScrollParallax)
+        animation={
+          Object {
+            "playScale": Array [
+              0,
+              0.5,
+            ],
+            "y": 20,
+          }
+        }
+        component={[Function]}
+        style={
+          Object {
+            "transform": "translateY(25px)",
+          }
+        }
+      />
+    </div>
+    <div>
+      <ScrollParallax
+        always={true}
+        animation={
+          Object {
+            "playScale": Array [
+              0,
+              0.5,
+            ],
+            "y": 20,
+          }
+        }
+        component={[Function]}
+        style={
+          Object {
+            "transform": "translateY(0px)",
+          }
+        }
+      />
+    </div>
+  </pure(styled.div)>
+</Transition>
+`;
