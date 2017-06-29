@@ -33,21 +33,21 @@ exports[`should render CATEGORY_DISPLAY correctly with default value to N/A 1`] 
   >
     <DisplayStatus__Container>
       <div
-        className="DisplayStatus__Container-jrDlkR DzKAF"
+        className="DisplayStatus__Container-jrDlkR HMqwb"
       >
         <DisplayStatus__ItemWrapper>
           <div
-            className="DisplayStatus__ItemWrapper-edfiVv eBhrYw"
+            className="DisplayStatus__ItemWrapper-edfiVv gOPCZe"
           >
             <P
               color="grayBase"
             >
               <Component
-                className="P__P-KJbCR kHKeHO"
+                className="P__P-KJbCR hrSHif"
                 color="grayBase"
               >
                 <p
-                  className="P__P-KJbCR kHKeHO"
+                  className="P__P-KJbCR hrSHif"
                   color="grayBase"
                 >
                   name1
@@ -63,7 +63,7 @@ exports[`should render CATEGORY_DISPLAY correctly with default value to N/A 1`] 
                   viewBox="0 0 20 20"
                 >
                   <svg
-                    className="StatusLight__Svg-IVkxE heGIpa"
+                    className="StatusLight__Svg-IVkxE gOaNbK"
                     color="grayDark"
                     viewBox="0 0 20 20"
                   >
@@ -80,17 +80,17 @@ exports[`should render CATEGORY_DISPLAY correctly with default value to N/A 1`] 
         </DisplayStatus__ItemWrapper>
         <DisplayStatus__ItemWrapper>
           <div
-            className="DisplayStatus__ItemWrapper-edfiVv eBhrYw"
+            className="DisplayStatus__ItemWrapper-edfiVv gOPCZe"
           >
             <P
               color="grayBase"
             >
               <Component
-                className="P__P-KJbCR kHKeHO"
+                className="P__P-KJbCR hrSHif"
                 color="grayBase"
               >
                 <p
-                  className="P__P-KJbCR kHKeHO"
+                  className="P__P-KJbCR hrSHif"
                   color="grayBase"
                 >
                   name2
@@ -106,7 +106,7 @@ exports[`should render CATEGORY_DISPLAY correctly with default value to N/A 1`] 
                   viewBox="0 0 20 20"
                 >
                   <svg
-                    className="StatusLight__Svg-IVkxE heGIpa"
+                    className="StatusLight__Svg-IVkxE gOaNbK"
                     color="grayDark"
                     viewBox="0 0 20 20"
                   >
@@ -163,21 +163,21 @@ exports[`should render CATEGORY_DISPLAY correctly with first item 1`] = `
   >
     <DisplayStatus__Container>
       <div
-        className="DisplayStatus__Container-jrDlkR DzKAF"
+        className="DisplayStatus__Container-jrDlkR HMqwb"
       >
         <DisplayStatus__ItemWrapper>
           <div
-            className="DisplayStatus__ItemWrapper-edfiVv eBhrYw"
+            className="DisplayStatus__ItemWrapper-edfiVv gOPCZe"
           >
             <P
               color="grayBase"
             >
               <Component
-                className="P__P-KJbCR kHKeHO"
+                className="P__P-KJbCR hrSHif"
                 color="grayBase"
               >
                 <p
-                  className="P__P-KJbCR kHKeHO"
+                  className="P__P-KJbCR hrSHif"
                   color="grayBase"
                 >
                   name1
@@ -193,7 +193,7 @@ exports[`should render CATEGORY_DISPLAY correctly with first item 1`] = `
                   viewBox="0 0 20 20"
                 >
                   <svg
-                    className="StatusLight__Svg-IVkxE geyPxt"
+                    className="StatusLight__Svg-IVkxE efztEk"
                     color="success"
                     viewBox="0 0 20 20"
                   >
@@ -210,17 +210,17 @@ exports[`should render CATEGORY_DISPLAY correctly with first item 1`] = `
         </DisplayStatus__ItemWrapper>
         <DisplayStatus__ItemWrapper>
           <div
-            className="DisplayStatus__ItemWrapper-edfiVv eBhrYw"
+            className="DisplayStatus__ItemWrapper-edfiVv gOPCZe"
           >
             <P
               color="grayBase"
             >
               <Component
-                className="P__P-KJbCR kHKeHO"
+                className="P__P-KJbCR hrSHif"
                 color="grayBase"
               >
                 <p
-                  className="P__P-KJbCR kHKeHO"
+                  className="P__P-KJbCR hrSHif"
                   color="grayBase"
                 >
                   name2
@@ -236,7 +236,7 @@ exports[`should render CATEGORY_DISPLAY correctly with first item 1`] = `
                   viewBox="0 0 20 20"
                 >
                   <svg
-                    className="StatusLight__Svg-IVkxE heGIpa"
+                    className="StatusLight__Svg-IVkxE gOaNbK"
                     color="grayDark"
                     viewBox="0 0 20 20"
                   >
@@ -293,21 +293,21 @@ exports[`should render CATEGORY_DISPLAY correctly with second item 1`] = `
   >
     <DisplayStatus__Container>
       <div
-        className="DisplayStatus__Container-jrDlkR DzKAF"
+        className="DisplayStatus__Container-jrDlkR HMqwb"
       >
         <DisplayStatus__ItemWrapper>
           <div
-            className="DisplayStatus__ItemWrapper-edfiVv eBhrYw"
+            className="DisplayStatus__ItemWrapper-edfiVv gOPCZe"
           >
             <P
               color="grayBase"
             >
               <Component
-                className="P__P-KJbCR kHKeHO"
+                className="P__P-KJbCR hrSHif"
                 color="grayBase"
               >
                 <p
-                  className="P__P-KJbCR kHKeHO"
+                  className="P__P-KJbCR hrSHif"
                   color="grayBase"
                 >
                   name1
@@ -323,7 +323,7 @@ exports[`should render CATEGORY_DISPLAY correctly with second item 1`] = `
                   viewBox="0 0 20 20"
                 >
                   <svg
-                    className="StatusLight__Svg-IVkxE heGIpa"
+                    className="StatusLight__Svg-IVkxE gOaNbK"
                     color="grayDark"
                     viewBox="0 0 20 20"
                   >
@@ -340,17 +340,17 @@ exports[`should render CATEGORY_DISPLAY correctly with second item 1`] = `
         </DisplayStatus__ItemWrapper>
         <DisplayStatus__ItemWrapper>
           <div
-            className="DisplayStatus__ItemWrapper-edfiVv eBhrYw"
+            className="DisplayStatus__ItemWrapper-edfiVv gOPCZe"
           >
             <P
               color="grayBase"
             >
               <Component
-                className="P__P-KJbCR kHKeHO"
+                className="P__P-KJbCR hrSHif"
                 color="grayBase"
               >
                 <p
-                  className="P__P-KJbCR kHKeHO"
+                  className="P__P-KJbCR hrSHif"
                   color="grayBase"
                 >
                   name2
@@ -366,7 +366,7 @@ exports[`should render CATEGORY_DISPLAY correctly with second item 1`] = `
                   viewBox="0 0 20 20"
                 >
                   <svg
-                    className="StatusLight__Svg-IVkxE geyPxt"
+                    className="StatusLight__Svg-IVkxE efztEk"
                     color="success"
                     viewBox="0 0 20 20"
                   >

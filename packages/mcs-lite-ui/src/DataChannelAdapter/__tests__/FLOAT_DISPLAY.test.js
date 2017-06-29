@@ -1,5 +1,6 @@
 import React from 'react';
 import { mount } from 'enzyme';
+import toJson from 'enzyme-to-json';
 import { ThemeProvider } from 'styled-components';
 import { theme } from 'mcs-lite-theme';
 import DataChannelAdapter from '../DataChannelAdapter';
@@ -19,7 +20,8 @@ it('should render FLOAT_DISPLAY correctly with default value to N/A', () => {
     </ThemeProvider>,
   );
 
-  expect(wrapper.find(DataChannelAdapter)).toMatchSnapshot();
+  const tree = toJson(wrapper.find(DataChannelAdapter));
+  expect(tree).toMatchSnapshot();
 });
 
 it('should render FLOAT_DISPLAY correctly with value', () => {
@@ -37,7 +39,8 @@ it('should render FLOAT_DISPLAY correctly with value', () => {
     </ThemeProvider>,
   );
 
-  expect(wrapper.find(DataChannelAdapter)).toMatchSnapshot();
+  const tree = toJson(wrapper.find(DataChannelAdapter));
+  expect(tree).toMatchSnapshot();
 });
 
 it('should render FLOAT_DISPLAY correctly with zero', () => {
@@ -55,7 +58,8 @@ it('should render FLOAT_DISPLAY correctly with zero', () => {
     </ThemeProvider>,
   );
 
-  expect(wrapper.find(DataChannelAdapter)).toMatchSnapshot();
+  const tree = toJson(wrapper.find(DataChannelAdapter));
+  expect(tree).toMatchSnapshot();
 });
 
 it('should render FLOAT_DISPLAY correctly with unit', () => {
@@ -73,5 +77,6 @@ it('should render FLOAT_DISPLAY correctly with unit', () => {
     </ThemeProvider>,
   );
 
-  expect(wrapper.find(DataChannelAdapter)).toMatchSnapshot();
+  const tree = toJson(wrapper.find(DataChannelAdapter));
+  expect(tree).toMatchSnapshot();
 });

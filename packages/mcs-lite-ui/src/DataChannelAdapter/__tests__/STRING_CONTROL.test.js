@@ -1,5 +1,6 @@
 import React from 'react';
 import { mount } from 'enzyme';
+import toJson from 'enzyme-to-json';
 import { ThemeProvider } from 'styled-components';
 import { theme } from 'mcs-lite-theme';
 import DataChannelAdapter from '../DataChannelAdapter';
@@ -20,7 +21,8 @@ it('should render STRING_CONTROL correctly with default value to empty', () => {
     </ThemeProvider>,
   );
 
-  expect(wrapper.find(DataChannelAdapter)).toMatchSnapshot();
+  const tree = toJson(wrapper.find(DataChannelAdapter));
+  expect(tree).toMatchSnapshot();
 });
 
 it('should render STRING_CONTROL correctly with value', () => {
@@ -38,7 +40,8 @@ it('should render STRING_CONTROL correctly with value', () => {
     </ThemeProvider>,
   );
 
-  expect(wrapper.find(DataChannelAdapter)).toMatchSnapshot();
+  const tree = toJson(wrapper.find(DataChannelAdapter));
+  expect(tree).toMatchSnapshot();
 });
 
 it('should render STRING_CONTROL correctly with empty string', () => {
@@ -56,7 +59,8 @@ it('should render STRING_CONTROL correctly with empty string', () => {
     </ThemeProvider>,
   );
 
-  expect(wrapper.find(DataChannelAdapter)).toMatchSnapshot();
+  const tree = toJson(wrapper.find(DataChannelAdapter));
+  expect(tree).toMatchSnapshot();
 });
 
 it('should handle onChange', () => {
