@@ -1,5 +1,6 @@
 import React from 'react';
 import { mount } from 'enzyme';
+import toJson from 'enzyme-to-json';
 import { ThemeProvider } from 'styled-components';
 import { theme } from 'mcs-lite-theme';
 import DataChannelAdapter from '../DataChannelAdapter';
@@ -19,7 +20,8 @@ it('should render GPIO_DISPLAY correctly with default value to undefiend', () =>
     </ThemeProvider>,
   );
 
-  expect(wrapper.find(DataChannelAdapter)).toMatchSnapshot();
+  const tree = toJson(wrapper.find(DataChannelAdapter));
+  expect(tree).toMatchSnapshot();
 });
 
 it('should render GPIO_DISPLAY correctly with Low', () => {
@@ -37,7 +39,8 @@ it('should render GPIO_DISPLAY correctly with Low', () => {
     </ThemeProvider>,
   );
 
-  expect(wrapper.find(DataChannelAdapter)).toMatchSnapshot();
+  const tree = toJson(wrapper.find(DataChannelAdapter));
+  expect(tree).toMatchSnapshot();
 });
 
 it('should render GPIO_DISPLAY correctly with High', () => {
@@ -55,5 +58,6 @@ it('should render GPIO_DISPLAY correctly with High', () => {
     </ThemeProvider>,
   );
 
-  expect(wrapper.find(DataChannelAdapter)).toMatchSnapshot();
+  const tree = toJson(wrapper.find(DataChannelAdapter));
+  expect(tree).toMatchSnapshot();
 });

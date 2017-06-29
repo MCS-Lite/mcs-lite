@@ -1,5 +1,6 @@
 import React from 'react';
 import { mount } from 'enzyme';
+import toJson from 'enzyme-to-json';
 import { ThemeProvider } from 'styled-components';
 import { theme } from 'mcs-lite-theme';
 import DatetimePickerDialog, { Header } from '../DatetimePickerDialog';
@@ -77,5 +78,6 @@ it('should redner styled-components <Header/>', () => {
     </ThemeProvider>,
   );
 
-  expect(wrapper.find('div')).toMatchSnapshot();
+  const tree = toJson(wrapper.find('div'));
+  expect(tree).toMatchSnapshot();
 });

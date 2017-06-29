@@ -18,7 +18,7 @@ exports[`should render HEX_DISPLAY correctly with default value to empty 1`] = `
   >
     <DisplayString__Container>
       <div
-        className="DisplayString__Container-gMiSmM eaLFWz"
+        className="DisplayString__Container-gMiSmM kPtUam"
       >
         <DisplayString__StyledTextarea
           disabled={true}
@@ -26,14 +26,14 @@ exports[`should render HEX_DISPLAY correctly with default value to empty 1`] = `
           value=""
         >
           <Textarea
-            className="DisplayString__StyledTextarea-iHUBEj eYiCLJ"
+            className="DisplayString__StyledTextarea-iHUBEj gKioTS"
             disabled={true}
             kind="primary"
             placeholder="Hex only"
             value=""
           >
             <textarea
-              className="DisplayString__StyledTextarea-iHUBEj eYiCLJ Textarea__Textarea-dEcNVt haEdAh"
+              className="DisplayString__StyledTextarea-iHUBEj gKioTS Textarea__Textarea-dEcNVt WlyWE"
               disabled={true}
               kind="primary"
               placeholder="Hex only"
@@ -67,7 +67,7 @@ exports[`should render HEX_DISPLAY correctly with empty string 1`] = `
   >
     <DisplayString__Container>
       <div
-        className="DisplayString__Container-gMiSmM eaLFWz"
+        className="DisplayString__Container-gMiSmM kPtUam"
       >
         <DisplayString__StyledTextarea
           disabled={true}
@@ -75,14 +75,14 @@ exports[`should render HEX_DISPLAY correctly with empty string 1`] = `
           value=""
         >
           <Textarea
-            className="DisplayString__StyledTextarea-iHUBEj eYiCLJ"
+            className="DisplayString__StyledTextarea-iHUBEj gKioTS"
             disabled={true}
             kind="primary"
             placeholder="Hex only"
             value=""
           >
             <textarea
-              className="DisplayString__StyledTextarea-iHUBEj eYiCLJ Textarea__Textarea-dEcNVt haEdAh"
+              className="DisplayString__StyledTextarea-iHUBEj gKioTS Textarea__Textarea-dEcNVt WlyWE"
               disabled={true}
               kind="primary"
               placeholder="Hex only"
@@ -116,7 +116,7 @@ exports[`should render HEX_DISPLAY correctly with value 1`] = `
   >
     <DisplayString__Container>
       <div
-        className="DisplayString__Container-gMiSmM eaLFWz"
+        className="DisplayString__Container-gMiSmM kPtUam"
       >
         <DisplayString__StyledTextarea
           disabled={true}
@@ -124,14 +124,14 @@ exports[`should render HEX_DISPLAY correctly with value 1`] = `
           value="michaelhsu"
         >
           <Textarea
-            className="DisplayString__StyledTextarea-iHUBEj eYiCLJ"
+            className="DisplayString__StyledTextarea-iHUBEj gKioTS"
             disabled={true}
             kind="primary"
             placeholder="Hex only"
             value="michaelhsu"
           >
             <textarea
-              className="DisplayString__StyledTextarea-iHUBEj eYiCLJ Textarea__Textarea-dEcNVt haEdAh"
+              className="DisplayString__StyledTextarea-iHUBEj gKioTS Textarea__Textarea-dEcNVt WlyWE"
               disabled={true}
               kind="primary"
               placeholder="Hex only"

@@ -1,5 +1,6 @@
 import React from 'react';
 import { mount } from 'enzyme';
+import toJson from 'enzyme-to-json';
 import { ThemeProvider } from 'styled-components';
 import { theme } from 'mcs-lite-theme';
 import DataChannelAdapter from '../DataChannelAdapter';
@@ -19,7 +20,8 @@ it('should render SWITCH_DISPLAY correctly with default value to false', () => {
     </ThemeProvider>,
   );
 
-  expect(wrapper.find(DataChannelAdapter)).toMatchSnapshot();
+  const tree = toJson(wrapper.find(DataChannelAdapter));
+  expect(tree).toMatchSnapshot();
 });
 
 it('should render SWITCH_DISPLAY correctly with true value', () => {
@@ -37,7 +39,8 @@ it('should render SWITCH_DISPLAY correctly with true value', () => {
     </ThemeProvider>,
   );
 
-  expect(wrapper.find(DataChannelAdapter)).toMatchSnapshot();
+  const tree = toJson(wrapper.find(DataChannelAdapter));
+  expect(tree).toMatchSnapshot();
 });
 
 it('should render SWITCH_DISPLAY correctly with false value', () => {
@@ -55,5 +58,6 @@ it('should render SWITCH_DISPLAY correctly with false value', () => {
     </ThemeProvider>,
   );
 
-  expect(wrapper.find(DataChannelAdapter)).toMatchSnapshot();
+  const tree = toJson(wrapper.find(DataChannelAdapter));
+  expect(tree).toMatchSnapshot();
 });

@@ -17,7 +17,7 @@ exports[`should render PWM_CONTROL correctly with default value to N/A 1`] = `
 >
   <DataChannelAdapter__Wrapper>
     <div
-      className="DataChannelAdapter__Wrapper-kOWMLp dRDewk"
+      className="DataChannelAdapter__Wrapper-kOWMLp jIklWG"
     >
       <ControlPeriod
         onChange={[Function]}
@@ -27,7 +27,7 @@ exports[`should render PWM_CONTROL correctly with default value to N/A 1`] = `
       >
         <ControlPeriod__Container>
           <div
-            className="ControlPeriod__Container-jNmifR wmzMS"
+            className="ControlPeriod__Container-jNmifR bLOshQ"
           >
             <label
               htmlFor="input"
@@ -36,11 +36,11 @@ exports[`should render PWM_CONTROL correctly with default value to N/A 1`] = `
                 color="grayBase"
               >
                 <Component
-                  className="P__P-KJbCR kHKeHO"
+                  className="P__P-KJbCR hrSHif"
                   color="grayBase"
                 >
                   <p
-                    className="P__P-KJbCR kHKeHO"
+                    className="P__P-KJbCR hrSHif"
                     color="grayBase"
                   >
                     Period
@@ -50,7 +50,7 @@ exports[`should render PWM_CONTROL correctly with default value to N/A 1`] = `
             </label>
             <ControlPeriod__InputWrapper>
               <div
-                className="ControlPeriod__InputWrapper-icIPmx gFyvMa"
+                className="ControlPeriod__InputWrapper-icIPmx diDDNv"
               >
                 <ControlPeriod__StyledInput
                   onChange={[Function]}
@@ -59,7 +59,7 @@ exports[`should render PWM_CONTROL correctly with default value to N/A 1`] = `
                   value=""
                 >
                   <Input
-                    className="ControlPeriod__StyledInput-fNvBTX cAVBYu"
+                    className="ControlPeriod__StyledInput-fNvBTX jSwXqv"
                     focus={false}
                     kind="primary"
                     onChange={[Function]}
@@ -68,7 +68,7 @@ exports[`should render PWM_CONTROL correctly with default value to N/A 1`] = `
                     value=""
                   >
                     <input
-                      className="ControlPeriod__StyledInput-fNvBTX cAVBYu Input__Input-ixjKAz daZkvy"
+                      className="ControlPeriod__StyledInput-fNvBTX jSwXqv Input__Input-ixjKAz dDXeoZ"
                       kind="primary"
                       onChange={[Function]}
                       placeholder="Integer only"
@@ -91,7 +91,7 @@ exports[`should render PWM_CONTROL correctly with default value to N/A 1`] = `
                   <BaseComponent
                     active={false}
                     block={false}
-                    className="Button__Button-jkHDFw hzHJoG"
+                    className="Button__Button-jkHDFw fcrwCh"
                     component="button"
                     disabled={false}
                     kind="primary"
@@ -101,7 +101,7 @@ exports[`should render PWM_CONTROL correctly with default value to N/A 1`] = `
                     square={false}
                   >
                     <button
-                      className="Button__Button-jkHDFw hzHJoG"
+                      className="Button__Button-jkHDFw fcrwCh"
                       onClick={[Function]}
                     >
                       Ok
@@ -127,7 +127,7 @@ exports[`should render PWM_CONTROL correctly with default value to N/A 1`] = `
       >
         <ControlRange__Container>
           <div
-            className="ControlRange__Container-ispxkc kkVGKq"
+            className="ControlRange__Container-ispxkc kQpIsI"
           >
             <ControlRange__LabelWrapper
               labels={
@@ -138,21 +138,21 @@ exports[`should render PWM_CONTROL correctly with default value to N/A 1`] = `
               }
             >
               <div
-                className="ControlRange__LabelWrapper-hpKjGx kKFCvQ"
+                className="ControlRange__LabelWrapper-hpKjGx bfHWDZ"
               >
                 <ControlRange__LabelItem>
                   <div
-                    className="ControlRange__LabelItem-kiIalK idIiax"
+                    className="ControlRange__LabelItem-kiIalK dulPtE"
                   >
                     <P
                       color="grayBase"
                     >
                       <Component
-                        className="P__P-KJbCR kHKeHO"
+                        className="P__P-KJbCR hrSHif"
                         color="grayBase"
                       >
                         <div
-                          className="P__P-KJbCR kHKeHO"
+                          className="P__P-KJbCR hrSHif"
                           color="grayBase"
                         >
                           0
@@ -163,17 +163,17 @@ exports[`should render PWM_CONTROL correctly with default value to N/A 1`] = `
                 </ControlRange__LabelItem>
                 <ControlRange__LabelItem>
                   <div
-                    className="ControlRange__LabelItem-kiIalK idIiax"
+                    className="ControlRange__LabelItem-kiIalK dulPtE"
                   >
                     <P
                       color="grayBase"
                     >
                       <Component
-                        className="P__P-KJbCR kHKeHO"
+                        className="P__P-KJbCR hrSHif"
                         color="grayBase"
                       >
                         <div
-                          className="P__P-KJbCR kHKeHO"
+                          className="P__P-KJbCR hrSHif"
                           color="grayBase"
                         >
                           100
@@ -193,21 +193,21 @@ exports[`should render PWM_CONTROL correctly with default value to N/A 1`] = `
               }
             >
               <div
-                className="ControlRange__InputWrapper-fklkwO dVxsgp"
+                className="ControlRange__InputWrapper-fklkwO fpvHuS"
               >
                 <ControlRange__ValueWrapper
                   color="grayBase"
                 >
                   <P
-                    className="ControlRange__ValueWrapper-jxMKxr lkxWna"
+                    className="ControlRange__ValueWrapper-jxMKxr kFWjXk"
                     color="grayBase"
                   >
                     <Component
-                      className="ControlRange__ValueWrapper-jxMKxr lkxWna P__P-KJbCR kHKeHO"
+                      className="ControlRange__ValueWrapper-jxMKxr kFWjXk P__P-KJbCR hrSHif"
                       color="grayBase"
                     >
                       <div
-                        className="ControlRange__ValueWrapper-jxMKxr lkxWna P__P-KJbCR kHKeHO"
+                        className="ControlRange__ValueWrapper-jxMKxr kFWjXk P__P-KJbCR hrSHif"
                         color="grayBase"
                       >
                         Current value: 
@@ -215,15 +215,15 @@ exports[`should render PWM_CONTROL correctly with default value to N/A 1`] = `
                           color="primary"
                         >
                           <P
-                            className="ControlRange__Value-kXycxr cJYxpn"
+                            className="ControlRange__Value-kXycxr glmUBq"
                             color="primary"
                           >
                             <Component
-                              className="ControlRange__Value-kXycxr cJYxpn P__P-KJbCR dnAaPu"
+                              className="ControlRange__Value-kXycxr glmUBq P__P-KJbCR jEbbdW"
                               color="primary"
                             >
                               <p
-                                className="ControlRange__Value-kXycxr cJYxpn P__P-KJbCR dnAaPu"
+                                className="ControlRange__Value-kXycxr glmUBq P__P-KJbCR jEbbdW"
                                 color="primary"
                               >
                                 N/A
@@ -247,7 +247,7 @@ exports[`should render PWM_CONTROL correctly with default value to N/A 1`] = `
                   value=""
                 >
                   <input
-                    className="InputRange__InputRange-uGAsR iOVoet"
+                    className="InputRange__InputRange-uGAsR lghldr"
                     kind="primary"
                     max={100}
                     min={0}
@@ -289,7 +289,7 @@ exports[`should render PWM_CONTROL correctly with max 1`] = `
 >
   <DataChannelAdapter__Wrapper>
     <div
-      className="DataChannelAdapter__Wrapper-kOWMLp dRDewk"
+      className="DataChannelAdapter__Wrapper-kOWMLp jIklWG"
     >
       <ControlPeriod
         onChange={[Function]}
@@ -299,7 +299,7 @@ exports[`should render PWM_CONTROL correctly with max 1`] = `
       >
         <ControlPeriod__Container>
           <div
-            className="ControlPeriod__Container-jNmifR wmzMS"
+            className="ControlPeriod__Container-jNmifR bLOshQ"
           >
             <label
               htmlFor="input"
@@ -308,11 +308,11 @@ exports[`should render PWM_CONTROL correctly with max 1`] = `
                 color="grayBase"
               >
                 <Component
-                  className="P__P-KJbCR kHKeHO"
+                  className="P__P-KJbCR hrSHif"
                   color="grayBase"
                 >
                   <p
-                    className="P__P-KJbCR kHKeHO"
+                    className="P__P-KJbCR hrSHif"
                     color="grayBase"
                   >
                     Period
@@ -322,7 +322,7 @@ exports[`should render PWM_CONTROL correctly with max 1`] = `
             </label>
             <ControlPeriod__InputWrapper>
               <div
-                className="ControlPeriod__InputWrapper-icIPmx gFyvMa"
+                className="ControlPeriod__InputWrapper-icIPmx diDDNv"
               >
                 <ControlPeriod__StyledInput
                   onChange={[Function]}
@@ -331,7 +331,7 @@ exports[`should render PWM_CONTROL correctly with max 1`] = `
                   value={1}
                 >
                   <Input
-                    className="ControlPeriod__StyledInput-fNvBTX cAVBYu"
+                    className="ControlPeriod__StyledInput-fNvBTX jSwXqv"
                     focus={false}
                     kind="primary"
                     onChange={[Function]}
@@ -340,7 +340,7 @@ exports[`should render PWM_CONTROL correctly with max 1`] = `
                     value={1}
                   >
                     <input
-                      className="ControlPeriod__StyledInput-fNvBTX cAVBYu Input__Input-ixjKAz daZkvy"
+                      className="ControlPeriod__StyledInput-fNvBTX jSwXqv Input__Input-ixjKAz dDXeoZ"
                       kind="primary"
                       onChange={[Function]}
                       placeholder="Integer only"
@@ -363,7 +363,7 @@ exports[`should render PWM_CONTROL correctly with max 1`] = `
                   <BaseComponent
                     active={false}
                     block={false}
-                    className="Button__Button-jkHDFw hzHJoG"
+                    className="Button__Button-jkHDFw fcrwCh"
                     component="button"
                     disabled={false}
                     kind="primary"
@@ -373,7 +373,7 @@ exports[`should render PWM_CONTROL correctly with max 1`] = `
                     square={false}
                   >
                     <button
-                      className="Button__Button-jkHDFw hzHJoG"
+                      className="Button__Button-jkHDFw fcrwCh"
                       onClick={[Function]}
                     >
                       Ok
@@ -399,7 +399,7 @@ exports[`should render PWM_CONTROL correctly with max 1`] = `
       >
         <ControlRange__Container>
           <div
-            className="ControlRange__Container-ispxkc kkVGKq"
+            className="ControlRange__Container-ispxkc kQpIsI"
           >
             <ControlRange__LabelWrapper
               labels={
@@ -410,21 +410,21 @@ exports[`should render PWM_CONTROL correctly with max 1`] = `
               }
             >
               <div
-                className="ControlRange__LabelWrapper-hpKjGx kKFCvQ"
+                className="ControlRange__LabelWrapper-hpKjGx bfHWDZ"
               >
                 <ControlRange__LabelItem>
                   <div
-                    className="ControlRange__LabelItem-kiIalK idIiax"
+                    className="ControlRange__LabelItem-kiIalK dulPtE"
                   >
                     <P
                       color="grayBase"
                     >
                       <Component
-                        className="P__P-KJbCR kHKeHO"
+                        className="P__P-KJbCR hrSHif"
                         color="grayBase"
                       >
                         <div
-                          className="P__P-KJbCR kHKeHO"
+                          className="P__P-KJbCR hrSHif"
                           color="grayBase"
                         >
                           0
@@ -435,17 +435,17 @@ exports[`should render PWM_CONTROL correctly with max 1`] = `
                 </ControlRange__LabelItem>
                 <ControlRange__LabelItem>
                   <div
-                    className="ControlRange__LabelItem-kiIalK idIiax"
+                    className="ControlRange__LabelItem-kiIalK dulPtE"
                   >
                     <P
                       color="grayBase"
                     >
                       <Component
-                        className="P__P-KJbCR kHKeHO"
+                        className="P__P-KJbCR hrSHif"
                         color="grayBase"
                       >
                         <div
-                          className="P__P-KJbCR kHKeHO"
+                          className="P__P-KJbCR hrSHif"
                           color="grayBase"
                         >
                           100
@@ -465,21 +465,21 @@ exports[`should render PWM_CONTROL correctly with max 1`] = `
               }
             >
               <div
-                className="ControlRange__InputWrapper-fklkwO dVxsgp"
+                className="ControlRange__InputWrapper-fklkwO fpvHuS"
               >
                 <ControlRange__ValueWrapper
                   color="grayBase"
                 >
                   <P
-                    className="ControlRange__ValueWrapper-jxMKxr lkxWna"
+                    className="ControlRange__ValueWrapper-jxMKxr kFWjXk"
                     color="grayBase"
                   >
                     <Component
-                      className="ControlRange__ValueWrapper-jxMKxr lkxWna P__P-KJbCR kHKeHO"
+                      className="ControlRange__ValueWrapper-jxMKxr kFWjXk P__P-KJbCR hrSHif"
                       color="grayBase"
                     >
                       <div
-                        className="ControlRange__ValueWrapper-jxMKxr lkxWna P__P-KJbCR kHKeHO"
+                        className="ControlRange__ValueWrapper-jxMKxr kFWjXk P__P-KJbCR hrSHif"
                         color="grayBase"
                       >
                         Current value: 
@@ -487,15 +487,15 @@ exports[`should render PWM_CONTROL correctly with max 1`] = `
                           color="primary"
                         >
                           <P
-                            className="ControlRange__Value-kXycxr cJYxpn"
+                            className="ControlRange__Value-kXycxr glmUBq"
                             color="primary"
                           >
                             <Component
-                              className="ControlRange__Value-kXycxr cJYxpn P__P-KJbCR dnAaPu"
+                              className="ControlRange__Value-kXycxr glmUBq P__P-KJbCR jEbbdW"
                               color="primary"
                             >
                               <div
-                                className="ControlRange__Value-kXycxr cJYxpn P__P-KJbCR dnAaPu"
+                                className="ControlRange__Value-kXycxr glmUBq P__P-KJbCR jEbbdW"
                                 color="primary"
                               >
                                 100
@@ -519,7 +519,7 @@ exports[`should render PWM_CONTROL correctly with max 1`] = `
                   value={100}
                 >
                   <input
-                    className="InputRange__InputRange-uGAsR iOVoet"
+                    className="InputRange__InputRange-uGAsR lghldr"
                     kind="primary"
                     max={100}
                     min={0}
@@ -561,7 +561,7 @@ exports[`should render PWM_CONTROL correctly with zero 1`] = `
 >
   <DataChannelAdapter__Wrapper>
     <div
-      className="DataChannelAdapter__Wrapper-kOWMLp dRDewk"
+      className="DataChannelAdapter__Wrapper-kOWMLp jIklWG"
     >
       <ControlPeriod
         onChange={[Function]}
@@ -571,7 +571,7 @@ exports[`should render PWM_CONTROL correctly with zero 1`] = `
       >
         <ControlPeriod__Container>
           <div
-            className="ControlPeriod__Container-jNmifR wmzMS"
+            className="ControlPeriod__Container-jNmifR bLOshQ"
           >
             <label
               htmlFor="input"
@@ -580,11 +580,11 @@ exports[`should render PWM_CONTROL correctly with zero 1`] = `
                 color="grayBase"
               >
                 <Component
-                  className="P__P-KJbCR kHKeHO"
+                  className="P__P-KJbCR hrSHif"
                   color="grayBase"
                 >
                   <p
-                    className="P__P-KJbCR kHKeHO"
+                    className="P__P-KJbCR hrSHif"
                     color="grayBase"
                   >
                     Period
@@ -594,7 +594,7 @@ exports[`should render PWM_CONTROL correctly with zero 1`] = `
             </label>
             <ControlPeriod__InputWrapper>
               <div
-                className="ControlPeriod__InputWrapper-icIPmx gFyvMa"
+                className="ControlPeriod__InputWrapper-icIPmx diDDNv"
               >
                 <ControlPeriod__StyledInput
                   onChange={[Function]}
@@ -603,7 +603,7 @@ exports[`should render PWM_CONTROL correctly with zero 1`] = `
                   value={0}
                 >
                   <Input
-                    className="ControlPeriod__StyledInput-fNvBTX cAVBYu"
+                    className="ControlPeriod__StyledInput-fNvBTX jSwXqv"
                     focus={false}
                     kind="primary"
                     onChange={[Function]}
@@ -612,7 +612,7 @@ exports[`should render PWM_CONTROL correctly with zero 1`] = `
                     value={0}
                   >
                     <input
-                      className="ControlPeriod__StyledInput-fNvBTX cAVBYu Input__Input-ixjKAz daZkvy"
+                      className="ControlPeriod__StyledInput-fNvBTX jSwXqv Input__Input-ixjKAz dDXeoZ"
                       kind="primary"
                       onChange={[Function]}
                       placeholder="Integer only"
@@ -635,7 +635,7 @@ exports[`should render PWM_CONTROL correctly with zero 1`] = `
                   <BaseComponent
                     active={false}
                     block={false}
-                    className="Button__Button-jkHDFw hzHJoG"
+                    className="Button__Button-jkHDFw fcrwCh"
                     component="button"
                     disabled={false}
                     kind="primary"
@@ -645,7 +645,7 @@ exports[`should render PWM_CONTROL correctly with zero 1`] = `
                     square={false}
                   >
                     <button
-                      className="Button__Button-jkHDFw hzHJoG"
+                      className="Button__Button-jkHDFw fcrwCh"
                       onClick={[Function]}
                     >
                       Ok
@@ -671,7 +671,7 @@ exports[`should render PWM_CONTROL correctly with zero 1`] = `
       >
         <ControlRange__Container>
           <div
-            className="ControlRange__Container-ispxkc kkVGKq"
+            className="ControlRange__Container-ispxkc kQpIsI"
           >
             <ControlRange__LabelWrapper
               labels={
@@ -682,21 +682,21 @@ exports[`should render PWM_CONTROL correctly with zero 1`] = `
               }
             >
               <div
-                className="ControlRange__LabelWrapper-hpKjGx kKFCvQ"
+                className="ControlRange__LabelWrapper-hpKjGx bfHWDZ"
               >
                 <ControlRange__LabelItem>
                   <div
-                    className="ControlRange__LabelItem-kiIalK idIiax"
+                    className="ControlRange__LabelItem-kiIalK dulPtE"
                   >
                     <P
                       color="grayBase"
                     >
                       <Component
-                        className="P__P-KJbCR kHKeHO"
+                        className="P__P-KJbCR hrSHif"
                         color="grayBase"
                       >
                         <div
-                          className="P__P-KJbCR kHKeHO"
+                          className="P__P-KJbCR hrSHif"
                           color="grayBase"
                         >
                           0
@@ -707,17 +707,17 @@ exports[`should render PWM_CONTROL correctly with zero 1`] = `
                 </ControlRange__LabelItem>
                 <ControlRange__LabelItem>
                   <div
-                    className="ControlRange__LabelItem-kiIalK idIiax"
+                    className="ControlRange__LabelItem-kiIalK dulPtE"
                   >
                     <P
                       color="grayBase"
                     >
                       <Component
-                        className="P__P-KJbCR kHKeHO"
+                        className="P__P-KJbCR hrSHif"
                         color="grayBase"
                       >
                         <div
-                          className="P__P-KJbCR kHKeHO"
+                          className="P__P-KJbCR hrSHif"
                           color="grayBase"
                         >
                           100
@@ -737,21 +737,21 @@ exports[`should render PWM_CONTROL correctly with zero 1`] = `
               }
             >
               <div
-                className="ControlRange__InputWrapper-fklkwO dVxsgp"
+                className="ControlRange__InputWrapper-fklkwO fpvHuS"
               >
                 <ControlRange__ValueWrapper
                   color="grayBase"
                 >
                   <P
-                    className="ControlRange__ValueWrapper-jxMKxr lkxWna"
+                    className="ControlRange__ValueWrapper-jxMKxr kFWjXk"
                     color="grayBase"
                   >
                     <Component
-                      className="ControlRange__ValueWrapper-jxMKxr lkxWna P__P-KJbCR kHKeHO"
+                      className="ControlRange__ValueWrapper-jxMKxr kFWjXk P__P-KJbCR hrSHif"
                       color="grayBase"
                     >
                       <div
-                        className="ControlRange__ValueWrapper-jxMKxr lkxWna P__P-KJbCR kHKeHO"
+                        className="ControlRange__ValueWrapper-jxMKxr kFWjXk P__P-KJbCR hrSHif"
                         color="grayBase"
                       >
                         Current value: 
@@ -759,15 +759,15 @@ exports[`should render PWM_CONTROL correctly with zero 1`] = `
                           color="primary"
                         >
                           <P
-                            className="ControlRange__Value-kXycxr cJYxpn"
+                            className="ControlRange__Value-kXycxr glmUBq"
                             color="primary"
                           >
                             <Component
-                              className="ControlRange__Value-kXycxr cJYxpn P__P-KJbCR dnAaPu"
+                              className="ControlRange__Value-kXycxr glmUBq P__P-KJbCR jEbbdW"
                               color="primary"
                             >
                               <div
-                                className="ControlRange__Value-kXycxr cJYxpn P__P-KJbCR dnAaPu"
+                                className="ControlRange__Value-kXycxr glmUBq P__P-KJbCR jEbbdW"
                                 color="primary"
                               >
                                 0
@@ -791,7 +791,7 @@ exports[`should render PWM_CONTROL correctly with zero 1`] = `
                   value={0}
                 >
                   <input
-                    className="InputRange__InputRange-uGAsR iOVoet"
+                    className="InputRange__InputRange-uGAsR lghldr"
                     kind="primary"
                     max={100}
                     min={0}
