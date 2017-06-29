@@ -9,18 +9,18 @@ Array [
   width: 100%;
 }
 
-.wVyOk {
+.jsKlVf {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
 
-.wVyOk > *:first-child {
+.jsKlVf > *:first-child {
   padding-left: 0;
 }
 
-.wVyOk > *:last-child {
+.jsKlVf > *:last-child {
   padding-right: 0;
 }
 
@@ -143,7 +143,7 @@ Array [
                 className="sc-iwsKbI klBtWC"
             >
                 <div
-                    className="sc-iwsKbI klBtWC sc-ifAKCX wVyOk"
+                    className="sc-iwsKbI klBtWC sc-ifAKCX jsKlVf"
                 />
             </styled.div>
         </Styled(styled.div)>
@@ -153,7 +153,7 @@ Array [
             className="sc-gZMcBi golqhY"
         >
             <div
-                className="sc-gZMcBi golqhY sc-ifAKCX wVyOk"
+                className="sc-gZMcBi golqhY sc-ifAKCX jsKlVf"
             />
         </styled.div>
     </Styled(styled.div)>
@@ -189,18 +189,18 @@ Array [
 <div
     className="sc-gzVnrw brTxhw"
 />,
-  .wVyOk {
+  .jsKlVf {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
 
-.wVyOk > *:first-child {
+.jsKlVf > *:first-child {
   padding-left: 0;
 }
 
-.wVyOk > *:last-child {
+.jsKlVf > *:last-child {
   padding-right: 0;
 }
 
@@ -215,20 +215,20 @@ Array [
 }
 
 <div
-    className="sc-iwsKbI klBtWC sc-ifAKCX wVyOk"
+    className="sc-iwsKbI klBtWC sc-ifAKCX jsKlVf"
 />,
-  .wVyOk {
+  .jsKlVf {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
 
-.wVyOk > *:first-child {
+.jsKlVf > *:first-child {
   padding-left: 0;
 }
 
-.wVyOk > *:last-child {
+.jsKlVf > *:last-child {
   padding-right: 0;
 }
 
@@ -237,7 +237,7 @@ Array [
 }
 
 <div
-    className="sc-gZMcBi golqhY sc-ifAKCX wVyOk"
+    className="sc-gZMcBi golqhY sc-ifAKCX jsKlVf"
 />,
 ]
 `;
