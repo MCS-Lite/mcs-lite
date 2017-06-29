@@ -46,7 +46,7 @@ const Image = ({ breakpoints }) =>
 
             {/* 3. Large Image for Desktop */}
             <BackgroundImageWrapper>
-              <BackgroundImage src={imgScreen} />
+              <BackgroundImage src={imgScreen} alt="screen" />
             </BackgroundImageWrapper>
 
             {/* 4. LazyLoad Chart */}
@@ -57,7 +57,7 @@ const Image = ({ breakpoints }) =>
             </ChartWrapper>
           </ImageLayerWrapper>
         : // mobile
-          <ScreenImageMobile src={imgScreen} />}
+          <ScreenImageMobile src={imgScreen} alt="screen" />}
   </Media>;
 
 Image.displayName = 'Image';
