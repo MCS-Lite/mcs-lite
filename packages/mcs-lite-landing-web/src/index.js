@@ -26,7 +26,7 @@ window.matchMedia =
   window.matchMedia ||
   function matchMedia() {
     return {
-      matches: true,
+      matches: true, // Desktop First
       addListener: () => {},
       removeListener: () => {},
     };

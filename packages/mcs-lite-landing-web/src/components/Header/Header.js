@@ -108,12 +108,12 @@ const Header = ({ locale, getMessages, breakpoints }) => {
               </NavItem>
             </Nav>
 
-            {/* 1. Right - For Desktop */}
-            {/* 2. Right - For Mobile */}
+            {/* 1. Right - Nav */}
             <Media query={{ minWidth: breakpoints.sm }}>
               {matches =>
                 matches
-                  ? <DesktopNav>
+                  ? // Desktop
+                    <DesktopNav>
                       {linkItems.map(e => <NavItem {...e} />)}
                       <NavItemDropdown
                         items={languageItems}
@@ -124,7 +124,8 @@ const Header = ({ locale, getMessages, breakpoints }) => {
                         Language
                       </NavItemDropdown>
                     </DesktopNav>
-                  : <MobileNav>
+                  : // Mobile
+                    <MobileNav>
                       <LazyloadOnce>
                         <LoadableNavItemBurger
                           items={[
