@@ -11,6 +11,12 @@ import { StyledTextCenter } from './styled-components';
 
 const HEIGHT = 171;
 
+const waypointConfig = {
+  topOffset: -1000,
+  bottomOffset: -1000,
+  fireOnRapidScroll: true,
+};
+
 const LoadableImage = Loadable({
   loader: () => import(/* webpackChunkName: "Section" */ './Image'),
   loading: () => null,
@@ -23,7 +29,7 @@ const Section5 = ({ tag, getMessages: t }) =>
         <Heading level={2}>{t('title')}</Heading>
 
         <SpaceTop height={40}>
-          <LazyloadOnce height={HEIGHT}>
+          <LazyloadOnce waypointConfig={waypointConfig} height={HEIGHT}>
             <LoadableImage />
           </LazyloadOnce>
         </SpaceTop>
