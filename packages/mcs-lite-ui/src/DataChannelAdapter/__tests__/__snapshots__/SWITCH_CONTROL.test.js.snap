@@ -23,7 +23,7 @@ exports[`should render SWITCH_CONTROL correctly with default value to false 1`] 
     >
       <div
         checked={false}
-        className="Switch__Switch-iwxo kHzQqK"
+        className="Switch__Switch-iwxo jSKZSz"
         kind="success"
         onClick={[Function]}
       />
@@ -57,7 +57,7 @@ exports[`should render SWITCH_CONTROL correctly with false value 1`] = `
     >
       <div
         checked={false}
-        className="Switch__Switch-iwxo kHzQqK"
+        className="Switch__Switch-iwxo jSKZSz"
         kind="success"
         onClick={[Function]}
       />
@@ -91,7 +91,7 @@ exports[`should render SWITCH_CONTROL correctly with true value 1`] = `
     >
       <div
         checked={true}
-        className="Switch__Switch-iwxo ifDnsZ"
+        className="Switch__Switch-iwxo ipuZOX"
         kind="success"
         onClick={[Function]}
       />

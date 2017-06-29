@@ -40,10 +40,7 @@
     ],
     "snapshotSerializers": [
       "enzyme-to-json/serializer"
-    ],
-    "moduleNameMapper": {
-      "\\.(css|less|styl|scss|sass)$": "identity-obj-proxy"
-    }
+    ]
   },
   "devDependencies": {
     "@storybook/addon-info": "^3.1.6",

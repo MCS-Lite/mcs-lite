@@ -36,7 +36,7 @@ exports[`should render CATEGORY_CONTROL correctly with default value to N/A 1`] 
   >
     <ControlRange__Container>
       <div
-        className="ControlRange__Container-ispxkc kkVGKq"
+        className="ControlRange__Container-ispxkc kQpIsI"
       >
         <ControlRange__LabelWrapper
           labels={
@@ -47,21 +47,21 @@ exports[`should render CATEGORY_CONTROL correctly with default value to N/A 1`] 
           }
         >
           <div
-            className="ControlRange__LabelWrapper-hpKjGx kKFCvQ"
+            className="ControlRange__LabelWrapper-hpKjGx bfHWDZ"
           >
             <ControlRange__LabelItem>
               <div
-                className="ControlRange__LabelItem-kiIalK idIiax"
+                className="ControlRange__LabelItem-kiIalK dulPtE"
               >
                 <P
                   color="grayBase"
                 >
                   <Component
-                    className="P__P-KJbCR kHKeHO"
+                    className="P__P-KJbCR hrSHif"
                     color="grayBase"
                   >
                     <p
-                      className="P__P-KJbCR kHKeHO"
+                      className="P__P-KJbCR hrSHif"
                       color="grayBase"
                     >
                       name1
@@ -72,17 +72,17 @@ exports[`should render CATEGORY_CONTROL correctly with default value to N/A 1`] 
             </ControlRange__LabelItem>
             <ControlRange__LabelItem>
               <div
-                className="ControlRange__LabelItem-kiIalK idIiax"
+                className="ControlRange__LabelItem-kiIalK dulPtE"
               >
                 <P
                   color="grayBase"
                 >
                   <Component
-                    className="P__P-KJbCR kHKeHO"
+                    className="P__P-KJbCR hrSHif"
                     color="grayBase"
                   >
                     <p
-                      className="P__P-KJbCR kHKeHO"
+                      className="P__P-KJbCR hrSHif"
                       color="grayBase"
                     >
                       name2
@@ -102,21 +102,21 @@ exports[`should render CATEGORY_CONTROL correctly with default value to N/A 1`] 
           }
         >
           <div
-            className="ControlRange__InputWrapper-fklkwO dVxsgp"
+            className="ControlRange__InputWrapper-fklkwO fpvHuS"
           >
             <ControlRange__ValueWrapper
               color="grayBase"
             >
               <P
-                className="ControlRange__ValueWrapper-jxMKxr lkxWna"
+                className="ControlRange__ValueWrapper-jxMKxr kFWjXk"
                 color="grayBase"
               >
                 <Component
-                  className="ControlRange__ValueWrapper-jxMKxr lkxWna P__P-KJbCR kHKeHO"
+                  className="ControlRange__ValueWrapper-jxMKxr kFWjXk P__P-KJbCR hrSHif"
                   color="grayBase"
                 >
                   <div
-                    className="ControlRange__ValueWrapper-jxMKxr lkxWna P__P-KJbCR kHKeHO"
+                    className="ControlRange__ValueWrapper-jxMKxr kFWjXk P__P-KJbCR hrSHif"
                     color="grayBase"
                   >
                     Current value: 
@@ -124,15 +124,15 @@ exports[`should render CATEGORY_CONTROL correctly with default value to N/A 1`] 
                       color="primary"
                     >
                       <P
-                        className="ControlRange__Value-kXycxr cJYxpn"
+                        className="ControlRange__Value-kXycxr glmUBq"
                         color="primary"
                       >
                         <Component
-                          className="ControlRange__Value-kXycxr cJYxpn P__P-KJbCR dnAaPu"
+                          className="ControlRange__Value-kXycxr glmUBq P__P-KJbCR jEbbdW"
                           color="primary"
                         >
                           <p
-                            className="ControlRange__Value-kXycxr cJYxpn P__P-KJbCR dnAaPu"
+                            className="ControlRange__Value-kXycxr glmUBq P__P-KJbCR jEbbdW"
                             color="primary"
                           >
                             N/A
@@ -155,7 +155,7 @@ exports[`should render CATEGORY_CONTROL correctly with default value to N/A 1`] 
               type="range"
             >
               <input
-                className="InputRange__InputRange-uGAsR iOVoet"
+                className="InputRange__InputRange-uGAsR lghldr"
                 kind="primary"
                 max={1}
                 min={0}
@@ -213,7 +213,7 @@ exports[`should render CATEGORY_CONTROL correctly with first item 1`] = `
   >
     <ControlRange__Container>
       <div
-        className="ControlRange__Container-ispxkc kkVGKq"
+        className="ControlRange__Container-ispxkc kQpIsI"
       >
         <ControlRange__LabelWrapper
           labels={
@@ -224,21 +224,21 @@ exports[`should render CATEGORY_CONTROL correctly with first item 1`] = `
           }
         >
           <div
-            className="ControlRange__LabelWrapper-hpKjGx kKFCvQ"
+            className="ControlRange__LabelWrapper-hpKjGx bfHWDZ"
           >
             <ControlRange__LabelItem>
               <div
-                className="ControlRange__LabelItem-kiIalK idIiax"
+                className="ControlRange__LabelItem-kiIalK dulPtE"
               >
                 <P
                   color="grayBase"
                 >
                   <Component
-                    className="P__P-KJbCR kHKeHO"
+                    className="P__P-KJbCR hrSHif"
                     color="grayBase"
                   >
                     <p
-                      className="P__P-KJbCR kHKeHO"
+                      className="P__P-KJbCR hrSHif"
                       color="grayBase"
                     >
                       name1
@@ -249,17 +249,17 @@ exports[`should render CATEGORY_CONTROL correctly with first item 1`] = `
             </ControlRange__LabelItem>
             <ControlRange__LabelItem>
               <div
-                className="ControlRange__LabelItem-kiIalK idIiax"
+                className="ControlRange__LabelItem-kiIalK dulPtE"
               >
                 <P
                   color="grayBase"
                 >
                   <Component
-                    className="P__P-KJbCR kHKeHO"
+                    className="P__P-KJbCR hrSHif"
                     color="grayBase"
                   >
                     <p
-                      className="P__P-KJbCR kHKeHO"
+                      className="P__P-KJbCR hrSHif"
                       color="grayBase"
                     >
                       name2
@@ -279,21 +279,21 @@ exports[`should render CATEGORY_CONTROL correctly with first item 1`] = `
           }
         >
           <div
-            className="ControlRange__InputWrapper-fklkwO dVxsgp"
+            className="ControlRange__InputWrapper-fklkwO fpvHuS"
           >
             <ControlRange__ValueWrapper
               color="grayBase"
             >
               <P
-                className="ControlRange__ValueWrapper-jxMKxr lkxWna"
+                className="ControlRange__ValueWrapper-jxMKxr kFWjXk"
                 color="grayBase"
               >
                 <Component
-                  className="ControlRange__ValueWrapper-jxMKxr lkxWna P__P-KJbCR kHKeHO"
+                  className="ControlRange__ValueWrapper-jxMKxr kFWjXk P__P-KJbCR hrSHif"
                   color="grayBase"
                 >
                   <div
-                    className="ControlRange__ValueWrapper-jxMKxr lkxWna P__P-KJbCR kHKeHO"
+                    className="ControlRange__ValueWrapper-jxMKxr kFWjXk P__P-KJbCR hrSHif"
                     color="grayBase"
                   >
                     Current value: 
@@ -301,15 +301,15 @@ exports[`should render CATEGORY_CONTROL correctly with first item 1`] = `
                       color="primary"
                     >
                       <P
-                        className="ControlRange__Value-kXycxr cJYxpn"
+                        className="ControlRange__Value-kXycxr glmUBq"
                         color="primary"
                       >
                         <Component
-                          className="ControlRange__Value-kXycxr cJYxpn P__P-KJbCR dnAaPu"
+                          className="ControlRange__Value-kXycxr glmUBq P__P-KJbCR jEbbdW"
                           color="primary"
                         >
                           <p
-                            className="ControlRange__Value-kXycxr cJYxpn P__P-KJbCR dnAaPu"
+                            className="ControlRange__Value-kXycxr glmUBq P__P-KJbCR jEbbdW"
                             color="primary"
                           >
                             value1
@@ -333,7 +333,7 @@ exports[`should render CATEGORY_CONTROL correctly with first item 1`] = `
               value={0}
             >
               <input
-                className="InputRange__InputRange-uGAsR iOVoet"
+                className="InputRange__InputRange-uGAsR lghldr"
                 kind="primary"
                 max={1}
                 min={0}
@@ -392,7 +392,7 @@ exports[`should render CATEGORY_CONTROL correctly with second item 1`] = `
   >
     <ControlRange__Container>
       <div
-        className="ControlRange__Container-ispxkc kkVGKq"
+        className="ControlRange__Container-ispxkc kQpIsI"
       >
         <ControlRange__LabelWrapper
           labels={
@@ -403,21 +403,21 @@ exports[`should render CATEGORY_CONTROL correctly with second item 1`] = `
           }
         >
           <div
-            className="ControlRange__LabelWrapper-hpKjGx kKFCvQ"
+            className="ControlRange__LabelWrapper-hpKjGx bfHWDZ"
           >
             <ControlRange__LabelItem>
               <div
-                className="ControlRange__LabelItem-kiIalK idIiax"
+                className="ControlRange__LabelItem-kiIalK dulPtE"
               >
                 <P
                   color="grayBase"
                 >
                   <Component
-                    className="P__P-KJbCR kHKeHO"
+                    className="P__P-KJbCR hrSHif"
                     color="grayBase"
                   >
                     <p
-                      className="P__P-KJbCR kHKeHO"
+                      className="P__P-KJbCR hrSHif"
                       color="grayBase"
                     >
                       name1
@@ -428,17 +428,17 @@ exports[`should render CATEGORY_CONTROL correctly with second item 1`] = `
             </ControlRange__LabelItem>
             <ControlRange__LabelItem>
               <div
-                className="ControlRange__LabelItem-kiIalK idIiax"
+                className="ControlRange__LabelItem-kiIalK dulPtE"
               >
                 <P
                   color="grayBase"
                 >
                   <Component
-                    className="P__P-KJbCR kHKeHO"
+                    className="P__P-KJbCR hrSHif"
                     color="grayBase"
                   >
                     <p
-                      className="P__P-KJbCR kHKeHO"
+                      className="P__P-KJbCR hrSHif"
                       color="grayBase"
                     >
                       name2
@@ -458,21 +458,21 @@ exports[`should render CATEGORY_CONTROL correctly with second item 1`] = `
           }
         >
           <div
-            className="ControlRange__InputWrapper-fklkwO dVxsgp"
+            className="ControlRange__InputWrapper-fklkwO fpvHuS"
           >
             <ControlRange__ValueWrapper
               color="grayBase"
             >
               <P
-                className="ControlRange__ValueWrapper-jxMKxr lkxWna"
+                className="ControlRange__ValueWrapper-jxMKxr kFWjXk"
                 color="grayBase"
               >
                 <Component
-                  className="ControlRange__ValueWrapper-jxMKxr lkxWna P__P-KJbCR kHKeHO"
+                  className="ControlRange__ValueWrapper-jxMKxr kFWjXk P__P-KJbCR hrSHif"
                   color="grayBase"
                 >
                   <div
-                    className="ControlRange__ValueWrapper-jxMKxr lkxWna P__P-KJbCR kHKeHO"
+                    className="ControlRange__ValueWrapper-jxMKxr kFWjXk P__P-KJbCR hrSHif"
                     color="grayBase"
                   >
                     Current value: 
@@ -480,15 +480,15 @@ exports[`should render CATEGORY_CONTROL correctly with second item 1`] = `
                       color="primary"
                     >
                       <P
-                        className="ControlRange__Value-kXycxr cJYxpn"
+                        className="ControlRange__Value-kXycxr glmUBq"
                         color="primary"
                       >
                         <Component
-                          className="ControlRange__Value-kXycxr cJYxpn P__P-KJbCR dnAaPu"
+                          className="ControlRange__Value-kXycxr glmUBq P__P-KJbCR jEbbdW"
                           color="primary"
                         >
                           <p
-                            className="ControlRange__Value-kXycxr cJYxpn P__P-KJbCR dnAaPu"
+                            className="ControlRange__Value-kXycxr glmUBq P__P-KJbCR jEbbdW"
                             color="primary"
                           >
                             value2
@@ -512,7 +512,7 @@ exports[`should render CATEGORY_CONTROL correctly with second item 1`] = `
               value={1}
             >
               <input
-                className="InputRange__InputRange-uGAsR iOVoet"
+                className="InputRange__InputRange-uGAsR lghldr"
                 kind="primary"
                 max={1}
                 min={0}

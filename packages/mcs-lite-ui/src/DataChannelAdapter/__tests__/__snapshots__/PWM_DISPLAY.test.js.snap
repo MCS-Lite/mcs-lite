@@ -28,18 +28,18 @@ exports[`should render PWM_DISPLAY correctly with default value to N/A 1`] = `
   >
     <DisplayMultipleValue__Container>
       <div
-        className="DisplayMultipleValue__Container-emGSTk jhztvc"
+        className="DisplayMultipleValue__Container-emGSTk bcIInJ"
       >
         <div>
           <P
             color="grayBase"
           >
             <Component
-              className="P__P-KJbCR kHKeHO"
+              className="P__P-KJbCR hrSHif"
               color="grayBase"
             >
               <p
-                className="P__P-KJbCR kHKeHO"
+                className="P__P-KJbCR hrSHif"
                 color="grayBase"
               >
                 Value
@@ -50,17 +50,17 @@ exports[`should render PWM_DISPLAY correctly with default value to N/A 1`] = `
             color="primary"
           >
             <Heading
-              className="DisplayMultipleValue__StyledHeading-fVnwQZ fMCDyR"
+              className="DisplayMultipleValue__StyledHeading-fVnwQZ kDmihL"
               color="primary"
               level={1}
             >
               <H
-                className="DisplayMultipleValue__StyledHeading-fVnwQZ fMCDyR Heading__Heading-bbmQNS bzctpr"
+                className="DisplayMultipleValue__StyledHeading-fVnwQZ kDmihL Heading__Heading-bbmQNS qIgcJ"
                 color="primary"
                 level={1}
               >
                 <h1
-                  className="DisplayMultipleValue__StyledHeading-fVnwQZ fMCDyR Heading__Heading-bbmQNS bzctpr"
+                  className="DisplayMultipleValue__StyledHeading-fVnwQZ kDmihL Heading__Heading-bbmQNS qIgcJ"
                   color="primary"
                 >
                   N/A
@@ -74,11 +74,11 @@ exports[`should render PWM_DISPLAY correctly with default value to N/A 1`] = `
             color="grayBase"
           >
             <Component
-              className="P__P-KJbCR kHKeHO"
+              className="P__P-KJbCR hrSHif"
               color="grayBase"
             >
               <p
-                className="P__P-KJbCR kHKeHO"
+                className="P__P-KJbCR hrSHif"
                 color="grayBase"
               >
                 Period
@@ -89,17 +89,17 @@ exports[`should render PWM_DISPLAY correctly with default value to N/A 1`] = `
             color="primary"
           >
             <Heading
-              className="DisplayMultipleValue__StyledHeading-fVnwQZ fMCDyR"
+              className="DisplayMultipleValue__StyledHeading-fVnwQZ kDmihL"
               color="primary"
               level={1}
             >
               <H
-                className="DisplayMultipleValue__StyledHeading-fVnwQZ fMCDyR Heading__Heading-bbmQNS bzctpr"
+                className="DisplayMultipleValue__StyledHeading-fVnwQZ kDmihL Heading__Heading-bbmQNS qIgcJ"
                 color="primary"
                 level={1}
               >
                 <h1
-                  className="DisplayMultipleValue__StyledHeading-fVnwQZ fMCDyR Heading__Heading-bbmQNS bzctpr"
+                  className="DisplayMultipleValue__StyledHeading-fVnwQZ kDmihL Heading__Heading-bbmQNS qIgcJ"
                   color="primary"
                 >
                   N/A
@@ -145,18 +145,18 @@ exports[`should render PWM_DISPLAY correctly with max 1`] = `
   >
     <DisplayMultipleValue__Container>
       <div
-        className="DisplayMultipleValue__Container-emGSTk jhztvc"
+        className="DisplayMultipleValue__Container-emGSTk bcIInJ"
       >
         <div>
           <P
             color="grayBase"
           >
             <Component
-              className="P__P-KJbCR kHKeHO"
+              className="P__P-KJbCR hrSHif"
               color="grayBase"
             >
               <p
-                className="P__P-KJbCR kHKeHO"
+                className="P__P-KJbCR hrSHif"
                 color="grayBase"
               >
                 Value
@@ -167,17 +167,17 @@ exports[`should render PWM_DISPLAY correctly with max 1`] = `
             color="primary"
           >
             <Heading
-              className="DisplayMultipleValue__StyledHeading-fVnwQZ fMCDyR"
+              className="DisplayMultipleValue__StyledHeading-fVnwQZ kDmihL"
               color="primary"
               level={1}
             >
               <H
-                className="DisplayMultipleValue__StyledHeading-fVnwQZ fMCDyR Heading__Heading-bbmQNS bzctpr"
+                className="DisplayMultipleValue__StyledHeading-fVnwQZ kDmihL Heading__Heading-bbmQNS qIgcJ"
                 color="primary"
                 level={1}
               >
                 <h1
-                  className="DisplayMultipleValue__StyledHeading-fVnwQZ fMCDyR Heading__Heading-bbmQNS bzctpr"
+                  className="DisplayMultipleValue__StyledHeading-fVnwQZ kDmihL Heading__Heading-bbmQNS qIgcJ"
                   color="primary"
                 >
                   100
@@ -191,11 +191,11 @@ exports[`should render PWM_DISPLAY correctly with max 1`] = `
             color="grayBase"
           >
             <Component
-              className="P__P-KJbCR kHKeHO"
+              className="P__P-KJbCR hrSHif"
               color="grayBase"
             >
               <p
-                className="P__P-KJbCR kHKeHO"
+                className="P__P-KJbCR hrSHif"
                 color="grayBase"
               >
                 Period
@@ -206,17 +206,17 @@ exports[`should render PWM_DISPLAY correctly with max 1`] = `
             color="primary"
           >
             <Heading
-              className="DisplayMultipleValue__StyledHeading-fVnwQZ fMCDyR"
+              className="DisplayMultipleValue__StyledHeading-fVnwQZ kDmihL"
               color="primary"
               level={1}
             >
               <H
-                className="DisplayMultipleValue__StyledHeading-fVnwQZ fMCDyR Heading__Heading-bbmQNS bzctpr"
+                className="DisplayMultipleValue__StyledHeading-fVnwQZ kDmihL Heading__Heading-bbmQNS qIgcJ"
                 color="primary"
                 level={1}
               >
                 <h1
-                  className="DisplayMultipleValue__StyledHeading-fVnwQZ fMCDyR Heading__Heading-bbmQNS bzctpr"
+                  className="DisplayMultipleValue__StyledHeading-fVnwQZ kDmihL Heading__Heading-bbmQNS qIgcJ"
                   color="primary"
                 >
                   1
@@ -262,18 +262,18 @@ exports[`should render PWM_DISPLAY correctly with zero 1`] = `
   >
     <DisplayMultipleValue__Container>
       <div
-        className="DisplayMultipleValue__Container-emGSTk jhztvc"
+        className="DisplayMultipleValue__Container-emGSTk bcIInJ"
       >
         <div>
           <P
             color="grayBase"
           >
             <Component
-              className="P__P-KJbCR kHKeHO"
+              className="P__P-KJbCR hrSHif"
               color="grayBase"
             >
               <p
-                className="P__P-KJbCR kHKeHO"
+                className="P__P-KJbCR hrSHif"
                 color="grayBase"
               >
                 Value
@@ -284,17 +284,17 @@ exports[`should render PWM_DISPLAY correctly with zero 1`] = `
             color="primary"
           >
             <Heading
-              className="DisplayMultipleValue__StyledHeading-fVnwQZ fMCDyR"
+              className="DisplayMultipleValue__StyledHeading-fVnwQZ kDmihL"
               color="primary"
               level={1}
             >
               <H
-                className="DisplayMultipleValue__StyledHeading-fVnwQZ fMCDyR Heading__Heading-bbmQNS bzctpr"
+                className="DisplayMultipleValue__StyledHeading-fVnwQZ kDmihL Heading__Heading-bbmQNS qIgcJ"
                 color="primary"
                 level={1}
               >
                 <h1
-                  className="DisplayMultipleValue__StyledHeading-fVnwQZ fMCDyR Heading__Heading-bbmQNS bzctpr"
+                  className="DisplayMultipleValue__StyledHeading-fVnwQZ kDmihL Heading__Heading-bbmQNS qIgcJ"
                   color="primary"
                 >
                   0
@@ -308,11 +308,11 @@ exports[`should render PWM_DISPLAY correctly with zero 1`] = `
             color="grayBase"
           >
             <Component
-              className="P__P-KJbCR kHKeHO"
+              className="P__P-KJbCR hrSHif"
               color="grayBase"
             >
               <p
-                className="P__P-KJbCR kHKeHO"
+                className="P__P-KJbCR hrSHif"
                 color="grayBase"
               >
                 Period
@@ -323,17 +323,17 @@ exports[`should render PWM_DISPLAY correctly with zero 1`] = `
             color="primary"
           >
             <Heading
-              className="DisplayMultipleValue__StyledHeading-fVnwQZ fMCDyR"
+              className="DisplayMultipleValue__StyledHeading-fVnwQZ kDmihL"
               color="primary"
               level={1}
             >
               <H
-                className="DisplayMultipleValue__StyledHeading-fVnwQZ fMCDyR Heading__Heading-bbmQNS bzctpr"
+                className="DisplayMultipleValue__StyledHeading-fVnwQZ kDmihL Heading__Heading-bbmQNS qIgcJ"
                 color="primary"
                 level={1}
               >
                 <h1
-                  className="DisplayMultipleValue__StyledHeading-fVnwQZ fMCDyR Heading__Heading-bbmQNS bzctpr"
+                  className="DisplayMultipleValue__StyledHeading-fVnwQZ kDmihL Heading__Heading-bbmQNS qIgcJ"
                   color="primary"
                 >
                   0

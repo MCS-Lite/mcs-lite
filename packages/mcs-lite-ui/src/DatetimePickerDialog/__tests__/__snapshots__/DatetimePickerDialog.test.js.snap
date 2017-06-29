@@ -4,7 +4,7 @@ exports[`should redner styled-components <Header/> 1`] = `
 <div>
   <DatetimePickerDialog__Header>
     <header
-      className="DatetimePickerDialog__Header-iZpsvK iUrndt"
+      className="DatetimePickerDialog__Header-iZpsvK cLUQFN"
     />
   </DatetimePickerDialog__Header>
 </div>
