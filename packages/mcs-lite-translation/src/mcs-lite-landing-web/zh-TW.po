@@ -18,7 +18,7 @@ msgstr ""
 #. Build your IoT platform with ease and flexibility
 #: ../mcs-lite-translation/src/mcs-lite-landing-web/messages.json
 msgid "Build your IoT platform with ease and flexibility"
-msgstr "輕鬆打造您專屬的物聯網平台"
+msgstr "輕鬆打造專屬的物聯網平台"
 
 #. [Section3.data.desc]
 #. defaultMessage is:
@@ -46,7 +46,7 @@ msgstr "從 MCS Lite 控制台遠端操控您的裝置"
 #. Customization
 #: ../mcs-lite-translation/src/mcs-lite-landing-web/messages.json
 msgid "Customization"
-msgstr "客製化"
+msgstr "深度客製化"
 
 #. [Section4.custom.button]
 #. defaultMessage is:
@@ -88,7 +88,7 @@ msgstr "探索內建的功能"
 #. Extend and get creative with MCS Lite
 #: ../mcs-lite-translation/src/mcs-lite-landing-web/messages.json
 msgid "Extend and get creative with MCS Lite"
-msgstr "透過 MCS Lite 來擴展和發揮您的創意創造性"
+msgstr "MCS Lite 讓您的創意無限擴展"
 
 #. [Section4.github.button]
 #. defaultMessage is:
@@ -116,7 +116,7 @@ msgstr "快速啟動 MCS Lite"
 #. Let's get started
 #: ../mcs-lite-translation/src/mcs-lite-landing-web/messages.json
 msgid "Let's get started"
-msgstr "讓我們開始體驗"
+msgstr "即刻開始體驗"
 
 #. [App.title]
 #. defaultMessage is:
@@ -160,9 +160,9 @@ msgid ""
 "applications. Binaries are available in Windows, Linux and Mac OS for "
 "instant launch."
 msgstr ""
-"MCS Lite 承襲了 MCS online 的主要功能與易於上手的使用者介面，是為需要一個專屬"
-"的物聯網平台的用戶們而設計的。MCS Lite 應用程式有 Windows，Linux和 Mac OS 版"
-"本，下載後可在您的電腦直接啟動。"
+"MCS Lite 承襲了 MCS online 的主要功能與易於上手的使用者介面，是為了需要專屬物"
+"聯網平台的用戶們而設計的。MCS Lite 應用程式有 Windows，Linux和 Mac OS 版本，"
+"下載後可在您的電腦直接啟動。"
 
 #. [Section4.github.desc]
 #. defaultMessage is:
@@ -215,7 +215,7 @@ msgstr "開放原始碼"
 #. Remote control
 #: ../mcs-lite-translation/src/mcs-lite-landing-web/messages.json
 msgid "Remote control"
-msgstr "遙控"
+msgstr "遠端控制"
 
 #. [Header.resource]
 #. defaultMessage is:
@@ -250,8 +250,8 @@ msgid ""
 "modify the source code or use the API provided by MCS Lite to expand the "
 "functions."
 msgstr ""
-"不管是要客製化平台的使用者介面，支援其他資料庫或是增加額外的資料分析與資料加"
-"密等功能，皆可透過直接修改代碼或使用 MCS Lite 提供的 API 來進一步的擴充功能。"
+"不管是要客製化平台的使用者介面，支援其他資料庫或是增加額外的資料分析與加密等"
+"功能，皆可透過直接修改代碼或使用 MCS Lite 提供的 API 來進一步的擴充功能。"
 
 #. [DownloadButton.or]
 #. defaultMessage is:
