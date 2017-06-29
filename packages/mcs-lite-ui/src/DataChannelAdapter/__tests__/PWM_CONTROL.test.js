@@ -1,5 +1,6 @@
 import React from 'react';
 import { mount } from 'enzyme';
+import toJson from 'enzyme-to-json';
 import { ThemeProvider } from 'styled-components';
 import { theme } from 'mcs-lite-theme';
 import DataChannelAdapter from '../DataChannelAdapter';
@@ -23,7 +24,8 @@ it('should render PWM_CONTROL correctly with default value to N/A', () => {
     </ThemeProvider>,
   );
 
-  expect(wrapper.find(DataChannelAdapter)).toMatchSnapshot();
+  const tree = toJson(wrapper.find(DataChannelAdapter));
+  expect(tree).toMatchSnapshot();
 });
 
 it('should render PWM_CONTROL correctly with zero', () => {
@@ -44,7 +46,8 @@ it('should render PWM_CONTROL correctly with zero', () => {
     </ThemeProvider>,
   );
 
-  expect(wrapper.find(DataChannelAdapter)).toMatchSnapshot();
+  const tree = toJson(wrapper.find(DataChannelAdapter));
+  expect(tree).toMatchSnapshot();
 });
 
 it('should render PWM_CONTROL correctly with max', () => {
@@ -65,7 +68,8 @@ it('should render PWM_CONTROL correctly with max', () => {
     </ThemeProvider>,
   );
 
-  expect(wrapper.find(DataChannelAdapter)).toMatchSnapshot();
+  const tree = toJson(wrapper.find(DataChannelAdapter));
+  expect(tree).toMatchSnapshot();
 });
 
 it('should handle onChange of ControlPeriod', () => {

@@ -37,9 +37,6 @@
     "testPathIgnorePatterns": [
       "<rootDir>/node_modules/",
       "<rootDir>/lib/"
-    ],
-    "snapshotSerializers": [
-      "enzyme-to-json/serializer"
     ]
   },
   "devDependencies": {
