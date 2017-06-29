@@ -1964,8 +1964,8 @@ classnames@2.2.5, classnames@^2.2.5:
   resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.2.5.tgz#fb3801d453467649ef3603c7d61a02bd129bde6d"
 
 clean-css@4.1.x:
-  version "4.1.4"
-  resolved "https://registry.yarnpkg.com/clean-css/-/clean-css-4.1.4.tgz#eec8811db27457e0078d8ca921fa81b72fa82bf4"
+  version "4.1.5"
+  resolved "https://registry.yarnpkg.com/clean-css/-/clean-css-4.1.5.tgz#d09a87a02a5375117589796ae76a063cacdb541a"
   dependencies:
     source-map "0.5.x"
 
@@ -4376,10 +4376,6 @@ har-validator@~4.2.1:
     ajv "^4.9.1"
     har-schema "^1.0.5"
 
-harmony-reflect@^1.4.6:
-  version "1.5.1"
-  resolved "https://registry.yarnpkg.com/harmony-reflect/-/harmony-reflect-1.5.1.tgz#b54ca617b00cc8aef559bbb17b3d85431dc7e329"
-
 has-ansi@^0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/has-ansi/-/has-ansi-0.1.0.tgz#84f265aae8c0e6a88a12d7022894b7568894c62e"
@@ -4644,12 +4640,6 @@ icss-utils@^2.1.0:
   resolved "https://registry.yarnpkg.com/icss-utils/-/icss-utils-2.1.0.tgz#83f0a0ec378bf3246178b6c2ad9136f135b1c962"
   dependencies:
     postcss "^6.0.1"
-
-identity-obj-proxy@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/identity-obj-proxy/-/identity-obj-proxy-3.0.0.tgz#94d2bda96084453ef36fbc5aaec37e0f79f1fc14"
-  dependencies:
-    harmony-reflect "^1.4.6"
 
 ieee754@^1.1.4:
   version "1.1.8"
