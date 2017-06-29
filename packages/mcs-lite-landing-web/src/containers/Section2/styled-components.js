@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import SectionRow from '../../components/SectionRow';
-import BackgroundImage from '../../components/BackgroundImage';
 
 export const StyledSectionRow = styled(SectionRow)`
   background-image: linear-gradient(-180deg, #FFFFFF 0%, #FDFDFD 47%, #FAFAFA 100%);
@@ -12,6 +11,8 @@ export const MacImage = styled.img`
   max-width: 100%;
 `;
 
-export const BackgroundImageContain = styled(BackgroundImage)`
-  background-size: contain;
+export const BackgroundImageContain = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;

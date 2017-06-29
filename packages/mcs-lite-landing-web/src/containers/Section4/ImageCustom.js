@@ -6,14 +6,15 @@ import SVGCard from '../../components/SVG/SVGCard';
 import SVGCode from '../../components/SVG/SVGCode';
 import SVGSearch from '../../components/SVG/SVGSearch';
 import SVGTooltip from '../../components/SVG/SVGTooltip';
-import imgCustomizationBackground from '../../statics/images/img_customization.svg';
+import SVGCustomBg from '../../components/SVG/SVGCustomBg';
 import ImageLayerWrapper from '../../components/ImageLayerWrapper';
-import BackgroundImage from '../../components/BackgroundImage';
 
 const ImageCustom = () =>
   <Transition component={false} enter={{ opacity: 1 }} leave={{ opacity: 0 }}>
     <ImageLayerWrapper key="ImageLayerWrapper">
-      <BackgroundImage src={imgCustomizationBackground} />
+      <div>
+        <SVGCustomBg />
+      </div>
       <div>
         <ScrollParallax
           animation={{
