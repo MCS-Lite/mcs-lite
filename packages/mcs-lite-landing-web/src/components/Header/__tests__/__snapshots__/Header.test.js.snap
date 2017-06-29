@@ -1,54 +1,303 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should renders <Header> correctly 1`] = `
-<LandingHeader
-  offset={40}
+.irrVft {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.mJBQx {
+  display: block;
+  box-sizing: border-box;
+  padding: 20px;
+  width: 100%;
+  width: 100%;
+}
+
+.bIAnAi {
+  margin: 0 auto;
+  max-width: 100%;
+  width: 960px;
+}
+
+.eUrocd {
+  height: 50px;
+}
+
+.iwkTdf {
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #FAFAFA;
+  height: 50px;
+  box-shadow: none;
+  -webkit-transition: box-shadow cubic-bezier(0.47, 0, 0.75, 0.72) 0.2s;
+  transition: box-shadow cubic-bezier(0.47, 0, 0.75, 0.72) 0.2s;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.kvodqH {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.kvodqH > *:first-child {
+  padding-left: 0;
+}
+
+.kvodqH > *:last-child {
+  padding-right: 0;
+}
+
+.eGvZKC {
+  height: 50px;
+  padding: 0 15px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #75868C;
+  -webkit-transition: color cubic-bezier(0.47, 0, 0.75, 0.72) 0.3s;
+  transition: color cubic-bezier(0.47, 0, 0.75, 0.72) 0.3s;
+  cursor: pointer;
+}
+
+.eGvZKC:hover {
+  color: #40494D;
+}
+
+.eGvZKC path {
+  fill: currentColor;
+}
+
+.cURZrA {
+  padding-top: 0;
+  padding-bottom: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-between;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: space-between;
+  justify-content: space-between;
+}
+
+.cHcTPx {
+  visibility: hidden;
+  display: none;
+}
+
+.ejzgHG {
+  height: 28px;
+  width: auto;
+}
+
+<ThemeProvider
+  theme={
+    Object {
+      "base": Object {
+        "bodyBackgroundColor": "#F1F2F7",
+        "bodyColor": "#40494D",
+        "fontSize": "13px",
+        "lineHeight": 1.5,
+      },
+      "color": Object {
+        "black": "#40494D",
+        "default": "#FAFAFA",
+        "error": "#F5364E",
+        "grayBase": "#75868C",
+        "grayDark": "#D1D2D3",
+        "grayLight": "#FAFAFA",
+        "primary": "#00A1DE",
+        "success": "#69BE28",
+        "warning": "#F39A1E",
+        "white": "#FFFFFF",
+      },
+      "fontSize": Object {
+        "h1": "2.46rem",
+        "h2": "1.84rem",
+        "h3": "1.38rem",
+        "h4": "1.15rem",
+        "h5": "1rem",
+        "h6": "1rem",
+        "p": "1rem",
+        "small": "0.923rem",
+      },
+      "height": Object {
+        "header": "50px",
+        "normal": "32px",
+        "small": "20px",
+      },
+      "mobile": Object {
+        "headerHeight": "56px",
+        "maxWidth": "800px",
+      },
+    }
+  }
 >
-  <Styled(PageContainer)
-    width="960px"
+  <Header
+    breakpoints={
+      Object {
+        "sm": 1,
+      }
+    }
+    getMessages={[Function]}
+    locale="en"
   >
-    <Styled(RowContainer)>
-      <Styled(Breakpoints)
-        xs={12}
+    <LandingHeader
+      offset={40}
+    >
+      <styled.header
+        offset={40}
       >
-        <styled.div>
-          <NavItem
-            active={false}
-            component="div"
-            disabled={false}
+        <header
+          className="sc-ifAKCX eUrocd"
+          offset={40}
+        >
+          <styled.div
+            isTop={true}
           >
-            <styled.img
-              alt="logo"
-              src="logo_mcs_lite_black.svg"
-            />
-          </NavItem>
-        </styled.div>
-        <Media
-          query={
-            Object {
-              "minWidth": 1,
-            }
-          }
-        />
-        <styled.div>
-          <a
-            href="/en"
-          >
-            English
-          </a>
-          <a
-            href="/zh-TW"
-          >
-            繁體中文
-          </a>
-          <a
-            href="/zh-CN"
-          >
-            简体中文
-          </a>
-        </styled.div>
-      </Styled(Breakpoints)>
-    </Styled(RowContainer)>
-  </Styled(PageContainer)>
-</LandingHeader>
+            <div
+              className="sc-EHOje iwkTdf"
+            >
+              <Styled(PageContainer)
+                width="960px"
+              >
+                <PageContainer
+                  className="sc-bxivhb bIAnAi"
+                  width="960px"
+                >
+                  <div
+                    className="sc-bxivhb bIAnAi"
+                    width="960px"
+                  >
+                    <Styled(RowContainer)>
+                      <RowContainer
+                        className="sc-bwzfXH irrVft"
+                        divisions={12}
+                      >
+                        <section
+                          className="sc-bwzfXH irrVft"
+                        >
+                          <Styled(Breakpoints)
+                            xs={12}
+                          >
+                            <Breakpoints
+                              className="sc-jzJRlG cURZrA"
+                              xs={12}
+                            >
+                              <Styled(ColumnContainer)
+                                className="sc-jzJRlG cURZrA"
+                                xs={12}
+                              >
+                                <ColumnContainer
+                                  className="sc-jzJRlG cURZrA sc-htpNat mJBQx"
+                                  divisions={12}
+                                  xs={12}
+                                >
+                                  <div
+                                    className="sc-jzJRlG cURZrA sc-htpNat mJBQx"
+                                  >
+                                    <styled.div>
+                                      <div
+                                        className="sc-bZQynM kvodqH"
+                                      >
+                                        <NavItem
+                                          active={false}
+                                          component="div"
+                                          disabled={false}
+                                        >
+                                          <BaseComponent
+                                            active={false}
+                                            className="sc-gzVnrw eGvZKC"
+                                            component="div"
+                                            disabled={false}
+                                          >
+                                            <div
+                                              className="sc-gzVnrw eGvZKC"
+                                            >
+                                              <styled.img
+                                                alt="logo"
+                                                src="logo_mcs_lite_black.svg"
+                                              >
+                                                <img
+                                                  alt="logo"
+                                                  className="sc-chPdSV ejzgHG"
+                                                  src="logo_mcs_lite_black.svg"
+                                                />
+                                              </styled.img>
+                                            </div>
+                                          </BaseComponent>
+                                        </NavItem>
+                                      </div>
+                                    </styled.div>
+                                    <Media
+                                      query={
+                                        Object {
+                                          "minWidth": 1,
+                                        }
+                                      }
+                                    />
+                                    <styled.div>
+                                      <div
+                                        className="sc-cSHVUG cHcTPx"
+                                      >
+                                        <a
+                                          href="/en"
+                                        >
+                                          English
+                                        </a>
+                                        <a
+                                          href="/zh-TW"
+                                        >
+                                          繁體中文
+                                        </a>
+                                        <a
+                                          href="/zh-CN"
+                                        >
+                                          简体中文
+                                        </a>
+                                      </div>
+                                    </styled.div>
+                                  </div>
+                                </ColumnContainer>
+                              </Styled(ColumnContainer)>
+                            </Breakpoints>
+                          </Styled(Breakpoints)>
+                        </section>
+                      </RowContainer>
+                    </Styled(RowContainer)>
+                  </div>
+                </PageContainer>
+              </Styled(PageContainer)>
+            </div>
+          </styled.div>
+        </header>
+      </styled.header>
+    </LandingHeader>
+  </Header>
+</ThemeProvider>
 `;

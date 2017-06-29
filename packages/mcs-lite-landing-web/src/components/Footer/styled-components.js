@@ -46,7 +46,7 @@ export const RWDWrapper = withBreakpoints(styled.div`
   display: flex;
   align-items: center;
   text-align: center;
-  flex-direction: column-reverse;
+  flex-direction: column;
 
   ${IconWrapper} {
     margin-bottom: 5px;
@@ -54,6 +54,10 @@ export const RWDWrapper = withBreakpoints(styled.div`
 
   @media (min-width: ${props => props.breakpoints.sm}px) {
     justify-content: space-between;
-    flex-direction: row;
+    flex-direction: row-reverse;
+
+    ${IconWrapper} {
+      margin-bottom: 0;
+    }
   }
 `);

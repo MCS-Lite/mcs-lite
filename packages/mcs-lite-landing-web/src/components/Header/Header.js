@@ -11,11 +11,11 @@ import NavItem from 'mcs-lite-ui/lib/LandingHeader/NavItem';
 import IconLoading from 'mcs-lite-icon/lib/IconLoading';
 import Spin from 'mcs-lite-ui/lib/Spin';
 import NavItemDropdown from 'mcs-lite-ui/lib/LandingHeader/NavItemDropdown';
+import LazyloadOnce from 'mcs-lite-ui/lib/LazyloadOnce';
 import {
   LOCALES,
   getMCSLinkByLocale,
 } from 'mcs-lite-ui/lib/utils/localeHelper';
-import LazyloadOnce from 'mcs-lite-ui/lib/LazyloadOnce';
 import { PAGE_WIDTH } from '../../components/SectionRow/SectionRow';
 import logo from '../../statics/images/logo_mcs_lite_black.svg';
 
@@ -41,6 +41,7 @@ const LogoImage = styled.img`
 `;
 
 const DesktopNav = withBreakpoints(styled(Nav)`
+  ${'' /* For SEO */}
   display: none;
 
   @media (min-width: ${props => props.breakpoints.sm}px) {

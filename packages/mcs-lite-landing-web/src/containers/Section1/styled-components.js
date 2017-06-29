@@ -27,28 +27,72 @@ export const ScreenImageMobile = withBreakpoints(styled.img`
   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.1);
 `);
 
-export const ImageLayerWrapper = styled.div`
+export const ImageLayerWrapper = withBreakpoints(styled.div`
   position: relative;
-  height: ${props => props.height}px;
 
-  > * {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
+  @media (min-width: ${props => props.breakpoints.sm}px) {
+    height: ${props => props.height}px;
+
+    > * {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
   }
-`;
+`);
 
-export const BackgroundImage = styled.img`
-  height: 100%;
-  width: auto;
+export const BackgroundImage = withBreakpoints(styled.img`
+  display: none;
+
+  @media (min-width: ${props => props.breakpoints.sm}px) {
+    display: initial;
+    height: 100%;
+    width: auto;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.1);
+  }
+`);
+
+export const BackgroundImagePlaceholder = withBreakpoints(styled.img`
+  display: block;
+  height: auto;
+  width: 100%;
   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.1);
-`;
+
+  @media (min-width: ${props => props.breakpoints.sm}px) {
+    display: initial;
+    height: 100%;
+    width: auto;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.1);
+  }
+`);
 
 export const BackgroundImageWrapper = styled.div`
   height: 100%;
   text-align: center;
 `;
+
+export const LoadingWrapper = withBreakpoints(styled.div`
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  transform: translateY(-100%);
+  left: 0;
+  right: 0;
+
+  @media (min-width: ${props => props.breakpoints.md}px) {
+    width: 577px;
+  }
+
+  @media (min-width: ${props => props.breakpoints.sm}px) {
+    position: initial;
+    transform: translateY(0);
+    left: initial;
+    right: initial;
+  }
+`);
 
 export const ChartWrapper = withBreakpoints(styled.div`
   display: flex;

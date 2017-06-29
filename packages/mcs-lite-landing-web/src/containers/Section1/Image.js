@@ -5,17 +5,22 @@ import Loadable from 'react-loadable';
 import { withBreakpoints } from 'hedron';
 import { compose, pure } from 'recompose';
 import Media from 'react-media';
+import IconLoading from 'mcs-lite-icon/lib/IconLoading';
+import Spin from 'mcs-lite-ui/lib/Spin';
+import P from 'mcs-lite-ui/lib/P';
 import imgScreen from '../../statics/images/img_mcs_screen.png';
 import imgScreenX66 from '../../statics/images/img_mcs_screenX66.png';
 import {
   ImageLayerWrapper,
   BackgroundImage,
+  BackgroundImagePlaceholder,
   BackgroundImageWrapper,
+  LoadingWrapper,
   ChartWrapper,
   ScreenImageMobile,
 } from './styled-components';
 
-const IMAGE_HEIGHT = 350; // image = 350 * 580
+const IMAGE_HEIGHT = 350; // image = 350 * 577
 
 const LoadabChart = Loadable({
   loader: () => import(/* webpackChunkName: "Section1.Chart" */ './Chart'),
@@ -28,12 +33,24 @@ const Image = ({ breakpoints }) =>
       matches
         ? // Desktop
           <ImageLayerWrapper height={IMAGE_HEIGHT}>
+            {/* 1. RWD Placeholder for Desktop and Mobile */}
             <BackgroundImageWrapper>
-              <BackgroundImage src={imgScreenX66} />
+              <BackgroundImagePlaceholder src={imgScreenX66} />
             </BackgroundImageWrapper>
+
+            {/* 2. Progressive image loading icon */}
+            <LoadingWrapper>
+              <P color="primary">
+                <Spin><IconLoading size={28} /></Spin>
+              </P>
+            </LoadingWrapper>
+
+            {/* 3. Large Image for Desktop */}
             <BackgroundImageWrapper>
               <BackgroundImage src={imgScreen} />
             </BackgroundImageWrapper>
+
+            {/* 4. LazyLoad Chart */}
             <ChartWrapper>
               <LazyloadOnce>
                 <LoadabChart />
