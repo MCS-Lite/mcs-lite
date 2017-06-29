@@ -1,21 +1,18 @@
 msgid ""
 msgstr ""
-"POT-Creation-Date: 2017-06-16 22:13+0800\n"
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2017-06-29 16:58+0800\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Daria Chen <smartexist@gmail.com>\n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"MIME-Version: 1.0\n"
 "X-Generator: Poedit 2.0.2\n"
-"Project-Id-Version: \n"
-"PO-Revision-Date: \n"
-"Language-Team: \n"
-"Last-Translator: Daria Chen <smartexist@gmail.com>\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"Language: zh_TW\n"
 "X-Poedit-KeywordsList: MCS Lite\n"
 
-#. [App.title]
-#. defaultMessage is:
-#. Build your IoT platform with ease and flexibility
 #. [Section1.title]
 #. defaultMessage is:
 #. Build your IoT platform with ease and flexibility
@@ -29,6 +26,13 @@ msgstr "輕鬆打造您專屬的物聯網平台"
 #: ../mcs-lite-translation/src/mcs-lite-landing-web/messages.json
 msgid "Collect and visualize data from your devices"
 msgstr "儲存並且視覺化裝置所產生的數據"
+
+#. [Header.contact]
+#. defaultMessage is:
+#. Contact us
+#: ../mcs-lite-translation/src/mcs-lite-landing-web/messages.json
+msgid "Contact us"
+msgstr "聯繫我們"
 
 #. [Section3.remote.desc]
 #. defaultMessage is:
@@ -93,6 +97,13 @@ msgstr "透過 MCS Lite 來擴展和發揮您的創意創造性"
 msgid "Follow us on GitHub"
 msgstr "在 GitHub 上關注我們"
 
+#. [Header.gotoMCS]
+#. defaultMessage is:
+#. Go to MCS
+#: ../mcs-lite-translation/src/mcs-lite-landing-web/messages.json
+msgid "Go to MCS"
+msgstr "前往 MCS"
+
 #. [Section2.title]
 #. defaultMessage is:
 #. Launch MCS Lite in seconds
@@ -107,7 +118,7 @@ msgstr "快速啟動 MCS Lite"
 msgid "Let's get started"
 msgstr "讓我們開始體驗"
 
-#. [App.titleTemplate] - For document title
+#. [App.title]
 #. defaultMessage is:
 #. MCS Lite
 #: ../mcs-lite-translation/src/mcs-lite-landing-web/messages.json
@@ -127,6 +138,17 @@ msgstr ""
 "MCS Lite 可以部署在私有的網路環境或是其他公有雲上，只要點擊兩下就可以輕鬆的開"
 "啟 MCS Lite 應用，立刻將您的電腦變成專屬的物聯網平台，幫助您更快實現物聯網產"
 "品原型設計、 開發和生產。"
+
+#. [App.desc]
+#. defaultMessage is:
+#. MCS Lite is designed for users who desire a dedicate IoT platform for their applications. MCS Lite can be deployed on-premises or on a publich cloud.
+#: ../mcs-lite-translation/src/mcs-lite-landing-web/messages.json
+msgid ""
+"MCS Lite is designed for users who desire a dedicate IoT platform for their "
+"applications. MCS Lite can be deployed on-premises or on a publich cloud."
+msgstr ""
+"MCS Lite 是為了需要專屬物聯網平台的用戶們而設計的。MCS Lite 可以部署在本地端"
+"或公有雲上。"
 
 #. [Section1.desc]
 #. defaultMessage is:
@@ -195,6 +217,13 @@ msgstr "開放原始碼"
 msgid "Remote control"
 msgstr "遙控"
 
+#. [Header.resource]
+#. defaultMessage is:
+#. Resources
+#: ../mcs-lite-translation/src/mcs-lite-landing-web/messages.json
+msgid "Resources"
+msgstr "資源"
+
 #. [Section3.mobile.desc]
 #. defaultMessage is:
 #. Responsive Web Design for easy access on your mobile and tablet
@@ -230,3 +259,10 @@ msgstr ""
 #: ../mcs-lite-translation/src/mcs-lite-landing-web/messages.json
 msgid "or"
 msgstr "或者"
+
+#. [App.titleTemplate] - For document title
+#. defaultMessage is:
+#. | MediaTek
+#: ../mcs-lite-translation/src/mcs-lite-landing-web/messages.json
+msgid "| MediaTek"
+msgstr "| 聯發科技"
