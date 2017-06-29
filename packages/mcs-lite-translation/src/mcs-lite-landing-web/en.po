@@ -1,20 +1,17 @@
 msgid ""
 msgstr ""
-"POT-Creation-Date: 2017-06-16 22:14+0800\n"
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2017-06-29 14:30+0800\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Daria Chen <smartexist@gmail.com>\n"
+"Language-Team: \n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"MIME-Version: 1.0\n"
-"X-Generator: Poedit 1.8.11\n"
-"Project-Id-Version: \n"
-"PO-Revision-Date: \n"
-"Language-Team: \n"
-"Last-Translator: \n"
+"X-Generator: Poedit 2.0.2\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"Language: en\n"
 
-#. [App.title]
-#. defaultMessage is:
-#. Build your IoT platform with ease and flexibility
 #. [Section1.title]
 #. defaultMessage is:
 #. Build your IoT platform with ease and flexibility
@@ -27,6 +24,13 @@ msgstr ""
 #. Collect and visualize data from your devices
 #: ../mcs-lite-translation/src/mcs-lite-landing-web/messages.json
 msgid "Collect and visualize data from your devices"
+msgstr ""
+
+#. [Header.contact]
+#. defaultMessage is:
+#. Contact us
+#: ../mcs-lite-translation/src/mcs-lite-landing-web/messages.json
+msgid "Contact us"
 msgstr ""
 
 #. [Section3.remote.desc]
@@ -92,6 +96,13 @@ msgstr ""
 msgid "Follow us on GitHub"
 msgstr ""
 
+#. [Header.gotoMCS]
+#. defaultMessage is:
+#. Go to MCS
+#: ../mcs-lite-translation/src/mcs-lite-landing-web/messages.json
+msgid "Go to MCS"
+msgstr ""
+
 #. [Section2.title]
 #. defaultMessage is:
 #. Launch MCS Lite in seconds
@@ -106,7 +117,7 @@ msgstr ""
 msgid "Let's get started"
 msgstr ""
 
-#. [App.titleTemplate] - For document title
+#. [App.title]
 #. defaultMessage is:
 #. MCS Lite
 #: ../mcs-lite-translation/src/mcs-lite-landing-web/messages.json
@@ -122,6 +133,15 @@ msgid ""
 "deploy on-premise or in the cloud with provided source code. All the options "
 "are here for your IoT applications during prototype, development and "
 "production stages."
+msgstr ""
+
+#. [App.desc]
+#. defaultMessage is:
+#. MCS Lite is designed for users who desire a dedicate IoT platform for their applications. MCS Lite can be deployed on-premises or on a publich cloud.
+#: ../mcs-lite-translation/src/mcs-lite-landing-web/messages.json
+msgid ""
+"MCS Lite is designed for users who desire a dedicate IoT platform for their "
+"applications. MCS Lite can be deployed on-premises or on a publich cloud."
 msgstr ""
 
 #. [Section1.desc]
@@ -143,6 +163,8 @@ msgid ""
 "MCSLite is distributed as an open-source software under MIT license. You can "
 "use, copy, modify, merge, publish, distribute, sublicense our projects."
 msgstr ""
+"MCS Lite is distributed as an open-source software under MIT license. You "
+"can use, copy, modify, merge, publish, distribute, sublicense our projects."
 
 #. [Section3.management.desc]
 #. defaultMessage is:
@@ -186,6 +208,13 @@ msgstr ""
 msgid "Remote control"
 msgstr ""
 
+#. [Header.resource]
+#. defaultMessage is:
+#. Resources
+#: ../mcs-lite-translation/src/mcs-lite-landing-web/messages.json
+msgid "Resources"
+msgstr ""
+
 #. [Section3.mobile.desc]
 #. defaultMessage is:
 #. Responsive Web Design for easy access on your mobile and tablet
@@ -218,4 +247,11 @@ msgstr ""
 #. or
 #: ../mcs-lite-translation/src/mcs-lite-landing-web/messages.json
 msgid "or"
+msgstr ""
+
+#. [App.titleTemplate] - For document title
+#. defaultMessage is:
+#. | MediaTek
+#: ../mcs-lite-translation/src/mcs-lite-landing-web/messages.json
+msgid "| MediaTek"
 msgstr ""

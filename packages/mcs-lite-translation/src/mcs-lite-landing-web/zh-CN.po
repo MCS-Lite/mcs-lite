@@ -1,117 +1,129 @@
 msgid ""
 msgstr ""
-"POT-Creation-Date: 2017-06-16 22:14+0800\n"
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2017-06-29 17:02+0800\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Daria Chen <smartexist@gmail.com>\n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"MIME-Version: 1.0\n"
-"X-Generator: Poedit 1.8.11\n"
-"Project-Id-Version: \n"
-"PO-Revision-Date: \n"
-"Language-Team: \n"
+"X-Generator: Poedit 2.0.2\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"Last-Translator: \n"
-"Language: zh_CN\n"
+"X-Poedit-KeywordsList: MCS Lite\n"
 
-#. [App.title]
-#. defaultMessage is:
-#. Build your IoT platform with ease and flexibility
 #. [Section1.title]
 #. defaultMessage is:
 #. Build your IoT platform with ease and flexibility
 #: ../mcs-lite-translation/src/mcs-lite-landing-web/messages.json
 msgid "Build your IoT platform with ease and flexibility"
-msgstr "建立您的物联网平台的易用性和灵活性"
+msgstr "轻松打造您专属的物联网平台"
 
 #. [Section3.data.desc]
 #. defaultMessage is:
 #. Collect and visualize data from your devices
 #: ../mcs-lite-translation/src/mcs-lite-landing-web/messages.json
 msgid "Collect and visualize data from your devices"
-msgstr ""
+msgstr "储存并且视觉化装置所产生的数据"
+
+#. [Header.contact]
+#. defaultMessage is:
+#. Contact us
+#: ../mcs-lite-translation/src/mcs-lite-landing-web/messages.json
+msgid "Contact us"
+msgstr "联系我们"
 
 #. [Section3.remote.desc]
 #. defaultMessage is:
 #. Control your devices from MCS Lite console
 #: ../mcs-lite-translation/src/mcs-lite-landing-web/messages.json
 msgid "Control your devices from MCS Lite console"
-msgstr "控制您的设备从 MCS 建兴控制台"
+msgstr "从 MCS Lite 控制台远端操控您的装置"
 
 #. [Section4.custom.title]
 #. defaultMessage is:
 #. Customization
 #: ../mcs-lite-translation/src/mcs-lite-landing-web/messages.json
 msgid "Customization"
-msgstr ""
+msgstr "量身打造"
 
 #. [Section4.custom.button]
 #. defaultMessage is:
 #. Customize your UI
 #: ../mcs-lite-translation/src/mcs-lite-landing-web/messages.json
 msgid "Customize your UI"
-msgstr ""
+msgstr "订制您的使用者介面"
 
 #. [Section3.data.title]
 #. defaultMessage is:
 #. Data collection
 #: ../mcs-lite-translation/src/mcs-lite-landing-web/messages.json
 msgid "Data collection"
-msgstr ""
+msgstr "收集数据"
 
 #. [DownloadButton.downloadFor]
 #. defaultMessage is:
 #. Download for
 #: ../mcs-lite-translation/src/mcs-lite-landing-web/messages.json
 msgid "Download for"
-msgstr ""
+msgstr "下载至您的"
 
 #. [DownloadButton.others]
 #. defaultMessage is:
 #. Download for other platforms
 #: ../mcs-lite-translation/src/mcs-lite-landing-web/messages.json
 msgid "Download for other platforms"
-msgstr ""
+msgstr "下载至其他平台"
 
 #. [Section3.title]
 #. defaultMessage is:
 #. Explore built-in features
 #: ../mcs-lite-translation/src/mcs-lite-landing-web/messages.json
 msgid "Explore built-in features"
-msgstr ""
+msgstr "探索内建的功能"
 
 #. [Section4.title]
 #. defaultMessage is:
 #. Extend and get creative with MCS Lite
 #: ../mcs-lite-translation/src/mcs-lite-landing-web/messages.json
 msgid "Extend and get creative with MCS Lite"
-msgstr ""
+msgstr "透过 MCS Lite 来扩展和发挥您的创意创造性"
 
 #. [Section4.github.button]
 #. defaultMessage is:
 #. Follow us on GitHub
 #: ../mcs-lite-translation/src/mcs-lite-landing-web/messages.json
 msgid "Follow us on GitHub"
-msgstr ""
+msgstr "在 GitHub 上关注我们"
+
+#. [Header.gotoMCS]
+#. defaultMessage is:
+#. Go to MCS
+#: ../mcs-lite-translation/src/mcs-lite-landing-web/messages.json
+msgid "Go to MCS"
+msgstr "前往 MCS"
 
 #. [Section2.title]
 #. defaultMessage is:
 #. Launch MCS Lite in seconds
 #: ../mcs-lite-translation/src/mcs-lite-landing-web/messages.json
 msgid "Launch MCS Lite in seconds"
-msgstr ""
+msgstr "快速启动 MCS Lite"
 
 #. [Section5.title]
 #. defaultMessage is:
 #. Let's get started
 #: ../mcs-lite-translation/src/mcs-lite-landing-web/messages.json
 msgid "Let's get started"
-msgstr ""
+msgstr "让我们开始体验"
 
-#. [App.titleTemplate] - For document title
+#. [App.title]
 #. defaultMessage is:
 #. MCS Lite
 #: ../mcs-lite-translation/src/mcs-lite-landing-web/messages.json
 msgid "MCS Lite"
-msgstr ""
+msgstr "MCS Lite"
 
 #. [Section2.desc]
 #. defaultMessage is:
@@ -123,6 +135,20 @@ msgid ""
 "are here for your IoT applications during prototype, development and "
 "production stages."
 msgstr ""
+"MCS Lite 可以部署在私有的网路环境或是其他公有云上，只要点击两下就可以轻松的开"
+"启 MCS Lite 应用，立刻将您的电脑变成专属的物联网平台，帮助您更快实现物联网产"
+"品原型设计、 开发和生产。"
+
+#. [App.desc]
+#. defaultMessage is:
+#. MCS Lite is designed for users who desire a dedicate IoT platform for their applications. MCS Lite can be deployed on-premises or on a publich cloud.
+#: ../mcs-lite-translation/src/mcs-lite-landing-web/messages.json
+msgid ""
+"MCS Lite is designed for users who desire a dedicate IoT platform for their "
+"applications. MCS Lite can be deployed on-premises or on a publich cloud."
+msgstr ""
+"MCS Lite 是为了需要专属物联网平台的用户们而设计的。MCS Lite 可以部署在本地端"
+"或公有云上。"
 
 #. [Section1.desc]
 #. defaultMessage is:
@@ -134,6 +160,9 @@ msgid ""
 "applications. Binaries are available in Windows, Linux and Mac OS for "
 "instant launch."
 msgstr ""
+"MCS Lite 承袭了 MCS online 的主要功能与易于上手的使用者介面，是为需要一个专属"
+"的物联网平台的用户们而设计的。MCS Lite 应用程式有 Windows，Linux和 Mac OS 版"
+"本，下载后可在您的电脑直接启动。"
 
 #. [Section4.github.desc]
 #. defaultMessage is:
@@ -143,55 +172,64 @@ msgid ""
 "MCSLite is distributed as an open-source software under MIT license. You can "
 "use, copy, modify, merge, publish, distribute, sublicense our projects."
 msgstr ""
+"MCS Lite 是使用 MIT License 来进行授权的开源专案，您可以在 MIT License 的规范"
+"下，使用、重制、修改、出版、散布、再授权 MCS Lite 相关的专案。"
 
 #. [Section3.management.desc]
 #. defaultMessage is:
 #. Manage all your connected devices
 #: ../mcs-lite-translation/src/mcs-lite-landing-web/messages.json
 msgid "Manage all your connected devices"
-msgstr ""
+msgstr "管理您所有的连线装置"
 
 #. [Section3.management.title]
 #. defaultMessage is:
 #. Management
 #: ../mcs-lite-translation/src/mcs-lite-landing-web/messages.json
 msgid "Management"
-msgstr ""
+msgstr "管理"
 
 #. [Footer.desc]
 #. defaultMessage is:
 #. MediaTek Inc. All Rights Reserved.
 #: ../mcs-lite-translation/src/mcs-lite-landing-web/messages.json
 msgid "MediaTek Inc. All Rights Reserved."
-msgstr ""
+msgstr "联发科技版权所有。"
 
 #. [Section3.mobile.title]
 #. defaultMessage is:
 #. Mobile friendly
 #: ../mcs-lite-translation/src/mcs-lite-landing-web/messages.json
 msgid "Mobile friendly"
-msgstr ""
+msgstr "良好的行动装置体验"
 
 #. [Section4.github.title]
 #. defaultMessage is:
 #. Open Source
 #: ../mcs-lite-translation/src/mcs-lite-landing-web/messages.json
 msgid "Open Source"
-msgstr ""
+msgstr "开放原始码"
 
 #. [Section3.remote.title]
 #. defaultMessage is:
 #. Remote control
 #: ../mcs-lite-translation/src/mcs-lite-landing-web/messages.json
 msgid "Remote control"
-msgstr ""
+msgstr "遥控"
+
+#. [Header.resource]
+#. defaultMessage is:
+#. Resources
+#: ../mcs-lite-translation/src/mcs-lite-landing-web/messages.json
+msgid "Resources"
+msgstr "资源"
 
 #. [Section3.mobile.desc]
 #. defaultMessage is:
 #. Responsive Web Design for easy access on your mobile and tablet
 #: ../mcs-lite-translation/src/mcs-lite-landing-web/messages.json
 msgid "Responsive Web Design for easy access on your mobile and tablet"
-msgstr ""
+msgstr "响应式的网页设计能最佳化手机和平板电脑的使用体验"
 
 #. [Section3.desc]
 #. defaultMessage is:
@@ -200,7 +238,7 @@ msgstr ""
 msgid ""
 "Start to collect data from your IoT devices and control them anytime, "
 "anywhere."
-msgstr ""
+msgstr "随时随地收集来自您的物联网装置的资料并实现远端遥控。"
 
 #. [Section4.custom.desc]
 #. defaultMessage is:
@@ -212,10 +250,19 @@ msgid ""
 "modify the source code or use the API provided by MCS Lite to expand the "
 "functions."
 msgstr ""
+"不管是要客制化平台的使用者介面，支援其他资料库或是增加额外的资料分析与资料加"
+"密等功能，皆可透过直接修改代码或使用 MCS Lite 提供的 API 来进一步的扩充功能。"
 
 #. [DownloadButton.or]
 #. defaultMessage is:
 #. or
 #: ../mcs-lite-translation/src/mcs-lite-landing-web/messages.json
 msgid "or"
-msgstr ""
+msgstr "或者"
+
+#. [App.titleTemplate] - For document title
+#. defaultMessage is:
+#. | MediaTek
+#: ../mcs-lite-translation/src/mcs-lite-landing-web/messages.json
+msgid "| MediaTek"
+msgstr "| 联发科技"
