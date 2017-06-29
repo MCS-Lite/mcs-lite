@@ -18,9 +18,8 @@ import {
   LoadingWrapper,
   ChartWrapper,
   ScreenImageMobile,
+  IMAGE_HEIGHT,
 } from './styled-components';
-
-const IMAGE_HEIGHT = 350; // image = 350 * 577
 
 const LoadabChart = Loadable({
   loader: () => import(/* webpackChunkName: "Section1.Chart" */ './Chart'),

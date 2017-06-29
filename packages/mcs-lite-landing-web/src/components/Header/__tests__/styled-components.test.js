@@ -5,16 +5,12 @@ import { ThemeProvider } from 'styled-components';
 import { BreakpointProvider } from 'hedron';
 import landingTheme, { BREAKPOINTS } from '../../../utils/landingTheme';
 import {
-  StyledSectionRow,
-  RWDCenterWrapper,
-  StyledImageColumn,
-  ScreenImageMobile,
-  ImageLayerWrapper,
-  BackgroundImage,
-  BackgroundImagePlaceholder,
-  BackgroundImageWrapper,
-  LoadingWrapper,
-  ChartWrapper,
+  StyledColumn,
+  HiddenForPreRenderTrick,
+  StyledLink,
+  LogoImage,
+  DesktopNav,
+  MobileNav,
 } from '../styled-components';
 
 it('should render components correctly', () => {
@@ -22,18 +18,12 @@ it('should render components correctly', () => {
     <ThemeProvider theme={landingTheme}>
       <BreakpointProvider breakpoints={BREAKPOINTS}>
         <div>
-          <StyledSectionRow>
-            children
-          </StyledSectionRow>
-          <RWDCenterWrapper />
-          <StyledImageColumn />
-          <ScreenImageMobile />
-          <ImageLayerWrapper />
-          <BackgroundImage />
-          <BackgroundImagePlaceholder />
-          <BackgroundImageWrapper />
-          <LoadingWrapper />
-          <ChartWrapper />
+          <StyledColumn />
+          <HiddenForPreRenderTrick />
+          <StyledLink />
+          <LogoImage />
+          <DesktopNav />
+          <MobileNav />
         </div>
       </BreakpointProvider>
     </ThemeProvider>,

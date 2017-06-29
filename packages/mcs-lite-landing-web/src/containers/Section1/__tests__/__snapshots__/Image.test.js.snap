@@ -1,3 +1,64 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`should renders <Image> correctly 1`] = `<Breakpoints />`;
+exports[`should renders <Image> correctly with Mobile view 1`] = `
+.blhQpx {
+  display: block;
+  height: auto;
+  width: 100%;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.1);
+}
+
+<pure(Breakpoints)
+  breakpoints={
+    Object {
+      "sm": 1,
+    }
+  }
+>
+  <Breakpoints
+    breakpoints={
+      Object {
+        "sm": 1,
+      }
+    }
+  >
+    <Image
+      breakpoints={
+        Object {
+          "lg": 1170,
+          "md": 970,
+          "sm": 768,
+        }
+      }
+    >
+      <Media
+        query={
+          Object {
+            "minWidth": 768,
+          }
+        }
+      >
+        <Breakpoints
+          src="img_mcs_screen.png"
+        >
+          <styled.img
+            breakpoints={
+              Object {
+                "lg": 1170,
+                "md": 970,
+                "sm": 768,
+              }
+            }
+            src="img_mcs_screen.png"
+          >
+            <img
+              className="sc-iwsKbI blhQpx"
+              src="img_mcs_screen.png"
+            />
+          </styled.img>
+        </Breakpoints>
+      </Media>
+    </Image>
+  </Breakpoints>
+</pure(Breakpoints)>
+`;

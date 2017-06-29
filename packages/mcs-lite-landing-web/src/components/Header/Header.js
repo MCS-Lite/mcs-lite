@@ -1,10 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Link } from 'react-router';
-import { Page, Row, Column, withBreakpoints } from 'hedron';
+import { Page, Row } from 'hedron';
 import Loadable from 'react-loadable';
 import Media from 'react-media';
-import styled from 'styled-components';
 import LandingHeader from 'mcs-lite-ui/lib/LandingHeader/LandingHeader';
 import Nav from 'mcs-lite-ui/lib/LandingHeader/Nav';
 import NavItem from 'mcs-lite-ui/lib/LandingHeader/NavItem';
@@ -18,42 +16,14 @@ import {
 } from 'mcs-lite-ui/lib/utils/localeHelper';
 import { PAGE_WIDTH } from '../../components/SectionRow/SectionRow';
 import logo from '../../statics/images/logo_mcs_lite_black.svg';
-
-const StyledColumn = styled(Column)`
-  padding-top: 0;
-  padding-bottom: 0;
-  display: flex;
-  justify-content: space-between;
-`;
-
-const HiddenForPreRenderTrick = styled.div`
-  visibility: hidden;
-  display: none;
-`;
-
-const StyledLink = styled(Link)`
-  text-decoration: none;
-`;
-
-const LogoImage = styled.img`
-  height: 28px;
-  width: auto;
-`;
-
-const DesktopNav = withBreakpoints(styled(Nav)`
-  ${'' /* For SEO */}
-  display: none;
-
-  @media (min-width: ${props => props.breakpoints.sm}px) {
-    display: inherit;
-  }
-`);
-
-const MobileNav = styled(Nav)`
-  ${NavItem} {
-    padding-right: 0;
-  }
-`;
+import {
+  StyledColumn,
+  HiddenForPreRenderTrick,
+  StyledLink,
+  LogoImage,
+  DesktopNav,
+  MobileNav,
+} from './styled-components';
 
 const LoadableNavItemBurger = Loadable({
   loader: () =>

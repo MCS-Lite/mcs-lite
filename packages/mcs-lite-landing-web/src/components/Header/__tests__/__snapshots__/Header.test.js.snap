@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`should renders <Header> correctly 1`] = `
+exports[`should renders <Header> correctly with Desktop view 1`] = `
 .irrVft {
   display: -webkit-box;
   display: -webkit-flex;
@@ -14,7 +14,7 @@ exports[`should renders <Header> correctly 1`] = `
   flex-wrap: wrap;
 }
 
-.mJBQx {
+.izNWxc {
   display: block;
   box-sizing: border-box;
   padding: 20px;
@@ -92,6 +92,25 @@ exports[`should renders <Header> correctly 1`] = `
   fill: currentColor;
 }
 
+.dPhOEW {
+  margin: 0;
+  font-size: 1rem;
+  color: currentColor;
+}
+
+.kDOvKd {
+  margin-right: 5px;
+}
+
+.dOGCad {
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  -webkit-transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
 .cURZrA {
   padding-top: 0;
   padding-bottom: 0;
@@ -115,189 +134,381 @@ exports[`should renders <Header> correctly 1`] = `
   width: auto;
 }
 
-<ThemeProvider
-  theme={
+.hgIgSw {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .hgIgSw {
+    display: inherit;
+  }
+}
+
+<Header
+  breakpoints={
     Object {
-      "base": Object {
-        "bodyBackgroundColor": "#F1F2F7",
-        "bodyColor": "#40494D",
-        "fontSize": "13px",
-        "lineHeight": 1.5,
-      },
-      "color": Object {
-        "black": "#40494D",
-        "default": "#FAFAFA",
-        "error": "#F5364E",
-        "grayBase": "#75868C",
-        "grayDark": "#D1D2D3",
-        "grayLight": "#FAFAFA",
-        "primary": "#00A1DE",
-        "success": "#69BE28",
-        "warning": "#F39A1E",
-        "white": "#FFFFFF",
-      },
-      "fontSize": Object {
-        "h1": "2.46rem",
-        "h2": "1.84rem",
-        "h3": "1.38rem",
-        "h4": "1.15rem",
-        "h5": "1rem",
-        "h6": "1rem",
-        "p": "1rem",
-        "small": "0.923rem",
-      },
-      "height": Object {
-        "header": "50px",
-        "normal": "32px",
-        "small": "20px",
-      },
-      "mobile": Object {
-        "headerHeight": "56px",
-        "maxWidth": "800px",
-      },
+      "sm": 1,
     }
   }
+  getMessages={[Function]}
+  locale="en"
 >
-  <Header
-    breakpoints={
-      Object {
-        "sm": 1,
-      }
-    }
-    getMessages={[Function]}
-    locale="en"
+  <LandingHeader
+    offset={40}
   >
-    <LandingHeader
+    <styled.header
       offset={40}
     >
-      <styled.header
+      <header
+        className="sc-ifAKCX eUrocd"
         offset={40}
       >
-        <header
-          className="sc-ifAKCX eUrocd"
-          offset={40}
+        <styled.div
+          isTop={true}
         >
-          <styled.div
-            isTop={true}
+          <div
+            className="sc-EHOje iwkTdf"
           >
-            <div
-              className="sc-EHOje iwkTdf"
+            <Styled(PageContainer)
+              width="960px"
             >
-              <Styled(PageContainer)
+              <PageContainer
+                className="sc-bxivhb bIAnAi"
                 width="960px"
               >
-                <PageContainer
+                <div
                   className="sc-bxivhb bIAnAi"
                   width="960px"
                 >
-                  <div
-                    className="sc-bxivhb bIAnAi"
-                    width="960px"
-                  >
-                    <Styled(RowContainer)>
-                      <RowContainer
+                  <Styled(RowContainer)>
+                    <RowContainer
+                      className="sc-bwzfXH irrVft"
+                      divisions={12}
+                    >
+                      <section
                         className="sc-bwzfXH irrVft"
-                        divisions={12}
                       >
-                        <section
-                          className="sc-bwzfXH irrVft"
+                        <Styled(Breakpoints)
+                          xs={12}
                         >
-                          <Styled(Breakpoints)
+                          <Breakpoints
+                            className="sc-jzJRlG cURZrA"
                             xs={12}
                           >
-                            <Breakpoints
+                            <Styled(ColumnContainer)
+                              breakpoints={
+                                Object {
+                                  "lg": 1170,
+                                  "md": 970,
+                                  "sm": 768,
+                                }
+                              }
                               className="sc-jzJRlG cURZrA"
                               xs={12}
                             >
-                              <Styled(ColumnContainer)
-                                className="sc-jzJRlG cURZrA"
+                              <ColumnContainer
+                                breakpoints={
+                                  Object {
+                                    "lg": 1170,
+                                    "md": 970,
+                                    "sm": 768,
+                                  }
+                                }
+                                className="sc-jzJRlG cURZrA sc-htpNat izNWxc"
+                                divisions={12}
                                 xs={12}
                               >
-                                <ColumnContainer
-                                  className="sc-jzJRlG cURZrA sc-htpNat mJBQx"
-                                  divisions={12}
-                                  xs={12}
+                                <div
+                                  className="sc-jzJRlG cURZrA sc-htpNat izNWxc"
                                 >
-                                  <div
-                                    className="sc-jzJRlG cURZrA sc-htpNat mJBQx"
-                                  >
-                                    <styled.div>
-                                      <div
-                                        className="sc-bZQynM kvodqH"
+                                  <styled.div>
+                                    <div
+                                      className="sc-bZQynM kvodqH"
+                                    >
+                                      <NavItem
+                                        active={false}
+                                        component="div"
+                                        disabled={false}
                                       >
-                                        <NavItem
+                                        <BaseComponent
                                           active={false}
+                                          className="sc-gzVnrw eGvZKC"
                                           component="div"
                                           disabled={false}
                                         >
-                                          <BaseComponent
-                                            active={false}
+                                          <div
                                             className="sc-gzVnrw eGvZKC"
-                                            component="div"
-                                            disabled={false}
                                           >
-                                            <div
-                                              className="sc-gzVnrw eGvZKC"
+                                            <styled.img
+                                              alt="logo"
+                                              src="logo_mcs_lite_black.svg"
                                             >
-                                              <styled.img
+                                              <img
                                                 alt="logo"
+                                                className="sc-chPdSV ejzgHG"
                                                 src="logo_mcs_lite_black.svg"
-                                              >
-                                                <img
-                                                  alt="logo"
-                                                  className="sc-chPdSV ejzgHG"
-                                                  src="logo_mcs_lite_black.svg"
-                                                />
-                                              </styled.img>
-                                            </div>
-                                          </BaseComponent>
-                                        </NavItem>
-                                      </div>
-                                    </styled.div>
-                                    <Media
-                                      query={
-                                        Object {
-                                          "minWidth": 1,
-                                        }
+                                              />
+                                            </styled.img>
+                                          </div>
+                                        </BaseComponent>
+                                      </NavItem>
+                                    </div>
+                                  </styled.div>
+                                  <Media
+                                    query={
+                                      Object {
+                                        "minWidth": 1,
                                       }
-                                    />
-                                    <styled.div>
-                                      <div
-                                        className="sc-cSHVUG cHcTPx"
+                                    }
+                                  >
+                                    <Breakpoints>
+                                      <Styled(styled.div)
+                                        breakpoints={
+                                          Object {
+                                            "lg": 1170,
+                                            "md": 970,
+                                            "sm": 768,
+                                          }
+                                        }
                                       >
-                                        <a
-                                          href="/en"
+                                        <styled.div
+                                          breakpoints={
+                                            Object {
+                                              "lg": 1170,
+                                              "md": 970,
+                                              "sm": 768,
+                                            }
+                                          }
+                                          className="sc-kgoBCf hgIgSw"
                                         >
-                                          English
-                                        </a>
-                                        <a
-                                          href="/zh-TW"
-                                        >
-                                          繁體中文
-                                        </a>
-                                        <a
-                                          href="/zh-CN"
-                                        >
-                                          简体中文
-                                        </a>
-                                      </div>
-                                    </styled.div>
-                                  </div>
-                                </ColumnContainer>
-                              </Styled(ColumnContainer)>
-                            </Breakpoints>
-                          </Styled(Breakpoints)>
-                        </section>
-                      </RowContainer>
-                    </Styled(RowContainer)>
-                  </div>
-                </PageContainer>
-              </Styled(PageContainer)>
-            </div>
-          </styled.div>
-        </header>
-      </styled.header>
-    </LandingHeader>
-  </Header>
-</ThemeProvider>
+                                          <div
+                                            className="sc-kgoBCf hgIgSw sc-bZQynM kvodqH"
+                                          >
+                                            <NavItem
+                                              active={false}
+                                              component="a"
+                                              disabled={false}
+                                              href="https://mcs.mediatek.com/"
+                                              rel="noreferrer noopener"
+                                              target="_blank"
+                                            >
+                                              <BaseComponent
+                                                active={false}
+                                                className="sc-gzVnrw eGvZKC"
+                                                component="a"
+                                                disabled={false}
+                                                href="https://mcs.mediatek.com/"
+                                                rel="noreferrer noopener"
+                                                target="_blank"
+                                              >
+                                                <a
+                                                  className="sc-gzVnrw eGvZKC"
+                                                  href="https://mcs.mediatek.com/"
+                                                  rel="noreferrer noopener"
+                                                  target="_blank"
+                                                >
+                                                  gotoMCS
+                                                </a>
+                                              </BaseComponent>
+                                            </NavItem>
+                                            <NavItem
+                                              active={false}
+                                              component="a"
+                                              disabled={false}
+                                              href="https://mcs-lite-introduction.netlify.com/en"
+                                              rel="noreferrer noopener"
+                                              target="_blank"
+                                            >
+                                              <BaseComponent
+                                                active={false}
+                                                className="sc-gzVnrw eGvZKC"
+                                                component="a"
+                                                disabled={false}
+                                                href="https://mcs-lite-introduction.netlify.com/en"
+                                                rel="noreferrer noopener"
+                                                target="_blank"
+                                              >
+                                                <a
+                                                  className="sc-gzVnrw eGvZKC"
+                                                  href="https://mcs-lite-introduction.netlify.com/en"
+                                                  rel="noreferrer noopener"
+                                                  target="_blank"
+                                                >
+                                                  resource
+                                                </a>
+                                              </BaseComponent>
+                                            </NavItem>
+                                            <NavItem
+                                              active={false}
+                                              component="a"
+                                              disabled={false}
+                                              href="mailto:mtkcloudsandbox@mediatek.com"
+                                              rel="noreferrer noopener"
+                                              target="_blank"
+                                            >
+                                              <BaseComponent
+                                                active={false}
+                                                className="sc-gzVnrw eGvZKC"
+                                                component="a"
+                                                disabled={false}
+                                                href="mailto:mtkcloudsandbox@mediatek.com"
+                                                rel="noreferrer noopener"
+                                                target="_blank"
+                                              >
+                                                <a
+                                                  className="sc-gzVnrw eGvZKC"
+                                                  href="mailto:mtkcloudsandbox@mediatek.com"
+                                                  rel="noreferrer noopener"
+                                                  target="_blank"
+                                                >
+                                                  contact
+                                                </a>
+                                              </BaseComponent>
+                                            </NavItem>
+                                            <NavItemDropdown
+                                              data-ga-event-action="click"
+                                              data-ga-event-category="Language NavItemDropdown menu"
+                                              data-ga-on="click"
+                                              items={
+                                                Array [
+                                                  Object {
+                                                    "children": "English",
+                                                    "component": [Function],
+                                                    "key": "en",
+                                                    "to": "/en",
+                                                  },
+                                                  Object {
+                                                    "children": "繁體中文",
+                                                    "component": [Function],
+                                                    "key": "zh-TW",
+                                                    "to": "/zh-TW",
+                                                  },
+                                                  Object {
+                                                    "children": "简体中文",
+                                                    "component": [Function],
+                                                    "key": "zh-CN",
+                                                    "to": "/zh-CN",
+                                                  },
+                                                ]
+                                              }
+                                            >
+                                              <NavItem
+                                                active={false}
+                                                component="div"
+                                                data-ga-event-action="click"
+                                                data-ga-event-category="Language NavItemDropdown menu"
+                                                data-ga-on="click"
+                                                disabled={false}
+                                                onClick={[Function]}
+                                                onMouseOver={[Function]}
+                                              >
+                                                <BaseComponent
+                                                  active={false}
+                                                  className="sc-gzVnrw eGvZKC"
+                                                  component="div"
+                                                  data-ga-event-action="click"
+                                                  data-ga-event-category="Language NavItemDropdown menu"
+                                                  data-ga-on="click"
+                                                  disabled={false}
+                                                  onClick={[Function]}
+                                                  onMouseOver={[Function]}
+                                                >
+                                                  <div
+                                                    className="sc-gzVnrw eGvZKC"
+                                                    data-ga-event-action="click"
+                                                    data-ga-event-category="Language NavItemDropdown menu"
+                                                    data-ga-on="click"
+                                                    onClick={[Function]}
+                                                    onMouseOver={[Function]}
+                                                  >
+                                                    <Styled(P)>
+                                                      <P
+                                                        className="sc-VigVT kDOvKd"
+                                                      >
+                                                        <Component
+                                                          className="sc-VigVT kDOvKd sc-dnqmqq dPhOEW"
+                                                        >
+                                                          <p
+                                                            className="sc-VigVT kDOvKd sc-dnqmqq dPhOEW"
+                                                          >
+                                                            Language
+                                                          </p>
+                                                        </Component>
+                                                      </P>
+                                                    </Styled(P)>
+                                                    <Styled(Component)
+                                                      isShow={false}
+                                                      size={18}
+                                                    >
+                                                      <Component
+                                                        className="sc-jTzLTM dOGCad"
+                                                        isShow={false}
+                                                        size={18}
+                                                      >
+                                                        <IconFold
+                                                          className="sc-jTzLTM dOGCad"
+                                                          size={18}
+                                                        >
+                                                          <svg
+                                                            className="sc-jTzLTM dOGCad"
+                                                            fill="currentColor"
+                                                            height={18}
+                                                            preserveAspectRatio="xMidYMid meet"
+                                                            viewBox="0 0 24 24"
+                                                            width={18}
+                                                          >
+                                                            <path
+                                                              d="M7.4 9.8l4.6 4.6 4.6-4.6 1.4 1.4-6 6-6-6 1.4-1.4z"
+                                                            />
+                                                          </svg>
+                                                        </IconFold>
+                                                      </Component>
+                                                    </Styled(Component)>
+                                                  </div>
+                                                </BaseComponent>
+                                              </NavItem>
+                                            </NavItemDropdown>
+                                          </div>
+                                        </styled.div>
+                                      </Styled(styled.div)>
+                                    </Breakpoints>
+                                  </Media>
+                                  <styled.div>
+                                    <div
+                                      className="sc-cSHVUG cHcTPx"
+                                    >
+                                      <a
+                                        href="/en"
+                                      >
+                                        English
+                                      </a>
+                                      <a
+                                        href="/zh-TW"
+                                      >
+                                        繁體中文
+                                      </a>
+                                      <a
+                                        href="/zh-CN"
+                                      >
+                                        简体中文
+                                      </a>
+                                    </div>
+                                  </styled.div>
+                                </div>
+                              </ColumnContainer>
+                            </Styled(ColumnContainer)>
+                          </Breakpoints>
+                        </Styled(Breakpoints)>
+                      </section>
+                    </RowContainer>
+                  </Styled(RowContainer)>
+                </div>
+              </PageContainer>
+            </Styled(PageContainer)>
+          </div>
+        </styled.div>
+      </header>
+    </styled.header>
+  </LandingHeader>
+</Header>
 `;

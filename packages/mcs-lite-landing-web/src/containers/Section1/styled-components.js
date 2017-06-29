@@ -2,6 +2,9 @@ import styled from 'styled-components';
 import { Column, withBreakpoints } from 'hedron';
 import SectionRow from '../../components/SectionRow';
 
+export const IMAGE_HEIGHT = 350; // image = 350 * 577
+export const IMAGE_WIDTH = 577; // image = 350 * 577
+
 export const StyledSectionRow = styled(SectionRow)`
   background-image: linear-gradient(-180deg, #FAFAFA 0%, #F1F2F7 100%);
   padding-bottom: 0;
@@ -83,7 +86,7 @@ export const LoadingWrapper = withBreakpoints(styled.div`
   right: 0;
 
   @media (min-width: ${props => props.breakpoints.md}px) {
-    width: 577px;
+    width: ${IMAGE_WIDTH}px;
   }
 
   @media (min-width: ${props => props.breakpoints.sm}px) {

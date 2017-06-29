@@ -1,20 +1,29 @@
+/* global window */
+
 import React from 'react';
 import { mount } from 'enzyme';
 import toJson from 'enzyme-to-json';
 import { ThemeProvider } from 'styled-components';
-import landingTheme from '../../../utils/landingTheme';
+import { BreakpointProvider } from 'hedron';
+import landingTheme, { BREAKPOINTS } from '../../../utils/landingTheme';
 import Header from '../Header';
 
-jest.mock('react-media');
+it('should renders <Header> correctly with Desktop view', () => {
+  window.matchMedia = () => ({
+    matches: true, // Desktop First
+    addListener: () => {},
+    removeListener: () => {},
+  });
 
-it('should renders <Header> correctly', () => {
   const wrapper = mount(
     <ThemeProvider theme={landingTheme}>
-      <Header getMessages={t => t} locale="en" breakpoints={{ sm: 1 }} />
+      <BreakpointProvider breakpoints={BREAKPOINTS}>
+        <Header getMessages={t => t} locale="en" breakpoints={{ sm: 1 }} />
+      </BreakpointProvider>
     </ThemeProvider>,
   );
 
-  const tree = toJson(wrapper);
+  const tree = toJson(wrapper.find(Header));
 
   expect(tree).toMatchStyledComponentsSnapshot();
 });
