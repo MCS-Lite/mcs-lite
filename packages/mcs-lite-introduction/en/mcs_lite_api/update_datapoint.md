@@ -1,8 +1,8 @@
-## 上傳資料
+## Upload data points
 
 ### WebSocket
 
-#### 請求網址（Request URL）
+#### Request URL
 
 ```
 // please change $MCSLiteServerIP to the real IP address or hostname of MCS Lite server
@@ -12,16 +12,17 @@
 ws://$MCSLiteServerIP:$MCSLiteWSPort/deviceId/$deviceID/deviceKey/$deviceKey
 ```
 
-範例
+For example:
 
 ```
 ws://192.168.0.100:8000/deviceId/BJlQmdbQ0l/deviceKey/71ad1f7abc449a3168cc712291198f7de1ab5603e148dce1228c30e0bcea509f
 ```
 
-#### 請求內文（Request Body）
+#### Request Body
 
-* 內文為標準的 **JSON** 格式。
-* 針對只會產生一筆資料的通道，像是開關、整數、浮點數、十六進位值、字串、GPIO 等，其上傳的格式為
+The request content is in standard **JSON** format.
+
+* Some data channels have only 1 key-value pair, like boolean switch, integer, float, hex, string and GPIO. The format is
 
 ```json
 // please change $dataChannelID to the real channel ID you created on MCS Lite console
@@ -30,13 +31,13 @@ ws://192.168.0.100:8000/deviceId/BJlQmdbQ0l/deviceKey/71ad1f7abc449a3168cc712291
 {"datachannelId":"$dataChannelID","values":{"value":$value}}
 ```
 
-範例
+For example:
 
 ```json
 {"datachannelId":"control_integer","values":{"value":91}}
 ```
 
-* 針對會同時產生多筆資料的通道，像是 PWM，其上傳格式如下。當然，您也可以只上傳其中一個數據。
+* Some data channels have multipule key-value pairs, like PWM. The format is
 
 ```json
 // please change $dataChannelID to the real channel ID you created on MCS Lite console
@@ -49,7 +50,7 @@ ws://192.168.0.100:8000/deviceId/BJlQmdbQ0l/deviceKey/71ad1f7abc449a3168cc712291
 {"datachannelId":"$dataChannelID","values":{"period":"$period"}}
 ```
 
-範例
+For example:
 
 ```json
 {"datachannelId":"control_pwm","values":{"value":"205","period":"10"}}
@@ -57,7 +58,7 @@ ws://192.168.0.100:8000/deviceId/BJlQmdbQ0l/deviceKey/71ad1f7abc449a3168cc712291
 
 ### HTTP
 
-#### 請求網址（Request URL）
+#### Request URL
 
 ```
 // please change $MCSLiteServerIP to the real IP address or hostname of MCS Lite server
@@ -67,54 +68,53 @@ ws://192.168.0.100:8000/deviceId/BJlQmdbQ0l/deviceKey/71ad1f7abc449a3168cc712291
 http://$MCSLiteServerIP:$MCSLiteAPIPort/api/devices/$deviceID/datapoint.csv
 ```
 
-範例
+For example:
 
 ```
 http://192.168.0.100:3000/api/devices/BJlQmdbQ0l/datapoints.csv
 ```
 
-#### 請求方法（Request Method）
+#### Request Method
 
 POST
 
-#### 表頭（Header）
-
-需在請求的表頭（Header）中加入以下兩個欄位
+#### Header
 
 * deviceKey: $deviceKey
 	
-	請將$deviceKey置換成您在 MCS Lite 平台上所建立的測試裝置的 device key
+	Please replace $deviceKey to the real device key of your test device which you just created on MCS Lite web console.
 
 * Content-Type: text/csv
 
-#### 請求內文（Request Body）
+#### Request Body
 
-目前只支援 CSV 的資料格式，如
+Only **CSV format** is allowed for uploading data points via HTTP. The format is
 
     `$dataChannelID,$timestamp,$value/n`
 
-請注意：若您不需要上傳裝置的時間點,則您可保持 $timestamp 為空 \(但保留逗號\)，此時時間點則會是 MCS Lite 收到資料點的時間。
+Please be noted：You can provide null value as $timestamp (please keep the comma). MCS Lite server will add timestamp automatically right after it receives the data.
 
-範例：
+For example:
 
 ```
 1,1432538716989,26
 2,,26.34
 ```
 
-第一行：資料通道 ID 為 1，並且給予時間點，26 為上傳的值 \(此時的資料通道類型為整數\)。
+Line 1: Data channel ID is 1, the value of this data channel is 26 (integer) and the timestamp is provided.  
 
-第二行：資料通道 ID 為 2，並且不給予時間點，26.34 為上傳的值 \(此時的資料通道類型為浮點數\)。
 
-如欲參考更多詳細的資料通道類型之格式，請參考 MCS 網站上的[資料通道 CSV 格式](http://mcs.mediatek.com/resources/zh-TW/latest/api_references/#資料通道格式)。
+Line 2: Data channel ID is, the value of this data channel is 26.34 (float) and the timestamp is not provided.  
 
-#### 回覆（Response）
+For more detailed information on the data channel format，please refer to the MCS website for [Data channel format in CSV](http://mcs.mediatek.com/resources/latest/api_references/#data-channel-format)。
 
-##### 回覆代碼（Response Code）
+#### Response
+
+##### Response Code
 
 200
 
-##### 回覆內文（Response Body）
+##### Response Body
 
 ```json
 {

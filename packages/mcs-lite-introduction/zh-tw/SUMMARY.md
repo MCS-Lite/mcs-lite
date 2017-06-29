@@ -22,3 +22,5 @@
 * [附錄A：支援平台列表](mcs_lite_platform.md)
 * [附錄B：效能與負載測試](mcs_lite_performance.md)
 
+## 支援
+* [聯繫我們](contact_us.md)

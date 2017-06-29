@@ -1,8 +1,8 @@
-## 上傳資料
+## 上传资料
 
 ### WebSocket
 
-#### 請求網址（Request URL）
+#### 请求网址（Request URL）
 
 ```
 // please change $MCSLiteServerIP to the real IP address or hostname of MCS Lite server
@@ -12,16 +12,16 @@
 ws://$MCSLiteServerIP:$MCSLiteWSPort/deviceId/$deviceID/deviceKey/$deviceKey
 ```
 
-範例
+范例
 
 ```
 ws://192.168.0.100:8000/deviceId/BJlQmdbQ0l/deviceKey/71ad1f7abc449a3168cc712291198f7de1ab5603e148dce1228c30e0bcea509f
 ```
 
-#### 請求內文（Request Body）
+#### 请求内文（Request Body）
 
-* 內文為標準的 **JSON** 格式。
-* 針對只會產生一筆資料的通道，像是開關、整數、浮點數、十六進位值、字串、GPIO 等，其上傳的格式為
+* 内文为标准的 **JSON** 格式。
+* 针对只会产生一笔资料的通道，像是开关、整数、浮点数、十六进位值、字串、GPIO 等，其上传的格式为
 
 ```json
 // please change $dataChannelID to the real channel ID you created on MCS Lite console
@@ -30,13 +30,13 @@ ws://192.168.0.100:8000/deviceId/BJlQmdbQ0l/deviceKey/71ad1f7abc449a3168cc712291
 {"datachannelId":"$dataChannelID","values":{"value":$value}}
 ```
 
-範例
+范例
 
 ```json
 {"datachannelId":"control_integer","values":{"value":91}}
 ```
 
-* 針對會同時產生多筆資料的通道，像是 PWM，其上傳格式如下。當然，您也可以只上傳其中一個數據。
+* 针对会同时产生多笔资料的通道，像是 PWM，其上传格式如下。当然，您也可以只上传其中一个数据。
 
 ```json
 // please change $dataChannelID to the real channel ID you created on MCS Lite console
@@ -49,7 +49,7 @@ ws://192.168.0.100:8000/deviceId/BJlQmdbQ0l/deviceKey/71ad1f7abc449a3168cc712291
 {"datachannelId":"$dataChannelID","values":{"period":"$period"}}
 ```
 
-範例
+范例
 
 ```json
 {"datachannelId":"control_pwm","values":{"value":"205","period":"10"}}
@@ -57,7 +57,7 @@ ws://192.168.0.100:8000/deviceId/BJlQmdbQ0l/deviceKey/71ad1f7abc449a3168cc712291
 
 ### HTTP
 
-#### 請求網址（Request URL）
+#### 请求网址（Request URL）
 
 ```
 // please change $MCSLiteServerIP to the real IP address or hostname of MCS Lite server
@@ -67,54 +67,54 @@ ws://192.168.0.100:8000/deviceId/BJlQmdbQ0l/deviceKey/71ad1f7abc449a3168cc712291
 http://$MCSLiteServerIP:$MCSLiteAPIPort/api/devices/$deviceID/datapoint.csv
 ```
 
-範例
+范例
 
 ```
 http://192.168.0.100:3000/api/devices/BJlQmdbQ0l/datapoints.csv
 ```
 
-#### 請求方法（Request Method）
+#### 请求方法（Request Method）
 
 POST
 
-#### 表頭（Header）
+#### 表头（Header）
 
-需在請求的表頭（Header）中加入以下兩個欄位
+需在请求的表头（Header）中加入以下两个栏位
 
 * deviceKey: $deviceKey
-	
-	請將$deviceKey置換成您在 MCS Lite 平台上所建立的測試裝置的 device key
+
+	请将 $deviceKey 置换成您在 MCS Lite 平台上所建立的测试装置的 device key
 
 * Content-Type: text/csv
 
-#### 請求內文（Request Body）
+#### 请求内文（Request Body）
 
-目前只支援 CSV 的資料格式，如
+目前只支援 CSV 的资料格式，如
 
     `$dataChannelID,$timestamp,$value/n`
 
-請注意：若您不需要上傳裝置的時間點,則您可保持 $timestamp 為空 \(但保留逗號\)，此時時間點則會是 MCS Lite 收到資料點的時間。
+请注意：若您不需要上传装置的时间点,则您可保持 $timestamp 为空 \(但保留逗号\)，此时时间点则会是 MCS Lite 收到资料点的时间。
 
-範例：
+范例：
 
 ```
 1,1432538716989,26
 2,,26.34
 ```
 
-第一行：資料通道 ID 為 1，並且給予時間點，26 為上傳的值 \(此時的資料通道類型為整數\)。
+第一行：资料通道 ID 为 1，并且给予时间点，26 为上传的值 \(此时的资料通道类型为整数\)。
 
-第二行：資料通道 ID 為 2，並且不給予時間點，26.34 為上傳的值 \(此時的資料通道類型為浮點數\)。
+第二行：资料通道 ID 为 2，并且不给予时间点，26.34 为上传的值 \(此时的资料通道类型为浮点数\)。
 
-如欲參考更多詳細的資料通道類型之格式，請參考 MCS 網站上的[資料通道 CSV 格式](http://mcs.mediatek.com/resources/zh-TW/latest/api_references/#資料通道格式)。
+如欲参考更多详细的资料通道类型之格式，请参考 MCS 网站上的[资料通道 CSV 格式](http://mcs.mediatek.com/resources/zh-TW/latest/api_references/#资料通道格式)。
 
 #### 回覆（Response）
 
-##### 回覆代碼（Response Code）
+##### 回覆代码（Response Code）
 
 200
 
-##### 回覆內文（Response Body）
+##### 回覆内文（Response Body）
 
 ```json
 {

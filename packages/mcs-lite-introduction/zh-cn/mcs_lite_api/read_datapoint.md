@@ -1,10 +1,10 @@
-## 讀取資料
+## 读取资料
 
 ### WebSocket
 
 * #### JSON 格式
 
-##### 請求網址（Request URL）
+##### 请求网址（Request URL）
 
 ```
 // please change $MCSLiteServerIP to the real IP address or hostname of MCS Lite server
@@ -14,17 +14,17 @@
 ws://$MCSLiteServerIP:$MCSLiteWSPort/deviceId/$deviceID/deviceKey/$deviceKey/viewer
 ```
 
-欲接收以 JSON 格式回傳的資料時，請求 API 為 **.../viewer**，範例
+欲接收以 JSON 格式回传的资料时，请求 API 为 **.../viewer**，范例
 
 ```
 ws://192.168.0.100:8000/deviceId/BJlQmdbQ0l/deviceKey/71ad1f7abc449a3168cc712291198f7de1ab5603e148dce1228c30e0bcea509f/viewer
 ```
 
-##### 回覆內文（Response Body）
+##### 回覆内文（Response Body）
 
-透過 WebSocket 所接收到的 JSON 數據格式與上傳資料完全一致。
+透过 WebSocket 所接收到的 JSON 数据格式与上传资料完全一致。
 
-* 針對只會產生一筆資料的通道，像是開關、整數、浮點數、十六進位值、字串、GPIO等，其回傳的數據格式為
+* 针对只会产生一笔资料的通道，像是开关、整数、浮点数、十六进位值、字串、GPIO等，其回传的数据格式为
 
 ```json
 {"datachannelId":"$dataChannelID","values":{"value":$value}}
@@ -39,7 +39,7 @@ ws://192.168.0.100:8000/deviceId/BJlQmdbQ0l/deviceKey/71ad1f7abc449a3168cc712291
 {"datachannelId":"String","values":{"value":"MCS Lite is good!"}}
 ```
 
-* 針對會同時產生多筆資料的通道，其回傳的數據格式為
+* 针对会同时产生多笔资料的通道，其回传的数据格式为
 
 ```json
 {"datachannelId":"$dataChannelID","values":{"value":"$value", "period":"$period"}}
@@ -56,7 +56,7 @@ ws://192.168.0.100:8000/deviceId/BJlQmdbQ0l/deviceKey/71ad1f7abc449a3168cc712291
 
 * #### CSV 格式
 
-##### 請求網址（Request URL）
+##### 请求网址（Request URL）
 
 ```
 // please change $MCSLiteServerIP to the real IP address or hostname of MCS Lite server
@@ -66,17 +66,17 @@ ws://192.168.0.100:8000/deviceId/BJlQmdbQ0l/deviceKey/71ad1f7abc449a3168cc712291
 ws://$MCSLiteServerIP:$MCSLiteWSPort/deviceId/$deviceID/deviceKey/$deviceKey/csv
 ```
 
-欲接收以 CSV 格式回傳的資料時，請求 API 為 **.../csv**，範例
+欲接收以 CSV 格式回传的资料时，请求 API 为 **.../csv**，范例
 
 ```
 ws://192.168.0.100:8000/deviceId/BJlQmdbQ0l/deviceKey/71ad1f7abc449a3168cc712291198f7de1ab5603e148dce1228c30e0bcea509f/csv
 ```
 
-##### 回覆內文（Response Body）
+##### 回覆内文（Response Body）
 
-透過 WebSocket 所接收到的 CSV 數據格式乃是經過轉換後方便裝置讀取的格式。
+透过 WebSocket 所接收到的 CSV 数据格式乃是经过转换后方便装置读取的格式。
 
-* 針對只會產生一筆資料的通道，像是開關、整數、浮點數、十六進位值、字串、GPIO等，其回傳的數據格式為
+* 针对只会产生一笔资料的通道，像是开关、整数、浮点数、十六进位值、字串、GPIO等，其回传的数据格式为
 
 ```
 $deviceID,$deviceKey,$timeStamp,$dataChannelID,$value
@@ -88,7 +88,7 @@ $deviceID,$deviceKey,$timeStamp,$dataChannelID,$value
 S1lK-BNQCx,4b3ab6e572ac5cc9d344c6f95e30b6c8785035bb2c07f150062c7007fe7bb247,1493108019302,control_gpio,1
 ```
 
-* 針對會同時產生多筆資料的通道，其回傳的數據格式為
+* 针对会同时产生多笔资料的通道，其回传的数据格式为
 
 ```
 $deviceID,$deviceKey,$timeStamp,$dataChannelID,$value1,$value2
@@ -100,15 +100,15 @@ $deviceID,$deviceKey,$timeStamp,$dataChannelID,$value1,$value2
 S1lK-BNQCx,4b3ab6e572ac5cc9d344c6f95e30b6c8785035bb2c07f150062c7007fe7bb247,1493112039310,control_pwm,255,33
 ```
 
-其中 255 為指定給 PWM 通道的類比輸出值（範圍是 0~255），33 為時間區間 (period)。
+其中 255 为指定给 PWM 通道的类比输出值（范围是 0~255），33 为时间区间 (period)。
 
-使用 WebSocket API 接收資料時，並不需要指定資料通道，該測試裝置底下全部資料通道的數據若有更新時，皆會及時的推送。 由於 WebSocket 屬於永久性的連線，即時收到更新數據且無法查詢歷史紀錄，因此較適合用於開發需要即時接收數據或指令的裝置。
+使用 WebSocket API 接收资料时，并不需要指定资料通道，该测试装置底下全部资料通道的数据若有更新时，皆会及时的推送。 由于 WebSocket 属于永久性的连线，即时收到更新数据且无法查询历史纪录，因此较适合用于开发需要即时接收数据或指令的装置。
 
 ### HTTP
 
-* #### JSON格式
+* #### JSON 格式
 
-##### 請求網址（Request URL）
+##### 请求网址（Request URL）
 
 ```
 // please change $MCSLiteServerIP to the real IP address or hostname of MCS Lite server
@@ -119,23 +119,23 @@ S1lK-BNQCx,4b3ab6e572ac5cc9d344c6f95e30b6c8785035bb2c07f150062c7007fe7bb247,1493
 http://$MCSLiteServerIP:$MCSLiteAPIPort/api/devices/$deviceID/datachannels/$dataChannelID/datapoints?limit=1
 ```
 
-##### 請求方法（Request Method）
+##### 请求方法（Request Method）
 
 GET
 
-##### 參數 (parameter)
+##### 参数 (parameter)
 
-需在請求的 URI 中加入 limit=1 參數，表示只獲取最新一筆的資料。若要獲取多筆歷史紀錄，可透過 limit 指定數量。
+需在请求的 URI 中加入 limit=1 参数，表示只获取最新一笔的资料。若要获取多笔历史纪录，可透过 limit 指定数量。
 
-##### 表頭 (Header)
+##### 表头 (Header)
 
 * deviceKey: $deviceKey
 	
-	請將 $deviceKey 置換成您在 MCS Lite 平台上所建立的測試裝置的 device key
+	请将 $deviceKey 置换成您在 MCS Lite 平台上所建立的测试装置的 device key
 
-##### 回覆內文（Response Body）
+##### 回覆内文（Response Body）
 
-內文為標準的 **JSON** 格式。
+内文为标准的 **JSON** 格式。
 
 ```json
 {
@@ -157,7 +157,7 @@ GET
 
 * #### CSV 格式
 
-##### 請求網址（Request URL）
+##### 请求网址（Request URL）
 
 ```
 // please change $MCSLiteServerIP to the real IP address or hostname of MCS Lite server
@@ -168,26 +168,26 @@ GET
 http://$MCSLiteServerIP:$MCSLiteAPIPort/api/devices/$deviceID/datachannels/$dataChannelID/datapoints.csv
 ```
 
-##### 請求方法（Request Method）
+##### 请求方法（Request Method）
 
 GET
 
-##### 參數 (parameter)
+##### 参数 (parameter)
 
-若要獲取多筆歷史紀錄，可透過 limit 指定數量。
+若要获取多笔历史纪录，可透过 limit 指定数量。
 
-##### 表頭 (Header)
+##### 表头 (Header)
 
 * deviceKey: $deviceKey
 	
-	請將 $deviceKey 置換成您在 MCS Lite 平台上所建立的測試裝置的 device key
+	请将 $deviceKey 置换成您在 MCS Lite 平台上所建立的测试装置的 device key
 
 ##### 回覆內文（Response Body）
 
-內文為標準的 **CSV** 格式。
+内文为标准的 **CSV** 格式。
 
 ```
 S1lK-BNQCx,4b3ab6e572ac5cc9d344c6f95e30b6c8785035bb2c07f150062c7007fe7bb247,1493108019302,control_gpio,1
 ```
 
-使用 HTTP API 接收資料時，需要指定資料通道，MCS Lite 平台會回傳最新一筆資料，由於 HTTP 接收的資料並非即時，且可以指定要獲取多少歷史紀錄，因此較適合用於開發需要統計或是比較的分析圖表功能，若想在裝置上透過 HTTP API 獲取即時訊息，則需要實作一個迴圈的機制，定期去詢問是否有資料更新。
+使用 HTTP API 接收资料时，需要指定资料通道，MCS Lite 平台会回传最新一笔资料，由于 HTTP 接收的资料并非即时，且可以指定要获取多少历史纪录，因此较适合用于开发需要统计或是比较的分析图表功能，若想在装置上透过 HTTP API 获取即时讯息，则需要实作一个回圈的机制，定期去询问是否有资料更新。

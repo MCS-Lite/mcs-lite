@@ -22,13 +22,13 @@
 
 
 ##### Transaction per second
-![](./assets/Transaction_per_second.png)
+![](../assets/Transaction_per_second.png)
 
 ##### Response time
-![](./assets/Response_time_graph.png)
+![](../assets/Response_time_graph.png)
 
 #### Memory usage
-![](./assets/Memory_usage.png)
+![](../assets/Memory_usage.png)
 
 #### CPU usage
-![](./assets/CPU_usage.png)
+![](../assets/CPU_usage.png)

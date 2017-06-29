@@ -66,9 +66,9 @@
 
 5. 下載完成後，將畫面切換到您的瀏覽器並開啟 MCS Lite 的測試裝置詳情頁面。在 MCS Lite 頁面上操作開關類型的控制器，當開關切換至**開啟**狀態時， LinkIt 7697 開發板上的 **USR LED** 燈號會亮起，並且上傳 **LED is ON** 字串到字串類型的顯示器；反之，LED 燈號將熄滅，並且上傳 **LED is OFF** 的字串。
 
-	**MCS Lite 測試裝置操作頁面** ![Arduino IDE](../assets/MCS_device_string.png)
+	**MCS Lite 測試裝置操作頁面** ![Arduino IDE](../../assets/MCS_device_string.png)
 	
-	**LinkIt 7697 USR LED 燈號** ![Arduino IDE](../assets/7697_LED.png)
+	**LinkIt 7697 USR LED 燈號** ![Arduino IDE](../../assets/7697_LED.png)
 	
 	
 ### 代碼解說

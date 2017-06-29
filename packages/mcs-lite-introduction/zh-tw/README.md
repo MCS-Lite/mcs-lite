@@ -8,10 +8,11 @@ MCS Lite 將運行網路應用平台所需的元件，包括資料庫，網頁�
 
 無論是應用於教育機構、軟硬體研發團隊、或是各種商業場域，也無論電腦主機是處於公眾網路或是私有網域內，您皆可透過 MCS Lite 實現裝置連網的第一步。
 
+**[立即下載 MCS Lite 應用程式](https://github.com/MCS-Lite/mcs-lite-app/releases)**
+
 # 代碼開源
 
-MCS Lite 是使用 MIT License 來進行授權的開源專案，您可以在 MIT License 的規範下，使用、重製、修改、出版、散布、再授權 MCS Lite 相關的專案。[點我前往 MCS Lite Github ](https://github.com/MCS-Lite)
-
+MCS Lite 是使用 MIT License 來進行授權的開源專案，您可以在 MIT License 的規範下，使用、重製、修改、出版、散布、再授權 MCS Lite 相關的專案。
 MCS Lite 主要包含以下幾個專案與元件：
 
 1. mcs-lite-app
@@ -20,10 +21,13 @@ MCS Lite 主要包含以下幾個專案與元件：
    * MCS Lite application 中有使用到的 UI 元件以及手機版本的使用介面。
 3. cra-boilerplate
    * 使用 create-react-app 架構來客製化 MCS Lite application 的操作介面。
+   
+**[前往 MCS Lite Github](https://github.com/MCS-Lite)**
 
-# 擴充無限
 
-不管是要客製化平台的使用者介面，支援其他資料庫或是增加額外的資料分析與資料加密等功能，皆可透過直接修改代碼或使用 MCS Lite 提供的 API 來進一步的擴充功能。MCS Lite 開發團隊也會持續釋放出更多的範例供您參考：
+# 更多客製化空間
 
-介面客製化的範例：[cra-boilerplate](https://github.com/MCS-Lite/cra-boilerplate)
+不管是要客製化使用者介面，支援其他資料庫或是增加額外的資料分析與資料加密等功能，皆可透過直接修改代碼或使用 MCS Lite 提供的 API 來進一步的擴充功能。MCS Lite 開發團隊也會持續釋放出更多的範例供您參考。
+
+**[使用 React 改寫使用者介面](https://github.com/MCS-Lite/cra-boilerplate)**
 

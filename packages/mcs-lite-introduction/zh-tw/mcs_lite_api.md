@@ -3,7 +3,7 @@
 MCS Lite 支援透過 **WebSocket** 與 **HTTP RESTful API** 兩種方法上傳與讀取資料，其支援的協定與內文格式定義如下表
 
 | WebSocket | HTTP RESTful API |
-| :---: | :---: |
+| :---| :--- |
 | 上傳資料：JSON | 上傳資料：CSV |
 | 讀取資料：JSON, CSV | 讀取資料：JSON, CSV |
 
@@ -12,7 +12,7 @@ MCS Lite 支援透過 **WebSocket** 與 **HTTP RESTful API** 兩種方法上傳�
 * ### [上傳資料](/mcs_lite_api/update_datapoint.md)
 * ### [讀取資料](/mcs_lite_api/read_datapoint.md)
 
-## 
+
 
 
 
