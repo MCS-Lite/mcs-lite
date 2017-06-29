@@ -2,7 +2,7 @@
 
 exports[`Storyshots A API 1`] = `
 <a
-  className="A__A-cCPuKx fpwonb"
+  className="A__A-cCPuKx eNMAVf"
   color="primary"
 >
   Link
@@ -11,14 +11,14 @@ exports[`Storyshots A API 1`] = `
 
 exports[`Storyshots A Nested children with Heading 1`] = `
 <h1
-  className="Heading__Heading-bbmQNS kQNhbK"
+  className="Heading__Heading-bbmQNS ivVOfQ"
 >
   Heading Level 1 
   <b
-    className="B__B-bYLQjZ jyrAdw"
+    className="B__B-bYLQjZ eJBXnx"
   >
     <a
-      className="A__A-cCPuKx fpwonb"
+      className="A__A-cCPuKx eNMAVf"
       color="primary"
     >
       Link
@@ -30,70 +30,70 @@ exports[`Storyshots A Nested children with Heading 1`] = `
 exports[`Storyshots A With color props 1`] = `
 <div>
   <a
-    className="A__A-cCPuKx gdTiCt"
+    className="A__A-cCPuKx hAxMTf"
     color="black"
   >
     A link 
     black
   </a>
   <a
-    className="A__A-cCPuKx byQhci"
+    className="A__A-cCPuKx fOwBN"
     color="grayBase"
   >
     A link 
     grayBase
   </a>
   <a
-    className="A__A-cCPuKx iMLLLi"
+    className="A__A-cCPuKx kndFmB"
     color="grayDark"
   >
     A link 
     grayDark
   </a>
   <a
-    className="A__A-cCPuKx bMzvWn"
+    className="A__A-cCPuKx eZqrry"
     color="grayLight"
   >
     A link 
     grayLight
   </a>
   <a
-    className="A__A-cCPuKx ihpauv"
+    className="A__A-cCPuKx izMILx"
     color="white"
   >
     A link 
     white
   </a>
   <a
-    className="A__A-cCPuKx bMzvWn"
+    className="A__A-cCPuKx eZqrry"
     color="default"
   >
     A link 
     default
   </a>
   <a
-    className="A__A-cCPuKx fpwonb"
+    className="A__A-cCPuKx eNMAVf"
     color="primary"
   >
     A link 
     primary
   </a>
   <a
-    className="A__A-cCPuKx CLOsz"
+    className="A__A-cCPuKx XRPhx"
     color="success"
   >
     A link 
     success
   </a>
   <a
-    className="A__A-cCPuKx clhgzV"
+    className="A__A-cCPuKx iWjfWk"
     color="error"
   >
     A link 
     error
   </a>
   <a
-    className="A__A-cCPuKx bTKBYM"
+    className="A__A-cCPuKx tBaAl"
     color="warning"
   >
     A link 
@@ -164,7 +164,7 @@ exports[`Storyshots API [mcs-lite-theme] [JSON] theme 1`] = `
 
 exports[`Storyshots B API 1`] = `
 <b
-  className="B__B-bYLQjZ jyrAdw"
+  className="B__B-bYLQjZ eJBXnx"
 >
   Bold content
 </b>
@@ -172,10 +172,10 @@ exports[`Storyshots B API 1`] = `
 
 exports[`Storyshots B CJK 1`] = `
 <h4
-  className="Heading__Heading-bbmQNS bhpnUP"
+  className="Heading__Heading-bbmQNS kWVueV"
 >
   <b
-    className="B__B-bYLQjZ jyrAdw"
+    className="B__B-bYLQjZ eJBXnx"
   >
     控制開關粗體字
   </b>
@@ -184,12 +184,12 @@ exports[`Storyshots B CJK 1`] = `
 
 exports[`Storyshots B With color 1`] = `
 <div
-  className="P__P-KJbCR dnAaPu"
+  className="P__P-KJbCR jEbbdW"
   color="primary"
 >
   Nisi eu eiusmod cupidatat aute laboris commodo excepteur
   <b
-    className="B__B-bYLQjZ jyrAdw"
+    className="B__B-bYLQjZ eJBXnx"
   >
      Bold content 
   </b>
@@ -199,14 +199,14 @@ exports[`Storyshots B With color 1`] = `
 
 exports[`Storyshots B Within <P> 1`] = `
 <div
-  className="P__P-KJbCR huqyql"
+  className="P__P-KJbCR dPUstJ"
 >
   Nisi eu eiusmod cupidatat aute laboris commodo excepteur
   <small
-    className="Small__Small-eZiBK gQBpAl"
+    className="Small__Small-eZiBK hDqltl"
   >
     <b
-      className="B__B-bYLQjZ jyrAdw"
+      className="B__B-bYLQjZ eJBXnx"
     >
        Bold content 
     </b>
@@ -217,7 +217,7 @@ exports[`Storyshots B Within <P> 1`] = `
 
 exports[`Storyshots Button API 1`] = `
 <button
-  className="Button__Button-jkHDFw hzHJoG"
+  className="Button__Button-jkHDFw fcrwCh"
 >
   button
 </button>
@@ -225,7 +225,7 @@ exports[`Storyshots Button API 1`] = `
 
 exports[`Storyshots Button Overriding style 1`] = `
 <button
-  className="Button-example__TomatoButton-kvmsNi yEsqX Button__Button-jkHDFw hzHJoG"
+  className="Button-example__TomatoButton-kvmsNi bgFqOf Button__Button-jkHDFw fcrwCh"
   onClick={[Function]}
 >
   Overriding style
@@ -234,7 +234,7 @@ exports[`Storyshots Button Overriding style 1`] = `
 
 exports[`Storyshots Button With active props 1`] = `
 <button
-  className="Button__Button-jkHDFw iuxgKG"
+  className="Button__Button-jkHDFw jkPvRw"
 >
   Active
 </button>
@@ -242,20 +242,20 @@ exports[`Storyshots Button With active props 1`] = `
 
 exports[`Storyshots Button With block props 1`] = `
 <div
-  className="Button-example__Container-gqnXON jVPPvJ"
+  className="Button-example__Container-gqnXON kUrkBl"
 >
   <button
-    className="Button__Button-jkHDFw hzHJoG"
+    className="Button__Button-jkHDFw fcrwCh"
   >
     Button
   </button>
   <button
-    className="Button__Button-jkHDFw hzHJoG"
+    className="Button__Button-jkHDFw fcrwCh"
   >
     Simple button
   </button>
   <button
-    className="Button__Button-jkHDFw eefGtH"
+    className="Button__Button-jkHDFw lbMdCS"
   >
     block
   </button>
@@ -264,7 +264,7 @@ exports[`Storyshots Button With block props 1`] = `
 
 exports[`Storyshots Button With component props - Input submit 1`] = `
 <input
-  className="Button__Button-jkHDFw eefGtH"
+  className="Button__Button-jkHDFw lbMdCS"
   onClick={[Function]}
   type="submit"
   value="Input Submit"
@@ -273,7 +273,7 @@ exports[`Storyshots Button With component props - Input submit 1`] = `
 
 exports[`Storyshots Button With component props 1`] = `
 <a
-  className="Button__Button-jkHDFw hzHJoG"
+  className="Button__Button-jkHDFw fcrwCh"
   onClick={[Function]}
 >
   I am 
@@ -284,7 +284,7 @@ exports[`Storyshots Button With component props 1`] = `
 
 exports[`Storyshots Button With disabled props 1`] = `
 <button
-  className="Button__Button-jkHDFw csKIvF"
+  className="Button__Button-jkHDFw jaLPij"
 >
   Disabled
 </button>
@@ -292,13 +292,13 @@ exports[`Storyshots Button With disabled props 1`] = `
 
 exports[`Storyshots Button With icon inside 1`] = `
 <button
-  className="Button__Button-jkHDFw hzHJoG"
+  className="Button__Button-jkHDFw fcrwCh"
 >
   <div
-    className="Button-example__CenterContainer-ifujjA eknkbm"
+    className="Button-example__CenterContainer-ifujjA hABJto"
   >
     <div
-      className="Spin__Spin-cdyXhD emAbgi"
+      className="Spin__Spin-cdyXhD fbwVyx"
     >
       <svg
         fill="currentColor"
@@ -323,34 +323,34 @@ exports[`Storyshots Button With icon inside 1`] = `
 
 exports[`Storyshots Button With kind props 1`] = `
 <div
-  className="Button-example__Container-gqnXON jVPPvJ"
+  className="Button-example__Container-gqnXON kUrkBl"
 >
   <button
-    className="Button__Button-jkHDFw yEdmN"
+    className="Button__Button-jkHDFw eTxUqR"
     onClick={[Function]}
   >
     default
   </button>
   <button
-    className="Button__Button-jkHDFw hzHJoG"
+    className="Button__Button-jkHDFw fcrwCh"
     onClick={[Function]}
   >
     primary
   </button>
   <button
-    className="Button__Button-jkHDFw jBfZmx"
+    className="Button__Button-jkHDFw fOrDPF"
     onClick={[Function]}
   >
     success
   </button>
   <button
-    className="Button__Button-jkHDFw jXIqlD"
+    className="Button__Button-jkHDFw jkqQYm"
     onClick={[Function]}
   >
     error
   </button>
   <button
-    className="Button__Button-jkHDFw kuSHij"
+    className="Button__Button-jkHDFw jLcdhA"
     onClick={[Function]}
   >
     warning
@@ -360,15 +360,15 @@ exports[`Storyshots Button With kind props 1`] = `
 
 exports[`Storyshots Button With round props 1`] = `
 <div
-  className="Button-example__Container-gqnXON jVPPvJ"
+  className="Button-example__Container-gqnXON kUrkBl"
 >
   <button
-    className="Button__Button-jkHDFw dZNXMQ"
+    className="Button__Button-jkHDFw eLrjex"
   >
     A
   </button>
   <button
-    className="Button__Button-jkHDFw lkALg"
+    className="Button__Button-jkHDFw fxbtEw"
   >
     <svg
       fill="currentColor"
@@ -387,15 +387,15 @@ exports[`Storyshots Button With round props 1`] = `
 
 exports[`Storyshots Button With size props 1`] = `
 <div
-  className="Button-example__Container-gqnXON jVPPvJ"
+  className="Button-example__Container-gqnXON kUrkBl"
 >
   <button
-    className="Button__Button-jkHDFw eLyfbv"
+    className="Button__Button-jkHDFw fdnXWs"
   >
     Btn
   </button>
   <button
-    className="Button__Button-jkHDFw isqzPO"
+    className="Button__Button-jkHDFw fisncb"
   >
     Small Button
   </button>
@@ -404,15 +404,15 @@ exports[`Storyshots Button With size props 1`] = `
 
 exports[`Storyshots Button With square props 1`] = `
 <div
-  className="Button-example__Container-gqnXON jVPPvJ"
+  className="Button-example__Container-gqnXON kUrkBl"
 >
   <button
-    className="Button__Button-jkHDFw jLUUQp"
+    className="Button__Button-jkHDFw iqfXFv"
   >
     A
   </button>
   <button
-    className="Button__Button-jkHDFw bBqPZR"
+    className="Button__Button-jkHDFw gylLrI"
   >
     <svg
       fill="currentColor"
@@ -431,34 +431,34 @@ exports[`Storyshots Button With square props 1`] = `
 
 exports[`Storyshots Button With theme provider (Material) 1`] = `
 <div
-  className="Button-example__Container-gqnXON jVPPvJ"
+  className="Button-example__Container-gqnXON kUrkBl"
 >
   <button
-    className="Button__Button-jkHDFw iGyRDv"
+    className="Button__Button-jkHDFw hebbzy"
     onClick={[Function]}
   >
     default
   </button>
   <button
-    className="Button__Button-jkHDFw eYNVHo"
+    className="Button__Button-jkHDFw csNbhF"
     onClick={[Function]}
   >
     primary
   </button>
   <button
-    className="Button__Button-jkHDFw gdvCAb"
+    className="Button__Button-jkHDFw fyjwfX"
     onClick={[Function]}
   >
     success
   </button>
   <button
-    className="Button__Button-jkHDFw hzXyux"
+    className="Button__Button-jkHDFw ixntdd"
     onClick={[Function]}
   >
     error
   </button>
   <button
-    className="Button__Button-jkHDFw iaMKJd"
+    className="Button__Button-jkHDFw eDjKQC"
     onClick={[Function]}
   >
     warning
@@ -468,7 +468,7 @@ exports[`Storyshots Button With theme provider (Material) 1`] = `
 
 exports[`Storyshots Card API 1`] = `
 <div
-  className="Card__Card-cAIRri hUtceH"
+  className="Card__Card-cAIRri cFZqUx"
 >
   Card Content
 </div>
@@ -476,7 +476,7 @@ exports[`Storyshots Card API 1`] = `
 
 exports[`Storyshots ClickOutside API 1`] = `
 <div
-  className="Card__Card-cAIRri hUtceH"
+  className="Card__Card-cAIRri cFZqUx"
 >
   Inside (Try to click outside.)
 </div>
@@ -742,7 +742,7 @@ exports[`Storyshots Code With language props 1`] = `
 
 exports[`Storyshots CopyButton API 1`] = `
 <button
-  className="CopyButton__StyledButton-kqfTnn lkEwdj Button__Button-jkHDFw eLyfbv"
+  className="CopyButton__StyledButton-kqfTnn haoURC Button__Button-jkHDFw fdnXWs"
   onClick={[Function]}
 >
   <div>
@@ -753,10 +753,10 @@ exports[`Storyshots CopyButton API 1`] = `
 
 exports[`Storyshots DataChannel ButtonClear 1`] = `
 <div
-  className="P__P-KJbCR huqyql"
+  className="P__P-KJbCR dPUstJ"
 >
   <a
-    className="ButtonClear__StyledA-hPckxD cJqJoD A__A-cCPuKx fpwonb"
+    className="ButtonClear__StyledA-hPckxD gdbAWr A__A-cCPuKx eNMAVf"
     color="primary"
   >
     <svg
@@ -777,16 +777,16 @@ exports[`Storyshots DataChannel ButtonClear 1`] = `
 
 exports[`Storyshots DataChannel ControlNumber 1`] = `
 <div
-  className="ControlNumber__Container-gmlYuy rzEmK"
+  className="ControlNumber__Container-gmlYuy dBXKqA"
 >
   <p
-    className="ControlNumber__Unixtype-hOgmLf cWpJIG P__P-KJbCR kHKeHO"
+    className="ControlNumber__Unixtype-hOgmLf iwcLfq P__P-KJbCR hrSHif"
     color="grayBase"
   >
     單位：攝氏
   </p>
   <input
-    className="Input__Input-ixjKAz daZkvy"
+    className="Input__Input-ixjKAz dDXeoZ"
     kind="primary"
     onChange={[Function]}
     placeholder="placeholder"
@@ -794,14 +794,14 @@ exports[`Storyshots DataChannel ControlNumber 1`] = `
     value={10}
   />
   <div
-    className="ControlNumber__ButtonWrapper-iczkcP gmGCvf"
+    className="ControlNumber__ButtonWrapper-iczkcP iBHdKt"
   >
     <div
-      className="P__P-KJbCR huqyql"
+      className="P__P-KJbCR dPUstJ"
       onClick={[Function]}
     >
       <a
-        className="ButtonClear__StyledA-hPckxD cJqJoD A__A-cCPuKx fpwonb"
+        className="ButtonClear__StyledA-hPckxD gdbAWr A__A-cCPuKx eNMAVf"
         color="primary"
       >
         <svg
@@ -819,7 +819,7 @@ exports[`Storyshots DataChannel ControlNumber 1`] = `
       </a>
     </div>
     <button
-      className="Button__Button-jkHDFw hzHJoG"
+      className="Button__Button-jkHDFw fcrwCh"
       onClick={[Function]}
     >
       Ok
@@ -830,23 +830,23 @@ exports[`Storyshots DataChannel ControlNumber 1`] = `
 
 exports[`Storyshots DataChannel ControlPeriod 1`] = `
 <div
-  className="ControlPeriod__Container-jNmifR wmzMS"
+  className="ControlPeriod__Container-jNmifR bLOshQ"
 >
   <label
     htmlFor="input"
   >
     <p
-      className="P__P-KJbCR kHKeHO"
+      className="P__P-KJbCR hrSHif"
       color="grayBase"
     >
       Period
     </p>
   </label>
   <div
-    className="ControlPeriod__InputWrapper-icIPmx gFyvMa"
+    className="ControlPeriod__InputWrapper-icIPmx diDDNv"
   >
     <input
-      className="ControlPeriod__StyledInput-fNvBTX cAVBYu Input__Input-ixjKAz daZkvy"
+      className="ControlPeriod__StyledInput-fNvBTX jSwXqv Input__Input-ixjKAz dDXeoZ"
       kind="primary"
       onChange={[Function]}
       placeholder="placeholder"
@@ -854,7 +854,7 @@ exports[`Storyshots DataChannel ControlPeriod 1`] = `
       value={10}
     />
     <button
-      className="Button__Button-jkHDFw hzHJoG"
+      className="Button__Button-jkHDFw fcrwCh"
       onClick={[Function]}
     >
       Ok
@@ -865,36 +865,36 @@ exports[`Storyshots DataChannel ControlPeriod 1`] = `
 
 exports[`Storyshots DataChannel ControlRange - Stateful PPAP 1`] = `
 <div
-  className="ControlRange__Container-ispxkc kkVGKq"
+  className="ControlRange__Container-ispxkc kQpIsI"
 >
   <div
-    className="ControlRange__LabelWrapper-hpKjGx coavYs"
+    className="ControlRange__LabelWrapper-hpKjGx fGQsYS"
   >
     <div
-      className="ControlRange__LabelItem-kiIalK idIiax"
+      className="ControlRange__LabelItem-kiIalK dulPtE"
     >
       <p
-        className="P__P-KJbCR kHKeHO"
+        className="P__P-KJbCR hrSHif"
         color="grayBase"
       >
         Apple
       </p>
     </div>
     <div
-      className="ControlRange__LabelItem-kiIalK idIiax"
+      className="ControlRange__LabelItem-kiIalK dulPtE"
     >
       <p
-        className="P__P-KJbCR kHKeHO"
+        className="P__P-KJbCR hrSHif"
         color="grayBase"
       >
         Pen
       </p>
     </div>
     <div
-      className="ControlRange__LabelItem-kiIalK idIiax"
+      className="ControlRange__LabelItem-kiIalK dulPtE"
     >
       <p
-        className="P__P-KJbCR kHKeHO"
+        className="P__P-KJbCR hrSHif"
         color="grayBase"
       >
         Pineapple
@@ -902,22 +902,22 @@ exports[`Storyshots DataChannel ControlRange - Stateful PPAP 1`] = `
     </div>
   </div>
   <div
-    className="ControlRange__InputWrapper-fklkwO ZhTPZ"
+    className="ControlRange__InputWrapper-fklkwO lotfVO"
   >
     <div
-      className="ControlRange__ValueWrapper-jxMKxr lkxWna P__P-KJbCR kHKeHO"
+      className="ControlRange__ValueWrapper-jxMKxr kFWjXk P__P-KJbCR hrSHif"
       color="grayBase"
     >
       Current value: 
       <p
-        className="ControlRange__Value-kXycxr cJYxpn P__P-KJbCR dnAaPu"
+        className="ControlRange__Value-kXycxr glmUBq P__P-KJbCR jEbbdW"
         color="primary"
       >
         Pineapple
       </p>
     </div>
     <input
-      className="InputRange__InputRange-uGAsR iOVoet"
+      className="InputRange__InputRange-uGAsR lghldr"
       kind="primary"
       max={2}
       min={0}
@@ -934,26 +934,26 @@ exports[`Storyshots DataChannel ControlRange - Stateful PPAP 1`] = `
 
 exports[`Storyshots DataChannel ControlRange - Stateful number 1`] = `
 <div
-  className="ControlRange__Container-ispxkc kkVGKq"
+  className="ControlRange__Container-ispxkc kQpIsI"
 >
   <div
-    className="ControlRange__LabelWrapper-hpKjGx kKFCvQ"
+    className="ControlRange__LabelWrapper-hpKjGx bfHWDZ"
   >
     <div
-      className="ControlRange__LabelItem-kiIalK idIiax"
+      className="ControlRange__LabelItem-kiIalK dulPtE"
     >
       <div
-        className="P__P-KJbCR kHKeHO"
+        className="P__P-KJbCR hrSHif"
         color="grayBase"
       >
         33
       </div>
     </div>
     <div
-      className="ControlRange__LabelItem-kiIalK idIiax"
+      className="ControlRange__LabelItem-kiIalK dulPtE"
     >
       <div
-        className="P__P-KJbCR kHKeHO"
+        className="P__P-KJbCR hrSHif"
         color="grayBase"
       >
         95
@@ -961,22 +961,22 @@ exports[`Storyshots DataChannel ControlRange - Stateful number 1`] = `
     </div>
   </div>
   <div
-    className="ControlRange__InputWrapper-fklkwO dVxsgp"
+    className="ControlRange__InputWrapper-fklkwO fpvHuS"
   >
     <div
-      className="ControlRange__ValueWrapper-jxMKxr lkxWna P__P-KJbCR kHKeHO"
+      className="ControlRange__ValueWrapper-jxMKxr kFWjXk P__P-KJbCR hrSHif"
       color="grayBase"
     >
       Current value: 
       <div
-        className="ControlRange__Value-kXycxr cJYxpn P__P-KJbCR dnAaPu"
+        className="ControlRange__Value-kXycxr glmUBq P__P-KJbCR jEbbdW"
         color="primary"
       >
         88
       </div>
     </div>
     <input
-      className="InputRange__InputRange-uGAsR iOVoet"
+      className="InputRange__InputRange-uGAsR lghldr"
       kind="primary"
       max={95}
       min={33}
@@ -993,59 +993,59 @@ exports[`Storyshots DataChannel ControlRange - Stateful number 1`] = `
 
 exports[`Storyshots DataChannel ControlRange 1`] = `
 <div
-  className="DataChannel-example__DemoWrapper-hHsqWu gpgIXx"
+  className="DataChannel-example__DemoWrapper-hHsqWu cXhldX"
 >
   <div
-    className="ControlRange__Container-ispxkc kkVGKq"
+    className="ControlRange__Container-ispxkc kQpIsI"
   >
     <div
-      className="ControlRange__LabelWrapper-hpKjGx coavYs"
+      className="ControlRange__LabelWrapper-hpKjGx fGQsYS"
     >
       <div
-        className="ControlRange__LabelItem-kiIalK idIiax"
+        className="ControlRange__LabelItem-kiIalK dulPtE"
       >
         <p
-          className="P__P-KJbCR kHKeHO"
+          className="P__P-KJbCR hrSHif"
           color="grayBase"
         >
           AAAAAA
         </p>
       </div>
       <div
-        className="ControlRange__LabelItem-kiIalK idIiax"
+        className="ControlRange__LabelItem-kiIalK dulPtE"
       >
         <p
-          className="P__P-KJbCR kHKeHO"
+          className="P__P-KJbCR hrSHif"
           color="grayBase"
         >
           BBBBB
         </p>
       </div>
       <div
-        className="ControlRange__LabelItem-kiIalK idIiax"
+        className="ControlRange__LabelItem-kiIalK dulPtE"
       >
         <p
-          className="P__P-KJbCR kHKeHO"
+          className="P__P-KJbCR hrSHif"
           color="grayBase"
         >
           CCCCC
         </p>
       </div>
       <div
-        className="ControlRange__LabelItem-kiIalK idIiax"
+        className="ControlRange__LabelItem-kiIalK dulPtE"
       >
         <p
-          className="P__P-KJbCR kHKeHO"
+          className="P__P-KJbCR hrSHif"
           color="grayBase"
         >
           DDDDD
         </p>
       </div>
       <div
-        className="ControlRange__LabelItem-kiIalK idIiax"
+        className="ControlRange__LabelItem-kiIalK dulPtE"
       >
         <p
-          className="P__P-KJbCR kHKeHO"
+          className="P__P-KJbCR hrSHif"
           color="grayBase"
         >
           EEEEE
@@ -1053,22 +1053,22 @@ exports[`Storyshots DataChannel ControlRange 1`] = `
       </div>
     </div>
     <div
-      className="ControlRange__InputWrapper-fklkwO kkMvVd"
+      className="ControlRange__InputWrapper-fklkwO kHLcJV"
     >
       <div
-        className="ControlRange__ValueWrapper-jxMKxr lkxWna P__P-KJbCR kHKeHO"
+        className="ControlRange__ValueWrapper-jxMKxr kFWjXk P__P-KJbCR hrSHif"
         color="grayBase"
       >
         Current value: 
         <p
-          className="ControlRange__Value-kXycxr cJYxpn P__P-KJbCR dnAaPu"
+          className="ControlRange__Value-kXycxr glmUBq P__P-KJbCR jEbbdW"
           color="primary"
         >
           N/A
         </p>
       </div>
       <input
-        className="InputRange__InputRange-uGAsR iOVoet"
+        className="InputRange__InputRange-uGAsR lghldr"
         kind="primary"
         max={4}
         min={0}
@@ -1082,56 +1082,56 @@ exports[`Storyshots DataChannel ControlRange 1`] = `
     </div>
   </div>
   <div
-    className="ControlRange__Container-ispxkc kkVGKq"
+    className="ControlRange__Container-ispxkc kQpIsI"
   >
     <div
-      className="ControlRange__LabelWrapper-hpKjGx coavYs"
+      className="ControlRange__LabelWrapper-hpKjGx fGQsYS"
     >
       <div
-        className="ControlRange__LabelItem-kiIalK idIiax"
+        className="ControlRange__LabelItem-kiIalK dulPtE"
       >
         <p
-          className="P__P-KJbCR kHKeHO"
+          className="P__P-KJbCR hrSHif"
           color="grayBase"
         >
           AAAAAA
         </p>
       </div>
       <div
-        className="ControlRange__LabelItem-kiIalK idIiax"
+        className="ControlRange__LabelItem-kiIalK dulPtE"
       >
         <p
-          className="P__P-KJbCR kHKeHO"
+          className="P__P-KJbCR hrSHif"
           color="grayBase"
         >
           BBBBB
         </p>
       </div>
       <div
-        className="ControlRange__LabelItem-kiIalK idIiax"
+        className="ControlRange__LabelItem-kiIalK dulPtE"
       >
         <p
-          className="P__P-KJbCR kHKeHO"
+          className="P__P-KJbCR hrSHif"
           color="grayBase"
         >
           CCCCC
         </p>
       </div>
       <div
-        className="ControlRange__LabelItem-kiIalK idIiax"
+        className="ControlRange__LabelItem-kiIalK dulPtE"
       >
         <p
-          className="P__P-KJbCR kHKeHO"
+          className="P__P-KJbCR hrSHif"
           color="grayBase"
         >
           DDDDD
         </p>
       </div>
       <div
-        className="ControlRange__LabelItem-kiIalK idIiax"
+        className="ControlRange__LabelItem-kiIalK dulPtE"
       >
         <p
-          className="P__P-KJbCR kHKeHO"
+          className="P__P-KJbCR hrSHif"
           color="grayBase"
         >
           EEEEE
@@ -1139,22 +1139,22 @@ exports[`Storyshots DataChannel ControlRange 1`] = `
       </div>
     </div>
     <div
-      className="ControlRange__InputWrapper-fklkwO kkMvVd"
+      className="ControlRange__InputWrapper-fklkwO kHLcJV"
     >
       <div
-        className="ControlRange__ValueWrapper-jxMKxr lkxWna P__P-KJbCR kHKeHO"
+        className="ControlRange__ValueWrapper-jxMKxr kFWjXk P__P-KJbCR hrSHif"
         color="grayBase"
       >
         Current value: 
         <p
-          className="ControlRange__Value-kXycxr cJYxpn P__P-KJbCR dnAaPu"
+          className="ControlRange__Value-kXycxr glmUBq P__P-KJbCR jEbbdW"
           color="primary"
         >
           DDDDD
         </p>
       </div>
       <input
-        className="InputRange__InputRange-uGAsR iOVoet"
+        className="InputRange__InputRange-uGAsR lghldr"
         kind="primary"
         max={4}
         min={0}
@@ -1168,26 +1168,26 @@ exports[`Storyshots DataChannel ControlRange 1`] = `
     </div>
   </div>
   <div
-    className="ControlRange__Container-ispxkc kkVGKq"
+    className="ControlRange__Container-ispxkc kQpIsI"
   >
     <div
-      className="ControlRange__LabelWrapper-hpKjGx kKFCvQ"
+      className="ControlRange__LabelWrapper-hpKjGx bfHWDZ"
     >
       <div
-        className="ControlRange__LabelItem-kiIalK idIiax"
+        className="ControlRange__LabelItem-kiIalK dulPtE"
       >
         <p
-          className="P__P-KJbCR kHKeHO"
+          className="P__P-KJbCR hrSHif"
           color="grayBase"
         >
           Low
         </p>
       </div>
       <div
-        className="ControlRange__LabelItem-kiIalK idIiax"
+        className="ControlRange__LabelItem-kiIalK dulPtE"
       >
         <p
-          className="P__P-KJbCR kHKeHO"
+          className="P__P-KJbCR hrSHif"
           color="grayBase"
         >
           Heigh
@@ -1195,22 +1195,22 @@ exports[`Storyshots DataChannel ControlRange 1`] = `
       </div>
     </div>
     <div
-      className="ControlRange__InputWrapper-fklkwO dVxsgp"
+      className="ControlRange__InputWrapper-fklkwO fpvHuS"
     >
       <div
-        className="ControlRange__ValueWrapper-jxMKxr lkxWna P__P-KJbCR kHKeHO"
+        className="ControlRange__ValueWrapper-jxMKxr kFWjXk P__P-KJbCR hrSHif"
         color="grayBase"
       >
         Current value: 
         <p
-          className="ControlRange__Value-kXycxr cJYxpn P__P-KJbCR dnAaPu"
+          className="ControlRange__Value-kXycxr glmUBq P__P-KJbCR jEbbdW"
           color="primary"
         >
           Low
         </p>
       </div>
       <input
-        className="InputRange__InputRange-uGAsR iOVoet"
+        className="InputRange__InputRange-uGAsR lghldr"
         kind="primary"
         max={1}
         min={0}
@@ -1224,26 +1224,26 @@ exports[`Storyshots DataChannel ControlRange 1`] = `
     </div>
   </div>
   <div
-    className="ControlRange__Container-ispxkc kkVGKq"
+    className="ControlRange__Container-ispxkc kQpIsI"
   >
     <div
-      className="ControlRange__LabelWrapper-hpKjGx kKFCvQ"
+      className="ControlRange__LabelWrapper-hpKjGx bfHWDZ"
     >
       <div
-        className="ControlRange__LabelItem-kiIalK idIiax"
+        className="ControlRange__LabelItem-kiIalK dulPtE"
       >
         <div
-          className="P__P-KJbCR kHKeHO"
+          className="P__P-KJbCR hrSHif"
           color="grayBase"
         >
           0
         </div>
       </div>
       <div
-        className="ControlRange__LabelItem-kiIalK idIiax"
+        className="ControlRange__LabelItem-kiIalK dulPtE"
       >
         <div
-          className="P__P-KJbCR kHKeHO"
+          className="P__P-KJbCR hrSHif"
           color="grayBase"
         >
           100
@@ -1251,22 +1251,22 @@ exports[`Storyshots DataChannel ControlRange 1`] = `
       </div>
     </div>
     <div
-      className="ControlRange__InputWrapper-fklkwO dVxsgp"
+      className="ControlRange__InputWrapper-fklkwO fpvHuS"
     >
       <div
-        className="ControlRange__ValueWrapper-jxMKxr lkxWna P__P-KJbCR kHKeHO"
+        className="ControlRange__ValueWrapper-jxMKxr kFWjXk P__P-KJbCR hrSHif"
         color="grayBase"
       >
         Current value: 
         <div
-          className="ControlRange__Value-kXycxr cJYxpn P__P-KJbCR dnAaPu"
+          className="ControlRange__Value-kXycxr glmUBq P__P-KJbCR jEbbdW"
           color="primary"
         >
           33
         </div>
       </div>
       <input
-        className="InputRange__InputRange-uGAsR iOVoet"
+        className="InputRange__InputRange-uGAsR lghldr"
         kind="primary"
         max={100}
         min={0}
@@ -1284,24 +1284,24 @@ exports[`Storyshots DataChannel ControlRange 1`] = `
 
 exports[`Storyshots DataChannel ControlString 1`] = `
 <div
-  className="ControlString__Container-gxvWtt eRKIhm"
+  className="ControlString__Container-gxvWtt fBhBEN"
 >
   <textarea
-    className="ControlString__StyledTextarea-jUHsJW krVxuY Textarea__Textarea-dEcNVt haEdAh"
+    className="ControlString__StyledTextarea-jUHsJW ccWikO Textarea__Textarea-dEcNVt WlyWE"
     kind="primary"
     onChange={[Function]}
     placeholder="placeholder"
     value=""
   />
   <div
-    className="ControlString__ButtonWrapper-kaocaH fiUlWA"
+    className="ControlString__ButtonWrapper-kaocaH fOhLBP"
   >
     <div
-      className="P__P-KJbCR huqyql"
+      className="P__P-KJbCR dPUstJ"
       onClick={[Function]}
     >
       <a
-        className="ButtonClear__StyledA-hPckxD cJqJoD A__A-cCPuKx fpwonb"
+        className="ButtonClear__StyledA-hPckxD gdbAWr A__A-cCPuKx eNMAVf"
         color="primary"
       >
         <svg
@@ -1319,7 +1319,7 @@ exports[`Storyshots DataChannel ControlString 1`] = `
       </a>
     </div>
     <button
-      className="Button__Button-jkHDFw hzHJoG"
+      className="Button__Button-jkHDFw fcrwCh"
       onClick={[Function]}
     >
       Ok
@@ -1331,7 +1331,7 @@ exports[`Storyshots DataChannel ControlString 1`] = `
 exports[`Storyshots DataChannel ControlSwitch 1`] = `
 <div
   checked={false}
-  className="Switch__Switch-iwxo kHzQqK"
+  className="Switch__Switch-iwxo jSKZSz"
   kind="success"
   onClick={[Function]}
 />
@@ -1339,17 +1339,17 @@ exports[`Storyshots DataChannel ControlSwitch 1`] = `
 
 exports[`Storyshots DataChannel DisplayMultipleValue 1`] = `
 <div
-  className="DisplayMultipleValue__Container-emGSTk jhztvc"
+  className="DisplayMultipleValue__Container-emGSTk bcIInJ"
 >
   <div>
     <p
-      className="P__P-KJbCR kHKeHO"
+      className="P__P-KJbCR hrSHif"
       color="grayBase"
     >
       Value
     </p>
     <h1
-      className="DisplayMultipleValue__StyledHeading-fVnwQZ fMCDyR Heading__Heading-bbmQNS bzctpr"
+      className="DisplayMultipleValue__StyledHeading-fVnwQZ kDmihL Heading__Heading-bbmQNS qIgcJ"
       color="primary"
     >
       1234455
@@ -1357,13 +1357,13 @@ exports[`Storyshots DataChannel DisplayMultipleValue 1`] = `
   </div>
   <div>
     <p
-      className="P__P-KJbCR kHKeHO"
+      className="P__P-KJbCR hrSHif"
       color="grayBase"
     >
       Period
     </p>
     <h1
-      className="DisplayMultipleValue__StyledHeading-fVnwQZ fMCDyR Heading__Heading-bbmQNS bzctpr"
+      className="DisplayMultipleValue__StyledHeading-fVnwQZ kDmihL Heading__Heading-bbmQNS qIgcJ"
       color="primary"
     >
       125125
@@ -1374,23 +1374,23 @@ exports[`Storyshots DataChannel DisplayMultipleValue 1`] = `
 
 exports[`Storyshots DataChannel DisplayStatus 1`] = `
 <div
-  className="DataChannel-example__DemoWrapper-hHsqWu gpgIXx"
+  className="DataChannel-example__DemoWrapper-hHsqWu cXhldX"
 >
   <div
-    className="DisplayStatus__Container-jrDlkR DzKAF"
+    className="DisplayStatus__Container-jrDlkR HMqwb"
   >
     <div
-      className="DisplayStatus__ItemWrapper-edfiVv eBhrYw"
+      className="DisplayStatus__ItemWrapper-edfiVv gOPCZe"
     >
       <p
-        className="P__P-KJbCR kHKeHO"
+        className="P__P-KJbCR hrSHif"
         color="grayBase"
       >
         OFF
       </p>
       <div>
         <svg
-          className="StatusLight__Svg-IVkxE heGIpa"
+          className="StatusLight__Svg-IVkxE gOaNbK"
           color="grayDark"
           viewBox="0 0 20 20"
         >
@@ -1403,17 +1403,17 @@ exports[`Storyshots DataChannel DisplayStatus 1`] = `
       </div>
     </div>
     <div
-      className="DisplayStatus__ItemWrapper-edfiVv eBhrYw"
+      className="DisplayStatus__ItemWrapper-edfiVv gOPCZe"
     >
       <p
-        className="P__P-KJbCR kHKeHO"
+        className="P__P-KJbCR hrSHif"
         color="grayBase"
       >
         ON
       </p>
       <div>
         <svg
-          className="StatusLight__Svg-IVkxE heGIpa"
+          className="StatusLight__Svg-IVkxE gOaNbK"
           color="grayDark"
           viewBox="0 0 20 20"
         >
@@ -1427,20 +1427,20 @@ exports[`Storyshots DataChannel DisplayStatus 1`] = `
     </div>
   </div>
   <div
-    className="DisplayStatus__Container-jrDlkR DzKAF"
+    className="DisplayStatus__Container-jrDlkR HMqwb"
   >
     <div
-      className="DisplayStatus__ItemWrapper-edfiVv eBhrYw"
+      className="DisplayStatus__ItemWrapper-edfiVv gOPCZe"
     >
       <p
-        className="P__P-KJbCR kHKeHO"
+        className="P__P-KJbCR hrSHif"
         color="grayBase"
       >
         Apple1
       </p>
       <div>
         <svg
-          className="StatusLight__Svg-IVkxE heGIpa"
+          className="StatusLight__Svg-IVkxE gOaNbK"
           color="grayDark"
           viewBox="0 0 20 20"
         >
@@ -1453,17 +1453,17 @@ exports[`Storyshots DataChannel DisplayStatus 1`] = `
       </div>
     </div>
     <div
-      className="DisplayStatus__ItemWrapper-edfiVv eBhrYw"
+      className="DisplayStatus__ItemWrapper-edfiVv gOPCZe"
     >
       <p
-        className="P__P-KJbCR kHKeHO"
+        className="P__P-KJbCR hrSHif"
         color="grayBase"
       >
         Apple2
       </p>
       <div>
         <svg
-          className="StatusLight__Svg-IVkxE heGIpa"
+          className="StatusLight__Svg-IVkxE gOaNbK"
           color="grayDark"
           viewBox="0 0 20 20"
         >
@@ -1476,17 +1476,17 @@ exports[`Storyshots DataChannel DisplayStatus 1`] = `
       </div>
     </div>
     <div
-      className="DisplayStatus__ItemWrapper-edfiVv eBhrYw"
+      className="DisplayStatus__ItemWrapper-edfiVv gOPCZe"
     >
       <p
-        className="P__P-KJbCR kHKeHO"
+        className="P__P-KJbCR hrSHif"
         color="grayBase"
       >
         Pen
       </p>
       <div>
         <svg
-          className="StatusLight__Svg-IVkxE geyPxt"
+          className="StatusLight__Svg-IVkxE efztEk"
           color="success"
           viewBox="0 0 20 20"
         >
@@ -1499,17 +1499,17 @@ exports[`Storyshots DataChannel DisplayStatus 1`] = `
       </div>
     </div>
     <div
-      className="DisplayStatus__ItemWrapper-edfiVv eBhrYw"
+      className="DisplayStatus__ItemWrapper-edfiVv gOPCZe"
     >
       <p
-        className="P__P-KJbCR kHKeHO"
+        className="P__P-KJbCR hrSHif"
         color="grayBase"
       >
         Pineapple
       </p>
       <div>
         <svg
-          className="StatusLight__Svg-IVkxE heGIpa"
+          className="StatusLight__Svg-IVkxE gOaNbK"
           color="grayDark"
           viewBox="0 0 20 20"
         >
@@ -1522,17 +1522,17 @@ exports[`Storyshots DataChannel DisplayStatus 1`] = `
       </div>
     </div>
     <div
-      className="DisplayStatus__ItemWrapper-edfiVv eBhrYw"
+      className="DisplayStatus__ItemWrapper-edfiVv gOPCZe"
     >
       <p
-        className="P__P-KJbCR kHKeHO"
+        className="P__P-KJbCR hrSHif"
         color="grayBase"
       >
         PPAPPPAPPPAP
       </p>
       <div>
         <svg
-          className="StatusLight__Svg-IVkxE heGIpa"
+          className="StatusLight__Svg-IVkxE gOaNbK"
           color="grayDark"
           viewBox="0 0 20 20"
         >
@@ -1550,10 +1550,10 @@ exports[`Storyshots DataChannel DisplayStatus 1`] = `
 
 exports[`Storyshots DataChannel DisplayString 1`] = `
 <div
-  className="DisplayString__Container-gMiSmM eaLFWz"
+  className="DisplayString__Container-gMiSmM kPtUam"
 >
   <textarea
-    className="DisplayString__StyledTextarea-iHUBEj eYiCLJ Textarea__Textarea-dEcNVt haEdAh"
+    className="DisplayString__StyledTextarea-iHUBEj gKioTS Textarea__Textarea-dEcNVt WlyWE"
     disabled={true}
     kind="primary"
     placeholder="This place holds Hex value."
@@ -1564,16 +1564,16 @@ exports[`Storyshots DataChannel DisplayString 1`] = `
 
 exports[`Storyshots DataChannel DisplayUnitValue 1`] = `
 <div
-  className="DisplayUnitValue__Container-fOKEIX dDKurw"
+  className="DisplayUnitValue__Container-fOKEIX ljDNj"
 >
   <h1
-    className="DisplayUnitValue__StyledHeading-kRatpm hdCZyr Heading__Heading-bbmQNS bzctpr"
+    className="DisplayUnitValue__StyledHeading-kRatpm kFFTNg Heading__Heading-bbmQNS qIgcJ"
     color="primary"
   >
     1123124124121
   </h1>
   <p
-    className="DisplayUnitValue__StyledP-ceNPmY iawlaJ P__P-KJbCR kHKeHO"
+    className="DisplayUnitValue__StyledP-ceNPmY fMwzJn P__P-KJbCR hrSHif"
     color="grayBase"
   >
     攝氏
@@ -1583,14 +1583,14 @@ exports[`Storyshots DataChannel DisplayUnitValue 1`] = `
 
 exports[`Storyshots DataChannelAdapter API 1`] = `
 <div
-  className="DataChannelAdapter-example__CardWrapper-hYsPSJ gBdkwi"
+  className="DataChannelAdapter-example__CardWrapper-hYsPSJ byliyT"
 >
   <div
-    className="DataChannelCard__Wrapper-bHbgIQ iAWmbi Card__Card-cAIRri hUtceH"
+    className="DataChannelCard__Wrapper-bHbgIQ ecSBca Card__Card-cAIRri cFZqUx"
     data-width="half"
   >
     <div
-      className="DataChannelCard__Header-cPHliC hpyYem"
+      className="DataChannelCard__Header-cPHliC eSZaWn"
     >
       <a
         href=""
@@ -1599,19 +1599,19 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
       </a>
     </div>
     <div
-      className="DataChannelCard__Body-gCBkrW htKtEp"
+      className="DataChannelCard__Body-gCBkrW hYtwsQ"
     >
       <div
-        className="ControlNumber__Container-gmlYuy rzEmK"
+        className="ControlNumber__Container-gmlYuy dBXKqA"
       >
         <p
-          className="ControlNumber__Unixtype-hOgmLf cWpJIG P__P-KJbCR kHKeHO"
+          className="ControlNumber__Unixtype-hOgmLf iwcLfq P__P-KJbCR hrSHif"
           color="grayBase"
         >
           單位：ampere
         </p>
         <input
-          className="Input__Input-ixjKAz daZkvy"
+          className="Input__Input-ixjKAz dDXeoZ"
           kind="primary"
           onChange={[Function]}
           placeholder="Integer only"
@@ -1619,14 +1619,14 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
           value={0}
         />
         <div
-          className="ControlNumber__ButtonWrapper-iczkcP gmGCvf"
+          className="ControlNumber__ButtonWrapper-iczkcP iBHdKt"
         >
           <div
-            className="P__P-KJbCR huqyql"
+            className="P__P-KJbCR dPUstJ"
             onClick={[Function]}
           >
             <a
-              className="ButtonClear__StyledA-hPckxD cJqJoD A__A-cCPuKx fpwonb"
+              className="ButtonClear__StyledA-hPckxD gdbAWr A__A-cCPuKx eNMAVf"
               color="primary"
             >
               <svg
@@ -1644,7 +1644,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
             </a>
           </div>
           <button
-            className="Button__Button-jkHDFw hzHJoG"
+            className="Button__Button-jkHDFw fcrwCh"
             onClick={[Function]}
           >
             Ok
@@ -1653,23 +1653,23 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
       </div>
     </div>
     <div
-      className="DataChannelCard__Footer-bXWvk khhGpj"
+      className="DataChannelCard__Footer-bXWvk fBxewK"
     >
       <h4
-        className="DataChannelCard__StyledHeading-cbvcvv keaHV Heading__Heading-bbmQNS bhpnUP"
+        className="DataChannelCard__StyledHeading-cbvcvv dkneLR Heading__Heading-bbmQNS kWVueV"
       >
         INTEGER_CONTROL
       </h4>
       <small
-        className="DataChannelCard__StyledSmall-dXSgmU gQFsUf Small__Small-eZiBK gQBpAl"
+        className="DataChannelCard__StyledSmall-dXSgmU cKvBTw Small__Small-eZiBK hDqltl"
       >
         Last data point time : 2015-06-12 12:00
       </small>
       <hr
-        className="DataChannelCard__StyledHr-gbFDHt kdQbav Hr__StyledHr-cIXjSE dCevnQ"
+        className="DataChannelCard__StyledHr-gbFDHt jXstRk Hr__StyledHr-cIXjSE bErYaL"
       />
       <div
-        className="DataChannelCard__Description-coAkpt ZvWJu P__P-KJbCR huqyql"
+        className="DataChannelCard__Description-coAkpt fpChPl P__P-KJbCR dPUstJ"
       >
         <MockReactTextTruncate
           line={2}
@@ -1680,11 +1680,11 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
     </div>
   </div>
   <div
-    className="DataChannelCard__Wrapper-bHbgIQ iAWmbi Card__Card-cAIRri hUtceH"
+    className="DataChannelCard__Wrapper-bHbgIQ ecSBca Card__Card-cAIRri cFZqUx"
     data-width="half"
   >
     <div
-      className="DataChannelCard__Header-cPHliC hpyYem"
+      className="DataChannelCard__Header-cPHliC eSZaWn"
     >
       <a
         href=""
@@ -1693,19 +1693,19 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
       </a>
     </div>
     <div
-      className="DataChannelCard__Body-gCBkrW htKtEp"
+      className="DataChannelCard__Body-gCBkrW hYtwsQ"
     >
       <div
-        className="DisplayUnitValue__Container-fOKEIX dDKurw"
+        className="DisplayUnitValue__Container-fOKEIX ljDNj"
       >
         <h1
-          className="DisplayUnitValue__StyledHeading-kRatpm hdCZyr Heading__Heading-bbmQNS bzctpr"
+          className="DisplayUnitValue__StyledHeading-kRatpm kFFTNg Heading__Heading-bbmQNS qIgcJ"
           color="primary"
         >
           0
         </h1>
         <p
-          className="DisplayUnitValue__StyledP-ceNPmY iawlaJ P__P-KJbCR kHKeHO"
+          className="DisplayUnitValue__StyledP-ceNPmY fMwzJn P__P-KJbCR hrSHif"
           color="grayBase"
         >
           ampere
@@ -1713,23 +1713,23 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
       </div>
     </div>
     <div
-      className="DataChannelCard__Footer-bXWvk khhGpj"
+      className="DataChannelCard__Footer-bXWvk fBxewK"
     >
       <h4
-        className="DataChannelCard__StyledHeading-cbvcvv keaHV Heading__Heading-bbmQNS bhpnUP"
+        className="DataChannelCard__StyledHeading-cbvcvv dkneLR Heading__Heading-bbmQNS kWVueV"
       >
         INTEGER_DISPLAY
       </h4>
       <small
-        className="DataChannelCard__StyledSmall-dXSgmU gQFsUf Small__Small-eZiBK gQBpAl"
+        className="DataChannelCard__StyledSmall-dXSgmU cKvBTw Small__Small-eZiBK hDqltl"
       >
         Last data point time : 2015-06-12 12:00
       </small>
       <hr
-        className="DataChannelCard__StyledHr-gbFDHt kdQbav Hr__StyledHr-cIXjSE dCevnQ"
+        className="DataChannelCard__StyledHr-gbFDHt jXstRk Hr__StyledHr-cIXjSE bErYaL"
       />
       <div
-        className="DataChannelCard__Description-coAkpt ZvWJu P__P-KJbCR huqyql"
+        className="DataChannelCard__Description-coAkpt fpChPl P__P-KJbCR dPUstJ"
       >
         <MockReactTextTruncate
           line={2}
@@ -1740,11 +1740,11 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
     </div>
   </div>
   <div
-    className="DataChannelCard__Wrapper-bHbgIQ iAWmbi Card__Card-cAIRri hUtceH"
+    className="DataChannelCard__Wrapper-bHbgIQ ecSBca Card__Card-cAIRri cFZqUx"
     data-width="half"
   >
     <div
-      className="DataChannelCard__Header-cPHliC hpyYem"
+      className="DataChannelCard__Header-cPHliC eSZaWn"
     >
       <a
         href=""
@@ -1753,19 +1753,19 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
       </a>
     </div>
     <div
-      className="DataChannelCard__Body-gCBkrW htKtEp"
+      className="DataChannelCard__Body-gCBkrW hYtwsQ"
     >
       <div
-        className="ControlNumber__Container-gmlYuy rzEmK"
+        className="ControlNumber__Container-gmlYuy dBXKqA"
       >
         <p
-          className="ControlNumber__Unixtype-hOgmLf cWpJIG P__P-KJbCR kHKeHO"
+          className="ControlNumber__Unixtype-hOgmLf iwcLfq P__P-KJbCR hrSHif"
           color="grayBase"
         >
           單位：ampere
         </p>
         <input
-          className="Input__Input-ixjKAz daZkvy"
+          className="Input__Input-ixjKAz dDXeoZ"
           kind="primary"
           onChange={[Function]}
           placeholder="Float only"
@@ -1773,14 +1773,14 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
           value=""
         />
         <div
-          className="ControlNumber__ButtonWrapper-iczkcP gmGCvf"
+          className="ControlNumber__ButtonWrapper-iczkcP iBHdKt"
         >
           <div
-            className="P__P-KJbCR huqyql"
+            className="P__P-KJbCR dPUstJ"
             onClick={[Function]}
           >
             <a
-              className="ButtonClear__StyledA-hPckxD cJqJoD A__A-cCPuKx fpwonb"
+              className="ButtonClear__StyledA-hPckxD gdbAWr A__A-cCPuKx eNMAVf"
               color="primary"
             >
               <svg
@@ -1798,7 +1798,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
             </a>
           </div>
           <button
-            className="Button__Button-jkHDFw hzHJoG"
+            className="Button__Button-jkHDFw fcrwCh"
             onClick={[Function]}
           >
             Ok
@@ -1807,23 +1807,23 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
       </div>
     </div>
     <div
-      className="DataChannelCard__Footer-bXWvk khhGpj"
+      className="DataChannelCard__Footer-bXWvk fBxewK"
     >
       <h4
-        className="DataChannelCard__StyledHeading-cbvcvv keaHV Heading__Heading-bbmQNS bhpnUP"
+        className="DataChannelCard__StyledHeading-cbvcvv dkneLR Heading__Heading-bbmQNS kWVueV"
       >
         FLOAT_CONTROL
       </h4>
       <small
-        className="DataChannelCard__StyledSmall-dXSgmU gQFsUf Small__Small-eZiBK gQBpAl"
+        className="DataChannelCard__StyledSmall-dXSgmU cKvBTw Small__Small-eZiBK hDqltl"
       >
         Last data point time : 2015-06-12 12:00
       </small>
       <hr
-        className="DataChannelCard__StyledHr-gbFDHt kdQbav Hr__StyledHr-cIXjSE dCevnQ"
+        className="DataChannelCard__StyledHr-gbFDHt jXstRk Hr__StyledHr-cIXjSE bErYaL"
       />
       <div
-        className="DataChannelCard__Description-coAkpt ZvWJu P__P-KJbCR huqyql"
+        className="DataChannelCard__Description-coAkpt fpChPl P__P-KJbCR dPUstJ"
       >
         <MockReactTextTruncate
           line={2}
@@ -1834,11 +1834,11 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
     </div>
   </div>
   <div
-    className="DataChannelCard__Wrapper-bHbgIQ iAWmbi Card__Card-cAIRri hUtceH"
+    className="DataChannelCard__Wrapper-bHbgIQ ecSBca Card__Card-cAIRri cFZqUx"
     data-width="half"
   >
     <div
-      className="DataChannelCard__Header-cPHliC hpyYem"
+      className="DataChannelCard__Header-cPHliC eSZaWn"
     >
       <a
         href=""
@@ -1847,19 +1847,19 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
       </a>
     </div>
     <div
-      className="DataChannelCard__Body-gCBkrW htKtEp"
+      className="DataChannelCard__Body-gCBkrW hYtwsQ"
     >
       <div
-        className="DisplayUnitValue__Container-fOKEIX dDKurw"
+        className="DisplayUnitValue__Container-fOKEIX ljDNj"
       >
         <h1
-          className="DisplayUnitValue__StyledHeading-kRatpm hdCZyr Heading__Heading-bbmQNS bzctpr"
+          className="DisplayUnitValue__StyledHeading-kRatpm kFFTNg Heading__Heading-bbmQNS qIgcJ"
           color="primary"
         >
           N/A
         </h1>
         <p
-          className="DisplayUnitValue__StyledP-ceNPmY iawlaJ P__P-KJbCR kHKeHO"
+          className="DisplayUnitValue__StyledP-ceNPmY fMwzJn P__P-KJbCR hrSHif"
           color="grayBase"
         >
           ampere
@@ -1867,23 +1867,23 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
       </div>
     </div>
     <div
-      className="DataChannelCard__Footer-bXWvk khhGpj"
+      className="DataChannelCard__Footer-bXWvk fBxewK"
     >
       <h4
-        className="DataChannelCard__StyledHeading-cbvcvv keaHV Heading__Heading-bbmQNS bhpnUP"
+        className="DataChannelCard__StyledHeading-cbvcvv dkneLR Heading__Heading-bbmQNS kWVueV"
       >
         FLOAT_DISPLAY
       </h4>
       <small
-        className="DataChannelCard__StyledSmall-dXSgmU gQFsUf Small__Small-eZiBK gQBpAl"
+        className="DataChannelCard__StyledSmall-dXSgmU cKvBTw Small__Small-eZiBK hDqltl"
       >
         Last data point time : 2015-06-12 12:00
       </small>
       <hr
-        className="DataChannelCard__StyledHr-gbFDHt kdQbav Hr__StyledHr-cIXjSE dCevnQ"
+        className="DataChannelCard__StyledHr-gbFDHt jXstRk Hr__StyledHr-cIXjSE bErYaL"
       />
       <div
-        className="DataChannelCard__Description-coAkpt ZvWJu P__P-KJbCR huqyql"
+        className="DataChannelCard__Description-coAkpt fpChPl P__P-KJbCR dPUstJ"
       >
         <MockReactTextTruncate
           line={2}
@@ -1894,11 +1894,11 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
     </div>
   </div>
   <div
-    className="DataChannelCard__Wrapper-bHbgIQ iAWmbi Card__Card-cAIRri hUtceH"
+    className="DataChannelCard__Wrapper-bHbgIQ ecSBca Card__Card-cAIRri cFZqUx"
     data-width="half"
   >
     <div
-      className="DataChannelCard__Header-cPHliC hpyYem"
+      className="DataChannelCard__Header-cPHliC eSZaWn"
     >
       <a
         href=""
@@ -1907,27 +1907,27 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
       </a>
     </div>
     <div
-      className="DataChannelCard__Body-gCBkrW htKtEp"
+      className="DataChannelCard__Body-gCBkrW hYtwsQ"
     >
       <div
-        className="ControlString__Container-gxvWtt eRKIhm"
+        className="ControlString__Container-gxvWtt fBhBEN"
       >
         <textarea
-          className="ControlString__StyledTextarea-jUHsJW krVxuY Textarea__Textarea-dEcNVt haEdAh"
+          className="ControlString__StyledTextarea-jUHsJW ccWikO Textarea__Textarea-dEcNVt WlyWE"
           kind="primary"
           onChange={[Function]}
           placeholder="String only"
           value="Any string type value."
         />
         <div
-          className="ControlString__ButtonWrapper-kaocaH fiUlWA"
+          className="ControlString__ButtonWrapper-kaocaH fOhLBP"
         >
           <div
-            className="P__P-KJbCR huqyql"
+            className="P__P-KJbCR dPUstJ"
             onClick={[Function]}
           >
             <a
-              className="ButtonClear__StyledA-hPckxD cJqJoD A__A-cCPuKx fpwonb"
+              className="ButtonClear__StyledA-hPckxD gdbAWr A__A-cCPuKx eNMAVf"
               color="primary"
             >
               <svg
@@ -1945,7 +1945,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
             </a>
           </div>
           <button
-            className="Button__Button-jkHDFw hzHJoG"
+            className="Button__Button-jkHDFw fcrwCh"
             onClick={[Function]}
           >
             Ok
@@ -1954,23 +1954,23 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
       </div>
     </div>
     <div
-      className="DataChannelCard__Footer-bXWvk khhGpj"
+      className="DataChannelCard__Footer-bXWvk fBxewK"
     >
       <h4
-        className="DataChannelCard__StyledHeading-cbvcvv keaHV Heading__Heading-bbmQNS bhpnUP"
+        className="DataChannelCard__StyledHeading-cbvcvv dkneLR Heading__Heading-bbmQNS kWVueV"
       >
         STRING_CONTROL
       </h4>
       <small
-        className="DataChannelCard__StyledSmall-dXSgmU gQFsUf Small__Small-eZiBK gQBpAl"
+        className="DataChannelCard__StyledSmall-dXSgmU cKvBTw Small__Small-eZiBK hDqltl"
       >
         Last data point time : 2015-06-12 12:00
       </small>
       <hr
-        className="DataChannelCard__StyledHr-gbFDHt kdQbav Hr__StyledHr-cIXjSE dCevnQ"
+        className="DataChannelCard__StyledHr-gbFDHt jXstRk Hr__StyledHr-cIXjSE bErYaL"
       />
       <div
-        className="DataChannelCard__Description-coAkpt ZvWJu P__P-KJbCR huqyql"
+        className="DataChannelCard__Description-coAkpt fpChPl P__P-KJbCR dPUstJ"
       >
         <MockReactTextTruncate
           line={2}
@@ -1981,11 +1981,11 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
     </div>
   </div>
   <div
-    className="DataChannelCard__Wrapper-bHbgIQ iAWmbi Card__Card-cAIRri hUtceH"
+    className="DataChannelCard__Wrapper-bHbgIQ ecSBca Card__Card-cAIRri cFZqUx"
     data-width="half"
   >
     <div
-      className="DataChannelCard__Header-cPHliC hpyYem"
+      className="DataChannelCard__Header-cPHliC eSZaWn"
     >
       <a
         href=""
@@ -1994,13 +1994,13 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
       </a>
     </div>
     <div
-      className="DataChannelCard__Body-gCBkrW htKtEp"
+      className="DataChannelCard__Body-gCBkrW hYtwsQ"
     >
       <div
-        className="DisplayString__Container-gMiSmM eaLFWz"
+        className="DisplayString__Container-gMiSmM kPtUam"
       >
         <textarea
-          className="DisplayString__StyledTextarea-iHUBEj eYiCLJ Textarea__Textarea-dEcNVt haEdAh"
+          className="DisplayString__StyledTextarea-iHUBEj gKioTS Textarea__Textarea-dEcNVt WlyWE"
           disabled={true}
           kind="primary"
           placeholder="String only"
@@ -2009,23 +2009,23 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
       </div>
     </div>
     <div
-      className="DataChannelCard__Footer-bXWvk khhGpj"
+      className="DataChannelCard__Footer-bXWvk fBxewK"
     >
       <h4
-        className="DataChannelCard__StyledHeading-cbvcvv keaHV Heading__Heading-bbmQNS bhpnUP"
+        className="DataChannelCard__StyledHeading-cbvcvv dkneLR Heading__Heading-bbmQNS kWVueV"
       >
         STRING_DISPLAY
       </h4>
       <small
-        className="DataChannelCard__StyledSmall-dXSgmU gQFsUf Small__Small-eZiBK gQBpAl"
+        className="DataChannelCard__StyledSmall-dXSgmU cKvBTw Small__Small-eZiBK hDqltl"
       >
         Last data point time : 2015-06-12 12:00
       </small>
       <hr
-        className="DataChannelCard__StyledHr-gbFDHt kdQbav Hr__StyledHr-cIXjSE dCevnQ"
+        className="DataChannelCard__StyledHr-gbFDHt jXstRk Hr__StyledHr-cIXjSE bErYaL"
       />
       <div
-        className="DataChannelCard__Description-coAkpt ZvWJu P__P-KJbCR huqyql"
+        className="DataChannelCard__Description-coAkpt fpChPl P__P-KJbCR dPUstJ"
       >
         <MockReactTextTruncate
           line={2}
@@ -2036,11 +2036,11 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
     </div>
   </div>
   <div
-    className="DataChannelCard__Wrapper-bHbgIQ iAWmbi Card__Card-cAIRri hUtceH"
+    className="DataChannelCard__Wrapper-bHbgIQ ecSBca Card__Card-cAIRri cFZqUx"
     data-width="half"
   >
     <div
-      className="DataChannelCard__Header-cPHliC hpyYem"
+      className="DataChannelCard__Header-cPHliC eSZaWn"
     >
       <a
         href=""
@@ -2049,27 +2049,27 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
       </a>
     </div>
     <div
-      className="DataChannelCard__Body-gCBkrW htKtEp"
+      className="DataChannelCard__Body-gCBkrW hYtwsQ"
     >
       <div
-        className="ControlString__Container-gxvWtt eRKIhm"
+        className="ControlString__Container-gxvWtt fBhBEN"
       >
         <textarea
-          className="ControlString__StyledTextarea-jUHsJW krVxuY Textarea__Textarea-dEcNVt haEdAh"
+          className="ControlString__StyledTextarea-jUHsJW ccWikO Textarea__Textarea-dEcNVt WlyWE"
           kind="primary"
           onChange={[Function]}
           placeholder="Hex only"
           value="ABF123"
         />
         <div
-          className="ControlString__ButtonWrapper-kaocaH fiUlWA"
+          className="ControlString__ButtonWrapper-kaocaH fOhLBP"
         >
           <div
-            className="P__P-KJbCR huqyql"
+            className="P__P-KJbCR dPUstJ"
             onClick={[Function]}
           >
             <a
-              className="ButtonClear__StyledA-hPckxD cJqJoD A__A-cCPuKx fpwonb"
+              className="ButtonClear__StyledA-hPckxD gdbAWr A__A-cCPuKx eNMAVf"
               color="primary"
             >
               <svg
@@ -2087,7 +2087,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
             </a>
           </div>
           <button
-            className="Button__Button-jkHDFw hzHJoG"
+            className="Button__Button-jkHDFw fcrwCh"
             onClick={[Function]}
           >
             Ok
@@ -2096,23 +2096,23 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
       </div>
     </div>
     <div
-      className="DataChannelCard__Footer-bXWvk khhGpj"
+      className="DataChannelCard__Footer-bXWvk fBxewK"
     >
       <h4
-        className="DataChannelCard__StyledHeading-cbvcvv keaHV Heading__Heading-bbmQNS bhpnUP"
+        className="DataChannelCard__StyledHeading-cbvcvv dkneLR Heading__Heading-bbmQNS kWVueV"
       >
         HEX_CONTROL
       </h4>
       <small
-        className="DataChannelCard__StyledSmall-dXSgmU gQFsUf Small__Small-eZiBK gQBpAl"
+        className="DataChannelCard__StyledSmall-dXSgmU cKvBTw Small__Small-eZiBK hDqltl"
       >
         Last data point time : 2015-06-12 12:00
       </small>
       <hr
-        className="DataChannelCard__StyledHr-gbFDHt kdQbav Hr__StyledHr-cIXjSE dCevnQ"
+        className="DataChannelCard__StyledHr-gbFDHt jXstRk Hr__StyledHr-cIXjSE bErYaL"
       />
       <div
-        className="DataChannelCard__Description-coAkpt ZvWJu P__P-KJbCR huqyql"
+        className="DataChannelCard__Description-coAkpt fpChPl P__P-KJbCR dPUstJ"
       >
         <MockReactTextTruncate
           line={2}
@@ -2123,11 +2123,11 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
     </div>
   </div>
   <div
-    className="DataChannelCard__Wrapper-bHbgIQ iAWmbi Card__Card-cAIRri hUtceH"
+    className="DataChannelCard__Wrapper-bHbgIQ ecSBca Card__Card-cAIRri cFZqUx"
     data-width="half"
   >
     <div
-      className="DataChannelCard__Header-cPHliC hpyYem"
+      className="DataChannelCard__Header-cPHliC eSZaWn"
     >
       <a
         href=""
@@ -2136,13 +2136,13 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
       </a>
     </div>
     <div
-      className="DataChannelCard__Body-gCBkrW htKtEp"
+      className="DataChannelCard__Body-gCBkrW hYtwsQ"
     >
       <div
-        className="DisplayString__Container-gMiSmM eaLFWz"
+        className="DisplayString__Container-gMiSmM kPtUam"
       >
         <textarea
-          className="DisplayString__StyledTextarea-iHUBEj eYiCLJ Textarea__Textarea-dEcNVt haEdAh"
+          className="DisplayString__StyledTextarea-iHUBEj gKioTS Textarea__Textarea-dEcNVt WlyWE"
           disabled={true}
           kind="primary"
           placeholder="Hex only"
@@ -2151,23 +2151,23 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
       </div>
     </div>
     <div
-      className="DataChannelCard__Footer-bXWvk khhGpj"
+      className="DataChannelCard__Footer-bXWvk fBxewK"
     >
       <h4
-        className="DataChannelCard__StyledHeading-cbvcvv keaHV Heading__Heading-bbmQNS bhpnUP"
+        className="DataChannelCard__StyledHeading-cbvcvv dkneLR Heading__Heading-bbmQNS kWVueV"
       >
         HEX_DISPLAY
       </h4>
       <small
-        className="DataChannelCard__StyledSmall-dXSgmU gQFsUf Small__Small-eZiBK gQBpAl"
+        className="DataChannelCard__StyledSmall-dXSgmU cKvBTw Small__Small-eZiBK hDqltl"
       >
         Last data point time : 2015-06-12 12:00
       </small>
       <hr
-        className="DataChannelCard__StyledHr-gbFDHt kdQbav Hr__StyledHr-cIXjSE dCevnQ"
+        className="DataChannelCard__StyledHr-gbFDHt jXstRk Hr__StyledHr-cIXjSE bErYaL"
       />
       <div
-        className="DataChannelCard__Description-coAkpt ZvWJu P__P-KJbCR huqyql"
+        className="DataChannelCard__Description-coAkpt fpChPl P__P-KJbCR dPUstJ"
       >
         <MockReactTextTruncate
           line={2}
@@ -2178,11 +2178,11 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
     </div>
   </div>
   <div
-    className="DataChannelCard__Wrapper-bHbgIQ iAWmbi Card__Card-cAIRri hUtceH"
+    className="DataChannelCard__Wrapper-bHbgIQ ecSBca Card__Card-cAIRri cFZqUx"
     data-width="half"
   >
     <div
-      className="DataChannelCard__Header-cPHliC hpyYem"
+      className="DataChannelCard__Header-cPHliC eSZaWn"
     >
       <a
         href=""
@@ -2191,33 +2191,33 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
       </a>
     </div>
     <div
-      className="DataChannelCard__Body-gCBkrW htKtEp"
+      className="DataChannelCard__Body-gCBkrW hYtwsQ"
     >
       <div
         checked={true}
-        className="Switch__Switch-iwxo ifDnsZ"
+        className="Switch__Switch-iwxo ipuZOX"
         kind="success"
         onClick={[Function]}
       />
     </div>
     <div
-      className="DataChannelCard__Footer-bXWvk khhGpj"
+      className="DataChannelCard__Footer-bXWvk fBxewK"
     >
       <h4
-        className="DataChannelCard__StyledHeading-cbvcvv keaHV Heading__Heading-bbmQNS bhpnUP"
+        className="DataChannelCard__StyledHeading-cbvcvv dkneLR Heading__Heading-bbmQNS kWVueV"
       >
         SWITCH_CONTROL
       </h4>
       <small
-        className="DataChannelCard__StyledSmall-dXSgmU gQFsUf Small__Small-eZiBK gQBpAl"
+        className="DataChannelCard__StyledSmall-dXSgmU cKvBTw Small__Small-eZiBK hDqltl"
       >
         Last data point time : 2015-06-12 12:00
       </small>
       <hr
-        className="DataChannelCard__StyledHr-gbFDHt kdQbav Hr__StyledHr-cIXjSE dCevnQ"
+        className="DataChannelCard__StyledHr-gbFDHt jXstRk Hr__StyledHr-cIXjSE bErYaL"
       />
       <div
-        className="DataChannelCard__Description-coAkpt ZvWJu P__P-KJbCR huqyql"
+        className="DataChannelCard__Description-coAkpt fpChPl P__P-KJbCR dPUstJ"
       >
         <MockReactTextTruncate
           line={2}
@@ -2228,11 +2228,11 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
     </div>
   </div>
   <div
-    className="DataChannelCard__Wrapper-bHbgIQ iAWmbi Card__Card-cAIRri hUtceH"
+    className="DataChannelCard__Wrapper-bHbgIQ ecSBca Card__Card-cAIRri cFZqUx"
     data-width="half"
   >
     <div
-      className="DataChannelCard__Header-cPHliC hpyYem"
+      className="DataChannelCard__Header-cPHliC eSZaWn"
     >
       <a
         href=""
@@ -2241,23 +2241,23 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
       </a>
     </div>
     <div
-      className="DataChannelCard__Body-gCBkrW htKtEp"
+      className="DataChannelCard__Body-gCBkrW hYtwsQ"
     >
       <div
-        className="DisplayStatus__Container-jrDlkR DzKAF"
+        className="DisplayStatus__Container-jrDlkR HMqwb"
       >
         <div
-          className="DisplayStatus__ItemWrapper-edfiVv eBhrYw"
+          className="DisplayStatus__ItemWrapper-edfiVv gOPCZe"
         >
           <p
-            className="P__P-KJbCR kHKeHO"
+            className="P__P-KJbCR hrSHif"
             color="grayBase"
           >
             OFF
           </p>
           <div>
             <svg
-              className="StatusLight__Svg-IVkxE geyPxt"
+              className="StatusLight__Svg-IVkxE efztEk"
               color="success"
               viewBox="0 0 20 20"
             >
@@ -2270,17 +2270,17 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
           </div>
         </div>
         <div
-          className="DisplayStatus__ItemWrapper-edfiVv eBhrYw"
+          className="DisplayStatus__ItemWrapper-edfiVv gOPCZe"
         >
           <p
-            className="P__P-KJbCR kHKeHO"
+            className="P__P-KJbCR hrSHif"
             color="grayBase"
           >
             ON
           </p>
           <div>
             <svg
-              className="StatusLight__Svg-IVkxE heGIpa"
+              className="StatusLight__Svg-IVkxE gOaNbK"
               color="grayDark"
               viewBox="0 0 20 20"
             >
@@ -2295,23 +2295,23 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
       </div>
     </div>
     <div
-      className="DataChannelCard__Footer-bXWvk khhGpj"
+      className="DataChannelCard__Footer-bXWvk fBxewK"
     >
       <h4
-        className="DataChannelCard__StyledHeading-cbvcvv keaHV Heading__Heading-bbmQNS bhpnUP"
+        className="DataChannelCard__StyledHeading-cbvcvv dkneLR Heading__Heading-bbmQNS kWVueV"
       >
         SWITCH_DISPLAY
       </h4>
       <small
-        className="DataChannelCard__StyledSmall-dXSgmU gQFsUf Small__Small-eZiBK gQBpAl"
+        className="DataChannelCard__StyledSmall-dXSgmU cKvBTw Small__Small-eZiBK hDqltl"
       >
         Last data point time : 2015-06-12 12:00
       </small>
       <hr
-        className="DataChannelCard__StyledHr-gbFDHt kdQbav Hr__StyledHr-cIXjSE dCevnQ"
+        className="DataChannelCard__StyledHr-gbFDHt jXstRk Hr__StyledHr-cIXjSE bErYaL"
       />
       <div
-        className="DataChannelCard__Description-coAkpt ZvWJu P__P-KJbCR huqyql"
+        className="DataChannelCard__Description-coAkpt fpChPl P__P-KJbCR dPUstJ"
       >
         <MockReactTextTruncate
           line={2}
@@ -2322,11 +2322,11 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
     </div>
   </div>
   <div
-    className="DataChannelCard__Wrapper-bHbgIQ iAWmbi Card__Card-cAIRri hUtceH"
+    className="DataChannelCard__Wrapper-bHbgIQ ecSBca Card__Card-cAIRri cFZqUx"
     data-width="half"
   >
     <div
-      className="DataChannelCard__Header-cPHliC hpyYem"
+      className="DataChannelCard__Header-cPHliC eSZaWn"
     >
       <a
         href=""
@@ -2335,29 +2335,29 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
       </a>
     </div>
     <div
-      className="DataChannelCard__Body-gCBkrW htKtEp"
+      className="DataChannelCard__Body-gCBkrW hYtwsQ"
     >
       <div
-        className="ControlRange__Container-ispxkc kkVGKq"
+        className="ControlRange__Container-ispxkc kQpIsI"
       >
         <div
-          className="ControlRange__LabelWrapper-hpKjGx kKFCvQ"
+          className="ControlRange__LabelWrapper-hpKjGx bfHWDZ"
         >
           <div
-            className="ControlRange__LabelItem-kiIalK idIiax"
+            className="ControlRange__LabelItem-kiIalK dulPtE"
           >
             <p
-              className="P__P-KJbCR kHKeHO"
+              className="P__P-KJbCR hrSHif"
               color="grayBase"
             >
               k1
             </p>
           </div>
           <div
-            className="ControlRange__LabelItem-kiIalK idIiax"
+            className="ControlRange__LabelItem-kiIalK dulPtE"
           >
             <p
-              className="P__P-KJbCR kHKeHO"
+              className="P__P-KJbCR hrSHif"
               color="grayBase"
             >
               k2
@@ -2365,22 +2365,22 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
           </div>
         </div>
         <div
-          className="ControlRange__InputWrapper-fklkwO dVxsgp"
+          className="ControlRange__InputWrapper-fklkwO fpvHuS"
         >
           <div
-            className="ControlRange__ValueWrapper-jxMKxr lkxWna P__P-KJbCR kHKeHO"
+            className="ControlRange__ValueWrapper-jxMKxr kFWjXk P__P-KJbCR hrSHif"
             color="grayBase"
           >
             Current value: 
             <p
-              className="ControlRange__Value-kXycxr cJYxpn P__P-KJbCR dnAaPu"
+              className="ControlRange__Value-kXycxr glmUBq P__P-KJbCR jEbbdW"
               color="primary"
             >
               v2
             </p>
           </div>
           <input
-            className="InputRange__InputRange-uGAsR iOVoet"
+            className="InputRange__InputRange-uGAsR lghldr"
             kind="primary"
             max={1}
             min={0}
@@ -2395,23 +2395,23 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
       </div>
     </div>
     <div
-      className="DataChannelCard__Footer-bXWvk khhGpj"
+      className="DataChannelCard__Footer-bXWvk fBxewK"
     >
       <h4
-        className="DataChannelCard__StyledHeading-cbvcvv keaHV Heading__Heading-bbmQNS bhpnUP"
+        className="DataChannelCard__StyledHeading-cbvcvv dkneLR Heading__Heading-bbmQNS kWVueV"
       >
         CATEGORY_CONTROL
       </h4>
       <small
-        className="DataChannelCard__StyledSmall-dXSgmU gQFsUf Small__Small-eZiBK gQBpAl"
+        className="DataChannelCard__StyledSmall-dXSgmU cKvBTw Small__Small-eZiBK hDqltl"
       >
         Last data point time : 2015-06-12 12:00
       </small>
       <hr
-        className="DataChannelCard__StyledHr-gbFDHt kdQbav Hr__StyledHr-cIXjSE dCevnQ"
+        className="DataChannelCard__StyledHr-gbFDHt jXstRk Hr__StyledHr-cIXjSE bErYaL"
       />
       <div
-        className="DataChannelCard__Description-coAkpt ZvWJu P__P-KJbCR huqyql"
+        className="DataChannelCard__Description-coAkpt fpChPl P__P-KJbCR dPUstJ"
       >
         <MockReactTextTruncate
           line={2}
@@ -2422,11 +2422,11 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
     </div>
   </div>
   <div
-    className="DataChannelCard__Wrapper-bHbgIQ iAWmbi Card__Card-cAIRri hUtceH"
+    className="DataChannelCard__Wrapper-bHbgIQ ecSBca Card__Card-cAIRri cFZqUx"
     data-width="half"
   >
     <div
-      className="DataChannelCard__Header-cPHliC hpyYem"
+      className="DataChannelCard__Header-cPHliC eSZaWn"
     >
       <a
         href=""
@@ -2435,23 +2435,23 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
       </a>
     </div>
     <div
-      className="DataChannelCard__Body-gCBkrW htKtEp"
+      className="DataChannelCard__Body-gCBkrW hYtwsQ"
     >
       <div
-        className="DisplayStatus__Container-jrDlkR DzKAF"
+        className="DisplayStatus__Container-jrDlkR HMqwb"
       >
         <div
-          className="DisplayStatus__ItemWrapper-edfiVv eBhrYw"
+          className="DisplayStatus__ItemWrapper-edfiVv gOPCZe"
         >
           <p
-            className="P__P-KJbCR kHKeHO"
+            className="P__P-KJbCR hrSHif"
             color="grayBase"
           >
             k1
           </p>
           <div>
             <svg
-              className="StatusLight__Svg-IVkxE heGIpa"
+              className="StatusLight__Svg-IVkxE gOaNbK"
               color="grayDark"
               viewBox="0 0 20 20"
             >
@@ -2464,17 +2464,17 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
           </div>
         </div>
         <div
-          className="DisplayStatus__ItemWrapper-edfiVv eBhrYw"
+          className="DisplayStatus__ItemWrapper-edfiVv gOPCZe"
         >
           <p
-            className="P__P-KJbCR kHKeHO"
+            className="P__P-KJbCR hrSHif"
             color="grayBase"
           >
             k2
           </p>
           <div>
             <svg
-              className="StatusLight__Svg-IVkxE geyPxt"
+              className="StatusLight__Svg-IVkxE efztEk"
               color="success"
               viewBox="0 0 20 20"
             >
@@ -2487,17 +2487,17 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
           </div>
         </div>
         <div
-          className="DisplayStatus__ItemWrapper-edfiVv eBhrYw"
+          className="DisplayStatus__ItemWrapper-edfiVv gOPCZe"
         >
           <p
-            className="P__P-KJbCR kHKeHO"
+            className="P__P-KJbCR hrSHif"
             color="grayBase"
           >
             k3
           </p>
           <div>
             <svg
-              className="StatusLight__Svg-IVkxE heGIpa"
+              className="StatusLight__Svg-IVkxE gOaNbK"
               color="grayDark"
               viewBox="0 0 20 20"
             >
@@ -2510,17 +2510,17 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
           </div>
         </div>
         <div
-          className="DisplayStatus__ItemWrapper-edfiVv eBhrYw"
+          className="DisplayStatus__ItemWrapper-edfiVv gOPCZe"
         >
           <p
-            className="P__P-KJbCR kHKeHO"
+            className="P__P-KJbCR hrSHif"
             color="grayBase"
           >
             k4
           </p>
           <div>
             <svg
-              className="StatusLight__Svg-IVkxE heGIpa"
+              className="StatusLight__Svg-IVkxE gOaNbK"
               color="grayDark"
               viewBox="0 0 20 20"
             >
@@ -2533,17 +2533,17 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
           </div>
         </div>
         <div
-          className="DisplayStatus__ItemWrapper-edfiVv eBhrYw"
+          className="DisplayStatus__ItemWrapper-edfiVv gOPCZe"
         >
           <p
-            className="P__P-KJbCR kHKeHO"
+            className="P__P-KJbCR hrSHif"
             color="grayBase"
           >
             k5
           </p>
           <div>
             <svg
-              className="StatusLight__Svg-IVkxE heGIpa"
+              className="StatusLight__Svg-IVkxE gOaNbK"
               color="grayDark"
               viewBox="0 0 20 20"
             >
@@ -2558,23 +2558,23 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
       </div>
     </div>
     <div
-      className="DataChannelCard__Footer-bXWvk khhGpj"
+      className="DataChannelCard__Footer-bXWvk fBxewK"
     >
       <h4
-        className="DataChannelCard__StyledHeading-cbvcvv keaHV Heading__Heading-bbmQNS bhpnUP"
+        className="DataChannelCard__StyledHeading-cbvcvv dkneLR Heading__Heading-bbmQNS kWVueV"
       >
         CATEGORY_DISPLAY
       </h4>
       <small
-        className="DataChannelCard__StyledSmall-dXSgmU gQFsUf Small__Small-eZiBK gQBpAl"
+        className="DataChannelCard__StyledSmall-dXSgmU cKvBTw Small__Small-eZiBK hDqltl"
       >
         Last data point time : 2015-06-12 12:00
       </small>
       <hr
-        className="DataChannelCard__StyledHr-gbFDHt kdQbav Hr__StyledHr-cIXjSE dCevnQ"
+        className="DataChannelCard__StyledHr-gbFDHt jXstRk Hr__StyledHr-cIXjSE bErYaL"
       />
       <div
-        className="DataChannelCard__Description-coAkpt ZvWJu P__P-KJbCR huqyql"
+        className="DataChannelCard__Description-coAkpt fpChPl P__P-KJbCR dPUstJ"
       >
         <MockReactTextTruncate
           line={2}
@@ -2585,11 +2585,11 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
     </div>
   </div>
   <div
-    className="DataChannelCard__Wrapper-bHbgIQ iAWmbi Card__Card-cAIRri hUtceH"
+    className="DataChannelCard__Wrapper-bHbgIQ ecSBca Card__Card-cAIRri cFZqUx"
     data-width="half"
   >
     <div
-      className="DataChannelCard__Header-cPHliC hpyYem"
+      className="DataChannelCard__Header-cPHliC eSZaWn"
     >
       <a
         href=""
@@ -2598,29 +2598,29 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
       </a>
     </div>
     <div
-      className="DataChannelCard__Body-gCBkrW htKtEp"
+      className="DataChannelCard__Body-gCBkrW hYtwsQ"
     >
       <div
-        className="ControlRange__Container-ispxkc kkVGKq"
+        className="ControlRange__Container-ispxkc kQpIsI"
       >
         <div
-          className="ControlRange__LabelWrapper-hpKjGx kKFCvQ"
+          className="ControlRange__LabelWrapper-hpKjGx bfHWDZ"
         >
           <div
-            className="ControlRange__LabelItem-kiIalK idIiax"
+            className="ControlRange__LabelItem-kiIalK dulPtE"
           >
             <p
-              className="P__P-KJbCR kHKeHO"
+              className="P__P-KJbCR hrSHif"
               color="grayBase"
             >
               Low
             </p>
           </div>
           <div
-            className="ControlRange__LabelItem-kiIalK idIiax"
+            className="ControlRange__LabelItem-kiIalK dulPtE"
           >
             <p
-              className="P__P-KJbCR kHKeHO"
+              className="P__P-KJbCR hrSHif"
               color="grayBase"
             >
               High
@@ -2628,22 +2628,22 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
           </div>
         </div>
         <div
-          className="ControlRange__InputWrapper-fklkwO dVxsgp"
+          className="ControlRange__InputWrapper-fklkwO fpvHuS"
         >
           <div
-            className="ControlRange__ValueWrapper-jxMKxr lkxWna P__P-KJbCR kHKeHO"
+            className="ControlRange__ValueWrapper-jxMKxr kFWjXk P__P-KJbCR hrSHif"
             color="grayBase"
           >
             Current value: 
             <p
-              className="ControlRange__Value-kXycxr cJYxpn P__P-KJbCR dnAaPu"
+              className="ControlRange__Value-kXycxr glmUBq P__P-KJbCR jEbbdW"
               color="primary"
             >
               High
             </p>
           </div>
           <input
-            className="InputRange__InputRange-uGAsR iOVoet"
+            className="InputRange__InputRange-uGAsR lghldr"
             kind="primary"
             max={1}
             min={0}
@@ -2658,23 +2658,23 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
       </div>
     </div>
     <div
-      className="DataChannelCard__Footer-bXWvk khhGpj"
+      className="DataChannelCard__Footer-bXWvk fBxewK"
     >
       <h4
-        className="DataChannelCard__StyledHeading-cbvcvv keaHV Heading__Heading-bbmQNS bhpnUP"
+        className="DataChannelCard__StyledHeading-cbvcvv dkneLR Heading__Heading-bbmQNS kWVueV"
       >
         GPIO_CONTROL
       </h4>
       <small
-        className="DataChannelCard__StyledSmall-dXSgmU gQFsUf Small__Small-eZiBK gQBpAl"
+        className="DataChannelCard__StyledSmall-dXSgmU cKvBTw Small__Small-eZiBK hDqltl"
       >
         Last data point time : 2015-06-12 12:00
       </small>
       <hr
-        className="DataChannelCard__StyledHr-gbFDHt kdQbav Hr__StyledHr-cIXjSE dCevnQ"
+        className="DataChannelCard__StyledHr-gbFDHt jXstRk Hr__StyledHr-cIXjSE bErYaL"
       />
       <div
-        className="DataChannelCard__Description-coAkpt ZvWJu P__P-KJbCR huqyql"
+        className="DataChannelCard__Description-coAkpt fpChPl P__P-KJbCR dPUstJ"
       >
         <MockReactTextTruncate
           line={2}
@@ -2685,11 +2685,11 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
     </div>
   </div>
   <div
-    className="DataChannelCard__Wrapper-bHbgIQ iAWmbi Card__Card-cAIRri hUtceH"
+    className="DataChannelCard__Wrapper-bHbgIQ ecSBca Card__Card-cAIRri cFZqUx"
     data-width="half"
   >
     <div
-      className="DataChannelCard__Header-cPHliC hpyYem"
+      className="DataChannelCard__Header-cPHliC eSZaWn"
     >
       <a
         href=""
@@ -2698,23 +2698,23 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
       </a>
     </div>
     <div
-      className="DataChannelCard__Body-gCBkrW htKtEp"
+      className="DataChannelCard__Body-gCBkrW hYtwsQ"
     >
       <div
-        className="DisplayStatus__Container-jrDlkR DzKAF"
+        className="DisplayStatus__Container-jrDlkR HMqwb"
       >
         <div
-          className="DisplayStatus__ItemWrapper-edfiVv eBhrYw"
+          className="DisplayStatus__ItemWrapper-edfiVv gOPCZe"
         >
           <p
-            className="P__P-KJbCR kHKeHO"
+            className="P__P-KJbCR hrSHif"
             color="grayBase"
           >
             Low
           </p>
           <div>
             <svg
-              className="StatusLight__Svg-IVkxE geyPxt"
+              className="StatusLight__Svg-IVkxE efztEk"
               color="success"
               viewBox="0 0 20 20"
             >
@@ -2727,17 +2727,17 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
           </div>
         </div>
         <div
-          className="DisplayStatus__ItemWrapper-edfiVv eBhrYw"
+          className="DisplayStatus__ItemWrapper-edfiVv gOPCZe"
         >
           <p
-            className="P__P-KJbCR kHKeHO"
+            className="P__P-KJbCR hrSHif"
             color="grayBase"
           >
             High
           </p>
           <div>
             <svg
-              className="StatusLight__Svg-IVkxE heGIpa"
+              className="StatusLight__Svg-IVkxE gOaNbK"
               color="grayDark"
               viewBox="0 0 20 20"
             >
@@ -2752,23 +2752,23 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
       </div>
     </div>
     <div
-      className="DataChannelCard__Footer-bXWvk khhGpj"
+      className="DataChannelCard__Footer-bXWvk fBxewK"
     >
       <h4
-        className="DataChannelCard__StyledHeading-cbvcvv keaHV Heading__Heading-bbmQNS bhpnUP"
+        className="DataChannelCard__StyledHeading-cbvcvv dkneLR Heading__Heading-bbmQNS kWVueV"
       >
         GPIO_DISPLAY
       </h4>
       <small
-        className="DataChannelCard__StyledSmall-dXSgmU gQFsUf Small__Small-eZiBK gQBpAl"
+        className="DataChannelCard__StyledSmall-dXSgmU cKvBTw Small__Small-eZiBK hDqltl"
       >
         Last data point time : 2015-06-12 12:00
       </small>
       <hr
-        className="DataChannelCard__StyledHr-gbFDHt kdQbav Hr__StyledHr-cIXjSE dCevnQ"
+        className="DataChannelCard__StyledHr-gbFDHt jXstRk Hr__StyledHr-cIXjSE bErYaL"
       />
       <div
-        className="DataChannelCard__Description-coAkpt ZvWJu P__P-KJbCR huqyql"
+        className="DataChannelCard__Description-coAkpt fpChPl P__P-KJbCR dPUstJ"
       >
         <MockReactTextTruncate
           line={2}
@@ -2779,11 +2779,11 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
     </div>
   </div>
   <div
-    className="DataChannelCard__Wrapper-bHbgIQ iAWmbi Card__Card-cAIRri hUtceH"
+    className="DataChannelCard__Wrapper-bHbgIQ ecSBca Card__Card-cAIRri cFZqUx"
     data-width="half"
   >
     <div
-      className="DataChannelCard__Header-cPHliC hpyYem"
+      className="DataChannelCard__Header-cPHliC eSZaWn"
     >
       <a
         href=""
@@ -2792,29 +2792,29 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
       </a>
     </div>
     <div
-      className="DataChannelCard__Body-gCBkrW htKtEp"
+      className="DataChannelCard__Body-gCBkrW hYtwsQ"
     >
       <div
-        className="ControlRange__Container-ispxkc kkVGKq"
+        className="ControlRange__Container-ispxkc kQpIsI"
       >
         <div
-          className="ControlRange__LabelWrapper-hpKjGx kKFCvQ"
+          className="ControlRange__LabelWrapper-hpKjGx bfHWDZ"
         >
           <div
-            className="ControlRange__LabelItem-kiIalK idIiax"
+            className="ControlRange__LabelItem-kiIalK dulPtE"
           >
             <div
-              className="P__P-KJbCR kHKeHO"
+              className="P__P-KJbCR hrSHif"
               color="grayBase"
             >
               1
             </div>
           </div>
           <div
-            className="ControlRange__LabelItem-kiIalK idIiax"
+            className="ControlRange__LabelItem-kiIalK dulPtE"
           >
             <div
-              className="P__P-KJbCR kHKeHO"
+              className="P__P-KJbCR hrSHif"
               color="grayBase"
             >
               100
@@ -2822,22 +2822,22 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
           </div>
         </div>
         <div
-          className="ControlRange__InputWrapper-fklkwO dVxsgp"
+          className="ControlRange__InputWrapper-fklkwO fpvHuS"
         >
           <div
-            className="ControlRange__ValueWrapper-jxMKxr lkxWna P__P-KJbCR kHKeHO"
+            className="ControlRange__ValueWrapper-jxMKxr kFWjXk P__P-KJbCR hrSHif"
             color="grayBase"
           >
             Current value: 
             <div
-              className="ControlRange__Value-kXycxr cJYxpn P__P-KJbCR dnAaPu"
+              className="ControlRange__Value-kXycxr glmUBq P__P-KJbCR jEbbdW"
               color="primary"
             >
               23
             </div>
           </div>
           <input
-            className="InputRange__InputRange-uGAsR iOVoet"
+            className="InputRange__InputRange-uGAsR lghldr"
             kind="primary"
             max={100}
             min={1}
@@ -2852,23 +2852,23 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
       </div>
     </div>
     <div
-      className="DataChannelCard__Footer-bXWvk khhGpj"
+      className="DataChannelCard__Footer-bXWvk fBxewK"
     >
       <h4
-        className="DataChannelCard__StyledHeading-cbvcvv keaHV Heading__Heading-bbmQNS bhpnUP"
+        className="DataChannelCard__StyledHeading-cbvcvv dkneLR Heading__Heading-bbmQNS kWVueV"
       >
         ANALOG_CONTROL
       </h4>
       <small
-        className="DataChannelCard__StyledSmall-dXSgmU gQFsUf Small__Small-eZiBK gQBpAl"
+        className="DataChannelCard__StyledSmall-dXSgmU cKvBTw Small__Small-eZiBK hDqltl"
       >
         Last data point time : 2015-06-12 12:00
       </small>
       <hr
-        className="DataChannelCard__StyledHr-gbFDHt kdQbav Hr__StyledHr-cIXjSE dCevnQ"
+        className="DataChannelCard__StyledHr-gbFDHt jXstRk Hr__StyledHr-cIXjSE bErYaL"
       />
       <div
-        className="DataChannelCard__Description-coAkpt ZvWJu P__P-KJbCR huqyql"
+        className="DataChannelCard__Description-coAkpt fpChPl P__P-KJbCR dPUstJ"
       >
         <MockReactTextTruncate
           line={2}
@@ -2879,11 +2879,11 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
     </div>
   </div>
   <div
-    className="DataChannelCard__Wrapper-bHbgIQ iAWmbi Card__Card-cAIRri hUtceH"
+    className="DataChannelCard__Wrapper-bHbgIQ ecSBca Card__Card-cAIRri cFZqUx"
     data-width="half"
   >
     <div
-      className="DataChannelCard__Header-cPHliC hpyYem"
+      className="DataChannelCard__Header-cPHliC eSZaWn"
     >
       <a
         href=""
@@ -2892,20 +2892,20 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
       </a>
     </div>
     <div
-      className="DataChannelCard__Body-gCBkrW htKtEp"
+      className="DataChannelCard__Body-gCBkrW hYtwsQ"
     >
       <div
-        className="DisplayMultipleValue__Container-emGSTk jhztvc"
+        className="DisplayMultipleValue__Container-emGSTk bcIInJ"
       >
         <div>
           <p
-            className="P__P-KJbCR kHKeHO"
+            className="P__P-KJbCR hrSHif"
             color="grayBase"
           >
             Value
           </p>
           <h1
-            className="DisplayMultipleValue__StyledHeading-fVnwQZ fMCDyR Heading__Heading-bbmQNS bzctpr"
+            className="DisplayMultipleValue__StyledHeading-fVnwQZ kDmihL Heading__Heading-bbmQNS qIgcJ"
             color="primary"
           >
             value pwm
@@ -2913,13 +2913,13 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
         </div>
         <div>
           <p
-            className="P__P-KJbCR kHKeHO"
+            className="P__P-KJbCR hrSHif"
             color="grayBase"
           >
             Period
           </p>
           <h1
-            className="DisplayMultipleValue__StyledHeading-fVnwQZ fMCDyR Heading__Heading-bbmQNS bzctpr"
+            className="DisplayMultipleValue__StyledHeading-fVnwQZ kDmihL Heading__Heading-bbmQNS qIgcJ"
             color="primary"
           >
             20
@@ -2928,23 +2928,23 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
       </div>
     </div>
     <div
-      className="DataChannelCard__Footer-bXWvk khhGpj"
+      className="DataChannelCard__Footer-bXWvk fBxewK"
     >
       <h4
-        className="DataChannelCard__StyledHeading-cbvcvv keaHV Heading__Heading-bbmQNS bhpnUP"
+        className="DataChannelCard__StyledHeading-cbvcvv dkneLR Heading__Heading-bbmQNS kWVueV"
       >
         PWM_DISPLAY
       </h4>
       <small
-        className="DataChannelCard__StyledSmall-dXSgmU gQFsUf Small__Small-eZiBK gQBpAl"
+        className="DataChannelCard__StyledSmall-dXSgmU cKvBTw Small__Small-eZiBK hDqltl"
       >
         Last data point time : 2015-06-12 12:00
       </small>
       <hr
-        className="DataChannelCard__StyledHr-gbFDHt kdQbav Hr__StyledHr-cIXjSE dCevnQ"
+        className="DataChannelCard__StyledHr-gbFDHt jXstRk Hr__StyledHr-cIXjSE bErYaL"
       />
       <div
-        className="DataChannelCard__Description-coAkpt ZvWJu P__P-KJbCR huqyql"
+        className="DataChannelCard__Description-coAkpt fpChPl P__P-KJbCR dPUstJ"
       >
         <MockReactTextTruncate
           line={2}
@@ -2955,11 +2955,11 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
     </div>
   </div>
   <div
-    className="DataChannelCard__Wrapper-bHbgIQ iAWmbi Card__Card-cAIRri hUtceH"
+    className="DataChannelCard__Wrapper-bHbgIQ ecSBca Card__Card-cAIRri cFZqUx"
     data-width="half"
   >
     <div
-      className="DataChannelCard__Header-cPHliC hpyYem"
+      className="DataChannelCard__Header-cPHliC eSZaWn"
     >
       <a
         href=""
@@ -2968,29 +2968,29 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
       </a>
     </div>
     <div
-      className="DataChannelCard__Body-gCBkrW htKtEp"
+      className="DataChannelCard__Body-gCBkrW hYtwsQ"
     >
       <div
-        className="DataChannelAdapter__Wrapper-kOWMLp dRDewk"
+        className="DataChannelAdapter__Wrapper-kOWMLp jIklWG"
       >
         <div
-          className="ControlPeriod__Container-jNmifR wmzMS"
+          className="ControlPeriod__Container-jNmifR bLOshQ"
         >
           <label
             htmlFor="input"
           >
             <p
-              className="P__P-KJbCR kHKeHO"
+              className="P__P-KJbCR hrSHif"
               color="grayBase"
             >
               Period
             </p>
           </label>
           <div
-            className="ControlPeriod__InputWrapper-icIPmx gFyvMa"
+            className="ControlPeriod__InputWrapper-icIPmx diDDNv"
           >
             <input
-              className="ControlPeriod__StyledInput-fNvBTX cAVBYu Input__Input-ixjKAz daZkvy"
+              className="ControlPeriod__StyledInput-fNvBTX jSwXqv Input__Input-ixjKAz dDXeoZ"
               kind="primary"
               onChange={[Function]}
               placeholder="Integer only"
@@ -2998,7 +2998,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
               value={0}
             />
             <button
-              className="Button__Button-jkHDFw hzHJoG"
+              className="Button__Button-jkHDFw fcrwCh"
               onClick={[Function]}
             >
               Ok
@@ -3006,26 +3006,26 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
           </div>
         </div>
         <div
-          className="ControlRange__Container-ispxkc kkVGKq"
+          className="ControlRange__Container-ispxkc kQpIsI"
         >
           <div
-            className="ControlRange__LabelWrapper-hpKjGx kKFCvQ"
+            className="ControlRange__LabelWrapper-hpKjGx bfHWDZ"
           >
             <div
-              className="ControlRange__LabelItem-kiIalK idIiax"
+              className="ControlRange__LabelItem-kiIalK dulPtE"
             >
               <div
-                className="P__P-KJbCR kHKeHO"
+                className="P__P-KJbCR hrSHif"
                 color="grayBase"
               >
                 0
               </div>
             </div>
             <div
-              className="ControlRange__LabelItem-kiIalK idIiax"
+              className="ControlRange__LabelItem-kiIalK dulPtE"
             >
               <div
-                className="P__P-KJbCR kHKeHO"
+                className="P__P-KJbCR hrSHif"
                 color="grayBase"
               >
                 100
@@ -3033,22 +3033,22 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
             </div>
           </div>
           <div
-            className="ControlRange__InputWrapper-fklkwO dVxsgp"
+            className="ControlRange__InputWrapper-fklkwO fpvHuS"
           >
             <div
-              className="ControlRange__ValueWrapper-jxMKxr lkxWna P__P-KJbCR kHKeHO"
+              className="ControlRange__ValueWrapper-jxMKxr kFWjXk P__P-KJbCR hrSHif"
               color="grayBase"
             >
               Current value: 
               <div
-                className="ControlRange__Value-kXycxr cJYxpn P__P-KJbCR dnAaPu"
+                className="ControlRange__Value-kXycxr glmUBq P__P-KJbCR jEbbdW"
                 color="primary"
               >
                 0
               </div>
             </div>
             <input
-              className="InputRange__InputRange-uGAsR iOVoet"
+              className="InputRange__InputRange-uGAsR lghldr"
               kind="primary"
               max={100}
               min={0}
@@ -3064,23 +3064,23 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
       </div>
     </div>
     <div
-      className="DataChannelCard__Footer-bXWvk khhGpj"
+      className="DataChannelCard__Footer-bXWvk fBxewK"
     >
       <h4
-        className="DataChannelCard__StyledHeading-cbvcvv keaHV Heading__Heading-bbmQNS bhpnUP"
+        className="DataChannelCard__StyledHeading-cbvcvv dkneLR Heading__Heading-bbmQNS kWVueV"
       >
         PWM_CONTROL
       </h4>
       <small
-        className="DataChannelCard__StyledSmall-dXSgmU gQFsUf Small__Small-eZiBK gQBpAl"
+        className="DataChannelCard__StyledSmall-dXSgmU cKvBTw Small__Small-eZiBK hDqltl"
       >
         Last data point time : 2015-06-12 12:00
       </small>
       <hr
-        className="DataChannelCard__StyledHr-gbFDHt kdQbav Hr__StyledHr-cIXjSE dCevnQ"
+        className="DataChannelCard__StyledHr-gbFDHt jXstRk Hr__StyledHr-cIXjSE bErYaL"
       />
       <div
-        className="DataChannelCard__Description-coAkpt ZvWJu P__P-KJbCR huqyql"
+        className="DataChannelCard__Description-coAkpt fpChPl P__P-KJbCR dPUstJ"
       >
         <MockReactTextTruncate
           line={2}
@@ -3095,10 +3095,10 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
 
 exports[`Storyshots DataChannelCard API 1`] = `
 <div
-  className="DataChannelCard__Wrapper-bHbgIQ iAWmbi Card__Card-cAIRri hUtceH"
+  className="DataChannelCard__Wrapper-bHbgIQ ecSBca Card__Card-cAIRri cFZqUx"
 >
   <div
-    className="DataChannelCard__Header-cPHliC hpyYem"
+    className="DataChannelCard__Header-cPHliC eSZaWn"
   >
     <a
       href=""
@@ -3107,28 +3107,28 @@ exports[`Storyshots DataChannelCard API 1`] = `
     </a>
   </div>
   <div
-    className="DataChannelCard__Body-gCBkrW htKtEp"
+    className="DataChannelCard__Body-gCBkrW hYtwsQ"
   >
     Children
   </div>
   <div
-    className="DataChannelCard__Footer-bXWvk khhGpj"
+    className="DataChannelCard__Footer-bXWvk fBxewK"
   >
     <h4
-      className="DataChannelCard__StyledHeading-cbvcvv keaHV Heading__Heading-bbmQNS bhpnUP"
+      className="DataChannelCard__StyledHeading-cbvcvv dkneLR Heading__Heading-bbmQNS kWVueV"
     >
       Title
     </h4>
     <small
-      className="DataChannelCard__StyledSmall-dXSgmU gQFsUf Small__Small-eZiBK gQBpAl"
+      className="DataChannelCard__StyledSmall-dXSgmU cKvBTw Small__Small-eZiBK hDqltl"
     >
       Last data point time : 2015-06-12 12:00
     </small>
     <hr
-      className="DataChannelCard__StyledHr-gbFDHt kdQbav Hr__StyledHr-cIXjSE dCevnQ"
+      className="DataChannelCard__StyledHr-gbFDHt jXstRk Hr__StyledHr-cIXjSE bErYaL"
     />
     <div
-      className="DataChannelCard__Description-coAkpt ZvWJu P__P-KJbCR huqyql"
+      className="DataChannelCard__Description-coAkpt fpChPl P__P-KJbCR dPUstJ"
     >
       <MockReactTextTruncate
         line={2}
@@ -3142,40 +3142,40 @@ exports[`Storyshots DataChannelCard API 1`] = `
 
 exports[`Storyshots DataChannelCard Custom width and height 1`] = `
 <div
-  className="DataChannelCard-example__MCSSyledCard-JGfRW jgVoOE DataChannelCard__Wrapper-bHbgIQ iAWmbi Card__Card-cAIRri hUtceH"
+  className="DataChannelCard-example__MCSSyledCard-JGfRW kBScEN DataChannelCard__Wrapper-bHbgIQ ecSBca Card__Card-cAIRri cFZqUx"
 >
   <div
-    className="DataChannelCard__Header-cPHliC hpyYem"
+    className="DataChannelCard__Header-cPHliC eSZaWn"
   >
     V
   </div>
   <div
-    className="DataChannelCard__Body-gCBkrW htKtEp"
+    className="DataChannelCard__Body-gCBkrW hYtwsQ"
   >
     <div
       checked={false}
-      className="Switch__Switch-iwxo kHzQqK"
+      className="Switch__Switch-iwxo jSKZSz"
       kind="success"
     />
   </div>
   <div
-    className="DataChannelCard__Footer-bXWvk khhGpj"
+    className="DataChannelCard__Footer-bXWvk fBxewK"
   >
     <h4
-      className="DataChannelCard__StyledHeading-cbvcvv keaHV Heading__Heading-bbmQNS bhpnUP"
+      className="DataChannelCard__StyledHeading-cbvcvv dkneLR Heading__Heading-bbmQNS kWVueV"
     >
       Title
     </h4>
     <small
-      className="DataChannelCard__StyledSmall-dXSgmU gQFsUf Small__Small-eZiBK gQBpAl"
+      className="DataChannelCard__StyledSmall-dXSgmU cKvBTw Small__Small-eZiBK hDqltl"
     >
       Last data point time : 2015-06-12 12:00
     </small>
     <hr
-      className="DataChannelCard__StyledHr-gbFDHt kdQbav Hr__StyledHr-cIXjSE dCevnQ"
+      className="DataChannelCard__StyledHr-gbFDHt jXstRk Hr__StyledHr-cIXjSE bErYaL"
     />
     <div
-      className="DataChannelCard__Description-coAkpt ZvWJu P__P-KJbCR huqyql"
+      className="DataChannelCard__Description-coAkpt fpChPl P__P-KJbCR dPUstJ"
     >
       <MockReactTextTruncate
         line={2}
@@ -3189,36 +3189,36 @@ exports[`Storyshots DataChannelCard Custom width and height 1`] = `
 
 exports[`Storyshots DataChannelCard With Component selector 1`] = `
 <div
-  className="DataChannelCard-example__StyledDataChannelCard-rkSAm kPfzYZ DataChannelCard__Wrapper-bHbgIQ iAWmbi Card__Card-cAIRri hUtceH"
+  className="DataChannelCard-example__StyledDataChannelCard-rkSAm hSwowe DataChannelCard__Wrapper-bHbgIQ ecSBca Card__Card-cAIRri cFZqUx"
 >
   <div
-    className="DataChannelCard__Header-cPHliC hpyYem"
+    className="DataChannelCard__Header-cPHliC eSZaWn"
   >
     V
   </div>
   <div
-    className="DataChannelCard__Body-gCBkrW htKtEp"
+    className="DataChannelCard__Body-gCBkrW hYtwsQ"
   >
     Children
   </div>
   <div
-    className="DataChannelCard__Footer-bXWvk khhGpj"
+    className="DataChannelCard__Footer-bXWvk fBxewK"
   >
     <h4
-      className="DataChannelCard__StyledHeading-cbvcvv keaHV Heading__Heading-bbmQNS bhpnUP"
+      className="DataChannelCard__StyledHeading-cbvcvv dkneLR Heading__Heading-bbmQNS kWVueV"
     >
       Title
     </h4>
     <small
-      className="DataChannelCard__StyledSmall-dXSgmU gQFsUf Small__Small-eZiBK gQBpAl"
+      className="DataChannelCard__StyledSmall-dXSgmU cKvBTw Small__Small-eZiBK hDqltl"
     >
       Last data point time : 2015-06-12 12:00
     </small>
     <hr
-      className="DataChannelCard__StyledHr-gbFDHt kdQbav Hr__StyledHr-cIXjSE dCevnQ"
+      className="DataChannelCard__StyledHr-gbFDHt jXstRk Hr__StyledHr-cIXjSE bErYaL"
     />
     <div
-      className="DataChannelCard__Description-coAkpt ZvWJu P__P-KJbCR huqyql"
+      className="DataChannelCard__Description-coAkpt fpChPl P__P-KJbCR dPUstJ"
     >
       <MockReactTextTruncate
         line={2}
@@ -3232,40 +3232,40 @@ exports[`Storyshots DataChannelCard With Component selector 1`] = `
 
 exports[`Storyshots DataChannelCard With empty description 1`] = `
 <div
-  className="DataChannelCard__Wrapper-bHbgIQ iAWmbi Card__Card-cAIRri hUtceH"
+  className="DataChannelCard__Wrapper-bHbgIQ ecSBca Card__Card-cAIRri cFZqUx"
 >
   <div
-    className="DataChannelCard__Header-cPHliC hpyYem"
+    className="DataChannelCard__Header-cPHliC eSZaWn"
   >
     V
   </div>
   <div
-    className="DataChannelCard__Body-gCBkrW htKtEp"
+    className="DataChannelCard__Body-gCBkrW hYtwsQ"
   >
     <div
       checked={false}
-      className="Switch__Switch-iwxo kHzQqK"
+      className="Switch__Switch-iwxo jSKZSz"
       kind="success"
     />
   </div>
   <div
-    className="DataChannelCard__Footer-bXWvk khhGpj"
+    className="DataChannelCard__Footer-bXWvk fBxewK"
   >
     <h4
-      className="DataChannelCard__StyledHeading-cbvcvv keaHV Heading__Heading-bbmQNS bhpnUP"
+      className="DataChannelCard__StyledHeading-cbvcvv dkneLR Heading__Heading-bbmQNS kWVueV"
     >
       Title
     </h4>
     <small
-      className="DataChannelCard__StyledSmall-dXSgmU gQFsUf Small__Small-eZiBK gQBpAl"
+      className="DataChannelCard__StyledSmall-dXSgmU cKvBTw Small__Small-eZiBK hDqltl"
     >
       Last data point time : 2015-06-12 12:00
     </small>
     <hr
-      className="DataChannelCard__StyledHr-gbFDHt kdQbav Hr__StyledHr-cIXjSE dCevnQ"
+      className="DataChannelCard__StyledHr-gbFDHt jXstRk Hr__StyledHr-cIXjSE bErYaL"
     />
     <div
-      className="DataChannelCard__Description-coAkpt ZvWJu P__P-KJbCR huqyql"
+      className="DataChannelCard__Description-coAkpt fpChPl P__P-KJbCR dPUstJ"
     >
       <MockReactTextTruncate
         line={2}
@@ -3279,32 +3279,32 @@ exports[`Storyshots DataChannelCard With empty description 1`] = `
 
 exports[`Storyshots DataChannelCard Without description 1`] = `
 <div
-  className="DataChannelCard__Wrapper-bHbgIQ iAWmbi Card__Card-cAIRri hUtceH"
+  className="DataChannelCard__Wrapper-bHbgIQ ecSBca Card__Card-cAIRri cFZqUx"
 >
   <div
-    className="DataChannelCard__Header-cPHliC hpyYem"
+    className="DataChannelCard__Header-cPHliC eSZaWn"
   >
     V
   </div>
   <div
-    className="DataChannelCard__Body-gCBkrW htKtEp"
+    className="DataChannelCard__Body-gCBkrW hYtwsQ"
   >
     <div
       checked={false}
-      className="Switch__Switch-iwxo kHzQqK"
+      className="Switch__Switch-iwxo jSKZSz"
       kind="success"
     />
   </div>
   <div
-    className="DataChannelCard__Footer-bXWvk khhGpj"
+    className="DataChannelCard__Footer-bXWvk fBxewK"
   >
     <h4
-      className="DataChannelCard__StyledHeading-cbvcvv keaHV Heading__Heading-bbmQNS bhpnUP"
+      className="DataChannelCard__StyledHeading-cbvcvv dkneLR Heading__Heading-bbmQNS kWVueV"
     >
       Title
     </h4>
     <small
-      className="DataChannelCard__StyledSmall-dXSgmU gQFsUf Small__Small-eZiBK gQBpAl"
+      className="DataChannelCard__StyledSmall-dXSgmU cKvBTw Small__Small-eZiBK hDqltl"
     >
       Last data point time : 2015-06-12 12:00
     </small>
@@ -3314,7 +3314,7 @@ exports[`Storyshots DataChannelCard Without description 1`] = `
 
 exports[`Storyshots DataPointAreaChart API 1`] = `
 <div
-  className="DataPointAreaChart-example__DemoWrapper-gGeZar guRXhw"
+  className="DataPointAreaChart-example__DemoWrapper-gGeZar kxOmsF"
 >
   <div
     className="recharts-responsive-container"
@@ -3339,19 +3339,19 @@ exports[`Storyshots DataPointAreaChart API 1`] = `
 
 exports[`Storyshots DataPointAreaChart RechartTooltip 1`] = `
 <div
-  className="RechartTooltip__StyledCard-iJnpfZ GWlAq Card__Card-cAIRri hUtceH"
+  className="RechartTooltip__StyledCard-iJnpfZ hvlyeO Card__Card-cAIRri cFZqUx"
 >
   <p
-    className="P__P-KJbCR huqyql"
+    className="P__P-KJbCR dPUstJ"
   >
     formatter(1)
   </p>
   <div
-    className="P__P-KJbCR kHKeHO"
+    className="P__P-KJbCR hrSHif"
     color="grayBase"
   >
     <small
-      className="Small__Small-eZiBK gQBpAl"
+      className="Small__Small-eZiBK hDqltl"
     >
       labelFormatter(1532438716989)
     </small>
@@ -3361,7 +3361,7 @@ exports[`Storyshots DataPointAreaChart RechartTooltip 1`] = `
 
 exports[`Storyshots DataPointAreaChart With isAnimationActive props 1`] = `
 <div
-  className="DataPointAreaChart-example__DemoWrapper-gGeZar guRXhw"
+  className="DataPointAreaChart-example__DemoWrapper-gGeZar kxOmsF"
 >
   <div
     className="recharts-responsive-container"
@@ -3386,7 +3386,7 @@ exports[`Storyshots DataPointAreaChart With isAnimationActive props 1`] = `
 
 exports[`Storyshots DataPointAreaChart With kind and type props 1`] = `
 <div
-  className="DataPointAreaChart-example__DemoWrapper-gGeZar guRXhw"
+  className="DataPointAreaChart-example__DemoWrapper-gGeZar kxOmsF"
 >
   <div
     className="recharts-responsive-container"
@@ -3411,7 +3411,7 @@ exports[`Storyshots DataPointAreaChart With kind and type props 1`] = `
 
 exports[`Storyshots DataPointAreaChart With realtime data 1`] = `
 <div
-  className="DataPointAreaChart-example__DemoWrapper-gGeZar guRXhw"
+  className="DataPointAreaChart-example__DemoWrapper-gGeZar kxOmsF"
 >
   <div
     className="recharts-responsive-container"
@@ -3436,7 +3436,7 @@ exports[`Storyshots DataPointAreaChart With realtime data 1`] = `
 
 exports[`Storyshots DatetimePicker API 1`] = `
 <div
-  className="PickerContainer__Container-bycPjJ fSlrkj"
+  className="PickerContainer__Container-bycPjJ swReu"
   defaultValue={1455780631722}
   onChange={[Function]}
 >
@@ -3452,7 +3452,7 @@ exports[`Storyshots DatetimePicker API 1`] = `
     }
   >
     <div
-      className="Picker__ItemWrapper-buHaJW chppio"
+      className="Picker__ItemWrapper-buHaJW jnEXTj"
       style={
         Object {
           "marginTop": -0,
@@ -3460,12 +3460,12 @@ exports[`Storyshots DatetimePicker API 1`] = `
       }
     >
       <div
-        className="Picker__Item-gIfqqC jKdLnX"
+        className="Picker__Item-gIfqqC gxmPnQ"
       >
         2016
       </div>
       <div
-        className="Picker__Item-gIfqqC gwrnjL"
+        className="Picker__Item-gIfqqC eaapbR"
       >
         2017
       </div>
@@ -3483,7 +3483,7 @@ exports[`Storyshots DatetimePicker API 1`] = `
     }
   >
     <div
-      className="Picker__ItemWrapper-buHaJW chppio"
+      className="Picker__ItemWrapper-buHaJW jnEXTj"
       style={
         Object {
           "marginTop": -40,
@@ -3491,62 +3491,62 @@ exports[`Storyshots DatetimePicker API 1`] = `
       }
     >
       <div
-        className="Picker__Item-gIfqqC gwrnjL"
+        className="Picker__Item-gIfqqC eaapbR"
       >
         1
       </div>
       <div
-        className="Picker__Item-gIfqqC jKdLnX"
+        className="Picker__Item-gIfqqC gxmPnQ"
       >
         2
       </div>
       <div
-        className="Picker__Item-gIfqqC gwrnjL"
+        className="Picker__Item-gIfqqC eaapbR"
       >
         3
       </div>
       <div
-        className="Picker__Item-gIfqqC gwrnjL"
+        className="Picker__Item-gIfqqC eaapbR"
       >
         4
       </div>
       <div
-        className="Picker__Item-gIfqqC gwrnjL"
+        className="Picker__Item-gIfqqC eaapbR"
       >
         5
       </div>
       <div
-        className="Picker__Item-gIfqqC gwrnjL"
+        className="Picker__Item-gIfqqC eaapbR"
       >
         6
       </div>
       <div
-        className="Picker__Item-gIfqqC gwrnjL"
+        className="Picker__Item-gIfqqC eaapbR"
       >
         7
       </div>
       <div
-        className="Picker__Item-gIfqqC gwrnjL"
+        className="Picker__Item-gIfqqC eaapbR"
       >
         8
       </div>
       <div
-        className="Picker__Item-gIfqqC gwrnjL"
+        className="Picker__Item-gIfqqC eaapbR"
       >
         9
       </div>
       <div
-        className="Picker__Item-gIfqqC gwrnjL"
+        className="Picker__Item-gIfqqC eaapbR"
       >
         10
       </div>
       <div
-        className="Picker__Item-gIfqqC gwrnjL"
+        className="Picker__Item-gIfqqC eaapbR"
       >
         11
       </div>
       <div
-        className="Picker__Item-gIfqqC gwrnjL"
+        className="Picker__Item-gIfqqC eaapbR"
       >
         12
       </div>
@@ -3564,7 +3564,7 @@ exports[`Storyshots DatetimePicker API 1`] = `
     }
   >
     <div
-      className="Picker__ItemWrapper-buHaJW chppio"
+      className="Picker__ItemWrapper-buHaJW jnEXTj"
       style={
         Object {
           "marginTop": -680,
@@ -3572,147 +3572,147 @@ exports[`Storyshots DatetimePicker API 1`] = `
       }
     >
       <div
-        className="Picker__Item-gIfqqC gwrnjL"
+        className="Picker__Item-gIfqqC eaapbR"
       >
         1
       </div>
       <div
-        className="Picker__Item-gIfqqC gwrnjL"
+        className="Picker__Item-gIfqqC eaapbR"
       >
         2
       </div>
       <div
-        className="Picker__Item-gIfqqC gwrnjL"
+        className="Picker__Item-gIfqqC eaapbR"
       >
         3
       </div>
       <div
-        className="Picker__Item-gIfqqC gwrnjL"
+        className="Picker__Item-gIfqqC eaapbR"
       >
         4
       </div>
       <div
-        className="Picker__Item-gIfqqC gwrnjL"
+        className="Picker__Item-gIfqqC eaapbR"
       >
         5
       </div>
       <div
-        className="Picker__Item-gIfqqC gwrnjL"
+        className="Picker__Item-gIfqqC eaapbR"
       >
         6
       </div>
       <div
-        className="Picker__Item-gIfqqC gwrnjL"
+        className="Picker__Item-gIfqqC eaapbR"
       >
         7
       </div>
       <div
-        className="Picker__Item-gIfqqC gwrnjL"
+        className="Picker__Item-gIfqqC eaapbR"
       >
         8
       </div>
       <div
-        className="Picker__Item-gIfqqC gwrnjL"
+        className="Picker__Item-gIfqqC eaapbR"
       >
         9
       </div>
       <div
-        className="Picker__Item-gIfqqC gwrnjL"
+        className="Picker__Item-gIfqqC eaapbR"
       >
         10
       </div>
       <div
-        className="Picker__Item-gIfqqC gwrnjL"
+        className="Picker__Item-gIfqqC eaapbR"
       >
         11
       </div>
       <div
-        className="Picker__Item-gIfqqC gwrnjL"
+        className="Picker__Item-gIfqqC eaapbR"
       >
         12
       </div>
       <div
-        className="Picker__Item-gIfqqC gwrnjL"
+        className="Picker__Item-gIfqqC eaapbR"
       >
         13
       </div>
       <div
-        className="Picker__Item-gIfqqC gwrnjL"
+        className="Picker__Item-gIfqqC eaapbR"
       >
         14
       </div>
       <div
-        className="Picker__Item-gIfqqC gwrnjL"
+        className="Picker__Item-gIfqqC eaapbR"
       >
         15
       </div>
       <div
-        className="Picker__Item-gIfqqC gwrnjL"
+        className="Picker__Item-gIfqqC eaapbR"
       >
         16
       </div>
       <div
-        className="Picker__Item-gIfqqC gwrnjL"
+        className="Picker__Item-gIfqqC eaapbR"
       >
         17
       </div>
       <div
-        className="Picker__Item-gIfqqC jKdLnX"
+        className="Picker__Item-gIfqqC gxmPnQ"
       >
         18
       </div>
       <div
-        className="Picker__Item-gIfqqC gwrnjL"
+        className="Picker__Item-gIfqqC eaapbR"
       >
         19
       </div>
       <div
-        className="Picker__Item-gIfqqC gwrnjL"
+        className="Picker__Item-gIfqqC eaapbR"
       >
         20
       </div>
       <div
-        className="Picker__Item-gIfqqC gwrnjL"
+        className="Picker__Item-gIfqqC eaapbR"
       >
         21
       </div>
       <div
-        className="Picker__Item-gIfqqC gwrnjL"
+        className="Picker__Item-gIfqqC eaapbR"
       >
         22
       </div>
       <div
-        className="Picker__Item-gIfqqC gwrnjL"
+        className="Picker__Item-gIfqqC eaapbR"
       >
         23
       </div>
       <div
-        className="Picker__Item-gIfqqC gwrnjL"
+        className="Picker__Item-gIfqqC eaapbR"
       >
         24
       </div>
       <div
-        className="Picker__Item-gIfqqC gwrnjL"
+        className="Picker__Item-gIfqqC eaapbR"
       >
         25
       </div>
       <div
-        className="Picker__Item-gIfqqC gwrnjL"
+        className="Picker__Item-gIfqqC eaapbR"
       >
         26
       </div>
       <div
-        className="Picker__Item-gIfqqC gwrnjL"
+        className="Picker__Item-gIfqqC eaapbR"
       >
         27
       </div>
       <div
-        className="Picker__Item-gIfqqC gwrnjL"
+        className="Picker__Item-gIfqqC eaapbR"
       >
         28
       </div>
       <div
-        className="Picker__Item-gIfqqC gwrnjL"
+        className="Picker__Item-gIfqqC eaapbR"
       >
         29
       </div>
@@ -3730,7 +3730,7 @@ exports[`Storyshots DatetimePicker API 1`] = `
     }
   >
     <div
-      className="Picker__ItemWrapper-buHaJW chppio"
+      className="Picker__ItemWrapper-buHaJW jnEXTj"
       style={
         Object {
           "marginTop": -280,
@@ -3738,122 +3738,122 @@ exports[`Storyshots DatetimePicker API 1`] = `
       }
     >
       <div
-        className="Picker__Item-gIfqqC gwrnjL"
+        className="Picker__Item-gIfqqC eaapbR"
       >
         00
       </div>
       <div
-        className="Picker__Item-gIfqqC gwrnjL"
+        className="Picker__Item-gIfqqC eaapbR"
       >
         01
       </div>
       <div
-        className="Picker__Item-gIfqqC gwrnjL"
+        className="Picker__Item-gIfqqC eaapbR"
       >
         02
       </div>
       <div
-        className="Picker__Item-gIfqqC gwrnjL"
+        className="Picker__Item-gIfqqC eaapbR"
       >
         03
       </div>
       <div
-        className="Picker__Item-gIfqqC gwrnjL"
+        className="Picker__Item-gIfqqC eaapbR"
       >
         04
       </div>
       <div
-        className="Picker__Item-gIfqqC gwrnjL"
+        className="Picker__Item-gIfqqC eaapbR"
       >
         05
       </div>
       <div
-        className="Picker__Item-gIfqqC gwrnjL"
+        className="Picker__Item-gIfqqC eaapbR"
       >
         06
       </div>
       <div
-        className="Picker__Item-gIfqqC jKdLnX"
+        className="Picker__Item-gIfqqC gxmPnQ"
       >
         07
       </div>
       <div
-        className="Picker__Item-gIfqqC gwrnjL"
+        className="Picker__Item-gIfqqC eaapbR"
       >
         08
       </div>
       <div
-        className="Picker__Item-gIfqqC gwrnjL"
+        className="Picker__Item-gIfqqC eaapbR"
       >
         09
       </div>
       <div
-        className="Picker__Item-gIfqqC gwrnjL"
+        className="Picker__Item-gIfqqC eaapbR"
       >
         10
       </div>
       <div
-        className="Picker__Item-gIfqqC gwrnjL"
+        className="Picker__Item-gIfqqC eaapbR"
       >
         11
       </div>
       <div
-        className="Picker__Item-gIfqqC gwrnjL"
+        className="Picker__Item-gIfqqC eaapbR"
       >
         12
       </div>
       <div
-        className="Picker__Item-gIfqqC gwrnjL"
+        className="Picker__Item-gIfqqC eaapbR"
       >
         13
       </div>
       <div
-        className="Picker__Item-gIfqqC gwrnjL"
+        className="Picker__Item-gIfqqC eaapbR"
       >
         14
       </div>
       <div
-        className="Picker__Item-gIfqqC gwrnjL"
+        className="Picker__Item-gIfqqC eaapbR"
       >
         15
       </div>
       <div
-        className="Picker__Item-gIfqqC gwrnjL"
+        className="Picker__Item-gIfqqC eaapbR"
       >
         16
       </div>
       <div
-        className="Picker__Item-gIfqqC gwrnjL"
+        className="Picker__Item-gIfqqC eaapbR"
       >
         17
       </div>
       <div
-        className="Picker__Item-gIfqqC gwrnjL"
+        className="Picker__Item-gIfqqC eaapbR"
       >
         18
       </div>
       <div
-        className="Picker__Item-gIfqqC gwrnjL"
+        className="Picker__Item-gIfqqC eaapbR"
       >
         19
       </div>
       <div
-        className="Picker__Item-gIfqqC gwrnjL"
+        className="Picker__Item-gIfqqC eaapbR"
       >
         20
       </div>
       <div
-        className="Picker__Item-gIfqqC gwrnjL"
+        className="Picker__Item-gIfqqC eaapbR"
       >
         21
       </div>
       <div
-        className="Picker__Item-gIfqqC gwrnjL"
+        className="Picker__Item-gIfqqC eaapbR"
       >
         22
       </div>
       <div
-        className="Picker__Item-gIfqqC gwrnjL"
+        className="Picker__Item-gIfqqC eaapbR"
       >
         23
       </div>
@@ -3871,7 +3871,7 @@ exports[`Storyshots DatetimePicker API 1`] = `
     }
   >
     <div
-      className="Picker__ItemWrapper-buHaJW chppio"
+      className="Picker__ItemWrapper-buHaJW jnEXTj"
       style={
         Object {
           "marginTop": -1200,
@@ -3879,312 +3879,312 @@ exports[`Storyshots DatetimePicker API 1`] = `
       }
     >
       <div
-        className="Picker__Item-gIfqqC gwrnjL"
+        className="Picker__Item-gIfqqC eaapbR"
       >
         00
       </div>
       <div
-        className="Picker__Item-gIfqqC gwrnjL"
+        className="Picker__Item-gIfqqC eaapbR"
       >
         01
       </div>
       <div
-        className="Picker__Item-gIfqqC gwrnjL"
+        className="Picker__Item-gIfqqC eaapbR"
       >
         02
       </div>
       <div
-        className="Picker__Item-gIfqqC gwrnjL"
+        className="Picker__Item-gIfqqC eaapbR"
       >
         03
       </div>
       <div
-        className="Picker__Item-gIfqqC gwrnjL"
+        className="Picker__Item-gIfqqC eaapbR"
       >
         04
       </div>
       <div
-        className="Picker__Item-gIfqqC gwrnjL"
+        className="Picker__Item-gIfqqC eaapbR"
       >
         05
       </div>
       <div
-        className="Picker__Item-gIfqqC gwrnjL"
+        className="Picker__Item-gIfqqC eaapbR"
       >
         06
       </div>
       <div
-        className="Picker__Item-gIfqqC gwrnjL"
+        className="Picker__Item-gIfqqC eaapbR"
       >
         07
       </div>
       <div
-        className="Picker__Item-gIfqqC gwrnjL"
+        className="Picker__Item-gIfqqC eaapbR"
       >
         08
       </div>
       <div
-        className="Picker__Item-gIfqqC gwrnjL"
+        className="Picker__Item-gIfqqC eaapbR"
       >
         09
       </div>
       <div
-        className="Picker__Item-gIfqqC gwrnjL"
+        className="Picker__Item-gIfqqC eaapbR"
       >
         10
       </div>
       <div
-        className="Picker__Item-gIfqqC gwrnjL"
+        className="Picker__Item-gIfqqC eaapbR"
       >
         11
       </div>
       <div
-        className="Picker__Item-gIfqqC gwrnjL"
+        className="Picker__Item-gIfqqC eaapbR"
       >
         12
       </div>
       <div
-        className="Picker__Item-gIfqqC gwrnjL"
+        className="Picker__Item-gIfqqC eaapbR"
       >
         13
       </div>
       <div
-        className="Picker__Item-gIfqqC gwrnjL"
+        className="Picker__Item-gIfqqC eaapbR"
       >
         14
       </div>
       <div
-        className="Picker__Item-gIfqqC gwrnjL"
+        className="Picker__Item-gIfqqC eaapbR"
       >
         15
       </div>
       <div
-        className="Picker__Item-gIfqqC gwrnjL"
+        className="Picker__Item-gIfqqC eaapbR"
       >
         16
       </div>
       <div
-        className="Picker__Item-gIfqqC gwrnjL"
+        className="Picker__Item-gIfqqC eaapbR"
       >
         17
       </div>
       <div
-        className="Picker__Item-gIfqqC gwrnjL"
+        className="Picker__Item-gIfqqC eaapbR"
       >
         18
       </div>
       <div
-        className="Picker__Item-gIfqqC gwrnjL"
+        className="Picker__Item-gIfqqC eaapbR"
       >
         19
       </div>
       <div
-        className="Picker__Item-gIfqqC gwrnjL"
+        className="Picker__Item-gIfqqC eaapbR"
       >
         20
       </div>
       <div
-        className="Picker__Item-gIfqqC gwrnjL"
+        className="Picker__Item-gIfqqC eaapbR"
       >
         21
       </div>
       <div
-        className="Picker__Item-gIfqqC gwrnjL"
+        className="Picker__Item-gIfqqC eaapbR"
       >
         22
       </div>
       <div
-        className="Picker__Item-gIfqqC gwrnjL"
+        className="Picker__Item-gIfqqC eaapbR"
       >
         23
       </div>
       <div
-        className="Picker__Item-gIfqqC gwrnjL"
+        className="Picker__Item-gIfqqC eaapbR"
       >
         24
       </div>
       <div
-        className="Picker__Item-gIfqqC gwrnjL"
+        className="Picker__Item-gIfqqC eaapbR"
       >
         25
       </div>
       <div
-        className="Picker__Item-gIfqqC gwrnjL"
+        className="Picker__Item-gIfqqC eaapbR"
       >
         26
       </div>
       <div
-        className="Picker__Item-gIfqqC gwrnjL"
+        className="Picker__Item-gIfqqC eaapbR"
       >
         27
       </div>
       <div
-        className="Picker__Item-gIfqqC gwrnjL"
+        className="Picker__Item-gIfqqC eaapbR"
       >
         28
       </div>
       <div
-        className="Picker__Item-gIfqqC gwrnjL"
+        className="Picker__Item-gIfqqC eaapbR"
       >
         29
       </div>
       <div
-        className="Picker__Item-gIfqqC jKdLnX"
+        className="Picker__Item-gIfqqC gxmPnQ"
       >
         30
       </div>
       <div
-        className="Picker__Item-gIfqqC gwrnjL"
+        className="Picker__Item-gIfqqC eaapbR"
       >
         31
       </div>
       <div
-        className="Picker__Item-gIfqqC gwrnjL"
+        className="Picker__Item-gIfqqC eaapbR"
       >
         32
       </div>
       <div
-        className="Picker__Item-gIfqqC gwrnjL"
+        className="Picker__Item-gIfqqC eaapbR"
       >
         33
       </div>
       <div
-        className="Picker__Item-gIfqqC gwrnjL"
+        className="Picker__Item-gIfqqC eaapbR"
       >
         34
       </div>
       <div
-        className="Picker__Item-gIfqqC gwrnjL"
+        className="Picker__Item-gIfqqC eaapbR"
       >
         35
       </div>
       <div
-        className="Picker__Item-gIfqqC gwrnjL"
+        className="Picker__Item-gIfqqC eaapbR"
       >
         36
       </div>
       <div
-        className="Picker__Item-gIfqqC gwrnjL"
+        className="Picker__Item-gIfqqC eaapbR"
       >
         37
       </div>
       <div
-        className="Picker__Item-gIfqqC gwrnjL"
+        className="Picker__Item-gIfqqC eaapbR"
       >
         38
       </div>
       <div
-        className="Picker__Item-gIfqqC gwrnjL"
+        className="Picker__Item-gIfqqC eaapbR"
       >
         39
       </div>
       <div
-        className="Picker__Item-gIfqqC gwrnjL"
+        className="Picker__Item-gIfqqC eaapbR"
       >
         40
       </div>
       <div
-        className="Picker__Item-gIfqqC gwrnjL"
+        className="Picker__Item-gIfqqC eaapbR"
       >
         41
       </div>
       <div
-        className="Picker__Item-gIfqqC gwrnjL"
+        className="Picker__Item-gIfqqC eaapbR"
       >
         42
       </div>
       <div
-        className="Picker__Item-gIfqqC gwrnjL"
+        className="Picker__Item-gIfqqC eaapbR"
       >
         43
       </div>
       <div
-        className="Picker__Item-gIfqqC gwrnjL"
+        className="Picker__Item-gIfqqC eaapbR"
       >
         44
       </div>
       <div
-        className="Picker__Item-gIfqqC gwrnjL"
+        className="Picker__Item-gIfqqC eaapbR"
       >
         45
       </div>
       <div
-        className="Picker__Item-gIfqqC gwrnjL"
+        className="Picker__Item-gIfqqC eaapbR"
       >
         46
       </div>
       <div
-        className="Picker__Item-gIfqqC gwrnjL"
+        className="Picker__Item-gIfqqC eaapbR"
       >
         47
       </div>
       <div
-        className="Picker__Item-gIfqqC gwrnjL"
+        className="Picker__Item-gIfqqC eaapbR"
       >
         48
       </div>
       <div
-        className="Picker__Item-gIfqqC gwrnjL"
+        className="Picker__Item-gIfqqC eaapbR"
       >
         49
       </div>
       <div
-        className="Picker__Item-gIfqqC gwrnjL"
+        className="Picker__Item-gIfqqC eaapbR"
       >
         50
       </div>
       <div
-        className="Picker__Item-gIfqqC gwrnjL"
+        className="Picker__Item-gIfqqC eaapbR"
       >
         51
       </div>
       <div
-        className="Picker__Item-gIfqqC gwrnjL"
+        className="Picker__Item-gIfqqC eaapbR"
       >
         52
       </div>
       <div
-        className="Picker__Item-gIfqqC gwrnjL"
+        className="Picker__Item-gIfqqC eaapbR"
       >
         53
       </div>
       <div
-        className="Picker__Item-gIfqqC gwrnjL"
+        className="Picker__Item-gIfqqC eaapbR"
       >
         54
       </div>
       <div
-        className="Picker__Item-gIfqqC gwrnjL"
+        className="Picker__Item-gIfqqC eaapbR"
       >
         55
       </div>
       <div
-        className="Picker__Item-gIfqqC gwrnjL"
+        className="Picker__Item-gIfqqC eaapbR"
       >
         56
       </div>
       <div
-        className="Picker__Item-gIfqqC gwrnjL"
+        className="Picker__Item-gIfqqC eaapbR"
       >
         57
       </div>
       <div
-        className="Picker__Item-gIfqqC gwrnjL"
+        className="Picker__Item-gIfqqC eaapbR"
       >
         58
       </div>
       <div
-        className="Picker__Item-gIfqqC gwrnjL"
+        className="Picker__Item-gIfqqC eaapbR"
       >
         59
       </div>
     </div>
   </MockReactHammerJS>
   <div
-    className="PickerContainer__Indicator-ccckoW gyFnAm"
+    className="PickerContainer__Indicator-ccckoW bQNycr"
   />
   <div
-    className="PickerContainer__Overlay-bFXsUq dIwqvm"
+    className="PickerContainer__Overlay-bFXsUq jwzCRy"
   />
 </div>
 `;
@@ -4192,7 +4192,7 @@ exports[`Storyshots DatetimePicker API 1`] = `
 exports[`Storyshots DatetimePickerDialog API 1`] = `
 <div>
   <input
-    className="Input__Input-ixjKAz daZkvy"
+    className="Input__Input-ixjKAz dDXeoZ"
     kind="primary"
     onClick={[Function]}
     readOnly={true}
@@ -4226,7 +4226,7 @@ exports[`Storyshots DomAlign API 1`] = `
 
 exports[`Storyshots Heading API 1`] = `
 <h1
-  className="Heading__Heading-bbmQNS kQNhbK"
+  className="Heading__Heading-bbmQNS ivVOfQ"
 >
   Level 1
 </h1>
@@ -4235,70 +4235,70 @@ exports[`Storyshots Heading API 1`] = `
 exports[`Storyshots Heading With color props 1`] = `
 <div>
   <h2
-    className="Heading__Heading-bbmQNS gMxgez"
+    className="Heading__Heading-bbmQNS fmxfsB"
     color="black"
   >
     Level 2 
     black
   </h2>
   <h2
-    className="Heading__Heading-bbmQNS hcgmPb"
+    className="Heading__Heading-bbmQNS ZYEPr"
     color="grayBase"
   >
     Level 2 
     grayBase
   </h2>
   <h2
-    className="Heading__Heading-bbmQNS fuFoRN"
+    className="Heading__Heading-bbmQNS dMqjfg"
     color="grayDark"
   >
     Level 2 
     grayDark
   </h2>
   <h2
-    className="Heading__Heading-bbmQNS iAugmh"
+    className="Heading__Heading-bbmQNS hvzfcC"
     color="grayLight"
   >
     Level 2 
     grayLight
   </h2>
   <h2
-    className="Heading__Heading-bbmQNS jpMyPI"
+    className="Heading__Heading-bbmQNS dmvnZV"
     color="white"
   >
     Level 2 
     white
   </h2>
   <h2
-    className="Heading__Heading-bbmQNS iAugmh"
+    className="Heading__Heading-bbmQNS hvzfcC"
     color="default"
   >
     Level 2 
     default
   </h2>
   <h2
-    className="Heading__Heading-bbmQNS hyrrTn"
+    className="Heading__Heading-bbmQNS gBVoJi"
     color="primary"
   >
     Level 2 
     primary
   </h2>
   <h2
-    className="Heading__Heading-bbmQNS kPPVye"
+    className="Heading__Heading-bbmQNS dZxXSl"
     color="success"
   >
     Level 2 
     success
   </h2>
   <h2
-    className="Heading__Heading-bbmQNS fspUwR"
+    className="Heading__Heading-bbmQNS biTess"
     color="error"
   >
     Level 2 
     error
   </h2>
   <h2
-    className="Heading__Heading-bbmQNS eVchMc"
+    className="Heading__Heading-bbmQNS dLebJC"
     color="warning"
   >
     Level 2 
@@ -4310,7 +4310,7 @@ exports[`Storyshots Heading With color props 1`] = `
 exports[`Storyshots Heading With level props 1`] = `
 <div>
   <h1
-    className="Heading__Heading-bbmQNS kQNhbK"
+    className="Heading__Heading-bbmQNS ivVOfQ"
   >
     h
     1
@@ -4323,7 +4323,7 @@ exports[`Storyshots Heading With level props 1`] = `
     )
   </h1>
   <h2
-    className="Heading__Heading-bbmQNS yVDKj"
+    className="Heading__Heading-bbmQNS ckzZjB"
   >
     h
     2
@@ -4336,7 +4336,7 @@ exports[`Storyshots Heading With level props 1`] = `
     )
   </h2>
   <h3
-    className="Heading__Heading-bbmQNS jTIpYm"
+    className="Heading__Heading-bbmQNS ccEwqk"
   >
     h
     3
@@ -4349,7 +4349,7 @@ exports[`Storyshots Heading With level props 1`] = `
     )
   </h3>
   <h4
-    className="Heading__Heading-bbmQNS bhpnUP"
+    className="Heading__Heading-bbmQNS kWVueV"
   >
     h
     4
@@ -4362,7 +4362,7 @@ exports[`Storyshots Heading With level props 1`] = `
     )
   </h4>
   <h5
-    className="Heading__Heading-bbmQNS cDLbBe"
+    className="Heading__Heading-bbmQNS fwnGcs"
   >
     h
     5
@@ -4375,7 +4375,7 @@ exports[`Storyshots Heading With level props 1`] = `
     )
   </h5>
   <h6
-    className="Heading__Heading-bbmQNS cDLbBe"
+    className="Heading__Heading-bbmQNS fwnGcs"
   >
     h
     6
@@ -4392,24 +4392,24 @@ exports[`Storyshots Heading With level props 1`] = `
 
 exports[`Storyshots Hr API 1`] = `
 <hr
-  className="Hr__StyledHr-cIXjSE dCevnQ"
+  className="Hr__StyledHr-cIXjSE bErYaL"
 />
 `;
 
 exports[`Storyshots Hr With children 1`] = `
 <div
-  className="Hr__Wrapper-hzpgYW hoorgF"
+  className="Hr__Wrapper-hzpgYW iHxGCZ"
 >
   <hr
-    className="Hr__StyledHr-cIXjSE dCevnQ"
+    className="Hr__StyledHr-cIXjSE bErYaL"
   />
   <div
-    className="Hr__Content-cXfAsM fjfPLa"
+    className="Hr__Content-cXfAsM iDbngO"
   >
     String
   </div>
   <hr
-    className="Hr__StyledHr-cIXjSE dCevnQ"
+    className="Hr__StyledHr-cIXjSE bErYaL"
   />
 </div>
 `;
@@ -4449,7 +4449,7 @@ exports[`Storyshots Icon [mcs-lite-icon] MorphReplace 1`] = `
 
 exports[`Storyshots Icon [mcs-lite-icon] Spin Icon 1`] = `
 <div
-  className="Spin__Spin-cdyXhD emAbgi"
+  className="Spin__Spin-cdyXhD fbwVyx"
 >
   <svg
     fill="currentColor"
@@ -4471,10 +4471,10 @@ exports[`Storyshots Icon [mcs-lite-icon] Spin Icon 1`] = `
 
 exports[`Storyshots Img API 1`] = `
 <div
-  className="Img-example__Container-iIgyRP ewDqK"
+  className="Img-example__Container-iIgyRP hHOgfZ"
 >
   <div
-    className="Img__Img-hamkNM dfJelk"
+    className="Img__Img-hamkNM cdoCrl"
     size="cover"
     src="http://placehold.it/350x150"
   />
@@ -4483,7 +4483,7 @@ exports[`Storyshots Img API 1`] = `
 
 exports[`Storyshots Img With height override 1`] = `
 <div
-  className="Img-example__StyledImg-jLedKD jstGqX Img__Img-hamkNM dfJelk"
+  className="Img-example__StyledImg-jLedKD caWaMs Img__Img-hamkNM cdoCrl"
   size="cover"
   src="http://placehold.it/350x150"
 />
@@ -4491,10 +4491,10 @@ exports[`Storyshots Img With height override 1`] = `
 
 exports[`Storyshots Img With size props 1`] = `
 <div
-  className="Img-example__Container-iIgyRP ewDqK"
+  className="Img-example__Container-iIgyRP hHOgfZ"
 >
   <div
-    className="Img__Img-hamkNM dqokKr"
+    className="Img__Img-hamkNM kNTvRy"
     size="contain"
     src="http://placehold.it/350x150"
   />
@@ -4503,7 +4503,7 @@ exports[`Storyshots Img With size props 1`] = `
 
 exports[`Storyshots Input API 1`] = `
 <input
-  className="Input__Input-ixjKAz daZkvy"
+  className="Input__Input-ixjKAz dDXeoZ"
   kind="primary"
   placeholder="placeholder"
 />
@@ -4511,7 +4511,7 @@ exports[`Storyshots Input API 1`] = `
 
 exports[`Storyshots Input With focus props 1`] = `
 <input
-  className="Input__Input-ixjKAz dVhqoA"
+  className="Input__Input-ixjKAz hazBEy"
   kind="primary"
   placeholder="placeholder"
 />
@@ -4519,30 +4519,30 @@ exports[`Storyshots Input With focus props 1`] = `
 
 exports[`Storyshots Input With kind props 1`] = `
 <div
-  className="Input-example__Wrapper-wdFpp vSgWM"
+  className="Input-example__Wrapper-wdFpp bwoQCm"
 >
   <input
-    className="Input__Input-ixjKAz iZbWRm"
+    className="Input__Input-ixjKAz bRSnpA"
     kind="default"
     placeholder="default"
   />
   <input
-    className="Input__Input-ixjKAz daZkvy"
+    className="Input__Input-ixjKAz dDXeoZ"
     kind="primary"
     placeholder="primary"
   />
   <input
-    className="Input__Input-ixjKAz NeOoy"
+    className="Input__Input-ixjKAz eZQXwg"
     kind="success"
     placeholder="success"
   />
   <input
-    className="Input__Input-ixjKAz dtwvAr"
+    className="Input__Input-ixjKAz iqNsmn"
     kind="error"
     placeholder="error"
   />
   <input
-    className="Input__Input-ixjKAz jGZesO"
+    className="Input__Input-ixjKAz cubRzB"
     kind="warning"
     placeholder="warning"
   />
@@ -4551,94 +4551,94 @@ exports[`Storyshots Input With kind props 1`] = `
 
 exports[`Storyshots Input With type props 1`] = `
 <div
-  className="Input-example__Wrapper-wdFpp vSgWM"
+  className="Input-example__Wrapper-wdFpp bwoQCm"
 >
   <input
-    className="Input__Input-ixjKAz daZkvy"
+    className="Input__Input-ixjKAz dDXeoZ"
     kind="primary"
     placeholder="text"
     type="text"
   />
   <input
-    className="Input__Input-ixjKAz daZkvy"
+    className="Input__Input-ixjKAz dDXeoZ"
     kind="primary"
     placeholder="email"
     type="email"
   />
   <input
-    className="Input__Input-ixjKAz daZkvy"
+    className="Input__Input-ixjKAz dDXeoZ"
     kind="primary"
     placeholder="number"
     type="number"
   />
   <input
-    className="Input__Input-ixjKAz daZkvy"
+    className="Input__Input-ixjKAz dDXeoZ"
     kind="primary"
     placeholder="password"
     type="password"
   />
   <input
-    className="Input__Input-ixjKAz daZkvy"
+    className="Input__Input-ixjKAz dDXeoZ"
     kind="primary"
     placeholder="tel"
     type="tel"
   />
   <input
-    className="Input__Input-ixjKAz daZkvy"
+    className="Input__Input-ixjKAz dDXeoZ"
     kind="primary"
     placeholder="search"
     type="search"
   />
   <input
-    className="Input__Input-ixjKAz daZkvy"
+    className="Input__Input-ixjKAz dDXeoZ"
     kind="primary"
     placeholder="month"
     type="month"
   />
   <input
-    className="Input__Input-ixjKAz daZkvy"
+    className="Input__Input-ixjKAz dDXeoZ"
     kind="primary"
     placeholder="week"
     type="week"
   />
   <input
-    className="Input__Input-ixjKAz daZkvy"
+    className="Input__Input-ixjKAz dDXeoZ"
     kind="primary"
     placeholder="date"
     type="date"
   />
   <input
-    className="Input__Input-ixjKAz daZkvy"
+    className="Input__Input-ixjKAz dDXeoZ"
     kind="primary"
     placeholder="color"
     type="color"
   />
   <input
-    className="Input__Input-ixjKAz daZkvy"
+    className="Input__Input-ixjKAz dDXeoZ"
     kind="primary"
     placeholder="file"
     type="file"
   />
   <input
-    className="Input__Input-ixjKAz daZkvy"
+    className="Input__Input-ixjKAz dDXeoZ"
     kind="primary"
     placeholder="radio"
     type="radio"
   />
   <input
-    className="Input__Input-ixjKAz daZkvy"
+    className="Input__Input-ixjKAz dDXeoZ"
     kind="primary"
     placeholder="time"
     type="time"
   />
   <input
-    className="Input__Input-ixjKAz daZkvy"
+    className="Input__Input-ixjKAz dDXeoZ"
     kind="primary"
     placeholder="url"
     type="url"
   />
   <input
-    className="Input__Input-ixjKAz daZkvy"
+    className="Input__Input-ixjKAz dDXeoZ"
     kind="primary"
     placeholder="range"
     type="range"
@@ -4648,108 +4648,108 @@ exports[`Storyshots Input With type props 1`] = `
 
 exports[`Storyshots InputGroup API 1`] = `
 <div
-  className="InputGroup-example__Wrapper-bWyLSo Ysjnj"
+  className="InputGroup-example__Wrapper-bWyLSo hsOXac"
 >
   <div
-    className="InputGroup__InputGroup-jokkYF Gitcm"
+    className="InputGroup__InputGroup-jokkYF ifCUQV"
   >
     <button
-      className="Button__Button-jkHDFw eLyfbv"
+      className="Button__Button-jkHDFw fdnXWs"
     >
       Button 1
     </button>
     <button
-      className="Button__Button-jkHDFw isqzPO"
+      className="Button__Button-jkHDFw fisncb"
     >
       Button 2
     </button>
   </div>
   <div
-    className="InputGroup__InputGroup-jokkYF Gitcm"
+    className="InputGroup__InputGroup-jokkYF ifCUQV"
   >
     <button
-      className="Button__Button-jkHDFw hzHJoG"
+      className="Button__Button-jkHDFw fcrwCh"
     >
       Button 1
     </button>
     <button
-      className="Button__Button-jkHDFw yEdmN"
+      className="Button__Button-jkHDFw eTxUqR"
     >
       Button Two
     </button>
     <button
-      className="Button__Button-jkHDFw kuSHij"
+      className="Button__Button-jkHDFw jLcdhA"
     >
       Button Three
     </button>
   </div>
   <div
-    className="InputGroup__InputGroup-jokkYF Gitcm"
+    className="InputGroup__InputGroup-jokkYF ifCUQV"
   >
     <button
-      className="Button__Button-jkHDFw hzHJoG"
+      className="Button__Button-jkHDFw fcrwCh"
     >
       大於
     </button>
     <input
-      className="Input__Input-ixjKAz daZkvy"
+      className="Input__Input-ixjKAz dDXeoZ"
       kind="primary"
       placeholder="預設值：20"
     />
   </div>
   <div
-    className="InputGroup__InputGroup-jokkYF Gitcm"
+    className="InputGroup__InputGroup-jokkYF ifCUQV"
   >
     <input
-      className="Input__Input-ixjKAz daZkvy"
+      className="Input__Input-ixjKAz dDXeoZ"
       kind="primary"
       placeholder="Input 1"
     />
     <button
-      className="Button__Button-jkHDFw hzHJoG"
+      className="Button__Button-jkHDFw fcrwCh"
     >
       Button 1
     </button>
   </div>
   <div
-    className="InputGroup__InputGroup-jokkYF Gitcm"
+    className="InputGroup__InputGroup-jokkYF ifCUQV"
   >
     <button
-      className="Button__Button-jkHDFw hzHJoG"
+      className="Button__Button-jkHDFw fcrwCh"
     >
       Button 1
     </button>
     <input
-      className="Input__Input-ixjKAz daZkvy"
+      className="Input__Input-ixjKAz dDXeoZ"
       kind="primary"
       placeholder="Input 1"
     />
     <button
-      className="Button__Button-jkHDFw hzHJoG"
+      className="Button__Button-jkHDFw fcrwCh"
     >
       Button 2
     </button>
   </div>
   <div
-    className="InputGroup__InputGroup-jokkYF Gitcm"
+    className="InputGroup__InputGroup-jokkYF ifCUQV"
   >
     <button
-      className="Button__Button-jkHDFw hzHJoG"
+      className="Button__Button-jkHDFw fcrwCh"
     >
       之間
     </button>
     <input
-      className="Input__Input-ixjKAz daZkvy"
+      className="Input__Input-ixjKAz dDXeoZ"
       kind="primary"
       placeholder="預設值：0"
     />
     <button
-      className="Button__Button-jkHDFw jLUUQp"
+      className="Button__Button-jkHDFw iqfXFv"
     >
       和
     </button>
     <input
-      className="Input__Input-ixjKAz daZkvy"
+      className="Input__Input-ixjKAz dDXeoZ"
       kind="primary"
       placeholder="預設值：100"
     />
@@ -4759,7 +4759,7 @@ exports[`Storyshots InputGroup API 1`] = `
 
 exports[`Storyshots InputRange API 1`] = `
 <input
-  className="InputRange__InputRange-uGAsR iOVoet"
+  className="InputRange__InputRange-uGAsR lghldr"
   kind="primary"
   type="range"
 />
@@ -4767,30 +4767,30 @@ exports[`Storyshots InputRange API 1`] = `
 
 exports[`Storyshots InputRange With kind props 1`] = `
 <div
-  className="InputRange-example__Wrapper-daQGDv gtXCgk"
+  className="InputRange-example__Wrapper-daQGDv clxeDr"
 >
   <input
-    className="InputRange__InputRange-uGAsR nmjGq"
+    className="InputRange__InputRange-uGAsR kWubNo"
     kind="default"
     type="range"
   />
   <input
-    className="InputRange__InputRange-uGAsR iOVoet"
+    className="InputRange__InputRange-uGAsR lghldr"
     kind="primary"
     type="range"
   />
   <input
-    className="InputRange__InputRange-uGAsR gDXrIL"
+    className="InputRange__InputRange-uGAsR ihreXP"
     kind="success"
     type="range"
   />
   <input
-    className="InputRange__InputRange-uGAsR DLSLN"
+    className="InputRange__InputRange-uGAsR bbeoEp"
     kind="error"
     type="range"
   />
   <input
-    className="InputRange__InputRange-uGAsR iugumr"
+    className="InputRange__InputRange-uGAsR bfhQss"
     kind="warning"
     type="range"
   />
@@ -4799,11 +4799,11 @@ exports[`Storyshots InputRange With kind props 1`] = `
 
 exports[`Storyshots LandingHeader API 1`] = `
 <header
-  className="LandingHeader__Container-hrLKri laiink"
+  className="LandingHeader__Container-hrLKri loiCQn"
   offset={40}
 >
   <div
-    className="LandingHeader__Fixed-bXOagm emkZvT"
+    className="LandingHeader__Fixed-bXOagm fPpRvK"
   >
     <div>
       Content
@@ -4814,21 +4814,21 @@ exports[`Storyshots LandingHeader API 1`] = `
 
 exports[`Storyshots LandingHeader NavItemBurger 1`] = `
 <header
-  className="LandingHeader__Container-hrLKri laiink"
+  className="LandingHeader__Container-hrLKri loiCQn"
   offset={40}
 >
   <div
-    className="LandingHeader__Fixed-bXOagm emkZvT"
+    className="LandingHeader__Fixed-bXOagm fPpRvK"
   >
     <div
-      className="Nav__Nav-kSOSQJ ZeMyg"
+      className="Nav__Nav-kSOSQJ jkoovj"
     >
       <div
-        className="NavItem__NavItem-dDMHAW hbfMOV"
+        className="NavItem__NavItem-dDMHAW kOQKjj"
         onClick={[Function]}
       >
         <p
-          className="NavItemBurger__StyledP-yFaFF ZXPSm P__P-KJbCR huqyql"
+          className="NavItemBurger__StyledP-yFaFF jhMdKO P__P-KJbCR dPUstJ"
         >
           children
         </p>
@@ -4849,27 +4849,27 @@ exports[`Storyshots LandingHeader NavItemBurger 1`] = `
 
 exports[`Storyshots LandingHeader NavItemDropdown 1`] = `
 <header
-  className="LandingHeader__Container-hrLKri laiink"
+  className="LandingHeader__Container-hrLKri loiCQn"
   offset={40}
 >
   <div
-    className="LandingHeader__Fixed-bXOagm emkZvT"
+    className="LandingHeader__Fixed-bXOagm fPpRvK"
   >
     <div
-      className="Nav__Nav-kSOSQJ ZeMyg"
+      className="Nav__Nav-kSOSQJ jkoovj"
     >
       <div
-        className="NavItem__NavItem-dDMHAW hbfMOV"
+        className="NavItem__NavItem-dDMHAW kOQKjj"
         onClick={[Function]}
         onMouseOver={[Function]}
       >
         <p
-          className="NavItemDropdown__StyledP-bCgpbh QpnQQ P__P-KJbCR huqyql"
+          className="NavItemDropdown__StyledP-bCgpbh hGLJVt P__P-KJbCR dPUstJ"
         >
           Language
         </p>
         <svg
-          className="NavItemDropdown__StyledIconFold-hwUBGr cGJSbX"
+          className="NavItemDropdown__StyledIconFold-hwUBGr emwSsh"
           fill="currentColor"
           height={18}
           preserveAspectRatio="xMidYMid meet"
@@ -4888,17 +4888,17 @@ exports[`Storyshots LandingHeader NavItemDropdown 1`] = `
 
 exports[`Storyshots LandingHeader With Nav and NavItem 1`] = `
 <header
-  className="LandingHeader__Container-hrLKri laiink"
+  className="LandingHeader__Container-hrLKri loiCQn"
   offset={40}
 >
   <div
-    className="LandingHeader__Fixed-bXOagm emkZvT"
+    className="LandingHeader__Fixed-bXOagm fPpRvK"
   >
     <div
-      className="Nav__Nav-kSOSQJ ZeMyg"
+      className="Nav__Nav-kSOSQJ jkoovj"
     >
       <div
-        className="NavItem__NavItem-dDMHAW hbfMOV"
+        className="NavItem__NavItem-dDMHAW kOQKjj"
       >
         <svg
           fill="currentColor"
@@ -4913,17 +4913,17 @@ exports[`Storyshots LandingHeader With Nav and NavItem 1`] = `
         </svg>
       </div>
       <div
-        className="NavItem__NavItem-dDMHAW hbfMOV"
+        className="NavItem__NavItem-dDMHAW kOQKjj"
       >
         Nav Item 1
       </div>
       <div
-        className="NavItem__NavItem-dDMHAW gCvHEd"
+        className="NavItem__NavItem-dDMHAW iWrWeW"
       >
         Nav Item 2 (active)
       </div>
       <div
-        className="NavItem__NavItem-dDMHAW leRmGQ"
+        className="NavItem__NavItem-dDMHAW cIypNw"
       >
         Nav Item 3 (disabled)
       </div>
@@ -4934,11 +4934,11 @@ exports[`Storyshots LandingHeader With Nav and NavItem 1`] = `
 
 exports[`Storyshots LandingHeader With offset props 1`] = `
 <header
-  className="LandingHeader__Container-hrLKri laiink"
+  className="LandingHeader__Container-hrLKri loiCQn"
   offset={160}
 >
   <div
-    className="LandingHeader__Fixed-bXOagm emkZvT"
+    className="LandingHeader__Fixed-bXOagm fPpRvK"
   >
     offset 160
   </div>
@@ -4947,7 +4947,7 @@ exports[`Storyshots LandingHeader With offset props 1`] = `
 
 exports[`Storyshots LazyloadOnce API 1`] = `
 <div
-  className="LazyloadOnce-example__Wrapper-gEZAdh gemSYd"
+  className="LazyloadOnce-example__Wrapper-gEZAdh ibtFQp"
 >
   <div
     style={
@@ -4969,10 +4969,10 @@ exports[`Storyshots LazyloadOnce API 1`] = `
 
 exports[`Storyshots LazyloadOnce With component props 1`] = `
 <div
-  className="LazyloadOnce-example__Wrapper-gEZAdh gemSYd"
+  className="LazyloadOnce-example__Wrapper-gEZAdh ibtFQp"
 >
   <button
-    className="Button__Button-jkHDFw hzHJoG"
+    className="Button__Button-jkHDFw fcrwCh"
     style={
       Object {
         "height": 24,
@@ -4992,7 +4992,7 @@ exports[`Storyshots LazyloadOnce With component props 1`] = `
 
 exports[`Storyshots Menu API for Menu 1`] = `
 <div
-  className="Menu__Menu-eXBrAE dbvbBA Card__Card-cAIRri hUtceH"
+  className="Menu__Menu-eXBrAE NonDB Card__Card-cAIRri cFZqUx"
 >
   Children
 </div>
@@ -5001,12 +5001,12 @@ exports[`Storyshots Menu API for Menu 1`] = `
 exports[`Storyshots Menu API for MenuItem 1`] = `
 <div>
   <div
-    className="MenuItem__MenuItem-jVnLzZ bzgLkk"
+    className="MenuItem__MenuItem-jVnLzZ zLzIb"
   >
     div tag (default)
   </div>
   <a
-    className="MenuItem__MenuItem-jVnLzZ bzgLkk"
+    className="MenuItem__MenuItem-jVnLzZ zLzIb"
   >
     a Tag
   </a>
@@ -5015,74 +5015,74 @@ exports[`Storyshots Menu API for MenuItem 1`] = `
 
 exports[`Storyshots Menu Fixed width 1`] = `
 <div
-  className="Menu-example__StyledMenu-edugow XpCZ Menu__Menu-eXBrAE dbvbBA Card__Card-cAIRri hUtceH"
+  className="Menu-example__StyledMenu-edugow knTXWV Menu__Menu-eXBrAE NonDB Card__Card-cAIRri cFZqUx"
 >
   <div
-    className="MenuItem__MenuItem-jVnLzZ bzgLkk"
+    className="MenuItem__MenuItem-jVnLzZ zLzIb"
     onClick={[Function]}
   >
     MenuItem 1
   </div>
   <div
-    className="MenuItem__MenuItem-jVnLzZ bzgLkk"
+    className="MenuItem__MenuItem-jVnLzZ zLzIb"
     onClick={[Function]}
   >
     MenuItem Content 2
   </div>
   <div
-    className="MenuItem__MenuItem-jVnLzZ bzgLkk"
+    className="MenuItem__MenuItem-jVnLzZ zLzIb"
     onClick={[Function]}
   >
     <h1
-      className="Heading__Heading-bbmQNS kQNhbK"
+      className="Heading__Heading-bbmQNS ivVOfQ"
     >
       MenuItem Heading 1
     </h1>
   </div>
   <div
-    className="MenuItem__MenuItem-jVnLzZ bzgLkk"
+    className="MenuItem__MenuItem-jVnLzZ zLzIb"
     onClick={[Function]}
   >
     <p
-      className="P__P-KJbCR huqyql"
+      className="P__P-KJbCR dPUstJ"
     >
       MenuItem P
     </p>
   </div>
   <div
-    className="MenuItem__MenuItem-jVnLzZ bzgLkk"
+    className="MenuItem__MenuItem-jVnLzZ zLzIb"
     onClick={[Function]}
   >
     <p
-      className="P__P-KJbCR kCwgXa"
+      className="P__P-KJbCR izxYJi"
       color="error"
     >
       MenuItem P error
     </p>
   </div>
   <div
-    className="MenuItem__MenuItem-jVnLzZ bzgLkk"
+    className="MenuItem__MenuItem-jVnLzZ zLzIb"
     onClick={[Function]}
   >
     <a
-      className="A__A-cCPuKx fpwonb"
+      className="A__A-cCPuKx eNMAVf"
       color="primary"
     >
       MenuItem A
     </a>
   </div>
   <div
-    className="MenuItem__MenuItem-jVnLzZ bzgLkk"
+    className="MenuItem__MenuItem-jVnLzZ zLzIb"
     onClick={[Function]}
   >
     <b
-      className="B__B-bYLQjZ jyrAdw"
+      className="B__B-bYLQjZ eJBXnx"
     >
       MenuItem B
     </b>
   </div>
   <div
-    className="MenuItem__MenuItem-jVnLzZ bzgLkk"
+    className="MenuItem__MenuItem-jVnLzZ zLzIb"
     onClick={[Function]}
   >
     <svg
@@ -5098,7 +5098,7 @@ exports[`Storyshots Menu Fixed width 1`] = `
     </svg>
   </div>
   <a
-    className="MenuItem__MenuItem-jVnLzZ bzgLkk"
+    className="MenuItem__MenuItem-jVnLzZ zLzIb"
   >
     &lt;a&gt;
      Tag
@@ -5108,16 +5108,16 @@ exports[`Storyshots Menu Fixed width 1`] = `
 
 exports[`Storyshots Menu Min width 1`] = `
 <div
-  className="Menu__Menu-eXBrAE dbvbBA Card__Card-cAIRri hUtceH"
+  className="Menu__Menu-eXBrAE NonDB Card__Card-cAIRri cFZqUx"
 >
   <div
-    className="MenuItem__MenuItem-jVnLzZ bzgLkk"
+    className="MenuItem__MenuItem-jVnLzZ zLzIb"
     onClick={[Function]}
   >
     複製
   </div>
   <div
-    className="MenuItem__MenuItem-jVnLzZ bzgLkk"
+    className="MenuItem__MenuItem-jVnLzZ zLzIb"
     onClick={[Function]}
   >
     刪除
@@ -5127,10 +5127,10 @@ exports[`Storyshots Menu Min width 1`] = `
 
 exports[`Storyshots MobileContentWrapper API 1`] = `
 <div
-  className="MobileContentWrapper__MobileContentWrapper-cFnkPI clLSYv"
+  className="MobileContentWrapper__MobileContentWrapper-cFnkPI fZnOTX"
 >
   <div
-    className="MobileContentWrapper-example__Content-XcUFk kVlrVD"
+    className="MobileContentWrapper-example__Content-XcUFk delKkk"
   >
     With max-width
   </div>
@@ -5139,22 +5139,22 @@ exports[`Storyshots MobileContentWrapper API 1`] = `
 
 exports[`Storyshots MobileDeviceCard API 1`] = `
 <div
-  className="MobileDeviceCard__StyledCard-bIftJD kXtYTg Card__Card-cAIRri hUtceH"
+  className="MobileDeviceCard__StyledCard-bIftJD goYOTi Card__Card-cAIRri cFZqUx"
 >
   <div
-    className="MobileDeviceCard__ImageWrapper-jwFbMz hHmuCa"
+    className="MobileDeviceCard__ImageWrapper-jwFbMz eFhtZS"
   >
     <div
-      className="Img__Img-hamkNM PwsIR"
+      className="Img__Img-hamkNM kmNzLH"
       size="cover"
       src="https://img.mediatek.com/600/mtk.linkit/productBanner.png"
     />
   </div>
   <div
-    className="MobileDeviceCard__ContentWrapper-bykepX kUBrFw"
+    className="MobileDeviceCard__ContentWrapper-bykepX vxRQh"
   >
     <h4
-      className="Heading__Heading-bbmQNS RDccM"
+      className="Heading__Heading-bbmQNS iuTWKK"
       color="black"
     >
       <MockReactTextTruncate
@@ -5169,22 +5169,22 @@ exports[`Storyshots MobileDeviceCard API 1`] = `
 
 exports[`Storyshots MobileDeviceCard Override height 1`] = `
 <div
-  className="MobileDeviceCard-example__StyledMobileDeviceCard-jTtTpC inUvtX MobileDeviceCard__StyledCard-bIftJD kXtYTg Card__Card-cAIRri hUtceH"
+  className="MobileDeviceCard-example__StyledMobileDeviceCard-jTtTpC fOgcD MobileDeviceCard__StyledCard-bIftJD goYOTi Card__Card-cAIRri cFZqUx"
 >
   <div
-    className="MobileDeviceCard__ImageWrapper-jwFbMz hHmuCa"
+    className="MobileDeviceCard__ImageWrapper-jwFbMz eFhtZS"
   >
     <div
-      className="Img__Img-hamkNM PwsIR"
+      className="Img__Img-hamkNM kmNzLH"
       size="cover"
       src="https://img.mediatek.com/600/mtk.linkit/productBanner.png"
     />
   </div>
   <div
-    className="MobileDeviceCard__ContentWrapper-bykepX kUBrFw"
+    className="MobileDeviceCard__ContentWrapper-bykepX vxRQh"
   >
     <h4
-      className="Heading__Heading-bbmQNS RDccM"
+      className="Heading__Heading-bbmQNS iuTWKK"
       color="black"
     >
       <MockReactTextTruncate
@@ -5199,21 +5199,21 @@ exports[`Storyshots MobileDeviceCard Override height 1`] = `
 
 exports[`Storyshots MobileFixedFooter API 1`] = `
 <footer
-  className="MobileFixedFooter__Footer-cVbRbU dkKmXN"
+  className="MobileFixedFooter__Footer-cVbRbU dmaCYG"
 >
   <div
-    className="MobileContentWrapper__MobileContentWrapper-cFnkPI clLSYv"
+    className="MobileContentWrapper__MobileContentWrapper-cFnkPI fZnOTX"
   >
     <div
-      className="MobileDeviceCard-example__ButtonWrapper-iyAdhZ jrsUnC"
+      className="MobileDeviceCard-example__ButtonWrapper-iyAdhZ hvJbdQ"
     >
       <button
-        className="Button__Button-jkHDFw havMIs"
+        className="Button__Button-jkHDFw bHcSDJ"
       >
         Cancel
       </button>
       <button
-        className="Button__Button-jkHDFw eefGtH"
+        className="Button__Button-jkHDFw lbMdCS"
       >
         Submit
       </button>
@@ -5224,20 +5224,20 @@ exports[`Storyshots MobileFixedFooter API 1`] = `
 
 exports[`Storyshots MobileHeader API 1`] = `
 <header
-  className="MobileHeader__Container-jQWXTI linKhW"
+  className="MobileHeader__Container-jQWXTI leIyCY"
 >
   <MockPortal>
     <div
-      className="MobileHeader__Fixed-bxRWpA kgtkSd"
+      className="MobileHeader__Fixed-bxRWpA ksFbHX"
     >
       <div
-        className="MobileHeader__Wrapper-fFoyVn kSrNmB MobileContentWrapper__MobileContentWrapper-cFnkPI clLSYv"
+        className="MobileHeader__Wrapper-fFoyVn kTAauc MobileContentWrapper__MobileContentWrapper-cFnkPI fZnOTX"
       >
         <div
-          className="MobileHeader__Left-bvAwFg exNQke"
+          className="MobileHeader__Left-bvAwFg bIUcFo"
         >
           <a
-            className="MobileHeaderIcon__MobileHeaderIcon-kXDpgZ jOgeYf"
+            className="MobileHeaderIcon__MobileHeaderIcon-kXDpgZ loCLeU"
           >
             <svg
               fill="currentColor"
@@ -5253,21 +5253,21 @@ exports[`Storyshots MobileHeader API 1`] = `
           </a>
         </div>
         <div
-          className="MobileHeader__Center-cHIFFa bdSdNh"
+          className="MobileHeader__Center-cHIFFa bKeZOa"
         >
           <h3
-            className="MobileHeader__StyledHeading-gJYUWC leIPvi Heading__Heading-bbmQNS dAMrfO"
+            className="MobileHeader__StyledHeading-gJYUWC ewFXYS Heading__Heading-bbmQNS gURGr"
             color="white"
           >
             <b
-              className="B__B-bYLQjZ jyrAdw"
+              className="B__B-bYLQjZ eJBXnx"
             >
               Device List
             </b>
           </h3>
         </div>
         <div
-          className="MobileHeader__Right-bzZKEQ cjeiIo"
+          className="MobileHeader__Right-bzZKEQ gTJtOw"
         />
       </div>
     </div>
@@ -5277,20 +5277,20 @@ exports[`Storyshots MobileHeader API 1`] = `
 
 exports[`Storyshots MobileHeader With right props 1`] = `
 <header
-  className="MobileHeader__Container-jQWXTI linKhW"
+  className="MobileHeader__Container-jQWXTI leIyCY"
 >
   <MockPortal>
     <div
-      className="MobileHeader__Fixed-bxRWpA kgtkSd"
+      className="MobileHeader__Fixed-bxRWpA ksFbHX"
     >
       <div
-        className="MobileHeader__Wrapper-fFoyVn kSrNmB MobileContentWrapper__MobileContentWrapper-cFnkPI clLSYv"
+        className="MobileHeader__Wrapper-fFoyVn kTAauc MobileContentWrapper__MobileContentWrapper-cFnkPI fZnOTX"
       >
         <div
-          className="MobileHeader__Left-bvAwFg exNQke"
+          className="MobileHeader__Left-bvAwFg bIUcFo"
         >
           <div
-            className="MobileHeaderIcon__MobileHeaderIcon-kXDpgZ jOgeYf"
+            className="MobileHeaderIcon__MobileHeaderIcon-kXDpgZ loCLeU"
           >
             <svg
               fill="currentColor"
@@ -5306,24 +5306,24 @@ exports[`Storyshots MobileHeader With right props 1`] = `
           </div>
         </div>
         <div
-          className="MobileHeader__Center-cHIFFa bdSdNh"
+          className="MobileHeader__Center-cHIFFa bKeZOa"
         >
           <h3
-            className="MobileHeader__StyledHeading-gJYUWC leIPvi Heading__Heading-bbmQNS dAMrfO"
+            className="MobileHeader__StyledHeading-gJYUWC ewFXYS Heading__Heading-bbmQNS gURGr"
             color="white"
           >
             <b
-              className="B__B-bYLQjZ jyrAdw"
+              className="B__B-bYLQjZ eJBXnx"
             >
               Device List
             </b>
           </h3>
         </div>
         <div
-          className="MobileHeader__Right-bzZKEQ cjeiIo"
+          className="MobileHeader__Right-bzZKEQ gTJtOw"
         >
           <a
-            className="MobileHeaderIcon__MobileHeaderIcon-kXDpgZ jOgeYf"
+            className="MobileHeaderIcon__MobileHeaderIcon-kXDpgZ loCLeU"
           >
             <svg
               fill="currentColor"
@@ -5396,7 +5396,7 @@ exports[`Storyshots MorphReplace API 1`] = `
 
 exports[`Storyshots Notification API 1`] = `
 <div
-  className="Notification__Notification-gEpGHZ kkmGbi"
+  className="Notification__Notification-gEpGHZ ifZlvQ"
 >
   Do you want to go to Enalish version website?
 </div>
@@ -5404,15 +5404,15 @@ exports[`Storyshots Notification API 1`] = `
 
 exports[`Storyshots Notification With feedbck Button component 1`] = `
 <div
-  className="Notification__Notification-gEpGHZ kkmGbi"
+  className="Notification__Notification-gEpGHZ ifZlvQ"
 >
   <p
-    className="P__P-KJbCR huqyql"
+    className="P__P-KJbCR dPUstJ"
   >
     Do you want to go to Enalish version website?
   </p>
   <button
-    className="Button__Button-jkHDFw hzHJoG"
+    className="Button__Button-jkHDFw fcrwCh"
   >
     Yes, please
   </button>
@@ -5422,7 +5422,7 @@ exports[`Storyshots Notification With feedbck Button component 1`] = `
 exports[`Storyshots Overlay API 1`] = `
 <div>
   <a
-    className="A__A-cCPuKx fpwonb"
+    className="A__A-cCPuKx eNMAVf"
     color="primary"
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
@@ -5435,11 +5435,11 @@ exports[`Storyshots Overlay API 1`] = `
 
 exports[`Storyshots Overlay Dropdown Menu 1`] = `
 <div
-  className="Overlay-example__Wrapper-kJekHD kqgtdh"
+  className="Overlay-example__Wrapper-kJekHD fykpql"
 >
   <div>
     <button
-      className="Button__Button-jkHDFw hzHJoG"
+      className="Button__Button-jkHDFw fcrwCh"
       onClick={[Function]}
     >
       Button
@@ -5447,7 +5447,7 @@ exports[`Storyshots Overlay Dropdown Menu 1`] = `
   </div>
   <div>
     <button
-      className="Button__Button-jkHDFw hzHJoG"
+      className="Button__Button-jkHDFw fcrwCh"
       onClick={[Function]}
     >
       Button
@@ -5455,7 +5455,7 @@ exports[`Storyshots Overlay Dropdown Menu 1`] = `
   </div>
   <div>
     <button
-      className="Button__Button-jkHDFw hzHJoG"
+      className="Button__Button-jkHDFw fcrwCh"
       onClick={[Function]}
     >
       Button
@@ -5466,7 +5466,7 @@ exports[`Storyshots Overlay Dropdown Menu 1`] = `
 
 exports[`Storyshots P API 1`] = `
 <p
-  className="P__P-KJbCR huqyql"
+  className="P__P-KJbCR dPUstJ"
 >
   Nisi eu eiusmod cupidatat aute laboris commodo excepteur esse dolore incididunt incididunt aliquip pariatur est minim officia sit. Nulla pariatur duis duis quis commodo cupidatat voluptate enim culpa elit adipisicing do cupidatat sint anim. Cillum elit magna occaecat proident sit cupidatat ad quis sunt id culpa culpa. Ad duis nulla in incididunt amet consequat officia ad voluptate voluptate. Pariatur eiusmod ullamco cupidatat non magna officia aute magna deserunt qui aute dolor eu. Qui amet non ex cillum sunt ad velit consequat ipsum velit.
 </p>
@@ -5474,7 +5474,7 @@ exports[`Storyshots P API 1`] = `
 
 exports[`Storyshots P Nested children with div 1`] = `
 <div
-  className="P__P-KJbCR huqyql"
+  className="P__P-KJbCR dPUstJ"
 >
   <div>
     <span>
@@ -5487,70 +5487,70 @@ exports[`Storyshots P Nested children with div 1`] = `
 exports[`Storyshots P With color props 1`] = `
 <div>
   <div
-    className="P__P-KJbCR bBQRSt"
+    className="P__P-KJbCR fZmvtj"
     color="black"
   >
     Paragraph 
     black
   </div>
   <div
-    className="P__P-KJbCR kHKeHO"
+    className="P__P-KJbCR hrSHif"
     color="grayBase"
   >
     Paragraph 
     grayBase
   </div>
   <div
-    className="P__P-KJbCR ceCaoj"
+    className="P__P-KJbCR daOKVl"
     color="grayDark"
   >
     Paragraph 
     grayDark
   </div>
   <div
-    className="P__P-KJbCR kNxHnv"
+    className="P__P-KJbCR dQMENQ"
     color="grayLight"
   >
     Paragraph 
     grayLight
   </div>
   <div
-    className="P__P-KJbCR gJIGAs"
+    className="P__P-KJbCR ihvQaj"
     color="white"
   >
     Paragraph 
     white
   </div>
   <div
-    className="P__P-KJbCR kNxHnv"
+    className="P__P-KJbCR dQMENQ"
     color="default"
   >
     Paragraph 
     default
   </div>
   <div
-    className="P__P-KJbCR dnAaPu"
+    className="P__P-KJbCR jEbbdW"
     color="primary"
   >
     Paragraph 
     primary
   </div>
   <div
-    className="P__P-KJbCR dBhihc"
+    className="P__P-KJbCR lldZFe"
     color="success"
   >
     Paragraph 
     success
   </div>
   <div
-    className="P__P-KJbCR kCwgXa"
+    className="P__P-KJbCR izxYJi"
     color="error"
   >
     Paragraph 
     error
   </div>
   <div
-    className="P__P-KJbCR kYKlrf"
+    className="P__P-KJbCR iQlmPW"
     color="warning"
   >
     Paragraph 
@@ -5561,7 +5561,7 @@ exports[`Storyshots P With color props 1`] = `
 
 exports[`Storyshots Panel API 1`] = `
 <div
-  className="Panel__Panel-hUpLEX fecvLj"
+  className="Panel__Panel-hUpLEX eyTtRi"
 >
   <header>
     Panel Header (header)
@@ -5577,7 +5577,7 @@ exports[`Storyshots Panel API 1`] = `
 
 exports[`Storyshots Picker API 1`] = `
 <div
-  className="PickerContainer__Container-bycPjJ fSlrkj"
+  className="PickerContainer__Container-bycPjJ swReu"
 >
   <MockReactHammerJS
     direction="DIRECTION_VERTICAL"
@@ -5591,7 +5591,7 @@ exports[`Storyshots Picker API 1`] = `
     }
   >
     <div
-      className="Picker__ItemWrapper-buHaJW chppio"
+      className="Picker__ItemWrapper-buHaJW jnEXTj"
       style={
         Object {
           "marginTop": -0,
@@ -5599,22 +5599,22 @@ exports[`Storyshots Picker API 1`] = `
       }
     >
       <div
-        className="Picker__Item-gIfqqC jKdLnX"
+        className="Picker__Item-gIfqqC gxmPnQ"
       >
         Apple
       </div>
       <div
-        className="Picker__Item-gIfqqC gwrnjL"
+        className="Picker__Item-gIfqqC eaapbR"
       >
         Pen
       </div>
       <div
-        className="Picker__Item-gIfqqC gwrnjL"
+        className="Picker__Item-gIfqqC eaapbR"
       >
         Apple pen
       </div>
       <div
-        className="Picker__Item-gIfqqC gwrnjL"
+        className="Picker__Item-gIfqqC eaapbR"
       >
         Pineapple
       </div>
@@ -5632,7 +5632,7 @@ exports[`Storyshots Picker API 1`] = `
     }
   >
     <div
-      className="Picker__ItemWrapper-buHaJW chppio"
+      className="Picker__ItemWrapper-buHaJW jnEXTj"
       style={
         Object {
           "marginTop": -40,
@@ -5640,22 +5640,22 @@ exports[`Storyshots Picker API 1`] = `
       }
     >
       <div
-        className="Picker__Item-gIfqqC gwrnjL"
+        className="Picker__Item-gIfqqC eaapbR"
       >
         PPAP
       </div>
       <div
-        className="Picker__Item-gIfqqC jKdLnX"
+        className="Picker__Item-gIfqqC gxmPnQ"
       >
         PAPA
       </div>
     </div>
   </MockReactHammerJS>
   <div
-    className="PickerContainer__Indicator-ccckoW gyFnAm"
+    className="PickerContainer__Indicator-ccckoW bQNycr"
   />
   <div
-    className="PickerContainer__Overlay-bFXsUq dIwqvm"
+    className="PickerContainer__Overlay-bFXsUq jwzCRy"
   />
 </div>
 `;
@@ -5667,7 +5667,7 @@ exports[`Storyshots PreventDrag API 1`] = `
     src="http://placehold.it/350x150"
   />
   <div
-    className="PreventDrag__Container-lhVqqt jZxAtg"
+    className="PreventDrag__Container-lhVqqt kxkCvB"
     onDragStart={[Function]}
     onDrop={[Function]}
     onMouseDown={[Function]}
@@ -5685,7 +5685,7 @@ exports[`Storyshots PreventDrag API 1`] = `
     Link content
   </a>
   <div
-    className="PreventDrag__Container-lhVqqt jZxAtg"
+    className="PreventDrag__Container-lhVqqt kxkCvB"
     onDragStart={[Function]}
     onDrop={[Function]}
     onMouseDown={[Function]}
@@ -5703,7 +5703,7 @@ exports[`Storyshots PreventDrag API 1`] = `
 
 exports[`Storyshots PullToRefresh API 1`] = `
 <div
-  className="PullToRefresh-example__Body-kvPuEP jqTbuF"
+  className="PullToRefresh-example__Body-kvPuEP ebJCft"
 >
   <MockReactHammerJS
     direction="DIRECTION_DOWN"
@@ -5717,7 +5717,7 @@ exports[`Storyshots PullToRefresh API 1`] = `
     }
   >
     <div
-      className="PullToRefresh__PullWrapper-hUeHkt fozezD"
+      className="PullToRefresh__PullWrapper-hUeHkt cRUelg"
       style={
         Object {
           "marginTop": 0,
@@ -5725,10 +5725,10 @@ exports[`Storyshots PullToRefresh API 1`] = `
       }
     >
       <div
-        className="PullToRefresh__LoadingContainer-gGvvOL jNtWxV"
+        className="PullToRefresh__LoadingContainer-gGvvOL fGytCT"
       >
         <h2
-          className="Heading__Heading-bbmQNS hcgmPb"
+          className="Heading__Heading-bbmQNS ZYEPr"
           color="grayBase"
         >
           <svg
@@ -5745,16 +5745,16 @@ exports[`Storyshots PullToRefresh API 1`] = `
         </h2>
       </div>
       <section
-        className="PullToRefresh-example__Content-leEnCL kTfXKc"
+        className="PullToRefresh-example__Content-leEnCL iwOklW"
       >
         <h1
-          className="PullToRefresh-example__StyledHeading-doARpL fhQJUH Heading__Heading-bbmQNS juYEDj"
+          className="PullToRefresh-example__StyledHeading-doARpL irHwOB Heading__Heading-bbmQNS cAAywR"
           color="white"
         >
           Pull me down
         </h1>
         <h3
-          className="PullToRefresh-example__StyledHeading-doARpL fhQJUH Heading__Heading-bbmQNS dAMrfO"
+          className="PullToRefresh-example__StyledHeading-doARpL irHwOB Heading__Heading-bbmQNS gURGr"
           color="white"
         >
           (API will respond after 3 seconds.)
@@ -5767,20 +5767,20 @@ exports[`Storyshots PullToRefresh API 1`] = `
 
 exports[`Storyshots Select API - ReadOnly 1`] = `
 <div
-  className="Select__Wrapper-eSbpzS iiHgqs"
+  className="Select__Wrapper-eSbpzS cNipaw"
 >
   <div
-    className="Select__StyledInputGroup-etiIHI eQWZKB InputGroup__InputGroup-jokkYF Gitcm"
+    className="Select__StyledInputGroup-etiIHI gXoJdS InputGroup__InputGroup-jokkYF ifCUQV"
   >
     <input
-      className="Input__Input-ixjKAz daZkvy"
+      className="Input__Input-ixjKAz dDXeoZ"
       kind="primary"
       placeholder={undefined}
       readOnly={true}
       value="value 2"
     />
     <button
-      className="Select__StyledButton-cTmWPL gSnzsA Button__Button-jkHDFw jLUUQp"
+      className="Select__StyledButton-cTmWPL fxHVbJ Button__Button-jkHDFw iqfXFv"
     >
       <svg
         fill="currentColor"
@@ -5796,7 +5796,7 @@ exports[`Storyshots Select API - ReadOnly 1`] = `
     </button>
   </div>
   <select
-    className="Select__StyledSelect-dmoCxq gcTFyD"
+    className="Select__StyledSelect-dmoCxq dRBUJU"
     onBlur={[Function]}
     onFocus={[Function]}
     readOnly={true}
@@ -5818,20 +5818,20 @@ exports[`Storyshots Select API - ReadOnly 1`] = `
 
 exports[`Storyshots Select With disabled props 1`] = `
 <div
-  className="Select__Wrapper-eSbpzS iiHgqs"
+  className="Select__Wrapper-eSbpzS cNipaw"
 >
   <div
-    className="Select__StyledInputGroup-etiIHI eQWZKB InputGroup__InputGroup-jokkYF Gitcm"
+    className="Select__StyledInputGroup-etiIHI gXoJdS InputGroup__InputGroup-jokkYF ifCUQV"
   >
     <input
-      className="Input__Input-ixjKAz daZkvy"
+      className="Input__Input-ixjKAz dDXeoZ"
       kind="primary"
       placeholder="選擇資料通道"
       readOnly={true}
       value=""
     />
     <button
-      className="Select__StyledButton-cTmWPL gSnzsA Button__Button-jkHDFw jLUUQp"
+      className="Select__StyledButton-cTmWPL fxHVbJ Button__Button-jkHDFw iqfXFv"
     >
       <svg
         fill="currentColor"
@@ -5847,7 +5847,7 @@ exports[`Storyshots Select With disabled props 1`] = `
     </button>
   </div>
   <select
-    className="Select__StyledSelect-dmoCxq gcTFyD"
+    className="Select__StyledSelect-dmoCxq dRBUJU"
     onBlur={[Function]}
     onChange={[Function]}
     onFocus={[Function]}
@@ -5881,20 +5881,20 @@ exports[`Storyshots Select With disabled props 1`] = `
 
 exports[`Storyshots Select With kind props 1`] = `
 <div
-  className="Select__Wrapper-eSbpzS iiHgqs"
+  className="Select__Wrapper-eSbpzS cNipaw"
 >
   <div
-    className="Select__StyledInputGroup-etiIHI eQWZKB InputGroup__InputGroup-jokkYF Gitcm"
+    className="Select__StyledInputGroup-etiIHI gXoJdS InputGroup__InputGroup-jokkYF ifCUQV"
   >
     <input
-      className="Input__Input-ixjKAz jGZesO"
+      className="Input__Input-ixjKAz cubRzB"
       kind="warning"
       placeholder={undefined}
       readOnly={true}
       value="value 2"
     />
     <button
-      className="Select__StyledButton-cTmWPL gSnzsA Button__Button-jkHDFw fNDFxg"
+      className="Select__StyledButton-cTmWPL fxHVbJ Button__Button-jkHDFw gxOvSG"
     >
       <svg
         fill="currentColor"
@@ -5910,7 +5910,7 @@ exports[`Storyshots Select With kind props 1`] = `
     </button>
   </div>
   <select
-    className="Select__StyledSelect-dmoCxq gcTFyD"
+    className="Select__StyledSelect-dmoCxq dRBUJU"
     onBlur={[Function]}
     onFocus={[Function]}
     readOnly={true}
@@ -5932,7 +5932,7 @@ exports[`Storyshots Select With kind props 1`] = `
 
 exports[`Storyshots Small API 1`] = `
 <small
-  className="Small__Small-eZiBK gQBpAl"
+  className="Small__Small-eZiBK hDqltl"
 >
   Small content
 </small>
@@ -5940,12 +5940,12 @@ exports[`Storyshots Small API 1`] = `
 
 exports[`Storyshots Small With color 1`] = `
 <div
-  className="P__P-KJbCR dnAaPu"
+  className="P__P-KJbCR jEbbdW"
   color="primary"
 >
   Nisi eu eiusmod cupidatat aute laboris commodo excepteur
   <small
-    className="Small__Small-eZiBK gQBpAl"
+    className="Small__Small-eZiBK hDqltl"
   >
      Small content 
   </small>
@@ -5955,11 +5955,11 @@ exports[`Storyshots Small With color 1`] = `
 
 exports[`Storyshots Small Within <P> 1`] = `
 <div
-  className="P__P-KJbCR huqyql"
+  className="P__P-KJbCR dPUstJ"
 >
   Nisi eu eiusmod cupidatat aute laboris commodo excepteur
   <small
-    className="Small__Small-eZiBK gQBpAl"
+    className="Small__Small-eZiBK hDqltl"
   >
      Small content 
   </small>
@@ -5969,7 +5969,7 @@ exports[`Storyshots Small Within <P> 1`] = `
 
 exports[`Storyshots SpaceTop API 1`] = `
 <div
-  className="SpaceTop__SpaceTop-dnBlOM cAtjwX"
+  className="SpaceTop__SpaceTop-dnBlOM jOWzCj"
   height={20}
 >
   SpaceTop content
@@ -5978,10 +5978,10 @@ exports[`Storyshots SpaceTop API 1`] = `
 
 exports[`Storyshots Spin API 1`] = `
 <div
-  className="Spin__Spin-cdyXhD emAbgi"
+  className="Spin__Spin-cdyXhD fbwVyx"
 >
   <div
-    className="Spin-example__ContentWrapper-eYWZhG jhfWmc"
+    className="Spin-example__ContentWrapper-eYWZhG kPjphD"
   >
     Content
   </div>
@@ -5990,7 +5990,7 @@ exports[`Storyshots Spin API 1`] = `
 
 exports[`Storyshots StatusLight API 1`] = `
 <svg
-  className="StatusLight__Svg-IVkxE heGIpa"
+  className="StatusLight__Svg-IVkxE gOaNbK"
   color="grayDark"
   viewBox="0 0 20 20"
 >
@@ -6004,7 +6004,7 @@ exports[`Storyshots StatusLight API 1`] = `
 
 exports[`Storyshots StatusLight Custom width 1`] = `
 <svg
-  className="StatusLight-example__StyledStatusLight-gJJZrm jAEoyj StatusLight__Svg-IVkxE hJNOzP"
+  className="StatusLight-example__StyledStatusLight-gJJZrm kTaMvP StatusLight__Svg-IVkxE ixDqGa"
   color="warning"
   viewBox="0 0 20 20"
 >
@@ -6020,7 +6020,7 @@ exports[`Storyshots StatusLight With color props 1`] = `
 <div>
   <div>
     <svg
-      className="StatusLight__Svg-IVkxE hnicAH"
+      className="StatusLight__Svg-IVkxE ckFTJT"
       color="black"
       viewBox="0 0 20 20"
     >
@@ -6034,7 +6034,7 @@ exports[`Storyshots StatusLight With color props 1`] = `
   </div>
   <div>
     <svg
-      className="StatusLight__Svg-IVkxE dvdNlr"
+      className="StatusLight__Svg-IVkxE GHmUE"
       color="grayBase"
       viewBox="0 0 20 20"
     >
@@ -6048,7 +6048,7 @@ exports[`Storyshots StatusLight With color props 1`] = `
   </div>
   <div>
     <svg
-      className="StatusLight__Svg-IVkxE heGIpa"
+      className="StatusLight__Svg-IVkxE gOaNbK"
       color="grayDark"
       viewBox="0 0 20 20"
     >
@@ -6062,7 +6062,7 @@ exports[`Storyshots StatusLight With color props 1`] = `
   </div>
   <div>
     <svg
-      className="StatusLight__Svg-IVkxE kSlPaX"
+      className="StatusLight__Svg-IVkxE ljhtzs"
       color="grayLight"
       viewBox="0 0 20 20"
     >
@@ -6076,7 +6076,7 @@ exports[`Storyshots StatusLight With color props 1`] = `
   </div>
   <div>
     <svg
-      className="StatusLight__Svg-IVkxE cYnaF"
+      className="StatusLight__Svg-IVkxE esWRhP"
       color="white"
       viewBox="0 0 20 20"
     >
@@ -6090,7 +6090,7 @@ exports[`Storyshots StatusLight With color props 1`] = `
   </div>
   <div>
     <svg
-      className="StatusLight__Svg-IVkxE kSlPaX"
+      className="StatusLight__Svg-IVkxE ljhtzs"
       color="default"
       viewBox="0 0 20 20"
     >
@@ -6104,7 +6104,7 @@ exports[`Storyshots StatusLight With color props 1`] = `
   </div>
   <div>
     <svg
-      className="StatusLight__Svg-IVkxE fmAywI"
+      className="StatusLight__Svg-IVkxE csVEzX"
       color="primary"
       viewBox="0 0 20 20"
     >
@@ -6118,7 +6118,7 @@ exports[`Storyshots StatusLight With color props 1`] = `
   </div>
   <div>
     <svg
-      className="StatusLight__Svg-IVkxE geyPxt"
+      className="StatusLight__Svg-IVkxE efztEk"
       color="success"
       viewBox="0 0 20 20"
     >
@@ -6132,7 +6132,7 @@ exports[`Storyshots StatusLight With color props 1`] = `
   </div>
   <div>
     <svg
-      className="StatusLight__Svg-IVkxE hNlpox"
+      className="StatusLight__Svg-IVkxE hgyLvg"
       color="error"
       viewBox="0 0 20 20"
     >
@@ -6146,7 +6146,7 @@ exports[`Storyshots StatusLight With color props 1`] = `
   </div>
   <div>
     <svg
-      className="StatusLight__Svg-IVkxE hJNOzP"
+      className="StatusLight__Svg-IVkxE ixDqGa"
       color="warning"
       viewBox="0 0 20 20"
     >
@@ -6165,12 +6165,12 @@ exports[`Storyshots Switch API 1`] = `
 <div>
   <div
     checked={false}
-    className="Switch__Switch-iwxo kHzQqK"
+    className="Switch__Switch-iwxo jSKZSz"
     kind="success"
   />
   <div
     checked={true}
-    className="Switch__Switch-iwxo ifDnsZ"
+    className="Switch__Switch-iwxo ipuZOX"
     kind="success"
   />
 </div>
@@ -6179,7 +6179,7 @@ exports[`Storyshots Switch API 1`] = `
 exports[`Storyshots Switch Overriding style 1`] = `
 <div
   checked={false}
-  className="Switch-example__StyledSwitch-iHaxSV XngkH Switch__Switch-iwxo kHzQqK"
+  className="Switch-example__StyledSwitch-iHaxSV iCqpmS Switch__Switch-iwxo jSKZSz"
   kind="success"
   onClick={[Function]}
 />
@@ -6188,7 +6188,7 @@ exports[`Storyshots Switch Overriding style 1`] = `
 exports[`Storyshots Switch Stateful switch 1`] = `
 <div
   checked={false}
-  className="Switch__Switch-iwxo kHzQqK"
+  className="Switch__Switch-iwxo jSKZSz"
   kind="success"
   onClick={[Function]}
 />
@@ -6198,27 +6198,27 @@ exports[`Storyshots Switch With kind props 1`] = `
 <div>
   <div
     checked={true}
-    className="Switch__Switch-iwxo hlssYE"
+    className="Switch__Switch-iwxo bgJrMc"
     kind="default"
   />
   <div
     checked={true}
-    className="Switch__Switch-iwxo gFZbFJ"
+    className="Switch__Switch-iwxo hTobWj"
     kind="primary"
   />
   <div
     checked={true}
-    className="Switch__Switch-iwxo ifDnsZ"
+    className="Switch__Switch-iwxo ipuZOX"
     kind="success"
   />
   <div
     checked={true}
-    className="Switch__Switch-iwxo UIXdu"
+    className="Switch__Switch-iwxo kFcFth"
     kind="error"
   />
   <div
     checked={true}
-    className="Switch__Switch-iwxo bmsKrn"
+    className="Switch__Switch-iwxo hLgznr"
     kind="warning"
   />
 </div>
@@ -6227,7 +6227,7 @@ exports[`Storyshots Switch With kind props 1`] = `
 exports[`Storyshots Switch With scaling 1`] = `
 <div
   checked={false}
-  className="Switch-example__ScaledSwitch-khorHw fcaaTH Switch__Switch-iwxo kHzQqK"
+  className="Switch-example__ScaledSwitch-khorHw cuMUrq Switch__Switch-iwxo jSKZSz"
   kind="primary"
   onClick={[Function]}
 />
@@ -6236,7 +6236,7 @@ exports[`Storyshots Switch With scaling 1`] = `
 exports[`Storyshots TabItem API 1`] = `
 <div>
   <div
-    className="TabItem__Item-vxESp gEEikE"
+    className="TabItem__Item-vxESp cFGGaG"
     color="primary"
     onClick={[Function]}
     value="key"
@@ -6244,7 +6244,7 @@ exports[`Storyshots TabItem API 1`] = `
     TabItem
   </div>
   <div
-    className="TabItem__Item-vxESp dgviiz"
+    className="TabItem__Item-vxESp cZnxYc"
     color="primary"
     onClick={[Function]}
     value="key"
@@ -6257,7 +6257,7 @@ exports[`Storyshots TabItem API 1`] = `
 exports[`Storyshots TabItem With color props 1`] = `
 <div>
   <div
-    className="TabItem__Item-vxESp cnWVdd"
+    className="TabItem__Item-vxESp cJVdDY"
     color="warning"
     onClick={[Function]}
     value={1}
@@ -6265,7 +6265,7 @@ exports[`Storyshots TabItem With color props 1`] = `
     TabItem 1
   </div>
   <div
-    className="TabItem__Item-vxESp jIVMHy"
+    className="TabItem__Item-vxESp cemonx"
     color="warning"
     onClick={[Function]}
     value={2}
@@ -6278,7 +6278,7 @@ exports[`Storyshots TabItem With color props 1`] = `
 exports[`Storyshots TabItem With state 1`] = `
 <div>
   <div
-    className="TabItem__Item-vxESp gEEikE"
+    className="TabItem__Item-vxESp cFGGaG"
     color="primary"
     onClick={[Function]}
     value={1}
@@ -6286,7 +6286,7 @@ exports[`Storyshots TabItem With state 1`] = `
     Tab 1
   </div>
   <div
-    className="TabItem__Item-vxESp gEEikE"
+    className="TabItem__Item-vxESp cFGGaG"
     color="primary"
     onClick={[Function]}
     value={2}
@@ -6294,7 +6294,7 @@ exports[`Storyshots TabItem With state 1`] = `
     Tab 2
   </div>
   <div
-    className="TabItem__Item-vxESp gEEikE"
+    className="TabItem__Item-vxESp cFGGaG"
     color="primary"
     onClick={[Function]}
     value={3}
@@ -6306,7 +6306,7 @@ exports[`Storyshots TabItem With state 1`] = `
 
 exports[`Storyshots Table API 1`] = `
 <table
-  className="Table__Table-fLBySN gnDJdq"
+  className="Table__Table-fLBySN cznuZY"
   style={
     Object {
       "backgroundColor": "white",
@@ -6350,7 +6350,7 @@ exports[`Storyshots Table API 1`] = `
 
 exports[`Storyshots TextCenter API 1`] = `
 <div
-  className="TextCenter__TextCenter-eVyHWC jhOyqM"
+  className="TextCenter__TextCenter-eVyHWC hStDnm"
 >
   Center
 </div>
@@ -6358,7 +6358,7 @@ exports[`Storyshots TextCenter API 1`] = `
 
 exports[`Storyshots Textarea API 1`] = `
 <textarea
-  className="Textarea__Textarea-dEcNVt haEdAh"
+  className="Textarea__Textarea-dEcNVt WlyWE"
   kind="primary"
   placeholder="placeholder"
   rows="3"
@@ -6367,30 +6367,30 @@ exports[`Storyshots Textarea API 1`] = `
 
 exports[`Storyshots Textarea With kind props 1`] = `
 <div
-  className="Textarea-example__Wrapper-kusIty bBsgXW"
+  className="Textarea-example__Wrapper-kusIty ljIZih"
 >
   <textarea
-    className="Textarea__Textarea-dEcNVt fvmhgP"
+    className="Textarea__Textarea-dEcNVt rTqON"
     kind="default"
     placeholder="default"
   />
   <textarea
-    className="Textarea__Textarea-dEcNVt haEdAh"
+    className="Textarea__Textarea-dEcNVt WlyWE"
     kind="primary"
     placeholder="primary"
   />
   <textarea
-    className="Textarea__Textarea-dEcNVt kdksoR"
+    className="Textarea__Textarea-dEcNVt gWQuJn"
     kind="success"
     placeholder="success"
   />
   <textarea
-    className="Textarea__Textarea-dEcNVt cYouPi"
+    className="Textarea__Textarea-dEcNVt tLDXw"
     kind="error"
     placeholder="error"
   />
   <textarea
-    className="Textarea__Textarea-dEcNVt kyKxSk"
+    className="Textarea__Textarea-dEcNVt bUBFVI"
     kind="warning"
     placeholder="warning"
   />
@@ -6399,11 +6399,11 @@ exports[`Storyshots Textarea With kind props 1`] = `
 
 exports[`Storyshots Toast API 1`] = `
 <div
-  className="Toast__StyledCard-dKvPEv xXMjE Card__Card-cAIRri hUtceH"
+  className="Toast__StyledCard-dKvPEv evXmEw Card__Card-cAIRri cFZqUx"
   kind="primary"
 >
   <p
-    className="Toast__StyledP-eeALRT cWNzuc P__P-KJbCR huqyql"
+    className="Toast__StyledP-eeALRT ATQqI P__P-KJbCR dPUstJ"
     kind="primary"
   >
     Success! You have delete the item.
@@ -6413,14 +6413,14 @@ exports[`Storyshots Toast API 1`] = `
 
 exports[`Storyshots Toast With kind props 1`] = `
 <div
-  className="Toast-example__DemoWrapper-bLIpHv dcOcvf"
+  className="Toast-example__DemoWrapper-bLIpHv kOeLSA"
 >
   <div
-    className="Toast__StyledCard-dKvPEv fGSYja Card__Card-cAIRri hUtceH"
+    className="Toast__StyledCard-dKvPEv hhZedz Card__Card-cAIRri cFZqUx"
     kind="default"
   >
     <div
-      className="Toast__StyledP-eeALRT ddnvXK P__P-KJbCR huqyql"
+      className="Toast__StyledP-eeALRT cGOpHK P__P-KJbCR dPUstJ"
       kind="default"
     >
       default
@@ -6428,11 +6428,11 @@ exports[`Storyshots Toast With kind props 1`] = `
     </div>
   </div>
   <div
-    className="Toast__StyledCard-dKvPEv xXMjE Card__Card-cAIRri hUtceH"
+    className="Toast__StyledCard-dKvPEv evXmEw Card__Card-cAIRri cFZqUx"
     kind="primary"
   >
     <div
-      className="Toast__StyledP-eeALRT cWNzuc P__P-KJbCR huqyql"
+      className="Toast__StyledP-eeALRT ATQqI P__P-KJbCR dPUstJ"
       kind="primary"
     >
       primary
@@ -6440,11 +6440,11 @@ exports[`Storyshots Toast With kind props 1`] = `
     </div>
   </div>
   <div
-    className="Toast__StyledCard-dKvPEv iRqXRu Card__Card-cAIRri hUtceH"
+    className="Toast__StyledCard-dKvPEv ebczVb Card__Card-cAIRri cFZqUx"
     kind="success"
   >
     <div
-      className="Toast__StyledP-eeALRT gbzmoi P__P-KJbCR huqyql"
+      className="Toast__StyledP-eeALRT hLEXIQ P__P-KJbCR dPUstJ"
       kind="success"
     >
       success
@@ -6452,11 +6452,11 @@ exports[`Storyshots Toast With kind props 1`] = `
     </div>
   </div>
   <div
-    className="Toast__StyledCard-dKvPEv kcfhNy Card__Card-cAIRri hUtceH"
+    className="Toast__StyledCard-dKvPEv bUVpVy Card__Card-cAIRri cFZqUx"
     kind="error"
   >
     <div
-      className="Toast__StyledP-eeALRT bSnEnl P__P-KJbCR huqyql"
+      className="Toast__StyledP-eeALRT fEWtNO P__P-KJbCR dPUstJ"
       kind="error"
     >
       error
@@ -6464,11 +6464,11 @@ exports[`Storyshots Toast With kind props 1`] = `
     </div>
   </div>
   <div
-    className="Toast__StyledCard-dKvPEv NEOeg Card__Card-cAIRri hUtceH"
+    className="Toast__StyledCard-dKvPEv fRIKqc Card__Card-cAIRri cFZqUx"
     kind="warning"
   >
     <div
-      className="Toast__StyledP-eeALRT cmavJn P__P-KJbCR huqyql"
+      className="Toast__StyledP-eeALRT isBxtk P__P-KJbCR dPUstJ"
       kind="warning"
     >
       warning

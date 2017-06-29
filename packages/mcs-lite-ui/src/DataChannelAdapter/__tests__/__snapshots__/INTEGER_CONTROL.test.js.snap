@@ -21,7 +21,7 @@ exports[`should render INTEGER_CONTROL correctly with default value to empty 1`]
   >
     <ControlNumber__Container>
       <div
-        className="ControlNumber__Container-gmlYuy rzEmK"
+        className="ControlNumber__Container-gmlYuy dBXKqA"
       >
         <Input
           focus={false}
@@ -32,7 +32,7 @@ exports[`should render INTEGER_CONTROL correctly with default value to empty 1`]
           value=""
         >
           <input
-            className="Input__Input-ixjKAz daZkvy"
+            className="Input__Input-ixjKAz dDXeoZ"
             kind="primary"
             onChange={[Function]}
             placeholder="Integer only"
@@ -42,7 +42,7 @@ exports[`should render INTEGER_CONTROL correctly with default value to empty 1`]
         </Input>
         <ControlNumber__ButtonWrapper>
           <div
-            className="ControlNumber__ButtonWrapper-iczkcP gmGCvf"
+            className="ControlNumber__ButtonWrapper-iczkcP iBHdKt"
           >
             <ButtonClear
               onClick={[Function]}
@@ -51,20 +51,20 @@ exports[`should render INTEGER_CONTROL correctly with default value to empty 1`]
                 onClick={[Function]}
               >
                 <Component
-                  className="P__P-KJbCR huqyql"
+                  className="P__P-KJbCR dPUstJ"
                   onClick={[Function]}
                 >
                   <div
-                    className="P__P-KJbCR huqyql"
+                    className="P__P-KJbCR dPUstJ"
                     onClick={[Function]}
                   >
                     <ButtonClear__StyledA>
                       <A
-                        className="ButtonClear__StyledA-hPckxD cJqJoD"
+                        className="ButtonClear__StyledA-hPckxD gdbAWr"
                         color="primary"
                       >
                         <a
-                          className="ButtonClear__StyledA-hPckxD cJqJoD A__A-cCPuKx fpwonb"
+                          className="ButtonClear__StyledA-hPckxD gdbAWr A__A-cCPuKx eNMAVf"
                           color="primary"
                         >
                           <IconDelete
@@ -104,7 +104,7 @@ exports[`should render INTEGER_CONTROL correctly with default value to empty 1`]
               <BaseComponent
                 active={false}
                 block={false}
-                className="Button__Button-jkHDFw hzHJoG"
+                className="Button__Button-jkHDFw fcrwCh"
                 component="button"
                 disabled={false}
                 kind="primary"
@@ -114,7 +114,7 @@ exports[`should render INTEGER_CONTROL correctly with default value to empty 1`]
                 square={false}
               >
                 <button
-                  className="Button__Button-jkHDFw hzHJoG"
+                  className="Button__Button-jkHDFw fcrwCh"
                   onClick={[Function]}
                 >
                   Ok
@@ -155,21 +155,21 @@ exports[`should render INTEGER_CONTROL correctly with unit 1`] = `
   >
     <ControlNumber__Container>
       <div
-        className="ControlNumber__Container-gmlYuy rzEmK"
+        className="ControlNumber__Container-gmlYuy dBXKqA"
       >
         <ControlNumber__Unixtype
           color="grayBase"
         >
           <P
-            className="ControlNumber__Unixtype-hOgmLf cWpJIG"
+            className="ControlNumber__Unixtype-hOgmLf iwcLfq"
             color="grayBase"
           >
             <Component
-              className="ControlNumber__Unixtype-hOgmLf cWpJIG P__P-KJbCR kHKeHO"
+              className="ControlNumber__Unixtype-hOgmLf iwcLfq P__P-KJbCR hrSHif"
               color="grayBase"
             >
               <p
-                className="ControlNumber__Unixtype-hOgmLf cWpJIG P__P-KJbCR kHKeHO"
+                className="ControlNumber__Unixtype-hOgmLf iwcLfq P__P-KJbCR hrSHif"
                 color="grayBase"
               >
                 單位：攝氏
@@ -186,7 +186,7 @@ exports[`should render INTEGER_CONTROL correctly with unit 1`] = `
           value={1}
         >
           <input
-            className="Input__Input-ixjKAz daZkvy"
+            className="Input__Input-ixjKAz dDXeoZ"
             kind="primary"
             onChange={[Function]}
             placeholder="Integer only"
@@ -196,7 +196,7 @@ exports[`should render INTEGER_CONTROL correctly with unit 1`] = `
         </Input>
         <ControlNumber__ButtonWrapper>
           <div
-            className="ControlNumber__ButtonWrapper-iczkcP gmGCvf"
+            className="ControlNumber__ButtonWrapper-iczkcP iBHdKt"
           >
             <ButtonClear
               onClick={[Function]}
@@ -205,20 +205,20 @@ exports[`should render INTEGER_CONTROL correctly with unit 1`] = `
                 onClick={[Function]}
               >
                 <Component
-                  className="P__P-KJbCR huqyql"
+                  className="P__P-KJbCR dPUstJ"
                   onClick={[Function]}
                 >
                   <div
-                    className="P__P-KJbCR huqyql"
+                    className="P__P-KJbCR dPUstJ"
                     onClick={[Function]}
                   >
                     <ButtonClear__StyledA>
                       <A
-                        className="ButtonClear__StyledA-hPckxD cJqJoD"
+                        className="ButtonClear__StyledA-hPckxD gdbAWr"
                         color="primary"
                       >
                         <a
-                          className="ButtonClear__StyledA-hPckxD cJqJoD A__A-cCPuKx fpwonb"
+                          className="ButtonClear__StyledA-hPckxD gdbAWr A__A-cCPuKx eNMAVf"
                           color="primary"
                         >
                           <IconDelete
@@ -258,7 +258,7 @@ exports[`should render INTEGER_CONTROL correctly with unit 1`] = `
               <BaseComponent
                 active={false}
                 block={false}
-                className="Button__Button-jkHDFw hzHJoG"
+                className="Button__Button-jkHDFw fcrwCh"
                 component="button"
                 disabled={false}
                 kind="primary"
@@ -268,7 +268,7 @@ exports[`should render INTEGER_CONTROL correctly with unit 1`] = `
                 square={false}
               >
                 <button
-                  className="Button__Button-jkHDFw hzHJoG"
+                  className="Button__Button-jkHDFw fcrwCh"
                   onClick={[Function]}
                 >
                   Ok
@@ -306,7 +306,7 @@ exports[`should render INTEGER_CONTROL correctly with value 1`] = `
   >
     <ControlNumber__Container>
       <div
-        className="ControlNumber__Container-gmlYuy rzEmK"
+        className="ControlNumber__Container-gmlYuy dBXKqA"
       >
         <Input
           focus={false}
@@ -317,7 +317,7 @@ exports[`should render INTEGER_CONTROL correctly with value 1`] = `
           value={1}
         >
           <input
-            className="Input__Input-ixjKAz daZkvy"
+            className="Input__Input-ixjKAz dDXeoZ"
             kind="primary"
             onChange={[Function]}
             placeholder="Integer only"
@@ -327,7 +327,7 @@ exports[`should render INTEGER_CONTROL correctly with value 1`] = `
         </Input>
         <ControlNumber__ButtonWrapper>
           <div
-            className="ControlNumber__ButtonWrapper-iczkcP gmGCvf"
+            className="ControlNumber__ButtonWrapper-iczkcP iBHdKt"
           >
             <ButtonClear
               onClick={[Function]}
@@ -336,20 +336,20 @@ exports[`should render INTEGER_CONTROL correctly with value 1`] = `
                 onClick={[Function]}
               >
                 <Component
-                  className="P__P-KJbCR huqyql"
+                  className="P__P-KJbCR dPUstJ"
                   onClick={[Function]}
                 >
                   <div
-                    className="P__P-KJbCR huqyql"
+                    className="P__P-KJbCR dPUstJ"
                     onClick={[Function]}
                   >
                     <ButtonClear__StyledA>
                       <A
-                        className="ButtonClear__StyledA-hPckxD cJqJoD"
+                        className="ButtonClear__StyledA-hPckxD gdbAWr"
                         color="primary"
                       >
                         <a
-                          className="ButtonClear__StyledA-hPckxD cJqJoD A__A-cCPuKx fpwonb"
+                          className="ButtonClear__StyledA-hPckxD gdbAWr A__A-cCPuKx eNMAVf"
                           color="primary"
                         >
                           <IconDelete
@@ -389,7 +389,7 @@ exports[`should render INTEGER_CONTROL correctly with value 1`] = `
               <BaseComponent
                 active={false}
                 block={false}
-                className="Button__Button-jkHDFw hzHJoG"
+                className="Button__Button-jkHDFw fcrwCh"
                 component="button"
                 disabled={false}
                 kind="primary"
@@ -399,7 +399,7 @@ exports[`should render INTEGER_CONTROL correctly with value 1`] = `
                 square={false}
               >
                 <button
-                  className="Button__Button-jkHDFw hzHJoG"
+                  className="Button__Button-jkHDFw fcrwCh"
                   onClick={[Function]}
                 >
                   Ok
@@ -437,7 +437,7 @@ exports[`should render INTEGER_CONTROL correctly with zero 1`] = `
   >
     <ControlNumber__Container>
       <div
-        className="ControlNumber__Container-gmlYuy rzEmK"
+        className="ControlNumber__Container-gmlYuy dBXKqA"
       >
         <Input
           focus={false}
@@ -448,7 +448,7 @@ exports[`should render INTEGER_CONTROL correctly with zero 1`] = `
           value={0}
         >
           <input
-            className="Input__Input-ixjKAz daZkvy"
+            className="Input__Input-ixjKAz dDXeoZ"
             kind="primary"
             onChange={[Function]}
             placeholder="Integer only"
@@ -458,7 +458,7 @@ exports[`should render INTEGER_CONTROL correctly with zero 1`] = `
         </Input>
         <ControlNumber__ButtonWrapper>
           <div
-            className="ControlNumber__ButtonWrapper-iczkcP gmGCvf"
+            className="ControlNumber__ButtonWrapper-iczkcP iBHdKt"
           >
             <ButtonClear
               onClick={[Function]}
@@ -467,20 +467,20 @@ exports[`should render INTEGER_CONTROL correctly with zero 1`] = `
                 onClick={[Function]}
               >
                 <Component
-                  className="P__P-KJbCR huqyql"
+                  className="P__P-KJbCR dPUstJ"
                   onClick={[Function]}
                 >
                   <div
-                    className="P__P-KJbCR huqyql"
+                    className="P__P-KJbCR dPUstJ"
                     onClick={[Function]}
                   >
                     <ButtonClear__StyledA>
                       <A
-                        className="ButtonClear__StyledA-hPckxD cJqJoD"
+                        className="ButtonClear__StyledA-hPckxD gdbAWr"
                         color="primary"
                       >
                         <a
-                          className="ButtonClear__StyledA-hPckxD cJqJoD A__A-cCPuKx fpwonb"
+                          className="ButtonClear__StyledA-hPckxD gdbAWr A__A-cCPuKx eNMAVf"
                           color="primary"
                         >
                           <IconDelete
@@ -520,7 +520,7 @@ exports[`should render INTEGER_CONTROL correctly with zero 1`] = `
               <BaseComponent
                 active={false}
                 block={false}
-                className="Button__Button-jkHDFw hzHJoG"
+                className="Button__Button-jkHDFw fcrwCh"
                 component="button"
                 disabled={false}
                 kind="primary"
@@ -530,7 +530,7 @@ exports[`should render INTEGER_CONTROL correctly with zero 1`] = `
                 square={false}
               >
                 <button
-                  className="Button__Button-jkHDFw hzHJoG"
+                  className="Button__Button-jkHDFw fcrwCh"
                   onClick={[Function]}
                 >
                   Ok

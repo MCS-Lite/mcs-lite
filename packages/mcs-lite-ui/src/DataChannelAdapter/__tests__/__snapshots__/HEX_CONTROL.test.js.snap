@@ -21,7 +21,7 @@ exports[`should render HEX_CONTROL correctly with default value to empty 1`] = `
   >
     <ControlString__Container>
       <div
-        className="ControlString__Container-gxvWtt eRKIhm"
+        className="ControlString__Container-gxvWtt fBhBEN"
       >
         <ControlString__StyledTextarea
           onChange={[Function]}
@@ -29,14 +29,14 @@ exports[`should render HEX_CONTROL correctly with default value to empty 1`] = `
           value=""
         >
           <Textarea
-            className="ControlString__StyledTextarea-jUHsJW krVxuY"
+            className="ControlString__StyledTextarea-jUHsJW ccWikO"
             kind="primary"
             onChange={[Function]}
             placeholder="Hex only"
             value=""
           >
             <textarea
-              className="ControlString__StyledTextarea-jUHsJW krVxuY Textarea__Textarea-dEcNVt haEdAh"
+              className="ControlString__StyledTextarea-jUHsJW ccWikO Textarea__Textarea-dEcNVt WlyWE"
               kind="primary"
               onChange={[Function]}
               placeholder="Hex only"
@@ -46,7 +46,7 @@ exports[`should render HEX_CONTROL correctly with default value to empty 1`] = `
         </ControlString__StyledTextarea>
         <ControlString__ButtonWrapper>
           <div
-            className="ControlString__ButtonWrapper-kaocaH fiUlWA"
+            className="ControlString__ButtonWrapper-kaocaH fOhLBP"
           >
             <ButtonClear
               onClick={[Function]}
@@ -55,20 +55,20 @@ exports[`should render HEX_CONTROL correctly with default value to empty 1`] = `
                 onClick={[Function]}
               >
                 <Component
-                  className="P__P-KJbCR huqyql"
+                  className="P__P-KJbCR dPUstJ"
                   onClick={[Function]}
                 >
                   <div
-                    className="P__P-KJbCR huqyql"
+                    className="P__P-KJbCR dPUstJ"
                     onClick={[Function]}
                   >
                     <ButtonClear__StyledA>
                       <A
-                        className="ButtonClear__StyledA-hPckxD cJqJoD"
+                        className="ButtonClear__StyledA-hPckxD gdbAWr"
                         color="primary"
                       >
                         <a
-                          className="ButtonClear__StyledA-hPckxD cJqJoD A__A-cCPuKx fpwonb"
+                          className="ButtonClear__StyledA-hPckxD gdbAWr A__A-cCPuKx eNMAVf"
                           color="primary"
                         >
                           <IconDelete
@@ -108,7 +108,7 @@ exports[`should render HEX_CONTROL correctly with default value to empty 1`] = `
               <BaseComponent
                 active={false}
                 block={false}
-                className="Button__Button-jkHDFw hzHJoG"
+                className="Button__Button-jkHDFw fcrwCh"
                 component="button"
                 disabled={false}
                 kind="primary"
@@ -118,7 +118,7 @@ exports[`should render HEX_CONTROL correctly with default value to empty 1`] = `
                 square={false}
               >
                 <button
-                  className="Button__Button-jkHDFw hzHJoG"
+                  className="Button__Button-jkHDFw fcrwCh"
                   onClick={[Function]}
                 >
                   Ok
@@ -156,7 +156,7 @@ exports[`should render HEX_CONTROL correctly with empty string 1`] = `
   >
     <ControlString__Container>
       <div
-        className="ControlString__Container-gxvWtt eRKIhm"
+        className="ControlString__Container-gxvWtt fBhBEN"
       >
         <ControlString__StyledTextarea
           onChange={[Function]}
@@ -164,14 +164,14 @@ exports[`should render HEX_CONTROL correctly with empty string 1`] = `
           value=""
         >
           <Textarea
-            className="ControlString__StyledTextarea-jUHsJW krVxuY"
+            className="ControlString__StyledTextarea-jUHsJW ccWikO"
             kind="primary"
             onChange={[Function]}
             placeholder="Hex only"
             value=""
           >
             <textarea
-              className="ControlString__StyledTextarea-jUHsJW krVxuY Textarea__Textarea-dEcNVt haEdAh"
+              className="ControlString__StyledTextarea-jUHsJW ccWikO Textarea__Textarea-dEcNVt WlyWE"
               kind="primary"
               onChange={[Function]}
               placeholder="Hex only"
@@ -181,7 +181,7 @@ exports[`should render HEX_CONTROL correctly with empty string 1`] = `
         </ControlString__StyledTextarea>
         <ControlString__ButtonWrapper>
           <div
-            className="ControlString__ButtonWrapper-kaocaH fiUlWA"
+            className="ControlString__ButtonWrapper-kaocaH fOhLBP"
           >
             <ButtonClear
               onClick={[Function]}
@@ -190,20 +190,20 @@ exports[`should render HEX_CONTROL correctly with empty string 1`] = `
                 onClick={[Function]}
               >
                 <Component
-                  className="P__P-KJbCR huqyql"
+                  className="P__P-KJbCR dPUstJ"
                   onClick={[Function]}
                 >
                   <div
-                    className="P__P-KJbCR huqyql"
+                    className="P__P-KJbCR dPUstJ"
                     onClick={[Function]}
                   >
                     <ButtonClear__StyledA>
                       <A
-                        className="ButtonClear__StyledA-hPckxD cJqJoD"
+                        className="ButtonClear__StyledA-hPckxD gdbAWr"
                         color="primary"
                       >
                         <a
-                          className="ButtonClear__StyledA-hPckxD cJqJoD A__A-cCPuKx fpwonb"
+                          className="ButtonClear__StyledA-hPckxD gdbAWr A__A-cCPuKx eNMAVf"
                           color="primary"
                         >
                           <IconDelete
@@ -243,7 +243,7 @@ exports[`should render HEX_CONTROL correctly with empty string 1`] = `
               <BaseComponent
                 active={false}
                 block={false}
-                className="Button__Button-jkHDFw hzHJoG"
+                className="Button__Button-jkHDFw fcrwCh"
                 component="button"
                 disabled={false}
                 kind="primary"
@@ -253,7 +253,7 @@ exports[`should render HEX_CONTROL correctly with empty string 1`] = `
                 square={false}
               >
                 <button
-                  className="Button__Button-jkHDFw hzHJoG"
+                  className="Button__Button-jkHDFw fcrwCh"
                   onClick={[Function]}
                 >
                   Ok
@@ -291,7 +291,7 @@ exports[`should render HEX_CONTROL correctly with value 1`] = `
   >
     <ControlString__Container>
       <div
-        className="ControlString__Container-gxvWtt eRKIhm"
+        className="ControlString__Container-gxvWtt fBhBEN"
       >
         <ControlString__StyledTextarea
           onChange={[Function]}
@@ -299,14 +299,14 @@ exports[`should render HEX_CONTROL correctly with value 1`] = `
           value="michaelhsu"
         >
           <Textarea
-            className="ControlString__StyledTextarea-jUHsJW krVxuY"
+            className="ControlString__StyledTextarea-jUHsJW ccWikO"
             kind="primary"
             onChange={[Function]}
             placeholder="Hex only"
             value="michaelhsu"
           >
             <textarea
-              className="ControlString__StyledTextarea-jUHsJW krVxuY Textarea__Textarea-dEcNVt haEdAh"
+              className="ControlString__StyledTextarea-jUHsJW ccWikO Textarea__Textarea-dEcNVt WlyWE"
               kind="primary"
               onChange={[Function]}
               placeholder="Hex only"
@@ -316,7 +316,7 @@ exports[`should render HEX_CONTROL correctly with value 1`] = `
         </ControlString__StyledTextarea>
         <ControlString__ButtonWrapper>
           <div
-            className="ControlString__ButtonWrapper-kaocaH fiUlWA"
+            className="ControlString__ButtonWrapper-kaocaH fOhLBP"
           >
             <ButtonClear
               onClick={[Function]}
@@ -325,20 +325,20 @@ exports[`should render HEX_CONTROL correctly with value 1`] = `
                 onClick={[Function]}
               >
                 <Component
-                  className="P__P-KJbCR huqyql"
+                  className="P__P-KJbCR dPUstJ"
                   onClick={[Function]}
                 >
                   <div
-                    className="P__P-KJbCR huqyql"
+                    className="P__P-KJbCR dPUstJ"
                     onClick={[Function]}
                   >
                     <ButtonClear__StyledA>
                       <A
-                        className="ButtonClear__StyledA-hPckxD cJqJoD"
+                        className="ButtonClear__StyledA-hPckxD gdbAWr"
                         color="primary"
                       >
                         <a
-                          className="ButtonClear__StyledA-hPckxD cJqJoD A__A-cCPuKx fpwonb"
+                          className="ButtonClear__StyledA-hPckxD gdbAWr A__A-cCPuKx eNMAVf"
                           color="primary"
                         >
                           <IconDelete
@@ -378,7 +378,7 @@ exports[`should render HEX_CONTROL correctly with value 1`] = `
               <BaseComponent
                 active={false}
                 block={false}
-                className="Button__Button-jkHDFw hzHJoG"
+                className="Button__Button-jkHDFw fcrwCh"
                 component="button"
                 disabled={false}
                 kind="primary"
@@ -388,7 +388,7 @@ exports[`should render HEX_CONTROL correctly with value 1`] = `
                 square={false}
               >
                 <button
-                  className="Button__Button-jkHDFw hzHJoG"
+                  className="Button__Button-jkHDFw fcrwCh"
                   onClick={[Function]}
                 >
                   Ok
