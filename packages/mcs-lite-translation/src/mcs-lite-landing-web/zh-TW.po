@@ -4,13 +4,14 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "MIME-Version: 1.0\n"
-"X-Generator: Poedit 1.8.11\n"
+"X-Generator: Poedit 2.0.2\n"
 "Project-Id-Version: \n"
 "PO-Revision-Date: \n"
 "Language-Team: \n"
-"Last-Translator: \n"
+"Last-Translator: Daria Chen <smartexist@gmail.com>\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "Language: zh_TW\n"
+"X-Poedit-KeywordsList: MCS Lite\n"
 
 #. [App.title]
 #. defaultMessage is:
@@ -20,98 +21,98 @@ msgstr ""
 #. Build your IoT platform with ease and flexibility
 #: ../mcs-lite-translation/src/mcs-lite-landing-web/messages.json
 msgid "Build your IoT platform with ease and flexibility"
-msgstr "建立您的物聯網平臺的易用性和靈活性"
+msgstr "輕鬆打造您專屬的物聯網平台"
 
 #. [Section3.data.desc]
 #. defaultMessage is:
 #. Collect and visualize data from your devices
 #: ../mcs-lite-translation/src/mcs-lite-landing-web/messages.json
 msgid "Collect and visualize data from your devices"
-msgstr "收集和視覺化資料從您的設備"
+msgstr "儲存並且視覺化裝置所產生的數據"
 
 #. [Section3.remote.desc]
 #. defaultMessage is:
 #. Control your devices from MCS Lite console
 #: ../mcs-lite-translation/src/mcs-lite-landing-web/messages.json
 msgid "Control your devices from MCS Lite console"
-msgstr ""
+msgstr "從 MCS Lite 控制台遠端操控您的裝置"
 
 #. [Section4.custom.title]
 #. defaultMessage is:
 #. Customization
 #: ../mcs-lite-translation/src/mcs-lite-landing-web/messages.json
 msgid "Customization"
-msgstr ""
+msgstr "客製化"
 
 #. [Section4.custom.button]
 #. defaultMessage is:
 #. Customize your UI
 #: ../mcs-lite-translation/src/mcs-lite-landing-web/messages.json
 msgid "Customize your UI"
-msgstr ""
+msgstr "量身定做您的使用者介面"
 
 #. [Section3.data.title]
 #. defaultMessage is:
 #. Data collection
 #: ../mcs-lite-translation/src/mcs-lite-landing-web/messages.json
 msgid "Data collection"
-msgstr ""
+msgstr "收集數據"
 
 #. [DownloadButton.downloadFor]
 #. defaultMessage is:
 #. Download for
 #: ../mcs-lite-translation/src/mcs-lite-landing-web/messages.json
 msgid "Download for"
-msgstr ""
+msgstr "下載至您的"
 
 #. [DownloadButton.others]
 #. defaultMessage is:
 #. Download for other platforms
 #: ../mcs-lite-translation/src/mcs-lite-landing-web/messages.json
 msgid "Download for other platforms"
-msgstr ""
+msgstr "下載至其他平臺"
 
 #. [Section3.title]
 #. defaultMessage is:
 #. Explore built-in features
 #: ../mcs-lite-translation/src/mcs-lite-landing-web/messages.json
 msgid "Explore built-in features"
-msgstr ""
+msgstr "探索內建的功能"
 
 #. [Section4.title]
 #. defaultMessage is:
 #. Extend and get creative with MCS Lite
 #: ../mcs-lite-translation/src/mcs-lite-landing-web/messages.json
 msgid "Extend and get creative with MCS Lite"
-msgstr ""
+msgstr "透過 MCS Lite 來擴展和發揮您的創意創造性"
 
 #. [Section4.github.button]
 #. defaultMessage is:
 #. Follow us on GitHub
 #: ../mcs-lite-translation/src/mcs-lite-landing-web/messages.json
 msgid "Follow us on GitHub"
-msgstr ""
+msgstr "在 GitHub 上關注我們"
 
 #. [Section2.title]
 #. defaultMessage is:
 #. Launch MCS Lite in seconds
 #: ../mcs-lite-translation/src/mcs-lite-landing-web/messages.json
 msgid "Launch MCS Lite in seconds"
-msgstr ""
+msgstr "快速啟動 MCS Lite"
 
 #. [Section5.title]
 #. defaultMessage is:
 #. Let's get started
 #: ../mcs-lite-translation/src/mcs-lite-landing-web/messages.json
 msgid "Let's get started"
-msgstr ""
+msgstr "讓我們開始體驗"
 
 #. [App.titleTemplate] - For document title
 #. defaultMessage is:
 #. MCS Lite
 #: ../mcs-lite-translation/src/mcs-lite-landing-web/messages.json
 msgid "MCS Lite"
-msgstr ""
+msgstr "MCS Lite"
 
 #. [Section2.desc]
 #. defaultMessage is:
@@ -123,6 +124,9 @@ msgid ""
 "are here for your IoT applications during prototype, development and "
 "production stages."
 msgstr ""
+"MCS Lite 可以部署在私有的網路環境或是其他公有雲上，只要點擊兩下就可以輕鬆的開"
+"啟 MCS Lite 應用，立刻將您的電腦變成專屬的物聯網平台，幫助您更快實現物聯網產"
+"品原型設計、 開發和生產。"
 
 #. [Section1.desc]
 #. defaultMessage is:
@@ -134,6 +138,9 @@ msgid ""
 "applications. Binaries are available in Windows, Linux and Mac OS for "
 "instant launch."
 msgstr ""
+"MCS Lite 承襲了 MCS online 的主要功能與易於上手的使用者介面，是為需要一個專屬"
+"的物聯網平台的用戶們而設計的。MCS Lite 應用程式有 Windows，Linux和 Mac OS 版"
+"本，下載後可在您的電腦直接啟動。"
 
 #. [Section4.github.desc]
 #. defaultMessage is:
@@ -143,55 +150,57 @@ msgid ""
 "MCSLite is distributed as an open-source software under MIT license. You can "
 "use, copy, modify, merge, publish, distribute, sublicense our projects."
 msgstr ""
+"MCS Lite 是使用 MIT License 來進行授權的開源專案，您可以在 MIT License 的規範"
+"下，使用、重製、修改、出版、散布、再授權 MCS Lite 相關的專案。"
 
 #. [Section3.management.desc]
 #. defaultMessage is:
 #. Manage all your connected devices
 #: ../mcs-lite-translation/src/mcs-lite-landing-web/messages.json
 msgid "Manage all your connected devices"
-msgstr ""
+msgstr "管理您所有的連線裝置"
 
 #. [Section3.management.title]
 #. defaultMessage is:
 #. Management
 #: ../mcs-lite-translation/src/mcs-lite-landing-web/messages.json
 msgid "Management"
-msgstr ""
+msgstr "管理"
 
 #. [Footer.desc]
 #. defaultMessage is:
 #. MediaTek Inc. All Rights Reserved.
 #: ../mcs-lite-translation/src/mcs-lite-landing-web/messages.json
 msgid "MediaTek Inc. All Rights Reserved."
-msgstr ""
+msgstr "聯發科技版權所有。"
 
 #. [Section3.mobile.title]
 #. defaultMessage is:
 #. Mobile friendly
 #: ../mcs-lite-translation/src/mcs-lite-landing-web/messages.json
 msgid "Mobile friendly"
-msgstr ""
+msgstr "良好的行動裝置體驗"
 
 #. [Section4.github.title]
 #. defaultMessage is:
 #. Open Source
 #: ../mcs-lite-translation/src/mcs-lite-landing-web/messages.json
 msgid "Open Source"
-msgstr ""
+msgstr "開放原始碼"
 
 #. [Section3.remote.title]
 #. defaultMessage is:
 #. Remote control
 #: ../mcs-lite-translation/src/mcs-lite-landing-web/messages.json
 msgid "Remote control"
-msgstr ""
+msgstr "遙控"
 
 #. [Section3.mobile.desc]
 #. defaultMessage is:
 #. Responsive Web Design for easy access on your mobile and tablet
 #: ../mcs-lite-translation/src/mcs-lite-landing-web/messages.json
 msgid "Responsive Web Design for easy access on your mobile and tablet"
-msgstr ""
+msgstr "響應式的網頁設計能最佳化手機和平板電腦的使用體驗"
 
 #. [Section3.desc]
 #. defaultMessage is:
@@ -200,7 +209,7 @@ msgstr ""
 msgid ""
 "Start to collect data from your IoT devices and control them anytime, "
 "anywhere."
-msgstr ""
+msgstr "隨時隨地收集來自您的物聯網裝置的資料並實現遠端遙控。"
 
 #. [Section4.custom.desc]
 #. defaultMessage is:
@@ -212,10 +221,12 @@ msgid ""
 "modify the source code or use the API provided by MCS Lite to expand the "
 "functions."
 msgstr ""
+"不管是要客製化平台的使用者介面，支援其他資料庫或是增加額外的資料分析與資料加"
+"密等功能，皆可透過直接修改代碼或使用 MCS Lite 提供的 API 來進一步的擴充功能。"
 
 #. [DownloadButton.or]
 #. defaultMessage is:
 #. or
 #: ../mcs-lite-translation/src/mcs-lite-landing-web/messages.json
 msgid "or"
-msgstr ""
+msgstr "或者"
