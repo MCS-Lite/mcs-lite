@@ -22,9 +22,9 @@ exports[`should renders <Footer> correctly 1`] = `
                 height={32}
                 waypointConfig={
                   Object {
-                    "bottomOffset": -500,
+                    "bottomOffset": 0,
                     "fireOnRapidScroll": true,
-                    "topOffset": -500,
+                    "topOffset": 0,
                   }
                 }
               >
@@ -42,9 +42,9 @@ exports[`should renders <Footer> correctly 1`] = `
                 height={32}
                 waypointConfig={
                   Object {
-                    "bottomOffset": -500,
+                    "bottomOffset": 0,
                     "fireOnRapidScroll": true,
-                    "topOffset": -500,
+                    "topOffset": 0,
                   }
                 }
               >
