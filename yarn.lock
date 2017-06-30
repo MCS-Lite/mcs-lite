@@ -8141,9 +8141,9 @@ react-overlays@^0.7.0:
     react-prop-types "^0.4.0"
     warning "^3.0.0"
 
-react-progressive-bg-image@^1.1.1:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/react-progressive-bg-image/-/react-progressive-bg-image-1.1.1.tgz#c516262d936a938ab629de52fb1db6e15cdb30bb"
+react-progressive-bg-image@^1.1.2:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/react-progressive-bg-image/-/react-progressive-bg-image-1.1.2.tgz#4ec7430ed2a4148ae73397bd7e5083cac2698bd4"
   dependencies:
     prop-types "^15.5.10"
     recompose "^0.23.4"
