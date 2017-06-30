@@ -1,9 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should renders <BackgroundImage> correctly 1`] = `
-.khaPnW {
+.lpfHmJ {
   height: 100%;
-  background-image: url(placeholder);
   background-repeat: no-repeat;
   -webkit-transition: opacity 0.3s linear;
   transition: opacity 0.3s linear;
@@ -36,11 +35,28 @@ exports[`should renders <BackgroundImage> correctly 1`] = `
       placeholder="placeholder"
       src="src"
     >
-      <div
-        className="sc-bwzfXH exAjwZ sc-bdVaJa khaPnW"
+      <styled.div
+        className="sc-bwzfXH exAjwZ"
+        isLoaded={false}
         placeholder="placeholder"
         src="src"
-      />
+        style={
+          Object {
+            "backgroundImage": "url(\\"placeholder\\"",
+          }
+        }
+      >
+        <div
+          className="sc-bwzfXH exAjwZ sc-bdVaJa lpfHmJ"
+          placeholder="placeholder"
+          src="src"
+          style={
+            Object {
+              "backgroundImage": "url(\\"placeholder\\"",
+            }
+          }
+        />
+      </styled.div>
     </Img>
   </ProgressiveImage>
 </Styled(ProgressiveImage)>
