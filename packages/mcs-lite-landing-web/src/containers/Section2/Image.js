@@ -3,14 +3,16 @@ import Transition from 'react-motion-ui-pack';
 import { pure } from 'recompose';
 import ScrollParallax from 'rc-scroll-anim/lib/ScrollParallax';
 import ImageLayerWrapper from '../../components/ImageLayerWrapper';
+import SVGIotBg from '../../components/SVG/SVGIotBg';
 import { MacImage, BackgroundImageContain } from './styled-components';
 import imgMac from '../../statics/images/img_mac.svg';
-import imgIot from '../../statics/images/img_iot.svg';
 
 const Image = () =>
   <Transition component={false} enter={{ opacity: 1 }} leave={{ opacity: 0.5 }}>
     <ImageLayerWrapper key="ImageLayerWrapper">
-      <BackgroundImageContain src={imgIot} />
+      <BackgroundImageContain>
+        <SVGIotBg />
+      </BackgroundImageContain>
       <ScrollParallax
         animation={{ opacity: 1, y: 0, scale: 1, playScale: [0, 0.5] }}
         style={{
