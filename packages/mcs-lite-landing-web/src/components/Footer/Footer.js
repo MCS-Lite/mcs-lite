@@ -16,12 +16,19 @@ import {
 } from './styled-components';
 
 const HEIGHT = 32;
+
+const waypointConfig = {
+  topOffset: 0,
+  bottomOffset: 0,
+  fireOnRapidScroll: true,
+};
+
 const LoadableSVGFacebook = Loadable({
-  loader: () => import(/* webpackChunkName: "Section" */ '../SVG/SVGFacebook'),
+  loader: () => import(/* webpackChunkName: "Footer" */ '../SVG/SVGFacebook'),
   loading: () => <FakeIcon>Facebook</FakeIcon>,
 });
 const LoadableSVGGitHub = Loadable({
-  loader: () => import(/* webpackChunkName: "Section" */ '../SVG/SVGGitHub'),
+  loader: () => import(/* webpackChunkName: "Footer" */ '../SVG/SVGGitHub'),
   loading: () => <FakeIcon>GitHub</FakeIcon>,
 });
 
@@ -37,7 +44,7 @@ const Footer = ({ getMessages: t }) =>
                 target="_blank"
                 rel="noreferrer noopener"
               >
-                <LazyloadOnce height={HEIGHT}>
+                <LazyloadOnce waypointConfig={waypointConfig} height={HEIGHT}>
                   <LoadableSVGFacebook />
                 </LazyloadOnce>
               </A>
@@ -46,7 +53,7 @@ const Footer = ({ getMessages: t }) =>
                 target="_blank"
                 rel="noreferrer noopener"
               >
-                <LazyloadOnce height={HEIGHT}>
+                <LazyloadOnce waypointConfig={waypointConfig} height={HEIGHT}>
                   <LoadableSVGGitHub />
                 </LazyloadOnce>
               </A>
