@@ -17,11 +17,11 @@ import {
 
 const HEIGHT = 32;
 const LoadableSVGFacebook = Loadable({
-  loader: () => import(/* webpackChunkName: "Footer" */ '../SVG/SVGFacebook'),
+  loader: () => import(/* webpackChunkName: "Section" */ '../SVG/SVGFacebook'),
   loading: () => <FakeIcon>Facebook</FakeIcon>,
 });
 const LoadableSVGGitHub = Loadable({
-  loader: () => import(/* webpackChunkName: "Footer" */ '../SVG/SVGGitHub'),
+  loader: () => import(/* webpackChunkName: "Section" */ '../SVG/SVGGitHub'),
   loading: () => <FakeIcon>GitHub</FakeIcon>,
 });
 
