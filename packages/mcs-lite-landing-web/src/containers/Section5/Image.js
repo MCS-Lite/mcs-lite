@@ -11,7 +11,7 @@ import SVGScreen from '../../components/SVG/SVGScreen';
 import { ScrollParallaxMachine, BackgroundOverlay } from './styled-components';
 
 const Image = () =>
-  <Transition component={false} enter={{ opacity: 1 }} leave={{ opacity: 0 }}>
+  <Transition component={false} enter={{ opacity: 1 }} leave={{ opacity: 0.5 }}>
     <ImageLayerWrapper key="ImageLayerWrapper">
       <div>
         <ScrollParallax

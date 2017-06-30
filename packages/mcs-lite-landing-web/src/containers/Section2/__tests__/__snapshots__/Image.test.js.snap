@@ -18,7 +18,8 @@ exports[`should renders <Image> correctly 1`] = `
   runOnMount={true}
 >
   <pure(styled.div)>
-    <Styled(pure(BackgroundImage))
+    <Styled(pure(Styled(ProgressiveImage)))
+      placeholder="img_iotX60.png"
       src="img_iot.svg"
     />
     <ScrollParallax

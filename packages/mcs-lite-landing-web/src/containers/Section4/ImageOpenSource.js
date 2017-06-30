@@ -13,7 +13,7 @@ import BackgroundImage from '../../components/BackgroundImage';
 import { ScrollParallaxCode } from './styled-components';
 
 const ImageOpenSource = () =>
-  <Transition component={false} enter={{ opacity: 1 }} leave={{ opacity: 0 }}>
+  <Transition component={false} enter={{ opacity: 1 }} leave={{ opacity: 0.5 }}>
     <ImageLayerWrapper key="ImageLayerWrapper">
       <BackgroundImage
         src={imgOpenBackground}

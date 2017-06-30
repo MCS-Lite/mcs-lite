@@ -12,7 +12,7 @@ import ImageLayerWrapper from '../../components/ImageLayerWrapper';
 import BackgroundImage from '../../components/BackgroundImage';
 
 const ImageCustom = () =>
-  <Transition component={false} enter={{ opacity: 1 }} leave={{ opacity: 0 }}>
+  <Transition component={false} enter={{ opacity: 1 }} leave={{ opacity: 0.5 }}>
     <ImageLayerWrapper key="ImageLayerWrapper">
       <BackgroundImage
         src={imgCustomizationBackground}

@@ -10,7 +10,7 @@ exports[`should renders <ImageCustom> correctly 1`] = `
   }
   leave={
     Object {
-      "opacity": 0,
+      "opacity": 0.5,
     }
   }
   onEnter={[Function]}
@@ -18,7 +18,8 @@ exports[`should renders <ImageCustom> correctly 1`] = `
   runOnMount={true}
 >
   <pure(styled.div)>
-    <pure(BackgroundImage)
+    <pure(Styled(ProgressiveImage))
+      placeholder="img_customizationX60.png"
       src="img_customization.svg"
     />
     <div>
