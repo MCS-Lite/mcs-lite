@@ -6,11 +6,12 @@ import ImageLayerWrapper from '../../components/ImageLayerWrapper';
 import { MacImage, BackgroundImageContain } from './styled-components';
 import imgMac from '../../statics/images/img_mac.svg';
 import imgIot from '../../statics/images/img_iot.svg';
+import imgIotX60 from '../../statics/images/img_iotX60.png';
 
 const Image = () =>
   <Transition component={false} enter={{ opacity: 1 }} leave={{ opacity: 0.5 }}>
     <ImageLayerWrapper key="ImageLayerWrapper">
-      <BackgroundImageContain src={imgIot} />
+      <BackgroundImageContain src={imgIot} placeholder={imgIotX60} />
       <ScrollParallax
         animation={{ opacity: 1, y: 0, scale: 1, playScale: [0, 0.5] }}
         style={{
