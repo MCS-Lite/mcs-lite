@@ -38,14 +38,18 @@ exports[`should renders <Image> correctly 1`] = `
       component="div"
       style={
         Object {
+          "height": "100%",
           "opacity": 0.8,
           "transform": "translateY(60px) scale(0.9)",
         }
       }
     >
-      <styled.img
-        src="img_mac.svg"
-      />
+      <styled.div>
+        <Styled(pure(Styled(ProgressiveImage)))
+          placeholder="img_macX60.png"
+          src="img_mac.svg"
+        />
+      </styled.div>
     </ScrollParallax>
   </pure(styled.div)>
 </Transition>

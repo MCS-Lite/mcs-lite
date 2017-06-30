@@ -9,6 +9,7 @@ import { MacImage } from './styled-components';
 import imgMac from '../../statics/images/img_mac.svg';
 import imgIot from '../../statics/images/img_iot.svg';
 import imgIotX60 from '../../statics/images/img_iotX60.png';
+import imgMacX60 from '../../statics/images/img_macX60.png';
 
 const BackgroundImageContain = styled(BackgroundImage)`
   background-size: contain;
@@ -23,9 +24,12 @@ const Image = () =>
         style={{
           opacity: 0.8,
           transform: 'translateY(60px) scale(0.9)',
+          height: '100%',
         }}
       >
-        <MacImage src={imgMac} />
+        <MacImage>
+          <BackgroundImageContain src={imgMac} placeholder={imgMacX60} />
+        </MacImage>
       </ScrollParallax>
     </ImageLayerWrapper>
   </Transition>;
