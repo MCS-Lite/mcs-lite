@@ -10,7 +10,7 @@ exports[`should renders <ImageOpenSource> correctly 1`] = `
   }
   leave={
     Object {
-      "opacity": 0,
+      "opacity": 0.5,
     }
   }
   onEnter={[Function]}
@@ -19,6 +19,7 @@ exports[`should renders <ImageOpenSource> correctly 1`] = `
 >
   <pure(styled.div)>
     <pure(BackgroundImage)
+      placeholder="img_open_sourceX60.png"
       src="img_open_source.svg"
     />
     <div>

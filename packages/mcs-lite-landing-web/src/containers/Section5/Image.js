@@ -5,12 +5,13 @@ import ScrollParallax from 'rc-scroll-anim/lib/ScrollParallax';
 import ImageLayerWrapper from '../../components/ImageLayerWrapper';
 import BackgroundImage from '../../components/BackgroundImage';
 import imgSetupBackground from '../../statics/images/img_setup.svg';
+import imgSetupBackgroundX60 from '../../statics/images/img_setupX60.png';
 import SVGMachine from '../../components/SVG/SVGMachine';
 import SVGScreen from '../../components/SVG/SVGScreen';
 import { ScrollParallaxMachine, BackgroundOverlay } from './styled-components';
 
 const Image = () =>
-  <Transition component={false} enter={{ opacity: 1 }} leave={{ opacity: 0 }}>
+  <Transition component={false} enter={{ opacity: 1 }} leave={{ opacity: 0.5 }}>
     <ImageLayerWrapper key="ImageLayerWrapper">
       <div>
         <ScrollParallax
@@ -26,7 +27,10 @@ const Image = () =>
           component={SVGMachine}
         />
       </div>
-      <BackgroundImage src={imgSetupBackground} />
+      <BackgroundImage
+        src={imgSetupBackground}
+        placeholder={imgSetupBackgroundX60}
+      />
       <BackgroundOverlay />
     </ImageLayerWrapper>
   </Transition>;

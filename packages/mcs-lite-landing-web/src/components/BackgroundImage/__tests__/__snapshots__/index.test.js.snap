@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should render Container correctly with HOC 1`] = `
-<BackgroundImage
+<Styled(ProgressiveImage)
+  blur={0.5}
+  opacity={1}
   src="src"
 />
 `;

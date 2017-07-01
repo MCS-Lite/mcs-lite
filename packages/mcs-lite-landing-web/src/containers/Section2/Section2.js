@@ -12,12 +12,6 @@ import { StyledSectionRow } from './styled-components';
 
 const HEIGHT = 220;
 
-const waypointConfig = {
-  topOffset: -300,
-  bottomOffset: -300,
-  fireOnRapidScroll: true,
-};
-
 const LoadableImage = Loadable({
   loader: () => import(/* webpackChunkName: "Section" */ './Image'),
   loading: () => null,
@@ -43,7 +37,7 @@ const Section2 = ({ getMessages: t }) =>
         </SpaceTop>
 
         <SpaceTop height={20}>
-          <LazyloadOnce waypointConfig={waypointConfig} height={HEIGHT}>
+          <LazyloadOnce height={HEIGHT}>
             <LoadableImage />
           </LazyloadOnce>
         </SpaceTop>

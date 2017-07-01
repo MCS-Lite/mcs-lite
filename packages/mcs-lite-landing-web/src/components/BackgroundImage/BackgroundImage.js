@@ -1,16 +1,14 @@
-import PropTypes from 'prop-types';
+import React from 'react';
 import styled from 'styled-components';
+import ProgressiveImage from 'react-progressive-bg-image';
 
-const BackgroundImage = styled.div`
-  background-image: url("${props => props.src}");
-  background-repeat: no-repeat;
+const StyledProgressiveImage = styled(ProgressiveImage)`
   background-position: center center;
   height: 100%;
+  background-size: auto 100%;
 `;
 
-BackgroundImage.displayName = 'BackgroundImage';
-BackgroundImage.propTypes = {
-  src: PropTypes.string.isRequired,
-};
+const BackgroundImage = props =>
+  <StyledProgressiveImage blur={0.5} opacity={1} {...props} />;
 
 export default BackgroundImage;

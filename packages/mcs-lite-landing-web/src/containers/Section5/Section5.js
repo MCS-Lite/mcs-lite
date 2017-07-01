@@ -12,8 +12,8 @@ import { StyledTextCenter } from './styled-components';
 const HEIGHT = 171;
 
 const waypointConfig = {
-  topOffset: -1000,
-  bottomOffset: -1000,
+  topOffset: -1500,
+  bottomOffset: -1500,
   fireOnRapidScroll: true,
 };
 
