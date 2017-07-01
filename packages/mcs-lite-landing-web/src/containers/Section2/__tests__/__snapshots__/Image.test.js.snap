@@ -18,7 +18,7 @@ exports[`should renders <Image> correctly 1`] = `
   runOnMount={true}
 >
   <pure(styled.div)>
-    <Styled(pure(Styled(ProgressiveImage)))
+    <Styled(pure(BackgroundImage))
       placeholder="img_iotX60.png"
       src="img_iot.svg"
     />
@@ -45,7 +45,7 @@ exports[`should renders <Image> correctly 1`] = `
       }
     >
       <styled.div>
-        <Styled(pure(Styled(ProgressiveImage)))
+        <Styled(pure(BackgroundImage))
           placeholder="img_macX60.png"
           src="img_mac.svg"
         />

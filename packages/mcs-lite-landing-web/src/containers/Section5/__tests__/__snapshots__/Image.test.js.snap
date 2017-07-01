@@ -58,7 +58,7 @@ exports[`should renders <Image> correctly 1`] = `
         }
       />
     </div>
-    <pure(Styled(ProgressiveImage))
+    <pure(BackgroundImage)
       placeholder="img_setupX60.png"
       src="img_setup.svg"
     />

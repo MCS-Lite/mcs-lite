@@ -18,7 +18,7 @@ exports[`should renders <ImageCustom> correctly 1`] = `
   runOnMount={true}
 >
   <pure(styled.div)>
-    <pure(Styled(ProgressiveImage))
+    <pure(BackgroundImage)
       placeholder="img_customizationX60.png"
       src="img_customization.svg"
     />
