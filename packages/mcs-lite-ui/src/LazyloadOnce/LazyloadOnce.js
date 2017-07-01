@@ -3,7 +3,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Waypoint from 'react-waypoint';
-import rafThrottle from 'raf-throttle';
 
 class LazyloadOnce extends React.PureComponent {
   static propTypes = {
@@ -21,10 +20,9 @@ class LazyloadOnce extends React.PureComponent {
     },
   };
   state = { isShow: false };
-  componentWillUnmount = () => this.onEnter.cancel();
-  onEnter = rafThrottle(() => {
+  onEnter = () => {
     if (!this.state.isShow) this.setState({ isShow: true });
-  });
+  };
   render() {
     const {
       children,
