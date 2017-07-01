@@ -10,7 +10,7 @@ exports[`should renders <Image> correctly 1`] = `
   }
   leave={
     Object {
-      "opacity": 0,
+      "opacity": 0.5,
     }
   }
   onEnter={[Function]}
@@ -58,7 +58,8 @@ exports[`should renders <Image> correctly 1`] = `
         }
       />
     </div>
-    <pure(BackgroundImage)
+    <pure(Styled(ProgressiveImage))
+      placeholder="img_setupX60.png"
       src="img_setup.svg"
     />
     <styled.div />

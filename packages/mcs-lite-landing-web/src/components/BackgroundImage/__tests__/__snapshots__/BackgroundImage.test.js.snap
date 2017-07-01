@@ -1,19 +1,63 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should renders <BackgroundImage> correctly 1`] = `
-.hIyCsy {
-  background-image: url("src");
-  background-repeat: no-repeat;
-  background-position: center center;
+.lpfHmJ {
   height: 100%;
+  background-repeat: no-repeat;
+  -webkit-transition: opacity 0.3s linear;
+  transition: opacity 0.3s linear;
+  opacity: 0.5;
+  filter: blur(20px);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
 }
 
-<BackgroundImage
+.exAjwZ {
+  background-position: center center;
+  height: 100%;
+  background-size: auto 100%;
+}
+
+<Styled(ProgressiveImage)
+  placeholder="placeholder"
   src="src"
 >
-  <div
-    className="sc-bdVaJa hIyCsy"
+  <ProgressiveImage
+    className="sc-bwzfXH exAjwZ"
+    placeholder="placeholder"
     src="src"
-  />
-</BackgroundImage>
+  >
+    <Img
+      className="sc-bwzfXH exAjwZ"
+      image="placeholder"
+      isLoaded={false}
+      placeholder="placeholder"
+      src="src"
+    >
+      <styled.div
+        className="sc-bwzfXH exAjwZ"
+        isLoaded={false}
+        placeholder="placeholder"
+        src="src"
+        style={
+          Object {
+            "backgroundImage": "url(\\"placeholder\\"",
+          }
+        }
+      >
+        <div
+          className="sc-bwzfXH exAjwZ sc-bdVaJa lpfHmJ"
+          placeholder="placeholder"
+          src="src"
+          style={
+            Object {
+              "backgroundImage": "url(\\"placeholder\\"",
+            }
+          }
+        />
+      </styled.div>
+    </Img>
+  </ProgressiveImage>
+</Styled(ProgressiveImage)>
 `;

@@ -2,6 +2,7 @@ import React from 'react';
 import Transition from 'react-motion-ui-pack';
 import { pure } from 'recompose';
 import ScrollParallax from 'rc-scroll-anim/lib/ScrollParallax';
+import imgOpenBackgroundX60 from '../../statics/images/img_open_sourceX60.png';
 import imgOpenBackground from '../../statics/images/img_open_source.svg';
 import SVGCloud from '../../components/SVG/SVGCloud';
 import SVGOpenCode1 from '../../components/SVG/SVGOpenCode1';
@@ -12,9 +13,12 @@ import BackgroundImage from '../../components/BackgroundImage';
 import { ScrollParallaxCode } from './styled-components';
 
 const ImageOpenSource = () =>
-  <Transition component={false} enter={{ opacity: 1 }} leave={{ opacity: 0 }}>
+  <Transition component={false} enter={{ opacity: 1 }} leave={{ opacity: 0.5 }}>
     <ImageLayerWrapper key="ImageLayerWrapper">
-      <BackgroundImage src={imgOpenBackground} />
+      <BackgroundImage
+        src={imgOpenBackground}
+        placeholder={imgOpenBackgroundX60}
+      />
       <div>
         <ScrollParallaxCode
           animation={{
