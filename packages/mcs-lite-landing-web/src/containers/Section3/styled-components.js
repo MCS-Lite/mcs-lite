@@ -3,7 +3,8 @@ import PropTypes from 'prop-types';
 import { Row } from 'hedron';
 import { pure } from 'recompose';
 import styled from 'styled-components';
-import Transition from 'react-motion-ui-pack';
+import ScrollOverPack from 'rc-scroll-anim/lib/ScrollOverPack';
+import TweenOne from 'rc-tween-one';
 import LazyloadOnce from 'mcs-lite-ui/lib/LazyloadOnce';
 
 const HEIGHT = 80;
@@ -19,11 +20,17 @@ export const ImageWrapper = styled.div`
 
 export const LazyloadIcon = pure(({ children }) =>
   <LazyloadOnce height={HEIGHT}>
-    <Transition component={false} enter={{ opacity: 1 }} leave={{ opacity: 0 }}>
-      <ImageWrapper key="ImageWrapper">
-        {children}
-      </ImageWrapper>
-    </Transition>
+    <ScrollOverPack playScale={0.2}>
+      <TweenOne
+        key="ImageWrapper"
+        animation={{ opacity: 1, y: 10 }}
+        style={{ opacity: 0, transform: 'translateY(-30px)' }}
+      >
+        <ImageWrapper>
+          {children}
+        </ImageWrapper>
+      </TweenOne>
+    </ScrollOverPack>
   </LazyloadOnce>,
 );
 LazyloadIcon.displayName = 'LazyloadIcon';

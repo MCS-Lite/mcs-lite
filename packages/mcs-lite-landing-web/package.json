@@ -34,6 +34,7 @@
     "polished": "^1.2.1",
     "prop-types": "^15.5.10",
     "rc-scroll-anim": "^1.0.6",
+    "rc-tween-one": "^1.2.7",
     "raf-throttle": "^2.0.2",
     "ramda": "^0.24.1",
     "react": "^15.6.1",

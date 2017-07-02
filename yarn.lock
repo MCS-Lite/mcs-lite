@@ -7903,7 +7903,7 @@ rc-scroll-anim@^1.0.6:
     rc-tween-one "~1.2.5"
     tween-functions "1.x"
 
-rc-tween-one@~1.2.5:
+rc-tween-one@^1.2.7, rc-tween-one@~1.2.5:
   version "1.2.7"
   resolved "https://registry.yarnpkg.com/rc-tween-one/-/rc-tween-one-1.2.7.tgz#eba98a6e676116ca45dce98013d65132e5db6ff0"
   dependencies:

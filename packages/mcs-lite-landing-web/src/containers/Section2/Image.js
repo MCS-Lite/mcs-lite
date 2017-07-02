@@ -1,8 +1,8 @@
 import React from 'react';
-import Transition from 'react-motion-ui-pack';
 import { pure } from 'recompose';
 import styled from 'styled-components';
-import ScrollParallax from 'rc-scroll-anim/lib/ScrollParallax';
+import ScrollOverPack from 'rc-scroll-anim/lib/ScrollOverPack';
+import TweenOne from 'rc-tween-one';
 import ImageLayerWrapper from '../../components/ImageLayerWrapper';
 import BackgroundImage from '../../components/BackgroundImage';
 import { MacImage } from './styled-components';
@@ -15,23 +15,45 @@ const BackgroundImageContain = styled(BackgroundImage)`
   background-size: contain;
 `;
 
+const PLAY_SCALE = 0.2;
+
 const Image = () =>
-  <Transition component={false} enter={{ opacity: 1 }} leave={{ opacity: 0.5 }}>
-    <ImageLayerWrapper key="ImageLayerWrapper">
-      <BackgroundImageContain src={imgIot} placeholder={imgIotX60} />
-      <ScrollParallax
-        animation={{ opacity: 1, y: 0, scale: 1, playScale: [0, 0.5] }}
-        style={{
-          opacity: 0.8,
-          transform: 'translateY(60px) scale(0.9)',
-          height: '100%',
+  <ImageLayerWrapper>
+
+    {/* 1. Background */}
+    <ScrollOverPack
+      playScale={PLAY_SCALE}
+      always={false} // Remind: only once
+    >
+      <TweenOne
+        key="imgIot"
+        animation={{
+          opacity: 1,
+          duration: 350,
         }}
+        style={{
+          opacity: 0.3,
+        }}
+        component={BackgroundImageContain}
+        src={imgIot}
+        placeholder={imgIotX60}
+      />
+    </ScrollOverPack>
+
+    {/* 2. Mac (Center) */}
+    <ScrollOverPack playScale={PLAY_SCALE}>
+      <TweenOne
+        key="MacImage"
+        animation={{ opacity: 1, y: 0, scale: 1, ease: 'easeOutCubic' }}
+        style={{
+          opacity: 0.5,
+          transform: 'translateY(60px) scale(0.9)',
+        }}
+        component={MacImage}
       >
-        <MacImage>
-          <BackgroundImageContain src={imgMac} placeholder={imgMacX60} />
-        </MacImage>
-      </ScrollParallax>
-    </ImageLayerWrapper>
-  </Transition>;
+        <BackgroundImageContain src={imgMac} placeholder={imgMacX60} />
+      </TweenOne>
+    </ScrollOverPack>
+  </ImageLayerWrapper>;
 
 export default pure(Image);

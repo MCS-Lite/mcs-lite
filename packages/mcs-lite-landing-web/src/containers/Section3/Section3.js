@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Column } from 'hedron';
 import Loadable from 'react-loadable';
-import ScrollParallax from 'rc-scroll-anim/lib/ScrollParallax';
 import Heading from 'mcs-lite-ui/lib/Heading';
 import B from 'mcs-lite-ui/lib/B';
 import P from 'mcs-lite-ui/lib/P';
@@ -49,17 +48,9 @@ const Section3 = ({ getMessages: t }) =>
       {/* 1. Data Collection */}
       <Column xs={6} sm={3}>
         <TextCenter>
-          <ScrollParallax
-            animation={[
-              { opacity: 1, y: 10, playScale: [0, 0.4] },
-              { opacity: 1, y: 0, playScale: [0.4, 0.5] },
-            ]}
-            style={{ opacity: 0, transform: 'translateY(-30px)' }}
-          >
-            <LazyloadIcon>
-              <LoadableSVGData />
-            </LazyloadIcon>
-          </ScrollParallax>
+          <LazyloadIcon>
+            <LoadableSVGData />
+          </LazyloadIcon>
           <SpaceTop height={20}>
             <Heading level={3}>
               <B>{t('data.title')}</B>
@@ -74,17 +65,9 @@ const Section3 = ({ getMessages: t }) =>
       {/* 2. Remote Control */}
       <Column xs={6} sm={3}>
         <TextCenter>
-          <ScrollParallax
-            animation={[
-              { opacity: 1, y: 10, playScale: [0, 0.4] },
-              { opacity: 1, y: 0, playScale: [0.4, 0.5] },
-            ]}
-            style={{ opacity: 0, transform: 'translateY(-30px)' }}
-          >
-            <LazyloadIcon>
-              <LoadableSVGRemote />
-            </LazyloadIcon>
-          </ScrollParallax>
+          <LazyloadIcon>
+            <LoadableSVGRemote />
+          </LazyloadIcon>
           <SpaceTop height={20}>
             <Heading level={3}>
               <B>{t('remote.title')}</B>
@@ -99,17 +82,9 @@ const Section3 = ({ getMessages: t }) =>
       {/* 3. Management */}
       <Column xs={6} sm={3}>
         <TextCenter>
-          <ScrollParallax
-            animation={[
-              { opacity: 1, y: 10, playScale: [0, 0.4] },
-              { opacity: 1, y: 0, playScale: [0.4, 0.5] },
-            ]}
-            style={{ opacity: 0, transform: 'translateY(-30px)' }}
-          >
-            <LazyloadIcon>
-              <LoadableSVGManagement />
-            </LazyloadIcon>
-          </ScrollParallax>
+          <LazyloadIcon>
+            <LoadableSVGManagement />
+          </LazyloadIcon>
           <SpaceTop height={20}>
             <Heading level={3}>
               <B>{t('management.title')}</B>
@@ -124,17 +99,9 @@ const Section3 = ({ getMessages: t }) =>
       {/* 4. Mobile */}
       <Column xs={6} sm={3}>
         <TextCenter>
-          <ScrollParallax
-            animation={[
-              { opacity: 1, y: 10, playScale: [0, 0.4] },
-              { opacity: 1, y: 0, playScale: [0.4, 0.5] },
-            ]}
-            style={{ opacity: 0, transform: 'translateY(-30px)' }}
-          >
-            <LazyloadIcon>
-              <LoadableSVGMobile />
-            </LazyloadIcon>
-          </ScrollParallax>
+          <LazyloadIcon>
+            <LoadableSVGMobile />
+          </LazyloadIcon>
           <SpaceTop height={20}>
             <Heading level={3}>
               <B>{t('mobile.title')}</B>

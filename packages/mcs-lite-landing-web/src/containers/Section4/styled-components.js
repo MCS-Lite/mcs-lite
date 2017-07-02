@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import A from 'mcs-lite-ui/lib/A';
-import ScrollParallax from 'rc-scroll-anim/lib/ScrollParallax';
 import SectionRow from '../../components/SectionRow';
 
 export const StyledSectionRow = styled(SectionRow)`
@@ -19,8 +18,4 @@ export const CardWrapper = styled.div`
     margin-top: auto;
     align-self: center;
   }
-`;
-
-export const ScrollParallaxCode = styled(ScrollParallax)`
-  transform-origin: center bottom;
 `;
