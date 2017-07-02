@@ -1,56 +1,105 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should renders <ImageCustom> correctly 1`] = `
-<Transition
-  component={false}
-  enter={
-    Object {
-      "opacity": 1,
-    }
-  }
-  leave={
-    Object {
-      "opacity": 0.5,
-    }
-  }
-  onEnter={[Function]}
-  onLeave={[Function]}
-  runOnMount={true}
->
-  <pure(styled.div)>
-    <pure(BackgroundImage)
+<pure(styled.div)>
+  <ScrollOverPack
+    always={false}
+    appear={true}
+    component="div"
+    onChange={[Function]}
+    playScale={0.2}
+    replay={false}
+    scrollEvent={[Function]}
+  >
+    <TweenOne
+      animation={
+        Object {
+          "duration": 350,
+          "opacity": 1,
+        }
+      }
+      attr="style"
+      component={[Function]}
+      onChange={[Function]}
       placeholder="img_customizationX60.png"
+      reverseDelay={0}
       src="img_customization.svg"
+      style={
+        Object {
+          "opacity": 0.3,
+        }
+      }
+      updateReStart={true}
+      willChange={true}
     />
-    <div>
+  </ScrollOverPack>
+  <ScrollOverPack
+    always={true}
+    appear={true}
+    component="div"
+    onChange={[Function]}
+    playScale={0.2}
+    replay={false}
+    scrollEvent={[Function]}
+  >
+    <TweenOne
+      animation={
+        Object {
+          "duration": 600,
+          "ease": "easeInOutQuart",
+          "x": -105,
+          "y": 85,
+        }
+      }
+      attr="style"
+      component={[Function]}
+      onChange={[Function]}
+      reverseDelay={0}
+      style={
+        Object {
+          "transform": "translate(-120px, 85px)",
+        }
+      }
+      updateReStart={true}
+      willChange={true}
+    />
+  </ScrollOverPack>
+  <ScrollOverPack
+    always={false}
+    appear={true}
+    component="div"
+    onChange={[Function]}
+    playScale={0.2}
+    replay={false}
+    scrollEvent={[Function]}
+  >
+    <TweenOne
+      animation={
+        Object {
+          "duration": 550,
+          "opacity": 1,
+        }
+      }
+      attr="style"
+      component="div"
+      onChange={[Function]}
+      reverseDelay={0}
+      style={
+        Object {
+          "opacity": 0.5,
+        }
+      }
+      updateReStart={true}
+      willChange={true}
+    >
       <ScrollParallax
         always={true}
         animation={
           Object {
+            "ease": "easeInOutQuad",
             "playScale": Array [
-              0,
-              0.5,
-            ],
-            "x": -105,
-            "y": 85,
-          }
-        }
-        component={[Function]}
-        style={
-          Object {
-            "transform": "translate(-120px, 85px)",
-          }
-        }
-      />
-    </div>
-    <div>
-      <ScrollParallax
-        always={true}
-        animation={
-          Object {
-            "playScale": Array [
-              0,
-              0.5,
+              0.2,
+              0.4,
             ],
             "y": 35,
           }
@@ -62,49 +111,69 @@ exports[`should renders <ImageCustom> correctly 1`] = `
           }
         }
       />
-    </div>
-    <div>
-      <ScrollParallax
-        always={true}
-        animation={
-          Object {
-            "playScale": Array [
-              0,
-              0.5,
-            ],
-            "x": 80,
-            "y": 22,
-          }
+    </TweenOne>
+  </ScrollOverPack>
+  <ScrollOverPack
+    always={true}
+    appear={true}
+    component="div"
+    onChange={[Function]}
+    playScale={0.2}
+    replay={false}
+    scrollEvent={[Function]}
+  >
+    <TweenOne
+      animation={
+        Object {
+          "duration": 600,
+          "ease": "easeInOutQuart",
+          "x": 80,
+          "y": 22,
         }
-        component={[Function]}
-        style={
-          Object {
-            "transform": "translate(95px, 5px)",
-          }
+      }
+      attr="style"
+      component={[Function]}
+      onChange={[Function]}
+      reverseDelay={0}
+      style={
+        Object {
+          "transform": "translate(95px, 5px)",
         }
-      />
-    </div>
-    <div>
-      <ScrollParallax
-        always={true}
-        animation={
-          Object {
-            "playScale": Array [
-              0,
-              0.5,
-            ],
-            "x": 70,
-            "y": 125,
-          }
+      }
+      updateReStart={true}
+      willChange={true}
+    />
+  </ScrollOverPack>
+  <ScrollOverPack
+    always={true}
+    appear={true}
+    component="div"
+    onChange={[Function]}
+    playScale={0.2}
+    replay={false}
+    scrollEvent={[Function]}
+  >
+    <TweenOne
+      animation={
+        Object {
+          "duration": 600,
+          "ease": "easeInOutQuart",
+          "x": 70,
+          "y": 125,
         }
-        component={[Function]}
-        style={
-          Object {
-            "transform": "translate(70px, 130px)",
-          }
+      }
+      attr="style"
+      component={[Function]}
+      onChange={[Function]}
+      reverseDelay={0}
+      style={
+        Object {
+          "transform": "translate(70px, 130px)",
         }
-      />
-    </div>
-  </pure(styled.div)>
-</Transition>
+      }
+      updateReStart={true}
+      willChange={true}
+    />
+  </ScrollOverPack>
+</pure(styled.div)>
 `;

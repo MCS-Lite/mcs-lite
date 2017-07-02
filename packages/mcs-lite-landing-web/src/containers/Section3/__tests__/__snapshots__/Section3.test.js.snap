@@ -29,40 +29,9 @@ exports[`should renders <Section3> correctly 1`] = `
       xs={6}
     >
       <TextCenter>
-        <ScrollParallax
-          always={true}
-          animation={
-            Array [
-              Object {
-                "opacity": 1,
-                "playScale": Array [
-                  0,
-                  0.4,
-                ],
-                "y": 10,
-              },
-              Object {
-                "opacity": 1,
-                "playScale": Array [
-                  0.4,
-                  0.5,
-                ],
-                "y": 0,
-              },
-            ]
-          }
-          component="div"
-          style={
-            Object {
-              "opacity": 0,
-              "transform": "translateY(-30px)",
-            }
-          }
-        >
-          <LazyloadIcon>
-            <LoadableComponent />
-          </LazyloadIcon>
-        </ScrollParallax>
+        <LazyloadIcon>
+          <LoadableComponent />
+        </LazyloadIcon>
         <SpaceTop
           height={20}
         >
@@ -88,40 +57,9 @@ exports[`should renders <Section3> correctly 1`] = `
       xs={6}
     >
       <TextCenter>
-        <ScrollParallax
-          always={true}
-          animation={
-            Array [
-              Object {
-                "opacity": 1,
-                "playScale": Array [
-                  0,
-                  0.4,
-                ],
-                "y": 10,
-              },
-              Object {
-                "opacity": 1,
-                "playScale": Array [
-                  0.4,
-                  0.5,
-                ],
-                "y": 0,
-              },
-            ]
-          }
-          component="div"
-          style={
-            Object {
-              "opacity": 0,
-              "transform": "translateY(-30px)",
-            }
-          }
-        >
-          <LazyloadIcon>
-            <LoadableComponent />
-          </LazyloadIcon>
-        </ScrollParallax>
+        <LazyloadIcon>
+          <LoadableComponent />
+        </LazyloadIcon>
         <SpaceTop
           height={20}
         >
@@ -147,40 +85,9 @@ exports[`should renders <Section3> correctly 1`] = `
       xs={6}
     >
       <TextCenter>
-        <ScrollParallax
-          always={true}
-          animation={
-            Array [
-              Object {
-                "opacity": 1,
-                "playScale": Array [
-                  0,
-                  0.4,
-                ],
-                "y": 10,
-              },
-              Object {
-                "opacity": 1,
-                "playScale": Array [
-                  0.4,
-                  0.5,
-                ],
-                "y": 0,
-              },
-            ]
-          }
-          component="div"
-          style={
-            Object {
-              "opacity": 0,
-              "transform": "translateY(-30px)",
-            }
-          }
-        >
-          <LazyloadIcon>
-            <LoadableComponent />
-          </LazyloadIcon>
-        </ScrollParallax>
+        <LazyloadIcon>
+          <LoadableComponent />
+        </LazyloadIcon>
         <SpaceTop
           height={20}
         >
@@ -206,40 +113,9 @@ exports[`should renders <Section3> correctly 1`] = `
       xs={6}
     >
       <TextCenter>
-        <ScrollParallax
-          always={true}
-          animation={
-            Array [
-              Object {
-                "opacity": 1,
-                "playScale": Array [
-                  0,
-                  0.4,
-                ],
-                "y": 10,
-              },
-              Object {
-                "opacity": 1,
-                "playScale": Array [
-                  0.4,
-                  0.5,
-                ],
-                "y": 0,
-              },
-            ]
-          }
-          component="div"
-          style={
-            Object {
-              "opacity": 0,
-              "transform": "translateY(-30px)",
-            }
-          }
-        >
-          <LazyloadIcon>
-            <LoadableComponent />
-          </LazyloadIcon>
-        </ScrollParallax>
+        <LazyloadIcon>
+          <LoadableComponent />
+        </LazyloadIcon>
         <SpaceTop
           height={20}
         >

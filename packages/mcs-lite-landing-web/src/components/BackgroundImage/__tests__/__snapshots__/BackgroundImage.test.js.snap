@@ -65,7 +65,7 @@ exports[`should renders <BackgroundImage> correctly 1`] = `
             src="src"
             style={
               Object {
-                "backgroundImage": "url(\\"placeholder\\"",
+                "backgroundImage": "url(\\"placeholder\\")",
               }
             }
           >
@@ -77,7 +77,7 @@ exports[`should renders <BackgroundImage> correctly 1`] = `
               src="src"
               style={
                 Object {
-                  "backgroundImage": "url(\\"placeholder\\"",
+                  "backgroundImage": "url(\\"placeholder\\")",
                 }
               }
             />

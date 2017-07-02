@@ -1,22 +1,23 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should renders <ImageLayerWrapper> correctly 1`] = `
-.hREkjd {
+.hGtxus {
   position: relative;
   height: 100%;
 }
 
-.hREkjd > * {
+.hGtxus > * {
   position: absolute;
   left: 0;
   right: 0;
+  height: 100%;
 }
 
 <styled.div
   height={24}
 >
   <div
-    className="sc-bdVaJa hREkjd"
+    className="sc-bdVaJa hGtxus"
     height={24}
   />
 </styled.div>

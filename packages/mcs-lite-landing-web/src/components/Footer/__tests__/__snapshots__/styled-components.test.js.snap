@@ -50,7 +50,7 @@ Array [
   color: #FFFFFF;
 }
 
-.kQXKVV {
+.jdhKut {
   height: 32px;
   width: 32px;
   display: -webkit-box;
@@ -70,6 +70,7 @@ Array [
   color: #40494D;
   -webkit-text-decoration: none;
   text-decoration: none;
+  color: transparent;
 }
 
 .dEuNnW {
@@ -153,7 +154,7 @@ Array [
     </styled.div>
     <styled.div>
         <div
-            className="sc-gzVnrw kQXKVV"
+            className="sc-gzVnrw jdhKut"
         />
     </styled.div>
     <Breakpoints>
@@ -222,7 +223,7 @@ Array [
 <div
     className="sc-bZQynM gtVLpG"
 />,
-  .kQXKVV {
+  .jdhKut {
   height: 32px;
   width: 32px;
   display: -webkit-box;
@@ -242,10 +243,11 @@ Array [
   color: #40494D;
   -webkit-text-decoration: none;
   text-decoration: none;
+  color: transparent;
 }
 
 <div
-    className="sc-gzVnrw kQXKVV"
+    className="sc-gzVnrw jdhKut"
 />,
   .dEuNnW {
   display: -webkit-box;
