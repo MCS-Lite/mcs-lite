@@ -3,8 +3,9 @@
 exports[`should render Container correctly with HOC 1`] = `
 <Styled(ProgressiveImage)
   blur={0.5}
+  component="img"
   opacity={1}
   src="src"
-  transition="blur 0.3 linear"
+  transition="all 0.3 linear"
 />
 `;
