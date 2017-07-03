@@ -12,26 +12,40 @@ exports[`should render LazyloadIcon correctly 1`] = `
     }
   }
 >
-  <Transition
-    component={false}
-    enter={
-      Object {
-        "opacity": 1,
-      }
-    }
-    leave={
-      Object {
-        "opacity": 0,
-      }
-    }
-    onEnter={[Function]}
-    onLeave={[Function]}
-    runOnMount={true}
+  <ScrollOverPack
+    always={true}
+    appear={true}
+    component="div"
+    onChange={[Function]}
+    playScale={0.2}
+    replay={false}
+    scrollEvent={[Function]}
   >
-    <styled.div>
-      children
-    </styled.div>
-  </Transition>
+    <TweenOne
+      animation={
+        Object {
+          "opacity": 1,
+          "y": 10,
+        }
+      }
+      attr="style"
+      component="div"
+      onChange={[Function]}
+      reverseDelay={0}
+      style={
+        Object {
+          "opacity": 0,
+          "transform": "translateY(-30px)",
+        }
+      }
+      updateReStart={true}
+      willChange={true}
+    >
+      <styled.div>
+        children
+      </styled.div>
+    </TweenOne>
+  </ScrollOverPack>
 </LazyloadOnce>
 `;
 

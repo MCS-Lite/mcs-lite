@@ -8,6 +8,7 @@ const ImageLayerWrapper = styled.div`
     position: absolute;
     left: 0;
     right: 0;
+    height: 100%;
   }
 `;
 

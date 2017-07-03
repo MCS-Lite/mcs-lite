@@ -1,68 +1,102 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should renders <Image> correctly 1`] = `
-<Transition
-  component={false}
-  enter={
-    Object {
-      "opacity": 1,
-    }
-  }
-  leave={
-    Object {
-      "opacity": 0.5,
-    }
-  }
-  onEnter={[Function]}
-  onLeave={[Function]}
-  runOnMount={true}
->
-  <pure(styled.div)>
-    <div>
-      <ScrollParallax
-        always={true}
-        animation={
-          Object {
-            "playScale": Array [
-              0,
-              0.5,
-            ],
-            "x": 0,
-            "y": 0,
-          }
+<pure(styled.div)>
+  <ScrollOverPack
+    always={true}
+    appear={true}
+    component="div"
+    onChange={[Function]}
+    playScale={0.2}
+    replay={false}
+    scrollEvent={[Function]}
+  >
+    <TweenOne
+      animation={
+        Object {
+          "delay": 250,
+          "duration": 600,
+          "ease": "easeOutBounce",
+          "x": 0,
+          "y": 0,
         }
-        component={[Function]}
-        style={
-          Object {
-            "transform": "translate(-5px, -32px)",
-          }
+      }
+      attr="style"
+      component={[Function]}
+      onChange={[Function]}
+      reverseDelay={0}
+      style={
+        Object {
+          "transform": "translate(-5px, -32px)",
         }
-      />
-    </div>
-    <div>
-      <Styled(ScrollParallax)
-        animation={
-          Object {
-            "playScale": Array [
-              0,
-              0.5,
-            ],
-            "rotate": 0,
-          }
-        }
-        component={[Function]}
-        style={
-          Object {
-            "transform": "translateX(60px) rotate(15deg)",
-          }
-        }
-      />
-    </div>
-    <pure(BackgroundImage)
-      placeholder="img_setupX60.png"
-      src="img_setup.svg"
+      }
+      updateReStart={true}
+      willChange={true}
     />
-    <styled.div />
-  </pure(styled.div)>
-</Transition>
+  </ScrollOverPack>
+  <ScrollOverPack
+    always={true}
+    appear={true}
+    component="div"
+    onChange={[Function]}
+    playScale={0.2}
+    replay={false}
+    scrollEvent={[Function]}
+  >
+    <TweenOne
+      animation={
+        Object {
+          "delay": 250,
+          "duration": 600,
+          "ease": "easeOutBounce",
+          "rotate": 0,
+        }
+      }
+      attr="style"
+      component={[Function]}
+      onChange={[Function]}
+      reverseDelay={0}
+      style={
+        Object {
+          "transform": "translateX(60px) rotate(15deg)",
+          "transformOrigin": "143px 0",
+        }
+      }
+      updateReStart={true}
+      willChange={true}
+    />
+  </ScrollOverPack>
+  <ScrollOverPack
+    always={false}
+    appear={true}
+    component="div"
+    onChange={[Function]}
+    playScale={0.2}
+    replay={false}
+    scrollEvent={[Function]}
+  >
+    <TweenOne
+      animation={
+        Object {
+          "duration": 350,
+          "opacity": 1,
+        }
+      }
+      attr="style"
+      component={[Function]}
+      onChange={[Function]}
+      placeholder="img_setupX60.png"
+      reverseDelay={0}
+      src="img_setup.svg"
+      style={
+        Object {
+          "opacity": 0.5,
+        }
+      }
+      updateReStart={true}
+      willChange={true}
+    />
+  </ScrollOverPack>
+  <styled.div />
+</pure(styled.div)>
 `;

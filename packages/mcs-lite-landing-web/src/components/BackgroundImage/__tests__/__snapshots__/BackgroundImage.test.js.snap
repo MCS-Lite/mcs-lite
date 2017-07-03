@@ -1,11 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should renders <BackgroundImage> correctly 1`] = `
-.epBpRj {
+.bFnBcx {
   height: 100%;
   background-repeat: no-repeat;
-  -webkit-transition: opacity 0.3s linear;
-  transition: opacity 0.3s linear;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
   opacity: 1;
   filter: blur(0.5px);
   -webkit-transform: scale(1);
@@ -28,6 +28,7 @@ exports[`should renders <BackgroundImage> correctly 1`] = `
     opacity={1}
     placeholder="placeholder"
     src="src"
+    transition="all 0.1s linear"
   >
     <ProgressiveImage
       blur={0.5}
@@ -36,6 +37,7 @@ exports[`should renders <BackgroundImage> correctly 1`] = `
       placeholder="placeholder"
       scale={1}
       src="src"
+      transition="all 0.1s linear"
     >
       <mapPropsStream(Img)
         blur={0.5}
@@ -44,20 +46,24 @@ exports[`should renders <BackgroundImage> correctly 1`] = `
         placeholder="placeholder"
         scale={1}
         src="src"
+        transition="all 0.1s linear"
       >
         <Img
           blur={0.5}
           className="sc-bwzfXH exAjwZ"
           image="placeholder"
+          isCached={false}
           isLoaded={false}
           opacity={1}
           placeholder="placeholder"
           scale={1}
           src="src"
+          transition="all 0.1s linear"
         >
           <styled.div
             blur={0.5}
             className="sc-bwzfXH exAjwZ"
+            isCached={false}
             isLoaded={false}
             opacity={1}
             placeholder="placeholder"
@@ -65,19 +71,20 @@ exports[`should renders <BackgroundImage> correctly 1`] = `
             src="src"
             style={
               Object {
-                "backgroundImage": "url(\\"placeholder\\"",
+                "backgroundImage": "url(\\"placeholder\\")",
               }
             }
+            transition="all 0.1s linear"
           >
             <div
-              className="sc-bwzfXH exAjwZ sc-bdVaJa epBpRj"
+              className="sc-bwzfXH exAjwZ sc-bdVaJa bFnBcx"
               opacity={1}
               placeholder="placeholder"
               scale={1}
               src="src"
               style={
                 Object {
-                  "backgroundImage": "url(\\"placeholder\\"",
+                  "backgroundImage": "url(\\"placeholder\\")",
                 }
               }
             />

@@ -1,97 +1,98 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should renders <Chart> correctly 1`] = `
-<Transition
-  component={false}
-  enter={
+<TweenOne
+  animation={
     Object {
+      "duration": 550,
       "opacity": 1,
     }
   }
-  leave={
+  attr="style"
+  component={[Function]}
+  onChange={[Function]}
+  reverseDelay={0}
+  style={
     Object {
       "opacity": 0,
     }
   }
-  onEnter={[Function]}
-  onLeave={[Function]}
-  runOnMount={true}
+  updateReStart={true}
+  willChange={true}
 >
+  <Styled(Heading)
+    color="primary"
+  >
+    24.5
+  </Styled(Heading)>
   <styled.div>
-    <Styled(Heading)
-      color="primary"
-    >
-      24.5
-    </Styled(Heading)>
-    <styled.div>
-      <WithTheme(DataPointAreaChart)
-        data={
-          Array [
-            Object {
-              "updatedAt": "2017-01-13 00:00",
-              "value": 21,
-            },
-            Object {
-              "updatedAt": "2017-01-13 00:00",
-              "value": 24,
-            },
-            Object {
-              "updatedAt": "2017-01-13 00:00",
-              "value": 21,
-            },
-            Object {
-              "updatedAt": "2017-02-13 00:01",
-              "value": 28,
-            },
-            Object {
-              "updatedAt": "2017-02-13 00:01",
-              "value": 25,
-            },
-            Object {
-              "updatedAt": "2017-02-13 00:01",
-              "value": 25.2,
-            },
-            Object {
-              "updatedAt": "2017-03-13 00:02",
-              "value": 28,
-            },
-            Object {
-              "updatedAt": "2017-03-13 00:02",
-              "value": 28.1,
-            },
-            Object {
-              "updatedAt": "2017-03-13 00:02",
-              "value": 21.3,
-            },
-            Object {
-              "updatedAt": "2017-04-13 00:04",
-              "value": 23,
-            },
-            Object {
-              "updatedAt": "2017-04-13 00:04",
-              "value": 24.3,
-            },
-            Object {
-              "updatedAt": "2017-04-13 00:04",
-              "value": 24,
-            },
-            Object {
-              "updatedAt": "2017-05-13 00:05",
-              "value": 20,
-            },
-            Object {
-              "updatedAt": "2017-05-13 00:05",
-              "value": 21.5,
-            },
-            Object {
-              "updatedAt": "2017-06-13 00:06",
-              "value": 24.5,
-            },
-          ]
-        }
-        isAnimationActive={true}
-      />
-    </styled.div>
+    <WithTheme(DataPointAreaChart)
+      data={
+        Array [
+          Object {
+            "updatedAt": "2017-01-13 00:00",
+            "value": 21,
+          },
+          Object {
+            "updatedAt": "2017-01-13 00:00",
+            "value": 24,
+          },
+          Object {
+            "updatedAt": "2017-01-13 00:00",
+            "value": 21,
+          },
+          Object {
+            "updatedAt": "2017-02-13 00:01",
+            "value": 28,
+          },
+          Object {
+            "updatedAt": "2017-02-13 00:01",
+            "value": 25,
+          },
+          Object {
+            "updatedAt": "2017-02-13 00:01",
+            "value": 25.2,
+          },
+          Object {
+            "updatedAt": "2017-03-13 00:02",
+            "value": 28,
+          },
+          Object {
+            "updatedAt": "2017-03-13 00:02",
+            "value": 28.1,
+          },
+          Object {
+            "updatedAt": "2017-03-13 00:02",
+            "value": 21.3,
+          },
+          Object {
+            "updatedAt": "2017-04-13 00:04",
+            "value": 23,
+          },
+          Object {
+            "updatedAt": "2017-04-13 00:04",
+            "value": 24.3,
+          },
+          Object {
+            "updatedAt": "2017-04-13 00:04",
+            "value": 24,
+          },
+          Object {
+            "updatedAt": "2017-05-13 00:05",
+            "value": 20,
+          },
+          Object {
+            "updatedAt": "2017-05-13 00:05",
+            "value": 21.5,
+          },
+          Object {
+            "updatedAt": "2017-06-13 00:06",
+            "value": 24.5,
+          },
+        ]
+      }
+      isAnimationActive={true}
+    />
   </styled.div>
-</Transition>
+</TweenOne>
 `;

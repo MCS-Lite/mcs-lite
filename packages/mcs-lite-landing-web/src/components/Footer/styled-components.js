@@ -40,6 +40,7 @@ export const FakeIcon = styled.div`
   border-radius: 4px;
   color: ${props => props.theme.color.black};
   text-decoration: none;
+  color: transparent;
 `;
 
 export const RWDWrapper = withBreakpoints(styled.div`

@@ -29,8 +29,7 @@ const Section2 = ({ getMessages: t }) =>
 
         <SpaceTop height={40}>
           <ScrollParallax
-            animation={{ opacity: 1, playScale: [0, 0.5] }}
-            always={false}
+            animation={{ opacity: 1, playScale: [0.3, 0.5] }}
             style={{ opacity: 0 }}
             component={SVGSignal}
           />

@@ -1,56 +1,74 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should renders <Image> correctly 1`] = `
-<Transition
-  component={false}
-  enter={
-    Object {
-      "opacity": 1,
-    }
-  }
-  leave={
-    Object {
-      "opacity": 0.5,
-    }
-  }
-  onEnter={[Function]}
-  onLeave={[Function]}
-  runOnMount={true}
->
-  <pure(styled.div)>
-    <Styled(pure(BackgroundImage))
-      placeholder="img_iotX60.png"
-      src="img_iot.svg"
-    />
-    <ScrollParallax
-      always={true}
+<pure(styled.div)>
+  <ScrollOverPack
+    always={false}
+    appear={true}
+    component="div"
+    onChange={[Function]}
+    playScale={0.2}
+    replay={false}
+    scrollEvent={[Function]}
+  >
+    <TweenOne
       animation={
         Object {
+          "duration": 350,
           "opacity": 1,
-          "playScale": Array [
-            0,
-            0.5,
-          ],
+        }
+      }
+      attr="style"
+      component={[Function]}
+      onChange={[Function]}
+      placeholder="img_iotX60.png"
+      reverseDelay={0}
+      src="img_iot.svg"
+      style={
+        Object {
+          "opacity": 0.3,
+        }
+      }
+      updateReStart={true}
+      willChange={true}
+    />
+  </ScrollOverPack>
+  <ScrollOverPack
+    always={true}
+    appear={true}
+    component="div"
+    onChange={[Function]}
+    playScale={0.2}
+    replay={false}
+    scrollEvent={[Function]}
+  >
+    <TweenOne
+      animation={
+        Object {
+          "ease": "easeOutCubic",
+          "opacity": 1,
           "scale": 1,
           "y": 0,
         }
       }
-      component="div"
+      attr="style"
+      component={[Function]}
+      onChange={[Function]}
+      reverseDelay={0}
       style={
         Object {
-          "height": "100%",
-          "opacity": 0.8,
+          "opacity": 0.5,
           "transform": "translateY(60px) scale(0.9)",
         }
       }
+      updateReStart={true}
+      willChange={true}
     >
-      <styled.div>
-        <Styled(pure(BackgroundImage))
-          placeholder="img_macX60.png"
-          src="img_mac.svg"
-        />
-      </styled.div>
-    </ScrollParallax>
-  </pure(styled.div)>
-</Transition>
+      <Styled(pure(BackgroundImage))
+        placeholder="img_macX60.png"
+        src="img_mac.svg"
+      />
+    </TweenOne>
+  </ScrollOverPack>
+</pure(styled.div)>
 `;
