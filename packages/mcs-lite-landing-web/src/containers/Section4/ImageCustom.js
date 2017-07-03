@@ -15,6 +15,7 @@ import BackgroundImage from '../../components/BackgroundImage';
 const PLAY_SCALE = 0.2;
 const DURATION = 600;
 const EASE = 'easeInOutQuart';
+const DELAY = 250;
 
 const ImageCustom = () =>
   <ImageLayerWrapper>
@@ -48,6 +49,8 @@ const ImageCustom = () =>
           y: 85,
           duration: DURATION,
           ease: EASE,
+          delay: DELAY,
+
         }}
         style={{ transform: 'translate(-120px, 85px)' }}
         component={SVGTooltip}
@@ -70,8 +73,8 @@ const ImageCustom = () =>
         }}
       >
         <ScrollParallax
-          animation={{ y: 35, playScale: [0.2, 0.4], ease: 'easeInOutQuad' }}
-          style={{ transform: 'translateY(0px)' }}
+          animation={{ y: 40, playScale: [0.1, 0.9], ease: 'easeInOutQuad' }}
+          style={{ transform: 'translateY(20px)' }}
           component={SVGCode}
         />
       </TweenOne>
@@ -86,6 +89,8 @@ const ImageCustom = () =>
           y: 22,
           duration: DURATION,
           ease: EASE,
+          delay: DELAY,
+
         }}
         style={{ transform: 'translate(95px, 5px)' }}
         component={SVGCard}
@@ -101,6 +106,8 @@ const ImageCustom = () =>
           y: 125,
           duration: DURATION,
           ease: EASE,
+          delay: DELAY,
+
         }}
         style={{ transform: 'translate(70px, 130px)' }}
         component={SVGSearch}

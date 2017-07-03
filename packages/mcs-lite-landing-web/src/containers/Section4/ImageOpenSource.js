@@ -15,6 +15,7 @@ import BackgroundImage from '../../components/BackgroundImage';
 const PLAY_SCALE = 0.2;
 const DURATION = 600;
 const EASE = 'easeInOutBack';
+const DELAY = 250;
 
 const ImageOpenSource = () =>
   <ImageLayerWrapper>
@@ -49,6 +50,7 @@ const ImageOpenSource = () =>
           rotate: -15,
           duration: DURATION,
           ease: EASE,
+          delay: DELAY,
         }}
         style={{ transform: 'translate(-30px, 30px) rotate(0deg)' }}
         component={SVGOpenCode1}
@@ -59,7 +61,14 @@ const ImageOpenSource = () =>
     <ScrollOverPack playScale={PLAY_SCALE}>
       <TweenOne
         key="SVGOpenCode3"
-        animation={{ x: 40, y: 35, rotate: 15, duration: DURATION, ease: EASE }}
+        animation={{
+          x: 40,
+          y: 35,
+          rotate: 15,
+          duration: DURATION,
+          ease: EASE,
+          delay: DELAY,
+        }}
         style={{ transform: 'translate(30px, 30px) rotate(0deg)' }}
         component={SVGOpenCode3}
       />
@@ -69,7 +78,7 @@ const ImageOpenSource = () =>
     <ScrollOverPack playScale={PLAY_SCALE}>
       <TweenOne
         key="SVGOpenCode2"
-        animation={{ y: 20, duration: DURATION, ease: EASE }}
+        animation={{ y: 20, duration: DURATION, ease: EASE, delay: DELAY }}
         style={{ transform: 'translateY(25px)' }}
         component={SVGOpenCode2}
       />
@@ -91,8 +100,8 @@ const ImageOpenSource = () =>
         }}
       >
         <ScrollParallax
-          animation={{ y: 20, playScale: [0.2, 0.4], ease: 'easeInOutQuad' }}
-          style={{ transform: 'translateY(0px)' }}
+          animation={{ y: 25, playScale: [0.1, 0.9], ease: 'easeInOutQuad' }}
+          style={{ transform: 'translateY(5px)' }}
           component={SVGCloud}
         />
       </TweenOne>
