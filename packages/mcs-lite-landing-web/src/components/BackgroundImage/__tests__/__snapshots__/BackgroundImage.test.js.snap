@@ -1,11 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should renders <BackgroundImage> correctly 1`] = `
-.bFnBcx {
+.eRdWEW {
   height: 100%;
   background-repeat: no-repeat;
-  -webkit-transition: all 0.1s linear;
-  transition: all 0.1s linear;
+  -webkit-transition: blur 0.3 linear;
+  transition: blur 0.3 linear;
   opacity: 1;
   filter: blur(0.5px);
   -webkit-transform: scale(1);
@@ -28,7 +28,7 @@ exports[`should renders <BackgroundImage> correctly 1`] = `
     opacity={1}
     placeholder="placeholder"
     src="src"
-    transition="all 0.1s linear"
+    transition="blur 0.3 linear"
   >
     <ProgressiveImage
       blur={0.5}
@@ -37,7 +37,7 @@ exports[`should renders <BackgroundImage> correctly 1`] = `
       placeholder="placeholder"
       scale={1}
       src="src"
-      transition="all 0.1s linear"
+      transition="blur 0.3 linear"
     >
       <mapPropsStream(Img)
         blur={0.5}
@@ -46,7 +46,7 @@ exports[`should renders <BackgroundImage> correctly 1`] = `
         placeholder="placeholder"
         scale={1}
         src="src"
-        transition="all 0.1s linear"
+        transition="blur 0.3 linear"
       >
         <Img
           blur={0.5}
@@ -58,7 +58,7 @@ exports[`should renders <BackgroundImage> correctly 1`] = `
           placeholder="placeholder"
           scale={1}
           src="src"
-          transition="all 0.1s linear"
+          transition="blur 0.3 linear"
         >
           <styled.div
             blur={0.5}
@@ -74,10 +74,10 @@ exports[`should renders <BackgroundImage> correctly 1`] = `
                 "backgroundImage": "url(\\"placeholder\\")",
               }
             }
-            transition="all 0.1s linear"
+            transition="blur 0.3 linear"
           >
             <div
-              className="sc-bwzfXH exAjwZ sc-bdVaJa bFnBcx"
+              className="sc-bwzfXH exAjwZ sc-bdVaJa eRdWEW"
               opacity={1}
               placeholder="placeholder"
               scale={1}

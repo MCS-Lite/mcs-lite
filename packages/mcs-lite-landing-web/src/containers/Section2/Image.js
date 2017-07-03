@@ -15,7 +15,8 @@ const BackgroundImageContain = styled(BackgroundImage)`
   background-size: contain;
 `;
 
-const PLAY_SCALE = 0.2;
+const PLAY_SCALE = 0.3;
+const DELAY = 250;
 
 const Image = () =>
   <ImageLayerWrapper>
@@ -30,6 +31,7 @@ const Image = () =>
         animation={{
           opacity: 1,
           duration: 350,
+          delay: DELAY,
         }}
         style={{
           opacity: 0.3,

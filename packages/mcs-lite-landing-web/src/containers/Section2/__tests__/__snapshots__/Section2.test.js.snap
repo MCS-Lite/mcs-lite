@@ -51,9 +51,9 @@ exports[`should renders <Section2> correctly 1`] = `
           height={220}
           waypointConfig={
             Object {
-              "bottomOffset": -500,
+              "bottomOffset": -1000,
               "fireOnRapidScroll": true,
-              "topOffset": -500,
+              "topOffset": -1000,
             }
           }
         >

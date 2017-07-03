@@ -5,6 +5,6 @@ exports[`should render Container correctly with HOC 1`] = `
   blur={0.5}
   opacity={1}
   src="src"
-  transition="all 0.1s linear"
+  transition="blur 0.3 linear"
 />
 `;
