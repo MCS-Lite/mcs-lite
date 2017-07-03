@@ -9,6 +9,11 @@ const StyledProgressiveImage = styled(ProgressiveImage)`
 `;
 
 const BackgroundImage = props =>
-  <StyledProgressiveImage blur={0.5} opacity={1} {...props} />;
+  <StyledProgressiveImage
+    blur={0.5}
+    opacity={1}
+    transition="all 0.1s linear"
+    {...props}
+  />;
 
 export default BackgroundImage;

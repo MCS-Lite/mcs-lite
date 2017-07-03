@@ -14,6 +14,7 @@ exports[`should renders <Image> correctly 1`] = `
     <TweenOne
       animation={
         Object {
+          "delay": 250,
           "duration": 600,
           "ease": "easeOutBounce",
           "x": 0,
@@ -45,6 +46,7 @@ exports[`should renders <Image> correctly 1`] = `
     <TweenOne
       animation={
         Object {
+          "delay": 250,
           "duration": 600,
           "ease": "easeOutBounce",
           "rotate": 0,

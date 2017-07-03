@@ -1,5 +1,5 @@
+/* global window */
 import React from 'react';
-import { pure } from 'recompose';
 import ScrollOverPack from 'rc-scroll-anim/lib/ScrollOverPack';
 import TweenOne from 'rc-tween-one';
 import ImageLayerWrapper from '../../components/ImageLayerWrapper';
@@ -13,64 +13,79 @@ import { BackgroundOverlay } from './styled-components';
 const PLAY_SCALE = 0.2;
 const DURATION = 600;
 const EASE = 'easeOutBounce';
+const DELAY = 250;
 
-const Image = () =>
-  <ImageLayerWrapper>
+class Image extends React.PureComponent {
+  componentDidMount() {
+    // TODO: Dont do this (trigger scroll trick)
+    window.scrollTo(window.scrollX, window.scrollY - 1);
+    window.scrollTo(window.scrollX, window.scrollY + 1);
+    window.scrollTo(window.scrollX, window.scrollY - 1);
+    window.scrollTo(window.scrollX, window.scrollY + 1);
+  }
+  render() {
+    return (
+      <ImageLayerWrapper>
 
-    {/* 1. Screen */}
-    <ScrollOverPack playScale={PLAY_SCALE}>
-      <TweenOne
-        key="SVGScreen"
-        animation={{
-          x: 0,
-          y: 0,
-          duration: DURATION,
-          ease: EASE,
-        }}
-        style={{ transform: 'translate(-5px, -32px)' }}
-        component={SVGScreen}
-      />
-    </ScrollOverPack>
+        {/* 1. Screen */}
+        <ScrollOverPack playScale={PLAY_SCALE}>
+          <TweenOne
+            key="SVGScreen"
+            animation={{
+              x: 0,
+              y: 0,
+              duration: DURATION,
+              ease: EASE,
+              delay: DELAY,
+            }}
+            style={{ transform: 'translate(-5px, -32px)' }}
+            component={SVGScreen}
+          />
+        </ScrollOverPack>
 
-    {/* 2. Machine */}
-    <ScrollOverPack playScale={PLAY_SCALE}>
-      <TweenOne
-        key="SVGMachine"
-        animation={{
-          rotate: 0,
-          duration: DURATION,
-          ease: EASE,
-        }}
-        style={{
-          transform: 'translateX(60px) rotate(15deg)',
-          transformOrigin: '143px 0',
-        }}
-        component={SVGMachine}
-      />
-    </ScrollOverPack>
+        {/* 2. Machine */}
+        <ScrollOverPack playScale={PLAY_SCALE}>
+          <TweenOne
+            key="SVGMachine"
+            animation={{
+              rotate: 0,
+              duration: DURATION,
+              ease: EASE,
+              delay: DELAY,
+            }}
+            style={{
+              transform: 'translateX(60px) rotate(15deg)',
+              transformOrigin: '143px 0',
+            }}
+            component={SVGMachine}
+          />
+        </ScrollOverPack>
 
-    {/* 3. Background image */}
-    <ScrollOverPack
-      playScale={PLAY_SCALE}
-      always={false} // Remind: only once
-    >
-      <TweenOne
-        key="BackgroundImage"
-        animation={{
-          opacity: 1,
-          duration: 350,
-        }}
-        style={{
-          opacity: 0.5,
-        }}
-        component={BackgroundImage}
-        src={imgSetupBackground}
-        placeholder={imgSetupBackgroundX60}
-      />
-    </ScrollOverPack>
+        {/* 3. Background image */}
+        <ScrollOverPack
+          playScale={PLAY_SCALE}
+          always={false} // Remind: only once
+        >
+          <TweenOne
+            key="BackgroundImage"
+            animation={{
+              opacity: 1,
+              duration: 350,
+            }}
+            style={{
+              opacity: 0.5,
+            }}
+            component={BackgroundImage}
+            src={imgSetupBackground}
+            placeholder={imgSetupBackgroundX60}
+          />
+        </ScrollOverPack>
 
-    {/* 4. Background overlay */}
-    <BackgroundOverlay />
-  </ImageLayerWrapper>;
+        {/* 4. Background overlay */}
+        <BackgroundOverlay />
+      </ImageLayerWrapper>
+    );
+  }
+}
 
-export default pure(Image);
+export default Image;

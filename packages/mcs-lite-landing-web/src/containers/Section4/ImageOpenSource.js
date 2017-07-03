@@ -12,7 +12,7 @@ import SVGOpenCode3 from '../../components/SVG/SVGOpenCode3';
 import ImageLayerWrapper from '../../components/ImageLayerWrapper';
 import BackgroundImage from '../../components/BackgroundImage';
 
-const PLAY_SCALE = 0.2;
+const PLAY_SCALE = 0.4;
 const DURATION = 600;
 const EASE = 'easeInOutBack';
 const DELAY = 250;

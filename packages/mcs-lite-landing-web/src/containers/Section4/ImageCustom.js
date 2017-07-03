@@ -12,7 +12,7 @@ import imgCustomizationBackground from '../../statics/images/img_customization.s
 import ImageLayerWrapper from '../../components/ImageLayerWrapper';
 import BackgroundImage from '../../components/BackgroundImage';
 
-const PLAY_SCALE = 0.2;
+const PLAY_SCALE = 0.4;
 const DURATION = 600;
 const EASE = 'easeInOutQuart';
 const DELAY = 250;
@@ -50,7 +50,6 @@ const ImageCustom = () =>
           duration: DURATION,
           ease: EASE,
           delay: DELAY,
-
         }}
         style={{ transform: 'translate(-120px, 85px)' }}
         component={SVGTooltip}
@@ -90,7 +89,6 @@ const ImageCustom = () =>
           duration: DURATION,
           ease: EASE,
           delay: DELAY,
-
         }}
         style={{ transform: 'translate(95px, 5px)' }}
         component={SVGCard}
@@ -107,7 +105,6 @@ const ImageCustom = () =>
           duration: DURATION,
           ease: EASE,
           delay: DELAY,
-
         }}
         style={{ transform: 'translate(70px, 130px)' }}
         component={SVGSearch}

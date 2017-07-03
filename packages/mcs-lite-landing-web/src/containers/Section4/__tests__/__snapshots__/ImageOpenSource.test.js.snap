@@ -7,7 +7,7 @@ exports[`should renders <ImageOpenSource> correctly 1`] = `
     appear={true}
     component="div"
     onChange={[Function]}
-    playScale={0.2}
+    playScale={0.4}
     replay={false}
     scrollEvent={[Function]}
   >
@@ -38,7 +38,7 @@ exports[`should renders <ImageOpenSource> correctly 1`] = `
     appear={true}
     component="div"
     onChange={[Function]}
-    playScale={0.2}
+    playScale={0.4}
     replay={false}
     scrollEvent={[Function]}
   >
@@ -71,7 +71,7 @@ exports[`should renders <ImageOpenSource> correctly 1`] = `
     appear={true}
     component="div"
     onChange={[Function]}
-    playScale={0.2}
+    playScale={0.4}
     replay={false}
     scrollEvent={[Function]}
   >
@@ -104,7 +104,7 @@ exports[`should renders <ImageOpenSource> correctly 1`] = `
     appear={true}
     component="div"
     onChange={[Function]}
-    playScale={0.2}
+    playScale={0.4}
     replay={false}
     scrollEvent={[Function]}
   >
@@ -135,7 +135,7 @@ exports[`should renders <ImageOpenSource> correctly 1`] = `
     appear={true}
     component="div"
     onChange={[Function]}
-    playScale={0.2}
+    playScale={0.4}
     replay={false}
     scrollEvent={[Function]}
   >

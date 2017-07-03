@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import rafThrottle from 'raf-throttle';
-import Transition from 'react-motion-ui-pack';
+import TweenOne from 'rc-tween-one';
 import Heading from 'mcs-lite-ui/lib/Heading';
 import last from 'ramda/src/last';
 import DataPointAreaChart from 'mcs-lite-ui/lib/DataPointAreaChart';
@@ -89,18 +89,22 @@ class Chart extends React.PureComponent {
     const { data } = this.state;
 
     return (
-      <Transition
-        component={false}
-        enter={{ opacity: 1 }}
-        leave={{ opacity: 0 }}
+      <TweenOne
+        key="imgIot"
+        animation={{
+          opacity: 1,
+          duration: 550,
+        }}
+        style={{
+          opacity: 0,
+        }}
+        component={Wrapper}
       >
-        <Wrapper key="Wrapper">
-          <StyledHeading color="primary">{last(data).value}</StyledHeading>
-          <ChartWrapper>
-            <DataPointAreaChart isAnimationActive data={data} />
-          </ChartWrapper>
-        </Wrapper>
-      </Transition>
+        <StyledHeading color="primary">{last(data).value}</StyledHeading>
+        <ChartWrapper>
+          <DataPointAreaChart isAnimationActive data={data} />
+        </ChartWrapper>
+      </TweenOne>
     );
   }
 }
