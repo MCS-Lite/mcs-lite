@@ -7,13 +7,14 @@ exports[`should renders <Image> correctly 1`] = `
     appear={true}
     component="div"
     onChange={[Function]}
-    playScale={0.2}
+    playScale={0.3}
     replay={false}
     scrollEvent={[Function]}
   >
     <TweenOne
       animation={
         Object {
+          "delay": 250,
           "duration": 350,
           "opacity": 1,
         }
@@ -38,7 +39,7 @@ exports[`should renders <Image> correctly 1`] = `
     appear={true}
     component="div"
     onChange={[Function]}
-    playScale={0.2}
+    playScale={0.3}
     replay={false}
     scrollEvent={[Function]}
   >

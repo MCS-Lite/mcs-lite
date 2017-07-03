@@ -1,22 +1,20 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should renders <BackgroundImage> correctly 1`] = `
-.bFnBcx {
+.cNYtoe {
   height: 100%;
   background-repeat: no-repeat;
-  -webkit-transition: all 0.1s linear;
-  transition: all 0.1s linear;
-  opacity: 1;
-  filter: blur(0.5px);
+  -webkit-transition: all 0.3 linear;
+  transition: all 0.3 linear;
+  opacity: 0.9;
+  filter: blur(3px);
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);
 }
 
-.exAjwZ {
-  background-position: center center;
+.gezBPS {
   height: 100%;
-  background-size: auto 100%;
 }
 
 <BackgroundImage
@@ -24,71 +22,82 @@ exports[`should renders <BackgroundImage> correctly 1`] = `
   src="src"
 >
   <Styled(ProgressiveImage)
-    blur={0.5}
-    opacity={1}
+    blur={3}
+    component="img"
+    opacity={0.9}
     placeholder="placeholder"
     src="src"
-    transition="all 0.1s linear"
+    transition="all 0.3 linear"
   >
     <ProgressiveImage
-      blur={0.5}
-      className="sc-bwzfXH exAjwZ"
-      opacity={1}
+      blur={3}
+      className="sc-bwzfXH gezBPS"
+      component="img"
+      opacity={0.9}
       placeholder="placeholder"
       scale={1}
       src="src"
-      transition="all 0.1s linear"
+      transition="all 0.3 linear"
     >
       <mapPropsStream(Img)
-        blur={0.5}
-        className="sc-bwzfXH exAjwZ"
-        opacity={1}
+        blur={3}
+        className="sc-bwzfXH gezBPS"
+        component="img"
+        opacity={0.9}
         placeholder="placeholder"
         scale={1}
         src="src"
-        transition="all 0.1s linear"
+        transition="all 0.3 linear"
       >
         <Img
-          blur={0.5}
-          className="sc-bwzfXH exAjwZ"
+          blur={3}
+          className="sc-bwzfXH gezBPS"
+          component="img"
           image="placeholder"
           isCached={false}
           isLoaded={false}
-          opacity={1}
+          opacity={0.9}
           placeholder="placeholder"
           scale={1}
           src="src"
-          transition="all 0.1s linear"
+          transition="all 0.3 linear"
         >
-          <styled.div
-            blur={0.5}
-            className="sc-bwzfXH exAjwZ"
+          <Styled(BaseComponent)
+            blur={3}
+            className="sc-bwzfXH gezBPS"
+            component="img"
             isCached={false}
             isLoaded={false}
-            opacity={1}
+            opacity={0.9}
             placeholder="placeholder"
             scale={1}
-            src="src"
-            style={
-              Object {
-                "backgroundImage": "url(\\"placeholder\\")",
-              }
-            }
-            transition="all 0.1s linear"
+            src="placeholder"
+            style={Object {}}
+            transition="all 0.3 linear"
           >
-            <div
-              className="sc-bwzfXH exAjwZ sc-bdVaJa bFnBcx"
-              opacity={1}
+            <BaseComponent
+              blur={3}
+              className="sc-bwzfXH gezBPS sc-bdVaJa cNYtoe"
+              component="img"
+              isCached={false}
+              isLoaded={false}
+              opacity={0.9}
               placeholder="placeholder"
               scale={1}
-              src="src"
-              style={
-                Object {
-                  "backgroundImage": "url(\\"placeholder\\")",
-                }
-              }
-            />
-          </styled.div>
+              src="placeholder"
+              style={Object {}}
+              transition="all 0.3 linear"
+            >
+              <img
+                className="sc-bwzfXH gezBPS sc-bdVaJa cNYtoe"
+                opacity={0.9}
+                placeholder="placeholder"
+                scale={1}
+                src="placeholder"
+                style={Object {}}
+              />
+            </BaseComponent>
+          </Styled(BaseComponent)>
         </Img>
       </mapPropsStream(Img)>
     </ProgressiveImage>

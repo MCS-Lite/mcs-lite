@@ -12,10 +12,11 @@ import imgIotX60 from '../../statics/images/img_iotX60.png';
 import imgMacX60 from '../../statics/images/img_macX60.png';
 
 const BackgroundImageContain = styled(BackgroundImage)`
-  background-size: contain;
+  max-width: 100%;
 `;
 
-const PLAY_SCALE = 0.2;
+const PLAY_SCALE = 0.3;
+const DELAY = 250;
 
 const Image = () =>
   <ImageLayerWrapper>
@@ -30,6 +31,7 @@ const Image = () =>
         animation={{
           opacity: 1,
           duration: 350,
+          delay: DELAY,
         }}
         style={{
           opacity: 0.3,
