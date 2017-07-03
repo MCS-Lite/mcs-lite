@@ -71,7 +71,7 @@ exports[`should renders <BackgroundImage> correctly 1`] = `
             opacity={1}
             placeholder="placeholder"
             scale={1}
-            src="src"
+            src="placeholder"
             style={Object {}}
             transition="all 0.3 linear"
           >
@@ -84,7 +84,7 @@ exports[`should renders <BackgroundImage> correctly 1`] = `
               opacity={1}
               placeholder="placeholder"
               scale={1}
-              src="src"
+              src="placeholder"
               style={Object {}}
               transition="all 0.3 linear"
             >
@@ -93,7 +93,7 @@ exports[`should renders <BackgroundImage> correctly 1`] = `
                 opacity={1}
                 placeholder="placeholder"
                 scale={1}
-                src="src"
+                src="placeholder"
                 style={Object {}}
               />
             </BaseComponent>
