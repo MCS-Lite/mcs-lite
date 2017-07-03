@@ -90,7 +90,6 @@ class Chart extends React.PureComponent {
 
     return (
       <TweenOne
-        key="imgIot"
         animation={{
           opacity: 1,
           duration: 550,

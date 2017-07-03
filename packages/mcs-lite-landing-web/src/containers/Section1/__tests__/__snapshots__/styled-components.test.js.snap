@@ -39,66 +39,24 @@ Array [
   overflow: hidden;
 }
 
-.cLFRsP {
-  -webkit-text-align: center;
-  text-align: center;
-}
-
-.fpqQNs {
+.dUmYNM {
   padding-bottom: 0;
 }
 
-.gmcvRn {
-  display: block;
-  height: auto;
-  width: 100%;
-  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.1);
-}
-
-.jJjiey {
-  position: relative;
-}
-
-.cyIVWh {
-  display: none;
-}
-
-.jLHOiw {
-  display: block;
-  height: auto;
-  width: 100%;
-  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.1);
-}
-
-.dmdnyd {
-  height: 100%;
+.ecKAAN {
   -webkit-text-align: center;
   text-align: center;
 }
 
-.cpdIrH {
-  height: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  position: absolute;
-  -webkit-transform: translateY(-100%);
-  -ms-transform: translateY(-100%);
-  transform: translateY(-100%);
-  left: 0;
-  right: 0;
+.cTEODa img {
+  display: block;
+  height: auto;
+  width: 100%;
+  min-height: initial;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.1);
 }
 
-.daFCqo {
+.cNSEXH {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -110,63 +68,61 @@ Array [
 }
 
 @media (min-width: 970px) {
-  .cLFRsP {
+  .ecKAAN {
     -webkit-text-align: left;
     text-align: left;
   }
 }
 
 @media (min-width: 768px) {
-  .jJjiey {
-    height: px;
+  .cTEODa {
+    position: relative;
+    height: 350px;
   }
 
-  .jJjiey > * {
+  .cTEODa > * {
     position: absolute;
-    bottom: 0;
     left: 0;
     right: 0;
+    bottom: 0;
+    height: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-items: flex-end;
+    -webkit-box-align: flex-end;
+    -ms-flex-align: flex-end;
+    align-items: flex-end;
   }
-}
 
-@media (min-width: 768px) {
-  .cyIVWh {
+  .cTEODa img {
     display: initial;
     height: 100%;
     width: auto;
-    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.1);
-  }
-}
-
-@media (min-width: 768px) {
-  .jLHOiw {
-    display: initial;
-    height: 100%;
-    width: auto;
-    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.1);
   }
 }
 
 @media (min-width: 970px) {
-  .cpdIrH {
-    width: 577px;
-  }
-}
-
-@media (min-width: 768px) {
-  .cpdIrH {
-    position: initial;
-    -webkit-transform: translateY(0);
-    -ms-transform: translateY(0);
-    transform: translateY(0);
-    left: initial;
-    right: initial;
-  }
-}
-
-@media (min-width: 970px) {
-  .daFCqo {
+  .cTEODa > * {
     display: block;
+  }
+}
+
+@media (min-width: 970px) {
+  .cNSEXH {
+    -webkit-align-items: flex-end;
+    -webkit-box-align: flex-end;
+    -ms-flex-align: flex-end;
+    align-items: flex-end;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
   }
 }
 
@@ -226,13 +182,13 @@ Array [
             }
         >
             <div
-                className="sc-bZQynM cLFRsP"
+                className="sc-gzVnrw ecKAAN"
             />
         </styled.div>
     </Breakpoints>
     <Styled(Breakpoints)>
         <Breakpoints
-            className="sc-gzVnrw fpqQNs"
+            className="sc-bZQynM dUmYNM"
         >
             <Styled(ColumnContainer)
                 breakpoints={
@@ -242,7 +198,7 @@ Array [
                         "sm": 768,
                       }
                 }
-                className="sc-gzVnrw fpqQNs"
+                className="sc-bZQynM dUmYNM"
             >
                 <ColumnContainer
                     breakpoints={
@@ -252,32 +208,17 @@ Array [
                             "sm": 768,
                           }
                     }
-                    className="sc-gzVnrw fpqQNs sc-htpNat dqSROF"
+                    className="sc-bZQynM dUmYNM sc-htpNat dqSROF"
                     divisions={12}
                 >
                     <div
-                        className="sc-gzVnrw fpqQNs sc-htpNat dqSROF"
+                        className="sc-bZQynM dUmYNM sc-htpNat dqSROF"
                     />
                 </ColumnContainer>
             </Styled(ColumnContainer)>
         </Breakpoints>
     </Styled(Breakpoints)>
     <Breakpoints>
-        <styled.img
-            breakpoints={
-                Object {
-                    "lg": 1170,
-                    "md": 970,
-                    "sm": 768,
-                  }
-            }
-        >
-            <img
-                className="sc-htoDjs gmcvRn"
-            />
-        </styled.img>
-    </Breakpoints>
-    <Breakpoints>
         <styled.div
             breakpoints={
                 Object {
@@ -288,57 +229,7 @@ Array [
             }
         >
             <div
-                className="sc-dnqmqq jJjiey"
-            />
-        </styled.div>
-    </Breakpoints>
-    <Breakpoints>
-        <styled.img
-            breakpoints={
-                Object {
-                    "lg": 1170,
-                    "md": 970,
-                    "sm": 768,
-                  }
-            }
-        >
-            <img
-                className="sc-iwsKbI cyIVWh"
-            />
-        </styled.img>
-    </Breakpoints>
-    <Breakpoints>
-        <styled.img
-            breakpoints={
-                Object {
-                    "lg": 1170,
-                    "md": 970,
-                    "sm": 768,
-                  }
-            }
-        >
-            <img
-                className="sc-gZMcBi jLHOiw"
-            />
-        </styled.img>
-    </Breakpoints>
-    <styled.div>
-        <div
-            className="sc-gqjmRU dmdnyd"
-        />
-    </styled.div>
-    <Breakpoints>
-        <styled.div
-            breakpoints={
-                Object {
-                    "lg": 1170,
-                    "md": 970,
-                    "sm": 768,
-                  }
-            }
-        >
-            <div
-                className="sc-VigVT cpdIrH"
+                className="sc-htoDjs cTEODa"
             />
         </styled.div>
     </Breakpoints>
@@ -353,7 +244,7 @@ Array [
             }
         >
             <div
-                className="sc-jTzLTM daFCqo"
+                className="sc-dnqmqq cNSEXH"
             />
         </styled.div>
     </Breakpoints>
@@ -454,20 +345,20 @@ Array [
         </RowContainer>
     </Styled(RowContainer)>
 </div>,
-  .cLFRsP {
+  .ecKAAN {
   -webkit-text-align: center;
   text-align: center;
 }
 
 @media (min-width: 970px) {
-  .cLFRsP {
+  .ecKAAN {
     -webkit-text-align: left;
     text-align: left;
   }
 }
 
 <div
-    className="sc-bZQynM cLFRsP"
+    className="sc-gzVnrw ecKAAN"
 />,
   .dqSROF {
   display: block;
@@ -476,103 +367,89 @@ Array [
   width: 100%;
 }
 
-.fpqQNs {
+.dUmYNM {
   padding-bottom: 0;
 }
 
 <div
-    className="sc-gzVnrw fpqQNs sc-htpNat dqSROF"
+    className="sc-bZQynM dUmYNM sc-htpNat dqSROF"
 />,
-  .jJjiey {
-  position: relative;
+  .cTEODa img {
+  display: block;
+  height: auto;
+  width: 100%;
+  min-height: initial;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.1);
 }
 
 @media (min-width: 768px) {
-  .jJjiey {
-    height: px;
+  .cTEODa {
+    position: relative;
+    height: 350px;
   }
 
-  .jJjiey > * {
+  .cTEODa > * {
     position: absolute;
-    bottom: 0;
     left: 0;
     right: 0;
+    bottom: 0;
+    height: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-items: flex-end;
+    -webkit-box-align: flex-end;
+    -ms-flex-align: flex-end;
+    align-items: flex-end;
   }
-}
 
-<div
-    className="sc-dnqmqq jJjiey"
-/>,
-  .dmdnyd {
-  height: 100%;
-  -webkit-text-align: center;
-  text-align: center;
-}
-
-<div
-    className="sc-gqjmRU dmdnyd"
-/>,
-  .cpdIrH {
-  height: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  position: absolute;
-  -webkit-transform: translateY(-100%);
-  -ms-transform: translateY(-100%);
-  transform: translateY(-100%);
-  left: 0;
-  right: 0;
+  .cTEODa img {
+    display: initial;
+    height: 100%;
+    width: auto;
+  }
 }
 
 @media (min-width: 970px) {
-  .cpdIrH {
-    width: 577px;
-  }
-}
-
-@media (min-width: 768px) {
-  .cpdIrH {
-    position: initial;
-    -webkit-transform: translateY(0);
-    -ms-transform: translateY(0);
-    transform: translateY(0);
-    left: initial;
-    right: initial;
-  }
-}
-
-<div
-    className="sc-VigVT cpdIrH"
-/>,
-  .daFCqo {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-@media (min-width: 970px) {
-  .daFCqo {
+  .cTEODa > * {
     display: block;
   }
 }
 
 <div
-    className="sc-jTzLTM daFCqo"
+    className="sc-htoDjs cTEODa"
+/>,
+  .cNSEXH {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+@media (min-width: 970px) {
+  .cNSEXH {
+    -webkit-align-items: flex-end;
+    -webkit-box-align: flex-end;
+    -ms-flex-align: flex-end;
+    align-items: flex-end;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+}
+
+<div
+    className="sc-dnqmqq cNSEXH"
 />,
 ]
 `;

@@ -2,74 +2,38 @@
 
 exports[`should renders <Image> correctly 1`] = `
 <pure(styled.div)>
-  <ScrollOverPack
-    always={false}
-    appear={true}
-    component="div"
-    onChange={[Function]}
-    playScale={0.3}
-    replay={false}
-    scrollEvent={[Function]}
-  >
-    <TweenOne
-      animation={
-        Object {
-          "delay": 250,
-          "duration": 350,
-          "opacity": 1,
-        }
-      }
-      attr="style"
-      component={[Function]}
-      onChange={[Function]}
+  <div>
+    <Styled(pure(BackgroundImage))
       placeholder="img_iotX60.png"
-      reverseDelay={0}
       src="img_iot.svg"
-      style={
-        Object {
-          "opacity": 0.3,
-        }
-      }
-      updateReStart={true}
-      willChange={true}
     />
-  </ScrollOverPack>
-  <ScrollOverPack
+  </div>
+  <ScrollParallax
     always={true}
-    appear={true}
-    component="div"
-    onChange={[Function]}
-    playScale={0.3}
-    replay={false}
-    scrollEvent={[Function]}
+    animation={
+      Object {
+        "ease": "easeOutCubic",
+        "opacity": 1,
+        "playScale": Array [
+          0,
+          1,
+        ],
+        "scale": 1,
+        "y": -10,
+      }
+    }
+    component={[Function]}
+    style={
+      Object {
+        "opacity": 0.5,
+        "transform": "translateY(60px) scale(0.9)",
+      }
+    }
   >
-    <TweenOne
-      animation={
-        Object {
-          "ease": "easeOutCubic",
-          "opacity": 1,
-          "scale": 1,
-          "y": 0,
-        }
-      }
-      attr="style"
-      component={[Function]}
-      onChange={[Function]}
-      reverseDelay={0}
-      style={
-        Object {
-          "opacity": 0.5,
-          "transform": "translateY(60px) scale(0.9)",
-        }
-      }
-      updateReStart={true}
-      willChange={true}
-    >
-      <Styled(pure(BackgroundImage))
-        placeholder="img_macX60.png"
-        src="img_mac.svg"
-      />
-    </TweenOne>
-  </ScrollOverPack>
+    <Styled(pure(BackgroundImage))
+      placeholder="img_macX60.png"
+      src="img_mac.svg"
+    />
+  </ScrollParallax>
 </pure(styled.div)>
 `;

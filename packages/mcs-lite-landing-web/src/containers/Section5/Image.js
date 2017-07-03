@@ -10,7 +10,7 @@ import SVGMachine from '../../components/SVG/SVGMachine';
 import SVGScreen from '../../components/SVG/SVGScreen';
 import { BackgroundOverlay } from './styled-components';
 
-const PLAY_SCALE = 0.2;
+const PLAY_SCALE = 0.1;
 const DURATION = 600;
 const EASE = 'easeOutBounce';
 const DELAY = 450;
@@ -62,24 +62,12 @@ class Image extends React.PureComponent {
         </ScrollOverPack>
 
         {/* 3. Background image */}
-        <ScrollOverPack
-          playScale={PLAY_SCALE}
-          always={false} // Remind: only once
-        >
-          <TweenOne
-            key="BackgroundImage"
-            animation={{
-              opacity: 1,
-              duration: 350,
-            }}
-            style={{
-              opacity: 0.5,
-            }}
-            component={BackgroundImage}
+        <div>
+          <BackgroundImage
             src={imgSetupBackground}
             placeholder={imgSetupBackgroundX60}
           />
-        </ScrollOverPack>
+        </div>
 
         {/* 4. Background overlay */}
         <BackgroundOverlay />

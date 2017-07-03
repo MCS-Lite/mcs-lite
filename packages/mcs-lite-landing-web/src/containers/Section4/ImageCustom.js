@@ -12,33 +12,21 @@ import imgCustomizationBackground from '../../statics/images/img_customization.s
 import ImageLayerWrapper from '../../components/ImageLayerWrapper';
 import BackgroundImage from '../../components/BackgroundImage';
 
-const PLAY_SCALE = 0.4;
+const PLAY_SCALE = 0.1;
 const DURATION = 600;
 const EASE = 'easeInOutQuart';
-const DELAY = 250;
+const DELAY = 450;
 
 const ImageCustom = () =>
   <ImageLayerWrapper>
 
     {/* 1. Background image */}
-    <ScrollOverPack
-      playScale={PLAY_SCALE}
-      always={false} // Remind: only once
-    >
-      <TweenOne
-        key="BackgroundImage"
-        animation={{
-          opacity: 1,
-          duration: 350,
-        }}
-        style={{
-          opacity: 0.3,
-        }}
-        component={BackgroundImage}
+    <div>
+      <BackgroundImage
         src={imgCustomizationBackground}
         placeholder={imgCustomizationBackgroundX60}
       />
-    </ScrollOverPack>
+    </div>
 
     {/* 2. Tooltip (Left) */}
     <ScrollOverPack playScale={PLAY_SCALE}>

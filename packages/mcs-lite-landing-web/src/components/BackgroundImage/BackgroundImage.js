@@ -3,13 +3,13 @@ import styled from 'styled-components';
 import ProgressiveImage from 'react-progressive-bg-image';
 
 const StyledProgressiveImage = styled(ProgressiveImage)`
-  height: 100%;
+  min-height: 100%;
 `;
 
 const BackgroundImage = props =>
   <StyledProgressiveImage
     blur={3}
-    opacity={0.9}
+    opacity={0.7}
     transition="all 0.3 linear"
     component="img"
     {...props}

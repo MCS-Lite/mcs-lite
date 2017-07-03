@@ -1,8 +1,7 @@
 import React from 'react';
 import { pure } from 'recompose';
 import styled from 'styled-components';
-import ScrollOverPack from 'rc-scroll-anim/lib/ScrollOverPack';
-import TweenOne from 'rc-tween-one';
+import ScrollParallax from 'rc-scroll-anim/lib/ScrollParallax';
 import ImageLayerWrapper from '../../components/ImageLayerWrapper';
 import BackgroundImage from '../../components/BackgroundImage';
 import { MacImage } from './styled-components';
@@ -15,47 +14,32 @@ const BackgroundImageContain = styled(BackgroundImage)`
   max-width: 100%;
 `;
 
-const PLAY_SCALE = 0.3;
-const DELAY = 250;
-
 const Image = () =>
   <ImageLayerWrapper>
 
     {/* 1. Background */}
-    <ScrollOverPack
-      playScale={PLAY_SCALE}
-      always={false} // Remind: only once
-    >
-      <TweenOne
-        key="imgIot"
-        animation={{
-          opacity: 1,
-          duration: 350,
-          delay: DELAY,
-        }}
-        style={{
-          opacity: 0.3,
-        }}
-        component={BackgroundImageContain}
-        src={imgIot}
-        placeholder={imgIotX60}
-      />
-    </ScrollOverPack>
+    <div>
+      <BackgroundImageContain src={imgIot} placeholder={imgIotX60} />
+    </div>
 
     {/* 2. Mac (Center) */}
-    <ScrollOverPack playScale={PLAY_SCALE}>
-      <TweenOne
-        key="MacImage"
-        animation={{ opacity: 1, y: 0, scale: 1, ease: 'easeOutCubic' }}
-        style={{
-          opacity: 0.5,
-          transform: 'translateY(60px) scale(0.9)',
-        }}
-        component={MacImage}
-      >
-        <BackgroundImageContain src={imgMac} placeholder={imgMacX60} />
-      </TweenOne>
-    </ScrollOverPack>
+    <ScrollParallax
+      animation={{
+        opacity: 1,
+        y: -10,
+        scale: 1,
+        playScale: [0, 1],
+        ease: 'easeOutCubic',
+      }}
+      style={{
+        opacity: 0.5,
+        transform: 'translateY(60px) scale(0.9)',
+      }}
+      component={MacImage}
+    >
+      <BackgroundImageContain src={imgMac} placeholder={imgMacX60} />
+    </ScrollParallax>
+
   </ImageLayerWrapper>;
 
 export default pure(Image);
