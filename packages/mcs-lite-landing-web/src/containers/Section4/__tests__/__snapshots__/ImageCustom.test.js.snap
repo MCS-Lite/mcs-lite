@@ -45,6 +45,7 @@ exports[`should renders <ImageCustom> correctly 1`] = `
     <TweenOne
       animation={
         Object {
+          "delay": 250,
           "duration": 600,
           "ease": "easeInOutQuart",
           "x": -105,
@@ -98,16 +99,16 @@ exports[`should renders <ImageCustom> correctly 1`] = `
           Object {
             "ease": "easeInOutQuad",
             "playScale": Array [
-              0.2,
-              0.4,
+              0.1,
+              0.9,
             ],
-            "y": 35,
+            "y": 40,
           }
         }
         component={[Function]}
         style={
           Object {
-            "transform": "translateY(0px)",
+            "transform": "translateY(20px)",
           }
         }
       />
@@ -125,6 +126,7 @@ exports[`should renders <ImageCustom> correctly 1`] = `
     <TweenOne
       animation={
         Object {
+          "delay": 250,
           "duration": 600,
           "ease": "easeInOutQuart",
           "x": 80,
@@ -156,6 +158,7 @@ exports[`should renders <ImageCustom> correctly 1`] = `
     <TweenOne
       animation={
         Object {
+          "delay": 250,
           "duration": 600,
           "ease": "easeInOutQuart",
           "x": 70,

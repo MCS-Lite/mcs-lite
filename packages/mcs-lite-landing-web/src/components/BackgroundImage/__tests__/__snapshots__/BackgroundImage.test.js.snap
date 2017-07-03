@@ -36,6 +36,7 @@ exports[`should renders <BackgroundImage> correctly 1`] = `
       placeholder="placeholder"
       scale={1}
       src="src"
+      transition="opacity 0.3s linear"
     >
       <mapPropsStream(Img)
         blur={0.5}
@@ -44,20 +45,24 @@ exports[`should renders <BackgroundImage> correctly 1`] = `
         placeholder="placeholder"
         scale={1}
         src="src"
+        transition="opacity 0.3s linear"
       >
         <Img
           blur={0.5}
           className="sc-bwzfXH exAjwZ"
           image="placeholder"
+          isCached={false}
           isLoaded={false}
           opacity={1}
           placeholder="placeholder"
           scale={1}
           src="src"
+          transition="opacity 0.3s linear"
         >
           <styled.div
             blur={0.5}
             className="sc-bwzfXH exAjwZ"
+            isCached={false}
             isLoaded={false}
             opacity={1}
             placeholder="placeholder"
@@ -68,6 +73,7 @@ exports[`should renders <BackgroundImage> correctly 1`] = `
                 "backgroundImage": "url(\\"placeholder\\")",
               }
             }
+            transition="opacity 0.3s linear"
           >
             <div
               className="sc-bwzfXH exAjwZ sc-bdVaJa epBpRj"

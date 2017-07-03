@@ -45,6 +45,7 @@ exports[`should renders <ImageOpenSource> correctly 1`] = `
     <TweenOne
       animation={
         Object {
+          "delay": 250,
           "duration": 600,
           "ease": "easeInOutBack",
           "rotate": -15,
@@ -77,6 +78,7 @@ exports[`should renders <ImageOpenSource> correctly 1`] = `
     <TweenOne
       animation={
         Object {
+          "delay": 250,
           "duration": 600,
           "ease": "easeInOutBack",
           "rotate": 15,
@@ -109,6 +111,7 @@ exports[`should renders <ImageOpenSource> correctly 1`] = `
     <TweenOne
       animation={
         Object {
+          "delay": 250,
           "duration": 600,
           "ease": "easeInOutBack",
           "y": 20,
@@ -161,16 +164,16 @@ exports[`should renders <ImageOpenSource> correctly 1`] = `
           Object {
             "ease": "easeInOutQuad",
             "playScale": Array [
-              0.2,
-              0.4,
+              0.1,
+              0.9,
             ],
-            "y": 20,
+            "y": 25,
           }
         }
         component={[Function]}
         style={
           Object {
-            "transform": "translateY(0px)",
+            "transform": "translateY(5px)",
           }
         }
       />
