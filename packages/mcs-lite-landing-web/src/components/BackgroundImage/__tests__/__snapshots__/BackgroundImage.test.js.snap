@@ -13,10 +13,8 @@ exports[`should renders <BackgroundImage> correctly 1`] = `
   transform: scale(1);
 }
 
-.exAjwZ {
-  background-position: center center;
+.gezBPS {
   height: 100%;
-  background-size: auto 100%;
 }
 
 <BackgroundImage
@@ -33,7 +31,7 @@ exports[`should renders <BackgroundImage> correctly 1`] = `
   >
     <ProgressiveImage
       blur={0.5}
-      className="sc-bwzfXH exAjwZ"
+      className="sc-bwzfXH gezBPS"
       component="img"
       opacity={1}
       placeholder="placeholder"
@@ -43,7 +41,7 @@ exports[`should renders <BackgroundImage> correctly 1`] = `
     >
       <mapPropsStream(Img)
         blur={0.5}
-        className="sc-bwzfXH exAjwZ"
+        className="sc-bwzfXH gezBPS"
         component="img"
         opacity={1}
         placeholder="placeholder"
@@ -53,7 +51,7 @@ exports[`should renders <BackgroundImage> correctly 1`] = `
       >
         <Img
           blur={0.5}
-          className="sc-bwzfXH exAjwZ"
+          className="sc-bwzfXH gezBPS"
           component="img"
           image="placeholder"
           isCached={false}
@@ -66,7 +64,7 @@ exports[`should renders <BackgroundImage> correctly 1`] = `
         >
           <Styled(BaseComponent)
             blur={0.5}
-            className="sc-bwzfXH exAjwZ"
+            className="sc-bwzfXH gezBPS"
             component="img"
             isCached={false}
             isLoaded={false}
@@ -79,7 +77,7 @@ exports[`should renders <BackgroundImage> correctly 1`] = `
           >
             <BaseComponent
               blur={0.5}
-              className="sc-bwzfXH exAjwZ sc-bdVaJa hzgrY"
+              className="sc-bwzfXH gezBPS sc-bdVaJa hzgrY"
               component="img"
               isCached={false}
               isLoaded={false}
@@ -91,7 +89,7 @@ exports[`should renders <BackgroundImage> correctly 1`] = `
               transition="all 0.3 linear"
             >
               <img
-                className="sc-bwzfXH exAjwZ sc-bdVaJa hzgrY"
+                className="sc-bwzfXH gezBPS sc-bdVaJa hzgrY"
                 opacity={1}
                 placeholder="placeholder"
                 scale={1}

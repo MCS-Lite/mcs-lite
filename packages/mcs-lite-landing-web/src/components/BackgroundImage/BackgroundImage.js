@@ -3,9 +3,7 @@ import styled from 'styled-components';
 import ProgressiveImage from 'react-progressive-bg-image';
 
 const StyledProgressiveImage = styled(ProgressiveImage)`
-  background-position: center center;
   height: 100%;
-  background-size: auto 100%;
 `;
 
 const BackgroundImage = props =>

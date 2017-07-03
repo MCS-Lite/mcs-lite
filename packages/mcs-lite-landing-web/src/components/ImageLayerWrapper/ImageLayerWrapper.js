@@ -9,6 +9,8 @@ const ImageLayerWrapper = styled.div`
     left: 0;
     right: 0;
     height: 100%;
+    display: flex;
+    justify-content: center;
   }
 `;
 

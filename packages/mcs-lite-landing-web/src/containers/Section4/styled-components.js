@@ -11,6 +11,7 @@ export const CardWrapper = styled.div`
   flex-direction: column;
   text-align: center;
   min-height: 385px;
+  overflow-x: hidden;
 
   > ${A} {
 
