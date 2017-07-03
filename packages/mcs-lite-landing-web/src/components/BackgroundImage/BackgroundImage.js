@@ -12,7 +12,8 @@ const BackgroundImage = props =>
   <StyledProgressiveImage
     blur={0.5}
     opacity={1}
-    transition="blur 0.3 linear"
+    transition="all 0.3 linear"
+    component="img"
     {...props}
   />;
 
