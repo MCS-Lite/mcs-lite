@@ -13,7 +13,7 @@ import { BackgroundOverlay } from './styled-components';
 const PLAY_SCALE = 0.2;
 const DURATION = 600;
 const EASE = 'easeOutBounce';
-const DELAY = 250;
+const DELAY = 450;
 
 class Image extends React.PureComponent {
   componentDidMount() {

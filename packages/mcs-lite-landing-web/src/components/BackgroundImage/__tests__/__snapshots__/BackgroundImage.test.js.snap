@@ -1,13 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should renders <BackgroundImage> correctly 1`] = `
-.hzgrY {
+.cNYtoe {
   height: 100%;
   background-repeat: no-repeat;
   -webkit-transition: all 0.3 linear;
   transition: all 0.3 linear;
-  opacity: 1;
-  filter: blur(0.5px);
+  opacity: 0.9;
+  filter: blur(3px);
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);
@@ -22,53 +22,53 @@ exports[`should renders <BackgroundImage> correctly 1`] = `
   src="src"
 >
   <Styled(ProgressiveImage)
-    blur={0.5}
+    blur={3}
     component="img"
-    opacity={1}
+    opacity={0.9}
     placeholder="placeholder"
     src="src"
     transition="all 0.3 linear"
   >
     <ProgressiveImage
-      blur={0.5}
+      blur={3}
       className="sc-bwzfXH gezBPS"
       component="img"
-      opacity={1}
+      opacity={0.9}
       placeholder="placeholder"
       scale={1}
       src="src"
       transition="all 0.3 linear"
     >
       <mapPropsStream(Img)
-        blur={0.5}
+        blur={3}
         className="sc-bwzfXH gezBPS"
         component="img"
-        opacity={1}
+        opacity={0.9}
         placeholder="placeholder"
         scale={1}
         src="src"
         transition="all 0.3 linear"
       >
         <Img
-          blur={0.5}
+          blur={3}
           className="sc-bwzfXH gezBPS"
           component="img"
           image="placeholder"
           isCached={false}
           isLoaded={false}
-          opacity={1}
+          opacity={0.9}
           placeholder="placeholder"
           scale={1}
           src="src"
           transition="all 0.3 linear"
         >
           <Styled(BaseComponent)
-            blur={0.5}
+            blur={3}
             className="sc-bwzfXH gezBPS"
             component="img"
             isCached={false}
             isLoaded={false}
-            opacity={1}
+            opacity={0.9}
             placeholder="placeholder"
             scale={1}
             src="placeholder"
@@ -76,12 +76,12 @@ exports[`should renders <BackgroundImage> correctly 1`] = `
             transition="all 0.3 linear"
           >
             <BaseComponent
-              blur={0.5}
-              className="sc-bwzfXH gezBPS sc-bdVaJa hzgrY"
+              blur={3}
+              className="sc-bwzfXH gezBPS sc-bdVaJa cNYtoe"
               component="img"
               isCached={false}
               isLoaded={false}
-              opacity={1}
+              opacity={0.9}
               placeholder="placeholder"
               scale={1}
               src="placeholder"
@@ -89,8 +89,8 @@ exports[`should renders <BackgroundImage> correctly 1`] = `
               transition="all 0.3 linear"
             >
               <img
-                className="sc-bwzfXH gezBPS sc-bdVaJa hzgrY"
-                opacity={1}
+                className="sc-bwzfXH gezBPS sc-bdVaJa cNYtoe"
+                opacity={0.9}
                 placeholder="placeholder"
                 scale={1}
                 src="placeholder"
