@@ -12,7 +12,7 @@
 
 **GitHub: [https://github.com/MCS-Lite](https://github.com/MCS-Lite)**
 
-**Website: [https://mcslite.netlify.com/en-US](https://mcslite.netlify.com/en-US)**
+**Website: [https://mcslite.netlify.com](https://mcslite.netlify.com/)**
 
 <br/><br/><br/>
 

@@ -8,7 +8,7 @@ MCS Lite 將運行網路應用平台所需的元件，包括資料庫，網頁�
 
 無論是應用於教育機構、軟硬體研發團隊、或是各種商業場域，也無論電腦主機是處於公眾網路或是私有網域內，您皆可透過 MCS Lite 實現裝置連網的第一步。
 
-**[立即下載 MCS Lite 應用程式](https://github.com/MCS-Lite/mcs-lite-app/releases)**
+**[立即下載 MCS Lite 應用程式](https://github.com/MCS-Lite/mcs-lite-app/releases/latest)**
 
 # 代碼開源
 

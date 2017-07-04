@@ -8,7 +8,7 @@ MCS Lite 将运行网路应用平台所需的元件，包括资料库，网页�
 
 无论是应用于教育机构、软硬体研发团队、或是各种商业场域，也无论电脑主机是处于公众网路或是私有网域内，您皆可透过 MCS Lite 实现装置连网的第一步。
 
-**[立即下载 MCS Lite 应用程式](https://github.com/MCS-Lite/mcs-lite-app/releases)**
+**[立即下载 MCS Lite 应用程式](https://github.com/MCS-Lite/mcs-lite-app/releases/latest)**
 
 # 代码开源
 

@@ -65,11 +65,9 @@ We will implement on the LinkIt 7697 SDK GCC development environment in this exa
 
 5. When the download is complete, switch the screen to your browser and open the MCS Lite test device detailed page. When the controller is switched to **on** state, **USR LED** will light up on the LinkIt 7697 development board and then upload **LED is ON** string to a string display data channel；Vise versa, the LED will be turned off and upload the **LED is ON** string.
 
-
 	**MCS Lite test device detailed page** ![Arduino IDE](../../assets/MCS_device_string.png)
 	
 	**LinkIt 7697 USR LED light** ![Arduino IDE](../../assets/7697_LED.png)
-	
 	
 ### Code explanation
 Let's look at the **main.c** file. We will establish a WebSocket connection to the MCS Lite server after the device's connects to Wi-Fi for receive data from the server side. The received data will be processed in **tcp\_callback()**. WebSocket connection is permanent, once established, will periodically send heartbeat to inform the server that this device is still alive and remains connected.

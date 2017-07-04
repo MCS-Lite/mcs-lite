@@ -47,8 +47,7 @@ On the IoT platform, there is a web console for end users to create their protot
 
    * If you are executing **mcs-lite-app** on MacOS for the first time or if you have changed the file path, be sure to execute the **setup** script to re-initialize config.json file.
    * If you are executing **mcs-lite-app** on MacOS, you may see the following warning window. Please launch MCS Lite from context menu by right-clicking on your mouse.
-   
-   		![](../../assets/unknown_warning.png)
+   	![](../../assets/unknown_warning.png)
 
 4. Click the **Start** button at top-right corner of the admin console，start running the MCS Lite IoT Platform.
 	![](../../assets/mcs_lite_start_service.png)
@@ -92,4 +91,4 @@ On the IoT platform, there is a web console for end users to create their protot
 
 * Network connection
 
-* Allow being accessed through port 3000, 8000, 8888 in firewall rule. (Please refer to [Admin console](/mcs_lite_usage/mcs_lite_admin_usage.md)for mode details)
+* Allow being accessed through port 3000, 8000, 8888 in firewall rule. (Please refer to [Admin console](/mcs_lite_usage/mcs_lite_admin_usage.md) for mode details)

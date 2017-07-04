@@ -10,7 +10,7 @@ MCS Lite composes all the elements that is required for a web application into a
 
 Whether it is applied to educational institutions, hardware and software R & D team, or a variety of commercial field, and whether the computer host is in the public network or private domain，MCS Lite help you build your IoT platform with ease and agility.  
 
-**[Download MCS Lite application now](https://github.com/MCS-Lite/mcs-lite-app/releases)**
+**[Download MCS Lite application now](https://github.com/MCS-Lite/mcs-lite-app/releases/latest)**
 
 # Open source
 
