@@ -1,6 +1,6 @@
 {
   "name": "mcs-lite-theme",
-  "version": "0.3.4",
+  "version": "0.3.5",
   "description": "Defined `Theme` and helpers for `mcs-lite-ui`",
   "repository": "MCS-Lite/mcs-lite",
   "author": "Michael Hsu <evenchange4@gmail.com>",
@@ -22,7 +22,7 @@
   "license": "MIT",
   "devDependencies": {
     "babel-cli": "^6.24.1",
-    "babel-preset-mcs-lite": "^0.3.4"
+    "babel-preset-mcs-lite": "^0.3.5"
   },
   "dependencies": {
     "d3-color": "^1.0.3"
