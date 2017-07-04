@@ -1,5 +1,76 @@
 # MCS Lite changelogs
 
+## Unreleased (2017-07-04)
+
+#### :rocket: New Feature
+* `mcs-lite-landing-web`
+  * [#404](https://github.com/MCS-Lite/mcs-lite/pull/404) feat(Landing): introduce progressive images. ([@evenchange4](https://github.com/evenchange4))
+  * [#380](https://github.com/MCS-Lite/mcs-lite/pull/380) feat(Landing/Header/Footer): add RWD feature. ([@evenchange4](https://github.com/evenchange4))
+  * [#379](https://github.com/MCS-Lite/mcs-lite/pull/379) feat(Landing/Sections): update images. ([@evenchange4](https://github.com/evenchange4))
+  * [#374](https://github.com/MCS-Lite/mcs-lite/pull/374) feat(Landing/GA): introduce auto track. ([@evenchange4](https://github.com/evenchange4))
+* `mcs-lite-landing-web`, `mcs-lite-ui`
+  * [#390](https://github.com/MCS-Lite/mcs-lite/pull/390) feat(Landing/Section1): add live chart. ([@evenchange4](https://github.com/evenchange4))
+* `babel-preset-mcs-lite`, `mcs-lite-admin-web`, `mcs-lite-landing-web`, `mcs-lite-mobile-web`, `mcs-lite-ui`
+  * [#388](https://github.com/MCS-Lite/mcs-lite/pull/388) refactor(Landing/UI): new LazyloadOnce component & ncu. ([@evenchange4](https://github.com/evenchange4))
+* `mcs-lite-admin-web`, `mcs-lite-landing-web`, `mcs-lite-ui`
+  * [#385](https://github.com/MCS-Lite/mcs-lite/pull/385) feat(Landing/MobileHeader): use lazy loadable component. ([@evenchange4](https://github.com/evenchange4))
+* `mcs-lite-admin-web`, `mcs-lite-design`, `mcs-lite-landing-web`, `mcs-lite-mobile-web`, `mcs-lite-translation`, `mcs-lite-ui`
+  * [#383](https://github.com/MCS-Lite/mcs-lite/pull/383) feat(meta): add 512 images & meta data for landing page. ([@evenchange4](https://github.com/evenchange4))
+* `mcs-lite-landing-web`, `mcs-lite-mobile-web`, `mcs-lite-theme`, `mcs-lite-ui`
+  * [#382](https://github.com/MCS-Lite/mcs-lite/pull/382) refactor(Landing/UI): Extract header / nav / MorphReplace / SpaceTop components. ([@evenchange4](https://github.com/evenchange4))
+* `mcs-lite-introduction`, `mcs-lite-landing-web`
+  * [#377](https://github.com/MCS-Lite/mcs-lite/pull/377) feat(ga): add sitemap for search console. ([@evenchange4](https://github.com/evenchange4))
+* `mcs-lite-landing-web`, `mcs-lite-translation`
+  * [#371](https://github.com/MCS-Lite/mcs-lite/pull/371) feat(Landing/Header): add header for desktop. ([@evenchange4](https://github.com/evenchange4))
+
+#### :bug: Bug Fix
+* `mcs-lite-landing-web`
+  * [#409](https://github.com/MCS-Lite/mcs-lite/pull/409) fix(Landing): tuning animations. ([@evenchange4](https://github.com/evenchange4))
+  * [#407](https://github.com/MCS-Lite/mcs-lite/pull/407) fix(Landing): update react-progressive-bg-image & switch to rc-tween-one. ([@evenchange4](https://github.com/evenchange4))
+  * [#375](https://github.com/MCS-Lite/mcs-lite/pull/375) fix(Landing/GA): Switch from code split to CDN with async scripts in HTML. ([@evenchange4](https://github.com/evenchange4))
+* `mcs-lite-landing-web`, `mcs-lite-mobile-web`, `mcs-lite-ui`
+  * [#394](https://github.com/MCS-Lite/mcs-lite/pull/394) fix(Landing): i18n. ([@evenchange4](https://github.com/evenchange4))
+  * [#381](https://github.com/MCS-Lite/mcs-lite/pull/381) fix(Landing): turing animations. ([@evenchange4](https://github.com/evenchange4))
+* `mcs-lite-landing-web`, `mcs-lite-ui`
+  * [#389](https://github.com/MCS-Lite/mcs-lite/pull/389) fix(Ladning/Header): loadable webpackjsonp problem & add tests. ([@evenchange4](https://github.com/evenchange4))
+
+#### :nail_care: Enhancement
+* `mcs-lite-landing-web`
+  * [#403](https://github.com/MCS-Lite/mcs-lite/pull/403) refactor(Landing/Footer): update lazy load offset. ([@evenchange4](https://github.com/evenchange4))
+  * [#400](https://github.com/MCS-Lite/mcs-lite/pull/400) chore(Landing): reduce svg size. ([@evenchange4](https://github.com/evenchange4))
+  * [#395](https://github.com/MCS-Lite/mcs-lite/pull/395) refactor(Landing): Use LazyLoadable Sections. ([@evenchange4](https://github.com/evenchange4))
+  * [#387](https://github.com/MCS-Lite/mcs-lite/pull/387) refactor(Landing): switch to react-waypoint & use pure component. ([@evenchange4](https://github.com/evenchange4))
+* `mcs-lite-translation`
+  * [#401](https://github.com/MCS-Lite/mcs-lite/pull/401) feat(i18N): update with proper translation strings.. ([@dariachen](https://github.com/dariachen))
+  * [#399](https://github.com/MCS-Lite/mcs-lite/pull/399) feat(i18N): translation landing page.. ([@dariachen](https://github.com/dariachen))
+* `eslint-config-mcs-lite`, `mcs-lite-admin-web`, `mcs-lite-landing-web`, `mcs-lite-mobile-web`, `mcs-lite-ui`, `stylelint-config-mcs-lite`
+  * [#393](https://github.com/MCS-Lite/mcs-lite/pull/393) refactor(utils): extract utils to mcs-lite-ui. ([@evenchange4](https://github.com/evenchange4))
+* `mcs-lite-admin-web`, `mcs-lite-landing-web`, `mcs-lite-mobile-web`
+  * [#386](https://github.com/MCS-Lite/mcs-lite/pull/386) chore(Landing): optimize bundle size: history, fetch. ([@evenchange4](https://github.com/evenchange4))
+* `mcs-lite-admin-web`, `mcs-lite-landing-web`, `mcs-lite-mobile-web`, `mcs-lite-ui`
+  * [#384](https://github.com/MCS-Lite/mcs-lite/pull/384) refactor(Landing): inline SVG & switch normailize to polished & use lazyload components. ([@evenchange4](https://github.com/evenchange4))
+* `mcs-lite-landing-web`, `mcs-lite-translation`
+  * [#378](https://github.com/MCS-Lite/mcs-lite/pull/378) refactor(Header): Extract components to avoid setState while scrolling. ([@evenchange4](https://github.com/evenchange4))
+
+#### :memo: Documentation
+* `mcs-lite-design`
+  * [#391](https://github.com/MCS-Lite/mcs-lite/pull/391) docs(Design): update sketch for UI quideline. ([@abby1002](https://github.com/abby1002))
+
+#### :house: Internal
+* `babel-preset-mcs-lite`, `eslint-config-mcs-lite`, `mcs-lite-admin-web`, `mcs-lite-landing-web`, `mcs-lite-mobile-web`, `mcs-lite-ui`
+  * [#410](https://github.com/MCS-Lite/mcs-lite/pull/410) chore(yarn): upgrade to 0.27.5. ([@evenchange4](https://github.com/evenchange4))
+* `babel-preset-mcs-lite`, `mcs-lite-admin-web`, `mcs-lite-landing-web`, `mcs-lite-mobile-web`, `mcs-lite-scripts`, `mcs-lite-ui`
+  * [#396](https://github.com/MCS-Lite/mcs-lite/pull/396) chore(ncu): update react-scripts to 1.0.8. ([@evenchange4](https://github.com/evenchange4))
+* `mcs-lite-admin-web`, `mcs-lite-landing-web`
+  * [#373](https://github.com/MCS-Lite/mcs-lite/pull/373) chore(env): update .env files. ([@evenchange4](https://github.com/evenchange4))
+
+#### Committers: 3
+- Abby Chiu ([abby1002](https://github.com/abby1002))
+- Daria Chen ([dariachen](https://github.com/dariachen))
+- Michael Hsu ([evenchange4](https://github.com/evenchange4))
+
+----
+
 ## Released (2017-06-19)
 
 ### Bump Versions
