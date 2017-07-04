@@ -12,7 +12,7 @@ Ask MCS Lite development team how we can help:
 
 **GitHub: [https://github.com/MCS-Lite](https://github.com/MCS-Lite)**
 
-**Website: [https://mcslite.netlify.com](https://mcslite.netlify.com)**
+**Website: [https://mcslite.netlify.com/{{book.language}}](https://mcslite.netlify.com/{{book.language}})**
 
 <br/><br/><br/>
 
