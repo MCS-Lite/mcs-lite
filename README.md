@@ -8,8 +8,9 @@
 
 > Note: MCS Lite core and Desktop website is being developed at https://github.com/MCS-Lite/mcs-lite-app.
 
--   Try UI online - http://mcs-lite-ui.netlify.com/
--   Introduction - http://mcs-lite-introduction.netlify.com/
+-   Website - https://mcslite.netlify.com/
+-   Resources - https://mcs-lite-introduction.netlify.com/
+-   UI Library - https://mcs-lite-ui.netlify.com/
 -   [Developer Guide](./docs/README.md)
 
 
@@ -17,7 +18,7 @@
 
 -   node >= 8.0.0
 -   npm >= 5.0.0
--   yarn >= 0.24.6
+-   yarn >= 0.27.5
 
 ## Packages
 
@@ -90,6 +91,7 @@
 | `mcs-lite-design` | The source images to be compressed used by MCS Lite | [![npm][mcs-lite-design-npm-badge]][mcs-lite-design-npm] | [![npm downloads][mcs-lite-design-npm-downloads]][mcs-lite-design-npm]
 | `mcs-lite-icon` | Convert SVG icon to React components | [![npm][mcs-lite-icon-npm-badge]][mcs-lite-icon-npm] | [![npm downloads][mcs-lite-icon-npm-downloads]][mcs-lite-icon-npm]
 | `mcs-lite-introduction` | GitBook for MCS Lite documentation | [![npm][mcs-lite-introduction-npm-badge]][mcs-lite-introduction-npm] | [![npm downloads][mcs-lite-introduction-npm-downloads]][mcs-lite-introduction-npm]
+| `mcs-lite-landing-web` | MCS Lite Landing Web |  |  |
 | `mcs-lite-mobile-web` | MCS Lite Mobile Web | [![npm][mcs-lite-mobile-web-npm-badge]][mcs-lite-mobile-web-npm] | [![npm downloads][mcs-lite-mobile-web-npm-downloads]][mcs-lite-mobile-web-npm]
 | `mcs-lite-scripts` | Shared scripts and CLI used by MCS Lite | [![npm][mcs-lite-scripts-npm-badge]][mcs-lite-scripts-npm] | [![npm downloads][mcs-lite-scripts-npm-downloads]][mcs-lite-scripts-npm]
 | `mcs-lite-theme` | Defined `Theme` and helpers for `mcs-lite-ui` | [![npm][mcs-lite-theme-npm-badge]][mcs-lite-theme-npm] | [![npm downloads][mcs-lite-theme-npm-downloads]][mcs-lite-theme-npm]
@@ -163,6 +165,7 @@ Packages
 | `mcs-lite-design`           | V     |      |       | V     |
 | `mcs-lite-icon`             | V     |      |       | V     |
 | `mcs-lite-introduction`     | V     |      | V     | V     |
+| `mcs-lite-landing-web`      |       | V    | V     | V     |
 | `mcs-lite-mobile-web`       |       | V    | V     | V     |
 | `mcs-lite-scripts`          | V     |      |       | V     |
 | `mcs-lite-theme`            | V     |      |       | V     |
