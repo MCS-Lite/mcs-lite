@@ -7,13 +7,15 @@ The admin console provides the following functions:
 2. IP address list：The IP address of the computer on which MCS Lite is running and the port to which the MCS Lite service is bound. Users and devices on the same network can connect to IP: port to use the MCS Lite service. When the computer running MCS Lite has more than one network interface cards or connected to more than one network, you will see these network addresses (IP) being listed.
 3. System configuration：Modify the setting of database, OAuth, web APIs, etc. The following is a detailed description of the system configuration, in the regular environment, you should just adopt the default setting.
 
-	| File name | Description |
-	| :--- | :--- |
-	| db.json | This is NeDB related settings. In the general situation, just keep the default setting. |
-	| oauth.json | This is OAuth related settings. It uses port 3000 by default.|
-	| rest.json | This is RESTful server related settings. It uses port 3000 by default.|
-	| stream.json | This is streaming server related settings. |
-	| wot.json | This is WebSocket server related settings. It uses port 8000 by default.|
+| File name | Description| 
+| :--- | :--- |
+| db.json | This is NeDB related settings. In the general situation, just keep the default setting. |
+| oauth.json | This is OAuth related settings. It uses port 3000 by default. |
+| rest.json | This is RESTful server related settings. It uses port 3000 by default. |
+| stream.json | This is streaming server related settings. |
+| wot.json | This is WebSocket server related settings. It uses port 8000 by default. |
+	
+
 
 After updating the above files, be sure to restart the MCS Lite service to load the latest settings.
 

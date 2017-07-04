@@ -7,13 +7,13 @@
 2. 連線介面列表：也就是 MCS Lite 所運行的電腦的網路位址 (IP) 以及 MCS Lite 服務所綁定的連接埠 (port)，在同個網路內的使用者與裝置則可連線到 IP:port 來使用 MCS Lite 服務。當 MCS Lite 所運行的電腦有不只一張網路卡或是連接上不只一個網路時，您將會看到這些網路位址 (IP) 一一的被列出。
 3. 系統管理：修改資料庫 (database)，使用者身份驗證 (OAuth)，網路應用接口 (web APIs) 的服務設定，以下為系統設定檔的詳細說明，在一般的環境下，建議使用預設值，無須特意更改。
 
-	| 檔案名稱 | 說明 |
-	| :--- | :--- |
-	| db.json | 此為 nedb 連線相關設定，一般情況皆維持預設即可。 |
-	| oauth.json | 此為 OAuth service 相關設定。在尚無 auto scaling 與 distributed deployment 的需求之前，OAuth service 的 host 與 port（預設 port 為 3000）設定，與 RESTful service 相同即可。另外注意，如果為 production 環境，建議 JWT\_SECRET 不要使用預設的 "superSecret"。 |
-	| rest.json | 此為 RESTful service 相關設定。設定 MCS Lite API 所要連線的 host 與 port（預設 port 為 3000），如果有更改請務必通知使用者。另外注意，如果為 production 環境, secretKey, prototypeKey, deviceKey, session 請務必改成另外的內容。 |
-	| stream.json | 此為 streaming service 的參數設定。 |
-	| wot.json | 此為 WebSocket 的所要連線的 host 與 port（預設 port 為 8000） |
+| 檔案名稱 | 說明 |
+| :--- | :--- |
+| db.json | 此為 nedb 連線相關設定，一般情況皆維持預設即可。 |
+| oauth.json | 此為 OAuth service 相關設定。在尚無 auto scaling 與 distributed deployment 的需求之前，OAuth service 的 host 與 port（預設 port 為 3000）設定，與 RESTful service 相同即可。另外注意，如果為 production 環境，建議 JWT\_SECRET 不要使用預設的 "superSecret"。 |
+| rest.json | 此為 RESTful service 相關設定。設定 MCS Lite API 所要連線的 host 與 port（預設 port 為 3000），如果有更改請務必通知使用者。另外注意，如果為 production 環境, secretKey, prototypeKey, deviceKey, session 請務必改成另外的內容。 |
+| stream.json | 此為 streaming service 的參數設定。 |
+| wot.json | 此為 WebSocket 的所要連線的 host 與 port（預設 port 為 8000） |
 
 更新上述的檔案之後，請務必重新啟動 MCS Lite 服務以載入最新的設定。
 
