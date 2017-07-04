@@ -1,11 +1,67 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should renders <Image> correctly with Mobile view 1`] = `
-.blhQpx {
+.efkuaT {
+  height: 100%;
+  background-repeat: no-repeat;
+  -webkit-transition: all 0.3 linear;
+  transition: all 0.3 linear;
+  opacity: 0.7;
+  filter: blur(5px);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.iRyBvI {
+  min-height: 100%;
+}
+
+.bHHRey img {
   display: block;
   height: auto;
   width: 100%;
+  min-height: initial;
   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 768px) {
+  .bHHRey {
+    position: relative;
+    height: 350px;
+  }
+
+  .bHHRey > * {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-items: flex-end;
+    -webkit-box-align: flex-end;
+    -ms-flex-align: flex-end;
+    align-items: flex-end;
+  }
+
+  .bHHRey img {
+    display: initial;
+    height: 100%;
+    width: auto;
+  }
+}
+
+@media (min-width: 970px) {
+  .bHHRey > * {
+    display: block;
+  }
 }
 
 <pure(Breakpoints)
@@ -31,36 +87,116 @@ exports[`should renders <Image> correctly with Mobile view 1`] = `
         }
       }
     >
-      <Media
-        query={
-          Object {
-            "minWidth": 768,
-          }
-        }
-      >
-        <Breakpoints
-          alt="screen"
-          src="img_mcs_screen.png"
-        >
-          <styled.img
-            alt="screen"
-            breakpoints={
-              Object {
-                "lg": 1170,
-                "md": 970,
-                "sm": 768,
-              }
+      <Breakpoints>
+        <styled.div
+          breakpoints={
+            Object {
+              "lg": 1170,
+              "md": 970,
+              "sm": 768,
             }
-            src="img_mcs_screen.png"
+          }
+        >
+          <div
+            className="sc-iwsKbI bHHRey"
           >
-            <img
-              alt="screen"
-              className="sc-iwsKbI blhQpx"
-              src="img_mcs_screen.png"
+            <div>
+              <pure(BackgroundImage)
+                blur={5}
+                opacity={0.7}
+                placeholder="img_mcs_screenX66.png"
+                src="img_mcs_screen.png"
+              >
+                <Styled(ProgressiveImage)
+                  blur={5}
+                  component="img"
+                  opacity={0.7}
+                  placeholder="img_mcs_screenX66.png"
+                  src="img_mcs_screen.png"
+                  transition="all 0.3 linear"
+                >
+                  <ProgressiveImage
+                    blur={5}
+                    className="sc-EHOje iRyBvI"
+                    component="img"
+                    opacity={0.7}
+                    placeholder="img_mcs_screenX66.png"
+                    scale={1}
+                    src="img_mcs_screen.png"
+                    transition="all 0.3 linear"
+                  >
+                    <mapPropsStream(Img)
+                      blur={5}
+                      className="sc-EHOje iRyBvI"
+                      component="img"
+                      opacity={0.7}
+                      placeholder="img_mcs_screenX66.png"
+                      scale={1}
+                      src="img_mcs_screen.png"
+                      transition="all 0.3 linear"
+                    >
+                      <Img
+                        blur={5}
+                        className="sc-EHOje iRyBvI"
+                        component="img"
+                        image="img_mcs_screenX66.png"
+                        isCached={false}
+                        isLoaded={false}
+                        opacity={0.7}
+                        placeholder="img_mcs_screenX66.png"
+                        scale={1}
+                        src="img_mcs_screen.png"
+                        transition="all 0.3 linear"
+                      >
+                        <Styled(BaseComponent)
+                          blur={5}
+                          className="sc-EHOje iRyBvI"
+                          component="img"
+                          isCached={false}
+                          isLoaded={false}
+                          opacity={0.7}
+                          placeholder="img_mcs_screenX66.png"
+                          scale={1}
+                          src="img_mcs_screenX66.png"
+                          style={Object {}}
+                          transition="all 0.3 linear"
+                        >
+                          <BaseComponent
+                            blur={5}
+                            className="sc-EHOje iRyBvI sc-ifAKCX efkuaT"
+                            component="img"
+                            isCached={false}
+                            isLoaded={false}
+                            opacity={0.7}
+                            placeholder="img_mcs_screenX66.png"
+                            scale={1}
+                            src="img_mcs_screenX66.png"
+                            style={Object {}}
+                            transition="all 0.3 linear"
+                          >
+                            <img
+                              className="sc-EHOje iRyBvI sc-ifAKCX efkuaT"
+                              src="img_mcs_screenX66.png"
+                              style={Object {}}
+                            />
+                          </BaseComponent>
+                        </Styled(BaseComponent)>
+                      </Img>
+                    </mapPropsStream(Img)>
+                  </ProgressiveImage>
+                </Styled(ProgressiveImage)>
+              </pure(BackgroundImage)>
+            </div>
+            <Media
+              query={
+                Object {
+                  "minWidth": 768,
+                }
+              }
             />
-          </styled.img>
-        </Breakpoints>
-      </Media>
+          </div>
+        </styled.div>
+      </Breakpoints>
     </Image>
   </Breakpoints>
 </pure(Breakpoints)>

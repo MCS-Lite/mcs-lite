@@ -12,33 +12,21 @@ import SVGOpenCode3 from '../../components/SVG/SVGOpenCode3';
 import ImageLayerWrapper from '../../components/ImageLayerWrapper';
 import BackgroundImage from '../../components/BackgroundImage';
 
-const PLAY_SCALE = 0.4;
+const PLAY_SCALE = 0.1;
 const DURATION = 600;
 const EASE = 'easeInOutBack';
-const DELAY = 250;
+const DELAY = 450;
 
 const ImageOpenSource = () =>
   <ImageLayerWrapper>
 
     {/* 1. Background image */}
-    <ScrollOverPack
-      playScale={PLAY_SCALE}
-      always={false} // Remind: only once
-    >
-      <TweenOne
-        key="BackgroundImage"
-        animation={{
-          opacity: 1,
-          duration: 350,
-        }}
-        style={{
-          opacity: 0.3,
-        }}
-        component={BackgroundImage}
+    <div>
+      <BackgroundImage
         src={imgOpenBackground}
         placeholder={imgOpenBackgroundX60}
       />
-    </ScrollOverPack>
+    </div>
 
     {/* 2. Code 1 (Left) */}
     <ScrollOverPack playScale={PLAY_SCALE}>

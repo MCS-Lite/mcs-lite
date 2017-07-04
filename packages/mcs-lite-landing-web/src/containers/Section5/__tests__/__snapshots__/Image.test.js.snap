@@ -7,7 +7,7 @@ exports[`should renders <Image> correctly 1`] = `
     appear={true}
     component="div"
     onChange={[Function]}
-    playScale={0.2}
+    playScale={0.1}
     replay={false}
     scrollEvent={[Function]}
   >
@@ -39,7 +39,7 @@ exports[`should renders <Image> correctly 1`] = `
     appear={true}
     component="div"
     onChange={[Function]}
-    playScale={0.2}
+    playScale={0.1}
     replay={false}
     scrollEvent={[Function]}
   >
@@ -66,37 +66,12 @@ exports[`should renders <Image> correctly 1`] = `
       willChange={true}
     />
   </ScrollOverPack>
-  <ScrollOverPack
-    always={false}
-    appear={true}
-    component="div"
-    onChange={[Function]}
-    playScale={0.2}
-    replay={false}
-    scrollEvent={[Function]}
-  >
-    <TweenOne
-      animation={
-        Object {
-          "duration": 350,
-          "opacity": 1,
-        }
-      }
-      attr="style"
-      component={[Function]}
-      onChange={[Function]}
+  <div>
+    <pure(BackgroundImage)
       placeholder="img_setupX60.png"
-      reverseDelay={0}
       src="img_setup.svg"
-      style={
-        Object {
-          "opacity": 0.5,
-        }
-      }
-      updateReStart={true}
-      willChange={true}
     />
-  </ScrollOverPack>
+  </div>
   <styled.div />
 </pure(styled.div)>
 `;

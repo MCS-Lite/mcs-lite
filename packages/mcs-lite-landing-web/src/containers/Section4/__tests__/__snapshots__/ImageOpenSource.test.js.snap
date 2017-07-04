@@ -2,50 +2,25 @@
 
 exports[`should renders <ImageOpenSource> correctly 1`] = `
 <pure(styled.div)>
-  <ScrollOverPack
-    always={false}
-    appear={true}
-    component="div"
-    onChange={[Function]}
-    playScale={0.4}
-    replay={false}
-    scrollEvent={[Function]}
-  >
-    <TweenOne
-      animation={
-        Object {
-          "duration": 350,
-          "opacity": 1,
-        }
-      }
-      attr="style"
-      component={[Function]}
-      onChange={[Function]}
+  <div>
+    <pure(BackgroundImage)
       placeholder="img_open_sourceX60.png"
-      reverseDelay={0}
       src="img_open_source.svg"
-      style={
-        Object {
-          "opacity": 0.3,
-        }
-      }
-      updateReStart={true}
-      willChange={true}
     />
-  </ScrollOverPack>
+  </div>
   <ScrollOverPack
     always={true}
     appear={true}
     component="div"
     onChange={[Function]}
-    playScale={0.4}
+    playScale={0.1}
     replay={false}
     scrollEvent={[Function]}
   >
     <TweenOne
       animation={
         Object {
-          "delay": 250,
+          "delay": 450,
           "duration": 600,
           "ease": "easeInOutBack",
           "rotate": -15,
@@ -71,14 +46,14 @@ exports[`should renders <ImageOpenSource> correctly 1`] = `
     appear={true}
     component="div"
     onChange={[Function]}
-    playScale={0.4}
+    playScale={0.1}
     replay={false}
     scrollEvent={[Function]}
   >
     <TweenOne
       animation={
         Object {
-          "delay": 250,
+          "delay": 450,
           "duration": 600,
           "ease": "easeInOutBack",
           "rotate": 15,
@@ -104,14 +79,14 @@ exports[`should renders <ImageOpenSource> correctly 1`] = `
     appear={true}
     component="div"
     onChange={[Function]}
-    playScale={0.4}
+    playScale={0.1}
     replay={false}
     scrollEvent={[Function]}
   >
     <TweenOne
       animation={
         Object {
-          "delay": 250,
+          "delay": 450,
           "duration": 600,
           "ease": "easeInOutBack",
           "y": 20,
@@ -135,7 +110,7 @@ exports[`should renders <ImageOpenSource> correctly 1`] = `
     appear={true}
     component="div"
     onChange={[Function]}
-    playScale={0.4}
+    playScale={0.1}
     replay={false}
     scrollEvent={[Function]}
   >

@@ -6,14 +6,9 @@ import { BreakpointProvider } from 'hedron';
 import landingTheme, { BREAKPOINTS } from '../../../utils/landingTheme';
 import {
   StyledSectionRow,
-  RWDCenterWrapper,
   StyledImageColumn,
-  ScreenImageMobile,
+  RWDCenterWrapper,
   ImageLayerWrapper,
-  BackgroundImage,
-  BackgroundImagePlaceholder,
-  BackgroundImageWrapper,
-  LoadingWrapper,
   ChartWrapper,
 } from '../styled-components';
 
@@ -27,12 +22,7 @@ it('should render components correctly', () => {
           </StyledSectionRow>
           <RWDCenterWrapper />
           <StyledImageColumn />
-          <ScreenImageMobile />
           <ImageLayerWrapper />
-          <BackgroundImage />
-          <BackgroundImagePlaceholder />
-          <BackgroundImageWrapper />
-          <LoadingWrapper />
           <ChartWrapper />
         </div>
       </BreakpointProvider>
