@@ -1,6 +1,25 @@
 # MCS Lite changelogs
 
-## Unreleased (2017-07-04)
+## Released (2017-07-04)
+
+### Bump Versions
+
+-   babel-preset-mcs-lite: 0.3.4 => 0.3.5
+-   eslint-config-mcs-lite: 0.5.2 => 0.5.3
+-   mcs-lite-admin-web: 0.1.5 => 0.1.6
+-   mcs-lite-connect: 0.3.5 => 0.3.6
+-   mcs-lite-design: 0.2.1 => 0.2.2
+-   mcs-lite-icon: 0.3.5 => 0.3.6
+-   mcs-lite-introduction: 0.2.4 => 0.2.5
+-   mcs-lite-landing-web: 0.0.3 => 0.1.0 (private)  🎉
+-   mcs-lite-mobile-web: 0.4.7 => 0.4.8
+-   mcs-lite-scripts: 0.3.5 => 0.3.6
+-   mcs-lite-theme: 0.3.4 => 0.3.5
+-   mcs-lite-translation: 0.1.4 => 0.1.5
+-   mcs-lite-ui: 0.4.5 => 0.4.6
+-   react-intl-cra: 0.2.5 => 0.2.6
+-   react-intl-inject-hoc: 0.2.5 => 0.2.6
+-   stylelint-config-mcs-lite: 0.2.1 => 0.2.2
 
 #### :rocket: New Feature
 * `mcs-lite-landing-web`
