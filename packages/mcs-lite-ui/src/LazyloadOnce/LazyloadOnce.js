@@ -21,6 +21,7 @@ class LazyloadOnce extends React.PureComponent {
     },
   };
   state = { isShow: false };
+  shouldComponentUpdate = () => !this.state.show;
   componentWillUnmount = () => this.onEnter.cancel();
   onEnter = rafThrottle(() => {
     if (!this.state.isShow) this.setState({ isShow: true });
