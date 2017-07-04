@@ -90,9 +90,6 @@ exports[`should renders <BackgroundImage> correctly 1`] = `
             >
               <img
                 className="sc-bwzfXH cXnZaY sc-bdVaJa kevLPg"
-                opacity={0.7}
-                placeholder="placeholder"
-                scale={1}
                 src="placeholder"
                 style={Object {}}
               />

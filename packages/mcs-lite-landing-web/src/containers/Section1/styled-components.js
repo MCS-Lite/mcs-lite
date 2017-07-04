@@ -24,7 +24,6 @@ export const RWDCenterWrapper = withBreakpoints(styled.div`
 `);
 
 export const ImageLayerWrapper = withBreakpoints(styled.div`
-
   img {
     display: block;
     height: auto;
@@ -56,7 +55,6 @@ export const ImageLayerWrapper = withBreakpoints(styled.div`
   }
 
   @media (min-width: ${props => props.breakpoints.md}px) {
-
     > * {
       display: block;
     }

@@ -17,7 +17,7 @@ exports[`should renders <Image> correctly with Mobile view 1`] = `
   min-height: 100%;
 }
 
-.jolHlh img {
+.bHHRey img {
   display: block;
   height: auto;
   width: 100%;
@@ -26,12 +26,12 @@ exports[`should renders <Image> correctly with Mobile view 1`] = `
 }
 
 @media (min-width: 768px) {
-  .jolHlh {
+  .bHHRey {
     position: relative;
     height: 350px;
   }
 
-  .jolHlh > * {
+  .bHHRey > * {
     position: absolute;
     left: 0;
     right: 0;
@@ -51,7 +51,7 @@ exports[`should renders <Image> correctly with Mobile view 1`] = `
     align-items: flex-end;
   }
 
-  .jolHlh img {
+  .bHHRey img {
     display: initial;
     height: 100%;
     width: auto;
@@ -59,7 +59,7 @@ exports[`should renders <Image> correctly with Mobile view 1`] = `
 }
 
 @media (min-width: 970px) {
-  .jolHlh > * {
+  .bHHRey > * {
     display: block;
   }
 }
@@ -98,7 +98,7 @@ exports[`should renders <Image> correctly with Mobile view 1`] = `
           }
         >
           <div
-            className="sc-iwsKbI jolHlh"
+            className="sc-iwsKbI bHHRey"
           >
             <div>
               <pure(BackgroundImage)
@@ -176,9 +176,6 @@ exports[`should renders <Image> correctly with Mobile view 1`] = `
                           >
                             <img
                               className="sc-EHOje iRyBvI sc-ifAKCX efkuaT"
-                              opacity={0.7}
-                              placeholder="img_mcs_screenX66.png"
-                              scale={1}
                               src="img_mcs_screenX66.png"
                               style={Object {}}
                             />

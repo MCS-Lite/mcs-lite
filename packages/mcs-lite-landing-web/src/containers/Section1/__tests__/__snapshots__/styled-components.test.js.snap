@@ -48,7 +48,7 @@ Array [
   text-align: center;
 }
 
-.cTEODa img {
+.eabzrd img {
   display: block;
   height: auto;
   width: 100%;
@@ -75,12 +75,12 @@ Array [
 }
 
 @media (min-width: 768px) {
-  .cTEODa {
+  .eabzrd {
     position: relative;
     height: 350px;
   }
 
-  .cTEODa > * {
+  .eabzrd > * {
     position: absolute;
     left: 0;
     right: 0;
@@ -100,7 +100,7 @@ Array [
     align-items: flex-end;
   }
 
-  .cTEODa img {
+  .eabzrd img {
     display: initial;
     height: 100%;
     width: auto;
@@ -108,7 +108,7 @@ Array [
 }
 
 @media (min-width: 970px) {
-  .cTEODa > * {
+  .eabzrd > * {
     display: block;
   }
 }
@@ -229,7 +229,7 @@ Array [
             }
         >
             <div
-                className="sc-htoDjs cTEODa"
+                className="sc-htoDjs eabzrd"
             />
         </styled.div>
     </Breakpoints>
@@ -374,7 +374,7 @@ Array [
 <div
     className="sc-bZQynM dUmYNM sc-htpNat dqSROF"
 />,
-  .cTEODa img {
+  .eabzrd img {
   display: block;
   height: auto;
   width: 100%;
@@ -383,12 +383,12 @@ Array [
 }
 
 @media (min-width: 768px) {
-  .cTEODa {
+  .eabzrd {
     position: relative;
     height: 350px;
   }
 
-  .cTEODa > * {
+  .eabzrd > * {
     position: absolute;
     left: 0;
     right: 0;
@@ -408,7 +408,7 @@ Array [
     align-items: flex-end;
   }
 
-  .cTEODa img {
+  .eabzrd img {
     display: initial;
     height: 100%;
     width: auto;
@@ -416,13 +416,13 @@ Array [
 }
 
 @media (min-width: 970px) {
-  .cTEODa > * {
+  .eabzrd > * {
     display: block;
   }
 }
 
 <div
-    className="sc-htoDjs cTEODa"
+    className="sc-htoDjs eabzrd"
 />,
   .cNSEXH {
   display: -webkit-box;
