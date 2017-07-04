@@ -51,7 +51,7 @@ MCS Lite 与 MCS 相同，能让使用者透过网页介面先行定义自己的
   1. 点击画面上方的**开发**连结，并选择**产品原型**。  
   2. 点击**创建**按钮，在**选择创建方式**栏位中选择**汇入 JSON 档。**  
   3. 您可贴上或是**浏览上传** JSON 档案。点击**储存**按钮，您的产品原型已建立。  
-  4. 如何取得/汇出产品原型 JSON 档案，请参考 [如何建立您的第一个产品原型](http://mcs.mediatek.com/resources/zh-CN/latest/tutorial/getting_started#建立您的第一个产品原型)
+  4. 如何取得/汇出产品原型 JSON 档案，请参考 [如何建立您的第一个产品原型](https://mcs.mediatek.cn/resources/zh-CN/latest/tutorial/getting_started#建立您的第一个产品原型)
 
 * 使用范例原型  
   1. 点击画面上方的**开发**连结，并选择**产品原型。**  

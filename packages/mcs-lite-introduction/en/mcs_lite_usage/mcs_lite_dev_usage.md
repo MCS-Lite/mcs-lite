@@ -55,7 +55,7 @@ In the navigation header, select **Development** > **Prototype**, and then click
   1. Click the **Development** option on the navigation bar, select **Prototype**. 
   2. Click **Create** button, in **Select creation method** field, select **Import from JSON file**.
   3. You can either copy the JSON content or **Browse and upload** a JSON file. Click the **Save** button. Your prototype has been created.
-  4. How to export the JSON file of a prototype, please refer to [Create Your First Prototype](http://mcs.mediatek.com/resources/latest/tutorial/getting_started#create-your-first-prototype)
+  4. How to export the JSON file of a prototype, please refer to [Create Your First Prototype](https://mcs.mediatek.com/resources/latest/tutorial/getting_started#create-your-first-prototype)
 
 * Start with a template
   1. Click the **Development** option on the navigation bar, select **Prototype**.

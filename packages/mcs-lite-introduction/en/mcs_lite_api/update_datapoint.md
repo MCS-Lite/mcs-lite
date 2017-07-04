@@ -106,7 +106,7 @@ Line 1: Data channel ID is 1, the value of this data channel is 26 (integer) and
 
 Line 2: Data channel ID is, the value of this data channel is 26.34 (float) and the timestamp is not provided.  
 
-For more detailed information on the data channel format，please refer to the MCS website for [Data channel format in CSV](http://mcs.mediatek.com/resources/latest/api_references/#data-channel-format)。
+For more detailed information on the data channel format，please refer to the MCS website for [Data channel format in CSV](https://mcs.mediatek.com/resources/latest/api_references/#data-channel-format)。
 
 #### Response
 

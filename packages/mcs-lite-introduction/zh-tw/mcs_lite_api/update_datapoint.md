@@ -106,7 +106,7 @@ POST
 
 第二行：資料通道 ID 為 2，並且不給予時間點，26.34 為上傳的值 \(此時的資料通道類型為浮點數\)。
 
-如欲參考更多詳細的資料通道類型之格式，請參考 MCS 網站上的[資料通道 CSV 格式](http://mcs.mediatek.com/resources/zh-TW/latest/api_references/#資料通道格式)。
+如欲參考更多詳細的資料通道類型之格式，請參考 MCS 網站上的[資料通道 CSV 格式](https://mcs.mediatek.com/resources/zh-TW/latest/api_references/#資料通道格式)。
 
 #### 回覆（Response）
 

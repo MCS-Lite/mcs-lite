@@ -28,7 +28,7 @@ On the IoT platform, there is a web console for end users to create their protot
    * Define product prototypes and manage all test devices.
 
    * Provide a friendly user interface for mobile users.
- 	![](../../assets/mcs_lite_mobile_view.gif)
+ 	![](../../assets/mcs_lite_mobile_view.png)
 
    * Provide the MCS Lite library for LinkIt 7697 to simplify and speed up the development process.
 

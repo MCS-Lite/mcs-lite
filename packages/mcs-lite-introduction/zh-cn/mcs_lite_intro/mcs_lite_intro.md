@@ -23,7 +23,7 @@ MCS Lite 应用程式主要包含了**物联网平台 (IoT Platform)** 与**系�
    * 定义产品原型并且管理所有的测试装置。
 
    * 提供手机版本的操作介面。
- ![](../../assets/mcs_lite_mobile_view.gif)
+ ![](../../assets/mcs_lite_mobile_view.png)
 
    * 针对 LinkIt 7697 提供 MCS Lite 函式库，有助于简化并加速开发流程。
 
