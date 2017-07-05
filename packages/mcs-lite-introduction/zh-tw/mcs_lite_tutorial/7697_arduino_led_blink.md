@@ -15,7 +15,7 @@ LinkIt 7697 的 Arduino board support package 中包含了 MCS 函式庫，您�
 * 上傳資料到 MCS 或 MCS Lite 服務器。
 * 從 MCS 或 MCS Lite 服務器接收資料。
 
-其中針對 MCS Lite 可透過 **MCSLiteDevice** 類別來建構連線資訊。
+若您連接的是 MCS Lite 平台，可透過 **MCSLiteDevice** 類別來建構連線資訊。
 
 ```cpp
 MCSLiteDevice(const String& device_id, const String& device_key, const String& server, int port);
@@ -45,9 +45,9 @@ MCSLiteDevice(const String& device_id, const String& device_key, const String& s
 	若您更改了資料通道 ID，請記得要更改程式碼中對應的 ID 與變數喔。
 
 #### 使用內建的 MCS > LED_control 範例
-1. 開啟 Arduino IDE，在 Tools > Board 中選取 **LinkIt 7697**。在 Tools > Port 中選取 LinkIt 7697 所連接的序列埠，此序列埠的後方會標示 **(LinkIt 7697)**。 ![Arduino IDE](../assets/Arduino_tools.png)
+1. 開啟 Arduino IDE，在 Tools > Board 中選取 **LinkIt 7697**。在 Tools > Port 中選取 LinkIt 7697 所連接的序列埠，此序列埠的後方會標示 **(LinkIt 7697)**。 ![Arduino IDE](../../assets/Arduino_tools.png)
 2. 接著選取 File > Examples > MCS > LED_control 開啟 MCS 的範例程式。
-![MCS Example](../assets/Arduino_MCS_example.png)
+![MCS Example](../../assets/Arduino_MCS_example.png)
 3. 根據您的網路環境與 MCS Lite 設定修改代碼中的變數。
 	* 首先，修改 WiFi 連線的設定
 	
@@ -72,16 +72,16 @@ MCSLiteDevice(const String& device_id, const String& device_key, const String& s
 	MCSControllerOnOff led("switch_controller");
 	MCSDisplayOnOff    remote("switch_display");
 	```
-4. 修改完成後，在 Arduino IDE 上點擊 **Upload** 按鈕，編譯並將代碼上傳到 LinkIt 7697 開發板上。![Arduino IDE](../assets/Arduino_upload.png)
+4. 修改完成後，在 Arduino IDE 上點擊 **Upload** 按鈕，編譯並將代碼上傳到 LinkIt 7697 開發板上。![Arduino IDE](../../assets/Arduino_upload.png)
 4. 上傳完成後，將畫面切換到 MCS Lite 的測試裝置詳情頁面。在 MCS Lite 頁面上操作開關類型的控制器，當開關切換至**開啟**狀態時， LinkIt 7697 開發板上的 **USR LED** 燈號會亮起，並且上傳開啟狀態（布林值 1）到開關類型的顯示器；反之，LED 燈號將熄滅，並且上傳關閉的狀態（布林值 0）。
 
-	**MCS Lite 測試裝置操作頁面** ![Arduino IDE](../assets/MCS_device.png)
+	**MCS Lite 測試裝置操作頁面** ![Arduino IDE](../../assets/MCS_device.png)
 	
-	**LinkIt 7697 USR LED 燈號** ![Arduino IDE](../assets/7697_LED.png)
+	**LinkIt 7697 USR LED 燈號** ![Arduino IDE](../../assets/7697_LED.png)
 	
 	
 ### 方法二：自行實作與 MCS Lite 的 WebSocket 和 RESTful APIs 的連線
-相較於**方法一：使用 MCS 函式庫**，方法二相對較為複雜，且必須自行解析所接收到的資料，因此在有提供 MCS 函式庫的開發板（如 LinkIt 7697）上進行 MCS 或 MCS Lite 相關的開發時，仍建議直接使用 MCS 函式庫。此範例可作為在不提供 MCS 函式庫的裝置上開發時的參考。
+相較於**方法一：使用 MCS 函式庫**，方法二相對較為複雜，且必須自行解析所接收到的數據與指令，因此在有提供 MCS 函式庫的開發板（如 LinkIt 7697）上進行 MCS 或 MCS Lite 相關的開發時，仍建議直接使用 MCS 函式庫。此範例可作為在尚未提供 MCS 函式庫的裝置上開發時的參考。
 
 #### 前置作業
 
@@ -98,7 +98,7 @@ MCSLiteDevice(const String& device_id, const String& device_key, const String& s
 
 #### 使用 LED Blink 範例
 
-1. 開啟 Arduino IDE，在 Tools > Board 中選取 **LinkIt 7697**。在 Tools > Port 中選取 LinkIt 7697 所連接的序列埠，此序列埠的後方會標示 **(LinkIt 7697)**。 ![Arduino IDE](../assets/Arduino_tools.png)
+1. 開啟 Arduino IDE，在 Tools > Board 中選取 **LinkIt 7697**。在 Tools > Port 中選取 LinkIt 7697 所連接的序列埠，此序列埠的後方會標示 **(LinkIt 7697)**。 ![Arduino IDE](../../assets/Arduino_tools.png)
 2. 將 [LED Blink Example](https://github.com/MCS-Lite/mcs-lite-example/blob/master/LinkIt_7697/Arduino/LED_controller.ino) 的程式碼複製貼上於 Arduino IDE 編輯器中，並根據您的網路環境與 MCS Lite 設定修改代碼中的變數，例如
 
 	```arduino
@@ -119,12 +119,12 @@ MCSLiteDevice(const String& device_id, const String& device_key, const String& s
 	* **ws_port**: MCS Lite 服務中，WebSocket 所使用的連接埠，預設是 8000
 	* **rs_port**: MCS Lite 服務中，RESTful API 所使用的連接埠，預設是 3000
 
-3. 在 Arduino IDE 上點擊 **Upload** 按鈕，將修改後的代碼上傳到 LinkIt 7697 開發板上。![Arduino IDE](../assets/Arduino_upload.png)
+3. 在 Arduino IDE 上點擊 **Upload** 按鈕，將修改後的代碼上傳到 LinkIt 7697 開發板上。![Arduino IDE](../../assets/Arduino_upload.png)
 	
 4. 上傳完成後，將畫面切換到 MCS Lite 的測試裝置詳情頁面。在 MCS Lite 頁面上操作開關類型的控制器，當開關切換至開啟狀態時， LinkIt 7697 開發板上的 **USR LED** 燈號會亮起，並且上傳 **LED is ON** 字串到字串類型的顯示器；反之，LED 燈號將熄滅，並且上傳 **LED is OFF** 的字串。
 
-	**MCS Lite 測試裝置操作頁面** ![Arduino IDE](../assets/MCS_device_string.png)	
-	**LinkIt 7697 USR LED 燈號** ![Arduino IDE](../assets/7697_LED.png)
+	**MCS Lite 測試裝置操作頁面** ![Arduino IDE](../../assets/MCS_device_string.png)	
+	**LinkIt 7697 USR LED 燈號** ![Arduino IDE](../../assets/7697_LED.png)
 
 #### 代碼解說
 在這個範例中，我們首先與 MCS Lite 伺服器建立起了 WebSocket 連線，用來接收來自伺服器端所發送的指令。WebSocket 的連線是永久性的，一但建立之後，會定期發送 heartbeat 通知伺服器此裝置依然存活，保持連線。
