@@ -24,7 +24,7 @@
     "babel-plugin-import": "^1.2.1",
     "babel-plugin-recharts": "^1.1.0",
     "babel-plugin-styled-components": "^1.1.7",
-    "babel-preset-env": "^1.5.2",
+    "babel-preset-env": "^1.6.0",
     "babel-preset-react-app": "^3.0.1",
     "babel-preset-stage-0": "^6.24.1"
   },
