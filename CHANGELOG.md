@@ -2,6 +2,22 @@
 
 ## Released (2017-07-07)
 
+### Bump Versions
+
+-   babel-preset-mcs-lite: 0.3.5 => 0.3.6
+-   eslint-config-mcs-lite: 0.5.3 => 0.5.4
+-   mcs-lite-admin-web: 0.1.6 => 0.1.7
+-   mcs-lite-connect: 0.3.6 => 0.3.7
+-   mcs-lite-icon: 0.3.6 => 0.3.7
+-   mcs-lite-introduction: 0.2.5 => 0.2.6
+-   mcs-lite-landing-web: 0.1.0 => 0.1.1 (private)
+-   mcs-lite-mobile-web: 0.4.8 => 0.4.9
+-   mcs-lite-scripts: 0.3.6 => 0.3.7
+-   mcs-lite-theme: 0.3.5 => 0.3.6
+-   mcs-lite-ui: 0.4.6 => 0.4.7
+-   react-intl-cra: 0.2.6 => 0.2.7
+-   react-intl-inject-hoc: 0.2.6 => 0.2.7
+
 #### :rocket: New Feature
 * `eslint-config-mcs-lite`, `mcs-lite-landing-web`, `mcs-lite-ui`
   * [#415](https://github.com/MCS-Lite/mcs-lite/pull/415) feat(lerna): upgrade to 2.0.0. ([@evenchange4](https://github.com/evenchange4))
@@ -21,7 +37,7 @@
 
 #### :house: Internal
 * `babel-preset-mcs-lite`, `eslint-config-mcs-lite`, `mcs-lite-admin-web`, `mcs-lite-mobile-web`, `mcs-lite-scripts`, `mcs-lite-ui`
-  * [#414](https://github.com/MCS-Lite/mcs-lite/pull/414) chore(ncu): update rxjs to 5.4.2. ([@evenchange4](https://github.com/evenchange4))
+  * [#414](https://github.com/MCS-Lite/mcs-lite/pull/414) chore(ncu): update and rxjs to 5.4.2. ([@evenchange4](https://github.com/evenchange4))
 
 #### Committers: 2
 - Daria Chen ([dariachen](https://github.com/dariachen))
