@@ -6,7 +6,6 @@ exports[`Storyshots A API 1`] = `
   -webkit-transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   cursor: pointer;
-  -webkit-text-decoration: none;
   text-decoration: none;
 }
 
@@ -43,7 +42,6 @@ exports[`Storyshots A Nested children with Heading 1`] = `
   -webkit-transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   cursor: pointer;
-  -webkit-text-decoration: none;
   text-decoration: none;
 }
 
@@ -78,7 +76,6 @@ exports[`Storyshots A With color props 1`] = `
   -webkit-transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   cursor: pointer;
-  -webkit-text-decoration: none;
   text-decoration: none;
 }
 
@@ -95,7 +92,6 @@ exports[`Storyshots A With color props 1`] = `
   -webkit-transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   cursor: pointer;
-  -webkit-text-decoration: none;
   text-decoration: none;
 }
 
@@ -112,7 +108,6 @@ exports[`Storyshots A With color props 1`] = `
   -webkit-transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   cursor: pointer;
-  -webkit-text-decoration: none;
   text-decoration: none;
 }
 
@@ -129,7 +124,6 @@ exports[`Storyshots A With color props 1`] = `
   -webkit-transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   cursor: pointer;
-  -webkit-text-decoration: none;
   text-decoration: none;
 }
 
@@ -146,7 +140,6 @@ exports[`Storyshots A With color props 1`] = `
   -webkit-transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   cursor: pointer;
-  -webkit-text-decoration: none;
   text-decoration: none;
 }
 
@@ -163,7 +156,6 @@ exports[`Storyshots A With color props 1`] = `
   -webkit-transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   cursor: pointer;
-  -webkit-text-decoration: none;
   text-decoration: none;
 }
 
@@ -180,7 +172,6 @@ exports[`Storyshots A With color props 1`] = `
   -webkit-transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   cursor: pointer;
-  -webkit-text-decoration: none;
   text-decoration: none;
 }
 
@@ -197,7 +188,6 @@ exports[`Storyshots A With color props 1`] = `
   -webkit-transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   cursor: pointer;
-  -webkit-text-decoration: none;
   text-decoration: none;
 }
 
@@ -214,7 +204,6 @@ exports[`Storyshots A With color props 1`] = `
   -webkit-transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   cursor: pointer;
-  -webkit-text-decoration: none;
   text-decoration: none;
 }
 
@@ -1814,7 +1803,6 @@ exports[`Storyshots DataChannel ButtonClear 1`] = `
   -webkit-transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   cursor: pointer;
-  -webkit-text-decoration: none;
   text-decoration: none;
 }
 
@@ -1876,7 +1864,6 @@ exports[`Storyshots DataChannel ControlNumber 1`] = `
   -webkit-transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   cursor: pointer;
-  -webkit-text-decoration: none;
   text-decoration: none;
 }
 
@@ -3196,7 +3183,6 @@ exports[`Storyshots DataChannel ControlString 1`] = `
   -webkit-transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   cursor: pointer;
-  -webkit-text-decoration: none;
   text-decoration: none;
 }
 
@@ -3467,10 +3453,8 @@ exports[`Storyshots DataChannel DisplayMultipleValue 1`] = `
 }
 
 .kDmihL {
-  -webkit-text-align: center;
   text-align: center;
   overflow: hidden;
-  -webkit-text-overflow: ellipsis;
   text-overflow: ellipsis;
   width: 100%;
   margin-top: 5px;
@@ -3864,10 +3848,8 @@ exports[`Storyshots DataChannel DisplayUnitValue 1`] = `
 }
 
 .kFFTNg {
-  -webkit-text-align: center;
   text-align: center;
   overflow: hidden;
-  -webkit-text-overflow: ellipsis;
   text-overflow: ellipsis;
   width: 100%;
 }
@@ -3914,7 +3896,6 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
   -webkit-transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   cursor: pointer;
-  -webkit-text-decoration: none;
   text-decoration: none;
 }
 
@@ -4452,10 +4433,8 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
 }
 
 .kFFTNg {
-  -webkit-text-align: center;
   text-align: center;
   overflow: hidden;
-  -webkit-text-overflow: ellipsis;
   text-overflow: ellipsis;
   width: 100%;
 }
@@ -4488,10 +4467,8 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
 }
 
 .kDmihL {
-  -webkit-text-align: center;
   text-align: center;
   overflow: hidden;
-  -webkit-text-overflow: ellipsis;
   text-overflow: ellipsis;
   width: 100%;
   margin-top: 5px;
@@ -4590,14 +4567,12 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
 
 .dkneLR {
   overflow: hidden;
-  -webkit-text-overflow: ellipsis;
   text-overflow: ellipsis;
 }
 
 .cKvBTw {
   display: block;
   overflow: hidden;
-  -webkit-text-overflow: ellipsis;
   text-overflow: ellipsis;
   color: #999A94;
 }
@@ -6242,14 +6217,12 @@ exports[`Storyshots DataChannelCard API 1`] = `
 
 .dkneLR {
   overflow: hidden;
-  -webkit-text-overflow: ellipsis;
   text-overflow: ellipsis;
 }
 
 .cKvBTw {
   display: block;
   overflow: hidden;
-  -webkit-text-overflow: ellipsis;
   text-overflow: ellipsis;
   color: #999A94;
 }
@@ -6429,14 +6402,12 @@ exports[`Storyshots DataChannelCard Custom width and height 1`] = `
 
 .dkneLR {
   overflow: hidden;
-  -webkit-text-overflow: ellipsis;
   text-overflow: ellipsis;
 }
 
 .cKvBTw {
   display: block;
   overflow: hidden;
-  -webkit-text-overflow: ellipsis;
   text-overflow: ellipsis;
   color: #999A94;
 }
@@ -6589,14 +6560,12 @@ exports[`Storyshots DataChannelCard With Component selector 1`] = `
 
 .dkneLR {
   overflow: hidden;
-  -webkit-text-overflow: ellipsis;
   text-overflow: ellipsis;
 }
 
 .cKvBTw {
   display: block;
   overflow: hidden;
-  -webkit-text-overflow: ellipsis;
   text-overflow: ellipsis;
   color: #999A94;
 }
@@ -6776,14 +6745,12 @@ exports[`Storyshots DataChannelCard With empty description 1`] = `
 
 .dkneLR {
   overflow: hidden;
-  -webkit-text-overflow: ellipsis;
   text-overflow: ellipsis;
 }
 
 .cKvBTw {
   display: block;
   overflow: hidden;
-  -webkit-text-overflow: ellipsis;
   text-overflow: ellipsis;
   color: #999A94;
 }
@@ -6941,14 +6908,12 @@ exports[`Storyshots DataChannelCard Without description 1`] = `
 
 .dkneLR {
   overflow: hidden;
-  -webkit-text-overflow: ellipsis;
   text-overflow: ellipsis;
 }
 
 .cKvBTw {
   display: block;
   overflow: hidden;
-  -webkit-text-overflow: ellipsis;
   text-overflow: ellipsis;
   color: #999A94;
 }
@@ -10065,7 +10030,6 @@ exports[`Storyshots LandingHeader NavItemBurger 1`] = `
   -ms-flex-align: center;
   align-items: center;
   cursor: pointer;
-  -webkit-text-decoration: none;
   text-decoration: none;
   color: #999A94;
   -webkit-transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
@@ -10174,7 +10138,6 @@ exports[`Storyshots LandingHeader NavItemDropdown 1`] = `
   -ms-flex-align: center;
   align-items: center;
   cursor: pointer;
-  -webkit-text-decoration: none;
   text-decoration: none;
   color: #999A94;
   -webkit-transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
@@ -10290,7 +10253,6 @@ exports[`Storyshots LandingHeader With Nav and NavItem 1`] = `
   -ms-flex-align: center;
   align-items: center;
   cursor: pointer;
-  -webkit-text-decoration: none;
   text-decoration: none;
   color: #999A94;
   -webkit-transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
@@ -10318,7 +10280,6 @@ exports[`Storyshots LandingHeader With Nav and NavItem 1`] = `
   -ms-flex-align: center;
   align-items: center;
   cursor: pointer;
-  -webkit-text-decoration: none;
   text-decoration: none;
   color: #353630;
   -webkit-transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
@@ -10346,7 +10307,6 @@ exports[`Storyshots LandingHeader With Nav and NavItem 1`] = `
   -ms-flex-align: center;
   align-items: center;
   cursor: pointer;
-  -webkit-text-decoration: none;
   text-decoration: none;
   color: #999A94;
   -webkit-transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
@@ -10625,7 +10585,6 @@ exports[`Storyshots Menu Fixed width 1`] = `
   -webkit-transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   cursor: pointer;
-  -webkit-text-decoration: none;
   text-decoration: none;
 }
 
@@ -11284,7 +11243,6 @@ exports[`Storyshots MobileHeader API 1`] = `
   user-select: none;
   width: 100%;
   white-space: nowrap;
-  -webkit-text-overflow: ellipsis;
   text-overflow: ellipsis;
   overflow: hidden;
 }
@@ -11469,7 +11427,6 @@ exports[`Storyshots MobileHeader With right props 1`] = `
   user-select: none;
   width: 100%;
   white-space: nowrap;
-  -webkit-text-overflow: ellipsis;
   text-overflow: ellipsis;
   overflow: hidden;
 }
@@ -11737,7 +11694,6 @@ exports[`Storyshots Overlay API 1`] = `
   -webkit-transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   cursor: pointer;
-  -webkit-text-decoration: none;
   text-decoration: none;
 }
 
@@ -12311,7 +12267,6 @@ exports[`Storyshots PullToRefresh API 1`] = `
 }
 
 .irHwOB {
-  -webkit-text-align: center;
   text-align: center;
   padding: 15px;
 }
@@ -14005,7 +13960,6 @@ exports[`Storyshots Table API 1`] = `
 }
 
 .cznuZY th {
-  -webkit-text-align: left;
   text-align: left;
 }
 
@@ -14054,7 +14008,6 @@ exports[`Storyshots Table API 1`] = `
 
 exports[`Storyshots TextCenter API 1`] = `
 .hStDnm {
-  -webkit-text-align: center;
   text-align: center;
 }
 
