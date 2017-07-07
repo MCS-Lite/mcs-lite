@@ -44,7 +44,6 @@ Array [
 }
 
 .ecKAAN {
-  -webkit-text-align: center;
   text-align: center;
 }
 
@@ -69,7 +68,6 @@ Array [
 
 @media (min-width: 970px) {
   .ecKAAN {
-    -webkit-text-align: left;
     text-align: left;
   }
 }
@@ -346,13 +344,11 @@ Array [
     </Styled(RowContainer)>
 </div>,
   .ecKAAN {
-  -webkit-text-align: center;
   text-align: center;
 }
 
 @media (min-width: 970px) {
   .ecKAAN {
-    -webkit-text-align: left;
     text-align: left;
   }
 }

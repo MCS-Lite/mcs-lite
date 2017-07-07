@@ -68,7 +68,6 @@ Array [
   background-color: #FFFFFF;
   border-radius: 4px;
   color: #40494D;
-  -webkit-text-decoration: none;
   text-decoration: none;
   color: transparent;
 }
@@ -82,7 +81,6 @@ Array [
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-text-align: center;
   text-align: center;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
@@ -241,7 +239,6 @@ Array [
   background-color: #FFFFFF;
   border-radius: 4px;
   color: #40494D;
-  -webkit-text-decoration: none;
   text-decoration: none;
   color: transparent;
 }
@@ -258,7 +255,6 @@ Array [
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-text-align: center;
   text-align: center;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
