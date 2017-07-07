@@ -1,6 +1,6 @@
 {
   "name": "mcs-lite-scripts",
-  "version": "0.3.6",
+  "version": "0.3.7",
   "description": "Shared scripts and CLI used by MCS Lite",
   "repository": "MCS-Lite/mcs-lite",
   "author": "Michael Hsu <evenchange4@gmail.com>",
@@ -28,7 +28,7 @@
   "dependencies": {
     "babel-core": "^6.25.0",
     "babel-plugin-react-intl": "^2.3.1",
-    "babel-preset-mcs-lite": "^0.3.5",
+    "babel-preset-mcs-lite": "^0.3.6",
     "babel-preset-react-app": "^3.0.1",
     "cheerio": "^0.22.0",
     "glob": "^7.1.2",
