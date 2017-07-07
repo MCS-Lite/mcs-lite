@@ -1,5 +1,34 @@
 # MCS Lite changelogs
 
+## Released (2017-07-07)
+
+#### :rocket: New Feature
+* `eslint-config-mcs-lite`, `mcs-lite-landing-web`, `mcs-lite-ui`
+  * [#415](https://github.com/MCS-Lite/mcs-lite/pull/415) feat(lerna): upgrade to 2.0.0. ([@evenchange4](https://github.com/evenchange4))
+  
+  Update stylis internal.
+  
+* `mcs-lite-landing-web`
+  * [#412](https://github.com/MCS-Lite/mcs-lite/pull/412) feat(Landing): add sitemap.xml via sitemap-generator-cli. ([@evenchange4](https://github.com/evenchange4))
+
+#### :bug: Bug Fix
+* `mcs-lite-landing-web`
+  * [#413](https://github.com/MCS-Lite/mcs-lite/pull/413) fix(Landing): add new redirect rules for netlify. ([@evenchange4](https://github.com/evenchange4))
+
+#### :memo: Documentation
+* `mcs-lite-introduction`
+  * [#411](https://github.com/MCS-Lite/mcs-lite/pull/411) docs(Introduction): Add new images and translations for en and zh-cn. ([@dariachen](https://github.com/dariachen))
+
+#### :house: Internal
+* `babel-preset-mcs-lite`, `eslint-config-mcs-lite`, `mcs-lite-admin-web`, `mcs-lite-mobile-web`, `mcs-lite-scripts`, `mcs-lite-ui`
+  * [#414](https://github.com/MCS-Lite/mcs-lite/pull/414) chore(ncu): update rxjs to 5.4.2. ([@evenchange4](https://github.com/evenchange4))
+
+#### Committers: 2
+- Daria Chen ([dariachen](https://github.com/dariachen))
+- Michael Hsu ([evenchange4](https://github.com/evenchange4))
+
+----
+
 ## Released (2017-07-04)
 
 ### Bump Versions
