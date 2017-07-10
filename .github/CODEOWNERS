@@ -1,0 +1,6 @@
+# Lines starting with '#' are comments.
+# Each line is a file pattern followed by one or more owners.
+
+*                               @evenchange4
+packages/mcs-lite-introduction  @dariachen
+packages/mcs-lite-design        @abby1002
