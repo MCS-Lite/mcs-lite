@@ -61,7 +61,7 @@
     "react-router-redux": "^4.0.8",
     "react-router-scroll": "^0.4.2",
     "react-scripts": "^1.0.10",
-    "react-text-truncate": "^0.10.3",
+    "react-text-truncate": "^0.10.4",
     "recompose": "^0.23.5",
     "redux": "^3.7.1",
     "redux-cycles": "^0.4.1",
