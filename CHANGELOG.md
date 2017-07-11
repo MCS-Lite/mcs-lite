@@ -2,6 +2,11 @@
 
 ## Released (2017-07-11)
 
+-   mcs-lite-admin-web: 0.1.7 => 0.1.8
+-   mcs-lite-landing-web: 0.1.1 => 0.1.2 (private)
+-   mcs-lite-mobile-web: 0.4.9 => 0.4.10
+-   mcs-lite-ui: 0.4.7 => 0.4.8
+
 #### :bug: Bug Fix
 * `mcs-lite-admin-web`, `mcs-lite-mobile-web`
   * [#420](https://github.com/MCS-Lite/mcs-lite/pull/420) fix(Auth/Cycle): wrong Observable.of arguments. ([@evenchange4](https://github.com/evenchange4))
