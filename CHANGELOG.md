@@ -1,5 +1,23 @@
 # MCS Lite changelogs
 
+## Released (2017-07-11)
+
+#### :bug: Bug Fix
+* `mcs-lite-admin-web`, `mcs-lite-mobile-web`
+  * [#420](https://github.com/MCS-Lite/mcs-lite/pull/420) fix(Auth/Cycle): wrong Observable.of arguments. ([@evenchange4](https://github.com/evenchange4))
+
+#### :memo: Documentation
+* [#419](https://github.com/MCS-Lite/mcs-lite/pull/419) chore(github): add config files for github. ([@evenchange4](https://github.com/evenchange4))
+
+#### :house: Internal
+* `mcs-lite-admin-web`, `mcs-lite-landing-web`, `mcs-lite-mobile-web`, `mcs-lite-ui`
+  * [#417](https://github.com/MCS-Lite/mcs-lite/pull/417) refactor(UI): Add raf-throttle to ClickOutside.js & ncu update. ([@evenchange4](https://github.com/evenchange4))
+
+#### Committers: 1
+- Michael Hsu ([evenchange4](https://github.com/evenchange4))
+
+----
+
 ## Released (2017-07-07)
 
 ### Bump Versions
