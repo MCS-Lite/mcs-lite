@@ -166,18 +166,18 @@ function httpErrorCycle(sources) {
     .pluck('response')
     .do(response => console.log('httpErrorCycle', response)); // eslint-disable-line
 
-  const action$ = failureRes$.concatMap(({ status, statusText }) => {
-    const shouldSignout = status === 401;
-
-    return Observable.of(
+  const action$ = failureRes$.concatMap(({ status, statusText }) =>
+    Observable.from([
       uiActions.addToast({
         kind: 'error',
         children: ` (${status} ${statusText})`,
       }),
       uiActions.setLoaded(), // Hint: set loading anyway
-      shouldSignout ? signout('', true) : {}, // Remind: Force signout
-    );
-  });
+      ...(status === 401 && [
+        signout('', true), // Remind: Force signout
+      ]),
+    ]),
+  );
 
   return {
     ACTION: action$,
