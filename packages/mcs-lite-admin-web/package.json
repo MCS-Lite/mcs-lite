@@ -1,6 +1,6 @@
 {
   "name": "mcs-lite-admin-web",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "MCS Lite Admin Web",
   "repository": "MCS-Lite/mcs-lite",
   "author": "Michael Hsu <evenchange4@gmail.com>",
@@ -41,7 +41,7 @@
     "mcs-lite-icon": "^0.3.7",
     "mcs-lite-theme": "^0.3.6",
     "mcs-lite-translation": "^0.1.5",
-    "mcs-lite-ui": "^0.4.7",
+    "mcs-lite-ui": "^0.4.8",
     "polished": "^1.2.1",
     "prop-types": "^15.5.10",
     "ramda": "^0.24.1",

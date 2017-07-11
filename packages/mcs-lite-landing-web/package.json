@@ -1,6 +1,6 @@
 {
   "name": "mcs-lite-landing-web",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "private": true,
   "description": "MCS Lite Landing Web",
   "repository": "MCS-Lite/mcs-lite",
@@ -30,7 +30,7 @@
     "mcs-lite-icon": "^0.3.7",
     "mcs-lite-theme": "^0.3.6",
     "mcs-lite-translation": "^0.1.5",
-    "mcs-lite-ui": "^0.4.7",
+    "mcs-lite-ui": "^0.4.8",
     "polished": "^1.2.1",
     "prop-types": "^15.5.10",
     "raf-throttle": "^2.0.2",
