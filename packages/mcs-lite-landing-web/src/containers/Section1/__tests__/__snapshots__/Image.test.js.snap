@@ -188,6 +188,7 @@ exports[`should renders <Image> correctly with Mobile view 1`] = `
               </pure(BackgroundImage)>
             </div>
             <Media
+              defaultMatches={true}
               query={
                 Object {
                   "minWidth": 768,

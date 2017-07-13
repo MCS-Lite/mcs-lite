@@ -254,6 +254,7 @@ exports[`should renders <Header> correctly with Desktop view 1`] = `
                                     </div>
                                   </styled.div>
                                   <Media
+                                    defaultMatches={true}
                                     query={
                                       Object {
                                         "minWidth": 1,
