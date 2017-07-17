@@ -27,8 +27,9 @@ export const FakeInput = styled.div`
   background-color: ${props => props.theme.color.white};
   border-color: ${props => props.theme.color.grayDark};
   font-size: ${props => props.theme.fontSize.p};
+  flex-grow: 1;
   flex-shrink: 0;
-  flex: 1;
+  flex-basis: auto;
 `;
 
 export const ButtonWrapper = styled.div`

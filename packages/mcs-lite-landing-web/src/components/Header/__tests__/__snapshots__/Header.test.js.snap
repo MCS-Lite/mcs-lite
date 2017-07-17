@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should renders <Header> correctly with Desktop view 1`] = `
-.irrVft {
+.c4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -14,7 +14,7 @@ exports[`should renders <Header> correctly with Desktop view 1`] = `
   flex-wrap: wrap;
 }
 
-.izNWxc {
+.c9 {
   display: block;
   box-sizing: border-box;
   padding: 20px;
@@ -22,17 +22,17 @@ exports[`should renders <Header> correctly with Desktop view 1`] = `
   width: 100%;
 }
 
-.bIAnAi {
+.c2 {
   margin: 0 auto;
   max-width: 100%;
   width: 960px;
 }
 
-.jpvIkX {
+.c0 {
   height: 50px;
 }
 
-.hfrQao {
+.c1 {
   z-index: 1;
   position: fixed;
   top: 0;
@@ -49,22 +49,22 @@ exports[`should renders <Header> correctly with Desktop view 1`] = `
   user-select: none;
 }
 
-.hBMPlt {
+.c12 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
 
-.hBMPlt > *:first-child {
+.c12 > *:first-child {
   padding-left: 0;
 }
 
-.hBMPlt > *:last-child {
+.c12 > *:last-child {
   padding-right: 0;
 }
 
-.ivJvWQ {
+.c13 {
   height: 50px;
   padding: 0 15px;
   display: -webkit-box;
@@ -83,25 +83,25 @@ exports[`should renders <Header> correctly with Desktop view 1`] = `
   cursor: pointer;
 }
 
-.ivJvWQ:hover {
+.c13:hover {
   color: #40494D;
 }
 
-.ivJvWQ path {
+.c13 path {
   fill: currentColor;
 }
 
-.brMxgt {
+.c29 {
   margin: 0;
   font-size: 1rem;
   color: currentColor;
 }
 
-.ieBhgS {
+.c27 {
   margin-right: 5px;
 }
 
-.eRXnHD {
+.c32 {
   -webkit-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
   transform: rotate(0deg);
@@ -110,7 +110,7 @@ exports[`should renders <Header> correctly with Desktop view 1`] = `
   transition: transform 0.4s cubic-bezier(0.68,-0.55,0.27,1.55);
 }
 
-.cURZrA {
+.c6 {
   padding-top: 0;
   padding-bottom: 0;
   display: -webkit-box;
@@ -123,22 +123,22 @@ exports[`should renders <Header> correctly with Desktop view 1`] = `
   justify-content: space-between;
 }
 
-.cHcTPx {
+.c35 {
   visibility: hidden;
   display: none;
 }
 
-.ejzgHG {
+.c15 {
   height: 28px;
   width: auto;
 }
 
-.hgIgSw {
+.c16 {
   display: none;
 }
 
 @media (min-width: 768px) {
-  .hgIgSw {
+  .c16 {
     display: inherit;
   }
 }
@@ -159,39 +159,39 @@ exports[`should renders <Header> correctly with Desktop view 1`] = `
       offset={40}
     >
       <header
-        className="sc-ifAKCX jpvIkX"
+        className="c0"
         offset={40}
       >
         <styled.div
           isTop={true}
         >
           <div
-            className="sc-EHOje hfrQao"
+            className="c1"
           >
             <Styled(PageContainer)
               width="960px"
             >
               <PageContainer
-                className="sc-bxivhb bIAnAi"
+                className="c2"
                 width="960px"
               >
                 <div
-                  className="sc-bxivhb bIAnAi"
+                  className="c2"
                   width="960px"
                 >
                   <Styled(RowContainer)>
                     <RowContainer
-                      className="sc-bwzfXH irrVft"
+                      className="c4"
                       divisions={12}
                     >
                       <section
-                        className="sc-bwzfXH irrVft"
+                        className="c4"
                       >
                         <Styled(Breakpoints)
                           xs={12}
                         >
                           <Breakpoints
-                            className="sc-jzJRlG cURZrA"
+                            className="c6"
                             xs={12}
                           >
                             <Styled(ColumnContainer)
@@ -202,7 +202,7 @@ exports[`should renders <Header> correctly with Desktop view 1`] = `
                                   "sm": 768,
                                 }
                               }
-                              className="sc-jzJRlG cURZrA"
+                              className="c6"
                               xs={12}
                             >
                               <ColumnContainer
@@ -213,16 +213,16 @@ exports[`should renders <Header> correctly with Desktop view 1`] = `
                                     "sm": 768,
                                   }
                                 }
-                                className="sc-jzJRlG cURZrA sc-htpNat izNWxc"
+                                className="c6 c9"
                                 divisions={12}
                                 xs={12}
                               >
                                 <div
-                                  className="sc-jzJRlG cURZrA sc-htpNat izNWxc"
+                                  className="c6 c9"
                                 >
                                   <styled.div>
                                     <div
-                                      className="sc-bZQynM hBMPlt"
+                                      className="c12"
                                     >
                                       <NavItem
                                         active={false}
@@ -231,12 +231,12 @@ exports[`should renders <Header> correctly with Desktop view 1`] = `
                                       >
                                         <BaseComponent
                                           active={false}
-                                          className="sc-gzVnrw ivJvWQ"
+                                          className="c13"
                                           component="div"
                                           disabled={false}
                                         >
                                           <div
-                                            className="sc-gzVnrw ivJvWQ"
+                                            className="c13"
                                           >
                                             <styled.img
                                               alt="logo"
@@ -244,7 +244,7 @@ exports[`should renders <Header> correctly with Desktop view 1`] = `
                                             >
                                               <img
                                                 alt="logo"
-                                                className="sc-chPdSV ejzgHG"
+                                                className="c15"
                                                 src="logo_mcs_lite_black.svg"
                                               />
                                             </styled.img>
@@ -279,10 +279,10 @@ exports[`should renders <Header> correctly with Desktop view 1`] = `
                                               "sm": 768,
                                             }
                                           }
-                                          className="sc-kgoBCf hgIgSw"
+                                          className="c16"
                                         >
                                           <div
-                                            className="sc-kgoBCf hgIgSw sc-bZQynM hBMPlt"
+                                            className="c16 c12"
                                           >
                                             <NavItem
                                               active={false}
@@ -294,7 +294,7 @@ exports[`should renders <Header> correctly with Desktop view 1`] = `
                                             >
                                               <BaseComponent
                                                 active={false}
-                                                className="sc-gzVnrw ivJvWQ"
+                                                className="c13"
                                                 component="a"
                                                 disabled={false}
                                                 href="https://mcs.mediatek.com/"
@@ -302,7 +302,7 @@ exports[`should renders <Header> correctly with Desktop view 1`] = `
                                                 target="_blank"
                                               >
                                                 <a
-                                                  className="sc-gzVnrw ivJvWQ"
+                                                  className="c13"
                                                   href="https://mcs.mediatek.com/"
                                                   rel="noreferrer noopener"
                                                   target="_blank"
@@ -321,7 +321,7 @@ exports[`should renders <Header> correctly with Desktop view 1`] = `
                                             >
                                               <BaseComponent
                                                 active={false}
-                                                className="sc-gzVnrw ivJvWQ"
+                                                className="c13"
                                                 component="a"
                                                 disabled={false}
                                                 href="https://mcs-lite-introduction.netlify.com/en"
@@ -329,7 +329,7 @@ exports[`should renders <Header> correctly with Desktop view 1`] = `
                                                 target="_blank"
                                               >
                                                 <a
-                                                  className="sc-gzVnrw ivJvWQ"
+                                                  className="c13"
                                                   href="https://mcs-lite-introduction.netlify.com/en"
                                                   rel="noreferrer noopener"
                                                   target="_blank"
@@ -348,7 +348,7 @@ exports[`should renders <Header> correctly with Desktop view 1`] = `
                                             >
                                               <BaseComponent
                                                 active={false}
-                                                className="sc-gzVnrw ivJvWQ"
+                                                className="c13"
                                                 component="a"
                                                 disabled={false}
                                                 href="mailto:mtkcloudsandbox@mediatek.com"
@@ -356,7 +356,7 @@ exports[`should renders <Header> correctly with Desktop view 1`] = `
                                                 target="_blank"
                                               >
                                                 <a
-                                                  className="sc-gzVnrw ivJvWQ"
+                                                  className="c13"
                                                   href="mailto:mtkcloudsandbox@mediatek.com"
                                                   rel="noreferrer noopener"
                                                   target="_blank"
@@ -404,7 +404,7 @@ exports[`should renders <Header> correctly with Desktop view 1`] = `
                                               >
                                                 <BaseComponent
                                                   active={false}
-                                                  className="sc-gzVnrw ivJvWQ"
+                                                  className="c13"
                                                   component="div"
                                                   data-ga-event-action="click"
                                                   data-ga-event-category="Language NavItemDropdown menu"
@@ -414,7 +414,7 @@ exports[`should renders <Header> correctly with Desktop view 1`] = `
                                                   onMouseOver={[Function]}
                                                 >
                                                   <div
-                                                    className="sc-gzVnrw ivJvWQ"
+                                                    className="c13"
                                                     data-ga-event-action="click"
                                                     data-ga-event-category="Language NavItemDropdown menu"
                                                     data-ga-on="click"
@@ -423,13 +423,13 @@ exports[`should renders <Header> correctly with Desktop view 1`] = `
                                                   >
                                                     <Styled(P)>
                                                       <P
-                                                        className="sc-VigVT ieBhgS"
+                                                        className="c27"
                                                       >
                                                         <Component
-                                                          className="sc-VigVT ieBhgS sc-dnqmqq brMxgt"
+                                                          className="c27 c29"
                                                         >
                                                           <p
-                                                            className="sc-VigVT ieBhgS sc-dnqmqq brMxgt"
+                                                            className="c27 c29"
                                                           >
                                                             Language
                                                           </p>
@@ -441,16 +441,16 @@ exports[`should renders <Header> correctly with Desktop view 1`] = `
                                                       size={18}
                                                     >
                                                       <Component
-                                                        className="sc-jTzLTM eRXnHD"
+                                                        className="c32"
                                                         isShow={false}
                                                         size={18}
                                                       >
                                                         <IconFold
-                                                          className="sc-jTzLTM eRXnHD"
+                                                          className="c32"
                                                           size={18}
                                                         >
                                                           <svg
-                                                            className="sc-jTzLTM eRXnHD"
+                                                            className="c32"
                                                             fill="currentColor"
                                                             height={18}
                                                             preserveAspectRatio="xMidYMid meet"
@@ -475,7 +475,7 @@ exports[`should renders <Header> correctly with Desktop view 1`] = `
                                   </Media>
                                   <styled.div>
                                     <div
-                                      className="sc-cSHVUG cHcTPx"
+                                      className="c35"
                                     >
                                       <a
                                         href="/en"

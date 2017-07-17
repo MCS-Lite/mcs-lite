@@ -14,5 +14,5 @@ it('should renders <ImageLayerWrapper> correctly', () => {
 
   const tree = toJson(wrapper.find(ImageLayerWrapper));
 
-  expect(tree).toMatchStyledComponentsSnapshot();
+  expect(tree).toMatchSnapshot();
 });

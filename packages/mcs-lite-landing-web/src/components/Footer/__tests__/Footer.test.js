@@ -8,5 +8,5 @@ it('should renders <Footer> correctly', () => {
 
   const tree = toJson(wrapper);
 
-  expect(tree).toMatchStyledComponentsSnapshot();
+  expect(tree).toMatchSnapshot();
 });

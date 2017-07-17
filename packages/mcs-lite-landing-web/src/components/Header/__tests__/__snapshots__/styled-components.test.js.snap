@@ -2,29 +2,29 @@
 
 exports[`should render components correctly 1`] = `
 Array [
-  .dqSROF {
+  .c3 {
   display: block;
   box-sizing: border-box;
   padding: 20px;
   width: 100%;
 }
 
-.jsKlVf {
+.c12 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
 
-.jsKlVf > *:first-child {
+.c12 > *:first-child {
   padding-left: 0;
 }
 
-.jsKlVf > *:last-child {
+.c12 > *:last-child {
   padding-right: 0;
 }
 
-.efjXid {
+.c0 {
   padding-top: 0;
   padding-bottom: 0;
   display: -webkit-box;
@@ -37,30 +37,30 @@ Array [
   justify-content: space-between;
 }
 
-.brTxhw {
+.c6 {
   visibility: hidden;
   display: none;
 }
 
-.jssEWI {
+.c7 {
   text-decoration: none;
 }
 
-.jmtTFj {
+.c9 {
   height: 28px;
   width: auto;
 }
 
-.klBtWC {
+.c10 {
   display: none;
 }
 
-.golqhY .sc-EHOje {
+.c13 .sc-EHOje {
   padding-right: 0;
 }
 
 @media (min-width: 768px) {
-  .klBtWC {
+  .c10 {
     display: inherit;
   }
 }
@@ -68,7 +68,7 @@ Array [
 <div>
     <Styled(Breakpoints)>
         <Breakpoints
-            className="sc-bZQynM efjXid"
+            className="c0"
         >
             <Styled(ColumnContainer)
                 breakpoints={
@@ -78,7 +78,7 @@ Array [
                         "sm": 768,
                       }
                 }
-                className="sc-bZQynM efjXid"
+                className="c0"
             >
                 <ColumnContainer
                     breakpoints={
@@ -88,11 +88,11 @@ Array [
                             "sm": 768,
                           }
                     }
-                    className="sc-bZQynM efjXid sc-htpNat dqSROF"
+                    className="c0 c3"
                     divisions={12}
                 >
                     <div
-                        className="sc-bZQynM efjXid sc-htpNat dqSROF"
+                        className="c0 c3"
                     />
                 </ColumnContainer>
             </Styled(ColumnContainer)>
@@ -100,17 +100,17 @@ Array [
     </Styled(Breakpoints)>
     <styled.div>
         <div
-            className="sc-gzVnrw brTxhw"
+            className="c6"
         />
     </styled.div>
     <Styled(Link)>
         <Link
-            className="sc-htoDjs jssEWI"
+            className="c7"
             onlyActiveOnIndex={false}
             style={Object {}}
         >
             <a
-                className="sc-htoDjs jssEWI"
+                className="c7"
                 onClick={[Function]}
                 style={Object {}}
             />
@@ -118,7 +118,7 @@ Array [
     </Styled(Link)>
     <styled.img>
         <img
-            className="sc-dnqmqq jmtTFj"
+            className="c9"
         />
     </styled.img>
     <Breakpoints>
@@ -139,32 +139,32 @@ Array [
                         "sm": 768,
                       }
                 }
-                className="sc-iwsKbI klBtWC"
+                className="c10"
             >
                 <div
-                    className="sc-iwsKbI klBtWC sc-ifAKCX jsKlVf"
+                    className="c10 c12"
                 />
             </styled.div>
         </Styled(styled.div)>
     </Breakpoints>
     <Styled(styled.div)>
         <styled.div
-            className="sc-gZMcBi golqhY"
+            className="c13"
         >
             <div
-                className="sc-gZMcBi golqhY sc-ifAKCX jsKlVf"
+                className="c13 c12"
             />
         </styled.div>
     </Styled(styled.div)>
 </div>,
-  .dqSROF {
+  .c1 {
   display: block;
   box-sizing: border-box;
   padding: 20px;
   width: 100%;
 }
 
-.efjXid {
+.c0 {
   padding-top: 0;
   padding-bottom: 0;
   display: -webkit-box;
@@ -178,65 +178,65 @@ Array [
 }
 
 <div
-    className="sc-bZQynM efjXid sc-htpNat dqSROF"
+    className="c0 c1"
 />,
-  .brTxhw {
+  .c0 {
   visibility: hidden;
   display: none;
 }
 
 <div
-    className="sc-gzVnrw brTxhw"
+    className="c0"
 />,
-  .jsKlVf {
+  .c1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
 
-.jsKlVf > *:first-child {
+.c1 > *:first-child {
   padding-left: 0;
 }
 
-.jsKlVf > *:last-child {
+.c1 > *:last-child {
   padding-right: 0;
 }
 
-.klBtWC {
+.c0 {
   display: none;
 }
 
 @media (min-width: 768px) {
-  .klBtWC {
+  .c0 {
     display: inherit;
   }
 }
 
 <div
-    className="sc-iwsKbI klBtWC sc-ifAKCX jsKlVf"
+    className="c0 c1"
 />,
-  .jsKlVf {
+  .c1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
 
-.jsKlVf > *:first-child {
+.c1 > *:first-child {
   padding-left: 0;
 }
 
-.jsKlVf > *:last-child {
+.c1 > *:last-child {
   padding-right: 0;
 }
 
-.golqhY .sc-EHOje {
+.c0 .sc-EHOje {
   padding-right: 0;
 }
 
 <div
-    className="sc-gZMcBi golqhY sc-ifAKCX jsKlVf"
+    className="c0 c1"
 />,
 ]
 `;

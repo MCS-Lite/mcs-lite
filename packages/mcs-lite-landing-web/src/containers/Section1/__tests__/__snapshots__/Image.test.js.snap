@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should renders <Image> correctly with Mobile view 1`] = `
-.efkuaT {
+.c6 {
   height: 100%;
   background-repeat: no-repeat;
   -webkit-transition: all 0.3 linear;
@@ -13,11 +13,11 @@ exports[`should renders <Image> correctly with Mobile view 1`] = `
   transform: scale(1);
 }
 
-.iRyBvI {
+.c1 {
   min-height: 100%;
 }
 
-.bHHRey img {
+.c0 img {
   display: block;
   height: auto;
   width: 100%;
@@ -26,12 +26,12 @@ exports[`should renders <Image> correctly with Mobile view 1`] = `
 }
 
 @media (min-width: 768px) {
-  .bHHRey {
+  .c0 {
     position: relative;
     height: 350px;
   }
 
-  .bHHRey > * {
+  .c0 > * {
     position: absolute;
     left: 0;
     right: 0;
@@ -51,7 +51,7 @@ exports[`should renders <Image> correctly with Mobile view 1`] = `
     align-items: flex-end;
   }
 
-  .bHHRey img {
+  .c0 img {
     display: initial;
     height: 100%;
     width: auto;
@@ -59,7 +59,7 @@ exports[`should renders <Image> correctly with Mobile view 1`] = `
 }
 
 @media (min-width: 970px) {
-  .bHHRey > * {
+  .c0 > * {
     display: block;
   }
 }
@@ -98,7 +98,7 @@ exports[`should renders <Image> correctly with Mobile view 1`] = `
           }
         >
           <div
-            className="sc-iwsKbI bHHRey"
+            className="c0"
           >
             <div>
               <pure(BackgroundImage)
@@ -117,7 +117,7 @@ exports[`should renders <Image> correctly with Mobile view 1`] = `
                 >
                   <ProgressiveImage
                     blur={5}
-                    className="sc-EHOje iRyBvI"
+                    className="c1"
                     component="img"
                     opacity={0.7}
                     placeholder="img_mcs_screenX66.png"
@@ -127,7 +127,7 @@ exports[`should renders <Image> correctly with Mobile view 1`] = `
                   >
                     <mapPropsStream(Img)
                       blur={5}
-                      className="sc-EHOje iRyBvI"
+                      className="c1"
                       component="img"
                       opacity={0.7}
                       placeholder="img_mcs_screenX66.png"
@@ -137,7 +137,7 @@ exports[`should renders <Image> correctly with Mobile view 1`] = `
                     >
                       <Img
                         blur={5}
-                        className="sc-EHOje iRyBvI"
+                        className="c1"
                         component="img"
                         image="img_mcs_screenX66.png"
                         isCached={false}
@@ -150,7 +150,7 @@ exports[`should renders <Image> correctly with Mobile view 1`] = `
                       >
                         <Styled(BaseComponent)
                           blur={5}
-                          className="sc-EHOje iRyBvI"
+                          className="c1"
                           component="img"
                           isCached={false}
                           isLoaded={false}
@@ -163,7 +163,7 @@ exports[`should renders <Image> correctly with Mobile view 1`] = `
                         >
                           <BaseComponent
                             blur={5}
-                            className="sc-EHOje iRyBvI sc-ifAKCX efkuaT"
+                            className="c1 c6"
                             component="img"
                             isCached={false}
                             isLoaded={false}
@@ -175,7 +175,7 @@ exports[`should renders <Image> correctly with Mobile view 1`] = `
                             transition="all 0.3 linear"
                           >
                             <img
-                              className="sc-EHOje iRyBvI sc-ifAKCX efkuaT"
+                              className="c1 c6"
                               src="img_mcs_screenX66.png"
                               style={Object {}}
                             />

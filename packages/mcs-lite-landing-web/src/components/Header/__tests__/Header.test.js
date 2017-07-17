@@ -25,5 +25,5 @@ it('should renders <Header> correctly with Desktop view', () => {
 
   const tree = toJson(wrapper.find(Header));
 
-  expect(tree).toMatchStyledComponentsSnapshot();
+  expect(tree).toMatchSnapshot();
 });

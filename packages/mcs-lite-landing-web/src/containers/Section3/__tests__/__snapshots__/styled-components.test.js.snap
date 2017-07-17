@@ -51,7 +51,7 @@ exports[`should render LazyloadIcon correctly 1`] = `
 
 exports[`should render components correctly 1`] = `
 Array [
-  .irrVft {
+  .c4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -64,7 +64,7 @@ Array [
   flex-wrap: wrap;
 }
 
-.ehLIEY {
+.c1 {
   width: 80px;
   height: 80px;
   display: -webkit-inline-box;
@@ -82,44 +82,44 @@ Array [
   border-radius: 3px;
 }
 
-.iSQhyH > *:nth-of-type(4n+1) .sc-ifAKCX {
+.c2 > *:nth-of-type(4n+1) .c0 {
   background-color: #28B2E6;
 }
 
-.iSQhyH > *:nth-of-type(4n+2) .sc-ifAKCX {
+.c2 > *:nth-of-type(4n+2) .c0 {
   background-color: #FEB439;
 }
 
-.iSQhyH > *:nth-of-type(4n+3) .sc-ifAKCX {
+.c2 > *:nth-of-type(4n+3) .c0 {
   background-color: #36C1CA;
 }
 
-.iSQhyH > *:nth-of-type(4n) .sc-ifAKCX {
+.c2 > *:nth-of-type(4n) .c0 {
   background-color: #FF4E84;
 }
 
 <div>
     <styled.div>
         <div
-            className="sc-ifAKCX ehLIEY"
+            className="c0 c1"
         />
     </styled.div>
     <Styled(Styled(RowContainer))>
         <Styled(RowContainer)
-            className="sc-EHOje iSQhyH"
+            className="c2"
         >
             <RowContainer
-                className="sc-EHOje iSQhyH sc-bwzfXH irrVft"
+                className="c2 c4"
                 divisions={12}
             >
                 <section
-                    className="sc-EHOje iSQhyH sc-bwzfXH irrVft"
+                    className="c2 c4"
                 />
             </RowContainer>
         </Styled(RowContainer)>
     </Styled(Styled(RowContainer))>
 </div>,
-  .ehLIEY {
+  .c1 {
   width: 80px;
   height: 80px;
   display: -webkit-inline-box;
@@ -137,8 +137,24 @@ Array [
   border-radius: 3px;
 }
 
+.iSQhyH > *:nth-of-type(4n+1) .c0 {
+  background-color: #28B2E6;
+}
+
+.iSQhyH > *:nth-of-type(4n+2) .c0 {
+  background-color: #FEB439;
+}
+
+.iSQhyH > *:nth-of-type(4n+3) .c0 {
+  background-color: #36C1CA;
+}
+
+.iSQhyH > *:nth-of-type(4n) .c0 {
+  background-color: #FF4E84;
+}
+
 <div
-    className="sc-ifAKCX ehLIEY"
+    className="c0 c1"
 />,
 ]
 `;

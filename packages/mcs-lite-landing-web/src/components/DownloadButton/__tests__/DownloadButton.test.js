@@ -13,5 +13,5 @@ it('should renders <DownloadButton> correctly', () => {
 
   const tree = toJson(wrapper);
 
-  expect(tree).toMatchStyledComponentsSnapshot();
+  expect(tree).toMatchSnapshot();
 });

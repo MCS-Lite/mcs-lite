@@ -2,7 +2,7 @@
 
 exports[`should render components correctly 1`] = `
 Array [
-  .irrVft {
+  .c7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -15,39 +15,39 @@ Array [
   flex-wrap: wrap;
 }
 
-.dqSROF {
+.c13 {
   display: block;
   box-sizing: border-box;
   padding: 20px;
   width: 100%;
 }
 
-.bIAnAi {
+.c5 {
   margin: 0 auto;
   max-width: 100%;
   width: 960px;
 }
 
-.jMkBSN {
+.c4 {
   padding: 60px 0;
   background-color: #FFFFFF;
 }
 
-.kqmuqK {
+.c0 {
   background-image: linear-gradient(-180deg, #FAFAFA 0%, #F1F2F7 100%);
   padding-bottom: 0;
   overflow: hidden;
 }
 
-.dUmYNM {
+.c10 {
   padding-bottom: 0;
 }
 
-.ecKAAN {
+.c9 {
   text-align: center;
 }
 
-.eabzrd img {
+.c16 img {
   display: block;
   height: auto;
   width: 100%;
@@ -55,7 +55,7 @@ Array [
   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.1);
 }
 
-.cNSEXH {
+.c17 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -67,18 +67,18 @@ Array [
 }
 
 @media (min-width: 970px) {
-  .ecKAAN {
+  .c9 {
     text-align: left;
   }
 }
 
 @media (min-width: 768px) {
-  .eabzrd {
+  .c16 {
     position: relative;
     height: 350px;
   }
 
-  .eabzrd > * {
+  .c16 > * {
     position: absolute;
     left: 0;
     right: 0;
@@ -98,7 +98,7 @@ Array [
     align-items: flex-end;
   }
 
-  .eabzrd img {
+  .c16 img {
     display: initial;
     height: 100%;
     width: auto;
@@ -106,13 +106,13 @@ Array [
 }
 
 @media (min-width: 970px) {
-  .eabzrd > * {
+  .c16 > * {
     display: block;
   }
 }
 
 @media (min-width: 970px) {
-  .cNSEXH {
+  .c17 {
     -webkit-align-items: flex-end;
     -webkit-box-align: flex-end;
     -ms-flex-align: flex-end;
@@ -127,35 +127,35 @@ Array [
 <div>
     <Styled(pure(SectionRow))>
         <pure(SectionRow)
-            className="sc-EHOje kqmuqK"
+            className="c0"
         >
             <SectionRow
-                className="sc-EHOje kqmuqK"
+                className="c0"
             >
                 <styled.div
-                    className="sc-EHOje kqmuqK"
+                    className="c0"
                 >
                     <div
-                        className="sc-EHOje kqmuqK sc-ifAKCX jMkBSN"
+                        className="c0 c4"
                     >
                         <Styled(PageContainer)
                             width="960px"
                         >
                             <PageContainer
-                                className="sc-bxivhb bIAnAi"
+                                className="c5"
                                 width="960px"
                             >
                                 <div
-                                    className="sc-bxivhb bIAnAi"
+                                    className="c5"
                                     width="960px"
                                 >
                                     <Styled(RowContainer)>
                                         <RowContainer
-                                            className="sc-bwzfXH irrVft"
+                                            className="c7"
                                             divisions={12}
                                         >
                                             <section
-                                                className="sc-bwzfXH irrVft"
+                                                className="c7"
                                             >
                                                 children
                                             </section>
@@ -180,13 +180,13 @@ Array [
             }
         >
             <div
-                className="sc-gzVnrw ecKAAN"
+                className="c9"
             />
         </styled.div>
     </Breakpoints>
     <Styled(Breakpoints)>
         <Breakpoints
-            className="sc-bZQynM dUmYNM"
+            className="c10"
         >
             <Styled(ColumnContainer)
                 breakpoints={
@@ -196,7 +196,7 @@ Array [
                         "sm": 768,
                       }
                 }
-                className="sc-bZQynM dUmYNM"
+                className="c10"
             >
                 <ColumnContainer
                     breakpoints={
@@ -206,11 +206,11 @@ Array [
                             "sm": 768,
                           }
                     }
-                    className="sc-bZQynM dUmYNM sc-htpNat dqSROF"
+                    className="c10 c13"
                     divisions={12}
                 >
                     <div
-                        className="sc-bZQynM dUmYNM sc-htpNat dqSROF"
+                        className="c10 c13"
                     />
                 </ColumnContainer>
             </Styled(ColumnContainer)>
@@ -227,7 +227,7 @@ Array [
             }
         >
             <div
-                className="sc-htoDjs eabzrd"
+                className="c16"
             />
         </styled.div>
     </Breakpoints>
@@ -242,12 +242,12 @@ Array [
             }
         >
             <div
-                className="sc-dnqmqq cNSEXH"
+                className="c17"
             />
         </styled.div>
     </Breakpoints>
 </div>,
-  .irrVft {
+  .c4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -260,44 +260,44 @@ Array [
   flex-wrap: wrap;
 }
 
-.bIAnAi {
+.c2 {
   margin: 0 auto;
   max-width: 100%;
   width: 960px;
 }
 
-.jMkBSN {
+.c1 {
   padding: 60px 0;
   background-color: #FFFFFF;
 }
 
-.kqmuqK {
+.c0 {
   background-image: linear-gradient(-180deg, #FAFAFA 0%, #F1F2F7 100%);
   padding-bottom: 0;
   overflow: hidden;
 }
 
 <div
-    className="sc-EHOje kqmuqK sc-ifAKCX jMkBSN"
+    className="c0 c1"
 >
     <Styled(PageContainer)
         width="960px"
     >
         <PageContainer
-            className="sc-bxivhb bIAnAi"
+            className="c2"
             width="960px"
         >
             <div
-                className="sc-bxivhb bIAnAi"
+                className="c2"
                 width="960px"
             >
                 <Styled(RowContainer)>
                     <RowContainer
-                        className="sc-bwzfXH irrVft"
+                        className="c4"
                         divisions={12}
                     >
                         <section
-                            className="sc-bwzfXH irrVft"
+                            className="c4"
                         >
                             children
                         </section>
@@ -307,7 +307,7 @@ Array [
         </PageContainer>
     </Styled(PageContainer)>
 </div>,
-  .irrVft {
+  .c1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -320,57 +320,57 @@ Array [
   flex-wrap: wrap;
 }
 
-.bIAnAi {
+.c0 {
   margin: 0 auto;
   max-width: 100%;
   width: 960px;
 }
 
 <div
-    className="sc-bxivhb bIAnAi"
+    className="c0"
     width="960px"
 >
     <Styled(RowContainer)>
         <RowContainer
-            className="sc-bwzfXH irrVft"
+            className="c1"
             divisions={12}
         >
             <section
-                className="sc-bwzfXH irrVft"
+                className="c1"
             >
                 children
             </section>
         </RowContainer>
     </Styled(RowContainer)>
 </div>,
-  .ecKAAN {
+  .c0 {
   text-align: center;
 }
 
 @media (min-width: 970px) {
-  .ecKAAN {
+  .c0 {
     text-align: left;
   }
 }
 
 <div
-    className="sc-gzVnrw ecKAAN"
+    className="c0"
 />,
-  .dqSROF {
+  .c1 {
   display: block;
   box-sizing: border-box;
   padding: 20px;
   width: 100%;
 }
 
-.dUmYNM {
+.c0 {
   padding-bottom: 0;
 }
 
 <div
-    className="sc-bZQynM dUmYNM sc-htpNat dqSROF"
+    className="c0 c1"
 />,
-  .eabzrd img {
+  .c0 img {
   display: block;
   height: auto;
   width: 100%;
@@ -379,12 +379,12 @@ Array [
 }
 
 @media (min-width: 768px) {
-  .eabzrd {
+  .c0 {
     position: relative;
     height: 350px;
   }
 
-  .eabzrd > * {
+  .c0 > * {
     position: absolute;
     left: 0;
     right: 0;
@@ -404,7 +404,7 @@ Array [
     align-items: flex-end;
   }
 
-  .eabzrd img {
+  .c0 img {
     display: initial;
     height: 100%;
     width: auto;
@@ -412,15 +412,15 @@ Array [
 }
 
 @media (min-width: 970px) {
-  .eabzrd > * {
+  .c0 > * {
     display: block;
   }
 }
 
 <div
-    className="sc-htoDjs eabzrd"
+    className="c0"
 />,
-  .cNSEXH {
+  .c0 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -432,7 +432,7 @@ Array [
 }
 
 @media (min-width: 970px) {
-  .cNSEXH {
+  .c0 {
     -webkit-align-items: flex-end;
     -webkit-box-align: flex-end;
     -ms-flex-align: flex-end;
@@ -445,7 +445,7 @@ Array [
 }
 
 <div
-    className="sc-dnqmqq cNSEXH"
+    className="c0"
 />,
 ]
 `;

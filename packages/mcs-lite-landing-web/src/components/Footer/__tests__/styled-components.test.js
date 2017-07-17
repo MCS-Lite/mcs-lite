@@ -27,5 +27,5 @@ it('should render components correctly', () => {
     </ThemeProvider>,
   );
 
-  expect(toJson(wrapper.find('div'))).toMatchStyledComponentsSnapshot();
+  expect(toJson(wrapper.find('div'))).toMatchSnapshot();
 });
