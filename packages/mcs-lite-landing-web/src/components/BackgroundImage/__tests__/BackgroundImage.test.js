@@ -14,5 +14,5 @@ it('should renders <BackgroundImage> correctly', () => {
 
   const tree = toJson(wrapper.find(BackgroundImage));
 
-  expect(tree).toMatchStyledComponentsSnapshot();
+  expect(tree).toMatchSnapshot();
 });

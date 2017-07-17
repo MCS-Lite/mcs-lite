@@ -7,7 +7,7 @@ import renderer from 'react-test-renderer';
 const styledSnapshot = ({ story, context }) => {
   const storyElement = story.render(context);
   const tree = renderer.create(storyElement).toJSON();
-  expect(tree).toMatchStyledComponentsSnapshot();
+  expect(tree).toMatchSnapshot();
 };
 
 /**

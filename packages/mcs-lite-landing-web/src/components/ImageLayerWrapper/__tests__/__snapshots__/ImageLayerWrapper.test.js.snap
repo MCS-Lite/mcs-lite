@@ -1,12 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should renders <ImageLayerWrapper> correctly 1`] = `
-.dnqPuC {
+.c0 {
   position: relative;
   height: 100%;
 }
 
-.dnqPuC > * {
+.c0 > * {
   position: absolute;
   left: 0;
   right: 0;
@@ -25,7 +25,7 @@ exports[`should renders <ImageLayerWrapper> correctly 1`] = `
   height={24}
 >
   <div
-    className="sc-bdVaJa dnqPuC"
+    className="c0"
     height={24}
   />
 </styled.div>

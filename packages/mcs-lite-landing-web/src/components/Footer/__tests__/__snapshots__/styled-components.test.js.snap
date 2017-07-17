@@ -2,30 +2,30 @@
 
 exports[`should render components correctly 1`] = `
 Array [
-  .dqSROF {
+  .c4 {
   display: block;
   box-sizing: border-box;
   padding: 20px;
   width: 100%;
 }
 
-.YiQQu {
+.c0 {
   background-color: #40494D;
 }
 
-.hevWBg {
+.c1 {
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
-.gtVLpG {
+.c8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
 
-.gtVLpG a {
+.c8 a {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -40,17 +40,17 @@ Array [
   justify-content: space-between;
 }
 
-.gtVLpG a + a {
+.c8 a + a {
   margin-left: 20px;
 }
 
-.gtVLpG img {
+.c8 img {
   height: 32px;
   width: 32px;
   color: #FFFFFF;
 }
 
-.jdhKut {
+.c9 {
   height: 32px;
   width: 32px;
   display: -webkit-box;
@@ -72,7 +72,7 @@ Array [
   color: transparent;
 }
 
-.dEuNnW {
+.c10 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -87,12 +87,12 @@ Array [
   flex-direction: column;
 }
 
-.dEuNnW .sc-bZQynM {
+.c10 .c7 {
   margin-bottom: 5px;
 }
 
 @media (min-width: 768px) {
-  .dEuNnW {
+  .c10 {
     -webkit-box-pack: space-between;
     -webkit-justify-content: space-between;
     -ms-flex-pack: space-between;
@@ -102,7 +102,7 @@ Array [
     flex-direction: row-reverse;
   }
 
-  .dEuNnW .sc-bZQynM {
+  .c10 .c7 {
     margin-bottom: 0;
   }
 }
@@ -110,12 +110,12 @@ Array [
 <div>
     <styled.footer>
         <footer
-            className="sc-ifAKCX YiQQu"
+            className="c0"
         />
     </styled.footer>
     <Styled(Breakpoints)>
         <Breakpoints
-            className="sc-EHOje hevWBg"
+            className="c1"
         >
             <Styled(ColumnContainer)
                 breakpoints={
@@ -125,7 +125,7 @@ Array [
                         "sm": 768,
                       }
                 }
-                className="sc-EHOje hevWBg"
+                className="c1"
             >
                 <ColumnContainer
                     breakpoints={
@@ -135,11 +135,11 @@ Array [
                             "sm": 768,
                           }
                     }
-                    className="sc-EHOje hevWBg sc-htpNat dqSROF"
+                    className="c1 c4"
                     divisions={12}
                 >
                     <div
-                        className="sc-EHOje hevWBg sc-htpNat dqSROF"
+                        className="c1 c4"
                     />
                 </ColumnContainer>
             </Styled(ColumnContainer)>
@@ -147,12 +147,12 @@ Array [
     </Styled(Breakpoints)>
     <styled.div>
         <div
-            className="sc-bZQynM gtVLpG"
+            className="c7 c8"
         />
     </styled.div>
     <styled.div>
         <div
-            className="sc-gzVnrw jdhKut"
+            className="c9"
         />
     </styled.div>
     <Breakpoints>
@@ -166,34 +166,34 @@ Array [
             }
         >
             <div
-                className="sc-htoDjs dEuNnW"
+                className="c10"
             />
         </styled.div>
     </Breakpoints>
 </div>,
-  .dqSROF {
+  .c1 {
   display: block;
   box-sizing: border-box;
   padding: 20px;
   width: 100%;
 }
 
-.hevWBg {
+.c0 {
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
 <div
-    className="sc-EHOje hevWBg sc-htpNat dqSROF"
+    className="c0 c1"
 />,
-  .gtVLpG {
+  .c1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
 
-.gtVLpG a {
+.c1 a {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -208,20 +208,30 @@ Array [
   justify-content: space-between;
 }
 
-.gtVLpG a + a {
+.c1 a + a {
   margin-left: 20px;
 }
 
-.gtVLpG img {
+.c1 img {
   height: 32px;
   width: 32px;
   color: #FFFFFF;
 }
 
+.dEuNnW .c0 {
+  margin-bottom: 5px;
+}
+
+@media (min-width: 768px) {
+  .dEuNnW .c0 {
+    margin-bottom: 0;
+  }
+}
+
 <div
-    className="sc-bZQynM gtVLpG"
+    className="c0 c1"
 />,
-  .jdhKut {
+  .c0 {
   height: 32px;
   width: 32px;
   display: -webkit-box;
@@ -244,9 +254,9 @@ Array [
 }
 
 <div
-    className="sc-gzVnrw jdhKut"
+    className="c0"
 />,
-  .dEuNnW {
+  .c0 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -261,12 +271,12 @@ Array [
   flex-direction: column;
 }
 
-.dEuNnW .sc-bZQynM {
+.c0 .sc-bZQynM {
   margin-bottom: 5px;
 }
 
 @media (min-width: 768px) {
-  .dEuNnW {
+  .c0 {
     -webkit-box-pack: space-between;
     -webkit-justify-content: space-between;
     -ms-flex-pack: space-between;
@@ -276,13 +286,13 @@ Array [
     flex-direction: row-reverse;
   }
 
-  .dEuNnW .sc-bZQynM {
+  .c0 .sc-bZQynM {
     margin-bottom: 0;
   }
 }
 
 <div
-    className="sc-htoDjs dEuNnW"
+    className="c0"
 />,
 ]
 `;

@@ -16,5 +16,5 @@ it('should renders <SectionRow> correctly', () => {
 
   const tree = toJson(wrapper.find(SectionRow));
 
-  expect(tree).toMatchStyledComponentsSnapshot();
+  expect(tree).toMatchSnapshot();
 });

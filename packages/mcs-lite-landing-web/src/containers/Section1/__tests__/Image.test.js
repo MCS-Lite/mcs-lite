@@ -25,5 +25,5 @@ it('should renders <Image> correctly with Mobile view', () => {
 
   const tree = toJson(wrapper.find(Image));
 
-  expect(tree).toMatchStyledComponentsSnapshot();
+  expect(tree).toMatchSnapshot();
 });
