@@ -31,7 +31,6 @@ exports[`should renders <Image> correctly 1`] = `
         }
       }
       updateReStart={true}
-      willChange={true}
     />
   </ScrollOverPack>
   <ScrollOverPack
@@ -63,7 +62,6 @@ exports[`should renders <Image> correctly 1`] = `
         }
       }
       updateReStart={true}
-      willChange={true}
     />
   </ScrollOverPack>
   <div>

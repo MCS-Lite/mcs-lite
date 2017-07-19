@@ -71,7 +71,7 @@ exports[`Storyshots A Nested children with Heading 1`] = `
 `;
 
 exports[`Storyshots A With color props 1`] = `
-.c6 {
+.c5 {
   color: #00A1DE;
   -webkit-transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
@@ -79,11 +79,11 @@ exports[`Storyshots A With color props 1`] = `
   text-decoration: none;
 }
 
-.c6:hover {
+.c5:hover {
   color: rgb(0, 151, 208);
 }
 
-.c6:active {
+.c5:active {
   color: rgb(0, 144, 198);
 }
 
@@ -167,7 +167,7 @@ exports[`Storyshots A With color props 1`] = `
   color: rgb(227, 227, 227);
 }
 
-.c7 {
+.c6 {
   color: #69BE28;
   -webkit-transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
@@ -175,15 +175,15 @@ exports[`Storyshots A With color props 1`] = `
   text-decoration: none;
 }
 
-.c7:hover {
+.c6:hover {
   color: rgb(98, 178, 38);
 }
 
-.c7:active {
+.c6:active {
   color: rgb(94, 170, 36);
 }
 
-.c8 {
+.c7 {
   color: #F5364E;
   -webkit-transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
@@ -191,15 +191,15 @@ exports[`Storyshots A With color props 1`] = `
   text-decoration: none;
 }
 
-.c8:hover {
+.c7:hover {
   color: rgb(230, 51, 73);
 }
 
-.c8:active {
+.c7:active {
   color: rgb(219, 48, 70);
 }
 
-.c9 {
+.c8 {
   color: #F39A1E;
   -webkit-transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
@@ -207,11 +207,11 @@ exports[`Storyshots A With color props 1`] = `
   text-decoration: none;
 }
 
-.c9:hover {
+.c8:hover {
   color: rgb(228, 144, 28);
 }
 
-.c9:active {
+.c8:active {
   color: rgb(217, 137, 27);
 }
 
@@ -259,28 +259,28 @@ exports[`Storyshots A With color props 1`] = `
     default
   </a>
   <a
-    className="c6"
+    className="c5"
     color="primary"
   >
     A link 
     primary
   </a>
   <a
-    className="c7"
+    className="c6"
     color="success"
   >
     A link 
     success
   </a>
   <a
-    className="c8"
+    className="c7"
     color="error"
   >
     A link 
     error
   </a>
   <a
-    className="c9"
+    className="c8"
     color="warning"
   >
     A link 
@@ -596,7 +596,7 @@ exports[`Storyshots Button With block props 1`] = `
   background-color: rgb(0, 144, 198);
 }
 
-.c3 {
+.c2 {
   border-width: 1px;
   border-style: solid;
   outline: none;
@@ -616,11 +616,11 @@ exports[`Storyshots Button With block props 1`] = `
   border-color: rgb(0, 130, 179);
 }
 
-.c3:hover {
+.c2:hover {
   background-color: rgb(0, 151, 208);
 }
 
-.c3:active {
+.c2:active {
   background-color: rgb(0, 144, 198);
 }
 
@@ -642,7 +642,7 @@ exports[`Storyshots Button With block props 1`] = `
     Simple button
   </button>
   <button
-    className="c3"
+    className="c2"
   >
     block
   </button>
@@ -2189,7 +2189,7 @@ exports[`Storyshots DataChannel ControlPeriod 1`] = `
 `;
 
 exports[`Storyshots DataChannel ControlRange - Stateful PPAP 1`] = `
-.c12 {
+.c7 {
   margin: 0;
   font-size: 1rem;
   color: #00A1DE;
@@ -2201,7 +2201,7 @@ exports[`Storyshots DataChannel ControlRange - Stateful PPAP 1`] = `
   color: #999A94;
 }
 
-.c13 {
+.c8 {
   -webkit-appearance: none;
   -moz-appearance: none;
   width: 100%;
@@ -2210,7 +2210,7 @@ exports[`Storyshots DataChannel ControlRange - Stateful PPAP 1`] = `
   cursor: pointer;
 }
 
-.c13::-webkit-slider-runnable-track {
+.c8::-webkit-slider-runnable-track {
   -webkit-appearance: none;
   height: 16px;
   border-radius: 8px;
@@ -2218,7 +2218,7 @@ exports[`Storyshots DataChannel ControlRange - Stateful PPAP 1`] = `
   box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.35),inset 0 0 0 2px #E5E6E6,inset 0 1px 10px 0 rgba(0,0,0,0.05);
 }
 
-.c13::-moz-range-track {
+.c8::-moz-range-track {
   -moz-appearance: none;
   height: 16px;
   border-radius: 8px;
@@ -2226,11 +2226,11 @@ exports[`Storyshots DataChannel ControlRange - Stateful PPAP 1`] = `
   box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.35),inset 0 0 0 2px #E5E6E6,inset 0 1px 10px 0 rgba(0,0,0,0.05);
 }
 
-.c13::-moz-focus-outer {
+.c8::-moz-focus-outer {
   border: 0;
 }
 
-.c13::-ms-track {
+.c8::-ms-track {
   -webkit-appearance: none;
   height: 16px;
   border-radius: 8px;
@@ -2238,7 +2238,7 @@ exports[`Storyshots DataChannel ControlRange - Stateful PPAP 1`] = `
   box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.35),inset 0 0 0 2px #E5E6E6,inset 0 1px 10px 0 rgba(0,0,0,0.05);
 }
 
-.c13::-webkit-slider-thumb {
+.c8::-webkit-slider-thumb {
   -webkit-appearance: none;
   margin-top: -12px;
   height: 40px;
@@ -2251,7 +2251,7 @@ exports[`Storyshots DataChannel ControlRange - Stateful PPAP 1`] = `
   box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #00A1DE,inset 0 0 0 3px rgb(0, 192, 255);
 }
 
-.c13::-moz-range-thumb {
+.c8::-moz-range-thumb {
   -moz-appearance: none;
   height: 40px;
   width: 40px;
@@ -2263,7 +2263,7 @@ exports[`Storyshots DataChannel ControlRange - Stateful PPAP 1`] = `
   box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #00A1DE,inset 0 0 0 3px rgb(0, 192, 255);
 }
 
-.c13::-ms-thumb {
+.c8::-ms-thumb {
   -webkit-appearance: none;
   margin-top: -12px;
   height: 40px;
@@ -2276,19 +2276,19 @@ exports[`Storyshots DataChannel ControlRange - Stateful PPAP 1`] = `
   box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #00A1DE,inset 0 0 0 3px rgb(0, 192, 255);
 }
 
-.c13::-webkit-slider-thumb:hover {
+.c8::-webkit-slider-thumb:hover {
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
 }
 
-.c13::-moz-range-thumb:hover {
+.c8::-moz-range-thumb:hover {
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
 }
 
-.c13::-ms-thumb:hover {
+.c8::-ms-thumb:hover {
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
@@ -2358,15 +2358,15 @@ exports[`Storyshots DataChannel ControlRange - Stateful PPAP 1`] = `
   margin-bottom: 8px;
 }
 
-.c9 {
+.c5 {
   margin-bottom: 15px;
 }
 
-.c11 {
+.c6 {
   display: inline-block;
 }
 
-.c8 {
+.c4 {
   padding: 0 13.666666666666668%;
 }
 
@@ -2408,22 +2408,22 @@ exports[`Storyshots DataChannel ControlRange - Stateful PPAP 1`] = `
     </div>
   </div>
   <div
-    className="c8"
+    className="c4"
   >
     <div
-      className="c9 c3"
+      className="c5 c3"
       color="grayBase"
     >
       Current value: 
       <p
-        className="c11 c12"
+        className="c6 c7"
         color="primary"
       >
         Pineapple
       </p>
     </div>
     <input
-      className="c13"
+      className="c8"
       kind="primary"
       max={2}
       min={0}
@@ -2439,7 +2439,7 @@ exports[`Storyshots DataChannel ControlRange - Stateful PPAP 1`] = `
 `;
 
 exports[`Storyshots DataChannel ControlRange - Stateful number 1`] = `
-.c10 {
+.c7 {
   margin: 0;
   font-size: 1rem;
   color: #00A1DE;
@@ -2451,7 +2451,7 @@ exports[`Storyshots DataChannel ControlRange - Stateful number 1`] = `
   color: #999A94;
 }
 
-.c11 {
+.c8 {
   -webkit-appearance: none;
   -moz-appearance: none;
   width: 100%;
@@ -2460,7 +2460,7 @@ exports[`Storyshots DataChannel ControlRange - Stateful number 1`] = `
   cursor: pointer;
 }
 
-.c11::-webkit-slider-runnable-track {
+.c8::-webkit-slider-runnable-track {
   -webkit-appearance: none;
   height: 16px;
   border-radius: 8px;
@@ -2468,7 +2468,7 @@ exports[`Storyshots DataChannel ControlRange - Stateful number 1`] = `
   box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.35),inset 0 0 0 2px #E5E6E6,inset 0 1px 10px 0 rgba(0,0,0,0.05);
 }
 
-.c11::-moz-range-track {
+.c8::-moz-range-track {
   -moz-appearance: none;
   height: 16px;
   border-radius: 8px;
@@ -2476,11 +2476,11 @@ exports[`Storyshots DataChannel ControlRange - Stateful number 1`] = `
   box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.35),inset 0 0 0 2px #E5E6E6,inset 0 1px 10px 0 rgba(0,0,0,0.05);
 }
 
-.c11::-moz-focus-outer {
+.c8::-moz-focus-outer {
   border: 0;
 }
 
-.c11::-ms-track {
+.c8::-ms-track {
   -webkit-appearance: none;
   height: 16px;
   border-radius: 8px;
@@ -2488,7 +2488,7 @@ exports[`Storyshots DataChannel ControlRange - Stateful number 1`] = `
   box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.35),inset 0 0 0 2px #E5E6E6,inset 0 1px 10px 0 rgba(0,0,0,0.05);
 }
 
-.c11::-webkit-slider-thumb {
+.c8::-webkit-slider-thumb {
   -webkit-appearance: none;
   margin-top: -12px;
   height: 40px;
@@ -2501,7 +2501,7 @@ exports[`Storyshots DataChannel ControlRange - Stateful number 1`] = `
   box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #00A1DE,inset 0 0 0 3px rgb(0, 192, 255);
 }
 
-.c11::-moz-range-thumb {
+.c8::-moz-range-thumb {
   -moz-appearance: none;
   height: 40px;
   width: 40px;
@@ -2513,7 +2513,7 @@ exports[`Storyshots DataChannel ControlRange - Stateful number 1`] = `
   box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #00A1DE,inset 0 0 0 3px rgb(0, 192, 255);
 }
 
-.c11::-ms-thumb {
+.c8::-ms-thumb {
   -webkit-appearance: none;
   margin-top: -12px;
   height: 40px;
@@ -2526,19 +2526,19 @@ exports[`Storyshots DataChannel ControlRange - Stateful number 1`] = `
   box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #00A1DE,inset 0 0 0 3px rgb(0, 192, 255);
 }
 
-.c11::-webkit-slider-thumb:hover {
+.c8::-webkit-slider-thumb:hover {
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
 }
 
-.c11::-moz-range-thumb:hover {
+.c8::-moz-range-thumb:hover {
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
 }
 
-.c11::-ms-thumb:hover {
+.c8::-ms-thumb:hover {
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
@@ -2608,15 +2608,15 @@ exports[`Storyshots DataChannel ControlRange - Stateful number 1`] = `
   margin-bottom: 8px;
 }
 
-.c7 {
+.c5 {
   margin-bottom: 15px;
 }
 
-.c9 {
+.c6 {
   display: inline-block;
 }
 
-.c6 {
+.c4 {
   padding: 0 0%;
 }
 
@@ -2648,22 +2648,22 @@ exports[`Storyshots DataChannel ControlRange - Stateful number 1`] = `
     </div>
   </div>
   <div
-    className="c6"
+    className="c4"
   >
     <div
-      className="c7 c3"
+      className="c5 c3"
       color="grayBase"
     >
       Current value: 
       <div
-        className="c9 c10"
+        className="c6 c7"
         color="primary"
       >
         88
       </div>
     </div>
     <input
-      className="c11"
+      className="c8"
       kind="primary"
       max={95}
       min={33}
@@ -2679,7 +2679,7 @@ exports[`Storyshots DataChannel ControlRange - Stateful number 1`] = `
 `;
 
 exports[`Storyshots DataChannel ControlRange 1`] = `
-.c17 {
+.c8 {
   margin: 0;
   font-size: 1rem;
   color: #00A1DE;
@@ -2691,7 +2691,7 @@ exports[`Storyshots DataChannel ControlRange 1`] = `
   color: #999A94;
 }
 
-.c18 {
+.c9 {
   -webkit-appearance: none;
   -moz-appearance: none;
   width: 100%;
@@ -2700,7 +2700,7 @@ exports[`Storyshots DataChannel ControlRange 1`] = `
   cursor: pointer;
 }
 
-.c18::-webkit-slider-runnable-track {
+.c9::-webkit-slider-runnable-track {
   -webkit-appearance: none;
   height: 16px;
   border-radius: 8px;
@@ -2708,7 +2708,7 @@ exports[`Storyshots DataChannel ControlRange 1`] = `
   box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.35),inset 0 0 0 2px #E5E6E6,inset 0 1px 10px 0 rgba(0,0,0,0.05);
 }
 
-.c18::-moz-range-track {
+.c9::-moz-range-track {
   -moz-appearance: none;
   height: 16px;
   border-radius: 8px;
@@ -2716,11 +2716,11 @@ exports[`Storyshots DataChannel ControlRange 1`] = `
   box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.35),inset 0 0 0 2px #E5E6E6,inset 0 1px 10px 0 rgba(0,0,0,0.05);
 }
 
-.c18::-moz-focus-outer {
+.c9::-moz-focus-outer {
   border: 0;
 }
 
-.c18::-ms-track {
+.c9::-ms-track {
   -webkit-appearance: none;
   height: 16px;
   border-radius: 8px;
@@ -2728,7 +2728,7 @@ exports[`Storyshots DataChannel ControlRange 1`] = `
   box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.35),inset 0 0 0 2px #E5E6E6,inset 0 1px 10px 0 rgba(0,0,0,0.05);
 }
 
-.c18::-webkit-slider-thumb {
+.c9::-webkit-slider-thumb {
   -webkit-appearance: none;
   margin-top: -12px;
   height: 40px;
@@ -2741,7 +2741,7 @@ exports[`Storyshots DataChannel ControlRange 1`] = `
   box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #00A1DE,inset 0 0 0 3px rgb(0, 192, 255);
 }
 
-.c18::-moz-range-thumb {
+.c9::-moz-range-thumb {
   -moz-appearance: none;
   height: 40px;
   width: 40px;
@@ -2753,7 +2753,7 @@ exports[`Storyshots DataChannel ControlRange 1`] = `
   box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #00A1DE,inset 0 0 0 3px rgb(0, 192, 255);
 }
 
-.c18::-ms-thumb {
+.c9::-ms-thumb {
   -webkit-appearance: none;
   margin-top: -12px;
   height: 40px;
@@ -2766,19 +2766,19 @@ exports[`Storyshots DataChannel ControlRange 1`] = `
   box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #00A1DE,inset 0 0 0 3px rgb(0, 192, 255);
 }
 
-.c18::-webkit-slider-thumb:hover {
+.c9::-webkit-slider-thumb:hover {
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
 }
 
-.c18::-moz-range-thumb:hover {
+.c9::-moz-range-thumb:hover {
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
 }
 
-.c18::-ms-thumb:hover {
+.c9::-ms-thumb:hover {
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
@@ -2816,21 +2816,21 @@ exports[`Storyshots DataChannel ControlRange 1`] = `
   align-items: center;
 }
 
-.c38 {
+.c10 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
 
-.c38 > *:first-child {
+.c10 > *:first-child {
   -webkit-align-items: flex-start;
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
   align-items: flex-start;
 }
 
-.c38 > *:last-child {
+.c10 > *:last-child {
   -webkit-align-items: flex-end;
   -webkit-box-align: flex-end;
   -ms-flex-align: flex-end;
@@ -2869,19 +2869,19 @@ exports[`Storyshots DataChannel ControlRange 1`] = `
   margin-bottom: 8px;
 }
 
-.c14 {
+.c6 {
   margin-bottom: 15px;
 }
 
-.c16 {
+.c7 {
   display: inline-block;
 }
 
-.c13 {
+.c5 {
   padding: 0 7%;
 }
 
-.c43 {
+.c11 {
   padding: 0 0%;
 }
 
@@ -2952,22 +2952,22 @@ exports[`Storyshots DataChannel ControlRange 1`] = `
       </div>
     </div>
     <div
-      className="c13"
+      className="c5"
     >
       <div
-        className="c14 c4"
+        className="c6 c4"
         color="grayBase"
       >
         Current value: 
         <p
-          className="c16 c17"
+          className="c7 c8"
           color="primary"
         >
           N/A
         </p>
       </div>
       <input
-        className="c18"
+        className="c9"
         kind="primary"
         max={4}
         min={0}
@@ -3038,22 +3038,22 @@ exports[`Storyshots DataChannel ControlRange 1`] = `
       </div>
     </div>
     <div
-      className="c13"
+      className="c5"
     >
       <div
-        className="c14 c4"
+        className="c6 c4"
         color="grayBase"
       >
         Current value: 
         <p
-          className="c16 c17"
+          className="c7 c8"
           color="primary"
         >
           DDDDD
         </p>
       </div>
       <input
-        className="c18"
+        className="c9"
         kind="primary"
         max={4}
         min={0}
@@ -3070,7 +3070,7 @@ exports[`Storyshots DataChannel ControlRange 1`] = `
     className="c1"
   >
     <div
-      className="c38"
+      className="c10"
     >
       <div
         className="c3"
@@ -3094,22 +3094,22 @@ exports[`Storyshots DataChannel ControlRange 1`] = `
       </div>
     </div>
     <div
-      className="c43"
+      className="c11"
     >
       <div
-        className="c14 c4"
+        className="c6 c4"
         color="grayBase"
       >
         Current value: 
         <p
-          className="c16 c17"
+          className="c7 c8"
           color="primary"
         >
           Low
         </p>
       </div>
       <input
-        className="c18"
+        className="c9"
         kind="primary"
         max={1}
         min={0}
@@ -3126,7 +3126,7 @@ exports[`Storyshots DataChannel ControlRange 1`] = `
     className="c1"
   >
     <div
-      className="c38"
+      className="c10"
     >
       <div
         className="c3"
@@ -3150,22 +3150,22 @@ exports[`Storyshots DataChannel ControlRange 1`] = `
       </div>
     </div>
     <div
-      className="c43"
+      className="c11"
     >
       <div
-        className="c14 c4"
+        className="c6 c4"
         color="grayBase"
       >
         Current value: 
         <div
-          className="c16 c17"
+          className="c7 c8"
           color="primary"
         >
           33
         </div>
       </div>
       <input
-        className="c18"
+        className="c9"
         kind="primary"
         max={100}
         min={0}
@@ -3515,11 +3515,11 @@ exports[`Storyshots DataChannel DisplayStatus 1`] = `
   transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
 }
 
-.c17 {
+.c5 {
   width: 12px;
 }
 
-.c17 > * {
+.c5 > * {
   fill: #69BE28;
   -webkit-transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
@@ -3682,7 +3682,7 @@ exports[`Storyshots DataChannel DisplayStatus 1`] = `
       </p>
       <div>
         <svg
-          className="c17"
+          className="c5"
           color="success"
           viewBox="0 0 20 20"
         >
@@ -3888,7 +3888,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
   color: currentColor;
 }
 
-.c29 {
+.c24 {
   margin: 0;
   font-weight: normal;
   font-size: 2.46rem;
@@ -3917,7 +3917,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
   color: currentColor;
 }
 
-.c203 {
+.c43 {
   margin: 0;
   font-size: 1rem;
   color: #00A1DE;
@@ -3969,7 +3969,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
   overflow: hidden;
 }
 
-.c159 {
+.c32 {
   position: relative;
   height: 50px;
   width: 82px;
@@ -3984,7 +3984,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
   transform-origin: 0 0;
 }
 
-.c159::after {
+.c32::after {
   content: " ";
   position: absolute;
   width: 42px;
@@ -4092,7 +4092,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
   justify-content: flex-end;
 }
 
-.c87 {
+.c28 {
   box-sizing: border-box;
   width: 100%;
   border-width: 1px;
@@ -4105,36 +4105,36 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
   font-size: 1rem;
 }
 
-.c87:focus {
+.c28:focus {
   border-color: #00A1DE;
   box-shadow: 0 0 3px 0 rgba(0, 161, 222, 0.5);
 }
 
-.c87::-webkit-input-placeholder {
+.c28::-webkit-input-placeholder {
   opacity: 1;
   color: #D1D2D3;
 }
 
-.c87::-moz-placeholder {
+.c28::-moz-placeholder {
   opacity: 1;
   color: #D1D2D3;
 }
 
-.c87:-ms-input-placeholder {
+.c28:-ms-input-placeholder {
   opacity: 1;
   color: #D1D2D3;
 }
 
-.c87::placeholder {
+.c28::placeholder {
   opacity: 1;
   color: #D1D2D3;
 }
 
-.c87:disabled {
+.c28:disabled {
   background-color: #FFFFFF;
 }
 
-.c85 {
+.c26 {
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -4148,7 +4148,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
   align-self: stretch;
 }
 
-.c88 {
+.c29 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4170,7 +4170,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
   flex-shrink: 0;
 }
 
-.c86 {
+.c27 {
   height: 100%;
   min-height: 4em;
   -webkit-flex-grow: 1;
@@ -4178,7 +4178,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
   flex-grow: 1;
 }
 
-.c204 {
+.c44 {
   -webkit-appearance: none;
   -moz-appearance: none;
   width: 100%;
@@ -4187,7 +4187,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
   cursor: pointer;
 }
 
-.c204::-webkit-slider-runnable-track {
+.c44::-webkit-slider-runnable-track {
   -webkit-appearance: none;
   height: 16px;
   border-radius: 8px;
@@ -4195,7 +4195,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
   box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.35),inset 0 0 0 2px #E5E6E6,inset 0 1px 10px 0 rgba(0,0,0,0.05);
 }
 
-.c204::-moz-range-track {
+.c44::-moz-range-track {
   -moz-appearance: none;
   height: 16px;
   border-radius: 8px;
@@ -4203,11 +4203,11 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
   box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.35),inset 0 0 0 2px #E5E6E6,inset 0 1px 10px 0 rgba(0,0,0,0.05);
 }
 
-.c204::-moz-focus-outer {
+.c44::-moz-focus-outer {
   border: 0;
 }
 
-.c204::-ms-track {
+.c44::-ms-track {
   -webkit-appearance: none;
   height: 16px;
   border-radius: 8px;
@@ -4215,7 +4215,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
   box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.35),inset 0 0 0 2px #E5E6E6,inset 0 1px 10px 0 rgba(0,0,0,0.05);
 }
 
-.c204::-webkit-slider-thumb {
+.c44::-webkit-slider-thumb {
   -webkit-appearance: none;
   margin-top: -12px;
   height: 40px;
@@ -4228,7 +4228,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
   box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #00A1DE,inset 0 0 0 3px rgb(0, 192, 255);
 }
 
-.c204::-moz-range-thumb {
+.c44::-moz-range-thumb {
   -moz-appearance: none;
   height: 40px;
   width: 40px;
@@ -4240,7 +4240,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
   box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #00A1DE,inset 0 0 0 3px rgb(0, 192, 255);
 }
 
-.c204::-ms-thumb {
+.c44::-ms-thumb {
   -webkit-appearance: none;
   margin-top: -12px;
   height: 40px;
@@ -4253,25 +4253,25 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
   box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #00A1DE,inset 0 0 0 3px rgb(0, 192, 255);
 }
 
-.c204::-webkit-slider-thumb:hover {
+.c44::-webkit-slider-thumb:hover {
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
 }
 
-.c204::-moz-range-thumb:hover {
+.c44::-moz-range-thumb:hover {
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
 }
 
-.c204::-ms-thumb:hover {
+.c44::-ms-thumb:hover {
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
 }
 
-.c193 {
+.c37 {
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -4282,28 +4282,28 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
   flex-direction: column-reverse;
 }
 
-.c194 {
+.c38 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
 
-.c194 > *:first-child {
+.c38 > *:first-child {
   -webkit-align-items: flex-start;
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
   align-items: flex-start;
 }
 
-.c194 > *:last-child {
+.c38 > *:last-child {
   -webkit-align-items: flex-end;
   -webkit-box-align: flex-end;
   -ms-flex-align: flex-end;
   align-items: flex-end;
 }
 
-.c195 {
+.c39 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4325,7 +4325,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
   overflow: hidden;
 }
 
-.c195::before {
+.c39::before {
   content: "";
   border-right-width: 1px;
   border-right-style: solid;
@@ -4335,23 +4335,23 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
   margin-bottom: 8px;
 }
 
-.c200 {
+.c41 {
   margin-bottom: 15px;
 }
 
-.c202 {
+.c42 {
   display: inline-block;
 }
 
-.c199 {
+.c40 {
   padding: 0 0%;
 }
 
-.c338 {
+.c48 {
   margin-bottom: 10px;
 }
 
-.c340 {
+.c49 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4359,31 +4359,31 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
   margin-top: 5px;
 }
 
-.c341 {
+.c50 {
   margin-right: 10px;
 }
 
-.c179 {
+.c36 {
   width: 12px;
 }
 
-.c179 > * {
+.c36 > * {
   fill: #D1D2D3;
   -webkit-transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
 }
 
-.c176 {
+.c35 {
   width: 12px;
 }
 
-.c176 > * {
+.c35 > * {
   fill: #69BE28;
   -webkit-transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
 }
 
-.c173 {
+.c33 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4395,7 +4395,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
   width: 100%;
 }
 
-.c174 {
+.c34 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4417,11 +4417,11 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
   overflow: hidden;
 }
 
-.c174 > *:first-child {
+.c34 > *:first-child {
   margin-bottom: 20px;
 }
 
-.c27 {
+.c22 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4436,18 +4436,18 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
   width: 100%;
 }
 
-.c28 {
+.c23 {
   text-align: center;
   overflow: hidden;
   text-overflow: ellipsis;
   width: 100%;
 }
 
-.c30 {
+.c25 {
   margin-top: 10px;
 }
 
-.c317 {
+.c45 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4462,15 +4462,15 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
   width: 100%;
 }
 
-.c317 > div {
+.c45 > div {
   width: 100%;
 }
 
-.c317 > div + div {
+.c45 > div + div {
   margin-top: 10px;
 }
 
-.c319 {
+.c46 {
   text-align: center;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -4478,7 +4478,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
   margin-top: 5px;
 }
 
-.c106 {
+.c30 {
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -4492,7 +4492,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
   align-self: stretch;
 }
 
-.c107 {
+.c31 {
   height: 100%;
   min-height: 4em;
   -webkit-flex-grow: 1;
@@ -4581,7 +4581,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
   color: #999A94;
 }
 
-.c337 {
+.c47 {
   width: 100%;
 }
 
@@ -4727,16 +4727,16 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
       className="c4"
     >
       <div
-        className="c27"
+        className="c22"
       >
         <h1
-          className="c28 c29"
+          className="c23 c24"
           color="primary"
         >
           0
         </h1>
         <p
-          className="c30 c7"
+          className="c25 c7"
           color="grayBase"
         >
           ampere
@@ -4881,16 +4881,16 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
       className="c4"
     >
       <div
-        className="c27"
+        className="c22"
       >
         <h1
-          className="c28 c29"
+          className="c23 c24"
           color="primary"
         >
           N/A
         </h1>
         <p
-          className="c30 c7"
+          className="c25 c7"
           color="grayBase"
         >
           ampere
@@ -4941,17 +4941,17 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
       className="c4"
     >
       <div
-        className="c85"
+        className="c26"
       >
         <textarea
-          className="c86 c87"
+          className="c27 c28"
           kind="primary"
           onChange={[Function]}
           placeholder="String only"
           value="Any string type value."
         />
         <div
-          className="c88"
+          className="c29"
         >
           <div
             className="c10"
@@ -5028,10 +5028,10 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
       className="c4"
     >
       <div
-        className="c106"
+        className="c30"
       >
         <textarea
-          className="c107 c87"
+          className="c31 c28"
           disabled={true}
           kind="primary"
           placeholder="String only"
@@ -5083,17 +5083,17 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
       className="c4"
     >
       <div
-        className="c85"
+        className="c26"
       >
         <textarea
-          className="c86 c87"
+          className="c27 c28"
           kind="primary"
           onChange={[Function]}
           placeholder="Hex only"
           value="ABF123"
         />
         <div
-          className="c88"
+          className="c29"
         >
           <div
             className="c10"
@@ -5170,10 +5170,10 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
       className="c4"
     >
       <div
-        className="c106"
+        className="c30"
       >
         <textarea
-          className="c107 c87"
+          className="c31 c28"
           disabled={true}
           kind="primary"
           placeholder="Hex only"
@@ -5226,7 +5226,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
     >
       <div
         checked={true}
-        className="c159"
+        className="c32"
         kind="success"
         onClick={[Function]}
       />
@@ -5275,10 +5275,10 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
       className="c4"
     >
       <div
-        className="c173"
+        className="c33"
       >
         <div
-          className="c174"
+          className="c34"
         >
           <p
             className="c7"
@@ -5288,7 +5288,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
           </p>
           <div>
             <svg
-              className="c176"
+              className="c35"
               color="success"
               viewBox="0 0 20 20"
             >
@@ -5301,7 +5301,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
           </div>
         </div>
         <div
-          className="c174"
+          className="c34"
         >
           <p
             className="c7"
@@ -5311,7 +5311,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
           </p>
           <div>
             <svg
-              className="c179"
+              className="c36"
               color="grayDark"
               viewBox="0 0 20 20"
             >
@@ -5369,13 +5369,13 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
       className="c4"
     >
       <div
-        className="c193"
+        className="c37"
       >
         <div
-          className="c194"
+          className="c38"
         >
           <div
-            className="c195"
+            className="c39"
           >
             <p
               className="c7"
@@ -5385,7 +5385,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
             </p>
           </div>
           <div
-            className="c195"
+            className="c39"
           >
             <p
               className="c7"
@@ -5396,22 +5396,22 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
           </div>
         </div>
         <div
-          className="c199"
+          className="c40"
         >
           <div
-            className="c200 c7"
+            className="c41 c7"
             color="grayBase"
           >
             Current value: 
             <p
-              className="c202 c203"
+              className="c42 c43"
               color="primary"
             >
               v2
             </p>
           </div>
           <input
-            className="c204"
+            className="c44"
             kind="primary"
             max={1}
             min={0}
@@ -5469,10 +5469,10 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
       className="c4"
     >
       <div
-        className="c173"
+        className="c33"
       >
         <div
-          className="c174"
+          className="c34"
         >
           <p
             className="c7"
@@ -5482,7 +5482,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
           </p>
           <div>
             <svg
-              className="c179"
+              className="c36"
               color="grayDark"
               viewBox="0 0 20 20"
             >
@@ -5495,7 +5495,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
           </div>
         </div>
         <div
-          className="c174"
+          className="c34"
         >
           <p
             className="c7"
@@ -5505,7 +5505,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
           </p>
           <div>
             <svg
-              className="c176"
+              className="c35"
               color="success"
               viewBox="0 0 20 20"
             >
@@ -5518,7 +5518,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
           </div>
         </div>
         <div
-          className="c174"
+          className="c34"
         >
           <p
             className="c7"
@@ -5528,7 +5528,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
           </p>
           <div>
             <svg
-              className="c179"
+              className="c36"
               color="grayDark"
               viewBox="0 0 20 20"
             >
@@ -5541,7 +5541,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
           </div>
         </div>
         <div
-          className="c174"
+          className="c34"
         >
           <p
             className="c7"
@@ -5551,7 +5551,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
           </p>
           <div>
             <svg
-              className="c179"
+              className="c36"
               color="grayDark"
               viewBox="0 0 20 20"
             >
@@ -5564,7 +5564,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
           </div>
         </div>
         <div
-          className="c174"
+          className="c34"
         >
           <p
             className="c7"
@@ -5574,7 +5574,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
           </p>
           <div>
             <svg
-              className="c179"
+              className="c36"
               color="grayDark"
               viewBox="0 0 20 20"
             >
@@ -5632,13 +5632,13 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
       className="c4"
     >
       <div
-        className="c193"
+        className="c37"
       >
         <div
-          className="c194"
+          className="c38"
         >
           <div
-            className="c195"
+            className="c39"
           >
             <p
               className="c7"
@@ -5648,7 +5648,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
             </p>
           </div>
           <div
-            className="c195"
+            className="c39"
           >
             <p
               className="c7"
@@ -5659,22 +5659,22 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
           </div>
         </div>
         <div
-          className="c199"
+          className="c40"
         >
           <div
-            className="c200 c7"
+            className="c41 c7"
             color="grayBase"
           >
             Current value: 
             <p
-              className="c202 c203"
+              className="c42 c43"
               color="primary"
             >
               High
             </p>
           </div>
           <input
-            className="c204"
+            className="c44"
             kind="primary"
             max={1}
             min={0}
@@ -5732,10 +5732,10 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
       className="c4"
     >
       <div
-        className="c173"
+        className="c33"
       >
         <div
-          className="c174"
+          className="c34"
         >
           <p
             className="c7"
@@ -5745,7 +5745,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
           </p>
           <div>
             <svg
-              className="c176"
+              className="c35"
               color="success"
               viewBox="0 0 20 20"
             >
@@ -5758,7 +5758,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
           </div>
         </div>
         <div
-          className="c174"
+          className="c34"
         >
           <p
             className="c7"
@@ -5768,7 +5768,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
           </p>
           <div>
             <svg
-              className="c179"
+              className="c36"
               color="grayDark"
               viewBox="0 0 20 20"
             >
@@ -5826,13 +5826,13 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
       className="c4"
     >
       <div
-        className="c193"
+        className="c37"
       >
         <div
-          className="c194"
+          className="c38"
         >
           <div
-            className="c195"
+            className="c39"
           >
             <div
               className="c7"
@@ -5842,7 +5842,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
             </div>
           </div>
           <div
-            className="c195"
+            className="c39"
           >
             <div
               className="c7"
@@ -5853,22 +5853,22 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
           </div>
         </div>
         <div
-          className="c199"
+          className="c40"
         >
           <div
-            className="c200 c7"
+            className="c41 c7"
             color="grayBase"
           >
             Current value: 
             <div
-              className="c202 c203"
+              className="c42 c43"
               color="primary"
             >
               23
             </div>
           </div>
           <input
-            className="c204"
+            className="c44"
             kind="primary"
             max={100}
             min={1}
@@ -5926,7 +5926,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
       className="c4"
     >
       <div
-        className="c317"
+        className="c45"
       >
         <div>
           <p
@@ -5936,7 +5936,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
             Value
           </p>
           <h1
-            className="c319 c29"
+            className="c46 c24"
             color="primary"
           >
             value pwm
@@ -5950,7 +5950,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
             Period
           </p>
           <h1
-            className="c319 c29"
+            className="c46 c24"
             color="primary"
           >
             20
@@ -6002,10 +6002,10 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
       className="c4"
     >
       <div
-        className="c337"
+        className="c47"
       >
         <div
-          className="c338"
+          className="c48"
         >
           <label
             htmlFor="input"
@@ -6018,10 +6018,10 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
             </p>
           </label>
           <div
-            className="c340"
+            className="c49"
           >
             <input
-              className="c341 c8"
+              className="c50 c8"
               kind="primary"
               onChange={[Function]}
               placeholder="Integer only"
@@ -6037,13 +6037,13 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
           </div>
         </div>
         <div
-          className="c193"
+          className="c37"
         >
           <div
-            className="c194"
+            className="c38"
           >
             <div
-              className="c195"
+              className="c39"
             >
               <div
                 className="c7"
@@ -6053,7 +6053,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
               </div>
             </div>
             <div
-              className="c195"
+              className="c39"
             >
               <div
                 className="c7"
@@ -6064,22 +6064,22 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
             </div>
           </div>
           <div
-            className="c199"
+            className="c40"
           >
             <div
-              className="c200 c7"
+              className="c41 c7"
               color="grayBase"
             >
               Current value: 
               <div
-                className="c202 c203"
+                className="c42 c43"
                 color="primary"
               >
                 0
               </div>
             </div>
             <input
-              className="c204"
+              className="c44"
               kind="primary"
               max={100}
               min={0}
@@ -7187,7 +7187,7 @@ exports[`Storyshots DatetimePicker API 1`] = `
   flex-grow: 1;
 }
 
-.c133 {
+.c4 {
   position: absolute;
   height: 40px;
   left: 0;
@@ -7198,7 +7198,7 @@ exports[`Storyshots DatetimePicker API 1`] = `
   pointer-events: none;
 }
 
-.c134 {
+.c5 {
   position: absolute;
   height: 100%;
   left: 0;
@@ -7956,10 +7956,10 @@ exports[`Storyshots DatetimePicker API 1`] = `
     </div>
   </MockReactHammerJS>
   <div
-    className="c133"
+    className="c4"
   />
   <div
-    className="c134"
+    className="c5"
   />
 </div>
 `;
@@ -8091,28 +8091,28 @@ exports[`Storyshots Heading With color props 1`] = `
   color: #FFFFFF;
 }
 
-.c6 {
+.c5 {
   margin: 0;
   font-weight: normal;
   font-size: 1.69rem;
   color: #00A1DE;
 }
 
-.c7 {
+.c6 {
   margin: 0;
   font-weight: normal;
   font-size: 1.69rem;
   color: #69BE28;
 }
 
-.c8 {
+.c7 {
   margin: 0;
   font-weight: normal;
   font-size: 1.69rem;
   color: #F5364E;
 }
 
-.c9 {
+.c8 {
   margin: 0;
   font-weight: normal;
   font-size: 1.69rem;
@@ -8163,28 +8163,28 @@ exports[`Storyshots Heading With color props 1`] = `
     default
   </h2>
   <h2
-    className="c6"
+    className="c5"
     color="primary"
   >
     Level 2 
     primary
   </h2>
   <h2
-    className="c7"
+    className="c6"
     color="success"
   >
     Level 2 
     success
   </h2>
   <h2
-    className="c8"
+    className="c7"
     color="error"
   >
     Level 2 
     error
   </h2>
   <h2
-    className="c9"
+    className="c8"
     color="warning"
   >
     Level 2 
@@ -8987,7 +8987,7 @@ exports[`Storyshots Input With type props 1`] = `
 `;
 
 exports[`Storyshots InputGroup API 1`] = `
-.c5 {
+.c4 {
   border-width: 1px;
   border-style: solid;
   outline: none;
@@ -9007,15 +9007,15 @@ exports[`Storyshots InputGroup API 1`] = `
   border-color: rgb(0, 130, 179);
 }
 
-.c5:hover {
+.c4:hover {
   background-color: rgb(0, 151, 208);
 }
 
-.c5:active {
+.c4:active {
   background-color: rgb(0, 144, 198);
 }
 
-.c6 {
+.c5 {
   border-width: 1px;
   border-style: solid;
   outline: none;
@@ -9035,15 +9035,15 @@ exports[`Storyshots InputGroup API 1`] = `
   border-color: rgb(202, 202, 202);
 }
 
-.c6:hover {
+.c5:hover {
   background-color: rgb(234, 234, 234);
 }
 
-.c6:active {
+.c5:active {
   background-color: rgb(223, 223, 223);
 }
 
-.c7 {
+.c6 {
   border-width: 1px;
   border-style: solid;
   outline: none;
@@ -9063,15 +9063,15 @@ exports[`Storyshots InputGroup API 1`] = `
   border-color: rgb(196, 124, 24);
 }
 
-.c7:hover {
+.c6:hover {
   background-color: rgb(228, 144, 28);
 }
 
-.c7:active {
+.c6:active {
   background-color: rgb(217, 137, 27);
 }
 
-.c21 {
+.c8 {
   border-width: 1px;
   border-style: solid;
   outline: none;
@@ -9091,11 +9091,11 @@ exports[`Storyshots InputGroup API 1`] = `
   border-color: rgb(0, 130, 179);
 }
 
-.c21:hover {
+.c8:hover {
   background-color: rgb(0, 151, 208);
 }
 
-.c21:active {
+.c8:active {
   background-color: rgb(0, 144, 198);
 }
 
@@ -9155,7 +9155,7 @@ exports[`Storyshots InputGroup API 1`] = `
   background-color: rgb(223, 223, 223);
 }
 
-.c10 {
+.c7 {
   box-sizing: border-box;
   width: 100%;
   border-width: 1px;
@@ -9171,27 +9171,27 @@ exports[`Storyshots InputGroup API 1`] = `
   box-shadow: none;
 }
 
-.c10:focus {
+.c7:focus {
   border-color: #00A1DE;
   box-shadow: 0 0 3px 0 rgba(0, 161, 222, 0.5);
 }
 
-.c10::-webkit-input-placeholder {
+.c7::-webkit-input-placeholder {
   opacity: 1;
   color: #D1D2D3;
 }
 
-.c10::-moz-placeholder {
+.c7::-moz-placeholder {
   opacity: 1;
   color: #D1D2D3;
 }
 
-.c10:-ms-input-placeholder {
+.c7:-ms-input-placeholder {
   opacity: 1;
   color: #D1D2D3;
 }
 
-.c10::placeholder {
+.c7::placeholder {
   opacity: 1;
   color: #D1D2D3;
 }
@@ -9251,17 +9251,17 @@ exports[`Storyshots InputGroup API 1`] = `
     className="c1"
   >
     <button
-      className="c5"
+      className="c4"
     >
       Button 1
     </button>
     <button
-      className="c6"
+      className="c5"
     >
       Button Two
     </button>
     <button
-      className="c7"
+      className="c6"
     >
       Button Three
     </button>
@@ -9270,12 +9270,12 @@ exports[`Storyshots InputGroup API 1`] = `
     className="c1"
   >
     <button
-      className="c5"
+      className="c4"
     >
       大於
     </button>
     <input
-      className="c10"
+      className="c7"
       kind="primary"
       placeholder="預設值：20"
     />
@@ -9284,12 +9284,12 @@ exports[`Storyshots InputGroup API 1`] = `
     className="c1"
   >
     <input
-      className="c10"
+      className="c7"
       kind="primary"
       placeholder="Input 1"
     />
     <button
-      className="c5"
+      className="c4"
     >
       Button 1
     </button>
@@ -9298,17 +9298,17 @@ exports[`Storyshots InputGroup API 1`] = `
     className="c1"
   >
     <button
-      className="c5"
+      className="c4"
     >
       Button 1
     </button>
     <input
-      className="c10"
+      className="c7"
       kind="primary"
       placeholder="Input 1"
     />
     <button
-      className="c5"
+      className="c4"
     >
       Button 2
     </button>
@@ -9317,22 +9317,22 @@ exports[`Storyshots InputGroup API 1`] = `
     className="c1"
   >
     <button
-      className="c5"
+      className="c4"
     >
       之間
     </button>
     <input
-      className="c10"
+      className="c7"
       kind="primary"
       placeholder="預設值：0"
     />
     <button
-      className="c21"
+      className="c8"
     >
       和
     </button>
     <input
-      className="c10"
+      className="c7"
       kind="primary"
       placeholder="預設值：100"
     />
@@ -10272,7 +10272,7 @@ exports[`Storyshots LandingHeader With Nav and NavItem 1`] = `
   fill: currentColor;
 }
 
-.c5 {
+.c4 {
   height: 50px;
   padding: 0 15px;
   display: -webkit-box;
@@ -10291,15 +10291,15 @@ exports[`Storyshots LandingHeader With Nav and NavItem 1`] = `
   cursor: pointer;
 }
 
-.c5:hover {
+.c4:hover {
   color: #353630;
 }
 
-.c5 path {
+.c4 path {
   fill: currentColor;
 }
 
-.c6 {
+.c5 {
   height: 50px;
   padding: 0 15px;
   display: -webkit-box;
@@ -10318,11 +10318,11 @@ exports[`Storyshots LandingHeader With Nav and NavItem 1`] = `
   cursor: default;
 }
 
-.c6:hover {
+.c5:hover {
   color: #999A94;
 }
 
-.c6 path {
+.c5 path {
   fill: currentColor;
 }
 
@@ -10357,12 +10357,12 @@ exports[`Storyshots LandingHeader With Nav and NavItem 1`] = `
         Nav Item 1
       </div>
       <div
-        className="c5"
+        className="c4"
       >
         Nav Item 2 (active)
       </div>
       <div
-        className="c6"
+        className="c5"
       >
         Nav Item 3 (disabled)
       </div>
@@ -10573,18 +10573,18 @@ exports[`Storyshots Menu API for MenuItem 1`] = `
 `;
 
 exports[`Storyshots Menu Fixed width 1`] = `
-.c6 {
+.c4 {
   margin: 0;
   font-weight: normal;
   font-size: 2.46rem;
   color: currentColor;
 }
 
-.c14 {
+.c8 {
   font-weight: bold;
 }
 
-.c12 {
+.c7 {
   color: #00A1DE;
   -webkit-transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
@@ -10592,21 +10592,21 @@ exports[`Storyshots Menu Fixed width 1`] = `
   text-decoration: none;
 }
 
-.c12:hover {
+.c7:hover {
   color: rgb(0, 151, 208);
 }
 
-.c12:active {
+.c7:active {
   color: rgb(0, 144, 198);
 }
 
-.c8 {
+.c5 {
   margin: 0;
   font-size: 1rem;
   color: currentColor;
 }
 
-.c10 {
+.c6 {
   margin: 0;
   font-size: 1rem;
   color: #F5364E;
@@ -10695,7 +10695,7 @@ exports[`Storyshots Menu Fixed width 1`] = `
     onClick={[Function]}
   >
     <h1
-      className="c6"
+      className="c4"
     >
       MenuItem Heading 1
     </h1>
@@ -10705,7 +10705,7 @@ exports[`Storyshots Menu Fixed width 1`] = `
     onClick={[Function]}
   >
     <p
-      className="c8"
+      className="c5"
     >
       MenuItem P
     </p>
@@ -10715,7 +10715,7 @@ exports[`Storyshots Menu Fixed width 1`] = `
     onClick={[Function]}
   >
     <p
-      className="c10"
+      className="c6"
       color="error"
     >
       MenuItem P error
@@ -10726,7 +10726,7 @@ exports[`Storyshots Menu Fixed width 1`] = `
     onClick={[Function]}
   >
     <a
-      className="c12"
+      className="c7"
       color="primary"
     >
       MenuItem A
@@ -10737,7 +10737,7 @@ exports[`Storyshots Menu Fixed width 1`] = `
     onClick={[Function]}
   >
     <b
-      className="c14"
+      className="c8"
     >
       MenuItem B
     </b>
@@ -11825,7 +11825,7 @@ exports[`Storyshots P Nested children with div 1`] = `
 `;
 
 exports[`Storyshots P With color props 1`] = `
-.c6 {
+.c5 {
   margin: 0;
   font-size: 1rem;
   color: #00A1DE;
@@ -11837,7 +11837,7 @@ exports[`Storyshots P With color props 1`] = `
   color: #999A94;
 }
 
-.c8 {
+.c7 {
   margin: 0;
   font-size: 1rem;
   color: #F5364E;
@@ -11867,13 +11867,13 @@ exports[`Storyshots P With color props 1`] = `
   color: #FFFFFF;
 }
 
-.c7 {
+.c6 {
   margin: 0;
   font-size: 1rem;
   color: #69BE28;
 }
 
-.c9 {
+.c8 {
   margin: 0;
   font-size: 1rem;
   color: #F39A1E;
@@ -11923,28 +11923,28 @@ exports[`Storyshots P With color props 1`] = `
     default
   </div>
   <div
-    className="c6"
+    className="c5"
     color="primary"
   >
     Paragraph 
     primary
   </div>
   <div
-    className="c7"
+    className="c6"
     color="success"
   >
     Paragraph 
     success
   </div>
   <div
-    className="c8"
+    className="c7"
     color="error"
   >
     Paragraph 
     error
   </div>
   <div
-    className="c9"
+    className="c8"
     color="warning"
   >
     Paragraph 
@@ -12052,7 +12052,7 @@ exports[`Storyshots Picker API 1`] = `
   flex-grow: 1;
 }
 
-.c9 {
+.c4 {
   position: absolute;
   height: 40px;
   left: 0;
@@ -12063,7 +12063,7 @@ exports[`Storyshots Picker API 1`] = `
   pointer-events: none;
 }
 
-.c10 {
+.c5 {
   position: absolute;
   height: 100%;
   left: 0;
@@ -12151,10 +12151,10 @@ exports[`Storyshots Picker API 1`] = `
     </div>
   </MockReactHammerJS>
   <div
-    className="c9"
+    className="c4"
   />
   <div
-    className="c10"
+    className="c5"
   />
 </div>
 `;
@@ -12216,7 +12216,7 @@ exports[`Storyshots PullToRefresh API 1`] = `
   color: #999A94;
 }
 
-.c8 {
+.c7 {
   margin: 0;
   font-weight: normal;
   font-size: 1.38rem;
@@ -12327,7 +12327,7 @@ exports[`Storyshots PullToRefresh API 1`] = `
           Pull me down
         </h1>
         <h3
-          className="c5 c8"
+          className="c5 c7"
           color="white"
         >
           (API will respond after 3 seconds.)
@@ -13069,11 +13069,11 @@ exports[`Storyshots StatusLight With color props 1`] = `
   transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
 }
 
-.c7 {
+.c6 {
   width: 12px;
 }
 
-.c7 > * {
+.c6 > * {
   fill: #69BE28;
   -webkit-transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
@@ -13119,12 +13119,22 @@ exports[`Storyshots StatusLight With color props 1`] = `
   transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
 }
 
-.c6 {
+.c5 {
   width: 12px;
 }
 
-.c6 > * {
+.c5 > * {
   fill: #00A1DE;
+  -webkit-transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+}
+
+.c7 {
+  width: 12px;
+}
+
+.c7 > * {
+  fill: #F5364E;
   -webkit-transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
 }
@@ -13134,16 +13144,6 @@ exports[`Storyshots StatusLight With color props 1`] = `
 }
 
 .c8 > * {
-  fill: #F5364E;
-  -webkit-transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
-  transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
-}
-
-.c9 {
-  width: 12px;
-}
-
-.c9 > * {
   fill: #F39A1E;
   -webkit-transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
@@ -13236,7 +13236,7 @@ exports[`Storyshots StatusLight With color props 1`] = `
   </div>
   <div>
     <svg
-      className="c6"
+      className="c5"
       color="primary"
       viewBox="0 0 20 20"
     >
@@ -13250,7 +13250,7 @@ exports[`Storyshots StatusLight With color props 1`] = `
   </div>
   <div>
     <svg
-      className="c7"
+      className="c6"
       color="success"
       viewBox="0 0 20 20"
     >
@@ -13264,7 +13264,7 @@ exports[`Storyshots StatusLight With color props 1`] = `
   </div>
   <div>
     <svg
-      className="c8"
+      className="c7"
       color="error"
       viewBox="0 0 20 20"
     >
@@ -13278,7 +13278,7 @@ exports[`Storyshots StatusLight With color props 1`] = `
   </div>
   <div>
     <svg
-      className="c9"
+      className="c8"
       color="warning"
       viewBox="0 0 20 20"
     >
@@ -14392,22 +14392,22 @@ exports[`Storyshots Toast With kind props 1`] = `
   background-color: rgba(255,255,255,0.9);
 }
 
-.c9 {
+.c7 {
   border: 1px solid #69BE28;
   background-color: rgba(255,255,255,0.9);
 }
 
-.c13 {
+.c9 {
   border: 1px solid #F5364E;
   background-color: rgba(255,255,255,0.9);
 }
 
-.c17 {
+.c11 {
   border: 1px solid #F39A1E;
   background-color: rgba(255,255,255,0.9);
 }
 
-.c7 {
+.c6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -14435,7 +14435,7 @@ exports[`Storyshots Toast With kind props 1`] = `
   background-color: rgba(250, 250, 250, 0.1);
 }
 
-.c11 {
+.c8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -14449,7 +14449,7 @@ exports[`Storyshots Toast With kind props 1`] = `
   background-color: rgba(105, 190, 40, 0.1);
 }
 
-.c15 {
+.c10 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -14463,7 +14463,7 @@ exports[`Storyshots Toast With kind props 1`] = `
   background-color: rgba(245, 54, 78, 0.1);
 }
 
-.c19 {
+.c12 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -14501,7 +14501,7 @@ exports[`Storyshots Toast With kind props 1`] = `
     kind="primary"
   >
     <div
-      className="c7 c4"
+      className="c6 c4"
       kind="primary"
     >
       primary
@@ -14509,11 +14509,11 @@ exports[`Storyshots Toast With kind props 1`] = `
     </div>
   </div>
   <div
-    className="c9 c2"
+    className="c7 c2"
     kind="success"
   >
     <div
-      className="c11 c4"
+      className="c8 c4"
       kind="success"
     >
       success
@@ -14521,11 +14521,11 @@ exports[`Storyshots Toast With kind props 1`] = `
     </div>
   </div>
   <div
-    className="c13 c2"
+    className="c9 c2"
     kind="error"
   >
     <div
-      className="c15 c4"
+      className="c10 c4"
       kind="error"
     >
       error
@@ -14533,11 +14533,11 @@ exports[`Storyshots Toast With kind props 1`] = `
     </div>
   </div>
   <div
-    className="c17 c2"
+    className="c11 c2"
     kind="warning"
   >
     <div
-      className="c19 c4"
+      className="c12 c4"
       kind="warning"
     >
       warning

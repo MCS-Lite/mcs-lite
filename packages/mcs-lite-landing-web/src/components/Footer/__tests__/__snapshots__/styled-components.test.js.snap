@@ -2,7 +2,7 @@
 
 exports[`should render components correctly 1`] = `
 Array [
-  .c4 {
+  .c2 {
   display: block;
   box-sizing: border-box;
   padding: 20px;
@@ -18,14 +18,14 @@ Array [
   padding-bottom: 10px;
 }
 
-.c8 {
+.c4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
 
-.c8 a {
+.c4 a {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -40,17 +40,17 @@ Array [
   justify-content: space-between;
 }
 
-.c8 a + a {
+.c4 a + a {
   margin-left: 20px;
 }
 
-.c8 img {
+.c4 img {
   height: 32px;
   width: 32px;
   color: #FFFFFF;
 }
 
-.c9 {
+.c5 {
   height: 32px;
   width: 32px;
   display: -webkit-box;
@@ -72,7 +72,7 @@ Array [
   color: transparent;
 }
 
-.c10 {
+.c6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -87,12 +87,12 @@ Array [
   flex-direction: column;
 }
 
-.c10 .c7 {
+.c6 .c3 {
   margin-bottom: 5px;
 }
 
 @media (min-width: 768px) {
-  .c10 {
+  .c6 {
     -webkit-box-pack: space-between;
     -webkit-justify-content: space-between;
     -ms-flex-pack: space-between;
@@ -102,7 +102,7 @@ Array [
     flex-direction: row-reverse;
   }
 
-  .c10 .c7 {
+  .c6 .c3 {
     margin-bottom: 0;
   }
 }
@@ -135,11 +135,11 @@ Array [
                             "sm": 768,
                           }
                     }
-                    className="c1 c4"
+                    className="c1 c2"
                     divisions={12}
                 >
                     <div
-                        className="c1 c4"
+                        className="c1 c2"
                     />
                 </ColumnContainer>
             </Styled(ColumnContainer)>
@@ -147,12 +147,12 @@ Array [
     </Styled(Breakpoints)>
     <styled.div>
         <div
-            className="c7 c8"
+            className="c3 c4"
         />
     </styled.div>
     <styled.div>
         <div
-            className="c9"
+            className="c5"
         />
     </styled.div>
     <Breakpoints>
@@ -166,7 +166,7 @@ Array [
             }
         >
             <div
-                className="c10"
+                className="c6"
             />
         </styled.div>
     </Breakpoints>
