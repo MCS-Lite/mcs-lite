@@ -2,25 +2,25 @@
 
 exports[`should render components correctly 1`] = `
 Array [
-  .c3 {
+  .c1 {
   display: block;
   box-sizing: border-box;
   padding: 20px;
   width: 100%;
 }
 
-.c12 {
+.c6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
 
-.c12 > *:first-child {
+.c6 > *:first-child {
   padding-left: 0;
 }
 
-.c12 > *:last-child {
+.c6 > *:last-child {
   padding-right: 0;
 }
 
@@ -37,30 +37,30 @@ Array [
   justify-content: space-between;
 }
 
-.c6 {
+.c2 {
   visibility: hidden;
   display: none;
 }
 
-.c7 {
+.c3 {
   text-decoration: none;
 }
 
-.c9 {
+.c4 {
   height: 28px;
   width: auto;
 }
 
-.c10 {
+.c5 {
   display: none;
 }
 
-.c13 .sc-EHOje {
+.c7 .sc-EHOje {
   padding-right: 0;
 }
 
 @media (min-width: 768px) {
-  .c10 {
+  .c5 {
     display: inherit;
   }
 }
@@ -88,11 +88,11 @@ Array [
                             "sm": 768,
                           }
                     }
-                    className="c0 c3"
+                    className="c0 c1"
                     divisions={12}
                 >
                     <div
-                        className="c0 c3"
+                        className="c0 c1"
                     />
                 </ColumnContainer>
             </Styled(ColumnContainer)>
@@ -100,17 +100,17 @@ Array [
     </Styled(Breakpoints)>
     <styled.div>
         <div
-            className="c6"
+            className="c2"
         />
     </styled.div>
     <Styled(Link)>
         <Link
-            className="c7"
+            className="c3"
             onlyActiveOnIndex={false}
             style={Object {}}
         >
             <a
-                className="c7"
+                className="c3"
                 onClick={[Function]}
                 style={Object {}}
             />
@@ -118,7 +118,7 @@ Array [
     </Styled(Link)>
     <styled.img>
         <img
-            className="c9"
+            className="c4"
         />
     </styled.img>
     <Breakpoints>
@@ -139,20 +139,20 @@ Array [
                         "sm": 768,
                       }
                 }
-                className="c10"
+                className="c5"
             >
                 <div
-                    className="c10 c12"
+                    className="c5 c6"
                 />
             </styled.div>
         </Styled(styled.div)>
     </Breakpoints>
     <Styled(styled.div)>
         <styled.div
-            className="c13"
+            className="c7"
         >
             <div
-                className="c13 c12"
+                className="c7 c6"
             />
         </styled.div>
     </Styled(styled.div)>

@@ -39,7 +39,6 @@ exports[`should render LazyloadIcon correctly 1`] = `
         }
       }
       updateReStart={true}
-      willChange={true}
     >
       <styled.div>
         children
@@ -51,7 +50,7 @@ exports[`should render LazyloadIcon correctly 1`] = `
 
 exports[`should render components correctly 1`] = `
 Array [
-  .c4 {
+  .c3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -109,11 +108,11 @@ Array [
             className="c2"
         >
             <RowContainer
-                className="c2 c4"
+                className="c2 c3"
                 divisions={12}
             >
                 <section
-                    className="c2 c4"
+                    className="c2 c3"
                 />
             </RowContainer>
         </Styled(RowContainer)>

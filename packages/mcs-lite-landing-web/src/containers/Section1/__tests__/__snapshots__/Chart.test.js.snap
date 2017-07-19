@@ -18,7 +18,6 @@ exports[`should renders <Chart> correctly 1`] = `
     }
   }
   updateReStart={true}
-  willChange={true}
 >
   <Styled(Heading)
     color="primary"

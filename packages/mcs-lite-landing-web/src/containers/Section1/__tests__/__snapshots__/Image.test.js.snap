@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should renders <Image> correctly with Mobile view 1`] = `
-.c6 {
+.c2 {
   height: 100%;
   background-repeat: no-repeat;
   -webkit-transition: all 0.3 linear;
@@ -163,7 +163,7 @@ exports[`should renders <Image> correctly with Mobile view 1`] = `
                         >
                           <BaseComponent
                             blur={5}
-                            className="c1 c6"
+                            className="c1 c2"
                             component="img"
                             isCached={false}
                             isLoaded={false}
@@ -175,7 +175,7 @@ exports[`should renders <Image> correctly with Mobile view 1`] = `
                             transition="all 0.3 linear"
                           >
                             <img
-                              className="c1 c6"
+                              className="c1 c2"
                               src="img_mcs_screenX66.png"
                               style={Object {}}
                             />

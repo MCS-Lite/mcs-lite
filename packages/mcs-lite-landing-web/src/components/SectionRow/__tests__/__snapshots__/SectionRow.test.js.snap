@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should renders <SectionRow> correctly 1`] = `
-.c3 {
+.c2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -43,11 +43,11 @@ exports[`should renders <SectionRow> correctly 1`] = `
           >
             <Styled(RowContainer)>
               <RowContainer
-                className="c3"
+                className="c2"
                 divisions={12}
               >
                 <section
-                  className="c3"
+                  className="c2"
                 >
                   children
                 </section>

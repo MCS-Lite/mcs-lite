@@ -20,6 +20,6 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "react-intl-po": "^2.0.2"
+    "react-intl-po": "^2.1.1"
   }
 }

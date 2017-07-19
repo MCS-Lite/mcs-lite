@@ -2,7 +2,7 @@
 
 exports[`should render components correctly 1`] = `
 Array [
-  .c7 {
+  .c3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -15,20 +15,20 @@ Array [
   flex-wrap: wrap;
 }
 
-.c13 {
+.c6 {
   display: block;
   box-sizing: border-box;
   padding: 20px;
   width: 100%;
 }
 
-.c5 {
+.c2 {
   margin: 0 auto;
   max-width: 100%;
   width: 960px;
 }
 
-.c4 {
+.c1 {
   padding: 60px 0;
   background-color: #FFFFFF;
 }
@@ -39,15 +39,15 @@ Array [
   overflow: hidden;
 }
 
-.c10 {
+.c5 {
   padding-bottom: 0;
 }
 
-.c9 {
+.c4 {
   text-align: center;
 }
 
-.c16 img {
+.c7 img {
   display: block;
   height: auto;
   width: 100%;
@@ -55,7 +55,7 @@ Array [
   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.1);
 }
 
-.c17 {
+.c8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -67,18 +67,18 @@ Array [
 }
 
 @media (min-width: 970px) {
-  .c9 {
+  .c4 {
     text-align: left;
   }
 }
 
 @media (min-width: 768px) {
-  .c16 {
+  .c7 {
     position: relative;
     height: 350px;
   }
 
-  .c16 > * {
+  .c7 > * {
     position: absolute;
     left: 0;
     right: 0;
@@ -98,7 +98,7 @@ Array [
     align-items: flex-end;
   }
 
-  .c16 img {
+  .c7 img {
     display: initial;
     height: 100%;
     width: auto;
@@ -106,13 +106,13 @@ Array [
 }
 
 @media (min-width: 970px) {
-  .c16 > * {
+  .c7 > * {
     display: block;
   }
 }
 
 @media (min-width: 970px) {
-  .c17 {
+  .c8 {
     -webkit-align-items: flex-end;
     -webkit-box-align: flex-end;
     -ms-flex-align: flex-end;
@@ -136,26 +136,26 @@ Array [
                     className="c0"
                 >
                     <div
-                        className="c0 c4"
+                        className="c0 c1"
                     >
                         <Styled(PageContainer)
                             width="960px"
                         >
                             <PageContainer
-                                className="c5"
+                                className="c2"
                                 width="960px"
                             >
                                 <div
-                                    className="c5"
+                                    className="c2"
                                     width="960px"
                                 >
                                     <Styled(RowContainer)>
                                         <RowContainer
-                                            className="c7"
+                                            className="c3"
                                             divisions={12}
                                         >
                                             <section
-                                                className="c7"
+                                                className="c3"
                                             >
                                                 children
                                             </section>
@@ -180,13 +180,13 @@ Array [
             }
         >
             <div
-                className="c9"
+                className="c4"
             />
         </styled.div>
     </Breakpoints>
     <Styled(Breakpoints)>
         <Breakpoints
-            className="c10"
+            className="c5"
         >
             <Styled(ColumnContainer)
                 breakpoints={
@@ -196,7 +196,7 @@ Array [
                         "sm": 768,
                       }
                 }
-                className="c10"
+                className="c5"
             >
                 <ColumnContainer
                     breakpoints={
@@ -206,11 +206,11 @@ Array [
                             "sm": 768,
                           }
                     }
-                    className="c10 c13"
+                    className="c5 c6"
                     divisions={12}
                 >
                     <div
-                        className="c10 c13"
+                        className="c5 c6"
                     />
                 </ColumnContainer>
             </Styled(ColumnContainer)>
@@ -227,7 +227,7 @@ Array [
             }
         >
             <div
-                className="c16"
+                className="c7"
             />
         </styled.div>
     </Breakpoints>
@@ -242,12 +242,12 @@ Array [
             }
         >
             <div
-                className="c17"
+                className="c8"
             />
         </styled.div>
     </Breakpoints>
 </div>,
-  .c4 {
+  .c3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -293,11 +293,11 @@ Array [
             >
                 <Styled(RowContainer)>
                     <RowContainer
-                        className="c4"
+                        className="c3"
                         divisions={12}
                     >
                         <section
-                            className="c4"
+                            className="c3"
                         >
                             children
                         </section>
