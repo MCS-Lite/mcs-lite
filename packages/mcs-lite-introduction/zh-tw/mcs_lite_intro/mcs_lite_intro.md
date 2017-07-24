@@ -44,16 +44,19 @@ MCS Lite 應用程式主要包含了**物聯網平台 (IoT Platform)** 與**系�
    * 如果您是在 MacOS 上執行 **mcs-lite-app**，可能會看到如下的警告視窗將 **mcs-lite-app** 判定成未識別的開發者，可透過按滑鼠右鍵來開啟。  
      ![](../../assets/unknown_warning.png)
 
-4. 按下系統管理主控台右上角的 **啟動** 按鈕，開始運行 MCS Lite 物聯網平台 (IoT Platform)。
+4. 第一次使用，請先註冊一個管理者帳戶，若您沒有看到註冊畫面，請直接在瀏覽器輸入 **http://localhost:3002/admin/signup**，手動開啟註冊頁面。完成註冊後，登入系統管理主控台。
+	![](../../assets/mcs_lite_admin_signup.png)
+
+5. 按下系統管理主控台右上角的 **啟動** 按鈕，開始運行 MCS Lite 物聯網平台 (IoT Platform)。
 	 ![](../../assets/mcs_lite_start_service.png)
 	 
-5. 在 **IP 連線** 頁面會列出目前 MCS Lite 物聯網平台 (IoT Platform) 所綁定的位址 (IP) 與連接埠 (port) 列表。
+6. 在 **IP 連線** 頁面會列出目前 MCS Lite 物聯網平台 (IoT Platform) 所綁定的位址 (IP) 與連接埠 (port) 列表。
 	![](../../assets/mcs_lite_ip_list.png)
 	
-6. 同個網路內的電腦皆可在瀏覽器的網址列中輸入列出的位址 (IP) 與連接埠 (port) ，連線到 MCS Lite 物聯網平台的網頁。
+7. 同個網路內的電腦皆可在瀏覽器的網址列中輸入列出的位址 (IP) 與連接埠 (port) ，連線到 MCS Lite 物聯網平台的網頁。
    ![](../../assets/mcs_lite_url.png)
    
-7. 同個網路內的裝置亦可開始透過 MCS Lite 提供的 APIs 上傳或是接收資料。
+8. 同個網路內的裝置亦可開始透過 MCS Lite 提供的 APIs 上傳或是接收資料。
 
 	```
 	POST /api/devices/HJZyx1bFQZ/datapoints.csv HTTP/1.1

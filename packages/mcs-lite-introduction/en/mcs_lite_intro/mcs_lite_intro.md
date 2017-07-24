@@ -49,16 +49,19 @@ On the IoT platform, there is a web console for end users to create their protot
    * If you are executing **mcs-lite-app** on MacOS, you may see the following warning window. Please launch MCS Lite from context menu by right-clicking on your mouse.
    	![](../../assets/unknown_warning.png)
 
-4. Click the **Start** button at top-right corner of the admin console，start running the MCS Lite IoT Platform.
+4. If MCS Lite is launched for the first time, you have to register an administrator account to sign into the admin console. If you cannot see the registration page on MCS Lite App, please go to **http://localhost:3002/admin/signup** directly in the browser. After sign up，you need to sign into admin console again.
+	![](../../assets/mcs_lite_admin_signup.png)
+	
+5. Click the **Start** button at top-right corner of the admin console，start running the MCS Lite IoT Platform.
 	![](../../assets/mcs_lite_start_service.png)
 	 
-5. The **IP Connection** page lists IP address and port that MCS Lite IoT Platform binds.
+6. The **IP Connection** page lists IP address and port that MCS Lite IoT Platform binds.
 	![](../../assets/mcs_lite_ip_list.png)
 	
-6. Enter the IP and port in the browser's address bar to connect to the MCS Lite web console. 
+7. Enter the IP and port in the browser's address bar to connect to the MCS Lite web console. 
 	![](../../assets/mcs_lite_url.png)
    
-7. Devices on the same network can also start uploading or receiving data via APIs provided by MCS Lite.
+8. Devices on the same network can also start uploading or receiving data via APIs provided by MCS Lite.
 
 	```
 	POST /api/devices/HJZyx1bFQZ/datapoints.csv HTTP/1.1

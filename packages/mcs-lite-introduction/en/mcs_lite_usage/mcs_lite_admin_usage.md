@@ -1,6 +1,8 @@
 ## Admin console instructions
 When you start the MCS Lite application, your will also see the admin console page.The main purpose is to facilitate the maintenance on MCS Lite system settings, eliminating the need to manually modify configuration. When using MCS Lite for the first time, you must register an admin account and then log in to the console via this account to start the service or modify the settings.
 
+If you cannot see the registration page on MCS Lite App, please go to **http://localhost:3002/admin/signup** directly in the browser.
+
 The admin console provides the following functions:
 
 1. Start/Stop service：Start and stop the MCS Lite IoT platform. When the service is stopped, the device on the network cannot connect to MCS Lite.
