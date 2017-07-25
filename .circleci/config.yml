@@ -41,7 +41,8 @@ jobs:
       - checkout
       - restore_cache:
           keys:
-            - yarn-cache
+            - yarn-cache-{{ checksum "yarn.lock" }}
+            - yarn-cache-
       - restore_cache:
           keys:
             - dependency-cache-{{ checksum "yarn.lock" }}
@@ -53,9 +54,9 @@ jobs:
             yarn install --pure-lockfile
       - run: yarn cache dir
       - save_cache:
-          key: yarn-cache
+          key: yarn-cache-{{ checksum "yarn.lock" }}
           paths:
-            - "~/.yarn-cache"
+            - .yarn-cache
       - save_cache:
           key: dependency-cache-{{ checksum "yarn.lock" }}
           paths:
