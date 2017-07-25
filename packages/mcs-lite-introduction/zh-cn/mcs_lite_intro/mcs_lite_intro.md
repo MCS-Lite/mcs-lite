@@ -48,8 +48,7 @@ MCS Lite 应用程式主要包含了**物联网平台 (IoT Platform)** 与**系�
 	![](../../assets/mcs_lite_admin_signup.png)
 
 5. 按下系统管理主控台右上角的 **启动** 按钮，开始运行 MCS Lite 物联网平台(IoT Platform)。
-	 ![](../../assets/mcs_lite_start_service.png)
-	 
+	![](../../assets/mcs_lite_start_service.png)
 	 
 6. 在 **IP 连线** 页面会列出目前 MCS Lite 物联网平台 (IoT Platform) 所绑定的位址 (IP) 与连接埠 (port) 列表。
 	![](../../assets/mcs_lite_ip_list.png)
