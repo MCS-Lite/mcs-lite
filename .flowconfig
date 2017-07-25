@@ -11,7 +11,7 @@
 .*/config-chain/.*
 .*/license-checker/.*
 .*/node_modules/react-topbar-progress-indicator/.*
-.yarn-cache/*
+.*/.yarn-cache/*
 
 [include]
 
