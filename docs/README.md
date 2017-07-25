@@ -12,10 +12,10 @@
 
 ## CI
 
-We use two CIs at same time to separate testing flow.
+We use two CIs at same time.
 
-1. **Travis** (`test.sh`): For unit testing of all packages.
-2. **Circle** (`test-page.sh`): For building demo page.
+1. `test.sh`: For unit testing of all packages.
+2. `test-page.sh`: For building demo page.
 
 *Note: Required status checks have been enabled to ensure both CI tests are passing.*
 

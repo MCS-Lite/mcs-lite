@@ -3,6 +3,7 @@
 # =====================================================
 
 node_modules/
+.yarn-cache/
 
 # flow
 flow-typed/
