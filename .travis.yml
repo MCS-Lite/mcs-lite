@@ -18,9 +18,14 @@ before_install:
 
 jobs:
   include:
-    - script: yarn run danger
-    - script: ./tasks/test.sh
-    - script: ./tasks/test-page.sh
+    - stage: yarn run danger
+      script: yarn run danger
+    - stage: ./tasks/lint.sh
+      script: ./tasks/lint.sh
+    - stage: ./tasks/test.sh
+      script: ./tasks/test.sh
+    - stage: ./tasks/test-page.sh
+      script: ./tasks/test-page.sh
 
 after_success:
   - ./node_modules/.bin/codecov
