@@ -137,7 +137,7 @@ exports[`should renders <Header> correctly with Desktop view 1`] = `
   display: none;
 }
 
-@media (min-width: 768px) {
+@media (min-width:768px) {
   .c9 {
     display: inherit;
   }

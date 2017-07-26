@@ -10,11 +10,11 @@ exports[`Storyshots A API 1`] = `
 }
 
 .c0:hover {
-  color: rgb(0, 151, 208);
+  color: rgb(0,151,208);
 }
 
 .c0:active {
-  color: rgb(0, 144, 198);
+  color: rgb(0,144,198);
 }
 
 <a
@@ -46,11 +46,11 @@ exports[`Storyshots A Nested children with Heading 1`] = `
 }
 
 .c2:hover {
-  color: rgb(0, 151, 208);
+  color: rgb(0,151,208);
 }
 
 .c2:active {
-  color: rgb(0, 144, 198);
+  color: rgb(0,144,198);
 }
 
 <h1
@@ -80,11 +80,11 @@ exports[`Storyshots A With color props 1`] = `
 }
 
 .c5:hover {
-  color: rgb(0, 151, 208);
+  color: rgb(0,151,208);
 }
 
 .c5:active {
-  color: rgb(0, 144, 198);
+  color: rgb(0,144,198);
 }
 
 .c0 {
@@ -96,11 +96,11 @@ exports[`Storyshots A With color props 1`] = `
 }
 
 .c0:hover {
-  color: rgb(50, 51, 45);
+  color: rgb(50,51,45);
 }
 
 .c0:active {
-  color: rgb(47, 48, 43);
+  color: rgb(47,48,43);
 }
 
 .c1 {
@@ -112,11 +112,11 @@ exports[`Storyshots A With color props 1`] = `
 }
 
 .c1:hover {
-  color: rgb(143, 144, 139);
+  color: rgb(143,144,139);
 }
 
 .c1:active {
-  color: rgb(136, 137, 132);
+  color: rgb(136,137,132);
 }
 
 .c2 {
@@ -128,11 +128,11 @@ exports[`Storyshots A With color props 1`] = `
 }
 
 .c2:hover {
-  color: rgb(196, 197, 198);
+  color: rgb(196,197,198);
 }
 
 .c2:active {
-  color: rgb(186, 187, 188);
+  color: rgb(186,187,188);
 }
 
 .c3 {
@@ -144,11 +144,11 @@ exports[`Storyshots A With color props 1`] = `
 }
 
 .c3:hover {
-  color: rgb(234, 234, 234);
+  color: rgb(234,234,234);
 }
 
 .c3:active {
-  color: rgb(223, 223, 223);
+  color: rgb(223,223,223);
 }
 
 .c4 {
@@ -160,11 +160,11 @@ exports[`Storyshots A With color props 1`] = `
 }
 
 .c4:hover {
-  color: rgb(239, 239, 239);
+  color: rgb(239,239,239);
 }
 
 .c4:active {
-  color: rgb(227, 227, 227);
+  color: rgb(227,227,227);
 }
 
 .c6 {
@@ -176,11 +176,11 @@ exports[`Storyshots A With color props 1`] = `
 }
 
 .c6:hover {
-  color: rgb(98, 178, 38);
+  color: rgb(98,178,38);
 }
 
 .c6:active {
-  color: rgb(94, 170, 36);
+  color: rgb(94,170,36);
 }
 
 .c7 {
@@ -192,11 +192,11 @@ exports[`Storyshots A With color props 1`] = `
 }
 
 .c7:hover {
-  color: rgb(230, 51, 73);
+  color: rgb(230,51,73);
 }
 
 .c7:active {
-  color: rgb(219, 48, 70);
+  color: rgb(219,48,70);
 }
 
 .c8 {
@@ -208,11 +208,11 @@ exports[`Storyshots A With color props 1`] = `
 }
 
 .c8:hover {
-  color: rgb(228, 144, 28);
+  color: rgb(228,144,28);
 }
 
 .c8:active {
-  color: rgb(217, 137, 27);
+  color: rgb(217,137,27);
 }
 
 <div>
@@ -459,15 +459,15 @@ exports[`Storyshots Button API 1`] = `
   height: 32px;
   padding: 6px 15px;
   font-size: 1rem;
-  border-color: rgb(0, 130, 179);
+  border-color: rgb(0,130,179);
 }
 
 .c0:hover {
-  background-color: rgb(0, 151, 208);
+  background-color: rgb(0,151,208);
 }
 
 .c0:active {
-  background-color: rgb(0, 144, 198);
+  background-color: rgb(0,144,198);
 }
 
 <button
@@ -495,32 +495,32 @@ exports[`Storyshots Button Overriding style 1`] = `
   height: 32px;
   padding: 6px 15px;
   font-size: 1rem;
-  border-color: rgb(0, 130, 179);
+  border-color: rgb(0,130,179);
 }
 
 .c1:hover {
-  background-color: rgb(0, 151, 208);
+  background-color: rgb(0,151,208);
 }
 
 .c1:active {
-  background-color: rgb(0, 144, 198);
+  background-color: rgb(0,144,198);
 }
 
 .c0 {
   font-size: 56px;
   color: #FFFFFF;
   border-radius: 6px;
-  border-color: rgb(206, 80, 57);
+  border-color: rgb(206,80,57);
   background-color: tomato;
   min-height: 80px;
 }
 
 .c0:hover {
-  background-color: rgb(239, 93, 67);
+  background-color: rgb(239,93,67);
 }
 
 .c0:active {
-  background-color: rgb(227, 88, 63);
+  background-color: rgb(227,88,63);
 }
 
 <button
@@ -541,7 +541,7 @@ exports[`Storyshots Button With active props 1`] = `
   transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   line-height: 0;
   cursor: pointer;
-  background-color: rgb(0, 144, 198);
+  background-color: rgb(0,144,198);
   color: #FFFFFF;
   border-radius: 3px;
   width: initial;
@@ -549,15 +549,15 @@ exports[`Storyshots Button With active props 1`] = `
   height: 32px;
   padding: 6px 15px;
   font-size: 1rem;
-  border-color: rgb(0, 130, 179);
+  border-color: rgb(0,130,179);
 }
 
 .c0:hover {
-  background-color: rgb(0, 151, 208);
+  background-color: rgb(0,151,208);
 }
 
 .c0:active {
-  background-color: rgb(0, 144, 198);
+  background-color: rgb(0,144,198);
 }
 
 <button
@@ -585,15 +585,15 @@ exports[`Storyshots Button With block props 1`] = `
   height: 32px;
   padding: 6px 15px;
   font-size: 1rem;
-  border-color: rgb(0, 130, 179);
+  border-color: rgb(0,130,179);
 }
 
 .c1:hover {
-  background-color: rgb(0, 151, 208);
+  background-color: rgb(0,151,208);
 }
 
 .c1:active {
-  background-color: rgb(0, 144, 198);
+  background-color: rgb(0,144,198);
 }
 
 .c2 {
@@ -613,15 +613,15 @@ exports[`Storyshots Button With block props 1`] = `
   height: 32px;
   padding: 6px 15px;
   font-size: 1rem;
-  border-color: rgb(0, 130, 179);
+  border-color: rgb(0,130,179);
 }
 
 .c2:hover {
-  background-color: rgb(0, 151, 208);
+  background-color: rgb(0,151,208);
 }
 
 .c2:active {
-  background-color: rgb(0, 144, 198);
+  background-color: rgb(0,144,198);
 }
 
 .c0 > * {
@@ -667,15 +667,15 @@ exports[`Storyshots Button With component props - Input submit 1`] = `
   height: 32px;
   padding: 6px 15px;
   font-size: 1rem;
-  border-color: rgb(0, 130, 179);
+  border-color: rgb(0,130,179);
 }
 
 .c0:hover {
-  background-color: rgb(0, 151, 208);
+  background-color: rgb(0,151,208);
 }
 
 .c0:active {
-  background-color: rgb(0, 144, 198);
+  background-color: rgb(0,144,198);
 }
 
 <input
@@ -704,15 +704,15 @@ exports[`Storyshots Button With component props 1`] = `
   height: 32px;
   padding: 6px 15px;
   font-size: 1rem;
-  border-color: rgb(0, 130, 179);
+  border-color: rgb(0,130,179);
 }
 
 .c0:hover {
-  background-color: rgb(0, 151, 208);
+  background-color: rgb(0,151,208);
 }
 
 .c0:active {
-  background-color: rgb(0, 144, 198);
+  background-color: rgb(0,144,198);
 }
 
 <a
@@ -743,10 +743,10 @@ exports[`Storyshots Button With disabled props 1`] = `
   height: 32px;
   padding: 6px 15px;
   font-size: 1rem;
-  border-color: rgb(169, 170, 170);
+  border-color: rgb(169,170,170);
 }
 
-;.c0:hover {
+.c0:hover {
   background-color: #D1D2D3;
 }
 
@@ -779,15 +779,15 @@ exports[`Storyshots Button With icon inside 1`] = `
   height: 32px;
   padding: 6px 15px;
   font-size: 1rem;
-  border-color: rgb(0, 130, 179);
+  border-color: rgb(0,130,179);
 }
 
 .c0:hover {
-  background-color: rgb(0, 151, 208);
+  background-color: rgb(0,151,208);
 }
 
 .c0:active {
-  background-color: rgb(0, 144, 198);
+  background-color: rgb(0,144,198);
 }
 
 .c2 > * {
@@ -861,15 +861,15 @@ exports[`Storyshots Button With kind props 1`] = `
   height: 32px;
   padding: 6px 15px;
   font-size: 1rem;
-  border-color: rgb(0, 130, 179);
+  border-color: rgb(0,130,179);
 }
 
 .c2:hover {
-  background-color: rgb(0, 151, 208);
+  background-color: rgb(0,151,208);
 }
 
 .c2:active {
-  background-color: rgb(0, 144, 198);
+  background-color: rgb(0,144,198);
 }
 
 .c1 {
@@ -889,15 +889,15 @@ exports[`Storyshots Button With kind props 1`] = `
   height: 32px;
   padding: 6px 15px;
   font-size: 1rem;
-  border-color: rgb(202, 202, 202);
+  border-color: rgb(202,202,202);
 }
 
 .c1:hover {
-  background-color: rgb(234, 234, 234);
+  background-color: rgb(234,234,234);
 }
 
 .c1:active {
-  background-color: rgb(223, 223, 223);
+  background-color: rgb(223,223,223);
 }
 
 .c3 {
@@ -917,15 +917,15 @@ exports[`Storyshots Button With kind props 1`] = `
   height: 32px;
   padding: 6px 15px;
   font-size: 1rem;
-  border-color: rgb(85, 153, 32);
+  border-color: rgb(85,153,32);
 }
 
 .c3:hover {
-  background-color: rgb(98, 178, 38);
+  background-color: rgb(98,178,38);
 }
 
 .c3:active {
-  background-color: rgb(94, 170, 36);
+  background-color: rgb(94,170,36);
 }
 
 .c4 {
@@ -945,15 +945,15 @@ exports[`Storyshots Button With kind props 1`] = `
   height: 32px;
   padding: 6px 15px;
   font-size: 1rem;
-  border-color: rgb(198, 44, 63);
+  border-color: rgb(198,44,63);
 }
 
 .c4:hover {
-  background-color: rgb(230, 51, 73);
+  background-color: rgb(230,51,73);
 }
 
 .c4:active {
-  background-color: rgb(219, 48, 70);
+  background-color: rgb(219,48,70);
 }
 
 .c5 {
@@ -973,15 +973,15 @@ exports[`Storyshots Button With kind props 1`] = `
   height: 32px;
   padding: 6px 15px;
   font-size: 1rem;
-  border-color: rgb(196, 124, 24);
+  border-color: rgb(196,124,24);
 }
 
 .c5:hover {
-  background-color: rgb(228, 144, 28);
+  background-color: rgb(228,144,28);
 }
 
 .c5:active {
-  background-color: rgb(217, 137, 27);
+  background-color: rgb(217,137,27);
 }
 
 .c0 > * {
@@ -1042,15 +1042,15 @@ exports[`Storyshots Button With round props 1`] = `
   height: 32px;
   padding: 0;
   font-size: 1rem;
-  border-color: rgb(0, 130, 179);
+  border-color: rgb(0,130,179);
 }
 
 .c1:hover {
-  background-color: rgb(0, 151, 208);
+  background-color: rgb(0,151,208);
 }
 
 .c1:active {
-  background-color: rgb(0, 144, 198);
+  background-color: rgb(0,144,198);
 }
 
 .c2 {
@@ -1070,15 +1070,15 @@ exports[`Storyshots Button With round props 1`] = `
   height: 32px;
   padding: 0;
   font-size: 1rem;
-  border-color: rgb(202, 202, 202);
+  border-color: rgb(202,202,202);
 }
 
 .c2:hover {
-  background-color: rgb(234, 234, 234);
+  background-color: rgb(234,234,234);
 }
 
 .c2:active {
-  background-color: rgb(223, 223, 223);
+  background-color: rgb(223,223,223);
 }
 
 .c0 > * {
@@ -1129,15 +1129,15 @@ exports[`Storyshots Button With size props 1`] = `
   height: 20px;
   padding: 0 5px;
   font-size: 0.923rem;
-  border-color: rgb(0, 130, 179);
+  border-color: rgb(0,130,179);
 }
 
 .c1:hover {
-  background-color: rgb(0, 151, 208);
+  background-color: rgb(0,151,208);
 }
 
 .c1:active {
-  background-color: rgb(0, 144, 198);
+  background-color: rgb(0,144,198);
 }
 
 .c2 {
@@ -1157,15 +1157,15 @@ exports[`Storyshots Button With size props 1`] = `
   height: 20px;
   padding: 0 5px;
   font-size: 0.923rem;
-  border-color: rgb(202, 202, 202);
+  border-color: rgb(202,202,202);
 }
 
 .c2:hover {
-  background-color: rgb(234, 234, 234);
+  background-color: rgb(234,234,234);
 }
 
 .c2:active {
-  background-color: rgb(223, 223, 223);
+  background-color: rgb(223,223,223);
 }
 
 .c0 > * {
@@ -1206,15 +1206,15 @@ exports[`Storyshots Button With square props 1`] = `
   height: 32px;
   padding: 0;
   font-size: 1rem;
-  border-color: rgb(0, 130, 179);
+  border-color: rgb(0,130,179);
 }
 
 .c1:hover {
-  background-color: rgb(0, 151, 208);
+  background-color: rgb(0,151,208);
 }
 
 .c1:active {
-  background-color: rgb(0, 144, 198);
+  background-color: rgb(0,144,198);
 }
 
 .c2 {
@@ -1234,15 +1234,15 @@ exports[`Storyshots Button With square props 1`] = `
   height: 32px;
   padding: 0;
   font-size: 1rem;
-  border-color: rgb(202, 202, 202);
+  border-color: rgb(202,202,202);
 }
 
 .c2:hover {
-  background-color: rgb(234, 234, 234);
+  background-color: rgb(234,234,234);
 }
 
 .c2:active {
-  background-color: rgb(223, 223, 223);
+  background-color: rgb(223,223,223);
 }
 
 .c0 > * {
@@ -1293,15 +1293,15 @@ exports[`Storyshots Button With theme provider (Material) 1`] = `
   height: 32px;
   padding: 6px 15px;
   font-size: 16px;
-  border-color: rgb(202, 202, 202);
+  border-color: rgb(202,202,202);
 }
 
 .c1:hover {
-  background-color: rgb(234, 234, 234);
+  background-color: rgb(234,234,234);
 }
 
 .c1:active {
-  background-color: rgb(223, 223, 223);
+  background-color: rgb(223,223,223);
 }
 
 .c2 {
@@ -1321,15 +1321,15 @@ exports[`Storyshots Button With theme provider (Material) 1`] = `
   height: 32px;
   padding: 6px 15px;
   font-size: 16px;
-  border-color: rgb(27, 121, 196);
+  border-color: rgb(27,121,196);
 }
 
 .c2:hover {
-  background-color: rgb(31, 141, 228);
+  background-color: rgb(31,141,228);
 }
 
 .c2:active {
-  background-color: rgb(29, 134, 217);
+  background-color: rgb(29,134,217);
 }
 
 .c3 {
@@ -1349,15 +1349,15 @@ exports[`Storyshots Button With theme provider (Material) 1`] = `
   height: 32px;
   padding: 6px 15px;
   font-size: 16px;
-  border-color: rgb(61, 141, 65);
+  border-color: rgb(61,141,65);
 }
 
 .c3:hover {
-  background-color: rgb(71, 164, 75);
+  background-color: rgb(71,164,75);
 }
 
 .c3:active {
-  background-color: rgb(68, 156, 71);
+  background-color: rgb(68,156,71);
 }
 
 .c4 {
@@ -1377,15 +1377,15 @@ exports[`Storyshots Button With theme provider (Material) 1`] = `
   height: 32px;
   padding: 6px 15px;
   font-size: 16px;
-  border-color: rgb(197, 54, 44);
+  border-color: rgb(197,54,44);
 }
 
 .c4:hover {
-  background-color: rgb(229, 63, 51);
+  background-color: rgb(229,63,51);
 }
 
 .c4:active {
-  background-color: rgb(218, 60, 48);
+  background-color: rgb(218,60,48);
 }
 
 .c5 {
@@ -1405,15 +1405,15 @@ exports[`Storyshots Button With theme provider (Material) 1`] = `
   height: 32px;
   padding: 6px 15px;
   font-size: 16px;
-  border-color: rgb(206, 123, 0);
+  border-color: rgb(206,123,0);
 }
 
 .c5:hover {
-  background-color: rgb(239, 143, 0);
+  background-color: rgb(239,143,0);
 }
 
 .c5:active {
-  background-color: rgb(227, 136, 0);
+  background-color: rgb(227,136,0);
 }
 
 .c0 > * {
@@ -1764,15 +1764,15 @@ exports[`Storyshots CopyButton API 1`] = `
   height: 20px;
   padding: 0 5px;
   font-size: 0.923rem;
-  border-color: rgb(0, 130, 179);
+  border-color: rgb(0,130,179);
 }
 
 .c1:hover {
-  background-color: rgb(0, 151, 208);
+  background-color: rgb(0,151,208);
 }
 
 .c1:active {
-  background-color: rgb(0, 144, 198);
+  background-color: rgb(0,144,198);
 }
 
 .c0 {
@@ -1811,11 +1811,11 @@ exports[`Storyshots DataChannel ButtonClear 1`] = `
 }
 
 .c2:hover {
-  color: rgb(0, 151, 208);
+  color: rgb(0,151,208);
 }
 
 .c2:active {
-  color: rgb(0, 144, 198);
+  color: rgb(0,144,198);
 }
 
 .c0 {
@@ -1872,11 +1872,11 @@ exports[`Storyshots DataChannel ControlNumber 1`] = `
 }
 
 .c7:hover {
-  color: rgb(0, 151, 208);
+  color: rgb(0,151,208);
 }
 
 .c7:active {
-  color: rgb(0, 144, 198);
+  color: rgb(0,144,198);
 }
 
 .c5 {
@@ -1908,15 +1908,15 @@ exports[`Storyshots DataChannel ControlNumber 1`] = `
   height: 32px;
   padding: 6px 15px;
   font-size: 1rem;
-  border-color: rgb(0, 130, 179);
+  border-color: rgb(0,130,179);
 }
 
 .c8:hover {
-  background-color: rgb(0, 151, 208);
+  background-color: rgb(0,151,208);
 }
 
 .c8:active {
-  background-color: rgb(0, 144, 198);
+  background-color: rgb(0,144,198);
 }
 
 .c6 {
@@ -1952,7 +1952,7 @@ exports[`Storyshots DataChannel ControlNumber 1`] = `
 
 .c3:focus {
   border-color: #00A1DE;
-  box-shadow: 0 0 3px 0 rgba(0, 161, 222, 0.5);
+  box-shadow: 0 0 3px 0 rgba(0,161,222,0.5);
 }
 
 .c3::-webkit-input-placeholder {
@@ -2086,15 +2086,15 @@ exports[`Storyshots DataChannel ControlPeriod 1`] = `
   height: 32px;
   padding: 6px 15px;
   font-size: 1rem;
-  border-color: rgb(0, 130, 179);
+  border-color: rgb(0,130,179);
 }
 
 .c5:hover {
-  background-color: rgb(0, 151, 208);
+  background-color: rgb(0,151,208);
 }
 
 .c5:active {
-  background-color: rgb(0, 144, 198);
+  background-color: rgb(0,144,198);
 }
 
 .c4 {
@@ -2115,7 +2115,7 @@ exports[`Storyshots DataChannel ControlPeriod 1`] = `
 
 .c4:focus {
   border-color: #00A1DE;
-  box-shadow: 0 0 3px 0 rgba(0, 161, 222, 0.5);
+  box-shadow: 0 0 3px 0 rgba(0,161,222,0.5);
 }
 
 .c4::-webkit-input-placeholder {
@@ -2248,7 +2248,7 @@ exports[`Storyshots DataChannel ControlRange - Stateful PPAP 1`] = `
   -webkit-transition: -webkit-transform 0.3s ease,width 0.2s ease,height 0.2s ease;
   -webkit-transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
   transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
-  box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #00A1DE,inset 0 0 0 3px rgb(0, 192, 255);
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #00A1DE,inset 0 0 0 3px rgb(0,192,255);
 }
 
 .c8::-moz-range-thumb {
@@ -2260,7 +2260,7 @@ exports[`Storyshots DataChannel ControlRange - Stateful PPAP 1`] = `
   background-image: radial-gradient(50% 50%,#FFFFFF 50%,#FFFFFF 73%,#F8F8F8 81%,#EBEBEB 90%,#DDDDDD 95%);
   -moz-appearance: none;
   -moz-transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
-  box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #00A1DE,inset 0 0 0 3px rgb(0, 192, 255);
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #00A1DE,inset 0 0 0 3px rgb(0,192,255);
 }
 
 .c8::-ms-thumb {
@@ -2273,7 +2273,7 @@ exports[`Storyshots DataChannel ControlRange - Stateful PPAP 1`] = `
   -webkit-transition: -webkit-transform 0.3s ease,width 0.2s ease,height 0.2s ease;
   -webkit-transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
   transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
-  box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #00A1DE,inset 0 0 0 3px rgb(0, 192, 255);
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #00A1DE,inset 0 0 0 3px rgb(0,192,255);
 }
 
 .c8::-webkit-slider-thumb:hover {
@@ -2498,7 +2498,7 @@ exports[`Storyshots DataChannel ControlRange - Stateful number 1`] = `
   -webkit-transition: -webkit-transform 0.3s ease,width 0.2s ease,height 0.2s ease;
   -webkit-transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
   transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
-  box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #00A1DE,inset 0 0 0 3px rgb(0, 192, 255);
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #00A1DE,inset 0 0 0 3px rgb(0,192,255);
 }
 
 .c8::-moz-range-thumb {
@@ -2510,7 +2510,7 @@ exports[`Storyshots DataChannel ControlRange - Stateful number 1`] = `
   background-image: radial-gradient(50% 50%,#FFFFFF 50%,#FFFFFF 73%,#F8F8F8 81%,#EBEBEB 90%,#DDDDDD 95%);
   -moz-appearance: none;
   -moz-transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
-  box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #00A1DE,inset 0 0 0 3px rgb(0, 192, 255);
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #00A1DE,inset 0 0 0 3px rgb(0,192,255);
 }
 
 .c8::-ms-thumb {
@@ -2523,7 +2523,7 @@ exports[`Storyshots DataChannel ControlRange - Stateful number 1`] = `
   -webkit-transition: -webkit-transform 0.3s ease,width 0.2s ease,height 0.2s ease;
   -webkit-transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
   transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
-  box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #00A1DE,inset 0 0 0 3px rgb(0, 192, 255);
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #00A1DE,inset 0 0 0 3px rgb(0,192,255);
 }
 
 .c8::-webkit-slider-thumb:hover {
@@ -2738,7 +2738,7 @@ exports[`Storyshots DataChannel ControlRange 1`] = `
   -webkit-transition: -webkit-transform 0.3s ease,width 0.2s ease,height 0.2s ease;
   -webkit-transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
   transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
-  box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #00A1DE,inset 0 0 0 3px rgb(0, 192, 255);
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #00A1DE,inset 0 0 0 3px rgb(0,192,255);
 }
 
 .c9::-moz-range-thumb {
@@ -2750,7 +2750,7 @@ exports[`Storyshots DataChannel ControlRange 1`] = `
   background-image: radial-gradient(50% 50%,#FFFFFF 50%,#FFFFFF 73%,#F8F8F8 81%,#EBEBEB 90%,#DDDDDD 95%);
   -moz-appearance: none;
   -moz-transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
-  box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #00A1DE,inset 0 0 0 3px rgb(0, 192, 255);
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #00A1DE,inset 0 0 0 3px rgb(0,192,255);
 }
 
 .c9::-ms-thumb {
@@ -2763,7 +2763,7 @@ exports[`Storyshots DataChannel ControlRange 1`] = `
   -webkit-transition: -webkit-transform 0.3s ease,width 0.2s ease,height 0.2s ease;
   -webkit-transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
   transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
-  box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #00A1DE,inset 0 0 0 3px rgb(0, 192, 255);
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #00A1DE,inset 0 0 0 3px rgb(0,192,255);
 }
 
 .c9::-webkit-slider-thumb:hover {
@@ -3191,11 +3191,11 @@ exports[`Storyshots DataChannel ControlString 1`] = `
 }
 
 .c6:hover {
-  color: rgb(0, 151, 208);
+  color: rgb(0,151,208);
 }
 
 .c6:active {
-  color: rgb(0, 144, 198);
+  color: rgb(0,144,198);
 }
 
 .c4 {
@@ -3221,15 +3221,15 @@ exports[`Storyshots DataChannel ControlString 1`] = `
   height: 32px;
   padding: 6px 15px;
   font-size: 1rem;
-  border-color: rgb(0, 130, 179);
+  border-color: rgb(0,130,179);
 }
 
 .c7:hover {
-  background-color: rgb(0, 151, 208);
+  background-color: rgb(0,151,208);
 }
 
 .c7:active {
-  background-color: rgb(0, 144, 198);
+  background-color: rgb(0,144,198);
 }
 
 .c5 {
@@ -3262,7 +3262,7 @@ exports[`Storyshots DataChannel ControlString 1`] = `
 
 .c2:focus {
   border-color: #00A1DE;
-  box-shadow: 0 0 3px 0 rgba(0, 161, 222, 0.5);
+  box-shadow: 0 0 3px 0 rgba(0,161,222,0.5);
 }
 
 .c2::-webkit-input-placeholder {
@@ -3760,7 +3760,7 @@ exports[`Storyshots DataChannel DisplayString 1`] = `
 
 .c2:focus {
   border-color: #00A1DE;
-  box-shadow: 0 0 3px 0 rgba(0, 161, 222, 0.5);
+  box-shadow: 0 0 3px 0 rgba(0,161,222,0.5);
 }
 
 .c2::-webkit-input-placeholder {
@@ -3904,11 +3904,11 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
 }
 
 .c12:hover {
-  color: rgb(0, 151, 208);
+  color: rgb(0,151,208);
 }
 
 .c12:active {
-  color: rgb(0, 144, 198);
+  color: rgb(0,144,198);
 }
 
 .c10 {
@@ -3950,15 +3950,15 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
   height: 32px;
   padding: 6px 15px;
   font-size: 1rem;
-  border-color: rgb(0, 130, 179);
+  border-color: rgb(0,130,179);
 }
 
 .c13:hover {
-  background-color: rgb(0, 151, 208);
+  background-color: rgb(0,151,208);
 }
 
 .c13:active {
-  background-color: rgb(0, 144, 198);
+  background-color: rgb(0,144,198);
 }
 
 .c2 {
@@ -4034,7 +4034,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
 
 .c8:focus {
   border-color: #00A1DE;
-  box-shadow: 0 0 3px 0 rgba(0, 161, 222, 0.5);
+  box-shadow: 0 0 3px 0 rgba(0,161,222,0.5);
 }
 
 .c8::-webkit-input-placeholder {
@@ -4107,7 +4107,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
 
 .c28:focus {
   border-color: #00A1DE;
-  box-shadow: 0 0 3px 0 rgba(0, 161, 222, 0.5);
+  box-shadow: 0 0 3px 0 rgba(0,161,222,0.5);
 }
 
 .c28::-webkit-input-placeholder {
@@ -4225,7 +4225,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
   -webkit-transition: -webkit-transform 0.3s ease,width 0.2s ease,height 0.2s ease;
   -webkit-transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
   transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
-  box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #00A1DE,inset 0 0 0 3px rgb(0, 192, 255);
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #00A1DE,inset 0 0 0 3px rgb(0,192,255);
 }
 
 .c44::-moz-range-thumb {
@@ -4237,7 +4237,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
   background-image: radial-gradient(50% 50%,#FFFFFF 50%,#FFFFFF 73%,#F8F8F8 81%,#EBEBEB 90%,#DDDDDD 95%);
   -moz-appearance: none;
   -moz-transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
-  box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #00A1DE,inset 0 0 0 3px rgb(0, 192, 255);
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #00A1DE,inset 0 0 0 3px rgb(0,192,255);
 }
 
 .c44::-ms-thumb {
@@ -4250,7 +4250,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
   -webkit-transition: -webkit-transform 0.3s ease,width 0.2s ease,height 0.2s ease;
   -webkit-transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
   transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
-  box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #00A1DE,inset 0 0 0 3px rgb(0, 192, 255);
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #00A1DE,inset 0 0 0 3px rgb(0,192,255);
 }
 
 .c44::-webkit-slider-thumb:hover {
@@ -6965,7 +6965,7 @@ exports[`Storyshots DataPointAreaChart API 1`] = `
   className="c0"
 >
   <div
-    className=""
+    className="recharts-responsive-container"
     style={
       Object {
         "height": "100%",
@@ -7044,7 +7044,7 @@ exports[`Storyshots DataPointAreaChart With isAnimationActive props 1`] = `
   className="c0"
 >
   <div
-    className=""
+    className="recharts-responsive-container"
     style={
       Object {
         "height": "100%",
@@ -7073,7 +7073,7 @@ exports[`Storyshots DataPointAreaChart With kind and type props 1`] = `
   className="c0"
 >
   <div
-    className=""
+    className="recharts-responsive-container"
     style={
       Object {
         "height": "100%",
@@ -7102,7 +7102,7 @@ exports[`Storyshots DataPointAreaChart With realtime data 1`] = `
   className="c0"
 >
   <div
-    className=""
+    className="recharts-responsive-container"
     style={
       Object {
         "height": "100%",
@@ -7983,7 +7983,7 @@ exports[`Storyshots DatetimePickerDialog API 1`] = `
 
 .c0:focus {
   border-color: #00A1DE;
-  box-shadow: 0 0 3px 0 rgba(0, 161, 222, 0.5);
+  box-shadow: 0 0 3px 0 rgba(0,161,222,0.5);
 }
 
 .c0::-webkit-input-placeholder {
@@ -8522,7 +8522,7 @@ exports[`Storyshots Input API 1`] = `
 
 .c0:focus {
   border-color: #00A1DE;
-  box-shadow: 0 0 3px 0 rgba(0, 161, 222, 0.5);
+  box-shadow: 0 0 3px 0 rgba(0,161,222,0.5);
 }
 
 .c0::-webkit-input-placeholder {
@@ -8566,12 +8566,12 @@ exports[`Storyshots Input With focus props 1`] = `
   color: #353630;
   font-size: 1rem;
   border-color: #00A1DE;
-  box-shadow: 0 0 3px 0 rgba(0, 161, 222, 0.5);
+  box-shadow: 0 0 3px 0 rgba(0,161,222,0.5);
 }
 
 .c0:focus {
   border-color: #00A1DE;
-  box-shadow: 0 0 3px 0 rgba(0, 161, 222, 0.5);
+  box-shadow: 0 0 3px 0 rgba(0,161,222,0.5);
 }
 
 .c0::-webkit-input-placeholder {
@@ -8620,7 +8620,7 @@ exports[`Storyshots Input With kind props 1`] = `
 
 .c2:focus {
   border-color: #00A1DE;
-  box-shadow: 0 0 3px 0 rgba(0, 161, 222, 0.5);
+  box-shadow: 0 0 3px 0 rgba(0,161,222,0.5);
 }
 
 .c2::-webkit-input-placeholder {
@@ -8661,7 +8661,7 @@ exports[`Storyshots Input With kind props 1`] = `
 
 .c1:focus {
   border-color: #FAFAFA;
-  box-shadow: 0 0 3px 0 rgba(250, 250, 250, 0.5);
+  box-shadow: 0 0 3px 0 rgba(250,250,250,0.5);
 }
 
 .c1::-webkit-input-placeholder {
@@ -8702,7 +8702,7 @@ exports[`Storyshots Input With kind props 1`] = `
 
 .c3:focus {
   border-color: #69BE28;
-  box-shadow: 0 0 3px 0 rgba(105, 190, 40, 0.5);
+  box-shadow: 0 0 3px 0 rgba(105,190,40,0.5);
 }
 
 .c3::-webkit-input-placeholder {
@@ -8743,7 +8743,7 @@ exports[`Storyshots Input With kind props 1`] = `
 
 .c4:focus {
   border-color: #F5364E;
-  box-shadow: 0 0 3px 0 rgba(245, 54, 78, 0.5);
+  box-shadow: 0 0 3px 0 rgba(245,54,78,0.5);
 }
 
 .c4::-webkit-input-placeholder {
@@ -8784,7 +8784,7 @@ exports[`Storyshots Input With kind props 1`] = `
 
 .c5:focus {
   border-color: #F39A1E;
-  box-shadow: 0 0 3px 0 rgba(243, 154, 30, 0.5);
+  box-shadow: 0 0 3px 0 rgba(243,154,30,0.5);
 }
 
 .c5::-webkit-input-placeholder {
@@ -8862,7 +8862,7 @@ exports[`Storyshots Input With type props 1`] = `
 
 .c1:focus {
   border-color: #00A1DE;
-  box-shadow: 0 0 3px 0 rgba(0, 161, 222, 0.5);
+  box-shadow: 0 0 3px 0 rgba(0,161,222,0.5);
 }
 
 .c1::-webkit-input-placeholder {
@@ -9004,15 +9004,15 @@ exports[`Storyshots InputGroup API 1`] = `
   height: 32px;
   padding: 6px 15px;
   font-size: 1rem;
-  border-color: rgb(0, 130, 179);
+  border-color: rgb(0,130,179);
 }
 
 .c4:hover {
-  background-color: rgb(0, 151, 208);
+  background-color: rgb(0,151,208);
 }
 
 .c4:active {
-  background-color: rgb(0, 144, 198);
+  background-color: rgb(0,144,198);
 }
 
 .c5 {
@@ -9032,15 +9032,15 @@ exports[`Storyshots InputGroup API 1`] = `
   height: 32px;
   padding: 6px 15px;
   font-size: 1rem;
-  border-color: rgb(202, 202, 202);
+  border-color: rgb(202,202,202);
 }
 
 .c5:hover {
-  background-color: rgb(234, 234, 234);
+  background-color: rgb(234,234,234);
 }
 
 .c5:active {
-  background-color: rgb(223, 223, 223);
+  background-color: rgb(223,223,223);
 }
 
 .c6 {
@@ -9060,15 +9060,15 @@ exports[`Storyshots InputGroup API 1`] = `
   height: 32px;
   padding: 6px 15px;
   font-size: 1rem;
-  border-color: rgb(196, 124, 24);
+  border-color: rgb(196,124,24);
 }
 
 .c6:hover {
-  background-color: rgb(228, 144, 28);
+  background-color: rgb(228,144,28);
 }
 
 .c6:active {
-  background-color: rgb(217, 137, 27);
+  background-color: rgb(217,137,27);
 }
 
 .c8 {
@@ -9088,15 +9088,15 @@ exports[`Storyshots InputGroup API 1`] = `
   height: 32px;
   padding: 0;
   font-size: 1rem;
-  border-color: rgb(0, 130, 179);
+  border-color: rgb(0,130,179);
 }
 
 .c8:hover {
-  background-color: rgb(0, 151, 208);
+  background-color: rgb(0,151,208);
 }
 
 .c8:active {
-  background-color: rgb(0, 144, 198);
+  background-color: rgb(0,144,198);
 }
 
 .c2 {
@@ -9116,15 +9116,15 @@ exports[`Storyshots InputGroup API 1`] = `
   height: 20px;
   padding: 0 5px;
   font-size: 0.923rem;
-  border-color: rgb(0, 130, 179);
+  border-color: rgb(0,130,179);
 }
 
 .c2:hover {
-  background-color: rgb(0, 151, 208);
+  background-color: rgb(0,151,208);
 }
 
 .c2:active {
-  background-color: rgb(0, 144, 198);
+  background-color: rgb(0,144,198);
 }
 
 .c3 {
@@ -9144,15 +9144,15 @@ exports[`Storyshots InputGroup API 1`] = `
   height: 20px;
   padding: 0 5px;
   font-size: 0.923rem;
-  border-color: rgb(202, 202, 202);
+  border-color: rgb(202,202,202);
 }
 
 .c3:hover {
-  background-color: rgb(234, 234, 234);
+  background-color: rgb(234,234,234);
 }
 
 .c3:active {
-  background-color: rgb(223, 223, 223);
+  background-color: rgb(223,223,223);
 }
 
 .c7 {
@@ -9173,7 +9173,7 @@ exports[`Storyshots InputGroup API 1`] = `
 
 .c7:focus {
   border-color: #00A1DE;
-  box-shadow: 0 0 3px 0 rgba(0, 161, 222, 0.5);
+  box-shadow: 0 0 3px 0 rgba(0,161,222,0.5);
 }
 
 .c7::-webkit-input-placeholder {
@@ -9388,7 +9388,7 @@ exports[`Storyshots InputRange API 1`] = `
   -webkit-transition: -webkit-transform 0.3s ease,width 0.2s ease,height 0.2s ease;
   -webkit-transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
   transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
-  box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #00A1DE,inset 0 0 0 3px rgb(0, 192, 255);
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #00A1DE,inset 0 0 0 3px rgb(0,192,255);
 }
 
 .c0::-moz-range-thumb {
@@ -9400,7 +9400,7 @@ exports[`Storyshots InputRange API 1`] = `
   background-image: radial-gradient(50% 50%,#FFFFFF 50%,#FFFFFF 73%,#F8F8F8 81%,#EBEBEB 90%,#DDDDDD 95%);
   -moz-appearance: none;
   -moz-transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
-  box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #00A1DE,inset 0 0 0 3px rgb(0, 192, 255);
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #00A1DE,inset 0 0 0 3px rgb(0,192,255);
 }
 
 .c0::-ms-thumb {
@@ -9413,7 +9413,7 @@ exports[`Storyshots InputRange API 1`] = `
   -webkit-transition: -webkit-transform 0.3s ease,width 0.2s ease,height 0.2s ease;
   -webkit-transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
   transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
-  box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #00A1DE,inset 0 0 0 3px rgb(0, 192, 255);
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #00A1DE,inset 0 0 0 3px rgb(0,192,255);
 }
 
 .c0::-webkit-slider-thumb:hover {
@@ -9489,7 +9489,7 @@ exports[`Storyshots InputRange With kind props 1`] = `
   -webkit-transition: -webkit-transform 0.3s ease,width 0.2s ease,height 0.2s ease;
   -webkit-transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
   transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
-  box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #00A1DE,inset 0 0 0 3px rgb(0, 192, 255);
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #00A1DE,inset 0 0 0 3px rgb(0,192,255);
 }
 
 .c2::-moz-range-thumb {
@@ -9501,7 +9501,7 @@ exports[`Storyshots InputRange With kind props 1`] = `
   background-image: radial-gradient(50% 50%,#FFFFFF 50%,#FFFFFF 73%,#F8F8F8 81%,#EBEBEB 90%,#DDDDDD 95%);
   -moz-appearance: none;
   -moz-transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
-  box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #00A1DE,inset 0 0 0 3px rgb(0, 192, 255);
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #00A1DE,inset 0 0 0 3px rgb(0,192,255);
 }
 
 .c2::-ms-thumb {
@@ -9514,7 +9514,7 @@ exports[`Storyshots InputRange With kind props 1`] = `
   -webkit-transition: -webkit-transform 0.3s ease,width 0.2s ease,height 0.2s ease;
   -webkit-transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
   transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
-  box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #00A1DE,inset 0 0 0 3px rgb(0, 192, 255);
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #00A1DE,inset 0 0 0 3px rgb(0,192,255);
 }
 
 .c2::-webkit-slider-thumb:hover {
@@ -9582,7 +9582,7 @@ exports[`Storyshots InputRange With kind props 1`] = `
   -webkit-transition: -webkit-transform 0.3s ease,width 0.2s ease,height 0.2s ease;
   -webkit-transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
   transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
-  box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #FAFAFA,inset 0 0 0 3px rgb(255, 255, 255);
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #FAFAFA,inset 0 0 0 3px rgb(255,255,255);
 }
 
 .c1::-moz-range-thumb {
@@ -9594,7 +9594,7 @@ exports[`Storyshots InputRange With kind props 1`] = `
   background-image: radial-gradient(50% 50%,#FFFFFF 50%,#FFFFFF 73%,#F8F8F8 81%,#EBEBEB 90%,#DDDDDD 95%);
   -moz-appearance: none;
   -moz-transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
-  box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #FAFAFA,inset 0 0 0 3px rgb(255, 255, 255);
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #FAFAFA,inset 0 0 0 3px rgb(255,255,255);
 }
 
 .c1::-ms-thumb {
@@ -9607,7 +9607,7 @@ exports[`Storyshots InputRange With kind props 1`] = `
   -webkit-transition: -webkit-transform 0.3s ease,width 0.2s ease,height 0.2s ease;
   -webkit-transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
   transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
-  box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #FAFAFA,inset 0 0 0 3px rgb(255, 255, 255);
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #FAFAFA,inset 0 0 0 3px rgb(255,255,255);
 }
 
 .c1::-webkit-slider-thumb:hover {
@@ -9675,7 +9675,7 @@ exports[`Storyshots InputRange With kind props 1`] = `
   -webkit-transition: -webkit-transform 0.3s ease,width 0.2s ease,height 0.2s ease;
   -webkit-transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
   transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
-  box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #69BE28,inset 0 0 0 3px rgb(125, 227, 48);
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #69BE28,inset 0 0 0 3px rgb(125,227,48);
 }
 
 .c3::-moz-range-thumb {
@@ -9687,7 +9687,7 @@ exports[`Storyshots InputRange With kind props 1`] = `
   background-image: radial-gradient(50% 50%,#FFFFFF 50%,#FFFFFF 73%,#F8F8F8 81%,#EBEBEB 90%,#DDDDDD 95%);
   -moz-appearance: none;
   -moz-transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
-  box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #69BE28,inset 0 0 0 3px rgb(125, 227, 48);
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #69BE28,inset 0 0 0 3px rgb(125,227,48);
 }
 
 .c3::-ms-thumb {
@@ -9700,7 +9700,7 @@ exports[`Storyshots InputRange With kind props 1`] = `
   -webkit-transition: -webkit-transform 0.3s ease,width 0.2s ease,height 0.2s ease;
   -webkit-transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
   transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
-  box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #69BE28,inset 0 0 0 3px rgb(125, 227, 48);
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #69BE28,inset 0 0 0 3px rgb(125,227,48);
 }
 
 .c3::-webkit-slider-thumb:hover {
@@ -9768,7 +9768,7 @@ exports[`Storyshots InputRange With kind props 1`] = `
   -webkit-transition: -webkit-transform 0.3s ease,width 0.2s ease,height 0.2s ease;
   -webkit-transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
   transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
-  box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #F5364E,inset 0 0 0 3px rgb(255, 65, 93);
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #F5364E,inset 0 0 0 3px rgb(255,65,93);
 }
 
 .c4::-moz-range-thumb {
@@ -9780,7 +9780,7 @@ exports[`Storyshots InputRange With kind props 1`] = `
   background-image: radial-gradient(50% 50%,#FFFFFF 50%,#FFFFFF 73%,#F8F8F8 81%,#EBEBEB 90%,#DDDDDD 95%);
   -moz-appearance: none;
   -moz-transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
-  box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #F5364E,inset 0 0 0 3px rgb(255, 65, 93);
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #F5364E,inset 0 0 0 3px rgb(255,65,93);
 }
 
 .c4::-ms-thumb {
@@ -9793,7 +9793,7 @@ exports[`Storyshots InputRange With kind props 1`] = `
   -webkit-transition: -webkit-transform 0.3s ease,width 0.2s ease,height 0.2s ease;
   -webkit-transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
   transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
-  box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #F5364E,inset 0 0 0 3px rgb(255, 65, 93);
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #F5364E,inset 0 0 0 3px rgb(255,65,93);
 }
 
 .c4::-webkit-slider-thumb:hover {
@@ -9861,7 +9861,7 @@ exports[`Storyshots InputRange With kind props 1`] = `
   -webkit-transition: -webkit-transform 0.3s ease,width 0.2s ease,height 0.2s ease;
   -webkit-transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
   transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
-  box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #F39A1E,inset 0 0 0 3px rgb(255, 184, 36);
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #F39A1E,inset 0 0 0 3px rgb(255,184,36);
 }
 
 .c5::-moz-range-thumb {
@@ -9873,7 +9873,7 @@ exports[`Storyshots InputRange With kind props 1`] = `
   background-image: radial-gradient(50% 50%,#FFFFFF 50%,#FFFFFF 73%,#F8F8F8 81%,#EBEBEB 90%,#DDDDDD 95%);
   -moz-appearance: none;
   -moz-transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
-  box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #F39A1E,inset 0 0 0 3px rgb(255, 184, 36);
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #F39A1E,inset 0 0 0 3px rgb(255,184,36);
 }
 
 .c5::-ms-thumb {
@@ -9886,7 +9886,7 @@ exports[`Storyshots InputRange With kind props 1`] = `
   -webkit-transition: -webkit-transform 0.3s ease,width 0.2s ease,height 0.2s ease;
   -webkit-transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
   transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
-  box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #F39A1E,inset 0 0 0 3px rgb(255, 184, 36);
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #F39A1E,inset 0 0 0 3px rgb(255,184,36);
 }
 
 .c5::-webkit-slider-thumb:hover {
@@ -10451,15 +10451,15 @@ exports[`Storyshots LazyloadOnce With component props 1`] = `
   height: 32px;
   padding: 6px 15px;
   font-size: 1rem;
-  border-color: rgb(0, 130, 179);
+  border-color: rgb(0,130,179);
 }
 
 .c1:hover {
-  background-color: rgb(0, 151, 208);
+  background-color: rgb(0,151,208);
 }
 
 .c1:active {
-  background-color: rgb(0, 144, 198);
+  background-color: rgb(0,144,198);
 }
 
 .c0 {
@@ -10550,7 +10550,7 @@ exports[`Storyshots Menu API for MenuItem 1`] = `
 }
 
 .c0:active {
-  background-color: rgb(0, 151, 208);
+  background-color: rgb(0,151,208);
   color: white;
 }
 
@@ -10593,11 +10593,11 @@ exports[`Storyshots Menu Fixed width 1`] = `
 }
 
 .c7:hover {
-  color: rgb(0, 151, 208);
+  color: rgb(0,151,208);
 }
 
 .c7:active {
-  color: rgb(0, 144, 198);
+  color: rgb(0,144,198);
 }
 
 .c5 {
@@ -10652,7 +10652,7 @@ exports[`Storyshots Menu Fixed width 1`] = `
 }
 
 .c3:active {
-  background-color: rgb(0, 151, 208);
+  background-color: rgb(0,151,208);
   color: white;
 }
 
@@ -10808,7 +10808,7 @@ exports[`Storyshots Menu Min width 1`] = `
 }
 
 .c2:active {
-  background-color: rgb(0, 151, 208);
+  background-color: rgb(0,151,208);
   color: white;
 }
 
@@ -11046,15 +11046,15 @@ exports[`Storyshots MobileFixedFooter API 1`] = `
   height: 32px;
   padding: 6px 15px;
   font-size: 1rem;
-  border-color: rgb(0, 130, 179);
+  border-color: rgb(0,130,179);
 }
 
 .c4:hover {
-  background-color: rgb(0, 151, 208);
+  background-color: rgb(0,151,208);
 }
 
 .c4:active {
-  background-color: rgb(0, 144, 198);
+  background-color: rgb(0,144,198);
 }
 
 .c3 {
@@ -11074,15 +11074,15 @@ exports[`Storyshots MobileFixedFooter API 1`] = `
   height: 32px;
   padding: 6px 15px;
   font-size: 1rem;
-  border-color: rgb(202, 202, 202);
+  border-color: rgb(202,202,202);
 }
 
 .c3:hover {
-  background-color: rgb(234, 234, 234);
+  background-color: rgb(234,234,234);
 }
 
 .c3:active {
-  background-color: rgb(223, 223, 223);
+  background-color: rgb(223,223,223);
 }
 
 .c1 {
@@ -11593,7 +11593,7 @@ exports[`Storyshots Notification API 1`] = `
   -ms-flex-pack: space-between;
   justify-content: space-between;
   padding: 10px 20px;
-  background-color: rgba(53, 54, 48, 0.9);
+  background-color: rgba(53,54,48,0.9);
   color: #FFFFFF;
   font-size: 1rem;
 }
@@ -11636,15 +11636,15 @@ exports[`Storyshots Notification With feedbck Button component 1`] = `
   height: 32px;
   padding: 6px 15px;
   font-size: 1rem;
-  border-color: rgb(0, 130, 179);
+  border-color: rgb(0,130,179);
 }
 
 .c2:hover {
-  background-color: rgb(0, 151, 208);
+  background-color: rgb(0,151,208);
 }
 
 .c2:active {
-  background-color: rgb(0, 144, 198);
+  background-color: rgb(0,144,198);
 }
 
 .c0 {
@@ -11664,7 +11664,7 @@ exports[`Storyshots Notification With feedbck Button component 1`] = `
   -ms-flex-pack: space-between;
   justify-content: space-between;
   padding: 10px 20px;
-  background-color: rgba(53, 54, 48, 0.9);
+  background-color: rgba(53,54,48,0.9);
   color: #FFFFFF;
   font-size: 1rem;
 }
@@ -11702,11 +11702,11 @@ exports[`Storyshots Overlay API 1`] = `
 }
 
 .c0:hover {
-  color: rgb(0, 151, 208);
+  color: rgb(0,151,208);
 }
 
 .c0:active {
-  color: rgb(0, 144, 198);
+  color: rgb(0,144,198);
 }
 
 <div>
@@ -11740,15 +11740,15 @@ exports[`Storyshots Overlay Dropdown Menu 1`] = `
   height: 32px;
   padding: 6px 15px;
   font-size: 1rem;
-  border-color: rgb(0, 130, 179);
+  border-color: rgb(0,130,179);
 }
 
 .c1:hover {
-  background-color: rgb(0, 151, 208);
+  background-color: rgb(0,151,208);
 }
 
 .c1:active {
-  background-color: rgb(0, 144, 198);
+  background-color: rgb(0,144,198);
 }
 
 .c0 {
@@ -12356,15 +12356,15 @@ exports[`Storyshots Select API - ReadOnly 1`] = `
   height: 32px;
   padding: 0;
   font-size: 1rem;
-  border-color: rgb(0, 130, 179);
+  border-color: rgb(0,130,179);
 }
 
 .c5:hover {
-  background-color: rgb(0, 151, 208);
+  background-color: rgb(0,151,208);
 }
 
 .c5:active {
-  background-color: rgb(0, 144, 198);
+  background-color: rgb(0,144,198);
 }
 
 .c3 {
@@ -12385,7 +12385,7 @@ exports[`Storyshots Select API - ReadOnly 1`] = `
 
 .c3:focus {
   border-color: #00A1DE;
-  box-shadow: 0 0 3px 0 rgba(0, 161, 222, 0.5);
+  box-shadow: 0 0 3px 0 rgba(0,161,222,0.5);
 }
 
 .c3::-webkit-input-placeholder {
@@ -12542,15 +12542,15 @@ exports[`Storyshots Select With disabled props 1`] = `
   height: 32px;
   padding: 0;
   font-size: 1rem;
-  border-color: rgb(0, 130, 179);
+  border-color: rgb(0,130,179);
 }
 
 .c5:hover {
-  background-color: rgb(0, 151, 208);
+  background-color: rgb(0,151,208);
 }
 
 .c5:active {
-  background-color: rgb(0, 144, 198);
+  background-color: rgb(0,144,198);
 }
 
 .c3 {
@@ -12571,7 +12571,7 @@ exports[`Storyshots Select With disabled props 1`] = `
 
 .c3:focus {
   border-color: #00A1DE;
-  box-shadow: 0 0 3px 0 rgba(0, 161, 222, 0.5);
+  box-shadow: 0 0 3px 0 rgba(0,161,222,0.5);
 }
 
 .c3::-webkit-input-placeholder {
@@ -12740,15 +12740,15 @@ exports[`Storyshots Select With kind props 1`] = `
   height: 32px;
   padding: 0;
   font-size: 1rem;
-  border-color: rgb(196, 124, 24);
+  border-color: rgb(196,124,24);
 }
 
 .c5:hover {
-  background-color: rgb(228, 144, 28);
+  background-color: rgb(228,144,28);
 }
 
 .c5:active {
-  background-color: rgb(217, 137, 27);
+  background-color: rgb(217,137,27);
 }
 
 .c3 {
@@ -12769,7 +12769,7 @@ exports[`Storyshots Select With kind props 1`] = `
 
 .c3:focus {
   border-color: #F39A1E;
-  box-shadow: 0 0 3px 0 rgba(243, 154, 30, 0.5);
+  box-shadow: 0 0 3px 0 rgba(243,154,30,0.5);
 }
 
 .c3::-webkit-input-placeholder {
@@ -13727,11 +13727,11 @@ exports[`Storyshots TabItem API 1`] = `
 }
 
 .c0:hover {
-  color: rgb(0, 151, 208);
+  color: rgb(0,151,208);
 }
 
 .c0:active {
-  color: rgb(0, 144, 198);
+  color: rgb(0,144,198);
 }
 
 .c1 {
@@ -13761,11 +13761,11 @@ exports[`Storyshots TabItem API 1`] = `
 }
 
 .c1:hover {
-  color: rgb(0, 151, 208);
+  color: rgb(0,151,208);
 }
 
 .c1:active {
-  color: rgb(0, 144, 198);
+  color: rgb(0,144,198);
 }
 
 <div>
@@ -13816,11 +13816,11 @@ exports[`Storyshots TabItem With color props 1`] = `
 }
 
 .c0:hover {
-  color: rgb(228, 144, 28);
+  color: rgb(228,144,28);
 }
 
 .c0:active {
-  color: rgb(217, 137, 27);
+  color: rgb(217,137,27);
 }
 
 .c1 {
@@ -13850,11 +13850,11 @@ exports[`Storyshots TabItem With color props 1`] = `
 }
 
 .c1:hover {
-  color: rgb(228, 144, 28);
+  color: rgb(228,144,28);
 }
 
 .c1:active {
-  color: rgb(217, 137, 27);
+  color: rgb(217,137,27);
 }
 
 <div>
@@ -13905,11 +13905,11 @@ exports[`Storyshots TabItem With state 1`] = `
 }
 
 .c0:hover {
-  color: rgb(0, 151, 208);
+  color: rgb(0,151,208);
 }
 
 .c0:active {
-  color: rgb(0, 144, 198);
+  color: rgb(0,144,198);
 }
 
 <div>
@@ -14038,7 +14038,7 @@ exports[`Storyshots Textarea API 1`] = `
 
 .c0:focus {
   border-color: #00A1DE;
-  box-shadow: 0 0 3px 0 rgba(0, 161, 222, 0.5);
+  box-shadow: 0 0 3px 0 rgba(0,161,222,0.5);
 }
 
 .c0::-webkit-input-placeholder {
@@ -14089,7 +14089,7 @@ exports[`Storyshots Textarea With kind props 1`] = `
 
 .c2:focus {
   border-color: #00A1DE;
-  box-shadow: 0 0 3px 0 rgba(0, 161, 222, 0.5);
+  box-shadow: 0 0 3px 0 rgba(0,161,222,0.5);
 }
 
 .c2::-webkit-input-placeholder {
@@ -14131,7 +14131,7 @@ exports[`Storyshots Textarea With kind props 1`] = `
 
 .c1:focus {
   border-color: #FAFAFA;
-  box-shadow: 0 0 3px 0 rgba(250, 250, 250, 0.5);
+  box-shadow: 0 0 3px 0 rgba(250,250,250,0.5);
 }
 
 .c1::-webkit-input-placeholder {
@@ -14173,7 +14173,7 @@ exports[`Storyshots Textarea With kind props 1`] = `
 
 .c3:focus {
   border-color: #69BE28;
-  box-shadow: 0 0 3px 0 rgba(105, 190, 40, 0.5);
+  box-shadow: 0 0 3px 0 rgba(105,190,40,0.5);
 }
 
 .c3::-webkit-input-placeholder {
@@ -14215,7 +14215,7 @@ exports[`Storyshots Textarea With kind props 1`] = `
 
 .c4:focus {
   border-color: #F5364E;
-  box-shadow: 0 0 3px 0 rgba(245, 54, 78, 0.5);
+  box-shadow: 0 0 3px 0 rgba(245,54,78,0.5);
 }
 
 .c4::-webkit-input-placeholder {
@@ -14257,7 +14257,7 @@ exports[`Storyshots Textarea With kind props 1`] = `
 
 .c5:focus {
   border-color: #F39A1E;
-  box-shadow: 0 0 3px 0 rgba(243, 154, 30, 0.5);
+  box-shadow: 0 0 3px 0 rgba(243,154,30,0.5);
 }
 
 .c5::-webkit-input-placeholder {
@@ -14351,7 +14351,7 @@ exports[`Storyshots Toast API 1`] = `
   align-items: center;
   padding: 10px 20px;
   color: #00A1DE;
-  background-color: rgba(0, 161, 222, 0.1);
+  background-color: rgba(0,161,222,0.1);
 }
 
 <div
@@ -14418,7 +14418,7 @@ exports[`Storyshots Toast With kind props 1`] = `
   align-items: center;
   padding: 10px 20px;
   color: #00A1DE;
-  background-color: rgba(0, 161, 222, 0.1);
+  background-color: rgba(0,161,222,0.1);
 }
 
 .c3 {
@@ -14432,7 +14432,7 @@ exports[`Storyshots Toast With kind props 1`] = `
   align-items: center;
   padding: 10px 20px;
   color: #999A94;
-  background-color: rgba(250, 250, 250, 0.1);
+  background-color: rgba(250,250,250,0.1);
 }
 
 .c8 {
@@ -14446,7 +14446,7 @@ exports[`Storyshots Toast With kind props 1`] = `
   align-items: center;
   padding: 10px 20px;
   color: #69BE28;
-  background-color: rgba(105, 190, 40, 0.1);
+  background-color: rgba(105,190,40,0.1);
 }
 
 .c10 {
@@ -14460,7 +14460,7 @@ exports[`Storyshots Toast With kind props 1`] = `
   align-items: center;
   padding: 10px 20px;
   color: #F5364E;
-  background-color: rgba(245, 54, 78, 0.1);
+  background-color: rgba(245,54,78,0.1);
 }
 
 .c12 {
@@ -14474,7 +14474,7 @@ exports[`Storyshots Toast With kind props 1`] = `
   align-items: center;
   padding: 10px 20px;
   color: #F39A1E;
-  background-color: rgba(243, 154, 30, 0.1);
+  background-color: rgba(243,154,30,0.1);
 }
 
 .c0 > * {

@@ -59,7 +59,7 @@ Array [
   padding-right: 0;
 }
 
-@media (min-width: 768px) {
+@media (min-width:768px) {
   .c5 {
     display: inherit;
   }
@@ -207,7 +207,7 @@ Array [
   display: none;
 }
 
-@media (min-width: 768px) {
+@media (min-width:768px) {
   .c0 {
     display: inherit;
   }

@@ -91,7 +91,7 @@ Array [
   margin-bottom: 5px;
 }
 
-@media (min-width: 768px) {
+@media (min-width:768px) {
   .c6 {
     -webkit-box-pack: space-between;
     -webkit-justify-content: space-between;
@@ -222,7 +222,7 @@ Array [
   margin-bottom: 5px;
 }
 
-@media (min-width: 768px) {
+@media (min-width:768px) {
   .dEuNnW .c0 {
     margin-bottom: 0;
   }
@@ -275,7 +275,7 @@ Array [
   margin-bottom: 5px;
 }
 
-@media (min-width: 768px) {
+@media (min-width:768px) {
   .c0 {
     -webkit-box-pack: space-between;
     -webkit-justify-content: space-between;
