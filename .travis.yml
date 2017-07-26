@@ -16,10 +16,11 @@ before_install:
       curl -o- -L https://yarnpkg.com/install.sh | bash -s -- --version $YARN_VERSION
     fi
 
-script:
-  - yarn run danger
-  - ./tasks/test.sh
-  - ./tasks/test-page.sh
+jobs:
+  include:
+    - script: yarn run danger
+    - script: ./tasks/test.sh
+    - script: ./tasks/test-page.sh
 
 after_success:
   - ./node_modules/.bin/codecov
@@ -27,6 +28,6 @@ after_success:
 cache:
   yarn: true
   directories:
-    - ~/.yarn
+    - $HOME/.yarn
     - node_modules
     - packages/mcs-lite-introduction/node_modules
