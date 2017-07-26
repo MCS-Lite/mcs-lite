@@ -19,13 +19,22 @@ before_install:
 jobs:
   include:
     - script: yarn run danger
+      env:
+        - TRAVIS_JOB_NAME=danger
     - script: ./tasks/lint.sh
+      env:
+        - TRAVIS_JOB_NAME=lint
     - script: ./tasks/test.sh
-    - script: ./tasks/test-page.sh
-    - stage: Success
-      script: skip
+      env:
+        - TRAVIS_JOB_NAME=test
       after_success:
         - ./node_modules/.bin/codecov
+    - script: ./tasks/test-page.sh
+      env:
+        - TRAVIS_JOB_NAME=test-page
+    - script: skip
+      env:
+        - TRAVIS_JOB_NAME=cache
       cache:
         yarn: true
         directories:
