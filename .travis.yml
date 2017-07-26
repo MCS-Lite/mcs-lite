@@ -18,21 +18,18 @@ before_install:
 
 jobs:
   include:
-    - stage: yarn run danger
+    - stage: Test
       script: yarn run danger
-    - stage: ./tasks/lint.sh
       script: ./tasks/lint.sh
-    - stage: ./tasks/test.sh
       script: ./tasks/test.sh
-    - stage: ./tasks/test-page.sh
       script: ./tasks/test-page.sh
-
-after_success:
-  - ./node_modules/.bin/codecov
-
-cache:
-  yarn: true
-  directories:
-    - $HOME/.yarn
-    - node_modules
-    - packages/mcs-lite-introduction/node_modules
+    - stage: Success
+      script: skip
+      after_success:
+        - ./node_modules/.bin/codecov
+      cache:
+        yarn: true
+        directories:
+          - $HOME/.yarn
+          - node_modules
+          - packages/mcs-lite-introduction/node_modules
