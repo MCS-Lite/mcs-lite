@@ -18,11 +18,10 @@ before_install:
 
 jobs:
   include:
-    - stage: Test
-      script: yarn run danger
-      script: ./tasks/lint.sh
-      script: ./tasks/test.sh
-      script: ./tasks/test-page.sh
+    - script: yarn run danger
+    - script: ./tasks/lint.sh
+    - script: ./tasks/test.sh
+    - script: ./tasks/test-page.sh
     - stage: Success
       script: skip
       after_success:
