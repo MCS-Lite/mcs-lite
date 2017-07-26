@@ -10,6 +10,7 @@ references:
     run:
         name: Move to workspace
         command: |
+          rm -rf .yarn-cache CHANGELOG.md README.md yarn.lock
           mkdir /tmp/workspace
           mv /tmp/app /tmp/workspace
   persist_to_workspace: &persist_to_workspace

@@ -22,10 +22,10 @@ exports[`should renders <Image> correctly with Mobile view 1`] = `
   height: auto;
   width: 100%;
   min-height: initial;
-  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 8px 0 rgba(0,0,0,0.1);
 }
 
-@media (min-width: 768px) {
+@media (min-width:768px) {
   .c0 {
     position: relative;
     height: 350px;
@@ -58,7 +58,7 @@ exports[`should renders <Image> correctly with Mobile view 1`] = `
   }
 }
 
-@media (min-width: 970px) {
+@media (min-width:970px) {
   .c0 > * {
     display: block;
   }
