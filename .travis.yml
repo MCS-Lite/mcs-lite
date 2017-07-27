@@ -16,20 +16,20 @@ before_install:
 install:
   - echo "none"
 
+cache:
+  yarn: true
+  directories:
+    - $HOME/.yarn
+    - node_modules
+
 jobs:
   include:
-    # Prepare npm and cache
+    # Prepare npm and Warm up cache
     - stage: Install Dependencies and Cache
       script: yarn install --pure-lockfile
-      cache:
-        yarn: true
-        directories:
-          - $HOME/.yarn
-          - node_modules
-
     # Use cache
     - stage: Test
-      script:  yarn run danger
+      script: yarn run danger
     - script: yarn run postinstall && ./tasks/lint.sh
     - script: yarn run postinstall && ./tasks/test-page.sh
     - script: yarn run postinstall && ./tasks/test.sh
