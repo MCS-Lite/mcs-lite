@@ -71,16 +71,14 @@ jobs:
     steps:
       - *attach_workspace
       - *restore_from_workspace
-      - run: yarn run eslint
-      - run: yarn run flow
-      - run: yarn run stylelint
+      - run: ./tasks/lint.sh
   # For unit testing of all packages.
   test:
     <<: *docker_default
     steps:
       - *attach_workspace
       - *restore_from_workspace
-      - run: node_modules/.bin/lerna run test
+      - run: ./tasks/test.sh
   # For building demo page.
   test-page:
     <<: *docker_default

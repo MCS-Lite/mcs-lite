@@ -127,7 +127,10 @@ $ ./tasks/build.sh
 ## Testing
 
 ```
+$ yarn run format
+$ ./tasks/lint.sh
 $ ./tasks/test.sh
+$ ./tasks/test-page.sh
 ```
 
 ## mcs-lite-ui
