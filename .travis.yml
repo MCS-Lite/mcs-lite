@@ -21,30 +21,23 @@ install:
 
 jobs:
   include:
-    - stage: Install Dependencies
+    - stage: Install Dependencies and Cache
       script: |
-        yarn install
-    - stage: Test
-      script: yarn run danger
-      env:
-        - TRAVIS_JOB_NAME=danger
-    - script: ./tasks/lint.sh
-      env:
-        - TRAVIS_JOB_NAME=lint
-    - script: ./tasks/test.sh
-      env:
-        - TRAVIS_JOB_NAME=test
-      after_success:
-        - ./node_modules/.bin/codecov
-    - script: ./tasks/test-page.sh
-      env:
-        - TRAVIS_JOB_NAME=test-page
-    - script: skip
-      env:
-        - TRAVIS_JOB_NAME=cache
+        yarn install --pure-lockfile
+        pwd
       cache:
         yarn: true
         directories:
           - $HOME/.yarn
           - node_modules
           - packages/mcs-lite-introduction/node_modules
+
+    - stage: Test
+      script: |
+        yarn run danger
+        pwd
+    - script: ./tasks/lint.sh
+    - script: ./tasks/test-page.sh
+    - script: ./tasks/test.sh
+      after_success:
+        - ./node_modules/.bin/codecov
