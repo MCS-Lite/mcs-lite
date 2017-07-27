@@ -6,9 +6,6 @@ env:
   global:
     - YARN_VERSION=0.27.5
 
-notifications:
-  email: evenchange4@gmail.com
-
 before_install:
   - export PATH="$HOME/.yarn/bin:$PATH"
   - |
@@ -21,23 +18,23 @@ install:
 
 jobs:
   include:
+    # Prepare npm and cache
     - stage: Install Dependencies and Cache
-      script: |
-        yarn install --pure-lockfile
-        pwd
+      script: yarn install --pure-lockfile
       cache:
         yarn: true
         directories:
           - $HOME/.yarn
           - node_modules
-          - packages/mcs-lite-introduction/node_modules
 
+    # Use cache
     - stage: Test
-      script: |
-        yarn run danger
-        pwd
-    - script: ./tasks/lint.sh
-    - script: ./tasks/test-page.sh
-    - script: ./tasks/test.sh
+      script:  yarn run danger
+    - script: yarn run postinstall && ./tasks/lint.sh
+    - script: yarn run postinstall && ./tasks/test-page.sh
+    - script: yarn run postinstall && ./tasks/test.sh
       after_success:
         - ./node_modules/.bin/codecov
+
+notifications:
+  email: evenchange4@gmail.com
