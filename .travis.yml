@@ -6,9 +6,6 @@ env:
   global:
     - YARN_VERSION=0.27.5
 
-notifications:
-  email: evenchange4@gmail.com
-
 before_install:
   - export PATH="$HOME/.yarn/bin:$PATH"
   - |
@@ -18,6 +15,7 @@ before_install:
 
 script:
   - yarn run danger
+  - ./tasks/lint.sh
   - ./tasks/test.sh
   - ./tasks/test-page.sh
 
@@ -29,4 +27,6 @@ cache:
   directories:
     - ~/.yarn
     - node_modules
-    - packages/mcs-lite-introduction/node_modules
+
+notifications:
+  email: evenchange4@gmail.com
