@@ -37,6 +37,7 @@ export const FooterWrapper = styled.div`
 
     div {
       margin-left: 5px;
+      line-height: 1em;
     }
   }
 `;

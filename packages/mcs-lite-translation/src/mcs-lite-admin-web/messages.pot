@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"POT-Creation-Date: 2017-07-19T03:14:10.601Z\n"
+"POT-Creation-Date: 2017-08-02T09:19:45.081Z\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "MIME-Version: 1.0\n"
@@ -54,6 +54,17 @@ msgid "使用者可透過下列的 IP 位址連線至 MCS Lite 服務器。"
 msgstr ""
 
 #: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+#. [DashboardLayout.userManagement]
+#. defaultMessage is:
+#. 使用者管理
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+#. [User.userManagement] - Meta/Title
+#. defaultMessage is:
+#. 使用者管理
+msgid "使用者管理"
+msgstr ""
+
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
 #. [System.description] - description
 #. defaultMessage is:
 #. 修改系統的參數設定。
@@ -82,6 +93,13 @@ msgid "切換語言"
 msgstr ""
 
 #: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+#. [User.deleteUser]
+#. defaultMessage is:
+#. 刪除 {length} 位使用者
+msgid "刪除 {length} 位使用者"
+msgstr ""
+
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
 #. [Ip.goToMCSLite]
 #. defaultMessage is:
 #. 前往 MCS Lite
@@ -93,6 +111,13 @@ msgstr ""
 #. defaultMessage is:
 #. 取消
 msgid "取消"
+msgstr ""
+
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+#. [User.name]
+#. defaultMessage is:
+#. 名稱
+msgid "名稱"
 msgstr ""
 
 #: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
@@ -163,6 +188,13 @@ msgid "我們目前無法處理您的請求。請稍後再試。"
 msgstr ""
 
 #: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+#. [User.addUser]
+#. defaultMessage is:
+#. 新增使用者
+msgid "新增使用者"
+msgstr ""
+
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
 #. [Signup.password2.error]
 #. defaultMessage is:
 #. 新密碼和確認密碼不一致
@@ -198,10 +230,24 @@ msgid "歡迎"
 msgstr ""
 
 #: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+#. [User.noRows]
+#. defaultMessage is:
+#. 此帳號不存在，請重新搜尋。
+msgid "此帳號不存在，請重新搜尋。"
+msgstr ""
+
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
 #. [DialogConfirm.notice] - For Dialog Header
 #. defaultMessage is:
 #. 注意！
 msgid "注意！"
+msgstr ""
+
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+#. [User.clearFilter]
+#. defaultMessage is:
+#. 清除搜尋條件
+msgid "清除搜尋條件"
 msgstr ""
 
 #: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
@@ -279,8 +325,22 @@ msgid "註冊"
 msgstr ""
 
 #: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+#. [User.inputUsernameEmail]
+#. defaultMessage is:
+#. 輸入名稱或電子郵件搜尋使用者
+msgid "輸入名稱或電子郵件搜尋使用者"
+msgstr ""
+
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
 #. [Language.select]
 #. defaultMessage is:
 #. 選擇語言
 msgid "選擇語言"
+msgstr ""
+
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+#. [User.email]
+#. defaultMessage is:
+#. 電子信箱
+msgid "電子信箱"
 msgstr ""

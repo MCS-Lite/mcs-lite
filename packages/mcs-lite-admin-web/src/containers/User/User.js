@@ -10,15 +10,14 @@ import Input from 'mcs-lite-ui/lib/Input';
 import Button from 'mcs-lite-ui/lib/Button';
 import SpaceTop from 'mcs-lite-ui/lib/SpaceTop';
 import A from 'mcs-lite-ui/lib/A';
-import Table from 'mcs-lite-ui/lib/Table';
-import MobileFixedFooter from 'mcs-lite-ui/lib/MobileFixedFooter';
 import IconSearch from 'mcs-lite-icon/lib/IconSearch';
 import IconAdd from 'mcs-lite-icon/lib/IconAdd';
-import isJSONValidator from 'validator/lib/isJSON';
+import IconDelete from 'mcs-lite-icon/lib/IconDelete';
 import DashboardTitle from '../../components/DashboardTitle';
 import DialogConfirm from '../../components/DialogConfirm';
 import { InputFilterWrapper, FooterWrapper } from './styled-components';
 import Dialog from './Dialog';
+import Table from './Table';
 
 const componentFromStream = componentFromStreamWithConfig({
   fromESObservable: Observable.from,
@@ -31,17 +30,6 @@ const createEventHandler = createEventHandlerWithConfig({
 
 const User = componentFromStream(props$ => {
   const {
-    handler: onTabItemClick,
-    stream: onTabItemClick$,
-  } = createEventHandler();
-  const {
-    handler: onCodeMirrorChange,
-    stream: onCodeMirrorChange$,
-  } = createEventHandler();
-  const { handler: onSaveClick, stream: onSaveClick$ } = createEventHandler();
-  const { handler: onResetClick, stream: onResetClick$ } = createEventHandler();
-  const { handler: onCancel, stream: onCancel$ } = createEventHandler();
-  const {
     handler: onAddDialogShow,
     stream: onAddDialogShow$,
   } = createEventHandler();
@@ -50,24 +38,65 @@ const User = componentFromStream(props$ => {
     stream: onAddDialogHide$,
   } = createEventHandler();
   const {
+    handler: onDeleteDialogShow,
+    stream: onDeleteDialogShow$,
+  } = createEventHandler();
+  const {
+    handler: onDeleteDialogHide,
+    stream: onDeleteDialogHide$,
+  } = createEventHandler();
+  const {
     handler: onFilterChange,
     stream: onFilterChange$,
   } = createEventHandler();
+  const { handler: onClearClick, stream: onClearClick$ } = createEventHandler();
+  const {
+    handler: onCheckedListChange,
+    stream: onCheckedListChange$,
+  } = createEventHandler();
+  const { handler: onEditClick, stream: onEditClick$ } = createEventHandler();
 
   const isAddDialogShow$ = Observable.merge(
     onAddDialogShow$.mapTo(true),
     onAddDialogHide$.mapTo(false),
   ).startWith(false);
 
+  const isDeleteDialogShow$ = Observable.merge(
+    onDeleteDialogShow$.mapTo(true),
+    onDeleteDialogHide$.mapTo(false),
+  ).startWith(false);
+
+  const filterValue$ = Observable.merge(
+    onFilterChange$.pluck('target', 'value'),
+    onClearClick$.mapTo(''),
+  ).startWith('');
+  const checkedList$ = onCheckedListChange$.startWith([]);
+  const data$ = props$
+    .pluck('users')
+    .combineLatest(filterValue$, (users, filterValue) =>
+      users.filter(user =>
+        `${user.email} ${user.userName}`.includes(filterValue),
+      ),
+    );
+
   // Remind: There are four fetch Side-effects below.
-  props$
-    .first()
-    .pluck('fetchUsers')
-    .subscribe(R.call);
+  props$.first().pluck('fetchUsers').subscribe(R.call);
+  onEditClick$.do(console.log).subscribe();
 
   return props$.combineLatest(
+    data$,
     isAddDialogShow$,
-    ({ getMessages: t, users }, isAddDialogShow) =>
+    isDeleteDialogShow$,
+    filterValue$,
+    checkedList$,
+    (
+      { getMessages: t },
+      data,
+      isAddDialogShow,
+      isDeleteDialogShow,
+      filterValue,
+      checkedList,
+    ) =>
       <div>
         {/* Title */}
         <Helmet><title>{t('userManagement')}</title></Helmet>
@@ -77,6 +106,13 @@ const User = componentFromStream(props$ => {
         <Dialog show={isAddDialogShow} onHide={onAddDialogHide}>
           <div style={{ height: 3000 }}>123</div>
         </Dialog>
+        <DialogConfirm
+          show={isDeleteDialogShow}
+          onCancel={onDeleteDialogHide}
+          onSubmit={() => console.log('onSubmit')}
+        >
+          {t('delete.confirm')}
+        </DialogConfirm>
 
         {/* Filter */}
         <SpaceTop height={20} />
@@ -85,71 +121,38 @@ const User = componentFromStream(props$ => {
             <Input
               placeholder={t('inputUsernameEmail')}
               onChange={onFilterChange}
-
+              value={filterValue}
             />
             <Button square><IconSearch size={18} /></Button>
           </InputGroup>
-          <A>{t('clearFilter')}</A>
+          <A onClick={onClearClick}>{t('clearFilter')}</A>
         </InputFilterWrapper>
         <SpaceTop height={10} />
 
         {/* Table */}
-        {/* <Table>
-          <thead>
-            <tr>
-              <th>
-                <input type="checkbox" />
-              </th>
-              <th>
-                {t('name')}
-              </th>
-              <th>
-                {t('email')}
-              </th>
-              <th>{''}</th>
-            </tr>
-          </thead>
-        </Table> */}
-        <Table>
-          <thead>
-            <tr>
-              <th>
-                <input type="checkbox" />
-              </th>
-              <th>
-                {t('name')}
-              </th>
-              <th>
-                {t('email')}
-              </th>
-              <th>{''}</th>
-            </tr>
-          </thead>
-          <tbody>
-            {users.map(e =>
-              <tr key={e.userId}>
-                <th>
-                  <input type="checkbox" />
-                </th>
-                <td>
-                  {e.userName}
-                </td>
-                <td>
-                  {e.email}
-                </td>
-              </tr>
-            )}
-          </tbody>
-        </Table>
+        <Table
+          data={data}
+          checkedList={checkedList}
+          onCheckedListChange={onCheckedListChange}
+          onEditClick={onEditClick}
+        />
 
         {/* Footer */}
         <FooterWrapper>
-          <A onClick={onAddDialogShow}>
-            <IconAdd size={18} />
-            <div>
-              {t('addUser')}
-            </div>
-          </A>
+          {R.isEmpty(checkedList)
+            ? <A onClick={onAddDialogShow}>
+                <IconAdd size={18} />
+                <div>
+                  {t('addUser')}
+                </div>
+              </A>
+            : <A onClick={onDeleteDialogShow}>
+                <IconDelete size={18} />
+                <div>
+                  {t('deleteUser', { length: checkedList.length })}
+                </div>
+              </A>}
+
         </FooterWrapper>
       </div>,
   );

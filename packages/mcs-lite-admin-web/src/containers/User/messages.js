@@ -26,6 +26,18 @@ const messages = defineMessages({
     id: 'User.addUser',
     defaultMessage: '新增使用者',
   },
+  'User.deleteUser': {
+    id: 'User.deleteUser',
+    defaultMessage: '刪除 {length} 位使用者',
+  },
+  'User.delete.confirm': {
+    id: 'User.delete.confirm',
+    defaultMessage: '確定要刪除使用者？',
+  },
+  'User.noRows': {
+    id: 'User.noRows',
+    defaultMessage: '此帳號不存在，請重新搜尋。',
+  },
 });
 
 export default messages;

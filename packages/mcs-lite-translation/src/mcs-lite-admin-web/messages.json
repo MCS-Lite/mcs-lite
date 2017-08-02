@@ -60,6 +60,11 @@
     "filepath": "src/containers/DashboardLayout/messages.js"
   },
   {
+    "id": "DashboardLayout.userManagement",
+    "defaultMessage": "使用者管理",
+    "filepath": "src/containers/DashboardLayout/messages.js"
+  },
+  {
     "id": "DashboardLayout.versionCheck",
     "defaultMessage": "版本更新檢查",
     "filepath": "src/containers/DashboardLayout/messages.js"
@@ -215,5 +220,46 @@
     "id": "System.reset.success",
     "defaultMessage": "成功！系統已重置，請重新登入。",
     "filepath": "src/containers/System/messages.js"
+  },
+  {
+    "id": "User.userManagement",
+    "description": "Meta/Title",
+    "defaultMessage": "使用者管理",
+    "filepath": "src/containers/User/messages.js"
+  },
+  {
+    "id": "User.inputUsernameEmail",
+    "defaultMessage": "輸入名稱或電子郵件搜尋使用者",
+    "filepath": "src/containers/User/messages.js"
+  },
+  {
+    "id": "User.clearFilter",
+    "defaultMessage": "清除搜尋條件",
+    "filepath": "src/containers/User/messages.js"
+  },
+  {
+    "id": "User.name",
+    "defaultMessage": "名稱",
+    "filepath": "src/containers/User/messages.js"
+  },
+  {
+    "id": "User.email",
+    "defaultMessage": "電子信箱",
+    "filepath": "src/containers/User/messages.js"
+  },
+  {
+    "id": "User.addUser",
+    "defaultMessage": "新增使用者",
+    "filepath": "src/containers/User/messages.js"
+  },
+  {
+    "id": "User.deleteUser",
+    "defaultMessage": "刪除 {length} 位使用者",
+    "filepath": "src/containers/User/messages.js"
+  },
+  {
+    "id": "User.noRows",
+    "defaultMessage": "此帳號不存在，請重新搜尋。",
+    "filepath": "src/containers/User/messages.js"
   }
 ]

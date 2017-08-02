@@ -62,6 +62,7 @@
     "react-router-scroll": "^0.4.2",
     "react-scripts": "^1.0.10",
     "react-topbar-progress-indicator": "^1.0.0",
+    "react-virtualized": "^9.9.0",
     "recompose": "^0.24.0",
     "redux": "^3.7.2",
     "redux-cycles": "^0.4.1",
