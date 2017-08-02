@@ -22,6 +22,7 @@ import App from './containers/App';
 import DashboardLayout from './containers/DashboardLayout';
 import Ip from './containers/Ip';
 import System from './containers/System';
+import User from './containers/User';
 import Signin from './containers/Signin';
 import Signup from './containers/Signup';
 import Language from './containers/Language';
@@ -62,6 +63,7 @@ ReactDOM.render(
                 <IndexRedirect to="ip" />
                 <Route path="ip" component={Ip} />
                 <Route path="system" component={System} />
+                <Route path="user" component={User} />
                 <Route path="language" component={Language} />
               </Route>
             </Route>

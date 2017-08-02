@@ -1,14 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import Dialog from 'mcs-lite-ui/lib/Dialog';
+import MLDialog from 'mcs-lite-ui/lib/Dialog';
 import Panel from 'mcs-lite-ui/lib/Panel';
 import Button from 'mcs-lite-ui/lib/Button';
 import Warning from '../../statics/images/img_warning.svg';
 
-const StyledDialog = styled(Dialog)`
+const StyledDialog = styled(MLDialog)`
   justify-content: center;
-  z-index: 4; /* Fixed for codemirror line-number */
+`;
+
+const ScrollableWrapper = styled.div`
+  width: 100%;
 `;
 
 const StyledPanel = styled(Panel)`
@@ -43,37 +46,21 @@ const StyledPanel = styled(Panel)`
   }
 `;
 
-const DialogConfirm = ({
-  show,
-  onCancel,
-  onSubmit,
-  children,
-  getMessages: t,
-}) =>
-  <StyledDialog show={show} onHide={onCancel}>
-    <StyledPanel>
-      <header>{t('notice')}</header>
-      <main>
-        <img src={Warning} alt="warning" />
+const Dialog = ({ show, onHide, children }) =>
+  <StyledDialog show={show} onHide={onHide}>
+    <ScrollableWrapper>
+      <StyledPanel>
         {children}
-      </main>
-      <footer>
-        <Button kind="default" onClick={onCancel}>{t('cancel')}</Button>
-        <Button onClick={onSubmit}>{t('confirm')}</Button>
-      </footer>
-    </StyledPanel>
+      </StyledPanel>
+    </ScrollableWrapper>
   </StyledDialog>;
 
-DialogConfirm.displayName = 'DialogConfirm';
-DialogConfirm.propTypes = {
+Dialog.displayName = 'Dialog';
+Dialog.propTypes = {
   // Props
   show: PropTypes.bool.isRequired,
-  onCancel: PropTypes.func.isRequired,
-  onSubmit: PropTypes.func.isRequired,
+  onHide: PropTypes.func.isRequired,
   children: PropTypes.node.isRequired,
-
-  // React-intl I18n
-  getMessages: PropTypes.func.isRequired,
 };
 
-export default DialogConfirm;
+export default Dialog;

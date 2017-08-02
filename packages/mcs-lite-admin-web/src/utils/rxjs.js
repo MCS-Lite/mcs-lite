@@ -30,3 +30,4 @@ import 'rxjs/add/operator/mergeAll';
 import 'rxjs/add/operator/distinctUntilKeyChanged';
 import 'rxjs/add/operator/zip';
 import 'rxjs/add/operator/skip';
+import 'rxjs/add/operator/first';
