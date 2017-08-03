@@ -1,10 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import MLDialog from 'mcs-lite-ui/lib/Dialog';
-import Panel from 'mcs-lite-ui/lib/Panel';
-import Button from 'mcs-lite-ui/lib/Button';
-import Warning from '../../statics/images/img_warning.svg';
+import Dialog from './Dialog';
+import Panel from '../Panel';
 
 const StyledPanel = styled(Panel)`
   width: 440px;
@@ -37,19 +35,32 @@ const StyledPanel = styled(Panel)`
   }
 `;
 
-const Dialog = ({ show, onHide, children }) =>
-  <MLDialog show={show} onHide={onHide}>
-    <StyledPanel>
-      {children}
-    </StyledPanel>
-  </MLDialog>;
+const CommonDialog = ({
+  component: Component,
+  show,
+  onHide,
+  onSubmit,
+  children,
+  ...otherProps
+}) =>
+  <Dialog show={show} onHide={onHide} {...otherProps}>
+    <Component onSubmit={Component === 'form' && onSubmit}>
+      <StyledPanel>
+        {children}
+      </StyledPanel>
+    </Component>
+  </Dialog>;
 
-Dialog.displayName = 'Dialog';
-Dialog.propTypes = {
-  // Props
+CommonDialog.displayName = 'CommonDialog';
+CommonDialog.propTypes = {
   show: PropTypes.bool.isRequired,
   onHide: PropTypes.func.isRequired,
   children: PropTypes.node.isRequired,
+  component: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
+  onSubmit: PropTypes.func,
+};
+CommonDialog.defaultProps = {
+  component: 'div',
 };
 
-export default Dialog;
+export default CommonDialog;

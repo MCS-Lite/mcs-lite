@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 
 const FormGroup = styled.div`
+  width: 100%;
+
   label {
     display: block;
     padding-bottom: 5px;
