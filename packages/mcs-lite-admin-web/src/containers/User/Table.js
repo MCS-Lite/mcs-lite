@@ -46,12 +46,6 @@ const StyledTable = styled(RVTable)`
   }
 `;
 
-const StyledCheckbox = styled.input`
-  &:checked:before {
-    content: '';
-  }
-`;
-
 const StyledIcon = styled(IconSetting)`
   color: ${props => props.theme.color.primary};
   cursor: pointer;
@@ -64,12 +58,13 @@ const NoRowWrapper = styled.div`
 
 class Table extends React.PureComponent {
   static propTypes = {
-    data: PropTypes.shape({
-      userId: PropTypes.string.isRequired,
-      email: PropTypes.string.isRequired,
-      userName: PropTypes.string.isRequired,
-      isChecked: PropTypes.bool.isRequired,
-    }).isRequired,
+    data: PropTypes.arrayOf(
+      PropTypes.shape({
+        userId: PropTypes.string.isRequired,
+        email: PropTypes.string.isRequired,
+        userName: PropTypes.string.isRequired,
+      }),
+    ),
     checkedList: PropTypes.arrayOf(PropTypes.string).isRequired,
     onCheckedListChange: PropTypes.func.isRequired, // (userIdList) => void
     onEditClick: PropTypes.func.isRequired, // (userId) => void
@@ -89,14 +84,7 @@ class Table extends React.PureComponent {
     const onChange = () => {
       onCheckedListChange(isEmpty ? R.pluck('userId')(data) : []);
     };
-    return (
-      <StyledCheckbox
-        type="checkbox"
-        isAllChecked={isAllChecked}
-        checked={isAllChecked}
-        onChange={onChange}
-      />
-    );
+    return <input type="checkbox" checked={isAllChecked} onChange={onChange} />;
   };
 
   checkedCellRenderer = ({ rowData }) => {
@@ -151,10 +139,11 @@ class Table extends React.PureComponent {
                 noRowsRenderer={noRowsRenderer}
               >
                 <Column
-                  width={14}
                   dataKey={'userId'}
                   headerRenderer={checkedHeaderRenderer}
                   cellRenderer={checkedCellRenderer}
+                  width={14}
+                  flexShrink={0}
                 />
                 <Column
                   label={t('name')}
@@ -169,9 +158,10 @@ class Table extends React.PureComponent {
                   flexGrow={1}
                 />
                 <Column
-                  width={34}
                   dataKey={'userId'}
                   cellRenderer={editCellRenderer}
+                  width={40}
+                  flexShrink={0}
                 />
               </StyledTable>}
           </AutoSizer>}

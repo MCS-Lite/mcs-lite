@@ -55,6 +55,10 @@ const User = componentFromStream(props$ => {
     stream: onCheckedListChange$,
   } = createEventHandler();
   const { handler: onEditClick, stream: onEditClick$ } = createEventHandler();
+  const {
+    handler: onDeleteSubmit,
+    stream: onDeleteSubmit$,
+  } = createEventHandler();
 
   const isAddDialogShow$ = Observable.merge(
     onAddDialogShow$.mapTo(true),
@@ -64,6 +68,7 @@ const User = componentFromStream(props$ => {
   const isDeleteDialogShow$ = Observable.merge(
     onDeleteDialogShow$.mapTo(true),
     onDeleteDialogHide$.mapTo(false),
+    onDeleteSubmit$.mapTo(false),
   ).startWith(false);
 
   const filterValue$ = Observable.merge(
@@ -82,6 +87,11 @@ const User = componentFromStream(props$ => {
   // Remind: There are four fetch Side-effects below.
   props$.first().pluck('fetchUsers').subscribe(R.call);
   onEditClick$.do(console.log).subscribe();
+  onDeleteSubmit$
+    .withLatestFrom(checkedList$, props$, (e, checkedList, props) =>
+      props.deleteUsers.bind(null, checkedList),
+    )
+    .subscribe(R.call);
 
   return props$.combineLatest(
     data$,
@@ -106,10 +116,12 @@ const User = componentFromStream(props$ => {
         <Dialog show={isAddDialogShow} onHide={onAddDialogHide}>
           <div style={{ height: 3000 }}>123</div>
         </Dialog>
+
+        {/* Dialog - Remove user  */}
         <DialogConfirm
           show={isDeleteDialogShow}
           onCancel={onDeleteDialogHide}
-          onSubmit={() => console.log('onSubmit')}
+          onSubmit={onDeleteSubmit}
         >
           {t('delete.confirm')}
         </DialogConfirm>
@@ -152,7 +164,6 @@ const User = componentFromStream(props$ => {
                   {t('deleteUser', { length: checkedList.length })}
                 </div>
               </A>}
-
         </FooterWrapper>
       </div>,
   );
@@ -161,18 +172,17 @@ const User = componentFromStream(props$ => {
 User.displayName = 'User';
 User.propTypes = {
   // Redux State
-  system: PropTypes.shape({
-    db: PropTypes.string.isRequired,
-    oauth: PropTypes.string.isRequired,
-    rest: PropTypes.string.isRequired,
-    wot: PropTypes.string.isRequired,
-  }).isRequired,
+  users: PropTypes.arrayOf(
+    PropTypes.shape({
+      userId: PropTypes.string.isRequired,
+      email: PropTypes.string.isRequired,
+      userName: PropTypes.string.isRequired,
+    }),
+  ).isRequired,
 
   // Redux Action
-  fetchSystemByType: PropTypes.func.isRequired,
-  uploadSystemByType: PropTypes.func.isRequired,
-  postReset: PropTypes.func.isRequired,
-  setSystemByType: PropTypes.func.isRequired,
+  fetchUsers: PropTypes.func.isRequired,
+  deleteUsers: PropTypes.func.isRequired,
 
   // React-intl I18n
   getMessages: PropTypes.func.isRequired,
