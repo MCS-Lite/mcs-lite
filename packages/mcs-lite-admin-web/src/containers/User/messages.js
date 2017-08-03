@@ -22,9 +22,29 @@ const messages = defineMessages({
     id: 'User.email',
     defaultMessage: '電子信箱',
   },
+  'User.email.placeholder': {
+    id: 'User.email.placeholder',
+    defaultMessage: '輸入電子信箱',
+  },
   'User.addUser': {
     id: 'User.addUser',
     defaultMessage: '新增使用者',
+  },
+  'User.userName': {
+    id: 'User.userName',
+    defaultMessage: '使用者名稱',
+  },
+  'User.userName.placeholder': {
+    id: 'User.userName.placeholder',
+    defaultMessage: '輸入使用者名稱',
+  },
+  'User.password': {
+    id: 'User.password',
+    defaultMessage: '密碼',
+  },
+  'User.password.placeholder': {
+    id: 'User.password.placeholder',
+    defaultMessage: '輸入密碼',
   },
   'User.deleteUser': {
     id: 'User.deleteUser',
@@ -37,6 +57,22 @@ const messages = defineMessages({
   'User.noRows': {
     id: 'User.noRows',
     defaultMessage: '此帳號不存在，請重新搜尋。',
+  },
+  'User.save': {
+    id: 'User.save',
+    defaultMessage: '儲存',
+  },
+  'User.cancel': {
+    id: 'User.cancel',
+    defaultMessage: '取消',
+  },
+  'User.addUser.success': {
+    id: 'User.addUser.success',
+    defaultMessage: '成功！使用者已新增。',
+  },
+  'User.deleteUser.success': {
+    id: 'User.deleteUser.success',
+    defaultMessage: '成功！使用者已被刪除。',
   },
 });
 

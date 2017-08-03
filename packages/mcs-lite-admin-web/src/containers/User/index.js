@@ -12,6 +12,7 @@ export const mapStateToProps = ({ users }) => ({
 export const mapDispatchToProps = {
   fetchUsers: actions.fetchUsers,
   deleteUsers: actions.deleteUsers,
+  addUser: actions.addUser,
 };
 
 export default compose(

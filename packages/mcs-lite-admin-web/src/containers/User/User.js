@@ -7,6 +7,8 @@ import { Observable } from 'rxjs/Observable';
 import Helmet from 'react-helmet';
 import InputGroup from 'mcs-lite-ui/lib/InputGroup';
 import Input from 'mcs-lite-ui/lib/Input';
+import Label from 'mcs-lite-ui/lib/Label';
+import FormGroup from 'mcs-lite-ui/lib/FormGroup';
 import Button from 'mcs-lite-ui/lib/Button';
 import SpaceTop from 'mcs-lite-ui/lib/SpaceTop';
 import A from 'mcs-lite-ui/lib/A';
@@ -15,8 +17,11 @@ import IconAdd from 'mcs-lite-icon/lib/IconAdd';
 import IconDelete from 'mcs-lite-icon/lib/IconDelete';
 import DashboardTitle from '../../components/DashboardTitle';
 import DialogConfirm from '../../components/DialogConfirm';
-import { InputFilterWrapper, FooterWrapper } from './styled-components';
-import Dialog from './Dialog';
+import {
+  InputFilterWrapper,
+  FooterWrapper,
+  StyledCommonDialog,
+} from './styled-components';
 import Table from './Table';
 
 const componentFromStream = componentFromStreamWithConfig({
@@ -59,10 +64,16 @@ const User = componentFromStream(props$ => {
     handler: onDeleteSubmit,
     stream: onDeleteSubmit$,
   } = createEventHandler();
+  const { handler: onAddSubmit, stream: onAddSubmit$ } = createEventHandler();
+  const {
+    handler: onFormDataChange,
+    stream: onFormDataChange$,
+  } = createEventHandler();
 
   const isAddDialogShow$ = Observable.merge(
     onAddDialogShow$.mapTo(true),
     onAddDialogHide$.mapTo(false),
+    onAddSubmit$.mapTo(false),
   ).startWith(false);
 
   const isDeleteDialogShow$ = Observable.merge(
@@ -75,21 +86,54 @@ const User = componentFromStream(props$ => {
     onFilterChange$.pluck('target', 'value'),
     onClearClick$.mapTo(''),
   ).startWith('');
-  const checkedList$ = onCheckedListChange$.startWith([]);
-  const data$ = props$
-    .pluck('users')
-    .combineLatest(filterValue$, (users, filterValue) =>
-      users.filter(user =>
-        `${user.email} ${user.userName}`.includes(filterValue),
-      ),
-    );
+  const users$ = props$.pluck('users');
+  const checkedList$ = Observable.merge(
+    onCheckedListChange$,
+    users$.mapTo([]),
+  ).startWith([]);
+  const data$ = users$.combineLatest(filterValue$, (users, filterValue) =>
+    users.filter(user =>
+      `${user.email} ${user.userName}`.includes(filterValue),
+    ),
+  );
+
+  const initialFormData = {
+    userName: '',
+    email: '',
+    password: '',
+  };
+  const formData$ = Observable.merge(
+    onFormDataChange$.scan(
+      (acc, e) => ({
+        ...acc,
+        [e.target.id]: e.target.value,
+      }),
+      initialFormData,
+    ),
+    isAddDialogShow$.filter(e => !!e).mapTo(initialFormData),
+  ).startWith(initialFormData);
 
   // Remind: There are four fetch Side-effects below.
   props$.first().pluck('fetchUsers').subscribe(R.call);
   onEditClick$.do(console.log).subscribe();
+  onAddSubmit$
+    .do(e => e.preventDefault())
+    .withLatestFrom(formData$, props$, (e, formData, props) =>
+      props.addUser.bind(
+        null,
+        R.pick(['userName', 'email', 'password'])(formData),
+        props.getMessages('addUser.success'),
+      ),
+    )
+    .subscribe(R.call);
+
   onDeleteSubmit$
     .withLatestFrom(checkedList$, props$, (e, checkedList, props) =>
-      props.deleteUsers.bind(null, checkedList),
+      props.deleteUsers.bind(
+        null,
+        checkedList,
+        props.getMessages('deleteUser.success'),
+      ),
     )
     .subscribe(R.call);
 
@@ -99,6 +143,7 @@ const User = componentFromStream(props$ => {
     isDeleteDialogShow$,
     filterValue$,
     checkedList$,
+    formData$,
     (
       { getMessages: t },
       data,
@@ -106,6 +151,7 @@ const User = componentFromStream(props$ => {
       isDeleteDialogShow,
       filterValue,
       checkedList,
+      formData,
     ) =>
       <div>
         {/* Title */}
@@ -113,10 +159,51 @@ const User = componentFromStream(props$ => {
         <DashboardTitle title={t('userManagement')} />
 
         {/* Dialog - Add user  */}
-        <Dialog show={isAddDialogShow} onHide={onAddDialogHide}>
-          <div style={{ height: 3000 }}>123</div>
-        </Dialog>
-
+        <StyledCommonDialog
+          component="form"
+          show={isAddDialogShow}
+          onHide={onAddDialogHide}
+          onSubmit={onAddSubmit}
+        >
+          <header>{t('addUser')}</header>
+          <main>
+            <FormGroup>
+              <Label htmlFor="userName" required>{t('userName')}</Label>
+              <Input
+                id="userName"
+                type="text"
+                value={formData.userName}
+                onChange={onFormDataChange}
+                placeholder={t('userName.placeholder')}
+                required
+              />
+              <Label htmlFor="email" required>{t('email')}</Label>
+              <Input
+                id="email"
+                type="email"
+                value={formData.email}
+                onChange={onFormDataChange}
+                placeholder={t('email.placeholder')}
+                required
+              />
+              <Label htmlFor="password" required>{t('password')}</Label>
+              <Input
+                id="password"
+                type="password"
+                value={formData.password}
+                onChange={onFormDataChange}
+                placeholder={t('password.placeholder')}
+                required
+              />
+            </FormGroup>
+          </main>
+          <footer>
+            <Button kind="default" onClick={onAddDialogHide}>
+              {t('cancel')}
+            </Button>
+            <Button component="input" type="submit" value={t('save')} />
+          </footer>
+        </StyledCommonDialog>
         {/* Dialog - Remove user  */}
         <DialogConfirm
           show={isDeleteDialogShow}
@@ -183,6 +270,7 @@ User.propTypes = {
   // Redux Action
   fetchUsers: PropTypes.func.isRequired,
   deleteUsers: PropTypes.func.isRequired,
+  addUser: PropTypes.func.isRequired,
 
   // React-intl I18n
   getMessages: PropTypes.func.isRequired,

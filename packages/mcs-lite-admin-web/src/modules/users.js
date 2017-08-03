@@ -11,6 +11,8 @@ import { success, accessTokenSelector$ } from '../utils/cycleHelper';
 
 const FETCH_USERS = 'mcs-lite-admin-web/user/FETCH_USERS';
 const SET_USERS = 'mcs-lite-admin-web/user/SET_USERS';
+const ADD_USER = 'mcs-lite-admin-web/user/ADD_USER';
+const SET_USER = 'mcs-lite-admin-web/user/SET_USER';
 const DELETE_USERS = 'mcs-lite-admin-web/user/DELETE_USERS';
 const REMOVE_USERS_BY_ID = 'mcs-lite-admin-web/user/REMOVE_USERS_BY_ID';
 const CLEAR = 'mcs-lite-admin-web/user/CLEAR';
@@ -18,6 +20,8 @@ const CLEAR = 'mcs-lite-admin-web/user/CLEAR';
 export const constants = {
   FETCH_USERS,
   SET_USERS,
+  ADD_USER,
+  SET_USER,
   DELETE_USERS,
   REMOVE_USERS_BY_ID,
   CLEAR,
@@ -29,7 +33,15 @@ export const constants = {
 
 const fetchUsers = () => ({ type: FETCH_USERS });
 const setUsers = users => ({ type: SET_USERS, payload: users });
-const deleteUsers = userIdList => ({ type: DELETE_USERS, payload: userIdList });
+const addUser = (user, successMessage) => ({
+  type: ADD_USER,
+  payload: { user, message: successMessage },
+});
+const setUser = user => ({ type: SET_USER, payload: user });
+const deleteUsers = (userIdList, successMessage) => ({
+  type: DELETE_USERS,
+  payload: { userIdList, message: successMessage },
+});
 const removeUsersById = userIdList => ({
   type: REMOVE_USERS_BY_ID,
   payload: userIdList,
@@ -39,6 +51,8 @@ const clear = () => ({ type: CLEAR });
 export const actions = {
   fetchUsers,
   setUsers,
+  addUser,
+  setUser,
   deleteUsers,
   removeUsersById,
   clear,
@@ -77,9 +91,12 @@ function fetchUsersCycle(sources) {
 function deleteUsersCycle(sources) {
   const accessToken$ = accessTokenSelector$(sources.STATE);
 
-  const userIdList$ = sources.ACTION
+  const payload$ = sources.ACTION
     .filter(action => action.type === DELETE_USERS)
     .pluck('payload');
+
+  const userIdList$ = payload$.pluck('userIdList');
+  const message$ = payload$.pluck('message');
 
   const request$ = userIdList$.withLatestFrom(
     accessToken$,
@@ -103,6 +120,50 @@ function deleteUsersCycle(sources) {
   const action$ = Observable.from([
     request$.mapTo(uiActions.setLoading()),
     responseUserIdList$.map(removeUsersById),
+    successRes$
+      .withLatestFrom(message$, (response, message) => message)
+      .map(message =>
+        uiActions.addToast({ kind: 'success', children: message }),
+      ),
+    successRes$.mapTo(uiActions.setLoaded()),
+  ]).mergeAll();
+
+  return {
+    ACTION: action$,
+    HTTP: request$,
+  };
+}
+
+function addUserCycle(sources) {
+  const accessToken$ = accessTokenSelector$(sources.STATE);
+
+  const payload$ = sources.ACTION
+    .filter(action => action.type === ADD_USER)
+    .pluck('payload');
+  const user$ = payload$.pluck('user');
+  const message$ = payload$.pluck('message');
+
+  const request$ = user$.withLatestFrom(accessToken$, (user, accessToken) => ({
+    url: '/api/users/',
+    method: 'POST',
+    headers: { Authorization: `Bearer ${accessToken}` },
+    send: {
+      ...user,
+      isAdmin: false, // TODO: remove it.
+    },
+    category: ADD_USER,
+  }));
+
+  const successRes$ = sources.HTTP.select(ADD_USER).switchMap(success);
+
+  const action$ = Observable.from([
+    request$.mapTo(uiActions.setLoading()),
+    successRes$.pluck('body').map(setUser),
+    successRes$
+      .withLatestFrom(message$, (response, message) => message)
+      .map(message =>
+        uiActions.addToast({ kind: 'success', children: message }),
+      ),
     successRes$.mapTo(uiActions.setLoaded()),
   ]).mergeAll();
 
@@ -115,6 +176,7 @@ function deleteUsersCycle(sources) {
 export const cycles = {
   fetchUsersCycle,
   deleteUsersCycle,
+  addUserCycle,
 };
 
 // ----------------------------------------------------------------------------
@@ -127,6 +189,8 @@ export default function reducer(state = initialState, action = {}) {
   switch (action.type) {
     case SET_USERS:
       return action.payload;
+    case SET_USER:
+      return R.prepend(action.payload)(state);
     case REMOVE_USERS_BY_ID:
       // TODO: should we use two nested for-loop?
       return R.reject(
