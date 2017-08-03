@@ -6,18 +6,9 @@ import Panel from 'mcs-lite-ui/lib/Panel';
 import Button from 'mcs-lite-ui/lib/Button';
 import Warning from '../../statics/images/img_warning.svg';
 
-const StyledDialog = styled(MLDialog)`
-  justify-content: center;
-`;
-
-const ScrollableWrapper = styled.div`
-  width: 100%;
-`;
-
 const StyledPanel = styled(Panel)`
   width: 440px;
   box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2);
-  overflow: auto;
 
   > header {
     padding-left: 20px;
@@ -47,13 +38,11 @@ const StyledPanel = styled(Panel)`
 `;
 
 const Dialog = ({ show, onHide, children }) =>
-  <StyledDialog show={show} onHide={onHide}>
-    <ScrollableWrapper>
-      <StyledPanel>
-        {children}
-      </StyledPanel>
-    </ScrollableWrapper>
-  </StyledDialog>;
+  <MLDialog show={show} onHide={onHide}>
+    <StyledPanel>
+      {children}
+    </StyledPanel>
+  </MLDialog>;
 
 Dialog.displayName = 'Dialog';
 Dialog.propTypes = {

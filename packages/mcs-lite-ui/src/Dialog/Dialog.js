@@ -7,7 +7,7 @@ import ClickOutside from '../ClickOutside';
 import emptyFunction from '../utils/emptyFunction';
 
 export const Overlay = styled.div`
-  position: absolute;
+  position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
@@ -16,37 +16,32 @@ export const Overlay = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
+  overflow: auto;
 `;
 
-class Dialog extends React.Component {
-  static propTypes = {
-    children: PropTypes.node.isRequired,
-    show: PropTypes.bool.isRequired,
-    onHide: PropTypes.func,
-  };
-  static defaultProps = {
-    onHide: emptyFunction,
-  };
-  render() {
-    const { onHide, show, children, ...otherProps } = this.props;
+const Dialog = ({ onHide, show, children, ...otherProps }) =>
+  show &&
+  <Portal>
+    <Transition
+      component={false}
+      enter={{ opacity: 1 }}
+      leave={{ opacity: 0.5 }}
+    >
+      <Overlay key="dialog" {...otherProps}>
+        <ClickOutside onClick={onHide}>
+          {children}
+        </ClickOutside>
+      </Overlay>
+    </Transition>
+  </Portal>;
 
-    return (
-      show &&
-      <Portal>
-        <Transition
-          component={false}
-          enter={{ opacity: 1 }}
-          leave={{ opacity: 0.5 }}
-        >
-          <Overlay key="dialog" {...otherProps}>
-            <ClickOutside onClick={onHide}>
-              {children}
-            </ClickOutside>
-          </Overlay>
-        </Transition>
-      </Portal>
-    );
-  }
-}
+Dialog.propTypes = {
+  children: PropTypes.node.isRequired,
+  show: PropTypes.bool.isRequired,
+  onHide: PropTypes.func,
+};
+Dialog.defaultProps = {
+  onHide: emptyFunction,
+};
 
 export default Dialog;
