@@ -22,7 +22,9 @@ export const mapDispatchToProps = {
   setDatapoint: actions.setDatapoint,
 };
 
-const wsHost = `ws://${window.location.hostname}:${window.SOCKET_PORT}`;
+const protocol = /https/.test(window.location.protocol) ? 'wss' : 'ws';
+const wsHost = `${protocol}://${window.location
+  .hostname}:${window.SOCKET_PORT}`;
 
 export default compose(
   connect(mapStateToProps, mapDispatchToProps),
