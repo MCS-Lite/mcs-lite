@@ -1,5 +1,37 @@
 # MCS Lite changelogs
 
+## Released (2017-08-04)
+
+#### :bug: Bug Fix
+* `mcs-lite-mobile-web`
+  * [#430](https://github.com/MCS-Lite/mcs-lite/pull/430) fix(Mobile): add support for wss SSL protocol. ([@evenchange4](https://github.com/evenchange4))
+* Other
+  * [#429](https://github.com/MCS-Lite/mcs-lite/pull/429) fix(env): update ci cd configs. ([@evenchange4](https://github.com/evenchange4))
+
+#### :nail_care: Enhancement
+* [#424](https://github.com/MCS-Lite/mcs-lite/pull/424) chore(CI): upgrade circle ci to 2.0. ([@evenchange4](https://github.com/evenchange4))
+
+#### :memo: Documentation
+* `mcs-lite-introduction`
+  * [#426](https://github.com/MCS-Lite/mcs-lite/pull/426) fix(intro): Incorrect order of bullets. ([@dariachen](https://github.com/dariachen))
+  * [#425](https://github.com/MCS-Lite/mcs-lite/pull/425) feat(intro): update signup description.. ([@dariachen](https://github.com/dariachen))
+
+#### :house: Internal
+* `mcs-lite-admin-web`, `mcs-lite-landing-web`, `mcs-lite-mobile-web`, `mcs-lite-ui`
+  * [#427](https://github.com/MCS-Lite/mcs-lite/pull/427) 	chore(ncu): update. ([@evenchange4](https://github.com/evenchange4))
+* `mcs-lite-admin-web`, `mcs-lite-landing-web`, `mcs-lite-mobile-web`, `mcs-lite-translation`, `mcs-lite-ui`
+  * [#423](https://github.com/MCS-Lite/mcs-lite/pull/423) chore(npm): ncu update & verify react-intl-po. ([@evenchange4](https://github.com/evenchange4))
+* `mcs-lite-introduction`, `mcs-lite-landing-web`, `mcs-lite-mobile-web`, `mcs-lite-ui`, `stylelint-config-mcs-lite`
+  * [#422](https://github.com/MCS-Lite/mcs-lite/pull/422) chore(npm): ncu update & jest-styled-component 4. ([@evenchange4](https://github.com/evenchange4))
+* `mcs-lite-admin-web`, `mcs-lite-connect`, `mcs-lite-introduction`, `mcs-lite-landing-web`, `mcs-lite-mobile-web`, `mcs-lite-ui`, `react-intl-inject-hoc`
+  * [#421](https://github.com/MCS-Lite/mcs-lite/pull/421) chore(node): upgrade to node8.1.4 npm 5.0.3 & ncu. ([@evenchange4](https://github.com/evenchange4))
+
+#### Committers: 2
+- Daria Chen ([dariachen](https://github.com/dariachen))
+- Michael Hsu ([evenchange4](https://github.com/evenchange4))
+
+----
+
 ## Released (2017-07-11)
 
 -   mcs-lite-admin-web: 0.1.7 => 0.1.8
