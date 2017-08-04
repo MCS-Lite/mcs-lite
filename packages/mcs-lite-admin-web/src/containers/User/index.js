@@ -13,6 +13,7 @@ export const mapDispatchToProps = {
   fetchUsers: actions.fetchUsers,
   deleteUsers: actions.deleteUsers,
   addUser: actions.addUser,
+  changePasswordById: actions.changePasswordById,
 };
 
 export default compose(

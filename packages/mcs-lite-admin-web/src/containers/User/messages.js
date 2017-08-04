@@ -46,6 +46,34 @@ const messages = defineMessages({
     id: 'User.password.placeholder',
     defaultMessage: '輸入密碼',
   },
+  'User.edit': {
+    id: 'User.edit',
+    defaultMessage: '編輯',
+  },
+  'User.changePassword': {
+    id: 'User.changePassword',
+    defaultMessage: '修改密碼',
+  },
+  'User.changePassword.success': {
+    id: 'User.changePassword.success',
+    defaultMessage: '成功！密碼已修改。',
+  },
+  'User.newPassword1': {
+    id: 'User.newPassword1',
+    defaultMessage: '新密碼',
+  },
+  'User.newPassword1.placeholder': {
+    id: 'User.newPassword1.placeholder',
+    defaultMessage: '輸入新密碼',
+  },
+  'User.newPassword2': {
+    id: 'User.newPassword2',
+    defaultMessage: '確認密碼',
+  },
+  'User.newPassword2.placeholder': {
+    id: 'User.newPassword2.placeholder',
+    defaultMessage: '再次輸入新密碼',
+  },
   'User.deleteUser': {
     id: 'User.deleteUser',
     defaultMessage: '刪除 {length} 位使用者',

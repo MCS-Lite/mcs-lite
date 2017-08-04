@@ -13,6 +13,7 @@ const FETCH_USERS = 'mcs-lite-admin-web/user/FETCH_USERS';
 const SET_USERS = 'mcs-lite-admin-web/user/SET_USERS';
 const ADD_USER = 'mcs-lite-admin-web/user/ADD_USER';
 const SET_USER = 'mcs-lite-admin-web/user/SET_USER';
+const CHANGE_PASSWORD_BY_ID = 'mcs-lite-admin-web/user/CHANGE_PASSWORD_BY_ID';
 const DELETE_USERS = 'mcs-lite-admin-web/user/DELETE_USERS';
 const REMOVE_USERS_BY_ID = 'mcs-lite-admin-web/user/REMOVE_USERS_BY_ID';
 const CLEAR = 'mcs-lite-admin-web/user/CLEAR';
@@ -22,6 +23,7 @@ export const constants = {
   SET_USERS,
   ADD_USER,
   SET_USER,
+  CHANGE_PASSWORD_BY_ID,
   DELETE_USERS,
   REMOVE_USERS_BY_ID,
   CLEAR,
@@ -38,6 +40,10 @@ const addUser = (user, successMessage) => ({
   payload: { user, message: successMessage },
 });
 const setUser = user => ({ type: SET_USER, payload: user });
+const changePasswordById = (userId, password, successMessage) => ({
+  type: CHANGE_PASSWORD_BY_ID,
+  payload: { userId, password, message: successMessage },
+});
 const deleteUsers = (userIdList, successMessage) => ({
   type: DELETE_USERS,
   payload: { userIdList, message: successMessage },
@@ -53,6 +59,7 @@ export const actions = {
   setUsers,
   addUser,
   setUser,
+  changePasswordById,
   deleteUsers,
   removeUsersById,
   clear,
@@ -173,10 +180,52 @@ function addUserCycle(sources) {
   };
 }
 
+function changePasswordByIdCycle(sources) {
+  const accessToken$ = accessTokenSelector$(sources.STATE);
+
+  const payload$ = sources.ACTION
+    .filter(action => action.type === CHANGE_PASSWORD_BY_ID)
+    .pluck('payload');
+  const message$ = payload$.pluck('message');
+
+  const request$ = payload$.withLatestFrom(
+    accessToken$,
+    (payload, accessToken) => ({
+      url: `/api/users/${payload.userId}`,
+      method: 'PUT',
+      headers: { Authorization: `Bearer ${accessToken}` },
+      send: {
+        password: payload.password,
+      },
+      category: CHANGE_PASSWORD_BY_ID,
+    }),
+  );
+
+  const successRes$ = sources.HTTP
+    .select(CHANGE_PASSWORD_BY_ID)
+    .switchMap(success);
+
+  const action$ = Observable.from([
+    request$.mapTo(uiActions.setLoading()),
+    successRes$
+      .withLatestFrom(message$, (response, message) => message)
+      .map(message =>
+        uiActions.addToast({ kind: 'success', children: message }),
+      ),
+    successRes$.mapTo(uiActions.setLoaded()),
+  ]).mergeAll();
+
+  return {
+    ACTION: action$,
+    HTTP: request$,
+  };
+}
+
 export const cycles = {
   fetchUsersCycle,
   deleteUsersCycle,
   addUserCycle,
+  changePasswordByIdCycle,
 };
 
 // ----------------------------------------------------------------------------

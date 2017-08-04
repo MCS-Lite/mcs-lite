@@ -43,6 +43,14 @@ const User = componentFromStream(props$ => {
     stream: onAddDialogHide$,
   } = createEventHandler();
   const {
+    handler: onEditDialogShow,
+    stream: onEditDialogShow$,
+  } = createEventHandler();
+  const {
+    handler: onEditDialogHide,
+    stream: onEditDialogHide$,
+  } = createEventHandler();
+  const {
     handler: onDeleteDialogShow,
     stream: onDeleteDialogShow$,
   } = createEventHandler();
@@ -59,12 +67,12 @@ const User = componentFromStream(props$ => {
     handler: onCheckedListChange,
     stream: onCheckedListChange$,
   } = createEventHandler();
-  const { handler: onEditClick, stream: onEditClick$ } = createEventHandler();
   const {
     handler: onDeleteSubmit,
     stream: onDeleteSubmit$,
   } = createEventHandler();
   const { handler: onAddSubmit, stream: onAddSubmit$ } = createEventHandler();
+  const { handler: onEditSubmit, stream: onEditSubmit$ } = createEventHandler();
   const {
     handler: onFormDataChange,
     stream: onFormDataChange$,
@@ -72,8 +80,14 @@ const User = componentFromStream(props$ => {
 
   const isAddDialogShow$ = Observable.merge(
     onAddDialogShow$.mapTo(true),
-    onAddDialogHide$.mapTo(false),
+    onAddDialogHide$.do(e => e.preventDefault()).mapTo(false),
     onAddSubmit$.mapTo(false),
+  ).startWith(false);
+
+  const isEditDialogShow$ = Observable.merge(
+    onEditDialogShow$.mapTo(true),
+    onEditDialogHide$.do(e => e.preventDefault()).mapTo(false),
+    onEditSubmit$.mapTo(false),
   ).startWith(false);
 
   const isDeleteDialogShow$ = Observable.merge(
@@ -101,21 +115,22 @@ const User = componentFromStream(props$ => {
     userName: '',
     email: '',
     password: '',
+    newPassword1: '',
+    newPassword2: '',
   };
   const formData$ = Observable.merge(
-    onFormDataChange$.scan(
-      (acc, e) => ({
-        ...acc,
-        [e.target.id]: e.target.value,
-      }),
-      initialFormData,
-    ),
+    onFormDataChange$.map(e => ({
+      [e.target.id]: e.target.value,
+    })),
     isAddDialogShow$.filter(e => !!e).mapTo(initialFormData),
-  ).startWith(initialFormData);
+    isEditDialogShow$.filter(e => !!e).mapTo(initialFormData),
+  )
+    .startWith(initialFormData)
+    .scan(R.merge);
+  const selectedUserId$ = onEditDialogShow$;
 
   // Remind: There are four fetch Side-effects below.
   props$.first().pluck('fetchUsers').subscribe(R.call);
-  onEditClick$.do(console.log).subscribe();
   onAddSubmit$
     .do(e => e.preventDefault())
     .withLatestFrom(formData$, props$, (e, formData, props) =>
@@ -126,7 +141,21 @@ const User = componentFromStream(props$ => {
       ),
     )
     .subscribe(R.call);
-
+  onEditSubmit$
+    .do(e => e.preventDefault())
+    .withLatestFrom(
+      formData$,
+      selectedUserId$,
+      props$,
+      (e, formData, selectedUserId, props) =>
+        props.changePasswordById.bind(
+          null,
+          selectedUserId,
+          R.prop('newPassword1')(formData),
+          props.getMessages('changePassword.success'),
+        ),
+    )
+    .subscribe(R.call);
   onDeleteSubmit$
     .withLatestFrom(checkedList$, props$, (e, checkedList, props) =>
       props.deleteUsers.bind(
@@ -140,6 +169,7 @@ const User = componentFromStream(props$ => {
   return props$.combineLatest(
     data$,
     isAddDialogShow$,
+    isEditDialogShow$,
     isDeleteDialogShow$,
     filterValue$,
     checkedList$,
@@ -148,6 +178,7 @@ const User = componentFromStream(props$ => {
       { getMessages: t },
       data,
       isAddDialogShow,
+      isEditDialogShow,
       isDeleteDialogShow,
       filterValue,
       checkedList,
@@ -204,6 +235,43 @@ const User = componentFromStream(props$ => {
             <Button component="input" type="submit" value={t('save')} />
           </footer>
         </StyledCommonDialog>
+        {/* Dialog - Edit user  */}
+        <StyledCommonDialog
+          component="form"
+          show={isEditDialogShow}
+          onHide={onEditDialogHide}
+          onSubmit={onEditSubmit}
+        >
+          <header>{t('edit')}</header>
+          <main>
+            <FormGroup>
+              <Label htmlFor="newPassword1" required>{t('newPassword1')}</Label>
+              <Input
+                id="newPassword1"
+                type="password"
+                value={formData.newPassword1}
+                onChange={onFormDataChange}
+                placeholder={t('newPassword1.placeholder')}
+                required
+              />
+              <Label htmlFor="newPassword2" required>{t('newPassword2')}</Label>
+              <Input
+                id="newPassword2"
+                type="password"
+                value={formData.newPassword2}
+                onChange={onFormDataChange}
+                placeholder={t('newPassword2.placeholder')}
+                required
+              />
+            </FormGroup>
+          </main>
+          <footer>
+            <Button kind="default" onClick={onEditDialogHide}>
+              {t('cancel')}
+            </Button>
+            <Button component="input" type="submit" value={t('save')} />
+          </footer>
+        </StyledCommonDialog>
         {/* Dialog - Remove user  */}
         <DialogConfirm
           show={isDeleteDialogShow}
@@ -233,7 +301,7 @@ const User = componentFromStream(props$ => {
           data={data}
           checkedList={checkedList}
           onCheckedListChange={onCheckedListChange}
-          onEditClick={onEditClick}
+          onEditClick={onEditDialogShow}
         />
 
         {/* Footer */}
@@ -271,6 +339,7 @@ User.propTypes = {
   fetchUsers: PropTypes.func.isRequired,
   deleteUsers: PropTypes.func.isRequired,
   addUser: PropTypes.func.isRequired,
+  changePasswordById: PropTypes.func.isRequired,
 
   // React-intl I18n
   getMessages: PropTypes.func.isRequired,
