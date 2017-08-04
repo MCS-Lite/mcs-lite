@@ -1,6 +1,6 @@
 {
   "name": "mcs-lite-connect",
-  "version": "0.3.7",
+  "version": "0.3.8",
   "description": "Connect MCS with WebSocket",
   "repository": "MCS-Lite/mcs-lite",
   "author": "Michael Hsu <evenchange4@gmail.com>",
