@@ -2,6 +2,16 @@
 
 ## Released (2017-08-04)
 
+-   mcs-lite-admin-web: 0.1.8 => 0.1.9
+-   mcs-lite-connect: 0.3.7 => 0.3.8
+-   mcs-lite-introduction: 0.2.6 => 0.2.7
+-   mcs-lite-landing-web: 0.1.2 => 0.1.3 (private)
+-   mcs-lite-mobile-web: 0.4.10 => 0.4.11
+-   mcs-lite-translation: 0.1.5 => 0.1.6
+-   mcs-lite-ui: 0.4.8 => 0.4.9
+-   react-intl-inject-hoc: 0.2.7 => 0.2.8
+-   stylelint-config-mcs-lite: 0.2.2 => 0.2.3
+
 #### :bug: Bug Fix
 * `mcs-lite-mobile-web`
   * [#430](https://github.com/MCS-Lite/mcs-lite/pull/430) fix(Mobile): add support for wss SSL protocol. ([@evenchange4](https://github.com/evenchange4))
