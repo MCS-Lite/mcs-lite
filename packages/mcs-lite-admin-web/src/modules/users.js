@@ -11,7 +11,8 @@ import { success, accessTokenSelector$ } from '../utils/cycleHelper';
 
 const FETCH_USERS = 'mcs-lite-admin-web/user/FETCH_USERS';
 const SET_USERS = 'mcs-lite-admin-web/user/SET_USERS';
-const ADD_USER = 'mcs-lite-admin-web/user/ADD_USER';
+const CREATE_USER = 'mcs-lite-admin-web/user/CREATE_USER';
+const CREATE_USER_BY_CSV = 'mcs-lite-admin-web/user/CREATE_USER_BY_CSV';
 const SET_USER = 'mcs-lite-admin-web/user/SET_USER';
 const CHANGE_PASSWORD_BY_ID = 'mcs-lite-admin-web/user/CHANGE_PASSWORD_BY_ID';
 const PUT_IS_ACTIVE_BY_ID = 'mcs-lite-admin-web/user/PUT_IS_ACTIVE_BY_ID';
@@ -22,7 +23,8 @@ const CLEAR = 'mcs-lite-admin-web/user/CLEAR';
 export const constants = {
   FETCH_USERS,
   SET_USERS,
-  ADD_USER,
+  CREATE_USER,
+  CREATE_USER_BY_CSV,
   SET_USER,
   CHANGE_PASSWORD_BY_ID,
   PUT_IS_ACTIVE_BY_ID,
@@ -37,9 +39,13 @@ export const constants = {
 
 const fetchUsers = () => ({ type: FETCH_USERS });
 const setUsers = users => ({ type: SET_USERS, payload: users });
-const addUser = (user, successMessage) => ({
-  type: ADD_USER,
+const createUser = (user, successMessage) => ({
+  type: CREATE_USER,
   payload: { user, message: successMessage },
+});
+const createUserByCSV = (csv, successMessage) => ({
+  type: CREATE_USER_BY_CSV,
+  payload: { csv, message: successMessage },
 });
 const setUser = user => ({ type: SET_USER, payload: user });
 const changePasswordById = (userId, password, successMessage) => ({
@@ -63,7 +69,8 @@ const clear = () => ({ type: CLEAR });
 export const actions = {
   fetchUsers,
   setUsers,
-  addUser,
+  createUser,
+  createUserByCSV,
   setUser,
   changePasswordById,
   putIsActiveById,
@@ -148,11 +155,11 @@ function deleteUsersCycle(sources) {
   };
 }
 
-function addUserCycle(sources) {
+function createUserCycle(sources) {
   const accessToken$ = accessTokenSelector$(sources.STATE);
 
   const payload$ = sources.ACTION
-    .filter(action => action.type === ADD_USER)
+    .filter(action => action.type === CREATE_USER)
     .pluck('payload');
   const user$ = payload$.pluck('user');
   const message$ = payload$.pluck('message');
@@ -165,14 +172,53 @@ function addUserCycle(sources) {
       ...user,
       isAdmin: false, // TODO: remove it.
     },
-    category: ADD_USER,
+    category: CREATE_USER,
   }));
 
-  const successRes$ = sources.HTTP.select(ADD_USER).switchMap(success);
+  const successRes$ = sources.HTTP.select(CREATE_USER).switchMap(success);
 
   const action$ = Observable.from([
     request$.mapTo(uiActions.setLoading()),
     successRes$.pluck('body').map(setUser),
+    successRes$
+      .withLatestFrom(message$, (response, message) => message)
+      .map(message =>
+        uiActions.addToast({ kind: 'success', children: message }),
+      ),
+    successRes$.mapTo(uiActions.setLoaded()),
+  ]).mergeAll();
+
+  return {
+    ACTION: action$,
+    HTTP: request$,
+  };
+}
+
+function createUserByCSVCycle(sources) {
+  const accessToken$ = accessTokenSelector$(sources.STATE);
+
+  const payload$ = sources.ACTION
+    .filter(action => action.type === CREATE_USER_BY_CSV)
+    .pluck('payload');
+  const csv$ = payload$.pluck('csv');
+  const message$ = payload$.pluck('message');
+
+  const request$ = csv$.withLatestFrom(accessToken$, (csv, accessToken) => ({
+    url: '/api/users.csv',
+    method: 'POST',
+    headers: { Authorization: `Bearer ${accessToken}` },
+    send: csv,
+    type: 'text/csv',
+    category: CREATE_USER_BY_CSV,
+  }));
+
+  const successRes$ = sources.HTTP
+    .select(CREATE_USER_BY_CSV)
+    .switchMap(success);
+
+  const action$ = Observable.from([
+    request$.mapTo(uiActions.setLoading()),
+    successRes$.mapTo(fetchUsers()),
     successRes$
       .withLatestFrom(message$, (response, message) => message)
       .map(message =>
@@ -272,7 +318,8 @@ function putIsActiveByIdCycle(sources) {
 export const cycles = {
   fetchUsersCycle,
   deleteUsersCycle,
-  addUserCycle,
+  createUserCycle,
+  createUserByCSVCycle,
   changePasswordByIdCycle,
   putIsActiveByIdCycle,
 };

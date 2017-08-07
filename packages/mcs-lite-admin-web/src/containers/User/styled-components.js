@@ -69,3 +69,19 @@ export const RadioWrapper = styled.div`
 export const ErrorMessageP = styled(P)`
   padding-top: 5px;
 `;
+
+export const InputFileWrapper = styled.div`
+  position: relative;
+
+  > * {
+    position: absolute;
+    width: 100%;
+    pointer-events: none;
+  }
+
+  input[type="file"] {
+    opacity: 0;
+    cursor: pointer;
+    pointer-events: all;
+  }
+`;

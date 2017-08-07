@@ -22,8 +22,6 @@ const TABLE_HEIGHT_OFFSET = 200;
  * @author Michael Hsu
  */
 const StyledTable = styled(RVTable)`
-  line-height: 1em;
-
   > * {
     outline: none;
   }

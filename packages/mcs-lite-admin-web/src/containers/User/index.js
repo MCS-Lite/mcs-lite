@@ -12,7 +12,8 @@ export const mapStateToProps = ({ users }) => ({
 export const mapDispatchToProps = {
   fetchUsers: actions.fetchUsers,
   deleteUsers: actions.deleteUsers,
-  addUser: actions.addUser,
+  createUser: actions.createUser,
+  createUserByCSV: actions.createUserByCSV,
   changePasswordById: actions.changePasswordById,
   putIsActiveById: actions.putIsActiveById,
 };

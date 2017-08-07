@@ -15,6 +15,7 @@ import Button from 'mcs-lite-ui/lib/Button';
 import SpaceTop from 'mcs-lite-ui/lib/SpaceTop';
 import A from 'mcs-lite-ui/lib/A';
 import validators from 'mcs-lite-ui/lib/utils/validators';
+import emptyFunction from 'mcs-lite-ui/lib/utils/emptyFunction';
 import IconSearch from 'mcs-lite-icon/lib/IconSearch';
 import IconAdd from 'mcs-lite-icon/lib/IconAdd';
 import IconDelete from 'mcs-lite-icon/lib/IconDelete';
@@ -27,6 +28,7 @@ import {
   TabWrapper,
   RadioWrapper,
   ErrorMessageP,
+  InputFileWrapper,
 } from './styled-components';
 import Table from './Table';
 
@@ -41,9 +43,8 @@ const createEventHandler = createEventHandlerWithConfig({
 
 const CHANGE_PASSWORD = 'changePassword';
 const ACCOUNT_STATUS = 'accountStatus';
-const emptyFunction = e => {
-  e.preventDefault();
-};
+const ADD_USER_TYPE_ONE = 'one';
+const ADD_USER_TYPE_BATCH = 'batch';
 
 const User = componentFromStream(props$ => {
   const {
@@ -91,22 +92,26 @@ const User = componentFromStream(props$ => {
   } = createEventHandler();
   const { handler: onTabChange, stream: onTabChange$ } = createEventHandler();
   const {
+    handler: onAddUserTypeChange,
+    stream: onAddUserTypeChange$,
+  } = createEventHandler();
+  const {
     handler: onActiveChange,
     stream: onActiveChange$,
   } = createEventHandler();
+  const { handler: onCSVChange, stream: onCSVChange$ } = createEventHandler();
 
+  // Dialog State
   const isAddDialogShow$ = Observable.merge(
     onAddDialogShow$.mapTo(true),
     onAddDialogHide$.do(e => e.preventDefault()).mapTo(false),
     onAddSubmit$.mapTo(false),
   ).startWith(false);
-
   const isEditDialogShow$ = Observable.merge(
     onEditDialogShow$.mapTo(true),
     onEditDialogHide$.do(e => e.preventDefault()).mapTo(false),
     onEditSubmit$.mapTo(false),
   ).startWith(false);
-
   const isDeleteDialogShow$ = Observable.merge(
     onDeleteDialogShow$.mapTo(true),
     onDeleteDialogHide$.mapTo(false),
@@ -138,13 +143,21 @@ const User = componentFromStream(props$ => {
     newPassword1: '',
     newPassword2: '',
     isActive: true,
+    addUserType: ADD_USER_TYPE_ONE,
+    csv: {},
   };
   const formData$ = Observable.merge(
     onFormDataChange$.map(e => ({
       [e.target.id]: e.target.value,
     })),
+    onCSVChange$.map(e => ({
+      [e.target.id]: e.target.files[0],
+    })),
     onActiveChange$.map(e => ({
       isActive: e.target.value === 'true',
+    })),
+    onAddUserTypeChange$.map(e => ({
+      addUserType: e.target.value,
     })),
     isAddDialogShow$.filter(e => !!e).mapTo(initialFormData),
     isEditDialogShow$.filter(e => !!e).mapTo(initialFormData),
@@ -182,11 +195,28 @@ const User = componentFromStream(props$ => {
   onAddSubmit$
     .do(e => e.preventDefault())
     .withLatestFrom(formData$, props$, (e, formData, props) =>
-      props.addUser.bind(
-        null,
-        R.pick(['userName', 'email', 'password'])(formData),
-        props.getMessages('addUser.success'),
-      ),
+      R.cond([
+        [
+          R.equals(ADD_USER_TYPE_ONE),
+          R.always(
+            props.createUser.bind(
+              null,
+              R.pick(['userName', 'email', 'password'])(formData),
+              props.getMessages('addUser.success'),
+            ),
+          ),
+        ],
+        [
+          R.equals(ADD_USER_TYPE_BATCH),
+          R.always(
+            props.createUserByCSV.bind(
+              null,
+              R.pick(['csv'])(formData),
+              props.getMessages('addUser.success'),
+            ),
+          ),
+        ],
+      ])(formData.addUserType),
     )
     .subscribe(R.call);
   onEditSubmit$
@@ -273,39 +303,99 @@ const User = componentFromStream(props$ => {
         >
           <header>{t('addUser')}</header>
           <main>
-            <FormGroup>
-              <Label htmlFor="userName" required>{t('userName')}</Label>
-              <Input
-                id="userName"
-                type="text"
-                value={formData.userName}
-                onChange={onFormDataChange}
-                placeholder={t('userName.placeholder')}
-                required
-              />
-              <Label htmlFor="email" required>{t('email')}</Label>
-              <Input
-                id="email"
-                type="email"
-                value={formData.email}
-                onChange={onFormDataChange}
-                placeholder={t('email.placeholder')}
-                required
-              />
-              <Label htmlFor="password" required>{t('password')}</Label>
-              <Input
-                id="password"
-                type="password"
-                value={formData.password}
-                onChange={onFormDataChange}
-                placeholder={t('password.placeholder')}
-                required
-              />
-              {formValidation.password &&
-                <ErrorMessageP color="error">
-                  {formValidation.password}
-                </ErrorMessageP>}
-            </FormGroup>
+            <Label required>{t('addUserType')}</Label>
+            <SpaceTop height={5} />
+            <RadioWrapper>
+              <label htmlFor="one">
+                <input
+                  id="one"
+                  type="radio"
+                  value={ADD_USER_TYPE_ONE}
+                  onChange={onAddUserTypeChange}
+                  checked={formData.addUserType === ADD_USER_TYPE_ONE}
+                />
+                <span>{t('addUserType.one')}</span>
+              </label>
+
+              <label htmlFor="batch">
+                <input
+                  id="batch"
+                  type="radio"
+                  value={ADD_USER_TYPE_BATCH}
+                  onChange={onAddUserTypeChange}
+                  checked={formData.addUserType === ADD_USER_TYPE_BATCH}
+                />
+                <span>{t('addUserType.batch')}</span>
+              </label>
+            </RadioWrapper>
+            <SpaceTop height={10} />
+
+            {formData.addUserType === ADD_USER_TYPE_ONE &&
+              <FormGroup>
+                <Label htmlFor="userName" required>{t('userName')}</Label>
+                <Input
+                  id="userName"
+                  type="text"
+                  value={formData.userName}
+                  onChange={onFormDataChange}
+                  placeholder={t('userName.placeholder')}
+                  required
+                />
+                <Label htmlFor="email" required>{t('email')}</Label>
+                <Input
+                  id="email"
+                  type="email"
+                  value={formData.email}
+                  onChange={onFormDataChange}
+                  placeholder={t('email.placeholder')}
+                  required
+                />
+                <Label htmlFor="password" required>{t('password')}</Label>
+                <Input
+                  id="password"
+                  type="password"
+                  value={formData.password}
+                  onChange={onFormDataChange}
+                  placeholder={t('password.placeholder')}
+                  required
+                />
+                {formValidation.password &&
+                  <ErrorMessageP color="error">
+                    {formValidation.password}
+                  </ErrorMessageP>}
+              </FormGroup>}
+
+            {formData.addUserType === ADD_USER_TYPE_BATCH &&
+              <FormGroup>
+                <Label htmlFor="uploadCSV" required>{t('uploadCSV')}</Label>
+                <InputFileWrapper>
+                  <Input
+                    id="csv"
+                    type="file"
+                    onChange={onCSVChange}
+                    required
+                    accept=".csv,text/csv"
+                  />
+                  <InputGroup>
+                    <Input
+                      type="text"
+                      value={formData.csv.name || ''}
+                      onChange={emptyFunction}
+                      placeholder={
+                        formData.csv.name ? '' : t('uploadCSV.placeholder')
+                      }
+                      readOnly
+                    />
+                    <Button onClick={emptyFunction}>
+                      {t('uploadCSV.button')}
+                    </Button>
+                  </InputGroup>
+                </InputFileWrapper>
+                {formValidation.password &&
+                  <ErrorMessageP color="error">
+                    {formValidation.password}
+                  </ErrorMessageP>}
+              </FormGroup>}
           </main>
           <footer>
             <Button kind="default" onClick={onAddDialogHide}>
@@ -314,7 +404,11 @@ const User = componentFromStream(props$ => {
             <Button
               component="input"
               type="submit"
-              value={t('save')}
+              value={t(
+                formData.addUserType === ADD_USER_TYPE_BATCH
+                  ? 'upload'
+                  : 'save',
+              )}
               disabled={isAddSubmitError}
             />
           </footer>
@@ -492,7 +586,8 @@ User.propTypes = {
   // Redux Action
   fetchUsers: PropTypes.func.isRequired,
   deleteUsers: PropTypes.func.isRequired,
-  addUser: PropTypes.func.isRequired,
+  createUser: PropTypes.func.isRequired,
+  createUserByCSV: PropTypes.func.isRequired,
   changePasswordById: PropTypes.func.isRequired,
   putIsActiveById: PropTypes.func.isRequired,
 

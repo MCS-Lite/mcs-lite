@@ -30,6 +30,18 @@ const messages = defineMessages({
     id: 'User.addUser',
     defaultMessage: '新增使用者',
   },
+  'User.addUserType': {
+    id: 'User.addUserType',
+    defaultMessage: '選擇新增方式',
+  },
+  'User.addUserType.one': {
+    id: 'User.addUserType.one',
+    defaultMessage: '單筆輸入',
+  },
+  'User.addUserType.batch': {
+    id: 'User.addUserType.batch',
+    defaultMessage: '批次建立',
+  },
   'User.userName': {
     id: 'User.userName',
     defaultMessage: '使用者名稱',
@@ -50,7 +62,18 @@ const messages = defineMessages({
     id: 'User.password.lengthError',
     defaultMessage: '密碼長度需要長於 8 個字元',
   },
-
+  'User.uploadCSV': {
+    id: 'User.uploadCSV',
+    defaultMessage: '匯入 csv 檔案',
+  },
+  'User.uploadCSV.placeholder': {
+    id: 'User.uploadCSV.placeholder',
+    defaultMessage: '選擇 csv 檔案',
+  },
+  'User.uploadCSV.button': {
+    id: 'User.uploadCSV.button',
+    defaultMessage: '選擇檔案',
+  },
   'User.edit': {
     id: 'User.edit',
     defaultMessage: '編輯',
@@ -122,6 +145,10 @@ const messages = defineMessages({
   'User.save': {
     id: 'User.save',
     defaultMessage: '儲存',
+  },
+  'User.upload': {
+    id: 'User.upload',
+    defaultMessage: '上傳',
   },
   'User.cancel': {
     id: 'User.cancel',
