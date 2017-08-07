@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"POT-Creation-Date: 2017-08-07T03:45:55.307Z\n"
+"POT-Creation-Date: 2017-08-07T07:06:02.049Z\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "MIME-Version: 1.0\n"
@@ -44,6 +44,13 @@ msgstr ""
 #. defaultMessage is:
 #. MCS lite 的連線 IP
 msgid "MCS lite 的連線 IP"
+msgstr ""
+
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+#. [User.upload]
+#. defaultMessage is:
+#. 上傳
+msgid "上傳"
 msgstr ""
 
 #: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
@@ -139,6 +146,13 @@ msgid "前往 MCS Lite"
 msgstr ""
 
 #: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+#. [User.uploadCSV]
+#. defaultMessage is:
+#. 匯入 csv 檔案
+msgid "匯入 csv 檔案"
+msgstr ""
+
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
 #. [DialogConfirm.cancel]
 #. defaultMessage is:
 #. 取消
@@ -168,6 +182,13 @@ msgstr ""
 #. defaultMessage is:
 #. 啟用
 msgid "啟用"
+msgstr ""
+
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+#. [User.addUserType.one]
+#. defaultMessage is:
+#. 單筆輸入
+msgid "單筆輸入"
 msgstr ""
 
 #: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
@@ -278,6 +299,13 @@ msgstr ""
 #. defaultMessage is:
 #. 我們目前無法處理您的請求。請稍後再試。
 msgid "我們目前無法處理您的請求。請稍後再試。"
+msgstr ""
+
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+#. [User.addUserType.batch]
+#. defaultMessage is:
+#. 批次建立
+msgid "批次建立"
 msgstr ""
 
 #: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
@@ -492,6 +520,27 @@ msgstr ""
 #. defaultMessage is:
 #. 輸入電子信箱
 msgid "輸入電子信箱"
+msgstr ""
+
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+#. [User.uploadCSV.placeholder]
+#. defaultMessage is:
+#. 選擇 csv 檔案
+msgid "選擇 csv 檔案"
+msgstr ""
+
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+#. [User.addUserType]
+#. defaultMessage is:
+#. 選擇新增方式
+msgid "選擇新增方式"
+msgstr ""
+
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+#. [User.uploadCSV.button]
+#. defaultMessage is:
+#. 選擇檔案
+msgid "選擇檔案"
 msgstr ""
 
 #: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
