@@ -8,6 +8,8 @@ import Helmet from 'react-helmet';
 import InputGroup from 'mcs-lite-ui/lib/InputGroup';
 import Input from 'mcs-lite-ui/lib/Input';
 import Label from 'mcs-lite-ui/lib/Label';
+import TabItem from 'mcs-lite-ui/lib/TabItem';
+import P from 'mcs-lite-ui/lib/P';
 import FormGroup from 'mcs-lite-ui/lib/FormGroup';
 import Button from 'mcs-lite-ui/lib/Button';
 import SpaceTop from 'mcs-lite-ui/lib/SpaceTop';
@@ -21,6 +23,8 @@ import {
   InputFilterWrapper,
   FooterWrapper,
   StyledCommonDialog,
+  TabWrapper,
+  RadioWrapper,
 } from './styled-components';
 import Table from './Table';
 
@@ -32,6 +36,9 @@ const createEventHandler = createEventHandlerWithConfig({
   fromESObservable: Observable.from,
   toESObservable: stream => stream,
 });
+
+const CHANGE_PASSWORD = 'changePassword';
+const ACCOUNT_STATUS = 'accountStatus';
 
 const User = componentFromStream(props$ => {
   const {
@@ -77,6 +84,11 @@ const User = componentFromStream(props$ => {
     handler: onFormDataChange,
     stream: onFormDataChange$,
   } = createEventHandler();
+  const { handler: onTabChange, stream: onTabChange$ } = createEventHandler();
+  const {
+    handler: onActiveChange,
+    stream: onActiveChange$,
+  } = createEventHandler();
 
   const isAddDialogShow$ = Observable.merge(
     onAddDialogShow$.mapTo(true),
@@ -111,23 +123,35 @@ const User = componentFromStream(props$ => {
     ),
   );
 
+  const selectedUserId$ = onEditDialogShow$;
+  const selectedTab$ = onTabChange$.startWith(CHANGE_PASSWORD);
+
   const initialFormData = {
     userName: '',
     email: '',
     password: '',
     newPassword1: '',
     newPassword2: '',
+    isActive: true,
   };
   const formData$ = Observable.merge(
     onFormDataChange$.map(e => ({
       [e.target.id]: e.target.value,
     })),
+    onActiveChange$.map(e => ({
+      isActive: e.target.value === 'true',
+    })),
     isAddDialogShow$.filter(e => !!e).mapTo(initialFormData),
     isEditDialogShow$.filter(e => !!e).mapTo(initialFormData),
+    selectedUserId$.withLatestFrom(data$, (selectedUserId, data) => ({
+      isActive: R.pipe(
+        R.find(R.propEq('userId', selectedUserId)),
+        R.prop('isActive'),
+      )(data),
+    })),
   )
     .startWith(initialFormData)
     .scan(R.merge);
-  const selectedUserId$ = onEditDialogShow$;
 
   // Remind: There are four fetch Side-effects below.
   props$.first().pluck('fetchUsers').subscribe(R.call);
@@ -146,14 +170,33 @@ const User = componentFromStream(props$ => {
     .withLatestFrom(
       formData$,
       selectedUserId$,
+      selectedTab$,
       props$,
-      (e, formData, selectedUserId, props) =>
-        props.changePasswordById.bind(
-          null,
-          selectedUserId,
-          R.prop('newPassword1')(formData),
-          props.getMessages('changePassword.success'),
-        ),
+      (e, formData, selectedUserId, selectedTab, props) =>
+        R.cond([
+          [
+            R.equals(CHANGE_PASSWORD),
+            R.always(
+              props.changePasswordById.bind(
+                null,
+                selectedUserId,
+                R.prop('newPassword1')(formData),
+                props.getMessages('changePassword.success'),
+              ),
+            ),
+          ],
+          [
+            R.equals(ACCOUNT_STATUS),
+            R.always(
+              props.putIsActiveById.bind(
+                null,
+                selectedUserId,
+                R.prop('isActive')(formData),
+                props.getMessages('accountStatus.success'),
+              ),
+            ),
+          ],
+        ])(selectedTab),
     )
     .subscribe(R.call);
   onDeleteSubmit$
@@ -174,6 +217,7 @@ const User = componentFromStream(props$ => {
     filterValue$,
     checkedList$,
     formData$,
+    selectedTab$,
     (
       { getMessages: t },
       data,
@@ -183,6 +227,7 @@ const User = componentFromStream(props$ => {
       filterValue,
       checkedList,
       formData,
+      selectedTab,
     ) =>
       <div>
         {/* Title */}
@@ -244,26 +289,80 @@ const User = componentFromStream(props$ => {
         >
           <header>{t('edit')}</header>
           <main>
-            <FormGroup>
-              <Label htmlFor="newPassword1" required>{t('newPassword1')}</Label>
-              <Input
-                id="newPassword1"
-                type="password"
-                value={formData.newPassword1}
-                onChange={onFormDataChange}
-                placeholder={t('newPassword1.placeholder')}
-                required
-              />
-              <Label htmlFor="newPassword2" required>{t('newPassword2')}</Label>
-              <Input
-                id="newPassword2"
-                type="password"
-                value={formData.newPassword2}
-                onChange={onFormDataChange}
-                placeholder={t('newPassword2.placeholder')}
-                required
-              />
-            </FormGroup>
+            <TabWrapper>
+              <TabItem
+                value="changePassword"
+                onClick={(e, value) => onTabChange(value)}
+                active={selectedTab === CHANGE_PASSWORD}
+              >
+                {t('changePassword')}
+              </TabItem>
+              <TabItem
+                value="accountStatus"
+                onClick={(e, value) => onTabChange(value)}
+                active={selectedTab === ACCOUNT_STATUS}
+              >
+                {t('accountStatus')}
+              </TabItem>
+            </TabWrapper>
+
+            {selectedTab === CHANGE_PASSWORD &&
+              <FormGroup>
+                <Label htmlFor="newPassword1" required>
+                  {t('newPassword1')}
+                </Label>
+                <Input
+                  id="newPassword1"
+                  type="password"
+                  value={formData.newPassword1}
+                  onChange={onFormDataChange}
+                  placeholder={t('newPassword1.placeholder')}
+                  required
+                />
+                <Label htmlFor="newPassword2" required>
+                  {t('newPassword2')}
+                </Label>
+                <Input
+                  id="newPassword2"
+                  type="password"
+                  value={formData.newPassword2}
+                  onChange={onFormDataChange}
+                  placeholder={t('newPassword2.placeholder')}
+                  required
+                />
+              </FormGroup>}
+
+            {selectedTab === ACCOUNT_STATUS &&
+              <FormGroup>
+                <P>{t('accountStatus.desc')}</P>
+                <SpaceTop height={10} />
+
+                <RadioWrapper>
+                  <P>{t('accountStatus.label')}</P>
+
+                  <label htmlFor="active">
+                    <input
+                      id="active"
+                      type="radio"
+                      value="true"
+                      onChange={onActiveChange}
+                      checked={formData.isActive}
+                    />
+                    <span>{t('active')}</span>
+                  </label>
+
+                  <label htmlFor="inactive">
+                    <input
+                      id="inactive"
+                      type="radio"
+                      value="false"
+                      onChange={onActiveChange}
+                      checked={!formData.isActive}
+                    />
+                    <span>{t('inactive')}</span>
+                  </label>
+                </RadioWrapper>
+              </FormGroup>}
           </main>
           <footer>
             <Button kind="default" onClick={onEditDialogHide}>
@@ -332,6 +431,7 @@ User.propTypes = {
       userId: PropTypes.string.isRequired,
       email: PropTypes.string.isRequired,
       userName: PropTypes.string.isRequired,
+      isActive: PropTypes.bool.isRequired,
     }),
   ).isRequired,
 
@@ -340,6 +440,7 @@ User.propTypes = {
   deleteUsers: PropTypes.func.isRequired,
   addUser: PropTypes.func.isRequired,
   changePasswordById: PropTypes.func.isRequired,
+  putIsActiveById: PropTypes.func.isRequired,
 
   // React-intl I18n
   getMessages: PropTypes.func.isRequired,

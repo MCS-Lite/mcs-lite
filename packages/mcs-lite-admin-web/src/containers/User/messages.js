@@ -54,6 +54,30 @@ const messages = defineMessages({
     id: 'User.changePassword',
     defaultMessage: '修改密碼',
   },
+  'User.accountStatus': {
+    id: 'User.accountStatus',
+    defaultMessage: '帳號狀態',
+  },
+  'User.accountStatus.desc': {
+    id: 'User.accountStatus.desc',
+    defaultMessage: '當帳號被停用時，此使用者將無法登入與使用 MCS Lite。您可隨時重新啟用此帳號。',
+  },
+  'User.accountStatus.label': {
+    id: 'User.accountStatus.label',
+    defaultMessage: '帳號使用狀態：',
+  },
+  'User.accountStatus.success': {
+    id: 'User.accountStatus.success',
+    defaultMessage: '成功！帳號狀態已修改。',
+  },
+  'User.active': {
+    id: 'User.active',
+    defaultMessage: '啟用',
+  },
+  'User.inactive': {
+    id: 'User.inactive',
+    defaultMessage: '停用',
+  },
   'User.changePassword.success': {
     id: 'User.changePassword.success',
     defaultMessage: '成功！密碼已修改。',

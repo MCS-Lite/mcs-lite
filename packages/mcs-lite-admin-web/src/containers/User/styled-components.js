@@ -38,4 +38,29 @@ export const FooterWrapper = styled.div`
 
 export const StyledCommonDialog = styled(CommonDialog)`
   padding-top: 40px;
+
+  main {
+    align-items: flex-start;
+  }
+`;
+
+export const TabWrapper = styled.div`
+  border-bottom: 1px solid ${props => props.theme.color.grayDark};
+  margin-bottom: 10px;
+`;
+
+export const RadioWrapper = styled.div`
+  display: flex;
+
+  > *:first-child {
+    margin-right: 5px;
+  }
+
+  label {
+    margin-right: 10px;
+  }
+
+  input {
+    margin-right: 5px;
+  }
 `;
