@@ -46,6 +46,11 @@ const messages = defineMessages({
     id: 'User.password.placeholder',
     defaultMessage: '輸入密碼',
   },
+  'User.password.lengthError': {
+    id: 'User.password.lengthError',
+    defaultMessage: '密碼長度需要長於 8 個字元',
+  },
+
   'User.edit': {
     id: 'User.edit',
     defaultMessage: '編輯',
@@ -97,6 +102,10 @@ const messages = defineMessages({
   'User.newPassword2.placeholder': {
     id: 'User.newPassword2.placeholder',
     defaultMessage: '再次輸入新密碼',
+  },
+  'User.newPassword2.error': {
+    id: 'User.newPassword2.error',
+    defaultMessage: '與新密碼不相符，請重新輸入',
   },
   'User.deleteUser': {
     id: 'User.deleteUser',

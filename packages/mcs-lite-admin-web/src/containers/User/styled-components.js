@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import CommonDialog from 'mcs-lite-ui/lib/Dialog/CommonDialog';
 import InputGroup from 'mcs-lite-ui/lib/InputGroup';
 import A from 'mcs-lite-ui/lib/A';
+import P from 'mcs-lite-ui/lib/P';
 
 export const InputFilterWrapper = styled.div`
   display: flex;
@@ -63,4 +64,8 @@ export const RadioWrapper = styled.div`
   input {
     margin-right: 5px;
   }
+`;
+
+export const ErrorMessageP = styled(P)`
+  padding-top: 5px;
 `;

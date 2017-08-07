@@ -14,6 +14,7 @@ import FormGroup from 'mcs-lite-ui/lib/FormGroup';
 import Button from 'mcs-lite-ui/lib/Button';
 import SpaceTop from 'mcs-lite-ui/lib/SpaceTop';
 import A from 'mcs-lite-ui/lib/A';
+import validators from 'mcs-lite-ui/lib/utils/validators';
 import IconSearch from 'mcs-lite-icon/lib/IconSearch';
 import IconAdd from 'mcs-lite-icon/lib/IconAdd';
 import IconDelete from 'mcs-lite-icon/lib/IconDelete';
@@ -25,6 +26,7 @@ import {
   StyledCommonDialog,
   TabWrapper,
   RadioWrapper,
+  ErrorMessageP,
 } from './styled-components';
 import Table from './Table';
 
@@ -39,6 +41,9 @@ const createEventHandler = createEventHandlerWithConfig({
 
 const CHANGE_PASSWORD = 'changePassword';
 const ACCOUNT_STATUS = 'accountStatus';
+const emptyFunction = e => {
+  e.preventDefault();
+};
 
 const User = componentFromStream(props$ => {
   const {
@@ -153,6 +158,25 @@ const User = componentFromStream(props$ => {
     .startWith(initialFormData)
     .scan(R.merge);
 
+  const formValidation$ = formData$
+    .withLatestFrom(props$, (d, props) => ({
+      password:
+        validators.isLt8(d.password) &&
+          props.getMessages('password.lengthError'),
+      newPassword1:
+        validators.isLt8(d.newPassword1) &&
+          props.getMessages('password.lengthError'),
+      newPassword2:
+        validators.isNotEqual(d.newPassword1, d.newPassword2) &&
+          props.getMessages('newPassword2.error'),
+    }))
+    .startWith({});
+
+  const isAddSubmitError$ = formValidation$.map(d => Boolean(d.password));
+  const isEditSubmitError$ = formValidation$.map(
+    d => Boolean(d.newPassword1) || Boolean(d.newPassword2),
+  );
+
   // Remind: There are four fetch Side-effects below.
   props$.first().pluck('fetchUsers').subscribe(R.call);
   onAddSubmit$
@@ -217,6 +241,9 @@ const User = componentFromStream(props$ => {
     filterValue$,
     checkedList$,
     formData$,
+    formValidation$,
+    isAddSubmitError$,
+    isEditSubmitError$,
     selectedTab$,
     (
       { getMessages: t },
@@ -227,6 +254,9 @@ const User = componentFromStream(props$ => {
       filterValue,
       checkedList,
       formData,
+      formValidation,
+      isAddSubmitError,
+      isEditSubmitError,
       selectedTab,
     ) =>
       <div>
@@ -239,7 +269,7 @@ const User = componentFromStream(props$ => {
           component="form"
           show={isAddDialogShow}
           onHide={onAddDialogHide}
-          onSubmit={onAddSubmit}
+          onSubmit={isAddSubmitError ? emptyFunction : onAddSubmit}
         >
           <header>{t('addUser')}</header>
           <main>
@@ -271,34 +301,44 @@ const User = componentFromStream(props$ => {
                 placeholder={t('password.placeholder')}
                 required
               />
+              {formValidation.password &&
+                <ErrorMessageP color="error">
+                  {formValidation.password}
+                </ErrorMessageP>}
             </FormGroup>
           </main>
           <footer>
             <Button kind="default" onClick={onAddDialogHide}>
               {t('cancel')}
             </Button>
-            <Button component="input" type="submit" value={t('save')} />
+            <Button
+              component="input"
+              type="submit"
+              value={t('save')}
+              disabled={isAddSubmitError}
+            />
           </footer>
         </StyledCommonDialog>
+
         {/* Dialog - Edit user  */}
         <StyledCommonDialog
           component="form"
           show={isEditDialogShow}
           onHide={onEditDialogHide}
-          onSubmit={onEditSubmit}
+          onSubmit={isEditSubmitError ? emptyFunction : onEditSubmit}
         >
           <header>{t('edit')}</header>
           <main>
             <TabWrapper>
               <TabItem
-                value="changePassword"
+                value={CHANGE_PASSWORD}
                 onClick={(e, value) => onTabChange(value)}
                 active={selectedTab === CHANGE_PASSWORD}
               >
                 {t('changePassword')}
               </TabItem>
               <TabItem
-                value="accountStatus"
+                value={ACCOUNT_STATUS}
                 onClick={(e, value) => onTabChange(value)}
                 active={selectedTab === ACCOUNT_STATUS}
               >
@@ -319,6 +359,10 @@ const User = componentFromStream(props$ => {
                   placeholder={t('newPassword1.placeholder')}
                   required
                 />
+                {formValidation.newPassword1 &&
+                  <ErrorMessageP color="error">
+                    {formValidation.newPassword1}
+                  </ErrorMessageP>}
                 <Label htmlFor="newPassword2" required>
                   {t('newPassword2')}
                 </Label>
@@ -330,6 +374,10 @@ const User = componentFromStream(props$ => {
                   placeholder={t('newPassword2.placeholder')}
                   required
                 />
+                {formValidation.newPassword2 &&
+                  <ErrorMessageP color="error">
+                    {formValidation.newPassword2}
+                  </ErrorMessageP>}
               </FormGroup>}
 
             {selectedTab === ACCOUNT_STATUS &&
@@ -368,9 +416,15 @@ const User = componentFromStream(props$ => {
             <Button kind="default" onClick={onEditDialogHide}>
               {t('cancel')}
             </Button>
-            <Button component="input" type="submit" value={t('save')} />
+            <Button
+              component="input"
+              type="submit"
+              value={t('save')}
+              disabled={isEditSubmitError}
+            />
           </footer>
         </StyledCommonDialog>
+
         {/* Dialog - Remove user  */}
         <DialogConfirm
           show={isDeleteDialogShow}

@@ -8,7 +8,7 @@ const FormGroup = styled.div`
     padding-bottom: 5px;
   }
 
-  input + label {
+  * + label {
     margin-top: 10px;
   }
 `;
