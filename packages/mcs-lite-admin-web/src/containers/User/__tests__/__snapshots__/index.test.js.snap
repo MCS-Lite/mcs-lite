@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render Container correctly with HOC 1`] = `<Connect(InjectIntl(withPropsOnChange(User))) />`;
+
+exports[`should return props correctly with mapDispatchToProps 1`] = `
+Object {
+  "changePasswordById": [Function],
+  "createUser": [Function],
+  "createUserByCSV": [Function],
+  "deleteUsers": [Function],
+  "fetchUsers": [Function],
+  "putIsActiveById": [Function],
+}
+`;
+
+exports[`should return props correctly with mapStateToProps 1`] = `
+Object {
+  "users": Array [
+    1,
+    2,
+    3,
+  ],
+}
+`;

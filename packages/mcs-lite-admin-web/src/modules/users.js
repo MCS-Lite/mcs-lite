@@ -122,8 +122,9 @@ function deleteUsersCycle(sources) {
   const request$ = userIdList$.withLatestFrom(
     accessToken$,
     (userIdList, accessToken) => ({
-      url: `/api/users/${userIdList.join(',')}`,
-      method: 'DELETE',
+      url: '/api/users/delete',
+      method: 'POST',
+      send: userIdList,
       headers: { Authorization: `Bearer ${accessToken}` },
       category: DELETE_USERS,
     }),

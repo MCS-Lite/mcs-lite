@@ -549,6 +549,7 @@ const User = componentFromStream(props$ => {
           checkedList={checkedList}
           onCheckedListChange={onCheckedListChange}
           onEditClick={onEditDialogShow}
+          getMessages={t}
         />
 
         {/* Footer */}

@@ -1,0 +1,167 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should return messages 1`] = `
+Object {
+  "User.accountStatus": Object {
+    "defaultMessage": "帳號狀態",
+    "id": "User.accountStatus",
+  },
+  "User.accountStatus.desc": Object {
+    "defaultMessage": "當帳號被停用時，此使用者將無法登入與使用 MCS Lite。您可隨時重新啟用此帳號。",
+    "id": "User.accountStatus.desc",
+  },
+  "User.accountStatus.label": Object {
+    "defaultMessage": "帳號使用狀態：",
+    "id": "User.accountStatus.label",
+  },
+  "User.accountStatus.success": Object {
+    "defaultMessage": "成功！帳號狀態已修改。",
+    "id": "User.accountStatus.success",
+  },
+  "User.active": Object {
+    "defaultMessage": "啟用",
+    "id": "User.active",
+  },
+  "User.addUser": Object {
+    "defaultMessage": "新增使用者",
+    "id": "User.addUser",
+  },
+  "User.addUser.success": Object {
+    "defaultMessage": "成功！使用者已新增。",
+    "id": "User.addUser.success",
+  },
+  "User.addUserType": Object {
+    "defaultMessage": "選擇新增方式",
+    "id": "User.addUserType",
+  },
+  "User.addUserType.batch": Object {
+    "defaultMessage": "批次建立",
+    "id": "User.addUserType.batch",
+  },
+  "User.addUserType.one": Object {
+    "defaultMessage": "單筆輸入",
+    "id": "User.addUserType.one",
+  },
+  "User.cancel": Object {
+    "defaultMessage": "取消",
+    "id": "User.cancel",
+  },
+  "User.changePassword": Object {
+    "defaultMessage": "修改密碼",
+    "id": "User.changePassword",
+  },
+  "User.changePassword.success": Object {
+    "defaultMessage": "成功！密碼已修改。",
+    "id": "User.changePassword.success",
+  },
+  "User.clearFilter": Object {
+    "defaultMessage": "清除搜尋條件",
+    "id": "User.clearFilter",
+  },
+  "User.delete.confirm": Object {
+    "defaultMessage": "確定要刪除使用者？",
+    "id": "User.delete.confirm",
+  },
+  "User.deleteUser": Object {
+    "defaultMessage": "刪除 {length} 位使用者",
+    "id": "User.deleteUser",
+  },
+  "User.deleteUser.success": Object {
+    "defaultMessage": "成功！使用者已被刪除。",
+    "id": "User.deleteUser.success",
+  },
+  "User.edit": Object {
+    "defaultMessage": "編輯",
+    "id": "User.edit",
+  },
+  "User.email": Object {
+    "defaultMessage": "電子信箱",
+    "id": "User.email",
+  },
+  "User.email.placeholder": Object {
+    "defaultMessage": "輸入電子信箱",
+    "id": "User.email.placeholder",
+  },
+  "User.inactive": Object {
+    "defaultMessage": "停用",
+    "id": "User.inactive",
+  },
+  "User.inputUsernameEmail": Object {
+    "defaultMessage": "輸入名稱或電子郵件搜尋使用者",
+    "id": "User.inputUsernameEmail",
+  },
+  "User.name": Object {
+    "defaultMessage": "名稱",
+    "id": "User.name",
+  },
+  "User.newPassword1": Object {
+    "defaultMessage": "新密碼",
+    "id": "User.newPassword1",
+  },
+  "User.newPassword1.placeholder": Object {
+    "defaultMessage": "輸入新密碼",
+    "id": "User.newPassword1.placeholder",
+  },
+  "User.newPassword2": Object {
+    "defaultMessage": "確認密碼",
+    "id": "User.newPassword2",
+  },
+  "User.newPassword2.error": Object {
+    "defaultMessage": "與新密碼不相符，請重新輸入",
+    "id": "User.newPassword2.error",
+  },
+  "User.newPassword2.placeholder": Object {
+    "defaultMessage": "再次輸入新密碼",
+    "id": "User.newPassword2.placeholder",
+  },
+  "User.noRows": Object {
+    "defaultMessage": "此帳號不存在，請重新搜尋。",
+    "id": "User.noRows",
+  },
+  "User.password": Object {
+    "defaultMessage": "密碼",
+    "id": "User.password",
+  },
+  "User.password.lengthError": Object {
+    "defaultMessage": "密碼長度需要長於 8 個字元",
+    "id": "User.password.lengthError",
+  },
+  "User.password.placeholder": Object {
+    "defaultMessage": "輸入密碼",
+    "id": "User.password.placeholder",
+  },
+  "User.save": Object {
+    "defaultMessage": "儲存",
+    "id": "User.save",
+  },
+  "User.upload": Object {
+    "defaultMessage": "上傳",
+    "id": "User.upload",
+  },
+  "User.uploadCSV": Object {
+    "defaultMessage": "匯入 csv 檔案",
+    "id": "User.uploadCSV",
+  },
+  "User.uploadCSV.button": Object {
+    "defaultMessage": "選擇檔案",
+    "id": "User.uploadCSV.button",
+  },
+  "User.uploadCSV.placeholder": Object {
+    "defaultMessage": "選擇 csv 檔案",
+    "id": "User.uploadCSV.placeholder",
+  },
+  "User.userManagement": Object {
+    "defaultMessage": "使用者管理",
+    "description": "Meta/Title",
+    "id": "User.userManagement",
+  },
+  "User.userName": Object {
+    "defaultMessage": "使用者名稱",
+    "id": "User.userName",
+  },
+  "User.userName.placeholder": Object {
+    "defaultMessage": "輸入使用者名稱",
+    "id": "User.userName.placeholder",
+  },
+}
+`;

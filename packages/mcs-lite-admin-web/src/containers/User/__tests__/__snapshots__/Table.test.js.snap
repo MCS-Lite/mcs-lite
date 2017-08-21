@@ -1,0 +1,131 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should renders <Table> with data 1`] = `
+<ThemeProvider
+  theme={
+    Object {
+      "base": Object {
+        "bodyBackgroundColor": "#F1F2F7",
+        "bodyColor": "#353630",
+        "fontSize": "13px",
+        "lineHeight": 1.5,
+      },
+      "color": Object {
+        "black": "#353630",
+        "default": "#FAFAFA",
+        "error": "#F5364E",
+        "grayBase": "#999A94",
+        "grayDark": "#D1D2D3",
+        "grayLight": "#FAFAFA",
+        "primary": "#00A1DE",
+        "success": "#69BE28",
+        "warning": "#F39A1E",
+        "white": "#FFFFFF",
+      },
+      "fontSize": Object {
+        "h1": "2.46rem",
+        "h2": "1.69rem",
+        "h3": "1.38rem",
+        "h4": "1.15rem",
+        "h5": "1rem",
+        "h6": "1rem",
+        "p": "1rem",
+        "small": "0.923rem",
+      },
+      "height": Object {
+        "header": "50px",
+        "normal": "32px",
+        "small": "20px",
+      },
+      "mobile": Object {
+        "headerHeight": "56px",
+        "maxWidth": "800px",
+      },
+    }
+  }
+>
+  <Table
+    checkedList={Array []}
+    data={
+      Array [
+        Object {
+          "email": "email1",
+          "userId": "user1",
+          "userName": "userName1",
+        },
+        Object {
+          "email": "email2",
+          "userId": "user2",
+          "userName": "userName2",
+        },
+      ]
+    }
+    getMessages={[Function]}
+    onCheckedListChange={[Function]}
+    onEditClick={[Function]}
+  >
+    <WindowScroller>
+      <AutoSizer
+        disableHeight={true}
+      >
+        <Styled(Table)
+          headerHeight={30}
+          height={-100}
+          noRowsRenderer={[Function]}
+          rowCount={2}
+          rowGetter={[Function]}
+          rowHeight={50}
+          width={100}
+        >
+          <Table
+            className="sc-bdVaJa dAGoMO"
+            headerHeight={30}
+            height={-100}
+            noRowsRenderer={[Function]}
+            rowCount={2}
+            rowGetter={[Function]}
+            rowHeight={50}
+            width={100}
+          >
+            <div>
+              <Column
+                cellRenderer={[Function]}
+                dataKey="userId"
+                flexShrink={0}
+                headerRenderer={[Function]}
+                width={14}
+              >
+                <div />
+              </Column>
+              <Column
+                dataKey="userName"
+                flexGrow={1}
+                label="name"
+                width={300}
+              >
+                <div />
+              </Column>
+              <Column
+                dataKey="email"
+                flexGrow={1}
+                label="email"
+                width={300}
+              >
+                <div />
+              </Column>
+              <Column
+                cellRenderer={[Function]}
+                dataKey="userId"
+                flexShrink={0}
+                width={40}
+              >
+                <div />
+              </Column>
+            </div>
+          </Table>
+        </Styled(Table)>
+      </AutoSizer>
+    </WindowScroller>
+  </Table>
+</ThemeProvider>
+`;

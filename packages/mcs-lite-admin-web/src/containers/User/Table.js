@@ -8,15 +8,13 @@ import {
   Table as RVTable,
 } from 'react-virtualized';
 import styled from 'styled-components';
-import { withGetMessages } from 'react-intl-inject-hoc';
 import IconSetting from 'mcs-lite-icon/lib/IconSetting';
 import 'react-virtualized/styles.css'; // only needs to be imported once
-import messages from './messages';
 
-const TABLE_HEIGHT_OFFSET = 200;
+export const TABLE_HEIGHT_OFFSET = 200;
 
 /**
- * className
+ * className API
  * ref: https://github.com/bvaughn/react-virtualized/blob/master/docs/Table.md#class-names
  *
  * @author Michael Hsu
@@ -168,4 +166,4 @@ class Table extends React.PureComponent {
   }
 }
 
-export default withGetMessages(messages, 'User')(Table);
+export default Table;
