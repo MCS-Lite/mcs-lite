@@ -4,13 +4,13 @@ import Input from 'mcs-lite-ui/lib/Input';
 import Button from 'mcs-lite-ui/lib/Button';
 import MobileFixedFooter from 'mcs-lite-ui/lib/MobileFixedFooter';
 import MobileHeader from 'mcs-lite-ui/lib/MobileHeader';
+import validators from 'mcs-lite-ui/lib/utils/validators';
 import IconMenu from 'mcs-lite-icon/lib/IconMenu';
 import Helmet from 'react-helmet';
 import { Link } from 'react-router';
 import { updatePathname } from 'mcs-lite-ui/lib/utils/routerHelper';
 import StyledLink from '../../components/StyledLink';
 import { Container, Label, ButtonWrapper, StyledP } from './styled-components';
-import validators from './validators';
 
 class Password extends React.Component {
   static propTypes = {

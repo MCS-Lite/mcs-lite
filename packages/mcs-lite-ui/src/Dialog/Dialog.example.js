@@ -1,44 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
 import { storiesOf } from '@storybook/react';
-import Panel from '../Panel';
+import { action } from '@storybook/addon-actions';
 import Button from '../Button';
 import Dialog from '.';
+import CommonDialog from './CommonDialog';
 
-const StyledDialog = styled(Dialog)`
+const StyledCommonDialog = styled(CommonDialog)`
   justify-content: center;
-`;
-
-const StyledPanel = styled(Panel)`
-  width: 440px;
-  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2);
-  overflow: auto;
-
-  > header {
-    padding-left: 20px;
-    display: flex;
-    align-items: center;
-  }
-
-  > main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    > img {
-      margin-bottom: 20px;
-    }
-  }
-
-  > footer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    > *:not(:last-child) {
-      margin-right: 10px;
-    }
-  }
 `;
 
 storiesOf('Dialog', module)
@@ -70,20 +39,43 @@ storiesOf('Dialog', module)
     { inline: true, propTables: [Dialog] },
   )
   .addWithInfo(
-    'Confirm Dialog',
+    'Common Dialog',
+    'Wrap in a <form> tag, you need to preventDefault()',
+    () =>
+      <StyledCommonDialog
+        component="form"
+        show
+        onHide={() => {}}
+        onSubmit={e => {
+          action('onSubmit')(e);
+          e.preventDefault();
+        }}
+      >
+        <header>Notice!</header>
+        <main>
+          是否確定重置系統？
+        </main>
+        <footer>
+          <Button
+            kind="default"
+            onClick={e => {
+              action('onCancel')(e);
+              e.preventDefault();
+            }}
+          >
+            取消
+          </Button>
+          <Button component="input" type="submit" value={'確定'} />
+        </footer>
+      </StyledCommonDialog>,
+    { inline: true, propTables: [CommonDialog] },
+  )
+  .addWithInfo(
+    'Scrollable CommonDialog',
     '',
     () =>
-      <StyledDialog show onHide={() => {}}>
-        <StyledPanel>
-          <header>Notice!</header>
-          <main>
-            是否確定重置系統？
-          </main>
-          <footer>
-            <Button kind="default">取消</Button>
-            <Button>確定</Button>
-          </footer>
-        </StyledPanel>
-      </StyledDialog>,
-    { inline: true, propTables: [Dialog] },
+      <CommonDialog show onHide={() => {}}>
+        <div style={{ height: 3000 }}>Scrollable</div>
+      </CommonDialog>,
+    { inline: true, propTables: [CommonDialog] },
   );

@@ -36,6 +36,10 @@ Object {
     "defaultMessage": "系統管理",
     "id": "DashboardLayout.systemManagement",
   },
+  "DashboardLayout.userManagement": Object {
+    "defaultMessage": "使用者管理",
+    "id": "DashboardLayout.userManagement",
+  },
   "DashboardLayout.versionCheck": Object {
     "defaultMessage": "版本更新檢查",
     "id": "DashboardLayout.versionCheck",

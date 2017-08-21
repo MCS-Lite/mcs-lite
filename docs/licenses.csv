@@ -1334,6 +1334,7 @@
 "react-topbar-progress-indicator@1.0.0","MIT","https://github.com/MoOx/react-topbar-progress-indicator"
 "react-transition-group@1.2.0","BSD-3-Clause","https://github.com/reactjs/react-transition-group"
 "react-transition-group@2.2.0","BSD-3-Clause","https://github.com/reactjs/react-transition-group"
+"react-virtualized@9.9.0","MIT","https://github.com/bvaughn/react-virtualized"
 "react-waypoint@7.0.4","MIT","https://github.com/brigade/react-waypoint"
 "react@15.6.1","BSD-3-Clause","https://github.com/facebook/react"
 "read-all-stream@3.1.0","MIT","https://github.com/floatdrop/read-all-stream"

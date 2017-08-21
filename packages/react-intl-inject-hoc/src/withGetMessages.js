@@ -6,8 +6,8 @@ const withGetMessages = (messages, prefix) =>
   compose(
     injectIntl,
     withPropsOnChange(['intl'], ({ intl: { formatMessage } }) => ({
-      getMessages: id =>
-        formatMessage(messages[prefix ? `${prefix}.${id}` : id]),
+      getMessages: (id, value) =>
+        formatMessage(messages[prefix ? `${prefix}.${id}` : id], value),
     })),
   );
 

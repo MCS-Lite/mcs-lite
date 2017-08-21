@@ -60,6 +60,11 @@
     "filepath": "src/containers/DashboardLayout/messages.js"
   },
   {
+    "id": "DashboardLayout.userManagement",
+    "defaultMessage": "使用者管理",
+    "filepath": "src/containers/DashboardLayout/messages.js"
+  },
+  {
     "id": "DashboardLayout.versionCheck",
     "defaultMessage": "版本更新檢查",
     "filepath": "src/containers/DashboardLayout/messages.js"
@@ -215,5 +220,206 @@
     "id": "System.reset.success",
     "defaultMessage": "成功！系統已重置，請重新登入。",
     "filepath": "src/containers/System/messages.js"
+  },
+  {
+    "id": "User.userManagement",
+    "description": "Meta/Title",
+    "defaultMessage": "使用者管理",
+    "filepath": "src/containers/User/messages.js"
+  },
+  {
+    "id": "User.inputUsernameEmail",
+    "defaultMessage": "輸入名稱或電子郵件搜尋使用者",
+    "filepath": "src/containers/User/messages.js"
+  },
+  {
+    "id": "User.clearFilter",
+    "defaultMessage": "清除搜尋條件",
+    "filepath": "src/containers/User/messages.js"
+  },
+  {
+    "id": "User.name",
+    "defaultMessage": "名稱",
+    "filepath": "src/containers/User/messages.js"
+  },
+  {
+    "id": "User.email",
+    "defaultMessage": "電子信箱",
+    "filepath": "src/containers/User/messages.js"
+  },
+  {
+    "id": "User.email.placeholder",
+    "defaultMessage": "輸入電子信箱",
+    "filepath": "src/containers/User/messages.js"
+  },
+  {
+    "id": "User.addUser",
+    "defaultMessage": "新增使用者",
+    "filepath": "src/containers/User/messages.js"
+  },
+  {
+    "id": "User.addUserType",
+    "defaultMessage": "選擇新增方式",
+    "filepath": "src/containers/User/messages.js"
+  },
+  {
+    "id": "User.addUserType.one",
+    "defaultMessage": "單筆輸入",
+    "filepath": "src/containers/User/messages.js"
+  },
+  {
+    "id": "User.addUserType.batch",
+    "defaultMessage": "批次建立",
+    "filepath": "src/containers/User/messages.js"
+  },
+  {
+    "id": "User.userName",
+    "defaultMessage": "使用者名稱",
+    "filepath": "src/containers/User/messages.js"
+  },
+  {
+    "id": "User.userName.placeholder",
+    "defaultMessage": "輸入使用者名稱",
+    "filepath": "src/containers/User/messages.js"
+  },
+  {
+    "id": "User.password",
+    "defaultMessage": "密碼",
+    "filepath": "src/containers/User/messages.js"
+  },
+  {
+    "id": "User.password.placeholder",
+    "defaultMessage": "輸入密碼",
+    "filepath": "src/containers/User/messages.js"
+  },
+  {
+    "id": "User.password.lengthError",
+    "defaultMessage": "密碼長度需要長於 8 個字元",
+    "filepath": "src/containers/User/messages.js"
+  },
+  {
+    "id": "User.uploadCSV",
+    "defaultMessage": "匯入 csv 檔案",
+    "filepath": "src/containers/User/messages.js"
+  },
+  {
+    "id": "User.uploadCSV.placeholder",
+    "defaultMessage": "選擇 csv 檔案",
+    "filepath": "src/containers/User/messages.js"
+  },
+  {
+    "id": "User.uploadCSV.button",
+    "defaultMessage": "選擇檔案",
+    "filepath": "src/containers/User/messages.js"
+  },
+  {
+    "id": "User.edit",
+    "defaultMessage": "編輯",
+    "filepath": "src/containers/User/messages.js"
+  },
+  {
+    "id": "User.changePassword",
+    "defaultMessage": "修改密碼",
+    "filepath": "src/containers/User/messages.js"
+  },
+  {
+    "id": "User.accountStatus",
+    "defaultMessage": "帳號狀態",
+    "filepath": "src/containers/User/messages.js"
+  },
+  {
+    "id": "User.accountStatus.desc",
+    "defaultMessage": "當帳號被停用時，此使用者將無法登入與使用 MCS Lite。您可隨時重新啟用此帳號。",
+    "filepath": "src/containers/User/messages.js"
+  },
+  {
+    "id": "User.accountStatus.label",
+    "defaultMessage": "帳號使用狀態：",
+    "filepath": "src/containers/User/messages.js"
+  },
+  {
+    "id": "User.accountStatus.success",
+    "defaultMessage": "成功！帳號狀態已修改。",
+    "filepath": "src/containers/User/messages.js"
+  },
+  {
+    "id": "User.active",
+    "defaultMessage": "啟用",
+    "filepath": "src/containers/User/messages.js"
+  },
+  {
+    "id": "User.inactive",
+    "defaultMessage": "停用",
+    "filepath": "src/containers/User/messages.js"
+  },
+  {
+    "id": "User.changePassword.success",
+    "defaultMessage": "成功！密碼已修改。",
+    "filepath": "src/containers/User/messages.js"
+  },
+  {
+    "id": "User.newPassword1",
+    "defaultMessage": "新密碼",
+    "filepath": "src/containers/User/messages.js"
+  },
+  {
+    "id": "User.newPassword1.placeholder",
+    "defaultMessage": "輸入新密碼",
+    "filepath": "src/containers/User/messages.js"
+  },
+  {
+    "id": "User.newPassword2",
+    "defaultMessage": "確認密碼",
+    "filepath": "src/containers/User/messages.js"
+  },
+  {
+    "id": "User.newPassword2.placeholder",
+    "defaultMessage": "再次輸入新密碼",
+    "filepath": "src/containers/User/messages.js"
+  },
+  {
+    "id": "User.newPassword2.error",
+    "defaultMessage": "與新密碼不相符，請重新輸入",
+    "filepath": "src/containers/User/messages.js"
+  },
+  {
+    "id": "User.deleteUser",
+    "defaultMessage": "刪除 {length} 位使用者",
+    "filepath": "src/containers/User/messages.js"
+  },
+  {
+    "id": "User.delete.confirm",
+    "defaultMessage": "確定要刪除使用者？",
+    "filepath": "src/containers/User/messages.js"
+  },
+  {
+    "id": "User.noRows",
+    "defaultMessage": "此帳號不存在，請重新搜尋。",
+    "filepath": "src/containers/User/messages.js"
+  },
+  {
+    "id": "User.save",
+    "defaultMessage": "儲存",
+    "filepath": "src/containers/User/messages.js"
+  },
+  {
+    "id": "User.upload",
+    "defaultMessage": "上傳",
+    "filepath": "src/containers/User/messages.js"
+  },
+  {
+    "id": "User.cancel",
+    "defaultMessage": "取消",
+    "filepath": "src/containers/User/messages.js"
+  },
+  {
+    "id": "User.addUser.success",
+    "defaultMessage": "成功！使用者已新增。",
+    "filepath": "src/containers/User/messages.js"
+  },
+  {
+    "id": "User.deleteUser.success",
+    "defaultMessage": "成功！使用者已被刪除。",
+    "filepath": "src/containers/User/messages.js"
   }
 ]
