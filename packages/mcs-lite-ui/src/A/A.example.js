@@ -12,7 +12,7 @@ storiesOf('A', module)
     'API',
     withInfo({
       text: 'anchor A',
-      inline: false,
+      inline: true,
     })(() => <A>Link</A>),
   )
   .add(
