@@ -1,5 +1,4 @@
 import React from 'react';
-import { pure } from 'recompose';
 import styled from 'styled-components';
 import ScrollParallax from 'rc-scroll-anim/lib/ScrollParallax';
 import ImageLayerWrapper from '../../components/ImageLayerWrapper';
