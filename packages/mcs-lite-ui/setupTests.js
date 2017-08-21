@@ -1,4 +1,4 @@
-import '../src/utils/rafPolyfill';
+import './src/utils/rafPolyfill';
 
 // For DataChannelCard component.
 jest.mock('react-text-truncate', () => 'MockReactTextTruncate');

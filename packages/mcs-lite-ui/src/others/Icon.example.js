@@ -58,7 +58,7 @@ class StatefulMorphReplace extends React.Component {
   }
 }
 
-storiesOf('Icon [mcs-lite-icon]')
+storiesOf('Icon [mcs-lite-icon]', module)
   .add(
     'API',
     withInfo({

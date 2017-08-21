@@ -27,7 +27,7 @@
   },
   "jest": {
     "setupFiles": [
-      "<rootDir>/.storybook/storyshots-setup.js"
+      "<rootDir>/setupTests.js"
     ],
     "collectCoverageFrom": [
       "src/**/*.{js,jsx}",
