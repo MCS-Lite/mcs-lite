@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { storiesOf } from '@storybook/react';
+import { withInfo } from '@storybook/addon-info';
 import { action } from '@storybook/addon-actions';
 import Button from '../Button';
 import Dialog from '.';
@@ -11,10 +12,13 @@ const StyledCommonDialog = styled(CommonDialog)`
 `;
 
 storiesOf('Dialog', module)
-  .addWithInfo(
+  .add(
     'API',
-    '',
-    () => {
+    withInfo({
+      text: '',
+      inline: true,
+      propTables: [Dialog],
+    })(() => {
       class StatefulDialog extends React.Component {
         state = { show: false };
         onShow = () => this.setState({ show: true });
@@ -35,13 +39,15 @@ storiesOf('Dialog', module)
       }
 
       return <StatefulDialog />;
-    },
-    { inline: true, propTables: [Dialog] },
+    }),
   )
-  .addWithInfo(
+  .add(
     'Common Dialog',
-    'Wrap in a <form> tag, you need to preventDefault()',
-    () =>
+    withInfo({
+      text: 'Wrap in a <form> tag, you need to preventDefault()',
+      inline: true,
+      propTables: [CommonDialog],
+    })(() =>
       <StyledCommonDialog
         component="form"
         show
@@ -68,14 +74,17 @@ storiesOf('Dialog', module)
           <Button component="input" type="submit" value={'確定'} />
         </footer>
       </StyledCommonDialog>,
-    { inline: true, propTables: [CommonDialog] },
+    ),
   )
-  .addWithInfo(
+  .add(
     'Scrollable CommonDialog',
-    '',
-    () =>
+    withInfo({
+      text: '',
+      inline: true,
+      propTables: [CommonDialog],
+    })(() =>
       <CommonDialog show onHide={() => {}}>
         <div style={{ height: 3000 }}>Scrollable</div>
       </CommonDialog>,
-    { inline: true, propTables: [CommonDialog] },
+    ),
   );

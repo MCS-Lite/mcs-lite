@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { storiesOf } from '@storybook/react';
+import { withInfo } from '@storybook/addon-info';
 import { action } from '@storybook/addon-actions';
 import TabItem from '.';
 
@@ -27,10 +28,12 @@ class StatefulTabItems extends React.Component {
 }
 
 storiesOf('TabItem', module)
-  .addWithInfo(
+  .add(
     'API',
-    '',
-    () =>
+    withInfo({
+      text: '',
+      inline: true,
+    })(() =>
       <div>
         <TabItem value="key" onClick={action('onClick')}>
           TabItem
@@ -39,21 +42,25 @@ storiesOf('TabItem', module)
           Active TabItem
         </TabItem>
       </div>,
-    { inline: true },
+    ),
   )
-  .addWithInfo(
+  .add(
     'With color props',
-    '',
-    () =>
+    withInfo({
+      text: '',
+      inline: true,
+    })(() =>
       <div>
         <TabItem value={1} color="warning">TabItem 1</TabItem>
         <TabItem value={2} color="warning" active>TabItem 2</TabItem>
       </div>,
-    { inline: true },
+    ),
   )
-  .addWithInfo(
+  .add(
     'With state',
-    'This is a react controlled component.',
-    () => <StatefulTabItems items={[1, 2, 3]} />,
-    { inline: true, propTables: [TabItem] },
+    withInfo({
+      text: 'This is a react controlled component.',
+      inline: true,
+      propTables: [TabItem],
+    })(() => <StatefulTabItems items={[1, 2, 3]} />),
   );

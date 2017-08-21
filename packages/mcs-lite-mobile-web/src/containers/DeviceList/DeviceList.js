@@ -42,7 +42,8 @@ class DeviceList extends React.Component {
   onFilterClick = () =>
     this.setState({ isFilterOpen: !this.state.isFilterOpen });
   onClickOutside = e => {
-    if (e.target === findDOMNode(this.input)) return; // Hint: Omit clicking input.
+    // Hint: Omit clicking input.
+    if (e.target === findDOMNode(this.input)) return; // eslint-disable-line
 
     this.setState({ isFilterOpen: false, filterValue: '' });
   };

@@ -1,17 +1,22 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
+import { withInfo } from '@storybook/addon-info';
 import { action } from '@storybook/addon-actions';
 import DatetimePickerDialog from '.';
 import Input from '../Input';
 
-storiesOf('DatetimePickerDialog', module).addWithInfo(
+storiesOf('DatetimePickerDialog', module).add(
   'API',
-  `
+  withInfo({
+    text: `
       ~~~js
       function onSubmit(value: number): void {} // Unix Timestamp (milliseconds)
       ~~~
     `,
-  () => {
+
+    inline: true,
+    propTables: [DatetimePickerDialog],
+  })(() => {
     class StatefulDatetimePickerDialog extends React.Component {
       state = { show: false, value: 1463556631722 };
       onShow = () => this.setState({ show: true });
@@ -46,6 +51,5 @@ storiesOf('DatetimePickerDialog', module).addWithInfo(
     }
 
     return <StatefulDatetimePickerDialog />;
-  },
-  { inline: true, propTables: [DatetimePickerDialog] },
+  }),
 );

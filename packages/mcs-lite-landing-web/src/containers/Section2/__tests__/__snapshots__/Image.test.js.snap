@@ -3,7 +3,7 @@
 exports[`should renders <Image> correctly 1`] = `
 <pure(styled.div)>
   <div>
-    <Styled(pure(BackgroundImage))
+    <Styled(BackgroundImage)
       placeholder="img_iotX60.png"
       src="img_iot.svg"
     />
@@ -30,7 +30,7 @@ exports[`should renders <Image> correctly 1`] = `
       }
     }
   >
-    <Styled(pure(BackgroundImage))
+    <Styled(BackgroundImage)
       placeholder="img_macX60.png"
       src="img_mac.svg"
     />

@@ -1,6 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
+import { withInfo } from '@storybook/addon-info';
 import styled from 'styled-components';
 import { IconDelete } from 'mcs-lite-icon';
 import { MenuItem, Menu } from '.';
@@ -14,33 +15,43 @@ const StyledMenu = styled(Menu)`
 `;
 
 storiesOf('Menu', module)
-  .addWithInfo(
+  .add(
     'API for MenuItem',
-    '',
-    () =>
+    withInfo({
+      text: '',
+      inline: true,
+    })(() =>
       <div>
         <MenuItem>div tag (default)</MenuItem>
         <MenuItem component="a">a Tag</MenuItem>
       </div>,
-    { inline: true },
+    ),
   )
-  .addWithInfo('API for Menu', '', () => <Menu>Children</Menu>, {
-    inline: true,
-  })
-  .addWithInfo(
+  .add(
+    'API for Menu',
+    withInfo({
+      text: '',
+      inline: true,
+    })(() => <Menu>Children</Menu>),
+  )
+  .add(
     'Min width',
-    'min-width: 80px',
-    () =>
+    withInfo({
+      text: 'min-width: 80px',
+      inline: true,
+    })(() =>
       <Menu>
         <MenuItem onClick={action('index: 1')}>複製</MenuItem>
         <MenuItem onClick={action('index: 1')}>刪除</MenuItem>
       </Menu>,
-    { inline: true },
+    ),
   )
-  .addWithInfo(
+  .add(
     'Fixed width',
-    'With fixed width',
-    () =>
+    withInfo({
+      text: 'With fixed width',
+      inline: true,
+    })(() =>
       <StyledMenu>
         <MenuItem onClick={action('index: 1')}>MenuItem 1</MenuItem>
         <MenuItem onClick={action('index: 2')}>MenuItem Content 2</MenuItem>
@@ -56,5 +67,5 @@ storiesOf('Menu', module)
         <MenuItem onClick={action('index: 8')}><IconDelete /></MenuItem>
         <MenuItem component="a">{`<a>`} Tag</MenuItem>
       </StyledMenu>,
-    { inline: true },
+    ),
   );

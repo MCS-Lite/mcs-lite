@@ -1,5 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
+import { withInfo } from '@storybook/addon-info';
 import styled from 'styled-components';
 import DataPointAreaChart from '.';
 import RechartTooltip from './RechartTooltip';
@@ -29,10 +30,13 @@ const data2 = [
 ];
 
 storiesOf('DataPointAreaChart', module)
-  .addWithInfo(
+  .add(
     'RechartTooltip',
-    'Customize',
-    () =>
+    withInfo({
+      text: 'Customize',
+      inline: true,
+      propTables: [RechartTooltip],
+    })(() =>
       <RechartTooltip
         active
         payload={[{ value: 1 }]}
@@ -40,39 +44,51 @@ storiesOf('DataPointAreaChart', module)
         formatter={value => `formatter(${value})`}
         labelFormatter={value => `labelFormatter(${value})`}
       />,
-    { inline: true, propTables: [RechartTooltip] },
+    ),
   )
-  .addWithInfo(
+  .add(
     'API',
-    'Default',
-    () =>
+    withInfo({
+      text: 'Default',
+      inline: true,
+      propTables: [DataPointAreaChart],
+    })(() =>
       <DemoWrapper>
         <DataPointAreaChart data={data1} />
       </DemoWrapper>,
-    { inline: true, propTables: [DataPointAreaChart] },
+    ),
   )
-  .addWithInfo(
+  .add(
     'With isAnimationActive props',
-    'Render with animation',
-    () =>
+    withInfo({
+      text: 'Render with animation',
+      inline: true,
+      propTables: [DataPointAreaChart],
+    })(() =>
       <DemoWrapper>
         <DataPointAreaChart isAnimationActive data={data1} />
       </DemoWrapper>,
-    { inline: true, propTables: [DataPointAreaChart] },
+    ),
   )
-  .addWithInfo(
+  .add(
     'With kind and type props',
-    '',
-    () =>
+    withInfo({
+      text: '',
+      inline: true,
+      propTables: [DataPointAreaChart],
+    })(() =>
       <DemoWrapper>
         <DataPointAreaChart kind="warning" type="step" data={data2} />
       </DemoWrapper>,
-    { inline: true, propTables: [DataPointAreaChart] },
+    ),
   )
-  .addWithInfo(
+  .add(
     'With realtime data',
-    '',
-    () => {
+    withInfo({
+      text: '',
+      inline: true,
+      propTables: [DataPointAreaChart],
+    })(() => {
       class RealtimeChart extends React.Component {
         state = {
           data: [
@@ -108,6 +124,5 @@ storiesOf('DataPointAreaChart', module)
       }
 
       return <RealtimeChart />;
-    },
-    { inline: true, propTables: [DataPointAreaChart] },
+    }),
   );

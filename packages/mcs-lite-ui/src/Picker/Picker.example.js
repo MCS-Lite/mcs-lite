@@ -1,5 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
+import { withInfo } from '@storybook/addon-info';
 import { action } from '@storybook/addon-actions';
 import { Picker, PickerContainer } from '.';
 
@@ -29,13 +30,16 @@ class StatefulPicker extends React.Component {
   }
 }
 
-storiesOf('Picker', module).addWithInfo(
+storiesOf('Picker', module).add(
   'API',
-  `
+  withInfo({
+    text: `
       ~~~js
       function onChange(index: number, props: object): void {}
       ~~~
     `,
-  () => <StatefulPicker />,
-  { inline: true, propTables: [Picker] },
+
+    inline: true,
+    propTables: [Picker],
+  })(() => <StatefulPicker />),
 );

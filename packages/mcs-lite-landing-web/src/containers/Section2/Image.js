@@ -42,4 +42,4 @@ const Image = () =>
 
   </ImageLayerWrapper>;
 
-export default pure(Image);
+export default Image;

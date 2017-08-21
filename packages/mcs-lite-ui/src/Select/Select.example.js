@@ -1,5 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
+import { withInfo } from '@storybook/addon-info';
 import Select from '.';
 
 class StatefulSelect extends React.Component {
@@ -22,10 +23,12 @@ class StatefulSelect extends React.Component {
 }
 
 storiesOf('Select', module)
-  .addWithInfo(
+  .add(
     'API - ReadOnly',
-    'React controlled component',
-    () =>
+    withInfo({
+      text: 'React controlled component',
+      inline: true,
+    })(() =>
       <Select
         value={2}
         readOnly
@@ -34,12 +37,14 @@ storiesOf('Select', module)
           { value: 2, children: 'value 2' },
         ]}
       />,
-    { inline: true },
+    ),
   )
-  .addWithInfo(
+  .add(
     'With kind props',
-    '',
-    () =>
+    withInfo({
+      text: '',
+      inline: true,
+    })(() =>
       <Select
         value={2}
         readOnly
@@ -49,9 +54,13 @@ storiesOf('Select', module)
           { value: 2, children: 'value 2' },
         ]}
       />,
-    { inline: true },
+    ),
   )
-  .addWithInfo('With disabled props', '', () => <StatefulSelect />, {
-    inline: true,
-    propTables: [Select],
-  });
+  .add(
+    'With disabled props',
+    withInfo({
+      text: '',
+      inline: true,
+      propTables: [Select],
+    })(() => <StatefulSelect />),
+  );

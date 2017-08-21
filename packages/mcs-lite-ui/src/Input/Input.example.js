@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { storiesOf } from '@storybook/react';
+import { withInfo } from '@storybook/addon-info';
 import { kindList } from 'mcs-lite-theme';
 import Input from '.';
 
@@ -12,28 +13,37 @@ const Wrapper = styled.div`
 `;
 
 storiesOf('Input', module)
-  .addWithInfo('API', '', () => <Input placeholder="placeholder" />, {
-    inline: true,
-  })
-  .addWithInfo(
-    'With focus props',
-    '',
-    () => <Input placeholder="placeholder" focus />,
-    { inline: true },
+  .add(
+    'API',
+    withInfo({
+      text: '',
+      inline: true,
+    })(() => <Input placeholder="placeholder" />),
   )
-  .addWithInfo(
+  .add(
+    'With focus props',
+    withInfo({
+      text: '',
+      inline: true,
+    })(() => <Input placeholder="placeholder" focus />),
+  )
+  .add(
     'With kind props',
-    '使用內建 kind props 樣式。',
-    () =>
+    withInfo({
+      text: '使用內建 kind props 樣式。',
+      inline: true,
+    })(() =>
       <Wrapper>
         {kindList.map(key => <Input key={key} kind={key} placeholder={key} />)}
       </Wrapper>,
-    { inline: true },
+    ),
   )
-  .addWithInfo(
+  .add(
     'With type props',
-    '使用內建 type props 樣式。',
-    () => {
+    withInfo({
+      text: '使用內建 type props 樣式。',
+      inline: true,
+    })(() => {
       const types = [
         'text',
         'email',
@@ -57,6 +67,5 @@ storiesOf('Input', module)
           {types.map(key => <Input key={key} type={key} placeholder={key} />)}
         </Wrapper>
       );
-    },
-    { inline: true },
+    }),
   );

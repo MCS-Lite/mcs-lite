@@ -30,6 +30,7 @@ exports[`should render LazyloadIcon correctly 1`] = `
       }
       attr="style"
       component="div"
+      componentProps={Object {}}
       onChange={[Function]}
       reverseDelay={0}
       style={

@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { storiesOf } from '@storybook/react';
+import { withInfo } from '@storybook/addon-info';
 import { action } from '@storybook/addon-actions';
 import DataChannelCard from '../DataChannelCard';
 import DATA_CHANNELS from './API';
@@ -23,9 +24,10 @@ const CardWrapper = styled.div`
   }
 `;
 
-storiesOf('DataChannelAdapter', module).addWithInfo(
+storiesOf('DataChannelAdapter', module).add(
   'API',
-  `
+  withInfo({
+    text: `
       ~~~js
       type Event = {
         type: 'SUBMIT'|'CHANGE'|'CLEAR', // event type
@@ -39,7 +41,9 @@ storiesOf('DataChannelAdapter', module).addWithInfo(
       type DCEventHandler = DCEvent => void
       ~~~
     `,
-  () =>
+
+    inline: true,
+  })(() =>
     <CardWrapper>
       {DATA_CHANNELS.map(dataChannel =>
         <DataChannelCard
@@ -59,5 +63,5 @@ storiesOf('DataChannelAdapter', module).addWithInfo(
         </DataChannelCard>,
       )}
     </CardWrapper>,
-  { inline: true },
+  ),
 );

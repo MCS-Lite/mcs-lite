@@ -40,31 +40,31 @@
     ]
   },
   "devDependencies": {
-    "@storybook/addon-info": "^3.1.9",
-    "@storybook/addon-options": "^3.1.6",
-    "@storybook/addon-storyshots": "^3.1.9",
-    "@storybook/react": "^3.1.9",
-    "babel-cli": "^6.24.1",
+    "@storybook/addon-info": "^3.2.5",
+    "@storybook/addon-options": "^3.2.4",
+    "@storybook/addon-storyshots": "^3.2.5",
+    "@storybook/react": "^3.2.5",
+    "babel-cli": "^6.26.0",
     "babel-preset-mcs-lite": "^0.3.6",
     "enzyme": "^2.9.1",
     "enzyme-to-json": "^1.5.1",
     "jest": "^20.0.4",
-    "jest-styled-components": "^4.2.2",
+    "jest-styled-components": "^4.4.1",
     "mcs-lite-icon": "^0.3.7",
     "mcs-lite-scripts": "^0.3.7",
     "mcs-lite-theme": "^0.3.6",
-    "polished": "^1.3.0",
+    "polished": "^1.4.1",
     "react": "^15.6.1",
     "react-addons-test-utils": "^15.6.0",
     "react-dom": "^15.6.1",
     "react-test-renderer": "^15.6.1",
-    "styled-components": "^2.1.1"
+    "styled-components": "^2.1.2"
   },
   "dependencies": {
-    "copy-to-clipboard": "^3.0.7",
+    "copy-to-clipboard": "^3.0.8",
     "date-fns": "^1.28.5",
-    "dom-align": "^1.6.2",
-    "flubber": "^0.3.1",
+    "dom-align": "^1.6.4",
+    "flubber": "^0.4.0",
     "left-pad": "^1.1.3",
     "prop-types": "^15.5.10",
     "raf-throttle": "^2.0.3",
@@ -76,18 +76,18 @@
     "react-overlays": "^0.8.0",
     "react-render-to-json": "^0.0.5",
     "react-svg-morph": "^0.1.10",
-    "react-syntax-highlighter": "^5.6.2",
+    "react-syntax-highlighter": "^5.6.3",
     "react-text-truncate": "^0.11.2",
     "react-waypoint": "^7.0.4",
-    "recharts": "^1.0.0-alpha.2",
-    "recompose": "^0.24.0",
-    "rxjs": "^5.4.2"
+    "recharts": "^1.0.0-alpha.3",
+    "recompose": "^0.25.0",
+    "rxjs": "^5.4.3"
   },
   "peerDependencies": {
     "mcs-lite-icon": "^0.3.7",
     "mcs-lite-theme": "^0.3.6",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
-    "styled-components": "^2.1.1"
+    "styled-components": "^2.1.2"
   }
 }

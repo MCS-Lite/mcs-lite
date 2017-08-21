@@ -1,6 +1,7 @@
 import React from 'react';
 import R from 'ramda';
 import { storiesOf } from '@storybook/react';
+import { withInfo } from '@storybook/addon-info';
 import { theme } from 'mcs-lite-theme';
 import Heading from '.';
 
@@ -8,16 +9,20 @@ const remToPx = rem =>
   `${parseFloat(theme.base.fontSize, 10) * parseFloat(rem, 10)}px`;
 
 storiesOf('Heading', module)
-  .addWithInfo(
+  .add(
     'API',
-    'Default h1 & color: currentColor',
-    () => <Heading>Level 1</Heading>,
-    { inline: true },
+    withInfo({
+      text: 'Default h1 & color: currentColor',
+      inline: true,
+    })(() => <Heading>Level 1</Heading>),
   )
-  .addWithInfo(
+  .add(
     'With level props',
-    '使用不同等級的 Level。',
-    () =>
+    withInfo({
+      text: '使用不同等級的 Level。',
+      inline: true,
+      propTables: false,
+    })(() =>
       <div>
         {R.range(1, 7).map(key =>
           <Heading key={key} level={key}>
@@ -26,16 +31,19 @@ storiesOf('Heading', module)
           </Heading>,
         )}
       </div>,
-    { inline: true, propTables: false },
+    ),
   )
-  .addWithInfo(
+  .add(
     'With color props',
-    '使用不同等級的 Color。',
-    () =>
+    withInfo({
+      text: '使用不同等級的 Color。',
+      inline: true,
+      propTables: false,
+    })(() =>
       <div>
         {Object.keys(theme.color).map(key =>
           <Heading key={key} level={2} color={key}>Level 2 {key}</Heading>,
         )}
       </div>,
-    { inline: true, propTables: false },
+    ),
   );

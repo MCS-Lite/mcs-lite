@@ -1,22 +1,28 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
+import { withInfo } from '@storybook/addon-info';
 import Small from '.';
 import P from '../P';
 
 storiesOf('Small', module)
-  .addWithInfo(
+  .add(
     'API',
-    '縮小字型。',
-    () =>
+    withInfo({
+      text: '縮小字型。',
+      inline: true,
+    })(() =>
       <Small>
         Small content
       </Small>,
-    { inline: true },
+    ),
   )
-  .addWithInfo(
+  .add(
     'Within <P>',
-    '段落中出現。',
-    () =>
+    withInfo({
+      text: '段落中出現。',
+      inline: true,
+      propTables: false,
+    })(() =>
       <P>
         Nisi eu eiusmod cupidatat aute laboris commodo excepteur
         <Small>
@@ -24,12 +30,15 @@ storiesOf('Small', module)
         </Small>
         incididunt incididunt aliquip pariatur est minim officia sit.
       </P>,
-    { inline: true, propTables: false },
+    ),
   )
-  .addWithInfo(
+  .add(
     'With color',
-    '來自上層的顏色。',
-    () =>
+    withInfo({
+      text: '來自上層的顏色。',
+      inline: true,
+      propTables: false,
+    })(() =>
       <P color="primary">
         Nisi eu eiusmod cupidatat aute laboris commodo excepteur
         <Small>
@@ -37,5 +46,5 @@ storiesOf('Small', module)
         </Small>
         incididunt incididunt aliquip pariatur est minim officia sit.
       </P>,
-    { inline: true, propTables: false },
+    ),
   );

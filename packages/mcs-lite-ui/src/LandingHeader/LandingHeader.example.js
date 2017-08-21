@@ -1,33 +1,41 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
+import { withInfo } from '@storybook/addon-info';
 import { IconMenu } from 'mcs-lite-icon';
 import { LandingHeader, Nav, NavItem, NavItemDropdown, NavItemBurger } from '.';
 
 storiesOf('LandingHeader', module)
-  .addWithInfo(
+  .add(
     'API',
-    '',
-    () =>
+    withInfo({
+      text: '',
+      inline: true,
+    })(() =>
       <LandingHeader>
         <div>
           Content
         </div>
       </LandingHeader>,
-    { inline: true },
+    ),
   )
-  .addWithInfo(
+  .add(
     'With offset props',
-    'The **scrollTop** value of the document/window to get the shadow style.',
-    () =>
+    withInfo({
+      text:
+        'The **scrollTop** value of the document/window to get the shadow style.',
+      inline: true,
+    })(() =>
       <LandingHeader offset={160}>
         offset 160
       </LandingHeader>,
-    { inline: true },
+    ),
   )
-  .addWithInfo(
+  .add(
     'With Nav and NavItem',
-    'icon',
-    () =>
+    withInfo({
+      text: 'icon',
+      inline: true,
+    })(() =>
       <LandingHeader>
         <Nav>
           <NavItem><IconMenu size={24} /></NavItem>
@@ -36,12 +44,14 @@ storiesOf('LandingHeader', module)
           <NavItem disabled>Nav Item 3 (disabled)</NavItem>
         </Nav>
       </LandingHeader>,
-    { inline: true },
+    ),
   )
-  .addWithInfo(
+  .add(
     'NavItemDropdown',
-    'items = <MenuItem>',
-    () =>
+    withInfo({
+      text: 'items = <MenuItem>',
+      inline: true,
+    })(() =>
       <LandingHeader>
         <Nav>
           <NavItemDropdown
@@ -54,12 +64,14 @@ storiesOf('LandingHeader', module)
           </NavItemDropdown>
         </Nav>
       </LandingHeader>,
-    { inline: true },
+    ),
   )
-  .addWithInfo(
+  .add(
     'NavItemBurger',
-    'items = <NavItem>',
-    () =>
+    withInfo({
+      text: 'items = <NavItem>',
+      inline: true,
+    })(() =>
       <LandingHeader>
         <Nav>
           <NavItemBurger
@@ -78,5 +90,5 @@ storiesOf('LandingHeader', module)
           </NavItemBurger>
         </Nav>
       </LandingHeader>,
-    { inline: true },
+    ),
   );

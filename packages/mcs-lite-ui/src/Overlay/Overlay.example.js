@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { storiesOf } from '@storybook/react';
+import { withInfo } from '@storybook/addon-info';
 import { action } from '@storybook/addon-actions';
 import styled from 'styled-components';
 import { MenuItem, Menu } from '../Menu';
@@ -10,10 +11,13 @@ import Overlay from '.';
 import A from '../A';
 
 storiesOf('Overlay', module)
-  .addWithInfo(
+  .add(
     'API',
-    'state = { show: true }',
-    () => {
+    withInfo({
+      text: 'state = { show: true }',
+      inline: true,
+      propTables: [Overlay],
+    })(() => {
       class SimpleOverlay extends React.Component {
         state = { show: true, target: undefined };
         onMouseEnter = () => this.setState({ show: !this.state.show });
@@ -42,21 +46,23 @@ storiesOf('Overlay', module)
       return (
         <SimpleOverlay alignConfig={{ points: ['cl', 'cr'], offset: [5, 0] }} />
       );
-    },
-    { inline: true, propTables: [Overlay] },
+    }),
   )
-  .addWithInfo(
+  .add(
     'Dropdown Menu',
-    'With onHide function for rootClose',
-    () => {
+    withInfo({
+      text: 'With onHide function for rootClose',
+      inline: true,
+      propTables: [Overlay],
+    })(() => {
       const Wrapper = styled.div`
-        display: flex;
-        justify-content: space-between;
-      `;
+    display: flex;
+    justify-content: space-between;
+  `;
 
       const StyledMenu = styled(Menu)`
-        width: 300px;
-      `;
+    width: 300px;
+  `;
 
       class OverlayMenu extends React.Component {
         state = { show: false, target: undefined };
@@ -97,6 +103,5 @@ storiesOf('Overlay', module)
           <OverlayMenu />
         </Wrapper>
       );
-    },
-    { inline: true, propTables: [Overlay] },
+    }),
   );

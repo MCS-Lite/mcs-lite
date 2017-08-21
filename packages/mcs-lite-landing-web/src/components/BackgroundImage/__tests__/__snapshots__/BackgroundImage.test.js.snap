@@ -7,6 +7,7 @@ exports[`should renders <BackgroundImage> correctly 1`] = `
   -webkit-transition: all 0.3 linear;
   transition: all 0.3 linear;
   opacity: 0.7;
+  -webkit-filter: blur(3px);
   filter: blur(3px);
   -webkit-transform: scale(1);
   -ms-transform: scale(1);

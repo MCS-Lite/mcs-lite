@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { storiesOf } from '@storybook/react';
+import { withInfo } from '@storybook/addon-info';
 import { theme } from 'mcs-lite-theme';
 import StatusLight from '.';
 
@@ -9,11 +10,19 @@ const StyledStatusLight = styled(StatusLight)`
 `;
 
 storiesOf('StatusLight', module)
-  .addWithInfo('API', 'default', () => <StatusLight />, { inline: true })
-  .addWithInfo(
+  .add(
+    'API',
+    withInfo({
+      text: 'default',
+      inline: true,
+    })(() => <StatusLight />),
+  )
+  .add(
     'With color props',
-    '',
-    () =>
+    withInfo({
+      text: '',
+      inline: true,
+    })(() =>
       <div>
         {Object.keys(theme.color).map(key =>
           <div key={key}>
@@ -22,11 +31,12 @@ storiesOf('StatusLight', module)
           </div>,
         )}
       </div>,
-    { inline: true },
+    ),
   )
-  .addWithInfo(
+  .add(
     'Custom width',
-    'With width: 100px',
-    () => <StyledStatusLight color="warning" />,
-    { inline: true },
+    withInfo({
+      text: 'With width: 100px',
+      inline: true,
+    })(() => <StyledStatusLight color="warning" />),
   );

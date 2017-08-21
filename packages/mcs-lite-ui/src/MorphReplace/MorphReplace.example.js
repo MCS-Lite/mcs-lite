@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { storiesOf } from '@storybook/react';
+import { withInfo } from '@storybook/addon-info';
 import * as Icons from 'mcs-lite-icon/lib/index';
 import MorphReplace from '.';
 
@@ -28,10 +29,13 @@ class StatefulMorphReplace extends React.Component {
   }
 }
 
-storiesOf('MorphReplace', module).addWithInfo(
+storiesOf('MorphReplace', module).add(
   'API',
-  '',
-  () =>
+  withInfo({
+    text: '',
+    inline: true,
+    propTables: [MorphReplace],
+  })(() =>
     <div>
       <StatefulMorphReplace
         from={<Icons.IconMenu />}
@@ -51,5 +55,5 @@ storiesOf('MorphReplace', module).addWithInfo(
         to={<Icons.IconDone />}
       />
     </div>,
-  { inline: true, propTables: [MorphReplace] },
+  ),
 );

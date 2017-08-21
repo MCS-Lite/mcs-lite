@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Row } from 'hedron';
-import { pure } from 'recompose';
 import styled from 'styled-components';
 import ScrollOverPack from 'rc-scroll-anim/lib/ScrollOverPack';
 import TweenOne from 'rc-tween-one';
@@ -18,7 +17,7 @@ export const ImageWrapper = styled.div`
   border-radius: 3px;
 `;
 
-export const LazyloadIcon = pure(({ children }) =>
+export const LazyloadIcon = ({ children }) =>
   <LazyloadOnce height={HEIGHT}>
     <ScrollOverPack playScale={0.2}>
       <TweenOne
@@ -31,8 +30,8 @@ export const LazyloadIcon = pure(({ children }) =>
         </ImageWrapper>
       </TweenOne>
     </ScrollOverPack>
-  </LazyloadOnce>,
-);
+  </LazyloadOnce>;
+
 LazyloadIcon.displayName = 'LazyloadIcon';
 LazyloadIcon.propTypes = {
   children: PropTypes.node.isRequired,

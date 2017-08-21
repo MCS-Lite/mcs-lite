@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { storiesOf } from '@storybook/react';
+import { withInfo } from '@storybook/addon-info';
 import Input from '../Input';
 import Button from '../Button';
 import InputGroup from '../InputGroup';
@@ -11,10 +12,12 @@ const Wrapper = styled.div`
   }
 `;
 
-storiesOf('InputGroup', module).addWithInfo(
+storiesOf('InputGroup', module).add(
   'API',
-  '',
-  () =>
+  withInfo({
+    text: '',
+    inline: true,
+  })(() =>
     <Wrapper>
       <InputGroup>
         <Button size="small">Button 1</Button>
@@ -51,5 +54,5 @@ storiesOf('InputGroup', module).addWithInfo(
       </InputGroup>
 
     </Wrapper>,
-  { inline: true },
+  ),
 );

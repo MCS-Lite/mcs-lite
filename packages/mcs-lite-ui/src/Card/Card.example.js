@@ -1,10 +1,12 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
+import { withInfo } from '@storybook/addon-info';
 import Card from '.';
 
-storiesOf('Card', module).addWithInfo(
+storiesOf('Card', module).add(
   'API',
-  '一個簡單到不行的白底。',
-  () => <Card>Card Content</Card>,
-  { inline: true },
+  withInfo({
+    text: '一個簡單到不行的白底。',
+    inline: true,
+  })(() => <Card>Card Content</Card>),
 );

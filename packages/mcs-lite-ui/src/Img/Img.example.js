@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { storiesOf } from '@storybook/react';
+import { withInfo } from '@storybook/addon-info';
 import Img from '../Img';
 
 const Container = styled.div`
@@ -12,27 +13,32 @@ const StyledImg = styled(Img)`
 `;
 
 storiesOf('Img', module)
-  .addWithInfo(
+  .add(
     'API',
-    'default size="cover"',
-    () =>
+    withInfo({
+      text: 'default size="cover"',
+      inline: true,
+    })(() =>
       <Container>
         <Img src="http://placehold.it/350x150" />
       </Container>,
-    { inline: true },
+    ),
   )
-  .addWithInfo(
+  .add(
     'With size props',
-    'size="contain"',
-    () =>
+    withInfo({
+      text: 'size="contain"',
+      inline: true,
+    })(() =>
       <Container>
         <Img src="http://placehold.it/350x150" size="contain" />
       </Container>,
-    { inline: true },
+    ),
   )
-  .addWithInfo(
+  .add(
     'With height override',
-    'height=100',
-    () => <StyledImg src="http://placehold.it/350x150" />,
-    { inline: true },
+    withInfo({
+      text: 'height=100',
+      inline: true,
+    })(() => <StyledImg src="http://placehold.it/350x150" />),
   );
