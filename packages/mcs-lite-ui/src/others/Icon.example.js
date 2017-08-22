@@ -69,11 +69,11 @@ storiesOf('Icon [mcs-lite-icon]', module)
   .add(
     'Spin Icon',
     withInfo({
-      text: '',
+      text: 'SVG Icon 請使用偶數（Safari）',
       inline: true,
     })(() =>
       <Spin>
-        <Icons.IconLoading />
+        <Icons.IconLoading size={14} />
       </Spin>,
     ),
   )

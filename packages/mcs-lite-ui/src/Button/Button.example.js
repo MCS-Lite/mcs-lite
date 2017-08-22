@@ -160,7 +160,7 @@ storiesOf('Button', module)
       <Button>
         <CenterContainer>
           <Spin>
-            <IconLoading />
+            <IconLoading size={14} />
           </Spin>
           &nbsp;Loading ...
         </CenterContainer>

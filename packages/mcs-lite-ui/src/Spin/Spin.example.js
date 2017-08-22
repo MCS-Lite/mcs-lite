@@ -11,7 +11,9 @@ const ContentWrapper = styled.div`
 storiesOf('Spin', module).add(
   'API',
   withInfo({
-    text: 'Content with display: inline-block;',
+    text: `Content with display: inline-block;
+  SVG Icon 請使用偶數（Safari）
+`,
     inline: true,
   })(() =>
     <Spin>
