@@ -6971,6 +6971,7 @@ exports[`Storyshots DataPointAreaChart API 1`] = `
 >
   <div
     className="recharts-responsive-container"
+    id={undefined}
     style={
       Object {
         "height": "100%",
@@ -7050,6 +7051,7 @@ exports[`Storyshots DataPointAreaChart With isAnimationActive props 1`] = `
 >
   <div
     className="recharts-responsive-container"
+    id={undefined}
     style={
       Object {
         "height": "100%",
@@ -7079,6 +7081,7 @@ exports[`Storyshots DataPointAreaChart With kind and type props 1`] = `
 >
   <div
     className="recharts-responsive-container"
+    id={undefined}
     style={
       Object {
         "height": "100%",
@@ -7108,6 +7111,7 @@ exports[`Storyshots DataPointAreaChart With realtime data 1`] = `
 >
   <div
     className="recharts-responsive-container"
+    id={undefined}
     style={
       Object {
         "height": "100%",
