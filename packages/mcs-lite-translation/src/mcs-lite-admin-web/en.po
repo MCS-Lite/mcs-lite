@@ -1,19 +1,20 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: mcs-lite\n"
-"POT-Creation-Date: 2017-06-16 14:45+0800\n"
-"PO-Revision-Date: 2017-06-16 03:20-0400\n"
-"Last-Translator: smartexist <smartexist@gmail.com>\n"
+"POT-Creation-Date: 2017-08-07T07:06:02.049Z\n"
+"PO-Revision-Date: 2017-08-21 18:02+0800\n"
+"Last-Translator: Daria Chen <smartexist@gmail.com>\n"
 "Language-Team: English\n"
 "Language: en_US\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: crowdin.com\n"
+"X-Generator: Poedit 2.0.3\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Crowdin-Project: mcs-lite\n"
 "X-Crowdin-Language: en\n"
 "X-Crowdin-File: mcs-lite-admin.po\n"
+"X-Source-Language: zh_TW\n"
 
 #. [Signin.email]
 #. defaultMessage is:
@@ -53,6 +54,13 @@ msgstr "MCS Lite Admin"
 msgid "MCS lite 的連線 IP"
 msgstr "IP address for MCS Lite"
 
+#. [User.upload]
+#. defaultMessage is:
+#. 上傳
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+msgid "上傳"
+msgstr "Upload"
+
 #. [Ip.description] - description
 #. defaultMessage is:
 #. 使用者可透過下列的 IP 位址連線至 MCS Lite 服務器。
@@ -60,12 +68,38 @@ msgstr "IP address for MCS Lite"
 msgid "使用者可透過下列的 IP 位址連線至 MCS Lite 服務器。"
 msgstr "Users can connect to MCS Lite server by the following IP address."
 
+#. [User.userName]
+#. defaultMessage is:
+#. 使用者名稱
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+msgid "使用者名稱"
+msgstr "Username"
+
+#. [DashboardLayout.userManagement]
+#. defaultMessage is:
+#. 使用者管理
+#. [User.userManagement] - Meta/Title
+#. defaultMessage is:
+#. 使用者管理
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+msgid "使用者管理"
+msgstr "User management"
+
+#. [User.changePassword]
+#. defaultMessage is:
+#. 修改密碼
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+msgid "修改密碼"
+msgstr "Change password"
+
 #. [System.description] - description
 #. defaultMessage is:
 #. 修改系統的參數設定。
 #: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
 msgid "修改系統的參數設定。"
-msgstr "You can modify the system configuration here. Please restart MCS Lite service to have the settings to take effect."
+msgstr ""
+"You can modify the system configuration here. Please restart MCS Lite "
+"service to have the settings to take effect."
 
 #. [DashboardLayout.stop]
 #. defaultMessage is:
@@ -74,12 +108,29 @@ msgstr "You can modify the system configuration here. Please restart MCS Lite se
 msgid "停止"
 msgstr "Stop"
 
+#. [User.inactive]
+#. defaultMessage is:
+#. 停用
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+msgid "停用"
+msgstr "Deactivated"
+
 #. [System.save]
+#. defaultMessage is:
+#. 儲存
+#. [User.save]
 #. defaultMessage is:
 #. 儲存
 #: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
 msgid "儲存"
 msgstr "Save"
+
+#. [User.newPassword2.placeholder]
+#. defaultMessage is:
+#. 再次輸入新密碼
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+msgid "再次輸入新密碼"
+msgstr "Please enter the new password again"
 
 #. [Language.switch] - Document Title
 #. defaultMessage is:
@@ -88,6 +139,13 @@ msgstr "Save"
 msgid "切換語言"
 msgstr "Language"
 
+#. [User.deleteUser]
+#. defaultMessage is:
+#. 刪除 {length} 位使用者
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+msgid "刪除 {length} 位使用者"
+msgstr "Delete {length} user(s)"
+
 #. [Ip.goToMCSLite]
 #. defaultMessage is:
 #. 前往 MCS Lite
@@ -95,12 +153,29 @@ msgstr "Language"
 msgid "前往 MCS Lite"
 msgstr "Go to MCS Lite"
 
+#. [User.uploadCSV]
+#. defaultMessage is:
+#. 匯入 csv 檔案
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+msgid "匯入 csv 檔案"
+msgstr "Import a CSV file"
+
 #. [DialogConfirm.cancel]
+#. defaultMessage is:
+#. 取消
+#. [User.cancel]
 #. defaultMessage is:
 #. 取消
 #: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
 msgid "取消"
 msgstr "Cancel"
+
+#. [User.name]
+#. defaultMessage is:
+#. 名稱
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+msgid "名稱"
+msgstr "Name"
 
 #. [DashboardLayout.start]
 #. defaultMessage is:
@@ -109,10 +184,27 @@ msgstr "Cancel"
 msgid "啟動"
 msgstr "Start"
 
+#. [User.active]
+#. defaultMessage is:
+#. 啟用
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+msgid "啟用"
+msgstr "Activated"
+
+#. [User.addUserType.one]
+#. defaultMessage is:
+#. 單筆輸入
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+msgid "單筆輸入"
+msgstr "Individual account creation"
+
 #. [Signin.password]
 #. defaultMessage is:
 #. 密碼
 #. [Signup.password]
+#. defaultMessage is:
+#. 密碼
+#. [User.password]
 #. defaultMessage is:
 #. 密碼
 #: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
@@ -122,9 +214,26 @@ msgstr "Password"
 #. [Signup.lengthError]
 #. defaultMessage is:
 #. 密碼長度需要長於 8 個字元
+#. [User.password.lengthError]
+#. defaultMessage is:
+#. 密碼長度需要長於 8 個字元
 #: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
 msgid "密碼長度需要長於 8 個字元"
 msgstr "Your password must be at least 8 characters"
+
+#. [User.accountStatus.label]
+#. defaultMessage is:
+#. 帳號使用狀態：
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+msgid "帳號使用狀態："
+msgstr "Account status: "
+
+#. [User.accountStatus]
+#. defaultMessage is:
+#. 帳號狀態
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+msgid "帳號狀態"
+msgstr "Account status"
 
 #. [Signup.createAdminAccount]
 #. defaultMessage is:
@@ -132,6 +241,34 @@ msgstr "Your password must be at least 8 characters"
 #: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
 msgid "建立管理者帳戶"
 msgstr "Create an administrator account"
+
+#. [User.addUser.success]
+#. defaultMessage is:
+#. 成功！使用者已新增。
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+msgid "成功！使用者已新增。"
+msgstr "Success! The user has been created."
+
+#. [User.deleteUser.success]
+#. defaultMessage is:
+#. 成功！使用者已被刪除。
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+msgid "成功！使用者已被刪除。"
+msgstr "Success! The user has been deleted."
+
+#. [User.changePassword.success]
+#. defaultMessage is:
+#. 成功！密碼已修改。
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+msgid "成功！密碼已修改。"
+msgstr "Success! The password has been changed."
+
+#. [User.accountStatus.success]
+#. defaultMessage is:
+#. 成功！帳號狀態已修改。
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+msgid "成功！帳號狀態已修改。"
+msgstr "Success! The account status has been updated."
 
 #. [DashboardLayout.stop.success] - Toast
 #. defaultMessage is:
@@ -152,21 +289,47 @@ msgstr "Success! The service has been started."
 #. 成功！系統已重置，請重新登入。
 #: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
 msgid "成功！系統已重置，請重新登入。"
-msgstr "Success! The service has been restarted, please sign in your account again."
+msgstr ""
+"Success! The service has been restarted, please sign in your account again."
 
 #. [System.save.success]
 #. defaultMessage is:
 #. 成功！系統的參數設定已更新。
 #: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
 msgid "成功！系統的參數設定已更新。"
-msgstr "Success!  The system configuration has been updated."
+msgstr ""
+"Success!  The system configuration has been updated. Please restart MCS "
+"Lite service to have the setting effective."
 
 #. [App.gerenalError] - With HTTP error status code 401/500
 #. defaultMessage is:
 #. 我們目前無法處理您的請求。請稍後再試。
 #: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
 msgid "我們目前無法處理您的請求。請稍後再試。"
-msgstr "Sorry, we cannot handle this operation right this moment. Please try again later."
+msgstr ""
+"Sorry, we cannot handle this operation right this moment. Please try again "
+"later."
+
+#. [User.addUserType.batch]
+#. defaultMessage is:
+#. 批次建立
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+msgid "批次建立"
+msgstr "Multiple accounts creation"
+
+#. [User.addUser]
+#. defaultMessage is:
+#. 新增使用者
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+msgid "新增使用者"
+msgstr "Add new users"
+
+#. [User.newPassword1]
+#. defaultMessage is:
+#. 新密碼
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+msgid "新密碼"
+msgstr "New password"
 
 #. [Signup.password2.error]
 #. defaultMessage is:
@@ -203,6 +366,13 @@ msgstr "IP address"
 msgid "歡迎"
 msgstr "Welcome"
 
+#. [User.noRows]
+#. defaultMessage is:
+#. 此帳號不存在，請重新搜尋。
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+msgid "此帳號不存在，請重新搜尋。"
+msgstr "Opps! There is no user found. Please try another search keyword."
+
 #. [DialogConfirm.notice] - For Dialog Header
 #. defaultMessage is:
 #. 注意！
@@ -210,12 +380,29 @@ msgstr "Welcome"
 msgid "注意！"
 msgstr "Attention!"
 
+#. [User.clearFilter]
+#. defaultMessage is:
+#. 清除搜尋條件
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+msgid "清除搜尋條件"
+msgstr "Reset search keyword"
+
 #. [DashboardLayout.versionCheck]
 #. defaultMessage is:
 #. 版本更新檢查
 #: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
 msgid "版本更新檢查"
 msgstr "Check for updates"
+
+#. [User.accountStatus.desc]
+#. defaultMessage is:
+#. 當帳號被停用時，此使用者將無法登入與使用 MCS Lite。您可隨時重新啟用此帳號。
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+msgid ""
+"當帳號被停用時，此使用者將無法登入與使用 MCS Lite。您可隨時重新啟用此帳號。"
+msgstr ""
+"When the account is deactivated, this user will not be able to sign in MCS "
+"Lite. You can reactivate this account at any time."
 
 #. [Signin.signin] - Document Title
 #. defaultMessage is:
@@ -236,7 +423,9 @@ msgstr "Sign out"
 #. 目前尚無可連線的服務，請先啟動本服務。
 #: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
 msgid "目前尚無可連線的服務，請先啟動本服務。"
-msgstr "There is no service available now. Please click Start button to launch MCS Lite."
+msgstr ""
+"There is no service available now. Please click Start button to launch MCS "
+"Lite."
 
 #. [DialogConfirm.confirm]
 #. defaultMessage is:
@@ -245,12 +434,26 @@ msgstr "There is no service available now. Please click Start button to launch M
 msgid "確定"
 msgstr "Okay"
 
+#. [User.delete.confirm]
+#. defaultMessage is:
+#. 確定要刪除使用者？
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+msgid "確定要刪除使用者？"
+msgstr "Are you sure you want to delete the user?"
+
 #. [DashboardLayout.confirm]
 #. defaultMessage is:
 #. 確定要登出？
 #: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
 msgid "確定要登出？"
 msgstr "Want to sign out?"
+
+#. [User.newPassword2]
+#. defaultMessage is:
+#. 確認密碼
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+msgid "確認密碼"
+msgstr "Confirm password"
 
 #. [Signup.password2]
 #. defaultMessage is:
@@ -276,12 +479,82 @@ msgstr "Configuration"
 msgid "系統重置"
 msgstr "Reset to defaults"
 
+#. [User.edit]
+#. defaultMessage is:
+#. 編輯
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+msgid "編輯"
+msgstr "Edit"
+
+#. [User.newPassword2.error]
+#. defaultMessage is:
+#. 與新密碼不相符，請重新輸入
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+msgid "與新密碼不相符，請重新輸入"
+msgstr "Do not match the new password you just entered, please try again."
+
 #. [Signup.signup] - Document Title
 #. defaultMessage is:
 #. 註冊
 #: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
 msgid "註冊"
 msgstr "Sign up"
+
+#. [User.userName.placeholder]
+#. defaultMessage is:
+#. 輸入使用者名稱
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+msgid "輸入使用者名稱"
+msgstr "Enter username"
+
+#. [User.inputUsernameEmail]
+#. defaultMessage is:
+#. 輸入名稱或電子郵件搜尋使用者
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+msgid "輸入名稱或電子郵件搜尋使用者"
+msgstr "Enter username or email address to search for users"
+
+#. [User.password.placeholder]
+#. defaultMessage is:
+#. 輸入密碼
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+msgid "輸入密碼"
+msgstr "Enter password"
+
+#. [User.newPassword1.placeholder]
+#. defaultMessage is:
+#. 輸入新密碼
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+msgid "輸入新密碼"
+msgstr "New new password"
+
+#. [User.email.placeholder]
+#. defaultMessage is:
+#. 輸入電子信箱
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+msgid "輸入電子信箱"
+msgstr "Enter the email address"
+
+#. [User.uploadCSV.placeholder]
+#. defaultMessage is:
+#. 選擇 csv 檔案
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+msgid "選擇 csv 檔案"
+msgstr "Select a CSV file"
+
+#. [User.addUserType]
+#. defaultMessage is:
+#. 選擇新增方式
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+msgid "選擇新增方式"
+msgstr "Select a creation method"
+
+#. [User.uploadCSV.button]
+#. defaultMessage is:
+#. 選擇檔案
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+msgid "選擇檔案"
+msgstr "Select file"
 
 #. [Language.select]
 #. defaultMessage is:
@@ -290,3 +563,9 @@ msgstr "Sign up"
 msgid "選擇語言"
 msgstr "Select language"
 
+#. [User.email]
+#. defaultMessage is:
+#. 電子信箱
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+msgid "電子信箱"
+msgstr "Email address"
