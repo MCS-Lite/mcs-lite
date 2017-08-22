@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { storiesOf } from '@storybook/react';
+import { withInfo } from '@storybook/addon-info';
 import { action } from '@storybook/addon-actions';
 import { kindList } from 'mcs-lite-theme';
 import Switch from '.';
@@ -41,43 +42,53 @@ const ScaledSwitch = withState(
 );
 
 storiesOf('Switch', module)
-  .addWithInfo(
+  .add(
     'API',
-    'Switch is a controlled component.',
-    () =>
+    withInfo({
+      text: 'Switch is a controlled component.',
+      inline: true,
+    })(() =>
       <div>
         <Switch />
         <Switch checked />
       </div>,
-    { inline: true },
+    ),
   )
-  .addWithInfo(
+  .add(
     'With kind props',
-    'kind="primary"',
-    () =>
+    withInfo({
+      text: 'kind="primary"',
+      inline: true,
+    })(() =>
       <div>
         {kindList.map(kind => <Switch key={kind} checked kind={kind} />)}
       </div>,
-    { inline: true },
+    ),
   )
-  .addWithInfo(
+  .add(
     'Stateful switch',
-    '使用 state 來控制狀態。',
-    () => {
+    withInfo({
+      text: '使用 state 來控制狀態。',
+      inline: true,
+      propTables: false,
+    })(() => {
       const Simple = withState(Switch);
       return <Simple />;
-    },
-    { inline: true, propTables: false },
+    }),
   )
-  .addWithInfo(
+  .add(
     'Overriding style',
-    '使用 styled-components 來覆蓋 css。',
-    () => <StyledSwitch />,
-    { inline: true, propTables: false },
+    withInfo({
+      text: '使用 styled-components 來覆蓋 css。',
+      inline: true,
+      propTables: false,
+    })(() => <StyledSwitch />),
   )
-  .addWithInfo(
+  .add(
     'With scaling',
-    'transform: scale(0.48) for mobile',
-    () => <ScaledSwitch kind="primary" />,
-    { inline: true, propTables: false },
+    withInfo({
+      text: 'transform: scale(0.48) for mobile',
+      inline: true,
+      propTables: false,
+    })(() => <ScaledSwitch kind="primary" />),
   );

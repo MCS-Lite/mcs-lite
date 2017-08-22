@@ -3,7 +3,7 @@
 exports[`should renders <ImageOpenSource> correctly 1`] = `
 <pure(styled.div)>
   <div>
-    <pure(BackgroundImage)
+    <BackgroundImage
       placeholder="img_open_sourceX60.png"
       src="img_open_source.svg"
     />
@@ -30,6 +30,7 @@ exports[`should renders <ImageOpenSource> correctly 1`] = `
       }
       attr="style"
       component={[Function]}
+      componentProps={Object {}}
       onChange={[Function]}
       reverseDelay={0}
       style={
@@ -62,6 +63,7 @@ exports[`should renders <ImageOpenSource> correctly 1`] = `
       }
       attr="style"
       component={[Function]}
+      componentProps={Object {}}
       onChange={[Function]}
       reverseDelay={0}
       style={
@@ -92,6 +94,7 @@ exports[`should renders <ImageOpenSource> correctly 1`] = `
       }
       attr="style"
       component={[Function]}
+      componentProps={Object {}}
       onChange={[Function]}
       reverseDelay={0}
       style={
@@ -120,6 +123,7 @@ exports[`should renders <ImageOpenSource> correctly 1`] = `
       }
       attr="style"
       component="div"
+      componentProps={Object {}}
       onChange={[Function]}
       reverseDelay={0}
       style={

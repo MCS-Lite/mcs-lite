@@ -3,7 +3,7 @@
 exports[`should renders <ImageCustom> correctly 1`] = `
 <pure(styled.div)>
   <div>
-    <pure(BackgroundImage)
+    <BackgroundImage
       placeholder="img_customizationX60.png"
       src="img_customization.svg"
     />
@@ -29,6 +29,7 @@ exports[`should renders <ImageCustom> correctly 1`] = `
       }
       attr="style"
       component={[Function]}
+      componentProps={Object {}}
       onChange={[Function]}
       reverseDelay={0}
       style={
@@ -57,6 +58,7 @@ exports[`should renders <ImageCustom> correctly 1`] = `
       }
       attr="style"
       component="div"
+      componentProps={Object {}}
       onChange={[Function]}
       reverseDelay={0}
       style={
@@ -108,6 +110,7 @@ exports[`should renders <ImageCustom> correctly 1`] = `
       }
       attr="style"
       component={[Function]}
+      componentProps={Object {}}
       onChange={[Function]}
       reverseDelay={0}
       style={
@@ -139,6 +142,7 @@ exports[`should renders <ImageCustom> correctly 1`] = `
       }
       attr="style"
       component={[Function]}
+      componentProps={Object {}}
       onChange={[Function]}
       reverseDelay={0}
       style={

@@ -1,19 +1,4 @@
-import { addDecorator, setAddon } from '@storybook/react';
-import centered from './decorator-centered';
-import '../src/utils/rafPolyfill';
-
-/**
- * Mocking InfoAddon for preventing big snapshots.
- * ref: https://github.com/storybooks/storyshots/issues/78#issuecomment-278123759
- */
-const mockInfoAddon = {
-  addWithInfo(storyName, info, storyFn) {
-    return this.add(storyName, context => storyFn(context));
-  },
-};
-
-setAddon(mockInfoAddon);
-addDecorator(centered);
+import './src/utils/rafPolyfill';
 
 // For DataChannelCard component.
 jest.mock('react-text-truncate', () => 'MockReactTextTruncate');

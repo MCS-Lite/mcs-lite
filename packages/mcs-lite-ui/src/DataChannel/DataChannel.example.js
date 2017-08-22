@@ -3,6 +3,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { storiesOf } from '@storybook/react';
+import { withInfo } from '@storybook/addon-info';
 import { action } from '@storybook/addon-actions';
 import DataChannel from '.';
 import ButtonClear from './ButtonClear';
@@ -16,13 +17,19 @@ const DemoWrapper = styled.div`
 `;
 
 storiesOf('DataChannel', module)
-  .addWithInfo('ButtonClear', 'Shared clear button.', () => <ButtonClear />, {
-    inline: true,
-  })
-  .addWithInfo(
+  .add(
+    'ButtonClear',
+    withInfo({
+      text: 'Shared clear button.',
+      inline: true,
+    })(() => <ButtonClear />),
+  )
+  .add(
     'DisplayStatus',
-    '',
-    () =>
+    withInfo({
+      text: '',
+      inline: true,
+    })(() =>
       <DemoWrapper>
         <DataChannel.DisplayStatus labels={['OFF', 'ON']} />
         <DataChannel.DisplayStatus
@@ -30,40 +37,47 @@ storiesOf('DataChannel', module)
           labels={['Apple1', 'Apple2', 'Pen', 'Pineapple', 'PPAPPPAPPPAP']}
         />
       </DemoWrapper>,
-    { inline: true },
+    ),
   )
-  .addWithInfo(
+  .add(
     'DisplayUnitValue',
-    '',
-    () => <DataChannel.DisplayUnitValue value={1123124124121} unit="攝氏" />,
-    { inline: true },
+    withInfo({
+      text: '',
+      inline: true,
+    })(() => <DataChannel.DisplayUnitValue value={1123124124121} unit="攝氏" />),
   )
-  .addWithInfo(
+  .add(
     'DisplayMultipleValue',
-    '',
-    () =>
+    withInfo({
+      text: '',
+      inline: true,
+    })(() =>
       <DataChannel.DisplayMultipleValue
         items={[
           { name: 'Value', value: 1234455 },
           { name: 'Period', value: 125125 },
         ]}
       />,
-    { inline: true },
+    ),
   )
-  .addWithInfo(
+  .add(
     'DisplayString',
-    '',
-    () =>
+    withInfo({
+      text: '',
+      inline: true,
+    })(() =>
       <DataChannel.DisplayString
         value="value"
         placeholder="This place holds Hex value."
       />,
-    { inline: true },
+    ),
   )
-  .addWithInfo(
+  .add(
     'ControlNumber',
-    'React controlled-components.',
-    () =>
+    withInfo({
+      text: 'React controlled-components.',
+      inline: true,
+    })(() =>
       <DataChannel.ControlNumber
         onSubmit={action('ControlNumber onSubmit')}
         onChange={action('ControlNumber onChange')}
@@ -72,34 +86,40 @@ storiesOf('DataChannel', module)
         unit="單位：攝氏"
         value={10}
       />,
-    { inline: true },
+    ),
   )
-  .addWithInfo(
+  .add(
     'ControlPeriod',
-    'React controlled-components.',
-    () =>
+    withInfo({
+      text: 'React controlled-components.',
+      inline: true,
+    })(() =>
       <DataChannel.ControlPeriod
         onSubmit={action('ControlPeriod onSubmit')}
         onChange={action('ControlPeriod onChange')}
         placeholder="placeholder"
         value={10}
       />,
-    { inline: true },
+    ),
   )
-  .addWithInfo(
+  .add(
     'ControlSwitch',
-    '<Swtich> component with renamed props.',
-    () =>
+    withInfo({
+      text: '<Swtich> component with renamed props.',
+      inline: true,
+    })(() =>
       <DataChannel.ControlSwitch
         value={false}
         onSubmit={action('ControlSwitch onSubmit')}
       />,
-    { inline: true },
+    ),
   )
-  .addWithInfo(
+  .add(
     'ControlString',
-    'React controlled-components.',
-    () =>
+    withInfo({
+      text: 'React controlled-components.',
+      inline: true,
+    })(() =>
       <DataChannel.ControlString
         onSubmit={action('ControlString onSubmit')}
         onChange={action('ControlString onChange')}
@@ -107,12 +127,14 @@ storiesOf('DataChannel', module)
         placeholder="placeholder"
         value=""
       />,
-    { inline: true },
+    ),
   )
-  .addWithInfo(
+  .add(
     'ControlRange',
-    'React controlled-components.',
-    () => {
+    withInfo({
+      text: 'React controlled-components.',
+      inline: true,
+    })(() => {
       const CATEGORIES = ['AAAAAA', 'BBBBB', 'CCCCC', 'DDDDD', 'EEEEE'];
       const GPIOS = ['Low', 'Heigh'];
 
@@ -149,13 +171,14 @@ storiesOf('DataChannel', module)
           />
         </DemoWrapper>
       );
-    },
-    { inline: true },
+    }),
   )
-  .addWithInfo(
+  .add(
     'ControlRange - Stateful number',
-    '',
-    () => {
+    withInfo({
+      text: '',
+      inline: true,
+    })(() => {
       class StatefulControlRange extends React.Component {
         state = { value: 88 };
         onChange = e => this.setState({ value: Number(e.target.value) });
@@ -173,13 +196,14 @@ storiesOf('DataChannel', module)
       }
 
       return <StatefulControlRange />;
-    },
-    { inline: true },
+    }),
   )
-  .addWithInfo(
+  .add(
     'ControlRange - Stateful PPAP',
-    '',
-    () => {
+    withInfo({
+      text: '',
+      inline: true,
+    })(() => {
       class StatefulControlRange extends React.Component {
         state = { value: 2 };
         onChange = e => this.setState({ value: Number(e.target.value) });
@@ -198,6 +222,5 @@ storiesOf('DataChannel', module)
       }
 
       return <StatefulControlRange />;
-    },
-    { inline: true },
+    }),
   );

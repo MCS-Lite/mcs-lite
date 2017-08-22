@@ -1,5 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
+import { withInfo } from '@storybook/addon-info';
 import styled from 'styled-components';
 import MorphReplace from 'react-svg-morph/lib/MorphReplace';
 import * as Icons from 'mcs-lite-icon/lib/index';
@@ -57,27 +58,40 @@ class StatefulMorphReplace extends React.Component {
   }
 }
 
-storiesOf('Icon [mcs-lite-icon]')
-  .addWithInfo('API', '', () => <Icons.IconDelete />, { inline: true })
-  .addWithInfo(
+storiesOf('Icon [mcs-lite-icon]', module)
+  .add(
+    'API',
+    withInfo({
+      text: '',
+      inline: true,
+    })(() => <Icons.IconDelete />),
+  )
+  .add(
     'Spin Icon',
-    '',
-    () =>
+    withInfo({
+      text: 'SVG Icon 請使用偶數（Safari）',
+      inline: true,
+    })(() =>
       <Spin>
-        <Icons.IconLoading />
+        <Icons.IconLoading size={14} />
       </Spin>,
-    { inline: true },
+    ),
   )
-  .addWithInfo(
+  .add(
     'MorphReplace',
-    'https://github.com/gorangajic/react-svg-morph',
-    () => <StatefulMorphReplace />,
-    { inline: true, propTables: [MorphReplace] },
+    withInfo({
+      text: 'https://github.com/gorangajic/react-svg-morph',
+      inline: true,
+      propTables: [MorphReplace],
+    })(() => <StatefulMorphReplace />),
   )
-  .addWithInfo(
+  .add(
     'Icon list, Custom color and size [Skip]',
-    '',
-    () =>
+    withInfo({
+      text: '',
+      inline: false,
+      propTables: false,
+    })(() =>
       <div>
         <Heading>MCS Lite Icon</Heading>
         <CodeBlock color="primary" level={3}>
@@ -96,5 +110,5 @@ storiesOf('Icon [mcs-lite-icon]')
           )}
         </CardWrapper>
       </div>,
-    { inline: false, propTables: false },
+    ),
   );

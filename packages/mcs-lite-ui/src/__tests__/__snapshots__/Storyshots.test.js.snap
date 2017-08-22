@@ -824,10 +824,10 @@ exports[`Storyshots Button With icon inside 1`] = `
     >
       <svg
         fill="currentColor"
-        height="1em"
+        height={14}
         preserveAspectRatio="xMidYMid meet"
         viewBox="0 0 24 24"
-        width="1em"
+        width={14}
       >
         <path
           d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm0 18c-4.4 0-8-3.6-8-8s3.6-8 8-8 8 3.6 8 8-3.6 8-8 8z"
@@ -1788,6 +1788,7 @@ exports[`Storyshots CopyButton API 1`] = `
 }
 
 .c0 path {
+  -webkit-fill: currentColor;
   fill: currentColor;
 }
 
@@ -3510,6 +3511,7 @@ exports[`Storyshots DataChannel DisplayStatus 1`] = `
 }
 
 .c4 > * {
+  -webkit-fill: #D1D2D3;
   fill: #D1D2D3;
   -webkit-transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
@@ -3520,6 +3522,7 @@ exports[`Storyshots DataChannel DisplayStatus 1`] = `
 }
 
 .c5 > * {
+  -webkit-fill: #69BE28;
   fill: #69BE28;
   -webkit-transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
@@ -4368,6 +4371,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
 }
 
 .c36 > * {
+  -webkit-fill: #D1D2D3;
   fill: #D1D2D3;
   -webkit-transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
@@ -4378,6 +4382,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
 }
 
 .c35 > * {
+  -webkit-fill: #69BE28;
   fill: #69BE28;
   -webkit-transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
@@ -6966,6 +6971,7 @@ exports[`Storyshots DataPointAreaChart API 1`] = `
 >
   <div
     className="recharts-responsive-container"
+    id={undefined}
     style={
       Object {
         "height": "100%",
@@ -7045,6 +7051,7 @@ exports[`Storyshots DataPointAreaChart With isAnimationActive props 1`] = `
 >
   <div
     className="recharts-responsive-container"
+    id={undefined}
     style={
       Object {
         "height": "100%",
@@ -7074,6 +7081,7 @@ exports[`Storyshots DataPointAreaChart With kind and type props 1`] = `
 >
   <div
     className="recharts-responsive-container"
+    id={undefined}
     style={
       Object {
         "height": "100%",
@@ -7103,6 +7111,7 @@ exports[`Storyshots DataPointAreaChart With realtime data 1`] = `
 >
   <div
     className="recharts-responsive-container"
+    id={undefined}
     style={
       Object {
         "height": "100%",
@@ -8516,10 +8525,10 @@ exports[`Storyshots Icon [mcs-lite-icon] Spin Icon 1`] = `
 >
   <svg
     fill="currentColor"
-    height="1em"
+    height={14}
     preserveAspectRatio="xMidYMid meet"
     viewBox="0 0 24 24"
-    width="1em"
+    width={14}
   >
     <path
       d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm0 18c-4.4 0-8-3.6-8-8s3.6-8 8-8 8 3.6 8 8-3.6 8-8 8z"
@@ -10160,6 +10169,7 @@ exports[`Storyshots LandingHeader NavItemBurger 1`] = `
 }
 
 .c3 path {
+  -webkit-fill: currentColor;
   fill: currentColor;
 }
 
@@ -10268,6 +10278,7 @@ exports[`Storyshots LandingHeader NavItemDropdown 1`] = `
 }
 
 .c3 path {
+  -webkit-fill: currentColor;
   fill: currentColor;
 }
 
@@ -10383,6 +10394,7 @@ exports[`Storyshots LandingHeader With Nav and NavItem 1`] = `
 }
 
 .c3 path {
+  -webkit-fill: currentColor;
   fill: currentColor;
 }
 
@@ -10410,6 +10422,7 @@ exports[`Storyshots LandingHeader With Nav and NavItem 1`] = `
 }
 
 .c4 path {
+  -webkit-fill: currentColor;
   fill: currentColor;
 }
 
@@ -10437,6 +10450,7 @@ exports[`Storyshots LandingHeader With Nav and NavItem 1`] = `
 }
 
 .c5 path {
+  -webkit-fill: currentColor;
   fill: currentColor;
 }
 
@@ -13126,6 +13140,7 @@ exports[`Storyshots StatusLight API 1`] = `
 }
 
 .c0 > * {
+  -webkit-fill: #D1D2D3;
   fill: #D1D2D3;
   -webkit-transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
@@ -13150,6 +13165,7 @@ exports[`Storyshots StatusLight Custom width 1`] = `
 }
 
 .c1 > * {
+  -webkit-fill: #F39A1E;
   fill: #F39A1E;
   -webkit-transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
@@ -13178,6 +13194,7 @@ exports[`Storyshots StatusLight With color props 1`] = `
 }
 
 .c2 > * {
+  -webkit-fill: #D1D2D3;
   fill: #D1D2D3;
   -webkit-transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
@@ -13188,6 +13205,7 @@ exports[`Storyshots StatusLight With color props 1`] = `
 }
 
 .c6 > * {
+  -webkit-fill: #69BE28;
   fill: #69BE28;
   -webkit-transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
@@ -13198,6 +13216,7 @@ exports[`Storyshots StatusLight With color props 1`] = `
 }
 
 .c0 > * {
+  -webkit-fill: #353630;
   fill: #353630;
   -webkit-transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
@@ -13208,6 +13227,7 @@ exports[`Storyshots StatusLight With color props 1`] = `
 }
 
 .c1 > * {
+  -webkit-fill: #999A94;
   fill: #999A94;
   -webkit-transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
@@ -13218,6 +13238,7 @@ exports[`Storyshots StatusLight With color props 1`] = `
 }
 
 .c3 > * {
+  -webkit-fill: #FAFAFA;
   fill: #FAFAFA;
   -webkit-transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
@@ -13228,6 +13249,7 @@ exports[`Storyshots StatusLight With color props 1`] = `
 }
 
 .c4 > * {
+  -webkit-fill: #FFFFFF;
   fill: #FFFFFF;
   -webkit-transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
@@ -13238,6 +13260,7 @@ exports[`Storyshots StatusLight With color props 1`] = `
 }
 
 .c5 > * {
+  -webkit-fill: #00A1DE;
   fill: #00A1DE;
   -webkit-transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
@@ -13248,6 +13271,7 @@ exports[`Storyshots StatusLight With color props 1`] = `
 }
 
 .c7 > * {
+  -webkit-fill: #F5364E;
   fill: #F5364E;
   -webkit-transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
@@ -13258,6 +13282,7 @@ exports[`Storyshots StatusLight With color props 1`] = `
 }
 
 .c8 > * {
+  -webkit-fill: #F39A1E;
   fill: #F39A1E;
   -webkit-transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;

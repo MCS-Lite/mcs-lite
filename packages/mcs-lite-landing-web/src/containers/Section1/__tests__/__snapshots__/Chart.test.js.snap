@@ -10,6 +10,7 @@ exports[`should renders <Chart> correctly 1`] = `
   }
   attr="style"
   component={[Function]}
+  componentProps={Object {}}
   onChange={[Function]}
   reverseDelay={0}
   style={

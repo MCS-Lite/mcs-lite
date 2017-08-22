@@ -7,6 +7,7 @@ exports[`should renders <Image> correctly with Mobile view 1`] = `
   -webkit-transition: all 0.3 linear;
   transition: all 0.3 linear;
   opacity: 0.7;
+  -webkit-filter: blur(5px);
   filter: blur(5px);
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
@@ -101,7 +102,7 @@ exports[`should renders <Image> correctly with Mobile view 1`] = `
             className="c0"
           >
             <div>
-              <pure(BackgroundImage)
+              <BackgroundImage
                 blur={5}
                 opacity={0.7}
                 placeholder="img_mcs_screenX66.png"
@@ -185,7 +186,7 @@ exports[`should renders <Image> correctly with Mobile view 1`] = `
                     </mapPropsStream(Img)>
                   </ProgressiveImage>
                 </Styled(ProgressiveImage)>
-              </pure(BackgroundImage)>
+              </BackgroundImage>
             </div>
             <Media
               defaultMatches={true}

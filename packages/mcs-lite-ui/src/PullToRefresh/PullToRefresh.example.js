@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { storiesOf } from '@storybook/react';
+import { withInfo } from '@storybook/addon-info';
 import Heading from '../Heading';
 import PullToRefresh from '.';
 
@@ -49,12 +50,15 @@ class StatefulPullToRefresh extends React.Component {
   }
 }
 
-storiesOf('PullToRefresh', module).addWithInfo(
+storiesOf('PullToRefresh', module).add(
   'API',
-  '',
-  () =>
+  withInfo({
+    text: '',
+    inline: true,
+    propTables: [PullToRefresh],
+  })(() =>
     <Body>
       <StatefulPullToRefresh />
     </Body>,
-  { inline: true, propTables: [PullToRefresh] },
+  ),
 );

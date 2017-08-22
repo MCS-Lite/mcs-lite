@@ -1,5 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
+import { withInfo } from '@storybook/addon-info';
 import DomAlign from '.';
 
 const alignConfig = {
@@ -26,14 +27,17 @@ class Container extends React.Component {
   }
 }
 
-storiesOf('DomAlign', module).addWithInfo(
+storiesOf('DomAlign', module).add(
   'API',
-  `
+  withInfo({
+    text: `
       With config: ${JSON.stringify(alignConfig)}.
 
       Reference: React.js [dom-align](https://github.com/yiminghe/dom-align) integration component.
 
     `,
-  () => <Container />,
-  { inline: true, propTables: [DomAlign] },
+
+    inline: true,
+    propTables: [DomAlign],
+  })(() => <Container />),
 );

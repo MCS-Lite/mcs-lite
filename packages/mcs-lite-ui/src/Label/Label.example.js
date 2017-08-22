@@ -1,10 +1,12 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
+import { withInfo } from '@storybook/addon-info';
 import Label from '.';
 
-storiesOf('Label', module).addWithInfo(
+storiesOf('Label', module).add(
   'API',
-  'default',
-  () => <Label required>Email</Label>,
-  { inline: true },
+  withInfo({
+    text: 'default',
+    inline: true,
+  })(() => <Label required>Email</Label>),
 );

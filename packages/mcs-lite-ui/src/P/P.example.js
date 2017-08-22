@@ -1,13 +1,16 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
+import { withInfo } from '@storybook/addon-info';
 import { theme } from 'mcs-lite-theme';
 import P from '.';
 
 storiesOf('P', module)
-  .addWithInfo(
+  .add(
     'API',
-    `段落使用。 (${theme.fontSize.p}) & color: currentColor`,
-    () =>
+    withInfo({
+      text: `段落使用。 (${theme.fontSize.p}) & color: currentColor`,
+      inline: true,
+    })(() =>
       <P>
         Nisi eu eiusmod cupidatat aute laboris commodo excepteur esse dolore
         incididunt incididunt aliquip pariatur est minim officia sit. Nulla
@@ -18,23 +21,27 @@ storiesOf('P', module)
         cupidatat non magna officia aute magna deserunt qui aute dolor eu.
         Qui amet non ex cillum sunt ad velit consequat ipsum velit.
       </P>,
-    { inline: true },
+    ),
   )
-  .addWithInfo(
+  .add(
     'With color props',
-    '使用不同等級的 Color',
-    () =>
+    withInfo({
+      text: '使用不同等級的 Color',
+      inline: true,
+    })(() =>
       <div>
         {Object.keys(theme.color).map(key =>
           <P key={key} color={key}>Paragraph {key}</P>,
         )}
       </div>,
-    { inline: true },
+    ),
   )
-  .addWithInfo(
+  .add(
     'Nested children with div',
-    'p 裡面不能有 div，會自動換成 div。',
-    () =>
+    withInfo({
+      text: 'p 裡面不能有 div，會自動換成 div。',
+      inline: true,
+    })(() =>
       <P>
         <div>
           <span>
@@ -42,5 +49,5 @@ storiesOf('P', module)
           </span>
         </div>
       </P>,
-    { inline: true },
+    ),
   );

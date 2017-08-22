@@ -1,5 +1,4 @@
 import React from 'react';
-import { pure } from 'recompose';
 import ScrollParallax from 'rc-scroll-anim/lib/ScrollParallax';
 import ScrollOverPack from 'rc-scroll-anim/lib/ScrollOverPack';
 import TweenOne from 'rc-tween-one';
@@ -100,4 +99,4 @@ const ImageCustom = () =>
     </ScrollOverPack>
   </ImageLayerWrapper>;
 
-export default pure(ImageCustom);
+export default ImageCustom;

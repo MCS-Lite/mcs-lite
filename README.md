@@ -16,7 +16,7 @@
 
 ## Requirements
 
--   node >= 8.2.1
+-   node >= 8.4.0
 -   npm >= 5.3.0
 -   yarn >= 0.27.5
 

@@ -1,11 +1,14 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
+import { withInfo } from '@storybook/addon-info';
 import Table from '.';
 
-storiesOf('Table', module).addWithInfo(
+storiesOf('Table', module).add(
   'API',
-  '',
-  () =>
+  withInfo({
+    text: '',
+    inline: true,
+  })(() =>
     <Table style={{ backgroundColor: 'white' }}>
       <thead>
         <tr>
@@ -25,5 +28,5 @@ storiesOf('Table', module).addWithInfo(
         </tr>
       </tbody>
     </Table>,
-  { inline: true },
+  ),
 );

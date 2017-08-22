@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { storiesOf } from '@storybook/react';
+import { withInfo } from '@storybook/addon-info';
 import DataChannelCard, { Footer } from './DataChannelCard';
 import Switch from '../Switch';
 
@@ -11,10 +12,12 @@ const StyledDataChannelCard = styled(DataChannelCard)`
 `;
 
 storiesOf('DataChannelCard', module)
-  .addWithInfo(
+  .add(
     'API',
-    'MCS data channel 的卡片。',
-    () =>
+    withInfo({
+      text: 'MCS data channel 的卡片。',
+      inline: true,
+    })(() =>
       <DataChannelCard
         title="Title"
         subtitle="Last data point time : 2015-06-12 12:00"
@@ -23,16 +26,18 @@ storiesOf('DataChannelCard', module)
       >
         Children
       </DataChannelCard>,
-    { inline: true },
+    ),
   )
-  .addWithInfo(
+  .add(
     'Custom width and height',
-    '固定寬度與高度。',
-    () => {
+    withInfo({
+      text: '固定寬度與高度。',
+      inline: true,
+    })(() => {
       const MCSSyledCard = styled(DataChannelCard)`
-        width: 300px;
-        height: 400px;
-      `;
+    width: 300px;
+    height: 400px;
+  `;
 
       return (
         <MCSSyledCard
@@ -44,13 +49,14 @@ storiesOf('DataChannelCard', module)
           <Switch />
         </MCSSyledCard>
       );
-    },
-    { inline: true },
+    }),
   )
-  .addWithInfo(
+  .add(
     'Without description',
-    '',
-    () =>
+    withInfo({
+      text: '',
+      inline: true,
+    })(() =>
       <DataChannelCard
         header="V"
         title="Title"
@@ -58,12 +64,14 @@ storiesOf('DataChannelCard', module)
       >
         <Switch />
       </DataChannelCard>,
-    { inline: true },
+    ),
   )
-  .addWithInfo(
+  .add(
     'With empty description',
-    '',
-    () =>
+    withInfo({
+      text: '',
+      inline: true,
+    })(() =>
       <DataChannelCard
         header="V"
         title="Title"
@@ -72,12 +80,14 @@ storiesOf('DataChannelCard', module)
       >
         <Switch />
       </DataChannelCard>,
-    { inline: true },
+    ),
   )
-  .addWithInfo(
+  .add(
     'With Component selector',
-    '',
-    () =>
+    withInfo({
+      text: '',
+      inline: true,
+    })(() =>
       <StyledDataChannelCard
         header="V"
         title="Title"
@@ -86,5 +96,5 @@ storiesOf('DataChannelCard', module)
       >
         Children
       </StyledDataChannelCard>,
-    { inline: true },
+    ),
   );

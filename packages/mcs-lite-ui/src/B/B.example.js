@@ -1,35 +1,43 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
+import { withInfo } from '@storybook/addon-info';
 import B from '.';
 import P from '../P';
 import Small from '../Small';
 import Heading from '../Heading';
 
 storiesOf('B', module)
-  .addWithInfo(
+  .add(
     'API',
-    '粗體。',
-    () =>
+    withInfo({
+      text: '粗體。',
+      inline: true,
+    })(() =>
       <B>
         Bold content
       </B>,
-    { inline: true },
+    ),
   )
-  .addWithInfo(
+  .add(
     'CJK',
-    '粗體中文字。',
-    () =>
+    withInfo({
+      text: '粗體中文字。',
+      inline: true,
+    })(() =>
       <Heading level={4}>
         <B>
           控制開關粗體字
         </B>
       </Heading>,
-    { inline: true },
+    ),
   )
-  .addWithInfo(
+  .add(
     'Within <P>',
-    '段落中出現。',
-    () =>
+    withInfo({
+      text: '段落中出現。',
+      inline: true,
+      propTables: false,
+    })(() =>
       <P>
         Nisi eu eiusmod cupidatat aute laboris commodo excepteur
         <Small>
@@ -39,12 +47,15 @@ storiesOf('B', module)
         </Small>
         incididunt incididunt aliquip pariatur est minim officia sit.
       </P>,
-    { inline: true, propTables: false },
+    ),
   )
-  .addWithInfo(
+  .add(
     'With color',
-    '來自上層的顏色。',
-    () =>
+    withInfo({
+      text: '來自上層的顏色。',
+      inline: true,
+      propTables: false,
+    })(() =>
       <P color="primary">
         Nisi eu eiusmod cupidatat aute laboris commodo excepteur
         <B>
@@ -52,5 +63,5 @@ storiesOf('B', module)
         </B>
         incididunt incididunt aliquip pariatur est minim officia sit.
       </P>,
-    { inline: true, propTables: false },
+    ),
   );

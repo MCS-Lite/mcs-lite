@@ -1,5 +1,4 @@
 import React from 'react';
-import { pure } from 'recompose';
 import ScrollParallax from 'rc-scroll-anim/lib/ScrollParallax';
 import ScrollOverPack from 'rc-scroll-anim/lib/ScrollOverPack';
 import TweenOne from 'rc-tween-one';
@@ -96,4 +95,4 @@ const ImageOpenSource = () =>
     </ScrollOverPack>
   </ImageLayerWrapper>;
 
-export default pure(ImageOpenSource);
+export default ImageOpenSource;
