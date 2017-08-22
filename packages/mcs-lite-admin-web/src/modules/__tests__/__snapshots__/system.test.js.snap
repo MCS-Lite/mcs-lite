@@ -1,0 +1,75 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`system - 1. Constants should return constants 1`] = `
+Object {
+  "CLEAR": "mcs-lite-admin-web/system/CLEAR",
+  "FETCH_SYSTEM_BY_TYPE": "mcs-lite-admin-web/system/FETCH_SYSTEM_BY_TYPE",
+  "POST_RESET": "mcs-lite-admin-web/system/POST_RESET",
+  "SET_SYSTEM_BY_TYPE": "mcs-lite-admin-web/system/SET_SYSTEM_BY_TYPE",
+  "UPLOAD_SYSTEM_BY_TYPE": "mcs-lite-admin-web/system/UPLOAD_SYSTEM_BY_TYPE",
+}
+`;
+
+exports[`system - 2. Action Creators should return clear actions 1`] = `
+Object {
+  "type": "mcs-lite-admin-web/system/CLEAR",
+}
+`;
+
+exports[`system - 2. Action Creators should return fetchSystemByType actions 1`] = `
+Object {
+  "payload": "payload",
+  "type": "mcs-lite-admin-web/system/FETCH_SYSTEM_BY_TYPE",
+}
+`;
+
+exports[`system - 2. Action Creators should return postReset actions 1`] = `
+Object {
+  "payload": "message",
+  "type": "mcs-lite-admin-web/system/POST_RESET",
+}
+`;
+
+exports[`system - 2. Action Creators should return setSystemByType actions 1`] = `
+Object {
+  "payload": Object {
+    "data": "data",
+    "type": "type",
+  },
+  "type": "mcs-lite-admin-web/system/SET_SYSTEM_BY_TYPE",
+}
+`;
+
+exports[`system - 2. Action Creators should return uploadSystemByType actions 1`] = `
+Object {
+  "payload": Object {
+    "message": "message",
+    "type": "type",
+  },
+  "type": "mcs-lite-admin-web/system/UPLOAD_SYSTEM_BY_TYPE",
+}
+`;
+
+exports[`system - 4. Reducer should handle CLEAR 1`] = `
+Object {
+  "db": "",
+  "oauth": "",
+  "rest": "",
+  "wot": "",
+}
+`;
+
+exports[`system - 4. Reducer should handle SET_SYSTEM_BY_TYPE 1`] = `
+Object {
+  "db": "data",
+}
+`;
+
+exports[`system - 4. Reducer should return the initial state 1`] = `
+Object {
+  "db": "",
+  "oauth": "",
+  "rest": "",
+  "wot": "",
+}
+`;

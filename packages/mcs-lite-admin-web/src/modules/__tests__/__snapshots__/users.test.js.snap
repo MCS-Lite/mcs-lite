@@ -1,0 +1,114 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`users - 1. Constants should return constants 1`] = `
+Object {
+  "CHANGE_PASSWORD_BY_ID": "mcs-lite-admin-web/user/CHANGE_PASSWORD_BY_ID",
+  "CLEAR": "mcs-lite-admin-web/user/CLEAR",
+  "CREATE_USER": "mcs-lite-admin-web/user/CREATE_USER",
+  "CREATE_USER_BY_CSV": "mcs-lite-admin-web/user/CREATE_USER_BY_CSV",
+  "DELETE_USERS": "mcs-lite-admin-web/user/DELETE_USERS",
+  "FETCH_USERS": "mcs-lite-admin-web/user/FETCH_USERS",
+  "PUT_IS_ACTIVE_BY_ID": "mcs-lite-admin-web/user/PUT_IS_ACTIVE_BY_ID",
+  "SET_USER": "mcs-lite-admin-web/user/SET_USER",
+  "SET_USERS": "mcs-lite-admin-web/user/SET_USERS",
+}
+`;
+
+exports[`users - 2. Action Creators should return changePasswordById actions 1`] = `
+Object {
+  "payload": Object {
+    "message": "successMessage",
+    "password": "password",
+    "userId": "userId",
+  },
+  "type": "mcs-lite-admin-web/user/CHANGE_PASSWORD_BY_ID",
+}
+`;
+
+exports[`users - 2. Action Creators should return clear actions 1`] = `
+Object {
+  "type": "mcs-lite-admin-web/user/CLEAR",
+}
+`;
+
+exports[`users - 2. Action Creators should return createUser actions 1`] = `
+Object {
+  "payload": Object {
+    "message": "message",
+    "user": "user",
+  },
+  "type": "mcs-lite-admin-web/user/CREATE_USER",
+}
+`;
+
+exports[`users - 2. Action Creators should return createUserByCSV actions 1`] = `
+Object {
+  "payload": Object {
+    "csv": "csv",
+    "message": "message",
+  },
+  "type": "mcs-lite-admin-web/user/CREATE_USER_BY_CSV",
+}
+`;
+
+exports[`users - 2. Action Creators should return deleteUsers actions 1`] = `
+Object {
+  "payload": Object {
+    "message": "successMessage",
+    "userIdList": "userIdList",
+  },
+  "type": "mcs-lite-admin-web/user/DELETE_USERS",
+}
+`;
+
+exports[`users - 2. Action Creators should return fetchUsers actions 1`] = `
+Object {
+  "type": "mcs-lite-admin-web/user/FETCH_USERS",
+}
+`;
+
+exports[`users - 2. Action Creators should return putIsActiveById actions 1`] = `
+Object {
+  "payload": Object {
+    "isActive": "isActive",
+    "message": "successMessage",
+    "userId": "userId",
+  },
+  "type": "mcs-lite-admin-web/user/PUT_IS_ACTIVE_BY_ID",
+}
+`;
+
+exports[`users - 2. Action Creators should return setUser actions 1`] = `
+Object {
+  "payload": "user",
+  "type": "mcs-lite-admin-web/user/SET_USER",
+}
+`;
+
+exports[`users - 2. Action Creators should return setUsers actions 1`] = `
+Object {
+  "payload": "users",
+  "type": "mcs-lite-admin-web/user/SET_USERS",
+}
+`;
+
+exports[`users - 4. Reducer should handle CLEAR 1`] = `Array []`;
+
+exports[`users - 4. Reducer should handle SET_USER 1`] = `
+Array [
+  0,
+  1,
+  2,
+  3,
+]
+`;
+
+exports[`users - 4. Reducer should handle SET_USERS 1`] = `
+Array [
+  1,
+  2,
+  3,
+]
+`;
+
+exports[`users - 4. Reducer should return the initial state 1`] = `Array []`;

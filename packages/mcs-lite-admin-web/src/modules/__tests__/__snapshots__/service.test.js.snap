@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`service - 1. Constants should return constants 1`] = `
+Object {
+  "CLEAR": "mcs-lite-admin-web/service/CLEAR",
+  "FETCH_IP_LIST": "mcs-lite-admin-web/service/FETCH_IP_LIST",
+  "SET_IP_LIST": "mcs-lite-admin-web/service/SET_IP_LIST",
+  "START": "mcs-lite-admin-web/service/START",
+  "STOP": "mcs-lite-admin-web/service/STOP",
+}
+`;
+
+exports[`service - 2. Action Creators should return clear actions 1`] = `
+Object {
+  "type": "mcs-lite-admin-web/service/CLEAR",
+}
+`;
+
+exports[`service - 2. Action Creators should return fetchIpList actions 1`] = `
+Object {
+  "type": "mcs-lite-admin-web/service/FETCH_IP_LIST",
+}
+`;
+
+exports[`service - 2. Action Creators should return setIpList actions 1`] = `
+Object {
+  "payload": Array [
+    1,
+    2,
+    3,
+  ],
+  "type": "mcs-lite-admin-web/service/SET_IP_LIST",
+}
+`;
+
+exports[`service - 2. Action Creators should return start actions 1`] = `
+Object {
+  "payload": "message",
+  "type": "mcs-lite-admin-web/service/START",
+}
+`;
+
+exports[`service - 2. Action Creators should return stop actions 1`] = `
+Object {
+  "payload": "message",
+  "type": "mcs-lite-admin-web/service/STOP",
+}
+`;
+
+exports[`service - 4. Reducer should handle CLEAR 1`] = `Array []`;
+
+exports[`service - 4. Reducer should handle SET_IP_LIST 1`] = `
+Array [
+  1,
+  2,
+  3,
+]
+`;
+
+exports[`service - 4. Reducer should return the initial state 1`] = `Array []`;

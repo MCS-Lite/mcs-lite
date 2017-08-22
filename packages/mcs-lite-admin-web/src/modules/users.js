@@ -17,7 +17,6 @@ const SET_USER = 'mcs-lite-admin-web/user/SET_USER';
 const CHANGE_PASSWORD_BY_ID = 'mcs-lite-admin-web/user/CHANGE_PASSWORD_BY_ID';
 const PUT_IS_ACTIVE_BY_ID = 'mcs-lite-admin-web/user/PUT_IS_ACTIVE_BY_ID';
 const DELETE_USERS = 'mcs-lite-admin-web/user/DELETE_USERS';
-const REMOVE_USERS_BY_ID = 'mcs-lite-admin-web/user/REMOVE_USERS_BY_ID';
 const CLEAR = 'mcs-lite-admin-web/user/CLEAR';
 
 export const constants = {
@@ -29,7 +28,6 @@ export const constants = {
   CHANGE_PASSWORD_BY_ID,
   PUT_IS_ACTIVE_BY_ID,
   DELETE_USERS,
-  REMOVE_USERS_BY_ID,
   CLEAR,
 };
 
@@ -60,10 +58,6 @@ const deleteUsers = (userIdList, successMessage) => ({
   type: DELETE_USERS,
   payload: { userIdList, message: successMessage },
 });
-const removeUsersById = userIdList => ({
-  type: REMOVE_USERS_BY_ID,
-  payload: userIdList,
-});
 const clear = () => ({ type: CLEAR });
 
 export const actions = {
@@ -75,7 +69,6 @@ export const actions = {
   changePasswordById,
   putIsActiveById,
   deleteUsers,
-  removeUsersById,
   clear,
 };
 
@@ -132,22 +125,14 @@ function deleteUsersCycle(sources) {
 
   const successRes$ = sources.HTTP.select(DELETE_USERS).switchMap(success);
 
-  // Remind: api response with type(settingId) will be better.
-  // ref: https://regex101.com/r/LQlWFg/1
-  const responseUserIdList$ = successRes$
-    .pluck('request', 'url')
-    .map(R.pipe(R.match(/([^/]*)$/), R.head))
-    .map(R.split(','));
-
   const action$ = Observable.from([
     request$.mapTo(uiActions.setLoading()),
-    responseUserIdList$.map(removeUsersById),
     successRes$
       .withLatestFrom(message$, (response, message) => message)
       .map(message =>
         uiActions.addToast({ kind: 'success', children: message }),
       ),
-    successRes$.mapTo(uiActions.setLoaded()),
+    successRes$.mapTo(fetchUsers()),
   ]).mergeAll();
 
   return {
@@ -166,7 +151,7 @@ function createUserCycle(sources) {
   const message$ = payload$.pluck('message');
 
   const request$ = user$.withLatestFrom(accessToken$, (user, accessToken) => ({
-    url: '/api/users/',
+    url: '/api/users',
     method: 'POST',
     headers: { Authorization: `Bearer ${accessToken}` },
     send: {
@@ -337,11 +322,6 @@ export default function reducer(state = initialState, action = {}) {
       return action.payload;
     case SET_USER:
       return R.prepend(action.payload)(state);
-    case REMOVE_USERS_BY_ID:
-      // TODO: should we use two nested for-loop?
-      return R.reject(
-        R.pipe(R.prop('userId'), R.contains(R.__, action.payload)),
-      )(state);
     case CLEAR:
       return initialState;
     default:
