@@ -7,6 +7,7 @@ import ui, { cycles as uiCycles } from './ui';
 import system, { cycles as systemCycles } from './system';
 import service, { cycles as serviceCycles } from './service';
 import users, { cycles as usersCycles } from './users';
+import { cycles as dataCycles } from './data';
 
 export const cycle = combineCycles(
   ...R.values(routingCycles),
@@ -15,6 +16,7 @@ export const cycle = combineCycles(
   ...R.values(systemCycles),
   ...R.values(serviceCycles),
   ...R.values(usersCycles),
+  ...R.values(dataCycles),
 );
 
 export const reducer = combineReducers({

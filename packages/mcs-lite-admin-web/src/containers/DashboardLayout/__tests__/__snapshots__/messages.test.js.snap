@@ -6,6 +6,10 @@ Object {
     "defaultMessage": "確定要登出？",
     "id": "DashboardLayout.confirm",
   },
+  "DashboardLayout.dataManagement": Object {
+    "defaultMessage": "資料管理",
+    "id": "DashboardLayout.dataManagement",
+  },
   "DashboardLayout.ipConnection": Object {
     "defaultMessage": "IP 連線",
     "id": "DashboardLayout.ipConnection",

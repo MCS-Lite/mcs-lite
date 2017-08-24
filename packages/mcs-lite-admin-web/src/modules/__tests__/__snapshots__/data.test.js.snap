@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`data - 1. Constants should return constants 1`] = `
+Object {
+  "DELETE_DATA": "mcs-lite-admin-web/data/DELETE_DATA",
+}
+`;
+
+exports[`data - 2. Action Creators should return deleteData actions 1`] = `
+Object {
+  "type": "mcs-lite-admin-web/data/DELETE_DATA",
+}
+`;

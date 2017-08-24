@@ -35,6 +35,11 @@ exports[`should renders <DashboardLayout> correctly when started 1`] = `
         >
           userManagement
         </Styled(Link)>
+        <Styled(Link)
+          to={[Function]}
+        >
+          dataManagement
+        </Styled(Link)>
       </div>
       <div>
         <Styled(Styled(Link))
@@ -100,6 +105,11 @@ exports[`should renders <DashboardLayout> correctly when stopped 1`] = `
           to={[Function]}
         >
           userManagement
+        </Styled(Link)>
+        <Styled(Link)
+          to={[Function]}
+        >
+          dataManagement
         </Styled(Link)>
       </div>
       <div>

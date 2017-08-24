@@ -65,6 +65,11 @@
     "filepath": "src/containers/DashboardLayout/messages.js"
   },
   {
+    "id": "DashboardLayout.dataManagement",
+    "defaultMessage": "資料管理",
+    "filepath": "src/containers/DashboardLayout/messages.js"
+  },
+  {
     "id": "DashboardLayout.versionCheck",
     "defaultMessage": "版本更新檢查",
     "filepath": "src/containers/DashboardLayout/messages.js"
@@ -78,6 +83,32 @@
     "id": "DashboardLayout.confirm",
     "defaultMessage": "確定要登出？",
     "filepath": "src/containers/DashboardLayout/messages.js"
+  },
+  {
+    "id": "Data.dataManagement",
+    "description": "Meta/Title",
+    "defaultMessage": "資料管理",
+    "filepath": "src/containers/Data/messages.js"
+  },
+  {
+    "id": "Data.description",
+    "defaultMessage": "可以清除 MCS Lite 所有資料，包含使用者清單以及測試裝置等等。",
+    "filepath": "src/containers/Data/messages.js"
+  },
+  {
+    "id": "Data.reset",
+    "defaultMessage": "清除所有資料",
+    "filepath": "src/containers/Data/messages.js"
+  },
+  {
+    "id": "Data.reset.confirm1",
+    "defaultMessage": "確定要清除所有資料嗎？",
+    "filepath": "src/containers/Data/messages.js"
+  },
+  {
+    "id": "Data.reset.confirm2",
+    "defaultMessage": "清除後，系統將自動關閉， 請重新啟動服務。",
+    "filepath": "src/containers/Data/messages.js"
   },
   {
     "id": "Ip.mcsLiteIpConnection",

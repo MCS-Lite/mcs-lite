@@ -52,6 +52,9 @@ const DashboardLayout = ({
           <NavItem to={updatePathname('/user')}>
             {t('userManagement')}
           </NavItem>
+          <NavItem to={updatePathname('/data')}>
+            {t('dataManagement')}
+          </NavItem>
         </div>
         <div>
           {/* Admin v2 */}

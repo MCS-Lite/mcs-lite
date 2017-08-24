@@ -7,6 +7,7 @@ import cookieHelper from 'mcs-lite-ui/lib/utils/cookieHelper';
 import { actions as serviceActions } from './service';
 import { actions as systemActions } from './system';
 import { actions as uiActions } from './ui';
+import { actions as usersActions } from './users';
 import { success, failure } from '../utils/cycleHelper';
 
 // ----------------------------------------------------------------------------
@@ -109,6 +110,7 @@ function signoutCycle(sources) {
         clear(),
         serviceActions.clear(),
         systemActions.clear(),
+        usersActions.clear(),
       ),
     )
     .do(cookieHelper.removeCookieToken);
