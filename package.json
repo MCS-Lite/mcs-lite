@@ -27,7 +27,7 @@
     "eslint-plugin-prettier": "^2.2.0",
     "eslint-plugin-react": "^7.3.0",
     "flow-bin": "^0.51.0",
-    "lerna": "^2.0.0",
+    "lerna": "^2.1.0",
     "lerna-changelog": "^0.6.0",
     "license-checker": "^13.0.3",
     "prettier": "1.4.4",
