@@ -1,10 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should render components correctly 1`] = `
+.c0 {
+  display: block;
+  margin-top: 4px;
+  color: #999A94;
+}
+
 <div>
   <Styled(Small)>
     <Small
-      className="sc-bwzfXH wIntD"
+      className="c0"
     />
   </Styled(Small)>
 </div>

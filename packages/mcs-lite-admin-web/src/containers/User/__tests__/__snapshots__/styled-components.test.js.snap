@@ -2,23 +2,85 @@
 
 exports[`should render components correctly 1`] = `
 Array [
-  <div>
+  .c0 {
+  position: fixed;
+  bottom: 0;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  width: 100%;
+  background-color: #FFFFFF;
+  line-height: 0;
+}
+
+.c0 > .sc-ifAKCX {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c0 > .sc-ifAKCX div {
+  margin-left: 5px;
+  line-height: 1em;
+}
+
+.c1 {
+  border-bottom: 1px solid #D1D2D3;
+  margin-bottom: 10px;
+}
+
+<div>
     <styled.div>
         <div
-            className="sc-gzVnrw jcOsZR"
+            className="c0"
         />
     </styled.div>
     <styled.div>
         <div
-            className="sc-dnqmqq cQMgME"
+            className="c1"
         />
     </styled.div>
 </div>,
-  <div
-    className="sc-gzVnrw jcOsZR"
+  .c0 {
+  position: fixed;
+  bottom: 0;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  width: 100%;
+  background-color: #FFFFFF;
+  line-height: 0;
+}
+
+.c0 > .sc-ifAKCX {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c0 > .sc-ifAKCX div {
+  margin-left: 5px;
+  line-height: 1em;
+}
+
+<div
+    className="c0"
 />,
-  <div
-    className="sc-dnqmqq cQMgME"
+  .c0 {
+  border-bottom: 1px solid #D1D2D3;
+  margin-bottom: 10px;
+}
+
+<div
+    className="c0"
 />,
 ]
 `;

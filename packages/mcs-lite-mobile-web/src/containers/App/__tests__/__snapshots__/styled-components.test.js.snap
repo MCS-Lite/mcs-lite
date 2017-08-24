@@ -2,28 +2,56 @@
 
 exports[`should render components correctly 1`] = `
 Array [
-  <div>
+  .c0 {
+  height: 100%;
+}
+
+.c1 {
+  position: fixed;
+  bottom: 56px;
+  width: 100%;
+}
+
+.c2 {
+  padding: 16px;
+}
+
+.c2 > * {
+  margin-top: 8px;
+}
+
+<div>
     <styled.div>
         <div
-            className="sc-bdVaJa dGIfxd"
+            className="c0"
         />
     </styled.div>
     <styled.div>
         <div
-            className="sc-bwzfXH gjbKqk"
+            className="c1"
         />
     </styled.div>
     <Styled(MobileContentWrapper)>
         <MobileContentWrapper
-            className="sc-htpNat dWlGLA"
+            className="c2"
         />
     </Styled(MobileContentWrapper)>
 </div>,
-  <div
-    className="sc-bdVaJa dGIfxd"
+  .c0 {
+  height: 100%;
+}
+
+<div
+    className="c0"
 />,
-  <div
-    className="sc-bwzfXH gjbKqk"
+  .c0 {
+  position: fixed;
+  bottom: 56px;
+  width: 100%;
+}
+
+<div
+    className="c0"
 />,
 ]
 `;

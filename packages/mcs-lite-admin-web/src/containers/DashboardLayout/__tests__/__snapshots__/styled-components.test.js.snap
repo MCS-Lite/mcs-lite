@@ -2,59 +2,213 @@
 
 exports[`should render components correctly 1`] = `
 Array [
-  <div>
+  .c6 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.c0 {
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c1 {
+  -webkit-flex-basis: 40px;
+  -ms-flex-basis: 40px;
+  flex-basis: 40px;
+  -webkit-flex-shrink: 0;
+  -ms-flex-shrink: 0;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  background-color: #FAFAFA;
+  border-bottom: 1px solid #F1F2F7;
+  padding: 0 20px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: space-between;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: space-between;
+  justify-content: space-between;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+}
+
+.c2 > * {
+  border-left: 1px solid #F1F2F7;
+}
+
+.c2 > *:last-child {
+  border-right: 1px solid #F1F2F7;
+}
+
+.c3 {
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 15px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  color: #00A1DE;
+}
+
+.c3 > .c5 {
+  margin-left: 5px;
+}
+
+.c4 {
+  height: 22px;
+  padding: 9px 0;
+}
+
+.c7 {
+  -webkit-flex-grow: 1;
+  -ms-flex-grow: 1;
+  flex-grow: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 0;
+}
+
+.c8 {
+  -webkit-flex-basis: 150px;
+  -ms-flex-basis: 150px;
+  flex-basis: 150px;
+  box-sizing: border-box;
+  background-color: #FAFAFA;
+  border-right: 1px solid #F1F2F7;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: space-between;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: space-between;
+  justify-content: space-between;
+}
+
+.c9 {
+  width: :100%;
+  height: 32px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 20px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+  color: #353630;
+}
+
+.c9.DashboardLayout-SC-NavItem-attrs-activeClassName {
+  background-color: #FFFFFF;
+  color: #00A1DE;
+}
+
+.c10 {
+  color: #00A1DE;
+  border-top: 1px solid #F1F2F7;
+}
+
+.c10 > .c5 {
+  margin-left: 5px;
+}
+
+.c11 {
+  -webkit-flex-grow: 1;
+  -ms-flex-grow: 1;
+  flex-grow: 1;
+  background-color: #FFFFFF;
+  overflow: auto;
+  padding: 20px;
+}
+
+<div>
     <styled.div>
         <div
-            className="sc-bwzfXH gPmFGo"
+            className="c0"
         />
     </styled.div>
     <styled.header>
         <header
-            className="sc-htpNat kbxgiD"
+            className="c1"
         />
     </styled.header>
     <styled.div>
         <div
-            className="sc-bxivhb uzCBi"
+            className="c2"
         />
     </styled.div>
     <styled.div>
         <div
-            className="sc-ifAKCX jpDVsq"
+            className="c3"
         />
     </styled.div>
     <Styled(Logo)>
         <Logo
             alt="MCS Lite Logo"
-            className="sc-EHOje dQwnkZ"
+            className="c4"
             src="logo_mcs_lite_black.svg"
         >
             <img
                 alt="MCS Lite Logo"
-                className="sc-EHOje dQwnkZ sc-bdVaJa RUnCB"
+                className="c4 c5 c6"
                 src="logo_mcs_lite_black.svg"
             />
         </Logo>
     </Styled(Logo)>
     <styled.div>
         <div
-            className="sc-bZQynM ijZMir"
+            className="c7"
         />
     </styled.div>
     <styled.nav>
         <nav
-            className="sc-gzVnrw gDjQsG"
+            className="c8"
         />
     </styled.nav>
     <Styled(Link)>
         <Link
             activeClassName="DashboardLayout-SC-NavItem-attrs-activeClassName"
-            className="sc-htoDjs ckroVS"
+            className="c9"
             onlyActiveOnIndex={false}
             style={Object {}}
         >
             <a
-                className="sc-htoDjs ckroVS"
+                className="c9"
                 onClick={[Function]}
                 style={Object {}}
             />
@@ -62,16 +216,16 @@ Array [
     </Styled(Link)>
     <Styled(Styled(Link))>
         <Styled(Link)
-            className="sc-dnqmqq fbtjeC"
+            className="c10"
         >
             <Link
                 activeClassName="DashboardLayout-SC-NavItem-attrs-activeClassName"
-                className="sc-dnqmqq fbtjeC sc-htoDjs ckroVS"
+                className="c10 c9"
                 onlyActiveOnIndex={false}
                 style={Object {}}
             >
                 <a
-                    className="sc-dnqmqq fbtjeC sc-htoDjs ckroVS"
+                    className="c10 c9"
                     onClick={[Function]}
                     style={Object {}}
                 />
@@ -80,21 +234,78 @@ Array [
     </Styled(Styled(Link))>
     <styled.main>
         <main
-            className="sc-iwsKbI jSuezg"
+            className="c11"
         />
     </styled.main>
 </div>,
-  <div
-    className="sc-bwzfXH gPmFGo"
+  .c0 {
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+<div
+    className="c0"
 />,
-  <div
-    className="sc-bxivhb uzCBi"
+  .c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+}
+
+.c0 > * {
+  border-left: 1px solid #F1F2F7;
+}
+
+.c0 > *:last-child {
+  border-right: 1px solid #F1F2F7;
+}
+
+<div
+    className="c0"
 />,
-  <div
-    className="sc-ifAKCX jpDVsq"
+  .c0 {
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 15px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  color: #00A1DE;
+}
+
+.c0 > .sc-bdVaJa {
+  margin-left: 5px;
+}
+
+<div
+    className="c0"
 />,
-  <div
-    className="sc-bZQynM ijZMir"
+  .c0 {
+  -webkit-flex-grow: 1;
+  -ms-flex-grow: 1;
+  flex-grow: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 0;
+}
+
+<div
+    className="c0"
 />,
 ]
 `;

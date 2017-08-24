@@ -1,10 +1,20 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should renders <Layout.LayoutDefault> correctly 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
 <LayoutDefault>
   <styled.div>
     <div
-      className="sc-bdVaJa bPGLpq"
+      className="c0"
     >
       <div>
         Mock children
@@ -15,6 +25,18 @@ exports[`should renders <Layout.LayoutDefault> correctly 1`] = `
 `;
 
 exports[`should renders <Layout.LayoutDialog> correctly 1`] = `
+.c0 {
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background-color: #FFFFFF;
+}
+
 <LayoutDialog>
   <Component
     component={false}
@@ -33,7 +55,7 @@ exports[`should renders <Layout.LayoutDialog> correctly 1`] = `
   >
     <Styled(MobileContentWrapper)>
       <MobileContentWrapper
-        className="sc-htpNat gDUiwA"
+        className="c0"
       />
     </Styled(MobileContentWrapper)>
   </Component>

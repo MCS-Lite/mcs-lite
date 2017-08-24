@@ -1,6 +1,33 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should renders <Table> with data 1`] = `
+.c0 > * {
+  outline: none;
+}
+
+.c0 .ReactVirtualized__Table__headerRow {
+  background-color: #FAFAFA;
+  color: #999A94;
+  font-weight: normal;
+  border-bottom: 1px solid #F1F2F7;
+  padding-right: 0 !important;
+}
+
+.c0 .ReactVirtualized__Table__headerColumn {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c0 .ReactVirtualized__Table__row {
+  border-bottom: 1px solid #F1F2F7;
+}
+
 <ThemeProvider
   theme={
     Object {
@@ -78,7 +105,7 @@ exports[`should renders <Table> with data 1`] = `
           width={100}
         >
           <Table
-            className="sc-bdVaJa dAGoMO"
+            className="c0"
             headerHeight={30}
             height={-100}
             noRowsRenderer={[Function]}

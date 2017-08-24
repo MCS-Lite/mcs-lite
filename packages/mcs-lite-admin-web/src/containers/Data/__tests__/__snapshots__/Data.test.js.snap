@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`should renders <Data> correctly without ip 1`] = `
+exports[`should renders <Data> correctly 1`] = `
 <div>
   <HelmetWrapper
     encodeSpecialCharacters={true}

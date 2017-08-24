@@ -1,5 +1,7 @@
 /* global window */
 
+import 'jest-styled-components';
+import 'mcs-lite-ui/lib/utils/rafPolyfill';
 import './utils/rxjs';
 
 // For signout require comfirm

@@ -2,31 +2,67 @@
 
 exports[`should render components correctly 1`] = `
 Array [
-  <div>
+  .c0 {
+  height: 100%;
+}
+
+.c1 {
+  position: fixed;
+  bottom: 20px;
+  width: 100%;
+}
+
+.c2 {
+  padding: 0 100px;
+}
+
+.c2 > * {
+  margin-top: 8px;
+}
+
+<div>
     <styled.div>
         <div
-            className="sc-bdVaJa dGIfxd"
+            className="c0"
         />
     </styled.div>
     <styled.div>
         <div
-            className="sc-bwzfXH fJgWw"
+            className="c1"
         />
     </styled.div>
     <styled.div>
         <div
-            className="sc-htpNat ctRuvZ"
+            className="c2"
         />
     </styled.div>
 </div>,
-  <div
-    className="sc-bdVaJa dGIfxd"
+  .c0 {
+  height: 100%;
+}
+
+<div
+    className="c0"
 />,
-  <div
-    className="sc-bwzfXH fJgWw"
+  .c0 {
+  position: fixed;
+  bottom: 20px;
+  width: 100%;
+}
+
+<div
+    className="c0"
 />,
-  <div
-    className="sc-htpNat ctRuvZ"
+  .c0 {
+  padding: 0 100px;
+}
+
+.c0 > * {
+  margin-top: 8px;
+}
+
+<div
+    className="c0"
 />,
 ]
 `;
