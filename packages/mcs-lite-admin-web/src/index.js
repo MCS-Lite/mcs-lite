@@ -23,6 +23,7 @@ import DashboardLayout from './containers/DashboardLayout';
 import Ip from './containers/Ip';
 import System from './containers/System';
 import User from './containers/User';
+import Data from './containers/Data';
 import Signin from './containers/Signin';
 import Signup from './containers/Signup';
 import Language from './containers/Language';
@@ -64,6 +65,7 @@ ReactDOM.render(
                 <Route path="ip" component={Ip} />
                 <Route path="system" component={System} />
                 <Route path="user" component={User} />
+                <Route path="data" component={Data} />
                 <Route path="language" component={Language} />
               </Route>
             </Route>

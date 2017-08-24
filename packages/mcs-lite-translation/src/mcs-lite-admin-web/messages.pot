@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"POT-Creation-Date: 2017-08-07T07:06:02.049Z\n"
+"POT-Creation-Date: 2017-08-24T06:39:48.809Z\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "MIME-Version: 1.0\n"
@@ -161,6 +161,13 @@ msgstr ""
 #. defaultMessage is:
 #. 取消
 msgid "取消"
+msgstr ""
+
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+#. [Data.description]
+#. defaultMessage is:
+#. 可以清除 MCS Lite 所有資料，包含使用者清單以及測試裝置等等。
+msgid "可以清除 MCS Lite 所有資料，包含使用者清單以及測試裝置等等。"
 msgstr ""
 
 #: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
@@ -372,6 +379,20 @@ msgid "注意！"
 msgstr ""
 
 #: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+#. [Data.reset.confirm2]
+#. defaultMessage is:
+#. 清除後，系統將自動關閉， 請重新啟動服務。
+msgid "清除後，系統將自動關閉， 請重新啟動服務。"
+msgstr ""
+
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+#. [Data.reset]
+#. defaultMessage is:
+#. 清除所有資料
+msgid "清除所有資料"
+msgstr ""
+
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
 #. [User.clearFilter]
 #. defaultMessage is:
 #. 清除搜尋條件
@@ -425,6 +446,13 @@ msgstr ""
 #. defaultMessage is:
 #. 確定要刪除使用者？
 msgid "確定要刪除使用者？"
+msgstr ""
+
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+#. [Data.reset.confirm1]
+#. defaultMessage is:
+#. 確定要清除所有資料嗎？
+msgid "確定要清除所有資料嗎？"
 msgstr ""
 
 #: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
@@ -485,6 +513,17 @@ msgstr ""
 #. defaultMessage is:
 #. 註冊
 msgid "註冊"
+msgstr ""
+
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+#. [DashboardLayout.dataManagement]
+#. defaultMessage is:
+#. 資料管理
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+#. [Data.dataManagement] - Meta/Title
+#. defaultMessage is:
+#. 資料管理
+msgid "資料管理"
 msgstr ""
 
 #: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json

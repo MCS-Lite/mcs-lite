@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should return messages 1`] = `
+Object {
+  "Data.dataManagement": Object {
+    "defaultMessage": "資料管理",
+    "description": "Meta/Title",
+    "id": "Data.dataManagement",
+  },
+  "Data.description": Object {
+    "defaultMessage": "可以清除 MCS Lite 所有資料，包含使用者清單以及測試裝置等等。",
+    "id": "Data.description",
+  },
+  "Data.reset": Object {
+    "defaultMessage": "清除所有資料",
+    "id": "Data.reset",
+  },
+  "Data.reset.confirm1": Object {
+    "defaultMessage": "確定要清除所有資料嗎？",
+    "id": "Data.reset.confirm1",
+  },
+  "Data.reset.confirm2": Object {
+    "defaultMessage": "清除後，系統將自動關閉， 請重新啟動服務。",
+    "id": "Data.reset.confirm2",
+  },
+}
+`;

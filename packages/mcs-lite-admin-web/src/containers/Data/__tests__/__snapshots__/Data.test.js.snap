@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should renders <Data> correctly without ip 1`] = `
+<div>
+  <HelmetWrapper
+    encodeSpecialCharacters={true}
+  >
+    <title>
+      dataManagement
+    </title>
+  </HelmetWrapper>
+  <InjectIntl(withPropsOnChange(DialogConfirm))
+    onCancel={[Function]}
+    onSubmit={[Function]}
+    show={false}
+  >
+    <P>
+      reset.confirm1
+    </P>
+    <P>
+      reset.confirm2
+    </P>
+  </InjectIntl(withPropsOnChange(DialogConfirm))>
+  <DashboardTitle
+    title="dataManagement"
+  >
+    <A
+      color="primary"
+      onClick={[Function]}
+    >
+      reset
+    </A>
+  </DashboardTitle>
+  <DashboardDesc>
+    description
+  </DashboardDesc>
+</div>
+`;

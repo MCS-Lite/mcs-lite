@@ -31,6 +31,10 @@ const messages = defineMessages({
     id: 'DashboardLayout.userManagement',
     defaultMessage: '使用者管理',
   },
+  'DashboardLayout.dataManagement': {
+    id: 'DashboardLayout.dataManagement',
+    defaultMessage: '資料管理',
+  },
   'DashboardLayout.versionCheck': {
     id: 'DashboardLayout.versionCheck',
     defaultMessage: '版本更新檢查',

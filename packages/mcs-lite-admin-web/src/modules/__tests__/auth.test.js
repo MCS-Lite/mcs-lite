@@ -6,6 +6,7 @@ import reducer, { constants, actions, cycles } from '../auth';
 import { actions as serviceActions } from '../service';
 import { actions as systemActions } from '../system';
 import { actions as uiActions } from '../ui';
+import { actions as userActions } from '../users';
 import { assertSourcesSinks } from '../../utils/helpers';
 
 describe('auth - 1. Constants', () => {
@@ -98,17 +99,18 @@ describe('auth - 3. Cycle', () => {
     };
 
     const actionSink = {
-      w: push('/login'),
-      x: actions.clear(),
-      y: serviceActions.clear(),
-      z: systemActions.clear(),
+      v: push('/login'),
+      w: actions.clear(),
+      x: serviceActions.clear(),
+      y: systemActions.clear(),
+      z: userActions.clear(),
     };
 
     // prettier-ignore
     assertSourcesSinks({
-      ACTION: { 'a-----|': actionSource },
+      ACTION: { 'a------|': actionSource },
     }, {
-      ACTION: { '(wxyz)|': actionSink },
+      ACTION: { '(vwxyz)|': actionSink },
     }, cycles.signoutCycle, done);
   });
 
