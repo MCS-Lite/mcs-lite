@@ -2,25 +2,78 @@
 
 exports[`should render components correctly 1`] = `
 Array [
-  <div>
+  .c0 {
+  padding: 16px 16px 56px 16px;
+}
+
+.c0 > div + div {
+  margin-top: 8px;
+}
+
+.c0 > div:last-child {
+  margin-bottom: 16px;
+}
+
+.c1 {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 8px 16px;
+}
+
+.c2 > * {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c2 > *:first-child {
+  margin-right: 8px;
+}
+
+<div>
     <Styled(MobileContentWrapper)>
         <MobileContentWrapper
-            className="sc-bdVaJa jJHLFN"
+            className="c0"
         />
     </Styled(MobileContentWrapper)>
     <styled.label>
         <label
-            className="sc-bwzfXH kNZjpJ"
+            className="c1"
         />
     </styled.label>
     <styled.div>
         <div
-            className="sc-htpNat MUAJk"
+            className="c2"
         />
     </styled.div>
 </div>,
-  <div
-    className="sc-htpNat MUAJk"
+  .c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 8px 16px;
+}
+
+.c0 > * {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c0 > *:first-child {
+  margin-right: 8px;
+}
+
+<div
+    className="c0"
 />,
 ]
 `;

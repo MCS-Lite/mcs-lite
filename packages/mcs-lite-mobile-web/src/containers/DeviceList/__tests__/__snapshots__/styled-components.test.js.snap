@@ -2,20 +2,56 @@
 
 exports[`should render components correctly 1`] = `
 Array [
-  <div>
+  .c0 {
+  padding: 8px;
+}
+
+.c1 > * {
+  margin-bottom: 8px;
+}
+
+.c2 {
+  color: rgb(255,255,255);
+}
+
+.c3 {
+  color: rgba(255,255,255,0.5);
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 56px;
+  bottom: 0;
+}
+
+<div>
     <Styled(MobileContentWrapper)>
         <MobileContentWrapper
-            className="sc-bdVaJa cHxkvh"
+            className="c0"
         />
     </Styled(MobileContentWrapper)>
     <styled.div>
         <div
-            className="sc-bwzfXH fdppCk"
+            className="c1"
         />
     </styled.div>
     <Styled(MobileHeaderIcon)>
         <MobileHeaderIcon
-            className="sc-htpNat jaEngQ"
+            className="c2"
             component="a"
         />
     </Styled(MobileHeaderIcon)>
@@ -24,18 +60,22 @@ Array [
     >
         <MobileHeaderIcon
             active={true}
-            className="sc-htpNat dMtSTb"
+            className="c3"
             component="a"
         />
     </Styled(MobileHeaderIcon)>
     <Styled(P)>
         <P
-            className="sc-bxivhb RrqZP"
+            className="c4"
         />
     </Styled(P)>
 </div>,
-  <div
-    className="sc-bwzfXH fdppCk"
+  .c0 > * {
+  margin-bottom: 8px;
+}
+
+<div
+    className="c0"
 />,
 ]
 `;

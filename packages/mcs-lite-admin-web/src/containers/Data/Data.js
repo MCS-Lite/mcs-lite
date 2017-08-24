@@ -1,8 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import R from 'ramda';
-import { componentFromStreamWithConfig } from 'recompose/componentFromStream';
-import { createEventHandlerWithConfig } from 'recompose/createEventHandler';
 import { Observable } from 'rxjs/Observable';
 import Helmet from 'react-helmet';
 import A from 'mcs-lite-ui/lib/A';
@@ -10,15 +8,10 @@ import P from 'mcs-lite-ui/lib/P';
 import DashboardTitle from '../../components/DashboardTitle';
 import DashboardDesc from '../../components/DashboardDesc';
 import DialogConfirm from '../../components/DialogConfirm';
-
-const componentFromStream = componentFromStreamWithConfig({
-  fromESObservable: Observable.from,
-  toESObservable: stream => stream,
-});
-const createEventHandler = createEventHandlerWithConfig({
-  fromESObservable: Observable.from,
-  toESObservable: stream => stream,
-});
+import {
+  componentFromStream,
+  createEventHandler,
+} from '../../utils/recomposeHelper';
 
 const Data = componentFromStream(props$ => {
   const { handler: onResetClick, stream: onResetClick$ } = createEventHandler();

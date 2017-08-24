@@ -2,37 +2,114 @@
 
 exports[`should render components correctly 1`] = `
 Array [
-  <div>
+  .c0 {
+  padding: 8px 16px;
+  border-bottom: 1px solid #D1D2D3;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-between;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: space-between;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c1 {
+  padding: 16px 16px 56px 16px;
+}
+
+.c1 > * {
+  margin-bottom: 16px;
+}
+
+.c2 {
+  display: block;
+  margin-top: 4px;
+  margin-bottom: 8px;
+  color: #999A94;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 8px 16px;
+}
+
+.c3 > * {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c3 > *:first-child {
+  margin-right: 8px;
+}
+
+.c4 {
+  -webkit-transform: scale(0.48);
+  -ms-transform: scale(0.48);
+  transform: scale(0.48);
+  -webkit-transform-origin: right center;
+  -ms-transform-origin: right center;
+  transform-origin: right center;
+}
+
+<div>
     <Styled(MobileContentWrapper)>
         <MobileContentWrapper
-            className="sc-bdVaJa dRbEK"
+            className="c0"
         />
     </Styled(MobileContentWrapper)>
     <Styled(MobileContentWrapper)>
         <MobileContentWrapper
-            className="sc-bwzfXH dNQKJg"
+            className="c1"
         />
     </Styled(MobileContentWrapper)>
     <Styled(Small)>
         <Small
-            className="sc-htpNat jBwnyn"
+            className="c2"
         />
     </Styled(Small)>
     <styled.div>
         <div
-            className="sc-bxivhb cEYKpZ"
+            className="c3"
         />
     </styled.div>
     <Styled(Switch)>
         <Switch
             checked={false}
-            className="sc-ifAKCX jhZcTJ"
+            className="c4"
             kind="success"
         />
     </Styled(Switch)>
 </div>,
-  <div
-    className="sc-bxivhb cEYKpZ"
+  .c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 8px 16px;
+}
+
+.c0 > * {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c0 > *:first-child {
+  margin-right: 8px;
+}
+
+<div
+    className="c0"
 />,
 ]
 `;

@@ -1,10 +1,22 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should render components correctly 1`] = `
+.c0 {
+  padding: 16px 16px 56px 16px;
+}
+
+.c0 > div + div {
+  margin-top: 8px;
+}
+
+.c0 p {
+  word-wrap: break-word;
+}
+
 <div>
   <Styled(MobileContentWrapper)>
     <MobileContentWrapper
-      className="sc-bdVaJa iemWIQ"
+      className="c0"
     />
   </Styled(MobileContentWrapper)>
 </div>

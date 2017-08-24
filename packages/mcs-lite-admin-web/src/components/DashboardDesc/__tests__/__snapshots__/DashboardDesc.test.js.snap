@@ -1,7 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should renders <DashboardDesc> correctly 1`] = `
+.c0 {
+  margin-bottom: 20px;
+}
+
 <P
-  className="sc-bwzfXH gHzNhV"
+  className="c0"
 />
 `;

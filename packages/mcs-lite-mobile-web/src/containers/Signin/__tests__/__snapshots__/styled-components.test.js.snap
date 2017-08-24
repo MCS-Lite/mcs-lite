@@ -1,15 +1,35 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should render components correctly 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 100%;
+  padding: 16px;
+}
+
+.c1 > input + input {
+  margin-top: 8px;
+}
+
+.c1 > input:last-child {
+  margin-top: 32px;
+}
+
 <div>
   <Styled(MobileContentWrapper)>
     <MobileContentWrapper
-      className="sc-htpNat fhaWyw"
+      className="c0"
     />
   </Styled(MobileContentWrapper)>
   <styled.form>
     <form
-      className="sc-bxivhb jmIgvy"
+      className="c1"
     />
   </styled.form>
 </div>
