@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: mcs-lite\n"
-"POT-Creation-Date: 2017-08-07T07:06:02.049Z\n"
-"PO-Revision-Date: 2017-08-21 18:04+0800\n"
+"POT-Creation-Date: 2017-08-24T06:39:48.809Z\n"
+"PO-Revision-Date: 2017-08-24 15:42+0800\n"
 "Last-Translator: Daria Chen <smartexist@gmail.com>\n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
@@ -168,6 +168,13 @@ msgstr "汇入 CSV 档案"
 msgid "取消"
 msgstr "取消"
 
+#. [Data.description]
+#. defaultMessage is:
+#. 可以清除 MCS Lite 所有資料，包含使用者清單以及測試裝置等等。
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+msgid "可以清除 MCS Lite 所有資料，包含使用者清單以及測試裝置等等。"
+msgstr "您可以清除除了管理者帐号之外的 MCS Lite 所有资料，包含使用者清单以及测试装置等等。"
+
 #. [User.name]
 #. defaultMessage is:
 #. 名稱
@@ -245,28 +252,28 @@ msgstr "注册管理者帐户"
 #. 成功！使用者已新增。
 #: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
 msgid "成功！使用者已新增。"
-msgstr "成功！使用者已新增。"
+msgstr "成功！使用者已新增。修改后请重新启动 MCS Lite 服务使设置生效。"
 
 #. [User.deleteUser.success]
 #. defaultMessage is:
 #. 成功！使用者已被刪除。
 #: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
 msgid "成功！使用者已被刪除。"
-msgstr "成功！使用者已被删除。"
+msgstr "成功！使用者已被删除。修改后请重新启动 MCS Lite 服务使设置生效。"
 
 #. [User.changePassword.success]
 #. defaultMessage is:
 #. 成功！密碼已修改。
 #: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
 msgid "成功！密碼已修改。"
-msgstr "成功！密码已修改。"
+msgstr "成功！密码已修改。修改后请重新启动 MCS Lite 服务使设置生效。"
 
 #. [User.accountStatus.success]
 #. defaultMessage is:
 #. 成功！帳號狀態已修改。
 #: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
 msgid "成功！帳號狀態已修改。"
-msgstr "成功！帐号状态已修改。"
+msgstr "成功！帐号状态已修改。请重新启动 MCS Lite 服务使设置生效。"
 
 #. [DashboardLayout.stop.success] - Toast
 #. defaultMessage is:
@@ -373,6 +380,20 @@ msgstr "此帐号不存在，请重新搜寻。"
 msgid "注意！"
 msgstr "注意！"
 
+#. [Data.reset.confirm2]
+#. defaultMessage is:
+#. 清除後，系統將自動關閉， 請重新啟動服務。
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+msgid "清除後，系統將自動關閉， 請重新啟動服務。"
+msgstr "清除后，系统将自动关闭， 请重新启动服务。"
+
+#. [Data.reset]
+#. defaultMessage is:
+#. 清除所有資料
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+msgid "清除所有資料"
+msgstr "清除所有资料"
+
 #. [User.clearFilter]
 #. defaultMessage is:
 #. 清除搜尋條件
@@ -428,6 +449,13 @@ msgstr "确定"
 #: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
 msgid "確定要刪除使用者？"
 msgstr "确定要删除使用者？"
+
+#. [Data.reset.confirm1]
+#. defaultMessage is:
+#. 確定要清除所有資料嗎？
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+msgid "確定要清除所有資料嗎？"
+msgstr "确定要清除所有资料吗？"
 
 #. [DashboardLayout.confirm]
 #. defaultMessage is:
@@ -487,6 +515,16 @@ msgstr "与新密码不相符，请重新输入"
 #: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
 msgid "註冊"
 msgstr "注册"
+
+#. [DashboardLayout.dataManagement]
+#. defaultMessage is:
+#. 資料管理
+#. [Data.dataManagement] - Meta/Title
+#. defaultMessage is:
+#. 資料管理
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+msgid "資料管理"
+msgstr "资料管理"
 
 #. [User.userName.placeholder]
 #. defaultMessage is:

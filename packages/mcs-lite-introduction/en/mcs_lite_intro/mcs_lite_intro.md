@@ -40,6 +40,7 @@ On the IoT platform, there is a web console for end users to create their protot
    * Manage the user account and data of this platform.
 
 ## Installation guide
+### Get Started on Windows or Mac
 
 1. Download MCS Lite package. [Download now](https://github.com/MCS-Lite/mcs-lite-app/releases)
 2. Unzip the downloaded file. The generated folder can be moved or copied to any directory.
@@ -74,6 +75,26 @@ On the IoT platform, there is a web console for end users to create their protot
 	display_integer,,43
 	```
 
+### Get Started on Linux or LinkIt 7688
+1. You need to have Node.js ( >7.3.0) installed on your machine, on which MCS Lite will run，please refer to  [Installing Node.js via package manager](https://nodejs.org/en/download/package-manager/) for detailed instruction.
+2. Download MCS Lite package. [Download now](https://github.com/MCS-Lite/mcs-lite-app/releases)
+3. Unzip the downloaded file. The generated folder can be moved or copied to any directory.
+4. In the terminal console, chnage directory to the decompressed folder and execute the following instructions to run the MCS Lite service in the background.
+	```
+	node server.js&
+	```
+5. When you see the following screen, MCS Lite service has been started successfully, and you can open your browser to connect to MCS Lite by the prompt IP address. 
+
+	```
+	+-+-+-+ +-+-+-+-+
+ 	M C S   L I T E 
+	+-+-+-+ +-+-+-+-+
+ 	MCS Lite server IP: 
+ 	'10.10.10.10:3000'
+	```
+It is worth noting that the Linux and LinkIt 7688 versions do not support the admin management console, so you don't have to perform the fourth step in "Get started with Windows or Mac" to register the administrator account in advance.
+
+
 ## System requirement
 
 ### Operating system
@@ -82,6 +103,7 @@ On the IoT platform, there is a web console for end users to create their protot
 | :--- | :--- |
 | Windows | Windows 7 and above |
 | MacOS | 10.12 Sierra and above |
+| Linux | Debian and Ubuntu based Linux distributions, OpenWrt |
 | Others | MCS Lite can be installed on other platforms with limited functionality, for detailed informaiton please refer to [Appendix A](/mcs_lite_platform.md)。 |
 
 ### Hardware
