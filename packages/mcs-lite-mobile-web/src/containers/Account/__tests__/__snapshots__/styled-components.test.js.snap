@@ -2,12 +2,80 @@
 
 exports[`should render components correctly 1`] = `
 Array [
-  <div>
+  .c4 {
+  margin: 16px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  height: 50px;
+}
+
+.c0 {
+  border: initial;
+  border-radius: initial;
+  height: 56px;
+  border-top: 1px solid #FFFFFF;
+}
+
+.c1 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: space-between;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: space-between;
+  justify-content: space-between;
+  -webkit-flex-grow: 1;
+  -ms-flex-grow: 1;
+  flex-grow: 1;
+}
+
+.c2 {
+  width: 100%;
+  -webkit-flex-grow: 1;
+  -ms-flex-grow: 1;
+  flex-grow: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c2 > *:not(:first-child) {
+  margin-bottom: 8px;
+}
+
+.c3 {
+  margin-bottom: 32px;
+}
+
+.c5 {
+  width: 100%;
+}
+
+<div>
     <Styled(Button)>
         <Button
             active={false}
             block={false}
-            className="sc-bwzfXH jcNmuD"
+            className="c0"
             component="button"
             disabled={false}
             kind="primary"
@@ -18,38 +86,82 @@ Array [
     </Styled(Button)>
     <styled.div>
         <div
-            className="sc-htpNat kuHdgz"
+            className="c1"
         />
     </styled.div>
     <styled.div>
         <div
-            className="sc-bxivhb fBmJKB"
+            className="c2"
         />
     </styled.div>
     <Styled(Logo)>
         <Logo
             alt="MCS Lite Logo"
-            className="sc-ifAKCX eoQxsM"
+            className="c3"
             src="logo_mcs_lite_black.svg"
         >
             <img
                 alt="MCS Lite Logo"
-                className="sc-ifAKCX eoQxsM sc-bdVaJa kawKoJ"
+                className="c3 c4"
                 src="logo_mcs_lite_black.svg"
             />
         </Logo>
     </Styled(Logo)>
     <styled.footer>
         <footer
-            className="sc-bZQynM EvJhB"
+            className="c5"
         />
     </styled.footer>
 </div>,
-  <div
-    className="sc-htpNat kuHdgz"
+  .c0 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: space-between;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: space-between;
+  justify-content: space-between;
+  -webkit-flex-grow: 1;
+  -ms-flex-grow: 1;
+  flex-grow: 1;
+}
+
+<div
+    className="c0"
 />,
-  <div
-    className="sc-bxivhb fBmJKB"
+  .c0 {
+  width: 100%;
+  -webkit-flex-grow: 1;
+  -ms-flex-grow: 1;
+  flex-grow: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c0 > *:not(:first-child) {
+  margin-bottom: 8px;
+}
+
+<div
+    className="c0"
 />,
 ]
 `;

@@ -2,25 +2,58 @@
 
 exports[`should render components correctly 1`] = `
 Array [
-  <div>
+  .c0 {
+  padding: 8px 16px;
+  border-bottom: 1px solid #D1D2D3;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-between;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: space-between;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c1 {
+  display: block;
+  margin-top: 4px;
+  color: #999A94;
+}
+
+.c2 {
+  font-size: 24px;
+  color: #00A1DE;
+}
+
+<div>
     <Styled(MobileContentWrapper)>
         <MobileContentWrapper
-            className="sc-bdVaJa dRbEK"
+            className="c0"
         />
     </Styled(MobileContentWrapper)>
     <Styled(Small)>
         <Small
-            className="sc-bwzfXH wIntD"
+            className="c1"
         />
     </Styled(Small)>
     <styled.div>
         <div
-            className="sc-htpNat lepyzo"
+            className="c2"
         />
     </styled.div>
 </div>,
-  <div
-    className="sc-htpNat lepyzo"
+  .c0 {
+  font-size: 24px;
+  color: #00A1DE;
+}
+
+<div
+    className="c0"
 />,
 ]
 `;

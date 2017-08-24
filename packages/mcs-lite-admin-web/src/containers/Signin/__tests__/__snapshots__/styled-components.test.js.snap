@@ -2,38 +2,107 @@
 
 exports[`should render components correctly 1`] = `
 Array [
-  <div>
+  .c1 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.c0 {
+  width: 200px;
+}
+
+.c2 {
+  text-align: center;
+}
+
+.c2:not(:empty) {
+  margin-top: 20px;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 100%;
+  width: 260px;
+  margin: 0 auto;
+}
+
+.c4 > input + input {
+  margin-top: 10px;
+}
+
+.c4 > input:last-child {
+  margin-top: 40px;
+}
+
+<div>
     <Styled(Logo)>
         <Logo
             alt="MCS Lite Logo"
-            className="sc-bwzfXH fwZmcw"
+            className="c0"
             src="logo_mcs_lite_black.svg"
         >
             <img
                 alt="MCS Lite Logo"
-                className="sc-bwzfXH fwZmcw sc-bdVaJa RUnCB"
+                className="c0 c1"
                 src="logo_mcs_lite_black.svg"
             />
         </Logo>
     </Styled(Logo)>
     <Styled(P)>
         <P
-            className="sc-htpNat ejCzum"
+            className="c2"
         />
     </Styled(P)>
     <styled.div>
         <div
-            className="sc-ifAKCX llFyuF"
+            className="c3"
         />
     </styled.div>
     <styled.form>
         <form
-            className="sc-EHOje eeyGju"
+            className="c4"
         />
     </styled.form>
 </div>,
-  <div
-    className="sc-ifAKCX llFyuF"
+  .c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 100%;
+  width: 260px;
+  margin: 0 auto;
+}
+
+<div
+    className="c0"
 />,
 ]
 `;

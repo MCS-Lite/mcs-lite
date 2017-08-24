@@ -1,33 +1,87 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should renders <LocaleFooter> correctly 1`] = `
-<styled.div>
-  <Link
-    onlyActiveOnIndex={false}
-    style={Object {}}
-    to={[Function]}
-  >
-    <Small>
-      English
-    </Small>
-  </Link>
-  <Link
-    onlyActiveOnIndex={false}
-    style={Object {}}
-    to={[Function]}
-  >
-    <Small>
-      繁體中文
-    </Small>
-  </Link>
-  <Link
-    onlyActiveOnIndex={false}
-    style={Object {}}
-    to={[Function]}
-  >
-    <Small>
-      简体中文
-    </Small>
-  </Link>
-</styled.div>
+.c1 {
+  font-size: 0.923rem;
+}
+
+.c0 {
+  position: fixed;
+  bottom: 20px;
+  right: 0;
+  left: 0;
+  text-align: center;
+}
+
+.c0 * {
+  color: #999A94;
+  text-decoration: none;
+}
+
+.c0 > a:not(:last-child)::after {
+  content: "\\00a0·\\00a0";
+}
+
+<LocaleFooter>
+  <styled.div>
+    <div
+      className="c0"
+    >
+      <Link
+        onlyActiveOnIndex={false}
+        style={Object {}}
+        to={[Function]}
+      >
+        <a
+          onClick={[Function]}
+          style={Object {}}
+        >
+          <Small>
+            <small
+              className="c1"
+            >
+              English
+            </small>
+          </Small>
+        </a>
+      </Link>
+      <Link
+        onlyActiveOnIndex={false}
+        style={Object {}}
+        to={[Function]}
+      >
+        <a
+          onClick={[Function]}
+          style={Object {}}
+        >
+          <Small>
+            <small
+              className="c1"
+            >
+              繁體中文
+            </small>
+          </Small>
+        </a>
+      </Link>
+      <Link
+        onlyActiveOnIndex={false}
+        style={Object {}}
+        to={[Function]}
+      >
+        <a
+          onClick={[Function]}
+          style={Object {}}
+        >
+          <Small>
+            <small
+              className="c1"
+            >
+              简体中文
+            </small>
+          </Small>
+        </a>
+      </Link>
+    </div>
+  </styled.div>
+</LocaleFooter>
 `;

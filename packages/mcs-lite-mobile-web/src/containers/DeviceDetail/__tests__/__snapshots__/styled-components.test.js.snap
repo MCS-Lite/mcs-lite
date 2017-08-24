@@ -2,15 +2,27 @@
 
 exports[`should render components correctly 1`] = `
 Array [
-  <div>
+  .c0 {
+  padding-left: 8px;
+  font-size: 24px;
+  color: #00A1DE;
+}
+
+<div>
     <styled.div>
         <div
-            className="sc-bxivhb YlXGZ"
+            className="c0"
         />
     </styled.div>
 </div>,
-  <div
-    className="sc-bxivhb YlXGZ"
+  .c0 {
+  padding-left: 8px;
+  font-size: 24px;
+  color: #00A1DE;
+}
+
+<div
+    className="c0"
 />,
 ]
 `;
