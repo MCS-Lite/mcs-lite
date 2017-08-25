@@ -5,7 +5,12 @@ import toJson from 'enzyme-to-json';
 import Input from 'mcs-lite-ui/lib/Input';
 import FormGroup from 'mcs-lite-ui/lib/FormGroup';
 import TabItem from 'mcs-lite-ui/lib/TabItem';
-import User, { ADD_USER_TYPE_ONE, ADD_USER_TYPE_BATCH, CHANGE_PASSWORD, ACCOUNT_STATUS } from '../User';
+import User, {
+  ADD_USER_TYPE_ONE,
+  ADD_USER_TYPE_BATCH,
+  CHANGE_PASSWORD,
+  ACCOUNT_STATUS,
+} from '../User';
 import { FooterWrapper, StyledCommonDialog } from '../styled-components';
 import DialogConfirm from '../../../components/DialogConfirm';
 import Table from '../Table';
@@ -79,7 +84,9 @@ it('should render with ADD_USER_TYPE_BATCH form', () => {
   });
   expect(
     toJson(wrapper.find(StyledCommonDialog).first().find(FormGroup)),
-  ).toMatchSnapshot('should render with ADD_USER_TYPE_BATCH form - ADD_USER_TYPE_ONE');
+  ).toMatchSnapshot(
+    'should render with ADD_USER_TYPE_BATCH form - ADD_USER_TYPE_ONE',
+  );
 
   // After change to batch
   const batchInput = wrapper.find('input#batch');
@@ -90,7 +97,9 @@ it('should render with ADD_USER_TYPE_BATCH form', () => {
   });
   expect(
     toJson(wrapper.find(StyledCommonDialog).first().find(FormGroup)),
-  ).toMatchSnapshot('should render with ADD_USER_TYPE_BATCH form - ADD_USER_TYPE_BATCH');
+  ).toMatchSnapshot(
+    'should render with ADD_USER_TYPE_BATCH form - ADD_USER_TYPE_BATCH',
+  );
 });
 
 it('should render with delete footer', () => {
