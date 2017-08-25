@@ -49,7 +49,7 @@
     "react-progressive-bg-image": "^2.0.4",
     "react-router": "^3.0.2",
     "react-scripts": "^1.0.11",
-    "react-snapshot": "^1.1.0",
+    "react-snapshot": "^1.2.0",
     "recompose": "^0.25.0",
     "styled-components": "^2.1.2"
   }
