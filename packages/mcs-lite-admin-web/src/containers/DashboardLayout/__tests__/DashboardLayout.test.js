@@ -37,7 +37,7 @@ it('should renders <DashboardLayout> correctly when stopped', () => {
   expect(toJson(wrapper)).toMatchSnapshot();
 });
 
-it('should call stop when click', () => {
+it('should handle stop', () => {
   const mockFn = jest.fn();
   const wrapper = shallow(
     <DashboardLayout
@@ -58,7 +58,7 @@ it('should call stop when click', () => {
   expect(mockFn).toHaveBeenCalledWith('stop.success');
 });
 
-it('should call start when click', () => {
+it('should handle start', () => {
   const mockFn = jest.fn();
   const wrapper = shallow(
     <DashboardLayout
@@ -79,7 +79,7 @@ it('should call start when click', () => {
   expect(mockFn).toHaveBeenCalledWith('start.success');
 });
 
-it('should call signout when click', () => {
+it('should handle signout', () => {
   const mockFn = jest.fn();
   const wrapper = shallow(
     <DashboardLayout

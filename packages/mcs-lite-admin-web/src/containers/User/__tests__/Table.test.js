@@ -169,7 +169,7 @@ it('should handle ckeck item in checkedCellRenderer', () => {
 
   expect(input).toMatchSnapshot();
 
-  // Uncheck all
+  // ckeck
   input.props.onChange();
   expect(mockFn).toHaveBeenCalledWith(['user1']);
 });
@@ -210,7 +210,7 @@ it('should handle unckeck item in checkedCellRenderer', () => {
 
   expect(input).toMatchSnapshot();
 
-  // Uncheck all
+  // Uncheck
   input.props.onChange();
   expect(mockFn).toHaveBeenCalledWith([]);
 });

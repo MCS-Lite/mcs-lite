@@ -6,6 +6,8 @@ import { ThemeProvider } from 'styled-components';
 import { theme } from 'mcs-lite-theme';
 import Language from '../Language';
 
+jest.mock('react-helmet');
+
 it('should renders <Language> correctly', () => {
   const wrapper = mount(
     <ThemeProvider theme={theme}>

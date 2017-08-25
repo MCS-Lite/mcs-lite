@@ -128,12 +128,15 @@ it('should render with delete footer', () => {
       putIsActiveById={() => {}}
     />,
   );
+
+  // Before add as default
+  const table = wrapper.find(Table);
+  table.props().onCheckedListChange([]);
   expect(toJson(wrapper.find(FooterWrapper))).toMatchSnapshot(
     'should render with delete footer - Add',
   );
 
-  // After
-  const table = wrapper.find(Table);
+  // After change to delete
   table.props().onCheckedListChange(['user1', 'user2']);
 
   expect(toJson(wrapper.find(FooterWrapper))).toMatchSnapshot(

@@ -53,19 +53,7 @@ exports[`should renders <Language> correctly 1`] = `
   <div>
     <HelmetWrapper
       encodeSpecialCharacters={true}
-    >
-      <SideEffect(NullComponent)
-        encodeSpecialCharacters={true}
-        title="switch"
-        titleAttributes={Object {}}
-      >
-        <NullComponent
-          encodeSpecialCharacters={true}
-          title="switch"
-          titleAttributes={Object {}}
-        />
-      </SideEffect(NullComponent)>
-    </HelmetWrapper>
+    />
     <DashboardTitle
       title="switch"
     >
