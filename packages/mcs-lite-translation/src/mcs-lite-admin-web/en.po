@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: mcs-lite\n"
-"POT-Creation-Date: 2017-08-07T07:06:02.049Z\n"
-"PO-Revision-Date: 2017-08-21 18:02+0800\n"
+"POT-Creation-Date: 2017-08-24T06:39:48.809Z\n"
+"PO-Revision-Date: 2017-08-24 15:36+0800\n"
 "Last-Translator: Daria Chen <smartexist@gmail.com>\n"
 "Language-Team: English\n"
 "Language: en_US\n"
@@ -170,6 +170,15 @@ msgstr "Import a CSV file"
 msgid "取消"
 msgstr "Cancel"
 
+#. [Data.description]
+#. defaultMessage is:
+#. 可以清除 MCS Lite 所有資料，包含使用者清單以及測試裝置等等。
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+msgid "可以清除 MCS Lite 所有資料，包含使用者清單以及測試裝置等等。"
+msgstr ""
+"You can clear all MCS Lite data except administrator account, including user "
+"lists and test devices."
+
 #. [User.name]
 #. defaultMessage is:
 #. 名稱
@@ -247,28 +256,36 @@ msgstr "Create an administrator account"
 #. 成功！使用者已新增。
 #: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
 msgid "成功！使用者已新增。"
-msgstr "Success! The user has been created."
+msgstr ""
+"Success! The user has been created. Please restart MCS Lite service to sync "
+"with the latest change."
 
 #. [User.deleteUser.success]
 #. defaultMessage is:
 #. 成功！使用者已被刪除。
 #: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
 msgid "成功！使用者已被刪除。"
-msgstr "Success! The user has been deleted."
+msgstr ""
+"Success! The user has been deleted. Please restart MCS Lite service to sync "
+"with the latest change."
 
 #. [User.changePassword.success]
 #. defaultMessage is:
 #. 成功！密碼已修改。
 #: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
 msgid "成功！密碼已修改。"
-msgstr "Success! The password has been changed."
+msgstr ""
+"Success! The password has been changed. Please restart MCS Lite service to "
+"sync with the latest change."
 
 #. [User.accountStatus.success]
 #. defaultMessage is:
 #. 成功！帳號狀態已修改。
 #: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
 msgid "成功！帳號狀態已修改。"
-msgstr "Success! The account status has been updated."
+msgstr ""
+"Success! The account status has been updated. Please restart MCS Lite "
+"service to sync with the latest change."
 
 #. [DashboardLayout.stop.success] - Toast
 #. defaultMessage is:
@@ -298,8 +315,8 @@ msgstr ""
 #: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
 msgid "成功！系統的參數設定已更新。"
 msgstr ""
-"Success!  The system configuration has been updated. Please restart MCS "
-"Lite service to have the setting effective."
+"Success!  The system configuration has been updated. Please restart MCS Lite "
+"service to have the setting effective."
 
 #. [App.gerenalError] - With HTTP error status code 401/500
 #. defaultMessage is:
@@ -380,6 +397,22 @@ msgstr "Opps! There is no user found. Please try another search keyword."
 msgid "注意！"
 msgstr "Attention!"
 
+#. [Data.reset.confirm2]
+#. defaultMessage is:
+#. 清除後，系統將自動關閉， 請重新啟動服務。
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+msgid "清除後，系統將自動關閉， 請重新啟動服務。"
+msgstr ""
+"After the data is erased, the service will automatically shut down, please "
+"restart it again."
+
+#. [Data.reset]
+#. defaultMessage is:
+#. 清除所有資料
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+msgid "清除所有資料"
+msgstr "Clear all data"
+
 #. [User.clearFilter]
 #. defaultMessage is:
 #. 清除搜尋條件
@@ -441,6 +474,13 @@ msgstr "Okay"
 msgid "確定要刪除使用者？"
 msgstr "Are you sure you want to delete the user?"
 
+#. [Data.reset.confirm1]
+#. defaultMessage is:
+#. 確定要清除所有資料嗎？
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+msgid "確定要清除所有資料嗎？"
+msgstr "Are you sure you want to clear all data?"
+
 #. [DashboardLayout.confirm]
 #. defaultMessage is:
 #. 確定要登出？
@@ -499,6 +539,16 @@ msgstr "Do not match the new password you just entered, please try again."
 #: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
 msgid "註冊"
 msgstr "Sign up"
+
+#. [DashboardLayout.dataManagement]
+#. defaultMessage is:
+#. 資料管理
+#. [Data.dataManagement] - Meta/Title
+#. defaultMessage is:
+#. 資料管理
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+msgid "資料管理"
+msgstr "Data management"
 
 #. [User.userName.placeholder]
 #. defaultMessage is:
