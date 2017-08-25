@@ -120,7 +120,7 @@ describe('users - 3. Cycle', () => {
       r: {
         url: '/api/users/delete',
         method: 'POST',
-        send: [1, 2, 3],
+        send: { userId: [1, 2, 3] },
         headers: { Authorization: 'Bearer faketoken123' },
         category: constants.DELETE_USERS,
       },

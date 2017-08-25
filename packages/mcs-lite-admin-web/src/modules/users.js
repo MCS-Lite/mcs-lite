@@ -117,7 +117,7 @@ function deleteUsersCycle(sources) {
     (userIdList, accessToken) => ({
       url: '/api/users/delete',
       method: 'POST',
-      send: userIdList,
+      send: { userId: userIdList },
       headers: { Authorization: `Bearer ${accessToken}` },
       category: DELETE_USERS,
     }),
