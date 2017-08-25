@@ -1,6 +1,87 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`should render with ADD_USER_TYPE_BATCH form - batch 1`] = `
+exports[`should render with ACCOUNT_STATUS form - ACCOUNT_STATUS 1`] = `
+<FormGroup>
+  <P>
+    accountStatus.desc
+  </P>
+  <SpaceTop
+    height={10}
+  />
+  <styled.div>
+    <P>
+      accountStatus.label
+    </P>
+    <label
+      htmlFor="active"
+    >
+      <input
+        checked={true}
+        id="active"
+        onChange={[Function]}
+        type="radio"
+        value="true"
+      />
+      <span>
+        active
+      </span>
+    </label>
+    <label
+      htmlFor="inactive"
+    >
+      <input
+        checked={false}
+        id="inactive"
+        onChange={[Function]}
+        type="radio"
+        value="false"
+      />
+      <span>
+        inactive
+      </span>
+    </label>
+  </styled.div>
+</FormGroup>
+`;
+
+exports[`should render with ACCOUNT_STATUS form - CHANGE_PASSWORD 1`] = `
+<FormGroup>
+  <Label
+    htmlFor="newPassword1"
+    required={true}
+  >
+    newPassword1
+  </Label>
+  <Input
+    focus={false}
+    id="newPassword1"
+    kind="primary"
+    onChange={[Function]}
+    placeholder="newPassword1.placeholder"
+    required={true}
+    type="password"
+    value=""
+  />
+  <Label
+    htmlFor="newPassword2"
+    required={true}
+  >
+    newPassword2
+  </Label>
+  <Input
+    focus={false}
+    id="newPassword2"
+    kind="primary"
+    onChange={[Function]}
+    placeholder="newPassword2.placeholder"
+    required={true}
+    type="password"
+    value=""
+  />
+</FormGroup>
+`;
+
+exports[`should render with ADD_USER_TYPE_BATCH form - ADD_USER_TYPE_BATCH 1`] = `
 <FormGroup>
   <Label
     htmlFor="uploadCSV"
@@ -46,7 +127,7 @@ exports[`should render with ADD_USER_TYPE_BATCH form - batch 1`] = `
 </FormGroup>
 `;
 
-exports[`should render with ADD_USER_TYPE_BATCH form - one 1`] = `
+exports[`should render with ADD_USER_TYPE_BATCH form - ADD_USER_TYPE_ONE 1`] = `
 <FormGroup>
   <Label
     htmlFor="userName"

@@ -4,16 +4,9 @@ import { mount, shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
 import Input from 'mcs-lite-ui/lib/Input';
 import FormGroup from 'mcs-lite-ui/lib/FormGroup';
-import User, { ADD_USER_TYPE_BATCH } from '../User';
-import {
-  InputFilterWrapper,
-  FooterWrapper,
-  StyledCommonDialog,
-  TabWrapper,
-  RadioWrapper,
-  ErrorMessageP,
-  InputFileWrapper,
-} from '../styled-components';
+import TabItem from 'mcs-lite-ui/lib/TabItem';
+import User, { ADD_USER_TYPE_ONE, ADD_USER_TYPE_BATCH, CHANGE_PASSWORD, ACCOUNT_STATUS } from '../User';
+import { FooterWrapper, StyledCommonDialog } from '../styled-components';
 import DialogConfirm from '../../../components/DialogConfirm';
 import Table from '../Table';
 import MockProvider from '../../../utils/MockProvider';
@@ -76,12 +69,20 @@ it('should render with ADD_USER_TYPE_BATCH form', () => {
       putIsActiveById={() => {}}
     />,
   );
-  const batchInput = wrapper.find('input#batch');
+
+  // After change to one
+  const oneInput = wrapper.find('input#one');
+  oneInput.simulate('change', {
+    target: {
+      value: ADD_USER_TYPE_ONE,
+    },
+  });
   expect(
     toJson(wrapper.find(StyledCommonDialog).first().find(FormGroup)),
-  ).toMatchSnapshot('should render with ADD_USER_TYPE_BATCH form - one');
+  ).toMatchSnapshot('should render with ADD_USER_TYPE_BATCH form - ADD_USER_TYPE_ONE');
 
   // After change to batch
+  const batchInput = wrapper.find('input#batch');
   batchInput.simulate('change', {
     target: {
       value: ADD_USER_TYPE_BATCH,
@@ -89,7 +90,7 @@ it('should render with ADD_USER_TYPE_BATCH form', () => {
   });
   expect(
     toJson(wrapper.find(StyledCommonDialog).first().find(FormGroup)),
-  ).toMatchSnapshot('should render with ADD_USER_TYPE_BATCH form - batch');
+  ).toMatchSnapshot('should render with ADD_USER_TYPE_BATCH form - ADD_USER_TYPE_BATCH');
 });
 
 it('should render with delete footer', () => {
@@ -129,6 +130,47 @@ it('should render with delete footer', () => {
   expect(toJson(wrapper.find(FooterWrapper))).toMatchSnapshot(
     'should render with delete footer - Delete',
   );
+});
+
+it('should render with ACCOUNT_STATUS form', () => {
+  const wrapper = shallow(
+    <User
+      getMessages={R.identity}
+      users={[
+        {
+          userId: 'user1',
+          email: 'email1',
+          userName: 'userName1',
+          isActive: true,
+        },
+        {
+          userId: 'user2',
+          email: 'email2',
+          userName: 'userName2',
+          isActive: false,
+        },
+      ]}
+      fetchUsers={() => {}}
+      deleteUsers={() => {}}
+      createUser={() => {}}
+      createUserByCSV={() => {}}
+      changePasswordById={() => {}}
+      putIsActiveById={() => {}}
+    />,
+  );
+  const tabs = wrapper.find(TabItem);
+
+  // After change tab 0 (CHANGE_PASSWORD)
+  tabs.at(0).simulate('click', {}, CHANGE_PASSWORD);
+  expect(
+    toJson(wrapper.find(StyledCommonDialog).at(1).find(FormGroup)),
+  ).toMatchSnapshot('should render with ACCOUNT_STATUS form - CHANGE_PASSWORD');
+
+  // After change tab 1
+  tabs.at(1).simulate('click', {}, ACCOUNT_STATUS);
+  expect(
+    toJson(wrapper.find(StyledCommonDialog).at(1).find(FormGroup)),
+  ).toMatchSnapshot('should render with ACCOUNT_STATUS form - ACCOUNT_STATUS');
 });
 
 it('should return correct isAddDialogShow$', () => {

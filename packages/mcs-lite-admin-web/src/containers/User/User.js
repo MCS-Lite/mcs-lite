@@ -34,9 +34,9 @@ import {
   createEventHandler,
 } from '../../utils/recomposeHelper';
 
-const CHANGE_PASSWORD = 'changePassword';
-const ACCOUNT_STATUS = 'accountStatus';
-const ADD_USER_TYPE_ONE = 'one';
+export const CHANGE_PASSWORD = 'changePassword';
+export const ACCOUNT_STATUS = 'accountStatus';
+export const ADD_USER_TYPE_ONE = 'one';
 export const ADD_USER_TYPE_BATCH = 'batch';
 
 const User = componentFromStream(props$ => {
