@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should return config object 1`] = `
+Object {
+  "fromESObservable": [Function],
+  "toESObservable": [Function],
+}
+`;
+
+exports[`should return createEventHandler function 1`] = `
+Object {
+  "handler": [Function],
+  "stream": FromObservable {
+    "_isScalar": false,
+    "ish": Object {
+      "subscribe": [Function],
+      Symbol(observable): [Function],
+    },
+    "scheduler": undefined,
+  },
+}
+`;

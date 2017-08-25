@@ -4,7 +4,12 @@ import { mount } from 'enzyme';
 import toJson from 'enzyme-to-json';
 import { ThemeProvider } from 'styled-components';
 import { theme } from 'mcs-lite-theme';
-import Table, { TABLE_HEIGHT_OFFSET } from '../Table';
+import Table, {
+  TABLE_HEIGHT_OFFSET,
+  StyledIcon,
+  StyledTable,
+  NoRowWrapper,
+} from '../Table';
 
 jest.mock('react-virtualized', () => ({
   WindowScroller: ({ children }) => children({ height: 100 }),
@@ -41,5 +46,253 @@ it('should renders <Table> with data', () => {
     </ThemeProvider>,
   );
 
-  expect(toJson(wrapper)).toMatchSnapshot();
+  expect(toJson(wrapper.find(Table))).toMatchSnapshot();
+});
+
+it('should renders styled-components', () => {
+  const wrapper = mount(
+    <ThemeProvider theme={theme}>
+      <div>
+        <StyledIcon />
+        <StyledTable />
+        <NoRowWrapper />
+      </div>
+    </ThemeProvider>,
+  );
+
+  expect(toJson(wrapper.find('div'))).toMatchSnapshot();
+});
+
+it('should handle check all in checkedHeaderRenderer', () => {
+  const mockFn = jest.fn();
+  const wrapper = mount(
+    <ThemeProvider theme={theme}>
+      <Table
+        getMessages={R.identity}
+        data={[
+          {
+            userId: 'user1',
+            email: 'email1',
+            userName: 'userName1',
+          },
+          {
+            userId: 'user2',
+            email: 'email2',
+            userName: 'userName2',
+          },
+        ]}
+        checkedList={[]}
+        onCheckedListChange={mockFn}
+        onEditClick={() => {}}
+      />
+    </ThemeProvider>,
+  );
+
+  const table = wrapper.find(Table).getNode();
+  const input = table.checkedHeaderRenderer();
+
+  expect(input).toMatchSnapshot();
+
+  // Check all
+  input.props.onChange();
+  expect(mockFn).toHaveBeenCalledWith(['user1', 'user2']);
+});
+
+it('should handle uncheck all in checkedHeaderRenderer', () => {
+  const mockFn = jest.fn();
+  const wrapper = mount(
+    <ThemeProvider theme={theme}>
+      <Table
+        getMessages={R.identity}
+        data={[
+          {
+            userId: 'user1',
+            email: 'email1',
+            userName: 'userName1',
+          },
+          {
+            userId: 'user2',
+            email: 'email2',
+            userName: 'userName2',
+          },
+        ]}
+        checkedList={['user1', 'user2']}
+        onCheckedListChange={mockFn}
+        onEditClick={() => {}}
+      />
+    </ThemeProvider>,
+  );
+
+  const table = wrapper.find(Table).getNode();
+  const input = table.checkedHeaderRenderer();
+
+  expect(input).toMatchSnapshot();
+
+  // Uncheck all
+  input.props.onChange();
+  expect(mockFn).toHaveBeenCalledWith([]);
+});
+
+it('should handle ckeck item in checkedCellRenderer', () => {
+  const mockFn = jest.fn();
+  const wrapper = mount(
+    <ThemeProvider theme={theme}>
+      <Table
+        getMessages={R.identity}
+        data={[
+          {
+            userId: 'user1',
+            email: 'email1',
+            userName: 'userName1',
+          },
+          {
+            userId: 'user2',
+            email: 'email2',
+            userName: 'userName2',
+          },
+        ]}
+        checkedList={[]}
+        onCheckedListChange={mockFn}
+        onEditClick={() => {}}
+      />
+    </ThemeProvider>,
+  );
+
+  const table = wrapper.find(Table).getNode();
+  const input = table.checkedCellRenderer({
+    rowData: {
+      userId: 'user1',
+      email: 'email1',
+      userName: 'userName1',
+    },
+  });
+
+  expect(input).toMatchSnapshot();
+
+  // Uncheck all
+  input.props.onChange();
+  expect(mockFn).toHaveBeenCalledWith(['user1']);
+});
+
+it('should handle unckeck item in checkedCellRenderer', () => {
+  const mockFn = jest.fn();
+  const wrapper = mount(
+    <ThemeProvider theme={theme}>
+      <Table
+        getMessages={R.identity}
+        data={[
+          {
+            userId: 'user1',
+            email: 'email1',
+            userName: 'userName1',
+          },
+          {
+            userId: 'user2',
+            email: 'email2',
+            userName: 'userName2',
+          },
+        ]}
+        checkedList={['user1']}
+        onCheckedListChange={mockFn}
+        onEditClick={() => {}}
+      />
+    </ThemeProvider>,
+  );
+
+  const table = wrapper.find(Table).getNode();
+  const input = table.checkedCellRenderer({
+    rowData: {
+      userId: 'user1',
+      email: 'email1',
+      userName: 'userName1',
+    },
+  });
+
+  expect(input).toMatchSnapshot();
+
+  // Uncheck all
+  input.props.onChange();
+  expect(mockFn).toHaveBeenCalledWith([]);
+});
+
+it('should handle onEditClick in editCellRenderer', () => {
+  const mockFn = jest.fn();
+  const wrapper = mount(
+    <ThemeProvider theme={theme}>
+      <Table
+        getMessages={R.identity}
+        data={[]}
+        checkedList={[]}
+        onCheckedListChange={() => {}}
+        onEditClick={mockFn}
+      />
+    </ThemeProvider>,
+  );
+
+  const table = wrapper.find(Table).getNode();
+  const icon = table.editCellRenderer({
+    rowData: {
+      userId: 'user1',
+      email: 'email1',
+      userName: 'userName1',
+    },
+  });
+
+  expect(icon).toMatchSnapshot();
+
+  // Uncheck all
+  icon.props.onClick();
+  expect(mockFn).toHaveBeenCalledWith('user1');
+});
+
+it('should handle noRowsRenderer', () => {
+  const wrapper = mount(
+    <ThemeProvider theme={theme}>
+      <Table
+        getMessages={R.identity}
+        data={[]}
+        checkedList={[]}
+        onCheckedListChange={() => {}}
+        onEditClick={() => {}}
+      />
+    </ThemeProvider>,
+  );
+
+  const table = wrapper.find(Table).getNode();
+  const render = table.noRowsRenderer();
+
+  expect(render).toMatchSnapshot();
+});
+
+it('should handle rowGetter', () => {
+  const wrapper = mount(
+    <ThemeProvider theme={theme}>
+      <Table
+        getMessages={R.identity}
+        data={[
+          {
+            userId: 'user1',
+            email: 'email1',
+            userName: 'userName1',
+          },
+          {
+            userId: 'user2',
+            email: 'email2',
+            userName: 'userName2',
+          },
+        ]}
+        checkedList={[]}
+        onCheckedListChange={() => {}}
+        onEditClick={() => {}}
+      />
+    </ThemeProvider>,
+  );
+
+  const table = wrapper.find(Table).getNode();
+
+  expect(table.rowGetter({ index: 0 })).toEqual({
+    userId: 'user1',
+    email: 'email1',
+    userName: 'userName1',
+  });
 });

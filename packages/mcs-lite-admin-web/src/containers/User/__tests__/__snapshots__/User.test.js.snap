@@ -1,5 +1,136 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`should render with ADD_USER_TYPE_BATCH form - batch 1`] = `
+<FormGroup>
+  <Label
+    htmlFor="uploadCSV"
+    required={true}
+  >
+    uploadCSV
+  </Label>
+  <styled.div>
+    <Input
+      accept=".csv,text/csv"
+      focus={false}
+      id="csv"
+      kind="primary"
+      onChange={[Function]}
+      required={true}
+      type="file"
+    />
+    <InputGroup>
+      <Input
+        focus={false}
+        kind="primary"
+        onChange={[Function]}
+        placeholder="uploadCSV.placeholder"
+        readOnly={true}
+        type="text"
+        value=""
+      />
+      <Button
+        active={false}
+        block={false}
+        component="button"
+        disabled={false}
+        kind="primary"
+        onClick={[Function]}
+        round={false}
+        size="normal"
+        square={false}
+      >
+        uploadCSV.button
+      </Button>
+    </InputGroup>
+  </styled.div>
+</FormGroup>
+`;
+
+exports[`should render with ADD_USER_TYPE_BATCH form - one 1`] = `
+<FormGroup>
+  <Label
+    htmlFor="userName"
+    required={true}
+  >
+    userName
+  </Label>
+  <Input
+    focus={false}
+    id="userName"
+    kind="primary"
+    onChange={[Function]}
+    placeholder="userName.placeholder"
+    required={true}
+    type="text"
+    value=""
+  />
+  <Label
+    htmlFor="email"
+    required={true}
+  >
+    email
+  </Label>
+  <Input
+    focus={false}
+    id="email"
+    kind="primary"
+    onChange={[Function]}
+    placeholder="email.placeholder"
+    required={true}
+    type="email"
+    value=""
+  />
+  <Label
+    htmlFor="password"
+    required={true}
+  >
+    password
+  </Label>
+  <Input
+    focus={false}
+    id="password"
+    kind="primary"
+    onChange={[Function]}
+    placeholder="password.placeholder"
+    required={true}
+    type="password"
+    value=""
+  />
+</FormGroup>
+`;
+
+exports[`should render with delete footer - Add 1`] = `
+<styled.div>
+  <A
+    color="primary"
+    onClick={[Function]}
+  >
+    <IconAdd
+      size={18}
+    />
+    <div>
+      addUser
+    </div>
+  </A>
+</styled.div>
+`;
+
+exports[`should render with delete footer - Delete 1`] = `
+<styled.div>
+  <A
+    color="primary"
+    onClick={[Function]}
+  >
+    <IconDelete
+      size={18}
+    />
+    <div>
+      deleteUser
+    </div>
+  </A>
+</styled.div>
+`;
+
 exports[`should renders <User> correctly 1`] = `
 <div>
   <HelmetWrapper

@@ -1,8 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import R from 'ramda';
-import { componentFromStreamWithConfig } from 'recompose/componentFromStream';
-import { createEventHandlerWithConfig } from 'recompose/createEventHandler';
 import { Observable } from 'rxjs/Observable';
 import Helmet from 'react-helmet';
 import TabItem from 'mcs-lite-ui/lib/TabItem';
@@ -11,6 +9,10 @@ import isJSONValidator from 'validator/lib/isJSON';
 import DashboardTitle from '../../components/DashboardTitle';
 import DashboardDesc from '../../components/DashboardDesc';
 import DialogConfirm from '../../components/DialogConfirm';
+import {
+  componentFromStream,
+  createEventHandler,
+} from '../../utils/recomposeHelper';
 import {
   StyledButton,
   TabWrapper,
@@ -21,15 +23,6 @@ import {
 const TABS = ['db', 'oauth', 'rest', 'wot'];
 export const DEFAULT_TAB_VALUE = 'db';
 const OPTIONS = { mode: 'javascript', lineNumbers: true };
-
-const componentFromStream = componentFromStreamWithConfig({
-  fromESObservable: Observable.from,
-  toESObservable: stream => stream,
-});
-const createEventHandler = createEventHandlerWithConfig({
-  fromESObservable: Observable.from,
-  toESObservable: stream => stream,
-});
 
 const System = componentFromStream(props$ => {
   const {

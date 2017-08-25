@@ -19,7 +19,7 @@ export const TABLE_HEIGHT_OFFSET = 200;
  *
  * @author Michael Hsu
  */
-const StyledTable = styled(RVTable)`
+export const StyledTable = styled(RVTable)`
   > * {
     outline: none;
   }
@@ -42,12 +42,12 @@ const StyledTable = styled(RVTable)`
   }
 `;
 
-const StyledIcon = styled(IconSetting)`
+export const StyledIcon = styled(IconSetting)`
   color: ${props => props.theme.color.primary};
   cursor: pointer;
 `;
 
-const NoRowWrapper = styled.div`
+export const NoRowWrapper = styled.div`
   text-align: center;
   padding-top: 40px;
 `;
@@ -70,8 +70,7 @@ class Table extends React.PureComponent {
   };
 
   checkedHeaderRenderer = () => {
-    const { checkedList, onCheckedListChange } = this.props;
-    const { data } = this.props;
+    const { data, checkedList, onCheckedListChange } = this.props;
 
     const isEmpty = R.isEmpty(checkedList);
     const isAllChecked = R.allPass([R.equals(data.length), R.lt(0)])(
@@ -111,6 +110,8 @@ class Table extends React.PureComponent {
   noRowsRenderer = () =>
     <NoRowWrapper>{this.props.getMessages('noRows')}</NoRowWrapper>;
 
+  rowGetter = ({ index }) => this.props.data[index];
+
   render() {
     const { data, getMessages: t } = this.props;
     const {
@@ -118,6 +119,7 @@ class Table extends React.PureComponent {
       checkedCellRenderer,
       editCellRenderer,
       noRowsRenderer,
+      rowGetter,
     } = this;
 
     return (
@@ -131,7 +133,7 @@ class Table extends React.PureComponent {
                 headerHeight={30}
                 rowHeight={50}
                 rowCount={data.length}
-                rowGetter={({ index }) => data[index]}
+                rowGetter={rowGetter}
                 noRowsRenderer={noRowsRenderer}
               >
                 <Column

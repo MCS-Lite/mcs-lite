@@ -45,3 +45,19 @@ it('should return correctly state', () => {
   expect(wrapper.state('email')).toBe('evenchange4@gmail.com');
   expect(wrapper.state('password')).toBe('password');
 });
+
+it('should render error message and style', () => {
+  const wrapper = shallow(
+    <Signup getMessages={R.identity} tryEnter={() => {}} />,
+  );
+
+  // Before Change
+  expect(wrapper.state('password')).toBe('');
+  expect(wrapper.state('password2')).toBe('');
+
+  // Password error
+  wrapper.setState({ password: '123' });
+  wrapper.setState({ password2: '1234' });
+
+  expect(toJson(wrapper)).toMatchSnapshot();
+});

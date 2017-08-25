@@ -20,6 +20,7 @@ it('should render components correctly', () => {
         <StyledButton />
         <TabWrapper />
         <StyledLoadableCodeMirror />
+        <StyledLoadableCodeMirror error />
       </div>
     </ThemeProvider>,
   );
