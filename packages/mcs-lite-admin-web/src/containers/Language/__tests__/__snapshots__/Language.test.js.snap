@@ -1,60 +1,158 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should renders <Language> correctly 1`] = `
-<div>
-  <HelmetWrapper
-    encodeSpecialCharacters={true}
-  >
-    <title>
-      switch
-    </title>
-  </HelmetWrapper>
-  <DashboardTitle
-    title="switch"
-  />
-  <DashboardDesc>
-    select
-  </DashboardDesc>
-  <styled.div>
-    <Link
-      onlyActiveOnIndex={false}
-      style={Object {}}
-      to={[Function]}
+.c1 {
+  margin: 0;
+  font-weight: normal;
+  font-size: 1.15rem;
+  color: currentColor;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-between;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: space-between;
+  justify-content: space-between;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #D1D2D3;
+}
+
+.c3 {
+  margin: 0;
+  font-size: 1rem;
+  color: currentColor;
+}
+
+.c2 {
+  margin-bottom: 20px;
+}
+
+.c4 > * {
+  margin-right: 10px;
+}
+
+.c4 input {
+  margin-right: 5px;
+  pointer-events: none;
+}
+
+.c4 * {
+  color: #999A94;
+  text-decoration: none;
+}
+
+<Language
+  getMessages={[Function]}
+  locale="en"
+>
+  <div>
+    <HelmetWrapper
+      encodeSpecialCharacters={true}
+    />
+    <DashboardTitle
+      title="switch"
     >
-      <input
-        checked={true}
-        readOnly={true}
-        type="radio"
-        value="en"
-      />
-      English
-    </Link>
-    <Link
-      onlyActiveOnIndex={false}
-      style={Object {}}
-      to={[Function]}
-    >
-      <input
-        checked={false}
-        readOnly={true}
-        type="radio"
-        value="zh-TW"
-      />
-      繁體中文
-    </Link>
-    <Link
-      onlyActiveOnIndex={false}
-      style={Object {}}
-      to={[Function]}
-    >
-      <input
-        checked={false}
-        readOnly={true}
-        type="radio"
-        value="zh-CN"
-      />
-      简体中文
-    </Link>
-  </styled.div>
-</div>
+      <styled.div>
+        <div
+          className="c0"
+        >
+          <Heading
+            level={4}
+          >
+            <H
+              className="c1"
+              level={4}
+            >
+              <h4
+                className="c1"
+              >
+                switch
+              </h4>
+            </H>
+          </Heading>
+        </div>
+      </styled.div>
+    </DashboardTitle>
+    <DashboardDesc>
+      <P
+        className="c2"
+      >
+        <Component
+          className="c2 c3"
+        >
+          <p
+            className="c2 c3"
+          >
+            select
+          </p>
+        </Component>
+      </P>
+    </DashboardDesc>
+    <styled.div>
+      <div
+        className="c4"
+      >
+        <Link
+          onlyActiveOnIndex={false}
+          style={Object {}}
+          to={[Function]}
+        >
+          <a
+            onClick={[Function]}
+            style={Object {}}
+          >
+            <input
+              checked={true}
+              readOnly={true}
+              type="radio"
+              value="en"
+            />
+            English
+          </a>
+        </Link>
+        <Link
+          onlyActiveOnIndex={false}
+          style={Object {}}
+          to={[Function]}
+        >
+          <a
+            onClick={[Function]}
+            style={Object {}}
+          >
+            <input
+              checked={false}
+              readOnly={true}
+              type="radio"
+              value="zh-TW"
+            />
+            繁體中文
+          </a>
+        </Link>
+        <Link
+          onlyActiveOnIndex={false}
+          style={Object {}}
+          to={[Function]}
+        >
+          <a
+            onClick={[Function]}
+            style={Object {}}
+          >
+            <input
+              checked={false}
+              readOnly={true}
+              type="radio"
+              value="zh-CN"
+            />
+            简体中文
+          </a>
+        </Link>
+      </div>
+    </styled.div>
+  </div>
+</Language>
 `;

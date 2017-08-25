@@ -86,3 +86,95 @@ exports[`should renders <System> correctly 1`] = `
   </Styled(Button)>
 </div>
 `;
+
+exports[`should renders <System> correctly with json format error 1`] = `
+<div>
+  <HelmetWrapper
+    encodeSpecialCharacters={true}
+  >
+    <title>
+      systemManagement
+    </title>
+  </HelmetWrapper>
+  <InjectIntl(withPropsOnChange(DialogConfirm))
+    onCancel={[Function]}
+    onSubmit={[Function]}
+    show={false}
+  >
+    reset.confirm
+  </InjectIntl(withPropsOnChange(DialogConfirm))>
+  <DashboardTitle
+    title="systemManagement"
+  >
+    <A
+      color="primary"
+      onClick={[Function]}
+    >
+      reset
+    </A>
+  </DashboardTitle>
+  <DashboardDesc>
+    description
+  </DashboardDesc>
+  <styled.div>
+    <TabItem
+      active={true}
+      color="primary"
+      onClick={[Function]}
+      value="db"
+    >
+      db
+      .json
+    </TabItem>
+    <TabItem
+      active={false}
+      color="primary"
+      onClick={[Function]}
+      value="oauth"
+    >
+      oauth
+      .json
+    </TabItem>
+    <TabItem
+      active={false}
+      color="primary"
+      onClick={[Function]}
+      value="rest"
+    >
+      rest
+      .json
+    </TabItem>
+    <TabItem
+      active={false}
+      color="primary"
+      onClick={[Function]}
+      value="wot"
+    >
+      wot
+      .json
+    </TabItem>
+  </styled.div>
+  <Styled(LoadableComponent)
+    error={true}
+    onChange={[Function]}
+    options={
+      Object {
+        "lineNumbers": true,
+        "mode": "javascript",
+      }
+    }
+    value="123"
+  />
+  <Styled(P)
+    color="error"
+  >
+    jsonError
+  </Styled(P)>
+  <Styled(Button)
+    disabled={true}
+    onClick={false}
+  >
+    save
+  </Styled(Button)>
+</div>
+`;

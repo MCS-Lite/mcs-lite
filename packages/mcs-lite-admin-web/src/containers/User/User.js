@@ -1,8 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import R from 'ramda';
-import { componentFromStreamWithConfig } from 'recompose/componentFromStream';
-import { createEventHandlerWithConfig } from 'recompose/createEventHandler';
 import { Observable } from 'rxjs/Observable';
 import Helmet from 'react-helmet';
 import InputGroup from 'mcs-lite-ui/lib/InputGroup';
@@ -31,20 +29,15 @@ import {
   InputFileWrapper,
 } from './styled-components';
 import Table from './Table';
+import {
+  componentFromStream,
+  createEventHandler,
+} from '../../utils/recomposeHelper';
 
-const componentFromStream = componentFromStreamWithConfig({
-  fromESObservable: Observable.from,
-  toESObservable: stream => stream,
-});
-const createEventHandler = createEventHandlerWithConfig({
-  fromESObservable: Observable.from,
-  toESObservable: stream => stream,
-});
-
-const CHANGE_PASSWORD = 'changePassword';
-const ACCOUNT_STATUS = 'accountStatus';
-const ADD_USER_TYPE_ONE = 'one';
-const ADD_USER_TYPE_BATCH = 'batch';
+export const CHANGE_PASSWORD = 'changePassword';
+export const ACCOUNT_STATUS = 'accountStatus';
+export const ADD_USER_TYPE_ONE = 'one';
+export const ADD_USER_TYPE_BATCH = 'batch';
 
 const User = componentFromStream(props$ => {
   const {

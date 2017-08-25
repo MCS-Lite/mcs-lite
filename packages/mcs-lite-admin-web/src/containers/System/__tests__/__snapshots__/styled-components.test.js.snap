@@ -38,6 +38,27 @@ Array [
   z-index: auto;
 }
 
+.c4 > .CodeMirror {
+  height: auto;
+  border: 1px solid #F5364E;
+  border-radius: 3px;
+  color: #353630;
+}
+
+.c4 .CodeMirror-linenumber {
+  text-align: center;
+  color: #D1D2D3;
+  background-color: #FAFAFA;
+}
+
+.c4 .CodeMirror-line {
+  padding-left: 10px;
+}
+
+.c4 .CodeMirror-gutters {
+  z-index: auto;
+}
+
 <div>
     <Styled(Button)>
         <Button
@@ -60,6 +81,30 @@ Array [
     <Styled(LoadableComponent)>
         <LoadableComponent
             className="c2"
+        >
+            <loading
+                error={null}
+                isLoading={true}
+                pastDelay={false}
+                timedOut={false}
+            >
+                <Styled(P)
+                    color="primary"
+                >
+                    <P
+                        className="c3"
+                        color="primary"
+                    />
+                </Styled(P)>
+            </loading>
+        </LoadableComponent>
+    </Styled(LoadableComponent)>
+    <Styled(LoadableComponent)
+        error={true}
+    >
+        <LoadableComponent
+            className="c4"
+            error={true}
         >
             <loading
                 error={null}

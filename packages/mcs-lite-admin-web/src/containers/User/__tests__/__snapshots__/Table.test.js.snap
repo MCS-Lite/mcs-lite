@@ -1,5 +1,50 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`should handle check all in checkedHeaderRenderer 1`] = `
+<input
+  checked={false}
+  onChange={[Function]}
+  type="checkbox"
+/>
+`;
+
+exports[`should handle ckeck item in checkedCellRenderer 1`] = `
+<input
+  checked={false}
+  onChange={[Function]}
+  type="checkbox"
+/>
+`;
+
+exports[`should handle noRowsRenderer 1`] = `
+<styled.div>
+  noRows
+</styled.div>
+`;
+
+exports[`should handle onEditClick in editCellRenderer 1`] = `
+<Styled(IconSetting)
+  onClick={[Function]}
+  size={18}
+/>
+`;
+
+exports[`should handle uncheck all in checkedHeaderRenderer 1`] = `
+<input
+  checked={true}
+  onChange={[Function]}
+  type="checkbox"
+/>
+`;
+
+exports[`should handle unckeck item in checkedCellRenderer 1`] = `
+<input
+  checked={true}
+  onChange={[Function]}
+  type="checkbox"
+/>
+`;
+
 exports[`should renders <Table> with data 1`] = `
 .c0 > * {
   outline: none;
@@ -28,74 +73,41 @@ exports[`should renders <Table> with data 1`] = `
   border-bottom: 1px solid #F1F2F7;
 }
 
-<ThemeProvider
-  theme={
-    Object {
-      "base": Object {
-        "bodyBackgroundColor": "#F1F2F7",
-        "bodyColor": "#353630",
-        "fontSize": "13px",
-        "lineHeight": 1.5,
+<Table
+  checkedList={Array []}
+  data={
+    Array [
+      Object {
+        "email": "email1",
+        "userId": "user1",
+        "userName": "userName1",
       },
-      "color": Object {
-        "black": "#353630",
-        "default": "#FAFAFA",
-        "error": "#F5364E",
-        "grayBase": "#999A94",
-        "grayDark": "#D1D2D3",
-        "grayLight": "#FAFAFA",
-        "primary": "#00A1DE",
-        "success": "#69BE28",
-        "warning": "#F39A1E",
-        "white": "#FFFFFF",
+      Object {
+        "email": "email2",
+        "userId": "user2",
+        "userName": "userName2",
       },
-      "fontSize": Object {
-        "h1": "2.46rem",
-        "h2": "1.69rem",
-        "h3": "1.38rem",
-        "h4": "1.15rem",
-        "h5": "1rem",
-        "h6": "1rem",
-        "p": "1rem",
-        "small": "0.923rem",
-      },
-      "height": Object {
-        "header": "50px",
-        "normal": "32px",
-        "small": "20px",
-      },
-      "mobile": Object {
-        "headerHeight": "56px",
-        "maxWidth": "800px",
-      },
-    }
+    ]
   }
+  getMessages={[Function]}
+  onCheckedListChange={[Function]}
+  onEditClick={[Function]}
 >
-  <Table
-    checkedList={Array []}
-    data={
-      Array [
-        Object {
-          "email": "email1",
-          "userId": "user1",
-          "userName": "userName1",
-        },
-        Object {
-          "email": "email2",
-          "userId": "user2",
-          "userName": "userName2",
-        },
-      ]
-    }
-    getMessages={[Function]}
-    onCheckedListChange={[Function]}
-    onEditClick={[Function]}
-  >
-    <WindowScroller>
-      <AutoSizer
-        disableHeight={true}
+  <WindowScroller>
+    <AutoSizer
+      disableHeight={true}
+    >
+      <Styled(Table)
+        headerHeight={30}
+        height={-100}
+        noRowsRenderer={[Function]}
+        rowCount={2}
+        rowGetter={[Function]}
+        rowHeight={50}
+        width={100}
       >
-        <Styled(Table)
+        <Table
+          className="c0"
           headerHeight={30}
           height={-100}
           noRowsRenderer={[Function]}
@@ -104,55 +116,128 @@ exports[`should renders <Table> with data 1`] = `
           rowHeight={50}
           width={100}
         >
-          <Table
+          <div>
+            <Column
+              cellRenderer={[Function]}
+              dataKey="userId"
+              flexShrink={0}
+              headerRenderer={[Function]}
+              width={14}
+            >
+              <div />
+            </Column>
+            <Column
+              dataKey="userName"
+              flexGrow={1}
+              label="name"
+              width={300}
+            >
+              <div />
+            </Column>
+            <Column
+              dataKey="email"
+              flexGrow={1}
+              label="email"
+              width={300}
+            >
+              <div />
+            </Column>
+            <Column
+              cellRenderer={[Function]}
+              dataKey="userId"
+              flexShrink={0}
+              width={40}
+            >
+              <div />
+            </Column>
+          </div>
+        </Table>
+      </Styled(Table)>
+    </AutoSizer>
+  </WindowScroller>
+</Table>
+`;
+
+exports[`should renders styled-components 1`] = `
+Array [
+  .c1 > * {
+  outline: none;
+}
+
+.c1 .ReactVirtualized__Table__headerRow {
+  background-color: #FAFAFA;
+  color: #999A94;
+  font-weight: normal;
+  border-bottom: 1px solid #F1F2F7;
+  padding-right: 0 !important;
+}
+
+.c1 .ReactVirtualized__Table__headerColumn {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c1 .ReactVirtualized__Table__row {
+  border-bottom: 1px solid #F1F2F7;
+}
+
+.c0 {
+  color: #00A1DE;
+  cursor: pointer;
+}
+
+.c2 {
+  text-align: center;
+  padding-top: 40px;
+}
+
+<div>
+    <Styled(IconSetting)>
+        <IconSetting
             className="c0"
-            headerHeight={30}
-            height={-100}
-            noRowsRenderer={[Function]}
-            rowCount={2}
-            rowGetter={[Function]}
-            rowHeight={50}
-            width={100}
-          >
-            <div>
-              <Column
-                cellRenderer={[Function]}
-                dataKey="userId"
-                flexShrink={0}
-                headerRenderer={[Function]}
-                width={14}
-              >
-                <div />
-              </Column>
-              <Column
-                dataKey="userName"
-                flexGrow={1}
-                label="name"
-                width={300}
-              >
-                <div />
-              </Column>
-              <Column
-                dataKey="email"
-                flexGrow={1}
-                label="email"
-                width={300}
-              >
-                <div />
-              </Column>
-              <Column
-                cellRenderer={[Function]}
-                dataKey="userId"
-                flexShrink={0}
-                width={40}
-              >
-                <div />
-              </Column>
-            </div>
-          </Table>
-        </Styled(Table)>
-      </AutoSizer>
-    </WindowScroller>
-  </Table>
-</ThemeProvider>
+            size="1em"
+        >
+            <svg
+                className="c0"
+                fill="currentColor"
+                height="1em"
+                preserveAspectRatio="xMidYMid meet"
+                viewBox="0 0 24 24"
+                width="1em"
+            >
+                <path
+                    d="M8.8 11.1c-1.4 0-2.6-1.2-2.6-2.6s1.2-2.6 2.6-2.6 2.6 1.2 2.6 2.6-1.1 2.6-2.6 2.6zm5.6-1.9c0-.2.1-.5.1-.7s0-.5-.1-.8L16 6.5c.1-.1.2-.3.1-.5l-1.5-2.6c-.1-.2-.3-.2-.5-.2l-1.8.8c-.4-.3-.8-.5-1.3-.7l-.3-2c0-.2-.2-.3-.4-.3h-3c-.1 0-.3.1-.3.3l-.3 2c-.5.2-.9.4-1.3.7l-1.8-.7c-.2-.1-.4 0-.5.2L1.6 6c-.1.2-.1.4.1.5l1.6 1.2c0 .3-.1.5-.1.8s0 .5.1.7l-1.6 1.2c-.1.1-.2.3-.1.5l1.5 2.6c.1.2.3.2.5.2l1.8-.7c.4.3.8.6 1.3.7l.3 2c0 .2.2.3.3.3h3c.2 0 .3-.1.4-.3l.3-2c.5-.2.9-.4 1.3-.7l1.9.8c.2.1.4 0 .5-.2l1.5-2.6c.1-.2.1-.4-.1-.5l-1.7-1.3zm2.5 10.6c-1 0-1.8-.8-1.8-1.8s.8-1.8 1.8-1.8 1.8.8 1.8 1.8-.9 1.8-1.8 1.8zm3.7-1.3v-1l1.1-.8c.1-.1.1-.2.1-.3l-1-1.7c-.1-.1-.2-.2-.3-.1l-1.4.4c-.3-.2-.5-.4-.8-.5l-.2-1.3c0-.1-.1-.2-.2-.2h-2c-.1 0-.2.1-.2.2l-.2 1.3c-.3.1-.6.3-.8.5l-1.2-.5c-.1 0-.2 0-.3.1l-1 1.7c-.1.1 0 .2.1.3l1.1.8v1l-1.1.8c-.3.2-.3.3-.3.4l1 1.7c.1.1.2.1.3.1l1.2-.5c.3.2.5.4.8.5l.2 1.3c0 .1.1.2.2.2h2c.1 0 .2-.1.2-.2l.2-1.3c.3-.1.6-.3.8-.5l1.2.5c.1 0 .2 0 .3-.1l1-1.7c.1-.1 0-.2-.1-.3l-.7-.8z"
+                />
+            </svg>
+        </IconSetting>
+    </Styled(IconSetting)>
+    <Styled(Table)>
+        <Table
+            className="c1"
+        >
+            <div />
+        </Table>
+    </Styled(Table)>
+    <styled.div>
+        <div
+            className="c2"
+        />
+    </styled.div>
+</div>,
+  <div />,
+  .c0 {
+  text-align: center;
+  padding-top: 40px;
+}
+
+<div
+    className="c0"
+/>,
+]
 `;
