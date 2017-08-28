@@ -11,6 +11,7 @@ import Table, {
   NoRowWrapper,
 } from '../Table';
 
+jest.mock('mcs-lite-icon/lib/IconEdit');
 jest.mock('react-virtualized', () => ({
   WindowScroller: ({ children }) => children({ height: 100 }),
   AutoSizer: ({ children }) => children({ width: 100 }),

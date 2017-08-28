@@ -8,7 +8,7 @@ import {
   Table as RVTable,
 } from 'react-virtualized';
 import styled from 'styled-components';
-import IconSetting from 'mcs-lite-icon/lib/IconSetting';
+import IconEdit from 'mcs-lite-icon/lib/IconEdit';
 import 'react-virtualized/styles.css'; // only needs to be imported once
 
 export const TABLE_HEIGHT_OFFSET = 200;
@@ -42,7 +42,7 @@ export const StyledTable = styled(RVTable)`
   }
 `;
 
-export const StyledIcon = styled(IconSetting)`
+export const StyledIcon = styled(IconEdit)`
   color: ${props => props.theme.color.primary};
   cursor: pointer;
 `;
