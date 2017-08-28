@@ -7,6 +7,7 @@ import {
   Column,
   Table as RVTable,
 } from 'react-virtualized';
+import P from 'mcs-lite-ui/lib/P';
 import styled from 'styled-components';
 import IconEdit from 'mcs-lite-icon/lib/IconEdit';
 import 'react-virtualized/styles.css'; // only needs to be imported once
@@ -98,6 +99,15 @@ class Table extends React.PureComponent {
     return <input type="checkbox" checked={isChecked} onChange={onChange} />;
   };
 
+  userNameCellRenderer = ({ rowData }) => {
+    const { userName, isActive } = rowData;
+    return <P color={isActive ? 'black' : 'grayDark'}>{userName}</P>;
+  };
+  emailCellRenderer = ({ rowData }) => {
+    const { email, isActive } = rowData;
+    return <P color={isActive ? 'black' : 'grayDark'}>{email}</P>;
+  };
+
   editCellRenderer = ({ rowData }) => {
     const { userId } = rowData;
 
@@ -117,6 +127,8 @@ class Table extends React.PureComponent {
     const {
       checkedHeaderRenderer,
       checkedCellRenderer,
+      userNameCellRenderer,
+      emailCellRenderer,
       editCellRenderer,
       noRowsRenderer,
       rowGetter,
@@ -146,12 +158,14 @@ class Table extends React.PureComponent {
                 <Column
                   label={t('name')}
                   dataKey="userName"
+                  cellRenderer={userNameCellRenderer}
                   width={300}
                   flexGrow={1}
                 />
                 <Column
                   label={t('email')}
                   dataKey="email"
+                  cellRenderer={emailCellRenderer}
                   width={300}
                   flexGrow={1}
                 />

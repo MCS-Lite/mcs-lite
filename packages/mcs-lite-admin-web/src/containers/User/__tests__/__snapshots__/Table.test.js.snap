@@ -16,6 +16,14 @@ exports[`should handle ckeck item in checkedCellRenderer 1`] = `
 />
 `;
 
+exports[`should handle emailCellRenderer with isActive status 1`] = `
+<P
+  color="black"
+>
+  email1
+</P>
+`;
+
 exports[`should handle noRowsRenderer 1`] = `
 <styled.div>
   noRows
@@ -43,6 +51,14 @@ exports[`should handle unckeck item in checkedCellRenderer 1`] = `
   onChange={[Function]}
   type="checkbox"
 />
+`;
+
+exports[`should handle userNameCellRenderer 1`] = `
+<P
+  color="grayDark"
+>
+  userName1
+</P>
 `;
 
 exports[`should renders <Table> with data 1`] = `
@@ -127,6 +143,7 @@ exports[`should renders <Table> with data 1`] = `
               <div />
             </Column>
             <Column
+              cellRenderer={[Function]}
               dataKey="userName"
               flexGrow={1}
               label="name"
@@ -135,6 +152,7 @@ exports[`should renders <Table> with data 1`] = `
               <div />
             </Column>
             <Column
+              cellRenderer={[Function]}
               dataKey="email"
               flexGrow={1}
               label="email"

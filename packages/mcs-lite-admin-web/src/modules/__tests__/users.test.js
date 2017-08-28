@@ -42,6 +42,10 @@ describe('users - 2. Action Creators', () => {
     ).toMatchSnapshot();
   });
 
+  it('should return changeActiveById actions', () => {
+    expect(actions.changeActiveById('evenchange4', true)).toMatchSnapshot();
+  });
+
   it('should return deleteUsers actions', () => {
     expect(
       actions.deleteUsers('userIdList', 'successMessage'),
@@ -339,12 +343,19 @@ describe('users - 3. Cycle', () => {
       select: () => ({
         r: Observable.of({
           body: {},
+          request: {
+            url: '/api/users/124',
+            send: {
+              isActive: true,
+            },
+          },
         }),
       }),
     };
 
     const actionSink = {
-      x: uiActions.setLoading(),
+      w: uiActions.setLoading(),
+      x: actions.changeActiveById('124', true),
       y: uiActions.addToast({ kind: 'success', children: 'successMessage' }),
       z: uiActions.setLoaded(),
     };
@@ -368,7 +379,7 @@ describe('users - 3. Cycle', () => {
       HTTP:   { '----r----|': httpSource },
     }, {
       HTTP:   { 'r--------|': httpSink },
-      ACTION: { 'x---(yz)-|': actionSink },
+      ACTION: { 'w---(xyz)|': actionSink },
     }, cycles.putIsActiveByIdCycle, done);
   });
 });
@@ -392,6 +403,78 @@ describe('users - 4. Reducer', () => {
       type: constants.SET_USER,
       payload: 0,
     });
+    expect(state).toMatchSnapshot();
+  });
+
+  it('should handle CHANGE_ACTIVE_BY_ID', () => {
+    const state = reducer(
+      [
+        {
+          userId: 0,
+          isActive: true,
+        },
+        {
+          userId: 1,
+          isActive: true,
+        },
+        {
+          userId: 2,
+          isActive: false,
+        },
+      ],
+      {
+        type: constants.CHANGE_ACTIVE_BY_ID,
+        payload: { userId: 1, isActive: false },
+      },
+    );
+    expect(state).toMatchSnapshot();
+  });
+
+  it('should handle REMOVE_USERS_BY_ID with single userId [1]', () => {
+    const state = reducer(
+      [
+        {
+          userId: 0,
+          isActive: true,
+        },
+        {
+          userId: 1,
+          isActive: true,
+        },
+        {
+          userId: 2,
+          isActive: false,
+        },
+      ],
+      {
+        type: constants.REMOVE_USERS_BY_ID,
+        payload: [1],
+      },
+    );
+    expect(state).toMatchSnapshot();
+  });
+
+  it('should handle REMOVE_USERS_BY_ID with multiple userIds [0, 1]', () => {
+    const state = reducer(
+      [
+        {
+          userId: 0,
+          isActive: true,
+        },
+        {
+          userId: 1,
+          isActive: true,
+        },
+        {
+          userId: 2,
+          isActive: false,
+        },
+      ],
+      {
+        type: constants.REMOVE_USERS_BY_ID,
+        payload: [0, 1],
+      },
+    );
     expect(state).toMatchSnapshot();
   });
 
