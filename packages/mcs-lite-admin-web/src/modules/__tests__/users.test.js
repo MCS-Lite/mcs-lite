@@ -42,10 +42,18 @@ describe('users - 2. Action Creators', () => {
     ).toMatchSnapshot();
   });
 
+  it('should return changeActiveById actions', () => {
+    expect(actions.changeActiveById('evenchange4', true)).toMatchSnapshot();
+  });
+
   it('should return deleteUsers actions', () => {
     expect(
       actions.deleteUsers('userIdList', 'successMessage'),
     ).toMatchSnapshot();
+  });
+
+  it('should return removeUsersById actions', () => {
+    expect(actions.removeUsersById([1, 2, 3])).toMatchSnapshot();
   });
 
   it('should return clear actions', () => {
@@ -95,6 +103,54 @@ describe('users - 3. Cycle', () => {
     }, cycles.fetchUsersCycle, done);
   });
 
+  it('should emit fetchUsers when createUserByCSV in fetchUsersCycle', done => {
+    const stateSource = {
+      s: { auth: { access_token: 'faketoken123' } },
+    };
+    const actionSource = {};
+    const httpSource = {
+      select: category => ({
+        a: category !== constants.FETCH_USERS
+          ? Observable.of({
+              request: {
+                category: constants.CREATE_USER_BY_CSV,
+              },
+            })
+          : Observable.empty(),
+        r: category === constants.FETCH_USERS
+          ? Observable.of({
+              body: [1, 2, 3],
+            })
+          : Observable.empty(),
+      }),
+    };
+
+    const actionSink = {
+      x: uiActions.setLoading(),
+      y: actions.setUsers([1, 2, 3]),
+      z: uiActions.setLoaded(),
+    };
+
+    const httpSink = {
+      r: {
+        url: '/api/users',
+        method: 'GET',
+        headers: { Authorization: 'Bearer faketoken123' },
+        category: constants.FETCH_USERS,
+      },
+    };
+
+    // prettier-ignore
+    assertSourcesSinks({
+      STATE:  { 's-------|': stateSource },
+      ACTION: { '--------|': actionSource },
+      HTTP:   { '-a--r---|': httpSource },
+    }, {
+      HTTP:   { '-r------|': httpSink },
+      ACTION: { '-x--(yz)|': actionSink },
+    }, cycles.fetchUsersCycle, done);
+  });
+
   it('should emit correct Sinks given Sources with deleteUsersCycle', done => {
     const stateSource = {
       s: { auth: { access_token: 'faketoken123' } },
@@ -106,14 +162,20 @@ describe('users - 3. Cycle', () => {
       select: () => ({
         r: Observable.of({
           body: {},
+          request: {
+            send: {
+              userId: [1, 2, 3],
+            },
+          },
         }),
       }),
     };
 
     const actionSink = {
-      x: uiActions.setLoading(),
+      w: uiActions.setLoading(),
+      x: actions.removeUsersById([1, 2, 3]),
       y: uiActions.addToast({ kind: 'success', children: 'message' }),
-      z: actions.fetchUsers(),
+      z: uiActions.setLoaded(),
     };
 
     const httpSink = {
@@ -128,12 +190,12 @@ describe('users - 3. Cycle', () => {
 
     // prettier-ignore
     assertSourcesSinks({
-      STATE:  { 's-------|': stateSource },
-      ACTION: { 'a-------|': actionSource },
-      HTTP:   { '----r---|': httpSource },
+      STATE:  { 's--------|': stateSource },
+      ACTION: { 'a--------|': actionSource },
+      HTTP:   { '----r----|': httpSource },
     }, {
-      HTTP:   { 'r-------|': httpSink },
-      ACTION: { 'x---(yz)|': actionSink },
+      HTTP:   { 'r--------|': httpSink },
+      ACTION: { 'w---(xyz)|': actionSink },
     }, cycles.deleteUsersCycle, done);
   });
 
@@ -199,8 +261,7 @@ describe('users - 3. Cycle', () => {
     };
 
     const actionSink = {
-      w: uiActions.setLoading(),
-      x: actions.fetchUsers(),
+      x: uiActions.setLoading(),
       y: uiActions.addToast({ kind: 'success', children: 'message' }),
       z: uiActions.setLoaded(),
     };
@@ -223,7 +284,7 @@ describe('users - 3. Cycle', () => {
       HTTP:   { '----r----|': httpSource },
     }, {
       HTTP:   { 'r--------|': httpSink },
-      ACTION: { 'w---(xyz)|': actionSink },
+      ACTION: { 'x---(yz)-|': actionSink },
     }, cycles.createUserByCSVCycle, done);
   });
 
@@ -282,12 +343,19 @@ describe('users - 3. Cycle', () => {
       select: () => ({
         r: Observable.of({
           body: {},
+          request: {
+            url: '/api/users/124',
+            send: {
+              isActive: true,
+            },
+          },
         }),
       }),
     };
 
     const actionSink = {
-      x: uiActions.setLoading(),
+      w: uiActions.setLoading(),
+      x: actions.changeActiveById('124', true),
       y: uiActions.addToast({ kind: 'success', children: 'successMessage' }),
       z: uiActions.setLoaded(),
     };
@@ -311,7 +379,7 @@ describe('users - 3. Cycle', () => {
       HTTP:   { '----r----|': httpSource },
     }, {
       HTTP:   { 'r--------|': httpSink },
-      ACTION: { 'x---(yz)-|': actionSink },
+      ACTION: { 'w---(xyz)|': actionSink },
     }, cycles.putIsActiveByIdCycle, done);
   });
 });
@@ -335,6 +403,78 @@ describe('users - 4. Reducer', () => {
       type: constants.SET_USER,
       payload: 0,
     });
+    expect(state).toMatchSnapshot();
+  });
+
+  it('should handle CHANGE_ACTIVE_BY_ID', () => {
+    const state = reducer(
+      [
+        {
+          userId: 0,
+          isActive: true,
+        },
+        {
+          userId: 1,
+          isActive: true,
+        },
+        {
+          userId: 2,
+          isActive: false,
+        },
+      ],
+      {
+        type: constants.CHANGE_ACTIVE_BY_ID,
+        payload: { userId: 1, isActive: false },
+      },
+    );
+    expect(state).toMatchSnapshot();
+  });
+
+  it('should handle REMOVE_USERS_BY_ID with single userId [1]', () => {
+    const state = reducer(
+      [
+        {
+          userId: 0,
+          isActive: true,
+        },
+        {
+          userId: 1,
+          isActive: true,
+        },
+        {
+          userId: 2,
+          isActive: false,
+        },
+      ],
+      {
+        type: constants.REMOVE_USERS_BY_ID,
+        payload: [1],
+      },
+    );
+    expect(state).toMatchSnapshot();
+  });
+
+  it('should handle REMOVE_USERS_BY_ID with multiple userIds [0, 1]', () => {
+    const state = reducer(
+      [
+        {
+          userId: 0,
+          isActive: true,
+        },
+        {
+          userId: 1,
+          isActive: true,
+        },
+        {
+          userId: 2,
+          isActive: false,
+        },
+      ],
+      {
+        type: constants.REMOVE_USERS_BY_ID,
+        payload: [0, 1],
+      },
+    );
     expect(state).toMatchSnapshot();
   });
 

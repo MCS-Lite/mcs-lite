@@ -11,6 +11,7 @@ import Table, {
   NoRowWrapper,
 } from '../Table';
 
+jest.mock('mcs-lite-icon/lib/IconEdit');
 jest.mock('react-virtualized', () => ({
   WindowScroller: ({ children }) => children({ height: 100 }),
   AutoSizer: ({ children }) => children({ width: 100 }),
@@ -260,6 +261,57 @@ it('should handle noRowsRenderer', () => {
 
   const table = wrapper.find(Table).getNode();
   const render = table.noRowsRenderer();
+
+  expect(render).toMatchSnapshot();
+});
+
+it('should handle userNameCellRenderer', () => {
+  const wrapper = mount(
+    <ThemeProvider theme={theme}>
+      <Table
+        getMessages={R.identity}
+        data={[]}
+        checkedList={[]}
+        onCheckedListChange={() => {}}
+        onEditClick={() => {}}
+      />
+    </ThemeProvider>,
+  );
+
+  const table = wrapper.find(Table).getNode();
+  const render = table.userNameCellRenderer({
+    rowData: {
+      userId: 'user1',
+      email: 'email1',
+      userName: 'userName1',
+    },
+  });
+
+  expect(render).toMatchSnapshot();
+});
+
+it('should handle emailCellRenderer with isActive status', () => {
+  const wrapper = mount(
+    <ThemeProvider theme={theme}>
+      <Table
+        getMessages={R.identity}
+        data={[]}
+        checkedList={[]}
+        onCheckedListChange={() => {}}
+        onEditClick={() => {}}
+      />
+    </ThemeProvider>,
+  );
+
+  const table = wrapper.find(Table).getNode();
+  const render = table.emailCellRenderer({
+    rowData: {
+      userId: 'user1',
+      email: 'email1',
+      userName: 'userName1',
+      isActive: true,
+    },
+  });
 
   expect(render).toMatchSnapshot();
 });

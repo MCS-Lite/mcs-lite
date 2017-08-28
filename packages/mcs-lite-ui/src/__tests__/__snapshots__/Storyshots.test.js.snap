@@ -8052,7 +8052,7 @@ exports[`Storyshots DomAlign API 1`] = `
 `;
 
 exports[`Storyshots FormGroup API 1`] = `
-.c2 {
+.c3 {
   box-sizing: border-box;
   width: 100%;
   border-width: 1px;
@@ -8068,37 +8068,37 @@ exports[`Storyshots FormGroup API 1`] = `
   box-shadow: none;
 }
 
-.c2:focus {
+.c3:focus {
   border-color: #00A1DE;
   box-shadow: 0 0 3px 0 rgba(0,161,222,0.5);
 }
 
-.c2::-webkit-input-placeholder {
+.c3::-webkit-input-placeholder {
   opacity: 1;
   color: #D1D2D3;
 }
 
-.c2::-moz-placeholder {
+.c3::-moz-placeholder {
   opacity: 1;
   color: #D1D2D3;
 }
 
-.c2:-ms-input-placeholder {
+.c3:-ms-input-placeholder {
   opacity: 1;
   color: #D1D2D3;
 }
 
-.c2::placeholder {
+.c3::placeholder {
   opacity: 1;
   color: #D1D2D3;
 }
 
-.c1::after {
+.c2::after {
   content: " *";
   color: #F5364E;
 }
 
-.c3::after {
+.c4::after {
   content: "";
   color: #F5364E;
 }
@@ -8107,12 +8107,12 @@ exports[`Storyshots FormGroup API 1`] = `
   width: 100%;
 }
 
-.c0 label {
+.c0 .c1 {
   display: block;
   padding-bottom: 5px;
 }
 
-.c0 * + label {
+.c0 * + .c1 {
   margin-top: 10px;
 }
 
@@ -8120,27 +8120,27 @@ exports[`Storyshots FormGroup API 1`] = `
   className="c0"
 >
   <label
-    className="c1"
+    className="c1 c2"
     htmlFor="1"
     required={true}
   >
     Label 1
   </label>
   <input
-    className="c2"
+    className="c3"
     id="1"
     kind="primary"
     placeholder="placeholder 1"
     type="text"
   />
   <label
-    className="c3"
+    className="c1 c4"
     htmlFor="2"
   >
     Label 2
   </label>
   <input
-    className="c2"
+    className="c3"
     id="2"
     kind="primary"
     placeholder="placeholder 2"
@@ -10053,13 +10053,22 @@ exports[`Storyshots InputRange With kind props 1`] = `
 `;
 
 exports[`Storyshots Label API 1`] = `
-.c0::after {
+.c1::after {
   content: " *";
   color: #F5364E;
 }
 
+.iKACBc .c0 {
+  display: block;
+  padding-bottom: 5px;
+}
+
+.iKACBc * + .c0 {
+  margin-top: 10px;
+}
+
 <label
-  className="c0"
+  className="c0 c1"
   required={true}
 >
   Email

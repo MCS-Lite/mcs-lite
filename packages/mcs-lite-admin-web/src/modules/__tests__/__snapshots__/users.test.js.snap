@@ -2,6 +2,7 @@
 
 exports[`users - 1. Constants should return constants 1`] = `
 Object {
+  "CHANGE_ACTIVE_BY_ID": "mcs-lite-admin-web/user/CHANGE_ACTIVE_BY_ID",
   "CHANGE_PASSWORD_BY_ID": "mcs-lite-admin-web/user/CHANGE_PASSWORD_BY_ID",
   "CLEAR": "mcs-lite-admin-web/user/CLEAR",
   "CREATE_USER": "mcs-lite-admin-web/user/CREATE_USER",
@@ -9,8 +10,19 @@ Object {
   "DELETE_USERS": "mcs-lite-admin-web/user/DELETE_USERS",
   "FETCH_USERS": "mcs-lite-admin-web/user/FETCH_USERS",
   "PUT_IS_ACTIVE_BY_ID": "mcs-lite-admin-web/user/PUT_IS_ACTIVE_BY_ID",
+  "REMOVE_USERS_BY_ID": "mcs-lite-admin-web/user/REMOVE_USERS_BY_ID",
   "SET_USER": "mcs-lite-admin-web/user/SET_USER",
   "SET_USERS": "mcs-lite-admin-web/user/SET_USERS",
+}
+`;
+
+exports[`users - 2. Action Creators should return changeActiveById actions 1`] = `
+Object {
+  "payload": Object {
+    "isActive": true,
+    "userId": "evenchange4",
+  },
+  "type": "mcs-lite-admin-web/user/CHANGE_ACTIVE_BY_ID",
 }
 `;
 
@@ -78,6 +90,17 @@ Object {
 }
 `;
 
+exports[`users - 2. Action Creators should return removeUsersById actions 1`] = `
+Object {
+  "payload": Array [
+    1,
+    2,
+    3,
+  ],
+  "type": "mcs-lite-admin-web/user/REMOVE_USERS_BY_ID",
+}
+`;
+
 exports[`users - 2. Action Creators should return setUser actions 1`] = `
 Object {
   "payload": "user",
@@ -92,7 +115,46 @@ Object {
 }
 `;
 
+exports[`users - 4. Reducer should handle CHANGE_ACTIVE_BY_ID 1`] = `
+Array [
+  Object {
+    "isActive": true,
+    "userId": 0,
+  },
+  Object {
+    "isActive": false,
+    "userId": 1,
+  },
+  Object {
+    "isActive": false,
+    "userId": 2,
+  },
+]
+`;
+
 exports[`users - 4. Reducer should handle CLEAR 1`] = `Array []`;
+
+exports[`users - 4. Reducer should handle REMOVE_USERS_BY_ID with multiple userIds [0, 1] 1`] = `
+Array [
+  Object {
+    "isActive": false,
+    "userId": 2,
+  },
+]
+`;
+
+exports[`users - 4. Reducer should handle REMOVE_USERS_BY_ID with single userId [1] 1`] = `
+Array [
+  Object {
+    "isActive": true,
+    "userId": 0,
+  },
+  Object {
+    "isActive": false,
+    "userId": 2,
+  },
+]
+`;
 
 exports[`users - 4. Reducer should handle SET_USER 1`] = `
 Array [

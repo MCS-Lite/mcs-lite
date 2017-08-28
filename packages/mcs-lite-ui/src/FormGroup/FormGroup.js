@@ -1,14 +1,15 @@
 import styled from 'styled-components';
+import Label from '../Label';
 
 const FormGroup = styled.div`
   width: 100%;
 
-  label {
+  ${Label} {
     display: block;
     padding-bottom: 5px;
   }
 
-  * + label {
+  * + ${Label} {
     margin-top: 10px;
   }
 `;
