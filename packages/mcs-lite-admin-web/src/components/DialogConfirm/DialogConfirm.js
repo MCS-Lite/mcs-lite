@@ -8,6 +8,10 @@ import Warning from '../../statics/images/img_warning.svg';
 const StyledDialog = styled(CommonDialog)`
   justify-content: center;
   z-index: 4; /* Fixed for codemirror line-number */
+
+  main {
+    text-align: center;
+  }
 `;
 
 const DialogConfirm = ({

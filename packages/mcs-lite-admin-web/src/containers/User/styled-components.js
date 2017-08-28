@@ -52,6 +52,7 @@ export const TabWrapper = styled.div`
 
 export const RadioWrapper = styled.div`
   display: flex;
+  align-items: center;
 
   > *:first-child {
     margin-right: 5px;
