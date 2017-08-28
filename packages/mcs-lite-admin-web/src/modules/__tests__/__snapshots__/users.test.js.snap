@@ -9,6 +9,7 @@ Object {
   "DELETE_USERS": "mcs-lite-admin-web/user/DELETE_USERS",
   "FETCH_USERS": "mcs-lite-admin-web/user/FETCH_USERS",
   "PUT_IS_ACTIVE_BY_ID": "mcs-lite-admin-web/user/PUT_IS_ACTIVE_BY_ID",
+  "REMOVE_USERS_BY_ID": "mcs-lite-admin-web/user/REMOVE_USERS_BY_ID",
   "SET_USER": "mcs-lite-admin-web/user/SET_USER",
   "SET_USERS": "mcs-lite-admin-web/user/SET_USERS",
 }
@@ -75,6 +76,17 @@ Object {
     "userId": "userId",
   },
   "type": "mcs-lite-admin-web/user/PUT_IS_ACTIVE_BY_ID",
+}
+`;
+
+exports[`users - 2. Action Creators should return removeUsersById actions 1`] = `
+Object {
+  "payload": Array [
+    1,
+    2,
+    3,
+  ],
+  "type": "mcs-lite-admin-web/user/REMOVE_USERS_BY_ID",
 }
 `;
 
