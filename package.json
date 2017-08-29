@@ -29,7 +29,7 @@
     "flow-bin": "^0.51.0",
     "lerna": "^2.1.0",
     "lerna-changelog": "^0.6.0",
-    "license-checker": "^13.0.3",
+    "license-checker": "^14.0.0",
     "prettier": "1.4.4",
     "stylelint": "^8.0.0"
   },
