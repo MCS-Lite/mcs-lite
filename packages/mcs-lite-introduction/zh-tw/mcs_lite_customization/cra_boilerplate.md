@@ -1,24 +1,25 @@
 # 使用 Create React App 打造專屬的使用者介面
 
-MCS Lite 擁抱開源，您可以基於我們所提供的模組以及 Facebook 的 React 進行開發，在這篇教學中，會從建立專案開始經過簡易幾個步驟後，最終透過 Websocket 與 MCS Lite 進行雙向構通。過程中主要將會提到：
+MCS Lite 擁抱開源，您可以基於我們所提供的模組以及 Facebook 的 React 進行開發，在這篇教學中，會從建立專案開始經過簡易幾個步驟後，最終透過 WebSocket 與 MCS Lite 進行雙向溝通。過程中主要將會提到：
+
 1.   建立專案
 2.   使用 MCS Lite 模組
 3.   客製化主題
-4.   Websocket 連線配置
+4.   WebSocket 連線配置
 
 我們也額外提供 [cra-boilerplate](https://github.com/MCS-Lite/cra-boilerplate) 做為本篇教學的目標，其涵蓋本篇所有完整的範例程式碼，您也可以下載直接使用。
 
-> CRA 名稱為 create-react-app 縮寫。
+> CRA 為 create-react-app 縮寫。
 
 ## 前置作業
 下載 Node.js 以及套件管理系統：
 
 *   Node v8.4.0
-*   NPM v5.3.0
-*   YARN v0.27.5
+*   npm v5.3.0
+*   Yarn v0.27.5
 
 ## 建立你的 React 專案
-首先我們推薦使用 Facebook 推出的 create-react-app 開源工具產生你的網頁應用程式（Web application）
+首先我們推薦使用 Facebook 推出的 create-react-app 開源工具產生你的網頁應用程式（Web application）。
 
 ```
 $ npm install -g create-react-app
@@ -41,7 +42,7 @@ $ create-react-app my-app
 }
 ```
 
-> 其中 styled-components 為 MCS Lite UI 套件的 dependency。
+> 其中 styled-components 為 mcs-lite-ui 套件的相依性套件（dependency）。
 
 也可以透過下列指令來安裝相依性套件。
 
@@ -106,9 +107,9 @@ function MCSSwitch({ datachannelId, values, send, onChange }) {
 }
 ```
 
-### Websocket 連線設定
+### WebSocket 連線設定
 
-接著使用到了 `mcs-lite-connect` 來建立與 MCS Lite 的 WebSocket 連線，其中 connectSocket 為 React Higher-Order Components 的設計，請參考 [mcs-lite-connect 文件 API](https://github.com/MCS-Lite/mcs-lite/tree/master/packages/mcs-lite-connect) 使用。
+接著使用到了 `mcs-lite-connect` 來建立與 MCS Lite 的 WebSocket 連線，其中 connectSocket 為 React Higher-Order Components 的設計，請參考 [mcs-lite-connect README -> API](https://github.com/MCS-Lite/mcs-lite/tree/master/packages/mcs-lite-connect) 的使用方法。
 
 ```js
 // src/components/MCSSwitch.js
