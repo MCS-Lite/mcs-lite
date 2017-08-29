@@ -2,6 +2,7 @@
 # We vendor our src directory, which is not needed for type-checking
 .*/node_modules/styled-components/.*
 .*/node_modules/polished/.*
+.*/node_modules/react-motion/.*
 .*/stylelint/.*.js
 .*/dangerfile.js
 .*/npm/.*

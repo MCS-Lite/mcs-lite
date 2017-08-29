@@ -40,7 +40,7 @@
     ]
   },
   "devDependencies": {
-    "@storybook/addon-info": "^3.2.7",
+    "@storybook/addon-info": "^3.2.9",
     "@storybook/addon-options": "^3.2.6",
     "@storybook/addon-storyshots": "^3.2.8",
     "@storybook/react": "^3.2.8",
@@ -53,7 +53,7 @@
     "mcs-lite-icon": "^0.3.7",
     "mcs-lite-scripts": "^0.3.7",
     "mcs-lite-theme": "^0.3.6",
-    "polished": "^1.4.1",
+    "polished": "^1.6.1",
     "react": "^15.6.1",
     "react-addons-test-utils": "^15.6.0",
     "react-dom": "^15.6.1",
@@ -71,7 +71,7 @@
     "ramda": "^0.24.1",
     "react-cookie": "^1.0.5",
     "react-hammerjs": "^0.5.0",
-    "react-motion": "^0.5.0",
+    "react-motion": "^0.5.1",
     "react-motion-ui-pack": "^0.10.3",
     "react-overlays": "^0.8.0",
     "react-render-to-json": "^0.0.5",
