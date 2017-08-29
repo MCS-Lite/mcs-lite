@@ -19,7 +19,7 @@
 		* [遠端控制 LED 明滅](mcs_lite_tutorial/7697_sdk_led_blink.md) 
 
 ## 客製化 MCS Lite
-* [使用 Create React App 打造專屬的使用者介面](mcs_lite_customization/cra_boilerplate.md)
+* [使用 React 打造專屬的使用者介面](mcs_lite_customization/cra_boilerplate.md)
 
 ## 附錄
 * [附錄A：支援平台列表](mcs_lite_platform.md)

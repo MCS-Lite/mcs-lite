@@ -1,4 +1,4 @@
-# 使用 Create React App 打造專屬的使用者介面
+# 使用 React 打造專屬的使用者介面
 
 MCS Lite 擁抱開源，您可以基於我們所提供的模組以及 Facebook 的 React 進行開發，在這篇教學中，會從建立專案開始經過簡易幾個步驟後，最終透過 WebSocket 與 MCS Lite 進行雙向溝通。過程中主要將會提到：
 
