@@ -18,6 +18,10 @@
 	* [LinkIt SDK](mcs_lite_tutorial/SDK_overview.md)
 		* [远端控制 LED 明灭](mcs_lite_tutorial/7697_sdk_led_blink.md) 
 
+## 定制化 MCS Lite
+* [使用 React 打造专属的使用者介面](mcs_lite_customization/cra_boilerplate.md)
+
+
 ## 附录
 * [附录A：支援平台列表](mcs_lite_platform.md)
 * [附录B：效能与负载测试](mcs_lite_performance.md)
