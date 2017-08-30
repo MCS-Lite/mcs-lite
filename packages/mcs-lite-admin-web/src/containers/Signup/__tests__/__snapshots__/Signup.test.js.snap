@@ -3,6 +3,7 @@
 exports[`should render error message and style 1`] = `
 <styled.div>
   <HelmetWrapper
+    defer={true}
     encodeSpecialCharacters={true}
   >
     <title>
@@ -83,6 +84,7 @@ exports[`should render error message and style 1`] = `
 exports[`should renders <Signup> correctly 1`] = `
 <styled.div>
   <HelmetWrapper
+    defer={true}
     encodeSpecialCharacters={true}
   >
     <title>
@@ -160,6 +162,7 @@ exports[`should renders <Signup> correctly 1`] = `
 exports[`should renders <Signup> correctly with errorMessage 1`] = `
 <styled.div>
   <HelmetWrapper
+    defer={true}
     encodeSpecialCharacters={true}
   >
     <title>

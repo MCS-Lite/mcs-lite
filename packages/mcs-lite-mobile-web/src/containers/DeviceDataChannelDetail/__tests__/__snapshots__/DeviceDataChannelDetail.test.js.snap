@@ -9,6 +9,7 @@ exports[`should renders <DeviceDataChannelDetail> correctly with Notification 1`
 exports[`should renders <DeviceDataChannelDetail> correctly without data 1`] = `
 <div>
   <HelmetWrapper
+    defer={true}
     encodeSpecialCharacters={true}
   >
     <title>
