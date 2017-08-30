@@ -1,6 +1,35 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should render INTEGER_DISPLAY correctly with default value to N/A 1`] = `
+.c2 {
+  margin: 0;
+  font-weight: normal;
+  font-size: 2.46rem;
+  color: #00A1DE;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+}
+
+.c1 {
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+}
+
 <DataChannelAdapter
   dataChannelProps={
     Object {
@@ -17,23 +46,23 @@ exports[`should render INTEGER_DISPLAY correctly with default value to N/A 1`] =
   >
     <DisplayUnitValue__Container>
       <div
-        className="DisplayUnitValue__Container-fOKEIX ljDNj"
+        className="c0"
       >
         <DisplayUnitValue__StyledHeading
           color="primary"
         >
           <Heading
-            className="DisplayUnitValue__StyledHeading-kRatpm kFFTNg"
+            className="c1"
             color="primary"
             level={1}
           >
             <H
-              className="DisplayUnitValue__StyledHeading-kRatpm kFFTNg Heading__Heading-bbmQNS qIgcJ"
+              className="c1 c2"
               color="primary"
               level={1}
             >
               <h1
-                className="DisplayUnitValue__StyledHeading-kRatpm kFFTNg Heading__Heading-bbmQNS qIgcJ"
+                className="c1 c2"
                 color="primary"
               >
                 N/A
@@ -48,6 +77,45 @@ exports[`should render INTEGER_DISPLAY correctly with default value to N/A 1`] =
 `;
 
 exports[`should render INTEGER_DISPLAY correctly with unit 1`] = `
+.c4 {
+  margin: 0;
+  font-size: 1rem;
+  color: #999A94;
+}
+
+.c2 {
+  margin: 0;
+  font-weight: normal;
+  font-size: 2.46rem;
+  color: #00A1DE;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+}
+
+.c1 {
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+}
+
+.c3 {
+  margin-top: 10px;
+}
+
 <DataChannelAdapter
   dataChannelProps={
     Object {
@@ -69,23 +137,23 @@ exports[`should render INTEGER_DISPLAY correctly with unit 1`] = `
   >
     <DisplayUnitValue__Container>
       <div
-        className="DisplayUnitValue__Container-fOKEIX ljDNj"
+        className="c0"
       >
         <DisplayUnitValue__StyledHeading
           color="primary"
         >
           <Heading
-            className="DisplayUnitValue__StyledHeading-kRatpm kFFTNg"
+            className="c1"
             color="primary"
             level={1}
           >
             <H
-              className="DisplayUnitValue__StyledHeading-kRatpm kFFTNg Heading__Heading-bbmQNS qIgcJ"
+              className="c1 c2"
               color="primary"
               level={1}
             >
               <h1
-                className="DisplayUnitValue__StyledHeading-kRatpm kFFTNg Heading__Heading-bbmQNS qIgcJ"
+                className="c1 c2"
                 color="primary"
               >
                 1
@@ -97,15 +165,15 @@ exports[`should render INTEGER_DISPLAY correctly with unit 1`] = `
           color="grayBase"
         >
           <P
-            className="DisplayUnitValue__StyledP-ceNPmY fMwzJn"
+            className="c3"
             color="grayBase"
           >
             <Component
-              className="DisplayUnitValue__StyledP-ceNPmY fMwzJn P__P-KJbCR hrSHif"
+              className="c3 c4"
               color="grayBase"
             >
               <p
-                className="DisplayUnitValue__StyledP-ceNPmY fMwzJn P__P-KJbCR hrSHif"
+                className="c3 c4"
                 color="grayBase"
               >
                 攝氏
@@ -120,6 +188,35 @@ exports[`should render INTEGER_DISPLAY correctly with unit 1`] = `
 `;
 
 exports[`should render INTEGER_DISPLAY correctly with value 1`] = `
+.c2 {
+  margin: 0;
+  font-weight: normal;
+  font-size: 2.46rem;
+  color: #00A1DE;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+}
+
+.c1 {
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+}
+
 <DataChannelAdapter
   dataChannelProps={
     Object {
@@ -138,23 +235,23 @@ exports[`should render INTEGER_DISPLAY correctly with value 1`] = `
   >
     <DisplayUnitValue__Container>
       <div
-        className="DisplayUnitValue__Container-fOKEIX ljDNj"
+        className="c0"
       >
         <DisplayUnitValue__StyledHeading
           color="primary"
         >
           <Heading
-            className="DisplayUnitValue__StyledHeading-kRatpm kFFTNg"
+            className="c1"
             color="primary"
             level={1}
           >
             <H
-              className="DisplayUnitValue__StyledHeading-kRatpm kFFTNg Heading__Heading-bbmQNS qIgcJ"
+              className="c1 c2"
               color="primary"
               level={1}
             >
               <h1
-                className="DisplayUnitValue__StyledHeading-kRatpm kFFTNg Heading__Heading-bbmQNS qIgcJ"
+                className="c1 c2"
                 color="primary"
               >
                 1
@@ -169,6 +266,35 @@ exports[`should render INTEGER_DISPLAY correctly with value 1`] = `
 `;
 
 exports[`should render INTEGER_DISPLAY correctly with zero 1`] = `
+.c2 {
+  margin: 0;
+  font-weight: normal;
+  font-size: 2.46rem;
+  color: #00A1DE;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+}
+
+.c1 {
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+}
+
 <DataChannelAdapter
   dataChannelProps={
     Object {
@@ -187,23 +313,23 @@ exports[`should render INTEGER_DISPLAY correctly with zero 1`] = `
   >
     <DisplayUnitValue__Container>
       <div
-        className="DisplayUnitValue__Container-fOKEIX ljDNj"
+        className="c0"
       >
         <DisplayUnitValue__StyledHeading
           color="primary"
         >
           <Heading
-            className="DisplayUnitValue__StyledHeading-kRatpm kFFTNg"
+            className="c1"
             color="primary"
             level={1}
           >
             <H
-              className="DisplayUnitValue__StyledHeading-kRatpm kFFTNg Heading__Heading-bbmQNS qIgcJ"
+              className="c1 c2"
               color="primary"
               level={1}
             >
               <h1
-                className="DisplayUnitValue__StyledHeading-kRatpm kFFTNg Heading__Heading-bbmQNS qIgcJ"
+                className="c1 c2"
                 color="primary"
               >
                 0

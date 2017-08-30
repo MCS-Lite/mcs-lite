@@ -1,6 +1,72 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should render GPIO_DISPLAY correctly with High 1`] = `
+.c2 {
+  margin: 0;
+  font-size: 1rem;
+  color: #999A94;
+}
+
+.c3 {
+  width: 12px;
+}
+
+.c3 > * {
+  -webkit-fill: #D1D2D3;
+  fill: #D1D2D3;
+  -webkit-transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+}
+
+.c4 {
+  width: 12px;
+}
+
+.c4 > * {
+  -webkit-fill: #69BE28;
+  fill: #69BE28;
+  -webkit-transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-around;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: space-around;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-grow: 1;
+  -ms-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-basis: 0;
+  -ms-flex-basis: 0;
+  flex-basis: 0;
+  margin: 0 4px;
+  overflow: hidden;
+}
+
+.c1 > *:first-child {
+  margin-bottom: 20px;
+}
+
 <DataChannelAdapter
   dataChannelProps={
     Object {
@@ -25,21 +91,21 @@ exports[`should render GPIO_DISPLAY correctly with High 1`] = `
   >
     <DisplayStatus__Container>
       <div
-        className="DisplayStatus__Container-jrDlkR HMqwb"
+        className="c0"
       >
         <DisplayStatus__ItemWrapper>
           <div
-            className="DisplayStatus__ItemWrapper-edfiVv gOPCZe"
+            className="c1"
           >
             <P
               color="grayBase"
             >
               <Component
-                className="P__P-KJbCR hrSHif"
+                className="c2"
                 color="grayBase"
               >
                 <p
-                  className="P__P-KJbCR hrSHif"
+                  className="c2"
                   color="grayBase"
                 >
                   Low
@@ -55,7 +121,7 @@ exports[`should render GPIO_DISPLAY correctly with High 1`] = `
                   viewBox="0 0 20 20"
                 >
                   <svg
-                    className="StatusLight__Svg-IVkxE gOaNbK"
+                    className="c3"
                     color="grayDark"
                     viewBox="0 0 20 20"
                   >
@@ -72,17 +138,17 @@ exports[`should render GPIO_DISPLAY correctly with High 1`] = `
         </DisplayStatus__ItemWrapper>
         <DisplayStatus__ItemWrapper>
           <div
-            className="DisplayStatus__ItemWrapper-edfiVv gOPCZe"
+            className="c1"
           >
             <P
               color="grayBase"
             >
               <Component
-                className="P__P-KJbCR hrSHif"
+                className="c2"
                 color="grayBase"
               >
                 <p
-                  className="P__P-KJbCR hrSHif"
+                  className="c2"
                   color="grayBase"
                 >
                   High
@@ -98,7 +164,7 @@ exports[`should render GPIO_DISPLAY correctly with High 1`] = `
                   viewBox="0 0 20 20"
                 >
                   <svg
-                    className="StatusLight__Svg-IVkxE efztEk"
+                    className="c4"
                     color="success"
                     viewBox="0 0 20 20"
                   >
@@ -120,6 +186,72 @@ exports[`should render GPIO_DISPLAY correctly with High 1`] = `
 `;
 
 exports[`should render GPIO_DISPLAY correctly with Low 1`] = `
+.c2 {
+  margin: 0;
+  font-size: 1rem;
+  color: #999A94;
+}
+
+.c4 {
+  width: 12px;
+}
+
+.c4 > * {
+  -webkit-fill: #D1D2D3;
+  fill: #D1D2D3;
+  -webkit-transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+}
+
+.c3 {
+  width: 12px;
+}
+
+.c3 > * {
+  -webkit-fill: #69BE28;
+  fill: #69BE28;
+  -webkit-transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-around;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: space-around;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-grow: 1;
+  -ms-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-basis: 0;
+  -ms-flex-basis: 0;
+  flex-basis: 0;
+  margin: 0 4px;
+  overflow: hidden;
+}
+
+.c1 > *:first-child {
+  margin-bottom: 20px;
+}
+
 <DataChannelAdapter
   dataChannelProps={
     Object {
@@ -144,21 +276,21 @@ exports[`should render GPIO_DISPLAY correctly with Low 1`] = `
   >
     <DisplayStatus__Container>
       <div
-        className="DisplayStatus__Container-jrDlkR HMqwb"
+        className="c0"
       >
         <DisplayStatus__ItemWrapper>
           <div
-            className="DisplayStatus__ItemWrapper-edfiVv gOPCZe"
+            className="c1"
           >
             <P
               color="grayBase"
             >
               <Component
-                className="P__P-KJbCR hrSHif"
+                className="c2"
                 color="grayBase"
               >
                 <p
-                  className="P__P-KJbCR hrSHif"
+                  className="c2"
                   color="grayBase"
                 >
                   Low
@@ -174,7 +306,7 @@ exports[`should render GPIO_DISPLAY correctly with Low 1`] = `
                   viewBox="0 0 20 20"
                 >
                   <svg
-                    className="StatusLight__Svg-IVkxE efztEk"
+                    className="c3"
                     color="success"
                     viewBox="0 0 20 20"
                   >
@@ -191,17 +323,17 @@ exports[`should render GPIO_DISPLAY correctly with Low 1`] = `
         </DisplayStatus__ItemWrapper>
         <DisplayStatus__ItemWrapper>
           <div
-            className="DisplayStatus__ItemWrapper-edfiVv gOPCZe"
+            className="c1"
           >
             <P
               color="grayBase"
             >
               <Component
-                className="P__P-KJbCR hrSHif"
+                className="c2"
                 color="grayBase"
               >
                 <p
-                  className="P__P-KJbCR hrSHif"
+                  className="c2"
                   color="grayBase"
                 >
                   High
@@ -217,7 +349,7 @@ exports[`should render GPIO_DISPLAY correctly with Low 1`] = `
                   viewBox="0 0 20 20"
                 >
                   <svg
-                    className="StatusLight__Svg-IVkxE gOaNbK"
+                    className="c4"
                     color="grayDark"
                     viewBox="0 0 20 20"
                   >
@@ -239,6 +371,61 @@ exports[`should render GPIO_DISPLAY correctly with Low 1`] = `
 `;
 
 exports[`should render GPIO_DISPLAY correctly with default value to undefiend 1`] = `
+.c2 {
+  margin: 0;
+  font-size: 1rem;
+  color: #999A94;
+}
+
+.c3 {
+  width: 12px;
+}
+
+.c3 > * {
+  -webkit-fill: #D1D2D3;
+  fill: #D1D2D3;
+  -webkit-transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-around;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: space-around;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-grow: 1;
+  -ms-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-basis: 0;
+  -ms-flex-basis: 0;
+  flex-basis: 0;
+  margin: 0 4px;
+  overflow: hidden;
+}
+
+.c1 > *:first-child {
+  margin-bottom: 20px;
+}
+
 <DataChannelAdapter
   dataChannelProps={
     Object {
@@ -260,21 +447,21 @@ exports[`should render GPIO_DISPLAY correctly with default value to undefiend 1`
   >
     <DisplayStatus__Container>
       <div
-        className="DisplayStatus__Container-jrDlkR HMqwb"
+        className="c0"
       >
         <DisplayStatus__ItemWrapper>
           <div
-            className="DisplayStatus__ItemWrapper-edfiVv gOPCZe"
+            className="c1"
           >
             <P
               color="grayBase"
             >
               <Component
-                className="P__P-KJbCR hrSHif"
+                className="c2"
                 color="grayBase"
               >
                 <p
-                  className="P__P-KJbCR hrSHif"
+                  className="c2"
                   color="grayBase"
                 >
                   Low
@@ -290,7 +477,7 @@ exports[`should render GPIO_DISPLAY correctly with default value to undefiend 1`
                   viewBox="0 0 20 20"
                 >
                   <svg
-                    className="StatusLight__Svg-IVkxE gOaNbK"
+                    className="c3"
                     color="grayDark"
                     viewBox="0 0 20 20"
                   >
@@ -307,17 +494,17 @@ exports[`should render GPIO_DISPLAY correctly with default value to undefiend 1`
         </DisplayStatus__ItemWrapper>
         <DisplayStatus__ItemWrapper>
           <div
-            className="DisplayStatus__ItemWrapper-edfiVv gOPCZe"
+            className="c1"
           >
             <P
               color="grayBase"
             >
               <Component
-                className="P__P-KJbCR hrSHif"
+                className="c2"
                 color="grayBase"
               >
                 <p
-                  className="P__P-KJbCR hrSHif"
+                  className="c2"
                   color="grayBase"
                 >
                   High
@@ -333,7 +520,7 @@ exports[`should render GPIO_DISPLAY correctly with default value to undefiend 1`
                   viewBox="0 0 20 20"
                 >
                   <svg
-                    className="StatusLight__Svg-IVkxE gOaNbK"
+                    className="c3"
                     color="grayDark"
                     viewBox="0 0 20 20"
                   >

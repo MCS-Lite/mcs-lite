@@ -1,10 +1,28 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should redner styled-components <Header/> 1`] = `
+.c0 {
+  height: 32px;
+  background-color: #FFFFFF;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: space-between;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: space-between;
+  justify-content: space-between;
+  border-bottom: 1px solid #D1D2D3;
+}
+
 <div>
   <DatetimePickerDialog__Header>
     <header
-      className="DatetimePickerDialog__Header-iZpsvK cLUQFN"
+      className="c0"
     />
   </DatetimePickerDialog__Header>
 </div>
