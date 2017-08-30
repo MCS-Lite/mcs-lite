@@ -1,6 +1,276 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should render PWM_CONTROL correctly with default value to N/A 1`] = `
+.c2 {
+  margin: 0;
+  font-size: 1rem;
+  color: #999A94;
+}
+
+.c13 {
+  margin: 0;
+  font-size: 1rem;
+  color: #00A1DE;
+}
+
+.c6 {
+  border-width: 1px;
+  border-style: solid;
+  outline: none;
+  box-sizing: border-box;
+  -webkit-transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  line-height: 0;
+  cursor: pointer;
+  background-color: #00A1DE;
+  color: #FFFFFF;
+  border-radius: 3px;
+  width: initial;
+  min-width: 80px;
+  height: 32px;
+  padding: 6px 15px;
+  font-size: 1rem;
+  border-color: rgb(0,130,179);
+}
+
+.c6:hover {
+  background-color: rgb(0,151,208);
+}
+
+.c6:active {
+  background-color: rgb(0,144,198);
+}
+
+.c5 {
+  box-sizing: border-box;
+  width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 3px;
+  outline: 0;
+  padding: 0 10px;
+  line-height: 1;
+  min-height: 32px;
+  color: #353630;
+  font-size: 1rem;
+  border-color: #D1D2D3;
+  box-shadow: none;
+}
+
+.c5:focus {
+  border-color: #00A1DE;
+  box-shadow: 0 0 3px 0 rgba(0,161,222,0.5);
+}
+
+.c5::-webkit-input-placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c5::-moz-placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c5:-ms-input-placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c5::placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c14 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 100%;
+  outline: none;
+  background-color: rgba(0,0,0,0);
+  cursor: pointer;
+}
+
+.c14::-webkit-slider-runnable-track {
+  -webkit-appearance: none;
+  height: 16px;
+  border-radius: 8px;
+  background-image: linear-gradient(-180deg,#DFDFDF 5%,#F6F6F6 96%);
+  box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.35),inset 0 0 0 2px #E5E6E6,inset 0 1px 10px 0 rgba(0,0,0,0.05);
+}
+
+.c14::-moz-range-track {
+  -moz-appearance: none;
+  height: 16px;
+  border-radius: 8px;
+  background-image: linear-gradient(-180deg,#DFDFDF 5%,#F6F6F6 96%);
+  box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.35),inset 0 0 0 2px #E5E6E6,inset 0 1px 10px 0 rgba(0,0,0,0.05);
+}
+
+.c14::-moz-focus-outer {
+  border: 0;
+}
+
+.c14::-ms-track {
+  -webkit-appearance: none;
+  height: 16px;
+  border-radius: 8px;
+  background-image: linear-gradient(-180deg,#DFDFDF 5%,#F6F6F6 96%);
+  box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.35),inset 0 0 0 2px #E5E6E6,inset 0 1px 10px 0 rgba(0,0,0,0.05);
+}
+
+.c14::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  margin-top: -12px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-image: radial-gradient(50% 50%,#FFFFFF 50%,#FFFFFF 73%,#F8F8F8 81%,#EBEBEB 90%,#DDDDDD 95%);
+  -webkit-transition: -webkit-transform 0.3s ease,width 0.2s ease,height 0.2s ease;
+  -webkit-transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
+  transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #00A1DE,inset 0 0 0 3px rgb(0,192,255);
+}
+
+.c14::-moz-range-thumb {
+  -moz-appearance: none;
+  height: 40px;
+  width: 40px;
+  border-width: 0;
+  border-radius: 50%;
+  background-image: radial-gradient(50% 50%,#FFFFFF 50%,#FFFFFF 73%,#F8F8F8 81%,#EBEBEB 90%,#DDDDDD 95%);
+  -moz-appearance: none;
+  -moz-transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #00A1DE,inset 0 0 0 3px rgb(0,192,255);
+}
+
+.c14::-ms-thumb {
+  -webkit-appearance: none;
+  margin-top: -12px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-image: radial-gradient(50% 50%,#FFFFFF 50%,#FFFFFF 73%,#F8F8F8 81%,#EBEBEB 90%,#DDDDDD 95%);
+  -webkit-transition: -webkit-transform 0.3s ease,width 0.2s ease,height 0.2s ease;
+  -webkit-transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
+  transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #00A1DE,inset 0 0 0 3px rgb(0,192,255);
+}
+
+.c14::-webkit-slider-thumb:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.c14::-moz-range-thumb:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.c14::-ms-thumb:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.c7 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column-reverse;
+  -ms-flex-direction: column-reverse;
+  flex-direction: column-reverse;
+}
+
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c8 > *:first-child {
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+}
+
+.c8 > *:last-child {
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+}
+
+.c9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0 4px;
+  -webkit-flex-grow: 1;
+  -ms-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-basis: 0;
+  -ms-flex-basis: 0;
+  flex-basis: 0;
+  overflow: hidden;
+}
+
+.c9::before {
+  content: "";
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-right-color: #D1D2D3;
+  height: 4px;
+  margin-top: 5px;
+  margin-bottom: 8px;
+}
+
+.c11 {
+  margin-bottom: 15px;
+}
+
+.c12 {
+  display: inline-block;
+}
+
+.c10 {
+  padding: 0 0%;
+}
+
+.c1 {
+  margin-bottom: 10px;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 5px;
+}
+
+.c4 {
+  margin-right: 10px;
+}
+
+.c0 {
+  width: 100%;
+}
+
 <DataChannelAdapter
   dataChannelProps={
     Object {
@@ -17,7 +287,7 @@ exports[`should render PWM_CONTROL correctly with default value to N/A 1`] = `
 >
   <DataChannelAdapter__Wrapper>
     <div
-      className="DataChannelAdapter__Wrapper-kOWMLp jIklWG"
+      className="c0"
     >
       <ControlPeriod
         onChange={[Function]}
@@ -27,7 +297,7 @@ exports[`should render PWM_CONTROL correctly with default value to N/A 1`] = `
       >
         <ControlPeriod__Container>
           <div
-            className="ControlPeriod__Container-jNmifR bLOshQ"
+            className="c1"
           >
             <label
               htmlFor="input"
@@ -36,11 +306,11 @@ exports[`should render PWM_CONTROL correctly with default value to N/A 1`] = `
                 color="grayBase"
               >
                 <Component
-                  className="P__P-KJbCR hrSHif"
+                  className="c2"
                   color="grayBase"
                 >
                   <p
-                    className="P__P-KJbCR hrSHif"
+                    className="c2"
                     color="grayBase"
                   >
                     Period
@@ -50,7 +320,7 @@ exports[`should render PWM_CONTROL correctly with default value to N/A 1`] = `
             </label>
             <ControlPeriod__InputWrapper>
               <div
-                className="ControlPeriod__InputWrapper-icIPmx diDDNv"
+                className="c3"
               >
                 <ControlPeriod__StyledInput
                   onChange={[Function]}
@@ -59,7 +329,7 @@ exports[`should render PWM_CONTROL correctly with default value to N/A 1`] = `
                   value=""
                 >
                   <Input
-                    className="ControlPeriod__StyledInput-fNvBTX jSwXqv"
+                    className="c4"
                     focus={false}
                     kind="primary"
                     onChange={[Function]}
@@ -68,7 +338,7 @@ exports[`should render PWM_CONTROL correctly with default value to N/A 1`] = `
                     value=""
                   >
                     <input
-                      className="ControlPeriod__StyledInput-fNvBTX jSwXqv Input__Input-ixjKAz dDXeoZ"
+                      className="c4 c5"
                       kind="primary"
                       onChange={[Function]}
                       placeholder="Integer only"
@@ -91,7 +361,7 @@ exports[`should render PWM_CONTROL correctly with default value to N/A 1`] = `
                   <BaseComponent
                     active={false}
                     block={false}
-                    className="Button__Button-jkHDFw fcrwCh"
+                    className="c6"
                     component="button"
                     disabled={false}
                     kind="primary"
@@ -101,7 +371,7 @@ exports[`should render PWM_CONTROL correctly with default value to N/A 1`] = `
                     square={false}
                   >
                     <button
-                      className="Button__Button-jkHDFw fcrwCh"
+                      className="c6"
                       onClick={[Function]}
                     >
                       Ok
@@ -127,7 +397,7 @@ exports[`should render PWM_CONTROL correctly with default value to N/A 1`] = `
       >
         <ControlRange__Container>
           <div
-            className="ControlRange__Container-ispxkc kQpIsI"
+            className="c7"
           >
             <ControlRange__LabelWrapper
               labels={
@@ -138,21 +408,21 @@ exports[`should render PWM_CONTROL correctly with default value to N/A 1`] = `
               }
             >
               <div
-                className="ControlRange__LabelWrapper-hpKjGx bfHWDZ"
+                className="c8"
               >
                 <ControlRange__LabelItem>
                   <div
-                    className="ControlRange__LabelItem-kiIalK dulPtE"
+                    className="c9"
                   >
                     <P
                       color="grayBase"
                     >
                       <Component
-                        className="P__P-KJbCR hrSHif"
+                        className="c2"
                         color="grayBase"
                       >
                         <div
-                          className="P__P-KJbCR hrSHif"
+                          className="c2"
                           color="grayBase"
                         >
                           0
@@ -163,17 +433,17 @@ exports[`should render PWM_CONTROL correctly with default value to N/A 1`] = `
                 </ControlRange__LabelItem>
                 <ControlRange__LabelItem>
                   <div
-                    className="ControlRange__LabelItem-kiIalK dulPtE"
+                    className="c9"
                   >
                     <P
                       color="grayBase"
                     >
                       <Component
-                        className="P__P-KJbCR hrSHif"
+                        className="c2"
                         color="grayBase"
                       >
                         <div
-                          className="P__P-KJbCR hrSHif"
+                          className="c2"
                           color="grayBase"
                         >
                           100
@@ -193,21 +463,21 @@ exports[`should render PWM_CONTROL correctly with default value to N/A 1`] = `
               }
             >
               <div
-                className="ControlRange__InputWrapper-fklkwO fpvHuS"
+                className="c10"
               >
                 <ControlRange__ValueWrapper
                   color="grayBase"
                 >
                   <P
-                    className="ControlRange__ValueWrapper-jxMKxr kFWjXk"
+                    className="c11"
                     color="grayBase"
                   >
                     <Component
-                      className="ControlRange__ValueWrapper-jxMKxr kFWjXk P__P-KJbCR hrSHif"
+                      className="c11 c2"
                       color="grayBase"
                     >
                       <div
-                        className="ControlRange__ValueWrapper-jxMKxr kFWjXk P__P-KJbCR hrSHif"
+                        className="c11 c2"
                         color="grayBase"
                       >
                         Current value: 
@@ -215,15 +485,15 @@ exports[`should render PWM_CONTROL correctly with default value to N/A 1`] = `
                           color="primary"
                         >
                           <P
-                            className="ControlRange__Value-kXycxr glmUBq"
+                            className="c12"
                             color="primary"
                           >
                             <Component
-                              className="ControlRange__Value-kXycxr glmUBq P__P-KJbCR jEbbdW"
+                              className="c12 c13"
                               color="primary"
                             >
                               <p
-                                className="ControlRange__Value-kXycxr glmUBq P__P-KJbCR jEbbdW"
+                                className="c12 c13"
                                 color="primary"
                               >
                                 N/A
@@ -247,7 +517,7 @@ exports[`should render PWM_CONTROL correctly with default value to N/A 1`] = `
                   value=""
                 >
                   <input
-                    className="InputRange__InputRange-uGAsR lghldr"
+                    className="c14"
                     kind="primary"
                     max={100}
                     min={0}
@@ -270,6 +540,276 @@ exports[`should render PWM_CONTROL correctly with default value to N/A 1`] = `
 `;
 
 exports[`should render PWM_CONTROL correctly with max 1`] = `
+.c2 {
+  margin: 0;
+  font-size: 1rem;
+  color: #999A94;
+}
+
+.c13 {
+  margin: 0;
+  font-size: 1rem;
+  color: #00A1DE;
+}
+
+.c6 {
+  border-width: 1px;
+  border-style: solid;
+  outline: none;
+  box-sizing: border-box;
+  -webkit-transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  line-height: 0;
+  cursor: pointer;
+  background-color: #00A1DE;
+  color: #FFFFFF;
+  border-radius: 3px;
+  width: initial;
+  min-width: 80px;
+  height: 32px;
+  padding: 6px 15px;
+  font-size: 1rem;
+  border-color: rgb(0,130,179);
+}
+
+.c6:hover {
+  background-color: rgb(0,151,208);
+}
+
+.c6:active {
+  background-color: rgb(0,144,198);
+}
+
+.c5 {
+  box-sizing: border-box;
+  width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 3px;
+  outline: 0;
+  padding: 0 10px;
+  line-height: 1;
+  min-height: 32px;
+  color: #353630;
+  font-size: 1rem;
+  border-color: #D1D2D3;
+  box-shadow: none;
+}
+
+.c5:focus {
+  border-color: #00A1DE;
+  box-shadow: 0 0 3px 0 rgba(0,161,222,0.5);
+}
+
+.c5::-webkit-input-placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c5::-moz-placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c5:-ms-input-placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c5::placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c14 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 100%;
+  outline: none;
+  background-color: rgba(0,0,0,0);
+  cursor: pointer;
+}
+
+.c14::-webkit-slider-runnable-track {
+  -webkit-appearance: none;
+  height: 16px;
+  border-radius: 8px;
+  background-image: linear-gradient(-180deg,#DFDFDF 5%,#F6F6F6 96%);
+  box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.35),inset 0 0 0 2px #E5E6E6,inset 0 1px 10px 0 rgba(0,0,0,0.05);
+}
+
+.c14::-moz-range-track {
+  -moz-appearance: none;
+  height: 16px;
+  border-radius: 8px;
+  background-image: linear-gradient(-180deg,#DFDFDF 5%,#F6F6F6 96%);
+  box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.35),inset 0 0 0 2px #E5E6E6,inset 0 1px 10px 0 rgba(0,0,0,0.05);
+}
+
+.c14::-moz-focus-outer {
+  border: 0;
+}
+
+.c14::-ms-track {
+  -webkit-appearance: none;
+  height: 16px;
+  border-radius: 8px;
+  background-image: linear-gradient(-180deg,#DFDFDF 5%,#F6F6F6 96%);
+  box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.35),inset 0 0 0 2px #E5E6E6,inset 0 1px 10px 0 rgba(0,0,0,0.05);
+}
+
+.c14::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  margin-top: -12px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-image: radial-gradient(50% 50%,#FFFFFF 50%,#FFFFFF 73%,#F8F8F8 81%,#EBEBEB 90%,#DDDDDD 95%);
+  -webkit-transition: -webkit-transform 0.3s ease,width 0.2s ease,height 0.2s ease;
+  -webkit-transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
+  transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #00A1DE,inset 0 0 0 3px rgb(0,192,255);
+}
+
+.c14::-moz-range-thumb {
+  -moz-appearance: none;
+  height: 40px;
+  width: 40px;
+  border-width: 0;
+  border-radius: 50%;
+  background-image: radial-gradient(50% 50%,#FFFFFF 50%,#FFFFFF 73%,#F8F8F8 81%,#EBEBEB 90%,#DDDDDD 95%);
+  -moz-appearance: none;
+  -moz-transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #00A1DE,inset 0 0 0 3px rgb(0,192,255);
+}
+
+.c14::-ms-thumb {
+  -webkit-appearance: none;
+  margin-top: -12px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-image: radial-gradient(50% 50%,#FFFFFF 50%,#FFFFFF 73%,#F8F8F8 81%,#EBEBEB 90%,#DDDDDD 95%);
+  -webkit-transition: -webkit-transform 0.3s ease,width 0.2s ease,height 0.2s ease;
+  -webkit-transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
+  transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #00A1DE,inset 0 0 0 3px rgb(0,192,255);
+}
+
+.c14::-webkit-slider-thumb:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.c14::-moz-range-thumb:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.c14::-ms-thumb:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.c7 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column-reverse;
+  -ms-flex-direction: column-reverse;
+  flex-direction: column-reverse;
+}
+
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c8 > *:first-child {
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+}
+
+.c8 > *:last-child {
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+}
+
+.c9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0 4px;
+  -webkit-flex-grow: 1;
+  -ms-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-basis: 0;
+  -ms-flex-basis: 0;
+  flex-basis: 0;
+  overflow: hidden;
+}
+
+.c9::before {
+  content: "";
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-right-color: #D1D2D3;
+  height: 4px;
+  margin-top: 5px;
+  margin-bottom: 8px;
+}
+
+.c11 {
+  margin-bottom: 15px;
+}
+
+.c12 {
+  display: inline-block;
+}
+
+.c10 {
+  padding: 0 0%;
+}
+
+.c1 {
+  margin-bottom: 10px;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 5px;
+}
+
+.c4 {
+  margin-right: 10px;
+}
+
+.c0 {
+  width: 100%;
+}
+
 <DataChannelAdapter
   dataChannelProps={
     Object {
@@ -289,7 +829,7 @@ exports[`should render PWM_CONTROL correctly with max 1`] = `
 >
   <DataChannelAdapter__Wrapper>
     <div
-      className="DataChannelAdapter__Wrapper-kOWMLp jIklWG"
+      className="c0"
     >
       <ControlPeriod
         onChange={[Function]}
@@ -299,7 +839,7 @@ exports[`should render PWM_CONTROL correctly with max 1`] = `
       >
         <ControlPeriod__Container>
           <div
-            className="ControlPeriod__Container-jNmifR bLOshQ"
+            className="c1"
           >
             <label
               htmlFor="input"
@@ -308,11 +848,11 @@ exports[`should render PWM_CONTROL correctly with max 1`] = `
                 color="grayBase"
               >
                 <Component
-                  className="P__P-KJbCR hrSHif"
+                  className="c2"
                   color="grayBase"
                 >
                   <p
-                    className="P__P-KJbCR hrSHif"
+                    className="c2"
                     color="grayBase"
                   >
                     Period
@@ -322,7 +862,7 @@ exports[`should render PWM_CONTROL correctly with max 1`] = `
             </label>
             <ControlPeriod__InputWrapper>
               <div
-                className="ControlPeriod__InputWrapper-icIPmx diDDNv"
+                className="c3"
               >
                 <ControlPeriod__StyledInput
                   onChange={[Function]}
@@ -331,7 +871,7 @@ exports[`should render PWM_CONTROL correctly with max 1`] = `
                   value={1}
                 >
                   <Input
-                    className="ControlPeriod__StyledInput-fNvBTX jSwXqv"
+                    className="c4"
                     focus={false}
                     kind="primary"
                     onChange={[Function]}
@@ -340,7 +880,7 @@ exports[`should render PWM_CONTROL correctly with max 1`] = `
                     value={1}
                   >
                     <input
-                      className="ControlPeriod__StyledInput-fNvBTX jSwXqv Input__Input-ixjKAz dDXeoZ"
+                      className="c4 c5"
                       kind="primary"
                       onChange={[Function]}
                       placeholder="Integer only"
@@ -363,7 +903,7 @@ exports[`should render PWM_CONTROL correctly with max 1`] = `
                   <BaseComponent
                     active={false}
                     block={false}
-                    className="Button__Button-jkHDFw fcrwCh"
+                    className="c6"
                     component="button"
                     disabled={false}
                     kind="primary"
@@ -373,7 +913,7 @@ exports[`should render PWM_CONTROL correctly with max 1`] = `
                     square={false}
                   >
                     <button
-                      className="Button__Button-jkHDFw fcrwCh"
+                      className="c6"
                       onClick={[Function]}
                     >
                       Ok
@@ -399,7 +939,7 @@ exports[`should render PWM_CONTROL correctly with max 1`] = `
       >
         <ControlRange__Container>
           <div
-            className="ControlRange__Container-ispxkc kQpIsI"
+            className="c7"
           >
             <ControlRange__LabelWrapper
               labels={
@@ -410,21 +950,21 @@ exports[`should render PWM_CONTROL correctly with max 1`] = `
               }
             >
               <div
-                className="ControlRange__LabelWrapper-hpKjGx bfHWDZ"
+                className="c8"
               >
                 <ControlRange__LabelItem>
                   <div
-                    className="ControlRange__LabelItem-kiIalK dulPtE"
+                    className="c9"
                   >
                     <P
                       color="grayBase"
                     >
                       <Component
-                        className="P__P-KJbCR hrSHif"
+                        className="c2"
                         color="grayBase"
                       >
                         <div
-                          className="P__P-KJbCR hrSHif"
+                          className="c2"
                           color="grayBase"
                         >
                           0
@@ -435,17 +975,17 @@ exports[`should render PWM_CONTROL correctly with max 1`] = `
                 </ControlRange__LabelItem>
                 <ControlRange__LabelItem>
                   <div
-                    className="ControlRange__LabelItem-kiIalK dulPtE"
+                    className="c9"
                   >
                     <P
                       color="grayBase"
                     >
                       <Component
-                        className="P__P-KJbCR hrSHif"
+                        className="c2"
                         color="grayBase"
                       >
                         <div
-                          className="P__P-KJbCR hrSHif"
+                          className="c2"
                           color="grayBase"
                         >
                           100
@@ -465,21 +1005,21 @@ exports[`should render PWM_CONTROL correctly with max 1`] = `
               }
             >
               <div
-                className="ControlRange__InputWrapper-fklkwO fpvHuS"
+                className="c10"
               >
                 <ControlRange__ValueWrapper
                   color="grayBase"
                 >
                   <P
-                    className="ControlRange__ValueWrapper-jxMKxr kFWjXk"
+                    className="c11"
                     color="grayBase"
                   >
                     <Component
-                      className="ControlRange__ValueWrapper-jxMKxr kFWjXk P__P-KJbCR hrSHif"
+                      className="c11 c2"
                       color="grayBase"
                     >
                       <div
-                        className="ControlRange__ValueWrapper-jxMKxr kFWjXk P__P-KJbCR hrSHif"
+                        className="c11 c2"
                         color="grayBase"
                       >
                         Current value: 
@@ -487,15 +1027,15 @@ exports[`should render PWM_CONTROL correctly with max 1`] = `
                           color="primary"
                         >
                           <P
-                            className="ControlRange__Value-kXycxr glmUBq"
+                            className="c12"
                             color="primary"
                           >
                             <Component
-                              className="ControlRange__Value-kXycxr glmUBq P__P-KJbCR jEbbdW"
+                              className="c12 c13"
                               color="primary"
                             >
                               <div
-                                className="ControlRange__Value-kXycxr glmUBq P__P-KJbCR jEbbdW"
+                                className="c12 c13"
                                 color="primary"
                               >
                                 100
@@ -519,7 +1059,7 @@ exports[`should render PWM_CONTROL correctly with max 1`] = `
                   value={100}
                 >
                   <input
-                    className="InputRange__InputRange-uGAsR lghldr"
+                    className="c14"
                     kind="primary"
                     max={100}
                     min={0}
@@ -542,6 +1082,276 @@ exports[`should render PWM_CONTROL correctly with max 1`] = `
 `;
 
 exports[`should render PWM_CONTROL correctly with zero 1`] = `
+.c2 {
+  margin: 0;
+  font-size: 1rem;
+  color: #999A94;
+}
+
+.c13 {
+  margin: 0;
+  font-size: 1rem;
+  color: #00A1DE;
+}
+
+.c6 {
+  border-width: 1px;
+  border-style: solid;
+  outline: none;
+  box-sizing: border-box;
+  -webkit-transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  line-height: 0;
+  cursor: pointer;
+  background-color: #00A1DE;
+  color: #FFFFFF;
+  border-radius: 3px;
+  width: initial;
+  min-width: 80px;
+  height: 32px;
+  padding: 6px 15px;
+  font-size: 1rem;
+  border-color: rgb(0,130,179);
+}
+
+.c6:hover {
+  background-color: rgb(0,151,208);
+}
+
+.c6:active {
+  background-color: rgb(0,144,198);
+}
+
+.c5 {
+  box-sizing: border-box;
+  width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 3px;
+  outline: 0;
+  padding: 0 10px;
+  line-height: 1;
+  min-height: 32px;
+  color: #353630;
+  font-size: 1rem;
+  border-color: #D1D2D3;
+  box-shadow: none;
+}
+
+.c5:focus {
+  border-color: #00A1DE;
+  box-shadow: 0 0 3px 0 rgba(0,161,222,0.5);
+}
+
+.c5::-webkit-input-placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c5::-moz-placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c5:-ms-input-placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c5::placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c14 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 100%;
+  outline: none;
+  background-color: rgba(0,0,0,0);
+  cursor: pointer;
+}
+
+.c14::-webkit-slider-runnable-track {
+  -webkit-appearance: none;
+  height: 16px;
+  border-radius: 8px;
+  background-image: linear-gradient(-180deg,#DFDFDF 5%,#F6F6F6 96%);
+  box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.35),inset 0 0 0 2px #E5E6E6,inset 0 1px 10px 0 rgba(0,0,0,0.05);
+}
+
+.c14::-moz-range-track {
+  -moz-appearance: none;
+  height: 16px;
+  border-radius: 8px;
+  background-image: linear-gradient(-180deg,#DFDFDF 5%,#F6F6F6 96%);
+  box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.35),inset 0 0 0 2px #E5E6E6,inset 0 1px 10px 0 rgba(0,0,0,0.05);
+}
+
+.c14::-moz-focus-outer {
+  border: 0;
+}
+
+.c14::-ms-track {
+  -webkit-appearance: none;
+  height: 16px;
+  border-radius: 8px;
+  background-image: linear-gradient(-180deg,#DFDFDF 5%,#F6F6F6 96%);
+  box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.35),inset 0 0 0 2px #E5E6E6,inset 0 1px 10px 0 rgba(0,0,0,0.05);
+}
+
+.c14::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  margin-top: -12px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-image: radial-gradient(50% 50%,#FFFFFF 50%,#FFFFFF 73%,#F8F8F8 81%,#EBEBEB 90%,#DDDDDD 95%);
+  -webkit-transition: -webkit-transform 0.3s ease,width 0.2s ease,height 0.2s ease;
+  -webkit-transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
+  transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #00A1DE,inset 0 0 0 3px rgb(0,192,255);
+}
+
+.c14::-moz-range-thumb {
+  -moz-appearance: none;
+  height: 40px;
+  width: 40px;
+  border-width: 0;
+  border-radius: 50%;
+  background-image: radial-gradient(50% 50%,#FFFFFF 50%,#FFFFFF 73%,#F8F8F8 81%,#EBEBEB 90%,#DDDDDD 95%);
+  -moz-appearance: none;
+  -moz-transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #00A1DE,inset 0 0 0 3px rgb(0,192,255);
+}
+
+.c14::-ms-thumb {
+  -webkit-appearance: none;
+  margin-top: -12px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-image: radial-gradient(50% 50%,#FFFFFF 50%,#FFFFFF 73%,#F8F8F8 81%,#EBEBEB 90%,#DDDDDD 95%);
+  -webkit-transition: -webkit-transform 0.3s ease,width 0.2s ease,height 0.2s ease;
+  -webkit-transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
+  transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #00A1DE,inset 0 0 0 3px rgb(0,192,255);
+}
+
+.c14::-webkit-slider-thumb:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.c14::-moz-range-thumb:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.c14::-ms-thumb:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.c7 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column-reverse;
+  -ms-flex-direction: column-reverse;
+  flex-direction: column-reverse;
+}
+
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c8 > *:first-child {
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+}
+
+.c8 > *:last-child {
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+}
+
+.c9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0 4px;
+  -webkit-flex-grow: 1;
+  -ms-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-basis: 0;
+  -ms-flex-basis: 0;
+  flex-basis: 0;
+  overflow: hidden;
+}
+
+.c9::before {
+  content: "";
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-right-color: #D1D2D3;
+  height: 4px;
+  margin-top: 5px;
+  margin-bottom: 8px;
+}
+
+.c11 {
+  margin-bottom: 15px;
+}
+
+.c12 {
+  display: inline-block;
+}
+
+.c10 {
+  padding: 0 0%;
+}
+
+.c1 {
+  margin-bottom: 10px;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 5px;
+}
+
+.c4 {
+  margin-right: 10px;
+}
+
+.c0 {
+  width: 100%;
+}
+
 <DataChannelAdapter
   dataChannelProps={
     Object {
@@ -561,7 +1371,7 @@ exports[`should render PWM_CONTROL correctly with zero 1`] = `
 >
   <DataChannelAdapter__Wrapper>
     <div
-      className="DataChannelAdapter__Wrapper-kOWMLp jIklWG"
+      className="c0"
     >
       <ControlPeriod
         onChange={[Function]}
@@ -571,7 +1381,7 @@ exports[`should render PWM_CONTROL correctly with zero 1`] = `
       >
         <ControlPeriod__Container>
           <div
-            className="ControlPeriod__Container-jNmifR bLOshQ"
+            className="c1"
           >
             <label
               htmlFor="input"
@@ -580,11 +1390,11 @@ exports[`should render PWM_CONTROL correctly with zero 1`] = `
                 color="grayBase"
               >
                 <Component
-                  className="P__P-KJbCR hrSHif"
+                  className="c2"
                   color="grayBase"
                 >
                   <p
-                    className="P__P-KJbCR hrSHif"
+                    className="c2"
                     color="grayBase"
                   >
                     Period
@@ -594,7 +1404,7 @@ exports[`should render PWM_CONTROL correctly with zero 1`] = `
             </label>
             <ControlPeriod__InputWrapper>
               <div
-                className="ControlPeriod__InputWrapper-icIPmx diDDNv"
+                className="c3"
               >
                 <ControlPeriod__StyledInput
                   onChange={[Function]}
@@ -603,7 +1413,7 @@ exports[`should render PWM_CONTROL correctly with zero 1`] = `
                   value={0}
                 >
                   <Input
-                    className="ControlPeriod__StyledInput-fNvBTX jSwXqv"
+                    className="c4"
                     focus={false}
                     kind="primary"
                     onChange={[Function]}
@@ -612,7 +1422,7 @@ exports[`should render PWM_CONTROL correctly with zero 1`] = `
                     value={0}
                   >
                     <input
-                      className="ControlPeriod__StyledInput-fNvBTX jSwXqv Input__Input-ixjKAz dDXeoZ"
+                      className="c4 c5"
                       kind="primary"
                       onChange={[Function]}
                       placeholder="Integer only"
@@ -635,7 +1445,7 @@ exports[`should render PWM_CONTROL correctly with zero 1`] = `
                   <BaseComponent
                     active={false}
                     block={false}
-                    className="Button__Button-jkHDFw fcrwCh"
+                    className="c6"
                     component="button"
                     disabled={false}
                     kind="primary"
@@ -645,7 +1455,7 @@ exports[`should render PWM_CONTROL correctly with zero 1`] = `
                     square={false}
                   >
                     <button
-                      className="Button__Button-jkHDFw fcrwCh"
+                      className="c6"
                       onClick={[Function]}
                     >
                       Ok
@@ -671,7 +1481,7 @@ exports[`should render PWM_CONTROL correctly with zero 1`] = `
       >
         <ControlRange__Container>
           <div
-            className="ControlRange__Container-ispxkc kQpIsI"
+            className="c7"
           >
             <ControlRange__LabelWrapper
               labels={
@@ -682,21 +1492,21 @@ exports[`should render PWM_CONTROL correctly with zero 1`] = `
               }
             >
               <div
-                className="ControlRange__LabelWrapper-hpKjGx bfHWDZ"
+                className="c8"
               >
                 <ControlRange__LabelItem>
                   <div
-                    className="ControlRange__LabelItem-kiIalK dulPtE"
+                    className="c9"
                   >
                     <P
                       color="grayBase"
                     >
                       <Component
-                        className="P__P-KJbCR hrSHif"
+                        className="c2"
                         color="grayBase"
                       >
                         <div
-                          className="P__P-KJbCR hrSHif"
+                          className="c2"
                           color="grayBase"
                         >
                           0
@@ -707,17 +1517,17 @@ exports[`should render PWM_CONTROL correctly with zero 1`] = `
                 </ControlRange__LabelItem>
                 <ControlRange__LabelItem>
                   <div
-                    className="ControlRange__LabelItem-kiIalK dulPtE"
+                    className="c9"
                   >
                     <P
                       color="grayBase"
                     >
                       <Component
-                        className="P__P-KJbCR hrSHif"
+                        className="c2"
                         color="grayBase"
                       >
                         <div
-                          className="P__P-KJbCR hrSHif"
+                          className="c2"
                           color="grayBase"
                         >
                           100
@@ -737,21 +1547,21 @@ exports[`should render PWM_CONTROL correctly with zero 1`] = `
               }
             >
               <div
-                className="ControlRange__InputWrapper-fklkwO fpvHuS"
+                className="c10"
               >
                 <ControlRange__ValueWrapper
                   color="grayBase"
                 >
                   <P
-                    className="ControlRange__ValueWrapper-jxMKxr kFWjXk"
+                    className="c11"
                     color="grayBase"
                   >
                     <Component
-                      className="ControlRange__ValueWrapper-jxMKxr kFWjXk P__P-KJbCR hrSHif"
+                      className="c11 c2"
                       color="grayBase"
                     >
                       <div
-                        className="ControlRange__ValueWrapper-jxMKxr kFWjXk P__P-KJbCR hrSHif"
+                        className="c11 c2"
                         color="grayBase"
                       >
                         Current value: 
@@ -759,15 +1569,15 @@ exports[`should render PWM_CONTROL correctly with zero 1`] = `
                           color="primary"
                         >
                           <P
-                            className="ControlRange__Value-kXycxr glmUBq"
+                            className="c12"
                             color="primary"
                           >
                             <Component
-                              className="ControlRange__Value-kXycxr glmUBq P__P-KJbCR jEbbdW"
+                              className="c12 c13"
                               color="primary"
                             >
                               <div
-                                className="ControlRange__Value-kXycxr glmUBq P__P-KJbCR jEbbdW"
+                                className="c12 c13"
                                 color="primary"
                               >
                                 0
@@ -791,7 +1601,7 @@ exports[`should render PWM_CONTROL correctly with zero 1`] = `
                   value={0}
                 >
                   <input
-                    className="InputRange__InputRange-uGAsR lghldr"
+                    className="c14"
                     kind="primary"
                     max={100}
                     min={0}

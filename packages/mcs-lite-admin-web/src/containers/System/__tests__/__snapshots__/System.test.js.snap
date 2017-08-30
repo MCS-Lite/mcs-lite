@@ -3,6 +3,7 @@
 exports[`should renders <System> correctly 1`] = `
 <div>
   <HelmetWrapper
+    defer={true}
     encodeSpecialCharacters={true}
   >
     <title>
@@ -90,6 +91,7 @@ exports[`should renders <System> correctly 1`] = `
 exports[`should renders <System> correctly with json format error 1`] = `
 <div>
   <HelmetWrapper
+    defer={true}
     encodeSpecialCharacters={true}
   >
     <title>

@@ -215,6 +215,7 @@ exports[`should render with delete footer - Delete 1`] = `
 exports[`should renders <User> correctly 1`] = `
 <div>
   <HelmetWrapper
+    defer={true}
     encodeSpecialCharacters={true}
   >
     <title>

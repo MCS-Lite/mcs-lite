@@ -1,6 +1,50 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should render PWM_DISPLAY correctly with default value to N/A 1`] = `
+.c1 {
+  margin: 0;
+  font-size: 1rem;
+  color: #999A94;
+}
+
+.c3 {
+  margin: 0;
+  font-weight: normal;
+  font-size: 2.46rem;
+  color: #00A1DE;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+}
+
+.c0 > div {
+  width: 100%;
+}
+
+.c0 > div + div {
+  margin-top: 10px;
+}
+
+.c2 {
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  margin-top: 5px;
+}
+
 <DataChannelAdapter
   dataChannelProps={
     Object {
@@ -28,18 +72,18 @@ exports[`should render PWM_DISPLAY correctly with default value to N/A 1`] = `
   >
     <DisplayMultipleValue__Container>
       <div
-        className="DisplayMultipleValue__Container-emGSTk bcIInJ"
+        className="c0"
       >
         <div>
           <P
             color="grayBase"
           >
             <Component
-              className="P__P-KJbCR hrSHif"
+              className="c1"
               color="grayBase"
             >
               <p
-                className="P__P-KJbCR hrSHif"
+                className="c1"
                 color="grayBase"
               >
                 Value
@@ -50,17 +94,17 @@ exports[`should render PWM_DISPLAY correctly with default value to N/A 1`] = `
             color="primary"
           >
             <Heading
-              className="DisplayMultipleValue__StyledHeading-fVnwQZ kDmihL"
+              className="c2"
               color="primary"
               level={1}
             >
               <H
-                className="DisplayMultipleValue__StyledHeading-fVnwQZ kDmihL Heading__Heading-bbmQNS qIgcJ"
+                className="c2 c3"
                 color="primary"
                 level={1}
               >
                 <h1
-                  className="DisplayMultipleValue__StyledHeading-fVnwQZ kDmihL Heading__Heading-bbmQNS qIgcJ"
+                  className="c2 c3"
                   color="primary"
                 >
                   N/A
@@ -74,11 +118,11 @@ exports[`should render PWM_DISPLAY correctly with default value to N/A 1`] = `
             color="grayBase"
           >
             <Component
-              className="P__P-KJbCR hrSHif"
+              className="c1"
               color="grayBase"
             >
               <p
-                className="P__P-KJbCR hrSHif"
+                className="c1"
                 color="grayBase"
               >
                 Period
@@ -89,17 +133,17 @@ exports[`should render PWM_DISPLAY correctly with default value to N/A 1`] = `
             color="primary"
           >
             <Heading
-              className="DisplayMultipleValue__StyledHeading-fVnwQZ kDmihL"
+              className="c2"
               color="primary"
               level={1}
             >
               <H
-                className="DisplayMultipleValue__StyledHeading-fVnwQZ kDmihL Heading__Heading-bbmQNS qIgcJ"
+                className="c2 c3"
                 color="primary"
                 level={1}
               >
                 <h1
-                  className="DisplayMultipleValue__StyledHeading-fVnwQZ kDmihL Heading__Heading-bbmQNS qIgcJ"
+                  className="c2 c3"
                   color="primary"
                 >
                   N/A
@@ -115,6 +159,50 @@ exports[`should render PWM_DISPLAY correctly with default value to N/A 1`] = `
 `;
 
 exports[`should render PWM_DISPLAY correctly with max 1`] = `
+.c1 {
+  margin: 0;
+  font-size: 1rem;
+  color: #999A94;
+}
+
+.c3 {
+  margin: 0;
+  font-weight: normal;
+  font-size: 2.46rem;
+  color: #00A1DE;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+}
+
+.c0 > div {
+  width: 100%;
+}
+
+.c0 > div + div {
+  margin-top: 10px;
+}
+
+.c2 {
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  margin-top: 5px;
+}
+
 <DataChannelAdapter
   dataChannelProps={
     Object {
@@ -145,18 +233,18 @@ exports[`should render PWM_DISPLAY correctly with max 1`] = `
   >
     <DisplayMultipleValue__Container>
       <div
-        className="DisplayMultipleValue__Container-emGSTk bcIInJ"
+        className="c0"
       >
         <div>
           <P
             color="grayBase"
           >
             <Component
-              className="P__P-KJbCR hrSHif"
+              className="c1"
               color="grayBase"
             >
               <p
-                className="P__P-KJbCR hrSHif"
+                className="c1"
                 color="grayBase"
               >
                 Value
@@ -167,17 +255,17 @@ exports[`should render PWM_DISPLAY correctly with max 1`] = `
             color="primary"
           >
             <Heading
-              className="DisplayMultipleValue__StyledHeading-fVnwQZ kDmihL"
+              className="c2"
               color="primary"
               level={1}
             >
               <H
-                className="DisplayMultipleValue__StyledHeading-fVnwQZ kDmihL Heading__Heading-bbmQNS qIgcJ"
+                className="c2 c3"
                 color="primary"
                 level={1}
               >
                 <h1
-                  className="DisplayMultipleValue__StyledHeading-fVnwQZ kDmihL Heading__Heading-bbmQNS qIgcJ"
+                  className="c2 c3"
                   color="primary"
                 >
                   100
@@ -191,11 +279,11 @@ exports[`should render PWM_DISPLAY correctly with max 1`] = `
             color="grayBase"
           >
             <Component
-              className="P__P-KJbCR hrSHif"
+              className="c1"
               color="grayBase"
             >
               <p
-                className="P__P-KJbCR hrSHif"
+                className="c1"
                 color="grayBase"
               >
                 Period
@@ -206,17 +294,17 @@ exports[`should render PWM_DISPLAY correctly with max 1`] = `
             color="primary"
           >
             <Heading
-              className="DisplayMultipleValue__StyledHeading-fVnwQZ kDmihL"
+              className="c2"
               color="primary"
               level={1}
             >
               <H
-                className="DisplayMultipleValue__StyledHeading-fVnwQZ kDmihL Heading__Heading-bbmQNS qIgcJ"
+                className="c2 c3"
                 color="primary"
                 level={1}
               >
                 <h1
-                  className="DisplayMultipleValue__StyledHeading-fVnwQZ kDmihL Heading__Heading-bbmQNS qIgcJ"
+                  className="c2 c3"
                   color="primary"
                 >
                   1
@@ -232,6 +320,50 @@ exports[`should render PWM_DISPLAY correctly with max 1`] = `
 `;
 
 exports[`should render PWM_DISPLAY correctly with zero 1`] = `
+.c1 {
+  margin: 0;
+  font-size: 1rem;
+  color: #999A94;
+}
+
+.c3 {
+  margin: 0;
+  font-weight: normal;
+  font-size: 2.46rem;
+  color: #00A1DE;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+}
+
+.c0 > div {
+  width: 100%;
+}
+
+.c0 > div + div {
+  margin-top: 10px;
+}
+
+.c2 {
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  margin-top: 5px;
+}
+
 <DataChannelAdapter
   dataChannelProps={
     Object {
@@ -262,18 +394,18 @@ exports[`should render PWM_DISPLAY correctly with zero 1`] = `
   >
     <DisplayMultipleValue__Container>
       <div
-        className="DisplayMultipleValue__Container-emGSTk bcIInJ"
+        className="c0"
       >
         <div>
           <P
             color="grayBase"
           >
             <Component
-              className="P__P-KJbCR hrSHif"
+              className="c1"
               color="grayBase"
             >
               <p
-                className="P__P-KJbCR hrSHif"
+                className="c1"
                 color="grayBase"
               >
                 Value
@@ -284,17 +416,17 @@ exports[`should render PWM_DISPLAY correctly with zero 1`] = `
             color="primary"
           >
             <Heading
-              className="DisplayMultipleValue__StyledHeading-fVnwQZ kDmihL"
+              className="c2"
               color="primary"
               level={1}
             >
               <H
-                className="DisplayMultipleValue__StyledHeading-fVnwQZ kDmihL Heading__Heading-bbmQNS qIgcJ"
+                className="c2 c3"
                 color="primary"
                 level={1}
               >
                 <h1
-                  className="DisplayMultipleValue__StyledHeading-fVnwQZ kDmihL Heading__Heading-bbmQNS qIgcJ"
+                  className="c2 c3"
                   color="primary"
                 >
                   0
@@ -308,11 +440,11 @@ exports[`should render PWM_DISPLAY correctly with zero 1`] = `
             color="grayBase"
           >
             <Component
-              className="P__P-KJbCR hrSHif"
+              className="c1"
               color="grayBase"
             >
               <p
-                className="P__P-KJbCR hrSHif"
+                className="c1"
                 color="grayBase"
               >
                 Period
@@ -323,17 +455,17 @@ exports[`should render PWM_DISPLAY correctly with zero 1`] = `
             color="primary"
           >
             <Heading
-              className="DisplayMultipleValue__StyledHeading-fVnwQZ kDmihL"
+              className="c2"
               color="primary"
               level={1}
             >
               <H
-                className="DisplayMultipleValue__StyledHeading-fVnwQZ kDmihL Heading__Heading-bbmQNS qIgcJ"
+                className="c2 c3"
                 color="primary"
                 level={1}
               >
                 <h1
-                  className="DisplayMultipleValue__StyledHeading-fVnwQZ kDmihL Heading__Heading-bbmQNS qIgcJ"
+                  className="c2 c3"
                   color="primary"
                 >
                   0

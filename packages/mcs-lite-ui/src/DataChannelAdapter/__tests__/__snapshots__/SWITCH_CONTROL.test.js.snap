@@ -1,6 +1,38 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should render SWITCH_CONTROL correctly with default value to false 1`] = `
+.c0 {
+  position: relative;
+  height: 50px;
+  width: 82px;
+  box-sizing: border-box;
+  border-radius: 24px;
+  -webkit-transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.2s;
+  transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.2s;
+  cursor: pointer;
+  background-color: #999A94;
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+}
+
+.c0::after {
+  content: " ";
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  cursor: pointer;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.17);
+  top: 3px;
+  left: 0;
+  -webkit-transition: left cubic-bezier(0.47,0,0.75,0.72) 0.2s;
+  transition: left cubic-bezier(0.47,0,0.75,0.72) 0.2s;
+  margin: 0 3px;
+  border: 1px solid rgba(0,0,0,0.1);
+}
+
 <DataChannelAdapter
   dataChannelProps={
     Object {
@@ -23,7 +55,7 @@ exports[`should render SWITCH_CONTROL correctly with default value to false 1`] 
     >
       <div
         checked={false}
-        className="Switch__Switch-iwxo jSKZSz"
+        className="c0"
         kind="success"
         onClick={[Function]}
       />
@@ -33,6 +65,38 @@ exports[`should render SWITCH_CONTROL correctly with default value to false 1`] 
 `;
 
 exports[`should render SWITCH_CONTROL correctly with false value 1`] = `
+.c0 {
+  position: relative;
+  height: 50px;
+  width: 82px;
+  box-sizing: border-box;
+  border-radius: 24px;
+  -webkit-transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.2s;
+  transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.2s;
+  cursor: pointer;
+  background-color: #999A94;
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+}
+
+.c0::after {
+  content: " ";
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  cursor: pointer;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.17);
+  top: 3px;
+  left: 0;
+  -webkit-transition: left cubic-bezier(0.47,0,0.75,0.72) 0.2s;
+  transition: left cubic-bezier(0.47,0,0.75,0.72) 0.2s;
+  margin: 0 3px;
+  border: 1px solid rgba(0,0,0,0.1);
+}
+
 <DataChannelAdapter
   dataChannelProps={
     Object {
@@ -57,7 +121,7 @@ exports[`should render SWITCH_CONTROL correctly with false value 1`] = `
     >
       <div
         checked={false}
-        className="Switch__Switch-iwxo jSKZSz"
+        className="c0"
         kind="success"
         onClick={[Function]}
       />
@@ -67,6 +131,38 @@ exports[`should render SWITCH_CONTROL correctly with false value 1`] = `
 `;
 
 exports[`should render SWITCH_CONTROL correctly with true value 1`] = `
+.c0 {
+  position: relative;
+  height: 50px;
+  width: 82px;
+  box-sizing: border-box;
+  border-radius: 24px;
+  -webkit-transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.2s;
+  transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.2s;
+  cursor: pointer;
+  background-color: #69BE28;
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+}
+
+.c0::after {
+  content: " ";
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  cursor: pointer;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.17);
+  top: 3px;
+  left: 32px;
+  -webkit-transition: left cubic-bezier(0.47,0,0.75,0.72) 0.2s;
+  transition: left cubic-bezier(0.47,0,0.75,0.72) 0.2s;
+  margin: 0 3px;
+  border: 1px solid rgba(0,0,0,0.1);
+}
+
 <DataChannelAdapter
   dataChannelProps={
     Object {
@@ -91,7 +187,7 @@ exports[`should render SWITCH_CONTROL correctly with true value 1`] = `
     >
       <div
         checked={true}
-        className="Switch__Switch-iwxo ipuZOX"
+        className="c0"
         kind="success"
         onClick={[Function]}
       />

@@ -3,6 +3,7 @@
 exports[`should renders <Account> correctly 1`] = `
 <styled.div>
   <HelmetWrapper
+    defer={true}
     encodeSpecialCharacters={true}
   >
     <title>

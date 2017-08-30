@@ -3,6 +3,7 @@
 exports[`should renders <Signin> correctly 1`] = `
 <Styled(MobileContentWrapper)>
   <HelmetWrapper
+    defer={true}
     encodeSpecialCharacters={true}
   >
     <title>
@@ -59,6 +60,7 @@ exports[`should renders <Signin> correctly 1`] = `
 exports[`should renders <Signin> correctly with errorMessage 1`] = `
 <Styled(MobileContentWrapper)>
   <HelmetWrapper
+    defer={true}
     encodeSpecialCharacters={true}
   >
     <title>

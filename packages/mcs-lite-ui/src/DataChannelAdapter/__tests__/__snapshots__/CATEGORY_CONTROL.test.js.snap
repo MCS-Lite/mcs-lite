@@ -1,6 +1,187 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should render CATEGORY_CONTROL correctly with default value to N/A 1`] = `
+.c3 {
+  margin: 0;
+  font-size: 1rem;
+  color: #999A94;
+}
+
+.c7 {
+  margin: 0;
+  font-size: 1rem;
+  color: #00A1DE;
+}
+
+.c8 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 100%;
+  outline: none;
+  background-color: rgba(0,0,0,0);
+  cursor: pointer;
+}
+
+.c8::-webkit-slider-runnable-track {
+  -webkit-appearance: none;
+  height: 16px;
+  border-radius: 8px;
+  background-image: linear-gradient(-180deg,#DFDFDF 5%,#F6F6F6 96%);
+  box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.35),inset 0 0 0 2px #E5E6E6,inset 0 1px 10px 0 rgba(0,0,0,0.05);
+}
+
+.c8::-moz-range-track {
+  -moz-appearance: none;
+  height: 16px;
+  border-radius: 8px;
+  background-image: linear-gradient(-180deg,#DFDFDF 5%,#F6F6F6 96%);
+  box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.35),inset 0 0 0 2px #E5E6E6,inset 0 1px 10px 0 rgba(0,0,0,0.05);
+}
+
+.c8::-moz-focus-outer {
+  border: 0;
+}
+
+.c8::-ms-track {
+  -webkit-appearance: none;
+  height: 16px;
+  border-radius: 8px;
+  background-image: linear-gradient(-180deg,#DFDFDF 5%,#F6F6F6 96%);
+  box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.35),inset 0 0 0 2px #E5E6E6,inset 0 1px 10px 0 rgba(0,0,0,0.05);
+}
+
+.c8::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  margin-top: -12px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-image: radial-gradient(50% 50%,#FFFFFF 50%,#FFFFFF 73%,#F8F8F8 81%,#EBEBEB 90%,#DDDDDD 95%);
+  -webkit-transition: -webkit-transform 0.3s ease,width 0.2s ease,height 0.2s ease;
+  -webkit-transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
+  transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #00A1DE,inset 0 0 0 3px rgb(0,192,255);
+}
+
+.c8::-moz-range-thumb {
+  -moz-appearance: none;
+  height: 40px;
+  width: 40px;
+  border-width: 0;
+  border-radius: 50%;
+  background-image: radial-gradient(50% 50%,#FFFFFF 50%,#FFFFFF 73%,#F8F8F8 81%,#EBEBEB 90%,#DDDDDD 95%);
+  -moz-appearance: none;
+  -moz-transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #00A1DE,inset 0 0 0 3px rgb(0,192,255);
+}
+
+.c8::-ms-thumb {
+  -webkit-appearance: none;
+  margin-top: -12px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-image: radial-gradient(50% 50%,#FFFFFF 50%,#FFFFFF 73%,#F8F8F8 81%,#EBEBEB 90%,#DDDDDD 95%);
+  -webkit-transition: -webkit-transform 0.3s ease,width 0.2s ease,height 0.2s ease;
+  -webkit-transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
+  transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #00A1DE,inset 0 0 0 3px rgb(0,192,255);
+}
+
+.c8::-webkit-slider-thumb:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.c8::-moz-range-thumb:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.c8::-ms-thumb:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.c0 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column-reverse;
+  -ms-flex-direction: column-reverse;
+  flex-direction: column-reverse;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c1 > *:first-child {
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+}
+
+.c1 > *:last-child {
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0 4px;
+  -webkit-flex-grow: 1;
+  -ms-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-basis: 0;
+  -ms-flex-basis: 0;
+  flex-basis: 0;
+  overflow: hidden;
+}
+
+.c2::before {
+  content: "";
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-right-color: #D1D2D3;
+  height: 4px;
+  margin-top: 5px;
+  margin-bottom: 8px;
+}
+
+.c5 {
+  margin-bottom: 15px;
+}
+
+.c6 {
+  display: inline-block;
+}
+
+.c4 {
+  padding: 0 0%;
+}
+
 <DataChannelAdapter
   dataChannelProps={
     Object {
@@ -36,7 +217,7 @@ exports[`should render CATEGORY_CONTROL correctly with default value to N/A 1`] 
   >
     <ControlRange__Container>
       <div
-        className="ControlRange__Container-ispxkc kQpIsI"
+        className="c0"
       >
         <ControlRange__LabelWrapper
           labels={
@@ -47,21 +228,21 @@ exports[`should render CATEGORY_CONTROL correctly with default value to N/A 1`] 
           }
         >
           <div
-            className="ControlRange__LabelWrapper-hpKjGx bfHWDZ"
+            className="c1"
           >
             <ControlRange__LabelItem>
               <div
-                className="ControlRange__LabelItem-kiIalK dulPtE"
+                className="c2"
               >
                 <P
                   color="grayBase"
                 >
                   <Component
-                    className="P__P-KJbCR hrSHif"
+                    className="c3"
                     color="grayBase"
                   >
                     <p
-                      className="P__P-KJbCR hrSHif"
+                      className="c3"
                       color="grayBase"
                     >
                       name1
@@ -72,17 +253,17 @@ exports[`should render CATEGORY_CONTROL correctly with default value to N/A 1`] 
             </ControlRange__LabelItem>
             <ControlRange__LabelItem>
               <div
-                className="ControlRange__LabelItem-kiIalK dulPtE"
+                className="c2"
               >
                 <P
                   color="grayBase"
                 >
                   <Component
-                    className="P__P-KJbCR hrSHif"
+                    className="c3"
                     color="grayBase"
                   >
                     <p
-                      className="P__P-KJbCR hrSHif"
+                      className="c3"
                       color="grayBase"
                     >
                       name2
@@ -102,21 +283,21 @@ exports[`should render CATEGORY_CONTROL correctly with default value to N/A 1`] 
           }
         >
           <div
-            className="ControlRange__InputWrapper-fklkwO fpvHuS"
+            className="c4"
           >
             <ControlRange__ValueWrapper
               color="grayBase"
             >
               <P
-                className="ControlRange__ValueWrapper-jxMKxr kFWjXk"
+                className="c5"
                 color="grayBase"
               >
                 <Component
-                  className="ControlRange__ValueWrapper-jxMKxr kFWjXk P__P-KJbCR hrSHif"
+                  className="c5 c3"
                   color="grayBase"
                 >
                   <div
-                    className="ControlRange__ValueWrapper-jxMKxr kFWjXk P__P-KJbCR hrSHif"
+                    className="c5 c3"
                     color="grayBase"
                   >
                     Current value: 
@@ -124,15 +305,15 @@ exports[`should render CATEGORY_CONTROL correctly with default value to N/A 1`] 
                       color="primary"
                     >
                       <P
-                        className="ControlRange__Value-kXycxr glmUBq"
+                        className="c6"
                         color="primary"
                       >
                         <Component
-                          className="ControlRange__Value-kXycxr glmUBq P__P-KJbCR jEbbdW"
+                          className="c6 c7"
                           color="primary"
                         >
                           <p
-                            className="ControlRange__Value-kXycxr glmUBq P__P-KJbCR jEbbdW"
+                            className="c6 c7"
                             color="primary"
                           >
                             N/A
@@ -155,7 +336,7 @@ exports[`should render CATEGORY_CONTROL correctly with default value to N/A 1`] 
               type="range"
             >
               <input
-                className="InputRange__InputRange-uGAsR lghldr"
+                className="c8"
                 kind="primary"
                 max={1}
                 min={0}
@@ -175,6 +356,187 @@ exports[`should render CATEGORY_CONTROL correctly with default value to N/A 1`] 
 `;
 
 exports[`should render CATEGORY_CONTROL correctly with first item 1`] = `
+.c3 {
+  margin: 0;
+  font-size: 1rem;
+  color: #999A94;
+}
+
+.c7 {
+  margin: 0;
+  font-size: 1rem;
+  color: #00A1DE;
+}
+
+.c8 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 100%;
+  outline: none;
+  background-color: rgba(0,0,0,0);
+  cursor: pointer;
+}
+
+.c8::-webkit-slider-runnable-track {
+  -webkit-appearance: none;
+  height: 16px;
+  border-radius: 8px;
+  background-image: linear-gradient(-180deg,#DFDFDF 5%,#F6F6F6 96%);
+  box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.35),inset 0 0 0 2px #E5E6E6,inset 0 1px 10px 0 rgba(0,0,0,0.05);
+}
+
+.c8::-moz-range-track {
+  -moz-appearance: none;
+  height: 16px;
+  border-radius: 8px;
+  background-image: linear-gradient(-180deg,#DFDFDF 5%,#F6F6F6 96%);
+  box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.35),inset 0 0 0 2px #E5E6E6,inset 0 1px 10px 0 rgba(0,0,0,0.05);
+}
+
+.c8::-moz-focus-outer {
+  border: 0;
+}
+
+.c8::-ms-track {
+  -webkit-appearance: none;
+  height: 16px;
+  border-radius: 8px;
+  background-image: linear-gradient(-180deg,#DFDFDF 5%,#F6F6F6 96%);
+  box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.35),inset 0 0 0 2px #E5E6E6,inset 0 1px 10px 0 rgba(0,0,0,0.05);
+}
+
+.c8::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  margin-top: -12px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-image: radial-gradient(50% 50%,#FFFFFF 50%,#FFFFFF 73%,#F8F8F8 81%,#EBEBEB 90%,#DDDDDD 95%);
+  -webkit-transition: -webkit-transform 0.3s ease,width 0.2s ease,height 0.2s ease;
+  -webkit-transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
+  transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #00A1DE,inset 0 0 0 3px rgb(0,192,255);
+}
+
+.c8::-moz-range-thumb {
+  -moz-appearance: none;
+  height: 40px;
+  width: 40px;
+  border-width: 0;
+  border-radius: 50%;
+  background-image: radial-gradient(50% 50%,#FFFFFF 50%,#FFFFFF 73%,#F8F8F8 81%,#EBEBEB 90%,#DDDDDD 95%);
+  -moz-appearance: none;
+  -moz-transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #00A1DE,inset 0 0 0 3px rgb(0,192,255);
+}
+
+.c8::-ms-thumb {
+  -webkit-appearance: none;
+  margin-top: -12px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-image: radial-gradient(50% 50%,#FFFFFF 50%,#FFFFFF 73%,#F8F8F8 81%,#EBEBEB 90%,#DDDDDD 95%);
+  -webkit-transition: -webkit-transform 0.3s ease,width 0.2s ease,height 0.2s ease;
+  -webkit-transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
+  transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #00A1DE,inset 0 0 0 3px rgb(0,192,255);
+}
+
+.c8::-webkit-slider-thumb:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.c8::-moz-range-thumb:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.c8::-ms-thumb:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.c0 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column-reverse;
+  -ms-flex-direction: column-reverse;
+  flex-direction: column-reverse;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c1 > *:first-child {
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+}
+
+.c1 > *:last-child {
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0 4px;
+  -webkit-flex-grow: 1;
+  -ms-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-basis: 0;
+  -ms-flex-basis: 0;
+  flex-basis: 0;
+  overflow: hidden;
+}
+
+.c2::before {
+  content: "";
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-right-color: #D1D2D3;
+  height: 4px;
+  margin-top: 5px;
+  margin-bottom: 8px;
+}
+
+.c5 {
+  margin-bottom: 15px;
+}
+
+.c6 {
+  display: inline-block;
+}
+
+.c4 {
+  padding: 0 0%;
+}
+
 <DataChannelAdapter
   dataChannelProps={
     Object {
@@ -213,7 +575,7 @@ exports[`should render CATEGORY_CONTROL correctly with first item 1`] = `
   >
     <ControlRange__Container>
       <div
-        className="ControlRange__Container-ispxkc kQpIsI"
+        className="c0"
       >
         <ControlRange__LabelWrapper
           labels={
@@ -224,21 +586,21 @@ exports[`should render CATEGORY_CONTROL correctly with first item 1`] = `
           }
         >
           <div
-            className="ControlRange__LabelWrapper-hpKjGx bfHWDZ"
+            className="c1"
           >
             <ControlRange__LabelItem>
               <div
-                className="ControlRange__LabelItem-kiIalK dulPtE"
+                className="c2"
               >
                 <P
                   color="grayBase"
                 >
                   <Component
-                    className="P__P-KJbCR hrSHif"
+                    className="c3"
                     color="grayBase"
                   >
                     <p
-                      className="P__P-KJbCR hrSHif"
+                      className="c3"
                       color="grayBase"
                     >
                       name1
@@ -249,17 +611,17 @@ exports[`should render CATEGORY_CONTROL correctly with first item 1`] = `
             </ControlRange__LabelItem>
             <ControlRange__LabelItem>
               <div
-                className="ControlRange__LabelItem-kiIalK dulPtE"
+                className="c2"
               >
                 <P
                   color="grayBase"
                 >
                   <Component
-                    className="P__P-KJbCR hrSHif"
+                    className="c3"
                     color="grayBase"
                   >
                     <p
-                      className="P__P-KJbCR hrSHif"
+                      className="c3"
                       color="grayBase"
                     >
                       name2
@@ -279,21 +641,21 @@ exports[`should render CATEGORY_CONTROL correctly with first item 1`] = `
           }
         >
           <div
-            className="ControlRange__InputWrapper-fklkwO fpvHuS"
+            className="c4"
           >
             <ControlRange__ValueWrapper
               color="grayBase"
             >
               <P
-                className="ControlRange__ValueWrapper-jxMKxr kFWjXk"
+                className="c5"
                 color="grayBase"
               >
                 <Component
-                  className="ControlRange__ValueWrapper-jxMKxr kFWjXk P__P-KJbCR hrSHif"
+                  className="c5 c3"
                   color="grayBase"
                 >
                   <div
-                    className="ControlRange__ValueWrapper-jxMKxr kFWjXk P__P-KJbCR hrSHif"
+                    className="c5 c3"
                     color="grayBase"
                   >
                     Current value: 
@@ -301,15 +663,15 @@ exports[`should render CATEGORY_CONTROL correctly with first item 1`] = `
                       color="primary"
                     >
                       <P
-                        className="ControlRange__Value-kXycxr glmUBq"
+                        className="c6"
                         color="primary"
                       >
                         <Component
-                          className="ControlRange__Value-kXycxr glmUBq P__P-KJbCR jEbbdW"
+                          className="c6 c7"
                           color="primary"
                         >
                           <p
-                            className="ControlRange__Value-kXycxr glmUBq P__P-KJbCR jEbbdW"
+                            className="c6 c7"
                             color="primary"
                           >
                             value1
@@ -333,7 +695,7 @@ exports[`should render CATEGORY_CONTROL correctly with first item 1`] = `
               value={0}
             >
               <input
-                className="InputRange__InputRange-uGAsR lghldr"
+                className="c8"
                 kind="primary"
                 max={1}
                 min={0}
@@ -354,6 +716,187 @@ exports[`should render CATEGORY_CONTROL correctly with first item 1`] = `
 `;
 
 exports[`should render CATEGORY_CONTROL correctly with second item 1`] = `
+.c3 {
+  margin: 0;
+  font-size: 1rem;
+  color: #999A94;
+}
+
+.c7 {
+  margin: 0;
+  font-size: 1rem;
+  color: #00A1DE;
+}
+
+.c8 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 100%;
+  outline: none;
+  background-color: rgba(0,0,0,0);
+  cursor: pointer;
+}
+
+.c8::-webkit-slider-runnable-track {
+  -webkit-appearance: none;
+  height: 16px;
+  border-radius: 8px;
+  background-image: linear-gradient(-180deg,#DFDFDF 5%,#F6F6F6 96%);
+  box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.35),inset 0 0 0 2px #E5E6E6,inset 0 1px 10px 0 rgba(0,0,0,0.05);
+}
+
+.c8::-moz-range-track {
+  -moz-appearance: none;
+  height: 16px;
+  border-radius: 8px;
+  background-image: linear-gradient(-180deg,#DFDFDF 5%,#F6F6F6 96%);
+  box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.35),inset 0 0 0 2px #E5E6E6,inset 0 1px 10px 0 rgba(0,0,0,0.05);
+}
+
+.c8::-moz-focus-outer {
+  border: 0;
+}
+
+.c8::-ms-track {
+  -webkit-appearance: none;
+  height: 16px;
+  border-radius: 8px;
+  background-image: linear-gradient(-180deg,#DFDFDF 5%,#F6F6F6 96%);
+  box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.35),inset 0 0 0 2px #E5E6E6,inset 0 1px 10px 0 rgba(0,0,0,0.05);
+}
+
+.c8::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  margin-top: -12px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-image: radial-gradient(50% 50%,#FFFFFF 50%,#FFFFFF 73%,#F8F8F8 81%,#EBEBEB 90%,#DDDDDD 95%);
+  -webkit-transition: -webkit-transform 0.3s ease,width 0.2s ease,height 0.2s ease;
+  -webkit-transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
+  transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #00A1DE,inset 0 0 0 3px rgb(0,192,255);
+}
+
+.c8::-moz-range-thumb {
+  -moz-appearance: none;
+  height: 40px;
+  width: 40px;
+  border-width: 0;
+  border-radius: 50%;
+  background-image: radial-gradient(50% 50%,#FFFFFF 50%,#FFFFFF 73%,#F8F8F8 81%,#EBEBEB 90%,#DDDDDD 95%);
+  -moz-appearance: none;
+  -moz-transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #00A1DE,inset 0 0 0 3px rgb(0,192,255);
+}
+
+.c8::-ms-thumb {
+  -webkit-appearance: none;
+  margin-top: -12px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-image: radial-gradient(50% 50%,#FFFFFF 50%,#FFFFFF 73%,#F8F8F8 81%,#EBEBEB 90%,#DDDDDD 95%);
+  -webkit-transition: -webkit-transform 0.3s ease,width 0.2s ease,height 0.2s ease;
+  -webkit-transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
+  transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #00A1DE,inset 0 0 0 3px rgb(0,192,255);
+}
+
+.c8::-webkit-slider-thumb:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.c8::-moz-range-thumb:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.c8::-ms-thumb:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.c0 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column-reverse;
+  -ms-flex-direction: column-reverse;
+  flex-direction: column-reverse;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c1 > *:first-child {
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+}
+
+.c1 > *:last-child {
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0 4px;
+  -webkit-flex-grow: 1;
+  -ms-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-basis: 0;
+  -ms-flex-basis: 0;
+  flex-basis: 0;
+  overflow: hidden;
+}
+
+.c2::before {
+  content: "";
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-right-color: #D1D2D3;
+  height: 4px;
+  margin-top: 5px;
+  margin-bottom: 8px;
+}
+
+.c5 {
+  margin-bottom: 15px;
+}
+
+.c6 {
+  display: inline-block;
+}
+
+.c4 {
+  padding: 0 0%;
+}
+
 <DataChannelAdapter
   dataChannelProps={
     Object {
@@ -392,7 +935,7 @@ exports[`should render CATEGORY_CONTROL correctly with second item 1`] = `
   >
     <ControlRange__Container>
       <div
-        className="ControlRange__Container-ispxkc kQpIsI"
+        className="c0"
       >
         <ControlRange__LabelWrapper
           labels={
@@ -403,21 +946,21 @@ exports[`should render CATEGORY_CONTROL correctly with second item 1`] = `
           }
         >
           <div
-            className="ControlRange__LabelWrapper-hpKjGx bfHWDZ"
+            className="c1"
           >
             <ControlRange__LabelItem>
               <div
-                className="ControlRange__LabelItem-kiIalK dulPtE"
+                className="c2"
               >
                 <P
                   color="grayBase"
                 >
                   <Component
-                    className="P__P-KJbCR hrSHif"
+                    className="c3"
                     color="grayBase"
                   >
                     <p
-                      className="P__P-KJbCR hrSHif"
+                      className="c3"
                       color="grayBase"
                     >
                       name1
@@ -428,17 +971,17 @@ exports[`should render CATEGORY_CONTROL correctly with second item 1`] = `
             </ControlRange__LabelItem>
             <ControlRange__LabelItem>
               <div
-                className="ControlRange__LabelItem-kiIalK dulPtE"
+                className="c2"
               >
                 <P
                   color="grayBase"
                 >
                   <Component
-                    className="P__P-KJbCR hrSHif"
+                    className="c3"
                     color="grayBase"
                   >
                     <p
-                      className="P__P-KJbCR hrSHif"
+                      className="c3"
                       color="grayBase"
                     >
                       name2
@@ -458,21 +1001,21 @@ exports[`should render CATEGORY_CONTROL correctly with second item 1`] = `
           }
         >
           <div
-            className="ControlRange__InputWrapper-fklkwO fpvHuS"
+            className="c4"
           >
             <ControlRange__ValueWrapper
               color="grayBase"
             >
               <P
-                className="ControlRange__ValueWrapper-jxMKxr kFWjXk"
+                className="c5"
                 color="grayBase"
               >
                 <Component
-                  className="ControlRange__ValueWrapper-jxMKxr kFWjXk P__P-KJbCR hrSHif"
+                  className="c5 c3"
                   color="grayBase"
                 >
                   <div
-                    className="ControlRange__ValueWrapper-jxMKxr kFWjXk P__P-KJbCR hrSHif"
+                    className="c5 c3"
                     color="grayBase"
                   >
                     Current value: 
@@ -480,15 +1023,15 @@ exports[`should render CATEGORY_CONTROL correctly with second item 1`] = `
                       color="primary"
                     >
                       <P
-                        className="ControlRange__Value-kXycxr glmUBq"
+                        className="c6"
                         color="primary"
                       >
                         <Component
-                          className="ControlRange__Value-kXycxr glmUBq P__P-KJbCR jEbbdW"
+                          className="c6 c7"
                           color="primary"
                         >
                           <p
-                            className="ControlRange__Value-kXycxr glmUBq P__P-KJbCR jEbbdW"
+                            className="c6 c7"
                             color="primary"
                           >
                             value2
@@ -512,7 +1055,7 @@ exports[`should render CATEGORY_CONTROL correctly with second item 1`] = `
               value={1}
             >
               <input
-                className="InputRange__InputRange-uGAsR lghldr"
+                className="c8"
                 kind="primary"
                 max={1}
                 min={0}

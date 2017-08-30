@@ -1,3 +1,4 @@
+import 'jest-styled-components';
 import './src/utils/rafPolyfill';
 
 // For DataChannelCard component.

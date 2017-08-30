@@ -3,6 +3,7 @@
 exports[`should renders <DeviceDetailInfo> correctly 1`] = `
 <div>
   <HelmetWrapper
+    defer={true}
     encodeSpecialCharacters={true}
   >
     <title>
@@ -80,6 +81,7 @@ exports[`should renders <DeviceDetailInfo> correctly 1`] = `
 exports[`should renders <DeviceDetailInfo> correctly without device data 1`] = `
 <div>
   <HelmetWrapper
+    defer={true}
     encodeSpecialCharacters={true}
   >
     <title />
