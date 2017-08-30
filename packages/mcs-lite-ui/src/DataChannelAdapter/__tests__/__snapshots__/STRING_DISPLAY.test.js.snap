@@ -1,6 +1,70 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should render STRING_DISPLAY correctly with default value to empty 1`] = `
+.c2 {
+  box-sizing: border-box;
+  width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 3px;
+  outline: 0;
+  padding: 5px 10px;
+  color: #353630;
+  border-color: #D1D2D3;
+  font-size: 1rem;
+}
+
+.c2:focus {
+  border-color: #00A1DE;
+  box-shadow: 0 0 3px 0 rgba(0,161,222,0.5);
+}
+
+.c2::-webkit-input-placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c2::-moz-placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c2:-ms-input-placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c2::placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c2:disabled {
+  background-color: #FFFFFF;
+}
+
+.c0 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+}
+
+.c1 {
+  height: 100%;
+  min-height: 4em;
+  -webkit-flex-grow: 1;
+  -ms-flex-grow: 1;
+  flex-grow: 1;
+}
+
 <DataChannelAdapter
   dataChannelProps={
     Object {
@@ -18,7 +82,7 @@ exports[`should render STRING_DISPLAY correctly with default value to empty 1`] 
   >
     <DisplayString__Container>
       <div
-        className="DisplayString__Container-gMiSmM kPtUam"
+        className="c0"
       >
         <DisplayString__StyledTextarea
           disabled={true}
@@ -26,14 +90,14 @@ exports[`should render STRING_DISPLAY correctly with default value to empty 1`] 
           value=""
         >
           <Textarea
-            className="DisplayString__StyledTextarea-iHUBEj gKioTS"
+            className="c1"
             disabled={true}
             kind="primary"
             placeholder="String only"
             value=""
           >
             <textarea
-              className="DisplayString__StyledTextarea-iHUBEj gKioTS Textarea__Textarea-dEcNVt WlyWE"
+              className="c1 c2"
               disabled={true}
               kind="primary"
               placeholder="String only"
@@ -48,6 +112,70 @@ exports[`should render STRING_DISPLAY correctly with default value to empty 1`] 
 `;
 
 exports[`should render STRING_DISPLAY correctly with empty string 1`] = `
+.c2 {
+  box-sizing: border-box;
+  width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 3px;
+  outline: 0;
+  padding: 5px 10px;
+  color: #353630;
+  border-color: #D1D2D3;
+  font-size: 1rem;
+}
+
+.c2:focus {
+  border-color: #00A1DE;
+  box-shadow: 0 0 3px 0 rgba(0,161,222,0.5);
+}
+
+.c2::-webkit-input-placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c2::-moz-placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c2:-ms-input-placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c2::placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c2:disabled {
+  background-color: #FFFFFF;
+}
+
+.c0 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+}
+
+.c1 {
+  height: 100%;
+  min-height: 4em;
+  -webkit-flex-grow: 1;
+  -ms-flex-grow: 1;
+  flex-grow: 1;
+}
+
 <DataChannelAdapter
   dataChannelProps={
     Object {
@@ -67,7 +195,7 @@ exports[`should render STRING_DISPLAY correctly with empty string 1`] = `
   >
     <DisplayString__Container>
       <div
-        className="DisplayString__Container-gMiSmM kPtUam"
+        className="c0"
       >
         <DisplayString__StyledTextarea
           disabled={true}
@@ -75,14 +203,14 @@ exports[`should render STRING_DISPLAY correctly with empty string 1`] = `
           value=""
         >
           <Textarea
-            className="DisplayString__StyledTextarea-iHUBEj gKioTS"
+            className="c1"
             disabled={true}
             kind="primary"
             placeholder="String only"
             value=""
           >
             <textarea
-              className="DisplayString__StyledTextarea-iHUBEj gKioTS Textarea__Textarea-dEcNVt WlyWE"
+              className="c1 c2"
               disabled={true}
               kind="primary"
               placeholder="String only"
@@ -97,6 +225,70 @@ exports[`should render STRING_DISPLAY correctly with empty string 1`] = `
 `;
 
 exports[`should render STRING_DISPLAY correctly with value 1`] = `
+.c2 {
+  box-sizing: border-box;
+  width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 3px;
+  outline: 0;
+  padding: 5px 10px;
+  color: #353630;
+  border-color: #D1D2D3;
+  font-size: 1rem;
+}
+
+.c2:focus {
+  border-color: #00A1DE;
+  box-shadow: 0 0 3px 0 rgba(0,161,222,0.5);
+}
+
+.c2::-webkit-input-placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c2::-moz-placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c2:-ms-input-placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c2::placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c2:disabled {
+  background-color: #FFFFFF;
+}
+
+.c0 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+}
+
+.c1 {
+  height: 100%;
+  min-height: 4em;
+  -webkit-flex-grow: 1;
+  -ms-flex-grow: 1;
+  flex-grow: 1;
+}
+
 <DataChannelAdapter
   dataChannelProps={
     Object {
@@ -116,7 +308,7 @@ exports[`should render STRING_DISPLAY correctly with value 1`] = `
   >
     <DisplayString__Container>
       <div
-        className="DisplayString__Container-gMiSmM kPtUam"
+        className="c0"
       >
         <DisplayString__StyledTextarea
           disabled={true}
@@ -124,14 +316,14 @@ exports[`should render STRING_DISPLAY correctly with value 1`] = `
           value="michaelhsu"
         >
           <Textarea
-            className="DisplayString__StyledTextarea-iHUBEj gKioTS"
+            className="c1"
             disabled={true}
             kind="primary"
             placeholder="String only"
             value="michaelhsu"
           >
             <textarea
-              className="DisplayString__StyledTextarea-iHUBEj gKioTS Textarea__Textarea-dEcNVt WlyWE"
+              className="c1 c2"
               disabled={true}
               kind="primary"
               placeholder="String only"

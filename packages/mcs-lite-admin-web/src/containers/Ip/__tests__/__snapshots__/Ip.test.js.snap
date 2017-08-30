@@ -3,6 +3,7 @@
 exports[`should renders <Ip> correctly with ip 1`] = `
 <div>
   <HelmetWrapper
+    defer={true}
     encodeSpecialCharacters={true}
   >
     <title>
@@ -51,6 +52,7 @@ exports[`should renders <Ip> correctly with ip 1`] = `
 exports[`should renders <Ip> correctly without ip 1`] = `
 <div>
   <HelmetWrapper
+    defer={true}
     encodeSpecialCharacters={true}
   >
     <title>

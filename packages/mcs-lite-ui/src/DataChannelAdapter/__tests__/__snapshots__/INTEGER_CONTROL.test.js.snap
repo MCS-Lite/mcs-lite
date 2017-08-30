@@ -1,6 +1,135 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should render INTEGER_CONTROL correctly with default value to empty 1`] = `
+.c5 {
+  color: #00A1DE;
+  -webkit-transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.c5:hover {
+  color: rgb(0,151,208);
+}
+
+.c5:active {
+  color: rgb(0,144,198);
+}
+
+.c3 {
+  margin: 0;
+  font-size: 1rem;
+  color: currentColor;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c4 > * {
+  margin-right: 5px;
+}
+
+.c6 {
+  border-width: 1px;
+  border-style: solid;
+  outline: none;
+  box-sizing: border-box;
+  -webkit-transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  line-height: 0;
+  cursor: pointer;
+  background-color: #00A1DE;
+  color: #FFFFFF;
+  border-radius: 3px;
+  width: initial;
+  min-width: 80px;
+  height: 32px;
+  padding: 6px 15px;
+  font-size: 1rem;
+  border-color: rgb(0,130,179);
+}
+
+.c6:hover {
+  background-color: rgb(0,151,208);
+}
+
+.c6:active {
+  background-color: rgb(0,144,198);
+}
+
+.c1 {
+  box-sizing: border-box;
+  width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 3px;
+  outline: 0;
+  padding: 0 10px;
+  line-height: 1;
+  min-height: 32px;
+  color: #353630;
+  font-size: 1rem;
+  border-color: #D1D2D3;
+  box-shadow: none;
+}
+
+.c1:focus {
+  border-color: #00A1DE;
+  box-shadow: 0 0 3px 0 rgba(0,161,222,0.5);
+}
+
+.c1::-webkit-input-placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c1::-moz-placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c1:-ms-input-placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c1::placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c0 {
+  width: 100%;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-between;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: space-between;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
 <DataChannelAdapter
   dataChannelProps={
     Object {
@@ -21,7 +150,7 @@ exports[`should render INTEGER_CONTROL correctly with default value to empty 1`]
   >
     <ControlNumber__Container>
       <div
-        className="ControlNumber__Container-gmlYuy dBXKqA"
+        className="c0"
       >
         <Input
           focus={false}
@@ -32,7 +161,7 @@ exports[`should render INTEGER_CONTROL correctly with default value to empty 1`]
           value=""
         >
           <input
-            className="Input__Input-ixjKAz dDXeoZ"
+            className="c1"
             kind="primary"
             onChange={[Function]}
             placeholder="Integer only"
@@ -42,7 +171,7 @@ exports[`should render INTEGER_CONTROL correctly with default value to empty 1`]
         </Input>
         <ControlNumber__ButtonWrapper>
           <div
-            className="ControlNumber__ButtonWrapper-iczkcP iBHdKt"
+            className="c2"
           >
             <ButtonClear
               onClick={[Function]}
@@ -51,20 +180,20 @@ exports[`should render INTEGER_CONTROL correctly with default value to empty 1`]
                 onClick={[Function]}
               >
                 <Component
-                  className="P__P-KJbCR dPUstJ"
+                  className="c3"
                   onClick={[Function]}
                 >
                   <div
-                    className="P__P-KJbCR dPUstJ"
+                    className="c3"
                     onClick={[Function]}
                   >
                     <ButtonClear__StyledA>
                       <A
-                        className="ButtonClear__StyledA-hPckxD gdbAWr"
+                        className="c4"
                         color="primary"
                       >
                         <a
-                          className="ButtonClear__StyledA-hPckxD gdbAWr A__A-cCPuKx eNMAVf"
+                          className="c4 c5"
                           color="primary"
                         >
                           <IconDelete
@@ -104,7 +233,7 @@ exports[`should render INTEGER_CONTROL correctly with default value to empty 1`]
               <BaseComponent
                 active={false}
                 block={false}
-                className="Button__Button-jkHDFw fcrwCh"
+                className="c6"
                 component="button"
                 disabled={false}
                 kind="primary"
@@ -114,7 +243,7 @@ exports[`should render INTEGER_CONTROL correctly with default value to empty 1`]
                 square={false}
               >
                 <button
-                  className="Button__Button-jkHDFw fcrwCh"
+                  className="c6"
                   onClick={[Function]}
                 >
                   Ok
@@ -130,6 +259,153 @@ exports[`should render INTEGER_CONTROL correctly with default value to empty 1`]
 `;
 
 exports[`should render INTEGER_CONTROL correctly with unit 1`] = `
+.c7 {
+  color: #00A1DE;
+  -webkit-transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.c7:hover {
+  color: rgb(0,151,208);
+}
+
+.c7:active {
+  color: rgb(0,144,198);
+}
+
+.c5 {
+  margin: 0;
+  font-size: 1rem;
+  color: currentColor;
+}
+
+.c2 {
+  margin: 0;
+  font-size: 1rem;
+  color: #999A94;
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c6 > * {
+  margin-right: 5px;
+}
+
+.c8 {
+  border-width: 1px;
+  border-style: solid;
+  outline: none;
+  box-sizing: border-box;
+  -webkit-transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  line-height: 0;
+  cursor: pointer;
+  background-color: #00A1DE;
+  color: #FFFFFF;
+  border-radius: 3px;
+  width: initial;
+  min-width: 80px;
+  height: 32px;
+  padding: 6px 15px;
+  font-size: 1rem;
+  border-color: rgb(0,130,179);
+}
+
+.c8:hover {
+  background-color: rgb(0,151,208);
+}
+
+.c8:active {
+  background-color: rgb(0,144,198);
+}
+
+.c3 {
+  box-sizing: border-box;
+  width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 3px;
+  outline: 0;
+  padding: 0 10px;
+  line-height: 1;
+  min-height: 32px;
+  color: #353630;
+  font-size: 1rem;
+  border-color: #D1D2D3;
+  box-shadow: none;
+}
+
+.c3:focus {
+  border-color: #00A1DE;
+  box-shadow: 0 0 3px 0 rgba(0,161,222,0.5);
+}
+
+.c3::-webkit-input-placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c3::-moz-placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c3:-ms-input-placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c3::placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c0 {
+  width: 100%;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-between;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: space-between;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.c1 {
+  margin-bottom: 5px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
 <DataChannelAdapter
   dataChannelProps={
     Object {
@@ -155,21 +431,21 @@ exports[`should render INTEGER_CONTROL correctly with unit 1`] = `
   >
     <ControlNumber__Container>
       <div
-        className="ControlNumber__Container-gmlYuy dBXKqA"
+        className="c0"
       >
         <ControlNumber__Unixtype
           color="grayBase"
         >
           <P
-            className="ControlNumber__Unixtype-hOgmLf iwcLfq"
+            className="c1"
             color="grayBase"
           >
             <Component
-              className="ControlNumber__Unixtype-hOgmLf iwcLfq P__P-KJbCR hrSHif"
+              className="c1 c2"
               color="grayBase"
             >
               <p
-                className="ControlNumber__Unixtype-hOgmLf iwcLfq P__P-KJbCR hrSHif"
+                className="c1 c2"
                 color="grayBase"
               >
                 單位：攝氏
@@ -186,7 +462,7 @@ exports[`should render INTEGER_CONTROL correctly with unit 1`] = `
           value={1}
         >
           <input
-            className="Input__Input-ixjKAz dDXeoZ"
+            className="c3"
             kind="primary"
             onChange={[Function]}
             placeholder="Integer only"
@@ -196,7 +472,7 @@ exports[`should render INTEGER_CONTROL correctly with unit 1`] = `
         </Input>
         <ControlNumber__ButtonWrapper>
           <div
-            className="ControlNumber__ButtonWrapper-iczkcP iBHdKt"
+            className="c4"
           >
             <ButtonClear
               onClick={[Function]}
@@ -205,20 +481,20 @@ exports[`should render INTEGER_CONTROL correctly with unit 1`] = `
                 onClick={[Function]}
               >
                 <Component
-                  className="P__P-KJbCR dPUstJ"
+                  className="c5"
                   onClick={[Function]}
                 >
                   <div
-                    className="P__P-KJbCR dPUstJ"
+                    className="c5"
                     onClick={[Function]}
                   >
                     <ButtonClear__StyledA>
                       <A
-                        className="ButtonClear__StyledA-hPckxD gdbAWr"
+                        className="c6"
                         color="primary"
                       >
                         <a
-                          className="ButtonClear__StyledA-hPckxD gdbAWr A__A-cCPuKx eNMAVf"
+                          className="c6 c7"
                           color="primary"
                         >
                           <IconDelete
@@ -258,7 +534,7 @@ exports[`should render INTEGER_CONTROL correctly with unit 1`] = `
               <BaseComponent
                 active={false}
                 block={false}
-                className="Button__Button-jkHDFw fcrwCh"
+                className="c8"
                 component="button"
                 disabled={false}
                 kind="primary"
@@ -268,7 +544,7 @@ exports[`should render INTEGER_CONTROL correctly with unit 1`] = `
                 square={false}
               >
                 <button
-                  className="Button__Button-jkHDFw fcrwCh"
+                  className="c8"
                   onClick={[Function]}
                 >
                   Ok
@@ -284,6 +560,135 @@ exports[`should render INTEGER_CONTROL correctly with unit 1`] = `
 `;
 
 exports[`should render INTEGER_CONTROL correctly with value 1`] = `
+.c5 {
+  color: #00A1DE;
+  -webkit-transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.c5:hover {
+  color: rgb(0,151,208);
+}
+
+.c5:active {
+  color: rgb(0,144,198);
+}
+
+.c3 {
+  margin: 0;
+  font-size: 1rem;
+  color: currentColor;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c4 > * {
+  margin-right: 5px;
+}
+
+.c6 {
+  border-width: 1px;
+  border-style: solid;
+  outline: none;
+  box-sizing: border-box;
+  -webkit-transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  line-height: 0;
+  cursor: pointer;
+  background-color: #00A1DE;
+  color: #FFFFFF;
+  border-radius: 3px;
+  width: initial;
+  min-width: 80px;
+  height: 32px;
+  padding: 6px 15px;
+  font-size: 1rem;
+  border-color: rgb(0,130,179);
+}
+
+.c6:hover {
+  background-color: rgb(0,151,208);
+}
+
+.c6:active {
+  background-color: rgb(0,144,198);
+}
+
+.c1 {
+  box-sizing: border-box;
+  width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 3px;
+  outline: 0;
+  padding: 0 10px;
+  line-height: 1;
+  min-height: 32px;
+  color: #353630;
+  font-size: 1rem;
+  border-color: #D1D2D3;
+  box-shadow: none;
+}
+
+.c1:focus {
+  border-color: #00A1DE;
+  box-shadow: 0 0 3px 0 rgba(0,161,222,0.5);
+}
+
+.c1::-webkit-input-placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c1::-moz-placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c1:-ms-input-placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c1::placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c0 {
+  width: 100%;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-between;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: space-between;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
 <DataChannelAdapter
   dataChannelProps={
     Object {
@@ -306,7 +711,7 @@ exports[`should render INTEGER_CONTROL correctly with value 1`] = `
   >
     <ControlNumber__Container>
       <div
-        className="ControlNumber__Container-gmlYuy dBXKqA"
+        className="c0"
       >
         <Input
           focus={false}
@@ -317,7 +722,7 @@ exports[`should render INTEGER_CONTROL correctly with value 1`] = `
           value={1}
         >
           <input
-            className="Input__Input-ixjKAz dDXeoZ"
+            className="c1"
             kind="primary"
             onChange={[Function]}
             placeholder="Integer only"
@@ -327,7 +732,7 @@ exports[`should render INTEGER_CONTROL correctly with value 1`] = `
         </Input>
         <ControlNumber__ButtonWrapper>
           <div
-            className="ControlNumber__ButtonWrapper-iczkcP iBHdKt"
+            className="c2"
           >
             <ButtonClear
               onClick={[Function]}
@@ -336,20 +741,20 @@ exports[`should render INTEGER_CONTROL correctly with value 1`] = `
                 onClick={[Function]}
               >
                 <Component
-                  className="P__P-KJbCR dPUstJ"
+                  className="c3"
                   onClick={[Function]}
                 >
                   <div
-                    className="P__P-KJbCR dPUstJ"
+                    className="c3"
                     onClick={[Function]}
                   >
                     <ButtonClear__StyledA>
                       <A
-                        className="ButtonClear__StyledA-hPckxD gdbAWr"
+                        className="c4"
                         color="primary"
                       >
                         <a
-                          className="ButtonClear__StyledA-hPckxD gdbAWr A__A-cCPuKx eNMAVf"
+                          className="c4 c5"
                           color="primary"
                         >
                           <IconDelete
@@ -389,7 +794,7 @@ exports[`should render INTEGER_CONTROL correctly with value 1`] = `
               <BaseComponent
                 active={false}
                 block={false}
-                className="Button__Button-jkHDFw fcrwCh"
+                className="c6"
                 component="button"
                 disabled={false}
                 kind="primary"
@@ -399,7 +804,7 @@ exports[`should render INTEGER_CONTROL correctly with value 1`] = `
                 square={false}
               >
                 <button
-                  className="Button__Button-jkHDFw fcrwCh"
+                  className="c6"
                   onClick={[Function]}
                 >
                   Ok
@@ -415,6 +820,135 @@ exports[`should render INTEGER_CONTROL correctly with value 1`] = `
 `;
 
 exports[`should render INTEGER_CONTROL correctly with zero 1`] = `
+.c5 {
+  color: #00A1DE;
+  -webkit-transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.c5:hover {
+  color: rgb(0,151,208);
+}
+
+.c5:active {
+  color: rgb(0,144,198);
+}
+
+.c3 {
+  margin: 0;
+  font-size: 1rem;
+  color: currentColor;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c4 > * {
+  margin-right: 5px;
+}
+
+.c6 {
+  border-width: 1px;
+  border-style: solid;
+  outline: none;
+  box-sizing: border-box;
+  -webkit-transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  line-height: 0;
+  cursor: pointer;
+  background-color: #00A1DE;
+  color: #FFFFFF;
+  border-radius: 3px;
+  width: initial;
+  min-width: 80px;
+  height: 32px;
+  padding: 6px 15px;
+  font-size: 1rem;
+  border-color: rgb(0,130,179);
+}
+
+.c6:hover {
+  background-color: rgb(0,151,208);
+}
+
+.c6:active {
+  background-color: rgb(0,144,198);
+}
+
+.c1 {
+  box-sizing: border-box;
+  width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 3px;
+  outline: 0;
+  padding: 0 10px;
+  line-height: 1;
+  min-height: 32px;
+  color: #353630;
+  font-size: 1rem;
+  border-color: #D1D2D3;
+  box-shadow: none;
+}
+
+.c1:focus {
+  border-color: #00A1DE;
+  box-shadow: 0 0 3px 0 rgba(0,161,222,0.5);
+}
+
+.c1::-webkit-input-placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c1::-moz-placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c1:-ms-input-placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c1::placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c0 {
+  width: 100%;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-between;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: space-between;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
 <DataChannelAdapter
   dataChannelProps={
     Object {
@@ -437,7 +971,7 @@ exports[`should render INTEGER_CONTROL correctly with zero 1`] = `
   >
     <ControlNumber__Container>
       <div
-        className="ControlNumber__Container-gmlYuy dBXKqA"
+        className="c0"
       >
         <Input
           focus={false}
@@ -448,7 +982,7 @@ exports[`should render INTEGER_CONTROL correctly with zero 1`] = `
           value={0}
         >
           <input
-            className="Input__Input-ixjKAz dDXeoZ"
+            className="c1"
             kind="primary"
             onChange={[Function]}
             placeholder="Integer only"
@@ -458,7 +992,7 @@ exports[`should render INTEGER_CONTROL correctly with zero 1`] = `
         </Input>
         <ControlNumber__ButtonWrapper>
           <div
-            className="ControlNumber__ButtonWrapper-iczkcP iBHdKt"
+            className="c2"
           >
             <ButtonClear
               onClick={[Function]}
@@ -467,20 +1001,20 @@ exports[`should render INTEGER_CONTROL correctly with zero 1`] = `
                 onClick={[Function]}
               >
                 <Component
-                  className="P__P-KJbCR dPUstJ"
+                  className="c3"
                   onClick={[Function]}
                 >
                   <div
-                    className="P__P-KJbCR dPUstJ"
+                    className="c3"
                     onClick={[Function]}
                   >
                     <ButtonClear__StyledA>
                       <A
-                        className="ButtonClear__StyledA-hPckxD gdbAWr"
+                        className="c4"
                         color="primary"
                       >
                         <a
-                          className="ButtonClear__StyledA-hPckxD gdbAWr A__A-cCPuKx eNMAVf"
+                          className="c4 c5"
                           color="primary"
                         >
                           <IconDelete
@@ -520,7 +1054,7 @@ exports[`should render INTEGER_CONTROL correctly with zero 1`] = `
               <BaseComponent
                 active={false}
                 block={false}
-                className="Button__Button-jkHDFw fcrwCh"
+                className="c6"
                 component="button"
                 disabled={false}
                 kind="primary"
@@ -530,7 +1064,7 @@ exports[`should render INTEGER_CONTROL correctly with zero 1`] = `
                 square={false}
               >
                 <button
-                  className="Button__Button-jkHDFw fcrwCh"
+                  className="c6"
                   onClick={[Function]}
                 >
                   Ok

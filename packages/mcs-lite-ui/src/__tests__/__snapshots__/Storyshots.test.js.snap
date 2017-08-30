@@ -10058,12 +10058,12 @@ exports[`Storyshots Label API 1`] = `
   color: #F5364E;
 }
 
-.iKACBc .c0 {
+.faVMpE .c0 {
   display: block;
   padding-bottom: 5px;
 }
 
-.iKACBc * + .c0 {
+.faVMpE * + .c0 {
   margin-top: 10px;
 }
 

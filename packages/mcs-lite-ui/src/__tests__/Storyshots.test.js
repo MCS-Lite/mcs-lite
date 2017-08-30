@@ -1,6 +1,5 @@
 import React from 'react';
 import initStoryshots from '@storybook/addon-storyshots';
-import 'jest-styled-components';
 import renderer from 'react-test-renderer';
 import { ThemeProvider } from 'styled-components';
 import { theme } from 'mcs-lite-theme';
