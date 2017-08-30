@@ -18,6 +18,9 @@
 	* [LinkIt SDK](mcs_lite_tutorial/SDK_overview.md)
 		* [Control LED light remotely](mcs_lite_tutorial/7697_sdk_led_blink.md) 
 
+## Customize MCS Lite
+* [Use React to create your user interface](mcs_lite_customization/cra_boilerplate.md)
+
 ## Appendix
 * [Appendix A：Supported platforms](mcs_lite_platform.md)
 * [Appendix B：Performance and capacity test](mcs_lite_performance.md)
