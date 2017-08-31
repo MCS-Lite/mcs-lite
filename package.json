@@ -30,7 +30,7 @@
     "lerna": "^2.1.2",
     "lerna-changelog": "^0.6.0",
     "license-checker": "^14.0.0",
-    "prettier": "^1.6.1",
+    "prettier": "1.4.4",
     "stylelint": "^8.0.0"
   },
   "stylelint": {
