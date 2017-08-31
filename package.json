@@ -17,7 +17,7 @@
   "devDependencies": {
     "babel-eslint": "^7.2.3",
     "codecov": "^2.3.0",
-    "danger": "^0.18.0",
+    "danger": "^2.0.0-alpha.13",
     "eslint": "^4.5.0",
     "eslint-config-airbnb": "^15.1.0",
     "eslint-config-prettier": "^2.3.0",
@@ -30,7 +30,7 @@
     "lerna": "^2.1.2",
     "lerna-changelog": "^0.6.0",
     "license-checker": "^14.0.0",
-    "prettier": "1.4.4",
+    "prettier": "^1.6.1",
     "stylelint": "^8.0.0"
   },
   "stylelint": {
