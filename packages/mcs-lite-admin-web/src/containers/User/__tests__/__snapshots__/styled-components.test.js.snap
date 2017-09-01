@@ -33,6 +33,23 @@ Array [
   margin-bottom: 10px;
 }
 
+.c2 {
+  position: relative;
+  height: 32px;
+}
+
+.c2 > * {
+  position: absolute;
+  width: 100%;
+  pointer-events: none;
+}
+
+.c2 input[type="file"] {
+  opacity: 0;
+  cursor: pointer;
+  pointer-events: all;
+}
+
 <div>
     <styled.div>
         <div
@@ -42,6 +59,11 @@ Array [
     <styled.div>
         <div
             className="c1"
+        />
+    </styled.div>
+    <styled.div>
+        <div
+            className="c2"
         />
     </styled.div>
 </div>,
@@ -77,6 +99,26 @@ Array [
   .c0 {
   border-bottom: 1px solid #D1D2D3;
   margin-bottom: 10px;
+}
+
+<div
+    className="c0"
+/>,
+  .c0 {
+  position: relative;
+  height: 32px;
+}
+
+.c0 > * {
+  position: absolute;
+  width: 100%;
+  pointer-events: none;
+}
+
+.c0 input[type="file"] {
+  opacity: 0;
+  cursor: pointer;
+  pointer-events: all;
 }
 
 <div

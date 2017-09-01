@@ -73,6 +73,7 @@ export const ErrorMessageP = styled(P)`
 
 export const InputFileWrapper = styled.div`
   position: relative;
+  height: ${props => props.theme.height.normal};
 
   > * {
     position: absolute;
