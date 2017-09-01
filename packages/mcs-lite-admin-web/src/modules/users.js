@@ -212,13 +212,28 @@ function createUserByCSVCycle(sources) {
     .pluck('csv')
     .map(R.pipe(R.values, R.head))
     // .map(file => {
+    //   console.log({ file })
+    //   console.log(typeof file);
+    //   console.log(Object.keys(file))
     //   const formData = new FormData();
+    //   // Object.keys(file).forEach(key => {
+    //   //   console.log({ key });
+    //   //   formData.append(key, file[key]);
+    //   // })
     //   formData.append('file', file);
+    //   // for (let key in file) {
+    //   //     // is the item a File?
+    //   //     if (file.hasOwnProperty(key) && file[key] instanceof File) {
+    //   //       console.log(key)
+    //   //       formData.append(key, file[key]);
+    //   //     }
+    //   // }
+    //
     //   return formData;
     // })
     // .do(console.log)
     // .map(R.pipe(R.values, R.head))
-    .switchMap(readAsText)
+    // .switchMap(readAsText)
     .do(console.log)
   const message$ = payload$.pluck('message');
 
@@ -227,13 +242,15 @@ function createUserByCSVCycle(sources) {
     method: 'POST',
     headers: { Authorization: `Bearer ${accessToken}` },
     // field: { 123: '123' },
-    send: csv,
-    // attach: [{
-    //   name: csv.name,
-    //   path: csv,
-    // }],
+    // send: csv,
+    // send: csv,
+    attach: [{
+      name: csv.name,
+      path: csv,
+      filename: csv.name,
+    }],
     // type: 'multipart/form-data',
-    type: 'application/x-www-form-urlencoded',
+    // type: 'application/x-www-form-urlencoded',
     category: CREATE_USER_BY_CSV,
     // progress: true,
   }));
