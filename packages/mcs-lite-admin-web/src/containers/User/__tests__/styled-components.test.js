@@ -3,7 +3,11 @@ import { mount } from 'enzyme';
 import toJson from 'enzyme-to-json';
 import { ThemeProvider } from 'styled-components';
 import { theme } from 'mcs-lite-theme';
-import { FooterWrapper, TabWrapper } from '../styled-components';
+import {
+  FooterWrapper,
+  TabWrapper,
+  InputFileWrapper,
+} from '../styled-components';
 
 it('should render components correctly', () => {
   const wrapper = mount(
@@ -11,6 +15,7 @@ it('should render components correctly', () => {
       <div>
         <FooterWrapper />
         <TabWrapper />
+        <InputFileWrapper />
       </div>
     </ThemeProvider>,
   );
