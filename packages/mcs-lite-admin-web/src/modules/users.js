@@ -2,7 +2,7 @@
 
 import { Observable } from 'rxjs/Observable';
 import R from 'ramda';
-import { readAsText, readAsDataURL } from 'promise-file-reader';
+import { readAsText } from 'promise-file-reader';
 import { actions as uiActions } from './ui';
 import { success, accessTokenSelector$ } from '../utils/cycleHelper';
 
@@ -208,52 +208,23 @@ function createUserByCSVCycle(sources) {
   const payload$ = sources.ACTION
     .filter(action => action.type === CREATE_USER_BY_CSV)
     .pluck('payload');
-  const csv$ = payload$
+  const csvContent$ = payload$
     .pluck('csv')
     .map(R.pipe(R.values, R.head))
-    // .map(file => {
-    //   console.log({ file })
-    //   console.log(typeof file);
-    //   console.log(Object.keys(file))
-    //   const formData = new FormData();
-    //   // Object.keys(file).forEach(key => {
-    //   //   console.log({ key });
-    //   //   formData.append(key, file[key]);
-    //   // })
-    //   formData.append('file', file);
-    //   // for (let key in file) {
-    //   //     // is the item a File?
-    //   //     if (file.hasOwnProperty(key) && file[key] instanceof File) {
-    //   //       console.log(key)
-    //   //       formData.append(key, file[key]);
-    //   //     }
-    //   // }
-    //
-    //   return formData;
-    // })
-    // .do(console.log)
-    // .map(R.pipe(R.values, R.head))
-    // .switchMap(readAsText)
-    .do(console.log)
+    .switchMap(readAsText); // TODO: upload file api ?
   const message$ = payload$.pluck('message');
 
-  const request$ = csv$.withLatestFrom(accessToken$, (csv, accessToken) => ({
-    url: '/api/users.csv',
-    method: 'POST',
-    headers: { Authorization: `Bearer ${accessToken}` },
-    // field: { 123: '123' },
-    // send: csv,
-    // send: csv,
-    attach: [{
-      name: csv.name,
-      path: csv,
-      filename: csv.name,
-    }],
-    // type: 'multipart/form-data',
-    // type: 'application/x-www-form-urlencoded',
-    category: CREATE_USER_BY_CSV,
-    // progress: true,
-  }));
+  const request$ = csvContent$.withLatestFrom(
+    accessToken$,
+    (csvContent, accessToken) => ({
+      url: '/api/users.csv',
+      method: 'POST',
+      headers: { Authorization: `Bearer ${accessToken}` },
+      send: csvContent,
+      type: 'text/csv',
+      category: CREATE_USER_BY_CSV,
+    }),
+  );
 
   const successRes$ = sources.HTTP
     .select(CREATE_USER_BY_CSV)
