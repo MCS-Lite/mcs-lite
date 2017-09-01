@@ -3,6 +3,10 @@ import reducer, { constants, actions, cycles } from '../users';
 import { actions as uiActions } from '../ui';
 import { assertSourcesSinks } from '../../utils/helpers';
 
+jest.mock('promise-file-reader', () => ({
+  readAsText: string => new Promise(resolve => resolve(string)),
+}));
+
 describe('users - 1. Constants', () => {
   it('should return constants', () => {
     expect(constants).toMatchSnapshot();
@@ -250,7 +254,7 @@ describe('users - 3. Cycle', () => {
       s: { auth: { access_token: 'faketoken123' } },
     };
     const actionSource = {
-      a: actions.createUserByCSV('csv', 'message'),
+      a: actions.createUserByCSV({ csv: 'csvContent' }, 'message'),
     };
     const httpSource = {
       select: () => ({
@@ -271,7 +275,7 @@ describe('users - 3. Cycle', () => {
         url: '/api/users.csv',
         method: 'POST',
         headers: { Authorization: 'Bearer faketoken123' },
-        send: 'csv',
+        send: 'csvContent',
         type: 'text/csv',
         category: constants.CREATE_USER_BY_CSV,
       },
