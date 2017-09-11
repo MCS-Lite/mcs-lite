@@ -11,7 +11,7 @@
 
 | 檔案名稱 | 說明 |
 | :--- | :--- |
-| db.json | 此為 nedb 連線相關設定，一般情況皆維持預設即可。 |
+| db.json | 此為資料庫連線相關設定，預設使用 NeDB，若需改為其他支援的資料庫，請參考[設定資料庫](#設定資料庫) |
 | oauth.json | 此為 OAuth service 相關設定。在尚無 auto scaling 與 distributed deployment 的需求之前，OAuth service 的 host 與 port（預設 port 為 3000）設定，與 RESTful service 相同即可。另外注意，如果為 production 環境，建議 JWT\_SECRET 不要使用預設的 "superSecret"。 |
 | rest.json | 此為 RESTful service 相關設定。設定 MCS Lite API 所要連線的 host 與 port（預設 port 為 3000），如果有更改請務必通知使用者。另外注意，如果為 production 環境, secretKey, prototypeKey, deviceKey, session 請務必改成另外的內容。 |
 | stream.json | 此為 streaming service 的參數設定。 |
@@ -19,10 +19,52 @@
 
 更新上述的檔案之後，請務必重新啟動 MCS Lite 服務以載入最新的設定。
 
-## 更多管理需求
-###資料庫說明
+## 設定資料庫
+### 使用 MySQL 資料庫
 
-除了系統設定，資料的維護也是管理者關注的功能之一，由於 MCS Lite 採用的 NeDB 是一個輕量的 JavaScript 資料庫，所有的資料是以 JSON 檔案的格式儲存，位於 **mcs-lite-app/db** 資料夾下。
+在？版本後，MCS Lite 增加了對 MySQL 資料庫的支援，您只需要在管理主控台 > 系統管理 > db.json 中修改資料庫的連線設定即可。
+
+MCS Lite 預設採用的 NeDB 是一個輕量的 JavaScript 資料庫。以下為資料庫連線的預設值。
+
+```
+// configs/db.json
+{
+  "db": "nedb",
+  "host": "localhost",
+  "port": ""
+}
+```
+
+若想將 MCS Lite 相關資料儲存至 MySQL 中，請確認您的環境與並修改設定檔如下：
+
+1. 一個 MCS Lite 可以連線的 MySQL server。並將 MySQL server 的位址或主機名稱與連接埠填入設定檔中的 **host** 與 **port** 欄位。
+2. 建立 MCS Lite 專屬資料庫。並將資料庫的名稱填入設定檔中的 **database** 欄位。
+3. 一組 MySQL 的帳號密碼使 MCS Lite 有權限可以讀寫資料庫。並將帳號密碼填入設定檔中的 **username** 與 **password** 欄位。
+4. 修改並指定 **db** 與 **dialect** 欄位成 mysql。詳情可參考下面範例：
+
+	```
+	// configs/db.json
+	{
+	  "db": "mysql",
+	  "host": "127.0.0.1",
+	  "port": 3306,
+	  "username": "root",
+	  "password": "root",
+	  "database": "mcslite",
+	  "dialect": "mysql",
+	  "logging": true
+	}
+	```
+
+5. 接著在 mcs-lite-app 的同一層目錄下，執行下面指令，設定資料庫中的各個表格與欄位。
+	
+	```
+	$ node migration.js
+	``` 
+
+###資料庫欄位說明
+
+除了系統設定，資料的維護也是管理者關注的功能之一，在預設的 NeDB 中，所有的資料是以 JSON 檔案的格式儲存，位於 **mcs-lite-app/db** 資料夾下。
 
 | 檔案名稱 | 說明 |
 | :--- | :--- |
@@ -35,9 +77,11 @@
 
 更新上述的資料庫檔案之後，請務必重新啟動 MCS Lite 服務以載入最新的資料。
 
+若您已將資料庫改為 MySQL 並且完成 `node migration.js` 動作，您也可以在 MCS Lite 資料庫中看到這些表格以及相對應的欄位。
+
 ### 資料備份
 
-由於目前產品原型 (Prototype)，測試裝置 (Test Device)，資料通道 (Data Channel)，上傳資料 (Data Channel) 與使用者帳戶 (User Account) 等資料，都是以 JSON 格式儲存在 **mcs-lite-app/db** 資料夾下，備份資料即是把這個資料夾的檔案備份好即可。
+若您使用的是預設的 NeDB，像是產品原型 (Prototype)，測試裝置 (Test Device)，資料通道 (Data Channel)，上傳資料 (Data Channel) 與使用者帳戶 (User Account) 等資料，都是以 JSON 格式儲存在 **mcs-lite-app/db** 資料夾下，備份資料即是把這個資料夾的檔案備份好即可。
 
 
 
