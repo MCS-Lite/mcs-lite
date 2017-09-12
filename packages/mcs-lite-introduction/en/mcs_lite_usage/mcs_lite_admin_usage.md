@@ -18,10 +18,52 @@ The admin console provides the following functions:
 | wot.json | This is WebSocket server related settings. It uses port 8000 by default. |
 	
 
-
 After updating the above files, be sure to restart the MCS Lite service to load the latest settings.
 
-## More management needs
+## Configure Database
+### Connect MySQL 
+
+You can connect to MySQL as the database of MCS Lite after version ?. What you need to do is to modify the database connection setting on Admin console > Configuration > db.json page.
+
+MCS Lite uses NeDB by default, which is a lightweight JavaScript database. You don't have to install any packages and the data is stored in a plain text file. Here is the pre-configured connection configuration. 
+
+```
+// configs/db.json
+{
+  "db": "nedb",
+  "host": "localhost",
+  "port": ""
+}
+```
+
+If you want to connect to MySQL instead of using NeDB as your data storage, please prepare your environment as the instructions below:
+
+1. A MySQL server that MCS Lite can connect to. Update the address or hostname and the port information of MySQL server into the **host** and **port** fields.
+2. Create an exclusive database for MCS Lite. Update the name of database into **database** fields.
+3. Create an account and password and grand proper permission to allow MCS Lite to read and write the data in this database. Update the account and password into **username** and **password** fields.
+4. Update the **db** and **dialect** fields to mysql. Please refer to the example below:
+
+	```
+	// configs/db.json
+	{
+	  "db": "mysql",
+	  "host": "127.0.0.1",
+	  "port": 3306,
+	  "username": "root",
+	  "password": "root",
+	  "database": "mcslite",
+	  "dialect": "mysql",
+	  "logging": true
+	}
+	```
+
+5. Then, at the same directory of mcs-lite-app, execute the command as below to migrate the table and schema from NeDB to MySQL.
+	
+	```s
+	$ node migration.js
+	``` 
+
+
 ### Database description
 
 In addition to the system settings, data maintenance is also one of the administrative topic. Because MCS Lite uses NeDB, which is a lightweight JavaScript database, all the data is stored in JSON format stored under mcs-lite-app diretory.
@@ -37,8 +79,10 @@ In addition to the system settings, data maintenance is also one of the administ
 
 After updating the above database files, be sure to restart the MCS Lite service to load the latest data.
 
+If you have changed the database to MySQL and completed the `node migration.js` action, you can also see these tables and the corresponding fields in the MCS Lite database.
+
 ### Data backup
 
-You just need to backup the files under **mcs-lite-app/db** folder because all the current prototypes, test devices, data channels, data ponits and user accounts information are stored there.
+If you are using the original NeDB, you just need to backup the files under **mcs-lite-app/db** folder because all the current prototypes, test devices, data channels, data ponits and user accounts information are stored there.
 
 

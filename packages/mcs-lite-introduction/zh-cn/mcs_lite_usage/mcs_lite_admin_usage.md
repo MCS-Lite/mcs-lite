@@ -19,10 +19,52 @@
 
 更新上述的檔案之後，請務必重新啟動 MCS Lite 服務以載入最新的設定。
 
-## 更多管理需求
-###资料库说明
+## 设定资料库
+### 使用 MySQL 资料库
 
-除了系统设定，资料的维护也是管理者关注的功能之一，由于 MCS Lite 采用的 NeDB 是一个轻量的 JavaScript 资料库，所有的资料是以 JSON 档案的格式储存，位于 **mcs-lite-app/db** 资料夹下。
+在？版本后，MCS Lite 增加了对 MySQL 资料库的支援，您只需要在管理主控台 > 系统管理 > db.json 中修改资料库的连线设定即可。
+
+MCS Lite 预设采用的 NeDB 是一个轻量的 JavaScript 资料库，您不需额外的安装任何套件，NeDB 会将资料已档案的方式储存。以下为资料库连线的预设值。
+
+```
+// configs/db.json
+{
+  "db": "nedb",
+  "host": "localhost",
+  "port": ""
+}
+```
+
+若想将 MCS Lite 相关资料储存至 MySQL 中，请确认您的环境与并修改设定档如下：
+
+1. 一个 MCS Lite 可以连线的 MySQL server。并将 MySQL server 的位址或主机名称与连接埠填入设定档中的 **host** 与 **port** 栏位。
+2. 建立 MCS Lite 专属资料库。并将资料库的名称填入设定档中的 **database** 栏位。
+3. 一组 MySQL 的帐号密码使 MCS Lite 有权限可以读写资料库。并将帐号密码填入设定档中的 **username** 与 **password** 栏位。
+4. 修改并指定 **db** 与 **dialect** 栏位成 mysql。详情可参考下面范例：
+
+	```
+	// configs/db.json
+	{
+	  "db": "mysql",
+	  "host": "127.0.0.1",
+	  "port": 3306,
+	  "username": "root",
+	  "password": "root",
+	  "database": "mcslite",
+	  "dialect": "mysql",
+	  "logging": true
+	}
+	```
+
+5. 接着在 mcs-lite-app 的同一层目录下，执行下面指令，设定资料库中的各个表格与栏位。
+	
+	```
+	$ node migration.js
+	``` 
+
+###资料库栏位说明
+
+除了系统设定，资料的维护也是管理者关注的功能之一，在预设使用的 NeDB 中，所有的资料是以 JSON 档案的格式储存，位于 **mcs-lite-app/db** 资料夹下。
 
 | 档案名称 | 说明 |
 | :--- | :--- |
@@ -35,6 +77,8 @@
 
 更新上述的资料库档案之后，请务必重新启动 MCS Lite 服务以载入最新的资料。
 
+若您已将资料库改为 MySQL 并且完成 `node migration.js` 动作，您也可以在 MCS Lite 资料库中看到这些表格以及相对应的栏位。
+
 ### 资料备份
 
-由于目前产品原型 (Prototype)，测试装置 (Test Device)，资料通道 (Data Channel)，上传资料 (Data Channel) 与使用者帐户 (User Account) 等资料，都是以 JSON 格式储存在 **mcs-lite-app/db** 资料夹下，备份资料即是把这个资料夹的档案备份好即可。
+若您使用的是预设的 NeDB，像是产品原型 (Prototype)，测试装置 (Test Device)，资料通道 (Data Channel)，上传资料 (Data Channel) 与使用者帐户 (User Account) 等资料，都是以 JSON 格式储存在 **mcs-lite-app/db** 资料夹下，备份资料即是把这个资料夹的档案备份好即可。
