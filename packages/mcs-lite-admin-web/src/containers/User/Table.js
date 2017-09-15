@@ -6,6 +6,7 @@ import {
   AutoSizer,
   Column,
   Table as RVTable,
+  SortDirection,
 } from 'react-virtualized';
 import P from 'mcs-lite-ui/lib/P';
 import styled from 'styled-components';
@@ -41,6 +42,11 @@ export const StyledTable = styled(RVTable)`
   .ReactVirtualized__Table__row {
     border-bottom: 1px solid ${props => props.theme.base.bodyBackgroundColor};
   }
+
+  .ReactVirtualized__Table__sortableHeaderColumn {
+    outline: none;
+    user-select: none;
+  }
 `;
 
 export const StyledIcon = styled(IconEdit)`
@@ -68,6 +74,45 @@ class Table extends React.PureComponent {
 
     // React-intl I18n
     getMessages: PropTypes.func.isRequired,
+  };
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      sortDirection: SortDirection.ASC,
+      sortBy: 'userName',
+      sortedList: props.data,
+    };
+  }
+
+  componentWillReceiveProps(nextProps) {
+    if (nextProps.data !== this.props.data) {
+      const { sortBy, sortDirection } = this.state;
+
+      this.setState({
+        sortedList: this.sortWithState({ sortBy, sortDirection })(
+          nextProps.data,
+        ),
+      });
+    }
+  }
+
+  onSort = ({ sortBy, sortDirection }) => {
+    this.setState({
+      sortBy,
+      sortDirection,
+      sortedList: this.sortWithState({ sortBy, sortDirection })(
+        this.props.data,
+      ),
+    });
+  };
+
+  sortWithState = ({ sortBy, sortDirection }) => {
+    const lens = R.prop(sortBy);
+
+    return R.sortWith([
+      sortDirection === SortDirection.DESC ? R.descend(lens) : R.ascend(lens),
+    ]);
   };
 
   checkedHeaderRenderer = () => {
@@ -120,10 +165,11 @@ class Table extends React.PureComponent {
   noRowsRenderer = () =>
     <NoRowWrapper>{this.props.getMessages('noRows')}</NoRowWrapper>;
 
-  rowGetter = ({ index }) => this.props.data[index];
+  rowGetter = ({ index }) => this.state.sortedList[index];
 
   render() {
-    const { data, getMessages: t } = this.props;
+    const { getMessages: t } = this.props;
+    const { sortBy, sortDirection, sortedList } = this.state;
     const {
       checkedHeaderRenderer,
       checkedCellRenderer,
@@ -132,6 +178,7 @@ class Table extends React.PureComponent {
       editCellRenderer,
       noRowsRenderer,
       rowGetter,
+      onSort,
     } = this;
 
     return (
@@ -144,9 +191,12 @@ class Table extends React.PureComponent {
                 height={height - TABLE_HEIGHT_OFFSET}
                 headerHeight={30}
                 rowHeight={50}
-                rowCount={data.length}
+                rowCount={sortedList.length}
                 rowGetter={rowGetter}
                 noRowsRenderer={noRowsRenderer}
+                sort={onSort}
+                sortBy={sortBy}
+                sortDirection={sortDirection}
               >
                 <Column
                   dataKey={'userId'}
