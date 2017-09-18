@@ -5,8 +5,9 @@ import messages from './messages';
 import { actions } from '../../modules/users';
 import User from './User';
 
-export const mapStateToProps = ({ users }) => ({
+export const mapStateToProps = ({ users, auth }) => ({
   users,
+  accessToken: auth.access_token,
 });
 
 export const mapDispatchToProps = {

@@ -23,6 +23,9 @@ it('should render Container correctly with HOC', () => {
 it('should return props correctly with mapStateToProps', () => {
   const state = {
     users: [1, 2, 3],
+    auth: {
+      access_token: 'access_token',
+    }
   };
 
   expect(mapStateToProps(state)).toMatchSnapshot();

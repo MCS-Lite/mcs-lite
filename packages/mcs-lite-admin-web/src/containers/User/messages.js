@@ -26,6 +26,14 @@ const messages = defineMessages({
     id: 'User.email.placeholder',
     defaultMessage: '輸入電子信箱',
   },
+  'User.email.existError': {
+    id: 'User.email.existError',
+    defaultMessage: '此電子信箱已被註冊！',
+  },
+  'User.email.formatError': {
+    id: 'User.email.formatError',
+    defaultMessage: '電子信箱格式不正確',
+  },
   'User.addUser': {
     id: 'User.addUser',
     defaultMessage: '新增使用者',
