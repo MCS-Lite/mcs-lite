@@ -25,7 +25,7 @@ it('should return props correctly with mapStateToProps', () => {
     users: [1, 2, 3],
     auth: {
       access_token: 'access_token',
-    }
+    },
   };
 
   expect(mapStateToProps(state)).toMatchSnapshot();
