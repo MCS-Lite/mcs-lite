@@ -11,7 +11,7 @@ import {
 } from './styled-components';
 import Image from './Image';
 
-const Section1 = ({ getMessages: t, tag }) =>
+const Section1 = ({ getMessages: t }) =>
   <StyledSectionRow>
     <Column xs={12} md={6}>
       <RWDCenterWrapper>
@@ -22,7 +22,7 @@ const Section1 = ({ getMessages: t, tag }) =>
         </SpaceTop>
 
         <SpaceTop height={40}>
-          <DownloadButton tag={tag} />
+          <DownloadButton />
         </SpaceTop>
       </RWDCenterWrapper>
     </Column>
@@ -36,9 +36,6 @@ Section1.displayName = 'Section1';
 Section1.propTypes = {
   // React-intl I18n
   getMessages: PropTypes.func.isRequired,
-
-  // Props
-  tag: PropTypes.string,
 };
 
 export default Section1;
