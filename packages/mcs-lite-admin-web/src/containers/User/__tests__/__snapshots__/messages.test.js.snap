@@ -78,6 +78,14 @@ Object {
     "defaultMessage": "電子信箱",
     "id": "User.email",
   },
+  "User.email.existError": Object {
+    "defaultMessage": "此電子信箱已被註冊！",
+    "id": "User.email.existError",
+  },
+  "User.email.formatError": Object {
+    "defaultMessage": "電子信箱格式不正確",
+    "id": "User.email.formatError",
+  },
   "User.email.placeholder": Object {
     "defaultMessage": "輸入電子信箱",
     "id": "User.email.placeholder",

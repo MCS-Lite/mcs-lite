@@ -1,5 +1,27 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`should handle email onBlur 1`] = `
+<Input
+  focus={false}
+  id="email"
+  kind="primary"
+  onBlur={[Function]}
+  onChange={[Function]}
+  placeholder="email.placeholder"
+  required={true}
+  type="email"
+  value="evenchange4@gmail.com"
+/>
+`;
+
+exports[`should handle email onBlur 2`] = `
+<Styled(P)
+  color="error"
+>
+  email.existError
+</Styled(P)>
+`;
+
 exports[`should render with ACCOUNT_STATUS form - ACCOUNT_STATUS 1`] = `
 <FormGroup>
   <P>
@@ -155,6 +177,7 @@ exports[`should render with ADD_USER_TYPE_BATCH form - ADD_USER_TYPE_ONE 1`] = `
     focus={false}
     id="email"
     kind="primary"
+    onBlur={[Function]}
     onChange={[Function]}
     placeholder="email.placeholder"
     required={true}
@@ -303,6 +326,7 @@ exports[`should renders <User> correctly 1`] = `
           focus={false}
           id="email"
           kind="primary"
+          onBlur={[Function]}
           onChange={[Function]}
           placeholder="email.placeholder"
           required={true}
