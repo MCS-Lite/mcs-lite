@@ -24,6 +24,14 @@ exports[`should handle emailCellRenderer with isActive status 1`] = `
 </P>
 `;
 
+exports[`should handle emailCellRenderer with isActive status 2`] = `
+<P
+  color="grayDark"
+>
+  email1
+</P>
+`;
+
 exports[`should handle noRowsRenderer 1`] = `
 <styled.div>
   noRows
@@ -35,6 +43,36 @@ exports[`should handle onEditClick in editCellRenderer 1`] = `
   onClick={[Function]}
   size={18}
 />
+`;
+
+exports[`should handle onSort 1`] = `
+Array [
+  Object {
+    "email": "1",
+    "userId": "1",
+    "userName": "1",
+  },
+  Object {
+    "email": "2",
+    "userId": "2",
+    "userName": "2",
+  },
+]
+`;
+
+exports[`should handle onSort 2`] = `
+Array [
+  Object {
+    "email": "2",
+    "userId": "2",
+    "userName": "2",
+  },
+  Object {
+    "email": "1",
+    "userId": "1",
+    "userName": "1",
+  },
+]
 `;
 
 exports[`should handle uncheck all in checkedHeaderRenderer 1`] = `
@@ -54,6 +92,22 @@ exports[`should handle unckeck item in checkedCellRenderer 1`] = `
 `;
 
 exports[`should handle userNameCellRenderer 1`] = `
+<P
+  color="grayDark"
+>
+  userName1
+</P>
+`;
+
+exports[`should handle userNameCellRenderer with isActive status 1`] = `
+<P
+  color="black"
+>
+  userName1
+</P>
+`;
+
+exports[`should handle userNameCellRenderer with isActive status 2`] = `
 <P
   color="grayDark"
 >
@@ -89,6 +143,14 @@ exports[`should renders <Table> with data 1`] = `
   border-bottom: 1px solid #F1F2F7;
 }
 
+.c0 .ReactVirtualized__Table__sortableHeaderColumn {
+  outline: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
 <Table
   checkedList={Array []}
   data={
@@ -120,6 +182,9 @@ exports[`should renders <Table> with data 1`] = `
         rowCount={2}
         rowGetter={[Function]}
         rowHeight={50}
+        sort={[Function]}
+        sortBy="userName"
+        sortDirection="ASC"
         width={100}
       >
         <Table
@@ -130,6 +195,9 @@ exports[`should renders <Table> with data 1`] = `
           rowCount={2}
           rowGetter={[Function]}
           rowHeight={50}
+          sort={[Function]}
+          sortBy="userName"
+          sortDirection="ASC"
           width={100}
         >
           <div>
@@ -203,6 +271,14 @@ Array [
 
 .c1 .ReactVirtualized__Table__row {
   border-bottom: 1px solid #F1F2F7;
+}
+
+.c1 .ReactVirtualized__Table__sortableHeaderColumn {
+  outline: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .c0 {

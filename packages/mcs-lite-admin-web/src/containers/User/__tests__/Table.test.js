@@ -17,6 +17,7 @@ jest.mock('react-virtualized', () => ({
   AutoSizer: ({ children }) => children({ width: 100 }),
   Column: ({ children }) => <div>{children}</div>, // eslint-disable-line
   Table: ({ children }) => <div>{children}</div>, // eslint-disable-line
+  SortDirection: { ASC: 'ASC', DESC: 'DESC' },
 }));
 
 it('should return TABLE_HEIGHT_OFFSET', () => {
@@ -290,6 +291,44 @@ it('should handle userNameCellRenderer', () => {
   expect(render).toMatchSnapshot();
 });
 
+it('should handle userNameCellRenderer with isActive status', () => {
+  const wrapper = mount(
+    <ThemeProvider theme={theme}>
+      <Table
+        getMessages={R.identity}
+        data={[]}
+        checkedList={[]}
+        onCheckedListChange={() => {}}
+        onEditClick={() => {}}
+      />
+    </ThemeProvider>,
+  );
+
+  const table = wrapper.find(Table).getNode();
+
+  expect(
+    table.userNameCellRenderer({
+      rowData: {
+        userId: 'user1',
+        email: 'email1',
+        userName: 'userName1',
+        isActive: true,
+      },
+    }),
+  ).toMatchSnapshot();
+
+  expect(
+    table.userNameCellRenderer({
+      rowData: {
+        userId: 'user1',
+        email: 'email1',
+        userName: 'userName1',
+        isActive: false,
+      },
+    }),
+  ).toMatchSnapshot();
+});
+
 it('should handle emailCellRenderer with isActive status', () => {
   const wrapper = mount(
     <ThemeProvider theme={theme}>
@@ -304,16 +343,28 @@ it('should handle emailCellRenderer with isActive status', () => {
   );
 
   const table = wrapper.find(Table).getNode();
-  const render = table.emailCellRenderer({
-    rowData: {
-      userId: 'user1',
-      email: 'email1',
-      userName: 'userName1',
-      isActive: true,
-    },
-  });
 
-  expect(render).toMatchSnapshot();
+  expect(
+    table.emailCellRenderer({
+      rowData: {
+        userId: 'user1',
+        email: 'email1',
+        userName: 'userName1',
+        isActive: true,
+      },
+    }),
+  ).toMatchSnapshot();
+
+  expect(
+    table.emailCellRenderer({
+      rowData: {
+        userId: 'user1',
+        email: 'email1',
+        userName: 'userName1',
+        isActive: false,
+      },
+    }),
+  ).toMatchSnapshot();
 });
 
 it('should handle rowGetter', () => {
@@ -347,4 +398,39 @@ it('should handle rowGetter', () => {
     email: 'email1',
     userName: 'userName1',
   });
+});
+
+it('should handle onSort', () => {
+  const wrapper = mount(
+    <ThemeProvider theme={theme}>
+      <Table
+        getMessages={R.identity}
+        data={[
+          {
+            userId: '1',
+            email: '1',
+            userName: '1',
+          },
+          {
+            userId: '2',
+            email: '2',
+            userName: '2',
+          },
+        ]}
+        checkedList={[]}
+        onCheckedListChange={() => {}}
+        onEditClick={() => {}}
+      />
+    </ThemeProvider>,
+  );
+
+  const table = wrapper.find(Table).getNode();
+  // Before sort
+  expect(table.state.sortedList).toMatchSnapshot();
+
+  // After sort
+  table.onSort({ sortBy: 'userId', sortDirection: 'DESC' });
+  expect(table.state.sortBy).toBe('userId');
+  expect(table.state.sortDirection).toBe('DESC');
+  expect(table.state.sortedList).toMatchSnapshot();
 });

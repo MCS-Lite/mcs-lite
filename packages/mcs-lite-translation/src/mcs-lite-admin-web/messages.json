@@ -284,6 +284,16 @@
     "filepath": "src/containers/User/messages.js"
   },
   {
+    "id": "User.email.existError",
+    "defaultMessage": "此電子信箱已被註冊！",
+    "filepath": "src/containers/User/messages.js"
+  },
+  {
+    "id": "User.email.formatError",
+    "defaultMessage": "電子信箱格式不正確",
+    "filepath": "src/containers/User/messages.js"
+  },
+  {
     "id": "User.addUser",
     "defaultMessage": "新增使用者",
     "filepath": "src/containers/User/messages.js"

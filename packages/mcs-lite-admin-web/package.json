@@ -44,6 +44,7 @@
     "mcs-lite-translation": "^0.1.6",
     "mcs-lite-ui": "^0.4.9",
     "polished": "^1.6.2",
+    "promise-file-reader": "^1.0.0",
     "prop-types": "^15.5.10",
     "ramda": "^0.24.1",
     "react": "^15.6.1",

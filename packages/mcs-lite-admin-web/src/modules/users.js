@@ -2,6 +2,7 @@
 
 import { Observable } from 'rxjs/Observable';
 import R from 'ramda';
+import { readAsText } from 'promise-file-reader';
 import { actions as uiActions } from './ui';
 import { success, accessTokenSelector$ } from '../utils/cycleHelper';
 
@@ -207,17 +208,23 @@ function createUserByCSVCycle(sources) {
   const payload$ = sources.ACTION
     .filter(action => action.type === CREATE_USER_BY_CSV)
     .pluck('payload');
-  const csv$ = payload$.pluck('csv');
+  const csvContent$ = payload$
+    .pluck('csv')
+    .map(R.pipe(R.values, R.head))
+    .switchMap(readAsText); // TODO: upload file api ?
   const message$ = payload$.pluck('message');
 
-  const request$ = csv$.withLatestFrom(accessToken$, (csv, accessToken) => ({
-    url: '/api/users.csv',
-    method: 'POST',
-    headers: { Authorization: `Bearer ${accessToken}` },
-    send: csv,
-    type: 'text/csv',
-    category: CREATE_USER_BY_CSV,
-  }));
+  const request$ = csvContent$.withLatestFrom(
+    accessToken$,
+    (csvContent, accessToken) => ({
+      url: '/api/users.csv',
+      method: 'POST',
+      headers: { Authorization: `Bearer ${accessToken}` },
+      send: csvContent,
+      type: 'text/csv',
+      category: CREATE_USER_BY_CSV,
+    }),
+  );
 
   const successRes$ = sources.HTTP
     .select(CREATE_USER_BY_CSV)

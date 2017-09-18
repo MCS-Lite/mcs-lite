@@ -1284,6 +1284,7 @@
 "process@0.5.2","MIT*","https://github.com/shtylman/node-process"
 "progress@1.1.8","MIT*","https://github.com/visionmedia/node-progress"
 "progress@2.0.0","MIT","https://github.com/visionmedia/node-progress"
+"promise-file-reader@1.0.0","ISC","https://github.com/jahredhope/promise-file-reader"
 "promise-inflight@1.0.1","ISC","https://github.com/iarna/promise-inflight"
 "promise-retry@1.1.1","MIT","https://github.com/IndigoUnited/node-promise-retry"
 "promise.prototype.finally@3.0.0","MIT","https://github.com/es-shims/Promise.prototype.finally"

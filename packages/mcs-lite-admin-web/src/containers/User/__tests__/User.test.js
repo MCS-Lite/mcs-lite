@@ -11,10 +11,18 @@ import User, {
   CHANGE_PASSWORD,
   ACCOUNT_STATUS,
 } from '../User';
-import { FooterWrapper, StyledCommonDialog } from '../styled-components';
+import {
+  FooterWrapper,
+  StyledCommonDialog,
+  ErrorMessageP,
+} from '../styled-components';
 import DialogConfirm from '../../../components/DialogConfirm';
 import Table from '../Table';
 import MockProvider from '../../../utils/MockProvider';
+
+jest.mock('../../../utils/checkUserAvalableAPI', () => () =>
+  Promise.resolve(false),
+);
 
 it('should renders <User> correctly', () => {
   const fetchMock = jest.fn();
@@ -36,6 +44,7 @@ it('should renders <User> correctly', () => {
         },
       ]}
       fetchUsers={fetchMock}
+      accessToken="accessToken"
       deleteUsers={() => {}}
       createUser={() => {}}
       createUserByCSV={() => {}}
@@ -67,6 +76,7 @@ it('should render with ADD_USER_TYPE_BATCH form', () => {
         },
       ]}
       fetchUsers={() => {}}
+      accessToken="accessToken"
       deleteUsers={() => {}}
       createUser={() => {}}
       createUserByCSV={() => {}}
@@ -121,6 +131,7 @@ it('should render with delete footer', () => {
         },
       ]}
       fetchUsers={() => {}}
+      accessToken="accessToken"
       deleteUsers={() => {}}
       createUser={() => {}}
       createUserByCSV={() => {}}
@@ -163,6 +174,7 @@ it('should render with ACCOUNT_STATUS form', () => {
         },
       ]}
       fetchUsers={() => {}}
+      accessToken="accessToken"
       deleteUsers={() => {}}
       createUser={() => {}}
       createUserByCSV={() => {}}
@@ -191,6 +203,7 @@ it('should return correct isAddDialogShow$', () => {
       getMessages={R.identity}
       users={[]}
       fetchUsers={() => {}}
+      accessToken="accessToken"
       deleteUsers={() => {}}
       createUser={() => {}}
       createUserByCSV={() => {}}
@@ -236,6 +249,7 @@ it('should return correct isEditDialogShow$', () => {
         },
       ]}
       fetchUsers={() => {}}
+      accessToken="accessToken"
       deleteUsers={() => {}}
       createUser={() => {}}
       createUserByCSV={() => {}}
@@ -285,6 +299,7 @@ it('should handle onFormDataChange$', () => {
           },
         ]}
         fetchUsers={() => {}}
+        accessToken="accessToken"
         deleteUsers={() => {}}
         createUser={() => {}}
         createUserByCSV={() => {}}
@@ -323,6 +338,7 @@ it('should handle onAddSubmit', () => {
           },
         ]}
         fetchUsers={() => {}}
+        accessToken="accessToken"
         deleteUsers={() => {}}
         createUser={mockFetch}
         createUserByCSV={() => {}}
@@ -370,6 +386,7 @@ it('should handle onEditSubmit', () => {
           },
         ]}
         fetchUsers={() => {}}
+        accessToken="accessToken"
         deleteUsers={() => {}}
         createUser={() => {}}
         createUserByCSV={() => {}}
@@ -412,6 +429,7 @@ it('should handle onDeleteSubmit', () => {
           },
         ]}
         fetchUsers={() => {}}
+        accessToken="accessToken"
         deleteUsers={mockFetch}
         createUser={() => {}}
         createUserByCSV={() => {}}
@@ -434,4 +452,50 @@ it('should handle onDeleteSubmit', () => {
     ['user1', 'user2'],
     'deleteUser.success',
   );
+});
+
+it('should handle email onBlur', done => {
+  const wrapper = shallow(
+    <User
+      getMessages={R.identity}
+      users={[
+        {
+          userId: 'user1',
+          email: 'email1',
+          userName: 'userName1',
+          isActive: true,
+        },
+        {
+          userId: 'user2',
+          email: 'email2',
+          userName: 'userName2',
+          isActive: false,
+        },
+      ]}
+      fetchUsers={() => {}}
+      accessToken="accessToken"
+      deleteUsers={() => {}}
+      createUser={() => {}}
+      createUserByCSV={() => {}}
+      changePasswordById={() => {}}
+      putIsActiveById={() => {}}
+    />,
+  );
+  const getInputEmail = () =>
+    wrapper.find(Input).filterWhere(e => e.props().id === 'email');
+
+  // After change
+  getInputEmail().simulate('change', {
+    target: { id: 'email', value: 'evenchange4@gmail.com' },
+  });
+  expect(toJson(getInputEmail())).toMatchSnapshot();
+
+  // After blur
+  getInputEmail().props().onBlur();
+  // TODO: do not use setTimeout
+  setTimeout(() => {
+    wrapper.update();
+    expect(toJson(wrapper.find(ErrorMessageP))).toMatchSnapshot();
+    done();
+  }, 300);
 });

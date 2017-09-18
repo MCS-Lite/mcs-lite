@@ -13,6 +13,7 @@ import Button from 'mcs-lite-ui/lib/Button';
 import SpaceTop from 'mcs-lite-ui/lib/SpaceTop';
 import A from 'mcs-lite-ui/lib/A';
 import validators from 'mcs-lite-ui/lib/utils/validators';
+import isEmail from 'validator/lib/isEmail';
 import emptyFunction from 'mcs-lite-ui/lib/utils/emptyFunction';
 import IconSearch from 'mcs-lite-icon/lib/IconSearch';
 import IconAdd from 'mcs-lite-icon/lib/IconAdd';
@@ -33,6 +34,7 @@ import {
   componentFromStream,
   createEventHandler,
 } from '../../utils/recomposeHelper';
+import checkUserAvalableAPI from '../../utils/checkUserAvalableAPI';
 
 export const CHANGE_PASSWORD = 'changePassword';
 export const ACCOUNT_STATUS = 'accountStatus';
@@ -93,6 +95,7 @@ const User = componentFromStream(props$ => {
     stream: onActiveChange$,
   } = createEventHandler();
   const { handler: onCSVChange, stream: onCSVChange$ } = createEventHandler();
+  const { handler: onEmailBlur, stream: onEmailBlur$ } = createEventHandler();
 
   // Dialog State
   const isAddDialogShow$ = Observable.merge(
@@ -162,10 +165,31 @@ const User = componentFromStream(props$ => {
     })),
   )
     .startWith(initialFormData)
-    .scan(R.merge);
+    .scan(R.merge)
+    .shareReplay(1);
+
+  const isEmailAvalable$ = onEmailBlur$
+    .withLatestFrom(props$, formData$, (e, props, formData) => ({
+      accessToken: props.accessToken,
+      email: formData.email,
+    }))
+    .switchMap(checkUserAvalableAPI)
+    .startWith(true)
+    .shareReplay(1);
 
   const formValidation$ = formData$
-    .withLatestFrom(props$, (d, props) => ({
+    .combineLatest(isEmailAvalable$, (formData, isEmailAvalable) => ({
+      formData,
+      isEmailAvalable,
+    }))
+    .withLatestFrom(props$, ({ formData: d, isEmailAvalable }, props) => ({
+      email:
+        (d.email &&
+          !isEmail(d.email) &&
+          props.getMessages('email.formatError')) ||
+          (d.email &&
+            !isEmailAvalable &&
+            props.getMessages('email.existError')),
       password:
         validators.isLt8(d.password) &&
           props.getMessages('password.lengthError'),
@@ -176,9 +200,12 @@ const User = componentFromStream(props$ => {
         validators.isNotEqual(d.newPassword1, d.newPassword2) &&
           props.getMessages('newPassword2.error'),
     }))
-    .startWith({});
+    .startWith({})
+    .shareReplay(1);
 
-  const isAddSubmitError$ = formValidation$.map(d => Boolean(d.password));
+  const isAddSubmitError$ = formValidation$.map(
+    d => Boolean(d.email) || Boolean(d.password),
+  );
   const isEditSubmitError$ = formValidation$.map(
     d => Boolean(d.newPassword1) || Boolean(d.newPassword2),
   );
@@ -340,9 +367,14 @@ const User = componentFromStream(props$ => {
                   type="email"
                   value={formData.email}
                   onChange={onFormDataChange}
+                  onBlur={onEmailBlur}
                   placeholder={t('email.placeholder')}
                   required
                 />
+                {formValidation.email &&
+                  <ErrorMessageP color="error">
+                    {formValidation.email}
+                  </ErrorMessageP>}
                 <Label htmlFor="password" required>{t('password')}</Label>
                 <Input
                   id="password"
@@ -576,6 +608,7 @@ User.propTypes = {
       isActive: PropTypes.bool.isRequired,
     }),
   ).isRequired,
+  accessToken: PropTypes.string.isRequired,
 
   // Redux Action
   fetchUsers: PropTypes.func.isRequired,
