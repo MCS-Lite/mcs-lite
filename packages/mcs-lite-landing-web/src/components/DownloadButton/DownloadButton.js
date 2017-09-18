@@ -7,22 +7,21 @@ import Small from 'mcs-lite-ui/lib/Small';
 import SpaceTop from 'mcs-lite-ui/lib/SpaceTop';
 import { getOSName, getFileName } from 'mcs-lite-ui/lib/utils/osHelper';
 
-const REPO_RELEASE_URL = 'https://github.com/MCS-Lite/mcs-lite-app/releases';
-const LATEST_RELEASE = `${REPO_RELEASE_URL}/latest`;
-const getDownloadLink = (tag, fileName) =>
-  tag ? `${REPO_RELEASE_URL}/download/${tag}/${fileName}` : REPO_RELEASE_URL;
-
 const StyledButton = styled(Button)`
   width: 220px;
 `;
 
-const DownloadButton = ({ tag, getMessages: t }) => {
+const DownloadButton = ({ getMessages: t }) => {
   const osName = getOSName();
-  const fileName = getFileName();
+  const fileName = getFileName().split('.')[0];
 
   return (
     <div>
-      <A href={getDownloadLink(tag, fileName)}>
+      <A
+        href={`//micro-github-latest.now.sh/mcs-lite/mcs-lite-app/${fileName}/latest`}
+        target="_blank"
+        rel="noreferrer noopener"
+      >
         <StyledButton>
           {t('downloadFor')} {osName}
         </StyledButton>
@@ -31,7 +30,11 @@ const DownloadButton = ({ tag, getMessages: t }) => {
       <SpaceTop height={10}>
         <Small>
           {t('or')}&nbsp;
-          <A href={LATEST_RELEASE} target="_blank" rel="noreferrer noopener">
+          <A
+            href="//github.com/mcs-lite/mcs-lite-app/releases/latest"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
             {t('others')}
           </A>
         </Small>
@@ -44,9 +47,6 @@ DownloadButton.displayName = 'DownloadButton';
 DownloadButton.propTypes = {
   // React-intl I18n
   getMessages: PropTypes.func.isRequired,
-
-  // Props
-  tag: PropTypes.string,
 };
 
 export default DownloadButton;

@@ -4,7 +4,9 @@ exports[`should renders <DownloadButton> correctly 1`] = `
 <div>
   <A
     color="primary"
-    href="https://github.com/MCS-Lite/mcs-lite-app/releases/download/v0.0.0/michaelOS.x86.gz"
+    href="//micro-github-latest.now.sh/mcs-lite/mcs-lite-app/michaelOS/latest"
+    rel="noreferrer noopener"
+    target="_blank"
   >
     <Styled(Button)>
       downloadFor
@@ -20,7 +22,7 @@ exports[`should renders <DownloadButton> correctly 1`] = `
        
       <A
         color="primary"
-        href="https://github.com/MCS-Lite/mcs-lite-app/releases/latest"
+        href="//github.com/mcs-lite/mcs-lite-app/releases/latest"
         rel="noreferrer noopener"
         target="_blank"
       >

@@ -22,7 +22,7 @@ const LoadableImage = Loadable({
   loading: () => null,
 });
 
-const Section5 = ({ tag, getMessages: t }) =>
+const Section5 = ({ getMessages: t }) =>
   <SectionRow>
     <Column xs={12}>
       <StyledTextCenter>
@@ -35,7 +35,7 @@ const Section5 = ({ tag, getMessages: t }) =>
         </SpaceTop>
 
         <SpaceTop height={40}>
-          <DownloadButton tag={tag} />
+          <DownloadButton />
         </SpaceTop>
       </StyledTextCenter>
     </Column>
@@ -45,9 +45,6 @@ Section5.displayName = 'Section5';
 Section5.propTypes = {
   // React-intl I18n
   getMessages: PropTypes.func.isRequired,
-
-  // Props
-  tag: PropTypes.string,
 };
 
 export default Section5;

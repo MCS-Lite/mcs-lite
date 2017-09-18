@@ -31,9 +31,7 @@ exports[`should renders <Section5> correctly 1`] = `
       <SpaceTop
         height={40}
       >
-        <InjectIntl(withPropsOnChange(pure(DownloadButton)))
-          tag="v0.0.0"
-        />
+        <InjectIntl(withPropsOnChange(pure(DownloadButton))) />
       </SpaceTop>
     </Styled(TextCenter)>
   </Breakpoints>
