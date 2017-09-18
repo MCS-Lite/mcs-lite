@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"POT-Creation-Date: 2017-08-24T06:39:48.809Z\n"
+"POT-Creation-Date: 2017-09-18T07:05:58.723Z\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "MIME-Version: 1.0\n"
@@ -372,6 +372,13 @@ msgid "此帳號不存在，請重新搜尋。"
 msgstr ""
 
 #: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+#. [User.email.existError]
+#. defaultMessage is:
+#. 此電子信箱已被註冊！
+msgid "此電子信箱已被註冊！"
+msgstr ""
+
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
 #. [DialogConfirm.notice] - For Dialog Header
 #. defaultMessage is:
 #. 注意！
@@ -594,4 +601,11 @@ msgstr ""
 #. defaultMessage is:
 #. 電子信箱
 msgid "電子信箱"
+msgstr ""
+
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+#. [User.email.formatError]
+#. defaultMessage is:
+#. 電子信箱格式不正確
+msgid "電子信箱格式不正確"
 msgstr ""
