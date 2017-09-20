@@ -1,4 +1,4 @@
-const { danger, warn, fail } = require('danger');
+/* global danger warn fail */
 
 const allChanges = [].concat(
   danger.git.created_files,

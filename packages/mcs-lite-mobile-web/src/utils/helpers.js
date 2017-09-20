@@ -5,7 +5,7 @@
  * https://github.com/cyclejs-community/redux-cycles/blob/master/example/cycle/test/helpers.js
  */
 
-import { mockTimeSource } from '@cycle/time/rxjs';
+import { mockTimeSource } from '@cycle/time/lib/rxjs';
 
 export function assertSourcesSinks(sources, sinks, main, done, timeOpts = {}) {
   const Time = mockTimeSource(timeOpts);
