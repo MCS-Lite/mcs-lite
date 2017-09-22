@@ -1,10 +1,17 @@
 # MCS Lite changelogs
 
-## Unreleased (2017-08-25)
+## Released (2017-09-22)
 
 #### :rocket: New Feature
+* `mcs-lite-landing-web`
+  * [#453](https://github.com/MCS-Lite/mcs-lite/pull/453) feat(Landing): introduce micro-github-latest service for downloading the latest app. ([@evenchange4](https://github.com/evenchange4))
 * `mcs-lite-admin-web`, `mcs-lite-translation`
+  * [#452](https://github.com/MCS-Lite/mcs-lite/pull/452) feat(Admin): add email async validation. ([@evenchange4](https://github.com/evenchange4))
   * [#436](https://github.com/MCS-Lite/mcs-lite/pull/436) feat(Admin/Data): add DeleteData feature. ([@evenchange4](https://github.com/evenchange4))
+* `mcs-lite-admin-web`
+  * [#451](https://github.com/MCS-Lite/mcs-lite/pull/451) feat(Admin): table sort. ([@evenchange4](https://github.com/evenchange4))
+* `mcs-lite-design`
+  * [#443](https://github.com/MCS-Lite/mcs-lite/pull/443) feat(Icon): add new Edit icon. ([@abby1002](https://github.com/abby1002))
 * `mcs-lite-admin-web`, `mcs-lite-mobile-web`, `mcs-lite-translation`, `mcs-lite-ui`, `react-intl-inject-hoc`
   * [#431](https://github.com/MCS-Lite/mcs-lite/pull/431) feat(Admin): add User management. ([@evenchange4](https://github.com/evenchange4))
 
@@ -17,7 +24,12 @@
 
 #### :bug: Bug Fix
 * `mcs-lite-admin-web`
+  * [#450](https://github.com/MCS-Lite/mcs-lite/pull/450) fix(Admin/User): update input file style. ([@evenchange4](https://github.com/evenchange4))
+  * [#449](https://github.com/MCS-Lite/mcs-lite/pull/449) 	fix(Admin/Use): post with CSV content. ([@evenchange4](https://github.com/evenchange4))
+  * [#442](https://github.com/MCS-Lite/mcs-lite/pull/442) fix(Admin): wrong body format of delete user. ([@evenchange4](https://github.com/evenchange4))
   * [#434](https://github.com/MCS-Lite/mcs-lite/pull/434) fix(Admin): fix delete users cycle logic & add tests. ([@evenchange4](https://github.com/evenchange4))
+* `mcs-lite-admin-web`, `mcs-lite-mobile-web`, `mcs-lite-ui`
+  * [#444](https://github.com/MCS-Lite/mcs-lite/pull/444) fix(Admin): do not refetch after users delete & update change isActive cycle logic. ([@evenchange4](https://github.com/evenchange4))
 
 #### :nail_care: Enhancement
 * `mcs-lite-admin-web`
@@ -26,22 +38,28 @@
   * [#439](https://github.com/MCS-Lite/mcs-lite/pull/439) test(Admin/Mobile): add css snapshot testing. ([@evenchange4](https://github.com/evenchange4))
 
 #### :memo: Documentation
+* `mcs-lite-introduction`
+  * [#446](https://github.com/MCS-Lite/mcs-lite/pull/446) docs(Intro): add cra-boilerplate introduction.. ([@evenchange4](https://github.com/evenchange4))
 * `mcs-lite-introduction`, `mcs-lite-translation`
   * [#438](https://github.com/MCS-Lite/mcs-lite/pull/438) feat(content): translation and update introduction.. ([@dariachen](https://github.com/dariachen))
 * `mcs-lite-translation`
   * [#433](https://github.com/MCS-Lite/mcs-lite/pull/433) feat(i18N): add translation for admin v2 feature.. ([@dariachen](https://github.com/dariachen))
 
 #### :house: Internal
+* `babel-preset-mcs-lite`, `mcs-lite-admin-web`, `mcs-lite-landing-web`, `mcs-lite-mobile-web`, `mcs-lite-ui`
+  * [#447](https://github.com/MCS-Lite/mcs-lite/pull/447) chore(ncu): update helmet & lerna & babel-plugin-sc. ([@evenchange4](https://github.com/evenchange4))
+* `mcs-lite-admin-web`, `mcs-lite-landing-web`, `mcs-lite-mobile-web`, `mcs-lite-ui`
+  * [#445](https://github.com/MCS-Lite/mcs-lite/pull/445) chore(ncu): ncu update. ([@evenchange4](https://github.com/evenchange4))
+  * [#435](https://github.com/MCS-Lite/mcs-lite/pull/435) chore(ncu): ncu update. ([@evenchange4](https://github.com/evenchange4))
 * `mcs-lite-landing-web`
   * [#441](https://github.com/MCS-Lite/mcs-lite/pull/441) chore(ncu): update react-snapshot. ([@evenchange4](https://github.com/evenchange4))
 * Other
   * [#437](https://github.com/MCS-Lite/mcs-lite/pull/437) chore(lerna): update to 2.1.0. ([@evenchange4](https://github.com/evenchange4))
-* `mcs-lite-admin-web`, `mcs-lite-landing-web`, `mcs-lite-mobile-web`, `mcs-lite-ui`
-  * [#435](https://github.com/MCS-Lite/mcs-lite/pull/435) chore(ncu): ncu update. ([@evenchange4](https://github.com/evenchange4))
 * `babel-preset-mcs-lite`, `mcs-lite-admin-web`, `mcs-lite-connect`, `mcs-lite-landing-web`, `mcs-lite-mobile-web`, `mcs-lite-scripts`, `mcs-lite-theme`, `mcs-lite-ui`, `react-intl-inject-hoc`
   * [#432](https://github.com/MCS-Lite/mcs-lite/pull/432) chore(node): update to node 8.4.0  and ncu update. ([@evenchange4](https://github.com/evenchange4))
 
-#### Committers: 2
+#### Committers: 3
+- Abby Chiu ([abby1002](https://github.com/abby1002))
 - Daria Chen ([dariachen](https://github.com/dariachen))
 - Michael Hsu ([evenchange4](https://github.com/evenchange4))
 
