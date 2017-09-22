@@ -1,6 +1,6 @@
 {
   "name": "mcs-lite-ui",
-  "version": "0.4.9",
+  "version": "0.4.10",
   "description": "Common UI used by MCS Lite",
   "repository": "MCS-Lite/mcs-lite",
   "author": "Michael Hsu <evenchange4@gmail.com>",
@@ -43,14 +43,14 @@
     "@storybook/addon-storyshots": "^3.2.8",
     "@storybook/react": "^3.2.8",
     "babel-cli": "^6.26.0",
-    "babel-preset-mcs-lite": "^0.3.6",
+    "babel-preset-mcs-lite": "^0.3.7",
     "enzyme": "^2.9.1",
     "enzyme-to-json": "^1.5.1",
     "jest": "^20.0.4",
     "jest-styled-components": "^4.4.1",
-    "mcs-lite-icon": "^0.3.7",
-    "mcs-lite-scripts": "^0.3.7",
-    "mcs-lite-theme": "^0.3.6",
+    "mcs-lite-icon": "^0.3.8",
+    "mcs-lite-scripts": "^0.3.8",
+    "mcs-lite-theme": "^0.3.7",
     "polished": "^1.6.1",
     "react": "^15.6.1",
     "react-addons-test-utils": "^15.6.0",
@@ -82,8 +82,8 @@
     "rxjs": "^5.4.3"
   },
   "peerDependencies": {
-    "mcs-lite-icon": "^0.3.7",
-    "mcs-lite-theme": "^0.3.6",
+    "mcs-lite-icon": "^0.3.8",
+    "mcs-lite-theme": "^0.3.7",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "styled-components": "^2.1.2"
