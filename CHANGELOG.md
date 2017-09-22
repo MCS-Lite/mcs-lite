@@ -2,6 +2,21 @@
 
 ## Released (2017-09-22)
 
+-   babel-preset-mcs-lite: 0.3.6 => 0.3.7
+-   mcs-lite-admin-web: 0.1.9 => 0.1.10
+-   mcs-lite-connect: 0.3.8 => 0.3.9
+-   mcs-lite-design: 0.2.2 => 0.2.3
+-   mcs-lite-icon: 0.3.7 => 0.3.8
+-   mcs-lite-introduction: 0.2.7 => 0.2.8
+-   mcs-lite-landing-web: 0.1.3 => 0.1.4 (private)
+-   mcs-lite-mobile-web: 0.4.11 => 0.4.12
+-   mcs-lite-scripts: 0.3.7 => 0.3.8
+-   mcs-lite-theme: 0.3.6 => 0.3.7
+-   mcs-lite-translation: 0.1.6 => 0.1.7
+-   mcs-lite-ui: 0.4.9 => 0.4.10
+-   react-intl-cra: 0.2.7 => 0.2.8
+-   react-intl-inject-hoc: 0.2.8 => 0.2.9
+
 #### :rocket: New Feature
 * `mcs-lite-landing-web`
   * [#453](https://github.com/MCS-Lite/mcs-lite/pull/453) feat(Landing): introduce micro-github-latest service for downloading the latest app. ([@evenchange4](https://github.com/evenchange4))
