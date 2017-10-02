@@ -1,5 +1,5 @@
 import { Observable } from 'rxjs/Observable';
-import R from 'ramda';
+import * as R from 'ramda';
 import { constants as devicesConstants } from './devices';
 import { success, exist } from '../utils/cycleHelper';
 

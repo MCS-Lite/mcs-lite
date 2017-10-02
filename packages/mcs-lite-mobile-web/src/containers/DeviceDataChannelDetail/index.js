@@ -1,7 +1,7 @@
 /* global window */
 
 import { connect } from 'react-redux';
-import R from 'ramda';
+import * as R from 'ramda';
 import compose from 'recompose/compose';
 import { withGetMessages } from 'react-intl-inject-hoc';
 import { connectSocket } from 'mcs-lite-connect';

@@ -181,6 +181,7 @@ exports[`should render STRING_CONTROL correctly with default value to empty 1`] 
         >
           <Textarea
             className="c1"
+            innerRef={undefined}
             kind="primary"
             onChange={[Function]}
             placeholder="String only"
@@ -217,6 +218,7 @@ exports[`should render STRING_CONTROL correctly with default value to empty 1`] 
                       <A
                         className="c5"
                         color="primary"
+                        innerRef={undefined}
                       >
                         <a
                           className="c5 c6"
@@ -467,6 +469,7 @@ exports[`should render STRING_CONTROL correctly with empty string 1`] = `
         >
           <Textarea
             className="c1"
+            innerRef={undefined}
             kind="primary"
             onChange={[Function]}
             placeholder="String only"
@@ -503,6 +506,7 @@ exports[`should render STRING_CONTROL correctly with empty string 1`] = `
                       <A
                         className="c5"
                         color="primary"
+                        innerRef={undefined}
                       >
                         <a
                           className="c5 c6"
@@ -753,6 +757,7 @@ exports[`should render STRING_CONTROL correctly with value 1`] = `
         >
           <Textarea
             className="c1"
+            innerRef={undefined}
             kind="primary"
             onChange={[Function]}
             placeholder="String only"
@@ -789,6 +794,7 @@ exports[`should render STRING_CONTROL correctly with value 1`] = `
                       <A
                         className="c5"
                         color="primary"
+                        innerRef={undefined}
                       >
                         <a
                           className="c5 c6"

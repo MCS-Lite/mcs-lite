@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import R from 'ramda';
+import * as R from 'ramda';
 import Helmet from 'react-helmet';
 import Table from 'mcs-lite-ui/lib/Table';
 import DashboardTitle from '../../components/DashboardTitle';

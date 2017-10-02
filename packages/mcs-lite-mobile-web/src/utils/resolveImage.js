@@ -1,5 +1,5 @@
 // @flow
-import R from 'ramda';
+import * as R from 'ramda';
 
 type Func = (string, string) => string;
 

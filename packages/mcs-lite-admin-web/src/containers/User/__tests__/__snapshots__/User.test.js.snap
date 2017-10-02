@@ -551,3 +551,19 @@ exports[`should renders <User> correctly 1`] = `
   </styled.div>
 </div>
 `;
+
+exports[`should return correct isEditDialogShow$ 1`] = `
+<styled.div>
+  <A
+    color="primary"
+    onClick={[Function]}
+  >
+    <IconAdd
+      size={18}
+    />
+    <div>
+      addUser
+    </div>
+  </A>
+</styled.div>
+`;

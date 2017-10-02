@@ -223,7 +223,9 @@ exports[`should render ANALOG_CONTROL correctly with default value to N/A 1`] = 
           <div
             className="c1"
           >
-            <ControlRange__LabelItem>
+            <ControlRange__LabelItem
+              key="0"
+            >
               <div
                 className="c2"
               >
@@ -244,7 +246,9 @@ exports[`should render ANALOG_CONTROL correctly with default value to N/A 1`] = 
                 </P>
               </div>
             </ControlRange__LabelItem>
-            <ControlRange__LabelItem>
+            <ControlRange__LabelItem
+              key="100"
+            >
               <div
                 className="c2"
               >
@@ -284,6 +288,7 @@ exports[`should render ANALOG_CONTROL correctly with default value to N/A 1`] = 
               <P
                 className="c5"
                 color="grayBase"
+                innerRef={undefined}
               >
                 <Component
                   className="c5 c3"
@@ -300,6 +305,7 @@ exports[`should render ANALOG_CONTROL correctly with default value to N/A 1`] = 
                       <P
                         className="c6"
                         color="primary"
+                        innerRef={undefined}
                       >
                         <Component
                           className="c6 c7"
@@ -575,7 +581,9 @@ exports[`should render ANALOG_CONTROL correctly with max 1`] = `
           <div
             className="c1"
           >
-            <ControlRange__LabelItem>
+            <ControlRange__LabelItem
+              key="0"
+            >
               <div
                 className="c2"
               >
@@ -596,7 +604,9 @@ exports[`should render ANALOG_CONTROL correctly with max 1`] = `
                 </P>
               </div>
             </ControlRange__LabelItem>
-            <ControlRange__LabelItem>
+            <ControlRange__LabelItem
+              key="100"
+            >
               <div
                 className="c2"
               >
@@ -636,6 +646,7 @@ exports[`should render ANALOG_CONTROL correctly with max 1`] = `
               <P
                 className="c5"
                 color="grayBase"
+                innerRef={undefined}
               >
                 <Component
                   className="c5 c3"
@@ -652,6 +663,7 @@ exports[`should render ANALOG_CONTROL correctly with max 1`] = `
                       <P
                         className="c6"
                         color="primary"
+                        innerRef={undefined}
                       >
                         <Component
                           className="c6 c7"
@@ -927,7 +939,9 @@ exports[`should render ANALOG_CONTROL correctly with zero 1`] = `
           <div
             className="c1"
           >
-            <ControlRange__LabelItem>
+            <ControlRange__LabelItem
+              key="0"
+            >
               <div
                 className="c2"
               >
@@ -948,7 +962,9 @@ exports[`should render ANALOG_CONTROL correctly with zero 1`] = `
                 </P>
               </div>
             </ControlRange__LabelItem>
-            <ControlRange__LabelItem>
+            <ControlRange__LabelItem
+              key="100"
+            >
               <div
                 className="c2"
               >
@@ -988,6 +1004,7 @@ exports[`should render ANALOG_CONTROL correctly with zero 1`] = `
               <P
                 className="c5"
                 color="grayBase"
+                innerRef={undefined}
               >
                 <Component
                   className="c5 c3"
@@ -1004,6 +1021,7 @@ exports[`should render ANALOG_CONTROL correctly with zero 1`] = `
                       <P
                         className="c6"
                         color="primary"
+                        innerRef={undefined}
                       >
                         <Component
                           className="c6 c7"

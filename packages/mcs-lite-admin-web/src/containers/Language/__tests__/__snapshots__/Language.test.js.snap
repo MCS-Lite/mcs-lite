@@ -82,6 +82,7 @@ exports[`should renders <Language> correctly 1`] = `
     <DashboardDesc>
       <P
         className="c2"
+        innerRef={undefined}
       >
         <Component
           className="c2 c3"
@@ -99,6 +100,7 @@ exports[`should renders <Language> correctly 1`] = `
         className="c4"
       >
         <Link
+          key="en"
           onlyActiveOnIndex={false}
           style={Object {}}
           to={[Function]}
@@ -117,6 +119,7 @@ exports[`should renders <Language> correctly 1`] = `
           </a>
         </Link>
         <Link
+          key="zh-TW"
           onlyActiveOnIndex={false}
           style={Object {}}
           to={[Function]}
@@ -135,6 +138,7 @@ exports[`should renders <Language> correctly 1`] = `
           </a>
         </Link>
         <Link
+          key="zh-CN"
           onlyActiveOnIndex={false}
           style={Object {}}
           to={[Function]}

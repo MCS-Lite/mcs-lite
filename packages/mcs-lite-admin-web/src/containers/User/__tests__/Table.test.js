@@ -1,5 +1,5 @@
 import React from 'react';
-import R from 'ramda';
+import * as R from 'ramda';
 import { mount } from 'enzyme';
 import toJson from 'enzyme-to-json';
 import { ThemeProvider } from 'styled-components';
@@ -90,7 +90,7 @@ it('should handle check all in checkedHeaderRenderer', () => {
     </ThemeProvider>,
   );
 
-  const table = wrapper.find(Table).getNode();
+  const table = wrapper.find(Table).instance();
   const input = table.checkedHeaderRenderer();
 
   expect(input).toMatchSnapshot();
@@ -125,7 +125,7 @@ it('should handle uncheck all in checkedHeaderRenderer', () => {
     </ThemeProvider>,
   );
 
-  const table = wrapper.find(Table).getNode();
+  const table = wrapper.find(Table).instance();
   const input = table.checkedHeaderRenderer();
 
   expect(input).toMatchSnapshot();
@@ -160,7 +160,7 @@ it('should handle ckeck item in checkedCellRenderer', () => {
     </ThemeProvider>,
   );
 
-  const table = wrapper.find(Table).getNode();
+  const table = wrapper.find(Table).instance();
   const input = table.checkedCellRenderer({
     rowData: {
       userId: 'user1',
@@ -201,7 +201,7 @@ it('should handle unckeck item in checkedCellRenderer', () => {
     </ThemeProvider>,
   );
 
-  const table = wrapper.find(Table).getNode();
+  const table = wrapper.find(Table).instance();
   const input = table.checkedCellRenderer({
     rowData: {
       userId: 'user1',
@@ -231,7 +231,7 @@ it('should handle onEditClick in editCellRenderer', () => {
     </ThemeProvider>,
   );
 
-  const table = wrapper.find(Table).getNode();
+  const table = wrapper.find(Table).instance();
   const icon = table.editCellRenderer({
     rowData: {
       userId: 'user1',
@@ -260,7 +260,7 @@ it('should handle noRowsRenderer', () => {
     </ThemeProvider>,
   );
 
-  const table = wrapper.find(Table).getNode();
+  const table = wrapper.find(Table).instance();
   const render = table.noRowsRenderer();
 
   expect(render).toMatchSnapshot();
@@ -279,7 +279,7 @@ it('should handle userNameCellRenderer', () => {
     </ThemeProvider>,
   );
 
-  const table = wrapper.find(Table).getNode();
+  const table = wrapper.find(Table).instance();
   const render = table.userNameCellRenderer({
     rowData: {
       userId: 'user1',
@@ -304,7 +304,7 @@ it('should handle userNameCellRenderer with isActive status', () => {
     </ThemeProvider>,
   );
 
-  const table = wrapper.find(Table).getNode();
+  const table = wrapper.find(Table).instance();
 
   expect(
     table.userNameCellRenderer({
@@ -342,7 +342,7 @@ it('should handle emailCellRenderer with isActive status', () => {
     </ThemeProvider>,
   );
 
-  const table = wrapper.find(Table).getNode();
+  const table = wrapper.find(Table).instance();
 
   expect(
     table.emailCellRenderer({
@@ -391,7 +391,7 @@ it('should handle rowGetter', () => {
     </ThemeProvider>,
   );
 
-  const table = wrapper.find(Table).getNode();
+  const table = wrapper.find(Table).instance();
 
   expect(table.rowGetter({ index: 0 })).toEqual({
     userId: 'user1',
@@ -424,7 +424,7 @@ it('should handle onSort', () => {
     </ThemeProvider>,
   );
 
-  const table = wrapper.find(Table).getNode();
+  const table = wrapper.find(Table).instance();
   // Before sort
   expect(table.state.sortedList).toMatchSnapshot();
 

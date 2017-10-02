@@ -3,6 +3,9 @@ import infoAddon, { setDefaults } from '@storybook/addon-info';
 import { setOptions } from '@storybook/addon-options';
 import centered from './decorator-centered';
 
+// TODO: remove it when react-svg-morph is ready
+require('react').PropTypes = require('prop-types');
+
 // addon-info
 setDefaults({
   inline: true,

@@ -74,7 +74,9 @@ exports[`should render PWM_DISPLAY correctly with default value to N/A 1`] = `
       <div
         className="c0"
       >
-        <div>
+        <div
+          key="Value"
+        >
           <P
             color="grayBase"
           >
@@ -96,6 +98,7 @@ exports[`should render PWM_DISPLAY correctly with default value to N/A 1`] = `
             <Heading
               className="c2"
               color="primary"
+              innerRef={undefined}
               level={1}
             >
               <H
@@ -113,7 +116,9 @@ exports[`should render PWM_DISPLAY correctly with default value to N/A 1`] = `
             </Heading>
           </DisplayMultipleValue__StyledHeading>
         </div>
-        <div>
+        <div
+          key="Period"
+        >
           <P
             color="grayBase"
           >
@@ -135,6 +140,7 @@ exports[`should render PWM_DISPLAY correctly with default value to N/A 1`] = `
             <Heading
               className="c2"
               color="primary"
+              innerRef={undefined}
               level={1}
             >
               <H
@@ -235,7 +241,9 @@ exports[`should render PWM_DISPLAY correctly with max 1`] = `
       <div
         className="c0"
       >
-        <div>
+        <div
+          key="Value"
+        >
           <P
             color="grayBase"
           >
@@ -257,6 +265,7 @@ exports[`should render PWM_DISPLAY correctly with max 1`] = `
             <Heading
               className="c2"
               color="primary"
+              innerRef={undefined}
               level={1}
             >
               <H
@@ -274,7 +283,9 @@ exports[`should render PWM_DISPLAY correctly with max 1`] = `
             </Heading>
           </DisplayMultipleValue__StyledHeading>
         </div>
-        <div>
+        <div
+          key="Period"
+        >
           <P
             color="grayBase"
           >
@@ -296,6 +307,7 @@ exports[`should render PWM_DISPLAY correctly with max 1`] = `
             <Heading
               className="c2"
               color="primary"
+              innerRef={undefined}
               level={1}
             >
               <H
@@ -396,7 +408,9 @@ exports[`should render PWM_DISPLAY correctly with zero 1`] = `
       <div
         className="c0"
       >
-        <div>
+        <div
+          key="Value"
+        >
           <P
             color="grayBase"
           >
@@ -418,6 +432,7 @@ exports[`should render PWM_DISPLAY correctly with zero 1`] = `
             <Heading
               className="c2"
               color="primary"
+              innerRef={undefined}
               level={1}
             >
               <H
@@ -435,7 +450,9 @@ exports[`should render PWM_DISPLAY correctly with zero 1`] = `
             </Heading>
           </DisplayMultipleValue__StyledHeading>
         </div>
-        <div>
+        <div
+          key="Period"
+        >
           <P
             color="grayBase"
           >
@@ -457,6 +474,7 @@ exports[`should render PWM_DISPLAY correctly with zero 1`] = `
             <Heading
               className="c2"
               color="primary"
+              innerRef={undefined}
               level={1}
             >
               <H

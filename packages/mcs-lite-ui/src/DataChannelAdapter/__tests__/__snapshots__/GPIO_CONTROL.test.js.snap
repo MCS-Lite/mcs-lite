@@ -222,7 +222,9 @@ exports[`should render GPIO_CONTROL correctly with High 1`] = `
           <div
             className="c1"
           >
-            <ControlRange__LabelItem>
+            <ControlRange__LabelItem
+              key="Low"
+            >
               <div
                 className="c2"
               >
@@ -243,7 +245,9 @@ exports[`should render GPIO_CONTROL correctly with High 1`] = `
                 </P>
               </div>
             </ControlRange__LabelItem>
-            <ControlRange__LabelItem>
+            <ControlRange__LabelItem
+              key="High"
+            >
               <div
                 className="c2"
               >
@@ -283,6 +287,7 @@ exports[`should render GPIO_CONTROL correctly with High 1`] = `
               <P
                 className="c5"
                 color="grayBase"
+                innerRef={undefined}
               >
                 <Component
                   className="c5 c3"
@@ -299,6 +304,7 @@ exports[`should render GPIO_CONTROL correctly with High 1`] = `
                       <P
                         className="c6"
                         color="primary"
+                        innerRef={undefined}
                       >
                         <Component
                           className="c6 c7"
@@ -571,7 +577,9 @@ exports[`should render GPIO_CONTROL correctly with Low 1`] = `
           <div
             className="c1"
           >
-            <ControlRange__LabelItem>
+            <ControlRange__LabelItem
+              key="Low"
+            >
               <div
                 className="c2"
               >
@@ -592,7 +600,9 @@ exports[`should render GPIO_CONTROL correctly with Low 1`] = `
                 </P>
               </div>
             </ControlRange__LabelItem>
-            <ControlRange__LabelItem>
+            <ControlRange__LabelItem
+              key="High"
+            >
               <div
                 className="c2"
               >
@@ -632,6 +642,7 @@ exports[`should render GPIO_CONTROL correctly with Low 1`] = `
               <P
                 className="c5"
                 color="grayBase"
+                innerRef={undefined}
               >
                 <Component
                   className="c5 c3"
@@ -648,6 +659,7 @@ exports[`should render GPIO_CONTROL correctly with Low 1`] = `
                       <P
                         className="c6"
                         color="primary"
+                        innerRef={undefined}
                       >
                         <Component
                           className="c6 c7"
@@ -918,7 +930,9 @@ exports[`should render GPIO_CONTROL correctly with default value to N/A 1`] = `
           <div
             className="c1"
           >
-            <ControlRange__LabelItem>
+            <ControlRange__LabelItem
+              key="Low"
+            >
               <div
                 className="c2"
               >
@@ -939,7 +953,9 @@ exports[`should render GPIO_CONTROL correctly with default value to N/A 1`] = `
                 </P>
               </div>
             </ControlRange__LabelItem>
-            <ControlRange__LabelItem>
+            <ControlRange__LabelItem
+              key="High"
+            >
               <div
                 className="c2"
               >
@@ -979,6 +995,7 @@ exports[`should render GPIO_CONTROL correctly with default value to N/A 1`] = `
               <P
                 className="c5"
                 color="grayBase"
+                innerRef={undefined}
               >
                 <Component
                   className="c5 c3"
@@ -995,6 +1012,7 @@ exports[`should render GPIO_CONTROL correctly with default value to N/A 1`] = `
                       <P
                         className="c6"
                         color="primary"
+                        innerRef={undefined}
                       >
                         <Component
                           className="c6 c7"

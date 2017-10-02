@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { Row } from 'hedron';
 import styled from 'styled-components';
 import ScrollOverPack from 'rc-scroll-anim/lib/ScrollOverPack';
-import TweenOne from 'rc-tween-one';
+import TweenOne from 'rc-tween-one/lib/TweenOne';
 import LazyloadOnce from 'mcs-lite-ui/lib/LazyloadOnce';
 
 const HEIGHT = 80;

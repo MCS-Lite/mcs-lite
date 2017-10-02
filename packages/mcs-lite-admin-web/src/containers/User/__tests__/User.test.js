@@ -1,5 +1,5 @@
 import React from 'react';
-import R from 'ramda';
+import * as R from 'ramda';
 import { mount, shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
 import Input from 'mcs-lite-ui/lib/Input';
@@ -143,13 +143,14 @@ it('should render with delete footer', () => {
   // Before add as default
   const table = wrapper.find(Table);
   table.props().onCheckedListChange([]);
+  wrapper.update();
   expect(toJson(wrapper.find(FooterWrapper))).toMatchSnapshot(
     'should render with delete footer - Add',
   );
 
   // After change to delete
   table.props().onCheckedListChange(['user1', 'user2']);
-
+  wrapper.update();
   expect(toJson(wrapper.find(FooterWrapper))).toMatchSnapshot(
     'should render with delete footer - Delete',
   );
@@ -226,6 +227,7 @@ it('should return correct isAddDialogShow$', () => {
 
   // After onHide
   getAddDialog(wrapper).props().onHide(mockEvent);
+  wrapper.update();
   expect(mockEvent.preventDefault).toHaveBeenCalled();
   expect(getAddDialog(wrapper).props().show).toBe(false);
 });
@@ -268,15 +270,17 @@ it('should return correct isEditDialogShow$', () => {
 
   // After onShow
   table.props().onEditClick('user1');
+  wrapper.update();
   expect(getEditDialog(wrapper).props().show).toBe(true);
 
   // After onHide
   getEditDialog(wrapper).props().onHide(mockEvent);
+  wrapper.update();
   expect(mockEvent.preventDefault).toHaveBeenCalled();
   expect(getEditDialog(wrapper).props().show).toBe(false);
 
-  // // footer
-  // expect(toJson(wrapper.find(FooterWrapper))).toMatchSnapshot();
+  // footer
+  expect(toJson(wrapper.find(FooterWrapper))).toMatchSnapshot();
 });
 
 it('should handle onFormDataChange$', () => {

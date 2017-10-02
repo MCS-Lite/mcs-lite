@@ -65,16 +65,19 @@ Array [
     <Styled(MobileContentWrapper)>
         <MobileContentWrapper
             className="c0"
+            innerRef={undefined}
         />
     </Styled(MobileContentWrapper)>
     <Styled(MobileContentWrapper)>
         <MobileContentWrapper
             className="c1"
+            innerRef={undefined}
         />
     </Styled(MobileContentWrapper)>
     <Styled(Small)>
         <Small
             className="c2"
+            innerRef={undefined}
         />
     </Styled(Small)>
     <styled.div>
@@ -86,6 +89,7 @@ Array [
         <Switch
             checked={false}
             className="c4"
+            innerRef={undefined}
             kind="success"
         />
     </Styled(Switch)>

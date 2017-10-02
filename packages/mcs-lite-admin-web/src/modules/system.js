@@ -1,5 +1,5 @@
 import { Observable } from 'rxjs/Observable';
-import R from 'ramda';
+import * as R from 'ramda';
 import isJSON from 'validator/lib/isJSON';
 import { actions as uiActions } from './ui';
 import { success, accessTokenSelector$ } from '../utils/cycleHelper';

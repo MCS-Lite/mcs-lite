@@ -4,9 +4,6 @@ import { ThemeProvider } from 'styled-components';
 import { theme } from 'mcs-lite-theme';
 import Picker from '../Picker';
 
-jest.unmock('react-hammerjs');
-jest.mock('react-hammerjs', () => () => <div />);
-
 it('should return correct index and distance', () => {
   const wrapper = mount(
     <ThemeProvider theme={theme}>
@@ -20,7 +17,7 @@ it('should return correct index and distance', () => {
   );
   const { clampIndex, calcDistanceByIndex, calcIndexByDistance } = wrapper
     .find(Picker)
-    .getNode();
+    .instance();
 
   expect(clampIndex(-2)).toBe(0);
   expect(clampIndex(-1)).toBe(0);

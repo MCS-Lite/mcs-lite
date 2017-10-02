@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import R from 'ramda';
+import * as R from 'ramda';
 import { Observable } from 'rxjs/Observable';
 import Helmet from 'react-helmet';
 import InputGroup from 'mcs-lite-ui/lib/InputGroup';

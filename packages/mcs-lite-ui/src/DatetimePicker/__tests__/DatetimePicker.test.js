@@ -4,9 +4,6 @@ import { ThemeProvider } from 'styled-components';
 import { theme } from 'mcs-lite-theme';
 import DatetimePicker from '../DatetimePicker';
 
-jest.unmock('react-hammerjs');
-jest.mock('react-hammerjs', () => () => <div />);
-
 it('should handle onChange', () => {
   const mockOnChange = jest.fn();
   const wrapper = mount(
@@ -18,6 +15,6 @@ it('should handle onChange', () => {
     </ThemeProvider>,
   );
 
-  wrapper.find(DatetimePicker).getNode().onChange(1, { name: 'YEAR' });
+  wrapper.find(DatetimePicker).instance().onChange(1, { name: 'YEAR' });
   expect(mockOnChange).toHaveBeenCalledWith(1487403031722); // Sat Feb 18 2017 15:30:31 GMT+0800 (CST)
 });

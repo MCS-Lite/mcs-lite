@@ -29,12 +29,12 @@
     "babel-core": "^6.26.0",
     "babel-plugin-react-intl": "^2.3.1",
     "babel-preset-mcs-lite": "^0.3.7",
-    "babel-preset-react-app": "^3.0.2",
+    "babel-preset-react-app": "^3.0.3",
     "cheerio": "^0.22.0",
     "glob": "^7.1.2",
     "lodash.camelcase": "^4.3.0",
     "lodash.upperfirst": "^4.3.1",
-    "ramda": "^0.24.1",
+    "ramda": "^0.25.0",
     "rxjs": "^5.4.3"
   },
   "devDependencies": {

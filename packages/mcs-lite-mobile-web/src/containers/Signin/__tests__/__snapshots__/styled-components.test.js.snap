@@ -25,6 +25,7 @@ exports[`should render components correctly 1`] = `
   <Styled(MobileContentWrapper)>
     <MobileContentWrapper
       className="c0"
+      innerRef={undefined}
     />
   </Styled(MobileContentWrapper)>
   <styled.form>

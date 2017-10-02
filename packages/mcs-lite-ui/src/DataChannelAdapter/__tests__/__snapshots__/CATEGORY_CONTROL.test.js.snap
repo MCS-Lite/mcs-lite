@@ -213,6 +213,7 @@ exports[`should render CATEGORY_CONTROL correctly with default value to N/A 1`] 
     }
     onChange={[Function]}
     onSubmit={[Function]}
+    value={undefined}
     valueMapper={[Function]}
   >
     <ControlRange__Container>
@@ -230,7 +231,9 @@ exports[`should render CATEGORY_CONTROL correctly with default value to N/A 1`] 
           <div
             className="c1"
           >
-            <ControlRange__LabelItem>
+            <ControlRange__LabelItem
+              key="name1"
+            >
               <div
                 className="c2"
               >
@@ -251,7 +254,9 @@ exports[`should render CATEGORY_CONTROL correctly with default value to N/A 1`] 
                 </P>
               </div>
             </ControlRange__LabelItem>
-            <ControlRange__LabelItem>
+            <ControlRange__LabelItem
+              key="name2"
+            >
               <div
                 className="c2"
               >
@@ -291,6 +296,7 @@ exports[`should render CATEGORY_CONTROL correctly with default value to N/A 1`] 
               <P
                 className="c5"
                 color="grayBase"
+                innerRef={undefined}
               >
                 <Component
                   className="c5 c3"
@@ -307,6 +313,7 @@ exports[`should render CATEGORY_CONTROL correctly with default value to N/A 1`] 
                       <P
                         className="c6"
                         color="primary"
+                        innerRef={undefined}
                       >
                         <Component
                           className="c6 c7"
@@ -334,6 +341,7 @@ exports[`should render CATEGORY_CONTROL correctly with default value to N/A 1`] 
               onTouchEnd={[Function]}
               step={1}
               type="range"
+              value={undefined}
             >
               <input
                 className="c8"
@@ -345,6 +353,7 @@ exports[`should render CATEGORY_CONTROL correctly with default value to N/A 1`] 
                 onTouchEnd={[Function]}
                 step={1}
                 type="range"
+                value={undefined}
               />
             </InputRange>
           </div>
@@ -588,7 +597,9 @@ exports[`should render CATEGORY_CONTROL correctly with first item 1`] = `
           <div
             className="c1"
           >
-            <ControlRange__LabelItem>
+            <ControlRange__LabelItem
+              key="name1"
+            >
               <div
                 className="c2"
               >
@@ -609,7 +620,9 @@ exports[`should render CATEGORY_CONTROL correctly with first item 1`] = `
                 </P>
               </div>
             </ControlRange__LabelItem>
-            <ControlRange__LabelItem>
+            <ControlRange__LabelItem
+              key="name2"
+            >
               <div
                 className="c2"
               >
@@ -649,6 +662,7 @@ exports[`should render CATEGORY_CONTROL correctly with first item 1`] = `
               <P
                 className="c5"
                 color="grayBase"
+                innerRef={undefined}
               >
                 <Component
                   className="c5 c3"
@@ -665,6 +679,7 @@ exports[`should render CATEGORY_CONTROL correctly with first item 1`] = `
                       <P
                         className="c6"
                         color="primary"
+                        innerRef={undefined}
                       >
                         <Component
                           className="c6 c7"
@@ -948,7 +963,9 @@ exports[`should render CATEGORY_CONTROL correctly with second item 1`] = `
           <div
             className="c1"
           >
-            <ControlRange__LabelItem>
+            <ControlRange__LabelItem
+              key="name1"
+            >
               <div
                 className="c2"
               >
@@ -969,7 +986,9 @@ exports[`should render CATEGORY_CONTROL correctly with second item 1`] = `
                 </P>
               </div>
             </ControlRange__LabelItem>
-            <ControlRange__LabelItem>
+            <ControlRange__LabelItem
+              key="name2"
+            >
               <div
                 className="c2"
               >
@@ -1009,6 +1028,7 @@ exports[`should render CATEGORY_CONTROL correctly with second item 1`] = `
               <P
                 className="c5"
                 color="grayBase"
+                innerRef={undefined}
               >
                 <Component
                   className="c5 c3"
@@ -1025,6 +1045,7 @@ exports[`should render CATEGORY_CONTROL correctly with second item 1`] = `
                       <P
                         className="c6"
                         color="primary"
+                        innerRef={undefined}
                       >
                         <Component
                           className="c6 c7"

@@ -1,5 +1,5 @@
 import { Observable } from 'rxjs/Observable';
-import R from 'ramda';
+import * as R from 'ramda';
 import { actions as uiActions } from './ui';
 import { success, exist, accessTokenSelector$ } from '../utils/cycleHelper';
 

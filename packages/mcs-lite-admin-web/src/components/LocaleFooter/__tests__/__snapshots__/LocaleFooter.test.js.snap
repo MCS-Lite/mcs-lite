@@ -28,6 +28,7 @@ exports[`should renders <LocaleFooter> correctly 1`] = `
       className="c0"
     >
       <Link
+        key="en"
         onlyActiveOnIndex={false}
         style={Object {}}
         to={[Function]}
@@ -46,6 +47,7 @@ exports[`should renders <LocaleFooter> correctly 1`] = `
         </a>
       </Link>
       <Link
+        key="zh-TW"
         onlyActiveOnIndex={false}
         style={Object {}}
         to={[Function]}
@@ -64,6 +66,7 @@ exports[`should renders <LocaleFooter> correctly 1`] = `
         </a>
       </Link>
       <Link
+        key="zh-CN"
         onlyActiveOnIndex={false}
         style={Object {}}
         to={[Function]}

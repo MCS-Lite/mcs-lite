@@ -149,9 +149,13 @@ Array [
                                     className="c2"
                                     width="960px"
                                 >
-                                    <Styled(RowContainer)>
+                                    <Styled(RowContainer)
+                                        debug={undefined}
+                                        key=".0"
+                                    >
                                         <RowContainer
                                             className="c3"
+                                            debug={undefined}
                                             divisions={12}
                                         >
                                             <section
@@ -291,9 +295,13 @@ Array [
                 className="c2"
                 width="960px"
             >
-                <Styled(RowContainer)>
+                <Styled(RowContainer)
+                    debug={undefined}
+                    key=".0"
+                >
                     <RowContainer
                         className="c3"
+                        debug={undefined}
                         divisions={12}
                     >
                         <section
@@ -330,9 +338,13 @@ Array [
     className="c0"
     width="960px"
 >
-    <Styled(RowContainer)>
+    <Styled(RowContainer)
+        debug={undefined}
+        key=".0"
+    >
         <RowContainer
             className="c1"
+            debug={undefined}
             divisions={12}
         >
             <section

@@ -19,7 +19,7 @@ it('should handle onFocus', () => {
   );
 
   // Before focus
-  const select = wrapper.find(Select).getNode();
+  const select = wrapper.find(Select).instance();
   expect(select.state.isOpen).toBe(false);
 
   // After focus

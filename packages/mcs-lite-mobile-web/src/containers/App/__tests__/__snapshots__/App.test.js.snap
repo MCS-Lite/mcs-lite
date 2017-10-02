@@ -36,6 +36,7 @@ exports[`should renders <App> correctly with toasts 1`] = `
         runOnMount={true}
       >
         <Toast
+          key="key"
           kind="kind"
         >
           children

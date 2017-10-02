@@ -1,7 +1,6 @@
 /* eslint no-console: 0 */
 
-import React from 'react';
-import createEagerFactory from 'recompose/createEagerFactory';
+import { createFactory, Component } from 'react';
 import setDisplayName from 'recompose/setDisplayName';
 import wrapDisplayName from 'recompose/wrapDisplayName';
 import { w3cwebsocket as W3CWebSocket } from 'websocket';
@@ -30,13 +29,13 @@ const setReadyState = (name, websocket) => prevState => ({
  */
 
 const connectSocket = (urlMapper, onMessage, propsMapper) => BaseComponent => {
-  const factory = createEagerFactory(BaseComponent);
+  const factory = createFactory(BaseComponent);
   const initialState = {
     send: emptyFunction, // Remind: Pass this Sender function as props.
     readyState: { viewer: '', sender: '' }, // 0 ~ 3
   };
 
-  class ConnectMCS extends React.Component {
+  class ConnectMCS extends Component {
     state = initialState;
     componentWillMount = () => this.createWebSocket();
     componentWillReceiveProps = () => this.createWebSocket();

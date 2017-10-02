@@ -181,6 +181,7 @@ Array [
         <Logo
             alt="MCS Lite Logo"
             className="c4"
+            innerRef={undefined}
             src="logo_mcs_lite_black.svg"
         >
             <img
@@ -217,6 +218,7 @@ Array [
     <Styled(Styled(Link))>
         <Styled(Link)
             className="c10"
+            innerRef={undefined}
         >
             <Link
                 activeClassName="DashboardLayout-SC-NavItem-attrs-activeClassName"

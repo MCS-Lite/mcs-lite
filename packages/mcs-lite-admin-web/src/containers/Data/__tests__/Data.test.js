@@ -1,5 +1,5 @@
 import React from 'react';
-import R from 'ramda';
+import * as R from 'ramda';
 import { shallow, mount } from 'enzyme';
 import toJson from 'enzyme-to-json';
 import A from 'mcs-lite-ui/lib/A';
@@ -22,26 +22,28 @@ it('should return correct show props', () => {
     </MockProvider>,
   );
 
-  const dialogConfirm = wrapper.find(DialogConfirm).first();
+  const getDialogConfirm = () => wrapper.find(DialogConfirm).first();
   const resetButton = wrapper.find(A);
 
-  expect(dialogConfirm.props().show).toBe(false);
+  expect(getDialogConfirm().props().show).toBe(false);
 
   // After Click to open
   resetButton.simulate('click');
-  expect(dialogConfirm.props().show).toBe(true);
+  expect(getDialogConfirm().props().show).toBe(true);
 
   // After onCancel
-  dialogConfirm.props().onCancel();
-  expect(dialogConfirm.props().show).toBe(false);
+  getDialogConfirm().props().onCancel();
+  wrapper.update();
+  expect(getDialogConfirm().props().show).toBe(false);
 
   // After Click to open
   resetButton.simulate('click');
-  expect(dialogConfirm.props().show).toBe(true);
+  expect(getDialogConfirm().props().show).toBe(true);
 
   // After onSubmit
-  dialogConfirm.props().onSubmit();
-  expect(dialogConfirm.props().show).toBe(false);
+  getDialogConfirm().props().onSubmit();
+  wrapper.update();
+  expect(getDialogConfirm().props().show).toBe(false);
 });
 
 it('should call deleteData when onSubmit', () => {

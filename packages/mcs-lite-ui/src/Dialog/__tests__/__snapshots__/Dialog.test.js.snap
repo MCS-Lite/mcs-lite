@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render <Dialog /> 1`] = `
+<Dialog
+  onHide={[Function]}
+  show={true}
+>
+  <mock-portal>
+    <Transition
+      component={false}
+      enter={
+        Object {
+          "opacity": 1,
+        }
+      }
+      leave={
+        Object {
+          "opacity": 0.5,
+        }
+      }
+      onEnter={[Function]}
+      onLeave={[Function]}
+      runOnMount={true}
+    />
+  </mock-portal>
+</Dialog>
+`;
+
+exports[`should render <Overlay /> 1`] = `
+.c0 {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0,0,0,0.3);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  overflow: auto;
+}
+
+<Dialog__Overlay>
+  <div
+    className="c0"
+  />
+</Dialog__Overlay>
+`;

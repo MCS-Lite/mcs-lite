@@ -140,6 +140,7 @@ Array [
                       }
                 }
                 className="c5"
+                innerRef={undefined}
             >
                 <div
                     className="c5 c6"
@@ -150,6 +151,7 @@ Array [
     <Styled(styled.div)>
         <styled.div
             className="c7"
+            innerRef={undefined}
         >
             <div
                 className="c7 c6"

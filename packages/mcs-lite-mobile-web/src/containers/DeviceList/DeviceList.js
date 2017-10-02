@@ -1,7 +1,7 @@
 import React from 'react';
 import { findDOMNode } from 'react-dom';
 import PropTypes from 'prop-types';
-import R from 'ramda';
+import * as R from 'ramda';
 import Helmet from 'react-helmet';
 import Transition from 'react-motion-ui-pack';
 import { Link } from 'react-router';

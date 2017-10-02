@@ -1,6 +1,6 @@
 import { combineCycles } from 'redux-cycles';
 import { combineReducers } from 'redux';
-import R from 'ramda';
+import * as R from 'ramda';
 import routing, { cycles as routingCycles } from './routing';
 import auth, { cycles as authCycles } from './auth';
 import ui, { cycles as uiCycles } from './ui';

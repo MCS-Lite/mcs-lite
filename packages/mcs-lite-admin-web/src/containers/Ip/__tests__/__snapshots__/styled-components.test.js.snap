@@ -19,6 +19,7 @@ Array [
             className="c0"
             component="button"
             disabled={false}
+            innerRef={undefined}
             kind="primary"
             round={false}
             size="normal"

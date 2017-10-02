@@ -293,12 +293,12 @@ exports[`Storyshots API [mcs-lite-theme] [JSON] kind 1`] = `
 <div>
   <pre>
     [
-      "default",
-      "primary",
-      "success",
-      "error",
-      "warning"
-    ]
+  "default",
+  "primary",
+  "success",
+  "error",
+  "warning"
+]
   </pre>
 </div>
 `;
@@ -307,44 +307,44 @@ exports[`Storyshots API [mcs-lite-theme] [JSON] theme 1`] = `
 <div>
   <pre>
     {
-      "color": {
-        "black": "#353630",
-        "grayBase": "#999A94",
-        "grayDark": "#D1D2D3",
-        "grayLight": "#FAFAFA",
-        "white": "#FFFFFF",
-        "default": "#FAFAFA",
-        "primary": "#00A1DE",
-        "success": "#69BE28",
-        "error": "#F5364E",
-        "warning": "#F39A1E"
-      },
-      "base": {
-        "bodyBackgroundColor": "#F1F2F7",
-        "bodyColor": "#353630",
-        "fontSize": "13px",
-        "lineHeight": 1.5
-      },
-      "fontSize": {
-        "small": "0.923rem",
-        "p": "1rem",
-        "h6": "1rem",
-        "h5": "1rem",
-        "h4": "1.15rem",
-        "h3": "1.38rem",
-        "h2": "1.69rem",
-        "h1": "2.46rem"
-      },
-      "height": {
-        "normal": "32px",
-        "small": "20px",
-        "header": "50px"
-      },
-      "mobile": {
-        "maxWidth": "800px",
-        "headerHeight": "56px"
-      }
-    }
+  "color": {
+    "black": "#353630",
+    "grayBase": "#999A94",
+    "grayDark": "#D1D2D3",
+    "grayLight": "#FAFAFA",
+    "white": "#FFFFFF",
+    "default": "#FAFAFA",
+    "primary": "#00A1DE",
+    "success": "#69BE28",
+    "error": "#F5364E",
+    "warning": "#F39A1E"
+  },
+  "base": {
+    "bodyBackgroundColor": "#F1F2F7",
+    "bodyColor": "#353630",
+    "fontSize": "13px",
+    "lineHeight": 1.5
+  },
+  "fontSize": {
+    "small": "0.923rem",
+    "p": "1rem",
+    "h6": "1rem",
+    "h5": "1rem",
+    "h4": "1.15rem",
+    "h3": "1.38rem",
+    "h2": "1.69rem",
+    "h1": "2.46rem"
+  },
+  "height": {
+    "normal": "32px",
+    "small": "20px",
+    "header": "50px"
+  },
+  "mobile": {
+    "maxWidth": "800px",
+    "headerHeight": "56px"
+  }
+}
   </pre>
 </div>
 `;
@@ -1489,7 +1489,7 @@ exports[`Storyshots ClickOutside API 1`] = `
 `;
 
 exports[`Storyshots Code API 1`] = `
-<MockSyntaxHighlighter
+<mock-syntax-highlighter
   customStyle={
     Object {
       "backgroundColor": "initial",
@@ -1597,25 +1597,25 @@ exports[`Storyshots Code API 1`] = `
   wrapLines={true}
 >
   var data = {
-    datapoints:
-      [{dataChnId: "Map", values: {latitude: 12, longitude: 13, altitude: 14}}]
-  };
-  
-  $.ajax({
-    type: "POST",
-    url: "https://api.mediatek.com/mcs/v2/devices/DzdpHYIZ/datapoints",
-    headers: { deviceKey: "Cio34Lj7Na5RmQXj" },
-    contentType: "application/json",
-    data: JSON.stringify(data)
-  })
-  .done(function(data){
-    // your content
-  })
-</MockSyntaxHighlighter>
+  datapoints:
+    [{dataChnId: "Map", values: {latitude: 12, longitude: 13, altitude: 14}}]
+};
+
+$.ajax({
+  type: "POST",
+  url: "https://api.mediatek.com/mcs/v2/devices/DzdpHYIZ/datapoints",
+  headers: { deviceKey: "Cio34Lj7Na5RmQXj" },
+  contentType: "application/json",
+  data: JSON.stringify(data)
+})
+.done(function(data){
+  // your content
+})
+</mock-syntax-highlighter>
 `;
 
 exports[`Storyshots Code With language props 1`] = `
-<MockSyntaxHighlighter
+<mock-syntax-highlighter
   customStyle={
     Object {
       "backgroundColor": "initial",
@@ -1723,27 +1723,27 @@ exports[`Storyshots Code With language props 1`] = `
   wrapLines={true}
 >
   include &lt;HttpClient.h&gt;
-  include &lt;EthernetClient.h&gt;
-  
-  EthernetClient content;
-  HttpClient http(content);
-  
-  content.println("POST /mcs/v2/devices/DzdpHYIZ/datapoints.csv HTTP/1.1");
-  #hint! Please do not add excessive spaces
-  
-  String data = "inte,,123"
-  
-  #hint! Please do not add excessive spaces
-  #timestamp is in unix-time format the milliseconds and is optional. If not provided,
-  
-  #system will generate timestamp at the time of receiving this API
-  int dataLength = data.length();
-  
-  content.println("Host: api.mediatek.com");
-  content.println("deviceKey: Cio34Lj7Na5RmQXj");
-  content.print("Content-Length: ");
-  content.println(dataLength);
-</MockSyntaxHighlighter>
+include &lt;EthernetClient.h&gt;
+
+EthernetClient content;
+HttpClient http(content);
+
+content.println("POST /mcs/v2/devices/DzdpHYIZ/datapoints.csv HTTP/1.1");
+#hint! Please do not add excessive spaces
+
+String data = "inte,,123"
+
+#hint! Please do not add excessive spaces
+#timestamp is in unix-time format the milliseconds and is optional. If not provided,
+
+#system will generate timestamp at the time of receiving this API
+int dataLength = data.length();
+
+content.println("Host: api.mediatek.com");
+content.println("deviceKey: Cio34Lj7Na5RmQXj");
+content.print("Content-Length: ");
+content.println(dataLength);
+</mock-syntax-highlighter>
 `;
 
 exports[`Storyshots CopyButton API 1`] = `
@@ -4702,7 +4702,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
       <div
         className="c21 c10"
       >
-        <MockReactTextTruncate
+        <mock-react-text-truncate
           line={2}
           text="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
           truncateText=" ..."
@@ -4762,7 +4762,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
       <div
         className="c21 c10"
       >
-        <MockReactTextTruncate
+        <mock-react-text-truncate
           line={2}
           text="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
           truncateText=" ..."
@@ -4856,7 +4856,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
       <div
         className="c21 c10"
       >
-        <MockReactTextTruncate
+        <mock-react-text-truncate
           line={2}
           text="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
           truncateText=" ..."
@@ -4916,7 +4916,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
       <div
         className="c21 c10"
       >
-        <MockReactTextTruncate
+        <mock-react-text-truncate
           line={2}
           text="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
           truncateText=" ..."
@@ -5003,7 +5003,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
       <div
         className="c21 c10"
       >
-        <MockReactTextTruncate
+        <mock-react-text-truncate
           line={2}
           text="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
           truncateText=" ..."
@@ -5058,7 +5058,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
       <div
         className="c21 c10"
       >
-        <MockReactTextTruncate
+        <mock-react-text-truncate
           line={2}
           text="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
           truncateText=" ..."
@@ -5145,7 +5145,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
       <div
         className="c21 c10"
       >
-        <MockReactTextTruncate
+        <mock-react-text-truncate
           line={2}
           text="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
           truncateText=" ..."
@@ -5200,7 +5200,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
       <div
         className="c21 c10"
       >
-        <MockReactTextTruncate
+        <mock-react-text-truncate
           line={2}
           text="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
           truncateText=" ..."
@@ -5250,7 +5250,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
       <div
         className="c21 c10"
       >
-        <MockReactTextTruncate
+        <mock-react-text-truncate
           line={2}
           text="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
           truncateText=" ..."
@@ -5344,7 +5344,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
       <div
         className="c21 c10"
       >
-        <MockReactTextTruncate
+        <mock-react-text-truncate
           line={2}
           text="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
           truncateText=" ..."
@@ -5444,7 +5444,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
       <div
         className="c21 c10"
       >
-        <MockReactTextTruncate
+        <mock-react-text-truncate
           line={2}
           text="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
           truncateText=" ..."
@@ -5607,7 +5607,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
       <div
         className="c21 c10"
       >
-        <MockReactTextTruncate
+        <mock-react-text-truncate
           line={2}
           text="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
           truncateText=" ..."
@@ -5707,7 +5707,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
       <div
         className="c21 c10"
       >
-        <MockReactTextTruncate
+        <mock-react-text-truncate
           line={2}
           text="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
           truncateText=" ..."
@@ -5801,7 +5801,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
       <div
         className="c21 c10"
       >
-        <MockReactTextTruncate
+        <mock-react-text-truncate
           line={2}
           text="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
           truncateText=" ..."
@@ -5901,7 +5901,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
       <div
         className="c21 c10"
       >
-        <MockReactTextTruncate
+        <mock-react-text-truncate
           line={2}
           text="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
           truncateText=" ..."
@@ -5977,7 +5977,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
       <div
         className="c21 c10"
       >
-        <MockReactTextTruncate
+        <mock-react-text-truncate
           line={2}
           text="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
           truncateText=" ..."
@@ -6113,7 +6113,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
       <div
         className="c21 c10"
       >
-        <MockReactTextTruncate
+        <mock-react-text-truncate
           line={2}
           text="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
           truncateText=" ..."
@@ -6267,7 +6267,7 @@ exports[`Storyshots DataChannelCard API 1`] = `
     <div
       className="c11 c12"
     >
-      <MockReactTextTruncate
+      <mock-react-text-truncate
         line={2}
         text="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
         truncateText=" ..."
@@ -6457,7 +6457,7 @@ exports[`Storyshots DataChannelCard Custom width and height 1`] = `
     <div
       className="c13 c14"
     >
-      <MockReactTextTruncate
+      <mock-react-text-truncate
         line={2}
         text="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
         truncateText=" ..."
@@ -6610,7 +6610,7 @@ exports[`Storyshots DataChannelCard With Component selector 1`] = `
     <div
       className="c13 c14"
     >
-      <MockReactTextTruncate
+      <mock-react-text-truncate
         line={2}
         text="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
         truncateText=" ..."
@@ -6795,7 +6795,7 @@ exports[`Storyshots DataChannelCard With empty description 1`] = `
     <div
       className="c12 c13"
     >
-      <MockReactTextTruncate
+      <mock-react-text-truncate
         line={2}
         text=""
         truncateText=" ..."
@@ -6977,7 +6977,7 @@ exports[`Storyshots DataPointAreaChart API 1`] = `
       }
     }
   >
-    <MockReactHammerJS
+    <mock-react-resize-detector
       handleHeight={true}
       handleWidth={true}
       onResize={[Function]}
@@ -7057,7 +7057,7 @@ exports[`Storyshots DataPointAreaChart With isAnimationActive props 1`] = `
       }
     }
   >
-    <MockReactHammerJS
+    <mock-react-resize-detector
       handleHeight={true}
       handleWidth={true}
       onResize={[Function]}
@@ -7087,7 +7087,7 @@ exports[`Storyshots DataPointAreaChart With kind and type props 1`] = `
       }
     }
   >
-    <MockReactHammerJS
+    <mock-react-resize-detector
       handleHeight={true}
       handleWidth={true}
       onResize={[Function]}
@@ -7117,7 +7117,7 @@ exports[`Storyshots DataPointAreaChart With realtime data 1`] = `
       }
     }
   >
-    <MockReactHammerJS
+    <mock-react-resize-detector
       handleHeight={true}
       handleWidth={true}
       onResize={[Function]}
@@ -7219,7 +7219,7 @@ exports[`Storyshots DatetimePicker API 1`] = `
   defaultValue={1455780631722}
   onChange={[Function]}
 >
-  <MockReactHammerJS
+  <mock-react-hammerjs
     direction="DIRECTION_VERTICAL"
     onPan={[Function]}
     onPanEnd={[Function]}
@@ -7249,8 +7249,8 @@ exports[`Storyshots DatetimePicker API 1`] = `
         2017
       </div>
     </div>
-  </MockReactHammerJS>
-  <MockReactHammerJS
+  </mock-react-hammerjs>
+  <mock-react-hammerjs
     direction="DIRECTION_VERTICAL"
     onPan={[Function]}
     onPanEnd={[Function]}
@@ -7330,8 +7330,8 @@ exports[`Storyshots DatetimePicker API 1`] = `
         12
       </div>
     </div>
-  </MockReactHammerJS>
-  <MockReactHammerJS
+  </mock-react-hammerjs>
+  <mock-react-hammerjs
     direction="DIRECTION_VERTICAL"
     onPan={[Function]}
     onPanEnd={[Function]}
@@ -7496,8 +7496,8 @@ exports[`Storyshots DatetimePicker API 1`] = `
         29
       </div>
     </div>
-  </MockReactHammerJS>
-  <MockReactHammerJS
+  </mock-react-hammerjs>
+  <mock-react-hammerjs
     direction="DIRECTION_VERTICAL"
     onPan={[Function]}
     onPanEnd={[Function]}
@@ -7637,8 +7637,8 @@ exports[`Storyshots DatetimePicker API 1`] = `
         23
       </div>
     </div>
-  </MockReactHammerJS>
-  <MockReactHammerJS
+  </mock-react-hammerjs>
+  <mock-react-hammerjs
     direction="DIRECTION_VERTICAL"
     onPan={[Function]}
     onPanEnd={[Function]}
@@ -7958,7 +7958,7 @@ exports[`Storyshots DatetimePicker API 1`] = `
         59
       </div>
     </div>
-  </MockReactHammerJS>
+  </mock-react-hammerjs>
   <div
     className="c4"
   />
@@ -8031,9 +8031,9 @@ exports[`Storyshots Dialog API 1`] = `
 </div>
 `;
 
-exports[`Storyshots Dialog Common Dialog 1`] = `<MockPortal />`;
+exports[`Storyshots Dialog Common Dialog 1`] = `<mock-portal />`;
 
-exports[`Storyshots Dialog Scrollable CommonDialog 1`] = `<MockPortal />`;
+exports[`Storyshots Dialog Scrollable CommonDialog 1`] = `<mock-portal />`;
 
 exports[`Storyshots DomAlign API 1`] = `
 <div>
@@ -8488,7 +8488,7 @@ exports[`Storyshots Icon [mcs-lite-icon] API 1`] = `
 `;
 
 exports[`Storyshots Icon [mcs-lite-icon] MorphReplace 1`] = `
-<MockMorphReplace
+<mock-morph-replace
   height={24}
   width={24}
 >
@@ -8503,7 +8503,7 @@ exports[`Storyshots Icon [mcs-lite-icon] MorphReplace 1`] = `
       d="M19.9 13v-2h-12l5.5-5.5L12 4.1 4.1 12l7.9 7.9 1.4-1.4L7.9 13h12z"
     />
   </svg>
-</MockMorphReplace>
+</mock-morph-replace>
 `;
 
 exports[`Storyshots Icon [mcs-lite-icon] Spin Icon 1`] = `
@@ -11063,7 +11063,7 @@ exports[`Storyshots MobileDeviceCard API 1`] = `
       className="c5"
       color="black"
     >
-      <MockReactTextTruncate
+      <mock-react-text-truncate
         line={4}
         text="範例 B 的測試裝置"
         truncateText=" ..."
@@ -11145,7 +11145,7 @@ exports[`Storyshots MobileDeviceCard Override height 1`] = `
       className="c6"
       color="black"
     >
-      <MockReactTextTruncate
+      <mock-react-text-truncate
         line={4}
         text="範例 B 的測試裝置"
         truncateText=" ..."
@@ -11403,7 +11403,7 @@ exports[`Storyshots MobileHeader API 1`] = `
 <header
   className="c0"
 >
-  <MockPortal>
+  <mock-portal>
     <div
       className="c1"
     >
@@ -11448,7 +11448,7 @@ exports[`Storyshots MobileHeader API 1`] = `
         />
       </div>
     </div>
-  </MockPortal>
+  </mock-portal>
 </header>
 `;
 
@@ -11587,7 +11587,7 @@ exports[`Storyshots MobileHeader With right props 1`] = `
 <header
   className="c0"
 >
-  <MockPortal>
+  <mock-portal>
     <div
       className="c1"
     >
@@ -11648,7 +11648,7 @@ exports[`Storyshots MobileHeader With right props 1`] = `
         </div>
       </div>
     </div>
-  </MockPortal>
+  </mock-portal>
 </header>
 `;
 
@@ -11845,7 +11845,7 @@ exports[`Storyshots Overlay API 1`] = `
   >
     Hover me
   </a>
-  <MockPortal />
+  <mock-portal />
 </div>
 `;
 
@@ -12205,7 +12205,7 @@ exports[`Storyshots Picker API 1`] = `
 <div
   className="c0"
 >
-  <MockReactHammerJS
+  <mock-react-hammerjs
     direction="DIRECTION_VERTICAL"
     onPan={[Function]}
     onPanEnd={[Function]}
@@ -12245,8 +12245,8 @@ exports[`Storyshots Picker API 1`] = `
         Pineapple
       </div>
     </div>
-  </MockReactHammerJS>
-  <MockReactHammerJS
+  </mock-react-hammerjs>
+  <mock-react-hammerjs
     direction="DIRECTION_VERTICAL"
     onPan={[Function]}
     onPanEnd={[Function]}
@@ -12276,7 +12276,7 @@ exports[`Storyshots Picker API 1`] = `
         PAPA
       </div>
     </div>
-  </MockReactHammerJS>
+  </mock-react-hammerjs>
   <div
     className="c4"
   />
@@ -12405,7 +12405,7 @@ exports[`Storyshots PullToRefresh API 1`] = `
 <div
   className="c0"
 >
-  <MockReactHammerJS
+  <mock-react-hammerjs
     direction="DIRECTION_DOWN"
     onPan={[Function]}
     onPanEnd={[Function]}
@@ -12461,7 +12461,7 @@ exports[`Storyshots PullToRefresh API 1`] = `
         </h3>
       </section>
     </div>
-  </MockReactHammerJS>
+  </mock-react-hammerjs>
 </div>
 `;
 

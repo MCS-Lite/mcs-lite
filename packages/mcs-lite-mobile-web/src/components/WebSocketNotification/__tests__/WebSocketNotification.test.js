@@ -1,7 +1,7 @@
 import React from 'react';
 import { shallow, mount } from 'enzyme';
 import toJson from 'enzyme-to-json';
-import R from 'ramda';
+import * as R from 'ramda';
 import { ThemeProvider } from 'styled-components';
 import mobileTheme from '../../../utils/mobileTheme';
 import WebSocketNotification from '../WebSocketNotification';
