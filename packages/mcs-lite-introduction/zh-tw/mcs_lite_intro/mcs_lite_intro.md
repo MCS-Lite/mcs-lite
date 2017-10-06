@@ -71,7 +71,7 @@ MCS Lite 應用程式主要包含了**物聯網平台 (IoT Platform)** 與**系�
 	```
 	
 ### Linux 與 LinkIt 7688 使用者
-1. 在您的要執行 MCS Lite 的電腦上安裝 Node.js (>7.3.0)，詳細安裝方式請參考 [Installing Node.js via package manager](https://nodejs.org/en/download/package-manager/)
+1. LinkIt 7688 預設已在系統中安裝好 Node.js v0.12.7。若您的執行環境為 Linux，請先安裝 Node.js (>7.3.0)，詳細安裝方式請參考 [Installing Node.js via package manager](https://nodejs.org/en/download/package-manager/)
 2. 下載 MCS Lite 應用程式。[點我下載](https://github.com/MCS-Lite/mcs-lite-app/releases)
 3. 將下載後的檔案解壓縮，產生的資料夾可以搬遷或複製到任意的目錄底下。
 4. 在終端機介面下，切換目錄到解壓所產生的檔案夾，並執行下列指令，使 MCS Lite 服務在背景中運行。
