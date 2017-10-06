@@ -76,7 +76,7 @@ On the IoT platform, there is a web console for end users to create their protot
 	```
 
 ### Get Started on Linux or LinkIt 7688
-1. You need to have Node.js ( >7.3.0) installed on your machine, on which MCS Lite will run，please refer to  [Installing Node.js via package manager](https://nodejs.org/en/download/package-manager/) for detailed instruction.
+1. Node.js v0.12.7 has been pre-installed in LinkIt 7688. If you are using Linux, you need to have Node.js ( >7.3.0) installed on your machine, on which MCS Lite will run，please refer to  [Installing Node.js via package manager](https://nodejs.org/en/download/package-manager/) for detailed instruction.
 2. Download MCS Lite package. [Download now](https://github.com/MCS-Lite/mcs-lite-app/releases)
 3. Unzip the downloaded file. The generated folder can be moved or copied to any directory.
 4. In the terminal console, chnage directory to the decompressed folder and execute the following instructions to run the MCS Lite service in the background.
