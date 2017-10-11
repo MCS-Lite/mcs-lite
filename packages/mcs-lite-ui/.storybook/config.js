@@ -21,7 +21,7 @@ setOptions({
   showSearchBox: false,
   downPanelInRight: false,
   sortStoriesByKind: true,
-  sidebarAnimations: true,
+  sidebarAnimations: false,
 });
 
 function loadStories() {
