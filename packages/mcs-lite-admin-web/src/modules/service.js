@@ -1,3 +1,5 @@
+/* eslint no-underscore-dangle: ["error", { "allow": ["__"] }] */
+
 import { Observable } from 'rxjs/Observable';
 import R from 'ramda';
 import { actions as uiActions } from './ui';
@@ -170,14 +172,13 @@ function fetchIpListCycle(sources) {
   );
   const successResToFetch$ = sources.HTTP
     .select()
-    .filter(res$ =>
-      R.contains(res$.request.category, [
-        `${STOP}`,
-        `${START}`,
-        `${RESTART}_START`,
-      ]),
-    )
-    .switchMap(success);
+    .switchMap(success)
+    .filter(
+      R.pipe(
+        R.path(['request', 'category']),
+        R.contains(R.__, [STOP, START, `${RESTART}_START`]),
+      ),
+    );
 
   const request$ = Observable.merge(
     fetchAction$,

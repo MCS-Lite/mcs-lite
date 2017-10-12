@@ -18,6 +18,10 @@ describe('service - 2. Action Creators', () => {
     expect(actions.stop('message')).toMatchSnapshot();
   });
 
+  it('should return restart actions', () => {
+    expect(actions.restart('message')).toMatchSnapshot();
+  });
+
   it('should return fetchIpList actions', () => {
     expect(actions.fetchIpList()).toMatchSnapshot();
   });
@@ -46,8 +50,8 @@ describe('service - 3. Cycle', () => {
     };
 
     const actionSink = {
-      x: uiActions.addToast({ kind: 'success', children: 'message' }),
-      y: actions.fetchIpList(),
+      x: uiActions.setLoading(),
+      y: uiActions.addToast({ kind: 'success', children: 'message' }),
     };
 
     const httpSink = {
@@ -66,7 +70,7 @@ describe('service - 3. Cycle', () => {
       HTTP:   { '----r---|': httpSource },
     }, {
       HTTP:   { 'r-------|': httpSink },
-      ACTION: { '----(xy)|': actionSink },
+      ACTION: { 'x---y---|': actionSink },
     }, cycles.startCycle, done);
   });
 
@@ -84,8 +88,8 @@ describe('service - 3. Cycle', () => {
     };
 
     const actionSink = {
-      x: uiActions.addToast({ kind: 'success', children: 'message' }),
-      y: actions.fetchIpList(),
+      x: uiActions.setLoading(),
+      y: uiActions.addToast({ kind: 'success', children: 'message' }),
     };
 
     const httpSink = {
@@ -104,8 +108,56 @@ describe('service - 3. Cycle', () => {
       HTTP:   { '----r---|': httpSource },
     }, {
       HTTP:   { 'r-------|': httpSink },
-      ACTION: { '----(xy)|': actionSink },
+      ACTION: { 'x---y---|': actionSink },
     }, cycles.stopCycle, done);
+  });
+
+  it('should emit correct Sinks given Sources with restartCycle', done => {
+    const stateSource = {
+      s: { auth: { access_token: 'faketoken123' } },
+    };
+    const actionSource = {
+      a: actions.restart('message'),
+    };
+    const httpSource = {
+      select: category => ({
+        r: category === `${constants.RESTART}_STOP`
+          ? Observable.of({ body: {} })
+          : Observable.empty(),
+        s: category === `${constants.RESTART}_START`
+          ? Observable.of({ body: {} })
+          : Observable.empty(),
+      }),
+    };
+    const actionSink = {
+      x: uiActions.setLoading(),
+      y: uiActions.addToast({ kind: 'success', children: 'message' }),
+    };
+
+    const httpSink = {
+      r: {
+        url: '/api/service/stop',
+        method: 'GET',
+        headers: { Authorization: 'Bearer faketoken123' },
+        category: `${constants.RESTART}_STOP`,
+      },
+      s: {
+        url: '/api/service/start',
+        method: 'GET',
+        headers: { Authorization: 'Bearer faketoken123' },
+        category: `${constants.RESTART}_START`,
+      },
+    };
+
+    // prettier-ignore
+    assertSourcesSinks({
+      STATE:  { 's-------|': stateSource },
+      ACTION: { 'a-------|': actionSource },
+      HTTP:   { '----r--s|': httpSource },
+    }, {
+      HTTP:   { 'r---s---|': httpSink },
+      ACTION: { 'x------y|': actionSink },
+    }, cycles.restartCycle, done);
   });
 
   it('should emit correct Sinks given Sources with fetchIpListCycle', done => {
@@ -144,6 +196,52 @@ describe('service - 3. Cycle', () => {
     }, {
       HTTP:   { 'r-------|': httpSink },
       ACTION: { 'x---(yz)|': actionSink },
+    }, cycles.fetchIpListCycle, done);
+  });
+
+  it('should emit correct Sinks given Sources with fetchIpListCycle after response', done => {
+    const stateSource = {
+      s: { auth: { access_token: 'faketoken123' } },
+    };
+    const actionSource = {};
+    const httpSource = {
+      select: category => ({
+        r: category !== constants.FETCH_IP_LIST
+          ? Observable.of({
+              request: { category: constants.STOP },
+            })
+          : Observable.empty(),
+        s: category === constants.FETCH_IP_LIST
+          ? Observable.of({
+              body: { data: [4, 5, 6] },
+            })
+          : Observable.empty(),
+      }),
+    };
+
+    const actionSink = {
+      x: uiActions.setLoading(),
+      y: actions.setIpList([4, 5, 6]),
+      z: uiActions.setLoaded(),
+    };
+
+    const httpSink = {
+      r: {
+        url: '/api/ip',
+        method: 'GET',
+        headers: { Authorization: 'Bearer faketoken123' },
+        category: constants.FETCH_IP_LIST,
+      },
+    };
+
+    // prettier-ignore
+    assertSourcesSinks({
+      STATE:  { 's------------|': stateSource },
+      ACTION: { '-------------|': actionSource },
+      HTTP:   { '---r---s-----|': httpSource },
+    }, {
+      HTTP:   { '---r---------|': httpSink },
+      ACTION: { '---x---(yz)--|': actionSink },
     }, cycles.fetchIpListCycle, done);
   });
 });

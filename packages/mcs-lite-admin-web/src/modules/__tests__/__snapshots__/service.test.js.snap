@@ -4,6 +4,7 @@ exports[`service - 1. Constants should return constants 1`] = `
 Object {
   "CLEAR": "mcs-lite-admin-web/service/CLEAR",
   "FETCH_IP_LIST": "mcs-lite-admin-web/service/FETCH_IP_LIST",
+  "RESTART": "mcs-lite-admin-web/service/RESTART",
   "SET_IP_LIST": "mcs-lite-admin-web/service/SET_IP_LIST",
   "START": "mcs-lite-admin-web/service/START",
   "STOP": "mcs-lite-admin-web/service/STOP",
@@ -19,6 +20,13 @@ Object {
 exports[`service - 2. Action Creators should return fetchIpList actions 1`] = `
 Object {
   "type": "mcs-lite-admin-web/service/FETCH_IP_LIST",
+}
+`;
+
+exports[`service - 2. Action Creators should return restart actions 1`] = `
+Object {
+  "payload": "message",
+  "type": "mcs-lite-admin-web/service/RESTART",
 }
 `;
 
