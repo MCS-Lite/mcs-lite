@@ -14,6 +14,11 @@ Object {
     "defaultMessage": "IP 連線",
     "id": "DashboardLayout.ipConnection",
   },
+  "DashboardLayout.restart.success": Object {
+    "defaultMessage": "成功！服務已重新啟動。",
+    "description": "Toast",
+    "id": "DashboardLayout.restart.success",
+  },
   "DashboardLayout.signoutService": Object {
     "defaultMessage": "登出服務",
     "id": "DashboardLayout.signoutService",

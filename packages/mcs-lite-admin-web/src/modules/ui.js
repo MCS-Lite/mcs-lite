@@ -1,5 +1,11 @@
+/* eslint no-underscore-dangle: ["error", { "allow": ["__"] }] */
+
 import { Observable } from 'rxjs/Observable';
+import R from 'ramda';
 import uuid from 'uuid/v1';
+import { constants as usersConstants } from './users';
+import { constants as serviceConstants } from './service';
+import { success } from '../utils/cycleHelper';
 
 // ----------------------------------------------------------------------------
 // 1. Constants
@@ -7,12 +13,20 @@ import uuid from 'uuid/v1';
 
 const SET_LOADING = 'mcs-lite-admin-web/ui/SET_LOADING';
 const SET_LOADED = 'mcs-lite-admin-web/ui/SET_LOADED';
+const SET_IS_RESTART_REQUIRED = 'mcs-lite-admin-web/ui/SET_IS_RESTART_REQUIRED';
+const STORE_IS_RESTART_REQUIRED =
+  'mcs-lite-admin-web/ui/STORE_IS_RESTART_REQUIRED';
+const REMOVE_IS_RESTART_REQUIRED =
+  'mcs-lite-admin-web/ui/REMOVE_IS_RESTART_REQUIRED';
 const ADD_TOAST = 'mcs-lite-admin-web/ui/ADD_TOAST';
 const REMOVE_TOAST = 'mcs-lite-admin-web/ui/REMOVE_TOAST';
 
 export const constants = {
   SET_LOADING,
   SET_LOADED,
+  SET_IS_RESTART_REQUIRED,
+  STORE_IS_RESTART_REQUIRED,
+  REMOVE_IS_RESTART_REQUIRED,
   ADD_TOAST,
   REMOVE_TOAST,
 };
@@ -23,6 +37,12 @@ export const constants = {
 
 const setLoading = () => ({ type: SET_LOADING });
 const setLoaded = () => ({ type: SET_LOADED });
+const setIsRestartRequired = payload => ({
+  type: SET_IS_RESTART_REQUIRED,
+  payload,
+});
+const storeIsRestartRequired = () => ({ type: STORE_IS_RESTART_REQUIRED });
+const removeIsRestartRequired = () => ({ type: REMOVE_IS_RESTART_REQUIRED });
 const addToast = ({ kind, children }) => ({
   type: ADD_TOAST,
   payload: { key: uuid(), kind, children },
@@ -32,6 +52,9 @@ const removeToast = key => ({ type: REMOVE_TOAST, payload: key });
 export const actions = {
   setLoading,
   setLoaded,
+  setIsRestartRequired,
+  storeIsRestartRequired,
+  removeIsRestartRequired,
   addToast,
   removeToast,
 };
@@ -56,8 +79,80 @@ function addToastCycle(sources) {
   };
 }
 
+function storeIsRestartRequiredCycle(sources) {
+  const isRestartRequired$ = sources.STORAGE.local
+    .getItem(SET_IS_RESTART_REQUIRED)
+    .map(R.equals('true'))
+    .startWith(false)
+    .distinctUntilChanged();
+
+  const action$ = isRestartRequired$.map(setIsRestartRequired);
+
+  const successResToStore$ = sources.HTTP
+    .select()
+    .concatMap(success)
+    .filter(
+      R.pipe(
+        R.path(['request', 'category']),
+        R.contains(R.__, [
+          usersConstants.DELETE_USERS,
+          usersConstants.CREATE_USER,
+          usersConstants.CREATE_USER_BY_CSV,
+          usersConstants.CHANGE_PASSWORD_BY_ID,
+          usersConstants.PUT_IS_ACTIVE_BY_ID,
+        ]),
+      ),
+    );
+
+  const storageRequest$ = successResToStore$
+    .withLatestFrom(
+      isRestartRequired$,
+      (res, isRestartRequired) => isRestartRequired,
+    )
+    // Remind: the optimization which reducing localstorage operation
+    .filter(isRestartRequired => !isRestartRequired)
+    .mapTo({
+      target: 'local',
+      action: 'setItem',
+      key: SET_IS_RESTART_REQUIRED,
+      value: 'true',
+    });
+
+  return {
+    ACTION: action$,
+    STORAGE: storageRequest$,
+  };
+}
+
+function removeIsRestartRequiredCycle(sources) {
+  const successResToRemove$ = sources.HTTP
+    .select()
+    .concatMap(success)
+    .filter(
+      R.pipe(
+        R.path(['request', 'category']),
+        R.contains(R.__, [
+          `${serviceConstants.RESTART}_START`,
+          serviceConstants.STOP,
+        ]),
+      ),
+    );
+
+  const storageRequest$ = successResToRemove$.mapTo({
+    target: 'local',
+    action: 'removeItem',
+    key: SET_IS_RESTART_REQUIRED,
+  });
+
+  return {
+    STORAGE: storageRequest$,
+  };
+}
+
 export const cycles = {
   addToastCycle,
+  storeIsRestartRequiredCycle,
+  removeIsRestartRequiredCycle,
 };
 
 // ----------------------------------------------------------------------------
@@ -66,6 +161,7 @@ export const cycles = {
 
 const initialState = {
   isLoading: false,
+  isRestartRequired: false,
   toasts: [],
 };
 
@@ -81,6 +177,12 @@ export default function reducer(state = initialState, action = {}) {
       return {
         ...state,
         isLoading: false,
+      };
+
+    case SET_IS_RESTART_REQUIRED:
+      return {
+        ...state,
+        isRestartRequired: action.payload,
       };
 
     case ADD_TOAST:

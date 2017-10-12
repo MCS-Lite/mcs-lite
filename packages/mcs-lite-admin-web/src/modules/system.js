@@ -188,10 +188,10 @@ export const cycles = {
 // ----------------------------------------------------------------------------
 
 const initialState = {
-  db: '',
-  oauth: '',
-  rest: '',
-  wot: '',
+  db: '{}',
+  oauth: '{}',
+  rest: '{}',
+  wot: '{}',
 };
 
 export default function reducer(state = initialState, action = {}) {

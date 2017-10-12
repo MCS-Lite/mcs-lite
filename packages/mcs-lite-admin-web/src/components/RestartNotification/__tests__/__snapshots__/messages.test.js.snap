@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should return messages 1`] = `
+Object {
+  "RestartNotification.restart": Object {
+    "defaultMessage": "重新啟動",
+    "id": "RestartNotification.restart",
+  },
+  "RestartNotification.restartRequired": Object {
+    "defaultMessage": "完成修改後，請重新啟動 MCS Lite 服務使設定生效。",
+    "id": "RestartNotification.restartReqired",
+  },
+}
+`;

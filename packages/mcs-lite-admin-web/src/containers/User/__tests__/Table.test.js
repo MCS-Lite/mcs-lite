@@ -21,7 +21,7 @@ jest.mock('react-virtualized', () => ({
 }));
 
 it('should return TABLE_HEIGHT_OFFSET', () => {
-  expect(TABLE_HEIGHT_OFFSET).toBe(200);
+  expect(TABLE_HEIGHT_OFFSET).toBe(220);
 });
 
 it('should renders <Table> with data', () => {

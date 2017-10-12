@@ -4,6 +4,7 @@ exports[`should render Container correctly with HOC 1`] = `<Connect(InjectIntl(w
 
 exports[`should return props correctly with mapDispatchToProps 1`] = `
 Object {
+  "restart": [Function],
   "signout": [Function],
   "start": [Function],
   "stop": [Function],
@@ -12,6 +13,8 @@ Object {
 
 exports[`should return props correctly with mapStateToProps 1`] = `
 Object {
+  "isNedb": true,
+  "isRestartRequired": true,
   "isStarted": false,
 }
 `;

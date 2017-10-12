@@ -23,6 +23,10 @@ it('should render Container correctly with HOC', () => {
 it('should return props correctly with mapStateToProps', () => {
   const state = {
     service: [],
+    system: {
+      db: '{ "db": "nedb", "host": "localhost", "port": "" }',
+    },
+    ui: { isRestartRequired: true },
   };
 
   expect(mapStateToProps(state)).toMatchSnapshot();

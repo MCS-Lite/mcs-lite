@@ -177,7 +177,7 @@ exports[`should renders <Table> with data 1`] = `
     >
       <Styled(Table)
         headerHeight={30}
-        height={-100}
+        height={-120}
         noRowsRenderer={[Function]}
         rowCount={2}
         rowGetter={[Function]}
@@ -190,7 +190,7 @@ exports[`should renders <Table> with data 1`] = `
         <Table
           className="c0"
           headerHeight={30}
-          height={-100}
+          height={-120}
           noRowsRenderer={[Function]}
           rowCount={2}
           rowGetter={[Function]}

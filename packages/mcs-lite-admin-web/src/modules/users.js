@@ -101,7 +101,7 @@ function fetchUsersCycle(sources) {
 
   const request$ = Observable.merge(
     sources.ACTION.filter(action => action.type === FETCH_USERS),
-    sources.HTTP.select().switchMap(success).filter(resNeedFetch),
+    sources.HTTP.select().concatMap(success).filter(resNeedFetch),
   ).combineLatest(accessToken$, (s, accessToken) => ({
     url: '/api/users',
     method: 'GET',

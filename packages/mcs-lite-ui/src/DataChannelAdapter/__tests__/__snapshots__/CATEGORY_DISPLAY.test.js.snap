@@ -12,7 +12,6 @@ exports[`should render CATEGORY_DISPLAY correctly with default value to N/A 1`] 
 }
 
 .c3 > * {
-  -webkit-fill: #D1D2D3;
   fill: #D1D2D3;
   -webkit-transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
@@ -194,7 +193,6 @@ exports[`should render CATEGORY_DISPLAY correctly with first item 1`] = `
 }
 
 .c4 > * {
-  -webkit-fill: #D1D2D3;
   fill: #D1D2D3;
   -webkit-transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
@@ -205,7 +203,6 @@ exports[`should render CATEGORY_DISPLAY correctly with first item 1`] = `
 }
 
 .c3 > * {
-  -webkit-fill: #69BE28;
   fill: #69BE28;
   -webkit-transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
@@ -390,7 +387,6 @@ exports[`should render CATEGORY_DISPLAY correctly with second item 1`] = `
 }
 
 .c3 > * {
-  -webkit-fill: #D1D2D3;
   fill: #D1D2D3;
   -webkit-transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
@@ -401,7 +397,6 @@ exports[`should render CATEGORY_DISPLAY correctly with second item 1`] = `
 }
 
 .c4 > * {
-  -webkit-fill: #69BE28;
   fill: #69BE28;
   -webkit-transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;

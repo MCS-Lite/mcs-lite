@@ -56,6 +56,7 @@ describe('auth - 3. Cycle', () => {
     const actionSink = {
       x: actions.setUserInfo({ a: 'a' }),
       y: serviceActions.fetchIpList(),
+      z: systemActions.fetchSystemByType('db'),
     };
     const httpSink = {
       r: {
@@ -68,11 +69,11 @@ describe('auth - 3. Cycle', () => {
 
     // prettier-ignore
     assertSourcesSinks({
-      ACTION: { 'a-------|': actionSource },
-      HTTP:   { '----r---|': httpSource },
+      ACTION: { 'a--------|': actionSource },
+      HTTP:   { '----r----|': httpSource },
     }, {
-      HTTP:   { 'r-------|': httpSink },
-      ACTION: { '----(xy)|': actionSink },
+      HTTP:   { 'r--------|': httpSink },
+      ACTION: { '----(xyz)|': actionSink },
     }, cycles.requireAuthCycle, done);
   });
 

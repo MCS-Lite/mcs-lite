@@ -3,9 +3,12 @@
 exports[`ui - 1. Constants should return constants 1`] = `
 Object {
   "ADD_TOAST": "mcs-lite-admin-web/ui/ADD_TOAST",
+  "REMOVE_IS_RESTART_REQUIRED": "mcs-lite-admin-web/ui/REMOVE_IS_RESTART_REQUIRED",
   "REMOVE_TOAST": "mcs-lite-admin-web/ui/REMOVE_TOAST",
+  "SET_IS_RESTART_REQUIRED": "mcs-lite-admin-web/ui/SET_IS_RESTART_REQUIRED",
   "SET_LOADED": "mcs-lite-admin-web/ui/SET_LOADED",
   "SET_LOADING": "mcs-lite-admin-web/ui/SET_LOADING",
+  "STORE_IS_RESTART_REQUIRED": "mcs-lite-admin-web/ui/STORE_IS_RESTART_REQUIRED",
 }
 `;
 
@@ -20,10 +23,23 @@ Object {
 }
 `;
 
+exports[`ui - 2. Action Creators should return removeIsRestartRequired actions 1`] = `
+Object {
+  "type": "mcs-lite-admin-web/ui/REMOVE_IS_RESTART_REQUIRED",
+}
+`;
+
 exports[`ui - 2. Action Creators should return removeToast actions 1`] = `
 Object {
   "payload": "key",
   "type": "mcs-lite-admin-web/ui/REMOVE_TOAST",
+}
+`;
+
+exports[`ui - 2. Action Creators should return setIsRestartRequired actions 1`] = `
+Object {
+  "payload": true,
+  "type": "mcs-lite-admin-web/ui/SET_IS_RESTART_REQUIRED",
 }
 `;
 
@@ -36,6 +52,12 @@ Object {
 exports[`ui - 2. Action Creators should return setLoading actions 1`] = `
 Object {
   "type": "mcs-lite-admin-web/ui/SET_LOADING",
+}
+`;
+
+exports[`ui - 2. Action Creators should return storeIsRestartRequired actions 1`] = `
+Object {
+  "type": "mcs-lite-admin-web/ui/STORE_IS_RESTART_REQUIRED",
 }
 `;
 
@@ -55,6 +77,12 @@ Object {
 }
 `;
 
+exports[`ui - 4. Reducer should handle SET_IS_RESTART_REQUIRED 1`] = `
+Object {
+  "isRestartRequired": false,
+}
+`;
+
 exports[`ui - 4. Reducer should handle SET_LOADED 1`] = `
 Object {
   "isLoading": false,
@@ -70,6 +98,7 @@ Object {
 exports[`ui - 4. Reducer should return the initial state 1`] = `
 Object {
   "isLoading": false,
+  "isRestartRequired": false,
   "toasts": Array [],
 }
 `;

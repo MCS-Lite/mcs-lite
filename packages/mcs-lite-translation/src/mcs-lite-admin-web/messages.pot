@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"POT-Creation-Date: 2017-09-18T07:05:58.723Z\n"
+"POT-Creation-Date: 2017-10-12T08:59:24.999Z\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "MIME-Version: 1.0\n"
@@ -199,6 +199,13 @@ msgid "單筆輸入"
 msgstr ""
 
 #: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+#. [RestartNotification.restartReqired]
+#. defaultMessage is:
+#. 完成修改後，請重新啟動 MCS Lite 服務使設定生效。
+msgid "完成修改後，請重新啟動 MCS Lite 服務使設定生效。"
+msgstr ""
+
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
 #. [Signin.password]
 #. defaultMessage is:
 #. 密碼
@@ -285,6 +292,13 @@ msgstr ""
 #. defaultMessage is:
 #. 成功！服務已啟動。
 msgid "成功！服務已啟動。"
+msgstr ""
+
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+#. [DashboardLayout.restart.success] - Toast
+#. defaultMessage is:
+#. 成功！服務已重新啟動。
+msgid "成功！服務已重新啟動。"
 msgstr ""
 
 #: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
@@ -594,6 +608,13 @@ msgstr ""
 #. defaultMessage is:
 #. 選擇語言
 msgid "選擇語言"
+msgstr ""
+
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+#. [RestartNotification.restart]
+#. defaultMessage is:
+#. 重新啟動
+msgid "重新啟動"
 msgstr ""
 
 #: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json

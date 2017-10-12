@@ -18,11 +18,15 @@ import {
   Main,
   StyledLogo,
 } from './styled-components';
+import RestartNotification from '../../components/RestartNotification';
 
 const DashboardLayout = ({
   start,
   stop,
+  restart,
   isStarted,
+  isNedb,
+  isRestartRequired,
   signout,
   children,
   getMessages: t,
@@ -73,6 +77,9 @@ const DashboardLayout = ({
         </div>
       </Nav>
       <Main>
+        {isNedb &&
+          isRestartRequired &&
+          <RestartNotification onClick={() => restart(t('restart.success'))} />}
         {children}
       </Main>
     </Body>
@@ -84,11 +91,14 @@ DashboardLayout.propTypes = {
 
   // Redux State
   isStarted: PropTypes.bool.isRequired,
+  isNedb: PropTypes.bool.isRequired,
+  isRestartRequired: PropTypes.bool.isRequired,
 
   // Redux Action
   signout: PropTypes.func.isRequired,
   start: PropTypes.func.isRequired,
   stop: PropTypes.func.isRequired,
+  restart: PropTypes.func.isRequired,
 
   // React-intl I18n
   getMessages: PropTypes.func.isRequired,

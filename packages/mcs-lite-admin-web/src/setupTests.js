@@ -9,3 +9,8 @@ window.confirm = () => true;
 
 // For toast
 jest.mock('uuid/v1', () => () => 'mockUuid()');
+
+// For localstorage driver
+window.localStorage = {
+  getItem: () => {},
+};

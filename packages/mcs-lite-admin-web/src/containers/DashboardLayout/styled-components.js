@@ -60,8 +60,10 @@ export const Body = styled.div`
   min-height: 0;
 `;
 
+export const NAV_WIDTH = 150;
+
 export const Nav = styled.nav`
-  flex-basis: 150px;
+  flex-basis: ${NAV_WIDTH}px;
   box-sizing: border-box;
   background-color: ${props => props.theme.color.grayLight};
   border-right: 1px solid ${props => props.theme.base.bodyBackgroundColor};

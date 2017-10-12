@@ -7,14 +7,17 @@ import { actions as authActions } from '../../modules/auth';
 import { actions as serviceActions } from '../../modules/service';
 import DashboardLayout from './DashboardLayout';
 
-export const mapStateToProps = ({ service }) => ({
+export const mapStateToProps = ({ service, ui, system }) => ({
   isStarted: R.complement(R.isEmpty)(service),
+  isNedb: R.pipe(R.prop('db'), JSON.parse, R.propEq('db', 'nedb'))(system),
+  isRestartRequired: ui.isRestartRequired,
 });
 
 export const mapDispatchToProps = {
   signout: authActions.signout,
   start: serviceActions.start,
   stop: serviceActions.stop,
+  restart: serviceActions.restart,
 };
 
 export default compose(

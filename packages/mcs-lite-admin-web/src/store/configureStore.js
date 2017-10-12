@@ -6,6 +6,7 @@ import { run } from '@cycle/rxjs-run';
 import { createCycleMiddleware } from 'redux-cycles';
 import { makeHTTPDriver } from '@cycle/http';
 import { timeDriver } from '@cycle/time/rxjs';
+import storageDriver from '@cycle/storage';
 import { routerMiddleware } from 'react-router-redux';
 import { reducer, cycle as main } from '../modules';
 
@@ -48,6 +49,7 @@ const configureStore = (initialState, history) => {
     STATE: makeStateDriver(),
     Time: timeDriver,
     HTTP: makeHTTPDriver(),
+    STORAGE: storageDriver,
   });
 
   return store;

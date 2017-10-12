@@ -13,7 +13,7 @@ import styled from 'styled-components';
 import IconEdit from 'mcs-lite-icon/lib/IconEdit';
 import 'react-virtualized/styles.css'; // only needs to be imported once
 
-export const TABLE_HEIGHT_OFFSET = 200;
+export const TABLE_HEIGHT_OFFSET = 220;
 
 /**
  * className API
