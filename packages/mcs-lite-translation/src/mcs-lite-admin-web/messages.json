@@ -16,6 +16,16 @@
     "filepath": "src/components/DialogConfirm/messages.js"
   },
   {
+    "id": "RestartNotification.restartReqired",
+    "defaultMessage": "完成修改後，請重新啟動 MCS Lite 服務使設定生效。",
+    "filepath": "src/components/RestartNotification/messages.js"
+  },
+  {
+    "id": "RestartNotification.restart",
+    "defaultMessage": "重新啟動",
+    "filepath": "src/components/RestartNotification/messages.js"
+  },
+  {
     "id": "App.titleTemplate",
     "description": "For document title",
     "defaultMessage": "MCS Lite Admin",
@@ -47,6 +57,12 @@
     "id": "DashboardLayout.stop.success",
     "description": "Toast",
     "defaultMessage": "成功！服務已停止。",
+    "filepath": "src/containers/DashboardLayout/messages.js"
+  },
+  {
+    "id": "DashboardLayout.restart.success",
+    "description": "Toast",
+    "defaultMessage": "成功！服務已重新啟動。",
     "filepath": "src/containers/DashboardLayout/messages.js"
   },
   {
