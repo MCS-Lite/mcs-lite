@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Toast, { StyledP } from 'mcs-lite-ui/lib/Toast/Toast';
 import A from 'mcs-lite-ui/lib/A';
+import Transition from 'react-motion-ui-pack';
 import { NAV_WIDTH } from '../../containers/DashboardLayout/styled-components';
 
 const Container = styled.div`
@@ -28,14 +29,20 @@ const StyledToast = styled(Toast)`
 const RestartNotification = ({ onClick, getMessages: t }) =>
   <Container>
     <Fixed>
-      <StyledToast kind="warning">
-        <div>
-          {t('restartRequired')}
-        </div>
-        <A onClick={onClick}>
-          {t('restart')}
-        </A>
-      </StyledToast>
+      <Transition
+        component={false}
+        enter={{ translateY: 0, opacity: 1 }}
+        leave={{ translateY: -10, opacity: 0.5 }}
+      >
+        <StyledToast key="StyledToast" kind="warning">
+          <div>
+            {t('restartRequired')}
+          </div>
+          <A onClick={onClick}>
+            {t('restart')}
+          </A>
+        </StyledToast>
+      </Transition>
     </Fixed>
   </Container>;
 
