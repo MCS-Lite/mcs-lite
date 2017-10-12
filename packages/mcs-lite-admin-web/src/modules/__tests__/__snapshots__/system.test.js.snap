@@ -52,10 +52,10 @@ Object {
 
 exports[`system - 4. Reducer should handle CLEAR 1`] = `
 Object {
-  "db": "",
-  "oauth": "",
-  "rest": "",
-  "wot": "",
+  "db": "{}",
+  "oauth": "{}",
+  "rest": "{}",
+  "wot": "{}",
 }
 `;
 
@@ -67,9 +67,9 @@ Object {
 
 exports[`system - 4. Reducer should return the initial state 1`] = `
 Object {
-  "db": "",
-  "oauth": "",
-  "rest": "",
-  "wot": "",
+  "db": "{}",
+  "oauth": "{}",
+  "rest": "{}",
+  "wot": "{}",
 }
 `;

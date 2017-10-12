@@ -125,7 +125,7 @@ function httpErrorCycle(sources) {
   // Remind: handle all http errors here
   const failureRes$ = sources.HTTP
     .select()
-    .switchMap(failure)
+    .concatMap(failure)
     .pluck('response')
     .do(response => console.log('httpErrorCycle', response)); // eslint-disable-line
 

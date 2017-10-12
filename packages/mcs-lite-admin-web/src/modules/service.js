@@ -172,7 +172,7 @@ function fetchIpListCycle(sources) {
   );
   const successResToFetch$ = sources.HTTP
     .select()
-    .switchMap(success)
+    .concatMap(success)
     .filter(
       R.pipe(
         R.path(['request', 'category']),

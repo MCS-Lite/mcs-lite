@@ -90,7 +90,7 @@ function storeIsRestartRequiredCycle(sources) {
 
   const successResToStore$ = sources.HTTP
     .select()
-    .switchMap(success)
+    .concatMap(success)
     .filter(
       R.pipe(
         R.path(['request', 'category']),
@@ -127,7 +127,7 @@ function storeIsRestartRequiredCycle(sources) {
 function removeIsRestartRequiredCycle(sources) {
   const successResToRemove$ = sources.HTTP
     .select()
-    .switchMap(success)
+    .concatMap(success)
     .filter(
       R.pipe(
         R.path(['request', 'category']),
