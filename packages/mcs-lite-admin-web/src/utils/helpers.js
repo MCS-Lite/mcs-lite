@@ -24,6 +24,19 @@ export function assertSourcesSinks(sources, sinks, main, done, timeOpts = {}) {
             Time.diagram(diagram, sourceOpts[firstKey](...args)),
         },
       };
+    } else if (firstKey === 'local'){
+      // for localstorage driver
+      let secondKey = Object.keys(sourceOpts[firstKey])[0]
+
+      obj = {
+        [sourceKey]: {
+          // pass category to getItem
+          [firstKey]: {
+            [secondKey]: (...args) =>
+              Time.diagram(diagram, sourceOpts[firstKey][secondKey](...args)),
+          },
+        },
+      };
     } else {
       obj = {
         [sourceKey]: Time.diagram(diagram, sourceOpts),

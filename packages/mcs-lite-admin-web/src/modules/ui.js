@@ -1,3 +1,5 @@
+/* eslint no-underscore-dangle: ["error", { "allow": ["__"] }] */
+
 import { Observable } from 'rxjs/Observable';
 import R from 'ramda';
 import uuid from 'uuid/v1';
@@ -80,23 +82,27 @@ function addToastCycle(sources) {
 function storeIsRestartRequiredCycle(sources) {
   const isRestartRequired$ = sources.STORAGE.local
     .getItem(SET_IS_RESTART_REQUIRED)
-    .startWith('false')
-    .map(R.equals('true'));
+    .map(R.equals('true'))
+    .startWith(false)
+    .distinctUntilChanged();
 
   const action$ = isRestartRequired$.map(setIsRestartRequired);
 
   const successResToStore$ = sources.HTTP
     .select()
-    .filter(res$ =>
-      R.contains(res$.request.category, [
-        usersConstants.DELETE_USERS,
-        usersConstants.CREATE_USER,
-        usersConstants.CREATE_USER_BY_CSV,
-        usersConstants.CHANGE_PASSWORD_BY_ID,
-        usersConstants.PUT_IS_ACTIVE_BY_ID,
-      ]),
-    )
-    .switchMap(success);
+    .switchMap(success)
+    .filter(
+      R.pipe(
+        R.path(['request', 'category']),
+        R.contains(R.__, [
+          usersConstants.DELETE_USERS,
+          usersConstants.CREATE_USER,
+          usersConstants.CREATE_USER_BY_CSV,
+          usersConstants.CHANGE_PASSWORD_BY_ID,
+          usersConstants.PUT_IS_ACTIVE_BY_ID,
+        ]),
+      ),
+    );
 
   const storageRequest$ = successResToStore$
     .withLatestFrom(isRestartRequired$, (res, isRestartRequired) => {
@@ -119,13 +125,16 @@ function storeIsRestartRequiredCycle(sources) {
 function removeIsRestartRequiredCycle(sources) {
   const successResToRemove$ = sources.HTTP
     .select()
-    .filter(res$ =>
-      R.contains(res$.request.category, [
-        `${serviceConstants.RESTART}_START`,
-        `${serviceConstants.STOP}`,
-      ]),
-    )
-    .switchMap(success);
+    .switchMap(success)
+    .filter(
+      R.pipe(
+        R.path(['request', 'category']),
+        R.contains(R.__, [
+          `${serviceConstants.RESTART}_START`,
+          serviceConstants.STOP,
+        ]),
+      ),
+    );
 
   const storageRequest$ = successResToRemove$.mapTo({
     target: 'local',
