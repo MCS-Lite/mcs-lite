@@ -65,6 +65,9 @@ exports[`should renders <DashboardLayout> correctly when started 1`] = `
       </div>
     </styled.nav>
     <styled.main>
+      <InjectIntl(withPropsOnChange(RestartNotification))
+        onClick={[Function]}
+      />
       Content
     </styled.main>
   </styled.div>
@@ -84,6 +87,80 @@ exports[`should renders <DashboardLayout> correctly when stopped 1`] = `
         />
         <P>
           start
+        </P>
+      </styled.div>
+    </styled.div>
+  </styled.header>
+  <styled.div>
+    <styled.nav>
+      <div>
+        <Styled(Link)
+          to={[Function]}
+        >
+          ipConnection
+        </Styled(Link)>
+        <Styled(Link)
+          to={[Function]}
+        >
+          systemManagement
+        </Styled(Link)>
+        <Styled(Link)
+          to={[Function]}
+        >
+          userManagement
+        </Styled(Link)>
+        <Styled(Link)
+          to={[Function]}
+        >
+          dataManagement
+        </Styled(Link)>
+      </div>
+      <div>
+        <Styled(Styled(Link))
+          to={[Function]}
+        >
+          <IconPublic
+            size={18}
+          />
+          <P>
+            Language
+          </P>
+        </Styled(Styled(Link))>
+        <Styled(Styled(Link))
+          onClick={[Function]}
+        >
+          <IconLogout
+            size={18}
+          />
+          <P>
+            signoutService
+          </P>
+        </Styled(Styled(Link))>
+      </div>
+    </styled.nav>
+    <styled.main>
+      <InjectIntl(withPropsOnChange(RestartNotification))
+        onClick={[Function]}
+      />
+      Content
+    </styled.main>
+  </styled.div>
+</styled.div>
+`;
+
+exports[`should renders <DashboardLayout> without RestartNotification 1`] = `
+<styled.div>
+  <styled.header>
+    <Styled(Logo) />
+    <styled.div>
+      <styled.div
+        onClick={[Function]}
+      >
+        <IconStop
+          size={18}
+        />
+        <P>
+          stop
         </P>
       </styled.div>
     </styled.div>

@@ -13,6 +13,8 @@ Object {
 
 exports[`should return props correctly with mapStateToProps 1`] = `
 Object {
+  "isNedb": true,
+  "isRestartRequired": true,
   "isStarted": false,
 }
 `;

@@ -105,10 +105,12 @@ function storeIsRestartRequiredCycle(sources) {
     );
 
   const storageRequest$ = successResToStore$
-    .withLatestFrom(isRestartRequired$, (res, isRestartRequired) => {
-      if (isRestartRequired) return Observable.empty();
-      return Observable.of(true);
-    })
+    .withLatestFrom(
+      isRestartRequired$,
+      (res, isRestartRequired) => isRestartRequired,
+    )
+    // Remind: the optimization which reducing localstorage operation
+    .filter(isRestartRequired => !isRestartRequired)
     .mapTo({
       target: 'local',
       action: 'setItem',

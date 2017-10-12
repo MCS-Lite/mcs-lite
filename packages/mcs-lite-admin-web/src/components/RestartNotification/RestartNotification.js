@@ -42,7 +42,7 @@ const RestartNotification = ({ onClick, getMessages: t }) =>
 RestartNotification.displayName = 'RestartNotification';
 RestartNotification.propTypes = {
   // Props
-  onClick: PropTypes.node.isRequired,
+  onClick: PropTypes.func.isRequired,
 
   // React-intl I18n
   getMessages: PropTypes.func.isRequired,

@@ -78,7 +78,8 @@ describe('ui - 3. Cycle', () => {
     const storageSource = {
       local: {
         getItem: () => ({
-          s: 'true',
+          s: 'false',
+          t: 'true',
         }),
       },
     };
@@ -106,11 +107,11 @@ describe('ui - 3. Cycle', () => {
 
     // prettier-ignore
     assertSourcesSinks({
-      STORAGE: { '-s-----|': storageSource },
-      HTTP:    { '---r---|': httpSource },
+      STORAGE: { '-s--t--|': storageSource },
+      HTTP:    { '---r--r|': httpSource },
     }, {
       STORAGE: { '---r---|': storageSink },
-      ACTION:  { 'xy-----|': actionSink },
+      ACTION:  { 'x---y--|': actionSink },
     }, cycles.storeIsRestartRequiredCycle, done);
   });
 

@@ -1,0 +1,127 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should renders <RestartNotification> correctly 1`] = `
+.c4 {
+  box-sizing: border-box;
+  box-shadow: 0 1px 5px 0 rgba(0,0,0,0.2);
+  border-radius: 3px;
+  background-color: #FFFFFF;
+  overflow: hidden;
+}
+
+.c6 {
+  margin: 0;
+  font-size: 1rem;
+  color: currentColor;
+}
+
+.c3 {
+  border: 1px solid #F39A1E;
+  background-color: rgba(255,255,255,0.9);
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 10px 20px;
+  color: #F39A1E;
+  background-color: rgba(243,154,30,0.1);
+}
+
+.c0 {
+  height: 32px;
+  margin: -20px -20px 20px -20px;
+}
+
+.c1 {
+  position: fixed;
+  right: 0;
+  left: 150px;
+}
+
+.c2 {
+  border: none;
+  box-shadow: none;
+}
+
+.c2 > div {
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+<RestartNotification
+  getMessages={[Function]}
+  onClick={[Function]}
+>
+  <styled.div>
+    <div
+      className="c0"
+    >
+      <styled.div>
+        <div
+          className="c1"
+        >
+          <Styled(Toast)
+            kind="warning"
+          >
+            <Toast
+              className="c2"
+              kind="warning"
+            >
+              <Styled(Card)
+                className="c2"
+                kind="warning"
+              >
+                <Card
+                  className="c2 c3"
+                  kind="warning"
+                >
+                  <div
+                    className="c2 c3 c4"
+                    kind="warning"
+                  >
+                    <Styled(P)
+                      kind="warning"
+                    >
+                      <P
+                        className="c5"
+                        kind="warning"
+                      >
+                        <Component
+                          className="c5 c6"
+                          kind="warning"
+                        >
+                          <div
+                            className="c5 c6"
+                            kind="warning"
+                          >
+                            <div>
+                              restartRequired
+                            </div>
+                            <A
+                              color="primary"
+                              onClick={[Function]}
+                            />
+                          </div>
+                        </Component>
+                      </P>
+                    </Styled(P)>
+                  </div>
+                </Card>
+              </Styled(Card)>
+            </Toast>
+          </Styled(Toast)>
+        </div>
+      </styled.div>
+    </div>
+  </styled.div>
+</RestartNotification>
+`;

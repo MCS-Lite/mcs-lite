@@ -7,9 +7,9 @@ import { actions as authActions } from '../../modules/auth';
 import { actions as serviceActions } from '../../modules/service';
 import DashboardLayout from './DashboardLayout';
 
-export const mapStateToProps = ({ service, ui }) => ({
+export const mapStateToProps = ({ service, ui, system }) => ({
   isStarted: R.complement(R.isEmpty)(service),
-  isNedb: R.pipe(R.prop('db'), JSON.parse, R.propEq('db', 'nedb')),
+  isNedb: R.pipe(R.prop('db'), JSON.parse, R.propEq('db', 'nedb'))(system),
   isRestartRequired: ui.isRestartRequired,
 });
 
