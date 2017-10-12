@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import Toast from 'mcs-lite-ui/lib/Toast';
+import Toast, { StyledP } from 'mcs-lite-ui/lib/Toast/Toast';
 import A from 'mcs-lite-ui/lib/A';
 import { NAV_WIDTH } from '../../containers/DashboardLayout/styled-components';
 
@@ -20,7 +20,7 @@ const StyledToast = styled(Toast)`
   border: none;
   box-shadow: none;
 
-  > div {
+  > ${StyledP} {
     justify-content: space-between;
   }
 `;

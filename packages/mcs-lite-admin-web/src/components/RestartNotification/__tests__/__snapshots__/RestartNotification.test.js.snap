@@ -9,7 +9,7 @@ exports[`should renders <RestartNotification> correctly 1`] = `
   overflow: hidden;
 }
 
-.c6 {
+.c7 {
   margin: 0;
   font-size: 1rem;
   color: currentColor;
@@ -20,7 +20,7 @@ exports[`should renders <RestartNotification> correctly 1`] = `
   background-color: rgba(255,255,255,0.9);
 }
 
-.c5 {
+.c6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -50,7 +50,7 @@ exports[`should renders <RestartNotification> correctly 1`] = `
   box-shadow: none;
 }
 
-.c2 > div {
+.c2 > .c5 {
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
@@ -92,15 +92,15 @@ exports[`should renders <RestartNotification> correctly 1`] = `
                       kind="warning"
                     >
                       <P
-                        className="c5"
+                        className="c5 c6"
                         kind="warning"
                       >
                         <Component
-                          className="c5 c6"
+                          className="c5 c6 c7"
                           kind="warning"
                         >
                           <div
-                            className="c5 c6"
+                            className="c5 c6 c7"
                             kind="warning"
                           >
                             <div>

@@ -13,6 +13,7 @@
 .*/license-checker/.*
 .*/node_modules/react-topbar-progress-indicator/.*
 .*/.yarn-cache/*
+.*/node_modules/radium/*
 
 [include]
 

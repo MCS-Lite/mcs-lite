@@ -6,7 +6,6 @@ import { ThemeProvider } from 'styled-components';
 import { theme } from 'mcs-lite-theme';
 import RestartNotification from '../RestartNotification';
 
-// jest.mock('mcs-lite-ui/lib/Toast');
 jest.mock('mcs-lite-ui/lib/A');
 
 it('should renders <RestartNotification> correctly', () => {
