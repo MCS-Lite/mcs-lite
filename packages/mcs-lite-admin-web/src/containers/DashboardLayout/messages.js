@@ -19,6 +19,11 @@ const messages = defineMessages({
     description: 'Toast',
     defaultMessage: '成功！服務已停止。',
   },
+  'DashboardLayout.restart.success': {
+    id: 'DashboardLayout.restart.success',
+    description: 'Toast',
+    defaultMessage: '成功！服務已重新啟動。',
+  },
   'DashboardLayout.ipConnection': {
     id: 'DashboardLayout.ipConnection',
     defaultMessage: 'IP 連線',

@@ -70,6 +70,7 @@ function requireAuthCycle(sources) {
   const action$ = Observable.from([
     successRes$.pluck('body', 'results').map(setUserInfo),
     successRes$.mapTo(serviceActions.fetchIpList()),
+    successRes$.mapTo(systemActions.fetchSystemByType('db')),
   ]).mergeAll();
 
   return {
