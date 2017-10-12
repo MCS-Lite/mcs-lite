@@ -12,7 +12,6 @@ exports[`should render SWITCH_DISPLAY correctly with default value to false 1`] 
 }
 
 .c3 > * {
-  -webkit-fill: #69BE28;
   fill: #69BE28;
   -webkit-transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
@@ -23,7 +22,6 @@ exports[`should render SWITCH_DISPLAY correctly with default value to false 1`] 
 }
 
 .c4 > * {
-  -webkit-fill: #D1D2D3;
   fill: #D1D2D3;
   -webkit-transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
@@ -195,7 +193,6 @@ exports[`should render SWITCH_DISPLAY correctly with false value 1`] = `
 }
 
 .c3 > * {
-  -webkit-fill: #69BE28;
   fill: #69BE28;
   -webkit-transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
@@ -206,7 +203,6 @@ exports[`should render SWITCH_DISPLAY correctly with false value 1`] = `
 }
 
 .c4 > * {
-  -webkit-fill: #D1D2D3;
   fill: #D1D2D3;
   -webkit-transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
@@ -380,7 +376,6 @@ exports[`should render SWITCH_DISPLAY correctly with true value 1`] = `
 }
 
 .c4 > * {
-  -webkit-fill: #69BE28;
   fill: #69BE28;
   -webkit-transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
@@ -391,7 +386,6 @@ exports[`should render SWITCH_DISPLAY correctly with true value 1`] = `
 }
 
 .c3 > * {
-  -webkit-fill: #D1D2D3;
   fill: #D1D2D3;
   -webkit-transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;

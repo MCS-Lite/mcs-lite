@@ -1788,7 +1788,6 @@ exports[`Storyshots CopyButton API 1`] = `
 }
 
 .c0 path {
-  -webkit-fill: currentColor;
   fill: currentColor;
 }
 
@@ -1985,9 +1984,9 @@ exports[`Storyshots DataChannel ControlNumber 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-between;
+  -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
-  -ms-flex-pack: space-between;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -3309,9 +3308,9 @@ exports[`Storyshots DataChannel ControlString 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-between;
+  -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
-  -ms-flex-pack: space-between;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -3511,7 +3510,6 @@ exports[`Storyshots DataChannel DisplayStatus 1`] = `
 }
 
 .c4 > * {
-  -webkit-fill: #D1D2D3;
   fill: #D1D2D3;
   -webkit-transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
@@ -3522,7 +3520,6 @@ exports[`Storyshots DataChannel DisplayStatus 1`] = `
 }
 
 .c5 > * {
-  -webkit-fill: #69BE28;
   fill: #69BE28;
   -webkit-transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
@@ -4069,9 +4066,9 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-between;
+  -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
-  -ms-flex-pack: space-between;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -4156,9 +4153,9 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-between;
+  -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
-  -ms-flex-pack: space-between;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -4371,7 +4368,6 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
 }
 
 .c36 > * {
-  -webkit-fill: #D1D2D3;
   fill: #D1D2D3;
   -webkit-transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
@@ -4382,7 +4378,6 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
 }
 
 .c35 > * {
-  -webkit-fill: #69BE28;
   fill: #69BE28;
   -webkit-transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
@@ -10178,7 +10173,6 @@ exports[`Storyshots LandingHeader NavItemBurger 1`] = `
 }
 
 .c3 path {
-  -webkit-fill: currentColor;
   fill: currentColor;
 }
 
@@ -10287,7 +10281,6 @@ exports[`Storyshots LandingHeader NavItemDropdown 1`] = `
 }
 
 .c3 path {
-  -webkit-fill: currentColor;
   fill: currentColor;
 }
 
@@ -10403,7 +10396,6 @@ exports[`Storyshots LandingHeader With Nav and NavItem 1`] = `
 }
 
 .c3 path {
-  -webkit-fill: currentColor;
   fill: currentColor;
 }
 
@@ -10431,7 +10423,6 @@ exports[`Storyshots LandingHeader With Nav and NavItem 1`] = `
 }
 
 .c4 path {
-  -webkit-fill: currentColor;
   fill: currentColor;
 }
 
@@ -10459,7 +10450,6 @@ exports[`Storyshots LandingHeader With Nav and NavItem 1`] = `
 }
 
 .c5 path {
-  -webkit-fill: currentColor;
   fill: currentColor;
 }
 
@@ -11320,9 +11310,9 @@ exports[`Storyshots MobileHeader API 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: space-between;
+  -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
-  -ms-flex-pack: space-between;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
@@ -11504,9 +11494,9 @@ exports[`Storyshots MobileHeader With right props 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: space-between;
+  -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
-  -ms-flex-pack: space-between;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
@@ -11725,9 +11715,9 @@ exports[`Storyshots Notification API 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: space-between;
+  -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
-  -ms-flex-pack: space-between;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   padding: 10px 20px;
   background-color: rgba(53,54,48,0.9);
@@ -11796,9 +11786,9 @@ exports[`Storyshots Notification With feedbck Button component 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: space-between;
+  -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
-  -ms-flex-pack: space-between;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   padding: 10px 20px;
   background-color: rgba(53,54,48,0.9);
@@ -11893,9 +11883,9 @@ exports[`Storyshots Overlay Dropdown Menu 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-between;
+  -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
-  -ms-flex-pack: space-between;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
@@ -13149,7 +13139,6 @@ exports[`Storyshots StatusLight API 1`] = `
 }
 
 .c0 > * {
-  -webkit-fill: #D1D2D3;
   fill: #D1D2D3;
   -webkit-transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
@@ -13174,7 +13163,6 @@ exports[`Storyshots StatusLight Custom width 1`] = `
 }
 
 .c1 > * {
-  -webkit-fill: #F39A1E;
   fill: #F39A1E;
   -webkit-transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
@@ -13203,7 +13191,6 @@ exports[`Storyshots StatusLight With color props 1`] = `
 }
 
 .c2 > * {
-  -webkit-fill: #D1D2D3;
   fill: #D1D2D3;
   -webkit-transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
@@ -13214,7 +13201,6 @@ exports[`Storyshots StatusLight With color props 1`] = `
 }
 
 .c6 > * {
-  -webkit-fill: #69BE28;
   fill: #69BE28;
   -webkit-transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
@@ -13225,7 +13211,6 @@ exports[`Storyshots StatusLight With color props 1`] = `
 }
 
 .c0 > * {
-  -webkit-fill: #353630;
   fill: #353630;
   -webkit-transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
@@ -13236,7 +13221,6 @@ exports[`Storyshots StatusLight With color props 1`] = `
 }
 
 .c1 > * {
-  -webkit-fill: #999A94;
   fill: #999A94;
   -webkit-transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
@@ -13247,7 +13231,6 @@ exports[`Storyshots StatusLight With color props 1`] = `
 }
 
 .c3 > * {
-  -webkit-fill: #FAFAFA;
   fill: #FAFAFA;
   -webkit-transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
@@ -13258,7 +13241,6 @@ exports[`Storyshots StatusLight With color props 1`] = `
 }
 
 .c4 > * {
-  -webkit-fill: #FFFFFF;
   fill: #FFFFFF;
   -webkit-transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
@@ -13269,7 +13251,6 @@ exports[`Storyshots StatusLight With color props 1`] = `
 }
 
 .c5 > * {
-  -webkit-fill: #00A1DE;
   fill: #00A1DE;
   -webkit-transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
@@ -13280,7 +13261,6 @@ exports[`Storyshots StatusLight With color props 1`] = `
 }
 
 .c7 > * {
-  -webkit-fill: #F5364E;
   fill: #F5364E;
   -webkit-transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
@@ -13291,7 +13271,6 @@ exports[`Storyshots StatusLight With color props 1`] = `
 }
 
 .c8 > * {
-  -webkit-fill: #F39A1E;
   fill: #F39A1E;
   -webkit-transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
