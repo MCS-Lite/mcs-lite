@@ -31,6 +31,7 @@ exports[`should render LazyloadIcon correctly 1`] = `
       attr="style"
       component="div"
       componentProps={Object {}}
+      key="ImageWrapper"
       onChange={[Function]}
       reverseDelay={0}
       style={
@@ -107,6 +108,7 @@ Array [
     <Styled(Styled(RowContainer))>
         <Styled(RowContainer)
             className="c2"
+            innerRef={undefined}
         >
             <RowContainer
                 className="c2 c3"

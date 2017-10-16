@@ -11,6 +11,7 @@ exports[`should render components correctly 1`] = `
   <Styled(Small)>
     <Small
       className="c0"
+      innerRef={undefined}
     />
   </Styled(Small)>
 </div>

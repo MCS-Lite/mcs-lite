@@ -53,9 +53,12 @@ exports[`should renders <Layout.LayoutDialog> correctly 1`] = `
       }
     }
   >
-    <Styled(MobileContentWrapper)>
+    <Styled(MobileContentWrapper)
+      key="layoutDialog"
+    >
       <MobileContentWrapper
         className="c0"
+        innerRef={undefined}
       />
     </Styled(MobileContentWrapper)>
   </Component>

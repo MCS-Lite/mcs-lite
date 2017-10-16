@@ -15,23 +15,23 @@
     "changelog": "lerna-changelog"
   },
   "devDependencies": {
-    "babel-eslint": "^7.2.3",
-    "codecov": "^2.3.0",
-    "danger": "^0.18.0",
-    "eslint": "^4.5.0",
+    "babel-eslint": "^8.0.1",
+    "codecov": "^2.3.1",
+    "danger": "^2.0.0-alpha.20",
+    "eslint": "^4.9.0",
     "eslint-config-airbnb": "^15.1.0",
-    "eslint-config-prettier": "^2.3.0",
+    "eslint-config-prettier": "^2.6.0",
     "eslint-plugin-import": "^2.7.0",
-    "eslint-plugin-jest": "^20.0.3",
+    "eslint-plugin-jest": "^21.2.0",
     "eslint-plugin-jsx-a11y": "^5.0.3",
-    "eslint-plugin-prettier": "^2.2.0",
-    "eslint-plugin-react": "^7.3.0",
+    "eslint-plugin-prettier": "^2.3.1",
+    "eslint-plugin-react": "^7.4.0",
     "flow-bin": "^0.51.0",
-    "lerna": "^2.1.2",
+    "lerna": "^2.4.0",
     "lerna-changelog": "^0.6.0",
     "license-checker": "^14.0.0",
     "prettier": "1.4.4",
-    "stylelint": "^8.0.0"
+    "stylelint": "^8.2.0"
   },
   "stylelint": {
     "extends": "./packages/stylelint-config-mcs-lite/index.js"

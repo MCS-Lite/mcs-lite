@@ -4,7 +4,7 @@ import LazyloadOnce from 'mcs-lite-ui/lib/LazyloadOnce';
 import Loadable from 'react-loadable';
 import { withBreakpoints } from 'hedron';
 import { compose, pure } from 'recompose';
-import Media from 'react-media';
+import MediaQuery from 'react-responsive';
 import imgScreen from '../../statics/images/img_mcs_screen.png';
 import imgScreenX66 from '../../statics/images/img_mcs_screenX66.png';
 import BackgroundImage from '../../components/BackgroundImage';
@@ -28,7 +28,7 @@ const Image = ({ breakpoints }) =>
     </div>
 
     {/* 2. LazyLoad Chart for Desktop */}
-    <Media query={{ minWidth: breakpoints.sm }}>
+    <MediaQuery minWidth={breakpoints.sm} values={{ width: breakpoints.lg }}>
       {matches =>
         matches &&
         <ChartWrapper>
@@ -36,7 +36,7 @@ const Image = ({ breakpoints }) =>
             <LoadabChart />
           </LazyloadOnce>
         </ChartWrapper>}
-    </Media>
+    </MediaQuery>
   </ImageLayerWrapper>;
 
 Image.displayName = 'Image';

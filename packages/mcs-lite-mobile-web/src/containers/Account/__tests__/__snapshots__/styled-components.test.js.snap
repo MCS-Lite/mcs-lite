@@ -78,6 +78,7 @@ Array [
             className="c0"
             component="button"
             disabled={false}
+            innerRef={undefined}
             kind="primary"
             round={false}
             size="normal"
@@ -98,6 +99,7 @@ Array [
         <Logo
             alt="MCS Lite Logo"
             className="c3"
+            innerRef={undefined}
             src="logo_mcs_lite_black.svg"
         >
             <img

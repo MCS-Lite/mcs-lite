@@ -42,6 +42,7 @@ Array [
     <Styled(MobileContentWrapper)>
         <MobileContentWrapper
             className="c0"
+            innerRef={undefined}
         />
     </Styled(MobileContentWrapper)>
     <styled.div>
@@ -53,6 +54,7 @@ Array [
         <MobileHeaderIcon
             className="c2"
             component="a"
+            innerRef={undefined}
         />
     </Styled(MobileHeaderIcon)>
     <Styled(MobileHeaderIcon)
@@ -62,11 +64,13 @@ Array [
             active={true}
             className="c3"
             component="a"
+            innerRef={undefined}
         />
     </Styled(MobileHeaderIcon)>
     <Styled(P)>
         <P
             className="c4"
+            innerRef={undefined}
         />
     </Styled(P)>
 </div>,

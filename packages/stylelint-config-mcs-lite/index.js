@@ -15,6 +15,7 @@ module.exports = {
           'inside-block-and-after-rule',
           'first-nested',
         ],
+        ignore: ['after-comment', 'inside-block'],
       },
     ],
   },

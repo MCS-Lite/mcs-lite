@@ -3,6 +3,7 @@
 .*/node_modules/styled-components/.*
 .*/node_modules/polished/.*
 .*/node_modules/react-motion/.*
+.*/node_modules/@storybook/ui/node_modules/.*
 .*/stylelint/.*.js
 .*/dangerfile.js
 .*/npm/.*

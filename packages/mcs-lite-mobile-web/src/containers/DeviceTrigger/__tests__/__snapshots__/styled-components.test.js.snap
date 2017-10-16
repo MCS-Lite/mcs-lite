@@ -34,11 +34,13 @@ Array [
     <Styled(MobileContentWrapper)>
         <MobileContentWrapper
             className="c0"
+            innerRef={undefined}
         />
     </Styled(MobileContentWrapper)>
     <Styled(Small)>
         <Small
             className="c1"
+            innerRef={undefined}
         />
     </Styled(Small)>
     <styled.div>

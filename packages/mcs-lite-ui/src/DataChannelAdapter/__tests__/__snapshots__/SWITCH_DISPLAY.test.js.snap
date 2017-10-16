@@ -89,7 +89,9 @@ exports[`should render SWITCH_DISPLAY correctly with default value to false 1`] 
       <div
         className="c0"
       >
-        <DisplayStatus__ItemWrapper>
+        <DisplayStatus__ItemWrapper
+          key="OFF"
+        >
           <div
             className="c1"
           >
@@ -132,7 +134,9 @@ exports[`should render SWITCH_DISPLAY correctly with default value to false 1`] 
             </div>
           </div>
         </DisplayStatus__ItemWrapper>
-        <DisplayStatus__ItemWrapper>
+        <DisplayStatus__ItemWrapper
+          key="ON"
+        >
           <div
             className="c1"
           >
@@ -272,7 +276,9 @@ exports[`should render SWITCH_DISPLAY correctly with false value 1`] = `
       <div
         className="c0"
       >
-        <DisplayStatus__ItemWrapper>
+        <DisplayStatus__ItemWrapper
+          key="OFF"
+        >
           <div
             className="c1"
           >
@@ -315,7 +321,9 @@ exports[`should render SWITCH_DISPLAY correctly with false value 1`] = `
             </div>
           </div>
         </DisplayStatus__ItemWrapper>
-        <DisplayStatus__ItemWrapper>
+        <DisplayStatus__ItemWrapper
+          key="ON"
+        >
           <div
             className="c1"
           >
@@ -455,7 +463,9 @@ exports[`should render SWITCH_DISPLAY correctly with true value 1`] = `
       <div
         className="c0"
       >
-        <DisplayStatus__ItemWrapper>
+        <DisplayStatus__ItemWrapper
+          key="OFF"
+        >
           <div
             className="c1"
           >
@@ -498,7 +508,9 @@ exports[`should render SWITCH_DISPLAY correctly with true value 1`] = `
             </div>
           </div>
         </DisplayStatus__ItemWrapper>
-        <DisplayStatus__ItemWrapper>
+        <DisplayStatus__ItemWrapper
+          key="ON"
+        >
           <div
             className="c1"
           >

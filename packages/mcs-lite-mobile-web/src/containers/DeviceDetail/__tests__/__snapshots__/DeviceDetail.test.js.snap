@@ -119,6 +119,7 @@ exports[`should renders <DeviceDetail> correctly when Menu show 1`] = `
                 }
           }
           onClickOutSide={[Function]}
+          target={undefined}
           transitionConfig={
               Object {
                   "component": false,

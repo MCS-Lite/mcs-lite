@@ -1,5 +1,5 @@
 import { Observable } from 'rxjs/Observable';
-import R from 'ramda';
+import * as R from 'ramda';
 
 // ref: https://github.com/whitecolor/cycle-async-driver
 

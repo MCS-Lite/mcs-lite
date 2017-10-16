@@ -30,7 +30,7 @@
     "babel-cli": "^6.26.0",
     "babel-preset-mcs-lite": "^0.3.7",
     "mcs-lite-scripts": "^0.3.8",
-    "recompose": "^0.25.0"
+    "recompose": "^0.26.0"
   },
   "babel": {
     "presets": [

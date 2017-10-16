@@ -92,6 +92,7 @@ exports[`should render HEX_DISPLAY correctly with default value to empty 1`] = `
           <Textarea
             className="c1"
             disabled={true}
+            innerRef={undefined}
             kind="primary"
             placeholder="Hex only"
             value=""
@@ -205,6 +206,7 @@ exports[`should render HEX_DISPLAY correctly with empty string 1`] = `
           <Textarea
             className="c1"
             disabled={true}
+            innerRef={undefined}
             kind="primary"
             placeholder="Hex only"
             value=""
@@ -318,6 +320,7 @@ exports[`should render HEX_DISPLAY correctly with value 1`] = `
           <Textarea
             className="c1"
             disabled={true}
+            innerRef={undefined}
             kind="primary"
             placeholder="Hex only"
             value="michaelhsu"

@@ -34,6 +34,7 @@ exports[`should renders <System> correctly 1`] = `
     <TabItem
       active={true}
       color="primary"
+      key="db"
       onClick={[Function]}
       value="db"
     >
@@ -43,6 +44,7 @@ exports[`should renders <System> correctly 1`] = `
     <TabItem
       active={false}
       color="primary"
+      key="oauth"
       onClick={[Function]}
       value="oauth"
     >
@@ -52,6 +54,7 @@ exports[`should renders <System> correctly 1`] = `
     <TabItem
       active={false}
       color="primary"
+      key="rest"
       onClick={[Function]}
       value="rest"
     >
@@ -61,6 +64,7 @@ exports[`should renders <System> correctly 1`] = `
     <TabItem
       active={false}
       color="primary"
+      key="wot"
       onClick={[Function]}
       value="wot"
     >
@@ -122,6 +126,7 @@ exports[`should renders <System> correctly with json format error 1`] = `
     <TabItem
       active={true}
       color="primary"
+      key="db"
       onClick={[Function]}
       value="db"
     >
@@ -131,6 +136,7 @@ exports[`should renders <System> correctly with json format error 1`] = `
     <TabItem
       active={false}
       color="primary"
+      key="oauth"
       onClick={[Function]}
       value="oauth"
     >
@@ -140,6 +146,7 @@ exports[`should renders <System> correctly with json format error 1`] = `
     <TabItem
       active={false}
       color="primary"
+      key="rest"
       onClick={[Function]}
       value="rest"
     >
@@ -149,6 +156,7 @@ exports[`should renders <System> correctly with json format error 1`] = `
     <TabItem
       active={false}
       color="primary"
+      key="wot"
       onClick={[Function]}
       value="wot"
     >

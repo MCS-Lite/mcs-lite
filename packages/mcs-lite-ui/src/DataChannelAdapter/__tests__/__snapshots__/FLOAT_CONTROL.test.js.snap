@@ -146,6 +146,7 @@ exports[`should render FLOAT_CONTROL correctly with default value to empty 1`] =
     onClear={[Function]}
     onSubmit={[Function]}
     placeholder="Float only"
+    unit={undefined}
     value=""
   >
     <ControlNumber__Container>
@@ -191,6 +192,7 @@ exports[`should render FLOAT_CONTROL correctly with default value to empty 1`] =
                       <A
                         className="c4"
                         color="primary"
+                        innerRef={undefined}
                       >
                         <a
                           className="c4 c5"
@@ -439,6 +441,7 @@ exports[`should render FLOAT_CONTROL correctly with unit 1`] = `
           <P
             className="c1"
             color="grayBase"
+            innerRef={undefined}
           >
             <Component
               className="c1 c2"
@@ -492,6 +495,7 @@ exports[`should render FLOAT_CONTROL correctly with unit 1`] = `
                       <A
                         className="c6"
                         color="primary"
+                        innerRef={undefined}
                       >
                         <a
                           className="c6 c7"
@@ -707,6 +711,7 @@ exports[`should render FLOAT_CONTROL correctly with value 1`] = `
     onClear={[Function]}
     onSubmit={[Function]}
     placeholder="Float only"
+    unit={undefined}
     value={0.11}
   >
     <ControlNumber__Container>
@@ -752,6 +757,7 @@ exports[`should render FLOAT_CONTROL correctly with value 1`] = `
                       <A
                         className="c4"
                         color="primary"
+                        innerRef={undefined}
                       >
                         <a
                           className="c4 c5"
@@ -967,6 +973,7 @@ exports[`should render FLOAT_CONTROL correctly with zero 1`] = `
     onClear={[Function]}
     onSubmit={[Function]}
     placeholder="Float only"
+    unit={undefined}
     value={0}
   >
     <ControlNumber__Container>
@@ -1012,6 +1019,7 @@ exports[`should render FLOAT_CONTROL correctly with zero 1`] = `
                       <A
                         className="c4"
                         color="primary"
+                        innerRef={undefined}
                       >
                         <a
                           className="c4 c5"

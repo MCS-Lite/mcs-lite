@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Page, Row } from 'hedron';
 import Loadable from 'react-loadable';
-import Media from 'react-media';
+import MediaQuery from 'react-responsive';
 import LandingHeader from 'mcs-lite-ui/lib/LandingHeader/LandingHeader';
 import Nav from 'mcs-lite-ui/lib/LandingHeader/Nav';
 import NavItem from 'mcs-lite-ui/lib/LandingHeader/NavItem';
@@ -80,7 +80,10 @@ const Header = ({ locale, getMessages, breakpoints }) => {
             </Nav>
 
             {/* 1. Right - Nav */}
-            <Media query={{ minWidth: breakpoints.sm }}>
+            <MediaQuery
+              minWidth={breakpoints.sm}
+              values={{ width: breakpoints.lg }}
+            >
               {matches =>
                 matches
                   ? // Desktop
@@ -114,7 +117,7 @@ const Header = ({ locale, getMessages, breakpoints }) => {
                         />
                       </LazyloadOnce>
                     </MobileNav>}
-            </Media>
+            </MediaQuery>
 
             {/* 3. Hidden -For Prereder */}
             <HiddenForPreRenderTrick>

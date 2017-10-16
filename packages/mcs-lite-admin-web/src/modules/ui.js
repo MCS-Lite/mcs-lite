@@ -1,7 +1,7 @@
 /* eslint no-underscore-dangle: ["error", { "allow": ["__"] }] */
 
 import { Observable } from 'rxjs/Observable';
-import R from 'ramda';
+import * as R from 'ramda';
 import uuid from 'uuid/v1';
 import { constants as usersConstants } from './users';
 import { constants as serviceConstants } from './service';

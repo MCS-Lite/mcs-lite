@@ -65,20 +65,8 @@ exports[`should renders <Image> correctly with Mobile view 1`] = `
   }
 }
 
-<pure(Breakpoints)
-  breakpoints={
-    Object {
-      "sm": 1,
-    }
-  }
->
-  <Breakpoints
-    breakpoints={
-      Object {
-        "sm": 1,
-      }
-    }
-  >
+<pure(Breakpoints)>
+  <Breakpoints>
     <Image
       breakpoints={
         Object {
@@ -188,11 +176,11 @@ exports[`should renders <Image> correctly with Mobile view 1`] = `
                 </Styled(ProgressiveImage)>
               </BackgroundImage>
             </div>
-            <Media
-              defaultMatches={true}
-              query={
+            <MediaQuery
+              minWidth={768}
+              values={
                 Object {
-                  "minWidth": 768,
+                  "width": 1170,
                 }
               }
             />

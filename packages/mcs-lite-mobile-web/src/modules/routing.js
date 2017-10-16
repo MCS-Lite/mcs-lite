@@ -1,5 +1,5 @@
 import { push } from 'react-router-redux';
-import R from 'ramda';
+import * as R from 'ramda';
 import { LOCATION_CHANGE } from 'react-router-redux/lib/reducer';
 import getBrowserLocale from 'browser-locale';
 import { localeMapper } from 'mcs-lite-ui/lib/utils/localeHelper';

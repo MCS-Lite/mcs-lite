@@ -331,6 +331,7 @@ exports[`should render PWM_CONTROL correctly with default value to N/A 1`] = `
                   <Input
                     className="c4"
                     focus={false}
+                    innerRef={undefined}
                     kind="primary"
                     onChange={[Function]}
                     placeholder="Integer only"
@@ -410,7 +411,9 @@ exports[`should render PWM_CONTROL correctly with default value to N/A 1`] = `
               <div
                 className="c8"
               >
-                <ControlRange__LabelItem>
+                <ControlRange__LabelItem
+                  key="0"
+                >
                   <div
                     className="c9"
                   >
@@ -431,7 +434,9 @@ exports[`should render PWM_CONTROL correctly with default value to N/A 1`] = `
                     </P>
                   </div>
                 </ControlRange__LabelItem>
-                <ControlRange__LabelItem>
+                <ControlRange__LabelItem
+                  key="100"
+                >
                   <div
                     className="c9"
                   >
@@ -471,6 +476,7 @@ exports[`should render PWM_CONTROL correctly with default value to N/A 1`] = `
                   <P
                     className="c11"
                     color="grayBase"
+                    innerRef={undefined}
                   >
                     <Component
                       className="c11 c2"
@@ -487,6 +493,7 @@ exports[`should render PWM_CONTROL correctly with default value to N/A 1`] = `
                           <P
                             className="c12"
                             color="primary"
+                            innerRef={undefined}
                           >
                             <Component
                               className="c12 c13"
@@ -873,6 +880,7 @@ exports[`should render PWM_CONTROL correctly with max 1`] = `
                   <Input
                     className="c4"
                     focus={false}
+                    innerRef={undefined}
                     kind="primary"
                     onChange={[Function]}
                     placeholder="Integer only"
@@ -952,7 +960,9 @@ exports[`should render PWM_CONTROL correctly with max 1`] = `
               <div
                 className="c8"
               >
-                <ControlRange__LabelItem>
+                <ControlRange__LabelItem
+                  key="0"
+                >
                   <div
                     className="c9"
                   >
@@ -973,7 +983,9 @@ exports[`should render PWM_CONTROL correctly with max 1`] = `
                     </P>
                   </div>
                 </ControlRange__LabelItem>
-                <ControlRange__LabelItem>
+                <ControlRange__LabelItem
+                  key="100"
+                >
                   <div
                     className="c9"
                   >
@@ -1013,6 +1025,7 @@ exports[`should render PWM_CONTROL correctly with max 1`] = `
                   <P
                     className="c11"
                     color="grayBase"
+                    innerRef={undefined}
                   >
                     <Component
                       className="c11 c2"
@@ -1029,6 +1042,7 @@ exports[`should render PWM_CONTROL correctly with max 1`] = `
                           <P
                             className="c12"
                             color="primary"
+                            innerRef={undefined}
                           >
                             <Component
                               className="c12 c13"
@@ -1415,6 +1429,7 @@ exports[`should render PWM_CONTROL correctly with zero 1`] = `
                   <Input
                     className="c4"
                     focus={false}
+                    innerRef={undefined}
                     kind="primary"
                     onChange={[Function]}
                     placeholder="Integer only"
@@ -1494,7 +1509,9 @@ exports[`should render PWM_CONTROL correctly with zero 1`] = `
               <div
                 className="c8"
               >
-                <ControlRange__LabelItem>
+                <ControlRange__LabelItem
+                  key="0"
+                >
                   <div
                     className="c9"
                   >
@@ -1515,7 +1532,9 @@ exports[`should render PWM_CONTROL correctly with zero 1`] = `
                     </P>
                   </div>
                 </ControlRange__LabelItem>
-                <ControlRange__LabelItem>
+                <ControlRange__LabelItem
+                  key="100"
+                >
                   <div
                     className="c9"
                   >
@@ -1555,6 +1574,7 @@ exports[`should render PWM_CONTROL correctly with zero 1`] = `
                   <P
                     className="c11"
                     color="grayBase"
+                    innerRef={undefined}
                   >
                     <Component
                       className="c11 c2"
@@ -1571,6 +1591,7 @@ exports[`should render PWM_CONTROL correctly with zero 1`] = `
                           <P
                             className="c12"
                             color="primary"
+                            innerRef={undefined}
                           >
                             <Component
                               className="c12 c13"

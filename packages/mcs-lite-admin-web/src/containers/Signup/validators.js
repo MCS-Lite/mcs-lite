@@ -1,5 +1,5 @@
 // TODO: extract this utils
-import R from 'ramda';
+import * as R from 'ramda';
 
 const isNotEmpty = R.complement(R.isEmpty);
 const notEquals = R.complement(R.equals);

@@ -3,9 +3,9 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
-import Hammer from 'react-hammerjs';
 import styled from 'styled-components';
 import { IconGoDown, IconLoading as MLIconLoading } from 'mcs-lite-icon';
+import Hammer from '../utils/react-hammerjs';
 import Heading from '../Heading';
 import Spin from '../Spin';
 

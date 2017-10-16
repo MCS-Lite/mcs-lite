@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import compose from 'recompose/compose';
-import R from 'ramda';
+import * as R from 'ramda';
 import { withGetMessages } from 'react-intl-inject-hoc';
 import messages from './messages';
 import { actions as authActions } from '../../modules/auth';

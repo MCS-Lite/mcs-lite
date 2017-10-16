@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { Link } from 'react-router';
-import { Column, withBreakpoints } from 'hedron';
+import { Column } from 'hedron';
 import Nav from 'mcs-lite-ui/lib/LandingHeader/Nav';
 import NavItem from 'mcs-lite-ui/lib/LandingHeader/NavItem';
 
@@ -25,14 +25,13 @@ export const LogoImage = styled.img`
   width: auto;
 `;
 
-export const DesktopNav = withBreakpoints(styled(Nav)`
-  ${'' /* For SEO */}
-  display: none;
+export const DesktopNav = styled(Nav)`
+  overflow: hidden;
 
-  @media (min-width: ${props => props.breakpoints.sm}px) {
-    display: inherit;
+  ${NavItem} {
+    flex-shrink: 0;
   }
-`);
+`;
 
 export const MobileNav = styled(Nav)`
   ${NavItem} {

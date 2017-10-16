@@ -221,6 +221,7 @@ exports[`should renders <DeviceList> correctly with one device 1`] = `
             runOnMount={true}
           >
             <StyledLink
+              key="deviceId"
               to={[Function]}
             >
               <MobileDeviceCard

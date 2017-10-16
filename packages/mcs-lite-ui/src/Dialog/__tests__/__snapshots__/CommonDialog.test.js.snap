@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render <CommonDialog /> 1`] = `
+<CommonDialog
+  component="div"
+  onHide={[Function]}
+  show={true}
+>
+  <Dialog
+    onHide={[Function]}
+    show={true}
+  >
+    <mock-portal>
+      <Transition
+        component={false}
+        enter={
+          Object {
+            "opacity": 1,
+          }
+        }
+        leave={
+          Object {
+            "opacity": 0.5,
+          }
+        }
+        onEnter={[Function]}
+        onLeave={[Function]}
+        runOnMount={true}
+      />
+    </mock-portal>
+  </Dialog>
+</CommonDialog>
+`;
+
+exports[`should render <CommonDialog /> with custom component prop 1`] = `
+<CommonDialog
+  component="form"
+  onHide={[Function]}
+  show={true}
+>
+  <Dialog
+    onHide={[Function]}
+    show={true}
+  >
+    <mock-portal>
+      <Transition
+        component={false}
+        enter={
+          Object {
+            "opacity": 1,
+          }
+        }
+        leave={
+          Object {
+            "opacity": 0.5,
+          }
+        }
+        onEnter={[Function]}
+        onLeave={[Function]}
+        runOnMount={true}
+      />
+    </mock-portal>
+  </Dialog>
+</CommonDialog>
+`;

@@ -84,14 +84,17 @@ exports[`should renders <App> correctly 1`] = `
     />
     <meta
       content="en"
+      key="en"
       property="og:locale:alternate"
     />
     <meta
       content="zh-TW"
+      key="zh-TW"
       property="og:locale:alternate"
     />
     <meta
       content="zh-CN"
+      key="zh-CN"
       property="og:locale:alternate"
     />
   </HelmetWrapper>

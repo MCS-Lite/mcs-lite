@@ -91,7 +91,9 @@ exports[`should render GPIO_DISPLAY correctly with High 1`] = `
       <div
         className="c0"
       >
-        <DisplayStatus__ItemWrapper>
+        <DisplayStatus__ItemWrapper
+          key="Low"
+        >
           <div
             className="c1"
           >
@@ -134,7 +136,9 @@ exports[`should render GPIO_DISPLAY correctly with High 1`] = `
             </div>
           </div>
         </DisplayStatus__ItemWrapper>
-        <DisplayStatus__ItemWrapper>
+        <DisplayStatus__ItemWrapper
+          key="High"
+        >
           <div
             className="c1"
           >
@@ -274,7 +278,9 @@ exports[`should render GPIO_DISPLAY correctly with Low 1`] = `
       <div
         className="c0"
       >
-        <DisplayStatus__ItemWrapper>
+        <DisplayStatus__ItemWrapper
+          key="Low"
+        >
           <div
             className="c1"
           >
@@ -317,7 +323,9 @@ exports[`should render GPIO_DISPLAY correctly with Low 1`] = `
             </div>
           </div>
         </DisplayStatus__ItemWrapper>
-        <DisplayStatus__ItemWrapper>
+        <DisplayStatus__ItemWrapper
+          key="High"
+        >
           <div
             className="c1"
           >
@@ -439,12 +447,15 @@ exports[`should render GPIO_DISPLAY correctly with default value to undefiend 1`
         "High",
       ]
     }
+    value={undefined}
   >
     <DisplayStatus__Container>
       <div
         className="c0"
       >
-        <DisplayStatus__ItemWrapper>
+        <DisplayStatus__ItemWrapper
+          key="Low"
+        >
           <div
             className="c1"
           >
@@ -487,7 +498,9 @@ exports[`should render GPIO_DISPLAY correctly with default value to undefiend 1`
             </div>
           </div>
         </DisplayStatus__ItemWrapper>
-        <DisplayStatus__ItemWrapper>
+        <DisplayStatus__ItemWrapper
+          key="High"
+        >
           <div
             className="c1"
           >

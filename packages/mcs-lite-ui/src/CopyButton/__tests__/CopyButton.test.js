@@ -9,7 +9,6 @@ import CopyButton, { getStatusStream } from '../CopyButton';
 
 jest.mock('copy-to-clipboard');
 jest.mock('mcs-lite-icon');
-jest.unmock('react-dom');
 
 const jestRxAssert = (actual, expected) => {
   const isEqual = R.equals(actual, expected);
@@ -28,14 +27,14 @@ it('should handle onClick', done => {
     </ThemeProvider>,
   );
 
-  // After clicking
-  // TODO: dont known why breaking after 20
-  // wrapper.find('button').simulate('click');
-  wrapper.find('button').props().onClick();
+  expect(wrapper.find(CopyButton).contains(<IconLoading />)).toBe(false);
 
+  // After clicking
+  wrapper.find('button').simulate('click');
   expect(wrapper.find(CopyButton).contains(<IconLoading />)).toBe(true);
 
   setTimeout(() => {
+    wrapper.update();
     expect(wrapper.find(CopyButton).contains(<IconDone />)).toBe(true);
     done();
   }, 600);

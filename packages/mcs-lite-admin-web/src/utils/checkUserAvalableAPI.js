@@ -1,6 +1,6 @@
 /* global fetch */
 
-import R from 'ramda';
+import * as R from 'ramda';
 
 const checkUserAvalableAPI = ({ accessToken, email }) =>
   fetch(`/api/users?email=${email}`, {

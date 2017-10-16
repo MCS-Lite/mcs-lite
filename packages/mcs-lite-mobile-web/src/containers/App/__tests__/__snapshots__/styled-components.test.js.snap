@@ -34,6 +34,7 @@ Array [
     <Styled(MobileContentWrapper)>
         <MobileContentWrapper
             className="c2"
+            innerRef={undefined}
         />
     </Styled(MobileContentWrapper)>
 </div>,

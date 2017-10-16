@@ -19,7 +19,7 @@
     "build": "echo 'none'"
   },
   "dependencies": {
-    "stylelint-config-suitcss": "^11.0.0",
+    "stylelint-config-suitcss": "^12.0.0",
     "stylelint-processor-styled-components": "^0.0.4"
   },
   "peerDependencies": {

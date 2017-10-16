@@ -4,6 +4,12 @@ import React from 'react';
 import { mount } from 'enzyme';
 import ClickOutside from '../ClickOutside';
 
+jest.mock('raf-throttle', () => a => {
+  const fn = a;
+  fn.cancel = () => {};
+  return fn;
+});
+
 it('should add a "click" EventListener of document', () => {
   // ref: https://github.com/airbnb/enzyme/issues/426
   const documentEvents = {};

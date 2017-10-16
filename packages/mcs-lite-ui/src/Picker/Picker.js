@@ -4,7 +4,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import R from 'ramda';
-import Hammer from 'react-hammerjs';
+import Hammer from '../utils/react-hammerjs';
 
 const CONTAINER_HEIGHT = 200;
 const ITEM_HEIGHT = 40;

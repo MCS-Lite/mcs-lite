@@ -25,12 +25,16 @@ exports[`should renders <Ip> correctly with ip 1`] = `
       </tr>
     </thead>
     <tbody>
-      <tr>
+      <tr
+        key="127.0.0.1"
+      >
         <td>
           127.0.0.1
         </td>
       </tr>
-      <tr>
+      <tr
+        key="localhost"
+      >
         <td>
           localhost
         </td>
