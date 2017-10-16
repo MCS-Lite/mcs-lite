@@ -26,7 +26,9 @@ const Data = componentFromStream(props$ => {
 
   // Remind: delete Side-effects.
   onSubmit$
-    .withLatestFrom(props$, (e, { deleteData }) => deleteData.bind(null))
+    .withLatestFrom(props$, (e, { deleteData, getMessages: t }) =>
+      deleteData.bind(null, t('reset.success')),
+    )
     .subscribe(R.call);
 
   return props$.combineLatest(

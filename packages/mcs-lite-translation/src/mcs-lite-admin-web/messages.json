@@ -127,6 +127,11 @@
     "filepath": "src/containers/Data/messages.js"
   },
   {
+    "id": "Data.reset.success",
+    "defaultMessage": "成功！已清除所有資料。",
+    "filepath": "src/containers/Data/messages.js"
+  },
+  {
     "id": "Ip.mcsLiteIpConnection",
     "description": "Meta/Title",
     "defaultMessage": "MCS lite 的連線 IP",

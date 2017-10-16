@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"POT-Creation-Date: 2017-10-12T08:59:24.999Z\n"
+"POT-Creation-Date: 2017-10-16T07:37:42.389Z\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "MIME-Version: 1.0\n"
@@ -271,6 +271,13 @@ msgstr ""
 #. defaultMessage is:
 #. 成功！密碼已修改。
 msgid "成功！密碼已修改。"
+msgstr ""
+
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+#. [Data.reset.success]
+#. defaultMessage is:
+#. 成功！已清除所有資料。
+msgid "成功！已清除所有資料。"
 msgstr ""
 
 #: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json

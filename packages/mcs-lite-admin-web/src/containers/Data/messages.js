@@ -22,6 +22,10 @@ const messages = defineMessages({
     id: 'Data.reset.confirm2',
     defaultMessage: '清除後，系統將自動關閉， 請重新啟動服務。',
   },
+  'Data.reset.success': {
+    id: 'Data.reset.success',
+    defaultMessage: '成功！已清除所有資料。',
+  },
 });
 
 export default messages;

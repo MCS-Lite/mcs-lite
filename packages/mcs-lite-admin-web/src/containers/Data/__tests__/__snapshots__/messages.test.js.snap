@@ -23,5 +23,9 @@ Object {
     "defaultMessage": "清除後，系統將自動關閉， 請重新啟動服務。",
     "id": "Data.reset.confirm2",
   },
+  "Data.reset.success": Object {
+    "defaultMessage": "成功！已清除所有資料。",
+    "id": "Data.reset.success",
+  },
 }
 `;

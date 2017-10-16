@@ -1,4 +1,5 @@
-import { actions as authActions } from './auth';
+import { Observable } from 'rxjs/Observable';
+import { actions as uiActions } from './ui';
 import { success, accessTokenSelector$ } from '../utils/cycleHelper';
 
 // ----------------------------------------------------------------------------
@@ -15,7 +16,10 @@ export const constants = {
 // 2. Action Creators (Sync)
 // ----------------------------------------------------------------------------
 
-const deleteData = () => ({ type: DELETE_DATA });
+const deleteData = successMessage => ({
+  type: DELETE_DATA,
+  payload: successMessage,
+});
 
 export const actions = {
   deleteData,
@@ -28,6 +32,10 @@ export const actions = {
 function deleteDataCycle(sources) {
   const accessToken$ = accessTokenSelector$(sources.STATE);
 
+  const message$ = sources.ACTION
+    .filter(action => action.type === DELETE_DATA)
+    .pluck('payload');
+
   const request$ = sources.ACTION
     .filter(action => action.type === DELETE_DATA)
     .combineLatest(accessToken$, (action, accessToken) => ({
@@ -39,7 +47,15 @@ function deleteDataCycle(sources) {
 
   const successRes$ = sources.HTTP.select(DELETE_DATA).switchMap(success);
 
-  const action$ = successRes$.mapTo(authActions.signout('', true));
+  const action$ = Observable.from([
+    request$.mapTo(uiActions.setLoading()),
+    successRes$
+      .withLatestFrom(message$, (response, message) => message)
+      .map(message =>
+        uiActions.addToast({ kind: 'success', children: message }),
+      ),
+    successRes$.mapTo(uiActions.setLoaded()),
+  ]).mergeAll();
 
   return {
     ACTION: action$,

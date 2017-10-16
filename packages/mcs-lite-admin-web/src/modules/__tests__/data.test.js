@@ -1,6 +1,6 @@
 import { Observable } from 'rxjs/Observable';
 import { constants, actions, cycles } from '../data';
-import { actions as authActions } from '../auth';
+import { actions as uiActions } from '../ui';
 import { assertSourcesSinks } from '../../utils/helpers';
 
 describe('data - 1. Constants', () => {
@@ -11,7 +11,7 @@ describe('data - 1. Constants', () => {
 
 describe('data - 2. Action Creators', () => {
   it('should return deleteData actions', () => {
-    expect(actions.deleteData()).toMatchSnapshot();
+    expect(actions.deleteData('message')).toMatchSnapshot();
   });
 });
 
@@ -21,7 +21,7 @@ describe('data - 3. Cycle', () => {
       s: { auth: { access_token: 'faketoken123' } },
     };
     const actionSource = {
-      a: actions.deleteData(),
+      a: actions.deleteData('message123'),
     };
     const httpSource = {
       select: () => ({
@@ -30,7 +30,12 @@ describe('data - 3. Cycle', () => {
     };
 
     const actionSink = {
-      x: authActions.signout('', true),
+      x: uiActions.setLoading(),
+      y: uiActions.addToast({
+        kind: 'success',
+        children: 'message123',
+      }),
+      z: uiActions.setLoaded(),
     };
 
     const httpSink = {
@@ -49,7 +54,7 @@ describe('data - 3. Cycle', () => {
       HTTP:   { '----r---|': httpSource },
     }, {
       HTTP:   { 'r-------|': httpSink },
-      ACTION: { '----x---|': actionSink },
+      ACTION: { 'x---(yz)|': actionSink },
     }, cycles.deleteDataCycle, done);
   });
 });
