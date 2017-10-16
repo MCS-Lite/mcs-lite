@@ -70,6 +70,10 @@ MCS Lite 應用程式主要包含了**物聯網平台 (IoT Platform)** 與**系�
 	display_integer,,43
 	```
 	
+9. 當您點擊 "X" 關閉管理主控台視窗時，MCS Lite 應用程式仍在運行中，若要關閉此應用程式，請點擊系統工具列上 MCS Lite 的圖示，並選擇 "關閉 MCS Lite"。
+
+	![](../../assets/mcs_lite_system_tray_mac.png)
+
 ### Linux 與 LinkIt 7688 使用者
 1. LinkIt 7688 預設已在系統中安裝好 Node.js v0.12.7。若您的執行環境為 Linux，請先安裝 Node.js (>7.3.0)，詳細安裝方式請參考 [Installing Node.js via package manager](https://nodejs.org/en/download/package-manager/)
 2. 下載 MCS Lite 應用程式。[點我下載](https://github.com/MCS-Lite/mcs-lite-app/releases)
