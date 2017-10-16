@@ -8,6 +8,7 @@ Object {
 
 exports[`data - 2. Action Creators should return deleteData actions 1`] = `
 Object {
+  "payload": "message",
   "type": "mcs-lite-admin-web/data/DELETE_DATA",
 }
 `;

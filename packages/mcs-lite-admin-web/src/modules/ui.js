@@ -5,6 +5,7 @@ import * as R from 'ramda';
 import uuid from 'uuid/v1';
 import { constants as usersConstants } from './users';
 import { constants as serviceConstants } from './service';
+import { constants as dataConstants } from './data';
 import { success } from '../utils/cycleHelper';
 
 // ----------------------------------------------------------------------------
@@ -100,6 +101,7 @@ function storeIsRestartRequiredCycle(sources) {
           usersConstants.CREATE_USER_BY_CSV,
           usersConstants.CHANGE_PASSWORD_BY_ID,
           usersConstants.PUT_IS_ACTIVE_BY_ID,
+          dataConstants.DELETE_DATA,
         ]),
       ),
     );
