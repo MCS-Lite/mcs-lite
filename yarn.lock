@@ -1049,7 +1049,7 @@ babel-plugin-dynamic-import-node@1.0.2:
     babel-template "^6.24.1"
     babel-types "^6.24.1"
 
-babel-plugin-import@^1.6.1:
+babel-plugin-import@^1.6.2:
   version "1.6.2"
   resolved "https://registry.yarnpkg.com/babel-plugin-import/-/babel-plugin-import-1.6.2.tgz#09a8ff8ec8e67e0034f97adf1d833b0d5b6e815e"
   dependencies:
@@ -8421,7 +8421,7 @@ podda@^1.2.2:
     babel-runtime "^6.11.6"
     immutable "^3.8.1"
 
-polished@^1.8.0:
+polished@^1.8.1:
   version "1.8.1"
   resolved "https://registry.yarnpkg.com/polished/-/polished-1.8.1.tgz#e50b9f789d37d98da64912f1be2bf759d8bfae6c"
 
