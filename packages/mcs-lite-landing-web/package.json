@@ -35,7 +35,7 @@
     "prop-types": "^15.6.0",
     "raf-throttle": "^2.0.3",
     "ramda": "^0.25.0",
-    "rc-scroll-anim": "^1.0.7",
+    "rc-scroll-anim": "^2.0.2",
     "rc-tween-one": "^1.5.2",
     "raf": "^3.4.0",
     "react": "^16.0.0",

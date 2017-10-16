@@ -9089,30 +9089,19 @@ raw-body@2.3.2:
     iconv-lite "0.4.19"
     unpipe "1.0.0"
 
-rc-scroll-anim@^1.0.7:
-  version "1.0.7"
-  resolved "https://registry.yarnpkg.com/rc-scroll-anim/-/rc-scroll-anim-1.0.7.tgz#4658047e4562372ba815b02f11f4769703e92f10"
+rc-scroll-anim@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/rc-scroll-anim/-/rc-scroll-anim-2.0.2.tgz#36fb886a8a81f622cf86e0acc11f8d0d579bbd58"
   dependencies:
     babel-runtime "6.x"
-    prop-types "^15.5.10"
+    prop-types "^15.6.0"
     raf "3.x"
-    rc-tween-one "~1.2.5"
+    rc-tween-one "^1.5.0"
     tween-functions "1.x"
 
-rc-tween-one@^1.5.2:
+rc-tween-one@^1.5.0, rc-tween-one@^1.5.2:
   version "1.5.2"
   resolved "https://registry.yarnpkg.com/rc-tween-one/-/rc-tween-one-1.5.2.tgz#9cc5f33a65b7c612325a4fe52973ec3ee6f30d37"
-  dependencies:
-    babel-runtime "6.x"
-    deep-eql "~2.0.1"
-    prop-types "^15.5.0"
-    raf "~3.3.0"
-    style-utils "~0.1.13"
-    tween-functions "~1.2.0"
-
-rc-tween-one@~1.2.5:
-  version "1.2.9"
-  resolved "https://registry.yarnpkg.com/rc-tween-one/-/rc-tween-one-1.2.9.tgz#320598a9402f9b7e9be31b28a49f9db2fe590c62"
   dependencies:
     babel-runtime "6.x"
     deep-eql "~2.0.1"
