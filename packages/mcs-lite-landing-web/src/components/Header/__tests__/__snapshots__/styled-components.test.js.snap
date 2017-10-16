@@ -52,17 +52,17 @@ Array [
 }
 
 .c5 {
-  display: none;
+  overflow: hidden;
+}
+
+.c5 .sc-EHOje {
+  -webkit-flex-shrink: 0;
+  -ms-flex-shrink: 0;
+  flex-shrink: 0;
 }
 
 .c7 .sc-EHOje {
   padding-right: 0;
-}
-
-@media (min-width:768px) {
-  .c5 {
-    display: inherit;
-  }
 }
 
 <div>
@@ -121,33 +121,16 @@ Array [
             className="c4"
         />
     </styled.img>
-    <Breakpoints>
-        <Styled(styled.div)
-            breakpoints={
-                Object {
-                    "lg": 1170,
-                    "md": 970,
-                    "sm": 768,
-                  }
-            }
+    <Styled(styled.div)>
+        <styled.div
+            className="c5"
+            innerRef={undefined}
         >
-            <styled.div
-                breakpoints={
-                    Object {
-                        "lg": 1170,
-                        "md": 970,
-                        "sm": 768,
-                      }
-                }
-                className="c5"
-                innerRef={undefined}
-            >
-                <div
-                    className="c5 c6"
-                />
-            </styled.div>
-        </Styled(styled.div)>
-    </Breakpoints>
+            <div
+                className="c5 c6"
+            />
+        </styled.div>
+    </Styled(styled.div)>
     <Styled(styled.div)>
         <styled.div
             className="c7"
@@ -206,13 +189,13 @@ Array [
 }
 
 .c0 {
-  display: none;
+  overflow: hidden;
 }
 
-@media (min-width:768px) {
-  .c0 {
-    display: inherit;
-  }
+.c0 .sc-EHOje {
+  -webkit-flex-shrink: 0;
+  -ms-flex-shrink: 0;
+  flex-shrink: 0;
 }
 
 <div

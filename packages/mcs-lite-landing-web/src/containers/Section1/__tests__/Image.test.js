@@ -1,5 +1,3 @@
-/* global window */
-
 import React from 'react';
 import { mount } from 'enzyme';
 import toJson from 'enzyme-to-json';
@@ -8,17 +6,13 @@ import { BreakpointProvider } from 'hedron';
 import landingTheme, { BREAKPOINTS } from '../../../utils/landingTheme';
 import Image from '../Image';
 
-it('should renders <Image> correctly with Mobile view', () => {
-  window.matchMedia = () => ({
-    matches: false, // Mobile First
-    addListener: () => {},
-    removeListener: () => {},
-  });
+jest.mock('react-responsive');
 
+it('should renders <Image> correctly with Mobile view', () => {
   const wrapper = mount(
     <ThemeProvider theme={landingTheme}>
       <BreakpointProvider breakpoints={BREAKPOINTS}>
-        <Image breakpoints={{ sm: 1 }} />
+        <Image />
       </BreakpointProvider>
     </ThemeProvider>,
   );
