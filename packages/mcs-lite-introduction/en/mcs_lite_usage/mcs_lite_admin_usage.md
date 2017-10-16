@@ -85,3 +85,38 @@ If you want to leverage an existing MySQL which allows MCS Lite application to c
 
 You can also connect to the database with your SQL client to ensure the connectivity and data integrity during the migration operation. 
 
+### User management
+Administrator can add, edit, delete and search MCS Lite users on the admin console. You can create individual account or create multiple accounts by importing a CSV file. However, the import process will fail if there is any duplicated user or the invalid format in the imported CSV file. 
+
+The format of CSV file:
+
+```
+nickname,Email account,password
+```
+For example
+
+```
+a123,a123@abc.com,11111111
+a124,a124@abc.com,11111111
+a125,a125@abc.com,11111111
+a126,a126@abc.com,11111111
+a127,a127@abc.com,11111111
+```
+PS: If there is any data inconsistent issue between MCS Lite IoT platform and admin console, please restart the entire MCS Lite application. This might by caused by the data synchronization issue among different processes in NeDB. There is no such issue if you adopt MySQL as the database of MCS Lite.
+
+### Data management
+Administrator can clear all user generated data on the admin console except the default unit types for data channels and administrator account.
+
+PS: If there is any data inconsistent issue between MCS Lite IoT platform and admin console, please restart the entire MCS Lite application. This might by caused by the data synchronization issue among different processes in NeDB. There is no such issue if you adopt MySQL as the database of MCS Lite.
+
+### Stop MCS Lite application
+There are two major services of MCS Lite application. One is IoT platform and another is admin console.
+
+IoT platform provides a web console which allows users to create prototypes, manage device and browse the visualized data. Administrator can start and stop the platform service on the admin console.
+
+![](../../assets/mcs_lite_start_service.png)
+
+Admin console is a management portal that administrator can manage the data and setting of MCS Lite IoT platform. The entire MCS Lite application will be terminated after you click "Quit MCS Lite" on the tray of admin console, including the IoT platform.
+
+![](../../assets/mcs_lite_system_tray_mac.png)
+![](../../assets/mcs_lite_system_tray_windows.png)

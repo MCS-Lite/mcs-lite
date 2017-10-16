@@ -78,6 +78,7 @@ On the IoT platform, there is a web console for end users to create their protot
 9. MCS Lite application is still running after you click on "X" to close the Admin Console window. If you want to terminate MCS Lite application competely, please click the MCS Lite icon in the system tray and choose "Quit MCS Lite".
 	
 	![](../../assets/mcs_lite_system_tray_mac.png)
+	![](../../assets/mcs_lite_system_tray_windows.png)
 
 ### Get Started on Linux or LinkIt 7688
 1. Node.js v0.12.7 has been pre-installed in LinkIt 7688. If you are using Linux, you need to have Node.js ( >7.3.0) installed on your machine, on which MCS Lite will run，please refer to  [Installing Node.js via package manager](https://nodejs.org/en/download/package-manager/) for detailed instruction.
