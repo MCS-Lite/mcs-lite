@@ -20,7 +20,7 @@ const messages = defineMessages({
   },
   'Data.reset.confirm2': {
     id: 'Data.reset.confirm2',
-    defaultMessage: '清除後，系統將自動關閉， 請重新啟動服務。',
+    defaultMessage: '完成後，請重新啟動 MCS Lite 服務使設定生效。',
   },
   'Data.reset.success': {
     id: 'Data.reset.success',

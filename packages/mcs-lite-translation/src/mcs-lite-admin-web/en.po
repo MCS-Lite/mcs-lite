@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: mcs-lite\n"
-"POT-Creation-Date: 2017-10-16T07:37:42.389Z\n"
-"PO-Revision-Date: 2017-10-17 14:00+0800\n"
+"POT-Creation-Date: 2017-10-17T08:02:15.156Z\n"
+"PO-Revision-Date: 2017-10-17 16:05+0800\n"
 "Last-Translator: Daria Chen <smartexist@gmail.com>\n"
 "Language-Team: English\n"
 "Language: en_US\n"
@@ -212,6 +212,17 @@ msgstr "Individual account creation"
 #. 完成修改後，請重新啟動 MCS Lite 服務使設定生效。
 #: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
 msgid "完成修改後，請重新啟動 MCS Lite 服務使設定生效。"
+msgstr ""
+"After you modify the settings, please restart MCS Lite service to have the "
+"new configuration take effect."
+
+#. [Data.reset.confirm2]
+#. defaultMessage is:
+#. 完成後，請重新啟動 MCS Lite 服務使設定生效。
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+#, fuzzy
+#| msgid "完成修改後，請重新啟動 MCS Lite 服務使設定生效。"
+msgid "完成後，請重新啟動 MCS Lite 服務使設定生效。"
 msgstr ""
 "After you modify the settings, please restart MCS Lite service to have the "
 "new configuration take effect."
@@ -426,15 +437,6 @@ msgstr "This Email address has been registered!"
 #: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
 msgid "注意！"
 msgstr "Attention!"
-
-#. [Data.reset.confirm2]
-#. defaultMessage is:
-#. 清除後，系統將自動關閉， 請重新啟動服務。
-#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
-msgid "清除後，系統將自動關閉， 請重新啟動服務。"
-msgstr ""
-"After the data is erased, the service will automatically shut down, please "
-"restart it again."
 
 #. [Data.reset]
 #. defaultMessage is:
@@ -663,3 +665,15 @@ msgstr "Email address"
 #: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
 msgid "電子信箱格式不正確"
 msgstr "The format of the Email address is incorrect."
+
+#, fuzzy
+#~| msgid "完成修改後，請重新啟動 MCS Lite 服務使設定生效。"
+#~ msgid "清除後，請重新啟動服務以使設定生效。"
+#~ msgstr ""
+#~ "After you modify the settings, please restart MCS Lite service to have "
+#~ "the new configuration take effect."
+
+#~ msgid "清除後，系統將自動關閉， 請重新啟動服務。"
+#~ msgstr ""
+#~ "After the data is erased, the service will automatically shut down, "
+#~ "please restart it again."

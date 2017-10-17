@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"POT-Creation-Date: 2017-10-16T07:37:42.389Z\n"
+"POT-Creation-Date: 2017-10-17T08:02:15.156Z\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "MIME-Version: 1.0\n"
@@ -206,6 +206,13 @@ msgid "完成修改後，請重新啟動 MCS Lite 服務使設定生效。"
 msgstr ""
 
 #: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+#. [Data.reset.confirm2]
+#. defaultMessage is:
+#. 完成後，請重新啟動 MCS Lite 服務使設定生效。
+msgid "完成後，請重新啟動 MCS Lite 服務使設定生效。"
+msgstr ""
+
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
 #. [Signin.password]
 #. defaultMessage is:
 #. 密碼
@@ -404,13 +411,6 @@ msgstr ""
 #. defaultMessage is:
 #. 注意！
 msgid "注意！"
-msgstr ""
-
-#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
-#. [Data.reset.confirm2]
-#. defaultMessage is:
-#. 清除後，系統將自動關閉， 請重新啟動服務。
-msgid "清除後，系統將自動關閉， 請重新啟動服務。"
 msgstr ""
 
 #: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
