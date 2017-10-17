@@ -670,17 +670,3 @@ msgstr "电子信箱"
 #: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
 msgid "電子信箱格式不正確"
 msgstr "电子信箱格式不正确"
-
-#, fuzzy
-#~| msgid ""
-#~| "完成修改後，請重新啟動 MCS Lite 服務使設定"
-#~| "生效。"
-#~ msgid "清除後，請重新啟動服務以使設定生效。"
-#~ msgstr ""
-#~ "完成修改后，请重新启动 MCS Lite 服务使设定生"
-#~ "效。"
-
-#~ msgid ""
-#~ "清除後，系統將自動關閉， 請重新啟動服務。"
-#~ msgstr ""
-#~ "清除后，系统将自动关闭， 请重新启动服务。"
