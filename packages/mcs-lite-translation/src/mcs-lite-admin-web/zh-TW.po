@@ -491,8 +491,8 @@ msgstr "登出服務"
 #: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
 msgid "目前尚無可連線的服務，請先啟動本服務。"
 msgstr ""
-"目前尚無可連線的服務，請先按下啟動按鈕開啟 MCS "
-"Lite。"
+"目前尚無可連線的服務，請先按下啟動按鈕開啟 "
+"MCS Lite。"
 
 #. [DialogConfirm.confirm]
 #. defaultMessage is:
@@ -674,8 +674,8 @@ msgstr "電子信箱格式不正確"
 #~| "生效。"
 #~ msgid "清除後，請重新啟動服務以使設定生效。"
 #~ msgstr ""
-#~ "完成修改後，請重新啟動 MCS Lite 服務使設定生"
-#~ "效。"
+#~ "完成修改後，請重新啟動 MCS Lite 服務使設定"
+#~ "生效。"
 
 #~ msgid ""
 #~ "清除後，系統將自動關閉， 請重新啟動服務。"
