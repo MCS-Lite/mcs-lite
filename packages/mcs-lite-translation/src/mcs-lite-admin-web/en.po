@@ -1,15 +1,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: mcs-lite\n"
-"POT-Creation-Date: 2017-08-24T06:39:48.809Z\n"
-"PO-Revision-Date: 2017-08-24 15:36+0800\n"
+"POT-Creation-Date: 2017-10-16T07:37:42.389Z\n"
+"PO-Revision-Date: 2017-10-17 14:00+0800\n"
 "Last-Translator: Daria Chen <smartexist@gmail.com>\n"
 "Language-Team: English\n"
 "Language: en_US\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.0.3\n"
+"X-Generator: Poedit 2.0.4\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Crowdin-Project: mcs-lite\n"
 "X-Crowdin-Language: en\n"
@@ -207,6 +207,15 @@ msgstr "Activated"
 msgid "單筆輸入"
 msgstr "Individual account creation"
 
+#. [RestartNotification.restartReqired]
+#. defaultMessage is:
+#. 完成修改後，請重新啟動 MCS Lite 服務使設定生效。
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+msgid "完成修改後，請重新啟動 MCS Lite 服務使設定生效。"
+msgstr ""
+"After you modify the settings, please restart MCS Lite service to have the "
+"new configuration take effect."
+
 #. [Signin.password]
 #. defaultMessage is:
 #. 密碼
@@ -278,6 +287,13 @@ msgstr ""
 "Success! The password has been changed. Please restart MCS Lite service to "
 "sync with the latest change."
 
+#. [Data.reset.success]
+#. defaultMessage is:
+#. 成功！已清除所有資料。
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+msgid "成功！已清除所有資料。"
+msgstr "Success! All data is deleted."
+
 #. [User.accountStatus.success]
 #. defaultMessage is:
 #. 成功！帳號狀態已修改。
@@ -300,6 +316,13 @@ msgstr "Success! The service has been stopped."
 #: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
 msgid "成功！服務已啟動。"
 msgstr "Success! The service has been started."
+
+#. [DashboardLayout.restart.success] - Toast
+#. defaultMessage is:
+#. 成功！服務已重新啟動。
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+msgid "成功！服務已重新啟動。"
+msgstr "Success! The service has been restarted."
 
 #. [System.reset.success]
 #. defaultMessage is:
@@ -389,6 +412,13 @@ msgstr "Welcome"
 #: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
 msgid "此帳號不存在，請重新搜尋。"
 msgstr "Opps! There is no user found. Please try another search keyword."
+
+#. [User.email.existError]
+#. defaultMessage is:
+#. 此電子信箱已被註冊！
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+msgid "此電子信箱已被註冊！"
+msgstr "This Email address has been registered!"
 
 #. [DialogConfirm.notice] - For Dialog Header
 #. defaultMessage is:
@@ -613,9 +643,23 @@ msgstr "Select file"
 msgid "選擇語言"
 msgstr "Select language"
 
+#. [RestartNotification.restart]
+#. defaultMessage is:
+#. 重新啟動
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+msgid "重新啟動"
+msgstr "Restart"
+
 #. [User.email]
 #. defaultMessage is:
 #. 電子信箱
 #: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
 msgid "電子信箱"
 msgstr "Email address"
+
+#. [User.email.formatError]
+#. defaultMessage is:
+#. 電子信箱格式不正確
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+msgid "電子信箱格式不正確"
+msgstr "The format of the Email address is incorrect."
