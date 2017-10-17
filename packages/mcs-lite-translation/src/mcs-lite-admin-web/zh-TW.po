@@ -1,15 +1,16 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2017-08-24T06:39:48.809Z\n"
+"POT-Creation-Date: 2017-10-16T07:37:42.389Z\n"
 "PO-Revision-Date: \n"
-"Last-Translator: Daria Chen <smartexist@gmail.com>\n"
+"Last-Translator: Daria Chen <smartexist@gmail."
+"com>\n"
 "Language-Team: \n"
 "Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.0.3\n"
+"X-Generator: Poedit 2.0.4\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Source-Language: zh_TW\n"
 
@@ -62,8 +63,12 @@ msgstr "上傳"
 #. defaultMessage is:
 #. 使用者可透過下列的 IP 位址連線至 MCS Lite 服務器。
 #: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
-msgid "使用者可透過下列的 IP 位址連線至 MCS Lite 服務器。"
-msgstr "使用者可透過下列的 IP 位址連線至 MCS Lite 服務器。"
+msgid ""
+"使用者可透過下列的 IP 位址連線至 MCS Lite 服務"
+"器。"
+msgstr ""
+"使用者可透過下列的 IP 位址連線至 MCS Lite 服務"
+"器。"
 
 #. [User.userName]
 #. defaultMessage is:
@@ -94,7 +99,9 @@ msgstr "修改密碼"
 #. 修改系統的參數設定。
 #: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
 msgid "修改系統的參數設定。"
-msgstr "您可在此修改系統的參數與連線設定。修改後請重新啟動 MCS Lite 服務使設定生效。"
+msgstr ""
+"您可在此修改系統的參數與連線設定。修改後請重新"
+"啟動 MCS Lite 服務使設定生效。"
 
 #. [DashboardLayout.stop]
 #. defaultMessage is:
@@ -169,8 +176,12 @@ msgstr "取消"
 #. defaultMessage is:
 #. 可以清除 MCS Lite 所有資料，包含使用者清單以及測試裝置等等。
 #: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
-msgid "可以清除 MCS Lite 所有資料，包含使用者清單以及測試裝置等等。"
-msgstr "您可以清除除了管理者帳號之外的 MCS Lite 所有資料，包含使用者清單以及測試裝置等等。"
+msgid ""
+"可以清除 MCS Lite 所有資料，包含使用者清單以及"
+"測試裝置等等。"
+msgstr ""
+"您可以清除除了管理者帳號之外的 MCS Lite 所有資"
+"料，包含使用者清單以及測試裝置等等。"
 
 #. [User.name]
 #. defaultMessage is:
@@ -199,6 +210,17 @@ msgstr "啟用"
 #: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
 msgid "單筆輸入"
 msgstr "單筆輸入"
+
+#. [RestartNotification.restartReqired]
+#. defaultMessage is:
+#. 完成修改後，請重新啟動 MCS Lite 服務使設定生效。
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+msgid ""
+"完成修改後，請重新啟動 MCS Lite 服務使設定生"
+"效。"
+msgstr ""
+"完成修改後，請重新啟動 MCS Lite 服務使設定生"
+"效。"
 
 #. [Signin.password]
 #. defaultMessage is:
@@ -249,28 +271,43 @@ msgstr "註冊管理者帳戶"
 #. 成功！使用者已新增。
 #: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
 msgid "成功！使用者已新增。"
-msgstr "成功！使用者已新增。請重新啟動 MCS Lite 服務使設定生效。"
+msgstr ""
+"成功！使用者已新增。請重新啟動 MCS Lite 服務使"
+"設定生效。"
 
 #. [User.deleteUser.success]
 #. defaultMessage is:
 #. 成功！使用者已被刪除。
 #: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
 msgid "成功！使用者已被刪除。"
-msgstr "成功！使用者已被刪除。請重新啟動 MCS Lite 服務使設定生效。"
+msgstr ""
+"成功！使用者已被刪除。請重新啟動 MCS Lite 服務"
+"使設定生效。"
 
 #. [User.changePassword.success]
 #. defaultMessage is:
 #. 成功！密碼已修改。
 #: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
 msgid "成功！密碼已修改。"
-msgstr "成功！密碼已修改。請重新啟動 MCS Lite 服務使設定生效。"
+msgstr ""
+"成功！密碼已修改。請重新啟動 MCS Lite 服務使設"
+"定生效。"
+
+#. [Data.reset.success]
+#. defaultMessage is:
+#. 成功！已清除所有資料。
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+msgid "成功！已清除所有資料。"
+msgstr "成功！已清除所有資料。"
 
 #. [User.accountStatus.success]
 #. defaultMessage is:
 #. 成功！帳號狀態已修改。
 #: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
 msgid "成功！帳號狀態已修改。"
-msgstr "成功！帳號狀態已修改。請重新啟動 MCS Lite 服務使設定生效。"
+msgstr ""
+"成功！帳號狀態已修改。請重新啟動 MCS Lite 服務"
+"使設定生效。"
 
 #. [DashboardLayout.stop.success] - Toast
 #. defaultMessage is:
@@ -286,6 +323,13 @@ msgstr "成功！服務已停止。"
 msgid "成功！服務已啟動。"
 msgstr "成功！服務已啟動。"
 
+#. [DashboardLayout.restart.success] - Toast
+#. defaultMessage is:
+#. 成功！服務已重新啟動。
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+msgid "成功！服務已重新啟動。"
+msgstr "成功！服務已重新啟動。"
+
 #. [System.reset.success]
 #. defaultMessage is:
 #. 成功！系統已重置，請重新登入。
@@ -298,7 +342,9 @@ msgstr "成功！系統已重置，請重新登入。"
 #. 成功！系統的參數設定已更新。
 #: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
 msgid "成功！系統的參數設定已更新。"
-msgstr "成功！系統的參數設定已更新。修改後請重新啟動 MCS Lite 服務使設定生效。"
+msgstr ""
+"成功！系統的參數設定已更新。修改後請重新啟動 "
+"MCS Lite 服務使設定生效。"
 
 #. [App.gerenalError] - With HTTP error status code 401/500
 #. defaultMessage is:
@@ -370,6 +416,13 @@ msgstr "歡迎"
 msgid "此帳號不存在，請重新搜尋。"
 msgstr "此帳號不存在，請重新搜尋。"
 
+#. [User.email.existError]
+#. defaultMessage is:
+#. 此電子信箱已被註冊！
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+msgid "此電子信箱已被註冊！"
+msgstr "此電子信箱已被註冊！"
+
 #. [DialogConfirm.notice] - For Dialog Header
 #. defaultMessage is:
 #. 注意！
@@ -382,7 +435,8 @@ msgstr "注意！"
 #. 清除後，系統將自動關閉， 請重新啟動服務。
 #: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
 msgid "清除後，系統將自動關閉， 請重新啟動服務。"
-msgstr "資料清除後，系統將自動關閉， 請重新啟動服務。"
+msgstr ""
+"資料清除後，系統將自動關閉， 請重新啟動服務。"
 
 #. [Data.reset]
 #. defaultMessage is:
@@ -409,8 +463,12 @@ msgstr "版本更新檢查"
 #. defaultMessage is:
 #. 當帳號被停用時，此使用者將無法登入與使用 MCS Lite。您可隨時重新啟用此帳號。
 #: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
-msgid "當帳號被停用時，此使用者將無法登入與使用 MCS Lite。您可隨時重新啟用此帳號。"
-msgstr "當帳號被停用時，此使用者將無法登入與使用 MCS Lite。您可隨時重新啟用此帳號。"
+msgid ""
+"當帳號被停用時，此使用者將無法登入與使用 MCS "
+"Lite。您可隨時重新啟用此帳號。"
+msgstr ""
+"當帳號被停用時，此使用者將無法登入與使用 MCS "
+"Lite。您可隨時重新啟用此帳號。"
 
 #. [Signin.signin] - Document Title
 #. defaultMessage is:
@@ -431,7 +489,9 @@ msgstr "登出服務"
 #. 目前尚無可連線的服務，請先啟動本服務。
 #: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
 msgid "目前尚無可連線的服務，請先啟動本服務。"
-msgstr "目前尚無可連線的服務，請先按下啟動按鈕開啟 MCS Lite。"
+msgstr ""
+"目前尚無可連線的服務，請先按下啟動按鈕開啟 MCS "
+"Lite。"
 
 #. [DialogConfirm.confirm]
 #. defaultMessage is:
@@ -586,9 +646,23 @@ msgstr "選擇檔案"
 msgid "選擇語言"
 msgstr "選擇語言"
 
+#. [RestartNotification.restart]
+#. defaultMessage is:
+#. 重新啟動
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+msgid "重新啟動"
+msgstr "重新啟動"
+
 #. [User.email]
 #. defaultMessage is:
 #. 電子信箱
 #: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
 msgid "電子信箱"
 msgstr "電子信箱"
+
+#. [User.email.formatError]
+#. defaultMessage is:
+#. 電子信箱格式不正確
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+msgid "電子信箱格式不正確"
+msgstr "電子信箱格式不正確"
