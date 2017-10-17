@@ -15,7 +15,7 @@
   "main": "lib",
   "scripts": {
     "clean": "rm -rf lib",
-    "test": "grep -R '#, fuzzy' src && exit 1",
+    "test": "if grep -R '#, fuzzy' src; then exit 1; else exit 0; fi",
     "prebuild": "npm run clean",
     "build": "./build.sh"
   },
