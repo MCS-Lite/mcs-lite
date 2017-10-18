@@ -172,7 +172,7 @@ Packages
 | `mcs-lite-mobile-web`       |       | V    | V     | V     |
 | `mcs-lite-scripts`          | V     |      |       | V     |
 | `mcs-lite-theme`            | V     |      |       | V     |
-| `mcs-lite-translation`      | V     |      |       | V     |
+| `mcs-lite-translation`      | V     | V    |       | V     |
 | `mcs-lite-ui`               | V     | V    | V     | V     |
 | `react-intl-cra`            |       |      |       | -     |
 | `react-intl-inject-hoc`     | V     |      |       | V     |

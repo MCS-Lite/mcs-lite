@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: mcs-lite\n"
-"POT-Creation-Date: 2017-10-16T07:37:42.389Z\n"
-"PO-Revision-Date: 2017-10-17 14:01+0800\n"
+"POT-Creation-Date: 2017-10-17T08:02:15.156Z\n"
+"PO-Revision-Date: 2017-10-17 16:06+0800\n"
 "Last-Translator: Daria Chen <smartexist@gmail."
 "com>\n"
 "Language-Team: Chinese Simplified\n"
@@ -225,6 +225,15 @@ msgstr ""
 "完成修改后，请重新启动 MCS Lite 服务使设定生"
 "效。"
 
+#. [Data.reset.confirm2]
+#. defaultMessage is:
+#. 完成後，請重新啟動 MCS Lite 服務使設定生效。
+#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
+msgid ""
+"完成後，請重新啟動 MCS Lite 服務使設定生效。"
+msgstr ""
+"完成后，请重新启动 MCS Lite 服务使设定生效。"
+
 #. [Signin.password]
 #. defaultMessage is:
 #. 密碼
@@ -432,14 +441,6 @@ msgstr "此电子信箱已被注册！"
 #: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
 msgid "注意！"
 msgstr "注意！"
-
-#. [Data.reset.confirm2]
-#. defaultMessage is:
-#. 清除後，系統將自動關閉， 請重新啟動服務。
-#: ../mcs-lite-translation/src/mcs-lite-admin-web/messages.json
-msgid "清除後，系統將自動關閉， 請重新啟動服務。"
-msgstr ""
-"清除后，系统将自动关闭， 请重新启动服务。"
 
 #. [Data.reset]
 #. defaultMessage is:
