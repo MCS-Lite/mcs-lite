@@ -81,12 +81,14 @@ function addToastCycle(sources) {
 }
 
 function storeIsRestartRequiredCycle(sources) {
+  const isStart$ = sources.STATE.pluck('service').map(R.complement(R.isEmpty));
   const isRestartRequired$ = sources.STORAGE.local
     .getItem(SET_IS_RESTART_REQUIRED)
     .map(R.equals('true'))
     .startWith(false)
     .distinctUntilChanged();
 
+  // Remind: state sync with localstorage
   const action$ = isRestartRequired$.map(setIsRestartRequired);
 
   const successResToStore$ = sources.HTTP
@@ -109,10 +111,10 @@ function storeIsRestartRequiredCycle(sources) {
   const storageRequest$ = successResToStore$
     .withLatestFrom(
       isRestartRequired$,
-      (res, isRestartRequired) => isRestartRequired,
+      isStart$,
+      (res, isRestartRequired, isStart) => ({ isStart, isRestartRequired }),
     )
-    // Remind: the optimization which reducing localstorage operation
-    .filter(isRestartRequired => !isRestartRequired)
+    .filter(({ isStart, isRestartRequired }) => isStart && !isRestartRequired)
     .mapTo({
       target: 'local',
       action: 'setItem',

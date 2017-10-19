@@ -75,6 +75,9 @@ describe('ui - 3. Cycle', () => {
   });
 
   it('should emit correct Sinks given Sources with storeIsRestartRequiredCycle after response', done => {
+    const stateSource = {
+      s: { service: ['ip1', 'ip2'] },
+    };
     const storageSource = {
       local: {
         getItem: () => ({
@@ -107,10 +110,56 @@ describe('ui - 3. Cycle', () => {
 
     // prettier-ignore
     assertSourcesSinks({
+      STATE:   { 's------|': stateSource },
       STORAGE: { '-s--t--|': storageSource },
       HTTP:    { '---r--r|': httpSource },
     }, {
       STORAGE: { '---r---|': storageSink },
+      ACTION:  { 'x---y--|': actionSink },
+    }, cycles.storeIsRestartRequiredCycle, done);
+  });
+
+  it('should not emit storage when STOP with storeIsRestartRequiredCycle ', done => {
+    const stateSource = {
+      s: { service: [] }, // stop
+    };
+    const storageSource = {
+      local: {
+        getItem: () => ({
+          s: 'false',
+          t: 'true',
+        }),
+      },
+    };
+    const httpSource = {
+      select: () => ({
+        r: Observable.of({
+          request: { category: usersConstants.DELETE_USERS },
+        }),
+      }),
+    };
+
+    const actionSink = {
+      x: actions.setIsRestartRequired(false),
+      y: actions.setIsRestartRequired(true),
+    };
+
+    const storageSink = {
+      r: {
+        target: 'local',
+        action: 'setItem',
+        key: constants.SET_IS_RESTART_REQUIRED,
+        value: 'true',
+      },
+    };
+
+    // prettier-ignore
+    assertSourcesSinks({
+      STATE:   { 's------|': stateSource },
+      STORAGE: { '-s--t--|': storageSource },
+      HTTP:    { '---r---|': httpSource },
+    }, {
+      STORAGE: { '-------|': storageSink },
       ACTION:  { 'x---y--|': actionSink },
     }, cycles.storeIsRestartRequiredCycle, done);
   });
