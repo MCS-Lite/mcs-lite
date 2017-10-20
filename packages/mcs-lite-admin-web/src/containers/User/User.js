@@ -34,7 +34,7 @@ import {
   componentFromStream,
   createEventHandler,
 } from '../../utils/recomposeHelper';
-import checkUserAvalableAPI from '../../utils/checkUserAvalableAPI';
+import checkUserAvailableAPI from '../../utils/checkUserAvailableAPI';
 
 export const CHANGE_PASSWORD = 'changePassword';
 export const ACCOUNT_STATUS = 'accountStatus';
@@ -173,7 +173,7 @@ const User = componentFromStream(props$ => {
       accessToken: props.accessToken,
       email: formData.email,
     }))
-    .switchMap(checkUserAvalableAPI)
+    .switchMap(checkUserAvailableAPI)
     .startWith(true)
     .shareReplay(1);
 

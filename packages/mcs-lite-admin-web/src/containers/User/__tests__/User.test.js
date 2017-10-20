@@ -20,7 +20,7 @@ import DialogConfirm from '../../../components/DialogConfirm';
 import Table from '../Table';
 import MockProvider from '../../../utils/MockProvider';
 
-jest.mock('../../../utils/checkUserAvalableAPI', () => () =>
+jest.mock('../../../utils/checkUserAvailableAPI', () => () =>
   Promise.resolve(false),
 );
 
