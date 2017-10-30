@@ -29,7 +29,7 @@
   },
   "dependencies": {
     "recompose": "^0.26.0",
-    "websocket": "^1.0.24"
+    "websocket": "^1.0.25"
   },
   "babel": {
     "presets": [
