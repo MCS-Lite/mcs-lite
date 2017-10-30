@@ -11,7 +11,7 @@
     superagent "3.7.0"
     xstream "11.x.x"
 
-"@cycle/run@*", "@cycle/run@3.4", "@cycle/run@3.x", "@cycle/run@^3.1.0":
+"@cycle/run@*", "@cycle/run@3.4", "@cycle/run@^3.1.0":
   version "3.4.0"
   resolved "https://registry.yarnpkg.com/@cycle/run/-/run-3.4.0.tgz#113844add669ace91d245842522f3733ba5bd393"
   dependencies:
@@ -23,11 +23,13 @@
   dependencies:
     xstream "10.x"
 
-"@cycle/rxjs-run@7.1.0":
-  version "7.1.0"
-  resolved "https://registry.yarnpkg.com/@cycle/rxjs-run/-/rxjs-run-7.1.0.tgz#017825f552cbd8275984f54d0df7d396b4ea4436"
+"@cycle/rxjs-run@^7.3.0":
+  version "7.3.0"
+  resolved "https://registry.yarnpkg.com/@cycle/rxjs-run/-/rxjs-run-7.3.0.tgz#4569902f0c83359182bffc3dc53d9261122561d7"
   dependencies:
-    "@cycle/run" "3.x"
+    "@cycle/run" "3.4"
+    rxjs "5.4.x"
+    xstream "11.x"
 
 "@cycle/storage@^4.1.1":
   version "4.1.1"
@@ -10228,6 +10230,12 @@ rx@^4.1.0:
   version "4.1.0"
   resolved "https://registry.yarnpkg.com/rx/-/rx-4.1.0.tgz#a5f13ff79ef3b740fe30aa803fb09f98805d4782"
 
+rxjs@5.4.x:
+  version "5.4.3"
+  resolved "https://registry.yarnpkg.com/rxjs/-/rxjs-5.4.3.tgz#0758cddee6033d68e0fd53676f0f3596ce3d483f"
+  dependencies:
+    symbol-observable "^1.0.1"
+
 rxjs@^5.4.3, rxjs@^5.5.2:
   version "5.5.2"
   resolved "https://registry.yarnpkg.com/rxjs/-/rxjs-5.5.2.tgz#28d403f0071121967f18ad665563255d54236ac3"
@@ -12126,7 +12134,7 @@ xml-name-validator@^2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/xml-name-validator/-/xml-name-validator-2.0.1.tgz#4d8b8f1eccd3419aa362061becef515e1e559635"
 
-xstream@*, "xstream@10.x || 11.x", xstream@11.x.x:
+xstream@*, "xstream@10.x || 11.x", xstream@11.x, xstream@11.x.x:
   version "11.0.0"
   resolved "https://registry.yarnpkg.com/xstream/-/xstream-11.0.0.tgz#2018c3c4e573f76b62b9cf96a17a46876ab120e0"
   dependencies:

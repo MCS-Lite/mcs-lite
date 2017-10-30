@@ -3,11 +3,17 @@
 
 import { createStore, applyMiddleware, compose } from 'redux';
 import { run } from '@cycle/rxjs-run';
+import { Observable } from 'rxjs/Observable';
 import { createCycleMiddleware } from 'redux-cycles';
 import { makeHTTPDriver } from '@cycle/http';
 import { timeDriver } from '@cycle/time/rxjs';
+import { setAdapt } from '@cycle/run/lib/adapt';
 import { routerMiddleware } from 'react-router-redux';
 import { reducer, cycle as main } from '../modules';
+
+// TODO: rxjs dependency break the adapter
+// https://github.com/cyclejs/cyclejs/blob/master/rxjs-run/package.json#L35
+setAdapt(stream => Observable.from(stream));
 
 /**
  * Compose with Redux devtool
