@@ -38,17 +38,17 @@
     ]
   },
   "devDependencies": {
-    "@storybook/addon-info": "^3.2.12",
-    "@storybook/addon-options": "^3.2.12",
-    "@storybook/addon-storyshots": "^3.2.12",
-    "@storybook/react": "^3.2.12",
+    "@storybook/addon-info": "^3.2.13",
+    "@storybook/addon-options": "^3.2.13",
+    "@storybook/addon-storyshots": "^3.2.13",
+    "@storybook/react": "^3.2.13",
     "babel-cli": "^6.26.0",
     "babel-preset-mcs-lite": "^0.3.7",
     "enzyme": "^3.1.0",
-    "enzyme-adapter-react-16": "^1.0.1",
-    "enzyme-to-json": "^3.1.2",
+    "enzyme-adapter-react-16": "^1.0.2",
+    "enzyme-to-json": "^3.1.4",
     "jest": "^21.2.1",
-    "jest-styled-components": "^4.7.0",
+    "jest-styled-components": "^4.9.0",
     "mcs-lite-icon": "^0.3.8",
     "mcs-lite-scripts": "^0.3.8",
     "mcs-lite-theme": "^0.3.7",
@@ -58,7 +58,7 @@
     "react-addons-test-utils": "^15.6.2",
     "react-dom": "^16.0.0",
     "react-test-renderer": "^16.0.0",
-    "styled-components": "^2.2.1"
+    "styled-components": "^2.2.3"
   },
   "dependencies": {
     "copy-to-clipboard": "^3.0.8",
@@ -74,20 +74,20 @@
     "react-hammerjs": "^0.5.0",
     "react-motion": "^0.5.2",
     "react-motion-ui-pack": "^0.10.3",
-    "react-overlays": "^0.8.2",
+    "react-overlays": "^0.8.3",
     "react-render-to-json": "^0.0.5",
     "react-svg-morph": "^0.1.10",
-    "react-syntax-highlighter": "^5.7.0",
+    "react-syntax-highlighter": "^5.8.0",
     "react-text-truncate": "^0.12.0",
     "react-waypoint": "^7.3.1",
-    "recharts": "^1.0.0-apha.5",
+    "recharts": "^1.0.0-beta.0",
     "recompose": "^0.26.0",
-    "rxjs": "^5.4.3"
+    "rxjs": "^5.5.2"
   },
   "peerDependencies": {
     "mcs-lite-icon": "^0.3.8",
     "mcs-lite-theme": "^0.3.7",
     "react": "^15.0.0 || ^16.0.0",
-    "styled-components": "^2.2.1"
+    "styled-components": "^2.2.3"
   }
 }

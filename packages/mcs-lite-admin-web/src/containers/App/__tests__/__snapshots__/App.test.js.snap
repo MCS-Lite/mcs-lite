@@ -24,7 +24,7 @@ exports[`should renders <App> correctly with toasts 1`] = `
   <styled.div>
     children
   </styled.div>
-  <Portal>
+  <mock-portal>
     <styled.div>
       <Transition
         appear={
@@ -57,7 +57,7 @@ exports[`should renders <App> correctly with toasts 1`] = `
         </Toast>
       </Transition>
     </styled.div>
-  </Portal>
+  </mock-portal>
 </styled.div>
 `;
 
