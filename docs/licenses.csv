@@ -1412,7 +1412,7 @@
 "react-docgen@2.19.0","BSD-3-Clause","https://github.com/reactjs/react-docgen"
 "react-dom@16.0.0","MIT","https://github.com/facebook/react"
 "react-error-overlay@2.0.2","MIT","https://github.com/facebookincubator/create-react-app"
-"react-hammerjs@1.0.1","MIT","https://github.com/JedWatson/react-hammerjs"
+"react-hammerjs@0.5.0","MIT","https://github.com/JedWatson/react-hammerjs"
 "react-helmet@5.2.0","MIT","https://github.com/nfl/react-helmet"
 "react-html-attributes@1.4.1","MIT","https://github.com/jackyho112/react-html-attributes"
 "react-icon-base@2.1.0","MIT","https://github.com/gorangajic/react-icon-base"
