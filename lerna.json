@@ -1,14 +1,7 @@
 {
   "lerna": "2.4.0",
   "npmClient": "yarn",
-  "commands": {
-    "bootstrap": {
-      "hoist": true
-    }
-  },
-  "packages": [
-    "packages/*"
-  ],
+  "useWorkspaces": true,
   "version": "independent",
   "changelog": {
     "repo": "MCS-Lite/mcs-lite",
