@@ -40,7 +40,23 @@ exports[`should renders <DeviceDataChannelDetail> correctly without data 1`] = `
     title="dataChannelDetail"
   />
   <main>
-    <Styled(MobileContentWrapper) />
+    <Styled(MobileContentWrapper)>
+      <DataChannelCard
+        subtitle="Invalid Date"
+      >
+        <DataChannelAdapter
+          dataChannelProps={
+            Object {
+              "format": undefined,
+              "id": undefined,
+              "type": "mock-dataChannelTypeMapper",
+              "values": 0,
+            }
+          }
+          eventHandler={[Function]}
+        />
+      </DataChannelCard>
+    </Styled(MobileContentWrapper)>
     <Styled(MobileContentWrapper)>
       <styled.div>
         <div>
@@ -67,6 +83,61 @@ exports[`should renders <DeviceDataChannelDetail> correctly without data 1`] = `
       <styled.div>
         noData
       </styled.div>
+    </Styled(MobileContentWrapper)>
+  </main>
+</div>
+`;
+
+exports[`should renders <DeviceDataChannelDetail> correctly without history 1`] = `
+<div>
+  <HelmetWrapper
+    defer={true}
+    encodeSpecialCharacters={true}
+  >
+    <title>
+      dataChannelDetail
+    </title>
+  </HelmetWrapper>
+  <MobileHeader
+    leftChildren={
+      <MobileHeaderIcon
+        component={[Function]}
+        to={[Function]}
+      >
+        <IconArrowLeft
+          size="1em"
+        />
+      </MobileHeaderIcon>
+    }
+    rightChildren={
+      <MobileHeaderIcon
+        component={[Function]}
+        to={[Function]}
+      >
+        <IconCalendar
+          size="1em"
+        />
+      </MobileHeaderIcon>
+    }
+    title="dataChannelDetail"
+  />
+  <main>
+    <Styled(MobileContentWrapper)>
+      <DataChannelCard
+        subtitle="Invalid Date"
+      >
+        <DataChannelAdapter
+          dataChannelProps={
+            Object {
+              "format": undefined,
+              "id": undefined,
+              "type": "mock-dataChannelTypeMapper",
+              "values": 0,
+            }
+          }
+          eventHandler={[Function]}
+        />
+      </DataChannelCard>
     </Styled(MobileContentWrapper)>
   </main>
 </div>
