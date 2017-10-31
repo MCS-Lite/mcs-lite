@@ -5,6 +5,13 @@ import toJson from 'enzyme-to-json';
 import DeviceDataChannelDetail from '../DeviceDataChannelDetail';
 import WebSocketNotification from '../../../components/WebSocketNotification';
 
+jest.mock('mcs-lite-ui/lib/utils/dataChannelHelper', () => ({
+  dataChannelTypeMapper: () => 'mock-dataChannelTypeMapper',
+  areaChartTypeMapper: () => {},
+}));
+jest.mock('mcs-lite-ui/lib/DataChannelAdapter');
+jest.mock('mcs-lite-ui/lib/DataChannelCard');
+
 it('should renders <DeviceDataChannelDetail> correctly without data', () => {
   const fetchDeviceMock = jest.fn();
   const fetchDatapointsMock = jest.fn();
@@ -19,6 +26,15 @@ it('should renders <DeviceDataChannelDetail> correctly without data', () => {
         createUserId: 'createUserId',
         deviceDescription: 'deviceDescription',
         deviceKey: 'deviceKey',
+      }}
+      datachannel={{
+        hasHistory: true,
+        channelType: {
+          name: 'name',
+        },
+        datapoints: {
+          values: 0,
+        },
       }}
       data={[]}
       setQuery={() => {}}
@@ -35,6 +51,43 @@ it('should renders <DeviceDataChannelDetail> correctly without data', () => {
   expect(toJson(wrapper)).toMatchSnapshot();
   expect(fetchDeviceMock).toHaveBeenCalledWith('deviceId');
   expect(fetchDatapointsMock).toHaveBeenCalledWith('deviceId', 'dataChannelId');
+});
+
+it('should renders <DeviceDataChannelDetail> correctly without history', () => {
+  const wrapper = shallow(
+    <DeviceDataChannelDetail
+      getMessages={R.identity}
+      deviceId="deviceId"
+      dataChannelId="dataChannelId"
+      device={{
+        deviceId: 'deviceId',
+        deviceName: 'deviceName',
+        createUserId: 'createUserId',
+        deviceDescription: 'deviceDescription',
+        deviceKey: 'deviceKey',
+      }}
+      datachannel={{
+        hasHistory: false,
+        channelType: {
+          name: 'name',
+        },
+        datapoints: {
+          values: 0,
+        },
+      }}
+      data={[]}
+      setQuery={() => {}}
+      isLoading={false}
+      fetchDeviceDetail={() => {}}
+      fetchDatapoints={() => {}}
+      sendMessage={() => {}}
+      setDatapoint={() => {}}
+      reconnect={() => {}}
+      isWebSocketClose={false}
+    />,
+  );
+
+  expect(toJson(wrapper)).toMatchSnapshot();
 });
 
 it('should renders <DeviceDataChannelDetail> correctly with Notification', () => {

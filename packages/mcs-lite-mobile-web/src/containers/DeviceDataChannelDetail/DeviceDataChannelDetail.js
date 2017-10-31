@@ -155,29 +155,31 @@ class DeviceDataChannelDetail extends React.Component {
               </DataChannelCard>}
           </CardContainer>
 
-          <HistoryContainer>
-            <HistoryHeader>
-              <div>
-                <P>{t('historyChart')}</P>
-                <StyledSamll>{t('defaultQueryLatest')}</StyledSamll>
-              </div>
-              <div>
-                <ResetWrapper onClick={onResetClick}>
-                  <IconRefresh />
-                  <P>{t('reset')}</P>
-                </ResetWrapper>
-              </div>
-            </HistoryHeader>
+          {datachannel &&
+            datachannel.hasHistory &&
+            <HistoryContainer>
+              <HistoryHeader>
+                <div>
+                  <P>{t('historyChart')}</P>
+                  <StyledSamll>{t('defaultQueryLatest')}</StyledSamll>
+                </div>
+                <div>
+                  <ResetWrapper onClick={onResetClick}>
+                    <IconRefresh />
+                    <P>{t('reset')}</P>
+                  </ResetWrapper>
+                </div>
+              </HistoryHeader>
 
-            <ChartWrapper>
-              {data.length > 0
-                ? <LoadableChart
-                    data={data}
-                    type={areaChartTypeMapper(datachannel.channelType.name)}
-                  />
-                : t('noData')}
-            </ChartWrapper>
-          </HistoryContainer>
+              <ChartWrapper>
+                {data.length > 0
+                  ? <LoadableChart
+                      data={data}
+                      type={areaChartTypeMapper(datachannel.channelType.name)}
+                    />
+                  : t('noData')}
+              </ChartWrapper>
+            </HistoryContainer>}
         </main>
       </div>
     );
