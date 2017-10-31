@@ -1,7 +1,7 @@
 {
   "private": true,
   "scripts": {
-    "postinstall": "lerna bootstrap && ./tasks/build.sh",
+    "postinstall": "lerna link && ./tasks/build.sh",
     "clean": "rm -rf node_modules && rm -rf ./packages/*/node_modules && rm -rf ./packages/*/.DS_Store && rm -rf ./packages/*/*.log",
     "stylelint": "stylelint './**/*.js' --ignore-path .linterignore",
     "eslint": "eslint ./ --ignore-path .linterignore",
@@ -14,6 +14,9 @@
     "license": "license-checker --csv --out docs/licenses.csv",
     "changelog": "lerna-changelog"
   },
+  "workspaces": [
+    "packages/*"
+  ],
   "devDependencies": {
     "babel-eslint": "^8.0.1",
     "codecov": "^3.0.0",
