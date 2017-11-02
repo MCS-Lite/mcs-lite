@@ -2,6 +2,22 @@
 
 ## Released (2017-11-02)
 
+- babel-preset-mcs-lite: 0.3.7 => 0.3.8
+- mcs-lite-admin-web: 0.1.10 => 0.2.0
+- mcs-lite-connect: 0.3.9 => 0.3.10
+- mcs-lite-design: 0.2.3 => 0.2.4
+- mcs-lite-icon: 0.3.8 => 0.3.9
+- mcs-lite-introduction: 0.2.8 => 0.2.9
+- mcs-lite-landing-web: 0.1.4 => 0.1.5 (private)
+- mcs-lite-mobile-web: 0.4.12 => 0.4.13
+- mcs-lite-scripts: 0.3.8 => 0.3.9
+- mcs-lite-theme: 0.3.7 => 0.3.8
+- mcs-lite-translation: 0.1.7 => 0.1.8
+- mcs-lite-ui: 0.4.10 => 0.4.11
+- react-intl-cra: 0.2.8 => 0.2.9
+- react-intl-inject-hoc: 0.2.9 => 0.2.10
+- stylelint-config-mcs-lite: 0.2.3 => 0.2.4
+
 #### :rocket: New Feature
 * `mcs-lite-admin-web`, `mcs-lite-translation`
   * [#464](https://github.com/MCS-Lite/mcs-lite/pull/464) feat(Admin/Data): prompt restart when clear success. ([@evenchange4](https://github.com/evenchange4))
