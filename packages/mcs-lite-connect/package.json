@@ -1,6 +1,6 @@
 {
   "name": "mcs-lite-connect",
-  "version": "0.3.9",
+  "version": "0.3.10",
   "description": "Connect MCS with WebSocket",
   "repository": "MCS-Lite/mcs-lite",
   "author": "Michael Hsu <evenchange4@gmail.com>",
@@ -24,8 +24,8 @@
   "license": "MIT",
   "devDependencies": {
     "babel-cli": "^6.26.0",
-    "babel-preset-mcs-lite": "^0.3.7",
-    "mcs-lite-scripts": "^0.3.8"
+    "babel-preset-mcs-lite": "^0.3.8",
+    "mcs-lite-scripts": "^0.3.9"
   },
   "dependencies": {
     "recompose": "^0.26.0",
