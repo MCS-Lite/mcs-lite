@@ -12,12 +12,18 @@
   "license": "MIT",
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build && react-snapshot",
+    "build": "react-scripts build && react-snap",
     "build:netlify": "REACT_APP_GA_ID='UA-58128356-6' npm run build",
     "test": "CI=true react-scripts test --env=jsdom --coverage --runInBand",
     "test:watch": "react-scripts test --env=jsdom",
     "extract:messages": "react-intl-cra 'src/**/*.js' '../mcs-lite-translation/src/mcs-lite-landing-web/messages.json'",
     "extract:pot": "react-intl-po json2pot '../mcs-lite-translation/src/mcs-lite-landing-web/messages.json' -o '../mcs-lite-translation/src/mcs-lite-landing-web/messages.pot'"
+  },
+  "reactSnap": {
+    "inlineCss": false,
+    "preloadResources": false,
+    "fixWebpackChunksIssue": true,
+    "skipThirdPartyRequests": true
   },
   "devDependencies": {
     "browser-locale": "^1.0.3",
@@ -49,8 +55,8 @@
     "react-progressive-bg-image": "^2.1.1",
     "react-router": "^3.0.2",
     "react-responsive": "^3.0.0",
-    "react-scripts": "^1.0.15",
-    "react-snapshot": "^1.2.0",
+    "react-scripts": "^1.0.16",
+    "react-snap": "^0.7.4",
     "recompose": "^0.26.0",
     "styled-components": "^2.2.3"
   }
