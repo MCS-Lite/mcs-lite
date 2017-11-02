@@ -20,7 +20,7 @@
   },
   "dependencies": {
     "stylelint-config-suitcss": "^12.0.0",
-    "stylelint-processor-styled-components": "^1.0.0"
+    "stylelint-processor-styled-components": "^0.0.4"
   },
   "peerDependencies": {
     "stylelint": "^8.0.0"
