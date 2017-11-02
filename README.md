@@ -16,8 +16,8 @@
 
 ## Requirements
 
--   node >= 8.8.1
--   npm >= 5.4.2
+-   node >= 9.0.0
+-   npm >= 5.5.1
 -   yarn >= 1.2.1
 
 ## Packages
