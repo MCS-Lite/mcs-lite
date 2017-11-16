@@ -1,7 +1,7 @@
 /* global document */
 
 import React from 'react';
-import { render } from 'react-snapshot';
+import { hydrate, render } from 'react-dom';
 import { Router, Route, useRouterHistory, IndexRedirect } from 'react-router';
 import createHistory from 'history/lib/createBrowserHistory';
 import browserLocale from 'browser-locale';
@@ -18,7 +18,12 @@ import './utils/i18n';
 
 const history = useRouterHistory(createHistory)();
 
-render(
+/**
+ * Remind: React-Snap
+ * ref: https://github.com/stereobooster/react-snap
+ */
+const rootElement = document.getElementById('root');
+const Root = (
   <ThemeProvider theme={landingTheme}>
     <BreakpointProvider breakpoints={BREAKPOINTS}>
       <Router history={history}>
@@ -28,8 +33,14 @@ render(
         </Route>
       </Router>
     </BreakpointProvider>
-  </ThemeProvider>,
-  document.getElementById('root'),
+  </ThemeProvider>
 );
+
+if (rootElement && rootElement.hasChildNodes()) {
+  hydrate(Root, rootElement);
+} else {
+  render(Root, rootElement);
+}
+
 registerServiceWorker();
 autotrack(process.env.REACT_APP_GA_ID, BREAKPOINTS);
