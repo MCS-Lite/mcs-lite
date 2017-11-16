@@ -1,5 +1,78 @@
 # MCS Lite changelogs
 
+## Released (2017-11-02)
+
+- babel-preset-mcs-lite: 0.3.7 => 0.3.8
+- mcs-lite-admin-web: 0.1.10 => 0.2.0
+- mcs-lite-connect: 0.3.9 => 0.3.10
+- mcs-lite-design: 0.2.3 => 0.2.4
+- mcs-lite-icon: 0.3.8 => 0.3.9
+- mcs-lite-introduction: 0.2.8 => 0.2.9
+- mcs-lite-landing-web: 0.1.4 => 0.1.5 (private)
+- mcs-lite-mobile-web: 0.4.12 => 0.4.13
+- mcs-lite-scripts: 0.3.8 => 0.3.9
+- mcs-lite-theme: 0.3.7 => 0.3.8
+- mcs-lite-translation: 0.1.7 => 0.1.8
+- mcs-lite-ui: 0.4.10 => 0.4.11
+- react-intl-cra: 0.2.8 => 0.2.9
+- react-intl-inject-hoc: 0.2.9 => 0.2.10
+- stylelint-config-mcs-lite: 0.2.3 => 0.2.4
+
+#### :rocket: New Feature
+* `mcs-lite-admin-web`, `mcs-lite-translation`
+  * [#464](https://github.com/MCS-Lite/mcs-lite/pull/464) feat(Admin/Data): prompt restart when clear success. ([@evenchange4](https://github.com/evenchange4))
+* `babel-preset-mcs-lite`, `mcs-lite-admin-web`, `mcs-lite-connect`, `mcs-lite-icon`, `mcs-lite-landing-web`, `mcs-lite-mobile-web`, `mcs-lite-scripts`, `mcs-lite-ui`, `react-intl-inject-hoc`, `stylelint-config-mcs-lite`
+  * [#454](https://github.com/MCS-Lite/mcs-lite/pull/454) feat: upgrade react 16 & node 8.7 & yarn 1.2.1. ([@evenchange4](https://github.com/evenchange4))
+* `mcs-lite-admin-web`, `mcs-lite-landing-web`, `mcs-lite-mobile-web`, `mcs-lite-translation`, `mcs-lite-ui`
+  * [#458](https://github.com/MCS-Lite/mcs-lite/pull/458)  feat(Admin): restart required after user updating. ([@evenchange4](https://github.com/evenchange4))
+
+#### :bug: Bug Fix
+* `mcs-lite-mobile-web`
+  * [#477](https://github.com/MCS-Lite/mcs-lite/pull/477) fix(Mobile): hide history for some datachannels. ([@evenchange4](https://github.com/evenchange4))
+* `mcs-lite-admin-web`, `mcs-lite-mobile-web`
+  * [#474](https://github.com/MCS-Lite/mcs-lite/pull/474) fix(cycle-run): rxjs dependency break the adapter. ([@evenchange4](https://github.com/evenchange4))
+* Other
+  * [#472](https://github.com/MCS-Lite/mcs-lite/pull/472) fix(Travis): yarn install with pure-lockfile. ([@evenchange4](https://github.com/evenchange4))
+* `mcs-lite-admin-web`
+  * [#470](https://github.com/MCS-Lite/mcs-lite/pull/470) fix(Admin): update checkUserAvailableAPI. ([@evenchange4](https://github.com/evenchange4))
+  * [#469](https://github.com/MCS-Lite/mcs-lite/pull/469) fix(Admin): do not prompt restart notification when it is STOP now. ([@evenchange4](https://github.com/evenchange4))
+* `mcs-lite-ui`
+  * [#457](https://github.com/MCS-Lite/mcs-lite/pull/457) fix(UI/Storybook): Error when clicking on the menu item on React 16. ([@evenchange4](https://github.com/evenchange4))
+
+#### :nail_care: Enhancement
+* `mcs-lite-landing-web`
+  * [#465](https://github.com/MCS-Lite/mcs-lite/pull/465) chore(Landing): update rc-scroll-anim 2.0. ([@evenchange4](https://github.com/evenchange4))
+* `mcs-lite-admin-web`, `mcs-lite-design`, `mcs-lite-landing-web`, `mcs-lite-mobile-web`
+  * [#456](https://github.com/MCS-Lite/mcs-lite/pull/456) feat(Design): update favicon. ([@abby1002](https://github.com/abby1002))
+
+#### :memo: Documentation
+* `mcs-lite-introduction`
+  * [#471](https://github.com/MCS-Lite/mcs-lite/pull/471) docs(intro): replace the system tray with the latest one.. ([@dariachen](https://github.com/dariachen))
+  * [#455](https://github.com/MCS-Lite/mcs-lite/pull/455) feat(intro): Add MySQL description.. ([@dariachen](https://github.com/dariachen))
+* `mcs-lite-admin-web`, `mcs-lite-translation`
+  * [#467](https://github.com/MCS-Lite/mcs-lite/pull/467) fix(Admin/Translation): update the UI strings & add fuzzy checker. ([@dariachen](https://github.com/dariachen))
+* `mcs-lite-introduction`, `mcs-lite-translation`
+  * [#466](https://github.com/MCS-Lite/mcs-lite/pull/466) feature(intro): add how to termincate lite application instruction. ([@dariachen](https://github.com/dariachen))
+
+#### :house: Internal
+* `mcs-lite-admin-web`, `mcs-lite-landing-web`, `mcs-lite-mobile-web`, `mcs-lite-ui`
+  * [#479](https://github.com/MCS-Lite/mcs-lite/pull/479) chore(ncu): ncu update & node 9. ([@evenchange4](https://github.com/evenchange4))
+* `babel-preset-mcs-lite`, `mcs-lite-admin-web`, `mcs-lite-landing-web`, `mcs-lite-mobile-web`, `mcs-lite-scripts`
+  * [#476](https://github.com/MCS-Lite/mcs-lite/pull/476) chore(ncu): ncu update. ([@evenchange4](https://github.com/evenchange4))
+* Other
+  * [#475](https://github.com/MCS-Lite/mcs-lite/pull/475) chore(lerna): switch to yarn workspace. ([@evenchange4](https://github.com/evenchange4))
+* `babel-preset-mcs-lite`, `mcs-lite-admin-web`, `mcs-lite-connect`, `mcs-lite-landing-web`, `mcs-lite-mobile-web`, `mcs-lite-scripts`, `mcs-lite-ui`
+  * [#473](https://github.com/MCS-Lite/mcs-lite/pull/473) chore(node): ncu update & update node to 8.8.1. ([@evenchange4](https://github.com/evenchange4))
+* `mcs-lite-admin-web`, `mcs-lite-translation`
+  * [#467](https://github.com/MCS-Lite/mcs-lite/pull/467) fix(Admin/Translation): update the UI strings & add fuzzy checker. ([@dariachen](https://github.com/dariachen))
+
+#### Committers: 3
+- Abby Chiu ([abby1002](https://github.com/abby1002))
+- Daria Chen ([dariachen](https://github.com/dariachen))
+- Michael Hsu ([evenchange4](https://github.com/evenchange4))
+
+----
+
 ## Released (2017-09-22)
 
 -   babel-preset-mcs-lite: 0.3.6 => 0.3.7

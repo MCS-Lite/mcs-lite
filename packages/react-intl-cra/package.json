@@ -1,6 +1,6 @@
 {
   "name": "react-intl-cra",
-  "version": "0.2.8",
+  "version": "0.2.9",
   "description": "Extract messages of `Creact React App` from the command line",
   "repository": "MCS-Lite/mcs-lite",
   "author": "Michael Hsu <evenchange4@gmail.com>",
@@ -21,6 +21,6 @@
     "build": "echo 'none'"
   },
   "dependencies": {
-    "mcs-lite-scripts": "^0.3.8"
+    "mcs-lite-scripts": "^0.3.9"
   }
 }
