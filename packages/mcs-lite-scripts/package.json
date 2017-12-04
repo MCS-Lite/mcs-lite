@@ -1,6 +1,6 @@
 {
   "name": "mcs-lite-scripts",
-  "version": "0.3.9",
+  "version": "0.3.10",
   "description": "Shared scripts and CLI used by MCS Lite",
   "repository": "MCS-Lite/mcs-lite",
   "author": "Michael Hsu <evenchange4@gmail.com>",
