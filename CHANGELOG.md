@@ -2,6 +2,16 @@
 
 ## Released (2017-12-04)
 
+- mcs-lite-admin-web: 0.2.0 => 0.2.1
+- mcs-lite-connect: 0.3.10 => 0.3.11
+- mcs-lite-icon: 0.3.9 => 0.3.10
+- mcs-lite-landing-web: 0.1.5 => 0.1.6 (private)
+- mcs-lite-mobile-web: 0.4.13 => 0.4.14
+- mcs-lite-scripts: 0.3.9 => 0.3.10
+- mcs-lite-ui: 0.4.11 => 0.4.12
+- react-intl-cra: 0.2.9 => 0.2.10
+- react-intl-inject-hoc: 0.2.10 => 0.2.11
+
 #### :bug: Bug Fix
 * `mcs-lite-admin-web`, `mcs-lite-mobile-web`, `mcs-lite-scripts`, `mcs-lite-ui`
   * [#482](https://github.com/MCS-Lite/mcs-lite/pull/482) fix(rxjs): lock version 5.5.2. ([@evenchange4](https://github.com/evenchange4))
