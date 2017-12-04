@@ -1,5 +1,20 @@
 # MCS Lite changelogs
 
+## Released (2017-12-04)
+
+#### :bug: Bug Fix
+* `mcs-lite-admin-web`, `mcs-lite-mobile-web`, `mcs-lite-scripts`, `mcs-lite-ui`
+  * [#482](https://github.com/MCS-Lite/mcs-lite/pull/482) fix(rxjs): lock version 5.5.2. ([@evenchange4](https://github.com/evenchange4))
+
+#### :house: Internal
+* `mcs-lite-landing-web`
+  * [#478](https://github.com/MCS-Lite/mcs-lite/pull/478) fix(Landing): switch to react-snap. ([@evenchange4](https://github.com/evenchange4))
+
+#### Committers: 1
+- Michael Hsu ([evenchange4](https://github.com/evenchange4))
+
+----
+
 ## Released (2017-11-02)
 
 - babel-preset-mcs-lite: 0.3.7 => 0.3.8
