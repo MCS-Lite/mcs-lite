@@ -10055,7 +10055,7 @@ rxjs@5.4.x:
   dependencies:
     symbol-observable "^1.0.1"
 
-rxjs@^5.4.3, rxjs@^5.5.2:
+rxjs@5.5.2, rxjs@^5.4.3:
   version "5.5.2"
   resolved "https://registry.yarnpkg.com/rxjs/-/rxjs-5.5.2.tgz#28d403f0071121967f18ad665563255d54236ac3"
   dependencies:
