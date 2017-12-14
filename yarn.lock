@@ -9107,6 +9107,16 @@ react-inspector@^2.2.1:
     babel-runtime "^6.26.0"
     is-dom "^1.0.9"
 
+react-intl-cra@^0.2.12:
+  version "0.2.12"
+  resolved "https://registry.yarnpkg.com/react-intl-cra/-/react-intl-cra-0.2.12.tgz#bf2aca0d70cf5d6057c1e35d668eed76245218e5"
+  dependencies:
+    babel-core "^6.26.0"
+    babel-plugin-react-intl "^2.3.1"
+    babel-preset-react-app "^3.1.0"
+    glob "^7.1.2"
+    ramda "^0.25.0"
+
 react-intl-po@^2.1.1:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/react-intl-po/-/react-intl-po-2.1.1.tgz#90e42b83f34a2a3b142f6fbb22f69b558d877354"
