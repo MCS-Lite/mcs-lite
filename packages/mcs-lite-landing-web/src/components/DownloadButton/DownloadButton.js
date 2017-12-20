@@ -11,42 +11,55 @@ const StyledButton = styled(Button)`
   width: 220px;
 `;
 
-const DownloadButton = ({ getMessages: t }) => {
-  const osName = getOSName();
-  const fileName = getFileName().split('.')[0];
+class DownloadButton extends React.PureComponent {
+  static propTypes = {
+    // React-intl I18n
+    getMessages: PropTypes.func.isRequired,
+  };
 
-  return (
-    <div>
-      <A
-        href={`//micro-github-latest.now.sh/mcs-lite/mcs-lite-app/${fileName}/latest`}
-        target="_blank"
-        rel="noreferrer noopener"
-      >
-        <StyledButton>
-          {t('downloadFor')} {osName}
-        </StyledButton>
-      </A>
+  state = {
+    osName: getOSName(),
+    fileName: getFileName().split('.')[0],
+  };
 
-      <SpaceTop height={10}>
-        <Small>
-          {t('or')}&nbsp;
-          <A
-            href="//github.com/mcs-lite/mcs-lite-app/releases/latest"
-            target="_blank"
-            rel="noreferrer noopener"
-          >
-            {t('others')}
-          </A>
-        </Small>
-      </SpaceTop>
-    </div>
-  );
-};
+  componentDidMount() {
+    this.setState(() => ({ // eslint-disable-line
+      osName: getOSName(),
+      fileName: getFileName().split('.')[0],
+    }));
+  }
 
-DownloadButton.displayName = 'DownloadButton';
-DownloadButton.propTypes = {
-  // React-intl I18n
-  getMessages: PropTypes.func.isRequired,
-};
+  render() {
+    const { getMessages: t } = this.props;
+    const { osName, fileName } = this.state;
+
+    return (
+      <div>
+        <A
+          href={`//micro-github-latest.now.sh/mcs-lite/mcs-lite-app/${fileName}/latest`}
+          target="_blank"
+          rel="noreferrer noopener"
+        >
+          <StyledButton>
+            {t('downloadFor')} {osName}
+          </StyledButton>
+        </A>
+
+        <SpaceTop height={10}>
+          <Small>
+            {t('or')}&nbsp;
+            <A
+              href="//github.com/mcs-lite/mcs-lite-app/releases/latest"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              {t('others')}
+            </A>
+          </Small>
+        </SpaceTop>
+      </div>
+    );
+  }
+}
 
 export default DownloadButton;
