@@ -2,6 +2,6 @@
 
 exports[`should render Container correctly with HOC 1`] = `
 <pure(IntlProvider)>
-  <InjectIntl(withPropsOnChange(pure(DownloadButton))) />
+  <InjectIntl(withPropsOnChange(DownloadButton)) />
 </pure(IntlProvider)>
 `;

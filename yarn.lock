@@ -2357,7 +2357,7 @@ classnames@2.2.5, classnames@^2.2.3, classnames@^2.2.5:
   version "2.2.5"
   resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.2.5.tgz#fb3801d453467649ef3603c7d61a02bd129bde6d"
 
-clean-css@4.1.x:
+clean-css@4.1.x, clean-css@^4.1.9:
   version "4.1.9"
   resolved "https://registry.yarnpkg.com/clean-css/-/clean-css-4.1.9.tgz#35cee8ae7687a49b98034f70de00c4edd3826301"
   dependencies:
@@ -3018,13 +3018,6 @@ css-tokenize@^1.0.1:
     inherits "^2.0.1"
     readable-stream "^1.0.33"
 
-css-tree@1.0.0-alpha24:
-  version "1.0.0-alpha24"
-  resolved "https://registry.yarnpkg.com/css-tree/-/css-tree-1.0.0-alpha24.tgz#869911837755e8b81c48efb4359a7f88521127fe"
-  dependencies:
-    mdn-data "^1.0.0"
-    source-map "^0.5.3"
-
 css-tree@1.0.0-alpha25:
   version "1.0.0-alpha25"
   resolved "https://registry.yarnpkg.com/css-tree/-/css-tree-1.0.0-alpha25.tgz#1bbfabfbf6eeef4f01d9108ff2edd0be2fe35597"
@@ -3086,7 +3079,7 @@ cssesc@^0.1.0:
     postcss-value-parser "^3.2.3"
     postcss-zindex "^2.0.1"
 
-csso@^3.2.0:
+csso@3.3.1:
   version "3.3.1"
   resolved "https://registry.yarnpkg.com/csso/-/csso-3.3.1.tgz#e069a8f52adcf53685a8a7374256ccbc22c6ce3e"
   dependencies:
@@ -7133,12 +7126,12 @@ min-document@^2.19.0:
   dependencies:
     dom-walk "^0.1.0"
 
-minimalcss@^0.2.4:
-  version "0.2.4"
-  resolved "https://registry.yarnpkg.com/minimalcss/-/minimalcss-0.2.4.tgz#1e0312da17b6676e75ff1f902bf02d52d3da2629"
+minimalcss@^0.3.1:
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/minimalcss/-/minimalcss-0.3.1.tgz#d893604080a64c8e12122316dbb4e37e925e5d9e"
   dependencies:
-    css-tree "1.0.0-alpha24"
-    csso "^3.2.0"
+    css-tree "1.0.0-alpha25"
+    csso "3.3.1"
     filesize "^3.5.10"
     minimist "^1.2.0"
     puppeteer "^0.10.2"
@@ -9338,19 +9331,20 @@ react-smooth@0.3.0:
     raf "^3.2.0"
     react-transition-group "^1.1.1"
 
-react-snap@^0.7.4:
-  version "0.7.4"
-  resolved "https://registry.yarnpkg.com/react-snap/-/react-snap-0.7.4.tgz#dddf09fecb36899f4a9a69cacaa75d7d589139a2"
+react-snap@^1.4.0:
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/react-snap/-/react-snap-1.4.0.tgz#eee141f54b33d0317c1141dbe3d5454d98969a14"
   dependencies:
+    clean-css "^4.1.9"
     express "^4.16.1"
     express-history-api-fallback "^2.2.1"
     highland "^2.11.1"
     html-minifier "^3.5.5"
-    minimalcss "^0.2.4"
+    minimalcss "^0.3.1"
     mkdirp "^0.5.1"
     puppeteer "^0.11.0"
     serve-static "^1.13.1"
-    sourcemapped-stacktrace-node "^2.0.4"
+    sourcemapped-stacktrace-node "^2.1.5"
 
 react-split-pane@^0.1.68:
   version "0.1.68"
@@ -10418,9 +10412,9 @@ source-map@^0.6.1, source-map@~0.6.1:
   version "0.6.1"
   resolved "https://registry.yarnpkg.com/source-map/-/source-map-0.6.1.tgz#74722af32e9614e9c287a8d0bbde48b5e2f1a263"
 
-sourcemapped-stacktrace-node@^2.0.4:
-  version "2.0.4"
-  resolved "https://registry.yarnpkg.com/sourcemapped-stacktrace-node/-/sourcemapped-stacktrace-node-2.0.4.tgz#63377c3459823b52662850638750ac8cb107ed5d"
+sourcemapped-stacktrace-node@^2.1.5:
+  version "2.1.5"
+  resolved "https://registry.yarnpkg.com/sourcemapped-stacktrace-node/-/sourcemapped-stacktrace-node-2.1.5.tgz#b9513da232941ad34d22fef949f708e514ffb054"
   dependencies:
     es6-promise "^4.1.1"
     isomorphic-fetch "^2.2.1"

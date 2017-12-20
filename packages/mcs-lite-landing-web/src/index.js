@@ -1,7 +1,7 @@
 /* global document */
 
 import React from 'react';
-import { hydrate, render } from 'react-dom';
+import { render } from 'react-dom';
 import { Router, Route, useRouterHistory, IndexRedirect } from 'react-router';
 import createHistory from 'history/lib/createBrowserHistory';
 import browserLocale from 'browser-locale';
@@ -23,7 +23,7 @@ const history = useRouterHistory(createHistory)();
  * ref: https://github.com/stereobooster/react-snap
  */
 const rootElement = document.getElementById('root');
-const Root = (
+const root = (
   <ThemeProvider theme={landingTheme}>
     <BreakpointProvider breakpoints={BREAKPOINTS}>
       <Router history={history}>
@@ -37,9 +37,10 @@ const Root = (
 );
 
 if (rootElement && rootElement.hasChildNodes()) {
-  hydrate(Root, rootElement);
+  // TODO: We should use hydrate() here but got some problems with re-render
+  render(root, rootElement);
 } else {
-  render(Root, rootElement);
+  render(root, rootElement);
 }
 
 registerServiceWorker();
