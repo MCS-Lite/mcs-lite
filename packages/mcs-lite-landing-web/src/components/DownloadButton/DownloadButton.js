@@ -1,3 +1,4 @@
+/* eslint react/no-did-mount-set-state: 0 */
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
@@ -23,7 +24,7 @@ class DownloadButton extends React.PureComponent {
   };
 
   componentDidMount() {
-    this.setState(() => ({ // eslint-disable-line
+    this.setState(() => ({
       osName: getOSName(),
       fileName: getFileName().split('.')[0],
     }));
