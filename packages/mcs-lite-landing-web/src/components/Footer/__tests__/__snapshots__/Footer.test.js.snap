@@ -56,7 +56,7 @@ exports[`should renders <Footer> correctly 1`] = `
             color="white"
           >
             © 
-            2017
+            mockYear
              
             desc
           </P>
