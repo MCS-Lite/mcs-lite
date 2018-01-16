@@ -20,7 +20,7 @@ export const dataChannelTypeMapper: DCTypeMapper = (name, type) =>
     R.concat(R.toUpper(name)),
   )(type);
 
-export const areaChartTypeMapper: ChartTypeMapper = R.ifElse(
+export const areaChartTypeMapper: ChartTypeMapper = (R.ifElse: any)(
   R.contains(R.__, ['Switch', 'GPIO']), // eslint-disable-line
   R.always('step'),
   R.always('linear'),

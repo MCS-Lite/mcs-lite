@@ -1,25 +1,12 @@
 [ignore]
-# We vendor our src directory, which is not needed for type-checking
-.*/node_modules/styled-components/.*
-.*/node_modules/polished/.*
-.*/node_modules/react-motion/.*
-.*/node_modules/@storybook/ui/node_modules/.*
-.*/stylelint/.*.js
-.*/dangerfile.js
-.*/npm/.*
-.*/npmi/.*
-.*/conventional-changelog-core/.*
-.*/react-scripts/.*
-.*/config-chain/.*
-.*/license-checker/.*
-.*/node_modules/react-topbar-progress-indicator/.*
-.*/.yarn-cache/*
-.*/node_modules/radium/*
+.*/node_modules/.*
 
 [include]
 
 [libs]
-# This is where your own flow-typed libdefs go
-flow-typed
+
+[lints]
 
 [options]
+
+[strict]
