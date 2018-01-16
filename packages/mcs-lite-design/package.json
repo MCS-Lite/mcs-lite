@@ -21,6 +21,6 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "svgo": "^0.7.2"
+    "svgo": "0.7.2"
   }
 }
