@@ -1,22 +1,22 @@
 /* eslint react/no-multi-comp: 0 */
 
-import React from 'react';
-import { storiesOf } from '@storybook/react';
-import { withInfo } from '@storybook/addon-info';
-import { action } from '@storybook/addon-actions';
-import styled from 'styled-components';
-import { MenuItem, Menu } from '../Menu';
-import Button from '../Button';
-import Overlay from '.';
-import A from '../A';
+import React from "react";
+import { storiesOf } from "@storybook/react";
+import { withInfo } from "@storybook/addon-info";
+import { action } from "@storybook/addon-actions";
+import styled from "styled-components";
+import { MenuItem, Menu } from "../Menu";
+import Button from "../Button";
+import Overlay from ".";
+import A from "../A";
 
-storiesOf('Overlay', module)
+storiesOf("Overlay", module)
   .add(
-    'API',
+    "API",
     withInfo({
-      text: 'state = { show: true }',
+      text: "state = { show: true }",
       inline: true,
-      propTables: [Overlay],
+      propTables: [Overlay]
     })(() => {
       class SimpleOverlay extends React.Component {
         state = { show: true, target: undefined };
@@ -34,35 +34,36 @@ storiesOf('Overlay', module)
                 Hover me
               </A>
 
-              {this.state.show &&
+              {this.state.show && (
                 <Overlay target={this.state.target} {...this.props}>
                   <div key="div">This is overlay content.</div>
-                </Overlay>}
+                </Overlay>
+              )}
             </div>
           );
         }
       }
 
       return (
-        <SimpleOverlay alignConfig={{ points: ['cl', 'cr'], offset: [5, 0] }} />
+        <SimpleOverlay alignConfig={{ points: ["cl", "cr"], offset: [5, 0] }} />
       );
-    }),
+    })
   )
   .add(
-    'Dropdown Menu',
+    "Dropdown Menu",
     withInfo({
-      text: 'With onHide function for rootClose',
+      text: "With onHide function for rootClose",
       inline: true,
-      propTables: [Overlay],
+      propTables: [Overlay]
     })(() => {
       const Wrapper = styled.div`
-    display: flex;
-    justify-content: space-between;
-  `;
+        display: flex;
+        justify-content: space-between;
+      `;
 
       const StyledMenu = styled(Menu)`
-    width: 300px;
-  `;
+        width: 300px;
+      `;
 
       class OverlayMenu extends React.Component {
         state = { show: false, target: undefined };
@@ -76,17 +77,18 @@ storiesOf('Overlay', module)
                 Button
               </Button>
 
-              {this.state.show &&
+              {this.state.show && (
                 <Overlay
                   target={this.state.target}
                   onClickOutSide={this.onHide}
                   {...this.props}
                 >
                   <StyledMenu key="menu">
-                    <MenuItem onClick={action('click 1')}>1</MenuItem>
-                    <MenuItem onClick={action('click 2')}>2</MenuItem>
+                    <MenuItem onClick={action("click 1")}>1</MenuItem>
+                    <MenuItem onClick={action("click 2")}>2</MenuItem>
                   </StyledMenu>
-                </Overlay>}
+                </Overlay>
+              )}
             </div>
           );
         }
@@ -95,13 +97,13 @@ storiesOf('Overlay', module)
       return (
         <Wrapper>
           <OverlayMenu
-            alignConfig={{ points: ['tl', 'bl'], offset: [0, 16] }}
+            alignConfig={{ points: ["tl", "bl"], offset: [0, 16] }}
           />
           <OverlayMenu
-            alignConfig={{ points: ['tc', 'bc'], offset: [0, 16] }}
+            alignConfig={{ points: ["tc", "bc"], offset: [0, 16] }}
           />
           <OverlayMenu />
         </Wrapper>
       );
-    }),
+    })
   );

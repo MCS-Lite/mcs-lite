@@ -10,9 +10,7 @@
   },
   "license": "MIT",
   "homepage": "http://localhost:3002/admin",
-  "files": [
-    "build"
-  ],
+  "files": ["build"],
   "proxy": {
     "/api": {
       "target": "http://localhost:3002"
@@ -23,23 +21,26 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "REACT_APP_VERSION=$(node -pe 'require(\"./package.json\").version') react-scripts build",
+    "build":
+      "REACT_APP_VERSION=$(node -pe 'require(\"./package.json\").version') react-scripts build",
     "test": "CI=true react-scripts test --env=jsdom --coverage --runInBand",
     "test:watch": "react-scripts test --env=jsdom",
-    "extract:messages": "react-intl-cra 'src/**/*.js' -o '../mcs-lite-translation/src/mcs-lite-admin-web/messages.json'",
-    "extract:pot": "react-intl-po json2pot '../mcs-lite-translation/src/mcs-lite-admin-web/messages.json' -o '../mcs-lite-translation/src/mcs-lite-admin-web/messages.pot'",
+    "extract:messages":
+      "react-intl-cra 'src/**/*.js' -o '../mcs-lite-translation/src/mcs-lite-admin-web/messages.json'",
+    "extract:pot":
+      "react-intl-po json2pot '../mcs-lite-translation/src/mcs-lite-admin-web/messages.json' -o '../mcs-lite-translation/src/mcs-lite-admin-web/messages.pot'",
     "prepack": "npm run build"
   },
   "devDependencies": {
     "@cycle/http": "14.8.0",
-    "@cycle/rxjs-run": "7.3.0",
-    "@cycle/storage": "4.1.1",
-    "@cycle/time": "0.8.0",
+    "@cycle/rxjs-run": "8.0.0",
+    "@cycle/storage": "5.0.3",
+    "@cycle/time": "0.12.0",
     "browser-locale": "1.0.3",
     "enzyme": "3.3.0",
     "enzyme-adapter-react-16": "1.1.1",
     "enzyme-to-json": "3.3.0",
-    "history": "3.3.0",
+    "history": "4.7.2",
     "jest-styled-components": "4.10.0",
     "mcs-lite-icon": "^0.3.10",
     "mcs-lite-theme": "^0.3.8",
@@ -51,18 +52,19 @@
     "raf": "3.4.0",
     "ramda": "0.25.0",
     "react": "16.2.0",
-    "react-codemirror": "git://github.com/skidding/react-codemirror.git#106-fix-update",
+    "react-codemirror":
+      "git://github.com/skidding/react-codemirror.git#106-fix-update",
     "react-dom": "16.2.0",
     "react-helmet": "5.2.0",
     "react-intl": "2.4.0",
-    "react-intl-cra": "^0.3.0",
+    "react-intl-cra": "^0.3.1",
     "react-intl-inject-hoc": "^0.2.11",
     "react-intl-po": "2.1.2",
     "react-loadable": "5.3.1",
     "react-motion-ui-pack": "0.10.3",
     "react-overlays": "0.8.3",
     "react-redux": "5.0.6",
-    "react-router": "3.2.0",
+    "react-router": "4.2.0",
     "react-router-redux": "4.0.8",
     "react-router-scroll": "0.4.4",
     "react-scripts": "1.1.0",
@@ -73,7 +75,7 @@
     "redux-cycles": "0.4.1",
     "redux-freeze": "0.1.5",
     "redux-mock-store": "1.4.0",
-    "rxjs": "5.5.2",
+    "rxjs": "5.5.6",
     "styled-components": "2.4.0",
     "uuid": "3.1.0",
     "validator": "9.2.0"

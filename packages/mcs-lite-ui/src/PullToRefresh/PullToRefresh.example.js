@@ -1,9 +1,9 @@
-import React from 'react';
-import styled from 'styled-components';
-import { storiesOf } from '@storybook/react';
-import { withInfo } from '@storybook/addon-info';
-import Heading from '../Heading';
-import PullToRefresh from '.';
+import React from "react";
+import styled from "styled-components";
+import { storiesOf } from "@storybook/react";
+import { withInfo } from "@storybook/addon-info";
+import Heading from "../Heading";
+import PullToRefresh from ".";
 
 const Body = styled.div`
   overflow: hidden;
@@ -38,9 +38,7 @@ class StatefulPullToRefresh extends React.Component {
     return (
       <PullToRefresh isLoading={this.state.isLoading} onPull={this.onPull}>
         <Content>
-          <StyledHeading color="white">
-            Pull me down
-          </StyledHeading>
+          <StyledHeading color="white">Pull me down</StyledHeading>
           <StyledHeading color="white" level={3}>
             (API will respond after 3 seconds.)
           </StyledHeading>
@@ -50,15 +48,15 @@ class StatefulPullToRefresh extends React.Component {
   }
 }
 
-storiesOf('PullToRefresh', module).add(
-  'API',
+storiesOf("PullToRefresh", module).add(
+  "API",
   withInfo({
-    text: '',
+    text: "",
     inline: true,
-    propTables: [PullToRefresh],
-  })(() =>
+    propTables: [PullToRefresh]
+  })(() => (
     <Body>
       <StatefulPullToRefresh />
-    </Body>,
-  ),
+    </Body>
+  ))
 );

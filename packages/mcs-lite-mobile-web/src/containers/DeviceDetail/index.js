@@ -1,13 +1,13 @@
 /* global window */
 
-import { connect } from 'react-redux';
-import * as R from 'ramda';
-import compose from 'recompose/compose';
-import { withGetMessages } from 'react-intl-inject-hoc';
-import { connectSocket } from 'mcs-lite-connect';
-import messages from './messages';
-import { actions } from '../../modules/devices';
-import DeviceDetail from './DeviceDetail';
+import { connect } from "react-redux";
+import * as R from "ramda";
+import compose from "recompose/compose";
+import { withGetMessages } from "react-intl-inject-hoc";
+import { connectSocket } from "mcs-lite-connect";
+import messages from "./messages";
+import { actions } from "../../modules/devices";
+import DeviceDetail from "./DeviceDetail";
 
 export const mapStateToProps = ({ devices, ui }, { params: { deviceId } }) => ({
   deviceId,
@@ -15,16 +15,17 @@ export const mapStateToProps = ({ devices, ui }, { params: { deviceId } }) => ({
   isLoading: ui.isLoading,
 
   // For WebSocket Config
-  deviceKey: R.pathOr(undefined, [deviceId, 'deviceKey'])(devices),
+  deviceKey: R.pathOr(undefined, [deviceId, "deviceKey"])(devices)
 });
 export const mapDispatchToProps = {
   fetchDeviceDetail: actions.fetchDeviceDetail,
-  setDatapoint: actions.setDatapoint,
+  setDatapoint: actions.setDatapoint
 };
 
-const protocol = /https/.test(window.location.protocol) ? 'wss' : 'ws';
-const wsHost = `${protocol}://${window.location
-  .hostname}:${window.SOCKET_PORT}`;
+const protocol = /https/.test(window.location.protocol) ? "wss" : "ws";
+const wsHost = `${protocol}://${window.location.hostname}:${
+  window.SOCKET_PORT
+}`;
 
 export default compose(
   connect(mapStateToProps, mapDispatchToProps),
@@ -38,8 +39,8 @@ export default compose(
     ({ readyState, send, createWebSocket }) => ({
       sendMessage: send,
       isWebSocketClose: readyState.sender === 3 || readyState.viewer === 3,
-      reconnect: createWebSocket,
-    }),
+      reconnect: createWebSocket
+    })
   ),
-  withGetMessages(messages, 'DeviceDetail'),
+  withGetMessages(messages, "DeviceDetail")
 )(DeviceDetail);

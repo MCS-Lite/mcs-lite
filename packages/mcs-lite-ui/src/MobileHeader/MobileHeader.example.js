@@ -1,16 +1,16 @@
-import React from 'react';
-import { storiesOf } from '@storybook/react';
-import { withInfo } from '@storybook/addon-info';
-import { IconMenu, IconSearch } from 'mcs-lite-icon';
-import { MobileHeader, MobileHeaderIcon } from '.';
+import React from "react";
+import { storiesOf } from "@storybook/react";
+import { withInfo } from "@storybook/addon-info";
+import { IconMenu, IconSearch } from "mcs-lite-icon";
+import { MobileHeader, MobileHeaderIcon } from ".";
 
-storiesOf('MobileHeader', module)
+storiesOf("MobileHeader", module)
   .add(
-    'API',
+    "API",
     withInfo({
-      text: '',
-      inline: true,
-    })(() =>
+      text: "",
+      inline: true
+    })(() => (
       <MobileHeader
         title="Device List"
         leftChildren={
@@ -18,15 +18,15 @@ storiesOf('MobileHeader', module)
             <IconMenu />
           </MobileHeaderIcon>
         }
-      />,
-    ),
+      />
+    ))
   )
   .add(
-    'With right props',
+    "With right props",
     withInfo({
-      text: '',
-      inline: true,
-    })(() =>
+      text: "",
+      inline: true
+    })(() => (
       <MobileHeader
         title="Device List"
         leftChildren={
@@ -39,6 +39,6 @@ storiesOf('MobileHeader', module)
             <IconSearch />
           </MobileHeaderIcon>
         }
-      />,
-    ),
+      />
+    ))
   );

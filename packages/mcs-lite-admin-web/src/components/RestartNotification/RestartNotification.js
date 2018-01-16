@@ -1,10 +1,10 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import styled from 'styled-components';
-import Toast, { StyledP } from 'mcs-lite-ui/lib/Toast/Toast';
-import A from 'mcs-lite-ui/lib/A';
-import Transition from 'react-motion-ui-pack';
-import { NAV_WIDTH } from '../../containers/DashboardLayout/styled-components';
+import React from "react";
+import PropTypes from "prop-types";
+import styled from "styled-components";
+import Toast, { StyledP } from "mcs-lite-ui/lib/Toast/Toast";
+import A from "mcs-lite-ui/lib/A";
+import Transition from "react-motion-ui-pack";
+import { NAV_WIDTH } from "../../containers/DashboardLayout/styled-components";
 
 const Container = styled.div`
   height: ${props => props.theme.height.normal};
@@ -26,7 +26,7 @@ const StyledToast = styled(Toast)`
   }
 `;
 
-const RestartNotification = ({ onClick, getMessages: t }) =>
+const RestartNotification = ({ onClick, getMessages: t }) => (
   <Container>
     <Fixed>
       <Transition
@@ -35,24 +35,21 @@ const RestartNotification = ({ onClick, getMessages: t }) =>
         leave={{ translateY: -10, opacity: 0.5 }}
       >
         <StyledToast key="StyledToast" kind="warning">
-          <div>
-            {t('restartRequired')}
-          </div>
-          <A onClick={onClick}>
-            {t('restart')}
-          </A>
+          <div>{t("restartRequired")}</div>
+          <A onClick={onClick}>{t("restart")}</A>
         </StyledToast>
       </Transition>
     </Fixed>
-  </Container>;
+  </Container>
+);
 
-RestartNotification.displayName = 'RestartNotification';
+RestartNotification.displayName = "RestartNotification";
 RestartNotification.propTypes = {
   // Props
   onClick: PropTypes.func.isRequired,
 
   // React-intl I18n
-  getMessages: PropTypes.func.isRequired,
+  getMessages: PropTypes.func.isRequired
 };
 
 export default RestartNotification;

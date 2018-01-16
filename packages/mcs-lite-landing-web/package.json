@@ -16,8 +16,10 @@
     "build:netlify": "REACT_APP_GA_ID='UA-58128356-6' npm run build",
     "test": "CI=true react-scripts test --env=jsdom --coverage --runInBand",
     "test:watch": "react-scripts test --env=jsdom",
-    "extract:messages": "react-intl-cra 'src/**/*.js' -o '../mcs-lite-translation/src/mcs-lite-landing-web/messages.json'",
-    "extract:pot": "react-intl-po json2pot '../mcs-lite-translation/src/mcs-lite-landing-web/messages.json' -o '../mcs-lite-translation/src/mcs-lite-landing-web/messages.pot'"
+    "extract:messages":
+      "react-intl-cra 'src/**/*.js' -o '../mcs-lite-translation/src/mcs-lite-landing-web/messages.json'",
+    "extract:pot":
+      "react-intl-po json2pot '../mcs-lite-translation/src/mcs-lite-landing-web/messages.json' -o '../mcs-lite-translation/src/mcs-lite-landing-web/messages.pot'"
   },
   "reactSnap": {
     "inlineCss": false,
@@ -31,7 +33,7 @@
     "enzyme-adapter-react-16": "1.1.1",
     "enzyme-to-json": "3.3.0",
     "hedron": "0.7.1",
-    "history": "3.3.0",
+    "history": "4.7.2",
     "jest-styled-components": "4.10.0",
     "mcs-lite-icon": "^0.3.10",
     "mcs-lite-theme": "^0.3.8",
@@ -48,13 +50,13 @@
     "react-dom": "16.2.0",
     "react-helmet": "5.2.0",
     "react-intl": "2.4.0",
-    "react-intl-cra": "^0.3.0",
+    "react-intl-cra": "^0.3.1",
     "react-intl-inject-hoc": "^0.2.11",
     "react-intl-po": "2.1.2",
     "react-loadable": "5.3.1",
     "react-progressive-bg-image": "2.1.2",
-    "react-responsive": "3.0.0",
-    "react-router": "3.2.0",
+    "react-responsive": "4.0.3",
+    "react-router": "4.2.0",
     "react-scripts": "1.1.0",
     "react-snap": "1.9.1",
     "recompose": "0.26.0",

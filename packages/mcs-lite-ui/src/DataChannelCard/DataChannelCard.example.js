@@ -1,9 +1,9 @@
-import React from 'react';
-import styled from 'styled-components';
-import { storiesOf } from '@storybook/react';
-import { withInfo } from '@storybook/addon-info';
-import DataChannelCard, { Footer } from './DataChannelCard';
-import Switch from '../Switch';
+import React from "react";
+import styled from "styled-components";
+import { storiesOf } from "@storybook/react";
+import { withInfo } from "@storybook/addon-info";
+import DataChannelCard, { Footer } from "./DataChannelCard";
+import Switch from "../Switch";
 
 const StyledDataChannelCard = styled(DataChannelCard)`
   ${Footer} {
@@ -11,13 +11,13 @@ const StyledDataChannelCard = styled(DataChannelCard)`
   }
 `;
 
-storiesOf('DataChannelCard', module)
+storiesOf("DataChannelCard", module)
   .add(
-    'API',
+    "API",
     withInfo({
-      text: 'MCS data channel 的卡片。',
-      inline: true,
-    })(() =>
+      text: "MCS data channel 的卡片。",
+      inline: true
+    })(() => (
       <DataChannelCard
         title="Title"
         subtitle="Last data point time : 2015-06-12 12:00"
@@ -25,19 +25,19 @@ storiesOf('DataChannelCard', module)
         header={<a href="">Link</a>}
       >
         Children
-      </DataChannelCard>,
-    ),
+      </DataChannelCard>
+    ))
   )
   .add(
-    'Custom width and height',
+    "Custom width and height",
     withInfo({
-      text: '固定寬度與高度。',
-      inline: true,
+      text: "固定寬度與高度。",
+      inline: true
     })(() => {
       const MCSSyledCard = styled(DataChannelCard)`
-    width: 300px;
-    height: 400px;
-  `;
+        width: 300px;
+        height: 400px;
+      `;
 
       return (
         <MCSSyledCard
@@ -49,29 +49,29 @@ storiesOf('DataChannelCard', module)
           <Switch />
         </MCSSyledCard>
       );
-    }),
+    })
   )
   .add(
-    'Without description',
+    "Without description",
     withInfo({
-      text: '',
-      inline: true,
-    })(() =>
+      text: "",
+      inline: true
+    })(() => (
       <DataChannelCard
         header="V"
         title="Title"
         subtitle="Last data point time : 2015-06-12 12:00"
       >
         <Switch />
-      </DataChannelCard>,
-    ),
+      </DataChannelCard>
+    ))
   )
   .add(
-    'With empty description',
+    "With empty description",
     withInfo({
-      text: '',
-      inline: true,
-    })(() =>
+      text: "",
+      inline: true
+    })(() => (
       <DataChannelCard
         header="V"
         title="Title"
@@ -79,15 +79,15 @@ storiesOf('DataChannelCard', module)
         description=""
       >
         <Switch />
-      </DataChannelCard>,
-    ),
+      </DataChannelCard>
+    ))
   )
   .add(
-    'With Component selector',
+    "With Component selector",
     withInfo({
-      text: '',
-      inline: true,
-    })(() =>
+      text: "",
+      inline: true
+    })(() => (
       <StyledDataChannelCard
         header="V"
         title="Title"
@@ -95,6 +95,6 @@ storiesOf('DataChannelCard', module)
         description="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
       >
         Children
-      </StyledDataChannelCard>,
-    ),
+      </StyledDataChannelCard>
+    ))
   );

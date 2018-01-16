@@ -1,33 +1,33 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { Row, Column } from 'hedron';
-import Heading from 'mcs-lite-ui/lib/Heading';
-import P from 'mcs-lite-ui/lib/P';
-import B from 'mcs-lite-ui/lib/B';
-import A from 'mcs-lite-ui/lib/A';
-import Button from 'mcs-lite-ui/lib/Button';
-import TextCenter from 'mcs-lite-ui/lib/TextCenter';
-import SpaceTop from 'mcs-lite-ui/lib/SpaceTop';
-import LazyloadOnce from 'mcs-lite-ui/lib/LazyloadOnce';
-import Loadable from 'react-loadable';
-import { StyledSectionRow, CardWrapper } from './styled-components';
+import React from "react";
+import PropTypes from "prop-types";
+import { Row, Column } from "hedron";
+import Heading from "mcs-lite-ui/lib/Heading";
+import P from "mcs-lite-ui/lib/P";
+import B from "mcs-lite-ui/lib/B";
+import A from "mcs-lite-ui/lib/A";
+import Button from "mcs-lite-ui/lib/Button";
+import TextCenter from "mcs-lite-ui/lib/TextCenter";
+import SpaceTop from "mcs-lite-ui/lib/SpaceTop";
+import LazyloadOnce from "mcs-lite-ui/lib/LazyloadOnce";
+import Loadable from "react-loadable";
+import { StyledSectionRow, CardWrapper } from "./styled-components";
 
 const HEIGHT = 170;
 
 const LoadableImageOpenSource = Loadable({
-  loader: () => import(/* webpackChunkName: "Section" */ './ImageOpenSource'),
-  loading: () => null,
+  loader: () => import(/* webpackChunkName: "Section" */ "./ImageOpenSource"),
+  loading: () => null
 });
 const LoadableImageImageCustom = Loadable({
-  loader: () => import(/* webpackChunkName: "Section" */ './ImageCustom'),
-  loading: () => null,
+  loader: () => import(/* webpackChunkName: "Section" */ "./ImageCustom"),
+  loading: () => null
 });
 
-const Section4 = ({ getMessages: t }) =>
+const Section4 = ({ getMessages: t }) => (
   <StyledSectionRow>
     <Column xs={12}>
       <TextCenter>
-        <Heading level={2}>{t('title')}</Heading>
+        <Heading level={2}>{t("title")}</Heading>
       </TextCenter>
     </Column>
 
@@ -41,11 +41,11 @@ const Section4 = ({ getMessages: t }) =>
 
           <SpaceTop height={20}>
             <Heading level={3}>
-              <B>{t('github.title')}</B>
+              <B>{t("github.title")}</B>
             </Heading>
           </SpaceTop>
           <SpaceTop height={10}>
-            <P>{t('github.desc')}</P>
+            <P>{t("github.desc")}</P>
           </SpaceTop>
 
           <A
@@ -53,7 +53,7 @@ const Section4 = ({ getMessages: t }) =>
             target="_blank"
             rel="noreferrer noopener"
           >
-            <Button>{t('github.button')}</Button>
+            <Button>{t("github.button")}</Button>
           </A>
         </CardWrapper>
       </Column>
@@ -67,11 +67,11 @@ const Section4 = ({ getMessages: t }) =>
 
           <SpaceTop height={20}>
             <Heading level={3}>
-              <B>{t('custom.title')}</B>
+              <B>{t("custom.title")}</B>
             </Heading>
           </SpaceTop>
           <SpaceTop height={10}>
-            <P>{t('custom.desc')}</P>
+            <P>{t("custom.desc")}</P>
           </SpaceTop>
 
           <A
@@ -79,17 +79,18 @@ const Section4 = ({ getMessages: t }) =>
             target="_blank"
             rel="noreferrer noopener"
           >
-            <Button>{t('custom.button')}</Button>
+            <Button>{t("custom.button")}</Button>
           </A>
         </CardWrapper>
       </Column>
     </Row>
-  </StyledSectionRow>;
+  </StyledSectionRow>
+);
 
-Section4.displayName = 'Section4';
+Section4.displayName = "Section4";
 Section4.propTypes = {
   // React-intl I18n
-  getMessages: PropTypes.func.isRequired,
+  getMessages: PropTypes.func.isRequired
 };
 
 export default Section4;

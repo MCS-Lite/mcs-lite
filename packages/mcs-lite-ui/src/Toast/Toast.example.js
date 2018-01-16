@@ -1,9 +1,9 @@
-import React from 'react';
-import styled from 'styled-components';
-import { storiesOf } from '@storybook/react';
-import { withInfo } from '@storybook/addon-info';
-import { kindList } from 'mcs-lite-theme';
-import Toast from '.';
+import React from "react";
+import styled from "styled-components";
+import { storiesOf } from "@storybook/react";
+import { withInfo } from "@storybook/addon-info";
+import { kindList } from "mcs-lite-theme";
+import Toast from ".";
 
 const DemoWrapper = styled.div`
   > * {
@@ -11,24 +11,26 @@ const DemoWrapper = styled.div`
   }
 `;
 
-storiesOf('Toast', module)
+storiesOf("Toast", module)
   .add(
-    'API',
+    "API",
     withInfo({
-      text: '',
-      inline: true,
-    })(() => <Toast>Success! You have delete the item.</Toast>),
+      text: "",
+      inline: true
+    })(() => <Toast>Success! You have delete the item.</Toast>)
   )
   .add(
-    'With kind props',
+    "With kind props",
     withInfo({
-      text: '',
-      inline: true,
-    })(() =>
+      text: "",
+      inline: true
+    })(() => (
       <DemoWrapper>
-        {kindList.map(key =>
-          <Toast key={key} kind={key}>{key} - You have delete the item.</Toast>,
-        )}
-      </DemoWrapper>,
-    ),
+        {kindList.map(key => (
+          <Toast key={key} kind={key}>
+            {key} - You have delete the item.
+          </Toast>
+        ))}
+      </DemoWrapper>
+    ))
   );

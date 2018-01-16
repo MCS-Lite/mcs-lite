@@ -1,9 +1,9 @@
 /* eslint no-unused-expressions:0 */
 
-import React from 'react';
-import { ThemeProvider, injectGlobal } from 'styled-components';
-import normalize from 'polished/lib/mixins/normalize';
-import { theme } from 'mcs-lite-theme';
+import React from "react";
+import { ThemeProvider, injectGlobal } from "styled-components";
+import normalize from "polished/lib/mixins/normalize";
+import { theme } from "mcs-lite-theme";
 
 injectGlobal`
   ${normalize()}
@@ -21,9 +21,5 @@ injectGlobal`
 `;
 
 export default function(renderStory) {
-  return (
-    <ThemeProvider theme={theme}>
-      {renderStory()}
-    </ThemeProvider>
-  );
+  return <ThemeProvider theme={theme}>{renderStory()}</ThemeProvider>;
 }

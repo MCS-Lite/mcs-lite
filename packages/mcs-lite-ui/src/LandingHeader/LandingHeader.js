@@ -1,10 +1,10 @@
 /* global window */
 
-import React from 'react';
-import PropTypes from 'prop-types';
-import styled from 'styled-components';
-import rafThrottle from 'raf-throttle';
-import getScrollTop from '../utils/getScrollTop';
+import React from "react";
+import PropTypes from "prop-types";
+import styled from "styled-components";
+import rafThrottle from "raf-throttle";
+import getScrollTop from "../utils/getScrollTop";
 
 const ZINDEX = 1;
 
@@ -21,7 +21,7 @@ export const Fixed = styled.div`
   background-color: ${props => props.theme.color.grayLight};
   height: ${props => props.theme.height.header};
   box-shadow: ${props =>
-    props.isTop ? 'none' : '0 1px 0 0 rgba(0, 0, 0, 0.05)'};
+    props.isTop ? "none" : "0 1px 0 0 rgba(0, 0, 0, 0.05)"};
   transition: box-shadow cubic-bezier(0.47, 0, 0.75, 0.72) 0.2s;
   user-select: none;
 `;
@@ -29,21 +29,21 @@ export const Fixed = styled.div`
 class LandingHeader extends React.PureComponent {
   static propTypes = {
     children: PropTypes.node.isRequired,
-    offset: PropTypes.number,
+    offset: PropTypes.number
   };
 
   static defaultProps = {
-    offset: 40,
+    offset: 40
   };
 
   state = { isTop: true };
 
   componentDidMount = () => {
-    window.addEventListener('scroll', this.onScroll);
+    window.addEventListener("scroll", this.onScroll);
     this.onScroll();
   };
   componentWillUnmount = () => {
-    window.removeEventListener('scroll', this.onScroll);
+    window.removeEventListener("scroll", this.onScroll);
     this.onScroll.cancel();
   };
   onScroll = rafThrottle(() => {
@@ -56,9 +56,7 @@ class LandingHeader extends React.PureComponent {
 
     return (
       <Container {...otherProps}>
-        <Fixed isTop={isTop}>
-          {children}
-        </Fixed>
+        <Fixed isTop={isTop}>{children}</Fixed>
       </Container>
     );
   }

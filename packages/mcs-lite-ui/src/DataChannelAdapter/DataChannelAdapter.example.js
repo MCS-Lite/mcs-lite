@@ -1,11 +1,11 @@
-import React from 'react';
-import styled from 'styled-components';
-import { storiesOf } from '@storybook/react';
-import { withInfo } from '@storybook/addon-info';
-import { action } from '@storybook/addon-actions';
-import DataChannelCard from '../DataChannelCard';
-import DATA_CHANNELS from './API';
-import DataChannelAdapter from '.';
+import React from "react";
+import styled from "styled-components";
+import { storiesOf } from "@storybook/react";
+import { withInfo } from "@storybook/addon-info";
+import { action } from "@storybook/addon-actions";
+import DataChannelCard from "../DataChannelCard";
+import DATA_CHANNELS from "./API";
+import DataChannelAdapter from ".";
 
 const CardWrapper = styled.div`
   display: flex;
@@ -18,14 +18,14 @@ const CardWrapper = styled.div`
     flex-basis: 100%;
   }
 
-  > [data-width ~= half] {
+  > [data-width ~=" half"] {
     flex-grow: 1;
     flex-basis: 40%;
   }
 `;
 
-storiesOf('DataChannelAdapter', module).add(
-  'API',
+storiesOf("DataChannelAdapter", module).add(
+  "API",
   withInfo({
     text: `
       ~~~js
@@ -42,10 +42,10 @@ storiesOf('DataChannelAdapter', module).add(
       ~~~
     `,
 
-    inline: true,
-  })(() =>
+    inline: true
+  })(() => (
     <CardWrapper>
-      {DATA_CHANNELS.map(dataChannel =>
+      {DATA_CHANNELS.map(dataChannel => (
         <DataChannelCard
           key={dataChannel.id}
           data-width="half"
@@ -57,11 +57,11 @@ storiesOf('DataChannelAdapter', module).add(
           <DataChannelAdapter
             dataChannelProps={dataChannel}
             eventHandler={action(
-              'DataChannelAdapter eventHandler(event: Event)',
+              "DataChannelAdapter eventHandler(event: Event)"
             )}
           />
-        </DataChannelCard>,
-      )}
-    </CardWrapper>,
-  ),
+        </DataChannelCard>
+      ))}
+    </CardWrapper>
+  ))
 );

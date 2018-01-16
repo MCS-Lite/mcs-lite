@@ -1,8 +1,8 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import styled from 'styled-components';
-import Dialog from './Dialog';
-import Panel from '../Panel';
+import React from "react";
+import PropTypes from "prop-types";
+import styled from "styled-components";
+import Dialog from "./Dialog";
+import Panel from "../Panel";
 
 const StyledPanel = styled(Panel)`
   width: 440px;
@@ -42,25 +42,24 @@ const CommonDialog = ({
   onSubmit,
   children,
   ...otherProps
-}) =>
+}) => (
   <Dialog show={show} onHide={onHide} {...otherProps}>
-    <Component onSubmit={Component === 'form' ? onSubmit : null}>
-      <StyledPanel>
-        {children}
-      </StyledPanel>
+    <Component onSubmit={Component === "form" ? onSubmit : null}>
+      <StyledPanel>{children}</StyledPanel>
     </Component>
-  </Dialog>;
+  </Dialog>
+);
 
-CommonDialog.displayName = 'CommonDialog';
+CommonDialog.displayName = "CommonDialog";
 CommonDialog.propTypes = {
   show: PropTypes.bool.isRequired,
   onHide: PropTypes.func.isRequired,
   children: PropTypes.node.isRequired,
   component: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
-  onSubmit: PropTypes.func,
+  onSubmit: PropTypes.func
 };
 CommonDialog.defaultProps = {
-  component: 'div',
+  component: "div"
 };
 
 export default CommonDialog;

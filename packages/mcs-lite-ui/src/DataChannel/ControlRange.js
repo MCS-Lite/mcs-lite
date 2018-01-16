@@ -1,10 +1,10 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import styled from 'styled-components';
-import R from 'ramda';
-import InputRange from '../InputRange';
-import P from '../P';
-import isNumber from '../utils/isNumber';
+import React from "react";
+import PropTypes from "prop-types";
+import styled from "styled-components";
+import R from "ramda";
+import InputRange from "../InputRange";
+import P from "../P";
+import isNumber from "../utils/isNumber";
 
 export const Container = styled.div`
   width: 100%;
@@ -17,11 +17,11 @@ export const LabelWrapper = styled.div`
 
   > *:first-child {
     align-items: ${props =>
-      props.labels.length <= 2 ? 'flex-start' : 'center'};
+      props.labels.length <= 2 ? "flex-start" : "center"};
   }
 
   > *:last-child {
-    align-items: ${props => (props.labels.length <= 2 ? 'flex-end' : 'center')};
+    align-items: ${props => (props.labels.length <= 2 ? "flex-end" : "center")};
   }
 `;
 
@@ -54,8 +54,9 @@ export const Value = styled(P)`
 `;
 
 export const InputWrapper = styled.div`
-  padding: 0 ${props =>
-    `${props.labels.length <= 2 ? 0 : 100 / props.labels.length / 2 - 3}%`};
+  padding: 0
+    ${props =>
+      `${props.labels.length <= 2 ? 0 : 100 / props.labels.length / 2 - 3}%`};
 `;
 
 const ControlRange = ({
@@ -72,9 +73,11 @@ const ControlRange = ({
   return (
     <Container {...otherProps}>
       <LabelWrapper labels={labels}>
-        {labels.map(e =>
-          <LabelItem key={e}><P color="grayBase">{e}</P></LabelItem>,
-        )}
+        {labels.map(e => (
+          <LabelItem key={e}>
+            <P color="grayBase">{e}</P>
+          </LabelItem>
+        ))}
       </LabelWrapper>
 
       <InputWrapper labels={labels}>
@@ -96,17 +99,17 @@ const ControlRange = ({
   );
 };
 
-ControlRange.displayName = 'ControlRange';
+ControlRange.displayName = "ControlRange";
 ControlRange.propTypes = {
   value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]), // index of labels
   onChange: PropTypes.func.isRequired,
   onSubmit: PropTypes.func.isRequired,
   valueMapper: PropTypes.func, // index: number => value: string
-  labels: PropTypes.array.isRequired,
+  labels: PropTypes.array.isRequired
 };
 
 ControlRange.defaultProps = {
-  valueMapper: R.identity,
+  valueMapper: R.identity
 };
 
 export default ControlRange;

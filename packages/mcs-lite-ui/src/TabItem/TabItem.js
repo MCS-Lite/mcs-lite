@@ -1,17 +1,17 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import styled from 'styled-components';
-import { darken1, darken2 } from 'mcs-lite-theme';
-import R from 'ramda';
-import emptyFunction from '../utils/emptyFunction';
+import React from "react";
+import PropTypes from "prop-types";
+import styled from "styled-components";
+import { darken1, darken2 } from "mcs-lite-theme";
+import R from "ramda";
+import emptyFunction from "../utils/emptyFunction";
 
 const mapBorderColorByActive = R.cond([
-  [R.propEq('active', true), props => R.path(['theme', 'color', props.color])],
-  [R.T, R.always('transparent')],
+  [R.propEq("active", true), props => R.path(["theme", "color", props.color])],
+  [R.T, R.always("transparent")]
 ]);
 const mapColorByActive = R.cond([
-  [R.propEq('active', true), props => R.path(['theme', 'color', props.color])],
-  [R.T, R.path(['theme', 'color', 'black'])],
+  [R.propEq("active", true), props => R.path(["theme", "color", props.color])],
+  [R.T, R.path(["theme", "color", "black"])]
 ]);
 
 export const Item = styled.div`
@@ -26,8 +26,7 @@ export const Item = styled.div`
   color: ${mapColorByActive};
   font-size: ${props => props.theme.fontSize.p};
   padding: 0 15px;
-  transition:
-    border-color cubic-bezier(0.47, 0, 0.75, 0.72) 0.1s,
+  transition: border-color cubic-bezier(0.47, 0, 0.75, 0.72) 0.1s,
     color cubic-bezier(0.47, 0, 0.75, 0.72) 0.3s;
   cursor: pointer;
 
@@ -49,15 +48,15 @@ class TabItem extends React.Component {
   }
 }
 
-TabItem.displayName = 'TabItem';
+TabItem.displayName = "TabItem";
 TabItem.propTypes = {
   value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
   onClick: PropTypes.func, // (e, value) => void
-  color: PropTypes.string,
+  color: PropTypes.string
 };
 TabItem.defaultProps = {
   onClick: emptyFunction,
-  color: 'primary',
+  color: "primary"
 };
 
 export default TabItem;

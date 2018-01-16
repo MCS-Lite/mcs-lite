@@ -1,33 +1,31 @@
-import React from 'react';
-import { mount } from 'enzyme';
-import toJson from 'enzyme-to-json';
-import { ThemeProvider } from 'styled-components';
-import { BreakpointProvider } from 'hedron';
-import landingTheme, { BREAKPOINTS } from '../../../utils/landingTheme';
+import React from "react";
+import { mount } from "enzyme";
+import toJson from "enzyme-to-json";
+import { ThemeProvider } from "styled-components";
+import { BreakpointProvider } from "hedron";
+import landingTheme, { BREAKPOINTS } from "../../../utils/landingTheme";
 import {
   StyledSectionRow,
   StyledImageColumn,
   RWDCenterWrapper,
   ImageLayerWrapper,
-  ChartWrapper,
-} from '../styled-components';
+  ChartWrapper
+} from "../styled-components";
 
-it('should render components correctly', () => {
+it("should render components correctly", () => {
   const wrapper = mount(
     <ThemeProvider theme={landingTheme}>
       <BreakpointProvider breakpoints={BREAKPOINTS}>
         <div>
-          <StyledSectionRow>
-            children
-          </StyledSectionRow>
+          <StyledSectionRow>children</StyledSectionRow>
           <RWDCenterWrapper />
           <StyledImageColumn />
           <ImageLayerWrapper />
           <ChartWrapper />
         </div>
       </BreakpointProvider>
-    </ThemeProvider>,
+    </ThemeProvider>
   );
 
-  expect(toJson(wrapper.find('div'))).toMatchSnapshot();
+  expect(toJson(wrapper.find("div"))).toMatchSnapshot();
 });

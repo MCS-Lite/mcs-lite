@@ -1,7 +1,7 @@
-import styled from 'styled-components';
-import P from 'mcs-lite-ui/lib/P';
-import { Link } from 'react-router';
-import Logo from '../../components/Logo';
+import styled from "styled-components";
+import P from "mcs-lite-ui/lib/P";
+import { Link } from "react-router";
+import Logo from "../../components/Logo";
 
 export const Container = styled.div`
   height: 100%;
@@ -56,8 +56,7 @@ export const Body = styled.div`
   flex-grow: 1;
   display: flex;
 
-  ${/* Remind: fixed for firefox: https://goo.gl/Rjqio3 */ ''}
-  min-height: 0;
+  ${/* Remind: fixed for firefox: https://goo.gl/Rjqio3 */ ""} min-height: 0;
 `;
 
 export const NAV_WIDTH = 150;

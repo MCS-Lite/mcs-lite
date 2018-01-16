@@ -1,10 +1,10 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import styled from 'styled-components';
-import Portal from 'react-overlays/lib/Portal';
-import MobileContentWrapper from '../MobileContentWrapper';
-import Heading from '../Heading';
-import B from '../B';
+import React from "react";
+import PropTypes from "prop-types";
+import styled from "styled-components";
+import Portal from "react-overlays/lib/Portal";
+import MobileContentWrapper from "../MobileContentWrapper";
+import Heading from "../Heading";
+import B from "../B";
 
 export const Container = styled.header`
   height: ${props => props.theme.mobile.headerHeight};
@@ -58,29 +58,36 @@ export const StyledHeading = styled(Heading)`
   overflow: hidden;
 `;
 
-const MobileHeader = ({ title, leftChildren, rightChildren, ...otherProps }) =>
+const MobileHeader = ({
+  title,
+  leftChildren,
+  rightChildren,
+  ...otherProps
+}) => (
   <Container {...otherProps}>
     <Portal>
       <Fixed>
         <Wrapper>
           <Left>{leftChildren}</Left>
-          {title &&
+          {title && (
             <Center>
               <StyledHeading level={3} color="white">
                 <B>{title}</B>
               </StyledHeading>
-            </Center>}
+            </Center>
+          )}
           <Right>{rightChildren}</Right>
         </Wrapper>
       </Fixed>
     </Portal>
-  </Container>;
+  </Container>
+);
 
-MobileHeader.displayName = 'MobileHeader';
+MobileHeader.displayName = "MobileHeader";
 MobileHeader.propTypes = {
   title: PropTypes.string,
   leftChildren: PropTypes.node.isRequired,
-  rightChildren: PropTypes.node,
+  rightChildren: PropTypes.node
 };
 
 export default MobileHeader;

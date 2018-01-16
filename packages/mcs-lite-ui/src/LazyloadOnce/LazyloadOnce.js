@@ -1,24 +1,24 @@
 /* global window */
 
-import React from 'react';
-import PropTypes from 'prop-types';
-import Waypoint from 'react-waypoint';
-import rafThrottle from 'raf-throttle';
+import React from "react";
+import PropTypes from "prop-types";
+import Waypoint from "react-waypoint";
+import rafThrottle from "raf-throttle";
 
 class LazyloadOnce extends React.PureComponent {
   static propTypes = {
     children: PropTypes.node,
     height: PropTypes.number,
     component: PropTypes.oneOfType([PropTypes.string, PropTypes.func]),
-    waypointConfig: PropTypes.object,
+    waypointConfig: PropTypes.object
   };
   static defaultProps = {
-    component: 'div',
+    component: "div",
     waypointConfig: {
       topOffset: -500,
       bottomOffset: -500,
-      fireOnRapidScroll: true,
-    },
+      fireOnRapidScroll: true
+    }
   };
   state = { isShow: false };
   componentWillUnmount = () => this.onEnter.cancel();
@@ -38,13 +38,15 @@ class LazyloadOnce extends React.PureComponent {
 
     return (
       <Component style={{ height }} {...otherProps}>
-        {isShow
-          ? children
-          : <Waypoint
-              scrollableAncestor={window}
-              onEnter={onEnter}
-              {...waypointConfig}
-            />}
+        {isShow ? (
+          children
+        ) : (
+          <Waypoint
+            scrollableAncestor={window}
+            onEnter={onEnter}
+            {...waypointConfig}
+          />
+        )}
       </Component>
     );
   }

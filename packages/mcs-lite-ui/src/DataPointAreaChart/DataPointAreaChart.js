@@ -1,8 +1,8 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import R from 'ramda';
-import { opacity } from 'mcs-lite-theme';
-import { withTheme } from 'styled-components';
+import React from "react";
+import PropTypes from "prop-types";
+import R from "ramda";
+import { opacity } from "mcs-lite-theme";
+import { withTheme } from "styled-components";
 import {
   ResponsiveContainer,
   AreaChart,
@@ -10,9 +10,9 @@ import {
   XAxis,
   YAxis,
   CartesianGrid,
-  Tooltip,
-} from 'recharts';
-import RechartTooltip from './RechartTooltip';
+  Tooltip
+} from "recharts";
+import RechartTooltip from "./RechartTooltip";
 
 const lighten = opacity(0.4);
 
@@ -23,8 +23,8 @@ const DataPointAreaChart = ({
   type,
   isAnimationActive,
   XAxisProps,
-  tooltipProps,
-}) =>
+  tooltipProps
+}) => (
   <ResponsiveContainer>
     <AreaChart data={data} margin={{ left: -20 }}>
       <defs>
@@ -56,7 +56,7 @@ const DataPointAreaChart = ({
       <CartesianGrid strokeDasharray="3 3" vertical={false} />
       <Tooltip
         content={<RechartTooltip />}
-        cursor={{ stroke: theme.color.warning, strokeDasharray: '4, 2' }}
+        cursor={{ stroke: theme.color.warning, strokeDasharray: "4, 2" }}
         {...tooltipProps}
       />
       <Area
@@ -67,40 +67,41 @@ const DataPointAreaChart = ({
         fill="url(#areaGradient)"
       />
     </AreaChart>
-  </ResponsiveContainer>;
+  </ResponsiveContainer>
+);
 
-DataPointAreaChart.displayName = 'DataPointAreaChart';
+DataPointAreaChart.displayName = "DataPointAreaChart";
 DataPointAreaChart.propTypes = {
   data: PropTypes.arrayOf(
     PropTypes.shape({
       updatedAt: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
         .isRequired,
-      value: PropTypes.number.isRequired,
-    }),
+      value: PropTypes.number.isRequired
+    })
   ).isRequired,
   theme: PropTypes.object.isRequired,
   kind: PropTypes.string.isRequired,
   type: PropTypes.string.isRequired,
   isAnimationActive: PropTypes.bool,
   XAxisProps: PropTypes.shape({
-    tickFormatter: PropTypes.func,
+    tickFormatter: PropTypes.func
   }),
   tooltipProps: PropTypes.shape({
     formatter: PropTypes.func,
-    labelFormatter: PropTypes.func,
-  }),
+    labelFormatter: PropTypes.func
+  })
 };
 DataPointAreaChart.defaultProps = {
-  kind: 'primary',
-  type: 'linear',
+  kind: "primary",
+  type: "linear",
   isAnimationActive: false,
   XAxisProps: {
-    tickFormatter: R.identity,
+    tickFormatter: R.identity
   },
   tooltipProps: {
     formatter: value => `Datapoint: ${value}`,
-    labelFormatter: value => `Time: ${value}`,
-  },
+    labelFormatter: value => `Time: ${value}`
+  }
 };
 
 export default withTheme(DataPointAreaChart);

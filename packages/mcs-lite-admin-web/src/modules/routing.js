@@ -1,10 +1,10 @@
-import { push } from 'react-router-redux';
-import * as R from 'ramda';
-import { LOCATION_CHANGE } from 'react-router-redux/lib/reducer';
-import getBrowserLocale from 'browser-locale';
-import { localeMapper } from 'mcs-lite-ui/lib/utils/localeHelper';
+import { push } from "react-router-redux";
+import * as R from "ramda";
+import { LOCATION_CHANGE } from "react-router-redux/lib/reducer";
+import getBrowserLocale from "browser-locale";
+import { localeMapper } from "mcs-lite-ui/lib/utils/localeHelper";
 
-const DEFAULT_LOCALE = 'zh-TW';
+const DEFAULT_LOCALE = "zh-TW";
 const browserLocale = getBrowserLocale();
 
 // ----------------------------------------------------------------------------
@@ -13,7 +13,7 @@ const browserLocale = getBrowserLocale();
 
 export const constants = {
   LOCATION_CHANGE,
-  DEFAULT_LOCALE,
+  DEFAULT_LOCALE
 };
 
 // ----------------------------------------------------------------------------
@@ -38,14 +38,16 @@ export const actions = {};
  * @author Michael Hsu
  */
 function localeCycle(sources) {
-  const pathnameWithoutLocale$ = sources.STATE
-    .map(R.path(['routing', 'locationBeforeTransitions']))
+  const pathnameWithoutLocale$ = sources.STATE.map(
+    R.path(["routing", "locationBeforeTransitions"])
+  )
     .filter(d => d && d.pathname && !d.query.locale) // Case1
-    .pluck('pathname')
+    .pluck("pathname")
     .distinctUntilChanged();
 
-  const query$ = sources.STATE
-    .map(R.path(['routing', 'locationBeforeTransitions', 'query']))
+  const query$ = sources.STATE.map(
+    R.path(["routing", "locationBeforeTransitions", "query"])
+  )
     .filter(d => !!d)
     .filter(R.complement(R.isEmpty))
     .startWith({})
@@ -56,18 +58,18 @@ function localeCycle(sources) {
       pathname,
       query: {
         locale: localeMapper(DEFAULT_LOCALE)(browserLocale),
-        ...query,
-      }, // Case2
+        ...query
+      } // Case2
     }))
     .map(location => push(location));
 
   return {
-    ACTION: action$,
+    ACTION: action$
   };
 }
 
 export const cycles = {
-  localeCycle,
+  localeCycle
 };
 
 // ----------------------------------------------------------------------------
@@ -75,7 +77,7 @@ export const cycles = {
 // ----------------------------------------------------------------------------
 
 const initialState = {
-  locationBeforeTransitions: null,
+  locationBeforeTransitions: null
 };
 
 export default function reducer(state = initialState, action = {}) {
@@ -83,7 +85,7 @@ export default function reducer(state = initialState, action = {}) {
     case LOCATION_CHANGE:
       return {
         ...state,
-        locationBeforeTransitions: action.payload,
+        locationBeforeTransitions: action.payload
       };
 
     default:

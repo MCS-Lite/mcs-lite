@@ -1,6 +1,6 @@
-import styled from 'styled-components';
-import Img from 'mcs-lite-ui/lib/Img';
-import MobileContentWrapper from 'mcs-lite-ui/lib/MobileContentWrapper';
+import styled from "styled-components";
+import Img from "mcs-lite-ui/lib/Img";
+import MobileContentWrapper from "mcs-lite-ui/lib/MobileContentWrapper";
 
 export const Container = styled(MobileContentWrapper)`
   padding: 4px;
@@ -21,7 +21,7 @@ export const CardWrapper = styled.div`
     flex-basis: 100%;
   }
 
-  > [data-width ~= half] {
+  > [data-width ~=" half"] {
     flex-grow: 1;
     flex-basis: 40%;
   }

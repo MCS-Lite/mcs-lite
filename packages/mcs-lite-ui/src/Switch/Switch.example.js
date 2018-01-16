@@ -1,16 +1,16 @@
-import React from 'react';
-import styled from 'styled-components';
-import { storiesOf } from '@storybook/react';
-import { withInfo } from '@storybook/addon-info';
-import { action } from '@storybook/addon-actions';
-import { kindList } from 'mcs-lite-theme';
-import Switch from '.';
+import React from "react";
+import styled from "styled-components";
+import { storiesOf } from "@storybook/react";
+import { withInfo } from "@storybook/addon-info";
+import { action } from "@storybook/addon-actions";
+import { kindList } from "mcs-lite-theme";
+import Switch from ".";
 
 const withState = Component =>
   class WithStateComponent extends React.Component {
     state = { checked: false };
     onClick = () => {
-      action('click');
+      action("click");
       this.setState({ checked: !this.state.checked });
     };
     render() {
@@ -26,69 +26,69 @@ const withState = Component =>
 
 const StyledSwitch = withState(
   styled(Switch)`
-  background-color: ${props => (props.checked ? 'steelblue' : 'aliceblue')};
+    background-color: ${props => (props.checked ? "steelblue" : "aliceblue")};
 
-  &::after {
-    background-color: ${props =>
-      props.checked ? 'aliceblue' : 'cornflowerblue'};
-  }
-`,
+    &::after {
+      background-color: ${props =>
+        props.checked ? "aliceblue" : "cornflowerblue"};
+    }
+  `
 );
 
 const ScaledSwitch = withState(
   styled(Switch)`
-  transform: scale(0.48);
-`,
+    transform: scale(0.48);
+  `
 );
 
-storiesOf('Switch', module)
+storiesOf("Switch", module)
   .add(
-    'API',
+    "API",
     withInfo({
-      text: 'Switch is a controlled component.',
-      inline: true,
-    })(() =>
+      text: "Switch is a controlled component.",
+      inline: true
+    })(() => (
       <div>
         <Switch />
         <Switch checked />
-      </div>,
-    ),
+      </div>
+    ))
   )
   .add(
-    'With kind props',
+    "With kind props",
     withInfo({
       text: 'kind="primary"',
-      inline: true,
-    })(() =>
+      inline: true
+    })(() => (
       <div>
         {kindList.map(kind => <Switch key={kind} checked kind={kind} />)}
-      </div>,
-    ),
+      </div>
+    ))
   )
   .add(
-    'Stateful switch',
+    "Stateful switch",
     withInfo({
-      text: '使用 state 來控制狀態。',
+      text: "使用 state 來控制狀態。",
       inline: true,
-      propTables: false,
+      propTables: false
     })(() => {
       const Simple = withState(Switch);
       return <Simple />;
-    }),
+    })
   )
   .add(
-    'Overriding style',
+    "Overriding style",
     withInfo({
-      text: '使用 styled-components 來覆蓋 css。',
+      text: "使用 styled-components 來覆蓋 css。",
       inline: true,
-      propTables: false,
-    })(() => <StyledSwitch />),
+      propTables: false
+    })(() => <StyledSwitch />)
   )
   .add(
-    'With scaling',
+    "With scaling",
     withInfo({
-      text: 'transform: scale(0.48) for mobile',
+      text: "transform: scale(0.48) for mobile",
       inline: true,
-      propTables: false,
-    })(() => <ScaledSwitch kind="primary" />),
+      propTables: false
+    })(() => <ScaledSwitch kind="primary" />)
   );

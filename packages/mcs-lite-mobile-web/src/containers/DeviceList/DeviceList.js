@@ -1,28 +1,28 @@
-import React from 'react';
-import { findDOMNode } from 'react-dom';
-import PropTypes from 'prop-types';
-import * as R from 'ramda';
-import Helmet from 'react-helmet';
-import Transition from 'react-motion-ui-pack';
-import { Link } from 'react-router';
-import IconSearch from 'mcs-lite-icon/lib/IconSearch';
-import IconMenu from 'mcs-lite-icon/lib/IconMenu';
-import PullToRefresh from 'mcs-lite-ui/lib/PullToRefresh';
-import PreventDrag from 'mcs-lite-ui/lib/PreventDrag';
-import Input from 'mcs-lite-ui/lib/Input';
-import ClickOutside from 'mcs-lite-ui/lib/ClickOutside';
-import MobileDeviceCard from 'mcs-lite-ui/lib/MobileDeviceCard';
-import MobileHeader from 'mcs-lite-ui/lib/MobileHeader';
-import { updatePathname } from 'mcs-lite-ui/lib/utils/routerHelper';
+import React from "react";
+import { findDOMNode } from "react-dom";
+import PropTypes from "prop-types";
+import * as R from "ramda";
+import Helmet from "react-helmet";
+import Transition from "react-motion-ui-pack";
+import { Link } from "react-router";
+import IconSearch from "mcs-lite-icon/lib/IconSearch";
+import IconMenu from "mcs-lite-icon/lib/IconMenu";
+import PullToRefresh from "mcs-lite-ui/lib/PullToRefresh";
+import PreventDrag from "mcs-lite-ui/lib/PreventDrag";
+import Input from "mcs-lite-ui/lib/Input";
+import ClickOutside from "mcs-lite-ui/lib/ClickOutside";
+import MobileDeviceCard from "mcs-lite-ui/lib/MobileDeviceCard";
+import MobileHeader from "mcs-lite-ui/lib/MobileHeader";
+import { updatePathname } from "mcs-lite-ui/lib/utils/routerHelper";
 import {
   Container,
   CardWrapper,
   StyledHeaderIcon,
-  PlaceholdWrapper,
-} from './styled-components';
-import StyledLink from '../../components/StyledLink';
-import resolveImage from '../../utils/resolveImage';
-import BANNER_IMAGE from '../../statics/images/banner.svg';
+  PlaceholdWrapper
+} from "./styled-components";
+import StyledLink from "../../components/StyledLink";
+import resolveImage from "../../utils/resolveImage";
+import BANNER_IMAGE from "../../statics/images/banner.svg";
 
 class DeviceList extends React.Component {
   static propTypes = {
@@ -34,9 +34,9 @@ class DeviceList extends React.Component {
     fetchDeviceList: PropTypes.func.isRequired,
 
     // React-intl I18n
-    getMessages: PropTypes.func.isRequired,
+    getMessages: PropTypes.func.isRequired
   };
-  state = { isFilterOpen: false, filterValue: '' };
+  state = { isFilterOpen: false, filterValue: "" };
   componentWillMount = () => this.props.fetchDeviceList();
   onFilterChange = e => this.setState({ filterValue: e.target.value });
   onFilterClick = () =>
@@ -45,7 +45,7 @@ class DeviceList extends React.Component {
     // Hint: Omit clicking input.
     if (e.target === findDOMNode(this.input)) return; // eslint-disable-line
 
-    this.setState({ isFilterOpen: false, filterValue: '' });
+    this.setState({ isFilterOpen: false, filterValue: "" });
   };
   getInput = node => {
     this.input = node;
@@ -60,24 +60,26 @@ class DeviceList extends React.Component {
       onClickOutside,
       onFilterClick,
       includeDeviceName,
-      getInput,
+      getInput
     } = this;
 
     return (
       <div>
-        <Helmet><title>{t('myTestDevices')}</title></Helmet>
+        <Helmet>
+          <title>{t("myTestDevices")}</title>
+        </Helmet>
         <MobileHeader.MobileHeader
-          title={isFilterOpen ? '' : t('myTestDevices')}
+          title={isFilterOpen ? "" : t("myTestDevices")}
           leftChildren={
             <MobileHeader.MobileHeaderIcon
               component={Link}
-              to={updatePathname('/account')}
+              to={updatePathname("/account")}
             >
               <IconMenu />
             </MobileHeader.MobileHeaderIcon>
           }
           rightChildren={[
-            isFilterOpen &&
+            isFilterOpen && (
               <Transition
                 key="input"
                 component={false}
@@ -88,16 +90,17 @@ class DeviceList extends React.Component {
                   ref={getInput}
                   autoFocus
                   key="filter"
-                  placeholder={t('search')}
+                  placeholder={t("search")}
                   value={filterValue}
                   onChange={onFilterChange}
                 />
-              </Transition>,
+              </Transition>
+            ),
             <ClickOutside key="icon" onClick={onClickOutside}>
               <StyledHeaderIcon onClick={onFilterClick} active={isFilterOpen}>
                 <IconSearch />
               </StyledHeaderIcon>
-            </ClickOutside>,
+            </ClickOutside>
           ]}
         />
 
@@ -110,7 +113,7 @@ class DeviceList extends React.Component {
                   appear={{ opacity: 0.8, marginTop: -20 }}
                   enter={{ opacity: 1, marginTop: 0 }}
                 >
-                  {devices.filter(includeDeviceName).map(device =>
+                  {devices.filter(includeDeviceName).map(device => (
                     <StyledLink
                       key={device.deviceId}
                       to={updatePathname(`/devices/${device.deviceId}`)}
@@ -119,16 +122,17 @@ class DeviceList extends React.Component {
                         title={device.deviceName}
                         image={resolveImage(
                           BANNER_IMAGE,
-                          device.deviceImageURL,
+                          device.deviceImageURL
                         )}
                       />
-                    </StyledLink>,
-                  )}
+                    </StyledLink>
+                  ))}
                 </Transition>
               </PreventDrag>
 
-              {R.isEmpty(devices) &&
-                <PlaceholdWrapper>{t('noDevice')}</PlaceholdWrapper>}
+              {R.isEmpty(devices) && (
+                <PlaceholdWrapper>{t("noDevice")}</PlaceholdWrapper>
+              )}
             </Container>
           </PullToRefresh>
         </main>

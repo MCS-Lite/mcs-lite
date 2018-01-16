@@ -1,31 +1,31 @@
 /* global window */
 /* eslint no-alert: 0 */
 
-import { Observable } from 'rxjs/Observable';
-import { push } from 'react-router-redux';
-import cookieHelper from 'mcs-lite-ui/lib/utils/cookieHelper';
-import { actions as serviceActions } from './service';
-import { actions as systemActions } from './system';
-import { actions as uiActions } from './ui';
-import { actions as usersActions } from './users';
-import { success, failure } from '../utils/cycleHelper';
+import { Observable } from "rxjs/Observable";
+import { push } from "react-router-redux";
+import cookieHelper from "mcs-lite-ui/lib/utils/cookieHelper";
+import { actions as serviceActions } from "./service";
+import { actions as systemActions } from "./system";
+import { actions as uiActions } from "./ui";
+import { actions as usersActions } from "./users";
+import { success, failure } from "../utils/cycleHelper";
 
 // ----------------------------------------------------------------------------
 // 1. Constants
 // ----------------------------------------------------------------------------
 
-const REQUIRE_AUTH = 'mcs-lite-admin-web/auth/REQUIRE_AUTH';
-const TRY_ENTER = 'mcs-lite-admin-web/auth/TRY_ENTER';
-const SIGNOUT = 'mcs-lite-admin-web/auth/SIGNOUT';
-const SET_USERINFO = 'mcs-lite-admin-web/auth/SET_USERINFO';
-const CLEAR = 'mcs-lite-admin-web/auth/CLEAR';
+const REQUIRE_AUTH = "mcs-lite-admin-web/auth/REQUIRE_AUTH";
+const TRY_ENTER = "mcs-lite-admin-web/auth/TRY_ENTER";
+const SIGNOUT = "mcs-lite-admin-web/auth/SIGNOUT";
+const SET_USERINFO = "mcs-lite-admin-web/auth/SET_USERINFO";
+const CLEAR = "mcs-lite-admin-web/auth/CLEAR";
 
 export const constants = {
   REQUIRE_AUTH,
   TRY_ENTER,
   SIGNOUT,
   SET_USERINFO,
-  CLEAR,
+  CLEAR
 };
 
 // ----------------------------------------------------------------------------
@@ -36,7 +36,7 @@ const requireAuth = () => ({ type: REQUIRE_AUTH });
 const tryEnter = () => ({ type: TRY_ENTER });
 const signout = (confirmMessage, isForce) => ({
   type: SIGNOUT,
-  payload: { message: confirmMessage, isForce },
+  payload: { message: confirmMessage, isForce }
 });
 const setUserInfo = userData => ({ type: SET_USERINFO, payload: userData });
 const clear = () => ({ type: CLEAR });
@@ -46,7 +46,7 @@ export const actions = {
   tryEnter,
   signout,
   setUserInfo,
-  clear,
+  clear
 };
 
 // ----------------------------------------------------------------------------
@@ -54,96 +54,95 @@ export const actions = {
 // ----------------------------------------------------------------------------
 
 function requireAuthCycle(sources) {
-  const cookieToken$ = sources.ACTION
-    .filter(action => action.type === REQUIRE_AUTH)
-    .map(cookieHelper.getCookieToken);
+  const cookieToken$ = sources.ACTION.filter(
+    action => action.type === REQUIRE_AUTH
+  ).map(cookieHelper.getCookieToken);
 
   const request$ = cookieToken$.map(cookieToken => ({
-    url: '/oauth/cookies',
-    method: 'POST',
+    url: "/oauth/cookies",
+    method: "POST",
     send: { token: cookieToken },
-    category: REQUIRE_AUTH,
+    category: REQUIRE_AUTH
   }));
 
   const successRes$ = sources.HTTP.select(REQUIRE_AUTH).switchMap(success);
 
   const action$ = Observable.from([
-    successRes$.pluck('body', 'results').map(setUserInfo),
+    successRes$.pluck("body", "results").map(setUserInfo),
     successRes$.mapTo(serviceActions.fetchIpList()),
-    successRes$.mapTo(systemActions.fetchSystemByType('db')),
+    successRes$.mapTo(systemActions.fetchSystemByType("db"))
   ]).mergeAll();
 
   return {
     ACTION: action$,
-    HTTP: request$,
+    HTTP: request$
   };
 }
 
 function tryEnterCycle(sources) {
-  const cookieToken$ = sources.ACTION
-    .filter(action => action.type === TRY_ENTER)
-    .map(cookieHelper.getCookieToken);
+  const cookieToken$ = sources.ACTION.filter(
+    action => action.type === TRY_ENTER
+  ).map(cookieHelper.getCookieToken);
 
   const action$ = cookieToken$
     .filter(cookieToken => !!cookieToken) // Hint: Go to devices list if cookieToken avaliable
-    .mapTo(push('/'));
+    .mapTo(push("/"));
 
   return {
-    ACTION: action$,
+    ACTION: action$
   };
 }
 
 function signoutCycle(sources) {
-  const confirm$ = sources.ACTION
-    .filter(action => action.type === SIGNOUT)
-    .switchMap(action => {
-      const { message, isForce } = action.payload;
-      if (isForce || window.confirm(message)) {
-        return Observable.of(action);
-      }
-      return Observable.empty();
-    });
+  const confirm$ = sources.ACTION.filter(
+    action => action.type === SIGNOUT
+  ).switchMap(action => {
+    const { message, isForce } = action.payload;
+    if (isForce || window.confirm(message)) {
+      return Observable.of(action);
+    }
+    return Observable.empty();
+  });
 
   const action$ = confirm$
     .switchMap(() =>
       Observable.of(
-        push('/login'),
+        push("/login"),
         clear(),
         serviceActions.clear(),
         systemActions.clear(),
-        usersActions.clear(),
-      ),
+        usersActions.clear()
+      )
     )
     .do(cookieHelper.removeCookieToken);
 
   return {
-    ACTION: action$,
+    ACTION: action$
   };
 }
 
 function httpErrorCycle(sources) {
   // Remind: handle all http errors here
-  const failureRes$ = sources.HTTP
-    .select()
+  const failureRes$ = sources.HTTP.select()
     .concatMap(failure)
-    .pluck('response')
-    .do(response => console.log('httpErrorCycle', response)); // eslint-disable-line
+    .pluck("response")
+    .do(response => console.log("httpErrorCycle", response)); // eslint-disable-line
 
   const action$ = failureRes$.concatMap(({ status, statusText }) =>
     Observable.from([
       uiActions.addToast({
-        kind: 'error',
-        children: ` (${status} ${statusText})`,
+        kind: "error",
+        children: ` (${status} ${statusText})`
       }),
       uiActions.setLoaded(), // Hint: set loading anyway
       ...(status === 401 && [
-        signout('', true), // Remind: Force signout
-      ]),
-    ]),
+        signout("", true) // Remind: Force signout
+      ])
+    ])
   );
 
   return {
-    ACTION: action$,
+    ACTION: action$
   };
 }
 
@@ -151,7 +150,7 @@ export const cycles = {
   requireAuthCycle,
   tryEnterCycle,
   signoutCycle,
-  httpErrorCycle,
+  httpErrorCycle
 };
 
 // ----------------------------------------------------------------------------
@@ -165,7 +164,7 @@ export default function reducer(state = initialState, action = {}) {
     case SET_USERINFO:
       return {
         ...state,
-        ...action.payload,
+        ...action.payload
       };
     case CLEAR:
       return initialState;

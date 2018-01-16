@@ -1,9 +1,9 @@
-import React from 'react';
-import styled from 'styled-components';
-import { Link } from 'react-router';
-import Small from 'mcs-lite-ui/lib/Small';
-import { updateLocale } from 'mcs-lite-ui/lib/utils/routerHelper';
-import { LOCALES } from 'mcs-lite-ui/lib/utils/localeHelper';
+import React from "react";
+import styled from "styled-components";
+import { Link } from "react-router";
+import Small from "mcs-lite-ui/lib/Small";
+import { updateLocale } from "mcs-lite-ui/lib/utils/routerHelper";
+import { LOCALES } from "mcs-lite-ui/lib/utils/localeHelper";
 
 const Wrapper = styled.div`
   position: fixed;
@@ -24,15 +24,16 @@ const Wrapper = styled.div`
   }
 `;
 
-const LocaleFooter = () =>
+const LocaleFooter = () => (
   <Wrapper>
-    {LOCALES.map(({ id, children }) =>
+    {LOCALES.map(({ id, children }) => (
       <Link key={id} to={updateLocale(id)}>
         <Small>{children}</Small>
-      </Link>,
-    )}
-  </Wrapper>;
+      </Link>
+    ))}
+  </Wrapper>
+);
 
-LocaleFooter.displayName = 'LocaleFooter';
+LocaleFooter.displayName = "LocaleFooter";
 
 export default LocaleFooter;

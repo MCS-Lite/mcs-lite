@@ -10,12 +10,11 @@
 
 1. Open a GitHub issue before doing significant amount of work.
 2. Clone the repo. If it was already cloned, then git pull to get the latest from master.
-4. Run `yarn` before anything else, and wait.
-5. Write code.
-6. Run `./tasks/test.sh` to lint and test. Don’t commit before fixing all errors and warnings.
-7. Commit with the [Git Commit Msg Convention](http://karma-runner.github.io/1.0/dev/git-commit-msg.html).
-8. Make a pull request.
-
+3. Run `yarn` before anything else, and wait.
+4. Write code.
+5. Run `./tasks/test.sh` to lint and test. Don’t commit before fixing all errors and warnings.
+6. Commit with the [Git Commit Msg Convention](http://karma-runner.github.io/1.0/dev/git-commit-msg.html).
+7. Make a pull request.
 
 ## To release new versions
 

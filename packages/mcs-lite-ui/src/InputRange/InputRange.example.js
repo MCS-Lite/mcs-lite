@@ -1,9 +1,9 @@
-import React from 'react';
-import { storiesOf } from '@storybook/react';
-import { withInfo } from '@storybook/addon-info';
-import styled from 'styled-components';
-import { kindList } from 'mcs-lite-theme';
-import InputRange from '.';
+import React from "react";
+import { storiesOf } from "@storybook/react";
+import { withInfo } from "@storybook/addon-info";
+import styled from "styled-components";
+import { kindList } from "mcs-lite-theme";
+import InputRange from ".";
 
 const Wrapper = styled.div`
   > * {
@@ -12,22 +12,22 @@ const Wrapper = styled.div`
   }
 `;
 
-storiesOf('InputRange', module)
+storiesOf("InputRange", module)
   .add(
-    'API',
+    "API",
     withInfo({
-      text: 'Default InputRange',
-      inline: true,
-    })(() => <InputRange />),
+      text: "Default InputRange",
+      inline: true
+    })(() => <InputRange />)
   )
   .add(
-    'With kind props',
+    "With kind props",
     withInfo({
-      text: '',
-      inline: true,
-    })(() =>
+      text: "",
+      inline: true
+    })(() => (
       <Wrapper>
         {kindList.map(key => <InputRange key={key} kind={key} />)}
-      </Wrapper>,
-    ),
+      </Wrapper>
+    ))
   );

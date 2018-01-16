@@ -1,45 +1,45 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { Column } from 'hedron';
-import Loadable from 'react-loadable';
-import Heading from 'mcs-lite-ui/lib/Heading';
-import B from 'mcs-lite-ui/lib/B';
-import P from 'mcs-lite-ui/lib/P';
-import TextCenter from 'mcs-lite-ui/lib/TextCenter';
-import SpaceTop from 'mcs-lite-ui/lib/SpaceTop';
-import SectionRow from '../../components/SectionRow';
-import { LazyloadIcon, StyledRow } from './styled-components';
+import React from "react";
+import PropTypes from "prop-types";
+import { Column } from "hedron";
+import Loadable from "react-loadable";
+import Heading from "mcs-lite-ui/lib/Heading";
+import B from "mcs-lite-ui/lib/B";
+import P from "mcs-lite-ui/lib/P";
+import TextCenter from "mcs-lite-ui/lib/TextCenter";
+import SpaceTop from "mcs-lite-ui/lib/SpaceTop";
+import SectionRow from "../../components/SectionRow";
+import { LazyloadIcon, StyledRow } from "./styled-components";
 
 const LoadableSVGData = Loadable({
   loader: () =>
-    import(/* webpackChunkName: "Section" */ '../../components/SVG/SVGData'),
-  loading: () => null,
+    import(/* webpackChunkName: "Section" */ "../../components/SVG/SVGData"),
+  loading: () => null
 });
 const LoadableSVGRemote = Loadable({
   loader: () =>
-    import(/* webpackChunkName: "Section" */ '../../components/SVG/SVGRemote'),
-  loading: () => null,
+    import(/* webpackChunkName: "Section" */ "../../components/SVG/SVGRemote"),
+  loading: () => null
 });
 const LoadableSVGManagement = Loadable({
   loader: () =>
-    import(
-      /* webpackChunkName: "Section" */ '../../components/SVG/SVGManagement',
-    ),
-  loading: () => null,
+    import(/* webpackChunkName: "Section" */ "../../components/SVG/SVGManagement"),
+  loading: () => null
 });
 const LoadableSVGMobile = Loadable({
   loader: () =>
-    import(/* webpackChunkName: "Section" */ '../../components/SVG/SVGMobile'),
-  loading: () => null,
+    import(/* webpackChunkName: "Section" */ "../../components/SVG/SVGMobile"),
+  loading: () => null
 });
 
-const Section3 = ({ getMessages: t }) =>
+const Section3 = ({ getMessages: t }) => (
   <SectionRow>
     <Column xs={12}>
       <TextCenter>
-        <Heading level={2}>{t('title')}</Heading>
+        <Heading level={2}>{t("title")}</Heading>
         <SpaceTop height={10}>
-          <Heading level={4} color="grayBase">{t('desc')}</Heading>
+          <Heading level={4} color="grayBase">
+            {t("desc")}
+          </Heading>
         </SpaceTop>
       </TextCenter>
     </Column>
@@ -53,11 +53,11 @@ const Section3 = ({ getMessages: t }) =>
           </LazyloadIcon>
           <SpaceTop height={20}>
             <Heading level={3}>
-              <B>{t('data.title')}</B>
+              <B>{t("data.title")}</B>
             </Heading>
           </SpaceTop>
           <SpaceTop height={10}>
-            <P>{t('data.desc')}</P>
+            <P>{t("data.desc")}</P>
           </SpaceTop>
         </TextCenter>
       </Column>
@@ -70,11 +70,11 @@ const Section3 = ({ getMessages: t }) =>
           </LazyloadIcon>
           <SpaceTop height={20}>
             <Heading level={3}>
-              <B>{t('remote.title')}</B>
+              <B>{t("remote.title")}</B>
             </Heading>
           </SpaceTop>
           <SpaceTop height={10}>
-            <P>{t('remote.desc')}</P>
+            <P>{t("remote.desc")}</P>
           </SpaceTop>
         </TextCenter>
       </Column>
@@ -87,11 +87,11 @@ const Section3 = ({ getMessages: t }) =>
           </LazyloadIcon>
           <SpaceTop height={20}>
             <Heading level={3}>
-              <B>{t('management.title')}</B>
+              <B>{t("management.title")}</B>
             </Heading>
           </SpaceTop>
           <SpaceTop height={10}>
-            <P>{t('management.desc')}</P>
+            <P>{t("management.desc")}</P>
           </SpaceTop>
         </TextCenter>
       </Column>
@@ -104,21 +104,22 @@ const Section3 = ({ getMessages: t }) =>
           </LazyloadIcon>
           <SpaceTop height={20}>
             <Heading level={3}>
-              <B>{t('mobile.title')}</B>
+              <B>{t("mobile.title")}</B>
             </Heading>
           </SpaceTop>
           <SpaceTop height={10}>
-            <P>{t('mobile.desc')}</P>
+            <P>{t("mobile.desc")}</P>
           </SpaceTop>
         </TextCenter>
       </Column>
     </StyledRow>
-  </SectionRow>;
+  </SectionRow>
+);
 
-Section3.displayName = 'Section3';
+Section3.displayName = "Section3";
 Section3.propTypes = {
   // React-intl I18n
-  getMessages: PropTypes.func.isRequired,
+  getMessages: PropTypes.func.isRequired
 };
 
 export default Section3;

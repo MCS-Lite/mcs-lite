@@ -1,9 +1,9 @@
-import React from 'react';
-import styled from 'styled-components';
-import { storiesOf } from '@storybook/react';
-import { withInfo } from '@storybook/addon-info';
-import MobileFixedFooter from '.';
-import Button from '../Button';
+import React from "react";
+import styled from "styled-components";
+import { storiesOf } from "@storybook/react";
+import { withInfo } from "@storybook/addon-info";
+import MobileFixedFooter from ".";
+import Button from "../Button";
 
 const ButtonWrapper = styled.div`
   display: flex;
@@ -18,17 +18,19 @@ const ButtonWrapper = styled.div`
   }
 `;
 
-storiesOf('MobileFixedFooter', module).add(
-  'API',
+storiesOf("MobileFixedFooter", module).add(
+  "API",
   withInfo({
-    text: '',
-    inline: true,
-  })(() =>
+    text: "",
+    inline: true
+  })(() => (
     <MobileFixedFooter>
       <ButtonWrapper>
-        <Button block kind="default">Cancel</Button>
+        <Button block kind="default">
+          Cancel
+        </Button>
         <Button block>Submit</Button>
       </ButtonWrapper>
-    </MobileFixedFooter>,
-  ),
+    </MobileFixedFooter>
+  ))
 );

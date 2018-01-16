@@ -1,8 +1,8 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import styled from 'styled-components';
-import P from '../P';
-import Heading from '../Heading';
+import React from "react";
+import PropTypes from "prop-types";
+import styled from "styled-components";
+import P from "../P";
+import Heading from "../Heading";
 
 export const Container = styled.div`
   display: flex;
@@ -22,16 +22,17 @@ export const StyledP = styled(P)`
   margin-top: 10px;
 `;
 
-const DisplayUnitValue = ({ value, unit, ...otherProps }) =>
+const DisplayUnitValue = ({ value, unit, ...otherProps }) => (
   <Container {...otherProps}>
     <StyledHeading color="primary">{value}</StyledHeading>
     {unit && <StyledP color="grayBase">{unit}</StyledP>}
-  </Container>;
+  </Container>
+);
 
-DisplayUnitValue.displayName = 'DisplayUnitValue';
+DisplayUnitValue.displayName = "DisplayUnitValue";
 DisplayUnitValue.propTypes = {
   value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
-  unit: PropTypes.string,
+  unit: PropTypes.string
 };
 
 export default DisplayUnitValue;

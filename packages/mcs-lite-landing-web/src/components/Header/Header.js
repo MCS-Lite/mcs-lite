@@ -1,70 +1,74 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { Page, Row } from 'hedron';
-import Loadable from 'react-loadable';
-import MediaQuery from 'react-responsive';
-import LandingHeader from 'mcs-lite-ui/lib/LandingHeader/LandingHeader';
-import Nav from 'mcs-lite-ui/lib/LandingHeader/Nav';
-import NavItem from 'mcs-lite-ui/lib/LandingHeader/NavItem';
-import IconLoading from 'mcs-lite-icon/lib/IconLoading';
-import Spin from 'mcs-lite-ui/lib/Spin';
-import NavItemDropdown from 'mcs-lite-ui/lib/LandingHeader/NavItemDropdown';
-import LazyloadOnce from 'mcs-lite-ui/lib/LazyloadOnce';
+import React from "react";
+import PropTypes from "prop-types";
+import { Page, Row } from "hedron";
+import Loadable from "react-loadable";
+import MediaQuery from "react-responsive";
+import LandingHeader from "mcs-lite-ui/lib/LandingHeader/LandingHeader";
+import Nav from "mcs-lite-ui/lib/LandingHeader/Nav";
+import NavItem from "mcs-lite-ui/lib/LandingHeader/NavItem";
+import IconLoading from "mcs-lite-icon/lib/IconLoading";
+import Spin from "mcs-lite-ui/lib/Spin";
+import NavItemDropdown from "mcs-lite-ui/lib/LandingHeader/NavItemDropdown";
+import LazyloadOnce from "mcs-lite-ui/lib/LazyloadOnce";
 import {
   LOCALES,
-  getMCSLinkByLocale,
-} from 'mcs-lite-ui/lib/utils/localeHelper';
-import { PAGE_WIDTH } from '../../components/SectionRow/SectionRow';
-import logo from '../../statics/images/logo_mcs_lite_black.svg';
+  getMCSLinkByLocale
+} from "mcs-lite-ui/lib/utils/localeHelper";
+import { PAGE_WIDTH } from "../../components/SectionRow/SectionRow";
+import logo from "../../statics/images/logo_mcs_lite_black.svg";
 import {
   StyledColumn,
   HiddenForPreRenderTrick,
   StyledLink,
   LogoImage,
   DesktopNav,
-  MobileNav,
-} from './styled-components';
+  MobileNav
+} from "./styled-components";
 
 const LoadableNavItemBurger = Loadable({
   loader: () =>
-    import(
-      /* webpackChunkName: "Header.NavItemBurger" */ 'mcs-lite-ui/lib/LandingHeader/NavItemBurger',
-    ),
-  loading: () => <NavItem><Spin><IconLoading size={24} /></Spin></NavItem>,
+    import(/* webpackChunkName: "Header.NavItemBurger" */ "mcs-lite-ui/lib/LandingHeader/NavItemBurger"),
+  loading: () => (
+    <NavItem>
+      <Spin>
+        <IconLoading size={24} />
+      </Spin>
+    </NavItem>
+  )
 });
 
 const Header = ({ locale, getMessages, breakpoints }) => {
   const linkItems = [
     {
-      component: 'a',
-      key: 'gotoMCS',
+      component: "a",
+      key: "gotoMCS",
       href: getMCSLinkByLocale(locale),
-      target: '_blank',
-      rel: 'noreferrer noopener',
-      children: getMessages('gotoMCS'),
+      target: "_blank",
+      rel: "noreferrer noopener",
+      children: getMessages("gotoMCS")
     },
     {
-      component: 'a',
-      key: 'resource',
+      component: "a",
+      key: "resource",
       href: `https://mcs-lite-introduction.netlify.com/${locale}`,
-      target: '_blank',
-      rel: 'noreferrer noopener',
-      children: getMessages('resource'),
+      target: "_blank",
+      rel: "noreferrer noopener",
+      children: getMessages("resource")
     },
     {
-      component: 'a',
-      key: 'contact',
-      href: 'mailto:mtkcloudsandbox@mediatek.com',
-      target: '_blank',
-      rel: 'noreferrer noopener',
-      children: getMessages('contact'),
-    },
+      component: "a",
+      key: "contact",
+      href: "mailto:mtkcloudsandbox@mediatek.com",
+      target: "_blank",
+      rel: "noreferrer noopener",
+      children: getMessages("contact")
+    }
   ];
   const languageItems = LOCALES.map(({ id, children }) => ({
     key: id,
     to: `/${id}`,
     component: StyledLink,
-    children,
+    children
   }));
 
   return (
@@ -85,47 +89,50 @@ const Header = ({ locale, getMessages, breakpoints }) => {
               values={{ width: breakpoints.lg }}
             >
               {matches =>
-                matches
-                  ? // Desktop
-                    <DesktopNav>
-                      {linkItems.map(e => <NavItem {...e} />)}
-                      <NavItemDropdown
-                        items={languageItems}
+                matches ? (
+                  // Desktop
+                  <DesktopNav>
+                    {linkItems.map(e => <NavItem {...e} />)}
+                    <NavItemDropdown
+                      items={languageItems}
+                      data-ga-on="click"
+                      data-ga-event-category="Language NavItemDropdown menu"
+                      data-ga-event-action="click"
+                    >
+                      Language
+                    </NavItemDropdown>
+                  </DesktopNav>
+                ) : (
+                  // Mobile
+                  <MobileNav>
+                    <LazyloadOnce>
+                      <LoadableNavItemBurger
+                        items={[
+                          ...linkItems,
+                          {
+                            key: "Language",
+                            children: "Language",
+                            disabled: true
+                          },
+                          ...languageItems
+                        ]}
                         data-ga-on="click"
-                        data-ga-event-category="Language NavItemDropdown menu"
+                        data-ga-event-category="Mobile NavItemBurger menu"
                         data-ga-event-action="click"
-                      >
-                        Language
-                      </NavItemDropdown>
-                    </DesktopNav>
-                  : // Mobile
-                    <MobileNav>
-                      <LazyloadOnce>
-                        <LoadableNavItemBurger
-                          items={[
-                            ...linkItems,
-                            {
-                              key: 'Language',
-                              children: 'Language',
-                              disabled: true,
-                            },
-                            ...languageItems,
-                          ]}
-                          data-ga-on="click"
-                          data-ga-event-category="Mobile NavItemBurger menu"
-                          data-ga-event-action="click"
-                        />
-                      </LazyloadOnce>
-                    </MobileNav>}
+                      />
+                    </LazyloadOnce>
+                  </MobileNav>
+                )
+              }
             </MediaQuery>
 
             {/* 3. Hidden -For Prereder */}
             <HiddenForPreRenderTrick>
-              {LOCALES.map(({ id, children }) =>
+              {LOCALES.map(({ id, children }) => (
                 <a key={id} href={`/${id}`}>
                   {children}
-                </a>,
-              )}
+                </a>
+              ))}
             </HiddenForPreRenderTrick>
           </StyledColumn>
         </Row>
@@ -134,7 +141,7 @@ const Header = ({ locale, getMessages, breakpoints }) => {
   );
 };
 
-Header.displayName = 'Header';
+Header.displayName = "Header";
 Header.propTypes = {
   // React-intl I18n
   getMessages: PropTypes.func.isRequired,
@@ -144,8 +151,8 @@ Header.propTypes = {
 
   // withBreakpoints HOC
   breakpoints: PropTypes.shape({
-    sm: PropTypes.number.isRequired,
-  }).isRequired,
+    sm: PropTypes.number.isRequired
+  }).isRequired
 };
 
 export default Header;

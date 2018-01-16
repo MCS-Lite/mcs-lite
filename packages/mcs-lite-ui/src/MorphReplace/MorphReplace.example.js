@@ -1,14 +1,14 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { storiesOf } from '@storybook/react';
-import { withInfo } from '@storybook/addon-info';
-import * as Icons from 'mcs-lite-icon/lib/index';
-import MorphReplace from '.';
+import React from "react";
+import PropTypes from "prop-types";
+import { storiesOf } from "@storybook/react";
+import { withInfo } from "@storybook/addon-info";
+import * as Icons from "mcs-lite-icon/lib/index";
+import MorphReplace from ".";
 
 class StatefulMorphReplace extends React.Component {
   static propTypes = {
     from: PropTypes.element.isRequired,
-    to: PropTypes.element.isRequired,
+    to: PropTypes.element.isRequired
   };
   state = { checked: false };
   componentDidMount = () => {
@@ -29,13 +29,13 @@ class StatefulMorphReplace extends React.Component {
   }
 }
 
-storiesOf('MorphReplace', module).add(
-  'API',
+storiesOf("MorphReplace", module).add(
+  "API",
   withInfo({
-    text: '',
+    text: "",
     inline: true,
-    propTables: [MorphReplace],
-  })(() =>
+    propTables: [MorphReplace]
+  })(() => (
     <div>
       <StatefulMorphReplace
         from={<Icons.IconMenu />}
@@ -54,6 +54,6 @@ storiesOf('MorphReplace', module).add(
         from={<Icons.IconLoading />}
         to={<Icons.IconDone />}
       />
-    </div>,
-  ),
+    </div>
+  ))
 );

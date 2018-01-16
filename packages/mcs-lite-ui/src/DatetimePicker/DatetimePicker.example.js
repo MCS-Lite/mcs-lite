@@ -1,11 +1,11 @@
-import React from 'react';
-import { storiesOf } from '@storybook/react';
-import { withInfo } from '@storybook/addon-info';
-import { action } from '@storybook/addon-actions';
-import DatetimePicker from '.';
+import React from "react";
+import { storiesOf } from "@storybook/react";
+import { withInfo } from "@storybook/addon-info";
+import { action } from "@storybook/addon-actions";
+import DatetimePicker from ".";
 
-storiesOf('DatetimePicker', module).add(
-  'API',
+storiesOf("DatetimePicker", module).add(
+  "API",
   withInfo({
     text: `
       ~~~js
@@ -13,11 +13,11 @@ storiesOf('DatetimePicker', module).add(
       ~~~
     `,
 
-    inline: true,
-  })(() =>
+    inline: true
+  })(() => (
     <DatetimePicker
       defaultValue={1455780631722}
-      onChange={value => action('DatetimePicker')(new Date(value).toString())}
-    />,
-  ),
+      onChange={value => action("DatetimePicker")(new Date(value).toString())}
+    />
+  ))
 );

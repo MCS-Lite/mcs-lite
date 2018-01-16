@@ -9,18 +9,17 @@
     "email": "evenchange4@gmail.com"
   },
   "homepage": "https://github.com/MCS-Lite/mcs-lite#readme",
-  "files": [
-    "lib"
-  ],
+  "files": ["lib"],
   "scripts": {
     "clean": "rm -rf lib",
-    "prebuild": "npm run clean",
-    "compress:svg": "svgo -f 'src/icon' -o lib/icon --pretty --multipass --indent=2 --quiet",
+    "prebuild": "npm run clean && mkdir -p lib/icon",
+    "compress:svg":
+      "svgo src/icon/*.svg -o 'lib/icon' --pretty --multipass --indent=2 --quiet",
     "build": "npm run compress:svg",
     "test": "echo 'no'"
   },
   "license": "MIT",
   "devDependencies": {
-    "svgo": "0.7.2"
+    "svgo": "1.0.3"
   }
 }

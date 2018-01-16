@@ -1,8 +1,8 @@
-import React from 'react';
-import initStoryshots from '@storybook/addon-storyshots';
-import renderer from 'react-test-renderer';
-import { ThemeProvider } from 'styled-components';
-import { theme } from 'mcs-lite-theme';
+import React from "react";
+import initStoryshots from "@storybook/addon-storyshots";
+import renderer from "react-test-renderer";
+import { ThemeProvider } from "styled-components";
+import { theme } from "mcs-lite-theme";
 
 /**
  * Hint: mock for snapshot
@@ -11,18 +11,16 @@ import { theme } from 'mcs-lite-theme';
  * @author Michael Hsu
  */
 
-const addonInfo = require('@storybook/addon-info'); // eslint-disable-line
+const addonInfo = require("@storybook/addon-info"); // eslint-disable-line
 addonInfo.withInfo = () => storyFn => storyFn;
-const sbReact = require('@storybook/react'); // eslint-disable-line
+const sbReact = require("@storybook/react"); // eslint-disable-line
 sbReact.addDecorator = () => {};
 
 // Using this function means we'll see the change in the css in the snapshot
 // diff instead of just the change in classname
 const styledSnapshot = ({ story, context }) => {
   const storyElement = (
-    <ThemeProvider theme={theme}>
-      {story.render(context)}
-    </ThemeProvider>
+    <ThemeProvider theme={theme}>{story.render(context)}</ThemeProvider>
   );
   const tree = renderer.create(storyElement).toJSON();
   expect(tree).toMatchSnapshot();
@@ -36,5 +34,5 @@ const styledSnapshot = ({ story, context }) => {
 
 initStoryshots({
   storyRegex: /^((?!\[Skip\]).)*$/,
-  test: styledSnapshot,
+  test: styledSnapshot
 });

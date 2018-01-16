@@ -1,38 +1,38 @@
 // @flow
-import PropTypes from 'prop-types';
-import React from 'react';
-import Helmet from 'react-helmet';
-import IconMoreVert from 'mcs-lite-icon/lib/IconMoreVert';
-import IconArrowLeft from 'mcs-lite-icon/lib/IconArrowLeft';
-import IconFold from 'mcs-lite-icon/lib/IconFold';
-import { Link } from 'react-router';
-import PullToRefresh from 'mcs-lite-ui/lib/PullToRefresh';
-import Overlay from 'mcs-lite-ui/lib/Overlay';
-import Menu from 'mcs-lite-ui/lib/Menu';
-import DataChannelCard from 'mcs-lite-ui/lib/DataChannelCard';
-import DataChannelAdapter from 'mcs-lite-ui/lib/DataChannelAdapter';
-import MobileHeader from 'mcs-lite-ui/lib/MobileHeader';
-import { dataChannelTypeMapper } from 'mcs-lite-ui/lib/utils/dataChannelHelper';
-import { updatePathname } from 'mcs-lite-ui/lib/utils/routerHelper';
-import localTimeFormat from 'mcs-lite-ui/lib/utils/localTimeFormat';
+import PropTypes from "prop-types";
+import React from "react";
+import Helmet from "react-helmet";
+import IconMoreVert from "mcs-lite-icon/lib/IconMoreVert";
+import IconArrowLeft from "mcs-lite-icon/lib/IconArrowLeft";
+import IconFold from "mcs-lite-icon/lib/IconFold";
+import { Link } from "react-router";
+import PullToRefresh from "mcs-lite-ui/lib/PullToRefresh";
+import Overlay from "mcs-lite-ui/lib/Overlay";
+import Menu from "mcs-lite-ui/lib/Menu";
+import DataChannelCard from "mcs-lite-ui/lib/DataChannelCard";
+import DataChannelAdapter from "mcs-lite-ui/lib/DataChannelAdapter";
+import MobileHeader from "mcs-lite-ui/lib/MobileHeader";
+import { dataChannelTypeMapper } from "mcs-lite-ui/lib/utils/dataChannelHelper";
+import { updatePathname } from "mcs-lite-ui/lib/utils/routerHelper";
+import localTimeFormat from "mcs-lite-ui/lib/utils/localTimeFormat";
 import {
   Container,
   StyledImg,
   CardWrapper,
-  CardHeaderIcon,
-} from './styled-components';
-import StyledLink from '../../components/StyledLink';
-import WebSocketNotification from '../../components/WebSocketNotification';
-import resolveImage from '../../utils/resolveImage';
-import BANNER_IMAGE from '../../statics/images/banner.svg';
+  CardHeaderIcon
+} from "./styled-components";
+import StyledLink from "../../components/StyledLink";
+import WebSocketNotification from "../../components/WebSocketNotification";
+import resolveImage from "../../utils/resolveImage";
+import BANNER_IMAGE from "../../statics/images/banner.svg";
 
 type DCEvent = {
   id: string,
   values: {
     value?: string | number,
-    period?: number,
+    period?: number
   },
-  type: 'SUBMIT' | 'CHANGE' | 'CLEAR',
+  type: "SUBMIT" | "CHANGE" | "CLEAR"
 };
 type DCEventHandler = DCEvent => void;
 
@@ -55,7 +55,7 @@ class DeviceDetail extends React.Component {
     // WebSocket
     sendMessage: PropTypes.func.isRequired,
     reconnect: PropTypes.func.isRequired,
-    isWebSocketClose: PropTypes.bool.isRequired,
+    isWebSocketClose: PropTypes.bool.isRequired
   };
   state = { isMenuShow: false, target: undefined };
   componentWillMount = () => this.props.fetchDeviceDetail(this.props.deviceId);
@@ -70,7 +70,7 @@ class DeviceDetail extends React.Component {
     // TODO: refactor these codes.
     const datapoint = { datachannelId: id, values };
     switch (type) {
-      case 'SUBMIT':
+      case "SUBMIT":
         // Remind: MUST upload the datapoint via WebSocket.
         sendMessage(JSON.stringify(datapoint));
         break;
@@ -88,24 +88,26 @@ class DeviceDetail extends React.Component {
       isLoading,
       getMessages: t,
       isWebSocketClose,
-      reconnect,
+      reconnect
     } = this.props;
     const {
       getTarget,
       onMoreDetailClick,
       onHide,
       reFetch,
-      eventHandler,
+      eventHandler
     } = this;
     return (
       <div>
-        <Helmet><title>{device.deviceName}</title></Helmet>
+        <Helmet>
+          <title>{device.deviceName}</title>
+        </Helmet>
         <MobileHeader.MobileHeader
           title={device.deviceName}
           leftChildren={
             <MobileHeader.MobileHeaderIcon
               component={Link}
-              to={updatePathname('/devices')}
+              to={updatePathname("/devices")}
             >
               <IconArrowLeft />
             </MobileHeader.MobileHeaderIcon>
@@ -119,25 +121,25 @@ class DeviceDetail extends React.Component {
             >
               <IconMoreVert />
             </MobileHeader.MobileHeaderIcon>,
-            isMenuShow &&
+            isMenuShow && (
               <Overlay
                 key="menu"
                 target={target}
                 onClickOutSide={onHide}
-                alignConfig={{ points: ['tr', 'bc'], offset: [20, -20] }}
+                alignConfig={{ points: ["tr", "bc"], offset: [20, -20] }}
                 transitionConfig={{
                   component: false,
                   enter: {
-                    translateY: 0,
+                    translateY: 0
                   },
                   leave: {
-                    translateY: -10,
-                  },
+                    translateY: -10
+                  }
                 }}
               >
                 <Menu.Menu key="menu">
                   <StyledLink to={updatePathname(`/devices/${deviceId}/info`)}>
-                    <Menu.MenuItem>{t('deviceIntro')}</Menu.MenuItem>
+                    <Menu.MenuItem>{t("deviceIntro")}</Menu.MenuItem>
                   </StyledLink>
 
                   {/* TODO: Hide trigger feature at Phase 1
@@ -146,7 +148,8 @@ class DeviceDetail extends React.Component {
                   </StyledLink>
                   */}
                 </Menu.Menu>
-              </Overlay>,
+              </Overlay>
+            )
           ]}
         />
 
@@ -162,14 +165,16 @@ class DeviceDetail extends React.Component {
               <Container>
                 <CardWrapper>
                   {device.datachannels &&
-                    device.datachannels.map(c =>
+                    device.datachannels.map(c => (
                       <DataChannelCard
                         key={c.datachannelId}
                         data-width="half"
                         header={
                           <StyledLink
                             to={updatePathname(
-                              `/devices/${deviceId}/dataChannels/${c.datachannelId}`,
+                              `/devices/${deviceId}/dataChannels/${
+                                c.datachannelId
+                              }`
                             )}
                           >
                             <CardHeaderIcon>
@@ -185,15 +190,15 @@ class DeviceDetail extends React.Component {
                             id: c.datachannelId,
                             type: dataChannelTypeMapper(
                               c.channelType.name,
-                              c.type,
+                              c.type
                             ),
                             values: c.datapoints.values,
-                            format: c.format,
+                            format: c.format
                           }}
                           eventHandler={eventHandler}
                         />
-                      </DataChannelCard>,
-                    )}
+                      </DataChannelCard>
+                    ))}
                 </CardWrapper>
               </Container>
             </div>

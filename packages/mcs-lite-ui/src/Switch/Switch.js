@@ -1,5 +1,5 @@
-import PropTypes from 'prop-types';
-import styled from 'styled-components';
+import PropTypes from "prop-types";
+import styled from "styled-components";
 
 const Switch = styled.div`
   position: relative;
@@ -23,21 +23,21 @@ const Switch = styled.div`
     cursor: pointer;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.17);
     top: 3px;
-    left: ${props => (props.checked ? '32px' : 0)};
+    left: ${props => (props.checked ? "32px" : 0)};
     transition: left cubic-bezier(0.47, 0, 0.75, 0.72) 0.2s;
     margin: 0 3px;
     border: 1px solid rgba(0, 0, 0, 0.1);
   }
 `;
 
-Switch.displayName = 'Switch';
+Switch.displayName = "Switch";
 Switch.propTypes = {
   kind: PropTypes.string,
-  checked: PropTypes.bool,
+  checked: PropTypes.bool
 };
 Switch.defaultProps = {
-  kind: 'success',
-  checked: false,
+  kind: "success",
+  checked: false
 };
 
 export default Switch;

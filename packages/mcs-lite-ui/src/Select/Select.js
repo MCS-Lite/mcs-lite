@@ -1,13 +1,13 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import R from 'ramda';
-import styled from 'styled-components';
-import { IconFold } from 'mcs-lite-icon';
-import InputGroup from '../InputGroup';
-import Input from '../Input';
-import Button from '../Button';
+import React from "react";
+import PropTypes from "prop-types";
+import R from "ramda";
+import styled from "styled-components";
+import { IconFold } from "mcs-lite-icon";
+import InputGroup from "../InputGroup";
+import Input from "../Input";
+import Button from "../Button";
 
-const PLACEHOLDER_VALUE = 'SELECT/PLACEHOLDER_VALUE';
+const PLACEHOLDER_VALUE = "SELECT/PLACEHOLDER_VALUE";
 
 export const StyledInputGroup = styled(InputGroup)`
   position: absolute;
@@ -35,7 +35,7 @@ export const StyledButton = styled(Button)`
 
   > * {
     transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
-    transform: ${props => (props.active ? 'rotate(-180deg)' : 'initial')};
+    transform: ${props => (props.active ? "rotate(-180deg)" : "initial")};
   }
 `;
 
@@ -48,20 +48,20 @@ class Select extends React.Component {
       PropTypes.shape({
         children: PropTypes.node.isRequired,
         value: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
-          .isRequired,
-      }),
-    ).isRequired,
+          .isRequired
+      })
+    ).isRequired
   };
   static defaultProps = {
-    kind: 'primary',
-    value: '',
+    kind: "primary",
+    value: ""
   };
   state = { isOpen: false };
   onFocus = () => this.setState({ isOpen: true });
   onBlur = () => this.setState({ isOpen: false });
   valueMapper = value =>
-    R.pipe(R.find(R.propEq('value', value)), R.pathOr('', ['children']))(
-      this.props.items,
+    R.pipe(R.find(R.propEq("value", value)), R.pathOr("", ["children"]))(
+      this.props.items
     );
   render() {
     const { isOpen } = this.state;
@@ -88,8 +88,11 @@ class Select extends React.Component {
           onFocus={onFocus}
           onBlur={onBlur}
         >
-          {placeholder &&
-            <option value={PLACEHOLDER_VALUE} disabled>{placeholder}</option>}
+          {placeholder && (
+            <option value={PLACEHOLDER_VALUE} disabled>
+              {placeholder}
+            </option>
+          )}
           {items.map(e => <option key={e.value} {...e} />)}
         </StyledSelect>
       </Wrapper>

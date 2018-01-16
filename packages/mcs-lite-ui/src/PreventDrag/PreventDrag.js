@@ -1,6 +1,6 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import styled from 'styled-components';
+import React from "react";
+import PropTypes from "prop-types";
+import styled from "styled-components";
 
 export const Container = styled.div`
   user-select: none;
@@ -9,7 +9,7 @@ export const Container = styled.div`
 
 const preventDefault = e => e.preventDefault();
 
-const PreventDrag = ({ children }) =>
+const PreventDrag = ({ children }) => (
   <Container
     onDrop={preventDefault}
     onDragStart={preventDefault}
@@ -18,11 +18,12 @@ const PreventDrag = ({ children }) =>
     onMouseDown={preventDefault} // for Safari
   >
     {children}
-  </Container>;
+  </Container>
+);
 
-PreventDrag.displayName = 'PreventDrag';
+PreventDrag.displayName = "PreventDrag";
 PreventDrag.propTypes = {
-  children: PropTypes.node.isRequired,
+  children: PropTypes.node.isRequired
 };
 
 export default PreventDrag;

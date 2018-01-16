@@ -1,10 +1,10 @@
-import React from 'react';
-import { storiesOf } from '@storybook/react';
-import { withInfo } from '@storybook/addon-info';
-import Select from '.';
+import React from "react";
+import { storiesOf } from "@storybook/react";
+import { withInfo } from "@storybook/addon-info";
+import Select from ".";
 
 class StatefulSelect extends React.Component {
-  state = { value: '' };
+  state = { value: "" };
   onChange = e => this.setState({ value: parseFloat(e.target.value, 10) });
   render() {
     return (
@@ -13,54 +13,54 @@ class StatefulSelect extends React.Component {
         onChange={this.onChange}
         placeholder="選擇資料通道"
         items={[
-          { value: 1, children: 'value 1' },
-          { value: 2, children: 'value 2' },
-          { value: 3, children: 'value 3', disabled: true },
+          { value: 1, children: "value 1" },
+          { value: 2, children: "value 2" },
+          { value: 3, children: "value 3", disabled: true }
         ]}
       />
     );
   }
 }
 
-storiesOf('Select', module)
+storiesOf("Select", module)
   .add(
-    'API - ReadOnly',
+    "API - ReadOnly",
     withInfo({
-      text: 'React controlled component',
-      inline: true,
-    })(() =>
+      text: "React controlled component",
+      inline: true
+    })(() => (
       <Select
         value={2}
         readOnly
         items={[
-          { value: 1, children: 'value 1' },
-          { value: 2, children: 'value 2' },
+          { value: 1, children: "value 1" },
+          { value: 2, children: "value 2" }
         ]}
-      />,
-    ),
+      />
+    ))
   )
   .add(
-    'With kind props',
+    "With kind props",
     withInfo({
-      text: '',
-      inline: true,
-    })(() =>
+      text: "",
+      inline: true
+    })(() => (
       <Select
         value={2}
         readOnly
         kind="warning"
         items={[
-          { value: 1, children: 'value 1' },
-          { value: 2, children: 'value 2' },
+          { value: 1, children: "value 1" },
+          { value: 2, children: "value 2" }
         ]}
-      />,
-    ),
+      />
+    ))
   )
   .add(
-    'With disabled props',
+    "With disabled props",
     withInfo({
-      text: '',
+      text: "",
       inline: true,
-      propTables: [Select],
-    })(() => <StatefulSelect />),
+      propTables: [Select]
+    })(() => <StatefulSelect />)
   );

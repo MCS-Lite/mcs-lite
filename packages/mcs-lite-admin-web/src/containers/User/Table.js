@@ -1,17 +1,17 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import * as R from 'ramda';
+import React from "react";
+import PropTypes from "prop-types";
+import * as R from "ramda";
 import {
   WindowScroller,
   AutoSizer,
   Column,
   Table as RVTable,
-  SortDirection,
-} from 'react-virtualized';
-import P from 'mcs-lite-ui/lib/P';
-import styled from 'styled-components';
-import IconEdit from 'mcs-lite-icon/lib/IconEdit';
-import 'react-virtualized/styles.css'; // only needs to be imported once
+  SortDirection
+} from "react-virtualized";
+import P from "mcs-lite-ui/lib/P";
+import styled from "styled-components";
+import IconEdit from "mcs-lite-icon/lib/IconEdit";
+import "react-virtualized/styles.css"; // only needs to be imported once
 
 export const TABLE_HEIGHT_OFFSET = 220;
 
@@ -65,23 +65,23 @@ class Table extends React.PureComponent {
       PropTypes.shape({
         userId: PropTypes.string.isRequired,
         email: PropTypes.string.isRequired,
-        userName: PropTypes.string.isRequired,
-      }),
+        userName: PropTypes.string.isRequired
+      })
     ),
     checkedList: PropTypes.arrayOf(PropTypes.string).isRequired,
     onCheckedListChange: PropTypes.func.isRequired, // (userIdList) => void
     onEditClick: PropTypes.func.isRequired, // (userId) => void
 
     // React-intl I18n
-    getMessages: PropTypes.func.isRequired,
+    getMessages: PropTypes.func.isRequired
   };
 
   constructor(props) {
     super(props);
     this.state = {
       sortDirection: SortDirection.ASC,
-      sortBy: 'userName',
-      sortedList: props.data,
+      sortBy: "userName",
+      sortedList: props.data
     };
   }
 
@@ -91,8 +91,8 @@ class Table extends React.PureComponent {
 
       this.setState({
         sortedList: this.sortWithState({ sortBy, sortDirection })(
-          nextProps.data,
-        ),
+          nextProps.data
+        )
       });
     }
   }
@@ -101,9 +101,7 @@ class Table extends React.PureComponent {
     this.setState({
       sortBy,
       sortDirection,
-      sortedList: this.sortWithState({ sortBy, sortDirection })(
-        this.props.data,
-      ),
+      sortedList: this.sortWithState({ sortBy, sortDirection })(this.props.data)
     });
   };
 
@@ -111,7 +109,7 @@ class Table extends React.PureComponent {
     const lens = R.prop(sortBy);
 
     return R.sortWith([
-      sortDirection === SortDirection.DESC ? R.descend(lens) : R.ascend(lens),
+      sortDirection === SortDirection.DESC ? R.descend(lens) : R.ascend(lens)
     ]);
   };
 
@@ -120,10 +118,10 @@ class Table extends React.PureComponent {
 
     const isEmpty = R.isEmpty(checkedList);
     const isAllChecked = R.allPass([R.equals(data.length), R.lt(0)])(
-      checkedList.length,
+      checkedList.length
     );
     const onChange = () => {
-      onCheckedListChange(isEmpty ? R.pluck('userId')(data) : []);
+      onCheckedListChange(isEmpty ? R.pluck("userId")(data) : []);
     };
     return <input type="checkbox" checked={isAllChecked} onChange={onChange} />;
   };
@@ -138,7 +136,7 @@ class Table extends React.PureComponent {
       onCheckedListChange(
         isChecked
           ? R.remove(index, 1)(checkedList)
-          : R.append(userId)(checkedList),
+          : R.append(userId)(checkedList)
       );
     };
     return <input type="checkbox" checked={isChecked} onChange={onChange} />;
@@ -146,11 +144,11 @@ class Table extends React.PureComponent {
 
   userNameCellRenderer = ({ rowData }) => {
     const { userName, isActive } = rowData;
-    return <P color={isActive ? 'black' : 'grayDark'}>{userName}</P>;
+    return <P color={isActive ? "black" : "grayDark"}>{userName}</P>;
   };
   emailCellRenderer = ({ rowData }) => {
     const { email, isActive } = rowData;
-    return <P color={isActive ? 'black' : 'grayDark'}>{email}</P>;
+    return <P color={isActive ? "black" : "grayDark"}>{email}</P>;
   };
 
   editCellRenderer = ({ rowData }) => {
@@ -162,8 +160,9 @@ class Table extends React.PureComponent {
     return <StyledIcon size={18} onClick={onClick} />;
   };
 
-  noRowsRenderer = () =>
-    <NoRowWrapper>{this.props.getMessages('noRows')}</NoRowWrapper>;
+  noRowsRenderer = () => (
+    <NoRowWrapper>{this.props.getMessages("noRows")}</NoRowWrapper>
+  );
 
   rowGetter = ({ index }) => this.state.sortedList[index];
 
@@ -178,14 +177,14 @@ class Table extends React.PureComponent {
       editCellRenderer,
       noRowsRenderer,
       rowGetter,
-      onSort,
+      onSort
     } = this;
 
     return (
       <WindowScroller>
-        {({ height }) =>
+        {({ height }) => (
           <AutoSizer disableHeight>
-            {({ width }) =>
+            {({ width }) => (
               <StyledTable
                 width={width}
                 height={height - TABLE_HEIGHT_OFFSET}
@@ -199,34 +198,36 @@ class Table extends React.PureComponent {
                 sortDirection={sortDirection}
               >
                 <Column
-                  dataKey={'userId'}
+                  dataKey={"userId"}
                   headerRenderer={checkedHeaderRenderer}
                   cellRenderer={checkedCellRenderer}
                   width={14}
                   flexShrink={0}
                 />
                 <Column
-                  label={t('name')}
+                  label={t("name")}
                   dataKey="userName"
                   cellRenderer={userNameCellRenderer}
                   width={300}
                   flexGrow={1}
                 />
                 <Column
-                  label={t('email')}
+                  label={t("email")}
                   dataKey="email"
                   cellRenderer={emailCellRenderer}
                   width={300}
                   flexGrow={1}
                 />
                 <Column
-                  dataKey={'userId'}
+                  dataKey={"userId"}
                   cellRenderer={editCellRenderer}
                   width={40}
                   flexShrink={0}
                 />
-              </StyledTable>}
-          </AutoSizer>}
+              </StyledTable>
+            )}
+          </AutoSizer>
+        )}
       </WindowScroller>
     );
   }

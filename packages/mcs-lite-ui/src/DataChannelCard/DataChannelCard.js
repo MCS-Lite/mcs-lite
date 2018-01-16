@@ -1,13 +1,13 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import styled from 'styled-components';
-import TextTruncate from 'react-text-truncate';
-import Card from '../Card';
-import Heading from '../Heading';
-import Small from '../Small';
-import P from '../P';
-import Hr from '../Hr';
-import isString from '../utils/isString';
+import React from "react";
+import PropTypes from "prop-types";
+import styled from "styled-components";
+import TextTruncate from "react-text-truncate";
+import Card from "../Card";
+import Heading from "../Heading";
+import Small from "../Small";
+import P from "../P";
+import Hr from "../Hr";
+import isString from "../utils/isString";
 
 const setHeightByLine = line => props =>
   `${parseFloat(props.theme.fontSize.p, 10) *
@@ -68,7 +68,7 @@ const DataChannelCard = ({
   subtitle,
   description,
   ...otherProps
-}) =>
+}) => (
   <Wrapper {...otherProps}>
     <Header>{header}</Header>
     <Body>{children}</Body>
@@ -76,20 +76,22 @@ const DataChannelCard = ({
       <StyledHeading level={4}>{title}</StyledHeading>
       <StyledSmall>{subtitle}</StyledSmall>
       {isString(description) && <StyledHr />}
-      {isString(description) &&
+      {isString(description) && (
         <Description>
           <TextTruncate line={2} truncateText=" ..." text={description} />
-        </Description>}
+        </Description>
+      )}
     </Footer>
-  </Wrapper>;
+  </Wrapper>
+);
 
-DataChannelCard.displayName = 'DataChannelCard';
+DataChannelCard.displayName = "DataChannelCard";
 DataChannelCard.propTypes = {
   header: PropTypes.node,
   children: PropTypes.node.isRequired,
   title: PropTypes.string.isRequired,
   subtitle: PropTypes.string.isRequired,
-  description: PropTypes.string,
+  description: PropTypes.string
 };
 
 export default DataChannelCard;

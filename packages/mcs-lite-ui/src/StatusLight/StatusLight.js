@@ -1,6 +1,6 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import styled from 'styled-components';
+import React from "react";
+import PropTypes from "prop-types";
+import styled from "styled-components";
 
 export const Svg = styled.svg`
   width: 12px;
@@ -11,17 +11,18 @@ export const Svg = styled.svg`
   }
 `;
 
-const StatusLight = props =>
+const StatusLight = props => (
   <Svg viewBox="0 0 20 20" {...props}>
     <circle cx="10" cy="10" r="10" />
-  </Svg>;
+  </Svg>
+);
 
-StatusLight.displayName = 'StatusLight';
+StatusLight.displayName = "StatusLight";
 StatusLight.propTypes = {
-  color: PropTypes.string,
+  color: PropTypes.string
 };
 StatusLight.defaultProps = {
-  color: 'grayDark',
+  color: "grayDark"
 };
 
 export default StatusLight;

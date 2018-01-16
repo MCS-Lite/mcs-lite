@@ -1,24 +1,20 @@
-import React from 'react';
-import { storiesOf } from '@storybook/react';
-import { withInfo } from '@storybook/addon-info';
-import Hr from '.';
+import React from "react";
+import { storiesOf } from "@storybook/react";
+import { withInfo } from "@storybook/addon-info";
+import Hr from ".";
 
-storiesOf('Hr', module)
+storiesOf("Hr", module)
   .add(
-    'API',
+    "API",
     withInfo({
-      text: 'default',
-      inline: true,
-    })(() => <Hr />),
+      text: "default",
+      inline: true
+    })(() => <Hr />)
   )
   .add(
-    'With children',
+    "With children",
     withInfo({
-      text: 'With string inside.',
-      inline: true,
-    })(() =>
-      <Hr>
-        String
-      </Hr>,
-    ),
+      text: "With string inside.",
+      inline: true
+    })(() => <Hr>String</Hr>)
   );

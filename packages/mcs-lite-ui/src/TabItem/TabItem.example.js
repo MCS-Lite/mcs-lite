@@ -1,15 +1,15 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { storiesOf } from '@storybook/react';
-import { withInfo } from '@storybook/addon-info';
-import { action } from '@storybook/addon-actions';
-import TabItem from '.';
+import React from "react";
+import PropTypes from "prop-types";
+import { storiesOf } from "@storybook/react";
+import { withInfo } from "@storybook/addon-info";
+import { action } from "@storybook/addon-actions";
+import TabItem from ".";
 
 class StatefulTabItems extends React.Component {
   static propTypes = {
-    items: PropTypes.arrayOf(PropTypes.number).isRequired,
+    items: PropTypes.arrayOf(PropTypes.number).isRequired
   };
-  state = { value: '' };
+  state = { value: "" };
   onChange = (e, value) => this.setState({ value });
   render() {
     const { items } = this.props;
@@ -17,50 +17,54 @@ class StatefulTabItems extends React.Component {
     const { value } = this.state;
     return (
       <div>
-        {items.map(i =>
+        {items.map(i => (
           <TabItem key={i} value={i} onClick={onChange} active={i === value}>
             {`Tab ${i}`}
-          </TabItem>,
-        )}
+          </TabItem>
+        ))}
       </div>
     );
   }
 }
 
-storiesOf('TabItem', module)
+storiesOf("TabItem", module)
   .add(
-    'API',
+    "API",
     withInfo({
-      text: '',
-      inline: true,
-    })(() =>
+      text: "",
+      inline: true
+    })(() => (
       <div>
-        <TabItem value="key" onClick={action('onClick')}>
+        <TabItem value="key" onClick={action("onClick")}>
           TabItem
         </TabItem>
-        <TabItem value="key" active onClick={action('onClick')}>
+        <TabItem value="key" active onClick={action("onClick")}>
           Active TabItem
         </TabItem>
-      </div>,
-    ),
+      </div>
+    ))
   )
   .add(
-    'With color props',
+    "With color props",
     withInfo({
-      text: '',
-      inline: true,
-    })(() =>
+      text: "",
+      inline: true
+    })(() => (
       <div>
-        <TabItem value={1} color="warning">TabItem 1</TabItem>
-        <TabItem value={2} color="warning" active>TabItem 2</TabItem>
-      </div>,
-    ),
+        <TabItem value={1} color="warning">
+          TabItem 1
+        </TabItem>
+        <TabItem value={2} color="warning" active>
+          TabItem 2
+        </TabItem>
+      </div>
+    ))
   )
   .add(
-    'With state',
+    "With state",
     withInfo({
-      text: 'This is a react controlled component.',
+      text: "This is a react controlled component.",
       inline: true,
-      propTables: [TabItem],
-    })(() => <StatefulTabItems items={[1, 2, 3]} />),
+      propTables: [TabItem]
+    })(() => <StatefulTabItems items={[1, 2, 3]} />)
   );

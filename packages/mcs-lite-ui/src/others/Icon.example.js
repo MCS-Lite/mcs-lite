@@ -1,13 +1,13 @@
-import React from 'react';
-import { storiesOf } from '@storybook/react';
-import { withInfo } from '@storybook/addon-info';
-import styled from 'styled-components';
-import MorphReplace from 'react-svg-morph/lib/MorphReplace';
-import * as Icons from 'mcs-lite-icon/lib/index';
-import Heading from '../Heading';
-import Card from '../Card';
-import P from '../P';
-import Spin from '../Spin';
+import React from "react";
+import { storiesOf } from "@storybook/react";
+import { withInfo } from "@storybook/addon-info";
+import styled from "styled-components";
+import MorphReplace from "react-svg-morph/lib/MorphReplace";
+import * as Icons from "mcs-lite-icon/lib/index";
+import Heading from "../Heading";
+import Card from "../Card";
+import P from "../P";
+import Spin from "../Spin";
 
 const CardWrapper = styled.div`
   display: flex;
@@ -50,65 +50,68 @@ class StatefulMorphReplace extends React.Component {
   render() {
     return (
       <MorphReplace width={24} height={24}>
-        {this.state.checked
-          ? <Icons.IconMenu key="menu" />
-          : <Icons.IconArrowLeft key="arrow" />}
+        {this.state.checked ? (
+          <Icons.IconMenu key="menu" />
+        ) : (
+          <Icons.IconArrowLeft key="arrow" />
+        )}
       </MorphReplace>
     );
   }
 }
 
-storiesOf('Icon [mcs-lite-icon]', module)
+storiesOf("Icon [mcs-lite-icon]", module)
   .add(
-    'API',
+    "API",
     withInfo({
-      text: '',
-      inline: true,
-    })(() => <Icons.IconDelete />),
+      text: "",
+      inline: true
+    })(() => <Icons.IconDelete />)
   )
   .add(
-    'Spin Icon',
+    "Spin Icon",
     withInfo({
-      text: 'SVG Icon 請使用偶數（Safari）',
-      inline: true,
-    })(() =>
+      text: "SVG Icon 請使用偶數（Safari）",
+      inline: true
+    })(() => (
       <Spin>
         <Icons.IconLoading size={14} />
-      </Spin>,
-    ),
+      </Spin>
+    ))
   )
   .add(
-    'MorphReplace',
+    "MorphReplace",
     withInfo({
-      text: 'https://github.com/gorangajic/react-svg-morph',
+      text: "https://github.com/gorangajic/react-svg-morph",
       inline: true,
-      propTables: [MorphReplace],
-    })(() => <StatefulMorphReplace />),
+      propTables: [MorphReplace]
+    })(() => <StatefulMorphReplace />)
   )
   .add(
-    'Icon list, Custom color and size [Skip]',
+    "Icon list, Custom color and size [Skip]",
     withInfo({
-      text: '',
+      text: "",
       inline: false,
-      propTables: false,
-    })(() =>
+      propTables: false
+    })(() => (
       <div>
         <Heading>MCS Lite Icon</Heading>
         <CodeBlock color="primary" level={3}>
-          {'$ npm i mcs-lite-icon --save'}<br />
+          {"$ npm i mcs-lite-icon --save"}
+          <br />
           {"import { IconName } from 'mcs-lite-icon';"}
         </CodeBlock>
         <CardWrapper>
-          {Object.keys(Icons).map(name =>
+          {Object.keys(Icons).map(name => (
             <StyledCard key={name}>
               <Icon color="grayBase" level={1}>
                 {React.createElement(Icons[name])}
               </Icon>
               <P color="grayBase">{`<${name} />`}</P>
               <IconPath color="primary">mcs-lite-icon/lib/{name}</IconPath>
-            </StyledCard>,
-          )}
+            </StyledCard>
+          ))}
         </CardWrapper>
-      </div>,
-    ),
+      </div>
+    ))
   );

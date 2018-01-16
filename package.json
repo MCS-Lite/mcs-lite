@@ -2,41 +2,43 @@
   "private": true,
   "scripts": {
     "postinstall": "lerna link && ./tasks/build.sh",
-    "clean": "rm -rf node_modules && rm -rf ./packages/*/node_modules && rm -rf ./packages/*/.DS_Store && rm -rf ./packages/*/*.log",
-    "stylelint": "stylelint './**/*.js' --ignore-path .linterignore",
-    "eslint": "eslint ./ --ignore-path .linterignore",
-    "eslint-check": "eslint --print-config .eslintrc | eslint-config-prettier-check",
+    "clean":
+      "rm -rf node_modules && rm -rf ./packages/*/node_modules && rm -rf ./packages/*/.DS_Store && rm -rf ./packages/*/*.log",
+    "eslint": "eslint ./",
+    "eslint-check":
+      "eslint --print-config .eslintrc | eslint-config-prettier-check",
     "flow": "flow check",
     "release": "lerna publish",
     "prerelease": "./tasks/build.sh",
-    "danger": "danger run --verbose",
-    "format": "prettier --trailing-comma all --single-quote --write '*.js' 'packages/*/*.js' 'packages/*/.storybook/*.js' 'packages/*/!(node_modules|build|lib|storybook-static|coverage|.next|_book)/**/*.js'",
+    "danger": "danger ci",
+    "format":
+      "prettier --trailing-comma all --single-quote --write '*.{js,json,md}' 'packages/*/*.{js,json}' 'packages/!(mcs-lite-introduction)/*.md' 'packages/*/.storybook/*.js' 'packages/*/!(build|lib|storybook-static|coverage|.next|_book)/**/*.{js,json}'",
     "license": "license-checker --csv --out docs/licenses.csv",
-    "changelog": "lerna-changelog"
+    "changelog": "lerna-changelog",
+    "precommit": "lint-staged"
   },
-  "workspaces": [
-    "packages/*"
-  ],
+  "workspaces": ["packages/*"],
   "devDependencies": {
     "babel-eslint": "8.2.1",
     "codecov": "3.0.0",
-    "danger": "2.1.10",
+    "danger": "3.0.4",
     "eslint": "4.15.0",
-    "eslint-config-airbnb": "15.1.0",
+    "eslint-config-airbnb": "16.1.0",
     "eslint-config-prettier": "2.9.0",
     "eslint-plugin-import": "2.8.0",
     "eslint-plugin-jest": "21.6.2",
-    "eslint-plugin-jsx-a11y": "5.1.1",
+    "eslint-plugin-jsx-a11y": "6.0.3",
     "eslint-plugin-prettier": "2.5.0",
     "eslint-plugin-react": "7.5.1",
-    "flow-bin": "0.51.1",
-    "lerna": "2.7.0",
+    "flow-bin": "0.63.1",
+    "husky": "^0.14.3",
+    "lerna": "2.7.1",
     "lerna-changelog": "0.7.0",
     "license-checker": "15.0.0",
-    "prettier": "1.4.4",
-    "stylelint": "8.4.0"
+    "lint-staged": "^6.0.0",
+    "prettier": "1.10.2"
   },
-  "stylelint": {
-    "extends": "./packages/stylelint-config-mcs-lite/index.js"
+  "lint-staged": {
+    "*.{js,json,md}": ["prettier --write", "git add"]
   }
 }
