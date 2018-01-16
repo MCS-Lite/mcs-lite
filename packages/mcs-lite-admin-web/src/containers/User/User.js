@@ -1,25 +1,25 @@
-import React from "react";
-import PropTypes from "prop-types";
-import * as R from "ramda";
-import { Observable } from "rxjs/Observable";
-import Helmet from "react-helmet";
-import InputGroup from "mcs-lite-ui/lib/InputGroup";
-import Input from "mcs-lite-ui/lib/Input";
-import Label from "mcs-lite-ui/lib/Label";
-import TabItem from "mcs-lite-ui/lib/TabItem";
-import P from "mcs-lite-ui/lib/P";
-import FormGroup from "mcs-lite-ui/lib/FormGroup";
-import Button from "mcs-lite-ui/lib/Button";
-import SpaceTop from "mcs-lite-ui/lib/SpaceTop";
-import A from "mcs-lite-ui/lib/A";
-import validators from "mcs-lite-ui/lib/utils/validators";
-import isEmail from "validator/lib/isEmail";
-import emptyFunction from "mcs-lite-ui/lib/utils/emptyFunction";
-import IconSearch from "mcs-lite-icon/lib/IconSearch";
-import IconAdd from "mcs-lite-icon/lib/IconAdd";
-import IconDelete from "mcs-lite-icon/lib/IconDelete";
-import DashboardTitle from "../../components/DashboardTitle";
-import DialogConfirm from "../../components/DialogConfirm";
+import React from 'react';
+import PropTypes from 'prop-types';
+import * as R from 'ramda';
+import { Observable } from 'rxjs/Observable';
+import Helmet from 'react-helmet';
+import InputGroup from 'mcs-lite-ui/lib/InputGroup';
+import Input from 'mcs-lite-ui/lib/Input';
+import Label from 'mcs-lite-ui/lib/Label';
+import TabItem from 'mcs-lite-ui/lib/TabItem';
+import P from 'mcs-lite-ui/lib/P';
+import FormGroup from 'mcs-lite-ui/lib/FormGroup';
+import Button from 'mcs-lite-ui/lib/Button';
+import SpaceTop from 'mcs-lite-ui/lib/SpaceTop';
+import A from 'mcs-lite-ui/lib/A';
+import validators from 'mcs-lite-ui/lib/utils/validators';
+import isEmail from 'validator/lib/isEmail';
+import emptyFunction from 'mcs-lite-ui/lib/utils/emptyFunction';
+import IconSearch from 'mcs-lite-icon/lib/IconSearch';
+import IconAdd from 'mcs-lite-icon/lib/IconAdd';
+import IconDelete from 'mcs-lite-icon/lib/IconDelete';
+import DashboardTitle from '../../components/DashboardTitle';
+import DialogConfirm from '../../components/DialogConfirm';
 import {
   InputFilterWrapper,
   FooterWrapper,
@@ -27,72 +27,72 @@ import {
   TabWrapper,
   RadioWrapper,
   ErrorMessageP,
-  InputFileWrapper
-} from "./styled-components";
-import Table from "./Table";
+  InputFileWrapper,
+} from './styled-components';
+import Table from './Table';
 import {
   componentFromStream,
-  createEventHandler
-} from "../../utils/recomposeHelper";
-import checkUserAvailableAPI from "../../utils/checkUserAvailableAPI";
+  createEventHandler,
+} from '../../utils/recomposeHelper';
+import checkUserAvailableAPI from '../../utils/checkUserAvailableAPI';
 
-export const CHANGE_PASSWORD = "changePassword";
-export const ACCOUNT_STATUS = "accountStatus";
-export const ADD_USER_TYPE_ONE = "one";
-export const ADD_USER_TYPE_BATCH = "batch";
+export const CHANGE_PASSWORD = 'changePassword';
+export const ACCOUNT_STATUS = 'accountStatus';
+export const ADD_USER_TYPE_ONE = 'one';
+export const ADD_USER_TYPE_BATCH = 'batch';
 
 const User = componentFromStream(props$ => {
   const {
     handler: onAddDialogShow,
-    stream: onAddDialogShow$
+    stream: onAddDialogShow$,
   } = createEventHandler();
   const {
     handler: onAddDialogHide,
-    stream: onAddDialogHide$
+    stream: onAddDialogHide$,
   } = createEventHandler();
   const {
     handler: onEditDialogShow,
-    stream: onEditDialogShow$
+    stream: onEditDialogShow$,
   } = createEventHandler();
   const {
     handler: onEditDialogHide,
-    stream: onEditDialogHide$
+    stream: onEditDialogHide$,
   } = createEventHandler();
   const {
     handler: onDeleteDialogShow,
-    stream: onDeleteDialogShow$
+    stream: onDeleteDialogShow$,
   } = createEventHandler();
   const {
     handler: onDeleteDialogHide,
-    stream: onDeleteDialogHide$
+    stream: onDeleteDialogHide$,
   } = createEventHandler();
   const {
     handler: onFilterChange,
-    stream: onFilterChange$
+    stream: onFilterChange$,
   } = createEventHandler();
   const { handler: onClearClick, stream: onClearClick$ } = createEventHandler();
   const {
     handler: onCheckedListChange,
-    stream: onCheckedListChange$
+    stream: onCheckedListChange$,
   } = createEventHandler();
   const {
     handler: onDeleteSubmit,
-    stream: onDeleteSubmit$
+    stream: onDeleteSubmit$,
   } = createEventHandler();
   const { handler: onAddSubmit, stream: onAddSubmit$ } = createEventHandler();
   const { handler: onEditSubmit, stream: onEditSubmit$ } = createEventHandler();
   const {
     handler: onFormDataChange,
-    stream: onFormDataChange$
+    stream: onFormDataChange$,
   } = createEventHandler();
   const { handler: onTabChange, stream: onTabChange$ } = createEventHandler();
   const {
     handler: onAddUserTypeChange,
-    stream: onAddUserTypeChange$
+    stream: onAddUserTypeChange$,
   } = createEventHandler();
   const {
     handler: onActiveChange,
-    stream: onActiveChange$
+    stream: onActiveChange$,
   } = createEventHandler();
   const { handler: onCSVChange, stream: onCSVChange$ } = createEventHandler();
   const { handler: onEmailBlur, stream: onEmailBlur$ } = createEventHandler();
@@ -101,66 +101,68 @@ const User = componentFromStream(props$ => {
   const isAddDialogShow$ = Observable.merge(
     onAddDialogShow$.mapTo(true),
     onAddDialogHide$.do(e => e.preventDefault()).mapTo(false),
-    onAddSubmit$.mapTo(false)
+    onAddSubmit$.mapTo(false),
   ).startWith(false);
   const isEditDialogShow$ = Observable.merge(
     onEditDialogShow$.mapTo(true),
     onEditDialogHide$.do(e => e.preventDefault()).mapTo(false),
-    onEditSubmit$.mapTo(false)
+    onEditSubmit$.mapTo(false),
   ).startWith(false);
   const isDeleteDialogShow$ = Observable.merge(
     onDeleteDialogShow$.mapTo(true),
     onDeleteDialogHide$.mapTo(false),
-    onDeleteSubmit$.mapTo(false)
+    onDeleteSubmit$.mapTo(false),
   ).startWith(false);
 
   const filterValue$ = Observable.merge(
-    onFilterChange$.pluck("target", "value"),
-    onClearClick$.mapTo("")
-  ).startWith("");
-  const users$ = props$.pluck("users");
+    onFilterChange$.pluck('target', 'value'),
+    onClearClick$.mapTo(''),
+  ).startWith('');
+  const users$ = props$.pluck('users');
   const checkedList$ = Observable.merge(
     onCheckedListChange$,
-    users$.mapTo([])
+    users$.mapTo([]),
   ).startWith([]);
   const data$ = users$.combineLatest(filterValue$, (users, filterValue) =>
-    users.filter(user => `${user.email} ${user.userName}`.includes(filterValue))
+    users.filter(user =>
+      `${user.email} ${user.userName}`.includes(filterValue),
+    ),
   );
 
   const selectedUserId$ = onEditDialogShow$;
   const selectedTab$ = onTabChange$.startWith(CHANGE_PASSWORD);
 
   const initialFormData = {
-    userName: "",
-    email: "",
-    password: "",
-    newPassword1: "",
-    newPassword2: "",
+    userName: '',
+    email: '',
+    password: '',
+    newPassword1: '',
+    newPassword2: '',
     isActive: true,
     addUserType: ADD_USER_TYPE_ONE,
-    csv: {}
+    csv: {},
   };
   const formData$ = Observable.merge(
     onFormDataChange$.map(e => ({
-      [e.target.id]: e.target.value
+      [e.target.id]: e.target.value,
     })),
     onCSVChange$.map(e => ({
-      [e.target.id]: e.target.files[0]
+      [e.target.id]: e.target.files[0],
     })),
     onActiveChange$.map(e => ({
-      isActive: e.target.value === "true"
+      isActive: e.target.value === 'true',
     })),
     onAddUserTypeChange$.map(e => ({
-      addUserType: e.target.value
+      addUserType: e.target.value,
     })),
     isAddDialogShow$.filter(e => !!e).mapTo(initialFormData),
     isEditDialogShow$.filter(e => !!e).mapTo(initialFormData),
     selectedUserId$.withLatestFrom(data$, (selectedUserId, data) => ({
       isActive: R.pipe(
-        R.find(R.propEq("userId", selectedUserId)),
-        R.prop("isActive")
-      )(data)
-    }))
+        R.find(R.propEq('userId', selectedUserId)),
+        R.prop('isActive'),
+      )(data),
+    })),
   )
     .startWith(initialFormData)
     .scan(R.merge)
@@ -169,7 +171,7 @@ const User = componentFromStream(props$ => {
   const isEmailAvalable$ = onEmailBlur$
     .withLatestFrom(props$, formData$, (e, props, formData) => ({
       accessToken: props.accessToken,
-      email: formData.email
+      email: formData.email,
     }))
     .switchMap(checkUserAvailableAPI)
     .startWith(true)
@@ -178,38 +180,38 @@ const User = componentFromStream(props$ => {
   const formValidation$ = formData$
     .combineLatest(isEmailAvalable$, (formData, isEmailAvalable) => ({
       formData,
-      isEmailAvalable
+      isEmailAvalable,
     }))
     .withLatestFrom(props$, ({ formData: d, isEmailAvalable }, props) => ({
       email:
         (d.email &&
           !isEmail(d.email) &&
-          props.getMessages("email.formatError")) ||
-        (d.email && !isEmailAvalable && props.getMessages("email.existError")),
+          props.getMessages('email.formatError')) ||
+        (d.email && !isEmailAvalable && props.getMessages('email.existError')),
       password:
         validators.isLt8(d.password) &&
-        props.getMessages("password.lengthError"),
+        props.getMessages('password.lengthError'),
       newPassword1:
         validators.isLt8(d.newPassword1) &&
-        props.getMessages("password.lengthError"),
+        props.getMessages('password.lengthError'),
       newPassword2:
         validators.isNotEqual(d.newPassword1, d.newPassword2) &&
-        props.getMessages("newPassword2.error")
+        props.getMessages('newPassword2.error'),
     }))
     .startWith({})
     .shareReplay(1);
 
   const isAddSubmitError$ = formValidation$.map(
-    d => Boolean(d.email) || Boolean(d.password)
+    d => Boolean(d.email) || Boolean(d.password),
   );
   const isEditSubmitError$ = formValidation$.map(
-    d => Boolean(d.newPassword1) || Boolean(d.newPassword2)
+    d => Boolean(d.newPassword1) || Boolean(d.newPassword2),
   );
 
   // Remind: There are four fetch Side-effects below.
   props$
     .first()
-    .pluck("fetchUsers")
+    .pluck('fetchUsers')
     .subscribe(R.call);
   onAddSubmit$
     .do(e => e.preventDefault())
@@ -220,22 +222,22 @@ const User = componentFromStream(props$ => {
           R.always(
             props.createUser.bind(
               null,
-              R.pick(["userName", "email", "password"])(formData),
-              props.getMessages("addUser.success")
-            )
-          )
+              R.pick(['userName', 'email', 'password'])(formData),
+              props.getMessages('addUser.success'),
+            ),
+          ),
         ],
         [
           R.equals(ADD_USER_TYPE_BATCH),
           R.always(
             props.createUserByCSV.bind(
               null,
-              R.pick(["csv"])(formData),
-              props.getMessages("addUser.success")
-            )
-          )
-        ]
-      ])(formData.addUserType)
+              R.pick(['csv'])(formData),
+              props.getMessages('addUser.success'),
+            ),
+          ),
+        ],
+      ])(formData.addUserType),
     )
     .subscribe(R.call);
   onEditSubmit$
@@ -253,10 +255,10 @@ const User = componentFromStream(props$ => {
               props.changePasswordById.bind(
                 null,
                 selectedUserId,
-                R.prop("newPassword1")(formData),
-                props.getMessages("changePassword.success")
-              )
-            )
+                R.prop('newPassword1')(formData),
+                props.getMessages('changePassword.success'),
+              ),
+            ),
           ],
           [
             R.equals(ACCOUNT_STATUS),
@@ -264,12 +266,12 @@ const User = componentFromStream(props$ => {
               props.putIsActiveById.bind(
                 null,
                 selectedUserId,
-                R.prop("isActive")(formData),
-                props.getMessages("accountStatus.success")
-              )
-            )
-          ]
-        ])(selectedTab)
+                R.prop('isActive')(formData),
+                props.getMessages('accountStatus.success'),
+              ),
+            ),
+          ],
+        ])(selectedTab),
     )
     .subscribe(R.call);
   onDeleteSubmit$
@@ -277,8 +279,8 @@ const User = componentFromStream(props$ => {
       props.deleteUsers.bind(
         null,
         checkedList,
-        props.getMessages("deleteUser.success")
-      )
+        props.getMessages('deleteUser.success'),
+      ),
     )
     .subscribe(R.call);
 
@@ -306,14 +308,14 @@ const User = componentFromStream(props$ => {
       formValidation,
       isAddSubmitError,
       isEditSubmitError,
-      selectedTab
+      selectedTab,
     ) => (
       <div>
         {/* Title */}
         <Helmet>
-          <title>{t("userManagement")}</title>
+          <title>{t('userManagement')}</title>
         </Helmet>
-        <DashboardTitle title={t("userManagement")} />
+        <DashboardTitle title={t('userManagement')} />
 
         {/* Dialog - Add user  */}
         <StyledCommonDialog
@@ -322,9 +324,9 @@ const User = componentFromStream(props$ => {
           onHide={onAddDialogHide}
           onSubmit={isAddSubmitError ? emptyFunction : onAddSubmit}
         >
-          <header>{t("addUser")}</header>
+          <header>{t('addUser')}</header>
           <main>
-            <Label required>{t("addUserType")}</Label>
+            <Label required>{t('addUserType')}</Label>
             <SpaceTop height={5} />
             <RadioWrapper>
               <label htmlFor="one">
@@ -335,7 +337,7 @@ const User = componentFromStream(props$ => {
                   onChange={onAddUserTypeChange}
                   checked={formData.addUserType === ADD_USER_TYPE_ONE}
                 />
-                <span>{t("addUserType.one")}</span>
+                <span>{t('addUserType.one')}</span>
               </label>
 
               <label htmlFor="batch">
@@ -346,7 +348,7 @@ const User = componentFromStream(props$ => {
                   onChange={onAddUserTypeChange}
                   checked={formData.addUserType === ADD_USER_TYPE_BATCH}
                 />
-                <span>{t("addUserType.batch")}</span>
+                <span>{t('addUserType.batch')}</span>
               </label>
             </RadioWrapper>
             <SpaceTop height={10} />
@@ -354,18 +356,18 @@ const User = componentFromStream(props$ => {
             {formData.addUserType === ADD_USER_TYPE_ONE && (
               <FormGroup>
                 <Label htmlFor="userName" required>
-                  {t("userName")}
+                  {t('userName')}
                 </Label>
                 <Input
                   id="userName"
                   type="text"
                   value={formData.userName}
                   onChange={onFormDataChange}
-                  placeholder={t("userName.placeholder")}
+                  placeholder={t('userName.placeholder')}
                   required
                 />
                 <Label htmlFor="email" required>
-                  {t("email")}
+                  {t('email')}
                 </Label>
                 <Input
                   id="email"
@@ -373,7 +375,7 @@ const User = componentFromStream(props$ => {
                   value={formData.email}
                   onChange={onFormDataChange}
                   onBlur={onEmailBlur}
-                  placeholder={t("email.placeholder")}
+                  placeholder={t('email.placeholder')}
                   required
                 />
                 {formValidation.email && (
@@ -382,14 +384,14 @@ const User = componentFromStream(props$ => {
                   </ErrorMessageP>
                 )}
                 <Label htmlFor="password" required>
-                  {t("password")}
+                  {t('password')}
                 </Label>
                 <Input
                   id="password"
                   type="password"
                   value={formData.password}
                   onChange={onFormDataChange}
-                  placeholder={t("password.placeholder")}
+                  placeholder={t('password.placeholder')}
                   required
                 />
                 {formValidation.password && (
@@ -403,7 +405,7 @@ const User = componentFromStream(props$ => {
             {formData.addUserType === ADD_USER_TYPE_BATCH && (
               <FormGroup>
                 <Label htmlFor="uploadCSV" required>
-                  {t("uploadCSV")}
+                  {t('uploadCSV')}
                 </Label>
                 <InputFileWrapper>
                   <Input
@@ -416,15 +418,15 @@ const User = componentFromStream(props$ => {
                   <InputGroup>
                     <Input
                       type="text"
-                      value={formData.csv.name || ""}
+                      value={formData.csv.name || ''}
                       onChange={emptyFunction}
                       placeholder={
-                        formData.csv.name ? "" : t("uploadCSV.placeholder")
+                        formData.csv.name ? '' : t('uploadCSV.placeholder')
                       }
                       readOnly
                     />
                     <Button onClick={emptyFunction}>
-                      {t("uploadCSV.button")}
+                      {t('uploadCSV.button')}
                     </Button>
                   </InputGroup>
                 </InputFileWrapper>
@@ -438,13 +440,15 @@ const User = componentFromStream(props$ => {
           </main>
           <footer>
             <Button kind="default" onClick={onAddDialogHide}>
-              {t("cancel")}
+              {t('cancel')}
             </Button>
             <Button
               component="input"
               type="submit"
               value={t(
-                formData.addUserType === ADD_USER_TYPE_BATCH ? "upload" : "save"
+                formData.addUserType === ADD_USER_TYPE_BATCH
+                  ? 'upload'
+                  : 'save',
               )}
               disabled={isAddSubmitError}
             />
@@ -458,7 +462,7 @@ const User = componentFromStream(props$ => {
           onHide={onEditDialogHide}
           onSubmit={isEditSubmitError ? emptyFunction : onEditSubmit}
         >
-          <header>{t("edit")}</header>
+          <header>{t('edit')}</header>
           <main>
             <TabWrapper>
               <TabItem
@@ -466,28 +470,28 @@ const User = componentFromStream(props$ => {
                 onClick={(e, value) => onTabChange(value)}
                 active={selectedTab === CHANGE_PASSWORD}
               >
-                {t("changePassword")}
+                {t('changePassword')}
               </TabItem>
               <TabItem
                 value={ACCOUNT_STATUS}
                 onClick={(e, value) => onTabChange(value)}
                 active={selectedTab === ACCOUNT_STATUS}
               >
-                {t("accountStatus")}
+                {t('accountStatus')}
               </TabItem>
             </TabWrapper>
 
             {selectedTab === CHANGE_PASSWORD && (
               <FormGroup>
                 <Label htmlFor="newPassword1" required>
-                  {t("newPassword1")}
+                  {t('newPassword1')}
                 </Label>
                 <Input
                   id="newPassword1"
                   type="password"
                   value={formData.newPassword1}
                   onChange={onFormDataChange}
-                  placeholder={t("newPassword1.placeholder")}
+                  placeholder={t('newPassword1.placeholder')}
                   required
                 />
                 {formValidation.newPassword1 && (
@@ -496,14 +500,14 @@ const User = componentFromStream(props$ => {
                   </ErrorMessageP>
                 )}
                 <Label htmlFor="newPassword2" required>
-                  {t("newPassword2")}
+                  {t('newPassword2')}
                 </Label>
                 <Input
                   id="newPassword2"
                   type="password"
                   value={formData.newPassword2}
                   onChange={onFormDataChange}
-                  placeholder={t("newPassword2.placeholder")}
+                  placeholder={t('newPassword2.placeholder')}
                   required
                 />
                 {formValidation.newPassword2 && (
@@ -516,11 +520,11 @@ const User = componentFromStream(props$ => {
 
             {selectedTab === ACCOUNT_STATUS && (
               <FormGroup>
-                <P>{t("accountStatus.desc")}</P>
+                <P>{t('accountStatus.desc')}</P>
                 <SpaceTop height={10} />
 
                 <RadioWrapper>
-                  <P>{t("accountStatus.label")}</P>
+                  <P>{t('accountStatus.label')}</P>
 
                   <label htmlFor="active">
                     <input
@@ -530,7 +534,7 @@ const User = componentFromStream(props$ => {
                       onChange={onActiveChange}
                       checked={formData.isActive}
                     />
-                    <span>{t("active")}</span>
+                    <span>{t('active')}</span>
                   </label>
 
                   <label htmlFor="inactive">
@@ -541,7 +545,7 @@ const User = componentFromStream(props$ => {
                       onChange={onActiveChange}
                       checked={!formData.isActive}
                     />
-                    <span>{t("inactive")}</span>
+                    <span>{t('inactive')}</span>
                   </label>
                 </RadioWrapper>
               </FormGroup>
@@ -549,12 +553,12 @@ const User = componentFromStream(props$ => {
           </main>
           <footer>
             <Button kind="default" onClick={onEditDialogHide}>
-              {t("cancel")}
+              {t('cancel')}
             </Button>
             <Button
               component="input"
               type="submit"
-              value={t("save")}
+              value={t('save')}
               disabled={isEditSubmitError}
             />
           </footer>
@@ -566,7 +570,7 @@ const User = componentFromStream(props$ => {
           onCancel={onDeleteDialogHide}
           onSubmit={onDeleteSubmit}
         >
-          {t("delete.confirm")}
+          {t('delete.confirm')}
         </DialogConfirm>
 
         {/* Filter */}
@@ -574,7 +578,7 @@ const User = componentFromStream(props$ => {
         <InputFilterWrapper>
           <InputGroup>
             <Input
-              placeholder={t("inputUsernameEmail")}
+              placeholder={t('inputUsernameEmail')}
               onChange={onFilterChange}
               value={filterValue}
             />
@@ -582,7 +586,7 @@ const User = componentFromStream(props$ => {
               <IconSearch size={18} />
             </Button>
           </InputGroup>
-          <A onClick={onClearClick}>{t("clearFilter")}</A>
+          <A onClick={onClearClick}>{t('clearFilter')}</A>
         </InputFilterWrapper>
         <SpaceTop height={10} />
 
@@ -600,21 +604,21 @@ const User = componentFromStream(props$ => {
           {R.isEmpty(checkedList) ? (
             <A onClick={onAddDialogShow}>
               <IconAdd size={18} />
-              <div>{t("addUser")}</div>
+              <div>{t('addUser')}</div>
             </A>
           ) : (
             <A onClick={onDeleteDialogShow}>
               <IconDelete size={18} />
-              <div>{t("deleteUser", { length: checkedList.length })}</div>
+              <div>{t('deleteUser', { length: checkedList.length })}</div>
             </A>
           )}
         </FooterWrapper>
       </div>
-    )
+    ),
   );
 });
 
-User.displayName = "User";
+User.displayName = 'User';
 User.propTypes = {
   // Redux State
   users: PropTypes.arrayOf(
@@ -622,8 +626,8 @@ User.propTypes = {
       userId: PropTypes.string.isRequired,
       email: PropTypes.string.isRequired,
       userName: PropTypes.string.isRequired,
-      isActive: PropTypes.bool.isRequired
-    })
+      isActive: PropTypes.bool.isRequired,
+    }),
   ).isRequired,
   accessToken: PropTypes.string.isRequired,
 
@@ -636,7 +640,7 @@ User.propTypes = {
   putIsActiveById: PropTypes.func.isRequired,
 
   // React-intl I18n
-  getMessages: PropTypes.func.isRequired
+  getMessages: PropTypes.func.isRequired,
 };
 
 export default User;

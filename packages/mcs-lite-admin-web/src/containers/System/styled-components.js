@@ -1,11 +1,11 @@
-import React from "react";
-import styled from "styled-components";
-import Button from "mcs-lite-ui/lib/Button";
-import P from "mcs-lite-ui/lib/P";
-import IconLoading from "mcs-lite-icon/lib/IconLoading";
-import Spin from "mcs-lite-ui/lib/Spin";
-import Loadable from "react-loadable";
-import "codemirror/lib/codemirror.css";
+import React from 'react';
+import styled from 'styled-components';
+import Button from 'mcs-lite-ui/lib/Button';
+import P from 'mcs-lite-ui/lib/P';
+import IconLoading from 'mcs-lite-icon/lib/IconLoading';
+import Spin from 'mcs-lite-ui/lib/Spin';
+import Loadable from 'react-loadable';
+import 'codemirror/lib/codemirror.css';
 
 const Center = styled(P)`
   text-align: center;
@@ -14,9 +14,9 @@ const Center = styled(P)`
 
 const LoadableCodeMirror = Loadable({
   loader: () =>
-    import(/* webpackChunkName: "LoadableCodeMirror" */ "codemirror/mode/javascript/javascript").then(
+    import(/* webpackChunkName: "LoadableCodeMirror" */ 'codemirror/mode/javascript/javascript').then(
       () =>
-        import(/* webpackChunkName: "LoadableCodeMirror" */ "react-codemirror")
+        import(/* webpackChunkName: "LoadableCodeMirror" */ 'react-codemirror'),
     ),
   loading: () => (
     <Center color="primary">
@@ -24,7 +24,7 @@ const LoadableCodeMirror = Loadable({
         <IconLoading size={20} />
       </Spin>
     </Center>
-  )
+  ),
 });
 
 export const StyledButton = styled(Button)`

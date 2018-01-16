@@ -1,19 +1,19 @@
-import React from "react";
-import ScrollParallax from "rc-scroll-anim/lib/ScrollParallax";
-import ScrollOverPack from "rc-scroll-anim/lib/ScrollOverPack";
-import TweenOne from "rc-tween-one";
-import SVGCard from "../../components/SVG/SVGCard";
-import SVGCode from "../../components/SVG/SVGCode";
-import SVGSearch from "../../components/SVG/SVGSearch";
-import SVGTooltip from "../../components/SVG/SVGTooltip";
-import imgCustomizationBackgroundX60 from "../../statics/images/img_customizationX60.png";
-import imgCustomizationBackground from "../../statics/images/img_customization.svg";
-import ImageLayerWrapper from "../../components/ImageLayerWrapper";
-import BackgroundImage from "../../components/BackgroundImage";
+import React from 'react';
+import ScrollParallax from 'rc-scroll-anim/lib/ScrollParallax';
+import ScrollOverPack from 'rc-scroll-anim/lib/ScrollOverPack';
+import TweenOne from 'rc-tween-one';
+import SVGCard from '../../components/SVG/SVGCard';
+import SVGCode from '../../components/SVG/SVGCode';
+import SVGSearch from '../../components/SVG/SVGSearch';
+import SVGTooltip from '../../components/SVG/SVGTooltip';
+import imgCustomizationBackgroundX60 from '../../statics/images/img_customizationX60.png';
+import imgCustomizationBackground from '../../statics/images/img_customization.svg';
+import ImageLayerWrapper from '../../components/ImageLayerWrapper';
+import BackgroundImage from '../../components/BackgroundImage';
 
 const PLAY_SCALE = 0.1;
 const DURATION = 600;
-const EASE = "easeInOutQuart";
+const EASE = 'easeInOutQuart';
 const DELAY = 450;
 
 const ImageCustom = () => (
@@ -35,9 +35,9 @@ const ImageCustom = () => (
           y: 85,
           duration: DURATION,
           ease: EASE,
-          delay: DELAY
+          delay: DELAY,
         }}
-        style={{ transform: "translate(-120px, 85px)" }}
+        style={{ transform: 'translate(-120px, 85px)' }}
         component={SVGTooltip}
       />
     </ScrollOverPack>
@@ -51,15 +51,15 @@ const ImageCustom = () => (
         key="SVGCode"
         animation={{
           opacity: 1,
-          duration: 550
+          duration: 550,
         }}
         style={{
-          opacity: 0.5
+          opacity: 0.5,
         }}
       >
         <ScrollParallax
-          animation={{ y: 40, playScale: [0.1, 0.9], ease: "easeInOutQuad" }}
-          style={{ transform: "translateY(20px)" }}
+          animation={{ y: 40, playScale: [0.1, 0.9], ease: 'easeInOutQuad' }}
+          style={{ transform: 'translateY(20px)' }}
           component={SVGCode}
         />
       </TweenOne>
@@ -74,9 +74,9 @@ const ImageCustom = () => (
           y: 22,
           duration: DURATION,
           ease: EASE,
-          delay: DELAY
+          delay: DELAY,
         }}
-        style={{ transform: "translate(95px, 5px)" }}
+        style={{ transform: 'translate(95px, 5px)' }}
         component={SVGCard}
       />
     </ScrollOverPack>
@@ -90,9 +90,9 @@ const ImageCustom = () => (
           y: 125,
           duration: DURATION,
           ease: EASE,
-          delay: DELAY
+          delay: DELAY,
         }}
-        style={{ transform: "translate(70px, 130px)" }}
+        style={{ transform: 'translate(70px, 130px)' }}
         component={SVGSearch}
       />
     </ScrollOverPack>

@@ -1,18 +1,18 @@
-import React from "react";
-import * as R from "ramda";
-import { shallow } from "enzyme";
-import toJson from "enzyme-to-json";
-import DeviceDataChannelDetail from "../DeviceDataChannelDetail";
-import WebSocketNotification from "../../../components/WebSocketNotification";
+import React from 'react';
+import * as R from 'ramda';
+import { shallow } from 'enzyme';
+import toJson from 'enzyme-to-json';
+import DeviceDataChannelDetail from '../DeviceDataChannelDetail';
+import WebSocketNotification from '../../../components/WebSocketNotification';
 
-jest.mock("mcs-lite-ui/lib/utils/dataChannelHelper", () => ({
-  dataChannelTypeMapper: () => "mock-dataChannelTypeMapper",
-  areaChartTypeMapper: () => {}
+jest.mock('mcs-lite-ui/lib/utils/dataChannelHelper', () => ({
+  dataChannelTypeMapper: () => 'mock-dataChannelTypeMapper',
+  areaChartTypeMapper: () => {},
 }));
-jest.mock("mcs-lite-ui/lib/DataChannelAdapter");
-jest.mock("mcs-lite-ui/lib/DataChannelCard");
+jest.mock('mcs-lite-ui/lib/DataChannelAdapter');
+jest.mock('mcs-lite-ui/lib/DataChannelCard');
 
-it("should renders <DeviceDataChannelDetail> correctly without data", () => {
+it('should renders <DeviceDataChannelDetail> correctly without data', () => {
   const fetchDeviceMock = jest.fn();
   const fetchDatapointsMock = jest.fn();
   const wrapper = shallow(
@@ -21,20 +21,20 @@ it("should renders <DeviceDataChannelDetail> correctly without data", () => {
       deviceId="deviceId"
       dataChannelId="dataChannelId"
       device={{
-        deviceId: "deviceId",
-        deviceName: "deviceName",
-        createUserId: "createUserId",
-        deviceDescription: "deviceDescription",
-        deviceKey: "deviceKey"
+        deviceId: 'deviceId',
+        deviceName: 'deviceName',
+        createUserId: 'createUserId',
+        deviceDescription: 'deviceDescription',
+        deviceKey: 'deviceKey',
       }}
       datachannel={{
         hasHistory: true,
         channelType: {
-          name: "name"
+          name: 'name',
         },
         datapoints: {
-          values: 0
-        }
+          values: 0,
+        },
       }}
       data={[]}
       setQuery={() => {}}
@@ -45,35 +45,35 @@ it("should renders <DeviceDataChannelDetail> correctly without data", () => {
       setDatapoint={() => {}}
       reconnect={() => {}}
       isWebSocketClose={false}
-    />
+    />,
   );
 
   expect(toJson(wrapper)).toMatchSnapshot();
-  expect(fetchDeviceMock).toHaveBeenCalledWith("deviceId");
-  expect(fetchDatapointsMock).toHaveBeenCalledWith("deviceId", "dataChannelId");
+  expect(fetchDeviceMock).toHaveBeenCalledWith('deviceId');
+  expect(fetchDatapointsMock).toHaveBeenCalledWith('deviceId', 'dataChannelId');
 });
 
-it("should renders <DeviceDataChannelDetail> correctly without history", () => {
+it('should renders <DeviceDataChannelDetail> correctly without history', () => {
   const wrapper = shallow(
     <DeviceDataChannelDetail
       getMessages={R.identity}
       deviceId="deviceId"
       dataChannelId="dataChannelId"
       device={{
-        deviceId: "deviceId",
-        deviceName: "deviceName",
-        createUserId: "createUserId",
-        deviceDescription: "deviceDescription",
-        deviceKey: "deviceKey"
+        deviceId: 'deviceId',
+        deviceName: 'deviceName',
+        createUserId: 'createUserId',
+        deviceDescription: 'deviceDescription',
+        deviceKey: 'deviceKey',
       }}
       datachannel={{
         hasHistory: false,
         channelType: {
-          name: "name"
+          name: 'name',
         },
         datapoints: {
-          values: 0
-        }
+          values: 0,
+        },
       }}
       data={[]}
       setQuery={() => {}}
@@ -84,13 +84,13 @@ it("should renders <DeviceDataChannelDetail> correctly without history", () => {
       setDatapoint={() => {}}
       reconnect={() => {}}
       isWebSocketClose={false}
-    />
+    />,
   );
 
   expect(toJson(wrapper)).toMatchSnapshot();
 });
 
-it("should renders <DeviceDataChannelDetail> correctly with Notification", () => {
+it('should renders <DeviceDataChannelDetail> correctly with Notification', () => {
   const fetchDeviceMock = jest.fn();
   const fetchDatapointsMock = jest.fn();
   const wrapper = shallow(
@@ -99,11 +99,11 @@ it("should renders <DeviceDataChannelDetail> correctly with Notification", () =>
       deviceId="deviceId"
       dataChannelId="dataChannelId"
       device={{
-        deviceId: "deviceId",
-        deviceName: "deviceName",
-        createUserId: "createUserId",
-        deviceDescription: "deviceDescription",
-        deviceKey: "deviceKey"
+        deviceId: 'deviceId',
+        deviceName: 'deviceName',
+        createUserId: 'createUserId',
+        deviceDescription: 'deviceDescription',
+        deviceKey: 'deviceKey',
       }}
       data={[]}
       setQuery={() => {}}
@@ -114,13 +114,13 @@ it("should renders <DeviceDataChannelDetail> correctly with Notification", () =>
       setDatapoint={() => {}}
       reconnect={() => {}}
       isWebSocketClose
-    />
+    />,
   );
 
   expect(toJson(wrapper.find(WebSocketNotification))).toMatchSnapshot();
 });
 
-it("should handle onResetClick correctly", () => {
+it('should handle onResetClick correctly', () => {
   const fetchDatapointsMock = jest.fn();
   const setQueryMock = jest.fn();
   const wrapper = shallow(
@@ -129,11 +129,11 @@ it("should handle onResetClick correctly", () => {
       deviceId="deviceId"
       dataChannelId="dataChannelId"
       device={{
-        deviceId: "deviceId",
-        deviceName: "deviceName",
-        createUserId: "createUserId",
-        deviceDescription: "deviceDescription",
-        deviceKey: "deviceKey"
+        deviceId: 'deviceId',
+        deviceName: 'deviceName',
+        createUserId: 'createUserId',
+        deviceDescription: 'deviceDescription',
+        deviceKey: 'deviceKey',
       }}
       data={[]}
       setQuery={setQueryMock}
@@ -144,18 +144,18 @@ it("should handle onResetClick correctly", () => {
       setDatapoint={() => {}}
       reconnect={() => {}}
       isWebSocketClose={false}
-    />
+    />,
   );
 
   // Before onResetClick
   expect(setQueryMock).not.toHaveBeenCalled();
   // After onResetClick
   wrapper.instance().onResetClick();
-  expect(setQueryMock).toHaveBeenCalledWith("dataChannelId", {});
-  expect(fetchDatapointsMock).toHaveBeenCalledWith("deviceId", "dataChannelId");
+  expect(setQueryMock).toHaveBeenCalledWith('dataChannelId', {});
+  expect(fetchDatapointsMock).toHaveBeenCalledWith('deviceId', 'dataChannelId');
 });
 
-it("should handle eventHandler correctly", () => {
+it('should handle eventHandler correctly', () => {
   const sendMessageMock = jest.fn();
   const setDatapointMock = jest.fn();
   const wrapper = shallow(
@@ -164,11 +164,11 @@ it("should handle eventHandler correctly", () => {
       deviceId="deviceId"
       dataChannelId="dataChannelId"
       device={{
-        deviceId: "deviceId",
-        deviceName: "deviceName",
-        createUserId: "createUserId",
-        deviceDescription: "deviceDescription",
-        deviceKey: "deviceKey"
+        deviceId: 'deviceId',
+        deviceName: 'deviceName',
+        createUserId: 'createUserId',
+        deviceDescription: 'deviceDescription',
+        deviceKey: 'deviceKey',
       }}
       data={[]}
       setQuery={() => {}}
@@ -179,36 +179,36 @@ it("should handle eventHandler correctly", () => {
       setDatapoint={setDatapointMock}
       reconnect={() => {}}
       isWebSocketClose={false}
-    />
+    />,
   );
 
   // Before eventHandler with submit type
   expect(setDatapointMock).not.toHaveBeenCalled();
   // After eventHandler with submit type
   wrapper.instance().eventHandler({
-    type: "SUBMIT",
-    id: "id",
-    values: { value: 1 }
+    type: 'SUBMIT',
+    id: 'id',
+    values: { value: 1 },
   });
   expect(sendMessageMock).toHaveBeenCalledWith(
-    '{"datachannelId":"id","values":{"value":1}}'
+    '{"datachannelId":"id","values":{"value":1}}',
   );
 
   // Before eventHandler with other type
   expect(setDatapointMock).not.toHaveBeenCalled();
   // After eventHandler with other type
   wrapper.instance().eventHandler({
-    type: "CHANGE",
-    id: "id",
-    values: { value: 1 }
+    type: 'CHANGE',
+    id: 'id',
+    values: { value: 1 },
   });
-  expect(setDatapointMock).toHaveBeenCalledWith("deviceId", {
-    datachannelId: "id",
-    values: { value: 1 }
+  expect(setDatapointMock).toHaveBeenCalledWith('deviceId', {
+    datachannelId: 'id',
+    values: { value: 1 },
   });
 });
 
-it("should handle reconnect", () => {
+it('should handle reconnect', () => {
   const mockReconnect = jest.fn();
   const wrapper = shallow(
     <DeviceDataChannelDetail
@@ -216,11 +216,11 @@ it("should handle reconnect", () => {
       deviceId="deviceId"
       dataChannelId="dataChannelId"
       device={{
-        deviceId: "deviceId",
-        deviceName: "deviceName",
-        createUserId: "createUserId",
-        deviceDescription: "deviceDescription",
-        deviceKey: "deviceKey"
+        deviceId: 'deviceId',
+        deviceName: 'deviceName',
+        createUserId: 'createUserId',
+        deviceDescription: 'deviceDescription',
+        deviceKey: 'deviceKey',
       }}
       data={[]}
       setQuery={() => {}}
@@ -231,7 +231,7 @@ it("should handle reconnect", () => {
       setDatapoint={() => {}}
       reconnect={mockReconnect}
       isWebSocketClose
-    />
+    />,
   );
 
   // Before reconnect

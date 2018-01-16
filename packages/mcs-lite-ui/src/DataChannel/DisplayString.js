@@ -1,7 +1,7 @@
-import React from "react";
-import PropTypes from "prop-types";
-import styled from "styled-components";
-import Textarea from "../Textarea";
+import React from 'react';
+import PropTypes from 'prop-types';
+import styled from 'styled-components';
+import Textarea from '../Textarea';
 
 export const Container = styled.div`
   width: 100%;
@@ -22,10 +22,10 @@ const DisplayString = ({ value, placeholder, ...otherProps }) => (
   </Container>
 );
 
-DisplayString.displayName = "DisplayString";
+DisplayString.displayName = 'DisplayString';
 DisplayString.propTypes = {
   value: PropTypes.string,
-  placeholder: PropTypes.string
+  placeholder: PropTypes.string,
 };
 
 export default DisplayString;

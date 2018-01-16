@@ -35,15 +35,17 @@ Array [
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
-  -ms-flex-grow: 1;
+  -ms-flex-positive: 1;
   flex-grow: 1;
 }
 
 .c2 {
   width: 100%;
+  -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
-  -ms-flex-grow: 1;
+  -ms-flex-positive: 1;
   flex-grow: 1;
   display: -webkit-box;
   display: -webkit-flex;
@@ -78,7 +80,6 @@ Array [
             className="c0"
             component="button"
             disabled={false}
-            innerRef={undefined}
             kind="primary"
             round={false}
             size="normal"
@@ -99,7 +100,6 @@ Array [
         <Logo
             alt="MCS Lite Logo"
             className="c3"
-            innerRef={undefined}
             src="logo_mcs_lite_black.svg"
         >
             <img
@@ -132,8 +132,9 @@ Array [
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
-  -ms-flex-grow: 1;
+  -ms-flex-positive: 1;
   flex-grow: 1;
 }
 
@@ -142,8 +143,9 @@ Array [
 />,
   .c0 {
   width: 100%;
+  -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
-  -ms-flex-grow: 1;
+  -ms-flex-positive: 1;
   flex-grow: 1;
   display: -webkit-box;
   display: -webkit-flex;

@@ -1,103 +1,103 @@
-import React from "react";
-import { mount } from "enzyme";
-import toJson from "enzyme-to-json";
-import { ThemeProvider } from "styled-components";
-import { theme } from "mcs-lite-theme";
-import DataChannelAdapter from "../DataChannelAdapter";
-import DataChannel from "../../DataChannel";
+import React from 'react';
+import { mount } from 'enzyme';
+import toJson from 'enzyme-to-json';
+import { ThemeProvider } from 'styled-components';
+import { theme } from 'mcs-lite-theme';
+import DataChannelAdapter from '../DataChannelAdapter';
+import DataChannel from '../../DataChannel';
 
-it("should render CATEGORY_CONTROL correctly with default value to N/A", () => {
+it('should render CATEGORY_CONTROL correctly with default value to N/A', () => {
   const wrapper = mount(
     <ThemeProvider theme={theme}>
       <DataChannelAdapter
         dataChannelProps={{
-          id: "id",
-          type: "CATEGORY_CONTROL",
+          id: 'id',
+          type: 'CATEGORY_CONTROL',
           values: {},
           format: {
             items: [
-              { name: "name1", value: "value1" },
-              { name: "name2", value: "value2" }
-            ]
-          }
+              { name: 'name1', value: 'value1' },
+              { name: 'name2', value: 'value2' },
+            ],
+          },
         }}
         eventHandler={() => {}}
       />
-    </ThemeProvider>
+    </ThemeProvider>,
   );
 
   const tree = toJson(wrapper.find(DataChannelAdapter));
   expect(tree).toMatchSnapshot();
 });
 
-it("should render CATEGORY_CONTROL correctly with first item", () => {
+it('should render CATEGORY_CONTROL correctly with first item', () => {
   const wrapper = mount(
     <ThemeProvider theme={theme}>
       <DataChannelAdapter
         dataChannelProps={{
-          id: "id",
-          type: "CATEGORY_CONTROL",
-          values: { value: "value1" },
+          id: 'id',
+          type: 'CATEGORY_CONTROL',
+          values: { value: 'value1' },
           format: {
             items: [
-              { name: "name1", value: "value1" },
-              { name: "name2", value: "value2" }
-            ]
-          }
+              { name: 'name1', value: 'value1' },
+              { name: 'name2', value: 'value2' },
+            ],
+          },
         }}
         eventHandler={() => {}}
       />
-    </ThemeProvider>
+    </ThemeProvider>,
   );
 
   const tree = toJson(wrapper.find(DataChannelAdapter));
   expect(tree).toMatchSnapshot();
 });
 
-it("should render CATEGORY_CONTROL correctly with second item", () => {
+it('should render CATEGORY_CONTROL correctly with second item', () => {
   const wrapper = mount(
     <ThemeProvider theme={theme}>
       <DataChannelAdapter
         dataChannelProps={{
-          id: "id",
-          type: "CATEGORY_CONTROL",
-          values: { value: "value2" },
+          id: 'id',
+          type: 'CATEGORY_CONTROL',
+          values: { value: 'value2' },
           format: {
             items: [
-              { name: "name1", value: "value1" },
-              { name: "name2", value: "value2" }
-            ]
-          }
+              { name: 'name1', value: 'value1' },
+              { name: 'name2', value: 'value2' },
+            ],
+          },
         }}
         eventHandler={() => {}}
       />
-    </ThemeProvider>
+    </ThemeProvider>,
   );
 
   const tree = toJson(wrapper.find(DataChannelAdapter));
   expect(tree).toMatchSnapshot();
 });
 
-it("should handle onChange", () => {
+it('should handle onChange', () => {
   const mockEventHandler = jest.fn();
 
   const wrapper = mount(
     <ThemeProvider theme={theme}>
       <DataChannelAdapter
         dataChannelProps={{
-          id: "id",
-          type: "CATEGORY_CONTROL",
-          values: { value: "value2" },
+          id: 'id',
+          type: 'CATEGORY_CONTROL',
+          values: { value: 'value2' },
           format: {
             items: [
-              { name: "name1", value: "value1" },
-              { name: "name2", value: "value2" }
-            ]
-          }
+              { name: 'name1', value: 'value1' },
+              { name: 'name2', value: 'value2' },
+            ],
+          },
         }}
         eventHandler={mockEventHandler}
       />
-    </ThemeProvider>
+    </ThemeProvider>,
   );
 
   expect(mockEventHandler).not.toHaveBeenCalled();
@@ -105,35 +105,35 @@ it("should handle onChange", () => {
     .find(DataChannel.ControlRange)
     .props()
     .onChange({
-      target: { value: 1 }
+      target: { value: 1 },
     });
   expect(mockEventHandler).toHaveBeenCalledWith({
-    id: "id",
-    type: "CHANGE",
-    values: { value: "value2" }
+    id: 'id',
+    type: 'CHANGE',
+    values: { value: 'value2' },
   });
 });
 
-it("should handle onSubmit", () => {
+it('should handle onSubmit', () => {
   const mockEventHandler = jest.fn();
 
   const wrapper = mount(
     <ThemeProvider theme={theme}>
       <DataChannelAdapter
         dataChannelProps={{
-          id: "id",
-          type: "CATEGORY_CONTROL",
-          values: { value: "value2" },
+          id: 'id',
+          type: 'CATEGORY_CONTROL',
+          values: { value: 'value2' },
           format: {
             items: [
-              { name: "name1", value: "value1" },
-              { name: "name2", value: "value2" }
-            ]
-          }
+              { name: 'name1', value: 'value1' },
+              { name: 'name2', value: 'value2' },
+            ],
+          },
         }}
         eventHandler={mockEventHandler}
       />
-    </ThemeProvider>
+    </ThemeProvider>,
   );
 
   expect(mockEventHandler).not.toHaveBeenCalled();
@@ -142,8 +142,8 @@ it("should handle onSubmit", () => {
     .props()
     .onSubmit();
   expect(mockEventHandler).toHaveBeenCalledWith({
-    id: "id",
-    type: "SUBMIT",
-    values: { value: "value2" }
+    id: 'id',
+    type: 'SUBMIT',
+    values: { value: 'value2' },
   });
 });

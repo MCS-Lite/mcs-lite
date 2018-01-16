@@ -1,9 +1,9 @@
-import React from "react";
-import styled from "styled-components";
-import { storiesOf } from "@storybook/react";
-import { withInfo } from "@storybook/addon-info";
-import { kindList } from "mcs-lite-theme";
-import Input from ".";
+import React from 'react';
+import styled from 'styled-components';
+import { storiesOf } from '@storybook/react';
+import { withInfo } from '@storybook/addon-info';
+import { kindList } from 'mcs-lite-theme';
+import Input from '.';
 
 const Wrapper = styled.div`
   > * {
@@ -12,54 +12,54 @@ const Wrapper = styled.div`
   }
 `;
 
-storiesOf("Input", module)
+storiesOf('Input', module)
   .add(
-    "API",
+    'API',
     withInfo({
-      text: "",
-      inline: true
-    })(() => <Input placeholder="placeholder" />)
+      text: '',
+      inline: true,
+    })(() => <Input placeholder="placeholder" />),
   )
   .add(
-    "With focus props",
+    'With focus props',
     withInfo({
-      text: "",
-      inline: true
-    })(() => <Input placeholder="placeholder" focus />)
+      text: '',
+      inline: true,
+    })(() => <Input placeholder="placeholder" focus />),
   )
   .add(
-    "With kind props",
+    'With kind props',
     withInfo({
-      text: "使用內建 kind props 樣式。",
-      inline: true
+      text: '使用內建 kind props 樣式。',
+      inline: true,
     })(() => (
       <Wrapper>
         {kindList.map(key => <Input key={key} kind={key} placeholder={key} />)}
       </Wrapper>
-    ))
+    )),
   )
   .add(
-    "With type props",
+    'With type props',
     withInfo({
-      text: "使用內建 type props 樣式。",
-      inline: true
+      text: '使用內建 type props 樣式。',
+      inline: true,
     })(() => {
       const types = [
-        "text",
-        "email",
-        "number",
-        "password",
-        "tel",
-        "search",
-        "month",
-        "week",
-        "date",
-        "color",
-        "file",
-        "radio",
-        "time",
-        "url",
-        "range"
+        'text',
+        'email',
+        'number',
+        'password',
+        'tel',
+        'search',
+        'month',
+        'week',
+        'date',
+        'color',
+        'file',
+        'radio',
+        'time',
+        'url',
+        'range',
       ];
 
       return (
@@ -67,5 +67,5 @@ storiesOf("Input", module)
           {types.map(key => <Input key={key} type={key} placeholder={key} />)}
         </Wrapper>
       );
-    })
+    }),
   );

@@ -1,14 +1,14 @@
-import React from "react";
-import { storiesOf } from "@storybook/react";
-import { withInfo } from "@storybook/addon-info";
-import Code from ".";
+import React from 'react';
+import { storiesOf } from '@storybook/react';
+import { withInfo } from '@storybook/addon-info';
+import Code from '.';
 
-storiesOf("Code", module)
+storiesOf('Code', module)
   .add(
-    "API",
+    'API',
     withInfo({
-      text: "https://github.com/conorhastings/react-syntax-highlighter#props",
-      inline: true
+      text: 'https://github.com/conorhastings/react-syntax-highlighter#props',
+      inline: true,
     })(() => (
       <Code>
         {`var data = {
@@ -27,13 +27,13 @@ $.ajax({
   // your content
 })`}
       </Code>
-    ))
+    )),
   )
   .add(
-    "With language props",
+    'With language props',
     withInfo({
       text: '["javascript", "cpp", "arduino"]',
-      inline: true
+      inline: true,
     })(() => (
       <Code language="arduino">
         {`include <HttpClient.h>
@@ -58,5 +58,5 @@ content.println("deviceKey: Cio34Lj7Na5RmQXj");
 content.print("Content-Length: ");
 content.println(dataLength);`}
       </Code>
-    ))
+    )),
   );

@@ -1,13 +1,13 @@
-import React from "react";
-import PropTypes from "prop-types";
-import styled from "styled-components";
-import TextTruncate from "react-text-truncate";
-import Card from "../Card";
-import Heading from "../Heading";
-import Small from "../Small";
-import P from "../P";
-import Hr from "../Hr";
-import isString from "../utils/isString";
+import React from 'react';
+import PropTypes from 'prop-types';
+import styled from 'styled-components';
+import TextTruncate from 'react-text-truncate';
+import Card from '../Card';
+import Heading from '../Heading';
+import Small from '../Small';
+import P from '../P';
+import Hr from '../Hr';
+import isString from '../utils/isString';
 
 const setHeightByLine = line => props =>
   `${parseFloat(props.theme.fontSize.p, 10) *
@@ -85,13 +85,13 @@ const DataChannelCard = ({
   </Wrapper>
 );
 
-DataChannelCard.displayName = "DataChannelCard";
+DataChannelCard.displayName = 'DataChannelCard';
 DataChannelCard.propTypes = {
   header: PropTypes.node,
   children: PropTypes.node.isRequired,
   title: PropTypes.string.isRequired,
   subtitle: PropTypes.string.isRequired,
-  description: PropTypes.string
+  description: PropTypes.string,
 };
 
 export default DataChannelCard;

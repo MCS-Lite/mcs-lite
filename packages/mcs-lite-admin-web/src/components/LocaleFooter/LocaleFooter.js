@@ -1,9 +1,9 @@
-import React from "react";
-import styled from "styled-components";
-import { Link } from "react-router";
-import Small from "mcs-lite-ui/lib/Small";
-import { updateLocale } from "mcs-lite-ui/lib/utils/routerHelper";
-import { LOCALES } from "mcs-lite-ui/lib/utils/localeHelper";
+import React from 'react';
+import styled from 'styled-components';
+import { Link } from 'react-router';
+import Small from 'mcs-lite-ui/lib/Small';
+import { updateLocale } from 'mcs-lite-ui/lib/utils/routerHelper';
+import { LOCALES } from 'mcs-lite-ui/lib/utils/localeHelper';
 
 const Wrapper = styled.div`
   position: fixed;
@@ -19,7 +19,7 @@ const Wrapper = styled.div`
 
   > a:not(:last-child) {
     &::after {
-      content: "\\00a0·\\00a0";
+      content: '\\00a0·\\00a0';
     }
   }
 `;
@@ -34,6 +34,6 @@ const LocaleFooter = () => (
   </Wrapper>
 );
 
-LocaleFooter.displayName = "LocaleFooter";
+LocaleFooter.displayName = 'LocaleFooter';
 
 export default LocaleFooter;

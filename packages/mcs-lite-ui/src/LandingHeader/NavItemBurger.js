@@ -1,16 +1,16 @@
 /* global window, document */
 
-import React from "react";
-import PropTypes from "prop-types";
-import styled from "styled-components";
-import rafThrottle from "raf-throttle";
-import Portal from "react-overlays/lib/Portal";
-import Transition from "react-motion-ui-pack";
-import spring from "react-motion/lib/spring";
-import { IconMenu, IconClose } from "mcs-lite-icon";
-import MorphReplace from "../MorphReplace";
-import P from "../P";
-import NavItem from "./NavItem";
+import React from 'react';
+import PropTypes from 'prop-types';
+import styled from 'styled-components';
+import rafThrottle from 'raf-throttle';
+import Portal from 'react-overlays/lib/Portal';
+import Transition from 'react-motion-ui-pack';
+import spring from 'react-motion/lib/spring';
+import { IconMenu, IconClose } from 'mcs-lite-icon';
+import MorphReplace from '../MorphReplace';
+import P from '../P';
+import NavItem from './NavItem';
 
 export const StyledP = styled(P)`
   margin-right: 5px;
@@ -61,11 +61,11 @@ export const HandleHideNavItem = ({
     }}
   />
 );
-HandleHideNavItem.displayName = "HandleHideNavItem";
+HandleHideNavItem.displayName = 'HandleHideNavItem';
 HandleHideNavItem.propTypes = {
   onHide: PropTypes.func.isRequired,
   onClick: PropTypes.func,
-  disabled: PropTypes.bool
+  disabled: PropTypes.bool,
 };
 
 class NavItemBurger extends React.PureComponent {
@@ -79,26 +79,26 @@ class NavItemBurger extends React.PureComponent {
           .isRequired,
         component: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
         children: PropTypes.node.isRequired,
-        disabled: PropTypes.bool
-      })
-    ).isRequired
+        disabled: PropTypes.bool,
+      }),
+    ).isRequired,
   };
 
   state = { isShow: false };
   componentDidMount = () => {
-    window.addEventListener("resize", this.onHide);
+    window.addEventListener('resize', this.onHide);
   };
   componentDidUpdate(prevProps, prevState) {
     // TODO: dont do this
     if (prevState.isShow !== this.state.isShow) {
-      document.body.style.overflow = this.state.isShow ? "hidden" : "auto";
+      document.body.style.overflow = this.state.isShow ? 'hidden' : 'auto';
       document.documentElement.style.overflow = this.state.isShow
-        ? "hidden"
-        : "auto";
+        ? 'hidden'
+        : 'auto';
     }
   }
   componentWillUnmount = () => {
-    window.removeEventListener("resize", this.onHide);
+    window.removeEventListener('resize', this.onHide);
     this.onHide.cancel();
   };
   onClick = () => this.setState({ isShow: !this.state.isShow });
@@ -125,7 +125,7 @@ class NavItemBurger extends React.PureComponent {
               appear={{ opacity: 0.8, translateY: -50 }}
               enter={{
                 opacity: 1,
-                translateY: spring(0, { stiffness: 330, damping: 16 })
+                translateY: spring(0, { stiffness: 330, damping: 16 }),
               }}
             >
               <Fixed key="Fixed">

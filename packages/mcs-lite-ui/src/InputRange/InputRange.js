@@ -1,6 +1,6 @@
-import PropTypes from "prop-types";
-import styled from "styled-components";
-import { darken } from "mcs-lite-theme";
+import PropTypes from 'prop-types';
+import styled from 'styled-components';
+import { darken } from 'mcs-lite-theme';
 
 const lighten = darken(-0.5);
 
@@ -123,14 +123,14 @@ const InputRange = styled.input`
   /* stylelint-enable */
 `;
 
-InputRange.displayName = "InputRange";
+InputRange.displayName = 'InputRange';
 InputRange.propTypes = {
-  kind: PropTypes.string
+  kind: PropTypes.string,
 };
 
 InputRange.defaultProps = {
-  kind: "primary",
-  type: "range"
+  kind: 'primary',
+  type: 'range',
 };
 
 export default InputRange;

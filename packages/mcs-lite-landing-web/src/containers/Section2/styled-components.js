@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import SectionRow from "../../components/SectionRow";
+import styled from 'styled-components';
+import SectionRow from '../../components/SectionRow';
 
 export const StyledSectionRow = styled(SectionRow)`
   background-image: linear-gradient(

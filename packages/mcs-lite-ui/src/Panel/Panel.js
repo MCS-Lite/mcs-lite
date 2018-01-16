@@ -1,5 +1,5 @@
 // @flow
-import styled from "styled-components";
+import styled from 'styled-components';
 
 const Panel = styled.div`
   width: 100%;
@@ -19,6 +19,6 @@ const Panel = styled.div`
   }
 `;
 
-Panel.displayName = "Panel";
+Panel.displayName = 'Panel';
 
 export default Panel;

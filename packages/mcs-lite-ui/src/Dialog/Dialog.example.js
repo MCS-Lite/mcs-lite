@@ -1,23 +1,23 @@
-import React from "react";
-import styled from "styled-components";
-import { storiesOf } from "@storybook/react";
-import { withInfo } from "@storybook/addon-info";
-import { action } from "@storybook/addon-actions";
-import Button from "../Button";
-import Dialog from ".";
-import CommonDialog from "./CommonDialog";
+import React from 'react';
+import styled from 'styled-components';
+import { storiesOf } from '@storybook/react';
+import { withInfo } from '@storybook/addon-info';
+import { action } from '@storybook/addon-actions';
+import Button from '../Button';
+import Dialog from '.';
+import CommonDialog from './CommonDialog';
 
 const StyledCommonDialog = styled(CommonDialog)`
   justify-content: center;
 `;
 
-storiesOf("Dialog", module)
+storiesOf('Dialog', module)
   .add(
-    "API",
+    'API',
     withInfo({
-      text: "",
+      text: '',
       inline: true,
-      propTables: [Dialog]
+      propTables: [Dialog],
     })(() => {
       class StatefulDialog extends React.Component {
         state = { show: false };
@@ -37,21 +37,21 @@ storiesOf("Dialog", module)
       }
 
       return <StatefulDialog />;
-    })
+    }),
   )
   .add(
-    "Common Dialog",
+    'Common Dialog',
     withInfo({
-      text: "Wrap in a <form> tag, you need to preventDefault()",
+      text: 'Wrap in a <form> tag, you need to preventDefault()',
       inline: true,
-      propTables: [CommonDialog]
+      propTables: [CommonDialog],
     })(() => (
       <StyledCommonDialog
         component="form"
         show
         onHide={() => {}}
         onSubmit={e => {
-          action("onSubmit")(e);
+          action('onSubmit')(e);
           e.preventDefault();
         }}
       >
@@ -61,26 +61,26 @@ storiesOf("Dialog", module)
           <Button
             kind="default"
             onClick={e => {
-              action("onCancel")(e);
+              action('onCancel')(e);
               e.preventDefault();
             }}
           >
             取消
           </Button>
-          <Button component="input" type="submit" value={"確定"} />
+          <Button component="input" type="submit" value="確定" />
         </footer>
       </StyledCommonDialog>
-    ))
+    )),
   )
   .add(
-    "Scrollable CommonDialog",
+    'Scrollable CommonDialog',
     withInfo({
-      text: "",
+      text: '',
       inline: true,
-      propTables: [CommonDialog]
+      propTables: [CommonDialog],
     })(() => (
       <CommonDialog show onHide={() => {}}>
         <div style={{ height: 3000 }}>Scrollable</div>
       </CommonDialog>
-    ))
+    )),
   );

@@ -1,11 +1,11 @@
-import React from "react";
-import PropTypes from "prop-types";
-import * as R from "ramda";
-import Helmet from "react-helmet";
-import Table from "mcs-lite-ui/lib/Table";
-import DashboardTitle from "../../components/DashboardTitle";
-import DashboardDesc from "../../components/DashboardDesc";
-import { StyledButton, NaWrapper } from "./styled-components";
+import React from 'react';
+import PropTypes from 'prop-types';
+import * as R from 'ramda';
+import Helmet from 'react-helmet';
+import Table from 'mcs-lite-ui/lib/Table';
+import DashboardTitle from '../../components/DashboardTitle';
+import DashboardDesc from '../../components/DashboardDesc';
+import { StyledButton, NaWrapper } from './styled-components';
 
 class Ip extends React.Component {
   static propTypes = {
@@ -17,7 +17,7 @@ class Ip extends React.Component {
     fetchIpList: PropTypes.func.isRequired,
 
     // React-intl I18n
-    getMessages: PropTypes.func.isRequired
+    getMessages: PropTypes.func.isRequired,
   };
   componentWillMount = () => this.props.fetchIpList();
   render() {
@@ -27,15 +27,15 @@ class Ip extends React.Component {
     return (
       <div>
         <Helmet>
-          <title>{t("mcsLiteIpConnection")}</title>
+          <title>{t('mcsLiteIpConnection')}</title>
         </Helmet>
-        <DashboardTitle title={t("mcsLiteIpConnection")} />
-        <DashboardDesc>{t("description")}</DashboardDesc>
+        <DashboardTitle title={t('mcsLiteIpConnection')} />
+        <DashboardDesc>{t('description')}</DashboardDesc>
 
         <Table>
           <thead>
             <tr>
-              <td>{t("serviceIpAddress")}</td>
+              <td>{t('serviceIpAddress')}</td>
             </tr>
           </thead>
           <tbody>
@@ -47,11 +47,11 @@ class Ip extends React.Component {
           </tbody>
         </Table>
 
-        {isNA && <NaWrapper>{t("na")}</NaWrapper>}
+        {isNA && <NaWrapper>{t('na')}</NaWrapper>}
 
         {service[0] && (
           <a href={`//${service[0]}`} target="_blank" rel="noreferrer noopener">
-            <StyledButton>{t("goToMCSLite")}</StyledButton>
+            <StyledButton>{t('goToMCSLite')}</StyledButton>
           </a>
         )}
       </div>

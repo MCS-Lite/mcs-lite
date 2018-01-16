@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import TextCenter from "mcs-lite-ui/lib/TextCenter";
+import styled from 'styled-components';
+import TextCenter from 'mcs-lite-ui/lib/TextCenter';
 
 export const BackgroundOverlay = styled.div`
   background: linear-gradient(

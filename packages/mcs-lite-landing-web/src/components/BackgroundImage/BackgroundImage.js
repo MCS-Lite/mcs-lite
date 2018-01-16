@@ -1,6 +1,6 @@
-import React from "react";
-import styled from "styled-components";
-import ProgressiveImage from "react-progressive-bg-image";
+import React from 'react';
+import styled from 'styled-components';
+import ProgressiveImage from 'react-progressive-bg-image';
 
 const StyledProgressiveImage = styled(ProgressiveImage)`
   min-height: 100%;

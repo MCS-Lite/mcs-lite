@@ -22,10 +22,10 @@ Array [
 
 .c1 {
   -webkit-flex-basis: 40px;
-  -ms-flex-basis: 40px;
+  -ms-flex-preferred-size: 40px;
   flex-basis: 40px;
   -webkit-flex-shrink: 0;
-  -ms-flex-shrink: 0;
+  -ms-flex-negative: 0;
   flex-shrink: 0;
   box-sizing: border-box;
   background-color: #FAFAFA;
@@ -86,8 +86,9 @@ Array [
 }
 
 .c7 {
+  -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
-  -ms-flex-grow: 1;
+  -ms-flex-positive: 1;
   flex-grow: 1;
   display: -webkit-box;
   display: -webkit-flex;
@@ -98,7 +99,7 @@ Array [
 
 .c8 {
   -webkit-flex-basis: 150px;
-  -ms-flex-basis: 150px;
+  -ms-flex-preferred-size: 150px;
   flex-basis: 150px;
   box-sizing: border-box;
   background-color: #FAFAFA;
@@ -148,8 +149,9 @@ Array [
 }
 
 .c11 {
+  -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
-  -ms-flex-grow: 1;
+  -ms-flex-positive: 1;
   flex-grow: 1;
   background-color: #FFFFFF;
   overflow: auto;
@@ -181,7 +183,6 @@ Array [
         <Logo
             alt="MCS Lite Logo"
             className="c4"
-            innerRef={undefined}
             src="logo_mcs_lite_black.svg"
         >
             <img
@@ -218,7 +219,6 @@ Array [
     <Styled(Styled(Link))>
         <Styled(Link)
             className="c10"
-            innerRef={undefined}
         >
             <Link
                 activeClassName="DashboardLayout-SC-NavItem-attrs-activeClassName"
@@ -296,8 +296,9 @@ Array [
     className="c0"
 />,
   .c0 {
+  -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
-  -ms-flex-grow: 1;
+  -ms-flex-positive: 1;
   flex-grow: 1;
   display: -webkit-box;
   display: -webkit-flex;

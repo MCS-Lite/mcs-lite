@@ -1,10 +1,10 @@
-import PropTypes from "prop-types";
-import React from "react";
-import Button from "mcs-lite-ui/lib/Button";
-import Input from "mcs-lite-ui/lib/Input";
-import Helmet from "react-helmet";
-import Logo from "../../components/Logo";
-import { ErrorMessage, StyledHr, Layout, Form } from "./styled-components";
+import PropTypes from 'prop-types';
+import React from 'react';
+import Button from 'mcs-lite-ui/lib/Button';
+import Input from 'mcs-lite-ui/lib/Input';
+import Helmet from 'react-helmet';
+import Logo from '../../components/Logo';
+import { ErrorMessage, StyledHr, Layout, Form } from './styled-components';
 
 class Signin extends React.Component {
   static propTypes = {
@@ -15,9 +15,9 @@ class Signin extends React.Component {
     tryEnter: PropTypes.func.isRequired,
 
     // React-intl I18n
-    getMessages: PropTypes.func.isRequired
+    getMessages: PropTypes.func.isRequired,
   };
-  state = { email: "", password: "" };
+  state = { email: '', password: '' };
   componentWillMount = () => this.props.tryEnter(); // Hint: When cookieToken avaliable
   onChange = e => this.setState({ [e.target.name]: e.target.value });
   render() {
@@ -28,20 +28,20 @@ class Signin extends React.Component {
     return (
       <Layout>
         <Helmet>
-          <title>{t("signin")}</title>
+          <title>{t('signin')}</title>
         </Helmet>
 
         <Logo />
         {errorMessage && (
           <ErrorMessage color="error">{errorMessage}</ErrorMessage>
         )}
-        <StyledHr>{t("welcome")}</StyledHr>
+        <StyledHr>{t('welcome')}</StyledHr>
 
         <Form method="post" action="/oauth/login/mobile">
           <Input
             type="email"
             name="email"
-            placeholder={t("email")}
+            placeholder={t('email')}
             value={email}
             onChange={onChange}
             required
@@ -49,12 +49,12 @@ class Signin extends React.Component {
           <Input
             type="password"
             name="password"
-            placeholder={t("password")}
+            placeholder={t('password')}
             value={password}
             onChange={onChange}
             required
           />
-          <Button component="input" type="submit" value={t("signin")} block />
+          <Button component="input" type="submit" value={t('signin')} block />
         </Form>
       </Layout>
     );

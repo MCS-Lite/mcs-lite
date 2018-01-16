@@ -1,9 +1,9 @@
-import React from "react";
-import PropTypes from "prop-types";
-import styled from "styled-components";
-import ButtonClear from "./ButtonClear";
-import Textarea from "../Textarea";
-import Button from "../Button";
+import React from 'react';
+import PropTypes from 'prop-types';
+import styled from 'styled-components';
+import ButtonClear from './ButtonClear';
+import Textarea from '../Textarea';
+import Button from '../Button';
 
 export const Container = styled.div`
   width: 100%;
@@ -49,13 +49,13 @@ const ControlString = ({
   </Container>
 );
 
-ControlString.displayName = "ControlString";
+ControlString.displayName = 'ControlString';
 ControlString.propTypes = {
   value: PropTypes.string.isRequired,
   onChange: PropTypes.func.isRequired,
   onSubmit: PropTypes.func.isRequired,
   onClear: PropTypes.func.isRequired,
-  placeholder: PropTypes.string
+  placeholder: PropTypes.string,
 };
 
 export default ControlString;

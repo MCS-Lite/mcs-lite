@@ -19,7 +19,7 @@ exports[`should renders <LocaleFooter> correctly 1`] = `
 }
 
 .c0 > a:not(:last-child)::after {
-  content: "\\00a0·\\00a0";
+  content: '\\00a0·\\00a0';
 }
 
 <LocaleFooter>

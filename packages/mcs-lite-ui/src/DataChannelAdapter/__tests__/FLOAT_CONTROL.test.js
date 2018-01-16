@@ -1,102 +1,102 @@
-import React from "react";
-import { mount } from "enzyme";
-import toJson from "enzyme-to-json";
-import { ThemeProvider } from "styled-components";
-import { theme } from "mcs-lite-theme";
-import DataChannelAdapter from "../DataChannelAdapter";
-import DataChannel from "../../DataChannel";
+import React from 'react';
+import { mount } from 'enzyme';
+import toJson from 'enzyme-to-json';
+import { ThemeProvider } from 'styled-components';
+import { theme } from 'mcs-lite-theme';
+import DataChannelAdapter from '../DataChannelAdapter';
+import DataChannel from '../../DataChannel';
 
-it("should render FLOAT_CONTROL correctly with default value to empty", () => {
+it('should render FLOAT_CONTROL correctly with default value to empty', () => {
   const wrapper = mount(
     <ThemeProvider theme={theme}>
       <DataChannelAdapter
         dataChannelProps={{
-          id: "id",
-          type: "FLOAT_CONTROL",
+          id: 'id',
+          type: 'FLOAT_CONTROL',
           values: {},
-          format: {}
+          format: {},
         }}
         eventHandler={() => {}}
       />
-    </ThemeProvider>
+    </ThemeProvider>,
   );
 
   const tree = toJson(wrapper.find(DataChannelAdapter));
   expect(tree).toMatchSnapshot();
 });
 
-it("should render FLOAT_CONTROL correctly with value", () => {
+it('should render FLOAT_CONTROL correctly with value', () => {
   const wrapper = mount(
     <ThemeProvider theme={theme}>
       <DataChannelAdapter
         dataChannelProps={{
-          id: "id",
-          type: "FLOAT_CONTROL",
+          id: 'id',
+          type: 'FLOAT_CONTROL',
           values: { value: 0.11 },
-          format: {}
+          format: {},
         }}
         eventHandler={() => {}}
       />
-    </ThemeProvider>
+    </ThemeProvider>,
   );
 
   const tree = toJson(wrapper.find(DataChannelAdapter));
   expect(tree).toMatchSnapshot();
 });
 
-it("should render FLOAT_CONTROL correctly with zero", () => {
+it('should render FLOAT_CONTROL correctly with zero', () => {
   const wrapper = mount(
     <ThemeProvider theme={theme}>
       <DataChannelAdapter
         dataChannelProps={{
-          id: "id",
-          type: "FLOAT_CONTROL",
+          id: 'id',
+          type: 'FLOAT_CONTROL',
           values: { value: 0 },
-          format: {}
+          format: {},
         }}
         eventHandler={() => {}}
       />
-    </ThemeProvider>
+    </ThemeProvider>,
   );
 
   const tree = toJson(wrapper.find(DataChannelAdapter));
   expect(tree).toMatchSnapshot();
 });
 
-it("should render FLOAT_CONTROL correctly with unit", () => {
+it('should render FLOAT_CONTROL correctly with unit', () => {
   const wrapper = mount(
     <ThemeProvider theme={theme}>
       <DataChannelAdapter
         dataChannelProps={{
-          id: "id",
-          type: "FLOAT_CONTROL",
+          id: 'id',
+          type: 'FLOAT_CONTROL',
           values: { value: 0.11 },
-          format: { unit: "攝氏" }
+          format: { unit: '攝氏' },
         }}
         eventHandler={() => {}}
       />
-    </ThemeProvider>
+    </ThemeProvider>,
   );
 
   const tree = toJson(wrapper.find(DataChannelAdapter));
   expect(tree).toMatchSnapshot();
 });
 
-it("should handle onChange", () => {
+it('should handle onChange', () => {
   const mockEventHandler = jest.fn();
 
   const wrapper = mount(
     <ThemeProvider theme={theme}>
       <DataChannelAdapter
         dataChannelProps={{
-          id: "id",
-          type: "FLOAT_CONTROL",
+          id: 'id',
+          type: 'FLOAT_CONTROL',
           values: { value: 0.11 },
-          format: { unit: "攝氏" }
+          format: { unit: '攝氏' },
         }}
         eventHandler={mockEventHandler}
       />
-    </ThemeProvider>
+    </ThemeProvider>,
   );
 
   expect(mockEventHandler).not.toHaveBeenCalled();
@@ -104,30 +104,30 @@ it("should handle onChange", () => {
     .find(DataChannel.ControlNumber)
     .props()
     .onChange({
-      target: { value: 1.1 }
+      target: { value: 1.1 },
     });
   expect(mockEventHandler).toHaveBeenCalledWith({
-    id: "id",
-    type: "CHANGE",
-    values: { value: 1.1 }
+    id: 'id',
+    type: 'CHANGE',
+    values: { value: 1.1 },
   });
 });
 
-it("should handle onSubmit", () => {
+it('should handle onSubmit', () => {
   const mockEventHandler = jest.fn();
 
   const wrapper = mount(
     <ThemeProvider theme={theme}>
       <DataChannelAdapter
         dataChannelProps={{
-          id: "id",
-          type: "FLOAT_CONTROL",
+          id: 'id',
+          type: 'FLOAT_CONTROL',
           values: { value: 0.11 },
-          format: { unit: "攝氏" }
+          format: { unit: '攝氏' },
         }}
         eventHandler={mockEventHandler}
       />
-    </ThemeProvider>
+    </ThemeProvider>,
   );
 
   expect(mockEventHandler).not.toHaveBeenCalled();
@@ -136,27 +136,27 @@ it("should handle onSubmit", () => {
     .props()
     .onSubmit();
   expect(mockEventHandler).toHaveBeenCalledWith({
-    id: "id",
-    type: "SUBMIT",
-    values: { value: 0.11 }
+    id: 'id',
+    type: 'SUBMIT',
+    values: { value: 0.11 },
   });
 });
 
-it("should handle onClear", () => {
+it('should handle onClear', () => {
   const mockEventHandler = jest.fn();
 
   const wrapper = mount(
     <ThemeProvider theme={theme}>
       <DataChannelAdapter
         dataChannelProps={{
-          id: "id",
-          type: "FLOAT_CONTROL",
+          id: 'id',
+          type: 'FLOAT_CONTROL',
           values: { value: 0.11 },
-          format: { unit: "攝氏" }
+          format: { unit: '攝氏' },
         }}
         eventHandler={mockEventHandler}
       />
-    </ThemeProvider>
+    </ThemeProvider>,
   );
 
   expect(mockEventHandler).not.toHaveBeenCalled();
@@ -165,8 +165,8 @@ it("should handle onClear", () => {
     .props()
     .onClear();
   expect(mockEventHandler).toHaveBeenCalledWith({
-    id: "id",
-    type: "CLEAR",
-    values: {}
+    id: 'id',
+    type: 'CLEAR',
+    values: {},
   });
 });

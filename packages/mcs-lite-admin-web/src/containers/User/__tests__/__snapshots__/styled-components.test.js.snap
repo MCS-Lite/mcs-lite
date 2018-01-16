@@ -44,7 +44,7 @@ Array [
   pointer-events: none;
 }
 
-.c2 input[type="file"] {
+.c2 input[type='file'] {
   opacity: 0;
   cursor: pointer;
   pointer-events: all;
@@ -115,7 +115,7 @@ Array [
   pointer-events: none;
 }
 
-.c0 input[type="file"] {
+.c0 input[type='file'] {
   opacity: 0;
   cursor: pointer;
   pointer-events: all;

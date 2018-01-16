@@ -12,7 +12,7 @@
     "prerelease": "./tasks/build.sh",
     "danger": "danger ci",
     "format":
-      "prettier --trailing-comma all --single-quote --write '*.{js,json,md}' 'packages/*/*.{js,json}' 'packages/!(mcs-lite-introduction)/*.md' 'packages/*/.storybook/*.js' 'packages/*/!(build|lib|storybook-static|coverage|.next|_book)/**/*.{js,json}'",
+      "prettier --trailing-comma all --single-quote --write '*.{js,json,md}' '{docs,.github}/*.md' 'packages/*/*.{js,json}' 'packages/!(mcs-lite-introduction)/*.md' 'packages/*/.storybook/*.js' 'packages/*/!(build|lib|storybook-static|coverage|.next|_book)/**/*.{js,json}'",
     "license": "license-checker --csv --out docs/licenses.csv",
     "changelog": "lerna-changelog",
     "precommit": "lint-staged"
@@ -39,6 +39,9 @@
     "prettier": "1.10.2"
   },
   "lint-staged": {
-    "*.{js,json,md}": ["prettier --write", "git add"]
+    "*/!(mcs-lite-introduction)/*.{js,json,md}": [
+      "prettier --trailing-comma all --single-quote --write",
+      "git add"
+    ]
   }
 }

@@ -1,9 +1,9 @@
-import React from "react";
-import PropTypes from "prop-types";
-import styled from "styled-components";
-import Input from "../Input";
-import Button from "../Button";
-import P from "../P";
+import React from 'react';
+import PropTypes from 'prop-types';
+import styled from 'styled-components';
+import Input from '../Input';
+import Button from '../Button';
+import P from '../P';
 
 export const Container = styled.div`
   margin-bottom: 10px;
@@ -41,12 +41,12 @@ const ControlPeriod = ({
   </Container>
 );
 
-ControlPeriod.displayName = "ControlPeriod";
+ControlPeriod.displayName = 'ControlPeriod';
 ControlPeriod.propTypes = {
   value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
   onChange: PropTypes.func.isRequired,
   onSubmit: PropTypes.func.isRequired,
-  placeholder: PropTypes.string
+  placeholder: PropTypes.string,
 };
 
 export default ControlPeriod;

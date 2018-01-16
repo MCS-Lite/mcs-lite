@@ -1,8 +1,8 @@
-import React from "react";
-import styled from "styled-components";
-import { IconDelete } from "mcs-lite-icon";
-import A from "../A";
-import P from "../P";
+import React from 'react';
+import styled from 'styled-components';
+import { IconDelete } from 'mcs-lite-icon';
+import A from '../A';
+import P from '../P';
 
 export const StyledA = styled(A)`
   display: flex;
@@ -21,6 +21,6 @@ const ButtonClear = props => (
   </P>
 );
 
-ButtonClear.displayName = "ButtonClear";
+ButtonClear.displayName = 'ButtonClear';
 
 export default ButtonClear;

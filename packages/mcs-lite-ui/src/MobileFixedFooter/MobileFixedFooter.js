@@ -1,7 +1,7 @@
-import React from "react";
-import PropTypes from "prop-types";
-import styled from "styled-components";
-import MobileContentWrapper from "../MobileContentWrapper";
+import React from 'react';
+import PropTypes from 'prop-types';
+import styled from 'styled-components';
+import MobileContentWrapper from '../MobileContentWrapper';
 
 export const Footer = styled.footer`
   position: fixed;
@@ -16,9 +16,9 @@ const MobileFixedFooter = ({ children, ...otherProps }) => (
   </Footer>
 );
 
-MobileFixedFooter.displayName = "MobileFixedFooter";
+MobileFixedFooter.displayName = 'MobileFixedFooter';
 MobileFixedFooter.propTypes = {
-  children: PropTypes.node.isRequired
+  children: PropTypes.node.isRequired,
 };
 
 export default MobileFixedFooter;

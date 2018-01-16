@@ -1,11 +1,11 @@
-import React from "react";
-import PropTypes from "prop-types";
-import styled from "styled-components";
-import Transition from "react-motion-ui-pack";
-import IconClose from "mcs-lite-icon/lib/IconClose";
-import MobileContentWrapper from "mcs-lite-ui/lib/MobileContentWrapper";
-import { updatePathname } from "mcs-lite-ui/lib/utils/routerHelper";
-import StyledLink from "../StyledLink";
+import React from 'react';
+import PropTypes from 'prop-types';
+import styled from 'styled-components';
+import Transition from 'react-motion-ui-pack';
+import IconClose from 'mcs-lite-icon/lib/IconClose';
+import MobileContentWrapper from 'mcs-lite-ui/lib/MobileContentWrapper';
+import { updatePathname } from 'mcs-lite-ui/lib/utils/routerHelper';
+import StyledLink from '../StyledLink';
 
 const Container = styled(MobileContentWrapper)`
   height: 100%;
@@ -39,7 +39,7 @@ const LayoutDialog = ({ children, ...otherProps }) => (
   >
     <Container key="layoutDialog" {...otherProps}>
       <Header>
-        <StyledLink to={updatePathname("/devices")}>
+        <StyledLink to={updatePathname('/devices')}>
           <IconClose />
         </StyledLink>
       </Header>
@@ -48,9 +48,9 @@ const LayoutDialog = ({ children, ...otherProps }) => (
   </Transition>
 );
 
-LayoutDialog.displayName = "LayoutDialog";
+LayoutDialog.displayName = 'LayoutDialog';
 LayoutDialog.propTypes = {
-  children: PropTypes.node.isRequired
+  children: PropTypes.node.isRequired,
 };
 
 export default LayoutDialog;

@@ -1,10 +1,10 @@
-import React from "react";
-import PropTypes from "prop-types";
-import styled from "styled-components";
-import R from "ramda";
-import InputRange from "../InputRange";
-import P from "../P";
-import isNumber from "../utils/isNumber";
+import React from 'react';
+import PropTypes from 'prop-types';
+import styled from 'styled-components';
+import R from 'ramda';
+import InputRange from '../InputRange';
+import P from '../P';
+import isNumber from '../utils/isNumber';
 
 export const Container = styled.div`
   width: 100%;
@@ -17,11 +17,11 @@ export const LabelWrapper = styled.div`
 
   > *:first-child {
     align-items: ${props =>
-      props.labels.length <= 2 ? "flex-start" : "center"};
+      props.labels.length <= 2 ? 'flex-start' : 'center'};
   }
 
   > *:last-child {
-    align-items: ${props => (props.labels.length <= 2 ? "flex-end" : "center")};
+    align-items: ${props => (props.labels.length <= 2 ? 'flex-end' : 'center')};
   }
 `;
 
@@ -35,7 +35,7 @@ export const LabelItem = styled.div`
   overflow: hidden;
 
   &::before {
-    content: "";
+    content: '';
     border-right-width: 1px;
     border-right-style: solid;
     border-right-color: ${props => props.theme.color.grayDark};
@@ -99,17 +99,17 @@ const ControlRange = ({
   );
 };
 
-ControlRange.displayName = "ControlRange";
+ControlRange.displayName = 'ControlRange';
 ControlRange.propTypes = {
   value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]), // index of labels
   onChange: PropTypes.func.isRequired,
   onSubmit: PropTypes.func.isRequired,
   valueMapper: PropTypes.func, // index: number => value: string
-  labels: PropTypes.array.isRequired
+  labels: PropTypes.array.isRequired,
 };
 
 ControlRange.defaultProps = {
-  valueMapper: R.identity
+  valueMapper: R.identity,
 };
 
 export default ControlRange;

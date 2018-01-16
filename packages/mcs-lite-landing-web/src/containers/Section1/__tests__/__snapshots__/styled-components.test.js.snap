@@ -34,7 +34,7 @@ Array [
 }
 
 .c0 {
-  background-image: linear-gradient(-180deg,#FAFAFA 0%,#F1F2F7 100%);
+  background-image: linear-gradient(-180deg,#fafafa 0%,#f1f2f7 100%);
   padding-bottom: 0;
   overflow: hidden;
 }
@@ -150,12 +150,10 @@ Array [
                                     width="960px"
                                 >
                                     <Styled(RowContainer)
-                                        debug={undefined}
                                         key=".0"
                                     >
                                         <RowContainer
                                             className="c3"
-                                            debug={undefined}
                                             divisions={12}
                                         >
                                             <section
@@ -276,7 +274,7 @@ Array [
 }
 
 .c0 {
-  background-image: linear-gradient(-180deg,#FAFAFA 0%,#F1F2F7 100%);
+  background-image: linear-gradient(-180deg,#fafafa 0%,#f1f2f7 100%);
   padding-bottom: 0;
   overflow: hidden;
 }
@@ -296,12 +294,10 @@ Array [
                 width="960px"
             >
                 <Styled(RowContainer)
-                    debug={undefined}
                     key=".0"
                 >
                     <RowContainer
                         className="c3"
-                        debug={undefined}
                         divisions={12}
                     >
                         <section
@@ -339,12 +335,10 @@ Array [
     width="960px"
 >
     <Styled(RowContainer)
-        debug={undefined}
         key=".0"
     >
         <RowContainer
             className="c1"
-            debug={undefined}
             divisions={12}
         >
             <section

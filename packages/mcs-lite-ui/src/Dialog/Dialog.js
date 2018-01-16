@@ -1,10 +1,10 @@
-import React from "react";
-import PropTypes from "prop-types";
-import styled from "styled-components";
-import Portal from "react-overlays/lib/Portal";
-import Transition from "react-motion-ui-pack";
-import ClickOutside from "../ClickOutside";
-import emptyFunction from "../utils/emptyFunction";
+import React from 'react';
+import PropTypes from 'prop-types';
+import styled from 'styled-components';
+import Portal from 'react-overlays/lib/Portal';
+import Transition from 'react-motion-ui-pack';
+import ClickOutside from '../ClickOutside';
+import emptyFunction from '../utils/emptyFunction';
 
 export const Overlay = styled.div`
   position: fixed;
@@ -37,10 +37,10 @@ const Dialog = ({ onHide, show, children, ...otherProps }) =>
 Dialog.propTypes = {
   children: PropTypes.node.isRequired,
   show: PropTypes.bool.isRequired,
-  onHide: PropTypes.func
+  onHide: PropTypes.func,
 };
 Dialog.defaultProps = {
-  onHide: emptyFunction
+  onHide: emptyFunction,
 };
 
 export default Dialog;

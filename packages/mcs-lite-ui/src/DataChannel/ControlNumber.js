@@ -1,10 +1,10 @@
-import React from "react";
-import PropTypes from "prop-types";
-import styled from "styled-components";
-import ButtonClear from "./ButtonClear";
-import Button from "../Button";
-import Input from "../Input";
-import P from "../P";
+import React from 'react';
+import PropTypes from 'prop-types';
+import styled from 'styled-components';
+import ButtonClear from './ButtonClear';
+import Button from '../Button';
+import Input from '../Input';
+import P from '../P';
 
 export const Container = styled.div`
   width: 100%;
@@ -49,14 +49,14 @@ const ControlNumber = ({
   </Container>
 );
 
-ControlNumber.displayName = "ControlNumber";
+ControlNumber.displayName = 'ControlNumber';
 ControlNumber.propTypes = {
   value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
   onChange: PropTypes.func.isRequired,
   onSubmit: PropTypes.func.isRequired,
   onClear: PropTypes.func.isRequired,
   placeholder: PropTypes.string,
-  unit: PropTypes.string
+  unit: PropTypes.string,
 };
 
 export default ControlNumber;

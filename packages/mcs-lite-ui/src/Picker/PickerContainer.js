@@ -1,6 +1,6 @@
-import React from "react";
-import PropTypes from "prop-types";
-import styled from "styled-components";
+import React from 'react';
+import PropTypes from 'prop-types';
+import styled from 'styled-components';
 
 const CONTAINER_HEIGHT = 200;
 const ITEM_HEIGHT = 40;
@@ -54,9 +54,9 @@ const PickerContainer = ({ children, ...otherProps }) => (
   </Container>
 );
 
-PickerContainer.displayName = "PickerContainer";
+PickerContainer.displayName = 'PickerContainer';
 PickerContainer.propTypes = {
-  children: PropTypes.node.isRequired
+  children: PropTypes.node.isRequired,
 };
 
 export default PickerContainer;

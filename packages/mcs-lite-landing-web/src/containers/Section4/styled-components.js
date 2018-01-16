@@ -1,6 +1,6 @@
-import styled from "styled-components";
-import A from "mcs-lite-ui/lib/A";
-import SectionRow from "../../components/SectionRow";
+import styled from 'styled-components';
+import A from 'mcs-lite-ui/lib/A';
+import SectionRow from '../../components/SectionRow';
 
 export const StyledSectionRow = styled(SectionRow)`
   background-image: linear-gradient(

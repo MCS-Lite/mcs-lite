@@ -1,83 +1,83 @@
-import React from "react";
-import { mount } from "enzyme";
-import toJson from "enzyme-to-json";
-import { ThemeProvider } from "styled-components";
-import { theme } from "mcs-lite-theme";
-import DataChannelAdapter from "../DataChannelAdapter";
-import DataChannel from "../../DataChannel";
+import React from 'react';
+import { mount } from 'enzyme';
+import toJson from 'enzyme-to-json';
+import { ThemeProvider } from 'styled-components';
+import { theme } from 'mcs-lite-theme';
+import DataChannelAdapter from '../DataChannelAdapter';
+import DataChannel from '../../DataChannel';
 
-it("should render GPIO_CONTROL correctly with default value to N/A", () => {
+it('should render GPIO_CONTROL correctly with default value to N/A', () => {
   const wrapper = mount(
     <ThemeProvider theme={theme}>
       <DataChannelAdapter
         dataChannelProps={{
-          id: "id",
-          type: "GPIO_CONTROL",
+          id: 'id',
+          type: 'GPIO_CONTROL',
           values: {},
-          format: {}
+          format: {},
         }}
         eventHandler={() => {}}
       />
-    </ThemeProvider>
+    </ThemeProvider>,
   );
 
   const tree = toJson(wrapper.find(DataChannelAdapter));
   expect(tree).toMatchSnapshot();
 });
 
-it("should render GPIO_CONTROL correctly with Low", () => {
+it('should render GPIO_CONTROL correctly with Low', () => {
   const wrapper = mount(
     <ThemeProvider theme={theme}>
       <DataChannelAdapter
         dataChannelProps={{
-          id: "id",
-          type: "GPIO_CONTROL",
+          id: 'id',
+          type: 'GPIO_CONTROL',
           values: { value: 0 },
-          format: {}
+          format: {},
         }}
         eventHandler={() => {}}
       />
-    </ThemeProvider>
+    </ThemeProvider>,
   );
 
   const tree = toJson(wrapper.find(DataChannelAdapter));
   expect(tree).toMatchSnapshot();
 });
 
-it("should render GPIO_CONTROL correctly with High", () => {
+it('should render GPIO_CONTROL correctly with High', () => {
   const wrapper = mount(
     <ThemeProvider theme={theme}>
       <DataChannelAdapter
         dataChannelProps={{
-          id: "id",
-          type: "GPIO_CONTROL",
+          id: 'id',
+          type: 'GPIO_CONTROL',
           values: { value: 1 },
-          format: {}
+          format: {},
         }}
         eventHandler={() => {}}
       />
-    </ThemeProvider>
+    </ThemeProvider>,
   );
 
   const tree = toJson(wrapper.find(DataChannelAdapter));
   expect(tree).toMatchSnapshot();
 });
 
-it("should handle onChange", () => {
+it('should handle onChange', () => {
   const mockEventHandler = jest.fn();
 
   const wrapper = mount(
     <ThemeProvider theme={theme}>
       <DataChannelAdapter
         dataChannelProps={{
-          id: "id",
-          type: "GPIO_CONTROL",
+          id: 'id',
+          type: 'GPIO_CONTROL',
           values: { value: 1 },
-          format: {}
+          format: {},
         }}
         eventHandler={mockEventHandler}
       />
-    </ThemeProvider>
+    </ThemeProvider>,
   );
 
   expect(mockEventHandler).not.toHaveBeenCalled();
@@ -85,30 +85,30 @@ it("should handle onChange", () => {
     .find(DataChannel.ControlRange)
     .props()
     .onChange({
-      target: { value: 0 }
+      target: { value: 0 },
     });
   expect(mockEventHandler).toHaveBeenCalledWith({
-    id: "id",
-    type: "CHANGE",
-    values: { value: 0 }
+    id: 'id',
+    type: 'CHANGE',
+    values: { value: 0 },
   });
 });
 
-it("should handle onSubmit", () => {
+it('should handle onSubmit', () => {
   const mockEventHandler = jest.fn();
 
   const wrapper = mount(
     <ThemeProvider theme={theme}>
       <DataChannelAdapter
         dataChannelProps={{
-          id: "id",
-          type: "GPIO_CONTROL",
+          id: 'id',
+          type: 'GPIO_CONTROL',
           values: { value: 1 },
-          format: {}
+          format: {},
         }}
         eventHandler={mockEventHandler}
       />
-    </ThemeProvider>
+    </ThemeProvider>,
   );
 
   expect(mockEventHandler).not.toHaveBeenCalled();
@@ -117,8 +117,8 @@ it("should handle onSubmit", () => {
     .props()
     .onSubmit();
   expect(mockEventHandler).toHaveBeenCalledWith({
-    id: "id",
-    type: "SUBMIT",
-    values: { value: 1 }
+    id: 'id',
+    type: 'SUBMIT',
+    values: { value: 1 },
   });
 });

@@ -1,6 +1,6 @@
-import React from "react";
-import PropTypes from "prop-types";
-import styled from "styled-components";
+import React from 'react';
+import PropTypes from 'prop-types';
+import styled from 'styled-components';
 
 export const Svg = styled.svg`
   width: 12px;
@@ -17,12 +17,12 @@ const StatusLight = props => (
   </Svg>
 );
 
-StatusLight.displayName = "StatusLight";
+StatusLight.displayName = 'StatusLight';
 StatusLight.propTypes = {
-  color: PropTypes.string
+  color: PropTypes.string,
 };
 StatusLight.defaultProps = {
-  color: "grayDark"
+  color: 'grayDark',
 };
 
 export default StatusLight;

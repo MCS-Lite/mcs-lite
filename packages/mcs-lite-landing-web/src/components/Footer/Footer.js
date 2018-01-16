@@ -1,35 +1,35 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { Page, Row } from "hedron";
-import Loadable from "react-loadable";
-import P from "mcs-lite-ui/lib/P";
-import A from "mcs-lite-ui/lib/A";
-import LazyloadOnce from "mcs-lite-ui/lib/LazyloadOnce";
-import getCurrentYear from "mcs-lite-ui/lib/utils/getCurrentYear";
-import { PAGE_WIDTH } from "../../components/SectionRow/SectionRow";
+import React from 'react';
+import PropTypes from 'prop-types';
+import { Page, Row } from 'hedron';
+import Loadable from 'react-loadable';
+import P from 'mcs-lite-ui/lib/P';
+import A from 'mcs-lite-ui/lib/A';
+import LazyloadOnce from 'mcs-lite-ui/lib/LazyloadOnce';
+import getCurrentYear from 'mcs-lite-ui/lib/utils/getCurrentYear';
+import { PAGE_WIDTH } from '../../components/SectionRow/SectionRow';
 import {
   Container,
   StyledColumn,
   IconWrapper,
   FakeIcon,
-  RWDWrapper
-} from "./styled-components";
+  RWDWrapper,
+} from './styled-components';
 
 const HEIGHT = 32;
 
 const waypointConfig = {
   topOffset: 0,
   bottomOffset: 0,
-  fireOnRapidScroll: true
+  fireOnRapidScroll: true,
 };
 
 const LoadableSVGFacebook = Loadable({
-  loader: () => import(/* webpackChunkName: "Footer" */ "../SVG/SVGFacebook"),
-  loading: () => <FakeIcon>Facebook</FakeIcon>
+  loader: () => import(/* webpackChunkName: "Footer" */ '../SVG/SVGFacebook'),
+  loading: () => <FakeIcon>Facebook</FakeIcon>,
 });
 const LoadableSVGGitHub = Loadable({
-  loader: () => import(/* webpackChunkName: "Footer" */ "../SVG/SVGGitHub"),
-  loading: () => <FakeIcon>GitHub</FakeIcon>
+  loader: () => import(/* webpackChunkName: "Footer" */ '../SVG/SVGGitHub'),
+  loading: () => <FakeIcon>GitHub</FakeIcon>,
 });
 
 const Footer = ({ getMessages: t }) => (
@@ -59,7 +59,7 @@ const Footer = ({ getMessages: t }) => (
               </A>
             </IconWrapper>
             <P color="white">
-              © {getCurrentYear()} {t("desc")}
+              © {getCurrentYear()} {t('desc')}
             </P>
           </RWDWrapper>
         </StyledColumn>
@@ -68,10 +68,10 @@ const Footer = ({ getMessages: t }) => (
   </Container>
 );
 
-Footer.displayName = "Footer";
+Footer.displayName = 'Footer';
 Footer.propTypes = {
   // React-intl I18n
-  getMessages: PropTypes.func.isRequired
+  getMessages: PropTypes.func.isRequired,
 };
 
 export default Footer;

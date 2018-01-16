@@ -1,34 +1,45 @@
 module.exports = {
-  parser: "babel-eslint",
+  parser: 'babel-eslint',
   extends: [
-    "prettier",
-    "prettier/flowtype",
-    "prettier/react",
-    "plugin:jest/recommended"
+    'airbnb',
+    'prettier',
+    'prettier/flowtype',
+    'prettier/react',
+    'plugin:jest/recommended',
   ],
-  plugins: ["prettier", "jest"],
+  plugins: ['prettier', 'jest'],
   env: {
-    "jest/globals": true
+    'jest/globals': true,
   },
   rules: {
-    "react/jsx-filename-extension": [
+    'react/jsx-filename-extension': [
       1,
       {
-        extensions: [".js"]
-      }
+        extensions: ['.js'],
+      },
     ],
-    "import/no-extraneous-dependencies": 0,
-    "jsx-a11y/no-static-element-interactions": 0, // <div onClick={() => {}} />
-    "react/forbid-prop-types": 0,
-    "react/require-default-props": 0,
+    'import/no-extraneous-dependencies': 0,
+    'jsx-a11y/no-static-element-interactions': 0, // <div onClick={() => {}} />
+    'react/forbid-prop-types': 0,
+    'react/require-default-props': 0,
+    'jsx-a11y/anchor-is-valid': [
+      'error',
+      {
+        components: ['Link'],
+        specialLink: ['to'],
+        aspects: ['noHref', 'invalidHref', 'preferButton'],
+      },
+    ],
+    'jsx-a11y/click-events-have-key-events': 0,
+    'jsx-a11y/mouse-events-have-key-events': 0,
 
     // Prettier
-    "prettier/prettier": [
-      "error",
+    'prettier/prettier': [
+      'error',
       {
         singleQuote: true,
-        trailingComma: "all"
-      }
-    ]
-  }
+        trailingComma: 'all',
+      },
+    ],
+  },
 };

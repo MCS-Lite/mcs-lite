@@ -1,17 +1,17 @@
-import React from "react";
-import { mount } from "enzyme";
-import { ThemeProvider } from "styled-components";
-import { theme } from "mcs-lite-theme";
-import TabItem, { Item } from "../TabItem";
+import React from 'react';
+import { mount } from 'enzyme';
+import { ThemeProvider } from 'styled-components';
+import { theme } from 'mcs-lite-theme';
+import TabItem, { Item } from '../TabItem';
 
-it("should handle onClick", () => {
+it('should handle onClick', () => {
   const mockOnClick = jest.fn();
   const wrapper = mount(
     <ThemeProvider theme={theme}>
       <TabItem value={123} onClick={mockOnClick}>
         Tab
       </TabItem>
-    </ThemeProvider>
+    </ThemeProvider>,
   );
 
   expect(mockOnClick).not.toHaveBeenCalled();
@@ -20,6 +20,6 @@ it("should handle onClick", () => {
   wrapper
     .find(Item)
     .props()
-    .onClick("e");
-  expect(mockOnClick).toHaveBeenCalledWith("e", 123);
+    .onClick('e');
+  expect(mockOnClick).toHaveBeenCalledWith('e', 123);
 });

@@ -1,15 +1,15 @@
-import React from "react";
-import PropTypes from "prop-types";
-import Helmet from "react-helmet";
-import MLToast from "mcs-lite-ui/lib/Toast";
-import Transition from "react-motion-ui-pack";
-import Portal from "react-overlays/lib/Portal";
-import { HeightContainer, ToastContainer, Fixed } from "./styled-components";
+import React from 'react';
+import PropTypes from 'prop-types';
+import Helmet from 'react-helmet';
+import MLToast from 'mcs-lite-ui/lib/Toast';
+import Transition from 'react-motion-ui-pack';
+import Portal from 'react-overlays/lib/Portal';
+import { HeightContainer, ToastContainer, Fixed } from './styled-components';
 
 const App = ({ toasts, children, getMessages: t }) => (
   <HeightContainer>
     {/* 1. Helmet */}
-    <Helmet titleTemplate={`%s | ${t("titleTemplate")}`} />
+    <Helmet titleTemplate={`%s | ${t('titleTemplate')}`} />
 
     {/* 2. Body content */}
     <HeightContainer>{children}</HeightContainer>
@@ -25,7 +25,7 @@ const App = ({ toasts, children, getMessages: t }) => (
           >
             {toasts.map(({ key, kind, children: toastChildren }) => (
               <MLToast key={key} kind={kind}>
-                {kind === "error" && t("gerenalError")}
+                {kind === 'error' && t('gerenalError')}
                 {toastChildren}
               </MLToast>
             ))}
@@ -36,7 +36,7 @@ const App = ({ toasts, children, getMessages: t }) => (
   </HeightContainer>
 );
 
-App.displayName = "App";
+App.displayName = 'App';
 App.propTypes = {
   children: PropTypes.node.isRequired,
 
@@ -45,12 +45,12 @@ App.propTypes = {
     PropTypes.shape({
       key: PropTypes.string.isRequired,
       kind: PropTypes.string.isRequired,
-      children: PropTypes.node.isRequired
-    })
+      children: PropTypes.node.isRequired,
+    }),
   ).isRequired,
 
   // React-intl I18n
-  getMessages: PropTypes.func.isRequired
+  getMessages: PropTypes.func.isRequired,
 };
 
 export default App;

@@ -1,40 +1,40 @@
-import PropTypes from "prop-types";
-import React from "react";
-import Helmet from "react-helmet";
-import { Link } from "react-router";
-import Loadable from "react-loadable";
-import IconArrowLeft from "mcs-lite-icon/lib/IconArrowLeft";
-import IconCalendar from "mcs-lite-icon/lib/IconCalendar";
-import IconRefresh from "mcs-lite-icon/lib/IconRefresh";
-import IconLoading from "mcs-lite-icon/lib/IconLoading";
-import MobileHeader from "mcs-lite-ui/lib/MobileHeader";
-import DataChannelCard from "mcs-lite-ui/lib/DataChannelCard";
-import DataChannelAdapter from "mcs-lite-ui/lib/DataChannelAdapter";
-import { updatePathname } from "mcs-lite-ui/lib/utils/routerHelper";
-import P from "mcs-lite-ui/lib/P";
-import Spin from "mcs-lite-ui/lib/Spin";
+import PropTypes from 'prop-types';
+import React from 'react';
+import Helmet from 'react-helmet';
+import { Link } from 'react-router';
+import Loadable from 'react-loadable';
+import IconArrowLeft from 'mcs-lite-icon/lib/IconArrowLeft';
+import IconCalendar from 'mcs-lite-icon/lib/IconCalendar';
+import IconRefresh from 'mcs-lite-icon/lib/IconRefresh';
+import IconLoading from 'mcs-lite-icon/lib/IconLoading';
+import MobileHeader from 'mcs-lite-ui/lib/MobileHeader';
+import DataChannelCard from 'mcs-lite-ui/lib/DataChannelCard';
+import DataChannelAdapter from 'mcs-lite-ui/lib/DataChannelAdapter';
+import { updatePathname } from 'mcs-lite-ui/lib/utils/routerHelper';
+import P from 'mcs-lite-ui/lib/P';
+import Spin from 'mcs-lite-ui/lib/Spin';
 import {
   dataChannelTypeMapper,
-  areaChartTypeMapper
-} from "mcs-lite-ui/lib/utils/dataChannelHelper";
-import localTimeFormat from "mcs-lite-ui/lib/utils/localTimeFormat";
+  areaChartTypeMapper,
+} from 'mcs-lite-ui/lib/utils/dataChannelHelper';
+import localTimeFormat from 'mcs-lite-ui/lib/utils/localTimeFormat';
 import {
   CardContainer,
   StyledSamll,
   HistoryHeader,
   ResetWrapper,
   HistoryContainer,
-  ChartWrapper
-} from "./styled-components";
-import WebSocketNotification from "../../components/WebSocketNotification";
+  ChartWrapper,
+} from './styled-components';
+import WebSocketNotification from '../../components/WebSocketNotification';
 
 const LoadableChart = Loadable({
-  loader: () => import("mcs-lite-ui/lib/DataPointAreaChart"),
+  loader: () => import('mcs-lite-ui/lib/DataPointAreaChart'),
   loading: () => (
     <Spin>
       <IconLoading size={20} />
     </Spin>
-  )
+  ),
 });
 
 class DeviceDataChannelDetail extends React.Component {
@@ -49,8 +49,8 @@ class DeviceDataChannelDetail extends React.Component {
       PropTypes.shape({
         updatedAt: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
           .isRequired,
-        value: PropTypes.number.isRequired
-      })
+        value: PropTypes.number.isRequired,
+      }),
     ).isRequired,
 
     // Redux Action
@@ -65,14 +65,14 @@ class DeviceDataChannelDetail extends React.Component {
     // WebSocket
     sendMessage: PropTypes.func.isRequired,
     reconnect: PropTypes.func.isRequired,
-    isWebSocketClose: PropTypes.bool.isRequired
+    isWebSocketClose: PropTypes.bool.isRequired,
   };
   componentWillMount = () => {
     const {
       deviceId,
       dataChannelId,
       fetchDeviceDetail,
-      fetchDatapoints
+      fetchDatapoints,
     } = this.props;
     fetchDeviceDetail(deviceId);
     fetchDatapoints(deviceId, dataChannelId);
@@ -87,7 +87,7 @@ class DeviceDataChannelDetail extends React.Component {
     // TODO: refactor these codes.
     const datapoint = { datachannelId: id, values };
     switch (type) {
-      case "SUBMIT":
+      case 'SUBMIT':
         // Remind: MUST upload the datapoint via WebSocket.
         sendMessage(JSON.stringify(datapoint));
         break;
@@ -105,17 +105,17 @@ class DeviceDataChannelDetail extends React.Component {
       getMessages: t,
       dataChannelId,
       isWebSocketClose,
-      reconnect
+      reconnect,
     } = this.props;
     const { eventHandler, onResetClick } = this;
 
     return (
       <div>
         <Helmet>
-          <title>{t("dataChannelDetail")}</title>
+          <title>{t('dataChannelDetail')}</title>
         </Helmet>
         <MobileHeader.MobileHeader
-          title={t("dataChannelDetail")}
+          title={t('dataChannelDetail')}
           leftChildren={
             <MobileHeader.MobileHeaderIcon
               component={Link}
@@ -128,7 +128,7 @@ class DeviceDataChannelDetail extends React.Component {
             <MobileHeader.MobileHeaderIcon
               component={Link}
               to={updatePathname(
-                `/devices/${deviceId}/dataChannels/${dataChannelId}/timeRange`
+                `/devices/${deviceId}/dataChannels/${dataChannelId}/timeRange`,
               )}
             >
               <IconCalendar />
@@ -151,10 +151,10 @@ class DeviceDataChannelDetail extends React.Component {
                     id: datachannel.datachannelId,
                     type: dataChannelTypeMapper(
                       datachannel.channelType.name,
-                      datachannel.type
+                      datachannel.type,
                     ),
                     values: datachannel.datapoints.values,
-                    format: datachannel.format
+                    format: datachannel.format,
                   }}
                   eventHandler={eventHandler}
                 />
@@ -167,13 +167,13 @@ class DeviceDataChannelDetail extends React.Component {
               <HistoryContainer>
                 <HistoryHeader>
                   <div>
-                    <P>{t("historyChart")}</P>
-                    <StyledSamll>{t("defaultQueryLatest")}</StyledSamll>
+                    <P>{t('historyChart')}</P>
+                    <StyledSamll>{t('defaultQueryLatest')}</StyledSamll>
                   </div>
                   <div>
                     <ResetWrapper onClick={onResetClick}>
                       <IconRefresh />
-                      <P>{t("reset")}</P>
+                      <P>{t('reset')}</P>
                     </ResetWrapper>
                   </div>
                 </HistoryHeader>
@@ -185,7 +185,7 @@ class DeviceDataChannelDetail extends React.Component {
                       type={areaChartTypeMapper(datachannel.channelType.name)}
                     />
                   ) : (
-                    t("noData")
+                    t('noData')
                   )}
                 </ChartWrapper>
               </HistoryContainer>

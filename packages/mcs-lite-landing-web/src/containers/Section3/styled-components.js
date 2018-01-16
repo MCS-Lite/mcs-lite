@@ -1,10 +1,10 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { Row } from "hedron";
-import styled from "styled-components";
-import ScrollOverPack from "rc-scroll-anim/lib/ScrollOverPack";
-import TweenOne from "rc-tween-one";
-import LazyloadOnce from "mcs-lite-ui/lib/LazyloadOnce";
+import React from 'react';
+import PropTypes from 'prop-types';
+import { Row } from 'hedron';
+import styled from 'styled-components';
+import ScrollOverPack from 'rc-scroll-anim/lib/ScrollOverPack';
+import TweenOne from 'rc-tween-one';
+import LazyloadOnce from 'mcs-lite-ui/lib/LazyloadOnce';
 
 const HEIGHT = 80;
 
@@ -23,7 +23,7 @@ export const LazyloadIcon = ({ children }) => (
       <TweenOne
         key="ImageWrapper"
         animation={{ opacity: 1, y: 10 }}
-        style={{ opacity: 0, transform: "translateY(-30px)" }}
+        style={{ opacity: 0, transform: 'translateY(-30px)' }}
       >
         <ImageWrapper>{children}</ImageWrapper>
       </TweenOne>
@@ -31,9 +31,9 @@ export const LazyloadIcon = ({ children }) => (
   </LazyloadOnce>
 );
 
-LazyloadIcon.displayName = "LazyloadIcon";
+LazyloadIcon.displayName = 'LazyloadIcon';
 LazyloadIcon.propTypes = {
-  children: PropTypes.node.isRequired
+  children: PropTypes.node.isRequired,
 };
 
 export const StyledRow = styled(Row)`

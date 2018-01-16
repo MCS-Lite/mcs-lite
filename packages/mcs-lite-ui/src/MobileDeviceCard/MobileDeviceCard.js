@@ -1,10 +1,10 @@
-import React from "react";
-import PropTypes from "prop-types";
-import styled from "styled-components";
-import TextTruncate from "react-text-truncate";
-import Card from "../Card";
-import Img from "../Img";
-import Heading from "../Heading";
+import React from 'react';
+import PropTypes from 'prop-types';
+import styled from 'styled-components';
+import TextTruncate from 'react-text-truncate';
+import Card from '../Card';
+import Img from '../Img';
+import Heading from '../Heading';
 
 export const StyledCard = styled(Card)`
   height: 120px;
@@ -35,10 +35,10 @@ const MobileDeviceCard = ({ title, image, ...otherProps }) => (
   </StyledCard>
 );
 
-MobileDeviceCard.displayName = "MobileDeviceCard";
+MobileDeviceCard.displayName = 'MobileDeviceCard';
 MobileDeviceCard.propTypes = {
   title: PropTypes.string.isRequired,
-  image: PropTypes.string.isRequired
+  image: PropTypes.string.isRequired,
 };
 
 export default MobileDeviceCard;

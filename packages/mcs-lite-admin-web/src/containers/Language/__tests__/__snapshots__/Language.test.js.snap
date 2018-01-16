@@ -82,7 +82,6 @@ exports[`should renders <Language> correctly 1`] = `
     <DashboardDesc>
       <P
         className="c2"
-        innerRef={undefined}
       >
         <Component
           className="c2 c3"

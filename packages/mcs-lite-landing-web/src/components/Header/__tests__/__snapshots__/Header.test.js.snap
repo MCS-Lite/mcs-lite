@@ -139,7 +139,7 @@ exports[`should renders <Header> correctly with Desktop view 1`] = `
 
 .c10 .c7 {
   -webkit-flex-shrink: 0;
-  -ms-flex-shrink: 0;
+  -ms-flex-negative: 0;
   flex-shrink: 0;
 }
 
@@ -181,12 +181,10 @@ exports[`should renders <Header> correctly with Desktop view 1`] = `
                   width="960px"
                 >
                   <Styled(RowContainer)
-                    debug={undefined}
                     key=".0"
                   >
                     <RowContainer
                       className="c3"
-                      debug={undefined}
                       divisions={12}
                     >
                       <section
@@ -273,7 +271,6 @@ exports[`should renders <Header> correctly with Desktop view 1`] = `
                                     <Styled(styled.div)>
                                       <styled.div
                                         className="c10"
-                                        innerRef={undefined}
                                       >
                                         <div
                                           className="c10 c6"
@@ -421,7 +418,6 @@ exports[`should renders <Header> correctly with Desktop view 1`] = `
                                                   <Styled(P)>
                                                     <P
                                                       className="c11"
-                                                      innerRef={undefined}
                                                     >
                                                       <Component
                                                         className="c11 c12"

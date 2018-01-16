@@ -1,17 +1,17 @@
-import React from "react";
-import PropTypes from "prop-types";
-import styled from "styled-components";
-import { darken1, darken2 } from "mcs-lite-theme";
-import R from "ramda";
-import emptyFunction from "../utils/emptyFunction";
+import React from 'react';
+import PropTypes from 'prop-types';
+import styled from 'styled-components';
+import { darken1, darken2 } from 'mcs-lite-theme';
+import R from 'ramda';
+import emptyFunction from '../utils/emptyFunction';
 
 const mapBorderColorByActive = R.cond([
-  [R.propEq("active", true), props => R.path(["theme", "color", props.color])],
-  [R.T, R.always("transparent")]
+  [R.propEq('active', true), props => R.path(['theme', 'color', props.color])],
+  [R.T, R.always('transparent')],
 ]);
 const mapColorByActive = R.cond([
-  [R.propEq("active", true), props => R.path(["theme", "color", props.color])],
-  [R.T, R.path(["theme", "color", "black"])]
+  [R.propEq('active', true), props => R.path(['theme', 'color', props.color])],
+  [R.T, R.path(['theme', 'color', 'black'])],
 ]);
 
 export const Item = styled.div`
@@ -48,15 +48,15 @@ class TabItem extends React.Component {
   }
 }
 
-TabItem.displayName = "TabItem";
+TabItem.displayName = 'TabItem';
 TabItem.propTypes = {
   value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
   onClick: PropTypes.func, // (e, value) => void
-  color: PropTypes.string
+  color: PropTypes.string,
 };
 TabItem.defaultProps = {
   onClick: emptyFunction,
-  color: "primary"
+  color: 'primary',
 };
 
 export default TabItem;

@@ -1,6 +1,6 @@
-import React from "react";
-import PropTypes from "prop-types";
-import styled from "styled-components";
+import React from 'react';
+import PropTypes from 'prop-types';
+import styled from 'styled-components';
 
 export const Container = styled.div`
   user-select: none;
@@ -21,9 +21,9 @@ const PreventDrag = ({ children }) => (
   </Container>
 );
 
-PreventDrag.displayName = "PreventDrag";
+PreventDrag.displayName = 'PreventDrag';
 PreventDrag.propTypes = {
-  children: PropTypes.node.isRequired
+  children: PropTypes.node.isRequired,
 };
 
 export default PreventDrag;

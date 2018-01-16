@@ -42,7 +42,6 @@ exports[`should render FLOAT_DISPLAY correctly with default value to N/A 1`] = `
   eventHandler={[Function]}
 >
   <DisplayUnitValue
-    unit={undefined}
     value="N/A"
   >
     <DisplayUnitValue__Container>
@@ -55,7 +54,6 @@ exports[`should render FLOAT_DISPLAY correctly with default value to N/A 1`] = `
           <Heading
             className="c1"
             color="primary"
-            innerRef={undefined}
             level={1}
           >
             <H
@@ -147,7 +145,6 @@ exports[`should render FLOAT_DISPLAY correctly with unit 1`] = `
           <Heading
             className="c1"
             color="primary"
-            innerRef={undefined}
             level={1}
           >
             <H
@@ -170,7 +167,6 @@ exports[`should render FLOAT_DISPLAY correctly with unit 1`] = `
           <P
             className="c3"
             color="grayBase"
-            innerRef={undefined}
           >
             <Component
               className="c3 c4"
@@ -235,7 +231,6 @@ exports[`should render FLOAT_DISPLAY correctly with value 1`] = `
   eventHandler={[Function]}
 >
   <DisplayUnitValue
-    unit={undefined}
     value={1.1}
   >
     <DisplayUnitValue__Container>
@@ -248,7 +243,6 @@ exports[`should render FLOAT_DISPLAY correctly with value 1`] = `
           <Heading
             className="c1"
             color="primary"
-            innerRef={undefined}
             level={1}
           >
             <H
@@ -315,7 +309,6 @@ exports[`should render FLOAT_DISPLAY correctly with zero 1`] = `
   eventHandler={[Function]}
 >
   <DisplayUnitValue
-    unit={undefined}
     value={0}
   >
     <DisplayUnitValue__Container>
@@ -328,7 +321,6 @@ exports[`should render FLOAT_DISPLAY correctly with zero 1`] = `
           <Heading
             className="c1"
             color="primary"
-            innerRef={undefined}
             level={1}
           >
             <H

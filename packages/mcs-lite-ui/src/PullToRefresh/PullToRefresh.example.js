@@ -1,9 +1,9 @@
-import React from "react";
-import styled from "styled-components";
-import { storiesOf } from "@storybook/react";
-import { withInfo } from "@storybook/addon-info";
-import Heading from "../Heading";
-import PullToRefresh from ".";
+import React from 'react';
+import styled from 'styled-components';
+import { storiesOf } from '@storybook/react';
+import { withInfo } from '@storybook/addon-info';
+import Heading from '../Heading';
+import PullToRefresh from '.';
 
 const Body = styled.div`
   overflow: hidden;
@@ -48,15 +48,15 @@ class StatefulPullToRefresh extends React.Component {
   }
 }
 
-storiesOf("PullToRefresh", module).add(
-  "API",
+storiesOf('PullToRefresh', module).add(
+  'API',
   withInfo({
-    text: "",
+    text: '',
     inline: true,
-    propTables: [PullToRefresh]
+    propTables: [PullToRefresh],
   })(() => (
     <Body>
       <StatefulPullToRefresh />
     </Body>
-  ))
+  )),
 );

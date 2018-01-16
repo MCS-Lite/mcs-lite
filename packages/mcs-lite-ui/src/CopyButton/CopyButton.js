@@ -1,30 +1,30 @@
-import React from "react";
-import PropTypes from "prop-types";
-import styled from "styled-components";
-import { componentFromStreamWithConfig } from "recompose/componentFromStream";
-import { createEventHandlerWithConfig } from "recompose/createEventHandler";
-import R from "ramda";
-import copyToClipboard from "copy-to-clipboard";
-import MorphReplace from "react-svg-morph/lib/MorphReplace";
-import { IconLoading, IconDone } from "mcs-lite-icon";
-import { Observable } from "rxjs/Observable";
-import { async } from "rxjs/scheduler/async";
-import "rxjs/add/operator/combineLatest";
-import "rxjs/add/operator/withLatestFrom";
-import "rxjs/add/observable/of";
-import "rxjs/add/operator/switchMapTo";
-import "rxjs/add/operator/delay";
-import "rxjs/add/operator/merge";
-import "rxjs/add/operator/startWith";
-import "rxjs/add/operator/pluck";
-import "rxjs/add/observable/from";
-import "rxjs/add/observable/merge";
-import Button from "../Button";
-import rotate360 from "../Spin/rotate360";
+import React from 'react';
+import PropTypes from 'prop-types';
+import styled from 'styled-components';
+import { componentFromStreamWithConfig } from 'recompose/componentFromStream';
+import { createEventHandlerWithConfig } from 'recompose/createEventHandler';
+import R from 'ramda';
+import copyToClipboard from 'copy-to-clipboard';
+import MorphReplace from 'react-svg-morph/lib/MorphReplace';
+import { IconLoading, IconDone } from 'mcs-lite-icon';
+import { Observable } from 'rxjs/Observable';
+import { async } from 'rxjs/scheduler/async';
+import 'rxjs/add/operator/combineLatest';
+import 'rxjs/add/operator/withLatestFrom';
+import 'rxjs/add/observable/of';
+import 'rxjs/add/operator/switchMapTo';
+import 'rxjs/add/operator/delay';
+import 'rxjs/add/operator/merge';
+import 'rxjs/add/operator/startWith';
+import 'rxjs/add/operator/pluck';
+import 'rxjs/add/observable/from';
+import 'rxjs/add/observable/merge';
+import Button from '../Button';
+import rotate360 from '../Spin/rotate360';
 
-const DEFAULT = "default";
-const LOADING = "loading";
-const SUCCESS = "success";
+const DEFAULT = 'default';
+const LOADING = 'loading';
+const SUCCESS = 'success';
 
 export const StyledButton = styled(Button)`
   width: 42px;
@@ -34,7 +34,7 @@ export const StyledButton = styled(Button)`
     animation: ${props =>
       props.status === LOADING
         ? `${rotate360} 0.6s infinite cubic-bezier(0.41, 0.01, 0.58, 1)`
-        : "none"};
+        : 'none'};
   }
 
   path {
@@ -46,33 +46,33 @@ export const getStatusStream = (
   source$,
   t1 = 500,
   t2 = 1800,
-  scheduler = async
+  scheduler = async,
 ) =>
   source$
     .switchMapTo(
       Observable.merge(
         Observable.of(LOADING),
         Observable.of(SUCCESS).delay(t1, scheduler),
-        Observable.of(DEFAULT).delay(t2, scheduler)
-      )
+        Observable.of(DEFAULT).delay(t2, scheduler),
+      ),
     )
     .startWith(DEFAULT);
 
-const omitProps = R.omit(["text"]);
+const omitProps = R.omit(['text']);
 
 const componentFromStream = componentFromStreamWithConfig({
   fromESObservable: Observable.from,
-  toESObservable: stream => stream
+  toESObservable: stream => stream,
 });
 const createEventHandler = createEventHandlerWithConfig({
   fromESObservable: Observable.from,
-  toESObservable: stream => stream
+  toESObservable: stream => stream,
 });
 
 const CopyButton = componentFromStream(props$ => {
   const { handler: onClick, stream: onClick$ } = createEventHandler();
 
-  const text$ = props$.pluck("text");
+  const text$ = props$.pluck('text');
   const status$ = getStatusStream(onClick$);
 
   // Remind: copyToClipboard Side-effects
@@ -103,13 +103,13 @@ const CopyButton = componentFromStream(props$ => {
           )}
         </div>
       </StyledButton>
-    )
+    ),
   );
 });
 
-CopyButton.displayName = "CopyButton";
+CopyButton.displayName = 'CopyButton';
 CopyButton.propTypes = {
-  text: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired
+  text: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
 };
 
 export default CopyButton;

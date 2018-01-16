@@ -1,4 +1,4 @@
-import { color } from "d3-color";
+import { color } from 'd3-color';
 
 const darken = k => specifier =>
   color(specifier)
@@ -12,5 +12,5 @@ export default {
   darken,
   darken1,
   darken2,
-  darken3
+  darken3,
 };

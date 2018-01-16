@@ -1,15 +1,15 @@
-import { Observable } from "rxjs/Observable";
-import { actions as uiActions } from "./ui";
-import { success, accessTokenSelector$ } from "../utils/cycleHelper";
+import { Observable } from 'rxjs/Observable';
+import { actions as uiActions } from './ui';
+import { success, accessTokenSelector$ } from '../utils/cycleHelper';
 
 // ----------------------------------------------------------------------------
 // 1. Constants
 // ----------------------------------------------------------------------------
 
-const DELETE_DATA = "mcs-lite-admin-web/data/DELETE_DATA";
+const DELETE_DATA = 'mcs-lite-admin-web/data/DELETE_DATA';
 
 export const constants = {
-  DELETE_DATA
+  DELETE_DATA,
 };
 
 // ----------------------------------------------------------------------------
@@ -18,11 +18,11 @@ export const constants = {
 
 const deleteData = successMessage => ({
   type: DELETE_DATA,
-  payload: successMessage
+  payload: successMessage,
 });
 
 export const actions = {
-  deleteData
+  deleteData,
 };
 
 // ----------------------------------------------------------------------------
@@ -33,16 +33,16 @@ function deleteDataCycle(sources) {
   const accessToken$ = accessTokenSelector$(sources.STATE);
 
   const message$ = sources.ACTION.filter(
-    action => action.type === DELETE_DATA
-  ).pluck("payload");
+    action => action.type === DELETE_DATA,
+  ).pluck('payload');
 
   const request$ = sources.ACTION.filter(
-    action => action.type === DELETE_DATA
+    action => action.type === DELETE_DATA,
   ).combineLatest(accessToken$, (action, accessToken) => ({
-    url: "/api/clear",
-    method: "DELETE",
+    url: '/api/clear',
+    method: 'DELETE',
     headers: { Authorization: `Bearer ${accessToken}` },
-    category: DELETE_DATA
+    category: DELETE_DATA,
   }));
 
   const successRes$ = sources.HTTP.select(DELETE_DATA).switchMap(success);
@@ -52,19 +52,19 @@ function deleteDataCycle(sources) {
     successRes$
       .withLatestFrom(message$, (response, message) => message)
       .map(message =>
-        uiActions.addToast({ kind: "success", children: message })
+        uiActions.addToast({ kind: 'success', children: message }),
       ),
-    successRes$.mapTo(uiActions.setLoaded())
+    successRes$.mapTo(uiActions.setLoaded()),
   ]).mergeAll();
 
   return {
     ACTION: action$,
-    HTTP: request$
+    HTTP: request$,
   };
 }
 
 export const cycles = {
-  deleteDataCycle
+  deleteDataCycle,
 };
 
 // ----------------------------------------------------------------------------

@@ -1,6 +1,6 @@
-import styled from "styled-components";
-import { Column, withBreakpoints } from "hedron";
-import SectionRow from "../../components/SectionRow";
+import styled from 'styled-components';
+import { Column, withBreakpoints } from 'hedron';
+import SectionRow from '../../components/SectionRow';
 
 export const IMAGE_HEIGHT = 350; // image = 350 * 577
 export const IMAGE_WIDTH = 577; // image = 350 * 577

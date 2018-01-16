@@ -1,10 +1,10 @@
 /* eslint no-underscore-dangle: 0 */
 
-import React from "react";
-import PropTypes from "prop-types";
-import styled from "styled-components";
-import R from "ramda";
-import Hammer from "../utils/react-hammerjs";
+import React from 'react';
+import PropTypes from 'prop-types';
+import styled from 'styled-components';
+import R from 'ramda';
+import Hammer from '../utils/react-hammerjs';
 
 const CONTAINER_HEIGHT = 200;
 const ITEM_HEIGHT = 40;
@@ -25,14 +25,14 @@ export const Item = styled.div`
 
 class Picker extends React.Component {
   static propTypes = {
-    value: PropTypes.number.isRequired, // index
+    value: PropTypes.number, // index
     onChange: PropTypes.func, // (index: number, props: object) => void
     labels: PropTypes.arrayOf(
-      PropTypes.oneOfType([PropTypes.string, PropTypes.number])
-    ).isRequired
+      PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+    ).isRequired,
   };
   static defaultProps = {
-    value: 0
+    value: 0,
   };
 
   constructor(props) {
@@ -65,7 +65,7 @@ class Picker extends React.Component {
     } else {
       // Hint: Make it as control component - back to origin position.
       this.setState({
-        distance: this.calcDistanceByIndex(this.props.value)
+        distance: this.calcDistanceByIndex(this.props.value),
       });
     }
   };
@@ -82,7 +82,7 @@ class Picker extends React.Component {
   calcDistanceByIndex = R.pipe(
     this.clampIndex,
     R.multiply(ITEM_HEIGHT),
-    R.negate
+    R.negate,
   );
 
   /**
@@ -97,7 +97,7 @@ class Picker extends React.Component {
     R.divide(R.__, ITEM_HEIGHT),
     Math.ceil,
     R.subtract(R.__, 1), // Remind: convert to index, start from 0.
-    this.clampIndex
+    this.clampIndex,
   );
 
   render() {
@@ -111,7 +111,7 @@ class Picker extends React.Component {
         onPanStart={this.onPanVerticalStart}
         onPanEnd={this.onPanVerticalEnd}
         direction="DIRECTION_VERTICAL"
-        options={{ touchAction: "pan-x" }}
+        options={{ touchAction: 'pan-x' }}
       >
         <ItemWrapper style={{ marginTop: distance }}>
           {labels.map((label, index) => (

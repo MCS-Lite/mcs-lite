@@ -1,13 +1,13 @@
-import React from "react";
-import { storiesOf } from "@storybook/react";
-import { withInfo } from "@storybook/addon-info";
-import styled from "styled-components";
-import MorphReplace from "react-svg-morph/lib/MorphReplace";
-import * as Icons from "mcs-lite-icon/lib/index";
-import Heading from "../Heading";
-import Card from "../Card";
-import P from "../P";
-import Spin from "../Spin";
+import React from 'react';
+import { storiesOf } from '@storybook/react';
+import { withInfo } from '@storybook/addon-info';
+import styled from 'styled-components';
+import MorphReplace from 'react-svg-morph/lib/MorphReplace';
+import * as Icons from 'mcs-lite-icon/lib/index';
+import Heading from '../Heading';
+import Card from '../Card';
+import P from '../P';
+import Spin from '../Spin';
 
 const CardWrapper = styled.div`
   display: flex;
@@ -60,44 +60,44 @@ class StatefulMorphReplace extends React.Component {
   }
 }
 
-storiesOf("Icon [mcs-lite-icon]", module)
+storiesOf('Icon [mcs-lite-icon]', module)
   .add(
-    "API",
+    'API',
     withInfo({
-      text: "",
-      inline: true
-    })(() => <Icons.IconDelete />)
+      text: '',
+      inline: true,
+    })(() => <Icons.IconDelete />),
   )
   .add(
-    "Spin Icon",
+    'Spin Icon',
     withInfo({
-      text: "SVG Icon 請使用偶數（Safari）",
-      inline: true
+      text: 'SVG Icon 請使用偶數（Safari）',
+      inline: true,
     })(() => (
       <Spin>
         <Icons.IconLoading size={14} />
       </Spin>
-    ))
+    )),
   )
   .add(
-    "MorphReplace",
+    'MorphReplace',
     withInfo({
-      text: "https://github.com/gorangajic/react-svg-morph",
+      text: 'https://github.com/gorangajic/react-svg-morph',
       inline: true,
-      propTables: [MorphReplace]
-    })(() => <StatefulMorphReplace />)
+      propTables: [MorphReplace],
+    })(() => <StatefulMorphReplace />),
   )
   .add(
-    "Icon list, Custom color and size [Skip]",
+    'Icon list, Custom color and size [Skip]',
     withInfo({
-      text: "",
+      text: '',
       inline: false,
-      propTables: false
+      propTables: false,
     })(() => (
       <div>
         <Heading>MCS Lite Icon</Heading>
         <CodeBlock color="primary" level={3}>
-          {"$ npm i mcs-lite-icon --save"}
+          {'$ npm i mcs-lite-icon --save'}
           <br />
           {"import { IconName } from 'mcs-lite-icon';"}
         </CodeBlock>
@@ -113,5 +113,5 @@ storiesOf("Icon [mcs-lite-icon]", module)
           ))}
         </CardWrapper>
       </div>
-    ))
+    )),
   );

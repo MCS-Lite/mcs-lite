@@ -1,20 +1,20 @@
 /* global document */
 // Ref: https://github.com/renatn/react-pull-to-refresh/blob/master/PullToRefresh.jsx
 
-import React from "react";
-import PropTypes from "prop-types";
-import styled from "styled-components";
-import { IconGoDown, IconLoading as MLIconLoading } from "mcs-lite-icon";
-import Hammer from "../utils/react-hammerjs";
-import Heading from "../Heading";
-import Spin from "../Spin";
+import React from 'react';
+import PropTypes from 'prop-types';
+import styled from 'styled-components';
+import { IconGoDown, IconLoading as MLIconLoading } from 'mcs-lite-icon';
+import Hammer from '../utils/react-hammerjs';
+import Heading from '../Heading';
+import Spin from '../Spin';
 
 const HEIGHT = 60;
 const SENSITIVITY = 2;
 
 export const PullWrapper = styled.div`
   transition: ${props =>
-    props.distance === 0 || props.isLoading ? "all .25s ease" : "initial"};
+    props.distance === 0 || props.isLoading ? 'all .25s ease' : 'initial'};
 `;
 
 export const LoadingContainer = styled.div`
@@ -27,7 +27,7 @@ export const LoadingContainer = styled.div`
   > * {
     transition: all 0.25s ease;
     transform: ${props =>
-      props.distance >= HEIGHT ? "rotate(180deg)" : "initial"};
+      props.distance >= HEIGHT ? 'rotate(180deg)' : 'initial'};
   }
 `;
 
@@ -37,7 +37,7 @@ class PullToRefresh extends React.Component {
     isLoading: PropTypes.bool.isRequired,
     onPull: PropTypes.func.isRequired,
     IconArrow: PropTypes.node,
-    IconLoading: PropTypes.node
+    IconLoading: PropTypes.node,
   };
 
   static defaultProps = {
@@ -52,7 +52,7 @@ class PullToRefresh extends React.Component {
       <Heading level={2} color="grayBase">
         <IconGoDown />
       </Heading>
-    )
+    ),
   };
 
   constructor(props) {
@@ -115,7 +115,7 @@ class PullToRefresh extends React.Component {
         onPanStart={this.onPanDownStart}
         onPanEnd={this.onPanDownEnd}
         direction="DIRECTION_DOWN"
-        options={{ touchAction: "pan-x pan-y" }}
+        options={{ touchAction: 'pan-x pan-y' }}
       >
         <PullWrapper
           {...otherProps}

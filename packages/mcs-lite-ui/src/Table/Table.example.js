@@ -1,15 +1,15 @@
-import React from "react";
-import { storiesOf } from "@storybook/react";
-import { withInfo } from "@storybook/addon-info";
-import Table from ".";
+import React from 'react';
+import { storiesOf } from '@storybook/react';
+import { withInfo } from '@storybook/addon-info';
+import Table from '.';
 
-storiesOf("Table", module).add(
-  "API",
+storiesOf('Table', module).add(
+  'API',
   withInfo({
-    text: "",
-    inline: true
+    text: '',
+    inline: true,
   })(() => (
-    <Table style={{ backgroundColor: "white" }}>
+    <Table style={{ backgroundColor: 'white' }}>
       <thead>
         <tr>
           <th>#</th>
@@ -28,5 +28,5 @@ storiesOf("Table", module).add(
         </tr>
       </tbody>
     </Table>
-  ))
+  )),
 );

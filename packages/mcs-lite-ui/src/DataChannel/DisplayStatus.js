@@ -1,8 +1,8 @@
-import React from "react";
-import PropTypes from "prop-types";
-import styled from "styled-components";
-import StatusLight from "../StatusLight";
-import P from "../P";
+import React from 'react';
+import PropTypes from 'prop-types';
+import styled from 'styled-components';
+import StatusLight from '../StatusLight';
+import P from '../P';
 
 export const Container = styled.div`
   display: flex;
@@ -30,17 +30,17 @@ const DisplayStatus = ({ value, labels, ...otherProps }) => (
       <ItemWrapper key={label}>
         <P color="grayBase">{label}</P>
         <div>
-          <StatusLight color={value === index ? "success" : "grayDark"} />
+          <StatusLight color={value === index ? 'success' : 'grayDark'} />
         </div>
       </ItemWrapper>
     ))}
   </Container>
 );
 
-DisplayStatus.displayName = "DisplayStatus";
+DisplayStatus.displayName = 'DisplayStatus';
 DisplayStatus.propTypes = {
   value: PropTypes.number, // index
-  labels: PropTypes.array.isRequired
+  labels: PropTypes.array.isRequired,
 };
 
 export default DisplayStatus;

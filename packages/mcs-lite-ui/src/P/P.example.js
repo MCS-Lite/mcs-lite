@@ -1,15 +1,15 @@
-import React from "react";
-import { storiesOf } from "@storybook/react";
-import { withInfo } from "@storybook/addon-info";
-import { theme } from "mcs-lite-theme";
-import P from ".";
+import React from 'react';
+import { storiesOf } from '@storybook/react';
+import { withInfo } from '@storybook/addon-info';
+import { theme } from 'mcs-lite-theme';
+import P from '.';
 
-storiesOf("P", module)
+storiesOf('P', module)
   .add(
-    "API",
+    'API',
     withInfo({
       text: `段落使用。 (${theme.fontSize.p}) & color: currentColor`,
-      inline: true
+      inline: true,
     })(() => (
       <P>
         Nisi eu eiusmod cupidatat aute laboris commodo excepteur esse dolore
@@ -21,13 +21,13 @@ storiesOf("P", module)
         cupidatat non magna officia aute magna deserunt qui aute dolor eu. Qui
         amet non ex cillum sunt ad velit consequat ipsum velit.
       </P>
-    ))
+    )),
   )
   .add(
-    "With color props",
+    'With color props',
     withInfo({
-      text: "使用不同等級的 Color",
-      inline: true
+      text: '使用不同等級的 Color',
+      inline: true,
     })(() => (
       <div>
         {Object.keys(theme.color).map(key => (
@@ -36,13 +36,13 @@ storiesOf("P", module)
           </P>
         ))}
       </div>
-    ))
+    )),
   )
   .add(
-    "Nested children with div",
+    'Nested children with div',
     withInfo({
-      text: "p 裡面不能有 div，會自動換成 div。",
-      inline: true
+      text: 'p 裡面不能有 div，會自動換成 div。',
+      inline: true,
     })(() => (
       <P>
         <div>
@@ -51,5 +51,5 @@ storiesOf("P", module)
           </span>
         </div>
       </P>
-    ))
+    )),
   );

@@ -1,11 +1,11 @@
-import React from "react";
-import PropTypes from "prop-types";
-import styled from "styled-components";
-import MobileContentWrapper from "mcs-lite-ui/lib/MobileContentWrapper";
-import Notification from "mcs-lite-ui/lib/Notification";
-import Button from "mcs-lite-ui/lib/Button";
-import P from "mcs-lite-ui/lib/P";
-import Transition from "react-motion-ui-pack";
+import React from 'react';
+import PropTypes from 'prop-types';
+import styled from 'styled-components';
+import MobileContentWrapper from 'mcs-lite-ui/lib/MobileContentWrapper';
+import Notification from 'mcs-lite-ui/lib/Notification';
+import Button from 'mcs-lite-ui/lib/Button';
+import P from 'mcs-lite-ui/lib/P';
+import Transition from 'react-motion-ui-pack';
 
 const Fixed = styled.div`
   position: fixed;
@@ -28,21 +28,21 @@ const WebSocketNotification = ({ onClick, getMessages: t }) => (
         enter={{ opacity: 1, translateY: 0 }}
       >
         <Notification key="notification">
-          <P>{t("info")}</P>
-          <Button onClick={onClick}>{t("reconnect")}</Button>
+          <P>{t('info')}</P>
+          <Button onClick={onClick}>{t('reconnect')}</Button>
         </Notification>
       </Transition>
     </Wrapper>
   </Fixed>
 );
 
-WebSocketNotification.displayName = "WebSocketNotification";
+WebSocketNotification.displayName = 'WebSocketNotification';
 WebSocketNotification.propTypes = {
   // Props
   onClick: PropTypes.func.isRequired,
 
   // React-intl I18n
-  getMessages: PropTypes.func.isRequired
+  getMessages: PropTypes.func.isRequired,
 };
 
 export default WebSocketNotification;

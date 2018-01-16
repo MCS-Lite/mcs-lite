@@ -55,7 +55,6 @@ Array [
         <Logo
             alt="MCS Lite Logo"
             className="c0"
-            innerRef={undefined}
             src="logo_mcs_lite_black.svg"
         >
             <img
@@ -68,7 +67,6 @@ Array [
     <Styled(P)>
         <P
             className="c2"
-            innerRef={undefined}
         />
     </Styled(P)>
     <styled.div>

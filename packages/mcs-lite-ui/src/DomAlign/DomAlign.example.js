@@ -1,11 +1,11 @@
-import React from "react";
-import { storiesOf } from "@storybook/react";
-import { withInfo } from "@storybook/addon-info";
-import DomAlign from ".";
+import React from 'react';
+import { storiesOf } from '@storybook/react';
+import { withInfo } from '@storybook/addon-info';
+import DomAlign from '.';
 
 const alignConfig = {
-  points: ["tr", "br"], // bottom-right
-  offset: [50, 5]
+  points: ['tr', 'br'], // bottom-right
+  offset: [50, 5],
 };
 
 class Container extends React.Component {
@@ -23,8 +23,8 @@ class Container extends React.Component {
   }
 }
 
-storiesOf("DomAlign", module).add(
-  "API",
+storiesOf('DomAlign', module).add(
+  'API',
   withInfo({
     text: `
       With config: ${JSON.stringify(alignConfig)}.
@@ -34,6 +34,6 @@ storiesOf("DomAlign", module).add(
     `,
 
     inline: true,
-    propTables: [DomAlign]
-  })(() => <Container />)
+    propTables: [DomAlign],
+  })(() => <Container />),
 );

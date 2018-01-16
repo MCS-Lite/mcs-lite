@@ -1,10 +1,10 @@
-import React from "react";
-import styled from "styled-components";
-import { storiesOf } from "@storybook/react";
-import { withInfo } from "@storybook/addon-info";
-import Input from "../Input";
-import Button from "../Button";
-import InputGroup from "../InputGroup";
+import React from 'react';
+import styled from 'styled-components';
+import { storiesOf } from '@storybook/react';
+import { withInfo } from '@storybook/addon-info';
+import Input from '../Input';
+import Button from '../Button';
+import InputGroup from '../InputGroup';
 
 const Wrapper = styled.div`
   > * {
@@ -12,11 +12,11 @@ const Wrapper = styled.div`
   }
 `;
 
-storiesOf("InputGroup", module).add(
-  "API",
+storiesOf('InputGroup', module).add(
+  'API',
   withInfo({
-    text: "",
-    inline: true
+    text: '',
+    inline: true,
   })(() => (
     <Wrapper>
       <InputGroup>
@@ -55,5 +55,5 @@ storiesOf("InputGroup", module).add(
         <Input placeholder="預設值：100" />
       </InputGroup>
     </Wrapper>
-  ))
+  )),
 );

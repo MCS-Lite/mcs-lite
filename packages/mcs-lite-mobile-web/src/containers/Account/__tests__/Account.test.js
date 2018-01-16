@@ -1,28 +1,28 @@
-import React from "react";
-import * as R from "ramda";
-import { shallow } from "enzyme";
-import toJson from "enzyme-to-json";
-import Account from "../Account";
-import { FlatButton } from "../styled-components";
+import React from 'react';
+import * as R from 'ramda';
+import { shallow } from 'enzyme';
+import toJson from 'enzyme-to-json';
+import Account from '../Account';
+import { FlatButton } from '../styled-components';
 
-jest.mock("../../../../package.json", () => ({
-  version: "0.0.0"
+jest.mock('../../../../package.json', () => ({
+  version: '0.0.0',
 }));
 
-it("should renders <Account> correctly", () => {
+it('should renders <Account> correctly', () => {
   const wrapper = shallow(
     <Account
       userName="userName"
       email="email"
       signout={() => {}}
       getMessages={R.identity}
-    />
+    />,
   );
 
   expect(toJson(wrapper)).toMatchSnapshot();
 });
 
-it("should return correctly payload when clicking signout", () => {
+it('should return correctly payload when clicking signout', () => {
   const signoutMock = jest.fn();
   const wrapper = shallow(
     <Account
@@ -30,7 +30,7 @@ it("should return correctly payload when clicking signout", () => {
       email="email"
       signout={signoutMock}
       getMessages={R.identity}
-    />
+    />,
   );
 
   // Before clicking
@@ -40,6 +40,6 @@ it("should return correctly payload when clicking signout", () => {
   wrapper
     .find(FlatButton)
     .last()
-    .simulate("click");
+    .simulate('click');
   expect(signoutMock).toHaveBeenCalled();
 });

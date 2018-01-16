@@ -58,7 +58,6 @@ exports[`should renders <Layout.LayoutDialog> correctly 1`] = `
     >
       <MobileContentWrapper
         className="c0"
-        innerRef={undefined}
       />
     </Styled(MobileContentWrapper)>
   </Component>

@@ -1,25 +1,25 @@
 // @flow
-import React from "react";
-import { storiesOf } from "@storybook/react";
-import { withInfo } from "@storybook/addon-info";
-import { theme } from "mcs-lite-theme";
-import Heading from "../Heading";
-import B from "../B";
-import A from ".";
+import React from 'react';
+import { storiesOf } from '@storybook/react';
+import { withInfo } from '@storybook/addon-info';
+import { theme } from 'mcs-lite-theme';
+import Heading from '../Heading';
+import B from '../B';
+import A from '.';
 
-storiesOf("A", module)
+storiesOf('A', module)
   .add(
-    "API",
+    'API',
     withInfo({
-      text: "anchor A",
-      inline: true
-    })(() => <A>Link</A>)
+      text: 'anchor A',
+      inline: true,
+    })(() => <A>Link</A>),
   )
   .add(
-    "With color props",
+    'With color props',
     withInfo({
-      text: "",
-      inline: true
+      text: '',
+      inline: true,
     })(() => (
       <div>
         {Object.keys(theme.color).map(key => (
@@ -28,13 +28,13 @@ storiesOf("A", module)
           </A>
         ))}
       </div>
-    ))
+    )),
   )
   .add(
-    "Nested children with Heading",
+    'Nested children with Heading',
     withInfo({
-      text: "",
-      inline: true
+      text: '',
+      inline: true,
     })(() => (
       <Heading>
         Heading Level 1&nbsp;
@@ -42,5 +42,5 @@ storiesOf("A", module)
           <A>Link</A>
         </B>
       </Heading>
-    ))
+    )),
   );

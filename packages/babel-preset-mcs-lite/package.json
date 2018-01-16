@@ -13,7 +13,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "test": "jest --coverage --runInBand",
+    "test": "../../node_modules/.bin/jest --coverage --runInBand",
     "test:watch": "npm run test -- --watch",
     "build": "echo 'none'"
   },
@@ -27,7 +27,6 @@
     "babel-preset-stage-0": "^6.24.1"
   },
   "devDependencies": {
-    "babel-core": "6.26.0",
-    "jest": "22.1.1"
+    "babel-core": "6.26.0"
   }
 }
