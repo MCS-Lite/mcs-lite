@@ -130,7 +130,7 @@ $ yarn run test:watch
 Root
 
 * **yarn run clean**: remove all node_modules
-* **lint**: eslint, styledlint and flow
+* **lint**: eslint and flow
 * **yarn run format**: prettier
 * **yarn run release**: publish
 
