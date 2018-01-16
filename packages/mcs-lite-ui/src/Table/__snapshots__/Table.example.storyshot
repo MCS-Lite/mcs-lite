@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Table API 1`] = `
+.c0 {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.c0 thead tr {
+  background-color: #FAFAFA;
+  color: #999A94;
+}
+
+.c0 thead tr > * {
+  padding: 8px 0 8px 16px;
+}
+
+.c0 tr {
+  border-bottom: 1px solid #F1F2F7;
+}
+
+.c0 tr > * {
+  padding: 16px 0 16px 16px;
+}
+
+.c0 th {
+  text-align: left;
+}
+
+<table
+  className="c0"
+  style={
+    Object {
+      "backgroundColor": "white",
+    }
+  }
+>
+  <thead>
+    <tr>
+      <th>
+        #
+      </th>
+      <th>
+        First Name
+      </th>
+      <th>
+        Last Name
+      </th>
+      <th>
+        Username
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>
+        1
+      </th>
+      <td>
+        Michael
+      </td>
+      <td>
+        Hsu
+      </td>
+      <td>
+        @evenchange4
+      </td>
+    </tr>
+  </tbody>
+</table>
+`;

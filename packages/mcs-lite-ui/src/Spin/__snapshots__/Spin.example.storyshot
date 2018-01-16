@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Spin API 1`] = `
+.c0 > * {
+  -webkit-transform-origin: center center;
+  -ms-transform-origin: center center;
+  transform-origin: center center;
+  -webkit-animation: iVXCSc 0.6s infinite cubic-bezier(0.41,0.01,0.58,1);
+  animation: iVXCSc 0.6s infinite cubic-bezier(0.41,0.01,0.58,1);
+}
+
+.c1 {
+  display: inline-block;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    Content
+  </div>
+</div>
+`;

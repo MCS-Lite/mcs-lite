@@ -1,0 +1,407 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Switch API 1`] = `
+.c0 {
+  position: relative;
+  height: 50px;
+  width: 82px;
+  box-sizing: border-box;
+  border-radius: 24px;
+  -webkit-transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.2s;
+  transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.2s;
+  cursor: pointer;
+  background-color: #999A94;
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+}
+
+.c0::after {
+  content: ' ';
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  cursor: pointer;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.17);
+  top: 3px;
+  left: 0;
+  -webkit-transition: left cubic-bezier(0.47,0,0.75,0.72) 0.2s;
+  transition: left cubic-bezier(0.47,0,0.75,0.72) 0.2s;
+  margin: 0 3px;
+  border: 1px solid rgba(0,0,0,0.1);
+}
+
+.c1 {
+  position: relative;
+  height: 50px;
+  width: 82px;
+  box-sizing: border-box;
+  border-radius: 24px;
+  -webkit-transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.2s;
+  transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.2s;
+  cursor: pointer;
+  background-color: #69BE28;
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+}
+
+.c1::after {
+  content: ' ';
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  cursor: pointer;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.17);
+  top: 3px;
+  left: 32px;
+  -webkit-transition: left cubic-bezier(0.47,0,0.75,0.72) 0.2s;
+  transition: left cubic-bezier(0.47,0,0.75,0.72) 0.2s;
+  margin: 0 3px;
+  border: 1px solid rgba(0,0,0,0.1);
+}
+
+<div>
+  <div
+    checked={false}
+    className="c0"
+    kind="success"
+  />
+  <div
+    checked={true}
+    className="c1"
+    kind="success"
+  />
+</div>
+`;
+
+exports[`Storyshots Switch Overriding style 1`] = `
+.c1 {
+  position: relative;
+  height: 50px;
+  width: 82px;
+  box-sizing: border-box;
+  border-radius: 24px;
+  -webkit-transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.2s;
+  transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.2s;
+  cursor: pointer;
+  background-color: #999A94;
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+}
+
+.c1::after {
+  content: ' ';
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  cursor: pointer;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.17);
+  top: 3px;
+  left: 0;
+  -webkit-transition: left cubic-bezier(0.47,0,0.75,0.72) 0.2s;
+  transition: left cubic-bezier(0.47,0,0.75,0.72) 0.2s;
+  margin: 0 3px;
+  border: 1px solid rgba(0,0,0,0.1);
+}
+
+.c0 {
+  background-color: aliceblue;
+}
+
+.c0::after {
+  background-color: cornflowerblue;
+}
+
+<div
+  checked={false}
+  className="c0 c1"
+  kind="success"
+  onClick={[Function]}
+/>
+`;
+
+exports[`Storyshots Switch Stateful switch 1`] = `
+.c0 {
+  position: relative;
+  height: 50px;
+  width: 82px;
+  box-sizing: border-box;
+  border-radius: 24px;
+  -webkit-transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.2s;
+  transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.2s;
+  cursor: pointer;
+  background-color: #999A94;
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+}
+
+.c0::after {
+  content: ' ';
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  cursor: pointer;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.17);
+  top: 3px;
+  left: 0;
+  -webkit-transition: left cubic-bezier(0.47,0,0.75,0.72) 0.2s;
+  transition: left cubic-bezier(0.47,0,0.75,0.72) 0.2s;
+  margin: 0 3px;
+  border: 1px solid rgba(0,0,0,0.1);
+}
+
+<div
+  checked={false}
+  className="c0"
+  kind="success"
+  onClick={[Function]}
+/>
+`;
+
+exports[`Storyshots Switch With kind props 1`] = `
+.c2 {
+  position: relative;
+  height: 50px;
+  width: 82px;
+  box-sizing: border-box;
+  border-radius: 24px;
+  -webkit-transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.2s;
+  transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.2s;
+  cursor: pointer;
+  background-color: #69BE28;
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+}
+
+.c2::after {
+  content: ' ';
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  cursor: pointer;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.17);
+  top: 3px;
+  left: 32px;
+  -webkit-transition: left cubic-bezier(0.47,0,0.75,0.72) 0.2s;
+  transition: left cubic-bezier(0.47,0,0.75,0.72) 0.2s;
+  margin: 0 3px;
+  border: 1px solid rgba(0,0,0,0.1);
+}
+
+.c0 {
+  position: relative;
+  height: 50px;
+  width: 82px;
+  box-sizing: border-box;
+  border-radius: 24px;
+  -webkit-transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.2s;
+  transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.2s;
+  cursor: pointer;
+  background-color: #FAFAFA;
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+}
+
+.c0::after {
+  content: ' ';
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  cursor: pointer;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.17);
+  top: 3px;
+  left: 32px;
+  -webkit-transition: left cubic-bezier(0.47,0,0.75,0.72) 0.2s;
+  transition: left cubic-bezier(0.47,0,0.75,0.72) 0.2s;
+  margin: 0 3px;
+  border: 1px solid rgba(0,0,0,0.1);
+}
+
+.c1 {
+  position: relative;
+  height: 50px;
+  width: 82px;
+  box-sizing: border-box;
+  border-radius: 24px;
+  -webkit-transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.2s;
+  transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.2s;
+  cursor: pointer;
+  background-color: #00A1DE;
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+}
+
+.c1::after {
+  content: ' ';
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  cursor: pointer;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.17);
+  top: 3px;
+  left: 32px;
+  -webkit-transition: left cubic-bezier(0.47,0,0.75,0.72) 0.2s;
+  transition: left cubic-bezier(0.47,0,0.75,0.72) 0.2s;
+  margin: 0 3px;
+  border: 1px solid rgba(0,0,0,0.1);
+}
+
+.c3 {
+  position: relative;
+  height: 50px;
+  width: 82px;
+  box-sizing: border-box;
+  border-radius: 24px;
+  -webkit-transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.2s;
+  transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.2s;
+  cursor: pointer;
+  background-color: #F5364E;
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+}
+
+.c3::after {
+  content: ' ';
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  cursor: pointer;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.17);
+  top: 3px;
+  left: 32px;
+  -webkit-transition: left cubic-bezier(0.47,0,0.75,0.72) 0.2s;
+  transition: left cubic-bezier(0.47,0,0.75,0.72) 0.2s;
+  margin: 0 3px;
+  border: 1px solid rgba(0,0,0,0.1);
+}
+
+.c4 {
+  position: relative;
+  height: 50px;
+  width: 82px;
+  box-sizing: border-box;
+  border-radius: 24px;
+  -webkit-transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.2s;
+  transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.2s;
+  cursor: pointer;
+  background-color: #F39A1E;
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+}
+
+.c4::after {
+  content: ' ';
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  cursor: pointer;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.17);
+  top: 3px;
+  left: 32px;
+  -webkit-transition: left cubic-bezier(0.47,0,0.75,0.72) 0.2s;
+  transition: left cubic-bezier(0.47,0,0.75,0.72) 0.2s;
+  margin: 0 3px;
+  border: 1px solid rgba(0,0,0,0.1);
+}
+
+<div>
+  <div
+    checked={true}
+    className="c0"
+    kind="default"
+  />
+  <div
+    checked={true}
+    className="c1"
+    kind="primary"
+  />
+  <div
+    checked={true}
+    className="c2"
+    kind="success"
+  />
+  <div
+    checked={true}
+    className="c3"
+    kind="error"
+  />
+  <div
+    checked={true}
+    className="c4"
+    kind="warning"
+  />
+</div>
+`;
+
+exports[`Storyshots Switch With scaling 1`] = `
+.c1 {
+  position: relative;
+  height: 50px;
+  width: 82px;
+  box-sizing: border-box;
+  border-radius: 24px;
+  -webkit-transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.2s;
+  transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.2s;
+  cursor: pointer;
+  background-color: #999A94;
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+}
+
+.c1::after {
+  content: ' ';
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  cursor: pointer;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.17);
+  top: 3px;
+  left: 0;
+  -webkit-transition: left cubic-bezier(0.47,0,0.75,0.72) 0.2s;
+  transition: left cubic-bezier(0.47,0,0.75,0.72) 0.2s;
+  margin: 0 3px;
+  border: 1px solid rgba(0,0,0,0.1);
+}
+
+.c0 {
+  -webkit-transform: scale(0.48);
+  -ms-transform: scale(0.48);
+  transform: scale(0.48);
+}
+
+<div
+  checked={false}
+  className="c0 c1"
+  kind="primary"
+  onClick={[Function]}
+/>
+`;

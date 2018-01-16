@@ -1,0 +1,844 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots DatetimePicker API 1`] = `
+.c1 {
+  padding-top: 80px;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 40px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #353630;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 40px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #D1D2D3;
+}
+
+.c0 {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+  cursor: default;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: rgba(255,255,255,1);
+}
+
+.c0 > * {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c4 {
+  position: absolute;
+  height: 40px;
+  left: 0;
+  right: 0;
+  top: 80px;
+  border-top: 1px solid #D1D2D3;
+  border-bottom: 1px solid #D1D2D3;
+  pointer-events: none;
+}
+
+.c5 {
+  position: absolute;
+  height: 100%;
+  left: 0;
+  right: 0;
+  background-image: linear-gradient( to bottom,rgba(255,255,255,0.95),rgba(255,255,255,0.6) ),linear-gradient(to top,rgba(255,255,255,0.95),rgba(255,255,255,0.6));
+  background-position: top,bottom;
+  background-size: 100% 32px;
+  background-repeat: no-repeat;
+  pointer-events: none;
+}
+
+<div
+  className="c0"
+  defaultValue={1455780631722}
+  onChange={[Function]}
+>
+  <mock-react-hammerjs
+    direction="DIRECTION_VERTICAL"
+    onPan={[Function]}
+    onPanEnd={[Function]}
+    onPanStart={[Function]}
+    options={
+      Object {
+        "touchAction": "pan-x",
+      }
+    }
+  >
+    <div
+      className="c1"
+      style={
+        Object {
+          "marginTop": -0,
+        }
+      }
+    >
+      <div
+        className="c2"
+      >
+        2016
+      </div>
+      <div
+        className="c3"
+      >
+        2017
+      </div>
+    </div>
+  </mock-react-hammerjs>
+  <mock-react-hammerjs
+    direction="DIRECTION_VERTICAL"
+    onPan={[Function]}
+    onPanEnd={[Function]}
+    onPanStart={[Function]}
+    options={
+      Object {
+        "touchAction": "pan-x",
+      }
+    }
+  >
+    <div
+      className="c1"
+      style={
+        Object {
+          "marginTop": -40,
+        }
+      }
+    >
+      <div
+        className="c3"
+      >
+        1
+      </div>
+      <div
+        className="c2"
+      >
+        2
+      </div>
+      <div
+        className="c3"
+      >
+        3
+      </div>
+      <div
+        className="c3"
+      >
+        4
+      </div>
+      <div
+        className="c3"
+      >
+        5
+      </div>
+      <div
+        className="c3"
+      >
+        6
+      </div>
+      <div
+        className="c3"
+      >
+        7
+      </div>
+      <div
+        className="c3"
+      >
+        8
+      </div>
+      <div
+        className="c3"
+      >
+        9
+      </div>
+      <div
+        className="c3"
+      >
+        10
+      </div>
+      <div
+        className="c3"
+      >
+        11
+      </div>
+      <div
+        className="c3"
+      >
+        12
+      </div>
+    </div>
+  </mock-react-hammerjs>
+  <mock-react-hammerjs
+    direction="DIRECTION_VERTICAL"
+    onPan={[Function]}
+    onPanEnd={[Function]}
+    onPanStart={[Function]}
+    options={
+      Object {
+        "touchAction": "pan-x",
+      }
+    }
+  >
+    <div
+      className="c1"
+      style={
+        Object {
+          "marginTop": -680,
+        }
+      }
+    >
+      <div
+        className="c3"
+      >
+        1
+      </div>
+      <div
+        className="c3"
+      >
+        2
+      </div>
+      <div
+        className="c3"
+      >
+        3
+      </div>
+      <div
+        className="c3"
+      >
+        4
+      </div>
+      <div
+        className="c3"
+      >
+        5
+      </div>
+      <div
+        className="c3"
+      >
+        6
+      </div>
+      <div
+        className="c3"
+      >
+        7
+      </div>
+      <div
+        className="c3"
+      >
+        8
+      </div>
+      <div
+        className="c3"
+      >
+        9
+      </div>
+      <div
+        className="c3"
+      >
+        10
+      </div>
+      <div
+        className="c3"
+      >
+        11
+      </div>
+      <div
+        className="c3"
+      >
+        12
+      </div>
+      <div
+        className="c3"
+      >
+        13
+      </div>
+      <div
+        className="c3"
+      >
+        14
+      </div>
+      <div
+        className="c3"
+      >
+        15
+      </div>
+      <div
+        className="c3"
+      >
+        16
+      </div>
+      <div
+        className="c3"
+      >
+        17
+      </div>
+      <div
+        className="c2"
+      >
+        18
+      </div>
+      <div
+        className="c3"
+      >
+        19
+      </div>
+      <div
+        className="c3"
+      >
+        20
+      </div>
+      <div
+        className="c3"
+      >
+        21
+      </div>
+      <div
+        className="c3"
+      >
+        22
+      </div>
+      <div
+        className="c3"
+      >
+        23
+      </div>
+      <div
+        className="c3"
+      >
+        24
+      </div>
+      <div
+        className="c3"
+      >
+        25
+      </div>
+      <div
+        className="c3"
+      >
+        26
+      </div>
+      <div
+        className="c3"
+      >
+        27
+      </div>
+      <div
+        className="c3"
+      >
+        28
+      </div>
+      <div
+        className="c3"
+      >
+        29
+      </div>
+    </div>
+  </mock-react-hammerjs>
+  <mock-react-hammerjs
+    direction="DIRECTION_VERTICAL"
+    onPan={[Function]}
+    onPanEnd={[Function]}
+    onPanStart={[Function]}
+    options={
+      Object {
+        "touchAction": "pan-x",
+      }
+    }
+  >
+    <div
+      className="c1"
+      style={
+        Object {
+          "marginTop": -280,
+        }
+      }
+    >
+      <div
+        className="c3"
+      >
+        00
+      </div>
+      <div
+        className="c3"
+      >
+        01
+      </div>
+      <div
+        className="c3"
+      >
+        02
+      </div>
+      <div
+        className="c3"
+      >
+        03
+      </div>
+      <div
+        className="c3"
+      >
+        04
+      </div>
+      <div
+        className="c3"
+      >
+        05
+      </div>
+      <div
+        className="c3"
+      >
+        06
+      </div>
+      <div
+        className="c2"
+      >
+        07
+      </div>
+      <div
+        className="c3"
+      >
+        08
+      </div>
+      <div
+        className="c3"
+      >
+        09
+      </div>
+      <div
+        className="c3"
+      >
+        10
+      </div>
+      <div
+        className="c3"
+      >
+        11
+      </div>
+      <div
+        className="c3"
+      >
+        12
+      </div>
+      <div
+        className="c3"
+      >
+        13
+      </div>
+      <div
+        className="c3"
+      >
+        14
+      </div>
+      <div
+        className="c3"
+      >
+        15
+      </div>
+      <div
+        className="c3"
+      >
+        16
+      </div>
+      <div
+        className="c3"
+      >
+        17
+      </div>
+      <div
+        className="c3"
+      >
+        18
+      </div>
+      <div
+        className="c3"
+      >
+        19
+      </div>
+      <div
+        className="c3"
+      >
+        20
+      </div>
+      <div
+        className="c3"
+      >
+        21
+      </div>
+      <div
+        className="c3"
+      >
+        22
+      </div>
+      <div
+        className="c3"
+      >
+        23
+      </div>
+    </div>
+  </mock-react-hammerjs>
+  <mock-react-hammerjs
+    direction="DIRECTION_VERTICAL"
+    onPan={[Function]}
+    onPanEnd={[Function]}
+    onPanStart={[Function]}
+    options={
+      Object {
+        "touchAction": "pan-x",
+      }
+    }
+  >
+    <div
+      className="c1"
+      style={
+        Object {
+          "marginTop": -1200,
+        }
+      }
+    >
+      <div
+        className="c3"
+      >
+        00
+      </div>
+      <div
+        className="c3"
+      >
+        01
+      </div>
+      <div
+        className="c3"
+      >
+        02
+      </div>
+      <div
+        className="c3"
+      >
+        03
+      </div>
+      <div
+        className="c3"
+      >
+        04
+      </div>
+      <div
+        className="c3"
+      >
+        05
+      </div>
+      <div
+        className="c3"
+      >
+        06
+      </div>
+      <div
+        className="c3"
+      >
+        07
+      </div>
+      <div
+        className="c3"
+      >
+        08
+      </div>
+      <div
+        className="c3"
+      >
+        09
+      </div>
+      <div
+        className="c3"
+      >
+        10
+      </div>
+      <div
+        className="c3"
+      >
+        11
+      </div>
+      <div
+        className="c3"
+      >
+        12
+      </div>
+      <div
+        className="c3"
+      >
+        13
+      </div>
+      <div
+        className="c3"
+      >
+        14
+      </div>
+      <div
+        className="c3"
+      >
+        15
+      </div>
+      <div
+        className="c3"
+      >
+        16
+      </div>
+      <div
+        className="c3"
+      >
+        17
+      </div>
+      <div
+        className="c3"
+      >
+        18
+      </div>
+      <div
+        className="c3"
+      >
+        19
+      </div>
+      <div
+        className="c3"
+      >
+        20
+      </div>
+      <div
+        className="c3"
+      >
+        21
+      </div>
+      <div
+        className="c3"
+      >
+        22
+      </div>
+      <div
+        className="c3"
+      >
+        23
+      </div>
+      <div
+        className="c3"
+      >
+        24
+      </div>
+      <div
+        className="c3"
+      >
+        25
+      </div>
+      <div
+        className="c3"
+      >
+        26
+      </div>
+      <div
+        className="c3"
+      >
+        27
+      </div>
+      <div
+        className="c3"
+      >
+        28
+      </div>
+      <div
+        className="c3"
+      >
+        29
+      </div>
+      <div
+        className="c2"
+      >
+        30
+      </div>
+      <div
+        className="c3"
+      >
+        31
+      </div>
+      <div
+        className="c3"
+      >
+        32
+      </div>
+      <div
+        className="c3"
+      >
+        33
+      </div>
+      <div
+        className="c3"
+      >
+        34
+      </div>
+      <div
+        className="c3"
+      >
+        35
+      </div>
+      <div
+        className="c3"
+      >
+        36
+      </div>
+      <div
+        className="c3"
+      >
+        37
+      </div>
+      <div
+        className="c3"
+      >
+        38
+      </div>
+      <div
+        className="c3"
+      >
+        39
+      </div>
+      <div
+        className="c3"
+      >
+        40
+      </div>
+      <div
+        className="c3"
+      >
+        41
+      </div>
+      <div
+        className="c3"
+      >
+        42
+      </div>
+      <div
+        className="c3"
+      >
+        43
+      </div>
+      <div
+        className="c3"
+      >
+        44
+      </div>
+      <div
+        className="c3"
+      >
+        45
+      </div>
+      <div
+        className="c3"
+      >
+        46
+      </div>
+      <div
+        className="c3"
+      >
+        47
+      </div>
+      <div
+        className="c3"
+      >
+        48
+      </div>
+      <div
+        className="c3"
+      >
+        49
+      </div>
+      <div
+        className="c3"
+      >
+        50
+      </div>
+      <div
+        className="c3"
+      >
+        51
+      </div>
+      <div
+        className="c3"
+      >
+        52
+      </div>
+      <div
+        className="c3"
+      >
+        53
+      </div>
+      <div
+        className="c3"
+      >
+        54
+      </div>
+      <div
+        className="c3"
+      >
+        55
+      </div>
+      <div
+        className="c3"
+      >
+        56
+      </div>
+      <div
+        className="c3"
+      >
+        57
+      </div>
+      <div
+        className="c3"
+      >
+        58
+      </div>
+      <div
+        className="c3"
+      >
+        59
+      </div>
+    </div>
+  </mock-react-hammerjs>
+  <div
+    className="c4"
+  />
+  <div
+    className="c5"
+  />
+</div>
+`;

@@ -1,0 +1,838 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots DataChannelCard API 1`] = `
+.c6 {
+  margin: 0;
+  font-weight: normal;
+  font-size: 1.15rem;
+  color: currentColor;
+}
+
+.c12 {
+  margin: 0;
+  font-size: 1rem;
+  color: currentColor;
+}
+
+.c8 {
+  font-size: 0.923rem;
+}
+
+.c1 {
+  box-sizing: border-box;
+  box-shadow: 0 1px 5px 0 rgba(0,0,0,0.2);
+  border-radius: 3px;
+  background-color: #FFFFFF;
+  overflow: hidden;
+}
+
+.c10 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  border: 0;
+  border-top: 1px solid #D1D2D3;
+}
+
+.c2 {
+  -webkit-flex-basis: 24px;
+  -ms-flex-preferred-size: 24px;
+  flex-basis: 24px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c3 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.c4 {
+  display: block;
+}
+
+.c11 {
+  height: 39px;
+}
+
+.c9 {
+  margin: 5px 0;
+}
+
+.c0 {
+  height: 300px;
+  padding: 10px 20px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c5 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c7 {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #999A94;
+}
+
+<div
+  className="c0 c1"
+>
+  <div
+    className="c2"
+  >
+    <a
+      href="."
+    >
+      Link
+    </a>
+  </div>
+  <div
+    className="c3"
+  >
+    Children
+  </div>
+  <div
+    className="c4"
+  >
+    <h4
+      className="c5 c6"
+    >
+      Title
+    </h4>
+    <small
+      className="c7 c8"
+    >
+      Last data point time : 2015-06-12 12:00
+    </small>
+    <hr
+      className="c9 c10"
+    />
+    <div
+      className="c11 c12"
+    >
+      <mock-react-text-truncate
+        line={2}
+        text="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
+        truncateText=" ..."
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots DataChannelCard Custom width and height 1`] = `
+.c8 {
+  margin: 0;
+  font-weight: normal;
+  font-size: 1.15rem;
+  color: currentColor;
+}
+
+.c14 {
+  margin: 0;
+  font-size: 1rem;
+  color: currentColor;
+}
+
+.c10 {
+  font-size: 0.923rem;
+}
+
+.c2 {
+  box-sizing: border-box;
+  box-shadow: 0 1px 5px 0 rgba(0,0,0,0.2);
+  border-radius: 3px;
+  background-color: #FFFFFF;
+  overflow: hidden;
+}
+
+.c5 {
+  position: relative;
+  height: 50px;
+  width: 82px;
+  box-sizing: border-box;
+  border-radius: 24px;
+  -webkit-transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.2s;
+  transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.2s;
+  cursor: pointer;
+  background-color: #999A94;
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+}
+
+.c5::after {
+  content: ' ';
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  cursor: pointer;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.17);
+  top: 3px;
+  left: 0;
+  -webkit-transition: left cubic-bezier(0.47,0,0.75,0.72) 0.2s;
+  transition: left cubic-bezier(0.47,0,0.75,0.72) 0.2s;
+  margin: 0 3px;
+  border: 1px solid rgba(0,0,0,0.1);
+}
+
+.c12 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  border: 0;
+  border-top: 1px solid #D1D2D3;
+}
+
+.c3 {
+  -webkit-flex-basis: 24px;
+  -ms-flex-preferred-size: 24px;
+  flex-basis: 24px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c4 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.c6 {
+  display: block;
+}
+
+.c13 {
+  height: 39px;
+}
+
+.c11 {
+  margin: 5px 0;
+}
+
+.c1 {
+  height: 300px;
+  padding: 10px 20px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c7 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c9 {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #999A94;
+}
+
+.c0 {
+  width: 300px;
+  height: 400px;
+}
+
+<div
+  className="c0 c1 c2"
+>
+  <div
+    className="c3"
+  >
+    V
+  </div>
+  <div
+    className="c4"
+  >
+    <div
+      checked={false}
+      className="c5"
+      kind="success"
+    />
+  </div>
+  <div
+    className="c6"
+  >
+    <h4
+      className="c7 c8"
+    >
+      Title
+    </h4>
+    <small
+      className="c9 c10"
+    >
+      Last data point time : 2015-06-12 12:00
+    </small>
+    <hr
+      className="c11 c12"
+    />
+    <div
+      className="c13 c14"
+    >
+      <mock-react-text-truncate
+        line={2}
+        text="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
+        truncateText=" ..."
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots DataChannelCard With Component selector 1`] = `
+.c8 {
+  margin: 0;
+  font-weight: normal;
+  font-size: 1.15rem;
+  color: currentColor;
+}
+
+.c14 {
+  margin: 0;
+  font-size: 1rem;
+  color: currentColor;
+}
+
+.c10 {
+  font-size: 0.923rem;
+}
+
+.c2 {
+  box-sizing: border-box;
+  box-shadow: 0 1px 5px 0 rgba(0,0,0,0.2);
+  border-radius: 3px;
+  background-color: #FFFFFF;
+  overflow: hidden;
+}
+
+.c12 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  border: 0;
+  border-top: 1px solid #D1D2D3;
+}
+
+.c3 {
+  -webkit-flex-basis: 24px;
+  -ms-flex-preferred-size: 24px;
+  flex-basis: 24px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c4 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.c6 {
+  display: block;
+}
+
+.c13 {
+  height: 39px;
+}
+
+.c11 {
+  margin: 5px 0;
+}
+
+.c1 {
+  height: 300px;
+  padding: 10px 20px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c7 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c9 {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #999A94;
+}
+
+.c0 .c5 {
+  width: 50%;
+}
+
+<div
+  className="c0 c1 c2"
+>
+  <div
+    className="c3"
+  >
+    V
+  </div>
+  <div
+    className="c4"
+  >
+    Children
+  </div>
+  <div
+    className="c5 c6"
+  >
+    <h4
+      className="c7 c8"
+    >
+      Title
+    </h4>
+    <small
+      className="c9 c10"
+    >
+      Last data point time : 2015-06-12 12:00
+    </small>
+    <hr
+      className="c11 c12"
+    />
+    <div
+      className="c13 c14"
+    >
+      <mock-react-text-truncate
+        line={2}
+        text="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
+        truncateText=" ..."
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots DataChannelCard With empty description 1`] = `
+.c7 {
+  margin: 0;
+  font-weight: normal;
+  font-size: 1.15rem;
+  color: currentColor;
+}
+
+.c13 {
+  margin: 0;
+  font-size: 1rem;
+  color: currentColor;
+}
+
+.c9 {
+  font-size: 0.923rem;
+}
+
+.c1 {
+  box-sizing: border-box;
+  box-shadow: 0 1px 5px 0 rgba(0,0,0,0.2);
+  border-radius: 3px;
+  background-color: #FFFFFF;
+  overflow: hidden;
+}
+
+.c4 {
+  position: relative;
+  height: 50px;
+  width: 82px;
+  box-sizing: border-box;
+  border-radius: 24px;
+  -webkit-transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.2s;
+  transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.2s;
+  cursor: pointer;
+  background-color: #999A94;
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+}
+
+.c4::after {
+  content: ' ';
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  cursor: pointer;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.17);
+  top: 3px;
+  left: 0;
+  -webkit-transition: left cubic-bezier(0.47,0,0.75,0.72) 0.2s;
+  transition: left cubic-bezier(0.47,0,0.75,0.72) 0.2s;
+  margin: 0 3px;
+  border: 1px solid rgba(0,0,0,0.1);
+}
+
+.c11 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  border: 0;
+  border-top: 1px solid #D1D2D3;
+}
+
+.c2 {
+  -webkit-flex-basis: 24px;
+  -ms-flex-preferred-size: 24px;
+  flex-basis: 24px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c3 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.c5 {
+  display: block;
+}
+
+.c12 {
+  height: 39px;
+}
+
+.c10 {
+  margin: 5px 0;
+}
+
+.c0 {
+  height: 300px;
+  padding: 10px 20px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c6 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c8 {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #999A94;
+}
+
+<div
+  className="c0 c1"
+>
+  <div
+    className="c2"
+  >
+    V
+  </div>
+  <div
+    className="c3"
+  >
+    <div
+      checked={false}
+      className="c4"
+      kind="success"
+    />
+  </div>
+  <div
+    className="c5"
+  >
+    <h4
+      className="c6 c7"
+    >
+      Title
+    </h4>
+    <small
+      className="c8 c9"
+    >
+      Last data point time : 2015-06-12 12:00
+    </small>
+    <hr
+      className="c10 c11"
+    />
+    <div
+      className="c12 c13"
+    >
+      <mock-react-text-truncate
+        line={2}
+        text=""
+        truncateText=" ..."
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots DataChannelCard Without description 1`] = `
+.c7 {
+  margin: 0;
+  font-weight: normal;
+  font-size: 1.15rem;
+  color: currentColor;
+}
+
+.c9 {
+  font-size: 0.923rem;
+}
+
+.c1 {
+  box-sizing: border-box;
+  box-shadow: 0 1px 5px 0 rgba(0,0,0,0.2);
+  border-radius: 3px;
+  background-color: #FFFFFF;
+  overflow: hidden;
+}
+
+.c4 {
+  position: relative;
+  height: 50px;
+  width: 82px;
+  box-sizing: border-box;
+  border-radius: 24px;
+  -webkit-transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.2s;
+  transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.2s;
+  cursor: pointer;
+  background-color: #999A94;
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+}
+
+.c4::after {
+  content: ' ';
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  cursor: pointer;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.17);
+  top: 3px;
+  left: 0;
+  -webkit-transition: left cubic-bezier(0.47,0,0.75,0.72) 0.2s;
+  transition: left cubic-bezier(0.47,0,0.75,0.72) 0.2s;
+  margin: 0 3px;
+  border: 1px solid rgba(0,0,0,0.1);
+}
+
+.c2 {
+  -webkit-flex-basis: 24px;
+  -ms-flex-preferred-size: 24px;
+  flex-basis: 24px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c3 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.c5 {
+  display: block;
+}
+
+.c0 {
+  height: 300px;
+  padding: 10px 20px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c6 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c8 {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #999A94;
+}
+
+<div
+  className="c0 c1"
+>
+  <div
+    className="c2"
+  >
+    V
+  </div>
+  <div
+    className="c3"
+  >
+    <div
+      checked={false}
+      className="c4"
+      kind="success"
+    />
+  </div>
+  <div
+    className="c5"
+  >
+    <h4
+      className="c6 c7"
+    >
+      Title
+    </h4>
+    <small
+      className="c8 c9"
+    >
+      Last data point time : 2015-06-12 12:00
+    </small>
+  </div>
+</div>
+`;

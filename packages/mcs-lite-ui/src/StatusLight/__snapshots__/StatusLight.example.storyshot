@@ -1,0 +1,288 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots StatusLight API 1`] = `
+.c0 {
+  width: 12px;
+}
+
+.c0 > * {
+  fill: #D1D2D3;
+  -webkit-transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+}
+
+<svg
+  className="c0"
+  color="grayDark"
+  viewBox="0 0 20 20"
+>
+  <circle
+    cx="10"
+    cy="10"
+    r="10"
+  />
+</svg>
+`;
+
+exports[`Storyshots StatusLight Custom width 1`] = `
+.c1 {
+  width: 12px;
+}
+
+.c1 > * {
+  fill: #F39A1E;
+  -webkit-transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+}
+
+.c0 {
+  width: 100px;
+}
+
+<svg
+  className="c0 c1"
+  color="warning"
+  viewBox="0 0 20 20"
+>
+  <circle
+    cx="10"
+    cy="10"
+    r="10"
+  />
+</svg>
+`;
+
+exports[`Storyshots StatusLight With color props 1`] = `
+.c2 {
+  width: 12px;
+}
+
+.c2 > * {
+  fill: #D1D2D3;
+  -webkit-transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+}
+
+.c6 {
+  width: 12px;
+}
+
+.c6 > * {
+  fill: #69BE28;
+  -webkit-transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+}
+
+.c0 {
+  width: 12px;
+}
+
+.c0 > * {
+  fill: #353630;
+  -webkit-transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+}
+
+.c1 {
+  width: 12px;
+}
+
+.c1 > * {
+  fill: #999A94;
+  -webkit-transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+}
+
+.c3 {
+  width: 12px;
+}
+
+.c3 > * {
+  fill: #FAFAFA;
+  -webkit-transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+}
+
+.c4 {
+  width: 12px;
+}
+
+.c4 > * {
+  fill: #FFFFFF;
+  -webkit-transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+}
+
+.c5 {
+  width: 12px;
+}
+
+.c5 > * {
+  fill: #00A1DE;
+  -webkit-transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+}
+
+.c7 {
+  width: 12px;
+}
+
+.c7 > * {
+  fill: #F5364E;
+  -webkit-transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+}
+
+.c8 {
+  width: 12px;
+}
+
+.c8 > * {
+  fill: #F39A1E;
+  -webkit-transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+}
+
+<div>
+  <div>
+    <svg
+      className="c0"
+      color="black"
+      viewBox="0 0 20 20"
+    >
+      <circle
+        cx="10"
+        cy="10"
+        r="10"
+      />
+    </svg>
+    black
+  </div>
+  <div>
+    <svg
+      className="c1"
+      color="grayBase"
+      viewBox="0 0 20 20"
+    >
+      <circle
+        cx="10"
+        cy="10"
+        r="10"
+      />
+    </svg>
+    grayBase
+  </div>
+  <div>
+    <svg
+      className="c2"
+      color="grayDark"
+      viewBox="0 0 20 20"
+    >
+      <circle
+        cx="10"
+        cy="10"
+        r="10"
+      />
+    </svg>
+    grayDark
+  </div>
+  <div>
+    <svg
+      className="c3"
+      color="grayLight"
+      viewBox="0 0 20 20"
+    >
+      <circle
+        cx="10"
+        cy="10"
+        r="10"
+      />
+    </svg>
+    grayLight
+  </div>
+  <div>
+    <svg
+      className="c4"
+      color="white"
+      viewBox="0 0 20 20"
+    >
+      <circle
+        cx="10"
+        cy="10"
+        r="10"
+      />
+    </svg>
+    white
+  </div>
+  <div>
+    <svg
+      className="c3"
+      color="default"
+      viewBox="0 0 20 20"
+    >
+      <circle
+        cx="10"
+        cy="10"
+        r="10"
+      />
+    </svg>
+    default
+  </div>
+  <div>
+    <svg
+      className="c5"
+      color="primary"
+      viewBox="0 0 20 20"
+    >
+      <circle
+        cx="10"
+        cy="10"
+        r="10"
+      />
+    </svg>
+    primary
+  </div>
+  <div>
+    <svg
+      className="c6"
+      color="success"
+      viewBox="0 0 20 20"
+    >
+      <circle
+        cx="10"
+        cy="10"
+        r="10"
+      />
+    </svg>
+    success
+  </div>
+  <div>
+    <svg
+      className="c7"
+      color="error"
+      viewBox="0 0 20 20"
+    >
+      <circle
+        cx="10"
+        cy="10"
+        r="10"
+      />
+    </svg>
+    error
+  </div>
+  <div>
+    <svg
+      className="c8"
+      color="warning"
+      viewBox="0 0 20 20"
+    >
+      <circle
+        cx="10"
+        cy="10"
+        r="10"
+      />
+    </svg>
+    warning
+  </div>
+</div>
+`;

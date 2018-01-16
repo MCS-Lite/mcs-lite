@@ -1,0 +1,278 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Heading API 1`] = `
+.c0 {
+  margin: 0;
+  font-weight: normal;
+  font-size: 2.46rem;
+  color: currentColor;
+}
+
+<h1
+  className="c0"
+>
+  Level 1
+</h1>
+`;
+
+exports[`Storyshots Heading With color props 1`] = `
+.c0 {
+  margin: 0;
+  font-weight: normal;
+  font-size: 1.69rem;
+  color: #353630;
+}
+
+.c1 {
+  margin: 0;
+  font-weight: normal;
+  font-size: 1.69rem;
+  color: #999A94;
+}
+
+.c2 {
+  margin: 0;
+  font-weight: normal;
+  font-size: 1.69rem;
+  color: #D1D2D3;
+}
+
+.c3 {
+  margin: 0;
+  font-weight: normal;
+  font-size: 1.69rem;
+  color: #FAFAFA;
+}
+
+.c4 {
+  margin: 0;
+  font-weight: normal;
+  font-size: 1.69rem;
+  color: #FFFFFF;
+}
+
+.c5 {
+  margin: 0;
+  font-weight: normal;
+  font-size: 1.69rem;
+  color: #00A1DE;
+}
+
+.c6 {
+  margin: 0;
+  font-weight: normal;
+  font-size: 1.69rem;
+  color: #69BE28;
+}
+
+.c7 {
+  margin: 0;
+  font-weight: normal;
+  font-size: 1.69rem;
+  color: #F5364E;
+}
+
+.c8 {
+  margin: 0;
+  font-weight: normal;
+  font-size: 1.69rem;
+  color: #F39A1E;
+}
+
+<div>
+  <h2
+    className="c0"
+    color="black"
+  >
+    Level 2 
+    black
+  </h2>
+  <h2
+    className="c1"
+    color="grayBase"
+  >
+    Level 2 
+    grayBase
+  </h2>
+  <h2
+    className="c2"
+    color="grayDark"
+  >
+    Level 2 
+    grayDark
+  </h2>
+  <h2
+    className="c3"
+    color="grayLight"
+  >
+    Level 2 
+    grayLight
+  </h2>
+  <h2
+    className="c4"
+    color="white"
+  >
+    Level 2 
+    white
+  </h2>
+  <h2
+    className="c3"
+    color="default"
+  >
+    Level 2 
+    default
+  </h2>
+  <h2
+    className="c5"
+    color="primary"
+  >
+    Level 2 
+    primary
+  </h2>
+  <h2
+    className="c6"
+    color="success"
+  >
+    Level 2 
+    success
+  </h2>
+  <h2
+    className="c7"
+    color="error"
+  >
+    Level 2 
+    error
+  </h2>
+  <h2
+    className="c8"
+    color="warning"
+  >
+    Level 2 
+    warning
+  </h2>
+</div>
+`;
+
+exports[`Storyshots Heading With level props 1`] = `
+.c0 {
+  margin: 0;
+  font-weight: normal;
+  font-size: 2.46rem;
+  color: currentColor;
+}
+
+.c3 {
+  margin: 0;
+  font-weight: normal;
+  font-size: 1.15rem;
+  color: currentColor;
+}
+
+.c1 {
+  margin: 0;
+  font-weight: normal;
+  font-size: 1.69rem;
+  color: currentColor;
+}
+
+.c2 {
+  margin: 0;
+  font-weight: normal;
+  font-size: 1.38rem;
+  color: currentColor;
+}
+
+.c4 {
+  margin: 0;
+  font-weight: normal;
+  font-size: 1rem;
+  color: currentColor;
+}
+
+<div>
+  <h1
+    className="c0"
+  >
+    h
+    1
+     - Level 
+    1
+       (
+    2.46rem
+     =
+     
+    31.98px
+    )
+  </h1>
+  <h2
+    className="c1"
+  >
+    h
+    2
+     - Level 
+    2
+       (
+    1.69rem
+     =
+     
+    21.97px
+    )
+  </h2>
+  <h3
+    className="c2"
+  >
+    h
+    3
+     - Level 
+    3
+       (
+    1.38rem
+     =
+     
+    17.939999999999998px
+    )
+  </h3>
+  <h4
+    className="c3"
+  >
+    h
+    4
+     - Level 
+    4
+       (
+    1.15rem
+     =
+     
+    14.95px
+    )
+  </h4>
+  <h5
+    className="c4"
+  >
+    h
+    5
+     - Level 
+    5
+       (
+    1rem
+     =
+     
+    13px
+    )
+  </h5>
+  <h6
+    className="c4"
+  >
+    h
+    6
+     - Level 
+    6
+       (
+    1rem
+     =
+     
+    13px
+    )
+  </h6>
+</div>
+`;

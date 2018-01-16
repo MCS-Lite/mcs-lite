@@ -1,0 +1,2086 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots DataChannel ButtonClear 1`] = `
+.c2 {
+  color: #00A1DE;
+  -webkit-transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.c2:hover {
+  color: rgb(0,151,208);
+}
+
+.c2:active {
+  color: rgb(0,144,198);
+}
+
+.c0 {
+  margin: 0;
+  font-size: 1rem;
+  color: currentColor;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c1 > * {
+  margin-right: 5px;
+}
+
+<div
+  className="c0"
+>
+  <a
+    className="c1 c2"
+    color="primary"
+  >
+    <svg
+      fill="currentColor"
+      height="1em"
+      preserveAspectRatio="xMidYMid meet"
+      viewBox="0 0 24 24"
+      width="1em"
+    >
+      <path
+        d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zm9-10h1v10h-1V9zm-4 0h2v10h-2V9zM8 9h1v10H8V9zm7.5-5l-1-1h-5l-1 1H5v2h14V4h-3.5z"
+      />
+    </svg>
+    Clear
+  </a>
+</div>
+`;
+
+exports[`Storyshots DataChannel ControlNumber 1`] = `
+.c7 {
+  color: #00A1DE;
+  -webkit-transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.c7:hover {
+  color: rgb(0,151,208);
+}
+
+.c7:active {
+  color: rgb(0,144,198);
+}
+
+.c5 {
+  margin: 0;
+  font-size: 1rem;
+  color: currentColor;
+}
+
+.c2 {
+  margin: 0;
+  font-size: 1rem;
+  color: #999A94;
+}
+
+.c8 {
+  border-width: 1px;
+  border-style: solid;
+  outline: none;
+  box-sizing: border-box;
+  -webkit-transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  line-height: 0;
+  cursor: pointer;
+  background-color: #00A1DE;
+  color: #FFFFFF;
+  border-radius: 3px;
+  width: initial;
+  min-width: 80px;
+  height: 32px;
+  padding: 6px 15px;
+  font-size: 1rem;
+  border-color: rgb(0,130,179);
+}
+
+.c8:hover {
+  background-color: rgb(0,151,208);
+}
+
+.c8:active {
+  background-color: rgb(0,144,198);
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c6 > * {
+  margin-right: 5px;
+}
+
+.c3 {
+  box-sizing: border-box;
+  width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 3px;
+  outline: 0;
+  padding: 0 10px;
+  line-height: 1;
+  min-height: 32px;
+  color: #353630;
+  font-size: 1rem;
+  border-color: #D1D2D3;
+  box-shadow: none;
+}
+
+.c3:focus {
+  border-color: #00A1DE;
+  box-shadow: 0 0 3px 0 rgba(0,161,222,0.5);
+}
+
+.c3::-webkit-input-placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c3::-moz-placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c3:-ms-input-placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c3::placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c0 {
+  width: 100%;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.c1 {
+  margin-bottom: 5px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+<div
+  className="c0"
+>
+  <p
+    className="c1 c2"
+    color="grayBase"
+  >
+    單位：攝氏
+  </p>
+  <input
+    className="c3"
+    kind="primary"
+    onChange={[Function]}
+    placeholder="placeholder"
+    type="number"
+    value={10}
+  />
+  <div
+    className="c4"
+  >
+    <div
+      className="c5"
+      onClick={[Function]}
+    >
+      <a
+        className="c6 c7"
+        color="primary"
+      >
+        <svg
+          fill="currentColor"
+          height="1em"
+          preserveAspectRatio="xMidYMid meet"
+          viewBox="0 0 24 24"
+          width="1em"
+        >
+          <path
+            d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zm9-10h1v10h-1V9zm-4 0h2v10h-2V9zM8 9h1v10H8V9zm7.5-5l-1-1h-5l-1 1H5v2h14V4h-3.5z"
+          />
+        </svg>
+        Clear
+      </a>
+    </div>
+    <button
+      className="c8"
+      onClick={[Function]}
+    >
+      Ok
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots DataChannel ControlPeriod 1`] = `
+.c1 {
+  margin: 0;
+  font-size: 1rem;
+  color: #999A94;
+}
+
+.c5 {
+  border-width: 1px;
+  border-style: solid;
+  outline: none;
+  box-sizing: border-box;
+  -webkit-transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  line-height: 0;
+  cursor: pointer;
+  background-color: #00A1DE;
+  color: #FFFFFF;
+  border-radius: 3px;
+  width: initial;
+  min-width: 80px;
+  height: 32px;
+  padding: 6px 15px;
+  font-size: 1rem;
+  border-color: rgb(0,130,179);
+}
+
+.c5:hover {
+  background-color: rgb(0,151,208);
+}
+
+.c5:active {
+  background-color: rgb(0,144,198);
+}
+
+.c4 {
+  box-sizing: border-box;
+  width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 3px;
+  outline: 0;
+  padding: 0 10px;
+  line-height: 1;
+  min-height: 32px;
+  color: #353630;
+  font-size: 1rem;
+  border-color: #D1D2D3;
+  box-shadow: none;
+}
+
+.c4:focus {
+  border-color: #00A1DE;
+  box-shadow: 0 0 3px 0 rgba(0,161,222,0.5);
+}
+
+.c4::-webkit-input-placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c4::-moz-placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c4:-ms-input-placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c4::placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c0 {
+  margin-bottom: 10px;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 5px;
+}
+
+.c3 {
+  margin-right: 10px;
+}
+
+<div
+  className="c0"
+>
+  <label
+    htmlFor="input"
+  >
+    <p
+      className="c1"
+      color="grayBase"
+    >
+      Period
+    </p>
+  </label>
+  <div
+    className="c2"
+  >
+    <input
+      className="c3 c4"
+      kind="primary"
+      onChange={[Function]}
+      placeholder="placeholder"
+      type="number"
+      value={10}
+    />
+    <button
+      className="c5"
+      onClick={[Function]}
+    >
+      Ok
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots DataChannel ControlRange - Stateful PPAP 1`] = `
+.c7 {
+  margin: 0;
+  font-size: 1rem;
+  color: #00A1DE;
+}
+
+.c3 {
+  margin: 0;
+  font-size: 1rem;
+  color: #999A94;
+}
+
+.c8 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 100%;
+  outline: none;
+  background-color: rgba(0,0,0,0);
+  cursor: pointer;
+}
+
+.c8::-webkit-slider-runnable-track {
+  -webkit-appearance: none;
+  height: 16px;
+  border-radius: 8px;
+  background-image: linear-gradient(-180deg,#dfdfdf 5%,#f6f6f6 96%);
+  box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.35),inset 0 0 0 2px #e5e6e6,inset 0 1px 10px 0 rgba(0,0,0,0.05);
+}
+
+.c8::-moz-range-track {
+  -moz-appearance: none;
+  height: 16px;
+  border-radius: 8px;
+  background-image: linear-gradient(-180deg,#dfdfdf 5%,#f6f6f6 96%);
+  box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.35),inset 0 0 0 2px #e5e6e6,inset 0 1px 10px 0 rgba(0,0,0,0.05);
+}
+
+.c8::-moz-focus-outer {
+  border: 0;
+}
+
+.c8::-ms-track {
+  -webkit-appearance: none;
+  height: 16px;
+  border-radius: 8px;
+  background-image: linear-gradient(-180deg,#dfdfdf 5%,#f6f6f6 96%);
+  box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.35),inset 0 0 0 2px #e5e6e6,inset 0 1px 10px 0 rgba(0,0,0,0.05);
+}
+
+.c8::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  margin-top: -12px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-image: radial-gradient( 50% 50%,#ffffff 50%,#ffffff 73%,#f8f8f8 81%,#ebebeb 90%,#dddddd 95% );
+  -webkit-transition: -webkit-transform 0.3s ease,width 0.2s ease,height 0.2s ease;
+  -webkit-transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
+  transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #00A1DE,inset 0 0 0 3px rgb(0,192,255);
+}
+
+.c8::-moz-range-thumb {
+  -moz-appearance: none;
+  height: 40px;
+  width: 40px;
+  border-width: 0;
+  border-radius: 50%;
+  background-image: radial-gradient( 50% 50%,#ffffff 50%,#ffffff 73%,#f8f8f8 81%,#ebebeb 90%,#dddddd 95% );
+  -moz-appearance: none;
+  -moz-transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #00A1DE,inset 0 0 0 3px rgb(0,192,255);
+}
+
+.c8::-ms-thumb {
+  -webkit-appearance: none;
+  margin-top: -12px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-image: radial-gradient( 50% 50%,#ffffff 50%,#ffffff 73%,#f8f8f8 81%,#ebebeb 90%,#dddddd 95% );
+  -webkit-transition: -webkit-transform 0.3s ease,width 0.2s ease,height 0.2s ease;
+  -webkit-transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
+  transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #00A1DE,inset 0 0 0 3px rgb(0,192,255);
+}
+
+.c8::-webkit-slider-thumb:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.c8::-moz-range-thumb:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.c8::-ms-thumb:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.c0 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column-reverse;
+  -ms-flex-direction: column-reverse;
+  flex-direction: column-reverse;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c1 > *:first-child {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c1 > *:last-child {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0 4px;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-flex-basis: 0;
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0;
+  overflow: hidden;
+}
+
+.c2::before {
+  content: '';
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-right-color: #D1D2D3;
+  height: 4px;
+  margin-top: 5px;
+  margin-bottom: 8px;
+}
+
+.c5 {
+  margin-bottom: 15px;
+}
+
+.c6 {
+  display: inline-block;
+}
+
+.c4 {
+  padding: 0 13.666666666666668%;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <div
+      className="c2"
+    >
+      <p
+        className="c3"
+        color="grayBase"
+      >
+        Apple
+      </p>
+    </div>
+    <div
+      className="c2"
+    >
+      <p
+        className="c3"
+        color="grayBase"
+      >
+        Pen
+      </p>
+    </div>
+    <div
+      className="c2"
+    >
+      <p
+        className="c3"
+        color="grayBase"
+      >
+        Pineapple
+      </p>
+    </div>
+  </div>
+  <div
+    className="c4"
+  >
+    <div
+      className="c5 c3"
+      color="grayBase"
+    >
+      Current value: 
+      <p
+        className="c6 c7"
+        color="primary"
+      >
+        Pineapple
+      </p>
+    </div>
+    <input
+      className="c8"
+      kind="primary"
+      max={2}
+      min={0}
+      onChange={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      step={1}
+      type="range"
+      value={2}
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots DataChannel ControlRange - Stateful number 1`] = `
+.c7 {
+  margin: 0;
+  font-size: 1rem;
+  color: #00A1DE;
+}
+
+.c3 {
+  margin: 0;
+  font-size: 1rem;
+  color: #999A94;
+}
+
+.c8 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 100%;
+  outline: none;
+  background-color: rgba(0,0,0,0);
+  cursor: pointer;
+}
+
+.c8::-webkit-slider-runnable-track {
+  -webkit-appearance: none;
+  height: 16px;
+  border-radius: 8px;
+  background-image: linear-gradient(-180deg,#dfdfdf 5%,#f6f6f6 96%);
+  box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.35),inset 0 0 0 2px #e5e6e6,inset 0 1px 10px 0 rgba(0,0,0,0.05);
+}
+
+.c8::-moz-range-track {
+  -moz-appearance: none;
+  height: 16px;
+  border-radius: 8px;
+  background-image: linear-gradient(-180deg,#dfdfdf 5%,#f6f6f6 96%);
+  box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.35),inset 0 0 0 2px #e5e6e6,inset 0 1px 10px 0 rgba(0,0,0,0.05);
+}
+
+.c8::-moz-focus-outer {
+  border: 0;
+}
+
+.c8::-ms-track {
+  -webkit-appearance: none;
+  height: 16px;
+  border-radius: 8px;
+  background-image: linear-gradient(-180deg,#dfdfdf 5%,#f6f6f6 96%);
+  box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.35),inset 0 0 0 2px #e5e6e6,inset 0 1px 10px 0 rgba(0,0,0,0.05);
+}
+
+.c8::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  margin-top: -12px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-image: radial-gradient( 50% 50%,#ffffff 50%,#ffffff 73%,#f8f8f8 81%,#ebebeb 90%,#dddddd 95% );
+  -webkit-transition: -webkit-transform 0.3s ease,width 0.2s ease,height 0.2s ease;
+  -webkit-transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
+  transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #00A1DE,inset 0 0 0 3px rgb(0,192,255);
+}
+
+.c8::-moz-range-thumb {
+  -moz-appearance: none;
+  height: 40px;
+  width: 40px;
+  border-width: 0;
+  border-radius: 50%;
+  background-image: radial-gradient( 50% 50%,#ffffff 50%,#ffffff 73%,#f8f8f8 81%,#ebebeb 90%,#dddddd 95% );
+  -moz-appearance: none;
+  -moz-transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #00A1DE,inset 0 0 0 3px rgb(0,192,255);
+}
+
+.c8::-ms-thumb {
+  -webkit-appearance: none;
+  margin-top: -12px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-image: radial-gradient( 50% 50%,#ffffff 50%,#ffffff 73%,#f8f8f8 81%,#ebebeb 90%,#dddddd 95% );
+  -webkit-transition: -webkit-transform 0.3s ease,width 0.2s ease,height 0.2s ease;
+  -webkit-transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
+  transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #00A1DE,inset 0 0 0 3px rgb(0,192,255);
+}
+
+.c8::-webkit-slider-thumb:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.c8::-moz-range-thumb:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.c8::-ms-thumb:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.c0 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column-reverse;
+  -ms-flex-direction: column-reverse;
+  flex-direction: column-reverse;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c1 > *:first-child {
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+}
+
+.c1 > *:last-child {
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0 4px;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-flex-basis: 0;
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0;
+  overflow: hidden;
+}
+
+.c2::before {
+  content: '';
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-right-color: #D1D2D3;
+  height: 4px;
+  margin-top: 5px;
+  margin-bottom: 8px;
+}
+
+.c5 {
+  margin-bottom: 15px;
+}
+
+.c6 {
+  display: inline-block;
+}
+
+.c4 {
+  padding: 0 0%;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <div
+      className="c2"
+    >
+      <div
+        className="c3"
+        color="grayBase"
+      >
+        33
+      </div>
+    </div>
+    <div
+      className="c2"
+    >
+      <div
+        className="c3"
+        color="grayBase"
+      >
+        95
+      </div>
+    </div>
+  </div>
+  <div
+    className="c4"
+  >
+    <div
+      className="c5 c3"
+      color="grayBase"
+    >
+      Current value: 
+      <div
+        className="c6 c7"
+        color="primary"
+      >
+        88
+      </div>
+    </div>
+    <input
+      className="c8"
+      kind="primary"
+      max={95}
+      min={33}
+      onChange={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      step={1}
+      type="range"
+      value={88}
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots DataChannel ControlRange 1`] = `
+.c8 {
+  margin: 0;
+  font-size: 1rem;
+  color: #00A1DE;
+}
+
+.c4 {
+  margin: 0;
+  font-size: 1rem;
+  color: #999A94;
+}
+
+.c9 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 100%;
+  outline: none;
+  background-color: rgba(0,0,0,0);
+  cursor: pointer;
+}
+
+.c9::-webkit-slider-runnable-track {
+  -webkit-appearance: none;
+  height: 16px;
+  border-radius: 8px;
+  background-image: linear-gradient(-180deg,#dfdfdf 5%,#f6f6f6 96%);
+  box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.35),inset 0 0 0 2px #e5e6e6,inset 0 1px 10px 0 rgba(0,0,0,0.05);
+}
+
+.c9::-moz-range-track {
+  -moz-appearance: none;
+  height: 16px;
+  border-radius: 8px;
+  background-image: linear-gradient(-180deg,#dfdfdf 5%,#f6f6f6 96%);
+  box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.35),inset 0 0 0 2px #e5e6e6,inset 0 1px 10px 0 rgba(0,0,0,0.05);
+}
+
+.c9::-moz-focus-outer {
+  border: 0;
+}
+
+.c9::-ms-track {
+  -webkit-appearance: none;
+  height: 16px;
+  border-radius: 8px;
+  background-image: linear-gradient(-180deg,#dfdfdf 5%,#f6f6f6 96%);
+  box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.35),inset 0 0 0 2px #e5e6e6,inset 0 1px 10px 0 rgba(0,0,0,0.05);
+}
+
+.c9::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  margin-top: -12px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-image: radial-gradient( 50% 50%,#ffffff 50%,#ffffff 73%,#f8f8f8 81%,#ebebeb 90%,#dddddd 95% );
+  -webkit-transition: -webkit-transform 0.3s ease,width 0.2s ease,height 0.2s ease;
+  -webkit-transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
+  transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #00A1DE,inset 0 0 0 3px rgb(0,192,255);
+}
+
+.c9::-moz-range-thumb {
+  -moz-appearance: none;
+  height: 40px;
+  width: 40px;
+  border-width: 0;
+  border-radius: 50%;
+  background-image: radial-gradient( 50% 50%,#ffffff 50%,#ffffff 73%,#f8f8f8 81%,#ebebeb 90%,#dddddd 95% );
+  -moz-appearance: none;
+  -moz-transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #00A1DE,inset 0 0 0 3px rgb(0,192,255);
+}
+
+.c9::-ms-thumb {
+  -webkit-appearance: none;
+  margin-top: -12px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-image: radial-gradient( 50% 50%,#ffffff 50%,#ffffff 73%,#f8f8f8 81%,#ebebeb 90%,#dddddd 95% );
+  -webkit-transition: -webkit-transform 0.3s ease,width 0.2s ease,height 0.2s ease;
+  -webkit-transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
+  transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #00A1DE,inset 0 0 0 3px rgb(0,192,255);
+}
+
+.c9::-webkit-slider-thumb:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.c9::-moz-range-thumb:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.c9::-ms-thumb:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.c1 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column-reverse;
+  -ms-flex-direction: column-reverse;
+  flex-direction: column-reverse;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c2 > *:first-child {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c2 > *:last-child {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c10 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c10 > *:first-child {
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+}
+
+.c10 > *:last-child {
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0 4px;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-flex-basis: 0;
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0;
+  overflow: hidden;
+}
+
+.c3::before {
+  content: '';
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-right-color: #D1D2D3;
+  height: 4px;
+  margin-top: 5px;
+  margin-bottom: 8px;
+}
+
+.c6 {
+  margin-bottom: 15px;
+}
+
+.c7 {
+  display: inline-block;
+}
+
+.c5 {
+  padding: 0 7%;
+}
+
+.c11 {
+  padding: 0 0%;
+}
+
+.c0 > * {
+  margin: 7.5px;
+  width: 600px;
+  background: white;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <div
+      className="c2"
+    >
+      <div
+        className="c3"
+      >
+        <p
+          className="c4"
+          color="grayBase"
+        >
+          AAAAAA
+        </p>
+      </div>
+      <div
+        className="c3"
+      >
+        <p
+          className="c4"
+          color="grayBase"
+        >
+          BBBBB
+        </p>
+      </div>
+      <div
+        className="c3"
+      >
+        <p
+          className="c4"
+          color="grayBase"
+        >
+          CCCCC
+        </p>
+      </div>
+      <div
+        className="c3"
+      >
+        <p
+          className="c4"
+          color="grayBase"
+        >
+          DDDDD
+        </p>
+      </div>
+      <div
+        className="c3"
+      >
+        <p
+          className="c4"
+          color="grayBase"
+        >
+          EEEEE
+        </p>
+      </div>
+    </div>
+    <div
+      className="c5"
+    >
+      <div
+        className="c6 c4"
+        color="grayBase"
+      >
+        Current value: 
+        <p
+          className="c7 c8"
+          color="primary"
+        >
+          N/A
+        </p>
+      </div>
+      <input
+        className="c9"
+        kind="primary"
+        max={4}
+        min={0}
+        onChange={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        step={1}
+        type="range"
+        value={undefined}
+      />
+    </div>
+  </div>
+  <div
+    className="c1"
+  >
+    <div
+      className="c2"
+    >
+      <div
+        className="c3"
+      >
+        <p
+          className="c4"
+          color="grayBase"
+        >
+          AAAAAA
+        </p>
+      </div>
+      <div
+        className="c3"
+      >
+        <p
+          className="c4"
+          color="grayBase"
+        >
+          BBBBB
+        </p>
+      </div>
+      <div
+        className="c3"
+      >
+        <p
+          className="c4"
+          color="grayBase"
+        >
+          CCCCC
+        </p>
+      </div>
+      <div
+        className="c3"
+      >
+        <p
+          className="c4"
+          color="grayBase"
+        >
+          DDDDD
+        </p>
+      </div>
+      <div
+        className="c3"
+      >
+        <p
+          className="c4"
+          color="grayBase"
+        >
+          EEEEE
+        </p>
+      </div>
+    </div>
+    <div
+      className="c5"
+    >
+      <div
+        className="c6 c4"
+        color="grayBase"
+      >
+        Current value: 
+        <p
+          className="c7 c8"
+          color="primary"
+        >
+          DDDDD
+        </p>
+      </div>
+      <input
+        className="c9"
+        kind="primary"
+        max={4}
+        min={0}
+        onChange={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        step={1}
+        type="range"
+        value={3}
+      />
+    </div>
+  </div>
+  <div
+    className="c1"
+  >
+    <div
+      className="c10"
+    >
+      <div
+        className="c3"
+      >
+        <p
+          className="c4"
+          color="grayBase"
+        >
+          Low
+        </p>
+      </div>
+      <div
+        className="c3"
+      >
+        <p
+          className="c4"
+          color="grayBase"
+        >
+          Heigh
+        </p>
+      </div>
+    </div>
+    <div
+      className="c11"
+    >
+      <div
+        className="c6 c4"
+        color="grayBase"
+      >
+        Current value: 
+        <p
+          className="c7 c8"
+          color="primary"
+        >
+          Low
+        </p>
+      </div>
+      <input
+        className="c9"
+        kind="primary"
+        max={1}
+        min={0}
+        onChange={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        step={1}
+        type="range"
+        value={0}
+      />
+    </div>
+  </div>
+  <div
+    className="c1"
+  >
+    <div
+      className="c10"
+    >
+      <div
+        className="c3"
+      >
+        <div
+          className="c4"
+          color="grayBase"
+        >
+          0
+        </div>
+      </div>
+      <div
+        className="c3"
+      >
+        <div
+          className="c4"
+          color="grayBase"
+        >
+          100
+        </div>
+      </div>
+    </div>
+    <div
+      className="c11"
+    >
+      <div
+        className="c6 c4"
+        color="grayBase"
+      >
+        Current value: 
+        <div
+          className="c7 c8"
+          color="primary"
+        >
+          33
+        </div>
+      </div>
+      <input
+        className="c9"
+        kind="primary"
+        max={100}
+        min={0}
+        onChange={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        step={1}
+        type="range"
+        value={33}
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots DataChannel ControlString 1`] = `
+.c6 {
+  color: #00A1DE;
+  -webkit-transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.c6:hover {
+  color: rgb(0,151,208);
+}
+
+.c6:active {
+  color: rgb(0,144,198);
+}
+
+.c4 {
+  margin: 0;
+  font-size: 1rem;
+  color: currentColor;
+}
+
+.c7 {
+  border-width: 1px;
+  border-style: solid;
+  outline: none;
+  box-sizing: border-box;
+  -webkit-transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  line-height: 0;
+  cursor: pointer;
+  background-color: #00A1DE;
+  color: #FFFFFF;
+  border-radius: 3px;
+  width: initial;
+  min-width: 80px;
+  height: 32px;
+  padding: 6px 15px;
+  font-size: 1rem;
+  border-color: rgb(0,130,179);
+}
+
+.c7:hover {
+  background-color: rgb(0,151,208);
+}
+
+.c7:active {
+  background-color: rgb(0,144,198);
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c5 > * {
+  margin-right: 5px;
+}
+
+.c2 {
+  box-sizing: border-box;
+  width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 3px;
+  outline: 0;
+  padding: 5px 10px;
+  color: #353630;
+  border-color: #D1D2D3;
+  font-size: 1rem;
+}
+
+.c2:focus {
+  border-color: #00A1DE;
+  box-shadow: 0 0 3px 0 rgba(0,161,222,0.5);
+}
+
+.c2::-webkit-input-placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c2::-moz-placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c2:-ms-input-placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c2::placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c2:disabled {
+  background-color: #FFFFFF;
+}
+
+.c0 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.c1 {
+  height: 100%;
+  min-height: 4em;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+<div
+  className="c0"
+>
+  <textarea
+    className="c1 c2"
+    kind="primary"
+    onChange={[Function]}
+    placeholder="placeholder"
+    value=""
+  />
+  <div
+    className="c3"
+  >
+    <div
+      className="c4"
+      onClick={[Function]}
+    >
+      <a
+        className="c5 c6"
+        color="primary"
+      >
+        <svg
+          fill="currentColor"
+          height="1em"
+          preserveAspectRatio="xMidYMid meet"
+          viewBox="0 0 24 24"
+          width="1em"
+        >
+          <path
+            d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zm9-10h1v10h-1V9zm-4 0h2v10h-2V9zM8 9h1v10H8V9zm7.5-5l-1-1h-5l-1 1H5v2h14V4h-3.5z"
+          />
+        </svg>
+        Clear
+      </a>
+    </div>
+    <button
+      className="c7"
+      onClick={[Function]}
+    >
+      Ok
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots DataChannel ControlSwitch 1`] = `
+.c0 {
+  position: relative;
+  height: 50px;
+  width: 82px;
+  box-sizing: border-box;
+  border-radius: 24px;
+  -webkit-transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.2s;
+  transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.2s;
+  cursor: pointer;
+  background-color: #999A94;
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+}
+
+.c0::after {
+  content: ' ';
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  cursor: pointer;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.17);
+  top: 3px;
+  left: 0;
+  -webkit-transition: left cubic-bezier(0.47,0,0.75,0.72) 0.2s;
+  transition: left cubic-bezier(0.47,0,0.75,0.72) 0.2s;
+  margin: 0 3px;
+  border: 1px solid rgba(0,0,0,0.1);
+}
+
+<div
+  checked={false}
+  className="c0"
+  kind="success"
+  onClick={[Function]}
+/>
+`;
+
+exports[`Storyshots DataChannel DisplayMultipleValue 1`] = `
+.c3 {
+  margin: 0;
+  font-weight: normal;
+  font-size: 2.46rem;
+  color: #00A1DE;
+}
+
+.c1 {
+  margin: 0;
+  font-size: 1rem;
+  color: #999A94;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+}
+
+.c0 > div {
+  width: 100%;
+}
+
+.c0 > div + div {
+  margin-top: 10px;
+}
+
+.c2 {
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  margin-top: 5px;
+}
+
+<div
+  className="c0"
+>
+  <div>
+    <p
+      className="c1"
+      color="grayBase"
+    >
+      Value
+    </p>
+    <h1
+      className="c2 c3"
+      color="primary"
+    >
+      1234455
+    </h1>
+  </div>
+  <div>
+    <p
+      className="c1"
+      color="grayBase"
+    >
+      Period
+    </p>
+    <h1
+      className="c2 c3"
+      color="primary"
+    >
+      125125
+    </h1>
+  </div>
+</div>
+`;
+
+exports[`Storyshots DataChannel DisplayStatus 1`] = `
+.c3 {
+  margin: 0;
+  font-size: 1rem;
+  color: #999A94;
+}
+
+.c4 {
+  width: 12px;
+}
+
+.c4 > * {
+  fill: #D1D2D3;
+  -webkit-transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+}
+
+.c5 {
+  width: 12px;
+}
+
+.c5 > * {
+  fill: #69BE28;
+  -webkit-transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-around;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: space-around;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-flex-basis: 0;
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0;
+  margin: 0 4px;
+  overflow: hidden;
+}
+
+.c2 > *:first-child {
+  margin-bottom: 20px;
+}
+
+.c0 > * {
+  margin: 7.5px;
+  width: 600px;
+  background: white;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <div
+      className="c2"
+    >
+      <p
+        className="c3"
+        color="grayBase"
+      >
+        OFF
+      </p>
+      <div>
+        <svg
+          className="c4"
+          color="grayDark"
+          viewBox="0 0 20 20"
+        >
+          <circle
+            cx="10"
+            cy="10"
+            r="10"
+          />
+        </svg>
+      </div>
+    </div>
+    <div
+      className="c2"
+    >
+      <p
+        className="c3"
+        color="grayBase"
+      >
+        ON
+      </p>
+      <div>
+        <svg
+          className="c4"
+          color="grayDark"
+          viewBox="0 0 20 20"
+        >
+          <circle
+            cx="10"
+            cy="10"
+            r="10"
+          />
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div
+    className="c1"
+  >
+    <div
+      className="c2"
+    >
+      <p
+        className="c3"
+        color="grayBase"
+      >
+        Apple1
+      </p>
+      <div>
+        <svg
+          className="c4"
+          color="grayDark"
+          viewBox="0 0 20 20"
+        >
+          <circle
+            cx="10"
+            cy="10"
+            r="10"
+          />
+        </svg>
+      </div>
+    </div>
+    <div
+      className="c2"
+    >
+      <p
+        className="c3"
+        color="grayBase"
+      >
+        Apple2
+      </p>
+      <div>
+        <svg
+          className="c4"
+          color="grayDark"
+          viewBox="0 0 20 20"
+        >
+          <circle
+            cx="10"
+            cy="10"
+            r="10"
+          />
+        </svg>
+      </div>
+    </div>
+    <div
+      className="c2"
+    >
+      <p
+        className="c3"
+        color="grayBase"
+      >
+        Pen
+      </p>
+      <div>
+        <svg
+          className="c5"
+          color="success"
+          viewBox="0 0 20 20"
+        >
+          <circle
+            cx="10"
+            cy="10"
+            r="10"
+          />
+        </svg>
+      </div>
+    </div>
+    <div
+      className="c2"
+    >
+      <p
+        className="c3"
+        color="grayBase"
+      >
+        Pineapple
+      </p>
+      <div>
+        <svg
+          className="c4"
+          color="grayDark"
+          viewBox="0 0 20 20"
+        >
+          <circle
+            cx="10"
+            cy="10"
+            r="10"
+          />
+        </svg>
+      </div>
+    </div>
+    <div
+      className="c2"
+    >
+      <p
+        className="c3"
+        color="grayBase"
+      >
+        PPAPPPAPPPAP
+      </p>
+      <div>
+        <svg
+          className="c4"
+          color="grayDark"
+          viewBox="0 0 20 20"
+        >
+          <circle
+            cx="10"
+            cy="10"
+            r="10"
+          />
+        </svg>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots DataChannel DisplayString 1`] = `
+.c2 {
+  box-sizing: border-box;
+  width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 3px;
+  outline: 0;
+  padding: 5px 10px;
+  color: #353630;
+  border-color: #D1D2D3;
+  font-size: 1rem;
+}
+
+.c2:focus {
+  border-color: #00A1DE;
+  box-shadow: 0 0 3px 0 rgba(0,161,222,0.5);
+}
+
+.c2::-webkit-input-placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c2::-moz-placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c2:-ms-input-placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c2::placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c2:disabled {
+  background-color: #FFFFFF;
+}
+
+.c0 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+}
+
+.c1 {
+  height: 100%;
+  min-height: 4em;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+<div
+  className="c0"
+>
+  <textarea
+    className="c1 c2"
+    disabled={true}
+    kind="primary"
+    placeholder="This place holds Hex value."
+    value="value"
+  />
+</div>
+`;
+
+exports[`Storyshots DataChannel DisplayUnitValue 1`] = `
+.c2 {
+  margin: 0;
+  font-weight: normal;
+  font-size: 2.46rem;
+  color: #00A1DE;
+}
+
+.c4 {
+  margin: 0;
+  font-size: 1rem;
+  color: #999A94;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+}
+
+.c1 {
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+}
+
+.c3 {
+  margin-top: 10px;
+}
+
+<div
+  className="c0"
+>
+  <h1
+    className="c1 c2"
+    color="primary"
+  >
+    1123124124121
+  </h1>
+  <p
+    className="c3 c4"
+    color="grayBase"
+  >
+    攝氏
+  </p>
+</div>
+`;
