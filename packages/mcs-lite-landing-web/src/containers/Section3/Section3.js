@@ -22,9 +22,7 @@ const LoadableSVGRemote = Loadable({
 });
 const LoadableSVGManagement = Loadable({
   loader: () =>
-    import(
-      /* webpackChunkName: "Section" */ '../../components/SVG/SVGManagement',
-    ),
+    import(/* webpackChunkName: "Section" */ '../../components/SVG/SVGManagement'),
   loading: () => null,
 });
 const LoadableSVGMobile = Loadable({
@@ -33,13 +31,15 @@ const LoadableSVGMobile = Loadable({
   loading: () => null,
 });
 
-const Section3 = ({ getMessages: t }) =>
+const Section3 = ({ getMessages: t }) => (
   <SectionRow>
     <Column xs={12}>
       <TextCenter>
         <Heading level={2}>{t('title')}</Heading>
         <SpaceTop height={10}>
-          <Heading level={4} color="grayBase">{t('desc')}</Heading>
+          <Heading level={4} color="grayBase">
+            {t('desc')}
+          </Heading>
         </SpaceTop>
       </TextCenter>
     </Column>
@@ -113,7 +113,8 @@ const Section3 = ({ getMessages: t }) =>
         </TextCenter>
       </Column>
     </StyledRow>
-  </SectionRow>;
+  </SectionRow>
+);
 
 Section3.displayName = 'Section3';
 Section3.propTypes = {

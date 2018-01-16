@@ -14,8 +14,7 @@ const desDir = process.argv[3];
 process.env.NODE_ENV = 'production'; // for babel
 
 // --- /lib/a.svg --- /lib/b.svg --- ...
-const srcPath$ = Rx.Observable
-  .of(srcDir)
+const srcPath$ = Rx.Observable.of(srcDir)
   .switchMap(dirPath => Rx.Observable.from(fs.readdirSync(dirPath)))
   .map(basename => path.resolve(srcDir, basename));
 
@@ -29,11 +28,9 @@ const componentName$ = srcPath$
 const xml$ = srcPath$.map(filepath => fs.readFileSync(filepath, 'utf-8'));
 
 // --- codeA --- codeB --- ...
-const code$ = Rx.Observable
-  .zip(componentName$, xml$)
-  .map(([componentName, xml]) =>
-    compile(template(componentName, parseSVG(xml))),
-  );
+const code$ = Rx.Observable.zip(componentName$, xml$).map(
+  ([componentName, xml]) => compile(template(componentName, parseSVG(xml))),
+);
 
 // --- ./lib/IconA.js --- ./lib/IconB.js --- ...
 const destPath$ = componentName$

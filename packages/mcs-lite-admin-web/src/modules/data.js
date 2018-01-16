@@ -32,18 +32,18 @@ export const actions = {
 function deleteDataCycle(sources) {
   const accessToken$ = accessTokenSelector$(sources.STATE);
 
-  const message$ = sources.ACTION
-    .filter(action => action.type === DELETE_DATA)
-    .pluck('payload');
+  const message$ = sources.ACTION.filter(
+    action => action.type === DELETE_DATA,
+  ).pluck('payload');
 
-  const request$ = sources.ACTION
-    .filter(action => action.type === DELETE_DATA)
-    .combineLatest(accessToken$, (action, accessToken) => ({
-      url: '/api/clear',
-      method: 'DELETE',
-      headers: { Authorization: `Bearer ${accessToken}` },
-      category: DELETE_DATA,
-    }));
+  const request$ = sources.ACTION.filter(
+    action => action.type === DELETE_DATA,
+  ).combineLatest(accessToken$, (action, accessToken) => ({
+    url: '/api/clear',
+    method: 'DELETE',
+    headers: { Authorization: `Bearer ${accessToken}` },
+    category: DELETE_DATA,
+  }));
 
   const successRes$ = sources.HTTP.select(DELETE_DATA).switchMap(success);
 

@@ -13,9 +13,9 @@ const desPath = process.argv[3];
 process.env.NODE_ENV = 'production'; // for babel
 
 // --- /src/a.js --- /src/b.js --- ...
-const srcPath$ = Rx.Observable
-  .of(srcPattern)
-  .switchMap(pattern => Rx.Observable.from(glob.sync(pattern)));
+const srcPath$ = Rx.Observable.of(srcPattern).switchMap(pattern =>
+  Rx.Observable.from(glob.sync(pattern)),
+);
 
 // --- a --- b --- ...
 const basename$ = srcPath$.map(srcPath =>

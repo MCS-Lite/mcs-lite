@@ -19,7 +19,7 @@ const DialogConfirm = ({
   onSubmit,
   children,
   getMessages: t,
-}) =>
+}) => (
   <StyledDialog show={show} onHide={onCancel}>
     <header>{t('notice')}</header>
     <main>
@@ -27,10 +27,13 @@ const DialogConfirm = ({
       {children}
     </main>
     <footer>
-      <Button kind="default" onClick={onCancel}>{t('cancel')}</Button>
+      <Button kind="default" onClick={onCancel}>
+        {t('cancel')}
+      </Button>
       <Button onClick={onSubmit}>{t('confirm')}</Button>
     </footer>
-  </StyledDialog>;
+  </StyledDialog>
+);
 
 DialogConfirm.displayName = 'DialogConfirm';
 DialogConfirm.propTypes = {

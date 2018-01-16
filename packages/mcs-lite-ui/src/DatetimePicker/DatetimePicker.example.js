@@ -14,10 +14,10 @@ storiesOf('DatetimePicker', module).add(
     `,
 
     inline: true,
-  })(() =>
+  })(() => (
     <DatetimePicker
       defaultValue={1455780631722}
       onChange={value => action('DatetimePicker')(new Date(value).toString())}
-    />,
-  ),
+    />
+  )),
 );

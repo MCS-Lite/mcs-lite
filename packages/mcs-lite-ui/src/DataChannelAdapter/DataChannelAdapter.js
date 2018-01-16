@@ -77,7 +77,7 @@ class DataChannelAdapter extends React.Component {
 
       [
         R.equals('SWITCH_CONTROL'),
-        () =>
+        () => (
           <DataChannel.ControlSwitch
             value={Boolean(values.value)}
             onSubmit={() =>
@@ -85,16 +85,19 @@ class DataChannelAdapter extends React.Component {
                 type: 'SUBMIT',
                 id,
                 values: { value: !values.value ? 1 : 0 },
-              })}
-          />,
+              })
+            }
+          />
+        ),
       ],
       [
         R.equals('SWITCH_DISPLAY'),
-        () =>
+        () => (
           <DataChannel.DisplayStatus
             value={values.value && values.value ? 1 : 0}
             labels={['OFF', 'ON']}
-          />,
+          />
+        ),
       ],
 
       /**
@@ -105,7 +108,7 @@ class DataChannelAdapter extends React.Component {
 
       [
         R.equals('INTEGER_CONTROL'),
-        () =>
+        () => (
           <DataChannel.ControlNumber
             placeholder="Integer only"
             unit={format.unit && `單位：${format.unit}`}
@@ -116,13 +119,15 @@ class DataChannelAdapter extends React.Component {
                 type: 'CHANGE',
                 id,
                 values: { value: e.target.value },
-              })}
+              })
+            }
             onClear={() => eventHandler({ type: 'CLEAR', id, values: {} })}
-          />,
+          />
+        ),
       ],
       [
         R.equals('INTEGER_DISPLAY'),
-        () =>
+        () => (
           <DataChannel.DisplayUnitValue
             value={
               R.isNil(values.value)
@@ -130,7 +135,8 @@ class DataChannelAdapter extends React.Component {
                 : parseInt(values.value, 10)
             }
             unit={format.unit}
-          />,
+          />
+        ),
       ],
 
       /**
@@ -141,7 +147,7 @@ class DataChannelAdapter extends React.Component {
 
       [
         R.equals('FLOAT_CONTROL'),
-        () =>
+        () => (
           <DataChannel.ControlNumber
             placeholder="Float only"
             unit={format.unit && `單位：${format.unit}`}
@@ -152,13 +158,15 @@ class DataChannelAdapter extends React.Component {
                 type: 'CHANGE',
                 id,
                 values: { value: e.target.value },
-              })}
+              })
+            }
             onClear={() => eventHandler({ type: 'CLEAR', id, values: {} })}
-          />,
+          />
+        ),
       ],
       [
         R.equals('FLOAT_DISPLAY'),
-        () =>
+        () => (
           <DataChannel.DisplayUnitValue
             value={
               R.isNil(values.value)
@@ -166,7 +174,8 @@ class DataChannelAdapter extends React.Component {
                 : parseFloat(values.value, 10)
             }
             unit={format.unit}
-          />,
+          />
+        ),
       ],
 
       /**
@@ -177,7 +186,7 @@ class DataChannelAdapter extends React.Component {
 
       [
         R.equals('STRING_CONTROL'),
-        () =>
+        () => (
           <DataChannel.ControlString
             placeholder="String only"
             value={R.isNil(values.value) ? '' : values.value}
@@ -187,17 +196,20 @@ class DataChannelAdapter extends React.Component {
                 type: 'CHANGE',
                 id,
                 values: { value: e.target.value },
-              })}
+              })
+            }
             onClear={() => eventHandler({ type: 'CLEAR', id, values: {} })}
-          />,
+          />
+        ),
       ],
       [
         R.equals('STRING_DISPLAY'),
-        () =>
+        () => (
           <DataChannel.DisplayString
             placeholder="String only"
             value={R.isNil(values.value) ? '' : values.value}
-          />,
+          />
+        ),
       ],
 
       /**
@@ -208,7 +220,7 @@ class DataChannelAdapter extends React.Component {
 
       [
         R.equals('HEX_CONTROL'),
-        () =>
+        () => (
           <DataChannel.ControlString
             placeholder="Hex only"
             value={R.isNil(values.value) ? '' : values.value}
@@ -218,17 +230,20 @@ class DataChannelAdapter extends React.Component {
                 type: 'CHANGE',
                 id,
                 values: { value: e.target.value },
-              })}
+              })
+            }
             onClear={() => eventHandler({ type: 'CLEAR', id, values: {} })}
-          />,
+          />
+        ),
       ],
       [
         R.equals('HEX_DISPLAY'),
-        () =>
+        () => (
           <DataChannel.DisplayString
             placeholder="Hex only"
             value={R.isNil(values.value) ? '' : values.value}
-          />,
+          />
+        ),
       ],
 
       /**
@@ -253,24 +268,27 @@ class DataChannelAdapter extends React.Component {
                   type: 'CHANGE',
                   id,
                   values: { value: e.target.value },
-                })}
+                })
+              }
               onSubmit={() =>
                 eventHandler({
                   type: 'SUBMIT',
                   id,
                   values: { value: values.value },
-                })}
+                })
+              }
             />
           );
         },
       ],
       [
         R.equals('GPIO_DISPLAY'),
-        () =>
+        () => (
           <DataChannel.DisplayStatus
             value={R.isNil(values.value) ? undefined : values.value}
             labels={['Low', 'High']}
-          />,
+          />
+        ),
       ],
 
       /**
@@ -300,13 +318,15 @@ class DataChannelAdapter extends React.Component {
                   type: 'CHANGE',
                   id,
                   values: { value: valueMapper(e.target.value) },
-                })}
+                })
+              }
               onSubmit={() =>
                 eventHandler({
                   type: 'SUBMIT',
                   id,
                   values: { value: values.value },
-                })}
+                })
+              }
             />
           );
         },
@@ -353,13 +373,15 @@ class DataChannelAdapter extends React.Component {
                   type: 'CHANGE',
                   id,
                   values: { value: e.target.value },
-                })}
+                })
+              }
               onSubmit={() =>
                 eventHandler({
                   type: 'SUBMIT',
                   id,
                   values: { value: values.value },
-                })}
+                })
+              }
             />
           );
         },
@@ -373,7 +395,7 @@ class DataChannelAdapter extends React.Component {
 
       [
         R.equals('PWM_DISPLAY'),
-        () =>
+        () => (
           <DataChannel.DisplayMultipleValue
             items={[
               {
@@ -389,7 +411,8 @@ class DataChannelAdapter extends React.Component {
                   : values.period,
               },
             ]}
-          />,
+          />
+        ),
       ],
       [
         R.equals('PWM_CONTROL'),
@@ -408,7 +431,8 @@ class DataChannelAdapter extends React.Component {
                     type: 'CHANGE',
                     id,
                     values: { period: e.target.value, value: values.value },
-                  })}
+                  })
+                }
                 placeholder="Integer only"
               />
               <DataChannel.ControlRange
@@ -425,13 +449,15 @@ class DataChannelAdapter extends React.Component {
                     type: 'CHANGE',
                     id,
                     values: { value: e.target.value, period: values.period },
-                  })}
+                  })
+                }
                 onSubmit={() =>
                   eventHandler({
                     type: 'SUBMIT',
                     id,
                     values: { value: values.value, period: values.period },
-                  })}
+                  })
+                }
               />
             </Wrapper>
           );

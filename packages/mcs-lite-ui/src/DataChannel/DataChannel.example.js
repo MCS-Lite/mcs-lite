@@ -29,55 +29,57 @@ storiesOf('DataChannel', module)
     withInfo({
       text: '',
       inline: true,
-    })(() =>
+    })(() => (
       <DemoWrapper>
         <DataChannel.DisplayStatus labels={['OFF', 'ON']} />
         <DataChannel.DisplayStatus
           value={2}
           labels={['Apple1', 'Apple2', 'Pen', 'Pineapple', 'PPAPPPAPPPAP']}
         />
-      </DemoWrapper>,
-    ),
+      </DemoWrapper>
+    )),
   )
   .add(
     'DisplayUnitValue',
     withInfo({
       text: '',
       inline: true,
-    })(() => <DataChannel.DisplayUnitValue value={1123124124121} unit="攝氏" />),
+    })(() => (
+      <DataChannel.DisplayUnitValue value={1123124124121} unit="攝氏" />
+    )),
   )
   .add(
     'DisplayMultipleValue',
     withInfo({
       text: '',
       inline: true,
-    })(() =>
+    })(() => (
       <DataChannel.DisplayMultipleValue
         items={[
           { name: 'Value', value: 1234455 },
           { name: 'Period', value: 125125 },
         ]}
-      />,
-    ),
+      />
+    )),
   )
   .add(
     'DisplayString',
     withInfo({
       text: '',
       inline: true,
-    })(() =>
+    })(() => (
       <DataChannel.DisplayString
         value="value"
         placeholder="This place holds Hex value."
-      />,
-    ),
+      />
+    )),
   )
   .add(
     'ControlNumber',
     withInfo({
       text: 'React controlled-components.',
       inline: true,
-    })(() =>
+    })(() => (
       <DataChannel.ControlNumber
         onSubmit={action('ControlNumber onSubmit')}
         onChange={action('ControlNumber onChange')}
@@ -85,49 +87,49 @@ storiesOf('DataChannel', module)
         placeholder="placeholder"
         unit="單位：攝氏"
         value={10}
-      />,
-    ),
+      />
+    )),
   )
   .add(
     'ControlPeriod',
     withInfo({
       text: 'React controlled-components.',
       inline: true,
-    })(() =>
+    })(() => (
       <DataChannel.ControlPeriod
         onSubmit={action('ControlPeriod onSubmit')}
         onChange={action('ControlPeriod onChange')}
         placeholder="placeholder"
         value={10}
-      />,
-    ),
+      />
+    )),
   )
   .add(
     'ControlSwitch',
     withInfo({
       text: '<Swtich> component with renamed props.',
       inline: true,
-    })(() =>
+    })(() => (
       <DataChannel.ControlSwitch
         value={false}
         onSubmit={action('ControlSwitch onSubmit')}
-      />,
-    ),
+      />
+    )),
   )
   .add(
     'ControlString',
     withInfo({
       text: 'React controlled-components.',
       inline: true,
-    })(() =>
+    })(() => (
       <DataChannel.ControlString
         onSubmit={action('ControlString onSubmit')}
         onChange={action('ControlString onChange')}
         onClear={action('ControlString onClear')}
         placeholder="placeholder"
         value=""
-      />,
-    ),
+      />
+    )),
   )
   .add(
     'ControlRange',

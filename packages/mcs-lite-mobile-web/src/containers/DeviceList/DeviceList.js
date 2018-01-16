@@ -65,7 +65,9 @@ class DeviceList extends React.Component {
 
     return (
       <div>
-        <Helmet><title>{t('myTestDevices')}</title></Helmet>
+        <Helmet>
+          <title>{t('myTestDevices')}</title>
+        </Helmet>
         <MobileHeader.MobileHeader
           title={isFilterOpen ? '' : t('myTestDevices')}
           leftChildren={
@@ -77,7 +79,7 @@ class DeviceList extends React.Component {
             </MobileHeader.MobileHeaderIcon>
           }
           rightChildren={[
-            isFilterOpen &&
+            isFilterOpen && (
               <Transition
                 key="input"
                 component={false}
@@ -92,7 +94,8 @@ class DeviceList extends React.Component {
                   value={filterValue}
                   onChange={onFilterChange}
                 />
-              </Transition>,
+              </Transition>
+            ),
             <ClickOutside key="icon" onClick={onClickOutside}>
               <StyledHeaderIcon onClick={onFilterClick} active={isFilterOpen}>
                 <IconSearch />
@@ -110,7 +113,7 @@ class DeviceList extends React.Component {
                   appear={{ opacity: 0.8, marginTop: -20 }}
                   enter={{ opacity: 1, marginTop: 0 }}
                 >
-                  {devices.filter(includeDeviceName).map(device =>
+                  {devices.filter(includeDeviceName).map(device => (
                     <StyledLink
                       key={device.deviceId}
                       to={updatePathname(`/devices/${device.deviceId}`)}
@@ -122,13 +125,14 @@ class DeviceList extends React.Component {
                           device.deviceImageURL,
                         )}
                       />
-                    </StyledLink>,
-                  )}
+                    </StyledLink>
+                  ))}
                 </Transition>
               </PreventDrag>
 
-              {R.isEmpty(devices) &&
-                <PlaceholdWrapper>{t('noDevice')}</PlaceholdWrapper>}
+              {R.isEmpty(devices) && (
+                <PlaceholdWrapper>{t('noDevice')}</PlaceholdWrapper>
+              )}
             </Container>
           </PullToRefresh>
         </main>

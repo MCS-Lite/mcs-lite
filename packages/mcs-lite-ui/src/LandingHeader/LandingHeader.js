@@ -56,9 +56,7 @@ class LandingHeader extends React.PureComponent {
 
     return (
       <Container {...otherProps}>
-        <Fixed isTop={isTop}>
-          {children}
-        </Fixed>
+        <Fixed isTop={isTop}>{children}</Fixed>
       </Container>
     );
   }

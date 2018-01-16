@@ -67,9 +67,10 @@ export const actions = {
 const DELAY = 2500;
 
 function addToastCycle(sources) {
-  const key$ = sources.ACTION
-    .filter(action => action.type === ADD_TOAST)
-    .pluck('payload', 'key');
+  const key$ = sources.ACTION.filter(action => action.type === ADD_TOAST).pluck(
+    'payload',
+    'key',
+  );
 
   const action$ = key$.concatMap(key =>
     Observable.of(removeToast(key)).let(sources.Time.delay(DELAY)),
@@ -91,8 +92,7 @@ function storeIsRestartRequiredCycle(sources) {
   // Remind: state sync with localstorage
   const action$ = isRestartRequired$.map(setIsRestartRequired);
 
-  const successResToStore$ = sources.HTTP
-    .select()
+  const successResToStore$ = sources.HTTP.select()
     .concatMap(success)
     .filter(
       R.pipe(
@@ -129,8 +129,7 @@ function storeIsRestartRequiredCycle(sources) {
 }
 
 function removeIsRestartRequiredCycle(sources) {
-  const successResToRemove$ = sources.HTTP
-    .select()
+  const successResToRemove$ = sources.HTTP.select()
     .concatMap(success)
     .filter(
       R.pipe(

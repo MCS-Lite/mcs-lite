@@ -8,9 +8,5 @@ storiesOf('CopyButton', module).add(
   withInfo({
     text: '',
     inline: true,
-  })(() =>
-    <CopyButton text="devieKey">
-      Copy
-    </CopyButton>,
-  ),
+  })(() => <CopyButton text="devieKey">Copy</CopyButton>),
 );

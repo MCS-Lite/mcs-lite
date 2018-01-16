@@ -18,22 +18,22 @@ storiesOf('Img', module)
     withInfo({
       text: 'default size="cover"',
       inline: true,
-    })(() =>
+    })(() => (
       <Container>
         <Img src="http://placehold.it/350x150" />
-      </Container>,
-    ),
+      </Container>
+    )),
   )
   .add(
     'With size props',
     withInfo({
       text: 'size="contain"',
       inline: true,
-    })(() =>
+    })(() => (
       <Container>
         <Img src="http://placehold.it/350x150" size="contain" />
-      </Container>,
-    ),
+      </Container>
+    )),
   )
   .add(
     'With height override',

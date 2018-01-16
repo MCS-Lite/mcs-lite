@@ -14,8 +14,8 @@ class Overlay extends React.Component {
     onClickOutSide: PropTypes.func, // for ClickOutside
     children: PropTypes.node.isRequired,
     target: PropTypes.object, // react mounted instance
-    alignConfig: PropTypes.object.isRequired, // docs: https://github.com/yiminghe/dom-align#alignconfig-object-details
-    transitionConfig: PropTypes.object.isRequired, // docs: https://github.com/souporserious/react-motion-ui-pack#props
+    alignConfig: PropTypes.object, // docs: https://github.com/yiminghe/dom-align#alignconfig-object-details
+    transitionConfig: PropTypes.object, // docs: https://github.com/souporserious/react-motion-ui-pack#props
   };
   static defaultProps = {
     onClickOutSide: emptyFunction,

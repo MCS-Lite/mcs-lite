@@ -16,21 +16,22 @@ export const StyledP = styled(P)`
 `;
 
 const omitProps = R.omit(['isShow']);
-export const StyledIconFold = styled(props =>
-  <IconFold {...omitProps(props)} />,
-)`
+export const StyledIconFold = styled(props => (
+  <IconFold {...omitProps(props)} />
+))`
   transform: rotate(${props => (props.isShow ? -180 : 0)}deg);
   transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 `;
 
-export const HandleHideMenuItem = ({ onHide, onClick, ...otherProps }) =>
+export const HandleHideMenuItem = ({ onHide, onClick, ...otherProps }) => (
   <MenuItem
     {...otherProps}
     onClick={e => {
       if (onClick) onClick(e);
       onHide(e);
     }}
-  />;
+  />
+);
 HandleHideMenuItem.displayName = 'HandleHideMenuItem';
 HandleHideMenuItem.propTypes = {
   onHide: PropTypes.func.isRequired,
@@ -86,12 +87,13 @@ class NavItemDropdown extends React.PureComponent {
         <StyledIconFold size={18} isShow={isShow} />
 
         {/* Portal */}
-        {isShow &&
+        {isShow && (
           <Overlay target={target} onClickOutSide={onHide}>
             <Menu key="menu" onClick={onHide} onMouseLeave={onHide}>
               {items.map(e => <HandleHideMenuItem {...e} onHide={onHide} />)}
             </Menu>
-          </Overlay>}
+          </Overlay>
+        )}
       </NavItem>
     );
   }

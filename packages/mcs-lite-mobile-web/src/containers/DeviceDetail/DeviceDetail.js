@@ -99,7 +99,9 @@ class DeviceDetail extends React.Component {
     } = this;
     return (
       <div>
-        <Helmet><title>{device.deviceName}</title></Helmet>
+        <Helmet>
+          <title>{device.deviceName}</title>
+        </Helmet>
         <MobileHeader.MobileHeader
           title={device.deviceName}
           leftChildren={
@@ -119,7 +121,7 @@ class DeviceDetail extends React.Component {
             >
               <IconMoreVert />
             </MobileHeader.MobileHeaderIcon>,
-            isMenuShow &&
+            isMenuShow && (
               <Overlay
                 key="menu"
                 target={target}
@@ -146,7 +148,8 @@ class DeviceDetail extends React.Component {
                   </StyledLink>
                   */}
                 </Menu.Menu>
-              </Overlay>,
+              </Overlay>
+            ),
           ]}
         />
 
@@ -162,14 +165,16 @@ class DeviceDetail extends React.Component {
               <Container>
                 <CardWrapper>
                   {device.datachannels &&
-                    device.datachannels.map(c =>
+                    device.datachannels.map(c => (
                       <DataChannelCard
                         key={c.datachannelId}
                         data-width="half"
                         header={
                           <StyledLink
                             to={updatePathname(
-                              `/devices/${deviceId}/dataChannels/${c.datachannelId}`,
+                              `/devices/${deviceId}/dataChannels/${
+                                c.datachannelId
+                              }`,
                             )}
                           >
                             <CardHeaderIcon>
@@ -192,8 +197,8 @@ class DeviceDetail extends React.Component {
                           }}
                           eventHandler={eventHandler}
                         />
-                      </DataChannelCard>,
-                    )}
+                      </DataChannelCard>
+                    ))}
                 </CardWrapper>
               </Container>
             </div>

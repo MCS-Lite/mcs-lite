@@ -52,18 +52,18 @@ export const actions = {
 function startCycle(sources) {
   const accessToken$ = accessTokenSelector$(sources.STATE);
 
-  const message$ = sources.ACTION
-    .filter(action => action.type === START)
-    .pluck('payload');
+  const message$ = sources.ACTION.filter(action => action.type === START).pluck(
+    'payload',
+  );
 
-  const request$ = sources.ACTION
-    .filter(action => action.type === START)
-    .combineLatest(accessToken$, (action, accessToken) => ({
-      url: '/api/service/start',
-      method: 'GET',
-      headers: { Authorization: `Bearer ${accessToken}` },
-      category: START,
-    }));
+  const request$ = sources.ACTION.filter(
+    action => action.type === START,
+  ).combineLatest(accessToken$, (action, accessToken) => ({
+    url: '/api/service/start',
+    method: 'GET',
+    headers: { Authorization: `Bearer ${accessToken}` },
+    category: START,
+  }));
 
   const successRes$ = sources.HTTP.select(START).switchMap(success);
 
@@ -85,18 +85,18 @@ function startCycle(sources) {
 function stopCycle(sources) {
   const accessToken$ = accessTokenSelector$(sources.STATE);
 
-  const message$ = sources.ACTION
-    .filter(action => action.type === STOP)
-    .pluck('payload');
+  const message$ = sources.ACTION.filter(action => action.type === STOP).pluck(
+    'payload',
+  );
 
-  const request$ = sources.ACTION
-    .filter(action => action.type === STOP)
-    .combineLatest(accessToken$, (action, accessToken) => ({
-      url: '/api/service/stop',
-      method: 'GET',
-      headers: { Authorization: `Bearer ${accessToken}` },
-      category: STOP,
-    }));
+  const request$ = sources.ACTION.filter(
+    action => action.type === STOP,
+  ).combineLatest(accessToken$, (action, accessToken) => ({
+    url: '/api/service/stop',
+    method: 'GET',
+    headers: { Authorization: `Bearer ${accessToken}` },
+    category: STOP,
+  }));
 
   const successRes$ = sources.HTTP.select(STOP).switchMap(success);
 
@@ -117,22 +117,22 @@ function stopCycle(sources) {
 
 function restartCycle(sources) {
   const accessToken$ = accessTokenSelector$(sources.STATE);
-  const message$ = sources.ACTION
-    .filter(action => action.type === RESTART)
-    .pluck('payload');
+  const message$ = sources.ACTION.filter(
+    action => action.type === RESTART,
+  ).pluck('payload');
 
-  const stopRequest$ = sources.ACTION
-    .filter(action => action.type === RESTART)
-    .combineLatest(accessToken$, (action, accessToken) => ({
-      url: '/api/service/stop',
-      method: 'GET',
-      headers: { Authorization: `Bearer ${accessToken}` },
-      category: `${RESTART}_STOP`,
-    }));
+  const stopRequest$ = sources.ACTION.filter(
+    action => action.type === RESTART,
+  ).combineLatest(accessToken$, (action, accessToken) => ({
+    url: '/api/service/stop',
+    method: 'GET',
+    headers: { Authorization: `Bearer ${accessToken}` },
+    category: `${RESTART}_STOP`,
+  }));
 
-  const successStopRes$ = sources.HTTP
-    .select(`${RESTART}_STOP`)
-    .switchMap(success);
+  const successStopRes$ = sources.HTTP.select(`${RESTART}_STOP`).switchMap(
+    success,
+  );
 
   const startRequest$ = successStopRes$.withLatestFrom(
     accessToken$,
@@ -144,9 +144,9 @@ function restartCycle(sources) {
     }),
   );
 
-  const successStartRes$ = sources.HTTP
-    .select(`${RESTART}_START`)
-    .switchMap(success);
+  const successStartRes$ = sources.HTTP.select(`${RESTART}_START`).switchMap(
+    success,
+  );
 
   const action$ = Observable.from([
     stopRequest$.mapTo(uiActions.setLoading()),
@@ -170,8 +170,7 @@ function fetchIpListCycle(sources) {
   const fetchAction$ = sources.ACTION.filter(
     action => action.type === FETCH_IP_LIST,
   );
-  const successResToFetch$ = sources.HTTP
-    .select()
+  const successResToFetch$ = sources.HTTP.select()
     .concatMap(success)
     .filter(
       R.pipe(

@@ -81,7 +81,10 @@ it('should handle onSubmit with true value', () => {
   );
 
   expect(mockEventHandler).not.toHaveBeenCalled();
-  wrapper.find(DataChannel.ControlSwitch).props().onSubmit();
+  wrapper
+    .find(DataChannel.ControlSwitch)
+    .props()
+    .onSubmit();
   expect(mockEventHandler).toHaveBeenCalledWith({
     id: 'id',
     type: 'SUBMIT',
@@ -107,7 +110,10 @@ it('should handle onSubmit with false value', () => {
   );
 
   expect(mockEventHandler).not.toHaveBeenCalled();
-  wrapper.find(DataChannel.ControlSwitch).props().onSubmit();
+  wrapper
+    .find(DataChannel.ControlSwitch)
+    .props()
+    .onSubmit();
   expect(mockEventHandler).toHaveBeenCalledWith({
     id: 'id',
     type: 'SUBMIT',

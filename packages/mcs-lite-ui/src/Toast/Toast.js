@@ -26,12 +26,11 @@ export const StyledP = styled(P)`
   background-color: ${props => lighten(props.theme.color[props.kind])};
 `;
 
-const Toast = ({ children, kind, ...otherProps }) =>
+const Toast = ({ children, kind, ...otherProps }) => (
   <StyledCard {...otherProps} kind={kind}>
-    <StyledP kind={kind}>
-      {children}
-    </StyledP>
-  </StyledCard>;
+    <StyledP kind={kind}>{children}</StyledP>
+  </StyledCard>
+);
 
 Toast.displayName = 'Toast';
 Toast.propTypes = {

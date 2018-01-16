@@ -42,14 +42,13 @@ const CommonDialog = ({
   onSubmit,
   children,
   ...otherProps
-}) =>
+}) => (
   <Dialog show={show} onHide={onHide} {...otherProps}>
     <Component onSubmit={Component === 'form' ? onSubmit : null}>
-      <StyledPanel>
-        {children}
-      </StyledPanel>
+      <StyledPanel>{children}</StyledPanel>
     </Component>
-  </Dialog>;
+  </Dialog>
+);
 
 CommonDialog.displayName = 'CommonDialog';
 CommonDialog.propTypes = {

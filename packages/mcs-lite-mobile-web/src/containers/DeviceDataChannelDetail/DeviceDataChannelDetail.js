@@ -30,7 +30,11 @@ import WebSocketNotification from '../../components/WebSocketNotification';
 
 const LoadableChart = Loadable({
   loader: () => import('mcs-lite-ui/lib/DataPointAreaChart'),
-  loading: () => <Spin><IconLoading size={20} /></Spin>,
+  loading: () => (
+    <Spin>
+      <IconLoading size={20} />
+    </Spin>
+  ),
 });
 
 class DeviceDataChannelDetail extends React.Component {
@@ -107,7 +111,9 @@ class DeviceDataChannelDetail extends React.Component {
 
     return (
       <div>
-        <Helmet><title>{t('dataChannelDetail')}</title></Helmet>
+        <Helmet>
+          <title>{t('dataChannelDetail')}</title>
+        </Helmet>
         <MobileHeader.MobileHeader
           title={t('dataChannelDetail')}
           leftChildren={
@@ -134,7 +140,7 @@ class DeviceDataChannelDetail extends React.Component {
           {isWebSocketClose && <WebSocketNotification onClick={reconnect} />}
 
           <CardContainer>
-            {datachannel &&
+            {datachannel && (
               <DataChannelCard
                 key={datachannel.datachannelId}
                 title={datachannel.datachannelName}
@@ -152,34 +158,38 @@ class DeviceDataChannelDetail extends React.Component {
                   }}
                   eventHandler={eventHandler}
                 />
-              </DataChannelCard>}
+              </DataChannelCard>
+            )}
           </CardContainer>
 
           {datachannel &&
-            datachannel.hasHistory &&
-            <HistoryContainer>
-              <HistoryHeader>
-                <div>
-                  <P>{t('historyChart')}</P>
-                  <StyledSamll>{t('defaultQueryLatest')}</StyledSamll>
-                </div>
-                <div>
-                  <ResetWrapper onClick={onResetClick}>
-                    <IconRefresh />
-                    <P>{t('reset')}</P>
-                  </ResetWrapper>
-                </div>
-              </HistoryHeader>
+            datachannel.hasHistory && (
+              <HistoryContainer>
+                <HistoryHeader>
+                  <div>
+                    <P>{t('historyChart')}</P>
+                    <StyledSamll>{t('defaultQueryLatest')}</StyledSamll>
+                  </div>
+                  <div>
+                    <ResetWrapper onClick={onResetClick}>
+                      <IconRefresh />
+                      <P>{t('reset')}</P>
+                    </ResetWrapper>
+                  </div>
+                </HistoryHeader>
 
-              <ChartWrapper>
-                {data.length > 0
-                  ? <LoadableChart
+                <ChartWrapper>
+                  {data.length > 0 ? (
+                    <LoadableChart
                       data={data}
                       type={areaChartTypeMapper(datachannel.channelType.name)}
                     />
-                  : t('noData')}
-              </ChartWrapper>
-            </HistoryContainer>}
+                  ) : (
+                    t('noData')
+                  )}
+                </ChartWrapper>
+              </HistoryContainer>
+            )}
         </main>
       </div>
     );

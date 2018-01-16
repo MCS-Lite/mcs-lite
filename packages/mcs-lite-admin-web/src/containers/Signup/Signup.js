@@ -36,7 +36,9 @@ class Signup extends React.Component {
 
     return (
       <Layout>
-        <Helmet><title>{t('signup')}</title></Helmet>
+        <Helmet>
+          <title>{t('signup')}</title>
+        </Helmet>
 
         <StyledLogo />
         <ErrorMessage color="error">

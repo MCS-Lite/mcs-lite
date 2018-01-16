@@ -182,7 +182,6 @@ exports[`should renders <RestartNotification> correctly 1`] = `
                   >
                     <Card
                       className="c2 c3"
-                      innerRef={undefined}
                       kind="warning"
                       style={
                         Object {
@@ -206,7 +205,6 @@ exports[`should renders <RestartNotification> correctly 1`] = `
                         >
                           <P
                             className="c5 c6"
-                            innerRef={undefined}
                             kind="warning"
                           >
                             <Component

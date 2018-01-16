@@ -31,7 +31,9 @@ class DeviceTrigger extends React.Component {
 
     return (
       <div>
-        <Helmet><title>{t('triggerAndAction')}</title></Helmet>
+        <Helmet>
+          <title>{t('triggerAndAction')}</title>
+        </Helmet>
         <MobileHeader.MobileHeader
           title={t('triggerAndAction')}
           leftChildren={
@@ -54,7 +56,9 @@ class DeviceTrigger extends React.Component {
                     <P>觸發條件名稱 A</P>
                     <StyledSamll>{t('on')}</StyledSamll>
                   </div>
-                  <IconWrapper><IconChevronRight /></IconWrapper>
+                  <IconWrapper>
+                    <IconChevronRight />
+                  </IconWrapper>
                 </Item>
               </StyledLink>
 
@@ -66,7 +70,9 @@ class DeviceTrigger extends React.Component {
                     <P>觸發條件名稱 A</P>
                     <StyledSamll>{t('off')}</StyledSamll>
                   </div>
-                  <IconWrapper><IconChevronRight /></IconWrapper>
+                  <IconWrapper>
+                    <IconChevronRight />
+                  </IconWrapper>
                 </Item>
               </StyledLink>
             </PreventDrag>

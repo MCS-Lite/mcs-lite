@@ -38,9 +38,7 @@ class StatefulPullToRefresh extends React.Component {
     return (
       <PullToRefresh isLoading={this.state.isLoading} onPull={this.onPull}>
         <Content>
-          <StyledHeading color="white">
-            Pull me down
-          </StyledHeading>
+          <StyledHeading color="white">Pull me down</StyledHeading>
           <StyledHeading color="white" level={3}>
             (API will respond after 3 seconds.)
           </StyledHeading>
@@ -56,9 +54,9 @@ storiesOf('PullToRefresh', module).add(
     text: '',
     inline: true,
     propTables: [PullToRefresh],
-  })(() =>
+  })(() => (
     <Body>
       <StatefulPullToRefresh />
-    </Body>,
-  ),
+    </Body>
+  )),
 );

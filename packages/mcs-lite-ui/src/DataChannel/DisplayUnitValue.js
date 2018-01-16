@@ -22,11 +22,12 @@ export const StyledP = styled(P)`
   margin-top: 10px;
 `;
 
-const DisplayUnitValue = ({ value, unit, ...otherProps }) =>
+const DisplayUnitValue = ({ value, unit, ...otherProps }) => (
   <Container {...otherProps}>
     <StyledHeading color="primary">{value}</StyledHeading>
     {unit && <StyledP color="grayBase">{unit}</StyledP>}
-  </Container>;
+  </Container>
+);
 
 DisplayUnitValue.displayName = 'DisplayUnitValue';
 DisplayUnitValue.propTypes = {

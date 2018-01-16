@@ -12,24 +12,18 @@ storiesOf('B', module)
     withInfo({
       text: '粗體。',
       inline: true,
-    })(() =>
-      <B>
-        Bold content
-      </B>,
-    ),
+    })(() => <B>Bold content</B>),
   )
   .add(
     'CJK',
     withInfo({
       text: '粗體中文字。',
       inline: true,
-    })(() =>
+    })(() => (
       <Heading level={4}>
-        <B>
-          控制開關粗體字
-        </B>
-      </Heading>,
-    ),
+        <B>控制開關粗體字</B>
+      </Heading>
+    )),
   )
   .add(
     'Within <P>',
@@ -37,17 +31,15 @@ storiesOf('B', module)
       text: '段落中出現。',
       inline: true,
       propTables: false,
-    })(() =>
+    })(() => (
       <P>
         Nisi eu eiusmod cupidatat aute laboris commodo excepteur
         <Small>
-          <B>
-            &nbsp;Bold content&nbsp;
-          </B>
+          <B>&nbsp;Bold content&nbsp;</B>
         </Small>
         incididunt incididunt aliquip pariatur est minim officia sit.
-      </P>,
-    ),
+      </P>
+    )),
   )
   .add(
     'With color',
@@ -55,13 +47,11 @@ storiesOf('B', module)
       text: '來自上層的顏色。',
       inline: true,
       propTables: false,
-    })(() =>
+    })(() => (
       <P color="primary">
         Nisi eu eiusmod cupidatat aute laboris commodo excepteur
-        <B>
-          &nbsp;Bold content&nbsp;
-        </B>
+        <B>&nbsp;Bold content&nbsp;</B>
         incididunt incididunt aliquip pariatur est minim officia sit.
-      </P>,
-    ),
+      </P>
+    )),
   );

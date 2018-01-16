@@ -162,8 +162,9 @@ class Table extends React.PureComponent {
     return <StyledIcon size={18} onClick={onClick} />;
   };
 
-  noRowsRenderer = () =>
-    <NoRowWrapper>{this.props.getMessages('noRows')}</NoRowWrapper>;
+  noRowsRenderer = () => (
+    <NoRowWrapper>{this.props.getMessages('noRows')}</NoRowWrapper>
+  );
 
   rowGetter = ({ index }) => this.state.sortedList[index];
 
@@ -183,9 +184,9 @@ class Table extends React.PureComponent {
 
     return (
       <WindowScroller>
-        {({ height }) =>
+        {({ height }) => (
           <AutoSizer disableHeight>
-            {({ width }) =>
+            {({ width }) => (
               <StyledTable
                 width={width}
                 height={height - TABLE_HEIGHT_OFFSET}
@@ -199,7 +200,7 @@ class Table extends React.PureComponent {
                 sortDirection={sortDirection}
               >
                 <Column
-                  dataKey={'userId'}
+                  dataKey="userId"
                   headerRenderer={checkedHeaderRenderer}
                   cellRenderer={checkedCellRenderer}
                   width={14}
@@ -220,13 +221,15 @@ class Table extends React.PureComponent {
                   flexGrow={1}
                 />
                 <Column
-                  dataKey={'userId'}
+                  dataKey="userId"
                   cellRenderer={editCellRenderer}
                   width={40}
                   flexShrink={0}
                 />
-              </StyledTable>}
-          </AutoSizer>}
+              </StyledTable>
+            )}
+          </AutoSizer>
+        )}
       </WindowScroller>
     );
   }

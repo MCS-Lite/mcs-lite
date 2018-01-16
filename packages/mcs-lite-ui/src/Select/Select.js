@@ -42,7 +42,7 @@ export const StyledButton = styled(Button)`
 class Select extends React.Component {
   static propTypes = {
     kind: PropTypes.string,
-    value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
+    value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
     placeholder: PropTypes.string,
     items: PropTypes.arrayOf(
       PropTypes.shape({
@@ -88,8 +88,11 @@ class Select extends React.Component {
           onFocus={onFocus}
           onBlur={onBlur}
         >
-          {placeholder &&
-            <option value={PLACEHOLDER_VALUE} disabled>{placeholder}</option>}
+          {placeholder && (
+            <option value={PLACEHOLDER_VALUE} disabled>
+              {placeholder}
+            </option>
+          )}
           {items.map(e => <option key={e.value} {...e} />)}
         </StyledSelect>
       </Wrapper>

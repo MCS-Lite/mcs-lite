@@ -23,12 +23,14 @@ storiesOf('MobileFixedFooter', module).add(
   withInfo({
     text: '',
     inline: true,
-  })(() =>
+  })(() => (
     <MobileFixedFooter>
       <ButtonWrapper>
-        <Button block kind="default">Cancel</Button>
+        <Button block kind="default">
+          Cancel
+        </Button>
         <Button block>Submit</Button>
       </ButtonWrapper>
-    </MobileFixedFooter>,
-  ),
+    </MobileFixedFooter>
+  )),
 );

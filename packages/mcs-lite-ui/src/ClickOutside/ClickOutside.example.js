@@ -13,11 +13,9 @@ storiesOf('ClickOutside', module).add(
     text: '',
     inline: true,
     propTables: [ClickOutside],
-  })(() =>
+  })(() => (
     <ClickOutside onClick={action('ClickOutside')}>
-      <Card>
-        Inside (Try to click outside.)
-      </Card>
-    </ClickOutside>,
-  ),
+      <Card>Inside (Try to click outside.)</Card>
+    </ClickOutside>
+  )),
 );

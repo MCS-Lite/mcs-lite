@@ -22,16 +22,16 @@ storiesOf('StatusLight', module)
     withInfo({
       text: '',
       inline: true,
-    })(() =>
+    })(() => (
       <div>
-        {Object.keys(theme.color).map(key =>
+        {Object.keys(theme.color).map(key => (
           <div key={key}>
             <StatusLight color={key} />
             {key}
-          </div>,
-        )}
-      </div>,
-    ),
+          </div>
+        ))}
+      </div>
+    )),
   )
   .add(
     'Custom width',

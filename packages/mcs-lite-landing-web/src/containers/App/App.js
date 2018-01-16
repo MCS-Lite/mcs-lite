@@ -18,7 +18,7 @@ const defaultLocaleMapper = localeMapper(DEFAULT_LOCALE);
 const ogImageForTwitter =
   'https://raw.githubusercontent.com/MCS-Lite/mcs-lite/master/packages/mcs-lite-design/src/logo/img_ogimage.png';
 
-const App = ({ getMessages: t, router }) =>
+const App = ({ getMessages: t, router }) => (
   <div>
     {/* 1. Helmet */}
     <Helmet titleTemplate={`%s ${t('titleTemplate')}`}>
@@ -46,9 +46,9 @@ const App = ({ getMessages: t, router }) =>
       <meta name="og:site_name" content={t('title')} />
       <meta name="og:type" content="website" />
       <meta property="og:locale" content={DEFAULT_LOCALE} />
-      {LOCALES.map(({ id }) =>
-        <meta key={id} property="og:locale:alternate" content={id} />,
-      )}
+      {LOCALES.map(({ id }) => (
+        <meta key={id} property="og:locale:alternate" content={id} />
+      ))}
     </Helmet>
 
     <Header locale={defaultLocaleMapper(router.params.locale)} />
@@ -58,7 +58,8 @@ const App = ({ getMessages: t, router }) =>
     <Section4 />
     <Section5 />
     <Footer />
-  </div>;
+  </div>
+);
 
 App.displayName = 'App';
 App.propTypes = {

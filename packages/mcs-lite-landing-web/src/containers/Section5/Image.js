@@ -26,7 +26,6 @@ class Image extends React.PureComponent {
   render() {
     return (
       <ImageLayerWrapper>
-
         {/* 1. Screen */}
         <ScrollOverPack playScale={PLAY_SCALE}>
           <TweenOne

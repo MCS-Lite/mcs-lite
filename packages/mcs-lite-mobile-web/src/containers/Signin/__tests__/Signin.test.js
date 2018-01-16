@@ -19,7 +19,7 @@ it('should renders <Signin> correctly with errorMessage', () => {
     <Signin
       getMessages={R.identity}
       tryEnter={() => {}}
-      errorMessage={'errorMessage'}
+      errorMessage="errorMessage"
     />,
   );
 

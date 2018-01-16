@@ -26,7 +26,7 @@ const StyledToast = styled(Toast)`
   }
 `;
 
-const RestartNotification = ({ onClick, getMessages: t }) =>
+const RestartNotification = ({ onClick, getMessages: t }) => (
   <Container>
     <Fixed>
       <Transition
@@ -35,16 +35,13 @@ const RestartNotification = ({ onClick, getMessages: t }) =>
         leave={{ translateY: -10, opacity: 0.5 }}
       >
         <StyledToast key="StyledToast" kind="warning">
-          <div>
-            {t('restartRequired')}
-          </div>
-          <A onClick={onClick}>
-            {t('restart')}
-          </A>
+          <div>{t('restartRequired')}</div>
+          <A onClick={onClick}>{t('restart')}</A>
         </StyledToast>
       </Transition>
     </Fixed>
-  </Container>;
+  </Container>
+);
 
 RestartNotification.displayName = 'RestartNotification';
 RestartNotification.propTypes = {

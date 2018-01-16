@@ -20,20 +20,19 @@ export const Overlay = styled.div`
 `;
 
 const Dialog = ({ onHide, show, children, ...otherProps }) =>
-  show &&
-  <Portal>
-    <Transition
-      component={false}
-      enter={{ opacity: 1 }}
-      leave={{ opacity: 0.5 }}
-    >
-      <Overlay key="dialog" {...otherProps}>
-        <ClickOutside onClick={onHide}>
-          {children}
-        </ClickOutside>
-      </Overlay>
-    </Transition>
-  </Portal>;
+  show && (
+    <Portal>
+      <Transition
+        component={false}
+        enter={{ opacity: 1 }}
+        leave={{ opacity: 0.5 }}
+      >
+        <Overlay key="dialog" {...otherProps}>
+          <ClickOutside onClick={onHide}>{children}</ClickOutside>
+        </Overlay>
+      </Transition>
+    </Portal>
+  );
 
 Dialog.propTypes = {
   children: PropTypes.node.isRequired,

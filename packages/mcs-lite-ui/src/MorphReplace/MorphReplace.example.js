@@ -35,7 +35,7 @@ storiesOf('MorphReplace', module).add(
     text: '',
     inline: true,
     propTables: [MorphReplace],
-  })(() =>
+  })(() => (
     <div>
       <StatefulMorphReplace
         from={<Icons.IconMenu />}
@@ -54,6 +54,6 @@ storiesOf('MorphReplace', module).add(
         from={<Icons.IconLoading />}
         to={<Icons.IconDone />}
       />
-    </div>,
-  ),
+    </div>
+  )),
 );

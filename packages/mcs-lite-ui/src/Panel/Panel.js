@@ -13,7 +13,8 @@ const Panel = styled.div`
     height: 50px;
   }
 
-  > main, > footer {
+  > main,
+  > footer {
     padding: 20px;
   }
 `;

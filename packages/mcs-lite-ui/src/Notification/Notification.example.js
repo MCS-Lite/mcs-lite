@@ -11,21 +11,19 @@ storiesOf('Notification', module)
     withInfo({
       text: '',
       inline: true,
-    })(() =>
-      <Notification>
-        Do you want to go to Enalish version website?
-      </Notification>,
-    ),
+    })(() => (
+      <Notification>Do you want to go to Enalish version website?</Notification>
+    )),
   )
   .add(
     'With feedbck Button component',
     withInfo({
       text: '',
       inline: true,
-    })(() =>
+    })(() => (
       <Notification>
         <P>Do you want to go to Enalish version website?</P>
         <Button>Yes, please</Button>
-      </Notification>,
-    ),
+      </Notification>
+    )),
   );

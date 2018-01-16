@@ -62,14 +62,14 @@ export const actions = {
 function fetchDeviceListCycle(sources) {
   const accessToken$ = accessTokenSelector$(sources.STATE);
 
-  const request$ = sources.ACTION
-    .filter(action => action.type === FETCH_DEVICE_LIST)
-    .combineLatest(accessToken$, (action, accessToken) => ({
-      url: '/api/devices',
-      method: 'GET',
-      headers: { Authorization: `Bearer ${accessToken}` },
-      category: FETCH_DEVICE_LIST,
-    }));
+  const request$ = sources.ACTION.filter(
+    action => action.type === FETCH_DEVICE_LIST,
+  ).combineLatest(accessToken$, (action, accessToken) => ({
+    url: '/api/devices',
+    method: 'GET',
+    headers: { Authorization: `Bearer ${accessToken}` },
+    category: FETCH_DEVICE_LIST,
+  }));
 
   const response$ = sources.HTTP.select(FETCH_DEVICE_LIST).switchMap(success);
 
@@ -88,11 +88,14 @@ function fetchDeviceListCycle(sources) {
 function fetchDeviceDetailCycle(sources) {
   const accessToken$ = accessTokenSelector$(sources.STATE);
 
-  const payload$ = sources.ACTION
-    .filter(action => action.type === FETCH_DEVICE_DETAIL)
-    .pluck('payload');
+  const payload$ = sources.ACTION.filter(
+    action => action.type === FETCH_DEVICE_DETAIL,
+  ).pluck('payload');
   const deviceId$ = payload$.pluck('deviceId').distinctUntilChanged();
-  const refetch$ = payload$.pluck('isForce').filter(exist).startWith(true);
+  const refetch$ = payload$
+    .pluck('isForce')
+    .filter(exist)
+    .startWith(true);
 
   const request$ = Observable.combineLatest(
     deviceId$,

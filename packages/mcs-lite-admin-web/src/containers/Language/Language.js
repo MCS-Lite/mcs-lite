@@ -26,21 +26,24 @@ const Wrapper = styled.div`
   }
 `;
 
-const Language = ({ locale, getMessages: t }) =>
+const Language = ({ locale, getMessages: t }) => (
   <div>
-    <Helmet><title>{t('switch')}</title></Helmet>
+    <Helmet>
+      <title>{t('switch')}</title>
+    </Helmet>
     <DashboardTitle title={t('switch')} />
     <DashboardDesc>{t('select')}</DashboardDesc>
 
     <Wrapper>
-      {LOCALES.map(({ id, children }) =>
+      {LOCALES.map(({ id, children }) => (
         <Link key={id} to={updateLocale(id)}>
           <input type="radio" value={id} checked={id === locale} readOnly />
           {children}
-        </Link>,
-      )}
+        </Link>
+      ))}
     </Wrapper>
-  </div>;
+  </div>
+);
 
 Language.displayName = 'Language';
 Language.propTypes = {

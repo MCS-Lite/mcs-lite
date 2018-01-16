@@ -70,7 +70,11 @@ it('should return correct tab value', () => {
   expect(fetchMock).toHaveBeenCalledWith(DEFAULT_TAB_VALUE);
 
   // After click last tab
-  wrapper.find(TabItem).last().props().onClick({}, 'wot');
+  wrapper
+    .find(TabItem)
+    .last()
+    .props()
+    .onClick({}, 'wot');
   expect(fetchMock).toHaveBeenCalledWith('wot');
   expect(fetchMock).toHaveBeenCalledTimes(2);
 });
@@ -96,7 +100,10 @@ it('should handle onCodeMirrorChange', () => {
   expect(mockFn).not.toHaveBeenCalled();
 
   // After click last tab
-  wrapper.find(StyledLoadableCodeMirror).props().onChange(123);
+  wrapper
+    .find(StyledLoadableCodeMirror)
+    .props()
+    .onChange(123);
   expect(mockFn).toHaveBeenCalledWith({ data: 123, type: DEFAULT_TAB_VALUE });
   expect(mockFn).toHaveBeenCalledTimes(1);
 });
@@ -122,7 +129,10 @@ it('should handle onSaveClick', () => {
   expect(mockFn).not.toHaveBeenCalled();
 
   // After click last tab
-  wrapper.find(StyledButton).props().onClick({});
+  wrapper
+    .find(StyledButton)
+    .props()
+    .onClick({});
   expect(mockFn).toHaveBeenCalledWith(DEFAULT_TAB_VALUE, 'save.success');
   expect(mockFn).toHaveBeenCalledTimes(1);
 });
@@ -148,7 +158,10 @@ it('should handle onSubmit', () => {
   expect(mockFn).not.toHaveBeenCalled();
 
   // After click last tab
-  wrapper.find(DialogConfirm).props().onSubmit({});
+  wrapper
+    .find(DialogConfirm)
+    .props()
+    .onSubmit({});
   expect(mockFn).toHaveBeenCalledWith('reset.success');
   expect(mockFn).toHaveBeenCalledTimes(1);
 });

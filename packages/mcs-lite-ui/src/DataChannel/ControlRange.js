@@ -35,7 +35,7 @@ export const LabelItem = styled.div`
   overflow: hidden;
 
   &::before {
-    content: "";
+    content: '';
     border-right-width: 1px;
     border-right-style: solid;
     border-right-color: ${props => props.theme.color.grayDark};
@@ -54,8 +54,9 @@ export const Value = styled(P)`
 `;
 
 export const InputWrapper = styled.div`
-  padding: 0 ${props =>
-    `${props.labels.length <= 2 ? 0 : 100 / props.labels.length / 2 - 3}%`};
+  padding: 0
+    ${props =>
+      `${props.labels.length <= 2 ? 0 : 100 / props.labels.length / 2 - 3}%`};
 `;
 
 const ControlRange = ({
@@ -72,9 +73,11 @@ const ControlRange = ({
   return (
     <Container {...otherProps}>
       <LabelWrapper labels={labels}>
-        {labels.map(e =>
-          <LabelItem key={e}><P color="grayBase">{e}</P></LabelItem>,
-        )}
+        {labels.map(e => (
+          <LabelItem key={e}>
+            <P color="grayBase">{e}</P>
+          </LabelItem>
+        ))}
       </LabelWrapper>
 
       <InputWrapper labels={labels}>

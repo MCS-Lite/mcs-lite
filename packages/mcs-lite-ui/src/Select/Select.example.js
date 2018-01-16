@@ -28,7 +28,7 @@ storiesOf('Select', module)
     withInfo({
       text: 'React controlled component',
       inline: true,
-    })(() =>
+    })(() => (
       <Select
         value={2}
         readOnly
@@ -36,15 +36,15 @@ storiesOf('Select', module)
           { value: 1, children: 'value 1' },
           { value: 2, children: 'value 2' },
         ]}
-      />,
-    ),
+      />
+    )),
   )
   .add(
     'With kind props',
     withInfo({
       text: '',
       inline: true,
-    })(() =>
+    })(() => (
       <Select
         value={2}
         readOnly
@@ -53,8 +53,8 @@ storiesOf('Select', module)
           { value: 1, children: 'value 1' },
           { value: 2, children: 'value 2' },
         ]}
-      />,
-    ),
+      />
+    )),
   )
   .add(
     'With disabled props',

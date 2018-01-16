@@ -68,7 +68,7 @@ const DataChannelCard = ({
   subtitle,
   description,
   ...otherProps
-}) =>
+}) => (
   <Wrapper {...otherProps}>
     <Header>{header}</Header>
     <Body>{children}</Body>
@@ -76,12 +76,14 @@ const DataChannelCard = ({
       <StyledHeading level={4}>{title}</StyledHeading>
       <StyledSmall>{subtitle}</StyledSmall>
       {isString(description) && <StyledHr />}
-      {isString(description) &&
+      {isString(description) && (
         <Description>
           <TextTruncate line={2} truncateText=" ..." text={description} />
-        </Description>}
+        </Description>
+      )}
     </Footer>
-  </Wrapper>;
+  </Wrapper>
+);
 
 DataChannelCard.displayName = 'DataChannelCard';
 DataChannelCard.propTypes = {

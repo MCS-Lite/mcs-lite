@@ -10,13 +10,11 @@ storiesOf('LandingHeader', module)
     withInfo({
       text: '',
       inline: true,
-    })(() =>
+    })(() => (
       <LandingHeader>
-        <div>
-          Content
-        </div>
-      </LandingHeader>,
-    ),
+        <div>Content</div>
+      </LandingHeader>
+    )),
   )
   .add(
     'With offset props',
@@ -24,34 +22,32 @@ storiesOf('LandingHeader', module)
       text:
         'The **scrollTop** value of the document/window to get the shadow style.',
       inline: true,
-    })(() =>
-      <LandingHeader offset={160}>
-        offset 160
-      </LandingHeader>,
-    ),
+    })(() => <LandingHeader offset={160}>offset 160</LandingHeader>),
   )
   .add(
     'With Nav and NavItem',
     withInfo({
       text: 'icon',
       inline: true,
-    })(() =>
+    })(() => (
       <LandingHeader>
         <Nav>
-          <NavItem><IconMenu size={24} /></NavItem>
+          <NavItem>
+            <IconMenu size={24} />
+          </NavItem>
           <NavItem>Nav Item 1</NavItem>
           <NavItem active>Nav Item 2 (active)</NavItem>
           <NavItem disabled>Nav Item 3 (disabled)</NavItem>
         </Nav>
-      </LandingHeader>,
-    ),
+      </LandingHeader>
+    )),
   )
   .add(
     'NavItemDropdown',
     withInfo({
       text: 'items = <MenuItem>',
       inline: true,
-    })(() =>
+    })(() => (
       <LandingHeader>
         <Nav>
           <NavItemDropdown
@@ -63,15 +59,15 @@ storiesOf('LandingHeader', module)
             Language
           </NavItemDropdown>
         </Nav>
-      </LandingHeader>,
-    ),
+      </LandingHeader>
+    )),
   )
   .add(
     'NavItemBurger',
     withInfo({
       text: 'items = <NavItem>',
       inline: true,
-    })(() =>
+    })(() => (
       <LandingHeader>
         <Nav>
           <NavItemBurger
@@ -89,6 +85,6 @@ storiesOf('LandingHeader', module)
             children
           </NavItemBurger>
         </Nav>
-      </LandingHeader>,
-    ),
+      </LandingHeader>
+    )),
   );

@@ -43,9 +43,10 @@ export const actions = {
 const DELAY = 2500;
 
 function addToastCycle(sources) {
-  const key$ = sources.ACTION
-    .filter(action => action.type === ADD_TOAST)
-    .pluck('payload', 'key');
+  const key$ = sources.ACTION.filter(action => action.type === ADD_TOAST).pluck(
+    'payload',
+    'key',
+  );
 
   const action$ = key$.concatMap(key =>
     Observable.of(removeToast(key)).let(sources.Time.delay(DELAY)),

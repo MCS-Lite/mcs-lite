@@ -25,7 +25,7 @@ export const Item = styled.div`
 
 class Picker extends React.Component {
   static propTypes = {
-    value: PropTypes.number.isRequired, // index
+    value: PropTypes.number, // index
     onChange: PropTypes.func, // (index: number, props: object) => void
     labels: PropTypes.arrayOf(
       PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
@@ -114,11 +114,11 @@ class Picker extends React.Component {
         options={{ touchAction: 'pan-x' }}
       >
         <ItemWrapper style={{ marginTop: distance }}>
-          {labels.map((label, index) =>
+          {labels.map((label, index) => (
             <Item key={label} active={calcIndexByDistance(distance) === index}>
               {label}
-            </Item>,
-          )}
+            </Item>
+          ))}
         </ItemWrapper>
       </Hammer>
     );

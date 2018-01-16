@@ -25,11 +25,11 @@ storiesOf('Textarea', module)
     withInfo({
       text: '使用內建 kind props 樣式。',
       inline: true,
-    })(() =>
+    })(() => (
       <Wrapper>
-        {kindList.map(key =>
-          <Textarea key={key} kind={key} placeholder={key} />,
-        )}
-      </Wrapper>,
-    ),
+        {kindList.map(key => (
+          <Textarea key={key} kind={key} placeholder={key} />
+        ))}
+      </Wrapper>
+    )),
   );

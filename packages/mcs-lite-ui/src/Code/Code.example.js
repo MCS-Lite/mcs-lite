@@ -9,7 +9,7 @@ storiesOf('Code', module)
     withInfo({
       text: 'https://github.com/conorhastings/react-syntax-highlighter#props',
       inline: true,
-    })(() =>
+    })(() => (
       <Code>
         {`var data = {
   datapoints:
@@ -26,15 +26,15 @@ $.ajax({
 .done(function(data){
   // your content
 })`}
-      </Code>,
-    ),
+      </Code>
+    )),
   )
   .add(
     'With language props',
     withInfo({
       text: '["javascript", "cpp", "arduino"]',
       inline: true,
-    })(() =>
+    })(() => (
       <Code language="arduino">
         {`include <HttpClient.h>
 include <EthernetClient.h>
@@ -57,6 +57,6 @@ content.println("Host: api.mediatek.com");
 content.println("deviceKey: Cio34Lj7Na5RmQXj");
 content.print("Content-Length: ");
 content.println(dataLength);`}
-      </Code>,
-    ),
+      </Code>
+    )),
   );

@@ -17,6 +17,9 @@ it('should handle onClick', () => {
   expect(mockOnClick).not.toHaveBeenCalled();
 
   // After clicking
-  wrapper.find(Item).props().onClick('e');
+  wrapper
+    .find(Item)
+    .props()
+    .onClick('e');
   expect(mockOnClick).toHaveBeenCalledWith('e', 123);
 });

@@ -3,13 +3,14 @@ import React from 'react';
 import { IntlProvider as ReactIntlProvider } from 'react-intl';
 import translation from 'mcs-lite-translation/lib/mcs-lite-admin-web.json';
 
-const IntlProvider = ({ locale, defaultLocale, ...otherProps }) =>
+const IntlProvider = ({ locale, defaultLocale, ...otherProps }) => (
   <ReactIntlProvider
     {...otherProps}
     defaultLocale={defaultLocale}
     locale={locale}
     messages={translation[locale]}
-  />;
+  />
+);
 
 IntlProvider.displayName = 'IntlProvider';
 IntlProvider.propTypes = {

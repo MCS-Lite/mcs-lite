@@ -16,9 +16,8 @@ const DURATION = 600;
 const EASE = 'easeInOutQuart';
 const DELAY = 450;
 
-const ImageCustom = () =>
+const ImageCustom = () => (
   <ImageLayerWrapper>
-
     {/* 1. Background image */}
     <div>
       <BackgroundImage
@@ -97,6 +96,7 @@ const ImageCustom = () =>
         component={SVGSearch}
       />
     </ScrollOverPack>
-  </ImageLayerWrapper>;
+  </ImageLayerWrapper>
+);
 
 export default ImageCustom;

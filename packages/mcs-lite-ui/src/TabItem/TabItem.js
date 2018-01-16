@@ -26,8 +26,7 @@ export const Item = styled.div`
   color: ${mapColorByActive};
   font-size: ${props => props.theme.fontSize.p};
   padding: 0 15px;
-  transition:
-    border-color cubic-bezier(0.47, 0, 0.75, 0.72) 0.1s,
+  transition: border-color cubic-bezier(0.47, 0, 0.75, 0.72) 0.1s,
     color cubic-bezier(0.47, 0, 0.75, 0.72) 0.3s;
   cursor: pointer;
 

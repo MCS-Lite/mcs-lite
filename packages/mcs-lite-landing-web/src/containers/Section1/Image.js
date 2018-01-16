@@ -15,7 +15,7 @@ const LoadabChart = Loadable({
   loading: () => null,
 });
 
-const Image = ({ breakpoints }) =>
+const Image = ({ breakpoints }) => (
   <ImageLayerWrapper>
     {/* 1. Background Image for Desktop & Mobile */}
     <div>
@@ -30,14 +30,17 @@ const Image = ({ breakpoints }) =>
     {/* 2. LazyLoad Chart for Desktop */}
     <MediaQuery minWidth={breakpoints.sm} values={{ width: breakpoints.lg }}>
       {matches =>
-        matches &&
-        <ChartWrapper>
-          <LazyloadOnce>
-            <LoadabChart />
-          </LazyloadOnce>
-        </ChartWrapper>}
+        matches && (
+          <ChartWrapper>
+            <LazyloadOnce>
+              <LoadabChart />
+            </LazyloadOnce>
+          </ChartWrapper>
+        )
+      }
     </MediaQuery>
-  </ImageLayerWrapper>;
+  </ImageLayerWrapper>
+);
 
 Image.displayName = 'Image';
 Image.propTypes = {

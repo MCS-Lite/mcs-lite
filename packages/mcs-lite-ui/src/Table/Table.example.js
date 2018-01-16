@@ -8,7 +8,7 @@ storiesOf('Table', module).add(
   withInfo({
     text: '',
     inline: true,
-  })(() =>
+  })(() => (
     <Table style={{ backgroundColor: 'white' }}>
       <thead>
         <tr>
@@ -27,6 +27,6 @@ storiesOf('Table', module).add(
           <td>@evenchange4</td>
         </tr>
       </tbody>
-    </Table>,
-  ),
+    </Table>
+  )),
 );

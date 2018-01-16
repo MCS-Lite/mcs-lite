@@ -11,9 +11,7 @@ it('should renders <DashboardTitle> correctly without children', () => {
 
 it('should renders <DashboardTitle> correctly with children', () => {
   const wrapper = shallow(
-    <DashboardTitle title="title">
-      children
-    </DashboardTitle>,
+    <DashboardTitle title="title">children</DashboardTitle>,
   );
 
   expect(toJson(wrapper)).toMatchSnapshot();

@@ -8,9 +8,7 @@ import SectionRow from '../SectionRow';
 it('should renders <SectionRow> correctly', () => {
   const wrapper = mount(
     <ThemeProvider theme={landingTheme}>
-      <SectionRow>
-        children
-      </SectionRow>
+      <SectionRow>children</SectionRow>
     </ThemeProvider>,
   );
 

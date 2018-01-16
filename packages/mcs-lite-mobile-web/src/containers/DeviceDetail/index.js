@@ -23,8 +23,9 @@ export const mapDispatchToProps = {
 };
 
 const protocol = /https/.test(window.location.protocol) ? 'wss' : 'ws';
-const wsHost = `${protocol}://${window.location
-  .hostname}:${window.SOCKET_PORT}`;
+const wsHost = `${protocol}://${window.location.hostname}:${
+  window.SOCKET_PORT
+}`;
 
 export default compose(
   connect(mapStateToProps, mapDispatchToProps),

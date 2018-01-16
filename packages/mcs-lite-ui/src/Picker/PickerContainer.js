@@ -34,8 +34,11 @@ export const Overlay = styled.div`
   height: 100%;
   left: 0;
   right: 0;
-  background-image:
-    linear-gradient(to bottom, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.6)),
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.95),
+      rgba(255, 255, 255, 0.6)
+    ),
     linear-gradient(to top, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.6));
   background-position: top, bottom;
   background-size: 100% 32px;
@@ -43,12 +46,13 @@ export const Overlay = styled.div`
   pointer-events: none;
 `;
 
-const PickerContainer = ({ children, ...otherProps }) =>
+const PickerContainer = ({ children, ...otherProps }) => (
   <Container {...otherProps}>
     {children}
     <Indicator />
     <Overlay />
-  </Container>;
+  </Container>
+);
 
 PickerContainer.displayName = 'PickerContainer';
 PickerContainer.propTypes = {

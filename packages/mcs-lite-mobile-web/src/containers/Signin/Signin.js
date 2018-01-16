@@ -27,11 +27,14 @@ class Signin extends React.Component {
 
     return (
       <Layout>
-        <Helmet><title>{t('signin')}</title></Helmet>
+        <Helmet>
+          <title>{t('signin')}</title>
+        </Helmet>
 
         <Logo />
-        {errorMessage &&
-          <ErrorMessage color="error">{errorMessage}</ErrorMessage>}
+        {errorMessage && (
+          <ErrorMessage color="error">{errorMessage}</ErrorMessage>
+        )}
         <StyledHr>{t('welcome')}</StyledHr>
 
         <Form method="post" action="/oauth/login/mobile">

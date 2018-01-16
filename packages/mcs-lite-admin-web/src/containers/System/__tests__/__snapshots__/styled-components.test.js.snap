@@ -67,7 +67,6 @@ Array [
             className="c0"
             component="button"
             disabled={false}
-            innerRef={undefined}
             kind="primary"
             round={false}
             size="normal"
@@ -95,7 +94,6 @@ Array [
                     <P
                         className="c3"
                         color="primary"
-                        innerRef={undefined}
                     />
                 </Styled(P)>
             </loading>
@@ -120,7 +118,6 @@ Array [
                     <P
                         className="c3"
                         color="primary"
-                        innerRef={undefined}
                     />
                 </Styled(P)>
             </loading>

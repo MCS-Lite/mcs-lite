@@ -2,9 +2,9 @@
 
 ex:
 
-*   root
-*   mcs-lite-ui
-*   mcs-lite-landing-web
+* root
+* mcs-lite-ui
+* mcs-lite-landing-web
 
 **Code to reproduce the issue:**
 

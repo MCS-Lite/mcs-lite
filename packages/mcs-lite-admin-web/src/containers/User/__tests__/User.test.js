@@ -93,7 +93,12 @@ it('should render with ADD_USER_TYPE_BATCH form', () => {
     },
   });
   expect(
-    toJson(wrapper.find(StyledCommonDialog).first().find(FormGroup)),
+    toJson(
+      wrapper
+        .find(StyledCommonDialog)
+        .first()
+        .find(FormGroup),
+    ),
   ).toMatchSnapshot(
     'should render with ADD_USER_TYPE_BATCH form - ADD_USER_TYPE_ONE',
   );
@@ -106,7 +111,12 @@ it('should render with ADD_USER_TYPE_BATCH form', () => {
     },
   });
   expect(
-    toJson(wrapper.find(StyledCommonDialog).first().find(FormGroup)),
+    toJson(
+      wrapper
+        .find(StyledCommonDialog)
+        .first()
+        .find(FormGroup),
+    ),
   ).toMatchSnapshot(
     'should render with ADD_USER_TYPE_BATCH form - ADD_USER_TYPE_BATCH',
   );
@@ -188,13 +198,23 @@ it('should render with ACCOUNT_STATUS form', () => {
   // After change tab 0 (CHANGE_PASSWORD)
   tabs.at(0).simulate('click', {}, CHANGE_PASSWORD);
   expect(
-    toJson(wrapper.find(StyledCommonDialog).at(1).find(FormGroup)),
+    toJson(
+      wrapper
+        .find(StyledCommonDialog)
+        .at(1)
+        .find(FormGroup),
+    ),
   ).toMatchSnapshot('should render with ACCOUNT_STATUS form - CHANGE_PASSWORD');
 
   // After change tab 1
   tabs.at(1).simulate('click', {}, ACCOUNT_STATUS);
   expect(
-    toJson(wrapper.find(StyledCommonDialog).at(1).find(FormGroup)),
+    toJson(
+      wrapper
+        .find(StyledCommonDialog)
+        .at(1)
+        .find(FormGroup),
+    ),
   ).toMatchSnapshot('should render with ACCOUNT_STATUS form - ACCOUNT_STATUS');
 });
 
@@ -226,7 +246,9 @@ it('should return correct isAddDialogShow$', () => {
   expect(getAddDialog(wrapper).props().show).toBe(true);
 
   // After onHide
-  getAddDialog(wrapper).props().onHide(mockEvent);
+  getAddDialog(wrapper)
+    .props()
+    .onHide(mockEvent);
   wrapper.update();
   expect(mockEvent.preventDefault).toHaveBeenCalled();
   expect(getAddDialog(wrapper).props().show).toBe(false);
@@ -274,7 +296,9 @@ it('should return correct isEditDialogShow$', () => {
   expect(getEditDialog(wrapper).props().show).toBe(true);
 
   // After onHide
-  getEditDialog(wrapper).props().onHide(mockEvent);
+  getEditDialog(wrapper)
+    .props()
+    .onHide(mockEvent);
   wrapper.update();
   expect(mockEvent.preventDefault).toHaveBeenCalled();
   expect(getEditDialog(wrapper).props().show).toBe(false);
@@ -495,7 +519,9 @@ it('should handle email onBlur', done => {
   expect(toJson(getInputEmail())).toMatchSnapshot();
 
   // After blur
-  getInputEmail().props().onBlur();
+  getInputEmail()
+    .props()
+    .onBlur();
   // TODO: do not use setTimeout
   setTimeout(() => {
     wrapper.update();

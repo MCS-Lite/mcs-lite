@@ -24,7 +24,7 @@ const DataPointAreaChart = ({
   isAnimationActive,
   XAxisProps,
   tooltipProps,
-}) =>
+}) => (
   <ResponsiveContainer>
     <AreaChart data={data} margin={{ left: -20 }}>
       <defs>
@@ -67,7 +67,8 @@ const DataPointAreaChart = ({
         fill="url(#areaGradient)"
       />
     </AreaChart>
-  </ResponsiveContainer>;
+  </ResponsiveContainer>
+);
 
 DataPointAreaChart.displayName = 'DataPointAreaChart';
 DataPointAreaChart.propTypes = {
@@ -79,8 +80,8 @@ DataPointAreaChart.propTypes = {
     }),
   ).isRequired,
   theme: PropTypes.object.isRequired,
-  kind: PropTypes.string.isRequired,
-  type: PropTypes.string.isRequired,
+  kind: PropTypes.string,
+  type: PropTypes.string,
   isAnimationActive: PropTypes.bool,
   XAxisProps: PropTypes.shape({
     tickFormatter: PropTypes.func,

@@ -32,7 +32,7 @@ const LoadableSVGGitHub = Loadable({
   loading: () => <FakeIcon>GitHub</FakeIcon>,
 });
 
-const Footer = ({ getMessages: t }) =>
+const Footer = ({ getMessages: t }) => (
   <Container>
     <Page width={`${PAGE_WIDTH}px`}>
       <Row>
@@ -58,12 +58,15 @@ const Footer = ({ getMessages: t }) =>
                 </LazyloadOnce>
               </A>
             </IconWrapper>
-            <P color="white">© {getCurrentYear()} {t('desc')}</P>
+            <P color="white">
+              © {getCurrentYear()} {t('desc')}
+            </P>
           </RWDWrapper>
         </StyledColumn>
       </Row>
     </Page>
-  </Container>;
+  </Container>
+);
 
 Footer.displayName = 'Footer';
 Footer.propTypes = {

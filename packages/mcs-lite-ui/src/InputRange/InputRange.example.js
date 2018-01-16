@@ -25,9 +25,9 @@ storiesOf('InputRange', module)
     withInfo({
       text: '',
       inline: true,
-    })(() =>
+    })(() => (
       <Wrapper>
         {kindList.map(key => <InputRange key={key} kind={key} />)}
-      </Wrapper>,
-    ),
+      </Wrapper>
+    )),
   );

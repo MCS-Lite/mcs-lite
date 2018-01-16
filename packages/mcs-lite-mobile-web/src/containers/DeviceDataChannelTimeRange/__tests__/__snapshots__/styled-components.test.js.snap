@@ -22,14 +22,15 @@ Array [
   background-color: #FFFFFF;
   border-color: #D1D2D3;
   font-size: 1rem;
+  -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
-  -ms-flex-grow: 1;
+  -ms-flex-positive: 1;
   flex-grow: 1;
   -webkit-flex-shrink: 0;
-  -ms-flex-shrink: 0;
+  -ms-flex-negative: 0;
   flex-shrink: 0;
   -webkit-flex-basis: auto;
-  -ms-flex-basis: auto;
+  -ms-flex-preferred-size: auto;
   flex-basis: auto;
 }
 
@@ -60,14 +61,15 @@ Array [
   background-color: #FFFFFF;
   border-color: #D1D2D3;
   font-size: 1rem;
+  -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
-  -ms-flex-grow: 1;
+  -ms-flex-positive: 1;
   flex-grow: 1;
   -webkit-flex-shrink: 0;
-  -ms-flex-shrink: 0;
+  -ms-flex-negative: 0;
   flex-shrink: 0;
   -webkit-flex-basis: auto;
-  -ms-flex-basis: auto;
+  -ms-flex-preferred-size: auto;
   flex-basis: auto;
 }
 

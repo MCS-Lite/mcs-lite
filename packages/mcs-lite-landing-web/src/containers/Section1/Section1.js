@@ -11,14 +11,16 @@ import {
 } from './styled-components';
 import Image from './Image';
 
-const Section1 = ({ getMessages: t }) =>
+const Section1 = ({ getMessages: t }) => (
   <StyledSectionRow>
     <Column xs={12} md={6}>
       <RWDCenterWrapper>
         <Heading level={1}>{t('title')}</Heading>
 
         <SpaceTop height={20}>
-          <Heading level={4} color="grayBase">{t('desc')}</Heading>
+          <Heading level={4} color="grayBase">
+            {t('desc')}
+          </Heading>
         </SpaceTop>
 
         <SpaceTop height={40}>
@@ -30,7 +32,8 @@ const Section1 = ({ getMessages: t }) =>
     <StyledImageColumn xs={12} md={6}>
       <Image />
     </StyledImageColumn>
-  </StyledSectionRow>;
+  </StyledSectionRow>
+);
 
 Section1.displayName = 'Section1';
 Section1.propTypes = {

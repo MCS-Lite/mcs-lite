@@ -24,11 +24,13 @@ storiesOf('Toast', module)
     withInfo({
       text: '',
       inline: true,
-    })(() =>
+    })(() => (
       <DemoWrapper>
-        {kindList.map(key =>
-          <Toast key={key} kind={key}>{key} - You have delete the item.</Toast>,
-        )}
-      </DemoWrapper>,
-    ),
+        {kindList.map(key => (
+          <Toast key={key} kind={key}>
+            {key} - You have delete the item.
+          </Toast>
+        ))}
+      </DemoWrapper>
+    )),
   );

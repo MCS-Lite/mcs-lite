@@ -37,6 +37,9 @@ it('should return correctly payload when clicking signout', () => {
   expect(signoutMock).not.toHaveBeenCalled();
 
   // After clicking
-  wrapper.find(FlatButton).last().simulate('click');
+  wrapper
+    .find(FlatButton)
+    .last()
+    .simulate('click');
   expect(signoutMock).toHaveBeenCalled();
 });

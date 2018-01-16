@@ -131,7 +131,10 @@ it('should handle signout', () => {
   expect(mockFn).not.toHaveBeenCalled();
 
   // After Click
-  wrapper.find(NavItemControl).last().simulate('click');
+  wrapper
+    .find(NavItemControl)
+    .last()
+    .simulate('click');
   expect(mockFn).toHaveBeenCalledWith('confirm');
 });
 

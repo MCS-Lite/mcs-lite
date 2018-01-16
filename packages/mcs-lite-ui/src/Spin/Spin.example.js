@@ -15,9 +15,9 @@ storiesOf('Spin', module).add(
   SVG Icon 請使用偶數（Safari）
 `,
     inline: true,
-  })(() =>
+  })(() => (
     <Spin>
       <ContentWrapper>Content</ContentWrapper>
-    </Spin>,
-  ),
+    </Spin>
+  )),
 );

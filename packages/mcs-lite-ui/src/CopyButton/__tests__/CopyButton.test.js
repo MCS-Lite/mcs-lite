@@ -21,9 +21,7 @@ const jestRxAssert = (actual, expected) => {
 it('should handle onClick', done => {
   const wrapper = mount(
     <ThemeProvider theme={theme}>
-      <CopyButton text={123}>
-        Copy
-      </CopyButton>
+      <CopyButton text={123}>Copy</CopyButton>
     </ThemeProvider>,
   );
 

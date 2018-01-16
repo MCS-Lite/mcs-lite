@@ -18,7 +18,7 @@ TopBarProgress.config({
   shadowColor: 'rgba(0, 0, 0, 0.2)',
 });
 
-const App = ({ toasts, isLoading, children, getMessages: t }) =>
+const App = ({ toasts, isLoading, children, getMessages: t }) => (
   <HeightContainer>
     {/* 1. Helmet */}
     <Helmet titleTemplate={`%s | ${t('titleTemplate')}`} />
@@ -28,7 +28,7 @@ const App = ({ toasts, isLoading, children, getMessages: t }) =>
 
     {/* 3. TopBarProgress && Toasts */}
     {isLoading && <TopBarProgress />}
-    {toasts.length > 0 &&
+    {toasts.length > 0 && (
       <Portal>
         <Fixed>
           <Transition
@@ -36,16 +36,18 @@ const App = ({ toasts, isLoading, children, getMessages: t }) =>
             appear={{ opacity: 0.8, translateY: -20 }}
             enter={{ opacity: 1, translateY: 0 }}
           >
-            {toasts.map(({ key, kind, children: toastChildren }) =>
+            {toasts.map(({ key, kind, children: toastChildren }) => (
               <MLToast key={key} kind={kind}>
                 {kind === 'error' && t('gerenalError')}
                 {toastChildren}
-              </MLToast>,
-            )}
+              </MLToast>
+            ))}
           </Transition>
         </Fixed>
-      </Portal>}
-  </HeightContainer>;
+      </Portal>
+    )}
+  </HeightContainer>
+);
 
 App.displayName = 'App';
 App.propTypes = {

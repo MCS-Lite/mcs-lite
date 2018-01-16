@@ -81,7 +81,7 @@ export const InputFileWrapper = styled.div`
     pointer-events: none;
   }
 
-  input[type="file"] {
+  input[type='file'] {
     opacity: 0;
     cursor: pointer;
     pointer-events: all;

@@ -42,12 +42,10 @@ exports[`should renders <SectionRow> correctly 1`] = `
             width="960px"
           >
             <Styled(RowContainer)
-              debug={undefined}
               key=".0"
             >
               <RowContainer
                 className="c2"
-                debug={undefined}
                 divisions={12}
               >
                 <section

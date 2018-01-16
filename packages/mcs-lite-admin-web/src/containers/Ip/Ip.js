@@ -26,7 +26,9 @@ class Ip extends React.Component {
 
     return (
       <div>
-        <Helmet><title>{t('mcsLiteIpConnection')}</title></Helmet>
+        <Helmet>
+          <title>{t('mcsLiteIpConnection')}</title>
+        </Helmet>
         <DashboardTitle title={t('mcsLiteIpConnection')} />
         <DashboardDesc>{t('description')}</DashboardDesc>
 
@@ -37,16 +39,21 @@ class Ip extends React.Component {
             </tr>
           </thead>
           <tbody>
-            {service.map(ip => <tr key={ip}><td>{ip}</td></tr>)}
+            {service.map(ip => (
+              <tr key={ip}>
+                <td>{ip}</td>
+              </tr>
+            ))}
           </tbody>
         </Table>
 
         {isNA && <NaWrapper>{t('na')}</NaWrapper>}
 
-        {service[0] &&
+        {service[0] && (
           <a href={`//${service[0]}`} target="_blank" rel="noreferrer noopener">
             <StyledButton>{t('goToMCSLite')}</StyledButton>
-          </a>}
+          </a>
+        )}
       </div>
     );
   }

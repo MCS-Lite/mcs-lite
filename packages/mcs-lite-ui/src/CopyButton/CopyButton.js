@@ -80,23 +80,30 @@ const CopyButton = componentFromStream(props$ => {
     .withLatestFrom(text$, (status, text) => text)
     .subscribe(copyToClipboard);
 
-  return props$.combineLatest(status$, ({ children, ...otherProps }, status) =>
-    <StyledButton
-      {...omitProps(otherProps)}
-      size="small"
-      status={status}
-      onClick={onClick}
-    >
-      <div>
-        {status === DEFAULT
-          ? children
-          : <MorphReplace width={10} height={10}>
-              {status === LOADING
-                ? <IconLoading key="loading" />
-                : <IconDone key="success" />}
-            </MorphReplace>}
-      </div>
-    </StyledButton>,
+  return props$.combineLatest(
+    status$,
+    ({ children, ...otherProps }, status) => (
+      <StyledButton
+        {...omitProps(otherProps)}
+        size="small"
+        status={status}
+        onClick={onClick}
+      >
+        <div>
+          {status === DEFAULT ? (
+            children
+          ) : (
+            <MorphReplace width={10} height={10}>
+              {status === LOADING ? (
+                <IconLoading key="loading" />
+              ) : (
+                <IconDone key="success" />
+              )}
+            </MorphReplace>
+          )}
+        </div>
+      </StyledButton>
+    ),
   );
 });
 

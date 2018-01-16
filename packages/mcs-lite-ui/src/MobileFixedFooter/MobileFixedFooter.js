@@ -10,12 +10,11 @@ export const Footer = styled.footer`
   background-color: ${props => props.theme.color.grayLight};
 `;
 
-const MobileFixedFooter = ({ children, ...otherProps }) =>
+const MobileFixedFooter = ({ children, ...otherProps }) => (
   <Footer {...otherProps}>
-    <MobileContentWrapper>
-      {children}
-    </MobileContentWrapper>
-  </Footer>;
+    <MobileContentWrapper>{children}</MobileContentWrapper>
+  </Footer>
+);
 
 MobileFixedFooter.displayName = 'MobileFixedFooter';
 MobileFixedFooter.propTypes = {

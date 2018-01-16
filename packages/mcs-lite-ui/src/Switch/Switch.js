@@ -14,7 +14,7 @@ const Switch = styled.div`
   transform-origin: 0 0;
 
   &::after {
-    content: " ";
+    content: ' ';
     position: absolute;
     width: 42px;
     height: 42px;

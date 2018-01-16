@@ -42,7 +42,9 @@ class DeviceTriggerEdit extends React.Component {
 
     return (
       <div>
-        <Helmet><title>{t('editTriggerAndAction')}</title></Helmet>
+        <Helmet>
+          <title>{t('editTriggerAndAction')}</title>
+        </Helmet>
         <MobileHeader.MobileHeader
           title={t('editTriggerAndAction')}
           leftChildren={
@@ -56,7 +58,10 @@ class DeviceTriggerEdit extends React.Component {
         />
         <main>
           <Item>
-            <P>觸發條件名稱 A觸發條件名稱 A觸發條件名稱 A觸發條件名稱 A觸發條件名稱 A觸發條件名稱 A觸發條件名稱 A</P>
+            <P>
+              觸發條件名稱 A觸發條件名稱 A觸發條件名稱 A觸發條件名稱
+              A觸發條件名稱 A觸發條件名稱 A觸發條件名稱 A
+            </P>
             <div>
               <ScaledSwitch
                 kind="primary"
@@ -67,7 +72,7 @@ class DeviceTriggerEdit extends React.Component {
           </Item>
 
           <form onSubmit={onSubmit}>
-            {isChecked &&
+            {isChecked && (
               <Transition
                 component={Body}
                 enter={{ opacity: 1, translateY: 0 }}
@@ -96,13 +101,16 @@ class DeviceTriggerEdit extends React.Component {
                     <Input placeholder="預設值：100" />
                   </InputGroup>
                 </div>
-              </Transition>}
+              </Transition>
+            )}
 
-            {isChecked &&
+            {isChecked && (
               <MobileFixedFooter>
                 <ButtonWrapper>
                   <StyledLink to={updatePathname('/account')}>
-                    <Button kind="default" block>{t('cancel')}</Button>
+                    <Button kind="default" block>
+                      {t('cancel')}
+                    </Button>
                   </StyledLink>
                   <Button
                     component="input"
@@ -111,7 +119,8 @@ class DeviceTriggerEdit extends React.Component {
                     block
                   />
                 </ButtonWrapper>
-              </MobileFixedFooter>}
+              </MobileFixedFooter>
+            )}
           </form>
         </main>
       </div>

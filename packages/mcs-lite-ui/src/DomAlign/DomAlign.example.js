@@ -14,13 +14,9 @@ class Container extends React.Component {
   render() {
     return (
       <div>
-        <div ref={this.getTarget}>
-          Target node
-        </div>
+        <div ref={this.getTarget}>Target node</div>
         <DomAlign alignConfig={alignConfig} target={this.state.target}>
-          <div>
-            Source node
-          </div>
+          <div>Source node</div>
         </DomAlign>
       </div>
     );

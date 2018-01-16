@@ -4,12 +4,11 @@ import { IntlProvider } from 'react-intl';
 import { ThemeProvider } from 'styled-components';
 import { theme } from 'mcs-lite-theme';
 
-const MockProvider = ({ children }) =>
+const MockProvider = ({ children }) => (
   <IntlProvider messages={{}} locale="en">
-    <ThemeProvider theme={theme}>
-      {children}
-    </ThemeProvider>
-  </IntlProvider>;
+    <ThemeProvider theme={theme}>{children}</ThemeProvider>
+  </IntlProvider>
+);
 
 MockProvider.propTypes = {
   children: PropTypes.node,

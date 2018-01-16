@@ -9,6 +9,15 @@ import Adapter from 'enzyme-adapter-react-16';
 // For Enzyme 3.0
 Enzyme.configure({ adapter: new Adapter() });
 
+/**
+ * Hint: mock for snapshot
+ * ref: https://github.com/storybooks/storybook/issues/1011#issuecomment-322698049
+ */
+jest.mock('@storybook/addon-info', () => ({
+  withInfo: () => storyFn => storyFn,
+  setDefaults: () => {},
+}));
+
 // For DataChannelCard component.
 jest.mock('react-text-truncate', () => 'mock-react-text-truncate');
 // For PullToRefresh/Picker component.

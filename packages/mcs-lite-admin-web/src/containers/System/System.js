@@ -87,9 +87,11 @@ const System = componentFromStream(props$ => {
     code$,
     isJSON$,
     isDialogShow$,
-    ({ getMessages: t }, tabValue, code, isJSON, isDialogShow) =>
+    ({ getMessages: t }, tabValue, code, isJSON, isDialogShow) => (
       <div>
-        <Helmet><title>{t('systemManagement')}</title></Helmet>
+        <Helmet>
+          <title>{t('systemManagement')}</title>
+        </Helmet>
         <DialogConfirm
           show={isDialogShow}
           onCancel={onCancel}
@@ -104,7 +106,7 @@ const System = componentFromStream(props$ => {
         <DashboardDesc>{t('description')}</DashboardDesc>
 
         <TabWrapper>
-          {TABS.map(value =>
+          {TABS.map(value => (
             <TabItem
               key={value}
               value={value}
@@ -112,8 +114,8 @@ const System = componentFromStream(props$ => {
               active={tabValue === value}
             >
               {value}.json
-            </TabItem>,
-          )}
+            </TabItem>
+          ))}
         </TabWrapper>
 
         <StyledLoadableCodeMirror
@@ -128,7 +130,8 @@ const System = componentFromStream(props$ => {
         <StyledButton onClick={isJSON && onSaveClick} disabled={!isJSON}>
           {t('save')}
         </StyledButton>
-      </div>,
+      </div>
+    ),
   );
 });
 

@@ -8,11 +8,11 @@ storiesOf('Panel', module).add(
   withInfo({
     text: '',
     inline: true,
-  })(() =>
+  })(() => (
     <Panel>
       <header>Panel Header (header)</header>
       <main>Panel body (main)</main>
       <footer>footer</footer>
-    </Panel>,
-  ),
+    </Panel>
+  )),
 );

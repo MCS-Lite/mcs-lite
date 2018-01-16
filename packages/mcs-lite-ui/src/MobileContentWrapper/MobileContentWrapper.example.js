@@ -13,11 +13,9 @@ storiesOf('MobileContentWrapper', module).add(
   withInfo({
     text: '',
     inline: true,
-  })(() =>
+  })(() => (
     <MobileContentWrapper>
-      <Content>
-        With max-width
-      </Content>
-    </MobileContentWrapper>,
-  ),
+      <Content>With max-width</Content>
+    </MobileContentWrapper>
+  )),
 );

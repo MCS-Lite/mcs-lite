@@ -11,14 +11,13 @@ const Wrapper = styled.div`
   background-color: ${props => props.theme.color.white};
 `;
 
-const SectionRow = ({ children, ...otherProps }) =>
+const SectionRow = ({ children, ...otherProps }) => (
   <Wrapper {...otherProps}>
     <Page width={`${PAGE_WIDTH}px`}>
-      <Row>
-        {children}
-      </Row>
+      <Row>{children}</Row>
     </Page>
-  </Wrapper>;
+  </Wrapper>
+);
 
 SectionRow.displayName = 'SectionRow';
 SectionRow.propTypes = {

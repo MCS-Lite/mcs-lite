@@ -17,11 +17,11 @@ class StatefulTabItems extends React.Component {
     const { value } = this.state;
     return (
       <div>
-        {items.map(i =>
+        {items.map(i => (
           <TabItem key={i} value={i} onClick={onChange} active={i === value}>
             {`Tab ${i}`}
-          </TabItem>,
-        )}
+          </TabItem>
+        ))}
       </div>
     );
   }
@@ -33,7 +33,7 @@ storiesOf('TabItem', module)
     withInfo({
       text: '',
       inline: true,
-    })(() =>
+    })(() => (
       <div>
         <TabItem value="key" onClick={action('onClick')}>
           TabItem
@@ -41,20 +41,24 @@ storiesOf('TabItem', module)
         <TabItem value="key" active onClick={action('onClick')}>
           Active TabItem
         </TabItem>
-      </div>,
-    ),
+      </div>
+    )),
   )
   .add(
     'With color props',
     withInfo({
       text: '',
       inline: true,
-    })(() =>
+    })(() => (
       <div>
-        <TabItem value={1} color="warning">TabItem 1</TabItem>
-        <TabItem value={2} color="warning" active>TabItem 2</TabItem>
-      </div>,
-    ),
+        <TabItem value={1} color="warning">
+          TabItem 1
+        </TabItem>
+        <TabItem value={2} color="warning" active>
+          TabItem 2
+        </TabItem>
+      </div>
+    )),
   )
   .add(
     'With state',

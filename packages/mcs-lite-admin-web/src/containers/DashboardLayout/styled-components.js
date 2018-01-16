@@ -56,8 +56,7 @@ export const Body = styled.div`
   flex-grow: 1;
   display: flex;
 
-  ${/* Remind: fixed for firefox: https://goo.gl/Rjqio3 */ ''}
-  min-height: 0;
+  ${/* Remind: fixed for firefox: https://goo.gl/Rjqio3 */ ''} min-height: 0;
 `;
 
 export const NAV_WIDTH = 150;

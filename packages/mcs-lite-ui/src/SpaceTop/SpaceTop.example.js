@@ -8,9 +8,5 @@ storiesOf('SpaceTop', module).add(
   withInfo({
     text: 'margin-top',
     inline: true,
-  })(() =>
-    <SpaceTop height={20}>
-      SpaceTop content
-    </SpaceTop>,
-  ),
+  })(() => <SpaceTop height={20}>SpaceTop content</SpaceTop>),
 );

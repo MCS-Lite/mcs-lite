@@ -17,35 +17,38 @@ const StyledCard = styled(Card)`
   padding: 8px;
 `;
 
-class RechartTooltip extends React.Component {
-  static propTypes = {
-    // ref: http://recharts.org/#/en-US/api/Tooltip
-    active: PropTypes.bool,
-    label: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-    payload: PropTypes.array, // dataPoint
-    formatter: PropTypes.func,
-    labelFormatter: PropTypes.func,
-  };
+const RechartTooltip = ({
+  active,
+  label,
+  payload,
+  formatter,
+  labelFormatter,
+}) => {
+  if (!active) return null;
 
-  static defaultProps = {
-    active: false,
-    formatter: R.identity,
-    labelFormatter: R.identity,
-  };
+  return (
+    <StyledCard>
+      <P>{formatter(payload[0].value)}</P>
+      <P color="grayBase">
+        <Small>{labelFormatter(label)}</Small>
+      </P>
+    </StyledCard>
+  );
+};
 
-  render() {
-    const { formatter, labelFormatter } = this.props;
-    if (!this.props.active) return null;
+RechartTooltip.propTypes = {
+  // ref: http://recharts.org/#/en-US/api/Tooltip
+  active: PropTypes.bool,
+  label: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+  payload: PropTypes.array, // dataPoint
+  formatter: PropTypes.func,
+  labelFormatter: PropTypes.func,
+};
 
-    return (
-      <StyledCard>
-        <P>{formatter(this.props.payload[0].value)}</P>
-        <P color="grayBase">
-          <Small>{labelFormatter(this.props.label)}</Small>
-        </P>
-      </StyledCard>
-    );
-  }
-}
+RechartTooltip.defaultProps = {
+  active: false,
+  formatter: R.identity,
+  labelFormatter: R.identity,
+};
 
 export default RechartTooltip;

@@ -10,7 +10,7 @@ storiesOf('MobileHeader', module)
     withInfo({
       text: '',
       inline: true,
-    })(() =>
+    })(() => (
       <MobileHeader
         title="Device List"
         leftChildren={
@@ -18,15 +18,15 @@ storiesOf('MobileHeader', module)
             <IconMenu />
           </MobileHeaderIcon>
         }
-      />,
-    ),
+      />
+    )),
   )
   .add(
     'With right props',
     withInfo({
       text: '',
       inline: true,
-    })(() =>
+    })(() => (
       <MobileHeader
         title="Device List"
         leftChildren={
@@ -39,6 +39,6 @@ storiesOf('MobileHeader', module)
             <IconSearch />
           </MobileHeaderIcon>
         }
-      />,
-    ),
+      />
+    )),
   );

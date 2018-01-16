@@ -16,10 +16,11 @@ export const StyledTextarea = styled(Textarea)`
   flex-grow: 1;
 `;
 
-const DisplayString = ({ value, placeholder, ...otherProps }) =>
+const DisplayString = ({ value, placeholder, ...otherProps }) => (
   <Container {...otherProps}>
     <StyledTextarea value={value} placeholder={placeholder} disabled />
-  </Container>;
+  </Container>
+);
 
 DisplayString.displayName = 'DisplayString';
 DisplayString.propTypes = {

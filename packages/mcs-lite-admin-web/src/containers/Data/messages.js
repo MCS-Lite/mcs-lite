@@ -8,7 +8,8 @@ const messages = defineMessages({
   },
   'Data.description': {
     id: 'Data.description',
-    defaultMessage: '可以清除 MCS Lite 所有資料，包含使用者清單以及測試裝置等等。',
+    defaultMessage:
+      '可以清除 MCS Lite 所有資料，包含使用者清單以及測試裝置等等。',
   },
   'Data.reset': {
     id: 'Data.reset',

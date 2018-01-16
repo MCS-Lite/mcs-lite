@@ -19,11 +19,7 @@ it('should render components correctly', () => {
 });
 
 it('should render LazyloadIcon correctly', () => {
-  const wrapper = shallow(
-    <LazyloadIcon>
-      children
-    </LazyloadIcon>,
-  );
+  const wrapper = shallow(<LazyloadIcon>children</LazyloadIcon>);
 
   expect(toJson(wrapper)).toMatchSnapshot();
 });

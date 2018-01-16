@@ -30,20 +30,22 @@ const DashboardLayout = ({
   signout,
   children,
   getMessages: t,
-}) =>
+}) => (
   <Container>
     <Header>
       <StyledLogo />
       <HeaderItemWrapper>
-        {isStarted
-          ? <HeaderItem onClick={() => stop(t('stop.success'))}>
-              <IconStop size={18} />
-              <P>{t('stop')}</P>
-            </HeaderItem>
-          : <HeaderItem onClick={() => start(t('start.success'))}>
-              <IconPlay size={18} />
-              <P>{t('start')}</P>
-            </HeaderItem>}
+        {isStarted ? (
+          <HeaderItem onClick={() => stop(t('stop.success'))}>
+            <IconStop size={18} />
+            <P>{t('stop')}</P>
+          </HeaderItem>
+        ) : (
+          <HeaderItem onClick={() => start(t('start.success'))}>
+            <IconPlay size={18} />
+            <P>{t('start')}</P>
+          </HeaderItem>
+        )}
       </HeaderItemWrapper>
     </Header>
     <Body>
@@ -53,12 +55,8 @@ const DashboardLayout = ({
           <NavItem to={updatePathname('/system')}>
             {t('systemManagement')}
           </NavItem>
-          <NavItem to={updatePathname('/user')}>
-            {t('userManagement')}
-          </NavItem>
-          <NavItem to={updatePathname('/data')}>
-            {t('dataManagement')}
-          </NavItem>
+          <NavItem to={updatePathname('/user')}>{t('userManagement')}</NavItem>
+          <NavItem to={updatePathname('/data')}>{t('dataManagement')}</NavItem>
         </div>
         <div>
           {/* Admin v2 */}
@@ -78,12 +76,16 @@ const DashboardLayout = ({
       </Nav>
       <Main>
         {isNedb &&
-          isRestartRequired &&
-          <RestartNotification onClick={() => restart(t('restart.success'))} />}
+          isRestartRequired && (
+            <RestartNotification
+              onClick={() => restart(t('restart.success'))}
+            />
+          )}
         {children}
       </Main>
     </Body>
-  </Container>;
+  </Container>
+);
 
 DashboardLayout.displayName = 'DashboardLayout';
 DashboardLayout.propTypes = {

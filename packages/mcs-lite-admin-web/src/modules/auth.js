@@ -54,9 +54,9 @@ export const actions = {
 // ----------------------------------------------------------------------------
 
 function requireAuthCycle(sources) {
-  const cookieToken$ = sources.ACTION
-    .filter(action => action.type === REQUIRE_AUTH)
-    .map(cookieHelper.getCookieToken);
+  const cookieToken$ = sources.ACTION.filter(
+    action => action.type === REQUIRE_AUTH,
+  ).map(cookieHelper.getCookieToken);
 
   const request$ = cookieToken$.map(cookieToken => ({
     url: '/oauth/cookies',
@@ -80,9 +80,9 @@ function requireAuthCycle(sources) {
 }
 
 function tryEnterCycle(sources) {
-  const cookieToken$ = sources.ACTION
-    .filter(action => action.type === TRY_ENTER)
-    .map(cookieHelper.getCookieToken);
+  const cookieToken$ = sources.ACTION.filter(
+    action => action.type === TRY_ENTER,
+  ).map(cookieHelper.getCookieToken);
 
   const action$ = cookieToken$
     .filter(cookieToken => !!cookieToken) // Hint: Go to devices list if cookieToken avaliable
@@ -94,15 +94,15 @@ function tryEnterCycle(sources) {
 }
 
 function signoutCycle(sources) {
-  const confirm$ = sources.ACTION
-    .filter(action => action.type === SIGNOUT)
-    .switchMap(action => {
-      const { message, isForce } = action.payload;
-      if (isForce || window.confirm(message)) {
-        return Observable.of(action);
-      }
-      return Observable.empty();
-    });
+  const confirm$ = sources.ACTION.filter(
+    action => action.type === SIGNOUT,
+  ).switchMap(action => {
+    const { message, isForce } = action.payload;
+    if (isForce || window.confirm(message)) {
+      return Observable.of(action);
+    }
+    return Observable.empty();
+  });
 
   const action$ = confirm$
     .switchMap(() =>
@@ -123,8 +123,7 @@ function signoutCycle(sources) {
 
 function httpErrorCycle(sources) {
   // Remind: handle all http errors here
-  const failureRes$ = sources.HTTP
-    .select()
+  const failureRes$ = sources.HTTP.select()
     .concatMap(failure)
     .pluck('response')
     .do(response => console.log('httpErrorCycle', response)); // eslint-disable-line

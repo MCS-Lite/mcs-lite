@@ -17,14 +17,16 @@ const LoadableImage = Loadable({
   loading: () => null,
 });
 
-const Section2 = ({ getMessages: t }) =>
+const Section2 = ({ getMessages: t }) => (
   <StyledSectionRow>
     <Column xs={12}>
       <TextCenter>
         <Heading level={2}>{t('title')}</Heading>
 
         <SpaceTop height={10}>
-          <Heading level={4} color="grayBase">{t('desc')}</Heading>
+          <Heading level={4} color="grayBase">
+            {t('desc')}
+          </Heading>
         </SpaceTop>
 
         <SpaceTop height={40}>
@@ -42,7 +44,8 @@ const Section2 = ({ getMessages: t }) =>
         </SpaceTop>
       </TextCenter>
     </Column>
-  </StyledSectionRow>;
+  </StyledSectionRow>
+);
 
 Section2.displayName = 'Section2';
 Section2.propTypes = {

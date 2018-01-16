@@ -55,8 +55,9 @@ export const actions = {
 
 function fetchSystemByTypeCycle(sources) {
   const accessToken$ = accessTokenSelector$(sources.STATE);
-  const type$ = sources.ACTION
-    .filter(action => action.type === FETCH_SYSTEM_BY_TYPE)
+  const type$ = sources.ACTION.filter(
+    action => action.type === FETCH_SYSTEM_BY_TYPE,
+  )
     .pluck('payload')
     .distinctUntilChanged();
 
@@ -67,9 +68,9 @@ function fetchSystemByTypeCycle(sources) {
     category: FETCH_SYSTEM_BY_TYPE,
   }));
 
-  const successRes$ = sources.HTTP
-    .select(FETCH_SYSTEM_BY_TYPE)
-    .switchMap(success);
+  const successRes$ = sources.HTTP.select(FETCH_SYSTEM_BY_TYPE).switchMap(
+    success,
+  );
 
   // Remind: api response with type(settingId) will be better.
   const responseType$ = successRes$
@@ -99,9 +100,9 @@ function uploadSystemByTypeCycle(sources) {
   const accessToken$ = accessTokenSelector$(sources.STATE);
   const system$ = sources.STATE.pluck('system');
 
-  const payload$ = sources.ACTION
-    .filter(action => action.type === UPLOAD_SYSTEM_BY_TYPE)
-    .pluck('payload');
+  const payload$ = sources.ACTION.filter(
+    action => action.type === UPLOAD_SYSTEM_BY_TYPE,
+  ).pluck('payload');
   const type$ = payload$.pluck('type');
   const message$ = payload$.pluck('message');
 
@@ -123,9 +124,9 @@ function uploadSystemByTypeCycle(sources) {
     }),
   );
 
-  const successRes$ = sources.HTTP
-    .select(UPLOAD_SYSTEM_BY_TYPE)
-    .switchMap(success);
+  const successRes$ = sources.HTTP.select(UPLOAD_SYSTEM_BY_TYPE).switchMap(
+    success,
+  );
 
   const action$ = Observable.from([
     request$.mapTo(uiActions.setLoading()),
@@ -146,18 +147,18 @@ function uploadSystemByTypeCycle(sources) {
 function postResetCycle(sources) {
   const accessToken$ = accessTokenSelector$(sources.STATE);
 
-  const message$ = sources.ACTION
-    .filter(action => action.type === POST_RESET)
-    .pluck('payload');
+  const message$ = sources.ACTION.filter(
+    action => action.type === POST_RESET,
+  ).pluck('payload');
 
-  const request$ = sources.ACTION
-    .filter(action => action.type === POST_RESET)
-    .withLatestFrom(accessToken$, (action, accessToken) => ({
-      url: '/api/service/reset',
-      method: 'POST',
-      headers: { Authorization: `Bearer ${accessToken}` },
-      category: POST_RESET,
-    }));
+  const request$ = sources.ACTION.filter(
+    action => action.type === POST_RESET,
+  ).withLatestFrom(accessToken$, (action, accessToken) => ({
+    url: '/api/service/reset',
+    method: 'POST',
+    headers: { Authorization: `Bearer ${accessToken}` },
+    category: POST_RESET,
+  }));
 
   const successRes$ = sources.HTTP.select(POST_RESET).switchMap(success);
 

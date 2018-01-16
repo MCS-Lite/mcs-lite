@@ -32,7 +32,9 @@ it('should return correct show props', () => {
   expect(getDialogConfirm().props().show).toBe(true);
 
   // After onCancel
-  getDialogConfirm().props().onCancel();
+  getDialogConfirm()
+    .props()
+    .onCancel();
   wrapper.update();
   expect(getDialogConfirm().props().show).toBe(false);
 
@@ -41,7 +43,9 @@ it('should return correct show props', () => {
   expect(getDialogConfirm().props().show).toBe(true);
 
   // After onSubmit
-  getDialogConfirm().props().onSubmit();
+  getDialogConfirm()
+    .props()
+    .onSubmit();
   wrapper.update();
   expect(getDialogConfirm().props().show).toBe(false);
 });
@@ -57,6 +61,10 @@ it('should call deleteData when onSubmit', () => {
   expect(mockDeleteData).not.toHaveBeenCalled();
 
   // After onSubmit
-  wrapper.find(DialogConfirm).first().props().onSubmit();
+  wrapper
+    .find(DialogConfirm)
+    .first()
+    .props()
+    .onSubmit();
   expect(mockDeleteData).toHaveBeenCalled();
 });

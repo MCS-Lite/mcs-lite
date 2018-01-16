@@ -8,17 +8,17 @@ storiesOf('PreventDrag', module).add(
   withInfo({
     text: 'Try to drag the second one.',
     inline: true,
-  })(() =>
+  })(() => (
     <div>
       <img src="http://placehold.it/350x150" alt="" />
       <PreventDrag>
         <img src="http://placehold.it/350x150" alt="" />
       </PreventDrag>
 
-      <a href="">Link content</a>
+      <a href=".">Link content</a>
       <PreventDrag>
-        <a href="">Link content (PreventDrag)</a>
+        <a href=".">Link content (PreventDrag)</a>
       </PreventDrag>
-    </div>,
-  ),
+    </div>
+  )),
 );

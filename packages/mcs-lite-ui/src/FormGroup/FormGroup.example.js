@@ -10,13 +10,15 @@ storiesOf('FormGroup', module).add(
   withInfo({
     text: 'default',
     inline: true,
-  })(() =>
+  })(() => (
     <FormGroup>
-      <Label htmlFor="1" required>Label 1</Label>
+      <Label htmlFor="1" required>
+        Label 1
+      </Label>
       <Input type="text" id="1" placeholder="placeholder 1" />
 
       <Label htmlFor="2">Label 2</Label>
       <Input type="text" id="2" placeholder="placeholder 2" />
-    </FormGroup>,
-  ),
+    </FormGroup>
+  )),
 );

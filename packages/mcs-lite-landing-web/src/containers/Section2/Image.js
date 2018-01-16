@@ -13,9 +13,8 @@ const BackgroundImageContain = styled(BackgroundImage)`
   max-width: 100%;
 `;
 
-const Image = () =>
+const Image = () => (
   <ImageLayerWrapper>
-
     {/* 1. Background */}
     <div>
       <BackgroundImageContain src={imgIot} placeholder={imgIotX60} />
@@ -38,7 +37,7 @@ const Image = () =>
     >
       <BackgroundImageContain src={imgMac} placeholder={imgMacX60} />
     </ScrollParallax>
-
-  </ImageLayerWrapper>;
+  </ImageLayerWrapper>
+);
 
 export default Image;

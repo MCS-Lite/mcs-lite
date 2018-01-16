@@ -38,14 +38,16 @@ export const actions = {};
  * @author Michael Hsu
  */
 function localeCycle(sources) {
-  const pathnameWithoutLocale$ = sources.STATE
-    .map(R.path(['routing', 'locationBeforeTransitions']))
+  const pathnameWithoutLocale$ = sources.STATE.map(
+    R.path(['routing', 'locationBeforeTransitions']),
+  )
     .filter(d => d && d.pathname && !d.query.locale) // Case1
     .pluck('pathname')
     .distinctUntilChanged();
 
-  const query$ = sources.STATE
-    .map(R.path(['routing', 'locationBeforeTransitions', 'query']))
+  const query$ = sources.STATE.map(
+    R.path(['routing', 'locationBeforeTransitions', 'query']),
+  )
     .filter(d => !!d)
     .filter(R.complement(R.isEmpty))
     .startWith({})

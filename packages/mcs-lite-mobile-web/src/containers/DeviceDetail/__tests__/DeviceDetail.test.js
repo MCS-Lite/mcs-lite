@@ -166,7 +166,10 @@ it('should handle reconnect', () => {
   expect(mockReconnect).not.toHaveBeenCalled();
 
   // After reconnect
-  wrapper.find(WebSocketNotification).props().onClick();
+  wrapper
+    .find(WebSocketNotification)
+    .props()
+    .onClick();
   expect(mockReconnect).toHaveBeenCalled();
 });
 

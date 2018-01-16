@@ -19,19 +19,20 @@ const Wrapper = styled.div`
 
   > a:not(:last-child) {
     &::after {
-      content: "\\00a0·\\00a0";
+      content: '\\00a0·\\00a0';
     }
   }
 `;
 
-const LocaleFooter = () =>
+const LocaleFooter = () => (
   <Wrapper>
-    {LOCALES.map(({ id, children }) =>
+    {LOCALES.map(({ id, children }) => (
       <Link key={id} to={updateLocale(id)}>
         <Small>{children}</Small>
-      </Link>,
-    )}
-  </Wrapper>;
+      </Link>
+    ))}
+  </Wrapper>
+);
 
 LocaleFooter.displayName = 'LocaleFooter';
 

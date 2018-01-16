@@ -60,8 +60,9 @@ exports[`should render STRING_DISPLAY correctly with default value to empty 1`] 
 .c1 {
   height: 100%;
   min-height: 4em;
+  -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
-  -ms-flex-grow: 1;
+  -ms-flex-positive: 1;
   flex-grow: 1;
 }
 
@@ -92,7 +93,6 @@ exports[`should render STRING_DISPLAY correctly with default value to empty 1`] 
           <Textarea
             className="c1"
             disabled={true}
-            innerRef={undefined}
             kind="primary"
             placeholder="String only"
             value=""
@@ -172,8 +172,9 @@ exports[`should render STRING_DISPLAY correctly with empty string 1`] = `
 .c1 {
   height: 100%;
   min-height: 4em;
+  -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
-  -ms-flex-grow: 1;
+  -ms-flex-positive: 1;
   flex-grow: 1;
 }
 
@@ -206,7 +207,6 @@ exports[`should render STRING_DISPLAY correctly with empty string 1`] = `
           <Textarea
             className="c1"
             disabled={true}
-            innerRef={undefined}
             kind="primary"
             placeholder="String only"
             value=""
@@ -286,8 +286,9 @@ exports[`should render STRING_DISPLAY correctly with value 1`] = `
 .c1 {
   height: 100%;
   min-height: 4em;
+  -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
-  -ms-flex-grow: 1;
+  -ms-flex-positive: 1;
   flex-grow: 1;
 }
 
@@ -320,7 +321,6 @@ exports[`should render STRING_DISPLAY correctly with value 1`] = `
           <Textarea
             className="c1"
             disabled={true}
-            innerRef={undefined}
             kind="primary"
             placeholder="String only"
             value="michaelhsu"

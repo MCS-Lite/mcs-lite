@@ -16,9 +16,5 @@ storiesOf('Hr', module)
     withInfo({
       text: 'With string inside.',
       inline: true,
-    })(() =>
-      <Hr>
-        String
-      </Hr>,
-    ),
+    })(() => <Hr>String</Hr>),
   );

@@ -121,12 +121,14 @@ describe('service - 3. Cycle', () => {
     };
     const httpSource = {
       select: category => ({
-        r: category === `${constants.RESTART}_STOP`
-          ? Observable.of({ body: {} })
-          : Observable.empty(),
-        s: category === `${constants.RESTART}_START`
-          ? Observable.of({ body: {} })
-          : Observable.empty(),
+        r:
+          category === `${constants.RESTART}_STOP`
+            ? Observable.of({ body: {} })
+            : Observable.empty(),
+        s:
+          category === `${constants.RESTART}_START`
+            ? Observable.of({ body: {} })
+            : Observable.empty(),
       }),
     };
     const actionSink = {
@@ -206,16 +208,18 @@ describe('service - 3. Cycle', () => {
     const actionSource = {};
     const httpSource = {
       select: category => ({
-        r: category !== constants.FETCH_IP_LIST
-          ? Observable.of({
-              request: { category: constants.STOP },
-            })
-          : Observable.empty(),
-        s: category === constants.FETCH_IP_LIST
-          ? Observable.of({
-              body: { data: [4, 5, 6] },
-            })
-          : Observable.empty(),
+        r:
+          category !== constants.FETCH_IP_LIST
+            ? Observable.of({
+                request: { category: constants.STOP },
+              })
+            : Observable.empty(),
+        s:
+          category === constants.FETCH_IP_LIST
+            ? Observable.of({
+                body: { data: [4, 5, 6] },
+              })
+            : Observable.empty(),
       }),
     };
 

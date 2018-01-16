@@ -26,19 +26,19 @@ const withState = Component =>
 
 const StyledSwitch = withState(
   styled(Switch)`
-  background-color: ${props => (props.checked ? 'steelblue' : 'aliceblue')};
+    background-color: ${props => (props.checked ? 'steelblue' : 'aliceblue')};
 
-  &::after {
-    background-color: ${props =>
-      props.checked ? 'aliceblue' : 'cornflowerblue'};
-  }
-`,
+    &::after {
+      background-color: ${props =>
+        props.checked ? 'aliceblue' : 'cornflowerblue'};
+    }
+  `,
 );
 
 const ScaledSwitch = withState(
   styled(Switch)`
-  transform: scale(0.48);
-`,
+    transform: scale(0.48);
+  `,
 );
 
 storiesOf('Switch', module)
@@ -47,23 +47,23 @@ storiesOf('Switch', module)
     withInfo({
       text: 'Switch is a controlled component.',
       inline: true,
-    })(() =>
+    })(() => (
       <div>
         <Switch />
         <Switch checked />
-      </div>,
-    ),
+      </div>
+    )),
   )
   .add(
     'With kind props',
     withInfo({
       text: 'kind="primary"',
       inline: true,
-    })(() =>
+    })(() => (
       <div>
         {kindList.map(kind => <Switch key={kind} checked kind={kind} />)}
-      </div>,
-    ),
+      </div>
+    )),
   )
   .add(
     'Stateful switch',

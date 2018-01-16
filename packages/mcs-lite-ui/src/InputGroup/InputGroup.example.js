@@ -17,11 +17,13 @@ storiesOf('InputGroup', module).add(
   withInfo({
     text: '',
     inline: true,
-  })(() =>
+  })(() => (
     <Wrapper>
       <InputGroup>
         <Button size="small">Button 1</Button>
-        <Button kind="default" size="small">Button 2</Button>
+        <Button kind="default" size="small">
+          Button 2
+        </Button>
       </InputGroup>
 
       <InputGroup>
@@ -52,7 +54,6 @@ storiesOf('InputGroup', module).add(
         <Button square>和</Button>
         <Input placeholder="預設值：100" />
       </InputGroup>
-
-    </Wrapper>,
-  ),
+    </Wrapper>
+  )),
 );

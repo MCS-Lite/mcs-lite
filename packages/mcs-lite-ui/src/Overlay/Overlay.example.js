@@ -34,10 +34,11 @@ storiesOf('Overlay', module)
                 Hover me
               </A>
 
-              {this.state.show &&
+              {this.state.show && (
                 <Overlay target={this.state.target} {...this.props}>
                   <div key="div">This is overlay content.</div>
-                </Overlay>}
+                </Overlay>
+              )}
             </div>
           );
         }
@@ -56,13 +57,13 @@ storiesOf('Overlay', module)
       propTables: [Overlay],
     })(() => {
       const Wrapper = styled.div`
-    display: flex;
-    justify-content: space-between;
-  `;
+        display: flex;
+        justify-content: space-between;
+      `;
 
       const StyledMenu = styled(Menu)`
-    width: 300px;
-  `;
+        width: 300px;
+      `;
 
       class OverlayMenu extends React.Component {
         state = { show: false, target: undefined };
@@ -76,7 +77,7 @@ storiesOf('Overlay', module)
                 Button
               </Button>
 
-              {this.state.show &&
+              {this.state.show && (
                 <Overlay
                   target={this.state.target}
                   onClickOutSide={this.onHide}
@@ -86,7 +87,8 @@ storiesOf('Overlay', module)
                     <MenuItem onClick={action('click 1')}>1</MenuItem>
                     <MenuItem onClick={action('click 2')}>2</MenuItem>
                   </StyledMenu>
-                </Overlay>}
+                </Overlay>
+              )}
             </div>
           );
         }

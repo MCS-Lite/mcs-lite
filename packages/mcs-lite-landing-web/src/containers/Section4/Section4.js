@@ -23,7 +23,7 @@ const LoadableImageImageCustom = Loadable({
   loading: () => null,
 });
 
-const Section4 = ({ getMessages: t }) =>
+const Section4 = ({ getMessages: t }) => (
   <StyledSectionRow>
     <Column xs={12}>
       <TextCenter>
@@ -84,7 +84,8 @@ const Section4 = ({ getMessages: t }) =>
         </CardWrapper>
       </Column>
     </Row>
-  </StyledSectionRow>;
+  </StyledSectionRow>
+);
 
 Section4.displayName = 'Section4';
 Section4.propTypes = {

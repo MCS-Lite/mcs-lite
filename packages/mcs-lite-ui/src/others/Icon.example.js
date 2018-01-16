@@ -50,9 +50,11 @@ class StatefulMorphReplace extends React.Component {
   render() {
     return (
       <MorphReplace width={24} height={24}>
-        {this.state.checked
-          ? <Icons.IconMenu key="menu" />
-          : <Icons.IconArrowLeft key="arrow" />}
+        {this.state.checked ? (
+          <Icons.IconMenu key="menu" />
+        ) : (
+          <Icons.IconArrowLeft key="arrow" />
+        )}
       </MorphReplace>
     );
   }
@@ -71,11 +73,11 @@ storiesOf('Icon [mcs-lite-icon]', module)
     withInfo({
       text: 'SVG Icon 請使用偶數（Safari）',
       inline: true,
-    })(() =>
+    })(() => (
       <Spin>
         <Icons.IconLoading size={14} />
-      </Spin>,
-    ),
+      </Spin>
+    )),
   )
   .add(
     'MorphReplace',
@@ -91,24 +93,25 @@ storiesOf('Icon [mcs-lite-icon]', module)
       text: '',
       inline: false,
       propTables: false,
-    })(() =>
+    })(() => (
       <div>
         <Heading>MCS Lite Icon</Heading>
         <CodeBlock color="primary" level={3}>
-          {'$ npm i mcs-lite-icon --save'}<br />
+          {'$ npm i mcs-lite-icon --save'}
+          <br />
           {"import { IconName } from 'mcs-lite-icon';"}
         </CodeBlock>
         <CardWrapper>
-          {Object.keys(Icons).map(name =>
+          {Object.keys(Icons).map(name => (
             <StyledCard key={name}>
               <Icon color="grayBase" level={1}>
                 {React.createElement(Icons[name])}
               </Icon>
               <P color="grayBase">{`<${name} />`}</P>
               <IconPath color="primary">mcs-lite-icon/lib/{name}</IconPath>
-            </StyledCard>,
-          )}
+            </StyledCard>
+          ))}
         </CardWrapper>
-      </div>,
-    ),
+      </div>
+    )),
   );

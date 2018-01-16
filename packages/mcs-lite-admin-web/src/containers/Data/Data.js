@@ -33,9 +33,11 @@ const Data = componentFromStream(props$ => {
 
   return props$.combineLatest(
     isDialogShow$,
-    ({ getMessages: t }, isDialogShow) =>
+    ({ getMessages: t }, isDialogShow) => (
       <div>
-        <Helmet><title>{t('dataManagement')}</title></Helmet>
+        <Helmet>
+          <title>{t('dataManagement')}</title>
+        </Helmet>
         <DialogConfirm
           show={isDialogShow}
           onCancel={onCancel}
@@ -49,7 +51,8 @@ const Data = componentFromStream(props$ => {
           <A onClick={onResetClick}>{t('reset')}</A>
         </DashboardTitle>
         <DashboardDesc>{t('description')}</DashboardDesc>
-      </div>,
+      </div>
+    ),
   );
 });
 

@@ -20,14 +20,15 @@ const CenterContainer = styled.div`
   justify-content: center;
 `;
 
-const KindContainer = () =>
+const KindContainer = () => (
   <Container>
-    {kindList.map(key =>
+    {kindList.map(key => (
       <Button key={key} kind={key} onClick={action(`Kind ${key}`)}>
         {key}
-      </Button>,
-    )}
-  </Container>;
+      </Button>
+    ))}
+  </Container>
+);
 
 const customTheme = {
   color: {
@@ -57,7 +58,7 @@ const customTheme = {
 
 const TomatoButton = styled(Button)`
   font-size: 56px;
-  color: #FFFFFF;
+  color: #ffffff;
   border-radius: 6px;
   border-color: ${darken3('tomato')};
   background-color: tomato;
@@ -85,13 +86,13 @@ storiesOf('Button', module)
     withInfo({
       text: 'Different size in order: min-width: 80px / auto / 100%.',
       inline: true,
-    })(() =>
+    })(() => (
       <Container>
         <Button>Button</Button>
         <Button>Simple button</Button>
         <Button block>block</Button>
-      </Container>,
-    ),
+      </Container>
+    )),
   )
   .add(
     'With kind props',
@@ -106,36 +107,42 @@ storiesOf('Button', module)
     withInfo({
       text: '方',
       inline: true,
-    })(() =>
+    })(() => (
       <Container>
         <Button square>A</Button>
-        <Button square kind="default"><IconCalendar /></Button>
-      </Container>,
-    ),
+        <Button square kind="default">
+          <IconCalendar />
+        </Button>
+      </Container>
+    )),
   )
   .add(
     'With round props',
     withInfo({
       text: '圓',
       inline: true,
-    })(() =>
+    })(() => (
       <Container>
         <Button round>A</Button>
-        <Button round kind="default"><IconCalendar /></Button>
-      </Container>,
-    ),
+        <Button round kind="default">
+          <IconCalendar />
+        </Button>
+      </Container>
+    )),
   )
   .add(
     'With size props',
     withInfo({
       text: '小 (min-width: 40px)',
       inline: true,
-    })(() =>
+    })(() => (
       <Container>
         <Button size="small">Btn</Button>
-        <Button size="small" kind="default">Small Button</Button>
-      </Container>,
-    ),
+        <Button size="small" kind="default">
+          Small Button
+        </Button>
+      </Container>
+    )),
   )
   .add(
     'With active props',
@@ -156,7 +163,7 @@ storiesOf('Button', module)
     withInfo({
       text: 'loading',
       inline: true,
-    })(() =>
+    })(() => (
       <Button>
         <CenterContainer>
           <Spin>
@@ -164,8 +171,8 @@ storiesOf('Button', module)
           </Spin>
           &nbsp;Loading ...
         </CenterContainer>
-      </Button>,
-    ),
+      </Button>
+    )),
   )
   .add(
     'With theme provider (Material)',
@@ -173,11 +180,11 @@ storiesOf('Button', module)
       text: '使用全局的 theme 來調整色調。',
       inline: true,
       propTables: false,
-    })(() =>
+    })(() => (
       <ThemeProvider theme={customTheme}>
         <KindContainer />
-      </ThemeProvider>,
-    ),
+      </ThemeProvider>
+    )),
   )
   .add(
     'Overriding style',
@@ -185,33 +192,33 @@ storiesOf('Button', module)
       text: '使用 styled-components 來覆蓋 css。',
       inline: true,
       propTables: false,
-    })(() =>
-      <TomatoButton onClick={action('clicked')}>Overriding style</TomatoButton>,
-    ),
+    })(() => (
+      <TomatoButton onClick={action('clicked')}>Overriding style</TomatoButton>
+    )),
   )
   .add(
     'With component props',
     withInfo({
       text: '使用 a tag。',
       inline: true,
-    })(() =>
+    })(() => (
       <Button onClick={action('clicked a')} component="a">
         I am {'<a>'} tag.
-      </Button>,
-    ),
+      </Button>
+    )),
   )
   .add(
     'With component props - Input submit',
     withInfo({
       text: '',
       // inline: true,
-    })(() =>
+    })(() => (
       <Button
         onClick={action('clicked input')}
         component="input"
         type="submit"
         value="Input Submit"
         block
-      />,
-    ),
+      />
+    )),
   );

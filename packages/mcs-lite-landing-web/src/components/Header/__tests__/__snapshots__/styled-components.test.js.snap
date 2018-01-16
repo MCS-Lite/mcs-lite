@@ -57,7 +57,7 @@ Array [
 
 .c5 .sc-EHOje {
   -webkit-flex-shrink: 0;
-  -ms-flex-shrink: 0;
+  -ms-flex-negative: 0;
   flex-shrink: 0;
 }
 
@@ -124,7 +124,6 @@ Array [
     <Styled(styled.div)>
         <styled.div
             className="c5"
-            innerRef={undefined}
         >
             <div
                 className="c5 c6"
@@ -134,7 +133,6 @@ Array [
     <Styled(styled.div)>
         <styled.div
             className="c7"
-            innerRef={undefined}
         >
             <div
                 className="c7 c6"
@@ -194,7 +192,7 @@ Array [
 
 .c0 .sc-EHOje {
   -webkit-flex-shrink: 0;
-  -ms-flex-shrink: 0;
+  -ms-flex-negative: 0;
   flex-shrink: 0;
 }
 

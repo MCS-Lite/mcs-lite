@@ -26,9 +26,7 @@ storiesOf('Dialog', module)
         render() {
           return (
             <div>
-              <div onClick={this.onShow}>
-                Click to OPEN!
-              </div>
+              <div onClick={this.onShow}>Click to OPEN!</div>
 
               <Dialog show={this.state.show} onHide={this.onHide}>
                 <div>Content</div>
@@ -47,7 +45,7 @@ storiesOf('Dialog', module)
       text: 'Wrap in a <form> tag, you need to preventDefault()',
       inline: true,
       propTables: [CommonDialog],
-    })(() =>
+    })(() => (
       <StyledCommonDialog
         component="form"
         show
@@ -58,9 +56,7 @@ storiesOf('Dialog', module)
         }}
       >
         <header>Notice!</header>
-        <main>
-          是否確定重置系統？
-        </main>
+        <main>是否確定重置系統？</main>
         <footer>
           <Button
             kind="default"
@@ -71,10 +67,10 @@ storiesOf('Dialog', module)
           >
             取消
           </Button>
-          <Button component="input" type="submit" value={'確定'} />
+          <Button component="input" type="submit" value="確定" />
         </footer>
-      </StyledCommonDialog>,
-    ),
+      </StyledCommonDialog>
+    )),
   )
   .add(
     'Scrollable CommonDialog',
@@ -82,9 +78,9 @@ storiesOf('Dialog', module)
       text: '',
       inline: true,
       propTables: [CommonDialog],
-    })(() =>
+    })(() => (
       <CommonDialog show onHide={() => {}}>
         <div style={{ height: 3000 }}>Scrollable</div>
-      </CommonDialog>,
-    ),
+      </CommonDialog>
+    )),
   );

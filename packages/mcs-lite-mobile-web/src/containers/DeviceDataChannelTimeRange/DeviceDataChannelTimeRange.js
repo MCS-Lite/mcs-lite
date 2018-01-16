@@ -75,7 +75,9 @@ class DeviceDataChannelTimeRange extends React.Component {
 
     return (
       <div>
-        <Helmet><title>{t('searchTimeRange')}</title></Helmet>
+        <Helmet>
+          <title>{t('searchTimeRange')}</title>
+        </Helmet>
         <MobileHeader.MobileHeader
           title={t('searchTimeRange')}
           leftChildren={
@@ -112,10 +114,14 @@ class DeviceDataChannelTimeRange extends React.Component {
         <MobileFixedFooter>
           <ButtonWrapper>
             <StyledLink to={back}>
-              <Button kind="default" block>{t('cancel')}</Button>
+              <Button kind="default" block>
+                {t('cancel')}
+              </Button>
             </StyledLink>
             <StyledLink to={back}>
-              <Button block onClick={onSubmit}>{t('save')}</Button>
+              <Button block onClick={onSubmit}>
+                {t('save')}
+              </Button>
             </StyledLink>
           </ButtonWrapper>
         </MobileFixedFooter>

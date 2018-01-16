@@ -22,7 +22,7 @@ const LoadableImage = Loadable({
   loading: () => null,
 });
 
-const Section5 = ({ getMessages: t }) =>
+const Section5 = ({ getMessages: t }) => (
   <SectionRow>
     <Column xs={12}>
       <StyledTextCenter>
@@ -39,7 +39,8 @@ const Section5 = ({ getMessages: t }) =>
         </SpaceTop>
       </StyledTextCenter>
     </Column>
-  </SectionRow>;
+  </SectionRow>
+);
 
 Section5.displayName = 'Section5';
 Section5.propTypes = {

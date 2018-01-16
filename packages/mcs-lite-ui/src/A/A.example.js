@@ -20,27 +20,27 @@ storiesOf('A', module)
     withInfo({
       text: '',
       inline: true,
-    })(() =>
+    })(() => (
       <div>
-        {Object.keys(theme.color).map(key =>
-          <A key={key} color={key}>A link {key}</A>,
-        )}
-      </div>,
-    ),
+        {Object.keys(theme.color).map(key => (
+          <A key={key} color={key}>
+            A link {key}
+          </A>
+        ))}
+      </div>
+    )),
   )
   .add(
     'Nested children with Heading',
     withInfo({
       text: '',
       inline: true,
-    })(() =>
+    })(() => (
       <Heading>
         Heading Level 1&nbsp;
         <B>
-          <A>
-            Link
-          </A>
+          <A>Link</A>
         </B>
-      </Heading>,
-    ),
+      </Heading>
+    )),
   );

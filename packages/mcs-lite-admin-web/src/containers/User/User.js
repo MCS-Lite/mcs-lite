@@ -187,18 +187,16 @@ const User = componentFromStream(props$ => {
         (d.email &&
           !isEmail(d.email) &&
           props.getMessages('email.formatError')) ||
-          (d.email &&
-            !isEmailAvalable &&
-            props.getMessages('email.existError')),
+        (d.email && !isEmailAvalable && props.getMessages('email.existError')),
       password:
         validators.isLt8(d.password) &&
-          props.getMessages('password.lengthError'),
+        props.getMessages('password.lengthError'),
       newPassword1:
         validators.isLt8(d.newPassword1) &&
-          props.getMessages('password.lengthError'),
+        props.getMessages('password.lengthError'),
       newPassword2:
         validators.isNotEqual(d.newPassword1, d.newPassword2) &&
-          props.getMessages('newPassword2.error'),
+        props.getMessages('newPassword2.error'),
     }))
     .startWith({})
     .shareReplay(1);
@@ -211,7 +209,10 @@ const User = componentFromStream(props$ => {
   );
 
   // Remind: There are four fetch Side-effects below.
-  props$.first().pluck('fetchUsers').subscribe(R.call);
+  props$
+    .first()
+    .pluck('fetchUsers')
+    .subscribe(R.call);
   onAddSubmit$
     .do(e => e.preventDefault())
     .withLatestFrom(formData$, props$, (e, formData, props) =>
@@ -308,10 +309,12 @@ const User = componentFromStream(props$ => {
       isAddSubmitError,
       isEditSubmitError,
       selectedTab,
-    ) =>
+    ) => (
       <div>
         {/* Title */}
-        <Helmet><title>{t('userManagement')}</title></Helmet>
+        <Helmet>
+          <title>{t('userManagement')}</title>
+        </Helmet>
         <DashboardTitle title={t('userManagement')} />
 
         {/* Dialog - Add user  */}
@@ -350,9 +353,11 @@ const User = componentFromStream(props$ => {
             </RadioWrapper>
             <SpaceTop height={10} />
 
-            {formData.addUserType === ADD_USER_TYPE_ONE &&
+            {formData.addUserType === ADD_USER_TYPE_ONE && (
               <FormGroup>
-                <Label htmlFor="userName" required>{t('userName')}</Label>
+                <Label htmlFor="userName" required>
+                  {t('userName')}
+                </Label>
                 <Input
                   id="userName"
                   type="text"
@@ -361,7 +366,9 @@ const User = componentFromStream(props$ => {
                   placeholder={t('userName.placeholder')}
                   required
                 />
-                <Label htmlFor="email" required>{t('email')}</Label>
+                <Label htmlFor="email" required>
+                  {t('email')}
+                </Label>
                 <Input
                   id="email"
                   type="email"
@@ -371,11 +378,14 @@ const User = componentFromStream(props$ => {
                   placeholder={t('email.placeholder')}
                   required
                 />
-                {formValidation.email &&
+                {formValidation.email && (
                   <ErrorMessageP color="error">
                     {formValidation.email}
-                  </ErrorMessageP>}
-                <Label htmlFor="password" required>{t('password')}</Label>
+                  </ErrorMessageP>
+                )}
+                <Label htmlFor="password" required>
+                  {t('password')}
+                </Label>
                 <Input
                   id="password"
                   type="password"
@@ -384,15 +394,19 @@ const User = componentFromStream(props$ => {
                   placeholder={t('password.placeholder')}
                   required
                 />
-                {formValidation.password &&
+                {formValidation.password && (
                   <ErrorMessageP color="error">
                     {formValidation.password}
-                  </ErrorMessageP>}
-              </FormGroup>}
+                  </ErrorMessageP>
+                )}
+              </FormGroup>
+            )}
 
-            {formData.addUserType === ADD_USER_TYPE_BATCH &&
+            {formData.addUserType === ADD_USER_TYPE_BATCH && (
               <FormGroup>
-                <Label htmlFor="uploadCSV" required>{t('uploadCSV')}</Label>
+                <Label htmlFor="uploadCSV" required>
+                  {t('uploadCSV')}
+                </Label>
                 <InputFileWrapper>
                   <Input
                     id="csv"
@@ -416,11 +430,13 @@ const User = componentFromStream(props$ => {
                     </Button>
                   </InputGroup>
                 </InputFileWrapper>
-                {formValidation.password &&
+                {formValidation.password && (
                   <ErrorMessageP color="error">
                     {formValidation.password}
-                  </ErrorMessageP>}
-              </FormGroup>}
+                  </ErrorMessageP>
+                )}
+              </FormGroup>
+            )}
           </main>
           <footer>
             <Button kind="default" onClick={onAddDialogHide}>
@@ -465,7 +481,7 @@ const User = componentFromStream(props$ => {
               </TabItem>
             </TabWrapper>
 
-            {selectedTab === CHANGE_PASSWORD &&
+            {selectedTab === CHANGE_PASSWORD && (
               <FormGroup>
                 <Label htmlFor="newPassword1" required>
                   {t('newPassword1')}
@@ -478,10 +494,11 @@ const User = componentFromStream(props$ => {
                   placeholder={t('newPassword1.placeholder')}
                   required
                 />
-                {formValidation.newPassword1 &&
+                {formValidation.newPassword1 && (
                   <ErrorMessageP color="error">
                     {formValidation.newPassword1}
-                  </ErrorMessageP>}
+                  </ErrorMessageP>
+                )}
                 <Label htmlFor="newPassword2" required>
                   {t('newPassword2')}
                 </Label>
@@ -493,13 +510,15 @@ const User = componentFromStream(props$ => {
                   placeholder={t('newPassword2.placeholder')}
                   required
                 />
-                {formValidation.newPassword2 &&
+                {formValidation.newPassword2 && (
                   <ErrorMessageP color="error">
                     {formValidation.newPassword2}
-                  </ErrorMessageP>}
-              </FormGroup>}
+                  </ErrorMessageP>
+                )}
+              </FormGroup>
+            )}
 
-            {selectedTab === ACCOUNT_STATUS &&
+            {selectedTab === ACCOUNT_STATUS && (
               <FormGroup>
                 <P>{t('accountStatus.desc')}</P>
                 <SpaceTop height={10} />
@@ -529,7 +548,8 @@ const User = componentFromStream(props$ => {
                     <span>{t('inactive')}</span>
                   </label>
                 </RadioWrapper>
-              </FormGroup>}
+              </FormGroup>
+            )}
           </main>
           <footer>
             <Button kind="default" onClick={onEditDialogHide}>
@@ -562,7 +582,9 @@ const User = componentFromStream(props$ => {
               onChange={onFilterChange}
               value={filterValue}
             />
-            <Button square><IconSearch size={18} /></Button>
+            <Button square>
+              <IconSearch size={18} />
+            </Button>
           </InputGroup>
           <A onClick={onClearClick}>{t('clearFilter')}</A>
         </InputFilterWrapper>
@@ -579,21 +601,20 @@ const User = componentFromStream(props$ => {
 
         {/* Footer */}
         <FooterWrapper>
-          {R.isEmpty(checkedList)
-            ? <A onClick={onAddDialogShow}>
-                <IconAdd size={18} />
-                <div>
-                  {t('addUser')}
-                </div>
-              </A>
-            : <A onClick={onDeleteDialogShow}>
-                <IconDelete size={18} />
-                <div>
-                  {t('deleteUser', { length: checkedList.length })}
-                </div>
-              </A>}
+          {R.isEmpty(checkedList) ? (
+            <A onClick={onAddDialogShow}>
+              <IconAdd size={18} />
+              <div>{t('addUser')}</div>
+            </A>
+          ) : (
+            <A onClick={onDeleteDialogShow}>
+              <IconDelete size={18} />
+              <div>{t('deleteUser', { length: checkedList.length })}</div>
+            </A>
+          )}
         </FooterWrapper>
-      </div>,
+      </div>
+    ),
   );
 });
 

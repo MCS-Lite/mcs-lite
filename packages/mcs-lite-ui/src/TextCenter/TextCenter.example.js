@@ -8,9 +8,5 @@ storiesOf('TextCenter', module).add(
   withInfo({
     text: '',
     inline: true,
-  })(() =>
-    <TextCenter>
-      Center
-    </TextCenter>,
-  ),
+  })(() => <TextCenter>Center</TextCenter>),
 );

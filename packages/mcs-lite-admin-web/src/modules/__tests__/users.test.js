@@ -114,18 +114,20 @@ describe('users - 3. Cycle', () => {
     const actionSource = {};
     const httpSource = {
       select: category => ({
-        a: category !== constants.FETCH_USERS
-          ? Observable.of({
-              request: {
-                category: constants.CREATE_USER_BY_CSV,
-              },
-            })
-          : Observable.empty(),
-        r: category === constants.FETCH_USERS
-          ? Observable.of({
-              body: [1, 2, 3],
-            })
-          : Observable.empty(),
+        a:
+          category !== constants.FETCH_USERS
+            ? Observable.of({
+                request: {
+                  category: constants.CREATE_USER_BY_CSV,
+                },
+              })
+            : Observable.empty(),
+        r:
+          category === constants.FETCH_USERS
+            ? Observable.of({
+                body: [1, 2, 3],
+              })
+            : Observable.empty(),
       }),
     };
 

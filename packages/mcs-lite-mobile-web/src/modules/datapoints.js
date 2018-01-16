@@ -56,15 +56,14 @@ export const actions = {
 // ----------------------------------------------------------------------------
 
 function fetchDatapointsCycle(sources) {
-  const payload$ = sources.ACTION
-    .filter(action => action.type === FETCH_DATAPOINTS)
-    .pluck('payload');
+  const payload$ = sources.ACTION.filter(
+    action => action.type === FETCH_DATAPOINTS,
+  ).pluck('payload');
 
   const dataChannelId$ = payload$.pluck('dataChannelId');
   const deviceId$ = payload$.pluck('deviceId');
 
-  const deviceKey$ = sources.STATE
-    .pluck('devices')
+  const deviceKey$ = sources.STATE.pluck('devices')
     .combineLatest(deviceId$, (devices, deviceId) =>
       R.path([deviceId, 'deviceKey'])(devices),
     )
@@ -115,9 +114,9 @@ function fetchDatapointsCycle(sources) {
 }
 
 function appendDatapointCycle(sources) {
-  const payload$ = sources.ACTION
-    .filter(action => action.type === devicesConstants.SET_DATAPOINT)
-    .pluck('payload');
+  const payload$ = sources.ACTION.filter(
+    action => action.type === devicesConstants.SET_DATAPOINT,
+  ).pluck('payload');
 
   const action$ = payload$
     .filter(d => d.isFromServer) // Hint: this payload is from WebSocket server.
@@ -170,7 +169,7 @@ export default function reducer(state = initialState, action = {}) {
     }
 
     case APPEND_DATAPOINT: {
-      const dataChannelId = action.payload.dataChannelId;
+      const { dataChannelId } = action.payload;
       const datapoints = R.pathOr([], [dataChannelId, 'data'])(state);
       const nextDatapoints = R.pipe(
         R.append({

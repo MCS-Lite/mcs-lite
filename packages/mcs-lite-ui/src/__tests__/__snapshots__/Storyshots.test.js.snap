@@ -293,12 +293,12 @@ exports[`Storyshots API [mcs-lite-theme] [JSON] kind 1`] = `
 <div>
   <pre>
     [
-  "default",
-  "primary",
-  "success",
-  "error",
-  "warning"
-]
+      "default",
+      "primary",
+      "success",
+      "error",
+      "warning"
+    ]
   </pre>
 </div>
 `;
@@ -307,44 +307,44 @@ exports[`Storyshots API [mcs-lite-theme] [JSON] theme 1`] = `
 <div>
   <pre>
     {
-  "color": {
-    "black": "#353630",
-    "grayBase": "#999A94",
-    "grayDark": "#D1D2D3",
-    "grayLight": "#FAFAFA",
-    "white": "#FFFFFF",
-    "default": "#FAFAFA",
-    "primary": "#00A1DE",
-    "success": "#69BE28",
-    "error": "#F5364E",
-    "warning": "#F39A1E"
-  },
-  "base": {
-    "bodyBackgroundColor": "#F1F2F7",
-    "bodyColor": "#353630",
-    "fontSize": "13px",
-    "lineHeight": 1.5
-  },
-  "fontSize": {
-    "small": "0.923rem",
-    "p": "1rem",
-    "h6": "1rem",
-    "h5": "1rem",
-    "h4": "1.15rem",
-    "h3": "1.38rem",
-    "h2": "1.69rem",
-    "h1": "2.46rem"
-  },
-  "height": {
-    "normal": "32px",
-    "small": "20px",
-    "header": "50px"
-  },
-  "mobile": {
-    "maxWidth": "800px",
-    "headerHeight": "56px"
-  }
-}
+      "color": {
+        "black": "#353630",
+        "grayBase": "#999A94",
+        "grayDark": "#D1D2D3",
+        "grayLight": "#FAFAFA",
+        "white": "#FFFFFF",
+        "default": "#FAFAFA",
+        "primary": "#00A1DE",
+        "success": "#69BE28",
+        "error": "#F5364E",
+        "warning": "#F39A1E"
+      },
+      "base": {
+        "bodyBackgroundColor": "#F1F2F7",
+        "bodyColor": "#353630",
+        "fontSize": "13px",
+        "lineHeight": 1.5
+      },
+      "fontSize": {
+        "small": "0.923rem",
+        "p": "1rem",
+        "h6": "1rem",
+        "h5": "1rem",
+        "h4": "1.15rem",
+        "h3": "1.38rem",
+        "h2": "1.69rem",
+        "h1": "2.46rem"
+      },
+      "height": {
+        "normal": "32px",
+        "small": "20px",
+        "header": "50px"
+      },
+      "mobile": {
+        "maxWidth": "800px",
+        "headerHeight": "56px"
+      }
+    }
   </pre>
 </div>
 `;
@@ -508,7 +508,7 @@ exports[`Storyshots Button Overriding style 1`] = `
 
 .c0 {
   font-size: 56px;
-  color: #FFFFFF;
+  color: #ffffff;
   border-radius: 6px;
   border-color: rgb(206,80,57);
   background-color: tomato;
@@ -1597,20 +1597,20 @@ exports[`Storyshots Code API 1`] = `
   wrapLines={true}
 >
   var data = {
-  datapoints:
-    [{dataChnId: "Map", values: {latitude: 12, longitude: 13, altitude: 14}}]
-};
-
-$.ajax({
-  type: "POST",
-  url: "https://api.mediatek.com/mcs/v2/devices/DzdpHYIZ/datapoints",
-  headers: { deviceKey: "Cio34Lj7Na5RmQXj" },
-  contentType: "application/json",
-  data: JSON.stringify(data)
-})
-.done(function(data){
-  // your content
-})
+    datapoints:
+      [{dataChnId: "Map", values: {latitude: 12, longitude: 13, altitude: 14}}]
+  };
+  
+  $.ajax({
+    type: "POST",
+    url: "https://api.mediatek.com/mcs/v2/devices/DzdpHYIZ/datapoints",
+    headers: { deviceKey: "Cio34Lj7Na5RmQXj" },
+    contentType: "application/json",
+    data: JSON.stringify(data)
+  })
+  .done(function(data){
+    // your content
+  })
 </mock-syntax-highlighter>
 `;
 
@@ -1723,26 +1723,26 @@ exports[`Storyshots Code With language props 1`] = `
   wrapLines={true}
 >
   include &lt;HttpClient.h&gt;
-include &lt;EthernetClient.h&gt;
-
-EthernetClient content;
-HttpClient http(content);
-
-content.println("POST /mcs/v2/devices/DzdpHYIZ/datapoints.csv HTTP/1.1");
-#hint! Please do not add excessive spaces
-
-String data = "inte,,123"
-
-#hint! Please do not add excessive spaces
-#timestamp is in unix-time format the milliseconds and is optional. If not provided,
-
-#system will generate timestamp at the time of receiving this API
-int dataLength = data.length();
-
-content.println("Host: api.mediatek.com");
-content.println("deviceKey: Cio34Lj7Na5RmQXj");
-content.print("Content-Length: ");
-content.println(dataLength);
+  include &lt;EthernetClient.h&gt;
+  
+  EthernetClient content;
+  HttpClient http(content);
+  
+  content.println("POST /mcs/v2/devices/DzdpHYIZ/datapoints.csv HTTP/1.1");
+  #hint! Please do not add excessive spaces
+  
+  String data = "inte,,123"
+  
+  #hint! Please do not add excessive spaces
+  #timestamp is in unix-time format the milliseconds and is optional. If not provided,
+  
+  #system will generate timestamp at the time of receiving this API
+  int dataLength = data.length();
+  
+  content.println("Host: api.mediatek.com");
+  content.println("deviceKey: Cio34Lj7Na5RmQXj");
+  content.print("Content-Length: ");
+  content.println(dataLength);
 </mock-syntax-highlighter>
 `;
 
@@ -2214,16 +2214,16 @@ exports[`Storyshots DataChannel ControlRange - Stateful PPAP 1`] = `
   -webkit-appearance: none;
   height: 16px;
   border-radius: 8px;
-  background-image: linear-gradient(-180deg,#DFDFDF 5%,#F6F6F6 96%);
-  box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.35),inset 0 0 0 2px #E5E6E6,inset 0 1px 10px 0 rgba(0,0,0,0.05);
+  background-image: linear-gradient(-180deg,#dfdfdf 5%,#f6f6f6 96%);
+  box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.35),inset 0 0 0 2px #e5e6e6,inset 0 1px 10px 0 rgba(0,0,0,0.05);
 }
 
 .c8::-moz-range-track {
   -moz-appearance: none;
   height: 16px;
   border-radius: 8px;
-  background-image: linear-gradient(-180deg,#DFDFDF 5%,#F6F6F6 96%);
-  box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.35),inset 0 0 0 2px #E5E6E6,inset 0 1px 10px 0 rgba(0,0,0,0.05);
+  background-image: linear-gradient(-180deg,#dfdfdf 5%,#f6f6f6 96%);
+  box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.35),inset 0 0 0 2px #e5e6e6,inset 0 1px 10px 0 rgba(0,0,0,0.05);
 }
 
 .c8::-moz-focus-outer {
@@ -2234,8 +2234,8 @@ exports[`Storyshots DataChannel ControlRange - Stateful PPAP 1`] = `
   -webkit-appearance: none;
   height: 16px;
   border-radius: 8px;
-  background-image: linear-gradient(-180deg,#DFDFDF 5%,#F6F6F6 96%);
-  box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.35),inset 0 0 0 2px #E5E6E6,inset 0 1px 10px 0 rgba(0,0,0,0.05);
+  background-image: linear-gradient(-180deg,#dfdfdf 5%,#f6f6f6 96%);
+  box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.35),inset 0 0 0 2px #e5e6e6,inset 0 1px 10px 0 rgba(0,0,0,0.05);
 }
 
 .c8::-webkit-slider-thumb {
@@ -2244,7 +2244,7 @@ exports[`Storyshots DataChannel ControlRange - Stateful PPAP 1`] = `
   height: 40px;
   width: 40px;
   border-radius: 50%;
-  background-image: radial-gradient(50% 50%,#FFFFFF 50%,#FFFFFF 73%,#F8F8F8 81%,#EBEBEB 90%,#DDDDDD 95%);
+  background-image: radial-gradient( 50% 50%,#ffffff 50%,#ffffff 73%,#f8f8f8 81%,#ebebeb 90%,#dddddd 95% );
   -webkit-transition: -webkit-transform 0.3s ease,width 0.2s ease,height 0.2s ease;
   -webkit-transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
   transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
@@ -2257,7 +2257,7 @@ exports[`Storyshots DataChannel ControlRange - Stateful PPAP 1`] = `
   width: 40px;
   border-width: 0;
   border-radius: 50%;
-  background-image: radial-gradient(50% 50%,#FFFFFF 50%,#FFFFFF 73%,#F8F8F8 81%,#EBEBEB 90%,#DDDDDD 95%);
+  background-image: radial-gradient( 50% 50%,#ffffff 50%,#ffffff 73%,#f8f8f8 81%,#ebebeb 90%,#dddddd 95% );
   -moz-appearance: none;
   -moz-transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
   box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #00A1DE,inset 0 0 0 3px rgb(0,192,255);
@@ -2269,7 +2269,7 @@ exports[`Storyshots DataChannel ControlRange - Stateful PPAP 1`] = `
   height: 40px;
   width: 40px;
   border-radius: 50%;
-  background-image: radial-gradient(50% 50%,#FFFFFF 50%,#FFFFFF 73%,#F8F8F8 81%,#EBEBEB 90%,#DDDDDD 95%);
+  background-image: radial-gradient( 50% 50%,#ffffff 50%,#ffffff 73%,#f8f8f8 81%,#ebebeb 90%,#dddddd 95% );
   -webkit-transition: -webkit-transform 0.3s ease,width 0.2s ease,height 0.2s ease;
   -webkit-transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
   transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
@@ -2339,17 +2339,18 @@ exports[`Storyshots DataChannel ControlRange - Stateful PPAP 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   margin: 0 4px;
+  -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
-  -ms-flex-grow: 1;
+  -ms-flex-positive: 1;
   flex-grow: 1;
   -webkit-flex-basis: 0;
-  -ms-flex-basis: 0;
+  -ms-flex-preferred-size: 0;
   flex-basis: 0;
   overflow: hidden;
 }
 
 .c2::before {
-  content: "";
+  content: '';
   border-right-width: 1px;
   border-right-style: solid;
   border-right-color: #D1D2D3;
@@ -2464,16 +2465,16 @@ exports[`Storyshots DataChannel ControlRange - Stateful number 1`] = `
   -webkit-appearance: none;
   height: 16px;
   border-radius: 8px;
-  background-image: linear-gradient(-180deg,#DFDFDF 5%,#F6F6F6 96%);
-  box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.35),inset 0 0 0 2px #E5E6E6,inset 0 1px 10px 0 rgba(0,0,0,0.05);
+  background-image: linear-gradient(-180deg,#dfdfdf 5%,#f6f6f6 96%);
+  box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.35),inset 0 0 0 2px #e5e6e6,inset 0 1px 10px 0 rgba(0,0,0,0.05);
 }
 
 .c8::-moz-range-track {
   -moz-appearance: none;
   height: 16px;
   border-radius: 8px;
-  background-image: linear-gradient(-180deg,#DFDFDF 5%,#F6F6F6 96%);
-  box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.35),inset 0 0 0 2px #E5E6E6,inset 0 1px 10px 0 rgba(0,0,0,0.05);
+  background-image: linear-gradient(-180deg,#dfdfdf 5%,#f6f6f6 96%);
+  box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.35),inset 0 0 0 2px #e5e6e6,inset 0 1px 10px 0 rgba(0,0,0,0.05);
 }
 
 .c8::-moz-focus-outer {
@@ -2484,8 +2485,8 @@ exports[`Storyshots DataChannel ControlRange - Stateful number 1`] = `
   -webkit-appearance: none;
   height: 16px;
   border-radius: 8px;
-  background-image: linear-gradient(-180deg,#DFDFDF 5%,#F6F6F6 96%);
-  box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.35),inset 0 0 0 2px #E5E6E6,inset 0 1px 10px 0 rgba(0,0,0,0.05);
+  background-image: linear-gradient(-180deg,#dfdfdf 5%,#f6f6f6 96%);
+  box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.35),inset 0 0 0 2px #e5e6e6,inset 0 1px 10px 0 rgba(0,0,0,0.05);
 }
 
 .c8::-webkit-slider-thumb {
@@ -2494,7 +2495,7 @@ exports[`Storyshots DataChannel ControlRange - Stateful number 1`] = `
   height: 40px;
   width: 40px;
   border-radius: 50%;
-  background-image: radial-gradient(50% 50%,#FFFFFF 50%,#FFFFFF 73%,#F8F8F8 81%,#EBEBEB 90%,#DDDDDD 95%);
+  background-image: radial-gradient( 50% 50%,#ffffff 50%,#ffffff 73%,#f8f8f8 81%,#ebebeb 90%,#dddddd 95% );
   -webkit-transition: -webkit-transform 0.3s ease,width 0.2s ease,height 0.2s ease;
   -webkit-transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
   transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
@@ -2507,7 +2508,7 @@ exports[`Storyshots DataChannel ControlRange - Stateful number 1`] = `
   width: 40px;
   border-width: 0;
   border-radius: 50%;
-  background-image: radial-gradient(50% 50%,#FFFFFF 50%,#FFFFFF 73%,#F8F8F8 81%,#EBEBEB 90%,#DDDDDD 95%);
+  background-image: radial-gradient( 50% 50%,#ffffff 50%,#ffffff 73%,#f8f8f8 81%,#ebebeb 90%,#dddddd 95% );
   -moz-appearance: none;
   -moz-transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
   box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #00A1DE,inset 0 0 0 3px rgb(0,192,255);
@@ -2519,7 +2520,7 @@ exports[`Storyshots DataChannel ControlRange - Stateful number 1`] = `
   height: 40px;
   width: 40px;
   border-radius: 50%;
-  background-image: radial-gradient(50% 50%,#FFFFFF 50%,#FFFFFF 73%,#F8F8F8 81%,#EBEBEB 90%,#DDDDDD 95%);
+  background-image: radial-gradient( 50% 50%,#ffffff 50%,#ffffff 73%,#f8f8f8 81%,#ebebeb 90%,#dddddd 95% );
   -webkit-transition: -webkit-transform 0.3s ease,width 0.2s ease,height 0.2s ease;
   -webkit-transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
   transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
@@ -2589,17 +2590,18 @@ exports[`Storyshots DataChannel ControlRange - Stateful number 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   margin: 0 4px;
+  -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
-  -ms-flex-grow: 1;
+  -ms-flex-positive: 1;
   flex-grow: 1;
   -webkit-flex-basis: 0;
-  -ms-flex-basis: 0;
+  -ms-flex-preferred-size: 0;
   flex-basis: 0;
   overflow: hidden;
 }
 
 .c2::before {
-  content: "";
+  content: '';
   border-right-width: 1px;
   border-right-style: solid;
   border-right-color: #D1D2D3;
@@ -2704,16 +2706,16 @@ exports[`Storyshots DataChannel ControlRange 1`] = `
   -webkit-appearance: none;
   height: 16px;
   border-radius: 8px;
-  background-image: linear-gradient(-180deg,#DFDFDF 5%,#F6F6F6 96%);
-  box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.35),inset 0 0 0 2px #E5E6E6,inset 0 1px 10px 0 rgba(0,0,0,0.05);
+  background-image: linear-gradient(-180deg,#dfdfdf 5%,#f6f6f6 96%);
+  box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.35),inset 0 0 0 2px #e5e6e6,inset 0 1px 10px 0 rgba(0,0,0,0.05);
 }
 
 .c9::-moz-range-track {
   -moz-appearance: none;
   height: 16px;
   border-radius: 8px;
-  background-image: linear-gradient(-180deg,#DFDFDF 5%,#F6F6F6 96%);
-  box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.35),inset 0 0 0 2px #E5E6E6,inset 0 1px 10px 0 rgba(0,0,0,0.05);
+  background-image: linear-gradient(-180deg,#dfdfdf 5%,#f6f6f6 96%);
+  box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.35),inset 0 0 0 2px #e5e6e6,inset 0 1px 10px 0 rgba(0,0,0,0.05);
 }
 
 .c9::-moz-focus-outer {
@@ -2724,8 +2726,8 @@ exports[`Storyshots DataChannel ControlRange 1`] = `
   -webkit-appearance: none;
   height: 16px;
   border-radius: 8px;
-  background-image: linear-gradient(-180deg,#DFDFDF 5%,#F6F6F6 96%);
-  box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.35),inset 0 0 0 2px #E5E6E6,inset 0 1px 10px 0 rgba(0,0,0,0.05);
+  background-image: linear-gradient(-180deg,#dfdfdf 5%,#f6f6f6 96%);
+  box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.35),inset 0 0 0 2px #e5e6e6,inset 0 1px 10px 0 rgba(0,0,0,0.05);
 }
 
 .c9::-webkit-slider-thumb {
@@ -2734,7 +2736,7 @@ exports[`Storyshots DataChannel ControlRange 1`] = `
   height: 40px;
   width: 40px;
   border-radius: 50%;
-  background-image: radial-gradient(50% 50%,#FFFFFF 50%,#FFFFFF 73%,#F8F8F8 81%,#EBEBEB 90%,#DDDDDD 95%);
+  background-image: radial-gradient( 50% 50%,#ffffff 50%,#ffffff 73%,#f8f8f8 81%,#ebebeb 90%,#dddddd 95% );
   -webkit-transition: -webkit-transform 0.3s ease,width 0.2s ease,height 0.2s ease;
   -webkit-transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
   transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
@@ -2747,7 +2749,7 @@ exports[`Storyshots DataChannel ControlRange 1`] = `
   width: 40px;
   border-width: 0;
   border-radius: 50%;
-  background-image: radial-gradient(50% 50%,#FFFFFF 50%,#FFFFFF 73%,#F8F8F8 81%,#EBEBEB 90%,#DDDDDD 95%);
+  background-image: radial-gradient( 50% 50%,#ffffff 50%,#ffffff 73%,#f8f8f8 81%,#ebebeb 90%,#dddddd 95% );
   -moz-appearance: none;
   -moz-transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
   box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #00A1DE,inset 0 0 0 3px rgb(0,192,255);
@@ -2759,7 +2761,7 @@ exports[`Storyshots DataChannel ControlRange 1`] = `
   height: 40px;
   width: 40px;
   border-radius: 50%;
-  background-image: radial-gradient(50% 50%,#FFFFFF 50%,#FFFFFF 73%,#F8F8F8 81%,#EBEBEB 90%,#DDDDDD 95%);
+  background-image: radial-gradient( 50% 50%,#ffffff 50%,#ffffff 73%,#f8f8f8 81%,#ebebeb 90%,#dddddd 95% );
   -webkit-transition: -webkit-transform 0.3s ease,width 0.2s ease,height 0.2s ease;
   -webkit-transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
   transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
@@ -2850,17 +2852,18 @@ exports[`Storyshots DataChannel ControlRange 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   margin: 0 4px;
+  -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
-  -ms-flex-grow: 1;
+  -ms-flex-positive: 1;
   flex-grow: 1;
   -webkit-flex-basis: 0;
-  -ms-flex-basis: 0;
+  -ms-flex-preferred-size: 0;
   flex-basis: 0;
   overflow: hidden;
 }
 
 .c3::before {
-  content: "";
+  content: '';
   border-right-width: 1px;
   border-right-style: solid;
   border-right-color: #D1D2D3;
@@ -3321,15 +3324,16 @@ exports[`Storyshots DataChannel ControlString 1`] = `
   flex-wrap: wrap;
   margin-top: 10px;
   -webkit-flex-shrink: 0;
-  -ms-flex-shrink: 0;
+  -ms-flex-negative: 0;
   flex-shrink: 0;
 }
 
 .c1 {
   height: 100%;
   min-height: 4em;
+  -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
-  -ms-flex-grow: 1;
+  -ms-flex-positive: 1;
   flex-grow: 1;
 }
 
@@ -3395,7 +3399,7 @@ exports[`Storyshots DataChannel ControlSwitch 1`] = `
 }
 
 .c0::after {
-  content: " ";
+  content: ' ';
   position: absolute;
   width: 42px;
   height: 42px;
@@ -3549,11 +3553,12 @@ exports[`Storyshots DataChannel DisplayStatus 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
-  -ms-flex-grow: 1;
+  -ms-flex-positive: 1;
   flex-grow: 1;
   -webkit-flex-basis: 0;
-  -ms-flex-basis: 0;
+  -ms-flex-preferred-size: 0;
   flex-basis: 0;
   margin: 0 4px;
   overflow: hidden;
@@ -3804,8 +3809,9 @@ exports[`Storyshots DataChannel DisplayString 1`] = `
 .c1 {
   height: 100%;
   min-height: 4em;
+  -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
-  -ms-flex-grow: 1;
+  -ms-flex-positive: 1;
   flex-grow: 1;
 }
 
@@ -3985,7 +3991,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
 }
 
 .c32::after {
-  content: " ";
+  content: ' ';
   position: absolute;
   width: 42px;
   height: 42px;
@@ -4166,15 +4172,16 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
   flex-wrap: wrap;
   margin-top: 10px;
   -webkit-flex-shrink: 0;
-  -ms-flex-shrink: 0;
+  -ms-flex-negative: 0;
   flex-shrink: 0;
 }
 
 .c27 {
   height: 100%;
   min-height: 4em;
+  -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
-  -ms-flex-grow: 1;
+  -ms-flex-positive: 1;
   flex-grow: 1;
 }
 
@@ -4191,16 +4198,16 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
   -webkit-appearance: none;
   height: 16px;
   border-radius: 8px;
-  background-image: linear-gradient(-180deg,#DFDFDF 5%,#F6F6F6 96%);
-  box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.35),inset 0 0 0 2px #E5E6E6,inset 0 1px 10px 0 rgba(0,0,0,0.05);
+  background-image: linear-gradient(-180deg,#dfdfdf 5%,#f6f6f6 96%);
+  box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.35),inset 0 0 0 2px #e5e6e6,inset 0 1px 10px 0 rgba(0,0,0,0.05);
 }
 
 .c44::-moz-range-track {
   -moz-appearance: none;
   height: 16px;
   border-radius: 8px;
-  background-image: linear-gradient(-180deg,#DFDFDF 5%,#F6F6F6 96%);
-  box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.35),inset 0 0 0 2px #E5E6E6,inset 0 1px 10px 0 rgba(0,0,0,0.05);
+  background-image: linear-gradient(-180deg,#dfdfdf 5%,#f6f6f6 96%);
+  box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.35),inset 0 0 0 2px #e5e6e6,inset 0 1px 10px 0 rgba(0,0,0,0.05);
 }
 
 .c44::-moz-focus-outer {
@@ -4211,8 +4218,8 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
   -webkit-appearance: none;
   height: 16px;
   border-radius: 8px;
-  background-image: linear-gradient(-180deg,#DFDFDF 5%,#F6F6F6 96%);
-  box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.35),inset 0 0 0 2px #E5E6E6,inset 0 1px 10px 0 rgba(0,0,0,0.05);
+  background-image: linear-gradient(-180deg,#dfdfdf 5%,#f6f6f6 96%);
+  box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.35),inset 0 0 0 2px #e5e6e6,inset 0 1px 10px 0 rgba(0,0,0,0.05);
 }
 
 .c44::-webkit-slider-thumb {
@@ -4221,7 +4228,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
   height: 40px;
   width: 40px;
   border-radius: 50%;
-  background-image: radial-gradient(50% 50%,#FFFFFF 50%,#FFFFFF 73%,#F8F8F8 81%,#EBEBEB 90%,#DDDDDD 95%);
+  background-image: radial-gradient( 50% 50%,#ffffff 50%,#ffffff 73%,#f8f8f8 81%,#ebebeb 90%,#dddddd 95% );
   -webkit-transition: -webkit-transform 0.3s ease,width 0.2s ease,height 0.2s ease;
   -webkit-transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
   transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
@@ -4234,7 +4241,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
   width: 40px;
   border-width: 0;
   border-radius: 50%;
-  background-image: radial-gradient(50% 50%,#FFFFFF 50%,#FFFFFF 73%,#F8F8F8 81%,#EBEBEB 90%,#DDDDDD 95%);
+  background-image: radial-gradient( 50% 50%,#ffffff 50%,#ffffff 73%,#f8f8f8 81%,#ebebeb 90%,#dddddd 95% );
   -moz-appearance: none;
   -moz-transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
   box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #00A1DE,inset 0 0 0 3px rgb(0,192,255);
@@ -4246,7 +4253,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
   height: 40px;
   width: 40px;
   border-radius: 50%;
-  background-image: radial-gradient(50% 50%,#FFFFFF 50%,#FFFFFF 73%,#F8F8F8 81%,#EBEBEB 90%,#DDDDDD 95%);
+  background-image: radial-gradient( 50% 50%,#ffffff 50%,#ffffff 73%,#f8f8f8 81%,#ebebeb 90%,#dddddd 95% );
   -webkit-transition: -webkit-transform 0.3s ease,width 0.2s ease,height 0.2s ease;
   -webkit-transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
   transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
@@ -4316,17 +4323,18 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   margin: 0 4px;
+  -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
-  -ms-flex-grow: 1;
+  -ms-flex-positive: 1;
   flex-grow: 1;
   -webkit-flex-basis: 0;
-  -ms-flex-basis: 0;
+  -ms-flex-preferred-size: 0;
   flex-basis: 0;
   overflow: hidden;
 }
 
 .c39::before {
-  content: "";
+  content: '';
   border-right-width: 1px;
   border-right-style: solid;
   border-right-color: #D1D2D3;
@@ -4407,11 +4415,12 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
-  -ms-flex-grow: 1;
+  -ms-flex-positive: 1;
   flex-grow: 1;
   -webkit-flex-basis: 0;
-  -ms-flex-basis: 0;
+  -ms-flex-preferred-size: 0;
   flex-basis: 0;
   margin: 0 4px;
   overflow: hidden;
@@ -4495,8 +4504,9 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
 .c31 {
   height: 100%;
   min-height: 4em;
+  -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
-  -ms-flex-grow: 1;
+  -ms-flex-positive: 1;
   flex-grow: 1;
 }
 
@@ -4510,7 +4520,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
 
 .c3 {
   -webkit-flex-basis: 24px;
-  -ms-flex-basis: 24px;
+  -ms-flex-preferred-size: 24px;
   flex-basis: 24px;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -4527,8 +4537,9 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
 }
 
 .c4 {
+  -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
-  -ms-flex-grow: 1;
+  -ms-flex-positive: 1;
   flex-grow: 1;
   display: -webkit-box;
   display: -webkit-flex;
@@ -4600,16 +4611,17 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
   padding: 8px 16px;
   margin: 4px;
   -webkit-flex-basis: 100%;
-  -ms-flex-basis: 100%;
+  -ms-flex-preferred-size: 100%;
   flex-basis: 100%;
 }
 
-.c0 > [data-width ~= half] {
+.c0 > [data-width ~=' half'] {
+  -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
-  -ms-flex-grow: 1;
+  -ms-flex-positive: 1;
   flex-grow: 1;
   -webkit-flex-basis: 40%;
-  -ms-flex-basis: 40%;
+  -ms-flex-preferred-size: 40%;
   flex-basis: 40%;
 }
 
@@ -4624,7 +4636,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
       className="c3"
     >
       <a
-        href=""
+        href="."
       >
         Link
       </a>
@@ -4718,7 +4730,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
       className="c3"
     >
       <a
-        href=""
+        href="."
       >
         Link
       </a>
@@ -4778,7 +4790,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
       className="c3"
     >
       <a
-        href=""
+        href="."
       >
         Link
       </a>
@@ -4872,7 +4884,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
       className="c3"
     >
       <a
-        href=""
+        href="."
       >
         Link
       </a>
@@ -4932,7 +4944,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
       className="c3"
     >
       <a
-        href=""
+        href="."
       >
         Link
       </a>
@@ -5019,7 +5031,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
       className="c3"
     >
       <a
-        href=""
+        href="."
       >
         Link
       </a>
@@ -5074,7 +5086,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
       className="c3"
     >
       <a
-        href=""
+        href="."
       >
         Link
       </a>
@@ -5161,7 +5173,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
       className="c3"
     >
       <a
-        href=""
+        href="."
       >
         Link
       </a>
@@ -5216,7 +5228,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
       className="c3"
     >
       <a
-        href=""
+        href="."
       >
         Link
       </a>
@@ -5266,7 +5278,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
       className="c3"
     >
       <a
-        href=""
+        href="."
       >
         Link
       </a>
@@ -5360,7 +5372,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
       className="c3"
     >
       <a
-        href=""
+        href="."
       >
         Link
       </a>
@@ -5460,7 +5472,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
       className="c3"
     >
       <a
-        href=""
+        href="."
       >
         Link
       </a>
@@ -5623,7 +5635,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
       className="c3"
     >
       <a
-        href=""
+        href="."
       >
         Link
       </a>
@@ -5723,7 +5735,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
       className="c3"
     >
       <a
-        href=""
+        href="."
       >
         Link
       </a>
@@ -5817,7 +5829,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
       className="c3"
     >
       <a
-        href=""
+        href="."
       >
         Link
       </a>
@@ -5917,7 +5929,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
       className="c3"
     >
       <a
-        href=""
+        href="."
       >
         Link
       </a>
@@ -5993,7 +6005,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
       className="c3"
     >
       <a
-        href=""
+        href="."
       >
         Link
       </a>
@@ -6160,7 +6172,7 @@ exports[`Storyshots DataChannelCard API 1`] = `
 
 .c2 {
   -webkit-flex-basis: 24px;
-  -ms-flex-basis: 24px;
+  -ms-flex-preferred-size: 24px;
   flex-basis: 24px;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -6177,8 +6189,9 @@ exports[`Storyshots DataChannelCard API 1`] = `
 }
 
 .c3 {
+  -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
-  -ms-flex-grow: 1;
+  -ms-flex-positive: 1;
   flex-grow: 1;
   display: -webkit-box;
   display: -webkit-flex;
@@ -6238,7 +6251,7 @@ exports[`Storyshots DataChannelCard API 1`] = `
     className="c2"
   >
     <a
-      href=""
+      href="."
     >
       Link
     </a>
@@ -6319,7 +6332,7 @@ exports[`Storyshots DataChannelCard Custom width and height 1`] = `
 }
 
 .c5::after {
-  content: " ";
+  content: ' ';
   position: absolute;
   width: 42px;
   height: 42px;
@@ -6345,7 +6358,7 @@ exports[`Storyshots DataChannelCard Custom width and height 1`] = `
 
 .c3 {
   -webkit-flex-basis: 24px;
-  -ms-flex-basis: 24px;
+  -ms-flex-preferred-size: 24px;
   flex-basis: 24px;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -6362,8 +6375,9 @@ exports[`Storyshots DataChannelCard Custom width and height 1`] = `
 }
 
 .c4 {
+  -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
-  -ms-flex-grow: 1;
+  -ms-flex-positive: 1;
   flex-grow: 1;
   display: -webkit-box;
   display: -webkit-flex;
@@ -6503,7 +6517,7 @@ exports[`Storyshots DataChannelCard With Component selector 1`] = `
 
 .c3 {
   -webkit-flex-basis: 24px;
-  -ms-flex-basis: 24px;
+  -ms-flex-preferred-size: 24px;
   flex-basis: 24px;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -6520,8 +6534,9 @@ exports[`Storyshots DataChannelCard With Component selector 1`] = `
 }
 
 .c4 {
+  -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
-  -ms-flex-grow: 1;
+  -ms-flex-positive: 1;
   flex-grow: 1;
   display: -webkit-box;
   display: -webkit-flex;
@@ -6662,7 +6677,7 @@ exports[`Storyshots DataChannelCard With empty description 1`] = `
 }
 
 .c4::after {
-  content: " ";
+  content: ' ';
   position: absolute;
   width: 42px;
   height: 42px;
@@ -6688,7 +6703,7 @@ exports[`Storyshots DataChannelCard With empty description 1`] = `
 
 .c2 {
   -webkit-flex-basis: 24px;
-  -ms-flex-basis: 24px;
+  -ms-flex-preferred-size: 24px;
   flex-basis: 24px;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -6705,8 +6720,9 @@ exports[`Storyshots DataChannelCard With empty description 1`] = `
 }
 
 .c3 {
+  -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
-  -ms-flex-grow: 1;
+  -ms-flex-positive: 1;
   flex-grow: 1;
   display: -webkit-box;
   display: -webkit-flex;
@@ -6841,7 +6857,7 @@ exports[`Storyshots DataChannelCard Without description 1`] = `
 }
 
 .c4::after {
-  content: " ";
+  content: ' ';
   position: absolute;
   width: 42px;
   height: 42px;
@@ -6859,7 +6875,7 @@ exports[`Storyshots DataChannelCard Without description 1`] = `
 
 .c2 {
   -webkit-flex-basis: 24px;
-  -ms-flex-basis: 24px;
+  -ms-flex-preferred-size: 24px;
   flex-basis: 24px;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -6876,8 +6892,9 @@ exports[`Storyshots DataChannelCard Without description 1`] = `
 }
 
 .c3 {
+  -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
-  -ms-flex-grow: 1;
+  -ms-flex-positive: 1;
   flex-grow: 1;
   display: -webkit-box;
   display: -webkit-flex;
@@ -7186,8 +7203,9 @@ exports[`Storyshots DatetimePicker API 1`] = `
 }
 
 .c0 > * {
+  -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
-  -ms-flex-grow: 1;
+  -ms-flex-positive: 1;
   flex-grow: 1;
 }
 
@@ -7207,7 +7225,7 @@ exports[`Storyshots DatetimePicker API 1`] = `
   height: 100%;
   left: 0;
   right: 0;
-  background-image: linear-gradient(to bottom,rgba(255,255,255,0.95),rgba(255,255,255,0.6)),linear-gradient(to top,rgba(255,255,255,0.95),rgba(255,255,255,0.6));
+  background-image: linear-gradient( to bottom,rgba(255,255,255,0.95),rgba(255,255,255,0.6) ),linear-gradient(to top,rgba(255,255,255,0.95),rgba(255,255,255,0.6));
   background-position: top,bottom;
   background-size: 100% 32px;
   background-repeat: no-repeat;
@@ -8343,7 +8361,8 @@ exports[`Storyshots Heading With level props 1`] = `
     1
        (
     2.46rem
-     = 
+     =
+     
     31.98px
     )
   </h1>
@@ -8356,7 +8375,8 @@ exports[`Storyshots Heading With level props 1`] = `
     2
        (
     1.69rem
-     = 
+     =
+     
     21.97px
     )
   </h2>
@@ -8369,7 +8389,8 @@ exports[`Storyshots Heading With level props 1`] = `
     3
        (
     1.38rem
-     = 
+     =
+     
     17.939999999999998px
     )
   </h3>
@@ -8382,7 +8403,8 @@ exports[`Storyshots Heading With level props 1`] = `
     4
        (
     1.15rem
-     = 
+     =
+     
     14.95px
     )
   </h4>
@@ -8395,7 +8417,8 @@ exports[`Storyshots Heading With level props 1`] = `
     5
        (
     1rem
-     = 
+     =
+     
     13px
     )
   </h5>
@@ -8408,7 +8431,8 @@ exports[`Storyshots Heading With level props 1`] = `
     6
        (
     1rem
-     = 
+     =
+     
     13px
     )
   </h6>
@@ -9309,7 +9333,7 @@ exports[`Storyshots InputGroup API 1`] = `
 
 .c1 > button {
   -webkit-flex-shrink: 0;
-  -ms-flex-shrink: 0;
+  -ms-flex-negative: 0;
   flex-shrink: 0;
 }
 
@@ -9458,16 +9482,16 @@ exports[`Storyshots InputRange API 1`] = `
   -webkit-appearance: none;
   height: 16px;
   border-radius: 8px;
-  background-image: linear-gradient(-180deg,#DFDFDF 5%,#F6F6F6 96%);
-  box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.35),inset 0 0 0 2px #E5E6E6,inset 0 1px 10px 0 rgba(0,0,0,0.05);
+  background-image: linear-gradient(-180deg,#dfdfdf 5%,#f6f6f6 96%);
+  box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.35),inset 0 0 0 2px #e5e6e6,inset 0 1px 10px 0 rgba(0,0,0,0.05);
 }
 
 .c0::-moz-range-track {
   -moz-appearance: none;
   height: 16px;
   border-radius: 8px;
-  background-image: linear-gradient(-180deg,#DFDFDF 5%,#F6F6F6 96%);
-  box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.35),inset 0 0 0 2px #E5E6E6,inset 0 1px 10px 0 rgba(0,0,0,0.05);
+  background-image: linear-gradient(-180deg,#dfdfdf 5%,#f6f6f6 96%);
+  box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.35),inset 0 0 0 2px #e5e6e6,inset 0 1px 10px 0 rgba(0,0,0,0.05);
 }
 
 .c0::-moz-focus-outer {
@@ -9478,8 +9502,8 @@ exports[`Storyshots InputRange API 1`] = `
   -webkit-appearance: none;
   height: 16px;
   border-radius: 8px;
-  background-image: linear-gradient(-180deg,#DFDFDF 5%,#F6F6F6 96%);
-  box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.35),inset 0 0 0 2px #E5E6E6,inset 0 1px 10px 0 rgba(0,0,0,0.05);
+  background-image: linear-gradient(-180deg,#dfdfdf 5%,#f6f6f6 96%);
+  box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.35),inset 0 0 0 2px #e5e6e6,inset 0 1px 10px 0 rgba(0,0,0,0.05);
 }
 
 .c0::-webkit-slider-thumb {
@@ -9488,7 +9512,7 @@ exports[`Storyshots InputRange API 1`] = `
   height: 40px;
   width: 40px;
   border-radius: 50%;
-  background-image: radial-gradient(50% 50%,#FFFFFF 50%,#FFFFFF 73%,#F8F8F8 81%,#EBEBEB 90%,#DDDDDD 95%);
+  background-image: radial-gradient( 50% 50%,#ffffff 50%,#ffffff 73%,#f8f8f8 81%,#ebebeb 90%,#dddddd 95% );
   -webkit-transition: -webkit-transform 0.3s ease,width 0.2s ease,height 0.2s ease;
   -webkit-transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
   transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
@@ -9501,7 +9525,7 @@ exports[`Storyshots InputRange API 1`] = `
   width: 40px;
   border-width: 0;
   border-radius: 50%;
-  background-image: radial-gradient(50% 50%,#FFFFFF 50%,#FFFFFF 73%,#F8F8F8 81%,#EBEBEB 90%,#DDDDDD 95%);
+  background-image: radial-gradient( 50% 50%,#ffffff 50%,#ffffff 73%,#f8f8f8 81%,#ebebeb 90%,#dddddd 95% );
   -moz-appearance: none;
   -moz-transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
   box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #00A1DE,inset 0 0 0 3px rgb(0,192,255);
@@ -9513,7 +9537,7 @@ exports[`Storyshots InputRange API 1`] = `
   height: 40px;
   width: 40px;
   border-radius: 50%;
-  background-image: radial-gradient(50% 50%,#FFFFFF 50%,#FFFFFF 73%,#F8F8F8 81%,#EBEBEB 90%,#DDDDDD 95%);
+  background-image: radial-gradient( 50% 50%,#ffffff 50%,#ffffff 73%,#f8f8f8 81%,#ebebeb 90%,#dddddd 95% );
   -webkit-transition: -webkit-transform 0.3s ease,width 0.2s ease,height 0.2s ease;
   -webkit-transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
   transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
@@ -9559,16 +9583,16 @@ exports[`Storyshots InputRange With kind props 1`] = `
   -webkit-appearance: none;
   height: 16px;
   border-radius: 8px;
-  background-image: linear-gradient(-180deg,#DFDFDF 5%,#F6F6F6 96%);
-  box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.35),inset 0 0 0 2px #E5E6E6,inset 0 1px 10px 0 rgba(0,0,0,0.05);
+  background-image: linear-gradient(-180deg,#dfdfdf 5%,#f6f6f6 96%);
+  box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.35),inset 0 0 0 2px #e5e6e6,inset 0 1px 10px 0 rgba(0,0,0,0.05);
 }
 
 .c2::-moz-range-track {
   -moz-appearance: none;
   height: 16px;
   border-radius: 8px;
-  background-image: linear-gradient(-180deg,#DFDFDF 5%,#F6F6F6 96%);
-  box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.35),inset 0 0 0 2px #E5E6E6,inset 0 1px 10px 0 rgba(0,0,0,0.05);
+  background-image: linear-gradient(-180deg,#dfdfdf 5%,#f6f6f6 96%);
+  box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.35),inset 0 0 0 2px #e5e6e6,inset 0 1px 10px 0 rgba(0,0,0,0.05);
 }
 
 .c2::-moz-focus-outer {
@@ -9579,8 +9603,8 @@ exports[`Storyshots InputRange With kind props 1`] = `
   -webkit-appearance: none;
   height: 16px;
   border-radius: 8px;
-  background-image: linear-gradient(-180deg,#DFDFDF 5%,#F6F6F6 96%);
-  box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.35),inset 0 0 0 2px #E5E6E6,inset 0 1px 10px 0 rgba(0,0,0,0.05);
+  background-image: linear-gradient(-180deg,#dfdfdf 5%,#f6f6f6 96%);
+  box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.35),inset 0 0 0 2px #e5e6e6,inset 0 1px 10px 0 rgba(0,0,0,0.05);
 }
 
 .c2::-webkit-slider-thumb {
@@ -9589,7 +9613,7 @@ exports[`Storyshots InputRange With kind props 1`] = `
   height: 40px;
   width: 40px;
   border-radius: 50%;
-  background-image: radial-gradient(50% 50%,#FFFFFF 50%,#FFFFFF 73%,#F8F8F8 81%,#EBEBEB 90%,#DDDDDD 95%);
+  background-image: radial-gradient( 50% 50%,#ffffff 50%,#ffffff 73%,#f8f8f8 81%,#ebebeb 90%,#dddddd 95% );
   -webkit-transition: -webkit-transform 0.3s ease,width 0.2s ease,height 0.2s ease;
   -webkit-transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
   transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
@@ -9602,7 +9626,7 @@ exports[`Storyshots InputRange With kind props 1`] = `
   width: 40px;
   border-width: 0;
   border-radius: 50%;
-  background-image: radial-gradient(50% 50%,#FFFFFF 50%,#FFFFFF 73%,#F8F8F8 81%,#EBEBEB 90%,#DDDDDD 95%);
+  background-image: radial-gradient( 50% 50%,#ffffff 50%,#ffffff 73%,#f8f8f8 81%,#ebebeb 90%,#dddddd 95% );
   -moz-appearance: none;
   -moz-transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
   box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #00A1DE,inset 0 0 0 3px rgb(0,192,255);
@@ -9614,7 +9638,7 @@ exports[`Storyshots InputRange With kind props 1`] = `
   height: 40px;
   width: 40px;
   border-radius: 50%;
-  background-image: radial-gradient(50% 50%,#FFFFFF 50%,#FFFFFF 73%,#F8F8F8 81%,#EBEBEB 90%,#DDDDDD 95%);
+  background-image: radial-gradient( 50% 50%,#ffffff 50%,#ffffff 73%,#f8f8f8 81%,#ebebeb 90%,#dddddd 95% );
   -webkit-transition: -webkit-transform 0.3s ease,width 0.2s ease,height 0.2s ease;
   -webkit-transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
   transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
@@ -9652,16 +9676,16 @@ exports[`Storyshots InputRange With kind props 1`] = `
   -webkit-appearance: none;
   height: 16px;
   border-radius: 8px;
-  background-image: linear-gradient(-180deg,#DFDFDF 5%,#F6F6F6 96%);
-  box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.35),inset 0 0 0 2px #E5E6E6,inset 0 1px 10px 0 rgba(0,0,0,0.05);
+  background-image: linear-gradient(-180deg,#dfdfdf 5%,#f6f6f6 96%);
+  box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.35),inset 0 0 0 2px #e5e6e6,inset 0 1px 10px 0 rgba(0,0,0,0.05);
 }
 
 .c1::-moz-range-track {
   -moz-appearance: none;
   height: 16px;
   border-radius: 8px;
-  background-image: linear-gradient(-180deg,#DFDFDF 5%,#F6F6F6 96%);
-  box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.35),inset 0 0 0 2px #E5E6E6,inset 0 1px 10px 0 rgba(0,0,0,0.05);
+  background-image: linear-gradient(-180deg,#dfdfdf 5%,#f6f6f6 96%);
+  box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.35),inset 0 0 0 2px #e5e6e6,inset 0 1px 10px 0 rgba(0,0,0,0.05);
 }
 
 .c1::-moz-focus-outer {
@@ -9672,8 +9696,8 @@ exports[`Storyshots InputRange With kind props 1`] = `
   -webkit-appearance: none;
   height: 16px;
   border-radius: 8px;
-  background-image: linear-gradient(-180deg,#DFDFDF 5%,#F6F6F6 96%);
-  box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.35),inset 0 0 0 2px #E5E6E6,inset 0 1px 10px 0 rgba(0,0,0,0.05);
+  background-image: linear-gradient(-180deg,#dfdfdf 5%,#f6f6f6 96%);
+  box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.35),inset 0 0 0 2px #e5e6e6,inset 0 1px 10px 0 rgba(0,0,0,0.05);
 }
 
 .c1::-webkit-slider-thumb {
@@ -9682,7 +9706,7 @@ exports[`Storyshots InputRange With kind props 1`] = `
   height: 40px;
   width: 40px;
   border-radius: 50%;
-  background-image: radial-gradient(50% 50%,#FFFFFF 50%,#FFFFFF 73%,#F8F8F8 81%,#EBEBEB 90%,#DDDDDD 95%);
+  background-image: radial-gradient( 50% 50%,#ffffff 50%,#ffffff 73%,#f8f8f8 81%,#ebebeb 90%,#dddddd 95% );
   -webkit-transition: -webkit-transform 0.3s ease,width 0.2s ease,height 0.2s ease;
   -webkit-transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
   transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
@@ -9695,7 +9719,7 @@ exports[`Storyshots InputRange With kind props 1`] = `
   width: 40px;
   border-width: 0;
   border-radius: 50%;
-  background-image: radial-gradient(50% 50%,#FFFFFF 50%,#FFFFFF 73%,#F8F8F8 81%,#EBEBEB 90%,#DDDDDD 95%);
+  background-image: radial-gradient( 50% 50%,#ffffff 50%,#ffffff 73%,#f8f8f8 81%,#ebebeb 90%,#dddddd 95% );
   -moz-appearance: none;
   -moz-transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
   box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #FAFAFA,inset 0 0 0 3px rgb(255,255,255);
@@ -9707,7 +9731,7 @@ exports[`Storyshots InputRange With kind props 1`] = `
   height: 40px;
   width: 40px;
   border-radius: 50%;
-  background-image: radial-gradient(50% 50%,#FFFFFF 50%,#FFFFFF 73%,#F8F8F8 81%,#EBEBEB 90%,#DDDDDD 95%);
+  background-image: radial-gradient( 50% 50%,#ffffff 50%,#ffffff 73%,#f8f8f8 81%,#ebebeb 90%,#dddddd 95% );
   -webkit-transition: -webkit-transform 0.3s ease,width 0.2s ease,height 0.2s ease;
   -webkit-transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
   transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
@@ -9745,16 +9769,16 @@ exports[`Storyshots InputRange With kind props 1`] = `
   -webkit-appearance: none;
   height: 16px;
   border-radius: 8px;
-  background-image: linear-gradient(-180deg,#DFDFDF 5%,#F6F6F6 96%);
-  box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.35),inset 0 0 0 2px #E5E6E6,inset 0 1px 10px 0 rgba(0,0,0,0.05);
+  background-image: linear-gradient(-180deg,#dfdfdf 5%,#f6f6f6 96%);
+  box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.35),inset 0 0 0 2px #e5e6e6,inset 0 1px 10px 0 rgba(0,0,0,0.05);
 }
 
 .c3::-moz-range-track {
   -moz-appearance: none;
   height: 16px;
   border-radius: 8px;
-  background-image: linear-gradient(-180deg,#DFDFDF 5%,#F6F6F6 96%);
-  box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.35),inset 0 0 0 2px #E5E6E6,inset 0 1px 10px 0 rgba(0,0,0,0.05);
+  background-image: linear-gradient(-180deg,#dfdfdf 5%,#f6f6f6 96%);
+  box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.35),inset 0 0 0 2px #e5e6e6,inset 0 1px 10px 0 rgba(0,0,0,0.05);
 }
 
 .c3::-moz-focus-outer {
@@ -9765,8 +9789,8 @@ exports[`Storyshots InputRange With kind props 1`] = `
   -webkit-appearance: none;
   height: 16px;
   border-radius: 8px;
-  background-image: linear-gradient(-180deg,#DFDFDF 5%,#F6F6F6 96%);
-  box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.35),inset 0 0 0 2px #E5E6E6,inset 0 1px 10px 0 rgba(0,0,0,0.05);
+  background-image: linear-gradient(-180deg,#dfdfdf 5%,#f6f6f6 96%);
+  box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.35),inset 0 0 0 2px #e5e6e6,inset 0 1px 10px 0 rgba(0,0,0,0.05);
 }
 
 .c3::-webkit-slider-thumb {
@@ -9775,7 +9799,7 @@ exports[`Storyshots InputRange With kind props 1`] = `
   height: 40px;
   width: 40px;
   border-radius: 50%;
-  background-image: radial-gradient(50% 50%,#FFFFFF 50%,#FFFFFF 73%,#F8F8F8 81%,#EBEBEB 90%,#DDDDDD 95%);
+  background-image: radial-gradient( 50% 50%,#ffffff 50%,#ffffff 73%,#f8f8f8 81%,#ebebeb 90%,#dddddd 95% );
   -webkit-transition: -webkit-transform 0.3s ease,width 0.2s ease,height 0.2s ease;
   -webkit-transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
   transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
@@ -9788,7 +9812,7 @@ exports[`Storyshots InputRange With kind props 1`] = `
   width: 40px;
   border-width: 0;
   border-radius: 50%;
-  background-image: radial-gradient(50% 50%,#FFFFFF 50%,#FFFFFF 73%,#F8F8F8 81%,#EBEBEB 90%,#DDDDDD 95%);
+  background-image: radial-gradient( 50% 50%,#ffffff 50%,#ffffff 73%,#f8f8f8 81%,#ebebeb 90%,#dddddd 95% );
   -moz-appearance: none;
   -moz-transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
   box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #69BE28,inset 0 0 0 3px rgb(125,227,48);
@@ -9800,7 +9824,7 @@ exports[`Storyshots InputRange With kind props 1`] = `
   height: 40px;
   width: 40px;
   border-radius: 50%;
-  background-image: radial-gradient(50% 50%,#FFFFFF 50%,#FFFFFF 73%,#F8F8F8 81%,#EBEBEB 90%,#DDDDDD 95%);
+  background-image: radial-gradient( 50% 50%,#ffffff 50%,#ffffff 73%,#f8f8f8 81%,#ebebeb 90%,#dddddd 95% );
   -webkit-transition: -webkit-transform 0.3s ease,width 0.2s ease,height 0.2s ease;
   -webkit-transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
   transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
@@ -9838,16 +9862,16 @@ exports[`Storyshots InputRange With kind props 1`] = `
   -webkit-appearance: none;
   height: 16px;
   border-radius: 8px;
-  background-image: linear-gradient(-180deg,#DFDFDF 5%,#F6F6F6 96%);
-  box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.35),inset 0 0 0 2px #E5E6E6,inset 0 1px 10px 0 rgba(0,0,0,0.05);
+  background-image: linear-gradient(-180deg,#dfdfdf 5%,#f6f6f6 96%);
+  box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.35),inset 0 0 0 2px #e5e6e6,inset 0 1px 10px 0 rgba(0,0,0,0.05);
 }
 
 .c4::-moz-range-track {
   -moz-appearance: none;
   height: 16px;
   border-radius: 8px;
-  background-image: linear-gradient(-180deg,#DFDFDF 5%,#F6F6F6 96%);
-  box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.35),inset 0 0 0 2px #E5E6E6,inset 0 1px 10px 0 rgba(0,0,0,0.05);
+  background-image: linear-gradient(-180deg,#dfdfdf 5%,#f6f6f6 96%);
+  box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.35),inset 0 0 0 2px #e5e6e6,inset 0 1px 10px 0 rgba(0,0,0,0.05);
 }
 
 .c4::-moz-focus-outer {
@@ -9858,8 +9882,8 @@ exports[`Storyshots InputRange With kind props 1`] = `
   -webkit-appearance: none;
   height: 16px;
   border-radius: 8px;
-  background-image: linear-gradient(-180deg,#DFDFDF 5%,#F6F6F6 96%);
-  box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.35),inset 0 0 0 2px #E5E6E6,inset 0 1px 10px 0 rgba(0,0,0,0.05);
+  background-image: linear-gradient(-180deg,#dfdfdf 5%,#f6f6f6 96%);
+  box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.35),inset 0 0 0 2px #e5e6e6,inset 0 1px 10px 0 rgba(0,0,0,0.05);
 }
 
 .c4::-webkit-slider-thumb {
@@ -9868,7 +9892,7 @@ exports[`Storyshots InputRange With kind props 1`] = `
   height: 40px;
   width: 40px;
   border-radius: 50%;
-  background-image: radial-gradient(50% 50%,#FFFFFF 50%,#FFFFFF 73%,#F8F8F8 81%,#EBEBEB 90%,#DDDDDD 95%);
+  background-image: radial-gradient( 50% 50%,#ffffff 50%,#ffffff 73%,#f8f8f8 81%,#ebebeb 90%,#dddddd 95% );
   -webkit-transition: -webkit-transform 0.3s ease,width 0.2s ease,height 0.2s ease;
   -webkit-transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
   transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
@@ -9881,7 +9905,7 @@ exports[`Storyshots InputRange With kind props 1`] = `
   width: 40px;
   border-width: 0;
   border-radius: 50%;
-  background-image: radial-gradient(50% 50%,#FFFFFF 50%,#FFFFFF 73%,#F8F8F8 81%,#EBEBEB 90%,#DDDDDD 95%);
+  background-image: radial-gradient( 50% 50%,#ffffff 50%,#ffffff 73%,#f8f8f8 81%,#ebebeb 90%,#dddddd 95% );
   -moz-appearance: none;
   -moz-transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
   box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #F5364E,inset 0 0 0 3px rgb(255,65,93);
@@ -9893,7 +9917,7 @@ exports[`Storyshots InputRange With kind props 1`] = `
   height: 40px;
   width: 40px;
   border-radius: 50%;
-  background-image: radial-gradient(50% 50%,#FFFFFF 50%,#FFFFFF 73%,#F8F8F8 81%,#EBEBEB 90%,#DDDDDD 95%);
+  background-image: radial-gradient( 50% 50%,#ffffff 50%,#ffffff 73%,#f8f8f8 81%,#ebebeb 90%,#dddddd 95% );
   -webkit-transition: -webkit-transform 0.3s ease,width 0.2s ease,height 0.2s ease;
   -webkit-transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
   transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
@@ -9931,16 +9955,16 @@ exports[`Storyshots InputRange With kind props 1`] = `
   -webkit-appearance: none;
   height: 16px;
   border-radius: 8px;
-  background-image: linear-gradient(-180deg,#DFDFDF 5%,#F6F6F6 96%);
-  box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.35),inset 0 0 0 2px #E5E6E6,inset 0 1px 10px 0 rgba(0,0,0,0.05);
+  background-image: linear-gradient(-180deg,#dfdfdf 5%,#f6f6f6 96%);
+  box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.35),inset 0 0 0 2px #e5e6e6,inset 0 1px 10px 0 rgba(0,0,0,0.05);
 }
 
 .c5::-moz-range-track {
   -moz-appearance: none;
   height: 16px;
   border-radius: 8px;
-  background-image: linear-gradient(-180deg,#DFDFDF 5%,#F6F6F6 96%);
-  box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.35),inset 0 0 0 2px #E5E6E6,inset 0 1px 10px 0 rgba(0,0,0,0.05);
+  background-image: linear-gradient(-180deg,#dfdfdf 5%,#f6f6f6 96%);
+  box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.35),inset 0 0 0 2px #e5e6e6,inset 0 1px 10px 0 rgba(0,0,0,0.05);
 }
 
 .c5::-moz-focus-outer {
@@ -9951,8 +9975,8 @@ exports[`Storyshots InputRange With kind props 1`] = `
   -webkit-appearance: none;
   height: 16px;
   border-radius: 8px;
-  background-image: linear-gradient(-180deg,#DFDFDF 5%,#F6F6F6 96%);
-  box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.35),inset 0 0 0 2px #E5E6E6,inset 0 1px 10px 0 rgba(0,0,0,0.05);
+  background-image: linear-gradient(-180deg,#dfdfdf 5%,#f6f6f6 96%);
+  box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.35),inset 0 0 0 2px #e5e6e6,inset 0 1px 10px 0 rgba(0,0,0,0.05);
 }
 
 .c5::-webkit-slider-thumb {
@@ -9961,7 +9985,7 @@ exports[`Storyshots InputRange With kind props 1`] = `
   height: 40px;
   width: 40px;
   border-radius: 50%;
-  background-image: radial-gradient(50% 50%,#FFFFFF 50%,#FFFFFF 73%,#F8F8F8 81%,#EBEBEB 90%,#DDDDDD 95%);
+  background-image: radial-gradient( 50% 50%,#ffffff 50%,#ffffff 73%,#f8f8f8 81%,#ebebeb 90%,#dddddd 95% );
   -webkit-transition: -webkit-transform 0.3s ease,width 0.2s ease,height 0.2s ease;
   -webkit-transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
   transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
@@ -9974,7 +9998,7 @@ exports[`Storyshots InputRange With kind props 1`] = `
   width: 40px;
   border-width: 0;
   border-radius: 50%;
-  background-image: radial-gradient(50% 50%,#FFFFFF 50%,#FFFFFF 73%,#F8F8F8 81%,#EBEBEB 90%,#DDDDDD 95%);
+  background-image: radial-gradient( 50% 50%,#ffffff 50%,#ffffff 73%,#f8f8f8 81%,#ebebeb 90%,#dddddd 95% );
   -moz-appearance: none;
   -moz-transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
   box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #F39A1E,inset 0 0 0 3px rgb(255,184,36);
@@ -9986,7 +10010,7 @@ exports[`Storyshots InputRange With kind props 1`] = `
   height: 40px;
   width: 40px;
   border-radius: 50%;
-  background-image: radial-gradient(50% 50%,#FFFFFF 50%,#FFFFFF 73%,#F8F8F8 81%,#EBEBEB 90%,#DDDDDD 95%);
+  background-image: radial-gradient( 50% 50%,#ffffff 50%,#ffffff 73%,#f8f8f8 81%,#ebebeb 90%,#dddddd 95% );
   -webkit-transition: -webkit-transform 0.3s ease,width 0.2s ease,height 0.2s ease;
   -webkit-transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
   transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
@@ -10053,12 +10077,12 @@ exports[`Storyshots Label API 1`] = `
   color: #F5364E;
 }
 
-.faVMpE .c0 {
+.jiBFOP .c0 {
   display: block;
   padding-bottom: 5px;
 }
 
-.faVMpE * + .c0 {
+.jiBFOP * + .c0 {
   margin-top: 10px;
 }
 
@@ -11029,17 +11053,19 @@ exports[`Storyshots MobileDeviceCard API 1`] = `
 }
 
 .c2 {
+  -webkit-box-flex: 2;
   -webkit-flex-grow: 2;
-  -ms-flex-grow: 2;
+  -ms-flex-positive: 2;
   flex-grow: 2;
 }
 
 .c4 {
+  -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
-  -ms-flex-grow: 1;
+  -ms-flex-positive: 1;
   flex-grow: 1;
   -webkit-flex-basis: 0;
-  -ms-flex-basis: 0;
+  -ms-flex-preferred-size: 0;
   flex-basis: 0;
   padding: 8px;
 }
@@ -11107,17 +11133,19 @@ exports[`Storyshots MobileDeviceCard Override height 1`] = `
 }
 
 .c3 {
+  -webkit-box-flex: 2;
   -webkit-flex-grow: 2;
-  -ms-flex-grow: 2;
+  -ms-flex-positive: 2;
   flex-grow: 2;
 }
 
 .c5 {
+  -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
-  -ms-flex-grow: 1;
+  -ms-flex-positive: 1;
   flex-grow: 1;
   -webkit-flex-basis: 0;
-  -ms-flex-basis: 0;
+  -ms-flex-preferred-size: 0;
   flex-basis: 0;
   padding: 8px;
 }
@@ -11328,7 +11356,7 @@ exports[`Storyshots MobileHeader API 1`] = `
   align-items: center;
   overflow: hidden;
   -webkit-flex-shrink: 0;
-  -ms-flex-shrink: 0;
+  -ms-flex-negative: 0;
   flex-shrink: 0;
 }
 
@@ -11342,8 +11370,9 @@ exports[`Storyshots MobileHeader API 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
-  -ms-flex-grow: 1;
+  -ms-flex-positive: 1;
   flex-grow: 1;
   overflow: hidden;
 }
@@ -11358,8 +11387,9 @@ exports[`Storyshots MobileHeader API 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
-  -ms-flex-grow: 1;
+  -ms-flex-positive: 1;
   flex-grow: 1;
   -webkit-box-pack: end;
   -webkit-justify-content: flex-end;
@@ -11512,7 +11542,7 @@ exports[`Storyshots MobileHeader With right props 1`] = `
   align-items: center;
   overflow: hidden;
   -webkit-flex-shrink: 0;
-  -ms-flex-shrink: 0;
+  -ms-flex-negative: 0;
   flex-shrink: 0;
 }
 
@@ -11526,8 +11556,9 @@ exports[`Storyshots MobileHeader With right props 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
-  -ms-flex-grow: 1;
+  -ms-flex-positive: 1;
   flex-grow: 1;
   overflow: hidden;
 }
@@ -11542,8 +11573,9 @@ exports[`Storyshots MobileHeader With right props 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
-  -ms-flex-grow: 1;
+  -ms-flex-positive: 1;
   flex-grow: 1;
   -webkit-box-pack: end;
   -webkit-justify-content: flex-end;
@@ -11728,7 +11760,7 @@ exports[`Storyshots Notification API 1`] = `
 .c0 > *:nth-child(2) {
   margin-left: 8px;
   -webkit-flex-shrink: 0;
-  -ms-flex-shrink: 0;
+  -ms-flex-negative: 0;
   flex-shrink: 0;
 }
 
@@ -11799,7 +11831,7 @@ exports[`Storyshots Notification With feedbck Button component 1`] = `
 .c0 > *:nth-child(2) {
   margin-left: 8px;
   -webkit-flex-shrink: 0;
-  -ms-flex-shrink: 0;
+  -ms-flex-negative: 0;
   flex-shrink: 0;
 }
 
@@ -12174,8 +12206,9 @@ exports[`Storyshots Picker API 1`] = `
 }
 
 .c0 > * {
+  -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
-  -ms-flex-grow: 1;
+  -ms-flex-positive: 1;
   flex-grow: 1;
 }
 
@@ -12195,7 +12228,7 @@ exports[`Storyshots Picker API 1`] = `
   height: 100%;
   left: 0;
   right: 0;
-  background-image: linear-gradient(to bottom,rgba(255,255,255,0.95),rgba(255,255,255,0.6)),linear-gradient(to top,rgba(255,255,255,0.95),rgba(255,255,255,0.6));
+  background-image: linear-gradient( to bottom,rgba(255,255,255,0.95),rgba(255,255,255,0.6) ),linear-gradient(to top,rgba(255,255,255,0.95),rgba(255,255,255,0.6));
   background-position: top,bottom;
   background-size: 100% 32px;
   background-repeat: no-repeat;
@@ -12314,7 +12347,7 @@ exports[`Storyshots PreventDrag API 1`] = `
     />
   </div>
   <a
-    href=""
+    href="."
   >
     Link content
   </a>
@@ -12327,7 +12360,7 @@ exports[`Storyshots PreventDrag API 1`] = `
     onMouseOut={[Function]}
   >
     <a
-      href=""
+      href="."
     >
       Link content (PreventDrag)
     </a>
@@ -12544,7 +12577,7 @@ exports[`Storyshots Select API - ReadOnly 1`] = `
 
 .c2 > button {
   -webkit-flex-shrink: 0;
-  -ms-flex-shrink: 0;
+  -ms-flex-negative: 0;
   flex-shrink: 0;
 }
 
@@ -12730,7 +12763,7 @@ exports[`Storyshots Select With disabled props 1`] = `
 
 .c2 > button {
   -webkit-flex-shrink: 0;
-  -ms-flex-shrink: 0;
+  -ms-flex-negative: 0;
   flex-shrink: 0;
 }
 
@@ -12928,7 +12961,7 @@ exports[`Storyshots Select With kind props 1`] = `
 
 .c2 > button {
   -webkit-flex-shrink: 0;
-  -ms-flex-shrink: 0;
+  -ms-flex-negative: 0;
   flex-shrink: 0;
 }
 
@@ -13437,7 +13470,7 @@ exports[`Storyshots Switch API 1`] = `
 }
 
 .c0::after {
-  content: " ";
+  content: ' ';
   position: absolute;
   width: 42px;
   height: 42px;
@@ -13469,7 +13502,7 @@ exports[`Storyshots Switch API 1`] = `
 }
 
 .c1::after {
-  content: " ";
+  content: ' ';
   position: absolute;
   width: 42px;
   height: 42px;
@@ -13516,7 +13549,7 @@ exports[`Storyshots Switch Overriding style 1`] = `
 }
 
 .c1::after {
-  content: " ";
+  content: ' ';
   position: absolute;
   width: 42px;
   height: 42px;
@@ -13565,7 +13598,7 @@ exports[`Storyshots Switch Stateful switch 1`] = `
 }
 
 .c0::after {
-  content: " ";
+  content: ' ';
   position: absolute;
   width: 42px;
   height: 42px;
@@ -13606,7 +13639,7 @@ exports[`Storyshots Switch With kind props 1`] = `
 }
 
 .c2::after {
-  content: " ";
+  content: ' ';
   position: absolute;
   width: 42px;
   height: 42px;
@@ -13638,7 +13671,7 @@ exports[`Storyshots Switch With kind props 1`] = `
 }
 
 .c0::after {
-  content: " ";
+  content: ' ';
   position: absolute;
   width: 42px;
   height: 42px;
@@ -13670,7 +13703,7 @@ exports[`Storyshots Switch With kind props 1`] = `
 }
 
 .c1::after {
-  content: " ";
+  content: ' ';
   position: absolute;
   width: 42px;
   height: 42px;
@@ -13702,7 +13735,7 @@ exports[`Storyshots Switch With kind props 1`] = `
 }
 
 .c3::after {
-  content: " ";
+  content: ' ';
   position: absolute;
   width: 42px;
   height: 42px;
@@ -13734,7 +13767,7 @@ exports[`Storyshots Switch With kind props 1`] = `
 }
 
 .c4::after {
-  content: " ";
+  content: ' ';
   position: absolute;
   width: 42px;
   height: 42px;
@@ -13796,7 +13829,7 @@ exports[`Storyshots Switch With scaling 1`] = `
 }
 
 .c1::after {
-  content: " ";
+  content: ' ';
   position: absolute;
   width: 42px;
   height: 42px;

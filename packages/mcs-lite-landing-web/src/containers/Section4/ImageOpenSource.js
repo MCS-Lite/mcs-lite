@@ -16,9 +16,8 @@ const DURATION = 600;
 const EASE = 'easeInOutBack';
 const DELAY = 450;
 
-const ImageOpenSource = () =>
+const ImageOpenSource = () => (
   <ImageLayerWrapper>
-
     {/* 1. Background image */}
     <div>
       <BackgroundImage
@@ -93,6 +92,7 @@ const ImageOpenSource = () =>
         />
       </TweenOne>
     </ScrollOverPack>
-  </ImageLayerWrapper>;
+  </ImageLayerWrapper>
+);
 
 export default ImageOpenSource;

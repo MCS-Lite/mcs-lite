@@ -8,9 +8,7 @@ import Dialog, { Overlay } from '../Dialog';
 it('should render <Dialog />', () => {
   const wrapper = mount(
     <ThemeProvider theme={theme}>
-      <Dialog show>
-        Content
-      </Dialog>
+      <Dialog show>Content</Dialog>
     </ThemeProvider>,
   );
 

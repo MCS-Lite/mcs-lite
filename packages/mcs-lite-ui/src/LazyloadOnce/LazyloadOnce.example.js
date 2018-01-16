@@ -18,15 +18,14 @@ storiesOf('LazyloadOnce', module)
       text: `A Wrapper of [react-waypoint](https://github.com/brigade/react-waypoint)`,
       inline: true,
       propTables: [LazyloadOnce],
-    })(() =>
+    })(() => (
       <Wrapper>
         <LazyloadOnce height={24}>
           The component will be rendered while scrolling into viewport with
-          500px
-          offset by default.
+          500px offset by default.
         </LazyloadOnce>
-      </Wrapper>,
-    ),
+      </Wrapper>
+    )),
   )
   .add(
     'With component props',
@@ -34,11 +33,11 @@ storiesOf('LazyloadOnce', module)
       text: '',
       inline: true,
       propTables: [LazyloadOnce],
-    })(() =>
+    })(() => (
       <Wrapper>
         <LazyloadOnce height={24} component={Button}>
           Lazy button
         </LazyloadOnce>
-      </Wrapper>,
-    ),
+      </Wrapper>
+    )),
   );

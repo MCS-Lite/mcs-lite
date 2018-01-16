@@ -101,7 +101,9 @@ function fetchUsersCycle(sources) {
 
   const request$ = Observable.merge(
     sources.ACTION.filter(action => action.type === FETCH_USERS),
-    sources.HTTP.select().concatMap(success).filter(resNeedFetch),
+    sources.HTTP.select()
+      .concatMap(success)
+      .filter(resNeedFetch),
   ).combineLatest(accessToken$, (s, accessToken) => ({
     url: '/api/users',
     method: 'GET',
@@ -126,9 +128,9 @@ function fetchUsersCycle(sources) {
 function deleteUsersCycle(sources) {
   const accessToken$ = accessTokenSelector$(sources.STATE);
 
-  const payload$ = sources.ACTION
-    .filter(action => action.type === DELETE_USERS)
-    .pluck('payload');
+  const payload$ = sources.ACTION.filter(
+    action => action.type === DELETE_USERS,
+  ).pluck('payload');
 
   const userIdList$ = payload$.pluck('userIdList');
   const message$ = payload$.pluck('message');
@@ -166,9 +168,9 @@ function deleteUsersCycle(sources) {
 function createUserCycle(sources) {
   const accessToken$ = accessTokenSelector$(sources.STATE);
 
-  const payload$ = sources.ACTION
-    .filter(action => action.type === CREATE_USER)
-    .pluck('payload');
+  const payload$ = sources.ACTION.filter(
+    action => action.type === CREATE_USER,
+  ).pluck('payload');
   const user$ = payload$.pluck('user');
   const message$ = payload$.pluck('message');
 
@@ -205,9 +207,9 @@ function createUserCycle(sources) {
 function createUserByCSVCycle(sources) {
   const accessToken$ = accessTokenSelector$(sources.STATE);
 
-  const payload$ = sources.ACTION
-    .filter(action => action.type === CREATE_USER_BY_CSV)
-    .pluck('payload');
+  const payload$ = sources.ACTION.filter(
+    action => action.type === CREATE_USER_BY_CSV,
+  ).pluck('payload');
   const csvContent$ = payload$
     .pluck('csv')
     .map(R.pipe(R.values, R.head))
@@ -226,9 +228,9 @@ function createUserByCSVCycle(sources) {
     }),
   );
 
-  const successRes$ = sources.HTTP
-    .select(CREATE_USER_BY_CSV)
-    .switchMap(success);
+  const successRes$ = sources.HTTP.select(CREATE_USER_BY_CSV).switchMap(
+    success,
+  );
 
   const action$ = Observable.from([
     request$.mapTo(uiActions.setLoading()),
@@ -249,9 +251,9 @@ function createUserByCSVCycle(sources) {
 function changePasswordByIdCycle(sources) {
   const accessToken$ = accessTokenSelector$(sources.STATE);
 
-  const payload$ = sources.ACTION
-    .filter(action => action.type === CHANGE_PASSWORD_BY_ID)
-    .pluck('payload');
+  const payload$ = sources.ACTION.filter(
+    action => action.type === CHANGE_PASSWORD_BY_ID,
+  ).pluck('payload');
   const message$ = payload$.pluck('message');
 
   const request$ = payload$.withLatestFrom(
@@ -267,9 +269,9 @@ function changePasswordByIdCycle(sources) {
     }),
   );
 
-  const successRes$ = sources.HTTP
-    .select(CHANGE_PASSWORD_BY_ID)
-    .switchMap(success);
+  const successRes$ = sources.HTTP.select(CHANGE_PASSWORD_BY_ID).switchMap(
+    success,
+  );
 
   const action$ = Observable.from([
     request$.mapTo(uiActions.setLoading()),
@@ -290,9 +292,9 @@ function changePasswordByIdCycle(sources) {
 function putIsActiveByIdCycle(sources) {
   const accessToken$ = accessTokenSelector$(sources.STATE);
 
-  const payload$ = sources.ACTION
-    .filter(action => action.type === PUT_IS_ACTIVE_BY_ID)
-    .pluck('payload');
+  const payload$ = sources.ACTION.filter(
+    action => action.type === PUT_IS_ACTIVE_BY_ID,
+  ).pluck('payload');
   const message$ = payload$.pluck('message');
 
   const request$ = payload$.withLatestFrom(
@@ -308,9 +310,9 @@ function putIsActiveByIdCycle(sources) {
     }),
   );
 
-  const successRes$ = sources.HTTP
-    .select(PUT_IS_ACTIVE_BY_ID)
-    .switchMap(success);
+  const successRes$ = sources.HTTP.select(PUT_IS_ACTIVE_BY_ID).switchMap(
+    success,
+  );
 
   const action$ = Observable.from([
     request$.mapTo(uiActions.setLoading()),

@@ -32,7 +32,7 @@ const ControlNumber = ({
   placeholder,
   unit,
   ...otherProps
-}) =>
+}) => (
   <Container {...otherProps}>
     {unit && <Unixtype color="grayBase">{unit}</Unixtype>}
     <Input
@@ -46,7 +46,8 @@ const ControlNumber = ({
       <ButtonClear onClick={onClear} />
       <Button onClick={onSubmit}>Ok</Button>
     </ButtonWrapper>
-  </Container>;
+  </Container>
+);
 
 ControlNumber.displayName = 'ControlNumber';
 ControlNumber.propTypes = {

@@ -43,10 +43,16 @@ class PullToRefresh extends React.Component {
   static defaultProps = {
     IconLoading: (
       <Heading level={2} color="grayBase">
-        <Spin><MLIconLoading /></Spin>
+        <Spin>
+          <MLIconLoading />
+        </Spin>
       </Heading>
     ),
-    IconArrow: <Heading level={2} color="grayBase"><IconGoDown /></Heading>,
+    IconArrow: (
+      <Heading level={2} color="grayBase">
+        <IconGoDown />
+      </Heading>
+    ),
   };
 
   constructor(props) {

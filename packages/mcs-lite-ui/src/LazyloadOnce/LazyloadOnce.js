@@ -38,13 +38,15 @@ class LazyloadOnce extends React.PureComponent {
 
     return (
       <Component style={{ height }} {...otherProps}>
-        {isShow
-          ? children
-          : <Waypoint
-              scrollableAncestor={window}
-              onEnter={onEnter}
-              {...waypointConfig}
-            />}
+        {isShow ? (
+          children
+        ) : (
+          <Waypoint
+            scrollableAncestor={window}
+            onEnter={onEnter}
+            {...waypointConfig}
+          />
+        )}
       </Component>
     );
   }

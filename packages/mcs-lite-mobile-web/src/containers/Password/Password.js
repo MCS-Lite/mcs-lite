@@ -38,7 +38,9 @@ class Password extends React.Component {
 
     return (
       <div>
-        <Helmet><title>{t('changePassword')}</title></Helmet>
+        <Helmet>
+          <title>{t('changePassword')}</title>
+        </Helmet>
         <MobileHeader.MobileHeader
           title={t('changePassword')}
           leftChildren={
@@ -65,8 +67,9 @@ class Password extends React.Component {
                   required
                   kind={isNew1Error ? 'error' : 'primary'}
                 />
-                {isNew1Error &&
-                  <StyledP color="error">{t('lengthError')}</StyledP>}
+                {isNew1Error && (
+                  <StyledP color="error">{t('lengthError')}</StyledP>
+                )}
               </div>
 
               <div>
@@ -80,10 +83,9 @@ class Password extends React.Component {
                   required
                   kind={isNew2Error ? 'error' : 'primary'}
                 />
-                {isNew2Error &&
-                  <StyledP color="error">
-                    {t('newPasswordAgain.error')}
-                  </StyledP>}
+                {isNew2Error && (
+                  <StyledP color="error">{t('newPasswordAgain.error')}</StyledP>
+                )}
               </div>
             </Container>
           </main>
@@ -91,7 +93,9 @@ class Password extends React.Component {
           <MobileFixedFooter>
             <ButtonWrapper>
               <StyledLink to={updatePathname('/account')}>
-                <Button kind="default" block>{t('cancel')}</Button>
+                <Button kind="default" block>
+                  {t('cancel')}
+                </Button>
               </StyledLink>
               <Button component="input" type="submit" value={t('save')} block />
             </ButtonWrapper>

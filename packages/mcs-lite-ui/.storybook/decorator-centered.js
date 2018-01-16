@@ -21,9 +21,5 @@ injectGlobal`
 `;
 
 export default function(renderStory) {
-  return (
-    <ThemeProvider theme={theme}>
-      {renderStory()}
-    </ThemeProvider>
-  );
+  return <ThemeProvider theme={theme}>{renderStory()}</ThemeProvider>;
 }

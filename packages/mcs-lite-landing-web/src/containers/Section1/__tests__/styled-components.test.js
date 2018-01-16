@@ -17,9 +17,7 @@ it('should render components correctly', () => {
     <ThemeProvider theme={landingTheme}>
       <BreakpointProvider breakpoints={BREAKPOINTS}>
         <div>
-          <StyledSectionRow>
-            children
-          </StyledSectionRow>
+          <StyledSectionRow>children</StyledSectionRow>
           <RWDCenterWrapper />
           <StyledImageColumn />
           <ImageLayerWrapper />

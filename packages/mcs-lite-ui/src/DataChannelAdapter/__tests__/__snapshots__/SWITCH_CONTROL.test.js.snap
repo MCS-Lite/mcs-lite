@@ -17,7 +17,7 @@ exports[`should render SWITCH_CONTROL correctly with default value to false 1`] 
 }
 
 .c0::after {
-  content: " ";
+  content: ' ';
   position: absolute;
   width: 42px;
   height: 42px;
@@ -81,7 +81,7 @@ exports[`should render SWITCH_CONTROL correctly with false value 1`] = `
 }
 
 .c0::after {
-  content: " ";
+  content: ' ';
   position: absolute;
   width: 42px;
   height: 42px;
@@ -147,7 +147,7 @@ exports[`should render SWITCH_CONTROL correctly with true value 1`] = `
 }
 
 .c0::after {
-  content: " ";
+  content: ' ';
   position: absolute;
   width: 42px;
   height: 42px;

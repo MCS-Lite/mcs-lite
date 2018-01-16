@@ -96,7 +96,8 @@ const messages = defineMessages({
   },
   'User.accountStatus.desc': {
     id: 'User.accountStatus.desc',
-    defaultMessage: '當帳號被停用時，此使用者將無法登入與使用 MCS Lite。您可隨時重新啟用此帳號。',
+    defaultMessage:
+      '當帳號被停用時，此使用者將無法登入與使用 MCS Lite。您可隨時重新啟用此帳號。',
   },
   'User.accountStatus.label': {
     id: 'User.accountStatus.label',

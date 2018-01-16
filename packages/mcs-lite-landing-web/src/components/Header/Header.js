@@ -27,10 +27,14 @@ import {
 
 const LoadableNavItemBurger = Loadable({
   loader: () =>
-    import(
-      /* webpackChunkName: "Header.NavItemBurger" */ 'mcs-lite-ui/lib/LandingHeader/NavItemBurger',
-    ),
-  loading: () => <NavItem><Spin><IconLoading size={24} /></Spin></NavItem>,
+    import(/* webpackChunkName: "Header.NavItemBurger" */ 'mcs-lite-ui/lib/LandingHeader/NavItemBurger'),
+  loading: () => (
+    <NavItem>
+      <Spin>
+        <IconLoading size={24} />
+      </Spin>
+    </NavItem>
+  ),
 });
 
 const Header = ({ locale, getMessages, breakpoints }) => {
@@ -85,47 +89,50 @@ const Header = ({ locale, getMessages, breakpoints }) => {
               values={{ width: breakpoints.lg }}
             >
               {matches =>
-                matches
-                  ? // Desktop
-                    <DesktopNav>
-                      {linkItems.map(e => <NavItem {...e} />)}
-                      <NavItemDropdown
-                        items={languageItems}
+                matches ? (
+                  // Desktop
+                  <DesktopNav>
+                    {linkItems.map(e => <NavItem {...e} />)}
+                    <NavItemDropdown
+                      items={languageItems}
+                      data-ga-on="click"
+                      data-ga-event-category="Language NavItemDropdown menu"
+                      data-ga-event-action="click"
+                    >
+                      Language
+                    </NavItemDropdown>
+                  </DesktopNav>
+                ) : (
+                  // Mobile
+                  <MobileNav>
+                    <LazyloadOnce>
+                      <LoadableNavItemBurger
+                        items={[
+                          ...linkItems,
+                          {
+                            key: 'Language',
+                            children: 'Language',
+                            disabled: true,
+                          },
+                          ...languageItems,
+                        ]}
                         data-ga-on="click"
-                        data-ga-event-category="Language NavItemDropdown menu"
+                        data-ga-event-category="Mobile NavItemBurger menu"
                         data-ga-event-action="click"
-                      >
-                        Language
-                      </NavItemDropdown>
-                    </DesktopNav>
-                  : // Mobile
-                    <MobileNav>
-                      <LazyloadOnce>
-                        <LoadableNavItemBurger
-                          items={[
-                            ...linkItems,
-                            {
-                              key: 'Language',
-                              children: 'Language',
-                              disabled: true,
-                            },
-                            ...languageItems,
-                          ]}
-                          data-ga-on="click"
-                          data-ga-event-category="Mobile NavItemBurger menu"
-                          data-ga-event-action="click"
-                        />
-                      </LazyloadOnce>
-                    </MobileNav>}
+                      />
+                    </LazyloadOnce>
+                  </MobileNav>
+                )
+              }
             </MediaQuery>
 
             {/* 3. Hidden -For Prereder */}
             <HiddenForPreRenderTrick>
-              {LOCALES.map(({ id, children }) =>
+              {LOCALES.map(({ id, children }) => (
                 <a key={id} href={`/${id}`}>
                   {children}
-                </a>,
-              )}
+                </a>
+              ))}
             </HiddenForPreRenderTrick>
           </StyledColumn>
         </Row>

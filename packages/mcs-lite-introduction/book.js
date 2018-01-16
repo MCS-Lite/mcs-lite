@@ -4,7 +4,7 @@ const pkg = require('./package.json');
 const GITHUB_ORG = 'https://github.com/MCS-Lite';
 const GITHUB_DIR = `${GITHUB_ORG}/mcs-lite/tree/master/packages/mcs-lite-introduction`;
 const NETLIFY_URL = 'https://mcs-lite-introduction.netlify.com/';
-const GA_ID = process.env.GA_ID;
+const { GA_ID } = process.env;
 
 const plugins = [
   'edit-link',

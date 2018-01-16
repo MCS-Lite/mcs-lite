@@ -17,7 +17,7 @@ export const ImageWrapper = styled.div`
   border-radius: 3px;
 `;
 
-export const LazyloadIcon = ({ children }) =>
+export const LazyloadIcon = ({ children }) => (
   <LazyloadOnce height={HEIGHT}>
     <ScrollOverPack playScale={0.2}>
       <TweenOne
@@ -25,12 +25,11 @@ export const LazyloadIcon = ({ children }) =>
         animation={{ opacity: 1, y: 10 }}
         style={{ opacity: 0, transform: 'translateY(-30px)' }}
       >
-        <ImageWrapper>
-          {children}
-        </ImageWrapper>
+        <ImageWrapper>{children}</ImageWrapper>
       </TweenOne>
     </ScrollOverPack>
-  </LazyloadOnce>;
+  </LazyloadOnce>
+);
 
 LazyloadIcon.displayName = 'LazyloadIcon';
 LazyloadIcon.propTypes = {
@@ -39,20 +38,20 @@ LazyloadIcon.propTypes = {
 
 export const StyledRow = styled(Row)`
   > * {
-    &:nth-of-type(4n+1) ${ImageWrapper} {
-      background-color: #28B2E6;
+    &:nth-of-type(4n + 1) ${ImageWrapper} {
+      background-color: #28b2e6;
     }
 
-    &:nth-of-type(4n+2) ${ImageWrapper} {
-      background-color: #FEB439;
+    &:nth-of-type(4n + 2) ${ImageWrapper} {
+      background-color: #feb439;
     }
 
-    &:nth-of-type(4n+3) ${ImageWrapper} {
-      background-color: #36C1CA;
+    &:nth-of-type(4n + 3) ${ImageWrapper} {
+      background-color: #36c1ca;
     }
 
     &:nth-of-type(4n) ${ImageWrapper} {
-      background-color: #FF4E84;
+      background-color: #ff4e84;
     }
   }
 `;
