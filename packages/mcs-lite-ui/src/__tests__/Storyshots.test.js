@@ -6,8 +6,6 @@ import initStoryshots, {
 import renderer from 'react-test-renderer';
 import { ThemeProvider } from 'styled-components';
 import { theme } from 'mcs-lite-theme';
-import { mount } from 'enzyme';
-import toJson from 'enzyme-to-json';
 import styleSheetSerializer from 'jest-styled-components/src/styleSheetSerializer';
 import { addSerializer } from 'jest-specific-snapshot';
 
@@ -31,16 +29,6 @@ initStoryshots({
     );
 
     const tree = renderer.create(storyElement).toJSON();
-    // expect(tree).toMatchSnapshot();
     (expect(tree): any).toMatchSpecificSnapshot(snapshotFileName);
-
-    // Note: We just snapshot children without the ThemeProvider
-    // const tree = mount(storyElement).children();
-    // const json = toJson(tree);
-
-    // if (snapshotFileName) {
-    //   // Remind: property `toMatchSpecificSnapshot`. Property not found in Jest flowtype
-    //   (expect(json): any).toMatchSpecificSnapshot(snapshotFileName);
-    // }
   },
 });
