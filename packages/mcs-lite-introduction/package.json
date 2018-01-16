@@ -20,6 +20,6 @@
     "prepack": "npm run build"
   },
   "devDependencies": {
-    "gitbook-cli": "^2.3.2"
+    "gitbook-cli": "2.3.2"
   }
 }

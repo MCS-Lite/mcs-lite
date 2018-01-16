@@ -26,19 +26,19 @@
     "test": "echo 'TODO'"
   },
   "dependencies": {
-    "babel-core": "^6.26.0",
-    "babel-plugin-react-intl": "^2.3.1",
+    "babel-core": "6.26.0",
+    "babel-plugin-react-intl": "2.3.1",
     "babel-preset-mcs-lite": "^0.3.8",
-    "babel-preset-react-app": "^3.1.0",
-    "cheerio": "^0.22.0",
-    "glob": "^7.1.2",
-    "lodash.camelcase": "^4.3.0",
-    "lodash.upperfirst": "^4.3.1",
-    "ramda": "^0.25.0",
+    "babel-preset-react-app": "3.1.1",
+    "cheerio": "0.22.0",
+    "glob": "7.1.2",
+    "lodash.camelcase": "4.3.0",
+    "lodash.upperfirst": "4.3.1",
+    "ramda": "0.25.0",
     "rxjs": "5.5.2"
   },
   "devDependencies": {
-    "babel-cli": "^6.26.0"
+    "babel-cli": "6.26.0"
   },
   "babel": {
     "presets": [
