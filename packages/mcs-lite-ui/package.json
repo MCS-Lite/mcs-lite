@@ -44,6 +44,7 @@
     "enzyme": "3.3.0",
     "enzyme-adapter-react-16": "1.1.1",
     "enzyme-to-json": "3.3.0",
+    "flow-bin": "^0.63.1",
     "jest-styled-components": "4.10.0",
     "mcs-lite-icon": "^0.3.10",
     "mcs-lite-scripts": "^0.3.10",
@@ -57,6 +58,7 @@
     "styled-components": "2.4.0"
   },
   "dependencies": {
+    "bowser": "^1.9.1",
     "copy-to-clipboard": "^3.0.8",
     "create-react-class": "^15.6.2",
     "date-fns": "^1.29.0",

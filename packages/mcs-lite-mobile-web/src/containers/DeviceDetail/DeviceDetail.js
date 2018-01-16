@@ -1,6 +1,6 @@
 // @flow
 import PropTypes from 'prop-types';
-import React from 'react';
+import * as React from 'react';
 import Helmet from 'react-helmet';
 import IconMoreVert from 'mcs-lite-icon/lib/IconMoreVert';
 import IconArrowLeft from 'mcs-lite-icon/lib/IconArrowLeft';
@@ -36,7 +36,7 @@ type DCEvent = {
 };
 type DCEventHandler = DCEvent => void;
 
-class DeviceDetail extends React.Component {
+class DeviceDetail extends React.Component<any, any> {
   static propTypes = {
     // React-router Params
     deviceId: PropTypes.string.isRequired,
