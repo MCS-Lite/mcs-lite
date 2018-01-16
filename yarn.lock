@@ -9539,9 +9539,9 @@ react-treebeard@^2.1.0:
     shallowequal "^0.2.2"
     velocity-react "^1.3.1"
 
-react-virtualized@9.17.2:
-  version "9.17.2"
-  resolved "https://registry.yarnpkg.com/react-virtualized/-/react-virtualized-9.17.2.tgz#ae745e98663dc4ba6c51450c04b5864a374800ee"
+react-virtualized@9.17.3:
+  version "9.17.3"
+  resolved "https://registry.yarnpkg.com/react-virtualized/-/react-virtualized-9.17.3.tgz#3854588f067235c00ae5cd134d96508956630033"
   dependencies:
     babel-runtime "^6.26.0"
     classnames "^2.2.3"
