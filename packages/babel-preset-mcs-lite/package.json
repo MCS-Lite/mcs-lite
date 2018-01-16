@@ -29,7 +29,7 @@
     "babel-preset-stage-0": "^6.24.1"
   },
   "devDependencies": {
-    "babel-core": "^6.26.0",
-    "jest": "^21.2.1"
+    "babel-core": "6.26.0",
+    "jest": "21.2.1"
   }
 }
