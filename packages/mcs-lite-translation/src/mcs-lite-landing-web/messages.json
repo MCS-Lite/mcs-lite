@@ -47,8 +47,7 @@
   },
   {
     "id": "App.desc",
-    "defaultMessage":
-      "MCS Lite is designed for users who desire a dedicate IoT platform for their applications. MCS Lite can be deployed on-premises or on a publich cloud.",
+    "defaultMessage": "MCS Lite is designed for users who desire a dedicate IoT platform for their applications. MCS Lite can be deployed on-premises or on a publich cloud.",
     "filepath": "src/containers/App/messages.js"
   },
   {
@@ -58,8 +57,7 @@
   },
   {
     "id": "Section1.desc",
-    "defaultMessage":
-      "MCS Lite, inspired from features of MCS online with easy-to-use user interface, is designed for users who desire dedicate IoT platform for their applications. Binaries are available in Windows, Linux and Mac OS for instant launch.",
+    "defaultMessage": "MCS Lite, inspired from features of MCS online with easy-to-use user interface, is designed for users who desire dedicate IoT platform for their applications. Binaries are available in Windows, Linux and Mac OS for instant launch.",
     "filepath": "src/containers/Section1/messages.js"
   },
   {
@@ -69,8 +67,7 @@
   },
   {
     "id": "Section2.desc",
-    "defaultMessage":
-      "MCS Lite binary can be launched on your computer in one-click, you can also deploy on-premise or in the cloud with provided source code. All the options are here for your IoT applications during prototype, development and production stages.",
+    "defaultMessage": "MCS Lite binary can be launched on your computer in one-click, you can also deploy on-premise or in the cloud with provided source code. All the options are here for your IoT applications during prototype, development and production stages.",
     "filepath": "src/containers/Section2/messages.js"
   },
   {
@@ -80,8 +77,7 @@
   },
   {
     "id": "Section3.desc",
-    "defaultMessage":
-      "Start to collect data from your IoT devices and control them anytime, anywhere.",
+    "defaultMessage": "Start to collect data from your IoT devices and control them anytime, anywhere.",
     "filepath": "src/containers/Section3/messages.js"
   },
   {
@@ -121,8 +117,7 @@
   },
   {
     "id": "Section3.mobile.desc",
-    "defaultMessage":
-      "Responsive Web Design for easy access on your mobile and tablet",
+    "defaultMessage": "Responsive Web Design for easy access on your mobile and tablet",
     "filepath": "src/containers/Section3/messages.js"
   },
   {
@@ -137,8 +132,7 @@
   },
   {
     "id": "Section4.github.desc",
-    "defaultMessage":
-      "MCSLite is distributed as an open-source software under MIT license. You can use, copy, modify, merge, publish, distribute, sublicense our projects.",
+    "defaultMessage": "MCSLite is distributed as an open-source software under MIT license. You can use, copy, modify, merge, publish, distribute, sublicense our projects.",
     "filepath": "src/containers/Section4/messages.js"
   },
   {
@@ -153,8 +147,7 @@
   },
   {
     "id": "Section4.custom.desc",
-    "defaultMessage":
-      "Whether you want to customize the user interface, support other databases or add additional data analysis and encryption mechanism, you can directly modify the source code or use the API provided by MCS Lite to expand the functions.",
+    "defaultMessage": "Whether you want to customize the user interface, support other databases or add additional data analysis and encryption mechanism, you can directly modify the source code or use the API provided by MCS Lite to expand the functions.",
     "filepath": "src/containers/Section4/messages.js"
   },
   {

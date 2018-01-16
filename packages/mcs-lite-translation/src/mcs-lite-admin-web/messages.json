@@ -108,8 +108,7 @@
   },
   {
     "id": "Data.description",
-    "defaultMessage":
-      "可以清除 MCS Lite 所有資料，包含使用者清單以及測試裝置等等。",
+    "defaultMessage": "可以清除 MCS Lite 所有資料，包含使用者清單以及測試裝置等等。",
     "filepath": "src/containers/Data/messages.js"
   },
   {
@@ -392,8 +391,7 @@
   },
   {
     "id": "User.accountStatus.desc",
-    "defaultMessage":
-      "當帳號被停用時，此使用者將無法登入與使用 MCS Lite。您可隨時重新啟用此帳號。",
+    "defaultMessage": "當帳號被停用時，此使用者將無法登入與使用 MCS Lite。您可隨時重新啟用此帳號。",
     "filepath": "src/containers/User/messages.js"
   },
   {
