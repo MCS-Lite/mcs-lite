@@ -1,0 +1,171 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots DataPointAreaChart API 1`] = `
+.c0 {
+  height: 300px;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="recharts-responsive-container"
+    id={undefined}
+    style={
+      Object {
+        "height": "100%",
+        "maxHeight": undefined,
+        "minHeight": undefined,
+        "minWidth": undefined,
+        "width": "100%",
+      }
+    }
+  >
+    <mock-react-resize-detector
+      handleHeight={true}
+      handleWidth={true}
+      onResize={[Function]}
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots DataPointAreaChart RechartTooltip 1`] = `
+.c2 {
+  margin: 0;
+  font-size: 1rem;
+  color: currentColor;
+}
+
+.c3 {
+  margin: 0;
+  font-size: 1rem;
+  color: #999A94;
+}
+
+.c4 {
+  font-size: 0.923rem;
+}
+
+.c1 {
+  box-sizing: border-box;
+  box-shadow: 0 1px 5px 0 rgba(0,0,0,0.2);
+  border-radius: 3px;
+  background-color: #FFFFFF;
+  overflow: hidden;
+}
+
+.c0 {
+  padding: 8px;
+}
+
+<div
+  className="c0 c1"
+>
+  <p
+    className="c2"
+  >
+    formatter(1)
+  </p>
+  <div
+    className="c3"
+    color="grayBase"
+  >
+    <small
+      className="c4"
+    >
+      labelFormatter(1532438716989)
+    </small>
+  </div>
+</div>
+`;
+
+exports[`Storyshots DataPointAreaChart With isAnimationActive props 1`] = `
+.c0 {
+  height: 300px;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="recharts-responsive-container"
+    id={undefined}
+    style={
+      Object {
+        "height": "100%",
+        "maxHeight": undefined,
+        "minHeight": undefined,
+        "minWidth": undefined,
+        "width": "100%",
+      }
+    }
+  >
+    <mock-react-resize-detector
+      handleHeight={true}
+      handleWidth={true}
+      onResize={[Function]}
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots DataPointAreaChart With kind and type props 1`] = `
+.c0 {
+  height: 300px;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="recharts-responsive-container"
+    id={undefined}
+    style={
+      Object {
+        "height": "100%",
+        "maxHeight": undefined,
+        "minHeight": undefined,
+        "minWidth": undefined,
+        "width": "100%",
+      }
+    }
+  >
+    <mock-react-resize-detector
+      handleHeight={true}
+      handleWidth={true}
+      onResize={[Function]}
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots DataPointAreaChart With realtime data 1`] = `
+.c0 {
+  height: 300px;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="recharts-responsive-container"
+    id={undefined}
+    style={
+      Object {
+        "height": "100%",
+        "maxHeight": undefined,
+        "minHeight": undefined,
+        "minWidth": undefined,
+        "width": "100%",
+      }
+    }
+  >
+    <mock-react-resize-detector
+      handleHeight={true}
+      handleWidth={true}
+      onResize={[Function]}
+    />
+  </div>
+</div>
+`;

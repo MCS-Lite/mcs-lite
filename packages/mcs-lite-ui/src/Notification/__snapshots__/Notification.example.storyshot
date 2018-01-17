@@ -1,0 +1,118 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Notification API 1`] = `
+.c0 {
+  box-sizing: border-box;
+  box-shadow: 0 1px 5px 0 rgba(0,0,0,0.2);
+  border-radius: 3px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: rgba(53,54,48,0.9);
+  color: #FFFFFF;
+  font-size: 1rem;
+}
+
+.c0 > *:nth-child(2) {
+  margin-left: 8px;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+<div
+  className="c0"
+>
+  Do you want to go to Enalish version website?
+</div>
+`;
+
+exports[`Storyshots Notification With feedbck Button component 1`] = `
+.c1 {
+  margin: 0;
+  font-size: 1rem;
+  color: currentColor;
+}
+
+.c2 {
+  border-width: 1px;
+  border-style: solid;
+  outline: none;
+  box-sizing: border-box;
+  -webkit-transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  line-height: 0;
+  cursor: pointer;
+  background-color: #00A1DE;
+  color: #FFFFFF;
+  border-radius: 3px;
+  width: initial;
+  min-width: 80px;
+  height: 32px;
+  padding: 6px 15px;
+  font-size: 1rem;
+  border-color: rgb(0,130,179);
+}
+
+.c2:hover {
+  background-color: rgb(0,151,208);
+}
+
+.c2:active {
+  background-color: rgb(0,144,198);
+}
+
+.c0 {
+  box-sizing: border-box;
+  box-shadow: 0 1px 5px 0 rgba(0,0,0,0.2);
+  border-radius: 3px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: rgba(53,54,48,0.9);
+  color: #FFFFFF;
+  font-size: 1rem;
+}
+
+.c0 > *:nth-child(2) {
+  margin-left: 8px;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+<div
+  className="c0"
+>
+  <p
+    className="c1"
+  >
+    Do you want to go to Enalish version website?
+  </p>
+  <button
+    className="c2"
+  >
+    Yes, please
+  </button>
+</div>
+`;

@@ -1,0 +1,355 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots InputGroup API 1`] = `
+.c4 {
+  border-width: 1px;
+  border-style: solid;
+  outline: none;
+  box-sizing: border-box;
+  -webkit-transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  line-height: 0;
+  cursor: pointer;
+  background-color: #00A1DE;
+  color: #FFFFFF;
+  border-radius: 3px;
+  width: initial;
+  min-width: 80px;
+  height: 32px;
+  padding: 6px 15px;
+  font-size: 1rem;
+  border-color: rgb(0,130,179);
+}
+
+.c4:hover {
+  background-color: rgb(0,151,208);
+}
+
+.c4:active {
+  background-color: rgb(0,144,198);
+}
+
+.c5 {
+  border-width: 1px;
+  border-style: solid;
+  outline: none;
+  box-sizing: border-box;
+  -webkit-transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  line-height: 0;
+  cursor: pointer;
+  background-color: #FAFAFA;
+  color: #999A94;
+  border-radius: 3px;
+  width: initial;
+  min-width: 80px;
+  height: 32px;
+  padding: 6px 15px;
+  font-size: 1rem;
+  border-color: rgb(202,202,202);
+}
+
+.c5:hover {
+  background-color: rgb(234,234,234);
+}
+
+.c5:active {
+  background-color: rgb(223,223,223);
+}
+
+.c6 {
+  border-width: 1px;
+  border-style: solid;
+  outline: none;
+  box-sizing: border-box;
+  -webkit-transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  line-height: 0;
+  cursor: pointer;
+  background-color: #F39A1E;
+  color: #FFFFFF;
+  border-radius: 3px;
+  width: initial;
+  min-width: 80px;
+  height: 32px;
+  padding: 6px 15px;
+  font-size: 1rem;
+  border-color: rgb(196,124,24);
+}
+
+.c6:hover {
+  background-color: rgb(228,144,28);
+}
+
+.c6:active {
+  background-color: rgb(217,137,27);
+}
+
+.c8 {
+  border-width: 1px;
+  border-style: solid;
+  outline: none;
+  box-sizing: border-box;
+  -webkit-transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  line-height: 0;
+  cursor: pointer;
+  background-color: #00A1DE;
+  color: #FFFFFF;
+  border-radius: 3px;
+  width: 32px;
+  min-width: initial;
+  height: 32px;
+  padding: 0;
+  font-size: 1rem;
+  border-color: rgb(0,130,179);
+}
+
+.c8:hover {
+  background-color: rgb(0,151,208);
+}
+
+.c8:active {
+  background-color: rgb(0,144,198);
+}
+
+.c2 {
+  border-width: 1px;
+  border-style: solid;
+  outline: none;
+  box-sizing: border-box;
+  -webkit-transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  line-height: 0;
+  cursor: pointer;
+  background-color: #00A1DE;
+  color: #FFFFFF;
+  border-radius: 3px;
+  width: initial;
+  min-width: 40px;
+  height: 20px;
+  padding: 0 5px;
+  font-size: 0.923rem;
+  border-color: rgb(0,130,179);
+}
+
+.c2:hover {
+  background-color: rgb(0,151,208);
+}
+
+.c2:active {
+  background-color: rgb(0,144,198);
+}
+
+.c3 {
+  border-width: 1px;
+  border-style: solid;
+  outline: none;
+  box-sizing: border-box;
+  -webkit-transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  line-height: 0;
+  cursor: pointer;
+  background-color: #FAFAFA;
+  color: #999A94;
+  border-radius: 3px;
+  width: initial;
+  min-width: 40px;
+  height: 20px;
+  padding: 0 5px;
+  font-size: 0.923rem;
+  border-color: rgb(202,202,202);
+}
+
+.c3:hover {
+  background-color: rgb(234,234,234);
+}
+
+.c3:active {
+  background-color: rgb(223,223,223);
+}
+
+.c7 {
+  box-sizing: border-box;
+  width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 3px;
+  outline: 0;
+  padding: 0 10px;
+  line-height: 1;
+  min-height: 32px;
+  color: #353630;
+  font-size: 1rem;
+  border-color: #D1D2D3;
+  box-shadow: none;
+}
+
+.c7:focus {
+  border-color: #00A1DE;
+  box-shadow: 0 0 3px 0 rgba(0,161,222,0.5);
+}
+
+.c7::-webkit-input-placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c7::-moz-placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c7:-ms-input-placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c7::placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c1 > button {
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.c1 > *:first-child {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.c1 > *:not(:first-child):not(:last-child) {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.c1 > *:last-child {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.c0 > * {
+  margin-bottom: 15px;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <button
+      className="c2"
+    >
+      Button 1
+    </button>
+    <button
+      className="c3"
+    >
+      Button 2
+    </button>
+  </div>
+  <div
+    className="c1"
+  >
+    <button
+      className="c4"
+    >
+      Button 1
+    </button>
+    <button
+      className="c5"
+    >
+      Button Two
+    </button>
+    <button
+      className="c6"
+    >
+      Button Three
+    </button>
+  </div>
+  <div
+    className="c1"
+  >
+    <button
+      className="c4"
+    >
+      大於
+    </button>
+    <input
+      className="c7"
+      kind="primary"
+      placeholder="預設值：20"
+    />
+  </div>
+  <div
+    className="c1"
+  >
+    <input
+      className="c7"
+      kind="primary"
+      placeholder="Input 1"
+    />
+    <button
+      className="c4"
+    >
+      Button 1
+    </button>
+  </div>
+  <div
+    className="c1"
+  >
+    <button
+      className="c4"
+    >
+      Button 1
+    </button>
+    <input
+      className="c7"
+      kind="primary"
+      placeholder="Input 1"
+    />
+    <button
+      className="c4"
+    >
+      Button 2
+    </button>
+  </div>
+  <div
+    className="c1"
+  >
+    <button
+      className="c4"
+    >
+      之間
+    </button>
+    <input
+      className="c7"
+      kind="primary"
+      placeholder="預設值：0"
+    />
+    <button
+      className="c8"
+    >
+      和
+    </button>
+    <input
+      className="c7"
+      kind="primary"
+      placeholder="預設值：100"
+    />
+  </div>
+</div>
+`;

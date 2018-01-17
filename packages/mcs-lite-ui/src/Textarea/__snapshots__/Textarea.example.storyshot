@@ -1,0 +1,299 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Textarea API 1`] = `
+.c0 {
+  box-sizing: border-box;
+  width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 3px;
+  outline: 0;
+  padding: 5px 10px;
+  color: #353630;
+  border-color: #D1D2D3;
+  font-size: 1rem;
+}
+
+.c0:focus {
+  border-color: #00A1DE;
+  box-shadow: 0 0 3px 0 rgba(0,161,222,0.5);
+}
+
+.c0::-webkit-input-placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c0::-moz-placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c0:-ms-input-placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c0::placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c0:disabled {
+  background-color: #FFFFFF;
+}
+
+<textarea
+  className="c0"
+  kind="primary"
+  placeholder="placeholder"
+  rows="3"
+/>
+`;
+
+exports[`Storyshots Textarea With kind props 1`] = `
+.c2 {
+  box-sizing: border-box;
+  width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 3px;
+  outline: 0;
+  padding: 5px 10px;
+  color: #353630;
+  border-color: #D1D2D3;
+  font-size: 1rem;
+}
+
+.c2:focus {
+  border-color: #00A1DE;
+  box-shadow: 0 0 3px 0 rgba(0,161,222,0.5);
+}
+
+.c2::-webkit-input-placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c2::-moz-placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c2:-ms-input-placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c2::placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c2:disabled {
+  background-color: #FFFFFF;
+}
+
+.c1 {
+  box-sizing: border-box;
+  width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 3px;
+  outline: 0;
+  padding: 5px 10px;
+  color: #353630;
+  border-color: #D1D2D3;
+  font-size: 1rem;
+}
+
+.c1:focus {
+  border-color: #FAFAFA;
+  box-shadow: 0 0 3px 0 rgba(250,250,250,0.5);
+}
+
+.c1::-webkit-input-placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c1::-moz-placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c1:-ms-input-placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c1::placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c1:disabled {
+  background-color: #FFFFFF;
+}
+
+.c3 {
+  box-sizing: border-box;
+  width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 3px;
+  outline: 0;
+  padding: 5px 10px;
+  color: #353630;
+  border-color: #D1D2D3;
+  font-size: 1rem;
+}
+
+.c3:focus {
+  border-color: #69BE28;
+  box-shadow: 0 0 3px 0 rgba(105,190,40,0.5);
+}
+
+.c3::-webkit-input-placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c3::-moz-placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c3:-ms-input-placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c3::placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c3:disabled {
+  background-color: #FFFFFF;
+}
+
+.c4 {
+  box-sizing: border-box;
+  width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 3px;
+  outline: 0;
+  padding: 5px 10px;
+  color: #353630;
+  border-color: #D1D2D3;
+  font-size: 1rem;
+}
+
+.c4:focus {
+  border-color: #F5364E;
+  box-shadow: 0 0 3px 0 rgba(245,54,78,0.5);
+}
+
+.c4::-webkit-input-placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c4::-moz-placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c4:-ms-input-placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c4::placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c4:disabled {
+  background-color: #FFFFFF;
+}
+
+.c5 {
+  box-sizing: border-box;
+  width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 3px;
+  outline: 0;
+  padding: 5px 10px;
+  color: #353630;
+  border-color: #D1D2D3;
+  font-size: 1rem;
+}
+
+.c5:focus {
+  border-color: #F39A1E;
+  box-shadow: 0 0 3px 0 rgba(243,154,30,0.5);
+}
+
+.c5::-webkit-input-placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c5::-moz-placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c5:-ms-input-placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c5::placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c5:disabled {
+  background-color: #FFFFFF;
+}
+
+.c0 > * {
+  margin: 15px;
+  width: 300px;
+}
+
+<div
+  className="c0"
+>
+  <textarea
+    className="c1"
+    kind="default"
+    placeholder="default"
+  />
+  <textarea
+    className="c2"
+    kind="primary"
+    placeholder="primary"
+  />
+  <textarea
+    className="c3"
+    kind="success"
+    placeholder="success"
+  />
+  <textarea
+    className="c4"
+    kind="error"
+    placeholder="error"
+  />
+  <textarea
+    className="c5"
+    kind="warning"
+    placeholder="warning"
+  />
+</div>
+`;

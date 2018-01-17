@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Dialog API 1`] = `
+<div>
+  <div
+    onClick={[Function]}
+  >
+    Click to OPEN!
+  </div>
+</div>
+`;
+
+exports[`Storyshots Dialog Common Dialog 1`] = `<mock-portal />`;
+
+exports[`Storyshots Dialog Scrollable CommonDialog 1`] = `<mock-portal />`;

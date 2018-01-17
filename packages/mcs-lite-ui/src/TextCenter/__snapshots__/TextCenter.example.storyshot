@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots TextCenter API 1`] = `
+.c0 {
+  text-align: center;
+}
+
+<div
+  className="c0"
+>
+  Center
+</div>
+`;

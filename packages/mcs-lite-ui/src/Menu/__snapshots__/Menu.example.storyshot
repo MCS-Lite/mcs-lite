@@ -1,0 +1,356 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Menu API for Menu 1`] = `
+.c1 {
+  box-sizing: border-box;
+  box-shadow: 0 1px 5px 0 rgba(0,0,0,0.2);
+  border-radius: 3px;
+  background-color: #FFFFFF;
+  overflow: hidden;
+}
+
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 5px 0;
+}
+
+<div
+  className="c0 c1"
+>
+  Children
+</div>
+`;
+
+exports[`Storyshots Menu API for MenuItem 1`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0 15px;
+  min-width: 80px;
+  cursor: pointer;
+  box-sizing: border-box;
+  color: #353630;
+  min-height: 32px;
+}
+
+.c0 * {
+  -webkit-transition: initial;
+  transition: initial;
+}
+
+.c0:hover {
+  background-color: #00A1DE;
+  color: white;
+}
+
+.c0:hover * {
+  color: white;
+}
+
+.c0:active {
+  background-color: rgb(0,151,208);
+  color: white;
+}
+
+.c0:active * {
+  color: white;
+}
+
+<div>
+  <div
+    className="c0"
+  >
+    div tag (default)
+  </div>
+  <a
+    className="c0"
+  >
+    a Tag
+  </a>
+</div>
+`;
+
+exports[`Storyshots Menu Fixed width 1`] = `
+.c4 {
+  margin: 0;
+  font-weight: normal;
+  font-size: 2.46rem;
+  color: currentColor;
+}
+
+.c8 {
+  font-weight: bold;
+}
+
+.c7 {
+  color: #00A1DE;
+  -webkit-transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.c7:hover {
+  color: rgb(0,151,208);
+}
+
+.c7:active {
+  color: rgb(0,144,198);
+}
+
+.c5 {
+  margin: 0;
+  font-size: 1rem;
+  color: currentColor;
+}
+
+.c6 {
+  margin: 0;
+  font-size: 1rem;
+  color: #F5364E;
+}
+
+.c2 {
+  box-sizing: border-box;
+  box-shadow: 0 1px 5px 0 rgba(0,0,0,0.2);
+  border-radius: 3px;
+  background-color: #FFFFFF;
+  overflow: hidden;
+}
+
+.c3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0 15px;
+  min-width: 80px;
+  cursor: pointer;
+  box-sizing: border-box;
+  color: #353630;
+  min-height: 32px;
+}
+
+.c3 * {
+  -webkit-transition: initial;
+  transition: initial;
+}
+
+.c3:hover {
+  background-color: #00A1DE;
+  color: white;
+}
+
+.c3:hover * {
+  color: white;
+}
+
+.c3:active {
+  background-color: rgb(0,151,208);
+  color: white;
+}
+
+.c3:active * {
+  color: white;
+}
+
+.c1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 5px 0;
+}
+
+.c0 {
+  width: 300px;
+}
+
+<div
+  className="c0 c1 c2"
+>
+  <div
+    className="c3"
+    onClick={[Function]}
+  >
+    MenuItem 1
+  </div>
+  <div
+    className="c3"
+    onClick={[Function]}
+  >
+    MenuItem Content 2
+  </div>
+  <div
+    className="c3"
+    onClick={[Function]}
+  >
+    <h1
+      className="c4"
+    >
+      MenuItem Heading 1
+    </h1>
+  </div>
+  <div
+    className="c3"
+    onClick={[Function]}
+  >
+    <p
+      className="c5"
+    >
+      MenuItem P
+    </p>
+  </div>
+  <div
+    className="c3"
+    onClick={[Function]}
+  >
+    <p
+      className="c6"
+      color="error"
+    >
+      MenuItem P error
+    </p>
+  </div>
+  <div
+    className="c3"
+    onClick={[Function]}
+  >
+    <a
+      className="c7"
+      color="primary"
+    >
+      MenuItem A
+    </a>
+  </div>
+  <div
+    className="c3"
+    onClick={[Function]}
+  >
+    <b
+      className="c8"
+    >
+      MenuItem B
+    </b>
+  </div>
+  <div
+    className="c3"
+    onClick={[Function]}
+  >
+    <svg
+      fill="currentColor"
+      height="1em"
+      preserveAspectRatio="xMidYMid meet"
+      viewBox="0 0 24 24"
+      width="1em"
+    >
+      <path
+        d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zm9-10h1v10h-1V9zm-4 0h2v10h-2V9zM8 9h1v10H8V9zm7.5-5l-1-1h-5l-1 1H5v2h14V4h-3.5z"
+      />
+    </svg>
+  </div>
+  <a
+    className="c3"
+  >
+    &lt;a&gt;
+     Tag
+  </a>
+</div>
+`;
+
+exports[`Storyshots Menu Min width 1`] = `
+.c1 {
+  box-sizing: border-box;
+  box-shadow: 0 1px 5px 0 rgba(0,0,0,0.2);
+  border-radius: 3px;
+  background-color: #FFFFFF;
+  overflow: hidden;
+}
+
+.c2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0 15px;
+  min-width: 80px;
+  cursor: pointer;
+  box-sizing: border-box;
+  color: #353630;
+  min-height: 32px;
+}
+
+.c2 * {
+  -webkit-transition: initial;
+  transition: initial;
+}
+
+.c2:hover {
+  background-color: #00A1DE;
+  color: white;
+}
+
+.c2:hover * {
+  color: white;
+}
+
+.c2:active {
+  background-color: rgb(0,151,208);
+  color: white;
+}
+
+.c2:active * {
+  color: white;
+}
+
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 5px 0;
+}
+
+<div
+  className="c0 c1"
+>
+  <div
+    className="c2"
+    onClick={[Function]}
+  >
+    複製
+  </div>
+  <div
+    className="c2"
+    onClick={[Function]}
+  >
+    刪除
+  </div>
+</div>
+`;

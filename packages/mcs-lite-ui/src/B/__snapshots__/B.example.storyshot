@@ -1,0 +1,93 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots B API 1`] = `
+.c0 {
+  font-weight: bold;
+}
+
+<b
+  className="c0"
+>
+  Bold content
+</b>
+`;
+
+exports[`Storyshots B CJK 1`] = `
+.c0 {
+  margin: 0;
+  font-weight: normal;
+  font-size: 1.15rem;
+  color: currentColor;
+}
+
+.c1 {
+  font-weight: bold;
+}
+
+<h4
+  className="c0"
+>
+  <b
+    className="c1"
+  >
+    控制開關粗體字
+  </b>
+</h4>
+`;
+
+exports[`Storyshots B With color 1`] = `
+.c1 {
+  font-weight: bold;
+}
+
+.c0 {
+  margin: 0;
+  font-size: 1rem;
+  color: #00A1DE;
+}
+
+<div
+  className="c0"
+  color="primary"
+>
+  Nisi eu eiusmod cupidatat aute laboris commodo excepteur
+  <b
+    className="c1"
+  >
+     Bold content 
+  </b>
+  incididunt incididunt aliquip pariatur est minim officia sit.
+</div>
+`;
+
+exports[`Storyshots B Within <P> 1`] = `
+.c2 {
+  font-weight: bold;
+}
+
+.c0 {
+  margin: 0;
+  font-size: 1rem;
+  color: currentColor;
+}
+
+.c1 {
+  font-size: 0.923rem;
+}
+
+<div
+  className="c0"
+>
+  Nisi eu eiusmod cupidatat aute laboris commodo excepteur
+  <small
+    className="c1"
+  >
+    <b
+      className="c2"
+    >
+       Bold content 
+    </b>
+  </small>
+  incididunt incididunt aliquip pariatur est minim officia sit.
+</div>
+`;

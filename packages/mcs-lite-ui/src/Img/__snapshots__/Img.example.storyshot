@@ -1,0 +1,72 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Img API 1`] = `
+.c1 {
+  height: 100%;
+  width: 100%;
+  background-image: url("http://placehold.it/350x150");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.c0 {
+  height: 300px;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+    size="cover"
+    src="http://placehold.it/350x150"
+  />
+</div>
+`;
+
+exports[`Storyshots Img With height override 1`] = `
+.c1 {
+  height: 100%;
+  width: 100%;
+  background-image: url("http://placehold.it/350x150");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.c0 {
+  height: 100px;
+}
+
+<div
+  className="c0 c1"
+  size="cover"
+  src="http://placehold.it/350x150"
+/>
+`;
+
+exports[`Storyshots Img With size props 1`] = `
+.c1 {
+  height: 100%;
+  width: 100%;
+  background-image: url("http://placehold.it/350x150");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.c0 {
+  height: 300px;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+    size="contain"
+    src="http://placehold.it/350x150"
+  />
+</div>
+`;

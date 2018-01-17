@@ -1,0 +1,242 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots TabItem API 1`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+  height: 32px;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-bottom-color: transparent;
+  color: #353630;
+  font-size: 1rem;
+  padding: 0 15px;
+  -webkit-transition: border-color cubic-bezier(0.47,0,0.75,0.72) 0.1s,color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  transition: border-color cubic-bezier(0.47,0,0.75,0.72) 0.1s,color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  cursor: pointer;
+}
+
+.c0:hover {
+  color: rgb(0,151,208);
+}
+
+.c0:active {
+  color: rgb(0,144,198);
+}
+
+.c1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+  height: 32px;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-bottom-color: #00A1DE;
+  color: #00A1DE;
+  font-size: 1rem;
+  padding: 0 15px;
+  -webkit-transition: border-color cubic-bezier(0.47,0,0.75,0.72) 0.1s,color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  transition: border-color cubic-bezier(0.47,0,0.75,0.72) 0.1s,color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  cursor: pointer;
+}
+
+.c1:hover {
+  color: rgb(0,151,208);
+}
+
+.c1:active {
+  color: rgb(0,144,198);
+}
+
+<div>
+  <div
+    className="c0"
+    color="primary"
+    onClick={[Function]}
+    value="key"
+  >
+    TabItem
+  </div>
+  <div
+    className="c1"
+    color="primary"
+    onClick={[Function]}
+    value="key"
+  >
+    Active TabItem
+  </div>
+</div>
+`;
+
+exports[`Storyshots TabItem With color props 1`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+  height: 32px;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-bottom-color: transparent;
+  color: #353630;
+  font-size: 1rem;
+  padding: 0 15px;
+  -webkit-transition: border-color cubic-bezier(0.47,0,0.75,0.72) 0.1s,color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  transition: border-color cubic-bezier(0.47,0,0.75,0.72) 0.1s,color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  cursor: pointer;
+}
+
+.c0:hover {
+  color: rgb(228,144,28);
+}
+
+.c0:active {
+  color: rgb(217,137,27);
+}
+
+.c1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+  height: 32px;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-bottom-color: #F39A1E;
+  color: #F39A1E;
+  font-size: 1rem;
+  padding: 0 15px;
+  -webkit-transition: border-color cubic-bezier(0.47,0,0.75,0.72) 0.1s,color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  transition: border-color cubic-bezier(0.47,0,0.75,0.72) 0.1s,color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  cursor: pointer;
+}
+
+.c1:hover {
+  color: rgb(228,144,28);
+}
+
+.c1:active {
+  color: rgb(217,137,27);
+}
+
+<div>
+  <div
+    className="c0"
+    color="warning"
+    onClick={[Function]}
+    value={1}
+  >
+    TabItem 1
+  </div>
+  <div
+    className="c1"
+    color="warning"
+    onClick={[Function]}
+    value={2}
+  >
+    TabItem 2
+  </div>
+</div>
+`;
+
+exports[`Storyshots TabItem With state 1`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+  height: 32px;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-bottom-color: transparent;
+  color: #353630;
+  font-size: 1rem;
+  padding: 0 15px;
+  -webkit-transition: border-color cubic-bezier(0.47,0,0.75,0.72) 0.1s,color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  transition: border-color cubic-bezier(0.47,0,0.75,0.72) 0.1s,color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  cursor: pointer;
+}
+
+.c0:hover {
+  color: rgb(0,151,208);
+}
+
+.c0:active {
+  color: rgb(0,144,198);
+}
+
+<div>
+  <div
+    className="c0"
+    color="primary"
+    onClick={[Function]}
+    value={1}
+  >
+    Tab 1
+  </div>
+  <div
+    className="c0"
+    color="primary"
+    onClick={[Function]}
+    value={2}
+  >
+    Tab 2
+  </div>
+  <div
+    className="c0"
+    color="primary"
+    onClick={[Function]}
+    value={3}
+  >
+    Tab 3
+  </div>
+</div>
+`;

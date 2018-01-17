@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots MorphReplace API 1`] = `
+<div>
+  <svg
+    height={24}
+    viewBox="0 0 24 24"
+    width={24}
+  >
+    <path
+      d="M19.9 13v-2h-12l5.5-5.5L12 4.1 4.1 12l7.9 7.9 1.4-1.4L7.9 13h12z"
+    />
+  </svg>
+  <svg
+    height={24}
+    viewBox="0 0 24 24"
+    width={24}
+  >
+    <path
+      d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"
+    />
+  </svg>
+  <svg
+    height={24}
+    viewBox="0 0 24 24"
+    width={24}
+  >
+    <path
+      d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zm9-10h1v10h-1V9zm-4 0h2v10h-2V9zM8 9h1v10H8V9zm7.5-5l-1-1h-5l-1 1H5v2h14V4h-3.5z"
+    />
+  </svg>
+  <svg
+    height={24}
+    viewBox="0 0 24 24"
+    width={24}
+  >
+    <path
+      d="M6 6h12v12H6V6z"
+    />
+  </svg>
+  <svg
+    height={24}
+    viewBox="0 0 24 24"
+    width={24}
+  >
+    <path
+      d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"
+    />
+  </svg>
+</div>
+`;
