@@ -1,0 +1,59 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Hr API 1`] = `
+.c0 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  border: 0;
+  border-top: 1px solid #D1D2D3;
+}
+
+<hr
+  className="c0"
+/>
+`;
+
+exports[`Storyshots Hr With children 1`] = `
+.c1 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  border: 0;
+  border-top: 1px solid #D1D2D3;
+}
+
+.c2 {
+  font-size: 0.923rem;
+  margin: 0 8px;
+  color: #999A94;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+}
+
+<div
+  className="c0"
+>
+  <hr
+    className="c1"
+  />
+  <div
+    className="c2"
+  >
+    String
+  </div>
+  <hr
+    className="c1"
+  />
+</div>
+`;

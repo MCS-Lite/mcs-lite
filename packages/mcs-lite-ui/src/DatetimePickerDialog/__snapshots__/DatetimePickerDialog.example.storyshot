@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots DatetimePickerDialog API 1`] = `
+.c0 {
+  box-sizing: border-box;
+  width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 3px;
+  outline: 0;
+  padding: 0 10px;
+  line-height: 1;
+  min-height: 32px;
+  color: #353630;
+  font-size: 1rem;
+  border-color: #D1D2D3;
+  box-shadow: none;
+}
+
+.c0:focus {
+  border-color: #00A1DE;
+  box-shadow: 0 0 3px 0 rgba(0,161,222,0.5);
+}
+
+.c0::-webkit-input-placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c0::-moz-placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c0:-ms-input-placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c0::placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+<div>
+  <input
+    className="c0"
+    kind="primary"
+    onClick={[Function]}
+    readOnly={true}
+    value="2016-05-18T07:30:31.722Z"
+  />
+</div>
+`;

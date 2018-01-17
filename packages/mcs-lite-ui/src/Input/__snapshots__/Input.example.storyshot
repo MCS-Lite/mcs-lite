@@ -1,0 +1,484 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Input API 1`] = `
+.c0 {
+  box-sizing: border-box;
+  width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 3px;
+  outline: 0;
+  padding: 0 10px;
+  line-height: 1;
+  min-height: 32px;
+  color: #353630;
+  font-size: 1rem;
+  border-color: #D1D2D3;
+  box-shadow: none;
+}
+
+.c0:focus {
+  border-color: #00A1DE;
+  box-shadow: 0 0 3px 0 rgba(0,161,222,0.5);
+}
+
+.c0::-webkit-input-placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c0::-moz-placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c0:-ms-input-placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c0::placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+<input
+  className="c0"
+  kind="primary"
+  placeholder="placeholder"
+/>
+`;
+
+exports[`Storyshots Input With focus props 1`] = `
+.c0 {
+  box-sizing: border-box;
+  width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 3px;
+  outline: 0;
+  padding: 0 10px;
+  line-height: 1;
+  min-height: 32px;
+  color: #353630;
+  font-size: 1rem;
+  border-color: #00A1DE;
+  box-shadow: 0 0 3px 0 rgba(0,161,222,0.5);
+}
+
+.c0:focus {
+  border-color: #00A1DE;
+  box-shadow: 0 0 3px 0 rgba(0,161,222,0.5);
+}
+
+.c0::-webkit-input-placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c0::-moz-placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c0:-ms-input-placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c0::placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+<input
+  className="c0"
+  kind="primary"
+  placeholder="placeholder"
+/>
+`;
+
+exports[`Storyshots Input With kind props 1`] = `
+.c2 {
+  box-sizing: border-box;
+  width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 3px;
+  outline: 0;
+  padding: 0 10px;
+  line-height: 1;
+  min-height: 32px;
+  color: #353630;
+  font-size: 1rem;
+  border-color: #D1D2D3;
+  box-shadow: none;
+}
+
+.c2:focus {
+  border-color: #00A1DE;
+  box-shadow: 0 0 3px 0 rgba(0,161,222,0.5);
+}
+
+.c2::-webkit-input-placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c2::-moz-placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c2:-ms-input-placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c2::placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c1 {
+  box-sizing: border-box;
+  width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 3px;
+  outline: 0;
+  padding: 0 10px;
+  line-height: 1;
+  min-height: 32px;
+  color: #353630;
+  font-size: 1rem;
+  border-color: #D1D2D3;
+  box-shadow: none;
+}
+
+.c1:focus {
+  border-color: #FAFAFA;
+  box-shadow: 0 0 3px 0 rgba(250,250,250,0.5);
+}
+
+.c1::-webkit-input-placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c1::-moz-placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c1:-ms-input-placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c1::placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c3 {
+  box-sizing: border-box;
+  width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 3px;
+  outline: 0;
+  padding: 0 10px;
+  line-height: 1;
+  min-height: 32px;
+  color: #353630;
+  font-size: 1rem;
+  border-color: #D1D2D3;
+  box-shadow: none;
+}
+
+.c3:focus {
+  border-color: #69BE28;
+  box-shadow: 0 0 3px 0 rgba(105,190,40,0.5);
+}
+
+.c3::-webkit-input-placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c3::-moz-placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c3:-ms-input-placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c3::placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c4 {
+  box-sizing: border-box;
+  width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 3px;
+  outline: 0;
+  padding: 0 10px;
+  line-height: 1;
+  min-height: 32px;
+  color: #353630;
+  font-size: 1rem;
+  border-color: #D1D2D3;
+  box-shadow: none;
+}
+
+.c4:focus {
+  border-color: #F5364E;
+  box-shadow: 0 0 3px 0 rgba(245,54,78,0.5);
+}
+
+.c4::-webkit-input-placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c4::-moz-placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c4:-ms-input-placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c4::placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c5 {
+  box-sizing: border-box;
+  width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 3px;
+  outline: 0;
+  padding: 0 10px;
+  line-height: 1;
+  min-height: 32px;
+  color: #353630;
+  font-size: 1rem;
+  border-color: #D1D2D3;
+  box-shadow: none;
+}
+
+.c5:focus {
+  border-color: #F39A1E;
+  box-shadow: 0 0 3px 0 rgba(243,154,30,0.5);
+}
+
+.c5::-webkit-input-placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c5::-moz-placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c5:-ms-input-placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c5::placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c0 > * {
+  margin: 15px;
+  width: 300px;
+}
+
+<div
+  className="c0"
+>
+  <input
+    className="c1"
+    kind="default"
+    placeholder="default"
+  />
+  <input
+    className="c2"
+    kind="primary"
+    placeholder="primary"
+  />
+  <input
+    className="c3"
+    kind="success"
+    placeholder="success"
+  />
+  <input
+    className="c4"
+    kind="error"
+    placeholder="error"
+  />
+  <input
+    className="c5"
+    kind="warning"
+    placeholder="warning"
+  />
+</div>
+`;
+
+exports[`Storyshots Input With type props 1`] = `
+.c1 {
+  box-sizing: border-box;
+  width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 3px;
+  outline: 0;
+  padding: 0 10px;
+  line-height: 1;
+  min-height: 32px;
+  color: #353630;
+  font-size: 1rem;
+  border-color: #D1D2D3;
+  box-shadow: none;
+}
+
+.c1:focus {
+  border-color: #00A1DE;
+  box-shadow: 0 0 3px 0 rgba(0,161,222,0.5);
+}
+
+.c1::-webkit-input-placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c1::-moz-placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c1:-ms-input-placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c1::placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c0 > * {
+  margin: 15px;
+  width: 300px;
+}
+
+<div
+  className="c0"
+>
+  <input
+    className="c1"
+    kind="primary"
+    placeholder="text"
+    type="text"
+  />
+  <input
+    className="c1"
+    kind="primary"
+    placeholder="email"
+    type="email"
+  />
+  <input
+    className="c1"
+    kind="primary"
+    placeholder="number"
+    type="number"
+  />
+  <input
+    className="c1"
+    kind="primary"
+    placeholder="password"
+    type="password"
+  />
+  <input
+    className="c1"
+    kind="primary"
+    placeholder="tel"
+    type="tel"
+  />
+  <input
+    className="c1"
+    kind="primary"
+    placeholder="search"
+    type="search"
+  />
+  <input
+    className="c1"
+    kind="primary"
+    placeholder="month"
+    type="month"
+  />
+  <input
+    className="c1"
+    kind="primary"
+    placeholder="week"
+    type="week"
+  />
+  <input
+    className="c1"
+    kind="primary"
+    placeholder="date"
+    type="date"
+  />
+  <input
+    className="c1"
+    kind="primary"
+    placeholder="color"
+    type="color"
+  />
+  <input
+    className="c1"
+    kind="primary"
+    placeholder="file"
+    type="file"
+  />
+  <input
+    className="c1"
+    kind="primary"
+    placeholder="radio"
+    type="radio"
+  />
+  <input
+    className="c1"
+    kind="primary"
+    placeholder="time"
+    type="time"
+  />
+  <input
+    className="c1"
+    kind="primary"
+    placeholder="url"
+    type="url"
+  />
+  <input
+    className="c1"
+    kind="primary"
+    placeholder="range"
+    type="range"
+  />
+</div>
+`;

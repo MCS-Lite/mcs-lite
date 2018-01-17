@@ -1,0 +1,174 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Picker API 1`] = `
+.c1 {
+  padding-top: 80px;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 40px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #353630;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 40px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #D1D2D3;
+}
+
+.c0 {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+  cursor: default;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: rgba(255,255,255,1);
+}
+
+.c0 > * {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c4 {
+  position: absolute;
+  height: 40px;
+  left: 0;
+  right: 0;
+  top: 80px;
+  border-top: 1px solid #D1D2D3;
+  border-bottom: 1px solid #D1D2D3;
+  pointer-events: none;
+}
+
+.c5 {
+  position: absolute;
+  height: 100%;
+  left: 0;
+  right: 0;
+  background-image: linear-gradient( to bottom,rgba(255,255,255,0.95),rgba(255,255,255,0.6) ),linear-gradient(to top,rgba(255,255,255,0.95),rgba(255,255,255,0.6));
+  background-position: top,bottom;
+  background-size: 100% 32px;
+  background-repeat: no-repeat;
+  pointer-events: none;
+}
+
+<div
+  className="c0"
+>
+  <mock-react-hammerjs
+    direction="DIRECTION_VERTICAL"
+    onPan={[Function]}
+    onPanEnd={[Function]}
+    onPanStart={[Function]}
+    options={
+      Object {
+        "touchAction": "pan-x",
+      }
+    }
+  >
+    <div
+      className="c1"
+      style={
+        Object {
+          "marginTop": -0,
+        }
+      }
+    >
+      <div
+        className="c2"
+      >
+        Apple
+      </div>
+      <div
+        className="c3"
+      >
+        Pen
+      </div>
+      <div
+        className="c3"
+      >
+        Apple pen
+      </div>
+      <div
+        className="c3"
+      >
+        Pineapple
+      </div>
+    </div>
+  </mock-react-hammerjs>
+  <mock-react-hammerjs
+    direction="DIRECTION_VERTICAL"
+    onPan={[Function]}
+    onPanEnd={[Function]}
+    onPanStart={[Function]}
+    options={
+      Object {
+        "touchAction": "pan-x",
+      }
+    }
+  >
+    <div
+      className="c1"
+      style={
+        Object {
+          "marginTop": -40,
+        }
+      }
+    >
+      <div
+        className="c3"
+      >
+        PPAP
+      </div>
+      <div
+        className="c2"
+      >
+        PAPA
+      </div>
+    </div>
+  </mock-react-hammerjs>
+  <div
+    className="c4"
+  />
+  <div
+    className="c5"
+  />
+</div>
+`;

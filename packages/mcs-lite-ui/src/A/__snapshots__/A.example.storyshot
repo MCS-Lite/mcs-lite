@@ -1,0 +1,290 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots A API 1`] = `
+.c0 {
+  color: #00A1DE;
+  -webkit-transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.c0:hover {
+  color: rgb(0,151,208);
+}
+
+.c0:active {
+  color: rgb(0,144,198);
+}
+
+<a
+  className="c0"
+  color="primary"
+>
+  Link
+</a>
+`;
+
+exports[`Storyshots A Nested children with Heading 1`] = `
+.c0 {
+  margin: 0;
+  font-weight: normal;
+  font-size: 2.46rem;
+  color: currentColor;
+}
+
+.c1 {
+  font-weight: bold;
+}
+
+.c2 {
+  color: #00A1DE;
+  -webkit-transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.c2:hover {
+  color: rgb(0,151,208);
+}
+
+.c2:active {
+  color: rgb(0,144,198);
+}
+
+<h1
+  className="c0"
+>
+  Heading Level 1 
+  <b
+    className="c1"
+  >
+    <a
+      className="c2"
+      color="primary"
+    >
+      Link
+    </a>
+  </b>
+</h1>
+`;
+
+exports[`Storyshots A With color props 1`] = `
+.c5 {
+  color: #00A1DE;
+  -webkit-transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.c5:hover {
+  color: rgb(0,151,208);
+}
+
+.c5:active {
+  color: rgb(0,144,198);
+}
+
+.c0 {
+  color: #353630;
+  -webkit-transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.c0:hover {
+  color: rgb(50,51,45);
+}
+
+.c0:active {
+  color: rgb(47,48,43);
+}
+
+.c1 {
+  color: #999A94;
+  -webkit-transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.c1:hover {
+  color: rgb(143,144,139);
+}
+
+.c1:active {
+  color: rgb(136,137,132);
+}
+
+.c2 {
+  color: #D1D2D3;
+  -webkit-transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.c2:hover {
+  color: rgb(196,197,198);
+}
+
+.c2:active {
+  color: rgb(186,187,188);
+}
+
+.c3 {
+  color: #FAFAFA;
+  -webkit-transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.c3:hover {
+  color: rgb(234,234,234);
+}
+
+.c3:active {
+  color: rgb(223,223,223);
+}
+
+.c4 {
+  color: #FFFFFF;
+  -webkit-transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.c4:hover {
+  color: rgb(239,239,239);
+}
+
+.c4:active {
+  color: rgb(227,227,227);
+}
+
+.c6 {
+  color: #69BE28;
+  -webkit-transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.c6:hover {
+  color: rgb(98,178,38);
+}
+
+.c6:active {
+  color: rgb(94,170,36);
+}
+
+.c7 {
+  color: #F5364E;
+  -webkit-transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.c7:hover {
+  color: rgb(230,51,73);
+}
+
+.c7:active {
+  color: rgb(219,48,70);
+}
+
+.c8 {
+  color: #F39A1E;
+  -webkit-transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.c8:hover {
+  color: rgb(228,144,28);
+}
+
+.c8:active {
+  color: rgb(217,137,27);
+}
+
+<div>
+  <a
+    className="c0"
+    color="black"
+  >
+    A link 
+    black
+  </a>
+  <a
+    className="c1"
+    color="grayBase"
+  >
+    A link 
+    grayBase
+  </a>
+  <a
+    className="c2"
+    color="grayDark"
+  >
+    A link 
+    grayDark
+  </a>
+  <a
+    className="c3"
+    color="grayLight"
+  >
+    A link 
+    grayLight
+  </a>
+  <a
+    className="c4"
+    color="white"
+  >
+    A link 
+    white
+  </a>
+  <a
+    className="c3"
+    color="default"
+  >
+    A link 
+    default
+  </a>
+  <a
+    className="c5"
+    color="primary"
+  >
+    A link 
+    primary
+  </a>
+  <a
+    className="c6"
+    color="success"
+  >
+    A link 
+    success
+  </a>
+  <a
+    className="c7"
+    color="error"
+  >
+    A link 
+    error
+  </a>
+  <a
+    className="c8"
+    color="warning"
+  >
+    A link 
+    warning
+  </a>
+</div>
+`;
