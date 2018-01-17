@@ -1,0 +1,2251 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots DataChannelAdapter API 1`] = `
+.c16 {
+  margin: 0;
+  font-weight: normal;
+  font-size: 1.15rem;
+  color: currentColor;
+}
+
+.c24 {
+  margin: 0;
+  font-weight: normal;
+  font-size: 2.46rem;
+  color: #00A1DE;
+}
+
+.c12 {
+  color: #00A1DE;
+  -webkit-transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.c12:hover {
+  color: rgb(0,151,208);
+}
+
+.c12:active {
+  color: rgb(0,144,198);
+}
+
+.c10 {
+  margin: 0;
+  font-size: 1rem;
+  color: currentColor;
+}
+
+.c43 {
+  margin: 0;
+  font-size: 1rem;
+  color: #00A1DE;
+}
+
+.c7 {
+  margin: 0;
+  font-size: 1rem;
+  color: #999A94;
+}
+
+.c18 {
+  font-size: 0.923rem;
+}
+
+.c13 {
+  border-width: 1px;
+  border-style: solid;
+  outline: none;
+  box-sizing: border-box;
+  -webkit-transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  line-height: 0;
+  cursor: pointer;
+  background-color: #00A1DE;
+  color: #FFFFFF;
+  border-radius: 3px;
+  width: initial;
+  min-width: 80px;
+  height: 32px;
+  padding: 6px 15px;
+  font-size: 1rem;
+  border-color: rgb(0,130,179);
+}
+
+.c13:hover {
+  background-color: rgb(0,151,208);
+}
+
+.c13:active {
+  background-color: rgb(0,144,198);
+}
+
+.c2 {
+  box-sizing: border-box;
+  box-shadow: 0 1px 5px 0 rgba(0,0,0,0.2);
+  border-radius: 3px;
+  background-color: #FFFFFF;
+  overflow: hidden;
+}
+
+.c32 {
+  position: relative;
+  height: 50px;
+  width: 82px;
+  box-sizing: border-box;
+  border-radius: 24px;
+  -webkit-transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.2s;
+  transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.2s;
+  cursor: pointer;
+  background-color: #69BE28;
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+}
+
+.c32::after {
+  content: ' ';
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  cursor: pointer;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.17);
+  top: 3px;
+  left: 32px;
+  -webkit-transition: left cubic-bezier(0.47,0,0.75,0.72) 0.2s;
+  transition: left cubic-bezier(0.47,0,0.75,0.72) 0.2s;
+  margin: 0 3px;
+  border: 1px solid rgba(0,0,0,0.1);
+}
+
+.c11 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c11 > * {
+  margin-right: 5px;
+}
+
+.c8 {
+  box-sizing: border-box;
+  width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 3px;
+  outline: 0;
+  padding: 0 10px;
+  line-height: 1;
+  min-height: 32px;
+  color: #353630;
+  font-size: 1rem;
+  border-color: #D1D2D3;
+  box-shadow: none;
+}
+
+.c8:focus {
+  border-color: #00A1DE;
+  box-shadow: 0 0 3px 0 rgba(0,161,222,0.5);
+}
+
+.c8::-webkit-input-placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c8::-moz-placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c8:-ms-input-placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c8::placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c5 {
+  width: 100%;
+}
+
+.c9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.c6 {
+  margin-bottom: 5px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.c28 {
+  box-sizing: border-box;
+  width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 3px;
+  outline: 0;
+  padding: 5px 10px;
+  color: #353630;
+  border-color: #D1D2D3;
+  font-size: 1rem;
+}
+
+.c28:focus {
+  border-color: #00A1DE;
+  box-shadow: 0 0 3px 0 rgba(0,161,222,0.5);
+}
+
+.c28::-webkit-input-placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c28::-moz-placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c28:-ms-input-placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c28::placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c28:disabled {
+  background-color: #FFFFFF;
+}
+
+.c26 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+}
+
+.c29 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.c27 {
+  height: 100%;
+  min-height: 4em;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c44 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 100%;
+  outline: none;
+  background-color: rgba(0,0,0,0);
+  cursor: pointer;
+}
+
+.c44::-webkit-slider-runnable-track {
+  -webkit-appearance: none;
+  height: 16px;
+  border-radius: 8px;
+  background-image: linear-gradient(-180deg,#dfdfdf 5%,#f6f6f6 96%);
+  box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.35),inset 0 0 0 2px #e5e6e6,inset 0 1px 10px 0 rgba(0,0,0,0.05);
+}
+
+.c44::-moz-range-track {
+  -moz-appearance: none;
+  height: 16px;
+  border-radius: 8px;
+  background-image: linear-gradient(-180deg,#dfdfdf 5%,#f6f6f6 96%);
+  box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.35),inset 0 0 0 2px #e5e6e6,inset 0 1px 10px 0 rgba(0,0,0,0.05);
+}
+
+.c44::-moz-focus-outer {
+  border: 0;
+}
+
+.c44::-ms-track {
+  -webkit-appearance: none;
+  height: 16px;
+  border-radius: 8px;
+  background-image: linear-gradient(-180deg,#dfdfdf 5%,#f6f6f6 96%);
+  box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.35),inset 0 0 0 2px #e5e6e6,inset 0 1px 10px 0 rgba(0,0,0,0.05);
+}
+
+.c44::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  margin-top: -12px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-image: radial-gradient( 50% 50%,#ffffff 50%,#ffffff 73%,#f8f8f8 81%,#ebebeb 90%,#dddddd 95% );
+  -webkit-transition: -webkit-transform 0.3s ease,width 0.2s ease,height 0.2s ease;
+  -webkit-transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
+  transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #00A1DE,inset 0 0 0 3px rgb(0,192,255);
+}
+
+.c44::-moz-range-thumb {
+  -moz-appearance: none;
+  height: 40px;
+  width: 40px;
+  border-width: 0;
+  border-radius: 50%;
+  background-image: radial-gradient( 50% 50%,#ffffff 50%,#ffffff 73%,#f8f8f8 81%,#ebebeb 90%,#dddddd 95% );
+  -moz-appearance: none;
+  -moz-transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #00A1DE,inset 0 0 0 3px rgb(0,192,255);
+}
+
+.c44::-ms-thumb {
+  -webkit-appearance: none;
+  margin-top: -12px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-image: radial-gradient( 50% 50%,#ffffff 50%,#ffffff 73%,#f8f8f8 81%,#ebebeb 90%,#dddddd 95% );
+  -webkit-transition: -webkit-transform 0.3s ease,width 0.2s ease,height 0.2s ease;
+  -webkit-transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
+  transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #00A1DE,inset 0 0 0 3px rgb(0,192,255);
+}
+
+.c44::-webkit-slider-thumb:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.c44::-moz-range-thumb:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.c44::-ms-thumb:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.c37 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column-reverse;
+  -ms-flex-direction: column-reverse;
+  flex-direction: column-reverse;
+}
+
+.c38 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c38 > *:first-child {
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+}
+
+.c38 > *:last-child {
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+}
+
+.c39 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0 4px;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-flex-basis: 0;
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0;
+  overflow: hidden;
+}
+
+.c39::before {
+  content: '';
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-right-color: #D1D2D3;
+  height: 4px;
+  margin-top: 5px;
+  margin-bottom: 8px;
+}
+
+.c41 {
+  margin-bottom: 15px;
+}
+
+.c42 {
+  display: inline-block;
+}
+
+.c40 {
+  padding: 0 0%;
+}
+
+.c48 {
+  margin-bottom: 10px;
+}
+
+.c49 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 5px;
+}
+
+.c50 {
+  margin-right: 10px;
+}
+
+.c36 {
+  width: 12px;
+}
+
+.c36 > * {
+  fill: #D1D2D3;
+  -webkit-transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+}
+
+.c35 {
+  width: 12px;
+}
+
+.c35 > * {
+  fill: #69BE28;
+  -webkit-transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+}
+
+.c33 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-around;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: space-around;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.c34 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-flex-basis: 0;
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0;
+  margin: 0 4px;
+  overflow: hidden;
+}
+
+.c34 > *:first-child {
+  margin-bottom: 20px;
+}
+
+.c22 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+}
+
+.c23 {
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+}
+
+.c25 {
+  margin-top: 10px;
+}
+
+.c45 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+}
+
+.c45 > div {
+  width: 100%;
+}
+
+.c45 > div + div {
+  margin-top: 10px;
+}
+
+.c46 {
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  margin-top: 5px;
+}
+
+.c30 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+}
+
+.c31 {
+  height: 100%;
+  min-height: 4em;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c20 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  border: 0;
+  border-top: 1px solid #D1D2D3;
+}
+
+.c3 {
+  -webkit-flex-basis: 24px;
+  -ms-flex-preferred-size: 24px;
+  flex-basis: 24px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c4 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.c14 {
+  display: block;
+}
+
+.c21 {
+  height: 39px;
+}
+
+.c19 {
+  margin: 5px 0;
+}
+
+.c1 {
+  height: 300px;
+  padding: 10px 20px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c15 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c17 {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #999A94;
+}
+
+.c47 {
+  width: 100%;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.c0 > * {
+  height: initial;
+  padding: 8px 16px;
+  margin: 4px;
+  -webkit-flex-basis: 100%;
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+}
+
+.c0 > [data-width ~=' half'] {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-flex-basis: 40%;
+  -ms-flex-preferred-size: 40%;
+  flex-basis: 40%;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1 c2"
+    data-width="half"
+  >
+    <div
+      className="c3"
+    >
+      <a
+        href="."
+      >
+        Link
+      </a>
+    </div>
+    <div
+      className="c4"
+    >
+      <div
+        className="c5"
+      >
+        <p
+          className="c6 c7"
+          color="grayBase"
+        >
+          單位：ampere
+        </p>
+        <input
+          className="c8"
+          kind="primary"
+          onChange={[Function]}
+          placeholder="Integer only"
+          type="number"
+          value={0}
+        />
+        <div
+          className="c9"
+        >
+          <div
+            className="c10"
+            onClick={[Function]}
+          >
+            <a
+              className="c11 c12"
+              color="primary"
+            >
+              <svg
+                fill="currentColor"
+                height="1em"
+                preserveAspectRatio="xMidYMid meet"
+                viewBox="0 0 24 24"
+                width="1em"
+              >
+                <path
+                  d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zm9-10h1v10h-1V9zm-4 0h2v10h-2V9zM8 9h1v10H8V9zm7.5-5l-1-1h-5l-1 1H5v2h14V4h-3.5z"
+                />
+              </svg>
+              Clear
+            </a>
+          </div>
+          <button
+            className="c13"
+            onClick={[Function]}
+          >
+            Ok
+          </button>
+        </div>
+      </div>
+    </div>
+    <div
+      className="c14"
+    >
+      <h4
+        className="c15 c16"
+      >
+        INTEGER_CONTROL
+      </h4>
+      <small
+        className="c17 c18"
+      >
+        Last data point time : 2015-06-12 12:00
+      </small>
+      <hr
+        className="c19 c20"
+      />
+      <div
+        className="c21 c10"
+      >
+        <mock-react-text-truncate
+          line={2}
+          text="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
+          truncateText=" ..."
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    className="c1 c2"
+    data-width="half"
+  >
+    <div
+      className="c3"
+    >
+      <a
+        href="."
+      >
+        Link
+      </a>
+    </div>
+    <div
+      className="c4"
+    >
+      <div
+        className="c22"
+      >
+        <h1
+          className="c23 c24"
+          color="primary"
+        >
+          0
+        </h1>
+        <p
+          className="c25 c7"
+          color="grayBase"
+        >
+          ampere
+        </p>
+      </div>
+    </div>
+    <div
+      className="c14"
+    >
+      <h4
+        className="c15 c16"
+      >
+        INTEGER_DISPLAY
+      </h4>
+      <small
+        className="c17 c18"
+      >
+        Last data point time : 2015-06-12 12:00
+      </small>
+      <hr
+        className="c19 c20"
+      />
+      <div
+        className="c21 c10"
+      >
+        <mock-react-text-truncate
+          line={2}
+          text="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
+          truncateText=" ..."
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    className="c1 c2"
+    data-width="half"
+  >
+    <div
+      className="c3"
+    >
+      <a
+        href="."
+      >
+        Link
+      </a>
+    </div>
+    <div
+      className="c4"
+    >
+      <div
+        className="c5"
+      >
+        <p
+          className="c6 c7"
+          color="grayBase"
+        >
+          單位：ampere
+        </p>
+        <input
+          className="c8"
+          kind="primary"
+          onChange={[Function]}
+          placeholder="Float only"
+          type="number"
+          value=""
+        />
+        <div
+          className="c9"
+        >
+          <div
+            className="c10"
+            onClick={[Function]}
+          >
+            <a
+              className="c11 c12"
+              color="primary"
+            >
+              <svg
+                fill="currentColor"
+                height="1em"
+                preserveAspectRatio="xMidYMid meet"
+                viewBox="0 0 24 24"
+                width="1em"
+              >
+                <path
+                  d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zm9-10h1v10h-1V9zm-4 0h2v10h-2V9zM8 9h1v10H8V9zm7.5-5l-1-1h-5l-1 1H5v2h14V4h-3.5z"
+                />
+              </svg>
+              Clear
+            </a>
+          </div>
+          <button
+            className="c13"
+            onClick={[Function]}
+          >
+            Ok
+          </button>
+        </div>
+      </div>
+    </div>
+    <div
+      className="c14"
+    >
+      <h4
+        className="c15 c16"
+      >
+        FLOAT_CONTROL
+      </h4>
+      <small
+        className="c17 c18"
+      >
+        Last data point time : 2015-06-12 12:00
+      </small>
+      <hr
+        className="c19 c20"
+      />
+      <div
+        className="c21 c10"
+      >
+        <mock-react-text-truncate
+          line={2}
+          text="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
+          truncateText=" ..."
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    className="c1 c2"
+    data-width="half"
+  >
+    <div
+      className="c3"
+    >
+      <a
+        href="."
+      >
+        Link
+      </a>
+    </div>
+    <div
+      className="c4"
+    >
+      <div
+        className="c22"
+      >
+        <h1
+          className="c23 c24"
+          color="primary"
+        >
+          N/A
+        </h1>
+        <p
+          className="c25 c7"
+          color="grayBase"
+        >
+          ampere
+        </p>
+      </div>
+    </div>
+    <div
+      className="c14"
+    >
+      <h4
+        className="c15 c16"
+      >
+        FLOAT_DISPLAY
+      </h4>
+      <small
+        className="c17 c18"
+      >
+        Last data point time : 2015-06-12 12:00
+      </small>
+      <hr
+        className="c19 c20"
+      />
+      <div
+        className="c21 c10"
+      >
+        <mock-react-text-truncate
+          line={2}
+          text="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
+          truncateText=" ..."
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    className="c1 c2"
+    data-width="half"
+  >
+    <div
+      className="c3"
+    >
+      <a
+        href="."
+      >
+        Link
+      </a>
+    </div>
+    <div
+      className="c4"
+    >
+      <div
+        className="c26"
+      >
+        <textarea
+          className="c27 c28"
+          kind="primary"
+          onChange={[Function]}
+          placeholder="String only"
+          value="Any string type value."
+        />
+        <div
+          className="c29"
+        >
+          <div
+            className="c10"
+            onClick={[Function]}
+          >
+            <a
+              className="c11 c12"
+              color="primary"
+            >
+              <svg
+                fill="currentColor"
+                height="1em"
+                preserveAspectRatio="xMidYMid meet"
+                viewBox="0 0 24 24"
+                width="1em"
+              >
+                <path
+                  d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zm9-10h1v10h-1V9zm-4 0h2v10h-2V9zM8 9h1v10H8V9zm7.5-5l-1-1h-5l-1 1H5v2h14V4h-3.5z"
+                />
+              </svg>
+              Clear
+            </a>
+          </div>
+          <button
+            className="c13"
+            onClick={[Function]}
+          >
+            Ok
+          </button>
+        </div>
+      </div>
+    </div>
+    <div
+      className="c14"
+    >
+      <h4
+        className="c15 c16"
+      >
+        STRING_CONTROL
+      </h4>
+      <small
+        className="c17 c18"
+      >
+        Last data point time : 2015-06-12 12:00
+      </small>
+      <hr
+        className="c19 c20"
+      />
+      <div
+        className="c21 c10"
+      >
+        <mock-react-text-truncate
+          line={2}
+          text="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
+          truncateText=" ..."
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    className="c1 c2"
+    data-width="half"
+  >
+    <div
+      className="c3"
+    >
+      <a
+        href="."
+      >
+        Link
+      </a>
+    </div>
+    <div
+      className="c4"
+    >
+      <div
+        className="c30"
+      >
+        <textarea
+          className="c31 c28"
+          disabled={true}
+          kind="primary"
+          placeholder="String only"
+          value="Any string type value."
+        />
+      </div>
+    </div>
+    <div
+      className="c14"
+    >
+      <h4
+        className="c15 c16"
+      >
+        STRING_DISPLAY
+      </h4>
+      <small
+        className="c17 c18"
+      >
+        Last data point time : 2015-06-12 12:00
+      </small>
+      <hr
+        className="c19 c20"
+      />
+      <div
+        className="c21 c10"
+      >
+        <mock-react-text-truncate
+          line={2}
+          text="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
+          truncateText=" ..."
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    className="c1 c2"
+    data-width="half"
+  >
+    <div
+      className="c3"
+    >
+      <a
+        href="."
+      >
+        Link
+      </a>
+    </div>
+    <div
+      className="c4"
+    >
+      <div
+        className="c26"
+      >
+        <textarea
+          className="c27 c28"
+          kind="primary"
+          onChange={[Function]}
+          placeholder="Hex only"
+          value="ABF123"
+        />
+        <div
+          className="c29"
+        >
+          <div
+            className="c10"
+            onClick={[Function]}
+          >
+            <a
+              className="c11 c12"
+              color="primary"
+            >
+              <svg
+                fill="currentColor"
+                height="1em"
+                preserveAspectRatio="xMidYMid meet"
+                viewBox="0 0 24 24"
+                width="1em"
+              >
+                <path
+                  d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zm9-10h1v10h-1V9zm-4 0h2v10h-2V9zM8 9h1v10H8V9zm7.5-5l-1-1h-5l-1 1H5v2h14V4h-3.5z"
+                />
+              </svg>
+              Clear
+            </a>
+          </div>
+          <button
+            className="c13"
+            onClick={[Function]}
+          >
+            Ok
+          </button>
+        </div>
+      </div>
+    </div>
+    <div
+      className="c14"
+    >
+      <h4
+        className="c15 c16"
+      >
+        HEX_CONTROL
+      </h4>
+      <small
+        className="c17 c18"
+      >
+        Last data point time : 2015-06-12 12:00
+      </small>
+      <hr
+        className="c19 c20"
+      />
+      <div
+        className="c21 c10"
+      >
+        <mock-react-text-truncate
+          line={2}
+          text="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
+          truncateText=" ..."
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    className="c1 c2"
+    data-width="half"
+  >
+    <div
+      className="c3"
+    >
+      <a
+        href="."
+      >
+        Link
+      </a>
+    </div>
+    <div
+      className="c4"
+    >
+      <div
+        className="c30"
+      >
+        <textarea
+          className="c31 c28"
+          disabled={true}
+          kind="primary"
+          placeholder="Hex only"
+          value="ABF123"
+        />
+      </div>
+    </div>
+    <div
+      className="c14"
+    >
+      <h4
+        className="c15 c16"
+      >
+        HEX_DISPLAY
+      </h4>
+      <small
+        className="c17 c18"
+      >
+        Last data point time : 2015-06-12 12:00
+      </small>
+      <hr
+        className="c19 c20"
+      />
+      <div
+        className="c21 c10"
+      >
+        <mock-react-text-truncate
+          line={2}
+          text="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
+          truncateText=" ..."
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    className="c1 c2"
+    data-width="half"
+  >
+    <div
+      className="c3"
+    >
+      <a
+        href="."
+      >
+        Link
+      </a>
+    </div>
+    <div
+      className="c4"
+    >
+      <div
+        checked={true}
+        className="c32"
+        kind="success"
+        onClick={[Function]}
+      />
+    </div>
+    <div
+      className="c14"
+    >
+      <h4
+        className="c15 c16"
+      >
+        SWITCH_CONTROL
+      </h4>
+      <small
+        className="c17 c18"
+      >
+        Last data point time : 2015-06-12 12:00
+      </small>
+      <hr
+        className="c19 c20"
+      />
+      <div
+        className="c21 c10"
+      >
+        <mock-react-text-truncate
+          line={2}
+          text="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
+          truncateText=" ..."
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    className="c1 c2"
+    data-width="half"
+  >
+    <div
+      className="c3"
+    >
+      <a
+        href="."
+      >
+        Link
+      </a>
+    </div>
+    <div
+      className="c4"
+    >
+      <div
+        className="c33"
+      >
+        <div
+          className="c34"
+        >
+          <p
+            className="c7"
+            color="grayBase"
+          >
+            OFF
+          </p>
+          <div>
+            <svg
+              className="c35"
+              color="success"
+              viewBox="0 0 20 20"
+            >
+              <circle
+                cx="10"
+                cy="10"
+                r="10"
+              />
+            </svg>
+          </div>
+        </div>
+        <div
+          className="c34"
+        >
+          <p
+            className="c7"
+            color="grayBase"
+          >
+            ON
+          </p>
+          <div>
+            <svg
+              className="c36"
+              color="grayDark"
+              viewBox="0 0 20 20"
+            >
+              <circle
+                cx="10"
+                cy="10"
+                r="10"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="c14"
+    >
+      <h4
+        className="c15 c16"
+      >
+        SWITCH_DISPLAY
+      </h4>
+      <small
+        className="c17 c18"
+      >
+        Last data point time : 2015-06-12 12:00
+      </small>
+      <hr
+        className="c19 c20"
+      />
+      <div
+        className="c21 c10"
+      >
+        <mock-react-text-truncate
+          line={2}
+          text="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
+          truncateText=" ..."
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    className="c1 c2"
+    data-width="half"
+  >
+    <div
+      className="c3"
+    >
+      <a
+        href="."
+      >
+        Link
+      </a>
+    </div>
+    <div
+      className="c4"
+    >
+      <div
+        className="c37"
+      >
+        <div
+          className="c38"
+        >
+          <div
+            className="c39"
+          >
+            <p
+              className="c7"
+              color="grayBase"
+            >
+              k1
+            </p>
+          </div>
+          <div
+            className="c39"
+          >
+            <p
+              className="c7"
+              color="grayBase"
+            >
+              k2
+            </p>
+          </div>
+        </div>
+        <div
+          className="c40"
+        >
+          <div
+            className="c41 c7"
+            color="grayBase"
+          >
+            Current value: 
+            <p
+              className="c42 c43"
+              color="primary"
+            >
+              v2
+            </p>
+          </div>
+          <input
+            className="c44"
+            kind="primary"
+            max={1}
+            min={0}
+            onChange={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            step={1}
+            type="range"
+            value={1}
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      className="c14"
+    >
+      <h4
+        className="c15 c16"
+      >
+        CATEGORY_CONTROL
+      </h4>
+      <small
+        className="c17 c18"
+      >
+        Last data point time : 2015-06-12 12:00
+      </small>
+      <hr
+        className="c19 c20"
+      />
+      <div
+        className="c21 c10"
+      >
+        <mock-react-text-truncate
+          line={2}
+          text="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
+          truncateText=" ..."
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    className="c1 c2"
+    data-width="half"
+  >
+    <div
+      className="c3"
+    >
+      <a
+        href="."
+      >
+        Link
+      </a>
+    </div>
+    <div
+      className="c4"
+    >
+      <div
+        className="c33"
+      >
+        <div
+          className="c34"
+        >
+          <p
+            className="c7"
+            color="grayBase"
+          >
+            k1
+          </p>
+          <div>
+            <svg
+              className="c36"
+              color="grayDark"
+              viewBox="0 0 20 20"
+            >
+              <circle
+                cx="10"
+                cy="10"
+                r="10"
+              />
+            </svg>
+          </div>
+        </div>
+        <div
+          className="c34"
+        >
+          <p
+            className="c7"
+            color="grayBase"
+          >
+            k2
+          </p>
+          <div>
+            <svg
+              className="c35"
+              color="success"
+              viewBox="0 0 20 20"
+            >
+              <circle
+                cx="10"
+                cy="10"
+                r="10"
+              />
+            </svg>
+          </div>
+        </div>
+        <div
+          className="c34"
+        >
+          <p
+            className="c7"
+            color="grayBase"
+          >
+            k3
+          </p>
+          <div>
+            <svg
+              className="c36"
+              color="grayDark"
+              viewBox="0 0 20 20"
+            >
+              <circle
+                cx="10"
+                cy="10"
+                r="10"
+              />
+            </svg>
+          </div>
+        </div>
+        <div
+          className="c34"
+        >
+          <p
+            className="c7"
+            color="grayBase"
+          >
+            k4
+          </p>
+          <div>
+            <svg
+              className="c36"
+              color="grayDark"
+              viewBox="0 0 20 20"
+            >
+              <circle
+                cx="10"
+                cy="10"
+                r="10"
+              />
+            </svg>
+          </div>
+        </div>
+        <div
+          className="c34"
+        >
+          <p
+            className="c7"
+            color="grayBase"
+          >
+            k5
+          </p>
+          <div>
+            <svg
+              className="c36"
+              color="grayDark"
+              viewBox="0 0 20 20"
+            >
+              <circle
+                cx="10"
+                cy="10"
+                r="10"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="c14"
+    >
+      <h4
+        className="c15 c16"
+      >
+        CATEGORY_DISPLAY
+      </h4>
+      <small
+        className="c17 c18"
+      >
+        Last data point time : 2015-06-12 12:00
+      </small>
+      <hr
+        className="c19 c20"
+      />
+      <div
+        className="c21 c10"
+      >
+        <mock-react-text-truncate
+          line={2}
+          text="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
+          truncateText=" ..."
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    className="c1 c2"
+    data-width="half"
+  >
+    <div
+      className="c3"
+    >
+      <a
+        href="."
+      >
+        Link
+      </a>
+    </div>
+    <div
+      className="c4"
+    >
+      <div
+        className="c37"
+      >
+        <div
+          className="c38"
+        >
+          <div
+            className="c39"
+          >
+            <p
+              className="c7"
+              color="grayBase"
+            >
+              Low
+            </p>
+          </div>
+          <div
+            className="c39"
+          >
+            <p
+              className="c7"
+              color="grayBase"
+            >
+              High
+            </p>
+          </div>
+        </div>
+        <div
+          className="c40"
+        >
+          <div
+            className="c41 c7"
+            color="grayBase"
+          >
+            Current value: 
+            <p
+              className="c42 c43"
+              color="primary"
+            >
+              High
+            </p>
+          </div>
+          <input
+            className="c44"
+            kind="primary"
+            max={1}
+            min={0}
+            onChange={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            step={1}
+            type="range"
+            value={1}
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      className="c14"
+    >
+      <h4
+        className="c15 c16"
+      >
+        GPIO_CONTROL
+      </h4>
+      <small
+        className="c17 c18"
+      >
+        Last data point time : 2015-06-12 12:00
+      </small>
+      <hr
+        className="c19 c20"
+      />
+      <div
+        className="c21 c10"
+      >
+        <mock-react-text-truncate
+          line={2}
+          text="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
+          truncateText=" ..."
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    className="c1 c2"
+    data-width="half"
+  >
+    <div
+      className="c3"
+    >
+      <a
+        href="."
+      >
+        Link
+      </a>
+    </div>
+    <div
+      className="c4"
+    >
+      <div
+        className="c33"
+      >
+        <div
+          className="c34"
+        >
+          <p
+            className="c7"
+            color="grayBase"
+          >
+            Low
+          </p>
+          <div>
+            <svg
+              className="c35"
+              color="success"
+              viewBox="0 0 20 20"
+            >
+              <circle
+                cx="10"
+                cy="10"
+                r="10"
+              />
+            </svg>
+          </div>
+        </div>
+        <div
+          className="c34"
+        >
+          <p
+            className="c7"
+            color="grayBase"
+          >
+            High
+          </p>
+          <div>
+            <svg
+              className="c36"
+              color="grayDark"
+              viewBox="0 0 20 20"
+            >
+              <circle
+                cx="10"
+                cy="10"
+                r="10"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="c14"
+    >
+      <h4
+        className="c15 c16"
+      >
+        GPIO_DISPLAY
+      </h4>
+      <small
+        className="c17 c18"
+      >
+        Last data point time : 2015-06-12 12:00
+      </small>
+      <hr
+        className="c19 c20"
+      />
+      <div
+        className="c21 c10"
+      >
+        <mock-react-text-truncate
+          line={2}
+          text="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
+          truncateText=" ..."
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    className="c1 c2"
+    data-width="half"
+  >
+    <div
+      className="c3"
+    >
+      <a
+        href="."
+      >
+        Link
+      </a>
+    </div>
+    <div
+      className="c4"
+    >
+      <div
+        className="c37"
+      >
+        <div
+          className="c38"
+        >
+          <div
+            className="c39"
+          >
+            <div
+              className="c7"
+              color="grayBase"
+            >
+              1
+            </div>
+          </div>
+          <div
+            className="c39"
+          >
+            <div
+              className="c7"
+              color="grayBase"
+            >
+              100
+            </div>
+          </div>
+        </div>
+        <div
+          className="c40"
+        >
+          <div
+            className="c41 c7"
+            color="grayBase"
+          >
+            Current value: 
+            <div
+              className="c42 c43"
+              color="primary"
+            >
+              23
+            </div>
+          </div>
+          <input
+            className="c44"
+            kind="primary"
+            max={100}
+            min={1}
+            onChange={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            step={1}
+            type="range"
+            value={23}
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      className="c14"
+    >
+      <h4
+        className="c15 c16"
+      >
+        ANALOG_CONTROL
+      </h4>
+      <small
+        className="c17 c18"
+      >
+        Last data point time : 2015-06-12 12:00
+      </small>
+      <hr
+        className="c19 c20"
+      />
+      <div
+        className="c21 c10"
+      >
+        <mock-react-text-truncate
+          line={2}
+          text="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
+          truncateText=" ..."
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    className="c1 c2"
+    data-width="half"
+  >
+    <div
+      className="c3"
+    >
+      <a
+        href="."
+      >
+        Link
+      </a>
+    </div>
+    <div
+      className="c4"
+    >
+      <div
+        className="c45"
+      >
+        <div>
+          <p
+            className="c7"
+            color="grayBase"
+          >
+            Value
+          </p>
+          <h1
+            className="c46 c24"
+            color="primary"
+          >
+            value pwm
+          </h1>
+        </div>
+        <div>
+          <p
+            className="c7"
+            color="grayBase"
+          >
+            Period
+          </p>
+          <h1
+            className="c46 c24"
+            color="primary"
+          >
+            20
+          </h1>
+        </div>
+      </div>
+    </div>
+    <div
+      className="c14"
+    >
+      <h4
+        className="c15 c16"
+      >
+        PWM_DISPLAY
+      </h4>
+      <small
+        className="c17 c18"
+      >
+        Last data point time : 2015-06-12 12:00
+      </small>
+      <hr
+        className="c19 c20"
+      />
+      <div
+        className="c21 c10"
+      >
+        <mock-react-text-truncate
+          line={2}
+          text="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
+          truncateText=" ..."
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    className="c1 c2"
+    data-width="half"
+  >
+    <div
+      className="c3"
+    >
+      <a
+        href="."
+      >
+        Link
+      </a>
+    </div>
+    <div
+      className="c4"
+    >
+      <div
+        className="c47"
+      >
+        <div
+          className="c48"
+        >
+          <label
+            htmlFor="input"
+          >
+            <p
+              className="c7"
+              color="grayBase"
+            >
+              Period
+            </p>
+          </label>
+          <div
+            className="c49"
+          >
+            <input
+              className="c50 c8"
+              kind="primary"
+              onChange={[Function]}
+              placeholder="Integer only"
+              type="number"
+              value={0}
+            />
+            <button
+              className="c13"
+              onClick={[Function]}
+            >
+              Ok
+            </button>
+          </div>
+        </div>
+        <div
+          className="c37"
+        >
+          <div
+            className="c38"
+          >
+            <div
+              className="c39"
+            >
+              <div
+                className="c7"
+                color="grayBase"
+              >
+                0
+              </div>
+            </div>
+            <div
+              className="c39"
+            >
+              <div
+                className="c7"
+                color="grayBase"
+              >
+                100
+              </div>
+            </div>
+          </div>
+          <div
+            className="c40"
+          >
+            <div
+              className="c41 c7"
+              color="grayBase"
+            >
+              Current value: 
+              <div
+                className="c42 c43"
+                color="primary"
+              >
+                0
+              </div>
+            </div>
+            <input
+              className="c44"
+              kind="primary"
+              max={100}
+              min={0}
+              onChange={[Function]}
+              onMouseUp={[Function]}
+              onTouchEnd={[Function]}
+              step={1}
+              type="range"
+              value={0}
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="c14"
+    >
+      <h4
+        className="c15 c16"
+      >
+        PWM_CONTROL
+      </h4>
+      <small
+        className="c17 c18"
+      >
+        Last data point time : 2015-06-12 12:00
+      </small>
+      <hr
+        className="c19 c20"
+      />
+      <div
+        className="c21 c10"
+      >
+        <mock-react-text-truncate
+          line={2}
+          text="You can input description of controller here. You can input description of You can input description of controller here. You can input description of"
+          truncateText=" ..."
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;

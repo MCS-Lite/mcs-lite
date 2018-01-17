@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots MobileContentWrapper API 1`] = `
+.c0 {
+  max-width: 800px;
+  height: 100%;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.c1 {
+  border: 1px dashed #353630;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    With max-width
+  </div>
+</div>
+`;

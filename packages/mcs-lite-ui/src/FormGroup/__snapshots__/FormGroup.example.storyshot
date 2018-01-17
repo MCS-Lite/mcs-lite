@@ -1,0 +1,99 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots FormGroup API 1`] = `
+.c3 {
+  box-sizing: border-box;
+  width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 3px;
+  outline: 0;
+  padding: 0 10px;
+  line-height: 1;
+  min-height: 32px;
+  color: #353630;
+  font-size: 1rem;
+  border-color: #D1D2D3;
+  box-shadow: none;
+}
+
+.c3:focus {
+  border-color: #00A1DE;
+  box-shadow: 0 0 3px 0 rgba(0,161,222,0.5);
+}
+
+.c3::-webkit-input-placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c3::-moz-placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c3:-ms-input-placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c3::placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c2::after {
+  content: " *";
+  color: #F5364E;
+}
+
+.c4::after {
+  content: "";
+  color: #F5364E;
+}
+
+.c0 {
+  width: 100%;
+}
+
+.c0 .c1 {
+  display: block;
+  padding-bottom: 5px;
+}
+
+.c0 * + .c1 {
+  margin-top: 10px;
+}
+
+<div
+  className="c0"
+>
+  <label
+    className="c1 c2"
+    htmlFor="1"
+    required={true}
+  >
+    Label 1
+  </label>
+  <input
+    className="c3"
+    id="1"
+    kind="primary"
+    placeholder="placeholder 1"
+    type="text"
+  />
+  <label
+    className="c1 c4"
+    htmlFor="2"
+  >
+    Label 2
+  </label>
+  <input
+    className="c3"
+    id="2"
+    kind="primary"
+    placeholder="placeholder 2"
+    type="text"
+  />
+</div>
+`;

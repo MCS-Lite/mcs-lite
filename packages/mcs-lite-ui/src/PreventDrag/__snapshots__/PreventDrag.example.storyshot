@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots PreventDrag API 1`] = `
+.c0 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+<div>
+  <img
+    alt=""
+    src="http://placehold.it/350x150"
+  />
+  <div
+    className="c0"
+    onDragStart={[Function]}
+    onDrop={[Function]}
+    onMouseDown={[Function]}
+    onMouseMove={[Function]}
+    onMouseOut={[Function]}
+  >
+    <img
+      alt=""
+      src="http://placehold.it/350x150"
+    />
+  </div>
+  <a
+    href="."
+  >
+    Link content
+  </a>
+  <div
+    className="c0"
+    onDragStart={[Function]}
+    onDrop={[Function]}
+    onMouseDown={[Function]}
+    onMouseMove={[Function]}
+    onMouseOut={[Function]}
+  >
+    <a
+      href="."
+    >
+      Link content (PreventDrag)
+    </a>
+  </div>
+</div>
+`;

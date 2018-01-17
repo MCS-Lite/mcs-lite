@@ -1,0 +1,165 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots MobileDeviceCard API 1`] = `
+.c5 {
+  margin: 0;
+  font-weight: normal;
+  font-size: 1.15rem;
+  color: #353630;
+}
+
+.c1 {
+  box-sizing: border-box;
+  box-shadow: 0 1px 5px 0 rgba(0,0,0,0.2);
+  border-radius: 3px;
+  background-color: #FFFFFF;
+  overflow: hidden;
+}
+
+.c3 {
+  height: 100%;
+  width: 100%;
+  background-image: url("https://img.mediatek.com/600/mtk.linkit/productBanner.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.c0 {
+  height: 120px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c2 {
+  -webkit-box-flex: 2;
+  -webkit-flex-grow: 2;
+  -ms-flex-positive: 2;
+  flex-grow: 2;
+}
+
+.c4 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-flex-basis: 0;
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0;
+  padding: 8px;
+}
+
+<div
+  className="c0 c1"
+>
+  <div
+    className="c2"
+  >
+    <div
+      className="c3"
+      size="cover"
+      src="https://img.mediatek.com/600/mtk.linkit/productBanner.png"
+    />
+  </div>
+  <div
+    className="c4"
+  >
+    <h4
+      className="c5"
+      color="black"
+    >
+      <mock-react-text-truncate
+        line={4}
+        text="範例 B 的測試裝置"
+        truncateText=" ..."
+      />
+    </h4>
+  </div>
+</div>
+`;
+
+exports[`Storyshots MobileDeviceCard Override height 1`] = `
+.c6 {
+  margin: 0;
+  font-weight: normal;
+  font-size: 1.15rem;
+  color: #353630;
+}
+
+.c2 {
+  box-sizing: border-box;
+  box-shadow: 0 1px 5px 0 rgba(0,0,0,0.2);
+  border-radius: 3px;
+  background-color: #FFFFFF;
+  overflow: hidden;
+}
+
+.c4 {
+  height: 100%;
+  width: 100%;
+  background-image: url("https://img.mediatek.com/600/mtk.linkit/productBanner.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.c1 {
+  height: 120px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c3 {
+  -webkit-box-flex: 2;
+  -webkit-flex-grow: 2;
+  -ms-flex-positive: 2;
+  flex-grow: 2;
+}
+
+.c5 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-flex-basis: 0;
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0;
+  padding: 8px;
+}
+
+.c0 {
+  height: 200px;
+}
+
+<div
+  className="c0 c1 c2"
+>
+  <div
+    className="c3"
+  >
+    <div
+      className="c4"
+      size="cover"
+      src="https://img.mediatek.com/600/mtk.linkit/productBanner.png"
+    />
+  </div>
+  <div
+    className="c5"
+  >
+    <h4
+      className="c6"
+      color="black"
+    >
+      <mock-react-text-truncate
+        line={4}
+        text="範例 B 的測試裝置"
+        truncateText=" ..."
+      />
+    </h4>
+  </div>
+</div>
+`;

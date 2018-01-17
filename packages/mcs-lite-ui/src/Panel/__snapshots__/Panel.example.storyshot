@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Panel API 1`] = `
+.c0 {
+  width: 100%;
+  border-radius: 3px;
+  background-color: #FFFFFF;
+}
+
+.c0 > header {
+  background-color: #FAFAFA;
+  box-shadow: 0 1px 1px 0 rgba(0,0,0,0.05);
+  border-radius: 3px;
+  height: 50px;
+}
+
+.c0 > main,
+.c0 > footer {
+  padding: 20px;
+}
+
+<div
+  className="c0"
+>
+  <header>
+    Panel Header (header)
+  </header>
+  <main>
+    Panel body (main)
+  </main>
+  <footer>
+    footer
+  </footer>
+</div>
+`;

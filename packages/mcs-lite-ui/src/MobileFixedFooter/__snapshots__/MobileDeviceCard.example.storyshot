@@ -1,0 +1,114 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots MobileFixedFooter API 1`] = `
+.c4 {
+  border-width: 1px;
+  border-style: solid;
+  outline: none;
+  box-sizing: border-box;
+  -webkit-transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  line-height: 0;
+  cursor: pointer;
+  background-color: #00A1DE;
+  color: #FFFFFF;
+  border-radius: 3px;
+  width: 100%;
+  min-width: initial;
+  height: 32px;
+  padding: 6px 15px;
+  font-size: 1rem;
+  border-color: rgb(0,130,179);
+}
+
+.c4:hover {
+  background-color: rgb(0,151,208);
+}
+
+.c4:active {
+  background-color: rgb(0,144,198);
+}
+
+.c3 {
+  border-width: 1px;
+  border-style: solid;
+  outline: none;
+  box-sizing: border-box;
+  -webkit-transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  line-height: 0;
+  cursor: pointer;
+  background-color: #FAFAFA;
+  color: #999A94;
+  border-radius: 3px;
+  width: 100%;
+  min-width: initial;
+  height: 32px;
+  padding: 6px 15px;
+  font-size: 1rem;
+  border-color: rgb(202,202,202);
+}
+
+.c3:hover {
+  background-color: rgb(234,234,234);
+}
+
+.c3:active {
+  background-color: rgb(223,223,223);
+}
+
+.c1 {
+  max-width: 800px;
+  height: 100%;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.c0 {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  background-color: #FAFAFA;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 8px;
+}
+
+.c2 > * {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c2 > *:last-child {
+  margin-left: 16px;
+}
+
+<footer
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <div
+      className="c2"
+    >
+      <button
+        className="c3"
+      >
+        Cancel
+      </button>
+      <button
+        className="c4"
+      >
+        Submit
+      </button>
+    </div>
+  </div>
+</footer>
+`;

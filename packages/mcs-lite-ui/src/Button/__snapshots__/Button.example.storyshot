@@ -1,0 +1,1016 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Button API 1`] = `
+.c0 {
+  border-width: 1px;
+  border-style: solid;
+  outline: none;
+  box-sizing: border-box;
+  -webkit-transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  line-height: 0;
+  cursor: pointer;
+  background-color: #00A1DE;
+  color: #FFFFFF;
+  border-radius: 3px;
+  width: initial;
+  min-width: 80px;
+  height: 32px;
+  padding: 6px 15px;
+  font-size: 1rem;
+  border-color: rgb(0,130,179);
+}
+
+.c0:hover {
+  background-color: rgb(0,151,208);
+}
+
+.c0:active {
+  background-color: rgb(0,144,198);
+}
+
+<button
+  className="c0"
+>
+  button
+</button>
+`;
+
+exports[`Storyshots Button Overriding style 1`] = `
+.c1 {
+  border-width: 1px;
+  border-style: solid;
+  outline: none;
+  box-sizing: border-box;
+  -webkit-transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  line-height: 0;
+  cursor: pointer;
+  background-color: #00A1DE;
+  color: #FFFFFF;
+  border-radius: 3px;
+  width: initial;
+  min-width: 80px;
+  height: 32px;
+  padding: 6px 15px;
+  font-size: 1rem;
+  border-color: rgb(0,130,179);
+}
+
+.c1:hover {
+  background-color: rgb(0,151,208);
+}
+
+.c1:active {
+  background-color: rgb(0,144,198);
+}
+
+.c0 {
+  font-size: 56px;
+  color: #ffffff;
+  border-radius: 6px;
+  border-color: rgb(206,80,57);
+  background-color: tomato;
+  min-height: 80px;
+}
+
+.c0:hover {
+  background-color: rgb(239,93,67);
+}
+
+.c0:active {
+  background-color: rgb(227,88,63);
+}
+
+<button
+  className="c0 c1"
+  onClick={[Function]}
+>
+  Overriding style
+</button>
+`;
+
+exports[`Storyshots Button With active props 1`] = `
+.c0 {
+  border-width: 1px;
+  border-style: solid;
+  outline: none;
+  box-sizing: border-box;
+  -webkit-transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  line-height: 0;
+  cursor: pointer;
+  background-color: rgb(0,144,198);
+  color: #FFFFFF;
+  border-radius: 3px;
+  width: initial;
+  min-width: 80px;
+  height: 32px;
+  padding: 6px 15px;
+  font-size: 1rem;
+  border-color: rgb(0,130,179);
+}
+
+.c0:hover {
+  background-color: rgb(0,151,208);
+}
+
+.c0:active {
+  background-color: rgb(0,144,198);
+}
+
+<button
+  className="c0"
+>
+  Active
+</button>
+`;
+
+exports[`Storyshots Button With block props 1`] = `
+.c1 {
+  border-width: 1px;
+  border-style: solid;
+  outline: none;
+  box-sizing: border-box;
+  -webkit-transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  line-height: 0;
+  cursor: pointer;
+  background-color: #00A1DE;
+  color: #FFFFFF;
+  border-radius: 3px;
+  width: initial;
+  min-width: 80px;
+  height: 32px;
+  padding: 6px 15px;
+  font-size: 1rem;
+  border-color: rgb(0,130,179);
+}
+
+.c1:hover {
+  background-color: rgb(0,151,208);
+}
+
+.c1:active {
+  background-color: rgb(0,144,198);
+}
+
+.c2 {
+  border-width: 1px;
+  border-style: solid;
+  outline: none;
+  box-sizing: border-box;
+  -webkit-transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  line-height: 0;
+  cursor: pointer;
+  background-color: #00A1DE;
+  color: #FFFFFF;
+  border-radius: 3px;
+  width: 100%;
+  min-width: initial;
+  height: 32px;
+  padding: 6px 15px;
+  font-size: 1rem;
+  border-color: rgb(0,130,179);
+}
+
+.c2:hover {
+  background-color: rgb(0,151,208);
+}
+
+.c2:active {
+  background-color: rgb(0,144,198);
+}
+
+.c0 > * {
+  margin: 5px;
+}
+
+<div
+  className="c0"
+>
+  <button
+    className="c1"
+  >
+    Button
+  </button>
+  <button
+    className="c1"
+  >
+    Simple button
+  </button>
+  <button
+    className="c2"
+  >
+    block
+  </button>
+</div>
+`;
+
+exports[`Storyshots Button With component props - Input submit 1`] = `
+.c0 {
+  border-width: 1px;
+  border-style: solid;
+  outline: none;
+  box-sizing: border-box;
+  -webkit-transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  line-height: 0;
+  cursor: pointer;
+  background-color: #00A1DE;
+  color: #FFFFFF;
+  border-radius: 3px;
+  width: 100%;
+  min-width: initial;
+  height: 32px;
+  padding: 6px 15px;
+  font-size: 1rem;
+  border-color: rgb(0,130,179);
+}
+
+.c0:hover {
+  background-color: rgb(0,151,208);
+}
+
+.c0:active {
+  background-color: rgb(0,144,198);
+}
+
+<input
+  className="c0"
+  onClick={[Function]}
+  type="submit"
+  value="Input Submit"
+/>
+`;
+
+exports[`Storyshots Button With component props 1`] = `
+.c0 {
+  border-width: 1px;
+  border-style: solid;
+  outline: none;
+  box-sizing: border-box;
+  -webkit-transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  line-height: 0;
+  cursor: pointer;
+  background-color: #00A1DE;
+  color: #FFFFFF;
+  border-radius: 3px;
+  width: initial;
+  min-width: 80px;
+  height: 32px;
+  padding: 6px 15px;
+  font-size: 1rem;
+  border-color: rgb(0,130,179);
+}
+
+.c0:hover {
+  background-color: rgb(0,151,208);
+}
+
+.c0:active {
+  background-color: rgb(0,144,198);
+}
+
+<a
+  className="c0"
+  onClick={[Function]}
+>
+  I am 
+  &lt;a&gt;
+   tag.
+</a>
+`;
+
+exports[`Storyshots Button With disabled props 1`] = `
+.c0 {
+  border-width: 1px;
+  border-style: solid;
+  outline: none;
+  box-sizing: border-box;
+  -webkit-transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  line-height: 0;
+  cursor: not-allowed;
+  background-color: #D1D2D3;
+  color: #FFFFFF;
+  border-radius: 3px;
+  width: initial;
+  min-width: 80px;
+  height: 32px;
+  padding: 6px 15px;
+  font-size: 1rem;
+  border-color: rgb(169,170,170);
+}
+
+.c0:hover {
+  background-color: #D1D2D3;
+}
+
+.c0:active {
+  background-color: #D1D2D3;
+}
+
+<button
+  className="c0"
+>
+  Disabled
+</button>
+`;
+
+exports[`Storyshots Button With icon inside 1`] = `
+.c0 {
+  border-width: 1px;
+  border-style: solid;
+  outline: none;
+  box-sizing: border-box;
+  -webkit-transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  line-height: 0;
+  cursor: pointer;
+  background-color: #00A1DE;
+  color: #FFFFFF;
+  border-radius: 3px;
+  width: initial;
+  min-width: 80px;
+  height: 32px;
+  padding: 6px 15px;
+  font-size: 1rem;
+  border-color: rgb(0,130,179);
+}
+
+.c0:hover {
+  background-color: rgb(0,151,208);
+}
+
+.c0:active {
+  background-color: rgb(0,144,198);
+}
+
+.c2 > * {
+  -webkit-transform-origin: center center;
+  -ms-transform-origin: center center;
+  transform-origin: center center;
+  -webkit-animation: iVXCSc 0.6s infinite cubic-bezier(0.41,0.01,0.58,1);
+  animation: iVXCSc 0.6s infinite cubic-bezier(0.41,0.01,0.58,1);
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+<button
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <div
+      className="c2"
+    >
+      <svg
+        fill="currentColor"
+        height={14}
+        preserveAspectRatio="xMidYMid meet"
+        viewBox="0 0 24 24"
+        width={14}
+      >
+        <path
+          d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm0 18c-4.4 0-8-3.6-8-8s3.6-8 8-8 8 3.6 8 8-3.6 8-8 8z"
+          opacity=".3"
+        />
+        <path
+          d="M12 4c4.4 0 8 3.6 8 8h2c0-5.5-4.5-10-10-10v2z"
+        />
+      </svg>
+    </div>
+     Loading ...
+  </div>
+</button>
+`;
+
+exports[`Storyshots Button With kind props 1`] = `
+.c2 {
+  border-width: 1px;
+  border-style: solid;
+  outline: none;
+  box-sizing: border-box;
+  -webkit-transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  line-height: 0;
+  cursor: pointer;
+  background-color: #00A1DE;
+  color: #FFFFFF;
+  border-radius: 3px;
+  width: initial;
+  min-width: 80px;
+  height: 32px;
+  padding: 6px 15px;
+  font-size: 1rem;
+  border-color: rgb(0,130,179);
+}
+
+.c2:hover {
+  background-color: rgb(0,151,208);
+}
+
+.c2:active {
+  background-color: rgb(0,144,198);
+}
+
+.c1 {
+  border-width: 1px;
+  border-style: solid;
+  outline: none;
+  box-sizing: border-box;
+  -webkit-transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  line-height: 0;
+  cursor: pointer;
+  background-color: #FAFAFA;
+  color: #999A94;
+  border-radius: 3px;
+  width: initial;
+  min-width: 80px;
+  height: 32px;
+  padding: 6px 15px;
+  font-size: 1rem;
+  border-color: rgb(202,202,202);
+}
+
+.c1:hover {
+  background-color: rgb(234,234,234);
+}
+
+.c1:active {
+  background-color: rgb(223,223,223);
+}
+
+.c3 {
+  border-width: 1px;
+  border-style: solid;
+  outline: none;
+  box-sizing: border-box;
+  -webkit-transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  line-height: 0;
+  cursor: pointer;
+  background-color: #69BE28;
+  color: #FFFFFF;
+  border-radius: 3px;
+  width: initial;
+  min-width: 80px;
+  height: 32px;
+  padding: 6px 15px;
+  font-size: 1rem;
+  border-color: rgb(85,153,32);
+}
+
+.c3:hover {
+  background-color: rgb(98,178,38);
+}
+
+.c3:active {
+  background-color: rgb(94,170,36);
+}
+
+.c4 {
+  border-width: 1px;
+  border-style: solid;
+  outline: none;
+  box-sizing: border-box;
+  -webkit-transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  line-height: 0;
+  cursor: pointer;
+  background-color: #F5364E;
+  color: #FFFFFF;
+  border-radius: 3px;
+  width: initial;
+  min-width: 80px;
+  height: 32px;
+  padding: 6px 15px;
+  font-size: 1rem;
+  border-color: rgb(198,44,63);
+}
+
+.c4:hover {
+  background-color: rgb(230,51,73);
+}
+
+.c4:active {
+  background-color: rgb(219,48,70);
+}
+
+.c5 {
+  border-width: 1px;
+  border-style: solid;
+  outline: none;
+  box-sizing: border-box;
+  -webkit-transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  line-height: 0;
+  cursor: pointer;
+  background-color: #F39A1E;
+  color: #FFFFFF;
+  border-radius: 3px;
+  width: initial;
+  min-width: 80px;
+  height: 32px;
+  padding: 6px 15px;
+  font-size: 1rem;
+  border-color: rgb(196,124,24);
+}
+
+.c5:hover {
+  background-color: rgb(228,144,28);
+}
+
+.c5:active {
+  background-color: rgb(217,137,27);
+}
+
+.c0 > * {
+  margin: 5px;
+}
+
+<div
+  className="c0"
+>
+  <button
+    className="c1"
+    onClick={[Function]}
+  >
+    default
+  </button>
+  <button
+    className="c2"
+    onClick={[Function]}
+  >
+    primary
+  </button>
+  <button
+    className="c3"
+    onClick={[Function]}
+  >
+    success
+  </button>
+  <button
+    className="c4"
+    onClick={[Function]}
+  >
+    error
+  </button>
+  <button
+    className="c5"
+    onClick={[Function]}
+  >
+    warning
+  </button>
+</div>
+`;
+
+exports[`Storyshots Button With round props 1`] = `
+.c1 {
+  border-width: 1px;
+  border-style: solid;
+  outline: none;
+  box-sizing: border-box;
+  -webkit-transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  line-height: 0;
+  cursor: pointer;
+  background-color: #00A1DE;
+  color: #FFFFFF;
+  border-radius: 50%;
+  width: 32px;
+  min-width: initial;
+  height: 32px;
+  padding: 0;
+  font-size: 1rem;
+  border-color: rgb(0,130,179);
+}
+
+.c1:hover {
+  background-color: rgb(0,151,208);
+}
+
+.c1:active {
+  background-color: rgb(0,144,198);
+}
+
+.c2 {
+  border-width: 1px;
+  border-style: solid;
+  outline: none;
+  box-sizing: border-box;
+  -webkit-transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  line-height: 0;
+  cursor: pointer;
+  background-color: #FAFAFA;
+  color: #999A94;
+  border-radius: 50%;
+  width: 32px;
+  min-width: initial;
+  height: 32px;
+  padding: 0;
+  font-size: 1rem;
+  border-color: rgb(202,202,202);
+}
+
+.c2:hover {
+  background-color: rgb(234,234,234);
+}
+
+.c2:active {
+  background-color: rgb(223,223,223);
+}
+
+.c0 > * {
+  margin: 5px;
+}
+
+<div
+  className="c0"
+>
+  <button
+    className="c1"
+  >
+    A
+  </button>
+  <button
+    className="c2"
+  >
+    <svg
+      fill="currentColor"
+      height="1em"
+      preserveAspectRatio="xMidYMid meet"
+      viewBox="0 0 24 24"
+      width="1em"
+    >
+      <path
+        d="M19 20H5V9h14m-3-7v2H8V2H6v2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2h-1V2m-1 11h-5v5h5v-5z"
+      />
+    </svg>
+  </button>
+</div>
+`;
+
+exports[`Storyshots Button With size props 1`] = `
+.c1 {
+  border-width: 1px;
+  border-style: solid;
+  outline: none;
+  box-sizing: border-box;
+  -webkit-transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  line-height: 0;
+  cursor: pointer;
+  background-color: #00A1DE;
+  color: #FFFFFF;
+  border-radius: 3px;
+  width: initial;
+  min-width: 40px;
+  height: 20px;
+  padding: 0 5px;
+  font-size: 0.923rem;
+  border-color: rgb(0,130,179);
+}
+
+.c1:hover {
+  background-color: rgb(0,151,208);
+}
+
+.c1:active {
+  background-color: rgb(0,144,198);
+}
+
+.c2 {
+  border-width: 1px;
+  border-style: solid;
+  outline: none;
+  box-sizing: border-box;
+  -webkit-transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  line-height: 0;
+  cursor: pointer;
+  background-color: #FAFAFA;
+  color: #999A94;
+  border-radius: 3px;
+  width: initial;
+  min-width: 40px;
+  height: 20px;
+  padding: 0 5px;
+  font-size: 0.923rem;
+  border-color: rgb(202,202,202);
+}
+
+.c2:hover {
+  background-color: rgb(234,234,234);
+}
+
+.c2:active {
+  background-color: rgb(223,223,223);
+}
+
+.c0 > * {
+  margin: 5px;
+}
+
+<div
+  className="c0"
+>
+  <button
+    className="c1"
+  >
+    Btn
+  </button>
+  <button
+    className="c2"
+  >
+    Small Button
+  </button>
+</div>
+`;
+
+exports[`Storyshots Button With square props 1`] = `
+.c1 {
+  border-width: 1px;
+  border-style: solid;
+  outline: none;
+  box-sizing: border-box;
+  -webkit-transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  line-height: 0;
+  cursor: pointer;
+  background-color: #00A1DE;
+  color: #FFFFFF;
+  border-radius: 3px;
+  width: 32px;
+  min-width: initial;
+  height: 32px;
+  padding: 0;
+  font-size: 1rem;
+  border-color: rgb(0,130,179);
+}
+
+.c1:hover {
+  background-color: rgb(0,151,208);
+}
+
+.c1:active {
+  background-color: rgb(0,144,198);
+}
+
+.c2 {
+  border-width: 1px;
+  border-style: solid;
+  outline: none;
+  box-sizing: border-box;
+  -webkit-transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  line-height: 0;
+  cursor: pointer;
+  background-color: #FAFAFA;
+  color: #999A94;
+  border-radius: 3px;
+  width: 32px;
+  min-width: initial;
+  height: 32px;
+  padding: 0;
+  font-size: 1rem;
+  border-color: rgb(202,202,202);
+}
+
+.c2:hover {
+  background-color: rgb(234,234,234);
+}
+
+.c2:active {
+  background-color: rgb(223,223,223);
+}
+
+.c0 > * {
+  margin: 5px;
+}
+
+<div
+  className="c0"
+>
+  <button
+    className="c1"
+  >
+    A
+  </button>
+  <button
+    className="c2"
+  >
+    <svg
+      fill="currentColor"
+      height="1em"
+      preserveAspectRatio="xMidYMid meet"
+      viewBox="0 0 24 24"
+      width="1em"
+    >
+      <path
+        d="M19 20H5V9h14m-3-7v2H8V2H6v2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2h-1V2m-1 11h-5v5h5v-5z"
+      />
+    </svg>
+  </button>
+</div>
+`;
+
+exports[`Storyshots Button With theme provider (Material) 1`] = `
+.c1 {
+  border-width: 1px;
+  border-style: solid;
+  outline: none;
+  box-sizing: border-box;
+  -webkit-transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  line-height: 0;
+  cursor: pointer;
+  background-color: #FAFAFA;
+  color: #999A94;
+  border-radius: 3px;
+  width: initial;
+  min-width: 80px;
+  height: 32px;
+  padding: 6px 15px;
+  font-size: 16px;
+  border-color: rgb(202,202,202);
+}
+
+.c1:hover {
+  background-color: rgb(234,234,234);
+}
+
+.c1:active {
+  background-color: rgb(223,223,223);
+}
+
+.c2 {
+  border-width: 1px;
+  border-style: solid;
+  outline: none;
+  box-sizing: border-box;
+  -webkit-transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  line-height: 0;
+  cursor: pointer;
+  background-color: #2196F3;
+  color: #FFFFFF;
+  border-radius: 3px;
+  width: initial;
+  min-width: 80px;
+  height: 32px;
+  padding: 6px 15px;
+  font-size: 16px;
+  border-color: rgb(27,121,196);
+}
+
+.c2:hover {
+  background-color: rgb(31,141,228);
+}
+
+.c2:active {
+  background-color: rgb(29,134,217);
+}
+
+.c3 {
+  border-width: 1px;
+  border-style: solid;
+  outline: none;
+  box-sizing: border-box;
+  -webkit-transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  line-height: 0;
+  cursor: pointer;
+  background-color: #4CAF50;
+  color: #FFFFFF;
+  border-radius: 3px;
+  width: initial;
+  min-width: 80px;
+  height: 32px;
+  padding: 6px 15px;
+  font-size: 16px;
+  border-color: rgb(61,141,65);
+}
+
+.c3:hover {
+  background-color: rgb(71,164,75);
+}
+
+.c3:active {
+  background-color: rgb(68,156,71);
+}
+
+.c4 {
+  border-width: 1px;
+  border-style: solid;
+  outline: none;
+  box-sizing: border-box;
+  -webkit-transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  line-height: 0;
+  cursor: pointer;
+  background-color: #F44336;
+  color: #FFFFFF;
+  border-radius: 3px;
+  width: initial;
+  min-width: 80px;
+  height: 32px;
+  padding: 6px 15px;
+  font-size: 16px;
+  border-color: rgb(197,54,44);
+}
+
+.c4:hover {
+  background-color: rgb(229,63,51);
+}
+
+.c4:active {
+  background-color: rgb(218,60,48);
+}
+
+.c5 {
+  border-width: 1px;
+  border-style: solid;
+  outline: none;
+  box-sizing: border-box;
+  -webkit-transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  line-height: 0;
+  cursor: pointer;
+  background-color: #FF9800;
+  color: #FFFFFF;
+  border-radius: 3px;
+  width: initial;
+  min-width: 80px;
+  height: 32px;
+  padding: 6px 15px;
+  font-size: 16px;
+  border-color: rgb(206,123,0);
+}
+
+.c5:hover {
+  background-color: rgb(239,143,0);
+}
+
+.c5:active {
+  background-color: rgb(227,136,0);
+}
+
+.c0 > * {
+  margin: 5px;
+}
+
+<div
+  className="c0"
+>
+  <button
+    className="c1"
+    onClick={[Function]}
+  >
+    default
+  </button>
+  <button
+    className="c2"
+    onClick={[Function]}
+  >
+    primary
+  </button>
+  <button
+    className="c3"
+    onClick={[Function]}
+  >
+    success
+  </button>
+  <button
+    className="c4"
+    onClick={[Function]}
+  >
+    error
+  </button>
+  <button
+    className="c5"
+    onClick={[Function]}
+  >
+    warning
+  </button>
+</div>
+`;

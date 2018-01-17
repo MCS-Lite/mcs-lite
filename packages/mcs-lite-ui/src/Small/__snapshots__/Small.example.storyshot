@@ -1,0 +1,62 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Small API 1`] = `
+.c0 {
+  font-size: 0.923rem;
+}
+
+<small
+  className="c0"
+>
+  Small content
+</small>
+`;
+
+exports[`Storyshots Small With color 1`] = `
+.c0 {
+  margin: 0;
+  font-size: 1rem;
+  color: #00A1DE;
+}
+
+.c1 {
+  font-size: 0.923rem;
+}
+
+<div
+  className="c0"
+  color="primary"
+>
+  Nisi eu eiusmod cupidatat aute laboris commodo excepteur
+  <small
+    className="c1"
+  >
+     Small content 
+  </small>
+  incididunt incididunt aliquip pariatur est minim officia sit.
+</div>
+`;
+
+exports[`Storyshots Small Within <P> 1`] = `
+.c0 {
+  margin: 0;
+  font-size: 1rem;
+  color: currentColor;
+}
+
+.c1 {
+  font-size: 0.923rem;
+}
+
+<div
+  className="c0"
+>
+  Nisi eu eiusmod cupidatat aute laboris commodo excepteur
+  <small
+    className="c1"
+  >
+     Small content 
+  </small>
+  incididunt incididunt aliquip pariatur est minim officia sit.
+</div>
+`;

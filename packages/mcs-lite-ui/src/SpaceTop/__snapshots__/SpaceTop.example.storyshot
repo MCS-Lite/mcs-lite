@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots SpaceTop API 1`] = `
+.c0 {
+  margin-top: 20px;
+}
+
+<div
+  className="c0"
+  height={20}
+>
+  SpaceTop content
+</div>
+`;
