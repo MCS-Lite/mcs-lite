@@ -1,5 +1,40 @@
 # MCS Lite changelogs
 
+## Released (2018-01-17)
+
+#### :bug: Bug Fix
+
+* `mcs-lite-admin-web`, `mcs-lite-landing-web`, `mcs-lite-mobile-web`, `mcs-lite-ui`
+  * [#496](https://github.com/MCS-Lite/mcs-lite/pull/496) fix(flow): update flowtype. ([@evenchange4](https://github.com/evenchange4))
+* `mcs-lite-landing-web`
+  * [#486](https://github.com/MCS-Lite/mcs-lite/pull/486) fix(Landing/Footer): mock year 新年快樂 🎉. ([@evenchange4](https://github.com/evenchange4))
+  * [#485](https://github.com/MCS-Lite/mcs-lite/pull/485) fix(Landing): We should use hydrate() here but got some problems with re-render. ([@evenchange4](https://github.com/evenchange4))
+
+#### :nail_care: Enhancement
+
+* Other
+  * [#488](https://github.com/MCS-Lite/mcs-lite/pull/488) Configure Renovate. ([@renovate[bot]](https://github.com/apps/renovate))
+* `mcs-lite-admin-web`, `mcs-lite-landing-web`, `mcs-lite-mobile-web`, `react-intl-cra`
+  * [#484](https://github.com/MCS-Lite/mcs-lite/pull/484) chore(react-intl-cra): move to standalone repo. ([@evenchange4](https://github.com/evenchange4))
+
+#### :house: Internal
+
+* `mcs-lite-ui`
+  * [#502](https://github.com/MCS-Lite/mcs-lite/pull/502) test(mcs-lite-ui): separate storyshot files. ([@evenchange4](https://github.com/evenchange4))
+* `babel-preset-mcs-lite`, `mcs-lite-admin-web`, `mcs-lite-connect`, `mcs-lite-icon`, `mcs-lite-landing-web`, `mcs-lite-mobile-web`, `mcs-lite-theme`, `mcs-lite-ui`, `react-intl-inject-hoc`
+  * [#497](https://github.com/MCS-Lite/mcs-lite/pull/497) chore(package.json): pin to a single version. ([@evenchange4](https://github.com/evenchange4))
+* `babel-preset-mcs-lite`, `eslint-config-mcs-lite`, `mcs-lite-admin-web`, `mcs-lite-connect`, `mcs-lite-design`, `mcs-lite-icon`, `mcs-lite-introduction`, `mcs-lite-landing-web`, `mcs-lite-mobile-web`, `mcs-lite-scripts`, `mcs-lite-theme`, `mcs-lite-translation`, `mcs-lite-ui`, `react-intl-inject-hoc`, `stylelint-config-mcs-lite`
+  * [#490](https://github.com/MCS-Lite/mcs-lite/pull/490) chore(ncu): ncu update & update codebase. ([@evenchange4](https://github.com/evenchange4))
+* `mcs-lite-admin-web`, `mcs-lite-landing-web`, `mcs-lite-mobile-web`
+  * [#487](https://github.com/MCS-Lite/mcs-lite/pull/487) chore(ncu): upgrade react-intl-cra. ([@evenchange4](https://github.com/evenchange4))
+
+#### Committers: 2
+
+* Michael Hsu ([evenchange4](https://github.com/evenchange4))
+* [renovate[bot]](https://github.com/apps/renovate)
+
+---
+
 ## Released (2017-12-04)
 
 * mcs-lite-admin-web: 0.2.0 => 0.2.1
