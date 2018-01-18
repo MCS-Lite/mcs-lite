@@ -9439,9 +9439,9 @@ react-smooth@1.0.0:
     raf "^3.2.0"
     react-transition-group "^2.2.1"
 
-react-snap@1.9.1:
-  version "1.9.1"
-  resolved "https://registry.yarnpkg.com/react-snap/-/react-snap-1.9.1.tgz#aaa45c6b082d50bb4faf8d313f730fdce762eac3"
+react-snap@1.10.0:
+  version "1.10.0"
+  resolved "https://registry.yarnpkg.com/react-snap/-/react-snap-1.10.0.tgz#d842574e2dc7b55f5bece7b615404dcf72a72d45"
   dependencies:
     clean-css "^4.1.9"
     express "^4.16.1"
