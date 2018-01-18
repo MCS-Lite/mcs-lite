@@ -9477,9 +9477,9 @@ react-svg-morph@0.1.10:
     react-render-to-json "0.0.4"
     svgpath "^2.1.0"
 
-react-syntax-highlighter@6.1.1:
-  version "6.1.1"
-  resolved "https://registry.yarnpkg.com/react-syntax-highlighter/-/react-syntax-highlighter-6.1.1.tgz#4d134fa9217c4025e7fd6efeadd08ba92436ee4e"
+react-syntax-highlighter@6.1.2:
+  version "6.1.2"
+  resolved "https://registry.yarnpkg.com/react-syntax-highlighter/-/react-syntax-highlighter-6.1.2.tgz#a6fd152400139dedf50dcad5e05fc07e054b4b94"
   dependencies:
     babel-runtime "^6.18.0"
     highlight.js "~9.12.0"
