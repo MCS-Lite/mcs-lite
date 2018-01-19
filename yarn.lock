@@ -6654,9 +6654,9 @@ levn@^0.3.0, levn@~0.3.0:
     prelude-ls "~1.1.2"
     type-check "~0.3.2"
 
-license-checker@15.0.0:
-  version "15.0.0"
-  resolved "https://registry.yarnpkg.com/license-checker/-/license-checker-15.0.0.tgz#c131faef4a9fe3fdd8e92a2f324c45aa5888cb5c"
+license-checker@16.0.0:
+  version "16.0.0"
+  resolved "https://registry.yarnpkg.com/license-checker/-/license-checker-16.0.0.tgz#4e1263e5314b4519f8c3a5fe2fe4f38bc645a87d"
   dependencies:
     chalk "~0.5.1"
     debug "^2.2.0"
@@ -11634,7 +11634,7 @@ vm-browserify@0.0.4:
   dependencies:
     indexof "0.0.1"
 
-"vm2@github:patriksimek/vm2#custom_files":
+vm2@patriksimek/vm2#custom_files:
   version "3.5.0"
   resolved "https://codeload.github.com/patriksimek/vm2/tar.gz/7e82f90ac705fc44fad044147cb0df09b4c79a57"
 
