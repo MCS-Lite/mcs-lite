@@ -10879,9 +10879,9 @@ style-utils@~0.1.13:
   version "0.1.15"
   resolved "https://registry.yarnpkg.com/style-utils/-/style-utils-0.1.15.tgz#2aedfa5c9911a00d900dad1c871af79546a8a3e0"
 
-styled-components@2.4.0:
-  version "2.4.0"
-  resolved "https://registry.yarnpkg.com/styled-components/-/styled-components-2.4.0.tgz#086d0fd483d54638837fca3ea546a030b94adf75"
+styled-components@3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/styled-components/-/styled-components-3.0.0.tgz#763babe27d86c18cbcd8f165be26d03c46ade271"
   dependencies:
     buffer "^5.0.3"
     css-to-react-native "^2.0.3"
