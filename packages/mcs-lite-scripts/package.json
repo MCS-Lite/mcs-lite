@@ -24,7 +24,7 @@
   },
   "dependencies": {
     "babel-core": "6.26.0",
-    "babel-plugin-react-intl": "2.3.1",
+    "babel-plugin-react-intl": "2.4.0",
     "babel-preset-mcs-lite": "^0.3.9",
     "babel-preset-react-app": "3.1.1",
     "cheerio": "1.0.0-rc.2",
