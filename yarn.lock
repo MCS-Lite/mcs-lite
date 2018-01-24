@@ -120,6 +120,19 @@
     variable-diff "^1.1.0"
     xstream "*"
 
+"@octokit/rest@^14.0.4":
+  version "14.0.5"
+  resolved "https://registry.yarnpkg.com/@octokit/rest/-/rest-14.0.5.tgz#6d130aa0c0024e2e2c8a4e3a48373f70b6ba983e"
+  dependencies:
+    before-after-hook "^1.1.0"
+    debug "^3.1.0"
+    dotenv "^4.0.0"
+    https-proxy-agent "^2.1.0"
+    is-stream "^1.1.0"
+    lodash "^4.17.4"
+    proxy-from-env "^1.0.0"
+    url-template "^2.0.8"
+
 "@storybook/addon-actions@^3.3.9":
   version "3.3.9"
   resolved "https://registry.yarnpkg.com/@storybook/addon-actions/-/addon-actions-3.3.9.tgz#2b191548928467fe1dd26dcba606feafbf182d36"
@@ -1870,6 +1883,10 @@ bcrypt-pbkdf@^1.0.0:
   dependencies:
     tweetnacl "^0.14.3"
 
+before-after-hook@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/before-after-hook/-/before-after-hook-1.1.0.tgz#83165e15a59460d13702cb8febd6a1807896db5a"
+
 big.js@^3.1.3:
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/big.js/-/big.js-3.2.0.tgz#a5fc298b81b9e0dca2e458824784b65c52ba588e"
@@ -2579,7 +2596,7 @@ command-join@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/command-join/-/command-join-2.0.0.tgz#52e8b984f4872d952ff1bdc8b98397d27c7144cf"
 
-commander@2, commander@2.13.0, commander@^2.11.0, commander@^2.12.2, commander@^2.9.0, commander@~2.13.0:
+commander@2, commander@2.13.0, commander@^2.11.0, commander@^2.12.2, commander@^2.13.0, commander@^2.9.0, commander@~2.13.0:
   version "2.13.0"
   resolved "https://registry.yarnpkg.com/commander/-/commander-2.13.0.tgz#6964bca67685df7c1f1430c584f07d7597885b9c"
 
@@ -3285,16 +3302,16 @@ damerau-levenshtein@^1.0.0:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/damerau-levenshtein/-/damerau-levenshtein-1.0.4.tgz#03191c432cb6eea168bb77f3a55ffdccb8978514"
 
-danger@3.0.6:
-  version "3.0.6"
-  resolved "https://registry.yarnpkg.com/danger/-/danger-3.0.6.tgz#a57affbee608a9f4626f7b14f6c2d91e557bef92"
+danger@3.1.1:
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/danger/-/danger-3.1.1.tgz#5a153e2e9f06607fe963ff283f0ad4fff00d4074"
   dependencies:
+    "@octokit/rest" "^14.0.4"
     babel-polyfill "^6.23.0"
     chalk "^2.3.0"
-    commander "^2.12.2"
+    commander "^2.13.0"
     debug "^3.1.0"
     get-stdin "^5.0.1"
-    github "^13.0.1"
     hyperlinker "^1.0.0"
     jsome "^2.3.25"
     json5 "^0.5.1"
@@ -3315,7 +3332,7 @@ danger@3.0.6:
     rfc6902 "^2.2.2"
     supports-hyperlinks "^1.0.1"
     vm2 patriksimek/vm2#custom_files
-    voca "^1.3.1"
+    voca "^1.4.0"
 
 dargs@^4.0.1:
   version "4.1.0"
@@ -4950,18 +4967,6 @@ github-url-from-git@~1.4.0:
 github-url-from-username-repo@~1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/github-url-from-username-repo/-/github-url-from-username-repo-1.0.2.tgz#7dd79330d2abe69c10c2cef79714c97215791dfa"
-
-github@^13.0.1:
-  version "13.1.0"
-  resolved "https://registry.yarnpkg.com/github/-/github-13.1.0.tgz#fc925950beebdff0cb0583197598b86f41bedaa4"
-  dependencies:
-    debug "^3.1.0"
-    dotenv "^4.0.0"
-    https-proxy-agent "^2.1.0"
-    is-stream "^1.1.0"
-    lodash "^4.17.4"
-    proxy-from-env "^1.0.0"
-    url-template "^2.0.8"
 
 glamor@^2.20.40:
   version "2.20.40"
@@ -11642,11 +11647,11 @@ vm-browserify@0.0.4:
   dependencies:
     indexof "0.0.1"
 
-vm2@patriksimek/vm2#custom_files:
+"vm2@github:patriksimek/vm2#custom_files":
   version "3.5.0"
   resolved "https://codeload.github.com/patriksimek/vm2/tar.gz/7e82f90ac705fc44fad044147cb0df09b4c79a57"
 
-voca@^1.3.1:
+voca@^1.4.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/voca/-/voca-1.4.0.tgz#e15ac58b38290b72acc0c330366b6cc7984924d7"
 
