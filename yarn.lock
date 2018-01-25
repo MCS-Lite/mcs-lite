@@ -69,24 +69,18 @@
     lodash "^4.2.0"
     to-fast-properties "^2.0.0"
 
-"@cycle/http@14.8.0":
-  version "14.8.0"
-  resolved "https://registry.yarnpkg.com/@cycle/http/-/http-14.8.0.tgz#f688e0390761a122e765ba8c5ba61357df6ff664"
+"@cycle/http@14.9.0":
+  version "14.9.0"
+  resolved "https://registry.yarnpkg.com/@cycle/http/-/http-14.9.0.tgz#940dfb79b78181cfbfb6c67543776fe7d7c34bd2"
   dependencies:
-    "@cycle/run" "3.4"
+    "@cycle/run" "4.1.0"
     "@types/superagent" "3.5.6"
-    superagent "3.7.0"
-    xstream "11.x.x"
+    superagent "3.8.2"
+    xstream "11.x"
 
-"@cycle/run@*", "@cycle/run@4.x":
+"@cycle/run@*", "@cycle/run@4.1.0", "@cycle/run@4.x":
   version "4.1.0"
   resolved "https://registry.yarnpkg.com/@cycle/run/-/run-4.1.0.tgz#b164a83792e85db3c184236f4b3800a4c9bf6f76"
-  dependencies:
-    xstream "10.x || 11.x"
-
-"@cycle/run@3.4":
-  version "3.4.0"
-  resolved "https://registry.yarnpkg.com/@cycle/run/-/run-3.4.0.tgz#113844add669ace91d245842522f3733ba5bd393"
   dependencies:
     xstream "10.x || 11.x"
 
@@ -10909,9 +10903,9 @@ stylis@^3.0.0, stylis@^3.4.0:
   version "3.4.8"
   resolved "https://registry.yarnpkg.com/stylis/-/stylis-3.4.8.tgz#94380babbcd4c75726215794ca985b38ec96d1a3"
 
-superagent@3.7.0:
-  version "3.7.0"
-  resolved "https://registry.yarnpkg.com/superagent/-/superagent-3.7.0.tgz#bd58bfde2cbc5305adb9ccbb6dacba18408629d6"
+superagent@3.8.2:
+  version "3.8.2"
+  resolved "https://registry.yarnpkg.com/superagent/-/superagent-3.8.2.tgz#e4a11b9d047f7d3efeb3bbe536d9ec0021d16403"
   dependencies:
     component-emitter "^1.2.0"
     cookiejar "^2.1.0"
@@ -12024,7 +12018,7 @@ xml-name-validator@^2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/xml-name-validator/-/xml-name-validator-2.0.1.tgz#4d8b8f1eccd3419aa362061becef515e1e559635"
 
-xstream@*, "xstream@10.x || 11.x", xstream@11.x, xstream@11.x.x:
+xstream@*, "xstream@10.x || 11.x", xstream@11.x:
   version "11.1.0"
   resolved "https://registry.yarnpkg.com/xstream/-/xstream-11.1.0.tgz#fec29f46f6e033ab980b02c3b490178170fa506c"
   dependencies:
