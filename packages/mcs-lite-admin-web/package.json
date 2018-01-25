@@ -40,7 +40,7 @@
     "enzyme": "3.3.0",
     "enzyme-adapter-react-16": "1.1.1",
     "enzyme-to-json": "3.3.0",
-    "flow-bin": "0.63.1",
+    "flow-bin": "0.64.0",
     "history": "3.3.0",
     "jest-styled-components": "4.10.0",
     "mcs-lite-icon": "^0.3.11",
