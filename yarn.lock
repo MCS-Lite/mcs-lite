@@ -9318,14 +9318,14 @@ react-overlays@0.8.3:
     react-transition-group "^2.2.0"
     warning "^3.0.0"
 
-react-progressive-bg-image@2.1.2:
-  version "2.1.2"
-  resolved "https://registry.yarnpkg.com/react-progressive-bg-image/-/react-progressive-bg-image-2.1.2.tgz#1c9031bbf860de8fcfa99f50149241036ca0d2cf"
+react-progressive-bg-image@2.1.3:
+  version "2.1.3"
+  resolved "https://registry.yarnpkg.com/react-progressive-bg-image/-/react-progressive-bg-image-2.1.3.tgz#f9369823c2a557d1e92427dd1f2306d761cfd67e"
   dependencies:
-    prop-types "15.6.0"
-    ramda "0.25.0"
-    recompose "0.26.0"
-    rxjs "5.5.6"
+    prop-types "^15.6.0"
+    ramda "^0.25.0"
+    recompose "^0.26.0"
+    rxjs "^5.5.6"
 
 react-reconciler@^0.7.0:
   version "0.7.0"
@@ -9803,7 +9803,7 @@ rechoir@^0.6.2:
   dependencies:
     resolve "^1.1.6"
 
-recompose@0.26.0:
+recompose@0.26.0, recompose@^0.26.0:
   version "0.26.0"
   resolved "https://registry.yarnpkg.com/recompose/-/recompose-0.26.0.tgz#9babff039cb72ba5bd17366d55d7232fbdfb2d30"
   dependencies:
@@ -10196,7 +10196,7 @@ rx@^4.1.0:
   version "4.1.0"
   resolved "https://registry.yarnpkg.com/rx/-/rx-4.1.0.tgz#a5f13ff79ef3b740fe30aa803fb09f98805d4782"
 
-rxjs@5.5.6, rxjs@5.5.x, rxjs@^5.4.2:
+rxjs@5.5.6, rxjs@5.5.x, rxjs@^5.4.2, rxjs@^5.5.6:
   version "5.5.6"
   resolved "https://registry.yarnpkg.com/rxjs/-/rxjs-5.5.6.tgz#e31fb96d6fd2ff1fd84bcea8ae9c02d007179c02"
   dependencies:
