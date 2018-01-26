@@ -25,10 +25,12 @@
     "react-intl": "^2.3.0"
   },
   "dependencies": {
+    "recompose": "^0.26.0"
+  },
+  "devDependencies": {
     "babel-cli": "6.26.0",
     "babel-preset-mcs-lite": "^0.3.9",
-    "mcs-lite-scripts": "^0.3.11",
-    "recompose": "0.26.0"
+    "mcs-lite-scripts": "^0.3.11"
   },
   "babel": {
     "presets": ["mcs-lite"]
