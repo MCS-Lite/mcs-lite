@@ -21,7 +21,7 @@
   },
   "license": "MIT",
   "peerDependencies": {
-    "react": "^15.6.1",
+    "react": "^15.0.0 || ^16.0.0",
     "react-intl": "^2.3.0"
   },
   "dependencies": {
