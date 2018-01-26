@@ -1,5 +1,30 @@
 # MCS Lite changelogs
 
+## Released (2018-01-26)
+
+* babel-preset-mcs-lite: 0.3.9 => 0.3.10
+* eslint-config-mcs-lite: 0.6.0 => 0.6.1
+* mcs-lite-admin-web: 0.2.2 => 0.2.3
+* mcs-lite-connect: 0.3.12 => 0.3.13
+* mcs-lite-icon: 0.3.11 => 0.3.12
+* mcs-lite-landing-web: 0.1.7 => 0.1.8 (private)
+* mcs-lite-mobile-web: 0.4.15 => 0.4.16
+* mcs-lite-scripts: 0.3.11 => 0.3.12
+* mcs-lite-theme: 0.3.9 => 0.3.10
+* mcs-lite-translation: 0.1.9 => 0.1.10
+* mcs-lite-ui: 0.4.13 => 0.4.14
+* react-intl-inject-hoc: 0.2.12 => 0.2.13
+
+#### :bug: Bug Fix
+
+* `babel-preset-mcs-lite`, `mcs-lite-admin-web`, `mcs-lite-connect`, `mcs-lite-icon`, `mcs-lite-landing-web`, `mcs-lite-mobile-web`, `mcs-lite-scripts`, `mcs-lite-theme`, `mcs-lite-translation`, `mcs-lite-ui`, `react-intl-inject-hoc`
+  * [#536](https://github.com/MCS-Lite/mcs-lite/pull/536) fix(dependency): pinOnlyDevDependencies. ([@evenchange4](https://github.com/evenchange4))
+
+#### Committers: 2
+
+* Michael Hsu ([evenchange4](https://github.com/evenchange4))
+* [renovate[bot]](https://github.com/apps/renovate)
+
 ## Released (2018-01-17)
 
 * babel-preset-mcs-lite: 0.3.8 => 0.3.9
