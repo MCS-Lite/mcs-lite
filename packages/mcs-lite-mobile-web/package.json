@@ -71,7 +71,7 @@
     "redux": "3.7.2",
     "redux-cycles": "0.4.1",
     "redux-freeze": "0.1.5",
-    "redux-mock-store": "1.4.0",
+    "redux-mock-store": "1.5.1",
     "rxjs": "5.5.6",
     "styled-components": "2.4.0",
     "uuid": "3.2.1"
