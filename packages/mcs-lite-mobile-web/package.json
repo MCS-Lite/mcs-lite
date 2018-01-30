@@ -41,7 +41,7 @@
     "enzyme-to-json": "3.3.1",
     "flow-bin": "0.64.0",
     "history": "3.3.0",
-    "jest-styled-components": "4.10.0",
+    "jest-styled-components": "next",
     "mcs-lite-connect": "^0.3.13",
     "mcs-lite-icon": "^0.3.12",
     "mcs-lite-theme": "^0.3.10",
@@ -71,9 +71,9 @@
     "redux": "3.7.2",
     "redux-cycles": "0.4.1",
     "redux-freeze": "0.1.5",
-    "redux-mock-store": "1.4.0",
+    "redux-mock-store": "1.5.1",
     "rxjs": "5.5.6",
-    "styled-components": "2.4.0",
+    "styled-components": "3.1.4",
     "uuid": "3.2.1"
   }
 }

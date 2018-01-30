@@ -1,5 +1,5 @@
-// flow-typed signature: a5f418fe2bc2f207e5d02415c06dac58
-// flow-typed version: 86cef885ee/rxjs_v5.0.x/flow_>=v0.34.x
+// flow-typed signature: 40d60f46fb115f551b496c572b577cfe
+// flow-typed version: 55b9091816/rxjs_v5.0.x/flow_>=v0.34.x
 
 // FIXME(samgoldman) Remove top-level interface once Babel supports
 // `declare interface` syntax.
@@ -411,6 +411,11 @@ declare class rxjs$Observable<+T> {
   defaultIfEmpty<U>(defaultValue: U): rxjs$Observable<T | U>;
 
   delay(dueTime: number, scheduler?: rxjs$SchedulerClass): rxjs$Observable<T>;
+
+  delayWhen(
+    delayDurationSelector: (value: T) => rxjs$Observable<any>,
+    subscriptionDelay?: rxjs$Observable<any>,
+  ): rxjs$Observable<T>;
 
   distinctUntilChanged(compare?: (x: T, y: T) => boolean): rxjs$Observable<T>;
 

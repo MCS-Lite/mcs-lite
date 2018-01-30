@@ -2,7 +2,8 @@
 
 exports[`Storyshots Label API 1`] = `
 .c1::after {
-  content: " *";
+  content: "*";
+  margin-left: 0.25em;
   color: #F5364E;
 }
 
