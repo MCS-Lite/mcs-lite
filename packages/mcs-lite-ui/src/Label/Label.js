@@ -3,7 +3,8 @@ import styled from 'styled-components';
 
 const Label = styled.label`
   &::after {
-    content: "${props => (props.required ? ' *' : '')}";
+    content: "${props => (props.required ? '*' : '')}";
+    margin-left: ${props => (props.required ? '0.25em' : '0')};
     color: ${props => props.theme.color.error};
   }
 `;

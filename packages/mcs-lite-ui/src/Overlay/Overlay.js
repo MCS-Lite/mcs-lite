@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 import { findDOMNode } from 'react-dom';
 import Portal from 'react-overlays/lib/Portal';
 import Transition from 'react-motion-ui-pack';
-import DomAlign from '../DomAlign';
+import DomAlign from 'react-overlay-pack/lib/DomAlign';
 import ClickOutside from '../ClickOutside';
 import emptyFunction from '../utils/emptyFunction';
 
@@ -48,10 +48,7 @@ class Overlay extends React.Component {
     return (
       <Portal>
         <ClickOutside onClick={this.onClickOutSide}>
-          <DomAlign
-            alignConfig={this.props.alignConfig}
-            target={this.props.target}
-          >
+          <DomAlign config={this.props.alignConfig} target={this.props.target}>
             <Transition {...this.props.transitionConfig}>
               {this.renderChildrenWithStyle()}
             </Transition>

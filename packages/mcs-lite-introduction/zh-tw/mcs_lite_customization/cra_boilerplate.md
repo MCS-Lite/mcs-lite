@@ -37,7 +37,7 @@ $ create-react-app my-app
     "mcs-lite-icon": "^0.3.1",
     "mcs-lite-theme": "^0.3.1",
     "mcs-lite-ui": "^0.4.1",
-    "styled-components": "^2.0.0"
+    "styled-components": "^3.1.4"
     ...
 }
 ```
