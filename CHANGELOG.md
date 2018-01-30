@@ -2,6 +2,21 @@
 
 ## Released (2018-01-30)
 
+ - babel-preset-mcs-lite: 0.3.10 => 0.3.11
+ - eslint-config-mcs-lite: 0.6.1 => 0.6.2
+ - mcs-lite-admin-web: 0.2.3 => 0.2.4
+ - mcs-lite-connect: 0.3.13 => 0.3.14
+ - mcs-lite-design: 0.2.5 => 0.2.6
+ - mcs-lite-icon: 0.3.12 => 0.3.13
+ - mcs-lite-introduction: 0.2.10 => 0.2.11
+ - mcs-lite-landing-web: 0.1.8 => 0.1.9 (private)
+ - mcs-lite-mobile-web: 0.4.16 => 0.4.17
+ - mcs-lite-scripts: 0.3.12 => 0.3.13
+ - mcs-lite-theme: 0.3.10 => 0.3.11
+ - mcs-lite-translation: 0.1.10 => 0.1.11
+ - mcs-lite-ui: 0.4.14 => 0.5.0
+ - react-intl-inject-hoc: 0.2.13 => 0.2.14
+
 #### :rocket: New Feature
 * `mcs-lite-admin-web`, `mcs-lite-design`, `mcs-lite-introduction`, `mcs-lite-landing-web`, `mcs-lite-mobile-web`, `mcs-lite-ui`
   * [#546](https://github.com/MCS-Lite/mcs-lite/pull/546) feat(UI): upgrade styled-components & introduce react-overlay-pack [BREAKING CHANGES]. ([@evenchange4](https://github.com/evenchange4))
