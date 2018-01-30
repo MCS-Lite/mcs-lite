@@ -9237,9 +9237,9 @@ react-overlays@0.8.3, react-overlays@^0.8.3:
     react-transition-group "^2.2.0"
     warning "^3.0.0"
 
-react-progressive-bg-image@2.1.3:
-  version "2.1.3"
-  resolved "https://registry.yarnpkg.com/react-progressive-bg-image/-/react-progressive-bg-image-2.1.3.tgz#f9369823c2a557d1e92427dd1f2306d761cfd67e"
+react-progressive-bg-image@3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/react-progressive-bg-image/-/react-progressive-bg-image-3.0.0.tgz#0ae62f5e10a6957ceab0adf936afb3e055aa9c42"
   dependencies:
     prop-types "^15.6.0"
     ramda "^0.25.0"
