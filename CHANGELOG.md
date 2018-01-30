@@ -1,5 +1,23 @@
 # MCS Lite changelogs
 
+## Released (2018-01-30)
+
+#### :rocket: New Feature
+* `mcs-lite-admin-web`, `mcs-lite-design`, `mcs-lite-introduction`, `mcs-lite-landing-web`, `mcs-lite-mobile-web`, `mcs-lite-ui`
+  * [#546](https://github.com/MCS-Lite/mcs-lite/pull/546) feat(UI): upgrade styled-components & introduce react-overlay-pack [BREAKING CHANGES]. ([@evenchange4](https://github.com/evenchange4))
+
+#### :boom: Breaking Change
+* `mcs-lite-admin-web`, `mcs-lite-design`, `mcs-lite-introduction`, `mcs-lite-landing-web`, `mcs-lite-mobile-web`, `mcs-lite-ui`
+  * [#546](https://github.com/MCS-Lite/mcs-lite/pull/546) feat(UI): upgrade styled-components & introduce react-overlay-pack [BREAKING CHANGES]. ([@evenchange4](https://github.com/evenchange4))
+
+#### :house: Internal
+* `mcs-lite-admin-web`, `mcs-lite-design`, `mcs-lite-introduction`, `mcs-lite-landing-web`, `mcs-lite-mobile-web`, `mcs-lite-ui`
+  * [#546](https://github.com/MCS-Lite/mcs-lite/pull/546) feat(UI): upgrade styled-components & introduce react-overlay-pack [BREAKING CHANGES]. ([@evenchange4](https://github.com/evenchange4))
+
+#### Committers: 2
+- Michael Hsu ([evenchange4](https://github.com/evenchange4))
+- [renovate[bot]](https://github.com/apps/renovate)
+
 ## Released (2018-01-26)
 
 * babel-preset-mcs-lite: 0.3.9 => 0.3.10
