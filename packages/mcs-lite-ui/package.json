@@ -9,9 +9,7 @@
     "email": "evenchange4@gmail.com"
   },
   "homepage": "https://github.com/MCS-Lite/mcs-lite#readme",
-  "files": [
-    "lib"
-  ],
+  "files": ["lib"],
   "main": "lib/index.js",
   "license": "MIT",
   "scripts": {
@@ -19,10 +17,12 @@
     "start": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "prebuild": "npm run clean",
-    "build": "NODE_ENV=production babel src --out-dir lib --ignore example.js,test.js",
+    "build":
+      "NODE_ENV=production babel src --out-dir lib --ignore example.js,test.js",
     "createEntryFile": "exports-all 'lib/[A-Z]*' 'lib/index.js'",
     "postbuild": "npm run createEntryFile",
-    "test": "NODE_ENV='test' TZ='UTC' ../../node_modules/.bin/jest --coverage --runInBand",
+    "test":
+      "NODE_ENV='test' TZ='UTC' ../../node_modules/.bin/jest --coverage --runInBand",
     "test:watch": "npm run test -- --watch"
   },
   "jest": {
@@ -32,10 +32,7 @@
       "!src/**/*.test.{js,jsx}",
       "!src/**/*.example.{js,jsx}"
     ],
-    "testPathIgnorePatterns": [
-      "<rootDir>/node_modules/",
-      "<rootDir>/lib/"
-    ]
+    "testPathIgnorePatterns": ["<rootDir>/node_modules/", "<rootDir>/lib/"]
   },
   "devDependencies": {
     "@storybook/addon-info": "3.3.11",
@@ -64,7 +61,7 @@
   "dependencies": {
     "bowser": "^1.9.1",
     "copy-to-clipboard": "^3.0.8",
-    "create-react-class": "^15.6.2",
+    "create-react-class": "^15.6.3",
     "date-fns": "^1.29.0",
     "dom-align": "^1.6.7",
     "flubber": "^0.4.0",
@@ -76,14 +73,14 @@
     "react-hammerjs": "^0.5.0",
     "react-motion": "^0.5.2",
     "react-motion-ui-pack": "^0.10.3",
-    "react-overlay-pack": "^1.0.0",
+    "react-overlay-pack": "^1.0.2",
     "react-overlays": "^0.8.3",
     "react-render-to-json": "^0.0.6",
     "react-svg-morph": "^0.1.10",
     "react-syntax-highlighter": "^7.0.0",
     "react-text-truncate": "^0.12.1",
     "react-waypoint": "^8.0.0",
-    "recharts": "^1.0.0-beta.9",
+    "recharts": "^1.0.0-beta.10",
     "recompose": "^0.26.0",
     "rxjs": "^5.5.6"
   },

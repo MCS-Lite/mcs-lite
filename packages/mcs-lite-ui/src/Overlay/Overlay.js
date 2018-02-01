@@ -6,7 +6,7 @@ import { findDOMNode } from 'react-dom';
 import Portal from 'react-overlays/lib/Portal';
 import Transition from 'react-motion-ui-pack';
 import DomAlign from 'react-overlay-pack/lib/DomAlign';
-import ClickOutside from '../ClickOutside';
+import ClickOutside from 'react-overlay-pack/lib/ClickOutside';
 import emptyFunction from '../utils/emptyFunction';
 
 class Overlay extends React.Component {
