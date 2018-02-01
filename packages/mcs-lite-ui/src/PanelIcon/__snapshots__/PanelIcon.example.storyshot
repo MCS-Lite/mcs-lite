@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots PanelIcon API 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background-color: #00A1DE;
+  border-radius: 3px;
+  font-size: 24px;
+  color: #FFFFFF;
+}
+
+.c0 > svg {
+  fill: #FFFFFF;
+}
+
+<div
+  className="c0"
+>
+  <svg
+    fill="currentColor"
+    height="1em"
+    preserveAspectRatio="xMidYMid meet"
+    viewBox="0 0 24 24"
+    width="1em"
+  >
+    <path
+      d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"
+    />
+  </svg>
+</div>
+`;
