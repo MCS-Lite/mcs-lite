@@ -38,13 +38,13 @@ exports[`Storyshots Notification API 1`] = `
 `;
 
 exports[`Storyshots Notification With feedbck Button component 1`] = `
-.c1 {
+.c2 {
   margin: 0;
   font-size: 1rem;
   color: currentColor;
 }
 
-.c2 {
+.c3 {
   border-width: 1px;
   border-style: solid;
   outline: none;
@@ -64,12 +64,16 @@ exports[`Storyshots Notification With feedbck Button component 1`] = `
   border-color: rgb(0,130,179);
 }
 
-.c2:hover {
+.c3:hover {
   background-color: rgb(0,151,208);
 }
 
-.c2:active {
+.c3:active {
   background-color: rgb(0,144,198);
+}
+
+.dulYnq > *:nth-child(2) .c1 {
+  margin-top: 5px;
 }
 
 .c0 {
@@ -105,12 +109,12 @@ exports[`Storyshots Notification With feedbck Button component 1`] = `
   className="c0"
 >
   <p
-    className="c1"
+    className="c1 c2"
   >
     Do you want to go to Enalish version website?
   </p>
   <button
-    className="c2"
+    className="c3"
   >
     Yes, please
   </button>

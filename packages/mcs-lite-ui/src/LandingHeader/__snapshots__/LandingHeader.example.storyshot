@@ -37,10 +37,14 @@ exports[`Storyshots LandingHeader API 1`] = `
 `;
 
 exports[`Storyshots LandingHeader NavItemBurger 1`] = `
-.c5 {
+.c6 {
   margin: 0;
   font-size: 1rem;
   color: currentColor;
+}
+
+.dulYnq > *:nth-child(2) .c5 {
+  margin-top: 5px;
 }
 
 .c0 {
@@ -125,7 +129,7 @@ exports[`Storyshots LandingHeader NavItemBurger 1`] = `
         onClick={[Function]}
       >
         <p
-          className="c4 c5"
+          className="c4 c5 c6"
         >
           children
         </p>
@@ -145,10 +149,14 @@ exports[`Storyshots LandingHeader NavItemBurger 1`] = `
 `;
 
 exports[`Storyshots LandingHeader NavItemDropdown 1`] = `
-.c5 {
+.c6 {
   margin: 0;
   font-size: 1rem;
   color: currentColor;
+}
+
+.dulYnq > *:nth-child(2) .c5 {
+  margin-top: 5px;
 }
 
 .c0 {
@@ -218,7 +226,7 @@ exports[`Storyshots LandingHeader NavItemDropdown 1`] = `
   margin-right: 5px;
 }
 
-.c6 {
+.c7 {
   -webkit-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
   transform: rotate(0deg);
@@ -243,12 +251,12 @@ exports[`Storyshots LandingHeader NavItemDropdown 1`] = `
         onMouseOver={[Function]}
       >
         <p
-          className="c4 c5"
+          className="c4 c5 c6"
         >
           Language
         </p>
         <svg
-          className="c6"
+          className="c7"
           fill="currentColor"
           height={18}
           preserveAspectRatio="xMidYMid meet"

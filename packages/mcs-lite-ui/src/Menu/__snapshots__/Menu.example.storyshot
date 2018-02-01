@@ -90,11 +90,11 @@ exports[`Storyshots Menu Fixed width 1`] = `
   color: currentColor;
 }
 
-.c8 {
+.c9 {
   font-weight: bold;
 }
 
-.c7 {
+.c8 {
   color: #00A1DE;
   -webkit-transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
@@ -102,21 +102,21 @@ exports[`Storyshots Menu Fixed width 1`] = `
   text-decoration: none;
 }
 
-.c7:hover {
+.c8:hover {
   color: rgb(0,151,208);
 }
 
-.c7:active {
+.c8:active {
   color: rgb(0,144,198);
 }
 
-.c5 {
+.c6 {
   margin: 0;
   font-size: 1rem;
   color: currentColor;
 }
 
-.c6 {
+.c7 {
   margin: 0;
   font-size: 1rem;
   color: #F5364E;
@@ -128,6 +128,10 @@ exports[`Storyshots Menu Fixed width 1`] = `
   border-radius: 3px;
   background-color: #FFFFFF;
   overflow: hidden;
+}
+
+.dulYnq > *:nth-child(2) .c5 {
+  margin-top: 5px;
 }
 
 .c3 {
@@ -215,7 +219,7 @@ exports[`Storyshots Menu Fixed width 1`] = `
     onClick={[Function]}
   >
     <p
-      className="c5"
+      className="c5 c6"
     >
       MenuItem P
     </p>
@@ -225,7 +229,7 @@ exports[`Storyshots Menu Fixed width 1`] = `
     onClick={[Function]}
   >
     <p
-      className="c6"
+      className="c5 c7"
       color="error"
     >
       MenuItem P error
@@ -236,7 +240,7 @@ exports[`Storyshots Menu Fixed width 1`] = `
     onClick={[Function]}
   >
     <a
-      className="c7"
+      className="c8"
       color="primary"
     >
       MenuItem A
@@ -247,7 +251,7 @@ exports[`Storyshots Menu Fixed width 1`] = `
     onClick={[Function]}
   >
     <b
-      className="c8"
+      className="c9"
     >
       MenuItem B
     </b>

@@ -13,23 +13,27 @@ exports[`Storyshots Small API 1`] = `
 `;
 
 exports[`Storyshots Small With color 1`] = `
-.c0 {
+.c1 {
   margin: 0;
   font-size: 1rem;
   color: #00A1DE;
 }
 
-.c1 {
+.c2 {
   font-size: 0.923rem;
 }
 
+.dulYnq > *:nth-child(2) .c0 {
+  margin-top: 5px;
+}
+
 <div
-  className="c0"
+  className="c0 c1"
   color="primary"
 >
   Nisi eu eiusmod cupidatat aute laboris commodo excepteur
   <small
-    className="c1"
+    className="c2"
   >
      Small content 
   </small>
@@ -38,22 +42,26 @@ exports[`Storyshots Small With color 1`] = `
 `;
 
 exports[`Storyshots Small Within <P> 1`] = `
-.c0 {
+.c1 {
   margin: 0;
   font-size: 1rem;
   color: currentColor;
 }
 
-.c1 {
+.c2 {
   font-size: 0.923rem;
 }
 
+.dulYnq > *:nth-child(2) .c0 {
+  margin-top: 5px;
+}
+
 <div
-  className="c0"
+  className="c0 c1"
 >
   Nisi eu eiusmod cupidatat aute laboris commodo excepteur
   <small
-    className="c1"
+    className="c2"
   >
      Small content 
   </small>

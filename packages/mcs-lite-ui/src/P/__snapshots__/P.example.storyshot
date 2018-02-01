@@ -1,28 +1,36 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots P API 1`] = `
-.c0 {
+.c1 {
   margin: 0;
   font-size: 1rem;
   color: currentColor;
 }
 
+.dulYnq > *:nth-child(2) .c0 {
+  margin-top: 5px;
+}
+
 <p
-  className="c0"
+  className="c0 c1"
 >
   Nisi eu eiusmod cupidatat aute laboris commodo excepteur esse dolore incididunt incididunt aliquip pariatur est minim officia sit. Nulla pariatur duis duis quis commodo cupidatat voluptate enim culpa elit adipisicing do cupidatat sint anim. Cillum elit magna occaecat proident sit cupidatat ad quis sunt id culpa culpa. Ad duis nulla in incididunt amet consequat officia ad voluptate voluptate. Pariatur eiusmod ullamco cupidatat non magna officia aute magna deserunt qui aute dolor eu. Qui amet non ex cillum sunt ad velit consequat ipsum velit.
 </p>
 `;
 
 exports[`Storyshots P Nested children with div 1`] = `
-.c0 {
+.c1 {
   margin: 0;
   font-size: 1rem;
   color: currentColor;
 }
 
+.dulYnq > *:nth-child(2) .c0 {
+  margin-top: 5px;
+}
+
 <div
-  className="c0"
+  className="c0 c1"
 >
   <div>
     <span>
@@ -33,126 +41,130 @@ exports[`Storyshots P Nested children with div 1`] = `
 `;
 
 exports[`Storyshots P With color props 1`] = `
-.c5 {
+.c6 {
   margin: 0;
   font-size: 1rem;
   color: #00A1DE;
 }
 
-.c1 {
+.c2 {
   margin: 0;
   font-size: 1rem;
   color: #999A94;
 }
 
-.c7 {
+.c8 {
   margin: 0;
   font-size: 1rem;
   color: #F5364E;
 }
 
-.c0 {
+.c1 {
   margin: 0;
   font-size: 1rem;
   color: #353630;
 }
 
-.c2 {
+.c3 {
   margin: 0;
   font-size: 1rem;
   color: #D1D2D3;
 }
 
-.c3 {
+.c4 {
   margin: 0;
   font-size: 1rem;
   color: #FAFAFA;
 }
 
-.c4 {
+.c5 {
   margin: 0;
   font-size: 1rem;
   color: #FFFFFF;
 }
 
-.c6 {
+.c7 {
   margin: 0;
   font-size: 1rem;
   color: #69BE28;
 }
 
-.c8 {
+.c9 {
   margin: 0;
   font-size: 1rem;
   color: #F39A1E;
 }
 
+.dulYnq > *:nth-child(2) .c0 {
+  margin-top: 5px;
+}
+
 <div>
   <div
-    className="c0"
+    className="c0 c1"
     color="black"
   >
     Paragraph 
     black
   </div>
   <div
-    className="c1"
+    className="c0 c2"
     color="grayBase"
   >
     Paragraph 
     grayBase
   </div>
   <div
-    className="c2"
+    className="c0 c3"
     color="grayDark"
   >
     Paragraph 
     grayDark
   </div>
   <div
-    className="c3"
+    className="c0 c4"
     color="grayLight"
   >
     Paragraph 
     grayLight
   </div>
   <div
-    className="c4"
+    className="c0 c5"
     color="white"
   >
     Paragraph 
     white
   </div>
   <div
-    className="c3"
+    className="c0 c4"
     color="default"
   >
     Paragraph 
     default
   </div>
   <div
-    className="c5"
+    className="c0 c6"
     color="primary"
   >
     Paragraph 
     primary
   </div>
   <div
-    className="c6"
+    className="c0 c7"
     color="success"
   >
     Paragraph 
     success
   </div>
   <div
-    className="c7"
+    className="c0 c8"
     color="error"
   >
     Paragraph 
     error
   </div>
   <div
-    className="c8"
+    className="c0 c9"
     color="warning"
   >
     Paragraph 

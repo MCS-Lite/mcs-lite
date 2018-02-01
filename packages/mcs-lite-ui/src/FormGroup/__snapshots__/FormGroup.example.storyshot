@@ -42,15 +42,15 @@ exports[`Storyshots FormGroup API 1`] = `
   color: #D1D2D3;
 }
 
-.c2::after {
-  content: "*";
-  margin-left: 0.25em;
-  color: #F5364E;
-}
-
 .c4::after {
   content: "";
   margin-left: 0;
+  color: #F5364E;
+}
+
+.c2::after {
+  content: "*";
+  margin-left: 0.25em;
   color: #F5364E;
 }
 
