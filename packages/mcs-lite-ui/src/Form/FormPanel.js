@@ -1,14 +1,11 @@
 // @flow
-import * as React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Panel from '../Panel';
 
 export const MAX_WIDTH = 618;
 
-const FormPanel: React.ComponentType<{
-  width?: number,
-}> = styled(Panel)`
+const FormPanel = styled(Panel)`
   max-width: ${props => props.width}px;
   margin: auto; /* Note: center by default and top for overflow, ref: https://goo.gl/3i1sSD */
 

@@ -1,8 +1,7 @@
 // @flow
-import * as React from 'react';
 import styled from 'styled-components';
 
-const PanelIcon: React.ComponentType<{}> = styled.div`
+const PanelIcon = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;

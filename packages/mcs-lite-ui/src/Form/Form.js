@@ -1,11 +1,10 @@
 // @flow
-import * as React from 'react';
 import styled from 'styled-components';
 import Fieldset from './Fieldset';
 
 export const FIELDSET_MAX_WIDTH = 478;
 
-const Form: React.ComponentType<{}> = styled.form`
+const Form = styled.form`
   display: flex;
   flex-direction: column;
   align-items: center;

@@ -9255,8 +9255,8 @@ react-motion@^0.5.2:
     raf "^3.1.0"
 
 react-overlay-pack@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/react-overlay-pack/-/react-overlay-pack-1.0.2.tgz#65ccf7c09c576fc1c01c70d28df2ac6087b28ec2"
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/react-overlay-pack/-/react-overlay-pack-1.0.3.tgz#bfbe210fde214f849d1996884d02822bfa6ba6ef"
   dependencies:
     dom-align "^1.6.7"
     prop-types "^15.6.0"

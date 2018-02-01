@@ -1,14 +1,11 @@
 // @flow
-import * as React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import P from '../P';
 
 export const INPUT_MIN_WIDTH = 200;
 
-const Fieldset: React.ComponentType<{
-  width?: number,
-}> = styled.div`
+const Fieldset = styled.div`
   /* Note: there is a problem with native fieldset using with flex. */
   display: flex;
   justify-content: space-between;
