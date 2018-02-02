@@ -1,5 +1,24 @@
 # MCS Lite changelogs
 
+## Released (2018-02-02)
+
+* babel-preset-mcs-lite: 0.3.11 => 0.3.12
+* eslint-config-mcs-lite: 0.6.2 => 0.6.3
+* mcs-lite-admin-web: 0.2.4 => 0.2.5
+* mcs-lite-connect: 0.3.14 => 0.3.15
+* mcs-lite-design: 0.2.6 => 0.2.7
+* mcs-lite-icon: 0.3.13 => 0.3.14
+* mcs-lite-landing-web: 0.1.9 => 0.1.10 (private)
+* mcs-lite-mobile-web: 0.4.17 => 0.4.18
+* mcs-lite-scripts: 0.3.13 => 0.3.14
+* mcs-lite-theme: 0.3.11 => 0.3.12
+* mcs-lite-translation: 0.1.11 => 0.1.12
+* mcs-lite-ui: 0.5.0 => 0.6.0
+* react-intl-inject-hoc: 0.2.14 => 0.2.15
+
+- feat(UI): add PanelIcon, Form and remove ClickOutside (#549)
+- refactor(UI): remove ClickOutside [BREAKING CHANGES]
+
 ## Released (2018-01-30)
 
 * babel-preset-mcs-lite: 0.3.10 => 0.3.11
