@@ -10,7 +10,7 @@ import IconMenu from 'mcs-lite-icon/lib/IconMenu';
 import PullToRefresh from 'mcs-lite-ui/lib/PullToRefresh';
 import PreventDrag from 'mcs-lite-ui/lib/PreventDrag';
 import Input from 'mcs-lite-ui/lib/Input';
-import ClickOutside from 'mcs-lite-ui/lib/ClickOutside';
+import ClickOutside from 'react-overlay-pack/lib/ClickOutside';
 import MobileDeviceCard from 'mcs-lite-ui/lib/MobileDeviceCard';
 import MobileHeader from 'mcs-lite-ui/lib/MobileHeader';
 import { updatePathname } from 'mcs-lite-ui/lib/utils/routerHelper';

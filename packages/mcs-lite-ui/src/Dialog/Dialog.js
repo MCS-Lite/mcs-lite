@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Portal from 'react-overlays/lib/Portal';
 import Transition from 'react-motion-ui-pack';
-import ClickOutside from '../ClickOutside';
+import ClickOutside from 'react-overlay-pack/lib/ClickOutside';
 import emptyFunction from '../utils/emptyFunction';
 
 export const Overlay = styled.div`

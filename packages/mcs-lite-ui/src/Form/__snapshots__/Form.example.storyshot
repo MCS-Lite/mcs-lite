@@ -1,0 +1,986 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Form Fieldset 1`] = `
+Array [
+  .c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.c0 > *:nth-child(1) {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-right: 10px;
+  min-height: 32px;
+  -webkit-flex-basis: 10em;
+  -ms-flex-preferred-size: 10em;
+  flex-basis: 10em;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c0 > *:nth-child(2) {
+  -webkit-box-flex: 9999;
+  -webkit-flex-grow: 9999;
+  -ms-flex-positive: 9999;
+  flex-grow: 9999;
+  min-width: 200px;
+}
+
+.c0 > *:nth-child(2) .P-gHPbqS {
+  margin-top: 5px;
+}
+
+<div
+    className="c0"
+    width={200}
+  >
+    <div
+      style={
+        Object {
+          "backgroundColor": "antiquewhite",
+        }
+      }
+    >
+      Label Component
+    </div>
+    <div
+      style={
+        Object {
+          "backgroundColor": "aliceblue",
+        }
+      }
+    >
+      Input Component
+    </div>
+  </div>,
+  <br />,
+  .c2 {
+  box-sizing: border-box;
+  width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 3px;
+  outline: 0;
+  padding: 0 10px;
+  line-height: 1;
+  min-height: 32px;
+  color: #353630;
+  font-size: 1rem;
+  border-color: #D1D2D3;
+  box-shadow: none;
+}
+
+.c2:focus {
+  border-color: #00A1DE;
+  box-shadow: 0 0 3px 0 rgba(0,161,222,0.5);
+}
+
+.c2::-webkit-input-placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c2::-moz-placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c2:-ms-input-placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c2::placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c1::after {
+  content: "";
+  margin-left: 0;
+  color: #F5364E;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.c0 > *:nth-child(1) {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-right: 10px;
+  min-height: 32px;
+  -webkit-flex-basis: 10em;
+  -ms-flex-preferred-size: 10em;
+  flex-basis: 10em;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c0 > *:nth-child(2) {
+  -webkit-box-flex: 9999;
+  -webkit-flex-grow: 9999;
+  -ms-flex-positive: 9999;
+  flex-grow: 9999;
+  min-width: 200px;
+}
+
+.c0 > *:nth-child(2) .P-gHPbqS {
+  margin-top: 5px;
+}
+
+<div
+    className="c0"
+    width={200}
+  >
+    <div
+      style={
+        Object {
+          "backgroundColor": "antiquewhite",
+        }
+      }
+    >
+      <label
+        className="c1"
+      >
+        Device name
+      </label>
+    </div>
+    <div
+      style={
+        Object {
+          "backgroundColor": "aliceblue",
+        }
+      }
+    >
+      <input
+        className="c2"
+        kind="primary"
+        placeholder="input the display name"
+      />
+    </div>
+  </div>,
+  <br />,
+  .c4 {
+  margin: 0;
+  font-size: 1rem;
+  color: #F5364E;
+}
+
+.c2 {
+  box-sizing: border-box;
+  width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 3px;
+  outline: 0;
+  padding: 0 10px;
+  line-height: 1;
+  min-height: 32px;
+  color: #353630;
+  font-size: 1rem;
+  border-color: #F5364E;
+  box-shadow: 0 0 3px 0 rgba(245,54,78,0.5);
+}
+
+.c2:focus {
+  border-color: #F5364E;
+  box-shadow: 0 0 3px 0 rgba(245,54,78,0.5);
+}
+
+.c2::-webkit-input-placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c2::-moz-placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c2:-ms-input-placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c2::placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c1::after {
+  content: "*";
+  margin-left: 0.25em;
+  color: #F5364E;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.c0 > *:nth-child(1) {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-right: 10px;
+  min-height: 32px;
+  -webkit-flex-basis: 10em;
+  -ms-flex-preferred-size: 10em;
+  flex-basis: 10em;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c0 > *:nth-child(2) {
+  -webkit-box-flex: 9999;
+  -webkit-flex-grow: 9999;
+  -ms-flex-positive: 9999;
+  flex-grow: 9999;
+  min-width: 200px;
+}
+
+.c0 > *:nth-child(2) .c3 {
+  margin-top: 5px;
+}
+
+<div
+    className="c0"
+    width={200}
+  >
+    <label
+      className="c1"
+      htmlFor="scene"
+      required={true}
+    >
+      Scene name
+    </label>
+    <div>
+      <input
+        className="c2"
+        id="scene"
+        kind="error"
+        placeholder="input the scene name"
+      />
+      <p
+        className="c3 c4"
+        color="error"
+      >
+        Please input the scene name
+      </p>
+    </div>
+  </div>,
+  <br />,
+  .c4 {
+  margin: 0;
+  font-size: 1rem;
+  color: #F5364E;
+}
+
+.c2 {
+  box-sizing: border-box;
+  width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 3px;
+  outline: 0;
+  padding: 0 10px;
+  line-height: 1;
+  min-height: 32px;
+  color: #353630;
+  font-size: 1rem;
+  border-color: #F5364E;
+  box-shadow: 0 0 3px 0 rgba(245,54,78,0.5);
+}
+
+.c2:focus {
+  border-color: #F5364E;
+  box-shadow: 0 0 3px 0 rgba(245,54,78,0.5);
+}
+
+.c2::-webkit-input-placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c2::-moz-placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c2:-ms-input-placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c2::placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c1::after {
+  content: "*";
+  margin-left: 0.25em;
+  color: #F5364E;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.c0 > *:nth-child(1) {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-right: 10px;
+  min-height: 32px;
+  -webkit-flex-basis: 10em;
+  -ms-flex-preferred-size: 10em;
+  flex-basis: 10em;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c0 > *:nth-child(2) {
+  -webkit-box-flex: 9999;
+  -webkit-flex-grow: 9999;
+  -ms-flex-positive: 9999;
+  flex-grow: 9999;
+  min-width: 200px;
+}
+
+.c0 > *:nth-child(2) .c3 {
+  margin-top: 5px;
+}
+
+<div
+    className="c0"
+    width={200}
+  >
+    <label
+      className="c1"
+      htmlFor="scene"
+      required={true}
+    >
+      Scene name long label
+    </label>
+    <div>
+      <input
+        className="c2"
+        id="scene"
+        kind="error"
+        placeholder="input the scene name"
+      />
+      <p
+        className="c3 c4"
+        color="error"
+      >
+        Please input the scene name
+      </p>
+    </div>
+  </div>,
+]
+`;
+
+exports[`Storyshots Form Form 1`] = `
+.c8 {
+  margin: 0;
+  font-size: 1rem;
+  color: #F5364E;
+}
+
+.c4 {
+  box-sizing: border-box;
+  width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 3px;
+  outline: 0;
+  padding: 0 10px;
+  line-height: 1;
+  min-height: 32px;
+  color: #353630;
+  font-size: 1rem;
+  border-color: #D1D2D3;
+  box-shadow: none;
+}
+
+.c4:focus {
+  border-color: #00A1DE;
+  box-shadow: 0 0 3px 0 rgba(0,161,222,0.5);
+}
+
+.c4::-webkit-input-placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c4::-moz-placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c4:-ms-input-placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c4::placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c6 {
+  box-sizing: border-box;
+  width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 3px;
+  outline: 0;
+  padding: 0 10px;
+  line-height: 1;
+  min-height: 32px;
+  color: #353630;
+  font-size: 1rem;
+  border-color: #F5364E;
+  box-shadow: 0 0 3px 0 rgba(245,54,78,0.5);
+}
+
+.c6:focus {
+  border-color: #F5364E;
+  box-shadow: 0 0 3px 0 rgba(245,54,78,0.5);
+}
+
+.c6::-webkit-input-placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c6::-moz-placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c6:-ms-input-placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c6::placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c3::after {
+  content: "";
+  margin-left: 0;
+  color: #F5364E;
+}
+
+.c5::after {
+  content: "*";
+  margin-left: 0.25em;
+  color: #F5364E;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.c2 > *:nth-child(1) {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-right: 10px;
+  min-height: 32px;
+  -webkit-flex-basis: 10em;
+  -ms-flex-preferred-size: 10em;
+  flex-basis: 10em;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c2 > *:nth-child(2) {
+  -webkit-box-flex: 9999;
+  -webkit-flex-grow: 9999;
+  -ms-flex-positive: 9999;
+  flex-grow: 9999;
+  min-width: 200px;
+}
+
+.c2 > *:nth-child(2) .c7 {
+  margin-top: 5px;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c0 > .c1 {
+  max-width: 478px;
+}
+
+.c0 > .c1:not(:first-child) {
+  margin-top: 10px;
+}
+
+<form
+  className="c0"
+  style={
+    Object {
+      "backgroundColor": "aliceblue",
+    }
+  }
+>
+  <div
+    className="c1 c2"
+    width={200}
+  >
+    <div>
+      <label
+        className="c3"
+      >
+        Device name
+      </label>
+    </div>
+    <div>
+      <input
+        className="c4"
+        kind="primary"
+        placeholder="input the display name"
+      />
+    </div>
+  </div>
+  <div
+    className="c1 c2"
+    width={200}
+  >
+    <label
+      className="c5"
+      htmlFor="scene"
+      required={true}
+    >
+      Scene name
+    </label>
+    <div>
+      <input
+        className="c6"
+        id="scene"
+        kind="error"
+        placeholder="input the scene name"
+      />
+      <p
+        className="c7 c8"
+        color="error"
+      >
+        Please input the scene name
+      </p>
+    </div>
+  </div>
+</form>
+`;
+
+exports[`Storyshots Form FormPanel 1`] = `
+.c10 {
+  margin: 0;
+  font-size: 1rem;
+  color: #F5364E;
+}
+
+.c6 {
+  box-sizing: border-box;
+  width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 3px;
+  outline: 0;
+  padding: 0 10px;
+  line-height: 1;
+  min-height: 32px;
+  color: #353630;
+  font-size: 1rem;
+  border-color: #D1D2D3;
+  box-shadow: none;
+}
+
+.c6:focus {
+  border-color: #00A1DE;
+  box-shadow: 0 0 3px 0 rgba(0,161,222,0.5);
+}
+
+.c6::-webkit-input-placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c6::-moz-placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c6:-ms-input-placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c6::placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c8 {
+  box-sizing: border-box;
+  width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 3px;
+  outline: 0;
+  padding: 0 10px;
+  line-height: 1;
+  min-height: 32px;
+  color: #353630;
+  font-size: 1rem;
+  border-color: #F5364E;
+  box-shadow: 0 0 3px 0 rgba(245,54,78,0.5);
+}
+
+.c8:focus {
+  border-color: #F5364E;
+  box-shadow: 0 0 3px 0 rgba(245,54,78,0.5);
+}
+
+.c8::-webkit-input-placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c8::-moz-placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c8:-ms-input-placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c8::placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c1 {
+  width: 100%;
+  border-radius: 3px;
+  background-color: #FFFFFF;
+}
+
+.c1 > header {
+  background-color: #FAFAFA;
+  box-shadow: 0 1px 1px 0 rgba(0,0,0,0.05);
+  border-radius: 3px;
+  height: 50px;
+}
+
+.c1 > main,
+.c1 > footer {
+  padding: 20px;
+}
+
+.c5::after {
+  content: "";
+  margin-left: 0;
+  color: #F5364E;
+}
+
+.c7::after {
+  content: "*";
+  margin-left: 0.25em;
+  color: #F5364E;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.c4 > *:nth-child(1) {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-right: 10px;
+  min-height: 32px;
+  -webkit-flex-basis: 10em;
+  -ms-flex-preferred-size: 10em;
+  flex-basis: 10em;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c4 > *:nth-child(2) {
+  -webkit-box-flex: 9999;
+  -webkit-flex-grow: 9999;
+  -ms-flex-positive: 9999;
+  flex-grow: 9999;
+  min-width: 200px;
+}
+
+.c4 > *:nth-child(2) .c9 {
+  margin-top: 5px;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c2 > .c3 {
+  max-width: 478px;
+}
+
+.c2 > .c3:not(:first-child) {
+  margin-top: 10px;
+}
+
+.c0 {
+  max-width: 618px;
+  margin: auto;
+}
+
+.c0 > header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-left: 20px;
+}
+
+.c0 > footer {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c0 > footer > * + * {
+  margin-left: 10px;
+}
+
+<div
+  className="c0 c1"
+  style={
+    Object {
+      "backgroundColor": "aliceblue",
+    }
+  }
+  width={618}
+>
+  <header>
+    Add scene
+  </header>
+  <main>
+    <form
+      className="c2"
+    >
+      <div
+        className="c3 c4"
+        width={200}
+      >
+        <div>
+          <label
+            className="c5"
+          >
+            Device name
+          </label>
+        </div>
+        <div>
+          <input
+            className="c6"
+            kind="primary"
+            placeholder="input the display name"
+          />
+        </div>
+      </div>
+      <div
+        className="c3 c4"
+        width={200}
+      >
+        <label
+          className="c7"
+          htmlFor="scene"
+          required={true}
+        >
+          Scene name
+        </label>
+        <div>
+          <input
+            className="c8"
+            id="scene"
+            kind="error"
+            placeholder="input the scene name"
+          />
+          <p
+            className="c9 c10"
+            color="error"
+          >
+            Please input the scene name
+          </p>
+        </div>
+      </div>
+    </form>
+  </main>
+</div>
+`;
