@@ -47,7 +47,7 @@
     "mcs-lite-theme": "^0.3.12",
     "mcs-lite-translation": "^0.1.12",
     "mcs-lite-ui": "^0.6.0",
-    "polished": "1.9.0",
+    "polished": "1.9.1",
     "prop-types": "15.6.0",
     "raf": "3.4.0",
     "ramda": "0.25.0",
