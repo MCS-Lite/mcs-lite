@@ -18,7 +18,6 @@ const ErrorMessage = ({ children }: { children: React.Node }) => (
     <P color="error">{children}</P>
   </Transition>
 );
-ErrorMessage.displayName = ErrorMessage;
 ErrorMessage.propTypes = {
   children: PropTypes.node,
 };
