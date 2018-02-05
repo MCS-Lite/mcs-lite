@@ -34,3 +34,5 @@ jest.mock('react-syntax-highlighter/dist/highlight', () => () =>
 jest.mock('react-overlays/lib/Portal', () => 'mock-portal');
 jest.mock('dom-align');
 jest.mock('react-motion-ui-pack');
+// For rc-tween-one
+jest.mock('react-overlay-pack/lib/Transition/index', () => 'mock-transition');

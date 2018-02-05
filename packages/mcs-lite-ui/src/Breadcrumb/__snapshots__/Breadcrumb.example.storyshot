@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Breadcrumb API 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c0 > * + *::before {
+  content: '>';
+  margin: 0 5px;
+  color: #353630;
+}
+
+<div
+  className="c0"
+>
+  <div>
+    item 1
+  </div>
+  <div>
+    item 2
+  </div>
+</div>
+`;

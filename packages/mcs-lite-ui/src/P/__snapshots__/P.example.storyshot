@@ -7,7 +7,7 @@ exports[`Storyshots P API 1`] = `
   color: currentColor;
 }
 
-.dulYnq > *:nth-child(2) .c0 {
+.dUUMVe > *:nth-child(2) .c0 {
   margin-top: 5px;
 }
 
@@ -25,7 +25,7 @@ exports[`Storyshots P Nested children with div 1`] = `
   color: currentColor;
 }
 
-.dulYnq > *:nth-child(2) .c0 {
+.dUUMVe > *:nth-child(2) .c0 {
   margin-top: 5px;
 }
 
@@ -95,7 +95,7 @@ exports[`Storyshots P With color props 1`] = `
   color: #F39A1E;
 }
 
-.dulYnq > *:nth-child(2) .c0 {
+.dUUMVe > *:nth-child(2) .c0 {
   margin-top: 5px;
 }
 

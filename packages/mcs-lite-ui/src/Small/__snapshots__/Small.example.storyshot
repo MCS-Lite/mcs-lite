@@ -23,7 +23,7 @@ exports[`Storyshots Small With color 1`] = `
   font-size: 0.923rem;
 }
 
-.dulYnq > *:nth-child(2) .c0 {
+.dUUMVe > *:nth-child(2) .c0 {
   margin-top: 5px;
 }
 
@@ -52,7 +52,7 @@ exports[`Storyshots Small Within <P> 1`] = `
   font-size: 0.923rem;
 }
 
-.dulYnq > *:nth-child(2) .c0 {
+.dUUMVe > *:nth-child(2) .c0 {
   margin-top: 5px;
 }
 
