@@ -43,7 +43,7 @@ exports[`Storyshots LandingHeader NavItemBurger 1`] = `
   color: currentColor;
 }
 
-.dulYnq > *:nth-child(2) .c5 {
+.dUUMVe > *:nth-child(2) .c5 {
   margin-top: 5px;
 }
 
@@ -155,7 +155,7 @@ exports[`Storyshots LandingHeader NavItemDropdown 1`] = `
   color: currentColor;
 }
 
-.dulYnq > *:nth-child(2) .c5 {
+.dUUMVe > *:nth-child(2) .c5 {
   margin-top: 5px;
 }
 

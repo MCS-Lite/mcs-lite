@@ -15,9 +15,10 @@ const Fieldset = styled.div`
   /* Note: Label */
   > *:nth-child(1) {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    padding-top: 0.5em;
     margin-right: 10px;
-    min-height: ${props => props.theme.height.normal};
+    padding-bottom: 5px;
     flex-basis: 10em;
     flex-shrink: 0;
     flex-grow: 1; /* Note: for flex-wrap. ref: https://goo.gl/7fdFLp */

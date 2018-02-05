@@ -4,8 +4,7 @@ import { storiesOf } from '@storybook/react';
 import { withInfo } from '@storybook/addon-info';
 import Label from '../Label';
 import Input from '../Input';
-import P from '../P';
-import { Form, Fieldset, FormPanel } from './';
+import { Form, Fieldset, FormPanel, ErrorMessage } from './';
 
 storiesOf('Form', module)
   .add(
@@ -44,7 +43,7 @@ storiesOf('Form', module)
               kind="error"
               focus
             />
-            <P color="error">Please input the scene name</P>
+            <ErrorMessage>Please input the scene name</ErrorMessage>
           </div>
         </Fieldset>
 
@@ -61,7 +60,7 @@ storiesOf('Form', module)
               kind="error"
               focus
             />
-            <P color="error">Please input the scene name</P>
+            <ErrorMessage>Please input the scene name</ErrorMessage>
           </div>
         </Fieldset>
       </React.Fragment>
@@ -94,7 +93,7 @@ storiesOf('Form', module)
               kind="error"
               focus
             />
-            <P color="error">Please input the scene name</P>
+            <ErrorMessage>Please input the scene name</ErrorMessage>
           </div>
         </Fieldset>
       </Form>
@@ -130,7 +129,7 @@ storiesOf('Form', module)
                   kind="error"
                   focus
                 />
-                <P color="error">Please input the scene name</P>
+                <ErrorMessage>Please input the scene name</ErrorMessage>
               </div>
             </Fieldset>
           </Form>

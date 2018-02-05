@@ -22,12 +22,13 @@ Array [
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  padding-top: 0.5em;
   margin-right: 10px;
-  min-height: 32px;
+  padding-bottom: 5px;
   -webkit-flex-basis: 10em;
   -ms-flex-preferred-size: 10em;
   flex-basis: 10em;
@@ -143,12 +144,13 @@ Array [
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  padding-top: 0.5em;
   margin-right: 10px;
-  min-height: 32px;
+  padding-bottom: 5px;
   -webkit-flex-basis: 10em;
   -ms-flex-preferred-size: 10em;
   flex-basis: 10em;
@@ -278,12 +280,13 @@ Array [
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  padding-top: 0.5em;
   margin-right: 10px;
-  min-height: 32px;
+  padding-bottom: 5px;
   -webkit-flex-basis: 10em;
   -ms-flex-preferred-size: 10em;
   flex-basis: 10em;
@@ -326,12 +329,27 @@ Array [
         kind="error"
         placeholder="input the scene name"
       />
-      <p
-        className="c3 c4"
-        color="error"
+      <mock-transition
+        animation={
+          Object {
+            "ease": "easeOutQuart",
+            "translateX": 0,
+          }
+        }
+        component={false}
+        style={
+          Object {
+            "transform": "translateX(6px)",
+          }
+        }
       >
-        Please input the scene name
-      </p>
+        <p
+          className="c3 c4"
+          color="error"
+        >
+          Please input the scene name
+        </p>
+      </mock-transition>
     </div>
   </div>,
   <br />,
@@ -408,12 +426,13 @@ Array [
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  padding-top: 0.5em;
   margin-right: 10px;
-  min-height: 32px;
+  padding-bottom: 5px;
   -webkit-flex-basis: 10em;
   -ms-flex-preferred-size: 10em;
   flex-basis: 10em;
@@ -456,12 +475,27 @@ Array [
         kind="error"
         placeholder="input the scene name"
       />
-      <p
-        className="c3 c4"
-        color="error"
+      <mock-transition
+        animation={
+          Object {
+            "ease": "easeOutQuart",
+            "translateX": 0,
+          }
+        }
+        component={false}
+        style={
+          Object {
+            "transform": "translateX(6px)",
+          }
+        }
       >
-        Please input the scene name
-      </p>
+        <p
+          className="c3 c4"
+          color="error"
+        >
+          Please input the scene name
+        </p>
+      </mock-transition>
     </div>
   </div>,
 ]
@@ -588,12 +622,13 @@ exports[`Storyshots Form Form 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  padding-top: 0.5em;
   margin-right: 10px;
-  min-height: 32px;
+  padding-bottom: 5px;
   -webkit-flex-basis: 10em;
   -ms-flex-preferred-size: 10em;
   flex-basis: 10em;
@@ -685,12 +720,27 @@ exports[`Storyshots Form Form 1`] = `
         kind="error"
         placeholder="input the scene name"
       />
-      <p
-        className="c7 c8"
-        color="error"
+      <mock-transition
+        animation={
+          Object {
+            "ease": "easeOutQuart",
+            "translateX": 0,
+          }
+        }
+        component={false}
+        style={
+          Object {
+            "transform": "translateX(6px)",
+          }
+        }
       >
-        Please input the scene name
-      </p>
+        <p
+          className="c7 c8"
+          color="error"
+        >
+          Please input the scene name
+        </p>
+      </mock-transition>
     </div>
   </div>
 </form>
@@ -835,12 +885,13 @@ exports[`Storyshots Form FormPanel 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  padding-top: 0.5em;
   margin-right: 10px;
-  min-height: 32px;
+  padding-bottom: 5px;
   -webkit-flex-basis: 10em;
   -ms-flex-preferred-size: 10em;
   flex-basis: 10em;
@@ -972,12 +1023,27 @@ exports[`Storyshots Form FormPanel 1`] = `
             kind="error"
             placeholder="input the scene name"
           />
-          <p
-            className="c9 c10"
-            color="error"
+          <mock-transition
+            animation={
+              Object {
+                "ease": "easeOutQuart",
+                "translateX": 0,
+              }
+            }
+            component={false}
+            style={
+              Object {
+                "transform": "translateX(6px)",
+              }
+            }
           >
-            Please input the scene name
-          </p>
+            <p
+              className="c9 c10"
+              color="error"
+            >
+              Please input the scene name
+            </p>
+          </mock-transition>
         </div>
       </div>
     </form>
