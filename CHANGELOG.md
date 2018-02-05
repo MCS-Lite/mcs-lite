@@ -1,5 +1,17 @@
 # MCS Lite changelogs
 
+## Released (2018-02-05)
+
+#### :rocket: New Feature
+
+* `mcs-lite-ui`
+  * [#555](https://github.com/MCS-Lite/mcs-lite/pull/555) feat(UI): add Breadcrumb component & ErrorMessage in Form. ([@evenchange4](https://github.com/evenchange4))
+
+#### Committers: 2
+
+* Michael Hsu ([evenchange4](https://github.com/evenchange4))
+* [renovate[bot]](https://github.com/apps/renovate)
+
 ## Released (2018-02-02)
 
 * babel-preset-mcs-lite: 0.3.11 => 0.3.12
