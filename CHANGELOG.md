@@ -1,5 +1,12 @@
 # MCS Lite changelogs
 
+## Released (2018-02-06)
+
+#### :rocket: New Feature
+
+* feat(ui): add Logo component & add ImageDropzone component (#557)
+* feat(babel): add macros plugin
+
 ## Released (2018-02-05)
 
 #### :rocket: New Feature
