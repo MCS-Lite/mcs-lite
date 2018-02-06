@@ -21,8 +21,7 @@
       "NODE_ENV=production babel src --out-dir lib --ignore example.js,test.js",
     "createEntryFile": "exports-all 'lib/[A-Z]*' 'lib/index.js'",
     "postbuild": "npm run createEntryFile",
-    "test":
-      "NODE_ENV='test' TZ='UTC' ../../node_modules/.bin/jest --coverage --runInBand",
+    "test": "NODE_ENV='test' TZ='UTC' jest --coverage --runInBand",
     "test:watch": "npm run test -- --watch"
   },
   "jest": {
@@ -35,6 +34,7 @@
     "testPathIgnorePatterns": ["<rootDir>/node_modules/", "<rootDir>/lib/"]
   },
   "devDependencies": {
+    "@storybook/addon-actions": "3.3.12",
     "@storybook/addon-info": "3.3.12",
     "@storybook/addon-options": "3.3.12",
     "@storybook/addon-storyshots": "3.3.12",
@@ -45,6 +45,7 @@
     "enzyme-adapter-react-16": "1.1.1",
     "enzyme-to-json": "3.3.1",
     "flow-bin": "0.64.0",
+    "jest": "20.0.4",
     "jest-specific-snapshot": "0.3.0",
     "jest-styled-components": "next",
     "mcs-lite-icon": "^0.3.15",
@@ -56,7 +57,8 @@
     "react-addons-test-utils": "15.6.2",
     "react-dom": "16.2.0",
     "react-test-renderer": "16.2.0",
-    "styled-components": "3.1.4"
+    "styled-components": "3.1.4",
+    "svgr": "1.8.1"
   },
   "dependencies": {
     "bowser": "^1.9.1",
@@ -70,6 +72,7 @@
     "raf-throttle": "^2.0.3",
     "ramda": "^0.25.0",
     "react-cookie": "^1.0.5",
+    "react-dnd-dropzone": "^1.0.0",
     "react-hammerjs": "^0.5.0",
     "react-motion": "^0.5.2",
     "react-motion-ui-pack": "^0.10.3",
@@ -82,7 +85,8 @@
     "react-waypoint": "^8.0.0",
     "recharts": "^1.0.0-beta.10",
     "recompose": "^0.26.0",
-    "rxjs": "^5.5.6"
+    "rxjs": "^5.5.6",
+    "svgr.macro": "^1.0.4"
   },
   "peerDependencies": {
     "mcs-lite-icon": "^0.3.10",

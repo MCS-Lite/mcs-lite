@@ -1,0 +1,323 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots ImageDropzone API 1`] = `
+.c0 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 137px;
+  padding: 12px;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: #FAFAFA;
+  border: 1px dashed #D1D2D3;
+  border-radius: 3px;
+  -webkit-transition: all cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  transition: all cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+}
+
+.c0 > .P-gHPbqS {
+  margin-top: 6px;
+}
+
+.c0 > .Spin-dthHZc {
+  position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  padding: 8px;
+}
+
+<div>
+  <div
+    className="c0"
+    height={137}
+    src={undefined}
+  >
+    <Image-svgr.macro />
+  </div>
+</div>
+`;
+
+exports[`Storyshots ImageDropzone With children 1`] = `
+.c2 {
+  margin: 0;
+  font-size: 1rem;
+  color: #D1D2D3;
+}
+
+.dUUMVe > *:nth-child(2) .c1 {
+  margin-top: 5px;
+}
+
+.c0 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 137px;
+  padding: 12px;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: #FAFAFA;
+  border: 1px dashed #D1D2D3;
+  border-radius: 3px;
+  -webkit-transition: all cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  transition: all cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+}
+
+.c0 > .c1 {
+  margin-top: 6px;
+}
+
+.c0 > .Spin-dthHZc {
+  position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  padding: 8px;
+}
+
+<div>
+  <div
+    className="c0"
+    height={137}
+    src={undefined}
+  >
+    <Image-svgr.macro />
+    <p
+      className="c1 c2"
+      color="grayDark"
+    >
+      Drop an image here to upload !
+    </p>
+  </div>
+</div>
+`;
+
+exports[`Storyshots ImageDropzone With isLoading 1`] = `
+.c4 {
+  margin: 0;
+  font-size: 1rem;
+  color: #D1D2D3;
+}
+
+.c2 {
+  box-sizing: border-box;
+}
+
+.c2 > * {
+  -webkit-transform-origin: center center;
+  -ms-transform-origin: center center;
+  transform-origin: center center;
+  -webkit-animation: iVXCSc 0.6s infinite cubic-bezier(0.41,0.01,0.58,1);
+  animation: iVXCSc 0.6s infinite cubic-bezier(0.41,0.01,0.58,1);
+}
+
+.dUUMVe > *:nth-child(2) .c3 {
+  margin-top: 5px;
+}
+
+.c0 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 137px;
+  padding: 12px;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: #FAFAFA;
+  border: 1px dashed #D1D2D3;
+  border-radius: 3px;
+  -webkit-transition: all cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  transition: all cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+}
+
+.c0 > .c3 {
+  margin-top: 6px;
+}
+
+.c0 > .c1 {
+  position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  padding: 8px;
+}
+
+<div>
+  <div
+    className="c0"
+    height={137}
+    src={undefined}
+  >
+    <div
+      className="c1 c2"
+    >
+      <svg
+        fill="currentColor"
+        height={18}
+        preserveAspectRatio="xMidYMid meet"
+        viewBox="0 0 24 24"
+        width={18}
+      >
+        <path
+          d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm0 18c-4.4 0-8-3.6-8-8s3.6-8 8-8 8 3.6 8 8-3.6 8-8 8z"
+          opacity=".3"
+        />
+        <path
+          d="M12 4c4.4 0 8 3.6 8 8h2c0-5.5-4.5-10-10-10v2z"
+        />
+      </svg>
+    </div>
+    <Image-svgr.macro />
+    <p
+      className="c3 c4"
+      color="grayDark"
+    >
+      Drop an image here to upload !
+    </p>
+  </div>
+</div>
+`;
+
+exports[`Storyshots ImageDropzone With src 1`] = `
+.c0 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 137px;
+  padding: 12px;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: #FAFAFA;
+  border: 1px dashed #D1D2D3;
+  border-radius: 3px;
+  -webkit-transition: all cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  transition: all cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  border: 2px solid #D1D2D3;
+  background-image: url("//img.mediatek.com/350/mtk.linkit/productBanner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.c0 > .P-gHPbqS {
+  margin-top: 6px;
+}
+
+.c0 > .Spin-dthHZc {
+  position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  padding: 8px;
+}
+
+<div>
+  <div
+    className="c0"
+    height={137}
+    src="//img.mediatek.com/350/mtk.linkit/productBanner.png"
+  />
+</div>
+`;

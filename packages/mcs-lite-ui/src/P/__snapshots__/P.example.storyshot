@@ -11,6 +11,14 @@ exports[`Storyshots P API 1`] = `
   margin-top: 5px;
 }
 
+.bwYail > .c0 {
+  margin-top: 6px;
+}
+
+.XYkQM > .c0 {
+  margin-top: 6px;
+}
+
 <p
   className="c0 c1"
 >
@@ -27,6 +35,14 @@ exports[`Storyshots P Nested children with div 1`] = `
 
 .dUUMVe > *:nth-child(2) .c0 {
   margin-top: 5px;
+}
+
+.bwYail > .c0 {
+  margin-top: 6px;
+}
+
+.XYkQM > .c0 {
+  margin-top: 6px;
 }
 
 <div
@@ -59,16 +75,16 @@ exports[`Storyshots P With color props 1`] = `
   color: #F5364E;
 }
 
-.c1 {
-  margin: 0;
-  font-size: 1rem;
-  color: #353630;
-}
-
 .c3 {
   margin: 0;
   font-size: 1rem;
   color: #D1D2D3;
+}
+
+.c1 {
+  margin: 0;
+  font-size: 1rem;
+  color: #353630;
 }
 
 .c4 {
@@ -97,6 +113,14 @@ exports[`Storyshots P With color props 1`] = `
 
 .dUUMVe > *:nth-child(2) .c0 {
   margin-top: 5px;
+}
+
+.bwYail > .c0 {
+  margin-top: 6px;
+}
+
+.XYkQM > .c0 {
+  margin-top: 6px;
 }
 
 <div>

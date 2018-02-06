@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Logo MCS 1`] = `
+Array [
+  <MCS-svgr.macro />,
+  <MCS-svgr.macro
+    height={56}
+    width={232}
+  />,
+]
+`;
