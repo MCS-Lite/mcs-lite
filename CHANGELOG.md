@@ -4,8 +4,22 @@
 
 #### :rocket: New Feature
 
-* feat(ui): add Logo component & add ImageDropzone component (#557)
-* feat(babel): add macros plugin
+* babel-preset-mcs-lite: 0.3.13 => 0.3.14
+* eslint-config-mcs-lite: 0.6.4 => 0.6.5
+* mcs-lite-admin-web: 0.2.6 => 0.2.7
+* mcs-lite-connect: 0.3.16 => 0.3.17
+* mcs-lite-design: 0.2.8 => 0.2.9
+* mcs-lite-icon: 0.3.15 => 0.3.16
+* mcs-lite-landing-web: 0.1.11 => 0.1.12 (private)
+* mcs-lite-mobile-web: 0.4.19 => 0.4.20
+* mcs-lite-scripts: 0.3.15 => 0.3.16
+* mcs-lite-theme: 0.3.13 => 0.3.14
+* mcs-lite-translation: 0.1.13 => 0.1.14
+* mcs-lite-ui: 0.6.1 => 0.6.2
+* react-intl-inject-hoc: 0.2.16 => 0.2.17
+
+- feat(ui): add Logo component & add ImageDropzone component (#557)
+- feat(babel): add macros plugin
 
 ## Released (2018-02-05)
 
