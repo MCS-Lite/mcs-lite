@@ -349,6 +349,10 @@ exports[`Storyshots Button With icon inside 1`] = `
   background-color: rgb(0,144,198);
 }
 
+.c2 {
+  box-sizing: border-box;
+}
+
 .c2 > * {
   -webkit-transform-origin: center center;
   -ms-transform-origin: center center;

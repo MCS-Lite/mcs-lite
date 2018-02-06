@@ -134,6 +134,14 @@ exports[`Storyshots Menu Fixed width 1`] = `
   margin-top: 5px;
 }
 
+.bwYail > .c5 {
+  margin-top: 6px;
+}
+
+.XYkQM > .c5 {
+  margin-top: 6px;
+}
+
 .c3 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;

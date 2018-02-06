@@ -15,6 +15,7 @@ module.exports = {
     ],
   ],
   plugins: [
+    require.resolve('babel-plugin-macros'),
     require.resolve('babel-plugin-add-module-exports'),
 
     // Minify styled-components css

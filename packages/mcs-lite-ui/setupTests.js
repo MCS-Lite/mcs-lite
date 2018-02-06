@@ -36,3 +36,7 @@ jest.mock('dom-align');
 jest.mock('react-motion-ui-pack');
 // For rc-tween-one
 jest.mock('react-overlay-pack/lib/Transition/index', () => 'mock-transition');
+
+// TODO: For svgr.macro (CRA mono jest problem)
+jest.mock('./src/ImageDropzone/Image', () => 'Image-svgr.macro');
+jest.mock('./src/Logo/MCS', () => 'MCS-svgr.macro');

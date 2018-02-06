@@ -27,6 +27,14 @@ exports[`Storyshots Small With color 1`] = `
   margin-top: 5px;
 }
 
+.bwYail > .c0 {
+  margin-top: 6px;
+}
+
+.XYkQM > .c0 {
+  margin-top: 6px;
+}
+
 <div
   className="c0 c1"
   color="primary"
@@ -54,6 +62,14 @@ exports[`Storyshots Small Within <P> 1`] = `
 
 .dUUMVe > *:nth-child(2) .c0 {
   margin-top: 5px;
+}
+
+.bwYail > .c0 {
+  margin-top: 6px;
+}
+
+.XYkQM > .c0 {
+  margin-top: 6px;
 }
 
 <div

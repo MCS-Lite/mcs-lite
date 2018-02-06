@@ -47,6 +47,14 @@ exports[`Storyshots LandingHeader NavItemBurger 1`] = `
   margin-top: 5px;
 }
 
+.bwYail > .c5 {
+  margin-top: 6px;
+}
+
+.XYkQM > .c5 {
+  margin-top: 6px;
+}
+
 .c0 {
   height: 50px;
 }
@@ -157,6 +165,14 @@ exports[`Storyshots LandingHeader NavItemDropdown 1`] = `
 
 .dUUMVe > *:nth-child(2) .c5 {
   margin-top: 5px;
+}
+
+.bwYail > .c5 {
+  margin-top: 6px;
+}
+
+.XYkQM > .c5 {
+  margin-top: 6px;
 }
 
 .c0 {
