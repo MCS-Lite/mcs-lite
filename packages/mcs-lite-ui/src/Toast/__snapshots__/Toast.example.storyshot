@@ -19,11 +19,11 @@ exports[`Storyshots Toast API 1`] = `
   margin-top: 5px;
 }
 
-.bwYail > .c3 {
+.hPkjML > .c3 {
   margin-top: 6px;
 }
 
-.XYkQM > .c3 {
+.dozHir > .c3 {
   margin-top: 6px;
 }
 
@@ -78,11 +78,11 @@ exports[`Storyshots Toast With kind props 1`] = `
   margin-top: 5px;
 }
 
-.bwYail > .c4 {
+.hPkjML > .c4 {
   margin-top: 6px;
 }
 
-.XYkQM > .c4 {
+.dozHir > .c4 {
   margin-top: 6px;
 }
 

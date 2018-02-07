@@ -5,7 +5,7 @@ import IconLoading from 'mcs-lite-icon/lib/IconLoading';
 import PropTypes from 'prop-types';
 import Dropzone from 'react-dnd-dropzone';
 import P from '../P';
-import Spin from '../Spin';
+import LoadingWrapper from './LoadingWrapper';
 import Container from './Container';
 import Image from './Image';
 
@@ -31,9 +31,9 @@ const ImageDropzone = ({
     render={({ canDrop }) => (
       <Container canDrop={canDrop} src={src} height={height}>
         {isLoading && (
-          <Spin>
-            <IconLoading size={18} />
-          </Spin>
+          <LoadingWrapper>
+            <IconLoading size={24} />
+          </LoadingWrapper>
         )}
 
         {!src && (

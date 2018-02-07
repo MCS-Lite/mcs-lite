@@ -33,26 +33,6 @@ exports[`Storyshots ImageDropzone API 1`] = `
   margin-top: 6px;
 }
 
-.c0 > .Spin-dthHZc {
-  position: absolute;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-end;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
-  align-items: flex-end;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  padding: 8px;
-}
-
 <div>
   <div
     className="c0"
@@ -107,26 +87,6 @@ exports[`Storyshots ImageDropzone With children 1`] = `
   margin-top: 6px;
 }
 
-.c0 > .Spin-dthHZc {
-  position: absolute;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-end;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
-  align-items: flex-end;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  padding: 8px;
-}
-
 <div>
   <div
     className="c0"
@@ -167,6 +127,31 @@ exports[`Storyshots ImageDropzone With isLoading 1`] = `
   margin-top: 5px;
 }
 
+.c1 {
+  position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  padding: 8px;
+  background-color: rgba(0,0,0,0.3);
+}
+
+.c1 > svg {
+  fill: #FAFAFA;
+}
+
 .c0 {
   position: relative;
   display: -webkit-box;
@@ -199,26 +184,6 @@ exports[`Storyshots ImageDropzone With isLoading 1`] = `
   margin-top: 6px;
 }
 
-.c0 > .c1 {
-  position: absolute;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-end;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
-  align-items: flex-end;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  padding: 8px;
-}
-
 <div>
   <div
     className="c0"
@@ -230,10 +195,10 @@ exports[`Storyshots ImageDropzone With isLoading 1`] = `
     >
       <svg
         fill="currentColor"
-        height={18}
+        height={24}
         preserveAspectRatio="xMidYMid meet"
         viewBox="0 0 24 24"
-        width={18}
+        width={24}
       >
         <path
           d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm0 18c-4.4 0-8-3.6-8-8s3.6-8 8-8 8 3.6 8 8-3.6 8-8 8z"
@@ -278,11 +243,10 @@ exports[`Storyshots ImageDropzone With src 1`] = `
   text-align: center;
   box-sizing: border-box;
   background-color: #FAFAFA;
-  border: 1px dashed #D1D2D3;
+  border: 1px solid #D1D2D3;
   border-radius: 3px;
   -webkit-transition: all cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   transition: all cubic-bezier(0.47,0,0.75,0.72) 0.3s;
-  border: 2px solid #D1D2D3;
   background-image: url("//img.mediatek.com/350/mtk.linkit/productBanner.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -291,26 +255,6 @@ exports[`Storyshots ImageDropzone With src 1`] = `
 
 .c0 > .P-gHPbqS {
   margin-top: 6px;
-}
-
-.c0 > .Spin-dthHZc {
-  position: absolute;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-end;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
-  align-items: flex-end;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  padding: 8px;
 }
 
 <div>
