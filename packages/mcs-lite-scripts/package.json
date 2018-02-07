@@ -1,6 +1,6 @@
 {
   "name": "mcs-lite-scripts",
-  "version": "0.3.16",
+  "version": "0.3.17",
   "description": "Shared scripts and CLI used by MCS Lite",
   "repository": "MCS-Lite/mcs-lite",
   "author": "Michael Hsu <evenchange4@gmail.com>",
@@ -9,7 +9,10 @@
     "email": "evenchange4@gmail.com"
   },
   "homepage": "https://github.com/MCS-Lite/mcs-lite#readme",
-  "files": ["lib", "bin"],
+  "files": [
+    "lib",
+    "bin"
+  ],
   "license": "MIT",
   "bin": {
     "exports-all": "bin/exports-all.js",
@@ -24,7 +27,7 @@
   },
   "dependencies": {
     "babel-core": "^6.26.0",
-    "babel-preset-mcs-lite": "^0.3.14",
+    "babel-preset-mcs-lite": "^0.3.15",
     "cheerio": "^1.0.0-rc.2",
     "glob": "^7.1.2",
     "lodash.camelcase": "^4.3.0",
@@ -36,6 +39,8 @@
     "babel-cli": "6.26.0"
   },
   "babel": {
-    "presets": ["mcs-lite"]
+    "presets": [
+      "mcs-lite"
+    ]
   }
 }
