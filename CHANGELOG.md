@@ -1,5 +1,17 @@
 # MCS Lite changelogs
 
+## Released (2018-02-07)
+
+#### :bug: Bug Fix
+
+* `mcs-lite-ui`
+  * [#560](https://github.com/MCS-Lite/mcs-lite/pull/560) fix(UI): label required star position & update ImageDropzone loading style. ([@evenchange4](https://github.com/evenchange4))
+
+#### Committers: 2
+
+* Michael Hsu ([evenchange4](https://github.com/evenchange4))
+* [renovate[bot]](https://github.com/apps/renovate)
+
 ## Released (2018-02-06)
 
 #### :rocket: New Feature
