@@ -50,12 +50,14 @@ storiesOf('Form', module)
         <br />
 
         <Fieldset>
-          <Label htmlFor="scene" required>
-            Scene name long label
-          </Label>
+          <div>
+            <Label htmlFor="scene2" required>
+              Scene name long label
+            </Label>
+          </div>
           <div>
             <Input
-              id="scene"
+              id="scene2"
               placeholder="input the scene name"
               kind="error"
               focus
