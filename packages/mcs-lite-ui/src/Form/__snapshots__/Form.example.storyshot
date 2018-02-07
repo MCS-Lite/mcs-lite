@@ -461,17 +461,19 @@ Array [
     className="c0"
     width={200}
   >
-    <label
-      className="c1"
-      htmlFor="scene"
-      required={true}
-    >
-      Scene name long label
-    </label>
+    <div>
+      <label
+        className="c1"
+        htmlFor="scene2"
+        required={true}
+      >
+        Scene name long label
+      </label>
+    </div>
     <div>
       <input
         className="c2"
-        id="scene"
+        id="scene2"
         kind="error"
         placeholder="input the scene name"
       />

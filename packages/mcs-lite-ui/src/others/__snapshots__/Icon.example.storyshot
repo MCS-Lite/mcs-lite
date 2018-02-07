@@ -34,11 +34,11 @@ exports[`Storyshots Icon [mcs-lite-icon] MorphReplace 1`] = `
 `;
 
 exports[`Storyshots Icon [mcs-lite-icon] Spin Icon 1`] = `
-.c1 {
+.c0 {
   box-sizing: border-box;
 }
 
-.c1 > * {
+.c0 > * {
   -webkit-transform-origin: center center;
   -ms-transform-origin: center center;
   transform-origin: center center;
@@ -46,48 +46,8 @@ exports[`Storyshots Icon [mcs-lite-icon] Spin Icon 1`] = `
   animation: iVXCSc 0.6s infinite cubic-bezier(0.41,0.01,0.58,1);
 }
 
-.bwYail > .c0 {
-  position: absolute;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-end;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
-  align-items: flex-end;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  padding: 8px;
-}
-
-.XYkQM > .c0 {
-  position: absolute;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-end;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
-  align-items: flex-end;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  padding: 8px;
-}
-
 <div
-  className="c0 c1"
+  className="c0"
 >
   <svg
     fill="currentColor"
