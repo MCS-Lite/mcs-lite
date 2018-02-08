@@ -1,5 +1,9 @@
 # MCS Lite changelogs
 
+## Released (2018-02-08)
+
+* feat(ui): add Popover & Tooltip components (#562)
+
 ## Released (2018-02-07)
 
 * babel-preset-mcs-lite: 0.3.14 => 0.3.15
