@@ -2,7 +2,21 @@
 
 ## Released (2018-02-08)
 
-* feat(ui): add Popover & Tooltip components (#562)
+* babel-preset-mcs-lite: 0.3.15 => 0.3.16
+* eslint-config-mcs-lite: 0.6.6 => 0.6.7
+* mcs-lite-admin-web: 0.2.8 => 0.2.9
+* mcs-lite-connect: 0.3.18 => 0.3.19
+* mcs-lite-design: 0.2.10 => 0.2.11
+* mcs-lite-icon: 0.3.17 => 0.3.18
+* mcs-lite-landing-web: 0.1.13 => 0.1.14 (private)
+* mcs-lite-mobile-web: 0.4.21 => 0.4.22
+* mcs-lite-scripts: 0.3.17 => 0.3.18
+* mcs-lite-theme: 0.3.15 => 0.3.16
+* mcs-lite-translation: 0.1.15 => 0.1.16
+* mcs-lite-ui: 0.6.3 => 0.6.4
+* react-intl-inject-hoc: 0.2.18 => 0.2.19
+
+- feat(ui): add Popover & Tooltip components (#562)
 
 ## Released (2018-02-07)
 
