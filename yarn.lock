@@ -9833,13 +9833,14 @@ react-motion@^0.5.2:
     prop-types "^15.5.8"
     raf "^3.1.0"
 
-react-overlay-pack@^1.0.2:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/react-overlay-pack/-/react-overlay-pack-1.0.3.tgz#bfbe210fde214f849d1996884d02822bfa6ba6ef"
+react-overlay-pack@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/react-overlay-pack/-/react-overlay-pack-1.0.5.tgz#dbdf0100f0159c1240c011fd19dece37feb92812"
   dependencies:
     dom-align "^1.6.7"
     prop-types "^15.6.0"
     raf-throttle "^2.0.3"
+    ramda "^0.25.0"
     rc-tween-one "^1.7.3"
     react-portal "^4.1.2"
 
