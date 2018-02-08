@@ -1,6 +1,6 @@
 {
   "name": "mcs-lite-icon",
-  "version": "0.3.17",
+  "version": "0.3.18",
   "description": "Convert SVG icon to React components",
   "repository": "MCS-Lite/mcs-lite",
   "author": "Michael Hsu <evenchange4@gmail.com>",
@@ -9,7 +9,9 @@
     "email": "evenchange4@gmail.com"
   },
   "homepage": "https://github.com/MCS-Lite/mcs-lite#readme",
-  "files": ["lib"],
+  "files": [
+    "lib"
+  ],
   "main": "lib/index.js",
   "scripts": {
     "clean": "rm -rf lib",
@@ -24,8 +26,8 @@
     "prop-types": "^15.6.0"
   },
   "devDependencies": {
-    "mcs-lite-design": "^0.2.10",
-    "mcs-lite-scripts": "^0.3.17"
+    "mcs-lite-design": "^0.2.11",
+    "mcs-lite-scripts": "^0.3.18"
   },
   "peerDependencies": {
     "react": "^15.0.0 || ^16.0.0"
