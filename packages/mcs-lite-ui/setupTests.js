@@ -40,3 +40,5 @@ jest.mock('react-overlay-pack/lib/Transition/index', () => 'mock-transition');
 // TODO: For svgr.macro (CRA mono jest problem)
 jest.mock('./src/ImageDropzone/Image', () => 'Image-svgr.macro');
 jest.mock('./src/Logo/MCS', () => 'MCS-svgr.macro');
+jest.mock('./src/Popover/Arrow', () => 'Arrow-svgr.macro');
+jest.mock('./src/Tooltip/Arrow', () => 'Arrow-svgr.macro');

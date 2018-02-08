@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="19px" height="22px" viewBox="-6 0 19 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>img_triangle</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M8,0 L9,0 L9,12 L8,12 L0,6 L8,0 Z" id="path-1"></path>
+        <filter x="-88.9%" y="-58.3%" width="277.8%" height="233.3%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.2 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="scene" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="img_triangle" transform="translate(5.000000, 4.000000)">
+            <g id="Combined-Shape">
+                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                <use fill="#FAFAFA" fill-rule="evenodd" xlink:href="#path-1"></use>
+                <path stroke="#D1D2D3" stroke-width="1" d="M8.16666667,0.5 L0.833333333,6 L8.16666667,11.5 L8.5,11.5 L8.5,0.5 L8.16666667,0.5 Z"></path>
+            </g>
+        </g>
+    </g>
+</svg>
