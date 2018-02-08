@@ -1,0 +1,209 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Popover With position 1`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-left: 300px;
+}
+
+.c0 > * {
+  margin-bottom: 30px;
+}
+
+<div
+  className="c0"
+>
+  <div
+    onClick={[Function]}
+    onKeyPress={[Function]}
+    role="button"
+    style={
+      Object {
+        "display": "inline-block",
+      }
+    }
+    tabIndex="0"
+  >
+    <div
+      style={
+        Object {
+          "backgroundColor": "skyblue",
+        }
+      }
+    >
+      RIGHT_CENTER
+    </div>
+  </div>
+  <div
+    onClick={[Function]}
+    onKeyPress={[Function]}
+    role="button"
+    style={
+      Object {
+        "display": "inline-block",
+      }
+    }
+    tabIndex="0"
+  >
+    <div
+      style={
+        Object {
+          "backgroundColor": "skyblue",
+        }
+      }
+    >
+      LEFT_CENTER
+    </div>
+  </div>
+  <div
+    onClick={[Function]}
+    onKeyPress={[Function]}
+    role="button"
+    style={
+      Object {
+        "display": "inline-block",
+      }
+    }
+    tabIndex="0"
+  >
+    <div
+      style={
+        Object {
+          "backgroundColor": "skyblue",
+        }
+      }
+    >
+      TOP_CENTER
+    </div>
+  </div>
+  <div
+    onClick={[Function]}
+    onKeyPress={[Function]}
+    role="button"
+    style={
+      Object {
+        "display": "inline-block",
+      }
+    }
+    tabIndex="0"
+  >
+    <div
+      style={
+        Object {
+          "backgroundColor": "skyblue",
+        }
+      }
+    >
+      TOP_RIGHT
+    </div>
+  </div>
+  <div
+    onClick={[Function]}
+    onKeyPress={[Function]}
+    role="button"
+    style={
+      Object {
+        "display": "inline-block",
+      }
+    }
+    tabIndex="0"
+  >
+    <div
+      style={
+        Object {
+          "backgroundColor": "skyblue",
+        }
+      }
+    >
+      TOP_LEFT
+    </div>
+  </div>
+  <div
+    onClick={[Function]}
+    onKeyPress={[Function]}
+    role="button"
+    style={
+      Object {
+        "display": "inline-block",
+      }
+    }
+    tabIndex="0"
+  >
+    <div
+      style={
+        Object {
+          "backgroundColor": "skyblue",
+        }
+      }
+    >
+      BOTTOM_CENTER
+    </div>
+  </div>
+  <div
+    onClick={[Function]}
+    onKeyPress={[Function]}
+    role="button"
+    style={
+      Object {
+        "display": "inline-block",
+      }
+    }
+    tabIndex="0"
+  >
+    <div
+      style={
+        Object {
+          "backgroundColor": "skyblue",
+        }
+      }
+    >
+      BOTTOM_RIGHT
+    </div>
+  </div>
+  <div
+    onClick={[Function]}
+    onKeyPress={[Function]}
+    role="button"
+    style={
+      Object {
+        "display": "inline-block",
+      }
+    }
+    tabIndex="0"
+  >
+    <div
+      style={
+        Object {
+          "backgroundColor": "skyblue",
+        }
+      }
+    >
+      BOTTOM_LEFT
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Popover default 1`] = `
+<div
+  onClick={[Function]}
+  onKeyPress={[Function]}
+  role="button"
+  style={
+    Object {
+      "display": "inline-block",
+    }
+  }
+  tabIndex="0"
+>
+  <div>
+    Click me
+  </div>
+</div>
+`;

@@ -51,7 +51,7 @@ import {
   BOTTOM_CENTER,
   BOTTOM_RIGHT,
   BOTTOM_LEFT,
-} from 'mcs-lite-ui/lib/Tooltip/position.config';
+} from 'mcs-lite-ui/lib/Popover/position.config';
 ~~~
 `,
       inline: true,
