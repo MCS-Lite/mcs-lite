@@ -39,7 +39,10 @@ exports[`Storyshots ImageDropzone API 1`] = `
     height={137}
     src={undefined}
   >
-    <Image-svgr.macro />
+    <Image-svgr.macro
+      height={50}
+      width={50}
+    />
   </div>
 </div>
 `;
@@ -93,7 +96,10 @@ exports[`Storyshots ImageDropzone With children 1`] = `
     height={137}
     src={undefined}
   >
-    <Image-svgr.macro />
+    <Image-svgr.macro
+      height={50}
+      width={50}
+    />
     <p
       className="c1 c2"
       color="grayDark"
@@ -209,7 +215,10 @@ exports[`Storyshots ImageDropzone With isLoading 1`] = `
         />
       </svg>
     </div>
-    <Image-svgr.macro />
+    <Image-svgr.macro
+      height={50}
+      width={50}
+    />
     <p
       className="c3 c4"
       color="grayDark"

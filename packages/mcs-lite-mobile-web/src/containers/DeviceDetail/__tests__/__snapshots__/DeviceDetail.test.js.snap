@@ -137,6 +137,7 @@ exports[`should renders <DeviceDetail> correctly when Menu show 1`] = `
                   to={[Function]}
               >
                   <MenuItem
+                      active={false}
                       component="div"
                   >
                       deviceIntro

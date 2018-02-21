@@ -11,7 +11,6 @@ type Props = {
 const Image: React.ComponentType<Props> = toReactComponent('./svg/image.svg', {
   title: false,
 });
-
 Image.displayName = 'Image';
 Image.propTypes = {
   width: PropTypes.number,

@@ -82,6 +82,7 @@
     "react-svg-morph": "^0.1.10",
     "react-syntax-highlighter": "^7.0.0",
     "react-text-truncate": "^0.12.1",
+    "react-virtualized": "^9.18.5",
     "react-waypoint": "^8.0.0",
     "recharts": "^1.0.0-beta.10",
     "recompose": "^0.26.0",
