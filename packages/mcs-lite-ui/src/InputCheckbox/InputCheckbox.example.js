@@ -8,7 +8,7 @@ import Checkbox from '../Checkbox';
 
 class StatefulInputCheckbox extends React.Component<any, { value: boolean }> {
   state = { value: true };
-  onChange = () => this.setState(({ value }) => ({ value: !value }));
+  onChange = (value: boolean) => this.setState(() => ({ value }));
   render() {
     const { value } = this.state;
     const { onChange } = this;
