@@ -37,7 +37,7 @@ type Props = {
   noRowsRenderer?: ({ onClose: () => void }) => React.Node,
   disableFilter?: boolean,
   // Note: innerRef for the problem of outside click in dialog
-  innerRef?: (ref: React.ElementRef<typeof StyledMenu>) => void,
+  menuRef?: (ref: React.ElementRef<typeof StyledMenu>) => void,
 };
 
 class PureInputSelect extends React.Component<
@@ -119,7 +119,7 @@ class PureInputSelect extends React.Component<
       value,
       noRowsRenderer,
       focus,
-      innerRef,
+      menuRef,
       disableFilter,
       ...otherProps
     } = this.props;
@@ -175,7 +175,7 @@ class PureInputSelect extends React.Component<
               animation: { translateY: 0, ease: 'easeOutQuart', duration: 350 }, // To
             }}
           >
-            <StyledMenu key="menu" ref={innerRef}>
+            <StyledMenu key="menu" innerRef={menuRef}>
               {R.isEmpty(filteredItems) &&
                 noRowsRenderer &&
                 noRowsRenderer({ onClose })}
@@ -186,6 +186,7 @@ class PureInputSelect extends React.Component<
                 rowHeight={menuItemHeight}
                 rowRenderer={rowRenderer}
                 scrollToIndex={activeIndex}
+                style={{ willChange: 'unset' }} // TODO: disabled for scrolling problem
               />
             </StyledMenu>
           </Overlay>
@@ -211,7 +212,7 @@ InputSelect.propTypes = {
   noRowsRenderer: PropTypes.func,
   focus: PropTypes.bool,
   disableFilter: PropTypes.bool,
-  innerRef: PropTypes.func,
+  menuRef: PropTypes.func,
 };
 
 export default InputSelect;
