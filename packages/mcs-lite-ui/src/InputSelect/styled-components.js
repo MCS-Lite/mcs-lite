@@ -1,6 +1,6 @@
 // @flow
 import * as React from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import InputGroup from 'mcs-lite-ui/lib/InputGroup/InputGroup';
 import Input from 'mcs-lite-ui/lib/Input/Input';
 import Button from 'mcs-lite-ui/lib/Button/Button';
@@ -19,6 +19,14 @@ export const StyledMenu = styled(Menu)`
 
 export const StyledInputGroup = styled(InputGroup)`
   position: relative;
+
+  > * {
+    ${props =>
+      props.disableFilter &&
+      css`
+        cursor: pointer;
+      `};
+  }
 `;
 
 export const StyledButton: React.ComponentType<{

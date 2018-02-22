@@ -1,5 +1,6 @@
 // @flow
 import * as React from 'react';
+import * as R from 'ramda';
 import { storiesOf } from '@storybook/react';
 import { withInfo } from '@storybook/addon-info';
 import { action } from '@storybook/addon-actions';
@@ -42,7 +43,7 @@ storiesOf('InputSelect', module)
   .add(
     'API',
     withInfo({
-      text: 'with placeholder',
+      text: 'With placeholder props',
       inline: true,
     })(() => (
       <div style={{ width: 500 }}>
@@ -58,7 +59,7 @@ storiesOf('InputSelect', module)
   .add(
     'Controlled API',
     withInfo({
-      text: 'with value',
+      text: 'With value',
       inline: true,
     })(() => (
       <div style={{ width: 500 }}>
@@ -147,6 +148,34 @@ storiesOf('InputSelect', module)
             <button onClick={onClose}>Click</button>
           </div>
         )}
+      />
+    )),
+  )
+  .add(
+    'With 150 items',
+    withInfo({
+      text: '',
+      inline: true,
+    })(() => (
+      <InputSelect
+        value={71}
+        onChange={action('onChange')}
+        items={R.range(1, 150).map(value => ({
+          value,
+          children: `item ${value}`,
+        }))}
+      />
+    )),
+  )
+  .add(
+    'With disableFilter props',
+    withInfo({
+      text: '',
+      inline: true,
+    })(() => (
+      <StatefulInputSelect
+        placeholder="or filter by device name"
+        disableFilter
       />
     )),
   );

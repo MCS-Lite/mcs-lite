@@ -28,6 +28,7 @@ export const StyledSelect = styled.select`
   font-size: ${props => props.theme.fontSize.p};
   color: ${props => props.theme.color.black};
   appearance: none;
+  cursor: pointer;
 `;
 
 export const StyledButton = styled(Button)`
@@ -51,6 +52,7 @@ class Select extends React.Component {
           .isRequired,
       }),
     ).isRequired,
+    focus: PropTypes.bool,
   };
   static defaultProps = {
     kind: 'primary',
@@ -65,7 +67,14 @@ class Select extends React.Component {
     );
   render() {
     const { isOpen } = this.state;
-    const { items, kind, value, placeholder, ...otherProps } = this.props;
+    const {
+      focus,
+      items,
+      kind,
+      value,
+      placeholder,
+      ...otherProps
+    } = this.props;
     const { onFocus, onBlur, valueMapper } = this;
     return (
       <Wrapper>
@@ -75,9 +84,9 @@ class Select extends React.Component {
             value={valueMapper(value)}
             placeholder={placeholder}
             readOnly
-            focus={isOpen}
+            focus={focus || isOpen}
           />
-          <StyledButton kind={kind} active={isOpen} square>
+          <StyledButton kind={kind} active={focus || isOpen} square>
             <IconFold />
           </StyledButton>
         </StyledInputGroup>

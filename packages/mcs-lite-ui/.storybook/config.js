@@ -19,10 +19,10 @@ setOptions({
   name: 'MCS Lite',
   url: 'https://github.com/MCS-Lite/mcs-lite',
   goFullScreen: false,
-  showLeftPanel: true,
-  showDownPanel: false,
+  showStoriesPanel: true,
+  showAddonPanel: false,
   showSearchBox: false,
-  downPanelInRight: false,
+  addonPanelInRight: false,
   sortStoriesByKind: true,
   sidebarAnimations: false,
 });

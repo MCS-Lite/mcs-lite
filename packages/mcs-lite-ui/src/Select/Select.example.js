@@ -63,4 +63,21 @@ storiesOf('Select', module)
       inline: true,
       propTables: [Select],
     })(() => <StatefulSelect />),
+  )
+  .add(
+    'With focus props',
+    withInfo({
+      text: '',
+      inline: true,
+    })(() => (
+      <Select
+        value={2}
+        readOnly
+        focus
+        items={[
+          { value: 1, children: 'value 1' },
+          { value: 2, children: 'value 2' },
+        ]}
+      />
+    )),
   );

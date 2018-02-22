@@ -136,6 +136,7 @@ exports[`Storyshots InputSelect API 1`] = `
         onChange={[Function]}
         onFocus={[Function]}
         placeholder="or filter by device name"
+        readOnly={false}
         value="item name 1"
       />
       <button
@@ -294,7 +295,8 @@ exports[`Storyshots InputSelect Controlled API 1`] = `
         kind="primary"
         onChange={[Function]}
         onFocus={[Function]}
-        placeholder={undefined}
+        placeholder=""
+        readOnly={false}
         value="children 11"
       />
       <button
@@ -314,6 +316,158 @@ exports[`Storyshots InputSelect Controlled API 1`] = `
         </svg>
       </button>
     </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots InputSelect With 150 items 1`] = `
+.c2 {
+  box-sizing: border-box;
+  width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 3px;
+  outline: 0;
+  padding: 0 10px;
+  line-height: 1;
+  min-height: 32px;
+  color: #353630;
+  font-size: 1rem;
+  border-color: #D1D2D3;
+  box-shadow: none;
+}
+
+.c2:focus {
+  border-color: #00A1DE;
+  box-shadow: 0 0 3px 0 rgba(0,161,222,0.5);
+}
+
+.c2::-webkit-input-placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c2::-moz-placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c2:-ms-input-placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c2::placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c1 > button {
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.c1 > *:first-child {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.c1 > *:not(:first-child):not(:last-child) {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.c1 > *:last-child {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.c4 {
+  border-width: 1px;
+  border-style: solid;
+  outline: none;
+  box-sizing: border-box;
+  -webkit-transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  line-height: 0;
+  cursor: pointer;
+  background-color: #00A1DE;
+  color: #FFFFFF;
+  border-radius: 3px;
+  width: 32px;
+  min-width: initial;
+  height: 32px;
+  padding: 0;
+  font-size: 1rem;
+  border-color: rgb(0,130,179);
+}
+
+.c4:hover {
+  background-color: rgb(0,151,208);
+}
+
+.c4:active {
+  background-color: rgb(0,144,198);
+}
+
+.c0 {
+  position: relative;
+}
+
+.c3 {
+  font-size: 18px;
+}
+
+.c3 svg {
+  fill: #FFFFFF;
+  -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.68,-0.55,0.27,1.55);
+  -webkit-transition: transform 0.4s cubic-bezier(0.68,-0.55,0.27,1.55);
+  transition: transform 0.4s cubic-bezier(0.68,-0.55,0.27,1.55);
+  -webkit-transform: initial;
+  -ms-transform: initial;
+  transform: initial;
+}
+
+<div>
+  <div
+    className="c0 c1"
+    onClick={[Function]}
+  >
+    <input
+      className="c2"
+      kind="primary"
+      onChange={[Function]}
+      onFocus={[Function]}
+      placeholder=""
+      readOnly={false}
+      value="item 71"
+    />
+    <button
+      className="c3 c4"
+      onClick={[Function]}
+    >
+      <svg
+        fill="currentColor"
+        height="1em"
+        preserveAspectRatio="xMidYMid meet"
+        viewBox="0 0 24 24"
+        width="1em"
+      >
+        <path
+          d="M7.4 9.8l4.6 4.6 4.6-4.6 1.4 1.4-6 6-6-6 1.4-1.4z"
+        />
+      </svg>
+    </button>
   </div>
 </div>
 `;
@@ -448,6 +602,163 @@ exports[`Storyshots InputSelect With autoFocus props 1`] = `
       onChange={[Function]}
       onFocus={[Function]}
       placeholder="or filter by device name"
+      readOnly={false}
+      value=""
+    />
+    <button
+      className="c3 c4"
+      onClick={[Function]}
+    >
+      <svg
+        fill="currentColor"
+        height="1em"
+        preserveAspectRatio="xMidYMid meet"
+        viewBox="0 0 24 24"
+        width="1em"
+      >
+        <path
+          d="M7.4 9.8l4.6 4.6 4.6-4.6 1.4 1.4-6 6-6-6 1.4-1.4z"
+        />
+      </svg>
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots InputSelect With disableFilter props 1`] = `
+.c2 {
+  box-sizing: border-box;
+  width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 3px;
+  outline: 0;
+  padding: 0 10px;
+  line-height: 1;
+  min-height: 32px;
+  color: #353630;
+  font-size: 1rem;
+  border-color: #D1D2D3;
+  box-shadow: none;
+}
+
+.c2:focus {
+  border-color: #00A1DE;
+  box-shadow: 0 0 3px 0 rgba(0,161,222,0.5);
+}
+
+.c2::-webkit-input-placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c2::-moz-placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c2:-ms-input-placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c2::placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c1 > button {
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.c1 > *:first-child {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.c1 > *:not(:first-child):not(:last-child) {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.c1 > *:last-child {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.c4 {
+  border-width: 1px;
+  border-style: solid;
+  outline: none;
+  box-sizing: border-box;
+  -webkit-transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  line-height: 0;
+  cursor: pointer;
+  background-color: #00A1DE;
+  color: #FFFFFF;
+  border-radius: 3px;
+  width: 32px;
+  min-width: initial;
+  height: 32px;
+  padding: 0;
+  font-size: 1rem;
+  border-color: rgb(0,130,179);
+}
+
+.c4:hover {
+  background-color: rgb(0,151,208);
+}
+
+.c4:active {
+  background-color: rgb(0,144,198);
+}
+
+.c0 {
+  position: relative;
+}
+
+.c0 > * {
+  cursor: pointer;
+}
+
+.c3 {
+  font-size: 18px;
+}
+
+.c3 svg {
+  fill: #FFFFFF;
+  -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.68,-0.55,0.27,1.55);
+  -webkit-transition: transform 0.4s cubic-bezier(0.68,-0.55,0.27,1.55);
+  transition: transform 0.4s cubic-bezier(0.68,-0.55,0.27,1.55);
+  -webkit-transform: initial;
+  -ms-transform: initial;
+  transform: initial;
+}
+
+<div>
+  <div
+    className="c0 c1"
+    onClick={[Function]}
+  >
+    <input
+      className="c2"
+      kind="primary"
+      onChange={[Function]}
+      onFocus={[Function]}
+      placeholder="or filter by device name"
+      readOnly={true}
       value=""
     />
     <button
@@ -551,7 +862,7 @@ exports[`Storyshots InputSelect With focus props 1`] = `
   transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   line-height: 0;
   cursor: pointer;
-  background-color: #F5364E;
+  background-color: rgb(219,48,70);
   color: #FFFFFF;
   border-radius: 3px;
   width: 32px;
@@ -583,9 +894,9 @@ exports[`Storyshots InputSelect With focus props 1`] = `
   -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.68,-0.55,0.27,1.55);
   -webkit-transition: transform 0.4s cubic-bezier(0.68,-0.55,0.27,1.55);
   transition: transform 0.4s cubic-bezier(0.68,-0.55,0.27,1.55);
-  -webkit-transform: initial;
-  -ms-transform: initial;
-  transform: initial;
+  -webkit-transform: rotate(-180deg);
+  -ms-transform: rotate(-180deg);
+  transform: rotate(-180deg);
 }
 
 <div>
@@ -599,6 +910,7 @@ exports[`Storyshots InputSelect With focus props 1`] = `
       onChange={[Function]}
       onFocus={[Function]}
       placeholder="or filter by device name"
+      readOnly={false}
       value=""
     />
     <button
@@ -750,6 +1062,7 @@ exports[`Storyshots InputSelect With kind props 1`] = `
       onChange={[Function]}
       onFocus={[Function]}
       placeholder="or filter by device name"
+      readOnly={false}
       value=""
     />
     <button
@@ -901,6 +1214,7 @@ exports[`Storyshots InputSelect With noRowsRenderer props 1`] = `
       onChange={[Function]}
       onFocus={[Function]}
       placeholder="or filter by device name"
+      readOnly={false}
       value=""
     />
     <button
@@ -1052,6 +1366,7 @@ exports[`Storyshots InputSelect With state 1`] = `
       onChange={[Function]}
       onFocus={[Function]}
       placeholder="or filter by device name"
+      readOnly={false}
       value=""
     />
     <button

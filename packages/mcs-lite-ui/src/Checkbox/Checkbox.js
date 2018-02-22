@@ -30,7 +30,7 @@ Checkbox.propTypes = {
   value: PropTypes.any,
   size: PropTypes.number,
   kind: PropTypes.string,
-  render: PropTypes.oneOfType([PropTypes.node, PropTypes.func]), // (value: any) => React.Node,
+  render: PropTypes.func, // (value: any) => React.Node,
 };
 
 export default Checkbox;

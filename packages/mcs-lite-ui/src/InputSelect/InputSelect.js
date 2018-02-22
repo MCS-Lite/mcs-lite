@@ -19,8 +19,13 @@ import {
   FakeInputValue,
 } from './styled-components';
 import { type Value, type ItemProps } from './type.flow';
-
-export const MAX_HEIGHT = 155;
+import {
+  filterByChildren,
+  getInputValue,
+  getPlaceholder,
+  getMenuItemHeight,
+  getMenuHeight,
+} from './utils';
 
 type Props = {
   value: Value,
@@ -30,12 +35,13 @@ type Props = {
   placeholder?: string,
   focus?: boolean,
   noRowsRenderer?: ({ onClose: () => void }) => React.Node,
+  disableFilter?: boolean,
   // Note: innerRef for the problem of outside click in dialog
   innerRef?: (ref: React.ElementRef<typeof StyledMenu>) => void,
 };
 
 class PureInputSelect extends React.Component<
-  Props & { theme: any },
+  Props & { theme: Object },
   {
     isOpen: boolean,
     target: React.ElementRef<any>,
@@ -46,6 +52,7 @@ class PureInputSelect extends React.Component<
   static defaultProps = {
     kind: 'primary',
     noRowsRenderer: () => <NoRowWrapper>No results found</NoRowWrapper>,
+    disableFilter: false,
   };
   state = { isOpen: false, target: null, filter: '', width: 0 };
   componentDidMount() {
@@ -56,9 +63,7 @@ class PureInputSelect extends React.Component<
     window.removeEventListener('resize', this.resize);
     if (this.resize && this.resize.cancel) this.resize.cancel();
   }
-  onRef = (target: React.ElementRef<any>) => {
-    this.setState(() => ({ target }));
-  };
+  onRef = (target: React.ElementRef<any>) => this.setState(() => ({ target }));
   onOpen = () => this.setState(() => ({ isOpen: true }));
   onClose = () => this.setState(() => ({ isOpen: false }));
   onFilterChange = (e: any) => {
@@ -74,14 +79,20 @@ class PureInputSelect extends React.Component<
 
     this.setState(() => ({ width: parseInt(width, 10) }));
   });
-  rowRenderer = ({ key, index, style }) => {
+  rowRenderer = ({
+    key,
+    index,
+    style,
+  }: {
+    key: string,
+    index: number,
+    style: Object,
+  }): React.Element<typeof MenuItem> => {
     const { items, value, onChange } = this.props;
     const { filter } = this.state;
     const { onClose } = this;
-    const filteredItems = items.filter(({ children }: ItemProps) =>
-      children.includes(filter),
-    );
-    const { value: itemValue, children } = filteredItems[index];
+    const filteredItems = filterByChildren(items, filter);
+    const { value: itemValue, children }: ItemProps = filteredItems[index];
     const onItemClick = () => {
       onChange(itemValue);
       this.setState(() => ({ filter: '' }));
@@ -109,31 +120,34 @@ class PureInputSelect extends React.Component<
       noRowsRenderer,
       focus,
       innerRef,
+      disableFilter,
       ...otherProps
     } = this.props;
     const { target, width, isOpen, filter } = this.state;
     const { onRef, onOpen, onClose, onFilterChange, rowRenderer } = this;
-    const menuItemHeight = parseInt(theme.height.normal.replace('px', ''), 10);
-    const filteredItems = items.filter(({ children }: ItemProps) =>
-      children.includes(filter),
-    );
-    const activeItem = R.find(R.propEq('value', value))(items);
-    const menuHeight =
-      filteredItems.length < 5
-        ? menuItemHeight * filteredItems.length
-        : MAX_HEIGHT;
+
+    const filteredItems = filterByChildren(items, filter);
+    const activeIndex = R.findIndex(R.propEq('value', value))(items);
+    const activeItem = items[activeIndex];
+    const menuItemHeight = getMenuItemHeight(theme);
+    const menuHeight = getMenuHeight({ filteredItems, menuItemHeight });
 
     return (
       <div>
         {/* Input filter */}
-        <StyledInputGroup onClick={onOpen} innerRef={onRef}>
+        <StyledInputGroup
+          onClick={onOpen}
+          innerRef={onRef}
+          disableFilter={disableFilter}
+        >
           <Input
             kind={kind}
             focus={focus || isOpen}
-            value={isOpen ? filter : (activeItem && activeItem.children) || ''}
+            value={getInputValue({ isOpen, filter, activeItem })}
             onChange={onFilterChange}
-            placeholder={isOpen && activeItem ? '' : placeholder}
+            placeholder={getPlaceholder({ isOpen, activeItem, placeholder })}
             onFocus={onOpen}
+            readOnly={disableFilter}
             {...R.omit(['onChange'])(otherProps)}
           />
           {isOpen &&
@@ -141,7 +155,7 @@ class PureInputSelect extends React.Component<
             !filter && <FakeInputValue defaultValue={activeItem.children} />}
           <StyledButton
             kind={kind}
-            active={isOpen}
+            active={focus || isOpen}
             square
             onClick={emptyFunction}
           >
@@ -162,7 +176,7 @@ class PureInputSelect extends React.Component<
             }}
           >
             <StyledMenu key="menu" ref={innerRef}>
-              {filteredItems.length === 0 &&
+              {R.isEmpty(filteredItems) &&
                 noRowsRenderer &&
                 noRowsRenderer({ onClose })}
               <List
@@ -171,7 +185,7 @@ class PureInputSelect extends React.Component<
                 rowCount={filteredItems.length}
                 rowHeight={menuItemHeight}
                 rowRenderer={rowRenderer}
-                scrollToIndex={activeItem ? activeItem.value : undefined}
+                scrollToIndex={activeIndex}
               />
             </StyledMenu>
           </Overlay>
@@ -194,8 +208,9 @@ InputSelect.propTypes = {
   ).isRequired,
   kind: PropTypes.string,
   placeholder: PropTypes.string,
-  noRowsRenderer: PropTypes.oneOfType([PropTypes.node, PropTypes.func]),
+  noRowsRenderer: PropTypes.func,
   focus: PropTypes.bool,
+  disableFilter: PropTypes.bool,
   innerRef: PropTypes.func,
 };
 
