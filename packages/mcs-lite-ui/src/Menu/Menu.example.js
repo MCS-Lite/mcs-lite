@@ -21,10 +21,11 @@ storiesOf('Menu', module)
       text: '',
       inline: true,
     })(() => (
-      <div>
+      <React.Fragment>
         <MenuItem>div tag (default)</MenuItem>
+        <MenuItem active>div tag (active)</MenuItem>
         <MenuItem component="a">a Tag</MenuItem>
-      </div>
+      </React.Fragment>
     )),
   )
   .add(

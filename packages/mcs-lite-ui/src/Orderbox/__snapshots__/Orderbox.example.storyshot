@@ -1,0 +1,664 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Orderbox API 1`] = `
+.c2 {
+  line-height: 1em;
+  font-size: 12px;
+  border-radius: 2px;
+  width: 18px;
+  height: 18px;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  -webkit-transition: background-color 0.5s cubic-bezier(0.23,1,0.32,1),border 0.3s cubic-bezier(0.23,1,0.32,1);
+  transition: background-color 0.5s cubic-bezier(0.23,1,0.32,1),border 0.3s cubic-bezier(0.23,1,0.32,1);
+  color: #FFFFFF;
+  background-color: #00A1DE;
+  border: 1px solid rgb(0,130,179);
+}
+
+.c0 {
+  line-height: 1em;
+  font-size: 12px;
+  border-radius: 2px;
+  width: 18px;
+  height: 18px;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  -webkit-transition: background-color 0.5s cubic-bezier(0.23,1,0.32,1),border 0.3s cubic-bezier(0.23,1,0.32,1);
+  transition: background-color 0.5s cubic-bezier(0.23,1,0.32,1),border 0.3s cubic-bezier(0.23,1,0.32,1);
+  color: transparent;
+  background-color: #FFFFFF;
+  border: 1px solid #D1D2D3;
+}
+
+.c3 {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.23,1,0.32,1);
+  -webkit-transition: transform 0.5s cubic-bezier(0.23,1,0.32,1);
+  transition: transform 0.5s cubic-bezier(0.23,1,0.32,1);
+}
+
+.c3 svg {
+  fill: currentColor;
+}
+
+.c1 {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.23,1,0.32,1);
+  -webkit-transition: transform 0.5s cubic-bezier(0.23,1,0.32,1);
+  transition: transform 0.5s cubic-bezier(0.23,1,0.32,1);
+}
+
+.c1 svg {
+  fill: currentColor;
+}
+
+<div
+  style={
+    Object {
+      "display": "flex",
+      "flexDirection": "column",
+    }
+  }
+>
+  <div
+    checked={false}
+    className="c0"
+    kind="primary"
+    size={18}
+  >
+    <div
+      checked={false}
+      className="c1"
+    />
+  </div>
+  <div
+    checked={true}
+    className="c2"
+    kind="primary"
+    size={18}
+  >
+    <div
+      checked={true}
+      className="c3"
+    >
+      0.1
+    </div>
+  </div>
+  <div
+    checked={false}
+    className="c0"
+    kind="primary"
+    size={18}
+  >
+    <div
+      checked={false}
+      className="c1"
+    />
+  </div>
+  <div
+    checked={true}
+    className="c2"
+    kind="primary"
+    size={18}
+  >
+    <div
+      checked={true}
+      className="c3"
+    >
+      1
+    </div>
+  </div>
+  <div
+    checked={true}
+    className="c2"
+    kind="primary"
+    size={18}
+  >
+    <div
+      checked={true}
+      className="c3"
+    >
+      2
+    </div>
+  </div>
+  <div
+    checked={true}
+    className="c2"
+    kind="primary"
+    size={18}
+  >
+    <div
+      checked={true}
+      className="c3"
+    >
+      3
+    </div>
+  </div>
+  <div
+    checked={true}
+    className="c2"
+    kind="primary"
+    size={18}
+  >
+    <div
+      checked={true}
+      className="c3"
+    >
+      4
+    </div>
+  </div>
+  <div
+    checked={true}
+    className="c2"
+    kind="primary"
+    size={18}
+  >
+    <div
+      checked={true}
+      className="c3"
+    >
+      5
+    </div>
+  </div>
+  <div
+    checked={true}
+    className="c2"
+    kind="primary"
+    size={18}
+  >
+    <div
+      checked={true}
+      className="c3"
+    >
+      6
+    </div>
+  </div>
+  <div
+    checked={true}
+    className="c2"
+    kind="primary"
+    size={18}
+  >
+    <div
+      checked={true}
+      className="c3"
+    >
+      7
+    </div>
+  </div>
+  <div
+    checked={true}
+    className="c2"
+    kind="primary"
+    size={18}
+  >
+    <div
+      checked={true}
+      className="c3"
+    >
+      8
+    </div>
+  </div>
+  <div
+    checked={true}
+    className="c2"
+    kind="primary"
+    size={18}
+  >
+    <div
+      checked={true}
+      className="c3"
+    >
+      9
+    </div>
+  </div>
+  <div
+    checked={true}
+    className="c2"
+    kind="primary"
+    size={18}
+  >
+    <div
+      checked={true}
+      className="c3"
+    >
+      10
+    </div>
+  </div>
+  <div
+    checked={true}
+    className="c2"
+    kind="primary"
+    size={18}
+  >
+    <div
+      checked={true}
+      className="c3"
+    >
+      50
+    </div>
+  </div>
+  <div
+    checked={true}
+    className="c2"
+    kind="primary"
+    size={18}
+  >
+    <div
+      checked={true}
+      className="c3"
+    >
+      99
+    </div>
+  </div>
+  <div
+    checked={true}
+    className="c2"
+    kind="primary"
+    size={18}
+  >
+    <div
+      checked={true}
+      className="c3"
+    >
+      100
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Orderbox With kind 1`] = `
+.c2 {
+  line-height: 1em;
+  font-size: 12px;
+  border-radius: 2px;
+  width: 18px;
+  height: 18px;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  -webkit-transition: background-color 0.5s cubic-bezier(0.23,1,0.32,1),border 0.3s cubic-bezier(0.23,1,0.32,1);
+  transition: background-color 0.5s cubic-bezier(0.23,1,0.32,1),border 0.3s cubic-bezier(0.23,1,0.32,1);
+  color: #FFFFFF;
+  background-color: #00A1DE;
+  border: 1px solid rgb(0,130,179);
+}
+
+.c0 {
+  line-height: 1em;
+  font-size: 12px;
+  border-radius: 2px;
+  width: 18px;
+  height: 18px;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  -webkit-transition: background-color 0.5s cubic-bezier(0.23,1,0.32,1),border 0.3s cubic-bezier(0.23,1,0.32,1);
+  transition: background-color 0.5s cubic-bezier(0.23,1,0.32,1),border 0.3s cubic-bezier(0.23,1,0.32,1);
+  color: #999A94;
+  background-color: #FAFAFA;
+  border: 1px solid rgb(202,202,202);
+}
+
+.c3 {
+  line-height: 1em;
+  font-size: 12px;
+  border-radius: 2px;
+  width: 18px;
+  height: 18px;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  -webkit-transition: background-color 0.5s cubic-bezier(0.23,1,0.32,1),border 0.3s cubic-bezier(0.23,1,0.32,1);
+  transition: background-color 0.5s cubic-bezier(0.23,1,0.32,1),border 0.3s cubic-bezier(0.23,1,0.32,1);
+  color: #FFFFFF;
+  background-color: #69BE28;
+  border: 1px solid rgb(85,153,32);
+}
+
+.c4 {
+  line-height: 1em;
+  font-size: 12px;
+  border-radius: 2px;
+  width: 18px;
+  height: 18px;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  -webkit-transition: background-color 0.5s cubic-bezier(0.23,1,0.32,1),border 0.3s cubic-bezier(0.23,1,0.32,1);
+  transition: background-color 0.5s cubic-bezier(0.23,1,0.32,1),border 0.3s cubic-bezier(0.23,1,0.32,1);
+  color: #FFFFFF;
+  background-color: #F5364E;
+  border: 1px solid rgb(198,44,63);
+}
+
+.c5 {
+  line-height: 1em;
+  font-size: 12px;
+  border-radius: 2px;
+  width: 18px;
+  height: 18px;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  -webkit-transition: background-color 0.5s cubic-bezier(0.23,1,0.32,1),border 0.3s cubic-bezier(0.23,1,0.32,1);
+  transition: background-color 0.5s cubic-bezier(0.23,1,0.32,1),border 0.3s cubic-bezier(0.23,1,0.32,1);
+  color: #FFFFFF;
+  background-color: #F39A1E;
+  border: 1px solid rgb(196,124,24);
+}
+
+.c1 {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.23,1,0.32,1);
+  -webkit-transition: transform 0.5s cubic-bezier(0.23,1,0.32,1);
+  transition: transform 0.5s cubic-bezier(0.23,1,0.32,1);
+}
+
+.c1 svg {
+  fill: currentColor;
+}
+
+<div
+  style={
+    Object {
+      "display": "flex",
+      "flexDirection": "column",
+    }
+  }
+>
+  <div
+    checked={true}
+    className="c0"
+    kind="default"
+    onClick={[Function]}
+    size={18}
+  >
+    <div
+      checked={true}
+      className="c1"
+    >
+      9
+    </div>
+  </div>
+   default
+  <div
+    checked={true}
+    className="c2"
+    kind="primary"
+    onClick={[Function]}
+    size={18}
+  >
+    <div
+      checked={true}
+      className="c1"
+    >
+      9
+    </div>
+  </div>
+   primary
+  <div
+    checked={true}
+    className="c3"
+    kind="success"
+    onClick={[Function]}
+    size={18}
+  >
+    <div
+      checked={true}
+      className="c1"
+    >
+      9
+    </div>
+  </div>
+   success
+  <div
+    checked={true}
+    className="c4"
+    kind="error"
+    onClick={[Function]}
+    size={18}
+  >
+    <div
+      checked={true}
+      className="c1"
+    >
+      9
+    </div>
+  </div>
+   error
+  <div
+    checked={true}
+    className="c5"
+    kind="warning"
+    onClick={[Function]}
+    size={18}
+  >
+    <div
+      checked={true}
+      className="c1"
+    >
+      9
+    </div>
+  </div>
+   warning
+</div>
+`;
+
+exports[`Storyshots Orderbox With size 1`] = `
+.c0 {
+  line-height: 1em;
+  font-size: 12px;
+  border-radius: 2px;
+  width: 24px;
+  height: 24px;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  -webkit-transition: background-color 0.5s cubic-bezier(0.23,1,0.32,1),border 0.3s cubic-bezier(0.23,1,0.32,1);
+  transition: background-color 0.5s cubic-bezier(0.23,1,0.32,1),border 0.3s cubic-bezier(0.23,1,0.32,1);
+  color: #FFFFFF;
+  background-color: #00A1DE;
+  border: 1px solid rgb(0,130,179);
+}
+
+.c1 {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.23,1,0.32,1);
+  -webkit-transition: transform 0.5s cubic-bezier(0.23,1,0.32,1);
+  transition: transform 0.5s cubic-bezier(0.23,1,0.32,1);
+}
+
+.c1 svg {
+  fill: currentColor;
+}
+
+<div
+  checked={true}
+  className="c0"
+  kind="primary"
+  onClick={[Function]}
+  size={24}
+  style={
+    Object {
+      "fontSize": 14,
+    }
+  }
+>
+  <div
+    checked={true}
+    className="c1"
+  >
+    9
+  </div>
+</div>
+`;
+
+exports[`Storyshots Orderbox With state 1`] = `
+.c0 {
+  line-height: 1em;
+  font-size: 12px;
+  border-radius: 2px;
+  width: 18px;
+  height: 18px;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  -webkit-transition: background-color 0.5s cubic-bezier(0.23,1,0.32,1),border 0.3s cubic-bezier(0.23,1,0.32,1);
+  transition: background-color 0.5s cubic-bezier(0.23,1,0.32,1),border 0.3s cubic-bezier(0.23,1,0.32,1);
+  color: #FFFFFF;
+  background-color: #00A1DE;
+  border: 1px solid rgb(0,130,179);
+}
+
+.c1 {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.23,1,0.32,1);
+  -webkit-transition: transform 0.5s cubic-bezier(0.23,1,0.32,1);
+  transition: transform 0.5s cubic-bezier(0.23,1,0.32,1);
+}
+
+.c1 svg {
+  fill: currentColor;
+}
+
+<div
+  checked={true}
+  className="c0"
+  kind="primary"
+  onClick={[Function]}
+  size={18}
+>
+  <div
+    checked={true}
+    className="c1"
+  >
+    9
+  </div>
+</div>
+`;

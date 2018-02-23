@@ -1,49 +1,33 @@
-import React from 'react';
+// @flow
+import * as React from 'react';
 import PropTypes from 'prop-types';
-import R from 'ramda';
-import styled from 'styled-components';
-import { IconFold } from 'mcs-lite-icon';
-import InputGroup from '../InputGroup';
+import * as R from 'ramda';
+import IconFold from 'mcs-lite-icon/lib/IconFold';
 import Input from '../Input';
-import Button from '../Button';
+import {
+  StyledInputGroup,
+  Wrapper,
+  StyledSelect,
+  StyledButton,
+} from './styled-components';
+import { type Value, type ItemProps } from './type.flow';
 
 const PLACEHOLDER_VALUE = 'SELECT/PLACEHOLDER_VALUE';
 
-export const StyledInputGroup = styled(InputGroup)`
-  position: absolute;
-  width: 100%;
-  pointer-events: none;
-`;
-
-export const Wrapper = styled.div`
-  position: relative;
-`;
-
-export const StyledSelect = styled.select`
-  width: 100%;
-  border: 0;
-  height: ${props => props.theme.height.normal};
-  background-color: ${props => props.theme.color.white};
-  outline: 0;
-  font-size: ${props => props.theme.fontSize.p};
-  color: ${props => props.theme.color.black};
-  appearance: none;
-`;
-
-export const StyledButton = styled(Button)`
-  font-size: 18px;
-
-  > * {
-    transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
-    transform: ${props => (props.active ? 'rotate(-180deg)' : 'initial')};
-  }
-`;
-
-class Select extends React.Component {
+class Select extends React.Component<
+  {
+    value: Value,
+    items: Array<ItemProps>,
+    focus?: boolean,
+    placeholder?: string,
+    kind?: string,
+  },
+  {
+    isOpen: boolean,
+  },
+> {
   static propTypes = {
-    kind: PropTypes.string,
     value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-    placeholder: PropTypes.string,
     items: PropTypes.arrayOf(
       PropTypes.shape({
         children: PropTypes.node.isRequired,
@@ -51,6 +35,9 @@ class Select extends React.Component {
           .isRequired,
       }),
     ).isRequired,
+    kind: PropTypes.string,
+    placeholder: PropTypes.string,
+    focus: PropTypes.bool,
   };
   static defaultProps = {
     kind: 'primary',
@@ -59,29 +46,40 @@ class Select extends React.Component {
   state = { isOpen: false };
   onFocus = () => this.setState({ isOpen: true });
   onBlur = () => this.setState({ isOpen: false });
-  valueMapper = value =>
-    R.pipe(R.find(R.propEq('value', value)), R.pathOr('', ['children']))(
-      this.props.items,
-    );
+  valueMapper = (value: Value) => {
+    const { items } = this.props;
+    const selectedItem = R.find(R.propEq('value', value))(items);
+    return (selectedItem && selectedItem.children) || '';
+  };
+  select: ?React.ElementRef<'select'>;
   render() {
     const { isOpen } = this.state;
-    const { items, kind, value, placeholder, ...otherProps } = this.props;
+    const {
+      focus,
+      items,
+      kind,
+      value,
+      placeholder,
+      ...otherProps
+    } = this.props;
     const { onFocus, onBlur, valueMapper } = this;
     return (
       <Wrapper>
+        {/* Fake input */}
         <StyledInputGroup>
           <Input
             kind={kind}
             value={valueMapper(value)}
             placeholder={placeholder}
             readOnly
-            focus={isOpen}
+            focus={focus || isOpen}
           />
-          <StyledButton kind={kind} active={isOpen} square>
+          <StyledButton kind={kind} active={focus || isOpen} square>
             <IconFold />
           </StyledButton>
         </StyledInputGroup>
 
+        {/* Real select */}
         <StyledSelect
           value={value || PLACEHOLDER_VALUE}
           {...otherProps}

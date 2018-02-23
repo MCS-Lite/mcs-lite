@@ -106,6 +106,19 @@ exports[`Storyshots Select API - ReadOnly 1`] = `
   pointer-events: none;
 }
 
+.c4 {
+  font-size: 18px;
+}
+
+.c4 > * {
+  -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.68,-0.55,0.27,1.55);
+  -webkit-transition: transform 0.4s cubic-bezier(0.68,-0.55,0.27,1.55);
+  transition: transform 0.4s cubic-bezier(0.68,-0.55,0.27,1.55);
+  -webkit-transform: initial;
+  -ms-transform: initial;
+  transform: initial;
+}
+
 .c0 {
   position: relative;
 }
@@ -121,19 +134,7 @@ exports[`Storyshots Select API - ReadOnly 1`] = `
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-}
-
-.c4 {
-  font-size: 18px;
-}
-
-.c4 > * {
-  -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.68,-0.55,0.27,1.55);
-  -webkit-transition: transform 0.4s cubic-bezier(0.68,-0.55,0.27,1.55);
-  transition: transform 0.4s cubic-bezier(0.68,-0.55,0.27,1.55);
-  -webkit-transform: initial;
-  -ms-transform: initial;
-  transform: initial;
+  cursor: pointer;
 }
 
 <div
@@ -292,6 +293,19 @@ exports[`Storyshots Select With disabled props 1`] = `
   pointer-events: none;
 }
 
+.c4 {
+  font-size: 18px;
+}
+
+.c4 > * {
+  -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.68,-0.55,0.27,1.55);
+  -webkit-transition: transform 0.4s cubic-bezier(0.68,-0.55,0.27,1.55);
+  transition: transform 0.4s cubic-bezier(0.68,-0.55,0.27,1.55);
+  -webkit-transform: initial;
+  -ms-transform: initial;
+  transform: initial;
+}
+
 .c0 {
   position: relative;
 }
@@ -307,19 +321,7 @@ exports[`Storyshots Select With disabled props 1`] = `
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-}
-
-.c4 {
-  font-size: 18px;
-}
-
-.c4 > * {
-  -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.68,-0.55,0.27,1.55);
-  -webkit-transition: transform 0.4s cubic-bezier(0.68,-0.55,0.27,1.55);
-  transition: transform 0.4s cubic-bezier(0.68,-0.55,0.27,1.55);
-  -webkit-transform: initial;
-  -ms-transform: initial;
-  transform: initial;
+  cursor: pointer;
 }
 
 <div
@@ -379,6 +381,193 @@ exports[`Storyshots Select With disabled props 1`] = `
       value={3}
     >
       value 3
+    </option>
+  </select>
+</div>
+`;
+
+exports[`Storyshots Select With focus props 1`] = `
+.c5 {
+  border-width: 1px;
+  border-style: solid;
+  outline: none;
+  box-sizing: border-box;
+  -webkit-transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  line-height: 0;
+  cursor: pointer;
+  background-color: rgb(0,144,198);
+  color: #FFFFFF;
+  border-radius: 3px;
+  width: 32px;
+  min-width: initial;
+  height: 32px;
+  padding: 0;
+  font-size: 1rem;
+  border-color: rgb(0,130,179);
+}
+
+.c5:hover {
+  background-color: rgb(0,151,208);
+}
+
+.c5:active {
+  background-color: rgb(0,144,198);
+}
+
+.c3 {
+  box-sizing: border-box;
+  width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 3px;
+  outline: 0;
+  padding: 0 10px;
+  line-height: 1;
+  min-height: 32px;
+  color: #353630;
+  font-size: 1rem;
+  border-color: #00A1DE;
+  box-shadow: 0 0 3px 0 rgba(0,161,222,0.5);
+}
+
+.c3:focus {
+  border-color: #00A1DE;
+  box-shadow: 0 0 3px 0 rgba(0,161,222,0.5);
+}
+
+.c3::-webkit-input-placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c3::-moz-placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c3:-ms-input-placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c3::placeholder {
+  opacity: 1;
+  color: #D1D2D3;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c2 > button {
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.c2 > *:first-child {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.c2 > *:not(:first-child):not(:last-child) {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.c2 > *:last-child {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.c1 {
+  position: absolute;
+  width: 100%;
+  pointer-events: none;
+}
+
+.c4 {
+  font-size: 18px;
+}
+
+.c4 > * {
+  -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.68,-0.55,0.27,1.55);
+  -webkit-transition: transform 0.4s cubic-bezier(0.68,-0.55,0.27,1.55);
+  transition: transform 0.4s cubic-bezier(0.68,-0.55,0.27,1.55);
+  -webkit-transform: rotate(-180deg);
+  -ms-transform: rotate(-180deg);
+  transform: rotate(-180deg);
+}
+
+.c0 {
+  position: relative;
+}
+
+.c6 {
+  width: 100%;
+  border: 0;
+  height: 32px;
+  background-color: #FFFFFF;
+  outline: 0;
+  font-size: 1rem;
+  color: #353630;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1 c2"
+  >
+    <input
+      className="c3"
+      kind="primary"
+      placeholder={undefined}
+      readOnly={true}
+      value="value 2"
+    />
+    <button
+      className="c4 c5"
+    >
+      <svg
+        fill="currentColor"
+        height="1em"
+        preserveAspectRatio="xMidYMid meet"
+        viewBox="0 0 24 24"
+        width="1em"
+      >
+        <path
+          d="M7.4 9.8l4.6 4.6 4.6-4.6 1.4 1.4-6 6-6-6 1.4-1.4z"
+        />
+      </svg>
+    </button>
+  </div>
+  <select
+    className="c6"
+    onBlur={[Function]}
+    onFocus={[Function]}
+    readOnly={true}
+    value={2}
+  >
+    <option
+      value={1}
+    >
+      value 1
+    </option>
+    <option
+      value={2}
+    >
+      value 2
     </option>
   </select>
 </div>
@@ -490,6 +679,19 @@ exports[`Storyshots Select With kind props 1`] = `
   pointer-events: none;
 }
 
+.c4 {
+  font-size: 18px;
+}
+
+.c4 > * {
+  -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.68,-0.55,0.27,1.55);
+  -webkit-transition: transform 0.4s cubic-bezier(0.68,-0.55,0.27,1.55);
+  transition: transform 0.4s cubic-bezier(0.68,-0.55,0.27,1.55);
+  -webkit-transform: initial;
+  -ms-transform: initial;
+  transform: initial;
+}
+
 .c0 {
   position: relative;
 }
@@ -505,19 +707,7 @@ exports[`Storyshots Select With kind props 1`] = `
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-}
-
-.c4 {
-  font-size: 18px;
-}
-
-.c4 > * {
-  -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.68,-0.55,0.27,1.55);
-  -webkit-transition: transform 0.4s cubic-bezier(0.68,-0.55,0.27,1.55);
-  transition: transform 0.4s cubic-bezier(0.68,-0.55,0.27,1.55);
-  -webkit-transform: initial;
-  -ms-transform: initial;
-  transform: initial;
+  cursor: pointer;
 }
 
 <div

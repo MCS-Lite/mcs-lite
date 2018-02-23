@@ -38,7 +38,7 @@ const Container: React.ComponentType<Props> = styled.div`
     `};
 
   > ${P} {
-    margin-top: 6px;
+    margin-top: 5px;
   }
 `;
 

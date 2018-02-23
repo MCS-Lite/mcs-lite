@@ -11,12 +11,12 @@ exports[`Storyshots P API 1`] = `
   margin-top: 5px;
 }
 
-.hPkjML > .c0 {
-  margin-top: 6px;
+.pYtWd > .c0 {
+  margin-top: 5px;
 }
 
-.dozHir > .c0 {
-  margin-top: 6px;
+.sQyKx > .c0 {
+  margin-top: 5px;
 }
 
 <p
@@ -37,12 +37,12 @@ exports[`Storyshots P Nested children with div 1`] = `
   margin-top: 5px;
 }
 
-.hPkjML > .c0 {
-  margin-top: 6px;
+.pYtWd > .c0 {
+  margin-top: 5px;
 }
 
-.dozHir > .c0 {
-  margin-top: 6px;
+.sQyKx > .c0 {
+  margin-top: 5px;
 }
 
 <div
@@ -115,12 +115,12 @@ exports[`Storyshots P With color props 1`] = `
   margin-top: 5px;
 }
 
-.hPkjML > .c0 {
-  margin-top: 6px;
+.pYtWd > .c0 {
+  margin-top: 5px;
 }
 
-.dozHir > .c0 {
-  margin-top: 6px;
+.sQyKx > .c0 {
+  margin-top: 5px;
 }
 
 <div>

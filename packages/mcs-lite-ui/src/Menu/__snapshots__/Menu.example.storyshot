@@ -28,7 +28,8 @@ exports[`Storyshots Menu API for Menu 1`] = `
 `;
 
 exports[`Storyshots Menu API for MenuItem 1`] = `
-.c0 {
+Array [
+  .c0 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -52,34 +53,124 @@ exports[`Storyshots Menu API for MenuItem 1`] = `
 
 .c0:hover {
   background-color: #00A1DE;
-  color: white;
+  color: #FFFFFF;
 }
 
 .c0:hover * {
-  color: white;
+  color: #FFFFFF;
 }
 
 .c0:active {
   background-color: rgb(0,151,208);
-  color: white;
+  color: #FFFFFF;
 }
 
 .c0:active * {
-  color: white;
+  color: #FFFFFF;
 }
 
-<div>
-  <div
+<div
     className="c0"
   >
     div tag (default)
-  </div>
-  <a
+  </div>,
+  .c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0 15px;
+  min-width: 80px;
+  cursor: pointer;
+  box-sizing: border-box;
+  color: #353630;
+  min-height: 32px;
+  background-color: transparent;
+  color: #00A1DE;
+}
+
+.c0 * {
+  -webkit-transition: initial;
+  transition: initial;
+}
+
+.c0:hover {
+  background-color: #00A1DE;
+  color: #FFFFFF;
+}
+
+.c0:hover * {
+  color: #FFFFFF;
+}
+
+.c0:active {
+  background-color: rgb(0,151,208);
+  color: #FFFFFF;
+}
+
+.c0:active * {
+  color: #FFFFFF;
+}
+
+.c0 * {
+  color: #00A1DE;
+}
+
+<div
+    className="c0"
+  >
+    div tag (active)
+  </div>,
+  .c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0 15px;
+  min-width: 80px;
+  cursor: pointer;
+  box-sizing: border-box;
+  color: #353630;
+  min-height: 32px;
+}
+
+.c0 * {
+  -webkit-transition: initial;
+  transition: initial;
+}
+
+.c0:hover {
+  background-color: #00A1DE;
+  color: #FFFFFF;
+}
+
+.c0:hover * {
+  color: #FFFFFF;
+}
+
+.c0:active {
+  background-color: rgb(0,151,208);
+  color: #FFFFFF;
+}
+
+.c0:active * {
+  color: #FFFFFF;
+}
+
+<a
     className="c0"
   >
     a Tag
-  </a>
-</div>
+  </a>,
+]
 `;
 
 exports[`Storyshots Menu Fixed width 1`] = `
@@ -134,12 +225,12 @@ exports[`Storyshots Menu Fixed width 1`] = `
   margin-top: 5px;
 }
 
-.hPkjML > .c5 {
-  margin-top: 6px;
+.pYtWd > .c5 {
+  margin-top: 5px;
 }
 
-.dozHir > .c5 {
-  margin-top: 6px;
+.sQyKx > .c5 {
+  margin-top: 5px;
 }
 
 .c3 {
@@ -166,20 +257,20 @@ exports[`Storyshots Menu Fixed width 1`] = `
 
 .c3:hover {
   background-color: #00A1DE;
-  color: white;
+  color: #FFFFFF;
 }
 
 .c3:hover * {
-  color: white;
+  color: #FFFFFF;
 }
 
 .c3:active {
   background-color: rgb(0,151,208);
-  color: white;
+  color: #FFFFFF;
 }
 
 .c3:active * {
-  color: white;
+  color: #FFFFFF;
 }
 
 .c1 {
@@ -322,20 +413,20 @@ exports[`Storyshots Menu Min width 1`] = `
 
 .c2:hover {
   background-color: #00A1DE;
-  color: white;
+  color: #FFFFFF;
 }
 
 .c2:hover * {
-  color: white;
+  color: #FFFFFF;
 }
 
 .c2:active {
   background-color: rgb(0,151,208);
-  color: white;
+  color: #FFFFFF;
 }
 
 .c2:active * {
-  color: white;
+  color: #FFFFFF;
 }
 
 .c0 {

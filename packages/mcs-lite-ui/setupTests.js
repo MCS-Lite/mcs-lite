@@ -42,3 +42,4 @@ jest.mock('./src/ImageDropzone/Image', () => 'Image-svgr.macro');
 jest.mock('./src/Logo/MCS', () => 'MCS-svgr.macro');
 jest.mock('./src/Popover/Arrow', () => 'Arrow-svgr.macro');
 jest.mock('./src/Tooltip/Arrow', () => 'Arrow-svgr.macro');
+jest.mock('./src/Checkbox/IconCheck', () => 'IconCheck.macro');

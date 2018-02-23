@@ -1,8 +1,8 @@
 /* eslint react/default-props-match-prop-types: 0 */
 // @flow
 import * as React from 'react';
-import IconLoading from 'mcs-lite-icon/lib/IconLoading';
 import PropTypes from 'prop-types';
+import IconLoading from 'mcs-lite-icon/lib/IconLoading';
 import Dropzone from 'react-dnd-dropzone';
 import P from '../P';
 import LoadingWrapper from './LoadingWrapper';
@@ -38,7 +38,7 @@ const ImageDropzone = ({
 
         {!src && (
           <React.Fragment>
-            <Image />
+            <Image width={50} height={50} />
             {children && <P color="grayDark">{children}</P>}
           </React.Fragment>
         )}
