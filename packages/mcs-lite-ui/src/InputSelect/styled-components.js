@@ -16,6 +16,9 @@ export const StyledMenu: React.ComponentType<{
   box-sizing: border-box;
   width: ${props => props.width}px;
 
+  /* TODO: I do not want to add z-index ... */
+  z-index: 1;
+
   /* Note: override react-virtualized style */
   * {
     outline: 0;
