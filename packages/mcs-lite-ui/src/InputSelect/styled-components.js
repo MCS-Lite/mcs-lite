@@ -6,10 +6,14 @@ import Input from 'mcs-lite-ui/lib/Input/Input';
 import Button from 'mcs-lite-ui/lib/Button/Button';
 import Menu from 'mcs-lite-ui/lib/Menu/Menu';
 
-export const StyledMenu = styled(Menu)`
+export const StyledMenu: React.ComponentType<{
+  width: number,
+}> = styled(Menu)`
   overflow-y: hidden;
   overflow-x: hidden;
   border: 1px solid ${props => props.theme.color.grayDark};
+  box-sizing: border-box;
+  width: ${props => props.width}px;
 
   /* Note: override react-virtualized style */
   * {

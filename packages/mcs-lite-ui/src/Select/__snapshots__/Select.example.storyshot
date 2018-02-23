@@ -106,6 +106,19 @@ exports[`Storyshots Select API - ReadOnly 1`] = `
   pointer-events: none;
 }
 
+.c4 {
+  font-size: 18px;
+}
+
+.c4 > * {
+  -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.68,-0.55,0.27,1.55);
+  -webkit-transition: transform 0.4s cubic-bezier(0.68,-0.55,0.27,1.55);
+  transition: transform 0.4s cubic-bezier(0.68,-0.55,0.27,1.55);
+  -webkit-transform: initial;
+  -ms-transform: initial;
+  transform: initial;
+}
+
 .c0 {
   position: relative;
 }
@@ -122,19 +135,6 @@ exports[`Storyshots Select API - ReadOnly 1`] = `
   -moz-appearance: none;
   appearance: none;
   cursor: pointer;
-}
-
-.c4 {
-  font-size: 18px;
-}
-
-.c4 > * {
-  -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.68,-0.55,0.27,1.55);
-  -webkit-transition: transform 0.4s cubic-bezier(0.68,-0.55,0.27,1.55);
-  transition: transform 0.4s cubic-bezier(0.68,-0.55,0.27,1.55);
-  -webkit-transform: initial;
-  -ms-transform: initial;
-  transform: initial;
 }
 
 <div
@@ -293,6 +293,19 @@ exports[`Storyshots Select With disabled props 1`] = `
   pointer-events: none;
 }
 
+.c4 {
+  font-size: 18px;
+}
+
+.c4 > * {
+  -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.68,-0.55,0.27,1.55);
+  -webkit-transition: transform 0.4s cubic-bezier(0.68,-0.55,0.27,1.55);
+  transition: transform 0.4s cubic-bezier(0.68,-0.55,0.27,1.55);
+  -webkit-transform: initial;
+  -ms-transform: initial;
+  transform: initial;
+}
+
 .c0 {
   position: relative;
 }
@@ -309,19 +322,6 @@ exports[`Storyshots Select With disabled props 1`] = `
   -moz-appearance: none;
   appearance: none;
   cursor: pointer;
-}
-
-.c4 {
-  font-size: 18px;
-}
-
-.c4 > * {
-  -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.68,-0.55,0.27,1.55);
-  -webkit-transition: transform 0.4s cubic-bezier(0.68,-0.55,0.27,1.55);
-  transition: transform 0.4s cubic-bezier(0.68,-0.55,0.27,1.55);
-  -webkit-transform: initial;
-  -ms-transform: initial;
-  transform: initial;
 }
 
 <div
@@ -492,6 +492,19 @@ exports[`Storyshots Select With focus props 1`] = `
   pointer-events: none;
 }
 
+.c4 {
+  font-size: 18px;
+}
+
+.c4 > * {
+  -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.68,-0.55,0.27,1.55);
+  -webkit-transition: transform 0.4s cubic-bezier(0.68,-0.55,0.27,1.55);
+  transition: transform 0.4s cubic-bezier(0.68,-0.55,0.27,1.55);
+  -webkit-transform: rotate(-180deg);
+  -ms-transform: rotate(-180deg);
+  transform: rotate(-180deg);
+}
+
 .c0 {
   position: relative;
 }
@@ -508,19 +521,6 @@ exports[`Storyshots Select With focus props 1`] = `
   -moz-appearance: none;
   appearance: none;
   cursor: pointer;
-}
-
-.c4 {
-  font-size: 18px;
-}
-
-.c4 > * {
-  -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.68,-0.55,0.27,1.55);
-  -webkit-transition: transform 0.4s cubic-bezier(0.68,-0.55,0.27,1.55);
-  transition: transform 0.4s cubic-bezier(0.68,-0.55,0.27,1.55);
-  -webkit-transform: rotate(-180deg);
-  -ms-transform: rotate(-180deg);
-  transform: rotate(-180deg);
 }
 
 <div
@@ -679,6 +679,19 @@ exports[`Storyshots Select With kind props 1`] = `
   pointer-events: none;
 }
 
+.c4 {
+  font-size: 18px;
+}
+
+.c4 > * {
+  -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.68,-0.55,0.27,1.55);
+  -webkit-transition: transform 0.4s cubic-bezier(0.68,-0.55,0.27,1.55);
+  transition: transform 0.4s cubic-bezier(0.68,-0.55,0.27,1.55);
+  -webkit-transform: initial;
+  -ms-transform: initial;
+  transform: initial;
+}
+
 .c0 {
   position: relative;
 }
@@ -695,19 +708,6 @@ exports[`Storyshots Select With kind props 1`] = `
   -moz-appearance: none;
   appearance: none;
   cursor: pointer;
-}
-
-.c4 {
-  font-size: 18px;
-}
-
-.c4 > * {
-  -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.68,-0.55,0.27,1.55);
-  -webkit-transition: transform 0.4s cubic-bezier(0.68,-0.55,0.27,1.55);
-  transition: transform 0.4s cubic-bezier(0.68,-0.55,0.27,1.55);
-  -webkit-transform: initial;
-  -ms-transform: initial;
-  transform: initial;
 }
 
 <div

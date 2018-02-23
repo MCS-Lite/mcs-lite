@@ -5,12 +5,12 @@ import PropTypes from 'prop-types';
 import * as R from 'ramda';
 import { withTheme } from 'styled-components';
 import List from 'react-virtualized/dist/commonjs/List/index';
+import AutoSizer from 'react-virtualized/dist/commonjs/AutoSizer/index';
 import Overlay from 'react-overlay-pack/lib/Overlay/index';
 import IconFold from 'mcs-lite-icon/lib/IconFold';
 import rafThrottle from 'raf-throttle';
 import Input from '../Input';
 import MenuItem from '../Menu/MenuItem';
-import emptyFunction from '../utils/emptyFunction';
 import {
   StyledMenu,
   StyledInputGroup,
@@ -46,7 +46,7 @@ class PureInputSelect extends React.Component<
     isOpen: boolean,
     target: React.ElementRef<any>,
     filter: string,
-    width: number,
+    menuWidth: number,
   },
 > {
   static defaultProps = {
@@ -54,7 +54,7 @@ class PureInputSelect extends React.Component<
     noRowsRenderer: () => <NoRowWrapper>No results found</NoRowWrapper>,
     disableFilter: false,
   };
-  state = { isOpen: false, target: null, filter: '', width: 0 };
+  state = { isOpen: false, target: null, filter: '', menuWidth: 0 };
   componentDidMount() {
     this.resize();
     window.addEventListener('resize', this.resize);
@@ -66,18 +66,22 @@ class PureInputSelect extends React.Component<
   onRef = (target: React.ElementRef<any>) => this.setState(() => ({ target }));
   onOpen = () => this.setState(() => ({ isOpen: true }));
   onClose = () => this.setState(() => ({ isOpen: false }));
+  onToggle = (e: any) => {
+    e.preventDefault();
+    this.setState(({ isOpen }) => ({ isOpen: !isOpen }));
+  };
   onFilterChange = (e: any) => {
     const { value } = e.target;
     this.setState(() => ({ filter: value }));
   };
   resize = rafThrottle(() => {
     const { target } = this.state;
-    const width =
+    const menuWidth =
       target &&
       target.getBoundingClientRect &&
       target.getBoundingClientRect().width;
 
-    this.setState(() => ({ width: parseInt(width, 10) }));
+    this.setState(() => ({ menuWidth: parseInt(menuWidth, 10) }));
   });
   rowRenderer = ({
     key,
@@ -123,8 +127,15 @@ class PureInputSelect extends React.Component<
       disableFilter,
       ...otherProps
     } = this.props;
-    const { target, width, isOpen, filter } = this.state;
-    const { onRef, onOpen, onClose, onFilterChange, rowRenderer } = this;
+    const { target, menuWidth, isOpen, filter } = this.state;
+    const {
+      onRef,
+      onOpen,
+      onClose,
+      onToggle,
+      onFilterChange,
+      rowRenderer,
+    } = this;
 
     const filteredItems = filterByChildren(items, filter);
     const activeIndex = R.findIndex(R.propEq('value', value))(items);
@@ -135,11 +146,7 @@ class PureInputSelect extends React.Component<
     return (
       <div>
         {/* Input filter */}
-        <StyledInputGroup
-          onClick={onOpen}
-          innerRef={onRef}
-          disableFilter={disableFilter}
-        >
+        <StyledInputGroup innerRef={onRef} disableFilter={disableFilter}>
           <Input
             kind={kind}
             focus={focus || isOpen}
@@ -148,6 +155,7 @@ class PureInputSelect extends React.Component<
             placeholder={getPlaceholder({ isOpen, activeItem, placeholder })}
             onFocus={onOpen}
             readOnly={disableFilter}
+            onClick={onOpen}
             {...R.omit(['onChange'])(otherProps)}
           />
           {isOpen &&
@@ -157,7 +165,7 @@ class PureInputSelect extends React.Component<
             kind={kind}
             active={focus || isOpen}
             square
-            onClick={emptyFunction}
+            onClick={onToggle}
           >
             <IconFold />
           </StyledButton>
@@ -175,19 +183,23 @@ class PureInputSelect extends React.Component<
               animation: { translateY: 0, ease: 'easeOutQuart', duration: 350 }, // To
             }}
           >
-            <StyledMenu key="menu" innerRef={menuRef}>
+            <StyledMenu key="menu" innerRef={menuRef} width={menuWidth}>
               {R.isEmpty(filteredItems) &&
                 noRowsRenderer &&
                 noRowsRenderer({ onClose })}
-              <List
-                width={width}
-                height={menuHeight}
-                rowCount={filteredItems.length}
-                rowHeight={menuItemHeight}
-                rowRenderer={rowRenderer}
-                scrollToIndex={activeIndex}
-                style={{ willChange: 'unset' }} // TODO: disabled for scrolling problem
-              />
+              <AutoSizer disableHeight>
+                {({ width }) => (
+                  <List
+                    width={width}
+                    height={menuHeight}
+                    rowCount={filteredItems.length}
+                    rowHeight={menuItemHeight}
+                    rowRenderer={rowRenderer}
+                    scrollToIndex={activeIndex}
+                    style={{ willChange: 'unset' }} // TODO: disabled for scrolling problem
+                  />
+                )}
+              </AutoSizer>
             </StyledMenu>
           </Overlay>
         )}

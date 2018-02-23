@@ -27,12 +27,12 @@ exports[`Storyshots Small With color 1`] = `
   margin-top: 5px;
 }
 
-.hPkjML > .c0 {
-  margin-top: 6px;
+.pYtWd > .c0 {
+  margin-top: 5px;
 }
 
-.dozHir > .c0 {
-  margin-top: 6px;
+.sQyKx > .c0 {
+  margin-top: 5px;
 }
 
 <div
@@ -64,12 +64,12 @@ exports[`Storyshots Small Within <P> 1`] = `
   margin-top: 5px;
 }
 
-.hPkjML > .c0 {
-  margin-top: 6px;
+.pYtWd > .c0 {
+  margin-top: 5px;
 }
 
-.dozHir > .c0 {
-  margin-top: 6px;
+.sQyKx > .c0 {
+  margin-top: 5px;
 }
 
 <div

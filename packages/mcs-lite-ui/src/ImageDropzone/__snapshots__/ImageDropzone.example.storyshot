@@ -30,7 +30,7 @@ exports[`Storyshots ImageDropzone API 1`] = `
 }
 
 .c0 > .P-gHPbqS {
-  margin-top: 6px;
+  margin-top: 5px;
 }
 
 <div>
@@ -87,7 +87,7 @@ exports[`Storyshots ImageDropzone With children 1`] = `
 }
 
 .c0 > .c1 {
-  margin-top: 6px;
+  margin-top: 5px;
 }
 
 <div>
@@ -187,7 +187,7 @@ exports[`Storyshots ImageDropzone With isLoading 1`] = `
 }
 
 .c0 > .c3 {
-  margin-top: 6px;
+  margin-top: 5px;
 }
 
 <div>
@@ -263,7 +263,7 @@ exports[`Storyshots ImageDropzone With src 1`] = `
 }
 
 .c0 > .P-gHPbqS {
-  margin-top: 6px;
+  margin-top: 5px;
 }
 
 <div>
