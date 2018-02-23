@@ -1,12 +1,15 @@
 /* global window */
+/* eslint react/no-find-dom-node: 0 */
 // @flow
 import * as React from 'react';
+import { findDOMNode } from 'react-dom';
 import PropTypes from 'prop-types';
 import * as R from 'ramda';
 import { withTheme } from 'styled-components';
 import List from 'react-virtualized/dist/commonjs/List/index';
 import AutoSizer from 'react-virtualized/dist/commonjs/AutoSizer/index';
-import Overlay from 'react-overlay-pack/lib/Overlay/index';
+import ClickOutside from 'react-overlay-pack/lib/ClickOutside/index';
+import Transition from 'react-overlay-pack/lib/Transition/index';
 import IconFold from 'mcs-lite-icon/lib/IconFold';
 import rafThrottle from 'raf-throttle';
 import Input from '../Input';
@@ -44,7 +47,6 @@ class PureInputSelect extends React.Component<
   Props & { theme: Object },
   {
     isOpen: boolean,
-    target: React.ElementRef<any>,
     filter: string,
     menuWidth: number,
   },
@@ -54,7 +56,7 @@ class PureInputSelect extends React.Component<
     noRowsRenderer: () => <NoRowWrapper>No results found</NoRowWrapper>,
     disableFilter: false,
   };
-  state = { isOpen: false, target: null, filter: '', menuWidth: 0 };
+  state = { isOpen: false, filter: '', menuWidth: 0 };
   componentDidMount() {
     this.resize();
     window.addEventListener('resize', this.resize);
@@ -63,9 +65,13 @@ class PureInputSelect extends React.Component<
     window.removeEventListener('resize', this.resize);
     if (this.resize && this.resize.cancel) this.resize.cancel();
   }
-  onRef = (target: React.ElementRef<any>) => this.setState(() => ({ target }));
   onOpen = () => this.setState(() => ({ isOpen: true }));
   onClose = () => this.setState(() => ({ isOpen: false }));
+  onClickOutside = (e: any) => {
+    const node = findDOMNode(this.input);
+    if (node && node.contains(e.target)) return; // Note: Omit input target.
+    this.onClose();
+  };
   onToggle = (e: any) => {
     e.preventDefault();
     this.setState(({ isOpen }) => ({ isOpen: !isOpen }));
@@ -74,12 +80,20 @@ class PureInputSelect extends React.Component<
     const { value } = e.target;
     this.setState(() => ({ filter: value }));
   };
+  onInputGroupRef = (instance: React.ElementRef<typeof StyledInputGroup>) => {
+    // Note: for dropdown width
+    this.inputGroup = instance;
+  };
+  onInputRef = (instance: React.ElementRef<typeof Input>) => {
+    // Note: for click outside
+    this.input = instance;
+  };
   resize = rafThrottle(() => {
-    const { target } = this.state;
+    const { inputGroup } = this;
     const menuWidth =
-      target &&
-      target.getBoundingClientRect &&
-      target.getBoundingClientRect().width;
+      inputGroup &&
+      inputGroup.getBoundingClientRect &&
+      inputGroup.getBoundingClientRect().width;
 
     this.setState(() => ({ menuWidth: parseInt(menuWidth, 10) }));
   });
@@ -114,6 +128,8 @@ class PureInputSelect extends React.Component<
       </MenuItem>
     );
   };
+  input: ?React.ElementRef<typeof Input>;
+  inputGroup: ?React.ElementRef<typeof StyledInputGroup>;
   render() {
     const {
       items,
@@ -127,14 +143,16 @@ class PureInputSelect extends React.Component<
       disableFilter,
       ...otherProps
     } = this.props;
-    const { target, menuWidth, isOpen, filter } = this.state;
+    const { menuWidth, isOpen, filter } = this.state;
     const {
-      onRef,
+      onInputGroupRef,
       onOpen,
       onClose,
       onToggle,
       onFilterChange,
       rowRenderer,
+      onInputRef,
+      onClickOutside,
     } = this;
 
     const filteredItems = filterByChildren(items, filter);
@@ -146,16 +164,20 @@ class PureInputSelect extends React.Component<
     return (
       <div>
         {/* Input filter */}
-        <StyledInputGroup innerRef={onRef} disableFilter={disableFilter}>
+        <StyledInputGroup
+          innerRef={onInputGroupRef}
+          disableFilter={disableFilter}
+        >
           <Input
+            ref={onInputRef}
             kind={kind}
             focus={focus || isOpen}
             value={getInputValue({ isOpen, filter, activeItem })}
             onChange={onFilterChange}
             placeholder={getPlaceholder({ isOpen, activeItem, placeholder })}
-            onFocus={onOpen}
             readOnly={disableFilter}
             onClick={onOpen}
+            onFocus={onOpen}
             {...R.omit(['onChange'])(otherProps)}
           />
           {isOpen &&
@@ -173,35 +195,31 @@ class PureInputSelect extends React.Component<
 
         {/* Dropdown overlay */}
         {isOpen && (
-          <Overlay
-            target={target}
-            onOutsideClick={onClose}
-            resize
-            alignConfig={{ points: ['tl', 'bl'], offset: [0, 5] }}
-            transitionConfig={{
-              style: { transform: 'translateY(-5px)' }, // From
-              animation: { translateY: 0, ease: 'easeOutQuart', duration: 350 }, // To
-            }}
-          >
-            <StyledMenu key="menu" innerRef={menuRef} width={menuWidth}>
-              {R.isEmpty(filteredItems) &&
-                noRowsRenderer &&
-                noRowsRenderer({ onClose })}
-              <AutoSizer disableHeight>
-                {({ width }) => (
-                  <List
-                    width={width}
-                    height={menuHeight}
-                    rowCount={filteredItems.length}
-                    rowHeight={menuItemHeight}
-                    rowRenderer={rowRenderer}
-                    scrollToIndex={activeIndex}
-                    style={{ willChange: 'unset' }} // TODO: disabled for scrolling problem
-                  />
-                )}
-              </AutoSizer>
-            </StyledMenu>
-          </Overlay>
+          <ClickOutside onClick={onClickOutside}>
+            <Transition
+              style={{ transform: 'translateY(0px)' }} // From
+              animation={{ translateY: 5, ease: 'easeOutQuart', duration: 350 }} // To
+              component={false}
+            >
+              <StyledMenu key="menu" innerRef={menuRef} width={menuWidth}>
+                {R.isEmpty(filteredItems) &&
+                  noRowsRenderer &&
+                  noRowsRenderer({ onClose })}
+                <AutoSizer disableHeight>
+                  {({ width }) => (
+                    <List
+                      width={width}
+                      height={menuHeight}
+                      rowCount={filteredItems.length}
+                      rowHeight={menuItemHeight}
+                      rowRenderer={rowRenderer}
+                      scrollToIndex={activeIndex}
+                    />
+                  )}
+                </AutoSizer>
+              </StyledMenu>
+            </Transition>
+          </ClickOutside>
         )}
       </div>
     );

@@ -8,7 +8,7 @@ import { StyledLabel } from './styled-components';
 class InputCheckbox extends React.Component<{
   value: boolean,
   onChange: (value: boolean) => Promise<void> | void,
-  children: React.Node,
+  children?: React.Node,
 }> {
   onChange = () => {
     const { onChange, value } = this.props;

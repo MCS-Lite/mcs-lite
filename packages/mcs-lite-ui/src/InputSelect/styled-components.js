@@ -9,6 +9,7 @@ import Menu from 'mcs-lite-ui/lib/Menu/Menu';
 export const StyledMenu: React.ComponentType<{
   width: number,
 }> = styled(Menu)`
+  position: absolute;
   overflow-y: hidden;
   overflow-x: hidden;
   border: 1px solid ${props => props.theme.color.grayDark};
@@ -49,7 +50,8 @@ export const NoRowWrapper = styled.div`
   height: ${props => props.theme.height.normal};
   display: flex;
   align-items: center;
-  padding-left: 15px;
+  padding: 0 15px;
+  color: ${props => props.theme.color.grayBase};
 `;
 
 export const FakeInputValue = styled(Input)`
@@ -58,6 +60,7 @@ export const FakeInputValue = styled(Input)`
   border: 1px solid transparent;
   user-select: none;
   pointer-events: none;
+  width: ${props => `calc(100% - ${props.theme.height.normal})`};
 
   &:focus {
     border: 1px solid transparent;

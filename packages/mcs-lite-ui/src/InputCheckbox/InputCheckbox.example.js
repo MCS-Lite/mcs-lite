@@ -42,6 +42,13 @@ storiesOf('InputCheckbox', module)
     )),
   )
   .add(
+    'Without children',
+    withInfo({
+      text: '',
+      inline: true,
+    })(() => <StatefulInputCheckbox />),
+  )
+  .add(
     'Pass props to Checkbox',
     withInfo({
       text: '',
