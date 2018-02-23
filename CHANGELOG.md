@@ -1,5 +1,16 @@
 # MCS Lite changelogs
 
+## Released (2018-02-23)
+
+#### :rocket: New Feature
+
+* `mcs-lite-mobile-web`, `mcs-lite-ui`
+  * [#574](https://github.com/MCS-Lite/mcs-lite/pull/574) feat(ui): add Checkbox, Orderbox, InputCheckbox, InputOrder and InputSelect. ([@evenchange4](https://github.com/evenchange4))
+
+#### Committers: 1
+
+* Michael Hsu ([evenchange4](https://github.com/evenchange4))
+
 ## Released (2018-02-08)
 
 * babel-preset-mcs-lite: 0.3.15 => 0.3.16
