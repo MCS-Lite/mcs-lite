@@ -72,9 +72,17 @@ exports[`Storyshots Select API - ReadOnly 1`] = `
 
 .c4 {
   font-size: 18px;
+  color: #FFFFFF;
 }
 
-.c4 > * {
+.c6 {
+  line-height: 0;
+}
+
+.c6 > * {
+  -webkit-transform-origin: center;
+  -ms-transform-origin: center;
+  transform-origin: center;
   -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.68,-0.55,0.27,1.55);
   -webkit-transition: transform 0.4s cubic-bezier(0.68,-0.55,0.27,1.55);
   transition: transform 0.4s cubic-bezier(0.68,-0.55,0.27,1.55);
@@ -123,7 +131,7 @@ exports[`Storyshots Select API - ReadOnly 1`] = `
   position: relative;
 }
 
-.c6 {
+.c7 {
   width: 100%;
   border: 0;
   height: 32px;
@@ -153,21 +161,25 @@ exports[`Storyshots Select API - ReadOnly 1`] = `
     <button
       className="c4 c5"
     >
-      <svg
-        fill="currentColor"
-        height="1em"
-        preserveAspectRatio="xMidYMid meet"
-        viewBox="0 0 24 24"
-        width="1em"
+      <div
+        className="c6"
       >
-        <path
-          d="M7.4 9.8l4.6 4.6 4.6-4.6 1.4 1.4-6 6-6-6 1.4-1.4z"
-        />
-      </svg>
+        <svg
+          fill="currentColor"
+          height="1em"
+          preserveAspectRatio="xMidYMid meet"
+          viewBox="0 0 24 24"
+          width="1em"
+        >
+          <path
+            d="M7.4 9.8l4.6 4.6 4.6-4.6 1.4 1.4-6 6-6-6 1.4-1.4z"
+          />
+        </svg>
+      </div>
     </button>
   </div>
   <select
-    className="c6"
+    className="c7"
     onBlur={[Function]}
     onFocus={[Function]}
     readOnly={true}
@@ -259,9 +271,17 @@ exports[`Storyshots Select With disabled props 1`] = `
 
 .c4 {
   font-size: 18px;
+  color: #FFFFFF;
 }
 
-.c4 > * {
+.c6 {
+  line-height: 0;
+}
+
+.c6 > * {
+  -webkit-transform-origin: center;
+  -ms-transform-origin: center;
+  transform-origin: center;
   -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.68,-0.55,0.27,1.55);
   -webkit-transition: transform 0.4s cubic-bezier(0.68,-0.55,0.27,1.55);
   transition: transform 0.4s cubic-bezier(0.68,-0.55,0.27,1.55);
@@ -310,7 +330,7 @@ exports[`Storyshots Select With disabled props 1`] = `
   position: relative;
 }
 
-.c6 {
+.c7 {
   width: 100%;
   border: 0;
   height: 32px;
@@ -340,21 +360,25 @@ exports[`Storyshots Select With disabled props 1`] = `
     <button
       className="c4 c5"
     >
-      <svg
-        fill="currentColor"
-        height="1em"
-        preserveAspectRatio="xMidYMid meet"
-        viewBox="0 0 24 24"
-        width="1em"
+      <div
+        className="c6"
       >
-        <path
-          d="M7.4 9.8l4.6 4.6 4.6-4.6 1.4 1.4-6 6-6-6 1.4-1.4z"
-        />
-      </svg>
+        <svg
+          fill="currentColor"
+          height="1em"
+          preserveAspectRatio="xMidYMid meet"
+          viewBox="0 0 24 24"
+          width="1em"
+        >
+          <path
+            d="M7.4 9.8l4.6 4.6 4.6-4.6 1.4 1.4-6 6-6-6 1.4-1.4z"
+          />
+        </svg>
+      </div>
     </button>
   </div>
   <select
-    className="c6"
+    className="c7"
     onBlur={[Function]}
     onChange={[Function]}
     onFocus={[Function]}
@@ -458,9 +482,17 @@ exports[`Storyshots Select With focus props 1`] = `
 
 .c4 {
   font-size: 18px;
+  color: #FFFFFF;
 }
 
-.c4 > * {
+.c6 {
+  line-height: 0;
+}
+
+.c6 > * {
+  -webkit-transform-origin: center;
+  -ms-transform-origin: center;
+  transform-origin: center;
   -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.68,-0.55,0.27,1.55);
   -webkit-transition: transform 0.4s cubic-bezier(0.68,-0.55,0.27,1.55);
   transition: transform 0.4s cubic-bezier(0.68,-0.55,0.27,1.55);
@@ -509,7 +541,7 @@ exports[`Storyshots Select With focus props 1`] = `
   position: relative;
 }
 
-.c6 {
+.c7 {
   width: 100%;
   border: 0;
   height: 32px;
@@ -539,21 +571,25 @@ exports[`Storyshots Select With focus props 1`] = `
     <button
       className="c4 c5"
     >
-      <svg
-        fill="currentColor"
-        height="1em"
-        preserveAspectRatio="xMidYMid meet"
-        viewBox="0 0 24 24"
-        width="1em"
+      <div
+        className="c6"
       >
-        <path
-          d="M7.4 9.8l4.6 4.6 4.6-4.6 1.4 1.4-6 6-6-6 1.4-1.4z"
-        />
-      </svg>
+        <svg
+          fill="currentColor"
+          height="1em"
+          preserveAspectRatio="xMidYMid meet"
+          viewBox="0 0 24 24"
+          width="1em"
+        >
+          <path
+            d="M7.4 9.8l4.6 4.6 4.6-4.6 1.4 1.4-6 6-6-6 1.4-1.4z"
+          />
+        </svg>
+      </div>
     </button>
   </div>
   <select
-    className="c6"
+    className="c7"
     onBlur={[Function]}
     onFocus={[Function]}
     readOnly={true}
@@ -645,9 +681,17 @@ exports[`Storyshots Select With kind props 1`] = `
 
 .c4 {
   font-size: 18px;
+  color: #FFFFFF;
 }
 
-.c4 > * {
+.c6 {
+  line-height: 0;
+}
+
+.c6 > * {
+  -webkit-transform-origin: center;
+  -ms-transform-origin: center;
+  transform-origin: center;
   -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.68,-0.55,0.27,1.55);
   -webkit-transition: transform 0.4s cubic-bezier(0.68,-0.55,0.27,1.55);
   transition: transform 0.4s cubic-bezier(0.68,-0.55,0.27,1.55);
@@ -696,7 +740,7 @@ exports[`Storyshots Select With kind props 1`] = `
   position: relative;
 }
 
-.c6 {
+.c7 {
   width: 100%;
   border: 0;
   height: 32px;
@@ -726,21 +770,25 @@ exports[`Storyshots Select With kind props 1`] = `
     <button
       className="c4 c5"
     >
-      <svg
-        fill="currentColor"
-        height="1em"
-        preserveAspectRatio="xMidYMid meet"
-        viewBox="0 0 24 24"
-        width="1em"
+      <div
+        className="c6"
       >
-        <path
-          d="M7.4 9.8l4.6 4.6 4.6-4.6 1.4 1.4-6 6-6-6 1.4-1.4z"
-        />
-      </svg>
+        <svg
+          fill="currentColor"
+          height="1em"
+          preserveAspectRatio="xMidYMid meet"
+          viewBox="0 0 24 24"
+          width="1em"
+        >
+          <path
+            d="M7.4 9.8l4.6 4.6 4.6-4.6 1.4 1.4-6 6-6-6 1.4-1.4z"
+          />
+        </svg>
+      </div>
     </button>
   </div>
   <select
-    className="c6"
+    className="c7"
     onBlur={[Function]}
     onFocus={[Function]}
     readOnly={true}

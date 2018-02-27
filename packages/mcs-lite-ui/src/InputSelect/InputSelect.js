@@ -13,11 +13,12 @@ import Transition from 'react-overlay-pack/lib/Transition/index';
 import IconFold from 'mcs-lite-icon/lib/IconFold';
 import rafThrottle from 'raf-throttle';
 import Input from '../Input';
+import Rotate from '../Rotate';
 import MenuItem from '../Menu/MenuItem';
+import { StyledButton } from '../Select/styled-components';
 import {
   StyledMenu,
   StyledInputGroup,
-  StyledButton,
   NoRowWrapper,
   FakeInputValue,
 } from './styled-components';
@@ -189,7 +190,9 @@ class PureInputSelect extends React.Component<
             square
             onClick={onToggle}
           >
-            <IconFold />
+            <Rotate active={focus || isOpen}>
+              <IconFold />
+            </Rotate>
           </StyledButton>
         </StyledInputGroup>
 

@@ -7,6 +7,7 @@ import { action } from '@storybook/addon-actions';
 import IconFold from 'mcs-lite-icon/lib/IconFold';
 import DropdownMenu from './DropdownMenu';
 import MenuItem from '../Menu/MenuItem';
+import Rotate from '../Rotate';
 import { StyledButton } from './styled-components';
 import { BOTTOM_RIGHT, BOTTOM_LEFT } from './position.config';
 
@@ -120,8 +121,8 @@ import {
   itemRenderer={() => ()}
 >
   {({ isOpen }) => (
-    <StyledButton active={isOpen} style={{ marginLeft: 100 }}>
-      Edit <IconFold />
+    <StyledButton active={isOpen}>
+      Edit
     </StyledButton>
   )}
 </DropdownMenu>
@@ -141,7 +142,10 @@ import {
       >
         {({ isOpen }) => (
           <StyledButton active={isOpen} style={{ marginLeft: 100 }}>
-            Edit <IconFold />
+            Edit
+            <Rotate active={isOpen}>
+              <IconFold />
+            </Rotate>
           </StyledButton>
         )}
       </DropdownMenu>
