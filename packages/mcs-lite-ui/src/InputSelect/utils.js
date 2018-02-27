@@ -8,7 +8,8 @@ export function filterByChildren(
   items: Array<ItemProps>,
   filter: string,
 ): Array<ItemProps> {
-  return items.filter(({ children }: ItemProps) => children.includes(filter));
+  const regex = new RegExp(filter, 'gi');
+  return items.filter(({ children }: ItemProps) => regex.test(children));
 }
 
 export function getInputValue({
