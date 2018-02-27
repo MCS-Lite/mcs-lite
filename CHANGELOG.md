@@ -1,5 +1,16 @@
 # MCS Lite changelogs
 
+## Released (2018-02-27)
+
+#### :rocket: New Feature
+
+* `mcs-lite-landing-web`, `mcs-lite-ui`
+  * [#575](https://github.com/MCS-Lite/mcs-lite/pull/575) feat(UI): add DropdownMenu, Rotate components & fix inputselect, tooltip, popover. ([@evenchange4](https://github.com/evenchange4))
+
+#### Committers: 1
+
+* Michael Hsu ([evenchange4](https://github.com/evenchange4))
+
 ## Released (2018-02-23)
 
 * babel-preset-mcs-lite: 0.3.16 => 0.3.17
