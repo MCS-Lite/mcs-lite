@@ -1,0 +1,298 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots DropdownMenu [children] With isOpen 1`] = `
+.c1 {
+  border-width: 1px;
+  border-style: solid;
+  outline: none;
+  box-sizing: border-box;
+  -webkit-transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  line-height: 0;
+  cursor: pointer;
+  background-color: #00A1DE;
+  color: #FFFFFF;
+  border-radius: 3px;
+  width: initial;
+  min-width: 80px;
+  height: 32px;
+  padding: 6px 15px;
+  font-size: 1rem;
+  border-color: rgb(0,130,179);
+}
+
+.c1:hover {
+  background-color: rgb(0,151,208);
+}
+
+.c1:active {
+  background-color: rgb(0,144,198);
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c0 svg {
+  margin-left: 5px;
+  width: 18px;
+  height: 18px;
+  fill: #FFFFFF;
+  -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.68,-0.55,0.27,1.55);
+  -webkit-transition: transform 0.4s cubic-bezier(0.68,-0.55,0.27,1.55);
+  transition: transform 0.4s cubic-bezier(0.68,-0.55,0.27,1.55);
+  -webkit-transform: initial;
+  -ms-transform: initial;
+  transform: initial;
+}
+
+.c2 {
+  line-height: 0;
+}
+
+.c2 > * {
+  -webkit-transform-origin: center;
+  -ms-transform-origin: center;
+  transform-origin: center;
+  -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.68,-0.55,0.27,1.55);
+  -webkit-transition: transform 0.4s cubic-bezier(0.68,-0.55,0.27,1.55);
+  transition: transform 0.4s cubic-bezier(0.68,-0.55,0.27,1.55);
+  -webkit-transform: initial;
+  -ms-transform: initial;
+  transform: initial;
+}
+
+<div
+  onClick={[Function]}
+  onKeyPress={[Function]}
+  role="button"
+  style={
+    Object {
+      "display": "inline-block",
+    }
+  }
+  tabIndex="0"
+>
+  <button
+    className="c0 c1"
+    style={
+      Object {
+        "marginLeft": 100,
+      }
+    }
+  >
+    Edit
+    <div
+      className="c2"
+    >
+      <svg
+        fill="currentColor"
+        height="1em"
+        preserveAspectRatio="xMidYMid meet"
+        viewBox="0 0 24 24"
+        width="1em"
+      >
+        <path
+          d="M7.4 9.8l4.6 4.6 4.6-4.6 1.4 1.4-6 6-6-6 1.4-1.4z"
+        />
+      </svg>
+    </div>
+  </button>
+</div>
+`;
+
+exports[`Storyshots DropdownMenu [children] With open 1`] = `
+.c1 {
+  border-width: 1px;
+  border-style: solid;
+  outline: none;
+  box-sizing: border-box;
+  -webkit-transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  transition: background-color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
+  line-height: 0;
+  cursor: pointer;
+  background-color: #00A1DE;
+  color: #FFFFFF;
+  border-radius: 3px;
+  width: initial;
+  min-width: 80px;
+  height: 32px;
+  padding: 6px 15px;
+  font-size: 1rem;
+  border-color: rgb(0,130,179);
+}
+
+.c1:hover {
+  background-color: rgb(0,151,208);
+}
+
+.c1:active {
+  background-color: rgb(0,144,198);
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c0 svg {
+  margin-left: 5px;
+  width: 18px;
+  height: 18px;
+  fill: #FFFFFF;
+  -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.68,-0.55,0.27,1.55);
+  -webkit-transition: transform 0.4s cubic-bezier(0.68,-0.55,0.27,1.55);
+  transition: transform 0.4s cubic-bezier(0.68,-0.55,0.27,1.55);
+  -webkit-transform: initial;
+  -ms-transform: initial;
+  transform: initial;
+}
+
+<div
+  onClick={[Function]}
+  onKeyPress={[Function]}
+  role="button"
+  style={
+    Object {
+      "display": "inline-block",
+    }
+  }
+  tabIndex="0"
+>
+  <button
+    className="c0 c1"
+    onMouseEnter={[Function]}
+    style={
+      Object {
+        "marginLeft": 100,
+      }
+    }
+  >
+    Edit 
+    <svg
+      fill="currentColor"
+      height="1em"
+      preserveAspectRatio="xMidYMid meet"
+      viewBox="0 0 24 24"
+      width="1em"
+    >
+      <path
+        d="M7.4 9.8l4.6 4.6 4.6-4.6 1.4 1.4-6 6-6-6 1.4-1.4z"
+      />
+    </svg>
+  </button>
+</div>
+`;
+
+exports[`Storyshots DropdownMenu [itemRenderer] With close 1`] = `
+<div
+  onClick={[Function]}
+  onKeyPress={[Function]}
+  role="button"
+  style={
+    Object {
+      "display": "inline-block",
+    }
+  }
+  tabIndex="0"
+>
+  <div>
+    Click me
+  </div>
+</div>
+`;
+
+exports[`Storyshots DropdownMenu With position 1`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-left: 300px;
+}
+
+.c0 > * {
+  margin-bottom: 30px;
+}
+
+<div
+  className="c0"
+>
+  <div
+    onClick={[Function]}
+    onKeyPress={[Function]}
+    role="button"
+    style={
+      Object {
+        "display": "inline-block",
+      }
+    }
+    tabIndex="0"
+  >
+    <div
+      style={
+        Object {
+          "backgroundColor": "skyblue",
+        }
+      }
+    >
+      BOTTOM_RIGHT
+    </div>
+  </div>
+  <div
+    onClick={[Function]}
+    onKeyPress={[Function]}
+    role="button"
+    style={
+      Object {
+        "display": "inline-block",
+      }
+    }
+    tabIndex="0"
+  >
+    <div
+      style={
+        Object {
+          "backgroundColor": "skyblue",
+        }
+      }
+    >
+      BOTTOM_LEFT
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots DropdownMenu default 1`] = `
+<div
+  onClick={[Function]}
+  onKeyPress={[Function]}
+  role="button"
+  style={
+    Object {
+      "display": "inline-block",
+    }
+  }
+  tabIndex="0"
+>
+  <div>
+    Click me
+  </div>
+</div>
+`;

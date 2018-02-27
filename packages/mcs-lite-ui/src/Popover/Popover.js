@@ -24,19 +24,22 @@ class Popover extends React.Component<
     // Note: innerRef for the problem of outside click in dialog
     innerRef?: (ref: React.ElementRef<typeof StyledCard>) => void,
   },
-  { isOpen: boolean, target: ?React.ElementRef<'div'> },
+  { isOpen: boolean },
 > {
   static defaultProps = {
     position: RIGHT_CENTER,
   };
-  state = { isOpen: false, target: undefined };
+  state = { isOpen: false };
   onClick = () => this.setState(() => ({ isOpen: !this.state.isOpen }));
   onHide = () => this.setState(() => ({ isOpen: false }));
-  onRef = (target: React.ElementRef<any>) => this.setState(() => ({ target }));
+  onRef = (target: React.ElementRef<any>) => {
+    this.target = target;
+  };
+  target: ?React.ElementRef<'div'>;
   render() {
     const { children, content, innerRef, position } = this.props;
-    const { isOpen, target } = this.state;
-    const { onClick, onHide, onRef } = this;
+    const { isOpen } = this.state;
+    const { onClick, onHide, onRef, target } = this;
 
     return (
       <React.Fragment>

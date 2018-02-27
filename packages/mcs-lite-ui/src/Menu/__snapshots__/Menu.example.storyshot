@@ -221,16 +221,15 @@ exports[`Storyshots Menu Fixed width 1`] = `
   overflow: hidden;
 }
 
-.dUUMVe > *:nth-child(2) .c5 {
-  margin-top: 5px;
-}
-
-.pYtWd > .c5 {
-  margin-top: 5px;
-}
-
-.sQyKx > .c5 {
-  margin-top: 5px;
+.c1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 5px 0;
 }
 
 .c3 {
@@ -273,15 +272,16 @@ exports[`Storyshots Menu Fixed width 1`] = `
   color: #FFFFFF;
 }
 
-.c1 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  padding: 5px 0;
+.dUUMVe > *:nth-child(2) .c5 {
+  margin-top: 5px;
+}
+
+.pYtWd > .c5 {
+  margin-top: 5px;
+}
+
+.sQyKx > .c5 {
+  margin-top: 5px;
 }
 
 .c0 {
@@ -389,6 +389,17 @@ exports[`Storyshots Menu Min width 1`] = `
   overflow: hidden;
 }
 
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 5px 0;
+}
+
 .c2 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -427,17 +438,6 @@ exports[`Storyshots Menu Min width 1`] = `
 
 .c2:active * {
   color: #FFFFFF;
-}
-
-.c0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  padding: 5px 0;
 }
 
 <div

@@ -27,9 +27,5 @@ export const StyledSelect = styled.select`
 
 export const StyledButton = styled(Button)`
   font-size: 18px;
-
-  > * {
-    transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
-    transform: ${props => (props.active ? 'rotate(-180deg)' : 'initial')};
-  }
+  color: ${props => props.theme.color.white};
 `;

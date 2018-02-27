@@ -3,7 +3,6 @@ import * as React from 'react';
 import styled, { css } from 'styled-components';
 import InputGroup from 'mcs-lite-ui/lib/InputGroup/InputGroup';
 import Input from 'mcs-lite-ui/lib/Input/Input';
-import Button from 'mcs-lite-ui/lib/Button/Button';
 import Menu from 'mcs-lite-ui/lib/Menu/Menu';
 
 export const StyledMenu: React.ComponentType<{
@@ -34,18 +33,6 @@ export const StyledInputGroup = styled(InputGroup)`
       css`
         cursor: pointer;
       `};
-  }
-`;
-
-export const StyledButton: React.ComponentType<{
-  active: boolean,
-}> = styled(Button)`
-  font-size: 18px;
-
-  svg {
-    fill: ${props => props.theme.color.white};
-    transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
-    transform: ${props => (props.active ? 'rotate(-180deg)' : 'initial')};
   }
 `;
 

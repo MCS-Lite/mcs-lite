@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import rafThrottle from 'raf-throttle';
 import IconFold from 'mcs-lite-icon/lib/IconFold';
-import R from 'ramda';
+import Rotate from '../Rotate';
 import Overlay from '../Overlay';
 import P from '../P';
 import { Menu, MenuItem } from '../Menu';
@@ -13,14 +13,6 @@ import NavItem from './NavItem';
 
 export const StyledP = styled(P)`
   margin-right: 5px;
-`;
-
-const omitProps = R.omit(['isShow']);
-export const StyledIconFold = styled(props => (
-  <IconFold {...omitProps(props)} />
-))`
-  transform: rotate(${props => (props.isShow ? -180 : 0)}deg);
-  transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 `;
 
 export const HandleHideMenuItem = ({ onHide, onClick, ...otherProps }) => (
@@ -84,7 +76,9 @@ class NavItemDropdown extends React.PureComponent {
         {...otherProps}
       >
         <StyledP>{children}</StyledP>
-        <StyledIconFold size={18} isShow={isShow} />
+        <Rotate active={isShow}>
+          <IconFold size={18} />
+        </Rotate>
 
         {/* Portal */}
         {isShow && (

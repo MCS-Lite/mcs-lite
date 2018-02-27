@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import * as R from 'ramda';
 import IconFold from 'mcs-lite-icon/lib/IconFold';
 import Input from '../Input';
+import Rotate from '../Rotate';
 import {
   StyledInputGroup,
   Wrapper,
@@ -75,7 +76,9 @@ class Select extends React.Component<
             focus={focus || isOpen}
           />
           <StyledButton kind={kind} active={focus || isOpen} square>
-            <IconFold />
+            <Rotate active={focus || isOpen}>
+              <IconFold />
+            </Rotate>
           </StyledButton>
         </StyledInputGroup>
 

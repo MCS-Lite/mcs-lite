@@ -91,6 +91,22 @@ exports[`should renders <Header> correctly with Desktop view 1`] = `
   fill: currentColor;
 }
 
+.c13 {
+  line-height: 0;
+}
+
+.c13 > * {
+  -webkit-transform-origin: center;
+  -ms-transform-origin: center;
+  transform-origin: center;
+  -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.68,-0.55,0.27,1.55);
+  -webkit-transition: transform 0.4s cubic-bezier(0.68,-0.55,0.27,1.55);
+  transition: transform 0.4s cubic-bezier(0.68,-0.55,0.27,1.55);
+  -webkit-transform: initial;
+  -ms-transform: initial;
+  transform: initial;
+}
+
 .c12 {
   margin: 0;
   font-size: 1rem;
@@ -99,15 +115,6 @@ exports[`should renders <Header> correctly with Desktop view 1`] = `
 
 .c11 {
   margin-right: 5px;
-}
-
-.c13 {
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  transform: rotate(0deg);
-  -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.68,-0.55,0.27,1.55);
-  -webkit-transition: transform 0.4s cubic-bezier(0.68,-0.55,0.27,1.55);
-  transition: transform 0.4s cubic-bezier(0.68,-0.55,0.27,1.55);
 }
 
 .c4 {
@@ -430,21 +437,16 @@ exports[`should renders <Header> correctly with Desktop view 1`] = `
                                                       </Component>
                                                     </P>
                                                   </Styled(P)>
-                                                  <Styled(Component)
-                                                    isShow={false}
-                                                    size={18}
+                                                  <Rotate
+                                                    active={false}
                                                   >
-                                                    <Component
+                                                    <div
                                                       className="c13"
-                                                      isShow={false}
-                                                      size={18}
                                                     >
                                                       <IconFold
-                                                        className="c13"
                                                         size={18}
                                                       >
                                                         <svg
-                                                          className="c13"
                                                           fill="currentColor"
                                                           height={18}
                                                           preserveAspectRatio="xMidYMid meet"
@@ -456,8 +458,8 @@ exports[`should renders <Header> correctly with Desktop view 1`] = `
                                                           />
                                                         </svg>
                                                       </IconFold>
-                                                    </Component>
-                                                  </Styled(Component)>
+                                                    </div>
+                                                  </Rotate>
                                                 </div>
                                               </BaseComponent>
                                             </NavItem>
