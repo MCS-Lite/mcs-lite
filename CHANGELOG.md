@@ -2,6 +2,20 @@
 
 ## Released (2018-03-09)
 
+* babel-preset-mcs-lite: 0.3.18 => 0.3.19
+* eslint-config-mcs-lite: 0.6.9 => 0.6.10
+* mcs-lite-admin-web: 0.2.11 => 0.2.12
+* mcs-lite-connect: 0.3.21 => 0.3.22
+* mcs-lite-design: 0.2.13 => 0.2.14
+* mcs-lite-icon: 0.3.20 => 0.3.21
+* mcs-lite-landing-web: 0.1.16 => 0.1.17 (private)
+* mcs-lite-mobile-web: 0.4.24 => 0.4.25
+* mcs-lite-scripts: 0.3.20 => 0.3.21
+* mcs-lite-theme: 0.3.18 => 0.3.19
+* mcs-lite-translation: 0.1.18 => 0.1.19
+* mcs-lite-ui: 0.6.6 => 0.6.7
+* react-intl-inject-hoc: 0.2.21 => 0.2.22
+
 #### :rocket: New Feature
 
 * `mcs-lite-ui`
