@@ -1,5 +1,16 @@
 # MCS Lite changelogs
 
+## Released (2018-03-09)
+
+#### :rocket: New Feature
+
+* `mcs-lite-ui`
+  * [#576](https://github.com/MCS-Lite/mcs-lite/pull/576) feat(ui): add IconWarning Component. ([@evenchange4](https://github.com/evenchange4))
+
+#### Committers: 1
+
+* Michael Hsu ([evenchange4](https://github.com/evenchange4))
+
 ## Released (2018-02-27)
 
 * babel-preset-mcs-lite: 0.3.17 => 0.3.18
