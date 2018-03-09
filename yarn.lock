@@ -9313,9 +9313,9 @@ progress@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/progress/-/progress-2.0.0.tgz#8a1be366bf8fc23db2bd23f10c6fe920b4389d1f"
 
-promise-file-reader@1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/promise-file-reader/-/promise-file-reader-1.0.0.tgz#1f78044cef35e7f45ebbdc6b4b86e10414d6a691"
+promise-file-reader@1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/promise-file-reader/-/promise-file-reader-1.0.2.tgz#1bb60cc10e58c97f8ae2dc31ccdf006bcdbf22ca"
 
 promise-inflight@^1.0.1, promise-inflight@~1.0.1:
   version "1.0.1"

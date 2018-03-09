@@ -48,7 +48,7 @@
     "mcs-lite-translation": "^0.1.19",
     "mcs-lite-ui": "^0.6.7",
     "polished": "1.9.2",
-    "promise-file-reader": "1.0.0",
+    "promise-file-reader": "1.0.2",
     "prop-types": "15.6.0",
     "raf": "3.4.0",
     "ramda": "0.25.0",
