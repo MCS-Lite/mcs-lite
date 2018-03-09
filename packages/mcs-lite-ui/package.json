@@ -34,11 +34,11 @@
     "testPathIgnorePatterns": ["<rootDir>/node_modules/", "<rootDir>/lib/"]
   },
   "devDependencies": {
-    "@storybook/addon-actions": "3.3.12",
-    "@storybook/addon-info": "3.3.12",
-    "@storybook/addon-options": "3.3.12",
-    "@storybook/addon-storyshots": "3.3.12",
-    "@storybook/react": "3.3.12",
+    "@storybook/addon-actions": "3.3.15",
+    "@storybook/addon-info": "3.3.15",
+    "@storybook/addon-options": "3.3.15",
+    "@storybook/addon-storyshots": "3.3.15",
+    "@storybook/react": "3.3.15",
     "babel-cli": "6.26.0",
     "babel-preset-mcs-lite": "^0.3.19",
     "enzyme": "3.3.0",
