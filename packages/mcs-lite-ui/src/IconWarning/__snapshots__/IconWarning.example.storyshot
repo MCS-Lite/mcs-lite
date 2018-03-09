@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots IconWarning IconWarning 1`] = `
+Array [
+  <IconWarning.macro />,
+  <IconWarning.macro
+    height={90}
+    width={100}
+  />,
+]
+`;
