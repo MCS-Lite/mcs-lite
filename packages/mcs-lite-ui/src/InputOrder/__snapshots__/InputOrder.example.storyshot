@@ -497,12 +497,14 @@ exports[`Storyshots InputOrder With height props 1`] = `
   className="c0"
   height={100}
 >
-  <p
-    className="c1 c2"
-    color="grayDark"
-  >
-    Please choose a device first
-  </p>
+  <div>
+    <p
+      className="c1 c2"
+      color="grayDark"
+    >
+      Please choose a device first
+    </p>
+  </div>
 </div>
 `;
 
@@ -950,12 +952,14 @@ exports[`Storyshots InputOrder With placeholder props 1`] = `
   className="c0"
   height={192}
 >
-  <p
-    className="c1 c2"
-    color="grayDark"
-  >
-    Please choose a device first
-  </p>
+  <div>
+    <p
+      className="c1 c2"
+      color="grayDark"
+    >
+      Please choose a device first
+    </p>
+  </div>
 </div>
 `;
 
