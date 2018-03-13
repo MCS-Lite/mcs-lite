@@ -4,7 +4,7 @@ import { storiesOf } from '@storybook/react';
 import { withInfo } from '@storybook/addon-info';
 import Label from '../Label';
 import Input from '../Input';
-import { Form, Fieldset, FormPanel, ErrorMessage } from './';
+import { Form, Fieldset, ResponsivePanel, ErrorMessage } from './';
 
 storiesOf('Form', module)
   .add(
@@ -102,12 +102,12 @@ storiesOf('Form', module)
     )),
   )
   .add(
-    'FormPanel',
+    'ResponsivePanel',
     withInfo({
       text: 'default',
       inline: true,
     })(() => (
-      <FormPanel style={{ backgroundColor: 'aliceblue' }}>
+      <ResponsivePanel style={{ backgroundColor: 'aliceblue' }}>
         <header>Add scene</header>
         <main>
           <Form>
@@ -136,6 +136,6 @@ storiesOf('Form', module)
             </Fieldset>
           </Form>
         </main>
-      </FormPanel>
+      </ResponsivePanel>
     )),
   );
