@@ -3,11 +3,13 @@
 exports[`should work with ramda 1`] = `
 "'use strict';
 
-var _pipe = _interopRequireDefault(require('ramda/src/pipe')).default;
+var _pipe2 = require('ramda/src/pipe');
+
+var _pipe3 = _interopRequireDefault(_pipe2);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-console.log(_pipe);"
+console.log(_pipe3.default);"
 `;
 
 exports[`should work with ramda/src 1`] = `

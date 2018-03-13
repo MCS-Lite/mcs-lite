@@ -3,21 +3,25 @@
 exports[`should work with recompose 1`] = `
 "'use strict';
 
-var _withState = _interopRequireDefault(require('recompose/withState')).default;
+var _withState2 = require('recompose/withState');
+
+var _withState3 = _interopRequireDefault(_withState2);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-console.log(_withState);"
+console.log(_withState3.default);"
 `;
 
 exports[`should work with recompose as default 1`] = `
 "'use strict';
 
-var _withState = _interopRequireDefault(require('recompose/withState')).default;
+var _withState2 = require('recompose/withState');
+
+var _withState3 = _interopRequireDefault(_withState2);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-console.log(_withState);"
+console.log(_withState3.default);"
 `;
 
 exports[`should work with recompose/createHelper 1`] = `
