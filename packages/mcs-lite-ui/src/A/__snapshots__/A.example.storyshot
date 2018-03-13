@@ -6,6 +6,7 @@ exports[`Storyshots A API 1`] = `
   -webkit-transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   cursor: pointer;
+  -webkit-text-decoration: none;
   text-decoration: none;
 }
 
@@ -42,6 +43,7 @@ exports[`Storyshots A Nested children with Heading 1`] = `
   -webkit-transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   cursor: pointer;
+  -webkit-text-decoration: none;
   text-decoration: none;
 }
 
@@ -76,6 +78,7 @@ exports[`Storyshots A With color props 1`] = `
   -webkit-transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   cursor: pointer;
+  -webkit-text-decoration: none;
   text-decoration: none;
 }
 
@@ -92,6 +95,7 @@ exports[`Storyshots A With color props 1`] = `
   -webkit-transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   cursor: pointer;
+  -webkit-text-decoration: none;
   text-decoration: none;
 }
 
@@ -108,6 +112,7 @@ exports[`Storyshots A With color props 1`] = `
   -webkit-transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   cursor: pointer;
+  -webkit-text-decoration: none;
   text-decoration: none;
 }
 
@@ -124,6 +129,7 @@ exports[`Storyshots A With color props 1`] = `
   -webkit-transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   cursor: pointer;
+  -webkit-text-decoration: none;
   text-decoration: none;
 }
 
@@ -140,6 +146,7 @@ exports[`Storyshots A With color props 1`] = `
   -webkit-transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   cursor: pointer;
+  -webkit-text-decoration: none;
   text-decoration: none;
 }
 
@@ -156,6 +163,7 @@ exports[`Storyshots A With color props 1`] = `
   -webkit-transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   cursor: pointer;
+  -webkit-text-decoration: none;
   text-decoration: none;
 }
 
@@ -172,6 +180,7 @@ exports[`Storyshots A With color props 1`] = `
   -webkit-transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   cursor: pointer;
+  -webkit-text-decoration: none;
   text-decoration: none;
 }
 
@@ -188,6 +197,7 @@ exports[`Storyshots A With color props 1`] = `
   -webkit-transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   cursor: pointer;
+  -webkit-text-decoration: none;
   text-decoration: none;
 }
 
@@ -204,6 +214,7 @@ exports[`Storyshots A With color props 1`] = `
   -webkit-transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   cursor: pointer;
+  -webkit-text-decoration: none;
   text-decoration: none;
 }
 

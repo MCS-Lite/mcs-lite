@@ -748,7 +748,7 @@ exports[`Storyshots Form Form 1`] = `
 </form>
 `;
 
-exports[`Storyshots Form FormPanel 1`] = `
+exports[`Storyshots Form ResponsivePanel 1`] = `
 .c10 {
   margin: 0;
   font-size: 1rem;

@@ -56,13 +56,17 @@ class DropdownMenu extends React.Component<
           {typeof children === 'function' ? children(renderProps) : children}
         </div>
 
-        {isOpen && (
-          <Overlay resize target={target} onOutsideClick={onHide} {...position}>
-            <StyledMenu key="menu" ref={innerRef}>
-              {itemRenderer(renderProps)}
-            </StyledMenu>
-          </Overlay>
-        )}
+        <Overlay
+          show={isOpen}
+          resize
+          target={target}
+          onOutsideClick={onHide}
+          {...position}
+        >
+          <StyledMenu key="menu" ref={innerRef}>
+            {itemRenderer(renderProps)}
+          </StyledMenu>
+        </Overlay>
       </React.Fragment>
     );
   }

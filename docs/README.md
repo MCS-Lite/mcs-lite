@@ -14,18 +14,18 @@
 
 We use two CIs at same time.
 
-1. `test.sh`: For unit testing of all packages.
-2. `test-page.sh`: For building demo page.
+1.  `test.sh`: For unit testing of all packages.
+2.  `test-page.sh`: For building demo page.
 
 _Note: Required status checks have been enabled to ensure both CI tests are passing._
 
 ## Release Flow
 
-1. prerelease
+1.  prerelease
 
 * run `tasks/build.sh` - `npm run build` for all packages
 
-2. [lerna publish](https://github.com/lerna/lerna#publish)
+2.  [lerna publish](https://github.com/lerna/lerna#publish)
 
 * Version of package.json will be updated.
 * Create git tags.
@@ -65,11 +65,11 @@ The translation file will be generated automatically at **mcs-lite-translation**
 
 When release, the flow will be:
 
-1. `npm run release` (lerna)
-2. run `tasks/build.sh` (prerelease)
-   * `npm run build` for all packages (mcs-lite-translation)
-3. NPM publish
-   * `npm run prepack` for all projects (mcs-lite-\*-web)
+1.  `npm run release` (lerna)
+2.  run `tasks/build.sh` (prerelease)
+    * `npm run build` for all packages (mcs-lite-translation)
+3.  NPM publish
+    * `npm run prepack` for all projects (mcs-lite-\*-web)
 
 ## Technology Stack
 

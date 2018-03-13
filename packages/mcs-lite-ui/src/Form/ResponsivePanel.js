@@ -5,7 +5,7 @@ import Panel from '../Panel';
 
 export const MAX_WIDTH = 618;
 
-const FormPanel = styled(Panel)`
+const ResponsivePanel = styled(Panel)`
   max-width: ${props => props.width}px;
   margin: auto; /* Note: center by default and top for overflow, ref: https://goo.gl/3i1sSD */
 
@@ -25,12 +25,12 @@ const FormPanel = styled(Panel)`
   }
 `;
 
-FormPanel.displayName = FormPanel;
-FormPanel.propTypes = {
+ResponsivePanel.displayName = ResponsivePanel;
+ResponsivePanel.propTypes = {
   width: PropTypes.number,
 };
-FormPanel.defaultProps = {
+ResponsivePanel.defaultProps = {
   width: MAX_WIDTH,
 };
 
-export default FormPanel;
+export default ResponsivePanel;

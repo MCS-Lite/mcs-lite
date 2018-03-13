@@ -20,6 +20,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
   -webkit-transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   cursor: pointer;
+  -webkit-text-decoration: none;
   text-decoration: none;
 }
 
@@ -729,7 +730,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
   flex-basis: 100%;
 }
 
-.c0 > [data-width ~=' half'] {
+.c0 > [data-width~=' half'] {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;

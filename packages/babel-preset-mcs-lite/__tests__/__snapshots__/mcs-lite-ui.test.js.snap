@@ -3,11 +3,13 @@
 exports[`should work with mcs-lite-ui 1`] = `
 "'use strict';
 
-var _Button = _interopRequireDefault(require('mcs-lite-ui/lib/Button')).default;
+var _Button2 = require('mcs-lite-ui/lib/Button');
+
+var _Button3 = _interopRequireDefault(_Button2);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-console.log(_Button);"
+console.log(_Button3.default);"
 `;
 
 exports[`should work with mcs-lite-ui/lib 1`] = `

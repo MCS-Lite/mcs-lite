@@ -130,6 +130,7 @@ Array [
   -ms-flex-align: center;
   align-items: center;
   cursor: pointer;
+  -webkit-text-decoration: none;
   text-decoration: none;
   color: #353630;
 }
