@@ -54,26 +54,23 @@ class Popover extends React.Component<
           {children}
         </div>
 
-        {isOpen && (
-          <React.Fragment>
-            {/* Note: Card */}
-            <Overlay
-              resize
-              target={target}
-              onOutsideClick={onHide}
-              {...position.card}
-            >
-              <StyledCard key="card" ref={innerRef}>
-                {content}
-              </StyledCard>
-            </Overlay>
+        {/* Note: Card */}
+        <Overlay
+          show={isOpen}
+          resize
+          target={target}
+          onOutsideClick={onHide}
+          {...position.card}
+        >
+          <StyledCard key="card" ref={innerRef}>
+            {content}
+          </StyledCard>
+        </Overlay>
 
-            {/* Note: Arrow */}
-            <Overlay resize target={target} {...position.arrow}>
-              <Arrow key="arrow" />
-            </Overlay>
-          </React.Fragment>
-        )}
+        {/* Note: Arrow */}
+        <Overlay show={isOpen} resize target={target} {...position.arrow}>
+          <Arrow key="arrow" />
+        </Overlay>
       </React.Fragment>
     );
   }

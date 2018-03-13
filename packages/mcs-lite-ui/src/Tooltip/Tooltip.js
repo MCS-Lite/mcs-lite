@@ -53,32 +53,30 @@ class Tooltip extends React.Component<
           {children}
         </div>
 
-        {isOpen && (
-          <React.Fragment>
-            {/* Note: Card */}
-            <Overlay
-              resize
-              target={target}
-              onOutsideClick={onHide}
-              style={{ pointerEvents: 'none' }}
-              {...position.card}
-            >
-              <StyledCard key="card" ref={innerRef} onMouseOver={onMouseOver}>
-                {content}
-              </StyledCard>
-            </Overlay>
+        {/* Note: Card */}
+        <Overlay
+          show={isOpen}
+          resize
+          target={target}
+          onOutsideClick={onHide}
+          style={{ pointerEvents: 'none' }}
+          {...position.card}
+        >
+          <StyledCard key="card" ref={innerRef} onMouseOver={onMouseOver}>
+            {content}
+          </StyledCard>
+        </Overlay>
 
-            {/* Note: Arrow */}
-            <Overlay
-              resize
-              target={target}
-              style={{ pointerEvents: 'none' }}
-              {...position.arrow}
-            >
-              <Arrow key="arrow" />
-            </Overlay>
-          </React.Fragment>
-        )}
+        {/* Note: Arrow */}
+        <Overlay
+          show={isOpen}
+          resize
+          target={target}
+          style={{ pointerEvents: 'none' }}
+          {...position.arrow}
+        >
+          <Arrow key="arrow" />
+        </Overlay>
       </React.Fragment>
     );
   }

@@ -6,6 +6,7 @@ exports[`Storyshots DataChannel ButtonClear 1`] = `
   -webkit-transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   cursor: pointer;
+  -webkit-text-decoration: none;
   text-decoration: none;
 }
 
@@ -67,6 +68,7 @@ exports[`Storyshots DataChannel ControlNumber 1`] = `
   -webkit-transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   cursor: pointer;
+  -webkit-text-decoration: none;
   text-decoration: none;
 }
 
@@ -1389,6 +1391,7 @@ exports[`Storyshots DataChannel ControlString 1`] = `
   -webkit-transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   cursor: pointer;
+  -webkit-text-decoration: none;
   text-decoration: none;
 }
 

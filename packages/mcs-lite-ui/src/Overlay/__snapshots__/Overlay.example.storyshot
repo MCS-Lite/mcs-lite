@@ -6,6 +6,7 @@ exports[`Storyshots Overlay API 1`] = `
   -webkit-transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   cursor: pointer;
+  -webkit-text-decoration: none;
   text-decoration: none;
 }
 

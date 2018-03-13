@@ -103,6 +103,7 @@ exports[`Storyshots LandingHeader NavItemBurger 1`] = `
   -ms-flex-align: center;
   align-items: center;
   cursor: pointer;
+  -webkit-text-decoration: none;
   text-decoration: none;
   color: #999A94;
   -webkit-transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
@@ -239,6 +240,7 @@ exports[`Storyshots LandingHeader NavItemDropdown 1`] = `
   -ms-flex-align: center;
   align-items: center;
   cursor: pointer;
+  -webkit-text-decoration: none;
   text-decoration: none;
   color: #999A94;
   -webkit-transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
@@ -348,6 +350,7 @@ exports[`Storyshots LandingHeader With Nav and NavItem 1`] = `
   -ms-flex-align: center;
   align-items: center;
   cursor: pointer;
+  -webkit-text-decoration: none;
   text-decoration: none;
   color: #999A94;
   -webkit-transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
@@ -375,6 +378,7 @@ exports[`Storyshots LandingHeader With Nav and NavItem 1`] = `
   -ms-flex-align: center;
   align-items: center;
   cursor: pointer;
+  -webkit-text-decoration: none;
   text-decoration: none;
   color: #353630;
   -webkit-transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
@@ -402,6 +406,7 @@ exports[`Storyshots LandingHeader With Nav and NavItem 1`] = `
   -ms-flex-align: center;
   align-items: center;
   cursor: pointer;
+  -webkit-text-decoration: none;
   text-decoration: none;
   color: #999A94;
   -webkit-transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;

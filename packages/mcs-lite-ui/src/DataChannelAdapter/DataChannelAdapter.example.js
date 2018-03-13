@@ -18,7 +18,7 @@ const CardWrapper = styled.div`
     flex-basis: 100%;
   }
 
-  > [data-width ~=' half'] {
+  > [data-width~=' half'] {
     flex-grow: 1;
     flex-basis: 40%;
   }

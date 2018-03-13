@@ -6,6 +6,7 @@ exports[`should render FLOAT_CONTROL correctly with default value to empty 1`] =
   -webkit-transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   cursor: pointer;
+  -webkit-text-decoration: none;
   text-decoration: none;
 }
 
@@ -264,6 +265,7 @@ exports[`should render FLOAT_CONTROL correctly with unit 1`] = `
   -webkit-transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   cursor: pointer;
+  -webkit-text-decoration: none;
   text-decoration: none;
 }
 
@@ -565,6 +567,7 @@ exports[`should render FLOAT_CONTROL correctly with value 1`] = `
   -webkit-transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   cursor: pointer;
+  -webkit-text-decoration: none;
   text-decoration: none;
 }
 
@@ -825,6 +828,7 @@ exports[`should render FLOAT_CONTROL correctly with zero 1`] = `
   -webkit-transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   cursor: pointer;
+  -webkit-text-decoration: none;
   text-decoration: none;
 }
 
