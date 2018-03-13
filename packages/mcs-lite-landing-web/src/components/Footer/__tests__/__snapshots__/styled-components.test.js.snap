@@ -68,6 +68,7 @@ Array [
   background-color: #FFFFFF;
   border-radius: 4px;
   color: #40494D;
+  -webkit-text-decoration: none;
   text-decoration: none;
   color: transparent;
 }
@@ -249,6 +250,7 @@ Array [
   background-color: #FFFFFF;
   border-radius: 4px;
   color: #40494D;
+  -webkit-text-decoration: none;
   text-decoration: none;
   color: transparent;
 }

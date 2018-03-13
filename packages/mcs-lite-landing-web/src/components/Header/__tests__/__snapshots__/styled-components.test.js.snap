@@ -43,6 +43,7 @@ Array [
 }
 
 .c3 {
+  -webkit-text-decoration: none;
   text-decoration: none;
 }
 

@@ -3,6 +3,7 @@
 exports[`should renders <StyledLink> correctly 1`] = `
 .c0 {
   display: block;
+  -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
   color: currentColor;

@@ -43,6 +43,7 @@ exports[`should renders <Language> correctly 1`] = `
 
 .c4 * {
   color: #999A94;
+  -webkit-text-decoration: none;
   text-decoration: none;
 }
 
