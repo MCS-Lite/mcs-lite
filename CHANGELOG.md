@@ -1,5 +1,16 @@
 # MCS Lite changelogs
 
+## Released (2018-03-13)
+
+#### :house: Internal
+
+* `babel-preset-mcs-lite`, `mcs-lite-admin-web`, `mcs-lite-design`, `mcs-lite-icon`, `mcs-lite-landing-web`, `mcs-lite-mobile-web`, `mcs-lite-scripts`, `mcs-lite-translation`, `mcs-lite-ui`
+  * [#577](https://github.com/MCS-Lite/mcs-lite/pull/577) chore: ncu update & upgrade node 9.8.0 yarn 1.5.1. ([@evenchange4](https://github.com/evenchange4))
+
+#### Committers: 1
+
+* Michael Hsu ([evenchange4](https://github.com/evenchange4))
+
 ## Released (2018-03-09)
 
 * babel-preset-mcs-lite: 0.3.18 => 0.3.19
