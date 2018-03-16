@@ -10196,9 +10196,9 @@ raw-body@2.3.2:
     iconv-lite "0.4.19"
     unpipe "1.0.0"
 
-rc-scroll-anim@2.3.0:
-  version "2.3.0"
-  resolved "https://registry.yarnpkg.com/rc-scroll-anim/-/rc-scroll-anim-2.3.0.tgz#fad4210ac1affdb34bb6a9f0bdb1aafb433a67dc"
+rc-scroll-anim@2.3.2:
+  version "2.3.2"
+  resolved "https://registry.yarnpkg.com/rc-scroll-anim/-/rc-scroll-anim-2.3.2.tgz#81848020a3d0c9976070d37f2c6f4389f24b8b7b"
   dependencies:
     babel-runtime "6.x"
     prop-types "^15.6.0"
