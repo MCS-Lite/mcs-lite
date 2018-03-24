@@ -10665,9 +10665,9 @@ react-test-renderer@16.2.0, react-test-renderer@^16.0.0-0:
     object-assign "^4.1.1"
     prop-types "^15.6.0"
 
-react-text-truncate@0.12.1, react-text-truncate@^0.12.1:
-  version "0.12.1"
-  resolved "https://registry.yarnpkg.com/react-text-truncate/-/react-text-truncate-0.12.1.tgz#b977002113aee86fc5f6e0db135c3d6186b84e34"
+react-text-truncate@0.13.1, react-text-truncate@^0.13.0:
+  version "0.13.1"
+  resolved "https://registry.yarnpkg.com/react-text-truncate/-/react-text-truncate-0.13.1.tgz#0632cbf8bdd5f7826865c7cc55dc8a2c3a2c9147"
   dependencies:
     prop-types "^15.5.7"
 
