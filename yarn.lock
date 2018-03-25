@@ -12338,7 +12338,29 @@ svgr.macro@^1.0.4:
     glob "^7.1.2"
     svgr "^1.7.0"
 
-svgr@1.9.0, svgr@^1.7.0:
+svgr@1.9.1:
+  version "1.9.1"
+  resolved "https://registry.yarnpkg.com/svgr/-/svgr-1.9.1.tgz#ac56f6781b218f9f9d4ee9af4a7cce63ddd9b8da"
+  dependencies:
+    "@babel/core" "^7.0.0-beta.40"
+    "@babel/plugin-proposal-object-rest-spread" "^7.0.0-beta.40"
+    "@babel/plugin-transform-react-constant-elements" "^7.0.0-beta.40"
+    "@babel/preset-env" "^7.0.0-beta.40"
+    "@babel/preset-react" "^7.0.0-beta.40"
+    chalk "^2.3.2"
+    commander "^2.15.0"
+    glob "^7.1.2"
+    h2x-core "^0.1.9"
+    h2x-plugin-jsx "^0.1.9"
+    loader-utils "^1.1.0"
+    lodash "^4.17.5"
+    mz "^2.6.0"
+    output-file-sync "^2.0.1"
+    prettier "^1.11.1"
+    recursive-readdir "^2.2.2"
+    svgo "^1.0.5"
+
+svgr@^1.7.0:
   version "1.9.0"
   resolved "https://registry.yarnpkg.com/svgr/-/svgr-1.9.0.tgz#9c113259649178a20ddc4d50e61986524eaf5cdd"
   dependencies:
