@@ -1,6 +1,6 @@
 {
   "name": "mcs-lite-ui",
-  "version": "0.7.0",
+  "version": "0.7.1",
   "description": "Common UI used by MCS Lite",
   "repository": "MCS-Lite/mcs-lite",
   "author": "Michael Hsu <evenchange4@gmail.com>",
@@ -9,7 +9,9 @@
     "email": "evenchange4@gmail.com"
   },
   "homepage": "https://github.com/MCS-Lite/mcs-lite#readme",
-  "files": ["lib"],
+  "files": [
+    "lib"
+  ],
   "main": "lib/index.js",
   "license": "MIT",
   "scripts": {
@@ -17,8 +19,7 @@
     "start": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "prebuild": "npm run clean",
-    "build":
-      "NODE_ENV=production babel src --out-dir lib --ignore example.js,test.js",
+    "build": "NODE_ENV=production babel src --out-dir lib --ignore example.js,test.js",
     "createEntryFile": "exports-all 'lib/[A-Z]*' 'lib/index.js'",
     "postbuild": "npm run createEntryFile",
     "test": "NODE_ENV='test' TZ='UTC' jest --coverage --runInBand",
@@ -31,7 +32,10 @@
       "!src/**/*.test.{js,jsx}",
       "!src/**/*.example.{js,jsx}"
     ],
-    "testPathIgnorePatterns": ["<rootDir>/node_modules/", "<rootDir>/lib/"]
+    "testPathIgnorePatterns": [
+      "<rootDir>/node_modules/",
+      "<rootDir>/lib/"
+    ]
   },
   "devDependencies": {
     "@storybook/addon-actions": "3.3.15",
@@ -40,7 +44,7 @@
     "@storybook/addon-storyshots": "3.3.15",
     "@storybook/react": "3.3.15",
     "babel-cli": "6.26.0",
-    "babel-preset-mcs-lite": "^0.3.20",
+    "babel-preset-mcs-lite": "^0.3.21",
     "enzyme": "3.3.0",
     "enzyme-adapter-react-16": "1.1.1",
     "enzyme-to-json": "3.3.3",
@@ -48,9 +52,9 @@
     "jest": "20.0.4",
     "jest-specific-snapshot": "0.5.0",
     "jest-styled-components": "next",
-    "mcs-lite-icon": "^0.3.22",
-    "mcs-lite-scripts": "^0.3.22",
-    "mcs-lite-theme": "^0.3.20",
+    "mcs-lite-icon": "^0.3.23",
+    "mcs-lite-scripts": "^0.3.23",
+    "mcs-lite-theme": "^0.3.21",
     "polished": "1.9.2",
     "raf": "3.4.0",
     "react": "16.2.0",
