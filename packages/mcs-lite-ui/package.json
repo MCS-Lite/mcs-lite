@@ -43,8 +43,8 @@
     "babel-preset-mcs-lite": "^0.3.20",
     "enzyme": "3.3.0",
     "enzyme-adapter-react-16": "1.1.1",
-    "enzyme-to-json": "3.3.1",
-    "flow-bin": "0.67.1",
+    "enzyme-to-json": "3.3.3",
+    "flow-bin": "0.68.0",
     "jest": "20.0.4",
     "jest-specific-snapshot": "0.5.0",
     "jest-styled-components": "next",
@@ -57,8 +57,8 @@
     "react-addons-test-utils": "15.6.2",
     "react-dom": "16.2.0",
     "react-test-renderer": "16.2.0",
-    "styled-components": "3.2.2",
-    "svgr": "1.9.0"
+    "styled-components": "3.2.3",
+    "svgr": "1.9.1"
   },
   "dependencies": {
     "bowser": "^1.9.3",
@@ -81,7 +81,7 @@
     "react-render-to-json": "^0.0.6",
     "react-svg-morph": "^0.1.10",
     "react-syntax-highlighter": "^7.0.2",
-    "react-text-truncate": "^0.12.1",
+    "react-text-truncate": "^0.13.1",
     "react-virtualized": "^9.18.5",
     "react-waypoint": "^8.0.1",
     "recharts": "^1.0.0-beta.10",

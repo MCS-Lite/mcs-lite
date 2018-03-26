@@ -15,7 +15,7 @@
 
 ## Requirements
 
-* node >= 9.8.0
+* node >= 9.9.0
 * yarn >= 1.5.1
 
 ## Packages
