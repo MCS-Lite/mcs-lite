@@ -39,8 +39,8 @@
     "browser-locale": "1.0.3",
     "enzyme": "3.3.0",
     "enzyme-adapter-react-16": "1.1.1",
-    "enzyme-to-json": "3.3.1",
-    "flow-bin": "0.67.1",
+    "enzyme-to-json": "3.3.3",
+    "flow-bin": "0.68.0",
     "history": "3.3.0",
     "jest-styled-components": "next",
     "mcs-lite-icon": "^0.3.22",
@@ -77,7 +77,7 @@
     "redux-freeze": "0.1.5",
     "redux-mock-store": "1.5.1",
     "rxjs": "5.5.7",
-    "styled-components": "3.2.2",
+    "styled-components": "3.2.3",
     "uuid": "3.2.1",
     "validator": "9.4.1"
   }

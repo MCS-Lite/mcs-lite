@@ -31,8 +31,8 @@
     "browser-locale": "1.0.3",
     "enzyme": "3.3.0",
     "enzyme-adapter-react-16": "1.1.1",
-    "enzyme-to-json": "3.3.1",
-    "flow-bin": "0.67.1",
+    "enzyme-to-json": "3.3.3",
+    "flow-bin": "0.68.0",
     "hedron": "0.7.1",
     "history": "3.3.0",
     "jest-styled-components": "next",
@@ -45,7 +45,7 @@
     "raf": "3.4.0",
     "raf-throttle": "2.0.3",
     "ramda": "0.25.0",
-    "rc-scroll-anim": "2.3.0",
+    "rc-scroll-anim": "2.3.2",
     "rc-tween-one": "1.7.3",
     "react": "16.2.0",
     "react-dom": "16.2.0",
@@ -59,8 +59,8 @@
     "react-responsive": "4.0.5",
     "react-router": "3.2.0",
     "react-scripts": "1.1.1",
-    "react-snap": "1.11.4",
+    "react-snap": "1.11.5",
     "recompose": "0.26.0",
-    "styled-components": "3.2.2"
+    "styled-components": "3.2.3"
   }
 }
