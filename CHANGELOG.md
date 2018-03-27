@@ -1,5 +1,11 @@
 # MCS Lite changelogs
 
+## Released (2018-03-27)
+
+#### :bug: Bug Fix
+
+fix(UI): select svg icon size
+
 ## Released (2018-03-26)
 
 * babel-preset-mcs-lite: 0.3.20 => 0.3.21
