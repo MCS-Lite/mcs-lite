@@ -25,7 +25,7 @@ export const StyledSelect = styled.select`
   cursor: pointer;
 `;
 
-export const StyledButton = styled(Button)`
+export const StyledButton = Button.extend`
   font-size: 18px;
   color: ${props => props.theme.color.white};
 `;
