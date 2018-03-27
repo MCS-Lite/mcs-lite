@@ -2,6 +2,20 @@
 
 ## Released (2018-03-27)
 
+* babel-preset-mcs-lite: 0.3.21 => 0.3.22
+* eslint-config-mcs-lite: 0.6.12 => 0.6.13
+* mcs-lite-admin-web: 0.2.14 => 0.2.15
+* mcs-lite-connect: 0.3.24 => 0.3.25
+* mcs-lite-design: 0.2.16 => 0.2.17
+* mcs-lite-icon: 0.3.23 => 0.3.24
+* mcs-lite-landing-web: 0.1.19 => 0.1.20 (private)
+* mcs-lite-mobile-web: 0.4.27 => 0.4.28
+* mcs-lite-scripts: 0.3.23 => 0.3.24
+* mcs-lite-theme: 0.3.21 => 0.3.22
+* mcs-lite-translation: 0.1.21 => 0.1.22
+* mcs-lite-ui: 0.7.1 => 0.7.2
+* react-intl-inject-hoc: 0.2.24 => 0.2.25
+
 #### :bug: Bug Fix
 
 fix(UI): select svg icon size
