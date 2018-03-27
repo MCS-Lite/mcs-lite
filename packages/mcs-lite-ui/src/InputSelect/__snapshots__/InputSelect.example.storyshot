@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots InputSelect API 1`] = `
-.c4 {
+.c3 {
   border-width: 1px;
   border-style: solid;
   outline: none;
@@ -19,13 +19,15 @@ exports[`Storyshots InputSelect API 1`] = `
   padding: 0;
   font-size: 1rem;
   border-color: rgb(0,130,179);
+  font-size: 18px;
+  color: #FFFFFF;
 }
 
-.c4:hover {
+.c3:hover {
   background-color: rgb(0,151,208);
 }
 
-.c4:active {
+.c3:active {
   background-color: rgb(0,144,198);
 }
 
@@ -70,16 +72,11 @@ exports[`Storyshots InputSelect API 1`] = `
   color: #D1D2D3;
 }
 
-.c3 {
-  font-size: 18px;
-  color: #FFFFFF;
-}
-
-.c5 {
+.c4 {
   line-height: 0;
 }
 
-.c5 > * {
+.c4 > * {
   -webkit-transform-origin: center;
   -ms-transform-origin: center;
   transform-origin: center;
@@ -147,11 +144,11 @@ exports[`Storyshots InputSelect API 1`] = `
         value="item name 1"
       />
       <button
-        className="c3 c4"
+        className="c3"
         onClick={[Function]}
       >
         <div
-          className="c5"
+          className="c4"
         >
           <svg
             fill="currentColor"
@@ -172,7 +169,7 @@ exports[`Storyshots InputSelect API 1`] = `
 `;
 
 exports[`Storyshots InputSelect Controlled API 1`] = `
-.c4 {
+.c3 {
   border-width: 1px;
   border-style: solid;
   outline: none;
@@ -190,13 +187,15 @@ exports[`Storyshots InputSelect Controlled API 1`] = `
   padding: 0;
   font-size: 1rem;
   border-color: rgb(0,130,179);
+  font-size: 18px;
+  color: #FFFFFF;
 }
 
-.c4:hover {
+.c3:hover {
   background-color: rgb(0,151,208);
 }
 
-.c4:active {
+.c3:active {
   background-color: rgb(0,144,198);
 }
 
@@ -241,16 +240,11 @@ exports[`Storyshots InputSelect Controlled API 1`] = `
   color: #D1D2D3;
 }
 
-.c3 {
-  font-size: 18px;
-  color: #FFFFFF;
-}
-
-.c5 {
+.c4 {
   line-height: 0;
 }
 
-.c5 > * {
+.c4 > * {
   -webkit-transform-origin: center;
   -ms-transform-origin: center;
   transform-origin: center;
@@ -318,11 +312,11 @@ exports[`Storyshots InputSelect Controlled API 1`] = `
         value="children 11"
       />
       <button
-        className="c3 c4"
+        className="c3"
         onClick={[Function]}
       >
         <div
-          className="c5"
+          className="c4"
         >
           <svg
             fill="currentColor"
@@ -343,7 +337,7 @@ exports[`Storyshots InputSelect Controlled API 1`] = `
 `;
 
 exports[`Storyshots InputSelect With 150 items 1`] = `
-.c4 {
+.c3 {
   border-width: 1px;
   border-style: solid;
   outline: none;
@@ -361,13 +355,15 @@ exports[`Storyshots InputSelect With 150 items 1`] = `
   padding: 0;
   font-size: 1rem;
   border-color: rgb(0,130,179);
+  font-size: 18px;
+  color: #FFFFFF;
 }
 
-.c4:hover {
+.c3:hover {
   background-color: rgb(0,151,208);
 }
 
-.c4:active {
+.c3:active {
   background-color: rgb(0,144,198);
 }
 
@@ -412,16 +408,11 @@ exports[`Storyshots InputSelect With 150 items 1`] = `
   color: #D1D2D3;
 }
 
-.c3 {
-  font-size: 18px;
-  color: #FFFFFF;
-}
-
-.c5 {
+.c4 {
   line-height: 0;
 }
 
-.c5 > * {
+.c4 > * {
   -webkit-transform-origin: center;
   -ms-transform-origin: center;
   transform-origin: center;
@@ -482,11 +473,11 @@ exports[`Storyshots InputSelect With 150 items 1`] = `
       value="item 71"
     />
     <button
-      className="c3 c4"
+      className="c3"
       onClick={[Function]}
     >
       <div
-        className="c5"
+        className="c4"
       >
         <svg
           fill="currentColor"
@@ -506,7 +497,7 @@ exports[`Storyshots InputSelect With 150 items 1`] = `
 `;
 
 exports[`Storyshots InputSelect With autoFocus props 1`] = `
-.c4 {
+.c3 {
   border-width: 1px;
   border-style: solid;
   outline: none;
@@ -524,13 +515,15 @@ exports[`Storyshots InputSelect With autoFocus props 1`] = `
   padding: 0;
   font-size: 1rem;
   border-color: rgb(0,130,179);
+  font-size: 18px;
+  color: #FFFFFF;
 }
 
-.c4:hover {
+.c3:hover {
   background-color: rgb(0,151,208);
 }
 
-.c4:active {
+.c3:active {
   background-color: rgb(0,144,198);
 }
 
@@ -575,16 +568,11 @@ exports[`Storyshots InputSelect With autoFocus props 1`] = `
   color: #D1D2D3;
 }
 
-.c3 {
-  font-size: 18px;
-  color: #FFFFFF;
-}
-
-.c5 {
+.c4 {
   line-height: 0;
 }
 
-.c5 > * {
+.c4 > * {
   -webkit-transform-origin: center;
   -ms-transform-origin: center;
   transform-origin: center;
@@ -646,11 +634,11 @@ exports[`Storyshots InputSelect With autoFocus props 1`] = `
       value=""
     />
     <button
-      className="c3 c4"
+      className="c3"
       onClick={[Function]}
     >
       <div
-        className="c5"
+        className="c4"
       >
         <svg
           fill="currentColor"
@@ -670,7 +658,7 @@ exports[`Storyshots InputSelect With autoFocus props 1`] = `
 `;
 
 exports[`Storyshots InputSelect With disableFilter props 1`] = `
-.c4 {
+.c3 {
   border-width: 1px;
   border-style: solid;
   outline: none;
@@ -688,13 +676,15 @@ exports[`Storyshots InputSelect With disableFilter props 1`] = `
   padding: 0;
   font-size: 1rem;
   border-color: rgb(0,130,179);
+  font-size: 18px;
+  color: #FFFFFF;
 }
 
-.c4:hover {
+.c3:hover {
   background-color: rgb(0,151,208);
 }
 
-.c4:active {
+.c3:active {
   background-color: rgb(0,144,198);
 }
 
@@ -739,16 +729,11 @@ exports[`Storyshots InputSelect With disableFilter props 1`] = `
   color: #D1D2D3;
 }
 
-.c3 {
-  font-size: 18px;
-  color: #FFFFFF;
-}
-
-.c5 {
+.c4 {
   line-height: 0;
 }
 
-.c5 > * {
+.c4 > * {
   -webkit-transform-origin: center;
   -ms-transform-origin: center;
   transform-origin: center;
@@ -813,11 +798,11 @@ exports[`Storyshots InputSelect With disableFilter props 1`] = `
       value=""
     />
     <button
-      className="c3 c4"
+      className="c3"
       onClick={[Function]}
     >
       <div
-        className="c5"
+        className="c4"
       >
         <svg
           fill="currentColor"
@@ -837,7 +822,7 @@ exports[`Storyshots InputSelect With disableFilter props 1`] = `
 `;
 
 exports[`Storyshots InputSelect With focus props 1`] = `
-.c4 {
+.c3 {
   border-width: 1px;
   border-style: solid;
   outline: none;
@@ -855,13 +840,15 @@ exports[`Storyshots InputSelect With focus props 1`] = `
   padding: 0;
   font-size: 1rem;
   border-color: rgb(198,44,63);
+  font-size: 18px;
+  color: #FFFFFF;
 }
 
-.c4:hover {
+.c3:hover {
   background-color: rgb(230,51,73);
 }
 
-.c4:active {
+.c3:active {
   background-color: rgb(219,48,70);
 }
 
@@ -906,16 +893,11 @@ exports[`Storyshots InputSelect With focus props 1`] = `
   color: #D1D2D3;
 }
 
-.c3 {
-  font-size: 18px;
-  color: #FFFFFF;
-}
-
-.c5 {
+.c4 {
   line-height: 0;
 }
 
-.c5 > * {
+.c4 > * {
   -webkit-transform-origin: center;
   -ms-transform-origin: center;
   transform-origin: center;
@@ -976,11 +958,11 @@ exports[`Storyshots InputSelect With focus props 1`] = `
       value=""
     />
     <button
-      className="c3 c4"
+      className="c3"
       onClick={[Function]}
     >
       <div
-        className="c5"
+        className="c4"
       >
         <svg
           fill="currentColor"
@@ -1000,7 +982,7 @@ exports[`Storyshots InputSelect With focus props 1`] = `
 `;
 
 exports[`Storyshots InputSelect With kind props 1`] = `
-.c4 {
+.c3 {
   border-width: 1px;
   border-style: solid;
   outline: none;
@@ -1018,13 +1000,15 @@ exports[`Storyshots InputSelect With kind props 1`] = `
   padding: 0;
   font-size: 1rem;
   border-color: rgb(196,124,24);
+  font-size: 18px;
+  color: #FFFFFF;
 }
 
-.c4:hover {
+.c3:hover {
   background-color: rgb(228,144,28);
 }
 
-.c4:active {
+.c3:active {
   background-color: rgb(217,137,27);
 }
 
@@ -1069,16 +1053,11 @@ exports[`Storyshots InputSelect With kind props 1`] = `
   color: #D1D2D3;
 }
 
-.c3 {
-  font-size: 18px;
-  color: #FFFFFF;
-}
-
-.c5 {
+.c4 {
   line-height: 0;
 }
 
-.c5 > * {
+.c4 > * {
   -webkit-transform-origin: center;
   -ms-transform-origin: center;
   transform-origin: center;
@@ -1139,11 +1118,11 @@ exports[`Storyshots InputSelect With kind props 1`] = `
       value=""
     />
     <button
-      className="c3 c4"
+      className="c3"
       onClick={[Function]}
     >
       <div
-        className="c5"
+        className="c4"
       >
         <svg
           fill="currentColor"
@@ -1163,7 +1142,7 @@ exports[`Storyshots InputSelect With kind props 1`] = `
 `;
 
 exports[`Storyshots InputSelect With noRowsRenderer props 1`] = `
-.c4 {
+.c3 {
   border-width: 1px;
   border-style: solid;
   outline: none;
@@ -1181,13 +1160,15 @@ exports[`Storyshots InputSelect With noRowsRenderer props 1`] = `
   padding: 0;
   font-size: 1rem;
   border-color: rgb(0,130,179);
+  font-size: 18px;
+  color: #FFFFFF;
 }
 
-.c4:hover {
+.c3:hover {
   background-color: rgb(0,151,208);
 }
 
-.c4:active {
+.c3:active {
   background-color: rgb(0,144,198);
 }
 
@@ -1232,16 +1213,11 @@ exports[`Storyshots InputSelect With noRowsRenderer props 1`] = `
   color: #D1D2D3;
 }
 
-.c3 {
-  font-size: 18px;
-  color: #FFFFFF;
-}
-
-.c5 {
+.c4 {
   line-height: 0;
 }
 
-.c5 > * {
+.c4 > * {
   -webkit-transform-origin: center;
   -ms-transform-origin: center;
   transform-origin: center;
@@ -1302,11 +1278,11 @@ exports[`Storyshots InputSelect With noRowsRenderer props 1`] = `
       value=""
     />
     <button
-      className="c3 c4"
+      className="c3"
       onClick={[Function]}
     >
       <div
-        className="c5"
+        className="c4"
       >
         <svg
           fill="currentColor"
@@ -1326,7 +1302,7 @@ exports[`Storyshots InputSelect With noRowsRenderer props 1`] = `
 `;
 
 exports[`Storyshots InputSelect With state 1`] = `
-.c4 {
+.c3 {
   border-width: 1px;
   border-style: solid;
   outline: none;
@@ -1344,13 +1320,15 @@ exports[`Storyshots InputSelect With state 1`] = `
   padding: 0;
   font-size: 1rem;
   border-color: rgb(0,130,179);
+  font-size: 18px;
+  color: #FFFFFF;
 }
 
-.c4:hover {
+.c3:hover {
   background-color: rgb(0,151,208);
 }
 
-.c4:active {
+.c3:active {
   background-color: rgb(0,144,198);
 }
 
@@ -1395,16 +1373,11 @@ exports[`Storyshots InputSelect With state 1`] = `
   color: #D1D2D3;
 }
 
-.c3 {
-  font-size: 18px;
-  color: #FFFFFF;
-}
-
-.c5 {
+.c4 {
   line-height: 0;
 }
 
-.c5 > * {
+.c4 > * {
   -webkit-transform-origin: center;
   -ms-transform-origin: center;
   transform-origin: center;
@@ -1465,11 +1438,11 @@ exports[`Storyshots InputSelect With state 1`] = `
       value=""
     />
     <button
-      className="c3 c4"
+      className="c3"
       onClick={[Function]}
     >
       <div
-        className="c5"
+        className="c4"
       >
         <svg
           fill="currentColor"

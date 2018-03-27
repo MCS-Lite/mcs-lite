@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Select API - ReadOnly 1`] = `
-.c5 {
+.c4 {
   border-width: 1px;
   border-style: solid;
   outline: none;
@@ -19,13 +19,15 @@ exports[`Storyshots Select API - ReadOnly 1`] = `
   padding: 0;
   font-size: 1rem;
   border-color: rgb(0,130,179);
+  font-size: 18px;
+  color: #FFFFFF;
 }
 
-.c5:hover {
+.c4:hover {
   background-color: rgb(0,151,208);
 }
 
-.c5:active {
+.c4:active {
   background-color: rgb(0,144,198);
 }
 
@@ -70,16 +72,11 @@ exports[`Storyshots Select API - ReadOnly 1`] = `
   color: #D1D2D3;
 }
 
-.c4 {
-  font-size: 18px;
-  color: #FFFFFF;
-}
-
-.c6 {
+.c5 {
   line-height: 0;
 }
 
-.c6 > * {
+.c5 > * {
   -webkit-transform-origin: center;
   -ms-transform-origin: center;
   transform-origin: center;
@@ -131,7 +128,7 @@ exports[`Storyshots Select API - ReadOnly 1`] = `
   position: relative;
 }
 
-.c7 {
+.c6 {
   width: 100%;
   border: 0;
   height: 32px;
@@ -159,10 +156,10 @@ exports[`Storyshots Select API - ReadOnly 1`] = `
       value="value 2"
     />
     <button
-      className="c4 c5"
+      className="c4"
     >
       <div
-        className="c6"
+        className="c5"
       >
         <svg
           fill="currentColor"
@@ -179,7 +176,7 @@ exports[`Storyshots Select API - ReadOnly 1`] = `
     </button>
   </div>
   <select
-    className="c7"
+    className="c6"
     onBlur={[Function]}
     onFocus={[Function]}
     readOnly={true}
@@ -200,7 +197,7 @@ exports[`Storyshots Select API - ReadOnly 1`] = `
 `;
 
 exports[`Storyshots Select With disabled props 1`] = `
-.c5 {
+.c4 {
   border-width: 1px;
   border-style: solid;
   outline: none;
@@ -218,13 +215,15 @@ exports[`Storyshots Select With disabled props 1`] = `
   padding: 0;
   font-size: 1rem;
   border-color: rgb(0,130,179);
+  font-size: 18px;
+  color: #FFFFFF;
 }
 
-.c5:hover {
+.c4:hover {
   background-color: rgb(0,151,208);
 }
 
-.c5:active {
+.c4:active {
   background-color: rgb(0,144,198);
 }
 
@@ -269,16 +268,11 @@ exports[`Storyshots Select With disabled props 1`] = `
   color: #D1D2D3;
 }
 
-.c4 {
-  font-size: 18px;
-  color: #FFFFFF;
-}
-
-.c6 {
+.c5 {
   line-height: 0;
 }
 
-.c6 > * {
+.c5 > * {
   -webkit-transform-origin: center;
   -ms-transform-origin: center;
   transform-origin: center;
@@ -330,7 +324,7 @@ exports[`Storyshots Select With disabled props 1`] = `
   position: relative;
 }
 
-.c7 {
+.c6 {
   width: 100%;
   border: 0;
   height: 32px;
@@ -358,10 +352,10 @@ exports[`Storyshots Select With disabled props 1`] = `
       value=""
     />
     <button
-      className="c4 c5"
+      className="c4"
     >
       <div
-        className="c6"
+        className="c5"
       >
         <svg
           fill="currentColor"
@@ -378,7 +372,7 @@ exports[`Storyshots Select With disabled props 1`] = `
     </button>
   </div>
   <select
-    className="c7"
+    className="c6"
     onBlur={[Function]}
     onChange={[Function]}
     onFocus={[Function]}
@@ -411,7 +405,7 @@ exports[`Storyshots Select With disabled props 1`] = `
 `;
 
 exports[`Storyshots Select With focus props 1`] = `
-.c5 {
+.c4 {
   border-width: 1px;
   border-style: solid;
   outline: none;
@@ -429,13 +423,15 @@ exports[`Storyshots Select With focus props 1`] = `
   padding: 0;
   font-size: 1rem;
   border-color: rgb(0,130,179);
+  font-size: 18px;
+  color: #FFFFFF;
 }
 
-.c5:hover {
+.c4:hover {
   background-color: rgb(0,151,208);
 }
 
-.c5:active {
+.c4:active {
   background-color: rgb(0,144,198);
 }
 
@@ -480,16 +476,11 @@ exports[`Storyshots Select With focus props 1`] = `
   color: #D1D2D3;
 }
 
-.c4 {
-  font-size: 18px;
-  color: #FFFFFF;
-}
-
-.c6 {
+.c5 {
   line-height: 0;
 }
 
-.c6 > * {
+.c5 > * {
   -webkit-transform-origin: center;
   -ms-transform-origin: center;
   transform-origin: center;
@@ -541,7 +532,7 @@ exports[`Storyshots Select With focus props 1`] = `
   position: relative;
 }
 
-.c7 {
+.c6 {
   width: 100%;
   border: 0;
   height: 32px;
@@ -569,10 +560,10 @@ exports[`Storyshots Select With focus props 1`] = `
       value="value 2"
     />
     <button
-      className="c4 c5"
+      className="c4"
     >
       <div
-        className="c6"
+        className="c5"
       >
         <svg
           fill="currentColor"
@@ -589,7 +580,7 @@ exports[`Storyshots Select With focus props 1`] = `
     </button>
   </div>
   <select
-    className="c7"
+    className="c6"
     onBlur={[Function]}
     onFocus={[Function]}
     readOnly={true}
@@ -610,7 +601,7 @@ exports[`Storyshots Select With focus props 1`] = `
 `;
 
 exports[`Storyshots Select With kind props 1`] = `
-.c5 {
+.c4 {
   border-width: 1px;
   border-style: solid;
   outline: none;
@@ -628,13 +619,15 @@ exports[`Storyshots Select With kind props 1`] = `
   padding: 0;
   font-size: 1rem;
   border-color: rgb(196,124,24);
+  font-size: 18px;
+  color: #FFFFFF;
 }
 
-.c5:hover {
+.c4:hover {
   background-color: rgb(228,144,28);
 }
 
-.c5:active {
+.c4:active {
   background-color: rgb(217,137,27);
 }
 
@@ -679,16 +672,11 @@ exports[`Storyshots Select With kind props 1`] = `
   color: #D1D2D3;
 }
 
-.c4 {
-  font-size: 18px;
-  color: #FFFFFF;
-}
-
-.c6 {
+.c5 {
   line-height: 0;
 }
 
-.c6 > * {
+.c5 > * {
   -webkit-transform-origin: center;
   -ms-transform-origin: center;
   transform-origin: center;
@@ -740,7 +728,7 @@ exports[`Storyshots Select With kind props 1`] = `
   position: relative;
 }
 
-.c7 {
+.c6 {
   width: 100%;
   border: 0;
   height: 32px;
@@ -768,10 +756,10 @@ exports[`Storyshots Select With kind props 1`] = `
       value="value 2"
     />
     <button
-      className="c4 c5"
+      className="c4"
     >
       <div
-        className="c6"
+        className="c5"
       >
         <svg
           fill="currentColor"
@@ -788,7 +776,7 @@ exports[`Storyshots Select With kind props 1`] = `
     </button>
   </div>
   <select
-    className="c7"
+    className="c6"
     onBlur={[Function]}
     onFocus={[Function]}
     readOnly={true}
