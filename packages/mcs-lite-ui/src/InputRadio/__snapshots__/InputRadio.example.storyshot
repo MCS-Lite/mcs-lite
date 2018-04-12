@@ -1,0 +1,429 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots InputRadio API 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  line-height: 0;
+}
+
+.c0 > input {
+  display: none;
+}
+
+.c0 > .c1 {
+  margin-right: 5px;
+}
+
+.c2 {
+  height: 14px;
+}
+
+.c3 {
+  fill: #00A1DE;
+  stroke: #067CB0;
+  stroke-width: 1px;
+  -webkit-transition: stroke 0.3s cubic-bezier(0.23,1,0.32,1);
+  transition: stroke 0.3s cubic-bezier(0.23,1,0.32,1);
+}
+
+.c4 {
+  fill: #FFFFFF;
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  -webkit-transition: -webkit-transform 0.45s cubic-bezier(0.23,1,0.32,1);
+  -webkit-transition: transform 0.45s cubic-bezier(0.23,1,0.32,1);
+  transition: transform 0.45s cubic-bezier(0.23,1,0.32,1);
+  -webkit-transform: scale(0.5);
+  -ms-transform: scale(0.5);
+  transform: scale(0.5);
+}
+
+<label
+  className="c0"
+  onClick={[Function]}
+>
+  <svg
+    className="c1 c2"
+    value={true}
+    viewBox="0 0 14 14"
+  >
+    <circle
+      className="c3"
+      cx="7"
+      cy="7"
+      r="6"
+      value={true}
+    />
+    <circle
+      className="c4"
+      cx="7"
+      cy="7"
+      r="6"
+      value={true}
+    />
+  </svg>
+  Radio
+</label>
+`;
+
+exports[`Storyshots InputRadio With custom style 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  line-height: 0;
+}
+
+.c0 > input {
+  display: none;
+}
+
+.c0 > .c1 {
+  margin-right: 5px;
+}
+
+.c2 {
+  height: 14px;
+}
+
+.c3 {
+  fill: #00A1DE;
+  stroke: #067CB0;
+  stroke-width: 1px;
+  -webkit-transition: stroke 0.3s cubic-bezier(0.23,1,0.32,1);
+  transition: stroke 0.3s cubic-bezier(0.23,1,0.32,1);
+}
+
+.c4 {
+  fill: #FFFFFF;
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  -webkit-transition: -webkit-transform 0.45s cubic-bezier(0.23,1,0.32,1);
+  -webkit-transition: transform 0.45s cubic-bezier(0.23,1,0.32,1);
+  transition: transform 0.45s cubic-bezier(0.23,1,0.32,1);
+  -webkit-transform: scale(0.5);
+  -ms-transform: scale(0.5);
+  transform: scale(0.5);
+}
+
+<label
+  className="c0"
+  onClick={[Function]}
+>
+  <svg
+    className="c1 c2"
+    style={
+      Object {
+        "height": 24,
+      }
+    }
+    value={true}
+    viewBox="0 0 14 14"
+  >
+    <circle
+      className="c3"
+      cx="7"
+      cy="7"
+      r="6"
+      value={true}
+    />
+    <circle
+      className="c4"
+      cx="7"
+      cy="7"
+      r="6"
+      value={true}
+    />
+  </svg>
+  Radio
+</label>
+`;
+
+exports[`Storyshots InputRadio With state 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  line-height: 0;
+}
+
+.c0 > input {
+  display: none;
+}
+
+.c0 > .c1 {
+  margin-right: 5px;
+}
+
+.c2 {
+  height: 14px;
+}
+
+.c3 {
+  fill: #00A1DE;
+  stroke: #067CB0;
+  stroke-width: 1px;
+  -webkit-transition: stroke 0.3s cubic-bezier(0.23,1,0.32,1);
+  transition: stroke 0.3s cubic-bezier(0.23,1,0.32,1);
+}
+
+.c4 {
+  fill: #FFFFFF;
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  -webkit-transition: -webkit-transform 0.45s cubic-bezier(0.23,1,0.32,1);
+  -webkit-transition: transform 0.45s cubic-bezier(0.23,1,0.32,1);
+  transition: transform 0.45s cubic-bezier(0.23,1,0.32,1);
+  -webkit-transform: scale(0.5);
+  -ms-transform: scale(0.5);
+  transform: scale(0.5);
+}
+
+<label
+  className="c0"
+  onClick={[Function]}
+>
+  <svg
+    className="c1 c2"
+    value={true}
+    viewBox="0 0 14 14"
+  >
+    <circle
+      className="c3"
+      cx="7"
+      cy="7"
+      r="6"
+      value={true}
+    />
+    <circle
+      className="c4"
+      cx="7"
+      cy="7"
+      r="6"
+      value={true}
+    />
+  </svg>
+  Radio with state
+</label>
+`;
+
+exports[`Storyshots InputRadio With two radios 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  line-height: 0;
+}
+
+.c0 > input {
+  display: none;
+}
+
+.c0 > .c1 {
+  margin-right: 5px;
+}
+
+.c2 {
+  height: 14px;
+}
+
+.c3 {
+  fill: #00A1DE;
+  stroke: #067CB0;
+  stroke-width: 1px;
+  -webkit-transition: stroke 0.3s cubic-bezier(0.23,1,0.32,1);
+  transition: stroke 0.3s cubic-bezier(0.23,1,0.32,1);
+}
+
+.c5 {
+  fill: #00A1DE;
+  stroke: #D1D2D3;
+  stroke-width: 1px;
+  -webkit-transition: stroke 0.3s cubic-bezier(0.23,1,0.32,1);
+  transition: stroke 0.3s cubic-bezier(0.23,1,0.32,1);
+}
+
+.c4 {
+  fill: #FFFFFF;
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  -webkit-transition: -webkit-transform 0.45s cubic-bezier(0.23,1,0.32,1);
+  -webkit-transition: transform 0.45s cubic-bezier(0.23,1,0.32,1);
+  transition: transform 0.45s cubic-bezier(0.23,1,0.32,1);
+  -webkit-transform: scale(0.5);
+  -ms-transform: scale(0.5);
+  transform: scale(0.5);
+}
+
+.c6 {
+  fill: #FFFFFF;
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  -webkit-transition: -webkit-transform 0.45s cubic-bezier(0.23,1,0.32,1);
+  -webkit-transition: transform 0.45s cubic-bezier(0.23,1,0.32,1);
+  transition: transform 0.45s cubic-bezier(0.23,1,0.32,1);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+<div>
+  <label
+    className="c0"
+    onClick={[Function]}
+  >
+    <svg
+      className="c1 c2"
+      value={true}
+      viewBox="0 0 14 14"
+    >
+      <circle
+        className="c3"
+        cx="7"
+        cy="7"
+        r="6"
+        value={true}
+      />
+      <circle
+        className="c4"
+        cx="7"
+        cy="7"
+        r="6"
+        value={true}
+      />
+    </svg>
+    Radio1
+  </label>
+  <label
+    className="c0"
+    onClick={[Function]}
+  >
+    <svg
+      className="c1 c2"
+      value={false}
+      viewBox="0 0 14 14"
+    >
+      <circle
+        className="c5"
+        cx="7"
+        cy="7"
+        r="6"
+        value={false}
+      />
+      <circle
+        className="c6"
+        cx="7"
+        cy="7"
+        r="6"
+        value={false}
+      />
+    </svg>
+    Radio2
+  </label>
+</div>
+`;
+
+exports[`Storyshots InputRadio Without label 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  line-height: 0;
+}
+
+.c0 > input {
+  display: none;
+}
+
+.c0 > .c1 {
+  margin-right: 5px;
+}
+
+.c2 {
+  height: 14px;
+}
+
+.c3 {
+  fill: #00A1DE;
+  stroke: #067CB0;
+  stroke-width: 1px;
+  -webkit-transition: stroke 0.3s cubic-bezier(0.23,1,0.32,1);
+  transition: stroke 0.3s cubic-bezier(0.23,1,0.32,1);
+}
+
+.c4 {
+  fill: #FFFFFF;
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  -webkit-transition: -webkit-transform 0.45s cubic-bezier(0.23,1,0.32,1);
+  -webkit-transition: transform 0.45s cubic-bezier(0.23,1,0.32,1);
+  transition: transform 0.45s cubic-bezier(0.23,1,0.32,1);
+  -webkit-transform: scale(0.5);
+  -ms-transform: scale(0.5);
+  transform: scale(0.5);
+}
+
+<label
+  className="c0"
+  onClick={[Function]}
+>
+  <svg
+    className="c1 c2"
+    value={true}
+    viewBox="0 0 14 14"
+  >
+    <circle
+      className="c3"
+      cx="7"
+      cy="7"
+      r="6"
+      value={true}
+    />
+    <circle
+      className="c4"
+      cx="7"
+      cy="7"
+      r="6"
+      value={true}
+    />
+  </svg>
+</label>
+`;
