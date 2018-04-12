@@ -1,5 +1,10 @@
 # MCS Lite changelogs
 
+## Released (2018-04-12)
+
+feat(ui): add InputRadio Component
+chore(ncu): ncu update & use node 9.11.1
+
 ## Released (2018-03-27)
 
 * babel-preset-mcs-lite: 0.3.21 => 0.3.22
