@@ -5,7 +5,7 @@ references:
   docker_default: &docker_default
     working_directory: /tmp/app
     docker:
-      - image: node:9.9.0
+      - image: node:9.11.1
   move_to_workspace: &move_to_workspace
     run:
         name: Move to workspace

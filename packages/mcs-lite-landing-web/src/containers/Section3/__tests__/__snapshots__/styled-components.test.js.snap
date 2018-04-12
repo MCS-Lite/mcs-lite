@@ -17,6 +17,7 @@ exports[`should render LazyloadIcon correctly 1`] = `
     appear={true}
     component="div"
     onChange={[Function]}
+    onScroll={[Function]}
     playScale={0.2}
     replay={false}
     scrollEvent={[Function]}
