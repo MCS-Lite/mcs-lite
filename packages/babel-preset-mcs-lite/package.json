@@ -19,7 +19,7 @@
   },
   "dependencies": {
     "babel-plugin-add-module-exports": "^0.2.1",
-    "babel-plugin-import": "^1.6.7",
+    "babel-plugin-import": "^1.7.0",
     "babel-plugin-macros": "^2.2.0",
     "babel-plugin-recharts": "^1.1.1",
     "babel-plugin-styled-components": "^1.5.1",
