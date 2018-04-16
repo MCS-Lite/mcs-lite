@@ -7,9 +7,9 @@ const Wrapper: React.ComponentType<*> = styled.div`
   svg {
     display: inline-block;
     border-radius: 50%;
-    border: 1px solid #d1d3d4;
+    border: 1px solid ${props => props.theme.color.grayDark};
     padding: 1px;
-    background: #ffffff;
+    background: ${props => props.theme.color.white};
     box-sizing: border-box;
     object-fit: cover;
   }
