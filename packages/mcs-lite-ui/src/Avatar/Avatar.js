@@ -1,7 +1,7 @@
 // @flow
 import * as React from 'react';
 import PropTypes from 'prop-types';
-import { compose, pure } from 'recompose';
+import { pure } from 'recompose';
 import IconAvatar from './IconAvatar';
 import Wrapper from './styled-components';
 
@@ -22,8 +22,7 @@ function PureAvatar({ src, size }: Props) {
   );
 }
 
-const enhance = compose(pure);
-const Avatar: React.ComponentType<Props> = enhance(PureAvatar);
+const Avatar: React.ComponentType<Props> = pure(PureAvatar);
 Avatar.displayName = 'Avatar';
 Avatar.defaultProps = {
   size: '30',
