@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Avatar Default - Large 1`] = `
+<Avatar.macro
+  size={150}
+/>
+`;
+
+exports[`Storyshots Avatar Default 1`] = `<Avatar.macro />`;
+
+exports[`Storyshots Avatar With Url - Large 1`] = `
+<Avatar.macro
+  size={150}
+  src="//placehold.it/150x150"
+/>
+`;
+
+exports[`Storyshots Avatar With Url 1`] = `
+<Avatar.macro
+  src="//placehold.it/30x30"
+/>
+`;
