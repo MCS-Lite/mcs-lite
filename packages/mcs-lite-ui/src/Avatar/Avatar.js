@@ -21,16 +21,16 @@ function PureAvatar({ src, size }: Props) {
     </Wrapper>
   );
 }
-PureAvatar.defaultProps = {
-  size: '30',
-};
-PureAvatar.propTypes = {
-  src: PropTypes.string,
-  size: PropTypes.string,
-};
 
 const enhance = compose(pure);
 const Avatar: React.ComponentType<Props> = enhance(PureAvatar);
 Avatar.displayName = 'Avatar';
+Avatar.defaultProps = {
+  size: '30',
+};
+Avatar.propTypes = {
+  src: PropTypes.string,
+  size: PropTypes.string,
+};
 
 export default Avatar;
