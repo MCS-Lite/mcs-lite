@@ -1,7 +1,6 @@
 // @flow
 import * as React from 'react';
 import PropTypes from 'prop-types';
-import { pure } from 'recompose';
 import IconAvatar from './IconAvatar';
 import Wrapper from './styled-components';
 
@@ -10,7 +9,7 @@ type Props = {
   size?: number,
 };
 
-function PureAvatar({ src, size }: Props) {
+function Avatar({ src, size }: Props) {
   return (
     <Wrapper>
       {src ? (
@@ -22,7 +21,6 @@ function PureAvatar({ src, size }: Props) {
   );
 }
 
-const Avatar = pure(PureAvatar);
 Avatar.displayName = 'Avatar';
 Avatar.defaultProps = {
   size: 30,
