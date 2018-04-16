@@ -22,7 +22,7 @@ function PureAvatar({ src, size }: Props) {
   );
 }
 
-const Avatar: React.ComponentType<Props> = pure(PureAvatar);
+const Avatar = pure(PureAvatar);
 Avatar.displayName = 'Avatar';
 Avatar.defaultProps = {
   size: 30,
