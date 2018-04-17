@@ -13,7 +13,7 @@ const Wrapper = styled.div`
   text-align: center;
 
   * {
-    color: ${props => props.theme.color.grayBase};
+    color: ${props => props.theme.color.grayDark};
     text-decoration: none;
   }
 

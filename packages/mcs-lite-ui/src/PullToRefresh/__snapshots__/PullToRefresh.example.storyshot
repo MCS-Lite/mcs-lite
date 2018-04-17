@@ -94,7 +94,7 @@ exports[`Storyshots PullToRefresh API 1`] = `
       >
         <h2
           className="c3"
-          color="grayBase"
+          color="grayDark"
         >
           <svg
             fill="currentColor"

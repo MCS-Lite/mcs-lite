@@ -7,7 +7,7 @@ const Table = styled.table`
 
   thead tr {
     background-color: ${props => props.theme.color.grayLight};
-    color: ${props => props.theme.color.grayBase};
+    color: ${props => props.theme.color.grayDark};
 
     > * {
       padding: 8px 0 8px 16px;

@@ -47,27 +47,27 @@ export const fontSize = R.cond([
 ]);
 
 export const color = R.cond([
-  [R.propEq('kind', DEFAULT), R.path(['theme', 'color', 'grayBase'])],
+  [R.propEq('kind', DEFAULT), R.path(['theme', 'color', 'grayDark'])],
   [R.T, R.path(['theme', 'color', 'white'])],
 ]);
 
 export const backgroundColor = R.cond([
   [R.propEq('active', true), props => darken2(props.theme.color[props.kind])],
-  [R.propEq('disabled', true), R.path(['theme', 'color', 'grayDark'])],
+  [R.propEq('disabled', true), R.path(['theme', 'color', 'grayBase'])],
   [R.T, props => props.theme.color[props.kind]],
 ]);
 
 export const hoverBackgroundColor = R.cond([
-  [R.propEq('disabled', true), R.path(['theme', 'color', 'grayDark'])],
+  [R.propEq('disabled', true), R.path(['theme', 'color', 'grayBase'])],
   [R.T, props => darken1(props.theme.color[props.kind])],
 ]);
 
 export const activeBackgroundColor = R.cond([
-  [R.propEq('disabled', true), R.path(['theme', 'color', 'grayDark'])],
+  [R.propEq('disabled', true), R.path(['theme', 'color', 'grayBase'])],
   [R.T, props => darken2(props.theme.color[props.kind])],
 ]);
 
 export const borderColor = R.cond([
-  [R.propEq('disabled', true), props => darken3(props.theme.color.grayDark)],
+  [R.propEq('disabled', true), props => darken3(props.theme.color.grayBase)],
   [R.T, props => darken3(props.theme.color[props.kind])],
 ]);

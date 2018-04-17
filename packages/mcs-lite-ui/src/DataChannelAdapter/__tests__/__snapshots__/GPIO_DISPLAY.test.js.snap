@@ -99,15 +99,15 @@ exports[`should render GPIO_DISPLAY correctly with High 1`] = `
             className="c1"
           >
             <P
-              color="grayBase"
+              color="grayDark"
             >
               <Component
                 className="c2"
-                color="grayBase"
+                color="grayDark"
               >
                 <p
                   className="c2"
-                  color="grayBase"
+                  color="grayDark"
                 >
                   Low
                 </p>
@@ -115,15 +115,15 @@ exports[`should render GPIO_DISPLAY correctly with High 1`] = `
             </P>
             <div>
               <StatusLight
-                color="grayDark"
+                color="grayBase"
               >
                 <StatusLight__Svg
-                  color="grayDark"
+                  color="grayBase"
                   viewBox="0 0 20 20"
                 >
                   <svg
                     className="c3"
-                    color="grayDark"
+                    color="grayBase"
                     viewBox="0 0 20 20"
                   >
                     <circle
@@ -144,15 +144,15 @@ exports[`should render GPIO_DISPLAY correctly with High 1`] = `
             className="c1"
           >
             <P
-              color="grayBase"
+              color="grayDark"
             >
               <Component
                 className="c2"
-                color="grayBase"
+                color="grayDark"
               >
                 <p
                   className="c2"
-                  color="grayBase"
+                  color="grayDark"
                 >
                   High
                 </p>
@@ -287,15 +287,15 @@ exports[`should render GPIO_DISPLAY correctly with Low 1`] = `
             className="c1"
           >
             <P
-              color="grayBase"
+              color="grayDark"
             >
               <Component
                 className="c2"
-                color="grayBase"
+                color="grayDark"
               >
                 <p
                   className="c2"
-                  color="grayBase"
+                  color="grayDark"
                 >
                   Low
                 </p>
@@ -332,15 +332,15 @@ exports[`should render GPIO_DISPLAY correctly with Low 1`] = `
             className="c1"
           >
             <P
-              color="grayBase"
+              color="grayDark"
             >
               <Component
                 className="c2"
-                color="grayBase"
+                color="grayDark"
               >
                 <p
                   className="c2"
-                  color="grayBase"
+                  color="grayDark"
                 >
                   High
                 </p>
@@ -348,15 +348,15 @@ exports[`should render GPIO_DISPLAY correctly with Low 1`] = `
             </P>
             <div>
               <StatusLight
-                color="grayDark"
+                color="grayBase"
               >
                 <StatusLight__Svg
-                  color="grayDark"
+                  color="grayBase"
                   viewBox="0 0 20 20"
                 >
                   <svg
                     className="c4"
-                    color="grayDark"
+                    color="grayBase"
                     viewBox="0 0 20 20"
                   >
                     <circle
@@ -462,15 +462,15 @@ exports[`should render GPIO_DISPLAY correctly with default value to undefiend 1`
             className="c1"
           >
             <P
-              color="grayBase"
+              color="grayDark"
             >
               <Component
                 className="c2"
-                color="grayBase"
+                color="grayDark"
               >
                 <p
                   className="c2"
-                  color="grayBase"
+                  color="grayDark"
                 >
                   Low
                 </p>
@@ -478,15 +478,15 @@ exports[`should render GPIO_DISPLAY correctly with default value to undefiend 1`
             </P>
             <div>
               <StatusLight
-                color="grayDark"
+                color="grayBase"
               >
                 <StatusLight__Svg
-                  color="grayDark"
+                  color="grayBase"
                   viewBox="0 0 20 20"
                 >
                   <svg
                     className="c3"
-                    color="grayDark"
+                    color="grayBase"
                     viewBox="0 0 20 20"
                   >
                     <circle
@@ -507,15 +507,15 @@ exports[`should render GPIO_DISPLAY correctly with default value to undefiend 1`
             className="c1"
           >
             <P
-              color="grayBase"
+              color="grayDark"
             >
               <Component
                 className="c2"
-                color="grayBase"
+                color="grayDark"
               >
                 <p
                   className="c2"
-                  color="grayBase"
+                  color="grayDark"
                 >
                   High
                 </p>
@@ -523,15 +523,15 @@ exports[`should render GPIO_DISPLAY correctly with default value to undefiend 1`
             </P>
             <div>
               <StatusLight
-                color="grayDark"
+                color="grayBase"
               >
                 <StatusLight__Svg
-                  color="grayDark"
+                  color="grayBase"
                   viewBox="0 0 20 20"
                 >
                   <svg
                     className="c3"
-                    color="grayDark"
+                    color="grayBase"
                     viewBox="0 0 20 20"
                   >
                     <circle

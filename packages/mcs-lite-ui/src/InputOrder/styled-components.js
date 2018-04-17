@@ -8,7 +8,7 @@ export const Container: React.ComponentType<{
   display: flex;
   flex-wrap: wrap;
   align-content: flex-start;
-  border: 1px solid ${props => props.theme.color.grayDark};
+  border: 1px solid ${props => props.theme.color.grayBase};
   border-radius: 3px;
   height: ${props => props.height}px;
   background-color: ${props => props.theme.color.white};

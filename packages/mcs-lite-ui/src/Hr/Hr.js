@@ -6,13 +6,13 @@ import isString from '../utils/isString';
 export const StyledHr = styled.hr`
   flex: 1;
   border: 0;
-  border-top: 1px solid ${props => props.theme.color.grayDark};
+  border-top: 1px solid ${props => props.theme.color.grayBase};
 `;
 
 export const Content = styled.div`
   font-size: ${props => props.theme.fontSize.small};
   margin: 0 8px;
-  color: ${props => props.theme.color.grayBase};
+  color: ${props => props.theme.color.grayDark};
 `;
 
 export const Wrapper = styled.div`

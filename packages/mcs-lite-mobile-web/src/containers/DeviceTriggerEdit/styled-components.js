@@ -6,7 +6,7 @@ import MobileContentWrapper from 'mcs-lite-ui/lib/MobileContentWrapper';
 
 export const Item = styled(MobileContentWrapper)`
   padding: 8px 16px;
-  border-bottom: 1px solid ${props => props.theme.color.grayDark};
+  border-bottom: 1px solid ${props => props.theme.color.grayBase};
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -24,7 +24,7 @@ export const StyledSamll = styled(Small)`
   display: block;
   margin-top: 4px;
   margin-bottom: 8px;
-  color: ${props => props.theme.color.grayBase};
+  color: ${props => props.theme.color.grayDark};
 `;
 
 export const ButtonWrapper = styled.div`

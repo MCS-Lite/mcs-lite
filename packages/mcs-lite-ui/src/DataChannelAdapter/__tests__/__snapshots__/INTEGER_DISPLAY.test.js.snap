@@ -162,19 +162,19 @@ exports[`should render INTEGER_DISPLAY correctly with unit 1`] = `
           </Heading>
         </DisplayUnitValue__StyledHeading>
         <DisplayUnitValue__StyledP
-          color="grayBase"
+          color="grayDark"
         >
           <P
             className="c3"
-            color="grayBase"
+            color="grayDark"
           >
             <Component
               className="c3 c4"
-              color="grayBase"
+              color="grayDark"
             >
               <p
                 className="c3 c4"
-                color="grayBase"
+                color="grayDark"
               >
                 攝氏
               </p>

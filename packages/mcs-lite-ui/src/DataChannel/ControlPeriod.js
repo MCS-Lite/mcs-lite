@@ -27,7 +27,7 @@ const ControlPeriod = ({
 }) => (
   <Container {...otherProps}>
     <label htmlFor="input">
-      <P color="grayBase">Period</P>
+      <P color="grayDark">Period</P>
     </label>
     <InputWrapper>
       <StyledInput

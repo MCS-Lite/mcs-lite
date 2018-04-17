@@ -25,7 +25,7 @@ export const StyledP = styled(P)`
 const DisplayUnitValue = ({ value, unit, ...otherProps }) => (
   <Container {...otherProps}>
     <StyledHeading color="primary">{value}</StyledHeading>
-    {unit && <StyledP color="grayBase">{unit}</StyledP>}
+    {unit && <StyledP color="grayDark">{unit}</StyledP>}
   </Container>
 );
 

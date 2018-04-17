@@ -21,7 +21,7 @@ const Wrapper = styled.div`
   }
 
   * {
-    color: ${props => props.theme.color.grayBase};
+    color: ${props => props.theme.color.grayDark};
     text-decoration: none;
   }
 `;

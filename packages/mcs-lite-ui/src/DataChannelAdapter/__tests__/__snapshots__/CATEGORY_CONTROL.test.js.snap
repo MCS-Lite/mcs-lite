@@ -238,15 +238,15 @@ exports[`should render CATEGORY_CONTROL correctly with default value to N/A 1`] 
                 className="c2"
               >
                 <P
-                  color="grayBase"
+                  color="grayDark"
                 >
                   <Component
                     className="c3"
-                    color="grayBase"
+                    color="grayDark"
                   >
                     <p
                       className="c3"
-                      color="grayBase"
+                      color="grayDark"
                     >
                       name1
                     </p>
@@ -261,15 +261,15 @@ exports[`should render CATEGORY_CONTROL correctly with default value to N/A 1`] 
                 className="c2"
               >
                 <P
-                  color="grayBase"
+                  color="grayDark"
                 >
                   <Component
                     className="c3"
-                    color="grayBase"
+                    color="grayDark"
                   >
                     <p
                       className="c3"
-                      color="grayBase"
+                      color="grayDark"
                     >
                       name2
                     </p>
@@ -291,19 +291,19 @@ exports[`should render CATEGORY_CONTROL correctly with default value to N/A 1`] 
             className="c4"
           >
             <ControlRange__ValueWrapper
-              color="grayBase"
+              color="grayDark"
             >
               <P
                 className="c5"
-                color="grayBase"
+                color="grayDark"
               >
                 <Component
                   className="c5 c3"
-                  color="grayBase"
+                  color="grayDark"
                 >
                   <div
                     className="c5 c3"
-                    color="grayBase"
+                    color="grayDark"
                   >
                     Current value: 
                     <ControlRange__Value
@@ -601,15 +601,15 @@ exports[`should render CATEGORY_CONTROL correctly with first item 1`] = `
                 className="c2"
               >
                 <P
-                  color="grayBase"
+                  color="grayDark"
                 >
                   <Component
                     className="c3"
-                    color="grayBase"
+                    color="grayDark"
                   >
                     <p
                       className="c3"
-                      color="grayBase"
+                      color="grayDark"
                     >
                       name1
                     </p>
@@ -624,15 +624,15 @@ exports[`should render CATEGORY_CONTROL correctly with first item 1`] = `
                 className="c2"
               >
                 <P
-                  color="grayBase"
+                  color="grayDark"
                 >
                   <Component
                     className="c3"
-                    color="grayBase"
+                    color="grayDark"
                   >
                     <p
                       className="c3"
-                      color="grayBase"
+                      color="grayDark"
                     >
                       name2
                     </p>
@@ -654,19 +654,19 @@ exports[`should render CATEGORY_CONTROL correctly with first item 1`] = `
             className="c4"
           >
             <ControlRange__ValueWrapper
-              color="grayBase"
+              color="grayDark"
             >
               <P
                 className="c5"
-                color="grayBase"
+                color="grayDark"
               >
                 <Component
                   className="c5 c3"
-                  color="grayBase"
+                  color="grayDark"
                 >
                   <div
                     className="c5 c3"
-                    color="grayBase"
+                    color="grayDark"
                   >
                     Current value: 
                     <ControlRange__Value
@@ -966,15 +966,15 @@ exports[`should render CATEGORY_CONTROL correctly with second item 1`] = `
                 className="c2"
               >
                 <P
-                  color="grayBase"
+                  color="grayDark"
                 >
                   <Component
                     className="c3"
-                    color="grayBase"
+                    color="grayDark"
                   >
                     <p
                       className="c3"
-                      color="grayBase"
+                      color="grayDark"
                     >
                       name1
                     </p>
@@ -989,15 +989,15 @@ exports[`should render CATEGORY_CONTROL correctly with second item 1`] = `
                 className="c2"
               >
                 <P
-                  color="grayBase"
+                  color="grayDark"
                 >
                   <Component
                     className="c3"
-                    color="grayBase"
+                    color="grayDark"
                   >
                     <p
                       className="c3"
-                      color="grayBase"
+                      color="grayDark"
                     >
                       name2
                     </p>
@@ -1019,19 +1019,19 @@ exports[`should render CATEGORY_CONTROL correctly with second item 1`] = `
             className="c4"
           >
             <ControlRange__ValueWrapper
-              color="grayBase"
+              color="grayDark"
             >
               <P
                 className="c5"
-                color="grayBase"
+                color="grayDark"
               >
                 <Component
                   className="c5 c3"
-                  color="grayBase"
+                  color="grayDark"
                 >
                   <div
                     className="c5 c3"
-                    color="grayBase"
+                    color="grayDark"
                   >
                     Current value: 
                     <ControlRange__Value

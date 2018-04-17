@@ -11,7 +11,7 @@ export const StyledMenu: React.ComponentType<{
   position: absolute;
   overflow-y: hidden;
   overflow-x: hidden;
-  border: 1px solid ${props => props.theme.color.grayDark};
+  border: 1px solid ${props => props.theme.color.grayBase};
   box-sizing: border-box;
   width: ${props => props.width}px;
 
@@ -41,7 +41,7 @@ export const NoRowWrapper = styled.div`
   display: flex;
   align-items: center;
   padding: 0 15px;
-  color: ${props => props.theme.color.grayBase};
+  color: ${props => props.theme.color.grayDark};
 `;
 
 export const FakeInputValue = styled(Input)`

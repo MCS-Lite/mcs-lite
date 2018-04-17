@@ -133,17 +133,17 @@ exports[`Storyshots P With color props 1`] = `
   </div>
   <div
     className="c0 c2"
-    color="grayBase"
-  >
-    Paragraph 
-    grayBase
-  </div>
-  <div
-    className="c0 c3"
     color="grayDark"
   >
     Paragraph 
     grayDark
+  </div>
+  <div
+    className="c0 c3"
+    color="grayBase"
+  >
+    Paragraph 
+    grayBase
   </div>
   <div
     className="c0 c4"

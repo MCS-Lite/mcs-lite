@@ -10,7 +10,7 @@ const Switch = styled.div`
   transition: background-color cubic-bezier(0.47, 0, 0.75, 0.72) 0.2s;
   cursor: pointer;
   background-color: ${props =>
-    props.checked ? props.theme.color[props.kind] : props.theme.color.grayBase};
+    props.checked ? props.theme.color[props.kind] : props.theme.color.grayDark};
   transform-origin: 0 0;
 
   &::after {

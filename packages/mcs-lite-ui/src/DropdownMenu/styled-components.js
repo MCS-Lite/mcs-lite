@@ -21,5 +21,5 @@ export const StyledButton: React.ComponentType<{
 `;
 
 export const StyledMenu = styled(Menu)`
-  border: 1px solid ${props => props.theme.color.grayDark};
+  border: 1px solid ${props => props.theme.color.grayBase};
 `;

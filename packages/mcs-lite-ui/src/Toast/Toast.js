@@ -9,7 +9,7 @@ import P from '../P';
 const lighten = opacity(0.1);
 
 const mapColorByKind = R.cond([
-  [R.propEq('kind', 'default'), R.path(['theme', 'color', 'grayBase'])],
+  [R.propEq('kind', 'default'), R.path(['theme', 'color', 'grayDark'])],
   [R.T, props => R.path(['theme', 'color', props.kind])],
 ]);
 

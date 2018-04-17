@@ -33,7 +33,7 @@ export const StyledButton = styled(Button)`
 
 export const TabWrapper = styled.div`
   display: inline-block;
-  border-bottom: 1px solid ${props => props.theme.color.grayDark};
+  border-bottom: 1px solid ${props => props.theme.color.grayBase};
   margin-bottom: 10px;
 `;
 
@@ -46,14 +46,14 @@ export const StyledLoadableCodeMirror = styled(LoadableCodeMirror)`
     height: auto;
     border: 1px solid
       ${props =>
-        props.error ? props.theme.color.error : props.theme.color.grayDark};
+        props.error ? props.theme.color.error : props.theme.color.grayBase};
     border-radius: 3px;
     color: ${props => props.theme.color.black};
   }
 
   .CodeMirror-linenumber {
     text-align: center;
-    color: ${props => props.theme.color.grayDark};
+    color: ${props => props.theme.color.grayBase};
     background-color: ${props => props.theme.color.grayLight};
   }
 

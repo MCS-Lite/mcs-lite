@@ -27,7 +27,7 @@ const Account = ({ userName, email, signout, getMessages: t }) => (
       <Heading level={5}>{email}</Heading>
     </Body>
     <Footer>
-      <VersionWrapper color="grayBase">
+      <VersionWrapper color="grayDark">
         <Small>v{VERSION}</Small>
       </VersionWrapper>
       <StyledLink to={updatePathname('/devices')}>

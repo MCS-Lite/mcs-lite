@@ -25,7 +25,7 @@ exports[`should renders <Account> correctly 1`] = `
   </styled.div>
   <styled.footer>
     <Styled(P)
-      color="grayBase"
+      color="grayDark"
     >
       <Small>
         v

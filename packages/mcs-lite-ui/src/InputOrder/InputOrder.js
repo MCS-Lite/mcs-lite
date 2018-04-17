@@ -42,7 +42,7 @@ class InputOrder extends React.Component<{
         {items.length === 0 &&
           placeholder && (
             <div>
-              <P color="grayDark">{placeholder}</P>
+              <P color="grayBase">{placeholder}</P>
             </div>
           )}
 

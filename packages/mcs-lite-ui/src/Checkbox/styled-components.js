@@ -21,7 +21,7 @@ export const Container: React.ComponentType<{
   color: ${props => {
     if (props.checked) {
       return props.kind === 'default'
-        ? props.theme.color.grayBase
+        ? props.theme.color.grayDark
         : props.theme.color.white;
     }
     return 'transparent';
@@ -32,7 +32,7 @@ export const Container: React.ComponentType<{
     ${props =>
       props.checked
         ? darken3(props.theme.color[props.kind])
-        : props.theme.color.grayDark};
+        : props.theme.color.grayBase};
 `;
 
 export const Content: React.ComponentType<{ checked: boolean }> = styled.div`

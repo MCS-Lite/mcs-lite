@@ -500,7 +500,7 @@ exports[`Storyshots InputOrder With height props 1`] = `
   <div>
     <p
       className="c1 c2"
-      color="grayDark"
+      color="grayBase"
     >
       Please choose a device first
     </p>
@@ -955,7 +955,7 @@ exports[`Storyshots InputOrder With placeholder props 1`] = `
   <div>
     <p
       className="c1 c2"
-      color="grayDark"
+      color="grayBase"
     >
       Please choose a device first
     </p>

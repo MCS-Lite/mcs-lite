@@ -89,17 +89,17 @@ exports[`Storyshots Heading With color props 1`] = `
   </h2>
   <h2
     className="c1"
-    color="grayBase"
-  >
-    Level 2 
-    grayBase
-  </h2>
-  <h2
-    className="c2"
     color="grayDark"
   >
     Level 2 
     grayDark
+  </h2>
+  <h2
+    className="c2"
+    color="grayBase"
+  >
+    Level 2 
+    grayBase
   </h2>
   <h2
     className="c3"

@@ -24,7 +24,7 @@ const Container: React.ComponentType<Props> = styled.div`
   background-color: ${props => props.theme.color.grayLight};
   border: 1px ${props => (props.src && !props.canDrop ? 'solid' : 'dashed')}
     ${props =>
-      props.canDrop ? props.theme.color.primary : props.theme.color.grayDark};
+      props.canDrop ? props.theme.color.primary : props.theme.color.grayBase};
   border-radius: 3px;
   transition: all cubic-bezier(0.47, 0, 0.75, 0.72) 0.3s;
 

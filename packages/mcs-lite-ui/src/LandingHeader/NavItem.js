@@ -20,13 +20,13 @@ const NavItem = styled(BaseComponent)`
   cursor: pointer;
   text-decoration: none;
   color: ${props =>
-    props.active ? props.theme.color.black : props.theme.color.grayBase};
+    props.active ? props.theme.color.black : props.theme.color.grayDark};
   transition: color cubic-bezier(0.47, 0, 0.75, 0.72) 0.3s;
   cursor: ${props => (props.disabled ? 'default' : 'pointer')};
 
   &:hover {
     color: ${props =>
-      props.disabled ? props.theme.color.grayBase : props.theme.color.black};
+      props.disabled ? props.theme.color.grayDark : props.theme.color.black};
   }
 
   path {

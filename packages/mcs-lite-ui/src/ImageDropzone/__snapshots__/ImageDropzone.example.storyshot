@@ -102,7 +102,7 @@ exports[`Storyshots ImageDropzone With children 1`] = `
     />
     <p
       className="c1 c2"
-      color="grayDark"
+      color="grayBase"
     >
       Drop an image here to upload !
     </p>
@@ -221,7 +221,7 @@ exports[`Storyshots ImageDropzone With isLoading 1`] = `
     />
     <p
       className="c3 c4"
-      color="grayDark"
+      color="grayBase"
     >
       Drop an image here to upload !
     </p>

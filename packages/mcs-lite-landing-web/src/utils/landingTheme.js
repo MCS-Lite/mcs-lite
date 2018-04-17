@@ -7,7 +7,7 @@ const landingTheme = {
   color: {
     ...theme.color,
     black: '#40494D',
-    grayBase: '#75868C',
+    grayDark: '#75868C',
   },
   base: {
     ...theme.base,
