@@ -6,16 +6,30 @@ import Avatar from './Avatar';
 
 storiesOf('Avatar', module)
   .add(
-    'API',
-    withInfo({
-      text: '',
-      inline: true,
-    })(() => <Avatar size={30} src="//placehold.it/50x50" />),
-  )
-  .add(
-    'default',
+    'Default',
     withInfo({
       text: '',
       inline: true,
     })(() => <Avatar />),
+  )
+  .add(
+    'Default - Large',
+    withInfo({
+      text: '',
+      inline: true,
+    })(() => <Avatar size={150} />),
+  )
+  .add(
+    'With Url',
+    withInfo({
+      text: '',
+      inline: true,
+    })(() => <Avatar src="//placehold.it/30x30" />),
+  )
+  .add(
+    'With Url - Large',
+    withInfo({
+      text: '',
+      inline: true,
+    })(() => <Avatar size={150} src="//placehold.it/150x150" />),
   );
