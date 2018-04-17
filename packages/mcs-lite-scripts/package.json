@@ -9,10 +9,7 @@
     "email": "evenchange4@gmail.com"
   },
   "homepage": "https://github.com/MCS-Lite/mcs-lite#readme",
-  "files": [
-    "lib",
-    "bin"
-  ],
+  "files": ["lib", "bin"],
   "license": "MIT",
   "bin": {
     "exports-all": "bin/exports-all.js",
@@ -39,8 +36,6 @@
     "babel-cli": "6.26.0"
   },
   "babel": {
-    "presets": [
-      "mcs-lite"
-    ]
+    "presets": ["mcs-lite"]
   }
 }
