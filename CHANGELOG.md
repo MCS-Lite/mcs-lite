@@ -1,5 +1,23 @@
 # MCS Lite changelogs
 
+## Released (2018-04-17)
+
+* babel-preset-mcs-lite: 0.3.23 => 0.3.24
+* eslint-config-mcs-lite: 0.6.14 => 0.6.15
+* mcs-lite-admin-web: 0.2.16 => 0.2.17
+* mcs-lite-connect: 0.3.26 => 0.3.27
+* mcs-lite-design: 0.2.18 => 0.2.19
+* mcs-lite-icon: 0.3.25 => 0.3.26
+* mcs-lite-landing-web: 0.1.21 => 0.1.22 (private)
+* mcs-lite-mobile-web: 0.4.29 => 0.4.30
+* mcs-lite-scripts: 0.3.25 => 0.3.26
+* mcs-lite-theme: 0.3.23 => 0.3.24
+* mcs-lite-translation: 0.1.23 => 0.1.24
+* mcs-lite-ui: 0.7.3 => 0.7.4
+* react-intl-inject-hoc: 0.2.26 => 0.2.27
+
+feat(avatar): add Avatar component #602
+
 ## Released (2018-04-12)
 
 * babel-preset-mcs-lite: 0.3.22 => 0.3.23

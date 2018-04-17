@@ -8,7 +8,7 @@
     "eslint-check":
       "eslint --print-config .eslintrc | eslint-config-prettier-check",
     "flow": "flow check",
-    "release": "lerna publish --changelog-preset=angular",
+    "release": "lerna publish",
     "prerelease": "./tasks/build.sh",
     "danger": "danger ci",
     "format":

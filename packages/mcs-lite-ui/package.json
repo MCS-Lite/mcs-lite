@@ -9,9 +9,7 @@
     "email": "evenchange4@gmail.com"
   },
   "homepage": "https://github.com/MCS-Lite/mcs-lite#readme",
-  "files": [
-    "lib"
-  ],
+  "files": ["lib"],
   "main": "lib/index.js",
   "license": "MIT",
   "scripts": {
@@ -19,7 +17,8 @@
     "start": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "prebuild": "npm run clean",
-    "build": "NODE_ENV=production babel src --out-dir lib --ignore example.js,test.js",
+    "build":
+      "NODE_ENV=production babel src --out-dir lib --ignore example.js,test.js",
     "createEntryFile": "exports-all 'lib/[A-Z]*' 'lib/index.js'",
     "postbuild": "npm run createEntryFile",
     "test": "NODE_ENV='test' TZ='UTC' jest --coverage --runInBand",
@@ -32,10 +31,7 @@
       "!src/**/*.test.{js,jsx}",
       "!src/**/*.example.{js,jsx}"
     ],
-    "testPathIgnorePatterns": [
-      "<rootDir>/node_modules/",
-      "<rootDir>/lib/"
-    ]
+    "testPathIgnorePatterns": ["<rootDir>/node_modules/", "<rootDir>/lib/"]
   },
   "devDependencies": {
     "@storybook/addon-actions": "3.4.1",
