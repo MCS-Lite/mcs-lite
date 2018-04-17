@@ -1,5 +1,5 @@
-// flow-typed signature: 2d5d2167b399d10e16ddc719ea6fc62e
-// flow-typed version: 1be5dad600/styled-components_v2.x.x/flow_>=v0.53.x
+// flow-typed signature: 91ccd74ce4e37637a911a4226cff669f
+// flow-typed version: c26ca89087/styled-components_v3.x.x/flow_>=v0.57.x
 
 // @flow
 
@@ -16,6 +16,8 @@ type $npm$styledComponents$TaggedTemplateLiteral<R> = {|
 // ---- FUNCTIONAL COMPONENT DEFINITIONS ----
 type $npm$styledComponents$ReactComponentFunctional<Props, DefaultProps = *> = {
   defaultProps: DefaultProps,
+} & {
+  propTypes: Object,
 } & $npm$styledComponents$ReactComponentFunctionalUndefinedDefaultProps<Props>;
 
 type $npm$styledComponents$ReactComponentFunctionalUndefinedDefaultProps<
@@ -231,6 +233,9 @@ class Npm$StyledComponents$ServerStyleSheet {
   collectStyles: (children: any) => React$Node;
   getStyleTags: () => string;
   getStyleElement: () => React$Node;
+  interleaveWithNodeStream: (
+    readableStream: stream$Readable,
+  ) => stream$Readable;
 }
 
 type $npm$styledComponents$StyledComponentsComponentListKeys = $Subtype<

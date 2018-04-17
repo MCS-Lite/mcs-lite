@@ -21,7 +21,7 @@ class Tooltip extends React.Component<
       arrow: Object,
     },
     // Note: innerRef for the problem of outside click in dialog
-    innerRef?: (ref: React.ElementRef<typeof StyledCard>) => void,
+    innerRef?: (ref: ?React.ElementRef<typeof StyledCard>) => void,
   },
   { isOpen: boolean },
 > {
@@ -31,7 +31,7 @@ class Tooltip extends React.Component<
   state = { isOpen: false };
   onMouseOver = () => this.setState(() => ({ isOpen: true }));
   onHide = () => this.setState(() => ({ isOpen: false }));
-  onRef = (target: React.ElementRef<any>) => {
+  onRef = (target: ?React.ElementRef<any>) => {
     this.target = target;
   };
   target: ?React.ElementRef<'div'>;

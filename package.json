@@ -19,24 +19,24 @@
   },
   "workspaces": ["packages/*"],
   "devDependencies": {
-    "babel-eslint": "8.2.2",
+    "babel-eslint": "8.2.3",
     "codecov": "3.0.0",
-    "danger": "3.4.5",
+    "danger": "3.4.7",
     "eslint": "4.19.1",
     "eslint-config-airbnb": "16.1.0",
     "eslint-config-prettier": "2.9.0",
-    "eslint-plugin-import": "2.10.0",
+    "eslint-plugin-import": "2.11.0",
     "eslint-plugin-jest": "21.15.0",
     "eslint-plugin-jsx-a11y": "6.0.3",
     "eslint-plugin-prettier": "2.6.0",
     "eslint-plugin-react": "7.7.0",
-    "flow-bin": "0.69.0",
+    "flow-bin": "0.70.0",
     "husky": "0.14.3",
-    "lerna": "2.10.1",
+    "lerna": "2.10.2",
     "lerna-changelog": "0.7.0",
     "license-checker": "18.0.0",
     "lint-staged": "7.0.4",
-    "prettier": "1.11.1"
+    "prettier": "1.12.1"
   },
   "lint-staged": {
     "*/!(mcs-lite-introduction)/*.{js,json,md}": [
