@@ -27,7 +27,7 @@ Avatar.defaultProps = {
 };
 Avatar.propTypes = {
   src: PropTypes.string,
-  size: PropTypes.string,
+  size: PropTypes.number,
 };
 
 export default Avatar;
