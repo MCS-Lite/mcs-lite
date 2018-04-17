@@ -24,7 +24,7 @@ const Section2 = ({ getMessages: t }) => (
         <Heading level={2}>{t('title')}</Heading>
 
         <SpaceTop height={10}>
-          <Heading level={4} color="grayBase">
+          <Heading level={4} color="grayDark">
             {t('desc')}
           </Heading>
         </SpaceTop>

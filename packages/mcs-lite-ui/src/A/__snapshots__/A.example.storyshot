@@ -236,17 +236,17 @@ exports[`Storyshots A With color props 1`] = `
   </a>
   <a
     className="c1"
-    color="grayBase"
-  >
-    A link 
-    grayBase
-  </a>
-  <a
-    className="c2"
     color="grayDark"
   >
     A link 
     grayDark
+  </a>
+  <a
+    className="c2"
+    color="grayBase"
+  >
+    A link 
+    grayBase
   </a>
   <a
     className="c3"

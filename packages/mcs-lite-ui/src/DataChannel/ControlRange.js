@@ -38,7 +38,7 @@ export const LabelItem = styled.div`
     content: '';
     border-right-width: 1px;
     border-right-style: solid;
-    border-right-color: ${props => props.theme.color.grayDark};
+    border-right-color: ${props => props.theme.color.grayBase};
     height: 4px;
     margin-top: 5px;
     margin-bottom: 8px;
@@ -75,13 +75,13 @@ const ControlRange = ({
       <LabelWrapper labels={labels}>
         {labels.map(e => (
           <LabelItem key={e}>
-            <P color="grayBase">{e}</P>
+            <P color="grayDark">{e}</P>
           </LabelItem>
         ))}
       </LabelWrapper>
 
       <InputWrapper labels={labels}>
-        <ValueWrapper color="grayBase">
+        <ValueWrapper color="grayDark">
           Current value:&nbsp;
           <Value color="primary">{valueMapper(value)}</Value>
         </ValueWrapper>

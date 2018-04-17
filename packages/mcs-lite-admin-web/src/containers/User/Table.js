@@ -28,7 +28,7 @@ export const StyledTable = styled(RVTable)`
 
   .ReactVirtualized__Table__headerRow {
     background-color: ${props => props.theme.color.grayLight};
-    color: ${props => props.theme.color.grayBase};
+    color: ${props => props.theme.color.grayDark};
     font-weight: normal;
     border-bottom: 1px solid ${props => props.theme.base.bodyBackgroundColor};
     padding-right: 0 !important; /* TODO: donot use important */
@@ -146,11 +146,11 @@ class Table extends React.PureComponent {
 
   userNameCellRenderer = ({ rowData }) => {
     const { userName, isActive } = rowData;
-    return <P color={isActive ? 'black' : 'grayDark'}>{userName}</P>;
+    return <P color={isActive ? 'black' : 'grayBase'}>{userName}</P>;
   };
   emailCellRenderer = ({ rowData }) => {
     const { email, isActive } = rowData;
-    return <P color={isActive ? 'black' : 'grayDark'}>{email}</P>;
+    return <P color={isActive ? 'black' : 'grayBase'}>{email}</P>;
   };
 
   editCellRenderer = ({ rowData }) => {

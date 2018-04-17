@@ -19,7 +19,7 @@ export const Header = styled.header`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid ${props => props.theme.color.grayDark};
+  border-bottom: 1px solid ${props => props.theme.color.grayBase};
 `;
 
 export const StyledA = styled(A)`

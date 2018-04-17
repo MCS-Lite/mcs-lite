@@ -28,9 +28,9 @@ const DisplayStatus = ({ value, labels, ...otherProps }) => (
   <Container {...otherProps}>
     {labels.map((label, index) => (
       <ItemWrapper key={label}>
-        <P color="grayBase">{label}</P>
+        <P color="grayDark">{label}</P>
         <div>
-          <StatusLight color={value === index ? 'success' : 'grayDark'} />
+          <StatusLight color={value === index ? 'success' : 'grayBase'} />
         </div>
       </ItemWrapper>
     ))}

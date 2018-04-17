@@ -20,7 +20,7 @@ export const Item = styled.div`
   height: ${ITEM_HEIGHT}px;
   user-select: none;
   color: ${props =>
-    props.active ? props.theme.color.black : props.theme.color.grayDark};
+    props.active ? props.theme.color.black : props.theme.color.grayBase};
 `;
 
 class Picker extends React.Component {

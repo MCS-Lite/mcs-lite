@@ -69,7 +69,7 @@ exports[`Storyshots DataPointAreaChart RechartTooltip 1`] = `
   </p>
   <div
     className="c3"
-    color="grayBase"
+    color="grayDark"
   >
     <small
       className="c4"

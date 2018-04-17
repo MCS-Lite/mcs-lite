@@ -10,7 +10,7 @@ export const StyledCard = styled(Card)`
   max-width: 280px;
   padding: 10px;
   background-color: ${props => props.theme.color.grayLight};
-  border: 1px solid ${props => props.theme.color.grayDark};
+  border: 1px solid ${props => props.theme.color.grayBase};
 `;
 
 class Popover extends React.Component<

@@ -23,7 +23,7 @@ export const StyledLabel: React.ComponentType<*> = styled.label`
 
 export const BoxCircle: React.ComponentType<{ value: boolean }> = styled.circle`
   fill: ${props => props.theme.color.primary};
-  stroke: ${props => (props.value ? '#067CB0' : props.theme.color.grayDark)};
+  stroke: ${props => (props.value ? '#067CB0' : props.theme.color.grayBase)};
   stroke-width: 1px;
   transition: stroke 0.3s cubic-bezier(0.23, 1, 0.32, 1);
 `;

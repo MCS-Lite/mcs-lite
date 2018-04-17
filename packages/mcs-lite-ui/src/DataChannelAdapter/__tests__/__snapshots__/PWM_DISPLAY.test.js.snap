@@ -78,15 +78,15 @@ exports[`should render PWM_DISPLAY correctly with default value to N/A 1`] = `
           key="Value"
         >
           <P
-            color="grayBase"
+            color="grayDark"
           >
             <Component
               className="c1"
-              color="grayBase"
+              color="grayDark"
             >
               <p
                 className="c1"
-                color="grayBase"
+                color="grayDark"
               >
                 Value
               </p>
@@ -119,15 +119,15 @@ exports[`should render PWM_DISPLAY correctly with default value to N/A 1`] = `
           key="Period"
         >
           <P
-            color="grayBase"
+            color="grayDark"
           >
             <Component
               className="c1"
-              color="grayBase"
+              color="grayDark"
             >
               <p
                 className="c1"
-                color="grayBase"
+                color="grayDark"
               >
                 Period
               </p>
@@ -243,15 +243,15 @@ exports[`should render PWM_DISPLAY correctly with max 1`] = `
           key="Value"
         >
           <P
-            color="grayBase"
+            color="grayDark"
           >
             <Component
               className="c1"
-              color="grayBase"
+              color="grayDark"
             >
               <p
                 className="c1"
-                color="grayBase"
+                color="grayDark"
               >
                 Value
               </p>
@@ -284,15 +284,15 @@ exports[`should render PWM_DISPLAY correctly with max 1`] = `
           key="Period"
         >
           <P
-            color="grayBase"
+            color="grayDark"
           >
             <Component
               className="c1"
-              color="grayBase"
+              color="grayDark"
             >
               <p
                 className="c1"
-                color="grayBase"
+                color="grayDark"
               >
                 Period
               </p>
@@ -408,15 +408,15 @@ exports[`should render PWM_DISPLAY correctly with zero 1`] = `
           key="Value"
         >
           <P
-            color="grayBase"
+            color="grayDark"
           >
             <Component
               className="c1"
-              color="grayBase"
+              color="grayDark"
             >
               <p
                 className="c1"
-                color="grayBase"
+                color="grayDark"
               >
                 Value
               </p>
@@ -449,15 +449,15 @@ exports[`should render PWM_DISPLAY correctly with zero 1`] = `
           key="Period"
         >
           <P
-            color="grayBase"
+            color="grayDark"
           >
             <Component
               className="c1"
-              color="grayBase"
+              color="grayDark"
             >
               <p
                 className="c1"
-                color="grayBase"
+                color="grayDark"
               >
                 Period
               </p>

@@ -13,7 +13,7 @@ exports[`Storyshots StatusLight API 1`] = `
 
 <svg
   className="c0"
-  color="grayDark"
+  color="grayBase"
   viewBox="0 0 20 20"
 >
   <circle
@@ -161,20 +161,6 @@ exports[`Storyshots StatusLight With color props 1`] = `
   <div>
     <svg
       className="c1"
-      color="grayBase"
-      viewBox="0 0 20 20"
-    >
-      <circle
-        cx="10"
-        cy="10"
-        r="10"
-      />
-    </svg>
-    grayBase
-  </div>
-  <div>
-    <svg
-      className="c2"
       color="grayDark"
       viewBox="0 0 20 20"
     >
@@ -185,6 +171,20 @@ exports[`Storyshots StatusLight With color props 1`] = `
       />
     </svg>
     grayDark
+  </div>
+  <div>
+    <svg
+      className="c2"
+      color="grayBase"
+      viewBox="0 0 20 20"
+    >
+      <circle
+        cx="10"
+        cy="10"
+        r="10"
+      />
+    </svg>
+    grayBase
   </div>
   <div>
     <svg

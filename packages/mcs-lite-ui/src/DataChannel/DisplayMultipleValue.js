@@ -31,7 +31,7 @@ const DisplayMultipleValue = ({ items, ...otherProps }) => (
   <Container {...otherProps}>
     {items.map(({ name, value }) => (
       <div key={name}>
-        <P color="grayBase">{name}</P>
+        <P color="grayDark">{name}</P>
         <StyledHeading color="primary">{value}</StyledHeading>
       </div>
     ))}

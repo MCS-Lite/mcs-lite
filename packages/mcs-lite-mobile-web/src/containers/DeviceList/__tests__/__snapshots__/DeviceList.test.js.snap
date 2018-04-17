@@ -70,7 +70,7 @@ exports[`should renders <DeviceList> correctly when Filter open 1`] = `
     <PullToRefresh
       IconArrow={
         <Heading
-          color="grayBase"
+          color="grayDark"
           level={2}
         >
           <IconGoDown
@@ -80,7 +80,7 @@ exports[`should renders <DeviceList> correctly when Filter open 1`] = `
       }
       IconLoading={
         <Heading
-          color="grayBase"
+          color="grayDark"
           level={2}
         >
           <Spin>
@@ -172,7 +172,7 @@ exports[`should renders <DeviceList> correctly with one device 1`] = `
     <PullToRefresh
       IconArrow={
         <Heading
-          color="grayBase"
+          color="grayDark"
           level={2}
         >
           <IconGoDown
@@ -182,7 +182,7 @@ exports[`should renders <DeviceList> correctly with one device 1`] = `
       }
       IconLoading={
         <Heading
-          color="grayBase"
+          color="grayDark"
           level={2}
         >
           <Spin>
@@ -281,7 +281,7 @@ exports[`should renders <DeviceList> correctly without devices 1`] = `
     <PullToRefresh
       IconArrow={
         <Heading
-          color="grayBase"
+          color="grayDark"
           level={2}
         >
           <IconGoDown
@@ -291,7 +291,7 @@ exports[`should renders <DeviceList> correctly without devices 1`] = `
       }
       IconLoading={
         <Heading
-          color="grayBase"
+          color="grayDark"
           level={2}
         >
           <Spin>

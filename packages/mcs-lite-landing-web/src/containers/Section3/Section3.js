@@ -37,7 +37,7 @@ const Section3 = ({ getMessages: t }) => (
       <TextCenter>
         <Heading level={2}>{t('title')}</Heading>
         <SpaceTop height={10}>
-          <Heading level={4} color="grayBase">
+          <Heading level={4} color="grayDark">
             {t('desc')}
           </Heading>
         </SpaceTop>

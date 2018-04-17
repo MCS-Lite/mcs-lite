@@ -97,15 +97,15 @@ exports[`should render SWITCH_DISPLAY correctly with default value to false 1`] 
             className="c1"
           >
             <P
-              color="grayBase"
+              color="grayDark"
             >
               <Component
                 className="c2"
-                color="grayBase"
+                color="grayDark"
               >
                 <p
                   className="c2"
-                  color="grayBase"
+                  color="grayDark"
                 >
                   OFF
                 </p>
@@ -142,15 +142,15 @@ exports[`should render SWITCH_DISPLAY correctly with default value to false 1`] 
             className="c1"
           >
             <P
-              color="grayBase"
+              color="grayDark"
             >
               <Component
                 className="c2"
-                color="grayBase"
+                color="grayDark"
               >
                 <p
                   className="c2"
-                  color="grayBase"
+                  color="grayDark"
                 >
                   ON
                 </p>
@@ -158,15 +158,15 @@ exports[`should render SWITCH_DISPLAY correctly with default value to false 1`] 
             </P>
             <div>
               <StatusLight
-                color="grayDark"
+                color="grayBase"
               >
                 <StatusLight__Svg
-                  color="grayDark"
+                  color="grayBase"
                   viewBox="0 0 20 20"
                 >
                   <svg
                     className="c4"
-                    color="grayDark"
+                    color="grayBase"
                     viewBox="0 0 20 20"
                   >
                     <circle
@@ -285,15 +285,15 @@ exports[`should render SWITCH_DISPLAY correctly with false value 1`] = `
             className="c1"
           >
             <P
-              color="grayBase"
+              color="grayDark"
             >
               <Component
                 className="c2"
-                color="grayBase"
+                color="grayDark"
               >
                 <p
                   className="c2"
-                  color="grayBase"
+                  color="grayDark"
                 >
                   OFF
                 </p>
@@ -330,15 +330,15 @@ exports[`should render SWITCH_DISPLAY correctly with false value 1`] = `
             className="c1"
           >
             <P
-              color="grayBase"
+              color="grayDark"
             >
               <Component
                 className="c2"
-                color="grayBase"
+                color="grayDark"
               >
                 <p
                   className="c2"
-                  color="grayBase"
+                  color="grayDark"
                 >
                   ON
                 </p>
@@ -346,15 +346,15 @@ exports[`should render SWITCH_DISPLAY correctly with false value 1`] = `
             </P>
             <div>
               <StatusLight
-                color="grayDark"
+                color="grayBase"
               >
                 <StatusLight__Svg
-                  color="grayDark"
+                  color="grayBase"
                   viewBox="0 0 20 20"
                 >
                   <svg
                     className="c4"
-                    color="grayDark"
+                    color="grayBase"
                     viewBox="0 0 20 20"
                   >
                     <circle
@@ -473,15 +473,15 @@ exports[`should render SWITCH_DISPLAY correctly with true value 1`] = `
             className="c1"
           >
             <P
-              color="grayBase"
+              color="grayDark"
             >
               <Component
                 className="c2"
-                color="grayBase"
+                color="grayDark"
               >
                 <p
                   className="c2"
-                  color="grayBase"
+                  color="grayDark"
                 >
                   OFF
                 </p>
@@ -489,15 +489,15 @@ exports[`should render SWITCH_DISPLAY correctly with true value 1`] = `
             </P>
             <div>
               <StatusLight
-                color="grayDark"
+                color="grayBase"
               >
                 <StatusLight__Svg
-                  color="grayDark"
+                  color="grayBase"
                   viewBox="0 0 20 20"
                 >
                   <svg
                     className="c3"
-                    color="grayDark"
+                    color="grayBase"
                     viewBox="0 0 20 20"
                   >
                     <circle
@@ -518,15 +518,15 @@ exports[`should render SWITCH_DISPLAY correctly with true value 1`] = `
             className="c1"
           >
             <P
-              color="grayBase"
+              color="grayDark"
             >
               <Component
                 className="c2"
-                color="grayBase"
+                color="grayDark"
               >
                 <p
                   className="c2"
-                  color="grayBase"
+                  color="grayDark"
                 >
                   ON
                 </p>

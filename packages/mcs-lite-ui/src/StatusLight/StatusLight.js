@@ -22,7 +22,7 @@ StatusLight.propTypes = {
   color: PropTypes.string,
 };
 StatusLight.defaultProps = {
-  color: 'grayDark',
+  color: 'grayBase',
 };
 
 export default StatusLight;

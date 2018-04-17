@@ -104,10 +104,10 @@ storiesOf('Icon [mcs-lite-icon]', module)
         <CardWrapper>
           {Object.keys(Icons).map(name => (
             <StyledCard key={name}>
-              <Icon color="grayBase" level={1}>
+              <Icon color="grayDark" level={1}>
                 {React.createElement(Icons[name])}
               </Icon>
-              <P color="grayBase">{`<${name} />`}</P>
+              <P color="grayDark">{`<${name} />`}</P>
               <IconPath color="primary">mcs-lite-icon/lib/{name}</IconPath>
             </StyledCard>
           ))}

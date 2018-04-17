@@ -24,8 +24,8 @@ export const Indicator = styled.div`
   left: 0;
   right: 0;
   top: ${CONTAINER_HEIGHT / 2 - ITEM_HEIGHT / 2}px;
-  border-top: 1px solid ${props => props.theme.color.grayDark};
-  border-bottom: 1px solid ${props => props.theme.color.grayDark};
+  border-top: 1px solid ${props => props.theme.color.grayBase};
+  border-bottom: 1px solid ${props => props.theme.color.grayBase};
   pointer-events: none;
 `;
 

@@ -27,7 +27,7 @@ exports[`should renders <DeviceTrigger> correctly 1`] = `
     <PullToRefresh
       IconArrow={
         <Heading
-          color="grayBase"
+          color="grayDark"
           level={2}
         >
           <IconGoDown
@@ -37,7 +37,7 @@ exports[`should renders <DeviceTrigger> correctly 1`] = `
       }
       IconLoading={
         <Heading
-          color="grayBase"
+          color="grayDark"
           level={2}
         >
           <Spin>

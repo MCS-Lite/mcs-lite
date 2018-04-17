@@ -16,7 +16,7 @@ exports[`should renders <Section1> correctly 1`] = `
         height={20}
       >
         <Heading
-          color="grayBase"
+          color="grayDark"
           level={4}
         >
           desc

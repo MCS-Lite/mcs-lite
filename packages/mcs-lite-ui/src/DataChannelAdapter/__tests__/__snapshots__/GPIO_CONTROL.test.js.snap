@@ -230,15 +230,15 @@ exports[`should render GPIO_CONTROL correctly with High 1`] = `
                 className="c2"
               >
                 <P
-                  color="grayBase"
+                  color="grayDark"
                 >
                   <Component
                     className="c3"
-                    color="grayBase"
+                    color="grayDark"
                   >
                     <p
                       className="c3"
-                      color="grayBase"
+                      color="grayDark"
                     >
                       Low
                     </p>
@@ -253,15 +253,15 @@ exports[`should render GPIO_CONTROL correctly with High 1`] = `
                 className="c2"
               >
                 <P
-                  color="grayBase"
+                  color="grayDark"
                 >
                   <Component
                     className="c3"
-                    color="grayBase"
+                    color="grayDark"
                   >
                     <p
                       className="c3"
-                      color="grayBase"
+                      color="grayDark"
                     >
                       High
                     </p>
@@ -283,19 +283,19 @@ exports[`should render GPIO_CONTROL correctly with High 1`] = `
             className="c4"
           >
             <ControlRange__ValueWrapper
-              color="grayBase"
+              color="grayDark"
             >
               <P
                 className="c5"
-                color="grayBase"
+                color="grayDark"
               >
                 <Component
                   className="c5 c3"
-                  color="grayBase"
+                  color="grayDark"
                 >
                   <div
                     className="c5 c3"
-                    color="grayBase"
+                    color="grayDark"
                   >
                     Current value: 
                     <ControlRange__Value
@@ -584,15 +584,15 @@ exports[`should render GPIO_CONTROL correctly with Low 1`] = `
                 className="c2"
               >
                 <P
-                  color="grayBase"
+                  color="grayDark"
                 >
                   <Component
                     className="c3"
-                    color="grayBase"
+                    color="grayDark"
                   >
                     <p
                       className="c3"
-                      color="grayBase"
+                      color="grayDark"
                     >
                       Low
                     </p>
@@ -607,15 +607,15 @@ exports[`should render GPIO_CONTROL correctly with Low 1`] = `
                 className="c2"
               >
                 <P
-                  color="grayBase"
+                  color="grayDark"
                 >
                   <Component
                     className="c3"
-                    color="grayBase"
+                    color="grayDark"
                   >
                     <p
                       className="c3"
-                      color="grayBase"
+                      color="grayDark"
                     >
                       High
                     </p>
@@ -637,19 +637,19 @@ exports[`should render GPIO_CONTROL correctly with Low 1`] = `
             className="c4"
           >
             <ControlRange__ValueWrapper
-              color="grayBase"
+              color="grayDark"
             >
               <P
                 className="c5"
-                color="grayBase"
+                color="grayDark"
               >
                 <Component
                   className="c5 c3"
-                  color="grayBase"
+                  color="grayDark"
                 >
                   <div
                     className="c5 c3"
-                    color="grayBase"
+                    color="grayDark"
                   >
                     Current value: 
                     <ControlRange__Value
@@ -936,15 +936,15 @@ exports[`should render GPIO_CONTROL correctly with default value to N/A 1`] = `
                 className="c2"
               >
                 <P
-                  color="grayBase"
+                  color="grayDark"
                 >
                   <Component
                     className="c3"
-                    color="grayBase"
+                    color="grayDark"
                   >
                     <p
                       className="c3"
-                      color="grayBase"
+                      color="grayDark"
                     >
                       Low
                     </p>
@@ -959,15 +959,15 @@ exports[`should render GPIO_CONTROL correctly with default value to N/A 1`] = `
                 className="c2"
               >
                 <P
-                  color="grayBase"
+                  color="grayDark"
                 >
                   <Component
                     className="c3"
-                    color="grayBase"
+                    color="grayDark"
                   >
                     <p
                       className="c3"
-                      color="grayBase"
+                      color="grayDark"
                     >
                       High
                     </p>
@@ -989,19 +989,19 @@ exports[`should render GPIO_CONTROL correctly with default value to N/A 1`] = `
             className="c4"
           >
             <ControlRange__ValueWrapper
-              color="grayBase"
+              color="grayDark"
             >
               <P
                 className="c5"
-                color="grayBase"
+                color="grayDark"
               >
                 <Component
                   className="c5 c3"
-                  color="grayBase"
+                  color="grayDark"
                 >
                   <div
                     className="c5 c3"
-                    color="grayBase"
+                    color="grayDark"
                   >
                     Current value: 
                     <ControlRange__Value

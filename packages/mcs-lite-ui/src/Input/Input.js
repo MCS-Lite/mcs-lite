@@ -17,7 +17,7 @@ const Input = styled.input`
   color: ${props => props.theme.color.black};
   font-size: ${props => props.theme.fontSize.p};
   border-color: ${props =>
-    props.focus ? props.theme.color[props.kind] : props.theme.color.grayDark};
+    props.focus ? props.theme.color[props.kind] : props.theme.color.grayBase};
   box-shadow: ${props =>
     props.focus
       ? `0 0 3px 0 ${shadow(props.theme.color[props.kind])}`
@@ -30,7 +30,7 @@ const Input = styled.input`
 
   &::placeholder {
     opacity: 1;
-    color: ${props => props.theme.color.grayDark};
+    color: ${props => props.theme.color.grayBase};
   }
 `;
 

@@ -46,7 +46,7 @@ export const StyledCommonDialog = styled(CommonDialog)`
 `;
 
 export const TabWrapper = styled.div`
-  border-bottom: 1px solid ${props => props.theme.color.grayDark};
+  border-bottom: 1px solid ${props => props.theme.color.grayBase};
   margin-bottom: 10px;
 `;
 

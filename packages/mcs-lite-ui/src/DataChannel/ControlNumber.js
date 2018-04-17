@@ -34,7 +34,7 @@ const ControlNumber = ({
   ...otherProps
 }) => (
   <Container {...otherProps}>
-    {unit && <Unixtype color="grayBase">{unit}</Unixtype>}
+    {unit && <Unixtype color="grayDark">{unit}</Unixtype>}
     <Input
       type="number"
       value={value}

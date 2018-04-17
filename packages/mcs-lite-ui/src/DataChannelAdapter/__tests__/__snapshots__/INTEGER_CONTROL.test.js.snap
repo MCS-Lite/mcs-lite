@@ -436,19 +436,19 @@ exports[`should render INTEGER_CONTROL correctly with unit 1`] = `
         className="c0"
       >
         <ControlNumber__Unixtype
-          color="grayBase"
+          color="grayDark"
         >
           <P
             className="c1"
-            color="grayBase"
+            color="grayDark"
           >
             <Component
               className="c1 c2"
-              color="grayBase"
+              color="grayDark"
             >
               <p
                 className="c1 c2"
-                color="grayBase"
+                color="grayDark"
               >
                 單位：攝氏
               </p>

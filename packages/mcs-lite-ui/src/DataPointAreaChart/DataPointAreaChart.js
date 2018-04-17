@@ -40,18 +40,18 @@ const DataPointAreaChart = ({
 
       <XAxis
         dataKey="updatedAt"
-        tick={{ fill: theme.color.grayBase }}
+        tick={{ fill: theme.color.grayDark }}
         height={24}
         tickLine={false}
         tickSize={12}
-        axisLine={{ stroke: theme.color.grayBase }}
+        axisLine={{ stroke: theme.color.grayDark }}
         interval="preserveStartEnd"
         {...XAxisProps}
       />
       <YAxis
         tickLine={false}
-        tick={{ fill: theme.color.grayBase }}
-        axisLine={{ stroke: theme.color.grayBase }}
+        tick={{ fill: theme.color.grayDark }}
+        axisLine={{ stroke: theme.color.grayDark }}
       />
       <CartesianGrid strokeDasharray="3 3" vertical={false} />
       <Tooltip

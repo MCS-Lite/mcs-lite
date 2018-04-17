@@ -25,7 +25,7 @@ export const FakeInput = styled.div`
   min-height: ${props => props.theme.height.normal};
   color: ${props => props.theme.color.black};
   background-color: ${props => props.theme.color.white};
-  border-color: ${props => props.theme.color.grayDark};
+  border-color: ${props => props.theme.color.grayBase};
   font-size: ${props => props.theme.fontSize.p};
   flex-grow: 1;
   flex-shrink: 0;

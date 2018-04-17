@@ -58,7 +58,7 @@ export const StyledSmall = styled(Small)`
   display: block;
   overflow: hidden;
   text-overflow: ellipsis;
-  color: ${props => props.theme.color.grayBase};
+  color: ${props => props.theme.color.grayDark};
 `;
 
 const DataChannelCard = ({

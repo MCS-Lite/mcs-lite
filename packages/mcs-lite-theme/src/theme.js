@@ -1,8 +1,8 @@
 // Default as mcs style
 const gray = {
   black: '#353630',
-  grayBase: '#999A94',
-  grayDark: '#D1D2D3',
+  grayDark: '#999A94',
+  grayBase: '#D1D2D3',
   grayLight: '#FAFAFA',
   white: '#FFFFFF',
 };

@@ -39,7 +39,7 @@ const ImageDropzone = ({
         {!src && (
           <React.Fragment>
             <Image width={50} height={50} />
-            {children && <P color="grayDark">{children}</P>}
+            {children && <P color="grayBase">{children}</P>}
           </React.Fragment>
         )}
       </Container>

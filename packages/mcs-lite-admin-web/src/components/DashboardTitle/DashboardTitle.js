@@ -8,7 +8,7 @@ const Wrapper = styled.div`
   justify-content: space-between;
   padding-bottom: 5px;
   margin-bottom: 10px;
-  border-bottom: 1px solid ${props => props.theme.color.grayDark};
+  border-bottom: 1px solid ${props => props.theme.color.grayBase};
 `;
 
 const DashboardTitle = ({ title, children }) => (

@@ -13,7 +13,7 @@ const Textarea = styled.textarea`
   outline: 0;
   padding: 5px 10px;
   color: ${props => props.theme.color.black};
-  border-color: ${props => props.theme.color.grayDark};
+  border-color: ${props => props.theme.color.grayBase};
   font-size: ${props => props.theme.fontSize.p};
 
   &:focus {
@@ -23,7 +23,7 @@ const Textarea = styled.textarea`
 
   &::placeholder {
     opacity: 1;
-    color: ${props => props.theme.color.grayDark};
+    color: ${props => props.theme.color.grayBase};
   }
 
   &:disabled {

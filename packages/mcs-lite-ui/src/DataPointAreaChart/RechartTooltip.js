@@ -29,7 +29,7 @@ const RechartTooltip = ({
   return (
     <StyledCard>
       <P>{formatter(payload[0].value)}</P>
-      <P color="grayBase">
+      <P color="grayDark">
         <Small>{labelFormatter(label)}</Small>
       </P>
     </StyledCard>
