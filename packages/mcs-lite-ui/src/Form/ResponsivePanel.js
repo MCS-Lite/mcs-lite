@@ -25,7 +25,7 @@ const ResponsivePanel = styled(Panel)`
   }
 `;
 
-ResponsivePanel.displayName = ResponsivePanel;
+ResponsivePanel.displayName = 'ResponsivePanel';
 ResponsivePanel.propTypes = {
   width: PropTypes.number,
 };

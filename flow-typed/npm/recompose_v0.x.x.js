@@ -183,8 +183,9 @@ declare module 'recompose' {
   declare export function setDisplayName<A>(displayName: string): HOC<A, A>;
 
   declare export function withPropsOnChange<BaseAdd, Enhanced>(
-    shouldMapOrKeys: | ((props: Enhanced, nextProps: Enhanced) => boolean)
-    | Array<$Keys<Enhanced>>,
+    shouldMapOrKeys:
+      | ((props: Enhanced, nextProps: Enhanced) => boolean)
+      | Array<$Keys<Enhanced>>,
     propsMapper: (ownerProps: Enhanced) => BaseAdd,
   ): HOC<{ ...$Exact<Enhanced>, ...BaseAdd }, Enhanced>;
 

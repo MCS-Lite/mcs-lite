@@ -22,7 +22,7 @@ class Popover extends React.Component<
       arrow: Object,
     },
     // Note: innerRef for the problem of outside click in dialog
-    innerRef?: (ref: React.ElementRef<typeof StyledCard>) => void,
+    innerRef?: (ref: ?React.ElementRef<typeof StyledCard>) => void,
   },
   { isOpen: boolean },
 > {

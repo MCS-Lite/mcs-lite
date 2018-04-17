@@ -35,7 +35,7 @@ const Fieldset = styled.div`
     }
   }
 `;
-Fieldset.displayName = Fieldset;
+Fieldset.displayName = 'Fieldset';
 Fieldset.propTypes = {
   width: PropTypes.number,
 };

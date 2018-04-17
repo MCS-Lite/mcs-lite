@@ -17,7 +17,7 @@ class DropdownMenu extends React.Component<
     itemRenderer: RenderProps => React.Node,
     position: Object,
     // Note: innerRef for the problem of outside click in dialog
-    innerRef?: (ref: React.ElementRef<typeof StyledMenu>) => void,
+    innerRef?: (ref: ?React.ElementRef<typeof StyledMenu>) => void,
   },
   { isOpen: boolean },
 > {

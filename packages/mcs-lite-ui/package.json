@@ -44,7 +44,7 @@
     "enzyme": "3.3.0",
     "enzyme-adapter-react-16": "1.1.1",
     "enzyme-to-json": "3.3.3",
-    "flow-bin": "0.69.0",
+    "flow-bin": "0.70.0",
     "jest": "20.0.4",
     "jest-specific-snapshot": "0.5.0",
     "jest-styled-components": "next",
@@ -53,11 +53,11 @@
     "mcs-lite-theme": "^0.4.0",
     "polished": "1.9.2",
     "raf": "3.4.0",
-    "react": "16.3.1",
+    "react": "16.3.2",
     "react-addons-test-utils": "15.6.2",
-    "react-dom": "16.3.1",
-    "react-test-renderer": "16.3.1",
-    "styled-components": "3.2.5",
+    "react-dom": "16.3.2",
+    "react-test-renderer": "16.3.2",
+    "styled-components": "3.2.6",
     "svgr": "1.9.1"
   },
   "dependencies": {
@@ -86,7 +86,7 @@
     "react-waypoint": "^8.0.1",
     "recharts": "^1.0.0-beta.10",
     "recompose": "^0.26.0",
-    "rxjs": "^5.5.9",
+    "rxjs": "^5.5.10",
     "svgr.macro": "^1.0.4"
   },
   "peerDependencies": {
