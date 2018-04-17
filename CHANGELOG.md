@@ -2,6 +2,17 @@
 
 ## Released (2018-04-17)
 
+#### :house: Internal
+
+* `mcs-lite-admin-web`, `mcs-lite-landing-web`, `mcs-lite-mobile-web`, `mcs-lite-scripts`, `mcs-lite-ui`
+  * [#606](https://github.com/MCS-Lite/mcs-lite/pull/606) chore: ncu update & use yarn 1.6.0. ([@evenchange4](https://github.com/evenchange4))
+
+#### Committers: 1
+
+* Michael Hsu ([evenchange4](https://github.com/evenchange4))
+
+## Released (2018-04-17)
+
 * babel-preset-mcs-lite: 0.3.24 => 0.3.25
 * eslint-config-mcs-lite: 0.6.15 => 0.6.16
 * mcs-lite-admin-web: 0.2.17 => 0.2.18
