@@ -1,4 +1,5 @@
-/* global danger warn fail */
+// @flow
+import { danger, fail, warn } from 'danger';
 
 const allChanges = [].concat(
   danger.git.created_files,
