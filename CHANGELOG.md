@@ -2,6 +2,27 @@
 
 ## Released (2018-04-17)
 
+#### :boom: Breaking Change
+
+* `mcs-lite-admin-web`, `mcs-lite-landing-web`, `mcs-lite-mobile-web`, `mcs-lite-theme`, `mcs-lite-ui`
+  * [#605](https://github.com/MCS-Lite/mcs-lite/pull/605) fix(theme): switch theme color between grayBase and grayDark [BREAKING CHANGES]. ([@evenchange4](https://github.com/evenchange4))
+
+#### :bug: Bug Fix
+
+* `mcs-lite-admin-web`, `mcs-lite-landing-web`, `mcs-lite-mobile-web`, `mcs-lite-theme`, `mcs-lite-ui`
+  * [#605](https://github.com/MCS-Lite/mcs-lite/pull/605) fix(theme): switch theme color between grayBase and grayDark [BREAKING CHANGES]. ([@evenchange4](https://github.com/evenchange4))
+
+#### :house: Internal
+
+* `mcs-lite-admin-web`, `mcs-lite-landing-web`, `mcs-lite-mobile-web`, `mcs-lite-theme`, `mcs-lite-ui`
+  * [#605](https://github.com/MCS-Lite/mcs-lite/pull/605) fix(theme): switch theme color between grayBase and grayDark [BREAKING CHANGES]. ([@evenchange4](https://github.com/evenchange4))
+
+#### Committers: 1
+
+* Michael Hsu ([evenchange4](https://github.com/evenchange4))
+
+## Released (2018-04-17)
+
 * babel-preset-mcs-lite: 0.3.23 => 0.3.24
 * eslint-config-mcs-lite: 0.6.14 => 0.6.15
 * mcs-lite-admin-web: 0.2.16 => 0.2.17
