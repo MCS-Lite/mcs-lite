@@ -5,7 +5,6 @@ exports[`should renders <Language> correctly 1`] = `
   margin: 0;
   font-weight: normal;
   font-size: 1.15rem;
-  color: currentColor;
 }
 
 .c0 {
