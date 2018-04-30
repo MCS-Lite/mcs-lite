@@ -7,13 +7,21 @@ exports[`should render GPIO_CONTROL correctly with High 1`] = `
   color: #999A94;
 }
 
-.c7 {
+.c5 {
+  margin: 0;
+  font-size: 1rem;
+  color: #999A94;
+  margin-bottom: 15px;
+}
+
+.c6 {
   margin: 0;
   font-size: 1rem;
   color: #00A1DE;
+  display: inline-block;
 }
 
-.c8 {
+.c7 {
   -webkit-appearance: none;
   -moz-appearance: none;
   width: 100%;
@@ -22,7 +30,7 @@ exports[`should render GPIO_CONTROL correctly with High 1`] = `
   cursor: pointer;
 }
 
-.c8::-webkit-slider-runnable-track {
+.c7::-webkit-slider-runnable-track {
   -webkit-appearance: none;
   height: 16px;
   border-radius: 8px;
@@ -30,7 +38,7 @@ exports[`should render GPIO_CONTROL correctly with High 1`] = `
   box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.35),inset 0 0 0 2px #e5e6e6,inset 0 1px 10px 0 rgba(0,0,0,0.05);
 }
 
-.c8::-moz-range-track {
+.c7::-moz-range-track {
   -moz-appearance: none;
   height: 16px;
   border-radius: 8px;
@@ -38,11 +46,11 @@ exports[`should render GPIO_CONTROL correctly with High 1`] = `
   box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.35),inset 0 0 0 2px #e5e6e6,inset 0 1px 10px 0 rgba(0,0,0,0.05);
 }
 
-.c8::-moz-focus-outer {
+.c7::-moz-focus-outer {
   border: 0;
 }
 
-.c8::-ms-track {
+.c7::-ms-track {
   -webkit-appearance: none;
   height: 16px;
   border-radius: 8px;
@@ -50,7 +58,7 @@ exports[`should render GPIO_CONTROL correctly with High 1`] = `
   box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.35),inset 0 0 0 2px #e5e6e6,inset 0 1px 10px 0 rgba(0,0,0,0.05);
 }
 
-.c8::-webkit-slider-thumb {
+.c7::-webkit-slider-thumb {
   -webkit-appearance: none;
   margin-top: -12px;
   height: 40px;
@@ -63,7 +71,7 @@ exports[`should render GPIO_CONTROL correctly with High 1`] = `
   box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #00A1DE,inset 0 0 0 3px rgb(0,192,255);
 }
 
-.c8::-moz-range-thumb {
+.c7::-moz-range-thumb {
   -moz-appearance: none;
   height: 40px;
   width: 40px;
@@ -75,7 +83,7 @@ exports[`should render GPIO_CONTROL correctly with High 1`] = `
   box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #00A1DE,inset 0 0 0 3px rgb(0,192,255);
 }
 
-.c8::-ms-thumb {
+.c7::-ms-thumb {
   -webkit-appearance: none;
   margin-top: -12px;
   height: 40px;
@@ -88,19 +96,19 @@ exports[`should render GPIO_CONTROL correctly with High 1`] = `
   box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #00A1DE,inset 0 0 0 3px rgb(0,192,255);
 }
 
-.c8::-webkit-slider-thumb:hover {
+.c7::-webkit-slider-thumb:hover {
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
 }
 
-.c8::-moz-range-thumb:hover {
+.c7::-moz-range-thumb:hover {
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
 }
 
-.c8::-ms-thumb:hover {
+.c7::-ms-thumb:hover {
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
@@ -169,14 +177,6 @@ exports[`should render GPIO_CONTROL correctly with High 1`] = `
   height: 4px;
   margin-top: 5px;
   margin-bottom: 8px;
-}
-
-.c5 {
-  margin-bottom: 15px;
-}
-
-.c6 {
-  display: inline-block;
 }
 
 .c4 {
@@ -282,46 +282,36 @@ exports[`should render GPIO_CONTROL correctly with High 1`] = `
           <div
             className="c4"
           >
-            <ControlRange__ValueWrapper
+            <P
               color="grayDark"
             >
-              <P
+              <Component
                 className="c5"
                 color="grayDark"
               >
-                <Component
-                  className="c5 c3"
+                <div
+                  className="c5"
                   color="grayDark"
                 >
-                  <div
-                    className="c5 c3"
-                    color="grayDark"
+                  Current value: 
+                  <P
+                    color="primary"
                   >
-                    Current value: 
-                    <ControlRange__Value
+                    <Component
+                      className="c6"
                       color="primary"
                     >
-                      <P
+                      <p
                         className="c6"
                         color="primary"
                       >
-                        <Component
-                          className="c6 c7"
-                          color="primary"
-                        >
-                          <p
-                            className="c6 c7"
-                            color="primary"
-                          >
-                            High
-                          </p>
-                        </Component>
-                      </P>
-                    </ControlRange__Value>
-                  </div>
-                </Component>
-              </P>
-            </ControlRange__ValueWrapper>
+                        High
+                      </p>
+                    </Component>
+                  </P>
+                </div>
+              </Component>
+            </P>
             <InputRange
               kind="primary"
               max={1}
@@ -334,7 +324,7 @@ exports[`should render GPIO_CONTROL correctly with High 1`] = `
               value={1}
             >
               <input
-                className="c8"
+                className="c7"
                 kind="primary"
                 max={1}
                 min={0}
@@ -361,13 +351,21 @@ exports[`should render GPIO_CONTROL correctly with Low 1`] = `
   color: #999A94;
 }
 
-.c7 {
+.c5 {
+  margin: 0;
+  font-size: 1rem;
+  color: #999A94;
+  margin-bottom: 15px;
+}
+
+.c6 {
   margin: 0;
   font-size: 1rem;
   color: #00A1DE;
+  display: inline-block;
 }
 
-.c8 {
+.c7 {
   -webkit-appearance: none;
   -moz-appearance: none;
   width: 100%;
@@ -376,7 +374,7 @@ exports[`should render GPIO_CONTROL correctly with Low 1`] = `
   cursor: pointer;
 }
 
-.c8::-webkit-slider-runnable-track {
+.c7::-webkit-slider-runnable-track {
   -webkit-appearance: none;
   height: 16px;
   border-radius: 8px;
@@ -384,7 +382,7 @@ exports[`should render GPIO_CONTROL correctly with Low 1`] = `
   box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.35),inset 0 0 0 2px #e5e6e6,inset 0 1px 10px 0 rgba(0,0,0,0.05);
 }
 
-.c8::-moz-range-track {
+.c7::-moz-range-track {
   -moz-appearance: none;
   height: 16px;
   border-radius: 8px;
@@ -392,11 +390,11 @@ exports[`should render GPIO_CONTROL correctly with Low 1`] = `
   box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.35),inset 0 0 0 2px #e5e6e6,inset 0 1px 10px 0 rgba(0,0,0,0.05);
 }
 
-.c8::-moz-focus-outer {
+.c7::-moz-focus-outer {
   border: 0;
 }
 
-.c8::-ms-track {
+.c7::-ms-track {
   -webkit-appearance: none;
   height: 16px;
   border-radius: 8px;
@@ -404,7 +402,7 @@ exports[`should render GPIO_CONTROL correctly with Low 1`] = `
   box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.35),inset 0 0 0 2px #e5e6e6,inset 0 1px 10px 0 rgba(0,0,0,0.05);
 }
 
-.c8::-webkit-slider-thumb {
+.c7::-webkit-slider-thumb {
   -webkit-appearance: none;
   margin-top: -12px;
   height: 40px;
@@ -417,7 +415,7 @@ exports[`should render GPIO_CONTROL correctly with Low 1`] = `
   box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #00A1DE,inset 0 0 0 3px rgb(0,192,255);
 }
 
-.c8::-moz-range-thumb {
+.c7::-moz-range-thumb {
   -moz-appearance: none;
   height: 40px;
   width: 40px;
@@ -429,7 +427,7 @@ exports[`should render GPIO_CONTROL correctly with Low 1`] = `
   box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #00A1DE,inset 0 0 0 3px rgb(0,192,255);
 }
 
-.c8::-ms-thumb {
+.c7::-ms-thumb {
   -webkit-appearance: none;
   margin-top: -12px;
   height: 40px;
@@ -442,19 +440,19 @@ exports[`should render GPIO_CONTROL correctly with Low 1`] = `
   box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #00A1DE,inset 0 0 0 3px rgb(0,192,255);
 }
 
-.c8::-webkit-slider-thumb:hover {
+.c7::-webkit-slider-thumb:hover {
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
 }
 
-.c8::-moz-range-thumb:hover {
+.c7::-moz-range-thumb:hover {
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
 }
 
-.c8::-ms-thumb:hover {
+.c7::-ms-thumb:hover {
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
@@ -523,14 +521,6 @@ exports[`should render GPIO_CONTROL correctly with Low 1`] = `
   height: 4px;
   margin-top: 5px;
   margin-bottom: 8px;
-}
-
-.c5 {
-  margin-bottom: 15px;
-}
-
-.c6 {
-  display: inline-block;
 }
 
 .c4 {
@@ -636,46 +626,36 @@ exports[`should render GPIO_CONTROL correctly with Low 1`] = `
           <div
             className="c4"
           >
-            <ControlRange__ValueWrapper
+            <P
               color="grayDark"
             >
-              <P
+              <Component
                 className="c5"
                 color="grayDark"
               >
-                <Component
-                  className="c5 c3"
+                <div
+                  className="c5"
                   color="grayDark"
                 >
-                  <div
-                    className="c5 c3"
-                    color="grayDark"
+                  Current value: 
+                  <P
+                    color="primary"
                   >
-                    Current value: 
-                    <ControlRange__Value
+                    <Component
+                      className="c6"
                       color="primary"
                     >
-                      <P
+                      <p
                         className="c6"
                         color="primary"
                       >
-                        <Component
-                          className="c6 c7"
-                          color="primary"
-                        >
-                          <p
-                            className="c6 c7"
-                            color="primary"
-                          >
-                            Low
-                          </p>
-                        </Component>
-                      </P>
-                    </ControlRange__Value>
-                  </div>
-                </Component>
-              </P>
-            </ControlRange__ValueWrapper>
+                        Low
+                      </p>
+                    </Component>
+                  </P>
+                </div>
+              </Component>
+            </P>
             <InputRange
               kind="primary"
               max={1}
@@ -688,7 +668,7 @@ exports[`should render GPIO_CONTROL correctly with Low 1`] = `
               value={0}
             >
               <input
-                className="c8"
+                className="c7"
                 kind="primary"
                 max={1}
                 min={0}
@@ -715,13 +695,21 @@ exports[`should render GPIO_CONTROL correctly with default value to N/A 1`] = `
   color: #999A94;
 }
 
-.c7 {
+.c5 {
+  margin: 0;
+  font-size: 1rem;
+  color: #999A94;
+  margin-bottom: 15px;
+}
+
+.c6 {
   margin: 0;
   font-size: 1rem;
   color: #00A1DE;
+  display: inline-block;
 }
 
-.c8 {
+.c7 {
   -webkit-appearance: none;
   -moz-appearance: none;
   width: 100%;
@@ -730,7 +718,7 @@ exports[`should render GPIO_CONTROL correctly with default value to N/A 1`] = `
   cursor: pointer;
 }
 
-.c8::-webkit-slider-runnable-track {
+.c7::-webkit-slider-runnable-track {
   -webkit-appearance: none;
   height: 16px;
   border-radius: 8px;
@@ -738,7 +726,7 @@ exports[`should render GPIO_CONTROL correctly with default value to N/A 1`] = `
   box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.35),inset 0 0 0 2px #e5e6e6,inset 0 1px 10px 0 rgba(0,0,0,0.05);
 }
 
-.c8::-moz-range-track {
+.c7::-moz-range-track {
   -moz-appearance: none;
   height: 16px;
   border-radius: 8px;
@@ -746,11 +734,11 @@ exports[`should render GPIO_CONTROL correctly with default value to N/A 1`] = `
   box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.35),inset 0 0 0 2px #e5e6e6,inset 0 1px 10px 0 rgba(0,0,0,0.05);
 }
 
-.c8::-moz-focus-outer {
+.c7::-moz-focus-outer {
   border: 0;
 }
 
-.c8::-ms-track {
+.c7::-ms-track {
   -webkit-appearance: none;
   height: 16px;
   border-radius: 8px;
@@ -758,7 +746,7 @@ exports[`should render GPIO_CONTROL correctly with default value to N/A 1`] = `
   box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.35),inset 0 0 0 2px #e5e6e6,inset 0 1px 10px 0 rgba(0,0,0,0.05);
 }
 
-.c8::-webkit-slider-thumb {
+.c7::-webkit-slider-thumb {
   -webkit-appearance: none;
   margin-top: -12px;
   height: 40px;
@@ -771,7 +759,7 @@ exports[`should render GPIO_CONTROL correctly with default value to N/A 1`] = `
   box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #00A1DE,inset 0 0 0 3px rgb(0,192,255);
 }
 
-.c8::-moz-range-thumb {
+.c7::-moz-range-thumb {
   -moz-appearance: none;
   height: 40px;
   width: 40px;
@@ -783,7 +771,7 @@ exports[`should render GPIO_CONTROL correctly with default value to N/A 1`] = `
   box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #00A1DE,inset 0 0 0 3px rgb(0,192,255);
 }
 
-.c8::-ms-thumb {
+.c7::-ms-thumb {
   -webkit-appearance: none;
   margin-top: -12px;
   height: 40px;
@@ -796,19 +784,19 @@ exports[`should render GPIO_CONTROL correctly with default value to N/A 1`] = `
   box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #00A1DE,inset 0 0 0 3px rgb(0,192,255);
 }
 
-.c8::-webkit-slider-thumb:hover {
+.c7::-webkit-slider-thumb:hover {
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
 }
 
-.c8::-moz-range-thumb:hover {
+.c7::-moz-range-thumb:hover {
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
 }
 
-.c8::-ms-thumb:hover {
+.c7::-ms-thumb:hover {
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
@@ -877,14 +865,6 @@ exports[`should render GPIO_CONTROL correctly with default value to N/A 1`] = `
   height: 4px;
   margin-top: 5px;
   margin-bottom: 8px;
-}
-
-.c5 {
-  margin-bottom: 15px;
-}
-
-.c6 {
-  display: inline-block;
 }
 
 .c4 {
@@ -988,46 +968,36 @@ exports[`should render GPIO_CONTROL correctly with default value to N/A 1`] = `
           <div
             className="c4"
           >
-            <ControlRange__ValueWrapper
+            <P
               color="grayDark"
             >
-              <P
+              <Component
                 className="c5"
                 color="grayDark"
               >
-                <Component
-                  className="c5 c3"
+                <div
+                  className="c5"
                   color="grayDark"
                 >
-                  <div
-                    className="c5 c3"
-                    color="grayDark"
+                  Current value: 
+                  <P
+                    color="primary"
                   >
-                    Current value: 
-                    <ControlRange__Value
+                    <Component
+                      className="c6"
                       color="primary"
                     >
-                      <P
+                      <p
                         className="c6"
                         color="primary"
                       >
-                        <Component
-                          className="c6 c7"
-                          color="primary"
-                        >
-                          <p
-                            className="c6 c7"
-                            color="primary"
-                          >
-                            N/A
-                          </p>
-                        </Component>
-                      </P>
-                    </ControlRange__Value>
-                  </div>
-                </Component>
-              </P>
-            </ControlRange__ValueWrapper>
+                        N/A
+                      </p>
+                    </Component>
+                  </P>
+                </div>
+              </Component>
+            </P>
             <InputRange
               kind="primary"
               max={1}
@@ -1040,7 +1010,7 @@ exports[`should render GPIO_CONTROL correctly with default value to N/A 1`] = `
               value=""
             >
               <input
-                className="c8"
+                className="c7"
                 kind="primary"
                 max={1}
                 min={0}

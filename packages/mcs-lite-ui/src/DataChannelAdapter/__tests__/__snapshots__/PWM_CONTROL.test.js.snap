@@ -7,10 +7,18 @@ exports[`should render PWM_CONTROL correctly with default value to N/A 1`] = `
   color: #999A94;
 }
 
-.c13 {
+.c11 {
+  margin: 0;
+  font-size: 1rem;
+  color: #999A94;
+  margin-bottom: 15px;
+}
+
+.c12 {
   margin: 0;
   font-size: 1rem;
   color: #00A1DE;
+  display: inline-block;
 }
 
 .c6 {
@@ -82,7 +90,7 @@ exports[`should render PWM_CONTROL correctly with default value to N/A 1`] = `
   color: #D1D2D3;
 }
 
-.c14 {
+.c13 {
   -webkit-appearance: none;
   -moz-appearance: none;
   width: 100%;
@@ -91,7 +99,7 @@ exports[`should render PWM_CONTROL correctly with default value to N/A 1`] = `
   cursor: pointer;
 }
 
-.c14::-webkit-slider-runnable-track {
+.c13::-webkit-slider-runnable-track {
   -webkit-appearance: none;
   height: 16px;
   border-radius: 8px;
@@ -99,7 +107,7 @@ exports[`should render PWM_CONTROL correctly with default value to N/A 1`] = `
   box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.35),inset 0 0 0 2px #e5e6e6,inset 0 1px 10px 0 rgba(0,0,0,0.05);
 }
 
-.c14::-moz-range-track {
+.c13::-moz-range-track {
   -moz-appearance: none;
   height: 16px;
   border-radius: 8px;
@@ -107,11 +115,11 @@ exports[`should render PWM_CONTROL correctly with default value to N/A 1`] = `
   box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.35),inset 0 0 0 2px #e5e6e6,inset 0 1px 10px 0 rgba(0,0,0,0.05);
 }
 
-.c14::-moz-focus-outer {
+.c13::-moz-focus-outer {
   border: 0;
 }
 
-.c14::-ms-track {
+.c13::-ms-track {
   -webkit-appearance: none;
   height: 16px;
   border-radius: 8px;
@@ -119,7 +127,7 @@ exports[`should render PWM_CONTROL correctly with default value to N/A 1`] = `
   box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.35),inset 0 0 0 2px #e5e6e6,inset 0 1px 10px 0 rgba(0,0,0,0.05);
 }
 
-.c14::-webkit-slider-thumb {
+.c13::-webkit-slider-thumb {
   -webkit-appearance: none;
   margin-top: -12px;
   height: 40px;
@@ -132,7 +140,7 @@ exports[`should render PWM_CONTROL correctly with default value to N/A 1`] = `
   box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #00A1DE,inset 0 0 0 3px rgb(0,192,255);
 }
 
-.c14::-moz-range-thumb {
+.c13::-moz-range-thumb {
   -moz-appearance: none;
   height: 40px;
   width: 40px;
@@ -144,7 +152,7 @@ exports[`should render PWM_CONTROL correctly with default value to N/A 1`] = `
   box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #00A1DE,inset 0 0 0 3px rgb(0,192,255);
 }
 
-.c14::-ms-thumb {
+.c13::-ms-thumb {
   -webkit-appearance: none;
   margin-top: -12px;
   height: 40px;
@@ -157,19 +165,19 @@ exports[`should render PWM_CONTROL correctly with default value to N/A 1`] = `
   box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #00A1DE,inset 0 0 0 3px rgb(0,192,255);
 }
 
-.c14::-webkit-slider-thumb:hover {
+.c13::-webkit-slider-thumb:hover {
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
 }
 
-.c14::-moz-range-thumb:hover {
+.c13::-moz-range-thumb:hover {
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
 }
 
-.c14::-ms-thumb:hover {
+.c13::-ms-thumb:hover {
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
@@ -238,14 +246,6 @@ exports[`should render PWM_CONTROL correctly with default value to N/A 1`] = `
   height: 4px;
   margin-top: 5px;
   margin-bottom: 8px;
-}
-
-.c11 {
-  margin-bottom: 15px;
-}
-
-.c12 {
-  display: inline-block;
 }
 
 .c10 {
@@ -470,46 +470,36 @@ exports[`should render PWM_CONTROL correctly with default value to N/A 1`] = `
               <div
                 className="c10"
               >
-                <ControlRange__ValueWrapper
+                <P
                   color="grayDark"
                 >
-                  <P
+                  <Component
                     className="c11"
                     color="grayDark"
                   >
-                    <Component
-                      className="c11 c2"
+                    <div
+                      className="c11"
                       color="grayDark"
                     >
-                      <div
-                        className="c11 c2"
-                        color="grayDark"
+                      Current value: 
+                      <P
+                        color="primary"
                       >
-                        Current value: 
-                        <ControlRange__Value
+                        <Component
+                          className="c12"
                           color="primary"
                         >
-                          <P
+                          <p
                             className="c12"
                             color="primary"
                           >
-                            <Component
-                              className="c12 c13"
-                              color="primary"
-                            >
-                              <p
-                                className="c12 c13"
-                                color="primary"
-                              >
-                                N/A
-                              </p>
-                            </Component>
-                          </P>
-                        </ControlRange__Value>
-                      </div>
-                    </Component>
-                  </P>
-                </ControlRange__ValueWrapper>
+                            N/A
+                          </p>
+                        </Component>
+                      </P>
+                    </div>
+                  </Component>
+                </P>
                 <InputRange
                   kind="primary"
                   max={100}
@@ -522,7 +512,7 @@ exports[`should render PWM_CONTROL correctly with default value to N/A 1`] = `
                   value=""
                 >
                   <input
-                    className="c14"
+                    className="c13"
                     kind="primary"
                     max={100}
                     min={0}
@@ -551,10 +541,18 @@ exports[`should render PWM_CONTROL correctly with max 1`] = `
   color: #999A94;
 }
 
-.c13 {
+.c11 {
+  margin: 0;
+  font-size: 1rem;
+  color: #999A94;
+  margin-bottom: 15px;
+}
+
+.c12 {
   margin: 0;
   font-size: 1rem;
   color: #00A1DE;
+  display: inline-block;
 }
 
 .c6 {
@@ -626,7 +624,7 @@ exports[`should render PWM_CONTROL correctly with max 1`] = `
   color: #D1D2D3;
 }
 
-.c14 {
+.c13 {
   -webkit-appearance: none;
   -moz-appearance: none;
   width: 100%;
@@ -635,7 +633,7 @@ exports[`should render PWM_CONTROL correctly with max 1`] = `
   cursor: pointer;
 }
 
-.c14::-webkit-slider-runnable-track {
+.c13::-webkit-slider-runnable-track {
   -webkit-appearance: none;
   height: 16px;
   border-radius: 8px;
@@ -643,7 +641,7 @@ exports[`should render PWM_CONTROL correctly with max 1`] = `
   box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.35),inset 0 0 0 2px #e5e6e6,inset 0 1px 10px 0 rgba(0,0,0,0.05);
 }
 
-.c14::-moz-range-track {
+.c13::-moz-range-track {
   -moz-appearance: none;
   height: 16px;
   border-radius: 8px;
@@ -651,11 +649,11 @@ exports[`should render PWM_CONTROL correctly with max 1`] = `
   box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.35),inset 0 0 0 2px #e5e6e6,inset 0 1px 10px 0 rgba(0,0,0,0.05);
 }
 
-.c14::-moz-focus-outer {
+.c13::-moz-focus-outer {
   border: 0;
 }
 
-.c14::-ms-track {
+.c13::-ms-track {
   -webkit-appearance: none;
   height: 16px;
   border-radius: 8px;
@@ -663,7 +661,7 @@ exports[`should render PWM_CONTROL correctly with max 1`] = `
   box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.35),inset 0 0 0 2px #e5e6e6,inset 0 1px 10px 0 rgba(0,0,0,0.05);
 }
 
-.c14::-webkit-slider-thumb {
+.c13::-webkit-slider-thumb {
   -webkit-appearance: none;
   margin-top: -12px;
   height: 40px;
@@ -676,7 +674,7 @@ exports[`should render PWM_CONTROL correctly with max 1`] = `
   box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #00A1DE,inset 0 0 0 3px rgb(0,192,255);
 }
 
-.c14::-moz-range-thumb {
+.c13::-moz-range-thumb {
   -moz-appearance: none;
   height: 40px;
   width: 40px;
@@ -688,7 +686,7 @@ exports[`should render PWM_CONTROL correctly with max 1`] = `
   box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #00A1DE,inset 0 0 0 3px rgb(0,192,255);
 }
 
-.c14::-ms-thumb {
+.c13::-ms-thumb {
   -webkit-appearance: none;
   margin-top: -12px;
   height: 40px;
@@ -701,19 +699,19 @@ exports[`should render PWM_CONTROL correctly with max 1`] = `
   box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #00A1DE,inset 0 0 0 3px rgb(0,192,255);
 }
 
-.c14::-webkit-slider-thumb:hover {
+.c13::-webkit-slider-thumb:hover {
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
 }
 
-.c14::-moz-range-thumb:hover {
+.c13::-moz-range-thumb:hover {
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
 }
 
-.c14::-ms-thumb:hover {
+.c13::-ms-thumb:hover {
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
@@ -782,14 +780,6 @@ exports[`should render PWM_CONTROL correctly with max 1`] = `
   height: 4px;
   margin-top: 5px;
   margin-bottom: 8px;
-}
-
-.c11 {
-  margin-bottom: 15px;
-}
-
-.c12 {
-  display: inline-block;
 }
 
 .c10 {
@@ -1017,46 +1007,36 @@ exports[`should render PWM_CONTROL correctly with max 1`] = `
               <div
                 className="c10"
               >
-                <ControlRange__ValueWrapper
+                <P
                   color="grayDark"
                 >
-                  <P
+                  <Component
                     className="c11"
                     color="grayDark"
                   >
-                    <Component
-                      className="c11 c2"
+                    <div
+                      className="c11"
                       color="grayDark"
                     >
-                      <div
-                        className="c11 c2"
-                        color="grayDark"
+                      Current value: 
+                      <P
+                        color="primary"
                       >
-                        Current value: 
-                        <ControlRange__Value
+                        <Component
+                          className="c12"
                           color="primary"
                         >
-                          <P
+                          <div
                             className="c12"
                             color="primary"
                           >
-                            <Component
-                              className="c12 c13"
-                              color="primary"
-                            >
-                              <div
-                                className="c12 c13"
-                                color="primary"
-                              >
-                                100
-                              </div>
-                            </Component>
-                          </P>
-                        </ControlRange__Value>
-                      </div>
-                    </Component>
-                  </P>
-                </ControlRange__ValueWrapper>
+                            100
+                          </div>
+                        </Component>
+                      </P>
+                    </div>
+                  </Component>
+                </P>
                 <InputRange
                   kind="primary"
                   max={100}
@@ -1069,7 +1049,7 @@ exports[`should render PWM_CONTROL correctly with max 1`] = `
                   value={100}
                 >
                   <input
-                    className="c14"
+                    className="c13"
                     kind="primary"
                     max={100}
                     min={0}
@@ -1098,10 +1078,18 @@ exports[`should render PWM_CONTROL correctly with zero 1`] = `
   color: #999A94;
 }
 
-.c13 {
+.c11 {
+  margin: 0;
+  font-size: 1rem;
+  color: #999A94;
+  margin-bottom: 15px;
+}
+
+.c12 {
   margin: 0;
   font-size: 1rem;
   color: #00A1DE;
+  display: inline-block;
 }
 
 .c6 {
@@ -1173,7 +1161,7 @@ exports[`should render PWM_CONTROL correctly with zero 1`] = `
   color: #D1D2D3;
 }
 
-.c14 {
+.c13 {
   -webkit-appearance: none;
   -moz-appearance: none;
   width: 100%;
@@ -1182,7 +1170,7 @@ exports[`should render PWM_CONTROL correctly with zero 1`] = `
   cursor: pointer;
 }
 
-.c14::-webkit-slider-runnable-track {
+.c13::-webkit-slider-runnable-track {
   -webkit-appearance: none;
   height: 16px;
   border-radius: 8px;
@@ -1190,7 +1178,7 @@ exports[`should render PWM_CONTROL correctly with zero 1`] = `
   box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.35),inset 0 0 0 2px #e5e6e6,inset 0 1px 10px 0 rgba(0,0,0,0.05);
 }
 
-.c14::-moz-range-track {
+.c13::-moz-range-track {
   -moz-appearance: none;
   height: 16px;
   border-radius: 8px;
@@ -1198,11 +1186,11 @@ exports[`should render PWM_CONTROL correctly with zero 1`] = `
   box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.35),inset 0 0 0 2px #e5e6e6,inset 0 1px 10px 0 rgba(0,0,0,0.05);
 }
 
-.c14::-moz-focus-outer {
+.c13::-moz-focus-outer {
   border: 0;
 }
 
-.c14::-ms-track {
+.c13::-ms-track {
   -webkit-appearance: none;
   height: 16px;
   border-radius: 8px;
@@ -1210,7 +1198,7 @@ exports[`should render PWM_CONTROL correctly with zero 1`] = `
   box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.35),inset 0 0 0 2px #e5e6e6,inset 0 1px 10px 0 rgba(0,0,0,0.05);
 }
 
-.c14::-webkit-slider-thumb {
+.c13::-webkit-slider-thumb {
   -webkit-appearance: none;
   margin-top: -12px;
   height: 40px;
@@ -1223,7 +1211,7 @@ exports[`should render PWM_CONTROL correctly with zero 1`] = `
   box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #00A1DE,inset 0 0 0 3px rgb(0,192,255);
 }
 
-.c14::-moz-range-thumb {
+.c13::-moz-range-thumb {
   -moz-appearance: none;
   height: 40px;
   width: 40px;
@@ -1235,7 +1223,7 @@ exports[`should render PWM_CONTROL correctly with zero 1`] = `
   box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #00A1DE,inset 0 0 0 3px rgb(0,192,255);
 }
 
-.c14::-ms-thumb {
+.c13::-ms-thumb {
   -webkit-appearance: none;
   margin-top: -12px;
   height: 40px;
@@ -1248,19 +1236,19 @@ exports[`should render PWM_CONTROL correctly with zero 1`] = `
   box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #00A1DE,inset 0 0 0 3px rgb(0,192,255);
 }
 
-.c14::-webkit-slider-thumb:hover {
+.c13::-webkit-slider-thumb:hover {
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
 }
 
-.c14::-moz-range-thumb:hover {
+.c13::-moz-range-thumb:hover {
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
 }
 
-.c14::-ms-thumb:hover {
+.c13::-ms-thumb:hover {
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
@@ -1329,14 +1317,6 @@ exports[`should render PWM_CONTROL correctly with zero 1`] = `
   height: 4px;
   margin-top: 5px;
   margin-bottom: 8px;
-}
-
-.c11 {
-  margin-bottom: 15px;
-}
-
-.c12 {
-  display: inline-block;
 }
 
 .c10 {
@@ -1564,46 +1544,36 @@ exports[`should render PWM_CONTROL correctly with zero 1`] = `
               <div
                 className="c10"
               >
-                <ControlRange__ValueWrapper
+                <P
                   color="grayDark"
                 >
-                  <P
+                  <Component
                     className="c11"
                     color="grayDark"
                   >
-                    <Component
-                      className="c11 c2"
+                    <div
+                      className="c11"
                       color="grayDark"
                     >
-                      <div
-                        className="c11 c2"
-                        color="grayDark"
+                      Current value: 
+                      <P
+                        color="primary"
                       >
-                        Current value: 
-                        <ControlRange__Value
+                        <Component
+                          className="c12"
                           color="primary"
                         >
-                          <P
+                          <div
                             className="c12"
                             color="primary"
                           >
-                            <Component
-                              className="c12 c13"
-                              color="primary"
-                            >
-                              <div
-                                className="c12 c13"
-                                color="primary"
-                              >
-                                0
-                              </div>
-                            </Component>
-                          </P>
-                        </ControlRange__Value>
-                      </div>
-                    </Component>
-                  </P>
-                </ControlRange__ValueWrapper>
+                            0
+                          </div>
+                        </Component>
+                      </P>
+                    </div>
+                  </Component>
+                </P>
                 <InputRange
                   kind="primary"
                   max={100}
@@ -1616,7 +1586,7 @@ exports[`should render PWM_CONTROL correctly with zero 1`] = `
                   value={0}
                 >
                   <input
-                    className="c14"
+                    className="c13"
                     kind="primary"
                     max={100}
                     min={0}

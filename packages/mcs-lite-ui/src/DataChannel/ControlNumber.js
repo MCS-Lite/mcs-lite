@@ -18,7 +18,7 @@ export const ButtonWrapper = styled.div`
   margin-top: 10px;
 `;
 
-export const Unixtype = styled(P)`
+export const Unixtype = P.extend`
   margin-bottom: 5px;
   display: flex;
   justify-content: flex-end;

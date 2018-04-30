@@ -45,11 +45,11 @@ export const LabelItem = styled.div`
   }
 `;
 
-export const ValueWrapper = styled(P)`
+export const ValueWrapper = P.extend`
   margin-bottom: 15px;
 `;
 
-export const Value = styled(P)`
+export const Value = P.extend`
   display: inline-block;
 `;
 

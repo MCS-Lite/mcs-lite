@@ -21,7 +21,6 @@ exports[`should render FLOAT_CONTROL correctly with default value to empty 1`] =
 .c3 {
   margin: 0;
   font-size: 1rem;
-  color: currentColor;
 }
 
 .c4 {
@@ -260,7 +259,7 @@ exports[`should render FLOAT_CONTROL correctly with default value to empty 1`] =
 `;
 
 exports[`should render FLOAT_CONTROL correctly with unit 1`] = `
-.c7 {
+.c6 {
   color: #00A1DE;
   -webkit-transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
@@ -269,27 +268,35 @@ exports[`should render FLOAT_CONTROL correctly with unit 1`] = `
   text-decoration: none;
 }
 
-.c7:hover {
+.c6:hover {
   color: rgb(0,151,208);
 }
 
-.c7:active {
+.c6:active {
   color: rgb(0,144,198);
 }
 
-.c5 {
+.c4 {
   margin: 0;
   font-size: 1rem;
-  color: currentColor;
 }
 
-.c2 {
+.c1 {
   margin: 0;
   font-size: 1rem;
   color: #999A94;
+  margin-bottom: 5px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
 }
 
-.c6 {
+.c5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -300,11 +307,11 @@ exports[`should render FLOAT_CONTROL correctly with unit 1`] = `
   align-items: center;
 }
 
-.c6 > * {
+.c5 > * {
   margin-right: 5px;
 }
 
-.c8 {
+.c7 {
   border-width: 1px;
   border-style: solid;
   outline: none;
@@ -324,15 +331,15 @@ exports[`should render FLOAT_CONTROL correctly with unit 1`] = `
   border-color: rgb(0,130,179);
 }
 
-.c8:hover {
+.c7:hover {
   background-color: rgb(0,151,208);
 }
 
-.c8:active {
+.c7:active {
   background-color: rgb(0,144,198);
 }
 
-.c3 {
+.c2 {
   box-sizing: border-box;
   width: 100%;
   border-width: 1px;
@@ -348,27 +355,27 @@ exports[`should render FLOAT_CONTROL correctly with unit 1`] = `
   box-shadow: none;
 }
 
-.c3:focus {
+.c2:focus {
   border-color: #00A1DE;
   box-shadow: 0 0 3px 0 rgba(0,161,222,0.5);
 }
 
-.c3::-webkit-input-placeholder {
+.c2::-webkit-input-placeholder {
   opacity: 1;
   color: #D1D2D3;
 }
 
-.c3::-moz-placeholder {
+.c2::-moz-placeholder {
   opacity: 1;
   color: #D1D2D3;
 }
 
-.c3:-ms-input-placeholder {
+.c2:-ms-input-placeholder {
   opacity: 1;
   color: #D1D2D3;
 }
 
-.c3::placeholder {
+.c2::placeholder {
   opacity: 1;
   color: #D1D2D3;
 }
@@ -377,7 +384,7 @@ exports[`should render FLOAT_CONTROL correctly with unit 1`] = `
   width: 100%;
 }
 
-.c4 {
+.c3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -394,18 +401,6 @@ exports[`should render FLOAT_CONTROL correctly with unit 1`] = `
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin-top: 10px;
-}
-
-.c1 {
-  margin-bottom: 5px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
 }
 
 <DataChannelAdapter
@@ -435,26 +430,21 @@ exports[`should render FLOAT_CONTROL correctly with unit 1`] = `
       <div
         className="c0"
       >
-        <ControlNumber__Unixtype
+        <P
           color="grayDark"
         >
-          <P
+          <Component
             className="c1"
             color="grayDark"
           >
-            <Component
-              className="c1 c2"
+            <p
+              className="c1"
               color="grayDark"
             >
-              <p
-                className="c1 c2"
-                color="grayDark"
-              >
-                單位：攝氏
-              </p>
-            </Component>
-          </P>
-        </ControlNumber__Unixtype>
+              單位：攝氏
+            </p>
+          </Component>
+        </P>
         <Input
           focus={false}
           kind="primary"
@@ -464,7 +454,7 @@ exports[`should render FLOAT_CONTROL correctly with unit 1`] = `
           value={0.11}
         >
           <input
-            className="c3"
+            className="c2"
             kind="primary"
             onChange={[Function]}
             placeholder="Float only"
@@ -474,7 +464,7 @@ exports[`should render FLOAT_CONTROL correctly with unit 1`] = `
         </Input>
         <ControlNumber__ButtonWrapper>
           <div
-            className="c4"
+            className="c3"
           >
             <ButtonClear
               onClick={[Function]}
@@ -483,20 +473,20 @@ exports[`should render FLOAT_CONTROL correctly with unit 1`] = `
                 onClick={[Function]}
               >
                 <Component
-                  className="c5"
+                  className="c4"
                   onClick={[Function]}
                 >
                   <div
-                    className="c5"
+                    className="c4"
                     onClick={[Function]}
                   >
                     <ButtonClear__StyledA>
                       <A
-                        className="c6"
+                        className="c5"
                         color="primary"
                       >
                         <a
-                          className="c6 c7"
+                          className="c5 c6"
                           color="primary"
                         >
                           <IconDelete
@@ -536,7 +526,7 @@ exports[`should render FLOAT_CONTROL correctly with unit 1`] = `
               <BaseComponent
                 active={false}
                 block={false}
-                className="c8"
+                className="c7"
                 component="button"
                 disabled={false}
                 kind="primary"
@@ -546,7 +536,7 @@ exports[`should render FLOAT_CONTROL correctly with unit 1`] = `
                 square={false}
               >
                 <button
-                  className="c8"
+                  className="c7"
                   onClick={[Function]}
                 >
                   Ok
@@ -582,7 +572,6 @@ exports[`should render FLOAT_CONTROL correctly with value 1`] = `
 .c3 {
   margin: 0;
   font-size: 1rem;
-  color: currentColor;
 }
 
 .c4 {
@@ -843,7 +832,6 @@ exports[`should render FLOAT_CONTROL correctly with zero 1`] = `
 .c3 {
   margin: 0;
   font-size: 1rem;
-  color: currentColor;
 }
 
 .c4 {

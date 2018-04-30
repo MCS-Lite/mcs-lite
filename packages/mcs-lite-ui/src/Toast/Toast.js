@@ -18,7 +18,7 @@ export const StyledCard = styled(Card)`
   background-color: rgba(255, 255, 255, 0.9);
 `;
 
-export const StyledP = styled(P)`
+export const StyledP = P.extend`
   display: flex;
   align-items: center;
   padding: 10px 20px;

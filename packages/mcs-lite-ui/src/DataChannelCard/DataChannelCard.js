@@ -34,7 +34,7 @@ export const Footer = styled.div`
   display: block;
 `;
 
-export const Description = styled(P)`
+export const Description = P.extend`
   height: ${setHeightByLine(2)};
 `;
 

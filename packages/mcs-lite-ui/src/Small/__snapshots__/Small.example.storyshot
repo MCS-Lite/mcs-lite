@@ -53,7 +53,6 @@ exports[`Storyshots Small Within <P> 1`] = `
 .c1 {
   margin: 0;
   font-size: 1rem;
-  color: currentColor;
 }
 
 .c2 {

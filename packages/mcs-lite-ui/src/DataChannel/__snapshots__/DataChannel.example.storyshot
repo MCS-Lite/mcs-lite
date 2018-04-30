@@ -21,7 +21,6 @@ exports[`Storyshots DataChannel ButtonClear 1`] = `
 .c0 {
   margin: 0;
   font-size: 1rem;
-  color: currentColor;
 }
 
 .c1 {
@@ -63,7 +62,7 @@ exports[`Storyshots DataChannel ButtonClear 1`] = `
 `;
 
 exports[`Storyshots DataChannel ControlNumber 1`] = `
-.c7 {
+.c6 {
   color: #00A1DE;
   -webkit-transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
@@ -72,27 +71,35 @@ exports[`Storyshots DataChannel ControlNumber 1`] = `
   text-decoration: none;
 }
 
-.c7:hover {
+.c6:hover {
   color: rgb(0,151,208);
 }
 
-.c7:active {
+.c6:active {
   color: rgb(0,144,198);
 }
 
-.c5 {
+.c4 {
   margin: 0;
   font-size: 1rem;
-  color: currentColor;
 }
 
-.c2 {
+.c1 {
   margin: 0;
   font-size: 1rem;
   color: #999A94;
+  margin-bottom: 5px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
 }
 
-.c8 {
+.c7 {
   border-width: 1px;
   border-style: solid;
   outline: none;
@@ -112,15 +119,15 @@ exports[`Storyshots DataChannel ControlNumber 1`] = `
   border-color: rgb(0,130,179);
 }
 
-.c8:hover {
+.c7:hover {
   background-color: rgb(0,151,208);
 }
 
-.c8:active {
+.c7:active {
   background-color: rgb(0,144,198);
 }
 
-.c6 {
+.c5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -131,11 +138,11 @@ exports[`Storyshots DataChannel ControlNumber 1`] = `
   align-items: center;
 }
 
-.c6 > * {
+.c5 > * {
   margin-right: 5px;
 }
 
-.c3 {
+.c2 {
   box-sizing: border-box;
   width: 100%;
   border-width: 1px;
@@ -151,27 +158,27 @@ exports[`Storyshots DataChannel ControlNumber 1`] = `
   box-shadow: none;
 }
 
-.c3:focus {
+.c2:focus {
   border-color: #00A1DE;
   box-shadow: 0 0 3px 0 rgba(0,161,222,0.5);
 }
 
-.c3::-webkit-input-placeholder {
+.c2::-webkit-input-placeholder {
   opacity: 1;
   color: #D1D2D3;
 }
 
-.c3::-moz-placeholder {
+.c2::-moz-placeholder {
   opacity: 1;
   color: #D1D2D3;
 }
 
-.c3:-ms-input-placeholder {
+.c2:-ms-input-placeholder {
   opacity: 1;
   color: #D1D2D3;
 }
 
-.c3::placeholder {
+.c2::placeholder {
   opacity: 1;
   color: #D1D2D3;
 }
@@ -180,7 +187,7 @@ exports[`Storyshots DataChannel ControlNumber 1`] = `
   width: 100%;
 }
 
-.c4 {
+.c3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -199,29 +206,17 @@ exports[`Storyshots DataChannel ControlNumber 1`] = `
   margin-top: 10px;
 }
 
-.c1 {
-  margin-bottom: 5px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-}
-
 <div
   className="c0"
 >
   <p
-    className="c1 c2"
+    className="c1"
     color="grayDark"
   >
     單位：攝氏
   </p>
   <input
-    className="c3"
+    className="c2"
     kind="primary"
     onChange={[Function]}
     placeholder="placeholder"
@@ -229,14 +224,14 @@ exports[`Storyshots DataChannel ControlNumber 1`] = `
     value={10}
   />
   <div
-    className="c4"
+    className="c3"
   >
     <div
-      className="c5"
+      className="c4"
       onClick={[Function]}
     >
       <a
-        className="c6 c7"
+        className="c5 c6"
         color="primary"
       >
         <svg
@@ -254,7 +249,7 @@ exports[`Storyshots DataChannel ControlNumber 1`] = `
       </a>
     </div>
     <button
-      className="c8"
+      className="c7"
       onClick={[Function]}
     >
       Ok
@@ -390,19 +385,27 @@ exports[`Storyshots DataChannel ControlPeriod 1`] = `
 `;
 
 exports[`Storyshots DataChannel ControlRange - Stateful PPAP 1`] = `
-.c7 {
-  margin: 0;
-  font-size: 1rem;
-  color: #00A1DE;
-}
-
 .c3 {
   margin: 0;
   font-size: 1rem;
   color: #999A94;
 }
 
-.c8 {
+.c5 {
+  margin: 0;
+  font-size: 1rem;
+  color: #999A94;
+  margin-bottom: 15px;
+}
+
+.c6 {
+  margin: 0;
+  font-size: 1rem;
+  color: #00A1DE;
+  display: inline-block;
+}
+
+.c7 {
   -webkit-appearance: none;
   -moz-appearance: none;
   width: 100%;
@@ -411,7 +414,7 @@ exports[`Storyshots DataChannel ControlRange - Stateful PPAP 1`] = `
   cursor: pointer;
 }
 
-.c8::-webkit-slider-runnable-track {
+.c7::-webkit-slider-runnable-track {
   -webkit-appearance: none;
   height: 16px;
   border-radius: 8px;
@@ -419,7 +422,7 @@ exports[`Storyshots DataChannel ControlRange - Stateful PPAP 1`] = `
   box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.35),inset 0 0 0 2px #e5e6e6,inset 0 1px 10px 0 rgba(0,0,0,0.05);
 }
 
-.c8::-moz-range-track {
+.c7::-moz-range-track {
   -moz-appearance: none;
   height: 16px;
   border-radius: 8px;
@@ -427,11 +430,11 @@ exports[`Storyshots DataChannel ControlRange - Stateful PPAP 1`] = `
   box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.35),inset 0 0 0 2px #e5e6e6,inset 0 1px 10px 0 rgba(0,0,0,0.05);
 }
 
-.c8::-moz-focus-outer {
+.c7::-moz-focus-outer {
   border: 0;
 }
 
-.c8::-ms-track {
+.c7::-ms-track {
   -webkit-appearance: none;
   height: 16px;
   border-radius: 8px;
@@ -439,7 +442,7 @@ exports[`Storyshots DataChannel ControlRange - Stateful PPAP 1`] = `
   box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.35),inset 0 0 0 2px #e5e6e6,inset 0 1px 10px 0 rgba(0,0,0,0.05);
 }
 
-.c8::-webkit-slider-thumb {
+.c7::-webkit-slider-thumb {
   -webkit-appearance: none;
   margin-top: -12px;
   height: 40px;
@@ -452,7 +455,7 @@ exports[`Storyshots DataChannel ControlRange - Stateful PPAP 1`] = `
   box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #00A1DE,inset 0 0 0 3px rgb(0,192,255);
 }
 
-.c8::-moz-range-thumb {
+.c7::-moz-range-thumb {
   -moz-appearance: none;
   height: 40px;
   width: 40px;
@@ -464,7 +467,7 @@ exports[`Storyshots DataChannel ControlRange - Stateful PPAP 1`] = `
   box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #00A1DE,inset 0 0 0 3px rgb(0,192,255);
 }
 
-.c8::-ms-thumb {
+.c7::-ms-thumb {
   -webkit-appearance: none;
   margin-top: -12px;
   height: 40px;
@@ -477,19 +480,19 @@ exports[`Storyshots DataChannel ControlRange - Stateful PPAP 1`] = `
   box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #00A1DE,inset 0 0 0 3px rgb(0,192,255);
 }
 
-.c8::-webkit-slider-thumb:hover {
+.c7::-webkit-slider-thumb:hover {
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
 }
 
-.c8::-moz-range-thumb:hover {
+.c7::-moz-range-thumb:hover {
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
 }
 
-.c8::-ms-thumb:hover {
+.c7::-ms-thumb:hover {
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
@@ -558,14 +561,6 @@ exports[`Storyshots DataChannel ControlRange - Stateful PPAP 1`] = `
   height: 4px;
   margin-top: 5px;
   margin-bottom: 8px;
-}
-
-.c5 {
-  margin-bottom: 15px;
-}
-
-.c6 {
-  display: inline-block;
 }
 
 .c4 {
@@ -613,19 +608,19 @@ exports[`Storyshots DataChannel ControlRange - Stateful PPAP 1`] = `
     className="c4"
   >
     <div
-      className="c5 c3"
+      className="c5"
       color="grayDark"
     >
       Current value: 
       <p
-        className="c6 c7"
+        className="c6"
         color="primary"
       >
         Pineapple
       </p>
     </div>
     <input
-      className="c8"
+      className="c7"
       kind="primary"
       max={2}
       min={0}
@@ -641,16 +636,265 @@ exports[`Storyshots DataChannel ControlRange - Stateful PPAP 1`] = `
 `;
 
 exports[`Storyshots DataChannel ControlRange - Stateful number 1`] = `
-.c7 {
-  margin: 0;
-  font-size: 1rem;
-  color: #00A1DE;
-}
-
 .c3 {
   margin: 0;
   font-size: 1rem;
   color: #999A94;
+}
+
+.c5 {
+  margin: 0;
+  font-size: 1rem;
+  color: #999A94;
+  margin-bottom: 15px;
+}
+
+.c6 {
+  margin: 0;
+  font-size: 1rem;
+  color: #00A1DE;
+  display: inline-block;
+}
+
+.c7 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 100%;
+  outline: none;
+  background-color: rgba(0,0,0,0);
+  cursor: pointer;
+}
+
+.c7::-webkit-slider-runnable-track {
+  -webkit-appearance: none;
+  height: 16px;
+  border-radius: 8px;
+  background-image: linear-gradient(-180deg,#dfdfdf 5%,#f6f6f6 96%);
+  box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.35),inset 0 0 0 2px #e5e6e6,inset 0 1px 10px 0 rgba(0,0,0,0.05);
+}
+
+.c7::-moz-range-track {
+  -moz-appearance: none;
+  height: 16px;
+  border-radius: 8px;
+  background-image: linear-gradient(-180deg,#dfdfdf 5%,#f6f6f6 96%);
+  box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.35),inset 0 0 0 2px #e5e6e6,inset 0 1px 10px 0 rgba(0,0,0,0.05);
+}
+
+.c7::-moz-focus-outer {
+  border: 0;
+}
+
+.c7::-ms-track {
+  -webkit-appearance: none;
+  height: 16px;
+  border-radius: 8px;
+  background-image: linear-gradient(-180deg,#dfdfdf 5%,#f6f6f6 96%);
+  box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.35),inset 0 0 0 2px #e5e6e6,inset 0 1px 10px 0 rgba(0,0,0,0.05);
+}
+
+.c7::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  margin-top: -12px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-image: radial-gradient( 50% 50%,#ffffff 50%,#ffffff 73%,#f8f8f8 81%,#ebebeb 90%,#dddddd 95% );
+  -webkit-transition: -webkit-transform 0.3s ease,width 0.2s ease,height 0.2s ease;
+  -webkit-transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
+  transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #00A1DE,inset 0 0 0 3px rgb(0,192,255);
+}
+
+.c7::-moz-range-thumb {
+  -moz-appearance: none;
+  height: 40px;
+  width: 40px;
+  border-width: 0;
+  border-radius: 50%;
+  background-image: radial-gradient( 50% 50%,#ffffff 50%,#ffffff 73%,#f8f8f8 81%,#ebebeb 90%,#dddddd 95% );
+  -moz-appearance: none;
+  -moz-transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #00A1DE,inset 0 0 0 3px rgb(0,192,255);
+}
+
+.c7::-ms-thumb {
+  -webkit-appearance: none;
+  margin-top: -12px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-image: radial-gradient( 50% 50%,#ffffff 50%,#ffffff 73%,#f8f8f8 81%,#ebebeb 90%,#dddddd 95% );
+  -webkit-transition: -webkit-transform 0.3s ease,width 0.2s ease,height 0.2s ease;
+  -webkit-transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
+  transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #00A1DE,inset 0 0 0 3px rgb(0,192,255);
+}
+
+.c7::-webkit-slider-thumb:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.c7::-moz-range-thumb:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.c7::-ms-thumb:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.c0 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column-reverse;
+  -ms-flex-direction: column-reverse;
+  flex-direction: column-reverse;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c1 > *:first-child {
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+}
+
+.c1 > *:last-child {
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0 4px;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-flex-basis: 0;
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0;
+  overflow: hidden;
+}
+
+.c2::before {
+  content: '';
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-right-color: #D1D2D3;
+  height: 4px;
+  margin-top: 5px;
+  margin-bottom: 8px;
+}
+
+.c4 {
+  padding: 0 0%;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <div
+      className="c2"
+    >
+      <div
+        className="c3"
+        color="grayDark"
+      >
+        33
+      </div>
+    </div>
+    <div
+      className="c2"
+    >
+      <div
+        className="c3"
+        color="grayDark"
+      >
+        95
+      </div>
+    </div>
+  </div>
+  <div
+    className="c4"
+  >
+    <div
+      className="c5"
+      color="grayDark"
+    >
+      Current value: 
+      <div
+        className="c6"
+        color="primary"
+      >
+        88
+      </div>
+    </div>
+    <input
+      className="c7"
+      kind="primary"
+      max={95}
+      min={33}
+      onChange={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      step={1}
+      type="range"
+      value={88}
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots DataChannel ControlRange 1`] = `
+.c4 {
+  margin: 0;
+  font-size: 1rem;
+  color: #999A94;
+}
+
+.c6 {
+  margin: 0;
+  font-size: 1rem;
+  color: #999A94;
+  margin-bottom: 15px;
+}
+
+.c7 {
+  margin: 0;
+  font-size: 1rem;
+  color: #00A1DE;
+  display: inline-block;
 }
 
 .c8 {
@@ -746,247 +990,6 @@ exports[`Storyshots DataChannel ControlRange - Stateful number 1`] = `
   transform: scale(1.1);
 }
 
-.c0 {
-  width: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column-reverse;
-  -ms-flex-direction: column-reverse;
-  flex-direction: column-reverse;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.c1 > *:first-child {
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-}
-
-.c1 > *:last-child {
-  -webkit-align-items: flex-end;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
-  align-items: flex-end;
-}
-
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  margin: 0 4px;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -webkit-flex-basis: 0;
-  -ms-flex-preferred-size: 0;
-  flex-basis: 0;
-  overflow: hidden;
-}
-
-.c2::before {
-  content: '';
-  border-right-width: 1px;
-  border-right-style: solid;
-  border-right-color: #D1D2D3;
-  height: 4px;
-  margin-top: 5px;
-  margin-bottom: 8px;
-}
-
-.c5 {
-  margin-bottom: 15px;
-}
-
-.c6 {
-  display: inline-block;
-}
-
-.c4 {
-  padding: 0 0%;
-}
-
-<div
-  className="c0"
->
-  <div
-    className="c1"
-  >
-    <div
-      className="c2"
-    >
-      <div
-        className="c3"
-        color="grayDark"
-      >
-        33
-      </div>
-    </div>
-    <div
-      className="c2"
-    >
-      <div
-        className="c3"
-        color="grayDark"
-      >
-        95
-      </div>
-    </div>
-  </div>
-  <div
-    className="c4"
-  >
-    <div
-      className="c5 c3"
-      color="grayDark"
-    >
-      Current value: 
-      <div
-        className="c6 c7"
-        color="primary"
-      >
-        88
-      </div>
-    </div>
-    <input
-      className="c8"
-      kind="primary"
-      max={95}
-      min={33}
-      onChange={[Function]}
-      onMouseUp={[Function]}
-      onTouchEnd={[Function]}
-      step={1}
-      type="range"
-      value={88}
-    />
-  </div>
-</div>
-`;
-
-exports[`Storyshots DataChannel ControlRange 1`] = `
-.c8 {
-  margin: 0;
-  font-size: 1rem;
-  color: #00A1DE;
-}
-
-.c4 {
-  margin: 0;
-  font-size: 1rem;
-  color: #999A94;
-}
-
-.c9 {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  width: 100%;
-  outline: none;
-  background-color: rgba(0,0,0,0);
-  cursor: pointer;
-}
-
-.c9::-webkit-slider-runnable-track {
-  -webkit-appearance: none;
-  height: 16px;
-  border-radius: 8px;
-  background-image: linear-gradient(-180deg,#dfdfdf 5%,#f6f6f6 96%);
-  box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.35),inset 0 0 0 2px #e5e6e6,inset 0 1px 10px 0 rgba(0,0,0,0.05);
-}
-
-.c9::-moz-range-track {
-  -moz-appearance: none;
-  height: 16px;
-  border-radius: 8px;
-  background-image: linear-gradient(-180deg,#dfdfdf 5%,#f6f6f6 96%);
-  box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.35),inset 0 0 0 2px #e5e6e6,inset 0 1px 10px 0 rgba(0,0,0,0.05);
-}
-
-.c9::-moz-focus-outer {
-  border: 0;
-}
-
-.c9::-ms-track {
-  -webkit-appearance: none;
-  height: 16px;
-  border-radius: 8px;
-  background-image: linear-gradient(-180deg,#dfdfdf 5%,#f6f6f6 96%);
-  box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.35),inset 0 0 0 2px #e5e6e6,inset 0 1px 10px 0 rgba(0,0,0,0.05);
-}
-
-.c9::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  margin-top: -12px;
-  height: 40px;
-  width: 40px;
-  border-radius: 50%;
-  background-image: radial-gradient( 50% 50%,#ffffff 50%,#ffffff 73%,#f8f8f8 81%,#ebebeb 90%,#dddddd 95% );
-  -webkit-transition: -webkit-transform 0.3s ease,width 0.2s ease,height 0.2s ease;
-  -webkit-transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
-  transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
-  box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #00A1DE,inset 0 0 0 3px rgb(0,192,255);
-}
-
-.c9::-moz-range-thumb {
-  -moz-appearance: none;
-  height: 40px;
-  width: 40px;
-  border-width: 0;
-  border-radius: 50%;
-  background-image: radial-gradient( 50% 50%,#ffffff 50%,#ffffff 73%,#f8f8f8 81%,#ebebeb 90%,#dddddd 95% );
-  -moz-appearance: none;
-  -moz-transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
-  box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #00A1DE,inset 0 0 0 3px rgb(0,192,255);
-}
-
-.c9::-ms-thumb {
-  -webkit-appearance: none;
-  margin-top: -12px;
-  height: 40px;
-  width: 40px;
-  border-radius: 50%;
-  background-image: radial-gradient( 50% 50%,#ffffff 50%,#ffffff 73%,#f8f8f8 81%,#ebebeb 90%,#dddddd 95% );
-  -webkit-transition: -webkit-transform 0.3s ease,width 0.2s ease,height 0.2s ease;
-  -webkit-transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
-  transition: transform 0.3s ease,width 0.2s ease,height 0.2s ease;
-  box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #00A1DE,inset 0 0 0 3px rgb(0,192,255);
-}
-
-.c9::-webkit-slider-thumb:hover {
-  -webkit-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  transform: scale(1.1);
-}
-
-.c9::-moz-range-thumb:hover {
-  -webkit-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  transform: scale(1.1);
-}
-
-.c9::-ms-thumb:hover {
-  -webkit-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  transform: scale(1.1);
-}
-
 .c1 {
   width: 100%;
   display: -webkit-box;
@@ -1019,21 +1022,21 @@ exports[`Storyshots DataChannel ControlRange 1`] = `
   align-items: center;
 }
 
-.c10 {
+.c9 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
 
-.c10 > *:first-child {
+.c9 > *:first-child {
   -webkit-align-items: flex-start;
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
   align-items: flex-start;
 }
 
-.c10 > *:last-child {
+.c9 > *:last-child {
   -webkit-align-items: flex-end;
   -webkit-box-align: flex-end;
   -ms-flex-align: flex-end;
@@ -1073,19 +1076,11 @@ exports[`Storyshots DataChannel ControlRange 1`] = `
   margin-bottom: 8px;
 }
 
-.c6 {
-  margin-bottom: 15px;
-}
-
-.c7 {
-  display: inline-block;
-}
-
 .c5 {
   padding: 0 7%;
 }
 
-.c11 {
+.c10 {
   padding: 0 0%;
 }
 
@@ -1159,19 +1154,19 @@ exports[`Storyshots DataChannel ControlRange 1`] = `
       className="c5"
     >
       <div
-        className="c6 c4"
+        className="c6"
         color="grayDark"
       >
         Current value: 
         <p
-          className="c7 c8"
+          className="c7"
           color="primary"
         >
           N/A
         </p>
       </div>
       <input
-        className="c9"
+        className="c8"
         kind="primary"
         max={4}
         min={0}
@@ -1245,19 +1240,19 @@ exports[`Storyshots DataChannel ControlRange 1`] = `
       className="c5"
     >
       <div
-        className="c6 c4"
+        className="c6"
         color="grayDark"
       >
         Current value: 
         <p
-          className="c7 c8"
+          className="c7"
           color="primary"
         >
           DDDDD
         </p>
       </div>
       <input
-        className="c9"
+        className="c8"
         kind="primary"
         max={4}
         min={0}
@@ -1274,7 +1269,7 @@ exports[`Storyshots DataChannel ControlRange 1`] = `
     className="c1"
   >
     <div
-      className="c10"
+      className="c9"
     >
       <div
         className="c3"
@@ -1298,22 +1293,22 @@ exports[`Storyshots DataChannel ControlRange 1`] = `
       </div>
     </div>
     <div
-      className="c11"
+      className="c10"
     >
       <div
-        className="c6 c4"
+        className="c6"
         color="grayDark"
       >
         Current value: 
         <p
-          className="c7 c8"
+          className="c7"
           color="primary"
         >
           Low
         </p>
       </div>
       <input
-        className="c9"
+        className="c8"
         kind="primary"
         max={1}
         min={0}
@@ -1330,7 +1325,7 @@ exports[`Storyshots DataChannel ControlRange 1`] = `
     className="c1"
   >
     <div
-      className="c10"
+      className="c9"
     >
       <div
         className="c3"
@@ -1354,22 +1349,22 @@ exports[`Storyshots DataChannel ControlRange 1`] = `
       </div>
     </div>
     <div
-      className="c11"
+      className="c10"
     >
       <div
-        className="c6 c4"
+        className="c6"
         color="grayDark"
       >
         Current value: 
         <div
-          className="c7 c8"
+          className="c7"
           color="primary"
         >
           33
         </div>
       </div>
       <input
-        className="c9"
+        className="c8"
         kind="primary"
         max={100}
         min={0}
@@ -1406,7 +1401,6 @@ exports[`Storyshots DataChannel ControlString 1`] = `
 .c4 {
   margin: 0;
   font-size: 1rem;
-  color: currentColor;
 }
 
 .c7 {
@@ -2038,10 +2032,11 @@ exports[`Storyshots DataChannel DisplayUnitValue 1`] = `
   color: #00A1DE;
 }
 
-.c4 {
+.c3 {
   margin: 0;
   font-size: 1rem;
   color: #999A94;
+  margin-top: 10px;
 }
 
 .c0 {
@@ -2066,10 +2061,6 @@ exports[`Storyshots DataChannel DisplayUnitValue 1`] = `
   width: 100%;
 }
 
-.c3 {
-  margin-top: 10px;
-}
-
 <div
   className="c0"
 >
@@ -2080,7 +2071,7 @@ exports[`Storyshots DataChannel DisplayUnitValue 1`] = `
     1123124124121
   </h1>
   <p
-    className="c3 c4"
+    className="c3"
     color="grayDark"
   >
     攝氏

@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import R from 'ramda';
 import isString from '../utils/isString';
 
@@ -16,8 +16,12 @@ Component.propTypes = {
 const P = styled(Component)`
   margin: 0;
   font-size: ${props => props.theme.fontSize.p};
-  color: ${props =>
-    props.color ? props.theme.color[props.color] : 'currentColor'};
+
+  ${props =>
+    props.color &&
+    css`
+      color: ${props.theme.color[props.color]};
+    `};
 `;
 
 P.displayName = 'P';

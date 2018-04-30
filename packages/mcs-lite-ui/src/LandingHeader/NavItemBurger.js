@@ -12,7 +12,7 @@ import MorphReplace from '../MorphReplace';
 import P from '../P';
 import NavItem from './NavItem';
 
-export const StyledP = styled(P)`
+export const StyledP = P.extend`
   margin-right: 5px;
 `;
 

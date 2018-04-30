@@ -18,7 +18,7 @@ const Icon = styled(Heading)`
   margin-bottom: 5px;
 `;
 
-const IconPath = styled(P)`
+const IconPath = P.extend`
   background-color: ${props => props.theme.color.grayLight};
   padding: 2px 5px;
 `;
