@@ -1,5 +1,16 @@
 # MCS Lite changelogs
 
+## Released (2018-04-30)
+
+#### :rocket: New Feature
+
+* `mcs-lite-admin-web`, `mcs-lite-landing-web`, `mcs-lite-ui`
+  * [#608](https://github.com/MCS-Lite/mcs-lite/pull/608) fix(UI): use .extend and update color style in P component. ([@evenchange4](https://github.com/evenchange4))
+
+#### Committers: 1
+
+* Michael Hsu ([evenchange4](https://github.com/evenchange4))
+
 ## Released (2018-04-17)
 
 * babel-preset-mcs-lite: 0.3.25 => 0.3.26
