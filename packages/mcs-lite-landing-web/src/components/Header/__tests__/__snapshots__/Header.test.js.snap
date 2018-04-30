@@ -92,11 +92,11 @@ exports[`should renders <Header> correctly with Desktop view 1`] = `
   fill: currentColor;
 }
 
-.c13 {
+.c12 {
   line-height: 0;
 }
 
-.c13 > * {
+.c12 > * {
   -webkit-transform-origin: center;
   -ms-transform-origin: center;
   transform-origin: center;
@@ -108,13 +108,9 @@ exports[`should renders <Header> correctly with Desktop view 1`] = `
   transform: initial;
 }
 
-.c12 {
+.c11 {
   margin: 0;
   font-size: 1rem;
-  color: currentColor;
-}
-
-.c11 {
   margin-right: 5px;
 }
 
@@ -131,7 +127,7 @@ exports[`should renders <Header> correctly with Desktop view 1`] = `
   justify-content: space-between;
 }
 
-.c14 {
+.c13 {
   visibility: hidden;
   display: none;
 }
@@ -423,26 +419,22 @@ exports[`should renders <Header> correctly with Desktop view 1`] = `
                                                   onClick={[Function]}
                                                   onMouseOver={[Function]}
                                                 >
-                                                  <Styled(P)>
-                                                    <P
+                                                  <Styled(Component)>
+                                                    <Component
                                                       className="c11"
                                                     >
-                                                      <Component
-                                                        className="c11 c12"
+                                                      <p
+                                                        className="c11"
                                                       >
-                                                        <p
-                                                          className="c11 c12"
-                                                        >
-                                                          Language
-                                                        </p>
-                                                      </Component>
-                                                    </P>
-                                                  </Styled(P)>
+                                                        Language
+                                                      </p>
+                                                    </Component>
+                                                  </Styled(Component)>
                                                   <Rotate
                                                     active={false}
                                                   >
                                                     <div
-                                                      className="c13"
+                                                      className="c12"
                                                     >
                                                       <IconFold
                                                         size={18}
@@ -473,7 +465,7 @@ exports[`should renders <Header> correctly with Desktop view 1`] = `
                                     key=".2"
                                   >
                                     <div
-                                      className="c14"
+                                      className="c13"
                                     >
                                       <a
                                         href="/en"

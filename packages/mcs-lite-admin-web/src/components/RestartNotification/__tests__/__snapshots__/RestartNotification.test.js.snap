@@ -9,18 +9,14 @@ exports[`should renders <RestartNotification> correctly 1`] = `
   overflow: hidden;
 }
 
-.c7 {
-  margin: 0;
-  font-size: 1rem;
-  color: currentColor;
-}
-
 .c3 {
   border: 1px solid #F39A1E;
   background-color: rgba(255,255,255,0.9);
 }
 
 .c6 {
+  margin: 0;
+  font-size: 1rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -200,32 +196,27 @@ exports[`should renders <RestartNotification> correctly 1`] = `
                           }
                         }
                       >
-                        <Styled(P)
+                        <Styled(Component)
                           kind="warning"
                         >
-                          <P
+                          <Component
                             className="c5 c6"
                             kind="warning"
                           >
-                            <Component
-                              className="c5 c6 c7"
+                            <div
+                              className="c5 c6"
                               kind="warning"
                             >
-                              <div
-                                className="c5 c6 c7"
-                                kind="warning"
-                              >
-                                <div>
-                                  restartRequired
-                                </div>
-                                <A
-                                  color="primary"
-                                  onClick={[Function]}
-                                />
+                              <div>
+                                restartRequired
                               </div>
-                            </Component>
-                          </P>
-                        </Styled(P)>
+                              <A
+                                color="primary"
+                                onClick={[Function]}
+                              />
+                            </div>
+                          </Component>
+                        </Styled(Component)>
                       </div>
                     </Card>
                   </Styled(Card)>

@@ -25,7 +25,6 @@ exports[`should renders <Language> correctly 1`] = `
 .c3 {
   margin: 0;
   font-size: 1rem;
-  color: currentColor;
 }
 
 .c2 {
