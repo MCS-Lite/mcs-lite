@@ -77,10 +77,11 @@ exports[`should render FLOAT_DISPLAY correctly with default value to N/A 1`] = `
 `;
 
 exports[`should render FLOAT_DISPLAY correctly with unit 1`] = `
-.c4 {
+.c3 {
   margin: 0;
   font-size: 1rem;
   color: #999A94;
+  margin-top: 10px;
 }
 
 .c2 {
@@ -110,10 +111,6 @@ exports[`should render FLOAT_DISPLAY correctly with unit 1`] = `
   overflow: hidden;
   text-overflow: ellipsis;
   width: 100%;
-}
-
-.c3 {
-  margin-top: 10px;
 }
 
 <DataChannelAdapter
@@ -161,26 +158,21 @@ exports[`should render FLOAT_DISPLAY correctly with unit 1`] = `
             </H>
           </Heading>
         </DisplayUnitValue__StyledHeading>
-        <DisplayUnitValue__StyledP
+        <P
           color="grayDark"
         >
-          <P
+          <Component
             className="c3"
             color="grayDark"
           >
-            <Component
-              className="c3 c4"
+            <p
+              className="c3"
               color="grayDark"
             >
-              <p
-                className="c3 c4"
-                color="grayDark"
-              >
-                攝氏
-              </p>
-            </Component>
-          </P>
-        </DisplayUnitValue__StyledP>
+              攝氏
+            </p>
+          </Component>
+        </P>
       </div>
     </DisplayUnitValue__Container>
   </DisplayUnitValue>

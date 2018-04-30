@@ -18,7 +18,7 @@ export const StyledHeading = styled(Heading)`
   width: 100%;
 `;
 
-export const StyledP = styled(P)`
+export const StyledP = P.extend`
   margin-top: 10px;
 `;
 

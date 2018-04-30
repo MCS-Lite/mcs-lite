@@ -5,7 +5,6 @@ exports[`Storyshots Heading API 1`] = `
   margin: 0;
   font-weight: normal;
   font-size: 2.46rem;
-  color: currentColor;
 }
 
 <h1
@@ -158,35 +157,30 @@ exports[`Storyshots Heading With level props 1`] = `
   margin: 0;
   font-weight: normal;
   font-size: 2.46rem;
-  color: currentColor;
 }
 
 .c3 {
   margin: 0;
   font-weight: normal;
   font-size: 1.15rem;
-  color: currentColor;
 }
 
 .c1 {
   margin: 0;
   font-weight: normal;
   font-size: 1.69rem;
-  color: currentColor;
 }
 
 .c2 {
   margin: 0;
   font-weight: normal;
   font-size: 1.38rem;
-  color: currentColor;
 }
 
 .c4 {
   margin: 0;
   font-weight: normal;
   font-size: 1rem;
-  color: currentColor;
 }
 
 <div>

@@ -1,21 +1,20 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots DataChannelAdapter API 1`] = `
-.c16 {
+.c15 {
   margin: 0;
   font-weight: normal;
   font-size: 1.15rem;
-  color: currentColor;
 }
 
-.c24 {
+.c23 {
   margin: 0;
   font-weight: normal;
   font-size: 2.46rem;
   color: #00A1DE;
 }
 
-.c12 {
+.c11 {
   color: #00A1DE;
   -webkit-transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
@@ -24,37 +23,72 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
   text-decoration: none;
 }
 
-.c12:hover {
+.c11:hover {
   color: rgb(0,151,208);
 }
 
-.c12:active {
+.c11:active {
   color: rgb(0,144,198);
 }
 
-.c10 {
+.c9 {
   margin: 0;
   font-size: 1rem;
-  color: currentColor;
 }
 
-.c43 {
-  margin: 0;
-  font-size: 1rem;
-  color: #00A1DE;
-}
-
-.c7 {
+.c34 {
   margin: 0;
   font-size: 1rem;
   color: #999A94;
 }
 
-.c18 {
+.c24 {
+  margin: 0;
+  font-size: 1rem;
+  color: #999A94;
+  margin-top: 10px;
+}
+
+.c6 {
+  margin: 0;
+  font-size: 1rem;
+  color: #999A94;
+  margin-bottom: 5px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.c41 {
+  margin: 0;
+  font-size: 1rem;
+  color: #999A94;
+  margin-bottom: 15px;
+}
+
+.c42 {
+  margin: 0;
+  font-size: 1rem;
+  color: #00A1DE;
+  display: inline-block;
+}
+
+.c20 {
+  margin: 0;
+  font-size: 1rem;
+  height: 39px;
+}
+
+.c17 {
   font-size: 0.923rem;
 }
 
-.c13 {
+.c12 {
   border-width: 1px;
   border-style: solid;
   outline: none;
@@ -74,11 +108,11 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
   border-color: rgb(0,130,179);
 }
 
-.c13:hover {
+.c12:hover {
   background-color: rgb(0,151,208);
 }
 
-.c13:active {
+.c12:active {
   background-color: rgb(0,144,198);
 }
 
@@ -90,7 +124,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
   overflow: hidden;
 }
 
-.c32 {
+.c31 {
   position: relative;
   height: 50px;
   width: 82px;
@@ -105,7 +139,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
   transform-origin: 0 0;
 }
 
-.c32::after {
+.c31::after {
   content: ' ';
   position: absolute;
   width: 42px;
@@ -122,7 +156,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
   border: 1px solid rgba(0,0,0,0.1);
 }
 
-.c11 {
+.c10 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -133,11 +167,11 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
   align-items: center;
 }
 
-.c11 > * {
+.c10 > * {
   margin-right: 5px;
 }
 
-.c8 {
+.c7 {
   box-sizing: border-box;
   width: 100%;
   border-width: 1px;
@@ -153,27 +187,27 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
   box-shadow: none;
 }
 
-.c8:focus {
+.c7:focus {
   border-color: #00A1DE;
   box-shadow: 0 0 3px 0 rgba(0,161,222,0.5);
 }
 
-.c8::-webkit-input-placeholder {
+.c7::-webkit-input-placeholder {
   opacity: 1;
   color: #D1D2D3;
 }
 
-.c8::-moz-placeholder {
+.c7::-moz-placeholder {
   opacity: 1;
   color: #D1D2D3;
 }
 
-.c8:-ms-input-placeholder {
+.c7:-ms-input-placeholder {
   opacity: 1;
   color: #D1D2D3;
 }
 
-.c8::placeholder {
+.c7::placeholder {
   opacity: 1;
   color: #D1D2D3;
 }
@@ -182,7 +216,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
   width: 100%;
 }
 
-.c9 {
+.c8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -201,19 +235,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
   margin-top: 10px;
 }
 
-.c6 {
-  margin-bottom: 5px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-}
-
-.c28 {
+.c27 {
   box-sizing: border-box;
   width: 100%;
   border-width: 1px;
@@ -226,36 +248,36 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
   font-size: 1rem;
 }
 
-.c28:focus {
+.c27:focus {
   border-color: #00A1DE;
   box-shadow: 0 0 3px 0 rgba(0,161,222,0.5);
 }
 
-.c28::-webkit-input-placeholder {
+.c27::-webkit-input-placeholder {
   opacity: 1;
   color: #D1D2D3;
 }
 
-.c28::-moz-placeholder {
+.c27::-moz-placeholder {
   opacity: 1;
   color: #D1D2D3;
 }
 
-.c28:-ms-input-placeholder {
+.c27:-ms-input-placeholder {
   opacity: 1;
   color: #D1D2D3;
 }
 
-.c28::placeholder {
+.c27::placeholder {
   opacity: 1;
   color: #D1D2D3;
 }
 
-.c28:disabled {
+.c27:disabled {
   background-color: #FFFFFF;
 }
 
-.c26 {
+.c25 {
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -269,7 +291,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
   align-self: stretch;
 }
 
-.c29 {
+.c28 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -291,7 +313,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
   flex-shrink: 0;
 }
 
-.c27 {
+.c26 {
   height: 100%;
   min-height: 4em;
   -webkit-box-flex: 1;
@@ -300,7 +322,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
   flex-grow: 1;
 }
 
-.c44 {
+.c43 {
   -webkit-appearance: none;
   -moz-appearance: none;
   width: 100%;
@@ -309,7 +331,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
   cursor: pointer;
 }
 
-.c44::-webkit-slider-runnable-track {
+.c43::-webkit-slider-runnable-track {
   -webkit-appearance: none;
   height: 16px;
   border-radius: 8px;
@@ -317,7 +339,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
   box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.35),inset 0 0 0 2px #e5e6e6,inset 0 1px 10px 0 rgba(0,0,0,0.05);
 }
 
-.c44::-moz-range-track {
+.c43::-moz-range-track {
   -moz-appearance: none;
   height: 16px;
   border-radius: 8px;
@@ -325,11 +347,11 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
   box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.35),inset 0 0 0 2px #e5e6e6,inset 0 1px 10px 0 rgba(0,0,0,0.05);
 }
 
-.c44::-moz-focus-outer {
+.c43::-moz-focus-outer {
   border: 0;
 }
 
-.c44::-ms-track {
+.c43::-ms-track {
   -webkit-appearance: none;
   height: 16px;
   border-radius: 8px;
@@ -337,7 +359,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
   box-shadow: inset 0 1px 2px 0 rgba(255,255,255,0.35),inset 0 0 0 2px #e5e6e6,inset 0 1px 10px 0 rgba(0,0,0,0.05);
 }
 
-.c44::-webkit-slider-thumb {
+.c43::-webkit-slider-thumb {
   -webkit-appearance: none;
   margin-top: -12px;
   height: 40px;
@@ -350,7 +372,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
   box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #00A1DE,inset 0 0 0 3px rgb(0,192,255);
 }
 
-.c44::-moz-range-thumb {
+.c43::-moz-range-thumb {
   -moz-appearance: none;
   height: 40px;
   width: 40px;
@@ -362,7 +384,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
   box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #00A1DE,inset 0 0 0 3px rgb(0,192,255);
 }
 
-.c44::-ms-thumb {
+.c43::-ms-thumb {
   -webkit-appearance: none;
   margin-top: -12px;
   height: 40px;
@@ -375,19 +397,19 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
   box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.25),inset 0 1px 3px 0 rgba(255,255,255,0.3),inset 0 -2px 2px 0 #00A1DE,inset 0 0 0 3px rgb(0,192,255);
 }
 
-.c44::-webkit-slider-thumb:hover {
+.c43::-webkit-slider-thumb:hover {
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
 }
 
-.c44::-moz-range-thumb:hover {
+.c43::-moz-range-thumb:hover {
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
 }
 
-.c44::-ms-thumb:hover {
+.c43::-ms-thumb:hover {
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
@@ -458,23 +480,15 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
   margin-bottom: 8px;
 }
 
-.c41 {
-  margin-bottom: 15px;
-}
-
-.c42 {
-  display: inline-block;
-}
-
 .c40 {
   padding: 0 0%;
 }
 
-.c48 {
+.c47 {
   margin-bottom: 10px;
 }
 
-.c49 {
+.c48 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -482,7 +496,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
   margin-top: 5px;
 }
 
-.c50 {
+.c49 {
   margin-right: 10px;
 }
 
@@ -506,7 +520,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
   transition: fill cubic-bezier(0.47,0,0.75,0.72) 0.3s;
 }
 
-.c33 {
+.c32 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -518,7 +532,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
   width: 100%;
 }
 
-.c34 {
+.c33 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -541,11 +555,11 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
   overflow: hidden;
 }
 
-.c34 > *:first-child {
+.c33 > *:first-child {
   margin-bottom: 20px;
 }
 
-.c22 {
+.c21 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -560,18 +574,14 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
   width: 100%;
 }
 
-.c23 {
+.c22 {
   text-align: center;
   overflow: hidden;
   text-overflow: ellipsis;
   width: 100%;
 }
 
-.c25 {
-  margin-top: 10px;
-}
-
-.c45 {
+.c44 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -586,15 +596,15 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
   width: 100%;
 }
 
-.c45 > div {
+.c44 > div {
   width: 100%;
 }
 
-.c45 > div + div {
+.c44 > div + div {
   margin-top: 10px;
 }
 
-.c46 {
+.c45 {
   text-align: center;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -602,7 +612,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
   margin-top: 5px;
 }
 
-.c30 {
+.c29 {
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -616,7 +626,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
   align-self: stretch;
 }
 
-.c31 {
+.c30 {
   height: 100%;
   min-height: 4em;
   -webkit-box-flex: 1;
@@ -625,7 +635,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
   flex-grow: 1;
 }
 
-.c20 {
+.c19 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -671,15 +681,11 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
   padding: 10px 0;
 }
 
-.c14 {
+.c13 {
   display: block;
 }
 
-.c21 {
-  height: 39px;
-}
-
-.c19 {
+.c18 {
   margin: 5px 0;
 }
 
@@ -695,19 +701,19 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
   flex-direction: column;
 }
 
-.c15 {
+.c14 {
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
-.c17 {
+.c16 {
   display: block;
   overflow: hidden;
   text-overflow: ellipsis;
   color: #999A94;
 }
 
-.c47 {
+.c46 {
   width: 100%;
 }
 
@@ -763,13 +769,13 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
         className="c5"
       >
         <p
-          className="c6 c7"
+          className="c6"
           color="grayDark"
         >
           單位：ampere
         </p>
         <input
-          className="c8"
+          className="c7"
           kind="primary"
           onChange={[Function]}
           placeholder="Integer only"
@@ -777,14 +783,14 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
           value={0}
         />
         <div
-          className="c9"
+          className="c8"
         >
           <div
-            className="c10"
+            className="c9"
             onClick={[Function]}
           >
             <a
-              className="c11 c12"
+              className="c10 c11"
               color="primary"
             >
               <svg
@@ -802,7 +808,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
             </a>
           </div>
           <button
-            className="c13"
+            className="c12"
             onClick={[Function]}
           >
             Ok
@@ -811,23 +817,23 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
       </div>
     </div>
     <div
-      className="c14"
+      className="c13"
     >
       <h4
-        className="c15 c16"
+        className="c14 c15"
       >
         INTEGER_CONTROL
       </h4>
       <small
-        className="c17 c18"
+        className="c16 c17"
       >
         Last data point time : 2015-06-12 12:00
       </small>
       <hr
-        className="c19 c20"
+        className="c18 c19"
       />
       <div
-        className="c21 c10"
+        className="c20"
       >
         <mock-react-text-truncate
           line={2}
@@ -854,16 +860,16 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
       className="c4"
     >
       <div
-        className="c22"
+        className="c21"
       >
         <h1
-          className="c23 c24"
+          className="c22 c23"
           color="primary"
         >
           0
         </h1>
         <p
-          className="c25 c7"
+          className="c24"
           color="grayDark"
         >
           ampere
@@ -871,23 +877,23 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
       </div>
     </div>
     <div
-      className="c14"
+      className="c13"
     >
       <h4
-        className="c15 c16"
+        className="c14 c15"
       >
         INTEGER_DISPLAY
       </h4>
       <small
-        className="c17 c18"
+        className="c16 c17"
       >
         Last data point time : 2015-06-12 12:00
       </small>
       <hr
-        className="c19 c20"
+        className="c18 c19"
       />
       <div
-        className="c21 c10"
+        className="c20"
       >
         <mock-react-text-truncate
           line={2}
@@ -917,13 +923,13 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
         className="c5"
       >
         <p
-          className="c6 c7"
+          className="c6"
           color="grayDark"
         >
           單位：ampere
         </p>
         <input
-          className="c8"
+          className="c7"
           kind="primary"
           onChange={[Function]}
           placeholder="Float only"
@@ -931,14 +937,14 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
           value=""
         />
         <div
-          className="c9"
+          className="c8"
         >
           <div
-            className="c10"
+            className="c9"
             onClick={[Function]}
           >
             <a
-              className="c11 c12"
+              className="c10 c11"
               color="primary"
             >
               <svg
@@ -956,7 +962,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
             </a>
           </div>
           <button
-            className="c13"
+            className="c12"
             onClick={[Function]}
           >
             Ok
@@ -965,23 +971,23 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
       </div>
     </div>
     <div
-      className="c14"
+      className="c13"
     >
       <h4
-        className="c15 c16"
+        className="c14 c15"
       >
         FLOAT_CONTROL
       </h4>
       <small
-        className="c17 c18"
+        className="c16 c17"
       >
         Last data point time : 2015-06-12 12:00
       </small>
       <hr
-        className="c19 c20"
+        className="c18 c19"
       />
       <div
-        className="c21 c10"
+        className="c20"
       >
         <mock-react-text-truncate
           line={2}
@@ -1008,16 +1014,16 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
       className="c4"
     >
       <div
-        className="c22"
+        className="c21"
       >
         <h1
-          className="c23 c24"
+          className="c22 c23"
           color="primary"
         >
           N/A
         </h1>
         <p
-          className="c25 c7"
+          className="c24"
           color="grayDark"
         >
           ampere
@@ -1025,23 +1031,23 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
       </div>
     </div>
     <div
-      className="c14"
+      className="c13"
     >
       <h4
-        className="c15 c16"
+        className="c14 c15"
       >
         FLOAT_DISPLAY
       </h4>
       <small
-        className="c17 c18"
+        className="c16 c17"
       >
         Last data point time : 2015-06-12 12:00
       </small>
       <hr
-        className="c19 c20"
+        className="c18 c19"
       />
       <div
-        className="c21 c10"
+        className="c20"
       >
         <mock-react-text-truncate
           line={2}
@@ -1068,24 +1074,24 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
       className="c4"
     >
       <div
-        className="c26"
+        className="c25"
       >
         <textarea
-          className="c27 c28"
+          className="c26 c27"
           kind="primary"
           onChange={[Function]}
           placeholder="String only"
           value="Any string type value."
         />
         <div
-          className="c29"
+          className="c28"
         >
           <div
-            className="c10"
+            className="c9"
             onClick={[Function]}
           >
             <a
-              className="c11 c12"
+              className="c10 c11"
               color="primary"
             >
               <svg
@@ -1103,7 +1109,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
             </a>
           </div>
           <button
-            className="c13"
+            className="c12"
             onClick={[Function]}
           >
             Ok
@@ -1112,23 +1118,23 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
       </div>
     </div>
     <div
-      className="c14"
+      className="c13"
     >
       <h4
-        className="c15 c16"
+        className="c14 c15"
       >
         STRING_CONTROL
       </h4>
       <small
-        className="c17 c18"
+        className="c16 c17"
       >
         Last data point time : 2015-06-12 12:00
       </small>
       <hr
-        className="c19 c20"
+        className="c18 c19"
       />
       <div
-        className="c21 c10"
+        className="c20"
       >
         <mock-react-text-truncate
           line={2}
@@ -1155,10 +1161,10 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
       className="c4"
     >
       <div
-        className="c30"
+        className="c29"
       >
         <textarea
-          className="c31 c28"
+          className="c30 c27"
           disabled={true}
           kind="primary"
           placeholder="String only"
@@ -1167,23 +1173,23 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
       </div>
     </div>
     <div
-      className="c14"
+      className="c13"
     >
       <h4
-        className="c15 c16"
+        className="c14 c15"
       >
         STRING_DISPLAY
       </h4>
       <small
-        className="c17 c18"
+        className="c16 c17"
       >
         Last data point time : 2015-06-12 12:00
       </small>
       <hr
-        className="c19 c20"
+        className="c18 c19"
       />
       <div
-        className="c21 c10"
+        className="c20"
       >
         <mock-react-text-truncate
           line={2}
@@ -1210,24 +1216,24 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
       className="c4"
     >
       <div
-        className="c26"
+        className="c25"
       >
         <textarea
-          className="c27 c28"
+          className="c26 c27"
           kind="primary"
           onChange={[Function]}
           placeholder="Hex only"
           value="ABF123"
         />
         <div
-          className="c29"
+          className="c28"
         >
           <div
-            className="c10"
+            className="c9"
             onClick={[Function]}
           >
             <a
-              className="c11 c12"
+              className="c10 c11"
               color="primary"
             >
               <svg
@@ -1245,7 +1251,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
             </a>
           </div>
           <button
-            className="c13"
+            className="c12"
             onClick={[Function]}
           >
             Ok
@@ -1254,23 +1260,23 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
       </div>
     </div>
     <div
-      className="c14"
+      className="c13"
     >
       <h4
-        className="c15 c16"
+        className="c14 c15"
       >
         HEX_CONTROL
       </h4>
       <small
-        className="c17 c18"
+        className="c16 c17"
       >
         Last data point time : 2015-06-12 12:00
       </small>
       <hr
-        className="c19 c20"
+        className="c18 c19"
       />
       <div
-        className="c21 c10"
+        className="c20"
       >
         <mock-react-text-truncate
           line={2}
@@ -1297,10 +1303,10 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
       className="c4"
     >
       <div
-        className="c30"
+        className="c29"
       >
         <textarea
-          className="c31 c28"
+          className="c30 c27"
           disabled={true}
           kind="primary"
           placeholder="Hex only"
@@ -1309,23 +1315,23 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
       </div>
     </div>
     <div
-      className="c14"
+      className="c13"
     >
       <h4
-        className="c15 c16"
+        className="c14 c15"
       >
         HEX_DISPLAY
       </h4>
       <small
-        className="c17 c18"
+        className="c16 c17"
       >
         Last data point time : 2015-06-12 12:00
       </small>
       <hr
-        className="c19 c20"
+        className="c18 c19"
       />
       <div
-        className="c21 c10"
+        className="c20"
       >
         <mock-react-text-truncate
           line={2}
@@ -1353,29 +1359,29 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
     >
       <div
         checked={true}
-        className="c32"
+        className="c31"
         kind="success"
         onClick={[Function]}
       />
     </div>
     <div
-      className="c14"
+      className="c13"
     >
       <h4
-        className="c15 c16"
+        className="c14 c15"
       >
         SWITCH_CONTROL
       </h4>
       <small
-        className="c17 c18"
+        className="c16 c17"
       >
         Last data point time : 2015-06-12 12:00
       </small>
       <hr
-        className="c19 c20"
+        className="c18 c19"
       />
       <div
-        className="c21 c10"
+        className="c20"
       >
         <mock-react-text-truncate
           line={2}
@@ -1402,13 +1408,13 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
       className="c4"
     >
       <div
-        className="c33"
+        className="c32"
       >
         <div
-          className="c34"
+          className="c33"
         >
           <p
-            className="c7"
+            className="c34"
             color="grayDark"
           >
             OFF
@@ -1428,10 +1434,10 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
           </div>
         </div>
         <div
-          className="c34"
+          className="c33"
         >
           <p
-            className="c7"
+            className="c34"
             color="grayDark"
           >
             ON
@@ -1453,23 +1459,23 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
       </div>
     </div>
     <div
-      className="c14"
+      className="c13"
     >
       <h4
-        className="c15 c16"
+        className="c14 c15"
       >
         SWITCH_DISPLAY
       </h4>
       <small
-        className="c17 c18"
+        className="c16 c17"
       >
         Last data point time : 2015-06-12 12:00
       </small>
       <hr
-        className="c19 c20"
+        className="c18 c19"
       />
       <div
-        className="c21 c10"
+        className="c20"
       >
         <mock-react-text-truncate
           line={2}
@@ -1505,7 +1511,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
             className="c39"
           >
             <p
-              className="c7"
+              className="c34"
               color="grayDark"
             >
               k1
@@ -1515,7 +1521,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
             className="c39"
           >
             <p
-              className="c7"
+              className="c34"
               color="grayDark"
             >
               k2
@@ -1526,19 +1532,19 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
           className="c40"
         >
           <div
-            className="c41 c7"
+            className="c41"
             color="grayDark"
           >
             Current value: 
             <p
-              className="c42 c43"
+              className="c42"
               color="primary"
             >
               v2
             </p>
           </div>
           <input
-            className="c44"
+            className="c43"
             kind="primary"
             max={1}
             min={0}
@@ -1553,23 +1559,23 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
       </div>
     </div>
     <div
-      className="c14"
+      className="c13"
     >
       <h4
-        className="c15 c16"
+        className="c14 c15"
       >
         CATEGORY_CONTROL
       </h4>
       <small
-        className="c17 c18"
+        className="c16 c17"
       >
         Last data point time : 2015-06-12 12:00
       </small>
       <hr
-        className="c19 c20"
+        className="c18 c19"
       />
       <div
-        className="c21 c10"
+        className="c20"
       >
         <mock-react-text-truncate
           line={2}
@@ -1596,13 +1602,13 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
       className="c4"
     >
       <div
-        className="c33"
+        className="c32"
       >
         <div
-          className="c34"
+          className="c33"
         >
           <p
-            className="c7"
+            className="c34"
             color="grayDark"
           >
             k1
@@ -1622,10 +1628,10 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
           </div>
         </div>
         <div
-          className="c34"
+          className="c33"
         >
           <p
-            className="c7"
+            className="c34"
             color="grayDark"
           >
             k2
@@ -1645,10 +1651,10 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
           </div>
         </div>
         <div
-          className="c34"
+          className="c33"
         >
           <p
-            className="c7"
+            className="c34"
             color="grayDark"
           >
             k3
@@ -1668,10 +1674,10 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
           </div>
         </div>
         <div
-          className="c34"
+          className="c33"
         >
           <p
-            className="c7"
+            className="c34"
             color="grayDark"
           >
             k4
@@ -1691,10 +1697,10 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
           </div>
         </div>
         <div
-          className="c34"
+          className="c33"
         >
           <p
-            className="c7"
+            className="c34"
             color="grayDark"
           >
             k5
@@ -1716,23 +1722,23 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
       </div>
     </div>
     <div
-      className="c14"
+      className="c13"
     >
       <h4
-        className="c15 c16"
+        className="c14 c15"
       >
         CATEGORY_DISPLAY
       </h4>
       <small
-        className="c17 c18"
+        className="c16 c17"
       >
         Last data point time : 2015-06-12 12:00
       </small>
       <hr
-        className="c19 c20"
+        className="c18 c19"
       />
       <div
-        className="c21 c10"
+        className="c20"
       >
         <mock-react-text-truncate
           line={2}
@@ -1768,7 +1774,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
             className="c39"
           >
             <p
-              className="c7"
+              className="c34"
               color="grayDark"
             >
               Low
@@ -1778,7 +1784,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
             className="c39"
           >
             <p
-              className="c7"
+              className="c34"
               color="grayDark"
             >
               High
@@ -1789,19 +1795,19 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
           className="c40"
         >
           <div
-            className="c41 c7"
+            className="c41"
             color="grayDark"
           >
             Current value: 
             <p
-              className="c42 c43"
+              className="c42"
               color="primary"
             >
               High
             </p>
           </div>
           <input
-            className="c44"
+            className="c43"
             kind="primary"
             max={1}
             min={0}
@@ -1816,23 +1822,23 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
       </div>
     </div>
     <div
-      className="c14"
+      className="c13"
     >
       <h4
-        className="c15 c16"
+        className="c14 c15"
       >
         GPIO_CONTROL
       </h4>
       <small
-        className="c17 c18"
+        className="c16 c17"
       >
         Last data point time : 2015-06-12 12:00
       </small>
       <hr
-        className="c19 c20"
+        className="c18 c19"
       />
       <div
-        className="c21 c10"
+        className="c20"
       >
         <mock-react-text-truncate
           line={2}
@@ -1859,13 +1865,13 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
       className="c4"
     >
       <div
-        className="c33"
+        className="c32"
       >
         <div
-          className="c34"
+          className="c33"
         >
           <p
-            className="c7"
+            className="c34"
             color="grayDark"
           >
             Low
@@ -1885,10 +1891,10 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
           </div>
         </div>
         <div
-          className="c34"
+          className="c33"
         >
           <p
-            className="c7"
+            className="c34"
             color="grayDark"
           >
             High
@@ -1910,23 +1916,23 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
       </div>
     </div>
     <div
-      className="c14"
+      className="c13"
     >
       <h4
-        className="c15 c16"
+        className="c14 c15"
       >
         GPIO_DISPLAY
       </h4>
       <small
-        className="c17 c18"
+        className="c16 c17"
       >
         Last data point time : 2015-06-12 12:00
       </small>
       <hr
-        className="c19 c20"
+        className="c18 c19"
       />
       <div
-        className="c21 c10"
+        className="c20"
       >
         <mock-react-text-truncate
           line={2}
@@ -1962,7 +1968,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
             className="c39"
           >
             <div
-              className="c7"
+              className="c34"
               color="grayDark"
             >
               1
@@ -1972,7 +1978,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
             className="c39"
           >
             <div
-              className="c7"
+              className="c34"
               color="grayDark"
             >
               100
@@ -1983,19 +1989,19 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
           className="c40"
         >
           <div
-            className="c41 c7"
+            className="c41"
             color="grayDark"
           >
             Current value: 
             <div
-              className="c42 c43"
+              className="c42"
               color="primary"
             >
               23
             </div>
           </div>
           <input
-            className="c44"
+            className="c43"
             kind="primary"
             max={100}
             min={1}
@@ -2010,23 +2016,23 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
       </div>
     </div>
     <div
-      className="c14"
+      className="c13"
     >
       <h4
-        className="c15 c16"
+        className="c14 c15"
       >
         ANALOG_CONTROL
       </h4>
       <small
-        className="c17 c18"
+        className="c16 c17"
       >
         Last data point time : 2015-06-12 12:00
       </small>
       <hr
-        className="c19 c20"
+        className="c18 c19"
       />
       <div
-        className="c21 c10"
+        className="c20"
       >
         <mock-react-text-truncate
           line={2}
@@ -2053,17 +2059,17 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
       className="c4"
     >
       <div
-        className="c45"
+        className="c44"
       >
         <div>
           <p
-            className="c7"
+            className="c34"
             color="grayDark"
           >
             Value
           </p>
           <h1
-            className="c46 c24"
+            className="c45 c23"
             color="primary"
           >
             value pwm
@@ -2071,13 +2077,13 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
         </div>
         <div>
           <p
-            className="c7"
+            className="c34"
             color="grayDark"
           >
             Period
           </p>
           <h1
-            className="c46 c24"
+            className="c45 c23"
             color="primary"
           >
             20
@@ -2086,23 +2092,23 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
       </div>
     </div>
     <div
-      className="c14"
+      className="c13"
     >
       <h4
-        className="c15 c16"
+        className="c14 c15"
       >
         PWM_DISPLAY
       </h4>
       <small
-        className="c17 c18"
+        className="c16 c17"
       >
         Last data point time : 2015-06-12 12:00
       </small>
       <hr
-        className="c19 c20"
+        className="c18 c19"
       />
       <div
-        className="c21 c10"
+        className="c20"
       >
         <mock-react-text-truncate
           line={2}
@@ -2129,26 +2135,26 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
       className="c4"
     >
       <div
-        className="c47"
+        className="c46"
       >
         <div
-          className="c48"
+          className="c47"
         >
           <label
             htmlFor="input"
           >
             <p
-              className="c7"
+              className="c34"
               color="grayDark"
             >
               Period
             </p>
           </label>
           <div
-            className="c49"
+            className="c48"
           >
             <input
-              className="c50 c8"
+              className="c49 c7"
               kind="primary"
               onChange={[Function]}
               placeholder="Integer only"
@@ -2156,7 +2162,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
               value={0}
             />
             <button
-              className="c13"
+              className="c12"
               onClick={[Function]}
             >
               Ok
@@ -2173,7 +2179,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
               className="c39"
             >
               <div
-                className="c7"
+                className="c34"
                 color="grayDark"
               >
                 0
@@ -2183,7 +2189,7 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
               className="c39"
             >
               <div
-                className="c7"
+                className="c34"
                 color="grayDark"
               >
                 100
@@ -2194,19 +2200,19 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
             className="c40"
           >
             <div
-              className="c41 c7"
+              className="c41"
               color="grayDark"
             >
               Current value: 
               <div
-                className="c42 c43"
+                className="c42"
                 color="primary"
               >
                 0
               </div>
             </div>
             <input
-              className="c44"
+              className="c43"
               kind="primary"
               max={100}
               min={0}
@@ -2222,23 +2228,23 @@ exports[`Storyshots DataChannelAdapter API 1`] = `
       </div>
     </div>
     <div
-      className="c14"
+      className="c13"
     >
       <h4
-        className="c15 c16"
+        className="c14 c15"
       >
         PWM_CONTROL
       </h4>
       <small
-        className="c17 c18"
+        className="c16 c17"
       >
         Last data point time : 2015-06-12 12:00
       </small>
       <hr
-        className="c19 c20"
+        className="c18 c19"
       />
       <div
-        className="c21 c10"
+        className="c20"
       >
         <mock-react-text-truncate
           line={2}

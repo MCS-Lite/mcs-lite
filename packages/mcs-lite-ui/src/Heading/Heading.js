@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 const H = ({ level, children, ...otherProps }) =>
   React.createElement(`h${level}`, otherProps, children);
@@ -14,8 +14,11 @@ const Heading = styled(H)`
   margin: 0;
   font-weight: normal;
   font-size: ${props => props.theme.fontSize[`h${props.level}`]};
-  color: ${props =>
-    props.color ? props.theme.color[props.color] : 'currentColor'};
+  ${props =>
+    props.color &&
+    css`
+      color: ${props.theme.color[props.color]};
+    `};
 `;
 
 Heading.displayName = 'Heading';

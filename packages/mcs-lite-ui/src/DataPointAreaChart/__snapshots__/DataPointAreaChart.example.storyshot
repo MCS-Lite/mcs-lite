@@ -34,7 +34,6 @@ exports[`Storyshots DataPointAreaChart RechartTooltip 1`] = `
 .c2 {
   margin: 0;
   font-size: 1rem;
-  color: currentColor;
 }
 
 .c3 {

@@ -2,7 +2,6 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
 import rafThrottle from 'raf-throttle';
 import IconFold from 'mcs-lite-icon/lib/IconFold';
 import Rotate from '../Rotate';
@@ -11,7 +10,7 @@ import P from '../P';
 import { Menu, MenuItem } from '../Menu';
 import NavItem from './NavItem';
 
-export const StyledP = styled(P)`
+export const StyledP = P.extend`
   margin-right: 5px;
 `;
 

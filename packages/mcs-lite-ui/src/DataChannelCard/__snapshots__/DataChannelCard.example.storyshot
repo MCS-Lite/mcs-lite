@@ -5,13 +5,12 @@ exports[`Storyshots DataChannelCard API 1`] = `
   margin: 0;
   font-weight: normal;
   font-size: 1.15rem;
-  color: currentColor;
 }
 
-.c12 {
+.c11 {
   margin: 0;
   font-size: 1rem;
-  color: currentColor;
+  height: 39px;
 }
 
 .c8 {
@@ -76,10 +75,6 @@ exports[`Storyshots DataChannelCard API 1`] = `
   display: block;
 }
 
-.c11 {
-  height: 39px;
-}
-
 .c9 {
   margin: 5px 0;
 }
@@ -142,7 +137,7 @@ exports[`Storyshots DataChannelCard API 1`] = `
       className="c9 c10"
     />
     <div
-      className="c11 c12"
+      className="c11"
     >
       <mock-react-text-truncate
         line={2}
@@ -159,13 +154,12 @@ exports[`Storyshots DataChannelCard Custom width and height 1`] = `
   margin: 0;
   font-weight: normal;
   font-size: 1.15rem;
-  color: currentColor;
 }
 
-.c14 {
+.c13 {
   margin: 0;
   font-size: 1rem;
-  color: currentColor;
+  height: 39px;
 }
 
 .c10 {
@@ -262,10 +256,6 @@ exports[`Storyshots DataChannelCard Custom width and height 1`] = `
   display: block;
 }
 
-.c13 {
-  height: 39px;
-}
-
 .c11 {
   margin: 5px 0;
 }
@@ -333,7 +323,7 @@ exports[`Storyshots DataChannelCard Custom width and height 1`] = `
       className="c11 c12"
     />
     <div
-      className="c13 c14"
+      className="c13"
     >
       <mock-react-text-truncate
         line={2}
@@ -350,13 +340,12 @@ exports[`Storyshots DataChannelCard With Component selector 1`] = `
   margin: 0;
   font-weight: normal;
   font-size: 1.15rem;
-  color: currentColor;
 }
 
-.c14 {
+.c13 {
   margin: 0;
   font-size: 1rem;
-  color: currentColor;
+  height: 39px;
 }
 
 .c10 {
@@ -421,10 +410,6 @@ exports[`Storyshots DataChannelCard With Component selector 1`] = `
   display: block;
 }
 
-.c13 {
-  height: 39px;
-}
-
 .c11 {
   margin: 5px 0;
 }
@@ -487,7 +472,7 @@ exports[`Storyshots DataChannelCard With Component selector 1`] = `
       className="c11 c12"
     />
     <div
-      className="c13 c14"
+      className="c13"
     >
       <mock-react-text-truncate
         line={2}
@@ -504,13 +489,12 @@ exports[`Storyshots DataChannelCard With empty description 1`] = `
   margin: 0;
   font-weight: normal;
   font-size: 1.15rem;
-  color: currentColor;
 }
 
-.c13 {
+.c12 {
   margin: 0;
   font-size: 1rem;
-  color: currentColor;
+  height: 39px;
 }
 
 .c9 {
@@ -607,10 +591,6 @@ exports[`Storyshots DataChannelCard With empty description 1`] = `
   display: block;
 }
 
-.c12 {
-  height: 39px;
-}
-
 .c10 {
   margin: 5px 0;
 }
@@ -673,7 +653,7 @@ exports[`Storyshots DataChannelCard With empty description 1`] = `
       className="c10 c11"
     />
     <div
-      className="c12 c13"
+      className="c12"
     >
       <mock-react-text-truncate
         line={2}
@@ -690,7 +670,6 @@ exports[`Storyshots DataChannelCard Without description 1`] = `
   margin: 0;
   font-weight: normal;
   font-size: 1.15rem;
-  color: currentColor;
 }
 
 .c9 {

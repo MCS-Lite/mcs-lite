@@ -31,7 +31,6 @@ exports[`Storyshots A Nested children with Heading 1`] = `
   margin: 0;
   font-weight: normal;
   font-size: 2.46rem;
-  color: currentColor;
 }
 
 .c1 {

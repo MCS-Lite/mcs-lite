@@ -37,21 +37,21 @@ exports[`Storyshots LandingHeader API 1`] = `
 `;
 
 exports[`Storyshots LandingHeader NavItemBurger 1`] = `
-.c6 {
+.c5 {
   margin: 0;
   font-size: 1rem;
-  color: currentColor;
+  margin-right: 5px;
 }
 
-.dUUMVe > *:nth-child(2) .c5 {
+.dUUMVe > *:nth-child(2) .c4 {
   margin-top: 5px;
 }
 
-.pYtWd > .c5 {
+.pYtWd > .c4 {
   margin-top: 5px;
 }
 
-.sQyKx > .c5 {
+.sQyKx > .c4 {
   margin-top: 5px;
 }
 
@@ -119,10 +119,6 @@ exports[`Storyshots LandingHeader NavItemBurger 1`] = `
   fill: currentColor;
 }
 
-.c4 {
-  margin-right: 5px;
-}
-
 <header
   className="c0"
   offset={40}
@@ -138,7 +134,7 @@ exports[`Storyshots LandingHeader NavItemBurger 1`] = `
         onClick={[Function]}
       >
         <p
-          className="c4 c5 c6"
+          className="c4 c5"
         >
           children
         </p>
@@ -158,17 +154,17 @@ exports[`Storyshots LandingHeader NavItemBurger 1`] = `
 `;
 
 exports[`Storyshots LandingHeader NavItemDropdown 1`] = `
-.c6 {
+.c5 {
   margin: 0;
   font-size: 1rem;
-  color: currentColor;
+  margin-right: 5px;
 }
 
-.c7 {
+.c6 {
   line-height: 0;
 }
 
-.c7 > * {
+.c6 > * {
   -webkit-transform-origin: center;
   -ms-transform-origin: center;
   transform-origin: center;
@@ -180,15 +176,15 @@ exports[`Storyshots LandingHeader NavItemDropdown 1`] = `
   transform: initial;
 }
 
-.dUUMVe > *:nth-child(2) .c5 {
+.dUUMVe > *:nth-child(2) .c4 {
   margin-top: 5px;
 }
 
-.pYtWd > .c5 {
+.pYtWd > .c4 {
   margin-top: 5px;
 }
 
-.sQyKx > .c5 {
+.sQyKx > .c4 {
   margin-top: 5px;
 }
 
@@ -256,10 +252,6 @@ exports[`Storyshots LandingHeader NavItemDropdown 1`] = `
   fill: currentColor;
 }
 
-.c4 {
-  margin-right: 5px;
-}
-
 <header
   className="c0"
   offset={40}
@@ -276,12 +268,12 @@ exports[`Storyshots LandingHeader NavItemDropdown 1`] = `
         onMouseOver={[Function]}
       >
         <p
-          className="c4 c5 c6"
+          className="c4 c5"
         >
           Language
         </p>
         <div
-          className="c7"
+          className="c6"
         >
           <svg
             fill="currentColor"

@@ -41,7 +41,6 @@ exports[`Storyshots Notification With feedbck Button component 1`] = `
 .c2 {
   margin: 0;
   font-size: 1rem;
-  color: currentColor;
 }
 
 .c3 {

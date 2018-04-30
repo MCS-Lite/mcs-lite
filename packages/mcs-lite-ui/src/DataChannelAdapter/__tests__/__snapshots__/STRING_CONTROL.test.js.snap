@@ -21,7 +21,6 @@ exports[`should render STRING_CONTROL correctly with default value to empty 1`] 
 .c4 {
   margin: 0;
   font-size: 1rem;
-  color: currentColor;
 }
 
 .c5 {
@@ -307,7 +306,6 @@ exports[`should render STRING_CONTROL correctly with empty string 1`] = `
 .c4 {
   margin: 0;
   font-size: 1rem;
-  color: currentColor;
 }
 
 .c5 {
@@ -595,7 +593,6 @@ exports[`should render STRING_CONTROL correctly with value 1`] = `
 .c4 {
   margin: 0;
   font-size: 1rem;
-  color: currentColor;
 }
 
 .c5 {

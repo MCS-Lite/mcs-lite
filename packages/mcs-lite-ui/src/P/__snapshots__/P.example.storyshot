@@ -4,7 +4,6 @@ exports[`Storyshots P API 1`] = `
 .c1 {
   margin: 0;
   font-size: 1rem;
-  color: currentColor;
 }
 
 .dUUMVe > *:nth-child(2) .c0 {
@@ -30,7 +29,6 @@ exports[`Storyshots P Nested children with div 1`] = `
 .c1 {
   margin: 0;
   font-size: 1rem;
-  color: currentColor;
 }
 
 .dUUMVe > *:nth-child(2) .c0 {
