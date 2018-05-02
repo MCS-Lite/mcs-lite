@@ -57,3 +57,9 @@ export const FakeInputValue = styled(Input)`
     box-shadow: none;
   }
 `;
+
+export const TextOverflow = styled.div`
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+`;
