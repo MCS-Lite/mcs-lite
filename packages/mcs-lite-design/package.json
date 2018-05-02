@@ -9,13 +9,12 @@
     "email": "evenchange4@gmail.com"
   },
   "homepage": "https://github.com/MCS-Lite/mcs-lite#readme",
-  "files": [
-    "lib"
-  ],
+  "files": ["lib"],
   "scripts": {
     "clean": "rm -rf lib",
     "prebuild": "npm run clean && mkdir -p lib/icon",
-    "compress:svg": "svgo src/icon/*.svg -o 'lib/icon' --pretty --multipass --indent=2 --quiet",
+    "compress:svg":
+      "svgo src/icon/*.svg -o 'lib/icon' --pretty --multipass --indent=2 --quiet",
     "build": "npm run compress:svg",
     "test": "echo 'no'"
   },

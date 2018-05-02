@@ -2,7 +2,21 @@
 
 ## Released (2018-05-02)
 
-* fix(UI): add text-overflow style in InputSelect Component (#609)
+* babel-preset-mcs-lite: 0.3.27 => 0.3.28
+* eslint-config-mcs-lite: 0.6.18 => 0.6.19
+* mcs-lite-admin-web: 0.2.20 => 0.2.21
+* mcs-lite-connect: 0.3.30 => 0.3.31
+* mcs-lite-design: 0.2.22 => 0.2.23
+* mcs-lite-icon: 0.3.29 => 0.3.30
+* mcs-lite-landing-web: 0.1.25 => 0.1.26 (private)
+* mcs-lite-mobile-web: 0.4.33 => 0.4.34
+* mcs-lite-scripts: 0.3.29 => 0.3.30
+* mcs-lite-theme: 0.4.2 => 0.4.3
+* mcs-lite-translation: 0.1.27 => 0.1.28
+* mcs-lite-ui: 0.8.2 => 0.8.3
+* react-intl-inject-hoc: 0.2.30 => 0.2.31
+
+- fix(UI): add text-overflow style in InputSelect Component (#609)
 
 ## Released (2018-04-30)
 
