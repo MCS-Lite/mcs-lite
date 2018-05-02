@@ -21,6 +21,7 @@ import {
   StyledInputGroup,
   NoRowWrapper,
   FakeInputValue,
+  TextOverflow,
 } from './styled-components';
 import { type Value, type ItemProps } from './type.flow';
 import {
@@ -124,8 +125,9 @@ class PureInputSelect extends React.Component<
         style={style}
         active={itemValue === value}
         onClick={onItemClick}
+        title={children}
       >
-        {children}
+        <TextOverflow>{children}</TextOverflow>
       </MenuItem>
     );
   };
