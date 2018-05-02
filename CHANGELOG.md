@@ -1,5 +1,9 @@
 # MCS Lite changelogs
 
+## Released (2018-05-02)
+
+* fix(UI): add text-overflow style in InputSelect Component (#609)
+
 ## Released (2018-04-30)
 
 * babel-preset-mcs-lite: 0.3.26 => 0.3.27
