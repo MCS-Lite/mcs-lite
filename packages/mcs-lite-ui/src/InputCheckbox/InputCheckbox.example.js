@@ -59,4 +59,16 @@ storiesOf('InputCheckbox', module)
         Display the device image on scene
       </StatefulInputCheckbox>
     )),
+  )
+  .add(
+    'With kind props',
+    withInfo({
+      text: '',
+      inline: true,
+      propTables: [InputCheckbox, Checkbox],
+    })(() => (
+      <InputCheckbox value onChange={action('onChange')} kind="error">
+        Check it
+      </InputCheckbox>
+    )),
   );
