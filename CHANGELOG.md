@@ -2,7 +2,21 @@
 
 ## Released (2018-05-07)
 
-* feat(ui): add InputMultiSelect Component
+* babel-preset-mcs-lite: 0.3.28 => 0.3.29
+* eslint-config-mcs-lite: 0.6.19 => 0.6.20
+* mcs-lite-admin-web: 0.2.21 => 0.2.22
+* mcs-lite-connect: 0.3.31 => 0.3.32
+* mcs-lite-design: 0.2.23 => 0.2.24
+* mcs-lite-icon: 0.3.30 => 0.3.31
+* mcs-lite-landing-web: 0.1.26 => 0.1.27 (private)
+* mcs-lite-mobile-web: 0.4.34 => 0.4.35
+* mcs-lite-scripts: 0.3.30 => 0.3.31
+* mcs-lite-theme: 0.4.3 => 0.4.4
+* mcs-lite-translation: 0.1.28 => 0.1.29
+* mcs-lite-ui: 0.8.3 => 0.8.4
+* react-intl-inject-hoc: 0.2.31 => 0.2.32
+
+- feat(ui): add InputMultiSelect Component
 
 ## Released (2018-05-02)
 
