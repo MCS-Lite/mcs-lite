@@ -5,6 +5,7 @@ import { withInfo } from '@storybook/addon-info';
 import { action } from '@storybook/addon-actions';
 import InputOrder from '.';
 import { type Value } from './type.flow';
+import Checkbox from '../Checkbox';
 
 class StatefulInputOrder extends React.Component<{}, { value: Array<Value> }> {
   state = { value: [] };
@@ -152,6 +153,26 @@ storiesOf('InputOrder', module)
           { value: 3, children: 'item name item name item name 3' },
         ]}
         onChange={action('onChange')}
+      />
+    )),
+  )
+  .add(
+    'With custom itemRenderer props',
+    withInfo({
+      text: '',
+      inline: true,
+    })(() => (
+      <InputOrder
+        value={[1]}
+        items={[
+          { value: 1, children: 'item name 1' },
+          { value: 2, children: 'item name item name item name 2' },
+          { value: 3, children: 'item name item name item name 3' },
+        ]}
+        onChange={action('onChange')}
+        itemRenderer={(item, props) => (
+          <Checkbox value={props.value.includes(item.value)} size={18} />
+        )}
       />
     )),
   );

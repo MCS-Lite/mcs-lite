@@ -9,18 +9,27 @@ import { Container, CheckboxWrapper } from './styled-components';
 import { type Value, type ItemProps } from './type.flow';
 
 export const HEIGHT = 192;
-
-class InputOrder extends React.Component<{
+export type Props = {
   value: Array<Value>,
   onChange: (value: Array<Value>) => Promise<void> | void,
   items: Array<ItemProps>,
   height: number,
   placeholder?: string,
-  kind?: string,
-}> {
+  kind: string,
+  itemRenderer: (
+    item: ItemProps,
+    props: { value: Array<Value>, kind?: string },
+  ) => React.Node,
+};
+
+class InputOrder extends React.Component<Props> {
   static defaultProps = {
     height: HEIGHT,
     kind: 'primary',
+    itemRenderer: (
+      item: ItemProps,
+      { value, kind }: { value: Array<Value>, kind?: string },
+    ) => <Orderbox value={R.indexOf(item.value)(value) + 1} kind={kind} />,
   };
   onClick = (itemValue: Value) => {
     const { value, onChange } = this.props;
@@ -33,7 +42,14 @@ class InputOrder extends React.Component<{
     }
   };
   render() {
-    const { items = [], value, height, placeholder, kind } = this.props;
+    const {
+      items = [],
+      value,
+      height,
+      placeholder,
+      kind,
+      itemRenderer,
+    } = this.props;
     const { onClick } = this;
 
     return (
@@ -48,12 +64,12 @@ class InputOrder extends React.Component<{
 
         {/* Item list */}
         {items.length > 0 &&
-          items.map(({ value: itemValue, children }: ItemProps) => (
-            <Item key={itemValue} value={itemValue} onClick={onClick}>
+          items.map((item: ItemProps) => (
+            <Item key={item.value} value={item.value} onClick={onClick}>
               <CheckboxWrapper>
-                <Orderbox value={R.indexOf(itemValue)(value) + 1} kind={kind} />
+                {itemRenderer(item, { value, kind })}
               </CheckboxWrapper>
-              {children}
+              {item.children}
             </Item>
           ))}
       </Container>
@@ -75,6 +91,7 @@ InputOrder.propTypes = {
   height: PropTypes.number,
   placeholder: PropTypes.string,
   kind: PropTypes.string,
+  itemRenderer: PropTypes.func, // (item: ItemProps, props: any) => React.Node,
 };
 
 export default InputOrder;
