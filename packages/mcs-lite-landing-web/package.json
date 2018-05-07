@@ -1,6 +1,6 @@
 {
   "name": "mcs-lite-landing-web",
-  "version": "0.1.26",
+  "version": "0.1.27",
   "private": true,
   "description": "MCS Lite Landing Web",
   "repository": "MCS-Lite/mcs-lite",
@@ -16,10 +16,8 @@
     "build:netlify": "REACT_APP_GA_ID='UA-58128356-6' npm run build",
     "test": "CI=true react-scripts test --env=jsdom --coverage --runInBand",
     "test:watch": "react-scripts test --env=jsdom",
-    "extract:messages":
-      "react-intl-cra 'src/**/*.js' -o '../mcs-lite-translation/src/mcs-lite-landing-web/messages.json'",
-    "extract:pot":
-      "react-intl-po json2pot '../mcs-lite-translation/src/mcs-lite-landing-web/messages.json' -o '../mcs-lite-translation/src/mcs-lite-landing-web/messages.pot'"
+    "extract:messages": "react-intl-cra 'src/**/*.js' -o '../mcs-lite-translation/src/mcs-lite-landing-web/messages.json'",
+    "extract:pot": "react-intl-po json2pot '../mcs-lite-translation/src/mcs-lite-landing-web/messages.json' -o '../mcs-lite-translation/src/mcs-lite-landing-web/messages.pot'"
   },
   "reactSnap": {
     "inlineCss": false,
@@ -36,10 +34,10 @@
     "hedron": "0.7.1",
     "history": "3.3.0",
     "jest-styled-components": "next",
-    "mcs-lite-icon": "^0.3.30",
-    "mcs-lite-theme": "^0.4.3",
-    "mcs-lite-translation": "^0.1.28",
-    "mcs-lite-ui": "^0.8.3",
+    "mcs-lite-icon": "^0.3.31",
+    "mcs-lite-theme": "^0.4.4",
+    "mcs-lite-translation": "^0.1.29",
+    "mcs-lite-ui": "^0.8.4",
     "polished": "1.9.2",
     "prop-types": "15.6.1",
     "raf": "3.4.0",
@@ -52,7 +50,7 @@
     "react-helmet": "5.2.0",
     "react-intl": "2.4.0",
     "react-intl-cra": "^0.3.3",
-    "react-intl-inject-hoc": "^0.2.31",
+    "react-intl-inject-hoc": "^0.2.32",
     "react-intl-po": "2.2.1",
     "react-loadable": "5.3.1",
     "react-progressive-bg-image": "3.0.0",
