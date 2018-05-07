@@ -1,5 +1,9 @@
 # MCS Lite changelogs
 
+## Released (2018-05-07)
+
+* feat(ui): add InputMultiSelect Component
+
 ## Released (2018-05-02)
 
 * babel-preset-mcs-lite: 0.3.27 => 0.3.28
