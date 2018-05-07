@@ -1,451 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots InputOrder API 1`] = `
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-align-content: flex-start;
-  -ms-flex-line-pack: start;
-  align-content: flex-start;
-  border: 1px solid #D1D2D3;
-  border-radius: 3px;
-  height: 192px;
-  background-color: #FFFFFF;
-  overflow: auto;
-}
-
-.c0 > * {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 10px;
-  min-width: 45%;
-  outline: none;
-  cursor: pointer;
-}
-
-.c2 {
-  line-height: 1em;
-  font-size: 12px;
-  border-radius: 2px;
-  width: 18px;
-  height: 18px;
-  box-sizing: border-box;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  cursor: pointer;
-  -webkit-transition: background-color 0.5s cubic-bezier(0.23,1,0.32,1),border 0.3s cubic-bezier(0.23,1,0.32,1);
-  transition: background-color 0.5s cubic-bezier(0.23,1,0.32,1),border 0.3s cubic-bezier(0.23,1,0.32,1);
-  color: #FFFFFF;
-  background-color: #00A1DE;
-  border: 1px solid rgb(0,130,179);
-}
-
-.c4 {
-  line-height: 1em;
-  font-size: 12px;
-  border-radius: 2px;
-  width: 18px;
-  height: 18px;
-  box-sizing: border-box;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  cursor: pointer;
-  -webkit-transition: background-color 0.5s cubic-bezier(0.23,1,0.32,1),border 0.3s cubic-bezier(0.23,1,0.32,1);
-  transition: background-color 0.5s cubic-bezier(0.23,1,0.32,1),border 0.3s cubic-bezier(0.23,1,0.32,1);
-  color: transparent;
-  background-color: #FFFFFF;
-  border: 1px solid #D1D2D3;
-}
-
-.c3 {
-  height: 100%;
-  width: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
-  -webkit-transform-origin: 50% 50%;
-  -ms-transform-origin: 50% 50%;
-  transform-origin: 50% 50%;
-  -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.23,1,0.32,1);
-  -webkit-transition: transform 0.5s cubic-bezier(0.23,1,0.32,1);
-  transition: transform 0.5s cubic-bezier(0.23,1,0.32,1);
-}
-
-.c3 svg {
-  fill: currentColor;
-}
-
-.c5 {
-  height: 100%;
-  width: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-transform: scale(0);
-  -ms-transform: scale(0);
-  transform: scale(0);
-  -webkit-transform-origin: 50% 50%;
-  -ms-transform-origin: 50% 50%;
-  transform-origin: 50% 50%;
-  -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.23,1,0.32,1);
-  -webkit-transition: transform 0.5s cubic-bezier(0.23,1,0.32,1);
-  transition: transform 0.5s cubic-bezier(0.23,1,0.32,1);
-}
-
-.c5 svg {
-  fill: currentColor;
-}
-
-.c1 {
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  margin-right: 5px;
-}
-
-<div
-  className="c0"
-  height={192}
->
-  <div
-    onClick={[Function]}
-    onKeyPress={[Function]}
-    role="button"
-    tabIndex="0"
-  >
-    <div
-      className="c1"
-    >
-      <div
-        checked={true}
-        className="c2"
-        kind="primary"
-        size={18}
-      >
-        <div
-          checked={true}
-          className="c3"
-        >
-          2
-        </div>
-      </div>
-    </div>
-    item name 1
-  </div>
-  <div
-    onClick={[Function]}
-    onKeyPress={[Function]}
-    role="button"
-    tabIndex="0"
-  >
-    <div
-      className="c1"
-    >
-      <div
-        checked={true}
-        className="c2"
-        kind="primary"
-        size={18}
-      >
-        <div
-          checked={true}
-          className="c3"
-        >
-          1
-        </div>
-      </div>
-    </div>
-    item name item name item name 2
-  </div>
-  <div
-    onClick={[Function]}
-    onKeyPress={[Function]}
-    role="button"
-    tabIndex="0"
-  >
-    <div
-      className="c1"
-    >
-      <div
-        checked={false}
-        className="c4"
-        kind="primary"
-        size={18}
-      >
-        <div
-          checked={false}
-          className="c5"
-        />
-      </div>
-    </div>
-    item name 3
-  </div>
-  <div
-    onClick={[Function]}
-    onKeyPress={[Function]}
-    role="button"
-    tabIndex="0"
-  >
-    <div
-      className="c1"
-    >
-      <div
-        checked={false}
-        className="c4"
-        kind="primary"
-        size={18}
-      >
-        <div
-          checked={false}
-          className="c5"
-        />
-      </div>
-    </div>
-    item name 4
-  </div>
-  <div
-    onClick={[Function]}
-    onKeyPress={[Function]}
-    role="button"
-    tabIndex="0"
-  >
-    <div
-      className="c1"
-    >
-      <div
-        checked={false}
-        className="c4"
-        kind="primary"
-        size={18}
-      >
-        <div
-          checked={false}
-          className="c5"
-        />
-      </div>
-    </div>
-    5
-  </div>
-  <div
-    onClick={[Function]}
-    onKeyPress={[Function]}
-    role="button"
-    tabIndex="0"
-  >
-    <div
-      className="c1"
-    >
-      <div
-        checked={false}
-        className="c4"
-        kind="primary"
-        size={18}
-      >
-        <div
-          checked={false}
-          className="c5"
-        />
-      </div>
-    </div>
-    item name 6
-  </div>
-  <div
-    onClick={[Function]}
-    onKeyPress={[Function]}
-    role="button"
-    tabIndex="0"
-  >
-    <div
-      className="c1"
-    >
-      <div
-        checked={false}
-        className="c4"
-        kind="primary"
-        size={18}
-      >
-        <div
-          checked={false}
-          className="c5"
-        />
-      </div>
-    </div>
-    item name item name 7
-  </div>
-  <div
-    onClick={[Function]}
-    onKeyPress={[Function]}
-    role="button"
-    tabIndex="0"
-  >
-    <div
-      className="c1"
-    >
-      <div
-        checked={false}
-        className="c4"
-        kind="primary"
-        size={18}
-      >
-        <div
-          checked={false}
-          className="c5"
-        />
-      </div>
-    </div>
-    item name 7
-  </div>
-  <div
-    onClick={[Function]}
-    onKeyPress={[Function]}
-    role="button"
-    tabIndex="0"
-  >
-    <div
-      className="c1"
-    >
-      <div
-        checked={false}
-        className="c4"
-        kind="primary"
-        size={18}
-      >
-        <div
-          checked={false}
-          className="c5"
-        />
-      </div>
-    </div>
-    item name 7
-  </div>
-  <div
-    onClick={[Function]}
-    onKeyPress={[Function]}
-    role="button"
-    tabIndex="0"
-  >
-    <div
-      className="c1"
-    >
-      <div
-        checked={false}
-        className="c4"
-        kind="primary"
-        size={18}
-      >
-        <div
-          checked={false}
-          className="c5"
-        />
-      </div>
-    </div>
-    item name item nameitem name 7
-  </div>
-  <div
-    onClick={[Function]}
-    onKeyPress={[Function]}
-    role="button"
-    tabIndex="0"
-  >
-    <div
-      className="c1"
-    >
-      <div
-        checked={false}
-        className="c4"
-        kind="primary"
-        size={18}
-      >
-        <div
-          checked={false}
-          className="c5"
-        />
-      </div>
-    </div>
-    item name 7
-  </div>
-  <div
-    onClick={[Function]}
-    onKeyPress={[Function]}
-    role="button"
-    tabIndex="0"
-  >
-    <div
-      className="c1"
-    >
-      <div
-        checked={false}
-        className="c4"
-        kind="primary"
-        size={18}
-      >
-        <div
-          checked={false}
-          className="c5"
-        />
-      </div>
-    </div>
-    item name item nameitem name 7
-  </div>
-  <div
-    onClick={[Function]}
-    onKeyPress={[Function]}
-    role="button"
-    tabIndex="0"
-  >
-    <div
-      className="c1"
-    >
-      <div
-        checked={false}
-        className="c4"
-        kind="primary"
-        size={18}
-      >
-        <div
-          checked={false}
-          className="c5"
-        />
-      </div>
-    </div>
-    item name item name7
-  </div>
-</div>
-`;
-
-exports[`Storyshots InputOrder With custom itemRenderer props 1`] = `
+exports[`Storyshots InputMultiSelect API 1`] = `
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -622,15 +177,20 @@ exports[`Storyshots InputOrder With custom itemRenderer props 1`] = `
       className="c1"
     >
       <div
-        checked={false}
-        className="c4"
+        checked={true}
+        className="c2"
         kind="primary"
         size={18}
       >
         <div
-          checked={false}
-          className="c5"
-        />
+          checked={true}
+          className="c3"
+        >
+          <IconCheck.macro
+            height={8}
+            width={8}
+          />
+        </div>
       </div>
     </div>
     item name item name item name 2
@@ -656,75 +216,242 @@ exports[`Storyshots InputOrder With custom itemRenderer props 1`] = `
         />
       </div>
     </div>
-    item name item name item name 3
+    item name 3
   </div>
-</div>
-`;
-
-exports[`Storyshots InputOrder With height props 1`] = `
-.c2 {
-  margin: 0;
-  font-size: 1rem;
-  color: #D1D2D3;
-}
-
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-align-content: flex-start;
-  -ms-flex-line-pack: start;
-  align-content: flex-start;
-  border: 1px solid #D1D2D3;
-  border-radius: 3px;
-  height: 100px;
-  background-color: #FFFFFF;
-  overflow: auto;
-}
-
-.c0 > * {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 10px;
-  min-width: 45%;
-  outline: none;
-  cursor: pointer;
-}
-
-.dUUMVe > *:nth-child(2) .c1 {
-  margin-top: 5px;
-}
-
-.pYtWd > .c1 {
-  margin-top: 5px;
-}
-
-.sQyKx > .c1 {
-  margin-top: 5px;
-}
-
-<div
-  className="c0"
-  height={100}
->
-  <div>
-    <p
-      className="c1 c2"
-      color="grayBase"
+  <div
+    onClick={[Function]}
+    onKeyPress={[Function]}
+    role="button"
+    tabIndex="0"
+  >
+    <div
+      className="c1"
     >
-      Please choose a device first
-    </p>
+      <div
+        checked={false}
+        className="c4"
+        kind="primary"
+        size={18}
+      >
+        <div
+          checked={false}
+          className="c5"
+        />
+      </div>
+    </div>
+    item name 4
+  </div>
+  <div
+    onClick={[Function]}
+    onKeyPress={[Function]}
+    role="button"
+    tabIndex="0"
+  >
+    <div
+      className="c1"
+    >
+      <div
+        checked={false}
+        className="c4"
+        kind="primary"
+        size={18}
+      >
+        <div
+          checked={false}
+          className="c5"
+        />
+      </div>
+    </div>
+    5
+  </div>
+  <div
+    onClick={[Function]}
+    onKeyPress={[Function]}
+    role="button"
+    tabIndex="0"
+  >
+    <div
+      className="c1"
+    >
+      <div
+        checked={false}
+        className="c4"
+        kind="primary"
+        size={18}
+      >
+        <div
+          checked={false}
+          className="c5"
+        />
+      </div>
+    </div>
+    item name 6
+  </div>
+  <div
+    onClick={[Function]}
+    onKeyPress={[Function]}
+    role="button"
+    tabIndex="0"
+  >
+    <div
+      className="c1"
+    >
+      <div
+        checked={false}
+        className="c4"
+        kind="primary"
+        size={18}
+      >
+        <div
+          checked={false}
+          className="c5"
+        />
+      </div>
+    </div>
+    item name item name 7
+  </div>
+  <div
+    onClick={[Function]}
+    onKeyPress={[Function]}
+    role="button"
+    tabIndex="0"
+  >
+    <div
+      className="c1"
+    >
+      <div
+        checked={false}
+        className="c4"
+        kind="primary"
+        size={18}
+      >
+        <div
+          checked={false}
+          className="c5"
+        />
+      </div>
+    </div>
+    item name 7
+  </div>
+  <div
+    onClick={[Function]}
+    onKeyPress={[Function]}
+    role="button"
+    tabIndex="0"
+  >
+    <div
+      className="c1"
+    >
+      <div
+        checked={false}
+        className="c4"
+        kind="primary"
+        size={18}
+      >
+        <div
+          checked={false}
+          className="c5"
+        />
+      </div>
+    </div>
+    item name 7
+  </div>
+  <div
+    onClick={[Function]}
+    onKeyPress={[Function]}
+    role="button"
+    tabIndex="0"
+  >
+    <div
+      className="c1"
+    >
+      <div
+        checked={false}
+        className="c4"
+        kind="primary"
+        size={18}
+      >
+        <div
+          checked={false}
+          className="c5"
+        />
+      </div>
+    </div>
+    item name item nameitem name 7
+  </div>
+  <div
+    onClick={[Function]}
+    onKeyPress={[Function]}
+    role="button"
+    tabIndex="0"
+  >
+    <div
+      className="c1"
+    >
+      <div
+        checked={false}
+        className="c4"
+        kind="primary"
+        size={18}
+      >
+        <div
+          checked={false}
+          className="c5"
+        />
+      </div>
+    </div>
+    item name 7
+  </div>
+  <div
+    onClick={[Function]}
+    onKeyPress={[Function]}
+    role="button"
+    tabIndex="0"
+  >
+    <div
+      className="c1"
+    >
+      <div
+        checked={false}
+        className="c4"
+        kind="primary"
+        size={18}
+      >
+        <div
+          checked={false}
+          className="c5"
+        />
+      </div>
+    </div>
+    item name item nameitem name 7
+  </div>
+  <div
+    onClick={[Function]}
+    onKeyPress={[Function]}
+    role="button"
+    tabIndex="0"
+  >
+    <div
+      className="c1"
+    >
+      <div
+        checked={false}
+        className="c4"
+        kind="primary"
+        size={18}
+      >
+        <div
+          checked={false}
+          className="c5"
+        />
+      </div>
+    </div>
+    item name item name7
   </div>
 </div>
 `;
 
-exports[`Storyshots InputOrder With kind props 1`] = `
+exports[`Storyshots InputMultiSelect With kind props 1`] = `
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1116,70 +843,7 @@ exports[`Storyshots InputOrder With kind props 1`] = `
 </div>
 `;
 
-exports[`Storyshots InputOrder With placeholder props 1`] = `
-.c2 {
-  margin: 0;
-  font-size: 1rem;
-  color: #D1D2D3;
-}
-
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-align-content: flex-start;
-  -ms-flex-line-pack: start;
-  align-content: flex-start;
-  border: 1px solid #D1D2D3;
-  border-radius: 3px;
-  height: 192px;
-  background-color: #FFFFFF;
-  overflow: auto;
-}
-
-.c0 > * {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 10px;
-  min-width: 45%;
-  outline: none;
-  cursor: pointer;
-}
-
-.dUUMVe > *:nth-child(2) .c1 {
-  margin-top: 5px;
-}
-
-.pYtWd > .c1 {
-  margin-top: 5px;
-}
-
-.sQyKx > .c1 {
-  margin-top: 5px;
-}
-
-<div
-  className="c0"
-  height={192}
->
-  <div>
-    <p
-      className="c1 c2"
-      color="grayBase"
-    >
-      Please choose a device first
-    </p>
-  </div>
-</div>
-`;
-
-exports[`Storyshots InputOrder With state 1`] = `
+exports[`Storyshots InputMultiSelect With state 1`] = `
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1567,527 +1231,6 @@ exports[`Storyshots InputOrder With state 1`] = `
       </div>
     </div>
     item name item name7
-  </div>
-</div>
-`;
-
-exports[`Storyshots InputOrder one item 1`] = `
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-align-content: flex-start;
-  -ms-flex-line-pack: start;
-  align-content: flex-start;
-  border: 1px solid #D1D2D3;
-  border-radius: 3px;
-  height: 192px;
-  background-color: #FFFFFF;
-  overflow: auto;
-}
-
-.c0 > * {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 10px;
-  min-width: 45%;
-  outline: none;
-  cursor: pointer;
-}
-
-.c2 {
-  line-height: 1em;
-  font-size: 12px;
-  border-radius: 2px;
-  width: 18px;
-  height: 18px;
-  box-sizing: border-box;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  cursor: pointer;
-  -webkit-transition: background-color 0.5s cubic-bezier(0.23,1,0.32,1),border 0.3s cubic-bezier(0.23,1,0.32,1);
-  transition: background-color 0.5s cubic-bezier(0.23,1,0.32,1),border 0.3s cubic-bezier(0.23,1,0.32,1);
-  color: #FFFFFF;
-  background-color: #00A1DE;
-  border: 1px solid rgb(0,130,179);
-}
-
-.c3 {
-  height: 100%;
-  width: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
-  -webkit-transform-origin: 50% 50%;
-  -ms-transform-origin: 50% 50%;
-  transform-origin: 50% 50%;
-  -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.23,1,0.32,1);
-  -webkit-transition: transform 0.5s cubic-bezier(0.23,1,0.32,1);
-  transition: transform 0.5s cubic-bezier(0.23,1,0.32,1);
-}
-
-.c3 svg {
-  fill: currentColor;
-}
-
-.c1 {
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  margin-right: 5px;
-}
-
-<div
-  className="c0"
-  height={192}
->
-  <div
-    onClick={[Function]}
-    onKeyPress={[Function]}
-    role="button"
-    tabIndex="0"
-  >
-    <div
-      className="c1"
-    >
-      <div
-        checked={true}
-        className="c2"
-        kind="primary"
-        size={18}
-      >
-        <div
-          checked={true}
-          className="c3"
-        >
-          1
-        </div>
-      </div>
-    </div>
-    item name 1
-  </div>
-</div>
-`;
-
-exports[`Storyshots InputOrder three items 1`] = `
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-align-content: flex-start;
-  -ms-flex-line-pack: start;
-  align-content: flex-start;
-  border: 1px solid #D1D2D3;
-  border-radius: 3px;
-  height: 192px;
-  background-color: #FFFFFF;
-  overflow: auto;
-}
-
-.c0 > * {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 10px;
-  min-width: 45%;
-  outline: none;
-  cursor: pointer;
-}
-
-.c2 {
-  line-height: 1em;
-  font-size: 12px;
-  border-radius: 2px;
-  width: 18px;
-  height: 18px;
-  box-sizing: border-box;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  cursor: pointer;
-  -webkit-transition: background-color 0.5s cubic-bezier(0.23,1,0.32,1),border 0.3s cubic-bezier(0.23,1,0.32,1);
-  transition: background-color 0.5s cubic-bezier(0.23,1,0.32,1),border 0.3s cubic-bezier(0.23,1,0.32,1);
-  color: #FFFFFF;
-  background-color: #00A1DE;
-  border: 1px solid rgb(0,130,179);
-}
-
-.c4 {
-  line-height: 1em;
-  font-size: 12px;
-  border-radius: 2px;
-  width: 18px;
-  height: 18px;
-  box-sizing: border-box;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  cursor: pointer;
-  -webkit-transition: background-color 0.5s cubic-bezier(0.23,1,0.32,1),border 0.3s cubic-bezier(0.23,1,0.32,1);
-  transition: background-color 0.5s cubic-bezier(0.23,1,0.32,1),border 0.3s cubic-bezier(0.23,1,0.32,1);
-  color: transparent;
-  background-color: #FFFFFF;
-  border: 1px solid #D1D2D3;
-}
-
-.c3 {
-  height: 100%;
-  width: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
-  -webkit-transform-origin: 50% 50%;
-  -ms-transform-origin: 50% 50%;
-  transform-origin: 50% 50%;
-  -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.23,1,0.32,1);
-  -webkit-transition: transform 0.5s cubic-bezier(0.23,1,0.32,1);
-  transition: transform 0.5s cubic-bezier(0.23,1,0.32,1);
-}
-
-.c3 svg {
-  fill: currentColor;
-}
-
-.c5 {
-  height: 100%;
-  width: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-transform: scale(0);
-  -ms-transform: scale(0);
-  transform: scale(0);
-  -webkit-transform-origin: 50% 50%;
-  -ms-transform-origin: 50% 50%;
-  transform-origin: 50% 50%;
-  -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.23,1,0.32,1);
-  -webkit-transition: transform 0.5s cubic-bezier(0.23,1,0.32,1);
-  transition: transform 0.5s cubic-bezier(0.23,1,0.32,1);
-}
-
-.c5 svg {
-  fill: currentColor;
-}
-
-.c1 {
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  margin-right: 5px;
-}
-
-<div
-  className="c0"
-  height={192}
->
-  <div
-    onClick={[Function]}
-    onKeyPress={[Function]}
-    role="button"
-    tabIndex="0"
-  >
-    <div
-      className="c1"
-    >
-      <div
-        checked={true}
-        className="c2"
-        kind="primary"
-        size={18}
-      >
-        <div
-          checked={true}
-          className="c3"
-        >
-          1
-        </div>
-      </div>
-    </div>
-    item name 1
-  </div>
-  <div
-    onClick={[Function]}
-    onKeyPress={[Function]}
-    role="button"
-    tabIndex="0"
-  >
-    <div
-      className="c1"
-    >
-      <div
-        checked={false}
-        className="c4"
-        kind="primary"
-        size={18}
-      >
-        <div
-          checked={false}
-          className="c5"
-        />
-      </div>
-    </div>
-    item name item name item name 2
-  </div>
-  <div
-    onClick={[Function]}
-    onKeyPress={[Function]}
-    role="button"
-    tabIndex="0"
-  >
-    <div
-      className="c1"
-    >
-      <div
-        checked={false}
-        className="c4"
-        kind="primary"
-        size={18}
-      >
-        <div
-          checked={false}
-          className="c5"
-        />
-      </div>
-    </div>
-    item name item name item name 3
-  </div>
-</div>
-`;
-
-exports[`Storyshots InputOrder two items 1`] = `
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-align-content: flex-start;
-  -ms-flex-line-pack: start;
-  align-content: flex-start;
-  border: 1px solid #D1D2D3;
-  border-radius: 3px;
-  height: 192px;
-  background-color: #FFFFFF;
-  overflow: auto;
-}
-
-.c0 > * {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 10px;
-  min-width: 45%;
-  outline: none;
-  cursor: pointer;
-}
-
-.c2 {
-  line-height: 1em;
-  font-size: 12px;
-  border-radius: 2px;
-  width: 18px;
-  height: 18px;
-  box-sizing: border-box;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  cursor: pointer;
-  -webkit-transition: background-color 0.5s cubic-bezier(0.23,1,0.32,1),border 0.3s cubic-bezier(0.23,1,0.32,1);
-  transition: background-color 0.5s cubic-bezier(0.23,1,0.32,1),border 0.3s cubic-bezier(0.23,1,0.32,1);
-  color: #FFFFFF;
-  background-color: #00A1DE;
-  border: 1px solid rgb(0,130,179);
-}
-
-.c4 {
-  line-height: 1em;
-  font-size: 12px;
-  border-radius: 2px;
-  width: 18px;
-  height: 18px;
-  box-sizing: border-box;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  cursor: pointer;
-  -webkit-transition: background-color 0.5s cubic-bezier(0.23,1,0.32,1),border 0.3s cubic-bezier(0.23,1,0.32,1);
-  transition: background-color 0.5s cubic-bezier(0.23,1,0.32,1),border 0.3s cubic-bezier(0.23,1,0.32,1);
-  color: transparent;
-  background-color: #FFFFFF;
-  border: 1px solid #D1D2D3;
-}
-
-.c3 {
-  height: 100%;
-  width: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
-  -webkit-transform-origin: 50% 50%;
-  -ms-transform-origin: 50% 50%;
-  transform-origin: 50% 50%;
-  -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.23,1,0.32,1);
-  -webkit-transition: transform 0.5s cubic-bezier(0.23,1,0.32,1);
-  transition: transform 0.5s cubic-bezier(0.23,1,0.32,1);
-}
-
-.c3 svg {
-  fill: currentColor;
-}
-
-.c5 {
-  height: 100%;
-  width: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-transform: scale(0);
-  -ms-transform: scale(0);
-  transform: scale(0);
-  -webkit-transform-origin: 50% 50%;
-  -ms-transform-origin: 50% 50%;
-  transform-origin: 50% 50%;
-  -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.23,1,0.32,1);
-  -webkit-transition: transform 0.5s cubic-bezier(0.23,1,0.32,1);
-  transition: transform 0.5s cubic-bezier(0.23,1,0.32,1);
-}
-
-.c5 svg {
-  fill: currentColor;
-}
-
-.c1 {
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  margin-right: 5px;
-}
-
-<div
-  className="c0"
-  height={192}
->
-  <div
-    onClick={[Function]}
-    onKeyPress={[Function]}
-    role="button"
-    tabIndex="0"
-  >
-    <div
-      className="c1"
-    >
-      <div
-        checked={true}
-        className="c2"
-        kind="primary"
-        size={18}
-      >
-        <div
-          checked={true}
-          className="c3"
-        >
-          1
-        </div>
-      </div>
-    </div>
-    item name 1
-  </div>
-  <div
-    onClick={[Function]}
-    onKeyPress={[Function]}
-    role="button"
-    tabIndex="0"
-  >
-    <div
-      className="c1"
-    >
-      <div
-        checked={false}
-        className="c4"
-        kind="primary"
-        size={18}
-      >
-        <div
-          checked={false}
-          className="c5"
-        />
-      </div>
-    </div>
-    item name item name item name 2
   </div>
 </div>
 `;
