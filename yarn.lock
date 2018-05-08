@@ -6192,7 +6192,17 @@ highlight.js@~9.12.0:
   version "9.12.0"
   resolved "https://registry.yarnpkg.com/highlight.js/-/highlight.js-9.12.0.tgz#e6d9dbe57cbefe60751f02af336195870c90c01e"
 
-history@3.3.0, history@^3.0.0:
+history@4.7.2:
+  version "4.7.2"
+  resolved "https://registry.yarnpkg.com/history/-/history-4.7.2.tgz#22b5c7f31633c5b8021c7f4a8a954ac139ee8d5b"
+  dependencies:
+    invariant "^2.2.1"
+    loose-envify "^1.2.0"
+    resolve-pathname "^2.2.0"
+    value-equal "^0.4.0"
+    warning "^3.0.0"
+
+history@^3.0.0:
   version "3.3.0"
   resolved "https://registry.yarnpkg.com/history/-/history-3.3.0.tgz#fcedcce8f12975371545d735461033579a6dae9c"
   dependencies:
@@ -11517,6 +11527,10 @@ resolve-from@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/resolve-from/-/resolve-from-3.0.0.tgz#b22c7af7d9d6881bc8b6e653335eebcb0a188748"
 
+resolve-pathname@^2.2.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/resolve-pathname/-/resolve-pathname-2.2.0.tgz#7e9ae21ed815fd63ab189adeee64dc831eefa879"
+
 resolve-url@^0.2.1, resolve-url@~0.2.1:
   version "0.2.1"
   resolved "https://registry.yarnpkg.com/resolve-url/-/resolve-url-0.2.1.tgz#2c637fe77c893afd2a663fe21aa9080068e2052a"
@@ -13274,6 +13288,10 @@ validate-npm-package-name@~2.2.2:
 validator@9.4.1:
   version "9.4.1"
   resolved "https://registry.yarnpkg.com/validator/-/validator-9.4.1.tgz#abf466d398b561cd243050112c6ff1de6cc12663"
+
+value-equal@^0.4.0:
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/value-equal/-/value-equal-0.4.0.tgz#c5bdd2f54ee093c04839d71ce2e4758a6890abc7"
 
 variable-diff@^1.1.0:
   version "1.1.0"
