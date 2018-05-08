@@ -20,7 +20,7 @@
   "workspaces": ["packages/*"],
   "devDependencies": {
     "babel-eslint": "8.2.3",
-    "codecov": "3.0.1",
+    "codecov": "3.0.2",
     "danger": "3.6.5",
     "eslint": "4.19.1",
     "eslint-config-airbnb": "16.1.0",
