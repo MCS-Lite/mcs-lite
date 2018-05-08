@@ -1,5 +1,9 @@
 # MCS Lite changelogs
 
+## Released (2018-05-08)
+
+* fix(ui): table th font-weight
+
 ## Released (2018-05-07)
 
 * babel-preset-mcs-lite: 0.3.28 => 0.3.29
