@@ -2,7 +2,21 @@
 
 ## Released (2018-05-08)
 
-* fix(ui): table th font-weight
+* babel-preset-mcs-lite: 0.3.29 => 0.3.30
+* eslint-config-mcs-lite: 0.6.20 => 0.6.21
+* mcs-lite-admin-web: 0.2.22 => 0.2.23
+* mcs-lite-connect: 0.3.32 => 0.3.33
+* mcs-lite-design: 0.2.24 => 0.2.25
+* mcs-lite-icon: 0.3.31 => 0.3.32
+* mcs-lite-landing-web: 0.1.27 => 0.1.28 (private)
+* mcs-lite-mobile-web: 0.4.35 => 0.4.36
+* mcs-lite-scripts: 0.3.31 => 0.3.32
+* mcs-lite-theme: 0.4.4 => 0.4.5
+* mcs-lite-translation: 0.1.29 => 0.1.30
+* mcs-lite-ui: 0.8.4 => 0.8.5
+* react-intl-inject-hoc: 0.2.32 => 0.2.33
+
+- fix(ui): table th font-weight
 
 ## Released (2018-05-07)
 
