@@ -25,6 +25,7 @@ exports[`Storyshots Table API 1`] = `
 
 .c0 th {
   text-align: left;
+  font-weight: normal;
 }
 
 <table
