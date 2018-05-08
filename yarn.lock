@@ -3970,9 +3970,9 @@ damerau-levenshtein@^1.0.0:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/damerau-levenshtein/-/damerau-levenshtein-1.0.4.tgz#03191c432cb6eea168bb77f3a55ffdccb8978514"
 
-danger@3.4.7:
-  version "3.4.7"
-  resolved "https://registry.yarnpkg.com/danger/-/danger-3.4.7.tgz#3a3ebba91691f744ca63e29ef751773c16ea0c5d"
+danger@3.6.5:
+  version "3.6.5"
+  resolved "https://registry.yarnpkg.com/danger/-/danger-3.6.5.tgz#e00fe1e88b2d82ab2a90ce7e0da5b9f15d1206d4"
   dependencies:
     "@octokit/rest" "^15.2.6"
     babel-polyfill "^6.23.0"
@@ -3990,6 +3990,7 @@ danger@3.4.7:
     lodash.keys "^4.0.8"
     node-cleanup "^2.1.2"
     node-fetch "^2.1.2"
+    p-limit "^1.2.0"
     parse-diff "^0.4.2"
     parse-git-config "^2.0.2"
     parse-github-url "^1.0.2"
@@ -3999,7 +4000,7 @@ danger@3.4.7:
     require-from-string "^2.0.1"
     rfc6902 "^2.2.2"
     supports-hyperlinks "^1.0.1"
-    vm2 patriksimek/vm2#custom_files
+    vm2 "github:patriksimek/vm2#custom_files"
     voca "^1.4.0"
 
 dargs@^4.0.1:
@@ -9409,7 +9410,7 @@ p-finally@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/p-finally/-/p-finally-1.0.0.tgz#3fbcfb15b899a44123b34b6dcc18b724336a2cae"
 
-p-limit@^1.1.0:
+p-limit@^1.1.0, p-limit@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/p-limit/-/p-limit-1.2.0.tgz#0e92b6bedcb59f022c13d0f1949dc82d15909f1c"
   dependencies:
@@ -13292,8 +13293,9 @@ vm-browserify@0.0.4:
   dependencies:
     indexof "0.0.1"
 
-vm2@patriksimek/vm2#custom_files:
+"vm2@github:patriksimek/vm2#custom_files":
   version "3.5.0"
+  uid "7e82f90ac705fc44fad044147cb0df09b4c79a57"
   resolved "https://codeload.github.com/patriksimek/vm2/tar.gz/7e82f90ac705fc44fad044147cb0df09b4c79a57"
 
 voca@^1.4.0:
