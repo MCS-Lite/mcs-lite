@@ -49,7 +49,7 @@
     "react-dom": "16.3.2",
     "react-helmet": "5.2.0",
     "react-intl": "2.4.0",
-    "react-intl-cra": "^0.3.3",
+    "react-intl-cra": "0.3.3",
     "react-intl-inject-hoc": "^0.2.34",
     "react-intl-po": "2.2.2",
     "react-loadable": "5.3.1",
