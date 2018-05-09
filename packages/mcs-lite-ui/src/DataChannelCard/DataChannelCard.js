@@ -42,7 +42,7 @@ export const StyledHr = styled(Hr)`
   margin: 5px 0;
 `;
 
-export const Wrapper = styled(Card)`
+export const Wrapper = Card.extend`
   height: 300px;
   padding: 10px 20px;
   display: flex;

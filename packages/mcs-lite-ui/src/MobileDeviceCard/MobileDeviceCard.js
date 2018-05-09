@@ -6,7 +6,7 @@ import Card from '../Card';
 import Img from '../Img';
 import Heading from '../Heading';
 
-export const StyledCard = styled(Card)`
+export const StyledCard = Card.extend`
   height: 120px;
   display: flex;
 `;

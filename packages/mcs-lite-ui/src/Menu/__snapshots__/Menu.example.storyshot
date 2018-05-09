@@ -1,15 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Menu API for Menu 1`] = `
-.c1 {
+.c0 {
   box-sizing: border-box;
   box-shadow: 0 1px 5px 0 rgba(0,0,0,0.2);
   border-radius: 3px;
   background-color: #FFFFFF;
   overflow: hidden;
-}
-
-.c0 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -21,7 +18,7 @@ exports[`Storyshots Menu API for Menu 1`] = `
 }
 
 <div
-  className="c0 c1"
+  className="c0"
 >
   Children
 </div>
@@ -174,17 +171,17 @@ Array [
 `;
 
 exports[`Storyshots Menu Fixed width 1`] = `
-.c4 {
+.c3 {
   margin: 0;
   font-weight: normal;
   font-size: 2.46rem;
 }
 
-.c9 {
+.c8 {
   font-weight: bold;
 }
 
-.c8 {
+.c7 {
   color: #00A1DE;
   -webkit-transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
   transition: color cubic-bezier(0.47,0,0.75,0.72) 0.3s;
@@ -193,202 +190,31 @@ exports[`Storyshots Menu Fixed width 1`] = `
   text-decoration: none;
 }
 
-.c8:hover {
+.c7:hover {
   color: rgb(0,151,208);
 }
 
-.c8:active {
+.c7:active {
   color: rgb(0,144,198);
+}
+
+.c5 {
+  margin: 0;
+  font-size: 1rem;
 }
 
 .c6 {
   margin: 0;
   font-size: 1rem;
-}
-
-.c7 {
-  margin: 0;
-  font-size: 1rem;
   color: #F5364E;
 }
 
-.c2 {
-  box-sizing: border-box;
-  box-shadow: 0 1px 5px 0 rgba(0,0,0,0.2);
-  border-radius: 3px;
-  background-color: #FFFFFF;
-  overflow: hidden;
-}
-
-.c1 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  padding: 5px 0;
-}
-
-.c3 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  padding: 0 15px;
-  min-width: 80px;
-  cursor: pointer;
-  box-sizing: border-box;
-  color: #353630;
-  min-height: 32px;
-}
-
-.c3 * {
-  -webkit-transition: initial;
-  transition: initial;
-}
-
-.c3:hover {
-  background-color: #00A1DE;
-  color: #FFFFFF;
-}
-
-.c3:hover * {
-  color: #FFFFFF;
-}
-
-.c3:active {
-  background-color: rgb(0,151,208);
-  color: #FFFFFF;
-}
-
-.c3:active * {
-  color: #FFFFFF;
-}
-
-.dUUMVe > *:nth-child(2) .c5 {
-  margin-top: 5px;
-}
-
-.pYtWd > .c5 {
-  margin-top: 5px;
-}
-
-.sQyKx > .c5 {
-  margin-top: 5px;
-}
-
-.c0 {
-  width: 300px;
-}
-
-<div
-  className="c0 c1 c2"
->
-  <div
-    className="c3"
-    onClick={[Function]}
-  >
-    MenuItem 1
-  </div>
-  <div
-    className="c3"
-    onClick={[Function]}
-  >
-    MenuItem Content 2
-  </div>
-  <div
-    className="c3"
-    onClick={[Function]}
-  >
-    <h1
-      className="c4"
-    >
-      MenuItem Heading 1
-    </h1>
-  </div>
-  <div
-    className="c3"
-    onClick={[Function]}
-  >
-    <p
-      className="c5 c6"
-    >
-      MenuItem P
-    </p>
-  </div>
-  <div
-    className="c3"
-    onClick={[Function]}
-  >
-    <p
-      className="c5 c7"
-      color="error"
-    >
-      MenuItem P error
-    </p>
-  </div>
-  <div
-    className="c3"
-    onClick={[Function]}
-  >
-    <a
-      className="c8"
-      color="primary"
-    >
-      MenuItem A
-    </a>
-  </div>
-  <div
-    className="c3"
-    onClick={[Function]}
-  >
-    <b
-      className="c9"
-    >
-      MenuItem B
-    </b>
-  </div>
-  <div
-    className="c3"
-    onClick={[Function]}
-  >
-    <svg
-      fill="currentColor"
-      height="1em"
-      preserveAspectRatio="xMidYMid meet"
-      viewBox="0 0 24 24"
-      width="1em"
-    >
-      <path
-        d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zm9-10h1v10h-1V9zm-4 0h2v10h-2V9zM8 9h1v10H8V9zm7.5-5l-1-1h-5l-1 1H5v2h14V4h-3.5z"
-      />
-    </svg>
-  </div>
-  <a
-    className="c3"
-  >
-    &lt;a&gt;
-     Tag
-  </a>
-</div>
-`;
-
-exports[`Storyshots Menu Min width 1`] = `
 .c1 {
   box-sizing: border-box;
   box-shadow: 0 1px 5px 0 rgba(0,0,0,0.2);
   border-radius: 3px;
   background-color: #FFFFFF;
   overflow: hidden;
-}
-
-.c0 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -439,6 +265,22 @@ exports[`Storyshots Menu Min width 1`] = `
   color: #FFFFFF;
 }
 
+.dUUMVe > *:nth-child(2) .c4 {
+  margin-top: 5px;
+}
+
+.pYtWd > .c4 {
+  margin-top: 5px;
+}
+
+.sQyKx > .c4 {
+  margin-top: 5px;
+}
+
+.c0 {
+  width: 300px;
+}
+
 <div
   className="c0 c1"
 >
@@ -446,10 +288,159 @@ exports[`Storyshots Menu Min width 1`] = `
     className="c2"
     onClick={[Function]}
   >
-    複製
+    MenuItem 1
   </div>
   <div
     className="c2"
+    onClick={[Function]}
+  >
+    MenuItem Content 2
+  </div>
+  <div
+    className="c2"
+    onClick={[Function]}
+  >
+    <h1
+      className="c3"
+    >
+      MenuItem Heading 1
+    </h1>
+  </div>
+  <div
+    className="c2"
+    onClick={[Function]}
+  >
+    <p
+      className="c4 c5"
+    >
+      MenuItem P
+    </p>
+  </div>
+  <div
+    className="c2"
+    onClick={[Function]}
+  >
+    <p
+      className="c4 c6"
+      color="error"
+    >
+      MenuItem P error
+    </p>
+  </div>
+  <div
+    className="c2"
+    onClick={[Function]}
+  >
+    <a
+      className="c7"
+      color="primary"
+    >
+      MenuItem A
+    </a>
+  </div>
+  <div
+    className="c2"
+    onClick={[Function]}
+  >
+    <b
+      className="c8"
+    >
+      MenuItem B
+    </b>
+  </div>
+  <div
+    className="c2"
+    onClick={[Function]}
+  >
+    <svg
+      fill="currentColor"
+      height="1em"
+      preserveAspectRatio="xMidYMid meet"
+      viewBox="0 0 24 24"
+      width="1em"
+    >
+      <path
+        d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zm9-10h1v10h-1V9zm-4 0h2v10h-2V9zM8 9h1v10H8V9zm7.5-5l-1-1h-5l-1 1H5v2h14V4h-3.5z"
+      />
+    </svg>
+  </div>
+  <a
+    className="c2"
+  >
+    &lt;a&gt;
+     Tag
+  </a>
+</div>
+`;
+
+exports[`Storyshots Menu Min width 1`] = `
+.c0 {
+  box-sizing: border-box;
+  box-shadow: 0 1px 5px 0 rgba(0,0,0,0.2);
+  border-radius: 3px;
+  background-color: #FFFFFF;
+  overflow: hidden;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 5px 0;
+}
+
+.c1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0 15px;
+  min-width: 80px;
+  cursor: pointer;
+  box-sizing: border-box;
+  color: #353630;
+  min-height: 32px;
+}
+
+.c1 * {
+  -webkit-transition: initial;
+  transition: initial;
+}
+
+.c1:hover {
+  background-color: #00A1DE;
+  color: #FFFFFF;
+}
+
+.c1:hover * {
+  color: #FFFFFF;
+}
+
+.c1:active {
+  background-color: rgb(0,151,208);
+  color: #FFFFFF;
+}
+
+.c1:active * {
+  color: #FFFFFF;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+    onClick={[Function]}
+  >
+    複製
+  </div>
+  <div
+    className="c1"
     onClick={[Function]}
   >
     刪除

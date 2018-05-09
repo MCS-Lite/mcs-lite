@@ -7,13 +7,12 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
 import R from 'ramda';
 import Card from '../Card';
 import P from '../P';
 import Small from '../Small';
 
-const StyledCard = styled(Card)`
+const StyledCard = Card.extend`
   padding: 8px;
 `;
 
