@@ -28,7 +28,7 @@ const CodeBlock = styled(Heading)`
   padding: 2px 5px;
 `;
 
-const StyledCard = styled(Card)`
+const StyledCard = Card.extend`
   display: flex;
   flex-direction: column;
   align-items: center;

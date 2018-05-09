@@ -1,20 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should renders <RestartNotification> correctly 1`] = `
-.c4 {
+.c3 {
   box-sizing: border-box;
   box-shadow: 0 1px 5px 0 rgba(0,0,0,0.2);
   border-radius: 3px;
   background-color: #FFFFFF;
   overflow: hidden;
-}
-
-.c3 {
   border: 1px solid #F39A1E;
   background-color: rgba(255,255,255,0.9);
 }
 
-.c6 {
+.c5 {
   margin: 0;
   font-size: 1rem;
   display: -webkit-box;
@@ -46,7 +43,7 @@ exports[`should renders <RestartNotification> correctly 1`] = `
   box-shadow: none;
 }
 
-.c2 > .c5 {
+.c2 > .c4 {
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
@@ -166,7 +163,7 @@ exports[`should renders <RestartNotification> correctly 1`] = `
                     }
                   }
                 >
-                  <Styled(Card)
+                  <styled.div
                     className="c2"
                     kind="warning"
                     style={
@@ -176,7 +173,7 @@ exports[`should renders <RestartNotification> correctly 1`] = `
                       }
                     }
                   >
-                    <Card
+                    <div
                       className="c2 c3"
                       kind="warning"
                       style={
@@ -186,40 +183,29 @@ exports[`should renders <RestartNotification> correctly 1`] = `
                         }
                       }
                     >
-                      <div
-                        className="c2 c3 c4"
+                      <Styled(Component)
                         kind="warning"
-                        style={
-                          Object {
-                            "opacity": 0.5,
-                            "undefined": "translateY(-10px) ",
-                          }
-                        }
                       >
-                        <Styled(Component)
+                        <Component
+                          className="c4 c5"
                           kind="warning"
                         >
-                          <Component
-                            className="c5 c6"
+                          <div
+                            className="c4 c5"
                             kind="warning"
                           >
-                            <div
-                              className="c5 c6"
-                              kind="warning"
-                            >
-                              <div>
-                                restartRequired
-                              </div>
-                              <A
-                                color="primary"
-                                onClick={[Function]}
-                              />
+                            <div>
+                              restartRequired
                             </div>
-                          </Component>
-                        </Styled(Component)>
-                      </div>
-                    </Card>
-                  </Styled(Card)>
+                            <A
+                              color="primary"
+                              onClick={[Function]}
+                            />
+                          </div>
+                        </Component>
+                      </Styled(Component)>
+                    </div>
+                  </styled.div>
                 </Toast>
               </Styled(Toast)>
             </Component>

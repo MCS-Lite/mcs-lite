@@ -1,12 +1,11 @@
 // @flow
 import * as React from 'react';
-import styled from 'styled-components';
 import Overlay from 'react-overlay-pack/lib/Overlay/index';
 import Card from '../Card';
 import Arrow from './Arrow';
 import { RIGHT_CENTER } from './position.config';
 
-export const StyledCard = styled(Card)`
+export const StyledCard = Card.extend`
   max-width: 280px;
   padding: 10px;
   background-color: ${props => props.theme.color.grayLight};

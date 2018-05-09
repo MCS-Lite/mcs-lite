@@ -31,47 +31,44 @@ exports[`Storyshots DataPointAreaChart API 1`] = `
 `;
 
 exports[`Storyshots DataPointAreaChart RechartTooltip 1`] = `
-.c2 {
+.c1 {
   margin: 0;
   font-size: 1rem;
 }
 
-.c3 {
+.c2 {
   margin: 0;
   font-size: 1rem;
   color: #999A94;
 }
 
-.c4 {
+.c3 {
   font-size: 0.923rem;
 }
 
-.c1 {
+.c0 {
   box-sizing: border-box;
   box-shadow: 0 1px 5px 0 rgba(0,0,0,0.2);
   border-radius: 3px;
   background-color: #FFFFFF;
   overflow: hidden;
-}
-
-.c0 {
   padding: 8px;
 }
 
 <div
-  className="c0 c1"
+  className="c0"
 >
   <p
-    className="c2"
+    className="c1"
   >
     formatter(1)
   </p>
   <div
-    className="c3"
+    className="c2"
     color="grayDark"
   >
     <small
-      className="c4"
+      className="c3"
     >
       labelFormatter(1532438716989)
     </small>

@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
 import { opacity } from 'mcs-lite-theme';
 import R from 'ramda';
 import Card from '../Card';
@@ -13,7 +12,7 @@ const mapColorByKind = R.cond([
   [R.T, props => R.path(['theme', 'color', props.kind])],
 ]);
 
-export const StyledCard = styled(Card)`
+export const StyledCard = Card.extend`
   border: 1px solid ${mapColorByKind};
   background-color: rgba(255, 255, 255, 0.9);
 `;
