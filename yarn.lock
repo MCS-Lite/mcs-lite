@@ -6825,10 +6825,6 @@ is-my-json-valid@^2.12.4:
     jsonpointer "^4.0.0"
     xtend "^4.0.0"
 
-is-node@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/is-node/-/is-node-1.0.2.tgz#d7d002745ef7debbb7477e988956ab0a4fccb653"
-
 is-npm@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/is-npm/-/is-npm-1.0.0.tgz#f2fb63a65e4905b406c86072765a1a4dc793b9f4"
@@ -10431,13 +10427,13 @@ react-addons-test-utils@15.6.2:
     lodash.isequal "^4.5.0"
     prop-types "^15.5.4"
 
-react-cookie@^1.0.5:
-  version "1.0.5"
-  resolved "https://registry.yarnpkg.com/react-cookie/-/react-cookie-1.0.5.tgz#234190bd55ddfea361444a89c873077ab6abf651"
+react-cookie@^2.0.1:
+  version "2.1.4"
+  resolved "https://registry.yarnpkg.com/react-cookie/-/react-cookie-2.1.4.tgz#7ccb5d2a8e837098c119a0edba8e4a09ac3ffcad"
   dependencies:
-    cookie "^0.3.1"
-    is-node "^1.0.2"
-    object-assign "^4.1.0"
+    hoist-non-react-statics "^2.3.1"
+    prop-types "^15.0.0"
+    universal-cookie "^2.1.2"
 
 react-dev-utils@^5.0.0, react-dev-utils@^5.0.1:
   version "5.0.1"
@@ -13020,6 +13016,13 @@ unique-string@^1.0.0:
   resolved "https://registry.yarnpkg.com/unique-string/-/unique-string-1.0.0.tgz#9e1057cca851abb93398f8b33ae187b99caec11a"
   dependencies:
     crypto-random-string "^1.0.0"
+
+universal-cookie@^2.1.2:
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/universal-cookie/-/universal-cookie-2.1.2.tgz#7c0824c0e027f572789538932f066315611c2836"
+  dependencies:
+    cookie "^0.3.1"
+    object-assign "^4.1.0"
 
 universalify@^0.1.0:
   version "0.1.1"
