@@ -1,5 +1,17 @@
 # MCS Lite changelogs
 
+## Released (2018-05-09)
+
+#### :bug: Bug Fix
+
+* `mcs-lite-admin-web`, `mcs-lite-ui`
+  * [#632](https://github.com/MCS-Lite/mcs-lite/pull/632) fix(ui): tooltip background color override problem. ([@evenchange4](https://github.com/evenchange4))
+
+#### Committers: 2
+
+* Michael Hsu ([evenchange4](https://github.com/evenchange4))
+* [renovate[bot]](https://github.com/apps/renovate)
+
 ## Released (2018-05-08)
 
 * babel-preset-mcs-lite: 0.3.29 => 0.3.30
