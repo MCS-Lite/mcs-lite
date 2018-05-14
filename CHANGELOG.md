@@ -2,6 +2,19 @@
 
 ## Released (2018-05-14)
 
+* eslint-config-mcs-lite: 0.6.22 => 0.6.23
+* mcs-lite-admin-web: 0.2.24 => 0.2.25
+* mcs-lite-connect: 0.3.34 => 0.3.35
+* mcs-lite-design: 0.2.26 => 0.2.27
+* mcs-lite-icon: 0.3.33 => 0.3.34
+* mcs-lite-landing-web: 0.1.29 => 0.1.30 (private)
+* mcs-lite-mobile-web: 0.4.37 => 0.4.38
+* mcs-lite-scripts: 0.3.33 => 0.3.34
+* mcs-lite-theme: 0.4.6 => 0.4.7
+* mcs-lite-translation: 0.1.31 => 0.1.32
+* mcs-lite-ui: 0.8.6 => 0.8.7
+* react-intl-inject-hoc: 0.2.34 => 0.2.35
+
 #### :rocket: New Feature
 
 * `mcs-lite-design`
