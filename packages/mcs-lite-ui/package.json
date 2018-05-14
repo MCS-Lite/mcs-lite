@@ -38,11 +38,11 @@
     ]
   },
   "devDependencies": {
-    "@storybook/addon-actions": "3.4.3",
-    "@storybook/addon-info": "3.4.3",
-    "@storybook/addon-options": "3.4.3",
-    "@storybook/addon-storyshots": "3.4.3",
-    "@storybook/react": "3.4.3",
+    "@storybook/addon-actions": "3.4.4",
+    "@storybook/addon-info": "3.4.4",
+    "@storybook/addon-options": "3.4.4",
+    "@storybook/addon-storyshots": "3.4.4",
+    "@storybook/react": "3.4.4",
     "babel-cli": "6.26.0",
     "babel-preset-mcs-lite": "^0.3.31",
     "enzyme": "3.3.0",
