@@ -1,5 +1,17 @@
 # MCS Lite changelogs
 
+## Released (2018-05-14)
+
+#### :rocket: New Feature
+
+* `mcs-lite-design`
+  * [#641](https://github.com/MCS-Lite/mcs-lite/pull/641) feat(icon): add 8 new icons. ([@evenchange4](https://github.com/evenchange4))
+
+#### Committers: 2
+
+* Michael Hsu ([evenchange4](https://github.com/evenchange4))
+* [renovate[bot]](https://github.com/apps/renovate)
+
 ## Released (2018-05-09)
 
 #### :bug: Bug Fix
