@@ -1,5 +1,9 @@
 # MCS Lite changelogs
 
+## Released (2018-05-16)
+
+* fix(ui): pass required props in Select Component
+
 ## Released (2018-05-14)
 
 * eslint-config-mcs-lite: 0.6.22 => 0.6.23
