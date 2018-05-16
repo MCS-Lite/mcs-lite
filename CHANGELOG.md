@@ -4,6 +4,20 @@
 
 * fix(ui): pass required props in Select Component
 
+- babel-preset-mcs-lite: 0.3.32 => 0.3.33
+- eslint-config-mcs-lite: 0.6.23 => 0.6.24
+- mcs-lite-admin-web: 0.2.25 => 0.2.26
+- mcs-lite-connect: 0.3.35 => 0.3.36
+- mcs-lite-design: 0.2.27 => 0.2.28
+- mcs-lite-icon: 0.3.34 => 0.3.35
+- mcs-lite-landing-web: 0.1.30 => 0.1.31 (private)
+- mcs-lite-mobile-web: 0.4.38 => 0.4.39
+- mcs-lite-scripts: 0.3.34 => 0.3.35
+- mcs-lite-theme: 0.4.7 => 0.4.8
+- mcs-lite-translation: 0.1.32 => 0.1.33
+- mcs-lite-ui: 0.8.7 => 0.8.8
+- react-intl-inject-hoc: 0.2.35 => 0.2.36
+
 ## Released (2018-05-14)
 
 * eslint-config-mcs-lite: 0.6.22 => 0.6.23
