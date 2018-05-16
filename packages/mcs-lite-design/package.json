@@ -1,6 +1,6 @@
 {
   "name": "mcs-lite-design",
-  "version": "0.2.28",
+  "version": "0.2.29",
   "description": "The source images to be compressed used by MCS Lite",
   "repository": "MCS-Lite/mcs-lite",
   "author": "Michael Hsu <evenchange4@gmail.com>",
@@ -9,12 +9,13 @@
     "email": "evenchange4@gmail.com"
   },
   "homepage": "https://github.com/MCS-Lite/mcs-lite#readme",
-  "files": ["lib"],
+  "files": [
+    "lib"
+  ],
   "scripts": {
     "clean": "rm -rf lib",
     "prebuild": "npm run clean && mkdir -p lib/icon",
-    "compress:svg":
-      "svgo src/icon/*.svg -o 'lib/icon' --pretty --multipass --indent=2 --quiet",
+    "compress:svg": "svgo src/icon/*.svg -o 'lib/icon' --pretty --multipass --indent=2 --quiet",
     "build": "npm run compress:svg",
     "test": "echo 'no'"
   },
