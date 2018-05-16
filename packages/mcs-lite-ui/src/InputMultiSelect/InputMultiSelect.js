@@ -11,7 +11,7 @@ const InputMultiSelect = (props: Props) => (
   <InputOrder
     {...props}
     itemRenderer={({ value: itemValue }, { value, kind }) => (
-      <Checkbox value={value.includes(itemValue)} size={18} kind={kind} />
+      <Checkbox value={value.includes(itemValue)} size={14} kind={kind} />
     )}
   />
 );

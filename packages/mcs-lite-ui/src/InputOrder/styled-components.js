@@ -20,6 +20,7 @@ export const Container: React.ComponentType<{
     min-width: 45%;
     outline: none;
     cursor: pointer;
+    align-items: center;
   }
 `;
 
