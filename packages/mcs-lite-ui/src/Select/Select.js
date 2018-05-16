@@ -74,6 +74,7 @@ class Select extends React.Component<
             placeholder={placeholder}
             readOnly
             focus={focus || isOpen}
+            {...R.omit(['onChange'])(otherProps)}
           />
           <StyledButton kind={kind} active={focus || isOpen} square>
             <Rotate active={focus || isOpen}>

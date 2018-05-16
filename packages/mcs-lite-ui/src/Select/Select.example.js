@@ -57,6 +57,23 @@ storiesOf('Select', module)
     )),
   )
   .add(
+    'With required props',
+    withInfo({
+      text: '',
+      inline: true,
+    })(() => (
+      <Select
+        value={2}
+        readOnly
+        required
+        items={[
+          { value: 1, children: 'value 1' },
+          { value: 2, children: 'value 2' },
+        ]}
+      />
+    )),
+  )
+  .add(
     'With disabled props',
     withInfo({
       text: '',
