@@ -1,6 +1,44 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots InputMultiSelect API 1`] = `
+.c2 {
+  line-height: 1em;
+  font-size: 12px;
+  border-radius: 2px;
+  width: 14px;
+  height: 14px;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  -webkit-transition: background-color 0.5s cubic-bezier(0.23,1,0.32,1),border 0.3s cubic-bezier(0.23,1,0.32,1);
+  transition: background-color 0.5s cubic-bezier(0.23,1,0.32,1),border 0.3s cubic-bezier(0.23,1,0.32,1);
+  color: #FFFFFF;
+  background-color: #00A1DE;
+  border: 1px solid rgb(0,130,179);
+}
+
+.c4 {
+  line-height: 1em;
+  font-size: 12px;
+  border-radius: 2px;
+  width: 14px;
+  height: 14px;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  -webkit-transition: background-color 0.5s cubic-bezier(0.23,1,0.32,1),border 0.3s cubic-bezier(0.23,1,0.32,1);
+  transition: background-color 0.5s cubic-bezier(0.23,1,0.32,1),border 0.3s cubic-bezier(0.23,1,0.32,1);
+  color: transparent;
+  background-color: #FFFFFF;
+  border: 1px solid #D1D2D3;
+}
+
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -28,44 +66,10 @@ exports[`Storyshots InputMultiSelect API 1`] = `
   min-width: 45%;
   outline: none;
   cursor: pointer;
-}
-
-.c2 {
-  line-height: 1em;
-  font-size: 12px;
-  border-radius: 2px;
-  width: 18px;
-  height: 18px;
-  box-sizing: border-box;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  cursor: pointer;
-  -webkit-transition: background-color 0.5s cubic-bezier(0.23,1,0.32,1),border 0.3s cubic-bezier(0.23,1,0.32,1);
-  transition: background-color 0.5s cubic-bezier(0.23,1,0.32,1),border 0.3s cubic-bezier(0.23,1,0.32,1);
-  color: #FFFFFF;
-  background-color: #00A1DE;
-  border: 1px solid rgb(0,130,179);
-}
-
-.c4 {
-  line-height: 1em;
-  font-size: 12px;
-  border-radius: 2px;
-  width: 18px;
-  height: 18px;
-  box-sizing: border-box;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  cursor: pointer;
-  -webkit-transition: background-color 0.5s cubic-bezier(0.23,1,0.32,1),border 0.3s cubic-bezier(0.23,1,0.32,1);
-  transition: background-color 0.5s cubic-bezier(0.23,1,0.32,1),border 0.3s cubic-bezier(0.23,1,0.32,1);
-  color: transparent;
-  background-color: #FFFFFF;
-  border: 1px solid #D1D2D3;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .c3 {
@@ -152,7 +156,7 @@ exports[`Storyshots InputMultiSelect API 1`] = `
         checked={true}
         className="c2"
         kind="primary"
-        size={18}
+        size={14}
       >
         <div
           checked={true}
@@ -180,7 +184,7 @@ exports[`Storyshots InputMultiSelect API 1`] = `
         checked={true}
         className="c2"
         kind="primary"
-        size={18}
+        size={14}
       >
         <div
           checked={true}
@@ -208,7 +212,7 @@ exports[`Storyshots InputMultiSelect API 1`] = `
         checked={false}
         className="c4"
         kind="primary"
-        size={18}
+        size={14}
       >
         <div
           checked={false}
@@ -231,7 +235,7 @@ exports[`Storyshots InputMultiSelect API 1`] = `
         checked={false}
         className="c4"
         kind="primary"
-        size={18}
+        size={14}
       >
         <div
           checked={false}
@@ -254,7 +258,7 @@ exports[`Storyshots InputMultiSelect API 1`] = `
         checked={false}
         className="c4"
         kind="primary"
-        size={18}
+        size={14}
       >
         <div
           checked={false}
@@ -277,7 +281,7 @@ exports[`Storyshots InputMultiSelect API 1`] = `
         checked={false}
         className="c4"
         kind="primary"
-        size={18}
+        size={14}
       >
         <div
           checked={false}
@@ -300,7 +304,7 @@ exports[`Storyshots InputMultiSelect API 1`] = `
         checked={false}
         className="c4"
         kind="primary"
-        size={18}
+        size={14}
       >
         <div
           checked={false}
@@ -323,7 +327,7 @@ exports[`Storyshots InputMultiSelect API 1`] = `
         checked={false}
         className="c4"
         kind="primary"
-        size={18}
+        size={14}
       >
         <div
           checked={false}
@@ -346,7 +350,7 @@ exports[`Storyshots InputMultiSelect API 1`] = `
         checked={false}
         className="c4"
         kind="primary"
-        size={18}
+        size={14}
       >
         <div
           checked={false}
@@ -369,7 +373,7 @@ exports[`Storyshots InputMultiSelect API 1`] = `
         checked={false}
         className="c4"
         kind="primary"
-        size={18}
+        size={14}
       >
         <div
           checked={false}
@@ -392,7 +396,7 @@ exports[`Storyshots InputMultiSelect API 1`] = `
         checked={false}
         className="c4"
         kind="primary"
-        size={18}
+        size={14}
       >
         <div
           checked={false}
@@ -415,7 +419,7 @@ exports[`Storyshots InputMultiSelect API 1`] = `
         checked={false}
         className="c4"
         kind="primary"
-        size={18}
+        size={14}
       >
         <div
           checked={false}
@@ -438,7 +442,7 @@ exports[`Storyshots InputMultiSelect API 1`] = `
         checked={false}
         className="c4"
         kind="primary"
-        size={18}
+        size={14}
       >
         <div
           checked={false}
@@ -452,6 +456,25 @@ exports[`Storyshots InputMultiSelect API 1`] = `
 `;
 
 exports[`Storyshots InputMultiSelect With kind props 1`] = `
+.c2 {
+  line-height: 1em;
+  font-size: 12px;
+  border-radius: 2px;
+  width: 14px;
+  height: 14px;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  -webkit-transition: background-color 0.5s cubic-bezier(0.23,1,0.32,1),border 0.3s cubic-bezier(0.23,1,0.32,1);
+  transition: background-color 0.5s cubic-bezier(0.23,1,0.32,1),border 0.3s cubic-bezier(0.23,1,0.32,1);
+  color: transparent;
+  background-color: #FFFFFF;
+  border: 1px solid #D1D2D3;
+}
+
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -479,25 +502,10 @@ exports[`Storyshots InputMultiSelect With kind props 1`] = `
   min-width: 45%;
   outline: none;
   cursor: pointer;
-}
-
-.c2 {
-  line-height: 1em;
-  font-size: 12px;
-  border-radius: 2px;
-  width: 18px;
-  height: 18px;
-  box-sizing: border-box;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  cursor: pointer;
-  -webkit-transition: background-color 0.5s cubic-bezier(0.23,1,0.32,1),border 0.3s cubic-bezier(0.23,1,0.32,1);
-  transition: background-color 0.5s cubic-bezier(0.23,1,0.32,1),border 0.3s cubic-bezier(0.23,1,0.32,1);
-  color: transparent;
-  background-color: #FFFFFF;
-  border: 1px solid #D1D2D3;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .c3 {
@@ -554,7 +562,7 @@ exports[`Storyshots InputMultiSelect With kind props 1`] = `
         checked={false}
         className="c2"
         kind="error"
-        size={18}
+        size={14}
       >
         <div
           checked={false}
@@ -577,7 +585,7 @@ exports[`Storyshots InputMultiSelect With kind props 1`] = `
         checked={false}
         className="c2"
         kind="error"
-        size={18}
+        size={14}
       >
         <div
           checked={false}
@@ -600,7 +608,7 @@ exports[`Storyshots InputMultiSelect With kind props 1`] = `
         checked={false}
         className="c2"
         kind="error"
-        size={18}
+        size={14}
       >
         <div
           checked={false}
@@ -623,7 +631,7 @@ exports[`Storyshots InputMultiSelect With kind props 1`] = `
         checked={false}
         className="c2"
         kind="error"
-        size={18}
+        size={14}
       >
         <div
           checked={false}
@@ -646,7 +654,7 @@ exports[`Storyshots InputMultiSelect With kind props 1`] = `
         checked={false}
         className="c2"
         kind="error"
-        size={18}
+        size={14}
       >
         <div
           checked={false}
@@ -669,7 +677,7 @@ exports[`Storyshots InputMultiSelect With kind props 1`] = `
         checked={false}
         className="c2"
         kind="error"
-        size={18}
+        size={14}
       >
         <div
           checked={false}
@@ -692,7 +700,7 @@ exports[`Storyshots InputMultiSelect With kind props 1`] = `
         checked={false}
         className="c2"
         kind="error"
-        size={18}
+        size={14}
       >
         <div
           checked={false}
@@ -715,7 +723,7 @@ exports[`Storyshots InputMultiSelect With kind props 1`] = `
         checked={false}
         className="c2"
         kind="error"
-        size={18}
+        size={14}
       >
         <div
           checked={false}
@@ -738,7 +746,7 @@ exports[`Storyshots InputMultiSelect With kind props 1`] = `
         checked={false}
         className="c2"
         kind="error"
-        size={18}
+        size={14}
       >
         <div
           checked={false}
@@ -761,7 +769,7 @@ exports[`Storyshots InputMultiSelect With kind props 1`] = `
         checked={false}
         className="c2"
         kind="error"
-        size={18}
+        size={14}
       >
         <div
           checked={false}
@@ -784,7 +792,7 @@ exports[`Storyshots InputMultiSelect With kind props 1`] = `
         checked={false}
         className="c2"
         kind="error"
-        size={18}
+        size={14}
       >
         <div
           checked={false}
@@ -807,7 +815,7 @@ exports[`Storyshots InputMultiSelect With kind props 1`] = `
         checked={false}
         className="c2"
         kind="error"
-        size={18}
+        size={14}
       >
         <div
           checked={false}
@@ -830,7 +838,7 @@ exports[`Storyshots InputMultiSelect With kind props 1`] = `
         checked={false}
         className="c2"
         kind="error"
-        size={18}
+        size={14}
       >
         <div
           checked={false}
@@ -844,6 +852,25 @@ exports[`Storyshots InputMultiSelect With kind props 1`] = `
 `;
 
 exports[`Storyshots InputMultiSelect With state 1`] = `
+.c2 {
+  line-height: 1em;
+  font-size: 12px;
+  border-radius: 2px;
+  width: 14px;
+  height: 14px;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  -webkit-transition: background-color 0.5s cubic-bezier(0.23,1,0.32,1),border 0.3s cubic-bezier(0.23,1,0.32,1);
+  transition: background-color 0.5s cubic-bezier(0.23,1,0.32,1),border 0.3s cubic-bezier(0.23,1,0.32,1);
+  color: transparent;
+  background-color: #FFFFFF;
+  border: 1px solid #D1D2D3;
+}
+
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -871,25 +898,10 @@ exports[`Storyshots InputMultiSelect With state 1`] = `
   min-width: 45%;
   outline: none;
   cursor: pointer;
-}
-
-.c2 {
-  line-height: 1em;
-  font-size: 12px;
-  border-radius: 2px;
-  width: 18px;
-  height: 18px;
-  box-sizing: border-box;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  cursor: pointer;
-  -webkit-transition: background-color 0.5s cubic-bezier(0.23,1,0.32,1),border 0.3s cubic-bezier(0.23,1,0.32,1);
-  transition: background-color 0.5s cubic-bezier(0.23,1,0.32,1),border 0.3s cubic-bezier(0.23,1,0.32,1);
-  color: transparent;
-  background-color: #FFFFFF;
-  border: 1px solid #D1D2D3;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .c3 {
@@ -946,7 +958,7 @@ exports[`Storyshots InputMultiSelect With state 1`] = `
         checked={false}
         className="c2"
         kind="primary"
-        size={18}
+        size={14}
       >
         <div
           checked={false}
@@ -969,7 +981,7 @@ exports[`Storyshots InputMultiSelect With state 1`] = `
         checked={false}
         className="c2"
         kind="primary"
-        size={18}
+        size={14}
       >
         <div
           checked={false}
@@ -992,7 +1004,7 @@ exports[`Storyshots InputMultiSelect With state 1`] = `
         checked={false}
         className="c2"
         kind="primary"
-        size={18}
+        size={14}
       >
         <div
           checked={false}
@@ -1015,7 +1027,7 @@ exports[`Storyshots InputMultiSelect With state 1`] = `
         checked={false}
         className="c2"
         kind="primary"
-        size={18}
+        size={14}
       >
         <div
           checked={false}
@@ -1038,7 +1050,7 @@ exports[`Storyshots InputMultiSelect With state 1`] = `
         checked={false}
         className="c2"
         kind="primary"
-        size={18}
+        size={14}
       >
         <div
           checked={false}
@@ -1061,7 +1073,7 @@ exports[`Storyshots InputMultiSelect With state 1`] = `
         checked={false}
         className="c2"
         kind="primary"
-        size={18}
+        size={14}
       >
         <div
           checked={false}
@@ -1084,7 +1096,7 @@ exports[`Storyshots InputMultiSelect With state 1`] = `
         checked={false}
         className="c2"
         kind="primary"
-        size={18}
+        size={14}
       >
         <div
           checked={false}
@@ -1107,7 +1119,7 @@ exports[`Storyshots InputMultiSelect With state 1`] = `
         checked={false}
         className="c2"
         kind="primary"
-        size={18}
+        size={14}
       >
         <div
           checked={false}
@@ -1130,7 +1142,7 @@ exports[`Storyshots InputMultiSelect With state 1`] = `
         checked={false}
         className="c2"
         kind="primary"
-        size={18}
+        size={14}
       >
         <div
           checked={false}
@@ -1153,7 +1165,7 @@ exports[`Storyshots InputMultiSelect With state 1`] = `
         checked={false}
         className="c2"
         kind="primary"
-        size={18}
+        size={14}
       >
         <div
           checked={false}
@@ -1176,7 +1188,7 @@ exports[`Storyshots InputMultiSelect With state 1`] = `
         checked={false}
         className="c2"
         kind="primary"
-        size={18}
+        size={14}
       >
         <div
           checked={false}
@@ -1199,7 +1211,7 @@ exports[`Storyshots InputMultiSelect With state 1`] = `
         checked={false}
         className="c2"
         kind="primary"
-        size={18}
+        size={14}
       >
         <div
           checked={false}
@@ -1222,7 +1234,7 @@ exports[`Storyshots InputMultiSelect With state 1`] = `
         checked={false}
         className="c2"
         kind="primary"
-        size={18}
+        size={14}
       >
         <div
           checked={false}

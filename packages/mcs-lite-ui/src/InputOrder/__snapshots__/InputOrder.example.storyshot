@@ -28,6 +28,10 @@ exports[`Storyshots InputOrder API 1`] = `
   min-width: 45%;
   outline: none;
   cursor: pointer;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .c2 {
@@ -473,6 +477,10 @@ exports[`Storyshots InputOrder With custom itemRenderer props 1`] = `
   min-width: 45%;
   outline: none;
   cursor: pointer;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .c2 {
@@ -695,6 +703,10 @@ exports[`Storyshots InputOrder With height props 1`] = `
   min-width: 45%;
   outline: none;
   cursor: pointer;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .dUUMVe > *:nth-child(2) .c1 {
@@ -752,6 +764,10 @@ exports[`Storyshots InputOrder With kind props 1`] = `
   min-width: 45%;
   outline: none;
   cursor: pointer;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .c2 {
@@ -1150,6 +1166,10 @@ exports[`Storyshots InputOrder With placeholder props 1`] = `
   min-width: 45%;
   outline: none;
   cursor: pointer;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .dUUMVe > *:nth-child(2) .c1 {
@@ -1207,6 +1227,10 @@ exports[`Storyshots InputOrder With state 1`] = `
   min-width: 45%;
   outline: none;
   cursor: pointer;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .c2 {
@@ -1599,6 +1623,10 @@ exports[`Storyshots InputOrder one item 1`] = `
   min-width: 45%;
   outline: none;
   cursor: pointer;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .c2 {
@@ -1717,6 +1745,10 @@ exports[`Storyshots InputOrder three items 1`] = `
   min-width: 45%;
   outline: none;
   cursor: pointer;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .c2 {
@@ -1930,6 +1962,10 @@ exports[`Storyshots InputOrder two items 1`] = `
   min-width: 45%;
   outline: none;
   cursor: pointer;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .c2 {
