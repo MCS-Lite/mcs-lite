@@ -2,6 +2,17 @@
 
 ## Released (2018-05-16)
 
+#### :bug: Bug Fix
+
+* `mcs-lite-ui`
+  * [#644](https://github.com/MCS-Lite/mcs-lite/pull/644) fix(ui): update Icons size in InputMultiSelect Component. ([@evenchange4](https://github.com/evenchange4))
+
+#### Committers: 1
+
+* Michael Hsu ([evenchange4](https://github.com/evenchange4))
+
+## Released (2018-05-16)
+
 * fix(ui): pass required props in Select Component
 
 - babel-preset-mcs-lite: 0.3.32 => 0.3.33
