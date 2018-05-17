@@ -1,5 +1,17 @@
 # MCS Lite changelogs
 
+## Released (2018-05-17)
+
+#### :bug: Bug Fix
+
+* `mcs-lite-ui`
+  * [#646](https://github.com/MCS-Lite/mcs-lite/pull/646) fix(ui): tuning InputMultiSelect API & margin style. ([@evenchange4](https://github.com/evenchange4))
+
+#### Committers: 2
+
+* Michael Hsu ([evenchange4](https://github.com/evenchange4))
+* [renovate[bot]](https://github.com/apps/renovate)
+
 ## Released (2018-05-16)
 
 * babel-preset-mcs-lite: 0.3.32 => 0.3.33
