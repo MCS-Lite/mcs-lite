@@ -9,9 +9,7 @@
     "email": "evenchange4@gmail.com"
   },
   "homepage": "https://github.com/MCS-Lite/mcs-lite#readme",
-  "files": [
-    "lib"
-  ],
+  "files": ["lib"],
   "main": "lib/index.js",
   "scripts": {
     "clean": "rm -rf lib",
@@ -35,8 +33,6 @@
     "mcs-lite-scripts": "^0.3.37"
   },
   "babel": {
-    "presets": [
-      "mcs-lite"
-    ]
+    "presets": ["mcs-lite"]
   }
 }

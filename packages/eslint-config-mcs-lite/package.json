@@ -9,9 +9,7 @@
     "email": "evenchange4@gmail.com"
   },
   "homepage": "https://github.com/MCS-Lite/mcs-lite#readme",
-  "files": [
-    "index.js"
-  ],
+  "files": ["index.js"],
   "main": "index.js",
   "license": "MIT",
   "scripts": {
