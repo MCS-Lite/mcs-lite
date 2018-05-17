@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots InputMultiSelect API 1`] = `
-.c2 {
+.c3 {
   line-height: 1em;
   font-size: 12px;
   border-radius: 2px;
@@ -20,7 +20,7 @@ exports[`Storyshots InputMultiSelect API 1`] = `
   border: 1px solid rgb(0,130,179);
 }
 
-.c4 {
+.c5 {
   line-height: 1em;
   font-size: 12px;
   border-radius: 2px;
@@ -39,7 +39,7 @@ exports[`Storyshots InputMultiSelect API 1`] = `
   border: 1px solid #D1D2D3;
 }
 
-.c0 {
+.c1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -57,7 +57,7 @@ exports[`Storyshots InputMultiSelect API 1`] = `
   overflow: auto;
 }
 
-.c0 > * {
+.c1 > * {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -72,7 +72,7 @@ exports[`Storyshots InputMultiSelect API 1`] = `
   align-items: center;
 }
 
-.c3 {
+.c4 {
   height: 100%;
   width: 100%;
   display: -webkit-box;
@@ -98,11 +98,11 @@ exports[`Storyshots InputMultiSelect API 1`] = `
   transition: transform 0.5s cubic-bezier(0.23,1,0.32,1);
 }
 
-.c3 svg {
+.c4 svg {
   fill: currentColor;
 }
 
-.c5 {
+.c6 {
   height: 100%;
   width: 100%;
   display: -webkit-box;
@@ -128,19 +128,23 @@ exports[`Storyshots InputMultiSelect API 1`] = `
   transition: transform 0.5s cubic-bezier(0.23,1,0.32,1);
 }
 
-.c5 svg {
+.c6 svg {
   fill: currentColor;
 }
 
-.c1 {
+.c2 {
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
   margin-right: 5px;
 }
 
+.c0 > * {
+  margin: 5px 10px;
+}
+
 <div
-  className="c0"
+  className="c0 c1"
   height={192}
 >
   <div
@@ -150,17 +154,17 @@ exports[`Storyshots InputMultiSelect API 1`] = `
     tabIndex="0"
   >
     <div
-      className="c1"
+      className="c2"
     >
       <div
         checked={true}
-        className="c2"
+        className="c3"
         kind="primary"
         size={14}
       >
         <div
           checked={true}
-          className="c3"
+          className="c4"
         >
           <IconCheck.macro
             height={8}
@@ -178,17 +182,17 @@ exports[`Storyshots InputMultiSelect API 1`] = `
     tabIndex="0"
   >
     <div
-      className="c1"
+      className="c2"
     >
       <div
         checked={true}
-        className="c2"
+        className="c3"
         kind="primary"
         size={14}
       >
         <div
           checked={true}
-          className="c3"
+          className="c4"
         >
           <IconCheck.macro
             height={8}
@@ -206,17 +210,17 @@ exports[`Storyshots InputMultiSelect API 1`] = `
     tabIndex="0"
   >
     <div
-      className="c1"
+      className="c2"
     >
       <div
         checked={false}
-        className="c4"
+        className="c5"
         kind="primary"
         size={14}
       >
         <div
           checked={false}
-          className="c5"
+          className="c6"
         />
       </div>
     </div>
@@ -229,17 +233,17 @@ exports[`Storyshots InputMultiSelect API 1`] = `
     tabIndex="0"
   >
     <div
-      className="c1"
+      className="c2"
     >
       <div
         checked={false}
-        className="c4"
+        className="c5"
         kind="primary"
         size={14}
       >
         <div
           checked={false}
-          className="c5"
+          className="c6"
         />
       </div>
     </div>
@@ -252,17 +256,17 @@ exports[`Storyshots InputMultiSelect API 1`] = `
     tabIndex="0"
   >
     <div
-      className="c1"
+      className="c2"
     >
       <div
         checked={false}
-        className="c4"
+        className="c5"
         kind="primary"
         size={14}
       >
         <div
           checked={false}
-          className="c5"
+          className="c6"
         />
       </div>
     </div>
@@ -275,17 +279,17 @@ exports[`Storyshots InputMultiSelect API 1`] = `
     tabIndex="0"
   >
     <div
-      className="c1"
+      className="c2"
     >
       <div
         checked={false}
-        className="c4"
+        className="c5"
         kind="primary"
         size={14}
       >
         <div
           checked={false}
-          className="c5"
+          className="c6"
         />
       </div>
     </div>
@@ -298,17 +302,17 @@ exports[`Storyshots InputMultiSelect API 1`] = `
     tabIndex="0"
   >
     <div
-      className="c1"
+      className="c2"
     >
       <div
         checked={false}
-        className="c4"
+        className="c5"
         kind="primary"
         size={14}
       >
         <div
           checked={false}
-          className="c5"
+          className="c6"
         />
       </div>
     </div>
@@ -321,17 +325,17 @@ exports[`Storyshots InputMultiSelect API 1`] = `
     tabIndex="0"
   >
     <div
-      className="c1"
+      className="c2"
     >
       <div
         checked={false}
-        className="c4"
+        className="c5"
         kind="primary"
         size={14}
       >
         <div
           checked={false}
-          className="c5"
+          className="c6"
         />
       </div>
     </div>
@@ -344,17 +348,17 @@ exports[`Storyshots InputMultiSelect API 1`] = `
     tabIndex="0"
   >
     <div
-      className="c1"
+      className="c2"
     >
       <div
         checked={false}
-        className="c4"
+        className="c5"
         kind="primary"
         size={14}
       >
         <div
           checked={false}
-          className="c5"
+          className="c6"
         />
       </div>
     </div>
@@ -367,17 +371,17 @@ exports[`Storyshots InputMultiSelect API 1`] = `
     tabIndex="0"
   >
     <div
-      className="c1"
+      className="c2"
     >
       <div
         checked={false}
-        className="c4"
+        className="c5"
         kind="primary"
         size={14}
       >
         <div
           checked={false}
-          className="c5"
+          className="c6"
         />
       </div>
     </div>
@@ -390,17 +394,17 @@ exports[`Storyshots InputMultiSelect API 1`] = `
     tabIndex="0"
   >
     <div
-      className="c1"
+      className="c2"
     >
       <div
         checked={false}
-        className="c4"
+        className="c5"
         kind="primary"
         size={14}
       >
         <div
           checked={false}
-          className="c5"
+          className="c6"
         />
       </div>
     </div>
@@ -413,17 +417,17 @@ exports[`Storyshots InputMultiSelect API 1`] = `
     tabIndex="0"
   >
     <div
-      className="c1"
+      className="c2"
     >
       <div
         checked={false}
-        className="c4"
+        className="c5"
         kind="primary"
         size={14}
       >
         <div
           checked={false}
-          className="c5"
+          className="c6"
         />
       </div>
     </div>
@@ -436,17 +440,17 @@ exports[`Storyshots InputMultiSelect API 1`] = `
     tabIndex="0"
   >
     <div
-      className="c1"
+      className="c2"
     >
       <div
         checked={false}
-        className="c4"
+        className="c5"
         kind="primary"
         size={14}
       >
         <div
           checked={false}
-          className="c5"
+          className="c6"
         />
       </div>
     </div>
@@ -456,7 +460,7 @@ exports[`Storyshots InputMultiSelect API 1`] = `
 `;
 
 exports[`Storyshots InputMultiSelect With kind props 1`] = `
-.c2 {
+.c3 {
   line-height: 1em;
   font-size: 12px;
   border-radius: 2px;
@@ -475,7 +479,7 @@ exports[`Storyshots InputMultiSelect With kind props 1`] = `
   border: 1px solid #D1D2D3;
 }
 
-.c0 {
+.c1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -493,7 +497,7 @@ exports[`Storyshots InputMultiSelect With kind props 1`] = `
   overflow: auto;
 }
 
-.c0 > * {
+.c1 > * {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -508,7 +512,7 @@ exports[`Storyshots InputMultiSelect With kind props 1`] = `
   align-items: center;
 }
 
-.c3 {
+.c4 {
   height: 100%;
   width: 100%;
   display: -webkit-box;
@@ -534,19 +538,23 @@ exports[`Storyshots InputMultiSelect With kind props 1`] = `
   transition: transform 0.5s cubic-bezier(0.23,1,0.32,1);
 }
 
-.c3 svg {
+.c4 svg {
   fill: currentColor;
 }
 
-.c1 {
+.c2 {
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
   margin-right: 5px;
 }
 
+.c0 > * {
+  margin: 5px 10px;
+}
+
 <div
-  className="c0"
+  className="c0 c1"
   height={192}
 >
   <div
@@ -556,17 +564,17 @@ exports[`Storyshots InputMultiSelect With kind props 1`] = `
     tabIndex="0"
   >
     <div
-      className="c1"
+      className="c2"
     >
       <div
         checked={false}
-        className="c2"
+        className="c3"
         kind="error"
         size={14}
       >
         <div
           checked={false}
-          className="c3"
+          className="c4"
         />
       </div>
     </div>
@@ -579,17 +587,17 @@ exports[`Storyshots InputMultiSelect With kind props 1`] = `
     tabIndex="0"
   >
     <div
-      className="c1"
+      className="c2"
     >
       <div
         checked={false}
-        className="c2"
+        className="c3"
         kind="error"
         size={14}
       >
         <div
           checked={false}
-          className="c3"
+          className="c4"
         />
       </div>
     </div>
@@ -602,17 +610,17 @@ exports[`Storyshots InputMultiSelect With kind props 1`] = `
     tabIndex="0"
   >
     <div
-      className="c1"
+      className="c2"
     >
       <div
         checked={false}
-        className="c2"
+        className="c3"
         kind="error"
         size={14}
       >
         <div
           checked={false}
-          className="c3"
+          className="c4"
         />
       </div>
     </div>
@@ -625,17 +633,17 @@ exports[`Storyshots InputMultiSelect With kind props 1`] = `
     tabIndex="0"
   >
     <div
-      className="c1"
+      className="c2"
     >
       <div
         checked={false}
-        className="c2"
+        className="c3"
         kind="error"
         size={14}
       >
         <div
           checked={false}
-          className="c3"
+          className="c4"
         />
       </div>
     </div>
@@ -648,17 +656,17 @@ exports[`Storyshots InputMultiSelect With kind props 1`] = `
     tabIndex="0"
   >
     <div
-      className="c1"
+      className="c2"
     >
       <div
         checked={false}
-        className="c2"
+        className="c3"
         kind="error"
         size={14}
       >
         <div
           checked={false}
-          className="c3"
+          className="c4"
         />
       </div>
     </div>
@@ -671,17 +679,17 @@ exports[`Storyshots InputMultiSelect With kind props 1`] = `
     tabIndex="0"
   >
     <div
-      className="c1"
+      className="c2"
     >
       <div
         checked={false}
-        className="c2"
+        className="c3"
         kind="error"
         size={14}
       >
         <div
           checked={false}
-          className="c3"
+          className="c4"
         />
       </div>
     </div>
@@ -694,17 +702,17 @@ exports[`Storyshots InputMultiSelect With kind props 1`] = `
     tabIndex="0"
   >
     <div
-      className="c1"
+      className="c2"
     >
       <div
         checked={false}
-        className="c2"
+        className="c3"
         kind="error"
         size={14}
       >
         <div
           checked={false}
-          className="c3"
+          className="c4"
         />
       </div>
     </div>
@@ -717,17 +725,17 @@ exports[`Storyshots InputMultiSelect With kind props 1`] = `
     tabIndex="0"
   >
     <div
-      className="c1"
+      className="c2"
     >
       <div
         checked={false}
-        className="c2"
+        className="c3"
         kind="error"
         size={14}
       >
         <div
           checked={false}
-          className="c3"
+          className="c4"
         />
       </div>
     </div>
@@ -740,17 +748,17 @@ exports[`Storyshots InputMultiSelect With kind props 1`] = `
     tabIndex="0"
   >
     <div
-      className="c1"
+      className="c2"
     >
       <div
         checked={false}
-        className="c2"
+        className="c3"
         kind="error"
         size={14}
       >
         <div
           checked={false}
-          className="c3"
+          className="c4"
         />
       </div>
     </div>
@@ -763,17 +771,17 @@ exports[`Storyshots InputMultiSelect With kind props 1`] = `
     tabIndex="0"
   >
     <div
-      className="c1"
+      className="c2"
     >
       <div
         checked={false}
-        className="c2"
+        className="c3"
         kind="error"
         size={14}
       >
         <div
           checked={false}
-          className="c3"
+          className="c4"
         />
       </div>
     </div>
@@ -786,17 +794,17 @@ exports[`Storyshots InputMultiSelect With kind props 1`] = `
     tabIndex="0"
   >
     <div
-      className="c1"
+      className="c2"
     >
       <div
         checked={false}
-        className="c2"
+        className="c3"
         kind="error"
         size={14}
       >
         <div
           checked={false}
-          className="c3"
+          className="c4"
         />
       </div>
     </div>
@@ -809,17 +817,17 @@ exports[`Storyshots InputMultiSelect With kind props 1`] = `
     tabIndex="0"
   >
     <div
-      className="c1"
+      className="c2"
     >
       <div
         checked={false}
-        className="c2"
+        className="c3"
         kind="error"
         size={14}
       >
         <div
           checked={false}
-          className="c3"
+          className="c4"
         />
       </div>
     </div>
@@ -832,17 +840,17 @@ exports[`Storyshots InputMultiSelect With kind props 1`] = `
     tabIndex="0"
   >
     <div
-      className="c1"
+      className="c2"
     >
       <div
         checked={false}
-        className="c2"
+        className="c3"
         kind="error"
         size={14}
       >
         <div
           checked={false}
-          className="c3"
+          className="c4"
         />
       </div>
     </div>
@@ -852,7 +860,7 @@ exports[`Storyshots InputMultiSelect With kind props 1`] = `
 `;
 
 exports[`Storyshots InputMultiSelect With state 1`] = `
-.c2 {
+.c3 {
   line-height: 1em;
   font-size: 12px;
   border-radius: 2px;
@@ -871,7 +879,7 @@ exports[`Storyshots InputMultiSelect With state 1`] = `
   border: 1px solid #D1D2D3;
 }
 
-.c0 {
+.c1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -889,7 +897,7 @@ exports[`Storyshots InputMultiSelect With state 1`] = `
   overflow: auto;
 }
 
-.c0 > * {
+.c1 > * {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -904,7 +912,7 @@ exports[`Storyshots InputMultiSelect With state 1`] = `
   align-items: center;
 }
 
-.c3 {
+.c4 {
   height: 100%;
   width: 100%;
   display: -webkit-box;
@@ -930,19 +938,23 @@ exports[`Storyshots InputMultiSelect With state 1`] = `
   transition: transform 0.5s cubic-bezier(0.23,1,0.32,1);
 }
 
-.c3 svg {
+.c4 svg {
   fill: currentColor;
 }
 
-.c1 {
+.c2 {
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
   margin-right: 5px;
 }
 
+.c0 > * {
+  margin: 5px 10px;
+}
+
 <div
-  className="c0"
+  className="c0 c1"
   height={192}
 >
   <div
@@ -952,17 +964,17 @@ exports[`Storyshots InputMultiSelect With state 1`] = `
     tabIndex="0"
   >
     <div
-      className="c1"
+      className="c2"
     >
       <div
         checked={false}
-        className="c2"
+        className="c3"
         kind="primary"
         size={14}
       >
         <div
           checked={false}
-          className="c3"
+          className="c4"
         />
       </div>
     </div>
@@ -975,17 +987,17 @@ exports[`Storyshots InputMultiSelect With state 1`] = `
     tabIndex="0"
   >
     <div
-      className="c1"
+      className="c2"
     >
       <div
         checked={false}
-        className="c2"
+        className="c3"
         kind="primary"
         size={14}
       >
         <div
           checked={false}
-          className="c3"
+          className="c4"
         />
       </div>
     </div>
@@ -998,17 +1010,17 @@ exports[`Storyshots InputMultiSelect With state 1`] = `
     tabIndex="0"
   >
     <div
-      className="c1"
+      className="c2"
     >
       <div
         checked={false}
-        className="c2"
+        className="c3"
         kind="primary"
         size={14}
       >
         <div
           checked={false}
-          className="c3"
+          className="c4"
         />
       </div>
     </div>
@@ -1021,17 +1033,17 @@ exports[`Storyshots InputMultiSelect With state 1`] = `
     tabIndex="0"
   >
     <div
-      className="c1"
+      className="c2"
     >
       <div
         checked={false}
-        className="c2"
+        className="c3"
         kind="primary"
         size={14}
       >
         <div
           checked={false}
-          className="c3"
+          className="c4"
         />
       </div>
     </div>
@@ -1044,17 +1056,17 @@ exports[`Storyshots InputMultiSelect With state 1`] = `
     tabIndex="0"
   >
     <div
-      className="c1"
+      className="c2"
     >
       <div
         checked={false}
-        className="c2"
+        className="c3"
         kind="primary"
         size={14}
       >
         <div
           checked={false}
-          className="c3"
+          className="c4"
         />
       </div>
     </div>
@@ -1067,17 +1079,17 @@ exports[`Storyshots InputMultiSelect With state 1`] = `
     tabIndex="0"
   >
     <div
-      className="c1"
+      className="c2"
     >
       <div
         checked={false}
-        className="c2"
+        className="c3"
         kind="primary"
         size={14}
       >
         <div
           checked={false}
-          className="c3"
+          className="c4"
         />
       </div>
     </div>
@@ -1090,17 +1102,17 @@ exports[`Storyshots InputMultiSelect With state 1`] = `
     tabIndex="0"
   >
     <div
-      className="c1"
+      className="c2"
     >
       <div
         checked={false}
-        className="c2"
+        className="c3"
         kind="primary"
         size={14}
       >
         <div
           checked={false}
-          className="c3"
+          className="c4"
         />
       </div>
     </div>
@@ -1113,17 +1125,17 @@ exports[`Storyshots InputMultiSelect With state 1`] = `
     tabIndex="0"
   >
     <div
-      className="c1"
+      className="c2"
     >
       <div
         checked={false}
-        className="c2"
+        className="c3"
         kind="primary"
         size={14}
       >
         <div
           checked={false}
-          className="c3"
+          className="c4"
         />
       </div>
     </div>
@@ -1136,17 +1148,17 @@ exports[`Storyshots InputMultiSelect With state 1`] = `
     tabIndex="0"
   >
     <div
-      className="c1"
+      className="c2"
     >
       <div
         checked={false}
-        className="c2"
+        className="c3"
         kind="primary"
         size={14}
       >
         <div
           checked={false}
-          className="c3"
+          className="c4"
         />
       </div>
     </div>
@@ -1159,17 +1171,17 @@ exports[`Storyshots InputMultiSelect With state 1`] = `
     tabIndex="0"
   >
     <div
-      className="c1"
+      className="c2"
     >
       <div
         checked={false}
-        className="c2"
+        className="c3"
         kind="primary"
         size={14}
       >
         <div
           checked={false}
-          className="c3"
+          className="c4"
         />
       </div>
     </div>
@@ -1182,17 +1194,17 @@ exports[`Storyshots InputMultiSelect With state 1`] = `
     tabIndex="0"
   >
     <div
-      className="c1"
+      className="c2"
     >
       <div
         checked={false}
-        className="c2"
+        className="c3"
         kind="primary"
         size={14}
       >
         <div
           checked={false}
-          className="c3"
+          className="c4"
         />
       </div>
     </div>
@@ -1205,17 +1217,17 @@ exports[`Storyshots InputMultiSelect With state 1`] = `
     tabIndex="0"
   >
     <div
-      className="c1"
+      className="c2"
     >
       <div
         checked={false}
-        className="c2"
+        className="c3"
         kind="primary"
         size={14}
       >
         <div
           checked={false}
-          className="c3"
+          className="c4"
         />
       </div>
     </div>
@@ -1228,17 +1240,17 @@ exports[`Storyshots InputMultiSelect With state 1`] = `
     tabIndex="0"
   >
     <div
-      className="c1"
+      className="c2"
     >
       <div
         checked={false}
-        className="c2"
+        className="c3"
         kind="primary"
         size={14}
       >
         <div
           checked={false}
-          className="c3"
+          className="c4"
         />
       </div>
     </div>

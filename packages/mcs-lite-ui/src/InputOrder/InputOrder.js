@@ -49,11 +49,12 @@ class InputOrder extends React.Component<Props> {
       placeholder,
       kind,
       itemRenderer,
+      ...otherProps
     } = this.props;
     const { onClick } = this;
 
     return (
-      <Container height={height}>
+      <Container height={height} {...R.omit(['onChange'])(otherProps)}>
         {/* Placeholder */}
         {items.length === 0 &&
           placeholder && (
