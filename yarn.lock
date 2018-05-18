@@ -7848,9 +7848,9 @@ levn@^0.3.0, levn@~0.3.0:
     prelude-ls "~1.1.2"
     type-check "~0.3.2"
 
-license-checker@19.0.0:
-  version "19.0.0"
-  resolved "https://registry.yarnpkg.com/license-checker/-/license-checker-19.0.0.tgz#fbf52a0878924cffea8bf4608aed61482ebe2d35"
+license-checker@20.0.0:
+  version "20.0.0"
+  resolved "https://registry.yarnpkg.com/license-checker/-/license-checker-20.0.0.tgz#29b338ba7f4e841b850cc59ddd393dbc8927f375"
   dependencies:
     chalk "^2.4.1"
     debug "^3.1.0"
