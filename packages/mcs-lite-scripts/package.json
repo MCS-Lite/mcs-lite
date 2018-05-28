@@ -23,14 +23,14 @@
     "test": "echo 'TODO'"
   },
   "dependencies": {
-    "babel-core": "^6.26.0",
+    "babel-core": "6.26.0",
     "babel-preset-mcs-lite": "^0.3.36",
-    "cheerio": "^1.0.0-rc.2",
-    "glob": "^7.1.2",
-    "lodash.camelcase": "^4.3.0",
-    "lodash.upperfirst": "^4.3.1",
-    "ramda": "^0.25.0",
-    "rxjs": "^5.5.10"
+    "cheerio": "1.0.0-rc.2",
+    "glob": "7.1.2",
+    "lodash.camelcase": "4.3.0",
+    "lodash.upperfirst": "4.3.1",
+    "ramda": "0.25.0",
+    "rxjs": "5.5.10"
   },
   "devDependencies": {
     "babel-cli": "6.26.0"
