@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots InputMultiSelect API 1`] = `
-.c3 {
+.c4 {
   line-height: 1em;
   font-size: 12px;
   border-radius: 2px;
@@ -20,7 +20,7 @@ exports[`Storyshots InputMultiSelect API 1`] = `
   border: 1px solid rgb(0,130,179);
 }
 
-.c5 {
+.c6 {
   line-height: 1em;
   font-size: 12px;
   border-radius: 2px;
@@ -66,13 +66,13 @@ exports[`Storyshots InputMultiSelect API 1`] = `
   min-width: 45%;
   outline: none;
   cursor: pointer;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
 }
 
-.c4 {
+.c5 {
   height: 100%;
   width: 100%;
   display: -webkit-box;
@@ -98,11 +98,11 @@ exports[`Storyshots InputMultiSelect API 1`] = `
   transition: transform 0.5s cubic-bezier(0.23,1,0.32,1);
 }
 
-.c4 svg {
+.c5 svg {
   fill: currentColor;
 }
 
-.c6 {
+.c7 {
   height: 100%;
   width: 100%;
   display: -webkit-box;
@@ -128,11 +128,22 @@ exports[`Storyshots InputMultiSelect API 1`] = `
   transition: transform 0.5s cubic-bezier(0.23,1,0.32,1);
 }
 
-.c6 svg {
+.c7 svg {
   fill: currentColor;
 }
 
 .c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c3 {
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -157,23 +168,27 @@ exports[`Storyshots InputMultiSelect API 1`] = `
       className="c2"
     >
       <div
-        checked={true}
         className="c3"
-        kind="primary"
-        size={14}
       >
         <div
           checked={true}
           className="c4"
+          kind="primary"
+          size={14}
         >
-          <IconCheck.macro
-            height={8}
-            width={8}
-          />
+          <div
+            checked={true}
+            className="c5"
+          >
+            <IconCheck.macro
+              height={8}
+              width={8}
+            />
+          </div>
         </div>
       </div>
+      item name 1
     </div>
-    item name 1
   </div>
   <div
     onClick={[Function]}
@@ -185,23 +200,54 @@ exports[`Storyshots InputMultiSelect API 1`] = `
       className="c2"
     >
       <div
-        checked={true}
         className="c3"
-        kind="primary"
-        size={14}
       >
         <div
           checked={true}
           className="c4"
+          kind="primary"
+          size={14}
         >
-          <IconCheck.macro
-            height={8}
-            width={8}
+          <div
+            checked={true}
+            className="c5"
+          >
+            <IconCheck.macro
+              height={8}
+              width={8}
+            />
+          </div>
+        </div>
+      </div>
+      item name item name item name 2
+    </div>
+  </div>
+  <div
+    onClick={[Function]}
+    onKeyPress={[Function]}
+    role="button"
+    tabIndex="0"
+  >
+    <div
+      className="c2"
+    >
+      <div
+        className="c3"
+      >
+        <div
+          checked={false}
+          className="c6"
+          kind="primary"
+          size={14}
+        >
+          <div
+            checked={false}
+            className="c7"
           />
         </div>
       </div>
+      item name 3
     </div>
-    item name item name item name 2
   </div>
   <div
     onClick={[Function]}
@@ -213,18 +259,22 @@ exports[`Storyshots InputMultiSelect API 1`] = `
       className="c2"
     >
       <div
-        checked={false}
-        className="c5"
-        kind="primary"
-        size={14}
+        className="c3"
       >
         <div
           checked={false}
           className="c6"
-        />
+          kind="primary"
+          size={14}
+        >
+          <div
+            checked={false}
+            className="c7"
+          />
+        </div>
       </div>
+      item name 4
     </div>
-    item name 3
   </div>
   <div
     onClick={[Function]}
@@ -236,18 +286,22 @@ exports[`Storyshots InputMultiSelect API 1`] = `
       className="c2"
     >
       <div
-        checked={false}
-        className="c5"
-        kind="primary"
-        size={14}
+        className="c3"
       >
         <div
           checked={false}
           className="c6"
-        />
+          kind="primary"
+          size={14}
+        >
+          <div
+            checked={false}
+            className="c7"
+          />
+        </div>
       </div>
+      5
     </div>
-    item name 4
   </div>
   <div
     onClick={[Function]}
@@ -259,18 +313,22 @@ exports[`Storyshots InputMultiSelect API 1`] = `
       className="c2"
     >
       <div
-        checked={false}
-        className="c5"
-        kind="primary"
-        size={14}
+        className="c3"
       >
         <div
           checked={false}
           className="c6"
-        />
+          kind="primary"
+          size={14}
+        >
+          <div
+            checked={false}
+            className="c7"
+          />
+        </div>
       </div>
+      item name 6
     </div>
-    5
   </div>
   <div
     onClick={[Function]}
@@ -282,18 +340,22 @@ exports[`Storyshots InputMultiSelect API 1`] = `
       className="c2"
     >
       <div
-        checked={false}
-        className="c5"
-        kind="primary"
-        size={14}
+        className="c3"
       >
         <div
           checked={false}
           className="c6"
-        />
+          kind="primary"
+          size={14}
+        >
+          <div
+            checked={false}
+            className="c7"
+          />
+        </div>
       </div>
+      item name item name 7
     </div>
-    item name 6
   </div>
   <div
     onClick={[Function]}
@@ -305,18 +367,22 @@ exports[`Storyshots InputMultiSelect API 1`] = `
       className="c2"
     >
       <div
-        checked={false}
-        className="c5"
-        kind="primary"
-        size={14}
+        className="c3"
       >
         <div
           checked={false}
           className="c6"
-        />
+          kind="primary"
+          size={14}
+        >
+          <div
+            checked={false}
+            className="c7"
+          />
+        </div>
       </div>
+      item name 7
     </div>
-    item name item name 7
   </div>
   <div
     onClick={[Function]}
@@ -328,18 +394,22 @@ exports[`Storyshots InputMultiSelect API 1`] = `
       className="c2"
     >
       <div
-        checked={false}
-        className="c5"
-        kind="primary"
-        size={14}
+        className="c3"
       >
         <div
           checked={false}
           className="c6"
-        />
+          kind="primary"
+          size={14}
+        >
+          <div
+            checked={false}
+            className="c7"
+          />
+        </div>
       </div>
+      item name 7
     </div>
-    item name 7
   </div>
   <div
     onClick={[Function]}
@@ -351,18 +421,22 @@ exports[`Storyshots InputMultiSelect API 1`] = `
       className="c2"
     >
       <div
-        checked={false}
-        className="c5"
-        kind="primary"
-        size={14}
+        className="c3"
       >
         <div
           checked={false}
           className="c6"
-        />
+          kind="primary"
+          size={14}
+        >
+          <div
+            checked={false}
+            className="c7"
+          />
+        </div>
       </div>
+      item name item nameitem name 7
     </div>
-    item name 7
   </div>
   <div
     onClick={[Function]}
@@ -374,18 +448,22 @@ exports[`Storyshots InputMultiSelect API 1`] = `
       className="c2"
     >
       <div
-        checked={false}
-        className="c5"
-        kind="primary"
-        size={14}
+        className="c3"
       >
         <div
           checked={false}
           className="c6"
-        />
+          kind="primary"
+          size={14}
+        >
+          <div
+            checked={false}
+            className="c7"
+          />
+        </div>
       </div>
+      item name 7
     </div>
-    item name item nameitem name 7
   </div>
   <div
     onClick={[Function]}
@@ -397,18 +475,22 @@ exports[`Storyshots InputMultiSelect API 1`] = `
       className="c2"
     >
       <div
-        checked={false}
-        className="c5"
-        kind="primary"
-        size={14}
+        className="c3"
       >
         <div
           checked={false}
           className="c6"
-        />
+          kind="primary"
+          size={14}
+        >
+          <div
+            checked={false}
+            className="c7"
+          />
+        </div>
       </div>
+      item name item nameitem name 7
     </div>
-    item name 7
   </div>
   <div
     onClick={[Function]}
@@ -420,47 +502,28 @@ exports[`Storyshots InputMultiSelect API 1`] = `
       className="c2"
     >
       <div
-        checked={false}
-        className="c5"
-        kind="primary"
-        size={14}
+        className="c3"
       >
         <div
           checked={false}
           className="c6"
-        />
+          kind="primary"
+          size={14}
+        >
+          <div
+            checked={false}
+            className="c7"
+          />
+        </div>
       </div>
+      item name item name7
     </div>
-    item name item nameitem name 7
-  </div>
-  <div
-    onClick={[Function]}
-    onKeyPress={[Function]}
-    role="button"
-    tabIndex="0"
-  >
-    <div
-      className="c2"
-    >
-      <div
-        checked={false}
-        className="c5"
-        kind="primary"
-        size={14}
-      >
-        <div
-          checked={false}
-          className="c6"
-        />
-      </div>
-    </div>
-    item name item name7
   </div>
 </div>
 `;
 
 exports[`Storyshots InputMultiSelect With kind props 1`] = `
-.c3 {
+.c4 {
   line-height: 1em;
   font-size: 12px;
   border-radius: 2px;
@@ -506,13 +569,13 @@ exports[`Storyshots InputMultiSelect With kind props 1`] = `
   min-width: 45%;
   outline: none;
   cursor: pointer;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
 }
 
-.c4 {
+.c5 {
   height: 100%;
   width: 100%;
   display: -webkit-box;
@@ -538,11 +601,22 @@ exports[`Storyshots InputMultiSelect With kind props 1`] = `
   transition: transform 0.5s cubic-bezier(0.23,1,0.32,1);
 }
 
-.c4 svg {
+.c5 svg {
   fill: currentColor;
 }
 
 .c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c3 {
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -567,18 +641,22 @@ exports[`Storyshots InputMultiSelect With kind props 1`] = `
       className="c2"
     >
       <div
-        checked={false}
         className="c3"
-        kind="error"
-        size={14}
       >
         <div
           checked={false}
           className="c4"
-        />
+          kind="error"
+          size={14}
+        >
+          <div
+            checked={false}
+            className="c5"
+          />
+        </div>
       </div>
+      item name 1
     </div>
-    item name 1
   </div>
   <div
     onClick={[Function]}
@@ -590,18 +668,22 @@ exports[`Storyshots InputMultiSelect With kind props 1`] = `
       className="c2"
     >
       <div
-        checked={false}
         className="c3"
-        kind="error"
-        size={14}
       >
         <div
           checked={false}
           className="c4"
-        />
+          kind="error"
+          size={14}
+        >
+          <div
+            checked={false}
+            className="c5"
+          />
+        </div>
       </div>
+      item name item name item name 2
     </div>
-    item name item name item name 2
   </div>
   <div
     onClick={[Function]}
@@ -613,18 +695,22 @@ exports[`Storyshots InputMultiSelect With kind props 1`] = `
       className="c2"
     >
       <div
-        checked={false}
         className="c3"
-        kind="error"
-        size={14}
       >
         <div
           checked={false}
           className="c4"
-        />
+          kind="error"
+          size={14}
+        >
+          <div
+            checked={false}
+            className="c5"
+          />
+        </div>
       </div>
+      item name 3
     </div>
-    item name 3
   </div>
   <div
     onClick={[Function]}
@@ -636,18 +722,22 @@ exports[`Storyshots InputMultiSelect With kind props 1`] = `
       className="c2"
     >
       <div
-        checked={false}
         className="c3"
-        kind="error"
-        size={14}
       >
         <div
           checked={false}
           className="c4"
-        />
+          kind="error"
+          size={14}
+        >
+          <div
+            checked={false}
+            className="c5"
+          />
+        </div>
       </div>
+      item name 4
     </div>
-    item name 4
   </div>
   <div
     onClick={[Function]}
@@ -659,18 +749,22 @@ exports[`Storyshots InputMultiSelect With kind props 1`] = `
       className="c2"
     >
       <div
-        checked={false}
         className="c3"
-        kind="error"
-        size={14}
       >
         <div
           checked={false}
           className="c4"
-        />
+          kind="error"
+          size={14}
+        >
+          <div
+            checked={false}
+            className="c5"
+          />
+        </div>
       </div>
+      5
     </div>
-    5
   </div>
   <div
     onClick={[Function]}
@@ -682,18 +776,22 @@ exports[`Storyshots InputMultiSelect With kind props 1`] = `
       className="c2"
     >
       <div
-        checked={false}
         className="c3"
-        kind="error"
-        size={14}
       >
         <div
           checked={false}
           className="c4"
-        />
+          kind="error"
+          size={14}
+        >
+          <div
+            checked={false}
+            className="c5"
+          />
+        </div>
       </div>
+      item name 6
     </div>
-    item name 6
   </div>
   <div
     onClick={[Function]}
@@ -705,18 +803,22 @@ exports[`Storyshots InputMultiSelect With kind props 1`] = `
       className="c2"
     >
       <div
-        checked={false}
         className="c3"
-        kind="error"
-        size={14}
       >
         <div
           checked={false}
           className="c4"
-        />
+          kind="error"
+          size={14}
+        >
+          <div
+            checked={false}
+            className="c5"
+          />
+        </div>
       </div>
+      item name item name 7
     </div>
-    item name item name 7
   </div>
   <div
     onClick={[Function]}
@@ -728,18 +830,22 @@ exports[`Storyshots InputMultiSelect With kind props 1`] = `
       className="c2"
     >
       <div
-        checked={false}
         className="c3"
-        kind="error"
-        size={14}
       >
         <div
           checked={false}
           className="c4"
-        />
+          kind="error"
+          size={14}
+        >
+          <div
+            checked={false}
+            className="c5"
+          />
+        </div>
       </div>
+      item name 7
     </div>
-    item name 7
   </div>
   <div
     onClick={[Function]}
@@ -751,18 +857,22 @@ exports[`Storyshots InputMultiSelect With kind props 1`] = `
       className="c2"
     >
       <div
-        checked={false}
         className="c3"
-        kind="error"
-        size={14}
       >
         <div
           checked={false}
           className="c4"
-        />
+          kind="error"
+          size={14}
+        >
+          <div
+            checked={false}
+            className="c5"
+          />
+        </div>
       </div>
+      item name 7
     </div>
-    item name 7
   </div>
   <div
     onClick={[Function]}
@@ -774,18 +884,22 @@ exports[`Storyshots InputMultiSelect With kind props 1`] = `
       className="c2"
     >
       <div
-        checked={false}
         className="c3"
-        kind="error"
-        size={14}
       >
         <div
           checked={false}
           className="c4"
-        />
+          kind="error"
+          size={14}
+        >
+          <div
+            checked={false}
+            className="c5"
+          />
+        </div>
       </div>
+      item name item nameitem name 7
     </div>
-    item name item nameitem name 7
   </div>
   <div
     onClick={[Function]}
@@ -797,18 +911,22 @@ exports[`Storyshots InputMultiSelect With kind props 1`] = `
       className="c2"
     >
       <div
-        checked={false}
         className="c3"
-        kind="error"
-        size={14}
       >
         <div
           checked={false}
           className="c4"
-        />
+          kind="error"
+          size={14}
+        >
+          <div
+            checked={false}
+            className="c5"
+          />
+        </div>
       </div>
+      item name 7
     </div>
-    item name 7
   </div>
   <div
     onClick={[Function]}
@@ -820,18 +938,22 @@ exports[`Storyshots InputMultiSelect With kind props 1`] = `
       className="c2"
     >
       <div
-        checked={false}
         className="c3"
-        kind="error"
-        size={14}
       >
         <div
           checked={false}
           className="c4"
-        />
+          kind="error"
+          size={14}
+        >
+          <div
+            checked={false}
+            className="c5"
+          />
+        </div>
       </div>
+      item name item nameitem name 7
     </div>
-    item name item nameitem name 7
   </div>
   <div
     onClick={[Function]}
@@ -843,24 +965,28 @@ exports[`Storyshots InputMultiSelect With kind props 1`] = `
       className="c2"
     >
       <div
-        checked={false}
         className="c3"
-        kind="error"
-        size={14}
       >
         <div
           checked={false}
           className="c4"
-        />
+          kind="error"
+          size={14}
+        >
+          <div
+            checked={false}
+            className="c5"
+          />
+        </div>
       </div>
+      item name item name7
     </div>
-    item name item name7
   </div>
 </div>
 `;
 
 exports[`Storyshots InputMultiSelect With state 1`] = `
-.c3 {
+.c4 {
   line-height: 1em;
   font-size: 12px;
   border-radius: 2px;
@@ -906,13 +1032,13 @@ exports[`Storyshots InputMultiSelect With state 1`] = `
   min-width: 45%;
   outline: none;
   cursor: pointer;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
 }
 
-.c4 {
+.c5 {
   height: 100%;
   width: 100%;
   display: -webkit-box;
@@ -938,11 +1064,22 @@ exports[`Storyshots InputMultiSelect With state 1`] = `
   transition: transform 0.5s cubic-bezier(0.23,1,0.32,1);
 }
 
-.c4 svg {
+.c5 svg {
   fill: currentColor;
 }
 
 .c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c3 {
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -967,18 +1104,22 @@ exports[`Storyshots InputMultiSelect With state 1`] = `
       className="c2"
     >
       <div
-        checked={false}
         className="c3"
-        kind="primary"
-        size={14}
       >
         <div
           checked={false}
           className="c4"
-        />
+          kind="primary"
+          size={14}
+        >
+          <div
+            checked={false}
+            className="c5"
+          />
+        </div>
       </div>
+      item name 1
     </div>
-    item name 1
   </div>
   <div
     onClick={[Function]}
@@ -990,18 +1131,22 @@ exports[`Storyshots InputMultiSelect With state 1`] = `
       className="c2"
     >
       <div
-        checked={false}
         className="c3"
-        kind="primary"
-        size={14}
       >
         <div
           checked={false}
           className="c4"
-        />
+          kind="primary"
+          size={14}
+        >
+          <div
+            checked={false}
+            className="c5"
+          />
+        </div>
       </div>
+      item name item name item name 2
     </div>
-    item name item name item name 2
   </div>
   <div
     onClick={[Function]}
@@ -1013,18 +1158,22 @@ exports[`Storyshots InputMultiSelect With state 1`] = `
       className="c2"
     >
       <div
-        checked={false}
         className="c3"
-        kind="primary"
-        size={14}
       >
         <div
           checked={false}
           className="c4"
-        />
+          kind="primary"
+          size={14}
+        >
+          <div
+            checked={false}
+            className="c5"
+          />
+        </div>
       </div>
+      item name 3
     </div>
-    item name 3
   </div>
   <div
     onClick={[Function]}
@@ -1036,18 +1185,22 @@ exports[`Storyshots InputMultiSelect With state 1`] = `
       className="c2"
     >
       <div
-        checked={false}
         className="c3"
-        kind="primary"
-        size={14}
       >
         <div
           checked={false}
           className="c4"
-        />
+          kind="primary"
+          size={14}
+        >
+          <div
+            checked={false}
+            className="c5"
+          />
+        </div>
       </div>
+      item name 4
     </div>
-    item name 4
   </div>
   <div
     onClick={[Function]}
@@ -1059,18 +1212,22 @@ exports[`Storyshots InputMultiSelect With state 1`] = `
       className="c2"
     >
       <div
-        checked={false}
         className="c3"
-        kind="primary"
-        size={14}
       >
         <div
           checked={false}
           className="c4"
-        />
+          kind="primary"
+          size={14}
+        >
+          <div
+            checked={false}
+            className="c5"
+          />
+        </div>
       </div>
+      5
     </div>
-    5
   </div>
   <div
     onClick={[Function]}
@@ -1082,18 +1239,22 @@ exports[`Storyshots InputMultiSelect With state 1`] = `
       className="c2"
     >
       <div
-        checked={false}
         className="c3"
-        kind="primary"
-        size={14}
       >
         <div
           checked={false}
           className="c4"
-        />
+          kind="primary"
+          size={14}
+        >
+          <div
+            checked={false}
+            className="c5"
+          />
+        </div>
       </div>
+      item name 6
     </div>
-    item name 6
   </div>
   <div
     onClick={[Function]}
@@ -1105,18 +1266,22 @@ exports[`Storyshots InputMultiSelect With state 1`] = `
       className="c2"
     >
       <div
-        checked={false}
         className="c3"
-        kind="primary"
-        size={14}
       >
         <div
           checked={false}
           className="c4"
-        />
+          kind="primary"
+          size={14}
+        >
+          <div
+            checked={false}
+            className="c5"
+          />
+        </div>
       </div>
+      item name item name 7
     </div>
-    item name item name 7
   </div>
   <div
     onClick={[Function]}
@@ -1128,18 +1293,22 @@ exports[`Storyshots InputMultiSelect With state 1`] = `
       className="c2"
     >
       <div
-        checked={false}
         className="c3"
-        kind="primary"
-        size={14}
       >
         <div
           checked={false}
           className="c4"
-        />
+          kind="primary"
+          size={14}
+        >
+          <div
+            checked={false}
+            className="c5"
+          />
+        </div>
       </div>
+      item name 7
     </div>
-    item name 7
   </div>
   <div
     onClick={[Function]}
@@ -1151,18 +1320,22 @@ exports[`Storyshots InputMultiSelect With state 1`] = `
       className="c2"
     >
       <div
-        checked={false}
         className="c3"
-        kind="primary"
-        size={14}
       >
         <div
           checked={false}
           className="c4"
-        />
+          kind="primary"
+          size={14}
+        >
+          <div
+            checked={false}
+            className="c5"
+          />
+        </div>
       </div>
+      item name 7
     </div>
-    item name 7
   </div>
   <div
     onClick={[Function]}
@@ -1174,18 +1347,22 @@ exports[`Storyshots InputMultiSelect With state 1`] = `
       className="c2"
     >
       <div
-        checked={false}
         className="c3"
-        kind="primary"
-        size={14}
       >
         <div
           checked={false}
           className="c4"
-        />
+          kind="primary"
+          size={14}
+        >
+          <div
+            checked={false}
+            className="c5"
+          />
+        </div>
       </div>
+      item name item nameitem name 7
     </div>
-    item name item nameitem name 7
   </div>
   <div
     onClick={[Function]}
@@ -1197,18 +1374,22 @@ exports[`Storyshots InputMultiSelect With state 1`] = `
       className="c2"
     >
       <div
-        checked={false}
         className="c3"
-        kind="primary"
-        size={14}
       >
         <div
           checked={false}
           className="c4"
-        />
+          kind="primary"
+          size={14}
+        >
+          <div
+            checked={false}
+            className="c5"
+          />
+        </div>
       </div>
+      item name 7
     </div>
-    item name 7
   </div>
   <div
     onClick={[Function]}
@@ -1220,18 +1401,22 @@ exports[`Storyshots InputMultiSelect With state 1`] = `
       className="c2"
     >
       <div
-        checked={false}
         className="c3"
-        kind="primary"
-        size={14}
       >
         <div
           checked={false}
           className="c4"
-        />
+          kind="primary"
+          size={14}
+        >
+          <div
+            checked={false}
+            className="c5"
+          />
+        </div>
       </div>
+      item name item nameitem name 7
     </div>
-    item name item nameitem name 7
   </div>
   <div
     onClick={[Function]}
@@ -1243,18 +1428,22 @@ exports[`Storyshots InputMultiSelect With state 1`] = `
       className="c2"
     >
       <div
-        checked={false}
         className="c3"
-        kind="primary"
-        size={14}
       >
         <div
           checked={false}
           className="c4"
-        />
+          kind="primary"
+          size={14}
+        >
+          <div
+            checked={false}
+            className="c5"
+          />
+        </div>
       </div>
+      item name item name7
     </div>
-    item name item name7
   </div>
 </div>
 `;
