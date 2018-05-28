@@ -20,8 +20,13 @@ export const Container: React.ComponentType<{
     min-width: 45%;
     outline: none;
     cursor: pointer;
-    align-items: center;
+    align-items: flex-start;
   }
+`;
+
+export const Center = styled.div`
+  display: flex;
+  align-items: center;
 `;
 
 export const CheckboxWrapper = styled.div`

@@ -5,7 +5,7 @@ import * as R from 'ramda';
 import P from '../P';
 import Orderbox from '../Orderbox';
 import Item from './Item';
-import { Container, CheckboxWrapper } from './styled-components';
+import { Container, CheckboxWrapper, Center } from './styled-components';
 import { type Value, type ItemProps } from './type.flow';
 
 export const HEIGHT = 192;
@@ -67,10 +67,12 @@ class InputOrder extends React.Component<Props> {
         {items.length > 0 &&
           items.map((item: ItemProps) => (
             <Item key={item.value} value={item.value} onClick={onClick}>
-              <CheckboxWrapper>
-                {itemRenderer(item, { value, kind })}
-              </CheckboxWrapper>
-              {item.children}
+              <Center>
+                <CheckboxWrapper>
+                  {itemRenderer(item, { value, kind })}
+                </CheckboxWrapper>
+                {item.children}
+              </Center>
             </Item>
           ))}
       </Container>
