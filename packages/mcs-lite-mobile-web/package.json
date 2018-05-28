@@ -10,9 +10,7 @@
   },
   "license": "MIT",
   "homepage": "http://localhost:3000/mobile",
-  "files": [
-    "build"
-  ],
+  "files": ["build"],
   "proxy": {
     "/api": {
       "target": "http://localhost:3000"
@@ -23,11 +21,14 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "REACT_APP_VERSION=$(node -pe 'require(\"./package.json\").version') react-scripts build",
+    "build":
+      "REACT_APP_VERSION=$(node -pe 'require(\"./package.json\").version') react-scripts build",
     "test": "CI=true react-scripts test --env=jsdom --coverage --runInBand",
     "test:watch": "react-scripts test --env=jsdom",
-    "extract:messages": "react-intl-cra 'src/**/*.js' -o '../mcs-lite-translation/src/mcs-lite-mobile-web/messages.json'",
-    "extract:pot": "react-intl-po json2pot '../mcs-lite-translation/src/mcs-lite-mobile-web/messages.json' -o '../mcs-lite-translation/src/mcs-lite-mobile-web/messages.pot'",
+    "extract:messages":
+      "react-intl-cra 'src/**/*.js' -o '../mcs-lite-translation/src/mcs-lite-mobile-web/messages.json'",
+    "extract:pot":
+      "react-intl-po json2pot '../mcs-lite-translation/src/mcs-lite-mobile-web/messages.json' -o '../mcs-lite-translation/src/mcs-lite-mobile-web/messages.pot'",
     "prepack": "npm run build"
   },
   "devDependencies": {
