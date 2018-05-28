@@ -1,5 +1,17 @@
 # MCS Lite changelogs
 
+## Released (2018-05-28)
+
+#### :bug: Bug Fix
+
+* `mcs-lite-ui`
+  * [#657](https://github.com/MCS-Lite/mcs-lite/pull/657) fix(ui): InputOrder flex style & disable InputSelect autoComplete. ([@evenchange4](https://github.com/evenchange4))
+
+#### Committers: 2
+
+* Michael Hsu ([evenchange4](https://github.com/evenchange4))
+* [renovate[bot]](https://github.com/apps/renovate)
+
 ## Released (2018-05-17)
 
 * babel-preset-mcs-lite: 0.3.34 => 0.3.35
