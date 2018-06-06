@@ -168,6 +168,64 @@ storiesOf('InputSelect', module)
     )),
   )
   .add(
+    'With children React element and getInputValue',
+    withInfo({
+      text: '',
+      inline: true,
+    })(() => (
+      <InputSelect
+        getInputValue={({ isOpen, filter, activeItem }) => {
+          let value;
+          if (isOpen) {
+            value = filter;
+          } else {
+            value = activeItem
+              ? ['High', 'Medium', 'Low'][activeItem.value - 1]
+              : '';
+          }
+          return value;
+        }}
+        value={2}
+        onChange={action('onChange')}
+        items={[
+          {
+            value: 1,
+            children: (
+              <span>
+                <svg height="10" width="20">
+                  <circle cx="5" cy="5" r="5" fill="red" />
+                </svg>
+                High
+              </span>
+            ),
+          },
+          {
+            value: 2,
+            children: (
+              <span>
+                <svg height="10" width="20">
+                  <circle cx="5" cy="5" r="5" fill="orange" />
+                </svg>
+                Medium
+              </span>
+            ),
+          },
+          {
+            value: 3,
+            children: (
+              <span>
+                <svg height="10" width="20">
+                  <circle cx="5" cy="5" r="5" fill="gold" />
+                </svg>
+                Low
+              </span>
+            ),
+          },
+        ]}
+      />
+    )),
+  )
+  .add(
     'With disableFilter props',
     withInfo({
       text: '',

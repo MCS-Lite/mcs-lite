@@ -2,5 +2,5 @@
 export type Value = number | string;
 export type ItemProps = {
   value: Value,
-  children: string,
+  children: string | React.Element,
 };

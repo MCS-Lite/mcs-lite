@@ -26,7 +26,7 @@ import {
 import { type Value, type ItemProps } from './type.flow';
 import {
   filterByChildren,
-  getInputValue,
+  getInputValue as getInputValueDefault,
   getPlaceholder,
   getMenuItemHeight,
   getMenuHeight,
@@ -41,6 +41,11 @@ type Props = {
   focus?: boolean,
   noRowsRenderer?: ({ onClose: () => void }) => React.Node,
   disableFilter?: boolean,
+  getInputValue?: ({
+    isOpen: boolean,
+    filter: string,
+    activeItem?: ItemProps,
+  }) => string,
   // Note: innerRef for the problem of outside click in dialog
   menuRef?: (ref: React.ElementRef<typeof StyledMenu>) => void,
 };
@@ -144,6 +149,7 @@ class PureInputSelect extends React.Component<
       focus,
       menuRef,
       disableFilter,
+      getInputValue = getInputValueDefault,
       ...otherProps
     } = this.props;
     const { menuWidth, isOpen, filter } = this.state;
@@ -185,6 +191,7 @@ class PureInputSelect extends React.Component<
           />
           {isOpen &&
             activeItem &&
+            !React.isValidElement(activeItem.children) &&
             !filter && <FakeInputValue defaultValue={activeItem.children} />}
           <StyledButton
             kind={kind}
@@ -239,7 +246,7 @@ InputSelect.propTypes = {
   items: PropTypes.arrayOf(
     PropTypes.shape({
       value: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
-      children: PropTypes.string,
+      children: PropTypes.string || PropTypes.node,
     }),
   ).isRequired,
   kind: PropTypes.string,
@@ -247,6 +254,7 @@ InputSelect.propTypes = {
   noRowsRenderer: PropTypes.func,
   focus: PropTypes.bool,
   disableFilter: PropTypes.bool,
+  getInputValue: PropTypes.func,
   menuRef: PropTypes.func,
 };
 
