@@ -28,13 +28,13 @@ exports[`Storyshots InputOrder API 1`] = `
   min-width: 45%;
   outline: none;
   cursor: pointer;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
 }
 
-.c2 {
+.c3 {
   line-height: 1em;
   font-size: 12px;
   border-radius: 2px;
@@ -53,7 +53,7 @@ exports[`Storyshots InputOrder API 1`] = `
   border: 1px solid rgb(0,130,179);
 }
 
-.c4 {
+.c5 {
   line-height: 1em;
   font-size: 12px;
   border-radius: 2px;
@@ -72,7 +72,7 @@ exports[`Storyshots InputOrder API 1`] = `
   border: 1px solid #D1D2D3;
 }
 
-.c3 {
+.c4 {
   height: 100%;
   width: 100%;
   display: -webkit-box;
@@ -98,11 +98,11 @@ exports[`Storyshots InputOrder API 1`] = `
   transition: transform 0.5s cubic-bezier(0.23,1,0.32,1);
 }
 
-.c3 svg {
+.c4 svg {
   fill: currentColor;
 }
 
-.c5 {
+.c6 {
   height: 100%;
   width: 100%;
   display: -webkit-box;
@@ -128,11 +128,22 @@ exports[`Storyshots InputOrder API 1`] = `
   transition: transform 0.5s cubic-bezier(0.23,1,0.32,1);
 }
 
-.c5 svg {
+.c6 svg {
   fill: currentColor;
 }
 
 .c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c2 {
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -153,20 +164,24 @@ exports[`Storyshots InputOrder API 1`] = `
       className="c1"
     >
       <div
-        checked={true}
         className="c2"
-        kind="primary"
-        size={18}
       >
         <div
           checked={true}
           className="c3"
+          kind="primary"
+          size={18}
         >
-          2
+          <div
+            checked={true}
+            className="c4"
+          >
+            2
+          </div>
         </div>
       </div>
+      item name 1
     </div>
-    item name 1
   </div>
   <div
     onClick={[Function]}
@@ -178,20 +193,24 @@ exports[`Storyshots InputOrder API 1`] = `
       className="c1"
     >
       <div
-        checked={true}
         className="c2"
-        kind="primary"
-        size={18}
       >
         <div
           checked={true}
           className="c3"
+          kind="primary"
+          size={18}
         >
-          1
+          <div
+            checked={true}
+            className="c4"
+          >
+            1
+          </div>
         </div>
       </div>
+      item name item name item name 2
     </div>
-    item name item name item name 2
   </div>
   <div
     onClick={[Function]}
@@ -203,18 +222,22 @@ exports[`Storyshots InputOrder API 1`] = `
       className="c1"
     >
       <div
-        checked={false}
-        className="c4"
-        kind="primary"
-        size={18}
+        className="c2"
       >
         <div
           checked={false}
           className="c5"
-        />
+          kind="primary"
+          size={18}
+        >
+          <div
+            checked={false}
+            className="c6"
+          />
+        </div>
       </div>
+      item name 3
     </div>
-    item name 3
   </div>
   <div
     onClick={[Function]}
@@ -226,18 +249,22 @@ exports[`Storyshots InputOrder API 1`] = `
       className="c1"
     >
       <div
-        checked={false}
-        className="c4"
-        kind="primary"
-        size={18}
+        className="c2"
       >
         <div
           checked={false}
           className="c5"
-        />
+          kind="primary"
+          size={18}
+        >
+          <div
+            checked={false}
+            className="c6"
+          />
+        </div>
       </div>
+      item name 4
     </div>
-    item name 4
   </div>
   <div
     onClick={[Function]}
@@ -249,18 +276,22 @@ exports[`Storyshots InputOrder API 1`] = `
       className="c1"
     >
       <div
-        checked={false}
-        className="c4"
-        kind="primary"
-        size={18}
+        className="c2"
       >
         <div
           checked={false}
           className="c5"
-        />
+          kind="primary"
+          size={18}
+        >
+          <div
+            checked={false}
+            className="c6"
+          />
+        </div>
       </div>
+      5
     </div>
-    5
   </div>
   <div
     onClick={[Function]}
@@ -272,18 +303,22 @@ exports[`Storyshots InputOrder API 1`] = `
       className="c1"
     >
       <div
-        checked={false}
-        className="c4"
-        kind="primary"
-        size={18}
+        className="c2"
       >
         <div
           checked={false}
           className="c5"
-        />
+          kind="primary"
+          size={18}
+        >
+          <div
+            checked={false}
+            className="c6"
+          />
+        </div>
       </div>
+      item name 6
     </div>
-    item name 6
   </div>
   <div
     onClick={[Function]}
@@ -295,18 +330,22 @@ exports[`Storyshots InputOrder API 1`] = `
       className="c1"
     >
       <div
-        checked={false}
-        className="c4"
-        kind="primary"
-        size={18}
+        className="c2"
       >
         <div
           checked={false}
           className="c5"
-        />
+          kind="primary"
+          size={18}
+        >
+          <div
+            checked={false}
+            className="c6"
+          />
+        </div>
       </div>
+      item name item name 7
     </div>
-    item name item name 7
   </div>
   <div
     onClick={[Function]}
@@ -318,18 +357,22 @@ exports[`Storyshots InputOrder API 1`] = `
       className="c1"
     >
       <div
-        checked={false}
-        className="c4"
-        kind="primary"
-        size={18}
+        className="c2"
       >
         <div
           checked={false}
           className="c5"
-        />
+          kind="primary"
+          size={18}
+        >
+          <div
+            checked={false}
+            className="c6"
+          />
+        </div>
       </div>
+      item name 7
     </div>
-    item name 7
   </div>
   <div
     onClick={[Function]}
@@ -341,18 +384,22 @@ exports[`Storyshots InputOrder API 1`] = `
       className="c1"
     >
       <div
-        checked={false}
-        className="c4"
-        kind="primary"
-        size={18}
+        className="c2"
       >
         <div
           checked={false}
           className="c5"
-        />
+          kind="primary"
+          size={18}
+        >
+          <div
+            checked={false}
+            className="c6"
+          />
+        </div>
       </div>
+      item name 7
     </div>
-    item name 7
   </div>
   <div
     onClick={[Function]}
@@ -364,18 +411,22 @@ exports[`Storyshots InputOrder API 1`] = `
       className="c1"
     >
       <div
-        checked={false}
-        className="c4"
-        kind="primary"
-        size={18}
+        className="c2"
       >
         <div
           checked={false}
           className="c5"
-        />
+          kind="primary"
+          size={18}
+        >
+          <div
+            checked={false}
+            className="c6"
+          />
+        </div>
       </div>
+      item name item nameitem name 7
     </div>
-    item name item nameitem name 7
   </div>
   <div
     onClick={[Function]}
@@ -387,18 +438,22 @@ exports[`Storyshots InputOrder API 1`] = `
       className="c1"
     >
       <div
-        checked={false}
-        className="c4"
-        kind="primary"
-        size={18}
+        className="c2"
       >
         <div
           checked={false}
           className="c5"
-        />
+          kind="primary"
+          size={18}
+        >
+          <div
+            checked={false}
+            className="c6"
+          />
+        </div>
       </div>
+      item name 7
     </div>
-    item name 7
   </div>
   <div
     onClick={[Function]}
@@ -410,18 +465,22 @@ exports[`Storyshots InputOrder API 1`] = `
       className="c1"
     >
       <div
-        checked={false}
-        className="c4"
-        kind="primary"
-        size={18}
+        className="c2"
       >
         <div
           checked={false}
           className="c5"
-        />
+          kind="primary"
+          size={18}
+        >
+          <div
+            checked={false}
+            className="c6"
+          />
+        </div>
       </div>
+      item name item nameitem name 7
     </div>
-    item name item nameitem name 7
   </div>
   <div
     onClick={[Function]}
@@ -433,18 +492,22 @@ exports[`Storyshots InputOrder API 1`] = `
       className="c1"
     >
       <div
-        checked={false}
-        className="c4"
-        kind="primary"
-        size={18}
+        className="c2"
       >
         <div
           checked={false}
           className="c5"
-        />
+          kind="primary"
+          size={18}
+        >
+          <div
+            checked={false}
+            className="c6"
+          />
+        </div>
       </div>
+      item name item name7
     </div>
-    item name item name7
   </div>
 </div>
 `;
@@ -477,13 +540,13 @@ exports[`Storyshots InputOrder With custom itemRenderer props 1`] = `
   min-width: 45%;
   outline: none;
   cursor: pointer;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
 }
 
-.c2 {
+.c3 {
   line-height: 1em;
   font-size: 12px;
   border-radius: 2px;
@@ -502,7 +565,7 @@ exports[`Storyshots InputOrder With custom itemRenderer props 1`] = `
   border: 1px solid rgb(0,130,179);
 }
 
-.c4 {
+.c5 {
   line-height: 1em;
   font-size: 12px;
   border-radius: 2px;
@@ -521,7 +584,7 @@ exports[`Storyshots InputOrder With custom itemRenderer props 1`] = `
   border: 1px solid #D1D2D3;
 }
 
-.c3 {
+.c4 {
   height: 100%;
   width: 100%;
   display: -webkit-box;
@@ -547,11 +610,11 @@ exports[`Storyshots InputOrder With custom itemRenderer props 1`] = `
   transition: transform 0.5s cubic-bezier(0.23,1,0.32,1);
 }
 
-.c3 svg {
+.c4 svg {
   fill: currentColor;
 }
 
-.c5 {
+.c6 {
   height: 100%;
   width: 100%;
   display: -webkit-box;
@@ -577,11 +640,22 @@ exports[`Storyshots InputOrder With custom itemRenderer props 1`] = `
   transition: transform 0.5s cubic-bezier(0.23,1,0.32,1);
 }
 
-.c5 svg {
+.c6 svg {
   fill: currentColor;
 }
 
 .c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c2 {
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -602,23 +676,54 @@ exports[`Storyshots InputOrder With custom itemRenderer props 1`] = `
       className="c1"
     >
       <div
-        checked={true}
         className="c2"
-        kind="primary"
-        size={18}
       >
         <div
           checked={true}
           className="c3"
+          kind="primary"
+          size={18}
         >
-          <IconCheck.macro
-            height={8}
-            width={8}
+          <div
+            checked={true}
+            className="c4"
+          >
+            <IconCheck.macro
+              height={8}
+              width={8}
+            />
+          </div>
+        </div>
+      </div>
+      item name 1
+    </div>
+  </div>
+  <div
+    onClick={[Function]}
+    onKeyPress={[Function]}
+    role="button"
+    tabIndex="0"
+  >
+    <div
+      className="c1"
+    >
+      <div
+        className="c2"
+      >
+        <div
+          checked={false}
+          className="c5"
+          kind="primary"
+          size={18}
+        >
+          <div
+            checked={false}
+            className="c6"
           />
         </div>
       </div>
+      item name item name item name 2
     </div>
-    item name 1
   </div>
   <div
     onClick={[Function]}
@@ -630,41 +735,22 @@ exports[`Storyshots InputOrder With custom itemRenderer props 1`] = `
       className="c1"
     >
       <div
-        checked={false}
-        className="c4"
-        kind="primary"
-        size={18}
+        className="c2"
       >
         <div
           checked={false}
           className="c5"
-        />
+          kind="primary"
+          size={18}
+        >
+          <div
+            checked={false}
+            className="c6"
+          />
+        </div>
       </div>
+      item name item name item name 3
     </div>
-    item name item name item name 2
-  </div>
-  <div
-    onClick={[Function]}
-    onKeyPress={[Function]}
-    role="button"
-    tabIndex="0"
-  >
-    <div
-      className="c1"
-    >
-      <div
-        checked={false}
-        className="c4"
-        kind="primary"
-        size={18}
-      >
-        <div
-          checked={false}
-          className="c5"
-        />
-      </div>
-    </div>
-    item name item name item name 3
   </div>
 </div>
 `;
@@ -703,10 +789,10 @@ exports[`Storyshots InputOrder With height props 1`] = `
   min-width: 45%;
   outline: none;
   cursor: pointer;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
 }
 
 .dUUMVe > *:nth-child(2) .c1 {
@@ -764,13 +850,13 @@ exports[`Storyshots InputOrder With kind props 1`] = `
   min-width: 45%;
   outline: none;
   cursor: pointer;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
 }
 
-.c2 {
+.c3 {
   line-height: 1em;
   font-size: 12px;
   border-radius: 2px;
@@ -789,7 +875,7 @@ exports[`Storyshots InputOrder With kind props 1`] = `
   border: 1px solid #D1D2D3;
 }
 
-.c3 {
+.c4 {
   height: 100%;
   width: 100%;
   display: -webkit-box;
@@ -815,11 +901,22 @@ exports[`Storyshots InputOrder With kind props 1`] = `
   transition: transform 0.5s cubic-bezier(0.23,1,0.32,1);
 }
 
-.c3 svg {
+.c4 svg {
   fill: currentColor;
 }
 
 .c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c2 {
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -840,18 +937,22 @@ exports[`Storyshots InputOrder With kind props 1`] = `
       className="c1"
     >
       <div
-        checked={false}
         className="c2"
-        kind="error"
-        size={18}
       >
         <div
           checked={false}
           className="c3"
-        />
+          kind="error"
+          size={18}
+        >
+          <div
+            checked={false}
+            className="c4"
+          />
+        </div>
       </div>
+      item name 1
     </div>
-    item name 1
   </div>
   <div
     onClick={[Function]}
@@ -863,18 +964,22 @@ exports[`Storyshots InputOrder With kind props 1`] = `
       className="c1"
     >
       <div
-        checked={false}
         className="c2"
-        kind="error"
-        size={18}
       >
         <div
           checked={false}
           className="c3"
-        />
+          kind="error"
+          size={18}
+        >
+          <div
+            checked={false}
+            className="c4"
+          />
+        </div>
       </div>
+      item name item name item name 2
     </div>
-    item name item name item name 2
   </div>
   <div
     onClick={[Function]}
@@ -886,18 +991,22 @@ exports[`Storyshots InputOrder With kind props 1`] = `
       className="c1"
     >
       <div
-        checked={false}
         className="c2"
-        kind="error"
-        size={18}
       >
         <div
           checked={false}
           className="c3"
-        />
+          kind="error"
+          size={18}
+        >
+          <div
+            checked={false}
+            className="c4"
+          />
+        </div>
       </div>
+      item name 3
     </div>
-    item name 3
   </div>
   <div
     onClick={[Function]}
@@ -909,18 +1018,22 @@ exports[`Storyshots InputOrder With kind props 1`] = `
       className="c1"
     >
       <div
-        checked={false}
         className="c2"
-        kind="error"
-        size={18}
       >
         <div
           checked={false}
           className="c3"
-        />
+          kind="error"
+          size={18}
+        >
+          <div
+            checked={false}
+            className="c4"
+          />
+        </div>
       </div>
+      item name 4
     </div>
-    item name 4
   </div>
   <div
     onClick={[Function]}
@@ -932,18 +1045,22 @@ exports[`Storyshots InputOrder With kind props 1`] = `
       className="c1"
     >
       <div
-        checked={false}
         className="c2"
-        kind="error"
-        size={18}
       >
         <div
           checked={false}
           className="c3"
-        />
+          kind="error"
+          size={18}
+        >
+          <div
+            checked={false}
+            className="c4"
+          />
+        </div>
       </div>
+      5
     </div>
-    5
   </div>
   <div
     onClick={[Function]}
@@ -955,18 +1072,22 @@ exports[`Storyshots InputOrder With kind props 1`] = `
       className="c1"
     >
       <div
-        checked={false}
         className="c2"
-        kind="error"
-        size={18}
       >
         <div
           checked={false}
           className="c3"
-        />
+          kind="error"
+          size={18}
+        >
+          <div
+            checked={false}
+            className="c4"
+          />
+        </div>
       </div>
+      item name 6
     </div>
-    item name 6
   </div>
   <div
     onClick={[Function]}
@@ -978,18 +1099,22 @@ exports[`Storyshots InputOrder With kind props 1`] = `
       className="c1"
     >
       <div
-        checked={false}
         className="c2"
-        kind="error"
-        size={18}
       >
         <div
           checked={false}
           className="c3"
-        />
+          kind="error"
+          size={18}
+        >
+          <div
+            checked={false}
+            className="c4"
+          />
+        </div>
       </div>
+      item name item name 7
     </div>
-    item name item name 7
   </div>
   <div
     onClick={[Function]}
@@ -1001,18 +1126,22 @@ exports[`Storyshots InputOrder With kind props 1`] = `
       className="c1"
     >
       <div
-        checked={false}
         className="c2"
-        kind="error"
-        size={18}
       >
         <div
           checked={false}
           className="c3"
-        />
+          kind="error"
+          size={18}
+        >
+          <div
+            checked={false}
+            className="c4"
+          />
+        </div>
       </div>
+      item name 7
     </div>
-    item name 7
   </div>
   <div
     onClick={[Function]}
@@ -1024,18 +1153,22 @@ exports[`Storyshots InputOrder With kind props 1`] = `
       className="c1"
     >
       <div
-        checked={false}
         className="c2"
-        kind="error"
-        size={18}
       >
         <div
           checked={false}
           className="c3"
-        />
+          kind="error"
+          size={18}
+        >
+          <div
+            checked={false}
+            className="c4"
+          />
+        </div>
       </div>
+      item name 7
     </div>
-    item name 7
   </div>
   <div
     onClick={[Function]}
@@ -1047,18 +1180,22 @@ exports[`Storyshots InputOrder With kind props 1`] = `
       className="c1"
     >
       <div
-        checked={false}
         className="c2"
-        kind="error"
-        size={18}
       >
         <div
           checked={false}
           className="c3"
-        />
+          kind="error"
+          size={18}
+        >
+          <div
+            checked={false}
+            className="c4"
+          />
+        </div>
       </div>
+      item name item nameitem name 7
     </div>
-    item name item nameitem name 7
   </div>
   <div
     onClick={[Function]}
@@ -1070,18 +1207,22 @@ exports[`Storyshots InputOrder With kind props 1`] = `
       className="c1"
     >
       <div
-        checked={false}
         className="c2"
-        kind="error"
-        size={18}
       >
         <div
           checked={false}
           className="c3"
-        />
+          kind="error"
+          size={18}
+        >
+          <div
+            checked={false}
+            className="c4"
+          />
+        </div>
       </div>
+      item name 7
     </div>
-    item name 7
   </div>
   <div
     onClick={[Function]}
@@ -1093,18 +1234,22 @@ exports[`Storyshots InputOrder With kind props 1`] = `
       className="c1"
     >
       <div
-        checked={false}
         className="c2"
-        kind="error"
-        size={18}
       >
         <div
           checked={false}
           className="c3"
-        />
+          kind="error"
+          size={18}
+        >
+          <div
+            checked={false}
+            className="c4"
+          />
+        </div>
       </div>
+      item name item nameitem name 7
     </div>
-    item name item nameitem name 7
   </div>
   <div
     onClick={[Function]}
@@ -1116,18 +1261,22 @@ exports[`Storyshots InputOrder With kind props 1`] = `
       className="c1"
     >
       <div
-        checked={false}
         className="c2"
-        kind="error"
-        size={18}
       >
         <div
           checked={false}
           className="c3"
-        />
+          kind="error"
+          size={18}
+        >
+          <div
+            checked={false}
+            className="c4"
+          />
+        </div>
       </div>
+      item name item name7
     </div>
-    item name item name7
   </div>
 </div>
 `;
@@ -1166,10 +1315,10 @@ exports[`Storyshots InputOrder With placeholder props 1`] = `
   min-width: 45%;
   outline: none;
   cursor: pointer;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
 }
 
 .dUUMVe > *:nth-child(2) .c1 {
@@ -1227,13 +1376,13 @@ exports[`Storyshots InputOrder With state 1`] = `
   min-width: 45%;
   outline: none;
   cursor: pointer;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
 }
 
-.c2 {
+.c3 {
   line-height: 1em;
   font-size: 12px;
   border-radius: 2px;
@@ -1252,7 +1401,7 @@ exports[`Storyshots InputOrder With state 1`] = `
   border: 1px solid #D1D2D3;
 }
 
-.c3 {
+.c4 {
   height: 100%;
   width: 100%;
   display: -webkit-box;
@@ -1278,11 +1427,22 @@ exports[`Storyshots InputOrder With state 1`] = `
   transition: transform 0.5s cubic-bezier(0.23,1,0.32,1);
 }
 
-.c3 svg {
+.c4 svg {
   fill: currentColor;
 }
 
 .c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c2 {
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -1303,18 +1463,22 @@ exports[`Storyshots InputOrder With state 1`] = `
       className="c1"
     >
       <div
-        checked={false}
         className="c2"
-        kind="primary"
-        size={18}
       >
         <div
           checked={false}
           className="c3"
-        />
+          kind="primary"
+          size={18}
+        >
+          <div
+            checked={false}
+            className="c4"
+          />
+        </div>
       </div>
+      item name 1
     </div>
-    item name 1
   </div>
   <div
     onClick={[Function]}
@@ -1326,18 +1490,22 @@ exports[`Storyshots InputOrder With state 1`] = `
       className="c1"
     >
       <div
-        checked={false}
         className="c2"
-        kind="primary"
-        size={18}
       >
         <div
           checked={false}
           className="c3"
-        />
+          kind="primary"
+          size={18}
+        >
+          <div
+            checked={false}
+            className="c4"
+          />
+        </div>
       </div>
+      item name item name item name 2
     </div>
-    item name item name item name 2
   </div>
   <div
     onClick={[Function]}
@@ -1349,18 +1517,22 @@ exports[`Storyshots InputOrder With state 1`] = `
       className="c1"
     >
       <div
-        checked={false}
         className="c2"
-        kind="primary"
-        size={18}
       >
         <div
           checked={false}
           className="c3"
-        />
+          kind="primary"
+          size={18}
+        >
+          <div
+            checked={false}
+            className="c4"
+          />
+        </div>
       </div>
+      item name 3
     </div>
-    item name 3
   </div>
   <div
     onClick={[Function]}
@@ -1372,18 +1544,22 @@ exports[`Storyshots InputOrder With state 1`] = `
       className="c1"
     >
       <div
-        checked={false}
         className="c2"
-        kind="primary"
-        size={18}
       >
         <div
           checked={false}
           className="c3"
-        />
+          kind="primary"
+          size={18}
+        >
+          <div
+            checked={false}
+            className="c4"
+          />
+        </div>
       </div>
+      item name 4
     </div>
-    item name 4
   </div>
   <div
     onClick={[Function]}
@@ -1395,18 +1571,22 @@ exports[`Storyshots InputOrder With state 1`] = `
       className="c1"
     >
       <div
-        checked={false}
         className="c2"
-        kind="primary"
-        size={18}
       >
         <div
           checked={false}
           className="c3"
-        />
+          kind="primary"
+          size={18}
+        >
+          <div
+            checked={false}
+            className="c4"
+          />
+        </div>
       </div>
+      5
     </div>
-    5
   </div>
   <div
     onClick={[Function]}
@@ -1418,18 +1598,22 @@ exports[`Storyshots InputOrder With state 1`] = `
       className="c1"
     >
       <div
-        checked={false}
         className="c2"
-        kind="primary"
-        size={18}
       >
         <div
           checked={false}
           className="c3"
-        />
+          kind="primary"
+          size={18}
+        >
+          <div
+            checked={false}
+            className="c4"
+          />
+        </div>
       </div>
+      item name 6
     </div>
-    item name 6
   </div>
   <div
     onClick={[Function]}
@@ -1441,18 +1625,22 @@ exports[`Storyshots InputOrder With state 1`] = `
       className="c1"
     >
       <div
-        checked={false}
         className="c2"
-        kind="primary"
-        size={18}
       >
         <div
           checked={false}
           className="c3"
-        />
+          kind="primary"
+          size={18}
+        >
+          <div
+            checked={false}
+            className="c4"
+          />
+        </div>
       </div>
+      item name item name 7
     </div>
-    item name item name 7
   </div>
   <div
     onClick={[Function]}
@@ -1464,18 +1652,22 @@ exports[`Storyshots InputOrder With state 1`] = `
       className="c1"
     >
       <div
-        checked={false}
         className="c2"
-        kind="primary"
-        size={18}
       >
         <div
           checked={false}
           className="c3"
-        />
+          kind="primary"
+          size={18}
+        >
+          <div
+            checked={false}
+            className="c4"
+          />
+        </div>
       </div>
+      item name 7
     </div>
-    item name 7
   </div>
   <div
     onClick={[Function]}
@@ -1487,18 +1679,22 @@ exports[`Storyshots InputOrder With state 1`] = `
       className="c1"
     >
       <div
-        checked={false}
         className="c2"
-        kind="primary"
-        size={18}
       >
         <div
           checked={false}
           className="c3"
-        />
+          kind="primary"
+          size={18}
+        >
+          <div
+            checked={false}
+            className="c4"
+          />
+        </div>
       </div>
+      item name 7
     </div>
-    item name 7
   </div>
   <div
     onClick={[Function]}
@@ -1510,18 +1706,22 @@ exports[`Storyshots InputOrder With state 1`] = `
       className="c1"
     >
       <div
-        checked={false}
         className="c2"
-        kind="primary"
-        size={18}
       >
         <div
           checked={false}
           className="c3"
-        />
+          kind="primary"
+          size={18}
+        >
+          <div
+            checked={false}
+            className="c4"
+          />
+        </div>
       </div>
+      item name item nameitem name 7
     </div>
-    item name item nameitem name 7
   </div>
   <div
     onClick={[Function]}
@@ -1533,18 +1733,22 @@ exports[`Storyshots InputOrder With state 1`] = `
       className="c1"
     >
       <div
-        checked={false}
         className="c2"
-        kind="primary"
-        size={18}
       >
         <div
           checked={false}
           className="c3"
-        />
+          kind="primary"
+          size={18}
+        >
+          <div
+            checked={false}
+            className="c4"
+          />
+        </div>
       </div>
+      item name 7
     </div>
-    item name 7
   </div>
   <div
     onClick={[Function]}
@@ -1556,18 +1760,22 @@ exports[`Storyshots InputOrder With state 1`] = `
       className="c1"
     >
       <div
-        checked={false}
         className="c2"
-        kind="primary"
-        size={18}
       >
         <div
           checked={false}
           className="c3"
-        />
+          kind="primary"
+          size={18}
+        >
+          <div
+            checked={false}
+            className="c4"
+          />
+        </div>
       </div>
+      item name item nameitem name 7
     </div>
-    item name item nameitem name 7
   </div>
   <div
     onClick={[Function]}
@@ -1579,18 +1787,22 @@ exports[`Storyshots InputOrder With state 1`] = `
       className="c1"
     >
       <div
-        checked={false}
         className="c2"
-        kind="primary"
-        size={18}
       >
         <div
           checked={false}
           className="c3"
-        />
+          kind="primary"
+          size={18}
+        >
+          <div
+            checked={false}
+            className="c4"
+          />
+        </div>
       </div>
+      item name item name7
     </div>
-    item name item name7
   </div>
 </div>
 `;
@@ -1623,13 +1835,13 @@ exports[`Storyshots InputOrder one item 1`] = `
   min-width: 45%;
   outline: none;
   cursor: pointer;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
 }
 
-.c2 {
+.c3 {
   line-height: 1em;
   font-size: 12px;
   border-radius: 2px;
@@ -1648,7 +1860,7 @@ exports[`Storyshots InputOrder one item 1`] = `
   border: 1px solid rgb(0,130,179);
 }
 
-.c3 {
+.c4 {
   height: 100%;
   width: 100%;
   display: -webkit-box;
@@ -1674,11 +1886,22 @@ exports[`Storyshots InputOrder one item 1`] = `
   transition: transform 0.5s cubic-bezier(0.23,1,0.32,1);
 }
 
-.c3 svg {
+.c4 svg {
   fill: currentColor;
 }
 
 .c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c2 {
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -1699,20 +1922,24 @@ exports[`Storyshots InputOrder one item 1`] = `
       className="c1"
     >
       <div
-        checked={true}
         className="c2"
-        kind="primary"
-        size={18}
       >
         <div
           checked={true}
           className="c3"
+          kind="primary"
+          size={18}
         >
-          1
+          <div
+            checked={true}
+            className="c4"
+          >
+            1
+          </div>
         </div>
       </div>
+      item name 1
     </div>
-    item name 1
   </div>
 </div>
 `;
@@ -1745,13 +1972,13 @@ exports[`Storyshots InputOrder three items 1`] = `
   min-width: 45%;
   outline: none;
   cursor: pointer;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
 }
 
-.c2 {
+.c3 {
   line-height: 1em;
   font-size: 12px;
   border-radius: 2px;
@@ -1770,7 +1997,7 @@ exports[`Storyshots InputOrder three items 1`] = `
   border: 1px solid rgb(0,130,179);
 }
 
-.c4 {
+.c5 {
   line-height: 1em;
   font-size: 12px;
   border-radius: 2px;
@@ -1789,7 +2016,7 @@ exports[`Storyshots InputOrder three items 1`] = `
   border: 1px solid #D1D2D3;
 }
 
-.c3 {
+.c4 {
   height: 100%;
   width: 100%;
   display: -webkit-box;
@@ -1815,11 +2042,11 @@ exports[`Storyshots InputOrder three items 1`] = `
   transition: transform 0.5s cubic-bezier(0.23,1,0.32,1);
 }
 
-.c3 svg {
+.c4 svg {
   fill: currentColor;
 }
 
-.c5 {
+.c6 {
   height: 100%;
   width: 100%;
   display: -webkit-box;
@@ -1845,11 +2072,22 @@ exports[`Storyshots InputOrder three items 1`] = `
   transition: transform 0.5s cubic-bezier(0.23,1,0.32,1);
 }
 
-.c5 svg {
+.c6 svg {
   fill: currentColor;
 }
 
 .c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c2 {
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -1870,20 +2108,24 @@ exports[`Storyshots InputOrder three items 1`] = `
       className="c1"
     >
       <div
-        checked={true}
         className="c2"
-        kind="primary"
-        size={18}
       >
         <div
           checked={true}
           className="c3"
+          kind="primary"
+          size={18}
         >
-          1
+          <div
+            checked={true}
+            className="c4"
+          >
+            1
+          </div>
         </div>
       </div>
+      item name 1
     </div>
-    item name 1
   </div>
   <div
     onClick={[Function]}
@@ -1895,18 +2137,22 @@ exports[`Storyshots InputOrder three items 1`] = `
       className="c1"
     >
       <div
-        checked={false}
-        className="c4"
-        kind="primary"
-        size={18}
+        className="c2"
       >
         <div
           checked={false}
           className="c5"
-        />
+          kind="primary"
+          size={18}
+        >
+          <div
+            checked={false}
+            className="c6"
+          />
+        </div>
       </div>
+      item name item name item name 2
     </div>
-    item name item name item name 2
   </div>
   <div
     onClick={[Function]}
@@ -1918,18 +2164,22 @@ exports[`Storyshots InputOrder three items 1`] = `
       className="c1"
     >
       <div
-        checked={false}
-        className="c4"
-        kind="primary"
-        size={18}
+        className="c2"
       >
         <div
           checked={false}
           className="c5"
-        />
+          kind="primary"
+          size={18}
+        >
+          <div
+            checked={false}
+            className="c6"
+          />
+        </div>
       </div>
+      item name item name item name 3
     </div>
-    item name item name item name 3
   </div>
 </div>
 `;
@@ -1962,13 +2212,13 @@ exports[`Storyshots InputOrder two items 1`] = `
   min-width: 45%;
   outline: none;
   cursor: pointer;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
 }
 
-.c2 {
+.c3 {
   line-height: 1em;
   font-size: 12px;
   border-radius: 2px;
@@ -1987,7 +2237,7 @@ exports[`Storyshots InputOrder two items 1`] = `
   border: 1px solid rgb(0,130,179);
 }
 
-.c4 {
+.c5 {
   line-height: 1em;
   font-size: 12px;
   border-radius: 2px;
@@ -2006,7 +2256,7 @@ exports[`Storyshots InputOrder two items 1`] = `
   border: 1px solid #D1D2D3;
 }
 
-.c3 {
+.c4 {
   height: 100%;
   width: 100%;
   display: -webkit-box;
@@ -2032,11 +2282,11 @@ exports[`Storyshots InputOrder two items 1`] = `
   transition: transform 0.5s cubic-bezier(0.23,1,0.32,1);
 }
 
-.c3 svg {
+.c4 svg {
   fill: currentColor;
 }
 
-.c5 {
+.c6 {
   height: 100%;
   width: 100%;
   display: -webkit-box;
@@ -2062,11 +2312,22 @@ exports[`Storyshots InputOrder two items 1`] = `
   transition: transform 0.5s cubic-bezier(0.23,1,0.32,1);
 }
 
-.c5 svg {
+.c6 svg {
   fill: currentColor;
 }
 
 .c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c2 {
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -2087,20 +2348,24 @@ exports[`Storyshots InputOrder two items 1`] = `
       className="c1"
     >
       <div
-        checked={true}
         className="c2"
-        kind="primary"
-        size={18}
       >
         <div
           checked={true}
           className="c3"
+          kind="primary"
+          size={18}
         >
-          1
+          <div
+            checked={true}
+            className="c4"
+          >
+            1
+          </div>
         </div>
       </div>
+      item name 1
     </div>
-    item name 1
   </div>
   <div
     onClick={[Function]}
@@ -2112,18 +2377,22 @@ exports[`Storyshots InputOrder two items 1`] = `
       className="c1"
     >
       <div
-        checked={false}
-        className="c4"
-        kind="primary"
-        size={18}
+        className="c2"
       >
         <div
           checked={false}
           className="c5"
-        />
+          kind="primary"
+          size={18}
+        >
+          <div
+            checked={false}
+            className="c6"
+          />
+        </div>
       </div>
+      item name item name item name 2
     </div>
-    item name item name item name 2
   </div>
 </div>
 `;

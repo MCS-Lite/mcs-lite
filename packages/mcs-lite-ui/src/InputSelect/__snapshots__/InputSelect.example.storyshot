@@ -134,6 +134,7 @@ exports[`Storyshots InputSelect API 1`] = `
       className="c0 c1"
     >
       <input
+        autoComplete="off"
         className="c2"
         kind="primary"
         onChange={[Function]}
@@ -302,6 +303,7 @@ exports[`Storyshots InputSelect Controlled API 1`] = `
       className="c0 c1"
     >
       <input
+        autoComplete="off"
         className="c2"
         kind="primary"
         onChange={[Function]}
@@ -463,6 +465,7 @@ exports[`Storyshots InputSelect With 150 items 1`] = `
     className="c0 c1"
   >
     <input
+      autoComplete="off"
       className="c2"
       kind="primary"
       onChange={[Function]}
@@ -623,6 +626,7 @@ exports[`Storyshots InputSelect With autoFocus props 1`] = `
     className="c0 c1"
   >
     <input
+      autoComplete="off"
       autoFocus={true}
       className="c2"
       kind="primary"
@@ -948,6 +952,7 @@ exports[`Storyshots InputSelect With disableFilter props 1`] = `
     className="c0 c1"
   >
     <input
+      autoComplete="off"
       className="c2"
       kind="primary"
       onChange={[Function]}
@@ -1108,6 +1113,7 @@ exports[`Storyshots InputSelect With focus props 1`] = `
     className="c0 c1"
   >
     <input
+      autoComplete="off"
       className="c2"
       kind="error"
       onChange={[Function]}
@@ -1268,6 +1274,7 @@ exports[`Storyshots InputSelect With kind props 1`] = `
     className="c0 c1"
   >
     <input
+      autoComplete="off"
       className="c2"
       kind="warning"
       onChange={[Function]}
@@ -1428,6 +1435,7 @@ exports[`Storyshots InputSelect With noRowsRenderer props 1`] = `
     className="c0 c1"
   >
     <input
+      autoComplete="off"
       className="c2"
       kind="primary"
       onChange={[Function]}
@@ -1588,6 +1596,7 @@ exports[`Storyshots InputSelect With state 1`] = `
     className="c0 c1"
   >
     <input
+      autoComplete="off"
       className="c2"
       kind="primary"
       onChange={[Function]}

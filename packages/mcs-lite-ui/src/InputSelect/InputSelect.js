@@ -196,6 +196,7 @@ class PureInputSelect extends React.Component<
             readOnly={disableFilter}
             onClick={onOpen}
             onFocus={onOpen}
+            autoComplete="off"
             {...R.omit(['onChange'])(otherProps)}
           />
           {isOpen &&

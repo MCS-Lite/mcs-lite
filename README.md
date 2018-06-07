@@ -189,10 +189,18 @@ $ yarn run license
 
 _NPM package licenses: [licenses.csv](./docs/licenses.csv)_
 
-## Team
+## Support
+
+### Team
 
 | [![Michael Hsu](https://avatars.githubusercontent.com/u/1527371?v=3&s=96)](https://github.com/evenchange4) | [![Abel Chen](https://avatars.githubusercontent.com/u/2841286?v=3&s=96)](https://github.com/cettoana) | [![Abby Chiu](https://avatars.githubusercontent.com/u/11768650?v=3&s=96)](https://github.com/abby1002) | [![Daria Chen](https://avatars.githubusercontent.com/u/1300728?v=3&s=96)](https://github.com/dariachen) | [![blue chen](https://avatars.githubusercontent.com/u/1887942?v=3&s=96)](https://github.com/iamblue) |
 | ---------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
 | Michael Hsu                                                                                                | Abel Chen                                                                                             | Abby Chiu                                                                                              | Daria Chen                                                                                              | blue chen                                                                                            |
 | [@evenchange4](https://github.com/evenchange4)                                                             | [@cettoana](https://github.com/cettoana)                                                              | [@abby1002](https://github.com/abby1002)                                                               | [@dariachen](https://github.com/dariachen)                                                              | [@iamblue](https://github.com/iamblue)                                                               |
 | [@evenchange4](https://twitter.com/evenchange4)                                                            |                                                                                                       |                                                                                                        |                                                                                                         |
+
+### Thanks
+
+![Browserstack](https://wiki.js.org/assets/images/logo_browserstack.png)
+
+[Browserstack](https://www.browserstack.com/) for providing access to their great cross-browser testing tools.

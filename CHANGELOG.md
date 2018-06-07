@@ -1,5 +1,31 @@
 # MCS Lite changelogs
 
+## Released (2018-05-28)
+
+* babel-preset-mcs-lite: 0.3.35 => 0.3.36
+* eslint-config-mcs-lite: 0.6.26 => 0.6.27
+* mcs-lite-admin-web: 0.2.28 => 0.2.29
+* mcs-lite-connect: 0.3.38 => 0.3.39
+* mcs-lite-design: 0.2.30 => 0.2.31
+* mcs-lite-icon: 0.3.37 => 0.3.38
+* mcs-lite-landing-web: 0.1.33 => 0.1.34 (private)
+* mcs-lite-mobile-web: 0.4.41 => 0.4.42
+* mcs-lite-scripts: 0.3.37 => 0.3.38
+* mcs-lite-theme: 0.4.10 => 0.4.11
+* mcs-lite-translation: 0.1.35 => 0.1.36
+* mcs-lite-ui: 0.8.10 => 0.8.11
+* react-intl-inject-hoc: 0.2.38 => 0.2.39
+
+#### :bug: Bug Fix
+
+* `mcs-lite-ui`
+  * [#657](https://github.com/MCS-Lite/mcs-lite/pull/657) fix(ui): InputOrder flex style & disable InputSelect autoComplete. ([@evenchange4](https://github.com/evenchange4))
+
+#### Committers: 2
+
+* Michael Hsu ([evenchange4](https://github.com/evenchange4))
+* [renovate[bot]](https://github.com/apps/renovate)
+
 ## Released (2018-05-17)
 
 * babel-preset-mcs-lite: 0.3.34 => 0.3.35
