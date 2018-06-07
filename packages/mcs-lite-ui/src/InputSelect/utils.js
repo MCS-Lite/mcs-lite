@@ -1,6 +1,6 @@
 // @flow
 import * as R from 'ramda';
-import { type ItemProps } from './type.flow';
+import { type ItemProps, type ItemValueMapper } from './type.flow';
 
 export const MAX_HEIGHT = 155;
 
@@ -11,7 +11,7 @@ export function filterBy({
 }: {
   items: Array<ItemProps>,
   filter: string,
-  itemValueMapper: ItemProps => string | number,
+  itemValueMapper: ItemValueMapper,
 }): Array<ItemProps> {
   const regex = new RegExp(filter, 'gi');
   return items.filter((item: ItemProps) => regex.test(itemValueMapper(item)));
@@ -26,8 +26,8 @@ export function getInputValue({
   isOpen: boolean,
   filter: string,
   activeItem?: ItemProps,
-  itemValueMapper: ItemProps => string | number,
-}): string | number {
+  itemValueMapper: ItemValueMapper,
+}): string {
   let value;
 
   if (isOpen) {

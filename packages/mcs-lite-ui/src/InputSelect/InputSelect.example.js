@@ -174,7 +174,7 @@ storiesOf('InputSelect', module)
       inline: true,
     })(() => (
       <InputSelect
-        itemValueMapper={item => item.displayValue}
+        itemValueMapper={(item: any) => item.displayValue}
         value={2}
         onChange={action('onChange')}
         items={[

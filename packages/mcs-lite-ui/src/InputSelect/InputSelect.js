@@ -46,6 +46,8 @@ type Props = {
   menuRef?: (ref: React.ElementRef<typeof StyledMenu>) => void,
 };
 
+const defaultItemValueMapper = (item: ItemProps) => item.children;
+
 class PureInputSelect extends React.Component<
   Props & { theme: Object },
   {
@@ -58,7 +60,7 @@ class PureInputSelect extends React.Component<
     kind: 'primary',
     noRowsRenderer: () => <NoRowWrapper>No results found</NoRowWrapper>,
     disableFilter: false,
-    itemValueMapper: (item: ItemProps) => item.children,
+    itemValueMapper: defaultItemValueMapper,
   };
   state = { isOpen: false, filter: '', menuWidth: 0 };
   componentDidMount() {
@@ -110,7 +112,12 @@ class PureInputSelect extends React.Component<
     index: number,
     style: Object,
   }): React.Element<typeof MenuItem> => {
-    const { items, value, onChange, itemValueMapper } = this.props;
+    const {
+      items,
+      value,
+      onChange,
+      itemValueMapper = defaultItemValueMapper,
+    } = this.props;
     const { filter } = this.state;
     const { onClose } = this;
     const filteredItems = filterBy({ items, filter, itemValueMapper });
@@ -146,7 +153,7 @@ class PureInputSelect extends React.Component<
       focus,
       menuRef,
       disableFilter,
-      itemValueMapper,
+      itemValueMapper = defaultItemValueMapper,
       ...otherProps
     } = this.props;
     const { menuWidth, isOpen, filter } = this.state;
@@ -248,8 +255,9 @@ InputSelect.propTypes = {
   onChange: PropTypes.func.isRequired, // (value: Value) => Promise<void> | void,
   items: PropTypes.arrayOf(
     PropTypes.shape({
-      value: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
-      children: PropTypes.string || PropTypes.node,
+      value: PropTypes.oneOfType([PropTypes.number, PropTypes.string])
+        .isRequired,
+      children: PropTypes.node.isRequired,
     }),
   ).isRequired,
   kind: PropTypes.string,

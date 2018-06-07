@@ -31,7 +31,7 @@ class Select extends React.Component<
     value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
     items: PropTypes.arrayOf(
       PropTypes.shape({
-        children: PropTypes.node.isRequired,
+        children: PropTypes.string.isRequired,
         value: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
           .isRequired,
       }),

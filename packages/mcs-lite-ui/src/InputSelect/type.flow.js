@@ -1,8 +1,10 @@
 // @flow
+import * as React from 'react';
+
 export type Value = number | string;
 export type ItemProps = {
   value: Value,
-  children: string | React.Element,
+  children: React.Node,
 };
 
-export type ItemValueMapper = ItemProps => string | number;
+export type ItemValueMapper = ItemProps => string;
