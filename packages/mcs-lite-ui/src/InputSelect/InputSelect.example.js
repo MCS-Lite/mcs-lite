@@ -168,6 +168,57 @@ storiesOf('InputSelect', module)
     )),
   )
   .add(
+    'With children React element and itemValueMapper',
+    withInfo({
+      text: '',
+      inline: true,
+    })(() => (
+      <InputSelect
+        itemValueMapper={(item: any) => item.displayValue}
+        value={2}
+        onChange={action('onChange')}
+        items={[
+          {
+            value: 1,
+            displayValue: 'High',
+            children: (
+              <span>
+                <svg height="10" width="20">
+                  <circle cx="5" cy="5" r="5" fill="red" />
+                </svg>
+                High
+              </span>
+            ),
+          },
+          {
+            value: 2,
+            displayValue: 'Medium',
+            children: (
+              <span>
+                <svg height="10" width="20">
+                  <circle cx="5" cy="5" r="5" fill="orange" />
+                </svg>
+                Medium
+              </span>
+            ),
+          },
+          {
+            value: 3,
+            displayValue: 'Low',
+            children: (
+              <span>
+                <svg height="10" width="20">
+                  <circle cx="5" cy="5" r="5" fill="gold" />
+                </svg>
+                Low
+              </span>
+            ),
+          },
+        ]}
+      />
+    )),
+  )
+  .add(
     'With disableFilter props',
     withInfo({
       text: '',
