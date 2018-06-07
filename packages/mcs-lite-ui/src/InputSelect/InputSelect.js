@@ -23,10 +23,10 @@ import {
   FakeInputValue,
   TextOverflow,
 } from './styled-components';
-import { type Value, type ItemProps } from './type.flow';
+import { type Value, type ItemProps, type ItemValueMapper } from './type.flow';
 import {
-  filterByChildren,
-  getInputValue as getInputValueDefault,
+  filterBy,
+  getInputValue,
   getPlaceholder,
   getMenuItemHeight,
   getMenuHeight,
@@ -41,11 +41,7 @@ type Props = {
   focus?: boolean,
   noRowsRenderer?: ({ onClose: () => void }) => React.Node,
   disableFilter?: boolean,
-  getInputValue?: ({
-    isOpen: boolean,
-    filter: string,
-    activeItem?: ItemProps,
-  }) => string,
+  itemValueMapper?: ItemValueMapper,
   // Note: innerRef for the problem of outside click in dialog
   menuRef?: (ref: React.ElementRef<typeof StyledMenu>) => void,
 };
@@ -62,6 +58,7 @@ class PureInputSelect extends React.Component<
     kind: 'primary',
     noRowsRenderer: () => <NoRowWrapper>No results found</NoRowWrapper>,
     disableFilter: false,
+    itemValueMapper: (item: ItemProps) => item.children,
   };
   state = { isOpen: false, filter: '', menuWidth: 0 };
   componentDidMount() {
@@ -113,10 +110,10 @@ class PureInputSelect extends React.Component<
     index: number,
     style: Object,
   }): React.Element<typeof MenuItem> => {
-    const { items, value, onChange } = this.props;
+    const { items, value, onChange, itemValueMapper } = this.props;
     const { filter } = this.state;
     const { onClose } = this;
-    const filteredItems = filterByChildren(items, filter);
+    const filteredItems = filterBy({ items, filter, itemValueMapper });
     const { value: itemValue, children }: ItemProps = filteredItems[index];
     const onItemClick = () => {
       onChange(itemValue);
@@ -149,7 +146,7 @@ class PureInputSelect extends React.Component<
       focus,
       menuRef,
       disableFilter,
-      getInputValue = getInputValueDefault,
+      itemValueMapper,
       ...otherProps
     } = this.props;
     const { menuWidth, isOpen, filter } = this.state;
@@ -164,7 +161,7 @@ class PureInputSelect extends React.Component<
       onClickOutside,
     } = this;
 
-    const filteredItems = filterByChildren(items, filter);
+    const filteredItems = filterBy({ items, filter, itemValueMapper });
     const activeIndex = R.findIndex(R.propEq('value', value))(items);
     const activeItem = items[activeIndex];
     const menuItemHeight = getMenuItemHeight(theme);
@@ -181,7 +178,12 @@ class PureInputSelect extends React.Component<
             ref={onInputRef}
             kind={kind}
             focus={focus || isOpen}
-            value={getInputValue({ isOpen, filter, activeItem })}
+            value={getInputValue({
+              isOpen,
+              filter,
+              activeItem,
+              itemValueMapper,
+            })}
             onChange={onFilterChange}
             placeholder={getPlaceholder({ isOpen, activeItem, placeholder })}
             readOnly={disableFilter}
@@ -191,8 +193,9 @@ class PureInputSelect extends React.Component<
           />
           {isOpen &&
             activeItem &&
-            !React.isValidElement(activeItem.children) &&
-            !filter && <FakeInputValue defaultValue={activeItem.children} />}
+            !filter && (
+              <FakeInputValue defaultValue={itemValueMapper(activeItem)} />
+            )}
           <StyledButton
             kind={kind}
             active={focus || isOpen}
@@ -254,7 +257,7 @@ InputSelect.propTypes = {
   noRowsRenderer: PropTypes.func,
   focus: PropTypes.bool,
   disableFilter: PropTypes.bool,
-  getInputValue: PropTypes.func,
+  itemValueMapper: PropTypes.func,
   menuRef: PropTypes.func,
 };
 

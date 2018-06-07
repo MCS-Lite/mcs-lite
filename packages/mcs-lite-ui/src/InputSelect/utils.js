@@ -4,29 +4,36 @@ import { type ItemProps } from './type.flow';
 
 export const MAX_HEIGHT = 155;
 
-export function filterByChildren(
+export function filterBy({
+  items,
+  filter,
+  itemValueMapper,
+}: {
   items: Array<ItemProps>,
   filter: string,
-): Array<ItemProps> {
+  itemValueMapper: ItemProps => string | number,
+}): Array<ItemProps> {
   const regex = new RegExp(filter, 'gi');
-  return items.filter(({ children }: ItemProps) => regex.test(children));
+  return items.filter((item: ItemProps) => regex.test(itemValueMapper(item)));
 }
 
 export function getInputValue({
   isOpen,
   filter,
   activeItem,
+  itemValueMapper,
 }: {
   isOpen: boolean,
   filter: string,
   activeItem?: ItemProps,
-}): string {
+  itemValueMapper: ItemProps => string | number,
+}): string | number {
   let value;
 
   if (isOpen) {
     value = filter;
   } else {
-    value = activeItem ? activeItem.children : '';
+    value = activeItem ? itemValueMapper(activeItem) : '';
   }
 
   return value;

@@ -174,22 +174,13 @@ storiesOf('InputSelect', module)
       inline: true,
     })(() => (
       <InputSelect
-        getInputValue={({ isOpen, filter, activeItem }) => {
-          let value;
-          if (isOpen) {
-            value = filter;
-          } else {
-            value = activeItem
-              ? ['High', 'Medium', 'Low'][activeItem.value - 1]
-              : '';
-          }
-          return value;
-        }}
+        itemValueMapper={item => item.displayValue}
         value={2}
         onChange={action('onChange')}
         items={[
           {
             value: 1,
+            displayValue: 'High',
             children: (
               <span>
                 <svg height="10" width="20">
@@ -201,6 +192,7 @@ storiesOf('InputSelect', module)
           },
           {
             value: 2,
+            displayValue: 'Medium',
             children: (
               <span>
                 <svg height="10" width="20">
@@ -212,6 +204,7 @@ storiesOf('InputSelect', module)
           },
           {
             value: 3,
+            displayValue: 'Low',
             children: (
               <span>
                 <svg height="10" width="20">
