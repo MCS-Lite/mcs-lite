@@ -1,5 +1,16 @@
 # MCS Lite changelogs
 
+## Released (2018-06-07)
+
+#### :rocket: New Feature
+
+* `mcs-lite-ui`
+  * [#660](https://github.com/MCS-Lite/mcs-lite/pull/660) feat(InputSelect): handle children as React element & expose itemValueMapper props. ([@liuderchi](https://github.com/liuderchi))
+
+#### Committers: 1
+
+* Te-Chi Liu ([liuderchi](https://github.com/liuderchi))
+
 ## Released (2018-05-28)
 
 * babel-preset-mcs-lite: 0.3.35 => 0.3.36
