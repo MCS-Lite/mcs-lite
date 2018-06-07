@@ -168,7 +168,7 @@ storiesOf('InputSelect', module)
     )),
   )
   .add(
-    'With children React element and getInputValue',
+    'With children React element and itemValueMapper',
     withInfo({
       text: '',
       inline: true,

@@ -661,7 +661,7 @@ exports[`Storyshots InputSelect With autoFocus props 1`] = `
 </div>
 `;
 
-exports[`Storyshots InputSelect With children React element and getInputValue 1`] = `
+exports[`Storyshots InputSelect With children React element and itemValueMapper 1`] = `
 .c3 {
   border-width: 1px;
   border-style: solid;
