@@ -788,6 +788,7 @@ exports[`Storyshots InputSelect With children React element and getInputValue 1`
     className="c0 c1"
   >
     <input
+      autoComplete="off"
       className="c2"
       kind="primary"
       onChange={[Function]}
