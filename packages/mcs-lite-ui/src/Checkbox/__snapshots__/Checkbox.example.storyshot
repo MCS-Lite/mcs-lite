@@ -137,6 +137,307 @@ exports[`Storyshots Checkbox API 1`] = `
 </div>
 `;
 
+exports[`Storyshots Checkbox With custom theme color for kind props 1`] = `
+.c2 {
+  line-height: 1em;
+  font-size: 12px;
+  border-radius: 2px;
+  width: 14px;
+  height: 14px;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  -webkit-transition: background-color 0.5s cubic-bezier(0.23,1,0.32,1),border 0.3s cubic-bezier(0.23,1,0.32,1);
+  transition: background-color 0.5s cubic-bezier(0.23,1,0.32,1),border 0.3s cubic-bezier(0.23,1,0.32,1);
+  color: #FFFFFF;
+  background-color: #00A1DE;
+  border: 1px solid rgb(0,130,179);
+}
+
+.c0 {
+  line-height: 1em;
+  font-size: 12px;
+  border-radius: 2px;
+  width: 14px;
+  height: 14px;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  -webkit-transition: background-color 0.5s cubic-bezier(0.23,1,0.32,1),border 0.3s cubic-bezier(0.23,1,0.32,1);
+  transition: background-color 0.5s cubic-bezier(0.23,1,0.32,1),border 0.3s cubic-bezier(0.23,1,0.32,1);
+  color: #999A94;
+  background-color: #FAFAFA;
+  border: 1px solid rgb(202,202,202);
+}
+
+.c3 {
+  line-height: 1em;
+  font-size: 12px;
+  border-radius: 2px;
+  width: 14px;
+  height: 14px;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  -webkit-transition: background-color 0.5s cubic-bezier(0.23,1,0.32,1),border 0.3s cubic-bezier(0.23,1,0.32,1);
+  transition: background-color 0.5s cubic-bezier(0.23,1,0.32,1),border 0.3s cubic-bezier(0.23,1,0.32,1);
+  color: #FFFFFF;
+  background-color: #69BE28;
+  border: 1px solid rgb(85,153,32);
+}
+
+.c4 {
+  line-height: 1em;
+  font-size: 12px;
+  border-radius: 2px;
+  width: 14px;
+  height: 14px;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  -webkit-transition: background-color 0.5s cubic-bezier(0.23,1,0.32,1),border 0.3s cubic-bezier(0.23,1,0.32,1);
+  transition: background-color 0.5s cubic-bezier(0.23,1,0.32,1),border 0.3s cubic-bezier(0.23,1,0.32,1);
+  color: #FFFFFF;
+  background-color: #F5364E;
+  border: 1px solid rgb(198,44,63);
+}
+
+.c5 {
+  line-height: 1em;
+  font-size: 12px;
+  border-radius: 2px;
+  width: 14px;
+  height: 14px;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  -webkit-transition: background-color 0.5s cubic-bezier(0.23,1,0.32,1),border 0.3s cubic-bezier(0.23,1,0.32,1);
+  transition: background-color 0.5s cubic-bezier(0.23,1,0.32,1),border 0.3s cubic-bezier(0.23,1,0.32,1);
+  color: #FFFFFF;
+  background-color: #9056ff;
+  border: 1px solid rgb(116,69,206);
+}
+
+.c6 {
+  line-height: 1em;
+  font-size: 12px;
+  border-radius: 2px;
+  width: 14px;
+  height: 14px;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  -webkit-transition: background-color 0.5s cubic-bezier(0.23,1,0.32,1),border 0.3s cubic-bezier(0.23,1,0.32,1);
+  transition: background-color 0.5s cubic-bezier(0.23,1,0.32,1),border 0.3s cubic-bezier(0.23,1,0.32,1);
+  color: #FFFFFF;
+  background-color: #1576af;
+  border: 1px solid rgb(17,95,141);
+}
+
+.c7 {
+  line-height: 1em;
+  font-size: 12px;
+  border-radius: 2px;
+  width: 14px;
+  height: 14px;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  -webkit-transition: background-color 0.5s cubic-bezier(0.23,1,0.32,1),border 0.3s cubic-bezier(0.23,1,0.32,1);
+  transition: background-color 0.5s cubic-bezier(0.23,1,0.32,1),border 0.3s cubic-bezier(0.23,1,0.32,1);
+  color: #FFFFFF;
+  background-color: #ab6a32;
+  border: 1px solid rgb(138,86,40);
+}
+
+.c1 {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.23,1,0.32,1);
+  -webkit-transition: transform 0.5s cubic-bezier(0.23,1,0.32,1);
+  transition: transform 0.5s cubic-bezier(0.23,1,0.32,1);
+}
+
+.c1 svg {
+  fill: currentColor;
+}
+
+<div
+  style={
+    Object {
+      "display": "flex",
+      "flexDirection": "column",
+    }
+  }
+>
+  <div
+    checked={true}
+    className="c0"
+    kind="default"
+    onClick={[Function]}
+    size={14}
+  >
+    <div
+      checked={true}
+      className="c1"
+    >
+      <IconCheck.macro
+        height={8}
+        width={8}
+      />
+    </div>
+  </div>
+   default
+  <div
+    checked={true}
+    className="c2"
+    kind="primary"
+    onClick={[Function]}
+    size={14}
+  >
+    <div
+      checked={true}
+      className="c1"
+    >
+      <IconCheck.macro
+        height={8}
+        width={8}
+      />
+    </div>
+  </div>
+   primary
+  <div
+    checked={true}
+    className="c3"
+    kind="success"
+    onClick={[Function]}
+    size={14}
+  >
+    <div
+      checked={true}
+      className="c1"
+    >
+      <IconCheck.macro
+        height={8}
+        width={8}
+      />
+    </div>
+  </div>
+   success
+  <div
+    checked={true}
+    className="c4"
+    kind="error"
+    onClick={[Function]}
+    size={14}
+  >
+    <div
+      checked={true}
+      className="c1"
+    >
+      <IconCheck.macro
+        height={8}
+        width={8}
+      />
+    </div>
+  </div>
+   error
+  <div
+    checked={true}
+    className="c5"
+    kind="#9056ff"
+    onClick={[Function]}
+    size={14}
+  >
+    <div
+      checked={true}
+      className="c1"
+    >
+      <IconCheck.macro
+        height={8}
+        width={8}
+      />
+    </div>
+  </div>
+   #9056ff
+  <div
+    checked={true}
+    className="c6"
+    kind="#1576af"
+    onClick={[Function]}
+    size={14}
+  >
+    <div
+      checked={true}
+      className="c1"
+    >
+      <IconCheck.macro
+        height={8}
+        width={8}
+      />
+    </div>
+  </div>
+   #1576af
+  <div
+    checked={true}
+    className="c7"
+    kind="#ab6a32"
+    onClick={[Function]}
+    size={14}
+  >
+    <div
+      checked={true}
+      className="c1"
+    >
+      <IconCheck.macro
+        height={8}
+        width={8}
+      />
+    </div>
+  </div>
+   #ab6a32
+</div>
+`;
+
 exports[`Storyshots Checkbox With kind props 1`] = `
 .c2 {
   line-height: 1em;
