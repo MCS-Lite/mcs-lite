@@ -2,6 +2,8 @@
 import * as React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withInfo } from '@storybook/addon-info';
+import { ThemeProvider } from 'styled-components';
+import { theme } from 'mcs-lite-theme';
 import IconPlay from 'mcs-lite-icon/lib/IconPlay';
 import IconCheck from './IconCheck';
 import Checkbox from '.';
@@ -69,6 +71,36 @@ storiesOf('Checkbox', module)
         <StatefulCheckbox kind="error" /> error
         <StatefulCheckbox kind="warning" /> warning
       </div>
+    )),
+  )
+  .add(
+    'With custom theme color for kind props',
+    withInfo({
+      text: 'custom color',
+      inline: true,
+      propTables: [Checkbox],
+    })(() => (
+      <ThemeProvider
+        theme={{
+          ...theme,
+          color: {
+            ...theme.color,
+            '#9056ff': '#9056ff',
+            '#1576af': '#1576af',
+            '#ab6a32': '#ab6a32',
+          },
+        }}
+      >
+        <div style={{ display: 'flex', flexDirection: 'column' }}>
+          <StatefulCheckbox kind="default" /> default
+          <StatefulCheckbox kind="primary" /> primary
+          <StatefulCheckbox kind="success" /> success
+          <StatefulCheckbox kind="error" /> error
+          <StatefulCheckbox kind="#9056ff" /> #9056ff
+          <StatefulCheckbox kind="#1576af" /> #1576af
+          <StatefulCheckbox kind="#ab6a32" /> #ab6a32
+        </div>
+      </ThemeProvider>
     )),
   )
   .add(
