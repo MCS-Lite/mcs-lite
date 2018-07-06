@@ -1,5 +1,21 @@
 # MCS Lite changelogs
 
+## Released (2018-07-06)
+
+#### :bug: Bug Fix
+
+* `mcs-lite-ui`
+  * [#665](https://github.com/MCS-Lite/mcs-lite/pull/665) fix(ui): fix title with itemValueMapper function. ([@evenchange4](https://github.com/evenchange4))
+
+#### :house: Internal
+
+* `mcs-lite-ui`
+  * [#662](https://github.com/MCS-Lite/mcs-lite/pull/662) feat(UI): add custom theme color for kind props in Checkbox Component. ([@evenchange4](https://github.com/evenchange4))
+
+#### Committers: 1
+
+* Michael Hsu ([evenchange4](https://github.com/evenchange4))
+
 ## Released (2018-06-07)
 
 * babel-preset-mcs-lite: 0.3.36 => 0.3.37
