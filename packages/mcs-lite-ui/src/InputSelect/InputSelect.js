@@ -121,9 +121,9 @@ class PureInputSelect extends React.Component<
     const { filter } = this.state;
     const { onClose } = this;
     const filteredItems = filterBy({ items, filter, itemValueMapper });
-    const { value: itemValue, children }: ItemProps = filteredItems[index];
+    const item = filteredItems[index];
     const onItemClick = () => {
-      onChange(itemValue);
+      onChange(item.value);
       this.setState(() => ({ filter: '' }));
       onClose();
     };
@@ -132,11 +132,11 @@ class PureInputSelect extends React.Component<
       <MenuItem
         key={key}
         style={style}
-        active={itemValue === value}
+        active={item.value === value}
         onClick={onItemClick}
-        title={children}
+        title={itemValueMapper(item)}
       >
-        <TextOverflow>{children}</TextOverflow>
+        <TextOverflow>{item.children}</TextOverflow>
       </MenuItem>
     );
   };
