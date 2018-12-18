@@ -7793,9 +7793,9 @@ lerna-changelog@0.7.0:
     string.prototype.padend "^3.0.0"
     yargs "^6.6.0"
 
-lerna@2.10.2:
-  version "2.10.2"
-  resolved "https://registry.yarnpkg.com/lerna/-/lerna-2.10.2.tgz#3a0d54d398360fecc5918207c6d7ab68a5443d9f"
+lerna@2.11.0:
+  version "2.11.0"
+  resolved "https://registry.yarnpkg.com/lerna/-/lerna-2.11.0.tgz#89b5681e286d388dda5bbbdbbf6b84c8094eff65"
   dependencies:
     async "^1.5.0"
     chalk "^2.1.0"
