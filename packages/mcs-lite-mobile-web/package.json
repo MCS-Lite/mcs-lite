@@ -32,7 +32,7 @@
     "prepack": "npm run build"
   },
   "devDependencies": {
-    "@cycle/http": "14.9.0",
+    "@cycle/http": "14.10.0",
     "@cycle/rxjs-run": "8.0.0",
     "@cycle/time": "0.8.0",
     "browser-locale": "1.0.3",
