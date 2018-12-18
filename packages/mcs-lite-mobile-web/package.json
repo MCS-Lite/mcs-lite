@@ -67,7 +67,7 @@
     "react-router-scroll": "0.4.4",
     "react-scripts": "1.1.4",
     "react-text-truncate": "0.13.1",
-    "recompose": "0.26.0",
+    "recompose": "0.30.0",
     "redux": "3.7.2",
     "redux-cycles": "0.4.1",
     "redux-freeze": "0.1.5",
