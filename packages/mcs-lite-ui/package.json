@@ -79,7 +79,7 @@
     "react-overlay-pack": "^2.0.0",
     "react-overlays": "^0.8.3",
     "react-render-to-json": "^0.0.6",
-    "react-svg-morph": "^0.1.10",
+    "react-svg-morph": "^0.2.0",
     "react-syntax-highlighter": "^7.0.2",
     "react-text-truncate": "^0.13.1",
     "react-virtualized": "^9.18.5",

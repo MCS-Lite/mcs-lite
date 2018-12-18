@@ -10757,11 +10757,7 @@ react-redux@5.0.7:
     loose-envify "^1.1.0"
     prop-types "^15.6.0"
 
-react-render-to-json@0.0.4:
-  version "0.0.4"
-  resolved "https://registry.yarnpkg.com/react-render-to-json/-/react-render-to-json-0.0.4.tgz#0db588e2952cea05a66a3390554c46c3ea74d006"
-
-react-render-to-json@^0.0.6:
+react-render-to-json@0.0.6, react-render-to-json@^0.0.6:
   version "0.0.6"
   resolved "https://registry.yarnpkg.com/react-render-to-json/-/react-render-to-json-0.0.6.tgz#3d04ad156d58d64390089102554b8030f3c2a4fa"
 
@@ -10893,11 +10889,12 @@ react-style-proptype@^3.0.0:
   dependencies:
     prop-types "^15.5.4"
 
-react-svg-morph@^0.1.10:
-  version "0.1.10"
-  resolved "https://registry.yarnpkg.com/react-svg-morph/-/react-svg-morph-0.1.10.tgz#780cf6823a6ab640a1367e43b7c9509d68157bf3"
+react-svg-morph@^0.2.0:
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/react-svg-morph/-/react-svg-morph-0.2.1.tgz#fdcb8a53d646cd8166e60b5ceb8f60d585d8c724"
   dependencies:
-    react-render-to-json "0.0.4"
+    prop-types "^15.6.0"
+    react-render-to-json "0.0.6"
     svgpath "^2.1.0"
 
 react-syntax-highlighter@^7.0.2:
