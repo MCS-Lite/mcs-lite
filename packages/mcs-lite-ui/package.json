@@ -73,7 +73,7 @@
     "ramda": "^0.25.0",
     "react-cookie": "^1.0.5",
     "react-dnd-dropzone": "^1.0.0",
-    "react-hammerjs": "^0.5.0",
+    "react-hammerjs": "^1.0.0",
     "react-motion": "^0.5.2",
     "react-motion-ui-pack": "^0.10.3",
     "react-overlay-pack": "^2.0.0",
