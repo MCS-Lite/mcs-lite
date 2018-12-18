@@ -1,3 +1,16 @@
+# This repository is no longer maintained.
+
+> Issue reports and pull requests will not be attended. \
+> If you are using `mcs-lite-ui`, `mcs-lite-icon`, `mcs-lite-theme`, please migrate to [`mcs-ui`](https://github.com/Mediatek-Cloud/mcs-ui)
+
+### Migrate to `mcs-ui`
+
+1. Please upgrade `react`, `react-dom` to version 16 or higher
+2. Please upgrade `styled-components` to version 4.0.2 or higher
+3. Please upgrade `react-overlay-pack` to version 3 or higher
+4. Change import names from `mcs-lite-ui`, `mcs-lite-icon`, `mcs-lite-theme` to `mcs-ui` by referencing [`index.js`](https://github.com/Mediatek-Cloud/mcs-ui/blob/master/src/index.js)
+
+
 <p align="center">
   <a href="https://mcs.mediatek.com">
     <img height="240" src="./docs/images/banner_mcs_lite_black.png">
