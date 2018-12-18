@@ -25,7 +25,7 @@
     "react-intl": "^2.3.0"
   },
   "dependencies": {
-    "recompose": "^0.26.0"
+    "recompose": "^0.30.0"
   },
   "devDependencies": {
     "babel-cli": "6.26.0",
