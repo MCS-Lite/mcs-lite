@@ -10444,17 +10444,19 @@ raw-body@2.3.2:
     iconv-lite "0.4.19"
     unpipe "1.0.0"
 
-rc-scroll-anim@2.4.1:
-  version "2.4.1"
-  resolved "https://registry.yarnpkg.com/rc-scroll-anim/-/rc-scroll-anim-2.4.1.tgz#ba2d440ea00d9c6960c1e0e57ce2544c4949622f"
+rc-scroll-anim@2.7.6:
+  version "2.7.6"
+  resolved "https://registry.yarnpkg.com/rc-scroll-anim/-/rc-scroll-anim-2.7.6.tgz#f7e6622f2930ca3e1e258f7275bc2e1c26ce791c"
+  integrity sha512-VwXJYXjZy9TtH1wcQIG7/yjt/Ay3VEjQl/TITaWzK9O7ujjOXRVOYY/tqKshmBMgaJ2oGeFQNmCN8zTwXguq0g==
   dependencies:
     babel-runtime "6.x"
     prop-types "^15.6.0"
     raf "3.x"
-    rc-tween-one "^1.7.0"
+    rc-tween-one "^2.4.0"
+    react-lifecycles-compat "^3.0.4"
     tween-functions "1.x"
 
-rc-tween-one@1.7.3, rc-tween-one@^1.7.0, rc-tween-one@^1.7.3:
+rc-tween-one@1.7.3, rc-tween-one@^1.7.3:
   version "1.7.3"
   resolved "https://registry.yarnpkg.com/rc-tween-one/-/rc-tween-one-1.7.3.tgz#1cdc0b88c0aaab481254c00e604b94af6ddbbc32"
   dependencies:
@@ -10463,6 +10465,18 @@ rc-tween-one@1.7.3, rc-tween-one@^1.7.0, rc-tween-one@^1.7.3:
     prop-types "^15.5.0"
     raf "~3.4.0"
     style-utils "~0.1.13"
+    tween-functions "~1.2.0"
+
+rc-tween-one@^2.4.0:
+  version "2.7.3"
+  resolved "https://registry.yarnpkg.com/rc-tween-one/-/rc-tween-one-2.7.3.tgz#c9d3c44743e25c654d65c22ec3934afd79923fae"
+  integrity sha512-n4OPRLO6VMZHj61unq5KKxHMMfBz52bxob94fN3U5M9GqFg3H+T3TXnpHPnAK+cq/xBGo70ik2vB4Fpjo/txcA==
+  dependencies:
+    babel-runtime "6.x"
+    prop-types "^15.6.1"
+    raf "~3.4.0"
+    react-lifecycles-compat "^3.0.4"
+    style-utils "~0.2.0"
     tween-functions "~1.2.0"
 
 rc@^1.0.1, rc@^1.1.6, rc@^1.1.7:
@@ -10660,6 +10674,11 @@ react-intl@2.4.0:
 react-is@^16.3.1, react-is@^16.3.2:
   version "16.3.2"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.3.2.tgz#f4d3d0e2f5fbb6ac46450641eb2e25bf05d36b22"
+
+react-lifecycles-compat@^3.0.4:
+  version "3.0.4"
+  resolved "https://registry.yarnpkg.com/react-lifecycles-compat/-/react-lifecycles-compat-3.0.4.tgz#4f1a273afdfc8f3488a8c516bfda78f872352362"
+  integrity sha512-fBASbA6LnOU9dOU2eW7aQ8xmYBSXUIWr+UmF9b1efZBazGNO+rcXT/icdKnYm2pTwcRylVUYwW7H1PHfLekVzA==
 
 react-loadable@5.3.1:
   version "5.3.1"
@@ -12449,6 +12468,11 @@ style-loader@^0.20.3:
 style-utils@~0.1.13:
   version "0.1.16"
   resolved "https://registry.yarnpkg.com/style-utils/-/style-utils-0.1.16.tgz#d06cc892c1dc2b1ac16e73318fd810b26dfbb4a9"
+
+style-utils@~0.2.0:
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/style-utils/-/style-utils-0.2.1.tgz#c78fe6696214f4ab12701959f09553e9d81dd45b"
+  integrity sha512-eKRIfWnUSdBqe2ko+qisUwBSlfWpHru89geRqzmScpDhkPW1ksmE04d//nDcXeF+TVK5cnBG90mMmHgxyxXleQ==
 
 styled-components@3.2.6:
   version "3.2.6"
