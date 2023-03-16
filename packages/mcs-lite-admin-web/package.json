@@ -72,7 +72,7 @@
     "react-topbar-progress-indicator": "2.0.0",
     "react-virtualized": "9.18.5",
     "recompose": "0.26.0",
-    "redux": "3.7.2",
+    "redux": "4.2.1",
     "redux-cycles": "0.4.1",
     "redux-freeze": "0.1.5",
     "redux-mock-store": "1.5.1",
