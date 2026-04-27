@@ -55,7 +55,7 @@
     "react": "16.3.2",
     "react-codemirror":
       "git://github.com/skidding/react-codemirror.git#106-fix-update",
-    "react-dom": "16.3.2",
+    "react-dom": "16.3.3",
     "react-helmet": "5.2.0",
     "react-intl": "2.4.0",
     "react-intl-cra": "0.3.3",
